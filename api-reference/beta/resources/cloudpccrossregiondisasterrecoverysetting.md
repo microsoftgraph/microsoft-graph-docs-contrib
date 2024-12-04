@@ -22,17 +22,17 @@ Represents the settings for cross-region disaster recovery on a Cloud PC.
 |:---|:---|:---|
 |crossRegionDisasterRecoveryEnabled|Boolean|`True` if an end user is allowed to set up cross-region disaster recovery for Cloud PC; otherwise, `false`. The default value is `false`.|
 |disasterRecoveryNetworkSetting|[cloudPcDisasterRecoveryNetworkSetting](../resources/cloudpcdisasterrecoverynetworksetting.md)|Indicates the network settings of the Cloud PC during a cross-region disaster recovery operation.|
+|disasterRecoveryType|[cloudPcDisasterRecoveryType](#cloudpcdisasterrecoverytype-values)|Indicates the type of disaster recovery to perform when a disaster occurs on the user's Cloud PC. The possible values are: `notConfigured`, `crossRegion`, `premium`, `unknownFutureValue`. The default value is `notConfigured`.|
 |maintainCrossRegionRestorePointEnabled|Boolean|Indicates whether Windows 365 maintain the cross-region disaster recovery function generated restore points. If `true`, the Windows 365 stored restore points; `false` indicates that Windows 365 doesn't generate or keep the restore point from the original Cloud PC. If a disaster occurs, the new Cloud PC can only be provisioned using the initial image. This limitation can result in the loss of some user data on the original Cloud PC. The default value is `false`.|
-|disasterRecoveryType|[cloudPcDisasterRecoveryType](#cloudPcDisasterRecoveryType-values)|Indicates the type of disaster recovery to perform when a disaster occurs on the user's Cloud PC, possible values are crossRegion, premium, and notConfigured.|
 
-### cloudPcRestorePointFrequencyType values
+### cloudPcDisasterRecoveryType values
 
-| Value                                | Description                                                                                                                                                                                                                   |
-| -------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `notConfigured`                      | Default. Indicates the administrator has not set up the Cloud PC disaster recovery functionality.                                                                                                                             |
-| `crossRegion`                        | Indicates that the administrator has set up Cloud PC cross-region disaster recovery functionality.                                                                                                                            |
-| `premium`                            | Indicates that the administrator has set up Cloud PC premium disaster recovery functionality.                                                                                                                                 |
-| `unknownFutureValue`                 | Evolvable enumeration sentinel value. Do not use.
+| Value              | Description                                                                                            |
+|:-------------------|:-------------------------------------------------------------------------------------------------------|
+| notConfigured      | Default. Indicates that the administrator didn't set up the Cloud PC disaster recovery functionality.  |
+| crossRegion        | Indicates that the administrator set up the Cloud PC cross-region disaster recovery functionality.     |
+| premium            | Indicates that the administrator set up the Cloud PC premium disaster recovery functionality.          |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                       |
 
 ## Relationships
 
@@ -52,6 +52,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.cloudPcCrossRegionDisasterRecoverySetting",
   "crossRegionDisasterRecoveryEnabled": "Boolean",
   "disasterRecoveryNetworkSetting": {"@odata.type": "microsoft.graph.cloudPcDisasterRecoveryNetworkSetting"},
+  "disasterRecoveryType": "String",
   "maintainCrossRegionRestorePointEnabled": "Boolean"
 }
 ```

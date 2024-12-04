@@ -41,7 +41,7 @@ The following JSON representation shows the resource type.
 ```
 ## Related content
 
-- [aadUserConversationMemberResult](aadUserConversationMemberResult.md)
+- [aadUserConversationMemberResult](aaduserconversationmemberresult.md)
 - [Add members in bulk to a team](../api/conversationmembers-add.md)
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690

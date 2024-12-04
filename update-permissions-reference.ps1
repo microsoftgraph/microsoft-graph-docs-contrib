@@ -135,13 +135,21 @@ function Update-FileContent {
         $beforeFirstHeader = $fileContents[0..($firstHeaderIndex - 1)]
         $afterSecondHeader = $fileContents[$secondHeaderIndex..($fileContents.Count - 1)]
 		
-		# Update ms.date
-		$today = Get-Date -Format "MM/dd/yyyy"
-		$beforeFirstHeader = $beforeFirstHeader -replace '^ms\.date:.*', "ms.date: $today"
+        # Trim any trailing empty lines
+        for ($i = $afterSecondHeader.Length - 1; $i -ge 0; $i--) {
+            if ($afterSecondHeader[$i] -ne "") {
+                break
+            }
+            $afterSecondHeader = $afterSecondHeader[0..($i - 1)]
+        }
+		
+        # Update ms.date
+        $today = Get-Date -Format "MM/dd/yyyy"
+        $beforeFirstHeader = $beforeFirstHeader -replace '^ms\.date:.*', "ms.date: $today"
 
         # Combine the parts with the new content
-        $updatedContent = $beforeFirstHeader + $NewContent.Split("`n") + $afterSecondHeader
-		
+        $updatedContent = $beforeFirstHeader + $NewContent + $afterSecondHeader
+
         # Write the updated content back to the file
         $updatedContent | Set-Content -Path $FilePath
     }

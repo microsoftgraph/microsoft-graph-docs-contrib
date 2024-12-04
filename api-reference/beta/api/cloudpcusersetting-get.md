@@ -129,14 +129,14 @@ Content-Type: application/json
       "userRestoreEnabled": true
     },
     "crossRegionDisasterRecoverySetting": {
-    "crossRegionDisasterRecoveryEnabled": true,
-    "maintainCrossRegionRestorePointEnabled": true,
-    "disasterRecoveryNetworkSetting": {
+      "crossRegionDisasterRecoveryEnabled": true,
+      "maintainCrossRegionRestorePointEnabled": true,
+      "disasterRecoveryNetworkSetting": {
         "regionName": "westus",
-        "regionGroup": "usEast",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium"
     },
-    "disasterRecoveryType": "premium"
-  },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z"
   }

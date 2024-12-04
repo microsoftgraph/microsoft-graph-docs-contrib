@@ -164,6 +164,8 @@ items:
       href: ../../api/group-list-permissiongrants.md
     - name: List permission grants of a team
       href: ../../api/team-list-permissiongrants.md
+    - name: List permission grants of a user
+      href: ../../api/user-list-permissiongrants.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -510,6 +512,8 @@ items:
       items:
       - name: Virtual event townhall
         href: ../../resources/virtualeventtownhall.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-townhalls.md
       - name: Create
         href: ../../api/virtualeventsroot-post-townhalls.md
       - name: Get
@@ -520,10 +524,16 @@ items:
         href: ../../api/virtualeventtownhall-publish.md
       - name: Cancel
         href: ../../api/virtualeventtownhall-cancel.md
+      - name: List by user role
+        href: ../../api/virtualeventtownhall-getbyuserrole.md
+      - name: List by user ID and role
+        href: ../../api/virtualeventtownhall-getbyuseridandrole.md
     - name: Virtual event webinar
       items:
       - name: Virtual event webinar
         href: ../../resources/virtualeventwebinar.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-webinars.md
       - name: Create
         href: ../../api/virtualeventsroot-post-webinars.md
       - name: Get
@@ -534,8 +544,6 @@ items:
         href: ../../api/virtualeventwebinar-publish.md
       - name: Cancel
         href: ../../api/virtualeventwebinar-cancel.md
-      - name: List in organization
-        href: ../../api/virtualeventsroot-list-webinars.md
       - name: List by user role
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
@@ -689,8 +697,6 @@ items:
       href: ../../api/channel-patch.md
     - name: Delete channel
       href: ../../api/channel-delete.md
-    - name: Get message delta
-      href: ../../api/chatmessage-delta.md
     - name: List channel messages
       href: ../../api/channel-list-messages.md
     - name: Get all channel messages
@@ -793,6 +799,8 @@ items:
         href: ../../api/chats-getallmessages.md
       - name: Get retained messages across all chats
         href: ../../api/chat-getallretainedmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
     - name: Apps
       items:
       - name: List apps in chat
@@ -841,8 +849,6 @@ items:
       items:
       - name: List messages in channel
         href: ../../api/channel-list-messages.md
-      - name: Get delta of messages in channel
-        href: ../../api/chatmessage-delta.md
       - name: Create subscription for new channel messages
         href: ../../api/subscription-post-subscriptions.md
       - name: Get message in channel
@@ -885,6 +891,8 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats for user
         href: ../../api/chats-getallmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
       - name: Get all channel messages
         href: ../../api/channel-getallmessages.md
       - name: Create subscription for new chat messages

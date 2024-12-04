@@ -1,6 +1,6 @@
 ---
 title: "restorePoint: search"
-description: "Search restore points for protection units."
+description: "Search for the restorePoint objects associated with a protectionUnit."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of the following parameters.
 |:---|:---|:---|
 |artifactQuery|[artifactQuery](../resources/artifactquery.md)|Contains an expression that specifies the criteria for search. Optional.|
 |protectionUnitIds|String collection|The ID of the protection units. Required.|
-|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The start and end date time of the protection period.  Required.|
+|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The start and end date time of the protection period. Required.|
 |restorePointPreference|[restorePointPreference](../api/restorepoint-search.md#restorepointpreference-values)|Indicates which restore point to return. The possible values are `oldest`, `latest`. Optional.|
 |tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|The type of the restore point. The possible values are `None`, `FastRestore`, `UnknownFutureValue`. Optional.|
 
@@ -65,7 +65,7 @@ If successful, this action returns a `200 OK` response code and a [restorePointS
 
 > [!NOTE]
 > - Calls return a maximum of five restore points.
-> - You can include a maximum of 20 protection units in one request and the response won't be paginated.
+> - You can include a maximum of 20 protection units in a single request, and the response isn't paginated.
 
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
@@ -135,7 +135,7 @@ Content-Type: application/json
 #### Response
 
 - Calls return a maximum of five restore points.
-- You can include a maximum of 20 protection units in one request and the response won't be paginated.
+- You can include a maximum of 20 protection units in a single request, and the response isn't paginated.
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -203,7 +203,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2 : Search with artifactQuery expression
+### Example 2: Search with artifactQuery expression
 
 #### Request
 
@@ -221,7 +221,7 @@ Content-Type: application/json
 
 {
   "artifactQuery": {
-    "queryExpression": "((subject -contains ‘Finance’)  -or  (subject -contains ‘Legal’)) -and (sender -eq 'alex@contoso.com') -and (recipient -eq 'carol@contoso.com') -and hasAttachment -eq true",
+    "queryExpression": "(Sender -eq 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '{2024-09-21T08:20:00.0000000Z}')",
     "artifactType": "message"
   },
   "protectionUnitIds": ["23014d8c-71fe-4d00-a01a-31850bc5b42a"],

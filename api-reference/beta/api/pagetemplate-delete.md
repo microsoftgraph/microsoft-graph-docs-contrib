@@ -50,10 +50,18 @@ If successful, this method returns a `204 No Content` HTTP response. It doesn't 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-pageTemplate", "scopes": "files.readwrite sites.readwrite.all" } -->
 ```http
 DELETE /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.pageTemplate/7bf14f9b-8764-4e54-bc5a-ee7d83dd09f7
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-pagetemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following example shows the response.

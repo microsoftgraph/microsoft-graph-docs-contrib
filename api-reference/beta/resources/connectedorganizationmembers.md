@@ -1,5 +1,5 @@
 ---
-title: "connectedOrganizationMembers complex type"
+title: "connectedOrganizationMembers resource type"
 description: "The connectedOrganizationMembers type identifies a collection of users in the tenant who are allowed as requestor, approver, or reviewer."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
-# connectedOrganizationMembers complex type
+# connectedOrganizationMembers resource type
 
 Namespace: microsoft.graph
 
