@@ -46,7 +46,7 @@ POST /teamwork/workforceIntegrations
 
 In the request body, supply a JSON representation of the [workforceIntegration](../resources/workforceintegration.md) object.
 
-The following table lists the properties that you can use when you create an **workforceIntegration** object.
+The following table lists the properties that you can use when you create a **workforceIntegration** object.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
