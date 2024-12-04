@@ -4,6 +4,7 @@ description: "For `Frontline shared` only. Administrators can get the result of 
 author: "zhuangzhuang131419"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
+ms.date: "2024-12-04"
 doc_type: apiPageType
 ---
 

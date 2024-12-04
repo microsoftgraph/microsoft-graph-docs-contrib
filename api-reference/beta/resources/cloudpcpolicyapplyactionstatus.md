@@ -2,6 +2,7 @@
 title: "CloudPcPolicyApplyActionStatus  resource type"
 description: "A list of possible status for policy applies operation."
 author: "zhuangzhuang131419"
+ms.date: "2024-12-04"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
