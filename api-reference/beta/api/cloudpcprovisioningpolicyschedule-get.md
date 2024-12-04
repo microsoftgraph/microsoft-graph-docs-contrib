@@ -120,7 +120,7 @@ The following example shows the response.
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyScheduledApplyActionDetail",
+    "@odata.type": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyScheduledApplyActionDetail",
     "reservePercentage": 50,
     "cronScheduleExpression": "0 0 0 20 * *"
 }

@@ -34,7 +34,7 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy",
+  "@odata.type": "microsoft.graph.cloudPcPolicyScheduledApplyActionDetail",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
