@@ -57,6 +57,7 @@ If successful, this method returns a `200 OK` response code and a [payloadDetail
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_payloadDetail",
@@ -66,6 +67,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/payloads/f1b13829-3829-f1b1-2938-b1f12938b1a/detail
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-payloaddetail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
