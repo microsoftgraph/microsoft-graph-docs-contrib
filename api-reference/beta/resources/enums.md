@@ -5021,3 +5021,25 @@ Possible values for user account types (group membership), per Windows definitio
 |publicPreview|
 |ga|
 |unknownFutureValue|
+
+### nonAdminSetting values
+
+|Member|
+|:---|
+|false|
+|true|
+|unknownFutureValue|
+
+### changeAnnouncementChangeType values 
+
+|Member|
+|:---|
+|breakingChange|
+|deprecation|
+|endOfSupport|
+|featureChange|
+|other|
+|retirement|
+|securityIncident|
+|uxChange|
+|unknownFutureValue|

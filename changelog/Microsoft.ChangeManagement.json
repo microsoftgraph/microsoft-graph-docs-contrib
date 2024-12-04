@@ -49,12 +49,20 @@
           "ChangeType": "Addition",
           "Description": "Added the [roadmap](https://learn.microsoft.com/en-us/graph/api/resources/roadmap?view=graph-rest-beta) resource. Use this resource to view the Microsoft Entra product roadmap which comprises public previews and recent general availability releases.",
           "Target": "roadmap"
+        },
+        {
+          "Id": "c7731595-f625-4547-9f76-e26d7f4ea1ce",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "changeAnnouncementChangeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **changeAnnouncementChangeType** enumeration type.",
+          "Target": "changeAnnouncementChangeType"
         }
       ],
-      "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
+      "Id": "c7731595-f625-4547-9f76-e26d7f4ea1ce",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-10-10T14:08:50.8783007Z",
+      "CreatedDateTime": "2024-12-03T11:14:14.7765083Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }
