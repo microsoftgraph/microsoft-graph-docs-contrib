@@ -88,7 +88,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyApplyActionResult,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyApplyActionResult",
     "status": "succeeded",
     "startDateTime": "2024-10-10T00:00:00",
     "finishDateTime": "2024-10-11T00:00:00"

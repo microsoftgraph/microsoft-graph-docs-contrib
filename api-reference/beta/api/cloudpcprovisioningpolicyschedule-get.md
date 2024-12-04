@@ -87,8 +87,8 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyScheduledApplyActionDetail,
-    "reservePercentage": 50
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyScheduledApplyActionDetail",
+    "reservePercentage": 50,
     "cronScheduleExpression": "0 0 0 20 * *"
 }
 ```
