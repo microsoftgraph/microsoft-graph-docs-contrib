@@ -59,7 +59,7 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [cloudPcUserSetting](../resources/cloudpcusersetting.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [cloudPcUserSetting](../resources/cloudpcusersetting.md) object in the response body.
 
 ## Examples
 
