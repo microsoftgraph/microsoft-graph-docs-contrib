@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a group.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a [group](../resources/group.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "group_list_approleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-list-approleassignments-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
 
 ## HTTP request
 

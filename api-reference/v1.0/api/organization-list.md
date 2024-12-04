@@ -6,6 +6,7 @@ author: "suawat"
 ms.reviewer: "alvarorahul, iamut"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # List organizations

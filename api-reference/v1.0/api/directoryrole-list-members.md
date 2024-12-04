@@ -6,11 +6,15 @@ ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List members of a directory role
 
 Namespace: microsoft.graph
+
+> [!NOTE]
+> Microsoft recommends that you use the unified RBAC API instead of this API. The unified RBAC API provides more functionality and flexibility. For more information, see [List unifiedRoleAssignments](./rbacapplication-list-roleassignments.md).
 
 Retrieve the list of principals that are assigned to the directory role. 
 
@@ -26,6 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/directoryrole-list-members-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+[!INCLUDE [rbac-directory-role-apis-read](../includes/rbac-for-apis/rbac-directory-role-apis-read.md)]
 
 ## HTTP request
 

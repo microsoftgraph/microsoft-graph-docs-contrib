@@ -3,6 +3,7 @@ title: Work with Graph Explorer
 description: Use Graph Explorer to make Microsoft Graph REST API requests and view corresponding responses. Learn how to use some of the important features in Graph Explorer.
 ms.localizationpriority: high
 author: RabebOthmani
+ms.date: 11/07/2024
 ---
 
 # Work with Graph Explorer

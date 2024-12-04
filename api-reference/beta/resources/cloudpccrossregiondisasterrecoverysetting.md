@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 toc.title: Cloud PC cross-region disaster recovery setting
+ms.date: 08/29/2024
 ---
 
 # cloudPcCrossRegionDisasterRecoverySetting resource type

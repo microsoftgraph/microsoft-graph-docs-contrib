@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/21/2024
 ---
 
 # List users
@@ -856,9 +857,11 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the AuditLog.Read.All permission.
+The following example shows a request. 
 
->**Note:** When you specify `$select=signInActivity` or `$filter=signInActivity` while listing users, the maximum page size for `$top` is 120. Requests with `$top` set higher than 120 will return pages with up to 120 users. signInActivity supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties.
+> [!Note]
+> * Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the `AuditLog.Read.All` permission.
+> * When you specify `$select=signInActivity` or `$filter=signInActivity` when listing users, the maximum page size for `$top` is 120. Requests with `$top` set higher than 120 return pages with up to 120 users. The **signInActivity** property supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties.
 
 # [HTTP](#tab/http)
 <!-- {

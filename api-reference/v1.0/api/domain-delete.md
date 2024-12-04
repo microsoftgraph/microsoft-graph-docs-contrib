@@ -5,6 +5,7 @@ author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Delete domain
@@ -27,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-delete-permissions.md)]
 
-The work or school account needs to belong to at least the *Domain Name Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[!INCLUDE [rbac-domain-apis-write](../includes/rbac-for-apis/rbac-domain-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

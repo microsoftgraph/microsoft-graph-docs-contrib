@@ -5,12 +5,13 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 # Create accessPackageAssignmentRequest
 
 Namespace: microsoft.graph
 
-In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.  This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
+In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object. This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -20,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_post_assignmentrequests" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-assignmentrequests-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-end-user-apis-write](../includes/rbac-for-apis/rbac-entitlement-management-end-user-apis-write.md)]
 
 ## HTTP request
 
@@ -48,15 +51,15 @@ For an administrator to request to update an assignment (for example to extend t
 
 For an administrator to request to remove an assignment, the value of the **requestType** property is `adminRemove`, and the **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
 
-For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the **requestType** property is `userAdd`. The **assignment** property contains an object with the `targetId` with the `id` of the user. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to create their own assignment for either a first assignment or to renew an assignment, the value of the **requestType** property is `userAdd`. The **assignment** property contains an object with the `targetId` with the `id` of the user. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
-For a non-administrator user to request to update their own assignments, the value of the **requestType** property is `userUpdate`. The **assignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to update their own assignment, the value of the **requestType** property is `userUpdate`. The **assignment** property contains the **ID** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being updated. The **schedule** property contains the updated schedule.
 
 ## Response
 
 If successful, this method returns a 200-series response code and a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object in the response body.
 
-If this is an `adminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-assignments.md).
+If this is an `adminAdd` or `userAdd` request, then after any approval checks an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-assignments.md).
 
 ## Examples
 
@@ -593,7 +596,6 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.accessPackageAssignmentRequest",
-    "id": "7a6ab703-0780-4b37-8445-81f679b2d75c",
     "requestType": "adminUpdate",
     "answers": [
         {
@@ -820,6 +822,188 @@ Content-type: application/json
             "endDateTime": "2024-07-01T00:00:00Z",
             "duration": null,
             "type": "afterDateTime"
+        }
+    },
+    "answers": [],
+    "customExtensionCalloutInstances": []
+}
+```
+
+### Example 8: Update the answers and expiration date for an access package assignment
+
+The following example shows how a user can update their answers and the expiration date for their access package assignment.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentrequest_expiration_answers"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "userUpdate",
+    "answers": [
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "My updated answer.",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "id": "0d31cc60-968e-4f92-955b-443fed03d6f6"
+            }
+        }
+
+    ],
+    "schedule": {
+        "startDateTime": "2024-09-18T20:49:16.17Z",
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": "2024-10-18T20:49:15.17Z",
+            "duration": null,
+            "type": "afterDateTime"
+        }
+    },
+    "assignment": {
+        "id": "329f8dac-8062-4c1b-a9b8-39b7132f9bff"
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackageassignmentrequest-expiration-answers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-accesspackageassignmentrequest-expiration-answers-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentrequest-expiration-answers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentrequest-expiration-answers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentrequest-expiration-answers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-accesspackageassignmentrequest-expiration-answers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accesspackageassignmentrequest-expiration-answers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-accesspackageassignmentrequest-expiration-answers-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "id": "e0f8458c-7681-42ad-a0b5-0c9587c4dad8",
+    "requestType": "userUpdate",
+    "state": "submitted",
+    "status": "Accepted"
+}
+```
+
+### Example 9: Request a package on behalf of a direct employee
+
+The following example shows how a manager can request an access package assignment on behalf of their direct employee.
+
+> [!NOTE]
+> The requestor (manager) is extracted from the token, and the target object is determined by the `id` of the direct employee who is receiving access.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentrequest_request_behalf"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+Content-type: application/json
+
+{
+   "assignment": {
+       "accessPackageId": "5b98f958-0dea-4a5b-836e-109dccbd530c",
+       "schedule": {
+           "startDateTime": null,
+           "stopDateTime": null
+       },
+       "assignmentPolicyId": "c5f7847f-83a8-4315-a754-d94a6f39b875",
+       "target": {
+           "displayName": "Idris Ibrahim",
+           "email": "IdrisIbrahim@woodgrovebank.com",
+           "objectId": "21aceaba-fe13-4e3b-aa8c-4c588d5e7387",
+           "subjectType": "user"
+       }
+   },
+   "justification": "Access for direct employee",
+   "requestType": "UserAdd",
+   "answers": []
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "id": "445a3118-6bf2-4a19-94ad-5660295963fd",
+    "requestType": "userAdd",
+    "state": "submitted",
+    "status": "Accepted",
+    "createdDateTime": null,
+    "completedDateTime": null,
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": "notSpecified"
         }
     },
     "answers": [],

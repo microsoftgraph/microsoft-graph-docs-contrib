@@ -366,6 +366,24 @@ items:
         href: ../../resources/callrecords-smslogrow.md
       - name: Get SMS log
         href: ../../api/callrecords-callrecord-getsmslog.md
+  - name: Copilot settings
+    items:
+    - name: Copilot admin limited mode
+      items:
+      - name: Copilot admin limited mode
+        href: ../../resources/copilotadminlimitedmode.md
+      - name: Get
+        href: ../../api/copilotadminlimitedmode-get.md
+      - name: Update
+        href: ../../api/copilotadminlimitedmode-update.md
+    - name: Complex types
+      items:
+      - name: Copilot admin
+        href: ../../resources/copilotadmin.md
+      - name: Copilot admin setting
+        href: ../../resources/copilotadminsetting.md
+      - name: Copilot root
+        href: ../../resources/copilotroot.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -528,6 +546,8 @@ items:
         href: ../../api/virtualeventtownhall-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventtownhall-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
     - name: Virtual event webinar
       items:
       - name: Virtual event webinar
@@ -548,6 +568,36 @@ items:
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
+    - name: Complex types
+      items:
+      - name: Virtual event external information
+        href: ../../resources/virtualeventexternalinformation.md
+- name: AI interactions (preview)
+  items:
+  - name: AI interaction history
+    items:
+    - name: AI interaction history
+      href: ../../resources/aiinteractionhistory.md
+    - name: List all enterprise interactions
+      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
+  - name: Complex types
+    items:
+    - name: AI interaction
+      href: ../../resources/aiinteraction.md
+    - name: AI interaction attachment
+      href: ../../resources/aiinteractionattachment.md
+    - name: AI interaction context
+      href: ../../resources/aiinteractioncontext.md
+    - name: AI interaction link
+      href: ../../resources/aiinteractionlink.md
+    - name: AI interaction mention
+      href: ../../resources/aiinteractionmention.md
+    - name: AI interaction mentioned identity set
+      href: ../../resources/aiinteractionmentionedidentityset.md
+    - name: AI user
+      href: ../../resources/aiuser.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
@@ -961,6 +1011,8 @@ items:
       href: ../../api/team-update-members.md
     - name: Remove member
       href: ../../api/team-delete-members.md
+    - name: Remove members in bulk
+      href: ../../api/conversationmember-remove.md
     - name: Archive team
       href: ../../api/team-archive.md
     - name: Unarchive team

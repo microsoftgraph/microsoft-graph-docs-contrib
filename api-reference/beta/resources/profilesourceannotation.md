@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "caiyuanle"
 ms.subservice: "people"
 doc_type: resourcePageType
+ms.date: 09/11/2024
 ---
 
 # profileSourceAnnotation resource type

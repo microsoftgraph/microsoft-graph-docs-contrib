@@ -5,6 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 12/01/2024
 ---
 
 # Get payloadDetail
@@ -61,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/security/attackSimulation/payload/f1b13829-3829-f1b1-2938-b1f12938b1a/detail
+GET https://graph.microsoft.com/v1.0/security/attackSimulation/payloads/f1b13829-3829-f1b1-2938-b1f12938b1a/detail
 ```
 
 ### Response

@@ -5,6 +5,7 @@ author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/11/2024
 ---
 
 # List townhalls
@@ -26,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!NOTE]
 >
-> This API returns only townhalls whose organizer is assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> This API returns only **virtualEventTownhall** objects where the organizer is assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## HTTP request
 
@@ -130,7 +131,13 @@ Content-Type: application/json
       "settings": {
         "isAttendeeEmailNotificationEnabled": false
       },
-      "isInviteOnly": false
+      "isInviteOnly": false,
+      "externalEventInformation": [
+        {
+          "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",
+          "externalEventId": "myExternalEventId"
+        }
+      ]
     }
   ]
 }
