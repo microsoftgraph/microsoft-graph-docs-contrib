@@ -20,6 +20,14 @@
         },
         {
           "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
+          "ApiChange": "Method",
+          "ChangedApiName": "schedulePolicyApplyTask",
+          "ChangeType": "Addition",
+          "Description": "Add the schedulePolicyApplyTask method.",
+          "Target": "Cloud PC"
+        },
+        {
+          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
           "ApiChange": "ComplexType",
           "ChangedApiName": "CloudPcPolicyScheduledApplyActionDetail",
           "ChangeType": "Addition",
