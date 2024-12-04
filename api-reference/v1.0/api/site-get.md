@@ -65,9 +65,9 @@ GET /groups/{group-id}/sites/root
 
 The following example shows a request that gets a site by its site ID. A site ID is the value of the **id** property of its **site** resource. For more information on the format of the site ID, see [site](../resources/site.md#id-property).
 
-<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all", "sampleKeys": ["contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE"] } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE
 ```
 
@@ -95,7 +95,7 @@ Content-type: application/json
 #### Request
 The following example shows a request that gets a site by its hostname and server relative path.
 
-<!-- { "blockType": "request", "name": "get-site-by-url", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-site-by-url", "scopes": "sites.read.all", "sampleKeys": ["contoso.sharepoint.com:/teams/1drvteam"] } -->
 ```http
 GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/teams/1drvteam
 ```
