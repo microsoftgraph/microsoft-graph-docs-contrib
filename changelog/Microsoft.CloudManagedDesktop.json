@@ -36,10 +36,10 @@
         },
         {
           "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
-          "ApiChange": "Member",
+          "ApiChange": "Enumeration",
           "ChangedApiName": "cloudPcPolicyApplyActionStatus",
           "ChangeType": "Addition",
-          "Description": "Add the cloudPcPolicyApplyActionStatus member.",
+          "Description": "Add the cloudPcPolicyApplyActionStatus enumeration.",
           "Target": "Cloud PC"
         },
         {
