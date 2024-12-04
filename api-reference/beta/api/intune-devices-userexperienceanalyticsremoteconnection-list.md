@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+> **Caution:** This API is deprecated and will stop returning data on December 31, 2024. Going forward, use the [getRawRemoteConnectionReports](./cloudpcreports-getrawremoteconnectionreports.md) resource and its supported APIs.
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
