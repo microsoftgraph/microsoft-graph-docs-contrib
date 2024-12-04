@@ -1231,6 +1231,40 @@
       "CreatedDateTime": "2024-06-05T23:22:24.8127939Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c1ddba56-7ffe-4bf3-bd1f-f0cfdefaddaf",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "conditionalAccessTransferMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionalAccessTransferMethods** enumeration type.",
+          "Target": "conditionalAccessTransferMethods"
+        },
+        {
+          "Id": "c1ddba56-7ffe-4bf3-bd1f-f0cfdefaddaf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessAuthenticationFlows",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessAuthenticationFlows](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessAuthenticationFlows?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessAuthenticationFlows"
+        },
+        {
+          "Id": "c1ddba56-7ffe-4bf3-bd1f-f0cfdefaddaf",
+          "ApiChange": "Property",
+          "ChangedApiName": "authenticationFlows",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationFlows** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessConditionSet"
+        }
+      ],
+      "Id": "c1ddba56-7ffe-4bf3-bd1f-f0cfdefaddaf",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-03T08:55:37.2663572Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
