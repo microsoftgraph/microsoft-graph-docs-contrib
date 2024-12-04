@@ -43,8 +43,10 @@ request_body = Simulation(
 		setting_type = EndUserNotificationSettingType.NoTraining,
 		positive_reinforcement = PositiveReinforcementNotification(
 			delivery_preference = NotificationDeliveryPreference.DeliverAfterCampaignEnd,
-			end_user_notification = "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",
 			default_language = "en",
+			additional_data = {
+					"end_user_notification@odata_bind" : "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",
+			}
 		),
 		additional_data = {
 				"simulation_notification" : {
