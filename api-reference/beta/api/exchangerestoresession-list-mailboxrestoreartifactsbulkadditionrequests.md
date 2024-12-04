@@ -1,9 +1,9 @@
 ---
 title: "List mailboxRestoreArtifactsBulkAdditionRequests"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Get a list of the maiboxRestoreArtifactsBulkAdditionRequest in an Exchange Restore Session"
+author: "vidula-verma"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Get a list of the [maiboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) objects associated with a [exchangeRestoreSession](../resources/exchangerestoresession.md).
+The 'mailboxes' fields are deliberately omitted from the response body in order to limit the response size.
 
 ## Permissions
 
@@ -35,10 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}/mailboxRestoreArtifactsBulkAdditionRequests
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -65,14 +62,13 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}/mailboxRestoreArtifactsBulkAdditionRequests
+GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/dc3a3fc8-eb4b-45eb-9ca6-4955696344b8/mailboxRestoreArtifactsBulkAdditionRequests
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,40 +80,34 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest",
-      "id": "889723df-8e95-d77f-c3eb-31845c83ef5f",
-      "status": "String",
-      "displayName": "String",
-      "createdDateTime": "String (timestamp)",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "protectionTimePeriod": {
-        "@odata.type": "microsoft.graph.timePeriod"
-      },
-      "restorePointPreference": "String",
-      "tags": "String",
-      "destinationType": "String",
-      "protectionUnitIds": [
-        "String"
-      ],
-      "error": {
-        "@odata.type": "microsoft.graph.publicError"
-      },
-      "mailboxes": [
-        "String"
-      ],
-      "directoryObjectIds": [
-        "String"
-      ]
-    }
-  ]
+  "@odata.type": "#microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest",
+   "value": [
+        {
+            "id": "b4318e3a-3eae-4ce5-87f3-bad51e1527c4",
+            "destinationType": "new",
+            "tags": "fastRestore",
+            "restorePointPreference": "latest",
+            "displayName": "EXO-BulkRestoreArtifacts",
+            "status": "active",
+            "createdDateTime": "2024-12-03T13:17:19.8862272Z",
+            "lastModifiedDateTime": "2024-12-03T13:17:19.8862272Z",
+            "mailboxes": [],
+            "protectionTimePeriod": {
+                "startDateTime": "2024-11-26T00:00:00Z",
+                "endDateTime": "2024-12-03T00:00:00Z"
+            },
+            "createdBy": {
+                "user": {
+                    "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+                }
+            }
+        }
+    ]   
 }
 ```
 

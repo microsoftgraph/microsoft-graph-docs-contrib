@@ -1,9 +1,9 @@
 ---
 title: "Get driveRestoreArtifactsBulkAdditionRequest"
-description: "Read the properties and relationships of a driveRestoreArtifactsBulkAdditionRequest object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Get a driveRestoreArifatcsBulkAdditionRequest in a OnedriveForBusiness Restore Session."
+author: "vidula-verma"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object.
+Read the properties and relationships of a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object by it's `id` associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
 
 ## Permissions
 
@@ -35,10 +35,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBusinessRestoreSessionId}/driveRestoreArtifactsBulkAdditionRequests/{driveRestoreArtifactsBulkAdditionRequestId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -72,7 +68,6 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusiness
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,38 +79,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.driveRestoreArtifactsBulkAdditionRequest",
-    "id": "a2a673b8-fcc7-ce38-c582-a5accfc8c707",
-    "status": "String",
-    "displayName": "String",
-    "createdDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
+  "@odata.type": "#microsoft.graph.driveRestoreArtifactsBulkAdditionRequest",
+    "drives": [],
+    "id": "e79d0a79-7210-4369-9177-6297f0555242",
+    "destinationType": "1",
+    "tags": "1",
+    "restorePointPreference": "0",
+    "displayName": "ODB-BulkRestoreArtifacts",
+    "status": "1",
+    "createdDateTime": "2024-12-04T07:51:58.9045003Z",
+    "lastModifiedDateTime": "2024-12-04T07:51:58.9045003Z",
     "protectionTimePeriod": {
-      "@odata.type": "microsoft.graph.timePeriod"
+        "startDateTime": "2024-01-01T00:00:00Z",
+        "endDateTime": "2024-01-08T00:00:00Z"
     },
-    "restorePointPreference": "String",
-    "tags": "String",
-    "destinationType": "String",
-    "protectionUnitIds": [
-      "String"
-    ],
-    "error": {
-      "@odata.type": "microsoft.graph.publicError"
+    "createdBy": {
+        "user": {
+            "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
+        }
     },
-    "drives": [
-      "String"
-    ],
-    "directoryObjectIds": [
-      "String"
-    ]
-  }
+    "lastModifiedBy": {
+        "user": {
+            "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
+        }
+    }
 }
 ```
 

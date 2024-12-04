@@ -1,9 +1,9 @@
 ---
 title: "Get siteRestoreArtifactsBulkAdditionRequest"
-description: "Read the properties and relationships of a siteRestoreArtifactsBulkAdditionRequest object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Get a siteRestoreArifatcsBulkAdditionRequest in a Sharepoint Restore Session"
+author: "vidula-verma"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object.
+Get a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object by it's `id` associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
 ## Permissions
 
@@ -36,15 +36,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifactsBulkAdditionRequests/{siteRestoreArtifactsBulkAdditionRequestId}
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json|
+|Application|application/json|
 
 ## Request body
 
@@ -65,14 +63,13 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifactsBulkAdditionRequests/{siteRestoreArtifactsBulkAdditionRequestId}
+GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/89ca51b1-b0a5-4555-a8f3-ad95afcf867d/siteRestoreArtifactsBulkAdditionRequests/b246ac99-4184-48ed-b7ff-9c2a7af69757
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,8 +83,8 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.siteRestoreArtifactsBulkAdditionRequest",
-    "id": "02a99482-7d96-2c8a-1193-d8e596d9de05",
-    "status": "String",
+    "id": "b246ac99-4184-48ed-b7ff-9c2a7af69757",
+    "status": "active",
     "displayName": "String",
     "createdDateTime": "String (timestamp)",
     "createdBy": {

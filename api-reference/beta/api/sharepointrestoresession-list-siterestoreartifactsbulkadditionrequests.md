@@ -1,19 +1,20 @@
 ---
-title: "List siteRestoreArtifactsBulkAdditionRequest objects"
-description: "Get a list of the siteRestoreArtifactsBulkAdditionRequest objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "List siteRestoreArtifactsBulkAdditionRequests"
+description: "Get a list of the siteRestoreArtifactsBulkAdditionRequest in a SharePoint Restore Session."
+author: "vidula-verma"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# List siteRestoreArtifactsBulkAdditionRequest objects
+# List siteRestoreArtifactsBulkAdditionRequests
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) objects and their properties.
+Get a list of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) objects associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+The 'siteWebUrls' fields are deliberately omitted from the response body in order to limit the response size.
 
 ## Permissions
 
@@ -36,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifactsBulkAdditionRequests
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -52,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object in the response body.
 
 ## Examples
 
@@ -65,14 +62,13 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifactsBulkAdditionRequests
+GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/959ba739-70b5-43c4-8c90-b2c22014f18b/siteRestoreArtifactsBulkAdditionRequests
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,40 +80,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.siteRestoreArtifactsBulkAdditionRequest",
-      "id": "02a99482-7d96-2c8a-1193-d8e596d9de05",
-      "status": "String",
-      "displayName": "String",
-      "createdDateTime": "String (timestamp)",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "protectionTimePeriod": {
-        "@odata.type": "microsoft.graph.timePeriod"
-      },
-      "restorePointPreference": "String",
-      "tags": "String",
-      "destinationType": "String",
-      "protectionUnitIds": [
-        "String"
-      ],
-      "error": {
-        "@odata.type": "microsoft.graph.publicError"
-      },
-      "siteWebUrls": [
-        "String"
-      ],
-      "siteIds": [
-        "String"
-      ]
-    }
-  ]
+    "value": [
+        {
+            "id": "4437afcf-e520-463c-90a7-ca96401d8039",
+            "siteWebUrls": []
+            "protectionTimePeriod": {
+                "startDateTime": "2021-01-01T00:00:00Z",
+                "endDateTime": "2021-01-08T00:00:00Z"
+            },
+            "destinationType": "new",
+            "tags": "fastRestore",
+             "restorePointPreference": "latest",
+             "displayName": "Site-BulkRestore-1",
+            "status": "CompletedWithErrors",
+            "restoreSessionId": "d8078599-3b3c-468d-b6ff-adf161a42760",
+            "createdDateTime": "2023-09-29T10:36:44.4021389+00:00",
+            "createdBy": "",
+            "lastModifiedDateTime": "2023-09-29T10:36:44.4021389+00:00",
+            "lastModifiedBy": "",
+            "errors": [
+                {
+                    "error ": {
+                        " code": " 1000",
+                        " message": "malformedURL",
+                        " target": "https:/contoso1.sharepoint.com"
+                    }
+                },
+                {
+                    "error ": {
+                        " code": " 1001",
+                        " message": "Unknown error",
+                        " target": "https://contoso3.sharepoint.com"
+                    }
+                }
+            ]
+        }
+    ],
+    "nextFetchToken": null,
+    "error": null
 }
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "Get mailboxRestoreArtifactsBulkAdditionRequest"
-description: "Read the properties and relationships of a mailboxRestoreArtifactsBulkAdditionRequest object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Get a mailboxRestoreArifatcsBulkAdditionRequest in a Exchange Restore Session"
+author: "vidula-verma"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object.
+Read the properties and relationships of a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object by it's `id` associated with a [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
 ## Permissions
 
@@ -65,14 +65,13 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}/mailboxRestoreArtifactsBulkAdditionRequests/{mailboxRestoreArtifactsBulkAdditionRequestId}
+GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/dc3a3fc8-eb4b-45eb-9ca6-4955696344b8/mailboxRestoreArtifactsBulkAdditionRequests/b4318e3a-3eae-4ce5-87f3-bad51e1527c4
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,38 +83,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest",
-    "id": "889723df-8e95-d77f-c3eb-31845c83ef5f",
-    "status": "String",
-    "displayName": "String",
-    "createdDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
+  "@odata.type": "#microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest",
+  "mailboxes": [],
+    "id": "b4318e3a-3eae-4ce5-87f3-bad51e1527c4",
+    "destinationType": "1",
+    "tags": "1",
+    "restorePointPreference": "0",
+    "displayName": "EXO-BulkRestoreArtifacts",
+    "status": "1",
+    "createdDateTime": "2024-12-03T13:17:19.8862272Z",
+    "lastModifiedDateTime": "2024-12-03T13:17:19.8862272Z",
     "protectionTimePeriod": {
-      "@odata.type": "microsoft.graph.timePeriod"
+        "startDateTime": "2024-11-26T00:00:00Z",
+        "endDateTime": "2024-12-03T00:00:00Z"
     },
-    "restorePointPreference": "String",
-    "tags": "String",
-    "destinationType": "String",
-    "protectionUnitIds": [
-      "String"
-    ],
-    "error": {
-      "@odata.type": "microsoft.graph.publicError"
+    "createdBy": {
+        "user": {
+            "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+        }
     },
-    "mailboxes": [
-      "String"
-    ],
-    "directoryObjectIds": [
-      "String"
-    ]
-  }
+    "lastModifiedBy": {
+        "user": {
+            "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+        }
+    }
+    
 }
 ```
 

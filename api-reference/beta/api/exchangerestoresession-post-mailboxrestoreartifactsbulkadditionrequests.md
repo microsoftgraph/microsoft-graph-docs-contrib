@@ -1,9 +1,9 @@
 ---
 title: "Create mailboxRestoreArtifactsBulkAdditionRequest"
-description: "Create a new mailboxRestoreArtifactsBulkAdditionRequest object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Create a new mailboxRestoreArtifactsBulkAdditionRequest object for an Exchange Restore Session."
+author: "vidula-verma"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
@@ -13,8 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new mailboxRestoreArtifactsBulkAdditionRequest object.
+Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxRestoreArtifactsBulkAdditionRequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md)
 
+The inital status upon creation of restore session is 'active'. Once all the `mailboxes`, and `directoryObjectIds` are added into the corresponding Exchange restore session and the restore session is activated, the status becomes 'completed'.
+In case of any failures encountered while resource resolution, the status of restore session becomes 'completedWithErrors'
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -46,28 +48,25 @@ POST /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}
 ## Request body
 
 In the request body, supply a JSON representation of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object.
-
-You can specify the following properties when creating a **mailboxRestoreArtifactsBulkAdditionRequest**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|status|restoreArtifactsBulkRequestStatus|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|restorePointPreference|restorePointPreference|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). The possible values are: `latest`, `oldest`, `unknownFutureValue`. Optional.|
-|tags|restorePointTags|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). The possible values are: `none`, `fastRestore`, `unknownFutureValue`. Optional.|
-|destinationType|destinationType|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`. Optional.|
-|protectionUnitIds|String collection|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|error|[publicError](../resources/publicerror.md)|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|mailboxes|String collection|**TODO: Add Description** Optional.|
-|directoryObjectIds|String collection|**TODO: Add Description** Optional.|
-
-
+```json
+{
+  "displayName": "Usermailbox-BulkRestoreArtifacts",
+  "mailboxes": [
+    "contoso1@micorosft.com",
+    "consotos2@microsoft.com",
+    "contoso3@microsoft.com"
+      ],
+     "directoryObjectIds": [],
+     "protectionUnitIds": [],
+    "protectionTimePeriod": {
+        "startDateTime": "2021-01-01T00:00:00Z",
+        "endDateTime": "2021-01-08T00:00:00Z"
+        },
+    "destinationType": "new",
+    "tags": "fastRestore",
+    "restorePointPreference": "latest"
+  }
+  ```
 
 ## Response
 
@@ -84,42 +83,14 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}/mailboxRestoreArtifactsBulkAdditionRequests
+POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/dc3a3fc8-eb4b-45eb-9ca6-4955696344b8/mailboxRestoreArtifactsBulkAdditionRequests
 Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest",
-  "status": "String",
-  "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "protectionTimePeriod": {
-    "@odata.type": "microsoft.graph.timePeriod"
-  },
-  "restorePointPreference": "String",
-  "tags": "String",
-  "destinationType": "String",
-  "protectionUnitIds": [
-    "String"
-  ],
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  },
-  "mailboxes": [
-    "String"
-  ],
-  "directoryObjectIds": [
-    "String"
-  ]
-}
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -131,36 +102,29 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest",
-  "id": "889723df-8e95-d77f-c3eb-31845c83ef5f",
-  "status": "String",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "protectionTimePeriod": {
-    "@odata.type": "microsoft.graph.timePeriod"
-  },
-  "restorePointPreference": "String",
-  "tags": "String",
-  "destinationType": "String",
-  "protectionUnitIds": [
-    "String"
-  ],
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  },
-  "mailboxes": [
-    "String"
-  ],
-  "directoryObjectIds": [
-    "String"
-  ]
+  "id": "b4318e3a-3eae-4ce5-87f3-bad51e1527c4",
+    "destinationType": "new",
+    "tags": "fastRestore",
+    "restorePointPreference": "latest",
+    "displayName": "EXO-BulkRestoreArtifacts",
+    "status": "active",
+    "createdDateTime": "2024-12-03T13:17:19.8862272Z",
+    "lastModifiedDateTime": "2024-12-03T13:17:19.8862272Z",
+    "mailboxes": [],
+    "protectionTimePeriod": {
+        "startDateTime": "2024-11-26T00:00:00Z",
+        "endDateTime": "2024-12-03T00:00:00Z"
+    },
+    "createdBy": {
+        "user": {
+            "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+        }
+    },
+    "lastModifiedBy": {
+        "user": {
+            "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+        }
+    }
 }
 ```
 

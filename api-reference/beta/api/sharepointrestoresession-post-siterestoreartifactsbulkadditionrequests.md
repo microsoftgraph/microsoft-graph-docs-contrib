@@ -1,5 +1,5 @@
 ---
-title: "Create siteRestoreArtifactsBulkAdditionRequest"
+title: "Create siteRestoreArtifactsBulkAdditionRequests"
 description: "Create siteRestoreArtifactsBulkAdditionRequests for a SharePoint restore session."
 author: "vidula-verma"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Create siteRestoreArtifactsBulkAdditionRequest
+# Create siteRestoreArtifactsBulkAdditionRequests
 
 Namespace: microsoft.graph
 
@@ -108,11 +108,10 @@ Content-Type: application/json
     "destinationType": "new",
     "tags": "fastRestore",
     "restorePointPreference": "latest"
-    "displayName": "Site-BulkRestore-1",
-    "status": "Active",
-    "restoreSessionId": "d8078599-3b3c-468d-b6ff-adf161a42760",
-    "createdDateTime": "2023-09-29T10:36:44.4021389+00:00",      
-    "lastModifiedDateTime": "2023-09-29T10:36:44.4021389+00:00",
+    "displayName": "SPO-BulkRestoreArtifacts",
+    "status": "active",
+    "createdDateTime": "2024-12-03T07:47:57.6011358Z",      
+    "lastModifiedDateTime": "2024-12-03T07:47:57.6011358Z",
     "siteWebUrls": []
     "protectionTimePeriod": {
          "startDateTime": "2024-01-01T00:00:00Z",
@@ -120,9 +119,5 @@ Content-Type: application/json
     },
     "createdBy": "",
     "lastModifiedBy": "",
-    "error": {
-		  "isRequestError": false
-	  },
-	  "errors": []
 }
 ```
