@@ -1,7 +1,7 @@
 ---
 title: "cloudPcPolicyApplyActionResult resource type"
 description: "For `Frontline shared` only. Specify the policy apply status, apply start time and finish time."
-author: "AshleyYangSZ"
+author: "Chicheng Zheng"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
