@@ -5,6 +5,14 @@
         {
           "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
           "ApiChange": "Method",
+          "ChangedApiName": "cloudPcProvisioningPolicySchedule",
+          "ChangeType": "Addition",
+          "Description": "Add the cloudPcProvisioningPolicySchedule method.",
+          "Target": "Cloud PC"
+        },
+        {
+          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
+          "ApiChange": "Method",
           "ChangedApiName": "cloudPcPolicyApplyActionResult",
           "ChangeType": "Addition",
           "Description": "Add the cloudPcPolicyApplyActionResult method.",
@@ -15,24 +23,6 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-12-3T01:25:21.3434973Z",
-      "WorkloadArea": "Device and app management",
-      "SubArea": "Cloud PC"
-    },
-    {
-      "ChangeList":[
-        {
-          "Id": "89864ae5-9d85-45d4-bd8e-600d1e604da2",
-          "ApiChange": "Method",
-          "ChangedApiName": "cloudPcProvisioningPolicySchedule",
-          "ChangeType": "Addition",
-          "Description": "Add the cloudPcProvisioningPolicySchedule method.",
-          "Target": "Cloud PC"
-        }
-      ],
-      "Id": "89864ae5-9d85-45d4-bd8e-600d1e604da2",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-11-28T01:25:21.3434973Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
