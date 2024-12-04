@@ -151,6 +151,7 @@ Content-type: application/json
                 }
             }
         }
+    ]
 }
 ```
 
