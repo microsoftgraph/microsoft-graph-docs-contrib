@@ -2301,12 +2301,6 @@
                       ]
                     },
                     {
-                      "name": "Service activity",
-                      "resources": [
-                        "serviceActivity"
-                      ]
-                    },
-                    {
                       "name": "Health monitoring",
                       "overview": "../../resources/healthmonitoring-overview.md",
                       "resources": [
