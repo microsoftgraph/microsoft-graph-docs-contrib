@@ -67,7 +67,7 @@ The following example shows a request that gets a site by its site ID. A site ID
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE
 ```
 
