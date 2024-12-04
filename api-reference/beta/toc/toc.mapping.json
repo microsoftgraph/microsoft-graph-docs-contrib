@@ -2697,9 +2697,10 @@
           "name": "Pages",
           "resources": [
             "baseSitePage",
+            "newsLinkPage",
+            "pageTemplate",
             "sitePage",
-            "webPart",
-            "pageTemplate"
+            "webPart"
           ],
           "complexTypes": [
             "createFromTemplate",
@@ -2837,6 +2838,21 @@
       ],
       "childNodes": [
         {
+          "name": "AI interactions (preview)",
+          "resources": [
+            "aiInteractionHistory"
+          ],
+         "complexTypes": [
+           "aiInteraction",
+           "aiInteractionAttachment",
+           "aiInteractionContext",
+           "aiInteractionLink",
+           "aiInteractionMention",
+           "aiInteractionMentionedIdentitySet",
+           "aiUser"
+         ]
+        },
+        {
           "name": "Approvals",
           "resources": [
             "approvalItem",
@@ -2947,21 +2963,6 @@
               ]
             }
           ]
-        },
-        {
-          "name": "AI interactions (preview)",
-          "resources": [
-            "aiInteractionHistory"
-          ],
-         "complexTypes": [
-           "aiInteraction",
-           "aiInteractionAttachment",
-           "aiInteractionContext",
-           "aiInteractionLink",
-           "aiInteractionMention",
-           "aiInteractionMentionedIdentitySet",
-           "aiUser"
-         ]
         },
         {
           "name": "Devices (preview)",
