@@ -2882,6 +2882,13 @@
               ]
             },
             {
+              "name": "Call events",
+              "resources": [
+                "microsoft.graph.callEvent",
+                "microsoft.graph.emergencyCallEvent"
+              ]
+            },
+            {
               "name": "Call records",
               "overview": "../../resources/callrecords-api-overview.md",
               "resources": [
