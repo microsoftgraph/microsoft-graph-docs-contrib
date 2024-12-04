@@ -242,7 +242,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request adding membership of a group to an access package's list of resource roles.  The access package resource for the group must already have been added to the access package catalog containing this access package.  The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md).
+The following example shows a request adding membership of a group to an access package's list of resource roles.  The access package resource for the group must already have been added to the access package catalog containing this access package.  The `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md). The `role` can be obtained by a [list of the roles of the resource in the catalog](accesspackagecatalog-list-resourceroles.md). If the `role` returned from the list of the roles has a zero ID, then do not include an `id` in the `accessPackageResourceRole`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -256,7 +256,6 @@ Content-type: application/json
 
 {
     "role": {
-        "id": "748f8431-c7c6-404d-8564-df67aa8cfc5e",
         "displayName": "Member",
         "originSystem": "AadGroup",
         "originId": "Member_0282e19d-bf41-435d-92a4-99bab93af305",
