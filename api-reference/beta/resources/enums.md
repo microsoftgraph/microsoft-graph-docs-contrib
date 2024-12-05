@@ -4957,6 +4957,7 @@ Possible values for user account types (group membership), per Windows definitio
 |false|
 |true|
 |unknownFutureValue|
+
 ### changeItemService values
 
 |Member|
@@ -5022,14 +5023,6 @@ Possible values for user account types (group membership), per Windows definitio
 |ga|
 |unknownFutureValue|
 
-### nonAdminSetting values
-
-|Member|
-|:---|
-|false|
-|true|
-|unknownFutureValue|
-
 ### changeAnnouncementChangeType values 
 
 |Member|
@@ -5042,4 +5035,11 @@ Possible values for user account types (group membership), per Windows definitio
 |retirement|
 |securityIncident|
 |uxChange|
+
+### restoreJobType values 
+
+|Member|
+|:---|
+|standard|
+|bulk|
 |unknownFutureValue|
