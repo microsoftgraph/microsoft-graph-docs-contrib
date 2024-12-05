@@ -49,9 +49,9 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) object in the response body.
 
-## Examples
+### Example 1: Get an analyzedEmail
 
-### Request
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{anal
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -201,52 +201,11 @@ Content-Type: application/json
 }
 ```
 
-# Get analyzedEmail Urls
 
-Namespace: microsoft.graph.security
+### Example 2: Get an analyzedEmail urls
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+#### Request
 
-Read the Urls of an [analyzedEmail](../resources/security-analyzedemailurl.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
-## Permissions
-
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "security_analyzedemail_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/security-analyzedemail-get-permissions.md)]
-
-## HTTP request
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /security/collaboration/analyzedEmails/{analyzedEmailId}/Urls
-```
-
-## Request headers
-
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-
-## Request body
-
-Don't supply a request body for this method.
-
-## Response
-
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) object in the response body.
-
-## Examples
-
-### Request
-
-The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -257,7 +216,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/Urls
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -287,52 +246,10 @@ Content-Type: application/json
 }
 ```
 
-# Get analyzedEmail Attachments
+### Example 3: Get an analyzedEmail attachments
 
-Namespace: microsoft.graph.security
+#### Request
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Read the Attachments of [analyzedEmail](../resources/security-analyzedemailattachment.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
-## Permissions
-
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "security_analyzedemail_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/security-analyzedemail-get-permissions.md)]
-
-## HTTP request
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /security/collaboration/analyzedEmails/{analyzedEmailId}/attachments
-```
-
-## Request headers
-
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-
-## Request body
-
-Don't supply a request body for this method.
-
-## Response
-
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.analyzedEmailAttachment](../resources/security-analyzedemailattachment.md) object in the response body.
-
-## Examples
-
-### Request
-
-The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
