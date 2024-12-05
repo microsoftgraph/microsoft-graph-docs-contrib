@@ -56,9 +56,9 @@ You can specify the following properties when you create a **dataSource**.
 If successful, this method returns a `201 Created` and a [microsoft.graph.security.dataSource](../resources/security-ediscoverysearch.md) object in the response body.
 
 ## Examples
-
-### Request
-A request to create additional source by `microsoft.graph.security.siteSource`.
+### Example 1: Create an additional eDiscovery source from a site source
+#### Request
+The following example shows a request that creates an eDiscovery source from a site source.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,41 +77,41 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscovery
 }
 ```
 
-#### [C#](#tab/csharp)
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-additionalsource-caseid-searchid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [CLI](#tab/cli)
+# [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/create-additionalsource-caseid-searchid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [Go](#tab/go)
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-additionalsource-caseid-searchid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [Java](#tab/java)
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-additionalsource-caseid-searchid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-additionalsource-caseid-searchid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [PHP](#tab/php)
+# [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-additionalsource-caseid-searchid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [PowerShell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-additionalsource-caseid-searchid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [Python](#tab/python)
+# [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-additionalsource-caseid-searchid-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
+#### Response
 The following is the response for above request.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -140,8 +140,9 @@ HTTP/1.1 201 Created
     }
 }
 ```
-### Request
-A request to create additional source by `microsoft.graph.security.userSource`.
+### Example 2: Create an additional eDiscovery source from a user source
+#### Request
+The following example shows a request that creates an eDiscovery source from a user source.
 
 The following example shows a request.
 
@@ -153,9 +154,9 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/17011798-ca
     "email": "admin@edbig.onmicrosoft.com"
 }
 ```
-### Response
+#### Response
 
-The following is the response for above request.
+The following example shows the response.
 
 ``` http
 HTTP/1.1 200 Created

@@ -56,11 +56,11 @@ You can specify the following properties when you create a **dataSource**.
 If successful, this method returns a `201 Created` and a [microsoft.graph.security.dataSource](../resources/security-datasource.md) object in the response body.
 
 ## Examples
+### Example 1: Create an additional eDiscovery source from a site source
+#### Request
+The following example shows a request that creates an eDiscovery source from a site source.
 
-### Request
-A request to create additional source by `microsoft.graph.security.siteSource`.
-
-#### [HTTP](#tab/http)
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_additional_source_associated_ediscovery_search"
@@ -77,42 +77,42 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 }
 ```
 
-#### [C#](#tab/csharp)
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-additional-source-associated-ediscovery-search-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [CLI](#tab/cli)
+# [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/create-additional-source-associated-ediscovery-search-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [Go](#tab/go)
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-additional-source-associated-ediscovery-search-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [Java](#tab/java)
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-additional-source-associated-ediscovery-search-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-additional-source-associated-ediscovery-search-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [PHP](#tab/php)
+# [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-additional-source-associated-ediscovery-search-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [PowerShell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-additional-source-associated-ediscovery-search-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### [Python](#tab/python)
+# [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-additional-source-associated-ediscovery-search-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
-The following is the response for above request.
+#### Response
+The following example shows a request that creates an eDiscovery source from a site source.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -140,8 +140,9 @@ HTTP/1.1 201 Created
     }
 }
 ```
+### Example 2: Create an additional eDiscovery source from a user source
 ### Request
-A request to create additional source by `microsoft.graph.security.userSource`.
+The following example shows a request that creates an eDiscovery source from a user source.
 
 The following example shows a request.
 
@@ -153,9 +154,9 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/17011798-ca
     "email": "admin@edbig.onmicrosoft.com"
 }
 ```
-### Response
+#### Response
 
-The following is the response for above request.
+The following example shows the response.
 
 ``` http
 HTTP/1.1 200 Created
