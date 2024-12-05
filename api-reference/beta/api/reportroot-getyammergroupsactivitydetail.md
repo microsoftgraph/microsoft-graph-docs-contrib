@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getyammergroupsactivitydetail" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getyammergroupsactivitydetail-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -47,7 +47,7 @@ In the request URL, provide one of the following parameters with a valid value.
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
 | date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
 
-> **Note:** You need to set either period or date in the URL.
+> **Note:** You need to set either the period or date in the URL.
 
 This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
 
@@ -61,9 +61,9 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 
 ### CSV
 
-If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
+If successful, this method returns a `302 Found` response that redirects to a pre-authenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -91,7 +91,7 @@ The default page size for this request is 200 items.
 
 ### CSV
 
-The following is an example that outputs CSV.
+The following example shows a request that outputs CSV.
 
 #### Request
 
@@ -137,7 +137,7 @@ Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Acti
 
 ### JSON
 
-The following is an example that returns JSON.
+The following example shows a request that returns JSON.
 
 #### Request
 
