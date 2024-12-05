@@ -1,11 +1,11 @@
 ---
 title: "Create timeOff"
 description: "Create a new timeOff."
-author: "akumar39"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 09/18/2024
 ---
 
 # Create timeOff
@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "schedule_post_timesoff" } -->
 [!INCLUDE [permissions-table](../includes/permissions/schedule-post-timesoff-permissions.md)]
 
-> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they aren't a member of.
 
 ## HTTP request
 
@@ -41,6 +41,20 @@ POST /teams/{teamId}/schedule/timesOff
 | Content-Type  | application/json. Required.  |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
+## Request body
+
+In the request body, supply a JSON representation of the modified [timeOff](../resources/timeoff.md) object.
+
+The following table lists the properties that you can use when you create a **timeOff** object.
+
+
+|Property|Type|Description|
+|:---|:---|:---|
+| draftTimeOff		| [timeOffItem](../resources/timeoffitem.md)        |The draft version of this **timeOff** item that is viewable by managers. It must be shared before it is visible to team members. Either **draftOpenShift** or **sharedOpenShift** should be `null`.|
+| isStagedForDeletion   | Boolean                      | The **timeOff** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional|
+| sharedTimeOff 	| [timeOffItem](../resources/timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Updates to the **sharedTimeOff** property send notifications to users in the Teams client. Either **draftOpenShift** or **sharedOpenShift** should be `null`.|
+| userId 			| String      |ID of the user assigned to the **timeOff**. Required.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [timeOff](../resources/timeoff.md) object in the response body.
@@ -51,8 +65,6 @@ If successful, this method returns a `201 Created` response code and a [timeOff]
 
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoff-post"
@@ -62,55 +74,17 @@ POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff
 Content-type: application/json
 
 {
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "userId": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
   "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
+    "timeOffReasonId": "TOR_29a5ba96-c7ef-4e76-bec6-055323746314",
+    "startDateTime": "2024-10-10T19:00:00Z",
+    "endDateTime": "2024-10-10T20:00:00Z",
+    "theme": "blue"
   },
-  "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
-  }
+  "draftTimeOff": null,
+  "isStagedForDeletion": false
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/timeoff-post-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/timeoff-post-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/timeoff-post-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/timeoff-post-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-post-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/timeoff-post-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/timeoff-post-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/timeoff-post-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -128,30 +102,30 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "createdDateTime": "2019-03-14T05:35:57.755Z",
-  "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('48ba9e52-8d25-41c7-bbe7-5ee6346eec0d')/schedule/timesOff/$entity",
+  "@odata.etag": "\"40021ee2-0000-0c00-0000-672ea2790000\"",
+  "id": "SHFT_d0941bce-2229-43f5-b1cd-c9e2eaf592cf",
+  "createdDateTime": "2024-11-08T23:44:56.913Z",
+  "lastModifiedDateTime": "2024-11-08T23:44:56.913Z",
+  "userId": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
+  "draftTimeOff": null,
   "lastModifiedBy": {
     "application": null,
     "device": null,
-    "conversation": null,
     "user": {
       "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
+      "displayName": "John Doe",
+      "userIdentityType": "aadUser",
+      "tenantId": null
     }
   },
   "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
+    "timeOffReasonId": "TOR_29a5ba96-c7ef-4e76-bec6-055323746314",
+    "startDateTime": "2024-10-10T19:00:00Z",
+    "endDateTime": "2024-10-10T20:00:00Z",
+    "theme": "blue"
   },
-  "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
-  }
+  "isStagedForDeletion": false
 }
 ```
 
