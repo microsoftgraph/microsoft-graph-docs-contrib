@@ -46,8 +46,8 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 
 ## Examples
 
-### Request
-The following example shows a request.
+#### Request
+The following example shows a request that lists tags asHierarchy.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-ceb
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -197,8 +197,8 @@ Content-Type: application/json
 }
 ```
 
-### Request
-The following example shows a request.
+#### Request
+The following example shows a request that creates a child tags.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b6f72954-c7d0-414c-ad50-00167216cb03/tags/318f79767abf4b8fab4d8e37b3174c5a/childTags

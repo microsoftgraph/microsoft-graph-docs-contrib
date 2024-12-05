@@ -41,8 +41,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
-The following example shows a request.
+#### Request
+The following example shows a request that list tags.
 
 ``` http
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ceb
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 
 ``` http
