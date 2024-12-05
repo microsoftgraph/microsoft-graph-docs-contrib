@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: non-product-specific
 author: "SuryaLashmiS"
+ms.date: 05/23/2024
 ---
 
 # multiValueLegacyExtendedProperty resource type
