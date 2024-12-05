@@ -1,6 +1,6 @@
 ---
 title: "Get mailboxRestoreArtifactsBulkAdditionRequest"
-description: "Get a mailboxRestoreArifatcsBulkAdditionRequest in a Exchange Restore Session"
+description: "Get a mailboxRestoreArifatcsBulkAdditionRequest in an Exchange Restore Session"
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object by it's `id` associated with a [exchangeRestoreSession](../resources/exchangerestoresession.md).
+Read the properties and relationships of a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object by its `id` associated with a [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
 ## Permissions
 

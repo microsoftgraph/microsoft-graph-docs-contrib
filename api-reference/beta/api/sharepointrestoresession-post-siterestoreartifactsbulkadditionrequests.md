@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
-The inital status upon creation of restore session is 'active'. Once the restore session is created and activated, the status becomes 'completed'.
-In case of any failures encountered while resource resolution, the status of restore session becomes 'completedWithErrors'.
+The initial status upon creation of restore session is `active`. Once all the `sites` are added into the corresponding OneDrive restore session and the restore session is activated, the status becomes `completed`.
+If any failures are encountered while resource resolution, the status of restore session becomes `completedWithErrors`.
 
 ## Permissions
 

@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxRestoreArtifactsBulkAdditionRequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md)
 
-The inital status upon creation of restore session is 'active'. Once all the `mailboxes`, and `directoryObjectIds` are added into the corresponding Exchange restore session and the restore session is activated, the status becomes 'completed'.
-In case of any failures encountered while resource resolution, the status of restore session becomes 'completedWithErrors'
+The initial status upon creation of restore session is `active`. Once all the `mailboxes` are added into the corresponding Exchange restore session and the restore session is activated, the status becomes `completed`.
+If there is any failures encountered while resource resolution, the status of restore session becomes `completedWithErrors`.
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

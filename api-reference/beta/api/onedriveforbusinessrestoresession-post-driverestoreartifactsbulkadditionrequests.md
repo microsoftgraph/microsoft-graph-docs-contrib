@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Create a [driveRestoreArtifactsBulkAdditionRequest](../resources/driveRestoreArtifactsBulkAdditionRequest.md) object associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
 
-The inital status upon creation of restore session is 'active'. Once all the `drives`, and `directoryObjectIds` are added into the corresponding OneDrive restore session and the restore session is activated, the status becomes 'completed'.
-In case of any failures encountered while resource resolution, the status of restore session becomes 'completedWithErrors'.
+The initial status upon creation of restore session is `active`. Once all the `drives` are added into the corresponding OneDrive restore session and the restore session is activated, the status becomes `completed`.
+If any failures encountered while resource resolution, the status of restore session becomes `completedWithErrors`.
 
 ## Permissions
 

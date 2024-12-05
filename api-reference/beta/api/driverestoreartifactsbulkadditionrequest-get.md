@@ -1,6 +1,6 @@
 ---
 title: "Get driveRestoreArtifactsBulkAdditionRequest"
-description: "Get a driveRestoreArifatcsBulkAdditionRequest in a OnedriveForBusiness Restore Session."
+description: "Get a driveRestoreArifatcsBulkAdditionRequest in a Onedrive Restore Session."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object by it's `id` associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
+Read the properties and relationships of a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object by its `id` associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
 
 ## Permissions
 

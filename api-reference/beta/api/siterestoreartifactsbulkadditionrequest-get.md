@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object by it's `id` associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+Get a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object by its `id` associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
 ## Permissions
 
