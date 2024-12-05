@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getemailappusageuserdetail" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getemailappusageuserdetail-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -94,7 +94,7 @@ The default page size for this request is 200 items.
 
 ### CSV
 
-The following is an example that outputs CSV.
+The following example shows a request that outputs CSV.
 
 #### Request
 
@@ -140,7 +140,7 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Las
 
 ### JSON
 
-The following is an example that returns JSON.
+The following example shows a request that returns JSON.
 
 #### Request
 
