@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 #### Request
 
-# [HTTP 1](#tab/http1)
+# [HTTP](#tab/http1)
 <!-- {
   "blockType": "request",
   "name": "get_analyzedemail"
@@ -174,7 +174,7 @@ Content-Type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
+# [HTTP](#tab/http2)
 <!-- {
   "blockType": "request",
   "name": "get_analyzedemail_urls"
@@ -219,7 +219,7 @@ Content-Type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
+# [HTTP](#tab/http3)
 <!-- {
   "blockType": "request",
   "name": "get_analyzedemail_attachments"
