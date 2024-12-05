@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 11/19/2024
 ---
 
 # cloudPC resource type
