@@ -27,14 +27,14 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the restore artifact.|
+|id|String|The unique identifier of the restored artifact.|
 |completionDateTime|DateTimeOffset|The time when the restoration of the artifact is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |destinationType|[destinationType](../resources/mailboxrestoreartifact.md#destinationtype-values)|Indicates the restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restoration of the artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|restoredFolderId|String|The new restored folder identifier for the user.|
+|restoredFolderId|String|The newly restored folder identifier for the user.|
 |restoredFolderName|String|The new restored folder name.|
 |startDateTime|DateTimeOffset|The time when the restoration of the artifact started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The restoration status of the artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).T he possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The restoration status of the artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ### artifactRestoreStatus values
 
@@ -46,15 +46,15 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 |inProgress|The restore artifact was picked for restoration.|
 |succeeded|The restore artifact was successfully restored.|
 |failed|The restoration of the artifact failed.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
 
 ### destinationType values
 
 |Member | Description |
 |:------|:------------|
-|new|Restoration will occur at a new location. For SharePoint and OneDrive, a new site will be created and content will be restored in the new site. For Exchange, a restored folder is created and content will be restored there.|
-|inPlace|Restoration will occur in the same location. For SharePoint, it will be on the same site, for OneDrive, on the same drive, and for Exchange, the artifact will be restored in the same mailbox.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|new|Restoration occurs at a new location. For SharePoint and OneDrive, a new site is created and content is restored in the new site. For Exchange, a restored folder is created and content is restored there.|
+|inPlace|Restoration occurs in the same location. For SharePoint, it remains on the same site, for OneDrive, on the same drive, and for Exchange, the artifact is restored in the same mailbox.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 |Relationship|Type|Description|
