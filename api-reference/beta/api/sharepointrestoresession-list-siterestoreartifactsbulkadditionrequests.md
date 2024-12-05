@@ -83,7 +83,7 @@ Content-Type: application/json
     "value": [
         {
             "id": "4437afcf-e520-463c-90a7-ca96401d8039",
-            "siteWebUrls": []
+            "siteWebUrls": [],
             "protectionTimePeriod": {
                 "startDateTime": "2021-01-01T00:00:00Z",
                 "endDateTime": "2021-01-08T00:00:00Z"
@@ -98,26 +98,21 @@ Content-Type: application/json
             "createdBy": "",
             "lastModifiedDateTime": "2023-09-29T10:36:44.4021389+00:00",
             "lastModifiedBy": "",
-            "errors": [
+            "error": [
                 {
-                    "error ": {
-                        " code": " 1000",
-                        " message": "malformedURL",
-                        " target": "https:/contoso1.sharepoint.com"
+                "code": "BulkRestoreArtifactsNotResolved",
+                "message": "Errors while resolving restore artifacts",
+                "details": [
+                    {
+                        "code": "UserNotBackedup",
+                        "message": "Email address 'user0@contoso.com' has not been backed up",
+                        "target": "user0@contoso.com"
                     }
-                },
-                {
-                    "error ": {
-                        " code": " 1001",
-                        " message": "Unknown error",
-                        " target": "https://contoso3.sharepoint.com"
-                    }
+                ]
                 }
             ]
         }
-    ],
-    "nextFetchToken": null,
-    "error": null
+    ]
 }
 ```
 

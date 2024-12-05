@@ -40,7 +40,7 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 |`tags|restorePointTags|The type of the restore point. The possible values are none, fastRestore, unknownFutureValue.
 |restorePointPreference|restorePointPreference|Indicates which restore point to return. The possible values are oldest, latest.|
 |protectionUnitIds|Collection(string)|Indicates which protection units we need to restore.|
-|error|[publicError]((../resources/publicerror.md))|Error details will be populated here for resource resolution failures.|
+|error|[publicError](../resources/publicerror.md)|Error details will be populated here for resource resolution failures.|
 |drives|Collection(String)|A property which contains the list of email-addresses.|
 ## Relationships
 None.

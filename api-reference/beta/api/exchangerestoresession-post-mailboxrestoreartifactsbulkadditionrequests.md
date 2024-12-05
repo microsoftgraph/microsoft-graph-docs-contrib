@@ -56,8 +56,6 @@ In the request body, supply a JSON representation of the [mailboxRestoreArtifact
     "consotos2@microsoft.com",
     "contoso3@microsoft.com"
       ],
-     "directoryObjectIds": [],
-     "protectionUnitIds": [],
     "protectionTimePeriod": {
         "startDateTime": "2021-01-01T00:00:00Z",
         "endDateTime": "2021-01-08T00:00:00Z"

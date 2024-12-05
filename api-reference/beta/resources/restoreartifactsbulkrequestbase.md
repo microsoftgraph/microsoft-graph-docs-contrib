@@ -24,9 +24,9 @@ This abstract type is the base type for [siteRestoreArtifactsBulkAdditionRequest
 |displayName|String|Name of the addition Request.|
 |status|RestoreArtifactsBulkRequestStatus	|It determines the execution status of the long running operation being one of `unkown`, `active`, `completed`, `completedWithErrors` or `unkonwnFutureValue`.|
 |createdDateTime|DateTimeOffset|The time of creation of the bulk request.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|The identity of person who created the bulk request.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the bulk request.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this entity.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Identity of the person who last modified this entity.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this entity.|
 |protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The start and end date time of the protection period|
 |destinationType|destinationType|Indicates the restoration destination. The possible values are: new, inPlace.|
 |tags|restorePointTags|	The type of the restore point. The possible values are none, fastRestore, unknownFutureValue|

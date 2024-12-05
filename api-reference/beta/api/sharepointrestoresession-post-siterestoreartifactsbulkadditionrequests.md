@@ -107,7 +107,7 @@ Content-Type: application/json
   	"id": "4437afcf-e520-463c-90a7-ca96401d8039",    
     "destinationType": "new",
     "tags": "fastRestore",
-    "restorePointPreference": "latest"
+    "restorePointPreference": "latest",
     "displayName": "SPO-BulkRestoreArtifacts",
     "status": "active",
     "createdDateTime": "2024-12-03T07:47:57.6011358Z",      
