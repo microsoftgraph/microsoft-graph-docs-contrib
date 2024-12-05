@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "business-scenarios"
 doc_type: resourcePageType
+ms.date: 07/24/2024
 ---
 
 # plannerPlanConfigurationLocalization resource type
