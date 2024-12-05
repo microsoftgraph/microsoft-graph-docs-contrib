@@ -1,7 +1,8 @@
 ---
 title: "Create shift"
 description: "Create a new shift."
-author: "akumar39"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -40,6 +41,20 @@ POST /teams/{teamId}/schedule/shifts
 | Content-Type  | application/json. Required. |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
+## Request body
+
+In the request body, supply a JSON representation of the modified [shift](../resources/shift.md) object.
+
+The following table lists the properties that you can use when you create a **shift** object.
+
+|Property|Type|Description|
+|:---|:---|:---|
+| draftShift           | [shiftItem](../resources/shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they're [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property. Eiher **draShift** or **sharedShift** should be `null`.|
+| isStagedForDeletion   | Boolean                           | The **shift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional. |
+| schedulingGroupId    | String                      | ID of the scheduling group the **shift** is part of. Required. |
+| sharedShift          | [shiftItem](../resources/shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Updates to the **sharedShift** property send notifications to users in the Teams client. Eiher **draShift** or **sharedShift** should be `null`.|
+| userId               | String                      | ID of the user assigned to the **shift**. Required. |
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [shift](../resources/shift.md) object in the response body.
@@ -50,8 +65,6 @@ If successful, this method returns a `201 Created` response code and a [shift](.
 
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-post-shifts"
@@ -61,77 +74,19 @@ POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts
 Content-type: application/json
 
 {
-  "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "sharedShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:15:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  },
+  "userId": "5ca83ce7-291d-43b7-bf53-af79eef4bc1d",
   "draftShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
+    "displayName": null,
+    "startDateTime": "2024-10-08T15:00:00Z",
+    "endDateTime": "2024-10-09T00:00:00Z",
     "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:30:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  }
+    "notes": null,
+    "activities": []
+  },
+  "sharedShift": null,
+  "isStagedForDeletion": false
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/schedule-post-shifts-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/schedule-post-shifts-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/schedule-post-shifts-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/schedule-post-shifts-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/schedule-post-shifts-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/schedule-post-shifts-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-post-shifts-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/schedule-post-shifts-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -149,52 +104,31 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+  "id": "SHFT_0f004eda-32a6-4f0c-a076-18f76d997a55",
+  "createdDateTime": "2024-11-08T23:49:13.877Z",
+  "lastModifiedDateTime": "2024-11-08T23:49:13.877Z",
+  "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+  "userId": "5ca83ce7-291d-43b7-bf53-af79eef4bc1d",
+  "sharedShift": null,
   "lastModifiedBy": {
     "application": null,
     "device": null,
-    "conversation": null,
     "user": {
       "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
+      "displayName": "John Doe",
+      "userIdentityType": "aadUser",
+      "tenantId": null
     }
   },
-  "sharedShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:15:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  },
   "draftShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
+    "displayName": null,
+    "startDateTime": "2024-10-08T15:00:00Z",
+    "endDateTime": "2024-10-09T00:00:00Z",
     "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:30:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  }
+    "notes": null,
+    "activities": []
+  },
+  "isStagedForDeletion": false
 }
 ```
 

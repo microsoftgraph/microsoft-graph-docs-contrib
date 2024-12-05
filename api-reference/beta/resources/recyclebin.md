@@ -5,6 +5,7 @@ description: "Provides a list of recycleBinItems."
 ms.localizationpriority: "medium"
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 09/26/2024
 ---
 
 # recycleBin resource type

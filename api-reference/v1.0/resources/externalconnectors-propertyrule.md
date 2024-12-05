@@ -5,6 +5,7 @@ author: "emzho"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/08/2024
 ---
 
 # propertyRule resource type

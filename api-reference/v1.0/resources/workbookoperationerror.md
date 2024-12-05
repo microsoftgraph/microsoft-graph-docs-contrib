@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "grangeryy"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
+ms.date: 04/03/2024
 ---
 
 # workbookOperationError resource type

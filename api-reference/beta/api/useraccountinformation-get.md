@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "profile"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # Get userAccountInformation
