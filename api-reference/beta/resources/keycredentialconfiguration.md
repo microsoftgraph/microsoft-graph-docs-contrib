@@ -21,11 +21,11 @@ Represents a key credential configuration object that contains properties to con
 | Property                                    | Type                            | Description |
 | :------------------------------------------ | :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
 | certificateBasedApplicationConfigurationIds | String collection               | Collection of GUIDs that represent [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) that is allowed as root and intermediate certificate authorities.|
-| maxLifetime                                 | Duration                        | String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents four days, 12 hours, 30 minutes, and five seconds. This property is required when **restrictionType** is set to `keyLifetime`.|
+| maxLifetime                                 | Duration                        | String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents 4 days, 12 hours, 30 minutes, and 5 seconds. This property is required when **restrictionType** is set to `keyLifetime`.|
 | restrictForAppsCreatedAfterDateTime         | DateTimeOffset                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
 | restrictionType                             | appKeyCredentialRestrictionType | The type of restriction being applied. Possible values are `asymmetricKeyLifetime`, and `unknownFutureValue`. Each value of restrictionType can be used only once per policy.|
 | state                                       | appManagementRestrictionState   | Indicates whether the restriction is evaluated. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
-| isStateSetByMicrosoft                       | Boolean                         | If `true`, the restriction state is set by Microsoft. If `false`, the restriction state is set by the tenant. This is a read-only property. |
+| isStateSetByMicrosoft                       | Boolean                         | This property is read-only. If `true`, Microsoft set the `keyCredentialConfiguration` state. If `false`, the tenant modified the `keyCredentialConfiguration` state.|
 
 ## Relationships
 
