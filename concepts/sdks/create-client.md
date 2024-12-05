@@ -38,6 +38,8 @@ The client ID is the app registration ID that is generated when you [register yo
 
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
+Import `DeviceDodeCredential` from `azure.identity`, and import `GraphServiceClient` from `msgraph.graph_service_client` to run this code.
+
 # [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
