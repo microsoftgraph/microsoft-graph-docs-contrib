@@ -1,7 +1,7 @@
 ---
 title: "detonationBehaviourDetails resource type"
 description: Detonation behaviour details
-author: ak_graph
+author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security
 doc_type: resourcePageType

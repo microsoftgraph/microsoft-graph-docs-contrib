@@ -1,11 +1,11 @@
 ---
-title: "analyzedEmailRecipientDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.date: 12/05/2024
+title: "Recipient Detail resource type"
+description: Recipient Detail
+author: akgraph
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: security
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # analyzedEmailRecipientDetail resource type
@@ -15,7 +15,6 @@ Namespace: microsoft.graph.security
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **TODO: Add Description**
-
 
 ## Properties
 |Property|Type|Description|

@@ -49,6 +49,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) object in the response body.
 
+## Examples
+
 ### Example 1: Get an analyzedEmail
 
 #### Request
@@ -200,7 +202,6 @@ Content-Type: application/json
   }
 }
 ```
-
 
 ### Example 2: Get an analyzedEmail urls
 

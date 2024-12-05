@@ -1,7 +1,7 @@
 ---
 title: "DlpRuleInfo resource type"
 description: DLP rules applied to mail
-author: ak_graph
+author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security
 doc_type: resourcePageType

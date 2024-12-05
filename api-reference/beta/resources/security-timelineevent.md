@@ -1,7 +1,7 @@
 ---
 title: "timelineEvent resource type"
 description: Timeline of a analyzedEmail entity
-author: ak_graph
+author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security
 doc_type: resourcePageType
