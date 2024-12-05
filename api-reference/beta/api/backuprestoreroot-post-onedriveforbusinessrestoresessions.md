@@ -1,6 +1,6 @@
 ---
 title: "Create oneDriveForBusinessRestoreSession"
-description: "Create a new OneDrive for Business restore session."
+description: "Create a new OneDrive for Work or School restore session."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -142,6 +142,13 @@ Content-Type: application/json
   "@odata.context": "/solutions/backupRestore/$metadata#oneDriveForBusinessRestoreSession/$entity",
   "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
   "status": "draft",
+  "restoreJobType": "standard",
+  "restoreSessionArtifactCount": {
+    "total": 2,
+    "completed": 0,
+    "inProgress": 0,
+    "failed": 0
+  },
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
