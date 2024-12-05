@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 11/30/2024
 ---
 
 # Create openShift
