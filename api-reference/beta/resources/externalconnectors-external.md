@@ -28,7 +28,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystems|[microsoft.graph.authorizationSystem](../resources/authorizationsystem.md) collection|Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management will collect and analyze permissions and actions on.|
+|authorizationSystems|[microsoft.graph.authorizationSystem](../resources/authorizationsystem.md) collection|Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management collects and analyzes permissions and actions on.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
