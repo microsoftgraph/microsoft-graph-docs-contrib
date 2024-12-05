@@ -107,7 +107,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.analyzedEmail"
+  "@odata.type": "microsoft.graph.security.analyzedEmail",
+  "name" : "get_analyzedemail"
 }
 -->
 ``` http
@@ -224,7 +225,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
+  "@odata.type": "microsoft.graph.security.analyzedEmailUrl",
+  "name" : "get_analyzedemail_urls"
 }
 -->
 ``` http
@@ -268,7 +270,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
+  "@odata.type": "microsoft.graph.security.analyzedEmailAttachment",
+  "name" : "get_analyzedemail_attachments"
 }
 -->
 ``` http

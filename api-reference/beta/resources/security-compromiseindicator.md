@@ -20,7 +20,7 @@ Namespace: microsoft.graph.security
 |Property|Type|Description|
 |:---|:---|:---|
 |value|String|Indicator|
-|verdict|[microsoft.graph.security.verdictCategory](#verdictCategory-values)|.The possible values are: `none`, `malware`, `phish`, `siteUnavailable`, `spam`, `decryptionFailed`, `unsupportedUriScheme`, `unsupportedFileType`, `undefined`, `unknownFutureValue`.|
+|verdict|[microsoft.graph.security.verdictCategory](#verdictcategory-values)|.The possible values are: `none`, `malware`, `phish`, `siteUnavailable`, `spam`, `decryptionFailed`, `unsupportedUriScheme`, `unsupportedFileType`, `undefined`, `unknownFutureValue`.|
 
 ### verdictCategory values 
 
