@@ -33,6 +33,7 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restoration of the artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |restoredFolderId|String|The newly restored folder identifier for the user.|
 |restoredFolderName|String|The new restored folder name.|
+|restoredItemCount|Int32|The number of items that are being restored in the folder.|
 |startDateTime|DateTimeOffset|The time when the restoration of the artifact started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The restoration status of the artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 
@@ -83,7 +84,8 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.publicError"
   },
   "restoredFolderId": "String",
-  "restoredFolderName": "String"
+  "restoredFolderName": "String",
+  "restoredItemCount": "Int32"
 }
 ```
 
