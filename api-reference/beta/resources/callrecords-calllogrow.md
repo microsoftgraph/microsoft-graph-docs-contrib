@@ -5,6 +5,7 @@ author: "rihob"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 03/06/2024
 ---
 
 # callLogRow resource type
