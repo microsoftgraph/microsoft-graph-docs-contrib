@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 09/25/2024
 ---
 
 # backupRestoreRoot: enable
@@ -45,7 +46,7 @@ In the request body, supply a JSON representation of the following parameter.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|appOwnerTenantId|String|The ID of the tenant in which this application is registered. Required.|
+|appOwnerTenantId|String|The ID of the owning tenant. The owning tenant contains the billing profile.|
 
 ## Response
 

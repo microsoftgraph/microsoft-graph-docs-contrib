@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # Remove deleted fileStorageContainer
@@ -96,7 +97,6 @@ DELETE https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers/b!
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

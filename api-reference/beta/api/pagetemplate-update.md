@@ -5,6 +5,7 @@ author: Yadong1106
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # Update pageTemplate
@@ -64,6 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [page
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_pageTemplate"
@@ -80,6 +82,12 @@ Content-Type: application/json
   "showRecommendedPages": false
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-pagetemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

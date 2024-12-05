@@ -6,13 +6,14 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get group
 
 Namespace: microsoft.graph
 
-Get the properties and relationships of a group object.
+Get the properties and relationships of a [group](../resources/group.md) object.
 
 This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that aren't_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and aren't returned in the `$select` query.
 

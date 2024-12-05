@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # List mobileAppDependencies
@@ -63,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 494
+Content-Length: 804
 
 {
   "value": [
@@ -74,6 +75,11 @@ Content-Length: 494
       "targetDisplayName": "Target Display Name value",
       "targetDisplayVersion": "Target Display Version value",
       "targetPublisher": "Target Publisher value",
+      "targetPublisherDisplayName": "Target Publisher Display Name value",
+      "sourceId": "Source Id value",
+      "sourceDisplayName": "Source Display Name value",
+      "sourceDisplayVersion": "Source Display Version value",
+      "sourcePublisherDisplayName": "Source Publisher Display Name value",
       "targetType": "parent",
       "dependencyType": "autoInstall",
       "dependentAppCount": 1,

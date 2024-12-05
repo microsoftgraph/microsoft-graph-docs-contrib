@@ -1,6 +1,6 @@
 ---
 title: "Remove resourceRoleScope from an access package"
-description: "Remove a resourceRoleScope from an access package."
+description: "Remove an accessPackageResourceRoleScope from an accessPackage list of resource role scopes."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) from an [accessPackage](../resources/accesspackage.md) list of resource role scopes.
+Remove an [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) from an [accessPackage](../resources/accesspackage.md) list of resource role scopes.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackage_delete_accesspackageresourcerolescopes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-delete-accesspackageresourcerolescopes-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-access-package-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-manager-apis-write.md)]
 
 ## HTTP request
 

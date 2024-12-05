@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madhavpatel6"
 ms.subservice: entra-sign-in
 doc_type: "resourcePageType"
+ms.date: 07/08/2024
 ---
 
 # featureRolloutPolicy resource type

@@ -20,10 +20,37 @@ For the list of properties that support updating, see the [Request body](#reques
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "onlinemeeting_update" } -->
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /me/onlineMeetings/{meetingId}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_update", 
+  "requestUrls": ["PATCH /me/onlineMeetings/{meetingId}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-update-permissions.md)]
+
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /users/{userId}/onlineMeetings/{meetingId}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_update_2", 
+  "requestUrls": ["PATCH /users/{userId}/onlineMeetings/{meetingId}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-update-2-permissions.md)]
 
 To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to update online meetings on behalf of that user (with user ID specified in the request path).
 
@@ -63,6 +90,7 @@ The last column indicates whether updating this property takes effect for an in-
 | allowAttendeeToEnableCamera | Boolean                                                    | Indicates whether attendees can turn on their camera.                               | Yes                                 |
 | allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                                 |
 | allowBreakoutRooms          | Boolean                                                    | Indicates whether breakout rooms are enabled for the meeting.                       | No                                  |
+| allowedLobbyAdmitters       | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. | Yes                                 |
 | allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes                                 |
 | allowLiveShare              | Boolean                                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
 | allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                                 |
@@ -71,7 +99,7 @@ The last column indicates whether updating this property takes effect for an in-
 | allowWhiteboard             | Boolean                                                    | Indicates whether whiteboard is enabled for the meeting.                            | No                                  |
 | endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                                  |
 | isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                                 |
-| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                                 |
+| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                                 |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                                  |
 | recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                                  |
 | startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                                  |

@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 10/30/2024
 ---
 
 # ediscoverySearch resource type
@@ -26,6 +27,8 @@ Represents an eDiscovery search. For details, see [Collect data for a case in eD
 |[Delete](../api/security-ediscoverycase-delete-searches.md)|None|Delete an [microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) object.|
 |[Estimate statistics](../api/security-ediscoverysearch-estimatestatistics.md)|None|Run an estimate statistics operation on the data contained in the eDiscovery search.|
 |[Purge data](../api/security-ediscoverysearch-purgedata.md)|None|Delete Exchange mailbox items or Microsoft Teams messages contained in an eDiscovery search.|
+|[Export report](../api/security-ediscoverysearch-exportreport.md)|None|Export an item report from an estimated [ediscoverySearch](../resources/security-ediscoverysearch.md).|
+|[Export result](../api/security-ediscoverysearch-exportresult.md)|None|Export results from an estimated [ediscoverySearch](../resources/security-ediscoverysearch.md).|
 |[List additional sources](../api/security-ediscoverysearch-list-additionalsources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md) collection|Get the list of [additional sources](../resources/security-datasource.md) associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).|
 |[Add additional sources](../api/security-ediscoverysearch-post-additionalsources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Create a new [additional source](../resources/security-datasource.md) associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).|
 |[Get last estimate statistics operation](../api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md)|[microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) collection|Get the last [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.|

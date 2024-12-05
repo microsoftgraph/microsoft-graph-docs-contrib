@@ -5,6 +5,7 @@ author: "SarahBar"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get azureADAuthentication
@@ -22,12 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "azureadauthentication_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/azureadauthentication-get-permissions.md)]
 
-For delegated scenarios, the calling user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-+ Global Reader
-+ Reports Reader
-+ Security Administrator
-+ Security Operator
-+ Security Reader
+[!INCLUDE [rbac-entra-health-service-activity-apis](../includes/rbac-for-apis/rbac-entra-health-service-activity-apis.md)]
 
 ## HTTP request
 

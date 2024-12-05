@@ -5,6 +5,7 @@ author: "skandula"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # product: findByKbNumber
@@ -86,12 +87,24 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/products/FindByKbNumb
 [!INCLUDE [sample-code](../includes/snippets/go/windowsupdatesfindbycatalogid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/windowsupdatesfindbycatalogid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/windowsupdatesfindbycatalogid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/windowsupdatesfindbycatalogid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/windowsupdatesfindbycatalogid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/windowsupdatesfindbycatalogid-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
