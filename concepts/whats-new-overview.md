@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 12/01/2024
+ms.date: 12/03/2024
 ---
 
 # What's new in Microsoft Graph
@@ -17,59 +17,25 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## December 2024: New in preview only
+
+### Device and app management | Cloud PC
+
+Use the **disasterRecoveryType** property on [cloudPcCrossRegionDisasterRecoverySetting](/graph/api/resources/cloudpccrossregiondisasterrecoverysetting?view=graph-rest-beta&preserve-view=true) to get or set the type of disaster recovery to perform when a disaster occurs on a user's Cloud PC.
+
+### Reports | Identity and access reports 
+
+The Microsoft 365 monitoring APIs provide telemetry data to monitor the health of various Microsoft services within a Microsoft 365 subscription for your organization. Use the new operations in the [serviceActivity](/graph/api/resources/serviceactivity?view=graph-rest-beta&preserve-view=true) resource to get telemetry data for Exchange Online, Microsoft 365 Apps, and Microsoft Teams.
+
+### Sites and lists
+
+Create and manage a [news link page](/graph/api/resources/newslinkpage?view=graph-rest-beta&preserve-view=true) in SharePoint.
+
 ## November 2024: New and generally available
 
 ### Applications | Policies
 
 Use the **state** property on [keyCredentialConfiguration](/graph/api/resources/keycredentialconfiguration) and [passwordCredentialConfiguration](/graph/api/resources/passwordcredentialconfiguration) to indicate whether a restriction is evaluated.
-
-### Teamwork and communications | Messaging
-
-Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
-
-## October 2024: New in preview only
-
-### Backup storage
-
-Updated the endpoints of the following methods:
-- [List driveProtectionUnits](/graph/api/backuprestoreroot-list-driveprotectionunits?view=graph-rest-beta&preserve-view=true)
-- [List mailboxProtectionUnits](/graph/api/backuprestoreroot-list-mailboxprotectionunits?view=graph-rest-beta&preserve-view=true)
-- [List siteProtectionUnits](/graph/api/backuprestoreroot-list-siteprotectionunits?view=graph-rest-beta&preserve-view=true)
-
-### Device and app management | Cloud PC
-
-- Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta&preserve-view=true) method.
-- Use the **disasterRecoveryType** property on [cloudPcCrossRegionDisasterRecoverySetting](/graph/api/resources/cloudpccrossregiondisasterrecoverysetting?view=graph-rest-beta&preserve-view=true) to get or set the type of disaster recovery to perform when a disaster occurs on a user's Cloud PC.
-
-### Teamwork and communications | Calls and online meetings
-
-Use the following new methods for virtual events that are of the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) type:
-- [List](/graph/api/virtualeventsroot-list-townhalls?view=graph-rest-beta&preserve-view=true) all virtual event town halls created in a tenant.
-- [Get](/graph/api/virtualeventtownhall-getbyuseridandrole?view=graph-rest-beta&preserve-view=true) the virtual event town halls where a specified user is an organizer or coorganizer.
-- [Get](/graph/api/virtualeventtownhall-getbyuserrole?view=graph-rest-beta&preserve-view=true) the virtual event town halls where the signed-in user is an organizer or coorganizer.
-
-### Teamwork and communications | Messaging
-
-Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
-
-### Users
-
-Changed the following on-premises synced properties of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: 
-- onPremisesDistinguishedName
-- onPremisesDomainName
-- onPremisesSamAccountName
-- onPremisesSecurityIdentifier
-- onPremisesUserPrincipalName
-
-## September 2024: New and generally available
-
-### Change notifications
-
-Announced the deprecation of shared access signatures (SAS) for authenticating Event Hubs for [Microsoft Graph change notifications](/graph/change-notifications-delivery-event-hubs). We recommend using Microsoft Entra ID role-based access control (RBAC) instead. Follow the [guidance to migrate to RBAC](/graph/change-notifications-delivery-event-hubs#migrate-an-event-hub-authentication-to-microsoft-entra-id-rbac).
-
-### Identity and access | Directory management
-
-Removed the previously deprecated `Directory.Write.Restricted` permission from the [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources.
 
 ### Security | Alerts and incidents
 
@@ -113,8 +79,7 @@ List, create, get, update, and delete [fqdnFilteringRule](/graph/api/resources/n
 
 ### Reports | Identity and access reports 
 
-- Use the **sessionId** property on [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) to get the identifier of the session that was generated during a sign-in.
-- The Microsoft 365 monitoring APIs provide telemetry data to monitor the health of various Microsoft services within a Microsoft 365 subscription for your organization. Use the new operations in the [serviceActivity](/graph/api/resources/serviceactivity?view=graph-rest-beta&preserve-view=true) resource to get telemetry data for Exchange Online, Microsoft 365 Apps, and Microsoft Teams.
+Use the **sessionId** property on [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) to get the identifier of the session that was generated during a sign-in.
 
 ### Security | Discovered cloud apps
 
@@ -129,7 +94,8 @@ The new Microsoft Defender for Cloud apps API in Microsoft Graph is designed to 
 - [endpointDiscoveredCloudAppDetail](/graph/api/resources/security-endpointdiscoveredcloudappdetail?view=graph-rest-beta&preserve-view=true)
 
 ### Security | eDiscovery
-- Added application authentication for Microsoft Purview eDiscovery Graph APIs. For more information about setting up app-only access, see [Set up application authentication](/graph/security-ediscovery-appauthsetup).
+
+Added application authentication for Microsoft Purview eDiscovery Graph APIs. For more information about setting up app-only access, see [Set up application authentication](/graph/security-ediscovery-appauthsetup).
 
 ### Teamwork and communications | AI interactions
 
