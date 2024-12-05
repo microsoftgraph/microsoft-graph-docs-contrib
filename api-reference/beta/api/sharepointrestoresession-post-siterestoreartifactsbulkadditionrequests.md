@@ -62,7 +62,7 @@ POST /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessio
     },
     "destinationType": "new",
     "tags": "fastRestore",
-     "restorePointPreference": "latest"
+    "restorePointPreference": "latest"
 }
 ```
 
@@ -112,7 +112,7 @@ Content-Type: application/json
     "status": "active",
     "createdDateTime": "2024-12-03T07:47:57.6011358Z",      
     "lastModifiedDateTime": "2024-12-03T07:47:57.6011358Z",
-    "siteWebUrls": []
+    "siteWebUrls": [],
     "protectionTimePeriod": {
          "startDateTime": "2024-01-01T00:00:00Z",
          "endDateTime": "2024-01-08T00:00:00Z"
