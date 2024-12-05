@@ -19,7 +19,7 @@ For `Frontline shared` only. Specific scheduled apply rule set on the policy.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/cloudpcprovisioningpolicyschedule-get.md)|[cloudPcPolicyScheduledApplyActionDetail](../resources/cloudPcPolicyScheduledApplyActionDetail.md)|List properties and relationships of the [cloudPcPolicyScheduledApplyActionDetail](../resources/cloudPcPolicyScheduledApplyActionDetail.md) objects.|
+|[List](../api/cloudpcprovisioningpolicy-retrievePolicyApplySchedule.md)|[cloudPcPolicyScheduledApplyActionDetail](../resources/cloudPcPolicyScheduledApplyActionDetail.md)|List properties and relationships of the [cloudPcPolicyScheduledApplyActionDetail](../resources/cloudPcPolicyScheduledApplyActionDetail.md) objects.|
 
 ## Properties
 

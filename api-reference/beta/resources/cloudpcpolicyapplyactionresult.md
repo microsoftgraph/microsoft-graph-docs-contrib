@@ -19,7 +19,7 @@ For `Frontline shared` only. Specify the policy apply status, apply start time a
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/cloudpcprovisioningpolicyapplyactionresult-get.md)|[cloudPcPolicyApplyActionResult](../resources/cloudpcpolicyapplyactionresult.md)|List properties and relationships of the [cloudPcPolicyApplyActionResult](../resources/cloudpcpolicyapplyactionresult.md) objects.|
+|[Get](../api/cloudpcprovisioningpolicy-retrievePolicyApplyActionResult.md)|[cloudPcPolicyApplyActionResult](../resources/cloudpcpolicyapplyactionresult.md)|List properties and relationships of the [cloudPcPolicyApplyActionResult](../resources/cloudpcpolicyapplyactionresult.md) objects.|
 
 ## Properties
 
