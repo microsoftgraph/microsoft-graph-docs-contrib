@@ -21,6 +21,8 @@ Represnts the delivery action and location of an [analzed email](security-analyz
 |:---|:---|:---|
 |action|[microsoft.graph.security.deliveryAction](#deliveryaction-values)|The delivery action of the email. The possible values are: `unknown`, `deliveredToJunk`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.|
 |location|[microsoft.graph.security.deliveryLocation](#deliverylocation-values)|The delivery location of the email. The possible values are: `unknown`, `inbox_folder`, `junkFolder`, `deletedFolder`, `quarantine`, `onprem_external`, `failed`, `dropped`, `others`, `unknownFutureValue`.|
+|originalThreats|String|**TODO: Add Description**|
+|latestThreats|String|**TODO: Add Description**|
 
 ### deliveryAction values
 
@@ -62,7 +64,9 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.security.analyzedEmailDeliveryDetail",
   "action": "String",
-  "location": "String"
+  "location": "String",
+  "originalThreats": "String",
+  "latestThreats": "String"
 }
 ```
 

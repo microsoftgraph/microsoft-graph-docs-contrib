@@ -22,9 +22,12 @@ Represents an attachment to an analyzed email.
 |detonationDetails|[microsoft.graph.security.detonationDetails](../resources/security-detonationdetails.md)|The detonation details of the attachment.|
 |fileName|String|The name of the attachment in the email.|
 |fileType|String|The type of the attachment in the email.|
+|fileSize|Int32|Size of the file|
+|fileExtension|String|Extension of the file|
 |sha256|String|The SHA256 file hash of the attachment.|
-|threatName|String|The threat name associated with the threat type.|
+|malwareFamily|String|The threat name associated with the threat type.|
 |threatType|microsoft.graph.security.threatType|The threat type associated with the attachment. The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
+|tenantAllowBlockListDetailInfo|String|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -41,8 +44,11 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.security.analyzedEmailAttachment",
   "fileName": "String",
   "fileType": "String",
+  "fileSize": "Integer",
+  "fileExtension": "String",
   "threatType": "String",
-  "threatName": "String",
+  "malwareFamily": "String",
+  "tenantAllowBlockListDetailInfo": "String",
   "sha256": "String",
   "detonationDetails": {
     "@odata.type": "microsoft.graph.security.detonationDetails"

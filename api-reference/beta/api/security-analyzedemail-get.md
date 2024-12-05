@@ -133,13 +133,11 @@ Content-Type: application/json
     "latestDelivery": {
       "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
     },
-    "attachmentsCount": "Integer",
     "attachments": [
       {
         "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
       }
     ],
-    "urlsCount": "Integer",
     "urls": [
       {
         "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
@@ -175,7 +173,206 @@ Content-Type: application/json
     "bulkComplaintLevel": "String",
     "emailClusterId": "String",
     "policyAction": "String",
-    "policy": "String"
+    "policy": "String",
+    "timelineEvents": [
+      {
+        "@odata.type": "microsoft.graph.security.timelineEvent"
+      }
+    ],
+    "threatDetectionDetails": [
+      {
+        "@odata.type": "microsoft.graph.security.threatDetectionDetail"
+      }
+    ],
+    "primaryOverrideSource": "String",
+    "inboundConnectorFormattedName": "String",
+    "policyType": "String",
+    "clientType": "String",
+    "dlpRules": [
+      {
+        "@odata.type": "microsoft.graph.security.analyzedEmailDlpRuleInfo"
+      }
+    ],
+    "forwardingDetail": "String",
+    "recipientDetail": {
+      "@odata.type": "microsoft.graph.security.analyzedEmailRecipientDetail"
+    }
   }
+}
+```
+
+# Get analyzedEmail Urls
+
+Namespace: microsoft.graph.security
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Read the Urls of an [analyzedEmail](../resources/security-analyzedemailurl.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_analyzedemail_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-analyzedemail-get-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/collaboration/analyzedEmails/{analyzedEmailId}/Urls
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) object in the response body.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_analyzedemail_urls"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/Urls
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.security.analyzedEmailUrl",
+      "url": "String",
+      "threatType": "String",
+      "detectionMethod": "String",
+      "tenantAllowBlockListDetailInfo": "String",
+      "detonationDetails": {
+        "@odata.type": "microsoft.graph.security.detonationDetails"
+      }
+    }
+  ]
+}
+```
+
+# Get analyzedEmail Attachments
+
+Namespace: microsoft.graph.security
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Read the Attachments of [analyzedEmail](../resources/security-analyzedemailattachment.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_analyzedemail_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-analyzedemail-get-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/collaboration/analyzedEmails/{analyzedEmailId}/attachments
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.analyzedEmailAttachment](../resources/security-analyzedemailattachment.md) object in the response body.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_analyzedemail_attachments"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/attachments
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.security.analyzedEmailAttachment",
+      "fileName": "String",
+      "fileType": "String",
+      "fileSize": "Integer",
+      "fileExtension": "String",
+      "threatType": "String",
+      "malwareFamily": "String",
+      "tenantAllowBlockListDetailInfo": "String",
+      "sha256": "String",
+      "detonationDetails": {
+        "@odata.type": "microsoft.graph.security.detonationDetails"
+      }
+    }
+  ]
 }
 ```

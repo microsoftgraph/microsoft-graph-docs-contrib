@@ -24,6 +24,9 @@ Represents detonation details specific to email attachments and URLs. These deta
 |detonationObservables|[microsoft.graph.security.detonationObservables](../resources/security-detonationobservables.md)|All observables in the detonation tree.|
 |detonationVerdict|String|The verdict of the detonation.|
 |detonationVerdictReason|String|The reason for the verdict of the detonation.|
+|detonationBehaviourDetails|[microsoft.graph.security.detonationBehaviourDetails](../resources/security-detonationbehaviourdetails.md)|**TODO: Add Description**|
+|detonationScreenshotUri|String|**TODO: Add Description**|
+|compromiseIndicators|[microsoft.graph.security.compromiseIndicator](../resources/security-compromiseindicator.md) collection|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -46,7 +49,16 @@ The following JSON representation shows the resource type.
   },
   "detonationObservables": {
     "@odata.type": "microsoft.graph.security.detonationObservables"
-  }
+  },
+  "detonationBehaviourDetails": {
+    "@odata.type": "microsoft.graph.security.detonationBehaviourDetails"
+  },
+  "detonationScreenshotUri": "String",
+  "compromiseIndicators": [
+    {
+      "@odata.type": "microsoft.graph.security.compromiseIndicator"
+    }
+  ]
 }
 ```
 

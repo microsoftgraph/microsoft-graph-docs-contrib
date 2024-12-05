@@ -28,7 +28,6 @@ Contains metadata for email messages that are analyzed for security threats.
 |:---|:---|:---|
 |alertIds|String collection| A collection of values that contain the IDs of any alerts associated with the email. |
 |attachments|[microsoft.graph.security.analyzedEmailAttachment](../resources/security-analyzedemailattachment.md) collection|A collection of the attachments in the email.|
-|attachmentsCount|Int32|The number of attachments in the email.|
 |authenticationDetails|[microsoft.graph.security.analyzedEmailAuthenticationDetail](../resources/security-analyzedemailauthenticationdetail.md)| The authentication details associated with the email.|
 |bulkComplaintLevel|String|The bulk complaint level of the email. A higher level is more likely to be spam.|
 |contexts|String collection|Provides context of the email.  |
@@ -56,7 +55,15 @@ Contains metadata for email messages that are analyzed for security threats.
 |subject|String|Subject of the email.|
 |threatTypes|[microsoft.graph.security.threatType](#threattype-values) collection|Indicates the threat types. The possible values are: `unknown`, `spam`, `malware`, `phish`, `none`, `unknownFutureValue`.|
 |urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|A collection of the URLs in the email.|
-|urlsCount|Int32|The number of URLs in the email.|
+|timelineEvents|[microsoft.graph.security.timelineEvent](../resources/security-timelineevent.md) collection|**TODO: Add Description**|
+|threatDetectionDetails|[microsoft.graph.security.threatDetectionDetail](../resources/security-threatdetectiondetail.md) collection|**TODO: Add Description**|
+|primaryOverrideSource|String|**TODO: Add Description**|
+|inboundConnectorFormattedName|String|**TODO: Add Description**|
+|policyType|String|**TODO: Add Description**|
+|clientType|String|**TODO: Add Description**|
+|dlpRules|[microsoft.graph.security.analyzedEmailDlpRuleInfo](../resources/security-analyzedemaildlpruleinfo.md) collection|**TODO: Add Description**|
+|forwardingDetail|String|**TODO: Add Description**|
+|recipientDetail|[microsoft.graph.security.analyzedEmailRecipientDetail](../resources/security-analyzedemailrecipientdetail.md)|Details of the recipients|
 
 ### antispamDirectionality values
 
@@ -132,13 +139,11 @@ The following JSON representation shows the resource type.
   "latestDelivery": {
     "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
   },
-  "attachmentsCount": "Integer",
   "attachments": [
     {
       "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
     }
   ],
-  "urlsCount": "Integer",
   "urls": [
     {
       "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
@@ -174,6 +179,29 @@ The following JSON representation shows the resource type.
   "bulkComplaintLevel": "String",
   "emailClusterId": "String",
   "policyAction": "String",
-  "policy": "String"
+  "policy": "String",
+  "timelineEvents": [
+    {
+      "@odata.type": "microsoft.graph.security.timelineEvent"
+    }
+  ],
+  "threatDetectionDetails": [
+    {
+      "@odata.type": "microsoft.graph.security.threatDetectionDetail"
+    }
+  ],
+  "primaryOverrideSource": "String",
+  "inboundConnectorFormattedName": "String",
+  "policyType": "String",
+  "clientType": "String",
+  "dlpRules": [
+    {
+      "@odata.type": "microsoft.graph.security.analyzedEmailDlpRuleInfo"
+    }
+  ],
+  "forwardingDetail": "String",
+  "recipientDetail": {
+    "@odata.type": "microsoft.graph.security.analyzedEmailRecipientDetail"
+  }
 }
 ```
