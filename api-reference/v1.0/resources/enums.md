@@ -6,7 +6,6 @@ ms.subservice: "non-product-specific"
 ms.date: 11/21/2024
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
-ms.date: 11/14/2024
 ---
 
 # Enum values
