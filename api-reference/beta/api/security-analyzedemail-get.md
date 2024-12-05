@@ -65,6 +65,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ``` http
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}
 ```
+---
 
 #### Response
 
@@ -183,6 +184,7 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/Urls
 ```
+---
 
 #### Response
 
@@ -228,7 +230,7 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/attachments
 ```
-
+---
 ### Response
 
 The following example shows the response.
