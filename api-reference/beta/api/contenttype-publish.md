@@ -5,6 +5,7 @@ description: "Publish a content type present in content type hub site."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.date: 04/05/2024
 ---
 
 # contentType: publish

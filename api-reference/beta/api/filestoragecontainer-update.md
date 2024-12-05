@@ -6,6 +6,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/12/2024
 ---
 
 # Update fileStorageContainer
