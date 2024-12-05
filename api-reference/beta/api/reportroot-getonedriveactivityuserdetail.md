@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 10/09/2024
 ---
 
 # reportRoot: getOneDriveActivityUserDetail
