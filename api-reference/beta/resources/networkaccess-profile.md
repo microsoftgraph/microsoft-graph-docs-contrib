@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A profile serves as a container for forwarding policies. This is an abstract type from which the [microsoft.graph.networkaccess.forwardingProfile](networkaccess-forwardingprofile.md) resource type is derived.
+A profile serves as a container for forwarding policies. It is an abstract type from which the [microsoft.graph.networkaccess.forwardingProfile](networkaccess-forwardingprofile.md) resource type is derived.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |id|String|Identifier for the profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Profile last modified time.|
 |name|String|Profile name.|
-|state|microsoft.graph.networkaccess.status|Profile state. The possible values are: `enabled`, `disabled`.|
+|state|microsoft.graph.networkaccess.status|Profile state. The possible values are: `enabled`, and `disabled`.|
 |version|String|Profile version.|
 
 ## Relationships
