@@ -74,7 +74,7 @@ If successful, this method returns a `204 Ok` response code and a [mutualTlsOaut
 
 ## Examples
 
-## Example 1 - Update Display Name
+### Example 1: Update Display Name
 
 This example assumes the original object stored has the following value:
 
@@ -92,7 +92,7 @@ This example assumes the original object stored has the following value:
 }
 ```
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -108,7 +108,7 @@ PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTl
 }
 ```
 
-### Response
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -133,7 +133,7 @@ Content-Type: application/json
 }
 ```
 
-## Example 2 - Remove Certificate from list
+### Example 2: Remove Certificate from list
 
 This example assumes the original object stored has the following value:
 
@@ -151,7 +151,7 @@ This example assumes the original object stored has the following value:
 }
 ```
 
-### Request
+#### Request
 
 ```json
 PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
@@ -171,7 +171,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 ```json
 HTTP/1.1 200 OK
