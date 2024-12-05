@@ -51,20 +51,21 @@ Don't supply a request body for this method.
 
 ## Examples
 
-#### Request
+### Request
 
 <!-- {
   "blockType": "request",
   "name": "devicetemplate-list-owners-permissions"
 }
 -->
-
 ``` http
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates/00f1e7a4-de6d-4070-84df-8aab629c4d1e/owners
 ```
 
-#### Response
 
+### Response
+
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -107,3 +108,4 @@ Content-Type: application/json
   ]
 }
 ```
+

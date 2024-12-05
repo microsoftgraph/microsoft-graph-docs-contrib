@@ -21,18 +21,15 @@ Container for templates.
 None.
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
 
 ## Relationships
-
 |Relationship|Type|Description|
 |:---|:---|:---|
 |deviceTemplates|[deviceTemplate](../resources/devicetemplate.md) collection|Defines the templates that are common to a set of device objects.|
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -47,3 +44,4 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.template"
 }
 ```
+

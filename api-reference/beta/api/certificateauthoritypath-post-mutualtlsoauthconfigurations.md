@@ -2,10 +2,10 @@
 title: "Create mutualTlsOauthConfiguration"
 description: "Create a new mutualTlsOauthConfiguration object."
 author: "sofia-geislinger"
+ms.date: 11/24/2024
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
-ms.date: 11/24/2024
 ---
 
 # Create mutualTlsOauthConfiguration
@@ -27,7 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/certificateauthoritypath-post-mutualtlsoauthconfigurations-permissions.md)]
 
-## HTTP Request
+## HTTP request
+
 <!-- {
   "blockType": "ignored"
 }
@@ -37,38 +38,39 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /directory/certificateAuthorities/mutualTlsOauthConfigurations/
 ```
 
-### Request headers
+## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
-
-### Request Body
+## Request body
 
 In the request body, supply a JSON representation of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object.
 
-You can specify the following properties when creating a **mutualTlsOauthConfigurations**.
+You can specify the following properties when creating a **mutualTlsOauthConfiguration**.
 
-|Property|Type|Description|Key|Required|ReadOnly|
-|-|-|-|-|-|-|
+|Property|Type|Description|
+|:---|:---|:---|
 |displayName|String|Friendly name|
-|tlsClientAuthParameter| [tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |No | Yes| Yes|
-|certificateAuthority|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
+|tlsClientAuthParameter| [tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
+|certificateAuthority|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. |
 
-### Response
+## Response
 
-- If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body.
 
 |Response Code|Condition|Message|
 |-|-|-|
 |`201` | Request was successful ||
 |`400` | Validation failure in any of the certificate validation steps mentioned | Unable to validate device certificate|
 
-## Example
+## Examples
 
 ### Request
+
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_mutualtlsoauthconfiguration_from_"
@@ -84,8 +86,7 @@ Content-Type: application/json
   "tlsClientAuthParameter": "tls_client_auth_san_uri",
   "certificateAuthorities": [
     {
-      "isRootAuthority": true,
-      "certificate": "Base64EncodedCertGoesHere"
+      "@odata.type": "microsoft.graph.certificateAuthority"
     }
   ]
 }
@@ -94,6 +95,7 @@ Content-Type: application/json
 
 ### Response
 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -101,8 +103,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
 }
 -->
-
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

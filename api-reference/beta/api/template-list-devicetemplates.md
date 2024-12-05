@@ -44,17 +44,19 @@ This method supports some of the OData query parameters to help customize the re
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Request Body
+## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [deviceTemplate](../resources/devicetemplate.md) objects in the response body.
 
-## Example
+## Examples
 
 ### Request
+
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_devicetemplate"
@@ -63,6 +65,7 @@ Do not supply a request body for this method.
 ``` http
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates
 ```
+
 
 ### Response
 
@@ -102,3 +105,4 @@ Content-Type: application/json
   ]
 }
 ```
+

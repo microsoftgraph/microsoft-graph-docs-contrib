@@ -23,23 +23,15 @@ For customers that use first party Azure IoT registries, this object may also be
 Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificateauthoritybase.md).
 
 ## Methods
-
-| Method       | Method | Success Code | Return Type  | Description | 
-|:---------------|:--------|:----------|:---|:---|
+|Method|Return type|Description|
+|:---|:---|:---|
 |[List](../api/certificateauthoritypath-list-mutualtlsoauthconfigurations.md) |`GET` |`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) collection| Retrieve a list of mutualTlsOauthConfiguration registered in the directory. |
 |[Create](../api/certificateauthoritypath-post-mutualtlsoauthconfigurations.md) | `POST` |`201` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Create mutualTlsOauthConfiguration object. |
 |[Get](../api/mutualtlsoauthconfiguration-get.md)| `GET`|`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Read properties and relationships of mutualTlsOauthConfiguration object.|
 |[Update](../api/mutualtlsoauthconfiguration-update.md) | `PATCH`/`PUT` |`204` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md)  | Update the properties of the mutualTlsOauthConfiguration object.  |
 |[Delete](../api/certificateauthoritypath-delete-mutualtlsoauthconfigurations.md) | `DELETE`      |`204` | None |Delete the mutualTlsOauthConfiguration object.|
 
-## Permissions
-|ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
-|-|-|-|-|-|-|
-|`MutualTlsOauthConfiguration.Read.All`| Read all configurations used for mutual-TLS client authentication. | Allows the app to read configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. This includes reading trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get|
-|`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual-TLS client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. This includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
-
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
 |`displayName`|String|Friendly name|
@@ -48,11 +40,9 @@ Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificatea
 |`certificateAuthorities`|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. |
 
 ## Relationships
-
 None.
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",

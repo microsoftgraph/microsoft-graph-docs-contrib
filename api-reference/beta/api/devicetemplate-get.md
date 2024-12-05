@@ -8,7 +8,8 @@ doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# Get DeviceTemplate
+# Get deviceTemplate
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -56,7 +57,7 @@ This method supports the `$select` & `$filter` [OData query parameter](/graph/qu
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Request Body
+## Request body
 
 Don't supply a request body for this method.
 

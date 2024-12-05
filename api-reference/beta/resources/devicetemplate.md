@@ -22,7 +22,6 @@ An admin on the customer's tenant will call the `create` API for this entity. Va
 The `devicetemplate` is immutable.
 
 ## Methods
-
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Create](../api/template-post-devicetemplates.md)|[deviceTemplate](../resources/devicetemplate.md) | Create a new DeviceTemplate object in the directory.|
@@ -35,7 +34,6 @@ The `devicetemplate` is immutable.
 |[createDeviceFromTemplate](../api/devicetemplate-createdevicefromtemplate.md)|[device](../resources/device.md)| Create new devices from given device template.|
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String| Inherited from [directoryObject](../resources/directoryobject.md).|
@@ -48,14 +46,12 @@ The `devicetemplate` is immutable.
 |operatingSystem|String|OS type |
 
 ## Relationships
-
 |Relationship|Type|Description|
 |:---|:---|:---|
 |deviceInstances|[device](../resources/device.md) collection|Collection of device objects created based on this template|
 |owners|[directoryObject](../resources/directoryobject.md) collection|Collection of objects that can manage the entity and the device objects created based on this template |
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -65,7 +61,7 @@ The following JSON representation shows the resource type.
   "openType": false
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.deviceTemplate",
   "id": "String (identifier)",
@@ -78,3 +74,4 @@ The following JSON representation shows the resource type.
   "operatingSystem": "String"
 }
 ```
+

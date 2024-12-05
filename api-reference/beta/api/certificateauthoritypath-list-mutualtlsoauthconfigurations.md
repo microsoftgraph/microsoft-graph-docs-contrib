@@ -2,10 +2,10 @@
 title: "List mutualTlsOauthConfiguration objects"
 description: "Get a list of the mutualTlsOauthConfiguration objects and their properties."
 author: "sofia-geislinger"
+ms.date: 11/24/2024
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
-ms.date: 11/24/2024
 ---
 
 # List mutualTlsOauthConfiguration objects
@@ -29,8 +29,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-```http
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 GET /certificateAuthorities/mutualTlsOauthConfigurations
 ```
 
@@ -44,7 +47,7 @@ This method supports some of the OData query parameters to help customize the re
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Request Body
+## Request body
 
 Don't supply a request body for this method.
 
@@ -52,9 +55,11 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) objects in the response body.
 
-## Example
+## Examples
 
 ### Request
+
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions"
@@ -67,6 +72,8 @@ GET https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsO
 
 ### Response
 
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -74,8 +81,7 @@ GET https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsO
   "isCollection": true
 }
 -->
-
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

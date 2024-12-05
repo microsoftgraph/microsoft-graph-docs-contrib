@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/template-post-devicetemplates-permissions.md)]
 
-## HTTP Request
+## HTTP request
 
 <!-- {
   "blockType": "ignored"
@@ -39,32 +39,32 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /directory/templates/deviceTemplates
 ```
 
-### Request headers
+## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
-### Request Body
+## Request body
 
 In the request body, supply a JSON representation of the [deviceTemplate](../resources/devicetemplate.md) object.
 
 You can specify the following properties when creating a **deviceTemplate**.
 
-|Property|Type|Description|Required|
-|-|-|-|-|
-|`mutualTlsOauthConfigurationId|String|Object ID of CertificateBasedDeviceAuthConfiguration - _Not set if using self signed certificates instead of trust root certificates._|No|
-|mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's EntraId Tenant ID) - _Not set if using self signed certificates instead of trust root certificates._|No|
-|deviceAuthority | String | deviceAuthority is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's EntraId tenant. For example, Acme (manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (deviceAuthority). | Yes 
-|manufacturer|String|Manufacturer name|Yes|
-|model|String|Model name | Yes|
-|operatingSystem|String|OS type | No |
+|Property|Type|Description|
+|:---|:---|:---|
+|`mutualTlsOauthConfigurationId|String|Object ID of CertificateBasedDeviceAuthConfiguration - _Not set if using self signed certificates instead of trust root certificates._ Optional. |
+|mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's EntraId Tenant ID) - _Not set if using self signed certificates instead of trust root certificates._ Optional. |
+|deviceAuthority | String | deviceAuthority is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's EntraId tenant. For example, Acme (manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (deviceAuthority). Required.|
+|manufacturer|String|Manufacturer name. Required.|
+|model|String|Model name. Required.|
+|operatingSystem|String|OS type. Optional.|
 |"owners@odata.bind"|String| 
 
-### Response
+## Response
 
-- If successful, this method returns a `201 Created` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.\
+If successful, this method returns a `201 Created` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
 
 |Response Code|Condition|Message|
 |-|-|-|
@@ -96,6 +96,8 @@ Content-length: 106
 ```
 
 ### Response
+
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

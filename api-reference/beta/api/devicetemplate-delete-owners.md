@@ -41,7 +41,7 @@ Delete /directory/templates/deviceTemplates/{deviceTemplateId}/owners/{id}/$ref
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Request Body
+## Request body
 
 Don't supply a request body for this method.
 
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Examples
 
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
@@ -59,7 +59,6 @@ The following example shows a request.
   "name": "delete_owners_from_devicetemplate"
 }
 -->
-
 ``` http
 DELETE https://graph.microsoft.com/beta/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1/owners/ec8493f6-748f-4f53-928d-1ca4b6fcacc6/$ref
 ```

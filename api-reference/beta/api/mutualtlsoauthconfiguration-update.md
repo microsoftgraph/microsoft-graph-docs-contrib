@@ -34,7 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/mutualtlsoauthconfiguration-update-permissions.md)]
 
-## HTTP Request
+## HTTP request
+
 <!-- {
   "blockType": "ignored"
 }
@@ -43,13 +44,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PATCH /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
 
-### Request headers
+## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
-### Request Body
+## Request body
 
 In the request body, supply a JSON representation of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object.
 
@@ -61,7 +63,7 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 |tlsClientAuthParameter|[tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
 |certificateAuthority|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. |
 
-### Response
+## Response
 
 If successful, this method returns a `204 Ok` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body.
 
@@ -69,6 +71,8 @@ If successful, this method returns a `204 Ok` response code and a [mutualTlsOaut
 |-|-|-|
 |`200` | Request was successful ||
 |`400` | Validation failure in any of the certificate validation steps mentioned | Unable to validate device certificate|
+
+## Examples
 
 ## Example 1 - Update Display Name
 
@@ -89,6 +93,8 @@ This example assumes the original object stored has the following value:
 ```
 
 ### Request
+
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_mutualtlsoauthconfiguration"

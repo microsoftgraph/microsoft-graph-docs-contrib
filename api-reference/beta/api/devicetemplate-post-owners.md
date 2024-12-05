@@ -42,7 +42,9 @@ POST /directory/templates/deviceTemplates/{id}/owners/$ref
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
-## Request Body
+## Request body
+
+In the request body, supply a JSON representation of the parameters.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -62,7 +64,6 @@ The following example shows a request.
   "name": "create_directoryobject_from_directoryobjects"
 }
 -->
-
 ``` http
 POST https://graph.microsoft.com/beta/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1/owners/$ref
 Content-Type: application/json
@@ -75,6 +76,7 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.directoryObject"

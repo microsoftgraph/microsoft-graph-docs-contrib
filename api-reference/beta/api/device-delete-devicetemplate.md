@@ -2,10 +2,10 @@
 title: "Remove deviceTemplate"
 description: "Remove a deviceTemplate object."
 author: "sofia-geislinger"
+ms.date: 11/24/2024
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
-ms.date: 11/24/2024
 ---
 
 # Remove deviceTemplate
@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 > **Note:** DeviceTemplates can't be deleted until all linked devices are deleted. Failure to do so results in a `400` response.
 
@@ -59,7 +59,7 @@ Don't supply a request body for this method.
 |`403` | Caller isn't owner of the `deviceTemplate`| Caller isn't allowed to create devices based on this template|
 
 
-## Example
+## Examples
 
 ### Request
 
@@ -73,9 +73,11 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/devices/{devicesId}/deviceTemplate/{id}/
 ```
 
+
 ### Response
 
 The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -84,3 +86,4 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
