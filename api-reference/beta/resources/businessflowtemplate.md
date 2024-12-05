@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
+ms.date: 08/21/2024
 ---
 
 # businessFlowTemplate resource type (deprecated)

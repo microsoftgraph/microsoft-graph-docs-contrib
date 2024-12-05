@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
 # unifiedRoleAssignmentScheduleRequest: filterByCurrentUser
