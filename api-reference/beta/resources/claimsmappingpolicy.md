@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "paulgarn"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 12/04/2024
 ---
 
 # claimsMappingPolicy resource type
@@ -19,7 +20,7 @@ Represents the claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Co
 - Create claim types that don't already exist
 - Choose or change the source of data emitted in specific claims
 
-The number of claims and transformations that can be added to a claims-mapping policy are limited to reduce token size. Any claims schema entries or transformations that are encountered after the limit has been reached are ignored and included in the issued token. For more information about the limits, see [Properties of a claims-mapping policy definition](#properties-of-a-claims-mapping-policy-definition)
+The number of claims and transformations that can be added to a claims-mapping policy are limited to reduce token size. Any claims schema entries or transformations that are encountered after the limit has been reached are ignored and not included in the issued token. For more information about the limits, see [Properties of a claims-mapping policy definition](#properties-of-a-claims-mapping-policy-definition)
 
 For more scenario and configuration details, see [Claims mapping policy type](/azure/active-directory/develop/reference-claims-mapping-policy-type) and [How to: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
 
@@ -86,7 +87,7 @@ The JSON object to be inserted into the **definition** property must first be **
 |:---------------|:--------|:----------|
 |Version|Integer|Set value of 1. Required.|
 |IncludeBasicClaimSet|Boolean|If set to `true`, all claims in the basic claim set are emitted in tokens affected by the policy. If set to `false`, claims in the basic claim set aren't in the tokens, unless they're individually added in the ClaimsSchema property of the same policy.|
-|ClaimsSchema|JSON object|Defines which claims are present in the tokens affected by the policy, in addition to the basic claim set and the core claim set. For each claim schema entry defined in this property, certain information is required. Specify where the data is coming from (Value or Source/ID pair), and which claim the data is emitted as (Claim Type). A maximum of 50 claims are included in the token through the ClaimsSchema object. Any claims schema entries that are encountered after the limit has been reached are ignored and don't appear in the issued token. Further details are available in the [ClaimsSchema definition](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
+|ClaimsSchema|JSON object|Defines which claims are present in the tokens affected by the policy, in addition to the basic claim set and the core claim set. For each claim schema entry defined in this property, certain information is required. Specify where the data is coming from (Value or Source/ID pair), and which claim the data is emitted as (Claim Type). A maximum of 50 claims are included in the token through the ClaimsSchema object. Any claims schema entries that are encountered after the limit has been reached are ignored and don't appear in the issued token. Further details are available in the [ClaimsSchema definition](/entra/identity-platform/saml-claims-customization).|
 |ClaimsTransformation|JSON object| Defines common transformations that can be applied to source data, to generate the output data for claims specified in the ClaimsSchema. A maximum of 50 transformations are included in the token through the ClaimsTransformation object. Any transformations that are encountered after the limit has been reached are ignored and don't appear in the issued token. For more information about ClaimsTransformation and the supported functions, see [Claims transformation](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|
 
 
