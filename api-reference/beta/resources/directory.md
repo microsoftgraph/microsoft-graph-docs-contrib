@@ -3,6 +3,7 @@ title: "directory resource type (deleted items)"
 description: "Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 ms.localizationpriority: medium
 author: "keylimesoda"
+ms.date: 12/02/2024
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Deleted item

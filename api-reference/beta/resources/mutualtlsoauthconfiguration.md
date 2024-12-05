@@ -25,11 +25,11 @@ Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificatea
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/certificateauthoritypath-list-mutualtlsoauthconfigurations.md) |`GET` |`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) collection| Retrieve a list of mutualTlsOauthConfiguration registered in the directory. |
-|[Create](../api/certificateauthoritypath-post-mutualtlsoauthconfigurations.md) | `POST` |`201` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Create mutualTlsOauthConfiguration object. |
-|[Get](../api/mutualtlsoauthconfiguration-get.md)| `GET`|`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Read properties and relationships of mutualTlsOauthConfiguration object.|
-|[Update](../api/mutualtlsoauthconfiguration-update.md) | `PATCH`/`PUT` |`204` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md)  | Update the properties of the mutualTlsOauthConfiguration object.  |
-|[Delete](../api/certificateauthoritypath-delete-mutualtlsoauthconfigurations.md) | `DELETE`      |`204` | None |Delete the mutualTlsOauthConfiguration object.|
+|[List](../api/certificateauthoritypath-list-mutualtlsoauthconfigurations.md) |[mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) collection| Retrieve a list of mutualTlsOauthConfiguration registered in the directory. |
+|[Create](../api/certificateauthoritypath-post-mutualtlsoauthconfigurations.md) | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Create mutualTlsOauthConfiguration object. |
+|[Get](../api/mutualtlsoauthconfiguration-get.md)| [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Read properties and relationships of mutualTlsOauthConfiguration object.|
+|[Update](../api/mutualtlsoauthconfiguration-update.md) | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md)  | Update the properties of the mutualTlsOauthConfiguration object.  |
+|[Delete](../api/certificateauthoritypath-delete-mutualtlsoauthconfigurations.md) | None |Delete the mutualTlsOauthConfiguration object.|
 
 ## Properties
 |Property|Type|Description|
