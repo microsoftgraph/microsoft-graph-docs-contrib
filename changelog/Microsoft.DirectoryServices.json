@@ -13855,6 +13855,40 @@
       "CreatedDateTime": "2024-10-09T23:15:04.1920065Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+  },
+  {
+    "ChangeList": [
+      {
+        "Id": "e5bc94bb-0909-4bab-95aa-3e90e117a7cc",
+        "ApiChange": "Property",
+        "ChangedApiName": "isStateSetByMicrosoft",
+        "ChangeType": "Addition",
+        "Description": "Added the **isStateSetByMicrosoft** property to the [identifierUriRestriction](https://learn.microsoft.com/en-us/graph/api/resources/identifierUriRestriction?view=graph-rest-beta) resource.",
+        "Target": "identifierUriRestriction"
+      },
+      {
+        "Id": "e5bc94bb-0909-4bab-95aa-3e90e117a7cc",
+        "ApiChange": "Property",
+        "ChangedApiName": "isStateSetByMicrosoft",
+        "ChangeType": "Addition",
+        "Description": "Added the **isStateSetByMicrosoft** property to the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-beta) resource.",
+        "Target": "keyCredentialConfiguration"
+      },
+      {
+        "Id": "e5bc94bb-0909-4bab-95aa-3e90e117a7cc",
+        "ApiChange": "Property",
+        "ChangedApiName": "isStateSetByMicrosoft",
+        "ChangeType": "Addition",
+        "Description": "Added the **isStateSetByMicrosoft** property to the [passwordCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordCredentialConfiguration?view=graph-rest-beta) resource.",
+        "Target": "passwordCredentialConfiguration"
+      }
+    ],
+    "Id": "e5bc94bb-0909-4bab-95aa-3e90e117a7cc",
+    "Cloud": "Review",
+    "Version": "beta",
+    "CreatedDateTime": "2024-11-22T19:46:07.288016Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Directory management"
   }
   ]
 }

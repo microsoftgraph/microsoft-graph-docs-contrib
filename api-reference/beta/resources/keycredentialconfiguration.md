@@ -25,6 +25,7 @@ Represents a key credential configuration object that contains properties to con
 | restrictForAppsCreatedAfterDateTime         | DateTimeOffset                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
 | restrictionType                             | appKeyCredentialRestrictionType | The type of restriction being applied. Possible values are `asymmetricKeyLifetime`, and `unknownFutureValue`. Each value of restrictionType can be used only once per policy.|
 | state                                       | appManagementRestrictionState   | Indicates whether the restriction is evaluated. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
+| isStateSetByMicrosoft                       | Boolean                         | If `true`, the restriction state is set by Microsoft. If `false`, the restriction state is set by the tenant. This is a read-only property. |
 
 ## Relationships
 
@@ -45,6 +46,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.keyCredentialConfiguration",
   "restrictionType": "String",
   "state": "String",
+  "isStateSetByMicrosoft": "Boolean",
   "restrictForAppsCreatedAfterDateTime": "String (DateTime)",
   "maxLifetime": "String (duration)",
   "certificateBasedApplicationConfigurationIds": [
