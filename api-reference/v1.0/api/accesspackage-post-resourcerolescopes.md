@@ -148,7 +148,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request adding an application's role to an access package's list of resource roles. The access package resource for the application must already have been added to the access package catalog containing this access package. The `role`, `resource`, and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md).
+The following example shows a request that adds an application's role to an access package's list of resource roles. The access package resource for the application must already be added to the access package catalog that contains this access package. You can get the `role`, `resource`, and `scope` with the [list resources](accesspackagecatalog-list-resources.md) method.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -242,7 +242,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request adding membership of a group to an access package's list of resource roles. The access package resource for the group must already have been added to the access package catalog containing this access package. The `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md). The `role` can be obtained by a [list of the roles of the resource in the catalog](accesspackagecatalog-list-resourceroles.md). If the `role` returned from the list of the roles has a zero ID, then don't include an `id` in the `accessPackageResourceRole`.
+The following example shows a request that adds membership of a group to an access package's list of resource roles. The access package resource for the group must already be added to the access package catalog that contains this access package. You can get the `resource` and `scope` with the [list of the resources of a catalog](accesspackagecatalog-list-resources.md) method. You can get the `role` with the [list of the roles of the resource in the catalog](accesspackagecatalog-list-resourceroles.md) method. If the `role` returned from the list of the roles has a zero ID, then don't include an `id` in the `accessPackageResourceRole`.
 
 # [HTTP](#tab/http)
 <!-- {
