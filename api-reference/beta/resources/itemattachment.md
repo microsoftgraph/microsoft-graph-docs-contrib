@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-A contact, event, or message that's attached to a user [event](../resources/event.md),
+A contact, event, or message attached to a user [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 
 Derived from [attachment](attachment.md).
@@ -41,7 +41,7 @@ Derived from [attachment](attachment.md).
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|The attached contact, message or event. Navigation property.|
+|item|[OutlookItem](outlookitem.md)|The attached contact, message, or event. Navigation property.|
 
 ## JSON representation
 
