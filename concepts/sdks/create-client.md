@@ -46,7 +46,7 @@ Include `use` statements for `Microsoft\Graph\GraphRequestAdapter`, `Microsoft\G
 
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
-Include `import` statements for `DeviceDodeCredential` from `azure.identity` and  `GraphServiceClient` from `msgraph.graph_service_client` to run this code.
+Include `import` statements for `DeviceCodeCredential` from `azure.identity` and  `GraphServiceClient` from `msgraph.graph_service_client` to run this code.
 
 # [TypeScript](#tab/typescript)
 
