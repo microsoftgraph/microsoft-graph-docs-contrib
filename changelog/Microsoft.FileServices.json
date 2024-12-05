@@ -3925,7 +3925,7 @@
     {
       "ChangeList": [
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Relationship",
           "ChangedApiName": "deletedContainers",
           "ChangeType": "Addition",
@@ -3933,7 +3933,7 @@
           "Target": "fileStorage"
         },
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Property",
           "ChangedApiName": "lockState",
           "ChangeType": "Addition",
@@ -3941,7 +3941,7 @@
           "Target": "fileStorageContainer"
         },
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Relationship",
           "ChangedApiName": "recycleBin",
           "ChangeType": "Addition",
@@ -3949,7 +3949,15 @@
           "Target": "fileStorageContainer"
         },
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete recyclebinitem",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete recyclebinitem](https://learn.microsoft.com/graph/api/fileStorageContainer-delete-recyclebinitem?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/fileStorageContainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
           "ChangedApiName": "lock",
           "ChangeType": "Addition",
@@ -3957,7 +3965,7 @@
           "Target": "fileStorageContainer"
         },
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
           "ChangedApiName": "restore",
           "ChangeType": "Addition",
@@ -3965,7 +3973,7 @@
           "Target": "fileStorageContainer"
         },
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
           "ChangedApiName": "unlock",
           "ChangeType": "Addition",
@@ -3973,7 +3981,7 @@
           "Target": "fileStorageContainer"
         },
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "siteLockState",
           "ChangeType": "Addition",
@@ -3981,7 +3989,7 @@
           "Target": "siteLockState"
         },
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Resource",
           "ChangedApiName": "recycleBinSettings",
           "ChangeType": "Addition",
@@ -3989,7 +3997,7 @@
           "Target": "recycleBinSettings"
         },
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Resource",
           "ChangedApiName": "recycleBin",
           "ChangeType": "Addition",
@@ -3997,7 +4005,7 @@
           "Target": "recycleBin"
         },
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Resource",
           "ChangedApiName": "recycleBinItem",
           "ChangeType": "Addition",
@@ -4005,7 +4013,7 @@
           "Target": "recycleBinItem"
         },
         {
-          "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+          "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
           "ChangedApiName": "discardCheckout",
           "ChangeType": "Addition",
@@ -4013,7 +4021,7 @@
           "Target": "driveItem"
         }
       ],
-      "Id": "4997f46c-e25e-4c01-bcce-c04b26df4e4e",
+      "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-11-22T19:48:29.7062786Z",
