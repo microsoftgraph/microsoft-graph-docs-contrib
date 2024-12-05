@@ -4912,10 +4912,9 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### restoreArtifactsBulkRequestStatus values 
 
-
-
 |Member|
 |:---|
+|unkown|
 |active|
 |completed|
 |completedWithErrors|

@@ -99,22 +99,17 @@ Content-Type: application/json
             "createdBy": "",
             "lastModifiedDateTime": "2023-09-29T10:36:44.4021389+00:00",
             "lastModifiedBy": "",
-            "errors": [
-                {
-                    "error ": {
-                        " code": " 1000",
-                        " message": " Malformed",
-                        " target": " contoso1#sharepoint.com"
+            "error": {
+                "code": "BulkRestoreArtifactsNotResolved",
+                "message": "Errors while resolving restore artifacts",
+                "details": [
+                    {
+                        "code": "UserNotBackedup",
+                        "message": "Email address 'user0@contoso.com' has not been backed up",
+                        "target": "user0@contoso.com"
                     }
-                },
-                {
-                    "error ": {
-                        " code": " 1001",
-                        " message": "Unknown error",
-                        " target": "contoso3@sharepoint.com"
-                    }
-                }
-              ]
+                ]
+            }
         }
       ]
 }
