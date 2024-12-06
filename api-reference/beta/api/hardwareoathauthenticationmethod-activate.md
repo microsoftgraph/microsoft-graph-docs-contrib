@@ -5,6 +5,7 @@ author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 12/06/2024
 ---
 
 # hardwareOathAuthenticationMethod: activate
@@ -19,6 +20,7 @@ Activate a [hardware OATH token](../resources/hardwareoathauthenticationmethod.m
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+## Permissions acting on self
 <!-- {
   "blockType": "permissions",
   "name": "hardwareoathauthenticationmethod-activate-permissions"
@@ -26,14 +28,32 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/hardwareoathauthenticationmethod-activate-permissions.md)]
 
+## Permissions acting on other users
+<!-- {
+  "blockType": "permissions",
+  "name": "hardwareoathauthenticationmethod-activate-2-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/hardwareoathauthenticationmethod-activate-2-permissions.md)]
+
+
 ## HTTP request
 
+Activate a hardware OATH authentication method assigned to you.
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 POST /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/activate
+```
+
+Activate a hardware OATH authentication method assigned to another user.
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 POST /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/activate
 ```
 

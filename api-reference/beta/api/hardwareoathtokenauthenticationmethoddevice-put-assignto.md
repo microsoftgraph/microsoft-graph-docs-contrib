@@ -1,10 +1,12 @@
 ---
 title: "Assign user a hardware OATH token"
-description: "Assign a hardware OATH token to a user"
+description: "Assign a hardware OATH token to a user."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 12/06/2024
+toc.title: Assign user
 ---
 
 # Assign user a hardware OATH token
