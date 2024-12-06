@@ -5,7 +5,7 @@ title: Get a SharePoint Site
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.date: 12/04/2024
+ms.date: 04/05/2024
 ---
 # Get a site resource
 
