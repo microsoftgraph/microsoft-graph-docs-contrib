@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "teams"
 author: "RamjotSingh"
+ms.date: 10/11/2024
 ---
 
 # chatMessageAttachment resource type

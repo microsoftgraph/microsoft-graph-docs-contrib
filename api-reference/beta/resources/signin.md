@@ -5,6 +5,7 @@ description: "Provides details about user or application sign-in activity in you
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
+ms.date: 11/14/2024
 ---
 
 
