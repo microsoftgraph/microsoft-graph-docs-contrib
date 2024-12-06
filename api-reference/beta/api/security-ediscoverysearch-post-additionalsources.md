@@ -112,7 +112,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 ---
 
 #### Response
-The following example shows a request that creates an eDiscovery source from a site source.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -143,8 +143,6 @@ HTTP/1.1 201 Created
 ### Example 2: Create an additional eDiscovery source from a user source
 ### Request
 The following example shows a request that creates an eDiscovery source from a user source.
-
-The following example shows a request.
 
 ```
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/17011798-ca63-4282-9cb3-0086f1042bfc/searches/2f5cc5a6-9728-4ba0-acfa-edce25e91244/additionalSources
