@@ -5,6 +5,7 @@ author: "skandula"
 ms.localizationpriority: medium
 ms.subservice: "windows-update-business"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # product: findByCatalogId

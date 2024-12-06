@@ -5,6 +5,7 @@ author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/30/2024
 ---
 
 # cloudPC: retrieveReviewStatus
@@ -30,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-GET /cloudPCs/{cloudPCId}/retrieveReviewStatus
+GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/retrieveReviewStatus
 ```
 
 ## Optional query parameters
@@ -64,7 +65,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/retrieveReviewStatus
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/retrieveReviewStatus
 ```
 
 ### Response

@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/12/2024
 ---
 
 # Create fileStorageContainer
@@ -28,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-post-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
+
 ## HTTP request
 
 <!-- {
@@ -37,6 +40,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 POST /storage/fileStorage/containers
 ```
+## Optional query parameters
+
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Name      |Description|
+|:----------|:----------|
+| dataLocation |Specifies the desired data location for container creation in Multi-Geo tenants. Omitting the `$dataLocation` parameter in the request creates the container at the tenant's default location. For more information, see [available Multi-Geo regions and their location codes](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide#microsoft-365-multi-geo-availability). |
 
 ## Request headers
 |Name|Description|
@@ -136,7 +146,9 @@ Content-type: application/json
   "status": "inactive",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
   "settings": {
-    "isOcrEnabled": true
+    "isOcrEnabled": false,
+    "itemMajorVersionLimit": 50,
+    "isItemVersioningEnabled": true
   }
 }
 

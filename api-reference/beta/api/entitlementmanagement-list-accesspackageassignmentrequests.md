@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # List accessPackageAssignmentRequests
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_list_accesspackageassignmentrequests" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-list-accesspackageassignmentrequests-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 

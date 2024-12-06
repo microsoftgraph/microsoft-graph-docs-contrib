@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "spgraph-docs-team"
 ms.subservice: sharepoint
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # timeStamp resource type

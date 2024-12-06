@@ -7,6 +7,7 @@ ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 toc.title: Role assignment
+ms.date: 07/29/2024
 ---
 
 # unifiedRoleAssignment resource type

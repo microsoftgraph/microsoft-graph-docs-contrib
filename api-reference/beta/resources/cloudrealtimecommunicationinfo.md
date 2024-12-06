@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "rungari"
+ms.date: 04/03/2024
 ---
 
 # cloudRealtimeCommunicationInfo resource type

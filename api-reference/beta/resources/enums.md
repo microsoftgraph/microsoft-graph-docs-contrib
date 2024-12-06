@@ -5,6 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
+ms.date: 11/30/2024
 ---
 
 # Enum values
@@ -20,6 +21,15 @@ Namespace: microsoft.graph
 | provisioningFailed |
 | provisioningCompleted |
 | unknownFutureValue |
+
+### oidcResponseType values 
+
+|Member|
+|:---|
+|code|
+|id_token|
+|token|
+|unknownFutureValue|
 
 ### approvalOperationStatus values
 
@@ -261,6 +271,14 @@ Namespace: microsoft.graph
 | recommeded |
 | unknownFutureValue |
 | peerRecommeded |
+
+### certificateAuthorityType values
+
+|Member|
+|:---|
+|root|
+|intermediate|
+|unknownFutureValue|
 
 ### courseStatus values
 
@@ -737,6 +755,13 @@ Namespace: microsoft.graph
 | --------------------- |
 | asymmetricKeyLifetime |
 | trustedCertificateAuthority |
+| unknownFutureValue |
+
+### customSecurityAttributeComparisonOperator values 
+
+| Member |
+| ---- |
+| equals |
 | unknownFutureValue |
 
 ### synchronizationSecret values
@@ -4910,23 +4935,20 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
-### hardwareOathTokenHashFunction values
+### cloudPCPerformanceReportName values
 
-|Member|
-|:---|
-|hmacsha1|
-|hmacsha256|
-|unknownFutureValue|
+| Member                 |
+| ---------------------- |
+| performanceTrendReport | 
+| unknownFutureValue     |
 
-### hardwareOathTokenStatus values
+### cloudPCInaccessibleReportName values
 
-|Member|
-|:---|
-|available|
-|assigned|
-|activated|
-|failedActivation|
-|unknownFutureValue|
+| Member                         |
+| ------------------------------ |
+| inaccessibleCloudPcReports     |
+| inaccessibleCloudPcTrendReport |
+| unknownFutureValue             |
 
 ### nonAdminSetting values
 
@@ -4934,4 +4956,12 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |false|
 |true|
+|unknownFutureValue|
+
+### restoreJobType values 
+
+|Member|
+|:---|
+|standard|
+|bulk|
 |unknownFutureValue|

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "teams"
 author: "iamgirishck"
+ms.date: 07/22/2024
 ---
 
 # scheduleItem resource type

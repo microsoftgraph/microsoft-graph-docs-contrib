@@ -5,6 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 # accessPackage: filterByCurrentUser
 Namespace: microsoft.graph

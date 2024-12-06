@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # List resources (for an Azure authorization system)

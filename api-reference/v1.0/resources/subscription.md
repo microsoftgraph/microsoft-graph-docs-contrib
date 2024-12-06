@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "keylimesoda"
 ms.subservice: change-notifications
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # subscription resource type

@@ -14,6 +14,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ApplyPostRequestBody();
 $requestBody->setPolicySettings(new CloudPcPolicySettingType('region'));
+$requestBody->setReservePercentage(80);
 
 $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->byCloudPcProvisioningPolicyId('cloudPcProvisioningPolicy-id')->apply()->post($requestBody)->wait();
 

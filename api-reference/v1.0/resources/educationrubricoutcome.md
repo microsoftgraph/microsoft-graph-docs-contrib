@@ -6,6 +6,7 @@ author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: "resourcePageType"
 toc.title: Rubric outcome
+ms.date: 07/22/2024
 ---
 
 # educationRubricOutcome resource type

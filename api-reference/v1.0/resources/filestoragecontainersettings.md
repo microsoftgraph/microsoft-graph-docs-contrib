@@ -5,20 +5,21 @@ author: "vibehavjha"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
+ms.date: 09/26/2024
 ---
 
 # fileStorageContainerSettings resource type
 
 Namespace: microsoft.graph
 
-Represents settings associated with a [fileStorageContainer](../resources/filestoragecontainer.md). 
+Represents the settings of a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isOcrEnabled|Boolean|Indicates whether optical character recognition (OCR) is enabled for a given container. When OCR is enabled on a container, OCR extraction is performed for new and updated documents of supported types. The extracted fields are added to the metadata of the document, enabling end-user search and search-driven solutions. Changing this property from `true` to `false` doesn't remove OCR metadata that was created while it was `true`. Default value is `false`.|
+|isOcrEnabled|Boolean|Indicates whether Optical Character Recognition (OCR) is enabled for the container. The default value is `false`. When set to `true`, OCR extraction is performed for new and updated documents of supported document types, and the extracted fields in the metadata of the document enable end-user search and search-driven solutions. When set to `false`, existing OCR metadata is not impacted. Optional. Read-write.|
 
 ## Relationships
 
