@@ -140,6 +140,14 @@ items:
           href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
     - name: Microsoft Entra Health (preview)
       items:
+      - name: SLA attainment
+        items:
+        - name: Microsoft Entra authentication
+          items:
+          - name: Microsoft Entra authentication
+            href: ../../resources/azureadauthentication.md
+          - name: Get SLA attainment
+            href: ../../api/azureadauthentication-get.md
       - name: Service activity
         items:
         - name: Service activity
@@ -202,14 +210,6 @@ items:
               href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
             - name: Get SAML sign-in metrics
               href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
-      - name: SLA attainment
-        items:
-        - name: Microsoft Entra authentication
-          items:
-          - name: Microsoft Entra authentication
-            href: ../../resources/azureadauthentication.md
-          - name: Get SLA attainment
-            href: ../../api/azureadauthentication-get.md
       - name: Health monitoring
         items:
         - name: Overview
