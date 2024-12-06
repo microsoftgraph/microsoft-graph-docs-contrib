@@ -2293,17 +2293,17 @@
                 },
                 {
                   "name": "Microsoft Entra Health (preview)",
-                  "childNodes": [
-                    {
-                      "name": "Service activity",
-                      "resources": [
-                        "serviceActivity"
-                      ]
-                    },
+                  "childNodes": [                    
                     {
                       "name": "SLA attainment",
                       "resources": [
                         "azureADAuthentication"
+                      ]
+                    },
+                    {
+                      "name": "Service activity",
+                      "resources": [
+                        "serviceActivity"
                       ]
                     },
                     {
