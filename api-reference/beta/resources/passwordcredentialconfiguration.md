@@ -20,11 +20,11 @@ Password credential configuration object that contains properties to configure r
 
 | Property                                    | Type                            | Description |
 | :------------------------------------------ | :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| maxLifetime                                 | Duration                        | String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents 4 days, 12 hours, 30 minutes, and 5 seconds. This property is required when **restrictionType** is set to `passwordLifetime`.|
+| maxLifetime                                 | Duration                        | String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents 4 days, 12 hours, 30 minutes, and 5 seconds. Required when **restrictionType** is set to `passwordLifetime`.|
 | restrictForAppsCreatedAfterDateTime         | DateTimeOffset                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
 | restrictionType                             | appCredentialRestrictionType    | The type of restriction being applied. The possible values are: `passwordAddition`, `passwordLifetime`, `symmetricKeyAddition`, `symmetricKeyLifetime`, `customPasswordAddition`, and `unknownFutureValue`. Each value of restrictionType can be used only once per policy.|
 | state                                       | appManagementRestrictionState   | Indicates whether the restriction is evaluated. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
-| isStateSetByMicrosoft                       | Boolean                         | This property is read-only. If `true`, Microsoft set the `passwordCredentialConfiguration` state. If `false`, the tenant modified the `passwordCredentialConfiguration` state.|
+| isStateSetByMicrosoft                       | Boolean                         |If `true`, Microsoft sets the `passwordCredentialConfiguration` state. If `false`, the tenant modifies the `passwordCredentialConfiguration` state. Read-only.|
 
 ## Relationships
 

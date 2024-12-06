@@ -24,7 +24,7 @@ Configuration object to configure a restriction for identifier URIs on applicati
 | excludeSaml                                 | Boolean                         | If `true`, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.|
 | restrictForAppsCreatedAfterDateTime         | String                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
 | state                                       | appManagementRestrictionState   |  String value that indicates if the restriction is evaluated. The possible values are: `enabled`, `disabled`, and `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
-| isStateSetByMicrosoft                       | Boolean                         | This property is read-only. If `true`, Microsoft set the `identifierUriRestriction` state. If `false`, the tenant modified the `identifierUriRestriction` state.|
+| isStateSetByMicrosoft                       | Boolean                         | If `true`, Microsoft sets the `identifierUriRestriction` state. If `false`, the tenant modifies the `identifierUriRestriction` state. Read-only.|
 
 ## Relationships
 None.
