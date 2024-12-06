@@ -7,7 +7,7 @@ ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudpcpolicyapplyactionstatus resource type
+# CloudPcPolicyApplyActionStatus resource type
 
 Namespace: microsoft.graph
 
@@ -19,7 +19,7 @@ A list of possible status for policy applies operation.
 
 |Member|Description|
 |:---|:---|
-|processing| Default. Indicates the applied operation is in process. Used when applying policy isn't finish.|
-|succeeded|Indicates the applied operation is successful. Used when applying policy is finish.|
-|failed| Indicates the applied operation is failed. Used when applying policy is finish.|
+|processing| Default. The applied operation is in progress.|
+|succeeded|The applied operation succeeded.|
+|failed| The applied operation failed.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|

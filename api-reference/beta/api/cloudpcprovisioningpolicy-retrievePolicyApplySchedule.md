@@ -1,19 +1,19 @@
 ---
-title: "cloudpcprovisioningpolicy: retrievePolicyApplySchedule"
-description: "For `Frontline shared` only. Administrators can get the the scheduled apply rule set on the policy."
+title: "cloudPcProvisioningPolicy: retrievePolicyApplySchedule"
+description: "Get the scheduled apply rule set on the policy. `Frontline shared` only. Administrators only."
 author: "zhuangzhuang131419"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudpcprovisioningpolicy: retrievePolicyApplySchedule
+# cloudPcProvisioningPolicy: retrievePolicyApplySchedule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For `Frontline shared` only. Administrators can get the the scheduled apply rule set on the policy.
+Get the scheduled apply rule set on the policy. `Frontline shared` only. Administrators only.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -52,8 +52,8 @@ If successful, this method returns a `200 OK` response code and a reservePercent
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|reservePercentage|Int32|For `Frontline shared` only. The percentage of Cloud PCs to keep available. Administrators can set this property to a value from 0 to 99. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users.|
-|cronScheduleExpression|String|Administrators can set a cron expression to define the scheduling rules for automatic regular apply. When auto provision is disabled, `cronScheduleExpression` will be set to null, stopping the automatic task scheduling (ex. "0 0 0 20 * *" means schedules a job to run at midnight on the 20th of every month). Read-Only.|
+|reservePercentage|Int32|The percentage of Cloud PCs to keep available. Administrators can set this property to a value from 0 to 99. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users. `Frontline shared` only. Administrators only.|
+|cronScheduleExpression|String|An expression that specifies the cron schedule. (For example, "0 0 0 20 * *" means schedules a job to run at midnight on the 20th of every month) Administrators can set a cron expression to define the scheduling rules for automatic regular application. When auto provision is disabled, `cronScheduleExpression` will be set to null, stopping the automatic task scheduling. Read-Only.|
 
 ## Examples
 
@@ -61,7 +61,6 @@ If successful, this method returns a `200 OK` response code and a reservePercent
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcprovisioningpolicy-retrievePolicyApplySchedule"
@@ -70,41 +69,7 @@ The following example shows a request.
 
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/b0c2d35f-3385-46c8-a6f5-6c3dfad7708b/retrievePolicyApplySchedule
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsgetactionstatusreports-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsgetactionstatusreports-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsgetactionstatusreports-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsgetactionstatusreports-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsgetactionstatusreports-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsgetactionstatusreports-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsgetactionstatusreports-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsgetactionstatusreports-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
+``
 
 ### Response
 
