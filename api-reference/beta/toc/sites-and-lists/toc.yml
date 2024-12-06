@@ -256,6 +256,36 @@ items:
       href: ../../api/basesitepage-get.md
     - name: Delete
       href: ../../api/basesitepage-delete.md
+  - name: News link page
+    items:
+    - name: News link page
+      href: ../../resources/newslinkpage.md
+    - name: List
+      href: ../../api/newslinkpage-list.md
+    - name: Create
+      href: ../../api/newslinkpage-create.md
+    - name: Get
+      href: ../../api/newslinkpage-get.md
+    - name: Update
+      href: ../../api/newslinkpage-update.md
+    - name: Delete
+      href: ../../api/basesitepage-delete.md
+    - name: Publish
+      href: ../../api/newslinkpage-publish.md
+  - name: Page template
+    items:
+    - name: Page template
+      href: ../../resources/pagetemplate.md
+    - name: List
+      href: ../../api/pagetemplate-list.md
+    - name: Create
+      href: ../../api/pagetemplate-create.md
+    - name: Get
+      href: ../../api/pagetemplate-get.md
+    - name: Update
+      href: ../../api/pagetemplate-update.md
+    - name: Delete
+      href: ../../api/pagetemplate-delete.md
   - name: Site page
     items:
     - name: Site page
@@ -338,20 +368,6 @@ items:
       href: ../../resources/textwebpart.md
     - name: Standard web part
       href: ../../resources/standardwebpart.md
-  - name: Page template
-    items:
-    - name: Page template
-      href: ../../resources/pagetemplate.md
-    - name: List
-      href: ../../api/pagetemplate-list.md
-    - name: Create
-      href: ../../api/pagetemplate-create.md
-    - name: Get
-      href: ../../api/pagetemplate-get.md
-    - name: Update
-      href: ../../api/pagetemplate-update.md
-    - name: Delete
-      href: ../../api/pagetemplate-delete.md
   - name: Complex types
     items:
     - name: Save as template

@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-groups"
 author: "psignoret"
+ms.date: 11/30/2024
 ---
 
 # List appRoleAssignments granted to a group
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a group.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a [group](../resources/group.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

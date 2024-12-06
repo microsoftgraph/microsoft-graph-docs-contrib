@@ -44,7 +44,6 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "String",
-  "interactionHistory": [{"@odata.type": "microsoft.graph.aiinteractionhistory"}],
+  "id": "String (identifier)"
 }
 ```

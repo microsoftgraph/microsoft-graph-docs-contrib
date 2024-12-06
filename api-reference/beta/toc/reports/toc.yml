@@ -138,6 +138,70 @@ items:
           href: ../../api/dailyuserinsightmetricsroot-list-signups.md
         - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
+    - name: Microsoft 365 monitoring (preview)
+      items:
+      - name: Overview
+        href: ../../resources/m365-monitoring-api-overview.md
+      - name: Service activity
+        items:
+        - name: Service activity
+          href: ../../resources/serviceactivity.md
+        - name: Exchange Online monitoring
+          items:
+          - name: Get active users metrics for desktop mail apps
+            href: ../../api/serviceactivity-getactiveusermetricsfordesktopmailbyreademail.md
+          - name: Get active users metrics for Outlook apps for mobile
+            href: ../../api/serviceactivity-getactiveusermetricsforoutlookmobilebyreademail.md
+          - name: Get active users metrics for Outlook for the web
+            href: ../../api/serviceactivity-getactiveusermetricsforoutlookwebbyreademail.md
+          - name: Get active users metrics for Outlook apps for Mac
+            href: ../../api/serviceactivity-getactiveusermetricsforoutlookmacbyreademail.md
+          - name: Get active users metrics for iOS or Android mail apps
+            href: ../../api/serviceactivity-getactiveusermetricsforiosorandroidmailbyreademail.md
+          - name: Get active users metrics for opening Outlook for the web
+            href: ../../api/serviceactivity-getactiveusermetricsforoutlookwebbyappopening.md
+          - name: Get active users metrics for modern authentication
+            href: ../../api/serviceactivity-getactiveusermetricsforemailbymodernauthentication.md
+          - name: Get metrics for messages successfully delivered by Exchange
+            href: ../../api/serviceactivity-getmessagevolumemetricsforemaildelivery.md
+          - name: Get metrics for connections to Exchange Online from communication apps
+            href: ../../api/serviceactivity-getconnectivitymetricsforexchange.md
+        - name: Microsoft 365 Teams monitoring
+          items:
+          - name: Get metrics for messages successfully sent by chat
+            href: ../../api/serviceactivity-getmessagevolumemetricsforteamschat.md
+          - name: Get usage metrics based on successful app launch
+            href: ../../api/serviceactivity-getusagemetricsforteamsbylaunch.md
+          - name: Get usage metrics based on successful join meeting
+            href: ../../api/serviceactivity-getusagemetricsforteamsbymeetingsjoined.md
+          - name: Get metrics for the percentage of audio streams that received quality of experience telemetry
+            href: ../../api/serviceactivity-getaudiostreamqoemetricsforteams.md
+          - name: Get metrics for the percentage of audio streams established over User Datagram Protocol(UDP)
+            href: ../../api/serviceactivity-getaudiostreamsoverudpmetricsforteams.md
+        - name: Microsoft 365 Apps monitoring
+          items:
+          - name: Get active users metrics for Excel for the web
+            href: ../../api/serviceactivity-getactiveusermetricsforexcelweb.md
+          - name: Get active users metrics for OneNote for the web
+            href: ../../api/serviceactivity-getactiveusermetricsforonenoteweb.md
+          - name: Get active users metrics for PowerPoint for the web
+            href: ../../api/serviceactivity-getactiveusermetricsforpowerpointweb.md
+          - name: Get active users metrics for Visio for the web
+            href: ../../api/serviceactivity-getactiveusermetricsforvisioweb.md
+          - name: Get active users metrics for Word for the web
+            href: ../../api/serviceactivity-getactiveusermetricsforwordweb.md
+        - name: Microsoft Entra
+          items:
+          - name: Get MFA sign-in success metrics
+            href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
+          - name: Get MFA sign-in failure metrics
+            href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
+          - name: Get managed devices Conditional Access sign-in metrics
+            href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
+          - name: Get compliant devices Conditional Access sign-in metrics
+            href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
+          - name: Get SAML sign-in metrics
+            href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
     - name: Microsoft Entra Health (preview)
       items:
       - name: SLA attainment
@@ -154,16 +218,62 @@ items:
           items:
           - name: Service activity
             href: ../../resources/serviceactivity.md
-          - name: Get MFA sign-in success metrics
-            href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
-          - name: Get MFA sign-in failure metrics
-            href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
-          - name: Get managed devices Conditional Access sign-in metrics
-            href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
-          - name: Get compliant devices Conditional Access sign-in metrics
-            href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
-          - name: Get SAML sign-in metrics
-            href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
+          - name: Exchange Online monitoring
+            items:
+            - name: Get active users metrics for desktop mail apps
+              href: ../../api/serviceactivity-getactiveusermetricsfordesktopmailbyreademail.md
+            - name: Get active users metrics for Outlook apps for mobile
+              href: ../../api/serviceactivity-getactiveusermetricsforoutlookmobilebyreademail.md
+            - name: Get active users metrics for Outlook for the web
+              href: ../../api/serviceactivity-getactiveusermetricsforoutlookwebbyreademail.md
+            - name: Get active users metrics for Outlook apps for Mac
+              href: ../../api/serviceactivity-getactiveusermetricsforoutlookmacbyreademail.md
+            - name: Get active users metrics for iOS or Android mail apps
+              href: ../../api/serviceactivity-getactiveusermetricsforiosorandroidmailbyreademail.md
+            - name: Get active users metrics for opening Outlook for the web
+              href: ../../api/serviceactivity-getactiveusermetricsforoutlookwebbyappopening.md
+            - name: Get active users metrics for modern authentication
+              href: ../../api/serviceactivity-getactiveusermetricsforemailbymodernauthentication.md
+            - name: Get metrics for messages successfully delivered by Exchange
+              href: ../../api/serviceactivity-getmessagevolumemetricsforemaildelivery.md
+            - name: Get metrics for connections to Exchange Online from communication apps
+              href: ../../api/serviceactivity-getconnectivitymetricsforexchange.md
+          - name: Microsoft 365 Teams monitoring
+            items:
+            - name: Get metrics for messages successfully sent by chat
+              href: ../../api/serviceactivity-getmessagevolumemetricsforteamschat.md
+            - name: Get usage metrics based on successful app launch
+              href: ../../api/serviceactivity-getusagemetricsforteamsbylaunch.md
+            - name: Get usage metrics based on successful join meeting
+              href: ../../api/serviceactivity-getusagemetricsforteamsbymeetingsjoined.md
+            - name: Get metrics for the percentage of audio streams that received quality of experience telemetry
+              href: ../../api/serviceactivity-getaudiostreamqoemetricsforteams.md
+            - name: Get metrics for the percentage of audio streams established over User Datagram Protocol(UDP)
+              href: ../../api/serviceactivity-getaudiostreamsoverudpmetricsforteams.md
+          - name: Microsoft 365 Apps monitoring
+            items:
+            - name: Get active users metrics for Excel for the web
+              href: ../../api/serviceactivity-getactiveusermetricsforexcelweb.md
+            - name: Get active users metrics for OneNote for the web
+              href: ../../api/serviceactivity-getactiveusermetricsforonenoteweb.md
+            - name: Get active users metrics for PowerPoint for the web
+              href: ../../api/serviceactivity-getactiveusermetricsforpowerpointweb.md
+            - name: Get active users metrics for Visio for the web
+              href: ../../api/serviceactivity-getactiveusermetricsforvisioweb.md
+            - name: Get active users metrics for Word for the web
+              href: ../../api/serviceactivity-getactiveusermetricsforwordweb.md
+          - name: Microsoft Entra
+            items:
+            - name: Get MFA sign-in success metrics
+              href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
+            - name: Get MFA sign-in failure metrics
+              href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
+            - name: Get managed devices Conditional Access sign-in metrics
+              href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
+            - name: Get compliant devices Conditional Access sign-in metrics
+              href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
+            - name: Get SAML sign-in metrics
+              href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
       - name: Health monitoring
         items:
         - name: Overview

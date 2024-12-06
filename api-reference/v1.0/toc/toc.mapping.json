@@ -1458,6 +1458,7 @@
         },
         {
           "name": "eDiscovery",
+          "overview": "../../resources/security-ediscovery-apioverview.md",
           "resources": [
             "microsoft.graph.security.ediscoveryCase",
             "microsoft.graph.security.ediscoveryCaseSettings",
@@ -1887,7 +1888,6 @@
             "workingTimeSchedule"
           ],
           "complexTypes": [
-            "changeTrackedEntity",
             "identity",
             "identitySet",
             "openShiftItem",

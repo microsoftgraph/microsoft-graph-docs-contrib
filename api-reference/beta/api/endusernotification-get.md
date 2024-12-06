@@ -5,6 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 04/05/2024
 ---
 
 # Get endUserNotification
