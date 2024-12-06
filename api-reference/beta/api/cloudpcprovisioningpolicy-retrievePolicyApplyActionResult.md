@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a status, startD
 |:---|:---|:---|
 |status|string|The status of the applied operation. Possible values are, `succeeded`, `pending`, and `failed`.|
 |startDateTime|DateTime|The date and time when the operation was applied.|
-|finishDateTime|DateTime|The date and time when the operation was finished.|
+|finishDateTime|DateTime|The date and time when the operation finished.|
 
 ## Examples
 

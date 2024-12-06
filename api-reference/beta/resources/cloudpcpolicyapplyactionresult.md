@@ -27,7 +27,7 @@ Specify the policy apply status, apply start time, and finish time. `Frontline s
 |:---|:---|:---|
 |status|string|The status of the applied operation. Possible values are, `succeeded`, `pending`, and `failed`.|
 |startDateTime|DateTime|The date and time when the operation was applied.|
-|finishDateTime|DateTime|The date and time when the operation was finished.|
+|finishDateTime|DateTime|The date and time when the operation finished.|
 
 ## JSON representation
 
