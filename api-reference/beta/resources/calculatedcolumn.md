@@ -5,6 +5,7 @@ title: "calculatedColumn resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
 ms.subservice: sharepoint
+ms.date: 07/22/2024
 ---
 
 # calculatedColumn resource type

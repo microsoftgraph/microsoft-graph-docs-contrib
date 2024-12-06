@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "PaulEkirapa"
 ms.subservice: "entra-groups"
 doc_type: "apiPageType"
+ms.date: 03/13/2024
 ---
 
 # group: retryServiceProvisioning
