@@ -5,6 +5,7 @@ author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "security"
+ms.date: 09/12/2024
 ---
 
 # List healthIssues

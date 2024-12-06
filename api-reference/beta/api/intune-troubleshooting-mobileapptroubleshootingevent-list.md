@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/12/2024
 ---
 
 # List mobileAppTroubleshootingEvents

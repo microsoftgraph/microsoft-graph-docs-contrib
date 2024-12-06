@@ -5,6 +5,7 @@ author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/02/2024
 ---
 
 # callTranscript resource type
