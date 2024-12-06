@@ -22,13 +22,13 @@ The client ID is the app registration ID that is generated when you [register yo
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
-> Include `using` statements for  `Azure.Identity` and `Microsoft.Graph` to run this code.
+> Include `using` statements for `Azure.Identity` and `Microsoft.Graph` to run this code.
 
 # [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
-> Include `"github.com/Azure/azure-sdk-for-go/sdk/azidentity"` and, `graph "github.com/microsoftgraph/msgraph-sdk-go"` in your import block to run this code.
+> Include `"github.com/Azure/azure-sdk-for-go/sdk/azidentity"` and `graph "github.com/microsoftgraph/msgraph-sdk-go"` in your import block to run this code.
 
 # [Java](#tab/java)
 
@@ -52,6 +52,6 @@ The client ID is the app registration ID that is generated when you [register yo
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
-> Include import statements for `DeviceCodeCredential` from `@azure/identity`, `Client` from `@microsoft/microsoft-graph-client`, and `TokenCredentialAuthenticationProvider` from `@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials` to run this code.
+> Include `import` statements for `DeviceCodeCredential` from `@azure/identity`, `Client` from `@microsoft/microsoft-graph-client`, and `TokenCredentialAuthenticationProvider` from `@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials` to run this code.
 
 ---
