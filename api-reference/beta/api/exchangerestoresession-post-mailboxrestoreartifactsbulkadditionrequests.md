@@ -66,6 +66,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/dc3a3fc8-eb4b-45eb-9ca6-4955696344b8/mailboxRestoreArtifactsBulkAdditionRequests
 Content-Type: application/json
+
 {
   "displayName": "Usermailbox-BulkRestoreArtifacts",
   "mailboxes": [
