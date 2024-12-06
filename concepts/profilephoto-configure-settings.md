@@ -111,7 +111,7 @@ Content-Type: application/json
 ```
 ### Configure User Administrator and Administrator support for profile photo updates
 
-The following example shows how to configure the User Administrator and Administrator roles to change profile photo update settings in your organization.
+The following example shows how to configure the Global Administrator and User Administrator roles to change profile photo update settings in your organization.
 
 ```http
 PATCH https://graph.microsoft.com/beta/admin/people/photoupdatesettings
