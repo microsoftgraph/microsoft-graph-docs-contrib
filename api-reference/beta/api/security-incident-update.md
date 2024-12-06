@@ -46,7 +46,7 @@ PATCH /security/incidents/{incidentId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|String|Owner of the incident, or null if no owner is assigned. Free editable text.|
+|assignedTo|String|Owner of the incident, or `null` if no owner is assigned. Free editable text.|
 |classification|microsoft.graph.security.alertClassification|The specification for the incident. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |customTags|String collection|Array of custom tags associated with an incident.|
 |description|String|Description of the incident.|
