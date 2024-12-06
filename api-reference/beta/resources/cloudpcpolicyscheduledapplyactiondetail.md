@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For `Frontline shared` only. Specific scheduled apply rule set on the policy.
+Scheduled apply rule set on a policy. `Frontline shared` only.
 
 ## Methods
 
@@ -25,8 +25,8 @@ For `Frontline shared` only. Specific scheduled apply rule set on the policy.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|reservePercentage|Int32|For `Frontline shared` only. The percentage of Cloud PCs to keep available. Administrators can set this property to a value from 0 to 99. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users.|
-|cronScheduleExpression|String|Administrators can set a cron expression to define the scheduling rules for automatic regular apply. When auto provision is disabled, `cronScheduleExpression` will be set to null, stopping the automatic task scheduling (ex. "0 0 0 20 * *" means schedules a job to run at midnight on the 20th of every month). Read-Only.|
+|reservePercentage|Int32|The percentage of Cloud PCs to keep available. Administrators can set this property to a value from 0 to 99. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users. `Frontline shared` only.|
+|cronScheduleExpression|String|An expression that specifies the cron schedule. (For example, "0 0 0 20 * *" means schedules a job to run at midnight on the 20th of every month) Administrators can set a cron expression to define the scheduling rules for automatic regular application. When auto provision is disabled, `cronScheduleExpression` is set to null, stopping the automatic task scheduling. Read-Only.|
 
 ## JSON representation
 

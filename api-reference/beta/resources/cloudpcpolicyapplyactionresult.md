@@ -1,6 +1,6 @@
 ---
 title: "cloudPcPolicyApplyActionResult resource type"
-description: "For `Frontline shared` only. Specify the policy apply status, apply start time and finish time."
+description: "Specify the policy apply status, apply start time, and finish time. `Frontline shared` only."
 author: "zhuangzhuang131419"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For `Frontline shared` only. Specify the policy apply status, apply start time and finish time.
+Specify the policy apply status, apply start time, and finish time. `Frontline shared` only.
 
 ## Methods
 
@@ -25,9 +25,9 @@ For `Frontline shared` only. Specify the policy apply status, apply start time a
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|[cloudPcPolicyApplyActionStatus](../resources/cloudpcpolicyapplyactionstatus.md)|Indicates if the applied operation status, including succeeded, pending, failed.|
-|startDateTime|DateTime|Indicates the creation time of the applied operation.|
-|finishDateTime|DateTime|Indicates the finish time of the applied operation.|
+|status|string|The status of the applied operation. Possible values are, `succeeded`, `pending`, and `failed`.|
+|startDateTime|DateTime|The date and time when the operation was applied.|
+|finishDateTime|DateTime|The date and time when the operation was finished.|
 
 ## JSON representation
 
