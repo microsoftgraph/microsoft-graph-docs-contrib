@@ -51,11 +51,11 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|crossRegionDisasterRecoverySetting |[cloudPcCrossRegionDisasterRecoverySetting](../resources/cloudpccrossregiondisasterrecoverysetting.md)|Indicates cross-region disaster recovery settings for the user's Cloud PC.|
 |displayName|String|The setting name as it appears in the UI. |
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.  |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created (that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
-|crossRegionDisasterRecoverySetting |[cloudPcCrossRegionDisasterRecoverySetting](../resources/cloudPcCrossRegionDisasterRecoverySetting.md)|Indicates cross-region disaster recovery settings for the user's Cloud PC.|
 |selfServiceEnabled (deprecated)|Boolean|To turn on the self service option, change this setting to `true`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
 
 ## Response
