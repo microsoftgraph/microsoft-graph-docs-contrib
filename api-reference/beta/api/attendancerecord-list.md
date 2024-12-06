@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 05/18/2024
 ---
 
 # List attendanceRecords

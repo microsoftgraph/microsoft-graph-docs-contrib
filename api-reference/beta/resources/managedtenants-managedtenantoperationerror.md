@@ -5,6 +5,7 @@ author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # managedTenantOperationError resource type

@@ -3,6 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
+ms.date: 11/21/2024
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
@@ -43,13 +44,6 @@ Namespace: microsoft.graph
 | inactive |
 | active |
 | unknownfuturevalue |
-
-### siteLockState values
-
-| Member         |
-| --------------- |
-| unlocked      |
-| lockedReadOnly |
 
 ### binaryOperator values
 
@@ -1191,6 +1185,19 @@ Possible types of Windows settings.
 | openShiftRequest |
 | offerShiftRequest |
 | unknownFutureValue |
+| timeOffReason |
+| timeOff |
+| timeOffRequest |
+
+### eligibilityFilteringEnabledEntities values 
+
+|Member|
+|:---|
+|none|
+|swapRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+|timeOffReason|
 
 ### timeZoneStandard values
 
@@ -3410,3 +3417,11 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
+### conditionalAccessTransferMethods values
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
+|unknownFutureValue|

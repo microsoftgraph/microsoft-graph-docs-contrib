@@ -5,6 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # customSecurityAttributeAudit resource type

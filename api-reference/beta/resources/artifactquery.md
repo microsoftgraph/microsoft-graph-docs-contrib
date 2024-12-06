@@ -5,6 +5,7 @@ author: "tushar20"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 07/27/2024
 ---
 
 # artifactQuery resource type

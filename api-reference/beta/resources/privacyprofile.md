@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "suawat"
+ms.date: 04/25/2024
 ---
 
 # privacyProfile resource type

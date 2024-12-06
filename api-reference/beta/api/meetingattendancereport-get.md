@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 07/03/2024
 ---
 
 # Get meetingAttendanceReport

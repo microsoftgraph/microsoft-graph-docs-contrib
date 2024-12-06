@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # Replace timeOff
@@ -42,11 +43,18 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## Request body
 
-In the request body, supply a JSON representation of a [timeOff](../resources/timeoff.md) object.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+|Property|Type|Description|
+|:---|:---|:---|
+| draftTimeOff		| [timeOffItem](../resources/timeoffitem.md)        |The draft version of this **timeOff** item that is viewable by managers. It must be shared before it is visible to team members. Either **draftOpenShift** or **sharedOpenShift** should be `null`. |
+| isStagedForDeletion   | Boolean                      | The **timeOff** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional|
+| sharedTimeOff 	| [timeOffItem](../resources/timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Updates to the **sharedTimeOff** property send notifications to users in the Teams client. Either **draftOpenShift** or **sharedOpenShift** should be `null`. |
+| userId 			| String      |ID of the user assigned to the **timeOff**. Required.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and empty content. If the request specifies the `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
 
 ## Example
 
@@ -54,8 +62,6 @@ If successful, this method returns a `200 OK` response code and a [timeOff](../r
 
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoff-put"
@@ -63,86 +69,34 @@ The following example shows a request.
 ```http
 PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff/{timeOffId}
 Content-type: application/json
-Prefer: return=representation
 
 {
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "userId": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
   "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
+    "timeOffReasonId": "TOR_29a5ba96-c7ef-4e76-bec6-055323746314",
+    "startDateTime": "2024-10-10T19:00:00Z",
+    "endDateTime": "2024-10-10T20:00:00Z",
+    "theme": "blue"
   },
-  "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
-  }
+  "draftTimeOff": null
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-put-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.timeOff"
+  "truncated": true
 } -->
-
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "createdDateTime": "2019-03-14T05:35:57.755Z",
-  "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
-  "lastModifiedBy": {
-    "@odata.type":"microsoft.graph.identitySet",
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  },
-  "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Replace an existing timeOff",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
   "suppressions": [
   ]
-}
--->
+}-->
 

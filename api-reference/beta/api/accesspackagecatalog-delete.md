@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/14/2024
 ---
 
 # Delete accessPackageCatalog
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackagecatalog_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackagecatalog-delete-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-owner-write](../includes/rbac-for-apis/rbac-entitlement-management-catalog-owner-apis-write.md)]
 
 ## HTTP request
 
