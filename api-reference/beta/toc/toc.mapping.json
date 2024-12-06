@@ -2293,7 +2293,7 @@
                 },
                 {
                   "name": "Microsoft Entra Health (preview)",
-                  "childNodes": [                    
+                  "childNodes": [
                     {
                       "name": "SLA attainment",
                       "resources": [
