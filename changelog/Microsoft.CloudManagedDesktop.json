@@ -3,40 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "261e0caa-d16c-cc61-46cd-11857d3c23f1",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Change",
-          "Description": "Updated the [cloudPC: retrieveReviewStatus](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrieveReviewStatus?view=graph-rest-beta) method HTTP request.",
-          "Target": "retrieveReviewStatus"
-        },
-        {
-          "Id": "261e0caa-d16c-cc61-46cd-11857d3c23f1",
-          "ApiChange": "Method",
-          "ChangedApiName": "POST",
-          "ChangeType": "Change",
-          "Description": "Updated the [cloudPC: setReviewStatus](https://learn.microsoft.com/en-us/graph/api/cloudpc-setReviewStatus?view=graph-rest-beta) method HTTP request.",
-          "Target": "setReviewStatus"
-        },
-        {
-          "Id": "261e0caa-d16c-cc61-46cd-11857d3c23f1",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Change",
-          "Description": "Updated the [cloudPC: retrieveSnapshots](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrieveSnapshots?view=graph-rest-beta) method HTTP request.",
-          "Target": "retrieveSnapshots"
-        }
-      ],
-      "Id": "261e0caa-d16c-cc61-46cd-11857d3c23f1",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-12-03T11:31:22.4639607Z",
-      "WorkloadArea": "Device and app management",
-      "SubArea": "Cloud PC"
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "4e187813-86e4-4387-a939-dee88cb39661",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
