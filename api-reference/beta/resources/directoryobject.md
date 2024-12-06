@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "keylimesoda"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # directoryObject resource type

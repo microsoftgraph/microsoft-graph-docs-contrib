@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: Indicates that a driveItem is the top-level item in a package or a collection of items that should be treated as a collection instead of individual items.
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # package resource type
