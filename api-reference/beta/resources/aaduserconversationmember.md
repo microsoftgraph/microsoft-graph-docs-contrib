@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "akjo"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 
 # aadUserConversationMember resource type
