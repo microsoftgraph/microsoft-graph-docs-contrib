@@ -48,23 +48,6 @@ POST /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}
 ## Request body
 
 In the request body, supply a JSON representation of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object.
-```json
-{
-  "displayName": "Usermailbox-BulkRestoreArtifacts",
-  "mailboxes": [
-    "contoso1@micorosft.com",
-    "consotos2@microsoft.com",
-    "contoso3@microsoft.com"
-      ],
-    "protectionTimePeriod": {
-        "startDateTime": "2021-01-01T00:00:00Z",
-        "endDateTime": "2021-01-08T00:00:00Z"
-        },
-    "destinationType": "new",
-    "tags": "fastRestore",
-    "restorePointPreference": "latest"
-  }
-  ```
 
 ## Response
 
@@ -83,6 +66,22 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/dc3a3fc8-eb4b-45eb-9ca6-4955696344b8/mailboxRestoreArtifactsBulkAdditionRequests
 Content-Type: application/json
+{
+  "displayName": "Usermailbox-BulkRestoreArtifacts",
+  "mailboxes": [
+    "contoso1@micorosft.com",
+    "consotos2@microsoft.com",
+    "contoso3@microsoft.com"
+      ],
+    "protectionTimePeriod": {
+        "startDateTime": "2021-01-01T00:00:00Z",
+        "endDateTime": "2021-01-08T00:00:00Z"
+        },
+    "destinationType": "new",
+    "tags": "fastRestore",
+    "restorePointPreference": "latest"
+  }
+
 ```
 
 
