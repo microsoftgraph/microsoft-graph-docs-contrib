@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "paulgarn"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
-ms.date: 12/04/2024
+ms.date: 12/05/2024
 ---
 
 # claimsMappingPolicy resource type
