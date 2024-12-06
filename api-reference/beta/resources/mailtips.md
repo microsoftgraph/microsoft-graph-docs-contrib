@@ -1,10 +1,11 @@
 ---
 title: "mailTips resource type"
-description: "Informative messages about a recipient, that are displayed to users while they're composing a message. For example, an out-of-office message "
+description: "Informative messages about a recipient, displayed to users while they're composing a message. For example, an out-of-office message "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # mailTips resource type
@@ -13,23 +14,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informative messages about a recipient, that are displayed to users while they're composing a message. For example, an out-of-office message
+Informative messages about a recipient displayed to users while they're composing a message. For example, an out-of-office message
 as an automatic reply for a message recipient.
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Mail tips for automatic reply if it has been set up by the recipient. |
+| automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Mailtips for an automatic reply if set up by the recipient. |
 | customMailTip | String | A custom mail tip that can be set on the recipient's mailbox. |
-| deliveryRestricted| Boolean | Whether the recipient's mailbox is restricted, for example, accepting messages from only a predefined list of senders, rejecting messages from a predefined list of senders, or accepting messages from only authenticated senders. |
+| deliveryRestricted| Boolean | Whether the recipient's mailbox is restricted. For example, accepting messages from only a predefined list of senders, rejecting messages from a predefined list of senders, or accepting messages from only authenticated senders. |
 | emailAddress | [emailAddress](../resources/emailaddress.md) | The email address of the recipient to get mailtips for. |
 | error | [mailTipsError](../resources/mailtipserror.md) | Errors that occur during the [getMailTips](../api/user-getmailtips.md) action. |
 | externalMemberCount | Int32 | The number of external members if the recipient is a distribution list. |
-| isModerated |Boolean  | Whether sending messages to the recipient requires approval. For example, if the recipient is a large distribution list and a moderator has been set up to approve messages sent to that distribution list, or if sending messages to a recipient requires approval of the recipient's manager. |
+| isModerated |Boolean  | Whether sending messages to the recipient requires approval. For example, if the recipient is a large distribution list and a moderator is set up to approve messages sent to that distribution list, or if sending messages to a recipient requires approval of the recipient's manager. |
 | mailboxFull | Boolean | The mailbox full status of the recipient. |
-| maxMessageSize | Int32 | The maximum message size that has been configured for the recipient's organization or mailbox. |
-| recipientScope | recipientScopeType | The scope of the recipient. Possible values are: `none`, `internal`, `external`, `externalPartner`, `externalNonParther`. For example, an administrator can set another organization to be its "partner". The scope is useful if an administrator wants certain mailtips to be accessible to certain scopes. It's also useful to senders to inform them that their message may leave the organization, helping them make the correct decisions about wording, tone and content.|
+| maxMessageSize | Int32 | The maximum message size configured for the recipient's organization or mailbox. |
+| recipientScope | recipientScopeType | The scope of the recipient. Possible values are: `none`, `internal`, `external`, `externalPartner`, `externalNonParther`. For example, an administrator can set another organization to be its "partner". The scope is useful if an administrator wants certain mailtips to be accessible to certain scopes. It's also useful to senders to inform them that their message may leave the organization, helping them make the correct decisions about wording, tone, and content.|
 | recipientSuggestions | [recipient](../resources/recipient.md) collection | Recipients suggested based on previous contexts where they appear in the same message. |
 | totalMemberCount | Int32 | The number of members if the recipient is a distribution list. |
 
