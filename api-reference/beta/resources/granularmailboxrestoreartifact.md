@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Granular mailbox restore artifact
+ms.date: 12/02/2024
 ---
 
 # granularMailboxRestoreArtifact resource type
