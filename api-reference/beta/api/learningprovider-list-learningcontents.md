@@ -5,6 +5,7 @@ author: "malabikaroy"
 ms.localizationpriority: medium
 ms.subservice: "viva-learning"
 doc_type: apiPageType
+ms.date: 03/19/2024
 ---
 
 # List learningContents

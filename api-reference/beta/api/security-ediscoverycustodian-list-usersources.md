@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 10/23/2024
 ---
 
 # List userSources

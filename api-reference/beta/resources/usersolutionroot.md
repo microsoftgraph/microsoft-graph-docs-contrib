@@ -5,6 +5,7 @@ author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/14/2024
 ---
 
 # userSolutionRoot resource type
