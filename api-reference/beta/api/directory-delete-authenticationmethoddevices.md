@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "hardwareoathtokenauthenticationmethoddevice-get-permissions"
+  "name": "hardwareoathtokenauthenticationmethoddevice-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-delete-permissions.md)]
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [hardwareOathT
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_hardwareoathtokenauthenticationmethoddevice"
+  "name": "directory_delete_authenticationmethoddevices"
 }
 -->
 ``` http

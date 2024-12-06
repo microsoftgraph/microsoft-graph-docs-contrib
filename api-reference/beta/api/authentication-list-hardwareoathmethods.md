@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-hardwareoathmethods-permissions.md)]
 
-### Permissions acting on oher users
+### Permissions acting on other users
 <!-- {
   "blockType": "permissions",
   "name": "authentication-list-hardwareoathmethods-2-permissions"

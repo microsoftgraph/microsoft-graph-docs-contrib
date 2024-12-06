@@ -88,7 +88,7 @@ If successful, this action returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "hardwareoathauthenticationmethodthis.assignandactivatebyserialnumber"
+  "name": "hardwareoathauthenticationmethodthis.assignandactivate"
 }
 -->
 ``` http

@@ -130,7 +130,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all tokens in the inventory, filtered on status.
+### Example 2: List all tokens in the inventory, filtered on status
 
 #### Request
 
@@ -190,7 +190,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_hardwareoathtokenauthenticationmethoddevice"
+  "name": "list_hardwareoathtokenauthenticationmethoddevice_serialnumber"
 }
 -->
 ``` http

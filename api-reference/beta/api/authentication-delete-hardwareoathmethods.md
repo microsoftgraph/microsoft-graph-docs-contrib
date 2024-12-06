@@ -43,7 +43,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-Delete your own hardware OATH authentication method.
+Unassign yourself a hardware OATH authentication method.
 <!-- {
   "blockType": "ignored"
 }
@@ -52,8 +52,11 @@ Delete your own hardware OATH authentication method.
 DELETE /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
-Delete another user's hardware OATH authentication method.
-<!-- { "blockType": "ignored" } -->
+Unassign another user their hardware OATH authentication method.
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 DELETE /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
