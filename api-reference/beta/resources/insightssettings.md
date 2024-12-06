@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "simonhult"
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 05/22/2024
 ---
 
 # insightsSettings resource type
