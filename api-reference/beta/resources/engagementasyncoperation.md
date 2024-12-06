@@ -5,6 +5,7 @@ author: "aditijha4"
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: resourcePageType
+ms.date: 07/21/2024
 ---
 
 # engagementAsyncOperation resource type

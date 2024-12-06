@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "aiinteractionhistory-getallenterpriseinteractions" } -->
+<!-- { "blockType": "permissions", "name": "aiinteractionhistory_getallenterpriseinteractions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/aiinteractionhistory-getallenterpriseinteractions-permissions.md)]
 
 ## HTTP request
@@ -33,16 +33,6 @@ GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions
 ```
 
 ## Optional query parameters
-
-You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses), as shown in the following examples.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions?model=A
-GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions?model=B
-```
-
-If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
 
 This method supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
