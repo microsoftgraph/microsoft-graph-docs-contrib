@@ -71,7 +71,6 @@ You can specify the following properties when creating a **hardwareOathAuthentic
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|ID of the hardware token that is to be assigned to the user and activated.|
-|displayName|String|An optional name that can be provided to the Hardware OATH token.|
 
 ## Response
 
@@ -95,7 +94,6 @@ Content-Type: application/json
   "device": {
         "id": "aad49556-####-####-####-############"
     },
-  "displayName": "Amy Masters Token"
 }
 ```
 

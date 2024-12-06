@@ -34,16 +34,16 @@ Inherits from [authenticationMethodDevice](../resources/authenticationmethoddevi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|[identity](../resources/identity.md)|User the token is assigned to. Nullable.|
-|displayName|String|Name that can be provided to the hardware OATH token.  Inherited from [authenticationMethodDevice](../resources/authenticationmethoddevice.md).|
-|hashFunction|hardwareOathTokenHashFunction|Hash function of the hardrware token. The possible values are: `hmacsha1` or `hmacsha256`. Default value is: `hmacsha1`.|
-|id|String|Unique identifier of the hardware OATH token. Inherited from [entity](../resources/entity.md).|
-|manufacturer|String|Manufacturer name of the hardware token.|
-|model|String|Model name of the hardware token.|
-|secretKey|String|Secret key of the specific hardware token, provided by the vendor.|
-|serialNumber|String|Serial number of the specific hardware token, often found on the back of the device.|
-|status|hardwareOathTokenStatus|Status of the hardware OATH token.The possible values are: `available`, `assigned`, `activated`, `failedActivation`.|
-|timeIntervalInSeconds|Int32|Refresh interval of the 6-digit verification code, in seconds. The possible values are: 30 or 60.|
+|assignedTo|[identity](../resources/identity.md)|User the token is assigned to. Nullable. Supports `$select` and `$filter(eq)`.|
+|displayName|String|Name that can be provided to the hardware OATH token.  Inherited from [authenticationMethodDevice](../resources/authenticationmethoddevice.md). Supports `$select`.|
+|hashFunction|hardwareOathTokenHashFunction|Hash function of the hardrware token. The possible values are: `hmacsha1` or `hmacsha256`. Default value is: `hmacsha1`. Supports `$select` and `$filter(eq)`.|
+|id|String|Unique identifier of the hardware OATH token. Inherited from [entity](../resources/entity.md). Supports `$select`.|
+|manufacturer|String|Manufacturer name of the hardware token. Supports `$select` and `$filter(eq)`.|
+|model|String|Model name of the hardware token. Supports `$select` and `$filter(eq)`.|
+|secretKey|String|Secret key of the specific hardware token, provided by the vendor. |
+|serialNumber|String|Serial number of the specific hardware token, often found on the back of the device. Supports `$select` and `$filter(eq)`.|
+|status|hardwareOathTokenStatus|Status of the hardware OATH token.The possible values are: `available`, `assigned`, `activated`, `failedActivation`. Supports `$select` and `$filter(eq)`.|
+|timeIntervalInSeconds|Int32|Refresh interval of the 6-digit verification code, in seconds. The possible values are: 30 or 60. Supports `$select` and `$filter(eq)`.|
 
 ## Relationships
 |Relationship|Type|Description|

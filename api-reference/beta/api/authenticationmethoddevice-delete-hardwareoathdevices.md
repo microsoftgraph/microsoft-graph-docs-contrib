@@ -2,10 +2,10 @@
 title: "Delete hardwareOathTokenAuthenticationMethodDevice"
 description: "Delete a Hardware OATH token. Token needs to be unassigned."
 author: "luc-msft"
+ms.date: 12/06/2024
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 12/06/2024
 ---
 
 # Delete hardwareOathTokenAuthenticationMethodDevice
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "hardwareoathtokenauthenticationmethoddevice-delete-permissions"
+  "name": "authenticationmethoddevice-delete-hardwareoathdevices-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-delete-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/authenticationmethoddevice-delete-hardwareoathdevices-permissions.md)]
 
 ## HTTP request
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [hardwareOathT
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "directory_delete_authenticationmethoddevices"
+  "name": "delete_hardwareoathtokenauthenticationmethoddevice"
 }
 -->
 ``` http
@@ -72,10 +72,10 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.hardwareOathTokenAuthenticationMethodDevice"
+  "truncated": true
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
 ```
+
