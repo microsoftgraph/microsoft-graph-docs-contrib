@@ -45,9 +45,9 @@ Don't supply a request body for this method.
 If successful, this function returns a `200 OK` response code and a [microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection in the response body.
 
 ## Examples
-
+### Example 1: Retrieve child tags of a specific eDiscovery 
 #### Request
-The following example shows a request that lists tags as a hierarchy.
+The following example shows a request to retrieve child tags
 
 # [HTTP](#tab/http)
 <!-- {
@@ -197,8 +197,11 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Retrieve child tags of a specific eDiscovery review tag
 #### Request
-The following example shows a request that creates a child tags.
+The following example shows a request to retrieve child tags
+<!-- This HTTP GET request retrieves the child tags of a specific eDiscovery review tag within a given eDiscovery case in Microsoft Graph Security API. 
+Use the `$select` query option to optimize performance by selecting only the necessary properties. -->
 
 ``` http
 GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b6f72954-c7d0-414c-ad50-00167216cb03/tags/318f79767abf4b8fab4d8e37b3174c5a/childTags
