@@ -144,8 +144,6 @@ HTTP/1.1 201 Created
 ### Request
 The following example shows a request that creates an eDiscovery source from a user source.
 
-The following example shows a request.
-
 ```
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/17011798-ca63-4282-9cb3-0086f1042bfc/searches/2f5cc5a6-9728-4ba0-acfa-edce25e91244/additionalSources
 

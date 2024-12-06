@@ -5,6 +5,7 @@ description: "Create a site column."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.date: 03/06/2024
 ---
 
 # Create a columnDefinition in a site

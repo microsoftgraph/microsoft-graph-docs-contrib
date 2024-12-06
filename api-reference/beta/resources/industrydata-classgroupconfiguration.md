@@ -5,6 +5,7 @@ author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # classGroupConfiguration resource type
