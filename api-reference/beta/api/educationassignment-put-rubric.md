@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Attach educationRubric to an educationAssignment
