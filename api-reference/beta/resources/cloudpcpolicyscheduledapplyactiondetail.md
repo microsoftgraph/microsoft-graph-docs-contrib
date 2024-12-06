@@ -1,5 +1,5 @@
 ---
-title: "CloudPcPolicyScheduledApplyActionDetail resource type"
+title: "cloudPcPolicyScheduledApplyActionDetail resource type"
 description: "For `Frontline shared` only. Specific scheduled apply rule set on the policy."
 author: "zhuangzhuang131419"
 ms.localizationpriority: medium
