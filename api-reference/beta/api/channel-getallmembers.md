@@ -36,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ### Optional query parameters
 
-This method supports the `$filter`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 objects respectively.
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 objects respectively.
 
 ## Request headers
 
@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/members",
+"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/getAllMembers",
 "@odata.count": 2,
     "value": [
         {
@@ -109,8 +109,7 @@ Content-type: application/json
         "email": "ericsol@contoso.com",
         "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
         }
-    ],
-    "@odata.nextLink": "https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/getAllMembers?$skiptoken=abc123"
+    ]
 }
 
 ```
