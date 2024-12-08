@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
+Delete the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
 
 ## Permissions
 
@@ -29,8 +29,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{mutualTlsOauthConfigurationId}` in the request is the value of the **id** property of the mutualTlsOauthConfiguration object.
-
 <!-- {
   "blockType": "ignored"
 }
@@ -38,6 +36,7 @@ The `{mutualTlsOauthConfigurationId}` in the request is the value of the **id** 
 ``` http
 DELETE /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
+> **Note:** The `{mutualTlsOauthConfigurationId}` in the request URL is the value of the **id** property of the **mutualTlsOauthConfiguration** object.
 
 ## Request headers
 
