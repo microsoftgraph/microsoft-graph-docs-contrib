@@ -1,6 +1,6 @@
 ---
 title: "Create deviceTemplate"
-description: "Create a new deviceTemplate object."
+description: "Create a new deviceTemplate used to identify attributes and manage a group of devices with similar characteristics."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a new [deviceTemplate](../resources/devicetemplate.md) used to identify attributes & manage a group of devices with similar characteristics.
+Create a new [deviceTemplate](../resources/devicetemplate.md) used to identify attributes and manage a group of devices with similar characteristics.
 
-When creating the DeviceTemplate, the properties  `mutualTlsOauthConfigurationId` and `mutualTlsOauthConfigurationTenantId` in the body of the message isn't required if using self signed certificates instead of trust root certificates.
+When you create a **deviceTemplate**, the properties **mutualTlsOauthConfigurationId** and **mutualTlsOauthConfigurationTenantId** in the body of the message aren't required if you use self-signed certificates instead of trust root certificates.
 
 ## Permissions
 
@@ -50,11 +50,11 @@ POST /directory/templates/deviceTemplates
 
 In the request body, supply a JSON representation of the [deviceTemplate](../resources/devicetemplate.md) object.
 
-You can specify the following properties when creating a **deviceTemplate**.
+You can specify the following properties when you create a **deviceTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|`mutualTlsOauthConfigurationId|String|Object ID of CertificateBasedDeviceAuthConfiguration - _Not set if using self signed certificates instead of trust root certificates._ Optional. |
+|mutualTlsOauthConfigurationId|String|Object ID of CertificateBasedDeviceAuthConfiguration - _Not set if using self signed certificates instead of trust root certificates._ Optional. |
 |mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's EntraId Tenant ID) - _Not set if using self signed certificates instead of trust root certificates._ Optional. |
 |deviceAuthority | String | deviceAuthority is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's EntraId tenant. For example, Acme (manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (deviceAuthority). Required.|
 |manufacturer|String|Manufacturer name. Required.|
@@ -72,9 +72,10 @@ If successful, this method returns a `201 Created` response code and a [deviceTe
 |`400` | Validation failure in any of the certificate validation steps mentioned | Unable to validate device certificate|
 
 
-## Example
+## Examples
 
 ### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_devicetemplate_from_"
@@ -91,7 +92,7 @@ Content-length: 106
     "deviceAuthority": "ADT",
     "manufacturer": "Acme",
     "model": "DeepFreezerModelAB",
-    "operatingSystem": "WindowsIoT",
+    "operatingSystem": "WindowsIoT"
 }
 ```
 
