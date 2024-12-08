@@ -28,7 +28,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Device and app management | Cloud PC
 
-- Added `endpointConnectivityCheckVMAgentEndPointCommunicationError` as a supported error type for the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration. For more information, see [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true).
+- Enabled `endpointConnectivityCheckVMAgentEndPointCommunicationError` as a supported error type in the **errorType** property of the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true) resource.
 - Use the **disasterRecoveryType** property on [cloudPcCrossRegionDisasterRecoverySetting](/graph/api/resources/cloudpccrossregiondisasterrecoverysetting?view=graph-rest-beta&preserve-view=true) to get or set the type of disaster recovery to perform when a disaster occurs on a user's Cloud PC.
 
 ### Reports | Identity and access reports 
