@@ -1,6 +1,6 @@
 ---
 title: "Create cloudPcUserSetting"
-description: "Create a new cloudPcUserSetting ."
+description: "Create a new cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
