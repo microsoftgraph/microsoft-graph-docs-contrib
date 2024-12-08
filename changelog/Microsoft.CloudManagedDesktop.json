@@ -15,7 +15,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "crossRegionDisasterRecoveryEnabled",
             "ChangeType": "Deprecation",
-            "Description": "Deprecated the **crossRegionDisasterRecoveryEnabled** property of the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource. The **crossRegionDisasterRecoveryEnabled** property is deprecated and will no longer be supported effective February 11, 2025.",
+            "Description": "Deprecated the **crossRegionDisasterRecoveryEnabled** property of the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource. The **crossRegionDisasterRecoveryEnabled** property is deprecated and will no longer be supported effective February 11, 2025. For scenarios where **crossRegionDisasterRecoveryEnabled** is `true`, set **disasterRecoveryType** to `crossRegion`. For scenarios where **crossRegionDisasterRecoveryEnabled** is `false`,  set **disasterRecoveryType** to `notconfigured`.",
             "Target": "cloudPcCrossRegionDisasterRecoverySetting"
           }
         ],
