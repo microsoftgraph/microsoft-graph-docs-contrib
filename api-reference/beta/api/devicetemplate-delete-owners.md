@@ -1,6 +1,6 @@
 ---
-title: "Remove owners"
-description: "Remove a directoryObject object."
+title: "Remove deviceTemplate owner"
+description: "Remove an owner from a deviceTemplate object."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# Delete DeviceTemplate Owners
+# Remove deviceTemplate owner
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove owner of a [deviceTemplate](../resources/devicetemplate.md) object.
+Remove an owner from a [deviceTemplate](../resources/devicetemplate.md) object.
 
 ## Permissions
 
@@ -29,11 +29,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{deviceTemplateId}` in the request is the value of the **id** property of the device template while {id} represents the **oid** of the owner service principal.
 <!-- { "blockType": "ignored" } -->
 ```http
 Delete /directory/templates/deviceTemplates/{deviceTemplateId}/owners/{id}/$ref
 ```
+
+> **Note:** The `{deviceTemplateId}` in the request URL is the value of the **id** property of the device template and `{id}` represents the **oid** of the owner service principal.
 
 ## Request headers
 
@@ -47,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
 
 ## Examples
 
