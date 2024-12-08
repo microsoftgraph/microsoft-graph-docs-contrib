@@ -1,6 +1,6 @@
 ---
 title: "deviceTemplate resource type"
-description: "DeviceTemplate resource type"
+description: "Represents property values that are common to a set of device objects."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.date: 11/24/2024
@@ -15,23 +15,23 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents property values that are common to a set of [device](../resources/device.md) objects.
-The properties on the template will be stamped on any `device` object that is created based on this template.
+The properties on the template are stamped on any **device** object that is created based on this template.
 
-An admin on the customer's tenant will call the `create` API for this entity. Values for `certificateBasedDeviceAuthConfigurationId`, `certificateBasedDeviceAuthConfigurationTenantId`, `deviceAuthorityAppIds` etc. will be provided to the customer by the device authority (manufacturer or reseller).
+An admin on the customer's tenant calls the `create` API for this entity. Values for `certificateBasedDeviceAuthConfigurationId`, `certificateBasedDeviceAuthConfigurationTenantId`, `deviceAuthorityAppIds` etc. will be provided to the customer by the device authority (manufacturer or reseller).
 
 The `devicetemplate` is immutable.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List](../api/template-list-devicetemplates.md) | [deviceTemplate](devicetemplate.md) collection| Retrieve a list of devices registered in the directory. |
 |[Create](../api/template-post-devicetemplates.md)|[deviceTemplate](../resources/devicetemplate.md) | Create a new DeviceTemplate object in the directory.|
 |[Get](../api/devicetemplate-get.md) | [deviceTemplate](devicetemplate.md) | Read properties and relationships of deviceTemplate object.|
-|[List](../api/template-list-devicetemplates.md) | [deviceTemplate](devicetemplate.md) collection| Retrieve a list of devices registered in the directory. |
 |[Delete](../api/device-delete-devicetemplate.md) | None |Delete the deviceTemplate object. |
-|[Get deviceTemplate owners](../api/devicetemplate-list-owners.md) | [directoryObject](directoryobject.md) collection | Get a list of owners of the deviceTemplate object. |
-|[Add a deviceTemplate owner](../api/devicetemplate-post-owners.md)| None |Post a list of owners of the deviceTemplate object. |
-|[Remove a deviceTemplate owner](../api/devicetemplate-delete-owners.md) | None |Remove a list of owners of the deviceTemplate object. |
-|[createDeviceFromTemplate](../api/devicetemplate-createdevicefromtemplate.md)|[device](../resources/device.md)| Create new devices from given device template.|
+|[List owners](../api/devicetemplate-list-owners.md) | [directoryObject](directoryobject.md) collection | Get a list of owners of the deviceTemplate object. |
+|[Add owner](../api/devicetemplate-post-owners.md)| None |Post a list of owners of the deviceTemplate object. |
+|[Remove owner](../api/devicetemplate-delete-owners.md) | None |Remove a list of owners of the deviceTemplate object. |
+|[Create device from template](../api/devicetemplate-createdevicefromtemplate.md)|[device](../resources/device.md)| Create new devices from given device template.|
 
 ## Properties
 |Property|Type|Description|
