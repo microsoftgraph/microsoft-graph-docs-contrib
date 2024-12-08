@@ -1,5 +1,5 @@
 ---
-title: "List owners"
+title: "List deviceTemplate owners"
 description: "List owners of a device template."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# List owners
+# List deviceTemplate owners
 
 Namespace: microsoft.graph
 
@@ -29,11 +29,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device template.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directory/templates/deviceTemplates/{id}/owners
 ```
+> **Note:** The `{id}` in the request URL is the value of the **id** property of the device template.
 
 ## Request headers
 
@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
 
 ## Examples
 
@@ -61,7 +61,6 @@ Don't supply a request body for this method.
 ``` http
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates/00f1e7a4-de6d-4070-84df-8aab629c4d1e/owners
 ```
-
 
 ### Response
 
@@ -78,8 +77,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "value": [
     {
       "@odata.type": "#microsoft.graph.servicePrincipal",
       "id": "4vfaf3ac-5122-4a25-98d8-b32c091f441f",
@@ -103,9 +102,8 @@ Content-Type: application/json
       "tags": [
         "HideApp",
         "WindowsAzureActiveDirectoryIntegratedApp"
-      ],
+      ]
     }
   ]
 }
 ```
-
