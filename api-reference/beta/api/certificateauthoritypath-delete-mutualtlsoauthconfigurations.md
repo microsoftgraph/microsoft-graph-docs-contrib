@@ -1,6 +1,6 @@
 ---
 title: "Delete mutualTlsOauthConfiguration"
-description: "Delete a mutualTlsOauthConfiguration object."
+description: "Delete the specified mutualTlsOauthConfiguration resource."
 author: "sofia-geislinger"
 ms.date: 11/24/2024
 ms.localizationpriority: medium
