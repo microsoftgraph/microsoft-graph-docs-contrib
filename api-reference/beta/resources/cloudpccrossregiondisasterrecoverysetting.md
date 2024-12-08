@@ -21,11 +21,11 @@ Represents the settings for cross-region disaster recovery on a Cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|crossRegionDisasterRecoveryEnabled(deprecated)|Boolean|`True` if an end user is allowed to set up cross-region disaster recovery for Cloud PC; otherwise, `false`. The default value is `false`.Starting from February 11, 2025, this property will no longer be supported and will be marked as deprecated.|
 |disasterRecoveryNetworkSetting|[cloudPcDisasterRecoveryNetworkSetting](../resources/cloudpcdisasterrecoverynetworksetting.md)|Indicates the network settings of the Cloud PC during a cross-region disaster recovery operation.|
 |disasterRecoveryType|[cloudPcDisasterRecoveryType](#cloudpcdisasterrecoverytype-values)|Indicates the type of disaster recovery to perform when a disaster occurs on the user's Cloud PC. The possible values are: `notConfigured`, `crossRegion`, `premium`, `unknownFutureValue`. The default value is `notConfigured`.|
 |maintainCrossRegionRestorePointEnabled|Boolean|Indicates whether Windows 365 maintain the cross-region disaster recovery function generated restore points. If `true`, the Windows 365 stored restore points; `false` indicates that Windows 365 doesn't generate or keep the restore point from the original Cloud PC. If a disaster occurs, the new Cloud PC can only be provisioned using the initial image. This limitation can result in the loss of some user data on the original Cloud PC. The default value is `false`.|
-|userInitiatedDisasterRecoveryAllowed|Boolean|Indicates whether the client will allow the end user to initiate a disaster recovery activation.  When 'true' the client will include the option for the end user to activate Backup Cloud PC. When 'false' the end user will not have the option to activate disaster recovery. Default is false. Currently only supports premium disaster recovery.|
+|userInitiatedDisasterRecoveryAllowed|Boolean|Indicates whether the client allows the end user to initiate a disaster recovery activation. `True` indicates that the client includes the option for the end user to activate Backup Cloud PC. When `false`, the end user doesn't have the option to activate disaster recovery. The default value is `false`. Currently, only premium disaster recovery is supported.|
+|crossRegionDisasterRecoveryEnabled (deprecated)|Boolean|`True` if an end user is allowed to set up cross-region disaster recovery for Cloud PC; otherwise, `false`. The default value is `false`. This property is deprecated and will no longer be supported effective February 11, 2025.|
 
 ### cloudPcDisasterRecoveryType values
 
