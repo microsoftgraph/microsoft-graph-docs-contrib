@@ -88,13 +88,14 @@ Content-Type: application/json
     "userRestoreEnabled": true
   },
   "crossRegionDisasterRecoverySetting": {
-    "crossRegionDisasterRecoveryEnabled": true,
+    "crossRegionDisasterRecoveryEnabled": false,
     "maintainCrossRegionRestorePointEnabled": true,
     "disasterRecoveryNetworkSetting": {
       "regionName": "westus",
       "regionGroup": "usEast"
     },
-    "disasterRecoveryType": "premium"
+    "disasterRecoveryType": "premium",
+    "userInitiatedDisasterRecoveryAllowed": true
   },
   "localAdminEnabled": false,
   "resetEnabled": true

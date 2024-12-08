@@ -83,13 +83,14 @@ Content-Type: application/json
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
   "crossRegionDisasterRecoverySetting": {
-     "crossRegionDisasterRecoveryEnabled": true,
+     "crossRegionDisasterRecoveryEnabled": false,
      "maintainCrossRegionRestorePointEnabled": true,
      "disasterRecoveryNetworkSetting": {
         "regionName": "westus",
         "regionGroup": "usEast"
       },
-      "disasterRecoveryType": "premium"
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
   },
   "restorePointSetting": {
     "frequencyInHours": 16,
@@ -119,13 +120,14 @@ Content-Type: application/json
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
   "crossRegionDisasterRecoverySetting": {
-     "crossRegionDisasterRecoveryEnabled": true,
+     "crossRegionDisasterRecoveryEnabled": false,
      "maintainCrossRegionRestorePointEnabled": true,
      "disasterRecoveryNetworkSetting": {
         "regionName": "westus",
         "regionGroup": "usEast"
       },
-      "disasterRecoveryType": "premium"
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
   },
   "restorePointSetting": {
     "frequencyInHours": 16,
