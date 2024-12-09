@@ -2074,10 +2074,6 @@ items:
         href: ../../api/authentication-post-hardwareoathmethods.md
       - name: Get
         href: ../../api/hardwareoathauthenticationmethod-get.md
-      - name: List hardwareOathMethods
-        href: ../../api/authentication-list-hardwareoathmethods.md
-      - name: Create hardwareOathAuthenticationMethod
-        href: ../../api/authentication-post-hardwareoathmethods.md
       - name: Delete
         href: ../../api/authentication-delete-hardwareoathmethods.md
       - name: Activate
@@ -2849,20 +2845,20 @@ items:
         items:
         - name: Hardware OATH token devices
           href: ../../resources/hardwareoathtokenauthenticationmethoddevice.md
+        - name: List
+          href: ../../api/authenticationmethoddevice-list-hardwareoathdevices.md
+        - name: Create
+          href: ../../api/authenticationmethoddevice-post-hardwareoathdevices.md
+        - name: Create one or more objects
+          href: ../../api/authenticationmethoddevice-update.md
         - name: Get
           href: ../../api/hardwareoathtokenauthenticationmethoddevice-get.md
         - name: Update
           href: ../../api/hardwareoathtokenauthenticationmethoddevice-update.md
+        - name: Delete
+          href: ../../api/authenticationmethoddevice-delete-hardwareoathdevices.md
         - name: Assign user
           href: ../../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md
-        - name: Update
-          href: ../../api/authenticationmethoddevice-update.md
-        - name: Delete
-          href: ../../api/directory-delete-authenticationmethoddevices.md
-        - name: List hardwareOathDevices
-          href: ../../api/authenticationmethoddevice-list-hardwareoathdevices.md
-        - name: Create hardwareOathTokenAuthenticationMethodDevice
-          href: ../../api/authenticationmethoddevice-post-hardwareoathdevices.md
       - name: Microsoft Authenticator
         items:
         - name: Microsoft Authenticator
