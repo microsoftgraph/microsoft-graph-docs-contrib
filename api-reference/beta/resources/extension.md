@@ -37,7 +37,7 @@ The following JSON representation shows the resource type.
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
+|id|String| The identifier for the extension. Read-only.|
 
 ## Relationships
 None

@@ -1,6 +1,6 @@
 ---
 title: "initiator resource type"
-description: "Describes who or what initiated the provisioning event."
+description: "Represents information about who or what initiated the provisioning event."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.subservice: "entra-monitoring-health"
@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes who or what initiated the provisioning event. Inherits from [identity](../resources/identity.md).
+Represents information about who or what initiated the provisioning event. Inherits from [identity](../resources/identity.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String|Name of the person or service that initiated the provisioning event. Inherited from [identity](../resources/identity.md).|
-|id|String|Uniquely identifies the person or service that initiated the provisioning event. Inherited from [identity](../resources/identity.md).|
-|initiatorType|String| Type of initiator. Possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
+|displayName|String|The name of the person or service that initiated the provisioning event. Inherited from [identity](../resources/identity.md).|
+|id|String|The unique identifier for the person or service that initiated the provisioning event. Inherited from [identity](../resources/identity.md).|
+|initiatorType|String| The type of the initiator. Possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
 
 ## JSON representation
 
