@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 12/04/2024
 ---
 
 # List userSettings
@@ -125,6 +126,15 @@ Content-Type: application/json
       "restorePointSetting": {
         "frequencyInHours": 16,
         "userRestoreEnabled": true
+      },
+      "crossRegionDisasterRecoverySetting": {
+        "crossRegionDisasterRecoveryEnabled": true,
+        "maintainCrossRegionRestorePointEnabled": true,
+        "disasterRecoveryNetworkSetting": {
+            "regionName": "westus",
+            "regionGroup": "usEast"
+        },
+        "disasterRecoveryType": "premium"
       },
       "lastModifiedDateTime": "2021-02-01T10:29:57Z",
       "createdDateTime": "2021-02-01T10:29:57Z"

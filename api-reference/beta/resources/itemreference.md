@@ -5,6 +5,7 @@ title: itemReference
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 06/07/2024
 ---
 # itemReference resource type
 
