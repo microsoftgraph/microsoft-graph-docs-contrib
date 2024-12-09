@@ -5,6 +5,7 @@ author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 03/13/2024
 ---
 
 # Delete conversationMember
