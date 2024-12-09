@@ -42,16 +42,17 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|API version for the call back URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
-|encryption|workforceIntegrationEncryption|The workforce integration encryption resource. |
+|eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| Support to view eligibility-filtered results. Possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
+|encryption|[workforceIntegrationEncryption](../resources/workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supportedEntities|string| Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
-|url|String| Workforce integration URL for callbacks from the shift service. |
+|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts call back to the provided URL when client changes occur to the entities specified in this property. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openShift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`, `timeOff`, `timeOffRequest`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason` , `timeOff` , `timeOffRequest`.|
+|url|String| Workforce integration URL for callbacks from the Shifts service.|
 
 ## Response
 
@@ -63,8 +64,6 @@ If successful, this method returns a `200 OK` response code and an updated [work
 
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_workforceintegration"
@@ -72,54 +71,21 @@ The following example shows a request.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforceIntegrationId}
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "displayName": "displayName-value",
-  "apiVersion": 99,
-  "encryption": {
-    "protocol": "protocol-value",
-    "secret": "secret-value"
-  },
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
   "isActive": true,
-  "url": "url-value",
-  "supportedEntities": "supportedEntities-value"
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": "My Secret"
+  },
+  "url": "https://ABCWorkforceIntegration.com/Contoso/",
+  "supportedEntities": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-workforceintegration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-workforceintegration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-workforceintegration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-workforceintegration-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-workforceintegration-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-workforceintegration-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -138,15 +104,17 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "apiVersion": 99,
-  "encryption": {
-    "protocol": "protocol-value",
-    "secret": "secret-value"
-  },
+  "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
   "isActive": true,
-  "url": "url-value",
-  "supportedEntities": "supportedEntities-value"
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": null
+  },
+  "url": "https://abcWorkforceIntegration.com/Contoso/",
+  "supportedEntities": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
 
@@ -164,11 +132,11 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
   "apiVersion": 1,
   "isActive": true,
   "encryption": {
-    - "protocol": "sharedSecret",
+    "protocol": "sharedSecret",
     "secret": "My Secret"
   },
   "url": "https://abcWorkforceIntegration.com/Contoso/",
-  "supports": "Shift,SwapRequest",
+  "supportedEntities": "Shift,SwapRequest",
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
@@ -188,7 +156,7 @@ Content-type: application/json
     "secret": null
   },
   "url": "https://abcWorkforceIntegration.com/Contoso/",
-  "supports": "Shift,SwapRequest",
+  "supportedEntities": "Shift,SwapRequest",
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
