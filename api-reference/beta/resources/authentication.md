@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Authentication method states
-ms.date: 07/19/2024
+ms.date: 12/06/2024
 ---
 
 # authentication resource type
@@ -43,6 +43,7 @@ Inherits from [entity](entity.md).
 |:---|:---|:---|
 |emailMethods|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|Represents the email addresses registered to a user for authentication. |
 |fido2Methods|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Represents the FIDO2 security keys registered to a user for authentication.|
+|hardwareOathMethods|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) collection|The hardware OATH time-based one-time password (TOTP) devices assigned to a user for authentication.|
 |methods|[authenticationMethod](../resources/authenticationmethod.md) collection| Represents all authentication methods registered to a user.|
 |microsoftAuthenticatorMethods|[microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) collection| The details of the Microsoft Authenticator app registered to a user for authentication. |
 |operations|[longRunningOperation](../resources/longrunningoperation.md) collection|Represents the status of a long-running operation, such as a password reset operation.|
