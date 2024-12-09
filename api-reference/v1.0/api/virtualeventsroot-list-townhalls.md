@@ -12,7 +12,7 @@ ms.date: 12/09/2024
 
 Namespace: microsoft.graph
 
-Get the list of all [virtualEventTownhall](./resources/virtualeventtownhall.md) objects created in a tenant.
+Get the list of all [virtualEventTownhall](../resources/virtualeventtownhall.md) objects created in a tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
