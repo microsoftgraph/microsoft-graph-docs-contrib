@@ -5,6 +5,7 @@ author: "suawat"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 11/15/2024
 ---
 
 # certificateBasedAuthPki resource type

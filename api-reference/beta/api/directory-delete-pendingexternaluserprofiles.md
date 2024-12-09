@@ -6,6 +6,7 @@ doc_type: apiPageType
 author: "jkdouglas"
 ms.reviewer: mapamu
 ms.subservice: "entra-directory-management"
+ms.date: 10/11/2024
 ---
 
 # Delete pendingExternalUserProfile
