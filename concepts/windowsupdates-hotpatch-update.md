@@ -5,6 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: conceptualPageType
+ms.date: 11/05/2024
 ---
 
 # Deploy a hotpatch quality update using Windows Autopatch
