@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: mail
 author: "AAmatino"
+ms.date: 03/21/2024
 ---
 
 # website resource type

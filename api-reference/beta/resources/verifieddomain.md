@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "tafra00"
+ms.date: 04/25/2024
 ---
 
 # verifiedDomain resource type
