@@ -82,6 +82,8 @@ items:
     href: ../../api/driveitem-checkin.md
   - name: Check out files
     href: ../../api/driveitem-checkout.md
+  - name: Discard checkout
+    href: ../../api/driveitem-discardcheckout.md
   - name: Extract sensitivity labels
     href: ../../api/driveitem-extractsensitivitylabels.md
   - name: Assign sensitivity label
@@ -164,16 +166,28 @@ items:
     href: ../../api/filestoragecontainer-list-customproperty.md
   - name: Add custom property
     href: ../../api/filestoragecontainer-post-customproperty.md
+  - name: List columns
+    href: ../../api/filestoragecontainer-list-columns.md
   - name: Update custom property
     href: ../../api/filestoragecontainer-update-customproperty.md
   - name: Delete custom property
     href: ../../api/filestoragecontainer-delete-customproperty.md
+  - name: Add column
+    href: ../../api/filestoragecontainer-post-columns.md
+  - name: Update column
+    href: ../../api/filestoragecontainer-update-column.md
+  - name: Delete file storage container column
+    href: ../../api/filestoragecontainer-delete-column.md
+  - name: Get column
+    href: ../../api/filestoragecontainer-get-column.md
+  - name: Update recycle bin settings
+    href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
-    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
+    href: ../../api/filestoragecontainer-restore-recyclebinitems.md
   - name: Delete recycle bin items
-    href: ../../api/filestoragecontainer-delete-recyclebin-items.md
+    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
   - name: Get recycle bin items
-    href: ../../api/filestoragecontainer-list-recyclebin-items.md
+    href: ../../api/filestoragecontainer-list-recyclebinitem.md
   - name: Lock
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
