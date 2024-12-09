@@ -6,6 +6,7 @@ author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
 toc.title: Outlook category (deprecated)
+ms.date: 08/08/2024
 ---
 
 # outlookCategory resource type
