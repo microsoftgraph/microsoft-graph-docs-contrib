@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
 ms.subservice: "entra-directory-management"
+ms.date: 10/11/2024
 ---
 
 # Delete externalUserProfile

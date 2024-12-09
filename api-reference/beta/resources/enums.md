@@ -5,6 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
+ms.date: 11/30/2024
 ---
 
 # Enum values
@@ -754,6 +755,13 @@ Namespace: microsoft.graph
 | --------------------- |
 | asymmetricKeyLifetime |
 | trustedCertificateAuthority |
+| unknownFutureValue |
+
+### customSecurityAttributeComparisonOperator values 
+
+| Member |
+| ---- |
+| equals |
 | unknownFutureValue |
 
 ### synchronizationSecret values
@@ -4927,10 +4935,33 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
+### cloudPCPerformanceReportName values
+
+| Member                 |
+| ---------------------- |
+| performanceTrendReport | 
+| unknownFutureValue     |
+
+### cloudPCInaccessibleReportName values
+
+| Member                         |
+| ------------------------------ |
+| inaccessibleCloudPcReports     |
+| inaccessibleCloudPcTrendReport |
+| unknownFutureValue             |
+
 ### nonAdminSetting values
 
 |Member|
 |:---|
 |false|
 |true|
+|unknownFutureValue|
+
+### restoreJobType values 
+
+|Member|
+|:---|
+|standard|
+|bulk|
 |unknownFutureValue|

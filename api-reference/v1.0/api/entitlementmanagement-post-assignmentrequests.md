@@ -932,3 +932,116 @@ Content-type: application/json
     "status": "Accepted"
 }
 ```
+
+### Example 9: Request a package on behalf of a direct employee
+
+The following example shows how a manager can request an access package assignment on behalf of their direct employee.
+
+> [!NOTE]
+> The requestor (manager) is extracted from the token, and the target object is determined by the `id` of the direct employee who is receiving access.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentrequest_request_behalf"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+Content-type: application/json
+
+{
+   "assignment": {
+       "accessPackageId": "5b98f958-0dea-4a5b-836e-109dccbd530c",
+       "schedule": {
+           "startDateTime": null,
+           "stopDateTime": null
+       },
+       "assignmentPolicyId": "c5f7847f-83a8-4315-a754-d94a6f39b875",
+       "target": {
+           "displayName": "Idris Ibrahim",
+           "email": "IdrisIbrahim@woodgrovebank.com",
+           "objectId": "21aceaba-fe13-4e3b-aa8c-4c588d5e7387",
+           "subjectType": "user"
+       }
+   },
+   "justification": "Access for direct employee",
+   "requestType": "UserAdd",
+   "answers": []
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackageassignmentrequest-request-behalf-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-accesspackageassignmentrequest-request-behalf-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentrequest-request-behalf-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentrequest-request-behalf-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentrequest-request-behalf-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-accesspackageassignmentrequest-request-behalf-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accesspackageassignmentrequest-request-behalf-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-accesspackageassignmentrequest-request-behalf-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "id": "445a3118-6bf2-4a19-94ad-5660295963fd",
+    "requestType": "userAdd",
+    "state": "submitted",
+    "status": "Accepted",
+    "createdDateTime": null,
+    "completedDateTime": null,
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": "notSpecified"
+        }
+    },
+    "answers": [],
+    "customExtensionCalloutInstances": []
+}
+```

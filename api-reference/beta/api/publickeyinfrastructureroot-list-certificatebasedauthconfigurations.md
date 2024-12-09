@@ -5,6 +5,7 @@ author: "suawat"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/26/2024
 ---
 
 # List certificateBasedAuthPki objects
@@ -99,7 +100,6 @@ GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certifica
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

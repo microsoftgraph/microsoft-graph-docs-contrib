@@ -5,6 +5,7 @@ author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 10/03/2024
 ---
 
 # nicEvidence resource type

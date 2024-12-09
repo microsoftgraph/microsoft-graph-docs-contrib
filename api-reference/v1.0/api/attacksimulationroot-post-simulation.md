@@ -5,7 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 12/01/2024
 ---
 
 # Create simulation
@@ -112,7 +112,7 @@ Content-type: application/json
     "settingType": "noTraining",
     "positiveReinforcement": {
       "deliveryPreference": "deliverAfterCampaignEnd",
-      "endUserNotification": "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",
+      "endUserNotification@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",
       "defaultLanguage": "en"
     },
     "simulationNotification": {

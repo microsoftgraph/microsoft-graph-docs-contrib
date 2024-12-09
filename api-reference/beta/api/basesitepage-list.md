@@ -5,6 +5,7 @@ title: "List baseSitePages"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/12/2024
 ---
 
 # List baseSitePages

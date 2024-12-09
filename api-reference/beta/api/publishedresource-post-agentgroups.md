@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 05/14/2024
 ---
 
 # Assign publishedResource to onPremisesAgentGroup

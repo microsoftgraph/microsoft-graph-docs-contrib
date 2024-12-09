@@ -5,6 +5,7 @@ author: "ecmadao"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 06/03/2024
 ---
 
 # List auditEvents
