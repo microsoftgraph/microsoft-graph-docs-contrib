@@ -5,6 +5,7 @@ author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: apiPageType
+ms.date: 12/03/2024
 ---
 
 # Update copilotAdminLimitedMode

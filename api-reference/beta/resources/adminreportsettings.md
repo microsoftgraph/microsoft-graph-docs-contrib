@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "reports"
 author: "qiwhuang"
+ms.date: 08/06/2024
 ---
 
 # adminReportSettings resource type

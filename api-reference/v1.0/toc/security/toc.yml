@@ -352,20 +352,20 @@ items:
     items:
     - name: eDiscovery review set
       href: ../../resources/security-ediscoveryreviewset.md
-    - name: List ediscoveryReviewSets
+    - name: List
       href: ../../api/security-ediscoverycase-list-reviewsets.md
-    - name: Create ediscoveryReviewSet
+    - name: Create
       href: ../../api/security-ediscoverycase-post-reviewsets.md
-    - name: Get ediscoveryReviewSet
+    - name: Get
       href: ../../api/security-ediscoveryreviewset-get.md
-    - name: addToReviewSet
+    - name: Export
+      href: ../../api/security-ediscoveryreviewset-export.md
+    - name: Add to review set
       href: ../../api/security-ediscoveryreviewset-addtoreviewset.md
     - name: List queries
       href: ../../api/security-ediscoveryreviewset-list-queries.md
-    - name: Create ediscoveryReviewSetQuery
+    - name: Create review set query
       href: ../../api/security-ediscoveryreviewset-post-queries.md
-    - name: export
-      href: ../../api/security-ediscoveryreviewset-export.md
   - name: eDiscovery review tag
     items:
     - name: eDiscovery review tag

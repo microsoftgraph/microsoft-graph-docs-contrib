@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.subservice: "outlook"
 doc_type: "apiPageType"
+ms.date: 07/22/2024
 ---
 
 # List places
