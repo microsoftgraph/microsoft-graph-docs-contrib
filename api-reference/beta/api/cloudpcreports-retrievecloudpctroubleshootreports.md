@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: retrieveCloudPcTroubleshootReports"
-description: "Get the troubleshoot related reports for CloudPCs. This report is used get the details for Cloud PCs which includessageInsight, currentSize, currentCPU, currentRamInGB, CurrentDiskInGB, RecommendedSize, RecommendedCPU, RecommendedRamInGB, RecommendedDiskInGB, ProvisionPolicyId, ProvisionPolicyName,RoundTripTimeInMsAvg, AvailableBandwidthInMbpsAvg. It can also be the daily overview issue insight of Cloud PCs including usageInsight, issueType, issueCount, issueTrend.It can also get daily  reigional details report for Cloud PCs including hostRegion, gatewayRegion, avgRoundTripTimeInMs, avgBandwidthInMbps, connectionErrorCount, RTTIssueCount, connectionQualityIssueCount, stabilityIssueCount."
+description: "Get the troubleshoot related reports for CloudPCs. This report is used get the details for Cloud PCs which includessageInsight, currentSize, currentCPU, currentRamInGB, CurrentDiskInGB, RecommendedSize, RecommendedCPU, RecommendedRamInGB, RecommendedDiskInGB, ProvisionPolicyId, ProvisionPolicyName,RoundTripTimeInMsAvg, AvailableBandwidthInMbpsAvg. It can also be the daily overview issue insight of Cloud PCs including usageInsight, issueType, issueCount, issueTrend. It can also get daily  reigional details report for Cloud PCs including hostRegion, gatewayRegion, avgRoundTripTimeInMs, avgBandwidthInMbps, connectionErrorCount, RTTIssueCount, connectionQualityIssueCount, stabilityIssueCount."
 author: "abbyzhccc"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the troubleshoot related reports for CloudPCs. This report is used get the details for Cloud PCs which includessageInsight, currentSize, currentCPU, currentRamInGB, CurrentDiskInGB, RecommendedSize, RecommendedCPU, RecommendedRamInGB, RecommendedDiskInGB, ProvisionPolicyId, ProvisionPolicyName,RoundTripTimeInMsAvg, AvailableBandwidthInMbpsAvg. It can also be the daily overview issue insight of Cloud PCs including usageInsight, issueType, issueCount, issueTrend.It can also get daily  reigional details report for Cloud PCs including hostRegion, gatewayRegion, avgRoundTripTimeInMs, avgBandwidthInMbps, connectionErrorCount, RTTIssueCount, connectionQualityIssueCount, stabilityIssueCount.
+Get the troubleshoot related reports for CloudPCs. This report is used get the details for Cloud PCs which includessageInsight, currentSize, currentCPU, currentRamInGB, CurrentDiskInGB, RecommendedSize, RecommendedCPU, RecommendedRamInGB, RecommendedDiskInGB, ProvisionPolicyId, ProvisionPolicyName,RoundTripTimeInMsAvg, AvailableBandwidthInMbpsAvg. It can also be the daily overview issue insight of Cloud PCs including usageInsight, issueType, issueCount, issueTrend. It can also get daily  reigional details report for Cloud PCs including hostRegion, gatewayRegion, avgRoundTripTimeInMs, avgBandwidthInMbps, connectionErrorCount, RTTIssueCount, connectionQualityIssueCount, stabilityIssueCount.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
