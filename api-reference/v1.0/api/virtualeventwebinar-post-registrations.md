@@ -67,8 +67,8 @@ You can specify the following properties when you create a **virtualEventRegistr
 
 ## Response
 
-If successful, this action returns one of the following:
-* A `201 Created` response code and [virtualEventRegistration](../resources/virtualeventregistration.md) object for delegated permissions.
+If successful, this method returns one of the following results:
+* A `201 Created` response code and a [virtualEventRegistration](../resources/virtualeventregistration.md) object for delegated permissions.
 * A `204 No Content` response code for application permissions.
 
 ## Examples
