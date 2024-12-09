@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ppolkadots"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 06/06/2024
 ---
 
 # invitation resource type
