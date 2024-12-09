@@ -1,6 +1,6 @@
 ---
-title: "Update chartseries"
-description: "Update the properties of chartseries object."
+title: "Update workbookChartSeries"
+description: "Update the properties of workbookChartSeries object."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# Update chartseries
+# Update chartSeries
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of chartseries object.
+Update the properties of [workbookChartSeries](../resources/workbookchartseries.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
