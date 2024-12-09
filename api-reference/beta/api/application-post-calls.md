@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 <!-- markdownlint-disable MD001 MD022 MD024 -->

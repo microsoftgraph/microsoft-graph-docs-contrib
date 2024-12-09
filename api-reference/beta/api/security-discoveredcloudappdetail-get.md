@@ -5,6 +5,7 @@ author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 11/15/2024
 ---
 
 # Get discoveredCloudAppDetail
