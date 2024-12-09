@@ -3,15 +3,7 @@
     {
         "ChangeList": [
           {
-            "Id": "81f16048-f36e-4ed6-b44a-6dfb80eb3fc3",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "cloudPCTroubleshootReportType",
-            "ChangeType": "Addition",
-            "Description": "Added the **cloudPCTroubleshootReportType** enumeration type.",
-            "Target": "cloudPCTroubleshootReportType"
-          },
-          {
-            "Id": "81f16048-f36e-4ed6-b44a-6dfb80eb3fc3",
+            "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
             "ApiChange": "Member",
             "ChangedApiName": "troubleshootDetailsReport",
             "ChangeType": "Addition",
@@ -19,7 +11,7 @@
             "Target": "cloudPcReportName"
           },
           {
-            "Id": "81f16048-f36e-4ed6-b44a-6dfb80eb3fc3",
+            "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
             "ApiChange": "Member",
             "ChangedApiName": "troubleshootTrendCountReport",
             "ChangeType": "Addition",
@@ -27,7 +19,7 @@
             "Target": "cloudPcReportName"
           },
           {
-            "Id": "81f16048-f36e-4ed6-b44a-6dfb80eb3fc3",
+            "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
             "ApiChange": "Member",
             "ChangedApiName": "troubleshootRegionalReport",
             "ChangeType": "Addition",
@@ -35,26 +27,34 @@
             "Target": "cloudPcReportName"
           },
           {
-            "Id": "81f16048-f36e-4ed6-b44a-6dfb80eb3fc3",
+            "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
             "ApiChange": "Member",
-            "ChangedApiName": "troubleshootIssueCountRepor",
+            "ChangedApiName": "troubleshootIssueCountReport",
             "ChangeType": "Addition",
             "Description": "Added the `troubleshootIssueCountReport` member to the **cloudPcReportName** enumeration.",
             "Target": "cloudPcReportName"
           },
           {
-            "Id": "81f16048-f36e-4ed6-b44a-6dfb80eb3fc3",
+            "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "cloudPCTroubleshootReportType",
+            "ChangeType": "Addition",
+            "Description": "Added the **cloudPCTroubleshootReportType** enumeration type.",
+            "Target": "cloudPCTroubleshootReportType"
+          },
+          {
+            "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
             "ApiChange": "Method",
             "ChangedApiName": "retrieveCloudPcTroubleshootReports",
             "ChangeType": "Addition",
-            "Description": "Added the retrieveCloudPcTroubleshootReports` method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+            "Description": "Added the [retrieveCloudPcTroubleshootReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-retrieveCloudPcTroubleshootReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
             "Target": "cloudPcReports"
           }
         ],
-        "Id": "81f16048-f36e-4ed6-b44a-6dfb80eb3fc3",
+        "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
         "Cloud": "Prod",
         "Version": "beta",
-        "CreatedDateTime": "2024-09-11T17:11:33.7283612Z",
+        "CreatedDateTime": "2024-12-09T17:11:33.7283612Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
     },
