@@ -139,6 +139,7 @@ Content-type: application/json
             "id": "037a01c6-2605-4eda-b746-9e41ecca1623",
             "operatingSystem": "Linux"
         }
+    ]
 }
 ```
 

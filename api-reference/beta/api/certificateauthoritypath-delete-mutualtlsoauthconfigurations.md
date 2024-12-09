@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
+DELETE https://graph.microsoft.com/beta/certificateAuthorities/mutualTlsOauthConfigurations/2d62b12a-0163-457d-9796-9602e9807e1
 ```
 
 

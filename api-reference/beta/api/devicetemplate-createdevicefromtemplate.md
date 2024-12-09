@@ -76,7 +76,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/templates/deviceTemplates/{deviceTemplateId}/createDeviceFromTemplate
+POST https://graph.microsoft.com/beta/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1/createDeviceFromTemplate
 Content-Type: application/json
 
 {

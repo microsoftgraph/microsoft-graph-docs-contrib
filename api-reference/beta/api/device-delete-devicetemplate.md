@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/devices/{devicesId}/deviceTemplate/{id}/
+DELETE https://graph.microsoft.com/v1.0/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1
 ```
 
 
