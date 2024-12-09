@@ -38,9 +38,9 @@ The `devicetemplate` is immutable.
 |:---|:---|:---|
 |id|String| Inherited from [directoryObject](../resources/directoryobject.md).|
 |deletedDateTime|DateTimeOffset|Inherited from [directoryObject](../resources/directoryobject.md).|
-|mutualTlsOauthConfigurationId|String|Object Id of CertificateBasedDeviceAuthConfiguration - _Not set for SelfSigned_|
-|mutualTlsOauthConfigurationTenantId|String|Id of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's AAD Tenant ID) - _Not set for SelfSigned_|
-|deviceAuthority | String | deviceAuthority is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's AAD tenant. For example, Acme (manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (deviceAuthority). |
+|mutualTlsOauthConfigurationId|String|Object ID of CertificateBasedDeviceAuthConfiguration - _Not set for SelfSigned_|
+|mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's EntraID Tenant ID) - _Not set for SelfSigned_|
+|deviceAuthority | String | deviceAuthority is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's EntraID tenant. For example, Acme (manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (deviceAuthority). |
 |manufacturer|String|Manufacturer name|
 |model|String|Model name |
 |operatingSystem|String|OS type |

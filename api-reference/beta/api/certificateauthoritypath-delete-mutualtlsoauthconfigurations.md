@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{mutualTlsOauthConfigurationId}` in the request is the value of the **id** property of the mutualTlsOauthConfiguration object.
+The `{mutualTlsOauthConfigurationId}` in the request is the value of the **ID** property of the mutualTlsOauthConfiguration object.
 
 <!-- {
   "blockType": "ignored"

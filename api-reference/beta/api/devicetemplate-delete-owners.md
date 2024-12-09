@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{deviceTemplateId}` in the request is the value of the **id** property of the device template while {id} represents the **oid** of the owner service principal.
+The `{deviceTemplateId}` in the request is the value of the **ID** property of the device template while {id} represents the **OID** of the owner service principal.
 <!-- { "blockType": "ignored" } -->
 ```http
 Delete /directory/templates/deviceTemplates/{deviceTemplateId}/owners/{id}/$ref

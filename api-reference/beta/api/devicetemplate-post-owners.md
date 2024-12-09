@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device template.
+The `{id}` in the request is the value of the **ID** property of the device template.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/templates/deviceTemplates/{id}/owners/$ref
@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of the parameters.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.id|String|A string associated with the oid of the target user/service principal in the form of: `https://graph.microsoft.com/beta/users/{id}` or `https://graph.microsoft.com/beta/serviceprincipals/{id}`|
+|@odata.id|String|A string associated with the OID of the target user/service principal in the form of: `https://graph.microsoft.com/beta/users/{id}` or `https://graph.microsoft.com/beta/serviceprincipals/{id}`|
 
 ## Response
 

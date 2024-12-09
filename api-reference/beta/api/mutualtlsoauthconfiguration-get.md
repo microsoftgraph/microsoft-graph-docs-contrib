@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{mutualTlsOauthConfigurationId}` in the request is the value of the **id** property of the device template.
+The `{mutualTlsOauthConfigurationId}` in the request is the value of the **ID** property of the device template.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}

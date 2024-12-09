@@ -55,8 +55,8 @@ You can specify the following properties when creating a **deviceTemplate**.
 |Property|Type|Description|
 |:---|:---|:---|
 |`mutualTlsOauthConfigurationId|String|Object ID of CertificateBasedDeviceAuthConfiguration - _Not set if using self signed certificates instead of trust root certificates._ Optional. |
-|mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's EntraId Tenant ID) - _Not set if using self signed certificates instead of trust root certificates._ Optional. |
-|deviceAuthority | String | deviceAuthority is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's EntraId tenant. For example, Acme (manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (deviceAuthority). Required.|
+|mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's EntraID Tenant ID) - _Not set if using self signed certificates instead of trust root certificates._ Optional. |
+|deviceAuthority | String | deviceAuthority is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's EntraID tenant. For example, Acme (manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (deviceAuthority). Required.|
 |manufacturer|String|Manufacturer name. Required.|
 |model|String|Model name. Required.|
 |operatingSystem|String|OS type. Optional.|

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device template.
+The `{id}` in the request is the value of the **ID** property of the device template.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directory/templates/deviceTemplates/{id}
