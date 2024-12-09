@@ -1,6 +1,6 @@
 ---
 title: "Create openShift"
-description: "Create an instance of openshift object."
+description: "Create an instance of openShift object."
 ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an instance of an [openshift](../resources/openshift.md) object.
+Create an instance of an [openShift](../resources/openshift.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -57,7 +57,8 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "openshift_post"
+  "name": "openshift_post",
+  "sampleKeys": ["788b75d2-a911-48c0-a5e2-dc98480457e3"]
 }-->
 
 ```http

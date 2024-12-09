@@ -5,6 +5,7 @@ author: "skashyap7"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 10/27/2024
 ---
 
 # entra resource type

@@ -4957,3 +4957,11 @@ Possible values for user account types (group membership), per Windows definitio
 |false|
 |true|
 |unknownFutureValue|
+
+### restoreJobType values 
+
+|Member|
+|:---|
+|standard|
+|bulk|
+|unknownFutureValue|
