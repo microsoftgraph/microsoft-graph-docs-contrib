@@ -18,10 +18,8 @@ Exposes the hardware OATH method in the directory.
 
 Inherits from [entity](../resources/entity.md).
 
-
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
+None.
 
 ## Properties
 |Property|Type|Description|
