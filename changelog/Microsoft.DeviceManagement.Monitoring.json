@@ -2,40 +2,40 @@
   "changelog": [
     {
         "ChangeList": [
-            {
-              "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
-              "ApiChange": "Member",
-              "ChangedApiName": "cloudPcFrontlineConcurrencyScenario",
-              "ChangeType": "Addition",
-              "Description": "Added the `cloudPcFrontlineConcurrencyScenario` member to the **alertRuleTemplate** enumeration.",
-              "Target": "alertRuleTemplate"
-            },
-            {
-              "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
-              "ApiChange": "Member",
-              "ChangedApiName": "durationInMinutes",
-              "ChangeType": "Addition",
-              "Description": "Added the `durationInMinutes` member to **aggregationType** enumeration",
-              "Target": "aggregationType"
-            },
-            {
-                "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
-                "ApiChange": "Member",
-                "ChangedApiName": "frontlineBufferUsageDuration",
-                "ChangeType": "Addition",
-                "Description": "Added the `frontlineBufferUsageDuration` member to the **ruleCondition** enumeration.",
-                "Target": "ruleCondition"
-            },
-            {
-                "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
-                "ApiChange": "Member",
-                "ChangedApiName": "frontlineBufferUsageThreshold",
-                "ChangeType": "Addition",
-                "Description": "Added the `frontlineBufferUsageThreshold` member to the **ruleCondition** enumeration.",
-                "Target": "ruleCondition"
-            }
-        ],
-        "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
+          {
+            "Id": "2785679c-6f41-4aae-87cf-41ac2a5ca5ea",
+            "ApiChange": "Member",
+            "ChangedApiName": "durationInMinutes",
+            "ChangeType": "Addition",
+            "Description": "Added the `durationInMinutes` member to the **aggregationType** enumeration.",
+            "Target": "aggregationType"
+          },
+          {
+            "Id": "2785679c-6f41-4aae-87cf-41ac2a5ca5ea",
+            "ApiChange": "Member",
+            "ChangedApiName": "cloudPcFrontlineConcurrencyScenario",
+            "ChangeType": "Addition",
+            "Description": "Added the `cloudPcFrontlineConcurrencyScenario` member to the **alertRuleTemplate** enumeration.",
+            "Target": "alertRuleTemplate"
+          },
+          {
+            "Id": "2785679c-6f41-4aae-87cf-41ac2a5ca5ea",
+            "ApiChange": "Member",
+            "ChangedApiName": "frontlineBufferUsageDuration",
+            "ChangeType": "Addition",
+            "Description": "Added the `frontlineBufferUsageDuration` member to the **conditionCategory** enumeration.",
+            "Target": "conditionCategory"
+          },
+          {
+            "Id": "2785679c-6f41-4aae-87cf-41ac2a5ca5ea",
+            "ApiChange": "Member",
+            "ChangedApiName": "frontlineBufferUsageThreshold",
+            "ChangeType": "Addition",
+            "Description": "Added the `frontlineBufferUsageThreshold` member to the **conditionCategory** enumeration.",
+            "Target": "conditionCategory"
+          }
+      ],
+        "Id": "2785679c-6f41-4aae-87cf-41ac2a5ca5ea",
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2024-11-12T10:40:03.4590295Z",
