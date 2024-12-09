@@ -171,9 +171,9 @@ items:
   - name: Restore recycle bin items
     href: ../../api/filestoragecontainer-restore-recyclebinitem.md
   - name: Delete recycle bin items
-    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
+    href: ../../api/filestoragecontainer-delete-recyclebin-items.md
   - name: Get recycle bin items
-    href: ../../api/filestoragecontainer-list-recyclebinitem.md
+    href: ../../api/filestoragecontainer-list-recyclebin-items.md
   - name: Lock
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
@@ -189,4 +189,4 @@ items:
   - name: Recycle bin item
     href: ../../resources/recyclebinitem.md
   - name: List
-    href: ../../api/recyclebin-list-item.md
+    href: ../../api/recyclebin-list-items.md
