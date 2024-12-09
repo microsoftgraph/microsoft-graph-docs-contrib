@@ -415,7 +415,6 @@ Content-Type: application/json
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_customauthenticationextension_onOtpSendCustomExtension"
@@ -426,22 +425,40 @@ POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.onOtpSendCustomExtension",
-    "displayName": "onOtpSend",
-    "description": "example description",
-    "authenticationConfiguration": {
-        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://contoso.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
-    },
-    "endpointConfiguration": {
-        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-        "targetUrl": "https://contoso.com"
-    },
-    "clientConfiguration": {
-        "timeoutInMilliseconds": 2000,
-        "maximumRetries": 1
-    }
+  "@odata.type": "#microsoft.graph.onOtpSendCustomExtension",
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+    "resourceId": "api://onotpsendcustomextension.b2c.expert/fb96de85-2abe-4b02-b45f-64ba122c509e"
+  },
+  "clientConfiguration": {
+    "timeoutInMilliseconds": 2000,
+    "maximumRetries": 1
+  },
+  "description": "Use an external Email provider to send OTP Codes.",
+  "displayName": "onEmailOtpSendCustomExtension",
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.httpRequestEndpoint"
+    "targetUrl": "https://onotpsendcustomextension.b2c.expert/api/OnOTPCodeSendToTeamsDemo"
+  },
+  "behaviorOnError": {
+    "@odata.type": "microsoft.graph.customExtensionBehaviorOnError"
+  }
 }
+```
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customAuthenticationExtension"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.onOtpSendCustomExtension",
   "authenticationConfiguration": {
