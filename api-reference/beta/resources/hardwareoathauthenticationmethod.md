@@ -5,7 +5,7 @@ author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 12/06/2024
+ms.date: 12/09/2024
 toc.title: Hardware OATH method
 ---
 
@@ -26,8 +26,6 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |[List](../api/authentication-list-hardwareoathmethods.md)|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) collection|Get a list of the [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) objects and their properties.|
 |[Create](../api/authentication-post-hardwareoathmethods.md)|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md)|Create a new [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.|
 |[Get](../api/hardwareoathauthenticationmethod-get.md)|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md)|Read the properties and relationships of a [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.|
-|[List hardwareOathMethods](../api/authentication-list-hardwareoathmethods.md)|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) collection|List all hardware tokens assigned to a user|
-|[Create hardwareOathAuthenticationMethod](../api/authentication-post-hardwareoathmethods.md)|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md)|Assign a hardware token to a user without activation.|
 |[Delete](../api/authentication-delete-hardwareoathmethods.md)|None|Delete a [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.|
 |[Activate](../api/hardwareoathauthenticationmethod-activate.md)|None|Activate a hardware OATH token that is already assigned to a user.|
 |[Deactivate](../api/hardwareoathauthenticationmethod-deactivate.md)|None|Deactive a hardware OATH token. It remains assigned to the user.|

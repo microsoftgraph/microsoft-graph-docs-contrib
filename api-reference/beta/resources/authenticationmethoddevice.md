@@ -5,7 +5,7 @@ author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 12/06/2024
+ms.date: 12/09/2024
 ---
 
 # authenticationMethodDevice resource type

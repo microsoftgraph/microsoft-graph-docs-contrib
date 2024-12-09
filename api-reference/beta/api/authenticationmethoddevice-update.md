@@ -71,7 +71,7 @@ If successful, this method returns a `201 Created` response code and a [hardware
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_hardwareoathtokenauthenticationmethoddevice_from_"
+  "name": "create_bulk_hardwareoathtokenauthenticationmethoddevice_from_"
 }
 -->
 ``` http
