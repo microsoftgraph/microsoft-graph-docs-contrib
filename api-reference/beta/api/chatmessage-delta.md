@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: "bkeerthivasa"
 ms.subservice: "teams"
+ms.date: 10/08/2024
 ---
 
 # chatMessage: delta
