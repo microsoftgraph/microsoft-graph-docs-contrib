@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: retrieveCloudPcTroubleshootReports"
-description: "Get the bulk remote action status reports, including data such as the bulk action ID, bulk action display name, initiating user's principal name, action type, and action state."
+description: "Get the troubleshoot related reports for CloudPCs. This report is used get the details for Cloud PCs which includessageInsight, currentSize, currentCPU, currentRamInGB, CurrentDiskInGB, RecommendedSize, RecommendedCPU, RecommendedRamInGB, RecommendedDiskInGB, ProvisionPolicyId, ProvisionPolicyName,RoundTripTimeInMsAvg, AvailableBandwidthInMbpsAvg. It can also be the daily overview issue insight of Cloud PCs including usageInsight, issueType, issueCount, issueTrend.It can also get daily  reigional details report for Cloud PCs including hostRegion, gatewayRegion, avgRoundTripTimeInMs, avgBandwidthInMbps, connectionErrorCount, RTTIssueCount, connectionQualityIssueCount, stabilityIssueCount."
 author: "abbyzhccc"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
