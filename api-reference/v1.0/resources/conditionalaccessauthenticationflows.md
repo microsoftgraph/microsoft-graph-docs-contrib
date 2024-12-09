@@ -5,6 +5,7 @@ author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 11/08/2024
 ---
 
 # conditionalAccessAuthenticationFlows resource type

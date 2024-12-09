@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 07/24/2024
 ---
 
 # agreementFileData resource type
