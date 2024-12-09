@@ -6,6 +6,7 @@ author: "keylimesoda"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Deleted item
+ms.date: 10/25/2024
 ---
 
 # directory resource type

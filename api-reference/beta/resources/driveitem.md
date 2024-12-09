@@ -5,6 +5,7 @@ title: driveItem
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 06/29/2024
 ---
 
 # driveItem resource type

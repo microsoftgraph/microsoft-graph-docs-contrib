@@ -5,6 +5,7 @@ title: "baseItemVersion resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 04/22/2024
 ---
 
 # baseItemVersion resource type

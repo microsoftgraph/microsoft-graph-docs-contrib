@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: conceptualPageType
 author: "ailae"
+ms.date: 03/12/2024
 ---
 
 # Use the activity feed REST API
