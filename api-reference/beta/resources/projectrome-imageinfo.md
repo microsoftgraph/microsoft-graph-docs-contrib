@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: project-rome
 doc_type: resourcePageType
 author: ailae
+ms.date: 03/21/2024
 ---
 
 # imageInfo resource type

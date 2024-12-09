@@ -5,14 +5,16 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update multiTenantOrganizationJoinRequestRecord
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Join a multi-tenant organization, after the owner of the multi-tenant organization has added your tenant to the multi-tenant organization as pending.
+Join a multi-tenant organization, after the owner of the multi-tenant organization adds your tenant to the multi-tenant organization as pending.
 
 Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
 
@@ -61,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 
 A join request might be unsuccessful. The following are some scenarios:
 
-* The joining tenant has not been added to the multi-tenant organization by its owner.
+* The joining tenant isn't added to the multi-tenant organization by its owner.
 * The owner or joiner tenant exceeds the maximum number of internal users per tenant.
 * The multi-tenant organization would exceed the maximum number of tenants.
 * The joining tenant is already part of a different multi-tenant organization.
