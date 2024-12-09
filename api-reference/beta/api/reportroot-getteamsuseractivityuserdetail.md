@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getteamsuseractivityuserdetail" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getteamsuseractivityuserdetail-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ In the request URL, provide one of the following parameters with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. The numbers in the supported values represent the number of days over which the report is aggregated. |
 | date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
 
 > **Note:** You need to set either period or date in the URL.
@@ -67,7 +67,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -112,13 +112,13 @@ The CSV file has the following headers for columns.
 
 If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
-The default page size for this request is 2000 items.
+The default page size for this request is 2,000 items.
 
 ## Examples
 
 ### Example 1: CSV output
 
-The following is an example that outputs CSV.
+The following example shows a request that outputs CSV.
 
 #### Request
 
@@ -147,7 +147,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+Follow the 302 redirection and the CSV file that downloads has the following schema.
 
 <!-- {
   "blockType": "response",
@@ -164,7 +164,7 @@ Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User
 
 ### Example 2: JSON output
 
-The following is an example that returns JSON.
+The following example shows a request that returns JSON.
 
 #### Request
 
