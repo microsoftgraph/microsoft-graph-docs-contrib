@@ -61,7 +61,7 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 |:---|:---|:---|
 |displayName|String|Friendly name|
 |tlsClientAuthParameter|[tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
-|certificateAuthority|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. |
+|certificateAuthority|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property representing a list of trusted certificate authorities. |
 
 ## Response
 

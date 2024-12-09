@@ -24,7 +24,7 @@ None
 
 |Property|Type|Description|
 |:---|:---|:---|
-|`certificateAuthorities`|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities.|
+|`certificateAuthorities`|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property representing a list of trusted certificate authorities.|
 |deletedDateTime|DateTimeOffset|Inherited from [directoryObject](../resources/directoryobject.md).|
 |id|String|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md).|
 
