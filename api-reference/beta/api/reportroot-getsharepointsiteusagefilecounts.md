@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getSharePointSiteUsageFileCounts"
-description: "Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period."
+description: "Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it was saved, synced, modified, or shared within the specified time period."
 ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
+Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it was saved, synced, modified, or shared within the specified time period.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getsharepointsiteusagefilecounts" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getsharepointsiteusagefilecounts-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -77,7 +77,7 @@ If successful, this method returns a `200 OK` response code and a JSON object in
 
 ### CSV
 
-The following is an example that outputs CSV.
+The following example shows a request that outputs CSV.
 
 #### Request
 
@@ -106,7 +106,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+Follow the 302 redirection and the CSV file that downloads has the following schema.
 
 <!-- {
   "blockType": "response",
@@ -123,7 +123,7 @@ Report Refresh Date,Site Type,Total,Active,Report Date,Report Period
 
 ### JSON
 
-The following is an example that returns JSON.
+The following example shows a request that returns JSON.
 
 #### Request
 

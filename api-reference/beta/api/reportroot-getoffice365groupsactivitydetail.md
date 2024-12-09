@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getOffice365GroupsActivityDetail"
-description: "Get details about Microsoft 365 groups activity by group."
+description: "Get details about Microsoft 365 Groups activity by group."
 ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get details about Microsoft 365 groups activity by group.
+Get details about Microsoft 365 Groups activity by group.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getoffice365groupsactivitydetail" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getoffice365groupsactivitydetail-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
