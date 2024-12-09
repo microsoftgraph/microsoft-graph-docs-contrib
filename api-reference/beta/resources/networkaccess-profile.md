@@ -1,6 +1,6 @@
 ---
 title: profile resource type
-description: "A profile serves as a container for forwarding policies."
+description: "Represents a container for forwarding policies."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A profile serves as a container for forwarding policies. It is an abstract type from which the [microsoft.graph.networkaccess.forwardingProfile](networkaccess-forwardingprofile.md) resource type is derived.
+Represents a container for forwarding policies. It's an abstract type from which the [microsoft.graph.networkaccess.forwardingProfile](networkaccess-forwardingprofile.md) resource type is derived.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -26,16 +26,16 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description.|
-|id|String|Identifier for the profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Profile last modified time.|
-|name|String|Profile name.|
-|state|microsoft.graph.networkaccess.status|Profile state. The possible values are: `enabled`, and `disabled`.|
+|id|String|The identifier for the profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the profile was last modified.|
+|name|String|The name of the profile.|
+|state|microsoft.graph.networkaccess.status|the status of the profile. Possible values are: `enabled` and `disabled`.|
 |version|String|Profile version.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|Traffic forwarding policies associated with this profile.|
+|policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|The traffic forwarding policies associated with this profile.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
