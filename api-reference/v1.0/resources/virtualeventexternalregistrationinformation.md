@@ -5,6 +5,7 @@ author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 12/09/2024
 ---
 
 # virtualEventExternalRegistrationInformation resource type
