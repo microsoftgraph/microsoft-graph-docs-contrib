@@ -71,11 +71,6 @@ If successful, this method returns a `200 OK` response code and a stream object 
 The following example shows a request.
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "cloudpcreports.retrieveBulkActionStatusReport"
-}
--->
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcTroubleshootReports
 Content-Type: application/octet-stream
@@ -91,27 +86,27 @@ Content-Type: application/octet-stream
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsretrievebulkactionstatusreport-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsretrieveCloudPcTroubleshootReports-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsretrievebulkactionstatusreport-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsretrieveCloudPcTroubleshootReports-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsretrievebulkactionstatusreport-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsretrieveCloudPcTroubleshootReports-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsretrievebulkactionstatusreport-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsretrieveCloudPcTroubleshootReports-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsretrievebulkactionstatusreport-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsretrieveCloudPcTroubleshootReports-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsretrievebulkactionstatusreport-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsretrieveCloudPcTroubleshootReports-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
