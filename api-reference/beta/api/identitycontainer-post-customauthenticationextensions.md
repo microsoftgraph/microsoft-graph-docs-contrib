@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ms.date: 12/09/2024
-ms.date: 10/16/2024
 ---
 
 # Create customAuthenticationExtension

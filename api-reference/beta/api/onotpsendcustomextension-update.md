@@ -5,6 +5,7 @@ author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 12/09/2024
 ---
 
 # Update onOtpSendCustomExtension
@@ -49,8 +50,6 @@ PATCH /onOtpSendCustomExtensionHandler/customExtension
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-You must specify the @odata.type property when updating a customAuthenticationExtension object. For example, to update an onOtpSendCustomExtension object type, set the @odata.type property to #microsoft.graph.onOtpSendCustomExtension.
-
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
@@ -58,8 +57,7 @@ You must specify the @odata.type property when updating a customAuthenticationEx
 |description|String|The description for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |displayName|String|The display name for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The configuration for the API endpoint that the custom extension calls. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-
-
+|behaviorOnError|[customExtensionBehaviorOnError](../resources/customextensionbehavioronerror.md)|Let to configure behavior if the call to custom authentication extension returns error. Inherited from [customAuthenticationExtension](../resources/customauthenticationextension.md). Optional.|
 
 ## Response
 
@@ -91,6 +89,9 @@ Content-Type: application/json
   "displayName": "String",
   "endpointConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+  },
+  "behaviorOnError": {
+    "@odata.type": "microsoft.graph.customExtensionBehaviorOnError"
   }
 }
 ```
@@ -102,7 +103,6 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.onOtpSendCustomExtension",
   "truncated": true
 }
 -->
@@ -123,6 +123,9 @@ Content-Type: application/json
   "displayName": "String",
   "endpointConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+  },
+  "behaviorOnError": {
+    "@odata.type": "microsoft.graph.customExtensionBehaviorOnError"
   }
 }
 ```

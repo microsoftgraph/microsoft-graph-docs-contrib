@@ -5,6 +5,7 @@ author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 12/09/2024
 ---
 
 # Get onOtpSendCustomExtension
@@ -33,7 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.OnEmailOtpSendListener/handler/microsoft.graph.OnOtpSendCustomExtensionHandler/customExtension
+GET /onOtpSendCustomExtension
+GET /onOtpSendCustomExtensionHandler/customExtension
 ```
 
 ## Optional query parameters
@@ -65,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.OnEmailOtpSendListener/handler/microsoft.graph.OnOtpSendCustomExtensionHandler/customExtension
+GET https://graph.microsoft.com/beta/onOtpSendCustomExtension
 ```
 
 
@@ -97,8 +99,10 @@ Content-Type: application/json
     "displayName": "String",
     "endpointConfiguration": {
       "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+    },
+    "behaviorOnError": {
+      "@odata.type": "microsoft.graph.customExtensionBehaviorOnError"
     }
   }
 }
 ```
-
