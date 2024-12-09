@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-POST /cloudPCs/{cloudPCId}/setReviewStatus
+POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/setReviewStatus
 ```
 
 ## Request headers
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/setReviewStatus
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/setReviewStatus
 Content-Type: application/json
 
 {

@@ -5,6 +5,7 @@ author: "vbhatt0211"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # ediscoveryReviewSetQuery: export

@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # printIdentity resource type

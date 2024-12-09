@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "outlook"
 author: "SuryaLashmiS"
+ms.date: 09/19/2024
 ---
 
 # workingHours resource type
