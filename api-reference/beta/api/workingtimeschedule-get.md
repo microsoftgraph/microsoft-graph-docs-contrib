@@ -5,6 +5,7 @@ author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Get workingTimeSchedule
