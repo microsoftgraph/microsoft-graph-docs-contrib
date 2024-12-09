@@ -24,7 +24,7 @@ https://graph.microsoft.com/{version}/{location}/onenote/
 
 The location can be user notebooks on Microsoft 365 or consumer OneDrive, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365. 
 
-**User notebooks** To access personal notebooks on consumer OneDrive or OneDrive for Business, use one of the following URLs:
+**User notebooks** To access personal notebooks on consumer OneDrive or OneDrive for Work or School, use one of the following URLs:
 
 ```http
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -47,16 +47,6 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 
 For information about the permissions required to work with OneNote APIs, see [Notes permissions](/graph/permissions-reference#notes-permissions).
 
-## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|notebooks|[notebook](notebook.md) collection|The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.|
-|operations|[onenoteOperation](onenoteoperation.md) collection |The status of OneNote operations. Getting an operations collection isn't supported, but you can get the status of long-running operations if the `Operation-Location` header is returned in the response. Read-only. Nullable.|
-|pages|[onenotePage](onenotepage.md) collection|The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
-|resources|[onenoteResource](onenoteresource.md) collection |The image and other file resources in OneNote pages. Getting a resources collection isn't supported, but you can [get the binary content of a specific resource](onenoteresource.md). Read-only. Nullable.|
-|sectionGroups|[sectionGroup](sectiongroup.md) collection|The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
-|sections|[onenoteSection](onenotesection.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
-
 ## Methods
 
 | Method		   | Return Type	|Description|
@@ -67,6 +57,19 @@ For information about the permissions required to work with OneNote APIs, see [N
 |[List pages](../api/onenote-list-pages.md) |[onenotePage](onenotepage.md)  collection| Get a collection of pages.|
 |[List section groups](../api/onenote-list-sectiongroups.md) |[sectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
 |[List sections](../api/onenote-list-sections.md) |[onenoteSection](onenotesection.md) collection| Get a collection of sections.|
+
+## Properties
+None.
+
+## Relationships
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|notebooks|[notebook](notebook.md) collection|The collection of OneNote notebooks that the user or group owns. Read-only. Nullable.|
+|operations|[onenoteOperation](onenoteoperation.md) collection |The status of OneNote operations. Getting an operations collection isn't supported, but you can get the status of long-running operations if the `Operation-Location` header is returned in the response. Read-only. Nullable.|
+|pages|[onenotePage](onenotepage.md) collection|The pages in all OneNote notebooks that the user or group owns. Read-only. Nullable.|
+|resources|[onenoteResource](onenoteresource.md) collection |The image and other file resources in OneNote pages. Getting a resources collection isn't supported, but you can [get the binary content of a specific resource](onenoteresource.md). Read-only. Nullable.|
+|sectionGroups|[sectionGroup](sectiongroup.md) collection|The section groups in all OneNote notebooks that the user or group owns. Read-only. Nullable.|
+|sections|[onenoteSection](onenotesection.md) collection|The sections in all OneNote notebooks that the user or group owns. Read-only. Nullable.|
 <!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
