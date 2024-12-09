@@ -13,9 +13,9 @@
             {
               "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
               "ApiChange": "Member",
-              "ChangedApiName": "durationInMinute",
+              "ChangedApiName": "durationInMinutes",
               "ChangeType": "Addition",
-              "Description": "Added the `durationInMinute` member to **aggregationType** enumeration",
+              "Description": "Added the `durationInMinutes` member to **aggregationType** enumeration",
               "Target": "aggregationType"
             },
             {
