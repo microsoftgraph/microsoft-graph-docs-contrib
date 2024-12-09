@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
+ms.date: 04/05/2024
 ---
 
 # List programControlTypes (deprecated)

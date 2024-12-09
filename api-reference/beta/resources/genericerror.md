@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: non-product-specific
 author: "SuryaLashmiS"
+ms.date: 04/11/2024
 ---
 
 # genericError resource type
