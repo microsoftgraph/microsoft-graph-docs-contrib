@@ -70,7 +70,6 @@ If successful, this method returns a `200 OK` response code and a stream object 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcTroubleshootReports
 Content-Type: application/octet-stream
