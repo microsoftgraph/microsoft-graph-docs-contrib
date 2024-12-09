@@ -59,7 +59,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |affectedCloudPcCount|The total number of Cloud PCs that meet the rule conditions.|
 |affectedCloudPcPercentage|The percentage of Cloud PCs that meet the rule conditions.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-|durationInMinute| The time range during which Cloud PCs that meet the alert rule conditions are affected.|
+|durationInMinutes| The time range during which Cloud PCs that meet the alert rule conditions are affected.|
 
 ### operatorType values
 
