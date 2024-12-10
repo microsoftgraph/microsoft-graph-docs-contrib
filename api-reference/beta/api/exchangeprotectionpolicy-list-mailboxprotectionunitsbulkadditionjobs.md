@@ -5,6 +5,7 @@ author: "neminbshah"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # List mailboxProtectionUnitsBulkAdditionJobs 

@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "njerigrevious"
 doc_type: conceptualPageType
 ms.subservice: "search"
+ms.date: 03/19/2024
 ---
 
 # Use the Microsoft Search API to query data

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "Represents the SharePoint identity of an actor."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # sharePointIdentity resource type

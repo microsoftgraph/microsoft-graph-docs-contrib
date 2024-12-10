@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mcm223"
 ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 03/21/2024
 ---
 
 # segment resource type
@@ -13,10 +14,9 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a portion of a User-User communication or a User-Meeting communication
-in the case of a Conference call. A typical VOIP call has one segment per session. In certain
-scenarios, such as PSTN calls, there are multiple segments per session due to additional
-server-to-server communication required to connect the call.
+Represents a portion of a User-User communication, or a User-Meeting communication
+for of a Conference call. A typical VOIP call has one segment per session. In certain
+scenarios, such as Public Switched Telephone Network (PSTN) calls, there are multiple segments per session due to other server-to-server communication required to connect the call.
 
 ## Methods
 

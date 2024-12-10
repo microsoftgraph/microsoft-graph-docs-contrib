@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: conceptualPageType
+ms.date: 11/08/2024
 ---
 
 # Using order hints in Planner
