@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: security
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # process resource type

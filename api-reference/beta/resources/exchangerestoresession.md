@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 11/25/2024
 ---
 
 # exchangeRestoreSession resource type

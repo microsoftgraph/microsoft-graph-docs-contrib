@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "outlook"
 author: "iamgirishck"
+ms.date: 03/21/2024
 ---
 
 # attendee resource type

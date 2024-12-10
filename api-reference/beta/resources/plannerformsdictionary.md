@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cpanga22"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # plannerFormsDictionary resource type

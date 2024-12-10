@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: project-rome
 doc_type: resourcePageType
 author: ailae
+ms.date: 07/22/2024
 ---
 
 # visualInfo resource type
