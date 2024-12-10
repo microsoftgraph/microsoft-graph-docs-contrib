@@ -1,5 +1,5 @@
 ---
-title: "Delete recycleBin items"
+title: "Delete recyclebintem"
 description: "Delete items from fileStorageContainer recycleBin."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/01/2024
 ---
 
-# Delete recycle bin items
+# Delete recyclebinitem
 
 Namespace: microsoft.graph
 
@@ -63,7 +63,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_filestoragecontainer_recyclebin_items",
+  "name": "delete_filestoragecontainer_recyclebinitem",
   "@odata.type": "Collection(microsoft.graph.recyclebinitem)"
 }
 -->
@@ -77,7 +77,7 @@ Content-Type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-filestoragecontainer-recyclebin-items-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-filestoragecontainer-recyclebinitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
