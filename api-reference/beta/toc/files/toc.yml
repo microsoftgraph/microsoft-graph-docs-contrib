@@ -196,6 +196,10 @@ items:
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
     href: ../../api/filestoragecontainer-restore-recyclebin-items.md
+  - name: Delete recycle bin items
+    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
+  - name: Get recycle bin items
+    href: ../../api/filestoragecontainer-list-recyclebinitem.md
   - name: Lock
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
