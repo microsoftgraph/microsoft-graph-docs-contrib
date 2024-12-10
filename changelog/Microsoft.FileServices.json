@@ -4097,7 +4097,7 @@
         {
           "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
-          "ChangedApiName": "restore recyclebinitem",
+          "ChangedApiName": "Restore",
           "ChangeType": "Addition",
           "Description": "Added the [restore recyclebinitem](https://learn.microsoft.com/graph/api/filestoragecontainer-restore-recyclebinitem?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
