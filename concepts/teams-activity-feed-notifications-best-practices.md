@@ -4,6 +4,7 @@ description: "Get tips for enhancing the Microsoft Teams activity feed notificat
 author: "KirtiPereira"
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 11/07/2024
 ---
 
 # Best practices for using Microsoft Teams activity feed notifications

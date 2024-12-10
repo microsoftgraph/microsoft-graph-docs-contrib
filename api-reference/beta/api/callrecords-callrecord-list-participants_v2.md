@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mcm223"
 ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
+ms.date: 11/04/2024
 ---
 
 # List participants_v2
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.callRecords
 
 Get the list of [participant](../resources/callrecords-participant.md) objects associated with a [callRecord](../resources/callrecords-callrecord.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

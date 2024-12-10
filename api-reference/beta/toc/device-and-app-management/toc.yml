@@ -63,6 +63,29 @@ items:
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
+- name: Cloud licensing (preview)
+  displayName: Cloud licensing, Microsoft Cloud Licensing
+  items:
+  - name: Overview
+    href: ../../resources/cloud-licensing-api-overview.md
+  - name: Usage right
+    items:
+    - name: Usage right
+      href: ../../resources/cloudlicensing-usageright.md
+    - name: List for group
+      href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
+    - name: List for user
+      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get
+      href: ../../api/cloudlicensing-usageright-get.md
+  - name: Complex types
+    items:
+    - name: Group cloud licensing
+      href: ../../resources/cloudlicensing-groupcloudlicensing.md
+    - name: Service
+      href: ../../resources/cloudlicensing-service.md
+    - name: User cloud licensing
+      href: ../../resources/cloudlicensing-usercloudlicensing.md
 - name: Cloud PC
   items:
   - name: Overview
@@ -107,7 +130,7 @@ items:
       href: ../../api/cloudpc-retrievereviewstatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
-    - name: Get launch info for user
+    - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
     - name: Get connectivity history
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
@@ -135,12 +158,6 @@ items:
       href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Get review status (deprecated)
       href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Reprovision remote action (deprecated)
-      href: ../../api/manageddevice-reprovisioncloudpc.md
-    - name: Resize remote action (deprecated)
-      href: ../../api/manageddevice-resizecloudpc.md
-    - name: Restore remote action (deprecated)
-      href: ../../api/manageddevice-restorecloudpc.md
     - name: Set review status (deprecated)
       href: ../../api/manageddevice-setcloudpcreviewstatus.md
     - name: Bulk set review status (deprecated)
@@ -259,6 +276,10 @@ items:
       href: ../../resources/cloudpcreports.md
     - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
+    - name: Get Cloud PC performance report
+      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
+    - name: Get bulk action status reports
+      href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
     - name: Get Cloud PC recommendation reports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get frontline report
@@ -420,6 +441,8 @@ items:
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
       href: ../../resources/cloudpcbulkdisasterrecoveryfailover.md
+    - name: Cloud PC bulk move
+      href: ../../resources/cloudpcbulkmove.md
     - name: Cloud PC bulk power off
       href: ../../resources/cloudpcbulkpoweroff.md
     - name: Cloud PC bulk power on
@@ -511,6 +534,8 @@ items:
 - name: Cloud printing
   displayName: Universal Print
   items:
+  - name: Overview
+    href: ../../resources/print-overview.md
   - name: Print
     items:
     - name: Print
@@ -806,12 +831,6 @@ items:
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
       - name: createToken action
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
-      - name: setEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-setenrollmenttimedevicemembershiptarget.md
-      - name: retrieveEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-retrieveenrollmenttimedevicemembershiptarget.md
-      - name: clearEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-clearenrollmenttimedevicemembershiptarget.md
     - name: Android for Work app
       items:
       - name: Android for Work app
@@ -8549,6 +8568,8 @@ items:
       href: ../../resources/windowsupdates-qualityupdatecatalogentry.md
     - name: Quality update cve severity information
       href: ../../resources/windowsupdates-qualityupdatecveseverityinformation.md
+    - name: Quality update filter
+      href: ../../resources/windowsupdates-qualityupdatefilter.md
     - name: Rate driven rollout settings
       href: ../../resources/windowsupdates-ratedrivenrolloutsettings.md
     - name: Safeguard profile
@@ -8614,9 +8635,9 @@ items:
     items:
     - name: Cloud PC connection
       href: ../../resources/managedtenants-cloudpcconnection.md
-    - name: List cloud PC connections
+    - name: List Cloud PC connections
       href: ../../api/managedtenants-managedtenant-list-cloudpcconnections.md
-    - name: Get cloud PC connection
+    - name: Get Cloud PC connection
       href: ../../api/managedtenants-cloudpcconnection-get.md
   - name: Cloud PC device
     items:

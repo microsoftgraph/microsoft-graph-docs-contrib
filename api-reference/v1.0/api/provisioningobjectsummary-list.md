@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.subservice: "entra-monitoring-health"
 doc_type: "apiPageType"
+ms.date: 07/30/2024
 ---
 
 # List provisioningObjectSummary
@@ -21,6 +22,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/provisioningobjectsummary-list-permissions.md)]
+
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation:
+> - Reports Reader
+> - Security Reader
+> - Security Administrator
+> - Global Reader
+> - Security Administrator
+> - Security Operator
+> - Application Administrator
+> - Cloud Application Administrator
 
 ## HTTP request
 

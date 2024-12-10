@@ -5,6 +5,7 @@ author: "DougKirschner"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # List scopedRoleMembers
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "administrativeunit_list_scopedrolemembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-list-scopedrolemembers-permissions.md)]
+
+[!INCLUDE [rbac-admin-units-apis-read](../includes/rbac-for-apis/rbac-admin-units-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 09/18/2024
 ---
 
 # List workforceIntegrations
@@ -123,15 +124,30 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "apiVersion": 99,
-      "encryption": {
-        "protocol": "protocol-value",
-        "secret": "secret-value"
-      },
+      "id": "WFI_05227533-379e-4a0a-9d17-afe306a1e10d",
+      "createdDateTime": "2021-03-12T17:37:05.84Z",
+      "lastModifiedDateTime": "2021-06-21T11:13:12.288Z",
+      "displayName": "test",
+      "url": "https://contosoWorkforceIntegration.com/Contoso/",
+      "apiVersion": 1,
       "isActive": true,
-      "url": "url-value",
-      "supportedEntities": "supportedEntities-value"
+      "supports": "shift,swapRequest,userShiftPreferences,openShift,openShiftRequest",
+      "supportedEntities": "shift,swapRequest,userShiftPreferences,openShift,openShiftRequest",
+      "eligibilityFilteringEnabledEntities": "none",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+          "displayName": "John Doe",
+          "userIdentityType": "aadUser",
+          "tenantId": null
+        }
+      },
+      "encryption": {
+        "protocol": "sharedSecret",
+        "secret": null
+      }
     }
   ]
 }

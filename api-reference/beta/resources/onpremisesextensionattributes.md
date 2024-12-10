@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: entra-users
 author: "yyuank"
 ms.reviewer: "iamut"
+ms.date: 10/02/2024
 ---
 
 # onPremisesExtensionAttributes resource type

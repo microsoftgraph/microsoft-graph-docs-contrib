@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 10/15/2024
 ---
 
 # onInteractiveAuthFlowStartListener resource type
@@ -14,6 +15,11 @@ Namespace: microsoft.graph
 A listener for what to invoke when an authentication flow is ready to be initiated. May be part of an [authenticationEventsFlow](../resources/authenticationeventsflow.md).
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.
 
 ## Properties
 |Property|Type|Description|

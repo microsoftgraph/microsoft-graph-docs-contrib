@@ -5,6 +5,7 @@ author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: entra-id
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # filteringProfile resource type

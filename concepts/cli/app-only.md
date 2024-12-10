@@ -3,6 +3,7 @@ title: "Use app-only authentication with the Microsoft Graph CLI"
 description: "Learn how to use app-only authentication to enable non-interactive scenarios with the Microsoft Graph command-line interface."
 ms.localizationpriority: medium
 author: jasonjoh
+ms.date: 11/07/2024
 ---
 
 # Use app-only authentication with the Microsoft Graph CLI

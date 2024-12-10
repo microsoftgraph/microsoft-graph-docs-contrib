@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # List teamsApp
@@ -453,9 +454,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "list_teamsapp_with_bots",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true,
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.teamsApp)",
+  "truncated": true
 } -->
 
 ```http
@@ -463,91 +463,89 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps(appDefinitions(bot()))",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps(appDefinitions(bot()))",
+  "value": [
+    {
+      "id": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
+      "externalId": "3CAB7543-216D-47C6-986C-6247670F4663",
+      "displayName": "Ducks-3",
+      "distributionMethod": "organization",
+      "appDefinitions": [
         {
-            "id": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
-            "externalId": "3CAB7543-216D-47C6-986C-6247670F4663",
-            "displayName": "Ducks-3",
-            "distributionMethod": "organization",
-            "appDefinitions": [
-                {
-                    "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
-                    "id": "OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ=",
-                    "teamsAppId": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
-                    "displayName": "Ducks-3",
-                    "version": "1.0.9",                  
-                    "publishingState": "rejected",
-                    "shortDescription": "quaerat quasi magnam. slight change. 5",
-                    "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
-                    "lastModifiedDateTime": "2020-11-23T21:36:00.9437445Z",
-                    "createdBy": {
-                        "application": null,
-                        "device": null,
-                        "conversation": null,
-                        "user": {
-                            "id": "70292a90-d2a7-432c-857e-55db6d8f5cd0",
-                            "displayName": null,
-                            "userIdentityType": "aadUser"
-                        }
-                    },
-                    "authorization": 
-                    {
-                      "requiredPermissionSet": 
-                      {
-                        "resourceSpecificPermissions": []
-                      }
-                    },
-                    "bot": {
-                        "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
-                    }
-                }
-            ]
-        },
-        {
-            "id": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
-            "externalId": "0ebd3f4d-ca91-495b-a227-a17d298e22cc",
-            "displayName": "Self-Install-App-E2E-Tests",
-            "distributionMethod": "organization",
-            "appDefinitions": [
-                {
-                    "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
-                    "id": "MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk",
-                    "teamsAppId": "30909dee-f7dd-4f89-8b3b-55de2e32489c",                
-                    "displayName": "Self-Install-App-E2E-Tests",
-                    "version": "6.0.0",
-                    "publishingState": "submitted",
-                    "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
-                    "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
-                    "lastModifiedDateTime": "2020-08-25T18:40:13.035341Z",
-                    "createdBy": {
-                        "application": null,
-                        "device": null,
-                        "conversation": null,
-                        "user": {
-                            "id": "c071a180-a220-43a1-adaf-e8db95c4a7d6",
-                            "displayName": null,
-                            "userIdentityType": "aadUser"
-                        }
-                    },
-                    "authorization": 
-                    {
-                      "requiredPermissionSet": 
-                      {
-                        "resourceSpecificPermissions": []
-                      }
-                    },
-                    "bot": {
-                        "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
-                    }
-                }
-            ]
+          "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
+          "id": "OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ=",
+          "teamsAppId": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
+          "displayName": "Ducks-3",
+          "version": "1.0.9",
+          "publishingState": "rejected",
+          "shortDescription": "quaerat quasi magnam. slight change. 5",
+          "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
+          "lastModifiedDateTime": "2020-11-23T21:36:00.9437445Z",
+          "createdBy": {
+            "application": null,
+            "device": null,
+            "conversation": null,
+            "user": {
+              "id": "70292a90-d2a7-432c-857e-55db6d8f5cd0",
+              "displayName": null,
+              "userIdentityType": "aadUser"
+            }
+          },
+          "authorization": {
+            "clientAppId": null,
+            "requiredPermissionSet": {
+              "resourceSpecificPermissions": []
+            }
+          },
+          "bot": {
+            "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
+          }
         }
-    ]
+      ]
+    },
+    {
+      "id": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
+      "externalId": "0ebd3f4d-ca91-495b-a227-a17d298e22cc",
+      "displayName": "Self-Install-App-E2E-Tests",
+      "distributionMethod": "organization",
+      "appDefinitions": [
+        {
+          "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
+          "id": "MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk",
+          "teamsAppId": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
+          "displayName": "Self-Install-App-E2E-Tests",
+          "version": "6.0.0",
+          "publishingState": "submitted",
+          "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+          "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
+          "lastModifiedDateTime": "2020-08-25T18:40:13.035341Z",
+          "createdBy": {
+            "application": null,
+            "device": null,
+            "conversation": null,
+            "user": {
+              "id": "c071a180-a220-43a1-adaf-e8db95c4a7d6",
+              "displayName": null,
+              "userIdentityType": "aadUser"
+            }
+          },
+          "authorization": {
+            "clientAppId": null,
+            "requiredPermissionSet": {
+              "resourceSpecificPermissions": []
+            }
+          },
+          "bot": {
+            "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
+          }
+        }
+      ]
+    }
+  ]
 }
 ```
 
-### Example 7: List applications with a given ID and return only the resource specific permissions required by the app
+### Example 6: List applications with a given ID and return only the resource specific permissions required by the app
 
 The following example lists the apps with a given ID and returns the resource-specific permissions that are associated with it.
 
@@ -606,9 +604,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "list_teamsapp_with_rsc_permissions",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true,
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.teamsApp)",
+  "truncated": true
 } -->
 
 ```http
@@ -616,39 +613,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps(appDefinitions(id,authorization))",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps(appDefinitions(id,authorization))",
+  "value": [
+    {
+      "id": "a5228c26-a9ae-4702-90e0-79a5246d2f7d",
+      "externalId": "a55ec032-36e9-4b60-b604-34b2fe55abf1",
+      "displayName": "teamsDelegatedRscTests",
+      "distributionMethod": "organization",
+      "appDefinitions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('a5228c26-a9ae-4702-90e0-79a5246d2f7d')/appDefinitions(id,authorization)",
+      "appDefinitions": [
         {
-            "id": "a5228c26-a9ae-4702-90e0-79a5246d2f7d",
-            "externalId": "a55ec032-36e9-4b60-b604-34b2fe55abf1",
-            "displayName": "teamsDelegatedRscTests",
-            "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('a5228c26-a9ae-4702-90e0-79a5246d2f7d')/appDefinitions(id,authorization)",
-            "appDefinitions": [
+          "id": "YTUyMjhjMjYtYTlhZS00NzAyLTkwZTAtNzlhNTI0NmQyZjdkIyMxLjAuMCMjUHVibGlzaGVk",
+          "authorization": {
+            "clientAppId": "6ed63604-0ba7-4a28-bb3a-dda03ea18d54",
+            "requiredPermissionSet": {
+              "resourceSpecificPermissions": [
                 {
-                    "id": "YTUyMjhjMjYtYTlhZS00NzAyLTkwZTAtNzlhNTI0NmQyZjdkIyMxLjAuMCMjUHVibGlzaGVk",
-                    "authorization": {
-                        "requiredPermissionSet": {
-                            "resourceSpecificPermissions": [
-                                {
-                                    "permissionValue": "Channel.Create.Group",
-                                    "permissionType": "application"
-                                },
-                                {
-                                    "permissionValue": "Channel.Delete.Group",
-                                    "permissionType": "application"
-                                },
-                                {
-                                    "permissionValue": "ChannelMeeting.ReadBasic.Group",
-                                    "permissionType": "delegated"
-                                }
-                            ]
-                        }
-                    }
+                  "permissionValue": "Channel.Create.Group",
+                  "permissionType": "application"
+                },
+                {
+                  "permissionValue": "Channel.Delete.Group",
+                  "permissionType": "application"
+                },
+                {
+                  "permissionValue": "ChannelMeeting.ReadBasic.Group",
+                  "permissionType": "delegated"
                 }
-            ]
+              ]
+            }
+          }
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 

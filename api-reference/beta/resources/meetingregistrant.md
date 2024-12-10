@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 toc.title: Meeting Registrant (deprecated)
+ms.date: 10/15/2024
 ---
 
 # meetingRegistrant resource type (deprecated)
@@ -14,12 +15,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a meeting registrant who enrolled in an [online meeting](onlinemeeting.md). 
+Represents a meeting registrant who enrolled in an [online meeting](onlinemeeting.md).
 
 Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 
 > [!CAUTION]
-> The meeting registrant API is deprecated and will stop returning data on **December 31, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/). 
+> The meeting registrant API is deprecated and will stop returning data on **December 12, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/).
 
 ## Methods
 

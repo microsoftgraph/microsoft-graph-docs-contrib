@@ -4,6 +4,7 @@ description: "Create recurring events by using the recurrence rule, which includ
 author: "iamgirishck"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Schedule repeating appointments as recurring events in Outlook

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dougeby"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # keyValue resource type

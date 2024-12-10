@@ -1,13 +1,14 @@
 ---
-title: "Dictionary resource type"
+title: "dictionary resource type"
 description: "Represents a dictionary type that consists of key-value pairs."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 10/11/2024
 ---
 
-# Dictionary resource type
+# dictionary resource type
 
 Namespace: microsoft.graph.healthMonitoring
 
@@ -27,13 +28,13 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.healthMonitoring.Dictionary",
+  "@odata.type": "microsoft.graph.healthMonitoring.dictionary",
   "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.healthMonitoring.Dictionary"
+  "@odata.type": "#microsoft.graph.healthMonitoring.dictionary"
 }
 ```
 

@@ -6,6 +6,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # user: delta
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted users without having to perform a full read of the entire [user](../resources/user.md) collection. See [change tracking](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted users without having to perform a full read of the entire [user](../resources/user.md) collection. For more information, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
 > [!NOTE]
 > Changes to the **licenseAssignmentStates** property are currently not tracked.

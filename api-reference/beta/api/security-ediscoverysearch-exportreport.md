@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 10/30/2024
 ---
 
 # ediscoverySearch: exportReport
@@ -77,7 +78,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a6a5-46a2-8e4e-534353b071e4'/searches/'6c2ab774-2d2a-46b9-a601-3130f518757b'/exportReport
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportReport
 Content-Type: application/json
 
 {
@@ -139,7 +140,7 @@ Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06
 
 ### Example 2: Export a report of items with search hits and partially indexed items in all targeted locations, without additional options
 
-The following examples shows how to export a report of items with search hits and partially indexed items in all targeted locations, with no additional options selected.
+The following example shows how to export a report of items with search hits and partially indexed items in all targeted locations, with no additional options selected.
 
 #### Request
 
@@ -152,7 +153,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a6a5-46a2-8e4e-534353b071e4'/searches/'6c2ab774-2d2a-46b9-a601-3130f518757b'/exportReport
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportReport
 Content-Type: application/json
 
 {
@@ -229,7 +230,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a6a5-46a2-8e4e-534353b071e4'/searches/'6c2ab774-2d2a-46b9-a601-3130f518757b'/exportReport
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportReport
 Content-Type: application/json
 
 {
@@ -305,7 +306,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a6a5-46a2-8e4e-534353b071e4'/searches/'6c2ab774-2d2a-46b9-a601-3130f518757b'/exportReport
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportReport
 Content-Type: application/json
 
 {
@@ -381,7 +382,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a6a5-46a2-8e4e-534353b071e4'/searches/'6c2ab774-2d2a-46b9-a601-3130f518757b'/exportReport
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportReport
 Content-Type: application/json
 
 {

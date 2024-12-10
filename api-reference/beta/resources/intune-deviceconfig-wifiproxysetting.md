@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 10/22/2024
 ---
 
 # wiFiProxySetting enum type
@@ -20,7 +21,7 @@ Wi-Fi Proxy Settings.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|No Proxy.|
-|manual|1|Manual Proxy Settings via Address and Port.|
-|automatic|2|Automatic Proxy Settings via URL.|
-|unknownFutureValue|3|Unknown future value for evolvable enum patterns.|
+|none|0|Default. Indicates Wi-Fi Proxy is not set.|
+|manual|1|Indicates Wi-Fi Proxy is set by manually specifying an address and port as well as an optional list of hostnames that are exculded. This value is not supported for AndroidWorkProfileWiFiConfigurations.|
+|automatic|2|Indicates Wi-Fi Proxy is set automatically by providing the URL to a PAC (Proxy Auto Configuration) file which contains a list of proxy servers to use.|
+|unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|

@@ -1,17 +1,18 @@
 ---
 title: "triggerAttribute resource type"
-description: "An abstract type that defines the trigger attribute, which is changed to activate a workflow using an attributeChangeTrigger."
+description: "Defines the trigger attribute, which is changed to activate a workflow using an attributeChangeTrigger."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/21/2024
 ---
 
 # triggerAttribute resource type
 
 Namespace: microsoft.graph.identityGovernance
 
-An abstract type that defines the trigger attribute, which is changed to activate a workflow using an [attributeChangeTrigger](../resources/identitygovernance-attributechangetrigger.md).
+Defines the trigger attribute, which is changed to activate a workflow using an [attributeChangeTrigger](../resources/identitygovernance-attributechangetrigger.md).
 
 ## Properties
 |Property|Type|Description|

@@ -5,6 +5,7 @@ author: "ishatyagiit"
 ms.localizationpriority: medium
 ms.subservice: "viva-goals"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # goals resource type
