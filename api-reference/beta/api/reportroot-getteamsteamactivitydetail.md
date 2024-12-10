@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getTeamsTeamActivityDetail
@@ -121,7 +122,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+Follow the 302 redirection and the CSV file that downloads has the following schema.
 
 <!-- {
   "blockType": "response",
