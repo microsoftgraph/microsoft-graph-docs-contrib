@@ -2110,6 +2110,26 @@ items:
         href: ../../api/fido2authenticationmethod-delete.md
       - name: Creation options
         href: ../../api/fido2authenticationmethod-creationoptions.md
+    - name: Hardware OATH method
+      items:
+      - name: Hardware OATH method
+        href: ../../resources/hardwareoathauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-hardwareoathmethods.md
+      - name: Create
+        href: ../../api/authentication-post-hardwareoathmethods.md
+      - name: Get
+        href: ../../api/hardwareoathauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/authentication-delete-hardwareoathmethods.md
+      - name: Activate
+        href: ../../api/hardwareoathauthenticationmethod-activate.md
+      - name: Deactivate
+        href: ../../api/hardwareoathauthenticationmethod-deactivate.md
+      - name: Assign and activate
+        href: ../../api/hardwareoathauthenticationmethod-assignandactivate.md
+      - name: Assign and activate by serial number
+        href: ../../api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber.md
     - name: Microsoft Authenticator
       items:
       - name: Microsoft Authenticator
@@ -2867,6 +2887,24 @@ items:
           href: ../../api/hardwareoathauthenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/hardwareoathauthenticationmethodconfiguration-delete.md
+      - name: Hardware OATH token devices
+        items:
+        - name: Hardware OATH token devices
+          href: ../../resources/hardwareoathtokenauthenticationmethoddevice.md
+        - name: List
+          href: ../../api/authenticationmethoddevice-list-hardwareoathdevices.md
+        - name: Create
+          href: ../../api/authenticationmethoddevice-post-hardwareoathdevices.md
+        - name: Create one or more objects
+          href: ../../api/authenticationmethoddevice-update.md
+        - name: Get
+          href: ../../api/hardwareoathtokenauthenticationmethoddevice-get.md
+        - name: Update
+          href: ../../api/hardwareoathtokenauthenticationmethoddevice-update.md
+        - name: Delete
+          href: ../../api/authenticationmethoddevice-delete-hardwareoathdevices.md
+        - name: Assign user
+          href: ../../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md
       - name: Microsoft Authenticator
         items:
         - name: Microsoft Authenticator

@@ -61,7 +61,7 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an updated [cloudPcUserSetting](../resources/cloudpcusersetting.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -88,13 +88,14 @@ Content-Type: application/json
     "userRestoreEnabled": true
   },
   "crossRegionDisasterRecoverySetting": {
-    "crossRegionDisasterRecoveryEnabled": true,
+    "crossRegionDisasterRecoveryEnabled": false,
     "maintainCrossRegionRestorePointEnabled": true,
     "disasterRecoveryNetworkSetting": {
       "regionName": "westus",
       "regionGroup": "usEast"
     },
-    "disasterRecoveryType": "premium"
+    "disasterRecoveryType": "premium",
+    "userInitiatedDisasterRecoveryAllowed": true
   },
   "localAdminEnabled": false,
   "resetEnabled": true

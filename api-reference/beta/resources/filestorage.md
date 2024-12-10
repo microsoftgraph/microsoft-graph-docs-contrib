@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
+ms.date: 05/21/2024
 ---
 
 # fileStorage resource type

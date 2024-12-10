@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: non-product-specific
 author: "MSGraphDocsVteam"
+ms.date: 04/22/2024
 ---
 
 # chunkedUploadSessionDescriptor resource type

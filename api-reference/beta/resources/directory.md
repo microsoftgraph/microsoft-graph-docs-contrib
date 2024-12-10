@@ -7,7 +7,7 @@ ms.date: 12/02/2024
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Deleted item
-ms.date: 10/25/2024
+ms.date: 12/06/2024
 ---
 
 # directory resource type
@@ -51,6 +51,7 @@ Inherits from [entity](entity.md).
 |:-|:-|:-|
 | administrativeUnits | [administrativeUnit](administrativeunit.md) collection | Conceptual container for user and group directory objects. |
 | attributeSets | [attributeSet](attributeset.md) collection | Group of related custom security attribute definitions. |
+| authenticationMethodDevices | [authenticationMethodDevice](authenticationMethodDevice.md) | Exposes the hardware OATH method in the directory. |
 |certificateAuthorities|[certificateAuthorityPath](../resources/certificateauthoritypath.md)|Container for certificate authorities-related configurations for applications in the tenant.|
 | customSecurityAttributeDefinitions | [customSecurityAttributeDefinition](customsecurityattributedefinition.md) collection | Schema of a custom security attributes (key-value pairs). |
 | deletedItems | [directoryObject](directoryobject.md) collection | Recently deleted items. Read-only. Nullable. |
