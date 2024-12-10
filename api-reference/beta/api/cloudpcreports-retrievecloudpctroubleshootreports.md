@@ -71,11 +71,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ### Request
 
 The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "cloudpcreports.retrieveCloudPcTroubleshootReports"
-}
--->
+
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcTroubleshootReports
 Content-Type: application/json
