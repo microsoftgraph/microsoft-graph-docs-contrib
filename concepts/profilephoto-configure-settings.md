@@ -109,7 +109,7 @@ Content-Type: application/json
     "allowedRoles": ["fe930be7-5e62-47db-91af-98c3a49a38b1"]
 }
 ```
-### Configure User Administrator and Administrator support for profile photo updates
+### Configure adminstrator support for profile photo updates
 
 The following example shows how to configure the Global Administrator and User Administrator roles to change profile photo update settings in your organization.
 
