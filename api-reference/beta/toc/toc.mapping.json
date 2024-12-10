@@ -149,6 +149,7 @@
         "protectionUnitBase",
         "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
+        "restoreArtifactsBulkRequestBase"
         "restorePoint",
         "restoreSessionBase",
         "serviceApp"
@@ -193,6 +194,14 @@
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
             "siteRestoreArtifact"
+          ]
+        },
+        {
+          "name": "Restore artifacts bulk request",
+          "resources": [
+            "driveRestoreArtifactsBulkAdditionRequests",
+            "mailboxRestoreArtifactsBulkAdditionRequests",
+            "siteRestoreArtifactsBulkAdditionRequests"
           ]
         },
         {
