@@ -65,7 +65,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.deviceTemplate",
   "id": "String (identifier)",
-  "deletedDateTime": "String (timestamp)",
   "mutualTlsOauthConfigurationId": "String",
   "mutualTlsOauthConfigurationTenantId": "String",
   "deviceAuthority": "String",

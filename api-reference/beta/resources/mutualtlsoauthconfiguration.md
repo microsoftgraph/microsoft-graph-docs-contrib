@@ -56,7 +56,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.mutualTlsOauthConfiguration",
   "id": "String (identifier)",
-  "deletedDateTime": null,
   "certificateAuthorities": [
     {
       "@odata.type": "microsoft.graph.certificateAuthority"

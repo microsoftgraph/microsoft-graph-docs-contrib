@@ -26,7 +26,7 @@ None
 |:---|:---|:---|
 |`certificateAuthorities`|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property representing a list of trusted certificate authorities.|
 |deletedDateTime|DateTimeOffset|Inherited from [directoryObject](../resources/directoryobject.md).|
-|id|String|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md).|
+|id|String|Inherited from [directoryObject](../resources/directoryobject.md).|
 
 ## Relationships
 
@@ -47,7 +47,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.trustedCertificateAuthorityBase",
   "id": "uniquestringidentifier",
-  "deletedDateTime": null,
   "certificateAuthorities": [
     {
       "isRootAuthority": true,
