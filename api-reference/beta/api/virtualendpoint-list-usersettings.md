@@ -5,7 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 12/04/2024
+ms.date: 04/05/2024
 ---
 
 # List userSettings

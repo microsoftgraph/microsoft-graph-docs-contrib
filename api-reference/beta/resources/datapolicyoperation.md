@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/19/2024
 ---
 
 # dataPolicyOperation resource type
