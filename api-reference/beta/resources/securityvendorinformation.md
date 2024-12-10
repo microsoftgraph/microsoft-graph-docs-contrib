@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # securityVendorInformation resource type

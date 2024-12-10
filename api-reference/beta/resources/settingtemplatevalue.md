@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.date: 03/21/2024
 ---
 
 # settingTemplateValue resource type

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 toc.title: Virtual event registration question
+ms.date: 06/27/2024
 ---
 
 # virtualEventRegistrationQuestionBase resource type
