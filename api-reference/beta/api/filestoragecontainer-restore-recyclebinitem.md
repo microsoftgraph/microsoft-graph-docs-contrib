@@ -1,6 +1,6 @@
 ---
-title: "Restore recycleBin items"
-description: "Restore recycleBin items to a fileStorageContainer."
+title: "Restore recycleBinitem"
+description: "Restore recycleBinitem objects to a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/01/2024
 ---
 
-# Restore recycle bin items
+# Restore recyclebinitem
 
 Namespace: microsoft.graph
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestoragecontainer-restore-recyclebin-items-permissions"
+  "name": "filestoragecontainer-restore-recyclebinitem-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-restore-recyclebin-items-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-restore-recyclebinitem-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
