@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "intune-cloudpcreports-retrievecloudpctroubleshootreports-permissions"
+  "name": "cloudpcreports-retrievecloudpctroubleshootreports-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudpcreports-retrievecloudpctroubleshootreports-permissions.md)]
@@ -73,7 +73,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "cloudpcreportsthis.retrievecloudpctroubleshootreports"
+  "name": "cloudpcreports.retrievecloudpctroubleshootreports"
 }
 -->
 ``` http
