@@ -61,7 +61,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "restore_filestoragecontainer_recyclebin_items",
+  "name": "restore_filestoragecontainer_recyclebinitem",
   "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
 }
 -->
