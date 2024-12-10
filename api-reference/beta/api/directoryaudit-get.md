@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 11/08/2024
 ---
 
 # Get directoryAudit

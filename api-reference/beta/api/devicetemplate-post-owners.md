@@ -1,6 +1,6 @@
 ---
-title: "Add owners"
-description: "Add owners of a device template."
+title: "Add deviceTemplate owner"
+description: "Add a new owner to a deviceTemplate object."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# Add owners
+# Add deviceTemplate owner
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add new owner of a deviceTemplate object. Owners are granted certain permissions to the devices created from these device templates. These permissions allows owners to enable/disable devices and update properties like `AlternativeNames`.
+Add a new owner to a [deviceTemplate](../resources/devicetemplate.md) object. Owners are granted certain permissions for the devices created from these device templates. These permissions allow owners to enable or disable devices and update properties like **alternativeNames**.
 
 ## Permissions
 
@@ -29,11 +29,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **ID** property of the device template.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/templates/deviceTemplates/{id}/owners/$ref
 ```
+
+>**Note:** The `{id}` in the request URL is the value of the **id** property of the device template.
 
 ## Request headers
 

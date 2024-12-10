@@ -1,6 +1,6 @@
 ---
 title: "Delete mutualTlsOauthConfiguration"
-description: "Delete a mutualTlsOauthConfiguration object."
+description: "Delete the specified mutualTlsOauthConfiguration resource."
 author: "sofia-geislinger"
 ms.date: 11/24/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
+Delete the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
 
 ## Permissions
 
@@ -29,8 +29,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{mutualTlsOauthConfigurationId}` in the request is the value of the **ID** property of the mutualTlsOauthConfiguration object.
-
 <!-- {
   "blockType": "ignored"
 }
@@ -38,6 +36,7 @@ The `{mutualTlsOauthConfigurationId}` in the request is the value of the **ID** 
 ``` http
 DELETE /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
+> **Note:** The `{mutualTlsOauthConfigurationId}` in the request URL is the value of the **ID** property of the **mutualTlsOauthConfiguration** object.
 
 ## Request headers
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "dkershaw10"
+ms.date: 07/23/2024
 ---
 
 # phone resource type

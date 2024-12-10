@@ -1,6 +1,6 @@
 ---
-title: "Remove deviceTemplate"
-description: "Remove a deviceTemplate object."
+title: "Delete deviceTemplate"
+description: "Delete a registered deviceTemplate."
 author: "sofia-geislinger"
 ms.date: 11/24/2024
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
-# Remove deviceTemplate
+# Delete deviceTemplate
 
 Namespace: microsoft.graph
 
@@ -29,11 +29,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **ID** property of the device template.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directory/templates/deviceTemplates/{id}
 ```
+
+> **Note:** The `{id}` in the request URL is the value of the **id** property of the device template.
 
 ## Request headers
 
@@ -47,11 +48,10 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
+- If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 - Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
-> **Note:** DeviceTemplates can't be deleted until all linked devices are deleted. Failure to do so results in a `400` response.
-
+> **Note:** Device templates can't be deleted until all linked devices are removed. Otherwise, this method returns a `400 Bad Request` response code.
 
 |Response Code|Condition|Message|
 |-|-|-|

@@ -1,6 +1,6 @@
 ---
 title: "template resource type"
-description: "template resource type"
+description: "Represents container for templates."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.date: 11/24/2024
@@ -14,17 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Container for templates.
+Represents container for templates.
 
 ## Methods
-
 None.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |deviceTemplates|[deviceTemplate](../resources/devicetemplate.md) collection|Defines the templates that are common to a set of device objects.|

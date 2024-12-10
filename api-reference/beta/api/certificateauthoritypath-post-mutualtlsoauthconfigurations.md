@@ -1,6 +1,6 @@
 ---
 title: "Create mutualTlsOauthConfiguration"
-description: "Create a new mutualTlsOauthConfiguration object."
+description: "Create a new mutualTlsOauthConfiguration resource that contains a specified certificate authority object."
 author: "sofia-geislinger"
 ms.date: 11/24/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource that contains a specified certificate authority object.
+Create a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource that contains a specified certificate authority object.
 
 ## Permissions
 
@@ -49,11 +49,11 @@ POST /directory/certificateAuthorities/mutualTlsOauthConfigurations/
 
 In the request body, supply a JSON representation of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object.
 
-You can specify the following properties when creating a **mutualTlsOauthConfiguration**.
+You can specify the following properties when you create a **mutualTlsOauthConfiguration**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Friendly name|
+|displayName|String|Friendly name.|
 |tlsClientAuthParameter| [tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
 |certificateAuthority|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property representing a list of trusted certificate authorities. |
 

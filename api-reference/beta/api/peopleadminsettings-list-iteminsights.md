@@ -5,6 +5,7 @@ author: "jolintve"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: apiPageType
+ms.date: 07/01/2024
 ---
 
 # List itemInsights

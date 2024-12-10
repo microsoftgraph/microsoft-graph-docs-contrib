@@ -214,20 +214,22 @@ items:
     items:
     - name: Device template
       href: ../../resources/devicetemplate.md
+    - name: List
+      href: ../../api/template-list-devicetemplates.md
     - name: Create
       href: ../../api/template-post-devicetemplates.md
-    - name: Get deviceTemplate
+    - name: Get
       href: ../../api/devicetemplate-get.md
-    - name: List deviceTemplate
-      href: ../../api/template-list-devicetemplates.md
-    - name: Delete deviceTemplate
+    - name: Delete
       href: ../../api/device-delete-devicetemplate.md
-    - name: Get deviceTemplate owners
+    - name: List owners
       href: ../../api/devicetemplate-list-owners.md
-    - name: Add a deviceTemplate owner
+    - name: Add owner
       href: ../../api/devicetemplate-post-owners.md
-    - name: Remove a deviceTemplate owner
+    - name: Remove owner
       href: ../../api/devicetemplate-delete-owners.md
+    - name: Create device from template
+      href: ../../api/devicetemplate-createdevicefromtemplate.md
   - name: Directory object
     items:
     - name: Directory object
@@ -448,9 +450,9 @@ items:
         href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
       - name: Delete group from policy
         href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
-  - name: Mutual tls oauth configuration
+  - name: Mutual TLS OAuth configuration
     items:
-    - name: Mutual tls oauth configuration
+    - name: Mutual TLS OAuth configuration
       href: ../../resources/mutualtlsoauthconfiguration.md
     - name: List
       href: ../../api/certificateauthoritypath-list-mutualtlsoauthconfigurations.md
