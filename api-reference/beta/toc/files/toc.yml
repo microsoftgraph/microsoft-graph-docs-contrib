@@ -195,7 +195,7 @@ items:
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
-    href: ../../api/filestoragecontainer-restore-recyclebin-items.md
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
   - name: Delete recycle bin items
     href: ../../api/filestoragecontainer-delete-recyclebinitem.md
   - name: Get recycle bin items
