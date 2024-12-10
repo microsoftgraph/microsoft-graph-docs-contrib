@@ -47,7 +47,7 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 ## Examples
 ### Example 1: Retrieve child tags of a specific eDiscovery review tag
 #### Request
-The following example shows a request to retrieve child tags 
+The following example shows a request that retrieves child tags.
 
 # [HTTP](#tab/http)
 <!-- {
