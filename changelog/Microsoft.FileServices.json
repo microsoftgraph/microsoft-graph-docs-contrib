@@ -3929,7 +3929,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Delete",
           "ChangeType": "Change",
-          "Description": "Renamed the [delete recycle bin items](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-recyclebin-items?view=graph-rest-beta) method to [delete recyclebiniten](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-recyclebinitem?view=graph-rest-beta).",
+          "Description": "Update the method to [delete recyclebinitem](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-recyclebinitem?view=graph-rest-beta).",
           "Target": "filestoragecontainer"
         },
         {
@@ -3937,7 +3937,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "List",
           "ChangeType": "Change",
-          "Description": "Renamed the [list recycle bin items](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-recyclebin-items?view=graph-rest-beta) method to [list recyclebiniten](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-recyclebinitem?view=graph-rest-beta).",
+          "Description": "Update the method to [list recyclebiniten](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-recyclebinitem?view=graph-rest-beta).",
           "Target": "filestoragecontainer"
         },
         {
@@ -3945,7 +3945,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Restore",
           "ChangeType": "Change",
-          "Description": "Renamed the [restore recycle bin items](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore-recyclebin-items?view=graph-rest-beta) method to [restore recyclebiniten](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore-recyclebinitem?view=graph-rest-beta).",
+          "Description": "Update the method to [restore recyclebinitem](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore-recyclebinitem?view=graph-rest-beta).",
           "Target": "filestoragecontainer"
         }
       ],
