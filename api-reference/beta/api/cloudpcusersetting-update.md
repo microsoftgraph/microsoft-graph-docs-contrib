@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 12/04/2024
 ---
 
 # Update cloudPcUserSetting
@@ -50,7 +51,8 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The setting name displayed in the user interface.|
+|crossRegionDisasterRecoverySetting |[cloudPcCrossRegionDisasterRecoverySetting](../resources/cloudpccrossregiondisasterrecoverysetting.md)|Indicates cross-region disaster recovery settings for the user's Cloud PC.|
+|displayName|String|The setting name displayed in the user interface. |
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.|
 |resetEnabled|Boolean|Indicates whether an end user is allowed to reset their Cloud PC. When `true`, the user is allowed to reset their Cloud PC. When `false`, end-user initiated reset is not allowed. The default value is `false`. |
@@ -59,7 +61,7 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [cloudPcUserSetting](../resources/cloudpcusersetting.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -67,7 +69,6 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_cloudpcusersetting"
@@ -86,44 +87,20 @@ Content-Type: application/json
     "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   },
+  "crossRegionDisasterRecoverySetting": {
+    "crossRegionDisasterRecoveryEnabled": false,
+    "maintainCrossRegionRestorePointEnabled": true,
+    "disasterRecoveryNetworkSetting": {
+      "regionName": "westus",
+      "regionGroup": "usEast"
+    },
+    "disasterRecoveryType": "premium",
+    "userInitiatedDisasterRecoveryAllowed": true
+  },
   "localAdminEnabled": false,
   "resetEnabled": true
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-cloudpcusersetting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-cloudpcusersetting-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-cloudpcusersetting-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-cloudpcusersetting-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-cloudpcusersetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-cloudpcusersetting-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-cloudpcusersetting-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-cloudpcusersetting-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

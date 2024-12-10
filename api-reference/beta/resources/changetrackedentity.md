@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 03/06/2024
 ---
 
 # changeTrackedEntity resource type

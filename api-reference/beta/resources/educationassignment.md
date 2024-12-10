@@ -6,6 +6,7 @@ author: "dipakboyed"
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Assignment
+ms.date: 06/08/2024
 ---
 
 # educationAssignment resource type

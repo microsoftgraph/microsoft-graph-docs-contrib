@@ -5,6 +5,7 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # enrichedAuditLogsSettings resource type

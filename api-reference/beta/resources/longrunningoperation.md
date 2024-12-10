@@ -5,6 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/19/2024
 ---
 
 # longRunningOperation resource type

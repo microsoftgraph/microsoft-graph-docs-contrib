@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 toc.title: Update forwarding profile for branch (deprecated)
+ms.date: 08/13/2024
 ---
 
 # Update forwardingProfile
