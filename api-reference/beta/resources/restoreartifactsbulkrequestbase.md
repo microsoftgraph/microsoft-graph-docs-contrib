@@ -1,9 +1,9 @@
 ---
 title: "restoreArtifactsBulkRequestBase resource type"
-description: "Represents a bulk Request associated to one of the Restore Session"
+description: "An abstract type that represents a bulk request associated with one of the restore sessions."
 author: "vidula-verma"
 ms.localizationpriority: medium
-ms.subservice: "m365-backup-storge"
+ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 ---
 
@@ -13,33 +13,35 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a bulk Request associated to one of the Restore Session.
+An abstract type that represents a bulk request associated with one of the restore sessions.
 
-This abstract type is the base type for [siteRestoreArtifactsBulkAdditionRequests](../resources/siterestoreartifactsbulkadditionrequest.md), [mailboxRestoreArtifactsBulkAdditionRequests](../resources/mailboxrestoreartifactsbulkadditionrequest.md) and [driveRestoreArtifactsBulkAdditionRequests](../resources/driverestoreartifactsbulkadditionrequest.md).
+Base type for [siteRestoreArtifactsBulkAdditionRequests](../resources/siterestoreartifactsbulkadditionrequest.md), [mailboxRestoreArtifactsBulkAdditionRequests](../resources/mailboxrestoreartifactsbulkadditionrequest.md), and [driveRestoreArtifactsBulkAdditionRequests](../resources/driverestoreartifactsbulkadditionrequest.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique identifier of the bulk request associated to the restore session.|
-|displayName|String|Name of the addition Request.|
-|status|RestoreArtifactsBulkRequestStatus	|It determines the execution status of the long running operation being one of `unkown`, `active`, `completed`, `completedWithErrors` or `unkonwnFutureValue`.|
-|createdDateTime|DateTimeOffset|The time of creation of the bulk request.|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the bulk request.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this entity.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this entity.|
-|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The start and end date time of the protection period|
-|destinationType|destinationType|Indicates the restoration destination. The possible values are: new, inPlace.|
-|tags|restorePointTags|	The type of the restore point. The possible values are none, fastRestore, unknownFutureValue|
-|restorePointPreference|restorePointPreference|Indicates which restore point to return. The possible values are oldest, latest.|
-|error|[publicError](../resources/publicerror.md)|Error details will be populated here for resource resolution failures|
+| Property               | Type                                   | Description                                                                 |
+|:-----------------------|:---------------------------------------|:---------------------------------------------------------------------------|
+| createdBy              | [identitySet](../resources/identityset.md) | The identity of the person who created the bulk request.                  |
+| createdDateTime        | DateTimeOffset                         | The time when the bulk request was created.                                  |
+| destinationType        | destinationType                        | Indicates the restoration destination. The possible values are: `new`, `inPlace`, `unknownFutureValue`. |
+| displayName            | String                                 | Name of the addition request.                                              |
+| error                  | [publicError](../resources/publicerror.md) | Error details are populated for resource resolution failures.     |
+| id                     | String                                 | The unique identifier of the bulk request associated with the restore session. |
+| lastModifiedBy         | [identitySet](../resources/identityset.md) | Identity of the person who last modified this entity.                     |
+| lastModifiedDateTime   | DateTimeOffset                         | Timestamp of the last modification of this entity.                         |
+| protectionTimePeriod   | [timePeriod](../resources/timeperiod.md) | The start and end date and time of the protection period.                      |
+| restorePointPreference | restorePointPreference                 | Indicates which restore point to return. The possible values are: `oldest`, `latest`, `unknownFutureValue`. |
+| status                 | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)      | Determines the status of the long-running operation. Possible values area: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. |
+| tags                   | restorePointTags                       | The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`. |
 
-##restoreArtifactsBulkRequestStatus
+
+### restoreArtifactsBulkRequestStatus values
+
 |Member|Description|
 |:---|:---|:---|
 |unknown|The restore session is in an indeterminate state, possibly due to a temporary system issue or error.|
-|active|The initial status upon creation of the entity is active.|
-|completed|Once all the protection resources are added into the corresponding restore session, the status of entity becomes completed. The state transition is active -> completed.|
-|completedWithErrors|In case of any failures while inserting, the status of the entity beocmes completedWithErrors. The state transition is active -> completedWithErrors.|
+|active|The initial status upon creation of the entity is `active`.|
+|completed|When all protection resources are added to the corresponding restore session, the status of the entity becomes `completed`. The state transition is from `active` to `completed`.|
+|completedWithErrors|In case of any failures during insertion, the status of the entity becomes `completedWithErrors`. The state transition is from `active` to `completedWithErrors`.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
@@ -58,29 +60,19 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.restoreArtifactsBulkRequestBase",
-  "id": "String (identifier)",
-  "status": "String",
-  "displayName": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "protectionTimePeriod": {
-    "@odata.type": "microsoft.graph.timePeriod"
-  },
-  "restorePointPreference": "String",
-  "tags": "String",
   "destinationType": "String",
-  "protectionUnitIds": [
-    "String"
-  ],
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  }
+  "displayName": "String",
+  "error": {"@odata.type": "microsoft.graph.publicError"},
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "protectionTimePeriod": {"@odata.type": "microsoft.graph.timePeriod"},
+  "protectionUnitIds": ["String"],
+  "restorePointPreference": "String",
+  "status": "String",
+  "tags": "String"
 }
 ```
 
