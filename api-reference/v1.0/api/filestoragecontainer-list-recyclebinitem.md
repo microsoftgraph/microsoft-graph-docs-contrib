@@ -20,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestoragecontainer-list-recyclebin-items-permissions"
+  "name": "filestoragecontainer-list-recyclebinitem-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-recyclebinitem-permissions.md)]
