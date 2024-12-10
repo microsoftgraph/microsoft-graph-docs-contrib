@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "snlraju-msft"
 ms.subservice: "search"
 doc_type: conceptualPageType
+ms.date: 06/04/2024
 ---
 
 # Use the Microsoft Graph connectors API

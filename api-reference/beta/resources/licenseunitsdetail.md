@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "frank-masuelli"
+ms.date: 03/21/2024
 ---
 
 # licenseUnitsDetail resource type

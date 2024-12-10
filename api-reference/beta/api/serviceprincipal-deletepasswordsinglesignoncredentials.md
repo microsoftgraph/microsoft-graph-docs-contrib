@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 10/15/2024
 ---
 
 # servicePrincipal: deletePasswordSingleSignOnCredentials
