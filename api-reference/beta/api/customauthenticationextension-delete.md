@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 10/16/2024
+ms.date: 12/10/2024
 ---
 
 # Delete customAuthenticationExtension
@@ -18,6 +18,7 @@ Delete a [customAuthenticationExtension](../resources/customauthenticationextens
 - [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+- [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -109,4 +110,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

@@ -5,7 +5,7 @@ author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 12/09/2024
+ms.date: 12/10/2024
 ---
 
 # onOtpSendCustomExtension resource type
@@ -21,18 +21,20 @@ Inherits from [customAuthenticationExtension](../resources/customauthenticatione
 
 
 ## Methods
-
-For the list of API operations for managing this resource type, see the [customAuthenticationExtension](../resources/customauthenticationextension.md) resource type.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get](../api/onemailotpsendcustomextension-get.md)|[onEmailOtpSendCustomExtension](../resources/onemailotpsendcustomextension.md)|Read the properties and relationships of an [onEmailOtpSendCustomExtension](../resources/onemailotpsendcustomextension.md) object.|
+|[Update](../api/onemailotpsendcustomextension-update.md)|[onEmailOtpSendCustomExtension](../resources/onemailotpsendcustomextension.md)|Update the properties of an [onEmailOtpSendCustomExtension](../resources/onemailotpsendcustomextension.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call. For example, using OAuth client credentials flow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define:<br/><ul><li>The allowed time that Microsoft Entra ID waits for a connection.</li><li>The number of times you can retry a timed-out connection.</li><li>The exception scenarios when retries are allowed.<br/>Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|description|String|The description for the onOtpSendCustomExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|displayName|String|The display name for the onOtpSendCustomExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the app's workflow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|id|String|The unique identifier for the onOtpSendCustomExtension object. Inherited from [entity](../resources/entity.md).|
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings that define how long Microsoft Entra ID can wait for a response from an external app. After this time, Microsoft Entra ID shuts down the connection when trying to trigger the external app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|description|String|The description for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|displayName|String|The display name for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The configuration for the API endpoint that the custom extension calls. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|behaviorOnError|[customExtensionBehaviorOnError](../resources/customextensionbehavioronerror.md)|Let to configure behavior if the call to custom authentication extension returns error. Inherited from [customAuthenticationExtension](../resources/customauthenticationextension.md). Optional.|
 
 ## Relationships
 None.
@@ -50,7 +52,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.onOtpSendCustomExtension",
-  "id": "String (identifier)",
   "authenticationConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
   },
@@ -61,6 +62,9 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "endpointConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+  },
+  "behaviorOnError": {
+    "@odata.type": "microsoft.graph.customExtensionBehaviorOnError"
   }
 }
 ```
