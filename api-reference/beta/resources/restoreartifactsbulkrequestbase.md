@@ -17,6 +17,8 @@ An abstract type that represents a bulk request associated with one of the resto
 
 Base type for [siteRestoreArtifactsBulkAdditionRequests](../resources/siterestoreartifactsbulkadditionrequest.md), [mailboxRestoreArtifactsBulkAdditionRequests](../resources/mailboxrestoreartifactsbulkadditionrequest.md), and [driveRestoreArtifactsBulkAdditionRequests](../resources/driverestoreartifactsbulkadditionrequest.md).
 
+Inherits from [entity](../resources/entity.md).
+
 ## Properties
 | Property               | Type                                   | Description                                                                 |
 |:-----------------------|:---------------------------------------|:---------------------------------------------------------------------------|
@@ -25,7 +27,7 @@ Base type for [siteRestoreArtifactsBulkAdditionRequests](../resources/siterestor
 | destinationType        | destinationType                        | Indicates the restoration destination. The possible values are: `new`, `inPlace`, `unknownFutureValue`. |
 | displayName            | String                                 | Name of the addition request.                                              |
 | error                  | [publicError](../resources/publicerror.md) | Error details are populated for resource resolution failures.     |
-| id                     | String                                 | The unique identifier of the bulk request associated with the restore session. |
+| id                     | String                                 | The unique identifier of the bulk request associated with the restore session. Inherited from [entity](../resources/entity.md). |
 | lastModifiedBy         | [identitySet](../resources/identityset.md) | Identity of the person who last modified this entity.                     |
 | lastModifiedDateTime   | DateTimeOffset                         | Timestamp when this entity was last modified.                         |
 | protectionTimePeriod   | [timePeriod](../resources/timeperiod.md) | The start and end date and time of the protection period.                      |
