@@ -201,8 +201,11 @@ Content-Type: application/json
 ### Example 2: Retrieve child tags of a specific eDiscovery review tag
 #### Request
 The following example shows a request that retrieves child tags.
-<!-- This HTTP GET request retrieves the child tags of a specific eDiscovery review tag within a given eDiscovery case in Microsoft Graph Security API. 
-Use the `$select` query option to optimize performance by selecting only the necessary properties. -->
+<!-- {
+  "blockType": "request",
+  "name": "ediscoveryreviewtagthis.childtags"
+}
+-->
 
 ``` http
 GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b6f72954-c7d0-414c-ad50-00167216cb03/tags/318f79767abf4b8fab4d8e37b3174c5a/childTags
