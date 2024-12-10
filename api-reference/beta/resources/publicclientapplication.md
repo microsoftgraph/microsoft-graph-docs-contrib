@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 08/01/2024
 ---
 
 # publicClientApplication resource type

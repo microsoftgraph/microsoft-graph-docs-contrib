@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List userSettings
@@ -56,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -102,6 +103,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 ---
 
 ### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -125,6 +127,16 @@ Content-Type: application/json
       "restorePointSetting": {
         "frequencyInHours": 16,
         "userRestoreEnabled": true
+      },
+      "crossRegionDisasterRecoverySetting": {
+        "crossRegionDisasterRecoveryEnabled": false,
+        "maintainCrossRegionRestorePointEnabled": true,
+        "disasterRecoveryNetworkSetting": {
+            "regionName": "westus",
+            "regionGroup": "usEast"
+        },
+        "disasterRecoveryType": "premium",
+        "userInitiatedDisasterRecoveryAllowed": true
       },
       "lastModifiedDateTime": "2021-02-01T10:29:57Z",
       "createdDateTime": "2021-02-01T10:29:57Z"

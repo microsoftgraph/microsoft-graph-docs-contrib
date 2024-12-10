@@ -5,6 +5,7 @@ author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 05/30/2024
 ---
 
 # contentModelUsage resource type
