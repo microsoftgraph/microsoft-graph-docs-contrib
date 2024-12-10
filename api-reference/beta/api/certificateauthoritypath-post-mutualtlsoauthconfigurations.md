@@ -59,13 +59,9 @@ You can specify the following properties when you create a **mutualTlsOauthConfi
 
 ## Response
 
-- If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
+If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body. If there is any validation failure in the certifate validation steps, the method returns a `400 Bad Request` and this message, "Unable to validation device certificate". 
 
-|Response Code|Condition|Message|
-|-|-|-|
-|`201` | Resource was created. | Request was successful. |
-|`400` | Validation failure in any of the certificate validation steps mentioned. | Unable to validate device certificate.|
+For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 

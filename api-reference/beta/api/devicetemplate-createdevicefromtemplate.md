@@ -63,8 +63,9 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-- If successful, this action returns a `200 OK` response code and a [device](../resources/device.md) in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
+If successful, this action returns a `200 OK` response code and a [device](../resources/device.md) in the response body.
+
+For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 

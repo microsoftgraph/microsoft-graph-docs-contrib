@@ -63,8 +63,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
+If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
+
+For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
