@@ -5831,7 +5831,7 @@
           "Target": "cloudPC"
         },
         {
-          "Id": "c5c280e4-1ddc-4671-aaaf-2662a0dc3aba",
+          "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
           "ApiChange": "Enumeration",
           "ChangedApiName": "frontlineCloudPcAvailability",
           "ChangeType": "Addition",
