@@ -72,8 +72,6 @@ DELETE https://graph.microsoft.com/v1.0/storageContainers/b!ISJs1WRro0y0EWgkUYck
 
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true
