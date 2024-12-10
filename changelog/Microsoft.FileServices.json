@@ -4105,7 +4105,7 @@
         {
           "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
-          "ChangedApiName": "update column",
+          "ChangedApiName": "Update",
           "ChangeType": "Addition",
           "Description": "Added the [update column](https://learn.microsoft.com/graph/api/filestoragecontainer-update-column?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
@@ -4113,7 +4113,7 @@
         {
           "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
-          "ChangedApiName": "delete deleted containers",
+          "ChangedApiName": "Delete",
           "ChangeType": "Addition",
           "Description": "Added the [delete deleted containers](https://learn.microsoft.com/graph/api/filestorage-delete-deletedcontainers?view=graph-rest-1.0) method to the [fileStorage](https://learn.microsoft.com/graph/api/resources/filestorage?view=graph-rest-1.0) resource.",
           "Target": "fileStorage"
@@ -4121,9 +4121,9 @@
         {
           "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
           "ApiChange": "Method",
-          "ChangedApiName": "list items",
+          "ChangedApiName": "List",
           "ChangeType": "Addition",
-          "Description": "Added the [list items](https://learn.microsoft.com/graph/api/recyclebin-list-items?view=graph-rest-1.0) method to the [fileStorage](https://learn.microsoft.com/graph/api/resources/fileStorage?view=graph-rest-1.0) resource.",
+          "Description": "Added the [list items](https://learn.microsoft.com/graph/api/recyclebin-list-items?view=graph-rest-1.0) method to the [recyclebin](https://learn.microsoft.com/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
           "Target": "recycleBin"
         }
       ],
