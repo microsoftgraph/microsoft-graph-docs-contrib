@@ -213,6 +213,12 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b6f72954-c7d
 
 ### Response
 The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.security.ediscoveryReviewTag)"
+}
+-->
 ```
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.security.ediscoveryReviewTag)",
