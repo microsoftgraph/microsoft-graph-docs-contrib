@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 DELETE /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
-> **Note:** The `{mutualTlsOauthConfigurationId}` in the request URL is the value of the **ID** property of the **mutualTlsOauthConfiguration** object.
+> **Note:** The `{mutualTlsOauthConfigurationId}` in the request URL is the value of the **id** property of the **mutualTlsOauthConfiguration** object.
 
 ## Request headers
 
@@ -50,14 +50,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `204 No Content` response code.
-- Mutualtlsauthconfigurations can't be deleted until all linked DeviceTemplates and their linked devices are deleted. Failure to do so results in a `400` response.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
+If successful, this method returns a `204 No Content` response code. Mutual TLS OAuth configurations can't be deleted until all linked device templates and their linked devices are deleted; otherwise, this method returns a `400 Bad Request` response code.
 
-|Response Code|Condition|Message|
-|-|-|-|
-|`204` | Request was successful. ||
-|`400` | DeviceTemplates can't be deleted until all linked devices are deleted. | Failure to do so results in a `400` response. |
+For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
@@ -72,7 +67,6 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/certificateAuthorities/mutualTlsOauthConfigurations/2d62b12a-0163-457d-9796-9602e9807e1
 ```
-
 
 ### Response
 

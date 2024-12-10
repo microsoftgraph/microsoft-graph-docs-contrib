@@ -48,17 +48,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body. Device templates can't be deleted until all linked devices are removed; otherwise, this method returns a `400 Bad Request` response code. If the caller isn't the owner of the device template, this method returns a `403 Forbidden` response code that indicates that the caller isn't authorized to create devices based on this template.
 
-> **Note:** Device templates can't be deleted until all linked devices are removed. Otherwise, this method returns a `400 Bad Request` response code.
-
-|Response Code|Condition|Message|
-|-|-|-|
-|`204` | Request was successful. ||
-|`400` | DeviceTemplates can't be deleted until all linked devices are deleted. | Failure to do so results in a `400` response. |
-|`403` | Caller isn't owner of the `deviceTemplate`. | Caller isn't allowed to create devices based on this template. |
-
+For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
@@ -71,9 +63,8 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1
+DELETE https://graph.microsoft.com/beta/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1
 ```
-
 
 ### Response
 
