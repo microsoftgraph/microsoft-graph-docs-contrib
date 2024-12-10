@@ -23,8 +23,8 @@ Inherits from [customAuthenticationExtension](../resources/customauthenticatione
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/onemailotpsendcustomextension-get.md)|[onEmailOtpSendCustomExtension](../resources/onemailotpsendcustomextension.md)|Read the properties and relationships of an [onEmailOtpSendCustomExtension](../resources/onemailotpsendcustomextension.md) object.|
-|[Update](../api/onemailotpsendcustomextension-update.md)|[onEmailOtpSendCustomExtension](../resources/onemailotpsendcustomextension.md)|Update the properties of an [onEmailOtpSendCustomExtension](../resources/onemailotpsendcustomextension.md) object.|
+|[Get](../api/onotpsendcustomextension-get.md)|[onOtpSendCustomExtension](../resources/onotpsendcustomextension.md)|Read the properties and relationships of an [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) object.|
+|[Update](../api/onotpsendcustomextension-update.md)|[onOtpSendCustomExtension](../resources/onotpsendcustomextension.md)|Update the properties of an [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) object.|
 
 ## Properties
 |Property|Type|Description|
