@@ -2,6 +2,7 @@
 title: "cloudPcReports: retrieveCloudPcTroubleshootReports"
 description: "Get troubleshoot related reports for CloudPCs. This report is used to get the details for Cloud PCs which includessageInsight, currentSize, currentCPU, currentRamInGB, CurrentDiskInGB, RecommendedSize, RecommendedCPU, RecommendedRamInGB, RecommendedDiskInGB, ProvisionPolicyId, ProvisionPolicyName, RoundTripTimeInMsAvg, AvailableBandwidthInMbpsAvg. It can also be the daily overview issue insight of Cloud PCs including usageInsight, issueType, issueCount, issueTrend. It can also get daily  regional details report for Cloud PCs including hostRegion, gatewayRegion, avgRoundTripTimeInMs, avgBandwidthInMbps, connectionErrorCount, RTTIssueCount, connectionQualityIssueCount, stabilityIssueCount."
 author: "abbyzhccc"
+ms.date: 12/10/2024
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
@@ -15,17 +16,16 @@ Namespace: microsoft.graph
 
 Get troubleshoot related reports for CloudPCs. This report is used to get the details for Cloud PCs which includessageInsight, currentSize, currentCPU, currentRamInGB, CurrentDiskInGB, RecommendedSize, RecommendedCPU, RecommendedRamInGB, RecommendedDiskInGB, ProvisionPolicyId, ProvisionPolicyName, RoundTripTimeInMsAvg, AvailableBandwidthInMbpsAvg. It can also be the daily overview issue insight of Cloud PCs including usageInsight, issueType, issueCount, issueTrend. It can also get daily  regional details report for Cloud PCs including hostRegion, gatewayRegion, avgRoundTripTimeInMs, avgBandwidthInMbps, connectionErrorCount, RTTIssueCount, connectionQualityIssueCount, stabilityIssueCount.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All|CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|CloudPC.Read.All|CloudPC.ReadWrite.All|
+<!-- {
+  "blockType": "permissions",
+  "name": "intune-cloudpcreports-retrievecloudpctroubleshootreports-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/intune-cloudpcreports-retrievecloudpctroubleshootreports-permissions.md)]
 
 ## HTTP request
 
@@ -48,7 +48,7 @@ POST /deviceManagement/virtualEndpoint/reports/retrieveCloudPcTroubleshootReport
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this method.
+The following table lists the parameters that are required when you call this action.
 
 | Parameter | Type              | Description                                                                                            |
 |:----------|:------------------|:-------------------------------------------------------------------------------------------------------|
@@ -60,19 +60,25 @@ The following table shows the parameters that can be used with this method.
 | skip      | Int32             | Number of records to skip.                                                                             |
 | top       | Int32             | The number of top records to return. If not specified, the default limit is 25, with a maximum of 100. |
 
+
+
 ## Response
 
-If successful, this method returns a `200 OK` response code and a stream object in the response body.
+If successful, this action returns a `200 OK` response code and a Stream in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
-
+<!-- {
+  "blockType": "request",
+  "name": "cloudpcreportsthis.retrievecloudpctroubleshootreports"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcTroubleshootReports
-Content-Type: application/octet-stream
+Content-Type: application/json
 
 {
     "filter": "",
@@ -88,9 +94,7 @@ Content-Type: application/octet-stream
 ### Response
 
 The following example shows the response.
-
 >**Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,10 +103,10 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/octet-stream
+Content-Type: application/json
 
 {
-  "TotalRowCount": 1,
+"TotalRowCount": 1,
     "Schema": [
         {
             "Column": "CloudPcId",
@@ -116,7 +120,6 @@ Content-Type: application/octet-stream
             "Column": "UserPrincipalName",
             "PropertyType": "String"
         },
-
         {
             "Column": "UsageInsight",
             "PropertyType": "String"
@@ -174,3 +177,4 @@ Content-Type: application/octet-stream
     ]
 }
 ```
+
