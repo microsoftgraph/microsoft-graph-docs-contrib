@@ -3922,41 +3922,7 @@
           "WorkloadArea": "Files",
           "SubArea": ""
         },
-      {
-      "ChangeList": [
         {
-          "Id": "0f77ee77-b165-4c79-80bc-e753f678b99b",
-          "ApiChange": "Method",
-          "ChangedApiName": "Delete",
-          "ChangeType": "Change",
-          "Description": "Renamed the method [delete recyclebinitem](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-recyclebinitem?view=graph-rest-beta).",
-          "Target": "filestoragecontainer"
-        },
-        {
-          "Id": "0f77ee77-b165-4c79-80bc-e753f678b99b",
-          "ApiChange": "Method",
-          "ChangedApiName": "List",
-          "ChangeType": "Change",
-          "Description": "Renamed the method [list recyclebiniten](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-recyclebinitem?view=graph-rest-beta).",
-          "Target": "filestoragecontainer"
-        },
-        {
-          "Id": "0f77ee77-b165-4c79-80bc-e753f678b99b",
-          "ApiChange": "Method",
-          "ChangedApiName": "Restore",
-          "ChangeType": "Change",
-          "Description": "Renamed the method [restore recyclebinitem](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore-recyclebinitem?view=graph-rest-beta).",
-          "Target": "filestoragecontainer"
-        }
-      ],
-      "Id": "0f77ee77-b165-4c79-80bc-e753f674b99b",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-12-09T00:22:43.7380419Z",
-      "WorkloadArea": "Files",
-      "SubArea": ""
-    },
-    {
       "ChangeList": [
         {
           "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
