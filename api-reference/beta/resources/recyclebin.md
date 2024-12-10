@@ -22,7 +22,7 @@ Inherits from [baseItem](baseitem.md).
 
 | Method | Return Type | Description |
 |:----------------------------------|:------------------------------------------|:---------------------------------------------------|
-| [List](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).|
+| [List items](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).|
 
 ## Properties
 
