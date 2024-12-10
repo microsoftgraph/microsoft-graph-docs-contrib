@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "intune-cloudpcreports-retrievecloudpctroubleshootreports-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/intune-cloudpcreports-retrievecloudpctroubleshootreports-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcreports-retrievecloudpctroubleshootreports-permissions.md)]
 
 ## HTTP request
 
