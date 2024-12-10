@@ -1,6 +1,6 @@
 ---
 title: "siteRestoreArtifactsBulkAdditionRequest resource type"
-description: "Represents the list of SharePoint site URLs to be added into the corresponding SharePoint Restore Session."
+description: "Represents the properties of a siteRestoreArtifactsBulkAdditionRequest associated with a SharePoint restore sesssion."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -35,13 +35,13 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 | id                         | String                    | The unique identifier of the bulk request associated with the restore session. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | lastModifiedBy             | [identitySet](../resources/identityset.md) | Identity of the person who last modified this entity. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | lastModifiedDateTime       | DateTimeOffset            | Timestamp when this entity was last modified. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).   |
-| protectionTimePeriod       | timePeriod                | The start and end date time of the protection period. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
+| protectionTimePeriod       | [timePeriod](../resources/timeperiod.md)                | The start and end date time of the protection period. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | protectionUnitIds          | String collection         | Indicates which protection units to restore. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
-| restorePointPreference     | restorePointPreference    | Indicates which restore point to return. The possible values are `oldest`, `latest`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
+| restorePointPreference     | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)    | Indicates which restore point to return. The possible values are `oldest`, `latest`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | restorePointTags           | restorePointTags          | The type of the restore point. The possible values are `none`, `fastRestore`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | siteIds                    | String collection         | Indicates which site IDs to restore.                                                                                                   |
 | siteWebUrls                | String collection         | The list of SharePoint site URLs.                                                                                     |
-| status                     | RestoreArtifactsBulkRequestStatus | Determines the status of the long-running operation. The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
+| status                     | RestoreArtifactsBulkRequestStatus | The status of the long-running operation. The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | tags                       | restorePointTags          | The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 
 ## Relationships
