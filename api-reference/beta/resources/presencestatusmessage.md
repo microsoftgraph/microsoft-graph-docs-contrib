@@ -5,6 +5,7 @@ author: "afedorov"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # presenceStatusMessage resource type

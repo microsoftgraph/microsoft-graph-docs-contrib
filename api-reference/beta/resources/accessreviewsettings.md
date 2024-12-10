@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # accessReviewSettings resource type (deprecated)
