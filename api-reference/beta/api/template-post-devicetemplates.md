@@ -69,8 +69,8 @@ You can specify the following properties when you create a **deviceTemplate**.
 
 |Response Code|Condition|Message|
 |-|-|-|
-|`201` | Resource was created |Request was successful|
-|`400` | Validation failure in any of the certificate validation steps mentioned | Unable to validate device certificate|
+|`201` | Resource was created. |Request was successful. |
+|`400` | Validation failure in any of the certificate validation steps mentioned. | Unable to validate device certificate.|
 
 
 ## Examples

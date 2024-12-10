@@ -34,8 +34,8 @@ The `devicetemplate` is immutable.
 
 ## Properties
 |Property|Type|Description|
-|:---|:---|:---|                                                                      |
-| deviceAuthority                    | String            | A generic term that can refer to the device manufacturer or a reseller or supplier responsible for provisioning and managing devices on a customer's AAD tenant. For example, Acme (**manufacturer**) makes security cameras installed in customer buildings and managed by ABC Company (**deviceAuthority**). |
+|:---|:---|:---|                                                                      
+| deviceAuthority                    | String            | A generic term that can refer to the device manufacturer or a reseller or supplier responsible for provisioning and managing devices on a customer's EntraID tenant. For example, Acme (**manufacturer**) makes security cameras installed in customer buildings and managed by ABC Company (**deviceAuthority**). |
 | id                                 | String            | Inherited from [directoryObject](../resources/directoryobject.md).                                                                                  |
 | manufacturer                       | String            | Manufacturer name.                                                                                                                                     |
 | model                              | String            | Model name.                                                                                                                                           |

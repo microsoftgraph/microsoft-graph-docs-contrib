@@ -56,7 +56,7 @@ Don't supply a request body for this method.
 
 |Response Code|Condition|Message|
 |-|-|-|
-|`204` | Request was successful ||
+|`204` | Request was successful. ||
 |`400` | DeviceTemplates can't be deleted until all linked devices are deleted. | Failure to do so results in a `400` response. |
 
 ## Examples

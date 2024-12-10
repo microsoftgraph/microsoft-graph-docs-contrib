@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of the parameters.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.id|String|A string associated with the OID of the target user/service principal in the form of: `https://graph.microsoft.com/beta/users/{id}` or `https://graph.microsoft.com/beta/serviceprincipals/{id}`|
+|@odata.id|String|A string associated with the OID of the target user/service principal in the form of: `https://graph.microsoft.com/beta/users/{id}` or `https://graph.microsoft.com/beta/serviceprincipals/{id}`. |
 
 ## Response
 

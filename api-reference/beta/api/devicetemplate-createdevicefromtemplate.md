@@ -55,11 +55,11 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |externalDeviceId|String|UUID of the device by IoT registry. Must be unique within a tenant.|
-|operatingSystemVersion|String|Operating System of the device specified |
-|externalSourceName|String|String identifying the SourceName of the device |
-|keyCredential|[keyCredential](../resources/keycredential.md)| String representing the key credential when using self-signed certs|
+|operatingSystemVersion|String|Operating System of the device specified. |
+|externalSourceName|String|String identifying the SourceName of the device. |
+|keyCredential|[keyCredential](../resources/keycredential.md)| String representing the key credential when using self-signed certs. |
 |accountEnabled|Boolean|`true` if the account is enabled; otherwise, `false`. Default is `true`. A disabled device cannot authenticate with Entra ID.|
-|alternativeNames|String collection|A colleciton of ARM Resource IDs associated with device if any.|
+|alternativeNames|String collection|A collection of ARM Resource IDs associated with device if any.|
 
 ## Response
 

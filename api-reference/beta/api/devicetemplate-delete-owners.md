@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+- If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 - Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 > **Note:** DeviceTemplates cannot be deleted until all linked devices are deleted. Failure to do so will result in a `400` response.
@@ -56,9 +56,9 @@ Don't supply a request body for this method.
 
 |Response Code|Condition|Message|
 |-|-|-|
-|`204` | Request was successful ||
+|`204` | Request was successful. ||
 |`400` | DeviceTemplates cannot be deleted until all linked devices are deleted. | Failure to do so will result in a `400` response. |
-|`403` | Caller is not owner of the `deviceTemplate`| Caller is not allowed to create devices based on this template|
+|`403` | Caller is not owner of the `deviceTemplate`. | Caller is not allowed to create devices based on this template. |
 
 ## Examples
 
