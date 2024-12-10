@@ -64,7 +64,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "restore_filestoragecontainer_recyclebin_items",
+  "name": "restore_filestoragecontainer_recyclebinitem",
   "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
 }
 -->
@@ -79,7 +79,7 @@ Content-Type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restore-filestoragecontainer-recyclebin-items-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/restore-filestoragecontainer-recyclebinitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
