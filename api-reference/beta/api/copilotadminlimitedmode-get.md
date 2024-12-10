@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/copilot/admin/settings/limitedMode
 
 ---
 
-
 ### Response
 
 The following example shows the response.

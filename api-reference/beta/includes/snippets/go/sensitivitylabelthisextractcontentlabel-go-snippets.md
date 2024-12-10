@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphusers.UserItemSecurityInformationProtectionSensitivityLabelsMicrosoft.graph.security.extractContentLabelRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.ItemSecurityInformationProtectionSensitivityLabelsMicrosoft.graph.security.extractContentLabelRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphusers.NewExtractContentLabelPostRequestBody()
