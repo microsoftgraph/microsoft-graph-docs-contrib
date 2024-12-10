@@ -1,6 +1,6 @@
 ---
-title: "List recycleBinItems"
-description: "Get a list of recycleBinItems from a fileStorageContainer recycleBin."
+title: "List recycleBinItem"
+description: "Get a list of recycleBinItem objects from a fileStorageContainer recycleBin."
 author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 11/14/2024
 ---
 
-# List recycleBinItems
+# List recycleBinItem
 
 Namespace: microsoft.graph
 
