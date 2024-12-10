@@ -5,7 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/04/2024
 ---
 
 # Get cloudPcUserSetting
@@ -129,6 +129,16 @@ Content-Type: application/json
       "frequencyType": "sixteenHours",
       "userRestoreEnabled": true
     },
+    "crossRegionDisasterRecoverySetting": {
+      "crossRegionDisasterRecoveryEnabled": false,
+      "maintainCrossRegionRestorePointEnabled": true,
+      "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
+    },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z"
   }
@@ -209,6 +219,16 @@ Content-Type: application/json
       "frequencyInHours": 16,
       "frequencyType": "sixteenHours",
       "userRestoreEnabled": true
+    },
+    "crossRegionDisasterRecoverySetting": {
+      "crossRegionDisasterRecoveryEnabled": false,
+      "maintainCrossRegionRestorePointEnabled": true,
+      "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
     },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z",

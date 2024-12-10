@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
 toc.title: "FQDN filtering rule"
+ms.date: 09/23/2024
 ---
 
 # fqdnFilteringRule resource type

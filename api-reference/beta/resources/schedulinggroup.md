@@ -5,6 +5,7 @@ author: shanemalone
 ms.localizationpriority: high
 ms.subservice: teams
 doc_type: resourcePageType
+ms.date: 07/08/2024
 ---
 
 # schedulingGroup resource type
