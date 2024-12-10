@@ -5,7 +5,7 @@
         {
           "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
           "ApiChange": "Method",
-          "ChangedApiName": "virtualEventTownhall",
+          "ChangedApiName": "List",
           "ChangeType": "Addition",
           "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-list-townhalls?view=graph-rest-1.0) operation to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0) resource.",
           "Target": "virtualEventTownhall"
@@ -59,7 +59,7 @@
           "Target": "virtualEventWebinar"
         },
         {
-          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293,
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
           "ApiChange": "Method",
           "ChangedApiName": "setExternalEventInformation",
           "ChangeType": "Addition",
