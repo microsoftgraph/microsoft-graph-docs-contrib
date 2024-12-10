@@ -5,7 +5,7 @@ author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 11/14/2024
+ms.date: 12/10/2024
 ---
 
 # Remove deleted fileStorageContainer
