@@ -27,12 +27,11 @@ Base type for [siteRestoreArtifactsBulkAdditionRequests](../resources/siterestor
 | error                  | [publicError](../resources/publicerror.md) | Error details are populated for resource resolution failures.     |
 | id                     | String                                 | The unique identifier of the bulk request associated with the restore session. |
 | lastModifiedBy         | [identitySet](../resources/identityset.md) | Identity of the person who last modified this entity.                     |
-| lastModifiedDateTime   | DateTimeOffset                         | Timestamp of the last modification of this entity.                         |
+| lastModifiedDateTime   | DateTimeOffset                         | Timestamp when this entity was last modified.                         |
 | protectionTimePeriod   | [timePeriod](../resources/timeperiod.md) | The start and end date and time of the protection period.                      |
 | restorePointPreference | restorePointPreference                 | Indicates which restore point to return. The possible values are: `oldest`, `latest`, `unknownFutureValue`. |
-| status                 | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)      | Determines the status of the long-running operation. Possible values area: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. |
+| status                 | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)      | Determines the status of the long-running operation. The possible values area: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. |
 | tags                   | restorePointTags                       | The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`. |
-
 
 ### restoreArtifactsBulkRequestStatus values
 
