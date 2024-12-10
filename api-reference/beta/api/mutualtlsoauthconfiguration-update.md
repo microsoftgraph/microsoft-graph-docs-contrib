@@ -65,7 +65,8 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 
 ## Response
 
-If successful, this method returns a `204 Ok` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body.
+- If successful, this method returns a `204 Ok` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body.
+- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 |Response Code|Condition|Message|
 |-|-|-|

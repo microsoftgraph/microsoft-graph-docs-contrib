@@ -52,7 +52,8 @@ In the request body, supply a JSON representation of the parameters.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
+- If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 ## Examples
 
@@ -85,9 +86,5 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.directoryObject"
-}
 ```
 

@@ -47,7 +47,8 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
+- If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
+- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 > **Note:** DeviceTemplates can't be deleted until all linked devices are deleted. Failure to do so results in a `400` response.
 
