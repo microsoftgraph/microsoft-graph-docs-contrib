@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 author: "spgraph-docs-team"
+ms.date: 04/05/2024
 ---
 
 # List sites

@@ -5,6 +5,7 @@ author: "vibehavjha"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
+ms.date: 09/27/2024
 ---
 
 # fileStorageContainerSettings resource type

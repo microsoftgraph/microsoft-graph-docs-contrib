@@ -5,6 +5,7 @@ author: "egreenberg14"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
+ms.date: 03/21/2024
 ---
 
 # targetResource resource type

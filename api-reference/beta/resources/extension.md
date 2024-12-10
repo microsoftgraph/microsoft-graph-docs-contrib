@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "dkershaw10"
+ms.date: 03/21/2024
 ---
 
 # extension resource type
@@ -36,7 +37,7 @@ The following JSON representation shows the resource type.
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
+|id|String| The identifier for the extension. Read-only.|
 
 ## Relationships
 None

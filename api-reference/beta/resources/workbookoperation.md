@@ -6,6 +6,7 @@ author: "grangeryy"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
 toc.title: Operation
+ms.date: 07/17/2024
 ---
 
 # workbookOperation resource type
