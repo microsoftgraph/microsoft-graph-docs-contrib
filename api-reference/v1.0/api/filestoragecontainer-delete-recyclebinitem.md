@@ -20,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestoragecontainer-delete-recyclebin-items-permissions"
+  "name": "filestoragecontainer-delete-recyclebinitem-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-recyclebinitem-permissions.md)]

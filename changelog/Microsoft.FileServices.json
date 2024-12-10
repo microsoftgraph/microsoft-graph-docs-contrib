@@ -3953,7 +3953,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delete recyclebinitem",
           "ChangeType": "Addition",
-          "Description": "Added the [delete recyclebinitem](https://learn.microsoft.com/graph/api/fileStorageContainer-delete-recyclebin-items?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/fileStorageContainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delete recyclebinitem](https://learn.microsoft.com/graph/api/fileStorageContainer-delete-recyclebinitem?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/fileStorageContainer?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
         },
         {
