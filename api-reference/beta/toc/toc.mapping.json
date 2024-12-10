@@ -1535,6 +1535,7 @@
                 "customAuthenticationExtension",
                 "onAttributeCollectionStartCustomExtension",
                 "onAttributeCollectionSubmitCustomExtension",
+                "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
