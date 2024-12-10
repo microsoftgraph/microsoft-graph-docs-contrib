@@ -198,12 +198,24 @@ items:
     href: ../../api/filestoragecontainer-restore-recyclebinitem.md
   - name: Delete recycle bin items
     href: ../../api/filestoragecontainer-delete-recyclebinitem.md
-  - name: Get recycle bin items
+  - name: List recycle bin items
     href: ../../api/filestoragecontainer-list-recyclebinitem.md
   - name: Lock
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
+- name: Recycle bin
+  items:
+  - name: Recycle bin
+    href: ../../resources/recyclebin.md
+  - name: List items
+    href: ../../api/recyclebin-list-items.md
+- name: Recycle bin item
+  items:
+  - name: Recycle bin item
+    href: ../../resources/recyclebinitem.md
+  - name: List
+    href: ../../api/recyclebin-list-items.md
 - name: Shared drive item
   items:
   - name: Shared drive item

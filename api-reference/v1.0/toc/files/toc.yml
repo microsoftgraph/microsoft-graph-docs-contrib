@@ -198,6 +198,12 @@ items:
     href: ../../resources/shareddriveitem.md
   - name: Use sharing links
     href: ../../api/shares-get.md
+- name: Recycle bin
+  items:
+  - name: Recycle bin
+    href: ../../resources/recyclebin.md
+  - name: List items
+    href: ../../api/recyclebin-list-items.md
 - name: Recycle bin item
   items:
   - name: Recycle bin item
