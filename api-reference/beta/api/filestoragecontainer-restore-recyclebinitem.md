@@ -1,5 +1,5 @@
 ---
-title: "Restore recycleBinitem"
+title: "Restore recycleBinItem"
 description: "Restore recycleBinitem objects to a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/01/2024
 ---
 
-# Restore recyclebinitem
+# Restore recycleBinItem
 
 Namespace: microsoft.graph
 

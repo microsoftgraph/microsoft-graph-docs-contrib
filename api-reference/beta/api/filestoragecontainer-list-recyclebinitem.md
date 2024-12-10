@@ -1,5 +1,5 @@
 ---
-title: "List recyclebinitem"
+title: "List recycleBinItem"
 description: "Get a list of recyclebinitem objects from a fileStorageContainer recycleBin."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/14/2024
 ---
 
-# List recyclebinitem
+# List recycleBinItem
 
 Namespace: microsoft.graph
 

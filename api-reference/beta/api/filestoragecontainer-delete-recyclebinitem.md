@@ -1,5 +1,5 @@
 ---
-title: "Delete recyclebintem"
+title: "Delete recycleBinItem"
 description: "Delete items from fileStorageContainer recycleBin."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/01/2024
 ---
 
-# Delete recyclebinitem
+# Delete recycleBinItem
 
 Namespace: microsoft.graph
 
