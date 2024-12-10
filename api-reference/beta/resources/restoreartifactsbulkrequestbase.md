@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Restore artifacts bulk request
-
 ---
 
 # restoreArtifactsBulkRequestBase resource type
