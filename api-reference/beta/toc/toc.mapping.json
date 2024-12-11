@@ -2296,13 +2296,6 @@
                   ]
                 },
                 {
-                  "name": "Microsoft 365 monitoring (preview)",
-                  "overview": "../../resources/m365-monitoring-api-overview.md",
-                  "resources": [
-                    "serviceActivity"
-                  ]
-                },
-                {
                   "name": "Microsoft Entra Health (preview)",
                   "childNodes": [
                     {
@@ -2352,6 +2345,13 @@
                 "provisioningObjectSummary"
               ]
             }
+          ]
+        },
+        {
+          "name": "Microsoft 365 monitoring reports (preview)",
+          "overview": "../../resources/m365-monitoring-api-overview.md",
+          "resources": [
+            "serviceActivity"
           ]
         },
         {
