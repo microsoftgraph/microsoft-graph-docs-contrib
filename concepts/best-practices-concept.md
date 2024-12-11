@@ -160,3 +160,4 @@ To ensure reliability and facilitate support for your application:
 - Generate a unique GUID and send it on each Microsoft Graph REST request. This helps Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
   - On every request to Microsoft Graph, generate a unique GUID, send it in the `client-request-id` HTTP request header, and also log it in your application's logs.
   - Always log the `request-id` and `Date` from the HTTP response headers. These, together with the `client-request-id`, are required when reporting issues in [Microsoft Q&A](/answers/products/m365#microsoft-graph) or to Microsoft Support.
+  - If you are using a third-party application, you will need to enagage the vendor with our support team in order to be able to investigate any issue in the third-party application.
