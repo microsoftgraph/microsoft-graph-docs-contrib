@@ -6,7 +6,6 @@ author: "sandeo-MSFT"
 ms.date: 12/02/2024
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
-ms.date: 11/26/2024
 ---
 
 # device resource type

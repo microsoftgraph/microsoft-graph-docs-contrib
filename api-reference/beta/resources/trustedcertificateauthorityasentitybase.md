@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.date: 11/24/2024
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
 ---
 
 # trustedCertificateAuthorityAsEntityBase resource type
