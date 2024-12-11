@@ -5,16 +5,14 @@ description: "Represents information about a deleted item in a recycleBin of a S
 ms.localizationpriority: "medium"
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
-ms.date: 05/23/2024
+ms.date: 12/10/2024
 ---
 
 # recycleBinItem resource type
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents information about a deleted item in a [recycleBin](recyclebin.md) of a SharePoint [site](site.md).
+Represents information about a deleted item in a [recycleBin](recyclebin.md) of a SharePoint [site](site.md) or a SharePoint Embedded fileStorageContainer.
 
 Inherits from [baseItem](baseitem.md).
 
@@ -26,16 +24,15 @@ Inherits from [baseItem](baseitem.md).
 |[Delete](../api/filestoragecontainer-delete-recyclebinitem.md)|None.|Permanently delete **recycleBinItem** objects from the [recycleBin](../resources/recyclebin.md) of a **fileStorageContainer**.|
 |[Restore](../api/filestoragecontainer-restore-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore **recycleBinItem** objects from the [recycleBin](../resources/recyclebin.md) of a **fileStorageContainer**.|
 
-
 ## Properties
 
-| Property            | Type           |Description   |
-|:--------------------|:---------------|:--------------------------------------------------------------------------------------|
+| Property            | Type           | Description                                                                                                                                                                                                      |
+|:--------------------|:---------------|:------------------|
 | deletedDateTime     | DateTimeOffset | Date and time when the item was deleted. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| deletedFromLocation | String         | Relative URL of the list or folder that originally contained the item.                                                                                                                                           |
-| id                  | String         | Unique identifier of the delete transaction. Inherited from [baseItem](baseitem.md).                                                                                                                             |
-| name                | String         | Name of the item. Inherited from [baseItem](baseitem.md).                                                                                                                                                        |
-| size                | Int64          | Size of the item in bytes.                                                                                                                                                                                       |
+| deletedFromLocation | String         | Relative URL of the list or folder that originally contained the item. |                                                                                                                                 
+| id                  | String         | Unique identifier of the delete transaction. Inherited from [baseItem](baseitem.md). |                                                                                                                            
+| name                | String         | Name of the item. Inherited from [baseItem](baseitem.md). |                                                                                                                                                       
+| size                | Int64          | Size of the item in bytes. |                                                                                                                                                                             
 
 ## JSON Representation
 

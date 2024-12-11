@@ -943,6 +943,8 @@
         "bundle",
         "permission",
         "fileStorageContainer",
+        "recycleBin",
+        "recycleBinItem",
         "sharedDriveItem"
       ]
     },
