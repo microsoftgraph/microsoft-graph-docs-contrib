@@ -5,6 +5,7 @@ author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 12/11/2024
 ---
 
 # Get siteRestoreArtifactsBulkAdditionRequest
@@ -41,8 +42,6 @@ GET /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSession
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json|
-|Application|application/json|
 
 ## Request body
 
@@ -81,38 +80,45 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.siteRestoreArtifactsBulkAdditionRequest",
-    "id": "b246ac99-4184-48ed-b7ff-9c2a7af69757",
-    "status": "active",
-    "displayName": "String",
-    "createdDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "protectionTimePeriod": {
-      "@odata.type": "microsoft.graph.timePeriod"
-    },
-    "restorePointPreference": "String",
-    "tags": "String",
-    "destinationType": "String",
-    "protectionUnitIds": [
-      "String"
-    ],
-    "error": {
-      "@odata.type": "microsoft.graph.publicError"
-    },
-    "siteWebUrls": [
-      "String"
-    ],
-    "siteIds": [
-      "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/backupRestore/sharePointRestoreSessions('f25015f4-6bb2-46cb-b800-a8ec86a02815')/siteRestoreArtifactsBulkAdditionRequests",
+    "value": [
+        {
+            "id": "7ab93651-5029-4fcd-b263-5dcabad61e8d",
+            "destinationType": "new",
+            "tags": "fastRestore",
+            "restorePointPreference": "latest",
+            "displayName": "spo-BulkRestoreArtifacts",
+            "status": "completedWithErrors",
+            "createdDateTime": "2024-12-04T09:22:34.5159056Z",
+            "lastModifiedDateTime": "2024-12-04T09:25:30.2641799Z",
+            "siteWebUrls": [],
+            "protectionTimePeriod": {
+                "startDateTime": "2024-01-01T00:00:00Z",
+                "endDateTime": "2024-01-08T00:00:00Z"
+            },
+            "createdBy": {
+                "user": {
+                    "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
+                }
+            },
+            "error": {
+                "code": "BulkRestoreArtifactsNotFound",
+                "message": "Errors while resolving restore artifacts",
+                "details": [
+                    {
+                        "code": "SiteUrlNotFound",
+                        "message": "Site url 'https://contoso.com' could not be resolved",
+                        "target": "https://contoso.com"
+                    }
+                ]
+            }
+        }
     ]
-  }
 }
 ```
 

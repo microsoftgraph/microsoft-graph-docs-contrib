@@ -5,6 +5,7 @@ author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 12/11/2024
 ---
 
 # mailboxRestoreArtifactsBulkAdditionRequest resource type
@@ -39,7 +40,6 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 | lastModifiedDateTime       | DateTimeOffset            | Timestamp when this entity was last modified. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).   |
 | mailboxes                  | String collection         | The list of email addresses. |
 | protectionTimePeriod       | [timePeriod](../resources/timeperiod.md)                | The start and end date time of the protection period. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
-| protectionUnitIds          | String collection         | Indicates which protection units to restore. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | restorePointPreference     | restorePointPreference    | Indicates which restore point to return. The possible values are: `oldest`, `latest`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | status                     | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)   | The status of the long-running operation. The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, or `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | tags                       | restorePointTags          | The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
@@ -70,7 +70,6 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)",
   "mailboxes": ["String"],
   "protectionTimePeriod": {"@odata.type": "microsoft.graph.timePeriod"},
-  "protectionUnitIds": ["String"],
   "restorePointPreference": "String",
   "status": "String",
   "tags": "String"

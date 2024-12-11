@@ -5,6 +5,7 @@ author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 12/11/2024
 ---
 
 # List mailboxRestoreArtifactsBulkAdditionRequests
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [maiboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) objects associated with a [exchangeRestoreSession](../resources/exchangerestoresession.md).
-The 'mailboxes' fields are deliberately omitted from the response body in order to limit the response size.
+The `mailboxes` fields are deliberately omitted from the response body in order to limit the response size.
 
 ## Permissions
 
