@@ -1,6 +1,6 @@
 ---
 title: "meetingAttendanceReport resource type"
-description: "Contains information associated with a meeting attendance report."
+description: "Represents information associated with a meeting attendance report."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information associated with a meeting attendance report for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md).
+Represents information associated with a meeting attendance report for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md).
 
 Meeting attendance reports are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
@@ -29,10 +29,10 @@ Meeting attendance reports are online meeting artifacts. For details, see [Onlin
 
 | Property              | Type                                               | Description                     |
 |:----------------------|:---------------------------------------------------|:--------------------------------|
-| id                    | String   | Unique identifier for the attendance report. Read-only. |
-| meetingEndDateTime    | DateTimeOffset | UTC time when the meeting ended. Read-only.   |
-| meetingStartDateTime  | DateTimeOffset | UTC time when the meeting started. Read-only.   |
-| totalParticipantCount | Int32 | Total number of participants. Read-only.  |
+| id                    | String   | The unique identifier for the attendance report. Read-only. |
+| meetingEndDateTime    | DateTimeOffset | The UTC time when the meeting ended. Read-only.   |
+| meetingStartDateTime  | DateTimeOffset | The UTC time when the meeting started. Read-only.   |
+| totalParticipantCount | Int32 | The total number of participants. Read-only.  |
 
 ## Relationships
 

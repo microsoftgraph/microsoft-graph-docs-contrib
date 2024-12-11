@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and their properties.
 
 > [!TIP]
-> A more convenient way to retrieve attendance records is to get them in line with an attendance report by using the `expand` query option. For an example and more details, see [Get attendance report](meetingattendancereport-get.md).
+> You can also retrieve attendance records from an attendance report by using the `expand` query option. For an example and more details, see [Get attendance report](meetingattendancereport-get.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "attendancerecord_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/attendancerecord-list-permissions.md)]
 
-To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This access policy authorizes the app to fetch online meetings and/or online meeting artifacts on behalf of the user by specifying the user ID in the request path. For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## HTTP request
 
@@ -44,11 +44,15 @@ To get attendance records of a webinar session's attendance report with delegate
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
->- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
->- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
->- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
->- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
->- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
+The following table shows the meanings of the parameters in the previous HTTP request examples.
+
+|Parameter|Description|
+|:--------|:----------|
+|`userId`|The object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).|
+`meetingId`|The **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.|
+`reportId`|The **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.|
+`webinarId`|The **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.|
+`sessionId`|The **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.|
 
 ## Optional query parameters
 
