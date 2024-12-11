@@ -16,22 +16,26 @@ import (
 )
 
 requestBody := graphmodels.NewWorkforceIntegration()
-displayName := "displayName-value"
+displayName := "ABCWorkforceIntegration"
 requestBody.SetDisplayName(&displayName) 
-apiVersion := int32(99)
+apiVersion := int32(1)
 requestBody.SetApiVersion(&apiVersion) 
-encryption := graphmodels.NewWorkforceIntegrationEncryption()
-protocol := graphmodels.PROTOCOL-VALUE_WORKFORCEINTEGRATIONENCRYPTIONPROTOCOL 
-encryption.SetProtocol(&protocol) 
-secret := "secret-value"
-encryption.SetSecret(&secret) 
-requestBody.SetEncryption(encryption)
 isActive := true
 requestBody.SetIsActive(&isActive) 
-url := "url-value"
+encryption := graphmodels.NewWorkforceIntegrationEncryption()
+protocol := graphmodels.SHAREDSECRET_WORKFORCEINTEGRATIONENCRYPTIONPROTOCOL 
+encryption.SetProtocol(&protocol) 
+secret := "My Secret"
+encryption.SetSecret(&secret) 
+requestBody.SetEncryption(encryption)
+url := "https://ABCWorkforceIntegration.com/Contoso/"
 requestBody.SetUrl(&url) 
-supportedEntities := graphmodels.SUPPORTEDENTITIES-VALUE_WORKFORCEINTEGRATIONSUPPORTEDENTITIES 
+supportedEntities := graphmodels.SHIFT,SWAPREQUEST_WORKFORCEINTEGRATIONSUPPORTEDENTITIES 
 requestBody.SetSupportedEntities(&supportedEntities) 
+additionalData := map[string]interface{}{
+	"eligibilityFilteringEnabledEntities" : "SwapRequest", 
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 workforceIntegrations, err := graphClient.Teamwork().WorkforceIntegrations().ByWorkforceIntegrationId("workforceIntegration-id").Patch(context.Background(), requestBody, nil)

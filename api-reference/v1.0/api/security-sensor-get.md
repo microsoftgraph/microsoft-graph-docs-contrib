@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/v1.0/security/identities/sensors/d31dd827-92cd-4
 
 ---
 
-
 ### Response
 
 The following example shows the response.
