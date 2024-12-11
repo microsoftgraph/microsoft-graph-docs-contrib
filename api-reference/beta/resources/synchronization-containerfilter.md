@@ -5,6 +5,7 @@ author: "ArvindHarinder1"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # containerFilter resource type

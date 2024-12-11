@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
 toc.keywords: [ Workload identity federation, workload identities ]
+ms.date: 07/22/2024
 ---
 
 # federatedIdentityCredential resource type

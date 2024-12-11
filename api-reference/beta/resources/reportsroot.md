@@ -5,6 +5,7 @@ author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 11/15/2024
 ---
 
 # reportRoot resource type

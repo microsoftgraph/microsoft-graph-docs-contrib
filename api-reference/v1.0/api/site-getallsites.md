@@ -6,6 +6,7 @@ ms.author: tkanaujia
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 03/15/2024
 ---
 
 # sites: getAllSites

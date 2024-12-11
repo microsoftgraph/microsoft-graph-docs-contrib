@@ -5,6 +5,7 @@ title: "siteCollection resource type"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # siteCollection resource type

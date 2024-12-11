@@ -1,18 +1,16 @@
 ---
-title: "Delete recycleBin items"
-description: "Delete items from fileStorageContainer recycleBin."
-author: "tonchan-msft"
+title: "Delete recycleBinItem"
+description: "Delete items from the fileStorageContainer recycleBin."
+author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 10/01/2024
+ms.date: 12/10/2024
 ---
 
-# Delete recycle bin items
+# Delete recycleBinItem
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Permanently delete [recycleBinItem](../resources/recyclebinitem.md) objects from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md). Items deleted by this method can't be restored. 
 
@@ -22,10 +20,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestoragecontainer-delete-recyclebin-items-permissions"
+  "name": "filestoragecontainer-delete-recyclebinitem-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-recyclebin-items-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-recyclebinitem-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
@@ -60,32 +58,25 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "delete_filestoragecontainer_recyclebin_items",
+  "name": "delete_filestoragecontainer_recyclebinitem",
   "@odata.type": "Collection(microsoft.graph.recyclebinitem)"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/delete
+POST https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/delete
 Content-Type: application/json
 
 {
   "ids": ["5d625d33-338c-4a77-a98a-3e287116440c", "73133853-48f2-4956-bc4a-03f8d1675042"]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-filestoragecontainer-recyclebin-items-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

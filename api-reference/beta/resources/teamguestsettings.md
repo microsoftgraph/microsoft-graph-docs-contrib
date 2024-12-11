@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/16/2024
 ---
 
 # teamGuestSettings resource type
