@@ -14,6 +14,10 @@ Namespace: microsoft.graph
 
 Contains information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
+> [!CAUTION]
+>
+> Microsoft Graph online meeting APIs that support Microsoft Teams live events are deprecated and stopped returning data on September 30, 2024. New Microsoft Graph APIs will replace these APIs in spring of 2025. For more information, see [Retirement of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/).
+
 ## Methods
 
 | Method                                                             | Return Type                       | Description                                                                                                  |
@@ -30,9 +34,6 @@ Contains information about a meeting, including the URL used to join a meeting, 
 >
 > - A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
 > - The expiry time for online meetings is set to 60 days after the meeting's start or end time. If the meeting is updated or activated before it expires, the expiry time will be extended by another 60 days.
-
-> [!CAUTION]
-> Teams live events was not removed on September 30, 2024, as previously announced. You can continue to use Teams live events; however, to get the latest new features and experiences, we recommend that you use [Teams town halls](https://support.microsoft.com/en-us/office/switch-from-microsoft-teams-live-events-to-town-halls-c71bf6e2-ece1-4809-900e-51271f39ac72) and the [Microsoft Graph virtual event townhall APIs](../resources/virtualeventtownhall.md) instead.
 
 ## Properties
 
