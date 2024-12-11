@@ -2663,6 +2663,30 @@ items:
       href: ../../resources/invitation.md
     - name: Create
       href: ../../api/invitation-post.md
+  - name: Microsoft Entra lifecycle announcements
+    items:
+    - name: Product changes
+      items:
+      - name: Product changes
+        href: ../../resources/changeitembase.md
+      - name: List
+        href: ../../api/identitycontainer-list-productchanges.md
+    - name: Change announcements
+      items:
+      - name: Change announcements
+        href: ../../resources/announcement.md
+      - name: List
+        href: ../../api/announcement-list.md
+      - name: Get
+        href: ../../api/announcement-get.md
+    - name: Roadmap
+      items:
+      - name: Roadmap
+        href: ../../resources/roadmap.md
+      - name: List
+        href: ../../api/roadmap-list.md
+      - name: Get
+        href: ../../api/roadmap-get.md
   - name: Multitenant organization
     displayName: MTO
     items:

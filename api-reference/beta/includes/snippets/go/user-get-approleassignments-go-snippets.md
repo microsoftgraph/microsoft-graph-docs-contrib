@@ -22,10 +22,10 @@ headers.Add("ConsistencyLevel", "eventual")
 
 requestCount := true
 
-requestParameters := &graphusers.UserItemAppRoleAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemAppRoleAssignmentsRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 }
-configuration := &graphusers.UserItemAppRoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemAppRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
