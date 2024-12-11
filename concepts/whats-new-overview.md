@@ -51,6 +51,10 @@ Create and manage a [news link page](/graph/api/resources/newslinkpage?view=grap
 
 ## November 2024: New and generally available
 
+### Files
+
+Use a range of new methods and resources for enhanced file storage management, including methods for managing columns and recycle bin items. You can also run operations like restore, lock, unlock, and more across the [fileStorageContainer](/graph/api/resources/filestoragecontainer), [fileStorage](/graph/api/resources/filestorage) and [recycleBin](/graph/api/resources/recyclebin) resources.
+
 ### Applications | Policies
 
 Use the **state** property on [keyCredentialConfiguration](/graph/api/resources/keycredentialconfiguration) and [passwordCredentialConfiguration](/graph/api/resources/passwordcredentialconfiguration) to indicate whether a restriction is evaluated.
