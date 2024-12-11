@@ -49,10 +49,10 @@ The following table shows the meanings of the parameters in the previous HTTP re
 |Parameter|Description|
 |:--------|:----------|
 |`userId`|The object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).|
-`meetingId`|The **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.|
-`reportId`|The **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.|
-`webinarId`|The **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.|
-`sessionId`|The **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.|
+|`meetingId`|The **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.|
+|`reportId`|The **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.|
+|`webinarId`|The **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.|
+|`sessionId`|The **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.|
 
 ## Optional query parameters
 
