@@ -7,7 +7,6 @@ ms.date: 12/02/2024
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Deleted item
-ms.date: 12/06/2024
 ---
 
 # directory resource type
