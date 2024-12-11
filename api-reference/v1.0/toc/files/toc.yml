@@ -210,3 +210,7 @@ items:
     href: ../../resources/recyclebinitem.md
   - name: List
     href: ../../api/recyclebin-list-items.md
+  - name: Delete
+    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
+  - name: Restore
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
