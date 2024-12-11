@@ -1,6 +1,32 @@
 {
   "changelog": [
-     {
+    {
+      "ChangeList": [
+        {
+          "Id": "2e32a5b5-133e-45f4-9978-53c81843ca6d",
+          "ApiChange": "Member",
+          "ChangedApiName": "regionalInaccessibleCloudPcTrendReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `regionalInaccessibleCloudPcTrendReport` member to the **cloudPCInaccessibleReportName** enumeration.",
+          "Target": "cloudPCInaccessibleReportName"
+        },
+        {
+          "Id": "2e32a5b5-133e-45f4-9978-53c81843ca6d",
+          "ApiChange": "Member",
+          "ChangedApiName": "regionalInaccessibleCloudPcTrendReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `regionalInaccessibleCloudPcTrendReport` member to the **cloudPcReportName** enumeration.",
+          "Target": "cloudPcReportName"
+        }
+      ],
+      "Id": "2e32a5b5-133e-45f4-9978-53c81843ca6d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-22T20:16:26.0746374Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
+    },
+    {
         "ChangeList": [
           {
             "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
