@@ -1127,6 +1127,8 @@ items:
         href: teams-changenotifications-appinstallation.md
     - name: Notifications for Outlook resources
       href: outlook-change-notifications-overview.md
+    - name: Notifications for AI interactions
+      href: changenotifications-aiinteraction.md
   - name: Change tracking
     items:
     - name: Overview
