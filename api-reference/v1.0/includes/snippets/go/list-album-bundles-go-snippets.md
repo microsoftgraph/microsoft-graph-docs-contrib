@@ -18,10 +18,10 @@ import (
 
 requestFilter := "bundle/album ne null"
 
-requestParameters := &graphdrives.DriveItemBundlesRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.ItemBundlesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphdrives.DriveItemBundlesRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.ItemBundlesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
