@@ -1672,6 +1672,14 @@
               ]
             },
             {
+              "name": "Microsoft Entra lifecycle announcements",
+              "resources": [
+                "changeItemBase",
+                "announcement",
+                "roadmap"
+              ]
+            },
+            {
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
