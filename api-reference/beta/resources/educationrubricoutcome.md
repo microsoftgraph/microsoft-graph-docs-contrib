@@ -6,6 +6,7 @@ author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "resourcePageType"
 toc.title: Rubric outcome
+ms.date: 06/10/2024
 ---
 
 # educationRubricOutcome resource type

@@ -6,6 +6,7 @@ ms.reviewer: mapamu
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 04/15/2024
 ---
 
 # externalProfile resource type

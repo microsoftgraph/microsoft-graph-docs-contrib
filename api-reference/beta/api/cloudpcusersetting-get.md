@@ -130,13 +130,14 @@ Content-Type: application/json
       "userRestoreEnabled": true
     },
     "crossRegionDisasterRecoverySetting": {
-      "crossRegionDisasterRecoveryEnabled": true,
+      "crossRegionDisasterRecoveryEnabled": false,
       "maintainCrossRegionRestorePointEnabled": true,
       "disasterRecoveryNetworkSetting": {
         "regionName": "westus",
         "regionGroup": "usEast"
       },
-      "disasterRecoveryType": "premium"
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
     },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z"
@@ -220,13 +221,14 @@ Content-Type: application/json
       "userRestoreEnabled": true
     },
     "crossRegionDisasterRecoverySetting": {
-      "crossRegionDisasterRecoveryEnabled": true,
+      "crossRegionDisasterRecoveryEnabled": false,
       "maintainCrossRegionRestorePointEnabled": true,
       "disasterRecoveryNetworkSetting": {
         "regionName": "westus",
         "regionGroup": "usEast"
       },
-      "disasterRecoveryType": "premium"
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
     },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z",

@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Software OATH
+ms.date: 07/19/2024
 ---
 
 # softwareOathAuthenticationMethod resource type
