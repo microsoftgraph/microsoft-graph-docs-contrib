@@ -5,12 +5,30 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 11/30/2024
+ms.date: 12/06/2024
 ---
 
 # Enum values
 
 Namespace: microsoft.graph
+
+### hardwareOathTokenHashFunction values
+
+|Member|
+|:---|
+|hmacsha1|
+|hmacsha256|
+|unknownFutureValue|
+
+### hardwareOathTokenStatus values
+
+|Member|
+|:---|
+|available|
+|assigned|
+|activated|
+|failedActivation|
+|unknownFutureValue|
 
 ### provisionState values
 
@@ -4956,4 +4974,12 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |false|
 |true|
+|unknownFutureValue|
+
+### restoreJobType values 
+
+|Member|
+|:---|
+|standard|
+|bulk|
 |unknownFutureValue|

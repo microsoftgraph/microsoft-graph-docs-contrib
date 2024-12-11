@@ -6,6 +6,7 @@ author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 12/06/2024
 ---
 
 # authenticationMethod resource type
@@ -20,6 +21,7 @@ This resource type is an abstract type that's inherited by the following derived
 
 + [emailAuthenticationMethod](emailauthenticationmethod.md)
 + [fido2AuthenticationMethod](fido2authenticationmethod.md)
++ [hardwareOathAuthenticationMethod](hardwareOathAuthenticationMethod.md)
 + [microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)
 + [passwordlessMicrosoftAuthenticatorAuthenticationMethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md)
 + [passwordAuthenticationMethod](passwordauthenticationmethod.md)

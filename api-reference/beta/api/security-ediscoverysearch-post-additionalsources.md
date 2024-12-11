@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Add additional sources
@@ -56,9 +57,9 @@ You can specify the following properties when you create a **dataSource**.
 If successful, this method returns a `201 Created` and a [microsoft.graph.security.dataSource](../resources/security-datasource.md) object in the response body.
 
 ## Examples
-
-### Request
-The following example shows a request.
+### Example 1: Create an additional eDiscovery source from a site source
+#### Request
+The following example shows a request that creates an eDiscovery source from a site source.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,7 +112,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -140,3 +141,42 @@ HTTP/1.1 201 Created
     }
 }
 ```
+### Example 2: Create an additional eDiscovery source from a user source
+### Request
+The following example shows a request that creates an eDiscovery source from a user source.
+
+```
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/17011798-ca63-4282-9cb3-0086f1042bfc/searches/2f5cc5a6-9728-4ba0-acfa-edce25e91244/additionalSources
+
+{
+    "@odata.type": "microsoft.graph.security.userSource",
+    "email": "admin@edbig.onmicrosoft.com"
+}
+```
+#### Response
+
+The following example shows the response.
+
+``` http
+HTTP/1.1 200 Created
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('17011798-ca63-4282-9cb3-0086f1042bfc')/searches('2f5cc5a6-9728-4ba0-acfa-edce25e91244')/additionalSources/$entity",
+    "@odata.type": "#microsoft.graph.security.userSource",
+    "displayName": "eDisco Big",
+    "createdDateTime": "2024-11-19T20:11:11.5950513Z",
+    "holdStatus": "0",
+    "id": "5933247d-7011-494d-b9a6-65a3870d88fa",
+    "email": "admin@edbig.onmicrosoft.com",
+    "includedSources": "mailbox,site",
+    "siteWebUrl": "https://edbig-my.sharepoint.com/personal/admin_edbig_onmicrosoft_com",
+    "createdBy": {
+        "application": null,
+        "user": {
+            "id": null,
+            "displayName": null
+        }
+    }
+}
+```
+

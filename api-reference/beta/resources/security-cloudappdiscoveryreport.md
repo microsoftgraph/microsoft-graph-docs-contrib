@@ -5,6 +5,7 @@ author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 11/15/2024
 ---
 
 # cloudAppDiscoveryReport resource type

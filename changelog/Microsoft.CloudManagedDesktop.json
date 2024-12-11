@@ -1,5 +1,31 @@
 {
   "changelog": [
+     {
+        "ChangeList": [
+          {
+            "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
+            "ApiChange": "Property",
+            "ChangedApiName": "userInitiatedDisasterRecoveryAllowed",
+            "ChangeType": "Addition",
+            "Description": "Added the **userInitiatedDisasterRecoveryAllowed** property to the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource.",
+            "Target": "cloudPcCrossRegionDisasterRecoverySetting"
+          },          
+          {
+            "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
+            "ApiChange": "Property",
+            "ChangedApiName": "crossRegionDisasterRecoveryEnabled",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the **crossRegionDisasterRecoveryEnabled** property of the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource. The **crossRegionDisasterRecoveryEnabled** property is deprecated and will no longer be supported effective February 11, 2025. For scenarios where **crossRegionDisasterRecoveryEnabled** is `true`, set **disasterRecoveryType** to `crossRegion`. For scenarios where **crossRegionDisasterRecoveryEnabled** is `false`,  set **disasterRecoveryType** to `notconfigured`.",
+            "Target": "cloudPcCrossRegionDisasterRecoverySetting"
+          }
+        ],
+        "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-12-08T06:09:33.7283612Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+    },
     {
       "ChangeList": [
         {
@@ -230,6 +256,32 @@
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },  
+      {
+        "ChangeList": [
+          {
+            "Id": "bd01fad1-6432-41fc-86c8-1ffde6fca9f2",
+            "ApiChange": "Property",
+            "ChangedApiName": "disasterRecoveryType",
+            "ChangeType": "Addition",
+            "Description": "Added the **disasterRecoveryType** property to the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource.",
+            "Target": "cloudPcCrossRegionDisasterRecoverySetting"
+          },          
+          {
+            "Id": "bd01fad1-6432-41fc-86c8-1ffde6fca9f2",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "cloudPcDisasterRecoveryType",
+            "ChangeType": "Addition",
+            "Description": "Added the **cloudPcDisasterRecoveryType** enumeration type.",
+            "Target": "cloudPcDisasterRecoveryType"
+          }
+        ],
+        "Id": "bd01fad1-6432-41fc-86c8-1ffde6fca9f2",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-12-06T16:37:33.7283612Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
       {
         "ChangeList": [
           {

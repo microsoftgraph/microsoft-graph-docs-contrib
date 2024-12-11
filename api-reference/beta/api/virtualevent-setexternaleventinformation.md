@@ -5,6 +5,7 @@ author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 11/22/2024
 ---
 
 # virtualEvent: setExternalEventInformation

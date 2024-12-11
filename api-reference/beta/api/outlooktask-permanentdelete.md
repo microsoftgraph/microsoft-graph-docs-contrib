@@ -5,6 +5,7 @@ author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # outlookTask: permanentDelete

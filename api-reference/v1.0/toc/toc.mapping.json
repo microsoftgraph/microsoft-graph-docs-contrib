@@ -596,7 +596,9 @@
         "bundle",
         "permission",
         "fileStorageContainer",
-        "sharedDriveItem"
+        "sharedDriveItem",
+        "recycleBin",
+        "recycleBinItem"
       ]
     },
     {
@@ -1888,7 +1890,6 @@
             "workingTimeSchedule"
           ],
           "complexTypes": [
-            "changeTrackedEntity",
             "identity",
             "identitySet",
             "openShiftItem",

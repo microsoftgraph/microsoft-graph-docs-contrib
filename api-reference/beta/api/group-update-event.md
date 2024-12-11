@@ -5,6 +5,7 @@ author: "iamgirishck"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Update event
