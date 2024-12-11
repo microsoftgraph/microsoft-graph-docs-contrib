@@ -5,6 +5,7 @@ author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 12/11/2024
 toc.title: Restore artifacts bulk request
 ---
 
@@ -71,7 +72,6 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "protectionTimePeriod": {"@odata.type": "microsoft.graph.timePeriod"},
-  "protectionUnitIds": ["String"],
   "restorePointPreference": "String",
   "status": "String",
   "tags": "String"
