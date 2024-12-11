@@ -18,24 +18,24 @@ Represents the export job for downloading a specified Cloud PC report.
 
 ## Methods
 
-| Method                                                              | Return type                                          | Description                                                                                             |
-| :------------------------------------------------------------------ | :--------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
-| [Create export job](../api/cloudpcreports-post-exportjobs.md) | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) object to initiate downloading the entire or a specified portion of a report. |
-| [Get export job](../api/cloudpcexportjob-get.md)              | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Read the properties and relationships of a [cloudPcExportJob](../resources/cloudpcexportjob.md) object. |
+|Method|Return type|Description|
+|:------------------------------------------------------------------|:---------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+|[Create export job](../api/cloudpcreports-post-exportjobs.md)|[cloudPcExportJob](../resources/cloudpcexportjob.md)|Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) object to initiate downloading the entire or a specified portion of a report.|
+|[Get export job](../api/cloudpcexportjob-get.md)|[cloudPcExportJob](../resources/cloudpcexportjob.md)|Read the properties and relationships of a [cloudPcExportJob](../resources/cloudpcexportjob.md) object.|
 
 ## Properties
 
-| Property           | Type                                                     | Description                                                                                                                                                                             |
-| :----------------- | :------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| expirationDateTime | DateTimeOffset                                           | The date and time when the export job expires.                                                                                                                                              |
-| exportJobStatus    | [cloudPcExportJobStatus](#cloudpcexportjobstatus-values) | The status of the export job. The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Read-only.                                                         |
-| exportUrl          | String                                                   | The storage account URL of the exported report. It can be used to download the file.                                                                                                    |
-| filter             | String                                                   | The filter applied on the report.                                                                                                                                                       |
-| format             | String                                                   | The format of the exported report.                                                                                                                                                      |
-| id                 | String                                                   | The unique identifier for the report. Read-only.                                                                                                                                        |
-| reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`,  `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`,  `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `actionStatusReport`, `rawRemoteConnectionReports`, `cloudPcUsageCategoryReports`, `crossRegionDisasterRecoveryReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `bulkActionStatusReport`, `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `rawRemoteConnectionReports`, `cloudPcUsageCategoryReports`, `crossRegionDisasterRecoveryReport`.|
-| requestDateTime    | DateTimeOffset                                           | The date and time when the export job was requested.  |
-| select             | String collection                                        | The selected columns of the report.   |
+|Property|Type|Description|
+|:-------|:--|:-----------|
+|expirationDateTime|DateTimeOffset|The date and time when the export job expires.|
+|exportJobStatus|[cloudPcExportJobStatus](#cloudpcexportjobstatus-values)|The status of the export job. The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Read-only.|
+|exportUrl|String|The storage account URL of the exported report. It can be used to download the file.|
+|filter|String|The filter applied on the report.|
+|format|String|The format of the exported report.|
+|id|String|The unique identifier for the report. Read-only.|
+|reportName|[cloudPcReportName](#cloudpcreportname-values)|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`,  `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`,  `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `actionStatusReport`, `rawRemoteConnectionReports`, `cloudPcUsageCategoryReports`, `crossRegionDisasterRecoveryReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `bulkActionStatusReport`, `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `rawRemoteConnectionReports`, `cloudPcUsageCategoryReports`, `crossRegionDisasterRecoveryReport`.|
+|requestDateTime|DateTimeOffset|The date and time when the export job was requested.|
+|select|String collection|The selected columns of the report.|
 
 ### cloudPcExportJobStatus values
 
