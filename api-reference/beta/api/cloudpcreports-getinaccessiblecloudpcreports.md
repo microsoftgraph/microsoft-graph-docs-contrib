@@ -247,22 +247,15 @@ Content-Type: application/octet-stream
 }
 ```
 
-### Example 2: Get the weekly regional aggregated report of inaccessible cloud PC trend
+### Example 2: Get the weekly regional aggregated report of inaccessible Cloud PC trend
 
 #### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "cloudpcreports.getInaccessibleCloudPcReports_regionalTrend"
-}
--->
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/getInaccessibleCloudPcReports
 Content-Type: application/json
-Content-length: 199
 
 {
   "reportName":"regionalInaccessibleCloudPcTrendReport",
@@ -280,43 +273,11 @@ Content-length: 199
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsgetinaccessiblecloudpcreports-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsgetinaccessiblecloudpcreports-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsgetinaccessiblecloudpcreports-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsgetinaccessiblecloudpcreports-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsgetinaccessiblecloudpcreports-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsgetinaccessiblecloudpcreports-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsgetinaccessiblecloudpcreports-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsgetinaccessiblecloudpcreports-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
 The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -327,35 +288,34 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-HTTP/1.1 200 OK
 {
-    "TotalRowCount": 2,
-    "Schema": [
-        {
-            "Column": "HostRegionName",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "CloudPcCount",
-            "PropertyType": "Int"
-        },
-        {
-            "Column": "WeeklyPeakInaccessibleCloudPcCount",
-            "PropertyType": "Int"
-        },
-        {
-            "Column": "Last24hPeakInaccessibleCloudPcCount",
-            "PropertyType": "Int"
-        },
-        {
-            "Column": "WeeklyInaccessibleTrend",
-            "PropertyType": "String"
-        }
-    ],
-    "Values": [
-        [ "Japan East", 46, 10, 5, "Increasing" ],
-        [ "East US", 1, 0, 0, "Decreasing" ]
-    ]
+  "TotalRowCount": 2,
+  "Schema": [
+    {
+      "Column": "HostRegionName",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "CloudPcCount",
+      "PropertyType": "Int"
+    },
+    {
+      "Column": "WeeklyPeakInaccessibleCloudPcCount",
+      "PropertyType": "Int"
+    },
+    {
+      "Column": "Last24hPeakInaccessibleCloudPcCount",
+      "PropertyType": "Int"
+    },
+    {
+      "Column": "WeeklyInaccessibleTrend",
+      "PropertyType": "String"
+    }
+  ],
+  "Values": [
+    [ "Japan East", 46, 10, 5, "Increasing" ],
+    [ "East US", 1, 0, 0, "Decreasing" ]
+  ]
 }
 ```
 
