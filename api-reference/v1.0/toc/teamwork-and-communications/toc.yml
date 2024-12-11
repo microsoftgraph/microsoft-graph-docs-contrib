@@ -384,6 +384,8 @@ items:
       items:
       - name: Virtual event townhall
         href: ../../resources/virtualeventtownhall.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-townhalls.md
       - name: Create
         href: ../../api/virtualeventsroot-post-townhalls.md
       - name: Get
@@ -394,6 +396,12 @@ items:
         href: ../../api/virtualeventtownhall-publish.md
       - name: Cancel
         href: ../../api/virtualeventtownhall-cancel.md
+      - name: List by user role
+        href: ../../api/virtualeventtownhall-getbyuserrole.md
+      - name: List by user ID and role
+        href: ../../api/virtualeventtownhall-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
     - name: Virtual event webinar
       items:
       - name: Virtual event webinar
@@ -414,6 +422,8 @@ items:
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
 - name: Employee learning
   displayName: Viva Learning
   items:
