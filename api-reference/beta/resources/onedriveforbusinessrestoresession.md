@@ -57,6 +57,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|A collection of restore points and destination details that can be used to restore a OneDrive for Work or School drive.|
+|driveRestoreArtifactsBulkAdditionRequests|[driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md)|A collection of user mailboxes and destination details that can be used to restore a OneDrive for work or School Drive.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
