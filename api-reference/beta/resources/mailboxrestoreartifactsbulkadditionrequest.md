@@ -1,6 +1,6 @@
 ---
 title: "mailboxRestoreArtifactsBulkAdditionRequest resource type"
-description: "Represents the properties of a mailboxRestoreArtifactsBulkAdditionRequest associated with an Exchange restore sesssion"
+description: "Represents the properties of a mailboxRestoreArtifactsBulkAdditionRequest associated with an Exchange restore sesssion."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -41,7 +41,7 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 | mailboxes                  | String collection         | The list of email addresses that are added to the corresponding Exchange restore session. |
 | protectionTimePeriod       | [timePeriod](../resources/timeperiod.md)                | The start and end date time of the protection period. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | restorePointPreference     | restorePointPreference    | Indicates which restore point to return. The possible values are: `oldest`, `latest`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
-| status                     | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)   | The status of the long-running operation. The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, or `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
+| status                     | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)   | The status of the long-running operation. The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | tags                       | restorePointTags          | The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 
 ## Relationships
