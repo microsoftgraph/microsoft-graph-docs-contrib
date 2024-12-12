@@ -53,7 +53,7 @@ In the request body, supply a JSON representation of the parameters.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
@@ -86,6 +86,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```
 
