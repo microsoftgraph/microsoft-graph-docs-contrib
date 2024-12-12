@@ -17,7 +17,7 @@ Describes the response format of a call stop transcription operation.
 ## Properties
 
 | Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
+| :----------------------------- | :---------------------------| :---------------------------------------------------------|
 | clientContext                  | String                      | Unique client context string. It can have a maximum of 256 characters.                                                                               |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
