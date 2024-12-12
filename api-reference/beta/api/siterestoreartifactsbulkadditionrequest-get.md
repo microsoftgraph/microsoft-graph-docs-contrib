@@ -1,6 +1,6 @@
 ---
 title: "Get siteRestoreArtifactsBulkAdditionRequest"
-description: "Get a siteRestoreArifatcsBulkAdditionRequest in a Sharepoint Restore Session"
+description: "Get a siteRestoreArtifactsBulkAdditionRequest object by its id, associated with a sharePointRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object by its `id` associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+Get a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object by its **id**, associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
 ## Permissions
 
@@ -36,6 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifactsBulkAdditionRequests/{siteRestoreArtifactsBulkAdditionRequestId}
 ```
+
+## Optional query parameters
+
+This method doesn't support the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -65,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/89ca51b1-b0a5-4555-a8f3-ad95afcf867d/siteRestoreArtifactsBulkAdditionRequests/b246ac99-4184-48ed-b7ff-9c2a7af69757
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -80,45 +83,45 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/backupRestore/sharePointRestoreSessions('f25015f4-6bb2-46cb-b800-a8ec86a02815')/siteRestoreArtifactsBulkAdditionRequests",
-    "value": [
-        {
-            "id": "7ab93651-5029-4fcd-b263-5dcabad61e8d",
-            "destinationType": "new",
-            "tags": "fastRestore",
-            "restorePointPreference": "latest",
-            "displayName": "spo-BulkRestoreArtifacts",
-            "status": "completedWithErrors",
-            "createdDateTime": "2024-12-04T09:22:34.5159056Z",
-            "lastModifiedDateTime": "2024-12-04T09:25:30.2641799Z",
-            "siteWebUrls": [],
-            "protectionTimePeriod": {
-                "startDateTime": "2024-01-01T00:00:00Z",
-                "endDateTime": "2024-01-08T00:00:00Z"
-            },
-            "createdBy": {
-                "user": {
-                    "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
-                }
-            },
-            "lastModifiedBy": {
-                "user": {
-                    "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
-                }
-            },
-            "error": {
-                "code": "BulkRestoreArtifactsNotFound",
-                "message": "Errors while resolving restore artifacts",
-                "details": [
-                    {
-                        "code": "SiteUrlNotFound",
-                        "message": "Site url 'https://contoso.com' could not be resolved",
-                        "target": "https://contoso.com"
-                    }
-                ]
-            }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/backupRestore/sharePointRestoreSessions('f25015f4-6bb2-46cb-b800-a8ec86a02815')/siteRestoreArtifactsBulkAdditionRequests",
+  "value": [
+    {
+      "id": "7ab93651-5029-4fcd-b263-5dcabad61e8d",
+      "destinationType": "new",
+      "tags": "fastRestore",
+      "restorePointPreference": "latest",
+      "displayName": "spo-BulkRestoreArtifacts",
+      "status": "completedWithErrors",
+      "createdDateTime": "2024-12-04T09:22:34.5159056Z",
+      "lastModifiedDateTime": "2024-12-04T09:25:30.2641799Z",
+      "siteWebUrls": [],
+      "protectionTimePeriod": {
+        "startDateTime": "2024-01-01T00:00:00Z",
+        "endDateTime": "2024-01-08T00:00:00Z"
+      },
+      "createdBy": {
+        "user": {
+          "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
         }
-    ]
+      },
+      "lastModifiedBy": {
+        "user": {
+          "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
+        }
+      },
+      "error": {
+        "code": "BulkRestoreArtifactsNotFound",
+        "message": "Errors while resolving restore artifacts",
+        "details": [
+          {
+            "code": "SiteUrlNotFound",
+            "message": "Site url 'https://contoso.com' could not be resolved",
+            "target": "https://contoso.com"
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
 
