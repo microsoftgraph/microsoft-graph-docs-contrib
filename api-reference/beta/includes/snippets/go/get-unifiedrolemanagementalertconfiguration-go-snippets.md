@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceRoleManagementAlertsAlertConfigurationItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.RoleManagementAlertsAlertConfigurationsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"alertDefinition"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceRoleManagementAlertsAlertConfigurationItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.RoleManagementAlertsAlertConfigurationsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

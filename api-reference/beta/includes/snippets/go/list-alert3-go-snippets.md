@@ -18,11 +18,11 @@ import (
 
 requestFilter := "createdDateTime gt 2024-06-10T11:23:44Z"
 
-requestParameters := &graphreports.ReportsHealthMonitoringAlertsRequestBuilderGetQueryParameters{
+requestParameters := &graphreports.HealthMonitoringAlertsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"id"," alertType"," createdDateTime"," state"},
 }
-configuration := &graphreports.ReportsHealthMonitoringAlertsRequestBuilderGetRequestConfiguration{
+configuration := &graphreports.HealthMonitoringAlertsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

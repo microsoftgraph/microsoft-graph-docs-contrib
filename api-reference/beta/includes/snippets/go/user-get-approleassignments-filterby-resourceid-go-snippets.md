@@ -18,10 +18,10 @@ import (
 
 requestFilter := "resourceId eq 8e881353-1735-45af-af21-ee1344582a4d"
 
-requestParameters := &graphusers.UserItemAppRoleAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemAppRoleAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphusers.UserItemAppRoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemAppRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
