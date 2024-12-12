@@ -37,6 +37,13 @@ Enabled the **description**, **displayName**, and **severity** properties as sup
 - Deprecated the **crossRegionDisasterRecoveryEnabled** property of the [cloudPcCrossRegionDisasterRecoverySetting](/graph/api/resources/cloudpccrossregiondisasterrecoverysetting?view=graph-rest-beta&preserve-view=true) resource. Going forward use the **disasterRecoveryType** property.
 - Enabled `endpointConnectivityCheckVMAgentEndPointCommunicationError` as a supported error type in the **errorType** property of the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true) resource.
 
+### Identity and access
+Can now update alternativeNames, externalSourceId, and sourceType on a [device](graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. Also introduced deviceInstances and deviceTemplate as new relationships on devices. 
+
+Create, get, list, delete, and update owners on [deviceTemplate](/graph/api/resources/deviceTemplate?view=graph-rest-beta&preserve-view=true) resources which are derived from the container resource, [template](/graph/api/resources/template?view=graph-rest-beta&preserve-view=true). 
+
+Create, get, list, update, and update [mutualTlsOauthConfiguration](/graph/api/resources/mutualTlsOauthConfiguration?view=graph-rest-beta&preserve-view=true) resources which is derived from [certificateAuthorityPath](/graph/api/resources/certificateAuthorityPath?view=graph-rest-beta&preserve-view=true).
+
 ### Reports | Identity and access reports 
 
 The Microsoft 365 monitoring APIs provide telemetry data to monitor the health of various Microsoft services within a Microsoft 365 subscription for your organization. Use the new operations in the [serviceActivity](/graph/api/resources/serviceactivity?view=graph-rest-beta&preserve-view=true) resource to get telemetry data for Exchange Online, Microsoft 365 Apps, and Microsoft Teams.
@@ -85,13 +92,6 @@ Use the **administrativeUnitInfos** property on [participant](/graph/api/resourc
 - [Deploy a hotpatch quality update](/graph/windowsupdates-hotpatch-update) using Windows Autopatch.
 - Use the **isHotpatchUpdate** property on [productRevision](/graph/api/resources/windowsupdates-productrevision?view=graph-rest-beta&preserve-view=true) to identify whether the content is hotpatchable.
 - Use the **isHotpatchEnabled** property on [userExperienceSettings](/graph/api/resources/windowsupdates-userexperiencesettings?view=graph-rest-beta&preserve-view=true) to identify whether the update is offered as a hotpatch.
-
-### Identity and access
-Can now update alternativeNames, externalSourceId, and sourceType on a [device](graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. Also introduced deviceInstances and deviceTemplate as new relationships on devices. 
-
-Create, get, list, delete, and update owners on [deviceTemplate](/graph/api/resources/deviceTemplate?view=graph-rest-beta&preserve-view=true) resources which are derived from the container resource, [template](/graph/api/resources/template?view=graph-rest-beta&preserve-view=true). 
-
-Create, get, list, update, and update [mutualTlsOauthConfiguration](/graph/api/resources/mutualTlsOauthConfiguration?view=graph-rest-beta&preserve-view=true) resources which is derived from [certificateAuthorityPath](/graph/api/resources/certificateAuthorityPath?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Identity and sign-in
 
