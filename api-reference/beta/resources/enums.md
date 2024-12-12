@@ -4986,6 +4986,84 @@ Possible values for user account types (group membership), per Windows definitio
 |true|
 |unknownFutureValue|
 
+### changeItemService values
+
+|Member|
+|:---|
+|accessReviews|
+|appProxy|
+|audit|
+|authenticationsLogins|
+|azureADDomainServices|
+|b2B|
+|b2CConsumerIdentityManagement|
+|conditionalAccess|
+|deviceAccessManagement|
+|deviceRegistrationandManagement|
+|directoryManagement|
+|enterpriseApps|
+|entitlementManagement|
+|groupManagement|
+|identityProtection|
+|internetAccess|
+|lifecycleWorkflows|
+|linkedIn|
+|managedidentitiesforAzureresources|
+|mfA|
+|microsoftAuthenticatorApp|
+|microsoftIdentityManager|
+|msGraph|
+|myApps|
+|myProfileAccount|
+|na|
+|o365Groups|
+|other|
+|privateAccess|
+|privilegedIdentityManagement|
+|provisioning|
+|rbac|
+|reporting|
+|roles|
+|selfServicePasswordReset|
+|sovereignClouds|
+|termsofUse|
+|userAccessManagement|
+|userExperienceandManagement|
+|userManagement|
+|microsoftEntraDomainServices|
+|verifiedId|
+|unknownFutureValue|
+
+### changeItemState values
+
+|Member|
+|:---|
+|available|
+|comingSoon|
+|unknownFutureValue|
+
+### roadmapItemDeliveryStage values
+
+|Member|
+|:---|
+|privatePreview|
+|publicPreview|
+|ga|
+|unknownFutureValue|
+
+### changeAnnouncementChangeType values 
+
+|Member|
+|:---|
+|breakingChange|
+|deprecation|
+|endOfSupport|
+|featureChange|
+|other|
+|retirement|
+|securityIncident|
+|uxChange|
+
 ### restoreJobType values 
 
 |Member|

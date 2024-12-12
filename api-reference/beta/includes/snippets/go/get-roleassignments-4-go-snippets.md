@@ -18,10 +18,10 @@ import (
 
 requestFilter := "principalId eq '/ServicePrincipals/5d39cc4d-ba68-4c44-92c7-5056e3a1ce39'"
 
-requestParameters := &graphrolemanagement.RoleManagementExchangeRoleAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphrolemanagement.ExchangeRoleAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphrolemanagement.RoleManagementExchangeRoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphrolemanagement.ExchangeRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
