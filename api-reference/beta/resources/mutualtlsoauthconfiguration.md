@@ -35,10 +35,11 @@ Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificatea
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|certificateAuthorities|[certificateAuthority](../resources/certificateauthority.md) collection| Multi-value property that represents a list of trusted certificate authorities. |
-|deletedDateTime|DateTimeOffset|Inherited from [directoryObject](../resources/directoryobject.md).|
+|certificateAuthorities|[certificateAuthority](../resources/certificateauthority.md) collection| Multi-value property that represents a list of trusted certificate authorities. Inherited from [trustedCertificateAuthorityBase](../resources/trustedcertificateauthoritybase.md). |
+|deletedDateTime|DateTimeOffset|Inherited from [trustedCertificateAuthorityBase](../resources/trustedcertificateauthoritybase.md).|
 |displayName|String|Friendly name.|
-|tlsClientAuthParameter|[tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`.|
+|id|String|Inherited from [trustedCertificateAuthorityBase](../resources/trustedcertificateauthoritybase.md).|
+|tlsClientAuthParameter|tlsClientRegistrationMetadata | Specifies the field in the certificate that contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -57,6 +58,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.mutualTlsOauthConfiguration",
   "certificateAuthorities": [{"@odata.type": "microsoft.graph.certificateAuthority"}],
+  "deletedDateTime": "String (timestamp),
   "displayName": "String",
   "id": "String (identifier)",
   "tlsClientAuthParameter": "String"
