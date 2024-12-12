@@ -1,6 +1,6 @@
 ---
 title: "List driveRestoreArtifactsBulkAdditionRequests"
-description: "Get a list of the driveRestoreArtifactsBulkAdditionRequest in a OnedriveForBusiness Restore Session."
+description: "Get a list of the driveRestoreArtifactsBulkAdditionRequest objects associated with a oneDriveForBusinessRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -14,8 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) objects associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
-The `drives` fields are deliberately omitted from the response body in order to limit the response size.
+Get a list of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) objects associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md). The **drives** properties are deliberately omitted from the response body in order to limit the response size.
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -36,6 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBusinessRestoreSessionId}/driveRestoreArtifactsBulkAdditionRequests
 ```
+
+## Optional query parameters
+
+This method doesn't support the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -65,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSessions/493635f0-b8c0-4c7f-bcb7-b20c85d97efe/driveRestoreArtifactsBulkAdditionRequests
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -81,38 +84,38 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.driveRestoreArtifactsBulkAdditionRequest",
-      "value": [
-        {
-          "id": "4437afcf-e520-463c-90a7-ca96401d8039",
-            "drives": [],
-            "directoryObjectIds": [],
-            "protectionUnitIds": [],
-            "protectionTimePeriod": {
-                "startDateTime": "2021-01-01T00:00:00Z",
-                "endDateTime": "2021-01-08T00:00:00Z"
-            },
-            "destinationType": "new",
-            "tags": "fastRestore",
-             "restorePointPreference": "latest",
-             "displayName": "UserDrive-BulkRestoreArtifacts",
-            "status": "CompletedWithErrors",
-            "createdDateTime": "2023-09-29T10:36:44.4021389+00:00",
-            "createdBy": "",
-            "lastModifiedDateTime": "2023-09-29T10:36:44.4021389+00:00",
-            "lastModifiedBy": "",
-            "error": {
-                "code": "BulkRestoreArtifactsNotResolved",
-                "message": "Errors while resolving restore artifacts",
-                "details": [
-                    {
-                        "code": "UserNotBackedup",
-                        "message": "Email address 'user0@contoso.com' has not been backed up",
-                        "target": "user0@contoso.com"
-                    }
-                ]
-            }
-        }
-      ]
+  "value": [
+    {
+      "id": "4437afcf-e520-463c-90a7-ca96401d8039",
+      "drives": [],
+      "directoryObjectIds": [],
+      "protectionUnitIds": [],
+      "protectionTimePeriod": {
+        "startDateTime": "2021-01-01T00:00:00Z",
+        "endDateTime": "2021-01-08T00:00:00Z"
+      },
+      "destinationType": "new",
+      "tags": "fastRestore",
+      "restorePointPreference": "latest",
+      "displayName": "UserDrive-BulkRestoreArtifacts",
+      "status": "CompletedWithErrors",
+      "createdDateTime": "2023-09-29T10:36:44.4021389+00:00",
+      "createdBy": "",
+      "lastModifiedDateTime": "2023-09-29T10:36:44.4021389+00:00",
+      "lastModifiedBy": "",
+      "error": {
+        "code": "BulkRestoreArtifactsNotResolved",
+        "message": "Errors while resolving restore artifacts",
+        "details": [
+          {
+            "code": "UserNotBackedup",
+            "message": "Email address 'user0@contoso.com' has not been backed up",
+            "target": "user0@contoso.com"
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
 
