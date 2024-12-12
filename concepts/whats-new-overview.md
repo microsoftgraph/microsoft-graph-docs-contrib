@@ -38,13 +38,15 @@ Enabled the **description**, **displayName**, and **severity** properties as sup
 - Enabled `endpointConnectivityCheckVMAgentEndPointCommunicationError` as a supported error type in the **errorType** property of the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Identity and access
+
 Can now update alternativeNames, externalSourceId, and sourceType on a [device](graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. Also introduced deviceInstances and deviceTemplate as new relationships on devices. 
 
 Create, get, list, delete, and update owners on [deviceTemplate](/graph/api/resources/deviceTemplate?view=graph-rest-beta&preserve-view=true) resources which are derived from the container resource, [template](/graph/api/resources/template?view=graph-rest-beta&preserve-view=true). 
 
 Create, get, list, update, and update [mutualTlsOauthConfiguration](/graph/api/resources/mutualTlsOauthConfiguration?view=graph-rest-beta&preserve-view=true) resources which is derived from [certificateAuthorityPath](/graph/api/resources/certificateAuthorityPath?view=graph-rest-beta&preserve-view=true).
 
-### Reports | Identity and access reports 
+
+### Reports | Microsoft 365 monitoring reports
 
 The Microsoft 365 monitoring APIs provide telemetry data to monitor the health of various Microsoft services within a Microsoft 365 subscription for your organization. Use the new operations in the [serviceActivity](/graph/api/resources/serviceactivity?view=graph-rest-beta&preserve-view=true) resource to get telemetry data for Exchange Online, Microsoft 365 Apps, and Microsoft Teams.
 
@@ -57,6 +59,10 @@ Enabled the **description**, **displayName**, and **severity** properties as sup
 Create and manage a [news link page](/graph/api/resources/newslinkpage?view=graph-rest-beta&preserve-view=true) in SharePoint.
 
 ## November 2024: New and generally available
+
+### Files
+
+Use a range of new methods and resources for enhanced file storage management, including methods for managing columns and recycle bin items. You can also run operations like restore, lock, unlock, and more across the [fileStorageContainer](/graph/api/resources/filestoragecontainer), [fileStorage](/graph/api/resources/filestorage) and [recycleBin](/graph/api/resources/recyclebin) resources.
 
 ### Applications | Policies
 
