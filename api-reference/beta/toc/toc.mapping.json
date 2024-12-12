@@ -149,7 +149,7 @@
         "protectionUnitBase",
         "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
-        "restoreArtifactsBulkRequestBase"
+        "restoreArtifactsBulkRequestBase",
         "restorePoint",
         "restoreSessionBase",
         "serviceApp"
