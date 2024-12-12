@@ -1,6 +1,6 @@
 ---
 title: "Delete siteRestoreArtifactsBulkAdditionRequest"
-description: "Delete a siteRestoreArtifactsBulkAdditionRequest object."
+description: "Delete a siteRestoreArtifactsBulkAdditionRequest object associated with a sharepointRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [SharepointRestoreSession](../resources/sharepointrestoresession.md)
+Delete a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharepointRestoreSession](../resources/sharepointrestoresession.md)
 
 ## Permissions
 
