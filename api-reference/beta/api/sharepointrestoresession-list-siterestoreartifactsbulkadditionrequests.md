@@ -69,14 +69,13 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/959ba739-70b5-43c4-8c90-b2c22014f18b/siteRestoreArtifactsBulkAdditionRequests
 ```
 
-
 ### Response
 
 The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.siteRestoreArtifactsBulkAdditionRequest"
+  "@odata.type": "Collection(microsoft.graph.siteRestoreArtifactsBulkAdditionRequest)"
 }
 -->
 ``` http
@@ -84,39 +83,39 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "value": [
+  "value": [
+    {
+      "id": "4437afcf-e520-463c-90a7-ca96401d8039",
+      "siteWebUrls": [],
+      "protectionTimePeriod": {
+        "startDateTime": "2021-01-01T00:00:00Z",
+        "endDateTime": "2021-01-08T00:00:00Z"
+      },
+      "destinationType": "new",
+      "tags": "fastRestore",
+      "restorePointPreference": "latest",
+      "displayName": "Site-BulkRestore-1",
+      "status": "CompletedWithErrors",
+      "restoreSessionId": "d8078599-3b3c-468d-b6ff-adf161a42760",
+      "createdDateTime": "2023-09-29T10:36:44.4021389+00:00",
+      "createdBy": "",
+      "lastModifiedDateTime": "2023-09-29T10:36:44.4021389+00:00",
+      "lastModifiedBy": "",
+      "error": [
         {
-            "id": "4437afcf-e520-463c-90a7-ca96401d8039",
-            "siteWebUrls": [],
-            "protectionTimePeriod": {
-                "startDateTime": "2021-01-01T00:00:00Z",
-                "endDateTime": "2021-01-08T00:00:00Z"
-            },
-            "destinationType": "new",
-            "tags": "fastRestore",
-             "restorePointPreference": "latest",
-             "displayName": "Site-BulkRestore-1",
-            "status": "CompletedWithErrors",
-            "restoreSessionId": "d8078599-3b3c-468d-b6ff-adf161a42760",
-            "createdDateTime": "2023-09-29T10:36:44.4021389+00:00",
-            "createdBy": "",
-            "lastModifiedDateTime": "2023-09-29T10:36:44.4021389+00:00",
-            "lastModifiedBy": "",
-            "error": [
-                {
-                "code": "BulkRestoreArtifactsNotResolved",
-                "message": "Errors while resolving restore artifacts",
-                "details": [
-                    {
-                        "code": "UserNotBackedup",
-                        "message": "Email address 'user0@contoso.com' has not been backed up",
-                        "target": "user0@contoso.com"
-                    }
-                ]
-                }
-            ]
+          "code": "BulkRestoreArtifactsNotResolved",
+          "message": "Errors while resolving restore artifacts",
+          "details": [
+            {
+              "code": "UserNotBackedup",
+              "message": "Email address 'user0@contoso.com' has not been backed up",
+              "target": "user0@contoso.com"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 
