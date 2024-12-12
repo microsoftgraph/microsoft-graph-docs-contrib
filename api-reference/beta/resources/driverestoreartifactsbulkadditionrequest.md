@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a **driveRestoreArtifactsBulkAdditionRequest** associated with a [OneDrive for work or school restore sesssion](../resources/onedriveforbusinessrestoresession.md). It contains a list of drives that are added to the corresponding OneDrive for work or school restore session.
+Represents the properties of a **driveRestoreArtifactsBulkAdditionRequest** associated with a [OneDrive for work or school restore sesssion](../resources/onedriveforbusinessrestoresession.md). It contains a list of drives that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
 
 Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).
 
