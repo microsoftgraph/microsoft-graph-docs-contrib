@@ -21,10 +21,10 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/exchangerestoresession-list-mailboxrestoreartifactsbulkadditionrequests.md)|[mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) collection|Get a list of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) objects and their properties.|
-|[Create](../api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests.md)|[mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md)|Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object.|
-|[Get](../api/mailboxrestoreartifactsbulkadditionrequest-get.md)|[mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md)|Read the properties and relationships of a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object.|
-|[Delete](../api/exchangerestoresession-delete-mailboxrestoreartifactsbulkadditionrequests.md)|None|Delete a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object.|
+|[List](../api/exchangerestoresession-list-mailboxrestoreartifactsbulkadditionrequests.md)|[mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) collection|Get a list of the [maiboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) objects associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).|
+|[Create](../api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests.md)|[mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md)|Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).|
+|[Get](../api/mailboxrestoreartifactsbulkadditionrequest-get.md)|[mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md)|Get a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object by its **id**, associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).|
+|[Delete](../api/mailboxrestoreartifactsbulkadditionrequest-delete.md)|None|Delete a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).|
 
 ## Properties
 
