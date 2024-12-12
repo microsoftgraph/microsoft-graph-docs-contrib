@@ -1,6 +1,6 @@
 ---
 title: "Get mailboxRestoreArtifactsBulkAdditionRequest"
-description: "Get a mailboxRestoreArifatcsBulkAdditionRequest in an Exchange Restore Session"
+description: "Get a mailboxRestoreArtifactsBulkAdditionRequest object by its **id**, associated with an exchangeRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object by its `id` associated with a [exchangeRestoreSession](../resources/exchangerestoresession.md).
+Get a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object by its **id**, associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
 ## Permissions
 
@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/dc3a3fc8-eb4b-45eb-9ca6-4955696344b8/mailboxRestoreArtifactsBulkAdditionRequests/b4318e3a-3eae-4ce5-87f3-bad51e1527c4
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -86,29 +85,28 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest",
   "mailboxes": [],
-    "id": "b4318e3a-3eae-4ce5-87f3-bad51e1527c4",
-    "destinationType": "new",
-    "tags": "fastRestore",
-    "restorePointPreference": "latest",
-    "displayName": "EXO-BulkRestoreArtifacts",
-    "status": "active",
-    "createdDateTime": "2024-12-03T13:17:19.8862272Z",
-    "lastModifiedDateTime": "2024-12-03T13:17:19.8862272Z",
-    "protectionTimePeriod": {
-        "startDateTime": "2024-11-26T00:00:00Z",
-        "endDateTime": "2024-12-03T00:00:00Z"
-    },
-    "createdBy": {
-        "user": {
-            "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
-        }
-    },
-    "lastModifiedBy": {
-        "user": {
-            "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
-        }
+  "id": "b4318e3a-3eae-4ce5-87f3-bad51e1527c4",
+  "destinationType": "new",
+  "tags": "fastRestore",
+  "restorePointPreference": "latest",
+  "displayName": "EXO-BulkRestoreArtifacts",
+  "status": "active",
+  "createdDateTime": "2024-12-03T13:17:19.8862272Z",
+  "lastModifiedDateTime": "2024-12-03T13:17:19.8862272Z",
+  "protectionTimePeriod": {
+    "startDateTime": "2024-11-26T00:00:00Z",
+    "endDateTime": "2024-12-03T00:00:00Z"
+  },
+  "createdBy": {
+    "user": {
+      "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
     }
-    
+  },
+  "lastModifiedBy": {
+    "user": {
+      "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+    }
+  }
 }
 ```
 
