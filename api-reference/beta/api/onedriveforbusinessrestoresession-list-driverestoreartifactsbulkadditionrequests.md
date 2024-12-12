@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) objects associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md). The **drives** properties are deliberately omitted from the response body in order to limit the response size.
+Get a list of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) objects associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md). The **drives** property is deliberately omitted from the response body in order to limit the response size.
 
 ## Permissions
 
