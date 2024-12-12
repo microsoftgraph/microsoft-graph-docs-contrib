@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a **siteRestoreArtifactsBulkAdditionRequest** associated with a [SharePoint restore sesssion](../resources/sharepointrestoresession.md). It includes a list of SharePoint site URLs that are added to the corresponding SharePoint restore session.
+Represents the properties of a **siteRestoreArtifactsBulkAdditionRequest** associated with a [SharePoint restore sesssion](../resources/sharepointrestoresession.md). It includes a list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
 
 Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).
 
