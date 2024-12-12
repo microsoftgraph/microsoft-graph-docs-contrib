@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "sharepointrestoresession-delete-siterestoreartifactsbulkadditionrequests-permissions"
+  "name": "siterestoreartifactsbulkadditionrequest-delete"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/sharepointrestoresession-delete-siterestoreartifactsbulkadditionrequests-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/siterestoreartifactsbulkadditionrequest-delete-permissions.md)]
 
 ## HTTP request
 
