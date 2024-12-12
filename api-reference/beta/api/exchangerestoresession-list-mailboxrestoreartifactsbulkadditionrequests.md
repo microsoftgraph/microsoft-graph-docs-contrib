@@ -38,6 +38,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}/mailboxRestoreArtifactsBulkAdditionRequests
 ```
 
+## Optional query parameters
+
+This method doesn't support the [OData query parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
 |Name|Description|
