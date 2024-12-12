@@ -1,10 +1,10 @@
 ---
 title: "mailboxFolder resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "A folder in a user's mailbox, such as Inbox, Drafts or other user created folders."
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -14,46 +14,48 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A folder in a user's mailbox, such as Inbox, Drafts or other user created folders. Folders can contain various mailbox items like messages, events, contacts, 
+other Outlook items, and child folders.
 
-Inherits from [entity](../resources/entity.md)
+This resource supports using [delta query](https://docs.microsoft.com/en-us/graph/delta-query-overview) to track incremental additions, deletions, and updates,
+by providing a [delta](../api/mailboxfolder-delta.md) function. It also supports [single-value and multi-value extended properties](https://learn.microsoft.com/en-us/graph/api/resources/extended-properties-overview?view=graph-rest-1.0) for storing and accessing custom data that is not already exposed in the Microsoft Graph API metadata.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/mailbox-list-folders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a list of the mailboxFolder objects and their properties.|
-|[Create](../api/mailbox-post-folders.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new mailboxFolder object.|
-|[Get](../api/mailboxfolder-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Read the properties and relationships of a mailboxFolder object.|
-|[Update](../api/mailboxfolder-update.md)|[mailboxFolder](../resources/mailboxfolder.md)|Update the properties of a mailboxFolder object.|
-|[Delete](../api/mailbox-delete-folders.md)|None|Delete a mailboxFolder object.|
-|[delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|**TODO: Add Description**|
-|[List childFolders](../api/mailboxfolder-list-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|**TODO: Add a useful description.**|
-|[Create mailboxFolder](../api/mailboxfolder-post-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new mailboxFolder object.|
-|[List items](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|**TODO: Add a useful description.**|
-|[Create mailboxItem](../api/mailboxfolder-post-items.md)|[mailboxItem](../resources/mailboxitem.md)|Create a new mailboxItem object.|
-|[List multiValueExtendedProperties](../api/mailboxfolder-list-multivalueextendedproperties.md)|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection|**TODO: Add a useful description.**|
-|[Create multiValueLegacyExtendedProperty](../api/mailboxfolder-post-multivalueextendedproperties.md)|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)|Create a new multiValueLegacyExtendedProperty object.|
-|[List singleValueExtendedProperties](../api/mailboxfolder-list-singlevalueextendedproperties.md)|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection|**TODO: Add a useful description.**|
-|[Create singleValueLegacyExtendedProperty](../api/mailboxfolder-post-singlevalueextendedproperties.md)|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)|Create a new singleValueLegacyExtendedProperty object.|
+|[List mailbox folders](../api/mailbox-list-folders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a list of the mailboxFolder objects and their properties.|
+|[Create mailbox folder](../api/mailbox-post-folders.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new mailboxFolder object.|
+|[Get mailbox folder](../api/mailboxfolder-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Read the properties and relationships of a mailboxFolder object.|
+|[Update mailbox folder](../api/mailboxfolder-update.md)|[mailboxFolder](../resources/mailboxfolder.md)|Update the properties of a mailboxFolder object.|
+|[Delete mailbox folder](../api/mailbox-delete-folders.md)|None|Delete a mailboxFolder object.|
+|[Get mailbox folder delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a set of mailbox folders that have been added, deleted, or removed from the user's mailbox|
+|[List child mailbox folders](../api/mailboxfolder-list-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get the mailboxFolder collection under the specified folder.|
+|[Create child mailbox folder](../api/mailboxfolder-post-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new mailboxFolder object.|
+|[List items in a folder](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get all the items within a specified folder in the mailbox.|
+|**Extended properties**| | |
+|[Get single-value property](../api/mailboxfolder-list-singlevalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get mailboxFolders that contain a single-value extended property by using `$expand` or `$filter`.|
+|[Create single-value property](../api/mailboxfolder-post-singlevalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new singleValueLegacyExtendedProperty object.|
+|[Get multi-value property](../api/mailboxfolder-list-multivalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get a mailboxFolder that contains a multi-value extended property by using `$expand`.|
+|[Create multi-value property](../api/mailboxfolder-post-multivalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new multiValueLegacyExtendedProperty object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|childFolderCount|Int32|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherits from [entity](../resources/entity.md)|
-|parentFolderId|String|**TODO: Add Description**|
-|parentMailboxUrl|String|**TODO: Add Description**|
-|totalItemCount|Int32|**TODO: Add Description**|
-|type|String|**TODO: Add Description**|
+|childFolderCount|Int32|The number of immediate child folders in the current folder.|
+|displayName|String|The folder's display name.|
+|id|String|The folder's unique identifier.|
+|parentFolderId|String|The unique identifier for the folder's parent folder.|
+|parentMailboxUrl|String|The routing link to the actual underlying mailbox where the folder physically resides. The folder can be accessed using `GET {parentMailboxUrl}/folders/{id}`, treating the entire URL as an opaque string. <br><br> This is especially important when auto-expanding archiving is enabled for user's In-Place Archive mailbox. The user's archive content can span across multiple mailboxes in such cases. The `parentMailboxUrl` in such cases, provides the link to the actual underlying mailbox where the folder physically resides in.|
+|totalItemCount|Int32|The number of items in the folder.|
+|type|String|Describes the folder class type.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|childFolders|[mailboxFolder](../resources/mailboxfolder.md) collection|**TODO: Add Description**|
-|items|[mailboxItem](../resources/mailboxitem.md) collection|**TODO: Add Description**|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection|**TODO: Add Description**|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection|**TODO: Add Description**|
+|childFolders|[mailboxFolder](../resources/mailboxfolder.md) collection|The collection of child folders in the folder.|
+|items|[mailboxItem](../resources/mailboxitem.md) collection|The collection of items in the folder.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection|The collection of multi-value extended properties defined for the mailboxFolder|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the mailboxFolder.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -76,4 +78,3 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)"
 }
 ```
-

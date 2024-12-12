@@ -1,10 +1,10 @@
 ---
 title: "mailboxItem resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "An item in a mailbox folder."
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -14,42 +14,36 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An item in a mailbox folder. Items are Exchange mailbox items like message, task, event, contact or note.
 
-
-Inherits from [outlookItem](../resources/outlookitem.md).
-
+This resource supports using delta query to track incremental additions, deletions, and updates, by providing a delta function. It also supports single-value and multi-value extended properties for filtering on custom data that is not already exposed in the Microsoft Graph API metadata
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get a list of the mailboxItem objects and their properties.|
-|[Create](../api/mailboxfolder-post-items.md)|[mailboxItem](../resources/mailboxitem.md)|Create a new mailboxItem object.|
-|[Get](../api/mailboxitem-get.md)|[mailboxItem](../resources/mailboxitem.md)|Read the properties and relationships of a mailboxItem object.|
-|[Update](../api/mailboxitem-update.md)|[mailboxItem](../resources/mailboxitem.md)|Update the properties of a mailboxItem object.|
-|[Delete](../api/mailboxfolder-delete-items.md)|None|Delete a mailboxItem object.|
-|[delta](../api/mailboxitem-delta.md)|[mailboxItem](../resources/mailboxitem.md) collection|**TODO: Add Description**|
-|[List multiValueExtendedProperties](../api/mailboxitem-list-multivalueextendedproperties.md)|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection|**TODO: Add a useful description.**|
-|[Create multiValueLegacyExtendedProperty](../api/mailboxitem-post-multivalueextendedproperties.md)|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)|Create a new multiValueLegacyExtendedProperty object.|
-|[List singleValueExtendedProperties](../api/mailboxitem-list-singlevalueextendedproperties.md)|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection|**TODO: Add a useful description.**|
-|[Create singleValueLegacyExtendedProperty](../api/mailboxitem-post-singlevalueextendedproperties.md)|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)|Create a new singleValueLegacyExtendedProperty object.|
+|[List mailbox items](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get a list of the mailboxItem objects and their properties.|
+|[Create mailbox item](../api/mailboxfolder-post-items.md)|[mailboxItem](../resources/mailboxitem.md)|Create a new mailboxItem object.|
+|[Get mailbox item](../api/mailboxitem-get.md)|[mailboxItem](../resources/mailboxitem.md)|Read the properties and relationships of a mailboxItem object.|
+|[Update mailbox item](../api/mailboxitem-update.md)|[mailboxItem](../resources/mailboxitem.md)|Update the properties of a mailboxItem object.|
+|[Delete mailbox item](../api/mailboxfolder-delete-items.md)|None|Delete a mailboxItem object.|
+|[Get mailbox item delta](../api/mailboxitem-delta.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get a set of mailbox items that were added, deleted, or updated in a specified folder.|
+|**Extended properties**| | |
+|[List singleValueExtendedProperties](../api/mailboxitem-list-singlevalueextendedproperties.md)|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection|Get mailboxItems that contain a single-value extended property by using `$expand` or `$filter`.|
+|[List multiValueExtendedProperties](../api/mailboxitem-list-multivalueextendedproperties.md)|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection|Get a mailboxItem that contains a multi-value extended property by using `$expand`.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|categories|String collection|**TODO: Add Description** Inherited from [outlookItem](../resources/outlookitem.md).|
-|changeKey|String|**TODO: Add Description** Inherited from [outlookItem](../resources/outlookitem.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [outlookItem](../resources/outlookitem.md).|
-|id|String|**TODO: Add Description** Inherited from [outlookItem](../resources/outlookitem.md). Inherits from [entity](../resources/entity.md)|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [outlookItem](../resources/outlookitem.md).|
-|size|Int64|**TODO: Add Description**|
-|type|String|**TODO: Add Description**|
+|categories|String collection|The categories associated with the message.|
+|changeKey|String|The version of the item.|
+|createdDateTime|DateTimeOffset|The date and time the item was created. <br><br> The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is `2021-01-01T00:00:00Z`.|
+|id|String|The item's unique identifier.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the item was last changed. <br><br> The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is `2021-01-01T00:00:00Z`.|
+|size|Int64|The length of the item in bytes.|
+|type|String|Describes the message class ID of the item.|
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection|**TODO: Add Description**|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection|**TODO: Add Description**|
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -75,4 +69,3 @@ The following JSON representation shows the resource type.
   "size": "Integer"
 }
 ```
-

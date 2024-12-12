@@ -1,10 +1,10 @@
 ---
 title: "mailboxItemImportSession resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "The mailboxItemImportSession resource provides information about how to import items into a user's mailbox."
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -14,17 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+The mailboxItemImportSession resource provides information about how to import items into a user's mailbox.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description**|
-|importUrl|String|**TODO: Add Description**|
-
-## Relationships
-None.
+|expirationDateTime|DateTimeOffset|The date and time in UTC that the import session will expire.|
+|importUrl|String|The URL endpoint that accepts POST requests for FTS format of the item.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -40,4 +36,3 @@ The following JSON representation shows the resource type.
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
