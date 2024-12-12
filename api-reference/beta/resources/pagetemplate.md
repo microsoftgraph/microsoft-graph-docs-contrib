@@ -43,21 +43,21 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the last modifier of the page template. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time the page template was last modified. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |name|String|The name of the page template. Inherited from [baseSitePage](../resources/basesitepage.md).|
-|pageLayout|[pageLayoutType](../resources/basesitepage.md#pagelayouttype-values)|The type of the page layout for the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`. Inherited from [baseSitePage](../resources/basesitepage.md).|
-|parentReference|[itemReference](../resources/itemreference.md)|The parent information, if the page template has a parent. Inherited from [baseSitePage](../resources/baseSitePage.md).|
+|pageLayout|[pageLayoutType](../resources/basesitepage.md#pagelayouttype-values)|The type of the page layout for the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`, `newsLink`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink`. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|parentReference|[itemReference](../resources/itemreference.md)|The parent information, if the page template has a parent. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |publishingState|[publicationFacet](../resources/publicationfacet.md)|The publishing status and the MM.mm version of the page template. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |thumbnailWebUrl|String|The URL of the page template's thumbnail image|
 |title|String|The title of the page template. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |titleArea|[titleArea](../resources/titlearea.md)|The title area on the SharePoint page template.|
-|webUrl|String|The URL that displays the page template in the browser. Read-only. Inherited from [baseSitePage](../resources/baseSitePage.md).|
+|webUrl|String|The URL that displays the page template in the browser. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:-----------|:---|:----------|
 |canvasLayout|[canvasLayout](../resources/canvaslayout.md)|The layout of the content in a given SharePoint page template, including horizontal sections and vertical sections.|
-|createdByUser|[user](../resources/user.md)|The identity of the user who created this site page template. Read-only. Inherited from [baseSitePage](../resources/baseSitePage.md).|
-|lastModifiedByUser|[user](../resources/user.md)|The identity of the last modifier of this item. Read-only. Inherited from [baseSitePage](../resources/baseSitePage.md).|
+|createdByUser|[user](../resources/user.md)|The identity of the user who created this site page template. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|lastModifiedByUser|[user](../resources/user.md)|The identity of the last modifier of this item. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |webParts|[webPart](../resources/webpart.md) collection|The collection of web parts on the SharePoint page.|
 
 ## JSON representation

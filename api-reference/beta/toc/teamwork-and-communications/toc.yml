@@ -4,6 +4,30 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
+- name: AI interactions (preview)
+  items:
+  - name: AI interaction history
+    items:
+    - name: AI interaction history
+      href: ../../resources/aiinteractionhistory.md
+    - name: List all enterprise interactions
+      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
+  - name: Complex types
+    items:
+    - name: AI interaction
+      href: ../../resources/aiinteraction.md
+    - name: AI interaction attachment
+      href: ../../resources/aiinteractionattachment.md
+    - name: AI interaction context
+      href: ../../resources/aiinteractioncontext.md
+    - name: AI interaction link
+      href: ../../resources/aiinteractionlink.md
+    - name: AI interaction mention
+      href: ../../resources/aiinteractionmention.md
+    - name: AI interaction mentioned identity set
+      href: ../../resources/aiinteractionmentionedidentityset.md
+    - name: AI user
+      href: ../../resources/aiuser.md
 - name: Approvals
   items:
   - name: Approval item
@@ -582,30 +606,6 @@ items:
       items:
       - name: Virtual event external information
         href: ../../resources/virtualeventexternalinformation.md
-- name: AI interactions (preview)
-  items:
-  - name: AI interaction history
-    items:
-    - name: AI interaction history
-      href: ../../resources/aiinteractionhistory.md
-    - name: List all enterprise interactions
-      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
-  - name: Complex types
-    items:
-    - name: AI interaction
-      href: ../../resources/aiinteraction.md
-    - name: AI interaction attachment
-      href: ../../resources/aiinteractionattachment.md
-    - name: AI interaction context
-      href: ../../resources/aiinteractioncontext.md
-    - name: AI interaction link
-      href: ../../resources/aiinteractionlink.md
-    - name: AI interaction mention
-      href: ../../resources/aiinteractionmention.md
-    - name: AI interaction mentioned identity set
-      href: ../../resources/aiinteractionmentionedidentityset.md
-    - name: AI user
-      href: ../../resources/aiuser.md
 - name: Devices (preview)
   items:
   - name: Teamwork device

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphreports.ReportsHealthMonitoringAlertItemRequestBuilderGetQueryParameters{
+requestParameters := &graphreports.HealthMonitoringAlertsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"alertType"," state"," createdDateTime"," signals"},
 }
-configuration := &graphreports.ReportsHealthMonitoringAlertItemRequestBuilderGetRequestConfiguration{
+configuration := &graphreports.HealthMonitoringAlertsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

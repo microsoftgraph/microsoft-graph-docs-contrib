@@ -5,6 +5,7 @@ title: "contentTypeOrder resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 07/22/2024
 ---
 
 # contentTypeOrder resource type
