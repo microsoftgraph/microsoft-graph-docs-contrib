@@ -1,6 +1,6 @@
 ---
 title: "template resource type"
-description: "Represents container for templates."
+description: "Represents a container for templates."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.date: 11/24/2024
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents container for templates.
+Represents a container for templates.
 
 ## Methods
 None.
