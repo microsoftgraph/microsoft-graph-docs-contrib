@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "exchangerestoresession-delete-mailboxrestoreartifactsbulkadditionrequests-permissions"
+  "name": "mailboxrestoreartifactsbulkadditionrequest-delete"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/exchangerestoresession-delete-mailboxrestoreartifactsbulkadditionrequests-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/mailboxrestoreartifactsbulkadditionrequest-delete-permissions.md)]
 
 ## HTTP request
 
