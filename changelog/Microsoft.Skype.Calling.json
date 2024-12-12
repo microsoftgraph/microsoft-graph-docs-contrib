@@ -73,7 +73,11 @@
       "CreatedDateTime": "2024-11-13T11:31:10.1457269Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
-          "Id": "cc96a0af-ec29-4b9d-9d42-8d3dd6532aff",
+    },
+      {
+        "ChangeList": [
+          {
+      "Id": "cc96a0af-ec29-4b9d-9d42-8d3dd6532aff",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventExternalInformation",
           "ChangeType": "Addition",
@@ -118,7 +122,7 @@
       "Version": "beta",
       "CreatedDateTime": "2024-11-21T00:00:00Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Calls and online meetings
+      "SubArea": "Calls and online meetings>"
     },
     {
       "ChangeList": [
