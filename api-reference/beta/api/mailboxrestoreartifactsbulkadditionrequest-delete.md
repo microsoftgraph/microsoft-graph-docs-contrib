@@ -1,6 +1,6 @@
 ---
 title: "Delete mailboxRestoreArtifactsBulkAdditionRequest"
-description: "Delete a mailboxRestoreArtifactsBulkAdditionRequest object."
+description: "Delete a mailboxRestoreArtifactsBulkAdditionRequest object associated with an exchangeRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [ExchangeRestoreSession](../resources/exchangerestoresession.md)
+Delete a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md)
 
 ## Permissions
 
