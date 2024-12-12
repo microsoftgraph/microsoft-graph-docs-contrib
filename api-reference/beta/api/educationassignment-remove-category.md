@@ -6,6 +6,7 @@ author: "dipakboyed"
 ms.subservice: "education"
 ms.collection: "education"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Remove educationCategory

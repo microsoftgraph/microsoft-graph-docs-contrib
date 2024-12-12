@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Accept-Language", "fr-FR")
 
-configuration := &graphagreements.AgreementItemFileRequestBuilderGetRequestConfiguration{
+configuration := &graphagreements.ItemFileRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 
