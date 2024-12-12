@@ -1,6 +1,6 @@
 ---
 title: "Get driveRestoreArtifactsBulkAdditionRequest"
-description: "Get a driveRestoreArifatcsBulkAdditionRequest in a Onedrive Restore Session."
+description: "Get a driveRestoreArtifactsBulkAdditionRequest object by its id, associated with a oneDriveForBusinessRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object by its `id` associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
+Get a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object by its **id**, associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
 
 ## Permissions
 
@@ -85,29 +85,29 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.driveRestoreArtifactsBulkAdditionRequest",
-    "drives": [],
-    "id": "e79d0a79-7210-4369-9177-6297f0555242",
-    "destinationType": "new",
-    "tags": "fastRestore",
-    "restorePointPreference": "latest",
-    "displayName": "ODB-BulkRestoreArtifacts",
-    "status": "active",
-    "createdDateTime": "2024-12-04T07:51:58.9045003Z",
-    "lastModifiedDateTime": "2024-12-04T07:51:58.9045003Z",
-    "protectionTimePeriod": {
-        "startDateTime": "2024-01-01T00:00:00Z",
-        "endDateTime": "2024-01-08T00:00:00Z"
-    },
-    "createdBy": {
-        "user": {
-            "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
-        }
-    },
-    "lastModifiedBy": {
-        "user": {
-            "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
-        }
+  "drives": [],
+  "id": "e79d0a79-7210-4369-9177-6297f0555242",
+  "destinationType": "new",
+  "tags": "fastRestore",
+  "restorePointPreference": "latest",
+  "displayName": "ODB-BulkRestoreArtifacts",
+  "status": "active",
+  "createdDateTime": "2024-12-04T07:51:58.9045003Z",
+  "lastModifiedDateTime": "2024-12-04T07:51:58.9045003Z",
+  "protectionTimePeriod": {
+    "startDateTime": "2024-01-01T00:00:00Z",
+    "endDateTime": "2024-01-08T00:00:00Z"
+  },
+  "createdBy": {
+    "user": {
+      "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
     }
+  },
+  "lastModifiedBy": {
+    "user": {
+      "identity": "6f707fc8-0250-4fd5-89b5-c0312bea7460"
+    }
+  }
 }
 ```
 
