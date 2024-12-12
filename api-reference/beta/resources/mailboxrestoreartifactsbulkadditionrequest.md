@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a **mailboxRestoreArtifactsBulkAdditionRequest** associated with an [Exchange restore sesssion](../resources/exchangerestoresession.md). It contains a list of mailboxes that are added to the corresponding Exchange restore session.
+Represents the properties of a **mailboxRestoreArtifactsBulkAdditionRequest** associated with an [Exchange restore sesssion](../resources/exchangerestoresession.md). It contains a list of mailboxes that are added to the corresponding Exchange restore session in a bulk operation.
 
 Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).
 
