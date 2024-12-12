@@ -1,6 +1,6 @@
 ---
 title: "Create siteRestoreArtifactsBulkAdditionRequests"
-description: "Create siteRestoreArtifactsBulkAdditionRequests for a SharePoint restore session."
+description: "Create a new siteRestoreArtifactsBulkAdditionRequest object associated with a sharePointRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -16,8 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
-The initial status upon creation of restore session is `active`. Once all the `sites` are added into the corresponding OneDrive restore session and the restore session is activated, the status becomes `completed`.
-If any failures are encountered while resource resolution, the status of restore session becomes `completedWithErrors`.
+The initial status upon creation of the restore session is `active`. When all the sites are added to the corresponding SharePoint restore session and the restore session is activated, the status becomes `completed`. If any failures are encountered during resource resolution, the status of the restore session becomes `completedWithErrors`.
 
 ## Permissions
 
@@ -49,23 +48,7 @@ POST /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessio
 
 ## Request body
 
-```json
-{
-    "displayName": "SPO-BulkRestoreArtifacts",
-    "siteWebUrls": [
-        "https: //contoso1.sharepoint.com",
-        "https: //contoso2.sharepoint.com",
-        "https: //contoso3.sharepoint.com"
-    ],
-    "protectionTimePeriod": {
-        "startDateTime": "2024-01-01T00:00:00Z",
-        "endDateTime": "2024-01-08T00:00:00Z"
-    },
-    "destinationType": "new",
-    "tags": "fastRestore",
-    "restorePointPreference": "latest"
-}
-```
+In the request body, supply a JSON representation of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object.
 
 ## Response
 
@@ -82,13 +65,26 @@ The following example shows a request.
   "name": "create_siterestoreartifactsbulkadditionrequest_from_"
 }
 -->
-
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/959ba739-70b5-43c4-8c90-b2c22014f18b/siteRestoreArtifactsBulkAdditionRequests
+Content-Type: application/json
+
+{
+  "displayName": "SPO-BulkRestoreArtifacts",
+  "siteWebUrls": [
+    "https: //contoso1.sharepoint.com",
+    "https: //contoso2.sharepoint.com",
+    "https: //contoso3.sharepoint.com"
+  ],
+  "protectionTimePeriod": {
+    "startDateTime": "2024-01-01T00:00:00Z",
+    "endDateTime": "2024-01-08T00:00:00Z"
+  },
+  "destinationType": "new",
+  "tags": "fastRestore",
+  "restorePointPreference": "latest"
+}
 ```
-
----
-
 
 ### Response
 
@@ -104,21 +100,21 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "/solutions/backupRestore/$metadata#siteRestoreArtifactsBulkAdditionRequest/$entity",
-  	"id": "4437afcf-e520-463c-90a7-ca96401d8039",    
-    "destinationType": "new",
-    "tags": "fastRestore",
-    "restorePointPreference": "latest",
-    "displayName": "SPO-BulkRestoreArtifacts",
-    "status": "active",
-    "createdDateTime": "2024-12-03T07:47:57.6011358Z",      
-    "lastModifiedDateTime": "2024-12-03T07:47:57.6011358Z",
-    "siteWebUrls": [],
-    "protectionTimePeriod": {
-         "startDateTime": "2024-01-01T00:00:00Z",
-         "endDateTime": "2024-01-08T00:00:00Z"
-    },
-    "createdBy": "",
-    "lastModifiedBy": "",
+  "@odata.context": "/solutions/backupRestore/$metadata#siteRestoreArtifactsBulkAdditionRequest/$entity",
+  "id": "4437afcf-e520-463c-90a7-ca96401d8039",
+  "destinationType": "new",
+  "tags": "fastRestore",
+  "restorePointPreference": "latest",
+  "displayName": "SPO-BulkRestoreArtifacts",
+  "status": "active",
+  "createdDateTime": "2024-12-03T07:47:57.6011358Z",
+  "lastModifiedDateTime": "2024-12-03T07:47:57.6011358Z",
+  "siteWebUrls": [],
+  "protectionTimePeriod": {
+    "startDateTime": "2024-01-01T00:00:00Z",
+    "endDateTime": "2024-01-08T00:00:00Z"
+  },
+  "createdBy": "",
+  "lastModifiedBy": ""
 }
 ```
