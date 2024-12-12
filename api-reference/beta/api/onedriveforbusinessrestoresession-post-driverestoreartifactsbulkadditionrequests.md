@@ -1,6 +1,6 @@
 ---
 title: "Create driveRestoreArtifactsBulkAdditionRequest"
-description: "Create a new driveRestoreArtifactsBulkAdditionRequest object for a oneDriveForBusiness Restore Session."
+description: "Create a driveRestoreArtifactsBulkAdditionRequest object associated with a oneDriveForBusinessRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -16,8 +16,7 @@ Namespace: microsoft.graph
 
 Create a [driveRestoreArtifactsBulkAdditionRequest](../resources/driveRestoreArtifactsBulkAdditionRequest.md) object associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
 
-The initial status upon creation of restore session is `active`. Once all the `drives` are added into the corresponding OneDrive restore session and the restore session is activated, the status becomes `completed`.
-If any failures encountered while resource resolution, the status of restore session becomes `completedWithErrors`.
+The initial status upon creation of the restore session is `active`. When all the drives are added to the corresponding OneDrive restore session and the restore session is activated, the status becomes `completed`. If any failures are encountered during resource resolution, the status of the restore session becomes `completedWithErrors`.
 
 ## Permissions
 
@@ -49,26 +48,7 @@ POST /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBus
 
 ## Request body
 
-```json
-{
-  "displayName": "ODB-BulkRestoreArtifacts",
-  "drives": [
-    "contoso1@micorosft.com",
-    "consotos2@microsoft.com",
-    "contoso3@microsoft.com"
-      ],
-    "directoryObjectIds": [],
-    "protectionUnitIds": [],
-    "protectionTimePeriod": {
-        "startDateTime": "2021-01-01T00:00:00Z",
-        "endDateTime": "2021-01-08T00:00:00Z"
-        },
-    "destinationType": "new",
-    "tags": "fastRestore",
-    "restorePointPreference": "latest"
-  }
-  ```
-
+In the request body, supply a JSON representation of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object.
 
 ## Response
 
@@ -86,8 +66,26 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSessions/493635f0-b8c0-4c7f-bcb7-b20c85d97efe/driveRestoreArtifactsBulkAdditionRequests
-```
+Content-Type: application/json
 
+{
+  "displayName": "ODB-BulkRestoreArtifacts",
+  "drives": [
+    "contoso1@micorosft.com",
+    "consotos2@microsoft.com",
+    "contoso3@microsoft.com"
+  ],
+  "directoryObjectIds": [],
+  "protectionUnitIds": [],
+  "protectionTimePeriod": {
+    "startDateTime": "2021-01-01T00:00:00Z",
+    "endDateTime": "2021-01-08T00:00:00Z"
+  },
+  "destinationType": "new",
+  "tags": "fastRestore",
+  "restorePointPreference": "latest"
+}
+```
 
 ### Response
 
@@ -103,30 +101,30 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-	"@odata.context": "/solutions/backupRestore/$metadata#siteRestoreArtifactsBulkAdditionRequest/$entity",
-	"id": "9cf59538-5289-4024-9fa4-9c6c2b39aaa6",
-    "destinationType": "new",
-    "tags": "fastRestore",
-    "restorePointPreference": "latest",
-    "displayName": "ODB-BulkRestoreArtifacts",
-    "status": "active",
-    "createdDateTime": "2024-12-03T13:09:46.3725247Z",
-    "lastModifiedDateTime": "2024-12-03T13:09:46.3725247Z",
-    "drives": [],
-    "protectionTimePeriod": {
-        "startDateTime": "2024-11-26T00:00:00Z",
-        "endDateTime": "2024-12-03T00:00:00Z"
-    },
-    "createdBy": {
-        "user": {
-            "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
-        }
-    },
-    "lastModifiedBy": {
-        "user": {
-            "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
-        }
+  "@odata.context": "/solutions/backupRestore/$metadata#siteRestoreArtifactsBulkAdditionRequest/$entity",
+  "id": "9cf59538-5289-4024-9fa4-9c6c2b39aaa6",
+  "destinationType": "new",
+  "tags": "fastRestore",
+  "restorePointPreference": "latest",
+  "displayName": "ODB-BulkRestoreArtifacts",
+  "status": "active",
+  "createdDateTime": "2024-12-03T13:09:46.3725247Z",
+  "lastModifiedDateTime": "2024-12-03T13:09:46.3725247Z",
+  "drives": [],
+  "protectionTimePeriod": {
+    "startDateTime": "2024-11-26T00:00:00Z",
+    "endDateTime": "2024-12-03T00:00:00Z"
+  },
+  "createdBy": {
+    "user": {
+      "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
     }
+  },
+  "lastModifiedBy": {
+    "user": {
+      "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+    }
+  }
 }
 ```
 
