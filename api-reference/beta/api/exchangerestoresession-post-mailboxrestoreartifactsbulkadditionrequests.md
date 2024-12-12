@@ -1,6 +1,6 @@
 ---
 title: "Create mailboxRestoreArtifactsBulkAdditionRequest"
-description: "Create a new mailboxRestoreArtifactsBulkAdditionRequest object for an Exchange Restore Session."
+description: "Create a new mailboxRestoreArtifactsBulkAdditionRequest object associated with an exchangeRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxRestoreArtifactsBulkAdditionRequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md)
+Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md)
 
-The initial status upon creation of restore session is `active`. Once all the `mailboxes` are added into the corresponding Exchange restore session and the restore session is activated, the status becomes `completed`.
-If there is any failures encountered while resource resolution, the status of restore session becomes `completedWithErrors`.
+The initial status upon creation of the entity is `active`. When all the mailboxes are added to the corresponding Exchange restore session and the restore session is activated, the status becomes `completed`. If any failures are encountered during resource resolution, the status of the restore session becomes `completedWithErrors`.
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -74,18 +74,16 @@ Content-Type: application/json
     "contoso1@micorosft.com",
     "consotos2@microsoft.com",
     "contoso3@microsoft.com"
-      ],
-    "protectionTimePeriod": {
-        "startDateTime": "2021-01-01T00:00:00Z",
-        "endDateTime": "2021-01-08T00:00:00Z"
-        },
-    "destinationType": "new",
-    "tags": "fastRestore",
-    "restorePointPreference": "latest"
-  }
-
+  ],
+  "protectionTimePeriod": {
+    "startDateTime": "2021-01-01T00:00:00Z",
+    "endDateTime": "2021-01-08T00:00:00Z"
+  },
+  "destinationType": "new",
+  "tags": "fastRestore",
+  "restorePointPreference": "latest"
+}
 ```
-
 
 ### Response
 
@@ -102,28 +100,28 @@ Content-Type: application/json
 
 {
   "id": "b4318e3a-3eae-4ce5-87f3-bad51e1527c4",
-    "destinationType": "new",
-    "tags": "fastRestore",
-    "restorePointPreference": "latest",
-    "displayName": "EXO-BulkRestoreArtifacts",
-    "status": "active",
-    "createdDateTime": "2024-12-03T13:17:19.8862272Z",
-    "lastModifiedDateTime": "2024-12-03T13:17:19.8862272Z",
-    "mailboxes": [],
-    "protectionTimePeriod": {
-        "startDateTime": "2024-11-26T00:00:00Z",
-        "endDateTime": "2024-12-03T00:00:00Z"
-    },
-    "createdBy": {
-        "user": {
-            "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
-        }
-    },
-    "lastModifiedBy": {
-        "user": {
-            "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
-        }
+  "destinationType": "new",
+  "tags": "fastRestore",
+  "restorePointPreference": "latest",
+  "displayName": "EXO-BulkRestoreArtifacts",
+  "status": "active",
+  "createdDateTime": "2024-12-03T13:17:19.8862272Z",
+  "lastModifiedDateTime": "2024-12-03T13:17:19.8862272Z",
+  "mailboxes": [],
+  "protectionTimePeriod": {
+    "startDateTime": "2024-11-26T00:00:00Z",
+    "endDateTime": "2024-12-03T00:00:00Z"
+  },
+  "createdBy": {
+    "user": {
+      "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
     }
+  },
+  "lastModifiedBy": {
+    "user": {
+      "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+    }
+  }
 }
 ```
 
