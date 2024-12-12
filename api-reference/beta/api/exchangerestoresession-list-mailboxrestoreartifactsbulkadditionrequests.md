@@ -69,14 +69,13 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/dc3a3fc8-eb4b-45eb-9ca6-4955696344b8/mailboxRestoreArtifactsBulkAdditionRequests
 ```
 
-
 ### Response
 
 The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest"
+  "@odata.type": "Collection(microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest)"
 }
 -->
 ``` http
@@ -85,33 +84,33 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest",
-   "value": [
-        {
-            "id": "b4318e3a-3eae-4ce5-87f3-bad51e1527c4",
-            "destinationType": "new",
-            "tags": "fastRestore",
-            "restorePointPreference": "latest",
-            "displayName": "EXO-BulkRestoreArtifacts",
-            "status": "active",
-            "createdDateTime": "2024-12-03T13:17:19.8862272Z",
-            "lastModifiedDateTime": "2024-12-03T13:17:19.8862272Z",
-            "mailboxes": [],
-            "protectionTimePeriod": {
-                "startDateTime": "2024-11-26T00:00:00Z",
-                "endDateTime": "2024-12-03T00:00:00Z"
-            },
-            "createdBy": {
-                "user": {
-                    "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
-                }
-            },
-            "lastModifiedBy": {
-                "user": {
-                    "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
-                }
-            }
+  "value": [
+    {
+      "id": "b4318e3a-3eae-4ce5-87f3-bad51e1527c4",
+      "destinationType": "new",
+      "tags": "fastRestore",
+      "restorePointPreference": "latest",
+      "displayName": "EXO-BulkRestoreArtifacts",
+      "status": "active",
+      "createdDateTime": "2024-12-03T13:17:19.8862272Z",
+      "lastModifiedDateTime": "2024-12-03T13:17:19.8862272Z",
+      "mailboxes": [],
+      "protectionTimePeriod": {
+        "startDateTime": "2024-11-26T00:00:00Z",
+        "endDateTime": "2024-12-03T00:00:00Z"
+      },
+      "createdBy": {
+        "user": {
+          "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
         }
-    ]   
+      },
+      "lastModifiedBy": {
+        "user": {
+          "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+        }
+      }
+    }
+  ]
 }
 ```
 
