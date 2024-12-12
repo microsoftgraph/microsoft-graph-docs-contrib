@@ -21,13 +21,15 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/sharepointrestoresession-list-siterestoreartifactsbulkadditionrequests.md)|[siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) collection|Get a list of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) objects and their properties.|
-|[Create](../api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests.md)|[siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md)|Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object.|
-|[Get](../api/siterestoreartifactsbulkadditionrequest-get.md)|[siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md)|Read the properties and relationships of a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object.|
-|[Delete](../api/sharepointrestoresession-delete-siterestoreartifactsbulkadditionrequests.md)|None|Delete a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object.|
+|[List](../api/sharepointrestoresession-list-siterestoreartifactsbulkadditionrequests.md)|[siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) collection|Get a list of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) objects associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).|
+|[Create](../api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests.md)|[siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md)|Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).|
+|[Get](../api/siterestoreartifactsbulkadditionrequest-get.md)|[siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md)|Get a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object by its **id**, associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).|
+|[Delete](../api/siterestoreartifactsbulkadditionrequest-delete.md)|None|Delete a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharepointRestoreSession](../resources/sharepointrestoresession.md).|
 
-| Property                   | Type                      | Description                                                                                                                                     |
-|:---------------------------|:--------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
+## Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
 | createdBy                  | [identitySet](../resources/identityset.md) | The identity of the person who created the bulk request. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | createdDateTime            | DateTimeOffset            | The time when the bulk request was created. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).           |
 | destinationType            | destinationType           | Indicates the restoration destination. The possible values are: `new`, `inPlace`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
