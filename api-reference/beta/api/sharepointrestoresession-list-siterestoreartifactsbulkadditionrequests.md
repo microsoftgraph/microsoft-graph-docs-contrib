@@ -1,6 +1,6 @@
 ---
 title: "List siteRestoreArtifactsBulkAdditionRequests"
-description: "Get a list of the siteRestoreArtifactsBulkAdditionRequest in a SharePoint Restore Session."
+description: "Get a list of the siteRestoreArtifactsBulkAdditionRequest objects associated with a sharePointRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) objects associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
-The `siteWebUrls` fields are deliberately omitted from the response body in order to limit the response size.
+Get a list of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) objects associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md). The **siteWebUrls** property is deliberately omitted from the response body in order to limit the response size.
 
 ## Permissions
 
@@ -37,6 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifactsBulkAdditionRequests
 ```
+
+## Optional query parameters
+
+This method doesn't support the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
