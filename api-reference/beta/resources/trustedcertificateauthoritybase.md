@@ -1,6 +1,6 @@
 ---
 title: "trustedCertificateAuthorityBase resource type"
-description: "This is an abstract type that represents a list of Certificate Authorities (CAs) that are permitted to issue certificates for Authentication."
+description: "An abstract type that represents a list of Certificate Authorities (CAs) that are permitted to issue certificates for authentication."
 author: "atastrophic"
 ms.localizationpriority: medium
 ms.date: 11/24/2024
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type that represents a list of Certificate Authorities (CAs) that are permitted to issue certificates for Authentication.
+An abstract type that represents a list of Certificate Authorities (CAs) that are permitted to issue certificates for authentication.
+
+Inherits from [directoryObject](../resources/directoryobject.md).
 
 ## Methods
 
@@ -24,7 +26,7 @@ None
 
 |Property|Type|Description|
 |:---|:---|:---|
-|`certificateAuthorities`|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property representing a list of trusted certificate authorities.|
+|certificateAuthorities|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property that represents a list of trusted certificate authorities.|
 |deletedDateTime|DateTimeOffset|Inherited from [directoryObject](../resources/directoryobject.md).|
 |id|String|Inherited from [directoryObject](../resources/directoryobject.md).|
 
@@ -46,16 +48,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.trustedCertificateAuthorityBase",
-  "id": "uniquestringidentifier",
-  "certificateAuthorities": [
-    {
-      "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://contoso.com/root.crl",
-      "deltaCertificateRevocationListUrl": null,
-      "certificate": "joGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "CN=certauthority.com, OU=IoT Org, O=Microsoft Corporation, L=Redmond, S=WA, C=US",
-      "issuerSki": "74B99F09035C525B1B4A0FE1C9ACA70218C65B71"
-    }
-  ]
+  "certificateAuthorities": [{"@odata.type": "microsoft.graph.certificateAuthority"}],
+  "deletedDateTime": "String (timestamp)",
+  "id": "String (identifier)"
 }
 ```
