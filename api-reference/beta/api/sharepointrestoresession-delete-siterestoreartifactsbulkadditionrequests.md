@@ -62,9 +62,8 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/f25015f4-6bb2-46cb-b800-a8ec86a02815/siteRestoreArtifactsBulkAdditionRequests/7ab93651-5029-4fcd-b263-5dcabad61e8d{siteRestoreArtifactsBulkAdditionRequestId}
+DELETE https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/f25015f4-6bb2-46cb-b800-a8ec86a02815/siteRestoreArtifactsBulkAdditionRequests/7ab93651-5029-4fcd-b263-5dcabad61e8d
 ```
-
 
 ### Response
 
