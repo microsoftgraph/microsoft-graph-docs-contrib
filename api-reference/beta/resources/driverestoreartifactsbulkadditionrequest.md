@@ -21,10 +21,10 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/onedriveforbusinessrestoresession-list-driverestoreartifactsbulkadditionrequests.md)|[driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) collection|Get a list of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) objects and their properties.|
-|[Create](../api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests.md)|[driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md)|Create a new [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object.|
-|[Get](../api/driverestoreartifactsbulkadditionrequest-get.md)|[driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md)|Read the properties and relationships of a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object.|
-|[Delete](../api/onedriveforbusinessrestoresession-delete-driverestoreartifactsbulkadditionrequests.md)|None|Delete a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object.|
+|[List](../api/onedriveforbusinessrestoresession-list-driverestoreartifactsbulkadditionrequests.md)|[driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) collection|Get a list of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) objects associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
+|[Create](../api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests.md)|[driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md)|Create a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
+|[Get](../api/driverestoreartifactsbulkadditionrequest-get.md)|[driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md)|Get a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object by its **id**, associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
+|[Delete](../api/driverestoreartifactsbulkadditionrequest-delete.md)|None|Delete a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
 
 ## Properties
 
