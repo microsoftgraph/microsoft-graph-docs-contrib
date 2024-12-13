@@ -35,6 +35,7 @@ For more information about working with groups and members in teams, see [Use th
 |[Get primary channel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |[Update member](../api/team-update-members.md)| [conversationMember](../resources/conversationmember.md) |Change a member to an owner or back to a regular member.|
 |[Remove member](../api/team-delete-members.md)| None |Remove an existing member from the team.|
+|[Remove members in bulk](../api/conversationmember-remove.md)|[actionResultPart](../resources/actionresultpart.md) collection|Remove multiple members from a [team](../resources/team.md) in a single request.|
 |[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
