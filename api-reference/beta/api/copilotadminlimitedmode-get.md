@@ -5,6 +5,7 @@ author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: apiPageType
+ms.date: 12/03/2024
 ---
 
 # Get copilotAdminLimitedMode
@@ -99,7 +100,6 @@ GET https://graph.microsoft.com/beta/copilot/admin/settings/limitedMode
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

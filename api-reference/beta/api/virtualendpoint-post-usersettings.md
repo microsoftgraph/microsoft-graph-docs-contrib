@@ -1,11 +1,11 @@
 ---
 title: "Create cloudPcUserSetting"
-description: "Create a new cloudPcUserSetting ."
+description: "Create a new cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/04/2024
 ---
 
 # Create cloudPcUserSetting
@@ -51,6 +51,7 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|crossRegionDisasterRecoverySetting |[cloudPcCrossRegionDisasterRecoverySetting](../resources/cloudpccrossregiondisasterrecoverysetting.md)|Indicates cross-region disaster recovery settings for the user's Cloud PC.|
 |displayName|String|The setting name as it appears in the UI. |
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.  |
@@ -82,6 +83,16 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
+  "crossRegionDisasterRecoverySetting": {
+     "crossRegionDisasterRecoveryEnabled": false,
+     "maintainCrossRegionRestorePointEnabled": true,
+     "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
+  },
   "restorePointSetting": {
     "frequencyInHours": 16,
     "frequencyType": "sixteenHours",
@@ -143,6 +154,16 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
+  "crossRegionDisasterRecoverySetting": {
+     "crossRegionDisasterRecoveryEnabled": false,
+     "maintainCrossRegionRestorePointEnabled": true,
+     "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
+  },
   "restorePointSetting": {
     "frequencyInHours": 16,
     "frequencyType": "sixteenHours",

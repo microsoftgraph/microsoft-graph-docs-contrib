@@ -12,15 +12,18 @@ from msgraph.generated.models.workforce_integration_encryption_protocol import W
 from msgraph.generated.models.workforce_integration_supported_entities import WorkforceIntegrationSupportedEntities
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WorkforceIntegration(
-	display_name = "displayName-value",
-	api_version = 99,
+	display_name = "ABCWorkforceIntegration",
+	api_version = 1,
+	is_active = True,
 	encryption = WorkforceIntegrationEncryption(
 		protocol = WorkforceIntegrationEncryptionProtocol.SharedSecret,
-		secret = "secret-value",
+		secret = "My Secret",
 	),
-	is_active = True,
-	url = "url-value",
-	supported_entities = WorkforceIntegrationSupportedEntities.None,
+	url = "https://ABCWorkforceIntegration.com/Contoso/",
+	supported_entities = WorkforceIntegrationSupportedEntities.Shift | WorkforceIntegrationSupportedEntities.SwapRequest,
+	additional_data = {
+			"eligibility_filtering_enabled_entities" : "SwapRequest",
+	}
 )
 
 result = await graph_client.teamwork.workforce_integrations.by_workforce_integration_id('workforceIntegration-id').patch(request_body)
