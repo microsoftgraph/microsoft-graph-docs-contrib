@@ -41,6 +41,7 @@ The following JSON representation shows the resource type.
 ## Related content
 
 - [Add members in bulk to a team](../api/conversationmembers-add.md)
+- [Remove members in bulk from a team](../api/conversationmember-remove.md)
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->
