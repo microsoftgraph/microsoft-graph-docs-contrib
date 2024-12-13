@@ -18,10 +18,10 @@ import (
 
 requestFilter := "permission in ('Microsoft.CloudPC/ProvisioningPolicies/Update','Microsoft.CloudPC/ProvisioningPolicies/Create')"
 
-requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointRetrieveScopedPermissionsWithRequestBuilderGetQueryParameters{
+requestParameters := &graphdevicemanagement.VirtualEndpointRetrieveScopedPermissionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointRetrieveScopedPermissionsWithRequestBuilderGetRequestConfiguration{
+configuration := &graphdevicemanagement.VirtualEndpointRetrieveScopedPermissionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

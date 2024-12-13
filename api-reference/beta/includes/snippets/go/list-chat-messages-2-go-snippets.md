@@ -19,12 +19,12 @@ import (
 requestTop := int32(2)
 requestFilter := "lastModifiedDateTime gt 2022-09-22T00:00:00.000Z and lastModifiedDateTime lt 2022-09-24T00:00:00.000Z"
 
-requestParameters := &graphchats.ChatItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ItemMessagesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Orderby: [] string {"lastModifiedDateTime desc"},
 	Filter: &requestFilter,
 }
-configuration := &graphchats.ChatItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

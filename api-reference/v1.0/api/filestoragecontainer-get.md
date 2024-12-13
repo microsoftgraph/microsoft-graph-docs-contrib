@@ -5,7 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 09/12/2024
+ms.date: 11/14/2024
 ---
 
 # Get fileStorageContainer
@@ -49,7 +49,9 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 
 ### Request
 The following example shows a request.
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_filestoragecontainer"
@@ -91,6 +93,8 @@ GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0
 
 ### Response
 The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,7 +114,9 @@ Content-Type: application/json
   "status": "active",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
   "settings": {
-    "isOcrEnabled": false
+    "isOcrEnabled": false,
+    "itemMajorVersionLimit": 50,
+    "isItemVersioningEnabled": true
   }
 }
 ```
