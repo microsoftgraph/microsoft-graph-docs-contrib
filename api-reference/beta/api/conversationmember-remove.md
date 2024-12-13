@@ -1,5 +1,5 @@
 ---
-title: "conversationMember: remove"
+title: "Remove Members in bulk"
 description: "Remove members in bulk from a team."
 author: "prachigoyal-ms"
 doc_type: "apiPageType"
