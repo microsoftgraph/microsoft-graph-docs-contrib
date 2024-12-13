@@ -37,7 +37,7 @@ Enabled the **description**, **displayName**, and **severity** properties as sup
 - Deprecated the **crossRegionDisasterRecoveryEnabled** property of the [cloudPcCrossRegionDisasterRecoverySetting](/graph/api/resources/cloudpccrossregiondisasterrecoverysetting?view=graph-rest-beta&preserve-view=true) resource. Going forward use the **disasterRecoveryType** property.
 - Enabled `endpointConnectivityCheckVMAgentEndPointCommunicationError` as a supported error type in the **errorType** property of the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true) resource.
 
-### Identity and access
+### Identity and access | Directory management
 
 Can now update alternativeNames, externalSourceId, and sourceType on a [device](graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. Also introduced deviceInstances and deviceTemplate as new relationships on devices. 
 
