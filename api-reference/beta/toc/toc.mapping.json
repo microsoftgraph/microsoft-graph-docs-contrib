@@ -1013,9 +1013,12 @@
             "mobilityManagementPolicy",
             "organizationSettings",
             "uxSetting", 
-            "template", 
             "deviceTemplate", 
             "mutualTlsOauthConfiguration"
+          ],
+          "complexTypes": [
+            "template",
+            "trustedCertificateAuthorityBase"
           ],
           "childNodes": [
             {
