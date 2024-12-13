@@ -19,7 +19,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
 
-configuration := &graphgroups.GroupItemMembers$countRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.ItemMembers$countRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 

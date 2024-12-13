@@ -19,11 +19,11 @@ import (
 requestTop := int32(100)
 requestSkip := int32(0)
 
-requestParameters := &graphusers.ItemPendingAccessReviewInstanceItemDecisionsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.PendingAccessReviewInstancesItemDecisionsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphusers.ItemPendingAccessReviewInstanceItemDecisionsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.PendingAccessReviewInstancesItemDecisionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

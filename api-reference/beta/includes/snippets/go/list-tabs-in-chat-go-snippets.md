@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphchats.ChatItemTabsRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ItemTabsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsApp"},
 }
-configuration := &graphchats.ChatItemTabsRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ItemTabsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
