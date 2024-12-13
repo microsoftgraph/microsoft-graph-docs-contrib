@@ -19,8 +19,7 @@ An abstract type that represents a list of Certificate Authorities (CAs) that ar
 Inherits from [directoryObject](../resources/directoryobject.md).
 
 ## Methods
-
-None
+None.
 
 ## Properties
 
@@ -31,7 +30,6 @@ None
 |id|String|Inherited from [directoryObject](../resources/directoryobject.md).|
 
 ## Relationships
-
 None.
 
 ## JSON representation
