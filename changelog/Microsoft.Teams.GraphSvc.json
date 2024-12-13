@@ -2365,11 +2365,11 @@
     {
       "ChangeList": [
         {
-          "Id": "b2b503b2-47be-4369-9e3e-eca7b1918805",
-          "ApiChange": "Method",
-          "ChangedApiName": "getAllMembers",
+          "Id": "bd99be3e-66c5-44fa-8159-3b5788936946",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "allMembers",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllMembers](https://learn.microsoft.com/en-us/graph/api/channel-getallmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the **allMembers** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         }
       ],

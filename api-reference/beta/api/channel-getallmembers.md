@@ -1,5 +1,5 @@
 ---
-title: "channel: getAllMembers"
+title: "channel: allMembers"
 description: "Retrieve all members in channel in a team."
 author: "sumitgupta"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
-# channel: getAllMembers
+# channel: allMembers
 
 Namespace: microsoft.graph
 
@@ -60,11 +60,11 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "channel-getallmembers",
+  "name": "channel-allMembers",
   "sampleKeys": ["2ab9c796-2902-45f8-b712-7c5a63cf41c4", "19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype"]
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/channels/19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype/getAllMembers
+GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/channels/19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype/allMembers
 ```
 
 
@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/getAllMembers",
+"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/allMembers",
 "@odata.count": 2,
     "value": [
         {
