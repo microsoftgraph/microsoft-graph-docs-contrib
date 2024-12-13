@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [driveRes
 
 ### Request
 
-The following example shows a request.
+The following example shows a request that adds a list of drives to the specified Onedrive for work or school restore session in a bulk operation.
 <!-- {
   "blockType": "request",
   "name": "create_driverestoreartifactsbulkadditionrequest_from_"

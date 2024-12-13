@@ -34,6 +34,7 @@ Inherits from [entity](../resources/entity.md).
 | lastModifiedDateTime   | DateTimeOffset                         | Timestamp when this entity was last modified.                         |
 | protectionTimePeriod   | [timePeriod](../resources/timeperiod.md) | The start and end date and time of the protection period.                      |
 | restorePointPreference | restorePointPreference                 | Indicates which restore point to return. The possible values are: `oldest`, `latest`, `unknownFutureValue`. |
+| protectionUnitIds      | Collection(string)                     | Indicates which protection units we need to restore. It so not implemented yet. Future value; don't use.    |
 | status                 | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)      | Determines the status of the long-running operation. The possible values area: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. |
 | tags                   | restorePointTags                       | The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`. |
 
