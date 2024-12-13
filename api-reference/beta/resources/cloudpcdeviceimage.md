@@ -93,7 +93,7 @@ Represents the image resource on a Cloud PC.
 |sourceImageNotSupportCustomizeVMName|A computer name setting issue exists on the resultant generalized image, which prevents the customization of the VM name with the provided image.|
 |sourceImageSizeExceedsLimitation|The size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, which results in image creation failure.|
 |sourceImageWithDataDiskNotSupported|Indicates the error code where source image has an associated data disk attached. Note that setting up a provisioning policy with this configuration is not supported with W365 Frontline.|
-|sourceImageWithDiskEncryptionSet|The uploaded image uses disk encryption set unsupported in W365 with custom image upload. Please upload a new image without it.|
+|sourceImageWithDiskEncryptionSetNotSupported|The uploaded image uses disk encryption set unsupported in W365 with custom image upload. Please upload a new image without it.|
 
 ## Relationships
 
