@@ -219,7 +219,10 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.security.ediscoveryReviewTag)"
 }
 -->
-```
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.security.ediscoveryReviewTag)",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET security/cases/ediscoveryCases('<guid>')/tags('<guid>')/childTags?$select=childSelectability",
