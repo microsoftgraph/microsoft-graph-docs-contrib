@@ -16,9 +16,11 @@ Namespace: microsoft.graph
 
 Represents property values that are common to a set of [device](../resources/device.md) objects. The properties on the template are stamped on any **device** object that is created based on this template.
 
-An admin on the customer's tenant calls the `create` API for this entity. Values for `certificateBasedDeviceAuthConfigurationId`, `certificateBasedDeviceAuthConfigurationTenantId`, `deviceAuthorityAppIds` etc. will be provided to the customer by the device authority (manufacturer or reseller).
+An admin on the customer's tenant calls the [Create deviceTemplate](../api/template-post-devicetemplates.md) API for this entity. Values for **certificateBasedDeviceAuthConfigurationId**, **certificateBasedDeviceAuthConfigurationTenantId**, **deviceAuthorityAppIds**, and so on, are provided to the customer by the device authority (manufacturer or reseller).
 
 The `devicetemplate` is immutable.
+
+Inherits from [directoryObject](../resources/directoryobject.md). 
 
 ## Methods
 |Method|Return type|Description|
@@ -35,12 +37,12 @@ The `devicetemplate` is immutable.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|                                                                      
-| deviceAuthority                    | String            | A generic term that can refer to the device manufacturer or a reseller or supplier responsible for provisioning and managing devices on a customer's EntraID tenant. For example, Acme (**manufacturer**) makes security cameras installed in customer buildings and managed by ABC Company (**deviceAuthority**). |
+| deviceAuthority                    | String            | A generic term that can refer to the device manufacturer, a reseller, or a supplier responsible for provisioning and managing devices on a customer's Entra ID tenant. For example, Acme (**manufacturer**) makes security cameras installed in customer buildings and managed by ABC Company (**deviceAuthority**). |
 | id                                 | String            | Inherited from [directoryObject](../resources/directoryobject.md).                                                                                  |
 | manufacturer                       | String            | Manufacturer name.                                                                                                                                     |
 | model                              | String            | Model name.                                                                                                                                           |
-| mutualTlsOauthConfigurationId      | String            | Object ID of CertificateBasedDeviceAuthConfiguration. _Not set for SelfSigned._                                                                       |
-| mutualTlsOauthConfigurationTenantId | String           | ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (the EntraID tenant ID of the device authority). _Not set for SelfSigned._              |
+| mutualTlsOauthConfigurationId      | String            | Object ID of the CertificateBasedDeviceAuthConfiguration. _Not set for SelfSigned._                                                                       |
+| mutualTlsOauthConfigurationTenantId | String           | ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (the Entra ID tenant ID of the device authority). _Not set for SelfSigned._              |
 | operatingSystem                    | String            | Operating system type.                                                                                                                                             |
 
 ## Relationships
