@@ -1,6 +1,6 @@
 ---
 title: "driveRestoreArtifactsBulkAdditionRequest resource type"
-description: "Represents the properties of a driveRestoreArtifactsBulkAdditionRequest associated with a OneDrive for work or school restore sesssion."
+description: "Represents the properties of a driveRestoreArtifactsBulkAdditionRequest associated with a OneDrive for work or school restore session."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a **driveRestoreArtifactsBulkAdditionRequest** associated with a [OneDrive for work or school restore sesssion](../resources/onedriveforbusinessrestoresession.md). It contains a list of drives that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
+Represents the properties of a **driveRestoreArtifactsBulkAdditionRequest** associated with a [OneDrive for work or school restore session](../resources/onedriveforbusinessrestoresession.md). It contains a list of drives that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
 
 Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).
 
@@ -41,7 +41,7 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 | lastModifiedBy         | [identitySet](../resources/identityset.md)                            | Identity of the person who last modified this entity. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).        |
 | lastModifiedDateTime   | DateTimeOffset                                                       | Timestamp when this entity was last modified. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).               |
 | protectionTimePeriod   | [timePeriod](../resources/timeperiod.md)                             | The start and end date time of the protection period. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).         |
-| protectionUnitIds      | String collection                     | Indicates which protection units to restore. This property isn't implemented yet. Future value; don't use.    |
+| protectionUnitIds      | String collection                     | Indicates which protection units to restore. This property isn't implemented yet. Future value; don't use. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).   |
 | restorePointPreference | restorePointPreference                                               | Indicates which restore point to return. The possible values are: `oldest`, `latest`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | status                 | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values) | The status of the long-running operation. The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | tags                   | restorePointTags                                                     | The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
