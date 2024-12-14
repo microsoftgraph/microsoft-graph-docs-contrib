@@ -1,6 +1,6 @@
 ---
 title: "List deviceTemplate owners"
-description: "List owners of a device template."
+description: "Get a list of owners for a deviceTemplate object."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
