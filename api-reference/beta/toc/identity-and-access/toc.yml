@@ -221,7 +221,7 @@ items:
     - name: Get
       href: ../../api/devicetemplate-get.md
     - name: Delete
-      href: ../../api/device-delete-devicetemplate.md
+      href: ../../api/devicetemplate-delete.md
     - name: List owners
       href: ../../api/devicetemplate-list-owners.md
     - name: Add owner
@@ -463,7 +463,7 @@ items:
     - name: Update
       href: ../../api/mutualtlsoauthconfiguration-update.md
     - name: Delete
-      href: ../../api/certificateauthoritypath-delete-mutualtlsoauthconfigurations.md
+      href: ../../api/mutualtlsoauthconfiguration-delete.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -673,8 +673,6 @@ items:
         href: ../../api/customappscope-update.md
       - name: Delete
         href: ../../api/customappscope-delete.md
-  - name: Template
-    href: ../../resources/template.md
   - name: Tenant information
     items:
     - name: Tenant information
@@ -683,6 +681,12 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
     - name: Find tenant by tenant ID
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
+  - name: Complex types
+    items:
+    - name: Template
+      href: ../../resources/template.md
+    - name: Trusted certificate authority base
+      href: ../../resources/trustedcertificateauthoritybase.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
