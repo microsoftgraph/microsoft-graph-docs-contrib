@@ -1,6 +1,6 @@
 ---
 title: "Get driveRestoreArtifactsBulkAdditionRequest"
-description: "Get a driveRestoreArtifactsBulkAdditionRequest object by its id, associated with a oneDriveForBusinessRestoreSession."
+description: "Get a driveRestoreArtifactsBulkAdditionRequest object by its ID, associated with a oneDriveForBusinessRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
