@@ -28,7 +28,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |[List](../api/template-list-devicetemplates.md) | [deviceTemplate](devicetemplate.md) collection| Get a list of [deviceTemplate](../resources/devicetemplate.md) objects registered in the directory. |
 |[Create](../api/template-post-devicetemplates.md)|[deviceTemplate](../resources/devicetemplate.md) | Create a new [deviceTemplate](../resources/devicetemplate.md) used to identify attributes and manage a group of devices with similar characteristics. |
 |[Get](../api/devicetemplate-get.md) | [deviceTemplate](devicetemplate.md) | Get the properties and relationships of a [deviceTemplate](../resources/devicetemplate.md) object. |
-|[Delete](../api/device-delete-devicetemplate.md) | None |Delete a registered [deviceTemplate](../resources/devicetemplate.md). |
+|[Delete](../api/devicetemplate-delete.md) | None |Delete a registered [deviceTemplate](../resources/devicetemplate.md). |
 |[List owners](../api/devicetemplate-list-owners.md) | [directoryObject](directoryobject.md) collection | Get a list of owners for a [deviceTemplate](../resources/devicetemplate.md) object. |
 |[Add owner](../api/devicetemplate-post-owners.md)| None |Add a new owner to a [deviceTemplate](../resources/devicetemplate.md) object. |
 |[Remove owner](../api/devicetemplate-delete-owners.md) | None |Remove an owner from a [deviceTemplate](../resources/devicetemplate.md) object. |
