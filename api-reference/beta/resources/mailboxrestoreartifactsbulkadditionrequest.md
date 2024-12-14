@@ -1,6 +1,6 @@
 ---
 title: "mailboxRestoreArtifactsBulkAdditionRequest resource type"
-description: "Represents the properties of a mailboxRestoreArtifactsBulkAdditionRequest associated with an Exchange restore sesssion."
+description: "Represents the properties of a mailboxRestoreArtifactsBulkAdditionRequest associated with an Exchange restore session."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a **mailboxRestoreArtifactsBulkAdditionRequest** associated with an [Exchange restore sesssion](../resources/exchangerestoresession.md). It contains a list of mailboxes that are added to the corresponding Exchange restore session in a bulk operation.
+Represents the properties of a **mailboxRestoreArtifactsBulkAdditionRequest** associated with an [Exchange restore session](../resources/exchangerestoresession.md). It contains a list of mailboxes that are added to the corresponding Exchange restore session in a bulk operation.
 
 Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).
 
@@ -39,7 +39,7 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 | lastModifiedBy             | [identitySet](../resources/identityset.md) | Identity of the person who last modified this entity. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | lastModifiedDateTime       | DateTimeOffset            | Timestamp when this entity was last modified. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).   |
 | mailboxes                  | String collection         | The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation. |
-| directoryObjectIds         | String collection         | The list of directoryObjectIds that are added to the corresponding Exchange restore session in a bulk operation. This is not implemented yet. Future value; don't use.           |
+| directoryObjectIds         | String collection         | The list of **directoryObjectIds** that are added to the corresponding Exchange restore session in a bulk operation. This property isn't implemented yet. Future value; don't use.           |
 | protectionTimePeriod       | [timePeriod](../resources/timeperiod.md)                | The start and end date time of the protection period. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | restorePointPreference     | restorePointPreference    | Indicates which restore point to return. The possible values are: `oldest`, `latest`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | status                     | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)   | The status of the long-running operation. The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
@@ -64,6 +64,7 @@ The following JSON representation shows the resource type.
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "destinationType": "String",
+  "directoryObjectIds": ["String"],
   "displayName": "String",
   "error": {"@odata.type": "microsoft.graph.publicError"},
   "id": "String (identifier)",
