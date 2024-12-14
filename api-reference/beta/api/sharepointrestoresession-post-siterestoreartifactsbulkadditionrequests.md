@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [siteRest
 
 ### Request
 
-The following example shows a request that adds a list of sites to the specified Sharepoint restore session in a bulk operation.
+The following example shows a request that adds a list of sites to the specified SharePoint restore session in a bulk operation.
 
 <!-- {
   "blockType": "request",
