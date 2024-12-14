@@ -1,6 +1,6 @@
 ---
 title: "Get siteRestoreArtifactsBulkAdditionRequest"
-description: "Get a siteRestoreArtifactsBulkAdditionRequest object by its id, associated with a sharePointRestoreSession."
+description: "Get a siteRestoreArtifactsBulkAdditionRequest object by its ID, associated with a sharePointRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
