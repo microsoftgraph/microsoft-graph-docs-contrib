@@ -40,8 +40,8 @@ Inherits from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbul
 | lastModifiedDateTime       | DateTimeOffset            | Timestamp when this entity was last modified. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md).   |
 | protectionTimePeriod       | [timePeriod](../resources/timeperiod.md)                | The start and end date time of the protection period. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | restorePointPreference     | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)    | Indicates which restore point to return. The possible values are `oldest`, `latest`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
+| siteIds                    | String collection         | The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation. This property isn't implemented yet. Future value; don't use.          |
 | siteWebUrls                | String collection         | The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.                                                                                     |
-| siteIds                    | String collection         | The list of SharePoint sitIds that are added to the corresponding SharePoint restore session in a bulk operation. This is not implemented yet. Future value; don't use.           |
 | status                     | RestoreArtifactsBulkRequestStatus | The status of the long-running operation. The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 | tags                       | restorePointTags          | The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`. Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). |
 
@@ -71,6 +71,7 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)",
   "protectionTimePeriod": {"@odata.type": "microsoft.graph.timePeriod"},
   "restorePointPreference": "String",
+  "siteIds": ["String"],
   "siteWebUrls": ["String"],
   "status": "String",
   "tags": "String"
