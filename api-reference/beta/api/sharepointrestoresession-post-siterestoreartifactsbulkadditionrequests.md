@@ -114,7 +114,15 @@ Content-Type: application/json
     "startDateTime": "2024-01-01T00:00:00Z",
     "endDateTime": "2024-01-08T00:00:00Z"
   },
-  "createdBy": "",
-  "lastModifiedBy": ""
+  "createdBy": {
+    "user": {
+      "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+    }
+  },
+  "lastModifiedBy": {
+    "user": {
+      "identity": "fb70be35-8c8e-4c8a-b55d-f8cd95c5e23a"
+    }
+  }
 }
 ```
