@@ -1,6 +1,6 @@
 ---
 title: "Get mutualTlsOauthConfiguration"
-description: "Read the properties and relationships of a mutualTlsOauthConfiguration object."
+description: "Get the properties and relationships of the specified mutualTlsOauthConfiguration resource."
 author: "atastrophic"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
+Get the properties and relationships of the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
 
 ## Permissions
 
@@ -29,11 +29,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{mutualTlsOauthConfigurationId}` in the request is the value of the **ID** property of the device template.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
+>**Note:** The `{mutualTlsOauthConfigurationId}` in the request URL is the value of the **id** property of the **deviceTemplate**.
 
 ## Optional query parameters
 
