@@ -54,17 +54,17 @@ You can specify the following properties when you create a **deviceTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|mutualTlsOauthConfigurationId|String|Object ID of CertificateBasedDeviceAuthConfiguration - _Not set if using self signed certificates instead of trust root certificates._ Optional. |
-|mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's EntraID Tenant ID) - _Not set if using self signed certificates instead of trust root certificates._ Optional. |
-|deviceAuthority | String | deviceAuthority is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's EntraID tenant. For example, Acme (manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (deviceAuthority). Required.|
+|deviceAuthority | String | A generic term that refers to the device manufacturer, reseller, or supplier responsible for provisioning and managing devices on a customer's EntraID tenant. For example, Acme (the manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (the device authority). Required.|
 |manufacturer|String|Manufacturer name. Required.|
 |model|String|Model name. Required.|
-|operatingSystem|String|OS type. Optional.|
-|"owners@odata.bind"|String| 
+|mutualTlsOauthConfigurationId|String|Object ID of the CertificateBasedDeviceAuthConfiguration. This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
+|mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (EntraID Tenant ID for device authority). This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
+|operatingSystem|String|Operating system type. Optional.|
+|"owners@odata.bind"|String| |
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body. If there is any validation failure in the certifate validation steps, the method returns a `400 Bad Request` and this message, "Unable to validation device certificate". 
+If successful, this method returns a `201 Created` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body. If a validation failure occurs during the certificate validation steps, the method returns a `400 Bad Request` along with the message, "Unable to validate device certificate".
 
 For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
@@ -83,12 +83,12 @@ Content-Type: application/json
 Content-length: 106
 
 {
-    "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-    "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
-    "deviceAuthority": "ADT",
-    "manufacturer": "Acme",
-    "model": "DeepFreezerModelAB",
-    "operatingSystem": "WindowsIoT"
+  "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
+  "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
+  "deviceAuthority": "ADT",
+  "manufacturer": "Acme",
+  "model": "DeepFreezerModelAB",
+  "operatingSystem": "WindowsIoT"
 }
 ```
 
@@ -107,14 +107,14 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/templates/deviceTemplates/$entity",
-    "id": "c0ff9329-3596-4ece-8aa9-3dd23a925356",
-    "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-    "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
-    "deletedDateTime": null,
-    "deviceAuthority": "ADT",
-    "manufacturer": "Acme",
-    "model": "DeepFreezerModelAB",
-    "operatingSystem": "WindowsIoT"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/templates/deviceTemplates/$entity",
+  "id": "c0ff9329-3596-4ece-8aa9-3dd23a925356",
+  "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
+  "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
+  "deletedDateTime": null,
+  "deviceAuthority": "ADT",
+  "manufacturer": "Acme",
+  "model": "DeepFreezerModelAB",
+  "operatingSystem": "WindowsIoT"
 }
 ```
