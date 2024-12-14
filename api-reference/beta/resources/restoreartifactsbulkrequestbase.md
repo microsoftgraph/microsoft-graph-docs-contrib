@@ -45,7 +45,7 @@ Inherits from [entity](../resources/entity.md).
 |unknown|The restore session is in an indeterminate state, possibly due to a temporary system issue or error.|
 |active|The initial status upon creation of the entity is `active`.|
 |completed|When all protection resources are added to the corresponding restore session, the status of the entity becomes `completed`. The state transition is from `active` to `completed`.|
-|completedWithErrors|In case of any failures during insertion, the status of the entity becomes `completedWithErrors`. The state transition is from `active` to `completedWithErrors`.|
+|completedWithErrors|If any failures are encountered during resource resolution, the status of the entity becomes `completedWithErrors`. The state transition is from `active` to `completedWithErrors`.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
