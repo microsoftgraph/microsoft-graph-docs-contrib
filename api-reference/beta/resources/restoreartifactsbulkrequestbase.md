@@ -33,8 +33,8 @@ Inherits from [entity](../resources/entity.md).
 | lastModifiedBy         | [identitySet](../resources/identityset.md) | Identity of the person who last modified this entity.                     |
 | lastModifiedDateTime   | DateTimeOffset                         | Timestamp when this entity was last modified.                         |
 | protectionTimePeriod   | [timePeriod](../resources/timeperiod.md) | The start and end date and time of the protection period.                      |
+| protectionUnitIds      | String collection                     | Indicates which protection units to restore. This property isn't implemented yet. Future value; don't use.    |
 | restorePointPreference | restorePointPreference                 | Indicates which restore point to return. The possible values are: `oldest`, `latest`, `unknownFutureValue`. |
-| protectionUnitIds      | Collection(string)                     | Indicates which protection units we need to restore. It so not implemented yet. Future value; don't use.    |
 | status                 | [restoreArtifactsBulkRequestStatus](restoreartifactsbulkrequestbase.md#restoreartifactsbulkrequeststatus-values)      | Determines the status of the long-running operation. The possible values area: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. |
 | tags                   | restorePointTags                       | The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`. |
 
@@ -73,6 +73,7 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "protectionTimePeriod": {"@odata.type": "microsoft.graph.timePeriod"},
+  "protectionUnitIds": ["String"],
   "restorePointPreference": "String",
   "status": "String",
   "tags": "String"
