@@ -1,6 +1,6 @@
 ---
 title: "mutualTlsOauthConfiguration resource type"
-description: "Represents a list of certificate authorities (CAs) that are authorized to issue certificates for a specific set of objects used for mTLS."
+description: "Represents a list of certificate authorities (CAs) that are permitted to issue certificates for a specific set of objects used for mTLS."
 author: "sgeislinger"
 ms.localizationpriority: medium
 ms.date: 11/20/2024
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a list of certificate authorities (CAs) that are authorized to issue certificates for a specific set of objects used for mTLS.
+Represents a list of certificate authorities (CAs) that are permitted to issue certificates for a specific set of objects used for mTLS.
 
 This object is typically created by a device authority on their own Entra ID tenant. In some cases, the user might choose to create this object in their Entra ID tenant.
 
