@@ -82,6 +82,7 @@ The following example shows a request.
 -->
 ```http
 PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
+Content-Type: application/json
 
 {
   "displayName": "THIS_IS_A_NEW_NAME"
@@ -141,7 +142,7 @@ The following example shows a request.
   "name": "update_mutualtlsoauthconfiguration_remove_certificate"
 }
 -->
-```json
+```http
 PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
 Content-Type: application/json
 
@@ -169,7 +170,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
 }
 -->
-```json
+```http
 HTTP/1.1 200 OK
 Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"
 
