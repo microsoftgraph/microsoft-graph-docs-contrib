@@ -1,6 +1,6 @@
 ---
 title: "Create mutualTlsOauthConfiguration"
-description: "Create a new mutualTlsOauthConfiguration resource that contains a specified certificate authority object."
+description: "Create a mutualTlsOauthConfiguration resource that contains a specified certificate authority object."
 author: "sofia-geislinger"
 ms.date: 11/24/2024
 ms.localizationpriority: medium
@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-POST /directory/certificateAuthorities/mutualTlsOauthConfigurations/
+POST /directory/certificateAuthorities/mutualTlsOauthConfigurations
 ```
 
 ## Request headers
@@ -53,13 +53,13 @@ You can specify the following properties when you create a **mutualTlsOauthConfi
 
 |Property|Type|Description|
 |:---|:---|:---|
+|certificateAuthority|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property that represents a list of trusted certificate authorities. |
 |displayName|String|Friendly name.|
-|tlsClientAuthParameter| [tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
-|certificateAuthority|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property representing a list of trusted certificate authorities. |
+|tlsClientAuthParameter| tlsClientRegistrationMetadata | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body. If there is any validation failure in the certifate validation steps, the method returns a `400 Bad Request` and this message, "Unable to validation device certificate". 
+If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body. If a validation failure occurs during the certificate validation steps, the method returns a `400 Bad Request` along with the message, "Unable to validate device certificate".
 
 For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
