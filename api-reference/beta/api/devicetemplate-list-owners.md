@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /directory/templates/deviceTemplates/{id}/owners
 ```
-> **Note:** The `{id}` in the request URL is the value of the **id** property of the device template.
+> **Note:** The `{id}` in the request URL is the value of the **id** property of the **deviceTemplate**.
 
 ## Request headers
 
@@ -47,13 +47,16 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `200 OK` response code and a collection of [serviceprincipal](../resources/serviceprincipal.md) objects in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
+If successful, this method returns a `200 OK` response code and a collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.
+
+For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
 ### Request
+
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "devicetemplate-list-owners-permissions"
@@ -66,11 +69,12 @@ GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates/00f1e7a
 ### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "@odata.type": "Collection(microsoft.graph.servicePrincipal)"
 }
 -->
 ``` http
