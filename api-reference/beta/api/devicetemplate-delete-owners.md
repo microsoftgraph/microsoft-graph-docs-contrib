@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ```http
-Delete /directory/templates/deviceTemplates/{deviceTemplateId}/owners/{id}/$ref
+DELETE /directory/templates/deviceTemplates/{deviceTemplateId}/owners/{id}/$ref
 ```
 
 > **Note:** The `{deviceTemplateId}` in the request URL is the value of the **id** property of the device template and `{id}` represents the **oid** of the owner service principal.
@@ -48,11 +48,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body. If the caller is not owner of the `deviceTemplate`, this method returns `403`. 
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body. Device templates can't be deleted until all linked devices are removed; otherwise, this method returns a `400 Bad Request` response code. If the caller isn't the owner of the device template, this method returns a `403 Forbidden` response code.
 
 For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
-
-> **Note:** DeviceTemplates cannot be deleted until all linked devices are deleted. Failure to do so will result in a `400` response.
 
 ## Examples
 
