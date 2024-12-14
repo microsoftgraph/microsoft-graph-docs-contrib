@@ -52,7 +52,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-| accountEnabled       | Boolean                             | `true` if the account is enabled; otherwise, `false`. The default value is `true`. A disabled device can't authenticate with Entra ID. |
+| accountEnabled       | Boolean                             | `True` if the account is enabled; otherwise, `false`. The default value is `true`. A disabled device can't authenticate with Entra ID. |
 | alternativeNames     | String collection                   | A collection of ARM resource IDs associated with the device, if any. |
 | externalDeviceId     | String                              | UUID of the device by IoT registry. Must be unique within a tenant. |
 | externalSourceName   | String                              | Identifies the source name of the device. |
