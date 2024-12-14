@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "certificateauthoritypath-delete-mutualtlsoauthconfigurations-permissions"
+  "name": "mutualtlsoauthconfiguration-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/certificateauthoritypath-delete-mutualtlsoauthconfigurations-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/mutualtlsoauthconfiguration-delete-permissions.md)]
 
 ## HTTP request
 
