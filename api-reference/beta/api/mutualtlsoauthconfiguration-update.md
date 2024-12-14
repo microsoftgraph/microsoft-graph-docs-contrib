@@ -1,6 +1,6 @@
 ---
-title: "Update a mutual TLS OAuth Configuration"
-description: "Update a mutual TLS OAuth Configuration."
+title: "Update mutualTlsOauthConfiguration"
+description: "Update the specified mutualTlsOauthConfiguration resource."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
@@ -14,14 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
+Update the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
 
-The only two properties that can be updated via patch are:
+You can only use the following two properties you update a **mutualTlsOauthConfiguration** resource: **displayName**, **certificateAuthorities**.
 
-- displayName
-- certificateAuthorities
-
-If you want to update a subset of items in the certificate list, you want to first get the whole list, make your modifications, and repost the entire contents of the certficateAuthorities attribute list.
+If you want to update a subset of items in the certificate list, you should first get the entire list, make your modifications, and then repost the entire contents of the **certificateAuthorities** attribute list.
 
 ## Permissions
 
@@ -55,23 +52,69 @@ PATCH /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsO
 
 In the request body, supply a JSON representation of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object.
 
-You can specify the following properties when creating a **mutualTlsOauthConfiguration**.
+You can specify the following properties when you update a **mutualTlsOauthConfiguration**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Friendly name|
-|tlsClientAuthParameter|[tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
-|certificateAuthority|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property representing a list of trusted certificate authorities. |
+|certificateAuthority|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property that represents a list of trusted certificate authorities. |
+|displayName|String|Friendly name.|
+|tlsClientAuthParameter|tlsClientRegistrationMetadata | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
 
 ## Response
 
-If successful, this method returns a `200 Ok` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body. If there is any validation failure in the certifate validation steps, the method returns a `400 Bad Request` and this message, "Unable to validation device certificate". 
+If successful, this method returns a `201 OK` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body. If a validation failure occurs during the certificate validation steps, the method returns a `400 Bad Request` along with the message, "Unable to validate device certificate".
 
 For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
-### Example 1: Update Display Name
+### Example 1: Update display name
+
+The following example shows how to update the display name of a **mutualTlsOauthConfiguration** object from `DoorCamera_Model_X_TrustedCAs` to `THIS_IS_A_NEW_NAME`.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_mutualtlsoauthconfiguration"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
+
+{
+  "displayName": "THIS_IS_A_NEW_NAME"
+}
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
+  "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
+  "deletedDateTime": null,
+  "displayName": "THIS_IS_A_NEW_NAME",
+  "tlsClientAuthParameter": "tls_client_auth_subject_dn",
+  "certificateAuthorities": [
+    {
+      "@odata.type": "microsoft.graph.certificateAuthority"
+    }
+  ]
+}
+```
+
+### Example 2: Remove a certificate from the list
 
 This example assumes the original object stored has the following value:
 
@@ -92,64 +135,12 @@ This example assumes the original object stored has the following value:
 #### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "update_mutualtlsoauthconfiguration"
+  "name": "update_mutualtlsoauthconfiguration_remove_certificate"
 }
 -->
-```http
-PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
-
-{
-  "displayName": "THIS_IS_A_NEW_NAME",
-}
-```
-
-#### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
-}
--->
-```http
-HTTP/1.1 200 
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
-  "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-  "deletedDateTime": null,
-  "displayName": "THIS_IS_A_NEW_NAME",
-  "tlsClientAuthParameter": "tls_client_auth_subject_dn",
-  "certificateAuthorities": [
-    {
-      "@odata.type": "microsoft.graph.certificateAuthority"
-    }
-  ]
-}
-```
-
-### Example 2: Remove Certificate from list
-
-This example assumes the original object stored has the following value:
-
-```json
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
-  "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-  "displayName": "DoorCamera_Model_X_TrustedCAs",
-  "tlsClientAuthParameter": "tls_client_auth_subject_dn",
-  "certificateAuthorities": [
-    {
-      "@odata.type": "microsoft.graph.certificateAuthority"
-    }
-  ]
-}
-```
-
-#### Request
-
 ```json
 PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
 Content-Type: application/json
@@ -170,6 +161,14 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
+}
+-->
 ```json
 HTTP/1.1 200 OK
 Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"
