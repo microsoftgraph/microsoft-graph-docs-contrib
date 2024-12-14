@@ -1,6 +1,6 @@
 ---
 title: "Get mailboxRestoreArtifactsBulkAdditionRequest"
-description: "Get a mailboxRestoreArtifactsBulkAdditionRequest object by its **id**, associated with an exchangeRestoreSession."
+description: "Get a mailboxRestoreArtifactsBulkAdditionRequest object by its ID, associated with an exchangeRestoreSession."
 author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
