@@ -1,6 +1,6 @@
 ---
 title: "List deviceTemplates"
-description: "List all device templates."
+description: "Get a list of deviceTemplate objects registered in the directory."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of devicesTemplates registered in the directory.
+Get a list of [deviceTemplate](../resources/devicetemplate.md) objects registered in the directory.
 
 ## Permissions
 
@@ -68,7 +68,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -76,7 +75,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.deviceTemplate"
+  "@odata.type": "Collection(microsoft.graph.deviceTemplate)"
 }
 -->
 ``` http
