@@ -47,7 +47,7 @@ The following table shows the parameter that you can use with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|values|[conversationMember](../resources/conversationmember.md) collection|A list of conversation members that should be removed.|
+|values|[conversationMember](../resources/conversationmember.md) collection|A list of conversation members to remove.|
 
 ## Response
 
