@@ -48,7 +48,7 @@ Base type for the following supported conversation member types:
 |:---------------|:--------|:----------|
 |displayName| string | The display name of the user. |
 |id|String| Read-only. Unique ID of the user.|
-|roles| string collection | The roles for that user. This property contains additional qualifiers only when relevant - for example, if the member has `owner` privileges, the **roles** property contains `owner` as one of the values. Similarly, if the member is an in-tenant guest, the **roles** property contains `guest` as one of the values. A basic member should not have any values specified in the **roles** property. An Out-of-tenant external member is assigned the `owner` role.|
+|roles| string collection | The roles for that user. This property contains more qualifiers only when relevant - for example, if the member has `owner` privileges, the **roles** property contains `owner` as one of the values. Similarly, if the member is an in-tenant guest, the **roles** property contains `guest` as one of the values. A basic member shouldn't have any values specified in the **roles** property. An Out-of-tenant external member is assigned the `owner` role.|
 |visibleHistoryStartDateTime| DateTimeOffset | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat. |
 
 ## JSON representation

@@ -11,8 +11,6 @@ ms.subservice: "teams"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Remove multiple members from a [team](../resources/team.md) in a single request. The response provides details about which memberships could and couldn't be removed.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -27,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-This is a bound action to remove multiple elements from a [conversationMember](../resources/conversationmember.md) collection in a single request.
+This API is a bound action to remove multiple elements from a [conversationMember](../resources/conversationmember.md) collection in a single request.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -78,11 +76,11 @@ Content-Type: application/json
     "values": [
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
         },
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
         }
     ]
 }
@@ -122,11 +120,11 @@ Content-Type: application/json
     "values": [
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
         },
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('alex@contoso.com')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"
         }
     ]
 }
@@ -166,11 +164,11 @@ Content-Type: application/json
     "values": [
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('c04f28bf-ab68-40a2-974b-e6af31fa78fb')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('c04f28bf-ab68-40a2-974b-e6af31fa78fb')"
         },
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
         }
     ]
 }

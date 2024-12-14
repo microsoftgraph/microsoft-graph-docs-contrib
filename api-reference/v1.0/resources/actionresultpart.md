@@ -18,7 +18,7 @@ An abstract type that serves as a base to model responses of bulk operations. Th
 
 | Property | Type	| Description |
 |:---------------|:--------|:----------|
-|error|[publicError](publicerror.md) |The error that occurred, if any, during the course of the bulk operation.|
+|error|[publicError](publicerror.md) |The error that occurred, if any, during the bulk operation.|
 
 ## Relationships
 None.
