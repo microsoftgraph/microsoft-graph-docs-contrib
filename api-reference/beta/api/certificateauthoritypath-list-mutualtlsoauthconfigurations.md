@@ -1,6 +1,6 @@
 ---
-title: "List mutualTlsOauthConfiguration objects"
-description: "Get a list of the mutualTlsOauthConfiguration objects and their properties."
+title: "List mutualTlsOauthConfigurations"
+description: "Get a list of the available mutualTlsOauthConfiguration resources."
 author: "sofia-geislinger"
 ms.date: 11/24/2024
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
-# List mutualTlsOauthConfiguration objects
+# List mutualTlsOauthConfigurations
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lists available [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resources.
+Get a list of the available [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resources.
 
 ## Permissions
 
@@ -79,8 +79,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.mutualTlsOauthConfiguration)"
 }
 -->
 ``` http
