@@ -1,6 +1,6 @@
 ---
 title: "trustedCertificateAuthorityBase resource type"
-description: "An abstract type that represents a list of Certificate Authorities (CAs) that are permitted to issue certificates for authentication."
+description: "An abstract type that represents a list of certificate authorities (CAs) that are authorized to issue certificates for authentication."
 author: "atastrophic"
 ms.localizationpriority: medium
 ms.date: 11/24/2024
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents a list of Certificate Authorities (CAs) that are permitted to issue certificates for authentication.
+An abstract type that represents a list of certificate authorities (CAs) that are permitted to issue certificates for authentication.
 
 Inherits from [directoryObject](../resources/directoryobject.md).
 
@@ -27,7 +27,7 @@ None.
 |:---|:---|:---|
 |certificateAuthorities|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property that represents a list of trusted certificate authorities.|
 |deletedDateTime|DateTimeOffset|Inherited from [directoryObject](../resources/directoryobject.md).|
-|id|String|Inherited from [directoryObject](../resources/directoryobject.md).|
+|id|String|The unique identifier for the **trustedCertificateAuthorityBase** object. Inherited from [directoryObject](../resources/directoryobject.md).|
 
 ## Relationships
 None.
