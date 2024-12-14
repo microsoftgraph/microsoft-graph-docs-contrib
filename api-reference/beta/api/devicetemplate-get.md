@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /directory/templates/deviceTemplates/{id}
 ```
-**Note:** The `{id}` in the request URL is the value of the **id** property of the **deviceTemplate**.
+>**Note:** The `{id}` in the request URL is the value of the **id** property of the **deviceTemplate**.
 
 ## Optional query parameters
 
