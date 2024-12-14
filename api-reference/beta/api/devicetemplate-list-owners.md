@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get owners of a [deviceTemplate](../resources/devicetemplate.md) object.
+Get a list of owners for a [deviceTemplate](../resources/devicetemplate.md) object.
 
 ## Permissions
 
