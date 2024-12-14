@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "device-delete-devicetemplate-permissions"
+  "name": "devicetemplate-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/device-delete-devicetemplate-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/devicetemplate-delete-permissions.md)]
 
 ## HTTP request
 
@@ -33,8 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 DELETE /directory/templates/deviceTemplates/{id}
 ```
-
-> **Note:** The `{id}` in the request URL is the value of the **id** property of the device template.
+> **Note:** The `{id}` in the request URL is the value of the **id** property of the **deviceTemplate**.
 
 ## Request headers
 
