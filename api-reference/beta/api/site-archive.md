@@ -62,7 +62,8 @@ The following example shows how to archive a site.
 
 <!-- {
   "blockType": "request",
-  "name": "archive_site"
+  "name": "archive_site",
+  "sampleKeys": ["contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"]
 }
 -->
 ```http
