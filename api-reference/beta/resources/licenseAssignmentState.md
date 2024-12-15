@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: entra-users
 author: "frank-masuelli"
+ms.date: 04/17/2024
 ---
 
 # licenseAssignmentState resource type

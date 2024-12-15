@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
+ms.date: 03/21/2024
 ---
 
 # internetMessageHeader resource type

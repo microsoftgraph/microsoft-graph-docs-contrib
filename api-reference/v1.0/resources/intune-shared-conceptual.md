@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jaiprakashmb"
 ms.subservice: "intune"
 doc_type: conceptualPageType
+ms.date: 03/14/2024
 ---
 
 # Shared resources in Microsoft Intune

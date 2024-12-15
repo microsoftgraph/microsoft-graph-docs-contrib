@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madhavpatel6"
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
+ms.date: 07/06/2024
 ---
 
 # featureRolloutPolicy resource type

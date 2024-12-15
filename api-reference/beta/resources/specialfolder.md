@@ -5,6 +5,7 @@ title: specialFolder resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 03/06/2024
 ---
 # specialFolder resource type
 
