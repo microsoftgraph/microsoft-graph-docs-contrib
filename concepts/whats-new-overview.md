@@ -39,12 +39,9 @@ Enabled the **description**, **displayName**, and **severity** properties as sup
 
 ### Identity and access | Directory management
 
-Can now update alternativeNames, externalSourceId, and sourceType on a [device](graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. Also introduced deviceInstances and deviceTemplate as new relationships on devices. 
-
-Create, get, list, delete, and update owners on [deviceTemplate](/graph/api/resources/deviceTemplate?view=graph-rest-beta&preserve-view=true) resources which are derived from the container resource, [template](/graph/api/resources/template?view=graph-rest-beta&preserve-view=true). 
-
-Create, get, list, update, and update [mutualTlsOauthConfiguration](/graph/api/resources/mutualTlsOauthConfiguration?view=graph-rest-beta&preserve-view=true) resources which is derived from [certificateAuthorityPath](/graph/api/resources/certificateAuthorityPath?view=graph-rest-beta&preserve-view=true).
-
+- Use the **alternativeNames** property on [device](graph/api/resources/device?view=graph-rest-beta&preserve-view=true) to get or set alternative names for a device.
+- Use the [deviceTemplate](/graph/api/resources/devicetemplate?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage device templates for Azure IoT.
+- Use the [mutualTlsOauthConfiguration](/graph/api/resources/mutualtlsoauthconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage certificate authorities that are permitted to issue certificates for a specific set of objects used for mTLS.
 
 ### Reports | Microsoft 365 monitoring reports
 

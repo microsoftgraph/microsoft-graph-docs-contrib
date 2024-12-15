@@ -152,7 +152,7 @@ Content-Type: application/json
       "isRootAuthority": true,
       "certificateRevocationListUrl": "http://acme.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
-      "certificate": "joGrWL+Yqkik/CABWG0d1w....",
+      "certificate": "Binary",
       "issuer": "acme Inc",
       "issuerSubjectkeyIdentifier": "SKI"
     }
@@ -184,7 +184,7 @@ Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mut
       "isRootAuthority": true,
       "certificateRevocationListUrl": "http://acme.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
-      "certificate": "joGrWL+Yqkik/CABWG0d1w....",
+      "certificate": "Binary",
       "issuer": "acme Inc",
       "issuerSubjectkeyIdentifier": "SKI"
     }
