@@ -59,7 +59,7 @@ You can specify the following properties when you create a **mutualTlsOauthConfi
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body. If a validation failure occurs during the certificate validation steps, the method returns a `400 Bad Request` along with the message, "Unable to validate device certificate".
+If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body. If a validation failure occurs during the certificate validation steps, the method returns a `400 Bad Request` along with the error message, `Invalid value specified for property 'certificate' of resource 'CertificateAuthorityInformation'.`
 
 For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
