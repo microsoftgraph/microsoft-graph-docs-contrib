@@ -121,7 +121,7 @@ The following example shows a request.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates?$select=id,operatingSystem
+GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates/00f1e7a4-de6d-4070-84df-8aab629c4d1e?$select=id,operatingSystem
 ```
 
 #### Response
@@ -142,14 +142,6 @@ Content-type: application/json
     {
       "id": "00f1e7a4-de6d-4070-84df-8aab629c4d1e",
       "operatingSystem": "BootOS"
-    },
-    {
-      "id": "03118739-2050-44cd-98ed-ed28b147af70",
-      "operatingSystem": "BootOS"
-    },
-    {
-      "id": "037a01c6-2605-4eda-b746-9e41ecca1623",
-      "operatingSystem": "Linux"
     }
   ]
 }

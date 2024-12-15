@@ -57,7 +57,7 @@ The following table lists the parameters that are required when you call this ac
 | externalDeviceId     | String                              | UUID of the device by IoT registry. Must be unique within a tenant. |
 | externalSourceName   | String                              | Identifies the source name of the device. |
 | keyCredential        | [keyCredential](../resources/keycredential.md) | The key credential when you use self-signed certificates. |
-| operatingSystemVersion | String                              | The operating system of the device specified. |
+| operatingSystemVersion | String                              | The operating system version of the device specified. |
 
 ## Response
 
