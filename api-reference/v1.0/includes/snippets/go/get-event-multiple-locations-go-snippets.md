@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemEventItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.EventsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"subject","body","bodyPreview","organizer","attendees","start","end","location","locations"},
 }
-configuration := &graphusers.ItemEventItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.EventsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
