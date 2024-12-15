@@ -8,10 +8,10 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "microsoft.graph.appleManagedIdentityProvider"
-	displayName = "Sign in with Apple"
-	developerId = "UBF8T346G9"
-	serviceId = "com.microsoft.rts.b2c.test.client"
-	keyId = "99P6D879C4"
+	displayName = "Apple"
+	developerId = "qazx.1234"
+	serviceId = "com.contoso.app"
+	keyId = "4294967296"
 	certificateData = "******"
 }
 

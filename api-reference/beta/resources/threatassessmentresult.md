@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "hafen-ms"
 ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 07/25/2024
 ---
 
 # threatAssessmentResult resource type

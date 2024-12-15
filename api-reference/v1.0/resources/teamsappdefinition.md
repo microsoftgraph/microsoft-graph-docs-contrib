@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 
 # teamsAppDefinition resource type
@@ -17,14 +18,14 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| description         | string   | Verbose description of the application. |
-| displayName         | string   | The name of the app provided by the app developer. |
-| id                  | string   | A unique ID (not the Teams app ID). |
-| publishingState| string|The published status of a specific version of a Teams app. Possible values are:</br>`submitted`—The specific version of the Teams app has been submitted and is under review. </br>`published`—The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected`—The admin rejected the request to publish the specific version of the Teams app. |
-| shortDescription    | string   | Short description of the application. |
-| teamsAppId          | string   | The ID from the Teams app manifest. |
-| version             | string   | The version number of the application. |
-|authorization|[teamsAppAuthorization](../resources/teamsappauthorization.md)|Authorization requirements specified in the Teams app manifest.|
+| authorization       | [teamsAppAuthorization](../resources/teamsappauthorization.md)| Authorization requirements specified in the Teams app manifest. |
+| description         | String   | Verbose description of the application. |
+| displayName         | String   | The name of the app provided by the app developer. |
+| id                  | String   | A unique ID (not the Teams app ID). |
+| publishingState| String |The published status of a specific version of a Teams app. Possible values are:</br>`submitted`—The specific version of the Teams app was submitted and is under review.</br>`published`—The request to publish the specific version of the Teams app was approved by the admin and the app is published.</br>`rejected`—The admin rejected the request to publish the specific version of the Teams app. |
+| shortDescription    | String   | Short description of the application. |
+| teamsAppId          | String   | The ID from the Teams app manifest. |
+| version             | String   | The version number of the application. |
 
 ## Relationships
 
@@ -34,6 +35,8 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
 
 ## JSON representation
 
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppDefinition",
@@ -42,11 +45,14 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
 
 ```json
 {
-  "id": "string",
-  "teamsAppId": "string",
-  "displayName": "string",
-  "version": "string",
-  "authorization": "#microsoft.graph.teamsAppAuthorization"
+  "authorization": {"@odata.type": "microsoft.graph.teamsAppAuthorization"},
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "publishingState": "String",
+  "shortDescription": "String",
+  "teamsAppId": "String",
+  "version": "String"
 }
 ```
 

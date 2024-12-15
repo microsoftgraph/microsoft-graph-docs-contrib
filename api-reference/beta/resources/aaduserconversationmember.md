@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "akjo"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 
 # aadUserConversationMember resource type
@@ -27,6 +28,7 @@ Inherits from [conversationMember](conversationmember.md).
 |[Get team member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
 |[Update team member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Remove team member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
+|[Remove team members in bulk](../api/conversationmember-remove.md)|[actionResultPart](../resources/actionresultpart.md) collection|Remove multiple members from a team in a single request.|
 |[List channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all members in a channel.|
 |[Add channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Add a member to a channel. Only supported for `channel` with membershipType of `private`.|
 |[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
@@ -47,7 +49,7 @@ Inherits from [conversationMember](conversationmember.md).
 |roles| String collection | The roles of the user such as owner, member, or guest. |
 |tenantId| string  | TenantId which the Microsoft Entra user belongs to. |
 |userId| String | The GUID of the user. |
-|visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.|
+|visibleHistoryStartDateTime| DateTimeOffset  | The timestamp that denotes how far back the history of a conversation is shared with the conversation member. This property is settable only for members of a chat.|
 
 ## JSON representation
 

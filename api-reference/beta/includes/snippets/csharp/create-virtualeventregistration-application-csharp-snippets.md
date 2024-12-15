@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new VirtualEventRegistration
 {
@@ -47,6 +48,20 @@ var requestBody = new VirtualEventRegistration
 				"London",
 				"New York City",
 			},
+		},
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"externalRegistrationInformation" , new UntypedObject(new Dictionary<string, UntypedNode>
+			{
+				{
+					"referrer", new UntypedString("Facebook")
+				},
+				{
+					"registrationId", new UntypedString("myExternalRegistrationId")
+				},
+			})
 		},
 	},
 };

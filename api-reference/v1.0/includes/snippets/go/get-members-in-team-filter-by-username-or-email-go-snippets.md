@@ -18,10 +18,10 @@ import (
 
 requestFilter := "(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@contoso.com')"
 
-requestParameters := &graphteams.TeamItemMembersRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.ItemMembersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphteams.TeamItemMembersRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.ItemMembersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

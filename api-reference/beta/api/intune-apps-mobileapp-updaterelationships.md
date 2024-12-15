@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # updateRelationships action
@@ -65,7 +66,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/updateRelationships
 
 Content-type: application/json
-Content-length: 402
+Content-length: 712
 
 {
   "relationships": [
@@ -76,6 +77,11 @@ Content-length: 402
       "targetDisplayName": "Target Display Name value",
       "targetDisplayVersion": "Target Display Version value",
       "targetPublisher": "Target Publisher value",
+      "targetPublisherDisplayName": "Target Publisher Display Name value",
+      "sourceId": "Source Id value",
+      "sourceDisplayName": "Source Display Name value",
+      "sourceDisplayVersion": "Source Display Version value",
+      "sourcePublisherDisplayName": "Source Publisher Display Name value",
       "targetType": "parent"
     }
   ]

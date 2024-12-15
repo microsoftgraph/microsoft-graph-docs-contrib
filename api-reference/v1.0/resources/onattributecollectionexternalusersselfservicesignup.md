@@ -1,24 +1,30 @@
 ---
 title: "onAttributeCollectionExternalUsersSelfServiceSignUp resource type"
-description: "Managed handler that customizes what attributes are collected from an external user when authenticating to an application"
+description: "Managed handler for the attribute collection step in an external identities user flow."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 10/15/2024
 ---
 
 # onAttributeCollectionExternalUsersSelfServiceSignUp resource type
 
 Namespace: microsoft.graph
 
-This is a managed handler for attribute collection step of a customized authentication flow for an application in a Microsoft Entra external tenant defined by a multi-event policy, [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md).  This handler defines what attributes to collect from a user. For web-hosted auth flows, it also defines how the attribute collection will be rendered for the user.
+This resource is a managed handler for the attribute collection step in an external identities user flow on a Microsoft Entra workforce or customer tenant. It defines what attributes to collect from a user and how the attribute collection will be rendered for the user.
 
 Inherits from [onAttributeCollectionHandler](../resources/onattributecollectionhandler.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [authenticationEventsFlow resource type](../resources/authenticationeventsflow.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attributeCollectionPage|[authenticationAttributeCollectionPage](../resources/authenticationattributecollectionpage.md)|Required. The configuration for how attributes are displayed in the sign up experience defined by a user flow, like the [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md), specifically on the attribute collection page.|
+|attributeCollectionPage|[authenticationAttributeCollectionPage](../resources/authenticationattributecollectionpage.md)|Required. The configuration for how attributes are displayed in the sign-up experience defined by a user flow, like the [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md), specifically on the attribute collection page.|
 <!--|accessPackages|[authenticationAccessPackageConfiguration](../resources/authenticationaccesspackageconfiguration.md) collection|Optional. A list of GUIDs referencing Entitlement Management [accessPackages](../resources/accesspackage.md) to check whether there are pending access requests for the specified user. Applicable only to user flows configured in Azure AD workforce tenant.|-->
 
 ## Relationships

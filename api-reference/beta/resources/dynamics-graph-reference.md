@@ -7,6 +7,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: conceptualPageType
+ms.date: 06/04/2024
 ---
 # Working with the Dynamics 365 Business Central API in Microsoft Graph
 
