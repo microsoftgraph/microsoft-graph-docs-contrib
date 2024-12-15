@@ -81,7 +81,7 @@ The following example shows the response.
 -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/a7199212-950f-4a2d-ba1e-017c48da1d19"
 
 {

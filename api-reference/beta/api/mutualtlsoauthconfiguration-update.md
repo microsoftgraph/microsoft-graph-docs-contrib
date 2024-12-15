@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
 
-You can only use the following two properties you update a **mutualTlsOauthConfiguration** resource: **displayName**, **certificateAuthorities**.
+You can only use the following two properties to update a **mutualTlsOauthConfiguration** resource: **displayName**, **certificateAuthorities**.
 
 If you want to update a subset of items in the certificate list, you should first get the entire list, make your modifications, and then repost the entire contents of the **certificateAuthorities** attribute list.
 
@@ -58,12 +58,10 @@ You can specify the following properties when you update a **mutualTlsOauthConfi
 |:---|:---|:---|
 |certificateAuthority|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property that represents a list of trusted certificate authorities. |
 |displayName|String|Friendly name.|
-|tlsClientAuthParameter|tlsClientRegistrationMetadata | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
 
 ## Response
 
-If successful, this method returns a `201 OK` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body. If a validation failure occurs during the certificate validation steps, the method returns a `400 Bad Request` along with the message, "Unable to validate device certificate".
-
+If successful, this method returns a `201 OK` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body. If a validation failure occurs during the certificate validation steps, the method returns a `400 Bad Request` along with the error message, `Invalid value specified for property 'certificate' of resource 'CertificateAuthorityInformation'`.
 For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
@@ -104,7 +102,6 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
   "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-  "deletedDateTime": null,
   "displayName": "THIS_IS_A_NEW_NAME",
   "tlsClientAuthParameter": "tls_client_auth_subject_dn",
   "certificateAuthorities": [
