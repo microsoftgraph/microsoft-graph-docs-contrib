@@ -26,11 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "authentication-delete-hardwareoathmethods-permissions"
 }
 -->
-<!-- {
-  "blockType": "permissions",
-  "name": "authentication-delete-hardwareoathmethods-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "authentication_delete_hardwareoathmethods" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-delete-hardwareoathmethods-permissions.md)]
 
 ## Permissions acting on other users
