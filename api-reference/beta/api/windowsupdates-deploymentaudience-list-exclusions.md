@@ -5,6 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: apiPageType
+ms.date: 09/08/2024
 ---
 
 # List deployment audience exclusions

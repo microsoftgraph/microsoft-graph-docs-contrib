@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 toc.title: GCP actions
+ms.date: 07/25/2024
 ---
 
 # gcpAuthorizationSystemTypeAction resource type

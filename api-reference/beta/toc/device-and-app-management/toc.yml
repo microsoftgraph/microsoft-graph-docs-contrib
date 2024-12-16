@@ -276,6 +276,8 @@ items:
       href: ../../resources/cloudpcreports.md
     - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
+    - name: Get Cloud PC performance report
+      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
     - name: Get bulk action status reports
       href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
     - name: Get Cloud PC recommendation reports
@@ -532,6 +534,8 @@ items:
 - name: Cloud printing
   displayName: Universal Print
   items:
+  - name: Overview
+    href: ../../resources/print-overview.md
   - name: Print
     items:
     - name: Print

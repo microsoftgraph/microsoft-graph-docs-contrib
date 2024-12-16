@@ -5,6 +5,7 @@ title: "uploadSession resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
 ms.subservice: "non-product-specific"
+ms.date: 07/23/2024
 ---
 # uploadSession resource type
 
