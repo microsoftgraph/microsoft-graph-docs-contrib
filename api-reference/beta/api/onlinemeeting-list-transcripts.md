@@ -41,7 +41,7 @@ To use application permissions for this API, tenant administrators must create a
 
 > [!NOTE]
 > This API works for a meeting only if the meeting has not expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
-> This API works only for users who are part of the meeting calendar invite(applicable to both private, channel meetings).
+> This API works only for users who are part of the meeting calendar invite(applicable to both private chat meetings, channel meetings).
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
