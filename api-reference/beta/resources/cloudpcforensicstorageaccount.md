@@ -5,6 +5,7 @@ author: "xhan2077"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # cloudPcForensicStorageAccount resource type
@@ -20,6 +21,7 @@ Represents the storage account information that can be used to store a snapshot 
 |:---|:---|:---|
 |storageAccountId|String|The ID of the storage account.|
 |storageAccountName|String|The name of the storage account.|
+|immutableStorage|Boolean|Indicates whether immutability policies are configured for the storage account. When `true`, the storage account only accepts `hot` as the snapshot access tier. When `false`, the storage account accepts all valid access tiers. Read-Only.|
 |accessTier|[cloudPcStorageAccountAccessTier](#cloudPcStorageAccountAccessTier-values)| Indicates the access tier of the storage account. Possible values are `hot`, `cool`, `premium` and `cold`, default value is `hot`.|
 
 ### cloudPcStorageAccountAccessTier values
@@ -50,6 +52,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.cloudPcForensicStorageAccount",
   "storageAccountId": "String",
   "storageAccountName": "String",
+  "immutableStorage": "Boolean",
   "accessTier": "String"
 }
 ```

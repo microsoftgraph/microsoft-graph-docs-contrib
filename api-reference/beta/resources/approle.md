@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 03/21/2024
 ---
 
 # appRole resource type

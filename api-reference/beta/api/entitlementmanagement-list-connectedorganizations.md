@@ -5,6 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/19/2024
 ---
 
 # List connectedOrganizations
