@@ -44,7 +44,7 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/schedulePolicyA
 
 ## Request body
 
-In the request body, supply a JSON representation of the [cloudpcpolicyscheduledapplyactiondetail](../../beta/resources/cloudpcpolicyscheduledapplyactiondetail.md) object.
+In the request body, supply a JSON representation of the [cloudpcpolicyscheduledapplyactiondetail](../resources/cloudpcpolicyscheduledapplyactiondetail.md) object.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
