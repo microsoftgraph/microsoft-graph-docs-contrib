@@ -147,24 +147,6 @@ The following table shows some common use cases for the module-related education
 | Create a resource in a module | Only teachers can perform this operation.                                                                                                                                    | [Create educationModuleResource](../api/educationmodule-post-resources.md) |
 | List module resources         | Get all the **educationModuleResource** objects associated with a module. Only teachers, students, and applications with application permissions can perform this operation. | [List module resources](../api/educationmodule-list-resources.md)  |
 
-## School data sync management
-
-[School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing roster data from student information systems with Microsoft Entra ID and Microsoft 365. You can use the school data sync management APIs in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
-
-The school data sync management APIs support the following scenarios:
-
-- [List synchronization profiles](../api/educationsynchronizationprofile-list.md)
-- [Get synchronization profile](../api/educationsynchronizationprofile-get.md)
-- [Create synchronization profile](../api/educationsynchronizationprofile-post.md)
-- [Delete synchronization profile](../api/educationsynchronizationprofile-delete.md)
-- [Pause an ongoing sync](../api/educationsynchronizationprofile-pause.md)
-- [Resume a paused sync](../api/educationsynchronizationprofile-resume.md)
-- [Reset a sync](../api/educationsynchronizationprofile-reset.md)
-- [Start sync for uploaded files](../api/educationsynchronizationprofile-start.md)
-- [Get an upload URL](../api/educationsynchronizationprofile-uploadurl.md)
-- [Get status of a sync](../api/educationsynchronizationprofilestatus-get.md)
-- [Get synchronization errors](../api/educationsynchronizationerrors-get.md)
-
 ## Next steps
 
 Use the Microsoft Graph education APIs to build education solutions that access student assignments and school rosters. To learn more:

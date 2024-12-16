@@ -813,9 +813,6 @@
         "educationRubricOutcome",
         "educationSubmission",
         "educationSubmissionResource",
-        "educationSynchronizationError",
-        "educationSynchronizationProfile",
-        "educationSynchronizationProfileStatus",
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
         "relatedContact"
@@ -850,23 +847,7 @@
         "rubricLevel",
         "rubricQuality",
         "rubricQualityFeedbackModel",
-        "rubricQualitySelectedColumnModel",
-        "educationCsvDataProvider",
-        "educationFileSynchronizationVerificationMessage",
-        "educationIdentityCreationConfiguration",
-        "educationIdentityDomain",
-        "educationIdentityMatchingConfiguration",
-        "educationIdentityMatchingOptions",
-        "educationIdentitySynchronizationConfiguration",
-        "educationOneRosterApiDataProvider",
-        "educationPowerSchoolDataProvider",
-        "educationSynchronizationConnectionSettings",
-        "educationSynchronizationCustomization",
-        "educationSynchronizationCustomizations",
-        "educationSynchronizationDataProvider",
-        "educationSynchronizationLicenseAssignment",
-        "educationSynchronizationOAuth1ConnectionSettings",
-        "educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
+        "rubricQualitySelectedColumnModel"
       ]
     },
     {

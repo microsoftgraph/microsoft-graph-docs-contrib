@@ -2931,10 +2931,6 @@ Intune monthly updates for the beta version. Set the **Date** filter for July, 2
 ### Devices and apps | Multi-tenant management
 Debut of the [Microsoft 365 Lighthouse API](managedtenants-concept-overview.md) that lets Managed Service Providers (MSPs) remotely manage multiple customer tenants at scale for compliance and threat detection, and help get tenant devices in a healthy and secure state.
 
-### Education
-- Get an error count and status message as part of the [status of a school data synchronization](/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta&preserve-view=true).
-- Get `extracting` or `validating` as possible states of a such a sync.
-
 ### Identity and access | Governance
 Get a collection of errors in the lifecycle of an [access review instance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true).
 

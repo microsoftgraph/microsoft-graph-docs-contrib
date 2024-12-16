@@ -293,6 +293,248 @@
       "CreatedDateTime": "2023-07-22T16:34:24.6326851Z",
       "WorkloadArea": "Education",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "educationSynchronizationProfileState",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationProfileState** enumeration type.",
+          "Target": "educationSynchronizationProfileState"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "educationSynchronizationStatus",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationStatus** enumeration type.",
+          "Target": "educationSynchronizationStatus"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "educationUserRole",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationUserRole** enumeration type.",
+          "Target": "educationUserRole"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationCsvDataProvider",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationCsvDataProvider** resource.",
+          "Target": "educationCsvDataProvider"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationFileSynchronizationVerificationMessage",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationFileSynchronizationVerificationMessage** resource.",
+          "Target": "educationFileSynchronizationVerificationMessage"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationIdentityCreationConfiguration",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationIdentityCreationConfiguration** resource.",
+          "Target": "educationIdentityCreationConfiguration"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationIdentityDomain",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationIdentityDomain** resource.",
+          "Target": "educationIdentityDomain"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationIdentityMatchingConfiguration",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationIdentityMatchingConfiguration** resource.",
+          "Target": "educationIdentityMatchingConfiguration"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationIdentityMatchingOptions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationIdentityMatchingOptions** resource.",
+          "Target": "educationIdentityMatchingOptions"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationIdentitySynchronizationConfiguration",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationIdentitySynchronizationConfiguration** resource.",
+          "Target": "educationIdentitySynchronizationConfiguration"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationOneRosterApiDataProvider",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationOneRosterApiDataProvider** resource.",
+          "Target": "educationOneRosterApiDataProvider"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationPowerSchoolDataProvider",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationPowerSchoolDataProvider** resource.",
+          "Target": "educationPowerSchoolDataProvider"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationConnectionSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationConnectionSettings** resource.",
+          "Target": "educationSynchronizationConnectionSettings"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationCustomization",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationCustomization** resource.",
+          "Target": "educationSynchronizationCustomization"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationCustomizations",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationCustomizations** resource.",
+          "Target": "educationSynchronizationCustomizations"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationCustomizationsBase",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationCustomizationsBase** resource.",
+          "Target": "educationSynchronizationCustomizationsBase"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationDataProvider",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationDataProvider** resource.",
+          "Target": "educationSynchronizationDataProvider"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationLicenseAssignment",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationLicenseAssignment** resource.",
+          "Target": "educationSynchronizationLicenseAssignment"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationOAuth1ConnectionSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationOAuth1ConnectionSettings** resource.",
+          "Target": "educationSynchronizationOAuth1ConnectionSettings"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationOAuth2ClientCredentialsConnectionSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationOAuth2ClientCredentialsConnectionSettings** resource.",
+          "Target": "educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "synchronizationProfiles",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **synchronizationProfiles** relationship from the [educationRoot](https://learn.microsoft.com/en-us/graph/api/resources/educationRoot?view=graph-rest-beta) resource.",
+          "Target": "educationRoot"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationError",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationError** resource.",
+          "Target": "educationSynchronizationError"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationProfile",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationProfile** resource.",
+          "Target": "educationSynchronizationProfile"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationProfileStatus",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationProfileStatus** resource.",
+          "Target": "educationSynchronizationProfileStatus"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "pause",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **pause** method from the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.",
+          "Target": "educationSynchronizationProfile"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "reset",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **reset** method from the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.",
+          "Target": "educationSynchronizationProfile"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "resume",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resume** method from the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.",
+          "Target": "educationSynchronizationProfile"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "start",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **start** method from the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.",
+          "Target": "educationSynchronizationProfile"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "uploadUrl",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **uploadUrl** method from the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.",
+          "Target": "educationSynchronizationProfile"
+        }
+      ],
+      "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-16T17:09:32.9995516Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
     }
   ]
 }

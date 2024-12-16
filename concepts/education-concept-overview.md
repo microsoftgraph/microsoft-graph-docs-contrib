@@ -45,17 +45,6 @@ The following are examples of a few scenarios enabled by the assignments API:
 - [Assign outcomes like grades to individual students for assignments linked to your application](/graph/api/educationoutcome-update)
 - [Create a student dashboard to show which assignments are due by when](/graph/api/educationclass-list-assignments)
 
-### Enable school admins to manage identity and roster sync using School Data Sync Management (preview)
-
-[School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing student identity and roster data from student information systems with Microsoft Entra ID and Microsoft 365. When the information is synchronized, you can use the roster APIs to read the roster information into the applications. 
-
-If you're a system integrator setting up integration of a school's Student Information System with School Data Sync, you can use the [SDS management APIs](/graph/api/resources/educationsynchronizationprofile) in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
-
-School Data Sync management APIs support end-to-end scenarios for managing sync; for example:
-
-- [Create a synchronization profile that automatically starts a sync](/graph/api/educationsynchronizationprofile-post).
-- Manage sync lifecycle with [pause](/graph/api/educationsynchronizationprofile-pause), [resume](/graph/api/educationsynchronizationprofile-resume) and [reset](/graph/api/educationsynchronizationprofile-reset) operations.
-
 ### Integrate with Microsoft Reflect (preview)
 
 [Microsoft Reflect](https://reflect.microsoft.com/) is a wellbeing app designed to foster connection, expression, and learning by promoting self-awareness, empathy, and emotional growth. You can integrate with Microsoft Reflect to get student responses to Reflect check-ins.
@@ -75,7 +64,6 @@ Looking for the API reference for this service?
 To start using the education APIs, see:
 - [Use the roster APIs](/graph/api/resources/education-overview)
 - [Use the assignment APIs](/graph/api/resources/educationassignment)
-- [Use the SDS management APIs](/graph/api/resources/educationsynchronizationprofile)
 
 Explore the following education-related samples:
 - [.NET sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
