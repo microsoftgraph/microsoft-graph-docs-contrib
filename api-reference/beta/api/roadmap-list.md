@@ -36,7 +36,7 @@ Any user can call these APIs, there are no admin role requirements.
 }
 -->
 ``` http
-GET /identity/productChanges/microsoft.changeManagement.roadmap
+GET /identity/productChanges/microsoft.graph.roadmap
 ```
 
 ## Optional query parameters
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.changeManagement.roadmap
+GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.graph.roadmap
 ```
 
 ### Response
