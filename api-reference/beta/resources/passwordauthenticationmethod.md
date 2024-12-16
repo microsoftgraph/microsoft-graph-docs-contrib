@@ -7,6 +7,7 @@ ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 toc.title: Password
+ms.date: 07/23/2024
 ---
 
 # passwordAuthenticationMethod resource type

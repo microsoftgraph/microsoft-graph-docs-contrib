@@ -5,6 +5,7 @@ author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: resourcePageType
+ms.date: 11/15/2024
 ---
 
 # copilotAdminSetting resource type
@@ -25,7 +26,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|limitedMode|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Represents a setting that controls whether Microsoft 365 Copilot users can receive responses to sentiment-related prompts. Read-only. Nullable.|
+|limitedMode|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Represents a setting that controls whether Microsoft 365 Copilot in Teams Meetings users can receive responses to sentiment-related prompts. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

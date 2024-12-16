@@ -5,6 +5,7 @@ author: "svpsiva"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List attachments (deprecated)

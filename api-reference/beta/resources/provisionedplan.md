@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "suawat"
+ms.date: 10/22/2024
 ---
 
 # provisionedPlan resource type

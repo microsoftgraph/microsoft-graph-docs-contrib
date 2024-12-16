@@ -218,8 +218,66 @@ items:
     href: ../../api/security-detectionrule-update.md
   - name: Delete
     href: ../../api/security-detectionrule-delete.md
+- name: Discovered cloud apps (preview)
+  items:
+  - name: Overview
+    href: ../../resources/security-cloudappdiscovery-overview.md
+  - name: Cloud app discovery report
+    items:
+    - name: Cloud app discovery report
+      href: ../../resources/security-cloudappdiscoveryreport.md
+    - name: List uploaded streams
+      href: ../../api/security-datadiscoveryreport-list-uploadedstreams.md
+    - name: Get aggregated app details
+      href: ../../api/security-cloudappdiscoveryreport-aggregatedappsdetails.md
+  - name: Discovered cloud app detail
+    items:
+    - name: Discovered cloud app detail
+      href: ../../resources/security-discoveredcloudappdetail.md
+    - name: Get
+      href: ../../api/security-discoveredcloudappdetail-get.md
+    - name: Get discovered cloud app info
+      href: ../../api/security-discoveredcloudappinfo-get.md
+    - name: List IP addresses
+      href: ../../api/security-discoveredcloudappdetail-list-ipaddresses.md
+    - name: List users
+      href: ../../api/security-discoveredcloudappdetail-list-users.md
+  - name: Discovered cloud app info
+    items:
+    - name: Discovered cloud app info
+      href: ../../resources/security-discoveredcloudappinfo.md
+    - name: Get
+      href: ../../api/security-discoveredcloudappinfo-get.md
+  - name: Discovered cloud app user
+    items:
+    - name: Discovered cloud app user
+      href: ../../resources/security-discoveredcloudappuser.md
+    - name: List
+      href: ../../api/security-discoveredcloudappdetail-list-users.md
+  - name: Discovered cloud app IP address
+    items:
+    - name: Discovered cloud app IP address
+      href: ../../resources/security-discoveredcloudappipaddress.md
+    - name: List
+      href: ../../api/security-discoveredcloudappdetail-list-ipaddresses.md
+  - name: Discovered cloud app device
+    items:
+    - name: Discovered cloud app device
+      href: ../../resources/security-discoveredcloudappdevice.md
+    - name: List
+      href: ../../api/security-endpointdiscoveredcloudappdetail-list-devices.md
+  - name: Endpoint discovered cloud app detail
+    items:
+    - name: Endpoint discovered cloud app detail
+      href: ../../resources/security-endpointdiscoveredcloudappdetail.md
+    - name: Get
+      href: ../../api/security-endpointdiscoveredcloudappdetail-get.md
+    - name: List devices
+      href: ../../api/security-endpointdiscoveredcloudappdetail-list-devices.md
 - name: eDiscovery
   items:
+  - name: Overview
+    href: ../../resources/security-ediscovery-apioverview.md
   - name: eDiscovery case
     items:
     - name: eDiscovery case
@@ -402,21 +460,21 @@ items:
     items:
     - name: eDiscovery review set
       href: ../../resources/security-ediscoveryreviewset.md
-    - name: List ediscoveryReviewSets
+    - name: List
       href: ../../api/security-ediscoverycase-list-reviewsets.md
-    - name: Create ediscoveryReviewSet
+    - name: Create
       href: ../../api/security-ediscoverycase-post-reviewsets.md
-    - name: Get ediscoveryReviewSet
+    - name: Get
       href: ../../api/security-ediscoveryreviewset-get.md
-    - name: export
+    - name: Export
       href: ../../api/security-ediscoveryreviewset-export.md
-    - name: addToReviewSet
+    - name: Add to review set
       href: ../../api/security-ediscoveryreviewset-addtoreviewset.md
     - name: List files
       href: ../../api/security-ediscoveryreviewset-list-files.md
     - name: List queries
       href: ../../api/security-ediscoveryreviewset-list-queries.md
-    - name: Create ediscoveryReviewSetQuery
+    - name: Create review set query
       href: ../../api/security-ediscoveryreviewset-post-queries.md
   - name: eDiscovery review tag
     items:

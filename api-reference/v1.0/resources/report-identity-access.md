@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "entra-monitoring-health"
 author: "kvenkit"
 doc_type: conceptualPageType
+ms.date: 03/12/2024
 ---
 
 # Identity and access reports API overview

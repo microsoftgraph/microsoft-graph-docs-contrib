@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphrolemanagement.RoleManagementCloudPCRoleAssignmentItemRequestBuilderGetQueryParameters{
+requestParameters := &graphrolemanagement.CloudPCRoleAssignmentsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"roleDefinition"},
 }
-configuration := &graphrolemanagement.RoleManagementCloudPCRoleAssignmentItemRequestBuilderGetRequestConfiguration{
+configuration := &graphrolemanagement.CloudPCRoleAssignmentsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
