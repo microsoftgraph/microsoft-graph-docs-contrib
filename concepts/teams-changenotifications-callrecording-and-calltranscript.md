@@ -73,7 +73,7 @@ One of the following permissions is required to subscribe to `communications/onl
 | Application                            | OnlineMeetingTranscript.Read.Chat, OnlineMeetingTranscript.Read.All            |
 
 > [!NOTE]
-> - The OnlineMeetingTranscript.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission is applicable only for scheduled private meetings, not for channel meetings.
+> - The OnlineMeetingTranscript.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission is applicable only for scheduled private chat meetings, not for channel meetings.
 > - To subscribe to any transcript available for a particular online meeting by using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
 ### Example 1: Subscribe to transcripts available for a particular online meeting using classic permissions
@@ -262,7 +262,7 @@ One of the following permissions is required to subscribe to `communications/onl
 | Application                            | OnlineMeetingRecording.Read.Chat, OnlineMeetingRecording.Read.All |
 
 > [!NOTE]
-> - The OnlineMeetingRecording.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission is applicable only for scheduled private meetings, not for channel meetings.
+> - The OnlineMeetingRecording.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission is applicable only for scheduled private chat meetings, not for channel meetings.
 > - To subscribe to any recording available for a particular online meeting using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
 ### Example 1: Subscribe to recordings available for a particular online meeting using classic permissions

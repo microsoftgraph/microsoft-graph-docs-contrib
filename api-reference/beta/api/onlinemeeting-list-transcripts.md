@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports getting call transcripts from private meetings, channel meetings.
+Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports getting call transcripts from private chat meetings, channel meetings.
 
 > [!NOTE]
 > * This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat|Not available.|
 
 > **Note:** The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-> This permission is applicable only for scheduled private meetings, not for channel meetings.
+> This permission is applicable only for scheduled private chat meetings, not for channel meetings.
 
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
