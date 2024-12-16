@@ -53,7 +53,7 @@ The following table shows the parameters that you can use with this method.
 | filter    | String            | OData `$filter` syntax. Only `and`, `or`, `gt` ,`ge` and `eq` are currently supported.     |
 | groupBy   | String collection | Specifies how to group the reports. If used, must have the same content as the select parameter.|
 | orderBy   | String collection | Specifies how to sort the reports.                                                           |
-| reportName | cloudPCInaccessibleReportName | The report name. The possible values are: `inaccessibleCloudPcReports`, `inaccessibleCloudPcTrendReport`, `unknownFutureValue`, `regionalInaccessibleCloudPcTrendReport`. The default value is `inaccessibleCloudPcReports` if the **reportName** is empty. |
+| reportName | cloudPCInaccessibleReportName | The report name. The possible values are: `inaccessibleCloudPcReports`, `inaccessibleCloudPcTrendReport`, `unknownFutureValue`, `regionalInaccessibleCloudPcTrendReport`. The default value is `inaccessibleCloudPcReports` if the **reportName** is empty. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `regionalInaccessibleCloudPcTrendReport`. |
 | search    | String            | Specifies a String to search for.                                                          |
 | select    | String collection | OData `$select` syntax. Represents the selected columns of the reports.                    |
 | skip      | Int32             | Number of records to skip.                                                                 |
@@ -66,7 +66,7 @@ The following table shows the parameters that you can use with this method.
 | inaccessibleCloudPcReports    | Indicates a report that contains details of Cloud PCs that are inaccessible, including those with consecutive connection failures or in an unavailable state.    |
 | inaccessibleCloudPcTrendReport| Indicates a daily aggregated report for a specified period that contains details of Cloud PCs that are inaccessible, including those with consecutive connection failures or in an unavailable state.                                          |
 | unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.         |
-| regionalInaccessibleCloudPcTrendReport | Indicates a weekly regional aggregated report of inaccessible Cloud PC trends. |
+| regionalInaccessibleCloudPcTrendReport | Indicates the weekly regional aggregated report of inaccessible Cloud PC trends. |
 
 ## Response
 
@@ -74,7 +74,9 @@ If successful, this method returns a `200 OK` response code and a Stream object 
 
 ## Examples
 
-### Example 1: Get inaccessible Cloud PC reports in a specific region
+### Example 1: Get reports of inaccessible Cloud PCs in a specific region
+
+The following example shows how to get reports of inaccessible Cloud PCs in a specific region.
 
 #### Request
 
@@ -247,7 +249,9 @@ Content-Type: application/octet-stream
 }
 ```
 
-### Example 2: Get the weekly regional aggregated report of inaccessible Cloud PC trend
+### Example 2: Get the weekly regional aggregated report of inaccessible Cloud PC trends
+
+The following example shows how to get the weekly regional aggregated report of inaccessible Cloud PC trends.
 
 #### Request
 
@@ -258,7 +262,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/g
 Content-Type: application/json
 
 {
-  "reportName":"regionalInaccessibleCloudPcTrendReport",
+  "reportName": "regionalInaccessibleCloudPcTrendReport",
   "filter": "",
   "select": [
     "HostRegionName",
