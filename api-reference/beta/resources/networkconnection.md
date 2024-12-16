@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: cloud-pc
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # networkConnection resource type

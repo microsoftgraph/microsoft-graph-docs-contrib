@@ -5,6 +5,7 @@ author: "devjha-ms"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # teamInfo resource type

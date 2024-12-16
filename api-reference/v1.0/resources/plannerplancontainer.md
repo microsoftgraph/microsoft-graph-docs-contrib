@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: high
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # plannerPlanContainer resource type

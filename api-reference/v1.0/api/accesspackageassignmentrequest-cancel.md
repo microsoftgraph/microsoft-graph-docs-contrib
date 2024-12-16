@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_cancel" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-cancel-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write.md)]
+
 ## HTTP request
 
 <!-- {

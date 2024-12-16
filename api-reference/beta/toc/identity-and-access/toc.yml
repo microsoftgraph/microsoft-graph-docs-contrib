@@ -2064,6 +2064,26 @@ items:
         href: ../../api/fido2authenticationmethod-delete.md
       - name: Creation options
         href: ../../api/fido2authenticationmethod-creationoptions.md
+    - name: Hardware OATH method
+      items:
+      - name: Hardware OATH method
+        href: ../../resources/hardwareoathauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-hardwareoathmethods.md
+      - name: Create
+        href: ../../api/authentication-post-hardwareoathmethods.md
+      - name: Get
+        href: ../../api/hardwareoathauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/authentication-delete-hardwareoathmethods.md
+      - name: Activate
+        href: ../../api/hardwareoathauthenticationmethod-activate.md
+      - name: Deactivate
+        href: ../../api/hardwareoathauthenticationmethod-deactivate.md
+      - name: Assign and activate
+        href: ../../api/hardwareoathauthenticationmethod-assignandactivate.md
+      - name: Assign and activate by serial number
+        href: ../../api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber.md
     - name: Microsoft Authenticator
       items:
       - name: Microsoft Authenticator
@@ -2541,31 +2561,33 @@ items:
         href: ../../api/riskyserviceprincipal-list-history.md
   - name: Identity provider
     items:
-    - name: External Identities identity provider
-      items:
-      - name: External Identities identity provider
-        href: ../../resources/identityproviderbase.md
-      - name: List configured identity providers
-        href: ../../api/identitycontainer-list-identityproviders.md
-      - name: Create identity provider
-        href: ../../api/identitycontainer-post-identityproviders.md
-      - name: 'Get '
-        href: ../../api/identityproviderbase-get.md
-      - name: Update
-        href: ../../api/identityproviderbase-update.md
-      - name: Delete
-        href: ../../api/identityproviderbase-delete.md
-      - name: List available identity providers
-        href: ../../api/identityproviderbase-availableprovidertypes.md
     - name: External identities
       items:
+      - name: External Identities identity provider
+        items:
+        - name: External Identities identity provider
+          href: ../../resources/identityproviderbase.md
+        - name: List configured identity providers
+          href: ../../api/identitycontainer-list-identityproviders.md
+        - name: Create
+          href: ../../api/identitycontainer-post-identityproviders.md
+        - name: Get
+          href: ../../api/identityproviderbase-get.md
+        - name: Update
+          href: ../../api/identityproviderbase-update.md
+        - name: Delete
+          href: ../../api/identityproviderbase-delete.md
+        - name: List available identity providers
+          href: ../../api/identityproviderbase-availableprovidertypes.md
       - name: Built in identity provider
         href: ../../resources/builtinidentityprovider.md
       - name: Social identity provider
         href: ../../resources/socialidentityprovider.md
       - name: Apple managed identity provider
         href: ../../resources/applemanagedidentityprovider.md
-      - name: Open id connect identity provider
+      - name: OIDC identity provider
+        href: ../../resources/oidcidentityprovider.md
+      - name: OpenID Connect identity provider
         href: ../../resources/openidconnectidentityprovider.md
     - name: Domain-based external identities
       items:
@@ -2641,6 +2663,30 @@ items:
       href: ../../resources/invitation.md
     - name: Create
       href: ../../api/invitation-post.md
+  - name: Microsoft Entra lifecycle announcements
+    items:
+    - name: Product changes
+      items:
+      - name: Product changes
+        href: ../../resources/changeitembase.md
+      - name: List
+        href: ../../api/identitycontainer-list-productchanges.md
+    - name: Change announcements
+      items:
+      - name: Change announcements
+        href: ../../resources/announcement.md
+      - name: List
+        href: ../../api/announcement-list.md
+      - name: Get
+        href: ../../api/announcement-get.md
+    - name: Roadmap
+      items:
+      - name: Roadmap
+        href: ../../resources/roadmap.md
+      - name: List
+        href: ../../api/roadmap-list.md
+      - name: Get
+        href: ../../api/roadmap-get.md
   - name: Multitenant organization
     displayName: MTO
     items:
@@ -2819,6 +2865,24 @@ items:
           href: ../../api/hardwareoathauthenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/hardwareoathauthenticationmethodconfiguration-delete.md
+      - name: Hardware OATH token devices
+        items:
+        - name: Hardware OATH token devices
+          href: ../../resources/hardwareoathtokenauthenticationmethoddevice.md
+        - name: List
+          href: ../../api/authenticationmethoddevice-list-hardwareoathdevices.md
+        - name: Create
+          href: ../../api/authenticationmethoddevice-post-hardwareoathdevices.md
+        - name: Create one or more objects
+          href: ../../api/authenticationmethoddevice-update.md
+        - name: Get
+          href: ../../api/hardwareoathtokenauthenticationmethoddevice-get.md
+        - name: Update
+          href: ../../api/hardwareoathtokenauthenticationmethoddevice-update.md
+        - name: Delete
+          href: ../../api/authenticationmethoddevice-delete-hardwareoathdevices.md
+        - name: Assign user
+          href: ../../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md
       - name: Microsoft Authenticator
         items:
         - name: Microsoft Authenticator

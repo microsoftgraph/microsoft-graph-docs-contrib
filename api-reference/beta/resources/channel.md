@@ -5,6 +5,7 @@ author: "akjo"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/01/2024
 ---
 
 # channel resource type

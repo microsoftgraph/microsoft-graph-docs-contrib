@@ -18,11 +18,11 @@ import (
 
 requestTop := int32(1)
 
-requestParameters := &graphteams.TeamItemChannelItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.ItemChannelsItemMessagesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Expand: [] string {"replies"},
 }
-configuration := &graphteams.TeamItemChannelItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.ItemChannelsItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

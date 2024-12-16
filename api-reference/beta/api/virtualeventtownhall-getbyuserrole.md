@@ -160,7 +160,13 @@ Content-Type: application/json
       ],
       "settings": {
         "isAttendeeEmailNotificationEnabled": false
-      }
+      },
+      "externalEventInformation": [
+        {
+          "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",
+          "externalEventId": "myExternalEventId"
+        }
+      ]
     }
   ]
 }

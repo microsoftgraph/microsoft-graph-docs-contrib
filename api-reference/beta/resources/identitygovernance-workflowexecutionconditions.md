@@ -5,6 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/21/2024
 ---
 
 # workflowExecutionConditions resource type

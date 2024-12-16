@@ -24,7 +24,7 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "platformcredentialauthenticationmethod_get" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-get-permissions.md)]
 
 ### Permissions acting on other users

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "luleonpla"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/16/2024
 ---
 
 # applicationTemplate resource type
