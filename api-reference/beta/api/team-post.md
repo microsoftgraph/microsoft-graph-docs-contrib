@@ -5,6 +5,7 @@ author: "anandjo"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Create team

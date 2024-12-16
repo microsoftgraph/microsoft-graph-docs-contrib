@@ -5,6 +5,7 @@ author: "AkJo"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 
 # team resource type

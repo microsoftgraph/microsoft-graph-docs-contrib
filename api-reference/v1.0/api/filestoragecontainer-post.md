@@ -5,7 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 09/12/2024
+ms.date: 11/14/2024
 ---
 
 # Create fileStorageContainer
@@ -44,7 +44,7 @@ This method supports the following OData query parameters to help customize the 
 
 | Name      |Description|
 |:----------|:----------|
-| dataLocation |Specifies the desired data location for container creation in Multi-Geo tenants. Omitting the `$dataLocation` parameter in the request creates the container at the tenant's default location. For more information, see [available Multi-Geo regions and their location codes](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide#microsoft-365-multi-geo-availability). |
+| dataLocation |Specifies the desired data location for container creation in Multi-Geo tenants. Omitting the `$dataLocation` parameter in the request creates the container at the tenant's default location. For more information, see [available Multi-Geo regions and their location codes](/microsoft-365/enterprise/microsoft-365-multi-geo#microsoft-365-multi-geo-availability). |
 
 ## Request headers
 |Name|Description|
@@ -72,6 +72,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ### Request
 The following example shows how to create a **fileStorageContainer**.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -144,7 +145,9 @@ Content-type: application/json
   "status": "inactive",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
   "settings": {
-    "isOcrEnabled": true
+    "isOcrEnabled": false,
+    "itemMajorVersionLimit": 50,
+    "isItemVersioningEnabled": true
   }
 }
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # bookingBusiness resource type
