@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a reservePercentage and cronScheduleExpression in the response body.
+If successful, this method returns a `200 OK` response code and [cloudpcpolicyscheduledapplyactiondetail](../../beta/resources/cloudpcpolicyscheduledapplyactiondetail.md) in the response body.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
