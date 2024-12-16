@@ -97,7 +97,10 @@ Content-Type: application/json
 
 ## Using $filter OData query to be notified of only a subset of Copilot AI interactions
 
-The `$filter` OData query can be used to filter out Copilot AI interactions that are not required. For instance, to subscribe to Copilot AI interactions for a particular M365 app, like Microsoft Teams, append `?$filter=appClass eq 'IPM.SkypeTeams.Message.Copilot.Teams'` to the end of the resource string. To subscribe to all AI interactions where the `conversationType` is not Microsoft BizChat, append `?$filter=conversationType ne 'bizchat'`.
+The `$filter` OData query can be used to filter out Copilot AI interactions that are not needed. For instance, to subscribe to Copilot AI interactions for only a particular M365 app, like Microsoft Teams, append `?$filter=appClass eq 'IPM.SkypeTeams.Message.Copilot.Teams'` to the end of the resource string. To subscribe to all AI interactions where the `conversationType` is not Microsoft BizChat, append `?$filter=conversationType ne 'bizchat'`.
+
+> [!NOTE]
+> At this time, the OData `$filter` query can only be used on the top-level properties of the [aiInteraction](/graph/api/resources/aiinteraction) resource. Nested property filtering is not supported. For instance, `?$filter=from/user/id eq '48902e20-56dc-48cf-ab15-0b65e15dda67'` is not supported at this time.
 
 ### Examples
 
