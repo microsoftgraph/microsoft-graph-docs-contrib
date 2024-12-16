@@ -29,6 +29,7 @@ The authentication method APIs are used to manage a user's authentication method
 * You can retrieve details of a user's Windows Hello for Business registration, and delete it if the user has lost the device.
 * You can add an email address to a user. The user can then use that email as part of the Self-Service Password Reset (SSPR) process.
 * You can update that email, or delete it from the user.
+* You can assign and activate a hardware OATH token for a user.
 
 The ability for a user to use an authentication method is governed by the [authentication method policy](authenticationmethodspolicies-overview.md) for the tenant. For example, only users in the R&D department might be enabled to use the FIDO2 method while all users might be enabled to use Microsoft Authenticator.
 
@@ -40,6 +41,7 @@ We don't recommend using the authentication methods APIs for scenarios where you
 |:---------------------------|:------------|:------------|
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|An email address can be used by a user as part of the Self-Service Password Reset (SSPR) process.|See a user's authentication email address. Add, update, or remove an email address to a user.|
 |[fido2AuthenticationMethod](fido2authenticationmethod.md)|A FIDO2 Security Key can be used by a user to sign-in to Microsoft Entra ID.|Delete a lost FIDO2 Security Key.|
+|[hardwareOathAuthenticationMethod](hardwareoathauthenticationmethod.md)|Allow users to perform multifactor authentication using a hardware OATH device that provides a one-time code.|Get, (un)assign or (de)activate a hardware token to a user.|
 |[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|Microsoft Authenticator can be used by a user to sign-in or perform multi-factor authentication to Microsoft Entra ID|Delete a Microsoft Authenticator authentication method.|
 |[passwordAuthenticationMethod](passwordauthenticationmethod.md)| A password is currently the default primary authentication method in Microsoft Entra ID.|Reset a user's password|
 |[phoneAuthenticationMethod](phoneauthenticationmethod.md)|A phone can be used by a user to authenticate using [SMS or voice calls](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (as allowed by policy).|See a user's authentication phone numbers. Add, update, or remove a phone number to a user. Enable or disable a primary mobile phone for SMS sign-in.|
@@ -54,7 +56,6 @@ The following authentication methods are not yet supported in Microsoft Graph `b
 
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
-|Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
 
 ## Require re-register multifactor authentication
