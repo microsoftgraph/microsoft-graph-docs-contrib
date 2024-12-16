@@ -60,7 +60,7 @@ You can specify the following properties when you create a **deviceTemplate**.
 |mutualTlsOauthConfigurationId|String|Object ID of the CertificateBasedDeviceAuthConfiguration. This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
 |mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (EntraID Tenant ID for device authority). This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
 |operatingSystem|String|Operating system type. Optional.|
-|"owners@odata.bind"|String| |
+|owners@odata.bind|String collection| List of owners to add to the device template. Optional. |
 
 ## Response
 

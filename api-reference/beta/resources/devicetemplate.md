@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents property values that are common to a set of [device](../resources/device.md) objects. The properties on the template are stamped on any **device** object that is created based on this template.
 
-An admin on the customer's tenant calls the [Create deviceTemplate](../api/template-post-devicetemplates.md) API for this entity. Values for **certificateBasedDeviceAuthConfigurationId**, **certificateBasedDeviceAuthConfigurationTenantId**, **deviceAuthorityAppIds**, and so on, are provided to the customer by the device authority (manufacturer or reseller).
+An admin on the customer's tenant calls the [Create deviceTemplate](../api/template-post-devicetemplates.md) API for this entity. Values for **mutualTlsOauthConfigurationId**, **mutualTlsOauthConfigurationTenantId**, **deviceAuthority**, and so on, are provided to the customer by the device authority (manufacturer or reseller).
 
 The **deviceTemplate** is immutable.
 
@@ -37,6 +37,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|                                                                      
+|deletedDateTime                      |DateTimeOffset     |Date and time when this object was deleted. Always `null` when the object hasn't been deleted. |
 | deviceAuthority                    | String            | A generic term that refers to the device manufacturer, reseller, or supplier responsible for provisioning and managing devices on a customer's Entra ID tenant. For example, Acme (the manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (the device authority). |
 | id                                 | String            | The unique identifier for the **deviceTemplate** object. Inherited from [directoryObject](../resources/directoryobject.md).   |
 | manufacturer                       | String            | Manufacturer name. |
@@ -64,6 +65,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceTemplate",
+  "deletedDateTime": "String (timestamp)",
   "deviceAuthority": "String",
   "id": "String (identifier)",
   "manufacturer": "String",

@@ -114,22 +114,6 @@ Content-Type: application/json
 
 ### Example 2: Remove a certificate from the list
 
-This example assumes the original object stored has the following value:
-
-```json
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
-  "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-  "displayName": "DoorCamera_Model_X_TrustedCAs",
-  "tlsClientAuthParameter": "tls_client_auth_subject_dn",
-  "certificateAuthorities": [
-    {
-      "@odata.type": "microsoft.graph.certificateAuthority"
-    }
-  ]
-}
-```
-
 #### Request
 
 The following example shows a request.

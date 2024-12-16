@@ -96,7 +96,7 @@ This resource supports:
 |platform |String|Platform of device. Only returned if the user signs in with a Microsoft account as part of Project Rome. |
 |profileType|String|The profile type of the device. Possible values: `RegisteredDevice` (default), `SecureVM`, `Printer`, `Shared`, `IoT`.|
 |registrationDateTime|DateTimeOffset|Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|sourceType|String|Device source - AAD/DPS/External. Read-only.|
+|sourceType|String|Device source. Possible values are: `AAD`, `DPS`, `External`. Read-only.|
 |status | String| Device is `online` or `offline`. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |systemLabels|String collection| List of labels applied to the device by the system. Supports `$filter` (`/$count eq 0`, `/$count ne 0`). |
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: `Workplace` (indicates *bring your own personal devices*), `AzureAd` (Cloud only joined devices), `ServerAd` (on-premises domain joined devices joined to Microsoft Entra ID). For more information, see [Introduction to device management in Microsoft Entra ID](/azure/active-directory/device-management-introduction). |

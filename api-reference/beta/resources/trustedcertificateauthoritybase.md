@@ -26,7 +26,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |certificateAuthorities|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property that represents a list of trusted certificate authorities.|
-|deletedDateTime|DateTimeOffset|Inherited from [directoryObject](../resources/directoryobject.md).|
+|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
 |id|String|The unique identifier for the **trustedCertificateAuthorityBase** object. Inherited from [directoryObject](../resources/directoryobject.md).|
 
 ## Relationships
