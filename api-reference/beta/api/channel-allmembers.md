@@ -19,6 +19,7 @@ Retrieve a list of [conversationMember](../resources/conversationmember.md) from
 > The membership IDs returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
 >
 > The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
+> [!NOTE] Currently, pagination is not supported, maximum 999 members can be returned in the response. If a channel has more than 999 members in a channel then only first 999 members can be fetched via this API.
 
 ## Permissions
 
@@ -36,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ### Optional query parameters
 
-This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 objects respectively.
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
