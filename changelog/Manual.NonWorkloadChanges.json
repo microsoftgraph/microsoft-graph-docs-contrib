@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Microsoft Graph activity logs",
           "ChangeType": "Addition",
-          "Description": "Microsoft Graph activity logs are now available in China operated by 21Vianet.",
+          "Description": "[Microsoft Graph activity logs](https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview) are now available in China operated by 21Vianet.",
           "Target": "Microsoft Graph activity logs"
         }
       ],
