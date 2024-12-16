@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Directory.AccessAsUser.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Device.ReadWrite.All|Not available.|
+|Application|Not supported.|Not supported.|
 
