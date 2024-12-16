@@ -12,6 +12,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Describes the response format of a call stop transcription operation.
 
 ## Properties
