@@ -50,7 +50,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|atApprovedLocation| `Edm.boolean ` | Indicate if this action happens at an approved location.|
+|atApprovedLocation|Boolean|Indicate if this action happens at an approved location. This property will be deprecated. Use `isAtApprovedLocation` instead.|
+|isAtApprovedLocation|Boolean|Indicate if this action happens at an approved location. |
 |onBehalfOfUserId| String | Optional parameter used by the manager to clock in on behalf of a user.|
 |notes| [itemBody](../resources/itembody.md)  |Notes for the clock in. |
 
@@ -74,10 +75,10 @@ POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32
 Content-type: application/json
 
 {
-    "atAprovedLocation": true,
+    "isAtApprovedLocation": true,
     "notes": {
         "contentType": "text",
-        "content": "clock in notes"
+        "content": "clocking in"
     }
 }
 ```
@@ -151,10 +152,11 @@ Content-type: application/json
     },
     "clockInEvent": {
         "dateTime": "2021-05-27T22:58:41.327Z",
-        "atApprovedLocation": null,
+        "atApprovedLocation": true,
+        "isAtApprovedLocation": true,
         "notes": {
             "contentType": "text",
-            "content": "clock in notes"
+            "content": "clocking in"
         }
     },
     "breaks": [],
@@ -162,10 +164,11 @@ Content-type: application/json
         "clockOutEvent": null,
         "clockInEvent": {
             "dateTime": "2021-05-27T22:58:41.327Z",
-            "atApprovedLocation": null,
+            "atApprovedLocation": true,
+            "isAtApprovedLocation": true,
             "notes": {
                 "contentType": "text",
-                "content": "clock in notes"
+                "content": "clocking in"
             }
         },
         "breaks": []

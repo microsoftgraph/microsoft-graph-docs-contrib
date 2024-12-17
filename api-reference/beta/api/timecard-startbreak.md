@@ -2,10 +2,10 @@
 title: "timeCard: startBreak"
 description: "Start break in a specific timecard."
 author: "akumar39"
+ms.date: 04/05/2024
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 04/05/2024
 ---
 
 # timeCard: startBreak
@@ -50,7 +50,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|atApprovedLocation| `Edm.boolean ` | Indicate if this action happens at an approved location.|
+|atApprovedLocation|Boolean|Indicate if this action happens at an approved location. This property will be deprecated. Use `isAtApprovedLocation` instead.|
+|isAtApprovedLocation|Boolean|Indicate if this action happens at an approved location.|
 |notes| [itemBody](../resources/itembody.md)  |Notes during start of break.|
 
 ## Response
@@ -75,10 +76,10 @@ POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32
 Content-type: application/json
 
 {
-    "atAprovedLocation": true,
+    "isAtApprovedLocation": true,
     "notes": {
         "contentType": "text",
-        "content": "start break smaple notes"
+        "content": "starting break"
     }
 }
 ```

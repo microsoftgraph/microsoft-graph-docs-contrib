@@ -50,7 +50,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|atApprovedLocation| `Edm.boolean ` | Indicate if this action happens at an approved location.|
+|atApprovedLocation|Boolean|Indicate if this action happens at an approved location. This property will be deprecated. Use `isAtApprovedLocation` instead.|
+|isAtApprovedLocation|Boolean|Indicate if this action happens at an approved location.|
 |notes| [itemBody](../resources/itembody.md)  |Notes during end of break.|
 
 ## Response
@@ -74,10 +75,10 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/TCK_cc09588d-d9d2-4fa0-85dc-2aa5ef983972/endbreak
 
 {
-    "atAprovedLocation": true,
+    "isAtApprovedLocation": true,
     "notes": {
         "contentType": "text",
-        "content": "end break smaple notes"
+        "content": "ending break"
     }
 }
 ```

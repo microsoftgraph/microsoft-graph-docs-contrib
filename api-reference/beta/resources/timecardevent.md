@@ -2,10 +2,10 @@
 title: "timeCardEvent resource type"
 description: "Represents a specific timecard event."
 author: "akumar39"
+ms.date: 07/25/2024
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
-ms.date: 07/25/2024
 ---
 
 # timeCardEvent resource type
@@ -17,11 +17,12 @@ Namespace: microsoft.graph
 Represents a specific [timeCard](timecard.md) event.
 
 ## Properties
-|Property               |Type           |Description                                                                |
-|-----------------------|---------------|---------------------------------------------------------------------------|
-| dateTime 			        |`Edm.dateTimeOffset`  |The time the entry is recorded. |
-| atApprovedLocation |`Edm.boolean `  |Indicates whether the entry was recorded at the approved location. |
-| notes			        |[itemBody](itembody.md)  | Notes about the **timeCardEvent**.|
+|Property|Type|Description|
+|:---|:---|:---|
+|atApprovedLocation|Boolean|Indicate if this action happens at an approved location. This property will be deprecated. Use `isAtApprovedLocation` instead.|
+|dateTime|Boolean|The time the entry is recorded.|
+|isAtApprovedLocation|Boolean|Indicate if this action happens at an approved location. This property will replace `atApprovedLocation` in V1.|
+|notes|[itemBody](itembody.md)|Notes about the **timeCardEvent**.|
 
 ## Relationships
 
@@ -38,8 +39,13 @@ The following JSON representation shows the resource type.
 }-->
 ```json
 {
-   "atApprovedLocation":true,
-   "notes":{ "@odata.type":"microsoft.graph.itemBody" }
+  "@odata.type": "#microsoft.graph.timeCardEvent",
+  "dateTime": "String (timestamp)",
+  "atApprovedLocation": "Boolean",
+  "isAtApprovedLocation": "Boolean",
+  "notes": {
+    "@odata.type": "microsoft.graph.itemBody"
+  }
 }
 ```
 

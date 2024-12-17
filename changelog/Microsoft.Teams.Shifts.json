@@ -733,6 +733,96 @@
       "CreatedDateTime": "2024-12-04T22:51:07.7910122Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Property",
+          "ChangedApiName": "isAtApprovedLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **isAtApprovedLocation** property to the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource.",
+          "Target": "timeCardEvent"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Property",
+          "ChangedApiName": "isActivitiesIncludedWhenCopyingShiftsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isActivitiesIncludedWhenCopyingShiftsEnabled** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Method",
+          "ChangedApiName": "clockIn",
+          "ChangeType": "Addition",
+          "Description": "Added the [clockIn](https://learn.microsoft.com/en-us/graph/api/timeCard-clockIn?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Method",
+          "ChangedApiName": "clockIn",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **clockIn** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Method",
+          "ChangedApiName": "clockOut",
+          "ChangeType": "Addition",
+          "Description": "Added the [clockOut](https://learn.microsoft.com/en-us/graph/api/timeCard-clockOut?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Method",
+          "ChangedApiName": "clockOut",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **clockOut** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Method",
+          "ChangedApiName": "endBreak",
+          "ChangeType": "Addition",
+          "Description": "Added the [endBreak](https://learn.microsoft.com/en-us/graph/api/timeCard-endBreak?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Method",
+          "ChangedApiName": "endBreak",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **endBreak** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Method",
+          "ChangedApiName": "startBreak",
+          "ChangeType": "Addition",
+          "Description": "Added the [startBreak](https://learn.microsoft.com/en-us/graph/api/timeCard-startBreak?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Method",
+          "ChangedApiName": "startBreak",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **startBreak** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        }
+      ],
+      "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-04T04:21:47.560727Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
