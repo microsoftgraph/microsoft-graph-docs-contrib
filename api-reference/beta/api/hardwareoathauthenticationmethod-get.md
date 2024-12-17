@@ -32,6 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/hardwareoathauthenticationmethod-get-2-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
+
 ## HTTP request
 
 Get details of a hardware OATH authentication method assigned to you.
