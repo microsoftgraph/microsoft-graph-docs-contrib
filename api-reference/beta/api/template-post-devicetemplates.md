@@ -54,7 +54,7 @@ You can specify the following properties when you create a **deviceTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceAuthority | String | A generic term that refers to the device manufacturer, reseller, or supplier responsible for provisioning and managing devices on a customer's EntraID tenant. For example, Acme (the manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (the device authority). Required.|
+|deviceAuthority | String | A generic term that refers to the device manufacturer, reseller, or supplier responsible for provisioning and managing devices on a customer's Entra ID. For example, Acme (the manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (the device authority). Required.|
 |manufacturer|String|Manufacturer name. Required.|
 |model|String|Model name. Required.|
 |mutualTlsOauthConfigurationId|String|Object ID of the CertificateBasedDeviceAuthConfiguration. This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
