@@ -30,11 +30,8 @@ sharedTimeOff.SetTheme(&theme)
 requestBody.SetSharedTimeOff(sharedTimeOff)
 draftTimeOff := null
 requestBody.SetDraftTimeOff(&draftTimeOff) 
-additionalData := map[string]interface{}{
-	isStagedForDeletion := false
+isStagedForDeletion := false
 requestBody.SetIsStagedForDeletion(&isStagedForDeletion) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 timesOff, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimesOff().Post(context.Background(), requestBody, nil)
