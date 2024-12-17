@@ -20,11 +20,7 @@ Get a list of the [roadmap](../resources/roadmap.md) objects and their propertie
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "roadmap-list-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "roadmap_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/roadmap-list-permissions.md)]
 
 Any user can call these APIs, there are no admin role requirements.
@@ -36,7 +32,7 @@ Any user can call these APIs, there are no admin role requirements.
 }
 -->
 ``` http
-GET /identity/productChanges/microsoft.changeManagement.roadmap
+GET /identity/productChanges/microsoft.graph.roadmap
 ```
 
 ## Optional query parameters
@@ -68,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.changeManagement.roadmap
+GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.graph.roadmap
 ```
 
 ### Response

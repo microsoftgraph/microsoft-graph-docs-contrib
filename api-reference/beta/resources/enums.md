@@ -4953,6 +4953,16 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
+### restoreArtifactsBulkRequestStatus values 
+
+|Member|
+|:---|
+|unkown|
+|active|
+|completed|
+|completedWithErrors|
+|unknownFutureValue|
+
 ### cloudPCPerformanceReportName values
 
 | Member                 |
