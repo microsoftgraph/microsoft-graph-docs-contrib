@@ -2366,7 +2366,7 @@
       "ChangeList": [
         {
           "Id": "bd99be3e-66c5-44fa-8159-3b5788936946",
-          "ApiChange": "Relationship",
+          "ApiChange": "Method",
           "ChangedApiName": "allMembers",
           "ChangeType": "Addition",
           "Description": "Added the **allMembers** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
@@ -2374,7 +2374,7 @@
         },
         {
           "Id": "bd99be3e-66c5-44fa-8159-3b5788936946",
-          "ApiChange": "Relationship",
+          "ApiChange": "Method",
           "ChangedApiName": "getAllMembers",
           "ChangeType": "Deletion",
           "Description": "Removed the **getAllMembers** relationship from the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
