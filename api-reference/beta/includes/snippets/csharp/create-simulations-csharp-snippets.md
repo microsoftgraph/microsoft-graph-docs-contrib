@@ -40,8 +40,13 @@ var requestBody = new Simulation
 		PositiveReinforcement = new PositiveReinforcementNotification
 		{
 			DeliveryPreference = NotificationDeliveryPreference.DeliverAfterCampaignEnd,
-			EndUserNotification = "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",
 			DefaultLanguage = "en",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"endUserNotification@odata.bind" , "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
+				},
+			},
 		},
 		AdditionalData = new Dictionary<string, object>
 		{

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Synchronization error (deprecated)
+ms.date: 07/23/2024
 ---
 
 # educationSynchronizationError resource type (deprecated)

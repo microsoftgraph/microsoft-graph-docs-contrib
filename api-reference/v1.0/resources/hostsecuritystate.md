@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: security
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # hostSecurityState resource type

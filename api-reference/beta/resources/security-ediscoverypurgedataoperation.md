@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 10/31/2024
 ---
 
 # ediscoveryPurgeDataOperation resource type

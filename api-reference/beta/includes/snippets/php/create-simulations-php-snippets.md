@@ -44,8 +44,11 @@ $endUserNotificationSetting->setNotificationPreference(new EndUserNotificationPr
 $endUserNotificationSetting->setSettingType(new EndUserNotificationSettingType('noTraining'));
 $endUserNotificationSettingPositiveReinforcement = new PositiveReinforcementNotification();
 $endUserNotificationSettingPositiveReinforcement->setDeliveryPreference(new NotificationDeliveryPreference('deliverAfterCampaignEnd'));
-$endUserNotificationSettingPositiveReinforcement->setEndUserNotification('https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a');
 $endUserNotificationSettingPositiveReinforcement->setDefaultLanguage('en');
+$additionalData = [
+	'endUserNotification@odata.bind' => 'https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a',
+];
+$endUserNotificationSettingPositiveReinforcement->setAdditionalData($additionalData);
 $endUserNotificationSetting->setPositiveReinforcement($endUserNotificationSettingPositiveReinforcement);
 $additionalData = [
 	'simulationNotification' => [

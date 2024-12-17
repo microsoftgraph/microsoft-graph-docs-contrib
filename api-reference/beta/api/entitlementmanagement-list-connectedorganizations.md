@@ -5,6 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/19/2024
 ---
 
 # List connectedOrganizations
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_list_connectedorganizations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-list-connectedorganizations-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-identity-governance-read](../includes/rbac-for-apis/rbac-entitlement-identity-governance-admin-apis-read.md)]
 
 ## HTTP request
 

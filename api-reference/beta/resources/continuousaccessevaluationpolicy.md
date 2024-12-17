@@ -5,6 +5,7 @@ author: "Jerrysai-zz"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # continuousAccessEvaluationPolicy resource type

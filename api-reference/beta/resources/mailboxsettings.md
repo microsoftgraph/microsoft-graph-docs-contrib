@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # mailboxSettings resource type

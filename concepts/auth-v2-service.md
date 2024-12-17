@@ -265,4 +265,5 @@ Access the [Microsoft identity platform code samples](/entra/identity-platform/s
 
 ## Related content
 
-Explore [Microsoft Graph tutorials](/graph/tutorials) to create basic applications that access data in app-only scenarios.
+- Explore [Microsoft Graph tutorials](/graph/tutorials) to create basic applications that authenticate using certificate-based credentials to access data in app-only scenarios.
+- [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate) shows a step-by-step process to add a certificate to an app for certificate-based authentication and app-only access to data.

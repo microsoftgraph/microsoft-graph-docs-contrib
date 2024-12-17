@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "myra-ramdenbourg"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 08/09/2024
 ---
 
 # deviceDetail resource type

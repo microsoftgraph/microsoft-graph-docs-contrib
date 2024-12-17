@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 09/23/2024
 ---
 
 # Update profilePhoto

@@ -5,6 +5,7 @@ author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 04/04/2024
 ---
 
 # Remove member from channel

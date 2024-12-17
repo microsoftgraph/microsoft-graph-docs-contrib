@@ -3829,6 +3829,40 @@
     {
       "ChangeList": [
         {
+          "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Deprecation",
+          "Description": "Added a deprecation notice to the [userExperienceAnalyticsRemoteConnection-get](https://learn.microsoft.com/en-us/graph/api/intune-devices-userexperienceanalyticsremoteconnection-get?view=graph-rest-beta) method.",
+          "Target": "userExperienceAnalyticsRemoteConnection"
+        },
+        {
+          "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Deprecation",
+          "Description": "Added a deprecation notice to the [userExperienceAnalyticsRemoteConnection-list](https://learn.microsoft.com/en-us/graph/api/intune-devices-userexperienceanalyticsremoteconnection-list?view=graph-rest-beta) method.",
+          "Target": "userExperienceAnalyticsRemoteConnection"
+        },
+        {
+          "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
+          "ApiChange": "Method",
+          "ChangedApiName": "summarizeDeviceRemoteConnection",
+          "ChangeType": "Deprecation",
+          "Description": "Added a deprecation notice to the [summarizedeviceremoteconnection](https://learn.microsoft.com/en-us/graph/api/intune-devices-userexperienceanalyticsremoteconnection-summarizedeviceremoteconnection?view=graph-rest-beta) method.",
+          "Target": "summarizeDeviceRemoteConnection"
+        }
+      ],
+      "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-03T03:35:56.9639116Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7c00bcac-d519-4e40-89d3-1f61d7e78f7d",
           "ApiChange": "Resource",
           "ChangedApiName": "windows10EnrollmentCompletionPageConfiguration",

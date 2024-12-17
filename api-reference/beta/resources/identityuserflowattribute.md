@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "nanguil"
+ms.date: 05/22/2024
 ---
 
 # identityUserFlowAttribute resource type

@@ -5,6 +5,7 @@ author: Sangle7
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: resourcePageType
+ms.date: 12/03/2024
 ---
 
 # sitePage resource type
@@ -30,7 +31,6 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 | [Publish](../api/sitepage-publish.md)                                                   | None                                            | Publish a [sitePage](../resources/sitepage.md) object.                                                                              |
 | [Get by position](../api/sitepage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection   | Get a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information. |
 | [Save as template](../api/sitepage-saveastemplate.md)                          | [pageTemplate](../resources/pagetemplate.md)            | Save a [sitePage](../resources/sitepage.md) as a [pageTemplate](../resources/pagetemplate.md) in a [site](../resources/site.md).                                                                           |
-| [Create from template](../api/sitepage-createfromtemplate.md)              | [sitePage](../resources/sitepage.md)            | Create a new [sitePage](../resources/sitepage.md) from a [pageTemplate](../resources/pagetemplate.md) in a [site](../resources/site.md).                                                                           |
 
 ## Properties
 
@@ -45,7 +45,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 | lastModifiedBy       | [identitySet](../resources/identityset.md)                           | TIdentity of the last modifier of this item. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).                                                                            |
 | lastModifiedDateTime | DateTimeOffset                                                       | The date and time the item was last modified. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).                                                                            |
 | name                 | String                                                               | The name of the item. Inherited from [baseSitePage](../resources/basesitepage.md).    |
-| pageLayout           | [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values)       | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`. Inherited from [baseSitePage](../resources/basesitepage.md). |
+| pageLayout           | [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values)       | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`, `newsLink`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink`. Inherited from [baseSitePage](../resources/basesitepage.md). |
 | parentReference      | [itemReference](../resources/itemreference.md)                         | Parent information, if the item has a parent. Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
 | promotionKind        | [pagePromotionType](../resources/sitepage.md#pagepromotiontype-values) | Indicates the promotion kind of the sitePage. The possible values are: `microsoftReserved`, `page`, `newsPost`, `unknownFutureValue`.                                                                                    |
 | publishingState      | [publicationFacet](../resources/publicationfacet.md)                   | The publishing status and the MM.mm version of the page.  Inherited from [baseSitePage](../resources/basesitepage.md).                                                                       |
