@@ -61,12 +61,11 @@ You can specify the following properties when you update a **mutualTlsOauthConfi
 
 ## Response
 
-If successful, this method returns a `201 OK` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body. If a validation failure occurs during the certificate validation steps, the method returns a `400 Bad Request` along with the error message, `Invalid value specified for property 'certificate' of resource 'CertificateAuthorityInformation'`.
-For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
+If successful, this method returns a `201 OK` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body. If a validation failure occurs during the certificate validation steps, the method returns a `400 Bad Request` along with the error message, `Invalid value specified for property 'certificate' of resource 'CertificateAuthorityInformation'`. For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
-### Example 1: Update display name
+### Example 1: Update the display name
 
 The following example shows how to update the display name of a **mutualTlsOauthConfiguration** object from `DoorCamera_Model_X_TrustedCAs` to `THIS_IS_A_NEW_NAME`.
 
