@@ -21,20 +21,14 @@ Get a list of the [hardware tokens](../resources/hardwareoathauthenticationmetho
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions acting on self
-<!-- {
-  "blockType": "permissions",
-  "name": "authentication-list-hardwareoathmethods-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "authentication_list_hardwareoathmethods" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-hardwareoathmethods-permissions.md)]
 
 ### Permissions acting on other users
-<!-- {
-  "blockType": "permissions",
-  "name": "authentication-list-hardwareoathmethods-2-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "authentication_list_hardwareoathmethods_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-hardwareoathmethods-2-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 Get details of your own hardware OATH methods.

@@ -26,11 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "authentication-delete-hardwareoathmethods-permissions"
 }
 -->
-<!-- {
-  "blockType": "permissions",
-  "name": "authentication-delete-hardwareoathmethods-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "authentication_delete_hardwareoathmethods" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-delete-hardwareoathmethods-permissions.md)]
 
 ## Permissions acting on other users
@@ -40,6 +36,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-delete-hardwareoathmethods-2-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
