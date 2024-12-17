@@ -32,6 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-post-hardwareoathmethods-2-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
+
 ## HTTP request
 Assign a hardware OATH authentication method to yourself.
 <!-- {
