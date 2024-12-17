@@ -1,10 +1,10 @@
 ---
 title: "List folders"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Get all the folders in the specified user's mailbox."
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Get all the folders in the specified mailbox, including any search folders.
 
 ## Permissions
 
@@ -46,6 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -57,7 +58,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List folders
+
+Get the mailboxfolder collection directly under the root folder of the user's mailbox.
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -66,11 +71,10 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/{mailboxId}/folders
+GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -82,21 +86,78 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
+Content-length: 232
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.mailboxFolder",
-      "displayName": "String",
-      "parentFolderId": "String",
-      "parentMailboxUrl": "String",
-      "childFolderCount": "Integer",
-      "totalItemCount": "Integer",
-      "type": "String",
-      "id": "9783b836-46c3-193e-45cd-c62fe0fcb9b8"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.mailboxFolder",
+            "id": "EDSVrdi3lRAAACgfQBAAA=",
+            "displayName": "Archive",
+            "parentFolderId": "NJWt2LeVEAAAIBCAAAAA==",
+            "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
+            "childFolderCount": 0,
+            "totalItemCount": 2,
+            "type": "IPF.Note"
+        },
+        {
+            "@odata.type": "#microsoft.graph.mailboxFolder",
+            "id": "NJWt2LeVEAAAIBDQAAAA==",
+            "displayName": "Calendar",
+            "parentFolderId": "NJWt2LeVEAAAIBCAAAAA==",
+            "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
+            "childFolderCount": 5,
+            "totalItemCount": 6,
+            "type": "IPF.Appointment"
+        }
+    ],
+    "@odata.nextLink": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders?%24skip=10"
 }
 ```
 
+### Example 2: List Folders With Query Parameters
+
+This example further refines the result of the API call by using $filter query parameter to only return folders of `type` _IPF.Appointment_. Also with $select we can specify that only the _displayName_ and _type_ properties be returned. Finally, $top query parameter specifies the page size of the result set to return the first five folders in the mailbox.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_mailboxfolder"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders?$filter=type eq 'IPF.Appointment'&$select=displayName,type&$top=5
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailboxFolder"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.mailboxFolder",
+            "id": "NJWt2LeVEAAAIBDQAAAA==",
+            "displayName": "Calendar",
+            "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
+            "type": "IPF.Appointment"
+        }
+    ]
+}
+```

@@ -1,10 +1,10 @@
 ---
 title: "Create mailboxFolder"
-description: "Create a new mailboxFolder object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Create a new mailboxFolder in a user's mailbox"
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new mailboxFolder object.
+Create a new folder or child folder in the mailbox.
 
 ## Permissions
 
@@ -35,6 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /admin/exchange/mailboxes/{mailboxId}/folders
+POST /admin/exchange/mailboxes/{mailboxId}/folders/inbox/childFolders
 ```
 
 ## Request headers
@@ -50,17 +51,10 @@ In the request body, supply a JSON representation of the [mailboxFolder](../reso
 
 You can specify the following properties when creating a **mailboxFolder**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|parentFolderId|String|**TODO: Add Description** Optional.|
-|parentMailboxUrl|String|**TODO: Add Description** Optional.|
-|childFolderCount|Int32|**TODO: Add Description** Optional.|
-|totalItemCount|Int32|**TODO: Add Description** Optional.|
-|type|String|**TODO: Add Description** Optional.|
-
-
+|displayName|String|The folder's display name. Required.|
+|type|String|Describes the folder class type. Required.|
 
 ## Response
 
@@ -77,20 +71,20 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/{mailboxId}/folders
-Content-Type: application/json
+POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders
+POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/inbox/childFolders
 
 {
-  "@odata.type": "#microsoft.graph.mailboxFolder",
-  "displayName": "String",
-  "parentFolderId": "String",
-  "parentMailboxUrl": "String",
-  "childFolderCount": "Integer",
-  "totalItemCount": "Integer",
-  "type": "String"
+  "displayName": "displayName-value",
+  "type": "IPF.Note",
+  "singleValueExtendedProperties": [
+        {
+            "id": "String 0x3001",
+            "value": "displayName-value"
+        }
+    ]
 }
 ```
-
 
 ### Response
 
@@ -104,17 +98,18 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 201 Created
-Content-Type: application/json
+Content-type: application/json
+Content-length: 179
 
 {
-  "@odata.type": "#microsoft.graph.mailboxFolder",
-  "displayName": "String",
-  "parentFolderId": "String",
-  "parentMailboxUrl": "String",
-  "childFolderCount": "Integer",
-  "totalItemCount": "Integer",
-  "type": "String",
-  "id": "9783b836-46c3-193e-45cd-c62fe0fcb9b8"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
+  "id": "AQMkAGUw==",
+  "displayName": "displayName-value",
+  "parentFolderId": "AQMkAGUc==",
+  "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93",
+  "childFolderCount": 0,
+  "totalItemCount": 0,
+  "type": "IPF.Note"
 }
 ```
 

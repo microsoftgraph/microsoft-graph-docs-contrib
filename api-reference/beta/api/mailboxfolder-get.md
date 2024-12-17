@@ -1,10 +1,10 @@
 ---
 title: "Get mailboxFolder"
 description: "Read the properties and relationships of a mailboxFolder object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -47,6 +47,7 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -67,9 +68,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}
+GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/NJWt2LeVEAAAIBDAAAAA==
 ```
-
 
 ### Response
 
@@ -83,19 +83,18 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
+Content-length: 232
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders$entity",
     "@odata.type": "#microsoft.graph.mailboxFolder",
-    "displayName": "String",
-    "parentFolderId": "String",
-    "parentMailboxUrl": "String",
-    "childFolderCount": "Integer",
-    "totalItemCount": "Integer",
-    "type": "String",
-    "id": "9783b836-46c3-193e-45cd-c62fe0fcb9b8"
-  }
+    "id": "NJWt2LeVEAAAIBDAAAAA==",
+    "displayName": "Inbox",
+    "parentFolderId": "NJWt2LeVEAAAIBCAAAAA==",
+    "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
+    "childFolderCount": 3,
+    "totalItemCount": 58,
+    "type": "IPF.Note"
 }
 ```
-

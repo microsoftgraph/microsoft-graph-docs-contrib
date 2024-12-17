@@ -1,10 +1,10 @@
 ---
 title: "List childFolders"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Get the folder collection under the specified folder."
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Get the folder collection under the specified folder in the mailbox.
 
 ## Permissions
 
@@ -46,6 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -57,6 +58,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+The following example shows how to get the mailbox folder collection under a specified folder.
+
 ### Request
 
 The following example shows a request.
@@ -66,9 +69,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders
+GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/NJWt2LeVEAAAIBDAAAAA==/childFolders
 ```
-
 
 ### Response
 
@@ -82,21 +84,32 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
+Content-length: 232
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.mailboxFolder",
-      "displayName": "String",
-      "parentFolderId": "String",
-      "parentMailboxUrl": "String",
-      "childFolderCount": "Integer",
-      "totalItemCount": "Integer",
-      "type": "String",
-      "id": "9783b836-46c3-193e-45cd-c62fe0fcb9b8"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders('NJWt2LeVEAAAIBDAAAAA==')/childFolders",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.mailboxFolder",
+            "id": "EDSVrdi3lRAAEvNS16AAA=",
+            "displayName": "Folder_1",
+            "parentFolderId": "NJWt2LeVEAAAIBDAAAAA==",
+            "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
+            "childFolderCount": 0,
+            "totalItemCount": 20,
+            "type": "IPF.Note"
+        },
+        {
+            "@odata.type": "#microsoft.graph.mailboxFolder",
+            "id": "EDSVrdi3lRAAEED0yTAAA=",
+            "displayName": "Folder_2",
+            "parentFolderId": "NJWt2LeVEAAAIBDAAAAA==",
+            "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
+            "childFolderCount": 0,
+            "totalItemCount": 1,
+            "type": "IPF.Note"
+        }
+    ]
 }
 ```
-

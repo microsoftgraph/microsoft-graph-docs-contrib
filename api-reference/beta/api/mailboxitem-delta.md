@@ -43,10 +43,10 @@ GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items/delta
 
 Tracking changes in items incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
-| Query parameter| Type| Description|
-|:----------------|:-------|:------------|
-| $deltatoken|string|A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same item collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-|$skiptoken|string|A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same item collection.|
+| Query parameter|Description|
+|:----------------|:-------|
+| $deltatoken|A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same item collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+|$skiptoken|A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same item collection.|
 
 ### OData query parameters
 
@@ -75,12 +75,14 @@ If successful, this function returns a `200 OK` response code and a [mailboxItem
 
 ## Examples
 
-### Request
-
 The following example shows how to make a single **delta** function call, and limit the maximum number of items in the response body to 2.
 
-To track changes in the items in a folder, you would make one or more **delta** function calls to get the set of incremental changes since the last delta query.
+To track changes in the items in a folder, you would make one or more **delta** function calls to get the set of incremental changes since the last delta query. 
 For an example that shows a round of delta query calls, see [Get incremental changes to items in a folder](/graph/delta-query-messages).
+
+### Request
+
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "mailboxitemthis.delta"
@@ -93,7 +95,9 @@ Prefer: odata.maxpagesize=2
 
 ### Response
 
-The following example shows the response.
+If the request is successful, the response would include a state token, which is either a _skipToken_ (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). Respectively, they indicate whether you should continue with the round or you have completed getting all the changes for that round.
+
+The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -124,3 +128,8 @@ Content-length: 337
     ]
 }
 ```
+
+## See also
+
+- [Use delta query to track changes in Microsoft Graph data](https://docs.microsoft.com/en-us/graph/delta-query-overview)
+- [Get incremental changes to folders in a mailbox](./mailboxfolder-delta.md)

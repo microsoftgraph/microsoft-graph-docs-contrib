@@ -1,10 +1,10 @@
 ---
 title: "Update mailboxFolder"
 description: "Update the properties of a mailboxFolder object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a mailboxFolder object.
+Update folder properties such as displayName within the mailbox.
+
+>**Note:** The folder type cannot be updated. Instead the folder needs to be deleted and a new folder can be created.
 
 ## Permissions
 
@@ -49,24 +51,17 @@ PATCH /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolde
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|parentFolderId|String|**TODO: Add Description** Optional.|
-|parentMailboxUrl|String|**TODO: Add Description** Optional.|
-|childFolderCount|Int32|**TODO: Add Description** Optional.|
-|totalItemCount|Int32|**TODO: Add Description** Optional.|
-|type|String|**TODO: Add Description** Optional.|
-
-
+|displayName|String|The folder's display name.|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [mailboxFolder](../resources/mailboxfolder.md) object in the response body.
 
 ## Examples
+
+The following example shows how to update certain folder properties of a mailbox folder.
 
 ### Request
 
@@ -77,20 +72,19 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}
-Content-Type: application/json
+PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/{id}
+PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/inbox/childFolders/{id}
 
 {
-  "@odata.type": "#microsoft.graph.mailboxFolder",
-  "displayName": "String",
-  "parentFolderId": "String",
-  "parentMailboxUrl": "String",
-  "childFolderCount": "Integer",
-  "totalItemCount": "Integer",
-  "type": "String"
+  "displayName": "new-displayName-value",
+  "singleValueExtendedProperties": [
+        {
+            "id": "String 0x3001",
+            "value": "new-displayName-value"
+        }
+    ]
 }
 ```
-
 
 ### Response
 
@@ -103,17 +97,17 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
+Content-length: 179
 
 {
-  "@odata.type": "#microsoft.graph.mailboxFolder",
-  "displayName": "String",
-  "parentFolderId": "String",
-  "parentMailboxUrl": "String",
-  "childFolderCount": "Integer",
-  "totalItemCount": "Integer",
-  "type": "String",
-  "id": "9783b836-46c3-193e-45cd-c62fe0fcb9b8"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
+  "id": "AQMkAGUw==",
+  "displayName": "new-displayName-value",
+  "parentFolderId": "AQMkAGUc==",
+  "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93",
+  "childFolderCount": 0,
+  "totalItemCount": 0,
+  "type": "IPF.Note"
 }
 ```
-

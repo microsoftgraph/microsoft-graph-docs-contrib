@@ -1,10 +1,10 @@
 ---
 title: "Delete mailboxFolder"
 description: "Delete a mailboxFolder object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a mailboxFolder object.
+Delete a folder or a child folder within the mailbox.
 
 ## Permissions
 
@@ -43,6 +43,7 @@ DELETE /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFold
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -54,6 +55,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+The following example shows how to delete a mailbox folder or child folder.
+
 ### Request
 
 The following example shows a request.
@@ -63,9 +66,9 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}
+DELETE https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/{id}
+DELETE https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/inbox/childFolders/{id}
 ```
-
 
 ### Response
 
@@ -79,4 +82,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
