@@ -1,10 +1,10 @@
 ---
 title: "Get mailboxItem"
 description: "Read the properties and relationships of a mailboxItem object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -46,6 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -83,20 +84,18 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+Content-length: 232
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders('Inbox')/items$entity",
     "@odata.type": "#microsoft.graph.mailboxItem",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "changeKey": "String",
-    "categories": [
-      "String"
-    ],
-    "id": "09ba4dd1-720c-6c51-8e93-b489eea7b3cf",
-    "type": "String",
-    "size": "Integer"
-  }
+    "@odata.etag": "W/\"CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAE8zPIo\"",
+    "id": "EDSVrdi3lRAAE9J-20AAA=",
+    "createdDateTime": "2021-09-15T12:16:38Z",
+    "lastModifiedDateTime": "2021-09-15T12:16:41Z",
+    "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAE8zPIo",
+    "categories": [],
+    "type": "IPM.Note",
+    "size": 71133
 }
 ```
-

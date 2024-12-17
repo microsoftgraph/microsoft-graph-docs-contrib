@@ -1,20 +1,20 @@
 ---
-title: "List exchangeSettings objects"
-description: "Get a list of the exchangeSettings objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "List mailboxes"
+description: "Get a list of mailboxes that belong to a user."
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# List exchangeSettings objects
+# List mailboxes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the exchangeSettings objects and their properties.
+This API returns a list of mailboxes that belong to a given user by specifying the user-id. Currently the mailbox types supported are user's Primary & In-Place Archive. To learn how to get a list of users in a tenant, see [list users](https://docs.microsoft.com/en-us/graph/api/user-list?view=graph-rest-1.0&tabs=http).
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for Microsoft.OutlookServices.exchangeSettings not found
+GET https://graph.microsoft.com/beta/users/megan@contoso.com/settings/exchange
 ```
 
 ## Optional query parameters
@@ -46,6 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -53,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [exchangeSettings](../resources/exchangesettings.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an [exchangeSettings](../resources/exchangesettings.md) object in the response body.
 
 ## Examples
 
@@ -66,9 +67,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for Microsoft.OutlookServices.exchangeSettings not found
+GET https://graph.microsoft.com/beta/users/megan@contoso.com/settings/exchange
 ```
-
 
 ### Response
 
@@ -82,17 +82,12 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
+Content-length: 232
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.exchangeSettings",
-      "primaryMailboxId": "String",
-      "inPlaceArchiveMailboxId": "String",
-      "id": "9bdc8e3d-3be3-3466-e8f7-b851dde3d25e"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('megan%40contoso.com')/settings/exchange/$entity",
+    "primaryMailboxId": "MBX:e0643f21@a7809c93",
+    "inPlaceArchiveMailboxId": "MBX:4eba5149@a7809c93"
 }
 ```
-

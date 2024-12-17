@@ -1,10 +1,10 @@
 ---
 title: "mailbox: exportItems"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Export mailbox items in full fidelity"
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+This function allows user to export an Exchange mailbox [items](../resources/mailboxitem.md) in full fidelity [FTS format](https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450)
+for the purpose of backup. This item format can be restored back to same or different mailbox.
+
+Upto 20 items can be exported in a single export request.
 
 ## Permissions
 
@@ -52,9 +55,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ItemIds|String collection|**TODO: Add Description**|
-
-
+|ItemIds|String collection|A collection of identifiers of [items](../resources/mailboxitem.md) to export. All identifiers in the collection MUST be for items in the same mailbox. Maximum size of this collection is 20 strings.|
 
 ## Response
 
@@ -64,23 +65,23 @@ If successful, this action returns a `200 OK` response code and a [exportItemRes
 
 ### Request
 
-The following example shows a request.
+The following example exports 2 items present in the user's mailbox. The `itemIds` of the items to be exported are specified in the request body.
 <!-- {
   "blockType": "request",
   "name": "mailboxthis.exportitems"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/{mailboxId}/exportItems
-Content-Type: application/json
+POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/exportItems
+Content-type: application/json
 
 {
-  "ItemIds": [
-    "String"
-  ]
+    "itemIds": [
+        "EDSVrdi3lRAADmpnf1AAA=",
+        "EDSVrdi3lRAAD45b7RAAA="
+    ]
 }
 ```
-
 
 ### Response
 
@@ -94,14 +95,22 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
+Content-length: 232
 
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.exportItemResponse"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.exportItemResponse)",
+    "value": [
+        {
+            "itemId": "EDSVrdi3lRAADmpnf1AAA=",
+            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAEu4C+G",
+            "data": "AQAAAAgAAAAAAAAAAQAAAAMAAAAYAAAAAQAAAAcDAgAAAAAAwAAAAAAAAEYAJACABAAAAAYAAAAUDwCSghc"
+        },
+        {
+            "itemId": "EDSVrdi3lRAAD45b7RAAA=",
+            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAD4pUax",
+            "data": "AAAAwHsAAAMAFwABAAAAsIQaABIAAABJAFAATQAuAE4AbwB0AGUAAAADACYAAAAAAAsAKQAAAAMANgAAAAAAsIQ3AFwAAABB"
+        }
+    ]
 }
 ```
-
