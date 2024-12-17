@@ -48,16 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-<<<<<<< HEAD
-If successful, this method returns a `200 OK` response code and a reservePercentage and cronScheduleExpression in the response body.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|reservePercentage|Int32|The percentage of Cloud PCs to keep available. Administrators can set this property to a value from 0 to 99. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users. `Frontline shared` only. |
-|cronScheduleExpression|String|An expression that specifies the cron schedule. (For example, "0 0 0 20 * *" means schedules a job to run at midnight on the 20th of every month) Administrators can set a cron expression to define the scheduling rules for automatic regular application. When auto provision is disabled, `cronScheduleExpression` is set to null, stopping the automatic task scheduling. Read-only.|
-=======
 If successful, this method returns a `200 OK` response code and [cloudpcpolicyscheduledapplyactiondetail](../resources/cloudpcpolicyscheduledapplyactiondetail.md) in the response body.
->>>>>>> 77a5677baf1b5da52bd9c86577c02253166f5e09
 
 ## Examples
 
