@@ -1,6 +1,6 @@
 ---
 title: "meetingAttendanceReport resource type"
-description: "Represents information associated with a meeting attendance report."
+description: "Contains information associated with a meeting attendance report."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
