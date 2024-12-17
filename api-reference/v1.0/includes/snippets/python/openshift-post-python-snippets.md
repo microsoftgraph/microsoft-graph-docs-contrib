@@ -25,9 +25,9 @@ request_body = OpenShift(
 		activities = [
 		],
 	),
+	is_staged_for_deletion = False,
 	additional_data = {
 			"draft_time_off" : None,
-			"is_staged_for_deletion" : False,
 	}
 )
 

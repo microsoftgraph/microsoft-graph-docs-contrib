@@ -32,10 +32,8 @@ url := "https://ABCWorkforceIntegration.com/Contoso/"
 requestBody.SetUrl(&url) 
 supportedEntities := graphmodels.SHIFT,SWAPREQUEST_WORKFORCEINTEGRATIONSUPPORTEDENTITIES 
 requestBody.SetSupportedEntities(&supportedEntities) 
-additionalData := map[string]interface{}{
-	"eligibilityFilteringEnabledEntities" : "SwapRequest", 
-}
-requestBody.SetAdditionalData(additionalData)
+eligibilityFilteringEnabledEntities := graphmodels.SWAPREQUEST_ELIGIBILITYFILTERINGENABLEDENTITIES 
+requestBody.SetEligibilityFilteringEnabledEntities(&eligibilityFilteringEnabledEntities) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 workforceIntegrations, err := graphClient.Teamwork().WorkforceIntegrations().ByWorkforceIntegrationId("workforceIntegration-id").Patch(context.Background(), requestBody, nil)

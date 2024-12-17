@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and an [announcement
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_announcement"
@@ -66,6 +67,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.graph.announcement/ddde9e3b-7ee4-4066-a62e-fb1fc5fb87a1
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-announcement-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
