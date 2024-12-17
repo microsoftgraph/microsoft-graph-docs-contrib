@@ -37,7 +37,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|                                                                      
-|deletedDateTime                      |DateTimeOffset     |Date and time when this object was deleted. Always `null` when the object hasn't been deleted. |
+|deletedDateTime                      |DateTimeOffset     |Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](../resources/directoryobject.md). |
 | deviceAuthority                    | String            | A generic term that refers to the device manufacturer, reseller, or supplier responsible for provisioning and managing devices on a customer's Entra ID tenant. For example, Acme (the manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (the device authority). |
 | id                                 | String            | The unique identifier for the **deviceTemplate** object. Inherited from [directoryObject](../resources/directoryobject.md).   |
 | manufacturer                       | String            | Manufacturer name. |
