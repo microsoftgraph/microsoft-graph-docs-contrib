@@ -5,6 +5,7 @@ author: "suawat"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 10/25/2024
 ---
 
 # publicKeyInfrastructureRoot resource type

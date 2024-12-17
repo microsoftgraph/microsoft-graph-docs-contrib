@@ -5,6 +5,7 @@ author: "tracyshi"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/07/2024
 ---
 
 # riskUserActivity resource type

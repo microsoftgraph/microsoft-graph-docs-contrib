@@ -5,6 +5,7 @@ description: Indicates that a drive item has been shared with others.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: onedrive
+ms.date: 06/13/2024
 ---
 # shared resource type
 
