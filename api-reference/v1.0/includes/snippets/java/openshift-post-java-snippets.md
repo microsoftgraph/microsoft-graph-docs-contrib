@@ -22,9 +22,9 @@ sharedOpenShift.setOpenSlotCount(1);
 LinkedList<ShiftActivity> activities = new LinkedList<ShiftActivity>();
 sharedOpenShift.setActivities(activities);
 openShift.setSharedOpenShift(sharedOpenShift);
+openShift.setIsStagedForDeletion(false);
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
 additionalData.put("draftTimeOff", null);
-additionalData.put("isStagedForDeletion", false);
 openShift.setAdditionalData(additionalData);
 OpenShift result = graphClient.teams().byTeamId("{team-id}").schedule().openShifts().post(openShift, requestConfiguration -> {
 	requestConfiguration.headers.add("Authorization", "Bearer {token}");
