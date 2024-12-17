@@ -3,7 +3,81 @@
     {
       "ChangeList": [
         {
-          "Id": "cc96a0af-ec29-4b9d-9d42-8d3dd6532aff",
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "startRecordingOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [startRecordingOperation](https://learn.microsoft.com/en-us/graph/api/resources/startrecordingoperation?view=graph-rest-beta) resource.",
+          "Target": "startRecordingOperation"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "startTranscriptionOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [startTranscriptionOperation](https://learn.microsoft.com/en-us/graph/api/resources/startTranscriptionOperation?view=graph-rest-beta) resource.",
+          "Target": "startTranscriptionOperation"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stopRecordingOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopRecordingOperation](https://learn.microsoft.com/en-us/graph/api/resources/stopRecordingOperation?view=graph-rest-beta) resource.",
+          "Target": "stopRecordingOperation"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stopTranscriptionOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopTranscriptionOperation](https://learn.microsoft.com/en-us/graph/api/resources/stopTranscriptionOperation?view=graph-rest-beta) resource.",
+          "Target": "stopTranscriptionOperation"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Method",
+          "ChangedApiName": "startRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the [startRecording](https://learn.microsoft.com/en-us/graph/api/call-startRecording?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Method",
+          "ChangedApiName": "startTranscription",
+          "ChangeType": "Addition",
+          "Description": "Added the [startTranscription](https://learn.microsoft.com/en-us/graph/api/call-startTranscription?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Method",
+          "ChangedApiName": "stopRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopRecording](https://learn.microsoft.com/en-us/graph/api/call-stopRecording?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Method",
+          "ChangedApiName": "stopTranscription",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopTranscription](https://learn.microsoft.com/en-us/graph/api/call-stopTranscription?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-13T11:31:10.1457269Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+      {
+        "ChangeList": [
+          {
+      "Id": "cc96a0af-ec29-4b9d-9d42-8d3dd6532aff",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventExternalInformation",
           "ChangeType": "Addition",

@@ -44,11 +44,11 @@ activities := []graphmodels.ShiftActivityable {
 }
 sharedOpenShift.SetActivities(activities)
 requestBody.SetSharedOpenShift(sharedOpenShift)
+isStagedForDeletion := false
+requestBody.SetIsStagedForDeletion(&isStagedForDeletion) 
 additionalData := map[string]interface{}{
 	draftTimeOff := null
 requestBody.SetDraftTimeOff(&draftTimeOff) 
-	isStagedForDeletion := false
-requestBody.SetIsStagedForDeletion(&isStagedForDeletion) 
 }
 requestBody.SetAdditionalData(additionalData)
 
