@@ -23,9 +23,7 @@ request_body = Shift(
 		],
 	),
 	shared_shift = None,
-	additional_data = {
-			"is_staged_for_deletion" : False,
-	}
+	is_staged_for_deletion = False,
 )
 
 result = await graph_client.teams.by_team_id('team-id').schedule.shifts.post(request_body)

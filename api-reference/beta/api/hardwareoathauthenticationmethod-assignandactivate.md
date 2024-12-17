@@ -32,6 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/hardwareoathauthenticationmethod-assignandactivate-2-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
+
 ## HTTP request
 
 Assign and activate a hardware OATH authentication method for yourself.
@@ -130,7 +132,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-get-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -99,7 +101,6 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
