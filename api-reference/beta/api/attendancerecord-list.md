@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "attendancerecord_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/attendancerecord-list-permissions.md)]
 
-To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This access policy authorizes the app to fetch online meetings and/or online meeting artifacts on behalf of the user by specifying the user ID in the request path. For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## HTTP request
 
