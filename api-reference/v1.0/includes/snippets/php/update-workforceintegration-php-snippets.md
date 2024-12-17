@@ -10,6 +10,7 @@ use Microsoft\Graph\Generated\Models\WorkforceIntegration;
 use Microsoft\Graph\Generated\Models\WorkforceIntegrationEncryption;
 use Microsoft\Graph\Generated\Models\WorkforceIntegrationEncryptionProtocol;
 use Microsoft\Graph\Generated\Models\WorkforceIntegrationSupportedEntities;
+use Microsoft\Graph\Generated\Models\EligibilityFilteringEnabledEntities;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -24,10 +25,7 @@ $encryption->setSecret('My Secret');
 $requestBody->setEncryption($encryption);
 $requestBody->setUrl('https://ABCWorkforceIntegration.com/Contoso/');
 $requestBody->setSupportedEntities(new WorkforceIntegrationSupportedEntities('shift,SwapRequest'));
-$additionalData = [
-	'eligibilityFilteringEnabledEntities' => 'SwapRequest',
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setEligibilityFilteringEnabledEntities(new EligibilityFilteringEnabledEntities('swapRequest'));
 
 $result = $graphServiceClient->teamwork()->workforceIntegrations()->byWorkforceIntegrationId('workforceIntegration-id')->patch($requestBody)->wait();
 

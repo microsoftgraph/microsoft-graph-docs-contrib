@@ -225,6 +225,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "@odata.type": "#microsoft.graph.user",
     "id": "78bf875b-9343-4edc-9130-0d3958113563",
     "businessPhones": [],
     "displayName": "SampleUser",

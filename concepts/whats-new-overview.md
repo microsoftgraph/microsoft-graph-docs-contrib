@@ -65,6 +65,10 @@ Enabled the **description**, **displayName**, and **severity** properties as sup
 
 Create and manage a [news link page](/graph/api/resources/newslinkpage?view=graph-rest-beta&preserve-view=true) in SharePoint.
 
+### Teamwork and communications | Messaging
+
+Use the **firstChannelName** property on [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
+
 ## November 2024: New and generally available
 
 ### Files
