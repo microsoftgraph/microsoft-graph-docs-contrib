@@ -18,11 +18,11 @@ import (
 
 requestFilter := "category eq 'leaver'"
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsDeletedItemsWorkflowsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.LifecycleWorkflowsDeletedItemsWorkflowsRequestBuilderGetQueryParameters{
 	Select: [] string {"id","category","displayName","description","version"},
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsDeletedItemsWorkflowsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.LifecycleWorkflowsDeletedItemsWorkflowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemMessageItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.MessagesItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"mentions"},
 }
-configuration := &graphusers.ItemMessageItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.MessagesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

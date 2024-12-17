@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphadmin.AdminServiceAnnouncementHealthOverviewsRequestBuilderGetQueryParameters{
+requestParameters := &graphadmin.ServiceAnnouncementHealthOverviewsRequestBuilderGetQueryParameters{
 	Expand: [] string {"issues"},
 }
-configuration := &graphadmin.AdminServiceAnnouncementHealthOverviewsRequestBuilderGetRequestConfiguration{
+configuration := &graphadmin.ServiceAnnouncementHealthOverviewsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
