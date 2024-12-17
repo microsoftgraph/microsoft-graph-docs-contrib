@@ -26,9 +26,9 @@ $sharedOpenShift->setNotes('InventoryManagement');
 $sharedOpenShift->setOpenSlotCount(1);
 $sharedOpenShift->setActivities([	]);
 $requestBody->setSharedOpenShift($sharedOpenShift);
+$requestBody->setIsStagedForDeletion(false);
 $additionalData = [
 	'draftTimeOff' => null,
-	'isStagedForDeletion' => false,
 ];
 $requestBody->setAdditionalData($additionalData);
 $requestConfiguration = new OpenShiftsRequestBuilderPostRequestConfiguration();
