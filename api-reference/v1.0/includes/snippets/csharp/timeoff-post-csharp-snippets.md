@@ -20,12 +20,7 @@ var requestBody = new TimeOff
 		Theme = ScheduleEntityTheme.Blue,
 	},
 	DraftTimeOff = null,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isStagedForDeletion" , false
-		},
-	},
+	IsStagedForDeletion = false,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

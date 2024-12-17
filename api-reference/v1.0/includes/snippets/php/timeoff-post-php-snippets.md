@@ -22,10 +22,7 @@ $sharedTimeOff->setEndDateTime(new \DateTime('2024-10-10T20:00:00Z'));
 $sharedTimeOff->setTheme(new ScheduleEntityTheme('blue'));
 $requestBody->setSharedTimeOff($sharedTimeOff);
 $requestBody->setDraftTimeOff(null);
-$additionalData = [
-	'isStagedForDeletion' => false,
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setIsStagedForDeletion(false);
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timesOff()->post($requestBody)->wait();
 

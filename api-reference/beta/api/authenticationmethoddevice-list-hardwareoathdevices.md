@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationmethoddevice-list-hardwareoathdevices-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
+
 ## HTTP request
 
 <!-- {

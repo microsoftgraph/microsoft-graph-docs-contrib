@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.identity_provider_base import IdentityProviderBase
+from msgraph_beta.generated.models.oidc_client_secret_authentication import OidcClientSecretAuthentication
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = IdentityProviderBase(
 	odata_type = "#microsoft.graph.OidcIdentityProvider",
