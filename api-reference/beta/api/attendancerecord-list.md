@@ -44,15 +44,11 @@ To get attendance records of a webinar session's attendance report with delegate
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
-The following table shows the meanings of the parameters in the previous HTTP request examples.
-
-|Parameter|Description|
-|:--------|:----------|
-|`userId`|The object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).|
-|`meetingId`|The **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.|
-|`reportId`|The **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.|
-|`webinarId`|The **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.|
-|`sessionId`|The **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.|
+>- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
+>- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
+>- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
+>- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
 
 ## Optional query parameters
 
