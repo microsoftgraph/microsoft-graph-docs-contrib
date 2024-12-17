@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and their properties.
 
 > [!TIP]
-> You can also retrieve attendance records from an attendance report by using the `expand` query option. For an example and more details, see [Get attendance report](meetingattendancereport-get.md).
+> A more convenient way to retrieve attendance records is to get them in line with an attendance report by using the `expand` query option. For an example and more details, see [Get attendance report](meetingattendancereport-get.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
