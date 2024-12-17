@@ -46,6 +46,8 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/schedulePolicyA
 
 In the request body, supply a JSON representation of the [cloudpcpolicyscheduledapplyactiondetail](../resources/cloudpcpolicyscheduledapplyactiondetail.md) object.
 
+The following table shows the properties that can be supplied when you schedule a policy apply task.
+
 |Parameter|Type|Description|
 |:---|:---|:---|
 |reservePercentage|Int32|For `Frontline shared` only. The percentage of Cloud PCs to keep available. Administrators can set this property to a value from 0 to 99. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users.|
@@ -69,15 +71,12 @@ The following example shows a request.
 
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/b0c2d35f-3385-46c8-a6f5-6c3dfad7708b/schedulePolicyApplyTask
-<<<<<<< HEAD
-=======
 
 {
   "reservePercentage": 50,
   "cronScheduleExpression": "0 0 0 20 * *"
 }
 
->>>>>>> 77a5677baf1b5da52bd9c86577c02253166f5e09
 ```
 
 ### Response
