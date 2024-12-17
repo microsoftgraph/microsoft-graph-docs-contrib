@@ -98,7 +98,6 @@ DELETE https://graph.microsoft.com/beta/directory/authenticationMethodDevices/ha
 
 ---
 
-
 ### Response
 
 The following example shows the response.

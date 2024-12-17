@@ -98,7 +98,6 @@ POST https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro
 [!INCLUDE [sample-code](../includes/snippets/python/activate-filestoragecontainer-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-
 ---
 
 ### Response

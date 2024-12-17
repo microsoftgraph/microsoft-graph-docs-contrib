@@ -19,9 +19,7 @@ sharedTimeOff.setEndDateTime(endDateTime);
 sharedTimeOff.setTheme(ScheduleEntityTheme.Blue);
 timeOff.setSharedTimeOff(sharedTimeOff);
 timeOff.setDraftTimeOff(null);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("isStagedForDeletion", false);
-timeOff.setAdditionalData(additionalData);
+timeOff.setIsStagedForDeletion(false);
 TimeOff result = graphClient.teams().byTeamId("{team-id}").schedule().timesOff().post(timeOff);
 
 
