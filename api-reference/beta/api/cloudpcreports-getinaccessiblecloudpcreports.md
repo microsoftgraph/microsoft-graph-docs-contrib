@@ -41,6 +41,7 @@ POST /deviceManagement/virtualEndpoint/reports/getInaccessibleCloudPcReports
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
+| Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. For more information, see [Best practices for working with Microsoft Graph](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Optional. |
 
 ## Request body
 
@@ -260,6 +261,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/getInaccessibleCloudPcReports
 Content-Type: application/json
+Prefer: include-unknown-enum-members
 
 {
   "reportName": "regionalInaccessibleCloudPcTrendReport",
@@ -301,15 +303,15 @@ Content-Type: application/octet-stream
     },
     {
       "Column": "CloudPcCount",
-      "PropertyType": "Int"
+      "PropertyType": "Int64"
     },
     {
       "Column": "WeeklyPeakInaccessibleCloudPcCount",
-      "PropertyType": "Int"
+      "PropertyType": "Int64"
     },
     {
       "Column": "Last24hPeakInaccessibleCloudPcCount",
-      "PropertyType": "Int"
+      "PropertyType": "Int64"
     },
     {
       "Column": "WeeklyInaccessibleTrend",
