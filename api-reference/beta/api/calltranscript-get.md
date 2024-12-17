@@ -39,9 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat|Not available.|
 
-> **Note:**
-> * The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-> * This permission applies only to scheduled private chat meetings, not to channel meetings.
+> **Note:** The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to scheduled private chat meetings, not to channel meetings.
 
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
