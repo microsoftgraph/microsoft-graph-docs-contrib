@@ -36,11 +36,8 @@ draftShift.SetActivities(activities)
 requestBody.SetDraftShift(draftShift)
 sharedShift := null
 requestBody.SetSharedShift(&sharedShift) 
-additionalData := map[string]interface{}{
-	isStagedForDeletion := false
+isStagedForDeletion := false
 requestBody.SetIsStagedForDeletion(&isStagedForDeletion) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 shifts, err := graphClient.Teams().ByTeamId("team-id").Schedule().Shifts().Post(context.Background(), requestBody, nil)
