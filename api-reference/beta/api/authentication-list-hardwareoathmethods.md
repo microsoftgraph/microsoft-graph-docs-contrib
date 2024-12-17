@@ -112,7 +112,6 @@ GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods
 
 ---
 
-
 ### Response
 
 The following example shows the response.

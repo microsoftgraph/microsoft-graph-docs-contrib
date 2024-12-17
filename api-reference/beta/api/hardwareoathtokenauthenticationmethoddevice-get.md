@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 
 ---
 
-
 ### Response
 
 The following example shows the response.

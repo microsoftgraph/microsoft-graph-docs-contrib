@@ -18,9 +18,7 @@ encryption.setSecret("My Secret");
 workforceIntegration.setEncryption(encryption);
 workforceIntegration.setUrl("https://ABCWorkforceIntegration.com/Contoso/");
 workforceIntegration.setSupportedEntities(EnumSet.of(WorkforceIntegrationSupportedEntities.Shift, WorkforceIntegrationSupportedEntities.SwapRequest));
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("eligibilityFilteringEnabledEntities", "SwapRequest");
-workforceIntegration.setAdditionalData(additionalData);
+workforceIntegration.setEligibilityFilteringEnabledEntities(EnumSet.of(EligibilityFilteringEnabledEntities.SwapRequest));
 WorkforceIntegration result = graphClient.teamwork().workforceIntegrations().byWorkforceIntegrationId("{workforceIntegration-id}").patch(workforceIntegration);
 
 

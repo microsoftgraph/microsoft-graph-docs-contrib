@@ -116,7 +116,6 @@ POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{har
 
 ---
 
-
 ### Response
 
 The following example shows the response.
