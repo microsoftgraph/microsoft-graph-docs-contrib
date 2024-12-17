@@ -2369,7 +2369,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "allMembers",
           "ChangeType": "Addition",
-          "Description": "Added the **allMembers** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the [allMembers](https://learn.microsoft.com/en-us/graph/api/channel-allmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
@@ -2377,7 +2377,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllMembers",
           "ChangeType": "Deletion",
-          "Description": "Removed the **getAllMembers** relationship from the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Removed the [getAllMembers](https://learn.microsoft.com/en-us/graph/api/channel-getallmembers?view=graph-rest-beta) method from the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         }
       ],
