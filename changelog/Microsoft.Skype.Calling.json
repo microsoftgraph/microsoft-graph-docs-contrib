@@ -97,7 +97,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventExternalInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [virtualEventExternalInformation](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventexternalinformation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [virtualeventexternalinformation](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventexternalinformation?view=graph-rest-beta) resource type.",
           "Target": "virtualEventExternalInformation"
         },
         {
@@ -105,7 +105,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "externalEventInformation",
           "ChangeType": "Addition",
-          "Description": "Added the **externalEventInformation** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualevent?view=graph-rest-beta) resource.",
+          "Description": "Added the **externaleventinformation** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualevent?view=graph-rest-beta) resource.",
           "Target": "virtualEvent"
         },
         {
