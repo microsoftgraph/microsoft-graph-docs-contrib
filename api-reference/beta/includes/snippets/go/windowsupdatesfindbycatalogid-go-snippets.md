@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphadmin.AdminWindowsUpdatesProductsfindByCatalogIdWithCatalogIDRequestBuilderGetQueryParameters{
+requestParameters := &graphadmin.WindowsUpdatesProductsfindByCatalogIdWithCatalogIDRequestBuilderGetQueryParameters{
 	Expand: [] string {"revisions($expand=catalogEntry,knowledgeBaseArticle)","knownIssues($expand=originatingKnowledgeBaseArticle,resolvingKnowledgeBaseArticle)"},
 }
-configuration := &graphadmin.AdminWindowsUpdatesProductsfindByCatalogIdWithCatalogIDRequestBuilderGetRequestConfiguration{
+configuration := &graphadmin.WindowsUpdatesProductsfindByCatalogIdWithCatalogIDRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
