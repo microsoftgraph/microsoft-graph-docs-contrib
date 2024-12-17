@@ -85,6 +85,64 @@
         "SubArea": "Cloud PC"
     },
     {
+      "ChangeList":[
+        {
+          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrievePolicyApplyActionResult",
+          "ChangeType": "Addition",
+          "Description": "Add the retrievePolicyApplyActionResult method.",
+          "Target": "Cloud PC"
+        },
+        {
+          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrievePolicyApplySchedule",
+          "ChangeType": "Addition",
+          "Description": "Add the retrievePolicyApplySchedule method.",
+          "Target": "Cloud PC"
+        },
+        {
+          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
+          "ApiChange": "Method",
+          "ChangedApiName": "schedulePolicyApplyTask",
+          "ChangeType": "Addition",
+          "Description": "Add the schedulePolicyApplyTask method.",
+          "Target": "Cloud PC"
+        },
+        {
+          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "cloudPcPolicyScheduledApplyActionDetail",
+          "ChangeType": "Addition",
+          "Description": "Add the cloudPcPolicyScheduledApplyActionDetail type.",
+          "Target": "Cloud PC"
+        },
+        {
+          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcPolicyApplyActionStatus",
+          "ChangeType": "Addition",
+          "Description": "Add the cloudPcPolicyApplyActionStatus enumeration.",
+          "Target": "Cloud PC"
+        },
+        {
+          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "cloudPcPolicyApplyActionResult",
+          "ChangeType": "Addition",
+          "Description": "Add the cloudPcPolicyApplyActionResult type.",
+          "Target": "Cloud PC"
+        }
+      ],
+      "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-03T01:25:21.3434973Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
       "ChangeList": [
         {
           "Id": "4e187813-86e4-4387-a939-dee88cb39661",
