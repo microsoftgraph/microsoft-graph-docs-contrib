@@ -23,15 +23,14 @@ by providing a [delta](../api/mailboxfolder-delta.md) function. It also supports
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List mailbox folders](../api/mailbox-list-folders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a list of the mailboxFolder objects and their properties.|
-|[Create mailbox folder](../api/mailbox-post-folders.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new mailboxFolder object.|
-|[Get mailbox folder](../api/mailboxfolder-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Read the properties and relationships of a mailboxFolder object.|
-|[Update mailbox folder](../api/mailboxfolder-update.md)|[mailboxFolder](../resources/mailboxfolder.md)|Update the properties of a mailboxFolder object.|
-|[Delete mailbox folder](../api/mailbox-delete-folders.md)|None|Delete a mailboxFolder object.|
-|[Get mailbox folder delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a set of mailbox folders that have been added, deleted, or removed from the user's mailbox|
-|[List child mailbox folders](../api/mailboxfolder-list-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get the mailboxFolder collection under the specified folder.|
-|[Create child mailbox folder](../api/mailboxfolder-post-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new mailboxFolder object.|
-|[List items in a folder](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get all the items within a specified folder in the mailbox.|
+|[List mailbox folders](../api/mailbox-list-folders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get all the folders in the specified user's mailbox, including any search folders.|
+|[Create mailbox folder](../api/mailbox-post-folders.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a folder or a child folder within the mailbox.|
+|[Get mailbox folder](../api/mailboxfolder-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Read the properties and relationships of a mailbox folder object.|
+|[Update mailbox folder](../api/mailboxfolder-update.md)|[mailboxFolder](../resources/mailboxfolder.md)|Update folder properties such as displayName within the mailbox|
+|[Delete mailbox folder](../api/mailbox-delete-folders.md)|None|Delete a folder or a child folder within the mailbox.|
+|[Get mailbox folder delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a set of mailbox folders that have been added, deleted, or removed from the user's mailbox.|
+|[List child mailbox folders](../api/mailboxfolder-list-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get the folder collection under the specified folder.|
+|[List items in a folder](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get the items within a specified folder in the mailbox.|
 |**Extended properties**| | |
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get mailbox folders that contain a single-value extended property by using `$expand` or `$filter`.|
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create one or more single-value extended properties in a new or existing mailbox folder.|
