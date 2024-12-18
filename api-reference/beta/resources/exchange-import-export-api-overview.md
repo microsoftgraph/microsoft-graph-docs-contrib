@@ -14,7 +14,7 @@ ms.date: 12/06/2024
 
 Microsoft Graph's Exchange Import-Export APIs lets your app import and export contents from Outlook mailboxes. Contents within a mailbox can be accessed as a set of [folders](./mailboxfolder.md) and [items](./mailboxitem.md) in a uniform format without having to understanding metadata/structure of each item type like messages, contacts, events, tasks etc separately. These items can be [exported](../api/mailbox-exportitems.md) in FastTransfer stream or FTS format in full-fidelity. Full-fidelity exports ensure that upon [importing](../api/mailbox-createimportsession.md) the item back, Exchange would be able to recreate the item without any loss of information.
 
-These APIs support accessing data in users' primary and [in-place archive](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-archiving-service-description/archive-features#archive-mailbox) mailboxes on Exchange online.
+These APIs support accessing data in users' primary and [in-place archive](https://learn.microsoft.com/en-us/Exchange/clients-and-mobile-in-exchange-online/archive-client-and-compliance-&-security-feature-details?tabs=Archive-features#archive-mailbox) mailboxes on Exchange online.
 
 ## How to use the Exchange Import-Export APIs
 
