@@ -24,13 +24,11 @@ var requestBody = new OpenShift
 		{
 		},
 	},
+	IsStagedForDeletion = false,
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
 			"draftTimeOff" , null
-		},
-		{
-			"isStagedForDeletion" , false
 		},
 	},
 };

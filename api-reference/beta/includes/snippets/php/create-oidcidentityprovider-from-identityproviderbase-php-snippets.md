@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\IdentityProviderBase;
+use Microsoft\Graph\Beta\Generated\Models\OidcClientSecretAuthentication;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

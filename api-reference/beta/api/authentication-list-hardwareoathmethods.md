@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "authentication_list_hardwareoathmethods_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-hardwareoathmethods-2-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
+
 ## HTTP request
 Get details of your own hardware OATH methods.
 <!-- {
@@ -109,7 +111,6 @@ GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

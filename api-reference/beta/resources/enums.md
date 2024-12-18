@@ -12,6 +12,20 @@ ms.date: 12/06/2024
 
 Namespace: microsoft.graph
 
+### changeAnnouncementChangeType values
+
+|Member|
+|:---|
+|breakingChange|
+|deprecation|
+|endOfSupport|
+|featureChange|
+|other|
+|retirement|
+|securityIncident|
+|uxChange|
+|unknownFutureValue|
+
 ### hardwareOathTokenHashFunction values
 
 |Member|
