@@ -1,20 +1,20 @@
 ---
-title: "List mailboxItem objects"
-description: "Get a list of the mailboxItem objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "List mailboxItems"
+description: "Get the items within a specified folder"
+author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# List mailboxItem objects
+# List mailboxItems
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the mailboxItem objects and their properties.
+Get the mailbox items within a specified folder in the mailbox.
 
 ## Permissions
 
@@ -46,6 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -57,7 +58,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List Items
+
+This example gets the items in the mailbox under the specified folder.
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -66,11 +71,10 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items
+GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/NJWt2LeVEAAAIBDAAAAA==/items
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -82,23 +86,82 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
+Content-length: 232
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.mailboxItem",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "changeKey": "String",
-      "categories": [
-        "String"
-      ],
-      "id": "09ba4dd1-720c-6c51-8e93-b489eea7b3cf",
-      "type": "String",
-      "size": "Integer"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders('NJWt2LeVEAAAIBDAAAAA==')/items",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.mailboxItem",
+            "@odata.etag": "W/\"CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAE8zPIo\"",
+            "id": "EDSVrdi3lRAAE9J-20AAA=",
+            "createdDateTime": "2021-09-15T12:16:38Z",
+            "lastModifiedDateTime": "2021-09-15T12:16:41Z",
+            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAE8zPIo",
+            "categories": [],
+            "type": "IPM.Note",
+            "size": 71133
+        },
+        {
+            "@odata.type": "#microsoft.graph.mailboxItem",
+            "@odata.etag": "W/\"CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAE8zO5W\"",
+            "id": "EDSVrdi3lRAAE9J-2zAAA=",
+            "createdDateTime": "2021-09-15T11:06:36Z",
+            "lastModifiedDateTime": "2021-09-15T11:06:40Z",
+            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAE8zO5W",
+            "categories": [],
+            "type": "IPM.Note",
+            "size": 79968
+        }
+    ],
+    "@odata.nextLink": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders('NJWt2LeVEAAAIBDAAAAA==')/items?%24skip=10"
 }
 ```
 
+### Example 2: List Items With Query Parameter
+
+This example gets the top item in the mailbox under the specified folder. It uses $select to return a subset of the properties of each item in the response.
+Finally the example also uses $filter query paramter to refine the result and only return items with `createdDateTime` between 2021-08-21 and 2021-09-16.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_mailboxitem"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/Inbox/items?$filter=createdDateTime ge 2021-08-21 and createdDateTime lt 2021-09-16&$select=type,size&$top=1
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailboxItem"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders('Inbox')/items",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.mailboxItem",
+            "@odata.etag": "W/\"CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAFOoqvk\"",
+            "id": "EDSVrdi3lRAAE9J-2xAAA=",
+            "type": "IPM.Note",
+            "size": 91339
+        }
+    ],
+    "@odata.nextLink": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders('Inbox')/items?%24filter=createdDateTime+ge+2021-08-21+and+createdDateTime+lt+2021-09-16&%24select=type%2csize&%24top=1&%24skip=1"
+}
+```
