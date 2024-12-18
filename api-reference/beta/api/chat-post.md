@@ -60,6 +60,9 @@ The following table lists the properties that are required to create a chat obje
 ### Response for creating a one-on-one chat without installed apps
 If successful, this method returns a `201 Created` response code and the newly created [chat](../resources/chat.md) resource in the response body.
 
+> [!NOTE]
+> If you need to specify permissions during app installation, you must get your tenant or app ID added to our preapproved permission list.
+
 ### Response for creating a one-on-one chat with installed apps
 If successful, this method returns a `202 Accepted` response code and Location header that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md). The link can be used to get the operation status and details. For details, see [Get operation on chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
