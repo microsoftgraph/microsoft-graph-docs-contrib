@@ -50,6 +50,7 @@ In the request body, supply the values for the [device](../resources/device.md) 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Only callers with at least the *Cloud Device Administrator* role can update this property. |
+|alternativeNames|String collection|List of alternative names for the device (ex: resourceIds).|
 |operatingSystem|String|The type of operating system on the device.|
 |operatingSystemVersion|String|The version of the operating system on the device|
 |displayName|String|The display name for the device.|
