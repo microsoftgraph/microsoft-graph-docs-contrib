@@ -19,8 +19,6 @@ Represents a list of certificate authorities (CAs) that are permitted to issue c
 
 This object is typically created by a device authority on their own Entra ID. In some cases, the user might choose to create this object in their Entra ID.
 
-For customers that use first party Azure IoT registries, this object may also be stored in the Microsoft Services tenant.
-
 Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificateauthoritybase.md).
 
 ## Methods
