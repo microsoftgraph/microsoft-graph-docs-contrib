@@ -33,10 +33,10 @@ by providing a [delta](../api/mailboxfolder-delta.md) function. It also supports
 |[Create child mailbox folder](../api/mailboxfolder-post-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new mailboxFolder object.|
 |[List items in a folder](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get all the items within a specified folder in the mailbox.|
 |**Extended properties**| | |
-|[Get single-value property](../api/mailboxfolder-list-singlevalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get mailboxFolders that contain a single-value extended property by using `$expand` or `$filter`.|
-|[Create single-value property](../api/mailboxfolder-post-singlevalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new singleValueLegacyExtendedProperty object.|
-|[Get multi-value property](../api/mailboxfolder-list-multivalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get a mailboxFolder that contains a multi-value extended property by using `$expand`.|
-|[Create multi-value property](../api/mailboxfolder-post-multivalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new multiValueLegacyExtendedProperty object.|
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get mailbox folders that contain a single-value extended property by using `$expand` or `$filter`.|
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create one or more single-value extended properties in a new or existing mailbox folder.|
+|[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get a mailbox folder that contains a multi-value extended property by using `$expand`.|
+|[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create one or more multi-value extended properties in a new or existing mailbox folder.|
 
 ## Properties
 |Property|Type|Description|

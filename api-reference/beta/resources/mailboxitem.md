@@ -28,8 +28,8 @@ This resource supports using delta query to track incremental additions, deletio
 |[Delete mailbox item](../api/mailboxfolder-delete-items.md)|None|Delete a mailboxItem object.|
 |[Get mailbox item delta](../api/mailboxitem-delta.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get a set of mailbox items that were added, deleted, or updated in a specified folder.|
 |**Extended properties**| | |
-|[List singleValueExtendedProperties](../api/mailboxitem-list-singlevalueextendedproperties.md)|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection|Get mailboxItems that contain a single-value extended property by using `$expand` or `$filter`.|
-|[List multiValueExtendedProperties](../api/mailboxitem-list-multivalueextendedproperties.md)|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection|Get a mailboxItem that contains a multi-value extended property by using `$expand`.|
+|[Get singleValueExtendedProperty](../api/singlevaluelegacyextendedproperty-get.md)|[mailboxItem](../resources/mailboxitem.md)|Get mailbox items that contain a single-value extended property by using `$expand` or `$filter`.|
+|[Get multiValueExtendedProperties](../api/multivaluelegacyextendedproperty-get.md)|[mailboxItem](../resources/mailboxitem.md)|Get a mailbox item that contains a multi-value extended property by using `$expand`.|
 
 ## Properties
 |Property|Type|Description|
