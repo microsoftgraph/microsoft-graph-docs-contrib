@@ -19,10 +19,10 @@ Represents a specific [timeCard](timecard.md) event.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|atApprovedLocation|Boolean|Indicate if this action happens at an approved location. This property will be deprecated. Use `isAtApprovedLocation` instead.|
-|dateTime|Boolean|The time the entry is recorded.|
-|isAtApprovedLocation|Boolean|Indicate if this action happens at an approved location. This property will replace `atApprovedLocation` in V1.|
+|dateTime|DateTimeOffset|The time the entry is recorded.|
+|isAtApprovedLocation|Boolean|Indicate whether this action happens at an approved location.|
 |notes|[itemBody](itembody.md)|Notes about the **timeCardEvent**.|
+|atApprovedLocation (deprecated)|Boolean|Indicate whether this action happens at an approved location. This property will be removed by November 20, 2027. Use `isAtApprovedLocation` instead. `atApprovedLocation` and `isAtApprovedLocation` will always have the same value, so setting one will automatically set the value for the other. If both are included in the request with different values, the value for `isAtApprovedLocation` will take precedence.|
 
 ## Relationships
 

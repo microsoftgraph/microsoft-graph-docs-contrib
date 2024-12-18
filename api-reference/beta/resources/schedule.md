@@ -28,10 +28,9 @@ Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift
 
 | Property                  | Type               | Description                                                                                                      |
 | ------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| activitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts should include the activities. This property will be deprecated. Use `isActivitiesIncludedWhenCopyingShiftsEnabled` instead |
 | enabled                   | Boolean            | Indicates whether the schedule is enabled for the team. Required.                                                |
 | id                        | String             | ID of the schedule.|                      
-| isActivitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts should include the activities. |
+| isActivitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts include activities from the original shift. |
 | isCrossLocationShiftRequestApprovalRequired | Boolean | Indicates whether approval is required by a manager of this schedule for cross location shift requests.   |
 | isCrossLocationShiftsEnabled | Boolean         | Indicates whether the cross-location marketplace feature is enabled for this schedule.                           |
 | offerShiftRequestsEnabled | Boolean            | Indicates whether offer shift requests are enabled for the schedule.                                             |
@@ -45,6 +44,7 @@ Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift
 | timeOffRequestsEnabled    | Boolean            | Indicates whether time off requests are enabled for the schedule.                                                |
 | timeZone                  | String             | Indicates the time zone of the schedule team using tz database format. Required.                                 |
 | workforceIntegrationIds   | String collection | The IDs for the workforce integrations associated with this schedule.                                             |
+| activitiesIncludedWhenCopyingShiftsEnabled  (deprecated) | Boolean | Indicates whether copied shifts should include the activities. This property will be removed by November 20, 2027. Use `isActivitiesIncludedWhenCopyingShiftsEnabled` instead. `activitiesIncludedWhenCopyingShiftsEnabled` and `isActivitiesIncludedWhenCopyingShiftsEnabled` will always have the same value, so setting one will automatically set the value for the other. If both are included in the request with different values, the value for `isActivitiesIncludedWhenCopyingShiftsEnabled` will take precedence.|
 
 ## Relationships
 

@@ -754,67 +754,19 @@
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "clockIn",
-          "ChangeType": "Addition",
-          "Description": "Added the [clockIn](https://learn.microsoft.com/en-us/graph/api/timeCard-clockIn?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
+          "ApiChange": "Property",
+          "ChangedApiName": "atApprovedLocation",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **atApprovedLocation** [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource. The **atApprovedLocation** property will stop returning data on November 27, 2027. Going forward, use the **isAtApprovedLocation** property.",
+          "Target": "timeCardEvent"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "clockIn",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **clockIn** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "clockOut",
-          "ChangeType": "Addition",
-          "Description": "Added the [clockOut](https://learn.microsoft.com/en-us/graph/api/timeCard-clockOut?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "clockOut",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **clockOut** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "endBreak",
-          "ChangeType": "Addition",
-          "Description": "Added the [endBreak](https://learn.microsoft.com/en-us/graph/api/timeCard-endBreak?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "endBreak",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **endBreak** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "startBreak",
-          "ChangeType": "Addition",
-          "Description": "Added the [startBreak](https://learn.microsoft.com/en-us/graph/api/timeCard-startBreak?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "startBreak",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **startBreak** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
+          "ApiChange": "Property",
+          "ChangedApiName": "activitiesIncludedWhenCopyingShiftsEnabled",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **activitiesIncludedWhenCopyingShiftsEnabled** property of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource. The **activitiesIncludedWhenCopyingShiftsEnabled** property will returning data on November 27, 2027. Going forward, use the **isActivitiesIncludedWhenCopyingShiftsEnabled** property.",
+          "Target": "schedule"
         }
       ],
       "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
