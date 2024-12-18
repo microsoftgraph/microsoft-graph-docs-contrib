@@ -48,16 +48,16 @@ POST /directory/templates/deviceTemplates/{deviceTemplateId}/createDeviceFromTem
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that are required when you call this action.
+The following table lists the parameters that you can use when you call this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-| accountEnabled       | Boolean                             | `True` if the account is enabled; otherwise, `false`. The default value is `true`. A disabled device can't authenticate with Entra ID. |
-| alternativeNames     | String collection                   | A collection of ARM resource IDs associated with the device, if any. |
-| externalDeviceId     | String                              | UUID of the device by IoT registry. Must be unique within a tenant. |
-| externalSourceName   | String                              | Identifies the source name of the device. |
-| keyCredential        | [keyCredential](../resources/keycredential.md) | The key credential when you use self-signed certificates. |
-| operatingSystemVersion | String                              | The operating system version of the device specified. |
+| accountEnabled       | Boolean                             | `True` if the account is enabled; otherwise, `false`. The default value is `true`. A disabled device can't authenticate with Entra ID. Optional.|
+| alternativeNames     | String collection                   | A collection of ARM resource IDs associated with the device, if any. Optional. |
+| externalDeviceId     | String                              | UUID of the device by IoT registry. Must be unique within a tenant. Required. |
+| externalSourceName   | String                              | Identifies the source name of the device. Optional. |
+| keyCredential        | [keyCredential](../resources/keycredential.md) | The key credential when you use self-signed certificates. Optional. |
+| operatingSystemVersion | String                              | The operating system version of the device specified. Optional. |
 
 ## Response
 
