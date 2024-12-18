@@ -47,7 +47,7 @@
           "ApiChange": "ComplexType",
           "ChangedApiName": "cloudPcPolicyApplyActionResult",
           "ChangeType": "Addition",
-          "Description": "Add the [cloudPcPolicyApplyActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcoolicyapplyactionresult?view=graph-rest-beta) resource.",
+          "Description": "Add the [cloudPcPolicyApplyActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicyapplyactionresult?view=graph-rest-beta) resource.",
           "Target": "cloudPcPolicyApplyActionResult"
         }
       ],
