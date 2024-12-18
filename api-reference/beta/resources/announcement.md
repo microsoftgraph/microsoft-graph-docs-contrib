@@ -29,6 +29,7 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |announcementDateTime|DateTimeOffset|Change announcement date. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()`, and `second()` built in functions) and `$orderby`.|
+|changeType|changeAnnouncementChangeType|Specifies the nature of the change. The possible values are: `breakingChange`, `deprecation`, `endOfSupport`, `featureChange`, `other`, `retirement`, `securityIncident`, `uxChange`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
 |changeItemService|String|Specifies the Microsoft Entra service name to which this item belongs. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
 |description|String|Description of the change announcement. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 |documentationUrls|String collection|Link to the change documentation. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
@@ -59,6 +60,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.announcement",
   "id": "String (identifier)",
   "changeItemService": "String",
+  "changeType": "String",
   "tags": [
     "String"
   ],
