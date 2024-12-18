@@ -3223,6 +3223,19 @@
         "workbookSortField",
         "workbookWorksheetProtectionOptions"
       ]
+    },
+    {
+      "name": "Exchange",
+      "overview": "../../resources/exchange-importexport-overview.md",
+      "keywords": [
+        "Exchange",
+        "Exchange Import-Export",
+        "Mailbox"
+      ],
+      "resources": [
+        "mailboxItem",
+        "mailboxFolder"
+      ]
     }
   ],
   "resourceOverviews": [
