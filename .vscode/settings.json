@@ -14,6 +14,12 @@
                 "cloud.exclusions.json"
             ],
             "url": "https://raw.githubusercontent.com/microsoftgraph/msgraph-cloud-support/main/schema/cloud.exclusions.schema.json"
-        }
+        },
+        {
+            "fileMatch": [
+              "toc.mapping.json"
+            ],
+            "url": "https://raw.githubusercontent.com/microsoftgraph/msgraph-toc-gen/main/schema/toc.mapping.schema.json"
+          }
     ]
 }
