@@ -119,7 +119,9 @@ Content-Type: application/json
       "id": "8370d119-d695-4dd9-bce2-00e893fadf7d",
       "changeItemState": "available",
       "changeItemService": "microsoftAuthenticatorApp",
-      "tags": null,
+      "tags": [
+        ""
+      ],
       "systemTags": [
         "entra_roadmap_highlight_new_feature"
       ],
