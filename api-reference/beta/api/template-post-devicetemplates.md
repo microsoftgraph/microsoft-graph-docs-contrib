@@ -57,8 +57,8 @@ You can specify the following properties when you create a **deviceTemplate**.
 |deviceAuthority | String | A generic term that refers to the device manufacturer, reseller, or supplier responsible for provisioning and managing devices on a customer's Entra ID. For example, Acme (the manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (the device authority). Required.|
 |manufacturer|String|Manufacturer name. Required.|
 |model|String|Model name. Required.|
-|mutualTlsOauthConfigurationId|String|Object ID of the CertificateBasedDeviceAuthConfiguration. This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
-|mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (EntraID Tenant ID for device authority). This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
+|mutualTlsOauthConfigurationId|String|Object ID of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
+|mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) (Tenant ID for device authority). This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
 |operatingSystem|String|Operating system type. Optional.|
 |owners@odata.bind|String collection| List of owners to add to the device template. Optional. |
 

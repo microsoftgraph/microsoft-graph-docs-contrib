@@ -42,8 +42,8 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 | id                                 | String            | The unique identifier for the **deviceTemplate** object. Inherited from [directoryObject](../resources/directoryobject.md).   |
 | manufacturer                       | String            | Manufacturer name. |
 | model                              | String            | Model name. |
-| mutualTlsOauthConfigurationId      | String            | Object ID of the CertificateBasedDeviceAuthConfiguration. This value isn't set if self-signed certificates are used. |
-| mutualTlsOauthConfigurationTenantId | String           | ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (EntraID Tenant ID for device authority). This value isn't set if self-signed certificates are used.              |
+| mutualTlsOauthConfigurationId      | String            | Object ID of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used. |
+| mutualTlsOauthConfigurationTenantId | String           | ID of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) (Tenant ID for device authority). This value isn't set if self-signed certificates are used.              |
 | operatingSystem                    | String            | Operating system type.    |
 
 ## Relationships
