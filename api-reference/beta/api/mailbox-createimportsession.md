@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This function allows user to import an Exchange mailbox [item](../resources/mailboxitem.md) using its FTS format. Import is a two step process. Items can be restored back to the same or a different mailbox.
+This function allows user to import an Exchange mailbox [item](../resources/mailboxitem.md) using the [FastTransfer stream](https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Import is a two step process. Items can be restored back to the same or a different mailbox.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ Create an import session to import an item in a folder in the mailbox.
 
 A successful operation returns HTTP 201 Created and a new [mailboxItemImportSession](../resources/mailboxitemimportsession.md) instance, which contains an opaque `importUrl` that you can use in subsequent POST operations to upload items into a folder.
 
-The **mailboxItemImportSession** object in the response also includes the `expirationDateTime` property, which indicates the expiration date/time for the auth token embedded in the `importUrl` property value. Post this the importUrl will be expired and deleted.
+The **mailboxItemImportSession** object in the response also includes the `expirationDateTime` property, which indicates the expiration date/time for the auth token embedded in the `importUrl` property value. After this time, the importUrl expires and is deleted.
 
 ## Request headers
 
@@ -68,14 +68,14 @@ Specify the request body as described below.
 
 ## Import URL request headers
 
-Because the initial opaque URL is pre-authenticated and contains the appropriate authorization token for subsequent queries for that import session, do not specify an Authorization request header for this operation.
+Because the initial opaque URL is preauthenticated and contains the appropriate authorization token for subsequent queries for that import session, don't specify an Authorization request header for this operation.
 
 ## Import URL request body
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |FolderId|String|The id of the folder into which you want to import the item. Required.|
-|Mode|String|Specify the import mode can be `create` or `update`. Required. <br><br> <ul><li>create: Creates a new item. Specifying ItemId or ChangeKey in request body would result in an error.</li><li>update: Updates an existing item. ItemId & ChangeKey mandatory in the request body for updates. The operation would fail if (ItemID + ChangeKey) combination does not match with any existing item in folder.</li></ul>|
+|Mode|String|Specify the import mode can be `create` or `update`. Required. <br><br> <ul><li>create: Creates a new item. Specifying ItemId or ChangeKey in request body would result in an error.</li><li>update: Updates an existing item. ItemId & ChangeKey mandatory in the request body for updates. The operation would fail if (ItemID + ChangeKey) combination doesn't match with any existing item in folder.</li></ul>|
 |Data|String|Data representing item in a base64 encoded [FTS format](https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450). Required.|
 |ItemId|String|The item's unique identifier. Required during `update`.|
 |ChangeKey|String|The version of the item. Required during `update`.|
@@ -90,7 +90,7 @@ If successful, this action returns a `200 OK` response code and a importMailboxI
 
 #### Create mailboxItemImportSession request
 
-Here's an example on how to create an import session. The opaque URL, returned in the `importUrl` property of the response, is pre-authenticated and contains the appropriate authorization token for subsequent POST queries in the https://outlook.office.com domain. That token expires by `expirationDateTime`. Do not customize this URL for subsequent POST operations.
+Here's an example of how to create an import session. The opaque URL, returned in the `importUrl` property of the response, is preauthenticated and contains the appropriate authorization token for subsequent POST queries in the https://outlook.office.com domain. That token expires by `expirationDateTime`. Don't customize this URL for subsequent POST operations.
 
 <!-- {
   "blockType": "request",
