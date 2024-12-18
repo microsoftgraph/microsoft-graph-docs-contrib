@@ -111,8 +111,35 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Remove a certificate from the list
+### Example 2: Remove a certificate from the list of certificateAuthorities
+This example assumes the original object stored has the following value. Note that the starting resource contains two values in the certificate authority list. 
 
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
+  "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
+  "displayName": "DoorCamera_Model_X_TrustedCAs",
+  "tlsClientAuthParameter": "tls_client_auth_subject_dn",
+  "certificateAuthorities": [
+    {
+      "isRootAuthority": true,
+      "certificateRevocationListUrl": "http://acme.com/root.crl",
+      "deltaCertificateRevocationListUrl": null,
+      "certificate": "joGrWL+Yqkik/CABWG0d1w....",
+      "issuer": "acme Inc",
+      "issuerSubjectkeyIdentifier": "SKI"
+    },
+    {
+      "isRootAuthority": true,
+      "certificateRevocationListUrl": "http://digicert.com/root.crl",
+      "deltaCertificateRevocationListUrl": null,
+      "certificate": "koGrWL+Yqkik/CABWG0d1w....",
+      "issuer": "Digicert Inc",
+      "issuerSubjectkeyIdentifier": "SKI"
+    }
+  ]
+}
+```
 #### Request
 
 The following example shows a request.
@@ -142,7 +169,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the response.
+The following example shows the response. Note that the PATCH request replaced the certificateAuthority value with a list containing only one value, thus removing one of the certificates. 
 
 <!-- {
   "blockType": "response",
