@@ -1,5 +1,55 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "d8cc23ce-af12-4580-997f-262b1423e250",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknown",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknown` member to the **mailboxType** enumeration.",
+          "Target": "mailboxType"
+        },
+        {
+          "Id": "d8cc23ce-af12-4580-997f-262b1423e250",
+          "ApiChange": "Member",
+          "ChangedApiName": "userMailbox",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `userMailbox` member from the **mailboxType** enumeration.",
+          "Target": "mailboxType"
+        },
+        {
+          "Id": "d8cc23ce-af12-4580-997f-262b1423e250",
+          "ApiChange": "Member",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the `user` member to the **mailboxType** enumeration.",
+          "Target": "mailboxType"
+        },
+        {
+          "Id": "d8cc23ce-af12-4580-997f-262b1423e250",
+          "ApiChange": "Member",
+          "ChangedApiName": "sharedMailbox",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `sharedMailbox` member from the **mailboxType** enumeration.",
+          "Target": "mailboxType"
+        },
+        {
+          "Id": "d8cc23ce-af12-4580-997f-262b1423e250",
+          "ApiChange": "Member",
+          "ChangedApiName": "shared",
+          "ChangeType": "Addition",
+          "Description": "Added the `shared` member to the **mailboxType** enumeration.",
+          "Target": "mailboxType"
+        }
+      ],
+      "Id": "d8cc23ce-af12-4580-997f-262b1423e250",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-10T22:24:28.9370222Z",
+      "WorkloadArea": "EnhancedRestore",
+      "SubArea": "Backup and Restore"
+    },
       {
           "ChangeList": [
             {
