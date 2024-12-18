@@ -85,64 +85,6 @@
         "SubArea": "Cloud PC"
     },
     {
-      "ChangeList":[
-        {
-          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
-          "ApiChange": "Method",
-          "ChangedApiName": "retrievePolicyApplyActionResult",
-          "ChangeType": "Addition",
-          "Description": "Add the [retrievePolicyApplyActionResult](https://learn.microsoft.com/en-us/graph/api/retrievepolicyapplyactionresult?view=graph-rest-beta) function to the [cloudpcprovisioningpolicy](https://learn.microsoft.com/en-us/graph/api//resources/cloudpcprovisioningpolicy) resource.",
-          "Target": "cloudpcprovisioningpolicy"
-        },
-        {
-          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
-          "ApiChange": "Method",
-          "ChangedApiName": "retrievePolicyApplySchedule",
-          "ChangeType": "Addition",
-          "Description": "Add the [retrievePolicyApplySchedule](https://learn.microsoft.com/en-us/graph/api/retrievepolicyapplyschedule?view=graph-rest-beta) function to the [cloudpcprovisioningpolicy](https://learn.microsoft.com/en-us/graph/api//resources/cloudpcprovisioningpolicy) resource.",
-          "Target": "retrievePolicyApplySchedule"
-        },
-        {
-          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
-          "ApiChange": "Method",
-          "ChangedApiName": "schedulePolicyApplyTask",
-          "ChangeType": "Addition",
-          "Description": "Add the [schedulePolicyApplyTask](https://learn.microsoft.com/en-us/graph/api/schedulepolicyapplytask?view=graph-rest-beta) action to the [cloudpcprovisioningpolicy](https://learn.microsoft.com/en-us/graph/api//resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
-          "Target": "cloudpcprovisioningpolicy"
-        },
-        {
-          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "cloudPcPolicyScheduledApplyActionDetail",
-          "ChangeType": "Addition",
-          "Description": "Add the [cloudPcPolicyScheduledApplyActionDetail](https://learn.microsoft.com/en-us/graph/api//resources/cloudpcpolicyscheduledapplyactiondetail?view=graph-rest-beta) resource.",
-          "Target": "cloudPcPolicyScheduledApplyActionDetail"
-        },
-        {
-          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "cloudPcPolicyApplyActionStatus",
-          "ChangeType": "Addition",
-          "Description": "Add the **cloudPcPolicyApplyActionStatus** enumeration type.",
-          "Target": "cloudPcPolicyApplyActionStatus"
-        },
-        {
-          "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "cloudPcPolicyApplyActionResult",
-          "ChangeType": "Addition",
-          "Description": "Add the cloudPcPolicyApplyActionResult[cloudPcPolicyApplyActionResult](https://learn.microsoft.com/en-us/graph/api//resources/cloudpcpolicyapplyactionresult?view=graph-rest-beta) type.",
-          "Target": "cloudPcPolicyApplyActionResult"
-        }
-      ],
-      "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-12-03T01:25:21.3434973Z",
-      "WorkloadArea": "Device and app management",
-      "SubArea": "Cloud PC"
-    },
-    {
       "ChangeList": [
         {
           "Id": "4e187813-86e4-4387-a939-dee88cb39661",
