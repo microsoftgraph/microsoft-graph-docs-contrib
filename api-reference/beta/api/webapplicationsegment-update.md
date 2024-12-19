@@ -5,7 +5,7 @@ author: "dhruvinrshah"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 11/28/2024
+ms.date: 12/19/2024
 ---
 
 # Update webApplicationSegment

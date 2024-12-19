@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
-ms.date: 11/28/2024
+ms.date: 12/19/2024
 ---
 
 # webApplicationSegment resource type
