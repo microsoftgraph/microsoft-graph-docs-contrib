@@ -756,64 +756,32 @@
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
           "ApiChange": "Method",
           "ChangedApiName": "clockIn",
-          "ChangeType": "Addition",
-          "Description": "Added the [clockIn](https://learn.microsoft.com/en-us/graph/api/timeCard-clockIn?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "clockIn",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **clockIn** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Added the **isAtApprovedLocation** property to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timecard-clockin?view=graph-rest-beta&tabs=http) method.",
           "Target": "timeCard"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
           "ApiChange": "Method",
           "ChangedApiName": "clockOut",
-          "ChangeType": "Addition",
-          "Description": "Added the [clockOut](https://learn.microsoft.com/en-us/graph/api/timeCard-clockOut?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "clockOut",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **clockOut** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Added the **isAtApprovedLocation** property to the [clockOut](https://learn.microsoft.com/en-us/graph/api/timecard-clockout?view=graph-rest-beta&tabs=http) method.",
           "Target": "timeCard"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
           "ApiChange": "Method",
           "ChangedApiName": "endBreak",
-          "ChangeType": "Addition",
-          "Description": "Added the [endBreak](https://learn.microsoft.com/en-us/graph/api/timeCard-endBreak?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "endBreak",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **endBreak** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Added the **isAtApprovedLocation** property to the [endBreak](https://learn.microsoft.com/en-us/graph/api/timecard-endbreak?view=graph-rest-beta&tabs=http) method.",
           "Target": "timeCard"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
           "ApiChange": "Method",
           "ChangedApiName": "startBreak",
-          "ChangeType": "Addition",
-          "Description": "Added the [startBreak](https://learn.microsoft.com/en-us/graph/api/timeCard-startBreak?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Method",
-          "ChangedApiName": "startBreak",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **startBreak** method from the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Added the **isAtApprovedLocation** property to the [startBreak](https://learn.microsoft.com/en-us/graph/api/timecard-startbreak?view=graph-rest-beta&tabs=http) method.",
           "Target": "timeCard"
         },
         {
