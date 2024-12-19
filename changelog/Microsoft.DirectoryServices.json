@@ -81,7 +81,15 @@
           "ChangeType": "Addition",
           "Description": "Added the [createDeviceFromTemplate](https://learn.microsoft.com/en-us/graph/api/deviceTemplate-createDeviceFromTemplate?view=graph-rest-beta) method to the [deviceTemplate](https://learn.microsoft.com/en-us/graph/api/resources/deviceTemplate?view=graph-rest-beta) resource.",
           "Target": "deviceTemplate"
-        }
+        },
+        {
+          "Id": "370a2bc0-4ec9-4052-95ee-0990a1204483",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "deviceTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added **deviceTemplate** as a navigation binding property of *directoryObjects*.",
+          "Target": "directoryObjects"
+        }         
       ],
       "Id": "370a2bc0-4ec9-4052-95ee-0990a1204483",
       "Cloud": "Prod",
