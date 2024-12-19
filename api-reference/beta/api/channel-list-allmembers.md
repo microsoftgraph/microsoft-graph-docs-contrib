@@ -1,5 +1,5 @@
 ---
-title: "channel: allMembers"
+title: "List all members"
 description: "List all members in channel in a team."
 author: "sumitgupta"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
-# channel: allMembers
+# List all members
 
 Namespace: microsoft.graph
 
