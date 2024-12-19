@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [conversationMember](../resources/conversationmember.md) from a team [channel](../resources/channel.md). It supports all types of channels. in the case of shared channels, it includes all (cross tenants and cross teams) members of a channel.
+Retrieve a list of [conversationMember](../resources/conversation member.md) objects from a team [channel](../resources/channel.md). It supports all types of channels. In the case of shared channels, it includes all (cross tenants and cross teams) members of a channel.
 
 > [!NOTE]
 > The membership IDs returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
->
 > The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
-> [!NOTE] Currently, pagination is not supported, maximum 999 members can be returned in the response. If a channel has more than 999 members in a channel then only first 999 members can be fetched via this API.
+> [!NOTE] 
+>Currently, pagination is not supported, a maximum of 999 members can be returned in the response. If a channel has more than 999 members in a channel then only the first 999 members can be fetched via this API.
 
 ## Permissions
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported | Not supported |
 |Application | ChannelMember.Read.All | ChannelMember.ReadWrite.All |
 
-## Http request
+## HTTP request
 
 <!-- { "blockType" : "ignored" } -->
 
