@@ -57,7 +57,7 @@ If successful, this method returns either a `204 No Content` response if all spe
 
 ### Example 1: Remove members in bulk from a team
 
-The following example shows how to remove multiple members from a **team** in a single request.
+The following example shows how to remove multiple members from a team in a single request.
 
 #### Request
 
@@ -101,7 +101,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Remove members in bulk from a team using user principal name
 
-The following example shows how to remove multiple members from a **team** in a single request using their user principal names.
+The following example shows how to remove multiple members from a team in a single request using their user principal names.
 
 #### Request
 
@@ -145,7 +145,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Remove members in bulk from a team with failed removals
 
-The following example shows how to remove multiple members from a **team** when the removal of a member fails.
+The following example shows how to remove multiple members from a team when the removal of a member fails.
 
 #### Request
 
