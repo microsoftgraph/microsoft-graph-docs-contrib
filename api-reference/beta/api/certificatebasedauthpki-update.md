@@ -5,6 +5,7 @@ author: "suawat"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/26/2024
 ---
 
 # Update certificateBasedAuthPki
@@ -105,7 +106,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

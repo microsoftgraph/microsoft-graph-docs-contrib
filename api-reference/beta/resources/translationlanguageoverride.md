@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jasonbro"
 ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 # translationLanguageOverride resource type
 

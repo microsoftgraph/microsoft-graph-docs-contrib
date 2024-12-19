@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/14/2024
 ---
 
 # Delete permissions
@@ -52,6 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -102,4 +104,5 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 

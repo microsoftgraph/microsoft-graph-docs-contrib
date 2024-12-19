@@ -149,6 +149,7 @@
         "protectionUnitBase",
         "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
+        "restoreArtifactsBulkRequestBase",
         "restorePoint",
         "restoreSessionBase",
         "serviceApp"
@@ -193,6 +194,14 @@
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
             "siteRestoreArtifact"
+          ]
+        },
+        {
+          "name": "Restore artifacts bulk request",
+          "resources": [
+            "driveRestoreArtifactsBulkAdditionRequest",
+            "mailboxRestoreArtifactsBulkAdditionRequest",
+            "siteRestoreArtifactsBulkAdditionRequest"
           ]
         },
         {
@@ -539,6 +548,7 @@
         },
         {
           "name": "Cloud printing",
+          "overview": "../../resources/print-overview.md",
           "keywords": [
             "Universal Print"
           ],
@@ -942,6 +952,8 @@
         "bundle",
         "permission",
         "fileStorageContainer",
+        "recycleBin",
+        "recycleBinItem",
         "sharedDriveItem"
       ]
     },
@@ -1457,6 +1469,7 @@
                 "authenticationMethod",
                 "emailAuthenticationMethod",
                 "fido2AuthenticationMethod",
+                "hardwareOathAuthenticationMethod",
                 "microsoftAuthenticatorAuthenticationMethod",
                 "passwordAuthenticationMethod",
                 "phoneAuthenticationMethod",
@@ -1549,16 +1562,16 @@
             },
             {
               "name": "Identity provider",
-              "resources": [
-                "identityProviderBase"
-              ],
+              "resources": [],
               "childNodes": [
                 {
                   "name": "External identities",
-                  "resources": [
+                  "resources": [                    
+                    "identityProviderBase",
                     "builtInIdentityProvider",
                     "socialIdentityProvider",
                     "appleManagedIdentityProvider",
+                    "oidcidentityProvider",
                     "openIdConnectIdentityProvider"
                   ]
                 },
@@ -1642,6 +1655,7 @@
                     "externalAuthenticationMethodConfiguration",
                     "fido2AuthenticationMethodConfiguration",
                     "hardwareOathAuthenticationMethodConfiguration",
+                    "hardwareOathTokenAuthenticationMethodDevice",
                     "microsoftAuthenticatorAuthenticationMethodConfiguration",
                     "smsAuthenticationMethodConfiguration",
                     "temporaryAccessPassAuthenticationMethodConfiguration",
@@ -1664,6 +1678,14 @@
               "resources": [
                 "certificateBasedApplicationConfiguration",
                 "certificateAuthorityAsEntity"
+              ]
+            },
+            {
+              "name": "Microsoft Entra lifecycle announcements",
+              "resources": [
+                "changeItemBase",
+                "announcement",
+                "roadmap"
               ]
             },
             {
@@ -2343,6 +2365,13 @@
           ]
         },
         {
+          "name": "Microsoft 365 monitoring reports (preview)",
+          "overview": "../../resources/m365-monitoring-api-overview.md",
+          "resources": [
+            "serviceActivity"
+          ]
+        },
+        {
           "name": "Microsoft 365 usage reports",
           "overview": "../../resources/report.md",
           "resources": [
@@ -2502,6 +2531,7 @@
         },
         {
           "name": "eDiscovery",
+          "overview": "../../resources/security-ediscovery-apioverview.md",
           "resources": [
             "microsoft.graph.security.ediscoveryCase",
             "microsoft.graph.security.ediscoveryCaseSettings",
@@ -2694,9 +2724,10 @@
           "name": "Pages",
           "resources": [
             "baseSitePage",
+            "newsLinkPage",
+            "pageTemplate",
             "sitePage",
-            "webPart",
-            "pageTemplate"
+            "webPart"
           ],
           "complexTypes": [
             "createFromTemplate",
@@ -2834,6 +2865,21 @@
       ],
       "childNodes": [
         {
+          "name": "AI interactions (preview)",
+          "resources": [
+            "aiInteractionHistory"
+          ],
+         "complexTypes": [
+           "aiInteraction",
+           "aiInteractionAttachment",
+           "aiInteractionContext",
+           "aiInteractionLink",
+           "aiInteractionMention",
+           "aiInteractionMentionedIdentitySet",
+           "aiUser"
+         ]
+        },
+        {
           "name": "Approvals",
           "resources": [
             "approvalItem",
@@ -2938,6 +2984,9 @@
                 "virtualEventSession",
                 "virtualEventTownhall",
                 "virtualEventWebinar"
+              ],
+              "complexTypes": [
+                "virtualEventExternalInformation"
               ]
             }
           ]

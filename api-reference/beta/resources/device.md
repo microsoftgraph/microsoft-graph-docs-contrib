@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sandeo-MSFT"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 11/26/2024
 ---
 
 # device resource type
@@ -61,7 +62,7 @@ This resource supports:
 |deviceMetadata|String| For internal use only. Set to `null`. |
 |deviceOwnership|String|Ownership of the device. This property is set by Intune. Possible values are: `unknown`, `company`, `personal`.|
 |deviceVersion|Int32| For internal use only. |
-|displayName|String| The display name for the device. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`.  |
+|displayName|String| The display name for the device. Maximum length is 256 characters. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`.  |
 |domainName|String|The on-premises domain name of Microsoft Entra hybrid joined devices. This property is set by Intune.|
 |enrollmentProfileName|String|Enrollment profile applied to the device. For example, `Apple Device Enrollment Profile`, `Device enrollment - Corporate device identifiers`, or `Windows Autopilot profile name`. This property is set by Intune.|
 |enrollmentType|String|Enrollment type of the device. This property is set by Intune. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`,`appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`. <br/><br/>**NOTE:** This property might return other values apart from those listed.|

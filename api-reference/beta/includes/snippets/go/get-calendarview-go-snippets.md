@@ -19,11 +19,11 @@ import (
 requestStartDateTime := "2017-01-01T19:00:00-08:00"
 requestEndDateTime := "2017-01-07T19:00:00-08:00"
 
-requestParameters := &graphusers.ItemCalendarCalendarViewRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.CalendarCalendarViewRequestBuilderGetQueryParameters{
 	StartDateTime: &requestStartDateTime,
 	EndDateTime: &requestEndDateTime,
 }
-configuration := &graphusers.ItemCalendarCalendarViewRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.CalendarCalendarViewRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

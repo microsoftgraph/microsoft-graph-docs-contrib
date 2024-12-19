@@ -16,6 +16,12 @@ Namespace: microsoft.graph
 
 Represents the structure of active and deleted [fileStorageContainer](../resources/filestoragecontainer.md) objects.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Delete](../api/filestorage-delete-containers.md)|None|Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
+|[Remove deleted containers](../api/filestorage-delete-deletedcontainers.md)|[fileStorage](../resources/filestorage.md) collection|Delete the [fileStorageContainer](../resources/filestoragecontainer.md) objects and their properties.|
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

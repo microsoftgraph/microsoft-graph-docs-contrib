@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "slister1001"
 ms.subservice: "outlook"
 doc_type: "resourcePageType"
+ms.date: 03/22/2024
 ---
 
 # workspace resource type
