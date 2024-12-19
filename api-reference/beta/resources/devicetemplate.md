@@ -43,7 +43,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 | manufacturer                       | String            | Manufacturer name. |
 | model                              | String            | Model name. |
 | mutualTlsOauthConfigurationId      | String            | Object ID of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used. |
-| mutualTlsOauthConfigurationTenantId | String           | ID of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) (Tenant ID for device authority). This value isn't set if self-signed certificates are used.              |
+| mutualTlsOauthConfigurationTenantId | String           | ID (tenant ID for device authority) of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used. |
 | operatingSystem                    | String            | Operating system type.    |
 
 ## Relationships
