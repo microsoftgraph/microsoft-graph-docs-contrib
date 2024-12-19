@@ -757,7 +757,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "clockIn",
           "ChangeType": "Change",
-          "Description": "Added the **isAtApprovedLocation** property to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timecard-clockin?view=graph-rest-beta&tabs=http) method.",
+          "Description": "Added the **isAtApprovedLocation** parameter to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timecard-clockin?view=graph-rest-beta&tabs=http) method.",
           "Target": "timeCard"
         },
         {
@@ -765,7 +765,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "clockOut",
           "ChangeType": "Change",
-          "Description": "Added the **isAtApprovedLocation** property to the [clockOut](https://learn.microsoft.com/en-us/graph/api/timecard-clockout?view=graph-rest-beta&tabs=http) method.",
+          "Description": "Added the **isAtApprovedLocation** parameter to the [clockOut](https://learn.microsoft.com/en-us/graph/api/timecard-clockout?view=graph-rest-beta&tabs=http) method.",
           "Target": "timeCard"
         },
         {
@@ -773,7 +773,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "endBreak",
           "ChangeType": "Change",
-          "Description": "Added the **isAtApprovedLocation** property to the [endBreak](https://learn.microsoft.com/en-us/graph/api/timecard-endbreak?view=graph-rest-beta&tabs=http) method.",
+          "Description": "Added the **isAtApprovedLocation** parameter to the [endBreak](https://learn.microsoft.com/en-us/graph/api/timecard-endbreak?view=graph-rest-beta&tabs=http) method.",
           "Target": "timeCard"
         },
         {
@@ -781,7 +781,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "startBreak",
           "ChangeType": "Change",
-          "Description": "Added the **isAtApprovedLocation** property to the [startBreak](https://learn.microsoft.com/en-us/graph/api/timecard-startbreak?view=graph-rest-beta&tabs=http) method.",
+          "Description": "Added the **isAtApprovedLocation** parameter to the [startBreak](https://learn.microsoft.com/en-us/graph/api/timecard-startbreak?view=graph-rest-beta&tabs=http) method.",
           "Target": "timeCard"
         },
         {
