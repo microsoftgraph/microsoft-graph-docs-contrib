@@ -104,7 +104,7 @@ This resource supports:
 |:---------------|:--------|:----------|
 |commands | [command](command.md) collection | Set of commands sent to this device.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable. |
-|deviceTemplate|[deviceTemplate](devicetemplate.md)|Device template used to instantiate this object. Nullable. Read-only. |
+|deviceTemplate|[deviceTemplate](devicetemplate.md) collection|Device template used to instantiate this object. Nullable. Read-only. |
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this device is a member of. Read-only. Nullable. Supports `$expand`. |
 |registeredOwners|[directoryObject](directoryobject.md) collection| The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports `$expand`. |
 |registeredUsers|[directoryObject](directoryobject.md) collection| Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports `$expand`. |
