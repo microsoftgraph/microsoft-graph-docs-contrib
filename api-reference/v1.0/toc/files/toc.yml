@@ -82,6 +82,8 @@ items:
     href: ../../api/driveitem-checkin.md
   - name: Check out files
     href: ../../api/driveitem-checkout.md
+  - name: Discard checkout
+    href: ../../api/driveitem-discardcheckout.md
   - name: Extract sensitivity labels
     href: ../../api/driveitem-extractsensitivitylabels.md
   - name: Assign sensitivity label
@@ -164,12 +166,12 @@ items:
     href: ../../api/filestoragecontainer-list-customproperty.md
   - name: Add custom property
     href: ../../api/filestoragecontainer-post-customproperty.md
+  - name: List columns
+    href: ../../api/filestoragecontainer-list-columns.md
   - name: Update custom property
     href: ../../api/filestoragecontainer-update-customproperty.md
   - name: Delete custom property
     href: ../../api/filestoragecontainer-delete-customproperty.md
-  - name: List columns
-    href: ../../api/filestoragecontainer-list-columns.md
   - name: Add column
     href: ../../api/filestoragecontainer-post-columns.md
   - name: Update column
@@ -196,3 +198,19 @@ items:
     href: ../../resources/shareddriveitem.md
   - name: Use sharing links
     href: ../../api/shares-get.md
+- name: Recycle bin
+  items:
+  - name: Recycle bin
+    href: ../../resources/recyclebin.md
+  - name: List items
+    href: ../../api/recyclebin-list-items.md
+- name: Recycle bin item
+  items:
+  - name: Recycle bin item
+    href: ../../resources/recyclebinitem.md
+  - name: List
+    href: ../../api/recyclebin-list-items.md
+  - name: Delete
+    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
+  - name: Restore
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md

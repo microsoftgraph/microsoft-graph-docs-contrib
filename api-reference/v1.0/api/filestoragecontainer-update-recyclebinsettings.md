@@ -5,6 +5,7 @@ author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 12/10/2024
 ---
 
 # Update recycleBinSettings
@@ -53,6 +54,7 @@ If successful, this method returns a `200 OK` response code.
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainer_recyclebin_settings"
@@ -66,6 +68,13 @@ Content-Type: application/json
   "retentionPeriodOverrideDays": 180
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-filestoragecontainer-recyclebin-settings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 ### Response

@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 12/03/2024
 ---
 
 # Update onlineMeeting
@@ -20,10 +21,37 @@ For the list of properties that support updating, see the [Request body](#reques
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "onlinemeeting_update" } -->
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /me/onlineMeetings/{meetingId}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_update", 
+  "requestUrls": ["PATCH /me/onlineMeetings/{meetingId}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-update-permissions.md)]
+
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /users/{userId}/onlineMeetings/{meetingId}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_update_2", 
+  "requestUrls": ["PATCH /users/{userId}/onlineMeetings/{meetingId}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-update-2-permissions.md)]
 
 To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to update online meetings on behalf of that user (with user ID specified in the request path).
 

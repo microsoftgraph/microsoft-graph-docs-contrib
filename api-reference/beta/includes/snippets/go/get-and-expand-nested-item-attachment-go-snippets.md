@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemMessageItemAttachmentItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.MessagesItemAttachmentsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"microsoft.graph.itemattachment/item"},
 }
-configuration := &graphusers.ItemMessageItemAttachmentItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.MessagesItemAttachmentsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

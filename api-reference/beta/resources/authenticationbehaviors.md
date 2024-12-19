@@ -5,6 +5,7 @@ author: "medhir"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/30/2024
 ---
 
 # authenticationBehaviors resource type

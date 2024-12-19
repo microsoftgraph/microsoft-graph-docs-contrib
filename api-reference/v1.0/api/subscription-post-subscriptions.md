@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "keylimesoda"
 ms.subservice: change-notifications
 doc_type: apiPageType
+ms.date: 10/28/2024
 ---
 
 # Create subscription

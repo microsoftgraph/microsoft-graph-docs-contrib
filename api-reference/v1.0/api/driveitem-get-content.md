@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "sharepoint"
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
 doc_type: apiPageType
+ms.date: 06/12/2024
 ---
 # Download driveItem content
 

@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/14/2024
 ---
 
 # Get fileStorageContainer
@@ -48,7 +49,9 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 
 ### Request
 The following example shows a request.
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_filestoragecontainer"

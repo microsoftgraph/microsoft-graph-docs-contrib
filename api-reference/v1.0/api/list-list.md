@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "sharepoint"
 description: "Get the collection of lists for a site."
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # Get lists in a site
 

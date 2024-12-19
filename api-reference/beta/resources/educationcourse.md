@@ -5,6 +5,7 @@ author: "mlafleur"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # educationCourse resource type

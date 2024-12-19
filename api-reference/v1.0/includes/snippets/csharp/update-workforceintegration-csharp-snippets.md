@@ -11,16 +11,17 @@ using Microsoft.Graph.Models;
 
 var requestBody = new WorkforceIntegration
 {
-	DisplayName = "displayName-value",
-	ApiVersion = 99,
+	DisplayName = "ABCWorkforceIntegration",
+	ApiVersion = 1,
+	IsActive = true,
 	Encryption = new WorkforceIntegrationEncryption
 	{
 		Protocol = WorkforceIntegrationEncryptionProtocol.SharedSecret,
-		Secret = "secret-value",
+		Secret = "My Secret",
 	},
-	IsActive = true,
-	Url = "url-value",
-	SupportedEntities = WorkforceIntegrationSupportedEntities.None,
+	Url = "https://ABCWorkforceIntegration.com/Contoso/",
+	SupportedEntities = WorkforceIntegrationSupportedEntities.Shift | WorkforceIntegrationSupportedEntities.SwapRequest,
+	EligibilityFilteringEnabledEntities = EligibilityFilteringEnabledEntities.SwapRequest,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

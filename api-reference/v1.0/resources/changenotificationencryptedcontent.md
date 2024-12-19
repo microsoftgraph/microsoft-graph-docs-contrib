@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "baywet"
 doc_type: resourcePageType
 ms.subservice: change-notifications
+ms.date: 07/22/2024
 ---
 
 # changeNotificationEncryptedContent resource type

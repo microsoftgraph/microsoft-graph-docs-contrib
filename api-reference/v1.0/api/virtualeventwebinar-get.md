@@ -5,12 +5,15 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 11/22/2024
 ---
 
 # Get virtualEventWebinar
 Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
+
+All roles can get the details of a webinar event.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

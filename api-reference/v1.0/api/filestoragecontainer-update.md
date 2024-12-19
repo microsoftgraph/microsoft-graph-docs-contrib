@@ -6,6 +6,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/14/2024
 ---
 
 # Update fileStorageContainer
@@ -52,7 +53,9 @@ If successful, this method returns a `200 OK` response code and an updated [file
 
 ### Request
 The following example shows a request.
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainer"

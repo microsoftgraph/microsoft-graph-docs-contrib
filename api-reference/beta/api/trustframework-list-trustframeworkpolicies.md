@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "gysingh"
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 # List trustFrameworkPolicies
 

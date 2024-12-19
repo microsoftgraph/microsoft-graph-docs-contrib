@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
 ms.subservice: change-notifications
+ms.date: 04/18/2024
 ---
 
 # resourceData resource type

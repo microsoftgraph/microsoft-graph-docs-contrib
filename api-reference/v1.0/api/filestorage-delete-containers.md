@@ -5,6 +5,7 @@ author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/14/2024
 ---
 
 # Delete fileStorageContainer
@@ -52,9 +53,10 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
 The following example shows a request.
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_filestoragecontainer"

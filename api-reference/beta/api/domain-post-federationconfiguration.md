@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/25/2024
 ---
 
 # Create internalDomainFederation
@@ -66,7 +67,7 @@ You can specify the following properties when creating an **internalDomainFedera
 |signOutUri|String|URI that clients are redirected to when they sign out of Microsoft Entra services. Corresponds to the **LogOffUri** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings).|
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate.|
 
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../api-reference/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 ### federatedIdpMfaBehavior values
 

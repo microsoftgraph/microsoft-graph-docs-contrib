@@ -21,7 +21,7 @@ headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphplanner.PlannerTaskItemDetailsRequestBuilderPatchRequestConfiguration{
+configuration := &graphplanner.TasksItemDetailsRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerTaskDetails()

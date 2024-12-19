@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "reports"
 doc_type: "resourcePageType"
+ms.date: 07/30/2024
 ---
 
 # servicePrincipalSignInActivity resource type

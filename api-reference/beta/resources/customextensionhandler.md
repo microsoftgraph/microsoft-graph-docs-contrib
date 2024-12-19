@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # customExtensionHandler resource type (deprecated)

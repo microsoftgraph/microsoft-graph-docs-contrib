@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/16/2024
 ---
 
 # Remove attribute (from user flow)
