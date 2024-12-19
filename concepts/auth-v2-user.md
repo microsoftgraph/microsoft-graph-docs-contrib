@@ -323,7 +323,7 @@ Content-type: application/json
 
 ## Use the Microsoft Authentication Library (MSAL)
 
-In this article, you walked through the low-level protocol details that are required only when manually crafting and issuing raw HTTP requests to execute the authorization code flow. In production apps, use a [Microsoft-built or supported authentication library](/azure/active-directory/develop/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph.
+In this article, you walked through the low-level protocol details that are required only when manually crafting and issuing raw HTTP requests to execute the authorization code flow. In production apps, use a [Microsoft-built or supported authentication library](/azure/active-directory/develop/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph. Also, explore how to [choose a Microsoft Graph authentication provider based on scenario](./sdks/choose-authentication-providers.md).
 
 MSAL and other supported authentication libraries simplify the process for you by handling details such as validation, cookie handling, token caching, and secure connections, allowing you to focus on the functionality of your application.
 
