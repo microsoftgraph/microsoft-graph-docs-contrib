@@ -829,7 +829,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activitiesIncludedWhenCopyingShiftsEnabled",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **activitiesIncludedWhenCopyingShiftsEnabled** property of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource. The **activitiesIncludedWhenCopyingShiftsEnabled** property will returning data on November 27, 2027. Going forward, use the **isActivitiesIncludedWhenCopyingShiftsEnabled** property.",
+          "Description": "Deprecated the **activitiesIncludedWhenCopyingShiftsEnabled** property of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource. The **activitiesIncludedWhenCopyingShiftsEnabled** property will stop returning data on November 27, 2027. Going forward, use the **isActivitiesIncludedWhenCopyingShiftsEnabled** property.",
           "Target": "schedule"
         }
       ],
