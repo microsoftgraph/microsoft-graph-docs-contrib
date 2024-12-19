@@ -118,7 +118,6 @@ DELETE https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{h
 
 ---
 
-
 ### Response
 
 The following example shows the response.
