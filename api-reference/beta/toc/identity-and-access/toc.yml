@@ -198,10 +198,6 @@ items:
         href: ../../api/opentypeextension-post-opentypeextension.md
       - name: Get open extension
         href: ../../api/opentypeextension-get.md
-    - name: Schema extensions
-      items:
-      - name: Add schema extension values
-        href: /graph/extensibility-schema-groups
   - name: Device local credential info
     items:
     - name: Device local credential info
