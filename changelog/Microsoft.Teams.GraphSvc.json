@@ -2369,7 +2369,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "allMembers",
           "ChangeType": "Addition",
-          "Description": "Added the [allMembers](https://learn.microsoft.com/en-us/graph/api/channel-allmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the [allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
