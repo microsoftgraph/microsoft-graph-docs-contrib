@@ -50,6 +50,32 @@
       "WorkloadArea": "EnhancedRestore",
       "SubArea": "Backup and Restore"
     },
+    {
+      "ChangeList": [
+        {
+          "Id": "9ddaec40-375d-4557-9c2c-b31b99520210",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "mailboxType",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailboxType** enumeration type.",
+          "Target": "mailboxType"
+        },
+        {
+          "Id": "9ddaec40-375d-4557-9c2c-b31b99520210",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknownFutureValue` member to the **mailboxType** enumeration.",
+          "Target": "mailboxType"
+        }
+      ],
+      "Id": "9ddaec40-375d-4557-9c2c-b31b99520210",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-13T06:06:47.9890636Z",
+      "WorkloadArea": "EnhancedRestore",
+      "SubArea": "Backup and Restore"
+    },
       {
           "ChangeList": [
             {
