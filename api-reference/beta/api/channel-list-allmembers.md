@@ -1,6 +1,6 @@
 ---
 title: "channel: allMembers"
-description: "Retrieve all members in channel in a team."
+description: "List all members in channel in a team."
 author: "sumitgupta"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -61,7 +61,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "channel-allMembers",
+  "name": "channel-list-allMembers",
   "sampleKeys": ["2ab9c796-2902-45f8-b712-7c5a63cf41c4", "19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype"]
 } -->
 ```msgraph-interactive
