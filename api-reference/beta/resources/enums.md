@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 12/06/2024
+ms.date: 12/19/2024
 ---
 
 # Enum values
@@ -21,6 +21,20 @@ Namespace: microsoft.graph
 |tls_client_auth_san_uri|
 |tls_client_auth_san_ip|
 |tls_client_auth_san_email|
+|unknownFutureValue|
+
+### changeAnnouncementChangeType values
+
+|Member|
+|:---|
+|breakingChange|
+|deprecation|
+|endOfSupport|
+|featureChange|
+|other|
+|retirement|
+|securityIncident|
+|uxChange|
 |unknownFutureValue|
 
 ### hardwareOathTokenHashFunction values
@@ -2961,6 +2975,26 @@ Possible values for user account types (group membership), per Windows definitio
 | enabled |
 | disabled |
 | enabledForReportingButNotEnforced |
+
+
+### privateNetworkDestinationType values 
+
+|Member|
+|:---|
+|ipAddress|
+|ipRange|
+|ipRangeCidr|
+|fqdn|
+|dnsSuffix|
+|unknownFutureValue|
+
+### privateNetworkProtocol values 
+
+|Member|
+|:---|
+|tcp|
+|udp|
+|unknownFutureValue|
 
 ### conditionalAccessGrantControl values
 

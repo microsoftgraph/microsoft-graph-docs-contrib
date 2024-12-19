@@ -109,6 +109,7 @@ Content-Type: application/json
     "announcementDateTime": "2022-09-30T00:00:00Z",
     "targetDateTime": "2024-09-30T00:00:00Z",
     "impactLink": null,
+    "changeType": "deprecation",
     "isCustomerActionRequired": true
   }
 }

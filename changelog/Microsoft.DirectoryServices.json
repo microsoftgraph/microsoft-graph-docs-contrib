@@ -13982,22 +13982,14 @@
   },
   {
       "ChangeList": [
-        {
-          "Id": "8cd03a79-71de-467d-bd73-0b3449a28bfc",
-          "ApiChange": "Method",
-          "ChangedApiName": "restore",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **restore** method from the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-beta) resource.",
-          "Target": "directoryObject"
-        },
-        {
-          "Id": "8cd03a79-71de-467d-bd73-0b3449a28bfc",
-          "ApiChange": "Method",
-          "ChangedApiName": "restore",
-          "ChangeType": "Addition",
-          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-beta) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-beta) resource.",
-          "Target": "directoryObject"
-        }
+	{
+        "Id": "8cd03a79-71de-467d-bd73-0b3449a28bfc",
+        "ApiChange": "Parameter",
+        "ChangedApiName": "restore",
+        "ChangeType": "Addition",
+        "Description": "Added the `newUserPrincipalName` parameter to the [restore directoryObject](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-beta) method. Use this property to specify whether Microsoft Entra ID should replace the restored user's previous **userPrincipalName** with a new value.",
+        "Target": "directoryObject"
+      	}
       ],
       "Id": "8cd03a79-71de-467d-bd73-0b3449a28bfc",
       "Cloud": "Prod",

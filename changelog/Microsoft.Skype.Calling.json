@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "a7978bef-d6bb-4083-81f9-c746c2f05197",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalEventInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalEventInformation** property to the [meetingAttendanceReport](https://learn.microsoft.com/en-us/graph/api/resources/meetingattendancereport?view=graph-rest-beta) resource.",
+          "Target": "meetingAttendanceReport"
+        },
+        {
+          "Id": "a7978bef-d6bb-4083-81f9-c746c2f05197",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalRegistrationInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalRegistrationInformation** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendancerecord?view=graph-rest-beta) resource.",
+          "Target": "attendanceRecord"
+        }
+      ],
+      "Id": "a7978bef-d6bb-4083-81f9-c746c2f05197",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-18T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
           "ApiChange": "Resource",
           "ChangedApiName": "startRecordingOperation",
@@ -74,10 +100,10 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
-      {
+    {
         "ChangeList": [
-          {
-      "Id": "cc96a0af-ec29-4b9d-9d42-8d3dd6532aff",
+        {
+          "Id": "cc96a0af-ec29-4b9d-9d42-8d3dd6532aff",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventExternalInformation",
           "ChangeType": "Addition",
