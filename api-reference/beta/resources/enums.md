@@ -12,17 +12,6 @@ ms.date: 12/19/2024
 
 Namespace: microsoft.graph
 
-### tlsClientRegistrationMetadata values 
-
-|Member|
-|:---|
-|tls_client_auth_subject_dn|
-|tls_client_auth_san_dns|
-|tls_client_auth_san_uri|
-|tls_client_auth_san_ip|
-|tls_client_auth_san_email|
-|unknownFutureValue|
-
 ### changeAnnouncementChangeType values
 
 |Member|
@@ -5115,4 +5104,15 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |standard|
 |bulk|
+|unknownFutureValue|
+
+### tlsClientRegistrationMetadata values 
+
+|Member|
+|:---|
+|tls_client_auth_subject_dn|
+|tls_client_auth_san_dns|
+|tls_client_auth_san_uri|
+|tls_client_auth_san_ip|
+|tls_client_auth_san_email|
 |unknownFutureValue|
