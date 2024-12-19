@@ -49,8 +49,8 @@ This resource supports:
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
-|**Schema extensions**| | |
-|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+
+>**Note:** For schema extensions, you can create a definition and use it to add custom typed data to a resource. For more information, see [Add schema extension values](/graph/extensibility-schema-groups).
 
 ## Properties
 
