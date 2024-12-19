@@ -20,10 +20,10 @@ This article provides an overview of the requirements for an app to be authorize
 
 ## Register the application
 
-Before your app can be authorized to call any Microsoft Graph API, it must first be understood by the Microsoft identity platform. This process doesn't involve uploading your application code to the platform. Rather, it involves registering the app in the [Microsoft Entra admin center](https://entra.microsoft.com/) to establish its configuration information including the following core parameters:
+Before your app can be authorized to call any Microsoft Graph API, the Microsoft identity platform must first be aware of it. This process doesn't involve uploading your application code to the platform. Rather, it involves registering the app in the [Microsoft Entra admin center](https://entra.microsoft.com/) to establish its configuration information including the following core parameters:
 
 - **Application ID**: A unique identifier assigned by the Microsoft identity platform.
-- **Redirect URI/URL**: One or more endpoints at which your app receives responses from the Microsoft identity platform. For native and mobile apps, the URI is assigned by the Microsoft identity platform.
+- **Redirect URI/URL**: One or more endpoints at which your app receives responses from the Microsoft identity platform. The Microsoft identity platform assigns the URI to native and mobile apps.
 - **Credential**: Can be a client secret (a string or password), a certificate, or a federated identity credential. Your app uses the credential to authenticate with the Microsoft identity platform. This property is only required for confidential client applications; It isn't required for public clients like native, mobile, and single page applications. For more information, see [Public client and confidential client applications](/entra/identity-platform/msal-client-applications).
 
 You then add this information back to your code once, and the app uses the information every time is needs to prove its identity during an authentication process, before it can be authorized to access your data.
@@ -41,15 +41,15 @@ An app can access data in one of two ways as illustrated in the following image.
 
 ### Delegated access (access on behalf of a user)
 
-In this access scenario, a user signs into a client application which calls Microsoft Graph on behalf of the user. *Both the client and the user must be authorized to make the request*.
+In this access scenario, a user signs into a client application which calls Microsoft Graph on behalf of their behalf. *Both the client app and the user must be authorized to make the request*.
 
-For a client app to be authorized to access the data on behalf of the signed-in user, it must have the required permissions, which it receives through a combination of two factors:
-- *Delegated permissions*, also referred to as *scopes*: These permissions are exposed by Microsoft Graph and they represent the operations that an app can perform on behalf of the signed-in user. An app might be allowed to perform an operation on behalf of one user but not another.
-- *User permissions*: These are the permissions that the signed-in user has to access the resource. The user might be the owner of the resource, the resource might be shared with them, or they might be assigned a particular role through a role-based access control system (RBAC) such as [Microsoft Entra RBAC](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+For the client app to be authorized to access the data on behalf of the signed-in user, it must have the required permissions, which it receives through a combination of two factors:
+- *Delegated permissions*, also referred to as *scopes*: The permissions exposed by Microsoft Graph and that represent the operations that the app can perform on behalf of the signed-in user. The app might be allowed to perform an operation on behalf of one user but not another.
+- *User permissions*: The permissions that the signed-in user has to the resource. The user might be the owner of the resource, the resource might be shared with them, or they might be assigned permissions through a role-based access control system (RBAC) such as [Microsoft Entra RBAC](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 #### Sample scenario: Delegated access in Microsoft Graph
 
-An endpoint such as `https://graph.microsoft.com/v1.0/me` is the access point to the signed-in user's information, which represents a resource that's protected by the Microsoft identity platform. For delegated access, the two factors are fulfilled as follows:
+The `https://graph.microsoft.com/v1.0/me` endpoint is the access point to the signed-in user's information, which represents a resource that's protected by the Microsoft identity platform. For delegated access, the two factors are fulfilled as follows:
 - The app must be granted a supported Microsoft Graph delegated permission, for example, the *User.Read* delegated permission, on behalf of the signed-in user. 
 - The signed-in user in this scenario is the owner of the data.
 
@@ -78,14 +78,12 @@ The `https://graph.microsoft.com/v1.0/users/delta` endpoint allows you to poll c
 
 As mentioned earlier, an app must have permissions to access the data that it wants to access, regardless of the access scenario.
 
-[Microsoft Graph exposes granular permissions](../permissions-reference.md)) that control the access to Microsoft Graph resources, like users, groups, and mail. As a developer, you decide which Microsoft Graph permissions to request for your app based on the access scenario and the operations you want to perform.
+[Microsoft Graph exposes granular permissions](../permissions-reference.md) that control access to Microsoft Graph resources, like users, groups, and mail. Two types of permissions are available for the supported [access scenarios](#access-scenarios):
 
-Microsoft Graph exposes two types of permissions for the supported [access scenarios](#access-scenarios):
+- *Delegated permissions*: Also called *scopes*, allow the application to act on behalf of the signed-in user.
+- *Application permissions*: Also called *app roles*, allow the app to access data on its own, without a signed-in user.
 
-- Delegated permissions: Also called *scopes*, allow the application to act on behalf of the signed-in user.
-- Application permissions: Also called *app roles*, allow the app to access data on its own, without a signed-in user.
-
-When a user signs in to an app, the app must specify the permissions that it needs to be included in the access token. These permissions:
+As a developer, you decide which Microsoft Graph permissions to request for your app based on the access scenario and the operations you want to perform. When a user signs in to an app, the app must specify the permissions that it needs to be included in the access token. These permissions:
 
 - May be preauthorized for the application by an administrator.
 - May be consented by the user directly.
