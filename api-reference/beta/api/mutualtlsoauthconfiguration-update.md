@@ -112,12 +112,13 @@ Content-Type: application/json
 ```
 
 ### Example 2: Remove a certificate from the list of certificateAuthorities
-This example assumes the original object stored has the following value. Note that the starting resource contains two values in the certificate authority list. 
+
+This example assumes that the original object stored has the following value. Note that the starting resource contains two values in the certificate authority list.
 
 ```json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
-  "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
+  "id": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
   "displayName": "DoorCamera_Model_X_TrustedCAs",
   "tlsClientAuthParameter": "tls_client_auth_subject_dn",
   "certificateAuthorities": [
@@ -142,7 +143,7 @@ This example assumes the original object stored has the following value. Note th
 ```
 #### Request
 
-The following example shows a request.
+The following example shows a request that updates the certificate authority list to contain only a single certificate, which removes the other.
 
 <!-- {
   "blockType": "request",
@@ -169,7 +170,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the response. Note that the PATCH request replaced the certificateAuthority value with a list containing only one value, thus removing one of the certificates. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
