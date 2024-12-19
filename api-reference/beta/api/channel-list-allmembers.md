@@ -1,6 +1,6 @@
 ---
 title: "List all members"
-description: "List all members in channel in a team."
+description: "List all members in a channel of a team."
 author: "sumitgupta"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md) of a team. It supports all types of channel. For Shared channel, this will include all(include cross tenants and cross teams as well) members of a channel.
+Retrieve a list of [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md) of a team. It supports all types of channels. For a shared channel, it includes all (cross tenants and cross teams) members of a channel.
 
 > [!NOTE]
 > The membership IDs returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
