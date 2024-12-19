@@ -5,7 +5,7 @@ author: "dhruvinrshah"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 11/28/2024
+ms.date: 12/19/2024
 ---
 
 # Get corsConfiguration_v2
@@ -95,4 +95,24 @@ Content-Type: application/json
     "maxAgeInSeconds": 3000
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get corsConfiguration_v2",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "
+      Error: microsoft.graph.microsoft.graph/applications:
+        /applications/{var}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{var}/corsConfigurations/{var}
+        Uri path requires navigating into unknown object hierarchy: missing property 'microsoft.graph.webSegmentConfiguration' on 'segmentConfiguration'. Possible issues:
+          1) Doc bug where 'microsoft.graph.webSegmentConfiguration' isn't defined on the resource.
+          2) Doc bug where 'microsoft.graph.webSegmentConfiguration' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+          3) Doc bug where 'segmentConfiguration' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation.
+    "
+  ]
+}
+-->
 

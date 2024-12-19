@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/applications/129d6e80-484f-4d1f-bfca-a6a859d138ac/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/ApplicationSegments/209efffb-0777-42b0-a65c-4e3ddb1ab3c0/corsConfigurations/044b32a9-d3a2-4218-9db1-de651d009d2b
+DELETE https://graph.microsoft.com/beta/applications/129d6e80-484f-4d1f-bfca-a6a859d138ac/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/209efffb-0777-42b0-a65c-4e3ddb1ab3c0/corsConfigurations/044b32a9-d3a2-4218-9db1-de651d009d2b
 ```
 
 
@@ -80,3 +80,22 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Delete corsConfiguration_v2",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "
+      Error: microsoft.graph.microsoft.graph/applications:
+        /applications/{var}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{var}/corsConfigurations/{var}
+        Uri path requires navigating into unknown object hierarchy: missing property 'microsoft.graph.webSegmentConfiguration' on 'segmentConfiguration'. Possible issues:
+          1) Doc bug where 'microsoft.graph.webSegmentConfiguration' isn't defined on the resource.
+          2) Doc bug where 'microsoft.graph.webSegmentConfiguration' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+          3) Doc bug where 'segmentConfiguration' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation.
+    "
+  ]
+}
+-->
