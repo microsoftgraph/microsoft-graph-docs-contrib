@@ -1,5 +1,5 @@
 ---
-title: "List all members"
+title: "List allMembers"
 description: "List all members in a team channel."
 author: "sumitgupta"
 ms.localizationpriority: high
