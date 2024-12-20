@@ -2367,17 +2367,17 @@
         {
           "Id": "bd99be3e-66c5-44fa-8159-3b5788936946",
           "ApiChange": "Method",
-          "ChangedApiName": "allMembers",
+          "ChangedApiName": "List",
           "ChangeType": "Addition",
-          "Description": "Added the [allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the [list allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
           "Id": "bd99be3e-66c5-44fa-8159-3b5788936946",
           "ApiChange": "Method",
-          "ChangedApiName": "getAllMembers",
-          "ChangeType": "Deletion",
-          "Description": "Removed the getAllMembers method from the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "ChangedApiName": "AllMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **AllMembers** navigation property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         }
       ],
