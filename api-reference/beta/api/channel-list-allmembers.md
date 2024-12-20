@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [conversationMember](../resources/conversation member.md) objects from a team [channel](../resources/channel.md). It supports all types of channels. In the case of shared channels, it includes all (cross tenants and cross teams) members of a channel.
+Retrieve a list of [conversationMember](../resources/conversation member.md) objects from a team [channel](../resources/channel.md). It supports all types of channels. In the case of shared channels, it includes all cross-tenant and cross-team members in a channel.
 
 > [!NOTE]
-> The membership IDs returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
-> The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
+> The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
+> In the future, membership results could be mapped to users from different tenants, as indicated in the response. The client should not assume that all members are from the current tenant.
 > [!NOTE] 
->Currently, pagination is not supported, a maximum of 999 members can be returned in the response. If a channel has more than 999 members in a channel then only the first 999 members can be fetched via this API.
+> Currently, pagination is not supported, a maximum of 999 members can be returned in the response. If there are more than 999 members in a channel, the API only fetches the first 999 members.
 
 ## Permissions
 
@@ -52,9 +52,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [conversationMember](../resources/conversationmember.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a list of [conversationMember](../resources/conversationmember.md) objects in the response body.
 
-## Example
+## Examples
 
 ### Request
 
