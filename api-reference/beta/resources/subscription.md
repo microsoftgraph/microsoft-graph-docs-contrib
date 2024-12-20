@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-Represents a subscription that allows a client app to receive [change notifications](../resources/changenotificatiocollection.md) about changes to data in Microsoft Graph.
+Represents a subscription that allows a client app to receive [change notifications](../resources/changenotificationcollection.md) about changes to data in Microsoft Graph.
 
 For more information about subscriptions and change notifications, including resources that support change notifications, see [Set up notifications for changes in resource data](change-notifications-api-overview.md).
 
