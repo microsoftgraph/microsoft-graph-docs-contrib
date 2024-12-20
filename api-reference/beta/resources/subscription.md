@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-Represents a subscription that allows a client app to receive change notifications about changes to data in Microsoft Graph.
+Represents a subscription that allows a client app to receive [change notifications](../resources/changenotificatiocollection.md) about changes to data in Microsoft Graph.
 
 For more information about subscriptions and change notifications, including resources that support change notifications, see [Set up notifications for changes in resource data](change-notifications-api-overview.md).
 
@@ -26,7 +26,7 @@ For more information about subscriptions and change notifications, including res
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
 | [List](../api/subscription-list.md) | [subscription](subscription.md) | List active subscriptions. |
-| [Create](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribe a listener application to receive change notifications when Microsoft Graph data changes. |
+| [Create](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribe a listener application to receive change notifications when Microsoft Graph data changes. When a susbcription is created and valdiated sucessfully, Microsoft Graph sends the app at least one [changeNotificationCollection](../resources/changenotificationcollection.md) object every time there's a change in the subscribed resource.|
 | [Get](../api/subscription-get.md) | [subscription](subscription.md) | Read properties and relationships of subscription object. |
 | [Update](../api/subscription-update.md) | [subscription](subscription.md) | Renew a subscription by updating its expiration time. |
 | [Delete](../api/subscription-delete.md) | None | Delete a subscription object. |
