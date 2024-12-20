@@ -278,10 +278,10 @@ items:
           href: ../../api/call-updaterecordingstatus.md
         - name: Start recording
           href: ../../api/call-startrecording.md
-        - name: Start transcription
-          href: ../../api/call-starttranscription.md
         - name: Stop recording
           href: ../../api/call-stoprecording.md
+        - name: Start transcription
+          href: ../../api/call-starttranscription.md
         - name: Stop transcription
           href: ../../api/call-stoptranscription.md
       - name: Logging Operations
@@ -771,6 +771,8 @@ items:
       href: ../../api/channel-list-tabs.md
     - name: List channel members
       href: ../../api/channel-list-members.md
+    - name: List all channel members
+      href: ../../api/channel-list-allmembers.md
     - name: Add channel member
       href: ../../api/channel-post-members.md
     - name: Get channel member
