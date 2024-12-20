@@ -1,11 +1,11 @@
 ---
 title: "changeNotification resource type"
-description: "Represents the change notification sent to the subscriber of a Microsoft Graph subscription."
+description: "Represents the change notification sent to the subscriber (app) of a Microsoft Graph subscription."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
 ms.subservice: change-notifications
-ms.date: 07/22/2024
+ms.date: 12/20/2024
 ---
 
 # changeNotification resource type
