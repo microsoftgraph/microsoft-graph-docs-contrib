@@ -278,10 +278,10 @@ items:
           href: ../../api/call-updaterecordingstatus.md
         - name: Start recording
           href: ../../api/call-startrecording.md
-        - name: Start transcription
-          href: ../../api/call-starttranscription.md
         - name: Stop recording
           href: ../../api/call-stoprecording.md
+        - name: Start transcription
+          href: ../../api/call-starttranscription.md
         - name: Stop transcription
           href: ../../api/call-stoptranscription.md
       - name: Logging Operations
