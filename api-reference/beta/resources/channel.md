@@ -105,7 +105,6 @@ For a POST request example, see [Request (create channel in migration state)](/m
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
 |allMembers|[conversationMember](conversationmember.md) collection |A collection of membership records associated with the channel. It includes both direct and indirect members of shared channels.|
-``
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
 |sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|A collection of teams with which a channel is shared.|

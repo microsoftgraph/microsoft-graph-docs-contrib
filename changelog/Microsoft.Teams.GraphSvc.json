@@ -2375,9 +2375,9 @@
         {
           "Id": "bd99be3e-66c5-44fa-8159-3b5788936946",
           "ApiChange": "Relationship",
-          "ChangedApiName": "AllMembers",
+          "ChangedApiName": "allMembers",
           "ChangeType": "Addition",
-          "Description": "Added the **AllMembers** navigation property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the **allMembers** navigation property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         }
       ],
