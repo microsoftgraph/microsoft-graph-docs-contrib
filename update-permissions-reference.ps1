@@ -75,7 +75,7 @@ function Generate-Markdown {
             try {
                 $lines = Get-Content -Path $msaPermissionNoteFile -ErrorAction Stop
                 if ($lines -like "*$name*") {
-                    $markdown += "`n![personal Microsoft accounts][MSA] The *" + $name + "* delegated permission is available for consent in personal Microsoft accounts.`n"
+                    $markdown += "`n![personal Microsoft accounts][MSA] The *" + $name + "* delegated permission is also available for consent in personal Microsoft accounts.`n"
                 }
             } 
             catch {
