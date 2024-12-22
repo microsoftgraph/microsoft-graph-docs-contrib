@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the result of an export operation performed by the [exportItems](./mailboxitem-export.md) function.
+Represents the result of an export operation performed by the [exportItems](../api/mailbox-exportitems.md) function.
 
 ## Properties
 |Property|Type|Description|
