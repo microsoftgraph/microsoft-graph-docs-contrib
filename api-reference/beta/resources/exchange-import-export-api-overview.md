@@ -12,9 +12,9 @@ ms.date: 12/06/2024
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph's Exchange Import-Export APIs lets your app import and export contents from Outlook mailboxes. Contents within a mailbox can be accessed as a set of [folders](./mailboxfolder.md) and [items](./mailboxitem.md) in a uniform format without having to understand the metadata/structure of each item type separately. These items can be [exported](../api/mailbox-exportitems.md) in [FastTransfer stream](https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) format in full-fidelity. Full-fidelity exports ensure that upon [importing](../api/mailbox-createimportsession.md) the item back, Exchange would be able to recreate the item without any loss of information.
+Microsoft Graph's Exchange Import-Export APIs lets your app import and export contents from Outlook mailboxes. Contents within a mailbox can be accessed as a set of [folders](./mailboxfolder.md) and [items](./mailboxitem.md) in a uniform format without having to understand the metadata/structure of each item type separately. These items can be [exported](../api/mailbox-exportitems.md) in [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) format in full-fidelity. Full-fidelity exports ensure that upon [importing](../api/mailbox-createimportsession.md) the item back, Exchange would be able to recreate the item without any loss of information.
 
-These APIs support accessing data in users' primary and [in-place archive](https://learn.microsoft.com/en-us/Exchange/clients-and-mobile-in-exchange-online/archive-client-and-compliance-&-security-feature-details?tabs=Archive-features#archive-mailbox) mailboxes on Exchange online.
+These APIs support accessing data in users' primary and [in-place archive](/exchange/clients-and-mobile-in-exchange-online/archive-client-and-compliance-&-security-feature-details?tabs=Archive-features#archive-mailbox) mailboxes on Exchange online.
 
 ## How to use the Exchange Import-Export APIs
 
