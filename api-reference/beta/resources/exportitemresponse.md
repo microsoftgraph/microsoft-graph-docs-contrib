@@ -1,6 +1,6 @@
 ---
 title: "exportItemResponse resource type"
-description: "The result of an export operation performed by the exportItems function."
+description: "Represents the result of an export operation performed by the exportItems function."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The result of an export operation performed by the [exportItems](./mailboxitem-export.md) function.
+Represents the result of an export operation performed by the [exportItems](./mailboxitem-export.md) function.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |changeKey|String|The version of the item.|
-|data|Stream|Data representing item in a base64 encoded [FTS format](https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450).|
+|data|Stream|Data that represents an item in a base64 encoded [FTS format](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450).|
 |itemId|String|The item's unique identifier.|
 
 ## JSON representation
@@ -33,8 +33,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.exportItemResponse",
-  "itemId": "String",
+  "changeKey": "String",
   "data": "Stream",
-  "changeKey": "String"
+  "itemId": "String"
 }
 ```
