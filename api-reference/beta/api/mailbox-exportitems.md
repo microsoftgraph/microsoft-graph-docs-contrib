@@ -1,6 +1,6 @@
 ---
 title: "mailbox: exportItems"
-description: "Export mailbox items in full fidelity"
+description: "Export Exchange mailbox items in full fidelity FTS format for the purpose of backup."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This function allows user to export an Exchange mailbox [items](../resources/mailboxitem.md) in full fidelity [FTS format](https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450)
+Export Exchange mailbox [items](../resources/mailboxitem.md) in full fidelity [FTS format](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450)
 for the purpose of backup. This item format can be restored back to same or different mailbox.
 
-Upto 20 items can be exported in a single export request.
+You can export up to 20 items in a single export request.
 
 ## Permissions
 
@@ -55,17 +55,17 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ItemIds|String collection|A collection of identifiers of [items](../resources/mailboxitem.md) to export. All identifiers in the collection MUST be for items in the same mailbox. Maximum size of this collection is 20 strings.|
+|itemIds|String collection|A collection of identifiers of [items](../resources/mailboxitem.md) to export. All identifiers in the collection _must_ be for items in the same mailbox. Maximum size of this collection is 20 strings.|
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [exportItemResponse](../resources/exportitemresponse.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and a collection of [exportItemResponse](../resources/exportitemresponse.md) objects in the response body.
 
 ## Examples
 
 ### Request
 
-The following example exports 2 items present in the user's mailbox. The `itemIds` of the items to be exported are specified in the request body.
+The following example exports two items present in the user's mailbox. The **itemIds** of the items to be exported are specified in the request body.
 <!-- {
   "blockType": "request",
   "name": "mailboxthis.exportitems"

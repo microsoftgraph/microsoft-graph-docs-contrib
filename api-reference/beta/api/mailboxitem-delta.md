@@ -95,9 +95,9 @@ Prefer: odata.maxpagesize=2
 
 ### Response
 
-If the request is successful, the response would include a state token, which is either a _skipToken_ (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). Respectively, they indicate whether you should continue with the round or you have completed getting all the changes for that round.
+If the request is successful, the response includes a state token, which is either a _skipToken_ (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). Respectively, they indicate whether you should continue with the round or you have completed getting all the changes for that round.
 
-The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
+The following response shows a _skipToken_ in an **@odata.nextLink** response header.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -129,7 +129,7 @@ Content-length: 337
 }
 ```
 
-## See also
+## Related content
 
-- [Use delta query to track changes in Microsoft Graph data](https://docs.microsoft.com/en-us/graph/delta-query-overview)
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 - [Get incremental changes to folders in a mailbox](./mailboxfolder-delta.md)
