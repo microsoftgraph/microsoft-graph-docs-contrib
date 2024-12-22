@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API returns a list of mailboxes that belong to a given user by specifying the user-id. Currently the mailbox types supported are user's Primary & In-Place Archive. To learn how to get a list of users in a tenant, see [list users](https://docs.microsoft.com/en-us/graph/api/user-list?view=graph-rest-1.0&tabs=http).
+Get a list of mailboxes that belong to a user. Currently the mailbox types supported are user's Primary & In-Place Archive. To learn how to get a list of users in a tenant, see [list users](../api/user-list.md).
 
 ## Permissions
 
