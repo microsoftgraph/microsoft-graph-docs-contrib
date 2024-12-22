@@ -17,8 +17,8 @@ Namespace: microsoft.graph
 A folder in a user's mailbox, such as Inbox, Drafts or other user created folders. Folders can contain various mailbox items like messages, events, contacts, 
 other Outlook items, and child folders.
 
-This resource supports using [delta query](https://docs.microsoft.com/en-us/graph/delta-query-overview) to track incremental additions, deletions, and updates,
-by providing a [delta](../api/mailboxfolder-delta.md) function. It also supports [single-value and multi-value extended properties](https://learn.microsoft.com/en-us/graph/api/resources/extended-properties-overview?view=graph-rest-1.0) for storing and accessing custom data that is not already exposed in the Microsoft Graph API metadata.
+This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
+by providing a [delta](../api/mailboxfolder-delta.md) function. It also supports [single-value and multi-value extended properties](../resources/extended-properties-overview.md) for storing and accessing custom data that is not already exposed in the Microsoft Graph API metadata.
 
 ## Methods
 |Method|Return type|Description|
