@@ -1,6 +1,6 @@
 ---
 title: "mailbox: importItem"
-description: "This function allows user to import an Exchange mailbox item using its FTS format"
+description: "Import an Exchange mailbox item using its FTS format."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This function allows user to import an Exchange mailbox [item](../resources/mailboxitem.md) using the [FastTransfer stream](https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Import is a two step process. Items can be restored back to the same or a different mailbox.
+Import an Exchange mailbox [item](../resources/mailboxitem.md) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. The import process consists of two steps. Items can be restored to the same mailbox or a different one.
 
 ## Permissions
 
@@ -82,7 +82,7 @@ Because the initial opaque URL is preauthenticated and contains the appropriate 
 
 ## Import URL response
 
-If successful, this action returns a `200 OK` response code and a importMailboxItemResponse object in the response body.
+If successful, this action returns a `200 OK` response code and an importMailboxItemResponse object in the response body.
 
 ## Examples
 
