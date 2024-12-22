@@ -87,7 +87,6 @@ The following example shows a request.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/delta
-
 Prefer: odata.maxpagesize=2
 ```
 
@@ -95,7 +94,7 @@ Prefer: odata.maxpagesize=2
 
 If the request is successful, the response would include a state token, which is either a _skipToken_ (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). Respectively, they indicate whether you should continue with the round or you have completed getting all the changes for that round.
 
-The response below shows a _deltaToken_ in an _@odata.deltaLink_ response header.
+The following example shows a _deltaToken_ in an **@odata.deltaLink** response header.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -128,6 +127,6 @@ Content-length: 254
 }
 ```
 
-## See also
-- [Use delta query to track changes in Microsoft Graph data](https://docs.microsoft.com/en-us/graph/delta-query-overview)
+## Related content
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 - [Get incremental changes to items in a folder](./mailboxitem-delta.md)
