@@ -74,10 +74,10 @@ Because the initial opaque URL is preauthenticated and contains the appropriate 
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|FolderId|String|The id of the folder into which you want to import the item. Required.|
+|FolderId|String|The ID of the folder into which you want to import the item. Required.|
 |Mode|String|Specify the import mode can be `create` or `update`. Required. <br><br> <ul><li>create: Creates a new item. Specifying ItemId or ChangeKey in request body would result in an error.</li><li>update: Updates an existing item. ItemId & ChangeKey mandatory in the request body for updates. The operation would fail if (ItemID + ChangeKey) combination doesn't match with any existing item in folder.</li></ul>|
-|Data|String|Data representing item in a base64 encoded [FTS format](https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450). Required.|
-|ItemId|String|The item's unique identifier. Required during `update`.|
+|Data|String|Data that represents an item in a base64 encoded [FTS format](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450). Required.|
+|ItemId|String|The unique identifier for the item. Required during `update`.|
 |ChangeKey|String|The version of the item. Required during `update`.|
 
 ## Import URL response
@@ -90,7 +90,7 @@ If successful, this action returns a `200 OK` response code and an importMailbox
 
 #### Create mailboxItemImportSession request
 
-Here's an example of how to create an import session. The opaque URL, returned in the `importUrl` property of the response, is preauthenticated and contains the appropriate authorization token for subsequent POST queries in the https://outlook.office.com domain. That token expires by `expirationDateTime`. Don't customize this URL for subsequent POST operations.
+The following example shows how to create an import session. The opaque URL, returned in the **importUrl** property of the response, is preauthenticated and contains the appropriate authorization token for subsequent POST queries in the https://outlook.office.com domain. That token expires by **expirationDateTime**. Don't customize this URL for subsequent POST operations.
 
 <!-- {
   "blockType": "request",
@@ -101,7 +101,7 @@ Here's an example of how to create an import session. The opaque URL, returned i
 POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/createImportSession
 ```
 
-#### Create mailboxItemImportSession Response
+#### Create mailboxItemImportSession response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -125,12 +125,13 @@ Content-length: 232
 
 ### Example 2: Create an item in mailbox using import operation
 
-Here's an example of importing a new item into the mailbox in **create** mode.
+The following example shows how to import a new item into the mailbox in **create** mode.
 
 #### Create mailboxItem request
 
 ``` http
 POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b
+
 {
     "FolderId": "EDSVrdi3lRAAEED0yTAAA=",
     "Mode": "create",
@@ -154,12 +155,13 @@ Content-length: 232
 
 ### Example 3: Update an existing item in mailbox using import operation
 
-Here's an example of importing a new version of an existing item into the mailbox in **update** mode.
+The following example shows how to import a new version of an existing item into the mailbox in **update** mode.
 
 #### Update mailboxItem request
 
 ``` http
 POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b
+
 {
     "FolderId": "EDSVrdi3lRAAEED0yTAAA=",
     "Mode": "update",
