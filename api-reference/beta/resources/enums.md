@@ -5105,3 +5105,13 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|
 |bulk|
 |unknownFutureValue|
+
+### quota values
+|Member|
+|:-----|
+|deleted|
+|remaining|
+|state|
+|storagePlanInformation|
+|total|
+|used|
