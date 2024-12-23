@@ -64,7 +64,7 @@ The following example shows a request.
 
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/b0c2d35f-3385-46c8-a6f5-6c3dfad7708b/retrievePolicyApplySchedule
-``
+```
 
 ### Response
 
