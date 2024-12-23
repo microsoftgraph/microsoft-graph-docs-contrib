@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceTermsOfUseAgreementItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.TermsOfUseAgreementsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"files"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceTermsOfUseAgreementItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.TermsOfUseAgreementsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

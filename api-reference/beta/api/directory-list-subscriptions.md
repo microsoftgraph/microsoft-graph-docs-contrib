@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "arp19690"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/31/2024
 ---
 
 # List subscriptions
@@ -23,6 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directory_list_subscriptions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directory-list-subscriptions-permissions.md)]
+
+[!INCLUDE [rbac-company-subscriptions-subscribedskus-apis](../includes/rbac-for-apis/rbac-company-subscriptions-subscribedskus-apis.md)]
+
 
 ## HTTP request
 

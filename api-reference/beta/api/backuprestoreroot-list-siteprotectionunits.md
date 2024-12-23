@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # List siteProtectionUnits
@@ -32,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/backupRestore/siteProtectionUnits
+GET /solutions/backupRestore/protectionUnits/microsoft.graph.siteProtectionUnit
 GET /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteProtectionUnits
 ```
 
@@ -61,6 +62,7 @@ The following example shows how to get a list of all the **siteProtectionUnits**
 #### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -68,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/siteProtectionUnits
+GET https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/microsoft.graph.siteProtectionUnit
 ```
 
 # [C#](#tab/csharp)
@@ -118,7 +120,7 @@ The following example shows the response.
 HTTP/1.1 200 OK
 
 {
-  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/siteProtectionUnits?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/microsoft.graph.siteProtectionUnit?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
   "value": [
     {
       "@odata.type": "#microsoft.graph.siteProtectionUnit",

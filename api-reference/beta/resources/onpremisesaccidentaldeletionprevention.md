@@ -1,11 +1,12 @@
 ---
 title: "onPremisesAccidentalDeletionPrevention resource type"
 description: "Contains the accidental deletion prevention configuration for a tenant."
-author: "dkershaw10"
-ms.reviewer: adam.lassman, daradwan
+author: dhanyahk
+ms.reviewer: sgupta, abhishek.badjatya, dhanyahk
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 10/03/2024
 ---
 
 # onPremisesAccidentalDeletionPrevention resource type

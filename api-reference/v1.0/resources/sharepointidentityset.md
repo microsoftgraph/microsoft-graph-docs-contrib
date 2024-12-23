@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "Represents a keyed collection of sharePointIdentity and identity resources."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 # sharePointIdentitySet resource type
 

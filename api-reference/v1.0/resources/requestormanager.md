@@ -1,12 +1,13 @@
 ---
-title: "requestorManager complex type"
+title: "requestorManager resource type"
 description: "Identifies a relationship to another user in the tenant who is allowed as approver."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
-# requestorManager complex type
+# requestorManager resource type
 
 Namespace: microsoft.graph
 

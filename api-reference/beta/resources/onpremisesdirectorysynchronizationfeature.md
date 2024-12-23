@@ -1,11 +1,12 @@
 ---
 title: "onPremisesDirectorySynchronizationFeature resource type"
 description: "Consists of directory synchronization features that can be enabled or disabled."
-author: "dkershaw10"
-ms.reviewer: adam.lassman, daradwan
+author: dhanyahk
+ms.reviewer: sgupta, abhishek.badjatya, dhanyahk
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 10/03/2024
 ---
 
 # onPremisesDirectorySynchronizationFeature resource type
@@ -31,7 +32,7 @@ Consists of [directory synchronization](../resources/onpremisesdirectorysynchron
 | fopeConflictResolutionEnabled                    | Boolean | Used to indicate that for a Microsoft Forefront Online Protection for Exchange (FOPE) migrated tenant, the conflicting proxy address should be migrated over. |
 | groupWriteBackEnabled                            | Boolean | Used to enable object-level group writeback feature for additional group types.                                                                              |
 | passwordSyncEnabled                              | Boolean | Used to indicate on-premise password synchronization is enabled.                                                                                             |
-| passwordWritebackEnabled                         | Boolean | Used to indicate that writeback of password resets from Microsoft Entra ID to on-premises AD is enabled.                                                                       |
+| passwordWritebackEnabled                         | Boolean | Used to indicate that writeback of password resets from Microsoft Entra ID to on-premises AD is enabled. **This property isn't in use and updating it isn't supported.**                                                                       |
 | quarantineUponProxyAddressesConflictEnabled      | Boolean | Used to indicate that we should quarantine objects with conflicting proxy address.                                                                           |
 | quarantineUponUpnConflictEnabled                 | Boolean | Used to indicate that we should quarantine objects conflicting with duplicate userPrincipalName.                                                                           |
 | softMatchOnUpnEnabled                            | Boolean | Used to indicate that we should soft match objects based on userPrincipalName.                                                                                |

@@ -5,8 +5,9 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
-# targetManager complex type
+# targetManager resource type
 
 Namespace: microsoft.graph
 

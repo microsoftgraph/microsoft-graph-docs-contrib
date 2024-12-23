@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 10/21/2024
 ---
 
 # Update approvalStage
@@ -46,7 +47,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 To update an approval decision in PIM for groups:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/steps/{approvalStageId}
+PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages/{approvalStageId}
 ```
 
 ## Request headers

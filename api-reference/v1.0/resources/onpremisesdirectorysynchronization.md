@@ -1,11 +1,12 @@
 ---
 title: "onPremisesDirectorySynchronization resource type"
 description: "A container for on-premises directory synchronization functionalities that are available for the organization."
-author: "dkershaw10"
-ms.reviewer: adam.lassman, daradwan
+author: dhanyahk
+ms.reviewer: sgupta, abhishek.badjatya, dhanyahk
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 10/03/2024
 ---
 
 # onPremisesDirectorySynchronization resource type

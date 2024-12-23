@@ -5,6 +5,7 @@ author: "AkJo"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
 # resourceSpecificPermissionGrant resource type
@@ -24,6 +25,7 @@ For more information about granting apps consent to access a specific instance o
 |[List permission grants of a chat](../api/chat-list-permissiongrants.md)   | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List resource-specific permissions that have been granted in a specific [chat](chat.md).  |
 |[List permission grants of a group](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List resource-specific permissions that have been granted in a specific [group](group.md). |
 |[List permission grants of a team](../api/team-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List resource-specific permissions that have been granted in a specific [team](team.md). |
+|[List permission grants of a user](../api/user-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List resource-specific permissions that have been granted to a specific [user](user.md). |
 
 ## Properties
 

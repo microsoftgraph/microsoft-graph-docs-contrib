@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\VirtualEventRegistration;
+use Microsoft\Graph\Beta\Generated\Models\VirtualEventExternalRegistrationInformation;
 use Microsoft\Graph\Beta\Generated\Models\VirtualEventRegistrationQuestionAnswer;
 
 
@@ -16,6 +17,10 @@ $requestBody = new VirtualEventRegistration();
 $requestBody->setFirstName('Diane');
 $requestBody->setLastName('Demoss');
 $requestBody->setEmail('DianeDemoss@contoso.com');
+$externalRegistrationInformation = new VirtualEventExternalRegistrationInformation();
+$externalRegistrationInformation->setReferrer('Facebook');
+$externalRegistrationInformation->setRegistrationId('myExternalRegistrationId');
+$requestBody->setExternalRegistrationInformation($externalRegistrationInformation);
 $requestBody->setPreferredTimezone('Pacific Standard Time');
 $requestBody->setPreferredLanguage('en-us');
 $registrationQuestionAnswersVirtualEventRegistrationQuestionAnswer1 = new VirtualEventRegistrationQuestionAnswer();

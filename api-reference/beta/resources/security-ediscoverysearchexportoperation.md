@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "resourcePageType"
+ms.date: 10/31/2024
 ---
 
 # ediscoverySearchExportOperation resource type
@@ -21,22 +22,22 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `contentExport`,  `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|additionalOptions|[microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values)| The additional items to include in the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`.|
-|completedDateTime|DateTimeOffset|The date and time when the operation was completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The user who created the operation. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|createdDateTime|DateTimeOffset|The date and time when the operation was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|description|String|The name of export provided by the user.|
-|displayName|String|The description of the export by the user.|
+|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `contentExport`,  `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|additionalOptions|[microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values)| The additional items to include in the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`. |
+|completedDateTime|DateTimeOffset|The date and time when the operation was completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The user who created the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|createdDateTime|DateTimeOffset|The date and time when the operation was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|description|String|The description of the export by the user.|
+|displayName|String|The name of export provided by the user.|
 |exportCriteria|[microsoft.graph.security.exportCriteria](../resources/security-ediscoverysearchexportoperation.md#exportcriteria-values)|Items to be included in the export. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
 |exportFileMetadata|[microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md) collection|Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.|
 |exportFormat|[microsoft.graph.security.exportFormat](../resources/security-ediscoverysearchexportoperation.md#exportformat-values)|Format of the emails of the export. The possible values are: `pst`, `msg`, `eml`, `unknownFutureValue`.|
 |exportLocation|[microsoft.graph.security.exportLocation](../resources/security-ediscoverysearchexportoperation.md#exportlocation-values)| Location scope for partially indexed items. You can choose to include partially indexed items only in responsive locations with search hits or in all targeted locations. The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`.|
 |exportSingleItems|Boolean|Indicates whether to export single items.|
-|id|String| The ID for the operation. Read-only. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|percentProgress|Int32|The progress of the operation. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
+|id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|percentProgress|Int32|The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 
 ### additionalOptions values
 

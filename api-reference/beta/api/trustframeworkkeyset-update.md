@@ -2,9 +2,10 @@
 title: "Update trustFrameworkKeySet"
 description: "Update the properties of a **trustFrameworkKeySet** object."
 ms.localizationpriority: medium
-author: "Nickgmicrosoft"
+author: "gysingh"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 10/17/2024
 ---
 
 # Update trustFrameworkKeySet
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "trustframeworkkeyset_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframeworkkeyset-update-permissions.md)]
+
+[!INCLUDE [rbac-b2c-trustframework-keyset-apis](../includes/rbac-for-apis/rbac-b2c-trustframework-keyset-apis.md)]
 
 ## HTTP request
 

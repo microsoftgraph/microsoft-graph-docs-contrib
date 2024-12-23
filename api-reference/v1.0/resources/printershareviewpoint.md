@@ -5,6 +5,7 @@ author: "venkatnagula"
 ms.localizationpriority: medium
 ms.subservice: "universal-print"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printerShareViewpoint resource type

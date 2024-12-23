@@ -5,6 +5,7 @@ description: The ItemActivityStat object provides information about activities t
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 # itemActivityStat resource type
 

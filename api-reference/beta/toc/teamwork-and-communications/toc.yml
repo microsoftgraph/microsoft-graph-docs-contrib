@@ -4,6 +4,30 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
+- name: AI interactions (preview)
+  items:
+  - name: AI interaction history
+    items:
+    - name: AI interaction history
+      href: ../../resources/aiinteractionhistory.md
+    - name: List all enterprise interactions
+      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
+  - name: Complex types
+    items:
+    - name: AI interaction
+      href: ../../resources/aiinteraction.md
+    - name: AI interaction attachment
+      href: ../../resources/aiinteractionattachment.md
+    - name: AI interaction context
+      href: ../../resources/aiinteractioncontext.md
+    - name: AI interaction link
+      href: ../../resources/aiinteractionlink.md
+    - name: AI interaction mention
+      href: ../../resources/aiinteractionmention.md
+    - name: AI interaction mentioned identity set
+      href: ../../resources/aiinteractionmentionedidentityset.md
+    - name: AI user
+      href: ../../resources/aiuser.md
 - name: Approvals
   items:
   - name: Approval item
@@ -164,6 +188,8 @@ items:
       href: ../../api/group-list-permissiongrants.md
     - name: List permission grants of a team
       href: ../../api/team-list-permissiongrants.md
+    - name: List permission grants of a user
+      href: ../../api/user-list-permissiongrants.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -250,6 +276,14 @@ items:
         items:
         - name: Update recording status
           href: ../../api/call-updaterecordingstatus.md
+        - name: Start recording
+          href: ../../api/call-startrecording.md
+        - name: Stop recording
+          href: ../../api/call-stoprecording.md
+        - name: Start transcription
+          href: ../../api/call-starttranscription.md
+        - name: Stop transcription
+          href: ../../api/call-stoptranscription.md
       - name: Logging Operations
         items:
         - name: Log teleconference device quality data
@@ -364,6 +398,24 @@ items:
         href: ../../resources/callrecords-smslogrow.md
       - name: Get SMS log
         href: ../../api/callrecords-callrecord-getsmslog.md
+  - name: Copilot settings
+    items:
+    - name: Copilot admin limited mode
+      items:
+      - name: Copilot admin limited mode
+        href: ../../resources/copilotadminlimitedmode.md
+      - name: Get
+        href: ../../api/copilotadminlimitedmode-get.md
+      - name: Update
+        href: ../../api/copilotadminlimitedmode-update.md
+    - name: Complex types
+      items:
+      - name: Copilot admin
+        href: ../../resources/copilotadmin.md
+      - name: Copilot admin setting
+        href: ../../resources/copilotadminsetting.md
+      - name: Copilot root
+        href: ../../resources/copilotroot.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -510,6 +562,8 @@ items:
       items:
       - name: Virtual event townhall
         href: ../../resources/virtualeventtownhall.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-townhalls.md
       - name: Create
         href: ../../api/virtualeventsroot-post-townhalls.md
       - name: Get
@@ -520,10 +574,18 @@ items:
         href: ../../api/virtualeventtownhall-publish.md
       - name: Cancel
         href: ../../api/virtualeventtownhall-cancel.md
+      - name: List by user role
+        href: ../../api/virtualeventtownhall-getbyuserrole.md
+      - name: List by user ID and role
+        href: ../../api/virtualeventtownhall-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
     - name: Virtual event webinar
       items:
       - name: Virtual event webinar
         href: ../../resources/virtualeventwebinar.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-webinars.md
       - name: Create
         href: ../../api/virtualeventsroot-post-webinars.md
       - name: Get
@@ -534,12 +596,16 @@ items:
         href: ../../api/virtualeventwebinar-publish.md
       - name: Cancel
         href: ../../api/virtualeventwebinar-cancel.md
-      - name: List in organization
-        href: ../../api/virtualeventsroot-list-webinars.md
       - name: List by user role
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
+    - name: Complex types
+      items:
+      - name: Virtual event external information
+        href: ../../resources/virtualeventexternalinformation.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
@@ -689,8 +755,6 @@ items:
       href: ../../api/channel-patch.md
     - name: Delete channel
       href: ../../api/channel-delete.md
-    - name: Get message delta
-      href: ../../api/chatmessage-delta.md
     - name: List channel messages
       href: ../../api/channel-list-messages.md
     - name: Get all channel messages
@@ -707,6 +771,8 @@ items:
       href: ../../api/channel-list-tabs.md
     - name: List channel members
       href: ../../api/channel-list-members.md
+    - name: List all members
+      href: ../../api/channel-list-allmembers.md
     - name: Add channel member
       href: ../../api/channel-post-members.md
     - name: Get channel member
@@ -793,6 +859,8 @@ items:
         href: ../../api/chats-getallmessages.md
       - name: Get retained messages across all chats
         href: ../../api/chat-getallretainedmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
     - name: Apps
       items:
       - name: List apps in chat
@@ -841,8 +909,6 @@ items:
       items:
       - name: List messages in channel
         href: ../../api/channel-list-messages.md
-      - name: Get delta of messages in channel
-        href: ../../api/chatmessage-delta.md
       - name: Create subscription for new channel messages
         href: ../../api/subscription-post-subscriptions.md
       - name: Get message in channel
@@ -885,6 +951,8 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats for user
         href: ../../api/chats-getallmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
       - name: Get all channel messages
         href: ../../api/channel-getallmessages.md
       - name: Create subscription for new chat messages
@@ -953,6 +1021,8 @@ items:
       href: ../../api/team-update-members.md
     - name: Remove member
       href: ../../api/team-delete-members.md
+    - name: Remove members in bulk
+      href: ../../api/conversationmember-remove.md
     - name: Archive team
       href: ../../api/team-archive.md
     - name: Unarchive team

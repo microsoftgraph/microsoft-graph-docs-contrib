@@ -12,14 +12,14 @@ using Microsoft.Graph.Beta.Models.Networkaccess;
 var requestBody = new WebCategoryFilteringRule
 {
 	OdataType = "#microsoft.graph.networkaccess.webCategoryFilteringRule",
-	Name = "Block Alcohol",
+	Name = "Block Gambling Sites",
 	RuleType = NetworkDestinationType.WebCategory,
 	Destinations = new List<RuleDestination>
 	{
 		new WebCategory
 		{
 			OdataType = "#microsoft.graph.networkaccess.webCategory",
-			Name = "AlcoholAndTobacco",
+			Name = "Gambling",
 		},
 	},
 };

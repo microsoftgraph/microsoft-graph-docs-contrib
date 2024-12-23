@@ -2,9 +2,10 @@
 title: "trustFrameworkPolicy"
 description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This describes the operations available on a trustFrameworkPolicy object for the tenant."
 ms.localizationpriority: medium
-author: "Nickgmicrosoft"
+author: "gysingh"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 # trustFrameworkPolicy resource type
 

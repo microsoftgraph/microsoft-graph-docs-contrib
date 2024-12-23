@@ -86,6 +86,8 @@ items:
       href: ../../api/group-list-permissiongrants.md
     - name: List permission grants of a team
       href: ../../api/team-list-permissiongrants.md
+    - name: List permission grants of a user
+      href: ../../api/user-list-permissiongrants.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -396,6 +398,8 @@ items:
       items:
       - name: Virtual event webinar
         href: ../../resources/virtualeventwebinar.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-webinars.md
       - name: Create
         href: ../../api/virtualeventsroot-post-webinars.md
       - name: Get
@@ -406,8 +410,6 @@ items:
         href: ../../api/virtualeventwebinar-publish.md
       - name: Cancel
         href: ../../api/virtualeventwebinar-cancel.md
-      - name: List in organization
-        href: ../../api/virtualeventsroot-list-webinars.md
       - name: List by user role
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
@@ -485,8 +487,6 @@ items:
       href: ../../api/channel-patch.md
     - name: Delete channel
       href: ../../api/channel-delete.md
-    - name: Get message delta
-      href: ../../api/chatmessage-delta.md
     - name: List channel messages
       href: ../../api/channel-list-messages.md
     - name: Get all channel messages
@@ -577,6 +577,8 @@ items:
         href: ../../api/chats-getallmessages.md
       - name: Get retained messages across all chats
         href: ../../api/chat-getallretainedmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
     - name: Apps
       items:
       - name: List apps in chat
@@ -619,8 +621,6 @@ items:
       items:
       - name: List messages in channel
         href: ../../api/channel-list-messages.md
-      - name: Get delta of messages in channel
-        href: ../../api/chatmessage-delta.md
       - name: Create subscription for new channel messages
         href: ../../api/subscription-post-subscriptions.md
       - name: Get message in channel
@@ -663,6 +663,8 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats for user
         href: ../../api/chats-getallmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
       - name: Get all channel messages
         href: ../../api/channel-getallmessages.md
       - name: Create subscription for new chat messages
@@ -731,6 +733,8 @@ items:
       href: ../../api/team-update-members.md
     - name: Remove member
       href: ../../api/team-delete-members.md
+    - name: Remove members in bulk
+      href: ../../api/conversationmember-remove.md
     - name: Archive team
       href: ../../api/team-archive.md
     - name: Unarchive team
@@ -859,6 +863,8 @@ items:
       href: ../../api/openshift-update.md
     - name: Delete
       href: ../../api/openshift-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Open shift change request
     items:
     - name: Open shift change request
@@ -911,6 +917,8 @@ items:
       href: ../../api/shift-put.md
     - name: Delete
       href: ../../api/shift-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Shift preferences
     items:
     - name: Shift preferences
@@ -947,6 +955,8 @@ items:
       href: ../../api/timeoff-put.md
     - name: Delete
       href: ../../api/timeoff-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Time off reason
     items:
     - name: Time off reason
@@ -1001,8 +1011,6 @@ items:
       href: ../../api/workingtimeschedule-endworkingtime.md
   - name: Complex types
     items:
-    - name: Change tracked entity
-      href: ../../resources/changetrackedentity.md
     - name: Identity
       href: ../../resources/identity.md
     - name: Identity set

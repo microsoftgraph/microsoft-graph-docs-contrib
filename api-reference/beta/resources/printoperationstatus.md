@@ -1,13 +1,14 @@
 ---
-title: printOperationStatus resource type
+title: "printOperationStatus resource type"
 description: Represents the current status of a long-running Universal Print operation.
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
-# printOperationStatus complex type
+# printOperationStatus resource type
 
 Namespace: microsoft.graph
 
@@ -23,13 +24,13 @@ Represents the current status of a long-running Universal Print operation.
 
 ### printOperationProcessingState values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|notStarted|0|The operation has not yet started.|
-|running|1|The operation is running.|
-|succeeded|2|The operation completed successfully.|
-|failed|3|The operation failed.|
-|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+|Member|Description|
+|:---|:---|
+|notStarted|The operation has not yet started.|
+|running|The operation is running.|
+|succeeded|The operation completed successfully.|
+|failed|The operation failed.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 

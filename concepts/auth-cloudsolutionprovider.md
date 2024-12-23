@@ -5,6 +5,7 @@ author: koravvams
 ms.localizationpriority: high
 ms.subservice: "partner-customer-administration"
 ms.custom: graphiamtop20, has-azure-ad-ps-ref
+ms.date: 11/07/2024
 ---
 
 # Call Microsoft Graph from a Cloud Solution Provider application
@@ -40,7 +41,7 @@ The initial steps required here follow most of the same steps used to register a
 
 Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using [Azure AD PowerShell V2](https://www.powershellgallery.com/packages/AzureAD) or [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation). Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
 
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../api-reference/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 # [Azure AD PowerShell](#tab/azuread)
 
@@ -133,7 +134,7 @@ CSP customer engagement is currently limited to a single region. Partner-managed
 
 ## Calling Microsoft Graph immediately after customer creation
 
-When you create a new customer using the [Partner Center API](https://partnercenter.microsoft.com/partner/developer), a new customer tenant gets created. Additionally, a partner relationship also gets created, which makes you the partner of record for this new customer tenant. This partner relationship can take up to 3 minutes to propagate to the new customer tenant. If your app calls Microsoft Graph straight after creation, your app will likely receive an access denied error. A similar delay may be experienced when an existing customer accepts your invitation. This is because preconsent relies on the partner relationship being present in the customer tenant.
+When you create a new customer using the [Partner Center API](/partner-center/developer/create-a-customer), a new customer tenant gets created. Additionally, a partner relationship also gets created, which makes you the partner of record for this new customer tenant. This partner relationship can take up to 3 minutes to propagate to the new customer tenant. If your app calls Microsoft Graph straight after creation, your app will likely receive an access denied error. A similar delay may be experienced when an existing customer accepts your invitation. This is because preconsent relies on the partner relationship being present in the customer tenant.
 
 To avoid this problem, we recommend that your partner app should wait **three minutes** after customer creation before calling Microsoft Entra ID to acquire a token (to call Microsoft Graph). This should cover most cases. 
 However, if after waiting three minutes you still receive an authorization error, please wait an extra 60 seconds and try again.

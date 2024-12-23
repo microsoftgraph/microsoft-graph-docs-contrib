@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/02/2024
 ---
 
 # channel resource type
@@ -26,7 +27,6 @@ where files are shared, and where tabs are added.
 |[Get primary channel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
-|[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
 |[Get all channel messages](../api/channel-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
 |[Get all retained channel messages](../api/channel-getallretainedmessages.md)|[chatMessage](../resources/chatmessage.md) collection|Get all retained [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md). |

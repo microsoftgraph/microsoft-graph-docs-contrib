@@ -6,6 +6,7 @@ doc_type: apiPageType
 author: "jkdouglas"
 ms.reviewer: mapamu
 ms.subservice: "entra-directory-management"
+ms.date: 10/11/2024
 ---
 
 # Get pendingExternalUserProfile
@@ -22,11 +23,7 @@ Retrieve the properties of a specific [pendingExternalUserProfile](../resources/
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "pendingexternaluserprofile-get-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "pendingexternaluserprofile_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/pendingexternaluserprofile-get-permissions.md)]
 
 [!INCLUDE [rbac-externaluserprofiles-apis-read](../includes/rbac-for-apis/rbac-externaluserprofiles-apis-read.md)]

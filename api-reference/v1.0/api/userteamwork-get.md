@@ -5,6 +5,7 @@ author: "mea"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/16/2024
 ---
 
 # Get userTeamwork

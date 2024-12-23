@@ -37,7 +37,7 @@ items:
       displayName: change notifications, data loss prevention, DLP, scenario
     - name: Augment Microsoft search
       href: patterns/augment-search-experience-with-custom-data.md
-      displayName: Microsoft Graph connectiors, Microsoft 365 Copilot, scenario
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot, scenario
   - name: Metered APIs
     items:
     - name: Overview
@@ -476,6 +476,8 @@ items:
         href: windowsupdates-enroll.md
       - name: Deploy a feature update
         href: windowsupdates-deploy-update.md
+      - name: Deploy a hotpatch update
+        href: windowsupdates-hotpatch-update.md
       - name: Deploy an expedited update
         href: windowsupdates-deploy-expedited-update.md
       - name: Manage driver update
@@ -680,6 +682,10 @@ items:
         href: permissions-management-how-to-authorization-system-azure.md
       - name: GCP authorization systems API operations
         href: permissions-management-how-to-authorization-system-gcp.md
+    - name: Network access (preview)
+      items:
+      - name: Configure Microsoft Entra Private Access
+        href: tutorial-entra-private-access.md
   - name: Industry data ETL (preview)
     href: industrydata-concept-overview.md
   - name: Mail
@@ -860,6 +866,10 @@ items:
       href: security-information-protection-overview.md
     - name: Partner opportunities
       href: security-partner-overview.md
+    - name: eDiscovery
+      items:
+      - name: Set up application authentication
+        href: security-ediscovery-appauthsetup.md
   - name: Sites and lists
     href: sharepoint-concept-overview.md
     displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
@@ -909,6 +919,9 @@ items:
       items:
       - name: Call records
         href: cloud-communications-callrecords.md
+        items:
+        - name: FAQ
+          href: callrecords-api-faq.md
       - name: Supported call types
         href: cloud-communications-calls.md
       - name: Create or join online meetings
@@ -923,6 +936,14 @@ items:
         href: cloud-communications-identifylargegalleryview.md
       - name: Manage watermarks for sensitive meetings
         href: cloud-communications-watermark-meeting.md
+      - name: Virtual events
+        items:
+        - name: Choose the right meeting type 
+          href: cloud-communications-virtual-events-overview.md
+        - name: Town hall use cases 
+          href: cloud-communications-virtual-events-townhall-usecases.md
+        - name: Webinar use cases 
+          href: cloud-communications-virtual-events-webinar-usecases.md
     - name: Change notifications
       items:
       - name: Subscribe to teams, chats, channels
@@ -945,6 +966,9 @@ items:
       href: /microsoftteams/platform/get-started/b2c-apps?context=graph/context
     - name: Embed Teams chat in your app
       href: teams-embed-within-own-app.md
+    - name: Approvals app APIs
+      href: approvals-app-api.md
+      displayName: approvals, Approvals API, get approvals
     - name: Payment models and licensing requirements
       href: teams-licenses.md
     - name: Implementation differences in national clouds

@@ -121,6 +121,12 @@ Microsoft Graph also provides the following identity and access capabilities for
 
 ---
 
+<!-- Start of: Link to ZT guidance: H2 section -->
+
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
+
 ## Licensing
 
 Microsoft Entra licenses include Microsoft Entra ID Free, P1, P2, and Governance; Microsoft Entra Permissions Management; and Microsoft Entra Workload ID.
@@ -131,3 +137,4 @@ For detailed information about licensing for different features, see [Microsoft 
 
 - [Implement identity standards with Microsoft Entra ID](/entra/standards/)
 - [Microsoft Entra ID Guide for independent software developers](/entra/architecture/guide-for-independent-software-developers)
+- Review the [Microsoft Entra deployment plans](/entra/architecture/deployment-plans) to help you build your plan to deploy the Microsoft Entra suite of capabilities.

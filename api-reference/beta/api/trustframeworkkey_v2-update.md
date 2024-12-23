@@ -5,6 +5,7 @@ author: "gysingh"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Update trustFrameworkKey_v2
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "trustframeworkkey_v2_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframeworkkey_v2-update-permissions.md)]
+
+[!INCLUDE [rbac-b2c-trustframework-keyset-apis](../includes/rbac-for-apis/rbac-b2c-trustframework-keyset-apis.md)]
 
 ## HTTP request
 

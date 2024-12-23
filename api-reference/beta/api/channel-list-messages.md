@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "RamjotSingh"
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 10/02/2024
 ---
 
 # List channel messages
@@ -51,8 +52,6 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | [$expand](/graph/query-parameters#expand)  | Apply `$expand` to get the properties of channel messages that are replies. By default, a response can include up to 1,000 replies. For an operation that expands channel messages with more than 1,000 replies, use the request URL returned in `replies@odata.nextLink` to get the next page of replies. |
 
 The other [OData query parameters](/graph/query-parameters) aren't currently supported.
-
-> **Note:** [GET /teams/{team-id}/channels/{channel-id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to    GET /teams/{team-id}/channels/{channel-id}/messages .
 
 ## Request headers
 

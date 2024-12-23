@@ -5,6 +5,7 @@ author: "ningjingbogithub"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 08/16/2024
 ---
 
 # cloudPC: getFrontlineCloudPcAccessState

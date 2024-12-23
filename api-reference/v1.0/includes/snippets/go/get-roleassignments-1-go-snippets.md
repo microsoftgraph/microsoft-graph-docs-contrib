@@ -18,11 +18,11 @@ import (
 
 requestFilter := "roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'"
 
-requestParameters := &graphrolemanagement.RoleManagementDirectoryRoleAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphrolemanagement.DirectoryRoleAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Expand: [] string {"principal"},
 }
-configuration := &graphrolemanagement.RoleManagementDirectoryRoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphrolemanagement.DirectoryRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

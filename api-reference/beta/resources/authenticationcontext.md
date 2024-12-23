@@ -5,6 +5,7 @@ author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # authenticationContext resource type

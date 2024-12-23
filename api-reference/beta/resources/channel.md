@@ -5,6 +5,7 @@ author: "akjo"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/01/2024
 ---
 
 # channel resource type
@@ -28,7 +29,6 @@ where files are shared, and where tabs are added.
 |[Get primary channel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
-|[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
 |[Get all channel messages](../api/channel-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
 |[Get all retained channel messages](../api/channel-getallretainedmessages.md)|[chatMessage](../resources/chatmessage.md) collection|Get all retained [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md). |
@@ -37,6 +37,7 @@ where files are shared, and where tabs are added.
 |[Get files folder](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | Retrieves the details of the SharePoint folder where the files for the channel are stored. |
 |[List tabs](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
 |[List channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of members in a channel.|
+|[List all members](../api/channel-list-allmembers.md) | [conversationMember](conversationmember.md) collection | Get a list of conversationMember objects from a team channel.|
 |[Add channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Add a member to a channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
 |[Archive channel](../api/channel-archive.md) | None | Archive a channel.|
@@ -103,6 +104,7 @@ For a POST request example, see [Request (create channel in migration state)](/m
 |messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
+|allMembers|[conversationMember](conversationmember.md) collection |A collection of membership records associated with the channel. It includes both direct and indirect members of shared channels.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
 |sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|A collection of teams with which a channel is shared.|

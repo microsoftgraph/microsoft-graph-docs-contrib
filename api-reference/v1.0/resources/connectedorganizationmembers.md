@@ -1,17 +1,18 @@
 ---
-title: "connectedOrganizationMembers complex type"
-description: "The connectedOrganizationMembers type identifies a collection of users in the tenant who will be allowed as requestor, approver or reviewer."
+title: "connectedOrganizationMembers resource type"
+description: "Represents a collection of users in the tenant who are allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
-# connectedOrganizationMembers complex type
+# connectedOrganizationMembers resource type
 
 Namespace: microsoft.graph
 
 
-Used in the request settings of an access package assignment policy. The `@odata.type` value `#microsoft.graph.connectedOrganizationMembers` indicates that this type identifies a collection of users, those who are associated with a [connected organization](connectedorganization.md), who will be allowed to request an access package.
+Used in the request settings of an access package assignment policy. The `@odata.type` value `#microsoft.graph.connectedOrganizationMembers` indicates that this type identifies a collection of users, those who are associated with a [connected organization](connectedorganization.md), who are allowed to request an access package.
 
 ## Properties
 |Property|Type|Description|

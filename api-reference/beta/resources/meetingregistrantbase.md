@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 toc.title: Meeting Registrant Base (deprecated)
+ms.date: 10/15/2024
 ---
 
 # meetingRegistrantBase resource type (deprecated)
@@ -22,7 +23,7 @@ Base type of [meetingRegistrant](meetingregistrant.md) and [externalMeetingRegis
 > This is an abstract type and cannot be used directly. Use the derived type [meetingRegistrant](meetingregistrant.md) or [externalMeetingRegistrant](externalmeetingregistrant.md) instead.
 
 > [!CAUTION]
-> The meeting registrant API is deprecated and will stop returning data on **December 31, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/). 
+> The meeting registrant API is deprecated and will stop returning data on **December 12, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/).
 
 ## Properties
 

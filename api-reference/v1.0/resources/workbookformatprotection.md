@@ -6,6 +6,7 @@ author: "ruoyingl"
 ms.subservice: excel
 doc_type: resourcePageType
 toc.title: Format protection
+ms.date: 08/01/2024
 ---
 
 # workbookFormatProtection resource type

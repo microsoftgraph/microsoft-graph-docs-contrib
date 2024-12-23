@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/08/2024
 ---
 
 # virtualEventWebinar: getByUserIdAndRole
