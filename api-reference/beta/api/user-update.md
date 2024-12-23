@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Update the properties of a [user](../resources/user.md) object.
 
 - Not all properties can be updated by Member or Guest users with their default permissions without administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions) to see properties they can manage.
-- Customers through Microsoft Entra ID for customers can also use this API operation to update their details. See [Default user permissions in customer tenants](../resources/users.md#default-user-permissions-in-customer-tenants) for the list of properties they can update.
+- Customers through Microsoft Entra ID for customers can also use this API operation to update their details. See [Default user permissions in external tenants](../resources/users.md#default-user-permissions-in-external-tenants) for the list of properties they can update.
 - For synced users, the ability to update certain properties is additionally determined by the source of authority and whether synchronization is enabled.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
