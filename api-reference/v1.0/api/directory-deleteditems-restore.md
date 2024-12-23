@@ -5,7 +5,7 @@ author: "keylimesoda"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 09/18/2024
+ms.date: 12/23/2024
 ---
 
 # Restore deleted item (directory object)
