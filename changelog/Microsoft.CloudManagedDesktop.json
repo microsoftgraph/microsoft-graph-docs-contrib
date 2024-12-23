@@ -31,7 +31,7 @@
           "ApiChange": "ComplexType",
           "ChangedApiName": "cloudPcPolicyScheduledApplyActionDetail",
           "ChangeType": "Addition",
-          "Description": "Add the [cloudPcPolicyScheduledApplyActionDetail]((https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicyscheduledapplyactiondetail?view=graph-rest-beta)) resource.",
+          "Description": "Add the [cloudPcPolicyScheduledApplyActionDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicyscheduledapplyactiondetail?view=graph-rest-beta) resource.",
           "Target": "cloudPcPolicyScheduledApplyActionDetail"
         },
         {
