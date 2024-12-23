@@ -66,9 +66,9 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-<a name='example-1-rretrieve-the-details-of-a-policy-assignment-for-pim-for-azure-ad-roles'></a>
+<a name='example-1-retrieve-the-details-of-a-policy-assignment-for-pim-for-azure-ad-roles'></a>
 
-### Example 1: RRetrieve the details of a policy assignment for PIM for Microsoft Entra roles
+### Example 1: Retrieve the details of a policy assignment for PIM for Microsoft Entra roles
 
 #### Request
 
