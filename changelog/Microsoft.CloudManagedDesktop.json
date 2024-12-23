@@ -28,7 +28,7 @@
         },
         {
           "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "cloudPcPolicyScheduledApplyActionDetail",
           "ChangeType": "Addition",
           "Description": "Add the [cloudPcPolicyScheduledApplyActionDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicyscheduledapplyactiondetail?view=graph-rest-beta) resource.",
@@ -44,7 +44,7 @@
         },
         {
           "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "cloudPcPolicyApplyActionResult",
           "ChangeType": "Addition",
           "Description": "Add the [cloudPcPolicyApplyActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicyapplyactionresult?view=graph-rest-beta) resource.",
