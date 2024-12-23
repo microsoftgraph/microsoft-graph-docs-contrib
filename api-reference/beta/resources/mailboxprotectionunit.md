@@ -32,6 +32,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |directoryObjectId|String|The ID of the directory object.|
 |displayName|String|Display name of the directory object.|
 |email|String|Email address associated with the directory object.|
+|mailboxType|[mailboxType](../resources/mailboxprotectionunit.md#mailboxtype-values)|The type of mailbox which is assigned to the user with id: `directoryObjectId`.The possible values are: `unknown`, `user`, `shared`, `unknownFutureValue`.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if enabling or disabling the protection unit fails. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |id|String|Unique identifier of the protection policy associated with this protection unit.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
@@ -47,6 +48,14 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |unprotectRequested |A request was made to deactivate protection for the unit.|
 |unprotected | Protection was successfully disabled for the unit.|
 |removeRequested |A user requested removal of the protected unit from the policy. |
+|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+
+### mailboxType values
+|Member | Description |
+|:------|:------------|
+|unknown | Represents the mailboxes which are not valid. |
+|user | The type of mailbox which is assigned to a particular user. |
+|shared | The type of mailbox which is accessed by multiple users at the same time. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 
@@ -82,7 +91,8 @@ The following JSON representation shows the resource type.
   },
   "directoryObjectId": "String",
   "displayName": "String",
-  "email": "String"
+  "email": "String",
+  "mailboxType": "String"
 }
 ```
 
