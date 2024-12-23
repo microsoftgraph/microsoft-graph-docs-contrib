@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of resource change notifications sent to the subscriber.
+Represents a collection of resource [change notifications](../resources/changenotification.md) sent to the subscriber and includes the validation tokens for the notifications for rich notifications (notifications with resource data).
 
 For details, see [Use Microsoft Graph to get change notifications](change-notifications-api-overview.md).
 
