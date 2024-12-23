@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "excel"
 author: "ruoyingl"
 toc.title: Named item
+ms.date: 07/30/2024
 ---
 
 # workbookNamedItem resource type

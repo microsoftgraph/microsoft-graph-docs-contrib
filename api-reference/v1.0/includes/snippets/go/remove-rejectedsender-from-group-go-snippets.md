@@ -18,10 +18,10 @@ import (
 
 requestId := "https://graph.microsoft.com/v1.0/users/{user-id}"
 
-requestParameters := &graphgroups.GroupItemRejectedSenders$refRequestBuilderDeleteQueryParameters{
+requestParameters := &graphgroups.ItemRejectedSenders$refRequestBuilderDeleteQueryParameters{
 	Id: &requestId,
 }
-configuration := &graphgroups.GroupItemRejectedSenders$refRequestBuilderDeleteRequestConfiguration{
+configuration := &graphgroups.ItemRejectedSenders$refRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

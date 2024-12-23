@@ -1,6 +1,6 @@
 ---
 title: "Create cloudPcUserSetting"
-description: "Create a new cloudPcUserSetting ."
+description: "Create a new cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -68,6 +68,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcU
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_cloudpcusersetting_from_"
@@ -83,13 +84,14 @@ Content-Type: application/json
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
   "crossRegionDisasterRecoverySetting": {
-     "crossRegionDisasterRecoveryEnabled": true,
+     "crossRegionDisasterRecoveryEnabled": false,
      "maintainCrossRegionRestorePointEnabled": true,
      "disasterRecoveryNetworkSetting": {
         "regionName": "westus",
         "regionGroup": "usEast"
       },
-      "disasterRecoveryType": "premium"
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
   },
   "restorePointSetting": {
     "frequencyInHours": 16,
@@ -98,6 +100,40 @@ Content-Type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpcusersetting-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-cloudpcusersetting-from--cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcusersetting-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-cloudpcusersetting-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpcusersetting-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-cloudpcusersetting-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpcusersetting-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-cloudpcusersetting-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.
@@ -119,13 +155,14 @@ Content-Type: application/json
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
   "crossRegionDisasterRecoverySetting": {
-     "crossRegionDisasterRecoveryEnabled": true,
+     "crossRegionDisasterRecoveryEnabled": false,
      "maintainCrossRegionRestorePointEnabled": true,
      "disasterRecoveryNetworkSetting": {
         "regionName": "westus",
         "regionGroup": "usEast"
       },
-      "disasterRecoveryType": "premium"
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
   },
   "restorePointSetting": {
     "frequencyInHours": 16,
