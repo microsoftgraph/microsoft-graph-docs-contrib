@@ -234,6 +234,12 @@
       "overview": "../../resources/change-notifications-api-overview.md",
       "resources": [
         "subscription"
+      ],
+      "complexTypes": [
+        "changeNotificationCollection",
+        "changeNotification",
+        "changeNotificationEncryptedContent",
+        "resourceData"
       ]
     },
     {
