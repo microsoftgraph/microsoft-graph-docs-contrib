@@ -19,11 +19,11 @@ import (
 requestTop := int32(2)
 requestFilter := "state eq 'clockedOut'"
 
-requestParameters := &graphteams.TeamItemScheduleTimeCardsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.ItemScheduleTimeCardsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Filter: &requestFilter,
 }
-configuration := &graphteams.TeamItemScheduleTimeCardsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.ItemScheduleTimeCardsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

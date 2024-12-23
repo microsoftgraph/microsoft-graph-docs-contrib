@@ -15,6 +15,30 @@ var requestBody = new CloudPcUserSetting
 	DisplayName = "Example",
 	SelfServiceEnabled = false,
 	LocalAdminEnabled = true,
+	CrossRegionDisasterRecoverySetting = new CloudPcCrossRegionDisasterRecoverySetting
+	{
+		CrossRegionDisasterRecoveryEnabled = false,
+		MaintainCrossRegionRestorePointEnabled = true,
+		DisasterRecoveryNetworkSetting = new CloudPcDisasterRecoveryNetworkSetting
+		{
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"regionName" , "westus"
+				},
+				{
+					"regionGroup" , "usEast"
+				},
+			},
+		},
+		DisasterRecoveryType = CloudPcDisasterRecoveryType.Premium,
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"userInitiatedDisasterRecoveryAllowed" , true
+			},
+		},
+	},
 	RestorePointSetting = new CloudPcRestorePointSetting
 	{
 		FrequencyInHours = 16,

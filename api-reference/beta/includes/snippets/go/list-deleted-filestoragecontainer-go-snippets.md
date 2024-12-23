@@ -18,10 +18,10 @@ import (
 
 requestFilter := "containerTypeId eq e2756c4d-fa33-4452-9c36-2325686e1082"
 
-requestParameters := &graphstorage.StorageFileStorageDeletedContainersRequestBuilderGetQueryParameters{
+requestParameters := &graphstorage.FileStorageDeletedContainersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphstorage.StorageFileStorageDeletedContainersRequestBuilderGetRequestConfiguration{
+configuration := &graphstorage.FileStorageDeletedContainersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

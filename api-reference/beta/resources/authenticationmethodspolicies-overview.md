@@ -31,6 +31,7 @@ The authentication method policies APIs are used to manage policy settings. For 
 |[externalauthenticationmethodconfiguration](externalauthenticationmethodconfiguration.md) (preview)|Define users who can use an external authentication method to satisfy the second factor of Microsoft Entra ID multifactor authentication requirements.|
 |[fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)| Define FIDO2 security key restrictions and users who can use them to sign in to Microsoft Entra ID.|
 |[hardwareOathAuthenticationMethodConfiguration](hardwareoathauthenticationmethodconfiguration.md)| Define users who can use hardware OATH tokens to sign in to Microsoft Entra ID.|
+|[hardwareOathAuthenticationMethodDevice](hardwareoathtokenauthenticationmethoddevice.md)| Manage the inventory of  hardware OATH tokens, e.g. create, delete and get tokens.|
 |[microsoftauthenticatorauthenticationmethodconfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)|Define users who can use Microsoft Authenticator on the Microsoft Entra tenant.|
 |[smsAuthenticationMethodConfiguration](smsAuthenticationMethodConfiguration.md)| Define users who can use Text Message on the Microsoft Entra tenant.|
 |[softwareOathAuthenticationMethodConfiguration](softwareOathAuthenticationMethodConfiguration.md)|Define users who can use a third-party software OATH authentication method.|
