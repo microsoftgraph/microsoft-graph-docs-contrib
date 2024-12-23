@@ -5,6 +5,7 @@ author: "satyakonmsft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 08/30/2024
 ---
 
 # callOptions resource type

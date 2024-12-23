@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 05/02/2024
 ---
 
 # conditionalAccessAudience resource type

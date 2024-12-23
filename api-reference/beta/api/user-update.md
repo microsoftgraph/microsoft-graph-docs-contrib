@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/02/2024
 ---
 
 # Update user

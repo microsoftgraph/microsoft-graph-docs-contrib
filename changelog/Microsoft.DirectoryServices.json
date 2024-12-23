@@ -1,22 +1,183 @@
 {
   "changelog": [
+    ,
     {
-        "ChangeList": [
-            {
-              "Id": "c6f4eb0f-746a-4a71-827e-da8585b89c64",
-              "ApiChange": "Resource",
-              "ChangedApiName": "user",
-              "ChangeType": "Change",
-              "Description": "Changed the following on-prem synced properties of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: **onPremisesDistinguishedName**, **onPremisesDomainName**, **onPremisesSamAccountName**, **onPremisesSecurityIdentifier**, **onPremisesUserPrincipalName**.",
-              "Target": "user"
-            }
-          ],
+      "ChangeList": [
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User-Mail.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User-Mail.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This property is the least privileged permission required to update the **otherMails** property for a user. It also allows you to read some identifier-related properties on the user object.",
+          "Target": "user"
+        },
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User-PasswordProfile.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User-PasswordProfile.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This permission is the least privileged permission required to reset a user's password and read and update the **passwordProfile** property for a user. It also allows you to read some identifier-related properties on the user object.",
+          "Target": "user"
+        },
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User-Phone.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User-Phone.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This permission is the least privileged required to read and update the **businessPhones** and **mobilePhone** properties for a user, including admin users. It also allows you to read some identifier-related properties on the user object. Previously, only the *Directory.AccessAsUser.All* permission was supported to update the properties for admin user. We recommend you move the lesser privileged ** permission instead.",
+          "Target": "user"
+        },
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User-Phone.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User-Phone.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This permission is the least privilege required to read and update the **businessPhones** and **mobilePhone** properties for a user, including admin users. It also allows you to read some identifier-related properties on the user object.",
+          "Target": "user"
+        },
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.EnableDisableAccount.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User.EnableDisableAccount.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This permission in combination with *User.Read.All* is the least privileged combination of permissions to read and update the **accountEnabled** property for a user, including admin users. Previously, only the *Directory.AccessAsUser.All* permission was supported to update the account status for admin users. We recommend you move the lesser privileged permission instead.",
+          "Target": "user"
+        },
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.DeleteRestore.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User.DeleteRestore.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This property is the least privileged permission required to [delete a user account](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0), [restore a deleted user from the recycle bin](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0), or [permanently delete a user from the recycle bin](https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0).",
+          "Target": "user"
+        }
+      ],
+      "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-23T00:00:00.304139Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ddcf7401-9746-4cdd-8406-15c0e0801925",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customSecurityAttributeComparisonOperator",
+          "ChangeType": "Addition",
+          "Description": "Added the **customSecurityAttributeComparisonOperator** enumeration type.",
+          "Target": "customSecurityAttributeComparisonOperator"
+        },
+        {
+          "Id": "ddcf7401-9746-4cdd-8406-15c0e0801925",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludeActors",
+          "ChangeType": "Addition",
+          "Description": "Added the **excludeActors** property to the [identifierUriRestriction](https://learn.microsoft.com/en-us/graph/api/resources/identifierUriRestriction?view=graph-rest-beta) resource.",
+          "Target": "identifierUriRestriction"
+        },
+        {
+          "Id": "ddcf7401-9746-4cdd-8406-15c0e0801925",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customSecurityAttributeExemption",
+          "ChangeType": "Addition",
+          "Description": "Added the [customSecurityAttributeExemption](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeExemption?view=graph-rest-beta) resource.",
+          "Target": "customSecurityAttributeExemption"
+        },
+        {
+          "Id": "ddcf7401-9746-4cdd-8406-15c0e0801925",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customSecurityAttributeStringValueExemption",
+          "ChangeType": "Addition",
+          "Description": "Added the [customSecurityAttributeStringValueExemption](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeStringValueExemption?view=graph-rest-beta) resource.",
+          "Target": "customSecurityAttributeStringValueExemption"
+        }
+      ],
+      "Id": "ddcf7401-9746-4cdd-8406-15c0e0801925",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-04T14:28:39.9651197Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "33b75f19-78a3-418c-9698-d2b60a6af88a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appManagementRestrictionState",
+          "ChangeType": "Addition",
+          "Description": "Added the **appManagementRestrictionState** enumeration type.",
+          "Target": "appManagementRestrictionState"
+        },
+        {
+          "Id": "33b75f19-78a3-418c-9698-d2b60a6af88a",
+          "ApiChange": "Property",
+          "ChangedApiName": "state",
+          "ChangeType": "Addition",
+          "Description": "Added the **state** property to the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "keyCredentialConfiguration"
+        },
+        {
+          "Id": "33b75f19-78a3-418c-9698-d2b60a6af88a",
+          "ApiChange": "Property",
+          "ChangedApiName": "state",
+          "ChangeType": "Addition",
+          "Description": "Added the **state** property to the [passwordCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordCredentialConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "passwordCredentialConfiguration"
+        }
+      ],
+      "Id": "33b75f19-78a3-418c-9698-d2b60a6af88a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-11-01T22:52:30.5735697Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Policies"
+    },
+    {
+      "ChangeList": [
+          {
+            "Id": "c6f4eb0f-746a-4a71-827e-da8585b89c64",
+            "ApiChange": "Resource",
+            "ChangedApiName": "user",
+            "ChangeType": "Change",
+            "Description": "Changed the following on-prem synced properties of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: **onPremisesDistinguishedName**, **onPremisesDomainName**, **onPremisesSamAccountName**, **onPremisesSecurityIdentifier**, **onPremisesUserPrincipalName**.",
+            "Target": "user"
+          }
+        ],
         "Id": "c6f4eb0f-746a-4a71-827e-da8585b89c64",
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2024-10-01T16:45:20.304139Z",
         "WorkloadArea": "User",
         "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e535cb78-71cd-4e70-86e1-99b689bb30a4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryRole",
+          "ChangeType": "Change",
+          "Description": "Added recommendations to use unified RBAC APIs in [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition) instead of [directoryRole](https://learn.microsoft.com/graph/api/resources/directoryrole)",
+          "Target": "directoryRole"
+        },
+        {
+          "Id": "e535cb78-71cd-4e70-86e1-99b689bb30a4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryRoleTemplate",
+          "ChangeType": "Change",
+          "Description": "Added recommendations to use unified RBAC APIs in [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition) instead of [directoryRoleTemplate](https://learn.microsoft.com/graph/api/resources/directoryroletemplate)",
+          "Target": "directoryRoleTemplate"
+        }
+      ],
+      "Id": "e535cb78-71cd-4e70-86e1-99b689bb30a4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-21T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -111,6 +272,64 @@
     {
       "ChangeList": [
         {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "certificateAuthorityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateAuthorityType** enumeration type.",
+          "Target": "certificateAuthorityType"
+        },
+        {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateAuthorityDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateAuthorityDetail](https://learn.microsoft.com/en-us/graph/api/resources/certificateAuthorityDetail?view=graph-rest-beta) resource.",
+          "Target": "certificateAuthorityDetail"
+        },
+        {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateBasedAuthPki",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateBasedAuthPki](https://learn.microsoft.com/en-us/graph/api/resources/certificateBasedAuthPki?view=graph-rest-beta) resource.",
+          "Target": "certificateBasedAuthPki"
+        },
+        {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "publicKeyInfrastructure",
+          "ChangeType": "Addition",
+          "Description": "Added the **publicKeyInfrastructure** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicKeyInfrastructureRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [publicKeyInfrastructureRoot](https://learn.microsoft.com/en-us/graph/api/resources/publicKeyInfrastructureRoot?view=graph-rest-beta) resource.",
+          "Target": "publicKeyInfrastructureRoot"
+        },
+        {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Method",
+          "ChangedApiName": "upload",
+          "ChangeType": "Addition",
+          "Description": "Added the [upload](https://learn.microsoft.com/en-us/graph/api/certificateBasedAuthPki-upload?view=graph-rest-beta) method to the [certificateBasedAuthPki](https://learn.microsoft.com/en-us/graph/api/resources/certificateBasedAuthPki?view=graph-rest-beta) resource.",
+          "Target": "certificateBasedAuthPki"
+        }
+      ],
+      "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-14T23:18:09.7666936Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7aeffb87-6cbe-4c6b-af80-4e1ebca466aa",
           "ApiChange": "Enumeration",
           "ChangedApiName": "nativeAuthenticationApisEnabled",
@@ -133,6 +352,40 @@
       "CreatedDateTime": "2024-06-10T16:45:20.304139Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "membershipRule",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipRule** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "membershipRuleProcessingState",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipRuleProcessingState** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "membershipType",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipType** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
+          "Target": "administrativeUnit"
+        }
+      ],
+      "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-29T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -5509,64 +5762,6 @@
     {
       "ChangeList": [
         {
-          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
-          "ApiChange": "Permission",
-          "ChangedApiName": "User-Mail.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the `User-Mail.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This property is the least privileged permission required to update the **otherMails** property for a user. The property also allows you to read the basic user profile, similar to the *User.ReadBasic.All* permission.",
-          "Target": "user"
-        },
-        {
-          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
-          "ApiChange": "Permission",
-          "ChangedApiName": "User-PasswordProfile.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the `User-PasswordProfile.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This property is the least privileged permission required to reset a user's password and read and update the **passwordProfile** property for a user. The property also allows you to read the basic user profile, similar to the *User.ReadBasic.All* permission.",
-          "Target": "user"
-        },
-        {
-          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
-          "ApiChange": "Permission",
-          "ChangedApiName": "User-Phone.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the `User-Phone.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This property is the least privileged permission required to read and update the **businessPhones** and **mobilePhone** properties for a user, including admin users. The property also allows you to read the basic user profile, similar to the *User.ReadBasic.All* permission. Previously, only the *Directory.AccessAsUser.All* permission was supported to update the properties for admin user. We recommend you move the lesser privileged ** permission instead.",
-          "Target": "user"
-        },
-        {
-          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
-          "ApiChange": "Permission",
-          "ChangedApiName": "User-Phone.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the `User-Phone.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This property is the least privileged permission required to read and update the **businessPhones** and **mobilePhone** properties for a user, including admin users. The property also allows you to read the basic user profile, similar to the *User.ReadBasic.All* permission.",
-          "Target": "user"
-        },
-        {
-          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
-          "ApiChange": "Permission",
-          "ChangedApiName": "User.EnableDisableAccount.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the `User.EnableDisableAccount.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This property in combination with the *User.Read.All* permission is the least privileged to read and update the **accountEnabled** property for a user, including admin users. The property also allows you to read the basic user profile, similar to the *User.ReadBasic.All* permission. Previously, only the *Directory.AccessAsUser.All* permission was supported to update the account status for admin users. We recommend you move the lesser privileged permission instead.",
-          "Target": "user"
-        },
-        {
-          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
-          "ApiChange": "Permission",
-          "ChangedApiName": "User.DeleteRestore.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the `User.DeleteRestore.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This property is the least privileged permission required to [delete a user account](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0), [restore a deleted user from the recycle bin](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0), or [permanently delete a user from the recycle bin](https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0).",
-          "Target": "user"
-        }
-      ],
-      "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-10-02T00:00:00.304139Z",
-      "WorkloadArea": "User",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "3daea3c5-06f5-11ec-88de-83063b88343d",
           "ApiChange": "Relationship",
           "ChangedApiName": "customSecurityAttributeDefinitions",
@@ -7153,6 +7348,40 @@
       "CreatedDateTime": "2021-03-29T07:39:40.436Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a7cfb7c0-e9b2-4bd9-a964-0c5cb902b29e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityExpression",
+          "ChangeType": "Addition",
+          "Description": "Added the [federatedIdentityExpression](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityExpression?view=graph-rest-beta) resource.",
+          "Target": "federatedIdentityExpression"
+        },
+        {
+          "Id": "a7cfb7c0-e9b2-4bd9-a964-0c5cb902b29e",
+          "ApiChange": "Property",
+          "ChangedApiName": "claimsMatchingExpression",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimsMatchingExpression** property to the [federatedIdentityCredential](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-beta) resource.",
+          "Target": "federatedIdentityCredential"
+        },
+        {
+          "Id": "a7cfb7c0-e9b2-4bd9-a964-0c5cb902b29e",
+          "ApiChange": "Property",
+          "ChangedApiName": "subject",
+          "ChangeType": "Change",
+          "Description": "Changed the **subject** property of the [federatedIdentityCredential](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-beta) resource from explicitly required. If the **claimsMatchingExpression** property for supporting flexible federated identity credentials is configured, this property must be empty.",
+          "Target": "federatedIdentityCredential"
+        }
+      ],
+      "Id": "a7cfb7c0-e9b2-4bd9-a964-0c5cb902b29e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-11T20:23:12.4964215Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -13685,7 +13914,59 @@
     "CreatedDateTime": "2024-09-11T18:27:13.3184952Z",
     "WorkloadArea": "Identity and access",
     "SubArea": "Directory management"
-  }
+  },
+  {
+    "ChangeList": [
+      {
+        "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "rootDomain",
+        "ChangeType": "Addition",
+        "Description": "Added the **rootDomain** relationship to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+        "Target": "domain"
+      },
+      {
+        "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+        "ApiChange": "Method",
+        "ChangedApiName": "GET",
+        "ChangeType": "Addition",
+        "Description": "Added the [Get rootDomain](https://learn.microsoft.com/en-us/graph/api/domain-get-rootdomain?view=graph-rest-1.0) operation to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+        "Target": "domain"
+      },
+      {
+        "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+        "ApiChange": "NavigationPropertyBinding",
+        "ChangedApiName": "rootDomain",
+        "ChangeType": "Addition",
+        "Description": "Added the [rootDomain](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource",
+        "Target": "domains"
+      }
+    ],
+      "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-09T23:15:04.1920065Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+  },
+  {
+      "ChangeList": [
+	{
+        "Id": "8cd03a79-71de-467d-bd73-0b3449a28bfc",
+        "ApiChange": "Parameter",
+        "ChangedApiName": "restore",
+        "ChangeType": "Addition",
+        "Description": "Added the `newUserPrincipalName` parameter to the [restore directoryObject](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-beta) method. Use this property to specify whether Microsoft Entra ID should replace the restored user's previous **userPrincipalName** with a new value.",
+        "Target": "directoryObject"
+      	}
+      ],
+      "Id": "8cd03a79-71de-467d-bd73-0b3449a28bfc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-17T00:35:00.3307839Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }
   ]
 }
   

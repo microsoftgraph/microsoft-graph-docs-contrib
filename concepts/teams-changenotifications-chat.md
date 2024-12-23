@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Get change notifications for chats using Microsoft Graph
@@ -81,16 +82,16 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Subscribe to changes in a particular chat using the **notifyOnUserSpecificProperties** query parameter (preview)
+### Example 2: Subscribe to changes in a particular chat using the **notifyOnUserSpecificProperties** query parameter
 
 The following example shows how to subscribe to receive notifications of changes in a particular chat by providing the **notifyOnUserSpecificProperties** query parameter.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
-  "changeType": "created,updated",
+  "changeType": "updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "/chats/{id}?notifyOnUserSpecificProperties=true",
   "includeResourceData": true,

@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/12/2024
 ---
 
 # Delete permissions
@@ -16,7 +17,7 @@ Namespace: microsoft.graph
 
 Delete permissions from a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
-By default, this API removes access for an identity to the container and all items within the container, regardless of whether the identity has container-scoped or item-level permissions. You can optimize this behavior by adding an optional `Prefer: onlyRemoveContainerScopedPermission` header when you call the API. When you include the `Prefer:onlyRemoveContainerScopedPermission` header, only the identity's container-scoped permission is removed. All item-level permissions explicitly granted to the identity (if any) are retained. 
+By default, this API removes access for an identity to the container and all items within the container, regardless of whether the identity has container-scoped or item-level permissions. You can add an optional `Prefer: onlyRemoveContainerScopedPermission` header when you call the API if only the identity's container-scoped permissions need to be removed. All item-level permissions explicitly granted to the identity (if any) are retained. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_delete_permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-permissions-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 

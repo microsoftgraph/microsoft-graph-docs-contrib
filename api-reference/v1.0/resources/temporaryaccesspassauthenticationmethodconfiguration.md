@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 toc.title: Temporary Access Pass
+ms.date: 07/22/2024
 ---
 
 # temporaryAccessPassAuthenticationMethodConfiguration resource type

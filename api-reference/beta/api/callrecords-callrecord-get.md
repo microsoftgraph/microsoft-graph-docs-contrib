@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mcm223"
 ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
+ms.date: 06/13/2024
 ---
 
 # Get callRecord

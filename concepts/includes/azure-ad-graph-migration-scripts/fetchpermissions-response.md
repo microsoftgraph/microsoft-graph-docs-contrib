@@ -1,5 +1,6 @@
 ---
 description: "fetchPermissions.ps1 script - Response snippet"
+ms.date: 11/07/2024
 ---
 
 ```powershell

@@ -6,6 +6,7 @@ author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # iPv4CidrRange resource type

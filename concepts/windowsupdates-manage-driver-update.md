@@ -5,11 +5,12 @@ author: "Ryan-K-Williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Deploy a driver update using Windows Autopatch
 
-With Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, Windows Autopatch supports the [deployment](/graph/api/resources/windowsupdates-deployment?view=graph-rest-beta&preserve-view=true) of Windows 10 and Windows 11 feature updates, expedited quality updates, and driver updates. This topic focuses on managing the deployment of driver updates. For information about deploying feature updates, see [Deploy a feature update](./windowsupdates-deploy-update.md). For information about deploying expedited quality updates, see [Deploy an expedited quality update](./windowsupdates-deploy-expedited-update.md).
+With Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, Windows Autopatch supports the [deployment](/graph/api/resources/windowsupdates-deployment?view=graph-rest-beta&preserve-view=true) of Windows 10 and Windows 11 feature updates, hotpatch quality updates, expedited quality updates, and driver updates. This topic focuses on managing the deployment of driver updates. For information about deploying feature updates, see [Deploy a feature update](./windowsupdates-deploy-update.md). For information about how to deploy hotpatch quality updates, see [Deploy a hotpatch quality update](./windowsupdates-hotpatch-update.md). For information about how to deploy expedited quality updates, see [Deploy an expedited quality update](./windowsupdates-deploy-expedited-update.md).
 
 When devices enrolled in Windows Autopatch scan Windows Update, scan results of applicable drivers that are better than what is currently installed on the device are collected. Windows Autopatch then catalogs them to be browsed, approved, and scheduled for deployment. Only approved content is offered to devices as long as it remains enrolled in driver management.
 
@@ -271,7 +272,7 @@ Content-type: application/json
     "isRevoked": false,
     "revokedDateTime": "0001-01-01T00:00:00Z",
     "content": {
-        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies('d7a89208-17c5-4daf-a164-ce176b00e4ef')/complianceChanges('dbf29574-ffd9-49cf-87f2-f03629e596ba')/microsoft.graph.windowsUpdates.contentApproval/content/microsoft.graph.windowsUpdates.catalogContent/catalogEntry/$entity",
         "id": "5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c",
         "displayName": "Microsoft - Test - 1.0.0.1",
@@ -284,14 +285,8 @@ Content-type: application/json
         "manufacturer": "Microsoft",
         "version": "1.0.0.1",
         "versionDateTime": "2021-01-11T02:43:14Z"
-        }        
     },
     "deploymentSettings": {
-        "schedule": null,
-        "monitoring": null,
-        "contentApplicability": null,
-        "userExperience": null,
-        "expedite": null
         "schedule": {
             "startDateTime": "2023-02-14T01:00:00Z",
             "gradualRollout": {
@@ -299,7 +294,11 @@ Content-type: application/json
                 "durationBetweenOffers": "P1D",
                 "devicesPerOffer": 0
             }
-        }
+        },
+        "monitoring": null,
+        "contentApplicability": null,
+        "userExperience": null,
+        "expedite": null
     }
 }
 ```
@@ -327,7 +326,7 @@ HTTP/1.1 204 No Content
 
 ## Unenroll from driver management
 
-When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer managed by Windows Autopatch and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contains content for the given update category. The device remains registered with Windows Autopatch and is still enrolled and receiving content for other update categories, if applicable.
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer managed by Windows Autopatch and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contain content for the given update category. The device remains registered with Windows Autopatch and is still enrolled and receiving content for other update categories, if applicable.
 
 
 ### Request

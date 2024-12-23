@@ -1,5 +1,6 @@
 ---
 title: "Permanently delete item (directory object)"
+ms.date: 11/13/2024
 description: "Permanently delete a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
@@ -13,7 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete a recently deleted [application](../resources/application.md), [externalUserProfile](../resources/externaluserprofile.md), [group](../resources/group.md), [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). After an item is permanently deleted, it **cannot** be restored.
+Permanently delete a recently deleted directory object from [deleted items](../resources/directory.md). The following types are supported:
+- [application](../resources/application.md)
+- [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md
+- [externalUserProfile](../resources/externaluserprofile.md)
+- [group](../resources/group.md)
+- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
+- [servicePrincipal](../resources/serviceprincipal.md)
+- [user](../resources/user.md)
+
+After an item is permanently deleted, it **cannot** be restored.
 
 Administrative units **cannot** be permanently deleted by using the **deletedItems** API. Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
@@ -30,7 +41,14 @@ The following table shows the least privileged permission or permissions require
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Not supported. |
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.ReadWrite.All | Not supported | PendingExternalUserProfile.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
+<<<<<<< HEAD
 | [user](../resources/user.md) | User.DeleteRestore.All | Not supported. | User.DeleteRestore.All |
+=======
+| [user](../resources/user.md) | User.ReadWrite.All | Not supported. | Not supported. |
+| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+
+>>>>>>> c8e3b392248cfdb2806891a925b1831f219011bd
 
 [!INCLUDE [rbac-deleted-items-delete-apis](../includes/rbac-for-apis/rbac-deleted-items-delete-apis.md)]
 

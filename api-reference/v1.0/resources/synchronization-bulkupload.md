@@ -5,6 +5,7 @@ author: "cmmdesai"
 ms.localizationpriority: medium
 ms.subservice: entra-applications
 doc_type: resourcePageType 
+ms.date: 07/22/2024
 ---
 
 # bulkUpload resource type

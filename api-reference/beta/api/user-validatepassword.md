@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/09/2024
 ---
 
 # user: validatePassword
@@ -22,6 +23,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "user_validatepassword" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-validatepassword-permissions.md)]
+
+>[!IMPORTANT]
+>This API operation doesn't require the calling user to be assigned any Microsoft Entra admin roles.
 
 ## HTTP request
 

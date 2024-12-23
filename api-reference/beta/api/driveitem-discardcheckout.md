@@ -5,6 +5,7 @@ author: "javieralvarezchiang"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 10/09/2024
 ---
 
 # driveItem: discardCheckout
@@ -61,6 +62,12 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this action returns a `204 No Content` response code.
+
+### Error responses
+
+The request returns `400 Bad Request` if the file isn't checked out. Requests made with delegated access return `423 Locked` if another user has the file checked out. Requests made with application access can discard any checkout. 
+
+For more information about how errors are returned, see [Error responses][error-response].
 
 ## Examples
 
@@ -121,4 +128,4 @@ The following example shows the response.
 HTTP/1.1 204 No content
 ```
 
-
+[error-response]: /graph/errors

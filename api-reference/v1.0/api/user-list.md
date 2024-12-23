@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 12/23/2024
 ---
 
 # List users
@@ -31,10 +32,10 @@ One of the following permissions is required to call this API. To learn more, in
 Guests can't call this API. For more information about the permissions for member and guests, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users)
 
 ### Permissions for specific scenarios
-- *User-Mail.ReadWrite.All* is the least privileged permission to read and write the **otherMails** property; also allows to read the basic user profile.
-- *User-PasswordProfile.ReadWrite.All* is the least privileged permission to read and write the **passwordProfile** property; also allows to read the basic user profile.
-- *User-Phone.ReadWrite.All* is the least privileged permission to read and write the **businessPhones** and **mobilePhone** properties; also allows to read the basic user profile.
-- *User.EnableDisableAccount.All* is the least privileged permission to read and write the **accountEnabled** property; also allows to read the basic user profile.
+- *User-Mail.ReadWrite.All* is the least privileged permission to read and write the **otherMails** property; also allows to read some identifier-related properties on the user object.
+- *User-PasswordProfile.ReadWrite.All* is the least privileged permission to read and write the **passwordProfile** property; also allows to read some identifier-related properties on the user object.
+- *User-Phone.ReadWrite.All* is the least privileged permission to read and write the **businessPhones** and **mobilePhone** properties; also allows to read some identifier-related properties on the user object.
+- *User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions to read and write the **accountEnabled** property.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -862,9 +863,11 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the AuditLog.Read.All permission.
+The following example shows a request. 
 
->**Note:** When you specify `$select=signInActivity` or `$filter=signInActivity` while listing users, the maximum page size for `$top` is 120. Requests with `$top` set higher than 120 will return pages with up to 120 users. signInActivity supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties.
+> [!Note]
+> * Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the `AuditLog.Read.All` permission.
+> * When you specify `$select=signInActivity` or `$filter=signInActivity` when listing users, the maximum page size for `$top` is 120. Requests with `$top` set higher than 120 return pages with up to 120 users. The **signInActivity** property supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties.
 
 # [HTTP](#tab/http)
 <!-- {

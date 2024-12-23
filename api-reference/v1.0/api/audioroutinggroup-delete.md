@@ -5,6 +5,7 @@ author: "hanknguyen"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete audioRoutingGroup

@@ -5,6 +5,7 @@ author: "anandjo"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Create team
@@ -48,7 +49,7 @@ POST /teams
 
 ## Request body
 
-In the request body, supply a JSON representation of a [team](../resources/team.md) object.
+In the request body, supply a JSON representation of a [team](../resources/team.md) object. Optionally, specify a value for the **firstChannelName** property to name the first channel that is created. The default value of the first channel is `General`.
 
 ## Response
 
@@ -58,11 +59,10 @@ If successful, this API returns a `202 Accepted` response that contains a link t
 
 ### Example 1: Delegated permissions
 
-The following example shows a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
+The following example shows a minimal request. Because the client omitted other properties, it's implicitly taking defaults from the predefined template represented by `template`.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_e1"
@@ -74,43 +74,10 @@ Content-Type: application/json
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
-  "description": "My Sample Team's Description"
+  "description": "My Sample Team's Description",
+  "firstChannelName": "My First Channel of the sample team"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-team-post-e1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-team-post-e1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-team-post-e1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-e1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-team-post-e1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-team-post-e1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-team-post-e1-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
@@ -132,14 +99,13 @@ Content-Length: 0
 
 ### Example 2: Application permissions
 
-The following example shows a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+The following example shows a minimal request using application permissions. Because the client omitted other properties, it's implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
 
 >**Note:** You can only specify a single member as the owner in this scenario.
 
 #### Request
 <!-- markdownlint-disable MD025 -->
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal_e2"
@@ -153,6 +119,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
+   "firstChannelName": "My First Channel of the sample team",
    "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
@@ -164,40 +131,6 @@ Content-Type: application/json
    ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-e2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-team-post-minimal-e2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-team-post-minimal-e2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-team-post-minimal-e2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-minimal-e2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-team-post-minimal-e2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-team-post-minimal-e2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-team-post-minimal-e2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 <!-- {
@@ -215,11 +148,10 @@ Content-Length: 0
 
 ### Example 3: Create a team with multiple channels, installed apps, and pinned tabs using delegated permissions
 
-The following is a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
+The following example shows a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_full_payload_e3"
@@ -234,6 +166,7 @@ Content-Type: application/json
     "visibility": "Private",
     "displayName": "Sample Engineering Team",
     "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",
+    "firstChannelName": "My First Channel of the team",
     "channels": [
         {
             "displayName": "Announcements 📢",
@@ -310,40 +243,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-full-payload-e3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-team-post-full-payload-e3-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-team-post-full-payload-e3-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-team-post-full-payload-e3-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-full-payload-e3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-team-post-full-payload-e3-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-team-post-full-payload-e3-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-team-post-full-payload-e3-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 <!-- {
   "blockType": "response", 
@@ -367,6 +266,7 @@ A few things to note about this call:
 * In order to create a team, the group you're creating it from must have a least one owner.
 * The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties return an error.
 * If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
+* Specifying a first channel name with the **firstChannelName** property isn't supported when you create a team from a group.
 
 #### Request
 
@@ -436,7 +336,7 @@ Content-Length: 0
 
 ### Example 5: Create a team from a group with multiple channels, installed apps, and pinned tabs
 
-The following is a request that converts an existing group with extended properties that create the team with multiple channels, installed apps, and pinned tabs.
+The following example shows a request that converts an existing group with extended properties that create the team with multiple channels, installed apps, and pinned tabs.
 
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
@@ -531,11 +431,11 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
-### Example 6: Create a team with a non-standard base template type
+### Example 6: Create a team with a nonstandard base template type
 
 Base template types are special templates that Microsoft created for specific industries. These base templates often contain proprietary apps that aren't available in the store and team properties that aren't yet supported individually in Microsoft Teams templates.
 
-To create a team from a non-standard base template, you want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
+To create a team from a nonstandard base template, you want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
 
 To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
@@ -607,7 +507,7 @@ Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c2
 Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
-### Example 7: Create a team with a localized non-standard base template type 
+### Example 7: Create a team with a localized nonstandard base template type 
 Base template types can be localized to your preferred language choice, which enables you to create templates in your preferred language. 
 
 Choose your team template from the definition list returned by the [List definitions](/graph/api/teamtemplate-list-definitions) operation.
@@ -625,13 +525,9 @@ POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 
 {
-
     "templateDefinition@odata.bind": "https://graph.microsoft.com/beta/teamwork/teamTemplates/com.microsoft.teams.template.ManageAProject/definitions/Y29tLm1pY3Jvc29mdC50ZWFtcy50ZW1wbGF0ZS5NYW5hZ2VBUHJvamVjdCMjUHVibGljIyNhci1TQQ==",
-
     "displayName": "My Sample Team",
-
     "description": "My Sample Team’s Description"
-
 }
 ```
 
@@ -682,9 +578,9 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
-### Example 8: Create a team with a non-standard base template type with extended properties
+### Example 8: Create a team with a nonstandard base template type with extended properties
 
-Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.
+Base template types can be extended with other properties, enabling you to build on an existing base template with more team settings, channels, apps, or tabs.
 
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
@@ -788,6 +684,7 @@ The following example shows how to create a team for imported messages.
 >**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 >**Note:** Teams created in migration mode only supports the `standard` template.
+>**Note:** This call doesn't support the **firstChannelName** property.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -870,7 +767,7 @@ The following are common reasons for this response:
 
 ### Example 10: Application permissions using user principal name
 
-Here's an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+Here's an example of a minimal request using application permissions. Because the client omitted other properties, it's implicitly taking defaults from the predefined template represented by `template`. You must specify a [user](../resources/user.md) in the `members` collection for requests with application permissions.
 
 #### Request
 

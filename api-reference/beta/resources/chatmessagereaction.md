@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "RamjotSingh"
 ms.subservice: "teams"
+ms.date: 10/18/2024
 ---
 
 # chatMessageReaction resource type
@@ -43,8 +44,8 @@ The following JSON representation shows the resource type.
 ```json
 {
   "createdDateTime": "String (timestamp)",
-  "reactionContentUrl": "String",
   "displayName": "String",
+  "reactionContentUrl": "String",
   "reactionType": "String",
   "user": {"@odata.type": "microsoft.graph.chatMessageReactionIdentitySet"}
 }

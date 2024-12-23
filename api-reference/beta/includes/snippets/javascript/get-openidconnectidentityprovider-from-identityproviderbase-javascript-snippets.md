@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let identityProviderBase = await client.api('/identity/identityProviders/OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000')
+let identityProviderBase = await client.api('/identity/identityProviders/Contoso-00001111-aaaa-2222-bbbb-3333cccc4444')
 	.version('beta')
 	.get();
 

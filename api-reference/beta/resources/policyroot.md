@@ -5,6 +5,7 @@ author: "dkershaw10"
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 doc_type: resourcePageType
+ms.date: 10/18/2024
 ---
 
 # policyRoot resource type
@@ -35,6 +36,7 @@ None
 | claimsMappingPolicies                     | [claimsMappingPolicy](claimsmappingpolicy.md) collection                                                  | The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.                                   |
 | conditionalAccessPolicies                 | [conditionalAccessPolicy](conditionalaccesspolicy.md)                                                     | The custom rules that define an access scenario.                                                                                                                     |
 | crossTenantAccessPolicy                   | [crossTenantAccessPolicy](crosstenantaccesspolicy.md)                                                     | The custom rules that define an access scenario when interacting with external Microsoft Entra tenants.                                                                     |
+| deviceRegistrationPolicy                   | [deviceRegistrationPolicy](deviceregistrationpolicy.md)                                                     | Represents the policy scope that controls quota restrictions, additional authentication, and authorization policies to register device identities to your organization.                                                                     |
 | defaultAppManagementPolicy                | [tenantAppManagementPolicy](tenantappmanagementpolicy.md)                                                 | The tenant-wide policy that enforces app management restrictions for all applications and service principals.                                                        |
 | externalIdentitiesPolicy                  | [externalIdentitiesPolicy](externalidentitiespolicy.md)                                                   | Represents the tenant-wide policy that controls whether guests can leave a Microsoft Entra tenant via self-service controls.                                       |
 | featureRolloutPolicies                    | [featureRolloutPolicy](featurerolloutpolicy.md) collection                                                | The feature rollout policy associated with a directory object.                                                                                                       |

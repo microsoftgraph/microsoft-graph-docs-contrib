@@ -5,6 +5,7 @@ author: "ananmishr"
 doc_type: conceptualPageType
 ms.subservice: cloud-communications
 ms.localizationpriority: high
+ms.date: 06/25/2024
 ---
 
 # Working with the cloud communications API in Microsoft Graph

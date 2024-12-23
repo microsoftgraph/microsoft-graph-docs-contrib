@@ -3,6 +3,7 @@ title: "Changelog for Microsoft Graph (Archive)"
 description: "This article contains archived changelog entries for Microsoft Graph."
 author: "MSGraphDocsVteam"
 ms.localizationpriority: high
+ms.date: 07/08/2024
 ---
 
 # Changelog for Microsoft Graph (Archive)

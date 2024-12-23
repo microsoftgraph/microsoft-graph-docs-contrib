@@ -172,8 +172,16 @@ items:
       href: ../../api/device-list-transitivememberof.md
     - name: List registered owners
       href: ../../api/device-list-registeredowners.md
+    - name: Add registered owners
+      href: ../../api/device-post-registeredowners.md
+    - name: Remove registered owners
+      href: ../../api/device-delete-registeredowners.md
     - name: List registered users
       href: ../../api/device-list-registeredusers.md
+    - name: Add registered users
+      href: ../../api/device-post-registeredusers.md
+    - name: Remove registered users
+      href: ../../api/device-delete-registeredusers.md
     - name: List usage rights
       href: ../../api/device-list-usagerights.md
     - name: Check member groups
@@ -372,6 +380,14 @@ items:
         href: ../../api/subscribedsku-get.md
       - name: List
         href: ../../api/subscribedsku-list.md
+  - name: Microsoft Entra admin center settings
+    items:
+    - name: Microsoft Entra admin center settings
+      href: ../../resources/uxsetting.md
+    - name: Get
+      href: ../../api/uxsetting-get.md
+    - name: Update
+      href: ../../api/uxsetting-update.md
   - name: Mobility management policy
     items:
     - name: Mobility management policy
@@ -621,34 +637,6 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
     - name: Find tenant by tenant ID
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
-  - name: Trusted certificate authorities for apps (preview)
-    items:
-    - name: Certificate-based application configuration
-      items:
-      - name: Certificate-based application configuration
-        href: ../../resources/certificatebasedapplicationconfiguration.md
-      - name: List
-        href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
-      - name: Create
-        href: ../../api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
-      - name: Get
-        href: ../../api/certificatebasedapplicationconfiguration-get.md
-      - name: Update
-        href: ../../api/certificatebasedapplicationconfiguration-update.md
-    - name: Certificate authority as entity
-      items:
-      - name: Certificate authority as entity
-        href: ../../resources/certificateauthorityasentity.md
-      - name: List
-        href: ../../api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
-      - name: Create
-        href: ../../api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
-      - name: Get
-        href: ../../api/certificateauthorityasentity-get.md
-      - name: Update
-        href: ../../api/certificateauthorityasentity-update.md
-      - name: Delete
-        href: ../../api/certificateauthorityasentity-delete.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
@@ -2022,10 +2010,6 @@ items:
         href: ../../api/authenticationeventlistener-delete.md
     - name: On attribute collection listener
       href: ../../resources/onattributecollectionlistener.md
-    - name: On attribute collection start listener
-      href: ../../resources/onattributecollectionstartlistener.md
-    - name: On attribute collection submit listener
-      href: ../../resources/onattributecollectionsubmitlistener.md
     - name: On authentication method load start listener
       href: ../../resources/onauthenticationmethodloadstartlistener.md
     - name: On interactive auth flow start listener
@@ -2080,6 +2064,26 @@ items:
         href: ../../api/fido2authenticationmethod-delete.md
       - name: Creation options
         href: ../../api/fido2authenticationmethod-creationoptions.md
+    - name: Hardware OATH method
+      items:
+      - name: Hardware OATH method
+        href: ../../resources/hardwareoathauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-hardwareoathmethods.md
+      - name: Create
+        href: ../../api/authentication-post-hardwareoathmethods.md
+      - name: Get
+        href: ../../api/hardwareoathauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/authentication-delete-hardwareoathmethods.md
+      - name: Activate
+        href: ../../api/hardwareoathauthenticationmethod-activate.md
+      - name: Deactivate
+        href: ../../api/hardwareoathauthenticationmethod-deactivate.md
+      - name: Assign and activate
+        href: ../../api/hardwareoathauthenticationmethod-assignandactivate.md
+      - name: Assign and activate by serial number
+        href: ../../api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber.md
     - name: Microsoft Authenticator
       items:
       - name: Microsoft Authenticator
@@ -2223,6 +2227,52 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authentication method modes
         href: ../../api/authenticationmethodmodedetail-get.md
+  - name: Azure AD B2C IEF
+    items:
+    - name: Trust framework key set
+      items:
+      - name: Trust framework key set
+        href: ../../resources/trustframeworkkeyset.md
+      - name: List
+        href: ../../api/trustframework-list-keysets.md
+      - name: Create
+        href: ../../api/trustframework-post-keysets.md
+      - name: Get
+        href: ../../api/trustframeworkkeyset-get.md
+      - name: Update
+        href: ../../api/trustframeworkkeyset-update.md
+      - name: Generate key
+        href: ../../api/trustframeworkkeyset-generatekey.md
+      - name: Upload secret
+        href: ../../api/trustframeworkkeyset-uploadsecret.md
+      - name: Get active key
+        href: ../../api/trustframeworkkeyset-getactivekey.md
+      - name: Upload X.509 certificate
+        href: ../../api/trustframeworkkeyset-uploadcertificate.md
+      - name: Upload PKCS12 certificate
+        href: ../../api/trustframeworkkeyset-uploadpkcs12.md
+    - name: Trust framework key v2
+      items:
+      - name: Trust framework key v2
+        href: ../../resources/trustFrameworkkey_v2.md
+      - name: Get
+        href: ../../api/trustframeworkkey_v2-get.md
+      - name: Update
+        href: ../../api/trustframeworkkey_v2-update.md
+    - name: Trust framework policy
+      items:
+      - name: Trust framework policy
+        href: ../../resources/trustframeworkpolicy.md
+      - name: Create
+        href: ../../api/trustframework-post-trustframeworkpolicy.md
+      - name: Get
+        href: ../../api/trustframeworkpolicy-get.md
+      - name: List
+        href: ../../api/trustframework-list-trustframeworkpolicies.md
+      - name: Update
+        href: ../../api/trustframework-put-trustframeworkpolicy.md
+      - name: Delete
+        href: ../../api/trustframeworkpolicy-delete.md
   - name: Certificate-based auth configuration
     displayName: CBA
     items:
@@ -2322,6 +2372,14 @@ items:
         href: ../../api/conditionalaccessroot-list-templates.md
       - name: Get
         href: ../../api/conditionalaccesstemplate-get.md
+    - name: Continuous access evaluation policy
+      items:
+      - name: Continuous access evaluation policy
+        href: ../../resources/continuousaccessevaluationpolicy.md
+      - name: Get
+        href: ../../api/continuousaccessevaluationpolicy-get.md
+      - name: Update
+        href: ../../api/continuousaccessevaluationpolicy-update.md
   - name: Cross-tenant access
     displayName: Cross-tenant access settings, XTAP
     items:
@@ -2473,6 +2531,12 @@ items:
         href: ../../api/riskyusers-dismiss.md
       - name: List history
         href: ../../api/riskyuser-list-history.md
+    - name: Risky user history item
+      items:
+      - name: Risky user history item
+        href: ../../resources/riskyuserhistoryitem.md
+      - name: List history
+        href: ../../api/riskyuser-list-history.md
     - name: Service principal risk detection
       items:
       - name: Service principal risk detection
@@ -2497,31 +2561,33 @@ items:
         href: ../../api/riskyserviceprincipal-list-history.md
   - name: Identity provider
     items:
-    - name: External Identities identity provider
-      items:
-      - name: External Identities identity provider
-        href: ../../resources/identityproviderbase.md
-      - name: List configured identity providers
-        href: ../../api/identitycontainer-list-identityproviders.md
-      - name: Create identity provider
-        href: ../../api/identitycontainer-post-identityproviders.md
-      - name: 'Get '
-        href: ../../api/identityproviderbase-get.md
-      - name: Update
-        href: ../../api/identityproviderbase-update.md
-      - name: Delete
-        href: ../../api/identityproviderbase-delete.md
-      - name: List available identity providers
-        href: ../../api/identityproviderbase-availableprovidertypes.md
     - name: External identities
       items:
+      - name: External Identities identity provider
+        items:
+        - name: External Identities identity provider
+          href: ../../resources/identityproviderbase.md
+        - name: List configured identity providers
+          href: ../../api/identitycontainer-list-identityproviders.md
+        - name: Create
+          href: ../../api/identitycontainer-post-identityproviders.md
+        - name: Get
+          href: ../../api/identityproviderbase-get.md
+        - name: Update
+          href: ../../api/identityproviderbase-update.md
+        - name: Delete
+          href: ../../api/identityproviderbase-delete.md
+        - name: List available identity providers
+          href: ../../api/identityproviderbase-availableprovidertypes.md
       - name: Built in identity provider
         href: ../../resources/builtinidentityprovider.md
       - name: Social identity provider
         href: ../../resources/socialidentityprovider.md
       - name: Apple managed identity provider
         href: ../../resources/applemanagedidentityprovider.md
-      - name: Open id connect identity provider
+      - name: OIDC identity provider
+        href: ../../resources/oidcidentityprovider.md
+      - name: OpenID Connect identity provider
         href: ../../resources/openidconnectidentityprovider.md
     - name: Domain-based external identities
       items:
@@ -2597,6 +2663,30 @@ items:
       href: ../../resources/invitation.md
     - name: Create
       href: ../../api/invitation-post.md
+  - name: Microsoft Entra lifecycle announcements
+    items:
+    - name: Product changes
+      items:
+      - name: Product changes
+        href: ../../resources/changeitembase.md
+      - name: List
+        href: ../../api/identitycontainer-list-productchanges.md
+    - name: Change announcements
+      items:
+      - name: Change announcements
+        href: ../../resources/announcement.md
+      - name: List
+        href: ../../api/announcement-list.md
+      - name: Get
+        href: ../../api/announcement-get.md
+    - name: Roadmap
+      items:
+      - name: Roadmap
+        href: ../../resources/roadmap.md
+      - name: List
+        href: ../../api/roadmap-list.md
+      - name: Get
+        href: ../../api/roadmap-get.md
   - name: Multitenant organization
     displayName: MTO
     items:
@@ -2775,6 +2865,24 @@ items:
           href: ../../api/hardwareoathauthenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/hardwareoathauthenticationmethodconfiguration-delete.md
+      - name: Hardware OATH token devices
+        items:
+        - name: Hardware OATH token devices
+          href: ../../resources/hardwareoathtokenauthenticationmethoddevice.md
+        - name: List
+          href: ../../api/authenticationmethoddevice-list-hardwareoathdevices.md
+        - name: Create
+          href: ../../api/authenticationmethoddevice-post-hardwareoathdevices.md
+        - name: Create one or more objects
+          href: ../../api/authenticationmethoddevice-update.md
+        - name: Get
+          href: ../../api/hardwareoathtokenauthenticationmethoddevice-get.md
+        - name: Update
+          href: ../../api/hardwareoathtokenauthenticationmethoddevice-update.md
+        - name: Delete
+          href: ../../api/authenticationmethoddevice-delete-hardwareoathdevices.md
+        - name: Assign user
+          href: ../../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md
       - name: Microsoft Authenticator
         items:
         - name: Microsoft Authenticator
@@ -2852,14 +2960,6 @@ items:
         href: ../../api/b2cauthenticationmethodspolicy-get.md
       - name: Update
         href: ../../api/b2cauthenticationmethodspolicy-update.md
-    - name: Continuous access evaluation policy
-      items:
-      - name: Continuous access evaluation policy
-        href: ../../resources/continuousaccessevaluationpolicy.md
-      - name: Get
-        href: ../../api/continuousaccessevaluationpolicy-get.md
-      - name: Update
-        href: ../../api/continuousaccessevaluationpolicy-update.md
     - name: Device registration policy
       items:
       - name: Device registration policy
@@ -2964,42 +3064,82 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
-  - name: Trust framework key set
+  - name: Public key infrastructure
     items:
-    - name: Trust framework key set
-      href: ../../resources/trustframeworkkeyset.md
-    - name: List
-      href: ../../api/trustframework-list-keysets.md
-    - name: Create
-      href: ../../api/trustframework-post-keysets.md
-    - name: Get
-      href: ../../api/trustframeworkkeyset-get.md
-    - name: Update
-      href: ../../api/trustframeworkkeyset-update.md
-    - name: Generate key
-      href: ../../api/trustframeworkkeyset-generatekey.md
-    - name: Upload secret
-      href: ../../api/trustframeworkkeyset-uploadsecret.md
-    - name: Get active key
-      href: ../../api/trustframeworkkeyset-getactivekey.md
-    - name: Upload X.509 certificate
-      href: ../../api/trustframeworkkeyset-uploadcertificate.md
-    - name: Upload PKCS12 certificate
-      href: ../../api/trustframeworkkeyset-uploadpkcs12.md
-  - name: Trust framework policy
+    - name: Certificate-based auth pki
+      items:
+      - name: Certificate-based auth pki
+        href: ../../resources/certificatebasedauthpki.md
+      - name: List
+        href: ../../api/publickeyinfrastructureroot-list-certificatebasedauthconfigurations.md
+      - name: Create
+        href: ../../api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations.md
+      - name: Get
+        href: ../../api/certificatebasedauthpki-get.md
+      - name: Update
+        href: ../../api/certificatebasedauthpki-update.md
+      - name: Delete
+        href: ../../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md
+      - name: Upload
+        href: ../../api/certificatebasedauthpki-upload.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
+    - name: Certificate authority detail
+      items:
+      - name: Certificate authority detail
+        href: ../../resources/certificateauthoritydetail.md
+      - name: List
+        href: ../../api/certificatebasedauthpki-list-certificateauthorities.md
+      - name: Create
+        href: ../../api/certificatebasedauthpki-post-certificateauthorities.md
+      - name: Get
+        href: ../../api/certificateauthoritydetail-get.md
+      - name: Update
+        href: ../../api/certificateauthoritydetail-update.md
+      - name: Delete
+        href: ../../api/certificatebasedauthpki-delete-certificateauthorities.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
+  - name: Trusted certificate authorities for apps (preview)
     items:
-    - name: Trust framework policy
-      href: ../../resources/trustframeworkpolicy.md
-    - name: Create
-      href: ../../api/trustframework-post-trustframeworkpolicy.md
-    - name: Get
-      href: ../../api/trustframeworkpolicy-get.md
-    - name: List
-      href: ../../api/trustframework-list-trustframeworkpolicies.md
-    - name: Update
-      href: ../../api/trustframework-put-trustframeworkpolicy.md
-    - name: Delete
-      href: ../../api/trustframeworkpolicy-delete.md
+    - name: Certificate-based application configuration
+      items:
+      - name: Certificate-based application configuration
+        href: ../../resources/certificatebasedapplicationconfiguration.md
+      - name: List
+        href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
+      - name: Create
+        href: ../../api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
+      - name: Get
+        href: ../../api/certificatebasedapplicationconfiguration-get.md
+      - name: Update
+        href: ../../api/certificatebasedapplicationconfiguration-update.md
+    - name: Certificate authority as entity
+      items:
+      - name: Certificate authority as entity
+        href: ../../resources/certificateauthorityasentity.md
+      - name: List
+        href: ../../api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
+      - name: Create
+        href: ../../api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
+      - name: Get
+        href: ../../api/certificateauthorityasentity-get.md
+      - name: Update
+        href: ../../api/certificateauthorityasentity-update.md
+      - name: Delete
+        href: ../../api/certificateauthorityasentity-delete.md
   - name: User flows in external tenants
     items:
     - name: Authentication events flow
@@ -3056,18 +3196,6 @@ items:
         href: ../../api/authenticationconditionapplication-delete.md
   - name: User flows in workforce tenants and Azure AD B2C
     items:
-    - name: Identity user flow
-      items:
-      - name: Identity user flow
-        href: ../../resources/identityuserflow.md
-      - name: List
-        href: ../../api/identityuserflow-list.md
-      - name: Create
-        href: ../../api/identityuserflow-post-userflows.md
-      - name: Get
-        href: ../../api/identityuserflow-get.md
-      - name: Delete
-        href: ../../api/identityuserflow-delete.md
     - name: B2C identity user flow
       items:
       - name: B2C identity user flow
@@ -3196,6 +3324,18 @@ items:
         href: ../../api/identityapiconnector-uploadclientcertificate.md
       - name: Delete
         href: ../../api/identityapiconnector-delete.md
+    - name: User flows in Azure AD B2C (deprecated)
+      items:
+      - name: User flows in Azure AD B2C (deprecated)
+        href: ../../resources/identityuserflow.md
+      - name: List
+        href: ../../api/identityuserflow-list.md
+      - name: Create
+        href: ../../api/identityuserflow-post-userflows.md
+      - name: Get
+        href: ../../api/identityuserflow-get.md
+      - name: Delete
+        href: ../../api/identityuserflow-delete.md
 - name: Multicloud permissions management (preview)
   items:
   - name: Overview
@@ -4091,6 +4231,10 @@ items:
         href: ../../api/networkaccess-filteringrule-update.md
       - name: Delete
         href: ../../api/networkaccess-filteringrule-delete.md
+    - name: FQDN filtering rule
+      href: ../../resources/networkaccess-fqdnfilteringrule.md
+    - name: Web category filtering rule
+      href: ../../resources/networkaccess-webcategoryfilteringrule.md
 - name: Partner customer administration
   items:
   - name: Partner security alert

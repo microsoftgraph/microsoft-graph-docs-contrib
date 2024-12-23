@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 11/05/2024
 ---
 
 # List meetingAttendanceReports
@@ -13,11 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting or a virtual event ends, an attendance report is generated for that session.
+Get a list of [meetingAttendanceReport](../resources/meetingattendancereport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting or a virtual event ends, an attendance report is generated for that session.
 
 > [!WARNING]
 >
-> This method doesn't support channel meetings, and only returns up to 50 of the most recent reports.
+>- This method only returns up to 50 of the most recent reports.
+>- When you use this method to list attendance reports for a channel meeting, the API returns attendance reports for every meeting in the channel, rather than just the attendance reports for the specified meeting, which is the expected behavior for scheduled meetings. This behavior is the same regardless of where the channel meeting was created.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -230,13 +232,25 @@ Content-Type: application/json
       "id": "c9b6db1c-d5eb-427d-a5c0-2022d7",
       "totalParticipantCount": 1,
       "meetingStartDateTime": "2021-10-05T04:38:23.945Z",
-      "meetingEndDateTime": "2021-10-05T04:43:49.77Z"
+      "meetingEndDateTime": "2021-10-05T04:43:49.77Z",
+      "externalEventInformation": [
+        {
+          "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+          "externalEventId": "myExternalEventId"
+        }
+      ]
     },
     {
       "id": "2c2c2454-7613-4d6e-9c7c-4ce89",
       "totalParticipantCount": 2,
       "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
-      "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
+      "meetingEndDateTime": "2021-10-04T23:18:57.563Z",
+      "externalEventInformation": [
+        {
+          "applicationId" : "e3c6e27c-e2a1-4212-8d63-0729828ed4fa",
+          "externalEventId": "anotherExternalEventId"
+        }
+      ]
     }
   ]
 }

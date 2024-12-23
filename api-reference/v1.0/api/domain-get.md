@@ -5,6 +5,7 @@ author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get domain
@@ -23,44 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-get-permissions.md)]
 
-The work or school account needs to belong to atleast one of the following Microsoft Entra roles:
-
-* User Administrator
-* Helpdesk Administrator
-* Service Support Administrator
-* Billing Administrator
-* Mailbox Administrator
-* Directory Readers
-* Directory Writers
-* AdHoc License Administrator
-* Application Administrator
-* Security Reader
-* Security Administrator
-* Privileged Role Administrator
-* Cloud Application Administrator
-* Customer LockBox Access Approver
-* Dynamics 365 Administrator
-* Power BI Administrator
-* Azure Information Protection Administrator
-* Desktop Analytics Administrator
-* License Administrator
-* Microsoft Managed Desktop Administrator
-* Authentication Administrator
-* Privileged Authentication Administrator
-* Teams Communications Administrator
-* Teams Communications Support Engineer
-* Teams Communications Support Specialist
-* Teams Administrator
-* Insights Administrator
-* Compliance Data Administrator
-* Security Operator
-* Kaizala Administrator
-* Global Reader
-* Volume Licensing Business Center User
-* Volume Licensing Service Center User
-* Modern Commerce Administrator
-* Microsoft Store for Business User
-* Directory Reviewer
+[!INCLUDE [rbac-domain-apis-read](../includes/rbac-for-apis/rbac-domain-apis-read.md)]
 
 ## HTTP request
 
