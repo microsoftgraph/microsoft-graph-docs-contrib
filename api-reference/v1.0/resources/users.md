@@ -68,7 +68,7 @@ The user ID or userPrincipalName is always the signed-in user's.
 
 [!INCLUDE [beta-disclaimer](../../../includes/permissions-notes/user.readbasic.all.md)]
 
-In addition, the following scenario-specific permissions also allow apps to read the basic user profil which contains mostly identifier-related properties: *User-Mail.ReadWrite.All*, *User-PasswordProfile.ReadWrite.All*, *User-Phone.ReadWrite.All*, *User-LifeCycleInfo.Read.All*, *User-LifeCycleInfo.ReadWrite.All*.
+In addition, the following scenario-specific permissions also allow apps to read the basic user profile which contains mostly identifier-related properties: *User-Mail.ReadWrite.All*, *User-PasswordProfile.ReadWrite.All*, *User-Phone.ReadWrite.All*, *User-LifeCycleInfo.Read.All*, *User-LifeCycleInfo.ReadWrite.All*.
 
 ## Sensitive actions
 
