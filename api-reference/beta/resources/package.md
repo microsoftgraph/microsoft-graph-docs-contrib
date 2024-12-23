@@ -20,6 +20,15 @@ While the notebook is made up of files and folders that represent the contents o
 
 DriveItems with the **package** facet do not include a **folder** or **file** facet but are conceptually similar to an item with a **folder** facet.
 
+## Properties
+
+| Property Name | Type   | Description                                                                                                                                                                      |
+|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **type**      | string | An string indicating the type of package. While `oneNote` is the only currently defined value, you should expect other package types to be returned and handle them accordingly. |
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.package" } -->
@@ -28,13 +37,6 @@ DriveItems with the **package** facet do not include a **folder** or **file** fa
   "type": "oneNote"
 }
 ```
-
-## Properties
-
-| Property Name | Type   | Description                                                                                                                                                                      |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **type**      | string | An string indicating the type of package. While `oneNote` is the only currently defined value, you should expect other package types to be returned and handle them accordingly. |
-
 ## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).

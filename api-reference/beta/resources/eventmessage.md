@@ -26,6 +26,9 @@ this [get event message example](../api/eventmessage-get.md#example-2). The app 
 
 Aside from a meeting request, an **eventMessage** instance can be found in an invitee's mailbox as the result of an event organizer cancelling a meeting, or in the organizer's mailbox as a result of an invitee responding to the meeting request. An app can act on event messages in the same way as on messages with minor differences.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -26,6 +26,9 @@ Represents artifact count metadata for a [restore session](../resources/restoreS
 |completed|Int32|The number of artifacts whose restoration completed.|
 |failed|Int32|The number of artifacts whose restoration failed.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

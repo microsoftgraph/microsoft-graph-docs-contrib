@@ -27,6 +27,9 @@ After **coverImageItemId** has been set, the thumbnails for an album will always
 You can override the default cover by PATCHing the [bundle item][bundle] and setting the **coverImageItemId** property on the `album` to the id of an image contained within the album.
 To remove a custom-set cover, you can set the **coverImageItemId** property to null, and a default one will be chosen automatically again.
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.album" } -->

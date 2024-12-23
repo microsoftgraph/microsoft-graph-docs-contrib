@@ -17,6 +17,9 @@ Namespace: microsoft.graph
 A meeting suggestion that includes information like meeting time, attendance likelihood, individual 
 availability, and available meeting locations.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

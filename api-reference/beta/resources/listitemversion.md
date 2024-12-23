@@ -30,6 +30,23 @@ The following tasks are available for listItemVersion resources.
 [version-get]: ../api/listitemversion-get.md
 [version-restore]: ../api/listitemversion-restore.md
 
+## Properties
+
+| Property                 | Type                                                 | Description                                                             |
+| :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
+| **id**                   | string                                               | The ID of the version. Read-only.                                       |
+| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
+| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
+| **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
+
+## Relationships
+
+The following table defines the relationships that the **driveItemVersion** resource has to other resources.
+
+| Relationship | Type                                           | Description                                                              |
+| :----------- | :--------------------------------------------- | :----------------------------------------------------------------------- |
+| **fields**   | [FieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
+
 ## JSON representation
 
 <!-- { 
@@ -49,23 +66,6 @@ The following tasks are available for listItemVersion resources.
   "published": { "@odata.type": "microsoft.graph.publicationFacet" }
 }
 ```
-
-## Properties
-
-| Property                 | Type                                                 | Description                                                             |
-| :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | The ID of the version. Read-only.                                       |
-| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
-| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
-| **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
-
-## Relationships
-
-The following table defines the relationships that the **driveItemVersion** resource has to other resources.
-
-| Relationship | Type                                           | Description                                                              |
-| :----------- | :--------------------------------------------- | :----------------------------------------------------------------------- |
-| **fields**   | [FieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
 
 <!--
 {

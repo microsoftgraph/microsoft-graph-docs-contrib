@@ -22,6 +22,9 @@ Represents an object to be used as input test data when the [parseExpression](..
 |definition|[objectDefinition](synchronization-objectdefinition.md)|Definition of the test object.|
 |properties|[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection|Property values of the test object.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

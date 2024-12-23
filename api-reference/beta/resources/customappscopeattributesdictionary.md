@@ -26,6 +26,9 @@ Currently only the Exchange Online RBAC provider is supported.
 |exclusive | Boolean | Indicates whether the object is an [exclusive scope](/exchange/understanding-exclusive-scopes-exchange-2013-help). |
 |recipientFilter| String | A filter query that defines how you segment your recipients that admins can manage. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

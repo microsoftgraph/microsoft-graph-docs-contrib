@@ -23,6 +23,9 @@ The presence of the **accessAction** resource on an [**itemActivity**][activity]
 
 This resource type has no properties.
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

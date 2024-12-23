@@ -16,6 +16,24 @@ Namespace: microsoft.graph
 
 The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are dates or times.
 
+## Properties
+
+| Property      | Type   | Description                                                                                                                                                         |
+| :------------ | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **displayAs** | string | How the value should be presented in the UX. Must be one of `default`, `friendly`, or `standard`. See below for more details. If unspecified, treated as `default`. |
+| **format**    | string | Indicates whether the value should be presented as a date only or a date and time. Must be one of `dateOnly` or `dateTime`                                          |
+
+### DisplayAs values
+
+| Value        | Description                                                         |
+| :----------- | :------------------------------------------------------------------ |
+| **default**  | Uses the default rendering in the UX.                               |
+| **friendly** | Uses a friendly relative representation (for example "today at 3:00 PM")    |
+| **standard** | Uses the standard absolute representation (for example "5/10/2017 3:20 PM") |
+
+## Relationships
+None.
+
 ## JSON representation
 
 Here's a JSON representation of a **dateTimeColumn** resource.
@@ -28,21 +46,6 @@ Here's a JSON representation of a **dateTimeColumn** resource.
   "format": "dateOnly | dateTime"
 }
 ```
-
-## Properties
-
-| Property      | Type   | Description                                                                                                                                                         |
-| :------------ | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **displayAs** | string | How the value should be presented in the UX. Must be one of `default`, `friendly`, or `standard`. See below for more details. If unspecified, treated as `default`. |
-| **format**    | string | Indicates whether the value should be presented as a date only or a date and time. Must be one of `dateOnly` or `dateTime`                                          |
-
-## DisplayAs values
-
-| Value        | Description                                                         |
-| :----------- | :------------------------------------------------------------------ |
-| **default**  | Uses the default rendering in the UX.                               |
-| **friendly** | Uses a friendly relative representation (for example "today at 3:00 PM")    |
-| **standard** | Uses the standard absolute representation (for example "5/10/2017 3:20 PM") |
 
 <!--
 {

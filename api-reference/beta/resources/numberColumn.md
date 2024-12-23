@@ -16,21 +16,6 @@ Namespace: microsoft.graph
 
 The **numberColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are numbers.
 
-## JSON representation
-
-Here is a JSON representation of a **numberColumn** resource.
-
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.numberColumn" } -->
-
-```json
-{
-  "decimalPlaces": "automatic | none | one | two | three | four | five",
-  "displayAs": "number | percentage",
-  "maximum": 10.551,
-  "minimum": 99.993
-}
-```
-
 ## Properties
 
 | Property          | Type   | Description                                                                                                                |
@@ -54,6 +39,24 @@ Here is a JSON representation of a **numberColumn** resource.
 
 Note: **decimalPlaces** and **displayAs** apply to how numbers are rendered, not stored.
 These properties may be updated.
+
+## Relationships
+None.
+
+## JSON representation
+
+Here is a JSON representation of a **numberColumn** resource.
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.numberColumn" } -->
+
+```json
+{
+  "decimalPlaces": "automatic | none | one | two | three | four | five",
+  "displayAs": "number | percentage",
+  "maximum": 10.551,
+  "minimum": 99.993
+}
+```
 
 <!--
 {

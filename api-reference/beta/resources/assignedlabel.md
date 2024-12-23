@@ -24,6 +24,9 @@ Represents a sensitivity label assigned to a Microsoft 365 group. Sensitivity la
 | labelId     | String | The unique identifier of the label.       |
 | displayName | String | The display name of the label. Read-only. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -16,6 +16,14 @@ Namespace: microsoft.graph
 
 The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.
 
+## Properties
+
+None.
+
+## Relationships
+
+None.
+
 ## JSON representation
 
 Here is a JSON representation of a **currencyColumn** resource.

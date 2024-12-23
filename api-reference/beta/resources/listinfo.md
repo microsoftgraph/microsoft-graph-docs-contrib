@@ -18,6 +18,18 @@ The **listInfo** complex type provides additional information about a [list][].
 
 [list]: list.md
 
+## Properties
+
+| Property                | Type    | Description                                                                                                                                                                                              |
+| :---------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **contentTypesEnabled** | Boolean | If `true`, indicates that content types are enabled for this list.                                                                                                                                       |
+| **hidden**              | Boolean | If `true`, indicates that the list isn't normally visible in the SharePoint user experience.                                                                                                            |
+| **template**            | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more. |
+
+
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
@@ -36,15 +48,6 @@ The following JSON representation shows the resource type.
   "template": "documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
 }
 ```
-
-## Properties
-
-| Property                | Type    | Description                                                                                                                                                                                              |
-| :---------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **contentTypesEnabled** | Boolean | If `true`, indicates that content types are enabled for this list.                                                                                                                                       |
-| **hidden**              | Boolean | If `true`, indicates that the list isn't normally visible in the SharePoint user experience.                                                                                                            |
-| **template**            | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more. |
-
 ### Remarks
 
 While most lists created by users have one of the values listed in the previous section, other values are possible as well.

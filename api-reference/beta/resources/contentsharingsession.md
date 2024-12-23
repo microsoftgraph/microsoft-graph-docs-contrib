@@ -29,6 +29,14 @@ Represents a content sharing session in a call.
 |:---                     |:---                      |:---                                                                               |
 | id                      | String                   | Unique identifier for the content sharing session. Read-only. |
 
+## Properties
+
+None.
+
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

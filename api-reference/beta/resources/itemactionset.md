@@ -18,32 +18,6 @@ The **ItemActionSet** resource provides information about the actions that made 
 
 [itemActivity]: itemactivity.md
 
-## JSON representation
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "keyProperty": "id",
-  "@type": "microsoft.graph.itemActionSet",
-  "@type.aka": "oneDrive.action"
-}-->
-
-```json
-{
-  "comment": {"@odata.type": "microsoft.graph.commentAction"},
-  "create": {"@odata.type": "microsoft.graph.createAction"},
-  "delete": {"@odata.type": "microsoft.graph.deleteAction"},
-  "edit": {"@odata.type": "microsoft.graph.editAction"},
-  "mention": {"@odata.type": "microsoft.graph.mentionAction"},
-  "move": {"@odata.type": "microsoft.graph.moveAction"},
-  "rename": {"@odata.type": "microsoft.graph.renameAction"},
-  "restore": {"@odata.type": "microsoft.graph.restoreAction"},
-  "share": {"@odata.type": "microsoft.graph.shareAction"},
-  "version": {"@odata.type": "microsoft.graph.versionAction"},
-  
-}
-```
-
 ## Properties
 
 Below are the actions that are available today.
@@ -72,6 +46,35 @@ New actions may get logged in the future, so make sure your app is tolerant of h
 [restoreAction]: restoreaction.md
 [shareAction]: shareaction.md
 [versionAction]: versionaction.md
+
+## Relationships
+None.
+
+## JSON representation
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "keyProperty": "id",
+  "@type": "microsoft.graph.itemActionSet",
+  "@type.aka": "oneDrive.action"
+}-->
+
+```json
+{
+  "comment": {"@odata.type": "microsoft.graph.commentAction"},
+  "create": {"@odata.type": "microsoft.graph.createAction"},
+  "delete": {"@odata.type": "microsoft.graph.deleteAction"},
+  "edit": {"@odata.type": "microsoft.graph.editAction"},
+  "mention": {"@odata.type": "microsoft.graph.mentionAction"},
+  "move": {"@odata.type": "microsoft.graph.moveAction"},
+  "rename": {"@odata.type": "microsoft.graph.renameAction"},
+  "restore": {"@odata.type": "microsoft.graph.restoreAction"},
+  "share": {"@odata.type": "microsoft.graph.shareAction"},
+  "version": {"@odata.type": "microsoft.graph.versionAction"},
+  
+}
+```
 
 ## Remarks
 

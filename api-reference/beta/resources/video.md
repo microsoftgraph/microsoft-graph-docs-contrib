@@ -19,6 +19,26 @@ The **Video** resource groups video-related data items into a single structure.
 If a [**DriveItem**](driveitem.md) has a non-null **video** facet, the item represents a video file.
 The properties of the **Video** resource are populated by extracting metadata from the file.
 
+## Properties
+
+| Property                  | Type   | Description                                     |
+| :------------------------ | :----- | :---------------------------------------------- |
+| **audioBitsPerSample**    | Int32  | Number of audio bits per sample.                |
+| **audioChannels**         | Int32  | Number of audio channels.                       |
+| **audioFormat**           | string | Name of the audio format (AAC, MP3, etc.).      |
+| **audioSamplesPerSecond** | Int32  | Number of audio samples per second.             |
+| **bitrate**               | Int32  | Bit rate of the video in bits per second.       |
+| **duration**              | Int64  | Duration of the file in milliseconds.           |
+| **fourCC**                | string | "Four character code" name of the video format. |
+| **framerate**             | double | Frame rate of the video.                        |
+| **height**                | Int32  | Height of the video, in pixels.                 |
+| **width**                 | Int32  | Width of the video, in pixels.                  |
+
+[item-resource]: ../resources/driveitem.md
+
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
@@ -43,23 +63,6 @@ The following JSON representation shows the resource type.
   "framerate": 2.75
 }
 ```
-
-## Properties
-
-| Property                  | Type   | Description                                     |
-| :------------------------ | :----- | :---------------------------------------------- |
-| **audioBitsPerSample**    | Int32  | Number of audio bits per sample.                |
-| **audioChannels**         | Int32  | Number of audio channels.                       |
-| **audioFormat**           | string | Name of the audio format (AAC, MP3, etc.).      |
-| **audioSamplesPerSecond** | Int32  | Number of audio samples per second.             |
-| **bitrate**               | Int32  | Bit rate of the video in bits per second.       |
-| **duration**              | Int64  | Duration of the file in milliseconds.           |
-| **fourCC**                | string | "Four character code" name of the video format. |
-| **framerate**             | double | Frame rate of the video.                        |
-| **height**                | Int32  | Height of the video, in pixels.                 |
-| **width**                 | Int32  | Width of the video, in pixels.                  |
-
-[item-resource]: ../resources/driveitem.md
 
 ## Remarks
 

@@ -15,22 +15,6 @@ Namespace: microsoft.graph
 
 Represents the column values in a [listItem](listitem.md) resource.
 
-## JSON representation
-
-Here's a JSON representation of a **fieldValueSet** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-       "keyProperty": "id", "openType": true } -->
-
-```json
-{
-    "Author": "Brad Cleaver",
-    "AuthorLookupId": "13",
-    "Name": "Kangaroos and Wallabies: A Deep Dive",
-    "Color": "Red",
-    "Quantity": 350,
-}
-```
-
 ## Properties
 
 Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.
@@ -49,6 +33,27 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 ```
 
 You may request up to 12 lookup fields in a single query, plus any number of regular fields.
+
+## Relationships
+None.
+
+## JSON representation
+
+Here's a JSON representation of a **fieldValueSet** resource.
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
+       "keyProperty": "id", "openType": true } -->
+
+```json
+{
+    "Author": "Brad Cleaver",
+    "AuthorLookupId": "13",
+    "Name": "Kangaroos and Wallabies: A Deep Dive",
+    "Color": "Red",
+    "Quantity": 350,
+}
+```
+
+
 
 <!--
 {
