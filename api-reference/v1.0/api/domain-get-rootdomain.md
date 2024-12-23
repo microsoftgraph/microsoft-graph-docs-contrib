@@ -16,7 +16,7 @@ Get the [root domain](../resources/domain.md) of a subdomain.
 
 This API returns a single object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
