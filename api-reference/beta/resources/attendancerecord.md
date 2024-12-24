@@ -28,6 +28,7 @@ Contains information associated with an attendance record in a [meetingAttendanc
 |:--------------------|:--------|:-----------|
 | attendanceIntervals | [attendanceInterval](attendanceinterval.md) collection | List of time periods between joining and leaving a meeting. |
 | emailAddress | String | Email address of the user associated with this attendance record. |
+| externalRegistrationInformation | [virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md) | The external information for a virtual event registration. |
 | identity | [identity](identity.md) | Identity of the user associated with this attendance record. The specific type will be one of the following derived types of [identity](identity.md), depending on the type of the user: [communicationsUserIdentity](communicationsUserIdentity.md), [azureCommunicationServicesUserIdentity](azureCommunicationServicesUserIdentity.md). |
 | role | String | Role of the attendee. Possible values are: `None`, `Attendee`, `Presenter`, and `Organizer`.  |
 | registrantId | String | Unique identifier of a [meetingRegistrant](meetingregistrantbase.md). Presents when the participant has registered for the meeting. (deprecated) |
@@ -64,6 +65,11 @@ The following JSON representation shows the resource type.
     {
       "@odata.type": "#microsoft.graph.attendanceInterval"
     }
-  ]
+  ],
+  "externalRegistrationInformation": {
+    "@odata.type": "#microsoft.graph.virtualEventExternalRegistrationInformation",
+      "referrer": "String",
+      "registrationId": "String"
+  }
 }
 ```
