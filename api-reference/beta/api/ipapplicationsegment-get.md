@@ -60,6 +60,7 @@ If successful, this method returns a `200 OK` response code and an [ipApplicatio
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_ipapplicationsegment"
@@ -68,6 +69,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/applications/dcc40202-6223-488b-8e64-28aa1a803d6c/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments/df8cb1a6-4bbf-4da3-8f85-fe2fc439ab80
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-ipapplicationsegment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
