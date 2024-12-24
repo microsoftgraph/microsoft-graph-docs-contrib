@@ -5,6 +5,7 @@ author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 12/10/2024
 ---
 
 # Delete recycleBinItem
@@ -19,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestoragecontainer-delete-recyclebin-items-permissions"
+  "name": "filestoragecontainer-delete-recyclebinitem-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-recyclebinitem-permissions.md)]
@@ -58,9 +59,10 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_filestoragecontainer_recyclebin_items",
+  "name": "delete_filestoragecontainer_recyclebinitem",
   "@odata.type": "Collection(microsoft.graph.recyclebinitem)"
 }
 -->
@@ -72,10 +74,17 @@ Content-Type: application/json
   "ids": ["5d625d33-338c-4a77-a98a-3e287116440c", "73133853-48f2-4956-bc4a-03f8d1675042"]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-filestoragecontainer-recyclebinitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

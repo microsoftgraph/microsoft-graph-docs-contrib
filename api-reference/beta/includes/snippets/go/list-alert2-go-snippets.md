@@ -18,11 +18,11 @@ import (
 
 requestFilter := "state eq microsoft.graph.healthmonitoring.alertState'active'"
 
-requestParameters := &graphreports.ReportsHealthMonitoringAlertsRequestBuilderGetQueryParameters{
+requestParameters := &graphreports.HealthMonitoringAlertsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"id"," alertType"},
 }
-configuration := &graphreports.ReportsHealthMonitoringAlertsRequestBuilderGetRequestConfiguration{
+configuration := &graphreports.HealthMonitoringAlertsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

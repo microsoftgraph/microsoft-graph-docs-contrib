@@ -88,12 +88,14 @@
             "onPremisesAgent",
             "onPremisesAgentGroup",
             "onPremisesPublishingProfile",
-            "publishedResource"
+            "publishedResource",
+            "ipApplicationSegment",
+            "webApplicationSegment",
+            "corsConfiguration_v2"           
           ],
           "complexTypes": [
             "applicationSegment",
             "corsConfiguration",
-            "corsConfiguration_v2",
             "hybridAgentUpdaterConfiguration",
             "kerberosSignOnSettings",
             "keyCredential",
@@ -149,6 +151,7 @@
         "protectionUnitBase",
         "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
+        "restoreArtifactsBulkRequestBase",
         "restorePoint",
         "restoreSessionBase",
         "serviceApp"
@@ -193,6 +196,14 @@
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
             "siteRestoreArtifact"
+          ]
+        },
+        {
+          "name": "Restore artifacts bulk request",
+          "resources": [
+            "driveRestoreArtifactsBulkAdditionRequest",
+            "mailboxRestoreArtifactsBulkAdditionRequest",
+            "siteRestoreArtifactsBulkAdditionRequest"
           ]
         },
         {
@@ -281,6 +292,12 @@
       ],
       "resources": [
         "subscription"
+      ],
+      "complexTypes": [
+        "changeNotificationCollection",
+        "changeNotification",
+        "changeNotificationEncryptedContent",
+        "resourceData"
       ]
     },
     {
@@ -539,6 +556,7 @@
         },
         {
           "name": "Cloud printing",
+          "overview": "../../resources/print-overview.md",
           "keywords": [
             "Universal Print"
           ],
@@ -675,6 +693,7 @@
             "microsoft.graph.windowsUpdates.productRevision",
             "microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
             "microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation",
+            "microsoft.graph.windowsUpdates.qualityUpdateFilter",
             "microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
             "microsoft.graph.windowsUpdates.safeguardProfile",
             "microsoft.graph.windowsUpdates.safeguardSettings",
@@ -941,6 +960,8 @@
         "bundle",
         "permission",
         "fileStorageContainer",
+        "recycleBin",
+        "recycleBinItem",
         "sharedDriveItem"
       ]
     },
@@ -1456,6 +1477,7 @@
                 "authenticationMethod",
                 "emailAuthenticationMethod",
                 "fido2AuthenticationMethod",
+                "hardwareOathAuthenticationMethod",
                 "microsoftAuthenticatorAuthenticationMethod",
                 "passwordAuthenticationMethod",
                 "phoneAuthenticationMethod",
@@ -1548,16 +1570,16 @@
             },
             {
               "name": "Identity provider",
-              "resources": [
-                "identityProviderBase"
-              ],
+              "resources": [],
               "childNodes": [
                 {
                   "name": "External identities",
-                  "resources": [
+                  "resources": [                    
+                    "identityProviderBase",
                     "builtInIdentityProvider",
                     "socialIdentityProvider",
                     "appleManagedIdentityProvider",
+                    "oidcidentityProvider",
                     "openIdConnectIdentityProvider"
                   ]
                 },
@@ -1641,6 +1663,7 @@
                     "externalAuthenticationMethodConfiguration",
                     "fido2AuthenticationMethodConfiguration",
                     "hardwareOathAuthenticationMethodConfiguration",
+                    "hardwareOathTokenAuthenticationMethodDevice",
                     "microsoftAuthenticatorAuthenticationMethodConfiguration",
                     "smsAuthenticationMethodConfiguration",
                     "temporaryAccessPassAuthenticationMethodConfiguration",
@@ -1652,10 +1675,25 @@
               ]
             },
             {
+              "name": "Public key infrastructure",
+              "resources": [
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+               ]
+            },
+            {
               "name": "Trusted certificate authorities for apps (preview)",
               "resources": [
                 "certificateBasedApplicationConfiguration",
                 "certificateAuthorityAsEntity"
+              ]
+            },
+            {
+              "name": "Microsoft Entra lifecycle announcements",
+              "resources": [
+                "changeItemBase",
+                "announcement",
+                "roadmap"
               ]
             },
             {
@@ -2335,6 +2373,13 @@
           ]
         },
         {
+          "name": "Microsoft 365 monitoring reports (preview)",
+          "overview": "../../resources/m365-monitoring-api-overview.md",
+          "resources": [
+            "serviceActivity"
+          ]
+        },
+        {
           "name": "Microsoft 365 usage reports",
           "overview": "../../resources/report.md",
           "resources": [
@@ -2494,6 +2539,7 @@
         },
         {
           "name": "eDiscovery",
+          "overview": "../../resources/security-ediscovery-apioverview.md",
           "resources": [
             "microsoft.graph.security.ediscoveryCase",
             "microsoft.graph.security.ediscoveryCaseSettings",
@@ -2642,6 +2688,19 @@
             "microsoft.graph.security.fileThreatSubmission",
             "microsoft.graph.security.urlThreatSubmission"
           ]
+        },
+        {
+          "name": "Discovered cloud apps (preview)",
+          "overview": "../../resources/security-cloudappdiscovery-overview.md",
+          "resources": [
+            "microsoft.graph.security.cloudAppDiscoveryReport",
+            "microsoft.graph.security.discoveredCloudAppDetail",
+            "microsoft.graph.security.discoveredCloudAppInfo",
+            "microsoft.graph.security.discoveredCloudAppUser",
+            "microsoft.graph.security.discoveredCloudAppIPAddress",
+            "microsoft.graph.security.discoveredCloudAppDevice",
+            "microsoft.graph.security.endpointDiscoveredCloudAppDetail"
+          ]
         }
       ]
     },
@@ -2673,9 +2732,10 @@
           "name": "Pages",
           "resources": [
             "baseSitePage",
+            "newsLinkPage",
+            "pageTemplate",
             "sitePage",
-            "webPart",
-            "pageTemplate"
+            "webPart"
           ],
           "complexTypes": [
             "createFromTemplate",
@@ -2813,6 +2873,21 @@
       ],
       "childNodes": [
         {
+          "name": "AI interactions (preview)",
+          "resources": [
+            "aiInteractionHistory"
+          ],
+         "complexTypes": [
+           "aiInteraction",
+           "aiInteractionAttachment",
+           "aiInteractionContext",
+           "aiInteractionLink",
+           "aiInteractionMention",
+           "aiInteractionMentionedIdentitySet",
+           "aiUser"
+         ]
+        },
+        {
           "name": "Approvals",
           "resources": [
             "approvalItem",
@@ -2917,6 +2992,9 @@
                 "virtualEventSession",
                 "virtualEventTownhall",
                 "virtualEventWebinar"
+              ],
+              "complexTypes": [
+                "virtualEventExternalInformation"
               ]
             }
           ]

@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: entra-users
 author: "yyuank"
 ms.reviewer: "iamut"
+ms.date: 04/17/2024
 ---
 
 # passwordProfile resource type

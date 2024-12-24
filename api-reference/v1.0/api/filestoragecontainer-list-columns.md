@@ -5,6 +5,7 @@ author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 12/10/2024
 ---
 
 # List columns in fileStorageContainer

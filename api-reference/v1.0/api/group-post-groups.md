@@ -6,13 +6,14 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # Create group
 
 Namespace: microsoft.graph
 
-Create a new group as specified in the request body. You can create the following types of groups:
+Create a new [group](../resources/group.md) as specified in the request body. You can create the following types of groups:
 
 - Microsoft 365 group (unified group)
 - Security group

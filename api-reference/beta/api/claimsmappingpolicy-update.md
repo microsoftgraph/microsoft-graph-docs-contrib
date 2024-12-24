@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "paulgarn"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 06/26/2024
 ---
 
 # Update claimsmappingpolicy

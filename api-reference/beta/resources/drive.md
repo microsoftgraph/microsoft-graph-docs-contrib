@@ -5,6 +5,7 @@ description: drive resource representing a user's OneDrive or a document library
 ms.localizationpriority: high
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 09/27/2024
 ---
 # drive resource type
 

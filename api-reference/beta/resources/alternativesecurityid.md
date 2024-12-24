@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "myra-ramdenbourg"
+ms.date: 07/22/2024
 ---
 
 # alternativeSecurityId resource type

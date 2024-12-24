@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # keyCredentialConfiguration resource type
@@ -20,7 +21,7 @@ Represents a key credential configuration object that contains properties to con
 | maxLifetime                                 | Duration                        | String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents four days, 12 hours, 30 minutes, and five seconds. This property is required when **restrictionType** is set to `keyLifetime`.|
 | restrictForAppsCreatedAfterDateTime         | DateTimeOffset                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
 | restrictionType                             | appKeyCredentialRestrictionType | The type of restriction being applied. Possible values are `asymmetricKeyLifetime`, and `unknownFutureValue`. Each value of restrictionType can be used only once per policy.|
-| state                                       | appManagementRestrictionState   | String value that indicates if the restriction is evaluated. The possible values are: `enabled`, `disabled`, and `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
+| state                                       | appManagementRestrictionState   | Indicates whether the restriction is evaluated. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
 
 ## Relationships
 
@@ -39,12 +40,8 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.keyCredentialConfiguration",
-  "restrictionType": {
-    "@odata.type": "microsoft.graph.appKeyCredentialRestrictionType"
-  },
-  "state": {
-    "@odata.type": "microsoft.graph.appManagementRestrictionState"
-  },
+  "restrictionType": "String",
+  "state": "String",
   "restrictForAppsCreatedAfterDateTime": "String (DateTime)",
   "maxLifetime": "String (duration)"
 }

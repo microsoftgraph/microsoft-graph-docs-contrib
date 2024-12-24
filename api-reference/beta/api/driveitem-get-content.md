@@ -5,6 +5,7 @@ title: Download driveItem content
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 06/12/2024
 ---
 # Download driveItem content
 

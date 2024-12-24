@@ -1,5 +1,5 @@
 ---
-title: "Set up notifications for changes in resource data."
+title: "Set up notifications for changes in resource data"
 description: "Change notifications enable applications to receive alerts when a Microsoft Graph resource they're interested changes."
 author: FaithOmbongi
 ms.author: ombongifaith
@@ -14,7 +14,9 @@ ms.date: 12/27/2023
 
 # Set up notifications for changes in resource data
 
-Change notifications enable applications to receive alerts when a Microsoft Graph resource they're interested in changes; that is, created, updated, or deleted. Microsoft Graph sends notifications to the specified client endpoint, and the client service processes the notifications according to the business requirements. For example, the service may fetch more data, update its cache and views, and so on.
+Change notifications enable applications to receive alerts when a Microsoft Graph resource they're interested in changes; that is, created, updated, or deleted. Microsoft Graph sends notifications to the specified client endpoint, and the client service processes the notifications according to the business requirements. For example, the service might fetch more data, update its cache and views, and so on.
+
+<!-- Add illustration-->
 
 ## Why get change notifications?
 
@@ -26,13 +28,11 @@ Change notifications follow an event-driven model where customers receive alerts
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
 
-<!-- Add illustration-->
-
 ## Types of change notifications
 
 Microsoft Graph supports three types of change notifications:
 
-- **Basic notifications**: Change notifications that don't contain resource data other than the **id** of the resource that changed. When an app receives a basic notification, the service can use the **id** to query to changed object.
+- **Basic notifications**: Change notifications that don't contain resource data other than the **id** of the resource that changed. When an app receives a basic notification, the service can use the **id** to query the changed object.
 - **Rich notifications**: Change notifications that include the resource data of the object that changed. For more information about rich notifications, see [Rich notifications](./change-notifications-with-resource-data.md).
 - **Lifecycle notifications**: Notifications that alert the customer when they are at risk of missing change notifications due to the lifecycle of their subscription. For more information about lifecycle notifications, see [Lifecycle notifications](./change-notifications-lifecycle-events.md).
 

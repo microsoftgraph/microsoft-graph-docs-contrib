@@ -5,6 +5,7 @@ author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 12/10/2024
 ---
 
 # fileStorageContainer: lock
@@ -14,6 +15,8 @@ Namespace: microsoft.graph
 Lock a [fileStorageContainer](../resources/filestoragecontainer.md) to prevent modifications to its contents.
 
 This action updates the [lockState](../resources/enums.md#sitelockstate-values).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

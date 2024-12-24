@@ -5,6 +5,7 @@ author: "vibehavjha"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
+ms.date: 11/14/2024
 ---
 
 # fileStorageContainerSettings resource type
@@ -38,7 +39,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerSettings",
   "isOcrEnabled": "Boolean",
-  "itemMajorVersionLimit": "int32",
+  "itemMajorVersionLimit": "Int32",
   "isItemVersioningEnabled": "Boolean"
 }
 ```

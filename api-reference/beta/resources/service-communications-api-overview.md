@@ -5,6 +5,7 @@ author: "payiAzure"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: "service-communications"
+ms.date: 03/19/2024
 ---
 
 # Working with service communications API in Microsoft Graph

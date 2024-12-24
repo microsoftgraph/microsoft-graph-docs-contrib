@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 07/30/2024
 ---
 
 # Remove educationRubric from educationAssignment
