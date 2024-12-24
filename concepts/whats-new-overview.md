@@ -25,7 +25,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Security | Alerts and incidents
 
-Enabled the **description**, **displayName**, and **severity** properties as supported properties in an [Update incident](/graph/api/resources/security-incident) request.
+Enabled the **description**, **displayName**, **resolvingComment**, and **severity** properties as supported properties in an [Update incident](/graph/api/resources/security-incident) request.
 
 ### Teamwork and communications | Shift management
 
