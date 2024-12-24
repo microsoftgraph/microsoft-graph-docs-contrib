@@ -184,8 +184,7 @@ Content-type: application/json
         "deleted": 256938,
         "remaining": 1099447353539,
         "state": "normal",
-        "total": 1099511627776,
-        "used": 278359606
+        "total": 1099511627776
     }
 }
 ```
