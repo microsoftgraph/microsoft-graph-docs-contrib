@@ -1,11 +1,11 @@
 ---
+title: "quota resource type"
+description: "Represents details about space constraints on a drive resource."
 author: spgraph-docs-team
-description: The quota resource provides details about space constraints on a drive resource.
 ms.date: 09/10/2017
-title: Quota
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.subservice: onedrive
+ms.subservice: "onedrive"
 ---
 
 # quota resource type
@@ -34,7 +34,7 @@ The **quota** resource provides details about space constraints on a [drive](dri
 | `normal`   | The drive has plenty of remaining quota left.                                                                                                                               |
 | `nearing`  | Remaining quota is less than 10% of total quota space.                                                                                                                      |
 | `critical` | Remaining quota is less than 1% of total quota space.                                                                                                                       |
-| `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased.
+| `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
 
 ## Relationships
 None.
@@ -60,7 +60,7 @@ The following JSON representation shows the resource type.
   "total": 1024,
   "used": 1024
 }
-``` |
+```
 
 <!--
 {
