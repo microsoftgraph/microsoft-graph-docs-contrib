@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and [event](../resou
 
 Within a round of **delta** function calls bound by the date range of a **calendarView**, you may find a **delta** call returning two types of events under `@removed` with the reason `deleted`: 
 - Events that are within the date range and that have been deleted since the previous **delta** call.
-- Events that are _outside_ the date range and that have been added, deleted, or updated since the the previous **delta** call.
+- Events that are _outside_ the date range and that have been added, deleted, or updated since the previous **delta** call.
 
 Filter the events under `@removed` for the date range that your scenario requires.
 
