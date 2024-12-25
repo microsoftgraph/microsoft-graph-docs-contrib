@@ -32,11 +32,11 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |directoryObjectId|String|The ID of the directory object.|
 |displayName|String|Display name of the directory object.|
 |email|String|Email address associated with the directory object.|
-|mailboxType|[mailboxType](../resources/mailboxprotectionunit.md#mailboxtype-values)|The type of mailbox which is assigned to the user with id: `directoryObjectId`.The possible values are: `unknown`, `user`, `shared`, `unknownFutureValue`.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if enabling or disabling the protection unit fails. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |id|String|Unique identifier of the protection policy associated with this protection unit.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |lastModifiedDateTime|DateTimeOffset|The time the protection unit was last modified. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|mailboxType|[mailboxType](../resources/enums.md/#mailboxtype-values)|The type of mailbox which is assigned to the user with id: `directoryObjectId`.The possible values are: `unknown`, `user`, `shared`, `unknownFutureValue`.|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |status|[protectionUnitStatus](../resources/mailboxprotectionunit.md#protectionunitstatus-values)|The individual enable, disable, or removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
