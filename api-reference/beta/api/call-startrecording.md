@@ -55,6 +55,7 @@ The following example shows how to call this API.
 
 The following example shows the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-startRecording"
@@ -63,6 +64,12 @@ The following example shows the request.
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/02000980-58ea-4bf2-bb77-8ba548da56f7/microsoft.graph.StartRecording
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-startrecording-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 
