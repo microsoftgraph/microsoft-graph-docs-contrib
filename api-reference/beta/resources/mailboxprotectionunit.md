@@ -50,15 +50,6 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |removeRequested |A user requested removal of the protected unit from the policy. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
-### mailboxType values
-|Member | Description |
-|:------|:------------|
-|unknown | Represents the mailboxes which are not valid. |
-|user | The type of mailbox which is assigned to a particular user. |
-|shared | The type of mailbox which is accessed by multiple users at the same time. |
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
-
-
 ## Relationships
 None.
 
