@@ -16,6 +16,17 @@ Namespace: microsoft.graph
 
 Complex type containing properties of [itemInsights](iteminsights.md)
 
+## Properties
+
+| Property      | Type      | Description  |
+|: ------------- |: -----------|: -------------|
+| webUrl      	| String	| A URL leading to the referenced item. |
+| id     		| String    | The item's unique identifier.           |
+| type 			| String   	|It can be used to classify the item, such as **driveItem**. |
+
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
@@ -32,13 +43,5 @@ The following JSON representation shows the resource type.
   "type": "string"
 }
 ```
-
-## Properties
-
-| Property      | Type      | Description  |
-| ------------- |-----------| -------------|
-| webUrl      	| String	| A URL leading to the referenced item. |
-| id     		| String    | The item's unique identifier.           |
-| type 			| String   	| A string value that can be used to classify the item, such as "microsoft.graph.driveItem" |
 
 

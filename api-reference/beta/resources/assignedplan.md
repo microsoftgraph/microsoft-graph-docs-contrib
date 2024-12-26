@@ -39,6 +39,9 @@ The following table describes the possible statuses for the **capabilityStatus**
 | LockedOut | Unavailable for all administrators and users for assignment but any data associated with the capability must be preserved. This is the state after `Suspended` and if the license isn't renewed, it is the final state before the plan is `Deleted`. |
 | Deleted | Unavailable and any data associated with the capability may be deleted. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

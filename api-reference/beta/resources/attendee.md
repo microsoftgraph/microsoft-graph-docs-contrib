@@ -1,6 +1,6 @@
 ---
 title: "attendee resource type"
-description: "An event attendee. The attendee can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant."
+description: "An event attendee. The attendee can be a person or resource, such as a meeting room or equipment, that is set up as a resource on the Exchange server for the tenant."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An event attendee. This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.
+An event attendee. An attendee can be a person or resource, such as a meeting room or equipment, that is set up as a resource on the Exchange server for the tenant.
 
 Derived from [attendeeBase](attendeebase.md).
 
@@ -25,6 +25,9 @@ Derived from [attendeeBase](attendeebase.md).
 |proposedNewTime|[timeSlot](timeslot.md)|An alternate date/time proposed by the attendee for a meeting request to start and end. If the attendee hasn't proposed another time, then this property isn't included in a response of a GET event.|
 |status|[ResponseStatus](responsestatus.md)|The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.|
 |type|String|The attendee type: `required`, `optional`, `resource`.|
+
+## Relationships
+None.
 
 ## JSON representation
 

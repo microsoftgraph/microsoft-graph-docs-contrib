@@ -45,6 +45,9 @@ If the file's content is updated and these properties are not provided, **lastMo
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

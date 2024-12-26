@@ -27,6 +27,9 @@ The **accessReviewRecurrenceSettings** resource type is used in the [accessRevie
 | durationInDays | Int32 | The duration in days for recurrence. |
 | recurrenceCount | Int32 | The count of recurrences, if the value of **recurrenceEndType** is `occurrences`, or `0` otherwise. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

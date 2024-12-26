@@ -315,6 +315,9 @@ Object mappings are the main part of the [synchronization rule](synchronization-
 }
 ```
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
