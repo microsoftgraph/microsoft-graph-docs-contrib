@@ -21,7 +21,7 @@ Information about the locale, including the preferred language and country/regio
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|locale|string|A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).|
+|locale|string|A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.html), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.html).|
 |displayName|string|A name representing the user's locale in natural language, for example, "English (United States)".|
 
 ## Relationships
