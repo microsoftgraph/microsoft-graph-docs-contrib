@@ -20,18 +20,18 @@ The **textColumn** on a [columnDefinition](columndefinition.md) resource indicat
 
 | Property                        | Type   | Description                                                                   |
 | :------------------------------ | :----- | :---------------------------------------------------------------------------- |
-| **allowMultipleLines**          | string | Whether to allow multiple lines of text.                                      |
-| **appendChangesToExistingText** | string | Whether updates to this column should replace existing text, or append to it. |
-| **linesForEditing**             | int    | The size of the text box.                                                     |
-| **maxLength**                   | int    | The maximum number of characters for the value.                               |
-| **textType**                    | string | The type of text being stored. Must be one of `plain` or `richText`           |
+| allowMultipleLines          | string | Whether to allow multiple lines of text.                                      |
+| appendChangesToExistingText | string | Whether updates to this column should replace existing text, or append to it. |
+| linesForEditing             | int    | The size of the text box.                                                     |
+| maxLength                   | int    | The maximum number of characters for the value.                               |
+| textType                    | string | The type of text being stored. Must be one of `plain` or `richText`.          |
 
 ## Relationships
 None.
 
 ## JSON representation
 
-Here is a JSON representation of a **textColumn** resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.textColumn" } -->
 
