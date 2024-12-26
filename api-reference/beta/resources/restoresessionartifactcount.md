@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: RestoreSessionArtifactCount
+ms.date: 12/26/2024
 ---
 
 # restoreSessionArtifactCount resource type
