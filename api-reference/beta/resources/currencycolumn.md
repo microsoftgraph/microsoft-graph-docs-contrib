@@ -18,7 +18,9 @@ The **currencyColumn** on a [columnDefinition](columndefinition.md) resource ind
 
 ## Properties
 
-None.
+| Property   | Type   | Description                                                   |
+| :--------- | :----- | :------------------------------------------------------------ |
+| **locale** | string | Specifies the locale from which to infer the currency symbol. |
 
 ## Relationships
 
@@ -26,7 +28,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of a **currencyColumn** resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.currencyColumn" } -->
 
@@ -35,12 +37,6 @@ Here is a JSON representation of a **currencyColumn** resource.
   "locale": "en-us"
 }
 ```
-
-## Properties
-
-| Property   | Type   | Description                                                   |
-| :--------- | :----- | :------------------------------------------------------------ |
-| **locale** | string | Specifies the locale from which to infer the currency symbol. |
 
 <!--
 {
