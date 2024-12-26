@@ -31,10 +31,6 @@ None.
 
 The following JSON representation shows the resource type.
 
-## Relationships
-
-None.
-
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
