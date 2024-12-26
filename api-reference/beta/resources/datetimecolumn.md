@@ -28,8 +28,8 @@ The dateTimeColumn on a [columnDefinition](columndefinition.md) resource indicat
 | Value        | Description                                                         |
 | :----------- | :------------------------------------------------------------------ |
 | default | Uses the default rendering in the UX.                               |
-| friendly | Uses a friendly relative representation (for example "today at 3:00 PM")    |
-| standard | Uses the standard absolute representation (for example "5/10/2017 3:20 PM") |
+| friendly | Uses a friendly relative representation (for example "today at 3:00 PM").    |
+| standard | Uses the standard absolute representation (for example "5/10/2017 3:20 PM"). |
 
 ## Relationships
 None.
