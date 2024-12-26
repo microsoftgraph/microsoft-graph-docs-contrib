@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: The ItemActionSet resource provides information about the actions that made up an [activity][itemActivity] on an item.
+description: Provides information about the actions that made up an [activity][itemActivity] on an item.
 ms.date: 09/14/2017
 title: ItemActionSet
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.
+Provides information about the actions that made up an [activity][itemActivity] on an item.
 
 [itemActivity]: itemactivity.md
 
@@ -51,6 +51,8 @@ New actions may get logged in the future, so make sure your app is tolerant of h
 None.
 
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
