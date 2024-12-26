@@ -21,7 +21,7 @@ The dateTimeColumn on a [columnDefinition](columndefinition.md) resource indicat
 | Property      | Type   | Description                                                                                                                                                         |
 | :------------ | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | displayAs | string | How the value should be presented in the UX. Must be one of `default`, `friendly`, or `standard`. See below for more details. If unspecified, treated as `default`. |
-| format    | string | Indicates whether the value should be presented as a date only or a date and time. Must be one of `dateOnly` or `dateTime`                                          |
+| format    | string | Indicates whether the value should be presented as a date only or a date and time. It must be either `dateOnly` or `dateTime`.    |
 
 ### DisplayAs values
 
