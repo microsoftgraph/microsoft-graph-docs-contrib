@@ -24,6 +24,9 @@ Represents a presence status message related to the [presence](presence.md) of a
 | message | [itemBody](itembody.md) | Status message item.<br/><br/> The only supported format currently is `message.contentType = 'text'`. |
 | publishedDateTime | DateTimeOffset |Time in which the status message was published.<br/>Read-only.<br/><br/>**publishedDateTime** isn't available when you request the presence of another user. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

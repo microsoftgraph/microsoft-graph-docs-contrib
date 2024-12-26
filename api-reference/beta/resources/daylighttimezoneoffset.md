@@ -40,6 +40,9 @@ daylight saving time to standard occurs at 2 AM on the fourth Sunday of May, eve
 | year | Edm.Int32 | Represents how frequently in terms of years the change from standard time to daylight saving time occurs. For example, a value of 0 means every year.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

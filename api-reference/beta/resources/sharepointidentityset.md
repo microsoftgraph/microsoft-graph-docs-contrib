@@ -28,6 +28,9 @@ For usage information, see [driveItem][].
 | siteUser    | [sharePointIdentity][] | The SharePoint user associated with this action. Optional. |
 | siteGroup   | [sharePointIdentity][] | The SharePoint group associated with this action. Optional. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

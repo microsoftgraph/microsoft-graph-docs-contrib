@@ -26,6 +26,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |channelId|String|Unique identifier of the channel.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

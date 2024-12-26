@@ -24,6 +24,9 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 |:---|:---|:---|
 |certificateList| [pkcs12CertificateInformation](../resources/pkcs12CertificateInformation.md) collection| The list of certificates uploaded for this API connector.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -33,6 +33,9 @@ Metadata for the given object.
 |ExcludeFromReporting  |When counting synchronized objects for statistics purposes, exclude this mapping. |
 |Unsynchronized |This flag indicates whether a type or attribute is excluded from synchronization but is still necessary for some synchronization logic to work. For example, the type "AppRoleAssignment" is unsynchronized for the Box enterprise application but is still required for the app role assignments logic.  |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

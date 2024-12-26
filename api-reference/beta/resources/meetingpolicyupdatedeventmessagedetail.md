@@ -27,6 +27,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |meetingChatEnabled|Boolean|Represents whether the meeting chat is enabled or not.|
 |meetingChatId|String|Unique identifier of the meeting chat.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
