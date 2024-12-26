@@ -14,11 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents property values that are common to a set of [device](../resources/device.md) objects. The properties on the template are stamped on any **device** object that is created based on this template.
-
-An admin on the customer's tenant calls the [Create deviceTemplate](../api/template-post-devicetemplates.md) API for this entity. Values for **mutualTlsOauthConfigurationId**, **mutualTlsOauthConfigurationTenantId**, **deviceAuthority**, and so on, are provided to the customer by the device authority (manufacturer or reseller).
-
-The **deviceTemplate** is immutable.
+Represents property values that are common to a set of [device](../resources/device.md) objects. The properties on the template are stamped on any **device** object that is created based on this template. This object is immutable. 
 
 Inherits from [directoryObject](../resources/directoryobject.md). 
 
@@ -32,18 +28,18 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |[List owners](../api/devicetemplate-list-owners.md) | [directoryObject](directoryobject.md) collection | Get a list of owners for a [deviceTemplate](../resources/devicetemplate.md) object. |
 |[Add owner](../api/devicetemplate-post-owners.md)| None |Add a new owner to a [deviceTemplate](../resources/devicetemplate.md) object. |
 |[Remove owner](../api/devicetemplate-delete-owners.md) | None |Remove an owner from a [deviceTemplate](../resources/devicetemplate.md) object. |
-|[Create device from template](../api/devicetemplate-createdevicefromtemplate.md)|[device](../resources/device.md)| Create a new device from a [deviceTemplate](../resources/devicetemplate.md).|
+|[Create device from template](../api/devicetemplate-createdevicefromtemplate.md)|[device](../resources/device.md)| Create a new [device](../resources/device.md) from a [deviceTemplate](../resources/devicetemplate.md).|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|                                                                      
 |deletedDateTime                      |DateTimeOffset     |Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](../resources/directoryobject.md). |
-| deviceAuthority                    | String            | A generic term that refers to the device manufacturer, reseller, or supplier responsible for provisioning and managing devices on a customer's Entra ID. For example, Acme (the manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (the device authority). |
-| id                                 | String            | The unique identifier for the **deviceTemplate** object. Inherited from [directoryObject](../resources/directoryobject.md).   |
+| deviceAuthority                    | String            | A tenant-defined name for the party that's responsible for provisioning and managing devices on the Microsoft Entra tenant. For example, Tailwind Traders (the manufacturer) makes security cameras that are installed in customer buildings and managed by Lakeshore Retail (the device authority). This value is provided to the customer by the device authority (manufacturer or reseller). |
+| id                                 | String            | The unique identifier for the object. Inherited from [directoryObject](../resources/directoryobject.md). Read-only. |
 | manufacturer                       | String            | Manufacturer name. |
 | model                              | String            | Model name. |
-| mutualTlsOauthConfigurationId      | String            | Object ID of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used. |
-| mutualTlsOauthConfigurationTenantId | String           | ID (tenant ID for device authority) of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used. |
+| mutualTlsOauthConfigurationId      | String            | Object ID of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used. This value is provided to the customer by the device authority (manufacturer or reseller). |
+| mutualTlsOauthConfigurationTenantId | String           | ID (tenant ID for device authority) of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used. This value is provided to the customer by the device authority (manufacturer or reseller). |
 | operatingSystem                    | String            | Operating system type.    |
 
 ## Relationships
