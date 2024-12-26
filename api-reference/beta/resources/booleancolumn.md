@@ -19,6 +19,9 @@ Indicates that the column in a [columnDefinition](columndefinition.md) holds a B
 
 None.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

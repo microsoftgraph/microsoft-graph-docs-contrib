@@ -25,6 +25,9 @@ The context associated with an incoming call.
 | sourceParticipantId   | String                        | The id of the participant that triggered the incoming call. Read-only.  |
 | transferor            | [identitySet](identityset.md) | The identity that transferred the call.                                 |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

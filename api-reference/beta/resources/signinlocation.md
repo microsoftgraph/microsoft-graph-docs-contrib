@@ -26,6 +26,9 @@ Provides the city, state and country/region from where the sign-in happened.
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Provides the latitude, longitude and altitude where the sign-in originated.|
 |state|String|Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

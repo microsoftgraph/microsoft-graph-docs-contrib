@@ -23,6 +23,9 @@ Contains information about a team in Microsoft Teams, including number of owners
 |membersCount|Int32|Count of members in a team.|
 |ownersCount|Int32|Count of owners in a team.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

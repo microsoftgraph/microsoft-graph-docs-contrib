@@ -26,6 +26,9 @@ Contains information about the media channel.
 | serverMuted | Boolean | Indicates whether the server has muted the media.                                                                          |
 | sourceId    | String  | The source ID.                                                                                                |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

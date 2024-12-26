@@ -31,6 +31,9 @@ Represents the options in sheet protection.
 |allowPivotTables|Boolean|Represents the worksheet protection option of allowing using pivot table feature.|
 |allowSort|Boolean|Represents the worksheet protection option of allowing using sort feature.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

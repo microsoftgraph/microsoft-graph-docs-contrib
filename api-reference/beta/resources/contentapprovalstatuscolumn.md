@@ -19,6 +19,9 @@ Indicates that the column contains information about approval status of the item
 
 None.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following is a JSON representation of a **contentApprovalStatusColumn** resource.

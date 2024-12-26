@@ -17,6 +17,9 @@ The **thumbnailColumn** on a [columnDefinition](columnDefinition.md) resource in
 
 The **thumbnailColumn** resource contains no properties.
 
+## Relationships
+None.
+
 ## JSON representation
 
 Here is a JSON representation of a **thumbnailColumn** resource.
