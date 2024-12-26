@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: The ItemActivity resource provides information about activities that took place on an item or within a container.
+description: Provides information about activities that took place on an item or within a container.
 ms.date: 09/14/2017
 title: ItemActivity
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **ItemActivity** resource provides information about activities that took place on an item or within a container.
+Provides information about activities that took place on an item or within a container.
 Currently only available on SharePoint and OneDrive for Business.
 
 ## Properties
@@ -36,13 +36,15 @@ Currently only available on SharePoint and OneDrive for Business.
 
 | Relationship | Type          | Description                                                     |
 | :----------- | :------------ | :-------------------------------------------------------------- |
-| driveItem    | [driveItem][] | Exposes the **driveItem** that was the target of this activity. |
-| listItem     | [listItem][]  | Exposes the **listItem** that was the target of this activity.  |
+| driveItem    | [driveItem][] | Exposes the driveItem that was the target of this activity. |
+| listItem     | [listItem][]  | Exposes the listItem that was the target of this activity.  |
 
 [driveItem]: driveitem.md
 [listItem]: listitem.md
 
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -67,7 +69,7 @@ Currently only available on SharePoint and OneDrive for Business.
 
 ## Remarks
 
-**ItemActivity** is currently only available on SharePoint and OneDrive for Business.
+ItemActivity is currently only available on SharePoint and OneDrive for Business.
 
 The actions that took place within an activity are detailed in the **action** property.
 Below are the actions that are available today.
