@@ -22,9 +22,9 @@ The **listInfo** complex type provides additional information about a [list][].
 
 | Property                | Type    | Description                                                                                                                                                                                              |
 | :---------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **contentTypesEnabled** | Boolean | If `true`, indicates that content types are enabled for this list.                                                                                                                                       |
-| **hidden**              | Boolean | If `true`, indicates that the list isn't normally visible in the SharePoint user experience.                                                                                                            |
-| **template**            | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more. |
+| contentTypesEnabled | Boolean | If `true`, it indicates that content types are enabled for this list.                                                                                                                                       |
+| hidden              | Boolean | If `true`, it indicates that the list isn't normally visible in the SharePoint user experience.                                                                                                            |
+| template            | String  | Represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more. |
 
 
 ## Relationships
