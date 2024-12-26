@@ -45,7 +45,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of a **numberColumn** resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.numberColumn" } -->
 

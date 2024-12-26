@@ -54,7 +54,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of a **personOrGroupColumn** resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.personOrGroupColumn", "@property.aka": "chooseFromType=format" } -->
 

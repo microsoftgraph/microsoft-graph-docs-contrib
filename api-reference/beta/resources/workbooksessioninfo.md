@@ -21,7 +21,7 @@ Provides information about workbook session.
 | Property | Type  | Description                               |
 |:---------|:------|:------------------------------------------|
 | id  | string | ID of the workbook session. |
-| persistChanges | string |  `true` for persistent session. `false` for non-persistent session (view mode) |
+| persistChanges | string |Set to `true` for persistent session. Set to `false` for non-persistent session (view mode). |
 
 
 ## Relationships
