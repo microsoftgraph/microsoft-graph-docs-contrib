@@ -25,22 +25,22 @@ The **Audio** resource is only supported on OneDrive Personal.
 
 | Property              | Type    | Description                                                          |
 | :-------------------- | :------ | :------------------------------------------------------------------- |
-| **album**             | string  | The title of the album for this audio file.                          |
-| **albumArtist**       | string  | The artist named on the album for the audio file.                    |
-| **artist**            | string  | The performing artist for the audio file.                            |
-| **bitrate**           | Int32   | Bitrate expressed in kbps.                                           |
-| **composers**         | string  | The name of the composer of the audio file.                          |
-| **copyright**         | string  | Copyright information for the audio file.                            |
-| **disc**              | Int32   | The number of the disc this audio file came from.                    |
-| **discCount**         | Int32   | The total number of discs in this album.                             |
-| **duration**          | Int64   | Duration of the audio file, expressed in milliseconds                |
-| **genre**             | string  | The genre of this audio file.                                        |
-| **hasDrm**            | Boolean | Indicates if the file is protected with digital rights management.   |
-| **isVariableBitrate** | Boolean | Indicates if the file is encoded with a variable bitrate.            |
-| **title**             | string  | The title of the audio file.                                         |
-| **track**             | Int32   | The number of the track on the original disc for this audio file.    |
-| **trackCount**        | Int32   | The total number of tracks on the original disc for this audio file. |
-| **year**              | Int32   | The year the audio file was recorded.                                |
+| album            | string  | The title of the album for this audio file.                          |
+| albumArtist     | string  | The artist named on the album for the audio file.                    |
+| artist           | string  | The performing artist for the audio file.                            |
+| bitrate           | Int32   | Bitrate expressed in kbps.                                           |
+| composers         | string  | The name of the composer of the audio file.                          |
+| copyright         | string  | Copyright information for the audio file.                            |
+| disc              | Int32   | The number of the disc this audio file came from.                    |
+| discCount         | Int32   | The total number of discs in this album.                             |
+| duration          | Int64   | Duration of the audio file, expressed in milliseconds                |
+| genre             | string  | The genre of this audio file.                                        |
+| hasDrm            | Boolean | Indicates if the file is protected with digital rights management.   |
+| isVariableBitrate | Boolean | Indicates if the file is encoded with a variable bitrate.            |
+| title             | string  | The title of the audio file.                                         |
+| track             | Int32   | The number of the track on the original disc for this audio file.    |
+| trackCount        | Int32   | The total number of tracks on the original disc for this audio file. |
+| year              | Int32   | The year the audio file was recorded.                                |
 
 [item-resource]: ../resources/driveitem.md
 
@@ -74,7 +74,7 @@ None.
 
 ## Remarks
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information, see [DriveItem](driveitem.md).
 
 <!--
 {
