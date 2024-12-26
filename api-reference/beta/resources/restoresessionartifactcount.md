@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: RestoreSessionArtifactCount
+ms.date: 12/26/2024
 ---
 
 # restoreSessionArtifactCount resource type
@@ -25,6 +26,9 @@ Represents artifact count metadata for a [restore session](../resources/restoreS
 |inProgress|Int32|The number of artifacts whose restoration is in progress.|
 |completed|Int32|The number of artifacts whose restoration completed.|
 |failed|Int32|The number of artifacts whose restoration failed.|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -29,6 +29,9 @@ Represents the schedule for a [governanceRoleAssignmentRequest](../resources/gov
 |type|String|The role assignment schedule type. Only `Once` is supported for now.
 |duration|Duration|The duration of a role assignment. It is in format of a TimeSpan.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -18,7 +18,7 @@ Represents the archival details of a [siteCollection](../resources/sitecollectio
 |:------------- |:------ |:-----------------------------------------------|
 | archiveStatus | siteArchiveStatus | Represents the current archive status of the site collection. Returned only on `$select`.|
 
-## siteArchiveStatus values
+### siteArchiveStatus values
 
 | Value         | Description                                           |
 |:--------------|:------------------------------------------------------|
@@ -26,6 +26,9 @@ Represents the archival details of a [siteCollection](../resources/sitecollectio
 | fullyArchived | The site collection is fully archived.       |
 | reactivating | The site collection is reactivating.         |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.  |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

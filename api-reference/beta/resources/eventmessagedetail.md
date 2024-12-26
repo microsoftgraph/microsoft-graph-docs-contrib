@@ -57,7 +57,8 @@ The following table lists the supported events.
 ## Properties
 None.
 
-
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.
