@@ -18,10 +18,10 @@ The **Folder** resource groups folder-related data on an item into a single stru
 
 ## Properties
 
-| Property       | Type           | Description
-|:---------------|:---------------|:-------------------------------------------
-| childCount | Int64          | Number of children contained immediately within this container.
-| view       | [folderView][] | A collection of properties defining the recommended view for the folder.
+| Property       | Type           | Description|
+|:---------------|:---------------|:-------------------------------------------|
+| childCount | Int64          | Number of children contained immediately within this container.|
+| view       | [folderView][] | A collection of properties defining the recommended view for the folder.|
 
 ## Relationships
 None.
