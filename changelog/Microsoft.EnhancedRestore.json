@@ -65,7 +65,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "restoreArtifactsBulkRequestBase",
               "ChangeType": "Addition",
-              "Description": "Added the [restoreArtifactsBulkRequestBase](https://learn.microsoft.com/en-us/graph/api/resources/restoreArtifactsBulkRequestBase?view=graph-rest-beta) resource.",
+              "Description": "Added the [restoreArtifactsBulkRequestBase](https://learn.microsoft.com/en-us/graph/api/resources/restoreartifactsbulkrequestbase?view=graph-rest-beta) resource.",
               "Target": "restoreArtifactsBulkRequestBase"
             },
             {
