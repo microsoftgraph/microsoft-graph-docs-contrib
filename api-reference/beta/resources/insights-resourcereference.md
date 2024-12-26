@@ -19,10 +19,10 @@ Complex type containing properties of [itemInsights](iteminsights.md)
 ## Properties
 
 | Property      | Type      | Description  |
-| ------------- |-----------| -------------|
+|: ------------- |: -----------|: -------------|
 | webUrl      	| String	| A URL leading to the referenced item. |
 | id     		| String    | The item's unique identifier.           |
-| type 			| String   	| A string value that can be used to classify the item, such as "microsoft.graph.driveItem" |
+| type 			| String   	|It can be used to classify the item, such as **driveItem**. |
 
 ## Relationships
 None.

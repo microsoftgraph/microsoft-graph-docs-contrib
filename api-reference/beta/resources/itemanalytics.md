@@ -21,14 +21,12 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 
 ## Properties
 
-| Property      | Type                 | Description
-|:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | Analytics over the item's lifespan.
-| lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
+| Property      | Type                 | Description|
+|:--------------|:---------------------|:--------------------------------------|
+| allTime       | [itemActivityStat][] | Analytics over the item's lifespan.|
+| lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.|
 
 [itemActivityStat]: itemactivitystat.md
-
-
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
 ## Relationships
