@@ -1,6 +1,6 @@
 ---
 title: "template resource type"
-description: "Represents a container for templates."
+description: "Represents a container for templates, such as device templates used for onboarding Entra Id devices."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.date: 11/24/2024
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for templates.
+Represents a container for templates, such as device templates used for onboarding Entra Id devices.
 
 ## Methods
 None.
@@ -26,7 +26,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceTemplates|[deviceTemplate](../resources/devicetemplate.md) collection|Defines the templates that are common to a set of device objects.|
+|deviceTemplates|[deviceTemplate](../resources/devicetemplate.md) collection|Defines the templates that are common to a set of device objects, such as IoT devices.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

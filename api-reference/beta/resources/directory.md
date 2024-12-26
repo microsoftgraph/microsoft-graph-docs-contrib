@@ -65,7 +65,7 @@ Inherits from [entity](entity.md).
 |publicKeyInfrastructure|[publicKeyInfrastructureRoot](../resources/publickeyinfrastructureroot.md)|The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.|
 | recommendations | [recommendation](../resources/recommendation.md) collection | List of recommended improvements to improve tenant posture. |
 | subscriptions | [companySubscription](companysubscription.md) collection | List of commercial subscriptions that an organization has. |
-|templates|[template](../resources/template.md) |A collection of templates. |
+|templates|[template](../resources/template.md) |A container for templates, such as device templates used for onboarding Entra Id devices. |
 
 ## JSON representation
 
