@@ -24,16 +24,16 @@ For more information, see [Manage the lifecycle of Microsoft 365 groups in your 
 
 ## Methods
 
-| Method                                                                                   | Return Type                                                | Description                                                         |
-| :--------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------ |
-| [List](../api/grouplifecyclepolicy-list.md)                       | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies. Only one policy exists in a tenant.                                |
-|[Create](../api/grouplifecyclepolicy-post-grouplifecyclepolicies.md)|[groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)|Create a new groupLifecyclePolicy object.|                               |
-| [Get](../api/grouplifecyclepolicy-get.md)                           | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Read properties and relationships of a groupLifecyclePolicy object. |
-| [Update](../api/grouplifecyclepolicy-update.md)                     | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Update a groupLifecyclePolicy object.                               |
-| [Delete](../api/grouplifecyclepolicy-delete.md)                     | None                                                       | Delete a groupLifecyclePolicy object.                               |
-| [Add group](../api/grouplifecyclepolicy-addgroup.md)         | None                                                       | Add a group to a lifecycle policy                                   |
-| [Remove group](../api/grouplifecyclepolicy-removegroup.md) | None                                                       | Remove a group to a lifecycle policy.                               |
-| [Renew group](../api/grouplifecyclepolicy-renewgroup.md)                               | None                                                       | Renew a group's expiration date.                                    |
+| Method | Return Type | Description |
+|:-|:-|:-|
+| [List](../api/grouplifecyclepolicy-list.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies. Only one policy exists in a tenant. |
+| [Create](../api/grouplifecyclepolicy-post-grouplifecyclepolicies.md) | [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) | Create a new groupLifecyclePolicy object. |
+| [Get](../api/grouplifecyclepolicy-get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) | Read properties and relationships of a groupLifecyclePolicy object. |
+| [Update](../api/grouplifecyclepolicy-update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) | Update a groupLifecyclePolicy object. |
+| [Delete](../api/grouplifecyclepolicy-delete.md) | None | Delete a groupLifecyclePolicy object. |
+| [Add group](../api/grouplifecyclepolicy-addgroup.md) | None | Add a group to a lifecycle policy |
+| [Remove group](../api/grouplifecyclepolicy-removegroup.md) | None | Remove a group from a lifecycle policy. |
+| [Renew group](../api/grouplifecyclepolicy-renewgroup.md) | None | Renew a group's expiration date. |
 
 ## Properties
 

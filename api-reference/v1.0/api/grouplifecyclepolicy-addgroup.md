@@ -114,9 +114,7 @@ Content-type: application/json
 
 The following example shows the response.
 
-<!-- {
-  "blockType": "response"
-} -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
