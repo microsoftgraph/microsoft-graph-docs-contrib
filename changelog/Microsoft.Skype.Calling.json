@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "14c5e7c8-5ba9-44eb-ac3a-b99452dde78f",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingTemplateId** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "14c5e7c8-5ba9-44eb-ac3a-b99452dde78f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-25T21:59:08.9618388Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a7978bef-d6bb-4083-81f9-c746c2f05197",
           "ApiChange": "Property",
           "ChangedApiName": "externalEventInformation",
