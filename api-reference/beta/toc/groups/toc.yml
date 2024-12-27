@@ -218,3 +218,23 @@ items:
       href: ../../api/group-unsubscribebymail.md
     - name: Reset unseen count
       href: ../../api/group-resetunseencount.md
+- name: Group lifecycle policy
+  items:
+  - name: Group lifecycle policy
+    items:
+    - name: Group lifecycle policy
+      href: ../../resources/grouplifecyclepolicy.md
+    - name: List
+      href: ../../api/grouplifecyclepolicy-list.md
+    - name: Get
+      href: ../../api/grouplifecyclepolicy-get.md
+    - name: Update
+      href: ../../api/grouplifecyclepolicy-update.md
+    - name: Delete
+      href: ../../api/grouplifecyclepolicy-delete.md
+    - name: Add group
+      href: ../../api/grouplifecyclepolicy-addgroup.md
+    - name: Remove group
+      href: ../../api/grouplifecyclepolicy-removegroup.md
+    - name: Renew group
+      href: ../../api/grouplifecyclepolicy-renewgroup.md
