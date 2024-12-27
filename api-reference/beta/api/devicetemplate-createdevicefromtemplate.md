@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new device from a [deviceTemplate](../resources/devicetemplate.md).
+Create a new [device](../resources/device.md) from a [deviceTemplate](../resources/devicetemplate.md).
 
 ## Permissions
 
@@ -52,7 +52,7 @@ The following table lists the parameters that you can use when you call this act
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-| accountEnabled       | Boolean                             | `True` if the account is enabled; otherwise, `false`. The default value is `true`. A disabled device can't authenticate with Entra ID. Optional.|
+| accountEnabled       | Boolean                             | `true` if the account is enabled; otherwise, `false`. The default value is `true`. A disabled device can't authenticate with Microsoft Entra ID. Optional.|
 | alternativeNames     | String collection                   | A collection of ARM resource IDs associated with the device, if any. Optional. |
 | externalDeviceId     | String                              | UUID of the device by IoT registry. Must be unique within a tenant. Required. |
 | externalSourceName   | String                              | Identifies the source name of the device. Optional. |
@@ -85,7 +85,7 @@ Content-Type: application/json
   "externalSourceName": "unknown",
   "accountEnabled": false,
   "alternativeNames": [
-    "/subscriptions/15559dd5-f631-4b58-abc6-808a139fd0e6/resourcegroups/testrg/providers/microsoft.deviceregistry/assets/asset1"
+    "/subscriptions/00001111-aaaa-2222-bbbb-3333cccc4444/resourcegroups/testrg/providers/microsoft.deviceregistry/assets/asset1"
   ]
 }
 ```
@@ -108,7 +108,7 @@ Content-Type: application/json
   "id": "06d59f74-dbf3-432a-9971-c5f60374e4f0",
   "accountEnabled": false,
   "alternativeNames": [
-    "/subscriptions/15559dd5-f631-4b58-abc6-808a139fd0e6/resourcegroups/testrg/providers/microsoft.deviceregistry/assets/asset1"
+    "/subscriptions/00001111-aaaa-2222-bbbb-3333cccc4444/resourcegroups/testrg/providers/microsoft.deviceregistry/assets/asset1"
   ],
   "deviceId": "c6ca2657-8685-4398-9edc-a6a603f177b3",
   "displayName": "2fa9424e-7ab0-4a22-8c90-2a20d15d8183",
@@ -126,7 +126,7 @@ Content-Type: application/json
     {
       "type": 2,
       "identityProvider": null,
-      "key": "WAA1ADAAOQA6ADwAVQBJAEQAPgBNAGcAQgBtAEEARwBFAEEATwBRAEEAMABBAEQASQBBAE4AQQBCAGwAQQBDADAAQQBOAHcAQgBoAEEARwBJAEEATQBBAEEAdABBAEQAUQBBAFkAUQBBAHkAQQBEAEkAQQBMAFEAQQA0AEEARwBNAEEATwBRAEEAdwBBAEMAMABBAE0AZwBCAGgAQQBEAEkAQQBNAEEAQgBrAEEARABFAEEATgBRAEIAawBBAEQAZwBBAE0AUQBBADQAQQBEAE0AQQA="
+      "key": "WAA1ADAAOQA6ADwAVQB..."
     }
   ]
 }

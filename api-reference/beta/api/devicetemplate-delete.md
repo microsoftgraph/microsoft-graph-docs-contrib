@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a registered [deviceTemplate](../resources/devicetemplate.md).
+Delete a registered [deviceTemplate](../resources/devicetemplate.md). You must first [delete](../api/device-delete.md) all devices linked to the template before deleting the template itself. Only [registered owners](../api/devicetemplate-list-owners.md) of the template can perform this operation.
 
 ## Permissions
 

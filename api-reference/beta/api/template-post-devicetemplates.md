@@ -58,7 +58,7 @@ You can specify the following properties when you create a **deviceTemplate**.
 |mutualTlsOauthConfigurationId|String|Object ID of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't required if self-signed certificates are used instead of trusted root certificates. Optional. |
 |mutualTlsOauthConfigurationTenantId|String|ID (tenant ID for device authority) of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't required if self-signed certificates are used instead of trusted root certificates. Optional. |
 |operatingSystem|String|Operating system type. Optional.|
-|owners@odata.bind|String collection| List of IDs for owners to add to the device template. Only the following [directoryObject](../resources/directoryobject.md) types are supported as owners: [service principals](..\resources\serviceprincipal.md), [users](..\resources\users.md), or [applications](..\resources\application.md).  Optional. |
+|owners@odata.bind|String collection| List of IDs for owners to add to the device template. Only the following [directoryObject](../resources/directoryobject.md) types are supported as owners: [service principals](..\resources\serviceprincipal.md), [users](..\resources\users.md), or [applications](..\resources\application.md). Optional. |
 
 ## Response
 
@@ -82,8 +82,8 @@ Content-Type: application/json
 Content-length: 106
 
 {
-  "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-  "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
+  "mutualTlsOauthConfigurationId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "mutualTlsOauthConfigurationTenantId": "00001111-aaaa-2222-bbbb-3333cccc4445",
   "deviceAuthority": "Lakeshore Retail",
   "manufacturer": "Tailwind Traders",
   "model": "DeepFreezerModelAB",
@@ -108,8 +108,8 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/templates/deviceTemplates/$entity",
   "id": "c0ff9329-3596-4ece-8aa9-3dd23a925356",
-  "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-  "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
+  "mutualTlsOauthConfigurationId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "mutualTlsOauthConfigurationTenantId": "00001111-aaaa-2222-bbbb-3333cccc4445",
   "deletedDateTime": null,
   "deviceAuthority": "Lakeshore Retail",
   "manufacturer": "Tailwind Traders",
@@ -132,14 +132,14 @@ Content-Type: application/json
 Content-length: 106
 
 {
-  "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-  "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
+  "mutualTlsOauthConfigurationId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "mutualTlsOauthConfigurationTenantId": "00001111-aaaa-2222-bbbb-3333cccc4445",
   "deviceAuthority": "Lakeshore Retail",
   "manufacturer": "Tailwind Traders",
   "model": "DeepFreezerModelAB",
   "operatingSystem": "WindowsIoT",
   "owners@odata.bind": [
-    "https://graph.microsoft.com/beta/users/67eb760b-9d3e-496d-96e3-0fdc3d1cdc85"
+    "https://graph.microsoft.com/beta/users/aaaaaaaa-bbbb-cccc-1111-222222222222"
   ]
 }
 ```
@@ -161,8 +161,8 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/templates/deviceTemplates/$entity",
   "id": "c0ff9329-3596-4ece-8aa9-3dd23a925356",
-  "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-  "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
+  "mutualTlsOauthConfigurationId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "mutualTlsOauthConfigurationTenantId": "00001111-aaaa-2222-bbbb-3333cccc4445",
   "deletedDateTime": null,
   "deviceAuthority": "Lakeshore Retail",
   "manufacturer": "Tailwind Traders",

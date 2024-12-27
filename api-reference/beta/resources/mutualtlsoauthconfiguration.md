@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Represents a list of certificate authorities (CAs) that are permitted to issue certificates for a specific set of objects used for mTLS.
 
-This object is typically created by a device authority on their own Entra ID. In some cases, the user might choose to create this object in their Entra ID.
+This object is typically created by a device authority on their own Microsoft Entra tenant. In some cases, the user might choose to create this object in their Microsoft Entra tenant.
 
 Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificateauthoritybase.md).
 

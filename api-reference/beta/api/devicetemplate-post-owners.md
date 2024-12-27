@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a new owner to a [deviceTemplate](../resources/devicetemplate.md) object. Owners are granted certain permissions for the devices created from these device templates. These permissions allow owners to enable or disable devices and update properties like **alternativeNames**.
+Add a new owner to a [deviceTemplate](../resources/devicetemplate.md) object. Owners are granted permissions to enable or disable devices and update properties like **alternativeNames** for the devices created from these device templates. As an owner, no other administrator roles are necessary to create, update, delete the devices from this template, as well as to add or remove template owners. Owners added via this API can are returned in a [list device owners](../api/devicetemplate-list-owners.md) request. 
 
 ## Permissions
 
@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of the parameters.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.id|String|A string associated with the object identifier of the target user or service principal, in the following format: `https://graph.microsoft.com/beta/users/{id}` or `https://graph.microsoft.com/beta/serviceprincipals/{id}`. |
+|@odata.id|String|The object identifier of the target user or service principal, in the following format: `https://graph.microsoft.com/beta/users/{id}` or `https://graph.microsoft.com/beta/serviceprincipals/{id}`. |
 
 ## Response
 
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/directory/templates/deviceTemplates/2d62b1
 Content-Type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/users/4vfaf3ac-5122-4a25-98d8-b32c091f441f"
+  "@odata.id": "https://graph.microsoft.com/beta/users/00001111-aaaa-2222-bbbb-3333cccc4444"
 }
 ```
 

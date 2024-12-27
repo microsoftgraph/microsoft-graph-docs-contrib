@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of owners for a [deviceTemplate](../resources/devicetemplate.md) object.
+Get a list of owners for a [deviceTemplate](../resources/devicetemplate.md) object. Owners can be represented as [service principals](..\resources\serviceprincipal.md), [users](..\resources\users.md), or [applications](..\resources\application.md).
 
 ## Permissions
 
@@ -37,7 +37,7 @@ GET /directory/templates/deviceTemplates/{id}/owners
 
 ## Optional query parameters
 
-This method supports the `$select` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$top` OData query parameters to help customize the response. Page size for `$top` results is between 1 and 999 inclusive. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryObject.md) objects in the response body, with the `@odata.type` property of each object in the collection indicating the directory object type. Only [service principals](../resources/serviceprincipal.md), [users](../resources/users.md), or [applications](../resources/application.md) can be owners of device templates.
 
 For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
@@ -95,8 +95,8 @@ Content-Type: application/json
       "alternativeNames": [],
       "createdDateTime": "2024-09-11T21:21:25Z",
       "appDisplayName": "test",
-      "appId": "1a9da825-c78b-4531-afcf-c9443adaa442",
-      "appOwnerOrganizationId": "5ea2e292-4586-4888-486a-a0661219fdab",
+      "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+      "appOwnerOrganizationId": "0a0a0a0a-1111-bbbb-2222-3c3c3c3c3c3c",
       "appRoleAssignmentRequired": false,
       "displayName": "test",
       "isAuthorizationServiceEnabled": false,
@@ -104,7 +104,7 @@ Content-Type: application/json
       "publisherName": "Workplace Join Android",
       "samlSLOBindingType": "httpRedirect",
       "servicePrincipalNames": [
-        "1a9da825-ch8b-4531-afcf-c9443adaa442"
+        "00001111-aaaa-2222-bbbb-3333cccc4444"
       ],
       "servicePrincipalType": "Application",
       "signInAudience": "AzureADMyOrg",

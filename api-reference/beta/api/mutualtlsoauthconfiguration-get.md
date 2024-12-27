@@ -37,7 +37,7 @@ GET /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOau
 
 ## Optional query parameters
 
-This method supports the `$filter`and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/a7199212-950f-4a2d-ba1e-017c48da1d19b
+GET https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/00001111-aaaa-2222-bbbb-3333cccc4444
 ```
 
 ### Response

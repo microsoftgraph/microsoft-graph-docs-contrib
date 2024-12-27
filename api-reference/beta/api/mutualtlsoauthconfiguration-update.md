@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 
 Update the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
 
-You can only use the following two properties to update a **mutualTlsOauthConfiguration** resource: **displayName**, **certificateAuthorities**.
+You can only update the following two properties: **displayName**, **certificateAuthorities**.
 
-If you want to update a subset of items in the certificate list, you should first get the entire list, make your modifications, and then repost the entire contents of the **certificateAuthorities** attribute list.
+To update a subset of objects in the **certificateAuthorities** collection, first get the complete list, make your modifications, and then repost the entire contents of the **certificateAuthorities** attribute list in the request body. Excluding a subset of objects removes them from the collection.
 
 ## Permissions
 
@@ -151,7 +151,7 @@ The following example shows a request that updates the certificate authority lis
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
+PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/00001111-aaaa-2222-bbbb-3333cccc4444
 Content-Type: application/json
 
 {
@@ -180,7 +180,7 @@ The following example shows the response.
 -->
 ```http
 HTTP/1.1 200 OK
-Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"
+Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/00001111-aaaa-2222-bbbb-3333cccc4444"
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",

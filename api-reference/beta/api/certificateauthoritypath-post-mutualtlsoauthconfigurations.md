@@ -53,9 +53,9 @@ You can specify the following properties when you create a **mutualTlsOauthConfi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|certificateAuthority|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property that represents a list of trusted certificate authorities. |
-|displayName|String|Friendly name.|
-|tlsClientAuthParameter| tlsClientRegistrationMetadata | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
+|certificateAuthority|[certificateAuthority](../resources/certificateauthority.md) collection | Multi-value property that represents a list of trusted certificate authorities. Optional. |
+|displayName|String|Friendly name. Optional. |
+|tlsClientAuthParameter| tlsClientRegistrationMetadata | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. Read-only. |
 
 ## Response
 

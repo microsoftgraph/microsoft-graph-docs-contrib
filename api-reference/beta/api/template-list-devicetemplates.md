@@ -87,8 +87,8 @@ Content-Type: application/json
   "value": [
     {
       "id": "16f1d02a-af59-4ca7-b2ea-494a262353b9",
-      "mutualTlsOauthConfigurationId": "471995a2-9504-4a2d-ba1e-017c48da1d19",
-      "mutualTlsOauthConfigurationTenantId": "5142e292-4586-4888-856a-a0661219fdab",
+      "mutualTlsOauthConfigurationId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+      "mutualTlsOauthConfigurationTenantId": "00001111-aaaa-2222-bbbb-3333cccc4445",
       "deviceAuthority": "IoT Device Authority",
       "manufacturer": "IoT Manufacturer",
       "model": "IoT Device K1",
@@ -96,8 +96,8 @@ Content-Type: application/json
     },
     {
       "id": "3a0698d9-fd85-4b9e-9655-e26d19013459",
-      "mutualTlsOauthConfigurationId": "471995a2-9504-4a2d-ba1e-017c48da1d19",
-      "mutualTlsOauthConfigurationTenantId": "5142e292-4586-4888-856a-a0661219fdab",
+      "mutualTlsOauthConfigurationId": "00001111-aaaa-2222-bbbb-3333cccc4433",
+      "mutualTlsOauthConfigurationTenantId": "00001111-aaaa-2222-bbbb-3333cccc4435",
       "deviceAuthority": "IoT Test for owner",
       "manufacturer": "IoT manufacturer",
       "model": "IoT Devices",
