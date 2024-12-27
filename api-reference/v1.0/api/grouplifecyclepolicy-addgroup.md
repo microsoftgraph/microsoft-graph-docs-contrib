@@ -133,5 +133,11 @@ Content-type: application/json
   "description": "groupLifecyclePolicy: addgroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "
+      Error: grouplifecyclepolicy_addgroup:
+        Unable to locate the corresponding response for this method. Missing or incorrect code block annotation.
+    "
+  ]
 }-->
