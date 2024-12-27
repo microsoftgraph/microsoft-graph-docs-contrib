@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "7ef7a8a7-bb6f-4c4f-b594-42a90d00b41f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/chatRestrictions?view=graph-rest-1.0) resource.",
+          "Target": "chatRestrictions"
+        },
+        {
+          "Id": "7ef7a8a7-bb6f-4c4f-b594-42a90d00b41f",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatRestrictions** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        }
+      ],
+      "Id": "7ef7a8a7-bb6f-4c4f-b594-42a90d00b41f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-25T21:56:05.4071005Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a7978bef-d6bb-4083-81f9-c746c2f05197",
           "ApiChange": "Property",
           "ChangedApiName": "externalEventInformation",
