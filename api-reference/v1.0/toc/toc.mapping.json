@@ -12,6 +12,14 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group"
+      ],
+      "childNodes": [
+        {
+          "name": "Group lifecycle policy",
+          "resources": [
+            "groupLifecyclePolicy"
+          ]
+        }
       ]
     },
     {
