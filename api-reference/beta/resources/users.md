@@ -51,9 +51,9 @@ There are two types of users in Microsoft Entra ID - members and guests. Initial
 
 The set of default permissions depends on whether the user is a member or a guest user. For more information about what member users and guest users can do, see [What are the default user permissions in Microsoft Entra ID?](/entra/fundamentals/users-default-permissions?context=graph/context).
 
-#### Default user permissions in customer tenants
+#### Default user permissions in external tenants
 
-There are also default permissions for customers in Microsoft Entra ID for customers. The following table indicates the API operations that enable customers to manage their own profile.
+There are also default permissions for customers in Microsoft Entra ID in external tenants. The following table indicates the API operations that enable customers to manage their own profile.
 
 The user ID or userPrincipalName is always the signed-in user's.
 
@@ -65,6 +65,12 @@ The user ID or userPrincipalName is always the signed-in user's.
 <!--
 | Reset password | `POST /users/{id or userPrincipalName}/authentication/methods/{id}/resetPassword`  where the authentication method ID is always `28c10230-6103-485e-b985-444c60001490`. | UserAuthenticationMethod.ReadWrite |
 -->
+
+## Users basic profile
+
+[!INCLUDE [beta-disclaimer](../../../includes/permissions-notes/user.readbasic.all.md)]
+
+In addition, the following scenario-specific permissions also allow apps to read the basic user profile which contains mostly identifier-related properties: *User-Mail.ReadWrite.All*, *User-PasswordProfile.ReadWrite.All*, *User-Phone.ReadWrite.All*, *User-LifeCycleInfo.Read.All*, *User-LifeCycleInfo.ReadWrite.All*.
 
 ## Sensitive actions
 

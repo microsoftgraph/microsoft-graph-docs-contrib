@@ -16,6 +16,9 @@ Namespace: microsoft.graph
 
 The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values can be selected from a list of choices.
 
+## Relationships
+None.
+
 ## JSON representation
 
 Here is a JSON representation of a **choiceColumn** resource.

@@ -23,6 +23,9 @@ Specifies the maximum and minimum sizes (in kilobytes) that an incoming message 
 | minimumSize | Int32 | The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

@@ -39,6 +39,9 @@ Represents the synchronization status of a school data [synchronization profile]
 | statusMessage | String                 | Status message for the synchronization stage of the current profile.                                        |
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

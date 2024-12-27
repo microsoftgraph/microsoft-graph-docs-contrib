@@ -12,7 +12,7 @@ ms.date: 06/10/2024
 
 Namespace: microsoft.graph
 
-Represents a subscription that allows a client app to receive change notifications about changes to data in Microsoft Graph.
+Represents a subscription that allows a client app to receive [change notifications](../resources/changenotificationcollection.md) about changes to data in Microsoft Graph.
 
 For more information about subscriptions and change notifications, including resources that support change notifications, see [Set up notifications for changes in resource data](change-notifications-api-overview.md).
 
@@ -21,7 +21,7 @@ For more information about subscriptions and change notifications, including res
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
 | [List](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
-| [Create](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive change notifications when Microsoft Graph data changes. |
+| [Create](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive change notifications when Microsoft Graph data changes. When a susbcription is created and valdiated sucessfully, Microsoft Graph sends the app at least one [changeNotificationCollection](../resources/changenotificationcollection.md) object every time there's a change in the subscribed resource. |
 | [Get](../api/subscription-get.md) | [subscription](subscription.md) | Reads properties and relationships of subscription object. |
 | [Update](../api/subscription-update.md) | [subscription](subscription.md) | Updates a subscription expiration time for renewal and/or updates the notificationUrl for delivery. |
 | [Delete](../api/subscription-delete.md) | None | Deletes a subscription object. |

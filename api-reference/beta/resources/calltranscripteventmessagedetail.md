@@ -27,6 +27,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |callTranscriptICalUid|String|Unique identifier for a call transcript.|
 |meetingOrganizer|[identitySet](../resources/identityset.md)|The organizer of the meeting.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
