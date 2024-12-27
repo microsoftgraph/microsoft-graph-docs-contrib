@@ -41,7 +41,6 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |device|[device](../resources/device.md)|The registered device on which this Windows Hello for Business key resides. Supports `$expand`. <br/><br/>When you get a user's Windows Hello for Business registration information, this property is returned only on a single GET and when you specify `?$expand`. For example, GET `/users/admin@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device`.|
 
 The following JSON representation shows the resource type.
-The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -55,7 +54,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
   "id": "String (Identifier)",
   "displayName": "String",
-  "createdDateTime": "String",
+  "createdDateTime": "String (timestamp)"
   "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"}
 }
 ```
