@@ -54,7 +54,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
   "id": "String (Identifier)",
   "displayName": "String",
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime": "String (timestamp)",
   "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"}
 }
 ```
