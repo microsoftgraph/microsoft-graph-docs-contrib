@@ -35,12 +35,12 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |:---|:---|:---|                                                                      
 |deletedDateTime                      |DateTimeOffset     |Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](../resources/directoryobject.md). |
 | deviceAuthority                    | String            | A tenant-defined name for the party that's responsible for provisioning and managing devices on the Microsoft Entra tenant. For example, Tailwind Traders (the manufacturer) makes security cameras that are installed in customer buildings and managed by Lakeshore Retail (the device authority). This value is provided to the customer by the device authority (manufacturer or reseller). |
-| id                                 | String            | The unique identifier for the object. Inherited from [directoryObject](../resources/directoryobject.md). Read-only. |
+| id                                 | String            | The unique identifier for the object. Inherited from [directoryObject](../resources/directoryobject.md). Read-only. Supports `$filter` (`eq`, `in`). |
 | manufacturer                       | String            | Manufacturer name. |
 | model                              | String            | Model name. |
-| mutualTlsOauthConfigurationId      | String            | Object ID of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used. This value is provided to the customer by the device authority (manufacturer or reseller). |
-| mutualTlsOauthConfigurationTenantId | String           | ID (tenant ID for device authority) of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used. This value is provided to the customer by the device authority (manufacturer or reseller). |
-| operatingSystem                    | String            | Operating system type.    |
+| mutualTlsOauthConfigurationId      | String            | Object ID of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't required if self-signed certificates are used. This value is provided to the customer by the device authority (manufacturer or reseller). |
+| mutualTlsOauthConfigurationTenantId | String           | ID (tenant ID for device authority) of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't required if self-signed certificates are used. This value is provided to the customer by the device authority (manufacturer or reseller). |
+| operatingSystem                    | String            | Operating system type. Supports `$filter` (`eq`, `in`).   |
 
 ## Relationships
 |Relationship|Type|Description|

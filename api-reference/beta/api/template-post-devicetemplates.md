@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 
 Create a new [deviceTemplate](../resources/devicetemplate.md) used to identify attributes and manage a group of devices with similar characteristics.
 
-When you create a **deviceTemplate**, the properties **mutualTlsOauthConfigurationId** and **mutualTlsOauthConfigurationTenantId** in the body of the message aren't required if you use self-signed certificates instead of trust root certificates.
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -54,13 +52,13 @@ You can specify the following properties when you create a **deviceTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceAuthority | String | A generic term that refers to the device manufacturer, reseller, or supplier responsible for provisioning and managing devices on a customer's Entra ID. For example, Acme (the manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (the device authority). Required.|
+|deviceAuthority | String | A tenant-defined name for the party that's responsible for provisioning and managing devices on the Microsoft Entra tenant. For example, Tailwind Traders (the manufacturer) makes security cameras that are installed in customer buildings and managed by Lakeshore Retail (the device authority). This value is provided to the customer by the device authority (manufacturer or reseller). Required.|
 |manufacturer|String|Manufacturer name. Required.|
 |model|String|Model name. Required.|
-|mutualTlsOauthConfigurationId|String|Object ID of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
-|mutualTlsOauthConfigurationTenantId|String|ID (tenant ID for device authority) of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't set if self-signed certificates are used instead of trusted root certificates. Optional. |
+|mutualTlsOauthConfigurationId|String|Object ID of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't required if self-signed certificates are used instead of trusted root certificates. Optional. |
+|mutualTlsOauthConfigurationTenantId|String|ID (tenant ID for device authority) of the tenant that contains the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md). This value isn't required if self-signed certificates are used instead of trusted root certificates. Optional. |
 |operatingSystem|String|Operating system type. Optional.|
-|owners@odata.bind|String collection| List of owners to add to the device template. Optional. |
+|owners@odata.bind|String collection| List of IDs for owners to add to the device template. Only the following [directoryObject](../resources/directoryobject.md) types are supported as owners: [service principals](..\resources\serviceprincipal.md), [users](..\resources\users.md), or [applications](..\resources\application.md).  Optional. |
 
 ## Response
 
@@ -70,7 +68,8 @@ For more information, see [Microsoft Graph error responses and resource types](/
 
 ## Examples
 
-### Request
+### Example 1: 
+#### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -85,14 +84,14 @@ Content-length: 106
 {
   "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
   "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
-  "deviceAuthority": "ADT",
-  "manufacturer": "Acme",
+  "deviceAuthority": "Lakeshore Retail",
+  "manufacturer": "Tailwind Traders",
   "model": "DeepFreezerModelAB",
   "operatingSystem": "WindowsIoT"
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -112,8 +111,61 @@ Content-Type: application/json
   "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
   "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
   "deletedDateTime": null,
-  "deviceAuthority": "ADT",
-  "manufacturer": "Acme",
+  "deviceAuthority": "Lakeshore Retail",
+  "manufacturer": "Tailwind Traders",
+  "model": "DeepFreezerModelAB",
+  "operatingSystem": "WindowsIoT"
+}
+```
+
+### Example 2: Create a device from template with owner.
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_devicetemplate_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/directory/templates/deviceTemplates
+Content-Type: application/json
+Content-length: 106
+
+{
+  "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
+  "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
+  "deviceAuthority": "Lakeshore Retail",
+  "manufacturer": "Tailwind Traders",
+  "model": "DeepFreezerModelAB",
+  "operatingSystem": "WindowsIoT",
+  "owners@odata.bind": [
+    "https://graph.microsoft.com/beta/users/67eb760b-9d3e-496d-96e3-0fdc3d1cdc85"
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.deviceTemplate"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/templates/deviceTemplates/$entity",
+  "id": "c0ff9329-3596-4ece-8aa9-3dd23a925356",
+  "mutualTlsOauthConfigurationId": "eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
+  "mutualTlsOauthConfigurationTenantId": "39cdb54e-21ca-4d66-bacd-f9a5b945b322",
+  "deletedDateTime": null,
+  "deviceAuthority": "Lakeshore Retail",
+  "manufacturer": "Tailwind Traders",
   "model": "DeepFreezerModelAB",
   "operatingSystem": "WindowsIoT"
 }
