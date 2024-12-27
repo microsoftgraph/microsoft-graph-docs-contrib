@@ -24,7 +24,8 @@ For more information, see [Manage the lifecycle of Microsoft 365 groups in your 
 
 | Method                                                                                   | Return Type                                                | Description                                                         |
 | :--------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------ |
-| [List](../api/grouplifecyclepolicy-list.md)                       | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies.                                |
+| [List](../api/grouplifecyclepolicy-list.md)                       | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies. Only one policy exists in the                                 |
+|[Create](../api/grouplifecyclepolicy-post-grouplifecyclepolicies.md)|[groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)|Create a new groupLifecyclePolicy object.|
 | [Get](../api/grouplifecyclepolicy-get.md)                           | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Read properties and relationships of a groupLifecyclePolicy object. |
 | [Update](../api/grouplifecyclepolicy-update.md)                     | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Update a groupLifecyclePolicy object.                               |
 | [Delete](../api/grouplifecyclepolicy-delete.md)                     | None                                                       | Delete a groupLifecyclePolicy object.                               |
