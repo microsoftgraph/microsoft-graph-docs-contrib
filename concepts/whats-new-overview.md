@@ -38,10 +38,10 @@ Published the following lesser privileged permissions for managing specific scen
 
 | Permission | Comments |
 |--|--|
-| User-Mail.ReadWrite.All | Least privileged permission to update **otherMails** property. |
-| User-PasswordProfile.ReadWrite.All | Least privileged permission to update **passwordProfile** property. |
-| User-Phone.ReadWrite.All | Least privileged permission to update **businessPhones** and **mobilePhone** properties. Previously, only the *Directory.AccessAsUser.All* permission was supported to update the properties for admin user. We recommend you move the lesser privileged ** permission instead.|
-| User.EnableDisableAccount.All | Least privileged permission to update **accountEnabled** property. **Requires** *User.Read.All* permission as well. Previously, only the *Directory.AccessAsUser.All* permission was supported to update the account status for admin users. We recommend you move the lesser privileged permission instead.|
+| User-Mail.ReadWrite.All | Least privileged permission to update the **otherMails** property. |
+| User-PasswordProfile.ReadWrite.All | Least privileged permission to update the **passwordProfile** property. |
+| User-Phone.ReadWrite.All | Least privileged permission to update the **businessPhones** and **mobilePhone** properties. Previously, only the *Directory.AccessAsUser.All* permission was supported to update the properties for admin user. We recommend you move the lesser privileged permission instead.|
+| User.EnableDisableAccount.All | Least privileged permission to update the **accountEnabled** property. **Requires** *User.Read.All* permission as well. Previously, only the *Directory.AccessAsUser.All* permission was supported to update the account status for admin users. We recommend you move the lesser privileged permission instead.|
 | User.DeleteRestore.All | Least privileged permission to [delete a user](/graph/api/user-delete), [restore a deleted user from the recycle bin](/graph/api/directory-deleteditems-restore), or [permanently delete a deleted user from the recycle bin](/graph/api/directory-deleteditems-delete). Also allows retrieving deleted users via the `/directory/deleteditems/microsoft.graph.user` endpoint. |
 
 ## December 2024: New in preview only
@@ -83,6 +83,10 @@ Enabled the **description**, **displayName**, and **severity** properties as sup
 ### Sites and lists
 
 Create and manage a [news link page](/graph/api/resources/newslinkpage?view=graph-rest-beta&preserve-view=true) in SharePoint.
+
+### Teamwork and communications | Calls and online meetings
+
+The get and list operations of the [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) and [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) resources support the retrieval of call recordings or call transcripts from private chat meetings and channel meetings.
 
 ### Teamwork and communications | Messaging
 
