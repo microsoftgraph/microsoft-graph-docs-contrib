@@ -188,8 +188,8 @@ The following example shows a request.
   "name": "get_directoryaudits_filter_initiatedby"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits?$filter=initiatedBy/user/id eq '00000000-0000-0000-0000-000000000000'
+```http
+GET https://graph.microsoft.com/beta/auditLogs/directoryAudits?$filter=initiatedBy/user/id eq '00000000-0000-0000-0000-000000000000'
 ```
 
 #### Response
@@ -208,7 +208,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/directoryAudits",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET auditLogs/directoryAudits?$select=activityDateTime,activityDisplayName",
     "value": [
         {
@@ -221,6 +221,7 @@ Content-type: application/json
             "activityDateTime": "2024-12-27T10:01:19.5796748Z",
             "loggedByService": "Self-service Group Management",
             "operationType": "Update",
+            "userAgent": null,
             "initiatedBy": {
                 "app": null,
                 "user": {
