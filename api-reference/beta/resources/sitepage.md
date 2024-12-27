@@ -31,6 +31,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 | [Publish](../api/sitepage-publish.md)                                                   | None                                            | Publish a [sitePage](../resources/sitepage.md) object.                                                                              |
 | [Get by position](../api/sitepage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection   | Get a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information. |
 | [Save as template](../api/sitepage-saveastemplate.md)                          | [pageTemplate](../resources/pagetemplate.md)            | Save a [sitePage](../resources/sitepage.md) as a [pageTemplate](../resources/pagetemplate.md) in a [site](../resources/site.md).                                                                           |
+| [Create from template](../api/sitepage-createfromtemplate.md.md)                          | [page](../resources/sitepage.md)            | Create a [sitePage](../resources/sitepage.md) from a [pageTemplate](../resources/pagetemplate.md) in a [site](../resources/site.md).                                                                           |
 
 ## Properties
 
