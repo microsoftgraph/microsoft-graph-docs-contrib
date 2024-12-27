@@ -132,3 +132,4 @@ You can alternatively use the Microsoft identity platform endpoints directly wit
 
 - [Microsoft identity platform documentation](/entra/identity-platform/)
 - [Overview of Microsoft Graph permissions](/graph/permissions-overview)
+- [Microsoft Graph tutorials](/graph/tutorials)
