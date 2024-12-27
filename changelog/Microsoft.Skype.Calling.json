@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowRecording** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowTranscription",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowTranscription** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        }
+      ],
+      "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-24T20:42:00.4091409Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a7978bef-d6bb-4083-81f9-c746c2f05197",
           "ApiChange": "Property",
           "ChangedApiName": "externalEventInformation",
