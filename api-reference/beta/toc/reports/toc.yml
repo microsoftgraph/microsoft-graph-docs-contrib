@@ -4,6 +4,8 @@
 items:
 - name: Identity and access reports
   items:
+  - name: Overview
+    href: ../../resources/report-identity-access.md
   - name: Microsoft Entra recommendations (preview)
     items:
     - name: Overview
@@ -44,8 +46,6 @@ items:
         href: ../../api/impactedresource-reactivate.md
   - name: Microsoft Entra activity reports
     items:
-    - name: Overview
-      href: ../../resources/report-identity-access.md
     - name: AD FS application activity
       items:
       - name: Relying party detailed summary
@@ -154,9 +154,9 @@ items:
           href: ../../resources/credentialuserregistrationcount.md
         - name: Get
           href: ../../api/reportroot-getcredentialuserregistrationcount.md
-      - name: Credential user registration details
+      - name: Credential user registration details (deprecated)
         items:
-        - name: Credential user registration details
+        - name: Credential user registration details (deprecated)
           href: ../../resources/credentialuserregistrationdetails.md
         - name: List
           href: ../../api/reportroot-list-credentialuserregistrationdetails.md
