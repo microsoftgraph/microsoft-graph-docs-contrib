@@ -46,7 +46,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |deviceInstances|[device](../resources/device.md) collection|Collection of **device** objects created based on this template.|
-|owners|[directoryObject](../resources/directoryobject.md) collection|Collection of objects that can manage the can manage the device template and the related **deviceInstances**. Owners can be represented as [service principals](..\resources\serviceprincipal.md), [users](..\resources\users.md), or [applications](..\resources\application.md). As an owner, no other administrator roles are necessary to create, update, delete the devices from this template, as well as to add or remove template owners. |
+|owners|[directoryObject](../resources/directoryobject.md) collection|Collection of objects that can manage the device template and the related **deviceInstances**. Owners can be represented as [service principals](..\resources\serviceprincipal.md), [users](..\resources\users.md), or [applications](..\resources\application.md). As an owner, no other administrator roles are necessary to create, update, or delete devices from this template, as well as to add or remove template owners. |
 
 ## JSON representation
 The following JSON representation shows the resource type.

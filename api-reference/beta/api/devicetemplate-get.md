@@ -43,7 +43,7 @@ GET /directory/templates/deviceTemplates/{id}
 
 ## Optional query parameters
 
-This method supports the `$select` [OData query parameters](/graph/query-parameters) to help customize the response. The following table lists examples.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -63,10 +63,10 @@ For more information, see [Microsoft Graph error responses and resource types](/
 
 ## Examples
 
+### Request
+
 The following example shows how to get a device template by its **id** with a certificate authority-issued mTLS certificate.
 
-### Request
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_devicetemplate"

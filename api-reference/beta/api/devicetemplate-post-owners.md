@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a new owner to a [deviceTemplate](../resources/devicetemplate.md) object. Owners are granted permissions to enable or disable devices and update properties like **alternativeNames** for the devices created from these device templates. As an owner, no other administrator roles are necessary to create, update, delete the devices from this template, as well as to add or remove template owners. Owners added via this API can are returned in a [list device owners](../api/devicetemplate-list-owners.md) request. 
+Add a new owner to a [deviceTemplate](../resources/devicetemplate.md) object. Owners are granted permissions to enable or disable devices and update properties, such as **alternativeNames**, for the devices created from these device templates. As an owner, no other administrator roles are necessary to create, update, or delete devices from this template, as well as to add or remove template owners. Owners added via this API are returned in a [list device owners](../api/devicetemplate-list-owners.md) request. 
 
 ## Permissions
 

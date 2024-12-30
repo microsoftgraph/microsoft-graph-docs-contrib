@@ -70,9 +70,14 @@ For more information, see [Microsoft Graph error responses and resource types](/
 
 ## Examples
 
-### Example 1: 
+### Example 1: Create a new device template
+
+The following example shows how to create a new [deviceTemplate](../resources/devicetemplate.md).
+
 #### Request
+
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_devicetemplate_from_"
@@ -120,9 +125,14 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a device from template with owner.
+### Example 2: Create a device template with an owner
+
+The following example shows how to create a new [deviceTemplate](../resources/devicetemplate.md) with an owner.
+
 #### Request
+
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_devicetemplate_from_with_owner"
