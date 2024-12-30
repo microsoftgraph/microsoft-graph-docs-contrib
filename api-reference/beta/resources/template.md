@@ -1,6 +1,6 @@
 ---
 title: "template resource type"
-description: "Represents a container for templates, such as device templates used for onboarding Entra Id devices."
+description: "Represents a container for templates, such as device templates used for onboarding Entra ID devices."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.date: 11/24/2024
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for templates, such as device templates used for onboarding Entra Id devices.
+Represents a container for templates, such as device templates used for onboarding Entra ID devices.
 
 ## Methods
 None.
