@@ -26,6 +26,9 @@ Additional information added to an [educationUser](educationuser.md) that is pre
 | externalId    | String | Id of the Teacher in external source system. |
 | teacherNumber | String | Teacher number.                              |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

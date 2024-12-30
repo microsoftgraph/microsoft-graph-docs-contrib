@@ -41,6 +41,9 @@ Represents the tenant-level installation options for Microsoft 365 apps. You can
 |semiAnnual|For specific devices that require extensive testing before deploying new Microsoft 365 features due to regulatory, governmental, or organizational requirements. Updates are released on the second Tuesday of every month. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

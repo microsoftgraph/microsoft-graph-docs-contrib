@@ -21,6 +21,9 @@ Represents the response format for the [extractSensitivityLabels](../api/driveit
 |:---|:---|:---|
 |labels|[sensitivityLabelAssignment](./sensitivitylabelassignment.md) collection|List of sensitivity labels assigned to a file.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

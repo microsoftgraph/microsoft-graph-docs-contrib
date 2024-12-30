@@ -101,6 +101,64 @@
     {
       "ChangeList": [
         {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User-Mail.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User-Mail.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This property is the least privileged permission required to update the **otherMails** property for a user. It also allows you to read some identifier-related properties on the user object.",
+          "Target": "user"
+        },
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User-PasswordProfile.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User-PasswordProfile.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This permission is the least privileged permission required to reset a user's password and read and update the **passwordProfile** property for a user. It also allows you to read some identifier-related properties on the user object.",
+          "Target": "user"
+        },
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User-Phone.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User-Phone.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This permission is the least privileged required to read and update the **businessPhones** and **mobilePhone** properties for a user, including admin users. It also allows you to read some identifier-related properties on the user object. Previously, only the *Directory.AccessAsUser.All* permission was supported to update the properties for admin user. We recommend you move the lesser privileged ** permission instead.",
+          "Target": "user"
+        },
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User-Phone.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User-Phone.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This permission is the least privilege required to read and update the **businessPhones** and **mobilePhone** properties for a user, including admin users. It also allows you to read some identifier-related properties on the user object.",
+          "Target": "user"
+        },
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.EnableDisableAccount.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User.EnableDisableAccount.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This permission in combination with *User.Read.All* is the least privileged combination of permissions to read and update the **accountEnabled** property for a user, including admin users. Previously, only the *Directory.AccessAsUser.All* permission was supported to update the account status for admin users. We recommend you move the lesser privileged permission instead.",
+          "Target": "user"
+        },
+        {
+          "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.DeleteRestore.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `User.DeleteRestore.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This property is the least privileged permission required to [delete a user account](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0), [restore a deleted user from the recycle bin](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0), or [permanently delete a user from the recycle bin](https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0).",
+          "Target": "user"
+        }
+      ],
+      "Id": "a835ee39-0d60-45e8-9b41-848bf26bc4bb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-23T00:00:00.304139Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ddcf7401-9746-4cdd-8406-15c0e0801925",
           "ApiChange": "Enumeration",
           "ChangedApiName": "customSecurityAttributeComparisonOperator",

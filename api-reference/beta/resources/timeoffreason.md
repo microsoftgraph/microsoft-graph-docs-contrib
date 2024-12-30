@@ -39,6 +39,9 @@ Represents a valid reason to take [time off](timeoff.md) in a [schedule](schedul
 | lastModifiedBy    | [identitySet](identityset.md)        |The identity that last updated this **timeOffReason**.|
 | lastModifiedDateTime    | DateTimeOffset         |The time stamp on which this **timeOffReason** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

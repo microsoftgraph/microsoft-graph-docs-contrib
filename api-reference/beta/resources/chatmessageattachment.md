@@ -30,6 +30,9 @@ An entity of type **chatMessageAttachment** is returned as part of the [Get chan
 |thumbnailUrl| string |The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of **content** or **contentUrl**. For example, if you set **contentType** to application/word and set **contentUrl** to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user selects the image, the channel would open the document.|
 
 
+## Relationships
+None.
+
 ## JSON representation
  The following JSON representation shows the resource type.
 

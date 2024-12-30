@@ -8,15 +8,13 @@ ms.topic: concept-article
 ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 12/27/2023
+ms.date: 12/27/2024
 #customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
 ---
 
 # Set up notifications for changes in resource data
 
 Change notifications enable applications to receive alerts when a Microsoft Graph resource they're interested in changes; that is, created, updated, or deleted. Microsoft Graph sends notifications to the specified client endpoint, and the client service processes the notifications according to the business requirements. For example, the service might fetch more data, update its cache and views, and so on.
-
-<!-- Add illustration-->
 
 ## Why get change notifications?
 
@@ -25,6 +23,12 @@ Change notifications follow an event-driven model where customers receive alerts
 - You're subscribing to a resource that changes frequently.
 - You need to react to changes in near real-time.
 - You want to avoid frequently polling Microsoft Graph which might cause you to hit the throttling limits.
+
+The following image shows how change notifications works and compares with [change tracking](./delta-query-overview.md).
+
+:::image type="content" source="images/change-notifications/change-notifications-vs-delta-query.png" alt-text="Illustration of change notifications and delta query services":::
+
+The following video provides an overview of change notifications in Microsoft Graph.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
 

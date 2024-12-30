@@ -71,6 +71,7 @@ If successful, this method returns a `201 Created` response code and a [corsConf
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_corsconfiguration_v2_from_"
@@ -88,6 +89,12 @@ Content-Type: application/json
   "resource":"/"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-corsconfiguration-v2-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

@@ -24,6 +24,9 @@ Contains information about a channel in Microsoft Teams, including numbers of gu
 |membersCount|Int32|Count of members in a channel.|
 |ownersCount|Int32|Count of owners in a channel.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

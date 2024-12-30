@@ -21,6 +21,9 @@ Indicates that the column contains URL data that can be an achortag or an image 
 | :-------- | :------ | :------------------------------------------------------------------------------------ |
 | isPicture | Boolean | Specifies whether the display format used for URL columns is an image or a hyperlink. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 Here's a JSON representation of a **hyperlinkOrPictureColumn** resource.

@@ -23,6 +23,9 @@ Contains various scores based on different scopes - such as average by industry 
 | dataScore		| Double	| Average score within a specified basis. |
 | identityScore	| Double	| Average score within a specified basis. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

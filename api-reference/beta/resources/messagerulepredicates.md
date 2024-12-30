@@ -50,6 +50,9 @@ Represents the set of conditions and exceptions that are available for a rule.
 | subjectContains | String collection | Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply. |
 | withinSizeRange | [sizeRange](sizerange.md) | Represents the minimum and maximum sizes (in kilobytes) that an incoming message must fall in between in order for the condition or exception to apply. |
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 
