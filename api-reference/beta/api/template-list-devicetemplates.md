@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/template-list-devicetemplates-permissions.md)]
 
+[!INCLUDE [rbac-devicestemplate-apis](../includes/rbac-for-apis/rbac-devicetemplate-apis.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
