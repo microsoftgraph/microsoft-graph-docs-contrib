@@ -24,6 +24,9 @@ Used by the **provisionedPlans** property of the [user](user.md) entity and the 
 |provisioningStatus|String|The possible values are:<br/>`Success` - Service is fully provisioned.<br/>`Disabled` - Service is disabled.<br/>`Error` - The service plan isn't provisioned and is in an error state.<br/>`PendingInput` - The service isn't provisioned and is awaiting service confirmation.<br/>`PendingActivation` - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)<br/>`PendingProvisioning` - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.|
 |service|String|The name of the service; for example, "AccessControlS2S"|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

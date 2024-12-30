@@ -11,7 +11,8 @@
       "name": "Groups",
       "overview": "../../resources/groups-overview.md",
       "resources": [
-        "group"
+        "group",
+        "groupLifecyclePolicy"
       ]
     },
     {
@@ -88,12 +89,14 @@
             "onPremisesAgent",
             "onPremisesAgentGroup",
             "onPremisesPublishingProfile",
-            "publishedResource"
+            "publishedResource",
+            "ipApplicationSegment",
+            "webApplicationSegment",
+            "corsConfiguration_v2"           
           ],
           "complexTypes": [
             "applicationSegment",
             "corsConfiguration",
-            "corsConfiguration_v2",
             "hybridAgentUpdaterConfiguration",
             "kerberosSignOnSettings",
             "keyCredential",
@@ -290,6 +293,12 @@
       ],
       "resources": [
         "subscription"
+      ],
+      "complexTypes": [
+        "changeNotificationCollection",
+        "changeNotification",
+        "changeNotificationEncryptedContent",
+        "resourceData"
       ]
     },
     {

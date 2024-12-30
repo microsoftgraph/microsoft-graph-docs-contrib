@@ -24,6 +24,9 @@ A term. This represents a designated portion of the academic year. It's used wit
 |startDate|Date|Start of the term.|
 |endDate|Date|End of the term.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

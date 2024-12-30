@@ -18,6 +18,9 @@ Namespace: microsoft.graph
 |:---------------|:--------|:----------|
 |name|String|The name of the **chunkedUploadSessionDescriptor** object.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

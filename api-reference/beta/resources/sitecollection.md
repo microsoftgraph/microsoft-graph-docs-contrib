@@ -27,6 +27,9 @@ If a [**site**](site.md) resource has a non-null **siteCollection** property, th
 | hostname         | string   | The hostname for the site collection. Read-only.                                    |
 | root             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

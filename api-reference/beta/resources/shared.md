@@ -36,6 +36,9 @@ If a [driveItem](driveitem.md) has a non-null **shared** facet, the item was sha
 | `organization` | The item is shared by using a link that works for anyone in the owner's organization. |
 | `users`        | The item is shared with specific users only.                                          |
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {
