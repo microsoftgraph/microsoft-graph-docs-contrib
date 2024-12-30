@@ -63,11 +63,9 @@ For more information, see [Microsoft Graph error responses and resource types](/
 
 ## Examples
 
-### Example 1: Get a device template by ID with a certificate authority-issued mTLS certificate
-
 The following example shows how to get a device template by its **id** with a certificate authority-issued mTLS certificate.
 
-#### Request
+### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -78,7 +76,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates/00f1e7a4-de6d-4070-84df-8aab629c4d1e
 ```
 
-#### Response
+### Response
 The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

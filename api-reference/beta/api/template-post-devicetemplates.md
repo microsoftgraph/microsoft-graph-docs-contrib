@@ -125,7 +125,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_devicetemplate_from_"
+  "name": "create_devicetemplate_from_with_owner"
 }
 -->
 ``` http
