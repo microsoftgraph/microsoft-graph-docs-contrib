@@ -18,7 +18,7 @@ With Microsoft Graph, you can programmatically accesss identity and access repor
 
 The availability of all Microsoft Entra identity and access reports is governed by the [Microsoft Entra data retention policies](/entra/identity/monitoring-health/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-## Available identity and access reports
+## Available reports
 
 ### Application activity reports
 
@@ -42,7 +42,7 @@ Evaluate the usage of application sign-ins in your tenant using either [a summar
 
 In Microsoft Entra External ID for external tenants where you have registered apps that customers sign-in to, you can track sign-in and sign-up user activities. You can query and analyze data for daily active users, monthly active users, total users, new users, authentications, requests, and multifactor authentication usage. For more information, see the [dailyUserInsightMetricsRoot resource type](/graph/api/resources/dailyuserinsightmetricsroot) and [monthlyUserInsightMetricsRoot resource type](/graph/api/resources/monthlyuserinsightmetricsroot).
 
-## Health reports (preview)
+### Health reports (preview)
 
 - Monitor [Microsoft Entra availability and SLA compliance](../api/azureadauthentication-get.md). This report is available on the Microsoft Entra portal through **Monitoring and health** tab group > **Health** > **SLA attainment**
 - Monitor the health of various Microsoft Entra and Microsoft 365 services through the [serviceActivity resource type](../resources/serviceactivity.md) and its associated API operations. For example:

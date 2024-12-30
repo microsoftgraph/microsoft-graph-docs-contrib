@@ -18,7 +18,7 @@ With Microsoft Graph, you can programmatically accesss identity and access repor
 
 The availability of all Microsoft Entra identity and access reports is governed by the [Microsoft Entra data retention policies](/entra/identity/monitoring-health/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-## Available identity and access reports
+## Available reports
 
 ### Application activity reports
 
