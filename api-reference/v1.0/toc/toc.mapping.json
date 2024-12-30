@@ -1308,6 +1308,7 @@
       "childNodes": [
         {
           "name": "Identity and access reports",
+          "overview": "../../resources/report-identity-access.md",
           "childNodes": [
             {
               "name": "Microsoft Entra activity reports",
@@ -1319,7 +1320,7 @@
                   ]
                 },
                 {
-                  "name": "Registration and usage",
+                  "name": "Authentication methods registration and usage",
                   "overview": "../../resources/authenticationmethods-usage-insights-overview.md",
                   "resources": [
                     "userRegistrationDetails",
