@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
 author: "egreenberg14"
+ms.date: 03/21/2024
 ---
 
 # signInLocation resource type
@@ -24,6 +25,9 @@ Provides the city, state and country/region from where the sign-in happened.
 |countryOrRegion|String|Provides the country code info (two letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Provides the latitude, longitude and altitude where the sign-in originated.|
 |state|String|Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.|
+
+## Relationships
+None.
 
 ## JSON representation
 

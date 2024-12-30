@@ -16,28 +16,22 @@ import (
 )
 
 requestBody := graphmodels.NewTimeOff()
-userId := "c5d0c76b-80c4-481c-be50-923cd8d680a1"
+userId := "aa162a04-bec6-4b81-ba99-96caa7b2b24d"
 requestBody.SetUserId(&userId) 
 sharedTimeOff := graphmodels.NewTimeOffItem()
-timeOffReasonId := "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
+timeOffReasonId := "TOR_29a5ba96-c7ef-4e76-bec6-055323746314"
 sharedTimeOff.SetTimeOffReasonId(&timeOffReasonId) 
-startDateTime , err := time.Parse(time.RFC3339, "2019-03-11T07:00:00Z")
+startDateTime , err := time.Parse(time.RFC3339, "2024-10-10T19:00:00Z")
 sharedTimeOff.SetStartDateTime(&startDateTime) 
-endDateTime , err := time.Parse(time.RFC3339, "2019-03-12T07:00:00Z")
+endDateTime , err := time.Parse(time.RFC3339, "2024-10-10T20:00:00Z")
 sharedTimeOff.SetEndDateTime(&endDateTime) 
-theme := graphmodels.WHITE_SCHEDULEENTITYTHEME 
+theme := graphmodels.BLUE_SCHEDULEENTITYTHEME 
 sharedTimeOff.SetTheme(&theme) 
 requestBody.SetSharedTimeOff(sharedTimeOff)
-draftTimeOff := graphmodels.NewTimeOffItem()
-timeOffReasonId := "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-draftTimeOff.SetTimeOffReasonId(&timeOffReasonId) 
-startDateTime , err := time.Parse(time.RFC3339, "2019-03-11T07:00:00Z")
-draftTimeOff.SetStartDateTime(&startDateTime) 
-endDateTime , err := time.Parse(time.RFC3339, "2019-03-12T07:00:00Z")
-draftTimeOff.SetEndDateTime(&endDateTime) 
-theme := graphmodels.PINK_SCHEDULEENTITYTHEME 
-draftTimeOff.SetTheme(&theme) 
-requestBody.SetDraftTimeOff(draftTimeOff)
+draftTimeOff := null
+requestBody.SetDraftTimeOff(&draftTimeOff) 
+isStagedForDeletion := false
+requestBody.SetIsStagedForDeletion(&isStagedForDeletion) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 timesOff, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimesOff().Post(context.Background(), requestBody, nil)

@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 11/25/2024
 ---
 
 # exchangeRestoreSession resource type
@@ -54,6 +55,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|A collection of restore points and destination details that can be used to restore Exchange mailboxes.|
+|mailboxRestoreArtifactsBulkAdditionRequests|[mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) collection|A collection of user mailboxes and destination details that can be used to restore Exchange mailboxes.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

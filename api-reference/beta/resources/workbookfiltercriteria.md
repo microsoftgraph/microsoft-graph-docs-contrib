@@ -29,6 +29,9 @@ Represents the filtering criteria applied to a column.
 | operator        | String                   | An operator in a cell; for example, `=`, `>`, `<`, `<=`, or `<>`.    |
 | values          | [Json](json.md)          | The values that appear in the cell.    |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

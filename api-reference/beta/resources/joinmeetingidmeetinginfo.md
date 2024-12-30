@@ -25,6 +25,9 @@ Inherits from [meetingInfo](../resources/meetinginfo.md).
 | joinMeetingId           | String  | The ID used to join the meeting.                              |
 | passcode                | String  | The passcode used to join the meeting. Optional.              |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

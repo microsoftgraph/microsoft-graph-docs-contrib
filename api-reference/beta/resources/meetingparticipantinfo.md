@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # meetingParticipantInfo resource type
@@ -38,6 +39,9 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 > [!TIP]
 >
 > To set the **presenter** role of a meeting attendee when creating or updating an [onlineMeeting](onlinemeeting.md), the value of **allowedPresenters** must also be set to `roleIsPresenter`.
+
+## Relationships
+None.
 
 ## JSON representation
 

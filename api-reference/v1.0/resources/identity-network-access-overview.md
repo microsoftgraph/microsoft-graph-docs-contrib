@@ -121,6 +121,12 @@ Microsoft Graph also provides the following identity and access capabilities for
 
 ---
 
+<!-- Start of: Link to ZT guidance: H2 section -->
+
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
+
 ## Licensing
 
 Microsoft Entra licenses include Microsoft Entra ID Free, P1, P2, and Governance; Microsoft Entra Permissions Management; and Microsoft Entra Workload ID.

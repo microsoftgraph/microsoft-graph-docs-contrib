@@ -60,6 +60,7 @@ If successful, this method returns a `204 No Content` response code and empty co
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_openshift",
@@ -85,6 +86,12 @@ Content-Type: application/json
   "isStagedForDeletion": false
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-openshift-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

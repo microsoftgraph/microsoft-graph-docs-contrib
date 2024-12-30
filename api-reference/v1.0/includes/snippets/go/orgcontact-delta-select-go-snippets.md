@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphcontacts.ContactsDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphcontacts.ContactsDeltaRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","jobTitle","mail"},
 }
-configuration := &graphcontacts.ContactsDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphcontacts.ContactsDeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

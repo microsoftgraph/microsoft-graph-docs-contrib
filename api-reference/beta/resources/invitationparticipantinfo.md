@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # invitationParticipantInfo resource type
@@ -25,6 +26,9 @@ Represents an entity that is being invited to a group call.
 | replacesCallId                     | String                        | Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully. |
 | removeFromDefaultAudioRoutingGroup | Boolean                       | Optional. Whether to remove them from the main mixer. |
 | hidden                             | Boolean                       | Optional. Whether to hide the participant from the roster. |
+
+## Relationships
+None.
 
 ## JSON representation
 

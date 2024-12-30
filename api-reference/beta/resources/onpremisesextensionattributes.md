@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: entra-users
 author: "yyuank"
 ms.reviewer: "iamut"
+ms.date: 10/02/2024
 ---
 
 # onPremisesExtensionAttributes resource type
@@ -41,7 +42,11 @@ The **extensionAttributes** property of the [device](device.md) entity is manage
 |extensionAttribute14|String| Fourteenth customizable extension attribute. |
 |extensionAttribute15|String| Fifteenth customizable extension attribute. |
 
+## Relationships
+None.
+
 ## JSON representation
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

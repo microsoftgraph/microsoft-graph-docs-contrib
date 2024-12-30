@@ -32,6 +32,9 @@ Base type of [meetingRegistrant](meetingregistrant.md) and [externalMeetingRegis
 | id         | String | The unique identifier of the registrant. Read-only.                 |
 | joinWebUrl | String | A unique web URL for the registrant to join the meeting. Read-only. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

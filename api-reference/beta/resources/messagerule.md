@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # messageRule resource type
@@ -43,6 +44,9 @@ and available rule conditions and exceptions are represented by the [messageRule
 | isReadOnly | Boolean | Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API. |
 | sequence | Int32 | Indicates the order in which the rule is executed, among other rules. |
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

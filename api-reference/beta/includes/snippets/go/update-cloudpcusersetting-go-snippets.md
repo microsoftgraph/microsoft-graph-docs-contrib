@@ -28,6 +28,26 @@ restorePointSetting.SetFrequencyType(&frequencyType)
 userRestoreEnabled := true
 restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled) 
 requestBody.SetRestorePointSetting(restorePointSetting)
+crossRegionDisasterRecoverySetting := graphmodels.NewCloudPcCrossRegionDisasterRecoverySetting()
+crossRegionDisasterRecoveryEnabled := false
+crossRegionDisasterRecoverySetting.SetCrossRegionDisasterRecoveryEnabled(&crossRegionDisasterRecoveryEnabled) 
+maintainCrossRegionRestorePointEnabled := true
+crossRegionDisasterRecoverySetting.SetMaintainCrossRegionRestorePointEnabled(&maintainCrossRegionRestorePointEnabled) 
+disasterRecoveryNetworkSetting := graphmodels.NewCloudPcDisasterRecoveryNetworkSetting()
+additionalData := map[string]interface{}{
+	"regionName" : "westus", 
+	"regionGroup" : "usEast", 
+}
+disasterRecoveryNetworkSetting.SetAdditionalData(additionalData)
+crossRegionDisasterRecoverySetting.SetDisasterRecoveryNetworkSetting(disasterRecoveryNetworkSetting)
+disasterRecoveryType := graphmodels.PREMIUM_CLOUDPCDISASTERRECOVERYTYPE 
+crossRegionDisasterRecoverySetting.SetDisasterRecoveryType(&disasterRecoveryType) 
+additionalData := map[string]interface{}{
+	userInitiatedDisasterRecoveryAllowed := true
+crossRegionDisasterRecoverySetting.SetUserInitiatedDisasterRecoveryAllowed(&userInitiatedDisasterRecoveryAllowed) 
+}
+crossRegionDisasterRecoverySetting.SetAdditionalData(additionalData)
+requestBody.SetCrossRegionDisasterRecoverySetting(crossRegionDisasterRecoverySetting)
 localAdminEnabled := false
 requestBody.SetLocalAdminEnabled(&localAdminEnabled) 
 resetEnabled := true

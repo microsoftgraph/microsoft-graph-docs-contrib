@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphchats.ChatItemPinnedMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ItemPinnedMessagesRequestBuilderGetQueryParameters{
 	Expand: [] string {"message"},
 }
-configuration := &graphchats.ChatItemPinnedMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ItemPinnedMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

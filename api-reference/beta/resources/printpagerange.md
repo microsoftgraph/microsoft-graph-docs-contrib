@@ -22,6 +22,9 @@ Specifies the range of pages to be printed.
 |startPage|Int32|The start page (inclusive) for the range. Read-only.|
 |endPage|Int32|The end page (inclusive) for the range. Read-only.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -5,6 +5,7 @@ author: "allisonAm"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 07/01/2024
 ---
 
 # configurationUri resource type
