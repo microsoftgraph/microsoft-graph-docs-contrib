@@ -38,9 +38,9 @@ The following reports are available through Microsoft Graph:
 
 The following reports are available on the `beta` endpoint only:
 
-- Users registered and capable of self-service password reset (SSPR) and Azure multifactor authentication (MFA). For more information, see the [credentialUserRegistrationCount resource type](../resources/credentialuserregistrationcount.md).
-- SSPR usage activity. For more information, see the [userCredentialUsageDetails resource type](../resources/usercredentialusagedetails.md).
-- Tenant-level summary of user SSPR activity, including failure and successes. For more information, see the [credentialUsageSummary resource type](../resources/credentialusagesummary.md).
+- Users registered and capable of self-service password reset (SSPR) and Azure multifactor authentication (MFA). For more information, see the [credentialUserRegistrationCount resource type](/graph/api/resources/credentialuserregistrationcount).
+- SSPR usage activity. For more information, see the [userCredentialUsageDetails resource type](/graph/api/resources/usercredentialusagedetails).
+- Tenant-level summary of user SSPR activity, including failure and successes. For more information, see the [credentialUsageSummary resource type](/graph/api/resources/credentialusagesummary.md).
 
 
 ## Related content
