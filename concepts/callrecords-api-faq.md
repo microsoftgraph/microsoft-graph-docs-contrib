@@ -92,6 +92,10 @@ You can use the following methods to list all attending call participants:
 
 You might not see all participants because the [List participants_v2](/graph/api/callrecords-callrecord-list-participants_v2) API supports pagination, limiting the number of participants in the response to 130 per page. If there were more than 130 users on the call, the first call record response contains 130 participants along with a `@odata.nextLink` property. This property includes the URL to call the API and receive the next set of participants. Continue this process until the next link is empty, which indicates that there are no more participants to retrieve.
 
+## Why are there duplicate sessions returned for one call record?
+
+A call record [session](/graph/api/resources/callrecords-session) uniquely represents a single user-user communication in peer-to-peer calls or a single user-service communication in a group call or meeting. However, in some calling scenarios a single user-service communication can involve multiple service identities without creating a new session, such as a virtual transfer between an auto-attendant and a call queue. In these scenarios a session ID may be duplicated one or more times in order to properly represent each identity involved in the communication and the respective communication duration.
+
 ## Why do I receive a 404 Not Found error?
 
 The following are some reasons why you might encounter a `404 Not Found` error:
