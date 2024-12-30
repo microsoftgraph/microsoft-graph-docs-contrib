@@ -11,7 +11,8 @@
       "name": "Groups",
       "overview": "../../resources/groups-overview.md",
       "resources": [
-        "group"
+        "group",
+        "groupLifecyclePolicy"
       ]
     },
     {
@@ -292,6 +293,12 @@
       ],
       "resources": [
         "subscription"
+      ],
+      "complexTypes": [
+        "changeNotificationCollection",
+        "changeNotification",
+        "changeNotificationEncryptedContent",
+        "resourceData"
       ]
     },
     {

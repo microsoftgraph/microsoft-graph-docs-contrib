@@ -28,6 +28,9 @@ Defines how values for the given target attribute should flow during synchroniza
 |source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | Defines how a value should be extracted (or transformed) from the source object. |
 |targetAttributeName        |String                     |Name of the attribute on the target object. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

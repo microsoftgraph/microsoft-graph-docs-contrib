@@ -23,6 +23,9 @@ format as well when the current known problem is fixed.
 |alias|string|An identifier for the time zone.|
 |displayName|string|A display string that represents the time zone.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

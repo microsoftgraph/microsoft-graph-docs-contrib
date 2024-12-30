@@ -24,6 +24,9 @@ A setting represented by a name/value pair.
 |name|string|Name of the setting (as defined by the directorySettingTemplate).|
 |value|string|Value of the setting.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

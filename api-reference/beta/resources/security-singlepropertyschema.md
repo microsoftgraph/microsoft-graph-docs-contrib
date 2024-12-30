@@ -22,6 +22,9 @@ The schema of one property in the results of running an [advanced hunting query]
 |name|String|The name of the property.|
 |type|String|The type of the property.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

@@ -31,6 +31,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of members added.|
 |visibleHistoryStartDateTime|DateTimeOffset|The timestamp denoting how far back a conversation's history is shared with the conversation members.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

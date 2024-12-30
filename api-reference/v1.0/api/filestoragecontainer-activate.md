@@ -19,7 +19,7 @@ A **fileStorageContainer** object is created in an inactive state, as indicated 
 A **fileStorageContainer** can be activated by calling the **activate** API, or any other API that updates or modifies the **fileStorageContainer** or its content. For example, uploading a file to a **fileStorageContainer**, adding permission to a **fileStorageContainer**, creating a custom property on a **fileStorageContainer**, or updating the properties of a **fileStorageContainer** can activate it.
 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
