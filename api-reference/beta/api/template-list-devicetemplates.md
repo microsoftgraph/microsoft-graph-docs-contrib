@@ -38,7 +38,7 @@ GET /directory/templates/deviceTemplates
 
 ## Optional query parameters
 
-This method supports the `$filter`, `$select`, and `$top` OData query parameters to help customize the response. Page size for `$top` results is between 1 and 999 inclusive. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$select`, and `$top` OData query parameters to help customize the response. The page size for `$top` results is between 1 and 999, inclusive. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

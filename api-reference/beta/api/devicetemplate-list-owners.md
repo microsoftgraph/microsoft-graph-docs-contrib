@@ -40,7 +40,7 @@ GET /directory/templates/deviceTemplates/{id}/owners
 
 ## Optional query parameters
 
-This method supports the `$select` and `$top` OData query parameters to help customize the response. Page size for `$top` results is between 1 and 999 inclusive. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$top` OData query parameters to help customize the response. The page size for `$top` results is between 1 and 999, inclusive. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -54,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryObject.md) objects in the response body, with the `@odata.type` property of each object in the collection indicating the directory object type. Only [service principals](../resources/serviceprincipal.md), [users](../resources/users.md), or [applications](../resources/application.md) can be owners of device templates.
+If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryObject.md) objects in the response body, with the **@odata.type** property of each object in the collection indicating the directory object type. Only [service principals](../resources/serviceprincipal.md), [users](../resources/users.md), or [applications](../resources/application.md) can be owners of device templates.
 
 For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
@@ -81,7 +81,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.servicePrincipal)"
+  "@odata.type": "Collection(microsoft.graph.directoryObject)"
 }
 -->
 ``` http
