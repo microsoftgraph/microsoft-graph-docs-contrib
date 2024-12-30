@@ -37,6 +37,9 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 | organizationExcludingGuests |  Only the participants from the same company are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

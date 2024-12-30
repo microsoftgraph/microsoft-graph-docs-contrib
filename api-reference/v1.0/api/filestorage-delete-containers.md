@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. This method moves the **fileStorageContainer**  to the recycle bin, instead of permanently deleting it.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

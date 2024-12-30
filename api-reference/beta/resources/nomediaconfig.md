@@ -22,6 +22,9 @@ Media configuration for indicating no media.
 |:---------------|:--------|:----------|
 | removeFromDefaultAudioGroup | Boolean |Remove media from the default audio group.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -25,6 +25,9 @@ Inherits from [identity](identity.md).
 | displayName | String | The display name associated with the phone number. Inherited from **identity**. |
 | id | String | The user's E.164 telephone number. Inherited from **identity**. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

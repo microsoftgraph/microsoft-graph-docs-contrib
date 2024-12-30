@@ -26,6 +26,9 @@ Represents an answer or answers to either a [virtualEventRegistrationCustomQuest
 |questionId|String|The identifier of either a [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) or a [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md).|
 |value|String|Text answer to the [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) or the [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md). Appears when **answerInputType** is `text`, `multilineText` or `singleChoice`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type

@@ -14,6 +14,7 @@ const team = {
    'template@odata.bind':'https://graph.microsoft.com/beta/teamsTemplates(\'standard\')',
    displayName: 'My Sample Team',
    description: 'My Sample Team’s Description',
+   firstChannelName: 'My First Channel of the sample team',
    members: [
       {
          '@odata.type':'#microsoft.graph.aadUserConversationMember',

@@ -38,6 +38,9 @@ Contains information associated with an attendance record in a [meetingAttendanc
 > [!TIP]
 > The **registrantId** property is deprecated and will stop returning data on **December 12, 2024**. There will be a new property replacing this by the end of 2024. For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/).
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

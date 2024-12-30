@@ -23,6 +23,9 @@ Defines custom behavior that a consuming service can use to call an app in speci
 |properties|[keyValue](keyvalue.md) collection|The collection of key-value pairs that define parameters that the consuming service can use or call. You must specify this property when performing a POST or a PATCH operation on the **addIns** collection. Required.|
 |type|string|The unique name for the functionality exposed by the app. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

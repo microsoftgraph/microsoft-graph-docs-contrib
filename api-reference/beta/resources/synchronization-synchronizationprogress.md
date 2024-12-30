@@ -27,6 +27,9 @@ Represents the progress of a [synchronizationJob](synchronization-synchronizatio
 
 <!-- The troubleshootingUrl property is missing a description -->
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
