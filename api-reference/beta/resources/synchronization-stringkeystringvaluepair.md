@@ -22,6 +22,9 @@ Represents a key-value pair where the key is a string and the value is a string.
 |key|String|Key.|
 |value|String|Value.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

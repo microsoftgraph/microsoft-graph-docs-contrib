@@ -56,6 +56,9 @@ For more information about risk detection, see [Microsoft Entra ID Protection](/
 |userPrincipalName|string|The user principal name (UPN) of the user. |
 |riskType (deprecated)|riskEventType|List of risk event types.<br />**Note:** This property is deprecated. Use **riskEventType** instead. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

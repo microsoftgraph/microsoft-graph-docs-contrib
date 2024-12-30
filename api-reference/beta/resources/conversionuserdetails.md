@@ -26,6 +26,9 @@ Represents information that the API returns after a user is [converted from exte
 |mail|String|The SMTP address for the user.|
 |userPrincipalName|String|The user principal name (UPN) of the user.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

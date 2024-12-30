@@ -22,6 +22,9 @@ Represents the reason why a [participant](participant.md) resource was removed f
 |:---------|:-------|:-------------------------------------|
 | reason   | String | The removal reason for the **participant** resource. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

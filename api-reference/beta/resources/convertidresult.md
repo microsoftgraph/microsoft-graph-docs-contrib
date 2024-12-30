@@ -24,6 +24,9 @@ The result of an ID format conversion performed by the [translateExchangeIds](..
 | targetId | String | The converted identifier. This value isn't present if the conversion failed. |
 | errorDetails | [genericError](genericerror.md) | An error object indicating the reason for the conversion failure. This value isn't present if the conversion succeeded. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

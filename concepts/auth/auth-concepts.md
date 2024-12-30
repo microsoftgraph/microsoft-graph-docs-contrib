@@ -16,7 +16,7 @@ ms.date: 12/19/2024
 
 Microsoft Graph is a protected API gateway for accessing data in Microsoft cloud services like Microsoft Entra ID and Microsoft 365. It's protected by the [Microsoft identity platform](/entra/identity-platform/v2-overview), which authorizes and verifies that an app is authorized to call Microsoft Graph.
 
-This article provides an overview of the requirements for an app to be authorized to access data via any Microsoft Graph API. If you're already familiar with how authentication and authorization works, explore [code samples](/entra/identity-platform/sample-v2-code) for apps that call Microsoft Graph APIs.
+This article provides an overview of the requirements for an app to be authorized to access data via any Microsoft Graph API. If you're already familiar with how authentication and authorization works, explore [Microsoft identity platform code samples](/entra/identity-platform/sample-v2-code) or [Microsoft Graph tutorials](/graph/tutorials) for apps that are built using different Microsoft Graph SDKs and that call Microsoft Graph APIs.
 
 ## Register the application
 
@@ -132,3 +132,4 @@ You can alternatively use the Microsoft identity platform endpoints directly wit
 
 - [Microsoft identity platform documentation](/entra/identity-platform/)
 - [Overview of Microsoft Graph permissions](/graph/permissions-overview)
+- [Microsoft Graph tutorials](/graph/tutorials)
