@@ -53,3 +53,7 @@ Here are popular requests for working with report data:
 ## License requirements
 
 Activity reports are available for features that you've licensed. If you have a license for a specific feature, you also have access to the reports. For more information about license requirements for the different activity reports, see [Microsoft Entra audit logs: License and role requirements](/entra/identity/monitoring-health/concept-audit-logs#license-and-role-requirements).
+
+## Related content
+
+- [Microsoft Entra audit logs](/entra/identity/monitoring-health/concept-audit-logs)
