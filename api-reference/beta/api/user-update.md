@@ -6,7 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
-ms.date: 10/02/2024
+ms.date: 12/23/2024
 ---
 
 # Update user
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Update the properties of a [user](../resources/user.md) object.
 
 - Not all properties can be updated by Member or Guest users with their default permissions without administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions) to see properties they can manage.
-- Customers through Microsoft Entra ID for customers can also use this API operation to update their details. See [Default user permissions in customer tenants](../resources/users.md#default-user-permissions-in-customer-tenants) for the list of properties they can update.
+- Customers through Microsoft Entra ID for customers can also use this API operation to update their details. See [Default user permissions in external tenants](../resources/users.md#default-user-permissions-in-external-tenants) for the list of properties they can update.
 - For synced users, the ability to update certain properties is additionally determined by the source of authority and whether synchronization is enabled.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -29,18 +29,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "user_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-update-permissions.md)]
 
->[!NOTE]
-> - To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privileged administrator roles:
->   - In delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
->   - In app-only scenarios, the app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
-> - Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
-> - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
-> - To update the **employeeLeaveDateTime** property:
->   - In delegated scenarios, the admin needs the *Global Administrator* role; the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* delegated permissions.
->   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* permissions. 
-> - To update the **customSecurityAttributes** property:
->   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
->   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+### Permissions for specific scenarios
+- Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
+- To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privileged administrator roles:
+  - In delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission and the signed-in user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+  - In app-only scenarios in addition to Microsoft Graph permissions, the app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+- To update the **employeeLeaveDateTime** property:
+  - In delegated scenarios, the admin needs the *Global Administrator* role; the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* delegated permissions.
+  - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* permissions. 
+- To update the **customSecurityAttributes** property:
+  - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+  - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+- *User-Mail.ReadWrite.All* is the least privileged permission to update the **otherMails** property.
+- *User-PasswordProfile.ReadWrite.All* is the least privileged permission to update the **passwordProfile** property.
+- *User-Phone.ReadWrite.All* is the least privileged permission to update the **businessPhones** and **mobilePhone** properties.
+- *User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions to update the **accountEnabled** property.
+- *User.ManageIdentities.All* is *required* to update the **identities** property.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -60,11 +64,11 @@ PATCH /users/{id | userPrincipalName}
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
-|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. This property is required when a user is created. A Privileged Authentication Administrator assigned the _Directory.AccessAsUser.All_ delegated permission is the least privileged role that's allowed to update the **accountEnabled** status of all administrators in the tenant.|
+|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. This property is required when a user is created. <br/><li>*User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions required to update this property. <li> In delegated scenarios, *Privileged Authentication Administrator* is the least privileged role that's allowed to update this property for all administrators in the tenant. |
 | ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Sets the age group of the user. Allowed values: `null`, `Minor`, `NotAdult` and `Adult`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|businessPhones| String collection | The telephone numbers for the user. **NOTE:** Although this is a string collection, only one number can be set for this property.|
+|businessPhones| String collection | The telephone numbers for the user. **NOTE:** Although this is a string collection, only one number can be set for this property. *User-Phone.ReadWrite.All* is the least privileged permission to update this property.|
 |city|String|The city in which the user is located.|
 | companyName | String | The name of the company that the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length is 64 characters. |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Sets whether consent has been obtained for minors. Allowed values: `null`, `Granted`, `Denied`, and `NotRequired`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
@@ -76,21 +80,21 @@ PATCH /users/{id | userPrincipalName}
 | employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`.|
 |givenName|String|The given name (first name) of the user.|
 |employeeHireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|employeeLeaveDateTime|DateTimeOffset|The date and time when the user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br><br> For delegated scenarios, the calling user must have the *Global Administrator* role and the calling app assigned the _User.Read.All_ and _User-LifeCycleInfo.ReadWrite.All_ delegated permissions. |
+|employeeLeaveDateTime|DateTimeOffset|The date and time when the user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br><li> To update this property, the calling app must be assigned the *User-LifeCycleInfo.Read.All* and *User.Read.All* permissions. <li> To update this property in delegated scenarios, the admin needs the Global Administrator role. |
 |employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md) |Represents organization data (for example, division and costCenter) associated with a user. |
-|identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** replaces the entire collection and you must supply the userPrincipalName **signInType** identity in the collection.|
+|identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** replaces the entire collection and you must supply the userPrincipalName **signInType** identity in the collection. <br/><br/> **NOTE:** Adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object isn't allowed, unless the **user** object already contains a local account identity.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user's job title.|
 |mail|String|The SMTP address for the user, for example, `jeff@contoso.com`. For Azure AD B2C accounts, this property can be updated up to only 10 times with unique SMTP addresses. Changes to this property also updates the user's **proxyAddresses** collection to include the value as an SMTP address. Can't be updated to `null`.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
-|mobilePhone|String|The primary cellular telephone number for the user.|
+|mobilePhone|String|The primary cellular telephone number for the user. *User-Phone.ReadWrite.All* is the least privileged permission to update this property.|
 |mySite|String|The URL for the user's personal site.|
 |officeLocation|String|The office location in the user's place of business.|
 | onPremisesExtensionAttributes | [onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md) | Contains extensionAttributes 1-15 for the user. The individual extension attributes aren't selectable or filterable. For an `onPremisesSyncEnabled` user, the source of authority for this set of properties is the on-premises and is read-only. These extension attributes are also known as Exchange custom attributes 1-15.|
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Microsoft Entra user object. This property must be specified when creating a new user account in the Graph if you're using a federated domain for the user's **userPrincipalName** (UPN) property. **Important:** The **$** and **_** characters can't be used when specifying this property.                            |
-|otherMails|String collection|A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
+|otherMails|String collection|A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. To update this property, pass in all the email addresses that you want the user to have; otherwise, existing values get overwritten by the values you specify. <br/><br/> *User-Mail.ReadWrite.All* is the least privileged permission to update this property.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being `DisableStrongPassword`, which allows weaker passwords than the default policy to be specified. `DisablePasswordExpiration` can also be specified. The two can be specified together; for example: `DisablePasswordExpiration, DisableStrongPassword`.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Specifies the password profile for the user. The profile contains the user's password. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. As a best practice, always set the **forceChangePasswordNextSignIn** to `true`. This can't be used for federated users. <br><li> In delegated access, the calling app must be assigned the *Directory.AccessAsUser.All* delegated permission on behalf of the signed-in user. <li> In application-only access, the calling app must be assigned the *User.ReadWrite.All* (least privilege) or *Directory.ReadWrite.All* (higher privilege) application permission *and* at least the *User Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Specifies the password profile for the user. The profile contains the user's password. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. As a best practice, always set the **forceChangePasswordNextSignIn** to `true`. This can't be used for federated users. <br><li> *User-PasswordProfile.ReadWrite.All*is the least privileged permission to update this property. <li> In delegated scenarios, the *User Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) is the least privileged admin role supported to update this property.|
 |pastProjects|String collection|A list for the user to enumerate their past projects.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example, `en-US`.|

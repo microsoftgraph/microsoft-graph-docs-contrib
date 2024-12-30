@@ -30,6 +30,9 @@ Contains the public part of a signing certificate. It's the return type of the a
 | key                 | Binary         | The value for the key credential. Should be a base-64 encoded value.                                                                                                                                                                  |
 | thumbprint          | String         | The thumbprint value for the key.                                                                                                                                                                                                     |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

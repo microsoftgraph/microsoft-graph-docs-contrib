@@ -47,6 +47,9 @@ When a search folder is deleted, your app should create a new search folder reso
 | sourceFolderIds | String collection | The mailbox folders that should be mined. |
 | filterQuery | String | The OData query to filter the messages. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -22,6 +22,9 @@ An abstract base class that contains the media configuration used to connect to 
 |:---------------|:--------|:----------|
 | removeFromDefaultAudioGroup | Boolean |Remove media from the default audio group.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

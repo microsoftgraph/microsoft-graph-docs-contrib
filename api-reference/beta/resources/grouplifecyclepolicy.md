@@ -20,17 +20,20 @@ Represents a lifecycle policy for a Microsoft 365 group. A group lifecycle polic
 - Once renewed, the group expiration is extended by the number of days defined in the policy and the group's **expirationDateTime** property defines the new expiration date.
 - If the group is not renewed, it expires and is deleted. The group can be restored within a period of 30 days from deletion.
 
+For more information, see [Manage the lifecycle of Microsoft 365 groups in your tenant](/entra/identity/users/groups-lifecycle).
+
 ## Methods
 
-| Method                                                                                   | Return Type                                                | Description                                                         |
-| :--------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------ |
-| [Get policy](../api/grouplifecyclepolicy-get.md)                           | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Read properties and relationships of a groupLifecyclePolicy object. |
-| [List policies](../api/grouplifecyclepolicy-list.md)                       | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies.                                |
-| [Update policy](../api/grouplifecyclepolicy-update.md)                     | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Update a groupLifecyclePolicy object.                               |
-| [Delete policy](../api/grouplifecyclepolicy-delete.md)                     | None                                                       | Delete a groupLifecyclePolicy object.                               |
-| [Add group](../api/grouplifecyclepolicy-addgroup.md)         | None                                                       | Add a group to a lifecycle policy                                   |
-| [Remove group](../api/grouplifecyclepolicy-removegroup.md) | None                                                       | Remove a group to a lifecycle policy.                               |
-| [Renew group](../api/grouplifecyclepolicy-renewgroup.md)                               | None                                                       | Renew a group's expiration date.                                    |
+| Method | Return Type | Description |
+|:-|:-|:-|
+| [List](../api/grouplifecyclepolicy-list.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies. Only one policy exists in a tenant. |
+| [Create](../api/grouplifecyclepolicy-post-grouplifecyclepolicies.md) | [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) | Create a new groupLifecyclePolicy object. |
+| [Get](../api/grouplifecyclepolicy-get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) | Read properties and relationships of a groupLifecyclePolicy object. |
+| [Update](../api/grouplifecyclepolicy-update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) | Update a groupLifecyclePolicy object. |
+| [Delete](../api/grouplifecyclepolicy-delete.md) | None | Delete a groupLifecyclePolicy object. |
+| [Add group](../api/grouplifecyclepolicy-addgroup.md) | None | Add a group to a lifecycle policy |
+| [Remove group](../api/grouplifecyclepolicy-removegroup.md) | None | Remove a group from a lifecycle policy. |
+| [Renew group](../api/grouplifecyclepolicy-renewgroup.md) | None | Renew a group's expiration date. |
 
 ## Properties
 

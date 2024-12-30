@@ -29,6 +29,9 @@ The recipients resource has these properties.
 | alias    | String | The alias of the domain object, for cases where an email address is unavailable (e.g. security groups). |
 | objectId | String | The unique identifier for the recipient in the directory.                                               |
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

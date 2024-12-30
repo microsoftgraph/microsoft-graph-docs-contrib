@@ -22,6 +22,9 @@ List of notifications used by the Communications servers for sending multiple no
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
 | value          | [commsNotification](commsnotification.md) collection | The notification of a change in the resource. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

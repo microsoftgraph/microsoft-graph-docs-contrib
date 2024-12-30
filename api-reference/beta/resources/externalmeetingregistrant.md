@@ -39,6 +39,9 @@ Inherits from [meetingRegistrantBase](../resources/meetingregistrantbase.md).
 | tenantId   | String | The tenant ID of this registrant if in Microsoft Entra ID.               |
 | userId     | String | The user ID of this registrant if in Microsoft Entra ID.                 |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

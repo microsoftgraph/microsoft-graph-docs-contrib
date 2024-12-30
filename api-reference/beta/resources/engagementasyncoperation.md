@@ -46,6 +46,9 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 | createCommunity | Operation to create a Viva Engage community. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

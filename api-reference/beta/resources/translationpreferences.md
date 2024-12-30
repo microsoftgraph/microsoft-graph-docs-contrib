@@ -33,6 +33,9 @@ Represents an entry in a user's translation language override list.
 
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following is a JSON definition of the resource.
