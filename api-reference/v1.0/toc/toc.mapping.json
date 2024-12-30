@@ -1319,7 +1319,7 @@
                   ]
                 },
                 {
-                  "name": "Registration and usage",
+                  "name": "Authentication methods registration and usage",
                   "overview": "../../resources/authenticationmethods-usage-insights-overview.md",
                   "resources": [
                     "userRegistrationDetails",
