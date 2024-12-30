@@ -40,7 +40,7 @@ The following reports are available on the `beta` endpoint only:
 
 - Users registered and capable of self-service password reset (SSPR) and Azure multifactor authentication (MFA). For more information, see the [credentialUserRegistrationCount resource type](/graph/api/resources/credentialuserregistrationcount).
 - SSPR usage activity. For more information, see the [userCredentialUsageDetails resource type](/graph/api/resources/usercredentialusagedetails).
-- Tenant-level summary of user SSPR activity, including failure and successes. For more information, see the [credentialUsageSummary resource type](/graph/api/resources/credentialusagesummary.md).
+- Tenant-level summary of user SSPR activity, including failure and successes. For more information, see the [credentialUsageSummary resource type](/graph/api/resources/credentialusagesummary).
 
 
 ## Related content
