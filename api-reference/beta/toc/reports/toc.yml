@@ -4,6 +4,8 @@
 items:
 - name: Identity and access reports
   items:
+  - name: Overview
+    href: ../../resources/report-identity-access.md
   - name: Microsoft Entra recommendations (preview)
     items:
     - name: Overview
@@ -44,8 +46,6 @@ items:
         href: ../../api/impactedresource-reactivate.md
   - name: Microsoft Entra activity reports
     items:
-    - name: Overview
-      href: ../../resources/report-identity-access.md
     - name: AD FS application activity
       items:
       - name: Relying party detailed summary
@@ -138,6 +138,54 @@ items:
           href: ../../api/dailyuserinsightmetricsroot-list-signups.md
         - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
+    - name: Authentication methods registration and usage
+      items:
+      - name: Overview
+        href: ../../resources/authenticationmethods-usage-insights-overview.md
+      - name: Credential usage summary
+        items:
+        - name: Credential usage summary
+          href: ../../resources/credentialusagesummary.md
+        - name: List
+          href: ../../api/reportroot-getcredentialusagesummary.md
+      - name: Credential user registration count
+        items:
+        - name: Credential user registration count
+          href: ../../resources/credentialuserregistrationcount.md
+        - name: Get
+          href: ../../api/reportroot-getcredentialuserregistrationcount.md
+      - name: Credential user registration details (deprecated)
+        items:
+        - name: Credential user registration details (deprecated)
+          href: ../../resources/credentialuserregistrationdetails.md
+        - name: List
+          href: ../../api/reportroot-list-credentialuserregistrationdetails.md
+      - name: User credential usage details
+        items:
+        - name: User credential usage details
+          href: ../../resources/usercredentialusagedetails.md
+        - name: List
+          href: ../../api/reportroot-list-usercredentialusagedetails.md
+      - name: User registration details
+        items:
+        - name: User registration details
+          href: ../../resources/userregistrationdetails.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-list-userregistrationdetails.md
+        - name: Get
+          href: ../../api/userregistrationdetails-get.md
+      - name: User registration feature summary
+        items:
+        - name: User registration feature summary
+          href: ../../resources/userregistrationfeaturesummary.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-usersregisteredbyfeature.md
+      - name: User registration method summary
+        items:
+        - name: User registration method summary
+          href: ../../resources/userregistrationmethodsummary.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
     - name: Microsoft Entra Health (preview)
       items:
       - name: SLA attainment
@@ -234,54 +282,6 @@ items:
             href: ../../api/healthmonitoring-alertconfiguration-get.md
           - name: Update
             href: ../../api/healthmonitoring-alertconfiguration-update.md
-    - name: Registration and usage
-      items:
-      - name: Overview
-        href: ../../resources/authenticationmethods-usage-insights-overview.md
-      - name: Credential usage summary
-        items:
-        - name: Credential usage summary
-          href: ../../resources/credentialusagesummary.md
-        - name: List
-          href: ../../api/reportroot-getcredentialusagesummary.md
-      - name: Credential user registration count
-        items:
-        - name: Credential user registration count
-          href: ../../resources/credentialuserregistrationcount.md
-        - name: Get
-          href: ../../api/reportroot-getcredentialuserregistrationcount.md
-      - name: Credential user registration details
-        items:
-        - name: Credential user registration details
-          href: ../../resources/credentialuserregistrationdetails.md
-        - name: List
-          href: ../../api/reportroot-list-credentialuserregistrationdetails.md
-      - name: User credential usage details
-        items:
-        - name: User credential usage details
-          href: ../../resources/usercredentialusagedetails.md
-        - name: List
-          href: ../../api/reportroot-list-usercredentialusagedetails.md
-      - name: User registration details
-        items:
-        - name: User registration details
-          href: ../../resources/userregistrationdetails.md
-        - name: List
-          href: ../../api/authenticationmethodsroot-list-userregistrationdetails.md
-        - name: Get
-          href: ../../api/userregistrationdetails-get.md
-      - name: User registration feature summary
-        items:
-        - name: User registration feature summary
-          href: ../../resources/userregistrationfeaturesummary.md
-        - name: List
-          href: ../../api/authenticationmethodsroot-usersregisteredbyfeature.md
-      - name: User registration method summary
-        items:
-        - name: User registration method summary
-          href: ../../resources/userregistrationmethodsummary.md
-        - name: List
-          href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
     - name: Service principal sign in activity
       items:
       - name: Service principal sign in activity
