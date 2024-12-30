@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "outlook"
 author: "SuryaLashmiS"
+ms.date: 09/19/2024
 ---
 
 # workingHours resource type
@@ -34,6 +35,9 @@ appropriate time zone.
 | startTime | Edm.TimeOfDay | The time of the day that the user starts working. |
 | endTime | Edm.TimeOfDay | The time of the day that the user stops working. |
 | timeZone | [timeZoneBase](timezonebase.md) | The time zone to which the working hours apply. |
+
+## Relationships
+None.
 
 ## JSON representation
 

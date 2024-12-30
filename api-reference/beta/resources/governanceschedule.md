@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
+ms.date: 03/21/2024
 ---
 
 # governanceSchedule resource type
@@ -27,6 +28,9 @@ Represents the schedule for a [governanceRoleAssignmentRequest](../resources/gov
 |endDateTime|DateTimeOffset|The end time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. *Note: if the value is `null`, it indicates a permanent assignment.*|
 |type|String|The role assignment schedule type. Only `Once` is supported for now.
 |duration|Duration|The duration of a role assignment. It is in format of a TimeSpan.|
+
+## Relationships
+None.
 
 ## JSON representation
 

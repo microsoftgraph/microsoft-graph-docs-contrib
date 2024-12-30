@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Identity sync policy template
+ms.date: 05/23/2024
 ---
 
 # multiTenantOrganizationIdentitySyncPolicyTemplate resource type

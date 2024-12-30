@@ -11,7 +11,8 @@
       "name": "Groups",
       "overview": "../../resources/groups-overview.md",
       "resources": [
-        "group"
+        "group",
+        "groupLifecyclePolicy"
       ]
     },
     {
@@ -234,6 +235,12 @@
       "overview": "../../resources/change-notifications-api-overview.md",
       "resources": [
         "subscription"
+      ],
+      "complexTypes": [
+        "changeNotificationCollection",
+        "changeNotification",
+        "changeNotificationEncryptedContent",
+        "resourceData"
       ]
     },
     {
@@ -596,7 +603,9 @@
         "bundle",
         "permission",
         "fileStorageContainer",
-        "sharedDriveItem"
+        "sharedDriveItem",
+        "recycleBin",
+        "recycleBinItem"
       ]
     },
     {
@@ -1458,6 +1467,7 @@
         },
         {
           "name": "eDiscovery",
+          "overview": "../../resources/security-ediscovery-apioverview.md",
           "resources": [
             "microsoft.graph.security.ediscoveryCase",
             "microsoft.graph.security.ediscoveryCaseSettings",
@@ -1887,7 +1897,6 @@
             "workingTimeSchedule"
           ],
           "complexTypes": [
-            "changeTrackedEntity",
             "identity",
             "identitySet",
             "openShiftItem",

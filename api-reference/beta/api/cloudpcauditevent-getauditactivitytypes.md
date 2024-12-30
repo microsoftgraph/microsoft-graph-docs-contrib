@@ -5,6 +5,7 @@ author: "ecmadao"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # cloudPcAuditEvent: getAuditActivityTypes

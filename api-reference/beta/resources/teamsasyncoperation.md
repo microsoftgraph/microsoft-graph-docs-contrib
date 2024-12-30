@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/16/2024
 ---
 
 # teamsAsyncOperation resource type
@@ -41,6 +42,9 @@ When the request completes successfully, the status will be "succeeded" and the 
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
 |targetResourceId|String |The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).|
 |targetResourceLocation|string|The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -13,6 +13,7 @@ from msgraph_beta.generated.models.aad_user_conversation_member import AadUserCo
 request_body = Team(
 	display_name = "My Sample Team",
 	description = "My Sample Team’s Description",
+	first_channel_name = "My First Channel of the sample team",
 	members = [
 		AadUserConversationMember(
 			odata_type = "#microsoft.graph.aadUserConversationMember",

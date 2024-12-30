@@ -24,6 +24,9 @@ Specifies the index of the URLs where user tokens are sent for sign-in. This is 
 |index|Int32|Identifies the specific URI within the redirectURIs collection in SAML SSO flows. Defaults to `null`. The index is unique across all the redirectUris for the application.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

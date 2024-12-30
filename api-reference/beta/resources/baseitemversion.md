@@ -5,6 +5,7 @@ title: "baseItemVersion resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 04/22/2024
 ---
 
 # baseItemVersion resource type
@@ -23,6 +24,9 @@ Represents a previous version of an item or entity.
 | lastModifiedBy       | [identitySet](../resources/identityset.md)           | Identity of the user that last modified the version. Read-only.        |
 | lastModifiedDateTime | [dateTimeOffset](../resources/timestamp.md)          | Date and time when the version was last modified. Read-only.                 |
 | publication          | [publicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
+
+## Relationships
+None.
 
 ## JSON representation
 

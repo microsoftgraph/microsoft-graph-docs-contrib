@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "frank-masuelli"
+ms.date: 03/21/2024
 ---
 
 # assignedPlan resource type
@@ -37,6 +38,9 @@ The following table describes the possible statuses for the **capabilityStatus**
 | Suspended | Unavailable for assignment but any data associated with the capability must be preserved. |
 | LockedOut | Unavailable for all administrators and users for assignment but any data associated with the capability must be preserved. This is the state after `Suspended` and if the license isn't renewed, it is the final state before the plan is `Deleted`. |
 | Deleted | Unavailable and any data associated with the capability may be deleted. |
+
+## Relationships
+None.
 
 ## JSON representation
 

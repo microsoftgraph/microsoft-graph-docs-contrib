@@ -1,12 +1,13 @@
 ---
 title: "sharePointRestoreSession resource type"
-description: "Represents restore-related tasks on artifacts that are protected by an SharePoint protection policy."
+description: "Represents restore-related tasks on artifacts that are protected by a SharePoint protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: SharePoint restore session
+ms.date: 11/25/2024
 ---
 
 # sharePointRestoreSession resource type
@@ -38,7 +39,9 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restore session fails or is completed with error.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of restore artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|restoreJobType|[restoreJobType](../resources/enums.md#restorejobtype-values)|Indicates whether the restore session was created normally or by a bulk job.|
+|restoreSessionArtifactCount|[restoreSessionArtifactCount](../resources/restoresessionartifactcount.md)|The number of metadata artifacts that belong to this restore session.|
+|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of restore artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
 ### restoreSessionStatus values
 
@@ -50,13 +53,14 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |completedWithError|Some artifacts failed to restore, and some succeeded.|
 |completed| All restore artifacts successfully restored.|
 |failed| All restore artifacts failed to restore.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|A collection of restore points and destination details that can be used to restore SharePoint sites.|
+|siteRestoreArtifactsBulkAdditionRequests|[siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) collection|A collection of SharePoint site URLs and destination details that can be used to restore SharePoint sites.|
 
 ## JSON representation
 
@@ -74,6 +78,10 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.sharePointRestoreSession",
   "id": "String (identifier)",
   "status": "String",
+  "restoreJobType": "String",
+  "restoreSessionArtifactCount": {
+    "@odata.type": "microsoft.graph.restoreSessionArtifactCount"
+  },
   "createdDateTime": "String (timestamp)",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"

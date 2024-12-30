@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "arpitha-dhanapathi"
+ms.date: 03/21/2024
 ---
 
 # certification resource type
@@ -25,6 +26,9 @@ The certification property of an application is read-only, and can't be manually
 |isCertifiedByMicrosoft|Boolean|Indicates whether the application is certified by Microsoft.|
 |isPublisherAttested|Boolean|Indicates whether the application has been self-attested by the application developer or the publisher.|
 |lastCertificationDateTime|DateTimeOffset|The timestamp when the certification for the application was most recently added or updated.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

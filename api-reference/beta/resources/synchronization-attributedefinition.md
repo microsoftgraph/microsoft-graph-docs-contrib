@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # attributeDefinition resource type
@@ -30,6 +31,9 @@ Describes an attribute of an object.
 |required       |Boolean    |`true` if attribute is required. Object can not be created if any of the required attributes are missing. If during synchronization, the required attribute has no value, the default value will be used. If default the value was not set, synchronization will record an error.|
 |referencedObjects|[referencedObject](../resources/synchronization-referencedobject.md) collection |For attributes with `reference` type, lists referenced objects (for example, the `manager` attribute would list `User` as the referenced object).|
 |type           |attributeType     |Attribute value type. Possible values are: `String`, `Integer`, `Reference`, `Binary`, `Boolean`,`DateTime`. Default is `String`.|
+
+## Relationships
+None.
 
 ## JSON representation
 

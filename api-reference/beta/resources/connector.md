@@ -5,7 +5,7 @@ author: "dhruvinrshah"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
-ms.date: 05/23/2024
+ms.date: 12/19/2024
 ---
 
 # connector resource type
@@ -33,10 +33,10 @@ Represents an Application Proxy connector. Connectors are lightweight agents tha
 |id|String| The unique identifier of the connector. Read-only. |
 |machineName|String| The name of the computer on which the connector is installed and runs on. |
 |status|connectorStatus| Indicates the status of the connector. The possible values are: `active`, `inactive`. Read-only. |
-|version|String|The version of the connector.|
+|version|String|The version of the connector. Read-only.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |memberOf|[connectorGroup](connectorgroup.md) collection| The **connectorGroup** that the connector is a member of. Read-only. |
 
