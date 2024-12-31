@@ -1490,6 +1490,25 @@
               ]
             },
             {
+              "name": "Authentication methods policy",
+              "overview": "../../resources/authenticationmethodspolicies-overview.md",
+              "shouldSort": true,
+              "resources": [
+                "authenticationMethodsPolicy",
+                "emailAuthenticationMethodConfiguration",
+                "externalAuthenticationMethodConfiguration",
+                "fido2AuthenticationMethodConfiguration",
+                "hardwareOathAuthenticationMethodConfiguration",
+                "hardwareOathTokenAuthenticationMethodDevice",
+                "microsoftAuthenticatorAuthenticationMethodConfiguration",
+                "smsAuthenticationMethodConfiguration",
+                "temporaryAccessPassAuthenticationMethodConfiguration",
+                "softwareOathAuthenticationMethodConfiguration",
+                "voiceAuthenticationMethodConfiguration",
+                "x509CertificateAuthenticationMethodConfiguration"
+              ]
+            },
+            {
               "name": "Authentication strengths",
               "overview": "../../resources/authenticationstrengths-overview.md",
               "resources": [
@@ -1652,27 +1671,6 @@
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
                 "deviceRegistrationPolicy"
-              ],
-              "childNodes": [
-                {
-                  "name": "Authentication methods policy",
-                  "overview": "../../resources/authenticationmethodspolicies-overview.md",
-                  "shouldSort": true,
-                  "resources": [
-                    "authenticationMethodsPolicy",
-                    "emailAuthenticationMethodConfiguration",
-                    "externalAuthenticationMethodConfiguration",
-                    "fido2AuthenticationMethodConfiguration",
-                    "hardwareOathAuthenticationMethodConfiguration",
-                    "hardwareOathTokenAuthenticationMethodDevice",
-                    "microsoftAuthenticatorAuthenticationMethodConfiguration",
-                    "smsAuthenticationMethodConfiguration",
-                    "temporaryAccessPassAuthenticationMethodConfiguration",
-                    "softwareOathAuthenticationMethodConfiguration",
-                    "voiceAuthenticationMethodConfiguration",
-                    "x509CertificateAuthenticationMethodConfiguration"
-                  ]
-                }
               ]
             },
             {
