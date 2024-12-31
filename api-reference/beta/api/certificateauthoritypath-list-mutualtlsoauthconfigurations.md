@@ -2,7 +2,7 @@
 title: "List mutualTlsOauthConfigurations"
 description: "Get a list of the available mutualTlsOauthConfiguration resources."
 author: "sofia-geislinger"
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType

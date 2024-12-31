@@ -5,7 +5,7 @@ author: "ploegert"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ---
 
 # Add deviceTemplate owner
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a new owner to a [deviceTemplate](../resources/devicetemplate.md) object. Owners are granted permissions to enable or disable devices and update properties, such as **alternativeNames**, for the devices created from these device templates. As an owner, no other administrator roles are necessary to create, update, or delete devices from this template, as well as to add or remove template owners. Owners added via this API are returned in a [list device owners](../api/devicetemplate-list-owners.md) request. 
+Add a new owner to a [deviceTemplate](../resources/devicetemplate.md) object. Owners are granted permissions to enable or disable devices and update properties, such as **alternativeNames**, for the devices created from the device template. As an owner, no other administrator roles are necessary to create, update, or delete devices from this template, as well as to add or remove template owners. Owners added via this API are returned in a [list device owners](../api/devicetemplate-list-owners.md) request. 
 
 ## Permissions
 
@@ -28,7 +28,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/devicetemplate-post-owners-permissions.md)]
 
 [!INCLUDE [rbac-devicestemplate-apis](../includes/rbac-for-apis/rbac-devicetemplate-apis.md)]
-> **Note:** Users must be owner of the object.
 
 ## HTTP request
 

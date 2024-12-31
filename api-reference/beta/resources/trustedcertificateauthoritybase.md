@@ -3,7 +3,7 @@ title: "trustedCertificateAuthorityBase resource type"
 description: "An abstract type that represents a list of certificate authorities (CAs) that are permitted to issue certificates for authentication."
 author: "atastrophic"
 ms.localizationpriority: medium
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ms.subservice: "entra-id"
 doc_type: resourcePageType
 ---

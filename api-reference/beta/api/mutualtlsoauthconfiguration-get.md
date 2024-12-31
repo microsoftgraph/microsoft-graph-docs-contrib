@@ -5,7 +5,7 @@ author: "atastrophic"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ---
 
 # Get mutualTlsOauthConfiguration
@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
->**Note:** The `{mutualTlsOauthConfigurationId}` in the request URL is the value of the **id** property of the **deviceTemplate**.
+>**Note:** The `{mutualTlsOauthConfigurationId}` in the request URL is the value of the **id** property of the [deviceTemplate](../resources/devicetemplate.md).
 
 ## Optional query parameters
 

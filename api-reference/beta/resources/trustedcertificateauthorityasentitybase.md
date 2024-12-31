@@ -3,7 +3,7 @@ title: "trustedCertificateAuthorityAsEntityBase resource type"
 description: "An abstract base type that represents the trusted certificate authority types for the tenant."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---

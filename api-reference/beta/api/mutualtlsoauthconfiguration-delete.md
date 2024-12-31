@@ -2,7 +2,7 @@
 title: "Delete mutualTlsOauthConfiguration"
 description: "Delete the specified mutualTlsOauthConfiguration resource."
 author: "sofia-geislinger"
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType

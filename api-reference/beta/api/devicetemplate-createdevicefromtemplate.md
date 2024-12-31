@@ -2,7 +2,7 @@
 title: "deviceTemplate: createDeviceFromTemplate"
 description: "Create a new device from a device template."
 author: "atastrophic"
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType

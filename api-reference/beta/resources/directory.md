@@ -3,7 +3,7 @@ title: "directory resource type (deleted items)"
 description: "Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.date: 12/02/2024
+ms.date: 12/31/2024
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Deleted item
@@ -65,7 +65,7 @@ Inherits from [entity](entity.md).
 |publicKeyInfrastructure|[publicKeyInfrastructureRoot](../resources/publickeyinfrastructureroot.md)|The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.|
 | recommendations | [recommendation](../resources/recommendation.md) collection | List of recommended improvements to improve tenant posture. |
 | subscriptions | [companySubscription](companysubscription.md) collection | List of commercial subscriptions that an organization has. |
-|templates|[template](../resources/template.md) |A container for templates, such as device templates used for onboarding Entra ID devices. |
+|templates|[template](../resources/template.md) |A container for templates, such as device templates used for onboarding devices in Microsoft Entra ID. |
 
 ## JSON representation
 

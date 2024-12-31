@@ -5,7 +5,7 @@ author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ---
 
 # List deviceTemplate owners

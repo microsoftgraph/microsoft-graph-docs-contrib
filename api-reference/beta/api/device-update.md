@@ -5,7 +5,7 @@ author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 10/25/2024
+ms.date: 12/31/2024
 ---
 
 # Update device

@@ -3,7 +3,7 @@ title: "mutualTlsOauthConfiguration resource type"
 description: "Represents a list of certificate authorities (CAs) that are permitted to issue certificates for a specific set of objects used for mTLS."
 author: "sgeislinger"
 ms.localizationpriority: medium
-ms.date: 11/20/2024
+ms.date: 12/31/2024
 ms.subservice: "entra-id"
 doc_type: resourcePageType
 toc.title: "Mutual TLS OAuth configuration"

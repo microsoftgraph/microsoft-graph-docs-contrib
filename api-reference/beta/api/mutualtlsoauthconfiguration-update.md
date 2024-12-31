@@ -5,7 +5,7 @@ author: "ploegert"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ---
 
 # Update mutualTlsOauthConfiguration
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
 
-You can only update the following two properties: **displayName**, **certificateAuthorities**.
+You can only update the following two properties: **displayName**, **certificateAuthority**.
 
 To update a subset of objects in the **certificateAuthorities** collection, first get the complete list, make your modifications, and then repost the entire contents of the **certificateAuthorities** attribute list in the request body. Excluding a subset of objects removes them from the collection.
 
@@ -143,6 +143,7 @@ This example assumes that the original object stored has the following value. No
   ]
 }
 ```
+
 #### Request
 
 The following example shows a request that updates the certificate authority list to contain only a single certificate, which removes the other.

@@ -3,7 +3,7 @@ title: "deviceTemplate resource type"
 description: "Represents property values that are common to a set of device objects."
 author: "ploegert"
 ms.localizationpriority: medium
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ms.subservice: "entra-id"
 doc_type: resourcePageType
 ---
@@ -46,7 +46,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |deviceInstances|[device](../resources/device.md) collection|Collection of **device** objects created based on this template.|
-|owners|[directoryObject](../resources/directoryobject.md) collection|Collection of objects that can manage the device template and the related **deviceInstances**. Owners can be represented as [service principals](..\resources\serviceprincipal.md), [users](..\resources\users.md), or [applications](..\resources\application.md). As an owner, no other administrator roles are necessary to create, update, or delete devices from this template, as well as to add or remove template owners. |
+|owners|[directoryObject](../resources/directoryobject.md) collection|Collection of directory objects that can manage the device template and the related **deviceInstances**. Owners can be represented as [service principals](..\resources\serviceprincipal.md), [users](..\resources\users.md), or [applications](..\resources\application.md). An owner has full privileges over the device template and doesn't require other administrator roles to create, update, or delete devices from this template, as well as to add or remove template owners. |
 
 ## JSON representation
 The following JSON representation shows the resource type.

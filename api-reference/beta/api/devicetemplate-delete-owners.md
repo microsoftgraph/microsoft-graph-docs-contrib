@@ -5,7 +5,7 @@ author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
-ms.date: 11/24/2024
+ms.date: 12/31/2024
 ---
 
 # Remove deviceTemplate owner
@@ -30,7 +30,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/devicetemplate-delete-owners-permissions.md)]
 
 [!INCLUDE [rbac-devicestemplate-apis](../includes/rbac-for-apis/rbac-devicetemplate-apis.md)]
-> **Note:** Users must be owner of the object.
 
 ## HTTP request
 
