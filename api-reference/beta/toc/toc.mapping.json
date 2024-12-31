@@ -2274,6 +2274,7 @@
       "childNodes": [
         {
           "name": "Identity and access reports",
+          "overview": "../../resources/report-identity-access.md",
           "childNodes": [
             {
               "name": "Microsoft Entra recommendations (preview)",
@@ -2285,7 +2286,6 @@
             },
             {
               "name": "Microsoft Entra activity reports",
-              "overview": "../../resources/report-identity-access.md",
               "shouldSort": true,
               "resources": [
                 "appCredentialSignInActivity",
@@ -2345,7 +2345,7 @@
                   ]
                 },
                 {
-                  "name": "Registration and usage",
+                  "name": "Authentication methods registration and usage",
                   "overview": "../../resources/authenticationmethods-usage-insights-overview.md",
                   "resources": [
                     "credentialUsageSummary",
