@@ -1030,7 +1030,13 @@
             "featureRolloutPolicy",
             "mobilityManagementPolicy",
             "organizationSettings",
-            "uxSetting"
+            "uxSetting", 
+            "deviceTemplate", 
+            "mutualTlsOauthConfiguration"
+          ],
+          "complexTypes": [
+            "template",
+            "trustedCertificateAuthorityBase"
           ],
           "childNodes": [
             {

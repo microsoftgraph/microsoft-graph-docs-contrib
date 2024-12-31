@@ -192,6 +192,12 @@ items:
       href: ../../api/directoryobject-checkmemberobjects.md
     - name: Get member objects
       href: ../../api/directoryobject-checkmemberobjects.md
+    - name: Open extensions
+      items:
+      - name: Create open extension
+        href: ../../api/opentypeextension-post-opentypeextension.md
+      - name: Get open extension
+        href: ../../api/opentypeextension-get.md
   - name: Device local credential info
     items:
     - name: Device local credential info
@@ -200,6 +206,26 @@ items:
       href: ../../api/directory-list-devicelocalcredentials.md
     - name: Get
       href: ../../api/devicelocalcredentialinfo-get.md
+  - name: Device template
+    items:
+    - name: Device template
+      href: ../../resources/devicetemplate.md
+    - name: List
+      href: ../../api/template-list-devicetemplates.md
+    - name: Create
+      href: ../../api/template-post-devicetemplates.md
+    - name: Get
+      href: ../../api/devicetemplate-get.md
+    - name: Delete
+      href: ../../api/devicetemplate-delete.md
+    - name: List owners
+      href: ../../api/devicetemplate-list-owners.md
+    - name: Add owner
+      href: ../../api/devicetemplate-post-owners.md
+    - name: Remove owner
+      href: ../../api/devicetemplate-delete-owners.md
+    - name: Create device from template
+      href: ../../api/devicetemplate-createdevicefromtemplate.md
   - name: Directory object
     items:
     - name: Directory object
@@ -420,6 +446,20 @@ items:
         href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
       - name: Delete group from policy
         href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+  - name: Mutual TLS OAuth configuration
+    items:
+    - name: Mutual TLS OAuth configuration
+      href: ../../resources/mutualtlsoauthconfiguration.md
+    - name: List
+      href: ../../api/certificateauthoritypath-list-mutualtlsoauthconfigurations.md
+    - name: Create
+      href: ../../api/certificateauthoritypath-post-mutualtlsoauthconfigurations.md
+    - name: Get
+      href: ../../api/mutualtlsoauthconfiguration-get.md
+    - name: Update
+      href: ../../api/mutualtlsoauthconfiguration-update.md
+    - name: Delete
+      href: ../../api/mutualtlsoauthconfiguration-delete.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -637,6 +677,12 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
     - name: Find tenant by tenant ID
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
+  - name: Complex types
+    items:
+    - name: Template
+      href: ../../resources/template.md
+    - name: Trusted certificate authority base
+      href: ../../resources/trustedcertificateauthoritybase.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
