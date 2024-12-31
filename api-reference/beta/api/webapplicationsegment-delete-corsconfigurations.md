@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/applications/129d6e80-484f-4d1f-bfca-a6a
 
 ---
 
-
 ### Response
 
 The following example shows the response.
