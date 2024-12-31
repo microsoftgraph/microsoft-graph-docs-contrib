@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/applications/dcc40202-6223-488b-8e64-28a
 
 ---
 
-
 ### Response
 
 The following example shows the response.
