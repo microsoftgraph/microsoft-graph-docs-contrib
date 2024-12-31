@@ -7,8 +7,8 @@ ms.topic: overview
 ms.subservice: entra-id
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: dkershaw10
-ms.date: 05/31/2024
+ms.reviewer: dkershaw10, krbash
+ms.date: 12/31/2024
 ---
 
 # Manage Microsoft Entra identity and network access by using Microsoft Graph
