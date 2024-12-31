@@ -9,7 +9,7 @@ ms.date: 11/07/2024
 
 # Microsoft Graph call records API FAQ
 
-This topic provides answers to frequently asked quesstions about the call records API in Microsoft Graph.
+This topic provides answers to frequently asked questions about the call records API in Microsoft Graph.
 
 ## What is the Microsoft Graph call records API?
 
@@ -94,7 +94,7 @@ You might not see all participants because the [List participants_v2](/graph/api
 
 ## Why are there duplicate sessions returned for one call record?
 
-A call record [session](/graph/api/resources/callrecords-session) uniquely represents a single user-user communication in peer-to-peer calls or a single user-service communication in a group call or meeting. However, in some calling scenarios a single user-service communication can involve multiple service identities without creating a new session, such as a virtual transfer between an auto-attendant and a call queue. In these scenarios a session ID may be duplicated one or more times in order to properly represent each identity involved in the communication and the respective communication duration.
+A call record [session](/graph/api/resources/callrecords-session) uniquely represents a single user-user communication in peer-to-peer calls or a single user-service communication in a group call or meeting. However, in some calling scenarios a single user-service communication can involve multiple service identities in a single session, such as a virtual transfer between an auto attendant and a call queue. In these scenarios, a session ID might be duplicated one or more times in order to properly represent each identity involved in the communication and the respective communication duration.
 
 ## Why do I receive a 404 Not Found error?
 

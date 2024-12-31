@@ -14,7 +14,7 @@ Namespace: microsoft.graph.callRecords
 
 Represents a user-user communication or a user-meeting communication in the case of a conference call.
 
-One session may be returned multiple times if the communication involved more than one service identity. See [call record API FAQ](/graph/callrecords-api-faq) for more details.
+One session might be returned multiple times if the communication involved more than one service identity. For more information, see [call record API FAQ](/graph/callrecords-api-faq).
 
 ## Methods
 
