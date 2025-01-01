@@ -87,6 +87,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
   "alternateResourceUrl": "String",
+  "autopatch": {"@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAutopatch"},
   "cloudPcGroupDisplayName": "String",
   "cloudPcNamingTemplate": "String",
   "description": "String",
@@ -101,7 +102,6 @@ The following JSON representation shows the resource type.
   "localAdminEnabled": "Boolean",
   "microsoftManagedDesktop": {"@odata.type": "microsoft.graph.microsoftManagedDesktop"},
   "provisioningType": "String",
-  "windowsSetting": {"@odata.type": "microsoft.graph.cloudPcWindowsSetting"},
-  "autopatch": {"@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAutopatch"}
+  "windowsSetting": {"@odata.type": "microsoft.graph.cloudPcWindowsSetting"}
 }
 ```
