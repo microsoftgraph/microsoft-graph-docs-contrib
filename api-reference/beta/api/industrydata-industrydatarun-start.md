@@ -5,6 +5,7 @@ author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 01/01/2025
 ---
 
 # industryDataRun: start
