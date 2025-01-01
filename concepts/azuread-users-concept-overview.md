@@ -8,56 +8,50 @@ ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: entra-users
 ms.custom: scenarios:getting-started
-ms.date: 12/28/2023
+ms.date: 12/20/2024
 #customer intent: As a developer, I want to understand how to build user-centric apps that call Microsoft Graph.
 ---
 
 # Overview of users in Microsoft Graph
 
-Users are the representation of a Microsoft Entra work or school user account or a personal Microsoft account in Microsoft Graph. The [user](/graph/api/resources/user) resource in Microsoft Graph is the representation of a user, and includes relationships and resources that are relevant to the user.
+The [user](/graph/api/resources/user) resource in Microsoft Graph represents a Microsoft Entra work or school user account or a personal Microsoft account. The object includes relationships and resources that are relevant to the user, such as messages, events, and files.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/TUMPipN3UFI]
 
-## Develop user-centric applications
+## Manage users in your organization
 
-You can use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to a user. The **user** resource provides straightforward way for you to access and manipulate user resources without having to perform extra calls, look up specific authentication information, and directly issue queries against other Microsoft Graph resources.
+Users can manage their own user account, and administrators can manage user accounts for their organization [on behalf of the user](auth-v2-user.md) or via [an app with its own identity](auth-v2-service.md).
 
-You can access a user's information and manage their data [on their behalf](auth-v2-user.md) or as [an app with its own identity](auth-v2-service.md).
-
-### Manage users in your organization
-
-Perform user management tasks including:
-
-- Create or delete users in your Microsoft Entra organization.
-- List a user's group memberships and determine whether a user is a member of a group.
-- List the users who report to a user and assign managers to a user.
-- Upload or retrieve a photo for the user.
-- Grant users administrative roles in your organization.
-
-### Work with calendars and tasks
-
-You can view, query, and update user calendar and calendar groups associated with a user, including:
-
-- List and create events on a user's calendar.
-- View tasks assigned to a user.
-- Find free meeting times for a set of users.
-- Get a list of reminders set on a user's calendar.
-
-### Administer mail and handle contacts
-
-You can configure user mail settings and contact lists and send mail on a user's behalf, including:
-
-- List mail messages and send new mail.
-- Create and list user contacts and organize contacts in folders.
-- Retrieve and update mailbox folders and settings.
-
-### Enrich your app with user insights
-
-Maximize relevance in your application by promoting recently used or trending documents and contacts associated with a user. You can use Microsoft Graph to:
-
-- Return documents recently viewed and modified by a user.
-- Return documents and sites trending around a user's activity.
-- List documents shared with a user through email or OneDrive for Business.
+The following list describes some of the tasks you can perform with users in your organization through Microsoft Graph:
+- Core user management tasks
+    - Add or delete users
+    - Reset a user's password
+    - Upload or retrieve a photo for a user
+    - Determine their reporting structure or assign managers
+    - Manage the user's authentication methods
+    - Grant users administrative roles in your organization
+    - Assign or remove licenses to users
+    - Track changes to users in your organization
+- Mail management
+    - List mails and send new mail
+    - Create and list user contacts and organize contacts in folders
+    - Retrieve and update mailbox folders and settings 
+- Calendar management
+    - Manage or list events on a user's calendar
+    - Manage a user's calendar and calendar groups
+    - View tasks assigned to a user
+    - Find free meeting times for a set of users
+    - Get a list of reminders set on a user's calendar
+- File management
+    - Access a user's files and folders in OneDrive  
+- Group management tasks
+    - Add users to groups dynamically by matching specific attributes, for example, their department, or statically on demand; list a user's group memberships and determine whether a user is a member of a group
+- Application management tasks
+    - Assign or remove applications and their associated roles for users
+- Enrich your app with user insights - maximize relevance in your application by promoting recently used or trending documents and contacts associated with a user.
+    - Return documents recently viewed and modified by a user.
+    - Return documents and sites trending around a user's activity.
+    - List documents shared with a user through email or OneDrive for Business.
 
 ## API reference
 

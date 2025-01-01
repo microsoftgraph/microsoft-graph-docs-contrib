@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "mmast-msft"
 ms.subservice: "education"
 doc_type: conceptualPageType
+ms.date: 08/08/2024
 ---
 
 # Working with education APIs in Microsoft Graph

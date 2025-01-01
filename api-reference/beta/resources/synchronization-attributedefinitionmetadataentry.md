@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # attributeDefinitionMetadataEntry resource type
@@ -33,6 +34,9 @@ Metadata for the given object.
 |LinkTypeName |The type names of the specific attribute names that should be looked up from the linked object and added as a virtual property on the current entry.  |
 |MaximumLength  |The maximum character length of the target attribute. |
 |ReferencedProperty  |If this is a reference attribute, the property that's referenced.  |
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ title: specialFolder resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 03/06/2024
 ---
 # specialFolder resource type
 
@@ -34,7 +35,11 @@ If a user deletes one, it is recreated when written to again.
 | name      | string | The unique identifier for this item in the `/drive/special` collection |
 
 
+## Relationships
+None.
+
 ## JSON representation
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

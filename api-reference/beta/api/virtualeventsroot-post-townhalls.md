@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/18/2024
 ---
 
 # Create virtualEventTownhall
@@ -170,6 +171,7 @@ Content-Type: application/json
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     },
-    "isInviteOnly": false
+    "isInviteOnly": false,
+    "externalEventInformation": []
 }
 ```

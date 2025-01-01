@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jasonbro"
 ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 # translationPreferences resource type
 
@@ -31,6 +32,9 @@ Represents an entry in a user's translation language override list.
 |No     |Do not offer prompted or automatic translation for the user.                 |
 
 
+
+## Relationships
+None.
 
 ## JSON representation
 

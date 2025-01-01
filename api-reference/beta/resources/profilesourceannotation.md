@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "caiyuanle"
 ms.subservice: "people"
 doc_type: resourcePageType
+ms.date: 09/11/2024
 ---
 
 # profileSourceAnnotation resource type
@@ -41,6 +42,9 @@ The following table shows the mapping between the **id** value and the source sy
 > * If the value of a property derives from tenant admin-controlled systems, such as Microsoft Entra ID or Organizational Data in Microsoft 365, users can't directly edit the value through Microsoft Graph. If the value of a property originates from user-initiated edits, users can directly edit the value via Microsoft Graph.
 
 For more information about how to set the values of properties in the **profileSourceAnnotation** resource, see [Where do property values come from](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data).
+
+## Relationships
+None.
 
 ## JSON representation
 

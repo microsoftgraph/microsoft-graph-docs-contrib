@@ -5,6 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # coachmarkLocation resource type
@@ -34,6 +35,9 @@ Represents details about a coachmark location.
 |displayName| Coachmark from display name. |
 |messageBody| Coachmark from email body. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
+
+## Relationships
+None.
 
 ## JSON representation
 

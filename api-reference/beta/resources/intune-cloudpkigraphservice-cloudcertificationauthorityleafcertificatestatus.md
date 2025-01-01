@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 10/15/2024
 ---
 
 # cloudCertificationAuthorityLeafCertificateStatus enum type

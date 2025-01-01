@@ -5,6 +5,7 @@ author: "kyracatwork"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 08/14/2024
 ---
 
 # driveItem: lockOrUnlockRecord

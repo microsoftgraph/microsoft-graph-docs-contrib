@@ -5,6 +5,7 @@ description: "Get a list of the user sign-ins in a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
+ms.date: 11/08/2024
 ---
 
 # List signIns
@@ -30,10 +31,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/signin-list-permissions.md)]
 
 [!INCLUDE [rbac-signin-apis-read](../includes/rbac-for-apis/rbac-signin-apis-read.md)]
-
-### Viewing applied conditional access (CA) policies in sign-ins
-
-[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

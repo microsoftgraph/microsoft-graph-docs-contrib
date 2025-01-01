@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # accessReviewSettings resource type (deprecated)
@@ -30,6 +31,9 @@ Provides more settings when creating an access review, to control the feature be
 | recurrenceSettings | [accessReviewRecurrenceSettings](accessreviewrecurrencesettings.md) | Detailed settings for recurrence. |
 | autoApplyReviewResultsEnabled | Boolean | Indicates whether the auto-apply capability, to automatically change the target object access resource, is enabled.  If not enabled, a user must, after the review completes, apply the access review. |
 | accessRecommendationsEnabled | Boolean | Indicates whether showing recommendations to reviewers is enabled. |
+
+## Relationships
+None.
 
 ## JSON representation
 <!-- {

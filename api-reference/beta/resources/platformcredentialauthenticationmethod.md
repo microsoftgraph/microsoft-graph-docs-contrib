@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Platform Credential
+ms.date: 07/22/2024
 ---
 
 # platformCredentialAuthenticationMethod resource type
@@ -54,7 +55,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.platformCredentialAuthenticationMethod",
   "id": "String (Identifier)",
   "displayName": "String",
-  "createdDateTime": "String",
+  "createdDateTime": "String (timestamp)",
   "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"},
   "platform": {"@odata.type": "microsoft.graph.authenticationMethodPlatform"}
 }

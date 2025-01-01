@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 11/26/2024
 ---
 
 # appRoleAssignment resource type
@@ -48,10 +49,13 @@ An app role assignment where the assigned principal is a service principal is an
 | creationTimestamp | DateTimeOffset | The time when the app role assignment was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | principalId | Guid | The unique identifier (**id**) for the [user](user.md), [security group](group.md), or [service principal](serviceprincipal.md) being granted the app role. Security groups with dynamic memberships are supported. Required on create.  |
 | principalType | String | The type of the assigned principal. This can either be `User`, `Group`, or `ServicePrincipal`. Read-only. |
-| principalDisplayName | String |The display name of the user, group, or service principal that was granted the app role assignment. Read-only. Supports `$filter` (`eq` and `startswith`). |
+| principalDisplayName | String |The display name of the user, group, or service principal that was granted the app role assignment. Maximum length is 256 characters. Read-only. Supports `$filter` (`eq` and `startswith`). |
 | resourceId | Guid |The unique identifier (**id**) for the resource [service principal](serviceprincipal.md) for which the assignment is made. Required on create. Supports `$filter` (`eq` only). |
-| resourceDisplayName | String | The display name of the resource app's service principal to which the assignment is made.  |
+| resourceDisplayName | String | The display name of the resource app's service principal to which the assignment is made. Maximum length is 256 characters.  |
 | appRoleId | Guid | The identifier (**id**) for the [app role](approle.md) that is assigned to the principal. This app role must be exposed in the **appRoles** property on the resource application's service principal (**resourceId**). If the resource application hasn't declared any app roles, a default app role ID of `00000000-0000-0000-0000-000000000000` can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create. |
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ author: "michaelrm97"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/31/2024
 ---
 
 # Delete mobileDeviceManagementPolicy

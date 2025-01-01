@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/16/2024
 ---
 
 # teamsTabConfiguration resource type (Open Type)
@@ -25,6 +26,9 @@ In addition to the properties below, some tab provider applications specify addi
 |  contentUrl |   string |  Url used for rendering tab contents in Teams. Required.    |
 |  removeUrl  |   string |  Url called by Teams client when a Tab is removed using the Teams Client.     |
 |  websiteUrl |   string |  Url for showing tab contents outside of Teams.     |
+
+## Relationships
+None.
 
 ## JSON representation
 

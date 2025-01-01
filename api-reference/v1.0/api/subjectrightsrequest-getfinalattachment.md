@@ -5,6 +5,7 @@ author: "skadam-msft"
 ms.localizationpriority: medium
 ms.subservice: "compliance"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # subjectRightsRequest: getFinalAttachment

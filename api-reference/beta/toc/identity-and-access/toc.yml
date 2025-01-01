@@ -192,6 +192,12 @@ items:
       href: ../../api/directoryobject-checkmemberobjects.md
     - name: Get member objects
       href: ../../api/directoryobject-checkmemberobjects.md
+    - name: Open extensions
+      items:
+      - name: Create open extension
+        href: ../../api/opentypeextension-post-opentypeextension.md
+      - name: Get open extension
+        href: ../../api/opentypeextension-get.md
   - name: Device local credential info
     items:
     - name: Device local credential info
@@ -200,6 +206,26 @@ items:
       href: ../../api/directory-list-devicelocalcredentials.md
     - name: Get
       href: ../../api/devicelocalcredentialinfo-get.md
+  - name: Device template
+    items:
+    - name: Device template
+      href: ../../resources/devicetemplate.md
+    - name: List
+      href: ../../api/template-list-devicetemplates.md
+    - name: Create
+      href: ../../api/template-post-devicetemplates.md
+    - name: Get
+      href: ../../api/devicetemplate-get.md
+    - name: Delete
+      href: ../../api/devicetemplate-delete.md
+    - name: List owners
+      href: ../../api/devicetemplate-list-owners.md
+    - name: Add owner
+      href: ../../api/devicetemplate-post-owners.md
+    - name: Remove owner
+      href: ../../api/devicetemplate-delete-owners.md
+    - name: Create device from template
+      href: ../../api/devicetemplate-createdevicefromtemplate.md
   - name: Directory object
     items:
     - name: Directory object
@@ -420,6 +446,20 @@ items:
         href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
       - name: Delete group from policy
         href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+  - name: Mutual TLS OAuth configuration
+    items:
+    - name: Mutual TLS OAuth configuration
+      href: ../../resources/mutualtlsoauthconfiguration.md
+    - name: List
+      href: ../../api/certificateauthoritypath-list-mutualtlsoauthconfigurations.md
+    - name: Create
+      href: ../../api/certificateauthoritypath-post-mutualtlsoauthconfigurations.md
+    - name: Get
+      href: ../../api/mutualtlsoauthconfiguration-get.md
+    - name: Update
+      href: ../../api/mutualtlsoauthconfiguration-update.md
+    - name: Delete
+      href: ../../api/mutualtlsoauthconfiguration-delete.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -637,6 +677,12 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
     - name: Find tenant by tenant ID
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
+  - name: Complex types
+    items:
+    - name: Template
+      href: ../../resources/template.md
+    - name: Trusted certificate authority base
+      href: ../../resources/trustedcertificateauthoritybase.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
@@ -2064,6 +2110,26 @@ items:
         href: ../../api/fido2authenticationmethod-delete.md
       - name: Creation options
         href: ../../api/fido2authenticationmethod-creationoptions.md
+    - name: Hardware OATH method
+      items:
+      - name: Hardware OATH method
+        href: ../../resources/hardwareoathauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-hardwareoathmethods.md
+      - name: Create
+        href: ../../api/authentication-post-hardwareoathmethods.md
+      - name: Get
+        href: ../../api/hardwareoathauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/authentication-delete-hardwareoathmethods.md
+      - name: Activate
+        href: ../../api/hardwareoathauthenticationmethod-activate.md
+      - name: Deactivate
+        href: ../../api/hardwareoathauthenticationmethod-deactivate.md
+      - name: Assign and activate
+        href: ../../api/hardwareoathauthenticationmethod-assignandactivate.md
+      - name: Assign and activate by serial number
+        href: ../../api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber.md
     - name: Microsoft Authenticator
       items:
       - name: Microsoft Authenticator
@@ -2157,6 +2223,137 @@ items:
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
       - name: Delete
         href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+  - name: Authentication methods policy
+    items:
+    - name: Overview
+      href: ../../resources/authenticationmethodspolicies-overview.md
+    - name: Authentication methods policy
+      items:
+      - name: Authentication methods policy
+        href: ../../resources/authenticationmethodspolicy.md
+      - name: Get
+        href: ../../api/authenticationmethodspolicy-get.md
+      - name: Update
+        href: ../../api/authenticationmethodspolicy-update.md
+    - name: Email
+      items:
+      - name: Email
+        href: ../../resources/emailauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/emailauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/emailauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/emailauthenticationmethodconfiguration-delete.md
+    - name: External authentication method
+      items:
+      - name: External authentication method
+        href: ../../resources/externalauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/externalauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/externalauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/externalauthenticationmethodconfiguration-delete.md
+    - name: FIDO2
+      items:
+      - name: FIDO2
+        href: ../../resources/fido2authenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/fido2authenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/fido2authenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/fido2authenticationmethodconfiguration-delete.md
+    - name: Hardware OATH
+      items:
+      - name: Hardware OATH
+        href: ../../resources/hardwareoathauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/hardwareoathauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/hardwareoathauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/hardwareoathauthenticationmethodconfiguration-delete.md
+    - name: Hardware OATH token devices
+      items:
+      - name: Hardware OATH token devices
+        href: ../../resources/hardwareoathtokenauthenticationmethoddevice.md
+      - name: List
+        href: ../../api/authenticationmethoddevice-list-hardwareoathdevices.md
+      - name: Create
+        href: ../../api/authenticationmethoddevice-post-hardwareoathdevices.md
+      - name: Create one or more objects
+        href: ../../api/authenticationmethoddevice-update.md
+      - name: Get
+        href: ../../api/hardwareoathtokenauthenticationmethoddevice-get.md
+      - name: Update
+        href: ../../api/hardwareoathtokenauthenticationmethoddevice-update.md
+      - name: Delete
+        href: ../../api/authenticationmethoddevice-delete-hardwareoathdevices.md
+      - name: Assign user
+        href: ../../api/hardwareoathtokenauthenticationmethoddevice-put-assignto.md
+    - name: Microsoft Authenticator
+      items:
+      - name: Microsoft Authenticator
+        href: ../../resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+    - name: SMS
+      items:
+      - name: SMS
+        href: ../../resources/smsauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/smsauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/smsauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/smsauthenticationmethodconfiguration-delete.md
+    - name: Software OATH
+      items:
+      - name: Software OATH
+        href: ../../resources/softwareoathauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/softwareoathauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/softwareoathauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/softwareoathauthenticationmethodconfiguration-delete.md
+    - name: Temporary Access Pass
+      items:
+      - name: Temporary Access Pass
+        href: ../../resources/temporaryaccesspassauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
+    - name: Voice
+      items:
+      - name: Voice
+        href: ../../resources/voiceauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/voiceauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/voiceauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/voiceauthenticationmethodconfiguration-delete.md
+    - name: X509 certificate
+      displayName: certificate-based authentication, CBA
+      items:
+      - name: X509 certificate
+        href: ../../resources/x509certificateauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/x509certificateauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/x509certificateauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/x509certificateauthenticationmethodconfiguration-delete.md
   - name: Authentication strengths
     items:
     - name: Overview
@@ -2541,31 +2738,33 @@ items:
         href: ../../api/riskyserviceprincipal-list-history.md
   - name: Identity provider
     items:
-    - name: External Identities identity provider
-      items:
-      - name: External Identities identity provider
-        href: ../../resources/identityproviderbase.md
-      - name: List configured identity providers
-        href: ../../api/identitycontainer-list-identityproviders.md
-      - name: Create identity provider
-        href: ../../api/identitycontainer-post-identityproviders.md
-      - name: 'Get '
-        href: ../../api/identityproviderbase-get.md
-      - name: Update
-        href: ../../api/identityproviderbase-update.md
-      - name: Delete
-        href: ../../api/identityproviderbase-delete.md
-      - name: List available identity providers
-        href: ../../api/identityproviderbase-availableprovidertypes.md
     - name: External identities
       items:
+      - name: External Identities identity provider
+        items:
+        - name: External Identities identity provider
+          href: ../../resources/identityproviderbase.md
+        - name: List configured identity providers
+          href: ../../api/identitycontainer-list-identityproviders.md
+        - name: Create
+          href: ../../api/identitycontainer-post-identityproviders.md
+        - name: Get
+          href: ../../api/identityproviderbase-get.md
+        - name: Update
+          href: ../../api/identityproviderbase-update.md
+        - name: Delete
+          href: ../../api/identityproviderbase-delete.md
+        - name: List available identity providers
+          href: ../../api/identityproviderbase-availableprovidertypes.md
       - name: Built in identity provider
         href: ../../resources/builtinidentityprovider.md
       - name: Social identity provider
         href: ../../resources/socialidentityprovider.md
       - name: Apple managed identity provider
         href: ../../resources/applemanagedidentityprovider.md
-      - name: Open id connect identity provider
+      - name: OIDC identity provider
+        href: ../../resources/oidcidentityprovider.md
+      - name: OpenID Connect identity provider
         href: ../../resources/openidconnectidentityprovider.md
     - name: Domain-based external identities
       items:
@@ -2641,6 +2840,30 @@ items:
       href: ../../resources/invitation.md
     - name: Create
       href: ../../api/invitation-post.md
+  - name: Microsoft Entra lifecycle announcements
+    items:
+    - name: Product changes
+      items:
+      - name: Product changes
+        href: ../../resources/changeitembase.md
+      - name: List
+        href: ../../api/identitycontainer-list-productchanges.md
+    - name: Change announcements
+      items:
+      - name: Change announcements
+        href: ../../resources/announcement.md
+      - name: List
+        href: ../../api/announcement-list.md
+      - name: Get
+        href: ../../api/announcement-get.md
+    - name: Roadmap
+      items:
+      - name: Roadmap
+        href: ../../resources/roadmap.md
+      - name: List
+        href: ../../api/roadmap-list.md
+      - name: Get
+        href: ../../api/roadmap-get.md
   - name: Multitenant organization
     displayName: MTO
     items:
@@ -2767,119 +2990,6 @@ items:
         href: ../../api/authenticationeventspolicy-post-onsignupstart.md
     - name: Authentication flows policy
       href: ../../resources/authenticationflowspolicy.md
-    - name: Authentication methods policy
-      items:
-      - name: Overview
-        href: ../../resources/authenticationmethodspolicies-overview.md
-      - name: Authentication methods policy
-        items:
-        - name: Authentication methods policy
-          href: ../../resources/authenticationmethodspolicy.md
-        - name: Get
-          href: ../../api/authenticationmethodspolicy-get.md
-        - name: Update
-          href: ../../api/authenticationmethodspolicy-update.md
-      - name: Email
-        items:
-        - name: Email
-          href: ../../resources/emailauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/emailauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/emailauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/emailauthenticationmethodconfiguration-delete.md
-      - name: External authentication method
-        items:
-        - name: External authentication method
-          href: ../../resources/externalauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/externalauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/externalauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/externalauthenticationmethodconfiguration-delete.md
-      - name: FIDO2
-        items:
-        - name: FIDO2
-          href: ../../resources/fido2authenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/fido2authenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/fido2authenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/fido2authenticationmethodconfiguration-delete.md
-      - name: Hardware OATH
-        items:
-        - name: Hardware OATH
-          href: ../../resources/hardwareoathauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/hardwareoathauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/hardwareoathauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/hardwareoathauthenticationmethodconfiguration-delete.md
-      - name: Microsoft Authenticator
-        items:
-        - name: Microsoft Authenticator
-          href: ../../resources/microsoftauthenticatorauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-      - name: SMS
-        items:
-        - name: SMS
-          href: ../../resources/smsauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/smsauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/smsauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/smsauthenticationmethodconfiguration-delete.md
-      - name: Software OATH
-        items:
-        - name: Software OATH
-          href: ../../resources/softwareoathauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/softwareoathauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/softwareoathauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/softwareoathauthenticationmethodconfiguration-delete.md
-      - name: Temporary Access Pass
-        items:
-        - name: Temporary Access Pass
-          href: ../../resources/temporaryaccesspassauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-      - name: Voice
-        items:
-        - name: Voice
-          href: ../../resources/voiceauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/voiceauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/voiceauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/voiceauthenticationmethodconfiguration-delete.md
-      - name: X509 certificate
-        displayName: certificate-based authentication, CBA
-        items:
-        - name: X509 certificate
-          href: ../../resources/x509certificateauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/x509certificateauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/x509certificateauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/x509certificateauthenticationmethodconfiguration-delete.md
     - name: Authorization policy
       items:
       - name: Authorization policy
@@ -3000,6 +3110,54 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
+  - name: Public key infrastructure
+    items:
+    - name: Certificate-based auth pki
+      items:
+      - name: Certificate-based auth pki
+        href: ../../resources/certificatebasedauthpki.md
+      - name: List
+        href: ../../api/publickeyinfrastructureroot-list-certificatebasedauthconfigurations.md
+      - name: Create
+        href: ../../api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations.md
+      - name: Get
+        href: ../../api/certificatebasedauthpki-get.md
+      - name: Update
+        href: ../../api/certificatebasedauthpki-update.md
+      - name: Delete
+        href: ../../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md
+      - name: Upload
+        href: ../../api/certificatebasedauthpki-upload.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
+    - name: Certificate authority detail
+      items:
+      - name: Certificate authority detail
+        href: ../../resources/certificateauthoritydetail.md
+      - name: List
+        href: ../../api/certificatebasedauthpki-list-certificateauthorities.md
+      - name: Create
+        href: ../../api/certificatebasedauthpki-post-certificateauthorities.md
+      - name: Get
+        href: ../../api/certificateauthoritydetail-get.md
+      - name: Update
+        href: ../../api/certificateauthoritydetail-update.md
+      - name: Delete
+        href: ../../api/certificatebasedauthpki-delete-certificateauthorities.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
   - name: Trusted certificate authorities for apps (preview)
     items:
     - name: Certificate-based application configuration
@@ -4119,6 +4277,10 @@ items:
         href: ../../api/networkaccess-filteringrule-update.md
       - name: Delete
         href: ../../api/networkaccess-filteringrule-delete.md
+    - name: FQDN filtering rule
+      href: ../../resources/networkaccess-fqdnfilteringrule.md
+    - name: Web category filtering rule
+      href: ../../resources/networkaccess-webcategoryfilteringrule.md
 - name: Partner customer administration
   items:
   - name: Partner security alert

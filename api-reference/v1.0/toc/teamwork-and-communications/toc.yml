@@ -733,6 +733,8 @@ items:
       href: ../../api/team-update-members.md
     - name: Remove member
       href: ../../api/team-delete-members.md
+    - name: Remove members in bulk
+      href: ../../api/conversationmember-remove.md
     - name: Archive team
       href: ../../api/team-archive.md
     - name: Unarchive team
@@ -861,6 +863,8 @@ items:
       href: ../../api/openshift-update.md
     - name: Delete
       href: ../../api/openshift-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Open shift change request
     items:
     - name: Open shift change request
@@ -913,6 +917,8 @@ items:
       href: ../../api/shift-put.md
     - name: Delete
       href: ../../api/shift-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Shift preferences
     items:
     - name: Shift preferences
@@ -949,6 +955,8 @@ items:
       href: ../../api/timeoff-put.md
     - name: Delete
       href: ../../api/timeoff-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Time off reason
     items:
     - name: Time off reason
@@ -1003,8 +1011,6 @@ items:
       href: ../../api/workingtimeschedule-endworkingtime.md
   - name: Complex types
     items:
-    - name: Change tracked entity
-      href: ../../resources/changetrackedentity.md
     - name: Identity
       href: ../../resources/identity.md
     - name: Identity set

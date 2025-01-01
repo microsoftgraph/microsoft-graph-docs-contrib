@@ -4,6 +4,7 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) related 
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
+ms.date: 04/01/2024
 ---
 
 # How to protect your company app data with Microsoft Intune

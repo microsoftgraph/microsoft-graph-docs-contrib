@@ -1,10 +1,11 @@
 ---
 title: "riskyUser: confirmCompromised"
-description: Confirm a riskyUser object as compromised.
+description: "Confirm one or more riskyUser objects as compromised."
 author: tracyshi
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # riskyUser: confirmCompromised

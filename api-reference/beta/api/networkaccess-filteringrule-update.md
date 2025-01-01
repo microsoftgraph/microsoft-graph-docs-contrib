@@ -5,6 +5,7 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
+ms.date: 09/20/2024
 ---
 
 # Update filteringRule
@@ -12,7 +13,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [filteringRule](../resources/networkaccess-filteringrule.md) object.
+Update the properties of a [filteringRule](../resources/networkaccess-filteringrule.md) object. The following derived types are supported:
+
+- [fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md)
+- [webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -43,10 +47,11 @@ PATCH /networkaccess/filteringPolicies/{filteringPolicyId}/policyRules/{filterin
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+You must specify the **@odata.type** property and the value of the **filteringRule** object type to update. For example, `"@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule"`.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The dissplay name. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Required.|
+|name|String|The display name. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Required.|
 |ruleType|microsoft.graph.networkaccess.networkDestinationType|The destination rule type. The possible values are `fqdn` and `webCategory`. Required.|
 |destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|A collection of destinations to update. Optional.|
 

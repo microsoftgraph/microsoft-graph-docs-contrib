@@ -5,6 +5,7 @@ author: "tracyshi"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/19/2024
 ---
 
 # riskDetection resource type
@@ -54,6 +55,9 @@ For more information about risk detection, see [Microsoft Entra ID Protection](/
 |userDisplayName|string|Name of the user. |
 |userPrincipalName|string|The user principal name (UPN) of the user. |
 |riskType (deprecated)|riskEventType|List of risk event types.<br />**Note:** This property is deprecated. Use **riskEventType** instead. |
+
+## Relationships
+None.
 
 ## JSON representation
 
