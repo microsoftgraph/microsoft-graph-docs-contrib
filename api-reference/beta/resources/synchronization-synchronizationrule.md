@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 03/06/2024
 ---
 
 # synchronizationRule resource type
@@ -33,6 +34,9 @@ Synchronization rules are updated as part of the [synchronization schema](synchr
 |priority       |Integer    |Priority relative to other rules in the [synchronizationSchema](synchronization-synchronizationschema.md). Rules with the lowest priority number will be processed first.|
 |sourceDirectoryName       |String    |Name of the source directory. Must match one of the directory definitions in [synchronizationSchema](synchronization-synchronizationschema.md).|
 |targetDirectoryName       |String    |Name of the target directory. Must match one of the directory definitions in [synchronizationSchema](synchronization-synchronizationschema.md).|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

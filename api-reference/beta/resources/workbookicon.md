@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "excel"
 author: "ruoyingl"
+ms.date: 07/17/2024
 ---
 
 # workbookIcon resource type

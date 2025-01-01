@@ -5,6 +5,7 @@ title: "driveItem: move"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 07/01/2024
 ---
 
 # driveItem: move

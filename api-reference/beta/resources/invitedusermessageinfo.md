@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "ppolkadots"
+ms.date: 03/21/2024
 ---
 
 # invitedUserMessageInfo resource type
@@ -22,6 +23,9 @@ The invitedUserMessageInfo object allows you to configure the [invitation](invit
 |ccRecipients|[recipient](recipient.md) collection|Additional recipients the invitation message should be sent to. Currently only one additional recipient is supported.|
 |customizedMessageBody|String|Customized message body you want to send if you don't want the default message.|
 |messageLanguage|String|The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

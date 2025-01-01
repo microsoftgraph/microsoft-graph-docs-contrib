@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # callRecordingEventMessageDetail resource type
@@ -29,6 +30,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |callRecordingUrl|String|Call recording URL.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |meetingOrganizer|[identitySet](../resources/identityset.md)|Organizer of the meeting.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

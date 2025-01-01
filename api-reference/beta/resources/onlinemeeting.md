@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "cloud-communications"
+ms.date: 11/08/2024
 ---
 
 # onlineMeeting resource type
@@ -18,6 +19,10 @@ Contains information about a meeting, including the URL used to join a meeting, 
 This resource supports subscribing to [change notifications](/graph/webhooks). For more information, see [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting).
 
 Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
+
+> [!CAUTION]
+>
+> Microsoft Graph online meeting APIs that support Microsoft Teams live events are deprecated and stopped returning data on September 30, 2024. New Microsoft Graph APIs will replace these APIs in spring of 2025. For more information, see [Retirement of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/).
 
 ## Methods
 
@@ -33,11 +38,8 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 
 > [!NOTE]
 >
-> A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
-
-> [!CAUTION]
->
-> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. For more information, see [Retirement of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/).
+> - A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
+> - The expiry time for online meetings is set to 60 days after the meeting's start or end time. If the meeting is updated or activated before it expires, the expiry time will be extended by another 60 days.
 
 ## Properties
 

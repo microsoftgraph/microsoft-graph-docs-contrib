@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # alertTrigger resource type
@@ -22,6 +23,9 @@ Contains information about the properties that triggered a detection (properties
 |name|String|Name of the property serving as a detection trigger.|
 |type|String|Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.|
 |value|String|Value of the property serving as a detection trigger.|
+
+## Relationships
+None.
 
 ## JSON representation
 

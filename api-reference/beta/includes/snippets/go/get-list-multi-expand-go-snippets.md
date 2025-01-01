@@ -15,11 +15,11 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphsites.SiteItemListItemRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.ItemListsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"name","lastModifiedDateTime"},
 	Expand: [] string {"columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")"},
 }
-configuration := &graphsites.SiteItemListItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.ItemListsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

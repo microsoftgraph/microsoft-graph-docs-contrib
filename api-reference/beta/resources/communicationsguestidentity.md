@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # communicationsGuestIdentity resource type
@@ -24,6 +25,9 @@ Inherits from [identity](identity.md).
 | displayName | String | The display name associated with the guest user. Inherited from **identity**. |
 | email | String | The email of the guest user. |
 | id | String | The unique identifier for the guest user. Inherited from **identity**.  |
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 05/03/2024
 ---
 
 # defaultSharingLink resource type

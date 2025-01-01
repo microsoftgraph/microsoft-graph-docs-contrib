@@ -5,6 +5,7 @@ author: "neminbshah"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 10/11/2024
 ---
 
 # mailboxProtectionUnitsBulkAdditionJob resource type

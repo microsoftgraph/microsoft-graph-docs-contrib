@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "reports"
 author: "yan-git"
 toc.title: Installation options
+ms.date: 06/06/2024
 ---
 
 # m365AppsInstallationOptions resource type
@@ -39,6 +40,9 @@ Represents the tenant-level installation options for Microsoft 365 apps. You can
 |monthlyEnterprise|New Microsoft 365 features on a predictable schedule, with updates released on the second Tuesday of every month. |
 |semiAnnual|For specific devices that require extensive testing before deploying new Microsoft 365 features due to regulatory, governmental, or organizational requirements. Updates are released on the second Tuesday of every month. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use. |
+
+## Relationships
+None.
 
 ## JSON representation
 

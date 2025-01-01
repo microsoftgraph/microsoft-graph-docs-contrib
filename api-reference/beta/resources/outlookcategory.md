@@ -6,6 +6,7 @@ author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
 toc.title: Outlook category (deprecated)
+ms.date: 08/08/2024
 ---
 
 # outlookCategory resource type
@@ -74,6 +75,9 @@ color is dependent on the Outlook client that the categories are being displayed
 | Preset22 | DarkBlue |
 | Preset23 | DarkPurple |
 | Preset24 | DarkCranberry |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

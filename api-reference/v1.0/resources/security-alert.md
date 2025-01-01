@@ -5,6 +5,7 @@ author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 08/16/2024
 ---
 
 # alert resource type

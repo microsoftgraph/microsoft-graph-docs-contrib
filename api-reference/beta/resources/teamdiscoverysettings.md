@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamDiscoverySettings resource type
@@ -19,6 +20,9 @@ Provides settings to enable others to configure [team](team.md) discoverability.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |showInTeamsSearchAndSuggestions|Boolean|If set to true, the team is visible via search and suggestions from the Teams client.|
+
+## Relationships
+None.
 
 ## JSON representation
 

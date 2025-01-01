@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkDeviceConfiguration resource type
@@ -40,6 +41,9 @@ Inherits from [entity](../resources/entity.md).
 |systemConfiguration|[teamworkSystemConfiguration](../resources/teamworksystemconfiguration.md)|The system configuration. Not applicable for Teams Rooms-enabled devices.|
 |teamsClientConfiguration|[teamworkTeamsClientConfiguration](../resources/teamworkteamsclientconfiguration.md)|The Teams client configuration. Applicable only for Teams Rooms-enabled devices.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

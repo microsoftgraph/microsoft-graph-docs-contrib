@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/23/2024
 ---
 
 # synchronizationSchedule resource type
@@ -22,6 +23,9 @@ Defines the schedule used to run a [synchronizationJob](synchronization-synchron
 |interval|Duration|The interval between synchronization iterations. The value is represented in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)  format for durations. For example, `P1M` represents a period of one month and `PT1M` represents a period of one minute.|
 |state|synchronizationScheduleState|The possible values are: `Active`, `Disabled`, `Paused`.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 

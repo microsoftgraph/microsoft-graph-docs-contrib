@@ -5,6 +5,7 @@ author: "vbhatt0211"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # ediscoveryExportFileMetadata resource type
@@ -22,6 +23,9 @@ Represents the file metadata for an export in eDiscovery.
 |downloadUrl| String |The URL to download the export. |
 |fileName | String | The name of the file. |
 |size| Int64 | The size of the file. |
+
+## Relationships
+None.
 
 ## JSON representation
 

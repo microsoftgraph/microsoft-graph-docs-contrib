@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.date: 03/21/2024
 ---
 
 # settingTemplateValue resource type
@@ -24,6 +25,9 @@ Represents an individual template setting definition, including the default valu
 |description|string|Description of the setting. Read-only.|
 |name|string|Name of the setting. Read-only.|
 |type|string|Type of the setting. Read-only.|
+
+## Relationships
+None.
 
 ## JSON representation
 

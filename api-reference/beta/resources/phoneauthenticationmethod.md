@@ -7,6 +7,7 @@ ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 toc.title: Phone
+ms.date: 07/22/2024
 ---
 
 # phoneAuthenticationMethod resource type
@@ -41,6 +42,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|createdDateTime|DateTimeOffset| The date and time the authentication method was registered to the user. Read-only. Optional. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String| The identifier of this phone registered to this user. Read-only. <br/><br/>The value of ID is one of the following:<ul><li>`b6332ec1-7057-4abe-9331-3d72feddfe41` - where **phoneType** is `alternateMobile`.</li><li>`e37fc753-ff3b-4958-9484-eaa9425c82bc` - where **phoneType** is `office`.</li><li>`3179e48a-750b-4051-897c-87b9720928f7` - where **phoneType** is `mobile`.</li>|
 |phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they don't match the required format. |
 |phoneType|authenticationPhoneType|The type of this phone. Possible values are: `mobile`, `alternateMobile`, or `office`.|
@@ -89,6 +91,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.phoneAuthenticationMethod",
+  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "phoneNumber": "String",
   "phoneType": "string",

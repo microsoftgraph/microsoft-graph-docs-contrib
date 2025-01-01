@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 11/08/2024
 ---
 
 # appliedConditionalAccessPolicy resource type
@@ -35,6 +36,9 @@ The data in this object is returned only for callers with privileges to read con
 
 
 
+
+## Relationships
+None.
 
 ## JSON representation
 

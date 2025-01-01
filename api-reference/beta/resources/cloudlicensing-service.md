@@ -5,6 +5,7 @@ author: "patrick-starrin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-licensing"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 
 # service resource type

@@ -5,6 +5,7 @@ author: "javieralvarezchiang"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 10/04/2024
 ---
 
 # fileStorageContainer: unlock
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) to allow users to add, update, or delete content.
 
 This action updates the value of the **lockState** property.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
