@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 11/19/2024
 ---
 
 # cloudPC resource type
@@ -30,14 +31,14 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Rename](../api/cloudpc-rename.md)|None|Rename a specific Cloud PC object. Use this API to update the **displayName** for the Cloud PC entity.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a Cloud PC object.|
 |[Resize](../api/cloudpc-resize.md)|None|Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.|
-|[Start](../api/cloudpc-start.md)|None|Start a specific Cloud PC for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
-|[Stop](../api/cloudpc-stop.md)|None|Stop a specific Cloud PC for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
+|[Start](../api/cloudpc-start.md)|None|Start a specific Cloud PC. Currently, only Windows 365 Frontline Cloud PCs are supported. |
+|[Stop](../api/cloudpc-stop.md)|None|Stop a specific Cloud. Currently, only Windows 365 Frontline Cloud PCs are supported. |
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific Cloud PC object. Use this API to check the health status of the Cloud PC and the session host.|
 |[Restore](../api/cloudpc-restore.md)|None|Restore a Cloud PC object to a previous state from a snapshot.|
 |[Set review status](../api/cloudpc-setreviewstatus.md)|None|Set the review status of a specific Cloud PC device using the Cloud PC ID.|
-|[Retrieve review status](../api/cloudpc-retrievereviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the [review status](..\resources\cloudpcreviewstatus.md) of a Cloud PC.|
+|[Retrieve review status](../api/cloudpc-retrievereviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the [review status](../resources/cloudpcreviewstatus.md) of a Cloud PC.|
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the Cloud PC devices that are attributed to the signed-in user.|
-|[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
+|[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific Cloud PC.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retrieve remote action results](../api/cloudpc-retrievecloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) collection|Retrieve [remote action results](../resources/cloudpcremoteactionresult.md) and check the status of a specific remote action performed on the associated Cloud PC device.|

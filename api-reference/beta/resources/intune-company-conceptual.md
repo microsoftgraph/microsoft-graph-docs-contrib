@@ -4,6 +4,7 @@ description: "Lists Microsoft Graph API for Intune endpoints (REST) that define 
 ms.localizationpriority: medium
 author: "jaiprakashmb"
 ms.subservice: "intune"
+ms.date: 04/01/2024
 ---
 
 # Company terms and conditions in Microsoft Intune

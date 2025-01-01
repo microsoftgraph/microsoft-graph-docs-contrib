@@ -4,6 +4,8 @@
 items:
 - name: Identity and access reports
   items:
+  - name: Overview
+    href: ../../resources/report-identity-access.md
   - name: Microsoft Entra activity reports
     items:
     - name: AD FS application activity
@@ -14,7 +16,7 @@ items:
           href: ../../resources/relyingpartydetailedsummary.md
         - name: Get relying party detailed summary
           href: ../../api/reportroot-getrelyingpartydetailedsummary.md
-    - name: Registration and usage
+    - name: Authentication methods registration and usage
       items:
       - name: Overview
         href: ../../resources/authenticationmethods-usage-insights-overview.md

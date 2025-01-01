@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkNetworkConfiguration resource type
@@ -28,6 +29,9 @@ Represents the details about the network configuration for a Microsoft Teams-ena
 |secondaryDns|String|A secondary DNS is used when the primary DNS is not available.|
 |subnetMask|String|A subnet mask is a number that distinguishes the network address and the host address within an IP address.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

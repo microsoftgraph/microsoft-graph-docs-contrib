@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: enumPageType
+ms.date: 08/16/2024
 ---
 
 # teamsAsyncOperationType enum type

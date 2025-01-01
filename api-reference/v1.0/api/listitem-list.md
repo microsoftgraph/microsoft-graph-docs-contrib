@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "sharepoint"
 description: "Get the collection of items in a list."
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # Enumerate items in a list
 

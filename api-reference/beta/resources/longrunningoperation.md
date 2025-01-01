@@ -5,6 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/19/2024
 ---
 
 # longRunningOperation resource type
@@ -37,6 +38,9 @@ The following types derive from this object:
 |resourceLocation|String| URI of the resource that the operation is performed on. |
 |status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
 |statusDetail|String|Details about the status of the operation.|
+
+## Relationships
+None.
 
 ## JSON representation
 

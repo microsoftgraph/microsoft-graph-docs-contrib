@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "excel"
 author: "ruoyingl"
+ms.date: 05/15/2024
 ---
 
 # workbookFilterCriteria resource type
@@ -27,6 +28,9 @@ Represents the filtering criteria applied to a column.
 | icon            | [workbookIcon](workbookicon.md)  | An icon applied via conditional formatting.   |
 | operator        | String                   | An operator in a cell; for example, `=`, `>`, `<`, `<=`, or `<>`.    |
 | values          | [Json](json.md)          | The values that appear in the cell.    |
+
+## Relationships
+None.
 
 ## JSON representation
 

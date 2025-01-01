@@ -5,6 +5,7 @@ author: "CecilyK"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # onPremisesSipInfo resource type

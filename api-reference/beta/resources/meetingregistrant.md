@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 toc.title: Meeting Registrant (deprecated)
+ms.date: 10/15/2024
 ---
 
 # meetingRegistrant resource type (deprecated)
@@ -50,6 +51,9 @@ Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 | canceled | Registrant has canceled their registration. |
 | processing | Interim status indicating the status is processing. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+## Relationships
+None.
 
 ## JSON representation
 

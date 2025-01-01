@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "gysingh"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 # trustFrameworkPolicy resource type
 
@@ -36,6 +37,9 @@ For more information, see [Custom policies in Azure Active Directory B2C](/azure
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |id|String|The ID of the policy.|
+
+## Relationships
+None.
 
 ## JSON representation
 

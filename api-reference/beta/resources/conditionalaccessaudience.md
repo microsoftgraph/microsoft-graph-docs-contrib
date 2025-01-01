@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 05/02/2024
 ---
 
 # conditionalAccessAudience resource type
@@ -37,6 +38,9 @@ Represents the audience evaluated by Conditional Access during a sign-in event.
 |firstPartyResourceDefault|
 |thirdPartyResourceDefault|
 |unknownFutureValue|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # chatInfo resource type
@@ -22,6 +23,9 @@ Contains information associated with Microsoft Teams meetings.
 | messageId           | String  | The unique identifier for a message in a Microsoft Teams channel. |
 | replyChainMessageId | String  | The ID of the reply message. |
 | threadId            | String  | The unique identifier for a thread in Microsoft Teams. |
+
+## Relationships
+None.
 
 ## JSON representation
 
