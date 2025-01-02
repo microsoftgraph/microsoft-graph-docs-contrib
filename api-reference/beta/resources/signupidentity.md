@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of the user who initiated a sign up.
+Represents the identity of the user who initiated a sign-up.
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |signUpIdentifier|String|The identification that the user is trying to utilize to sign up.|
-|signUpIdentifierType|signUpIdentifierType|The type of sign up the user initiated.  Possible values include:  `emailAddress`, `unknownFutureValue`.|
+|signUpIdentifierType|signUpIdentifierType|The type of sign-up the user initiated. Possible values include:  `emailAddress`, `unknownFutureValue`.|
 
 
 ### Filtering
