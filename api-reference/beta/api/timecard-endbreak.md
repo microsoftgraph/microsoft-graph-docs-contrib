@@ -50,9 +50,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|isAtApprovedLocation|Boolean|Indicate whether this action happens at an approved location.|
+|isAtApprovedLocation|Boolean|Indicates whether this action happens at an approved location.|
 |notes|[itemBody](../resources/itembody.md)|Notes for the end of the break.|
-|atApprovedLocation (deprecated)|Boolean|Indicate whether this action happens at an approved location. This property will be removed by November 27, 2027. Use `isAtApprovedLocation` instead. `atApprovedLocation` and `isAtApprovedLocation` always have the same value, so setting one automatically sets the value for the other. If both are included in the request with different values, the value for `isAtApprovedLocation` takes precedence.|
+|atApprovedLocation (deprecated)|Boolean|Indicates whether this action happens at an approved location. This property will be removed by November 27, 2027. Use `isAtApprovedLocation` instead. `atApprovedLocation` and `isAtApprovedLocation` always have the same value, so setting one automatically sets the value for the other. If both are included in the request with different values, the value for `isAtApprovedLocation` takes precedence.|
 
 ## Response
 
