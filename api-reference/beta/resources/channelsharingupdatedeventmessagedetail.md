@@ -28,6 +28,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |ownerTenantId|String| The ID of the tenant to which the shared channel belongs. |
 |sharedChannelId|String| The ID of the shared channel. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

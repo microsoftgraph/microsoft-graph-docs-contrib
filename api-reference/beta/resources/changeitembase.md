@@ -17,8 +17,8 @@ Namespace: microsoft.graph
 
 Represents either a planned change or planned new feature in Microsoft Entra. This resource is an abstract type from which the following resources inherit:
 
-- [announcement](../resources/announcement.md)
-- [roadmap](../resources/roadmap.md).
+- [announcement](../resources/announcement.md) - represents a Microsoft Entra change announcement, such as deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies
+- [roadmap](../resources/roadmap.md) - represents previews and generally available releases
 
 Inherits from [entity](../resources/entity.md).
 

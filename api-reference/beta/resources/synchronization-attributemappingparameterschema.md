@@ -25,6 +25,9 @@ Describes a single parameter used in an [attributeMappingFunctionSchema](../reso
 |required                    |Boolean                   |`true` if the parameter is required; otherwise `false`. |
 |type                        |attributeType                    |The possible values are: `String`, `Integer`, `Reference`, `Binary`, `Boolean`, `DateTime`. Default is `String`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

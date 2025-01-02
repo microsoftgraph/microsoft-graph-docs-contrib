@@ -42,6 +42,9 @@ Inherits from [entity](../resources/entity.md).
 |teamsClientConfiguration|[teamworkTeamsClientConfiguration](../resources/teamworkteamsclientconfiguration.md)|The Teams client configuration. Applicable only for Teams Rooms-enabled devices.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

@@ -682,6 +682,10 @@ items:
         href: permissions-management-how-to-authorization-system-azure.md
       - name: GCP authorization systems API operations
         href: permissions-management-how-to-authorization-system-gcp.md
+    - name: Network access (preview)
+      items:
+      - name: Configure Microsoft Entra Private Access
+        href: tutorial-entra-private-access.md
   - name: Industry data ETL (preview)
     href: industrydata-concept-overview.md
   - name: Mail

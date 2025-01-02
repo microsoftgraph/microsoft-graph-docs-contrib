@@ -30,6 +30,9 @@ Additional information added to an [educationUser](educationuser.md) that is pre
 | graduationYear | String          | Year the student is graduating from the school. |
 | studentNumber  | String          | Student Number.                                 |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

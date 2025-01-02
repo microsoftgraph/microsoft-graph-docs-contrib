@@ -32,6 +32,9 @@ Describes an attribute of an object.
 |referencedObjects|[referencedObject](../resources/synchronization-referencedobject.md) collection |For attributes with `reference` type, lists referenced objects (for example, the `manager` attribute would list `User` as the referenced object).|
 |type           |attributeType     |Attribute value type. Possible values are: `String`, `Integer`, `Reference`, `Binary`, `Boolean`,`DateTime`. Default is `String`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

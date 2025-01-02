@@ -36,6 +36,9 @@ Contains stateful information about the user account.
 |userAccountType|userAccountSecurityType|User account type (group membership), per Windows definition. Possible values are: `unknown`, `standard`, `power`, `administrator`.|
 |userPrincipalName|String|User sign-in name - internet format: (user account name)@(user account DNS domain name).|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

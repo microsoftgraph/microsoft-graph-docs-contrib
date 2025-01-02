@@ -25,6 +25,9 @@ Represents the business address of a resource such as an organizational contact.
 |state|String|The state.|
 |street|String|The street.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
