@@ -3899,32 +3899,6 @@
     {
       "ChangeList": [
         {
-          "Id": "80e39010-fa5c-4a36-a77d-453b2b3cce75",
-          "ApiChange": "Resource",
-          "ChangedApiName": "fileStorageContainerSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerSettings?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainerSettings"
-        },
-        {
-          "Id": "80e39010-fa5c-4a36-a77d-453b2b3cce75",
-          "ApiChange": "Property",
-          "ChangedApiName": "settings",
-          "ChangeType": "Addition",
-          "Description": "Added the **settings** property to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainer"
-        }
-      ],
-      "Id": "80e39010-fa5c-4a36-a77d-453b2b3cce75",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-09-10T05:34:22.37196Z",
-      "WorkloadArea": "Files",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "b9e4abfe-3c5c-414d-b1a0-5930f7cc5200",
           "ApiChange": "Method",
           "ChangedApiName": "lock",
