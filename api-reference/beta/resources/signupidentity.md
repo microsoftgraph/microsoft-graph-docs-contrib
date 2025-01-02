@@ -1,6 +1,6 @@
 ---
 title: "signUpIdentity resource type"
-description: "Represents the identity of the user who has initiated a sign-up."
+description: "Represents the identity of the user who initiated a sign-up."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of the user who has initiated a sign-up.
+Represents the identity of the user who initiated a sign up.
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |signUpIdentifier|String|The identification that the user is trying to utilize to sign up.|
-|signUpIdentifierType|signUpIdentifierType|The type of sign-up the user has initiated.  Possible values include:  `emailAddress`, `unknownFutureValue`.|
+|signUpIdentifierType|signUpIdentifierType|The type of sign up the user initiated.  Possible values include:  `emailAddress`, `unknownFutureValue`.|
 
 
 ### Filtering
