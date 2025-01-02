@@ -55,7 +55,7 @@ The following example shows how to create a new page from the page template.
 <!-- { "blockType": "request", "name": "createFromTemplate", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pages/microsoft.graph.sitepage/createFromTemplate
+POST /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pages/sitepage/createFromTemplate
 Content-Type: application/json
 
 {
