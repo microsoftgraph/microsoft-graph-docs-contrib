@@ -21,6 +21,9 @@ Contains a collection of values for the operand.
 |:---------------|:--------|:----------|
 |values|String collection|Collection of values.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

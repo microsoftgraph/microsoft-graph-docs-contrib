@@ -24,6 +24,9 @@ Namespace: microsoft.graph
 | scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time that automatic replies are set to end. |
 | scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time that automatic replies are set to begin. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

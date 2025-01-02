@@ -26,6 +26,9 @@ Settings to configure whether members can perform certain actions, for example, 
 |allowCreateUpdateRemoveTabs|Boolean|If set to true, members can add, update, and remove tabs. |
 |allowCreateUpdateRemoveConnectors|Boolean|If set to true, members can add, update, and remove connectors.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

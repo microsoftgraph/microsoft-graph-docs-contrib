@@ -37,6 +37,9 @@ The data in this object is returned only for callers with privileges to read con
 
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

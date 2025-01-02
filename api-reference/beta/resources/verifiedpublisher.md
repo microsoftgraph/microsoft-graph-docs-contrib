@@ -25,6 +25,9 @@ Represents a verified publisher of an [application](application.md). For more in
 |verifiedPublisherId|String| The ID of the verified publisher from the app publisher's Partner Center account. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

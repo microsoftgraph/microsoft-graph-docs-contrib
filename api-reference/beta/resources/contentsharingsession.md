@@ -20,14 +20,19 @@ Represents a content sharing session in a call.
 
 | Method                                                             | Return Type                                                 | Description                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| [Get contentSharingSession](../api/contentsharingsession-get.md )                                     | [contentSharingSession](contentsharingsession.md)                                             | Retrieve the properties of a **contentSharingSession** object.                                         |
-| [List contentSharingSessions](../api/call-list-contentsharingsessions.md )              | [contentSharingSession](contentsharingsession.md) collection                    | Retrieve a list of **contentSharingSession** objects in a call.                                            |
+| [Get contentSharingSession](../api/contentsharingsession-get.md )                                     | [contentSharingSession](contentsharingsession.md) | Retrieve the properties of a **contentSharingSession** object.|
+| [List contentSharingSessions](../api/call-list-contentsharingsessions.md )              | [contentSharingSession](contentsharingsession.md) collection                    | Retrieve a list of **contentSharingSession** objects in a call.|
 
 ## Properties
 
-|Property                 |Type                      |Description                                                                        |
-|:---                     |:---                      |:---                                                                               |
+|Property                 |Type                      |Description |
+|:---                     |:---                      |:--- |
 | id                      | String                   | Unique identifier for the content sharing session. Read-only. |
+
+
+## Relationships
+
+None.
 
 ## JSON representation
 

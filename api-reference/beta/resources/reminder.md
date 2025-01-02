@@ -28,6 +28,9 @@ A reminder for an [event](event.md) in a user [calendar](calendar.md).
 |eventWebLink|String|The URL to open the event in Outlook on the web.<br/><br/>The event opens in the browser if you're logged in to your mailbox via Outlook on the web. You're prompted to log in if you aren't already logged in with the browser.<br/><br/>This URL can't be accessed from within an iFrame.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the reminder is set to occur.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

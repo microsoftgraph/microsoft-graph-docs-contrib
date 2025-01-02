@@ -22,6 +22,9 @@ Represents a group of properties that relate to Microsoft real-time communicatio
 | --------------------------- | -------- | ------------------------------------------------------------------------------------------------ |
 | isSipEnabled                | Boolean  | Indicates whether the user has a SIP-enabled client registered for them. Read-only.              |
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

@@ -21,6 +21,9 @@ Contains basic identification information about a channel in Microsoft Teams.
 |channelId|string|  The identity of the channel in which the message was posted.|
 |teamId|string|  The identity of the team in which the message was posted.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
