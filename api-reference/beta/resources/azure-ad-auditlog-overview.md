@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Entra provides an audit trail of all user and app activity in your tenant to help you track all activities in your tenant and also be compliant. These logs include both app and user sign in activity, as well as changes to the directory.
+Microsoft Entra provides an audit trail of all user and app activity in your tenant to help you track all activities in your tenant and also be compliant. These logs include both app and user sign in activity, and changes to the directory.
 
-The availability of these activity reports is governed by the [Microsoft Entra data retention policies](/entra/identity/monitoring-health/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+[Microsoft Entra data retention policies](/entra/identity/monitoring-health/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)governs the availability of these activity reports.
 
 ## What are activity reports?
 
@@ -32,7 +32,7 @@ Microsoft Entra provides four types of activity reports:
 
 ### Directory audit logs
 
-The [directory audit logs](../resources/directoryaudit.md) provide you with access to the history of every task performed in your tenant, either by a user or a service. Amongst others, the provided data enables you to address common scenarios such as:
+The [directory audit logs](../resources/directoryaudit.md) provide you with access to the history of every task performed in your tenant, either by a user or a service. Among others, the provided data enables you to address common scenarios such as:
 
 - Who granted admin group access to a directory user?
 - Which users are signing in to a recently acquired app?
@@ -49,7 +49,7 @@ The [sign-in logs](../resources/signin.md) help you determine who or what perfor
 The sign-ins report helps you answer questions like:
 
 - What is the sign in pattern of a user?
-- How many users have signed in during the last week?
+- How many users signed in the last week?
 - What's the status of these sign-ins?
 
 ### Provisioning
