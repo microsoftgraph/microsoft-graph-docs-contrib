@@ -406,6 +406,8 @@ items:
       href: ../../api/virtualendpoint-post-bulkactions.md
     - name: Get
       href: ../../api/cloudpcbulkaction-get.md
+    - name: Retry
+      href: ../../api/cloudpcbulkaction-retry.md
   - name: Alert monitoring
     items:
     - name: Monitoring
