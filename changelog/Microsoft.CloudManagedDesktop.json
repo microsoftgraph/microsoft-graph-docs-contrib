@@ -6268,7 +6268,7 @@
       "ChangeList": [
         {      
           "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
-          "ApiChange": "Member",
+          "ApiChange": "Property",
           "ChangedApiName": "cloudpc",
           "ChangeType": "Addition",
           "Description": "Add optional property 'frontlineCloudPcAvailability' in CloudPC Entity",
