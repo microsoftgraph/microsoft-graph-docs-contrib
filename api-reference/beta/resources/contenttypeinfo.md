@@ -23,6 +23,9 @@ Represents the SharePoint [contentType](contenttype.md) of an item.
 | id       | String | The ID of the content type.   |
 | name     | String | The name of the content type. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -18,10 +18,10 @@ import (
 
 requestDeltatoken := "w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM"
 
-requestParameters := &graphusers.ItemTodoListItemTasksDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.TodoListsItemTasksDeltaRequestBuilderGetQueryParameters{
 	Deltatoken: &requestDeltatoken,
 }
-configuration := &graphusers.ItemTodoListItemTasksDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.TodoListsItemTasksDeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

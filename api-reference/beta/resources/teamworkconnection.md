@@ -24,6 +24,9 @@ The connection status is useful when you calculate the device health as when the
 |lastModifiedDateTime|DateTimeOffset|Time at which the state was last changed. For example, indicates _connected since_ when the state is `connected` and _disconnected since_ when the state is `disconnected`.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

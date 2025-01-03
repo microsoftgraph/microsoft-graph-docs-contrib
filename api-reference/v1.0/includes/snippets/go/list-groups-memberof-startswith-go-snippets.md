@@ -23,12 +23,12 @@ headers.Add("ConsistencyLevel", "eventual")
 requestCount := true
 requestFilter := "startswith(displayName, 'A')"
 
-requestParameters := &graphgroups.GroupItemMemberOfGraph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.ItemMemberOfGraph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Filter: &requestFilter,
 }
-configuration := &graphgroups.GroupItemMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.ItemMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

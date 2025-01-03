@@ -18,10 +18,10 @@ import (
 
 requestFilter := "submitDateTime gt 2023-10-10T00:00:00.000Z"
 
-requestParameters := &grapheducation.EducationReportsReadingAssignmentSubmissionsRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ReportsReadingAssignmentSubmissionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &grapheducation.EducationReportsReadingAssignmentSubmissionsRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ReportsReadingAssignmentSubmissionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -19,6 +19,9 @@ Represents a bag of name-value pairs that contain additional details about an al
 ## Properties
 None.
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

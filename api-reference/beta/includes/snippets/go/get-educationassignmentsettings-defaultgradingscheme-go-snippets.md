@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &grapheducation.EducationClasseItemAssignmentSettingsRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemAssignmentSettingsRequestBuilderGetQueryParameters{
 	Expand: [] string {"defaultGradingScheme"},
 }
-configuration := &grapheducation.EducationClasseItemAssignmentSettingsRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemAssignmentSettingsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

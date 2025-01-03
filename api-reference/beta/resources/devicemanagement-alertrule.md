@@ -33,7 +33,7 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 
 |Property|Type|Description|
 |:---|:---|:---|
-|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](#alertruletemplate-values)|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `cloudPcInGracePeriodScenario`, `cloudPcFrontlineInsufficientLicensesScenario`, `cloudPcInaccessibleScenario`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `cloudPcInGracePeriodScenario`.|
+|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](#alertruletemplate-values)|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`, `cloudPcInGracePeriodScenario`, `cloudPcFrontlineInsufficientLicensesScenario`, `cloudPcInaccessibleScenario`, and `cloudPcFrontlineConcurrencyScenario`.  Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `cloudPcInGracePeriodScenario`, `cloudPcFrontlineInsufficientLicensesScenario`, `cloudPcInaccessibleScenario`, and `cloudPcFrontlineConcurrencyScenario`.|
 |description|String|The rule description.|
 |displayName|String|The display name of the rule.|
 |enabled|Boolean|The status of the rule that indicates whether the rule is enabled or disabled. If `true`, the rule is enabled; otherwise, the rule is disabled.|
@@ -55,6 +55,7 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |cloudPcInGracePeriodScenario |The alert rule was triggered when the Cloud PC entered the grace period.|
 |cloudPcFrontlineInsufficientLicensesScenario| The alert rule was triggered for the Frontline Cloud PCs where more concurrent Cloud PC connections were active than the concurrency limit allows.|
 |cloudPcInaccessibleScenario| The alert rule was triggered when Cloud PCs couldn't connect due to host health failure, connection errors, or a zone outage. Alternatively, because they were under provisioning or restoring device status.|
+|cloudPcFrontlineConcurrencyScenario| Indicates that the alert rule was triggered for all conditions of the Frontline Cloud PCs concurrency usage. It includes buffer usage conditions for now.|
 
 ### ruleSeverityType values
 

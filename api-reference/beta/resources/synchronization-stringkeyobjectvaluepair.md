@@ -21,6 +21,9 @@ Represents a key. This resource is an open type that allows other properties to 
 |:---------|:-------|:------------|
 | key      | String | Key.        |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

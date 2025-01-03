@@ -26,6 +26,9 @@ Basic profile information of the application.
 |supportUrl|String| Link to the application's support page. For example, https://www.contoso.com/app/support |
 |termsOfServiceUrl|String| Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice |
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

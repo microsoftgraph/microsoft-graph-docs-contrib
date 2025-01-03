@@ -5,6 +5,7 @@ author: "yizhenww"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # acceptJoinResponse resource type
@@ -17,6 +18,9 @@ Represents a response to accept a participant who tries to join the meeting.
 
 ## Properties
 
+None.
+
+## Relationships
 None.
 
 ## JSON representation

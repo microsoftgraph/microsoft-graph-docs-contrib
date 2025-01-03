@@ -78,6 +78,9 @@ Expression extracting first eight characters from the source attribute.
 }
 ```
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

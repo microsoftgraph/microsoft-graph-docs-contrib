@@ -36,6 +36,9 @@ For the list of API operations for managing Apple-managed identity providers, se
 
 Retrieve the **developerId**, **serviceId**, **keyId**, and the **certificateData** from the Apple developer portal. For more information, follow the guide to [create an Apple ID application](/azure/active-directory-b2c/identity-provider-apple-id?pivots=b2c-user-flow#create-an-apple-id-application).
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

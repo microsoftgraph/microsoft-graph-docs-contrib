@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-post-assignto-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -64,6 +66,7 @@ If successful, this method returns a `204 No Content` response code and a [user]
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
@@ -77,6 +80,12 @@ Content-Type: application/json
     "@odata.id": "https://graph.microsoft-ppe.com/beta/users/0cadbf92-####-####-####-############"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

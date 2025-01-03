@@ -27,6 +27,9 @@ Contains the properties of [sharedInsight](insights-shared.md) items.
 | sharingReference		  | [resourceReference](insights-resourcereference.md)	    | Reference properties of the document, such as the URL and type of the document. Read-only |
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
