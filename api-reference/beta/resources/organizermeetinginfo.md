@@ -25,6 +25,9 @@ and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./to
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
 | organizer                    | [identitySet](identityset.md) | The organizer Microsoft Entra identity.  |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -98,7 +98,6 @@ DELETE https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreS
 
 ---
 
-
 ### Response
 
 The following example shows the response.

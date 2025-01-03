@@ -24,6 +24,9 @@ Contains information about the properties that triggered a detection (properties
 |type|String|Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.|
 |value|String|Value of the property serving as a detection trigger.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

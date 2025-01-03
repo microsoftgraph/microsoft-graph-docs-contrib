@@ -26,6 +26,9 @@ Specifies settings for a web application.
 | redirectUris | String collection | Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. |
 |redirectUriSettings| [redirectUriSettings](redirecturisettings.md) collection | Specifies the index of the URLs where user tokens are sent for sign-in. This is only valid for applications using SAML.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

@@ -121,6 +121,24 @@
     {
       "ChangeList": [
         {
+          "Id": "5c8fb671-d9f9-4993-8320-1d305a26773c",
+          "ApiChange": "Method",
+          "ChangedApiName": "retry",
+          "ChangeType": "Addition",
+          "Description": "Added the [retry](https://learn.microsoft.com/en-us/graph/api/cloudpcbulkaction-retry?view=graph-rest-beta) method to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta) resource.",
+          "Target": "cloudPcBulkAction"
+        }
+      ],
+      "Id": "5c8fb671-d9f9-4993-8320-1d305a26773c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-18T12:23:41.3476306Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
           "ApiChange": "Method",
           "ChangedApiName": "bulkreprovisioncloudpc",

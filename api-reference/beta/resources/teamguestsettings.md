@@ -22,6 +22,9 @@ Settings to configure whether guests can create, update, or delete channels in t
 |allowCreateUpdateChannels|Boolean|If set to true, guests can add and update channels.|
 |allowDeleteChannels|Boolean|If set to true, guests can delete channels.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

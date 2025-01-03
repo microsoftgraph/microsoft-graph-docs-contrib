@@ -26,6 +26,9 @@ Represents the availability of a user, distribution list, or resource (room or e
 |workingHours |[workingHours](workinghours.md) |The days of the week and hours in a specific time zone that the user works. These are set as part of the user's [mailboxSettings](mailboxsettings.md).|
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

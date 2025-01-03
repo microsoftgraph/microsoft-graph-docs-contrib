@@ -28,6 +28,9 @@ For more information about managing this object, see [Lock sensitive properties 
 | credentialsWithUsageSign   | Boolean | Locks the keyCredentials and passwordCredentials properties for modification where credential **usage** type is `Sign`.                                                                 |
 | tokenEncryptionKeyId       | Boolean | Locks the tokenEncryptionKeyId property for modification on the service principal.                                                                            |
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

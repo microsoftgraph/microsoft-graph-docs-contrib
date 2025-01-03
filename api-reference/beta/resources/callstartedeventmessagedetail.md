@@ -27,6 +27,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |callId|String|Unique identifier of the call.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

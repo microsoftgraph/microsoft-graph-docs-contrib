@@ -22,6 +22,9 @@ Represents a key-value pair where the key is a string and the value is [attribut
 |key|String|The name of the parameter.|
 |value|[attributeMappingSource](synchronization-attributemappingsource.md)|The value of the parameter.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
