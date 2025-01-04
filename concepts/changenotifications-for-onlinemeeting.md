@@ -111,7 +111,7 @@ The following are the supported meeting events:
   "@odata.type":"#microsoft.graph.callevent",
   "@odata.id":"communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
   "id":"{notificationId}'",
-  "eventType":"callStarted",
+  "eventType":"Microsoft.Communication.CallStarted",
   "eventDateTime":"2022-02-28T00:00:00.0000000Z",
 }
 
@@ -122,7 +122,7 @@ The following are the supported meeting events:
   "@odata.type":"#microsoft.graph.callevent",
   "@odata.id":"communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
   "id":"{notificationId}",
-  "eventType":"callEnded",
+  "eventType":"Microsoft.Communication.CallEnded",
   "eventDateTime":"2022-02-28T00:00:00.0000000Z",
 }
 ```
@@ -133,7 +133,7 @@ The following are the supported meeting events:
   "@odata.type": "#microsoft.graph.callevent",
   "@odata.id": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
   "id": "{notificationId}",
-  "eventType": "rosterUpdated",
+  "eventType": "Microsoft.Communication.CallRosterUpdate",
   "eventDateTime": "2022-02-28T00:00:00.0000000Z",
   "participants@delta": [
     {
@@ -172,7 +172,7 @@ The following are the supported meeting events:
   "@odata.type": "#microsoft.graph.callevent",
   "@odata.id": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
   "id": "{notificationId}",
-  "eventType": "rosterUpdated",
+  "eventType": "Microsoft.Communication.CallRosterUpdate",
   "eventDateTime": "2022-02-28T00:00:00.0000000Z",
   "participants@delta": [
     {
