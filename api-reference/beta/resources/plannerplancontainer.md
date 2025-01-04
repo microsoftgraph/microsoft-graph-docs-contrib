@@ -25,6 +25,7 @@ Planner currently supports the container types listed in the following table. Wh
 |project| Plan is contained by a Project from [Microsoft Project for the web](/project-for-the-web/projectforweb-admin-home). | Microsoft Project currently doesn't have a resource path on Microsoft Graph. Project details and members can be managed from [Microsoft Project](https://project.microsoft.com). |
 |driveItem| Plan is contained by a [driveItem](driveitem.md). | `https://graph.microsoft.com/beta/drives/<driveId>/items/<itemId>`|
 |user| Plan is contained by a [User](user.md) | `https://graph.microsoft.com/beta/users/<id>` |
+|teamsChannel| Plan is container by a [teamsChannel](channel.md). | `http://graph.microsoft.com/beta/teams/<teamId>/channels/<channelId>` |
 
 ## Properties
 |Property|Type|Description|
