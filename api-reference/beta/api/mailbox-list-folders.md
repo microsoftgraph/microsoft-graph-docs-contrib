@@ -1,6 +1,6 @@
 ---
 title: "List folders"
-description: "Get all the folders in the specified user's mailbox."
+description: "Get all the mailboxFolder objects in the specified mailbox, including any search folders."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the folders in the specified mailbox, including any search folders.
+Get all the [mailboxFolder](../resources/mailboxfolder.md) objects in the specified mailbox, including any search folders.
 
 ## Permissions
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: List folders
 
-Get the mailboxfolder collection directly under the root folder of the user's mailbox.
+The following example shows how to get the **mailboxFolder** collection directly under the root folder of the user's mailbox.
 
 #### Request
 
@@ -117,9 +117,9 @@ Content-length: 232
 }
 ```
 
-### Example 2: List Folders With Query Parameters
+### Example 2: List folders with query parameters
 
-This example further refines the result of the API call by using $filter query parameter to only return folders of `type` _IPF.Appointment_. Also with $select we can specify that only the _displayName_ and _type_ properties be returned. Finally, $top query parameter specifies the page size of the result set to return the first five folders in the mailbox.
+The following example uses the `$filter`, `$select`, and `$top` query parameters. The `$filter` parameter refines the results and returns only folders of **type** `IPF.Appointment`. The `$select` parameter is specified to return only the **displayName** and **type** properties, and the `$top` parameter sets the page size of the result set to return the first five folders in the mailbox.
 
 #### Request
 

@@ -1,6 +1,6 @@
 ---
 title: "Delete mailboxFolder"
-description: "Delete a mailboxFolder object."
+description: "Delete a mailboxFolder or a child folder within the mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a folder or a child folder within the mailbox.
+Delete a [folder](../resources/mailboxfolder.md) or a child folder within the mailbox.
 
 ## Permissions
 
@@ -55,11 +55,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following example shows how to delete a mailbox folder or child folder.
-
 ### Request
 
-The following example shows a request.
+The following example shows how to delete a mailbox folder or a child folder.
 <!-- {
   "blockType": "request",
   "name": "delete_mailboxfolder"
@@ -73,7 +71,7 @@ DELETE https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aa
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
