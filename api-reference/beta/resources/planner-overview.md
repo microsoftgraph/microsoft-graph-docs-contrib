@@ -17,7 +17,7 @@ You can use the Planner API in Microsoft Graph to create tasks and assign them t
 Before you get started with the Planner API, it's helpful to understand how the main objects relate to each other and to Microsoft 365 groups.
 
 ## Plan containers
-In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. You can create a plan in a container of one of the following types: [driveItem](driveitem.md), Microsoft 365 [group](group.md), Planner project, [roster](plannerroster.md), or [user](user.md).
+In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. You can create a plan in a container of one of the following types: [driveItem](driveitem.md), Microsoft 365 [group](group.md), Planner project, [roster](plannerroster.md), [teamsChannel](channel.md), or [user](user.md).
 
 The most common type of container is a group.
 
@@ -64,6 +64,31 @@ Alternatively, you can specify the URL for a user.
 ```
 
 Users can upgrade their personal plans into group-based plans by [moving](../api/plannerplan-movetocontainer.md) the plan from the user container to a group container, changing the type of the container for the plan from `user` to `group`. 
+
+### Container type: Teams Channel
+
+The Teams channel container type supports plans created in Teams shared channels, where the channel is the container for the plan. Plans that are pinned in the shared channels would be deleted when the channel is deleted.
+
+To [create a new plan](../api/planner-post-plans.md) in a Teams channel's container, set the **container** property on a [plan](plannerplan.md) object with **type** being `teamsChannel`, and the id should be formatted at "{team-id}/channels/{channel-id}
+
+```json
+{
+    "container": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "type": "teamsChannel"
+    }
+}
+```
+
+Alternatively, you can specify the URL for a Teams shared channel.
+
+```json
+{
+    "container": {
+        "url": "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}"
+    }
+}
+```
 
 ## Plans
 

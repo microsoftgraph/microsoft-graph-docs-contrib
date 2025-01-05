@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsChannelPlanner",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsChannelPlanner](https://learn.microsoft.com/en-us/graph/api/resources/teamsChannelPlanner?view=graph-rest-beta) resource.",
+          "Description": "Added the [teamsChannelPlanner](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "teamsChannelPlanner"
         }
       ],
