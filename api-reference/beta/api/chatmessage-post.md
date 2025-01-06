@@ -78,6 +78,9 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-messages.md), [send a message to a channel](channel-post-messages.md), or [send reply to a channel](chatmessage-post-replies.md).
 
+> [!NOTE]
+> - The Teams client has specific HTML restrictions. Therefore, the HTML elements supported by the Graph API will also be compatible with the Teams client. For example, certain elements like <div> and inline styles may not function as intended.
+
 ### Example 1: Send a Hello World message in a channel
 
 #### Request
@@ -764,7 +767,7 @@ Content-type: application/json
 {
 	"body": {
         "contentType": "html",
-        "content": "<div><div>\n<div><span><img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>"
+        "content": "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">"
     },
     "hostedContents":[
         {
@@ -855,7 +858,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<div><div><div><span><img height=\"297\" src=\"https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1616991962672/hostedContents/aWQ9eF8wLXd1cy1kNy1kZTczYzM0YTYzZGVkYjViMDVlNjYyY2Y1NzQ5MGU5Yyx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kNy1kZTczYzM0YTYzZGVkYjViMDVlNjYyY2Y1NzQ5MGU5Yy92aWV3cy9pbWdv/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span></div></div></div>"
+        "content": "<img height=\"297\" src=\"https://graph.microsoft.com/v1.0/chats/19:97641583cf154265a237da28ebbde27a@thread.v2/messages/1736180156294/hostedContents/aWQ9eF8wLWV1cy1kMTQtYjUxMDlhMDhkODZkM2ZjODBkNzFlYjUzMWM4ZDlmZGEsdHlwZT0xLHVybD1odHRwczovL3VzLWFwaS5hc20uc2t5cGUuY29tL3YxL29iamVjdHMvMC1ldXMtZDE0LWI1MTA5YTA4ZDg2ZDNmYzgwZDcxZWI1MzFjOGQ5ZmRhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\" width=\"297\">"
     },
     "attachments": [],
     "mentions": [],
@@ -1034,7 +1037,7 @@ Content-type: application/json
 {
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+        "content": "<at id=\"0\">General</at>&nbsp;Hello there!"
     },
     "mentions": [
         {
@@ -1130,7 +1133,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+        "content": "<at id=\"0\">General</at>&nbsp;Hello there!"
     },
     "channelIdentity": {
         "teamId": "68a3e365-f7d9-4a56-b499-24332a9cc572",
@@ -1180,7 +1183,7 @@ Content-type: application/json
 {
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+        "content": "<at id=\"0\">GraphTesting</at>&nbsp;Hello team"
     },
     "mentions": [
         {
@@ -1278,7 +1281,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+        "content": "<at id=\"0\">GraphTesting</at>&nbsp;Hello team"
     },
     "channelIdentity": {
         "teamId": "68a3e365-f7d9-4a56-b499-24332a9cc572",
@@ -1326,7 +1329,7 @@ Content-type: application/json
 {
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>"
+        "content": "<at id=\"0\">TestTag</at>&nbsp;Testing Tags"
     },
     "mentions": [
         {
@@ -1421,7 +1424,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>"
+        "content": "<at id=\"0\">TestTag</at>&nbsp;Testing Tags"
     },
     "channelIdentity": {
         "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
@@ -1623,7 +1626,7 @@ Content-type: application/json
             "id": "d7ddbf876ae340c3a03bada395ec7da7",
             "contentType": "application/vnd.microsoft.teams.messaging-announcementBanner",
             "contentUrl": null,
-            "content": "{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}",
+            "content": "{\"title\":\"\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/2/$value\",\"imageContentType\":\"image/jpg\"},\"croppedImage\":{\"source\":\"../hostedContents/1/$value\"}}}}",
             "name": null,
             "thumbnailUrl": null
         }
@@ -1731,7 +1734,7 @@ Content-type: application/json
             "id": "d7ddbf876ae340c3a03bada395ec7da7",
             "contentType": "application/vnd.microsoft.teams.messaging-announcementBanner",
             "contentUrl": null,
-            "content": "{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"https://graph.microsoft.com/beta/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2/messages/1675104302171/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQyLTY3OTJlM2ExMzFmNzc4YjY5NWMwYTE5ZGRkZmIwYWNiL3ZpZXdzL2ltZ28=/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"https://graph.microsoft.com/beta/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2/messages/1675104302171/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQzLTAwYjhhNWZiZTA0MGRmY2MzMWZkNzM1ZDE4Yjk4NTM5L3ZpZXdzL2ltZ28=/$value\"}}}}",
+            "content": "{\"title\":\"Test title\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"https://graph.microsoft.com/beta/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/messages/1736180726031/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ5LTEzMzNjYzJhOWFlYTdjOWYwMWJmNjc2YWU5YWE3NTdhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\",\"width\":1317,\"height\":366,\"croppedWidth\":1317.0,\"croppedHeight\":366.0,\"leftMargin\":0.0,\"topMargin\":0.0},\"croppedImage\":{\"source\":\"https://graph.microsoft.com/beta/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/messages/1736180726031/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ5LTEzMzNjYzJhOWFlYTdjOWYwMWJmNjc2YWU5YWE3NTdhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\"}}}}",
             "name": null,
             "thumbnailUrl": null,
             "teamsAppId": null
