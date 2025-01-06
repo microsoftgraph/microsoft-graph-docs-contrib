@@ -741,7 +741,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isAtApprovedLocation",
           "ChangeType": "Addition",
-          "Description": "Added the **isAtApprovedLocation** property to the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource.",
+          "Description": "Added the `isAtApprovedLocation` property to the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource.",
           "Target": "timeCardEvent"
         },
         {
@@ -749,47 +749,47 @@
           "ApiChange": "Property",
           "ChangedApiName": "isActivitiesIncludedWhenCopyingShiftsEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isActivitiesIncludedWhenCopyingShiftsEnabled** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Description": "Added the `isActivitiesIncludedWhenCopyingShiftsEnabled` property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
           "Target": "schedule"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Property",
-          "ChangedApiName": "clockIn",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "isAtApprovedLocation",
           "ChangeType": "Addition",
-          "Description": "Added the **isAtApprovedLocation** parameter to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timecard-clockin?view=graph-rest-beta&tabs=http) method.",
-          "Target": "timeCard"
+          "Description": "Added the `isAtApprovedLocation` parameter to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timecard-clockin?view=graph-rest-beta&tabs=http) method.",
+          "Target": "clockIn"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Property",
-          "ChangedApiName": "clockOut",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "isAtApprovedLocation",
           "ChangeType": "Addition",
-          "Description": "Added the **isAtApprovedLocation** parameter to the [clockOut](https://learn.microsoft.com/en-us/graph/api/timecard-clockout?view=graph-rest-beta&tabs=http) method.",
-          "Target": "timeCard"
+          "Description": "Added the `isAtApprovedLocation` parameter to the [clockOut](https://learn.microsoft.com/en-us/graph/api/timecard-clockout?view=graph-rest-beta&tabs=http) method.",
+          "Target": "clockOut"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Property",
-          "ChangedApiName": "endBreak",
+          "ApiChange": "parameter",
+          "ChangedApiName": "isAtApprovedLocation",
           "ChangeType": "Addition",
-          "Description": "Added the **isAtApprovedLocation** parameter to the [endBreak](https://learn.microsoft.com/en-us/graph/api/timecard-endbreak?view=graph-rest-beta&tabs=http) method.",
-          "Target": "timeCard"
+          "Description": "Added the `isAtApprovedLocation` parameter to the [endBreak](https://learn.microsoft.com/en-us/graph/api/timecard-endbreak?view=graph-rest-beta&tabs=http) method.",
+          "Target": "endBreak"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
-          "ApiChange": "Property",
-          "ChangedApiName": "startBreak",
+          "ApiChange": "parameter",
+          "ChangedApiName": "isAtApprovedLocation",
           "ChangeType": "Addition",
-          "Description": "Added the **isAtApprovedLocation** parameter to the [startBreak](https://learn.microsoft.com/en-us/graph/api/timecard-startbreak?view=graph-rest-beta&tabs=http) method.",
-          "Target": "timeCard"
+          "Description": "Added the `isAtApprovedLocation` parameter to the [startBreak](https://learn.microsoft.com/en-us/graph/api/timecard-startbreak?view=graph-rest-beta&tabs=http) method.",
+          "Target": "startBreak"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
           "ApiChange": "Property",
           "ChangedApiName": "atApprovedLocation",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **atApprovedLocation** [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource. The **atApprovedLocation** property will stop returning data on November 27, 2027. Going forward, use the **isAtApprovedLocation** property.",
+          "Description": "Deprecated the `atApprovedLocation` [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource. The **atApprovedLocation** property will stop returning data on November 27, 2027. Going forward, use the **isAtApprovedLocation** property.",
           "Target": "timeCardEvent"
         },
         {
@@ -797,7 +797,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activitiesIncludedWhenCopyingShiftsEnabled",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **activitiesIncludedWhenCopyingShiftsEnabled** property of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource. The **activitiesIncludedWhenCopyingShiftsEnabled** property will stop returning data on November 27, 2027. Going forward, use the **isActivitiesIncludedWhenCopyingShiftsEnabled** property.",
+          "Description": "Deprecated the `activitiesIncludedWhenCopyingShiftsEnabled` property of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource. The **activitiesIncludedWhenCopyingShiftsEnabled** property will stop returning data on November 27, 2027. Going forward, use the **isActivitiesIncludedWhenCopyingShiftsEnabled** property.",
           "Target": "schedule"
         }
       ],
