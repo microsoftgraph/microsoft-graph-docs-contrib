@@ -1,11 +1,11 @@
 ---
-title: "Working with calendars and in the Microsoft Graph REST API"
+title: "Working with calendars and events in the Microsoft Graph REST API"
 description: "Learn how to manage calendars and events with the Microsoft Graph API."
 ms.localizationpriority: high
 author: "mnorman-ms"
 doc_type: conceptualPageType
 ms.subservice: "universal-print"
-ms.date: 09/09/2024
+ms.date: 01/06/2025
 ---
 
 # Working with calendars and events in the Microsoft Graph REST API
