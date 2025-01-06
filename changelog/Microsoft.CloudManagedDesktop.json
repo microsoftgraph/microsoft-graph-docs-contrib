@@ -6269,9 +6269,9 @@
         {      
           "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
           "ApiChange": "Property",
-          "ChangedApiName": "cloudpc",
+          "ChangedApiName": "frontlineCloudPcAvailability",
           "ChangeType": "Addition",
-          "Description": "Add optional property 'frontlineCloudPcAvailability' in CloudPC Entity",
+          "Description": "Added the property **frontlineCloudPcAvailability** to the [cloudpc](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         },
         {
