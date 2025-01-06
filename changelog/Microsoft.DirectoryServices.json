@@ -113,7 +113,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "User-PasswordProfile.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `User-PasswordProfile.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This permission is the least privileged permission required to reset a user's password and read and update the **passwordProfile** property for a user. It also allows you to read some identifier-related properties on the user object.",
+          "Description": "Added support for the `User-PasswordProfile.ReadWrite.All` delegated and application permissions to the read and write operations of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource. This permission is the least privileged permission required to reset a user's password and read and write password reset-related properties on the user object. It also allows you to read some identifier-related properties on the user object.",
           "Target": "user"
         },
         {

@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   - In delegated scenarios, the signed-in user must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.Read.All* permission.
   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.Read.All* permission.
 - *User-Mail.ReadWrite.All* is the least privileged permission to read and write the **otherMails** property; also allows to read some identifier-related properties on the user object.
-- *User-PasswordProfile.ReadWrite.All* is the least privileged permission to read and write the **passwordProfile** property; also allows to read some identifier-related properties on the user object.
+- *User-PasswordProfile.ReadWrite.All* is the least privileged permission to read and write password reset-related properties; also allows to read some identifier-related properties on the user object.
 - *User-Phone.ReadWrite.All* is the least privileged permission to read and write the **businessPhones** and **mobilePhone** properties; also allows to read some identifier-related properties on the user object.
 - *User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions to read and write the **accountEnabled** property.
 
