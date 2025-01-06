@@ -77,7 +77,7 @@ If successful, this method returns a `201 Created` response code and a new [chat
 In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-messages.md), [send a message to a channel](channel-post-messages.md), or [send reply to a channel](chatmessage-post-replies.md).
 
 > [!NOTE]
-> The Teams client has specific HTML restrictions. Therefore, the HTML elements supported by the Graph API will also be compatible with the Teams client. For example, certain elements like `<div>` and inline styles may not function as intended.
+> The Teams client has specific HTML restrictions. Therefore, the HTML elements supported by the Microsoft Graph API are compatible with the Teams client. For example, certain elements like `<div>` and inline styles may not function as intended.
 
 ### Example 1: Send a Hello World message in a channel
 
