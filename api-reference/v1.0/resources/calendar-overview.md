@@ -60,7 +60,7 @@ With the Calendar API, you can create, read, update, and delete calendars, creat
 
 The Calendar API provides methods to operate on calendars and calendar groups. The following table shows some use cases with selected URLs.
 
-> **Note**: Many of the methods shown in the following table have other URLs for related use cases. For example, to update a user's calendar in a specific calendar group, send a PATCH operation with the URL `/users/{id \| userPrincipalName}/calendarGroups/{id}/calendars/{id}`.
+> **Note**: Many of the methods shown in the following table have other URLs for related use cases. For example, to update a user's calendar in a specific calendar group, send a PATCH operation with the URL `/users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}`.
 
 | Use case | Verb | Example URL |
 |:---------|:-----|:----|
