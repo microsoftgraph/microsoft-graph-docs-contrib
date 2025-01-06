@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: retrieveCrossRegionDisasterRecoveryReport"
-description: "Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, IsCrossRegionEnabled, CrossRegionHealthStatus, LicenseType, DisasterRecoveryStatus, CurrentRestorePointDateTime, and ActivationExpirationDateTime."
+description: "Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, EnabledDRType, DisasterRecoveryStatus, LicenseType, DRHealthStatus, CurrentRestorePointDateTime, BackupCloucPcStatus and ActivationExpirationDateTime."
 author: "ms-linxin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, IsCrossRegionEnabled, CrossRegionHealthStatus, LicenseType, DisasterRecoveryStatus, CurrentRestorePointDateTime, and ActivationExpirationDateTime.
+Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, EnabledDRType, DisasterRecoveryStatus, LicenseType, DRHealthStatus, CurrentRestorePointDateTime, BackupCloucPcStatus and ActivationExpirationDateTime.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -50,6 +50,7 @@ The following table shows the parameters that you can use with this action.
 
 | Parameter  | Type              | Description                                                                                           |
 | :--------- | :---------------- | :---------------------------------------------------------------------------------------------------- |
+| reportName | cloudPcDisasterRecoveryReportName | The report name, possible values: `crossRegionDisasterRecoveryReport`. When reportName is not initialized, "crossRegionDisasterRecoveryReport" will be used as default.                           |
 | filter     | String            | OData `$filter` syntax. The supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.     |
 | groupBy    | String collection | Specifies how to group the reports. If used, must have the same content as the **select** parameter.  |
 | orderBy    | String collection | Specifies how to sort the reports.                                                                    |
@@ -57,6 +58,14 @@ The following table shows the parameters that you can use with this action.
 | select     | String collection | OData `$select` syntax. The selected columns of the reports.                                          |
 | skip       | Int32             | The number of records to skip.                                                                        |
 | top        | Int32             | The number of top records to return.                                                                  |
+
+#### cloudPcDisasterRecoveryReportName values
+
+| Member name                                  | Description                                                                                                                                                                                                                                                                                             | Value |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| `crossRegionDisasterRecoveryReport`          | Default. Indicates the report which shows the overview and details of Cloud PCs with cross region disaster recovery configurations, health check and status.                                                                                                                                                     | 0    |
+| `disasterRecoveryReport`                     | Indicates the report which shows disaster recovery status of Cloud PCs with their associated category.            | 1    |
+| `unknownFutureValue`                         | Evolvable enumeration sentinel value. Do not use.                                                                                                                                                                                                                                                       | 2     |
 
 ## Response
 
@@ -80,6 +89,7 @@ Content-Type: application/json
 Content-length: 199
 
 {
+  "reportName": "crossRegionDisasterRecoveryReport",
   "filter": "DisasterRecoveryStatus eq 'Active outage'",
   "select": [
     "Id",
@@ -89,11 +99,12 @@ Content-length: 199
     "DeviceId",
     "CloudPCDeviceDisplayName",
     "UserPrincipalName",
-    "IsCrossRegionEnabled",
-    "CrossRegionHealthStatus",
+    "EnabledDRType",
+    "DRHealthStatus",
     "LicenseType",
     "DisasterRecoveryStatus",
     "CurrentRestorePointDateTime",
+    "BackupCloucPcStatus",
     "ActivationExpirationDateTime"
   ],
   "skip": 0,
@@ -182,11 +193,11 @@ Content-Type: application/octet-stream
       "PropertyType": "String"
     },
     {
-      "Column": "IsCrossRegionEnabled",
-      "PropertyType": "Boolean"
+      "Column": "EnabledDRType",
+      "PropertyType": "String"
     },
     {
-      "Column": "CrossRegionHealthStatus",
+      "Column": "DRHealthStatus",
       "PropertyType": "String"
     },
     {
@@ -202,6 +213,10 @@ Content-Type: application/octet-stream
       "PropertyType": "DateTime"
     },
     {
+      "Column": "BackupCloucPcStatus",
+      "PropertyType": "String"
+    },
+    {
       "Column": "ActivationExpirationDateTime",
       "PropertyType": "DateTime"
     }
@@ -215,11 +230,12 @@ Content-Type: application/octet-stream
       "9330ff50-0a1b-4038-8fe8-3c4a67ec4dc5",
       "CPC-Cross-JG79E",
       "john.doe@contoso.com",
-      true,
+      "CrossRegionDR",
       "Unhealthy:'ANC unhealthy', 'Network mismatch'",
       "Cross Region",
       "Active outage",
       "2023-10-16 03:05:14.131 AM",
+      "",
       "2023-10-19 07:05:14.131 AM"
     ]
   ]

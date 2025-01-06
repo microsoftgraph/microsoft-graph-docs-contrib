@@ -3,6 +3,40 @@
      {
         "ChangeList": [
           {
+            "Id": "05d810e7-7e8d-4178-ba45-34c97ff8fec8",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "cloudPcDisasterRecoveryReportName",
+            "ChangeType": "Addition",
+            "Description": "Added the **cloudPcDisasterRecoveryReportName** enumeration type.",
+            "Target": "cloudPcDisasterRecoveryReportName"
+          },
+          {
+            "Id": "05d810e7-7e8d-4178-ba45-34c97ff8fec8",
+            "ApiChange": "Method",
+            "ChangedApiName": "retrieveCrossRegionDisasterRecoveryReport",
+            "ChangeType": "Deletion",
+            "Description": "Removed the **retrieveCrossRegionDisasterRecoveryReport** method from the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource.",
+            "Target": "cloudPcReports"
+          },
+          {
+            "Id": "05d810e7-7e8d-4178-ba45-34c97ff8fec8",
+            "ApiChange": "Method",
+            "ChangedApiName": "retrieveCrossRegionDisasterRecoveryReport",
+            "ChangeType": "Addition",
+            "Description": "Added the [retrieveCrossRegionDisasterRecoveryReport](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports-retrieveCrossRegionDisasterRecoveryReport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource.",
+            "Target": "cloudPcReports"
+          }
+        ],
+        "Id": "05d810e7-7e8d-4178-ba45-34c97ff8fec8",
+        "Cloud": "Review",
+        "Version": "beta",
+        "CreatedDateTime": "2024-12-06T03:02:09.0363351Z",
+        "WorkloadArea": "Devices and apps",
+        "SubArea": "Cloud PC"
+     },
+     {
+        "ChangeList": [
+          {
             "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
             "ApiChange": "Property",
             "ChangedApiName": "userInitiatedDisasterRecoveryAllowed",
