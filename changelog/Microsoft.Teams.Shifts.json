@@ -755,34 +755,34 @@
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
           "ApiChange": "Parameter",
-          "ChangedApiName": "isAtApprovedLocation",
+          "ChangedApiName": "clockIn",
           "ChangeType": "Addition",
           "Description": "Added the `isAtApprovedLocation` parameter to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timecard-clockin?view=graph-rest-beta&tabs=http) method.",
-          "Target": "clockIn"
+          "Target": "timecard"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
           "ApiChange": "Parameter",
-          "ChangedApiName": "isAtApprovedLocation",
+          "ChangedApiName": "clockOut",
           "ChangeType": "Addition",
           "Description": "Added the `isAtApprovedLocation` parameter to the [clockOut](https://learn.microsoft.com/en-us/graph/api/timecard-clockout?view=graph-rest-beta&tabs=http) method.",
-          "Target": "clockOut"
+          "Target": "timecard"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
           "ApiChange": "parameter",
-          "ChangedApiName": "isAtApprovedLocation",
+          "ChangedApiName": "endBreak",
           "ChangeType": "Addition",
           "Description": "Added the `isAtApprovedLocation` parameter to the [endBreak](https://learn.microsoft.com/en-us/graph/api/timecard-endbreak?view=graph-rest-beta&tabs=http) method.",
-          "Target": "endBreak"
+          "Target": "timecard"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
           "ApiChange": "parameter",
-          "ChangedApiName": "isAtApprovedLocation",
+          "ChangedApiName": "startBreak",
           "ChangeType": "Addition",
           "Description": "Added the `isAtApprovedLocation` parameter to the [startBreak](https://learn.microsoft.com/en-us/graph/api/timecard-startbreak?view=graph-rest-beta&tabs=http) method.",
-          "Target": "startBreak"
+          "Target": "timecard"
         },
         {
           "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
