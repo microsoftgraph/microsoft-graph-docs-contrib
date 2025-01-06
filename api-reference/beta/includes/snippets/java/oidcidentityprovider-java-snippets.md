@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-IdentityProviderBase identityProviderBase = new IdentityProviderBase();
+OidcIdentityProvider identityProviderBase = new OidcIdentityProvider();
 identityProviderBase.setOdataType("#microsoft.graph.oidcIdentityProvider");
 identityProviderBase.setDisplayName("Contoso");
 IdentityProviderBase result = graphClient.identity().identityProviders().byIdentityProviderBaseId("{identityProviderBase-id}").patch(identityProviderBase);

@@ -17,7 +17,7 @@ Delete permissions from a [fileStorageContainer](../resources/filestoragecontain
 
 By default, this API removes access for an identity to the container and all items within the container, regardless of whether the identity has container-scoped or item-level permissions. You can add an optional `Prefer: onlyRemoveContainerScopedPermission` header when you call the API if only the identity's container-scoped permissions need to be removed. All item-level permissions explicitly granted to the identity (if any) are retained. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -63,7 +63,6 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions/cmVhZGVyX2k6MCMuZnxtZW1iZXJzaGlwfHJvcnlicjExMUBvdXRsb29rLmNvbQ
 ```
-
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-filestoragecontainer-permissions-csharp-snippets.md)]

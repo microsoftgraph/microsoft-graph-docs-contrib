@@ -32,15 +32,11 @@ var requestBody = new IdentityProviderBase
 			"scope" , "openid profile email offline_access"
 		},
 		{
-			"clientAuthentication" , new UntypedObject(new Dictionary<string, UntypedNode>
+			"clientAuthentication" , new OidcClientSecretAuthentication
 			{
-				{
-					"@odata.type", new UntypedString("#microsoft.graph.oidcClientSecretAuthentication")
-				},
-				{
-					"clientSecret", new UntypedString("4294967296")
-				},
-			})
+				OdataType = "#microsoft.graph.oidcClientSecretAuthentication",
+				ClientSecret = "4294967296",
+			}
 		},
 		{
 			"inboundClaimMapping" , new UntypedObject(new Dictionary<string, UntypedNode>

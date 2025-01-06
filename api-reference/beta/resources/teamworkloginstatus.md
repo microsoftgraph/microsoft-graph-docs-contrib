@@ -24,6 +24,9 @@ Represents Microsoft Teams, Skype for Business, and Exchange sign-in status for 
 |teamsConnection|[teamworkConnection](../resources/teamworkconnection.md)|Information about the Teams connection.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

@@ -22,6 +22,9 @@ Defines a set of clauses that an object must satisfy to be considered in scope. 
 |clauses|[filterClause](synchronization-filterclause.md) collection|Filter clauses (conditions) of this group. All clauses in a group must be satisfied in order for the filter group to evaluate to `true`.|
 |name|String|Human-readable name of the filter group.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -29,6 +29,9 @@ Represents a long-running Universal Print operation. Base class for operation ty
 |status|[printOperationStatus](printoperationstatus.md)|The status of the operation. Read-only.|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the operation was created. Read-only.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

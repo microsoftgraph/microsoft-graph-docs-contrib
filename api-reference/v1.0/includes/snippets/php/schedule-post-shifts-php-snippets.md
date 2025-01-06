@@ -25,10 +25,7 @@ $draftShift->setNotes(null);
 $draftShift->setActivities([	]);
 $requestBody->setDraftShift($draftShift);
 $requestBody->setSharedShift(null);
-$additionalData = [
-	'isStagedForDeletion' => false,
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setIsStagedForDeletion(false);
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->shifts()->post($requestBody)->wait();
 

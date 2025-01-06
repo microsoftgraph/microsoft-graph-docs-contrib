@@ -27,6 +27,9 @@ Groups all the compliance retention restrictions on the item into a single struc
 | isMetadataUpdateAllowed       | Boolean                          | Specifies whether updates to the item metadata (for example, the **Title** field) are blocked. Read-only.                                                                                                                                                                |
 | isRecordLocked                | Boolean                          | Specifies whether the item is locked. Read-write.                                                                                                                                                                                                   |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

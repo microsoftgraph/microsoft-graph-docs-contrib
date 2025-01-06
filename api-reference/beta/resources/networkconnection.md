@@ -69,6 +69,9 @@ Contains stateful information about the network connection related to the alert.
 |spx|1256| Sequenced Packet Exchange protocol.|
 |spxII|1257| Sequenced Packet Exchange version 2 protocol.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
