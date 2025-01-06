@@ -70,7 +70,7 @@ The Calendar API provides methods to operate on calendars and calendar groups. T
 | [Get a calendar.](../api/calendar-get.md) | GET | /users/{id \| userPrincipalName}/calendar |
 | [Update a calendar.](../api/calendar-update.md) | PATCH | /users/{id \| userPrincipalName}/calendars{id} |
 | [Delete a calendar.](../api/calendar-delete.md) | DELETE | /users/{id \| userPrincipalName}/calendar |
-| [Create a calendar group.](../api/user-post-calendargroups.md) | POST | /users/{id |\ userPrincipalName}/calendarGroups |
+| [Create a calendar group.](../api/user-post-calendargroups.md) | POST | /users/{id \| userPrincipalName}/calendarGroups |
 | [Get a calendar group.](../api/calendargroup-get.md) | GET | /users/{id \| userPrincipalName}/calendarGroups/{id} |
 | [Update a calendar group.](../api/calendargroup-update.md) | PATCH | /users/{id \| userPrincipalName}/calendarGroups/{id} |
 | [Delete a calendar group.](../api/calendargroup-delete.md) | DELETE | /users/{id \| userPrincipalName}/calendarGroups/{id} |
