@@ -30,8 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/user-get-permissions.md)]
 
 >[!NOTE]
-> - Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
-> - The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports and manager of the signed-in user only.
+> - Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions aren't supported when using the `/me` endpoint.
+> - The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports, and manager of the signed-in user only.
 
 ### Permissions for specific scenarios
 - To read the **employeeLeaveDateTime** property:
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}
 
 > [!TIP]
 >
-> + When the **userPrincipalName** begins with a `$` character, the GET request URL syntax `/users/$x@y.com` fails with a `400 Bad Request` error code. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. Remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`. For example, `/users('$AdeleVance@contoso.com')`.
+> + When the **userPrincipalName** begins with a `$` character, the GET request URL syntax `/users/$x@y.com` fails with a `400 Bad Request` error code. The request fails because the URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. Remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`. For example, `/users('$AdeleVance@contoso.com')`.
 > + To query a B2B user using the **userPrincipalName**, encode the hash (#) character. That is, replace the `#` symbol with `%23`. For example, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 For the signed-in user:
@@ -67,7 +67,7 @@ GET /me
 
 ## Optional query parameters
 
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default. Extension properties also support query parameters as follows:
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those not returned by default. Extension properties also support query parameters as follows:
 
 | Extension type                     | Comments                                                                            |
 |------------------------------------|-------------------------------------------------------------------------------------|
@@ -247,7 +247,7 @@ Content-type: application/json
 
 ### Example 3: Use $select to retrieve specific properties of a user
 
-To retrieve specific properties, use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, _postalCode_, and _identities_, you would use the add the following to your query `$select=displayName,givenName,postalCode,identities`
+To retrieve specific properties, use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, _postalCode_, and _identities_, add the following query expression to your query `$select=displayName,givenName,postalCode,identities`
 
 #### Request
 
@@ -436,7 +436,7 @@ Content-type: application/json
 }
 ```
 
-If there are no custom security attributes assigned to the user or if the calling principal does not have access, the following will be the response:
+If there are no custom security attributes assigned to the user or if the calling principal does not have access, the following block shows the response:
 
 ```http
 HTTP/1.1 200 OK
