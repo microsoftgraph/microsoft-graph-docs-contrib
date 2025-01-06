@@ -102,6 +102,8 @@ items:
     href: ../../api/driveitem-removeretentionlabel.md
   - name: Lock or unlock record
     href: ../../api/driveitem-lockorunlockrecord.md
+  - name: Create uploadSession
+    href: ../../api/driveitem-createuploadsession.md
   - name: Download file (deprecated)
     href: ../../api/driveitem-get-content.md
 - name: Bundle
