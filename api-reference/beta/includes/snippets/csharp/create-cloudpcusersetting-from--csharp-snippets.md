@@ -32,12 +32,7 @@ var requestBody = new CloudPcUserSetting
 			},
 		},
 		DisasterRecoveryType = CloudPcDisasterRecoveryType.Premium,
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"userInitiatedDisasterRecoveryAllowed" , true
-			},
-		},
+		UserInitiatedDisasterRecoveryAllowed = true,
 	},
 	RestorePointSetting = new CloudPcRestorePointSetting
 	{
