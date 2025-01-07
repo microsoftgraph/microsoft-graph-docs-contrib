@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const conversationMember = {
+const actionResultPart = {
     values: [
         {
             '@odata.type': 'microsoft.graph.aadUserConversationMember',
@@ -24,6 +24,6 @@ const conversationMember = {
 };
 
 await client.api('/teams/e4183b04-c9a2-417c-bde4-70e3ee46a6dc/members/remove')
-	.post(conversationMember);
+	.post(actionResultPart);
 
 ```
