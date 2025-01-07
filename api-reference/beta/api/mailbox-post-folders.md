@@ -1,6 +1,6 @@
 ---
 title: "Create mailboxFolder"
-description: "Create a new mailboxFolder in a user's mailbox"
+description: "Create a new mailboxFolder in a user's mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new folder or child folder in the mailbox.
+Create a new [mailboxFolder](../resources/mailboxfolder.md) or child folder in the mailbox.
 
 ## Permissions
 
@@ -49,11 +49,11 @@ POST /admin/exchange/mailboxes/{mailboxId}/folders/inbox/childFolders
 
 In the request body, supply a JSON representation of the [mailboxFolder](../resources/mailboxfolder.md) object.
 
-You can specify the following properties when creating a **mailboxFolder**.
+You can specify the following properties when you create a **mailboxFolder**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The folder's display name. Required.|
+|displayName|String|The display name of the folder. Required.|
 |type|String|Describes the folder class type. Required.|
 
 ## Response
