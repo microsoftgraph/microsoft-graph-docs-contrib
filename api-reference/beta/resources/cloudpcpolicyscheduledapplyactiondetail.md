@@ -15,12 +15,6 @@ Namespace: microsoft.graph
 
 Represents a scheduled apply rule set on the policy. For `Frontline shared` only.
 
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/cloudpcprovisioningpolicy-retrievePolicyApplySchedule.md)|[cloudPcPolicyScheduledApplyActionDetail](../resources/cloudPcPolicyScheduledApplyActionDetail.md)|List properties and relationships of the [cloudPcPolicyScheduledApplyActionDetail](../resources/cloudPcPolicyScheduledApplyActionDetail.md) objects.|
-
 ## Properties
 
 |Property|Type|Description|

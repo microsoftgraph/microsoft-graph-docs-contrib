@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Add the [retrievePolicyApplyActionResult](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrievepolicyapplyactionresult?view=graph-rest-beta) method to [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [retrievePolicyApplyActionResult](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrievepolicyapplyactionresult?view=graph-rest-beta) method to [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
           "Target": "cloudPcProvisioningPolicy"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Add the [retrievePolicyApplySchedule](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrievepolicyapplyschedule?view=graph-rest-beta) method to [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [retrievePolicyApplySchedule](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrievepolicyapplyschedule?view=graph-rest-beta) method to [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
           "Target": "cloudPcProvisioningPolicy"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
-          "Description": "Add the [schedulePolicyApplyTask](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-schedulepolicyapplytask?view=graph-rest-beta) method to [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [schedulePolicyApplyTask](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-schedulepolicyapplytask?view=graph-rest-beta) method to [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
           "Target": "cloudPcProvisioningPolicy"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcPolicyScheduledApplyActionDetail",
           "ChangeType": "Addition",
-          "Description": "Add the [cloudPcPolicyScheduledApplyActionDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicyscheduledapplyactiondetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcPolicyScheduledApplyActionDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicyscheduledapplyactiondetail?view=graph-rest-beta) resource.",
           "Target": "cloudPcPolicyScheduledApplyActionDetail"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Enumeration",
           "ChangedApiName": "cloudPcPolicyApplyActionStatus",
           "ChangeType": "Addition",
-          "Description": "Add the **cloudPcPolicyApplyActionStatus** enumeration type.",
+          "Description": "Added the **cloudPcPolicyApplyActionStatus** enumeration type.",
           "Target": "cloudPcPolicyApplyActionStatus"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcPolicyApplyActionResult",
           "ChangeType": "Addition",
-          "Description": "Add the [cloudPcPolicyApplyActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicyapplyactionresult?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcPolicyApplyActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicyapplyactionresult?view=graph-rest-beta) resource.",
           "Target": "cloudPcPolicyApplyActionResult"
         }
       ],

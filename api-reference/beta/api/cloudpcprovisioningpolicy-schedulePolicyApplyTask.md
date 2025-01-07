@@ -5,6 +5,7 @@ author: "zhuangzhuang131419"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 01/07/2025
 ---
 
 # cloudPcProvisioningPolicy: schedulePolicyApplyTask
