@@ -1,6 +1,6 @@
 ---
 title: "Delete mailboxFolder"
-description: "Delete a mailboxFolder or a child folder within the mailbox."
+description: "Delete a mailboxFolder or a child folder within a mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [folder](../resources/mailboxfolder.md) or a child folder within the mailbox.
+Delete a [folder](../resources/mailboxfolder.md) or a child folder within a mailbox.
 
 ## Permissions
 

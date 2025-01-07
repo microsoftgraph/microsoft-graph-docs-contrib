@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [mailboxFolder](../resources/mailboxfolder.md) or child folder in the mailbox.
+Create a new [mailboxFolder](../resources/mailboxfolder.md) or child folder in a mailbox.
 
 ## Permissions
 
