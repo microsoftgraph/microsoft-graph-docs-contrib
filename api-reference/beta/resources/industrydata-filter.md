@@ -5,6 +5,7 @@ author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 03/28/2024
 ---
 
 # filter resource type

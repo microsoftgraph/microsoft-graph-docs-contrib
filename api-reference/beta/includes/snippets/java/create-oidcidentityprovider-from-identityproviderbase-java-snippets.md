@@ -17,7 +17,7 @@ additionalData.put("issuer", "https://contoso.b2clogin.com/00001111-aaaa-2222-bb
 additionalData.put("wellKnownEndpoint", "https://contoso.b2clogin.com/contoso.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1A_SIGNINEMAIL");
 additionalData.put("responseType", "code");
 additionalData.put("scope", "openid profile email offline_access");
- clientAuthentication = new ();
+OidcClientSecretAuthentication clientAuthentication = new OidcClientSecretAuthentication();
 clientAuthentication.setOdataType("#microsoft.graph.oidcClientSecretAuthentication");
 clientAuthentication.setClientSecret("4294967296");
 additionalData.put("clientAuthentication", clientAuthentication);

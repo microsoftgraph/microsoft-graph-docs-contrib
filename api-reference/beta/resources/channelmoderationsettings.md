@@ -35,6 +35,9 @@ To support channel moderation settings via Microsoft Graph APIs:
 |replyRestriction|replyRestriction|Indicates who is allowed to reply to the teams channel. Possible values are: `everyone`, `authorAndModerators`, `unknownFutureValue`.|
 |userNewMessageRestriction|userNewMessageRestriction|Indicates who is allowed to post messages to teams channel. Possible values are: `everyone`, `everyoneExceptGuests`, `moderators`, `unknownFutureValue`.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

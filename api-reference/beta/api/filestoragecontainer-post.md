@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/12/2024
 ---
 
 # Create fileStorageContainer
@@ -19,7 +20,7 @@ The respective container type identified by **containerTypeId** must be enabled 
 
 For delegated calls, the calling user is set as the owner of the **fileStorageContainer**. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

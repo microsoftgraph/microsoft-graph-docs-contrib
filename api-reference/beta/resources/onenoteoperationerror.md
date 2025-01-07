@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # onenoteOperationError resource type

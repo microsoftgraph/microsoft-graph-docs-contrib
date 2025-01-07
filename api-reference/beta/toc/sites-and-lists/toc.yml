@@ -206,6 +206,10 @@ items:
     href: ../../resources/recyclebinitem.md
   - name: List
     href: ../../api/recyclebin-list-items.md
+  - name: Delete
+    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
+  - name: Restore
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
 - name: Rich long running operation
   items:
   - name: Rich long running operation
@@ -306,8 +310,6 @@ items:
       href: ../../api/sitepage-getwebpartsbyposition.md
     - name: Save as template
       href: ../../api/sitepage-saveastemplate.md
-    - name: Create from template
-      href: ../../api/sitepage-createfromtemplate.md
     - name: Horizontal section
       items:
       - name: Horizontal section

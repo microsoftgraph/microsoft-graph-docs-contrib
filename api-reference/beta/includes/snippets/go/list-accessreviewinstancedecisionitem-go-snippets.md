@@ -19,11 +19,11 @@ import (
 requestTop := int32(100)
 requestSkip := int32(0)
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinitionItemInstanceItemDecisionsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.AccessReviewsDefinitionsItemInstancesItemDecisionsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinitionItemInstanceItemDecisionsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.AccessReviewsDefinitionsItemInstancesItemDecisionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

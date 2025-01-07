@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the collection of columns represented as [columnDefinition](../resources/columndefinition.md) resources in a  [fileStorageContainer](../resources/filestoragecontainer.md).  
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

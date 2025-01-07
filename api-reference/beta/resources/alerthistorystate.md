@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # alertHistoryState resource type
@@ -26,6 +27,9 @@ Stores changes made to alerts.
 |status|String| Alert status value (if updated). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`, `dismissed`.|
 |updatedDateTime|DateTimeOffset| Date and time of the alert update. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |user|String| UPN of the signed-in user that updated the alert (taken from the bearer token - if in user/delegated auth mode). |
+
+## Relationships
+None.
 
 ## JSON representation
 

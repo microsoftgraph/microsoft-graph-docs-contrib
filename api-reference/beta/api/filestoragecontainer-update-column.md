@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update an existing column represented as a [columnDefinition](../resources/columndefinition.md) in a [fileStorageContainer](../resources/filestoragecontainer.md). 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

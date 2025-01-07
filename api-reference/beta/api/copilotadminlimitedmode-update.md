@@ -5,6 +5,7 @@ author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: apiPageType
+ms.date: 12/03/2024
 ---
 
 # Update copilotAdminLimitedMode
@@ -14,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -110,7 +113,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

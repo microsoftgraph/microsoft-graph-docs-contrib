@@ -5,6 +5,7 @@ author: "mlafleur"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete inboundFlow

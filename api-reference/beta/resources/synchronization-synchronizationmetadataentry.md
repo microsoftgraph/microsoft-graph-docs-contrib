@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # synchronizationMetadataEntry resource type
@@ -33,6 +34,9 @@ Metadata for the given object.
 |OAuthSettings |A JSON containing values necessary for OAuth authentication, such as the token exchange URI and client identifier.  |
 |SynchronizationLearnMoreIbizaFwLink |The documentation link that's displayed in the Microsoft Entra admin center.  |
 |ConfigurationFields |A JSON containing the textbox configuration names that are displayed in the Microsoft Entra admin center. |
+
+## Relationships
+None.
 
 ## JSON representation
 

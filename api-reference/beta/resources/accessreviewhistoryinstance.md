@@ -5,6 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 06/07/2024
 ---
 
 # accessReviewHistoryInstance resource type
@@ -36,6 +37,9 @@ Namespace: microsoft.graph
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|The date and time for which reviews started on or after this date are included in the fetched history data.|
 |runDateTime|DateTimeOffset|The date and time when the instance's history data is scheduled to be generated.|
 |status|accessReviewHistoryStatus|Represents the status of the review history data collection. The possible values are: `done`, `inProgress`, `error`, `requested`, `unknownFutureValue`. Once the **status** is marked as `done`, you can generate a link retrieve the instance's data by calling [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md) method.|
+
+## Relationships
+None.
 
 ## JSON representation
 

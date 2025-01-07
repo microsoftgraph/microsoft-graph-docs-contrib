@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lujiangfeng666"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Create activityBasedTimeoutPolicy
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST policies/activityBasedTimeoutPolicies
+POST /policies/activityBasedTimeoutPolicies
 ```
 
 ## Request headers

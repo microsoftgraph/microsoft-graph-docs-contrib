@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/12/2024
 ---
 
 # List containers
@@ -16,7 +17,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are visible to the caller. The `containerTypeId` filter parameter is required.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

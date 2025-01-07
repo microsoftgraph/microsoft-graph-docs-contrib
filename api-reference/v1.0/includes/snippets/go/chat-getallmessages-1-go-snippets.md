@@ -18,10 +18,10 @@ import (
 
 requestTop := int32(2)
 
-requestParameters := &graphusers.UserItemChatsGetAllMessagesWithRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemChatsGetAllMessagesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphusers.UserItemChatsGetAllMessagesWithRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemChatsGetAllMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

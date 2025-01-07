@@ -5,6 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: enumTypes
+ms.date: 08/31/2024
 ---
 
 # Microsoft Graph Windows Updates enumeration values

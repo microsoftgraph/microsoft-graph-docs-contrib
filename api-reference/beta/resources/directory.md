@@ -3,6 +3,7 @@ title: "directory resource type (deleted items)"
 description: "Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 ms.localizationpriority: medium
 author: "keylimesoda"
+ms.date: 12/31/2024
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Deleted item
@@ -16,9 +17,11 @@ Namespace: microsoft.graph
 
 Represents a deleted item in the directory. A deleted item is sent to the deleted items "container." Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
-Currently, deleted items functionality is supported for the the following resources:
+Currently, deleted items functionality is supported for the following resources:
 - [administrative unit](../resources/administrativeunit.md)
 - [application](application.md)
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
+- [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
 - [group](group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
@@ -49,6 +52,8 @@ Inherits from [entity](entity.md).
 |:-|:-|:-|
 | administrativeUnits | [administrativeUnit](administrativeunit.md) collection | Conceptual container for user and group directory objects. |
 | attributeSets | [attributeSet](attributeset.md) collection | Group of related custom security attribute definitions. |
+| authenticationMethodDevices | [authenticationMethodDevice](authenticationMethodDevice.md) | Exposes the hardware OATH method in the directory. |
+|certificateAuthorities|[certificateAuthorityPath](../resources/certificateauthoritypath.md)|Container for certificate authorities-related configurations for applications in the tenant.|
 | customSecurityAttributeDefinitions | [customSecurityAttributeDefinition](customsecurityattributedefinition.md) collection | Schema of a custom security attributes (key-value pairs). |
 | deletedItems | [directoryObject](directoryobject.md) collection | Recently deleted items. Read-only. Nullable. |
 | deviceLocalCredentials | [deviceLocalCredential](../resources/devicelocalcredential.md) collection | The credentials of the device's local administrator account backed up to Microsoft Entra ID. |
@@ -62,6 +67,7 @@ Inherits from [entity](entity.md).
 |publicKeyInfrastructure|[publicKeyInfrastructureRoot](../resources/publickeyinfrastructureroot.md)|The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.|
 | recommendations | [recommendation](../resources/recommendation.md) collection | List of recommended improvements to improve tenant posture. |
 | subscriptions | [companySubscription](companysubscription.md) collection | List of commercial subscriptions that an organization has. |
+|templates|[template](../resources/template.md) |A container for templates, such as device templates used for onboarding devices in Microsoft Entra ID. |
 
 ## JSON representation
 

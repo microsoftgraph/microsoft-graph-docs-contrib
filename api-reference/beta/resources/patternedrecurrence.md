@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
 author: "iamgirishck"
+ms.date: 07/23/2024
 ---
 
 # patternedRecurrence resource type

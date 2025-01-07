@@ -56,6 +56,9 @@ For the list of API operations for managing OpenID Connect identity providers in
 |id_token|An ID token is returned back to Azure AD B2C from the custom identity provider.|
 |token|An access token is returned back to Azure AD B2C from the custom identity provider. (This value isn't supported by Azure AD B2C at the moment)|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
