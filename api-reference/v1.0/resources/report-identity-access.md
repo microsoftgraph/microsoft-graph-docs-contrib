@@ -44,7 +44,7 @@ The following reports are available on the `beta` endpoint only:
 
 - [Application credential sign-in activity](/graph/api/resources/appcredentialsigninactivity?view=graph-rest-beta&preserve-view=true)
 - [Service principal sign-in activity](/graph/api/resources/serviceprincipalsigninactivity?view=graph-rest-beta&preserve-view=true)
-- Application sign-in reports: [summarized count](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true) or [detailed report](/graph/api/applicationsignindetailedsummary?view=graph-rest-beta&preserve-view=true)
+- Application sign-in reports: [summarized count](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true) or [detailed report](/graph/resources/applicationsignindetailedsummary?view=graph-rest-beta&preserve-view=true)
 - Application user activity for Microsoft Entra External ID: [daily insights](/graph/api/resources/dailyuserinsightmetricsroot?view=graph-rest-beta&preserve-view=true) and [monthly insights](/graph/api/resources/monthlyuserinsightmetricsroot?view=graph-rest-beta&preserve-view=true)
 - Health reports: [SLA attainment](/graph/api/azureadauthentication-get?view=graph-rest-beta&preserve-view=true), [service activity](/graph/api/resources/serviceactivity?view=graph-rest-beta&preserve-view=true), and [health monitoring](/graph/api/resources/healthmonitoring-overview?view=graph-rest-beta&preserve-view=true)
 - The following authentication methods registration and usage reports

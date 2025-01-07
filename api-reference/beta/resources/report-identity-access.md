@@ -34,7 +34,7 @@ This report is available through the [appCredentialSignInActivity resource type]
 
 #### Service principal sign-in activity (preview)
 
-This report is available through the [servicePrincipalSignInActivity resource type](/graph/api/resources/serviceprincipalsigninactivity) and details the sign-in activity for a service principal in your tenant. The sign-in activity can be delegated or application-only scenarios. For application-only scenarios, the [application credential activity](#application-credential-activity-preview) provides additional information on the credential usage.
+This report is available through the [servicePrincipalSignInActivity resource type](/graph/api/resources/serviceprincipalsigninactivity) and details the sign-in activity for a service principal in your tenant. The sign-in activity can be delegated or application-only scenarios. For application-only scenarios, the [application credential activity](#application-credential-sign-in-activity-preview) provides additional information on the credential usage.
 
 #### Application sign-in (preview)
 
