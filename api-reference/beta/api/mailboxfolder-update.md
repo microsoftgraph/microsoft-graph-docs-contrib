@@ -1,6 +1,6 @@
 ---
 title: "Update mailboxFolder"
-description: "Update the properties of a mailboxFolder object."
+description: "Update mailboxFolder properties such as the displayName within a mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update folder properties such as displayName within the mailbox.
+Update [mailboxFolder](../resources/mailboxfolder.md) properties such as the **displayName** within a mailbox.
 
->**Note:** The folder type cannot be updated. Instead the folder needs to be deleted and a new folder can be created.
+>**Note:** The folder type can't be updated. Instead the folder needs to be deleted and a new folder can be created.
 
 ## Permissions
 
@@ -53,7 +53,7 @@ PATCH /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolde
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The folder's display name.|
+|displayName|String|The display name of the folder.|
 
 ## Response
 
@@ -61,11 +61,9 @@ If successful, this method returns a `200 OK` response code and an updated [mail
 
 ## Examples
 
-The following example shows how to update certain folder properties of a mailbox folder.
-
 ### Request
 
-The following example shows a request.
+The following example shows how to update certain folder properties of a mailbox folder.
 <!-- {
   "blockType": "request",
   "name": "update_mailboxfolder"
