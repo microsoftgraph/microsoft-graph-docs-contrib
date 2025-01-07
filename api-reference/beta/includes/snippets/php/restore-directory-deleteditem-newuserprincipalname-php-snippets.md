@@ -12,10 +12,7 @@ use Microsoft\Graph\Beta\Generated\Directory\DeletedItems\Item\Restore\RestorePo
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RestorePostRequestBody();
-$additionalData = [
-	'newUserPrincipalName' => 'johndoe@contoso.com',
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setNewUserPrincipalName('johndoe@contoso.com');
 
 $result = $graphServiceClient->directory()->deletedItems()->byDirectoryObjectId('directoryObject-id')->restore()->post($requestBody)->wait();
 

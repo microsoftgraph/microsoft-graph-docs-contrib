@@ -28,9 +28,7 @@ request_body = CloudPcUserSetting(
 			}
 		),
 		disaster_recovery_type = CloudPcDisasterRecoveryType.Premium,
-		additional_data = {
-				"user_initiated_disaster_recovery_allowed" : True,
-		}
+		user_initiated_disaster_recovery_allowed = True,
 	),
 	restore_point_setting = CloudPcRestorePointSetting(
 		frequency_in_hours = 16,
