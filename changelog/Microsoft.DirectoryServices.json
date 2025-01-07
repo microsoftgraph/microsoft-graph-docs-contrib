@@ -179,7 +179,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customSecurityAttributeExemption",
           "ChangeType": "Addition",
-          "Description": "Added the [customSecurityAttributeExemption](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeExemption?view=graph-rest-beta) resource.",
+          "Description": "Added the [customsecurityattributeexemption](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityattributeexemption?view=graph-rest-beta) resource.",
           "Target": "customSecurityAttributeExemption"
         },
         {

@@ -61,6 +61,7 @@ For more information, see [Microsoft Graph error responses and resource types](/
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_owners_from_devicetemplate"
@@ -69,6 +70,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1/owners/00001111-aaaa-2222-bbbb-3333cccc4444/$ref
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-owners-from-devicetemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
