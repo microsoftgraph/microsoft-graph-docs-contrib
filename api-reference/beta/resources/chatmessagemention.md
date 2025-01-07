@@ -41,6 +41,9 @@ For a fuller context of the example, see [List channel message replies](../api/c
 |mentioned|[chatMessageMentionedIdentitySet](chatmessagementionedidentityset.md)|The entity (user, application, team, channel, or chat) that was @mentioned.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

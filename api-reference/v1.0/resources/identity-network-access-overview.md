@@ -7,8 +7,8 @@ ms.topic: overview
 ms.subservice: entra-id
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: dkershaw10
-ms.date: 05/31/2024
+ms.reviewer: dkershaw10, krbash
+ms.date: 01/07/2025
 ---
 
 # Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph
@@ -46,17 +46,18 @@ A core functionality of identity and access management is managing your tenant c
 | Use cases | API operations |
 |--|--|
 | Manage administrative units including the following operations: <li>Create administrative units <li> Create and manage members and membership rules of administrative units <li> Assign administrator roles that are scoped to administrative units | [administrativeUnit resource type](administrativeunit.md) and its associated APIs |
+| Grant, revoke, and retrieve app roles on a resource application for users, groups, or service principals | [appRoleAssignment  resource type](approleassignment.md) and its associated APIs |
 | Retrieve BitLocker recovery keys | [bitlockerRecoveryKey resource type](bitlockerrecoverykey.md) and its associated APIs |
-| Monitor licenses and subscriptions for the tenant | <li> [companySubscription resource type](companysubscription.md) and its associated APIs <li>[subscribedSku resource type](subscribedsku.md) and its associated APIs |
 | Manage custom security attributes | See [Overview of custom security attributes using the Microsoft Graph API](custom-security-attributes-overview.md) |
 | Manage deleted directory objects. The functionality to store deleted objects in a "recycle bin" is supported for the following objects: <li> Administrative units <li> Applications <li> External user profiles <li> Groups <li> Pending external user profiles <li> Service principals <li> Users | <li> [Get](../api/directory-deleteditems-get.md) or [List](../api/directory-deleteditems-list.md) deleted objects <li> [Permanently delete](../api/directory-deleteditems-delete.md) a deleted object   <li> [Restore a deleted item](../api/directory-deleteditems-restore.md) <li> [List deleted items owned by user](../api/directory-deleteditems-getuserownedobjects.md) |
 | Manage devices in the cloud | [device resource type](device.md) and its associated APIs |
 | View local administrator credential information for all device objects in Microsoft Entra ID that are enabled with Local Admin Password Solution (LAPS). This feature  is the cloud-based LAPS solution | [deviceLocalCredentialInfo resource type](devicelocalcredentialinfo.md) and its associated APIs |
 | Directory objects are the core objects in Microsoft Entra ID, such as users, groups, and applications. You can use the directoryObject resource type and its associated APIs to check memberships of directory objects, track changes for multiple directory objects, or validate that a Microsoft 365 group's display name or mail nickname complies with naming policies | [directoryObject resource type](directoryobject.md) and its associated APIs |
-| Administrator roles, including Microsoft Entra administrator roles, are one of the most sensitive resources in a tenant. You can manage the lifecycle of their assignment in the tenant, including creating custom roles, assigning roles, tracking changes to role assignments, and removing assignees from roles | [directoryRole resource type](directoryrole.md)  and [directoryRoleTemplate resource type](directoryroletemplate.md)and their associated APIs <br/><br/> [roleManagement resource type](rolemanagement.md) and its associated APIs <br/><br/> These APIs allow you to make direct role assignments. Alternatively, you can use Privileged Identity Management APIs for [Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) and [groups](privilegedidentitymanagement-for-groups-api-overview.md) to make just-in-time and time-bound role assignments, instead of direct forever active assignments. |
+| Administrator roles, including Microsoft Entra administrator roles, are one of the most sensitive resources in a tenant. You can manage the lifecycle of their assignment in the tenant, including creating custom roles, assigning roles, tracking changes to role assignments, and removing assignees from roles | [directoryRole resource type](directoryrole.md)  and [directoryRoleTemplate resource type](directoryroletemplate.md) and their associated APIs <br/><br/> [roleManagement resource type](rolemanagement.md) and its associated APIs (**recommended**)<br/><br/> These APIs allow you to make direct role assignments. Alternatively, you can use Privileged Identity Management APIs for [Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) and [groups](privilegedidentitymanagement-for-groups-api-overview.md) to make just-in-time and time-bound role assignments, instead of direct forever active assignments. |
 | Define the following configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. <li> Settings for Microsoft 365 groups such as guest user access, classifications, and naming policies <li> Password rule settings such as banned password lists and lockout duration <li> Prohibited names for applications, reserved words, and blocking trademark violations <li> Custom conditional access policy URL <li> Consent policies such as user consent requests, group-specific consent, and consent for risky apps | [groupSetting resource type](groupsetting.md) and [groupSettingTemplate resource type](groupsettingtemplate.md)  and their associated APIs <br/><br/> For more information, see [Overview of group settings](/graph/group-directory-settings). |
 | Domain management operations such as: <li> associating a domain with your tenant <li> retrieving DNS records <li> verifying domain ownership <li> associating specific services with specific domains <li> deleting domains | [domain resource type](domain.md) and its associated APIs |
 | Configure and manage staged rollout of specific Microsoft Entra ID features | [featureRolloutPolicy resource type](featurerolloutpolicy.md) and its associated APIs |
+| Monitor licenses and subscriptions for the tenant | <li> [companySubscription resource type](companysubscription.md) and its associated APIs <li>[subscribedSku resource type](subscribedsku.md) and its associated APIs |
 | Configure options that are available in Microsoft Entra Cloud Sync such as preventing accidental deletions and managing group writebacks | [onPremisesDirectorySynchronization resource type](onpremisesdirectorysynchronization.md) and its associated APIs |
 | Manage the base settings for your Microsoft Entra tenant | [organization resource type](organization.md) and its associated APIs |
 | Retrieve the organizational contacts that might be synchronized from on-premises directories or from Exchange Online | [orgContact resource type](orgcontact.md) and its associated APIs |
@@ -120,6 +121,10 @@ Microsoft Graph also provides the following identity and access capabilities for
 | Microsoft partners can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives extra control to customers over their security posture while allowing them to receive support from the Microsoft resellers | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
 
 ---
+
+## Identity and access reports
+
+Microsoft Entra records *every* activity in your tenant and produces reports and audit logs that you can analyze for monitoring, compliance, and troubleshooting. Records of these activities are also available through Microsoft Graph reporting and audit logs APIs, which allow you to analyze the activities with Azure Monitor logs and Log Analytics, or stream to third-party SIEM tools for further investigations. For more information, see [Identity and access reports API overview](../resources/report-identity-access.md).
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 

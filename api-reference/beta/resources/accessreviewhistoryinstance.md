@@ -38,6 +38,9 @@ Namespace: microsoft.graph
 |runDateTime|DateTimeOffset|The date and time when the instance's history data is scheduled to be generated.|
 |status|accessReviewHistoryStatus|Represents the status of the review history data collection. The possible values are: `done`, `inProgress`, `error`, `requested`, `unknownFutureValue`. Once the **status** is marked as `done`, you can generate a link retrieve the instance's data by calling [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md) method.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

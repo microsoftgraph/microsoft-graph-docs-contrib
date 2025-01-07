@@ -331,5 +331,5 @@ Microsoft has built and maintains a wide selection of code samples that demonstr
 
 ## Related content
 
-- You can call Microsoft Graph on behalf of a user from different types of apps, such as single-page apps, web apps, and mobile apps. For more information, see [Scenarios and supported authentication flows](/entra/identity-platform/authentication-flows-app-scenarios#scenarios-and-supported-authentication-flows).
-- Choose from code samples that are built and maintained by Microsoft to run custom apps that use supported authentication libraries, sign-in users, and call Microsoft Graph. See [Microsoft Graph tutorials](/graph/tutorials).
+- Explore [Microsoft Graph tutorials](/graph/tutorials) for code samples that are built using different SDKs to create basic applications that authenticate and access data in delegated scenarios.
+- Choose from code samples that are built using different SDKs and maintained by Microsoft to run custom apps that use supported authentication libraries, sign-in users, and call Microsoft Graph. See [Microsoft Graph tutorials](/graph/tutorials).

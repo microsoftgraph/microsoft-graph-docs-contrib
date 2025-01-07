@@ -28,6 +28,9 @@ For details, see [Set up change notifications that include resource data](/graph
 | encryptionCertificateId | string | ID of the certificate used to encrypt the `dataKey`. |
 | encryptionCertificateThumbprint | string | Hexadecimal representation of the thumbprint of the certificate used to encrypt the `dataKey`. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

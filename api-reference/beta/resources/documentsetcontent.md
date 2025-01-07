@@ -23,6 +23,9 @@ Contains metadata about a file present in default content location of a content 
 | fileName    | string                          | Name of the file in resource folder that should be added as a default content or a template in the document set |
 | folderName  | string                          | Folder name in which the file will be placed when a new document set is created in the library.                 |
 
+## Relationships
+None.
+
 ## JSON representation
 
 Here is a JSON representation of a **documentSetContent** resource.

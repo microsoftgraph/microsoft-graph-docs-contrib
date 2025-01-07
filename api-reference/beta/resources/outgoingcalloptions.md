@@ -26,6 +26,9 @@ Inherits from [callOptions](calloptions.md).
 | isContentSharingNotificationEnabled | Boolean | Indicates whether content sharing notifications should be enabled for the call. Inherited from [callOptions](calloptions.md). |
 | isDeltaRosterEnabled                | Boolean | Indicates whether delta roster is enabled for the call. Inherited from [callOptions](calloptions.md).                         |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

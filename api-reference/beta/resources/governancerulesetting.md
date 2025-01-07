@@ -26,6 +26,9 @@ Represents the rules that the role settings are composed of.
 |ruleIdentifier|String        |The id of the rule. For example, ``ExpirationRule`` and ``MfaRule``.|
 |setting       |String        |The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

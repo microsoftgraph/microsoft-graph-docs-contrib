@@ -28,6 +28,9 @@ Represents the resources related to an alert.
 |attacked|1|The resource was attacked in the alert.|
 |related|2|The resource is related to the alert, though not directly attacked.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
