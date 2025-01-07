@@ -39,6 +39,9 @@ Represents the audience evaluated by Conditional Access during a sign-in event.
 |thirdPartyResourceDefault|
 |unknownFutureValue|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

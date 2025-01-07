@@ -27,6 +27,9 @@ For examples of an Internet message header, see
 |name|string|Represents the key in a key-value pair.|
 |value|string|The value in a key-value pair.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

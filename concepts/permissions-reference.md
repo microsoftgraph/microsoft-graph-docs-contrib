@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 12/09/2024
+ms.date: 01/06/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -267,7 +267,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read all applications and service principals without a signed-in user. | Allows the app to read applications and service principals on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *Application.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Application.Read.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -280,7 +280,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update and delete applications and service principals without a signed-in user.  Does not allow management of consent grants. | Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. Does not allow management of consent grants. |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *Application.ReadWrite.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Application.ReadWrite.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Application.ReadWrite.All](../includes/permissions-notes/application.readwrite.all.md)]
 
@@ -772,7 +772,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read events of all calendars without a signed-in user. | Allows the app to read events in user calendars. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Calendars.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Calendars.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Calendars.Read](../includes/permissions-notes/calendars.read.md)]
 
@@ -787,7 +787,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Calendars.Read.Shared* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Calendars.Read.Shared* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -800,7 +800,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read events in user calendars, except for properties such as body, attachments, and extensions. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Calendars.ReadBasic* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Calendars.ReadBasic* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -824,7 +824,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update, and delete events of all calendars without a signed-in user. | Allows the app to create, read, update, and delete events in user calendars. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Calendars.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Calendars.ReadWrite* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Calendars.ReadWrite](../includes/permissions-notes/calendars.readwrite.md)]
 
@@ -1470,7 +1470,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read all contacts in all mailboxes without a signed-in user. | Allows the app to read user contacts.   |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Contacts.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Contacts.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Contacts.Read](../includes/permissions-notes/contacts.read.md)]
 
@@ -1496,7 +1496,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user. | Allows the app to create, read, update, and delete user contacts. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Contacts.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Contacts.ReadWrite* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Contacts.ReadWrite](../includes/permissions-notes/contacts.readwrite.md)]
 
@@ -1555,7 +1555,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the application to list and query user profile information associated with the current tenant on behalf of the signed-in user.  It also permits the application to export external user data (e.g. customer content or system-generated logs), associated with the current tenant on behalf of the signed-in user. |
 | AdminConsentRequired | - | Yes |
 
-![personal Microsoft accounts][MSA] The *CrossTenantUserProfileSharing.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *CrossTenantUserProfileSharing.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -1568,7 +1568,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the application to list and query any shared user profile information associated with the current tenant without a signed-in user.  It also permits the application to export external user data (e.g. customer content or system-generated logs), for any user associated with the current tenant without a signed-in user. | Allows the application to list and query any shared user profile information associated with the current tenant on behalf of the signed-in user.  It also permits the application to export external user data (e.g. customer content or system-generated logs), for any user associated with the current tenant on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *CrossTenantUserProfileSharing.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *CrossTenantUserProfileSharing.Read.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -1801,7 +1801,18 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to launch another app or communicate with another app on a user's device on behalf of the signed-in user. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Device.Command* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Device.Command* delegated permission is also available for consent in personal Microsoft accounts.
+
+---
+
+### Device.CreateFromOwnedTemplate
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | edc92e89-a987-48a9-911a-a7b1967dd7b1 |
+| DisplayText | - | Create devices based on owned device templates |
+| Description | - | Allows the app to create device objects based on device templates owned by the signed-in user, on behalf of the signed in user. |
+| AdminConsentRequired | - | Yes |
 
 ---
 
@@ -1814,7 +1825,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read a user's list of devices on behalf of the signed-in user. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Device.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Device.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -1827,7 +1838,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read your organization's devices' configuration information without a signed-in user. | Allows the app to read your organization's devices' configuration information on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *Device.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Device.Read.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -2028,6 +2039,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes |
 
 [!INCLUDE [DeviceManagementServiceConfig.ReadWrite.All](../includes/permissions-notes/devicemanagementserviceconfig.readwrite.all.md)]
+
+---
+
+### DeviceTemplate.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | dd9febb5-0c6d-419f-b256-3afe12c6adeb | 2bcae0b0-aa93-48e4-a9e4-855482dffdcd |
+| DisplayText | Read all device templates | Read all device templates |
+| Description | Allows the app to read all device templates, without a signed-in user. | Allows the app to read all device templates, on behalf of the signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### DeviceTemplate.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9fadb66e-6421-4744-aede-4ab6fb98a884 | 2d372e98-f1ae-406c-a157-2ea83f6f5e4a |
+| DisplayText | Read and write all device templates | Read and write all device templates |
+| Description | Allows the app to create, read, update and delete any device template, without a signed-in user. It also allows the app to add or remove owners on any device template. | Allows the app to create, read, update and delete the device template, on behalf of the signed in user. It also allows the app to add or remove owners on any device template. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -2642,7 +2675,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read the signed-in user's files. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Files.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Files.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Files.Read](../includes/permissions-notes/files.read.md)]
 
@@ -2657,7 +2690,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read all files in all site collections without a signed in user. | Allows the app to read all files the signed-in user can access. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Files.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Files.Read.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -2683,7 +2716,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read, create, update and delete the signed-in user's files. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Files.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Files.ReadWrite* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Files.ReadWrite](../includes/permissions-notes/files.readwrite.md)]
 
@@ -2698,7 +2731,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read, create, update and delete all files in all site collections without a signed in user. | Allows the app to read, create, update and delete all files the signed-in user can access. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Files.ReadWrite.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Files.ReadWrite.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -2711,7 +2744,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read, create, update and delete files in the application's folder without a signed in user. | (Preview) Allows the app to read, create, update and delete files in the application's folder. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Files.ReadWrite.AppFolder* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Files.ReadWrite.AppFolder* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -3038,7 +3071,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to have the same access to mailboxes as the signed-in user via IMAP protocol. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *IMAP.AccessAsUser.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *IMAP.AccessAsUser.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -3458,7 +3491,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read mail in all mailboxes without a signed-in user. | Allows the app to read the signed-in user's mailbox. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Mail.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Mail.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Mail.Read](../includes/permissions-notes/mail.read.md)]
 
@@ -3486,7 +3519,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read basic mail properties in all mailboxes without a signed-in user. Includes all properties except body, previewBody, attachments and any extended properties. | Allows the app to read email in the signed-in user's mailbox except body, previewBody, attachments and any extended properties. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Mail.ReadBasic* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Mail.ReadBasic* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -3521,7 +3554,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail. | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Mail.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Mail.ReadWrite* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Mail.ReadWrite](../includes/permissions-notes/mail.readwrite.md)]
 
@@ -3549,7 +3582,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to send mail as any user without a signed-in user. | Allows the app to send mail as users in the organization. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Mail.Send* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Mail.Send* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Mail.Send](../includes/permissions-notes/mail.send.md)]
 
@@ -3665,7 +3698,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read user's mailbox settings without a signed-in user. Does not include permission to send mail. | Allows the app to the read user's mailbox settings. Does not include permission to send mail. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *MailboxSettings.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *MailboxSettings.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [MailboxSettings.Read](../includes/permissions-notes/mailboxsettings.read.md)]
 
@@ -3680,7 +3713,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update, and delete user's mailbox settings without a signed-in user. Does not include permission to send mail. | Allows the app to create, read, update, and delete user's mailbox settings. Does not include permission to send mail. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *MailboxSettings.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *MailboxSettings.ReadWrite* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [MailboxSettings.ReadWrite](../includes/permissions-notes/mailboxsettings.readwrite.md)]
 
@@ -3748,6 +3781,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 920def01-ca61-4d2d-b3df-105b46046a70 | 77af1528-84f3-4023-8d90-d219cd433108 |
 | DisplayText | Read and write all multi-tenant organization details and tenants | Read and write multi-tenant organization details and tenants |
 | Description | Allows the app to read and write all multi-tenant organization details and tenants, without a signed-in user. | Allows the app to read and write multi-tenant organization details and tenants on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### MutualTlsOauthConfiguration.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 6daaff82-2880-496d-9d80-57e8e31195e2 | 51ae584e-e736-4718-897b-10af70f8e3cc |
+| DisplayText | Read all configurations used for mutual-TLS client authentication. | Read all configurations used for mutual-TLS client authentication. |
+| Description | Allows the app to read configuration used for OAuth 2.0 mutual-TLS client authentication, without a signed-in user. This includes reading trusted certificate authorities. | Allows the app to read configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. This includes reading trusted certificate authorities. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### MutualTlsOauthConfiguration.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 78bbf8cf-07d8-45ba-b0eb-1a7b48efbcf1 | a51115bc-f64f-498f-bcee-00dcd28f4a03 |
+| DisplayText | Read and write all configurations used for mutual-TLS client authentication. | Read and write all configurations used for mutual-TLS client authentication. |
+| Description | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, without a signed-in user. This includes reading and updating trusted certificate authorities. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. This includes adding and updating trusted certificate authorities. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -3838,7 +3893,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read the titles of OneNote notebooks and sections and to create new pages, notebooks, and sections on behalf of the signed-in user. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Notes.Create* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Notes.Create* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -3851,7 +3906,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read OneNote notebooks on behalf of the signed-in user. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Notes.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Notes.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -3875,7 +3930,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read, share, and modify OneNote notebooks on behalf of the signed-in user. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Notes.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Notes.ReadWrite* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -3910,7 +3965,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to deliver its notifications on behalf of signed-in users. Also allows the app to read, update, and delete the user's notification items for this app. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Notifications.ReadWrite.CreatedByApp* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Notifications.ReadWrite.CreatedByApp* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -4311,7 +4366,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read a ranked list of relevant people of the signed-in user. The list includes local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype). |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *People.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *People.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -4412,7 +4467,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read all your organization's policies without a signed in user. | Allows the app to read your organization's policies on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *Policy.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Policy.Read.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -4502,7 +4557,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and write all authentication method policies for the tenant, without a signed-in user.  | Allows the app to read and write the authentication method policies, on behalf of the signed-in user.  |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *Policy.ReadWrite.AuthenticationMethod* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Policy.ReadWrite.AuthenticationMethod* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -4658,7 +4713,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to have the same access to mailboxes as the signed-in user via POP protocol. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *POP.AccessAsUser.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *POP.AccessAsUser.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -5107,7 +5162,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to see your users' basic profile (e.g., name, picture, user name, email address) |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *profile* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *profile* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [profile](../includes/permissions-notes/profile.md)]
 
@@ -5308,6 +5363,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read all resource specific permissions granted on user accounts | - |
 | Description | Allows the app to read all resource specific permissions granted on user accounts, without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
+
+---
+
+### RiskPreventionProviders.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2a6baefd-edea-4ff6-b24e-bebcaa27a50d | e197c06f-ae7b-4398-b0a2-89f76ebca159 |
+| DisplayText | Read all identity risk prevention providers | Read all identity risk prevention providers |
+| Description | Allows the app to read your organization's risk prevention providers, without a signed-in user. | Allows the app to read your organization's risk prevention providers, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### RiskPreventionProviders.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 7fc7225d-eb37-4c39-90f3-a33a57cf1081 | 2a7babba-9623-4109-bc9c-79728cf3bb4f |
+| DisplayText | Read and write all identity risk prevention providers | Read and write all identity risk prevention providers |
+| Description | Allows the app to read and write your organization's risk prevention providers, without a signed-in user. | Allows the app to read and write your organization's risk prevention providers, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -5839,7 +5916,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read your tenant's service health information, without a signed-in user. Health information may include service issues or service health overviews. | Allows the app to read your tenant's service health information on behalf of the signed-in user. Health information may include service issues or service health overviews. |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *ServiceHealth.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *ServiceHealth.Read.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -5852,7 +5929,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read your tenant's service announcement messages, without a signed-in user. Messages may include information about new or changed features. | Allows the app to read your tenant's service announcement messages on behalf of the signed-in user. Messages may include information about new or changed features. |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *ServiceMessage.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *ServiceMessage.Read.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -5865,7 +5942,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to update service announcement messages' user status on behalf of the signed-in user. The message status can be marked as read, archive, or favorite. |
 | AdminConsentRequired | - | Yes |
 
-![personal Microsoft accounts][MSA] The *ServiceMessageViewpoint.Write* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *ServiceMessageViewpoint.Write* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -5922,7 +5999,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read all the short notes a sign-in user has access to. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *ShortNotes.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *ShortNotes.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -5946,7 +6023,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read, create, edit, and delete short notes of a signed-in user. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *ShortNotes.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *ShortNotes.ReadWrite* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -5970,7 +6047,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to have full control of all site collections without a signed in user. | Allows the application to have full control of all site collections on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *Sites.FullControl.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Sites.FullControl.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -5994,7 +6071,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read documents and list items in all site collections without a signed in user. | Allows the application to read documents and list  items in all site collections on behalf of the signed-in user |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Sites.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Sites.Read.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -6007,7 +6084,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update, and delete documents and list items in all site collections without a signed in user. | Allows the application to edit or delete documents and list items in all site collections on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *Sites.ReadWrite.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Sites.ReadWrite.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -6031,7 +6108,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to be able to send emails from the user's mailbox using the SMTP AUTH client submission protocol. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *SMTP.Send* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *SMTP.Send* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -6132,7 +6209,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read the signed-in user's tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Tasks.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Tasks.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -6167,7 +6244,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to create, read, update, and delete the signed-in user's tasks and task lists, including any shared with the user. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *Tasks.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Tasks.ReadWrite* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -6281,6 +6358,72 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### TeamsAppInstallation.ManageSelectedForChat
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | d1ba22c6-3f02-4c91-addb-bc3399bcca88 |
+| DisplayText | - | Manage installation and permission grants of selected Teams apps in chats |
+| Description | - | Allows the app to read, install, upgrade, and uninstall selected Teams apps in chats the signed-in user can access. Gives the ability to manage permission grants for accessing those specific chats' data. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TeamsAppInstallation.ManageSelectedForChat.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 22b74aab-d9e4-46f7-9424-f24b42307227 | - |
+| DisplayText | Manage installation and permission grants of selected Teams apps in all chats | - |
+| Description | Allows the app to read, install, upgrade, and uninstall selected Teams apps in any chat, without a signed-in user. Gives the ability to manage permission grants for accessing those specific chats' data. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### TeamsAppInstallation.ManageSelectedForTeam
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | c67b2d7e-6b80-4218-938a-05e73058e42d |
+| DisplayText | - | Manage installation and permission grants of selected Teams apps in teams |
+| Description | - | Allows the app to read, install, upgrade, and uninstall Teams apps in teams the signed-in user can access. Gives the ability to manage permission grants for accessing those specific teams' data. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TeamsAppInstallation.ManageSelectedForTeam.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | b448d252-1f26-4227-b6ff-21ab510975a2 | - |
+| DisplayText | Manage installation and permission grants of selected Teams apps in all teams | - |
+| Description | Allows the app to read, install, upgrade, and uninstall selected Teams apps in any team, without a signed-in user. Gives the ability to manage permission grants for accessing those specific teams' data. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### TeamsAppInstallation.ManageSelectedForUser
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 830c2bd9-c335-4caf-bf83-c07fa8a23ef1 |
+| DisplayText | - | Manage installation and permission grants of selected Teams apps in users' personal scope |
+| Description | - | Allows the app to read, install, upgrade, and uninstall seleected Teams apps in user accounts, on behalf of the signed-in user. Gives the ability to manage permission grants for accessing those specific users' data. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TeamsAppInstallation.ManageSelectedForUser.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e97a9235-5b3c-43c4-b37d-6786a173fae4 | - |
+| DisplayText | Manage installation and permission grants of selected Teams apps for all user accounts | - |
+| Description | Allows the app to read, install, upgrade, and uninstall selected Teams apps in any user account, without a signed-in user. Gives the ability to manage permission grants for accessing those specific users' data. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### TeamsAppInstallation.Read.All
 
 | Category | Application | Delegated |
@@ -6354,6 +6497,72 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 9ce09611-f4f7-4abd-a629-a05450422a97 | - |
 | DisplayText | Read installed Teams apps for all users | - |
 | Description | Allows the app to read the Teams apps that are installed for any user, without a signed-in user. Does not give the ability to read application-specific settings. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### TeamsAppInstallation.ReadSelectedForChat
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 0f3420c2-c6ec-46de-ab72-fd51267087d5 |
+| DisplayText | - | Read selected installed Teams apps in chats |
+| Description | - | Allows the app to read the selected Teams apps that are installed in chats the signed-in user can access. Does not give the ability to read application-specific settings. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TeamsAppInstallation.ReadSelectedForChat.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 53d40ddb-9b27-4c97-b800-985be6041990 | - |
+| DisplayText | Read selected installed Teams apps in all chats | - |
+| Description | Allows the app to read the selected Teams apps that are installed in any chat, without a signed-in user. Does not give the ability to read application-specific settings. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### TeamsAppInstallation.ReadSelectedForTeam
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | b55df1c0-db20-435b-aef2-afe6ed487e16 |
+| DisplayText | - | Read selected installed Teams apps in teams |
+| Description | - | Allows the app to read the selected Teams apps that are installed in teams the signed-in user can access. Does not give the ability to read application-specific settings. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TeamsAppInstallation.ReadSelectedForTeam.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 93c6a289-70fd-489e-a053-6cf8f7d772f6 | - |
+| DisplayText | Read selected installed Teams apps in all teams | - |
+| Description | Allows the app to read the selected Teams apps that are installed in any team, without a signed-in user. Does not give the ability to read application-specific settings. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### TeamsAppInstallation.ReadSelectedForUser
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | fe2e4e1d-101f-4fb2-9cb1-9d6659db45d4 |
+| DisplayText | - | Read user's selected installed Teams apps |
+| Description | - | Allows the app to read the selected Teams apps that are installed for the signed-in user. Does not give the ability to read application-specific settings. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TeamsAppInstallation.ReadSelectedForUser.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 44fb0e7c-1f9a-47f1-bb9e-7f92d48ed288 | - |
+| DisplayText | Read selected installed Teams apps for all users | - |
+| Description | Allows an app to read, install, upgrade, and uninstall selected apps to any user, without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -6556,6 +6765,72 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### TeamsAppInstallation.ReadWriteSelectedForChat
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 690aa3b6-4b71-41c2-a990-77a8c4768d2b |
+| DisplayText | - | Manage selected Teams apps installed in chats |
+| Description | - | Allows the app to read, install, upgrade, and uninstall selected Teams apps in chats the signed-in user can access. Does not give the ability to read application-specific settings. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TeamsAppInstallation.ReadWriteSelectedForChat.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 25bbeaad-04be-4207-83ed-a263aae76ddf | - |
+| DisplayText | Manage selected installed Teams apps in all chats | - |
+| Description | Allows the app to read, install, upgrade, and uninstall selected Teams apps in any chat, without a signed-in user. Does not give the ability to read application-specific settings. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### TeamsAppInstallation.ReadWriteSelectedForTeam
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 9131c833-9a49-4c54-b38f-615ecfc4fc69 |
+| DisplayText | - | Manage selected Teams apps installed in teams |
+| Description | - | Allows the app to read, install, upgrade, and uninstall selected Teams apps in teams the signed-in user can access. Does not give the ability to read application-specific settings. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TeamsAppInstallation.ReadWriteSelectedForTeam.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 7b5823ae-d0f2-424d-b90c-d843ffada7d9 | - |
+| DisplayText | Manage selected installed Teams apps in all teams | - |
+| Description | Allows the app to read, install, upgrade, and uninstall selected Teams apps in any team, without a signed-in user. Does not give the ability to read application-specific settings. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### TeamsAppInstallation.ReadWriteSelectedForUser
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | ea819e27-c92a-4118-b83b-4540b125d744 |
+| DisplayText | - | Manage selected Teams apps installed for a user |
+| Description | - | Allows the app to read, install, upgrade, and uninstall selected Teams apps installed for the signed in user. Does not give the ability to read application-specific settings. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TeamsAppInstallation.ReadWriteSelectedForUser.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 650a76ec-4118-4b25-9d3a-1f98048a5ee0 | - |
+| DisplayText | Manage selected Teams apps installed for all users | - |
+| Description | Allows the app to read, install, upgrade, and uninstall selected Teams apps for any user, without a signed-in user. Does not give the ability to read application-specific settings. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### TeamsAppInstallation.ReadWriteSelfForChat
 
 | Category | Application | Delegated |
@@ -6640,6 +6915,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | bdd80a03-d9bc-451d-b7c4-ce7c63fe3c8f | 39d65650-9d3e-4223-80db-a335590d027e |
 | DisplayText | Read and change all teams' settings | Read and change teams' settings |
 | Description | Read and change all teams' settings, without a signed-in user. | Read and change all teams' settings, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### TeamsPolicyUserAssign.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 1801e8f4-cf09-4c4e-a1b5-036dfcca6c90 | 6997c35c-a586-440c-8a0b-4ffe5d118dc0 |
+| DisplayText | Read and Write Teams policy user assignment and unassigment for all policy types. | Read and Write Teams policy user assignment and unassigment for all policy types. |
+| Description | Allow the app to read or write/update the policy assignment and unassigment for Teams users for all policy type categories. | Allow the app to read or write/update the policy assignment and unassigment for Teams users for all policy type categories. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6851,7 +7137,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create chat and channel messages, without a signed in user. The app specifies which user appears as the sender, and can backdate the message to appear as if it was sent long ago. The messages can be sent to any chat or channel in the organization. | - |
 | AdminConsentRequired | Yes | - |
 
-![personal Microsoft accounts][MSA] The *Teamwork.Migrate.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *Teamwork.Migrate.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -7282,7 +7568,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *User.Read* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *User.Read* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [User.Read](../includes/permissions-notes/user.read.md)]
 
@@ -7297,7 +7583,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read user profiles without a signed in user. | Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *User.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *User.Read.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 
@@ -7310,7 +7596,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read a basic set of profile properties of other users in your organization without a signed-in user. Includes display name, first and last name, email address, open extensions, and photo. | Allows the app to read a basic set of profile properties of other users in your organization on behalf of the signed-in user. This includes display name, first and last name, email address and photo. |
 | AdminConsentRequired | Yes | No |
 
-![personal Microsoft accounts][MSA] The *User.ReadBasic.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *User.ReadBasic.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [User.ReadBasic.All](../includes/permissions-notes/user.readbasic.all.md)]
 
@@ -7325,7 +7611,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read your profile. It also allows the app to update your profile information on your behalf. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *User.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *User.ReadWrite* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [User.ReadWrite](../includes/permissions-notes/user.readwrite.md)]
 
@@ -7340,7 +7626,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and update user profiles without a signed in user. | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
-![personal Microsoft accounts][MSA] The *User.ReadWrite.All* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *User.ReadWrite.All* delegated permission is also available for consent in personal Microsoft accounts.
 
 [!INCLUDE [User.ReadWrite.All](../includes/permissions-notes/user.readwrite.all.md)]
 
@@ -7366,7 +7652,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read and report the signed-in user's activity in the app. |
 | AdminConsentRequired | - | No |
 
-![personal Microsoft accounts][MSA] The *UserActivity.ReadWrite.CreatedByApp* delegated permission is available for consent in personal Microsoft accounts.
+![personal Microsoft accounts][MSA] The *UserActivity.ReadWrite.CreatedByApp* delegated permission is also available for consent in personal Microsoft accounts.
 
 ---
 

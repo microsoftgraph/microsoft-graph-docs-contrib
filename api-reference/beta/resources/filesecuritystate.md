@@ -25,6 +25,9 @@ Contains information about the file (not process) related to the alert.
 |path|String|Full file path of the file/imageFile.|
 |riskScore|String|Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a percentage.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

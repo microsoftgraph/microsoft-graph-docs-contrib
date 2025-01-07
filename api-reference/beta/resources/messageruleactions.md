@@ -32,6 +32,9 @@ Represents the set of actions that are available to a rule.
 | stopProcessingRules | Boolean | Indicates whether subsequent rules should be evaluated. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

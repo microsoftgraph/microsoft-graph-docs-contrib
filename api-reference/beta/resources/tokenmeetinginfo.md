@@ -24,6 +24,9 @@ In the event that a call is disconnected, this information can help you rejoin t
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
 | token                        | String  | The token used to join the call.                                                 |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

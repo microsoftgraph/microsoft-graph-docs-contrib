@@ -27,6 +27,9 @@ You can specify either a **formula** or **value** at a time.
 
 SharePoint formulas use a syntax similar to Excel formulas. For more information, see [Examples of common formulas in SharePoint Lists](https://support.microsoft.com/office/examples-of-common-formulas-in-lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3).
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

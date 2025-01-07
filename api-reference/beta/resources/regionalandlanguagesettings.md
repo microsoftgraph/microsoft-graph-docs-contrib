@@ -34,6 +34,9 @@ An open type that represents a user's preferences for languages in various conte
 | regionalFormatOverrides    | [regionalFormatOverrides](regionalformatoverrides.md) | Allows a user to override their defaultRegionalFormat with field specific formats.<br><br>Returned by default.                                                      |
 | translationPreferences     | [translationPreferences](translationPreferences.md)   | The user's preferred settings when consuming translated documents, emails, messages, and websites.<br><br>Returned by default. Not nullable.                                       |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following is a JSON definition of the resource.

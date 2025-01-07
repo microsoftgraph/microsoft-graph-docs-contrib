@@ -27,6 +27,9 @@ The certification property of an application is read-only, and can't be manually
 |isPublisherAttested|Boolean|Indicates whether the application has been self-attested by the application developer or the publisher.|
 |lastCertificationDateTime|DateTimeOffset|The timestamp when the certification for the application was most recently added or updated.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

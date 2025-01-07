@@ -21,12 +21,7 @@ var requestBody = new WorkforceIntegration
 	},
 	Url = "https://ABCWorkforceIntegration.com/Contoso/",
 	SupportedEntities = WorkforceIntegrationSupportedEntities.Shift | WorkforceIntegrationSupportedEntities.SwapRequest,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"eligibilityFilteringEnabledEntities" , "SwapRequest"
-		},
-	},
+	EligibilityFilteringEnabledEntities = EligibilityFilteringEnabledEntities.SwapRequest,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -43,6 +43,9 @@ The following table shows the mapping between the **id** value and the source sy
 
 For more information about how to set the values of properties in the **profileSourceAnnotation** resource, see [Where do property values come from](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data).
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

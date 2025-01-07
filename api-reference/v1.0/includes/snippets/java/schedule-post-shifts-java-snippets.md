@@ -22,9 +22,7 @@ LinkedList<ShiftActivity> activities = new LinkedList<ShiftActivity>();
 draftShift.setActivities(activities);
 shift.setDraftShift(draftShift);
 shift.setSharedShift(null);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("isStagedForDeletion", false);
-shift.setAdditionalData(additionalData);
+shift.setIsStagedForDeletion(false);
 Shift result = graphClient.teams().byTeamId("{team-id}").schedule().shifts().post(shift);
 
 

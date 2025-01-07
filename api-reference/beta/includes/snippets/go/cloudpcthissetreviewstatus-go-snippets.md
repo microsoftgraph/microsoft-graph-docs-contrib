@@ -24,6 +24,8 @@ userAccessLevel := graphmodels.RESTRICTED_CLOUDPCUSERACCESSLEVEL
 reviewStatus.SetUserAccessLevel(&userAccessLevel) 
 azureStorageAccountId := "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview"
 reviewStatus.SetAzureStorageAccountId(&azureStorageAccountId) 
+accessTier := graphmodels.HOT_CLOUDPCBLOBACCESSTIER 
+reviewStatus.SetAccessTier(&accessTier) 
 requestBody.SetReviewStatus(reviewStatus)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

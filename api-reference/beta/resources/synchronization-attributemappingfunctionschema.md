@@ -29,6 +29,9 @@ Describes a function that can be used in an [attribute mapping](synchronization-
 |id                        |String                    |Key. Read-only. |
 |parameters                  |[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection  |Collection of function parameters.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
