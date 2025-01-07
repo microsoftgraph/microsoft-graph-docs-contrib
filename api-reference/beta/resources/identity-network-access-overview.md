@@ -1,6 +1,8 @@
 ---
-title: "Manage Microsoft Entra identity and network access by using Microsoft Graph"
-description: "Microsoft Graph provides REST APIs to help manage identity and network access capabilities, most of which are available through Microsoft Entra."
+title: "Manage Microsoft Entra identity and 
+ by using Microsoft Graph"
+description: "Microsoft Graph provides REST APIs to help manage identity and 
+ capabilities, most of which are available through Microsoft Entra."
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.topic: overview
@@ -8,22 +10,27 @@ ms.subservice: entra-id
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw10, krbash
-ms.date: 12/31/2024
+ms.date: 01/07/2025
 ---
 
-# Manage Microsoft Entra identity and network access by using Microsoft Graph
+# Manage Microsoft Entra identity and 
+ by using Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-With Microsoft Graph, you can manage identity and network access capabilities, most of which are available through [Microsoft Entra](/entra/fundamentals/whatis). The APIs in Microsoft Graph help you to automate identity and network access management tasks and integrate with any application, and are the programmatic alternative to the administrator portals such as the Microsoft Entra admin center.
+With Microsoft Graph, you can manage identity and 
+ capabilities, most of which are available through [Microsoft Entra](/entra/fundamentals/whatis). The APIs in Microsoft Graph help you to automate identity and 
+ management tasks and integrate with any application, and are the programmatic alternative to the administrator portals such as the Microsoft Entra admin center.
 
-Microsoft Entra is a family of identity and network access capabilities that are available in the following products. All these capabilities are available through Microsoft Graph APIs:
+Microsoft Entra is a family of identity and 
+ capabilities that are available in the following products. All these capabilities are available through Microsoft Graph APIs:
 - Microsoft Entra ID that groups identity and access management (IAM) capabilities.
 - Microsoft Entra ID Governance
 - Microsoft Entra External ID
 - Microsoft Entra Verified ID
 - Microsoft Entra Permissions Management
-- Microsoft Entra Internet Access and Network Access
+- Microsoft Entra Internet Access and 
+
 
 ## Manage user identities
 
@@ -127,9 +134,9 @@ The following API use cases ar supported to customize how users interact with yo
 
 For more information, see [Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs](permissions-management-api-overview.md).
 
-## Network access management
+## Internet and private access management
 
-For more information, see [Secure access to cloud, public, and private apps using Microsoft Graph network access APIs](networkaccess-global-secure-access-api-overview.md).
+For more information, see [Secure access to cloud, public, and private apps using Microsoft Entra Internet Access and Microsoft Entra Private Access APIs (preview)](networkaccess-global-secure-access-api-overview.md).
 
 ## Partner tenant management
 Microsoft Graph also provides the following identity and access capabilities for Microsoft partners in the Cloud Solution Provider (CSP), Value Added Reseller (VAR), or Advisor programs to help manage their customer tenants.
@@ -139,6 +146,11 @@ Microsoft Graph also provides the following identity and access capabilities for
 | Manage contracts for the partner with its customers | [contract resource type](contract.md) and its associated APIs |
 | Microsoft partners can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives extra control to customers over their security posture while allowing them to receive support from the Microsoft resellers | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
 | Get detections and security alerts for unauthorized party abuse, account takeovers, and anomalous usage of Azure subscriptions in the customer tenants that you're responsible for. | See [Use the partner security alert API in Microsoft Graph](identity-network-access-overview.md) |
+
+
+## Identity and access reports
+
+Microsoft Entra records *every* activity in your tenant and produces reports and audit logs that you can analyze for monitoring, compliance, and troubleshooting. Records of these activities are also available through Microsoft Graph reporting and audit logs APIs, which allow you to analyze the activities with Azure Monitor logs and Log Analytics, or stream to third-party SIEM tools for further investigations. For more information, see [Identity and access reports API overview](../resources/report-identity-access.md).
 
 ---
 
