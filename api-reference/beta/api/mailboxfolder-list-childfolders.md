@@ -1,6 +1,6 @@
 ---
 title: "List childFolders"
-description: "Get the folder collection under the specified folder."
+description: "Get the mailboxFolder collection under the specified folder in a mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the folder collection under the specified folder in the mailbox.
+Get the [mailboxFolder](../resources/mailboxfolder.md) collection under the specified folder in a mailbox.
 
 ## Permissions
 
@@ -58,11 +58,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-The following example shows how to get the mailbox folder collection under a specified folder.
-
 ### Request
 
-The following example shows a request.
+The following example shows how to get the mailbox folder collection under a specified folder.
+
 <!-- {
   "blockType": "request",
   "name": "list_mailboxfolder"
