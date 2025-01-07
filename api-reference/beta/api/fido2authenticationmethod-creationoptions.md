@@ -174,3 +174,6 @@ Content-Type: application/json
 }
 ```
 
+> [!NOTE]
+> Key IDs returned by the creationOptions request are formatted in Base64URL using a padding number suffix. If decoding the Key IDs is required converting the trailing integer value to base64 padding characters will be needed. 
+
