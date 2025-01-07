@@ -1,6 +1,6 @@
 ---
 title: "exchangeSettings resource type"
-description: "Represents the exchange settings for mailbox discovery."
+description: "Represents the Exchange settings for mailbox discovery."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -19,7 +19,7 @@ Represents the Exchange settings for mailbox discovery.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|inPlaceArchiveMailboxId|String|The unique identifier for the user's In-Place Archive mailbox.|
+|inPlaceArchiveMailboxId|String|The unique identifier for the user's in-place archive mailbox.|
 |primaryMailboxId|String|The unique identifier for the user's primary mailbox.|
 
 ## JSON representation
@@ -33,7 +33,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.exchangeSettings",
-  "primaryMailboxId": "String",
-  "inPlaceArchiveMailboxId": "String"
+  "inPlaceArchiveMailboxId": "String",
+  "primaryMailboxId": "String"
 }
 ```
