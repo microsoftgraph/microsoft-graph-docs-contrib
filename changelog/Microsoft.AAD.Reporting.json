@@ -5,22 +5,6 @@
         {
           "Id": "4aa1ca1f-e398-4aa5-930b-27f89fe52dcf",
           "ApiChange": "Member",
-          "ChangedApiName": "attributeCollectionStart",
-          "ChangeType": "Addition",
-          "Description": "Added the `attributeCollectionStart` member to the **authenticationEventType** enumeration.",
-          "Target": "authenticationEventType"
-        },
-        {
-          "Id": "4aa1ca1f-e398-4aa5-930b-27f89fe52dcf",
-          "ApiChange": "Member",
-          "ChangedApiName": "attributeCollectionSubmit",
-          "ChangeType": "Addition",
-          "Description": "Added the `attributeCollectionSubmit` member to the **authenticationEventType** enumeration.",
-          "Target": "authenticationEventType"
-        },
-        {
-          "Id": "4aa1ca1f-e398-4aa5-930b-27f89fe52dcf",
-          "ApiChange": "Member",
           "ChangedApiName": "emailOtpSend",
           "ChangeType": "Addition",
           "Description": "Added the `emailOtpSend` member to the **authenticationEventType** enumeration.",
