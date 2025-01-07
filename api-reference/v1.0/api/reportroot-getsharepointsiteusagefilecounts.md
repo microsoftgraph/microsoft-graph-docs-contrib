@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint site usage](https://support.office.com/microsoft-365/admin/activity-reports/sharepoint-site-usage-ww?view=o365-worldwide).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint site usage](https://learn.microsoft.com/microsoft-365/admin/activity-reports/sharepoint-site-usage-ww?view=o365-worldwide).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
