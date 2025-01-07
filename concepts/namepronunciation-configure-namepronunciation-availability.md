@@ -1,5 +1,5 @@
 ---
-title: "Manage namepronounciation settings for an organization using the Microsoft Graph API"
+title: "Manage name pronunciation settings for an organization by using the Microsoft Graph API"
 description: "Learn how to use Microsoft Graph APIs to enable, disable, or get settings that manage name pronunciation in an organization."
 author: "fondieki"
 ms.localizationpriority: high
@@ -8,9 +8,9 @@ ms.custom: scenarios:getting-started
 ms.date: 11/12/2024
 ---
 
-# Manage pronunciation settings for an organization using the Microsoft Graph API
+# Manage pronunciation settings for an organization
 
-Name Pronunciation allows a user to record an audio file of how their name is pronounced. With the Microsoft Graph Name Pronunciation API, you can enable, disable, or get settings that manage name pronunciation in an organization. For example, you can control the display within the organization of pronunciations that users create for themselves. 
+Name pronunciation allows a user to record an audio file of how their name is pronounced. With the Microsoft Graph name pronunciation API, you can enable, disable, or get settings that manage name pronunciation in an organization. For example, you can control the display within the organization of pronunciations that users create for themselves. 
 
 Correctly pronouncing someone's name shows inclusion and respect as it's a vital part of one's identity. By sharing how one's name is pronounced, we can avoid making assumptions about how to address them, especially during a first interaction. In a hybrid, multicultural work or school environment, the simple act of pronouncing names correctly can help build trust and improve communication. 
 
