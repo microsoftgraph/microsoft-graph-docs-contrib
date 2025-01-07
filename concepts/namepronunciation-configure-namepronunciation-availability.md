@@ -32,7 +32,7 @@ Administrators can decide whether to display pronunciations that users set up in
 >
 > When an admin toggles name pronunciation off, the process of deletion is triggered, and all pronunciation data created by users starts to be deleted. Deleting name pronunciation data can take up to 30 days. If you turn pronunciation back on within that period, any recordings that existed prior to the delete signal that haven't yet been deleted from Microsoft servers will be resurfaced and become visible in Microsoft 365 experiences on the profile cards.
 
-## Configure name pronunciation settings using PowerShell
+## Configure name pronunciation settings by using PowerShell
 
 You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure name pronunciation settings in your organization.
 
@@ -65,10 +65,10 @@ First, create a Microsoft Graph session with the required scope and consent to t
 By default, name pronunciations are turned off. To make name pronunciation available in your organization, update the settings using the Microsoft Graph PowerShell module.
 
 First, create a Microsoft Graph session with the required permissions.
->
-> ```powershell
->    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
-> ```
+
+```powershell
+   Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+```
 
 After you set the permissions, use the following command, specifying `true` for the value of `-IsEnabledInOrganization`.
 
