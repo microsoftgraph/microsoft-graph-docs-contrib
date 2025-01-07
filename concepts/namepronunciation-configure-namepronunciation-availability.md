@@ -5,7 +5,7 @@ author: "fondieki"
 ms.localizationpriority: high
 ms.subservice: "people"
 ms.custom: scenarios:getting-started
-ms.date: 11/12/2024
+ms.date: 01/05/2025
 ---
 
 # Manage pronunciation settings for an organization
