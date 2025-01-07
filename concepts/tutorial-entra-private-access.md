@@ -743,7 +743,7 @@ Assign the user to the service principal and grant them the `User` app role. In 
 #### Request
 
 <!-- {
-  "blockType": "ignore",
+  "blockType": "request",
   "name": "tutorial_configure_entraprivateaccess_create_approleassignment"
 }-->
 ```http
@@ -790,7 +790,7 @@ Record the **id** of the profile to use.
 
 #### Request
 <!-- {
-  "blockType": "ignore",
+  "blockType": "request",
   "name": "tutorial_configure_entraprivateaccess_list_forwardingprofiles"
 }-->
 ```http
@@ -831,7 +831,7 @@ Content-type: application/json
 
 The request returns a `204 No content` response.
 <!-- {
-  "blockType": "ignore",
+  "blockType": "request",
   "name": "tutorial_configure_entraprivateaccess_enable_forwardingprofile"
 }-->
 ```http
@@ -847,7 +847,7 @@ PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/983891f5
 This capability is only available for Global Secure Access private applications of type Quick Access. The request returns a `204 No Content` response code.
 
 <!-- {
-  "blockType": "ignore",
+  "blockType": "request",
   "name": "tutorial_configure_entraprivateaccess_enable_dnsresolution"
 }-->
 ```http
@@ -862,7 +862,7 @@ PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd
 
 ### Request 
 <!-- {
-  "blockType": "ignore",
+  "blockType": "request",
   "name": "tutorial_configure_entraprivateaccess_create_dnsSuffix"
 }-->
 ```http
