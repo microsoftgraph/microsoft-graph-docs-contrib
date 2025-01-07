@@ -41,6 +41,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | id                  | String                                        | The unique identifier for the user.                                                                                                                                                                                                                                                                             |
 | outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The out of office settings for a user.                                                                                                                                                                                                                                                     |
 | statusMessage | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
+| sequenceNumber | string | The lexicographically sortable string stamp of a presence object version. |
 
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
 
