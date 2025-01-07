@@ -1,6 +1,6 @@
 ---
-title: "List mailboxItems"
-description: "Get the items within a specified folder"
+title: "List items"
+description: "Get the mailboxItem collection within a specified folder in a mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# List mailboxItems
+# List items
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the mailbox items within a specified folder in the mailbox.
+Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified folder in a mailbox.
 
 ## Permissions
 
@@ -58,9 +58,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List Items
+### Example 1: List items
 
-This example gets the items in the mailbox under the specified folder.
+The following example shows how to get the mailbox items within a specified folder in a mailbox.
 
 #### Request
 
@@ -119,10 +119,9 @@ Content-length: 232
 }
 ```
 
-### Example 2: List Items With Query Parameter
+### Example 2: List items using query parameter
 
-This example gets the top item in the mailbox under the specified folder. It uses $select to return a subset of the properties of each item in the response.
-Finally the example also uses $filter query paramter to refine the result and only return items with `createdDateTime` between 2021-08-21 and 2021-09-16.
+The following example uses the `$filter`, `$select`, and `$top` query parameters. The `$filter` parameter refines the results and returns only items with **createdDateTime** between `2021-08-21` and `2021-09-16`.  The `$select` parameter specifies to return only a subset of the properties of each item in the response, and the `$top` parameter sets the page size of the result set to return only the top item in the mailbox under the specified folder.
 
 #### Request
 
