@@ -99,7 +99,11 @@ GET https://graph.microsoft.com/beta/users/{usersId}/authentication/fido2Methods
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> [!NOTE]
+> * The **creationOptions** requests return key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value to base64 padding characters.
+> * The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -173,7 +177,3 @@ Content-Type: application/json
   }
 }
 ```
-
-> [!NOTE]
-> Key IDs returned by the creationOptions request are formatted in Base64URL using a padding number suffix. If decoding the Key IDs is required converting the trailing integer value to base64 padding characters will be needed. 
-
