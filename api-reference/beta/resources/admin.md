@@ -5,6 +5,7 @@ author: "angelgolfer-ms"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: resourcePageType
+ms.date: 10/21/2024
 ---
 
 # admin resource type

@@ -1,10 +1,11 @@
 ---
 title: "Delete fileStorageContainer"
 description: "Delete a fileStorageContainer object."
-author: "tonchan-msft"
+author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/14/2024
 ---
 
 # Delete fileStorageContainer
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. This method moves the **fileStorageContainer**  to the recycle bin, instead of permanently deleting it.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -52,9 +53,10 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
 The following example shows a request.
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_filestoragecontainer"

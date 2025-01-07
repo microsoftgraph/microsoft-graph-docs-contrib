@@ -6,6 +6,7 @@ doc_type: conceptualPageType
 ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
+ms.date: 03/08/2024
 ---
 
 # Privileged Identity Management iteration 2 APIs

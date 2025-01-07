@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "rungari"
+ms.date: 04/03/2024
 ---
 
 # cloudRealtimeCommunicationInfo resource type
@@ -20,6 +21,9 @@ Represents a group of properties that relate to Microsoft real-time communicatio
 | Property                    | Type     | Description                                                                                      |
 | --------------------------- | -------- | ------------------------------------------------------------------------------------------------ |
 | isSipEnabled                | Boolean  | Indicates whether the user has a SIP-enabled client registered for them. Read-only.              |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

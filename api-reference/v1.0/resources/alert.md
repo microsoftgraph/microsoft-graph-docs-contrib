@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/16/2024
 ---
 
 # alert resource type (deprecated)

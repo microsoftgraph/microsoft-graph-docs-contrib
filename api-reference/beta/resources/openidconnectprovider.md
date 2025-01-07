@@ -5,8 +5,8 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
-ms.date: 11/16/2024
 toc.title: OpenID Connect identity provider (deprecated)
+ms.date: 11/16/2024
 ---
 
 # openIdConnectProvider resource type (deprecated)
@@ -51,6 +51,9 @@ For the list of API operations for managing the Open ID Connect provider, see [i
 |code|As per the authorization code flow, a code is returned back to Azure AD B2C. Azure AD B2C proceeds to call the token_endpoint to exchange the code for the token.|
 |id_token|An ID token is returned back to Azure AD B2C from the custom identity provider. |
 |token|An access token is returned back to Azure AD B2C from the custom identity provider. Currently not supported by Azure AD B2C. |
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -21,6 +21,9 @@ Represents the used and total directory quota for an [organization](organization
 |total|Int32| Total amount of the directory quota.|
 |used|Int32| Used amount of the directory quota. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

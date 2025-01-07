@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "14ec2f31-54af-4ef3-9b8d-d1bc2aac0dce",
+          "ApiChange": "Method",
+          "ChangedApiName": "remove",
+          "ChangeType": "Addition",
+          "Description": "Added the [remove](https://learn.microsoft.com/en-us/graph/api/conversationMember-remove?view=graph-rest-1.0) method to the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationMember?view=graph-rest-1.0) resource.",
+          "Target": "conversationMember"
+        }
+      ],
+      "Id": "14ec2f31-54af-4ef3-9b8d-d1bc2aac0dce",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-20T16:45:47.7228313Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6ab24fbb-65e9-4134-b04b-f31f3321f7ea",
           "ApiChange": "Method",
           "ChangedApiName": "remove",
@@ -2365,7 +2383,51 @@
     {
       "ChangeList": [
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "bd99be3e-66c5-44fa-8159-3b5788936946",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Addition",
+          "Description": "Added the [list allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "bd99be3e-66c5-44fa-8159-3b5788936946",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "allMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **allMembers** navigation property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "bd99be3e-66c5-44fa-8159-3b5788936946",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-20T13:04:38.8112517Z",
+      "WorkloadArea": "Teamwork and Communications",
+      "SubArea": ""
+    },
+   {
+      "ChangeList": [
+        {
+          "Id": "1a1004c8-bead-497d-8af6-e84a70b03ddf",
+          "ApiChange": "Property",
+          "ChangedApiName": "firstChannelName",
+          "ChangeType": "Addition",
+          "Description": "Added the **firstChannelName** property to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "1a1004c8-bead-497d-8af6-e84a70b03ddf",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-17T08:54:28.4245939Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {          
+          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
           "ApiChange": "Enumeration",
           "ChangedApiName": "aiInteractionType",
           "ChangeType": "Addition",
@@ -2373,7 +2435,7 @@
           "Target": "aiInteractionType"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionAttachment",
           "ChangeType": "Addition",
@@ -2381,7 +2443,7 @@
           "Target": "aiInteractionAttachment"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionContext",
           "ChangeType": "Addition",
@@ -2389,7 +2451,7 @@
           "Target": "aiInteractionContext"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionLink",
           "ChangeType": "Addition",
@@ -2397,7 +2459,7 @@
           "Target": "aiInteractionLink"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionMention",
           "ChangeType": "Addition",
@@ -2405,7 +2467,7 @@
           "Target": "aiInteractionMention"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionMentionedIdentitySet",
           "ChangeType": "Addition",
@@ -2413,7 +2475,7 @@
           "Target": "aiInteractionMentionedIdentitySet"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteraction",
           "ChangeType": "Addition",
@@ -2421,20 +2483,36 @@
           "Target": "aiInteraction"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionHistory"
+        },
+        {
+          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiUser](https://learn.microsoft.com/en-us/graph/api/resources/aiUser?view=graph-rest-beta) resource.",
+          "Target": "aiUser"
+        },
+        {
+          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method.",
+          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
           "Target": "aiInteractionHistory"
         }
       ],
-      "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+      "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-11-21T22:39:38.6194554Z",
+      "CreatedDateTime": "2024-11-24T07:19:22.6793915Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
+      "SubArea": "AI interactions"
     }
   ]
 }

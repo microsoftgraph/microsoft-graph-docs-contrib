@@ -5,6 +5,7 @@ author: "yuyaolian-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # chatRestrictions resource type
@@ -20,6 +21,9 @@ Specifies the configuration for meeting chat restrictions.
 | Property            | Type      | Description                                   |
 |:--------------------|:----------|:----------------------------------------------|
 | allowTextOnly  | Boolean   | Indicates whether only text is allowed in the meeting chat. Optional. |
+
+## Relationships
+None.
 
 ## JSON representation
 

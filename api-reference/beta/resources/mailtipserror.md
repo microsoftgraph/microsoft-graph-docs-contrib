@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # mailTipsError resource type
@@ -20,6 +21,9 @@ An error that occurs during an action.
 |:-----|:-----|:-----|
 | message | String | The error message. |
 | code | String | The error code. |
+
+## Relationships
+None.
 
 ## JSON representation
 

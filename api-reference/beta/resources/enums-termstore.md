@@ -5,6 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 author: mohitpcad
+ms.date: 03/06/2024
 ---
 
 # Microsoft Graph termstore enumeration values

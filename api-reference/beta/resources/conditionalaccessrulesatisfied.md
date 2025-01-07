@@ -24,6 +24,9 @@ Indicates the attributes related to applied conditional access policy or policie
 |ruleSatisfied|conditionalAccessRule|Refers to the conditional access policy conditions that were satisfied. The possible values are: `allApps`, `firstPartyApps`, `office365`, `appId`, `acr`, `appFilter`, `allUsers`, `guest`, `groupId`, `roleId`, `userId`, `allDevicePlatforms`, `devicePlatform`, `allLocations`, `insideCorpnet`, `allTrustedLocations`, `locationId`, `allDevices`, `deviceFilter`, `deviceState`, `unknownFutureValue`, `deviceFilterIncludeRuleNotMatched`, `allDeviceStates`, `anonymizedIPAddress`, `unfamiliarFeatures`, `nationStateIPAddress`, `realTimeThreatIntelligence`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `otherExternalUser`, `serviceProvider`, `microsoftAdminPortals`, `deviceCodeFlow`, `accountTransfer`, `insiderRisk`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `deviceFilterIncludeRuleNotMatched`, `allDeviceStates`, `anonymizedIPAddress`, `unfamiliarFeatures`, `nationStateIPAddress`, `realTimeThreatIntelligence`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `otherExternalUser`, `serviceProvider`, `microsoftAdminPortals`, `deviceCodeFlow`, `accountTransfer`, `insiderRisk`.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

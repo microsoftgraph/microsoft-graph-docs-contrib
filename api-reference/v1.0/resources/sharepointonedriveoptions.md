@@ -6,6 +6,7 @@ author: "yiwenwang"
 ms.subservice: "search"
 doc_type: "resourcePageType"
 toc.title: "SharePoint OneDrive options"
+ms.date: 09/18/2024
 ---
 
 # sharePointOneDriveOptions resource type

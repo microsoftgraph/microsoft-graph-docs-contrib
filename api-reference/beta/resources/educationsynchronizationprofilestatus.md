@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Synchronization profile status (deprecated)
+ms.date: 07/23/2024
 ---
 
 # educationSynchronizationProfileStatus resource type (deprecated)
@@ -37,6 +38,9 @@ Represents the synchronization status of a school data [synchronization profile]
 | status                      | educationSynchronizationStatus | The status of a sync. The possible values are: `paused`, `inProgress`, `success`, `error`, `validationError`, `quarantined`, `unknownFutureValue`, `extracting`, `validating`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `extracting`, `validating`.|
 | statusMessage | String                 | Status message for the synchronization stage of the current profile.                                        |
 
+
+## Relationships
+None.
 
 ## JSON representation
 

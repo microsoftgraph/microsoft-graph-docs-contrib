@@ -4,7 +4,7 @@ description: "Represents OpenIDConnect identity providers in an Azure Active Dir
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
-author: "brozbab"
+author: "namkedia"
 ms.date: 11/16/2024
 toc.title: OpenID Connect identity provider
 ---
@@ -55,6 +55,9 @@ For the list of API operations for managing OpenID Connect identity providers in
 |code|As per the authorization code flow, a code is returned back to Azure AD B2C. Azure AD B2C proceeds to call the token_endpoint to exchange the code for the token.|
 |id_token|An ID token is returned back to Azure AD B2C from the custom identity provider.|
 |token|An access token is returned back to Azure AD B2C from the custom identity provider. (This value isn't supported by Azure AD B2C at the moment)|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # attendanceInterval resource type
@@ -25,6 +26,9 @@ Contains information associated with an attendance interval in an [attendanceRec
 
 > [!TIP]
 > When data is lacking, the value of **joinDateTime** or **leaveDateTime** will be set to `null`, and the value of **durationInSeconds** will be set to `0` in the response body of the [Get meetingAttendanceReport](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) method.
+
+## Relationships
+None.
 
 ## JSON representation
 

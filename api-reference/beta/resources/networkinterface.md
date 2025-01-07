@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: cloud-pc
 author: "preetikr"
+ms.date: 07/08/2024
 ---
 
 # networkInterface resource type
@@ -22,6 +23,9 @@ Represents a Network Interface Card (NIC) associated with this host.
 |ipV6Address|String|Last Public (also known as global) IPv6 address associated with this NIC.|
 |localIpV6Address|String|Last local (link-local or site-local) IPv6 address associated with this NIC.|
 |macAddress|String|MAC address of the NIC on this host.|
+
+## Relationships
+None.
 
 ## JSON representation
 
