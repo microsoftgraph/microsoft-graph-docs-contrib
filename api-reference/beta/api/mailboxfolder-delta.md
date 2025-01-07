@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of folders that have been added, deleted, or removed from the user's mailbox.
+Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that have been added, deleted, or removed from the user's mailbox.
 
-A **delta** function call for folders in a mailbox is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can query for incremental changes in the folders. This allows you to maintain and synchronize a local store of a user's mail folders without having to fetch all the folders of that mailbox from the server every time.
+A **delta** function call for folders in a mailbox is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can query for incremental changes in the folders. This approach allows you to maintain and synchronize a local store of a user's mail folders without having to fetch all the folders of that mailbox from the server every time.
 
 ## Permissions
 
@@ -42,16 +42,16 @@ GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders
 
 ## Query parameters
 
-Tracking changes in folders incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
+Tracking changes in folders incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltaToken` and `$skipToken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
 | Query parameter|Description|
 |:----------------|:--------|
-| $deltatoken|A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same folder collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken|A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same folder collection.|
+| $deltaToken|A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same folder collection, which indicates the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skipToken|A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating further changes are available to be tracked in the same folder collection.|
 
 ### OData query parameters
 
-You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ & _parentMailboxUrl_ properties are always returned.
+You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The **id** & **parentMailboxUrl** properties are always returned.
 
 ## Request headers
 
@@ -67,19 +67,18 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [mailboxFolder](../resources/mailboxfolder.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [mailboxFolder](../resources/mailboxfolder.md) objects in the response body.
 
 ## Examples
 
-The following example shows how to make a single **delta** function call, and limit the maximum number of folders in the response body to 2.
-
-To track changes in the folders of a mailbox, you would make one or more **delta** function calls, with appropriate state tokens, to get the set of incremental changes since the last delta query.
-
-You can find a similar example that shows how to use the state tokens to track changes in the items of a folder: [Get incremental changes to messages in a folder](/graph/delta-query-messages). The main differences between tracking folders and tracking items in a folder are in the delta query request URLs, and the query responses returning **folder** rather than **item** collections.
-
 ### Request
 
-The following example shows a request.
+The following example shows how to make a single **delta** function call, and limit the maximum number of folders in the response body to two.
+
+To track changes in the folders of a mailbox, you make one or more **delta** function calls, with appropriate state tokens, to get the set of incremental changes since the last delta query.
+
+For a similar example that shows how to use the state tokens to track changes in the items of a folder, see [Get incremental changes to messages in a folder](/graph/delta-query-messages). The main differences between tracking folders and tracking items in a folder are in the delta query request URLs and the query responses that return **folder** rather than **item** collections.
+
 <!-- {
   "blockType": "request",
   "name": "mailboxfolderthis.delta"
@@ -92,9 +91,10 @@ Prefer: odata.maxpagesize=2
 
 ### Response
 
-If the request is successful, the response would include a state token, which is either a _skipToken_ (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). Respectively, they indicate whether you should continue with the round or you have completed getting all the changes for that round.
+If the request is successful, the response includes a state token that is either a `$skipToken` (in an **@odata.nextLink** response header) or a `$deltaToken` (in an **@odata.deltaLink** response header). Respectively, they indicate whether you should continue with the round or you completed getting all the changes for that round.
 
-The following example shows a _deltaToken_ in an **@odata.deltaLink** response header.
+The following example shows a `$deltaToken` in an **@odata.deltaLink** response header.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
