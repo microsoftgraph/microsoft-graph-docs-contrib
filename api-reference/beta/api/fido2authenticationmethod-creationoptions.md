@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}/authentication/fido2Methods
 The following example shows the response.
 
 > [!NOTE]
-> * The **creationOptions** request returns key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value to base64 padding characters.
+> * The **creationOptions** request returns excludeCredentials key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0,1,2 to same number of base64 padding characters.
 > * The response object shown here might be shortened for readability.
 
 <!-- {
