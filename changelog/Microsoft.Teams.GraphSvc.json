@@ -2513,6 +2513,24 @@
       "CreatedDateTime": "2024-11-24T07:19:22.6793915Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "AI interactions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "26e85dfd-093c-45e1-9df8-c8d10373a5f8",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHiddenForAllMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHiddenForAllMembers** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "26e85dfd-093c-45e1-9df8-c8d10373a5f8",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-06T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
