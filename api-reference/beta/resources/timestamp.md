@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: sharepoint
 author: "spgraph-docs-team"
+ms.date: 03/21/2024
 ---
 
 # timeStamp resource type
@@ -21,6 +22,9 @@ Date and time information for a point in time.
 |date|Date|The date portion of the timestamp.|
 |time|TimeOfDay|The time portion of the timestamp.|
 |timeZone|String|The timezone portion of the timestamp, which is one of the 24 longitudinal areas in the world.|
+
+## Relationships
+None.
 
 ## JSON representation
 

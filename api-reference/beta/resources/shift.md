@@ -5,6 +5,7 @@ author: "shanemalone"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # shift resource type
@@ -47,6 +48,9 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | teamInfo             | [shiftsTeamInfo](shiftsteaminfo.md)                  | Information of the team that the **shift** is in. |
 | userId               | String                      | ID of the user assigned to the **shift**. Required. |
 | userInfo             | [shiftsUserInfo](shiftsuserinfo.md)                  | Information of the user assigned to the **shift**. |
+
+## Relationships
+None.
 
 ## JSON representation
 

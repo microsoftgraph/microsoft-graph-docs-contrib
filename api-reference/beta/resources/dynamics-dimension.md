@@ -31,6 +31,9 @@ Represents a dimension in Dynamics 365 Business Central.
 |lastModifiedDateTime|datetime               |The last datetime the dimension was modified.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

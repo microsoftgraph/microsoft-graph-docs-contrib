@@ -21,6 +21,9 @@ Represents a base class for different types of review targets, each one with its
 ## Properties
 None.
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

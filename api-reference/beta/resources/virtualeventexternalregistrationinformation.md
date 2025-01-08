@@ -23,6 +23,9 @@ Represents the external information for a [virtual event registration](../resour
 |referrer|String| A URL or string that represents the location from which the registrant registered. Optional. |
 |registrationId|String| The identifier for a **virtualEventExternalRegistrationInformation** object. Optional. If set, the maximum supported length is 256 characters.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # participantInfo resource type
@@ -27,6 +28,9 @@ Contains additional properties about the participant identity
 | platformId       | String                          | The client platform ID of the participant. Read-only.    |
 | participantId    | String                          | The participant ID of the participant. Read-only.    |
 
+
+## Relationships
+None.
 
 ## JSON representation
 

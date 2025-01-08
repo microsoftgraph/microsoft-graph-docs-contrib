@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 05/23/2024
 ---
 
 # directoryDefinition resource type
@@ -41,6 +42,9 @@ Inherits from [entity](../resources/entity.md).
 |version|String|Read only value that indicates version discovered. `null` if discovery hasn't yet occurred.|
 |discoveryDateTime|DateTimeOffset| Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |discoverabilities|directoryDefinitionDiscoverabilities| Read-only value indicating what type of discovery the app supports. The possible values are: `None`, `AttributeNames`, `AttributeDataTypes`, `AttributeReadOnly`, `ReferenceAttributes`, `UnknownFutureValue`. This is a multi-valued object.| 
+
+## Relationships
+None.
 
 ## JSON representation
 

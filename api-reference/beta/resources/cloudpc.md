@@ -66,6 +66,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |disasterRecoveryCapability|[cloudPcDisasterRecoveryCapability](../resources/cloudpcdisasterrecoverycapability.md)|The disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type. The default value is `null` that indicates that the disaster recovery setting is disabled. To receive a response with the **disasterRecoveryCapability** property, `$select` and `$filter` it by `disasterRecoveryCapability/{subProperty}` in the request URL. For more information, see [Example 4: List Cloud PCs filtered by disaster recovery capability type](../api/cloudpc-get.md#example-4-list-cloud-pcs-filtered-by-disaster-recovery-capability-type). Read-only. |
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
+|frontlineCloudPcAvailability|[frontlineCloudPcAvailability](#frontlinecloudpcavailability-values)|The current availability of a frontline assigned Cloud PC. Possible values: `notApplicable`, `available`,`notAvailable` and `unknownFutureValue`. Default value is `notApplicable`. Read Only.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
@@ -141,6 +142,15 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |active|Indicates that the frontline Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
 |activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
 |standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A frontline Cloud PC in a standby state is still accessible by the user.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+
+### frontlineCloudPcAvailability values
+
+|Member|Description|
+|:---|:---|
+|notApplicable|Default. The Cloud PC is not a frontline-assigned type.|
+|available|The current frontline Cloud PC is available and the user is able to connect to it.|
+|notAvailable|The frontline Cloud PC is currently not available and the associated user will not be able to connect to it.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcProductType values

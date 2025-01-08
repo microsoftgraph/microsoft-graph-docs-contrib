@@ -26,6 +26,9 @@ Inherits from [identity](identity.md).
 | id | String | The user's object ID. Inherited from **identity**. |
 | tenantId | String | The user's tenant ID. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

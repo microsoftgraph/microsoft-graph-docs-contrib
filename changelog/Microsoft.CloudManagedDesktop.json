@@ -1,5 +1,31 @@
 {
   "changelog": [
+     {
+        "ChangeList": [
+          {
+            "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
+            "ApiChange": "Property",
+            "ChangedApiName": "userInitiatedDisasterRecoveryAllowed",
+            "ChangeType": "Addition",
+            "Description": "Added the **userInitiatedDisasterRecoveryAllowed** property to the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource.",
+            "Target": "cloudPcCrossRegionDisasterRecoverySetting"
+          },          
+          {
+            "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
+            "ApiChange": "Property",
+            "ChangedApiName": "crossRegionDisasterRecoveryEnabled",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the **crossRegionDisasterRecoveryEnabled** property of the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource. The **crossRegionDisasterRecoveryEnabled** property is deprecated and will no longer be supported effective February 11, 2025. For scenarios where **crossRegionDisasterRecoveryEnabled** is `true`, set **disasterRecoveryType** to `crossRegion`. For scenarios where **crossRegionDisasterRecoveryEnabled** is `false`,  set **disasterRecoveryType** to `notconfigured`.",
+            "Target": "cloudPcCrossRegionDisasterRecoverySetting"
+          }
+        ],
+        "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-12-08T06:09:33.7283612Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+    },
     {
       "ChangeList": [
         {
@@ -57,6 +83,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-11-18T11:13:39.1270609Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5c8fb671-d9f9-4993-8320-1d305a26773c",
+          "ApiChange": "Method",
+          "ChangedApiName": "retry",
+          "ChangeType": "Addition",
+          "Description": "Added the [retry](https://learn.microsoft.com/en-us/graph/api/cloudpcbulkaction-retry?view=graph-rest-beta) method to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta) resource.",
+          "Target": "cloudPcBulkAction"
+        }
+      ],
+      "Id": "5c8fb671-d9f9-4993-8320-1d305a26773c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-18T12:23:41.3476306Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
@@ -149,6 +193,56 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-11-11T01:25:21.3434973Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bf9197c4-808f-44b6-98dc-12491aa17bb5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcBlobAccessTier",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcBlobAccessTier** enumeration type.",
+          "Target": "cloudPcBlobAccessTier"
+        },
+        {
+          "Id": "bf9197c4-808f-44b6-98dc-12491aa17bb5",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessTier",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessTier** property to the [cloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreviewstatus?view=graph-rest-beta) resource.",
+          "Target": "cloudPcReviewStatus"
+        },
+        {
+          "Id": "bf9197c4-808f-44b6-98dc-12491aa17bb5",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessTier",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessTier** property to the [cloudPcBulkCreateSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkCreateSnapshot?view=graph-rest-beta) resource.",
+          "Target": "cloudPcBulkCreateSnapshot"
+        },
+        {
+          "Id": "bf9197c4-808f-44b6-98dc-12491aa17bb5",
+          "ApiChange": "Property",
+          "ChangedApiName": "storageAccountId",
+          "ChangeType": "Addition",
+          "Description": "Added the **storageAccountId** property to the [cloudPcBulkCreateSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkCreateSnapshot?view=graph-rest-beta) resource.",
+          "Target": "cloudPcBulkCreateSnapshot"
+        },
+        {
+          "Id": "bf9197c4-808f-44b6-98dc-12491aa17bb5",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "createSnapshot",
+          "ChangeType": "Addition",
+          "Description": "Added the **storageAccountId** and **accessTier** parameters to the [createSnapshot](https://learn.microsoft.com/en-us/graph/api/cloudpc-createsnapshot?view=graph-rest-beta) method.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "bf9197c4-808f-44b6-98dc-12491aa17bb5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-12T09:26:48.3805974Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
@@ -6194,6 +6288,32 @@
       "Version": "beta",
       "CreatedDateTime": "2024-11-27T06:03:45.3975846Z",
       "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {      
+          "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
+          "ApiChange": "Property",
+          "ChangedApiName": "frontlineCloudPcAvailability",
+          "ChangeType": "Addition",
+          "Description": "Added the property **frontlineCloudPcAvailability** to the [cloudpc](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "frontlineCloudPcAvailability",
+          "ChangeType": "Addition",
+          "Description": "Added the **frontlineCloudPcAvailability** enumeration type.",
+          "Target": "frontlineCloudPcAvailability"
+        }
+      ],
+      "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-06T06:58:17.7596396Z",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     }
   ]

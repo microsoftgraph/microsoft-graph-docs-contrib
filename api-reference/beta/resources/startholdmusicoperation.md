@@ -25,6 +25,9 @@ Represents the status of a [startHoldMusic](../api/participant-startholdmusic.md
 | resultInfo                     | [resultInfo](resultinfo.md) | Inherited from **commsOperation**. The result information.  Read-only.                                                                                            |
 | status                         | String                      | Inherited from **commsOperation**. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

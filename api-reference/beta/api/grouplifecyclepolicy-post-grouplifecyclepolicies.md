@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
+Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md). Only one policy exists in the tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 ### Response
 
-Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
