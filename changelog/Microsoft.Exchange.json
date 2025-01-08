@@ -1259,6 +1259,48 @@
       "CreatedDateTime": "2024-08-23T04:13:38.5525311Z",
       "WorkloadArea": "To-do tasks",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b629a62c-07a8-4c32-bcbd-40e7c97c0d6b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "mailFolderOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailFolderOperationStatus** enumeration type.",
+          "Target": "mailFolderOperationStatus"
+        },
+        {
+          "Id": "b629a62c-07a8-4c32-bcbd-40e7c97c0d6b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-beta) resource.",
+          "Target": "mailFolder"
+        },
+		{
+		  "Id": "b629a62c-07a8-4c32-bcbd-40e7c97c0d6b",
+		  "ApiChange": "Resource",
+		  "ChangedApiName": "mailFolderOperation",
+		  "ChangeType": "Addition",
+		  "Description": "Added the [mailFolderOperation](https://learn.microsoft.com/en-us/graph/api/resources/mailfolderoperation?view=graph-rest-beta) resource.",
+		  "Target": "mailFolderOperation"
+		},
+        {
+          "Id": "b629a62c-07a8-4c32-bcbd-40e7c97c0d6b",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateAllMessagesReadState",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateAllMessagesReadState](https://learn.microsoft.com/en-us/graph/api/mailfolder-updateallmessagesreadstate?view=graph-rest-beta) method to the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-beta) resource.",
+          "Target": "mailFolder"
+        }
+      ],
+      "Id": "b629a62c-07a8-4c32-bcbd-40e7c97c0d6b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-06T06:15:18.865949Z",
+      "WorkloadArea": "Calendar, mail, personal contacts",
+      "SubArea": ""
     }
   ]
 }

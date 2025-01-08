@@ -1,11 +1,10 @@
 ---
 title: "mailFolder resource type"
-description: "A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders."
+description: "Represents a mail folder in a user's mailbox, such as Inbox or Drafts. Mail folders can contain messages, other Outlook items, and child mail folders."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
-ms.date: 08/21/2024
 ---
 
 # mailFolder resource type
@@ -14,29 +13,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders.
+Represents a mail folder in a user's mailbox, such as Inbox or Drafts. Mail folders can contain messages, other Outlook items, and child mail folders.
 
 This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/mailfolder-delta.md) function.
 
 **Well-known folder names**
 
-Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use the well-known folder names from the table below when accessing these folders. For example, you can get the Drafts folder using its well-known name with the following query.
+Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use the well-known folder names from the following table when accessing these folders. For example, you can get the Drafts folder using its well-known name with the following query.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/drafts
 ```
 
-Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of its name.
+Well-known names work regardless of the locale of the user's mailbox, so the previous query always returns the user's Drafts folder regardless of its name.
 
 | Well-known folder name | Description |
 |:-----------------------|:------------|
-| archive | The archive folder messages are sent to when using the One_Click Archive feature in Outlook clients that support it. **Note:** this isn't the same as the Archive Mailbox feature of Exchange online. |
+| archive | The archive folder messages are sent to when using the One-Click Archive feature in Outlook clients that support it. **Note:** This property is different from the Archive Mailbox feature of Exchange online. |
 | clutter | The clutter folder low-priority messages are moved to when using the Clutter feature. |
 | conflicts | The folder that contains conflicting items in the mailbox. |
 | conversationhistory | The folder where Skype saves IM conversations (if Skype is configured to do so). |
-| deleteditems | The folder items are moved to when they are deleted. |
+| deleteditems | The folder items are moved to when they're deleted. |
 | drafts | The folder that contains unsent messages. |
 | inbox | The inbox folder. |
 | junkemail | The junk email folder. |
@@ -72,6 +71,8 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [mailFolder](mailfolder.md) | Create one or more multi-value extended properties in a new or existing mailFolder.  |
 |[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get a mailFolder that contains a multi-value extended property by using `$expand`. |
+|[Update all messages read state](../api/mailfolder-updateallmessagesreadstate.md) | [mailFolder](mailfolder.md)|Marks all messages in a folder as read or unread. |
+
 
 ## Properties
 
