@@ -15,7 +15,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "retrieveCrossRegionDisasterRecoveryReport",
             "ChangeType": "Deletion",
-            "Description": "Removed the **retrieveCrossRegionDisasterRecoveryReport** method from the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource.",
+            "Description": "Removed the **retrieveCrossRegionDisasterRecoveryReport** method from the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
             "Target": "cloudPcReports"
           },
           {
@@ -23,7 +23,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "retrieveCrossRegionDisasterRecoveryReport",
             "ChangeType": "Addition",
-            "Description": "Added the [retrieveCrossRegionDisasterRecoveryReport](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports-retrieveCrossRegionDisasterRecoveryReport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource.",
+            "Description": "Added the [retrieveCrossRegionDisasterRecoveryReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
             "Target": "cloudPcReports"
           }
         ],
