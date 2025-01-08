@@ -1,5 +1,31 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "cloudPcProvisioningPolicyAutopatch",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcProvisioningPolicyAutopatch](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAutopatch?view=graph-rest-1.0) complex type.",
+          "Target": "cloudPcProvisioningPolicyAutopatch"
+        },
+        {
+          "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
+          "ApiChange": "Property",
+          "ChangedApiName": "autopatch",
+          "ChangeType": "Addition",
+          "Description": "Added the **autopatch** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-1.0) resource.",
+          "Target": "cloudPcProvisioningPolicy"
+        }
+      ],
+      "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-09T10:25:21.3434973Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
      {
         "ChangeList": [
           {
@@ -63,26 +89,18 @@
     {
       "ChangeList": [
         {
-          "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "cloudPcProvisioningPolicyAutopatch",
+          "Id": "5c8fb671-d9f9-4993-8320-1d305a26773c",
+          "ApiChange": "Method",
+          "ChangedApiName": "retry",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcProvisioningPolicyAutopatch](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAutopatch?view=graph-rest-1.0) complex type.",
-          "Target": "cloudPcProvisioningPolicyAutopatch"
-        },
-        {
-          "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
-          "ApiChange": "Property",
-          "ChangedApiName": "autopatch",
-          "ChangeType": "Addition",
-          "Description": "Added the **autopatch** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-1.0) resource.",
-          "Target": "cloudPcProvisioningPolicy"
+          "Description": "Added the [retry](https://learn.microsoft.com/en-us/graph/api/cloudpcbulkaction-retry?view=graph-rest-beta) method to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta) resource.",
+          "Target": "cloudPcBulkAction"
         }
       ],
-      "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
+      "Id": "5c8fb671-d9f9-4993-8320-1d305a26773c",
       "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-12-14T10:25:21.3434973Z",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-18T12:23:41.3476306Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
@@ -6270,6 +6288,32 @@
       "Version": "beta",
       "CreatedDateTime": "2024-11-27T06:03:45.3975846Z",
       "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {      
+          "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
+          "ApiChange": "Property",
+          "ChangedApiName": "frontlineCloudPcAvailability",
+          "ChangeType": "Addition",
+          "Description": "Added the property **frontlineCloudPcAvailability** to the [cloudpc](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "frontlineCloudPcAvailability",
+          "ChangeType": "Addition",
+          "Description": "Added the **frontlineCloudPcAvailability** enumeration type.",
+          "Target": "frontlineCloudPcAvailability"
+        }
+      ],
+      "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-06T06:58:17.7596396Z",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     }
   ]
