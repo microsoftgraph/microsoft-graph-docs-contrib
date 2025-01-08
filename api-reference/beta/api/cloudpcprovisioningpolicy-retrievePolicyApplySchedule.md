@@ -1,5 +1,5 @@
 ---
-title: "cloudPcProvisioningPolicy: retrievePolicyApplySchedule"
+title: "Retrieve Policy Apply Schedule"
 description: "Get the scheduled apply rule set on the policy. `Frontline shared` only. Administrators only."
 author: "zhuangzhuang131419"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 01/07/2025
 ---
 
-# cloudPcProvisioningPolicy: retrievePolicyApplySchedule
+# Retrieve Policy Apply Schedule
 
 Namespace: microsoft.graph
 

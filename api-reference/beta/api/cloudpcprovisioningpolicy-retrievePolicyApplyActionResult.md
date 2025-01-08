@@ -1,5 +1,5 @@
 ---
-title: "cloudPcPolicyApplyActionResult: retrievePolicyApplyActionResult"
+title: "Retrieve Policy Apply Action Result"
 description: "Get the result of the latest apply operation of a provision policy. `Frontline shared` only. Administrators only."
 author: "zhuangzhuang131419"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 01/07/2025
 ---
 
-# cloudPcPolicyApplyActionResult: retrievePolicyApplyActionResult
+# Retrieve Policy Apply Action Result
 
 Namespace: microsoft.graph
 
