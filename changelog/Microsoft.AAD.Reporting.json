@@ -56,6 +56,32 @@
      {
       "ChangeList": [
         {
+          "Id": "da78f1c6-0bfa-4e22-b2c4-b7bb1af5366d",
+          "ApiChange": "Property",
+          "ChangedApiName": "appOwnerTenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **appOwnerTenantId** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "da78f1c6-0bfa-4e22-b2c4-b7bb1af5366d",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceOwnerTenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceOwnerTenantId** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "da78f1c6-0bfa-4e22-b2c4-b7bb1af5366d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-08T00:39:45.8184996Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+     {
+      "ChangeList": [
+        {
           "Id": "5869ee0c-c48f-4031-9381-29d2f6792789",
           "ApiChange": "Member",
           "ChangedApiName": "refreshToken",
