@@ -27,6 +27,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |teamDisplayName|String|The updated name of the team.|
 |teamId|String|Unique identifier of the team.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

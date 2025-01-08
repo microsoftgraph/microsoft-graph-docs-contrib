@@ -25,6 +25,9 @@ A [participantJoiningResponse](participantjoiningResponse.md) in the response pa
 | -------------- | --------------  | -------------------------------------------                        |
 | call           | [call](call.md) | The call object that contains details about the participant joining event. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

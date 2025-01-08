@@ -30,6 +30,9 @@ Represents the risk history of a Microsoft Entra service principal as determined
 | initiatedBy    | bool    | The identifier of the actor of the operation. |
 | activity       | [riskServicePrincipalActivity](riskserviceprincipalactivity.md)| The activity related to service principal risk level change. | 
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

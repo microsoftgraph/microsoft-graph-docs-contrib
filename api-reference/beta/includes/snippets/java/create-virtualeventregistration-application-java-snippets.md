@@ -12,6 +12,10 @@ VirtualEventRegistration virtualEventRegistration = new VirtualEventRegistration
 virtualEventRegistration.setFirstName("Diane");
 virtualEventRegistration.setLastName("Demoss");
 virtualEventRegistration.setEmail("DianeDemoss@contoso.com");
+VirtualEventExternalRegistrationInformation externalRegistrationInformation = new VirtualEventExternalRegistrationInformation();
+externalRegistrationInformation.setReferrer("Facebook");
+externalRegistrationInformation.setRegistrationId("myExternalRegistrationId");
+virtualEventRegistration.setExternalRegistrationInformation(externalRegistrationInformation);
 virtualEventRegistration.setPreferredTimezone("Pacific Standard Time");
 virtualEventRegistration.setPreferredLanguage("en-us");
 LinkedList<VirtualEventRegistrationQuestionAnswer> registrationQuestionAnswers = new LinkedList<VirtualEventRegistrationQuestionAnswer>();
@@ -40,12 +44,6 @@ multiChoiceValues2.add("New York City");
 virtualEventRegistrationQuestionAnswer2.setMultiChoiceValues(multiChoiceValues2);
 registrationQuestionAnswers.add(virtualEventRegistrationQuestionAnswer2);
 virtualEventRegistration.setRegistrationQuestionAnswers(registrationQuestionAnswers);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
- externalRegistrationInformation = new ();
-externalRegistrationInformation.setReferrer("Facebook");
-externalRegistrationInformation.setRegistrationId("myExternalRegistrationId");
-additionalData.put("externalRegistrationInformation", externalRegistrationInformation);
-virtualEventRegistration.setAdditionalData(additionalData);
 VirtualEventRegistration result = graphClient.solutions().virtualEvents().webinars().byVirtualEventWebinarId("{virtualEventWebinar-id}").registrations().post(virtualEventRegistration);
 
 

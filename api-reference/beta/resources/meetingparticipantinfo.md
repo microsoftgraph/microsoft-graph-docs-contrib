@@ -40,6 +40,9 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 >
 > To set the **presenter** role of a meeting attendee when creating or updating an [onlineMeeting](onlinemeeting.md), the value of **allowedPresenters** must also be set to `roleIsPresenter`.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

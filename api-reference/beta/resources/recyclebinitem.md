@@ -37,6 +37,9 @@ Inherits from [baseItem](baseitem.md).
 | name                | String         | Name of the item. Inherited from [baseItem](baseitem.md).                                                                                                                                                        |
 | size                | Int64          | Size of the item in bytes.                                                                                                                                                                                       |
 
+## Relationships
+None.
+
 ## JSON Representation
 
 The following JSON representation shows the resource type.

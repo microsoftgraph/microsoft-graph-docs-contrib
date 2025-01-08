@@ -28,6 +28,9 @@ Represents detail information about a virtual event presenter.
 |photo|Stream|The content stream of the presenter's photo.|
 |twitterProfileWebUrl|String|The presenter's Twitter profile URL.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

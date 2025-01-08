@@ -25,6 +25,9 @@ Inherits from [ipRange](../resources/iprange.md)
 |:-------------|:------------|:------------|
 |cidrAddress|String|IPv6 address in CIDR notation. Not nullable.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

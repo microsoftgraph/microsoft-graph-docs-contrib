@@ -115,6 +115,9 @@ The following table shows the supported language codes for translation languages
 | Welsh (United Kingdom)                   | cy      |
 | Yucatec Maya                             | yua     |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -23,6 +23,9 @@ A general-purpose error.
 | message | String | The error message. |
 | code | String | The error code. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

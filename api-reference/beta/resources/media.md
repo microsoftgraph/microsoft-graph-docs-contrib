@@ -22,6 +22,9 @@ It is available on the media property of [driveItem][item-resource] resources.
 | **mediaSource**          | [mediaSource](mediaSource.md)         | Information about the source of media. Read-only.                                                             | 
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {
