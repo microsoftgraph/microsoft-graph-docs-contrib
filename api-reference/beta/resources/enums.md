@@ -5,11 +5,44 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
+ms.date: 12/31/2024
 ---
 
 # Enum values
 
 Namespace: microsoft.graph
+
+### changeAnnouncementChangeType values
+
+|Member|
+|:---|
+|breakingChange|
+|deprecation|
+|endOfSupport|
+|featureChange|
+|other|
+|retirement|
+|securityIncident|
+|uxChange|
+|unknownFutureValue|
+
+### hardwareOathTokenHashFunction values
+
+|Member|
+|:---|
+|hmacsha1|
+|hmacsha256|
+|unknownFutureValue|
+
+### hardwareOathTokenStatus values
+
+|Member|
+|:---|
+|available|
+|assigned|
+|activated|
+|failedActivation|
+|unknownFutureValue|
 
 ### provisionState values
 
@@ -754,6 +787,13 @@ Namespace: microsoft.graph
 | --------------------- |
 | asymmetricKeyLifetime |
 | trustedCertificateAuthority |
+| unknownFutureValue |
+
+### customSecurityAttributeComparisonOperator values 
+
+| Member |
+| ---- |
+| equals |
 | unknownFutureValue |
 
 ### synchronizationSecret values
@@ -2925,6 +2965,26 @@ Possible values for user account types (group membership), per Windows definitio
 | disabled |
 | enabledForReportingButNotEnforced |
 
+
+### privateNetworkDestinationType values 
+
+|Member|
+|:---|
+|ipAddress|
+|ipRange|
+|ipRangeCidr|
+|fqdn|
+|dnsSuffix|
+|unknownFutureValue|
+
+### privateNetworkProtocol values 
+
+|Member|
+|:---|
+|tcp|
+|udp|
+|unknownFutureValue|
+
 ### conditionalAccessGrantControl values
 
 | Member |
@@ -4927,6 +4987,31 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
+### restoreArtifactsBulkRequestStatus values 
+
+|Member|
+|:---|
+|unkown|
+|active|
+|completed|
+|completedWithErrors|
+|unknownFutureValue|
+
+### cloudPCPerformanceReportName values
+
+| Member                 |
+| ---------------------- |
+| performanceTrendReport | 
+| unknownFutureValue     |
+
+### cloudPCInaccessibleReportName values
+
+| Member                         |
+| ------------------------------ |
+| inaccessibleCloudPcReports     |
+| inaccessibleCloudPcTrendReport |
+| unknownFutureValue             |
+
 ### nonAdminSetting values
 
 |Member|
@@ -4935,8 +5020,113 @@ Possible values for user account types (group membership), per Windows definitio
 |true|
 |unknownFutureValue|
 
-### mailFolderOperationStatus values 
+### changeItemService values
 
+|Member|
+|:---|
+|accessReviews|
+|appProxy|
+|audit|
+|authenticationsLogins|
+|azureADDomainServices|
+|b2B|
+|b2CConsumerIdentityManagement|
+|conditionalAccess|
+|deviceAccessManagement|
+|deviceRegistrationandManagement|
+|directoryManagement|
+|enterpriseApps|
+|entitlementManagement|
+|groupManagement|
+|identityProtection|
+|internetAccess|
+|lifecycleWorkflows|
+|linkedIn|
+|managedidentitiesforAzureresources|
+|mfA|
+|microsoftAuthenticatorApp|
+|microsoftIdentityManager|
+|msGraph|
+|myApps|
+|myProfileAccount|
+|na|
+|o365Groups|
+|other|
+|privateAccess|
+|privilegedIdentityManagement|
+|provisioning|
+|rbac|
+|reporting|
+|roles|
+|selfServicePasswordReset|
+|sovereignClouds|
+|termsofUse|
+|userAccessManagement|
+|userExperienceandManagement|
+|userManagement|
+|microsoftEntraDomainServices|
+|verifiedId|
+|unknownFutureValue|
+
+### changeItemState values
+
+|Member|
+|:---|
+|available|
+|comingSoon|
+|unknownFutureValue|
+
+### roadmapItemDeliveryStage values
+
+|Member|
+|:---|
+|privatePreview|
+|publicPreview|
+|ga|
+|unknownFutureValue|
+
+### changeAnnouncementChangeType values 
+
+|Member|
+|:---|
+|breakingChange|
+|deprecation|
+|endOfSupport|
+|featureChange|
+|other|
+|retirement|
+|securityIncident|
+|uxChange|
+
+### restoreJobType values 
+
+|Member|
+|:---|
+|standard|
+|bulk|
+|unknownFutureValue|
+
+### mailboxType values 
+
+|Member|
+|:---|
+|unknown|
+|user|
+|shared|
+|unknownFutureValue|
+
+### tlsClientRegistrationMetadata values 
+
+|Member|
+|:---|
+|tls_client_auth_subject_dn|
+|tls_client_auth_san_dns|
+|tls_client_auth_san_uri|
+|tls_client_auth_san_ip|
+|tls_client_auth_san_email|
+|unknownFutureValue|
+
+### mailFolderOperationStatus values
 |Member|
 |:---|
 |notStarted|
