@@ -1,15 +1,16 @@
 ---
 title: "Microsoft Graph overview"
-description: "Use Microsoft Graph data and other datasets to derive insights and analytics, extend Microsoft 365 experiences, and build unique, intelligent apps."
-author: "angelgolfer-ms"
+description: "Use Microsoft Graph to derive insights and analytics from Microsoft 365 and Microsoft Entra data, and build unique, intelligent apps."
+ms.topic: overview
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.date: 11/07/2024
+ms.date: 01/08/2025
+#customer intent: As a developer, I want to understand Microsoft Graph and how to use it to build apps that interact with data in Microsoft cloud services like Microsoft Entra and Microsoft 365.
 ---
 
 # Overview of Microsoft Graph
 
-Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It provides a unified programmability model that you can use to access the tremendous amount of data in Microsoft 365, Windows, and Enterprise Mobility + Security. Use the wealth of data accessible through Microsoft Graph to build apps for organizations and consumers that interact with millions of users.
+Microsoft Graph is the gateway to data and intelligence in Microsoft cloud services like Microsoft Entra and Microsoft 365. Use the wealth of data accessible through Microsoft Graph to build apps for organizations and consumers that interact with millions of users.
 
 ![Microsoft Graph, Microsoft Graph Data Connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-enhance.png)
 
@@ -27,10 +28,11 @@ Together, the Microsoft Graph API, connectors, and Data Connect power the Micros
 
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
 
-- **Microsoft 365 core services:** Bookings, Calendar, Delve, Excel, Microsoft 365 compliance eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Viva Insights
-- **Enterprise Mobility + Security services:** Advanced Threat Analytics, Advanced Threat Protection, Microsoft Entra ID, Identity Manager, and Intune
+- **Microsoft 365 core services:** Bookings, Calendar, Delve, Excel, Microsoft Purview eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Viva Insights
+- **Enterprise Mobility + Security services:** Advanced Threat Analytics, Advanced Threat Protection, Microsoft Entra, Identity Manager, and Intune
 - **Windows services:** activities, devices, notifications, Universal Print
 - **Dynamics 365 Business Central services**
+- **Microsoft Partner Center services**
 
 To find out more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
@@ -66,10 +68,10 @@ You can then navigate to other resources using relationships:
 
 To find out more, see [Integration patterns](integration-patterns-overview.md).
 
-Microsoft Graph continues to open up the Microsoft 365 platform for developers, and always only with the appropriate permissions.
+Microsoft Graph is secured and only authorized callers can access the data. For more information, see [Authentication and authorization](auth/auth-concepts.md).
 
 > [!NOTE]
-> When you use the Microsoft Graph API, you agree to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+> When you use Microsoft Graph APIs, you agree to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ### Popular API requests
 
@@ -104,7 +106,7 @@ Use [Microsoft Graph Data Connect](data-connect-concept-overview.md) to access d
 
 Using Azure tools, you can then build intelligent apps that:
 
-- Find you the closest expert on a topic to you in your organization.
+- Find you the closest expert on a subject area to you in your organization.
 - Automate knowledge base creation.
 - Analyze meeting requests to provide insights into conference room utilization.
 - Detect fraud with productivity and communication data.
@@ -118,7 +120,7 @@ Microsoft Graph Data Connect provides a new way for you to interact with the dat
 | **Access scope** | Single user or entire tenant | Many users or groups |
 | **Access pattern** | Real time | Recurrent schedule |
 | **Data operations** | Operates on data master | Operates on a cache of the data |
-| **Data protection** | Data is protected while in Microsoft 365 | Data protection is extended to the cache of data in your Azure subscription |
+| **Data protection** | Data is protected while in the source service like Microsoft 365 and Microsoft Entra | Data protection is extended to the cache of data in your Azure subscription |
 | **User consent** | Self<br>Resource types | None |
 | **Admin consent** | Entire organization<br>Resource types | Select groups of users<br>Resource types and properties<br>Excludes users |
 | **Access tools** | RESTful web queries | Azure Data Factory |

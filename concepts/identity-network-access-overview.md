@@ -4,7 +4,7 @@ description: "Use the identity and network access APIs in Microsoft Graph to man
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.topic: concept-article
-ms.reviewer: dkershaw
+ms.reviewer: dkershaw, krbash
 ms.localizationpriority: high
 ms.subservice: entra-id
 ms.custom: scenarios:getting-started
