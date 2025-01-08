@@ -26,9 +26,9 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get event message](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
-|[Update event message](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object. |
-|[Delete message](../api/message-delete.md) | None |Delete eventMessage object. |
+|[Get](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
+|[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object. |
+|[Delete](../api/message-delete.md) | None |Delete eventMessage object. |
 |[Copy message](../api/message-copy.md)|[message](message.md)|Copy a message to a folder.|
 |[Create draft to forward message](../api/message-createforward.md)|[message](message.md)|Create a draft of the Forward message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
 |[Create draft to reply](../api/message-createreply.md)|[message](message.md)|Create a draft of the Reply message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
