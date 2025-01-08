@@ -22,11 +22,11 @@ Represents the storage account information that can be used to store a snapshot 
 |storageAccountId|String|The ID of the storage account.|
 |storageAccountName|String|The name of the storage account.|
 |immutableStorage|Boolean|Indicates whether immutability policies are configured for the storage account. When `true`, the storage account only accepts `hot` as the snapshot access tier. When `false`, the storage account accepts all valid access tiers. Read-Only.|
-|accessTier|[cloudPcStorageAccountAccessTier](#cloudPcStorageAccountAccessTier-values)| Indicates the access tier of the storage account. Possible values are `hot`, `cool`, `premium` and `cold`, default value is `hot`.|
+|accessTier|[cloudPcStorageAccountAccessTier](#cloudpcstorageaccountaccesstier-values)| Indicates the access tier of the storage account. Possible values are `hot`, `cool`, `premium` and `cold`, default value is `hot`.|
 
 ### cloudPcStorageAccountAccessTier values
 
-|Member name|Description|
+|Member|Description|
 |:---|:---|
 |hot|Indicates the storage account access tier is "hot", this tier is optimized for storing data that is accessed or modified frequently.|
 |cool|Indicates the storage account access tier is "cool", this tier is optimized for storing data that is infrequently accessed or modified.|
