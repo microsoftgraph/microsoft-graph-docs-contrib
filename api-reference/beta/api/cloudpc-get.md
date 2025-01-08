@@ -473,6 +473,7 @@ The following example shows how to list Cloud PCs filtered by product type and s
 #### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_cloudpc_producttype"
@@ -486,6 +487,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs?$
 #### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
