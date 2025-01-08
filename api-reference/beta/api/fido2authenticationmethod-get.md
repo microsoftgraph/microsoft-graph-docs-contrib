@@ -117,7 +117,6 @@ The following example shows the response.
 > * The **fido2AuthenticationMethod GET** request returns Credentials key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0,1,2 to same number of base64 padding characters.
 > * The response object shown here might be shortened for readability.
 
-
 <!-- {
   "blockType": "response",
   "truncated": true,
