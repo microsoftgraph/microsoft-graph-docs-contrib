@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "accessTier",
           "ChangeType": "Addition",
-          "Description": "Added the **accessTier** property to the [cloudPcForensicStorageAccount](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcForensicStorageAccount?view=graph-rest-beta) resource.",
+          "Description": "Added the **accessTier** property to the [cloudPcForensicStorageAccount](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcforensicstorageaccount?view=graph-rest-beta) resource.",
           "Target": "cloudPcForensicStorageAccount"
         }
       ],
