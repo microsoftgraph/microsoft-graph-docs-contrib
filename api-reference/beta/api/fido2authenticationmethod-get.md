@@ -112,9 +112,8 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2Methods/-2_GRUg2-HYz
 ### Response
 The following example shows the response.
 
-
 > [!NOTE]
-> * The **fido2AuthenticationMethod GET** request returns Credentials key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0,1,2 to same number of base64 padding characters.
+> * The FIDO2 authentication method request returns credentials key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0, 1, or 2 to the same number of base64 padding characters.
 > * The response object shown here might be shortened for readability.
 
 <!-- {
