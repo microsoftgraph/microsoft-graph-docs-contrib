@@ -147,7 +147,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "startTranscriptionOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [startTranscriptionOperation](https://learn.microsoft.com/en-us/graph/api/resources/startTranscriptionOperation?view=graph-rest-beta) resource.",
+          "Description": "Added the [starttranscriptionoperation](https://learn.microsoft.com/en-us/graph/api/resources/starttranscriptionoperation?view=graph-rest-beta) resource.",
           "Target": "startTranscriptionOperation"
         },
         {
