@@ -28,6 +28,14 @@
         },
         {
           "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Method",
+          "ChangedApiName": "setexternaleventinformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setexternaleventinformation](https://learn.microsoft.com/en-us/graph/api/virtualevent-setexternaleventinformation?view=graph-rest-1.0) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventExternalInformation",
           "ChangeType": "Addition",
