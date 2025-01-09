@@ -166,6 +166,7 @@ Content-Type: application/json
     ],
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
-    }
+    },
+    "externalEventInformation": []
 }
 ```
