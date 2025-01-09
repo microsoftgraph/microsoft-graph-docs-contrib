@@ -53,7 +53,7 @@ The following table shows the parameters that you can use with this action.
 | filter     | String            | OData `$filter` syntax. The supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.     |
 | groupBy    | String collection | Specifies how to group the reports. If used, must have the same content as the **select** parameter.  |
 | orderBy    | String collection | Specifies how to sort the reports.                                                                    |
-| reportName | cloudPcDisasterRecoveryReportName | The report name. The possible value is: `crossRegionDisasterRecoveryReport`. When **reportName** isn't initialized, `crossRegionDisasterRecoveryReport` is the default value. |
+| reportName | [cloudPcDisasterRecoveryReportName](#cloudpcdisasterrecoveryreportname-values) | The report name. The possible value is: `crossRegionDisasterRecoveryReport`. When **reportName** isn't initialized, `crossRegionDisasterRecoveryReport` is the default value. |
 | search     | String            | Specifies a String to search.                                                                         |
 | select     | String collection | OData `$select` syntax. The selected columns of the reports.                                          |
 | skip       | Int32             | The number of records to skip.                                                                        |
