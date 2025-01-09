@@ -1,6 +1,6 @@
 ---
 title: "Major services and features in Microsoft Graph"
-description: "Learn how Microsoft Graph's network of services and features manage, protect, and extract data to support a wide range of scenarios."
+description: "Learn about the services and features that are available through Microsoft Graph to help you manage, protect, and extract data to support a wide range of scenarios."
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.topic: overview
@@ -10,7 +10,7 @@ ms.date: 01/08/2025
 
 # Major services and features in Microsoft Graph
 
-Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows, and Enterprise Mobility + Security services by using REST APIs and client libraries. Additionally, it offers security and intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data.
+Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows, and Enterprise Mobility + Security services by using REST APIs and client libraries. It also offers security and intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data.
 
 ## Users and groups
 
@@ -18,7 +18,7 @@ At the core of Microsoft Graph are the concepts of the user and group.
 
 A _user_ in Microsoft Graph is one among the millions who use Microsoft 365 cloud services. It's the focal point whose identity is protected and access is well-managed. The user's data is what drives businesses. Microsoft Graph services make this data available to businesses in rich contexts, real-time updates, and deep insights, and always only with the appropriate permissions. Apart from users, applications and devices are the other identities in the Microsoft cloud ecosystem.
 
-A _group_ is the fundamental entity that lets users collaborate. It integrates with other services, enabling richer scenarios in task planning, teamwork, education, and more. 
+A _group_ is the fundamental entity that lets users collaborate. Groups integrate with other services, enabling richer scenarios in task planning, teamwork, education, and more. 
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
