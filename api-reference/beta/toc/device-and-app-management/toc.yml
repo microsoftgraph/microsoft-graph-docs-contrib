@@ -501,6 +501,8 @@ items:
       href: ../../resources/cloudpcpartneragentinstallresult.md
     - name: Cloud PC provisioning policy assignment
       href: ../../resources/cloudpcprovisioningpolicyassignment.md
+    - name: Cloud PC provisioning policy autopatch
+      href: ../../resources/cloudpcprovisioningpolicyautopatch.md
     - name: Cloud PC remote action capability
       href: ../../resources/cloudpcremoteactioncapability.md
     - name: Cloud PC resize validation result
