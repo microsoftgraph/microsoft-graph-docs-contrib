@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 12/09/2024
+ms.date: 01/09/2024
 ---
 
 # Create customAuthenticationExtension
@@ -437,7 +437,7 @@ Content-Type: application/json
   "description": "Use an external Email provider to send OTP Codes.",
   "displayName": "onEmailOtpSendCustomExtension",
   "endpointConfiguration": {
-    "@odata.type": "#microsoft.graph.httpRequestEndpoint"
+    "@odata.type": "#microsoft.graph.httpRequestEndpoint",
     "targetUrl": "https://onotpsendcustomextension.b2c.expert/api/OnOTPCodeSendToTeamsDemo"
   },
   "behaviorOnError": {
