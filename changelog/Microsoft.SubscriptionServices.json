@@ -686,7 +686,9 @@
       "Id": "08b12c1b-76b9-40a9-8124-5c8ec4bb035c",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2025-01-09T00:00:00"
+      "CreatedDateTime": "2025-01-09T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
     }
   ]
 }
