@@ -1,24 +1,24 @@
 ---
 title: "Major services and features in Microsoft Graph"
-description: "Learn about the services and features that are available through Microsoft Graph to help you manage, protect, and extract data to support a wide range of scenarios."
+description: "Learn how Microsoft Graph's network of services and features manage, protect, and extract data to support a wide range of scenarios."
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.topic: overview
-ms.date: 01/08/2025
+ms.date: 01/09/2025
 #customer intent: As a developer, I want a sneak peek into what Microsoft cloud services are available through Microsoft Graph.
 ---
 
 # Major services and features in Microsoft Graph
 
-Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows, and Enterprise Mobility + Security services by using REST APIs and client libraries. It also offers security and intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data.
+Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows, and Enterprise Mobility + Security services by using REST APIs and client libraries. Additionally, it offers security and intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data.
 
 ## Users and groups
 
 At the core of Microsoft Graph are the concepts of the user and group.
 
-A _user_ in Microsoft Graph is one among the millions who use Microsoft 365 cloud services. It's the focal point whose identity is protected and access is well-managed. The user's data is what drives businesses. Microsoft Graph services make this data available to businesses in rich contexts, real-time updates, and deep insights, and always only with the appropriate permissions. Apart from users, applications and devices are the other identities in the Microsoft cloud ecosystem.
+Millions of _users_ access Microsoft 365 cloud services. User data is what drives businesses, and user identities must be protected and managed. Microsoft Graph services make user data available to businesses in rich contexts, real-time updates, and deep insights, and always only with the appropriate permissions. While users are the core identities, the Microsoft cloud ecosystem also supports applications and devices as identities.
 
-A _group_ is the fundamental entity that lets users collaborate. Groups integrate with other services, enabling richer scenarios in task planning, teamwork, education, and more. 
+A _group_ is the fundamental entity that lets users collaborate. It integrates with other services, enabling richer scenarios in task planning, teamwork, education, and more. 
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
@@ -85,7 +85,7 @@ The APIs in Microsoft Graph follow a streamlined design as detailed in the [Micr
 | Browser management | Microsoft Edge | Microsoft Edge is one of the applications that administrators manage through the Microsoft 365 admin center. As an alternative to using the Microsoft 365 admin center, apps can use the Microsoft Graph API to manage the same Microsoft Edge settings configured through the Microsoft 365 admin center. | [Using the Microsoft Edge API in Microsoft Graph to manage browsers](browser-edge-concept-overview.md) |
 | Cloud printing | Universal Print | Universal Print is a Microsoft 365 cloud-based print infrastructure that enables a simple, rich, and secure print experience for users and reduces administrative and management effort for IT. | [Cloud printing using Universal Print API](universal-print-concept-overview.md) |
 |Corp management of devices and apps | Intune | Enrolls and configures devices and manages mobile applications in your organization. | [Intune devices and apps overview](intune-concept-overview.md) |
-| Cloud PC | Windows 365  | Windows 365 is a cloud-based service that lets administrators easily set up and manage Windows 365 Cloud PCs for users in their organization. Individual end users can securely stream their rich, personalized Windows experience from the Microsoft cloud to any device, anytime, with their Cloud PC. | [Working with Windows 365 Cloud PCs using the Microsoft Graph API](cloudpc-concept-overview.md) |
+| Cloud PC | Windows 365  | Windows 365 is a cloud-based service that lets administrators easily set up and manage Windows 365 Cloud PCs for users in their organization. Individual end users can securely stream their rich, personalized Windows experience from the Microsoft cloud to any device, any time, with their Cloud PC. | [Working with Windows 365 Cloud PCs using the Microsoft Graph API](cloudpc-concept-overview.md) |
 | Device updates (preview) | Windows Update for Business deployment service | Provides control over the approval, scheduling, monitoring, and safeguarding of content delivered from Windows Update. | [Windows updates in Microsoft Graph](windowsupdates-concept-overview.md) |
 | Multitenant management (preview) | Microsoft 365 Lighthouse | Lets Managed Service Providers (MSPs) remotely manage multiple customer tenants for compliance and threat detection, and help get tenant devices in a healthy and secure state. | [Multitenant management using Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
 | Service health and communications | Microsoft 365 and Dynamics 365 services | Provides access to the health status and message center posts about Microsoft cloud services. A notable example that uses the service communications API is the Microsoft 365 admin center. | [Accessing service health and communications in Microsoft Graph](service-communications-concept-overview.md) |
