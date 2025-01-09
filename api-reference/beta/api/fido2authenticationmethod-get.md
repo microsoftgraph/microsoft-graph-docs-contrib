@@ -59,7 +59,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) object in the response body.
 
-This method also returns credentials key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0, 1, or 2 to the same number of base64 padding characters.
+[!NOTE]
+> This method also returns credentials key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0, 1, or 2 to the same number of base64 padding characters.
 
 ## Examples
 
