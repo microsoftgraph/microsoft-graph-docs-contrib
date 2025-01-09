@@ -3,6 +3,112 @@
     {
       "ChangeList": [
         {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-list-townhalls?view=graph-rest-1.0) operation to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserIdAndRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserIdAndRole](https://learn.microsoft.com/en-us/graph/api/virtualeventtownhall-getbyuseridandrole?view=graph-rest-1.0) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserRole](https://learn.microsoft.com/en-us/graph/api/virtualeventtownhall-getbyuserrole?view=graph-rest-1.0) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Method",
+          "ChangedApiName": "setexternaleventinformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setexternaleventinformation](https://learn.microsoft.com/en-us/graph/api/virtualevent-setexternaleventinformation?view=graph-rest-1.0) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventExternalInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventExternalInformation](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventexternalinformation?view=graph-rest-1.0) resource type.",
+          "Target": "virtualEventExternalInformation"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalEventInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalEventInformation** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualevent?view=graph-rest-1.0) resource.",
+          "Target": "virtualEvent"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalEventInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalEventInformation** property to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Method",
+          "ChangedApiName": "setexternaleventinformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setexternaleventinformation](https://learn.microsoft.com/en-us/graph/api/virtualevent-setexternaleventinformation?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalEventInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalEventInformation** property to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Method",
+          "ChangedApiName": "setExternalEventInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setExternalEventInformation](https://learn.microsoft.com/en-us/graph/api/virtualevent-setexternaleventinformation?view=graph-rest-1.0) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualevent?view=graph-rest-1.0) resource.",
+          "Target": "virtualEvent"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventExternalRegistrationInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventExternalRegistrationInformation](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventexternalregistrationinformation?view=graph-rest-1.0) resource type.",
+          "Target": "virtualEventExternalRegistrationInformation"
+        },
+        {
+          "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalRegistrationInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalRegistrationInformation** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistration"
+        }
+      ],
+      "Id": "077ce335-93bd-42d3-b10d-b2d14bafe293",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-09T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a7978bef-d6bb-4083-81f9-c746c2f05197",
           "ApiChange": "Property",
           "ChangedApiName": "externalEventInformation",
@@ -41,7 +147,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "startTranscriptionOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [startTranscriptionOperation](https://learn.microsoft.com/en-us/graph/api/resources/startTranscriptionOperation?view=graph-rest-beta) resource.",
+          "Description": "Added the [starttranscriptionoperation](https://learn.microsoft.com/en-us/graph/api/resources/starttranscriptionoperation?view=graph-rest-beta) resource.",
           "Target": "startTranscriptionOperation"
         },
         {
@@ -107,7 +213,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventExternalInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [virtualEventExternalInformation](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventexternalinformation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [virtualeventexternalinformation](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventexternalinformation?view=graph-rest-beta) resource type.",
           "Target": "virtualEventExternalInformation"
         },
         {
@@ -115,7 +221,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "externalEventInformation",
           "ChangeType": "Addition",
-          "Description": "Added the **externalEventInformation** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualevent?view=graph-rest-beta) resource.",
+          "Description": "Added the **externaleventinformation** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualevent?view=graph-rest-beta) resource.",
           "Target": "virtualEvent"
         },
         {

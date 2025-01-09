@@ -171,6 +171,7 @@ Content-Type: application/json
       "isAttendeeEmailNotificationEnabled": false
     },
     "invitedAttendees": [],
-    "isInviteOnly": false
+    "isInviteOnly": false,
+    "externalEventInformation": []
 }
 ```
