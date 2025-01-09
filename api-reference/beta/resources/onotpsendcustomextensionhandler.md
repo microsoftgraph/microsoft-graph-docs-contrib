@@ -23,7 +23,7 @@ Inherits from [onOtpSendHandler](../resources/onotpsendhandler.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|configuration|[customExtensionOverwriteConfiguration](../resources/customextensionoverwriteconfiguration.md)|Configuration regarding properties of the custom extension that are can be overwritten per event listener.|
+|configuration|[customExtensionOverwriteConfiguration](../resources/customextensionoverwriteconfiguration.md)|Configuration regarding properties of the custom extension that are can be overwritten for the **onEmailOtpSendListener** event listener.|
 
 ## Relationships
 |Relationship|Type|Description|
