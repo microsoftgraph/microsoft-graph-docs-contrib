@@ -584,6 +584,64 @@
     },
     {
       "ChangeList": [
+        {
+          "Id": "6368fa82-f705-48ef-81b0-12b2850fcb97",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "6368fa82-f705-48ef-81b0-12b2850fcb97",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "6368fa82-f705-48ef-81b0-12b2850fcb97",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0) or [list](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "6368fa82-f705-48ef-81b0-12b2850fcb97",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "6368fa82-f705-48ef-81b0-12b2850fcb97",
+          "ApiChange": "Method",
+          "ChangedApiName": "reauthorize",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [reauthorize](https://learn.microsoft.com/en-us/graph/api/subscription-reauthorize?view=graph-rest-1.0) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "6368fa82-f705-48ef-81b0-12b2850fcb97",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "subscription",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$notifyOnUserSpecificProperties` query parameter when you subscribe either to [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview) or [notifications in a particular chat](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-in-a-particular-chat).",
+          "Target": "subscription"
+       }
+      ],
+      "Id": "6368fa82-f705-48ef-81b0-12b2850fcb97",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-06T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
        {
           "Id": "08b12c1b-76b9-40a9-8124-5c8ec4bb035c",
           "ApiChange": "Method",
@@ -628,9 +686,7 @@
       "Id": "08b12c1b-76b9-40a9-8124-5c8ec4bb035c",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2025-01-09T00:00:00",
-      "WorkloadArea": "Change notifications",
-      "SubArea": ""
+      "CreatedDateTime": "2025-01-09T00:00:00"
     }
   ]
 }

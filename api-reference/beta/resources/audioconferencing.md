@@ -32,6 +32,9 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 >- The **tollFreeNumber** and **tollNumber** properties are deprecated. Use the **tollFreeNumbers** and **tollNumbers** properties instead.
 >- For backward compatibility, the original **tollFreeNumber** is added to the new **tollFreeNumbers** collection and the original **tollNumber** is added to the new **tollNumbers** collection.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -26,6 +26,9 @@ Represents a reference to a directory object in a partner organization. Inherits
 |id|String| The unique identifier for the resource. Inherited from [directoryObject](directoryobject.md). Read-only. |
 |objectType|String| The type of the referenced object in the partner tenant. Read-only. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphstorage.StorageFileStorageDeletedContainerItemRequestBuilderGetQueryParameters{
+requestParameters := &graphstorage.FileStorageDeletedContainersItemRequestBuilderGetQueryParameters{
 	Select: [] string {"*","members"},
 }
-configuration := &graphstorage.StorageFileStorageDeletedContainerItemRequestBuilderGetRequestConfiguration{
+configuration := &graphstorage.FileStorageDeletedContainersItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

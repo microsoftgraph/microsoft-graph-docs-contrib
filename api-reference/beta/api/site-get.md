@@ -59,12 +59,13 @@ GET /groups/{group-id}/sites/root
 ### Example 1: Get a site using the site ID
 #### Request
 
+The following example shows a request that gets a site by its site ID. A site ID is the value of the **id** property of its **site** resource. For more information on the format of the site ID, see [site](../resources/site.md#id-property).
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-site" } -->
+<!-- { "blockType": "request", "name": "get-site", "sampleKeys": ["contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE"] } -->
 
 ```msgraph-interactive
-GET /sites/{site-id}
+GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE
 ```
 
 # [C#](#tab/csharp)
@@ -102,7 +103,7 @@ GET /sites/{site-id}
 ---
 
 #### Response
-
+The following example shows the response.
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 
 ```http
@@ -127,12 +128,16 @@ Content-type: application/json
 
 ### Example 2: Get a site by server relative URL
 #### Request
-<!-- { "blockType": "request", "name": "get-site-by-url", "scopes": "sites.read.all" } -->
+
+The following example shows a request that gets a site by its hostname and server relative path.
+
+<!-- { "blockType": "request", "name": "get-site-by-url", "scopes": "sites.read.all", "sampleKeys": ["contoso.sharepoint.com:/teams/1drvteam"] } -->
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{hostname}:/{server-relative-path}
+GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com:/teams/1drvteam
 ```
 
 #### Response
+The following example shows the response.
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 ```http
 HTTP/1.1 200 OK
@@ -150,10 +155,12 @@ Content-type: application/json
 
 ### Example 3: Get the site of a group
 #### Request
+The following example shows a request that gets a group's site by the **id** property of a [group](../resources/group.md).
+
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-site-by-group"} -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/{group-id}/sites/root
+GET https://graph.microsoft.com/beta/groups/2C712604-1370-44E7-A1F5-426573FDA80A/sites/root
 ```
 
 # [C#](#tab/csharp)
@@ -191,6 +198,8 @@ GET https://graph.microsoft.com/v1.0/groups/{group-id}/sites/root
 ---
 
 #### Response
+The following example shows the response.
+
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 ```http
 HTTP/1.1 200 OK

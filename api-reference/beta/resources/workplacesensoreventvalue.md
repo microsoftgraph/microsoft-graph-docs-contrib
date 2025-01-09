@@ -29,6 +29,10 @@ Represents the data collected and reported by a badge-swiping device.
 | badgeIn          | An event in which a user enters a place by swiping the badge. |
 | badgeOut        | An event in which a user exits a place by swiping the badge. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

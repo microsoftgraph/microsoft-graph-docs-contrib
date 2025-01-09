@@ -1,6 +1,6 @@
 ---
 title: "eventMessage resource type"
-description: "A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline)."
+description: "A message that represents a meeting request, cancellation, or response."
 ms.localizationpriority: medium
 author: "iamgirishck"
 ms.subservice: "outlook"
@@ -12,23 +12,22 @@ ms.date: 08/23/2024
 
 Namespace: microsoft.graph
 
-A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline).
+A message that represents a meeting request, cancellation, or response. Possible values are: `acceptance`, `tentative acceptance`, or `decline`.
 
 The **eventMessage** entity is derived from [message](message.md). **eventMessage** is the base type for [eventMessageRequest](eventmessagerequest.md) and [eventMessageResponse](eventmessageresponse.md). The **meetingMessageType** property identifies the type of the event message.
 
 When an organizer or app sends a meeting request, the meeting request arrives in an invitee's mailbox as an **eventMessage** instance with the **meetingMessageType** of **meetingRequest**. In addition, Outlook automatically creates an **event** instance in the invitee's calendar, with the **showAs** property as **tentative**.
 
-To get the properties of the associated event in the invitee's mailbox, the app can use the **event** navigation property of the **eventMessage**, as shown in
-this [get event message example](../api/eventmessage-get.md#example-2). The app can also respond to the event on behalf of the invitee programmatically, by [accepting](../api/event-accept.md), [tentatively accepting](../api/event-tentativelyaccept.md), or [declining](../api/event-decline.md) the event.
+To get the properties of the associated event in the invitee's mailbox, the app can use the **event** navigation property of the **eventMessage**, as shown in [get event message example](../api/eventmessage-get.md#example-2). The app can also respond to the event on behalf of the invitee programmatically, by [accepting](../api/event-accept.md), [tentatively accepting](../api/event-tentativelyaccept.md), or [declining](../api/event-decline.md) the event.
 
-Aside from a meeting request, an **eventMessage** instance can be found in an invitee's mailbox as the result of an event organizer cancelling a meeting, or in the organizer's mailbox as a result of an invitee responding to the meeting request. An app can act on event messages in the same way as on messages with minor differences.
+Aside from a meeting request, an **eventMessage** instance can be found in an invitee's mailbox as the result of an event organizer canceling a meeting, or in the organizer's mailbox as a result of an invitee responding to the meeting request. An app can act on event messages in the same way as on messages with minor differences.
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get event message](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
-|[Update event message](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object. |
-|[Delete message](../api/message-delete.md) | None |Delete eventMessage object. |
+|[Get](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
+|[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object. |
+|[Delete](../api/message-delete.md) | None |Delete eventMessage object. |
 |[Copy message](../api/message-copy.md)|[message](message.md)|Copy a message to a folder.|
 |[Create draft to forward message](../api/message-createforward.md)|[message](message.md)|Create a draft of the Forward message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
 |[Create draft to reply](../api/message-createreply.md)|[message](message.md)|Create a draft of the Reply message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
@@ -72,8 +71,8 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 |internetMessageId |String |The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 |isDelegated|Boolean|True if this meeting request is accessible to a delegate, false otherwise. Default is false.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
-|isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
-|isRead|Boolean|Indicates whether the message has been read.|
+|isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it isn't yet sent.|
+|isRead|Boolean|Indicates whether the message is read.|
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
 |meetingMessageType|meetingMessageType| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
@@ -85,13 +84,13 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
-|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL cannot be accessed from within an iFrame.|
+|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an `ispopout` argument to the end of the URL to change how the message is displayed. If `ispopout` isn't present or if it's set to 1, then the message is shown in a popout window. If `ispopout` is set to 0, then the browser shows the message in the Outlook on the web review pane.<br><br>The message opens in the browser if you're logged in to your mailbox via Outlook on the web. You are prompted to sign in if you aren't already signed in with the browser.<br><br>This URL can't be accessed from within an iFrame.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection| Read-only. Nullable.|
-|event|[event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
+|event|[event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property. Read-only.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the eventMessage. Read-only. Nullable.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the eventMessage. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the eventMessage. Read-only. Nullable.|

@@ -22,6 +22,9 @@ Represents the name and SMTP address of an entity instance, for example, a messa
 |address|String|The email address of an entity instance.|
 |name|String|The display name of an entity instance.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
