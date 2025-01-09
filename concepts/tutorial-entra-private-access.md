@@ -276,7 +276,7 @@ Content-type: application/json
 }
 ```
 
-## Step 2: Specify the type of Global Secure Access private application
+## Step 2: Specify the type of private application
 
 You can create a Global Secure Access private application of type Quick Access or enterprise application. The values in the **application** > **onPremisesPublishing** > **applicationType** property would be `quickaccessapp` for Quick Access Applications and `nonwebapp` for enterprise applications.
 
