@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items/AAMkAGI1AAAoZCfHAAA=
+GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/{mailboxId}/folders/AAMkAGVmMDEzM/items/AAMkAGI1AAAoZCfHAAA=
 ```
 
 
