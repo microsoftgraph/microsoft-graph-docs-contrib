@@ -20,4 +20,4 @@ Subscriptions on Copilot AI interactions require a valid Copilot license that in
 
 For subscriptions targeting Copilot AI interactions that a particular user is part of, the user in the resource path must have the above service plans assigned to them in a valid state.
 
-For subscriptions targeting Copilot AI interactions for the entire tenant, the tenant must have valid licenses provisioned that have all of the above Copilot service plans.
+For subscriptions targeting Copilot AI interactions for the entire tenant, the tenant must have valid licenses provisioned that include all of the previous Copilot service plans.
