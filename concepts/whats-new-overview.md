@@ -21,7 +21,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Device and app management | Cloud PC
 
-[Retry](/graph/api/cloudpcbulkaction-retry?view=graph-rest-beta&preserve-view=true) a bulk action with selected Cloud PCs.
+- [Retry](/graph/api/cloudpcbulkaction-retry?view=graph-rest-beta&preserve-view=true) a bulk action with selected Cloud PCs.
+- Use the **productType** property on [cloudPc](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the product type of a Cloud PC or to filter Cloud PCs by product type.
 
 ### Identity and access | Directory management
 
