@@ -70,8 +70,7 @@ The following example shows how to update certain folder properties of a mailbox
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/{id}
-PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/inbox/childFolders/{id}
+PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/AAMkAGVmMDEzM
 
 {
   "displayName": "new-displayName-value",

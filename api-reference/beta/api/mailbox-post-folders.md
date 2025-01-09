@@ -72,7 +72,6 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders
-POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/inbox/childFolders
 
 {
   "displayName": "displayName-value",
