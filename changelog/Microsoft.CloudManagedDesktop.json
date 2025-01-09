@@ -4,10 +4,10 @@
       "ChangeList": [
         {
           "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "cloudPcProvisioningPolicyAutopatch",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcProvisioningPolicyAutopatch](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAutopatch?view=graph-rest-1.0) complex type.",
+          "Description": "Added the [cloudPcProvisioningPolicyAutopatch](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAutopatch?view=graph-rest-1.0) resource type.",
           "Target": "cloudPcProvisioningPolicyAutopatch"
         },
         {
