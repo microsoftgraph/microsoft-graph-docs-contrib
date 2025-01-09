@@ -16,7 +16,7 @@ Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows
 
 At the core of Microsoft Graph are the concepts of the user and group.
 
-Millions of _users_ access Microsoft 365 cloud services. User data is what drives businesses, and user identities must be protected and managed. Microsoft Graph services make user data available to businesses in rich contexts, real-time updates, and deep insights, and always only with the appropriate permissions. While users are the core identities, the Microsoft cloud ecosystem also supports applications and devices as identities.
+Millions of _users_ access Microsoft cloud services. User data is what drives businesses, and user identities must be protected and managed. Microsoft Graph services make user data available to businesses in rich contexts, real-time updates, and deep insights, and always only with the appropriate permissions. While users are the core identities, the Microsoft cloud ecosystem also supports applications and devices as identities.
 
 A _group_ is the fundamental entity that lets users collaborate. It integrates with other services, enabling richer scenarios in task planning, teamwork, education, and more. 
 
