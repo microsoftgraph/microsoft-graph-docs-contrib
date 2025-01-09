@@ -12,18 +12,10 @@
           },
           {
             "Id": "05d810e7-7e8d-4178-ba45-34c97ff8fec8",
-            "ApiChange": "Method",
-            "ChangedApiName": "retrieveCrossRegionDisasterRecoveryReport",
-            "ChangeType": "Deletion",
-            "Description": "Removed the **retrieveCrossRegionDisasterRecoveryReport** method from the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
-            "Target": "cloudPcReports"
-          },
-          {
-            "Id": "05d810e7-7e8d-4178-ba45-34c97ff8fec8",
-            "ApiChange": "Method",
+            "ApiChange": "Parameter",
             "ChangedApiName": "retrieveCrossRegionDisasterRecoveryReport",
             "ChangeType": "Addition",
-            "Description": "Added the [retrieveCrossRegionDisasterRecoveryReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
+            "Description": "Added the **reportName** parameters to the [retrieveCrossRegionDisasterRecoveryReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta) method.",
             "Target": "cloudPcReports"
           }
         ],
