@@ -79,9 +79,9 @@ PUT /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onEmailO
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.onOtpSendCustomExtension",
+  "@odata.type": "microsoft.graph.onOtpSendCustomExtension",
   "authenticationConfiguration": {
-    "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+    "@odata.type": "microsoft.graph.azureAdTokenAuthentication",
     "resourceId": "api://customonemailprovider.azurwebsites.net/f9c5dc6b-d72b-4226-8ccd-801f7a290428"
   },
   "clientConfiguration": {
@@ -91,7 +91,7 @@ Content-Type: application/json
   "description": "Sends OTP Code via ACS.",
   "displayName": "ACS Emails",
   "endpointConfiguration": {
-    "@odata.type": "#microsoft.graph.httpRequestEndpoint"
+    "@odata.type": "microsoft.graph.httpRequestEndpoint"
  	  "targetUrl": "https://customonemailprovider.azurewebsites.net/api/sendOneTimeCode"
   },
   "behaviorOnError": {
@@ -116,10 +116,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.onOtpSendCustomExtension",
+  "@odata.type": "microsoft.graph.onOtpSendCustomExtension",
   "id": "1c8b03b2-7663-fbe9-960a-bc541decd469",
   "authenticationConfiguration": {
-    "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+    "@odata.type": "microsoft.graph.azureAdTokenAuthentication",
     "resourceId": "api://customonemailprovider.azurwebsites.net/f9c5dc6b-d72b-4226-8ccd-801f7a290428"
   },
   "clientConfiguration": {
@@ -129,7 +129,7 @@ Content-Type: application/json
   "description": "Sends OTP Code via ACS.",
   "displayName": "ACS Emails",
   "endpointConfiguration": {
-    "@odata.type": "#microsoft.graph.httpRequestEndpoint"
+    "@odata.type": "microsoft.graph.httpRequestEndpoint"
  	  "targetUrl": "https://customonemailprovider.azurewebsites.net/api/sendOneTimeCode"
   },
   "behaviorOnError": {
