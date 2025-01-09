@@ -50,22 +50,22 @@ The following table shows the parameters that you can use with this action.
 
 | Parameter  | Type              | Description                                                                                           |
 | :--------- | :---------------- | :---------------------------------------------------------------------------------------------------- |
-| reportName | cloudPcDisasterRecoveryReportName | The report name, possible values: `crossRegionDisasterRecoveryReport`. When reportName isn't initialized, "crossRegionDisasterRecoveryReport" will be used as default.                           |
 | filter     | String            | OData `$filter` syntax. The supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.     |
 | groupBy    | String collection | Specifies how to group the reports. If used, must have the same content as the **select** parameter.  |
 | orderBy    | String collection | Specifies how to sort the reports.                                                                    |
+| reportName | cloudPcDisasterRecoveryReportName | The report name. The possible value is: `crossRegionDisasterRecoveryReport`. When **reportName** isn't initialized, `crossRegionDisasterRecoveryReport` is the default value. |
 | search     | String            | Specifies a String to search.                                                                         |
 | select     | String collection | OData `$select` syntax. The selected columns of the reports.                                          |
 | skip       | Int32             | The number of records to skip.                                                                        |
 | top        | Int32             | The number of top records to return.                                                                  |
 
-#### cloudPcDisasterRecoveryReportName values
+### cloudPcDisasterRecoveryReportName values
 
-| Member name                                  | Description                                                                                                                                                                                                                                                                                             | Value |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
-| `crossRegionDisasterRecoveryReport`          | Default. Indicates the report which shows the overview and details of Cloud PCs with cross region disaster recovery configurations, health check, and status.                                                                                                                                                     | 0    |
-| `disasterRecoveryReport`                     | Indicates the report which shows disaster recovery status of Cloud PCs with their associated category.            | 1    |
-| `unknownFutureValue`                         | Evolvable enumeration sentinel value. Do not use.                                                                                                                                                                                                                                                       | 2     |
+|Member|Description|
+|:---|:---|
+| crossRegionDisasterRecoveryReport          | Default. Indicates the report that shows the overview and details of Cloud PCs with cross-region disaster recovery configurations, health check, and status.    |
+| disasterRecoveryReport                     | Indicates the report that shows the disaster recovery status of Cloud PCs with their associated category.                                                       |
+| unknownFutureValue                         | Evolvable enumeration sentinel value. Don't use.                                                                                                                |
 
 ## Response
 
