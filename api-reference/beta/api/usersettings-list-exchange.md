@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/megan@contoso.com/settings/exchange
+GET /beta/users/{id}/settings/exchange
 ```
 
 ## Optional query parameters
