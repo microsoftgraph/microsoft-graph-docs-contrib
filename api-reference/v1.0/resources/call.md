@@ -31,6 +31,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 > The following known issues are associated with this resource:
 > - [Webhook message processing exception: System.Security.Cryptography.CryptographicException](https://developer.microsoft.com/en-us/graph/known-issues/?search=24752)
 > - [Support for multi-endpoint use case in delta roster notification mode is missing](https://developer.microsoft.com/en-us/graph/known-issues/?search=24894)
+> - [Inconsistent recorded participant number shown on teams client when bot grouping is enabled](https://developer.microsoft.com/en-us/graph/known-issues/?search=28628)
 
 ## Methods
 
