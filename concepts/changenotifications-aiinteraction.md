@@ -5,15 +5,15 @@ author: "edle"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
-ms.date: 12/11/2024
+ms.date: 01/09/2025
 ---
 
 # Get change notifications for Copilot AI interactions using Microsoft Graph
 
-Change notifications enable you to subscribe to Copilot [aiInteractions](/graph/api/resources/aiinteraction) across M365. You can get notified whenever there is a new user query to Copilot or when Copilot responds to the user. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications enable you to subscribe to Copilot [aiInteractions](/graph/api/resources/aiinteraction) across Microsoft 365. You can get notified whenever a new user query to Copilot happens or when Copilot responds to the user. You can also get the resource data in the notifications, which allows you to avoid calling the API to get the payload.
 
 > [!NOTE]
-> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
+> If you request a subscription **expirationDateTime** that is more than one hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request; otherwise, your subscription request fails with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
 
 ## Subscribe to Copilot AI interactions for a particular user (preview)
 
@@ -30,13 +30,14 @@ To get change notifications for Copilot AI interactions that a particular user i
 >**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### Licensing requirements
-To access this change notification resource, the user in the resource path must have all of the following Copilot Service Plan IDs enabled onto them: 
-> - **Graph Connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
-> - **Intelligent Search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
-> - **Microsoft 365 Copilot in Microsoft Teams**: b95945de-b3bd-46db-8437-f2beb6ea2347
-> - **Microsoft 365 Copilot in Productivity Apps**: a62f8878-de10-42f3-b68f-6149a25ceb97
-> - **Microsoft Copilot with Graph-grounded chat**: 3f30311c-6b1e-48a4-ab79-725b469da960
-> - **Power Platform Connectors in Microsoft 365 Copilot**: 89f1c4c8-0878-40f7-804d-869c9128ab5d
+
+To access this change notification resource, the user in the resource path must have all of the following Copilot Service Plan IDs enabled: 
+* **Graph Connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
+* **Intelligent Search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
+* **Microsoft 365 Copilot in Microsoft Teams**: b95945de-b3bd-46db-8437-f2beb6ea2347
+* **Microsoft 365 Copilot in Productivity Apps**: a62f8878-de10-42f3-b68f-6149a25ceb97
+* **Microsoft Copilot with Graph-grounded chat**: 3f30311c-6b1e-48a4-ab79-725b469da960
+* **Power Platform Connectors in Microsoft 365 Copilot**: 89f1c4c8-0878-40f7-804d-869c9128ab5d
 
 ### Example
 
@@ -69,13 +70,15 @@ To get change notifications for Copilot AI interactions across the tenant, subsc
 |Application | AiEnterpriseInteraction.Read.All   |
 
 ### Licensing requirements
-To access this change notification resource, the tenant must have all of the following Copilot Service Plan IDs provisioned onto it in active state:
-> - **Graph Connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
-> - **Intelligent Search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
-> - **Microsoft 365 Copilot in Microsoft Teams**: b95945de-b3bd-46db-8437-f2beb6ea2347
-> - **Microsoft 365 Copilot in Productivity Apps**: a62f8878-de10-42f3-b68f-6149a25ceb97
-> - **Microsoft Copilot with Graph-grounded chat**: 3f30311c-6b1e-48a4-ab79-725b469da960
-> - **Power Platform Connectors in Microsoft 365 Copilot**: 89f1c4c8-0878-40f7-804d-869c9128ab5d
+
+To access this change notification resource, the tenant must have all of the following Copilot Service Plan IDs provisioned and in an active state:
+
+* **Graph Connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
+* **Intelligent Search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
+* **Microsoft 365 Copilot in Microsoft Teams**: b95945de-b3bd-46db-8437-f2beb6ea2347
+* **Microsoft 365 Copilot in Productivity Apps**: a62f8878-de10-42f3-b68f-6149a25ceb97
+* **Microsoft Copilot with Graph-grounded chat**: 3f30311c-6b1e-48a4-ab79-725b469da960
+* **Power Platform Connectors in Microsoft 365 Copilot**: 89f1c4c8-0878-40f7-804d-869c9128ab5d
 
 ### Example
 
@@ -97,10 +100,10 @@ Content-Type: application/json
 
 ## Using $filter OData query to be notified of only a subset of Copilot AI interactions
 
-The `$filter` OData query can be used to filter out Copilot AI interactions that are not needed. For instance, to subscribe to Copilot AI interactions for only a particular M365 app, like Microsoft Teams, append `?$filter=appClass eq 'IPM.SkypeTeams.Message.Copilot.Teams'` to the end of the resource string. To subscribe to all AI interactions where the `conversationType` is not Microsoft BizChat, append `?$filter=conversationType ne 'bizchat'`.
+You can use the `$filter` OData query parameter to filter out Copilot AI interactions that aren't needed. For example, to subscribe to Copilot AI interactions for only a particular Microsoft 365 application, such as Microsoft Teams, append `?$filter=appClass eq 'IPM.SkypeTeams.Message.Copilot.Teams'` to the end of the resource string. To subscribe to all AI interactions where the `conversationType` isn't Microsoft BizChat, append `?$filter=conversationType ne 'bizchat'`.
 
 > [!NOTE]
-> At this time, the OData `$filter` query can only be used on the top-level properties of the [aiInteraction](/graph/api/resources/aiinteraction) resource. Nested property filtering is not supported. For instance, `?$filter=from/user/id eq '48902e20-56dc-48cf-ab15-0b65e15dda67'` is not supported at this time.
+> Currently, the `$filter` query parameter can only be used on the top-level properties of the [aiInteraction](/graph/api/resources/aiinteraction) resource. Nested property filtering isn't supported. For example, `?$filter=from/user/id eq '48902e20-56dc-48cf-ab15-0b65e15dda67'` isn't currently supported.
 
 ### Examples
 
