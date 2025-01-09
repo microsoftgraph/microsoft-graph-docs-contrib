@@ -5,6 +5,7 @@ author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 01/09/2025
 ---
 
 # cloudPcProvisioningPolicyAutopatch resource type
