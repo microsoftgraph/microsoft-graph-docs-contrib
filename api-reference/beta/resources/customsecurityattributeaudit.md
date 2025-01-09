@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 07/22/2024
+toc.title: Custom security attribute audit (preview)
 ---
 
 # customSecurityAttributeAudit resource type

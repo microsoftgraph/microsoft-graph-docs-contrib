@@ -36,11 +36,8 @@ disasterRecoveryNetworkSetting.SetAdditionalData(additionalData)
 crossRegionDisasterRecoverySetting.SetDisasterRecoveryNetworkSetting(disasterRecoveryNetworkSetting)
 disasterRecoveryType := graphmodels.PREMIUM_CLOUDPCDISASTERRECOVERYTYPE 
 crossRegionDisasterRecoverySetting.SetDisasterRecoveryType(&disasterRecoveryType) 
-additionalData := map[string]interface{}{
-	userInitiatedDisasterRecoveryAllowed := true
+userInitiatedDisasterRecoveryAllowed := true
 crossRegionDisasterRecoverySetting.SetUserInitiatedDisasterRecoveryAllowed(&userInitiatedDisasterRecoveryAllowed) 
-}
-crossRegionDisasterRecoverySetting.SetAdditionalData(additionalData)
 requestBody.SetCrossRegionDisasterRecoverySetting(crossRegionDisasterRecoverySetting)
 restorePointSetting := graphmodels.NewCloudPcRestorePointSetting()
 frequencyInHours := int32(16)
