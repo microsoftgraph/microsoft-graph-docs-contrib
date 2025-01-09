@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 05/21/2024
 ---
 
 # virtualEventPresenterDetails resource type
@@ -26,6 +27,9 @@ Represents detail information about a virtual event presenter.
 |personalSiteWebUrl|String|The presenter's personal website URL.|
 |photo|Stream|The content stream of the presenter's photo.|
 |twitterProfileWebUrl|String|The presenter's Twitter profile URL.|
+
+## Relationships
+None.
 
 ## JSON representation
 

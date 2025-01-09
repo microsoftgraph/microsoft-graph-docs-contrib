@@ -5,6 +5,7 @@ author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 10/07/2024
 ---
 
 # virtualEventRegistration resource type
@@ -57,6 +58,9 @@ Inherits from [entity](../resources/entity.md).
 | pendingApproval | Manual approval is enabled and the attendee is pending approval from the organizer. |
 | rejectedByOrganizer | Manual approval is enabled and the organizer rejected the attendee. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+## Relationships
+None.
 
 ## JSON representation
 

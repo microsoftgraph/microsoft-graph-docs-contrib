@@ -118,6 +118,7 @@ Content-type: application/json
 
 {
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "id": "d8aa6cc9-7a1a-fb34-ed9c-e1ac3dcd54c8",
   "createdDateTime": "2019-03-14T05:35:57.755Z",
   "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
   "lastModifiedBy": {
@@ -140,7 +141,8 @@ Content-type: application/json
     "startDateTime": "2019-03-11T07:00:00Z",
     "endDateTime": "2019-03-12T07:00:00Z",
     "theme": "pink"
-  }
+  },
+  "isStagedForDeletion": false
 }
 ```
 

@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 07/23/2024
 ---
 
 # Get longRunningOperation
@@ -294,5 +295,44 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Retrieve a long-running operation from the industry data service
 
+The following example shows how to get a long-running operation for the industry data service.
 
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_longrunningoperation_industrydata"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/external/industryData/operations/d194fa3e-18c9-47a1-0fb1-08dad8e7a876
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.longRunningOperation"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.longRunningOperation",
+  "createdDateTime": "2022-12-14T05:54:35.400029Z",
+  "id": "d194fa3e-18c9-47a1-0fb1-08dad8e7a876",
+  "lastActionDateTime": "2022-12-14T05:54:43.8410226Z",
+  "resourceLocation": "https://graph.microsoft.com/beta/industryData/dataConnectors/022da4a0-c239-4b07-abed-08dad8e7a07a",
+  "status": "succeeded",
+  "statusDetail": null
+}
+```

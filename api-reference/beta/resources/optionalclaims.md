@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 03/21/2024
 ---
 
 # optionalClaims resource type
@@ -23,6 +24,9 @@ Application developers can configure optional claims in their Microsoft Entra ap
 |idToken|[optionalClaim](optionalclaim.md) collection| The optional claims returned in the JWT ID token. |
 |accessToken|[optionalClaim](optionalclaim.md) collection| The optional claims returned in the JWT access token. |
 |saml2Token|[optionalClaim](optionalclaim.md) collection| The optional claims returned in the SAML token.|
+
+## Relationships
+None.
 
 ## JSON Representation
 The following JSON representation shows the resource type.

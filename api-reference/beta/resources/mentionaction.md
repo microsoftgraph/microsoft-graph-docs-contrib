@@ -18,6 +18,17 @@ The **MentionAction** resource provides information about an [activity][] that m
 
 [activity]: itemactivity.md
 
+## Properties
+
+| Property   | Type                       | Description                                           |
+| :--------- | :------------------------- | :---------------------------------------------------- |
+| mentionees | [identitySet][] collection | The identities of the users mentioned in this action. |
+
+[identitySet]: identityset.md
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {
@@ -31,14 +42,6 @@ The **MentionAction** resource provides information about an [activity][] that m
   "mentionees": [{"@odata.type": "microsoft.graph.identitySet"}]
 }
 ```
-
-## Properties
-
-| Property   | Type                       | Description                                           |
-| :--------- | :------------------------- | :---------------------------------------------------- |
-| mentionees | [identitySet][] collection | The identities of the users mentioned in this action. |
-
-[identitySet]: identityset.md
 
 ## Remarks
 

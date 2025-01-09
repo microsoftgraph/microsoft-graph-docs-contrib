@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemEventItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.EventsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"multiValueExtendedProperties($filter=id eq 'StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation')"},
 }
-configuration := &graphusers.ItemEventItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.EventsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

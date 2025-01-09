@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # communicationsApplicationInstanceIdentity resource type
@@ -25,6 +26,9 @@ Inherits from [identity](identity.md).
 | hidden | Boolean | `True` if the participant shouldn't be shown in other participants' rosters. |
 | id | String | The object ID of the resource account user in Microsoft Entra ID. Inherited from **identity**. |
 | tenantId | String | The tenant ID of the application. |
+
+## Relationships
+None.
 
 ## JSON representation
 

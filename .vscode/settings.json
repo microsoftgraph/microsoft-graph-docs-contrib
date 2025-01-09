@@ -1,5 +1,7 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
+        "main",
+        "main",
         "main"
     ],
     "json.schemas": [

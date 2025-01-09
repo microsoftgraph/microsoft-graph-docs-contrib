@@ -6,6 +6,7 @@ author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # iPv6CidrRange resource type
@@ -23,6 +24,9 @@ Inherits from [ipRange](../resources/iprange.md)
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |cidrAddress|String|IPv6 address in CIDR notation. Not nullable.|
+
+## Relationships
+None.
 
 ## JSON representation
 

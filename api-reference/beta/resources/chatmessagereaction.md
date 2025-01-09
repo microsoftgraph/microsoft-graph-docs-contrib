@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "RamjotSingh"
 ms.subservice: "teams"
+ms.date: 10/18/2024
 ---
 
 # chatMessageReaction resource type
@@ -26,6 +27,9 @@ An entity of type `chatMessageReaction` is returned as part of the [Get channel 
 |reactionContentUrl|String|The hosted content URL for the custom reaction type. |
 |reactionType|String|The reaction type. Supported values include Unicode characters, `custom`, and some backward-compatible reaction types, such as `like`, `angry`, `sad`, `laugh`, `heart`, and `surprised`. |
 |user|[chatMessageReactionIdentitySet](chatmessagereactionidentityset.md)|The user who reacted to the message.|
+
+## Relationships
+None.
 
 ## JSON representation
 

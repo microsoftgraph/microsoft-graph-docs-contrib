@@ -5,6 +5,7 @@ author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 12/31/2024
 ---
 
 # Update device
@@ -49,11 +50,12 @@ In the request body, supply the values for the [device](../resources/device.md) 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Only callers with at least the *Cloud Device Administrator* role can update this property. |
-|operatingSystem|String|The type of operating system on the device.|
-|operatingSystemVersion|String|The version of the operating system on the device|
+|alternativeNames|String collection|List of alternative names for the device, for example, `resourceIds`.|
 |displayName|String|The display name for the device.|
 |isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. |
 |isManaged|Boolean|`true` if the device is managed by a Mobile Device Management (MDM) app; otherwise, `false`. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. |
+|operatingSystem|String|The type of operating system on the device.|
+|operatingSystemVersion|String|The version of the operating system on the device.|
 
 Since the **device** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **device** instance.
