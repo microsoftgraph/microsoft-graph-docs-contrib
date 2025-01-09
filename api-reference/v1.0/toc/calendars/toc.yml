@@ -6,15 +6,15 @@ items:
   items:
   - name: Calendar
     href: ../../resources/calendar.md
-  - name: List calendars
+  - name: List
     href: ../../api/user-list-calendars.md
-  - name: Create calendar
+  - name: Create
     href: ../../api/user-post-calendars.md
-  - name: Get calendar
+  - name: Get
     href: ../../api/calendar-get.md
-  - name: Update calendar
+  - name: Update
     href: ../../api/calendar-update.md
-  - name: Delete calendar
+  - name: Delete
     href: ../../api/calendar-delete.md
   - name: List calendar view
     href: ../../api/calendar-list-calendarview.md
@@ -38,15 +38,15 @@ items:
   items:
   - name: Event
     href: ../../resources/event.md
-  - name: List events
+  - name: List
     href: ../../api/user-list-events.md
-  - name: Create event
+  - name: Create
     href: ../../api/user-post-events.md
-  - name: Get event
+  - name: Get
     href: ../../api/event-get.md
-  - name: Update event
+  - name: Update
     href: ../../api/event-update.md
-  - name: Delete event
+  - name: Delete
     href: ../../api/event-delete.md
   - name: Get delta
     href: ../../api/event-delta.md
@@ -92,11 +92,11 @@ items:
   items:
   - name: Event message
     href: ../../resources/eventmessage.md
-  - name: Get event message
+  - name: Get
     href: ../../api/eventmessage-get.md
-  - name: Update event message
+  - name: Update
     href: ../../api/eventmessage-update.md
-  - name: Delete message
+  - name: Delete
     href: ../../api/message-delete.md
   - name: Copy message
     href: ../../api/message-copy.md
@@ -142,8 +142,10 @@ items:
   items:
   - name: Attachment
     href: ../../resources/attachment.md
-  - name: Get attachment
+  - name: Get
     href: ../../api/attachment-get.md
+  - name: Delete
+    href: ../../api/attachment-delete.md
   - name: Add attachment to a user event
     href: ../../api/event-post-attachments.md
   - name: Add attachment to a message
@@ -158,31 +160,29 @@ items:
     href: ../../api/message-list-attachments.md
   - name: List attachments of a post
     href: ../../api/post-list-attachments.md
-  - name: Delete
-    href: ../../api/attachment-delete.md
 - name: File attachment
   items:
   - name: File attachment
     href: ../../resources/fileattachment.md
-  - name: Get attachment
+  - name: Get
     href: ../../api/attachment-get.md
-  - name: Delete attachment
+  - name: Delete
     href: ../../api/attachment-delete.md
 - name: Item attachment
   items:
   - name: Item attachment
     href: ../../resources/itemattachment.md
-  - name: Get attachment
+  - name: Get
     href: ../../api/attachment-get.md
-  - name: Delete attachment
+  - name: Delete
     href: ../../api/attachment-delete.md
 - name: Reference attachment
   items:
   - name: Reference attachment
     href: ../../resources/referenceattachment.md
-  - name: Get attachment
+  - name: Get
     href: ../../api/attachment-get.md
-  - name: Delete attachment
+  - name: Delete
     href: ../../api/attachment-delete.md
 - name: Calendar group
   items:
@@ -216,19 +216,19 @@ items:
     href: ../../api/calendarpermission-update.md
   - name: Delete
     href: ../../api/calendarpermission-delete.md
-- name: Outlook category
+- name: Outlook category (deprecated)
   items:
-  - name: Outlook category
+  - name: Outlook category (deprecated)
     href: ../../resources/outlookcategory.md
-  - name: List categories
+  - name: List
     href: ../../api/outlookuser-list-mastercategories.md
-  - name: Get category
+  - name: Get
     href: ../../api/outlookcategory-get.md
-  - name: Create category
+  - name: Create
     href: ../../api/outlookuser-post-mastercategories.md
-  - name: Update category
+  - name: Update
     href: ../../api/outlookcategory-update.md
-  - name: Delete category
+  - name: Delete
     href: ../../api/outlookcategory-delete.md
 - name: Extended properties
   items:
@@ -278,3 +278,5 @@ items:
       href: ../../api/place-list.md
     - name: Get place
       href: ../../api/place-get.md
+    - name: Update place
+      href: ../../api/place-update.md
