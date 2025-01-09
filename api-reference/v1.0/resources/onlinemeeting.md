@@ -42,6 +42,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | allowAttendeeToEnableCamera     | Boolean                       | Indicates whether attendees can turn on their camera. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).                         |
 | allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).                         |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).                         |
+| allowedLobbyAdmitters      | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`.  Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
@@ -124,6 +125,7 @@ The following JSON representation shows the resource type.
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
   "allowTeamworkReactions": "Boolean",
   "allowedPresenters": "String",
+  "allowedLobbyAdmitters": "String",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
