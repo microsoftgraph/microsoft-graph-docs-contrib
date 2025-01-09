@@ -64,8 +64,10 @@ items:
   items:
   - name: Attachment
     href: ../../resources/attachment.md
-  - name: Get attachment
+  - name: Get
     href: ../../api/attachment-get.md
+  - name: Delete
+    href: ../../api/attachment-delete.md
   - name: Add attachment to a user event
     href: ../../api/event-post-attachments.md
   - name: Add attachment to a message
@@ -80,21 +82,19 @@ items:
     href: ../../api/message-list-attachments.md
   - name: List attachments of a post
     href: ../../api/post-list-attachments.md
-  - name: Delete
-    href: ../../api/attachment-delete.md
-- name: Outlook category
+- name: Outlook category (deprecated)
   items:
-  - name: Outlook category
+  - name: Outlook category (deprecated)
     href: ../../resources/outlookcategory.md
-  - name: List categories
+  - name: List
     href: ../../api/outlookuser-list-mastercategories.md
-  - name: Get category
+  - name: Get
     href: ../../api/outlookcategory-get.md
-  - name: Create category
+  - name: Create
     href: ../../api/outlookuser-post-mastercategories.md
-  - name: Update category
+  - name: Update
     href: ../../api/outlookcategory-update.md
-  - name: Delete category
+  - name: Delete
     href: ../../api/outlookcategory-delete.md
 - name: Mail folder
   items:
