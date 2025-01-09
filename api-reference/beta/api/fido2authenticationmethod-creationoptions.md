@@ -59,6 +59,8 @@ Don't supply a request body for this method.
 
 If successful, this function returns a `200 OK` response code and a [webauthnCredentialCreationOptions](../resources/webauthncredentialcreationoptions.md) in the response body.
 
+This method also returns **excludeCredentials** key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0, 1, or 2 to the same number of base64 padding characters.
+
 ## Examples
 
 ### Request
@@ -100,9 +102,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}/authentication/fido2Methods
 
 The following example shows the response.
 
-> [!NOTE]
-> * The **creationOptions** request returns **excludeCredentials** key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0, 1, or 2 to the same number of base64 padding characters.
-> * The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
