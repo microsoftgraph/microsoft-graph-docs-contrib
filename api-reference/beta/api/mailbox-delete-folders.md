@@ -43,7 +43,6 @@ DELETE /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFold
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
 
 ## Request body
 

@@ -58,7 +58,6 @@ You can use a `$select` query parameter as in any GET request to specify only th
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
 |Prefer|odata.maxpagesize={x}. Optional.|
 
 ## Request body
