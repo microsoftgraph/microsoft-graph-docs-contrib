@@ -204,7 +204,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='30d0e128-de93-41dc-89ec-33d84bb662a0',servicePlanId='9ecf691d-8b82-46cb-b254-cd061b2c02fb')?$select=id,displayName,powerState,connectivityResult,lastLoginResult,lastRemoteActionResult,osVersion,provisioningPolicyName,userAccountType
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='30d0e128-de93-41dc-89ec-33d84bb662a0',servicePlanId='9ecf691d-8b82-46cb-b254-cd061b2c02fb')?$select=id,displayName,powerState,connectivityResult,lastLoginResult,lastRemoteActionResult,osVersion,provisioningPolicyName,userAccountType,productType
 ```
 
 # [C#](#tab/csharp)
@@ -268,7 +268,8 @@ Content-Type: application/json
       "lastRemoteActionResult": "Succeed",
       "osVersion": null,
       "provisioningPolicyName": "Test-Policy",
-      "userAccountType": null
+      "userAccountType": null,
+      "productType": null
     },
     {
       "@odata.type": "#microsoft.graph.cloudPC",
@@ -280,7 +281,8 @@ Content-Type: application/json
       "lastRemoteActionResult": "Succeed",
       "osVersion": null,
       "provisioningPolicyName": "Test-Policy",
-      "userAccountType": null
+      "userAccountType": null,
+      "productType": null
     }
   ]
 }
