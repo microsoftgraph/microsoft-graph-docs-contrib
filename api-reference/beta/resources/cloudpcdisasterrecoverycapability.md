@@ -22,7 +22,7 @@ Represents the disaster recovery status of a Cloud PC, including the primary reg
  | :--- | :--- | :--- |
  | capabilityType | [cloudPcDisasterRecoveryCapabilityType](#cloudpcdisasterrecoverycapabilitytype-values) | The disaster recovery action that can be performed for the Cloud PC. The possible values are: `none`, `failover`, `failback`, `unknownFutureValue`. |
  | licenseType | [cloudPcDisasterRecoveryLicenseType](#cloudpcdisasterrecoverylicensetype-values) | Defines which disaster recovery license type provides the capability. |
- | primaryRegion | String | The primary and mainly-used region where the Cloud PC is located. |
+ | primaryRegion | String | The primary and mainly used region where the Cloud PC is located. |
  | secondaryRegion | String | The secondary region to which the Cloud PC can be failed over during a regional outage. |
 
 ### cloudPcDisasterRecoveryCapabilityType values
@@ -40,7 +40,7 @@ Represents the disaster recovery status of a Cloud PC, including the primary reg
  | :------| :-----------|
  | none | Default. The Cloud PC has no disaster recovery license. |
  | standard | A standard tier license with which the backup device of a Cloud PC is provisioned after failover action is triggered. |
- | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+ | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
