@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update [mailboxFolder](../resources/mailboxfolder.md) properties such as the **displayName** within a mailbox.
 
->**Note:** The folder type can't be updated. Instead the folder needs to be deleted and a new folder can be created.
+>**Note:** The folder **type** can't be updated. Instead the folder needs to be deleted and a new folder can be created.
 
 ## Permissions
 
