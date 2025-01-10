@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for configuring the applications to listen the onEmailOtpSend event, the corresponding custom extension handler ID, and the request timeout length.
+Used for configuring the applications that listen to the onEmailOtpSend event, the corresponding custom extension handler ID, and the request timeout length.
 
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
