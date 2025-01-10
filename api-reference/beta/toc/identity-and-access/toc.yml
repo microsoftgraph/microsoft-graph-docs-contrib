@@ -2058,6 +2058,8 @@ items:
       href: ../../resources/onattributecollectionlistener.md
     - name: On authentication method load start listener
       href: ../../resources/onauthenticationmethodloadstartlistener.md
+    - name: On email otp send listener
+      href: ../../resources/onemailotpsendlistener.md
     - name: On interactive auth flow start listener
       href: ../../resources/oninteractiveauthflowstartlistener.md
     - name: On token issuance start listener
@@ -2666,6 +2668,14 @@ items:
         href: ../../api/onattributecollectionsubmitcustomextension-get.md
       - name: Update
         href: ../../api/onattributecollectionsubmitcustomextension-update.md
+    - name: On otp send custom extension
+      items:
+      - name: On otp send custom extension
+        href: ../../resources/onotpsendcustomextension.md
+      - name: Get
+        href: ../../api/onotpsendcustomextension-get.md
+      - name: Update
+        href: ../../api/onotpsendcustomextension-update.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation
