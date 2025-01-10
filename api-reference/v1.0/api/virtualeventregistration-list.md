@@ -124,6 +124,10 @@ Content-Type: application/json
       "firstName": "Emilee",
       "lastName": "Pham",
       "email": "EmileeMPham@contoso.com",
+      "externalRegistrationInformation": {
+        "referrer": "Facebook",
+        "registrationId": "myExternalRegistrationId"
+      },
       "status": "registered",
       "registrationDateTime": "2023-03-07T22:04:17",
       "cancelationDateTime": null,
