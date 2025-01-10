@@ -19,6 +19,8 @@ Used for configuring the applications that listen to the onEmailOtpSend event, t
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
+For more information, see [Configure a custom email provider for one time passcode send events (preview)](/entra/identity-platform/custom-extension-email-otp-get-started).
+
 
 ## Methods
 None.
