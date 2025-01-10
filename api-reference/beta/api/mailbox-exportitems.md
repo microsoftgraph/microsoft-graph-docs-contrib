@@ -69,6 +69,7 @@ The following example exports two items present in the user's mailbox. The **ite
 <!-- {
   "blockType": "request",
   "name": "mailboxthis.exportitems"
+  "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
 ``` http

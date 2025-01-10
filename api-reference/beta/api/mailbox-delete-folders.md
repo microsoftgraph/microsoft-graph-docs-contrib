@@ -60,6 +60,7 @@ The following example shows how to delete a mailbox folder or a child folder.
 <!-- {
   "blockType": "request",
   "name": "delete_mailboxfolder"
+  "sampleKeys": ["MBX:e0643f21@a7809c93", "AAMkAGVmMDEzM"]
 }
 -->
 ``` http

@@ -67,6 +67,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_mailboxitem"
+  "sampleKeys": ["MBX:e0643f21@a7809c93", "NJWt2LeVEAAAIBDAAAAA=="]
 }
 -->
 ``` http
@@ -128,6 +129,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_mailboxitem"
+  "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
 ``` http

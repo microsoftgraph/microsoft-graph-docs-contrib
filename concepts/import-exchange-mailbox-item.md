@@ -34,6 +34,7 @@ The opaque URL, returned in the **importUrl** property of the new **mailboxItemI
 <!-- {
   "blockType": "request",
   "name": "mailboxthis.createimportsession"
+  "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
 ``` http
@@ -47,7 +48,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.OutlookServices.mailboxItemImportSession"
+  "@odata.type": "microsoft.graph.mailboxItemImportSession"
 }
 -->
 ``` http
@@ -94,6 +95,13 @@ The following example shows how to import a new item into the mailbox in **creat
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "mailboxthis.importItemCreateMode"
+  "sampleKeys": ["MBX:e0643f21@a7809c93"]
+}
+-->
+
 ``` http
 POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b
 
@@ -106,6 +114,12 @@ POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.importMailboxItemResponse"
+}
+-->
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -124,6 +138,12 @@ The following example shows how to import a new version of an existing item into
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "mailboxthis.importItemUpdateMode"
+  "sampleKeys": ["MBX:e0643f21@a7809c93"]
+}
+-->
 ``` http
 POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b
 
@@ -138,6 +158,12 @@ POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.importMailboxItemResponse"
+}
+-->
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json

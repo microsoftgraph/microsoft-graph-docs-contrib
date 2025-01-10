@@ -63,6 +63,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_exchangesettings"
+  "sampleKeys": ["megan@contoso.com"]
 }
 -->
 ``` http

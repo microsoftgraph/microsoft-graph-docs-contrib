@@ -63,6 +63,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_mailboxitem"
+  "sampleKeys": ["MBX:e0643f21@a7809c93", "AAMkAGVmMDEzM", "AAMkAGI1AAAoZCfHAAA="]
 }
 -->
 ``` http

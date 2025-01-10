@@ -67,6 +67,7 @@ The following example shows how to update certain folder properties of a mailbox
 <!-- {
   "blockType": "request",
   "name": "update_mailboxfolder"
+  "sampleKeys": ["MBX:e0643f21@a7809c93", "AAMkAGVmMDEzM"]
 }
 -->
 ``` http

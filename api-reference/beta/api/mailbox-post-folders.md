@@ -68,6 +68,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_mailboxfolder_from_"
+  "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
 ``` http
@@ -111,4 +112,3 @@ Content-length: 179
   "type": "IPF.Note"
 }
 ```
-

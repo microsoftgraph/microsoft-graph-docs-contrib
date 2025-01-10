@@ -64,6 +64,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_mailboxfolder"
+  "sampleKeys": ["MBX:e0643f21@a7809c93", "NJWt2LeVEAAAIBDAAAAA=="]
 }
 -->
 ``` http
