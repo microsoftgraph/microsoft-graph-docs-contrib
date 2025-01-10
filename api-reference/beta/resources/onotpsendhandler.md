@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ms.date: 01/09/2025
+toc.title: On email OTP send listener
 ---
 
 # onOtpSendHandler resource type

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ms.date: 12/10/2024
+toc.title: On OTP send custom extension
 ---
 
 # onOtpSendCustomExtension resource type
