@@ -32,11 +32,14 @@ To customize the authentication process, listeners can be registered which speci
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-None.
-
-For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.
+|[List](../api/identitycontainer-list-authenticationeventlisteners.md)|[authenticationEventListener](../resources/authenticationeventlistener.md) collection|Retrieve a list of the object types that are derived from **authenticationEventListener**.|
+|[Create](../api/identitycontainer-post-authenticationeventlisteners.md)|[authenticationEventListener](../resources/authenticationeventlistener.md)|Create a new object type that is derived from **authenticationEventListener**.|
+|[Get](../api/authenticationeventlistener-get.md)|[authenticationEventListener](../resources/authenticationeventlistener.md)|Read the properties and relationships of an object type that is derived from **authenticationEventListener**.|
+|[Update](../api/authenticationeventlistener-update.md)|None|Update the properties of an object type that is derived from **authenticationEventListener**.|
+|[Delete](../api/authenticationeventlistener-delete.md)|None|Delete an object type that is derived from **authenticationEventListener**.|
 
 ## Properties
 |Property|Type|Description|
