@@ -17,6 +17,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **accessTier** property to the [cloudPcForensicStorageAccount](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcforensicstorageaccount?view=graph-rest-beta) resource.",
           "Target": "cloudPcForensicStorageAccount"
+        },
+        {
+          "Id": "50cf0bff-857a-4f38-b021-a0095e5f502f",
+          "ApiChange": "Property",
+          "ChangedApiName": "immutableStorage",
+          "ChangeType": "Addition",
+          "Description": "Added the **immutableStorage** property to the [cloudPcForensicStorageAccount](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcforensicstorageaccount?view=graph-rest-beta) resource.",
+          "Target": "cloudPcForensicStorageAccount"
         }
       ],
       "Id": "50cf0bff-857a-4f38-b021-a0095e5f502f",
