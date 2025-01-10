@@ -1,10 +1,11 @@
 ---
 title: "Get multiValueLegacyExtendedProperty"
-description: "expand`."
+description: "Get a resource instance that contains a multi-value extended property by using $expand."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: non-product-specific
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get multiValueLegacyExtendedProperty

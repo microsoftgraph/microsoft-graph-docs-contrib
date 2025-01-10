@@ -18,11 +18,11 @@ import (
 
 requestFilter := "category eq 'leaver'"
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.LifecycleWorkflowsWorkflowsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"id","category","displayName","isEnabled","isSchedulingEnabled"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.LifecycleWorkflowsWorkflowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

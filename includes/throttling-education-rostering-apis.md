@@ -9,7 +9,7 @@ ms.topic: include
 
 | Request type | Limit per app for all tenants | Limit per app per tenant |
 | ------------ | ----------------------------- | ------------------------ |
-| Any | 400000 requests per 20 seconds | 35000 requests per 10 seconds |
+| Any | 400,000 requests per 20 seconds | 35,000 requests per 10 seconds |
 
 The preceding limits apply to the following resources:  
 

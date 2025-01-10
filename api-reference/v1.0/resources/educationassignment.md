@@ -6,6 +6,7 @@ author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Assignment
+ms.date: 06/10/2024
 ---
 
 # educationAssignment resource type

@@ -5,6 +5,7 @@ ms.reviewer: ric.lewis
 ms.subservice: change-notifications
 ms.topic: include
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD041-->
@@ -40,6 +41,7 @@ The following table lists the latency to expect between an event happening in th
 | [shift][]               | Less than 1 minute   | 60 minutes      |
 | [swapShiftsChangeRequest][]| Less than 1 minute| 60 minutes      |
 | [team][]                | Less than 10 seconds | 60 minutes      |
+| [teamsAppInstallation][]| Less than 10 seconds | 60 minutes      |
 | [timeOffRequest][]      | Less than 1 minute   | 60 minutes      |
 | [todoTask][]            | Less than 2 minutes  | 15 minutes      |
 | [user][]                | Unknown              | Unknown         |
@@ -74,4 +76,5 @@ The following table lists the latency to expect between an event happening in th
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
 [calendar]: /graph/api/resources/calendar
+[teamsAppInstallation]: /graph/api/resources/teamsappinstallation
 [approvals]: /graph/api/resources/approvalItem

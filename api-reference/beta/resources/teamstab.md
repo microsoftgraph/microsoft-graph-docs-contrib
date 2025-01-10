@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "AkJo"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 04/20/2024
 ---
 
 # teamsTab resource type

@@ -78,6 +78,8 @@ items:
     href: ../../api/industrydata-industrydatarun-get.md
   - name: Get statistics
     href: ../../api/industrydata-industrydatarun-getstatistics.md
+  - name: Start
+    href: ../../api/industrydata-industrydatarun-start.md
 - name: Outbound provisioning flow set
   items:
   - name: Outbound provisioning flow set
@@ -210,6 +212,8 @@ items:
     href: ../../resources/industrydata-basicfilter.md
   - name: Class group configuration
     href: ../../resources/industrydata-classgroupconfiguration.md
+  - name: Credential
+    href: ../../resources/industrydata-credential.md
   - name: Enrollment mappings
     href: ../../resources/industrydata-enrollmentmappings.md
   - name: File data connector

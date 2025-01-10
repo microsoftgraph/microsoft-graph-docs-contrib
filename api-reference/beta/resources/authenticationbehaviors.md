@@ -5,6 +5,7 @@ author: "medhir"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/30/2024
 ---
 
 # authenticationBehaviors resource type
@@ -42,3 +43,7 @@ The following JSON representation shows the resource type.
   "requireClientServicePrincipal": "Boolean"
 }
 ```
+
+## Related content
+
+- [How-to: Manage application authenticationBehaviors](/graph/applications-authenticationbehaviors)

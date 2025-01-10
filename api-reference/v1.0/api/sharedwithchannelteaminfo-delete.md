@@ -5,6 +5,7 @@ author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.subservice: "teams"
+ms.date: 09/18/2024
 ---
 
 # Delete sharedWithChannelTeamInfo

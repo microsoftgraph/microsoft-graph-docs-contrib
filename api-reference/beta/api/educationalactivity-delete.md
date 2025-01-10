@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 10/08/2024
 ---
 
 # Delete educationalActivity
@@ -19,10 +20,37 @@ Delete an [educationalActivity](../resources/educationalactivity.md) object from
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "educationalactivity_delete" } -->
+Permissions for the following HTTP syntax:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /me/profile/educationalActivities/{id} 
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "educationalactivity_delete", 
+  "requestUrls": ["DELETE /me/profile/educationalActivities/{id}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/educationalactivity-delete-permissions.md)]
+
+Permissions for the following HTTP syntax:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "educationalactivity_delete_2", 
+  "requestUrls": ["DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationalactivity-delete-2-permissions.md)]
 
 ## HTTP request
 

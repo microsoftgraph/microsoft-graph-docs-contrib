@@ -5,6 +5,7 @@ title: "siteCollection resource type"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # siteCollection resource type
@@ -26,6 +27,9 @@ If a [**site**](site.md) resource has a non-null **siteCollection** property, th
 | **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only. |
 | **archivalDetails**  | [siteArchivalDetails][] | Represents whether the site collection is recently archived, fully archived, or reactivating. Possible values are: `recentlyArchived`, `fullyArchived`, `reactivating`, `unknownFutureValue`.  |
 
+
+## Relationships
+None.
 
 ## JSON representation
 

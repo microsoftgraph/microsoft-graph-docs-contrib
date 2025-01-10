@@ -5,6 +5,7 @@ author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 09/25/2024
 ---
 
 # List healthIssues
@@ -151,7 +152,6 @@ GET https://graph.microsoft.com/v1.0/security/identities/healthIssues
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

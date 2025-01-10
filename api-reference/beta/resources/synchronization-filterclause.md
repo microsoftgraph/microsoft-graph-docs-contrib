@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # filterClause resource type
@@ -21,6 +22,9 @@ Represents a single assertion that a candidate object must satisfy, and is evalu
 |operatorName|String|Name of the operator to be applied to the source and target operands. Must be one of the supported operators. Supported operators can be discovered.|
 |sourceOperandName|String|Name of source operand (the operand being tested). The source operand name must match one of the attribute names on the source object.|
 |targetOperand|[filterOperand](synchronization-filteroperand.md)|Values that the source operand will be tested against.|
+
+## Relationships
+None.
 
 ## JSON representation
 

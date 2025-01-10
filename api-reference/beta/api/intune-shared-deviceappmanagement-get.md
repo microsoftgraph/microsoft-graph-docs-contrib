@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get deviceAppManagement
@@ -17,7 +18,9 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) object.
 
-        ## Permissions
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).  Note that the appropriate permission varies according to the workflow.
 
@@ -30,8 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| |
 | &nbsp; &nbsp; **Apps**, **books**, **onboarding**, **Partner Integration**, or **Policy Set** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {

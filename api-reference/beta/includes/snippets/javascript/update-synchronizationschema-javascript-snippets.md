@@ -43,11 +43,11 @@ const synchronizationSchema = {
                         {
                             source: {},
                             targetAttributeName: 'userName'
-                        },
+                        }
                     ]
-                },
+                }
             ]
-        },
+        }
     ]
 };
 

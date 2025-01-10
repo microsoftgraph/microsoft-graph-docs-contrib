@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # lobbyBypassSettings resource type
@@ -35,6 +36,9 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 | invited | Only people the organizer invites are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
 | organizationExcludingGuests |  Only the participants from the same company are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ author: "srutto"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List daily summary
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-daily GET /userInsightsRoot/daily/summary
+GET /userInsightsRoot/daily/summary
 ```
 
 ## Optional query parameters

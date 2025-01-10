@@ -6,7 +6,8 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-toc.title: Hardware method
+toc.title: Hardware OATH
+ms.date: 10/01/2024
 ---
 
 # hardwareOathAuthenticationMethodConfiguration resource type

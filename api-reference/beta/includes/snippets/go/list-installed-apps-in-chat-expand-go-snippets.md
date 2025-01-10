@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphchats.ChatItemInstalledAppsRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ItemInstalledAppsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsAppDefinition($expand=bot)"},
 }
-configuration := &graphchats.ChatItemInstalledAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ItemInstalledAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

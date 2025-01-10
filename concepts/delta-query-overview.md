@@ -33,12 +33,14 @@ The typical call pattern is as follows:
 
      b.  If Microsoft Graph returns a `@odata.deltaLink` URL, there's no more data about the existing state of the resource to return in the current session. For future requests, the application uses the `@odata.deltaLink` URL to learn about changes to the resource.
 
+     c. A page can't contain both `@odata.deltaLink` and `@odata.nextLink`.
+
     > [!NOTE]
     > The Microsoft Graph response in Step 2 includes the resources that *currently* exist in the collection. Resources that were deleted prior to the initial delta query aren't returned. Updates made before the initial request are summarized on the resource returned as its latest state.
 
-3. When the application needs to learn about changes to the resource, it uses the `@odata.deltaLink` URL it received in step 2 to make requests. The application can make this request immediately after completing step 2 or when it checks for changes.
+4. When the application needs to learn about changes to the resource, it uses the `@odata.deltaLink` URL it received in step 2 to make requests. The application can make this request immediately after completing step 2 or when it checks for changes.
 
-4. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
+5. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
 
 > [!NOTE]
 > - Resources stored in Microsoft Entra ID (such as users and groups) support "sync from now" scenarios. This allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `@odata.deltaLink` instead. Append `$deltatoken=latest` to the `delta` function and the response will contain a `@odata.deltaLink` and no resource data. Resources in OneDrive and SharePoint also support this feature but require `token=latest` instead.

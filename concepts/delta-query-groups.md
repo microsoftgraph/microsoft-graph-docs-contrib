@@ -48,7 +48,7 @@ Take note of the following items:
   - Only properties included in `$select` are tracked for changes. If `$select` isn't specified, all properties of the object are tracked for changes.
 - The optional `$select` query parameter is also used to show how group members can be retrieved together with group objects. This capability allows tracking of membership changes, such as when users are added or removed from groups.
 - The initial request doesn't include a state token. State tokens are used in subsequent requests.
-
+- [Limitations of query parameters in delta functions](delta-query-overview.md#optional-query-parameters).
 
 # [HTTP](#tab/http)
 <!-- {

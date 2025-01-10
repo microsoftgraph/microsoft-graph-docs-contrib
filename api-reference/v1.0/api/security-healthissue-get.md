@@ -4,6 +4,7 @@ description: "Read the properties and relationships of a healthIssue object."
 author: "naalmog"
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 09/25/2024
 ---
 
 # Get healthIssue
@@ -97,7 +98,6 @@ GET https://graph.microsoft.com/v1.0/security/identities/healthIssues/bf600aba-e
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

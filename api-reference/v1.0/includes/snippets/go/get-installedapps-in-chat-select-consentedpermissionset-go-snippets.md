@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphchats.ChatItemInstalledAppItemRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ItemInstalledAppsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"consentedPermissionSet","id"},
 }
-configuration := &graphchats.ChatItemInstalledAppItemRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ItemInstalledAppsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 06/20/2024
 ---
 
 # virtualEventWebinarRegistrationConfiguration resource type

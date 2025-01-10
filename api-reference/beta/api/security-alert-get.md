@@ -5,6 +5,7 @@ author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # Get alert
@@ -154,7 +155,10 @@ Content-type: application/json
       "firstSeenDateTime": "2020-09-12T07:28:32.4321753Z",
       "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
       "azureAdDeviceId": null,
-      "deviceDnsName": "tempDns",
+      "deviceDnsName": "yonif-lap3.middleeast.corp.microsoft.com",
+      "hostName": "yonif-lap3",
+      "ntDomain": null,
+      "dnsDomain": "middleeast.corp.microsoft.com",
       "osPlatform": "Windows10",
       "osBuild": 22424,
       "version": "Other",

@@ -31,11 +31,8 @@ requestBody.SetAcceptedModalities(acceptedModalities)
 callOptions := graphmodels.NewIncomingCallOptions()
 isContentSharingNotificationEnabled := true
 callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
-additionalData := map[string]interface{}{
-	isDeltaRosterEnabled := true
+isDeltaRosterEnabled := true
 callOptions.SetIsDeltaRosterEnabled(&isDeltaRosterEnabled) 
-}
-callOptions.SetAdditionalData(additionalData)
 requestBody.SetCallOptions(callOptions)
 participantCapacity := int32(200)
 requestBody.SetParticipantCapacity(&participantCapacity) 

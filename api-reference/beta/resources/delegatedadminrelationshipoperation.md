@@ -5,6 +5,7 @@ author: "koravvams"
 ms.localizationpriority: medium
 ms.subservice: partner-customer-administration
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # delegatedAdminRelationshipOperation resource type

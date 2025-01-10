@@ -5,6 +5,7 @@ author: "tracyshi"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
+ms.date: 08/01/2024
 ---
 
 # riskyUser resource type

@@ -3,6 +3,7 @@ title: "Access national cloud deployments with the Microsoft Graph SDKs"
 description: "Provides instructions for accessing national cloud deployments using the Microsoft Graph SDKs."
 ms.localizationpriority: medium
 author: jasonjoh
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD051 -->

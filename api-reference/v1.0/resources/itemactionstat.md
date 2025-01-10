@@ -5,6 +5,7 @@ description: The itemActionStat object provides aggregate details about an actio
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # itemActionStat resource type
 

@@ -5,6 +5,7 @@ author: "skandula"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # knownIssueHistoryItem resource type

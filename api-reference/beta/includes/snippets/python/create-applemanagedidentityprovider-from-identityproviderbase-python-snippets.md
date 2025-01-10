@@ -10,10 +10,10 @@ from msgraph_beta.generated.models.apple_managed_identity_provider import AppleM
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AppleManagedIdentityProvider(
 	odata_type = "microsoft.graph.appleManagedIdentityProvider",
-	display_name = "Sign in with Apple",
-	developer_id = "UBF8T346G9",
-	service_id = "com.microsoft.rts.b2c.test.client",
-	key_id = "99P6D879C4",
+	display_name = "Apple",
+	developer_id = "qazx.1234",
+	service_id = "com.contoso.app",
+	key_id = "4294967296",
 	certificate_data = "******",
 )
 

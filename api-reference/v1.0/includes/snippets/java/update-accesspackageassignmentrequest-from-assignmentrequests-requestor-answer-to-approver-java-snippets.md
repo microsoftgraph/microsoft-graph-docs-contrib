@@ -10,7 +10,6 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessPackageAssignmentRequest accessPackageAssignmentRequest = new AccessPackageAssignmentRequest();
 accessPackageAssignmentRequest.setOdataType("#microsoft.graph.accessPackageAssignmentRequest");
-accessPackageAssignmentRequest.setId("7a6ab703-0780-4b37-8445-81f679b2d75c");
 accessPackageAssignmentRequest.setRequestType(AccessPackageRequestType.AdminUpdate);
 LinkedList<AccessPackageAnswer> answers = new LinkedList<AccessPackageAnswer>();
 AccessPackageAnswerString accessPackageAnswer = new AccessPackageAnswerString();

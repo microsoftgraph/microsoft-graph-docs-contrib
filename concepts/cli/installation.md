@@ -3,6 +3,7 @@ title: "Install the Microsoft Graph command-line interface (CLI)"
 description: "Learn how to install the Microsoft Graph command-line interface (CLI)."
 ms.localizationpriority: medium
 author: jasonjoh
+ms.date: 11/07/2024
 ---
 
 # Install the Microsoft Graph command-line interface (CLI)

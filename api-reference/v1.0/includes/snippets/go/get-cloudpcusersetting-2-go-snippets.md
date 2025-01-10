@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointUserSettingItemRequestBuilderGetQueryParameters{
+requestParameters := &graphdevicemanagement.VirtualEndpointUserSettingsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"assignments"},
 }
-configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointUserSettingItemRequestBuilderGetRequestConfiguration{
+configuration := &graphdevicemanagement.VirtualEndpointUserSettingsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

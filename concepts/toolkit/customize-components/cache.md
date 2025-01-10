@@ -3,6 +3,7 @@ title: "Microsoft Graph Toolkit caching"
 description: "Explaining how the Cache works and how to configure the options provided to developers"
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph Toolkit caching

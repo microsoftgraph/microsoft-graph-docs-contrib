@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointExternalPartnerSettingsRequestBuilderGetQueryParameters{
+requestParameters := &graphdevicemanagement.VirtualEndpointExternalPartnerSettingsRequestBuilderGetQueryParameters{
 	Select: [] string {"id","partnerId","enableConnection"},
 }
-configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointExternalPartnerSettingsRequestBuilderGetRequestConfiguration{
+configuration := &graphdevicemanagement.VirtualEndpointExternalPartnerSettingsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

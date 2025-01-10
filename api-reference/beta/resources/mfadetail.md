@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
 author: "egreenberg14"
+ms.date: 05/09/2024
 ---
 
 # mfaDetail resource type
@@ -20,6 +21,9 @@ Indicates MFA details for a specific sign-in. It includes the authentication met
 |:---------------|:--------|:----------|
 |authDetail|String|Indicates the MFA auth detail for the corresponding sign-in activity when the MFA Required is "Yes".|
 |authMethod|String|Indicates the MFA Auth methods (SMS, Phone, Authenticator App are some of the values) for the corresponding sign-in activity when the MFA Required field is "Yes".|
+
+## Relationships
+None.
 
 ## JSON representation
 

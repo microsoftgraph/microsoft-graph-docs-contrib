@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # securityVendorInformation resource type
@@ -23,6 +24,9 @@ Contains details about the security product/service vendor, provider, and subpro
 |providerVersion|String|Version of the provider or subprovider, if it exists, that generated the alert. **Required**|
 |subProvider|String|Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.|
 |vendor |String|Name of the alert vendor (for example, Microsoft, Dell, FireEye). **Required**|
+
+## Relationships
+None.
 
 ## JSON representation
 

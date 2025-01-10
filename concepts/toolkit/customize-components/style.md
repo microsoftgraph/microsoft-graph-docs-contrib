@@ -3,6 +3,7 @@ title: "Styling components in the Microsoft Graph Toolkit"
 description: "Use CSS custom properties to modify the Microsoft Graph Toolkit component styles."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date: 11/07/2024
 ---
 
 # Styling components in the Microsoft Graph Toolkit

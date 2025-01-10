@@ -16,7 +16,6 @@ from msgraph.generated.models.access_package_assignment import AccessPackageAssi
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageAssignmentRequest(
 	odata_type = "#microsoft.graph.accessPackageAssignmentRequest",
-	id = "7a6ab703-0780-4b37-8445-81f679b2d75c",
 	request_type = AccessPackageRequestType.AdminUpdate,
 	answers = [
 		AccessPackageAnswerString(

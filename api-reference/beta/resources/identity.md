@@ -5,6 +5,7 @@ description: "Represents an identity of an actor."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: onedrive
+ms.date: 07/23/2024
 ---
 # identity resource type
 

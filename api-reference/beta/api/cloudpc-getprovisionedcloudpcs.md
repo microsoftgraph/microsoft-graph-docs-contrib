@@ -5,6 +5,7 @@ author: "SleepIsImportant"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # cloudPC: getProvisionedCloudPCs
@@ -35,6 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='{groupId}',servicePlanId='{servicePlanId}')
 ```
 
+## Optional query parameters
+
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response. You can use `$select` to get specific properties, including those properties that aren't returned by default.
+
 ## Request headers
 
 |Name|Description|
@@ -58,14 +63,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all provisioned Cloud PCs and their default properties
+
+The following example shows how to get all provisioned Cloud PCs and their default properties.
+
+#### Request
 
 The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpc.getProvisionedCloudPCs"
+  "name": "cloudpc.getProvisionedCloudPCs_1"
 }
 -->
 ``` http
@@ -73,47 +82,49 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcgetprovisionedcloudpcs-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcgetprovisionedcloudpcs-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcgetprovisionedcloudpcs-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcgetprovisionedcloudpcs-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcgetprovisionedcloudpcs-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcgetprovisionedcloudpcs-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcgetprovisionedcloudpcs-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/cloudpcgetprovisionedcloudpcs-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcgetprovisionedcloudpcs-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcgetprovisionedcloudpcs-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetprovisionedcloudpcs-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetprovisionedcloudpcs-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetprovisionedcloudpcs-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetprovisionedcloudpcs-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcgetprovisionedcloudpcs-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcgetprovisionedcloudpcs-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
+#### Response
 
-The following example shows the response.
+The following example shows the response. It includes only the default properties.
+
+> **Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 
 <!-- {
   "blockType": "response",
   "@odata.type": "Collection(microsoft.graph.cloudPC)",
-  "name": "cloudpc.getProvisionedCloudPCs",
+  "name": "cloudpc.getProvisionedCloudPCs_1",
   "truncated": true
 }
 -->
@@ -138,22 +149,16 @@ Content-Type: application/json
             "servicePlanName": "Cloud PC Enterprise 4vCPU/16GB/256GB",
             "servicePlanType": "enterprise",
             "status": "provisioned",
-            "powerState": "running",
             "userPrincipalName": "pmitchell@contoso.com",
             "lastModifiedDateTime": "2020-07-23T10:29:57Z",
             "statusDetails": null,
             "provisioningType": "dedicated",
             "allotmentDisplayName": null,
             "deviceRegionName": "eastus2",
-            "connectivityResult": "",
             "gracePeriodEndDateTime": null,
-            "lastLoginResult": "2020-07-23T10:29:57Z",
-            "lastRemoteActionResult": "Succeed",
             "onPremisesConnectionName": "Test-OPNC",
-            "osVersion": null,
             "partnerAgentInstallResults": null,
-            "provisioningPolicyName": "Test-Policy",
-            "userAccountType": null
+            "provisioningPolicyName": "Test-Policy"
         },
         {
             "@odata.type": "#microsoft.graph.cloudPC",
@@ -169,23 +174,114 @@ Content-Type: application/json
             "servicePlanName": "Cloud PC Enterprise 4vCPU/16GB/256GB",
             "servicePlanType": "enterprise",
             "status": "provisioned",
-            "powerState": "running",
             "userPrincipalName": "pmitchell@contoso.com",
             "lastModifiedDateTime": "2020-07-28T18:14:34Z",
             "statusDetails": null,
             "provisioningType": "dedicated",
             "allotmentDisplayName": null,
             "deviceRegionName": "eastus2",
-            "connectivityResult": "",
             "gracePeriodEndDateTime": null,
-            "lastLoginResult": "2020-07-23T10:29:57Z",
-            "lastRemoteActionResult": "Succeed",
             "onPremisesConnectionName": "Test-OPNC",
-            "osVersion": null,
             "partnerAgentInstallResults": null,
-            "provisioningPolicyName": "Test-Policy",
-            "userAccountType": null
+            "provisioningPolicyName": "Test-Policy"
         }
     ]
+}
+```
+
+### Example 2: Get all provisioned Cloud PCs and specific properties
+
+The following example shows how to get all provisioned Cloud PCs and use `$select` to get specific properties, including those properties that aren't returned by default.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "cloudpc.getProvisionedCloudPCs_2"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='30d0e128-de93-41dc-89ec-33d84bb662a0',servicePlanId='9ecf691d-8b82-46cb-b254-cd061b2c02fb')?$select=id,displayName,powerState,connectivityResult,lastLoginResult,lastRemoteActionResult,osVersion,provisioningPolicyName,userAccountType
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcgetprovisionedcloudpcs-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcgetprovisionedcloudpcs-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcgetprovisionedcloudpcs-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/cloudpcgetprovisionedcloudpcs-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcgetprovisionedcloudpcs-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetprovisionedcloudpcs-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetprovisionedcloudpcs-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcgetprovisionedcloudpcs-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "Collection(microsoft.graph.cloudPC)",
+  "name": "cloudpc.getProvisionedCloudPCs_2",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.cloudPC",
+      "id": "662009bc-7732-4f6f-8726-25883518b33e",
+      "displayName": "Demo-0",
+      "powerState": "running",
+      "connectivityResult": "",
+      "lastLoginResult": "2020-07-23T10:29:57Z",
+      "lastRemoteActionResult": "Succeed",
+      "osVersion": null,
+      "provisioningPolicyName": "Test-Policy",
+      "userAccountType": null
+    },
+    {
+      "@odata.type": "#microsoft.graph.cloudPC",
+      "id": "ac74ae8b-85f7-4272-88cc-5419267403ed",
+      "displayName": "Demo-1",
+      "powerState": "running",
+      "connectivityResult": "",
+      "lastLoginResult": "2020-07-23T10:29:57Z",
+      "lastRemoteActionResult": "Succeed",
+      "osVersion": null,
+      "provisioningPolicyName": "Test-Policy",
+      "userAccountType": null
+    }
+  ]
 }
 ```

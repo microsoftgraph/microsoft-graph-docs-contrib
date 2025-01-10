@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ruoyingl"
 ms.subservice: excel
 doc_type: apiPageType
+ms.date: 08/21/2024
 ---
 
 # Get FormatProtection

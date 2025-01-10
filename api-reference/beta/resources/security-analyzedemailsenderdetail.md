@@ -5,6 +5,7 @@ author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.subservice: security
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # analyzedEmailSenderDetail resource type

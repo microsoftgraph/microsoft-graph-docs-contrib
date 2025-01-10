@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "namkedia"
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update identityProvider (deprecated)

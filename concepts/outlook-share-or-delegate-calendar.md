@@ -4,6 +4,7 @@ description: "Use the Outlook calendar API to enable a calendar owner to share t
 author: "juforan"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Share or delegate a calendar in Outlook

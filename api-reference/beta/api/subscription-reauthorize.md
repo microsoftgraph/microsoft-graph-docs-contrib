@@ -5,6 +5,7 @@ author: "keylimesoda"
 ms.localizationpriority: medium
 ms.subservice: change-notifications
 doc_type: apiPageType
+ms.date: 06/07/2024
 ---
 
 # subscription: reauthorize

@@ -5,6 +5,7 @@ author: "Luoyyy"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # cloudPC: retrieveCloudPcRemoteActionResults

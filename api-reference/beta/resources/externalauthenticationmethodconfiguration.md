@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: External authentication method
+ms.date: 07/22/2024
 ---
 
 # externalAuthenticationMethodConfiguration resource type

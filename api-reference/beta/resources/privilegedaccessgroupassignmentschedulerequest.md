@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Assignment schedule request
+ms.date: 07/22/2024
 ---
 
 # privilegedAccessGroupAssignmentScheduleRequest resource type

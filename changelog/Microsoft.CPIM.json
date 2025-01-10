@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "c17d1632-51d4-4973-ad2f-10a5fd8df229",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "oidcResponseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **oidcResponseType** enumeration type.",
+          "Target": "oidcResponseType"
+        },
+        {
+          "Id": "c17d1632-51d4-4973-ad2f-10a5fd8df229",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oidcAddressInboundClaims",
+          "ChangeType": "Addition",
+          "Description": "Added the [oidcAddressInboundClaims](https://learn.microsoft.com/en-us/graph/api/resources/oidcAddressInboundClaims?view=graph-rest-beta) resource.",
+          "Target": "oidcAddressInboundClaims"
+        },
+        {
+          "Id": "c17d1632-51d4-4973-ad2f-10a5fd8df229",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oidcClientAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [oidcClientAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/oidcClientAuthentication?view=graph-rest-beta) resource.",
+          "Target": "oidcClientAuthentication"
+        },
+        {
+          "Id": "c17d1632-51d4-4973-ad2f-10a5fd8df229",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oidcClientSecretAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [oidcClientSecretAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/oidcClientSecretAuthentication?view=graph-rest-beta) resource.",
+          "Target": "oidcClientSecretAuthentication"
+        },
+        {
+          "Id": "c17d1632-51d4-4973-ad2f-10a5fd8df229",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oidcInboundClaimMappingOverride",
+          "ChangeType": "Addition",
+          "Description": "Added the [oidcInboundClaimMappingOverride](https://learn.microsoft.com/en-us/graph/api/resources/oidcInboundClaimMappingOverride?view=graph-rest-beta) resource.",
+          "Target": "oidcInboundClaimMappingOverride"
+        },
+        {
+          "Id": "c17d1632-51d4-4973-ad2f-10a5fd8df229",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oidcPrivateJwtKeyClientAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [oidcPrivateJwtKeyClientAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/oidcPrivateJwtKeyClientAuthentication?view=graph-rest-beta) resource.",
+          "Target": "oidcPrivateJwtKeyClientAuthentication"
+        },
+        {
+          "Id": "c17d1632-51d4-4973-ad2f-10a5fd8df229",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oidcIdentityProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [oidcIdentityProvider](https://learn.microsoft.com/en-us/graph/api/resources/oidcIdentityProvider?view=graph-rest-beta) resource.",
+          "Target": "oidcIdentityProvider"
+        }
+      ],
+      "Id": "c17d1632-51d4-4973-ad2f-10a5fd8df229",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-21T17:05:17.7773958Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4badb014-c277-4c08-b593-8ed808b11baa",
           "ApiChange": "Resource",
           "ChangedApiName": "onAttributeCollectionStartCustomExtensionHandler",

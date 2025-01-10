@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
+ms.date: 08/21/2024
 ---
 
 # Microsoft Entra access reviews (deprecated)

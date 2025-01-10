@@ -5,6 +5,7 @@ author: "chmahaj"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/25/2024
 ---
 
 # workingTimeSchedule: startWorkingTime
@@ -102,7 +103,6 @@ POST https://graph.microsoft.com/beta/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

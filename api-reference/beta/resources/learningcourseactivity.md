@@ -5,6 +5,7 @@ author: "malabikaroy"
 ms.localizationpriority: medium
 ms.subservice: "viva-learning"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # learningCourseActivity resource type

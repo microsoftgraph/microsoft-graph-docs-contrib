@@ -5,6 +5,7 @@ description: "The termColumn resource indicates that the column's values contain
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 03/12/2024
 ---
 # termColumn resource type
 

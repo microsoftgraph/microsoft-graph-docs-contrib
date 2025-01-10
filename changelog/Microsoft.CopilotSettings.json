@@ -1,0 +1,46 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "23e6f05c-f98d-49a4-8df2-b63a6491c249",
+          "ApiChange": "Resource",
+          "ChangedApiName": "copilotAdmin",
+          "ChangeType": "Addition",
+          "Description": "Added the [copilotAdmin](https://learn.microsoft.com/en-us/graph/api/resources/copilotAdmin?view=graph-rest-beta) resource.",
+          "Target": "copilotAdmin"
+        },
+        {
+          "Id": "23e6f05c-f98d-49a4-8df2-b63a6491c249",
+          "ApiChange": "Resource",
+          "ChangedApiName": "copilotAdminLimitedMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [copilotAdminLimitedMode](https://learn.microsoft.com/en-us/graph/api/resources/copilotAdminLimitedMode?view=graph-rest-beta) resource and its methods.",
+          "Target": "copilotAdminLimitedMode"
+        },
+        {
+          "Id": "23e6f05c-f98d-49a4-8df2-b63a6491c249",
+          "ApiChange": "Resource",
+          "ChangedApiName": "copilotAdminSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [copilotAdminSetting](https://learn.microsoft.com/en-us/graph/api/resources/copilotAdminSetting?view=graph-rest-beta) resource.",
+          "Target": "copilotAdminSetting"
+        },
+        {
+          "Id": "23e6f05c-f98d-49a4-8df2-b63a6491c249",
+          "ApiChange": "Resource",
+          "ChangedApiName": "copilotRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [copilotRoot](https://learn.microsoft.com/en-us/graph/api/resources/copilotRoot?view=graph-rest-beta) resource.",
+          "Target": "copilotRoot"
+        }
+      ],
+      "Id": "23e6f05c-f98d-49a4-8df2-b63a6491c249",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-11T19:12:08.7280528Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    }
+  ]
+}

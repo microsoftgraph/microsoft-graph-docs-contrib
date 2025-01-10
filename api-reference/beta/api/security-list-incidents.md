@@ -1,11 +1,11 @@
 ---
 title: "List incidents"
 description: "Get a list of the incident objects and their properties."
-ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 09/19/2024
 ---
 
 # List incidents
@@ -132,8 +132,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.incident",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.security.incident)"
 }
 -->
 
@@ -242,8 +241,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.incident",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.security.incident)"
 }
 -->
 ``` http
@@ -330,7 +328,10 @@ Content-Type: application/json
                             "firstSeenDateTime": "2020-09-12T07:28:32.4321753Z",
                             "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
                             "azureAdDeviceId": null,
-                            "deviceDnsName": "tempDns",
+                            "deviceDnsName": "yonif-lap3.middleeast.corp.microsoft.com",
+                            "hostName": "yonif-lap3",
+                            "ntDomain": null,
+                            "dnsDomain": "middleeast.corp.microsoft.com",
                             "osPlatform": "Windows10",
                             "osBuild": 22424,
                             "version": "Other",

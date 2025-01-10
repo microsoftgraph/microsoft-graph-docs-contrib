@@ -6,6 +6,7 @@ author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: "resourcePageType"
 toc.title: Feedback resource outcome
+ms.date: 07/22/2024
 ---
 
 # educationFeedbackResourceOutcome resource type

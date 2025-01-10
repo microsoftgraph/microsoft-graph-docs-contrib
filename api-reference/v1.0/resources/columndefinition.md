@@ -5,6 +5,7 @@ title: "columnDefinition resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
 ms.subservice: "sharepoint"
+ms.date: 08/01/2024
 ---
 
 # columnDefinition resource type

@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 10/28/2024
 ---
 
 # Create custodian userSource
@@ -46,7 +47,7 @@ You can specify the following properties when you create a **userSource**.
 |Property|Type|Description|
 |:---|:---|:---|
 |email|String|SMTP address of the user.|
-|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`. Only `mailbox` is applicable for user sources.|
 
 ## Response
 
@@ -68,7 +69,7 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 
 {
     "email": "admin@contoso.com",
-    "includedSources": "mailbox, site"
+    "includedSources": "mailbox"
 }
 ```
 

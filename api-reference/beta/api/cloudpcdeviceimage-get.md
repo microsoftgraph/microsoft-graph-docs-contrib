@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 08/29/2024
 ---
 
 # Get cloudPcDeviceImage
@@ -129,6 +130,7 @@ Content-Type: application/json
     "lastModifiedDateTime": "2023-11-03T07:03:44.97Z",
     "status": "ready",
     "statusDetails": null,
-    "errorCode": null
+    "errorCode": null,
+    "osVersionNumber": "10.0.22631.3593"
 }
 ```

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: sureshja
 ms.subservice: entra-applications
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # applicationServicePrincipal resource type

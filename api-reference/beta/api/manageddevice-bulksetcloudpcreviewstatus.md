@@ -1,19 +1,21 @@
 ---
-title: "managedDevice: bulkSetCloudPcReviewStatus"
+title: "managedDevice: bulkSetCloudPcReviewStatus (deprecated)"
 description: "Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices."
-author: "yayang3"
+author: "doudoujinjin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/30/2024
 ---
 
-# managedDevice: bulkSetCloudPcReviewStatus
+# managedDevice: bulkSetCloudPcReviewStatus (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
+> [!CAUTION]
+> This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPcBulkSetReviewStatus](../resources/cloudpcbulksetreviewstatus.md) resource and its supported APIs.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -47,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |managedDeviceIds|String collection|The managed device IDs of the Cloud PC devices.|
-|reviewStatus|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|The new review status of the Cloud PC devices. |
+|reviewStatus|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|The new review status of the Cloud PC devices.|
 
 
 ## Response
