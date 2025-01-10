@@ -97,6 +97,9 @@ Depending on the resource and the permission type (delegated or application) req
 
 Response results are based on the context of the calling app. The following sections describe the common scenarios.
 
+<!-- ### aiInteraction -->
+[!INCLUDE [copilot-aiinteraction-subscription-notes.md](../../includes/copilot-aiinteraction-subscription-notes.md)]
+
 ### Basic scenarios
 
 Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed-in user or all users in the directory (work/school accounts). These scenarios don't require any special permissions beyond the ones the app used originally to create its subscriptions.
