@@ -21,6 +21,8 @@ Configuring an OpenID Connect provider in an external tenant enables users to si
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
+For more information, see [Add OpenID Connect as an external identity provider (preview)](/entra/external-id/customers/how-to-custom-oidc-federation-customers).
+
 ## Methods
 
 None.
