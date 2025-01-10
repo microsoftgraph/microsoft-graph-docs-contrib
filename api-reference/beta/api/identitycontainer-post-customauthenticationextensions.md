@@ -472,7 +472,7 @@ Content-Type: application/json
   "description": "Use an external Email provider to send OTP Codes.",
   "displayName": "onEmailOtpSendCustomExtension",
   "endpointConfiguration": {
-    "@odata.type": "#microsoft.graph.httpRequestEndpoint"
+    "@odata.type": "#microsoft.graph.httpRequestEndpoint",
     "targetUrl": "https://onotpsendcustomextension.b2c.expert/api/OnOTPCodeSendToTeamsDemo"
   },
   "behaviorOnError": {

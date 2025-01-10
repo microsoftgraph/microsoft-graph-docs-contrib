@@ -100,7 +100,7 @@ Content-Type: application/json
     "description": "Sends OTP Code via ACS.",
     "displayName": "ACS Emails",
     "endpointConfiguration": {
-      "@odata.type": "microsoft.graph.httpRequestEndpoint"
+      "@odata.type": "microsoft.graph.httpRequestEndpoint",
  	    "targetUrl": "https://customonemailprovider.azurewebsites.net/api/sendOneTimeCode"
     },
     "behaviorOnError": {

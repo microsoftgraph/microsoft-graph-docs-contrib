@@ -91,7 +91,7 @@ Content-Type: application/json
   "description": "Sends OTP Code via ACS.",
   "displayName": "ACS Emails",
   "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.httpRequestEndpoint"
+    "@odata.type": "microsoft.graph.httpRequestEndpoint",
  	  "targetUrl": "https://customonemailprovider.azurewebsites.net/api/sendOneTimeCode"
   },
   "behaviorOnError": {
@@ -107,7 +107,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
   "@odata.type": "microsoft.graph.onOtpSendCustomExtension"
 }
 -->
@@ -129,7 +129,7 @@ Content-Type: application/json
   "description": "Sends OTP Code via ACS.",
   "displayName": "ACS Emails",
   "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.httpRequestEndpoint"
+    "@odata.type": "microsoft.graph.httpRequestEndpoint",
  	  "targetUrl": "https://customonemailprovider.azurewebsites.net/api/sendOneTimeCode"
   },
   "behaviorOnError": {
