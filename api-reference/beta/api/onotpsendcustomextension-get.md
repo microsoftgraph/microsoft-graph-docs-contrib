@@ -40,7 +40,7 @@ GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.OnEmailO
 
 ## Optional query parameters
 
-This method supports $filter, $expand of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select` and `$expand` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
