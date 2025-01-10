@@ -160,7 +160,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |enterprise|Default. Indicates the Cloud PC product type for larger businesses that want to deploy Cloud PCs across their organization for an unlimited number of users.|
 |frontline|Indicates the Cloud PC product type for frontline and part-time workers to share devices, allowing them to use Cloud PCs during their shifts.|
 |devBox|Indicates the Cloud PC product type preconfigured with tools, services, and resources for developers, development teams, and IT professionals.| 
-|powerAutomate|Indicates the Cloud PC product type for Power Automate customers to run attended and unattended RPAs on their Cloud PCs.|
+|powerAutomate|Indicates the Cloud PC product type for Power Automate customers to run attended and unattended RPAs(robotic process automation) on their Cloud PCs.|
 |business|Indicates the Cloud PC product type for small business customers with up to 300 users.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.| 
 
