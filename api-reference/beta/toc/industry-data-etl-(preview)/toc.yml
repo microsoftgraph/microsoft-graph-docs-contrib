@@ -78,6 +78,8 @@ items:
     href: ../../api/industrydata-industrydatarun-get.md
   - name: Get statistics
     href: ../../api/industrydata-industrydatarun-getstatistics.md
+  - name: Start
+    href: ../../api/industrydata-industrydatarun-start.md
 - name: Outbound provisioning flow set
   items:
   - name: Outbound provisioning flow set
