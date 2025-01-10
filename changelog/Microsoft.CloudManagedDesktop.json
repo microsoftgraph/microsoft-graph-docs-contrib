@@ -519,7 +519,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcDisasterRecoveryCapability",
             "ChangeType": "Change",
-            "Description": "Added the **licenseType** property which is **cloudPcDisasterRecoveryLicenseType** enumeration type.",
+            "Description": "Added the **licenseType** property to the [cloudPcDisasterRecoveryCapability](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdisasterrecoverycapability?view=graph-rest-beta) resource type",
             "Target": "cloudPcDisasterRecoveryCapability"
           }
         ],
