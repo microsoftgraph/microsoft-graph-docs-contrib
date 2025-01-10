@@ -43,6 +43,16 @@ Use the [start](/graph/api/industrydata-industrydatarun-start?view=graph-rest-be
 
 Enabled the **description**, **displayName**, **resolvingComment**, and **severity** properties as supported properties in an [Update incident](/graph/api/resources/security-incident) request.
 
+### Teamwork and communications | Calls and online meetings
+
+- Use the following new methods for virtual events that are of the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0&preserve-view=true) type:
+  - [List](/graph/api/virtualeventsroot-list-townhalls?view=graph-rest-1.0&preserve-view=true) all virtual event town halls created in a tenant.
+  - [Get](/graph/api/virtualeventtownhall-getbyuseridandrole?view=graph-rest-1.0&preserve-view=true) the virtual event town halls where a specified user is an organizer or coorganizer.
+  - [Get](/graph/api/virtualeventtownhall-getbyuserrole?view=graph-rest-1.0&preserve-view=true) the virtual event town halls where the signed-in user is an organizer or coorganizer.
+- [Link](/graph/api/virtualevent-setexternaleventinformation?view=graph-rest-1.0&preserve-view=true) external event information to a [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0&preserve-view=true) or [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0&preserve-view=true) by setting an **externalEventId**.
+- Use the **externalEventInformation** on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0&preserve-view=true) to identify the external event information of a virtual event.
+- Use the **externalRegistrationInformation** property on [virtualEventRegistration](/graph/api/resources/virtualeventregistration?view=graph-rest-1.0&preserve-view=true) to get or set the external information for a virtual event registration.
+
 ### Teamwork and communications | Shift management
 
 - [Stage the deletion](/graph/api/changetrackedentity-stagefordeletion) of an [openShift](/graph/api/resources/openshift), [shift](/graph/api/resources/shift), or [timeOff](/graph/api/resources/timeoff) instance in a [schedule](/graph/api/resources/schedule) in draft mode.
