@@ -1,11 +1,11 @@
 ---
 title: "customExtensionBehaviorOnError resource type"
-description: "Let to configure behavior of the call to custom authentication extension returns error."
+description: "Represents the configuration for the behavior of the call when a custom authentication extension returns an error."
 author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 01/08/2024
+ms.date: 01/09/2025
 ---
 
 # customExtensionBehaviorOnError resource type
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Let to configure behavior of the call to custom authentication extension returns error.
-The customExtensionBehaviorOnError is an abstract type.
+Represents the configuration for the behavior of the call when a custom authentication extension returns an error.
+
+This object is an abstract type from which the [fallbackToMicrosoftProviderOnError](../resources/fallbacktomicrosoftprovideronerror.md) inherits.
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

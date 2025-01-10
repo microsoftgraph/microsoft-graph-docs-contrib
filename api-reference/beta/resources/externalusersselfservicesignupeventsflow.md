@@ -5,7 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 11/09/2024
+ms.date: 01/09/2025
 ---
 
 # externalUsersSelfServiceSignUpEventsFlow resource type
@@ -37,7 +37,6 @@ For the list of API operations for managing this resource type, see the [authent
 |onAttributeCollectionStart|[onAttributeCollectionStartHandler](../resources/onattributecollectionstarthandler.md)|The configuration for what to invoke when attribution collection starts.|
 |onAttributeCollectionSubmit|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|The configuration for what to invoke when attributes are submitted at the end of attribution collection.|
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked. <br/><br/> Supports `$filter` (`eq`). See [support for filtering on user flows](#support-for-filtering-on-user-flows) for syntax information. |
-|onEmailOtpSend|[onOtpSendHandler](../resources/onotpsendhandler.md)|The configuration for what to invoke when email OTP is ready to be sent.|
 |onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke during user creation.|
 
 ### Support for filtering on user flows
@@ -86,9 +85,6 @@ The following JSON representation shows the resource type.
   },
   "onUserCreateStart": {
     "@odata.type": "microsoft.graph.onUserCreateStartHandler"
-  },
-  "onEmailOtpSend": {
-    "@odata.type": "microsoft.graph.onOtpSendHandler"
   }
 }
 ```

@@ -5,7 +5,7 @@ author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 12/09/2024
+ms.date: 01/09/2025
 ---
 
 # Get onOtpSendCustomExtension
@@ -27,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/onotpsendcustomextension-get-permissions.md)]
 
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 ## HTTP request
 
 <!-- {
@@ -34,13 +35,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /onOtpSendCustomExtension
-GET /onOtpSendCustomExtensionHandler/customExtension
+GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.OnEmailOtpSendListener/handler/microsoft.graph.OnOtpSendCustomExtensionHandler/customExtension
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports $filter, $expand of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/onOtpSendCustomExtension
+GET https://graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.OnEmailOtpSendListener/handler/microsoft.graph.OnOtpSendCustomExtensionHandler/customExtension
 ```
 
 
@@ -90,15 +90,18 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.onOtpSendCustomExtension",
     "id": "1c8b03b2-7663-fbe9-960a-bc541decd469",
     "authenticationConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
+      "@odata.type": "microsoft.graph.azureAdTokenAuthentication",
+      "resourceId": "api://customonemailprovider.azurwebsites.net/f9c5dc6b-d72b-4226-8ccd-801f7a290428"
     },
     "clientConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
+      "timeoutInMilliseconds": 1000,
+      "maximumRetries": 1,
     },
-    "description": "String",
-    "displayName": "String",
+    "description": "Sends OTP Code via ACS.",
+    "displayName": "ACS Emails",
     "endpointConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+      "@odata.type": "microsoft.graph.httpRequestEndpoint"
+ 	    "targetUrl": "https://customonemailprovider.azurewebsites.net/api/sendOneTimeCode"
     },
     "behaviorOnError": {
       "@odata.type": "microsoft.graph.customExtensionBehaviorOnError"

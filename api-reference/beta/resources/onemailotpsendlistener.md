@@ -1,11 +1,11 @@
 ---
 title: "onEmailOtpSendListener resource type"
-description: "Listener for the onEmailOtpSend event"
+description: "Listener for the onEmailOtpSend event."
 author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 12/09/2024
+ms.date: 01/09/2025
 ---
 
 # onEmailOtpSendListener resource type

@@ -1,11 +1,11 @@
 ---
 title: "fallbackToMicrosoftProviderOnError resource type"
-description: "Let to fallback to the Microsoft default email provider if the call to custom authentication extension returns error."
+description: "Represents settings to fallback to the Microsoft-managed default email provider if the call to the custom authentication extension returns error."
 author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 12/09/2024
+ms.date: 01/09/2025
 ---
 
 # fallbackToMicrosoftProviderOnError resource type
@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Let to fallback to the Microsoft default email provider if the call to custom authentication extension returns error.
+Represents settings to fallback to the Microsoft-managed default email provider if the call to the custom authentication extension returns error.
 
 
 Inherits from [customExtensionBehaviorOnError](../resources/customextensionbehavioronerror.md).
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
