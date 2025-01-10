@@ -20,7 +20,7 @@ Represents the disaster recovery status of a Cloud PC, including the primary reg
 |Property|Type|Description|
 |:---|:---|:---|
 |capabilityType|[cloudPcDisasterRecoveryCapabilityType](#cloudpcdisasterrecoverycapabilitytype-values)|The disaster recovery action that can be performed for the Cloud PC. The possible values are: `none`, `failover`, `failback`, `unknownFutureValue`.|
-|licenseType|[cloudPcDisasterRecoveryLicenseType](#cloudpcdisasterrecoverylicensetype-values)|Defines the disaster recovery license type assigned to the Cloud PC.|
+|licenseType|[cloudPcDisasterRecoveryLicenseType](#cloudpcdisasterrecoverylicensetype-values)|Defines which disaster recovery license type provides the capability.|
 |primaryRegion|String|The primary and mainly used region where the Cloud PC is located.|
 |secondaryRegion|String|The secondary region to which the Cloud PC can be failed over during a regional outage.|
 
@@ -38,8 +38,7 @@ Represents the disaster recovery status of a Cloud PC, including the primary reg
 | Member             |Description                                                                                                                                      |
 |:-------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------ |
 | none               | Default. Indicates that the cloud PC has no disaster recovery license.                                                                           |
-| standard           | Indicates that the cloud PC has a standard tier license with which the backup device will be provisioned after failover action is triggered.     |
-| premium            | Indicates that the cloud PC has a premium tier license with which the backup device will be provisioned after license is assigned.               |
+| standard           | A standard tier license with which the backup device of a cloud PC will be provisioned after failover action is triggered.     |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                                                                                |
 
 ## Relationships
