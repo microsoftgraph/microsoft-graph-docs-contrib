@@ -5,6 +5,7 @@ author: FaithOmbongi
 ms.reviewer: etbasser
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
+doc_type: conceptualPageType
 ms.topic: overview
 ms.date: 01/09/2025
 # customer intent: As a developer, I want to learn the capabilities of Microsoft Entra ID Protection that are available through Microsoft Graph so I can integrate with other solutions for long-term storage and analysis.

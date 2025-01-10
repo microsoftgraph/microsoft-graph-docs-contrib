@@ -6,6 +6,7 @@ ms.reviewer: etbasser
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
 ms.topic: overview
+doc_type: conceptualPageType
 ms.date: 01/09/2025
 # customer intent: As a developer, I want to learn the capabilities of Microsoft Entra Identity Protection that are available through Microsoft Graph so I can integrate with other solutions for long-term storage and analysis.
 ---
