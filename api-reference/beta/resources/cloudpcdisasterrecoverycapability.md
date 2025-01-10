@@ -37,8 +37,8 @@ Represents the disaster recovery status of a Cloud PC, including the primary reg
 
 | Member             |Description                                                                                                                                      |
 |:-------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------ |
-| none               | Default. Indicates that the cloud PC has no disaster recovery license.                                                                           |
-| standard           | A standard tier license with which the backup device of a cloud PC will be provisioned after failover action is triggered.     |
+| none               | Default. Indicates that the Cloud PC has no disaster recovery license.                                                                           |
+| standard           | A standard tier license with which the backup device of a Cloud PC will be provisioned after failover action is triggered.     |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                                                                                |
 
 ## Relationships
