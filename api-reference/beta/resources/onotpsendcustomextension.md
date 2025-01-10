@@ -19,6 +19,7 @@ Used for creating a new custom extension based on the **onEmailOtpSend** event.
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
+For more information, see [Configure a custom email provider for one time passcode send events (preview)](/entra/identity-platform/custom-extension-email-otp-get-started).
 
 ## Methods
 |Method|Return type|Description|
