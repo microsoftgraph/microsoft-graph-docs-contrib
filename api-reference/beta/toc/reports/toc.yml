@@ -54,9 +54,9 @@ items:
           href: ../../resources/relyingpartydetailedsummary.md
         - name: Get relying party detailed dummary
           href: ../../api/reportroot-getrelyingpartydetailedsummary.md
-    - name: App credential sign-in activity
+    - name: Application credential sign-in activity (preview)
       items:
-      - name: App credential sign-in activity
+      - name: Application credential sign-in activity (preview)
         href: ../../resources/appcredentialsigninactivity.md
       - name: List
         href: ../../api/reportroot-list-appcredentialsigninactivities.md
@@ -64,15 +64,15 @@ items:
         href: ../../api/appcredentialsigninactivity-get.md
     - name: Application sign-in
       items:
-      - name: Application sign in summary
+      - name: Application sign-in summary (preview)
         items:
-        - name: Application sign in summary
+        - name: Application sign-in summary (preview)
           href: ../../resources/applicationsigninsummary.md
         - name: Get
           href: ../../api/reportroot-getazureadapplicationsigninsummary.md
-      - name: Application sign in detailed summary
+      - name: Application sign-in detailed summary (preview)
         items:
-        - name: Application sign in detailed summary
+        - name: Application sign-in detailed summary (preview)
           href: ../../resources/applicationsignindetailedsummary.md
         - name: List
           href: ../../api/reportroot-list-applicationsignindetailedsummary.md
@@ -282,9 +282,9 @@ items:
             href: ../../api/healthmonitoring-alertconfiguration-get.md
           - name: Update
             href: ../../api/healthmonitoring-alertconfiguration-update.md
-    - name: Service principal sign in activity
+    - name: Service principal sign-in activity (preview)
       items:
-      - name: Service principal sign in activity
+      - name: Service principal sign-in activity (preview)
         href: ../../resources/serviceprincipalsigninactivity.md
       - name: List
         href: ../../api/reportroot-list-serviceprincipalsigninactivities.md
@@ -294,9 +294,9 @@ items:
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
-    - name: Custom security attribute audit
+    - name: Custom security attribute audit (preview)
       items:
-      - name: Custom security attribute audit
+      - name: Custom security attribute audit (preview)
         href: ../../resources/customsecurityattributeaudit.md
       - name: List
         href: ../../api/auditlogroot-list-customsecurityattributeaudits.md

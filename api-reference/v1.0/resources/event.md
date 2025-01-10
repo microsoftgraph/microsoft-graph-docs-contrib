@@ -35,11 +35,11 @@ This resource supports:
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List events](../api/user-list-events.md)|[Event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
-|[Create event](../api/user-post-events.md) |[event](event.md)| Create a new event by posting to the instances collection.|
-|[Get event](../api/event-get.md) | [event](event.md) |Read properties and relationships of event object.|
-|[Update event](../api/event-update.md) | [event](event.md) |Update event object. |
-|[Delete event](../api/event-delete.md) | None |Delete event object. |
+|[List](../api/user-list-events.md)|[Event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
+|[Create](../api/user-post-events.md) |[event](event.md)| Create a new event by posting to the instances collection.|
+|[Get](../api/event-get.md) | [event](event.md) |Read properties and relationships of event object.|
+|[Update](../api/event-update.md) | [event](event.md) |Update event object. |
+|[Delete](../api/event-delete.md) | None |Delete event object. |
 |[Get delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
 |[Forward event](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
 |[Cancel event](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
