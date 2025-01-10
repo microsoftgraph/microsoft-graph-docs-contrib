@@ -1,6 +1,6 @@
 ---
 title: "Create mailboxFolder"
-description: "Create a new mailboxFolder in a user's mailbox."
+description: "Create a new mailboxFolder or child folder in a user's mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [mailboxFolder](../resources/mailboxfolder.md) or child folder in a mailbox.
+Create a new [mailboxFolder](../resources/mailboxfolder.md) or child folder in a user's mailbox.
 
 ## Permissions
 
