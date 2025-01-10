@@ -18,7 +18,7 @@ Indicates the Autopatch settings for Cloud PCs using this provisioning policy.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|autopatchGroupId|String|Specifies the ID of an Autopatch group to associate with this provisioning policy. Autopatch groups can be assigned software update policies. They serve as logical containers that can hold several Microsoft Entra groups. The default value is null which indicates that no Autopatch group is associated with the provisioning policy.|
+|autopatchGroupId|String|The unique identifier (ID) of a Windows Autopatch group. An Autopatch group is a logical container or unit that groups several Microsoft Entra groups and software update policies. Devices with the same Autopatch group ID share unified software update management. The default value is `null` that indicates that no Autopatch group is associated with the provisioning policy.|
 
 ## Relationships
 
