@@ -79,6 +79,7 @@ Inherits from [entity](entity.md).
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
 |windows|[windowsSetting](../resources/windowssetting.md) collection|The Windows settings of the user stored in the cloud.|
+|exchange|[exchangeSettings](../resources/exchangesettings.md)|The Exchange settings for mailbox discovery.|
 
 
 ## JSON representation

@@ -32,6 +32,7 @@ Represents an entity that acts as a container for administrator functionality.
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | A container for service communications resources. Read-only. |
 | sharepointSettings | [sharepointSettings](../resources/sharepointSettings.md) | A container for administrative resources to manage tenant-level settings for SharePoint and OneDrive. |
 | windows |[microsoft.graph.adminWindows](../resources/adminwindows.md)|A container for all Windows administrator functionalities. Read-only.|
+| exchange | [exchangeAdmin](../resources/exchangeadmin.md) |A container for Exchange admin functionality. Read-only.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
