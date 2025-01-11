@@ -23,7 +23,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - [Retry](/graph/api/cloudpcbulkaction-retry?view=graph-rest-beta&preserve-view=true) a bulk action with selected Cloud PCs.
 - Use the **reportName** parameter on the [cloudPcReports: retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method to get the name of the Cloud PC disaster recovery report.
-- Added the EnabledDRType, DRHealthStatus, and BackupCloucPcStatus as supported columns for the [retrieveCrossRegionDisasterRecoveryReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta) method, and removed the IsCrossRegionEnabled and CrossRegionHealthStatus columns from the report.
+- Added the EnabledDRType, DRHealthStatus, and BackupCloudPcStatus as supported columns for the [retrieveCrossRegionDisasterRecoveryReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta) method and removed the IsCrossRegionEnabled and CrossRegionHealthStatus columns from the report.
 
 ### Identity and access | Directory management
 
