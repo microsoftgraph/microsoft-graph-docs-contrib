@@ -170,6 +170,12 @@ Content-Type: application/json
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ],
-  "isInviteOnly": false
+  "isInviteOnly": false,
+  "externalEventInformation": [
+    {
+      "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",
+      "externalEventId": "myExternalEventId"
+    }
+  ]
 }
 ```
