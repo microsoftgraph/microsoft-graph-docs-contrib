@@ -12,10 +12,10 @@
         },
         {
           "Id": "3b15b694-fe2b-4146-93ed-0a85db2f6fd9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "channel",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "planner",
           "ChangeType": "Addition",
-          "Description": "Added the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the **planner** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsChannelPlanner",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsChannelPlanner](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the [teamsChannelPlanner](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource type.",
           "Target": "teamsChannelPlanner"
         }
       ],
