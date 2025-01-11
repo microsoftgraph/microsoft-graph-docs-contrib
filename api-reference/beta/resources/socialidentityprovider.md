@@ -18,6 +18,8 @@ Represents social identity providers for both Microsoft Entra ID and Azure AD B2
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
+For more information about adding Google and Facebook as identity providers in external tenants, see [Add Google as an identity provider (preview)](/entra/external-id/customers/how-to-google-federation-customers) and [Add Facebook as an identity provider (preview)](/entra/external-id/customers/how-to-facebook-federation-customers).
+
 
 | Tenant configuration | Supported IdPs |
 |--|--|
