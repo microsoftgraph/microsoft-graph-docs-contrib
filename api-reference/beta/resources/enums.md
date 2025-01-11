@@ -4337,6 +4337,9 @@ Possible values for user account types (group membership), per Windows definitio
 | tokenIssuanceStart |
 | pageRenderStart |
 | unknownFutureValue |
+|attributeCollectionStart|
+|attributeCollectionSubmit|
+|emailOtpSend|
 
 ### microsoftAuthenticatorAuthenticationMethodClientAppName values
 
