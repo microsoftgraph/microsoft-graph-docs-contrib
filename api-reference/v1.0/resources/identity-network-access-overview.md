@@ -8,7 +8,7 @@ ms.subservice: entra-id
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw10, krbash
-ms.date: 12/31/2024
+ms.date: 01/07/2025
 ---
 
 # Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph
@@ -121,6 +121,10 @@ Microsoft Graph also provides the following identity and access capabilities for
 | Microsoft partners can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives extra control to customers over their security posture while allowing them to receive support from the Microsoft resellers | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
 
 ---
+
+## Identity and access reports
+
+Microsoft Entra records *every* activity in your tenant and produces reports and audit logs that you can analyze for monitoring, compliance, and troubleshooting. Records of these activities are also available through Microsoft Graph reporting and audit logs APIs, which allow you to analyze the activities with Azure Monitor logs and Log Analytics, or stream to third-party SIEM tools for further investigations. For more information, see [Identity and access reports API overview](../resources/report-identity-access.md).
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
