@@ -322,7 +322,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpc_disasterrecoverycapability"
+  "name": "list_cloudpcs_filtered_by_disasterrecoverycapability"
 }
 -->
 ``` http
@@ -336,7 +336,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_cloudpc_disasterrecoverycapability",
+  "name": "list_cloudpcs_filtered_by_disasterrecoverycapability",
   "@odata.type": "microsoft.graph.cloudPC"
 }
 -->
@@ -380,7 +380,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpc_producttype"
+  "name": "list_cloudpcs_filtered_by_producttype"
 }
 -->
 
@@ -395,7 +395,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_cloudpc_producttype",
+  "name": "list_cloudpcs_filtered_by_producttype",
   "@odata.type": "microsoft.graph.cloudPC"
 }
 -->
