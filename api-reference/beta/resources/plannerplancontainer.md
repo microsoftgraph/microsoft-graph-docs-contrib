@@ -38,7 +38,7 @@ Planner currently supports the container types listed in the following table. Wh
 None.
 
 ## JSON representation
-The following example displays a JSON representation of a plan container.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -48,9 +48,9 @@ The following example displays a JSON representation of a plan container.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerPlanContainer",
-  "url": "String",
   "containerId": "String",
-  "type": "String"
+  "type": "String",
+  "url": "String"
 }
 ```
 
