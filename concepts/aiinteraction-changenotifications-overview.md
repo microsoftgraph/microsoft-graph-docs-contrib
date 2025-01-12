@@ -182,7 +182,7 @@ For notifications with resource data, the payload looks like the following.
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [aiInteraction](/graph/api/resources/aiinteraction?preserve-view=true) schema.
+The decrypted notification payload looks like the following. The payload conforms to the [aiInteraction](/graph/api/resources/aiinteraction?view=graph-rest-beta&preserve-view=true) schema.
 
 ```json
 {
