@@ -1112,6 +1112,8 @@ items:
       href: change-notifications-with-resource-data.md
     - name: Notifications for cloud printing
       href: universal-print-webhook-notifications.md
+    - name: Notifications for Copilot AI interactions
+      href: changenotifications-aiinteraction.md
     - name: Notifications for Microsoft Teams resources
       items:
       - name: Notification types and payloads
@@ -1133,8 +1135,6 @@ items:
         href: teams-changenotifications-appinstallation.md
     - name: Notifications for Outlook resources
       href: outlook-change-notifications-overview.md
-    - name: Notifications for Copilot AI interactions
-      href: changenotifications-aiinteraction.md
   - name: Change tracking
     items:
     - name: Overview
