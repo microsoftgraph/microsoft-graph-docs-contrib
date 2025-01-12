@@ -18,6 +18,6 @@ Subscriptions on Copilot AI interactions require a valid Copilot license that in
 > - **Microsoft Copilot with Graph-grounded chat**: 3f30311c-6b1e-48a4-ab79-725b469da960
 > - **Power Platform Connectors in Microsoft 365 Copilot**: 89f1c4c8-0878-40f7-804d-869c9128ab5d
 
-For subscriptions targeting Copilot AI interactions that a particular user is part of, the user in the resource path must have the above service plans assigned to them in a valid state.
+For subscriptions that target Copilot AI interactions that a particular user is part of, the user in the resource path must have the previous service plans assigned to them in a valid state.
 
-For subscriptions targeting Copilot AI interactions for the entire tenant, the tenant must have valid licenses provisioned that include all of the previous Copilot service plans.
+For subscriptions that target Copilot AI interactions for the entire tenant, the tenant must have valid licenses provisioned that include all previous Copilot service plans.
