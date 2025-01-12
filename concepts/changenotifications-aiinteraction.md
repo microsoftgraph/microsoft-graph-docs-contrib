@@ -31,7 +31,7 @@ To get change notifications for Copilot AI interactions that a particular user i
 
 ### Licensing requirements
 
-To access this change notification resource, the user in the resource path must have all of the following Copilot Service Plan IDs enabled: 
+To access this change notification resource, the user in the resource path must have all of the following Copilot service plan IDs enabled: 
 * **Graph Connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
 * **Intelligent Search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
 * **Microsoft 365 Copilot in Microsoft Teams**: b95945de-b3bd-46db-8437-f2beb6ea2347
@@ -71,7 +71,7 @@ To get change notifications for Copilot AI interactions across the tenant, subsc
 
 ### Licensing requirements
 
-To access this change notification resource, the tenant must have all of the following Copilot Service Plan IDs provisioned and in an active state:
+To access this change notification resource, the tenant must have all of the following Copilot service plan IDs provisioned and in an active state:
 
 * **Graph Connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
 * **Intelligent Search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
@@ -98,14 +98,18 @@ Content-Type: application/json
 }
 ```
 
-## Using $filter OData query to be notified of only a subset of Copilot AI interactions
+## Using $filter to be notified of only a subset of Copilot AI interactions
 
-You can use the `$filter` OData query parameter to filter out Copilot AI interactions that aren't needed. For example, to subscribe to Copilot AI interactions for only a particular Microsoft 365 application, such as Microsoft Teams, append `?$filter=appClass eq 'IPM.SkypeTeams.Message.Copilot.Teams'` to the end of the resource string. To subscribe to all AI interactions where the `conversationType` isn't Microsoft BizChat, append `?$filter=conversationType ne 'bizchat'`.
+You can use the `$filter` OData query parameter to filter out Copilot AI interactions that aren't needed. For example, to subscribe to Copilot AI interactions for only a particular Microsoft 365 application, such as Microsoft Teams, append `?$filter=appClass eq 'IPM.SkypeTeams.Message.Copilot.Teams'` to the end of the resource string. To subscribe to all AI interactions where the **conversationType** isn't Microsoft BizChat, append `?$filter=conversationType ne 'bizchat'`.
 
 > [!NOTE]
-> Currently, the `$filter` query parameter can only be used on the top-level properties of the [aiInteraction](/graph/api/resources/aiinteraction) resource. Nested property filtering isn't supported. For example, `?$filter=from/user/id eq '48902e20-56dc-48cf-ab15-0b65e15dda67'` isn't currently supported.
+> Currently, the `$filter` parameter can only be used on the top-level properties of the [aiInteraction](/graph/api/resources/aiinteraction) resource. Filter on nested properties isn't supported; for example, `?$filter=from/user/id eq '48902e20-56dc-48cf-ab15-0b65e15dda67'` isn't currently supported.
 
 ### Examples
+
+#### Subscribe to Copilot AI interactions for Microsoft Teams only
+
+The following example shows how to to subscribe to Copilot AI interactions for only a particular Microsoft 365 application, such as Microsoft Teams.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -123,6 +127,10 @@ Content-Type: application/json
 }
 ```
 
+#### Subscribe to all AI interactions where the conversationType isn't Microsoft BizChat
+
+The following example shows how to subscribe to all AI interactions where the **conversationType** isn't `bizchat`.
+
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
@@ -138,32 +146,37 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
 ### Notifications with resource data
 
 For notifications with resource data, the payload looks like the following.
 
 ```json
 {
-    "value": [{
-        "subscriptionId": "10493aa0-4d29-4df5-bc0c-ef742cc6cd7f",
-        "changeType": "created",
-        "clientState": "<<--SpecifiedClientState-->>",
-        "subscriptionExpirationDateTime": "2025-02-02T10:30:34.9097561-08:00",
-        "resource": "copilot/interactionHistory/interactions('1731701801008')",
-        "resourceData": {
-            "id": "1731701801008",
-            "@odata.type": "#Microsoft.Graph.aiInteraction",
-            "@odata.id": "copilot/interactionHistory/interactions('1731701801008')"
-        },
-        "encryptedContent": {
-            "data": "<<--EncryptedContent-->",
-            "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
-            "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
-            "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
-        },
-        "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
-    }],
-    "validationTokens": ["<<--ValidationTokens-->>"]
+  "value": [
+    {
+      "subscriptionId": "10493aa0-4d29-4df5-bc0c-ef742cc6cd7f",
+      "changeType": "created",
+      "clientState": "<<--SpecifiedClientState-->>",
+      "subscriptionExpirationDateTime": "2025-02-02T10:30:34.9097561-08:00",
+      "resource": "copilot/interactionHistory/interactions('1731701801008')",
+      "resourceData": {
+        "id": "1731701801008",
+        "@odata.type": "#Microsoft.Graph.aiInteraction",
+        "@odata.id": "copilot/interactionHistory/interactions('1731701801008')"
+      },
+      "encryptedContent": {
+        "data": "<<--EncryptedContent-->",
+        "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
+        "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
+        "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
+      },
+      "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
+    }
+  ],
+  "validationTokens": [
+    "<<--ValidationTokens-->>"
+  ]
 }
 ```
 
@@ -213,12 +226,8 @@ The decrypted notification payload looks like the following. The payload conform
       "name": "Teams Meeting Copilot"
     }
   ],
-  "links": [
-    
-  ],
-  "mentions": [
-    
-  ]
+  "links": [],
+  "mentions": []
 }
 ```
 
@@ -244,4 +253,4 @@ For notifications without resource data, the payload looks like the following.
 ```
 
 ## Related content
-- [Microsoft Graph change notifications](change-notifications-overview.md)
+[Microsoft Graph change notifications](change-notifications-overview.md)
