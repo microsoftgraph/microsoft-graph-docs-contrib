@@ -567,7 +567,7 @@ items:
       href: connecting-external-content-build-quickstart.yml
       displayName: connectors, Microsoft Graph connectors
     - name: Connectors samples
-      href: /samples/browse/?products=microsoft-graph-connectors-api
+      href: /samples/browse/?view=graph-rest-1.0&terms=graph%20connectors
     - name: Community connectors samples
       href: https://adoption.microsoft.com/sample-solution-gallery/?product=Microsoft+Graph+connectors
     - name: Build your first custom connector using SDK
