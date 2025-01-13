@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: retrieveCrossRegionDisasterRecoveryReport"
-description: "Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, EnabledDRType, DisasterRecoveryStatus, LicenseType, DRHealthStatus, CurrentRestorePointDateTime, BackupCloucPcStatus, and ActivationExpirationDateTime."
+description: "Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, EnabledDRType, DisasterRecoveryStatus, LicenseType, DRHealthStatus, CurrentRestorePointDateTime, BackupCloudPcStatus, and ActivationExpirationDateTime."
 author: "ms-linxin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, EnabledDRType, DisasterRecoveryStatus, LicenseType, DRHealthStatus, CurrentRestorePointDateTime, BackupCloucPcStatus, and ActivationExpirationDateTime.
+Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, EnabledDRType, DisasterRecoveryStatus, LicenseType, DRHealthStatus, CurrentRestorePointDateTime, BackupCloudPcStatus, and ActivationExpirationDateTime.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -104,7 +104,7 @@ Content-length: 199
     "LicenseType",
     "DisasterRecoveryStatus",
     "CurrentRestorePointDateTime",
-    "BackupCloucPcStatus",
+    "BackupCloudPcStatus",
     "ActivationExpirationDateTime"
   ],
   "skip": 0,
