@@ -23,7 +23,7 @@ Get a report related to the performance of Cloud PCs.
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "cloudpcreports-retrieveCloudPcTenantMetricsReport" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpcreports-retrieveCloudPcTenantMetricsReport-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcreports-retrievecloudpctenantmetricsreport-permissions.md)]
 
 ## HTTP request
 
@@ -53,7 +53,7 @@ The following table shows the parameters that you can use with this method.
 | filter     | String                       | OData `$filter` syntax. Supported filters are: `and`, `or`, `gt`, and `eq`.                          |
 | groupBy    | String collection            | Specifies how to group the reports. If used, must have the same content as the **select** parameter. |
 | orderBy    | String collection            | Specifies how to sort the reports.                                                                   |
-| reportName | cloudPCPerformanceReportName | The report name. The possible values are: `performanceTrendReport`, `unknownFutureValue`.             |
+| reportName | cloudPCPerformanceReportName | The report name. The possible values are: `performanceTrendReport`, `unknownFutureValue`.            |
 | search     | String                       | Specifies a String to search.                                                                        |
 | select     | String collection            | OData `$select` syntax. The selected columns of the reports.                                         |
 | skip       | Int32                        | Number of records to skip.                                                                           |
@@ -76,7 +76,6 @@ If successful, this method returns a `200 OK` response code and a Stream object 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreportsthis.retrieveCloudPcTenantMetricsReport"
@@ -101,40 +100,6 @@ Content-Type: application/json
   "top": 50
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisretrieveCloudPcTenantMetricsReport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisretrieveCloudPcTenantMetricsReport-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisretrieveCloudPcTenantMetricsReport-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsthisretrieveCloudPcTenantMetricsReport-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsthisretrieveCloudPcTenantMetricsReport-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisretrieveCloudPcTenantMetricsReport-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisretrieveCloudPcTenantMetricsReport-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisretrieveCloudPcTenantMetricsReport-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
