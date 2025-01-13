@@ -67,7 +67,7 @@ Users can upgrade their personal plans into group-based plans by [moving](../api
 
 ### Container type: Teams channel
 
-The Teams channel container type supports plans created in Teams shared channels, where the channel is the container for the plan. Plans that are pinned in shared channels are deleted when the channel is deleted.
+The Teams channel container type supports plans created in shared or private channels in Teams, where the channel is the container for the plan. Plans that are pinned in shared channels are deleted when the channel is deleted.
 
 To [create a new plan](../api/planner-post-plans.md) in the container of a Teams channel, set the **container** property on a [plan](plannerplan.md) object with **type** as `teamsChannel`, and the ID should be formatted as "{team-id}/channels/{channel-id}".
 
@@ -80,7 +80,7 @@ To [create a new plan](../api/planner-post-plans.md) in the container of a Teams
 }
 ```
 
-Alternatively, you can specify the URL for a Teams shared channel.
+Alternatively, you can specify the URL for a shared or private channel in Teams.
 
 ```json
 {
