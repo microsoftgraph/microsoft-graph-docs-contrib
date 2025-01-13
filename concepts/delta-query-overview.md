@@ -150,6 +150,8 @@ Delta query is currently supported for the following resources. Some resources t
 | [todoTask](/graph/api/resources/todotask)                           | [todoTask: delta](/graph/api/todotask-delta) function                           |
 | [todoTaskList](/graph/api/resources/todotasklist)                   | [todoTaskList: delta](/graph/api/todotasklist-delta) function                   |
 | [user](/graph/api/resources/user)                                   | [user: delta](/graph/api/user-delta) function                                   |
+| [mailboxItem](/graph/api/resources/mailboxitem) *                   | [mailboxItem: delta](/graph/api/mailboxitem-delta) function                     |
+| [mailboxFolder](/graph/api/resources/mailboxfolder) *               | [mailboxFolder: delta](/graph/api/mailboxfolder-delta) function                 |
 
 > [!NOTE]
 > <sup>1</sup> The usage pattern for OneDrive and SharePoint resources is similar to the other supported resources with some minor syntax differences. For more information about the current syntax, see
