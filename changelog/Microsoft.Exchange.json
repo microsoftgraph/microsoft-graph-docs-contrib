@@ -103,7 +103,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "bindingparameter",
           "ChangeType": "Addition",
-          "Description": "Added the `bindingparameter` parameter to the [delta](https://learn.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) method.",
+          "Description": "Added the `bindingparameter` parameter to the [delta](https://learn.microsoft.com/en-us/graph/delta-query-overview?view=beta) method.",
           "Target": "delta"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "bindingparameter",
           "ChangeType": "Addition",
-          "Description": "Added the `bindingparameter` parameter to the [delta](https://learn.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) method.",
+          "Description": "Added the `bindingparameter` parameter to the [delta](https://learn.microsoft.com/en-us/graph/delta-query-overview?view=beta) method.",
           "Target": "delta"
         }
       ],
