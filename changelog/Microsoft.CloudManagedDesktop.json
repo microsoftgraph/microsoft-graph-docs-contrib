@@ -518,7 +518,7 @@
             "Id": "b09ae587-6dc0-468c-82e7-d8ef1bab2617",
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcDisasterRecoveryCapability",
-            "ChangeType": "Change",
+            "ChangeType": "Addition",
             "Description": "Added the **licenseType** property to the [cloudPcDisasterRecoveryCapability](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdisasterrecoverycapability?view=graph-rest-beta) resource type",
             "Target": "cloudPcDisasterRecoveryCapability"
           }
