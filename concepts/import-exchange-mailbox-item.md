@@ -9,7 +9,7 @@ ms.date: 12/06/2024
 
 # Import an Exchange Item using the Exchange Import-Export API
 
-Using the Exchange Import-Export API, you can import an Exchange mailbox [item](../resources/mailboxitem.md) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
+Using the Exchange Import-Export API, you can import an Exchange mailbox [item](../api-reference/beta/resources/mailboxitem.md) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
 
 This article illustrates the two steps required to perform the import process. Each step also provides an example for this process. Upon successfully uploading the item, the article shows the response which contains the `itemId` and `changeKey` for the item which can be saved for later use.
 
@@ -17,7 +17,7 @@ This article illustrates the two steps required to perform the import process. E
 
 [Create an import session](../api-reference/beta/api/mailbox-createimportsession.md) to import an item in a folder in the mailbox.
 
-A successful operation returns HTTP 201 Created and a new [mailboxItemImportSession](../resources/mailboxitemimportsession.md) instance, which contains an opaque `importUrl` that you can use in subsequent POST operations to upload items into a folder.
+A successful operation returns HTTP 201 Created and a new [mailboxItemImportSession](../api-reference/beta/resources/mailboxitemimportsession.md) instance, which contains an opaque `importUrl` that you can use in subsequent POST operations to upload items into a folder.
 
 The **mailboxItemImportSession** object in the response also includes the `expirationDateTime` property, which indicates the expiration date/time for the auth token embedded in the `importUrl` property value. After this time, the importUrl expires and is deleted.
 
@@ -65,7 +65,7 @@ Content-length: 232
 
 ## Step 2: Use the import url to upload an item
 
-To import the item into the mailbox, make a POST request to the URL returned in step 1 in the `importUrl` property of the [mailboxItemImportSession](../resources/mailboxitemimportsession.md) resource.
+To import the item into the mailbox, make a POST request to the URL returned in step 1 in the `importUrl` property of the [mailboxItemImportSession](../api-reference/beta/resources/mailboxitemimportsession.md) resource.
 
 Specify the request body as described below.
 
