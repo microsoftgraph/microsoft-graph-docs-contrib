@@ -18,11 +18,11 @@ Contains information about the emergency caller.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| displayName | String | The emergency caller display name. |
-| location | [location](../resources/location.md) | The emergency caller location. |
-| phoneNumber | String | The emergency caller's phone number. |
-| tenantId | String | The emergency caller's tenant id. |
-| upn | String | The emergency caller's user principal name. |
+| displayName | String | The display name of the emergency caller. |
+| location | [location](../resources/location.md) | The location of the emergency caller. |
+| phoneNumber | String | The phone number of the emergency caller.  |
+| tenantId | String | The tenant ID of the emergency caller. |
+| upn | String | The user principal name of the emergency caller. |
 
 ## Relationships
 None.
