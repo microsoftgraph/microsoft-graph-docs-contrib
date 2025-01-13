@@ -63,7 +63,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |allotmentDisplayName|String|The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment. When the **provisioningType** is `dedicated`, the allotment name is `null`. Read-only.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC can be connected.|
 |deviceRegionName|String|The name of the geographical region where the Cloud PC is currently provisioned. For example, `westus3`, `eastus2`, and `southeastasia`. Read-only.|
-|disasterRecoveryCapability|[cloudPcDisasterRecoveryCapability](../resources/cloudpcdisasterrecoverycapability.md)|The disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type. The default value is `null` that indicates that the disaster recovery setting is disabled. To receive a response with the **disasterRecoveryCapability** property, `$select` and `$filter` it by `disasterRecoveryCapability/{subProperty}` in the request URL. For more information, see [Example 4: List Cloud PCs filtered by disaster recovery capability type](../api/cloudpc-get.md#example-4-list-cloud-pcs-filtered-by-disaster-recovery-capability-type). Read-only. |
+|disasterRecoveryCapability|[cloudPcDisasterRecoveryCapability](../resources/cloudpcdisasterrecoverycapability.md)|The disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type. The default value is `null` that indicates that the disaster recovery setting is disabled. To receive a response with the **disasterRecoveryCapability** property, `$select` and `$filter` it by `disasterRecoveryCapability/{subProperty}` in the request URL. For more information, see [Example 3: List Cloud PCs filtered by disaster recovery capability type](../api/virtualendpoint-list-cloudpcs.md#example-3-list-cloud-pcs-filtered-by-disaster-recovery-capability-type). Read-only. |
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |frontlineCloudPcAvailability|[frontlineCloudPcAvailability](#frontlinecloudpcavailability-values)|The current availability of a frontline assigned Cloud PC. Possible values: `notApplicable`, `available`,`notAvailable` and `unknownFutureValue`. Default value is `notApplicable`. Read Only.|
@@ -79,18 +79,19 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, `unknownFutureValue`.|
 |partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
 |powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The power state of a Cloud PC. The possible values are: `running`, `poweredOff`, `unknown`. This property only supports shift work Cloud PCs.|
+|productType|[cloudPcProductType](#cloudpcproducttype-values)|The product type of the Cloud PC. The possible values are: `enterprise`, `frontline`, `devBox`, `powerAutomate`, `business`, `unknownFutureValue`. For the available service plans and pricing for `enterprise`, `frontline`, and `business`, see [Windows 365 for business](https://www.microsoft.com/windows-365). For pricing information for `devBox`, see [Microsoft Dev Box pricing](https://azure.microsoft.com/pricing/details/dev-box#pricing). For the available plans and pricing for `powerAutomate`, see [Power Automate pricing](https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing#compare-plans). The default value is `enterprise`. Supports `$filter` and `$select`. For more information, see [Example 4: List Cloud PCs filtered by product type](../api/virtualendpoint-list-cloudpcs.md#example-4-list-cloud-pcs-filtered-by-product-type). Read-only. |
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`,`sharedByUser`, `sharedByEntraGroup`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`. The default value is `dedicated`. CAUTION: The `shared` member is deprecated and will stop returning on April 30, 2027； in the future, use the `sharedByUser` member. |
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
-|status|[microsoft.graph.cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `restoring`, `pendingProvision`, `unknownFutureValue`, `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`.|
-|statusDetails (deprecated)|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. This property is deprecated and will no longer be supported effective August 31, 2024. Use statusDetail instead.|
+|status|[cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `restoring`, `pendingProvision`, `unknownFutureValue`, `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`.|
 |statusDetail|[cloudPcStatusDetail](../resources/cloudpcstatusdetail.md)|Indicates the detailed status associated with Cloud PC, including error/warning code, error/warning message, additionalInformation. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. |
 |connectionSetting|[cloudPcConnectionSetting](../resources/cloudpcconnectionsetting.md)|The connection setting of the Cloud PC. Possible values: `enableSingleSignOn`. Read Only.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
+|statusDetails (deprecated)|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. This property is deprecated and will no longer be supported effective August 31, 2024. Use statusDetail instead.|
 
 ### cloudPcDiskEncryptionState values
 
@@ -111,7 +112,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |unknown|The Cloud PC status is unknown.|
 
 ### cloudPcStatus values
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`.
 
 |Member|Description|
 |:---|:---|
@@ -147,10 +148,21 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 
 |Member|Description|
 |:---|:---|
-|notApplicable|Default. The Cloud PC is not a frontline-assigned type.|
+|notApplicable|Default. The Cloud PC isn't a frontline-assigned type.|
 |available|The current frontline Cloud PC is available and the user is able to connect to it.|
-|notAvailable|The frontline Cloud PC is currently not available and the associated user will not be able to connect to it.|
+|notAvailable|The frontline Cloud PC is currently not available and the associated user isn't able to connect to it.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+
+### cloudPcProductType values
+
+|Member|Description|
+|:---|:---|
+|enterprise|Default. Indicates the Cloud PC product type for larger businesses that want to deploy Cloud PCs across their organization for an unlimited number of users.|
+|frontline|Indicates the Cloud PC product type for frontline and part-time workers to share devices, allowing them to use Cloud PCs during their shifts.|
+|devBox|Indicates the Cloud PC product type preconfigured with tools, services, and resources for developers, development teams, and IT professionals.| 
+|powerAutomate|Indicates the Cloud PC product type for Power Automate customers to run attended and unattended RPAs (robotic process automation) on their Cloud PCs.|
+|business|Indicates the Cloud PC product type for small business customers with up to 300 users.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.| 
 
 ## Relationships
 
