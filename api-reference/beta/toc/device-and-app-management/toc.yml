@@ -294,6 +294,8 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC tenant metrics report
+      href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
     - name: Retrieve cross-region disaster recovery report
       href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
     - name: Retrieve connection quality reports
