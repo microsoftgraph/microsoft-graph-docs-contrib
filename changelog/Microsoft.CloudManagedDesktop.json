@@ -6289,6 +6289,32 @@
       "CreatedDateTime": "2025-01-06T06:58:17.7596396Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b3d5f5e8-4a6b-4c8a-9f3e-2d5e4a6b4c8a",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCloudPcPerformanceReport",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [getCloudPcPerformanceReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getCloudPcPerformanceReport?view=graph-rest-beta) method. Going forward, use the `retrieveCloudPcTenantMetricsReport` API.",
+          "Target": "cloudPcReportName"
+        },
+        {
+          "Id": "b3d5f5e8-4a6b-4c8a-9f3e-2d5e4a6b4c8a",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveCloudPcTenantMetricsReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `retrieveCloudPcTenantMetricsReport` method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+          "Target": "cloudPcReports"
+        }
+      ],
+      "Id": "b3d5f5e8-4a6b-4c8a-9f3e-2d5e4a6b4c8a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-06T06:58:17.7596396Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     }
   ]
 }
