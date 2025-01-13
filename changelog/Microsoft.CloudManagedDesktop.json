@@ -6323,7 +6323,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getCloudPcPerformanceReport",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [getCloudPcPerformanceReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getCloudPcPerformanceReport?view=graph-rest-beta) method. Going forward, use the `retrieveCloudPcTenantMetricsReport` API.",
+          "Description": "Deprecated the [getCloudPcPerformanceReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getCloudPcPerformanceReport?view=graph-rest-beta) method of the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource. Going forward, use the [retrieveCloudPcTenantMetricsReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrieveCloudPcTenantMetricsReport?view=graph-rest-beta) API.",
           "Target": "cloudPcReportName"
         },
         {
@@ -6331,7 +6331,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveCloudPcTenantMetricsReport",
           "ChangeType": "Addition",
-          "Description": "Added the `retrieveCloudPcTenantMetricsReport` method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+          "Description": "Added the [retrieveCloudPcTenantMetricsReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrieveCloudPcTenantMetricsReport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
           "Target": "cloudPcReports"
         }
       ],
