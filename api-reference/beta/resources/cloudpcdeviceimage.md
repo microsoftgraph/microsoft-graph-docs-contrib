@@ -59,6 +59,8 @@ Represents the image resource on a Cloud PC.
 |paidSourceImageNotSupport|This source image is built from another paid image from the Azure Marketplace and isn't supported; use another source to proceed.|
 |sourceImageNotSupportCustomizeVMName|A computer name setting issue exists on the resultant generalized image, which prevents the customization of the VM name with the provided image.|
 |sourceImageSizeExceedsLimitation|The size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, which results in image creation failure.|
+|sourceImageWithDataDiskNotSupported|Indicates the error code where source image has an associated data disk attached. Note that setting up a provisioning policy with this configuration is not supported with W365 Frontline.|
+|sourceImageWithDiskEncryptionSetNotSupported|The uploaded image uses a disk encryption set with a customer-managed key, which is not supported in Windows 365. Please upload a new image encrypted with a platform-managed key.|
 
 ### cloudPcDeviceImageOsStatus values
 
@@ -93,7 +95,7 @@ Represents the image resource on a Cloud PC.
 |sourceImageNotSupportCustomizeVMName|A computer name setting issue exists on the resultant generalized image, which prevents the customization of the VM name with the provided image.|
 |sourceImageSizeExceedsLimitation|The size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, which results in image creation failure.|
 |sourceImageWithDataDiskNotSupported|Indicates the error code where source image has an associated data disk attached. Note that setting up a provisioning policy with this configuration is not supported with W365 Frontline.|
-|sourceImageWithDiskEncryptionSetNotSupported|The uploaded image uses disk encryption set(customer-managed key) unsupported in W365 with custom image upload. Please upload a new image encrypted with platform-managed key.|
+|sourceImageWithDiskEncryptionSetNotSupported|The uploaded image uses a disk encryption set with a customer-managed key, which is not supported in Windows 365. Please upload a new image encrypted with a platform-managed key.|
 
 ## Relationships
 
