@@ -20,12 +20,12 @@ Planner currently supports the container types listed in the following table. Wh
 
 |Type|Description|Path to the resource|
 |----|-----------|--------------------|
-|group| Plan is contained by a [group](group.md).| `https://graph.microsoft.com/beta/groups/<id>` |
-|roster| Plan is contained by a [plannerRoster](plannerroster.md). | `https://graph.microsoft.com/beta/planner/rosters/<id>` |
-|project| Plan is contained by a Project from [Microsoft Project for the web](/project-for-the-web/projectforweb-admin-home). | Microsoft Project currently doesn't have a resource path on Microsoft Graph. Project details and members can be managed from [Microsoft Project](https://project.microsoft.com). |
 |driveItem| Plan is contained by a [driveItem](driveitem.md). | `https://graph.microsoft.com/beta/drives/<driveId>/items/<itemId>`|
+|group| Plan is contained by a [group](group.md).| `https://graph.microsoft.com/beta/groups/<id>` |
+|project| Plan is contained by a Project from [Microsoft Project for the web](/project-for-the-web/projectforweb-admin-home). | Microsoft Project currently doesn't have a resource path on Microsoft Graph. Project details and members can be managed from [Microsoft Project](https://project.microsoft.com). |
+|roster| Plan is contained by a [plannerRoster](plannerroster.md). | `https://graph.microsoft.com/beta/planner/rosters/<id>` |
+|teamsChannel| Plan is contained by a [teamsChannel](channel.md). | `https://graph.microsoft.com/beta/teams/<teamId>/channels/<channelId>` |
 |user| Plan is contained by a [User](user.md) | `https://graph.microsoft.com/beta/users/<id>` |
-|teamsChannel| Plan is container by a [teamsChannel](channel.md). | `https://graph.microsoft.com/beta/teams/<teamId>/channels/<channelId>` |
 
 ## Properties
 |Property|Type|Description|
@@ -38,7 +38,7 @@ Planner currently supports the container types listed in the following table. Wh
 None.
 
 ## JSON representation
-The following example displays a JSON representation of a plan container.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -48,9 +48,9 @@ The following example displays a JSON representation of a plan container.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerPlanContainer",
-  "url": "String",
   "containerId": "String",
-  "type": "String"
+  "type": "String",
+  "url": "String"
 }
 ```
 

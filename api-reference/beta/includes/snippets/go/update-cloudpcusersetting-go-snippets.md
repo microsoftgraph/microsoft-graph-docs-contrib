@@ -42,11 +42,8 @@ disasterRecoveryNetworkSetting.SetAdditionalData(additionalData)
 crossRegionDisasterRecoverySetting.SetDisasterRecoveryNetworkSetting(disasterRecoveryNetworkSetting)
 disasterRecoveryType := graphmodels.PREMIUM_CLOUDPCDISASTERRECOVERYTYPE 
 crossRegionDisasterRecoverySetting.SetDisasterRecoveryType(&disasterRecoveryType) 
-additionalData := map[string]interface{}{
-	userInitiatedDisasterRecoveryAllowed := true
+userInitiatedDisasterRecoveryAllowed := true
 crossRegionDisasterRecoverySetting.SetUserInitiatedDisasterRecoveryAllowed(&userInitiatedDisasterRecoveryAllowed) 
-}
-crossRegionDisasterRecoverySetting.SetAdditionalData(additionalData)
 requestBody.SetCrossRegionDisasterRecoverySetting(crossRegionDisasterRecoverySetting)
 localAdminEnabled := false
 requestBody.SetLocalAdminEnabled(&localAdminEnabled) 
