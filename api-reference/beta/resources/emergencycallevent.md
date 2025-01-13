@@ -25,7 +25,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| callerInfo | [emergencyCallerInfo](../resources/emergencycallerinfo.md)| Emergency caller information. |
+| callerInfo | [emergencyCallerInfo](../resources/emergencycallerinfo.md)| The emergency caller information. |
 | callEventType | callEventType| The event type of the call. Possible values are: `callStarted`, `callEnded`, `unknownFutureValue`, `rosterUpdated`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rosterUpdated`.|
 | emergencyNumberDialed | String | The emergency number dialed. |
 | eventDateTime | DateTimeOffset | The time of when event occurred. |

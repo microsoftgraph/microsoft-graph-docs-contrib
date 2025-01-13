@@ -10,13 +10,13 @@ ms.doc_type: "conceptual"
 ---
 # Get change notifications for Microsoft Teams emergency call event updates
 
-Microsoft Teams supports notifications for emergency calls. These notifications can be routed to inform specific security personnel within Teams. Microsoft Graph emergency call events notification extends that capability to allow emergency calling notifications to be received outside of Teams (for example, by custom client applications), as shown in the following diagram. 
+Microsoft Teams supports notifications for emergency calls. These notifications can be routed to inform specific security personnel within Teams. Microsoft Graph's emergency call events notification extends this capability to allow emergency call notifications to be received outside of Teams (for example, by custom client applications), as shown in the following diagram. 
 
 ![Emergency call events notification flow diagram](./images/Change-notification-emergency-call-flow.png)
 
 1.	The Teams tenant admin configures [emergency calling](/microsoftteams/configure-dynamic-emergency-calling) for the tenant.
-2.	The client application creates a Graph emergency call event subscription. 
-3.	The emergency call event notification is fired to the client application When a Teams user makes an emergency call (for example, 911) on Teams. 
+2.	The client application creates a Microsoft Graph emergency call event subscription. 
+3.	The emergency call event notification is fired to the client application when a Teams user makes an emergency call (for example, 911) on Teams. 
 4.	The client application either [renews](/graph/api/subscription-update) the existing subscription before it expires or [creates](/graph/api/subscription-post-subscriptions) a new one after it expires to continue to subscribe to emergency call event notifications.
 
 
@@ -32,12 +32,12 @@ Microsoft Teams supports notifications for emergency calls. These notifications 
 
 To subscribe to when an emergency call policy number is dialed, set the `resource` property in the subscription payload to `communications/calls/getEmergencyEventsByPolicy(policyName='{policyName}')`, replacing the `{policyName}` field with the policy name configured for your organization.
 
-Subscriptions for emergency call events only support rich notifications. Set `includeResourceData` to `true` and provide base64 encoded certificate value for `encryptionCertificate` and a string identifier for `encryptionCertificateId`. For more information on creating subscriptions with rich notifications, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data).
+Subscriptions for emergency call events only support rich notifications. Set `includeResourceData` to `true` and provide base64 encoded certificate value for `encryptionCertificate` and a string identifier for `encryptionCertificateId`. For more information, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data).
 
 Subscriptions for emergency call events have a max subscription life time of one day. To keep subscriptions for longer, update the **expirationDateTime** property of the subscription. For more information, see [Update subscription API](/graph/api/subscription-update).
 
 > [!NOTE]
-> Subscriptions are limited one subscription per combination of application, tenant, and policy name. A second subscription that uses the same application, tenant, and emergency policy as another will fail with the HTTP status code 409, meaning that the subscription request was duplicated and cannot be created.
+> Subscriptions are limited to one subscription per application, tenant, and policy name combination. A second subscription that uses the same application, tenant, and emergency policy as another will fail with the HTTP status code 409, meaning that the subscription request was duplicated and cannot be created.
 
 ### Subscription payload example
 
