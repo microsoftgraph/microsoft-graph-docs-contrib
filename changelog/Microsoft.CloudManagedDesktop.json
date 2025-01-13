@@ -6195,6 +6195,24 @@
       "CreatedDateTime": "2024-11-27T06:03:45.3975846Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fd3a1e11-2b40-4b2e-a27f-c8bc529dcc40",
+          "ApiChange": "Member",
+          "ChangedApiName": "sourceImageWithDiskEncryptionSetNotSupported",
+          "ChangeType": "Addition",
+          "Description": "Added the `sourceImageWithDiskEncryptionSetNotSupported` member to the **cloudPcDeviceImageErrorCode** enumeration.",
+          "Target": "cloudPcDeviceImageErrorCode"
+        }
+      ],
+      "Id": "fd3a1e11-2b40-4b2e-a27f-c8bc529dcc40",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-11T00:25:04.0954058Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
     }
   ]
 }
