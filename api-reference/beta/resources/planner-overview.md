@@ -74,7 +74,7 @@ To [create a new plan](../api/planner-post-plans.md) in the container of a Teams
 ```json
 {
     "container": {
-        "id": "{teamId}/channels/{channelId}",
+        "id": "{team-id}/channels/{channel-id}",
         "type": "teamsChannel"
     }
 }
@@ -85,7 +85,7 @@ Alternatively, you can specify the URL for a Teams shared channel.
 ```json
 {
     "container": {
-        "url": "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}"
+        "url": "https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}"
     }
 }
 ```
