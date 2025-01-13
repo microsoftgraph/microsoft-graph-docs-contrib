@@ -74,7 +74,7 @@ To [create a new plan](../api/planner-post-plans.md) in a Teams channel's contai
 ```json
 {
     "container": {
-        "id": "00000000-0000-0000-0000-000000000000",
+        "id": "{teamId}/channels/{channelId}",
         "type": "teamsChannel"
     }
 }
