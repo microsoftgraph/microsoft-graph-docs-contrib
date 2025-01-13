@@ -37,6 +37,30 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 
 >**Note:** The user who creates the plan must be a member of the group that contains the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you aren't added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
+### Container type: Teams channel
+
+The `teamsChannel` container type supports plans created in shared channels in Teams, where the channel is the container for the plan. Plans that are pinned in shared channels are deleted when the channel is deleted.
+
+To [create a new plan](../api/planner-post-plans.md) in the container of a Teams channel, set the **container** property on a [plan](plannerplan.md) object with **type** as `teamsChannel`, and the ID should be formatted as "{team-id}/channels/{channel-id}".
+
+```json
+{
+    "container": {
+        "id": "{team-id}/channels/{channel-id}",
+        "type": "teamsChannel"
+    }
+}
+```
+
+Alternatively, you can specify the URL for a shared channel in Teams.
+
+```json
+{
+    "container": {
+        "url": "https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}"
+    }
+}
+```
 
 ### Container type: User
 
@@ -64,31 +88,6 @@ Alternatively, you can specify the URL for a user.
 ```
 
 Users can upgrade their personal plans into group-based plans by [moving](../api/plannerplan-movetocontainer.md) the plan from the user container to a group container, changing the type of the container for the plan from `user` to `group`. 
-
-### Container type: Teams channel
-
-The `teamsChannel` container type supports plans created in shared channels in Teams, where the channel is the container for the plan. Plans that are pinned in shared channels are deleted when the channel is deleted.
-
-To [create a new plan](../api/planner-post-plans.md) in the container of a Teams channel, set the **container** property on a [plan](plannerplan.md) object with **type** as `teamsChannel`, and the ID should be formatted as "{team-id}/channels/{channel-id}".
-
-```json
-{
-    "container": {
-        "id": "{team-id}/channels/{channel-id}",
-        "type": "teamsChannel"
-    }
-}
-```
-
-Alternatively, you can specify the URL for a shared channel in Teams.
-
-```json
-{
-    "container": {
-        "url": "https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}"
-    }
-}
-```
 
 ## Plans
 
