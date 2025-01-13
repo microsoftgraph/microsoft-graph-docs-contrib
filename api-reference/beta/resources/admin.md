@@ -1,5 +1,5 @@
 ---
-title: "admin resource type"
+title: "Admin resource type"
 description: "Represents an entity that acts as a container for administrator functionality."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 10/21/2024
 ---
 
-# admin resource type
+# Admin resource type
 
 Namespace: microsoft.graph
 
