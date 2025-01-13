@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|DeviceTemplate.ReadWrite.All|Not available.|
+|Delegated (work or school account)|DeviceTemplate.Create|DeviceTemplate.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|DeviceTemplate.ReadWrite.All|Not available.|
+|Application|DeviceTemplate.Create|DeviceTemplate.ReadWrite.All|
 
