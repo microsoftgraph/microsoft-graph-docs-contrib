@@ -1,5 +1,5 @@
 ---
-title: "Retrieve Policy Apply Action Result"
+title: "Retrieve policyApplyActionResult"
 description: "Get the result of the latest apply operation of a provision policy. `Frontline shared` only. Administrators only."
 author: "zhuangzhuang131419"
 ms.localizationpriority: medium
