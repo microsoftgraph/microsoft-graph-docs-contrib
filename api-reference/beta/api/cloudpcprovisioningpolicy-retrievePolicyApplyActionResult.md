@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 01/07/2025
 ---
 
-# Retrieve Policy Apply Action Result
+# Retrieve policyApplyActionResult
 
 Namespace: microsoft.graph
 
