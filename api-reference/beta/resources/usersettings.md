@@ -58,9 +58,10 @@ Inherits from [entity](entity.md).
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get settings](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
-|[Update settings](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
-|[List](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
+|[Get](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
+|[Update](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
+|[List Exchange settings](../api/usersettings-list-exchange.md)|[exchangeSetting](../resources/exchangesetting.md) collection|Get a list of mailboxes that belong to a user.|
+|[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
 
 ## Properties
 

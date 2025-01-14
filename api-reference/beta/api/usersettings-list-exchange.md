@@ -1,5 +1,5 @@
 ---
-title: "List mailboxes"
+title: "List Exchange settings"
 description: "Get a list of mailboxes that belong to a user."
 author: "cparker-msft"
 ms.date: 12/06/2024
@@ -8,13 +8,13 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# List mailboxes
+# List Exchange settings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of mailboxes that belong to a user. Currently the mailbox types supported are user's primary & in-place archive. To learn how to get a list of users in a tenant, see [list users](../api/user-list.md).
+Get a list of mailboxes that belong to a user. Currently the mailbox types supported are user's primary and in-place archive. To learn how to get a list of users in a tenant, see [List users](../api/user-list.md).
 
 ## Permissions
 

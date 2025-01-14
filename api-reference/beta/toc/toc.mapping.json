@@ -3247,7 +3247,12 @@
       ],
       "resources": [
         "mailboxItem",
-        "mailboxFolder"
+        "mailboxFolder",
+        "exchangeSettings"
+      ],
+      "complexTypes": [
+        "exportItemResponse",
+        "mailboxItemImportSession"
       ]
     }
   ],
