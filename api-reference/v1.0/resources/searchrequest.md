@@ -74,7 +74,7 @@ The following JSON representation shows the resource type.
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregation) to refine search results
-- Use [display layout](/graph/concepts/search-concept-display-layout.md)
+- Use [display layout](/graph/search-concept-display-layout)
 - Enable [spell corrections](/graph/search-concept-speller) in search results
 - [Search SharePoint content with application permissions](/graph/search-concept-searchall)
 - [Collapse search results](/graph/search-concept-collapse)

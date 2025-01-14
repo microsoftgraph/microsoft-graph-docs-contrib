@@ -1471,6 +1471,7 @@
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
                 "onAuthenticationMethodLoadStartListener",
+                "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1580,6 +1581,7 @@
                 "customAuthenticationExtension",
                 "onAttributeCollectionStartCustomExtension",
                 "onAttributeCollectionSubmitCustomExtension",
+                "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -2929,6 +2931,13 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ]
+            },
+            {
+              "name": "Call events",
+              "resources": [
+                "microsoft.graph.callEvent",
+                "microsoft.graph.emergencyCallEvent"
               ]
             },
             {
