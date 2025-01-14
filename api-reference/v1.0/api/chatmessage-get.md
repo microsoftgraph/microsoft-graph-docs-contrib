@@ -538,14 +538,13 @@ The following example shows a request to get a chat message that @mentions every
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessage_5",
   "sampleKeys": ["19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2", "1725986575123"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2/messages/1725986575123
+GET https://graph.microsoft.com/v1.0/chats/19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2/messages/1725986575123
 ```
 
 #### Response
@@ -563,7 +562,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A80a7ff67c0ef43c19d88a7638be436b1%40thread.v2')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A80a7ff67c0ef43c19d88a7638be436b1%40thread.v2')/messages/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
     "id": "1725986575123",
     "replyToId": null,
