@@ -1,6 +1,6 @@
 ---
 title: "Import an Exchange Item using the Exchange Import-Export API"
-description: "Overview of using an import session to import Exchange mailbox items using their FTS format."
+description: "Learn how to import an Exchange mailbox item using its FastTransfer stream format."
 author: "cparker-msft"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -9,27 +9,31 @@ ms.date: 12/06/2024
 
 # Import an Exchange Item using the Exchange Import-Export API
 
-Using the Exchange Import-Export API, you can import an Exchange mailbox [item](/graph/resources/mailboxitem.md?view=graph-rest-beta) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
+The Exchange Import-Export API allows you to import an Exchange mailbox [item](/graph/resources/mailboxitem.md?view=graph-rest-beta) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
 
-This article illustrates the two steps required to perform the import process. Each step also provides an example for this process. Upon successfully uploading the item, the article shows the response which contains the `itemId` and `changeKey` for the item which can be saved for later use.
+This article describes the two steps required to perform the import process. Each step also provides an example for this process. After successfully uploading the item, you get a response that contains the **itemId** and **changeKey**, which can be saved for later use.
 
 ## Step 1: Create an import session
 
 [Create an import session](/graph/api/mailbox-createimportsession.md?view=graph-rest-beta) to import an item in a folder in the mailbox.
 
-A successful operation returns HTTP 201 Created and a new [mailboxItemImportSession](/graph/resources/mailboxitemimportsession.md?view=graph-rest-beta) instance, which contains an opaque `importUrl` that you can use in subsequent POST operations to upload items into a folder.
+A successful operation returns a `HTTP 201 Created` response code and a new [mailboxItemImportSession](/graph/resources/mailboxitemimportsession.md?view=graph-rest-beta&preserve-view=true) object in the response body, which contains an opaque **importUrl** that you can use in subsequent POST operations to upload items into a folder.
 
-The **mailboxItemImportSession** object in the response also includes the `expirationDateTime` property, which indicates the expiration date/time for the auth token embedded in the `importUrl` property value. After this time, the importUrl expires and is deleted.
+The **mailboxItemImportSession** object in the response also includes the **expirationDateTime** property that indicates the expiration date and time for the auth token embedded in the **importUrl** property value. After this time, the **importUrl** expires and is deleted.
 
 ### Permissions
 
-Make sure to request the `MailboxItem.ImportExport` Delegated permission or `MailboxItem.ImportExport.All` Application permission to create the **mailboxItemImportSession**.
+Make sure to request the `MailboxItem.ImportExport` delegated permission or `MailboxItem.ImportExport.All` application permission to create a **mailboxItemImportSession**.
 
-The opaque URL, returned in the **importUrl** property of the new **mailboxItemImportSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `POST` queries in the `https://outlook.office365.com` domain. Do not customize this URL for the `POST` operations.
+The opaque URL, returned in the **importUrl** property of the new **mailboxItemImportSession**, is preauthenticated and contains the appropriate authorization token for subsequent `POST` queries in the `https://outlook.office365.com` domain. Don't customize this URL for the POST operations.
 
-### Example: Create mailboxItemImportSession
+### Example: Create a mailbox item import session
+
+The following example shows how to create a **mailboxItemImportSession** object.
 
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -63,17 +67,17 @@ Content-length: 232
 }
 ```
 
-## Step 2: Use the import url to upload an item
+## Step 2: Use the import URL to upload an item
 
-To import the item into the mailbox, make a POST request to the URL returned in step 1 in the `importUrl` property of the [mailboxItemImportSession](/graph/resources/mailboxitemimportsession.md?view=graph-rest-beta) resource.
+To import the item into the mailbox, make a POST request to the URL returned in the previous step in the **importUrl** property of the [mailboxItemImportSession](/graph/resources/mailboxitemimportsession.md?view=graph-rest-beta&preserve-view=true) object.
 
-Specify the request body as described below.
+Specify the request body as described in the following section.
 
-### Import URL request headers
+### Request headers
 
 Because the initial opaque URL is preauthenticated and contains the appropriate authorization token for subsequent queries for that import session, don't specify an Authorization request header for this operation.
 
-### Import URL request body
+### Request body
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -83,17 +87,19 @@ Because the initial opaque URL is preauthenticated and contains the appropriate 
 |ItemId|String|The unique identifier for the item. Required during `update`.|
 |ChangeKey|String|The version of the item. Required during `update`.|
 
-### Import URL response
+### Response
 
-If successful, this action returns a `200 OK` response code and an importMailboxItemResponse object in the response body.
+If successful, this action returns a `200 OK` response code and an [importMailboxItemResponse](/graph/resources/importmailboxitemresponse.md?view=graph-rest-beta&preserve-view=true) object in the response body.
 
 ### Examples
 
-### Example 1: Create an item in mailbox using import operation
+### Example 1: Create an item in a mailbox using import operation
 
-The following example shows how to import a new item into the mailbox in **create** mode.
+The following example shows how to import a new item into the mailbox in `create` mode.
 
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -114,6 +120,8 @@ POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -132,11 +140,13 @@ Content-length: 232
 }
 ```
 
-### Example 2: Update an existing item in mailbox using import operation
+### Example 2: Update an existing item in a mailbox using import operation
 
-The following example shows how to import a new version of an existing item into the mailbox in **update** mode.
+The following example shows how to import a new version of an existing item into the mailbox in `update` mode.
 
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -157,6 +167,8 @@ POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/
 ```
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
