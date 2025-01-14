@@ -561,6 +561,7 @@ The following example shows the response. The message body contains a forwarded 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ae2ed97baac8e4bffbb91299a38996790%40thread.v2')/messages/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
