@@ -76,11 +76,11 @@ Inherits from [entity](entity.md).
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |contactMergeSuggestions|[contactMergeSuggestions](contactmergesuggestions.md)| The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.|
+|exchange|[exchangeSettings](../resources/exchangesettings.md)|The Exchange settings for mailbox discovery.|
 |itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
 |windows|[windowsSetting](../resources/windowssetting.md) collection|The Windows settings of the user stored in the cloud.|
-|exchange|[exchangeSettings](../resources/exchangesettings.md)|The Exchange settings for mailbox discovery.|
 
 
 ## JSON representation

@@ -18,6 +18,8 @@ Represents an item in a mailbox folder. Items are Exchange mailbox items like me
 
 This resource supports [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a delta function. It also supports single-value and multi-value extended properties for filtering on custom data that isn't already exposed in the Microsoft Graph API metadata.
 
+Inherits from [outlookItem](../resources/outlookitem.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -31,11 +33,11 @@ This resource supports [delta query](/graph/delta-query-overview) to track incre
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|categories|String collection|The categories associated with the message.|
-|changeKey|String|The version of the item.|
-|createdDateTime|DateTimeOffset|The date and time when the item was created. The date and time information uses ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2021 is `2021-01-01T00:00:00Z`.|
-|id|String|The unique identifier for the item.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the item was last changed. The date and time information uses ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2021 is `2021-01-01T00:00:00Z`.|
+|categories|String collection|The categories associated with the message. Inherited from [outlookItem](../resources/outlookitem.md).|
+|changeKey|String|The version of the item. Inherited from [outlookItem](../resources/outlookitem.md).|
+|createdDateTime|DateTimeOffset|The date and time when the item was created. The date and time information uses ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2021 is `2021-01-01T00:00:00Z`. Inherited from [outlookItem](../resources/outlookitem.md).|
+|id|String|The unique identifier for the item. Inherited from [outlookItem](../resources/outlookitem.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the item was last changed. The date and time information uses ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2021 is `2021-01-01T00:00:00Z`. Inherited from [outlookItem](../resources/outlookitem.md).|
 |size|Int64|The length of the item in bytes.|
 |type|String|The message class ID of the item.|
 

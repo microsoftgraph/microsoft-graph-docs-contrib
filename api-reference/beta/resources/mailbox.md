@@ -21,13 +21,13 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[exportItems](../api/mailbox-exportitems.md)|[exportItemResponse](../resources/exportitemresponse.md) collection|Export Exchange mailboxItem objects in full fidelity FTS format for the purpose of backup.|
-|[createImportSession](../api/mailbox-createimportsession.md)|[mailboxItemImportSession](../resources/mailboxitemimportsession.md)|Create a session for importing an Exchange mailbox item using its FTS format.|
+|[Create import session](../api/mailbox-createimportsession.md)|[mailboxItemImportSession](../resources/mailboxitemimportsession.md)|Create a session for importing an Exchange mailbox item using its FTS format.|
+|[Export items](../api/mailbox-exportitems.md)|[exportItemResponse](../resources/exportitemresponse.md) collection|Export Exchange mailboxItem objects in full fidelity FTS format for the purpose of backup.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The id of the mailbox.|
+|id|String|The unique identifier for the **mailbox**.|
 
 ## Relationships
 |Relationship|Type|Description|
