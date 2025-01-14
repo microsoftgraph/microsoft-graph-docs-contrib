@@ -235,7 +235,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because Microsoft Graph doesn't send the actual resource data).
 
-For notifications without resource data, the payload looks like the following.
+The following decrypted payload describes the information sent in a request for notifications without resource data. This particular payload signifies that a new interaction has been created.
 
 ```json
 {
