@@ -64,7 +64,7 @@ The following example shows how to delete a mailbox folder.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/AAMkAGVmMDEzM
+DELETE https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/AAMkAGVmMDEzM/$ref
 ```
 
 ### Response
