@@ -107,6 +107,7 @@ The following JSON representation shows the resource type.
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
   "allowTeamworkReactions": "Boolean",
   "allowedPresenters": "String",
+  "allowedLobbyAdmitters": "String",
   "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
