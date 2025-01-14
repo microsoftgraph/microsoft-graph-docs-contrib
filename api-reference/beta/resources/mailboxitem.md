@@ -42,7 +42,10 @@ Inherits from [outlookItem](../resources/outlookitem.md).
 |type|String|The message class ID of the item.|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection|The collection of multi-value extended properties defined for the **mailboxItem**.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the **mailboxItem**.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
