@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "exportItemResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [exportItemResponse](https://learn.microsoft.com/en-us/graph/api/resources/exportItemResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the [exportItemResponse](https://learn.microsoft.com/en-us/graph/api/resources/exportItemResponse?view=graph-rest-beta) resource type.",
           "Target": "exportItemResponse"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailboxItemImportSession",
           "ChangeType": "Addition",
-          "Description": "Added the [mailboxItemImportSession](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItemImportSession?view=graph-rest-beta) resource.",
+          "Description": "Added the [mailboxItemImportSession](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItemImportSession?view=graph-rest-beta) resource type.",
           "Target": "mailboxItemImportSession"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "exchangeAdmin",
           "ChangeType": "Addition",
-          "Description": "Added the [exchangeAdmin](https://learn.microsoft.com/en-us/graph/api/resources/exchangeAdmin?view=graph-rest-beta) resource.",
+          "Description": "Added the [exchangeAdmin](https://learn.microsoft.com/en-us/graph/api/resources/exchangeAdmin?view=graph-rest-beta) resource type.",
           "Target": "exchangeAdmin"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "exchangeSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [exchangeSettings](https://learn.microsoft.com/en-us/graph/api/resources/exchangeSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [exchangeSettings](https://learn.microsoft.com/en-us/graph/api/resources/exchangeSettings?view=graph-rest-beta) resource type.",
           "Target": "exchangeSettings"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailbox",
           "ChangeType": "Addition",
-          "Description": "Added the [mailbox](https://learn.microsoft.com/en-us/graph/api/resources/mailbox?view=graph-rest-beta) resource.",
+          "Description": "Added the [mailbox](https://learn.microsoft.com/en-us/graph/api/resources/mailbox?view=graph-rest-beta) resource and associated methods.",
           "Target": "mailbox"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailboxFolder",
           "ChangeType": "Addition",
-          "Description": "Added the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxFolder?view=graph-rest-beta) resource.",
+          "Description": "Added the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxFolder?view=graph-rest-beta) resource and associated methods.",
           "Target": "mailboxFolder"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailboxItem",
           "ChangeType": "Addition",
-          "Description": "Added the [mailboxItem](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [mailboxItem](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItem?view=graph-rest-beta) resource and associated methods.",
           "Target": "mailboxItem"
         },
         {
@@ -100,27 +100,11 @@
         },
         {
           "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "bindingparameter",
-          "ChangeType": "Addition",
-          "Description": "Added the `bindingparameter` parameter to the [delta](https://learn.microsoft.com/en-us/graph/delta-query-overview?view=beta) method.",
-          "Target": "delta"
-        },
-        {
-          "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
           "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/mailboxItem-delta?view=graph-rest-beta) method to the [mailboxItem](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItem?view=graph-rest-beta) resource.",
           "Target": "mailboxItem"
-        },
-        {
-          "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "bindingparameter",
-          "ChangeType": "Addition",
-          "Description": "Added the `bindingparameter` parameter to the [delta](https://learn.microsoft.com/en-us/graph/delta-query-overview?view=beta) method.",
-          "Target": "delta"
         }
       ],
       "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",

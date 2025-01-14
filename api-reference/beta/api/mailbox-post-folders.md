@@ -68,7 +68,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_mailboxfolder_from_"
-  "sampleKeys": ["MBX:e0643f21@a7809c93"]
+  "sampleKeys": ["MBX:e0648f21@aab09c93"]
 }
 -->
 ``` http
@@ -102,7 +102,7 @@ Content-type: application/json
 Content-length: 179
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
   "id": "AQMkAGUw==",
   "displayName": "displayName-value",
   "parentFolderId": "AQMkAGUc==",

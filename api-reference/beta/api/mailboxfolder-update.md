@@ -67,7 +67,7 @@ The following example shows how to update certain folder properties of a mailbox
 <!-- {
   "blockType": "request",
   "name": "update_mailboxfolder"
-  "sampleKeys": ["MBX:e0643f21@a7809c93", "AAMkAGVmMDEzM"]
+  "sampleKeys": ["MBX:e0648f21@aab09c93", "AAMkAGVmMDEzM"]
 }
 -->
 ``` http
@@ -99,7 +99,7 @@ Content-type: application/json
 Content-length: 179
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
   "id": "AQMkAGUw==",
   "displayName": "new-displayName-value",
   "parentFolderId": "AQMkAGUc==",

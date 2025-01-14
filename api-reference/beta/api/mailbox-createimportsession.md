@@ -1,6 +1,6 @@
 ---
 title: "mailbox: createImportSession"
-description: "Create a session for importing an Exchange mailbox item using its FTS format."
+description: "Create a session for importing an Exchange mailbox item using its FastTransfer stream (FTS) format."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium

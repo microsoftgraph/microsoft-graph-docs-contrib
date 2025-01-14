@@ -56,11 +56,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following example shows how to delete a mailbox folder or a child folder.
+The following example shows how to delete a mailbox folder.
 <!-- {
   "blockType": "request",
   "name": "delete_mailboxfolder"
-  "sampleKeys": ["MBX:e0643f21@a7809c93", "AAMkAGVmMDEzM"]
+  "sampleKeys": ["MBX:e0648f21@aab09c93", "AAMkAGVmMDEzM"]
 }
 -->
 ``` http
