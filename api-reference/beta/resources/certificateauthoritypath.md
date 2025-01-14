@@ -3,9 +3,9 @@ title: "certificateAuthorityPath resource type"
 description: "Container for certificate authorities-related configurations for applications in the tenant."
 author: "madansr7"
 ms.localizationpriority: medium
+ms.date: 12/31/2024
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
 ---
 
 # certificateAuthorityPath resource type
@@ -33,6 +33,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |certificateBasedApplicationConfigurations|[certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) collection|Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.|
+|mutualTlsOauthConfigurations|[mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) collection|Defines the trusted certificate authorities for certificates that can be added to Internet of Things (IoT) devices. |
 
 ## JSON representation
 

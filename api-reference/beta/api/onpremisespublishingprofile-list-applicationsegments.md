@@ -74,7 +74,6 @@ GET https://graph.microsoft.com/beta/applications/dcc40202-6223-488b-8e64-28aa1a
 
 ---
 
-
 ### Response
 
 The following example shows the response.

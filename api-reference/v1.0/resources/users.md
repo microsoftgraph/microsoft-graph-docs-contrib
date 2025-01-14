@@ -180,7 +180,9 @@ Some properties of the user object aren't returned by default and must be specif
 
 While the user resource data is mostly stored in Microsoft Entra ID, some of its properties, like **skills**, are stored in SharePoint Online. In most instances, you can't specify these properties in the same Create or Update request body as other user properties.
 
-Properties stored outside the main data store also aren't supported as part of change tracking. Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
+Properties stored outside the main data store also aren't supported as part of [change tracking](/graph/delta-query-overview). Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
+
+The following properties on the user object are stored outside the main data store: **signInActivity**, **cloudLicensing**, **mailboxSettings**, **deviceEnrollmentLimit**, **print**, **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**.
 
 ## Related content
 

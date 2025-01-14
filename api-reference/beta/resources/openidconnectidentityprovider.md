@@ -21,6 +21,8 @@ Configuring an OpenID Connect provider in an Azure AD B2C tenant enables users t
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
+For more information, see [Add Azure AD B2C tenant as an OpenID Connect identity provider (preview)](/entra/external-id/customers/how-to-b2c-federation-customers).
+
 ## Methods
 
 None.
