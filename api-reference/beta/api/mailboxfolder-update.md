@@ -74,11 +74,11 @@ The following example shows how to update certain folder properties of a mailbox
 PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/AAMkAGVmMDEzM
 
 {
-  "displayName": "new-displayName-value",
+  "displayName": "Announcements",
   "singleValueExtendedProperties": [
         {
             "id": "String 0x3001",
-            "value": "new-displayName-value"
+            "value": "Announcements"
         }
     ]
 }
@@ -101,7 +101,7 @@ Content-length: 179
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
   "id": "AQMkAGUw==",
-  "displayName": "new-displayName-value",
+  "displayName": "Announcements",
   "parentFolderId": "AQMkAGUc==",
   "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93",
   "childFolderCount": 0,
