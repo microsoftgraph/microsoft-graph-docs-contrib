@@ -27,7 +27,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the **mailbox**.|
+|id|String|The unique identifier for the **mailbox**. Inherited from [directoryObject](../resources/directoryobject.md).|
 
 ## Relationships
 |Relationship|Type|Description|
