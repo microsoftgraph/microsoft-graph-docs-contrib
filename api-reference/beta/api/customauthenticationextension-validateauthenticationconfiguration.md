@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 10/16/2024
+ms.date: 12/10/2024
 ---
 
 # customAuthenticationExtension: validateAuthenticationConfiguration
@@ -18,6 +18,7 @@ An API to check validity of the endpoint and and authentication configuration fo
 - [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+- [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -221,5 +222,3 @@ Content-Type: application/json
     ]
 }
 ```
-
-
