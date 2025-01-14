@@ -5,6 +5,7 @@ author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # watermarkProtectionValues resource type
@@ -23,6 +24,9 @@ These flags indicate that a watermark is enabled for this particular meeting. An
 |:---------------------------|:--------|:---------------------------------------------------------------|
 | isEnabledForContentSharing | Boolean | Indicates whether to apply a watermark to any shared content.  |
 | isEnabledForVideo          | Boolean | Indicates whether to apply a watermark to everyone's video feed. |
+
+## Relationships
+None.
 
 ## JSON representation
 

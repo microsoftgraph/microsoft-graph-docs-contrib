@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ganggao"
 ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Get adminReportSettings

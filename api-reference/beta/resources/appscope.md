@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/23/2024
 ---
 
 # appScope resource type

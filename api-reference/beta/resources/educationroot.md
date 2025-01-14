@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/29/2024
 ---
 
 # educationRoot resource type
@@ -35,7 +36,7 @@ None.
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) collection| Classes taught at the school. Nullable.|
 |me|[educationUser](educationuser.md)| Represents a user in the system. Nullable.|
-|reports|[reportRoot](../resources/reportroot.md)|Reporting resources. Read-only. Nullable. |
+|reports|[reportsRoot](../resources/reportsroot.md)|A container for reading assignment submissions and reflection check-in responses. Read-only. Nullable. |
 |schools|[educationSchool](educationschool.md) collection| Schools to which the user belongs. Nullable.|
 |synchronizationProfiles (deprecated)|[educationSynchronizationProfile](educationsynchronizationprofile.md) collection| Represents the synchronization status of a school data. Nullable.|
 |users|[educationUser](educationuser.md) collection| Users in the school. Nullable.|

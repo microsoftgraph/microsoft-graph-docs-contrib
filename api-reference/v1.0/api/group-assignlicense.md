@@ -1,18 +1,19 @@
 ---
 title: "group: assignLicense"
-description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group."
+description: "Add or remove licenses on a group. Licenses assigned to the group will be assigned to all users in the group."
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: "apiPageType"
+ms.date: 10/15/2024
 ---
 
 # group: assignLicense
 
 Namespace: microsoft.graph
 
-Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group. Group-based licensing is an alternative to [direct user licensing](../api/user-assignlicense.md). To learn more about group-based licensing, see [What is group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+Add or remove licenses on a [group](../resources/group.md). Licenses assigned to the group will be assigned to all users in the group. Group-based licensing is an alternative to [direct user licensing](../api/user-assignlicense.md). To learn more about group-based licensing, see [What is group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 To get the subscriptions available in the directory, perform a [GET subscribedSkus request](../resources/subscribedsku.md).
 
@@ -25,8 +26,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_assignlicense" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-assignlicense-permissions.md)]
 
-For delegated scenarios, the calling user needs at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
-
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/assignLicense` role permission. The following least privileged roles are supported for this operation:
 - Directory Writers
 - Groups Administrator
 - License Administrator

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-SiteProtectionUnitCollectionResponse result = graphClient.solutions().backupRestore().siteProtectionUnits().get();
+ProtectionUnitBase result = graphClient.solutions().backupRestore().protectionUnits().byProtectionUnitBaseId("{protectionUnitBase-id}").get();
 
 
 ```

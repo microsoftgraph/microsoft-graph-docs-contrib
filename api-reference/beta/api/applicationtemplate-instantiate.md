@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "luleonpla"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 10/25/2024
 ---
 
 # applicationTemplate: instantiate
@@ -15,7 +16,11 @@ Namespace: microsoft.graph
 
 Add an instance of an application from the [Microsoft Entra application gallery](../resources/applicationtemplate.md) into your directory.
 
-The application template with ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` can be used to add a [non-gallery app](/azure/active-directory/manage-apps/add-non-gallery-app) that you can configure different single-sign on (SSO) modes like SAML SSO and password-based SSO.
+For [non-gallery apps](/entra/identity/enterprise-apps/add-application-portal), use an application template with one of the following IDs to configure different single sign-on (SSO) modes like SAML SSO and password-based SSO.
+
+- Global service: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`
+- US government: `4602d0b4-76bb-404b-bca9-2652e1a39c6d`
+- China operated by 21Vianet: `5a532e38-1581-4918-9658-008dc27c1d68`
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -33,8 +38,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 POST /applicationTemplates/{applicationTemplate-id}/instantiate
 ```
-
-To instantiate non-gallery apps, use the `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` for the `{applicationTemplate-id}`.
 
 ## Request headers
 

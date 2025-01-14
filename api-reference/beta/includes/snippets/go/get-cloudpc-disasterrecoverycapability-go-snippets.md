@@ -18,11 +18,11 @@ import (
 
 requestFilter := "disasterRecoveryCapability/capabilityType eq 'failover'"
 
-requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointCloudPCsRequestBuilderGetQueryParameters{
+requestParameters := &graphdevicemanagement.VirtualEndpointCloudPCsRequestBuilderGetQueryParameters{
 	Select: [] string {"id","displayName","disasterRecoveryCapability"},
 	Filter: &requestFilter,
 }
-configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointCloudPCsRequestBuilderGetRequestConfiguration{
+configuration := &graphdevicemanagement.VirtualEndpointCloudPCsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

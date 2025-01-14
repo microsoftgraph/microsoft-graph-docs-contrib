@@ -6,13 +6,14 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 08/20/2024
 ---
 
 # Update group
 
 Namespace: microsoft.graph
 
-Update the properties of a group object.
+Update the properties of a [group](../resources/group.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

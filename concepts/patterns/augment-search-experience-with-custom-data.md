@@ -2,7 +2,8 @@
 title: "Use Microsoft Graph to augment Microsoft Search with custom data"
 description: "Learn about the Microsoft Graph integration pattern for bringing custom data into search experiences."
 author: "OlgaPodo"
-ms.localizationpriority: low
+ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 # Use Microsoft Graph to augment Microsoft Search with custom data

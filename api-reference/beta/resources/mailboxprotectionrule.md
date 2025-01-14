@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 10/24/2024
 ---
 
 # mailboxProtectionRule resource type
@@ -40,7 +41,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification to the rule.|
 |mailboxExpression|String|Contains a mailbox expression. For examples, see [mailboxExpression examples](../resources/mailboxprotectionrule.md#mailboxexpression-examples).|
-|status|[protectionRuleStatus](../resources/mailboxprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+|status|[protectionRuleStatus](../resources/mailboxprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. The `draft` member is currently unsupported. |
 
 ### mailboxExpression examples
 
@@ -55,11 +56,11 @@ The following table shows the possible formats for the mailbox expression.
 
 |Member | Description |
 |:------|:------------|
-|draft | The initial status of the protection rule upon creation.|
+|draft | The initial status of the protection rule upon creation. The `draft` member is currently unsupported. |
 |active | The status of the protection rule upon using the `/run` API.|
 |completed |The status of the protection rule after it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule after it's applied to the corresponding policy and any failures occurred.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 

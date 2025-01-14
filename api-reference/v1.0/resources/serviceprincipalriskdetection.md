@@ -5,6 +5,7 @@ author: "ebasseri"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 10/29/2024
 ---
 
 # servicePrincipalRiskDetection resource type

@@ -29,6 +29,7 @@ The authentication method APIs are used to manage a user's authentication method
 * You can retrieve details of a user's Windows Hello for Business registration, and delete it if the user has lost the device.
 * You can add an email address to a user. The user can then use that email as part of the Self-Service Password Reset (SSPR) process.
 * You can update that email, or delete it from the user.
+* You can assign and activate a hardware OATH token for a user.
 
 The ability for a user to use an authentication method is governed by the [authentication method policy](authenticationmethodspolicies-overview.md) for the tenant. For example, only users in the R&D department might be enabled to use the FIDO2 method while all users might be enabled to use Microsoft Authenticator.
 
@@ -39,22 +40,22 @@ We don't recommend using the authentication methods APIs for scenarios where you
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|An email address can be used by a user as part of the Self-Service Password Reset (SSPR) process.|See a user's authentication email address. Add, update, or remove an email address to a user.|
-|[fido2AuthenticationMethod](fido2authenticationmethod.md)|A FIDO2 Security Key can be used by a user to sign-in to Microsoft Entra ID.|Delete a lost FIDO2 Security Key.|
-|[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|Microsoft Authenticator can be used by a user to sign-in or perform multi-factor authentication to Microsoft Entra ID|Delete a Microsoft Authenticator authentication method.|
+|[fido2AuthenticationMethod](fido2authenticationmethod.md)|A FIDO2 Security Key can be used by a user to sign in to Microsoft Entra ID.|Delete a lost FIDO2 Security Key.|
+|[hardwareOathAuthenticationMethod](hardwareoathauthenticationmethod.md)|Allow users to perform multifactor authentication using a hardware OATH device that provides a one-time code.|Get, (un)assign or (de)activate a hardware token to a user.|
+|[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|Microsoft Authenticator can be used by a user to sign in or perform multifactor authentication to Microsoft Entra ID|Delete a Microsoft Authenticator authentication method.|
 |[passwordAuthenticationMethod](passwordauthenticationmethod.md)| A password is currently the default primary authentication method in Microsoft Entra ID.|Reset a user's password|
 |[phoneAuthenticationMethod](phoneauthenticationmethod.md)|A phone can be used by a user to authenticate using [SMS or voice calls](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (as allowed by policy).|See a user's authentication phone numbers. Add, update, or remove a phone number to a user. Enable or disable a primary mobile phone for SMS sign-in.|
-|[platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)|Platform Credential is a sign-in authentication method for users on Mac OS devices.|See a user's platform credentials. Remove a user's platform credential.|
+|[platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)|Platform Credential is a sign-in authentication method for users on macOS devices.|See a user's platform credentials. Remove a user's platform credential.|
 |[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md)| Allow users to perform multifactor authentication using an application that supports the OATH specification and provides a one-time code. | Get and delete a software token assigned to a user.|
 |[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials. | Set a new Temporary Access Pass on a user.|
 |[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business is a passwordless sign-in method on Windows devices.|See devices where a user has enabled Windows Hello for Business sign-in. Delete a Windows Hello for Business credential.|
 |[Authentication states](authentication.md)|Manage a user's sign-in preferences and per-user MFA|See or set the MFA state for a user. See or set the system-preferred multifactor authentication (MFA) setting.|
-|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (deprecated)|Microsoft Authenticator Passwordless Phone Sign-in can be used by a user to sign-in to Microsoft Entra ID|Delete a Passwordless Phone Sign-in authentication method.|
+|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (deprecated)|Microsoft Authenticator Passwordless Phone sign-in can be used by a user to sign in to Microsoft Entra ID|Delete a Passwordless Phone sign-in authentication method.|
 
-The following authentication methods are not yet supported in Microsoft Graph `beta`.
+The following authentication methods aren't yet supported in Microsoft Graph `beta`.
 
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
-|Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
 
 ## Require re-register multifactor authentication

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphpolicies.PoliciesRoleManagementPolicieItemRequestBuilderGetQueryParameters{
+requestParameters := &graphpolicies.RoleManagementPoliciesItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"effectiveRules","rules"},
 }
-configuration := &graphpolicies.PoliciesRoleManagementPolicieItemRequestBuilderGetRequestConfiguration{
+configuration := &graphpolicies.RoleManagementPoliciesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

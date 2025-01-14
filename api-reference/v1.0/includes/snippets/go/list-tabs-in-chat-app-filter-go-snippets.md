@@ -18,11 +18,11 @@ import (
 
 requestFilter := "teamsApp/id eq 'com.microsoft.teamspace.tab.web'"
 
-requestParameters := &graphchats.ChatItemTabsRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ItemTabsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsApp"},
 	Filter: &requestFilter,
 }
-configuration := &graphchats.ChatItemTabsRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ItemTabsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

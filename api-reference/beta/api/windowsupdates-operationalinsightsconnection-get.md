@@ -5,6 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: apiPageType
+ms.date: 08/31/2024
 ---
 
 # Get operationalInsightsConnection

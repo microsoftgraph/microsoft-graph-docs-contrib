@@ -651,6 +651,88 @@
       "CreatedDateTime": "2024-02-16T11:22:07.883123Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3292bcc6-e31c-4e8e-a090-63b6f13eec0c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "eligibilityFilteringEnabledEntities",
+          "ChangeType": "Addition",
+          "Description": "Added the **eligibilityFilteringEnabledEntities** enumeration type.",
+          "Target": "eligibilityFilteringEnabledEntities"
+        },
+        {
+          "Id": "3292bcc6-e31c-4e8e-a090-63b6f13eec0c",
+          "ApiChange": "Member",
+          "ChangedApiName": "timeOffReason",
+          "ChangeType": "Addition",
+          "Description": "Added the `timeOffReason` member to the **workforceIntegrationSupportedEntities** enumeration.",
+          "Target": "workforceIntegrationSupportedEntities"
+        },
+        {
+          "Id": "3292bcc6-e31c-4e8e-a090-63b6f13eec0c",
+          "ApiChange": "Member",
+          "ChangedApiName": "timeOff",
+          "ChangeType": "Addition",
+          "Description": "Added the `timeOff` member to the **workforceIntegrationSupportedEntities** enumeration.",
+          "Target": "workforceIntegrationSupportedEntities"
+        },
+        {
+          "Id": "3292bcc6-e31c-4e8e-a090-63b6f13eec0c",
+          "ApiChange": "Member",
+          "ChangedApiName": "timeOffRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the `timeOffRequest` member to the **workforceIntegrationSupportedEntities** enumeration.",
+          "Target": "workforceIntegrationSupportedEntities"
+        },
+        {
+          "Id": "3292bcc6-e31c-4e8e-a090-63b6f13eec0c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isStagedForDeletion",
+          "ChangeType": "Addition",
+          "Description": "Added the **isStagedForDeletion** property to the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openShift?view=graph-rest-1.0) resource.",
+          "Target": "openShift"
+        },
+        {
+          "Id": "3292bcc6-e31c-4e8e-a090-63b6f13eec0c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isStagedForDeletion",
+          "ChangeType": "Addition",
+          "Description": "Added the **isStagedForDeletion** property to the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0) resource.",
+          "Target": "shift"
+        },
+        {
+          "Id": "3292bcc6-e31c-4e8e-a090-63b6f13eec0c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isStagedForDeletion",
+          "ChangeType": "Addition",
+          "Description": "Added the **isStagedForDeletion** property to the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeOff?view=graph-rest-1.0) resource.",
+          "Target": "timeOff"
+        },
+        {
+          "Id": "3292bcc6-e31c-4e8e-a090-63b6f13eec0c",
+          "ApiChange": "Property",
+          "ChangedApiName": "eligibilityFilteringEnabledEntities",
+          "ChangeType": "Addition",
+          "Description": "Added the **eligibilityFilteringEnabledEntities** property to the [workforceIntegration](https://learn.microsoft.com/en-us/graph/api/resources/workforceIntegration?view=graph-rest-1.0) resource.",
+          "Target": "workforceIntegration"
+        },
+        {
+          "Id": "3292bcc6-e31c-4e8e-a090-63b6f13eec0c",
+          "ApiChange": "Method",
+          "ChangedApiName": "stageForDeletion",
+          "ChangeType": "Addition",
+          "Description": "Added the [stageForDeletion](https://learn.microsoft.com/en-us/graph/api/changeTrackedEntity-stageForDeletion?view=graph-rest-1.0) method to the [changeTrackedEntity](https://learn.microsoft.com/en-us/graph/api/resources/changeTrackedEntity?view=graph-rest-1.0) resource.",
+          "Target": "changeTrackedEntity"
+        }
+      ],
+      "Id": "3292bcc6-e31c-4e8e-a090-63b6f13eec0c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-04T22:51:07.7910122Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
     }
   ]
 }

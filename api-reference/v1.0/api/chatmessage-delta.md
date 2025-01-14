@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: "bkeerthivasa"
 ms.subservice: "teams"
+ms.date: 10/08/2024
 ---
 
 # chatMessage: delta
@@ -96,6 +97,7 @@ In this example, the chat messages synchronize for the first time and the initia
 
 The request specifies the optional `$top` query parameter that returns two messages at a time.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachats_1"
@@ -103,6 +105,12 @@ The request specifies the optional `$top` query parameter that returns two messa
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$top=2
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachats-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Initial request response
 
@@ -203,6 +211,7 @@ Content-type: application/json
 
 The second request specifies the **@odata.nextLink** URL returned from the previous response. Notice that it no longer has to specify the same `$top` parameter as in the initial request, as the `skipToken` in the **@odata.nextLink** URL encodes and includes those parameters.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachats_2"
@@ -210,6 +219,12 @@ The second request specifies the **@odata.nextLink** URL returned from the previ
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?&%24skiptoken=a-5fqdzHFr_L_cc7C0q1F-HCB8Z9SjwOsMN37XV5yfSnYgK4jVGVGEl25GFlxKWq0Wv6quL-5qcNg4nUnxzof6namZ_DM5no-hcL515cSrRGDoRLn38fZE1AXoDugSTOohOq3YRCYLqJbFGIoovMPTar32oLuoltHixme-Bf1lZtscv1wv5uu-MtkpYZIT0uDw-umQUK7mLNjMcyhNaifMIVTT-htmEOClLVwgcyWLR-sl9Qb73uTTtPXdFdMK6FDE4gpwvvKxvo2ChsW2c4eo77LDh6ZL_WQ8Luq00koQ6vHIrLBHPMUdOAxDxu-U7N7H4hsFn9aRDRdwRky7067A.V2a-J-86yXTd9SJMA4CHP6enI-Ab-bQzRgYujwsIwDo
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachats-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Second request response
 
@@ -310,6 +325,7 @@ Content-type: application/json
 
 The third request continues to use the latest **@odata.nextLink** returned from the last sync request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachats_3"
@@ -317,6 +333,12 @@ The third request continues to use the latest **@odata.nextLink** returned from 
 ```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$skiptoken=8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachats-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Third request response
 
@@ -384,6 +406,7 @@ Using the **@odata.deltaLink** from the last request in the last round, you can 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachats_4"
@@ -391,6 +414,12 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$deltatoken=aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachats-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

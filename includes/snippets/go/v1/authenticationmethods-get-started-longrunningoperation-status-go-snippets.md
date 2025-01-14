@@ -19,11 +19,11 @@ import (
 requestAadgdc := "AM4P"
 requestAadgsu := "ssprprod-a"
 
-requestParameters := &graphusers.UserItemAuthenticationOperationItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemAuthenticationOperationsItemRequestBuilderGetQueryParameters{
 	Aadgdc: &requestAadgdc,
 	Aadgsu: &requestAadgsu,
 }
-configuration := &graphusers.UserItemAuthenticationOperationItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemAuthenticationOperationsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -11,6 +11,7 @@ from msgraph_beta.generated.models.team import Team
 request_body = Team(
 	display_name = "My Sample Team",
 	description = "My Sample Team's Description",
+	first_channel_name = "My First Channel of the sample team",
 	additional_data = {
 			"template@odata_bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')",
 	}

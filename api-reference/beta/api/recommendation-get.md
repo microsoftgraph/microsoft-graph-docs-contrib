@@ -5,6 +5,7 @@ author: "ddeeps2610"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get recommendation

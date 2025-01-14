@@ -5,6 +5,7 @@ author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "security"
+ms.date: 06/11/2024
 ---
 
 # Update healthIssue

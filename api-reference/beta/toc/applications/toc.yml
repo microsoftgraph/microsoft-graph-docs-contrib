@@ -111,6 +111,8 @@ items:
           href: ../../api/appmanagementpolicy-list-appliesto.md
         - name: Create applies to
           href: ../../api/appmanagementpolicy-post-appliesto.md
+        - name: Delete applies to
+          href: ../../api/appmanagementpolicy-delete-appliesto.md
       - name: Tenant app management policy
         items:
         - name: Tenant app management policy
@@ -241,14 +243,54 @@ items:
       href: ../../api/publishedresource-post-agentgroups.md
     - name: Remove from agent group
       href: ../../api/publishedresource-delete-agentgroups.md
+  - name: IP application segment
+    items:
+    - name: IP application segment
+      href: ../../resources/ipapplicationsegment.md
+    - name: List
+      href: ../../api/onpremisespublishingprofile-list-applicationsegments.md
+    - name: Create
+      href: ../../api/onpremisespublishingprofile-post-applicationsegments.md
+    - name: Get
+      href: ../../api/ipapplicationsegment-get.md
+    - name: Update
+      href: ../../api/ipapplicationsegment-update.md
+    - name: Delete
+      href: ../../api/onpremisespublishingprofile-delete-applicationsegments.md
+  - name: Web application segment
+    items:
+    - name: Web application segment
+      href: ../../resources/webapplicationsegment.md
+    - name: List
+      href: ../../api/websegmentconfiguration-list-applicationsegments.md
+    - name: Create
+      href: ../../api/websegmentconfiguration-post-applicationsegments.md
+    - name: Get
+      href: ../../api/webapplicationsegment-get.md
+    - name: Update
+      href: ../../api/webapplicationsegment-update.md
+    - name: Delete
+      href: ../../api/websegmentconfiguration-delete-applicationsegments.md
+  - name: CORS configuration v2
+    items:
+    - name: CORS configuration v2
+      href: ../../resources/corsconfiguration_v2.md
+    - name: List
+      href: ../../api/webapplicationsegment-list-corsconfigurations.md
+    - name: Create
+      href: ../../api/webapplicationsegment-post-corsconfigurations.md
+    - name: Get
+      href: ../../api/corsconfiguration_v2-get.md
+    - name: Update
+      href: ../../api/corsconfiguration_v2-update.md
+    - name: Delete
+      href: ../../api/webapplicationsegment-delete-corsconfigurations.md
   - name: Complex types
     items:
     - name: Application segment
       href: ../../resources/applicationsegment.md
     - name: CORS configuration
       href: ../../resources/corsconfiguration.md
-    - name: CORS configuration v2
-      href: ../../resources/corsconfiguration_v2.md
     - name: Hybrid agent updater configuration
       href: ../../resources/hybridagentupdaterconfiguration.md
     - name: Kerberos sign on settings
@@ -270,7 +312,19 @@ items:
     - name: Verified custom domain certificates metadata
       href: ../../resources/verifiedcustomdomaincertificatesmetadata.md
     - name: Web application segment
-      href: ../../resources/webapplicationsegment.md
+      items:
+      - name: Web application segment
+        href: ../../resources/webapplicationsegment.md
+      - name: List
+        href: ../../api/websegmentconfiguration-list-applicationsegments.md
+      - name: Create
+        href: ../../api/websegmentconfiguration-post-applicationsegments.md
+      - name: Get
+        href: ../../api/webapplicationsegment-get.md
+      - name: Update
+        href: ../../api/webapplicationsegment-update.md
+      - name: Delete
+        href: ../../api/websegmentconfiguration-delete-applicationsegments.md
     - name: Web segment configuration
       href: ../../resources/websegmentconfiguration.md
 - name: Service principal

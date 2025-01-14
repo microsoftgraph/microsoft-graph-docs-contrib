@@ -6,6 +6,7 @@ author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Assignment resource
+ms.date: 06/10/2024
 ---
 
 # educationAssignmentResource resource type

@@ -6,6 +6,7 @@ doc_type: apiPageType
 ms.subservice: "entra-groups"
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.date: 04/04/2024
 ---
 
 # Get endpoint

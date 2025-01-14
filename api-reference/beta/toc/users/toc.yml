@@ -34,6 +34,10 @@ items:
     href: ../../api/user-revokesigninsessions.md
   - name: Export personal data
     href: ../../api/user-exportpersonaldata.md
+  - name: AI interaction
+    items:
+    - name: Get all enterprise interactions
+      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: App role assignments
     items:
     - name: List
@@ -70,6 +74,12 @@ items:
       href: ../../api/user-list-calendarview.md
     - name: Reminder view
       href: ../../api/user-reminderview.md
+  - name: Cloud licensing
+    items:
+    - name: List usage rights
+      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get usage right
+      href: ../../api/cloudlicensing-usageright-get.md
   - name: Cloud PC
     items:
     - name: List cloud PCs

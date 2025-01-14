@@ -12,7 +12,10 @@ use Microsoft\Graph\Generated\Directory\DeletedItems\Item\Restore\RestorePostReq
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RestorePostRequestBody();
-$requestBody->setAutoReconcileProxyConflict(true);
+$additionalData = [
+	'autoReconcileProxyConflict' => true,
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->directory()->deletedItems()->byDirectoryObjectId('directoryObject-id')->restore()->post($requestBody)->wait();
 

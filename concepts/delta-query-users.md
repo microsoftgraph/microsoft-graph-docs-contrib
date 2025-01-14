@@ -47,6 +47,7 @@ Take note of the following items:
 - The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests. If required, query parameters must be specified in the initial request.
   - Only properties included in `$select` are tracked for changes. If `$select` isn't specified, all properties of the object are tracked for changes.
 - The initial request doesn't include a state token. State tokens are used in subsequent requests.
+- [Limitations of query parameters in delta functions](delta-query-overview.md#optional-query-parameters).
 
 # [HTTP](#tab/http)
 <!-- {

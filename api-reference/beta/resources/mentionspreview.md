@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "simonhult"
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # mentionsPreview resource type
@@ -19,6 +20,9 @@ Represents information about [mention](../resources/mention.md) objects in a res
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | isMentioned | Boolean | True if the signed-in user is mentioned in the parent resource instance. Read-only. Supports filter. |
+
+## Relationships
+None.
 
 ## JSON representation
 

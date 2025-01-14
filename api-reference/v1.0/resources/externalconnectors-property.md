@@ -5,6 +5,7 @@ author: "mecampos"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # property resource type

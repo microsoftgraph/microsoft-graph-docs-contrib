@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhanyahk"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 03/15/2024
 ---
 
 # signInStatus resource type

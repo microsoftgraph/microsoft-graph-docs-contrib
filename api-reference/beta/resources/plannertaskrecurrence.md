@@ -5,6 +5,7 @@ author: "DaMoksha"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # plannerTaskRecurrence resource type

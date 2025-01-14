@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: mail
 author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # automaticRepliesMailTips resource type
@@ -22,6 +23,9 @@ Namespace: microsoft.graph
 | messageLanguage | [localeInfo](../resources/localeinfo.md) | The language that the automatic reply message is in. |
 | scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time that automatic replies are set to end. |
 | scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time that automatic replies are set to begin. |
+
+## Relationships
+None.
 
 ## JSON representation
 

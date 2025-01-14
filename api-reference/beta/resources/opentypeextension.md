@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: resourcePageType
 ms.subservice: extensions
+ms.date: 07/06/2024
 ---
 
 # openTypeExtension resource type (open extensions)

@@ -9,7 +9,9 @@ from msgraph import GraphServiceClient
 from msgraph.generated.directory.deleteditems.item.restore.restore_post_request_body import RestorePostRequestBody
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = RestorePostRequestBody(
-	auto_reconcile_proxy_conflict = True,
+	additional_data = {
+			"auto_reconcile_proxy_conflict" : True,
+	}
 )
 
 result = await graph_client.directory.deleted_items.by_directory_object_id('directoryObject-id').restore.post(request_body)

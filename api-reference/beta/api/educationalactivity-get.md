@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 10/08/2024
 ---
 
 # Get educationalActivity
@@ -19,7 +20,7 @@ Retrieve the properties and relationships of an [educationalActivity](../resourc
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 Permissions for the following HTTP syntax:
 
@@ -29,12 +30,12 @@ Permissions for the following HTTP syntax:
 GET /me/profile/educationalActivities/{id}
 ```
 
-<!-- { "blockType": "permissions", "name": "educationalactivity_get", "requestUrls": ["GET /me/profile/educationalActivities/{id}"]} -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User.Read|User.ReadWrite, User.Read.All, User.ReadBasic.All, User.ReadWrite.All|
-|Delegated (personal Microsoft account)|User.Read|User.ReadWrite|
-|Application|Not supported.|Not supported.|
+<!-- { 
+  "blockType": "permissions", 
+  "name": "educationalactivity_get", 
+  "requestUrls": ["GET /me/profile/educationalActivities/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationalactivity-get-permissions.md)]
 
 Permissions for the following HTTP syntax:
 
@@ -44,12 +45,12 @@ Permissions for the following HTTP syntax:
 GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
-<!-- { "blockType": "permissions", "name": "educationalactivity_get", "requestUrls": ["GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}"]} -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User.Read|User.ReadWrite, User.Read.All, User.ReadBasic.All, User.ReadWrite.All|
-|Delegated (personal Microsoft account)|User.Read|User.ReadWrite|
-|Application|User.Read.All|User.ReadWrite.All|
+<!-- { 
+  "blockType": "permissions", 
+  "name": "educationalactivity_get_2", 
+  "requestUrls": ["GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationalactivity-get-2-permissions.md)]
 
 ## HTTP request
 

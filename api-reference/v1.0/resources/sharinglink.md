@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "The sharingLink resource groups link-related data items into a single structure."
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # sharingLink resource type

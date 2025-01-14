@@ -1,13 +1,15 @@
 ---
-title: "UserFlow resource type"
+title: "identityUserFlow resource type"
 description: "Represents an identity user flow that is included in a built-in authentication journey."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.title: User flows in Azure AD B2C (deprecated)
+ms.date: 10/17/2024
 ---
 
-# UserFlow resource type
+# identityUserFlow resource type
 
 Namespace: microsoft.graph
 

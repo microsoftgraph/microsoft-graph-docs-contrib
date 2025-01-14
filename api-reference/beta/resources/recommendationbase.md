@@ -5,6 +5,7 @@ author: "ddeeps2610"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 06/12/2024
 ---
 
 # recommendationBase resource type

@@ -5,6 +5,7 @@ author: "jecha"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 03/08/2024
 ---
 
 # teamsAppIcon resource type

@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType_
+ms.date: 08/01/2024
 ---
 
 # timeCard resource type

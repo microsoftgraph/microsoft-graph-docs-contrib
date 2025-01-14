@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "jakeost-msft"
 ms.subservice: "search"
 doc_type: conceptualPageType
+ms.date: 09/24/2024
 ---
 
 # Use the Microsoft Search API to manage administrative answers

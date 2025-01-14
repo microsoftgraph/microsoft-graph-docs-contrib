@@ -3,6 +3,104 @@
     {
       "ChangeList": [
         {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST, CREATE, GET, UPDATE, DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the CRUD operations to the [corsConfiguration_v2](https://learn.microsoft.com/graph/api/resources/corsConfiguration_v2?view=graph-rest-beta) resource. The resource represents the CORS settings for an on-premises wildcard application published through Microsoft Entra application proxy and accessed via HTTP.",
+          "Target": "corsConfiguration_v2"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ipApplicationSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [ipApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/ipApplicationSegment?view=graph-rest-beta) resource and its associated API operations.The resource represents the CORS settings for an on-premises nonweb application published through Microsoft Entra application proxy and accessed via HTTP.",
+          "Target": "ipApplicationSegment"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST, CREATE, GET, UPDATE, DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the CRUD operations to the [webApplicationSegment](https://learn.microsoft.com/graph/api/resources/webApplicationSegment?view=graph-rest-beta) resource. The resource represents the CORS settings for an on-premises wildcard application published through Microsoft Entra application proxy and accessed via HTTP.",
+          "Target": "webApplicationSegment"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ipSegmentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [ipSegmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/ipSegmentConfiguration?view=graph-rest-beta) resource.",
+          "Target": "ipSegmentConfiguration"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "privateNetworkDestinationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **privateNetworkDestinationType** enumeration type.",
+          "Target": "privateNetworkDestinationType"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "privateNetworkProtocol",
+          "ChangeType": "Addition",
+          "Description": "Added the **privateNetworkProtocol** enumeration type.",
+          "Target": "privateNetworkProtocol"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDnsResolutionEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `isDnsResolutionEnabled` property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "isAccessibleViaZTNAClient",
+          "ChangeType": "Addition",
+          "Description": "Added the `isAccessibleViaZTNAClient` property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "useAlternateUrlForTranslationAndRedirect",
+          "ChangeType": "Addition",
+          "Description": "Added the `useAlternateUrlForTranslationAndRedirect` property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDefaultAccessEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `isDefaultAccessEnabled` property to the [onPremisesPublishingProfile](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishingProfile?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishingProfile"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "applicationSegments",
+          "ChangeType": "Addition",
+          "Description": "Added the `applicationSegments` relationship to the [onPremisesPublishingProfile](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishingProfile?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishingProfile"
+        }
+      ],
+      "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-19T00:00:00.7061653Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
           "ApiChange": "Resource",
           "ChangedApiName": "networkAccessRoot",
@@ -689,6 +787,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-04-10T00:00:00.8805486Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2f78a000-b6f6-425e-be85-84ec0e6941ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fqdnFilteringRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [fqdnFilteringRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-fqdnfilteringrule?view=graph-rest-beta) resource type.",
+          "Target": "fqdnFilteringRule"
+        },
+        {
+          "Id": "2f78a000-b6f6-425e-be85-84ec0e6941ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webCategoryFilteringRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [webCategoryFilteringRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-webcategoryfilteringrule?view=graph-rest-beta) resource type.",
+          "Target": "webCategoryFilteringRule"
+        }
+      ],
+      "Id": "2f78a000-b6f6-425e-be85-84ec0e6941ed",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-11T00:00:00.8805486Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
     }

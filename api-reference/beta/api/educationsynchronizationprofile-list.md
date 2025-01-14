@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 07/22/2024
 ---
 
 # List educationSynchronizationProfiles (deprecated)

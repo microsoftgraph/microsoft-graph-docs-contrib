@@ -5,6 +5,7 @@ author: "yayang3"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/30/2024
 ---
 
 # managedDevice: getCloudPcReviewStatus (deprecated)
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and stopped returning data on April 30, 2024. Going forward, use the [cloudPC: retrieveReviewStatus](../api/cloudpc-retrievereviewstatus.md) API.
+> This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPC: retrieveReviewStatus](../api/cloudpc-retrievereviewstatus.md) API.
 
 Get the review status of a specific Cloud PC device.
 
@@ -123,7 +124,8 @@ Content-Type: application/json
     "subscriptionName": "deschutes-INT-DR-test",
     "azureStorageAccountId": "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview",
     "azureStorageAccountName": "snapshotsUnderReview",
-    "azureStorageContainerName": "snapshotsContainer"
+    "azureStorageContainerName": "snapshotsContainer",
+    "accessTier":"hot"
 }
 ```
 

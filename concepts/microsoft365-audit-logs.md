@@ -5,6 +5,7 @@ author: "michaelvenables"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Use Microsoft 365 audit logs with Microsoft Graph Data Connect

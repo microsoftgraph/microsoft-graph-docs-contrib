@@ -6,11 +6,15 @@ ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Remove directory role member
 
 Namespace: microsoft.graph
+
+> [!NOTE]
+> Microsoft recommends that you use the unified RBAC API instead of this API. The unified RBAC API provides more functionality and flexibility. For more information, see [Delete unifiedRoleAssignment](./unifiedroleassignment-delete.md).
 
 Remove a member from a [directoryRole](../resources/directoryrole.md).
 
@@ -25,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directoryrole_delete_member" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryrole-delete-member-permissions.md)]
+
+[!INCLUDE [rbac-directory-role-apis-write](../includes/rbac-for-apis/rbac-directory-role-apis-write.md)]
 
 ## HTTP request
 

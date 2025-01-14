@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: The ItemActivity resource provides information about activities that took place on an item or within a container.
+description: Provides information about activities that took place on an item or within a container.
 ms.date: 09/14/2017
 title: ItemActivity
 ms.localizationpriority: medium
@@ -14,10 +14,37 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **ItemActivity** resource provides information about activities that took place on an item or within a container.
+Provides information about activities that took place on an item or within a container.
 Currently only available on SharePoint and OneDrive for Business.
 
+## Properties
+
+| Property | Type                    | Description                                                  |
+| :------- | :---------------------- | :----------------------------------------------------------- |
+| id       | string                  | The unique identifier of the activity. Read-only.            |
+| access   | [accessAction][]        | An item was accessed.                                        |
+| action   | [itemActionSet][]       | Details about the action that took place. Read-only.         |
+| actor    | [identitySet][]         | Identity of who performed the action. Read-only.             |
+| location | [location][]            | Physical location where the action was performed. Read-only. |
+| times    | [itemActivityTimeSet][] | Details about when the activity took place. Read-only.       |
+
+[identitySet]: identityset.md
+[itemActionSet]: itemactionset.md
+[itemActivityTimeSet]: itemactivitytimeset.md
+
+## Relationships
+
+| Relationship | Type          | Description                                                     |
+| :----------- | :------------ | :-------------------------------------------------------------- |
+| driveItem    | [driveItem][] | Exposes the driveItem that was the target of this activity. |
+| listItem     | [listItem][]  | Exposes the listItem that was the target of this activity.  |
+
+[driveItem]: driveitem.md
+[listItem]: listitem.md
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -40,32 +67,9 @@ Currently only available on SharePoint and OneDrive for Business.
 }
 ```
 
-## Properties
+## Remarks
 
-| Property | Type                    | Description                                                  |
-| :------- | :---------------------- | :----------------------------------------------------------- |
-| id       | string                  | The unique identifier of the activity. Read-only.            |
-| access   | [accessAction][]        | An item was accessed.                                        |
-| action   | [itemActionSet][]       | Details about the action that took place. Read-only.         |
-| actor    | [identitySet][]         | Identity of who performed the action. Read-only.             |
-| location | [location][]            | Physical location where the action was performed. Read-only. |
-| times    | [itemActivityTimeSet][] | Details about when the activity took place. Read-only.       |
-
-[identitySet]: identityset.md
-[itemActionSet]: itemactionset.md
-[itemActivityTimeSet]: itemactivitytimeset.md
-
-## Relationships
-
-| Relationship | Type          | Description                                                     |
-| :----------- | :------------ | :-------------------------------------------------------------- |
-| driveItem    | [driveItem][] | Exposes the **driveItem** that was the target of this activity. |
-| listItem     | [listItem][]  | Exposes the **listItem** that was the target of this activity.  |
-
-[driveItem]: driveitem.md
-[listItem]: listitem.md
-
-## Actions
+ItemActivity is currently only available on SharePoint and OneDrive for Business.
 
 The actions that took place within an activity are detailed in the **action** property.
 Below are the actions that are available today.
@@ -96,10 +100,6 @@ New actions may get logged in the future, so make sure your app is tolerant of h
 [restoreAction]: restoreaction.md
 [shareAction]: shareaction.md
 [versionAction]: versionaction.md
-
-## Remarks
-
-**ItemActivity** is currently only available on SharePoint and OneDrive for Business.
 
 <!--
 {
