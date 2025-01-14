@@ -24,6 +24,7 @@ Represents the Exchange settings for mailbox discovery.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|The unique identifier of the user's Exchange settings resource.|
 |inPlaceArchiveMailboxId|String|The unique identifier for the user's in-place archive mailbox.|
 |primaryMailboxId|String|The unique identifier for the user's primary mailbox.|
 
@@ -31,6 +32,7 @@ Represents the Exchange settings for mailbox discovery.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.exchangeSettings",
   "openType": false
 }
@@ -38,6 +40,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.exchangeSettings",
+  "id": "String (identifier)",
   "inPlaceArchiveMailboxId": "String",
   "primaryMailboxId": "String"
 }
