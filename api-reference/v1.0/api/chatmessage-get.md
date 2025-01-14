@@ -530,6 +530,7 @@ Content-type: application/json
     ]
 }
 ```
+
 ### Example 6: Get a chat message with a forwarded message
 
 The following example shows a request that gets a chat message with a forwarded message as an attachment.
@@ -544,7 +545,7 @@ The following example shows a request.
   "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1727903166936"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1727903166936
+GET https://graph.microsoft.com/v1.0/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1727903166936
 ```
 
 #### Response
@@ -561,7 +562,7 @@ The following example shows the response. The message body contains a forwarded 
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ae2ed97baac8e4bffbb91299a38996790%40thread.v2')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ae2ed97baac8e4bffbb91299a38996790%40thread.v2')/messages/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
     "id": "1727903166936",
     "replyToId": null,

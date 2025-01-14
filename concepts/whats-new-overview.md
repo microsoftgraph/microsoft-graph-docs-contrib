@@ -17,6 +17,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## January 2025: New and generally available
+
+### Teamwork and communications | Messaging
+
+[Get](/graph/api/chatmessage-get#example-6-get-a-chat-message-with-a-forwarded-message) a chat message that has a forwarded message as an attachment.
+
 ## January 2025: New in preview only 
 
 ### Device and app management | Cloud PC
@@ -131,7 +137,6 @@ The get and list operations of the [callRecording](/graph/api/resources/callreco
 ### Teamwork and communications | Messaging
 
 Use the **firstChannelName** property on [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
-[Get](/graph/api/chatmessage-get?view=graph-rest-1.0&preserve-view=true#example-6-get-a-chat-message-with-a-forwarded-message) a chat message that has a forwarded message as an attachment.
 
 ## Contribute to Microsoft Graph
 
