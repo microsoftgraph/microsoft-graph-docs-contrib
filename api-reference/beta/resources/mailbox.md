@@ -27,6 +27,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted.|
 |id|String|The unique identifier for the **mailbox**. Inherited from [directoryObject](../resources/directoryobject.md).|
 
 ## Relationships
@@ -47,6 +48,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.mailbox",
+  "deletedDateTime": "String (timestamp)",
   "id": "String (identifier)"
 }
 ```
