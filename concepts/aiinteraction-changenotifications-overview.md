@@ -39,7 +39,7 @@ To access this change notification resource, the user in the resource path must 
 * **Microsoft Copilot with Graph-grounded chat**: 3f30311c-6b1e-48a4-ab79-725b469da960
 * **Power Platform Connectors in Microsoft 365 Copilot**: 89f1c4c8-0878-40f7-804d-869c9128ab5d
 
-### Example
+### Example: Subscribe to Copilot AI interactions for a particular user
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -80,7 +80,7 @@ To access this change notification resource, the tenant must have all of the fol
 * **Microsoft Copilot with Graph-grounded chat**: 3f30311c-6b1e-48a4-ab79-725b469da960
 * **Power Platform Connectors in Microsoft 365 Copilot**: 89f1c4c8-0878-40f7-804d-869c9128ab5d
 
-### Example
+### Example: Subscribe to Copilot AI interactions across the tenant
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -107,7 +107,7 @@ You can use the `$filter` OData query parameter to filter out Copilot AI interac
 
 ### Examples
 
-#### Subscribe to Copilot AI interactions for Microsoft Teams only
+#### Example: Subscribe to Copilot AI interactions for Microsoft Teams only
 
 The following example shows how to to subscribe to Copilot AI interactions for only a particular Microsoft 365 application, such as Microsoft Teams.
 
@@ -127,7 +127,7 @@ Content-Type: application/json
 }
 ```
 
-#### Subscribe to all AI interactions where the conversationType isn't Microsoft BizChat
+#### Example: Subscribe to all AI interactions where the conversationType isn't Microsoft BizChat
 
 The following example shows how to subscribe to all AI interactions where the **conversationType** isn't `bizchat`.
 
