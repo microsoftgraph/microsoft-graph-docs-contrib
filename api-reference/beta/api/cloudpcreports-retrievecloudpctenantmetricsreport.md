@@ -157,3 +157,86 @@ Content-Type: application/octet-stream
   ]
 }
 ```
+### Request
+
+The following example shows a request.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcTenantMetricsReport
+{
+    "reportName":"cloudPcInsightReport",
+    "filter": "",
+    "select": ["ManagedDeviceName", "DeviceId", "ClientOS", "ClientVersion", "MultimediaRedirectVersion", "TeamsClientVersion", "HostOSVersion", "HostSxSStackVersion", "HostAgentVersion", "PolicyName", "UserSettingName", "HostRegion", "AzureNetworkConnectName"],
+    "search": "",
+    "skip": 0,
+    "top": 50
+}
+```
+
+### Response
+``` http
+HTTP/1.1 200 OK
+{
+    "TotalRowCount": 1,
+    "Schema": [
+        {
+            "Column": "ManagedDeviceName",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "DeviceId",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "ClientOS",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "ClientVersion",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "MultimediaRedirectVersion",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "TeamsClientVersion",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "HostOSVersion",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "HostOSVersion",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "HostSxSStackVersion",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "HostAgentVersion",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "PolicyName",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "UserSettingName",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "HostRegion",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "AzureNetworkConnectName",
+            "PropertyType": "String"
+        }
+    ],
+    "Values" :[
+        ["CPC_96718d38-74ef-4026-8d54-508d52901763", "96718d38-74ef-4026-8d54-508d52901763", "Windows 10", "2.0.02817.898", "1.0.2311.2004", "1.7.00.26062", "10.0.22631.4169", "rdp-sxs240705700", "1.0.9742.1900_release", "zengyantestPolicy", "mingjunTest", "eastus", "CRUD_TestIntuneAdminWSubReader"],
+    ]
+}
+```
