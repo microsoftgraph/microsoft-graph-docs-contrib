@@ -3,32 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "b38cf417-78db-49da-a2b0-15db5d94e784",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "allowedLobbyAdmitterRoles",
-          "ChangeType": "Addition",
-          "Description": "Added the **allowedLobbyAdmitterRoles** enumeration type.",
-          "Target": "allowedLobbyAdmitterRoles"
-        },
-        {
-          "Id": "b38cf417-78db-49da-a2b0-15db5d94e784",
-          "ApiChange": "Property",
-          "ChangedApiName": "allowedLobbyAdmitterRoles",
-          "ChangeType": "Addition",
-          "Description": "Added the **allowedLobbyAdmitterRoles** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
-          "Target": "onlineMeetingBase"
-        }
-      ],
-      "Id": "b38cf417-78db-49da-a2b0-15db5d94e784",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-01-13T19:34:07.3297702Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "e554e67c-d299-46dd-9402-77b676082897",
           "ApiChange": "Enumeration",
           "ChangedApiName": "callEventType",
