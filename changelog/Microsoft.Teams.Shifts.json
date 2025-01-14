@@ -741,7 +741,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isAtApprovedLocation",
           "ChangeType": "Addition",
-          "Description": "Added the `isAtApprovedLocation` property to the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource.",
+          "Description": "Added the **isAtApprovedLocation** property to the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource.",
           "Target": "timeCardEvent"
         },
         {
@@ -749,7 +749,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isActivitiesIncludedWhenCopyingShiftsEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the `isActivitiesIncludedWhenCopyingShiftsEnabled` property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Description": "Added the **isActivitiesIncludedWhenCopyingShiftsEnabled** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
           "Target": "schedule"
         },
         {
@@ -789,7 +789,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "atApprovedLocation",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the `atApprovedLocation` [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource. The **atApprovedLocation** property will stop returning data on November 27, 2027. Going forward, use the **isAtApprovedLocation** property.",
+          "Description": "Deprecated the **atApprovedLocation** property from the  [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource. The **atApprovedLocation** property will stop returning data on November 27, 2027. Going forward, use the **isAtApprovedLocation** property.",
           "Target": "timeCardEvent"
         },
         {
@@ -797,7 +797,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activitiesIncludedWhenCopyingShiftsEnabled",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the `activitiesIncludedWhenCopyingShiftsEnabled` property of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource. The **activitiesIncludedWhenCopyingShiftsEnabled** property will stop returning data on November 27, 2027. Going forward, use the **isActivitiesIncludedWhenCopyingShiftsEnabled** property.",
+          "Description": "Deprecated the **activitiesIncludedWhenCopyingShiftsEnabled** property from the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource. The **activitiesIncludedWhenCopyingShiftsEnabled** property will stop returning data on November 27, 2027. Going forward, use the **isActivitiesIncludedWhenCopyingShiftsEnabled** property.",
           "Target": "schedule"
         }
       ],
