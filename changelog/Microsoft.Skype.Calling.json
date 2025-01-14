@@ -3,21 +3,45 @@
     {
       "ChangeList": [
         {
-          "Id": "c6a673eb-a24f-4886-9843-93ffa566458f",
-          "ApiChange": "Property",
-          "ChangedApiName": "sequenceNumber",
+          "Id": "e554e67c-d299-46dd-9402-77b676082897",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "callEventType",
           "ChangeType": "Addition",
-          "Description": "Added the **sequenceNumber** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
-          "Target": "presence"
+          "Description": "Added the **callEventType** enumeration type.",
+          "Target": "callEventType"
+        },
+        {
+          "Id": "e554e67c-d299-46dd-9402-77b676082897",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emergencyCallerInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [emergencyCallerInfo](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallerInfo?view=graph-rest-beta) resource.",
+          "Target": "emergencyCallerInfo"
+        },
+        {
+          "Id": "e554e67c-d299-46dd-9402-77b676082897",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [callEvent](https://learn.microsoft.com/en-us/graph/api/resources/callEvent?view=graph-rest-beta) resource.",
+          "Target": "callEvent"
+        },
+        {
+          "Id": "e554e67c-d299-46dd-9402-77b676082897",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emergencyCallEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [emergencyCallEvent](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallEvent?view=graph-rest-beta) resource.",
+          "Target": "emergencyCallEvent"
         }
       ],
-      "Id": "c6a673eb-a24f-4886-9843-93ffa566458f",
+      "Id": "e554e67c-d299-46dd-9402-77b676082897",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-01-07T18:27:57.4426258Z",
+      "CreatedDateTime": "2025-01-10T20:21:16.9977147Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
-    },      
+    },
     {
       "ChangeList": [
         {
