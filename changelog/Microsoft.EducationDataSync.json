@@ -314,6 +314,14 @@
         },
         {
           "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "educationUserRole",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationUserRole** enumeration type.",
+          "Target": "educationUserRole"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
           "ApiChange": "Resource",
           "ChangedApiName": "educationCsvDataProvider",
           "ChangeType": "Deletion",
@@ -407,6 +415,14 @@
           "ChangeType": "Deletion",
           "Description": "Removed the **educationSynchronizationCustomizations** resource.",
           "Target": "educationSynchronizationCustomizations"
+        },
+        {
+          "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationCustomizationsBase",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **educationSynchronizationCustomizationsBase** resource.",
+          "Target": "educationSynchronizationCustomizationsBase"
         },
         {
           "Id": "ceb3962a-67ea-457a-a3b7-ed154495de5d",
