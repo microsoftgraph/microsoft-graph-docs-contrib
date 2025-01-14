@@ -5,6 +5,7 @@ ms.subservice: intune
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
+
 #### Intune wip service limits
 
 | Request type | Limit per tenant for all apps | Limit per app per tenant |

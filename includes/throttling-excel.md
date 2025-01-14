@@ -6,7 +6,7 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 
-For explanations and best practices related to Excel service throttling, see [Reduce throttling errors](workbook-best-practice.md#reduce-throttling-errors). In addition, following are some throttling limits.
+For explanations and best practices related to Excel service throttling, see [Reduce throttling errors](/graph/workbook-best-practice#reduce-throttling-errors). In addition, following are some throttling limits.
 
 | Request type | Limit per app for all tenants | Limit per app per tenant |
 | ------------ | ----------------------------- | ------------------------ |
