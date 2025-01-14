@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/beta/applications/{applicationObjectId}/onPremis
 
 ---
 
-
 ### Response
 
 The following example shows the response.

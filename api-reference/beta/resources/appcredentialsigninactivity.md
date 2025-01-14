@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "reports"
 doc_type: "resourcePageType"
-toc.title: App credential sign-in activity
+toc.title: Application credential sign-in activity (preview)
 ms.date: 07/30/2024
 ---
 
