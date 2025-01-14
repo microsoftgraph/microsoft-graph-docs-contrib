@@ -16,10 +16,8 @@ import (
 )
 
 requestBody := graphdirectory.NewRestorePostRequestBody()
-additionalData := map[string]interface{}{
-	"newUserPrincipalName" : "johndoe@contoso.com", 
-}
-requestBody.SetAdditionalData(additionalData)
+newUserPrincipalName := "johndoe@contoso.com"
+requestBody.SetNewUserPrincipalName(&newUserPrincipalName) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 restore, err := graphClient.Directory().DeletedItems().ByDirectoryObjectId("directoryObject-id").Restore().Post(context.Background(), requestBody, nil)
