@@ -131,6 +131,7 @@ The get and list operations of the [callRecording](/graph/api/resources/callreco
 ### Teamwork and communications | Messaging
 
 Use the **firstChannelName** property on [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
+[Get](/graph/api/chatmessage-get?view=graph-rest-1.0&preserve-view=true#example-6-get-a-chat-message-with-a-forwarded-message) a chat message that has a forwarded message as an attachment.
 
 ## Contribute to Microsoft Graph
 
