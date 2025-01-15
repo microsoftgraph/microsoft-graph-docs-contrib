@@ -35,7 +35,7 @@ To access this change notification resource, the user in the resource path must 
 * **Microsoft Graph connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
 * **Intelligent Search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
 * **Microsoft 365 Copilot in Microsoft Teams**: b95945de-b3bd-46db-8437-f2beb6ea2347
-* **Microsoft 365 Copilot in Productivity Apps**: a62f8878-de10-42f3-b68f-6149a25ceb97
+* **Microsoft 365 Copilot in productivity apps**: a62f8878-de10-42f3-b68f-6149a25ceb97
 * **Microsoft Copilot with Graph-grounded chat**: 3f30311c-6b1e-48a4-ab79-725b469da960
 * **Power Platform connectors in Microsoft 365 Copilot**: 89f1c4c8-0878-40f7-804d-869c9128ab5d
 
@@ -76,7 +76,7 @@ To access this change notification resource, the tenant must have all of the fol
 * **Microsoft Graph connectors in Microsoft 365 Copilot**: 82d30987-df9b-4486-b146-198b21d164c7
 * **Intelligent Search**: 931e4a88-a67f-48b5-814f-16a5f1e6028d
 * **Microsoft 365 Copilot in Microsoft Teams**: b95945de-b3bd-46db-8437-f2beb6ea2347
-* **Microsoft 365 Copilot in Productivity Apps**: a62f8878-de10-42f3-b68f-6149a25ceb97
+* **Microsoft 365 Copilot in productivity apps**: a62f8878-de10-42f3-b68f-6149a25ceb97
 * **Microsoft Copilot with Graph-grounded chat**: 3f30311c-6b1e-48a4-ab79-725b469da960
 * **Power Platform connectors in Microsoft 365 Copilot**: 89f1c4c8-0878-40f7-804d-869c9128ab5d
 
