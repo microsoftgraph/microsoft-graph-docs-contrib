@@ -65,6 +65,7 @@ The following JSON representation shows the resource type.
    "availability": "String",
    "id": "String (identifier)",
    "outOfOfficeSettings": {"@odata.type": "#microsoft.graph.outOfOfficeSettings"},
-   "statusMessage": {"@odata.type": "#microsoft.graph.presenceStatusMessage"}
+   "statusMessage": {"@odata.type": "#microsoft.graph.presenceStatusMessage"},
+   "sequenceNumber": "String",
 }
 ```
