@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. |
 | allowRecording | Boolean | Indicates whether recording is enabled for the meeting. |
-| allowedLobbyAdmitters      | [allowedLobbyAdmitterRoles](#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. |
+| allowedLobbyAdmitters | [allowedLobbyAdmitterRoles](#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added.|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
@@ -46,16 +46,6 @@ Inherits from [entity](../resources/entity.md).
 | subject | String | The subject of the online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type.  |
-
-### onlineMeetingPresenters values
-
-| Value              | Description                                                   |
-| ------------------ | ------------------------------------------------------------- |
-| everyone           | Everyone is a presenter. Default.                             |
-| organization       | Everyone in organizer’s organization is a presenter.          |
-| roleIsPresenter    | Only the participants whose role is presenter are presenters. |
-| organizer          | Only the organizer is a presenter.                           |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.              |
 
 ### allowedLobbyAdmitterRoles values
 
@@ -82,6 +72,16 @@ Inherits from [entity](../resources/entity.md).
 | none               | No meeting chat history is shared.                                     |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
 
+### onlineMeetingPresenters values
+
+| Value              | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| everyone           | Everyone is a presenter. Default.                             |
+| organization       | Everyone in organizer’s organization is a presenter.          |
+| roleIsPresenter    | Only the participants whose role is presenter are presenters. |
+| organizer          | Only the organizer is a presenter.                            |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.              |
+
 ## Relationships
 
 | Relationship | Type | Description |
@@ -106,8 +106,8 @@ The following JSON representation shows the resource type.
   "allowAttendeeToEnableMic": "Boolean",
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
   "allowTeamworkReactions": "Boolean",
-  "allowedPresenters": "String",
   "allowedLobbyAdmitters": "String",
+  "allowedPresenters": "String",
   "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
