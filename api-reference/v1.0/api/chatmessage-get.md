@@ -563,14 +563,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A80a7ff67c0ef43c19d88a7638be436b1%40thread.v2')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ae2ed97baac8e4bffbb91299a38996790%40thread.v2')/messages/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
-    "id": "1725986575123",
+    "id": "1727903166936",
     "replyToId": null,
-    "etag": "1725986575123",
+    "etag": "1727903166936",
     "messageType": "message",
-    "createdDateTime": "2024-09-10T16:42:55.123Z",
-    "lastModifiedDateTime": "2024-09-10T16:42:55.123Z",
+    "createdDateTime": "2024-10-02T21:06:06.936Z",
+    "lastModifiedDateTime": "2024-10-02T21:06:06.936Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
