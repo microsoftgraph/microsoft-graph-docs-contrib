@@ -11,7 +11,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 ChatMessage chatMessage = new ChatMessage();
 ItemBody body = new ItemBody();
 body.setContentType(BodyType.Html);
-body.setContent("<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>");
+body.setContent("<at id=\"0\">GraphTesting</at>&nbsp;Hello team");
 chatMessage.setBody(body);
 LinkedList<ChatMessageMention> mentions = new LinkedList<ChatMessageMention>();
 ChatMessageMention chatMessageMention = new ChatMessageMention();
