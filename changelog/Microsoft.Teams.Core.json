@@ -5697,6 +5697,24 @@
       "CreatedDateTime": "2024-10-24T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [ 
+        {
+          "Id": "5527a808-1e9a-4fa0-b52b-869cd2b870be",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentType",
+          "ChangeType": "Change",
+          "Description": "Added `forwardedMessageReference` as a supported value for the **contentType** property in the [chatMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-1.0) resource.",
+          "Target": "chatMessageAttachment"
+        }
+      ],
+      "Id": "5527a808-1e9a-4fa0-b52b-869cd2b870be",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-14T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
