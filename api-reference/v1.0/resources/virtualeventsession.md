@@ -97,45 +97,28 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.virtualEventSession",
-  "id": "String (identifier)",
-  "joinWebUrl": "String",
-  "subject": "String",
-  "audioConferencing": {
-    "@odata.type": "microsoft.graph.audioConferencing"
-  },
-  "chatInfo": {
-    "@odata.type": "microsoft.graph.chatInfo"
-  },
-  "videoTeleconferenceId": "String",
-  "joinMeetingIdSettings": {
-    "@odata.type": "microsoft.graph.joinMeetingIdSettings"
-  },
-  "joinInformation": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "lobbyBypassSettings": {
-    "@odata.type": "microsoft.graph.lobbyBypassSettings"
-  },
-  "isEntryExitAnnounced": "Boolean",
-  "allowedPresenters": "String",
-  "allowAttendeeToEnableMic": "Boolean",
   "allowAttendeeToEnableCamera": "Boolean",
-  "allowMeetingChat": "String",
-  "allowTeamworkReactions": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
   "allowedLobbyAdmitters": "String",
-  "shareMeetingChatHistoryDefault": "String",
+  "allowedPresenters": "String",
+  "allowMeetingChat": "String",
   "allowParticipantsToChangeName": "Boolean",
+  "allowTeamworkReactions": "Boolean",
+  "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "id": "String (identifier)",
+  "isEntryExitAnnounced": "Boolean",
+  "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
+  "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
+  "joinWebUrl": "String",
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "recordAutomatically": "Boolean",
-  "watermarkProtection": {
-    "@odata.type": "microsoft.graph.watermarkProtectionValues"
-  },
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  }
+  "shareMeetingChatHistoryDefault": "String",
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "subject": "String",
+  "videoTeleconferenceId": "String",
+  "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
 }
 ```
 
