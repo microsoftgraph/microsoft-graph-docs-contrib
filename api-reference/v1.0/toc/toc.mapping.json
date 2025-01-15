@@ -4,7 +4,8 @@
       "name": "Users",
       "overview": "../../resources/users.md",
       "resources": [
-        "user"
+        "user",
+        "invitation"
       ]
     },
     {
@@ -955,8 +956,7 @@
           "resources": [
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration",
-            "invitation"
+            "certificateBasedAuthConfiguration"
           ],
           "childNodes": [
             {
