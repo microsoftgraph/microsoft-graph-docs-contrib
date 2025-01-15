@@ -123,6 +123,7 @@ The following JSON representation shows the resource type.
   "allowAttendeeToEnableCamera": "Boolean",
   "allowMeetingChat": "String",
   "allowTeamworkReactions": "Boolean",
+  "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
   "shareMeetingChatHistoryDefault": "String",
   "allowParticipantsToChangeName": "Boolean",
   "recordAutomatically": "Boolean",

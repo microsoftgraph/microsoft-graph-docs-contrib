@@ -131,6 +131,7 @@ The following JSON representation shows the resource type.
   "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
+  "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
   "isEntryExitAnnounced": "Boolean",
