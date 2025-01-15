@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 mgc chats messages create --chat-id {chat-id} --body '{\
 	"body": {\
         "contentType": "html",\
-        "content": "<div><div>\n<div><span><img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>"\
+        "content": "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">"\
     },\
     "hostedContents":[\
         {\
