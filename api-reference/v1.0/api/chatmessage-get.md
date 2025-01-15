@@ -531,9 +531,9 @@ Content-type: application/json
 }
 ```
 
-### Example 6: Get a chat message with a forwarded message
+### Example 5: Get a chat message with an @mention for everyone
 
-The following example shows a request that gets a chat message with a forwarded message as an attachment.
+The following example shows a request to get a chat message that @mentions everyone in a group chat.
 
 #### Request
 
@@ -541,16 +541,16 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessage_6",
-  "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1727903166936"]
+  "name": "get_chatmessage_5",
+  "sampleKeys": ["19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2", "1725986575123"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1727903166936
+GET https://graph.microsoft.com/v1.0/chats/19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2/messages/1725986575123
 ```
 
 #### Response
 
-The following example shows the response. The message body contains a forwarded message as an attachment. The **contentType** for the forwarded message is identified as `forwardedMessageReference`. The original message that was forwarded is also available in the attachment **content**.
+The following example shows the response. The message body contains an @mention for everyone in a group chat that is represented by the `<at></at>` tag. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mentioned** object.
 
 <!-- {
   "blockType": "response",
@@ -575,7 +575,7 @@ Content-type: application/json
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
-    "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+    "chatId": "19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2",
     "importance": "normal",
     "locale": "en-us",
     "webUrl": null,
@@ -589,27 +589,33 @@ Content-type: application/json
         "user": {
             "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": null,
+            "displayName": "Adele Vance",
             "userIdentityType": "aadUser",
             "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
         }
     },
     "body": {
         "contentType": "html",
-        "content": "<attachment id=\"1727881360458\"></attachment>"
+        "content": "<p>Hi&nbsp;<at id=\"0\">Everyone</at></p>"
     },
-    "attachments": [
+    "attachments": [],
+    "mentions": [
         {
-            "id": "1727881360458",
-            "contentType": "forwardedMessageReference",
-            "contentUrl": null,
-            "content": "{\"originalMessageId\":\"1727881360458\",\"originalMessageContent\":\"\\n<p>hello</p>\\n\",\"originalConversationId\":\"19:97641583cf154265a237da28ebbde27a@thread.v2\",\"originalSentDateTime\":\"2024-10-02T15:02:40.458+00:00\",\"originalMessageSender\":{\"application\":null,\"device\":null,\"user\":{\"userIdentityType\":\"aadUser\",\"tenantId\":\"2432b57b-0abd-43db-aa7b-16eadd115d34\",\"id\":\"28c10244-4bad-4fda-993c-f332faef94f0\",\"displayName\":null}}}",
-            "name": null,
-            "thumbnailUrl": null,
-            "teamsAppId": null
+            "id": 0,
+            "mentionText": "Everyone",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "user": null,
+                "tag": null,
+                "conversation": {
+                    "id": "19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2",
+                    "displayName": "Everyone",
+                    "conversationIdentityType": "chat"
+                }
+            }
         }
     ],
-    "mentions": [],
     "reactions": []
 }
 ```
