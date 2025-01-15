@@ -27,7 +27,7 @@ Microsoft Entra is a family of identity and network access capabilities that are
 
 ## Manage user identities
 
-Users are the main identities in any identity and access solution. You can manage the entire lifecycle of users in your organization, and their entitlements like licenses or group memberships, using Microsoft Graph APIs. For more information, see [Working with users in Microsoft Graph](/graph/api/resources/users).
+Users are the main identities in any identity and access solution. You can manage the entire lifecycle of users in your organization, including guests, and their entitlements like licenses or group memberships, using Microsoft Graph APIs. For more information, see [Working with users in Microsoft Graph](/graph/api/resources/users).
 
 ## Manage groups
 
@@ -89,7 +89,6 @@ A core functionality of identity and access management is managing your tenant c
 |Force autoacceleration sign-in to skip the username entry screen and automatically forward users to federated sign-in endpoints |[homeRealmDiscoveryPolicy resource type](homerealmdiscoverypolicy.md) resource type and its associated APIs|
 | Detect, investigate, and remediate identity-based risks using Microsoft Entra ID Protection and feed the data into security information and event management (SIEM) tools for further investigation and correlation | See [Use the Microsoft Graph identity protection APIs](identityprotection-overview.md) |
 | Manage identity providers for Microsoft Entra ID, Microsoft Entra External ID, and Azure AD B2C tenants. You can perform the following operations: <li> Manage identity providers for external identities, including social identity providers, OIDC, Apple, SAML/WS-Fed, and built-in providers <li> Manage configuration for federated domains and token validation | [identityProviderBase resource type](identityproviderbase.md) and its associated APIs |
-| Invite external users to collaborate with your tenant by using Microsoft Entra External ID | [invitation resource type](invitation.md) and its associated APIs |
 | Stay informed about Microsoft Entra product lifecycle updates, including the product roadmap and change announcements | See <li>[changeItemBase resource type](changeitembase.md) and its associated APIs for product updates <li> [announcement resource type](announcement.md) and its associated APIs for change annoncements <li> [roadmap resource type](roadmap.md) and its associated APIs for product roadmap information  |
 | Define a group of tenants belonging to your organization and streamline intra-organization cross-tenant collaboration | See [Multitenant organization API overview](multitenantorganization-overview.md) |
 | Customize sign-in UIs to match your company branding, including applying branding that's based on the browser language | [organizationalBranding resource type](organizationalbranding.md) and its associated APIs |
