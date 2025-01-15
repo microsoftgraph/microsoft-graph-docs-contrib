@@ -53,7 +53,7 @@ For security and performance reasons, Microsoft Graph throttles notifications se
 If your endpoint is unable to meet these performance characteristics, consider using [Event Hubs](/graph/change-notifications-delivery-event-hubs) or [Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph/context) as a target for receiving notifications.
 
 ### Authentication
-When you create your subscription, an access token is sent to your endpoint. This access token is used only to check the validity of your endpoint and has a lifecycle different from the change notification subscription. This access token generally expires within 1 hour.
+When you create your subscription, an access token is sent to your endpoint. This access token is used only to check the validity of your endpoint and has a lifecycle different from your change notification subscription. This access token generally expires within 1 hour.
 
 To ensure uninterrupted notifications, your endpoint must be prepared for regular reauthorization by Microsoft Graph.
 
