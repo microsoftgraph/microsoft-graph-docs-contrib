@@ -52,6 +52,10 @@ Use the [start](/graph/api/industrydata-industrydatarun-start?view=graph-rest-be
 
 Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true#container-type-teams-channel) container type to create plans in shared channels in Microsoft Teams.
 
+### Teamwork and communications | Calls and online meetings
+
+Use the **sequenceNumber** property on [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) to get the lexicographically sortable string stamp that represents the version of a presence object.
+
 ## December 2024: New and generally available
 
 ### Reports
