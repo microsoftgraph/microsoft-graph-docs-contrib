@@ -77,6 +77,7 @@ The following example shows how to link external town hall event information to 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "virtualeventtownhall.setexternaleventinformation",
@@ -91,6 +92,12 @@ Content-Type: application/json
   "externalEventId": "myExternalEventId"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventtownhallsetexternaleventinformation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -113,6 +120,7 @@ The following example shows how to link external webinar event information to a 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "virtualeventwebinar.setexternaleventinformation",
@@ -127,6 +135,12 @@ Content-Type: application/json
   "externalEventId": "myExternalEventId"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventwebinarsetexternaleventinformation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
