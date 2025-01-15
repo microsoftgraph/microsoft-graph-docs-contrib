@@ -54,7 +54,7 @@ Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-bet
 
 ### Teamwork and communications | Calls and online meetings
 
-Use the **sequenceNumber** property on [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) to get the lexicographically sortable string stamp that represents the version of a presence object.
+Use the **sequenceNumber** property on [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) to get the lexicographically sortable string stamp that represents the version of a **presence** object.
 
 ## December 2024: New and generally available
 
