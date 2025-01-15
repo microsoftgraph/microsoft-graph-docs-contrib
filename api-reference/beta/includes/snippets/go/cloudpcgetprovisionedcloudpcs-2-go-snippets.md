@@ -16,7 +16,7 @@ import (
 )
 
 requestParameters := &graphdevicemanagement.VirtualEndpointCloudPCsGetProvisionedCloudPCsWithGroupIdWithServicePlanIdRequestBuilderGetQueryParameters{
-	Select: [] string {"id","displayName","powerState","connectivityResult","lastLoginResult","lastRemoteActionResult","osVersion","provisioningPolicyName","userAccountType"},
+	Select: [] string {"id","displayName","powerState","connectivityResult","lastLoginResult","lastRemoteActionResult","osVersion","provisioningPolicyName","userAccountType","productType"},
 }
 configuration := &graphdevicemanagement.VirtualEndpointCloudPCsGetProvisionedCloudPCsWithGroupIdWithServicePlanIdRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
