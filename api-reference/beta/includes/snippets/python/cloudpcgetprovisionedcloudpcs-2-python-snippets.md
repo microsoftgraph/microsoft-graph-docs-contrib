@@ -10,7 +10,7 @@ from msgraph_beta.generated.device_management.virtual_endpoint.cloud_p_cs.get_pr
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = GetProvisionedCloudPCsWithGroupIdWithServicePlanIdRequestBuilder.GetProvisionedCloudPCsWithGroupIdWithServicePlanIdRequestBuilderGetQueryParameters(
-		select = ["id","displayName","powerState","connectivityResult","lastLoginResult","lastRemoteActionResult","osVersion","provisioningPolicyName","userAccountType"],
+		select = ["id","displayName","powerState","connectivityResult","lastLoginResult","lastRemoteActionResult","osVersion","provisioningPolicyName","userAccountType","productType"],
 )
 
 request_configuration = RequestConfiguration(
