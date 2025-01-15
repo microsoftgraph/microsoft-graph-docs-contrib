@@ -28,6 +28,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |[Get](../api/protectionrulebase-get.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Read the properties and relationships of a [driveProtectionRule](../resources/driveprotectionrule.md).|
 |[Delete](../api/protectionrulebase-delete.md)|None|Delete a [driveProtectionRule](../resources/driveprotectionrule.md).|
 |[Run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activate a drive protection rule.|
+|[deleteAndUnprotect](../api/protectionrulebase-deleteandunprotect.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Delete and unprotects all the artifacts protected by dynamic rule.|
 
 ## Properties
 
@@ -41,7 +42,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static. Static rules run once; dynamic rules listen to all changes in the system and update the protection unit list. Currently, only static rules are supported.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification to this rule.|
-|status|[protectionRuleStatus](../resources/driveprotectionrule.md#protectionrulestatus-values )|The status of the protection rule. The following are the possible values: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+|status|[protectionRuleStatus](../resources/driveprotectionrule.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`, `updateRequested`, `deleteRequested`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `updateRequested` , `deleteRequested`.| The `draft` member is currently unsupported. |
 
 ### driveExpression examples
 
@@ -61,6 +62,8 @@ The following table shows possible formats for the drive expression.
 |completed | The status of the protection rule after it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule after it's applied to the corresponding policy and any failures occurred.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+|updateRequested | The status of the protection rule when it's patch. This is applicable only for dynamic rules|
+|deleteRequested | The status of the protection rule on deleteAndUnprotect action. This is applicable only for dynamic rules|
 
 ## Relationships
 

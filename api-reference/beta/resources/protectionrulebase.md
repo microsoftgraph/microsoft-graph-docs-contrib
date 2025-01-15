@@ -18,7 +18,10 @@ Namespace: microsoft.graph
 
 Represents a protection rule specified by the client as part of a protection plan applied to Microsoft 365 data in an organization. Currently, only inclusion rules, which are rules that indicate that a protection policy should match the specified criteria, can be defined.
 
-Currently, protection rules are static in nature, meaning policy changes are applied only when the rule is executed, with no automatic/dynamic updates.
+<!-- Currently, protection rules are static in nature, meaning policy changes are applied only when the rule is executed, with no automatic/dynamic updates. -->
+- Protection rules can be static or dynamic in nature, dependig on the property `isAutoApplyEnabled` set to `false` or `true` respectively.
+- This property can be set only at the time of creation and cannot be changed later on. This also means that static to dynamic rule and vice-versa is not allowed.
+- `isAutoApplyEnabled` = `true` indicates that the rule is dynamic in nature (a.k.a dynamic rule).
 
 This abstract type is the base type for [siteProtectionRule](../resources/siteprotectionrule.md), [mailboxProtectionRule](../resources/mailboxprotectionrule.md), and [driveProtectionRule](../resources/driveprotectionrule.md).
 
@@ -26,7 +29,10 @@ The following limitations apply to this resource:
 
 - The protection rule APIs for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and a maximum of 255 characters.
 - The protection rule APIs for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time.
-- The rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time they're added to the backup configuration policy. For example, groups or lists aren't dynamically updated in the system if users are added or removed from the original security group.
+- The static rules are applied one time only. That is, the security groups or distribution lists are flattened at the time they're added to the backup configuration policy. For example, groups or lists aren't dynamically updated in the system if users are added or removed from the original security group.
+- The dynamic rules are refreshed at regular intervals resulting in automatic addition and removal of artifacts to the configuration policy depending on the result of rule evaluation.
+- A protection policy can have only one active dynamic rule.
+- Dynamic rules are not available for sharepoint protection policies.
 
 ## Properties
 
@@ -39,7 +45,7 @@ The following limitations apply to this resource:
 |isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static. Currently, only static rules are supported.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification made to the rule.|
-|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. The `draft` member is currently unsupported. |
+|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`, `updateRequested`, `deleteRequested`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `updateRequested` , `deleteRequested`.| The `draft` member is currently unsupported. |
 
 ### protectionRuleStatus values
 
@@ -50,6 +56,8 @@ The following limitations apply to this resource:
 |completed | The status of the protection rule when it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule when the rule ran but encountered errors.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.    |
+|updateRequested | The status of the protection rule when it's patch. This is applicable only for dynamic rules|
+|deleteRequested | The status of the protection rule on deleteAndUnprotect action. This is applicable only for dynamic rules|
 
 ## Relationships
 

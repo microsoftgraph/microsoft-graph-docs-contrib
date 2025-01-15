@@ -12,6 +12,28 @@ ms.date: 12/31/2024
 
 Namespace: microsoft.graph
 
+### protectionRuleStatus values 
+
+|Member|
+|:---|
+|draft|
+|active|
+|completed|
+|completedWithErrors|
+|unknownFutureValue|
+|updateRequested|
+|deleteRequested|
+
+### protectionSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|dynamicRule|
+|unknownFutureValue|
+
+
 ### changeAnnouncementChangeType values
 
 |Member|

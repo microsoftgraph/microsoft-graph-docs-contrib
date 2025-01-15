@@ -128,6 +128,7 @@ HTTP/1.1 200 OK
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -162,6 +163,7 @@ HTTP/1.1 200 OK
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "ibrahim@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual, dynamicRule",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -196,6 +198,7 @@ HTTP/1.1 200 OK
       "displayName": "Esmira Musayeva", // Newly Added
       "email": "esmira@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -230,6 +233,7 @@ HTTP/1.1 200 OK
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
       "status": "protected",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -263,6 +267,7 @@ HTTP/1.1 200 OK
       "displayName": "Rashmi Mishra ", // Newly Added
       "email": "eddyb@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -367,6 +372,7 @@ HTTP/1.1 200 OK
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -401,6 +407,7 @@ HTTP/1.1 200 OK
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "ibrahim@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "dynamicRule",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -435,6 +442,7 @@ HTTP/1.1 200 OK
       "displayName": "Esmira Musayeva", // Newly Added
       "email": "esmira@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "dynamicRule",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -469,6 +477,7 @@ HTTP/1.1 200 OK
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -503,6 +512,7 @@ HTTP/1.1 200 OK
       "displayName": "Jeffry Goh ", // Newly Added
       "email": "jeffry@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

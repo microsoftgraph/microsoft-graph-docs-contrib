@@ -38,6 +38,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |lastModifiedDateTime|DateTimeOffset|The time the protection unit was last modified. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |mailboxType|[mailboxType](../resources/enums.md#mailboxtype-values)|The type of mailbox which is assigned to the user with id: `directoryObjectId`.The possible values are: `unknown`, `user`, `shared`, `unknownFutureValue`.|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. Protection unit protected by multiple sources is indicated by comma seperated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`.|
 |status|[protectionUnitStatus](../resources/mailboxprotectionunit.md#protectionunitstatus-values)|The individual enable, disable, or removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values
@@ -77,6 +78,7 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
+  "protectionSources": "String",
   "error": {
     "@odata.type": "microsoft.graph.publicError"
   },
