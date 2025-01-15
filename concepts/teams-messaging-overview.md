@@ -29,6 +29,8 @@ Cards represent visual elements backed by a predefined schema. Teams supports th
 
 - Code snippet - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
 - Announcement card - Set **contentType** set to `application/vnd.microsoft.card.announcement`
+- Loop component card - Set **contentType** set to `application/vnd.microsoft.card.fluidEmbedCard`
+- Place holder card - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
 
 For cards, the **contentType** property is set to the type of card, and the **content** property contains the serialized json for the card.
 
@@ -69,6 +71,31 @@ The following example shows the schema for an adaptive card attachment when the 
 ```
 
 > **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** aren't supported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
+
+The following example shows the schema for a loop component as two attachments.
+
+```json
+    "attachments": [
+        {
+            "id": "b21e256a-8581-45cf-ae05-8bb998360bcc",
+            "contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+            "contentUrl": null,
+            "content": "{\r\n  \"componentUrl\": \"https://teamsgraph-my.sharepoint.com/:fl:/g/personal/sumanac_teamsgraph_onmicrosoft_com/EQnofOQM0MpOoDaRIvw-pS8Bfsj_WDFuanBBXnjDAD-w3g?nav=cz0lMkZwZXJzb25hbCUyRnN1bWFuYWNfdGVhbXNncmFwaF9vbm1pY3Jvc29mdF9jb20mZD1iIWVUcmxYX19jN2t5eW9GSFhJdG8yTDI4bmtnV2EtOXhEa244SVBOdGZFYnlxandPblkwdE9TcFVldkh6dWtBV1ImZj0wMUU2TzQ0WFlKNUI2T0lER1FaSkhLQU5VUkVMNkQ1SkpQJmM9JTJGJmZsdWlkPTEmYT1UZWFtcyZwPSU0MGZsdWlkeCUyRmxvb3AtcGFnZS1jb250YWluZXI%3D\",\r\n  \"sourceType\": \"Compose\"\r\n}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "FluidEmbedCard"
+        },
+        {
+            "id": "placeholderCard",
+            "contentType": "application/vnd.microsoft.card.codesnippet",
+            "contentUrl": null,
+            "content": "{}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "FLUID_PLACEHOLDER_CARD"
+        }
+    ],
+```
 
 #### file attachment
 
