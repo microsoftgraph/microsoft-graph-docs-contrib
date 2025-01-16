@@ -59,7 +59,7 @@ The following example shows how to create an import session. The opaque URL, ret
 
 <!-- {
   "blockType": "request",
-  "name": "mailboxthis.createimportsession"
+  "name": "mailboxthis.createimportsession",
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->

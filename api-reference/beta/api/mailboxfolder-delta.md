@@ -80,7 +80,7 @@ For a similar example that shows how to use the state tokens to track changes in
 
 <!-- {
   "blockType": "request",
-  "name": "mailboxfolderthis.delta"
+  "name": "mailboxfolderthis.delta",
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->

@@ -68,7 +68,7 @@ If successful, this action returns a `200 OK` response code and a collection of 
 The following example exports two items present in the user's mailbox. The **itemIds** of the items to be exported are specified in the request body.
 <!-- {
   "blockType": "request",
-  "name": "mailboxthis.exportitems"
+  "name": "mailboxthis.exportitems",
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->

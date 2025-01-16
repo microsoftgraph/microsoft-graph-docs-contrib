@@ -84,7 +84,7 @@ For an example that shows a round of delta query calls, see [Get incremental cha
 
 <!-- {
   "blockType": "request",
-  "name": "mailboxitemthis.delta"
+  "name": "mailboxitemthis.delta",
   "sampleKeys": ["MBX:e0643f21@a7809c93", "AAMkAGUwNjQ4ZyTAAA="]
 }
 -->

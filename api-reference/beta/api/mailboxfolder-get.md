@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [mailboxFolder
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_mailboxfolder"
+  "name": "get_mailboxfolder",
   "sampleKeys": ["MBX:e0643f21@a7809c93", "NJWt2LeVEAAAIBDAAAAA=="]
 }
 -->

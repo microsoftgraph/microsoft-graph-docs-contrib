@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [mailboxItem](
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_mailboxitem"
+  "name": "get_mailboxitem",
   "sampleKeys": ["MBX:e0648f21@aab09c93", "AAMkAGVmMDEzM", "AAMkAGI1AAAoZCfHAAA="]
 }
 -->

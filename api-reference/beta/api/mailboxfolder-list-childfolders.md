@@ -63,7 +63,7 @@ The following example shows how to get the mailbox folder collection under a spe
 
 <!-- {
   "blockType": "request",
-  "name": "list_mailboxfolder"
+  "name": "list_mailboxfolder",
   "sampleKeys": ["MBX:e0643f21@a7809c93", "NJWt2LeVEAAAIBDAAAAA=="]
 }
 -->

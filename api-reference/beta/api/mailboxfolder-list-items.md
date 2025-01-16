@@ -66,7 +66,7 @@ The following example shows how to get the mailbox items within a specified fold
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_mailboxitem"
+  "name": "list_mailboxitem",
   "sampleKeys": ["MBX:e0643f21@a7809c93", "NJWt2LeVEAAAIBDAAAAA=="]
 }
 -->
@@ -128,7 +128,7 @@ The following example uses the `$filter`, `$select`, and `$top` query parameters
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_mailboxitem"
+  "name": "list_mailboxitem",
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->

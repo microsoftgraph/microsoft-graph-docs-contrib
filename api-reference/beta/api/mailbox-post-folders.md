@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code and a [mailboxF
 The following example shows how to create a new mailbox folder.
 <!-- {
   "blockType": "request",
-  "name": "create_mailboxfolder_from_"
+  "name": "create_mailboxfolder_from_",
   "sampleKeys": ["MBX:e0648f21@aab09c93"]
 }
 -->

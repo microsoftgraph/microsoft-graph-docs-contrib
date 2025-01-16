@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [mail
 The following example shows how to update certain folder properties of a mailbox folder.
 <!-- {
   "blockType": "request",
-  "name": "update_mailboxfolder"
+  "name": "update_mailboxfolder",
   "sampleKeys": ["MBX:e0648f21@aab09c93", "AAMkAGVmMDEzM"]
 }
 -->

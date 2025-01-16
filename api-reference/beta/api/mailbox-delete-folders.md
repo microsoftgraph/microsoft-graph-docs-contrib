@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows how to delete a mailbox folder.
 <!-- {
   "blockType": "request",
-  "name": "delete_mailboxfolder"
+  "name": "delete_mailboxfolder",
   "sampleKeys": ["MBX:e0648f21@aab09c93", "AAMkAGVmMDEzM"]
 }
 -->
