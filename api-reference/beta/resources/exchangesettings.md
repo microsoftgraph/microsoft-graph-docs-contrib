@@ -24,7 +24,7 @@ Represents the Exchange settings for mailbox discovery.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user's Exchange settings resource.|
+|id|String|The unique identifier of the **exchangeSettings** of the user.|
 |inPlaceArchiveMailboxId|String|The unique identifier for the user's in-place archive mailbox.|
 |primaryMailboxId|String|The unique identifier for the user's primary mailbox.|
 

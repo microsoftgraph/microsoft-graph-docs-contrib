@@ -19,7 +19,7 @@ Represents a container for Exchange admin functionality.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|mailboxes|[mailbox](../resources/mailbox.md)|Represents a user's mailboxes.|
+|mailboxes|[mailbox](../resources/mailbox.md) collection|Represents a user's mailboxes.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
