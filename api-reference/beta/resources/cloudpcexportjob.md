@@ -50,7 +50,7 @@ Represents the export job for downloading a specified Cloud PC report.
 ### cloudPcReportName values
 
 | Member                                      | Description                                                              |
-|---------------------------------------------|--------------------------------------------------------------------------|
+|:--------------------------------------------|:-------------------------------------------------------------------------|
 | remoteConnectionHistoricalReports           | The historical aggregated remote connections report.                     |
 | dailyAggregatedRemoteConnectionReports      | The daily aggregated remote connections report.                          |
 | totalAggregatedRemoteConnectionReports      | The total aggregated remote connections report.                          |
