@@ -1,5 +1,5 @@
 ---
-title: "List plans"
+title: "List plans owned by a Teams shared channel"
 description: "Retrieve a list of **plannerPlan** objects owned by a channel object."
 ms.localizationpriority: medium
 author: "DanluCui"
