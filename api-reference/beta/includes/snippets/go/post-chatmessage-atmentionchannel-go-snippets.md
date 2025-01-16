@@ -19,7 +19,7 @@ requestBody := graphmodels.NewChatMessage()
 body := graphmodels.NewItemBody()
 contentType := graphmodels.HTML_BODYTYPE 
 body.SetContentType(&contentType) 
-content := "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+content := "<at id=\"0\">General</at>&nbsp;Hello there!"
 body.SetContent(&content) 
 requestBody.SetBody(body)
 
