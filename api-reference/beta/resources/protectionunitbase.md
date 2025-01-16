@@ -35,7 +35,7 @@ This resource is an abstract type.
 |error|[publicError](../resources/publicerror.md)|Contains error details if an error occurred while creating a protection unit.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of this protection unit.|
-|protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. Protection unit protected by multiple sources is indicated by comma seperated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`.|
+|protectionSources|[protectionSource](../resources/enums.md#protectionSource-values)|Indicates the sources by which a protection unit is currently protected. Protection unit protected by multiple sources is indicated by comma separated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`.|
 |status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values

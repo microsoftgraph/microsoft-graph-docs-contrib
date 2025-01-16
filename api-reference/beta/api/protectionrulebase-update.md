@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a protectionRuleBase object.
+Updates the properties of a protectionRuleBase object.
 Update is only supported for dynamic rules of exchangeProtectionPolicy and onedriveForBusinessProtectionPolicy.
 After updation, the rule will move to `updateRequested` state.
 
@@ -166,7 +166,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxProtectionRule)",
     "id": "c31adc5c-b65d-4a85-8eda-976947a24124",
-    "status": "active",
+    "status": "updateRequested",
     "createdBy": {
         "application": {
             "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264"

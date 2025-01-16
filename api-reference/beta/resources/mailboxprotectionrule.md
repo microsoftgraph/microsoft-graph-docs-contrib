@@ -29,7 +29,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |[Delete](../api/protectionrulebase-delete.md)|None|Delete a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
 |[Run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activate a mailbox protection rule.|
 |[DeleteAndUnprotect](../api/protectionrulebase-deleteandunprotect.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Delete and unprotects all the artifacts protected by dynamic rule.|
-
+|[Update](../api/protectionrulebase-update.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Updates the dynamic rule expression.|
 
 ## Properties
 

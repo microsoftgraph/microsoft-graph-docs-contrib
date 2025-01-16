@@ -29,7 +29,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |[Delete](../api/protectionrulebase-delete.md)|None|Delete a [driveProtectionRule](../resources/driveprotectionrule.md).|
 |[Run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activate a drive protection rule.|
 |[DeleteAndUnprotect](../api/protectionrulebase-deleteandunprotect.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Delete and unprotects all the artifacts protected by a dynamic rule.|
-
+|[Update](../api/protectionrulebase-update.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Updates the dynamic rule expression.|
 
 ## Properties
 

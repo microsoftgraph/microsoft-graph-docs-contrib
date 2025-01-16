@@ -17,14 +17,12 @@ Namespace: microsoft.graph
 
 
 DeleteAndUnprotect action is only applicable for dynamic rules.
-This action deletes a dynamic Rule and unprotect all protection units protected under it.
+This action deletes a dynamic Rule and unprotects all protection units protected under it.
 
 The following points apply to deleting a dynamic Rule and unprotecting all artifacts protected under it:
-- Once a dynamic rule is deleted, it moves to a deleteRequested state.
-- Unprotection of artifacts and deletion of rule are async operations and they are carried out of background job. Which may cause some delay to complete the operations. 
-- If the artifact is protected by another protection source as well, it results in the artifact being protected by the other protection source only.
-- Rules moves to `deleteRequested` status when deleteAndUnprotect action is performed on dynamic rule.
-
+- Rule moves to `deleteRequested` status when deleteAndUnprotect action is performed on dynamic rule.
+- Unprotection of artifacts and deletion of rule are async operations and they are carried by background jobs, which may cause some delay to complete the operation. 
+- This action will result in resetting the "dynamicRule" protection source. So, if the artifact is protected by another protection source as well, it will result in the artifact being protected by the other protection source only.
 
 ## Permissions
 
@@ -59,13 +57,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [protectionRuleBase](../resources/protectionrulebase.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [protectionRuleBase](../resources/protectionrulebase.md) in the response body.
 
 ## Examples
 
 ### Example 1: DeleteAndUnprotect driveInclusionRule associated with an onedriveForBusiness protection policy
 
-The following example shows how to update a **driveInclusionRule** associated with a [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+The following example shows how to delete a **driveInclusionRule** associated with a [onedriveForBusinessProtectionPolicy] and unprotect units protected by it(../resources/onedriveforbusinessprotectionpolicy.md).
 
 
 ### Request
@@ -123,7 +121,7 @@ The following example shows how to update a **mailboxInclusionRule** associated 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "mailboxrotectionrulethis.deleteandunprotect"
+  "name": "mailboxprotectionrulethis.deleteandunprotect"
 }
 -->
 ``` http
@@ -159,7 +157,8 @@ Content-Type: application/json
             "identity": "8aaaaec3-5dcb-4b47-9ef9-0dda3e95b9f4"
         }
     },
-    "lastModifiedBy": {}
+    "lastModifiedBy": {},
+    "error": {}
   }
 }
 ```
