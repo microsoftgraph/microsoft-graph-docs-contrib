@@ -38,7 +38,7 @@ If report name is `troubleshootDetailsReport`, this report is used to get the de
 
 | Column                          | Description                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------|
-| UsageInsight                    | Insights on the current usage of the resource. The value would be                                |
+| UsageInsight                    | Insights on the current usage of the resource.                               |
 | CurrentSize                     | The current size of the resource.                                            |
 | CurrentCPU                      | The current CPU usage of the resource.                                       |
 | CurrentRamInGB                  | The current RAM usage in GB.                                                 |
@@ -66,9 +66,9 @@ If report name is `troubleshootTrendCountReport`, this report is used to get dai
 | RTTIssueCloudPcCount            | The count of Cloud PCs with round trip time issues.                         |
 | RTTIssueTrend                   | The count trend of Cloud PCs with round trip time issues over a week.       |
 | StabilityIssueCloudPcCount      | The count of Cloud PCs with stability issues.                               |
-| StabilityIssueTrend             | The count trend of Cloud PCs with stability issues over a week.                                    |
+| StabilityIssueTrend             | The count trend of Cloud PCs with stability issues over a week.             |
 | ConnectionQualityIssueCloudPcCount | The count of Cloud PCs with connection quality issues.                   |
-| ConnectionQualityIssueTrend     | The count trend of Cloud PCs with connection quality issues over time.                           |
+| ConnectionQualityIssueTrend     | The count trend of Cloud PCs with connection quality issues over time.      |
 | TotalImpactedCloudPcCount       | The total count of impacted Cloud PCs.                                      |
 | PerformanceIssueCount           | The metric count of performance issues.                             |
 | NetworkIssueCount               | The metric count of network issues.                                 |
@@ -126,7 +126,7 @@ The following table lists the parameters that are required when you call this ac
 | Parameter | Required |  Type    |Description                                                                                             |
 |:----------|:---------|:---------|:-------------------------------------------------------------------------------------------------------|
 | filter    | No       |String            | OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`.              |
-| reportName| Yes      | [microsoft.graph.deviceManagement.cloudPCTroubleshootReportType](#cloudPCTroubleshootReportType-values)  |The report name, possible values: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`.Default value is: troubleshootDetailsReport.|
+| reportName| Yes      | [cloudPCTroubleshootReportType](#cloudpctroubleshootreporttype-values)  |The report name, possible values: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`.Default value is: troubleshootDetailsReport.|
 | groupBy   | No       |String collection | Specifies how to group the reports. If used, must have the same content as the **select** parameter.   |
 | orderBy   | No       |String collection | Specifies the order by columns name.              |
 | search    | No       |String            | Specifies a string to search for.                                                                      |
@@ -135,13 +135,13 @@ The following table lists the parameters that are required when you call this ac
 | top       | No       |Int32             | The number of top records to return. If not specified, the default limit is 25, with a maximum of 100. |
 
 ### cloudPCTroubleshootReportType values
-| Member name                   | Description                                                                                                 |
-|-------------------------------|-------------------------------------------------------------------------------------------------------------|
-| `troubleshootDetailsReport`   | The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues. |
-| `troubleshootTrendCountReport`| The aggregated report which shows the number and trend of issues per tenant.               |
-| `troubleshootRegionalReport`  | The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues. |
-| `roubleshootIssueCountReport` | The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.         |
-| `unknownFutureValue`          | Evolvable enumeration sentinel value. Do not use.                                                                                           |
+| Member                      | Description           | Value |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----- |
+| `troubleshootDetailsReport`        | The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues.        |  0   |
+| `troubleshootTrendCountReport`     | The aggregated report which shows the number and trend of issues per tenant.     | 1   |
+| `troubleshootRegionalReport`       | The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues. | 2   |
+| `roubleshootIssueCountReport`       | The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues. | 3   |
+| `unknownFutureValue`                  | Evolvable enumeration sentinel value. Do not use.    | 4     |use.                                                                                           |
 
 
 ## Response
