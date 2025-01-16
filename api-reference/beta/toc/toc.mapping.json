@@ -3248,7 +3248,7 @@
     },
     {
       "name": "Exchange",
-      "overview": "../../resources/exchange-importexport-overview.md",
+      "overview": "../../resources/exchange-import-export-api-overview.md",
       "keywords": [
         "Exchange",
         "Exchange Import-Export",
