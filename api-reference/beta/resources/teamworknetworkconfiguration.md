@@ -30,6 +30,9 @@ Represents the details about the network configuration for a Microsoft Teams-ena
 |subnetMask|String|A subnet mask is a number that distinguishes the network address and the host address within an IP address.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

@@ -27,6 +27,9 @@ Inherits from [identity](identity.md).
 | hidden | Boolean | `True` if the participant shouldn't be shown in other participants' rosters. |
 | id | String | The client ID of the application from Microsoft Entra ID. Inherited from **identity**. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

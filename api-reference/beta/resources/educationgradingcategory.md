@@ -35,6 +35,9 @@ Represents the weighted contribution of an assignment to a class average grade.
 |displayName|String|The name of the grading category.|
 |percentageWeight|Int32|The weight of the category; an integer between 0 and 100.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

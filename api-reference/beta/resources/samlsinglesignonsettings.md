@@ -21,6 +21,9 @@ Represents a container for settings related to SAML single sign-on.
 |relayState|String| The relative URI the service provider would redirect to after completion of the single sign-on flow. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

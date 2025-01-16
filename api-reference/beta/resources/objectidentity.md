@@ -39,6 +39,9 @@ When filtering on the **identities** property for an **issuerAssignedId**:
 - Filtering for entries with a **signInType** of `userPrincipalName` isn't supported. You can filter on the **userPrincipalName** property on the user object instead.
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

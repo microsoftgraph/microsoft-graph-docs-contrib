@@ -23,6 +23,9 @@ Represents error information from attempting to get the availability of a user, 
 |responseCode |String |The response code from querying for the availability of the user, distribution list, or resource. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -66,6 +66,9 @@ The owner app can move the extension through different states of a lifecycle, us
 > [!NOTE]
 > Schema extension definitions (marked as `Available`) created by other developers from other tenants are visible to all developers (by listing all schema extensions). This is different from other APIs that only return tenant-specific data. On the other hand, extension data created based on schema extension definitions, is tenant-specific and can only be accessed by apps explicitly granted permission. 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

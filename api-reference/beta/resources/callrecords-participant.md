@@ -32,6 +32,9 @@ Inherits from [participantBase](callrecords-participantbase.md).
 | identity                | [communicationsIdentitySet](communicationsidentityset.md)                                              | The identity of the call participant. Inherited from [participantBase](callrecords-participantbase.md).                                                            |
 | administrativeUnitInfos | [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection | List of [administrativeUnitInfo](callrecords-administrativeunitinfo.md) of the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

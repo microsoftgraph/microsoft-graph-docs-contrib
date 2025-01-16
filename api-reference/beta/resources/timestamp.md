@@ -23,6 +23,9 @@ Date and time information for a point in time.
 |time|TimeOfDay|The time portion of the timestamp.|
 |timeZone|String|The timezone portion of the timestamp, which is one of the 24 longitudinal areas in the world.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

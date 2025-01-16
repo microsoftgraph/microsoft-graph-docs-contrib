@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description                   |
 | :-------- | :--- | :---------------------------- |
-| groupId   | Guid | The id of the group to renew. |
+| groupId   | Guid | The object ID of the group to renew. |
 
 ## Response
 

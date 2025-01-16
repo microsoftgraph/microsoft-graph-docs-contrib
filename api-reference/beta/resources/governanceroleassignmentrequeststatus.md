@@ -24,6 +24,9 @@ Represents the status of the [governanceRoleAssignmentRequest](../resources/gove
 | subStatus     | String                                          | The sub status of the role assignment request. The values can be `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, and `ProvisioningStarted`. |
 | statusDetails | [keyValue](../resources/keyvalue.md) collection | The details of the status of the role assignment request. It represents the evaluation results of different rules.                                                                                                                                                                                                                                                                              |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

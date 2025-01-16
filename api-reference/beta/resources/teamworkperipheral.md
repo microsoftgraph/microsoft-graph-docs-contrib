@@ -27,6 +27,9 @@ Inherits from [entity](../resources/entity.md).
 |vendorId|String|The unique identifier for the vendor of the device. Each vendor has a unique ID.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

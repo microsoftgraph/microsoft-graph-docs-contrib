@@ -21,6 +21,9 @@ Provides settings to enable others to configure [team](team.md) discoverability.
 |:---------------|:--------|:----------|
 |showInTeamsSearchAndSuggestions|Boolean|If set to true, the team is visible via search and suggestions from the Teams client.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

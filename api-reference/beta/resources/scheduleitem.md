@@ -27,6 +27,9 @@ An item that describes the availability of a user corresponding to an actual eve
 |subject |String | The corresponding event's subject line. Optional.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

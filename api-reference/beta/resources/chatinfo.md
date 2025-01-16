@@ -24,6 +24,9 @@ Contains information associated with Microsoft Teams meetings.
 | replyChainMessageId | String  | The ID of the reply message. |
 | threadId            | String  | The unique identifier for a thread in Microsoft Teams. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

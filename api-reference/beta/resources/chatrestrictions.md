@@ -22,6 +22,9 @@ Specifies the configuration for meeting chat restrictions.
 |:--------------------|:----------|:----------------------------------------------|
 | allowTextOnly  | Boolean   | Indicates whether only text is allowed in the meeting chat. Optional. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

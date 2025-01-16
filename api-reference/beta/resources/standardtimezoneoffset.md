@@ -35,6 +35,9 @@ That means the transition from daylight saving time to standard occurs at 2 AM o
 | year | Edm.Int32 | Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example, a value of 0 means every year.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

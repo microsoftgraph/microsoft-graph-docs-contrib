@@ -22,6 +22,9 @@ For internal use only. This complex type will be deprecated in the future.
 | key              | Edm.Binary | For internal use only.|
 | type             | Int32      | For internal use only.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

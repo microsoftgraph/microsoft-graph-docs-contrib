@@ -22,6 +22,9 @@ Represents an identity within the Universal Print service. Maps to an [Microsoft
 |id|String|The printIdentity's identifier. Read-only.|
 |displayName|String|The printIdentity's display name.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

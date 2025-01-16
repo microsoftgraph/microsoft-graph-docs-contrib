@@ -18,6 +18,16 @@ The **File** resource groups file-related data items into a single structure.
 If a [**DriveItem**](driveitem.md) has a non-null **file** facet, the item represents a file.
 In addition to other properties, files have a **content** relationship that contains the byte stream of the file.
 
+## Properties
+
+| Property | Type                    | Description                                                                                                                                      |
+|:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
+| hashes   | [hashes](hashes.md) | Hashes of the file's binary content, if available. Read-only.                                                                                    |
+| mimeType | string                  | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. |
+
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
@@ -34,13 +44,6 @@ The following JSON representation shows the resource type.
   "mimeType": "string"
 }
 ```
-
-## Properties
-
-| Property | Type                    | Description                                                                                                                                      |
-|:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes   | [hashes](hashes.md) | Hashes of the file's binary content, if available. Read-only.                                                                                    |
-| mimeType | string                  | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. |
 
 ## Remarks
 

@@ -26,6 +26,9 @@ This type inherits from [identity](identity.md).
 |:-------- |:---- |:----------- |
 | type | String | Type of the resource, indicating whether it is a group or an app. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

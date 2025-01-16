@@ -40,6 +40,9 @@ Configuring user flow attributes in your Microsoft Entra ID or Azure AD B2C tena
 |id|String|The identifier of the user flow attribute. Read-only. <br/><br/> Supports `$filter` (`eq`, `ne`). |
 |userFlowAttributeType|identityUserFlowAttributeType|The type of the user flow attribute. Read-only. Depending on the type of attribute, the values for this property are `builtIn`, `custom`, `required`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`). |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

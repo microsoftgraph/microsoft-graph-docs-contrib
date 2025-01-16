@@ -16,25 +16,18 @@ Namespace: microsoft.graph
 
 Unassign a [hardware token](../resources/hardwareoathauthenticationmethod.md) from a user. The token remains in the directory and its details can be retrieved by [List hardwareOathDevices](authenticationmethoddevice-list-hardwareoathdevices.md) API.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions acting on self
-<!-- {
-  "blockType": "permissions",
-  "name": "authentication-delete-hardwareoathmethods-permissions"
-}
--->
-<!-- { "blockType": "permissions", "name": "authentication_delete_hardwareoathmethods" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-delete-hardwareoathmethods-permissions.md)]
 
 ## Permissions acting on other users
-<!-- {
-  "blockType": "permissions",
-  "name": "authentication-delete-hardwareoathmethods-2-permissions"
-}
--->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-delete-hardwareoathmethods-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]

@@ -26,6 +26,9 @@ Represents the status of a long-running participant invitation operation, trigge
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                  |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

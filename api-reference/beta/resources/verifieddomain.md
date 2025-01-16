@@ -26,6 +26,9 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 | name | String | The domain name; for example, `contoso.com`. |
 | type | String | For example, `Managed`. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

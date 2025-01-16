@@ -37,6 +37,9 @@ Inherits from [entity](../resources/entity.md).
 |peripheralsHealth|[teamworkPeripheralsHealth](../resources/teamworkperipheralshealth.md)|Health details about all peripherals (for example, speaker and microphone) attached to a device.|
 |softwareUpdateHealth|[teamworkSoftwareUpdateHealth](../resources/teamworksoftwareupdatehealth.md)|Software updates available for the device.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

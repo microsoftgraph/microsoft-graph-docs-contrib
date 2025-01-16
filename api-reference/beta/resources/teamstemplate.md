@@ -22,6 +22,9 @@ A team template is a blueprint for creating a [team](../resources/team.md) in Mi
 |:------------------- |:-------- |:----------- |
 | id                  | String   | Unique identifier of the template. Cannot be null. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

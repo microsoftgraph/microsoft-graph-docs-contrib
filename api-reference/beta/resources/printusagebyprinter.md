@@ -42,6 +42,9 @@ Describes print activity for a printer during a specified time period (usageDate
 |singleSidedSheetCount|Int64|The estimated number of single-sided media sheets printed based on reporting by the printer.|
 |usageDate|Date|The date associated with these statistics.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

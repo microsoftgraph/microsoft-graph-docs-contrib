@@ -34,6 +34,9 @@ Use the [insightsSettings](insightssettings.md) resource to enable or disable th
 |-----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | isEnabled | Boolean  | `True` if the user's **itemInsights** and meeting hours insights are enabled; `false` if the user's **itemInsights** and meeting hours insights are disabled. The default value is `true`. Optional.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

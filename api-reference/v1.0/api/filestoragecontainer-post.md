@@ -18,7 +18,7 @@ The container type identified by **containerTypeId** must be registered in the t
 
 For delegated calls, the calling user is set as the owner of the **fileStorageContainer**. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
