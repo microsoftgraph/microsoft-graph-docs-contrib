@@ -6,6 +6,7 @@ author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/21/2024
 ---
 
 # phoneAuthenticationMethod: disableSmsSignIn

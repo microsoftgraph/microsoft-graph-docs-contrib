@@ -32,6 +32,10 @@ items:
     href: ../../api/site-list-subsites.md
   - name: Search for sites
     href: ../../api/site-search.md
+  - name: Archive site
+    href: ../../api/site-archive.md
+  - name: Unarchive site
+    href: ../../api/site-unarchive.md
   - name: Follow site
     href: ../../api/site-follow.md
   - name: Unfollow site
@@ -206,6 +210,10 @@ items:
     href: ../../resources/recyclebinitem.md
   - name: List
     href: ../../api/recyclebin-list-items.md
+  - name: Delete
+    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
+  - name: Restore
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
 - name: Rich long running operation
   items:
   - name: Rich long running operation
@@ -306,8 +314,6 @@ items:
       href: ../../api/sitepage-getwebpartsbyposition.md
     - name: Save as template
       href: ../../api/sitepage-saveastemplate.md
-    - name: Create from template
-      href: ../../api/sitepage-createfromtemplate.md
     - name: Horizontal section
       items:
       - name: Horizontal section

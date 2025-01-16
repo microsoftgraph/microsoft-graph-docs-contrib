@@ -21,6 +21,9 @@ Represents the details for a call participant.
 |:---|:---|:---|
 |participant|[identitySet](../resources/identityset.md)|Identity of the call participant.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

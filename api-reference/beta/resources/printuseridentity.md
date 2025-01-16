@@ -24,6 +24,9 @@ Represents a user identity within the Universal Print service. Maps to an [Micro
 |ipAddress|String|The printUserIdentity' IP address. Not populated.|
 |userPrincipalName|String|The printUserIdentity's user principal name (UPN).|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

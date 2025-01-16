@@ -18,10 +18,10 @@ import (
 
 requestFilter := "submitDateTime gt 2023-10-10T00:00:00.000Z"
 
-requestParameters := &grapheducation.EducationReportsReflectCheckInResponsesRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ReportsReflectCheckInResponsesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &grapheducation.EducationReportsReflectCheckInResponsesRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ReportsReflectCheckInResponsesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -21,6 +21,8 @@ Configuring an OpenID Connect provider in an Azure AD B2C tenant enables users t
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
+For more information, see [Add Azure AD B2C tenant as an OpenID Connect identity provider (preview)](/entra/external-id/customers/how-to-b2c-federation-customers).
+
 ## Methods
 
 None.
@@ -55,6 +57,9 @@ For the list of API operations for managing OpenID Connect identity providers in
 |code|As per the authorization code flow, a code is returned back to Azure AD B2C. Azure AD B2C proceeds to call the token_endpoint to exchange the code for the token.|
 |id_token|An ID token is returned back to Azure AD B2C from the custom identity provider.|
 |token|An access token is returned back to Azure AD B2C from the custom identity provider. (This value isn't supported by Azure AD B2C at the moment)|
+
+## Relationships
+None.
 
 ## JSON representation
 

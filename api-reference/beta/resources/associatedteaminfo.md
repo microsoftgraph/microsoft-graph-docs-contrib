@@ -37,6 +37,9 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 |tenantId|String|The ID of the Microsoft Entra tenant. Inherited from [teamInfo](../resources/teaminfo.md).|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

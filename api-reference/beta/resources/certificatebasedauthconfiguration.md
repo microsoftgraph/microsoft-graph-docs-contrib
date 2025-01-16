@@ -6,6 +6,7 @@ author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 toc.keywords: [ CBA ]
+ms.date: 11/07/2024
 ---
 
 # certificateBasedAuthConfiguration resource type

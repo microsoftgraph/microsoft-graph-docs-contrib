@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-groups"
 author: "psignoret"
+ms.date: 11/30/2024
 ---
 
 # Grant an appRoleAssignment to a group

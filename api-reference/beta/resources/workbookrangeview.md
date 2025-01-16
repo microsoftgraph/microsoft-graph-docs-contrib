@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
 toc.title: Range view
+ms.date: 08/01/2024
 ---
 
 # workbookRangeView resource type

@@ -22,6 +22,12 @@ lastName := "Demoss"
 requestBody.SetLastName(&lastName) 
 email := "DianeDemoss@contoso.com"
 requestBody.SetEmail(&email) 
+externalRegistrationInformation := graphmodels.NewVirtualEventExternalRegistrationInformation()
+referrer := "Facebook"
+externalRegistrationInformation.SetReferrer(&referrer) 
+registrationId := "myExternalRegistrationId"
+externalRegistrationInformation.SetRegistrationId(&registrationId) 
+requestBody.SetExternalRegistrationInformation(externalRegistrationInformation)
 preferredTimezone := "Pacific Standard Time"
 requestBody.SetPreferredTimezone(&preferredTimezone) 
 preferredLanguage := "en-us"
@@ -69,15 +75,6 @@ registrationQuestionAnswers := []graphmodels.VirtualEventRegistrationQuestionAns
 	virtualEventRegistrationQuestionAnswer2,
 }
 requestBody.SetRegistrationQuestionAnswers(registrationQuestionAnswers)
-additionalData := map[string]interface{}{
-externalRegistrationInformation := graph.New()
-referrer := "Facebook"
-externalRegistrationInformation.SetReferrer(&referrer) 
-registrationId := "myExternalRegistrationId"
-externalRegistrationInformation.SetRegistrationId(&registrationId) 
-	requestBody.SetExternalRegistrationInformation(externalRegistrationInformation)
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 registrations, err := graphClient.Solutions().VirtualEvents().Webinars().ByVirtualEventWebinarId("virtualEventWebinar-id").Registrations().Post(context.Background(), requestBody, nil)

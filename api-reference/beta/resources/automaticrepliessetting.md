@@ -29,6 +29,9 @@ respond to emails.
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time that automatic replies are set to begin, if **Status** is set to `Scheduled`.|
 |status|automaticRepliesStatus|Configurations status for automatic replies. Possible values are: `disabled`, `alwaysEnabled`, `scheduled`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

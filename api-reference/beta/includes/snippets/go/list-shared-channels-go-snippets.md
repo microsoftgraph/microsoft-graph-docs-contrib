@@ -18,10 +18,10 @@ import (
 
 requestFilter := "membershipType eq 'shared'"
 
-requestParameters := &graphteams.TeamItemChannelsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.ItemChannelsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphteams.TeamItemChannelsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.ItemChannelsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

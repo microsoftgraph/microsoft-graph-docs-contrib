@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: calendar
 author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # customTimeZone resource type
@@ -24,6 +25,9 @@ Represents a time zone where the transition from standard to daylight saving tim
 | name | string | The name of the custom time zone. |
 | standardOffset | [standardTimeZoneOffset](standardtimezoneoffset.md) | Specifies when the time zone switches from daylight saving time to standard time. |
 
+
+## Relationships
+None.
 
 ## JSON representation
 

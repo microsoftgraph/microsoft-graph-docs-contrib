@@ -18,6 +18,9 @@ The conditions stated by a client for the location of a meeting.
 
 Derived from [location](location.md).
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

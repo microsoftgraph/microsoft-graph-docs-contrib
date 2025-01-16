@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.UserItemTeamworkInstalledAppsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemTeamworkInstalledAppsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsAppDefinition"},
 }
-configuration := &graphusers.UserItemTeamworkInstalledAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemTeamworkInstalledAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

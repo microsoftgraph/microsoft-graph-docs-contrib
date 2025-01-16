@@ -18,11 +18,11 @@ import (
 
 requestFilter := "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
 
-requestParameters := &graphchats.ChatItemInstalledAppsRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ItemInstalledAppsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsApp","teamsAppDefinition"},
 	Filter: &requestFilter,
 }
-configuration := &graphchats.ChatItemInstalledAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ItemInstalledAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

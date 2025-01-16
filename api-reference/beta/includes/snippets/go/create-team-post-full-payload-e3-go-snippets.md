@@ -22,6 +22,8 @@ displayName := "Sample Engineering Team"
 requestBody.SetDisplayName(&displayName) 
 description := "This is a sample engineering team, used to showcase the range of properties supported by this API"
 requestBody.SetDescription(&description) 
+firstChannelName := "My First Channel of the team"
+requestBody.SetFirstChannelName(&firstChannelName) 
 
 
 channel := graphmodels.NewChannel()

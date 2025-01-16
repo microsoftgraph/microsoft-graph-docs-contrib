@@ -17,6 +17,8 @@ You can configure Apple as a social identity provider for an external or Azure A
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
+For more information, see [Add Apple as an identity provider (preview)](/entra/external-id/customers/how-to-apple-federation-customers).
+
 ## Methods
 
 None.
@@ -35,6 +37,9 @@ For the list of API operations for managing Apple-managed identity providers, se
 |displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
 
 Retrieve the **developerId**, **serviceId**, **keyId**, and the **certificateData** from the Apple developer portal. For more information, follow the guide to [create an Apple ID application](/azure/active-directory-b2c/identity-provider-apple-id?pivots=b2c-user-flow#create-an-apple-id-application).
+
+## Relationships
+None.
 
 ## JSON representation
 

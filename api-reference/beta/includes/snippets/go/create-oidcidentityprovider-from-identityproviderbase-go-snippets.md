@@ -24,7 +24,7 @@ additionalData := map[string]interface{}{
 	"wellKnownEndpoint" : "https://contoso.b2clogin.com/contoso.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1A_SIGNINEMAIL", 
 	"responseType" : "code", 
 	"scope" : "openid profile email offline_access", 
-clientAuthentication := graph.New()
+clientAuthentication := graphmodels.NewOidcClientSecretAuthentication()
 clientSecret := "4294967296"
 clientAuthentication.SetClientSecret(&clientSecret) 
 	requestBody.SetClientAuthentication(clientAuthentication)

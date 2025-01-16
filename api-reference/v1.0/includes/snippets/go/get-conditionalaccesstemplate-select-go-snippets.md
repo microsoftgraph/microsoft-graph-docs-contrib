@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentity.IdentityConditionalAccessTemplateItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.ConditionalAccessTemplatesItemRequestBuilderGetQueryParameters{
 	Select: [] string {"details"},
 }
-configuration := &graphidentity.IdentityConditionalAccessTemplateItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.ConditionalAccessTemplatesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

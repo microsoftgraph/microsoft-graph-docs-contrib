@@ -45,6 +45,9 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | userId               | String                      | ID of the user assigned to the **timeOff**. Required. |
 | userInfo             | [shiftsUserInfo](shiftsuserinfo.md)                  | Information of the user assigned to the **timeOff**. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -28,6 +28,9 @@ An entity of type `chatMessageReaction` is returned as part of the [Get channel 
 |reactionType|String|The reaction type. Supported values include Unicode characters, `custom`, and some backward-compatible reaction types, such as `like`, `angry`, `sad`, `laugh`, `heart`, and `surprised`. |
 |user|[chatMessageReactionIdentitySet](chatmessagereactionidentityset.md)|The user who reacted to the message.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

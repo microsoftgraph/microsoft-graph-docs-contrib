@@ -5,6 +5,7 @@ title: listItem resource type
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 10/10/2024
 ---
 
 # listItem resource type

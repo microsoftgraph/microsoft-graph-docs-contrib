@@ -18,6 +18,11 @@ Represents a row of the [results](../resources/security-huntingqueryresults.md) 
 
 The content of the results is depended on the submitted KQL query, see [KQL quick reference](/azure/data-explorer/kql-quick-reference).
 
+## Properties
+None.
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

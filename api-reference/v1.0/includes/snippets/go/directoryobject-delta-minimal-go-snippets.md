@@ -22,11 +22,11 @@ headers.Add("Prefer", "return=minimal")
 
 requestFilter := "isof('microsoft.graph.user') or isof('microsoft.graph.group')"
 
-requestParameters := &graphdirectoryobjects.DirectoryObjectsDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphdirectoryobjects.DirectoryObjectsDeltaRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"microsoft.graph.user/surname","microsoft.graph.group/displayName"},
 }
-configuration := &graphdirectoryobjects.DirectoryObjectsDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphdirectoryobjects.DirectoryObjectsDeltaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

@@ -24,6 +24,9 @@ The callRoute type.
 | original            | [identitySet](identityset.md) | The identity that was originally used in the call.           |
 | routingType         | String                        | Possible values are: `forwarded`, `lookup`, `selfFork`.  |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

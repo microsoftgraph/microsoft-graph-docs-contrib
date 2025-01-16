@@ -36,6 +36,9 @@ Represents details about a coachmark location.
 |messageBody| Coachmark from email body. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

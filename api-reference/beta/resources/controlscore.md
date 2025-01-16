@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: security
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 #  controlScore resource type
@@ -20,6 +21,9 @@ This resource contains a tenant score and description for an individual control.
 |	score	|	Double	|  Tenant achieved score for the control (it varies day by day depending on tenant operations on the control). |
 |	controlCategory	|	String	|  Control action category (Identity, Data, Device, Apps, Infrastructure). |
 |	description	|	String	|  Description of the control. |
+
+## Relationships
+None.
 
 ## JSON representation
 

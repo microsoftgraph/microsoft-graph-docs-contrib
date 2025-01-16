@@ -5,7 +5,10 @@ ms.subservice: sharepoint
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
-<!-- this file is auto-generated don't edit it manually! -->
+
+For service limits for OneDrive and SharePoint, see [Avoid getting throttled or blocked in SharePoint](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online).
+
+The preceding information applies to the following resources:
 
 | <!-- fake header--> | <!-- fake header--> |
 |---|---|
