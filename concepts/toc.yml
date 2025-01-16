@@ -1106,7 +1106,7 @@ items:
         href: change-notifications-delivery-webhooks.md
       - name: Notifications through Azure Event Hubs
         href: change-notifications-delivery-event-hubs.md
-      - name: Notifications through Azure Event Grid (preview)
+      - name: Notifications through Azure Event Grid
         href: /azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext
     - name: Lifecycle notifications for subscriptions
       href: change-notifications-lifecycle-events.md
