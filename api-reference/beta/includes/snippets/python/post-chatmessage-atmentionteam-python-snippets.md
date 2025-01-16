@@ -19,7 +19,7 @@ from msgraph_beta.generated.models.chat_message_history_item import ChatMessageH
 request_body = ChatMessage(
 	body = ItemBody(
 		content_type = BodyType.Html,
-		content = "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>",
+		content = "<at id=\"0\">GraphTesting</at>&nbsp;Hello team",
 	),
 	mentions = [
 		ChatMessageMention(
