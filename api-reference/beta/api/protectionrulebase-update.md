@@ -51,7 +51,7 @@ PATCH /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPol
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-In the request body, provide a JSON representation of the following properties to update the **protectionRuleBase** object.
+In the request body, provide a JSON representation of either of the following properties to update the **protectionRuleBase** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -72,6 +72,8 @@ The following example shows how to update a **driveInclusionRule** associated wi
 ### Request
 
 The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_driveInclusionRule"
@@ -79,7 +81,6 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/driveInclusionRules/c31adc5c-b65d-4a85-8eda-976947a24124
-Content-Type: application/json
 
 {
     "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))"
@@ -93,7 +94,8 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.driveProtectionRule"
 }
 -->
 ``` http
@@ -155,7 +157,8 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailboxProtectionRule"
 }
 -->
 ``` http
