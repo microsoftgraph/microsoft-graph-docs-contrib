@@ -51,6 +51,13 @@ PATCH /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPol
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+In the request body, provide a JSON representation of the following properties to update the **protectionRuleBase** object.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|driveExpression|String|Contains a drive expression. For examples, see [driveExpression examples](../resources/driveprotectionrule.md#driveexpression-examples).|
+|mailboxExpression|String|Contains a mailbox expression. For examples, see [mailboxExpression examples](../resources/mailboxprotectionrule.md#mailboxexpression-examples).|
+
 
 ## Response
 

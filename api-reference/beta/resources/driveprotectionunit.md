@@ -37,7 +37,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |lastModifiedDateTime|DateTimeOffset|The time of last modification of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. Protection unit protected by multiple sources is indicated by comma seperated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`.|
+|protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. Protection unit protected by multiple sources is indicated by comma separated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`.|
 |status|[protectionUnitStatus](../resources/driveprotectionunit.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values
