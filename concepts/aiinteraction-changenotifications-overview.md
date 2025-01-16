@@ -107,7 +107,7 @@ You can use the `$filter` OData query parameter to filter out Copilot AI interac
 
 ### Examples
 
-#### Example: Subscribe to Copilot AI interactions for Microsoft Teams only
+#### Example 1: Subscribe to Copilot AI interactions for Microsoft Teams only
 
 The following example shows how to to subscribe to Copilot AI interactions for only a particular Microsoft 365 application, such as Microsoft Teams.
 
@@ -127,7 +127,7 @@ Content-Type: application/json
 }
 ```
 
-#### Example: Subscribe to all AI interactions where the conversationType isn't Microsoft BizChat
+#### Example 2: Subscribe to all AI interactions where the conversationType isn't Microsoft BizChat
 
 The following example shows how to subscribe to all AI interactions where the **conversationType** isn't `bizchat`.
 
