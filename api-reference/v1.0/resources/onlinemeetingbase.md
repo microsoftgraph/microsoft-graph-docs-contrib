@@ -114,6 +114,8 @@ The following JSON representation shows the resource type.
   "allowPowerPointSharing": "Boolean",
   "allowWhiteboard": "Boolean",
   "allowedPresenters": "String",
+  "allowRecording": "Boolean",
+  "allowTranscription": "Boolean",
   "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
