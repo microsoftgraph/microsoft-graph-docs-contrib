@@ -27,10 +27,9 @@ The [chatMessageAttachment](/graph/api/resources/chatmessageattachment) resource
 
 Cards represent visual elements backed by a predefined schema. Teams supports the cards defined by the [Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true#attachment-object) in addition to the following card types:
 
-- Code snippet - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
+- Code snippet or Place holder - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
 - Announcement card - Set **contentType** set to `application/vnd.microsoft.card.announcement`
 - Loop component card - Set **contentType** set to `application/vnd.microsoft.card.fluidEmbedCard`
-- Place holder card - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
 
 For cards, the **contentType** property is set to the type of card, and the **content** property contains the serialized json for the card.
 
