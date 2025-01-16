@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: retrieveCloudPcTroubleshootReports"
-description: "Get troubleshoot related reports for CloudPCs. This report is used to get the details for Cloud PCs which includessageInsight, currentSize, currentCPU, currentRamInGB, CurrentDiskInGB, RecommendedSize, RecommendedCPU, RecommendedRamInGB, RecommendedDiskInGB, ProvisionPolicyId, ProvisionPolicyName, RoundTripTimeInMsAvg, AvailableBandwidthInMbpsAvg. It can also be the daily overview issue insight of Cloud PCs including usageInsight, issueType, issueCount, issueTrend. It can also get daily  regional details report for Cloud PCs including hostRegion, gatewayRegion, avgRoundTripTimeInMs, avgBandwidthInMbps, connectionErrorCount, RTTIssueCount, connectionQualityIssueCount, stabilityIssueCount."
+description: "Get troubleshooting-related reports for CloudPCs."
 author: "abbyzhccc"
 ms.date: 12/10/2024
 ms.localizationpriority: medium

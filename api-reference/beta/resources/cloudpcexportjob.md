@@ -18,10 +18,10 @@ Represents the export job for downloading a specified Cloud PC report.
 
 ## Methods
 
-| Method                                                              | Return type                                          | Description                                                                                             |
-| :------------------------------------------------------------------ | :--------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
-| [Create export job](../api/cloudpcreports-post-exportjobs.md) | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) object to initiate downloading the entire or a specified portion of a report. |
-| [Get export job](../api/cloudpcexportjob-get.md)              | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Read the properties and relationships of a [cloudPcExportJob](../resources/cloudpcexportjob.md) object. |
+|Method|Return type|Description|
+|:------------------------------------------------------------------|:---------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+|[Create export job](../api/cloudpcreports-post-exportjobs.md)|[cloudPcExportJob](../resources/cloudpcexportjob.md)|Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) object to initiate downloading the entire or a specified portion of a report.|
+|[Get export job](../api/cloudpcexportjob-get.md)|[cloudPcExportJob](../resources/cloudpcexportjob.md)|Read the properties and relationships of a [cloudPcExportJob](../resources/cloudpcexportjob.md) object.|
 
 ## Properties
 
