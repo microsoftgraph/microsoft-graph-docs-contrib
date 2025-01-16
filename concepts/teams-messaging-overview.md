@@ -778,3 +778,4 @@ The following APIs fall into this category:
 ### Real-time APIs
 
 Real-time APIs allow a caller to get notified as soon as a change is made (message sent, edited, deleted, and so on). These APIs are suitable for real-time applications like rendering messages outside of the Teams UI. In addition, these APIs allow for the creation of subscriptions and therefore the reception of large amount of data without hitting throttling. For more information, see [Change notifications for channles and chats](/graph/teams-changenotifications-chatmessage).
+
