@@ -785,10 +785,9 @@ The following example shows a request that gets a chat message with a loop compo
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessage_6",
+  "name": "get_chatmessage_7",
   "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1732043970539"]
 }-->
 ```msgraph-interactive
@@ -801,7 +800,7 @@ GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@t
 
 The following example shows the response. The message body contains 2 attachments. The **contentType** for the loop component is `application/vnd.microsoft.card.fluidEmbedCard` and the **contentType** of placeholder card is `application/vnd.microsoft.card.codesnippet`. 
 
-**Note**  - `contentUrl` or `content` for placeholderCard will not have any values.
+**Note**  - The **contentUrl** and **content** properties for a placeholder card will not have values.
 
 <!-- {
   "blockType": "response",
