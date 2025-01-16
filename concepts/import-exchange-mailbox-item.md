@@ -1,5 +1,5 @@
 ---
-title: "Import an Exchange Item using the Exchange Import-Export API"
+title: "Import an Exchange item using the Exchange import and export APIs in Microsoft Graph"
 description: "Learn how to import an Exchange mailbox item using its FastTransfer stream format."
 author: "cparker-msft"
 ms.localizationpriority: medium
@@ -7,17 +7,17 @@ ms.subservice: "outlook"
 ms.date: 12/06/2024
 ---
 
-# Import an Exchange Item using the Exchange Import-Export API
+# Import an Exchange item using the Exchange import and export APIs in Microsoft Graph
 
-The Exchange Import-Export API allows you to import an Exchange mailbox [item](/graph/resources/mailboxitem.md?view=graph-rest-beta) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
+The Exchange import and export APIs allow you to import an Exchange [mailbox item](/graph/resources/mailboxitem?view=graph-rest-beta&preserve-view=true) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
 
 This article describes the two steps required to perform the import process. Each step also provides an example for this process. After successfully uploading the item, you get a response that contains the **itemId** and **changeKey**, which can be saved for later use.
 
 ## Step 1: Create an import session
 
-[Create an import session](/graph/api/mailbox-createimportsession.md?view=graph-rest-beta) to import an item in a folder in the mailbox.
+[Create an import session](/graph/api/mailbox-createimportsession?view=graph-rest-beta&preserve-view=true) to import an item in a folder in the mailbox.
 
-A successful operation returns a `HTTP 201 Created` response code and a new [mailboxItemImportSession](/graph/resources/mailboxitemimportsession.md?view=graph-rest-beta&preserve-view=true) object in the response body, which contains an opaque **importUrl** that you can use in subsequent POST operations to upload items into a folder.
+A successful operation returns a `HTTP 201 Created` response code and a new [mailboxItemImportSession](/graph/resources/mailboxitemimportsession?view=graph-rest-beta&preserve-view=true) object in the response body, which contains an opaque **importUrl** that you can use in subsequent POST operations to upload items into a folder.
 
 The **mailboxItemImportSession** object in the response also includes the **expirationDateTime** property that indicates the expiration date and time for the auth token embedded in the **importUrl** property value. After this time, the **importUrl** expires and is deleted.
 
@@ -69,7 +69,7 @@ Content-length: 232
 
 ## Step 2: Use the import URL to upload an item
 
-To import the item into the mailbox, make a POST request to the URL returned in the previous step in the **importUrl** property of the [mailboxItemImportSession](/graph/resources/mailboxitemimportsession.md?view=graph-rest-beta&preserve-view=true) object.
+To import the item into the mailbox, make a POST request to the URL returned in the previous step in the **importUrl** property of the [mailboxItemImportSession](/graph/resources/mailboxitemimportsession?view=graph-rest-beta&preserve-view=true) object.
 
 Specify the request body as described in the following section.
 
@@ -89,7 +89,7 @@ Because the initial opaque URL is preauthenticated and contains the appropriate 
 
 ### Response
 
-If successful, this action returns a `200 OK` response code and an [importMailboxItemResponse](/graph/resources/importmailboxitemresponse.md?view=graph-rest-beta&preserve-view=true) object in the response body.
+If successful, this action returns a `200 OK` response code and an [importMailboxItemResponse](/graph/resources/importmailboxitemresponse?view=graph-rest-beta&preserve-view=true) object in the response body.
 
 ### Examples
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a session for [importing an Exchange mailbox item](/graph/concepts/import-exchange-mailbox-item.md) using its [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format.
+Create a session for [importing an Exchange mailbox item](/graph/import-exchange-mailbox-item) using its [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format.
 
 ## Permissions
 
