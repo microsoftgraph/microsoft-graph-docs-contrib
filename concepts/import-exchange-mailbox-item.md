@@ -1,5 +1,5 @@
 ---
-title: "Import an Exchange item using the Exchange import and export APIs in Microsoft Graph"
+title: "Import an Exchange item using the Exchange import and export APIs"
 description: "Learn how to import an Exchange mailbox item using its FastTransfer stream format."
 author: "cparker-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "outlook"
 ms.date: 12/06/2024
 ---
 
-# Import an Exchange item using the Exchange import and export APIs in Microsoft Graph
+# Import an Exchange item using the Exchange import and export APIs
 
 The Exchange import and export APIs allow you to import an Exchange [mailbox item](/graph/resources/mailboxitem?view=graph-rest-beta&preserve-view=true) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
 
