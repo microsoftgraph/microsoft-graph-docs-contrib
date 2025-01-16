@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a status, startD
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|status|string|The status of the applied operation. Possible values are, `succeeded`, `pending`, and `failed`.|
+|status|string|The status of the applied operation. Possible values are, `succeeded`, `pending`, `failed` and `unknownFutureValue`.|
 |startDateTime|DateTime|The date and time when the operation was applied.|
 |finishDateTime|DateTime|The date and time when the operation finished.|
 
