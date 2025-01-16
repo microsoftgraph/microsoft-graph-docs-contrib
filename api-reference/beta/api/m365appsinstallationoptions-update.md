@@ -5,6 +5,7 @@ author: "yan-git"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 09/19/2024
 ---
 
 # Update m365AppsInstallationOptions

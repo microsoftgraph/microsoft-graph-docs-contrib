@@ -3,6 +3,7 @@ title: "device resource type"
 description: "Represents a device registered in the directory."
 ms.localizationpriority: medium
 author: "sandeo-MSFT"
+ms.date: 12/31/2024
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
@@ -45,6 +46,12 @@ This resource supports:
 | [Get member groups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the device is a member of. The check is transitive. |
 |[Check member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of groups, directory role, or administrative unit objects. |
 |[Get member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Return all groups, administrative units, and directory roles that the device is a member of. The check is transitive. |
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
+
+>**Note:** For schema extensions, you can create a definition and use it to add custom typed data to a resource. For more information, see [Add schema extension values](/graph/extensibility-schema-groups).
+
 ## Properties
 
 > [!IMPORTANT]
@@ -53,18 +60,19 @@ This resource supports:
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Default is `true`. <br/><br/> Supports `$filter` (`eq`, `ne`, `not`, `in`). Only callers with at least the Cloud Device Administrator role can set this property.|
+|alternativeNames|String collection|List of alternative names for the device.|
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`). |
 |approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, and `eq` on `null` values) and `$orderby`. |
 |complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 |deviceCategory|String|User-defined property set by Intune to automatically add devices to groups and simplify managing devices.|
-|deviceId|String| Unique Identifier set by Azure Device Registration Service at the time of registration. This is an alternate key that can be used to reference the device object. Also Supports `$filter` (`eq`, `ne`, `not`, `startsWith`). |
+|deviceId|String| Unique identifier set by Azure Device Registration Service at the time of registration. This ID is an alternate key that can be used to reference the device object. Also supports `$filter` (`eq`, `ne`, `not`, `startsWith`). |
 |deviceMetadata|String| For internal use only. Set to `null`. |
-|deviceOwnership|String|Ownership of the device. This property is set by Intune. Possible values are: `unknown`, `company`, `personal`.|
+|deviceOwnership|String|Ownership of the device. Intune sets this property. Possible values are: `unknown`, `company`, `personal`.|
 |deviceVersion|Int32| For internal use only. |
-|displayName|String| The display name for the device. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`.  |
-|domainName|String|The on-premises domain name of Microsoft Entra hybrid joined devices. This property is set by Intune.|
-|enrollmentProfileName|String|Enrollment profile applied to the device. For example, `Apple Device Enrollment Profile`, `Device enrollment - Corporate device identifiers`, or `Windows Autopilot profile name`. This property is set by Intune.|
-|enrollmentType|String|Enrollment type of the device. This property is set by Intune. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`,`appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`. <br/><br/>**NOTE:** This property might return other values apart from those listed.|
+|displayName|String| The display name for the device. Maximum length is 256 characters. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`.  |
+|domainName|String|The on-premises domain name of Microsoft Entra hybrid joined devices. Intune sets this property.|
+|enrollmentProfileName|String|Enrollment profile applied to the device. For example, `Apple Device Enrollment Profile`, `Device enrollment - Corporate device identifiers`, or `Windows Autopilot profile name`. Intune sets this property.|
+|enrollmentType|String|Enrollment type of the device. Intune sets this property. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`,`appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`. <br/><br/>**NOTE:** This property might return other values apart from those listed.|
 | extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contains extension attributes 1-15 for the device. The individual extension attributes aren't selectable. These properties are mastered in cloud and can be set during creation or update of a device object in Microsoft Entra ID. <br><br>Supports `$filter` (`eq`, `not`, `startsWith`, and `eq` on `null` values).|
 |hostnames|String collection| List of host names for the device.|
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
@@ -73,7 +81,7 @@ This resource supports:
 |isManagementRestricted|Boolean|Indicates whether the device is a member of a restricted management administrative unit. The default value is `false`. Read-only. <br/><br/> To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
 |isRooted|Boolean|`true` if the device is rooted or jail-broken. This property can only be updated by Intune.|
 |kind| String| Form factor of the device. Only returned if the user signs in with a Microsoft account as part of Project Rome. |
-|managementType|String|Management channel of the device.  This property is set by Intune. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
+|managementType|String|Management channel of the device. Intune sets this property. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |manufacturer| String| Manufacturer of the device. Read-only. |
 |mdmAppId|String|Application identifier used to register device into MDM. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 |model| String| Model of the device. Read-only. |
@@ -95,6 +103,7 @@ This resource supports:
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |commands | [command](command.md) collection | Set of commands sent to this device.|
+|deviceTemplate|[deviceTemplate](devicetemplate.md) collection|Device template used to instantiate this device. Nullable. Read-only. |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable. |
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this device is a member of. Read-only. Nullable. Supports `$expand`. |
 |registeredOwners|[directoryObject](directoryobject.md) collection| The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports `$expand`. |
@@ -120,6 +129,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "accountEnabled": "Boolean",
+  "alternativeNames": ["String"],
   "approximateLastSignInDateTime": "String (timestamp)",
   "complianceExpirationDateTime": "String (timestamp)",
   "deviceCategory": "String",

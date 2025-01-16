@@ -5,6 +5,7 @@ author: "dianambb"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 06/27/2024
 ---
 
 # plannerArchivalInfo resource type

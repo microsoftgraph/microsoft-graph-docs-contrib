@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/06/2024
 ---
 
 # Get certificateBasedAuthConfiguration

@@ -28,15 +28,25 @@ Represents details about the review status of a Cloud PC.
 |subscriptionId|String|The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.|
 |subscriptionName|String|The name of the Azure subscription in which the Cloud PC snapshot is being saved.|
 |userAccessLevel|[cloudPcUserAccessLevel](#cloudpcuseraccesslevel-values)|The access level of the end user on the Cloud PC. Possible values are: `unrestricted`, `restricted`.|
+|accessTier|[cloudPcBlobAccessTier](#cloudpcblobaccesstier-values)| The blob access tier of the Azure Storage account in which the Cloud PC snapshot is saved with. Possible values are `hot`, `cool`, `cold`, and `archive`, default value is `hot`.|
 
 ### cloudPcUserAccessLevel values
 
 |Member|Value|Description|
 |:---|:---|:---|
 |unrestricted|0|No restriction. Users can access the Cloud PC.|
-|restricted|1|Users are not allowed to access the Cloud PC.|
-|unknownFutureValue|999|Evolvable enumeration sentinel value. Do not use.|
+|restricted|1|Users aren't allowed to access the Cloud PC.|
+|unknownFutureValue|999|Evolvable enumeration sentinel value. Don't use.|
 
+### cloudPcBlobAccessTier values
+
+|Member|Description|
+|:---|:---|
+|hot|Indicates an online tier optimized for storing data that is accessed or modified frequently.|
+|cool|Indicates an online tier optimized for storing data that is infrequently accessed or modified.|
+|cold|Indicates an online tier optimized for storing data that is rarely accessed or modified, but still requires fast retrieval.|
+|archive|Indicates an offline access tier optimized for storing data that is rarely accessed, and that has flexible latency requirements that can be up to a few hours.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
@@ -59,7 +69,8 @@ The following JSON representation shows the resource type.
   "reviewStartDateTime": "String (timestamp)",
   "subscriptionId": "String",
   "subscriptionName": "String",
-  "userAccessLevel": "String"
+  "userAccessLevel": "String",
+  "accessTier": "String"
 }
 ```
 

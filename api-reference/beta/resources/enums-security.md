@@ -5,6 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "security"
 author: "BenAlfasi"
+ms.date: 11/11/2024
 ---
 
 # Security enum values

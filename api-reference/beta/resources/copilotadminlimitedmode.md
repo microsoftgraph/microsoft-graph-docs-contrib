@@ -1,10 +1,11 @@
 ---
 title: "copilotAdminLimitedMode resource type"
-description: "Represents a setting that controls whether Microsoft 365 Copilot users can receive responses to sentiment-related prompts."
+description: "Represents a setting that controls whether Microsoft 365 Copilot in Teams meetings users can receive responses to sentiment-related prompts."
 author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
 doc_type: resourcePageType
+ms.date: 11/15/2024
 ---
 
 # copilotAdminLimitedMode resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a setting that controls whether Microsoft 365 Copilot in Teams Meetings users can receive responses to sentiment-related prompts. If this setting is enabled, Copilot in Teams Meetings doesn't respond to sentiment-related prompts and questions asked by the user. If the setting is disabled, Copilot in Teams Meetings responds to sentiment-related prompts and questions asked by the user. Copilot in Teams Meetings currently honors this setting. By default, the setting is disabled.
+Represents a setting that controls whether Microsoft 365 Copilot in Teams meetings users can receive responses to sentiment-related prompts. If this setting is enabled, Copilot in Teams meetings doesn't respond to sentiment-related prompts and questions asked by the user. If the setting is disabled, Copilot in Teams meetings responds to sentiment-related prompts and questions asked by the user. Copilot in Teams meetings currently honors this setting. By default, the setting is disabled.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -27,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |isEnabledForGroup|Boolean|Enables the user to be in limited mode for Copilot in Teams meetings. When `copilotAdminLimitedMode=true`, users in this mode can ask any questions, but Copilot doesn't respond to certain questions related to inferring emotions, behavior, or judgments. When `copilotAdminLimitedMode=false`, it responds to any types of questions grounded to the meeting conversation. The default value is false.|
-|groupId|String|The ID of a Microsoft Entra group to which the value of the **isEnabledForGroup** property is applied value. The default value is `null`. This parameter is optional. If **isEnabledForGroup** is set to `true`, the **groupId** value must be provided in order for Copilot limited mode in Teams Meetings to be enabled for the members of the group. |
+|groupId|String|The ID of a Microsoft Entra group to which the value of the **isEnabledForGroup** property is applied value. The default value is `null`. This parameter is optional. If **isEnabledForGroup** is set to `true`, the **groupId** value must be provided in order for Copilot limited mode in Teams meetings to be enabled for the members of the group. |
 
 ## Relationships
 None.

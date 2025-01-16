@@ -18,6 +18,8 @@ Represents social identity providers for both Microsoft Entra ID and Azure AD B2
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
+For more information about adding Google and Facebook as identity providers in external tenants, see [Add Google as an identity provider (preview)](/entra/external-id/customers/how-to-google-federation-customers) and [Add Facebook as an identity provider (preview)](/entra/external-id/customers/how-to-facebook-federation-customers).
+
 
 | Tenant configuration | Supported IdPs |
 |--|--|
@@ -27,7 +29,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 ## Methods
 
-None. 
+None.
 
 For the list of API operations for managing social identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 
@@ -44,6 +46,9 @@ For the list of API operations for managing social identity providers, see the [
 ### Where to get the client identifier and secret
 
 Each identity provider has a process for creating an app registration. For example, users create an app registration with Facebook at [developers.facebook.com](https://developers.facebook.com/). The resulting client identifier and client secret can be passed to [create identityProvider](../api/identitycontainer-post-identityproviders.md). Then, each user object in the directory can be federated to any of the tenant's identity providers for authentication. This enables the user to sign in by entering credentials on the identity provider's sign-in page. The token from the identity provider is validated by Microsoft Entra ID before the tenant issues a token to the application.
+
+## Relationships
+None.
 
 ## JSON representation
 

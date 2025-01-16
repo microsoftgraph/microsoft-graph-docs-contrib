@@ -44,7 +44,14 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/createSnapshot
 
 ## Request body
 
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of the parameters.
+
+The following table shows the parameter that you can use with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|storageAccountId|String| The storage account which receives the restore point (snapshot).|
+|accessTier|String|The access tier of the blob file that the snapshot is copied to. Possible values are `hot`, `cool`, `cold`, `archive`, and `unknownFutureValue`. The default value is `hot`.|
 
 ## Response
 

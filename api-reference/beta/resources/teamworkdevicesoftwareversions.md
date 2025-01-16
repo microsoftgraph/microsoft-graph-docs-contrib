@@ -26,6 +26,9 @@ Represents the details about software versions for a Microsoft Teams-enabled [de
 |teamsClientSoftwareVersion|String|The software version for the Teams client running on the device.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

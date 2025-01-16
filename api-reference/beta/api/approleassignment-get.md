@@ -5,6 +5,7 @@ author: "psignoret"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 10/16/2024
 ---
 
 # Get appRoleAssignment

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-groups"
 author: "psignoret"
+ms.date: 11/30/2024
 ---
 
 # Delete appRoleAssignment
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.
+Delete an [appRoleAssignment](../resources/approleassignment.md) that a [group](../resources/group.md) has been granted.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -12,7 +12,7 @@ ms.date: 10/15/2024
 
 Namespace: microsoft.graph
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.
+Deletes an [appRoleAssignment](../resources/approleassignment.md) that a [group](../resources/group.md) has been granted.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

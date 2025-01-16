@@ -5,6 +5,7 @@ author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # authenticationMethodsRoot: usersRegisteredByMethod

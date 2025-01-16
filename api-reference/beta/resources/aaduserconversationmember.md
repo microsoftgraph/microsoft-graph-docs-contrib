@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "akjo"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 
 # aadUserConversationMember resource type
@@ -49,6 +50,9 @@ Inherits from [conversationMember](conversationmember.md).
 |tenantId| string  | TenantId which the Microsoft Entra user belongs to. |
 |userId| String | The GUID of the user. |
 |visibleHistoryStartDateTime| DateTimeOffset  | The timestamp that denotes how far back the history of a conversation is shared with the conversation member. This property is settable only for members of a chat.|
+
+## Relationships
+None.
 
 ## JSON representation
 

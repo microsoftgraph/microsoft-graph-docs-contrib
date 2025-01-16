@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 12/03/2024
 ---
 
 # Delete onlineMeeting
@@ -18,7 +19,7 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 Permissions for the following HTTP request:
 
@@ -33,12 +34,7 @@ DELETE /me/onlineMeetings/{meetingId}
   "name": "onlinemeeting_delete", 
   "requestUrls": ["DELETE /me/onlineMeetings/{meetingId}"]
  } -->
-
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-delete-permissions.md)]
 
 Permissions for the following HTTP request:
 
@@ -53,12 +49,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
   "name": "onlinemeeting_delete_2", 
   "requestUrls": ["DELETE /users/{userId}/onlineMeetings/{meetingId}"]
  } -->
-
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|OnlineMeetings.ReadWrite.All|Not available.|
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-delete-2-permissions.md)]
 
 > [!IMPORTANT]
 > To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to delete online meetings on behalf of that user (with user ID specified in the request path).

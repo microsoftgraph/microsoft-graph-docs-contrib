@@ -5,6 +5,7 @@ author: "madansr7"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/11/2024
 ---
 
 # appManagementConfiguration resource type

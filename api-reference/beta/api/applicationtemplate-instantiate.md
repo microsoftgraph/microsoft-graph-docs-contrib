@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "luleonpla"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 10/25/2024
 ---
 
 # applicationTemplate: instantiate
@@ -182,6 +183,10 @@ Content-type: application/json
     }
 }
 ```
+
+## Related content
+
+[Quickstart: Add an enterprise application from the Microsoft Entra gallery](/entra/identity/enterprise-apps/add-application-portal)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

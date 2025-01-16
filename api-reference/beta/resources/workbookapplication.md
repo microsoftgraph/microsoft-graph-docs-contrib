@@ -6,6 +6,7 @@ author: "lumine2008"
 ms.subservice: "excel"
 doc_type: resourcePageType
 toc.title: Application
+ms.date: 06/12/2024
 ---
 
 # workbookApplication resource type

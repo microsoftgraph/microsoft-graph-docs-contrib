@@ -56,6 +56,10 @@
     {
       "hash": "ncUPsLmVZWNkFs8Upvo2loZCG/3RAMIinoJ0OennEZ0=",
       "_justification": "tutorial-accessreviews-roleassignments.md line 773 Sample Azure Storage Account Shared Access Signature"
+    },
+    {
+      "hash": "LIUwvKZoGemir5C2hxlAlMXrAJIYqol3WOojWbNRRWY=",
+      "_justification": "update-socialidentityprovider-python-snippets.md line 13 Sample general password in snippet example"
     }
   ]
 }

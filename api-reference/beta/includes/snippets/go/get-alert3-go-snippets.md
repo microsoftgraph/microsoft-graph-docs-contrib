@@ -15,11 +15,11 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphreports.ReportsHealthMonitoringAlertItemRequestBuilderGetQueryParameters{
+requestParameters := &graphreports.HealthMonitoringAlertsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling"},
 	Select: [] string {"alertType"," createdDateTime"," enrichment'"},
 }
-configuration := &graphreports.ReportsHealthMonitoringAlertItemRequestBuilderGetRequestConfiguration{
+configuration := &graphreports.HealthMonitoringAlertsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -1,6 +1,6 @@
 ---
 title: printerBase resource type
-description: Represents base type for printer and printer share
+description: Represents the base type for printer and printer share.
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
@@ -11,7 +11,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-Represents a base type for [printer](printer.md) and [printerShare](printerShare.md) entity types.
+Represents the base type for the [printer](printer.md) and [printerShare](printerShare.md) entity types. Inherits from [printerBase](./printerbase.md).
 
 ## Properties
 |Property|Type|Description|

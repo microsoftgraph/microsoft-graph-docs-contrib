@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/12/2024
 ---
 
 # Get fileStorageContainer
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a [fileStorageContainer](../resources/filestoragecontainer.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

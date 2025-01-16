@@ -7,6 +7,7 @@ ms.service: "microsoft-graph"
 ms.subservice: "non-product-specific"
 doc_type: conceptualPageType
 ms.topic: overview
+ms.date: 07/16/2024
 ---
 
 # Microsoft Graph REST API v1.0 endpoint reference

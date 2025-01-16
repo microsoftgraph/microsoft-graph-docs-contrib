@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
+ms.date: 03/21/2024
 ---
 
 # internetMessageHeader resource type
@@ -25,6 +26,9 @@ For examples of an Internet message header, see
 |:---------------|:--------|:----------|
 |name|string|Represents the key in a key-value pair.|
 |value|string|The value in a key-value pair.|
+
+## Relationships
+None.
 
 ## JSON representation
 

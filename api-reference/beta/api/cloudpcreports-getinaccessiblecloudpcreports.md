@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status. An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (at least one of the health checks failed) or has consecutive user connections failure.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -46,17 +46,26 @@ POST /deviceManagement/virtualEndpoint/reports/getInaccessibleCloudPcReports
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this method.
+The following table shows the parameters that you can use with this method.
 
 | Parameter | Type              | Description                                                                                |
 |:----------|:------------------|:-------------------------------------------------------------------------------------------|
 | filter    | String            | OData `$filter` syntax. Only `and`, `or`, `gt` ,`ge` and `eq` are currently supported.     |
-| select    | String collection | OData `$select` syntax. Represents the selected columns of the reports.                    |
-| search    | String            | Specifies a String to search for.                                                          |
 | groupBy   | String collection | Specifies how to group the reports. If used, must have the same content as the select parameter.|
 | orderBy   | String collection | Specifies how to sort the reports.                                                           |
+| reportName | cloudPCInaccessibleReportName | The report name. The possible values are: `inaccessibleCloudPcReports`, `inaccessibleCloudPcTrendReport`, `unknownFutureValue`. The default value is `inaccessibleCloudPcReports` if the **reportName** is empty. |
+| search    | String            | Specifies a String to search for.                                                          |
+| select    | String collection | OData `$select` syntax. Represents the selected columns of the reports.                    |
 | skip      | Int32             | Number of records to skip.                                                                 |
 | top       | Int32             | The number of top records to return.                                                       |
+
+### cloudPCInaccessibleReportName values
+
+| Member                          | Description               |
+| :------------------------------ | :------------------------ |
+| inaccessibleCloudPcReports    | Indicates a report that contains details of Cloud PCs that are inaccessible, including those with consecutive connection failures or in an unavailable state.    |
+| inaccessibleCloudPcTrendReport| Indicates a daily aggregated report for a specified period that contains details of Cloud PCs that are inaccessible, including those with consecutive connection failures or in an unavailable state.                                          |
+| unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.         |
 
 ## Response
 

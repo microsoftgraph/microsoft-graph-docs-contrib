@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jyothig123"
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # userIdentity resource type

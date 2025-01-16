@@ -21,7 +21,7 @@ headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "respond-async")
 headers.Add("Workbook-Session-Id", "{Workbook-Session-Id}")
 
-configuration := &graphdrives.DriveItemItemItemWorkbookTableItemRowsRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemWorkbookTablesItemRowsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewWorkbookTableRow()

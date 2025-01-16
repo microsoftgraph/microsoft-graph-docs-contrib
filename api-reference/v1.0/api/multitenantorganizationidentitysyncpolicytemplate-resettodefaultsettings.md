@@ -5,6 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # multiTenantOrganizationIdentitySyncPolicyTemplate: resetToDefaultSettings

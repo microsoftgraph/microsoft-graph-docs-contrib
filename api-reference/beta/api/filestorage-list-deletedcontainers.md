@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 10/29/2024
 ---
 
 # List deletedContainers
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects from the deleted container collection. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

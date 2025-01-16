@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 07/26/2024
 ---
 
 # Remove appliesTo

@@ -5,6 +5,7 @@ author: "skadam-msft"
 ms.localizationpriority: medium
 ms.subservice: "compliance"
 doc_type: resourcePageType
+ms.date: 06/06/2024
 ---
 
 # subjectRightsRequest resource type

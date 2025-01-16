@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "teams"
 author: "RamjotSingh"
+ms.date: 10/11/2024
 ---
 
 # chatMessageAttachment resource type
@@ -28,6 +29,9 @@ An entity of type **chatMessageAttachment** is returned as part of the [Get chan
 |teamsAppId| string |The ID of the Teams app that is associated with the attachment. The property is used to attribute a Teams message card to the specified app.|
 |thumbnailUrl| string |The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of **content** or **contentUrl**. For example, if you set **contentType** to application/word and set **contentUrl** to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user selects the image, the channel would open the document.|
 
+
+## Relationships
+None.
 
 ## JSON representation
  The following JSON representation shows the resource type.

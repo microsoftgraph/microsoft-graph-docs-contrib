@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 03/06/2024
 ---
 
 # permissionGrantConditionSet resource type
@@ -32,6 +33,9 @@ A permission grant condition set contains several conditions. For an event to ma
 | clientApplicationsFromVerifiedPublisherOnly | Boolean | Set to `true` to only match on client applications with a [verified publisher](/azure/active-directory/develop/publisher-verification-overview). Set to `false` to match on any client app, even if it does not have a verified publisher. Default is `false`. |
 | certifiedClientApplicationsOnly | Boolean | Set to `true` to only match on client applications that are [Microsoft 365 certified](/microsoft-365-app-certification/docs/enterprise-app-certification-guide). Set to `false` to match on any other client app. Default is `false`. |
 | scopeSensitivityLabels | [scopeSensitivityLabels](scopeSensitivityLabels.md) | Defines the sensitivity labels for groups that are included in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md). |
+
+## Relationships
+None.
 
 ## JSON representation
 

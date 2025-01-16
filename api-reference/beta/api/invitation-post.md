@@ -3,8 +3,9 @@ title: "Create invitation"
 description: "Create a new invitation or reset the redemption status for a guest user. The invitation adds an external user to the organization."
 ms.localizationpriority: medium
 author: "ppolkadots"
-ms.subservice: "entra-sign-in"
+ms.subservice: "entra-users"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Create invitation

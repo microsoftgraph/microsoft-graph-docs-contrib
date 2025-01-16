@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 07/09/2024
 ---
 
 # Delete userFlowLanguagePage

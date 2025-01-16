@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 07/09/2024
 ---
 
 # List a user's oauth2PermissionGrants

@@ -22,50 +22,30 @@ var requestBody = new AppManagementPolicy
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.PasswordAddition,
+				State = AppManagementRestrictionState.Enabled,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"state" , "enabled"
-					},
-				},
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
+				State = AppManagementRestrictionState.Enabled,
 				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"state" , "enabled"
-					},
-				},
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.SymmetricKeyAddition,
+				State = AppManagementRestrictionState.Enabled,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"state" , "enabled"
-					},
-				},
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
+				State = AppManagementRestrictionState.Enabled,
 				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"state" , "enabled"
-					},
-				},
 			},
 		},
 		KeyCredentials = new List<KeyCredentialConfiguration>

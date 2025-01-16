@@ -5,6 +5,7 @@ author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 11/11/2024
 ---
 
 # dataDiscoveryReport resource type

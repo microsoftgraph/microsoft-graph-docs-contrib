@@ -13,7 +13,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Retrieves a list of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) objects to which a group belongs.
+Retrieves a list of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) objects to which a [group](../resources/group.md) belongs.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

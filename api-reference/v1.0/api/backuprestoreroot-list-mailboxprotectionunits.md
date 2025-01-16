@@ -51,6 +51,10 @@ If successful, this method returns a `200 OK` response code and a [mailboxProtec
 
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
+> [!NOTE]
+> The `displayName` and `email` properties are only available for the `Delegated` permission type.
+>
+
 ## Examples
 
 ### Example 1: List all mailboxProtectionUnits in a tenant

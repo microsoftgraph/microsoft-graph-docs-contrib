@@ -26,6 +26,9 @@ Represents the details about the hardware properties of a Microsoft Teams-enable
 |uniqueId|String|The unique identifier for the device.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

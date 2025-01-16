@@ -18,10 +18,10 @@ import (
 
 requestFilter := "status eq 'assigned'"
 
-requestParameters := &grapheducation.EducationClasseItemAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &grapheducation.EducationClasseItemAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

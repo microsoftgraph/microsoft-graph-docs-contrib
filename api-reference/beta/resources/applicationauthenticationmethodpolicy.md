@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
+ms.date: 11/12/2024
 ---
 
 # Microsoft Entra application management policies API overview 

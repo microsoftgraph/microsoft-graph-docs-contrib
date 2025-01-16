@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 mgc-beta identity identity-providers patch --identity-provider-base-id {identityProviderBase-id} --body '{\
   "@odata.type": "#microsoft.graph.socialIdentityProvider",\
-  "clientSecret": "1111111111111"\
+  "clientSecret": "4294967296"\
 }\
 '
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getYammerActivityUserDetail
@@ -26,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getyammeractivityuserdetail" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getyammeractivityuserdetail-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -62,7 +63,7 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -88,7 +89,7 @@ The default page size for this request is 200 items.
 
 ### CSV
 
-The following is an example that outputs CSV.
+The following example shows a request that outputs CSV.
 
 #### Request
 
@@ -117,7 +118,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+Follow the 302 redirection and the CSV file that downloads has the following schema.
 
 <!-- {
   "blockType": "response",
@@ -134,7 +135,7 @@ Report Refresh Date,User Principal Name,Display Name,User State,State Change Dat
 
 ### JSON
 
-The following is an example that returns JSON.
+The following example shows a request that returns JSON.
 
 #### Request
 

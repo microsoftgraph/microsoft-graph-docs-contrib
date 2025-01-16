@@ -5,6 +5,7 @@ author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # answerVariant resource type

@@ -13,7 +13,7 @@ ms.date: 08/20/2024
 
 Namespace: microsoft.graph
 
-Update the properties of a group object.
+Update the properties of a [group](../resources/group.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
