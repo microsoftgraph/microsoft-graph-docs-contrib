@@ -777,8 +777,6 @@ Content-type: application/json
 }
 ```
 
-The following example shows a request that gets a chat message with a loop component as attachments.
-
 ## Related content
 
 - [List messages in a channel](channel-list-messages.md)
