@@ -785,7 +785,6 @@ The following example shows a request that gets a chat message with a loop compo
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessage_6",
@@ -794,8 +793,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1732043970539
 ```
-
-
 
 #### Response
 
