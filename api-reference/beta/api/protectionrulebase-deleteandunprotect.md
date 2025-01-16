@@ -63,7 +63,7 @@ If successful, this action returns a `202 Accepted` response code and a [protect
 
 ### Example 1: DeleteAndUnprotect driveInclusionRule associated with an onedriveForBusiness protection policy
 
-The following example shows how to delete a **driveInclusionRule** associated with a [onedriveForBusinessProtectionPolicy] and unprotect units protected by it(../resources/onedriveforbusinessprotectionpolicy.md).
+The following example shows how to delete a **driveInclusionRule** associated with a [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) and unprotect units protected by it.
 
 
 ### Request
