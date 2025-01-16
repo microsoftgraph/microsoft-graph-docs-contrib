@@ -43,7 +43,6 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | sequenceNumber | string | The lexicographically sortable string stamp that represents the version of a **presence** object. |
 | statusMessage | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
 
-
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
 
 ## Relationships
