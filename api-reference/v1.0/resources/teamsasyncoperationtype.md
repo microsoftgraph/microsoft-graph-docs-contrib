@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 
 
-Types of [teamsAsyncOperation](teamsasyncoperation.md). Members are added as more async operations are supported. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `teamifyGroup`, `createChannel`, `archiveChannel`, `unarchiveChannel`.
+Types of [teamsAsyncOperation](teamsasyncoperation.md). Members are added as more async operations are supported. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `teamifyGroup`, `createChannel`, `archiveChannel`, `unarchiveChannel`.
 
 ## Members
 
