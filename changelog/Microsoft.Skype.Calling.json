@@ -17,6 +17,22 @@
           "ChangeType": "Addition",
           "Description": "Added the **chatRestrictions** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
           "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "7ef7a8a7-bb6f-4c4f-b594-42a90d00b41f",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatRestrictions** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7ef7a8a7-bb6f-4c4f-b594-42a90d00b41f",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatRestrictions** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
         }
       ],
       "Id": "7ef7a8a7-bb6f-4c4f-b594-42a90d00b41f",
