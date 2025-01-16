@@ -19,8 +19,8 @@ Namespace: microsoft.graph
 Represents a protection rule specified by the client as part of a protection plan applied to Microsoft 365 data in an organization. Currently, only inclusion rules, which are rules that indicate that a protection policy should match the specified criteria, can be defined.
 
 <!-- Currently, protection rules are static in nature, meaning policy changes are applied only when the rule is executed, with no automatic/dynamic updates. -->
-- Protection rules can be static or dynamic in nature, dependig on the property `isAutoApplyEnabled` set to `false` or `true` respectively.
-- This property can be set only at the time of creation and cannot be changed later on. This also means that static to dynamic rule and vice-versa is not allowed.
+- Protection rules can be static or dynamic in nature, depending on the property `isAutoApplyEnabled` set to `false` or `true` respectively.
+- This property can be set only at the time of creation and can't be changed later on. This also means that static to dynamic rule and vice-versa isn't allowed.
 - `isAutoApplyEnabled` = `true` indicates that the rule is dynamic in nature (a.k.a dynamic rule).
 
 This abstract type is the base type for [siteProtectionRule](../resources/siteprotectionrule.md), [mailboxProtectionRule](../resources/mailboxprotectionrule.md), and [driveProtectionRule](../resources/driveprotectionrule.md).
@@ -32,7 +32,7 @@ The following limitations apply to this resource:
 - The static rules are applied one time only. That is, the security groups or distribution lists are flattened at the time they're added to the backup configuration policy. For example, groups or lists aren't dynamically updated in the system if users are added or removed from the original security group.
 - The dynamic rules are refreshed at regular intervals resulting in automatic addition and removal of artifacts to the configuration policy depending on the result of rule evaluation.
 - A protection policy can have only one active dynamic rule.
-- Dynamic rules are not available for sharepoint protection policies.
+- Dynamic rules aren't available for sharepoint protection policies.
 
 ## Properties
 
@@ -42,10 +42,11 @@ The following limitations apply to this resource:
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the rule.|
 |createdDateTime|DateTimeOffset|The time of creation of the rule.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an operation on a rule fails.|
-|isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static. Currently, only static rules are supported.|
+|isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification made to the rule.|
 |status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`, `updateRequested`, `deleteRequested`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `updateRequested` , `deleteRequested`.| The `draft` member is currently unsupported. |
+
 
 ### protectionRuleStatus values
 

@@ -1,9 +1,9 @@
 ---
 title: "protectionRuleBase: deleteAndUnprotect"
 description: "Delete a dynamic rule and unprotect all drives protected under it**"
-author: "RitikaGeraMicrosoft, manikantsinghms"
+author: "manikantsinghms"
 ms.reviewer: "manikantsinghms"
-ms.date: 12/07/2025
+ms.date: 01/15/2025
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -22,7 +22,7 @@ This action deletes a dynamic Rule and unprotect all protection units protected 
 The following points apply to deleting a dynamic Rule and unprotecting all artifacts protected under it:
 - Once a dynamic rule is deleted, it moves to a deleteRequested state.
 - Unprotection of artifacts and deletion of rule are async operations and they are carried out of background job. Which may cause some delay to complete the operations. 
-- If the artifact is protected by another protection source as well, it will result in the artifact being protected by the other protection source only.
+- If the artifact is protected by another protection source as well, it results in the artifact being protected by the other protection source only.
 - Rules moves to `deleteRequested` status when deleteAndUnprotect action is performed on dynamic rule.
 
 

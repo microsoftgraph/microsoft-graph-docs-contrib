@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a protectionRuleBase object.
 Update is only supported for dynamic rules of exchangeProtectionPolicy and onedriveForBusinessProtectionPolicy.
-After updation the rule will move to `updateRequested` state.
+After updation, the rule will move to `updateRequested` state.
 
 ## Permissions
 
@@ -70,8 +70,6 @@ The following example shows a request.
   "name": "update_driveInclusionRule"
 }
 -->
-
-
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/driveInclusionRules/c31adc5c-b65d-4a85-8eda-976947a24124
 Content-Type: application/json
@@ -134,8 +132,6 @@ The following example shows a request.
   "name": "update_mailboxInclusionRule"
 }
 -->
-
-
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/mailboxInclionRules/c31adc5c-b65d-4a85-8eda-976947a24124
 Content-Type: application/json
