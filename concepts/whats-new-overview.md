@@ -17,6 +17,16 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## January 2025: New and generally available 
+
+### Identity and access | Identity and sign-in
+- Added riskEventType entry for the Suspicious API Traffic detection for [service principals](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-1.0&preserve-view=true).
+
+### Teamwork and communications | Messaging
+
+- [Get](/graph/api/chatmessage-get#example-5-get-a-chat-message-with-an--for-everyone) a chat message with an @mention for everyone.
+- [Get](/graph/api/chatmessage-get#example-6-get-a-chat-message-with-a-forwarded-message) a chat message that has a forwarded message as an attachment.
+
 ## January 2025: New in preview only 
 
 ### Device and app management | Cloud PC
@@ -45,6 +55,10 @@ Use the [start](/graph/api/industrydata-industrydatarun-start?view=graph-rest-be
 ### Tasks and plans
 
 Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true#container-type-teams-channel) container type to create plans in shared channels in Microsoft Teams.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **sequenceNumber** property on [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) to get the lexicographically sortable string stamp that represents the version of a **presence** object.
 
 ## December 2024: New and generally available
 

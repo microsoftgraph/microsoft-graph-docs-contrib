@@ -15,9 +15,35 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-01-07T18:27:57.4426258Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },     
+    {
+      "ChangeList": [
+        {
+          "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowRecording** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowTranscription",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowTranscription** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        }
+      ],
+      "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-15T20:42:00.4091409Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
-    },     
+    },
     {
       "ChangeList": [
         {
