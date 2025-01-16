@@ -96,13 +96,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxProtectionRule)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.driveProtectionRule)",
     "id": "c31adc5c-b65d-4a85-8eda-976947a24124",
     "status": "updateRequested",
-    "createdDateTime": "2025-01-13T14:42:34.5329239Z",
-    "lastModifiedDateTime": "2025-01-13T14:58:08.5918017Z",
+    "createdDateTime": "2025-01-15T14:42:34.5329239Z",
+    "lastModifiedDateTime": "2025-01-15T14:58:08.5918017Z",
     "isAutoApplyEnabled": true,
-    "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))",
     "createdBy": {
         "application": {
             "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -119,6 +118,7 @@ Content-Type: application/json
             "id": "845457dc-4bb2-4815-bef3-8628ebd1952e"
         }
     },
+    "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))",
 }
 ```
 
@@ -131,7 +131,7 @@ The following example shows how to update a **mailboxInclusionRule** associated 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_driveInclusionRule"
+  "name": "update_mailboxInclusionRule"
 }
 -->
 
@@ -160,7 +160,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.driveProtectionRule)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxProtectionRule)",
     "id": "c31adc5c-b65d-4a85-8eda-976947a24124",
     "status": "active",
     "createdBy": {

@@ -63,6 +63,11 @@ If successful, this action returns a `200 OK` response code and a [protectionRul
 
 ## Examples
 
+### Example 1: DeleteAndUnprotect driveInclusionRule associated with an onedriveForBusiness protection policy
+
+The following example shows how to update a **driveInclusionRule** associated with a [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+
+
 ### Request
 
 The following example shows a request.
@@ -72,7 +77,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/driveInclusionRules/{driveProtectionRuleId}/deleteAndUnprotect
+POST https://graph.microsoft.com/beta/solutions/backupRestore/driveInclusionRules/40005fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
 ```
 
 
@@ -89,23 +94,72 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": {
-    "@odata.type": "#microsoft.graph.protectionRuleBase",
-    "id": "String (identifier)",
-    "status": "String",
-    "createdDateTime": "String (timestamp)",
+    "@odata.type": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.protectionRuleBase",
+    "id": "40005fb9-2682-47bc-a8f6-6c38c1ff498d",
+    "status": "deleteRequested",
+    "createdDateTime": "2025-01-15T15:07:44.3043505Z",
+    "lastModifiedDateTime": "2025-01-15T14:42:12.6779064Z",
+    "isAutoApplyEnabled": true,
+    "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "identity": "8aaaaec3-5dcb-4b47-9ef9-0dda3e95b9f4"
+        }
     },
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+    "lastModifiedBy": {}
+  }
+}
+```
+
+### Example 2: DeleteAndUnprotect mailboxInclusionRule associated with an exchange protection policy
+
+The following example shows how to update a **mailboxInclusionRule** associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "mailboxrotectionrulethis.deleteandunprotect"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.protectionRuleBase"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.protectionRuleBase",
+    "id": "52147fb9-2682-47bc-a8f6-6c38c1ff498d",
+    "status": "deleteRequested",
+    "createdDateTime": "2025-01-15T15:07:44.3043505Z",
+    "lastModifiedDateTime": "2025-01-15T14:42:12.6779064Z",
+    "isAutoApplyEnabled": true,
+    "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))",
+    "createdBy": {
+        "user": {
+            "identity": "8aaaaec3-5dcb-4b47-9ef9-0dda3e95b9f4"
+        }
     },
-    "error": {
-      "@odata.type": "microsoft.graph.publicError"
-    },
-    "isAutoApplyEnabled": "Boolean"
+    "lastModifiedBy": {}
   }
 }
 ```
