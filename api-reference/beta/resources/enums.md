@@ -3445,6 +3445,7 @@ Possible values for user account types (group membership), per Windows definitio
 | project |
 | driveItem |
 | user |
+| teamsChannel|
 
 ### plannerPlanContextType values
 
@@ -4359,6 +4360,9 @@ Possible values for user account types (group membership), per Windows definitio
 | tokenIssuanceStart |
 | pageRenderStart |
 | unknownFutureValue |
+|attributeCollectionStart|
+|attributeCollectionSubmit|
+|emailOtpSend|
 
 ### microsoftAuthenticatorAuthenticationMethodClientAppName values
 
@@ -5008,6 +5012,15 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+
+### callEventType values
+
+| Member |
+| ------------------ |
+| callStarted |
+| callEnded |
+| unknownFutureValue |
+| rosterUpdated |
 
 ### restoreArtifactsBulkRequestStatus values 
 
