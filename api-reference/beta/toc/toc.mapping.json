@@ -3255,6 +3255,7 @@
         "Mailbox"
       ],
       "resources": [
+        "mailbox",
         "mailboxItem",
         "mailboxFolder",
         "exchangeSettings"
