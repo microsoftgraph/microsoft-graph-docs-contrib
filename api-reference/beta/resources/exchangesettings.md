@@ -19,7 +19,7 @@ Represents the Exchange settings for mailbox discovery.
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/usersettings-list-exchange.md)|[exchangeSetting](../resources/exchangesetting.md) collection|Get a list of mailboxes that belong to a user.|
+|[List](../api/usersettings-list-exchange.md)|[exchangeSettings](../resources/exchangesettings.md) collection|Get a list of mailboxes that belong to a user.|
 
 ## Properties
 |Property|Type|Description|
