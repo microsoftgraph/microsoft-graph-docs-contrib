@@ -787,7 +787,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessage_6",
+  "name": "get_chatmessage_7",
   "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1732043970539"]
 }-->
 ```msgraph-interactive
