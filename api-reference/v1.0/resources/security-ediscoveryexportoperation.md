@@ -55,6 +55,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |None|Default file structure.|
 |directory|All files in a single folder called Native files.|
 |pst|Mails are grouped in pst format.|
+|msg|Messages are in msg format.|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -30,6 +30,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/estimateStatistics
+Content-Type: application/json
+
+{
+  "statisticsOptions": "includeRefiners, includeQueryStats, includeUnindexedStats, advancedIndexing, locationsWithoutHits”
+}
 ```
 
 ## Request headers
@@ -38,7 +43,9 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Don't supply a request body for this method.
+|Property|Type|Description|
+|:---|:---|:---|
+| statisticsOptions | microsoft.graph.security.statisticsOptions | The options to specify the inputs and results of estimate statistics operation. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`. |
 
 ## Response
 

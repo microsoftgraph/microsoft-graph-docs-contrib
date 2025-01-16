@@ -48,13 +48,23 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|The ID of the eDiscovery search you'd like to add to the review set.|
-|additionalDataOptions|additionalDataOptions|The options for adding items to reviewSet.|
+|additionalDataOptions|microsoft.graph.security.additionalDataOptions|The options for adding items to reviewSet. The possible values are:  `linkedFiles`, `advancedIndexing`, `listAttachments`, `htmlTranscripts`, `messageConversationExpansion`, `cloudLinkAttachments`, `locationsWithoutHits`, `allItemsInFolder`.|
+| itemsToInclude | microsoft.graph.security.itemsToInclude | The items to include in terms of their indexing. The possible values are `searchHits`, `partiallyIndexed` |
+| cloudAttachmentVersion | microsoft.graph.security.cloudAttachmentVersion | The versions to include for cloud attachments in messages. The possible values are `latest`, `recent10`, `recent100`, `all`. |
+| documentVersion | microsoft.graph.security.documentVersion | The versions to include for files in sharepoint. The possible values are `latest`, `recent10`, `recent100`, `all`. |
 
 ### additionalDataOptions values
 |Name|Description|
 |:---|:---|
 |allVersions|include all versions of a sharepoint document matching the source collection query. Caution: SharePoint versions can significantly increase the volume of items |
 |linkedFiles|include linked files that were shared in outlook, teams, or yammer messages by attaching a link to the file.|
+|advancedIndexing|Perform advanced indexing during export to reduce false matches.|
+|listAttachments|Include list attachments of lists.|
+|htmlTranscripts|Convert messages close together into transcripts.|
+|messageConversationExpansion|Include conversation context around a hit.|
+|cloudLinkAttachments|Access links (cloud attachments) in messages.|
+|locationsWithoutHits|Look for unindexed items even in locations without hits.|
+|allItemsInFolder|Include all content in folder if the folder iteself matches a query.|
 
 ## Response
 

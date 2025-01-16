@@ -40,7 +40,9 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Don't supply a request body for this method.
+|Property|Type|Description|
+|:---|:---|:---|
+| statisticsOptions | microsoft.graph.security.statisticsOptions | The options to specify the inputs and results of estimate statistics operation. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`. |
 
 ## Response
 
@@ -60,6 +62,11 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/estimatestatistics
+Content-Type: application/json
+
+{
+  "statisticsOptions": "includeRefiners, includeQueryStats, includeUnindexedStats, advancedIndexing, locationsWithoutHits"
+}
 ```
 
 # [C#](#tab/csharp)

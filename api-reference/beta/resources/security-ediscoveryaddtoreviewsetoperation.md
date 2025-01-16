@@ -32,6 +32,12 @@ None.
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 
+### itemsToInclude values
+|Member|Description|
+|:----|-----------|
+|searchHits       | Include indexed items that match.|
+|partiallyIndexed | Include unindexed items that may not match query.|
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

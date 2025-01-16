@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |description|String| Description of the export. |
 |exportOptions|microsoft.graph.security.exportOptions|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `unknownFutureValue`. |
-|exportStructure|microsoft.graph.security.exportFileStructure| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`.|
+|exportStructure|microsoft.graph.security.exportFileStructure| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `msg`, `unknownFutureValue`.|
 |outputName|String| Name of the export. Required. |
 
 ## Response

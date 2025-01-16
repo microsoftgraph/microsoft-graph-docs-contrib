@@ -39,6 +39,15 @@ None.
 |unindexedItemCount|Int64|The estimated count of unindexed items for the collection.|
 |unindexedItemsSize|Int64|The estimated size of unindexed items for the collection.|
 
+### statisticsOptions values
+|Name|Description|
+|:----|-----------|
+|includeRefiners      | Include refiners.|
+|includeQueryStats    | Include query segment stats.|
+|includeUnindexedStats| Include unindexed item stats.|
+|advancedIndexing     | Perform advanced indexing during search to reduce false matches.|
+|locationsWithoutHits | Estimate unindexed items even in locations without hits.|
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

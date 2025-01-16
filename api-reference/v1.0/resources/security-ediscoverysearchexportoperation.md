@@ -47,6 +47,14 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 | allDocumentVersions         | Collect all versions of SharePoint documents. If not selected, only current versions are collected.|
 | subfolderContents           | Collect items inside subfolders of a matched folder.|
 | listAttachments             | Collect files attached to SharePoint lists and their child items.|
+| htmlTranscripts             | Convert messages close together into transcripts. |
+| advancedIndexing            | Perform advanced indexing during export to reduce false matches. |
+| allItemsInFolder            | Include all content in list if the list itself matches a query. |
+| includeFolderAndPath        | Include folder and path structure of the source. | 
+| condensePaths               | Truncate file paths so they will fit within 1024 characters.|
+| friendlyName                | Give each item a friendly name. |
+| splitSource                 | Organize data from different locations into separate folders or PSTs. |
+| optimizedPartitionSize      | Optimize partition size. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### exportCriteria values
@@ -73,6 +81,24 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 | responsiveLocations    | Locations with search hits only.|
 | nonresponsiveLocations | Locations with no search hits.|
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+### cloudAttachmentVersion values
+
+|Member|Description|
+|:----|-----------|
+|latest     | Latest version only. |
+|recent10   | Last 10 versions. |
+|recent100  | Last 100 versions. |
+|all        | All versions. |
+
+### documentVersion values
+
+|Member|Description|
+|:----|-----------|
+|latest     | Latest version only. |
+|recent10   | Last 10 versions. |
+|recent100  | Last 100 versions. |
+|all        | All versions. |
 
 ## Relationships
 
@@ -105,6 +131,8 @@ The following JSON representation shows the resource type.
   "exportFormat": "String",
   "exportLocation": "String",
   "exportSingleItems": "Boolean",
+  "cloudAttachmentVersion": "String",
+  "documentVersion": "String",
   "id": "String (identifier)",
   "percentProgress": "Int32",
   "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
