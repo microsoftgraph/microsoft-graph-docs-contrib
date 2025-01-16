@@ -18,6 +18,12 @@ Retrieve a list of **plannerPlan** objects owned by a [channel](../resources/cha
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "teamschannelplanner_list_plans" } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamschannelplanner-list-plans-permissions.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -56,23 +62,25 @@ Content-type: application/json
 {
   "value": [
     {
-      "createdBy": {
-        "application": {
-          "id": "95e27074-6c4a-447a-aa24-9d718a0b86fa"
+        "@odata.etag": "W/\"JzEtUGxhbiAgQEBAQEBAQEBAQEBAQEBARCc=\"",
+        "createdDateTime": "2025-01-14T18:03:25.8457422Z",
+        "isArchived": false,
+        "owner": "ba2b2488-cb8c-4dbc-882e-a9a8311bfee9",
+        "title": "title-value",
+        "id": "TQZYwVBC4E6BUIg4nfSnfJUADdBY",
+        "createdBy": {
+            "application": {
+                "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064"
+            },
+            "user": {
+                "id": "ba2b2488-cb8c-4dbc-882e-a9a8311bfee9"
+            }
         },
-        "user": {
-          "id": "ebf3b108-5234-4e22-b93d-656d7dae5874"
-        }
-      },
-      "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-      "container": {
-         "@odata.type": "microsoft.graph.plannerPlanContainer",
-         "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
-         "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
-         "type": "group"
-      },
-      "title": "title-value",
-      "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
+        "container": {
+            "containerId": "a738af50-90f1-472c-b3c3-a468f88ceaba/channels/19:yVS-hfmJ8w61Vu4oehlAr-y9G0eeyY11D8elrrDSvCU1@thread.tacv2",
+            "type": "teamsChannel",
+            "url": "https://graph.microsoft.com/beta/teams/a738af50-90f1-472c-b3c3-a468f88ceaba/channels/19:yVS-hfmJ8w61Vu4oehlAr-y9G0eeyY11D8elrrDSvCU1@thread.tacv2"
+        },
     }
   ]
 }
