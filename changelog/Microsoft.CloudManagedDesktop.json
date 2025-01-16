@@ -88,6 +88,14 @@
           },
           {
             "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "cloudPCTroubleshootReportType",
+            "ChangeType": "Addition",
+            "Description": "Added the **cloudPCTroubleshootReportType** enumeration type.",
+            "Target": "cloudPCTroubleshootReportType"
+          },
+          {
+            "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
             "ApiChange": "Method",
             "ChangedApiName": "retrieveCloudPcTroubleshootReports",
             "ChangeType": "Addition",

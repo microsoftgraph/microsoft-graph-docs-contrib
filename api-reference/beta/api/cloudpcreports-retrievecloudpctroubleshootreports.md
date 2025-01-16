@@ -53,15 +53,6 @@ If report name is `troubleshootDetailsReport`, this report is used to get the de
 | HasPerformanceIssue             | Indicates if there is a performance issue.                                   |
 | HasNetworkIssue                 | Indicates if there is a network issue.                                       |
 | HasReliabilityIssue             | Indicates if there is a reliability issue.                                   |
-| HasCpuIssue                     | Indicates if there is a CPU issue.                                           |
-| HasMemIssue                     | Indicates if there is a memory issue.                                        |
-| HasRTTIssue                     | Indicates if there is a round trip time issue.                               |
-| HasConnectionQualityIssue       | Indicates if there is a connection quality issue.                            |
-| HasStabilityIssue               | Indicates if there is a stability issue.                                     |
-| HasBandwidthIssue               | Indicates if there is a bandwidth issue.                                     |
-| HasConnnectErrorIssue           | Indicates if there is a connection error issue.                              |
-| HasRTTStabilityIssue            | Indicates if there is a round trip time stability issue.                     |
-| HasBandwidthStabilityIssue      | Indicates if there is a bandwidth stability issue.                           |
 | ConnectionErrorCount            | The count of connection errors.                                              |
 
 If report name is `troubleshootTrendCountReport`, this report is used to get daily overview issue insight of Cloud PCs. 
@@ -135,7 +126,7 @@ The following table lists the parameters that are required when you call this ac
 | Parameter | Required |  Type    |Description                                                                                             |
 |:----------|:---------|:---------|:-------------------------------------------------------------------------------------------------------|
 | filter    | No       |String            | OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`.              |
-| reportName| Yes      |String            |The report name, possible values: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`.Default value is: troubleshootDetailsReport.|
+| reportName| Yes      | [microsoft.graph.deviceManagement.cloudPCTroubleshootReportType](#cloudPCTroubleshootReportType-values)  |The report name, possible values: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`.Default value is: troubleshootDetailsReport.|
 | groupBy   | No       |String collection | Specifies how to group the reports. If used, must have the same content as the **select** parameter.   |
 | orderBy   | No       |String collection | Specifies the order by columns name.              |
 | search    | No       |String            | Specifies a string to search for.                                                                      |
@@ -143,6 +134,14 @@ The following table lists the parameters that are required when you call this ac
 | skip      | No       |Int32             | Number of records to skip.                                                                             |
 | top       | No       |Int32             | The number of top records to return. If not specified, the default limit is 25, with a maximum of 100. |
 
+### cloudPCTroubleshootReportType values
+| Member name                   | Description                                                                                                 |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `troubleshootDetailsReport`   | The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues. |
+| `troubleshootTrendCountReport`| The aggregated report which shows the number and trend of issues per tenant.               |
+| `troubleshootRegionalReport`  | The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues. |
+| `roubleshootIssueCountReport` | The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.         |
+| `unknownFutureValue`          | Evolvable enumeration sentinel value. Do not use.                                                                                           |
 
 
 ## Response
@@ -179,7 +178,6 @@ Content-Type: application/json
         "RecommendedCPU", 
         "RecommendedRamInGB", 
         "RecommendedDiskInGB", 
-        "ProvisionPolicyId", 
         "ProvisionPolicyName", 
         "RoundTripTimeInMsAvg", 
         "AvailableBandwidthInMbpsAvg"
@@ -257,10 +255,6 @@ Content-Type: application/json
             "PropertyType": "Int"
         },
         {
-            "Column": "ProvisionPolicyId",
-            "PropertyType": "String"
-        },
-        {
             "Column": "ProvisionPolicyName",
             "PropertyType": "String"
         },
@@ -273,7 +267,7 @@ Content-Type: application/json
             "PropertyType": "Double"
         }],
     "Values": [
-        ["f5ff445f-7488-40f8-8ab9-ee784a9c1f33", "Cloud PC-Ana Bowman", "ana@contoso.com","Performance", "2", "4", "64","Undersized", "4", "8", "128", "abcd445f-7488-40f8-8ab9-ee784a9c1f33"", "policy1", "200.1","50.65"]
+        ["f5ff445f-7488-40f8-8ab9-ee784a9c1f33", "Cloud PC-Ana Bowman", "ana@contoso.com","Performance", "2", "4", "64","Undersized", "4", "8", "128", "policy1", "200.1","50.65"]
     ]
 }
 ```
