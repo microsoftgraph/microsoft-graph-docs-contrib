@@ -1,5 +1,5 @@
 ---
-title: "Schedule Policy Apply Task"
+title: "cloudpcprovisioningpolicy: schedulePolicyApplyTask"
 description: "Set a scheduled auto-reprovision task to do automatic regular apply. `Frontline shared` only. Administrators only."
 author: "zhuangzhuang131419"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 01/07/2025
 ---
 
-# Schedule Policy Apply Task
+# cloudpcprovisioningpolicy: schedulePolicyApplyTask
 
 Namespace: microsoft.graph
 
