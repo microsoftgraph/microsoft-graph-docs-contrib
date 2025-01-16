@@ -161,16 +161,29 @@ The following example shows a request.
   "name": "cloudpcreports.retrieveCloudPcTroubleshootReports"
 }
 -->
-
-
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcTroubleshootReports
 Content-Type: application/json
 
 {
-    "filter": "",
     "reportName":"troubleshootDetailsReport",
-    "select": ["CloudPcId", "ManagedDeviceName", "UserPrincipalName", "UsageInsight", "CurrentSize", "CurrentCPU", "CurrentRamInGB", "CurrentDiskInGB", "RecommendedSize", "RecommendedCPU", "RecommendedRamInGB", "RecommendedDiskInGB", "ProvisionPolicyId", "ProvisionPolicyName", "RoundTripTimeInMsAvg", "AvailableBandwidthInMbpsAvg"]
+    "select": ["CloudPcId", 
+        "ManagedDeviceName", 
+        "UserPrincipalName", 
+        "UsageInsight", 
+        "CurrentSize", 
+        "CurrentCPU", 
+        "CurrentRamInGB", 
+        "CurrentDiskInGB", 
+        "RecommendedSize", 
+        "RecommendedCPU", 
+        "RecommendedRamInGB", 
+        "RecommendedDiskInGB", 
+        "ProvisionPolicyId", 
+        "ProvisionPolicyName", 
+        "RoundTripTimeInMsAvg", 
+        "AvailableBandwidthInMbpsAvg"
+    ],
     "search": "",
     "skip": 0,
     "top": 50
