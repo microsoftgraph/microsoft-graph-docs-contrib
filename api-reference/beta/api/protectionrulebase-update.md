@@ -72,8 +72,6 @@ The following example shows how to update a **driveInclusionRule** associated wi
 ### Request
 
 The following example shows a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_driveInclusionRule"
