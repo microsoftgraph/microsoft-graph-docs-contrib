@@ -798,7 +798,7 @@ GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@t
 
 #### Response
 
-The following example shows the response. The message body contains 2 attachments. The **contentType** for the loop component is `application/vnd.microsoft.card.fluidEmbedCard` and the **contentType** of placeholder card is `application/vnd.microsoft.card.codesnippet`. 
+The following example shows the response. The message body contains two attachments. The value of the **contentType** property of the loop component is `application/vnd.microsoft.card.fluidEmbedCard`, and the value of the **contentType** property of the placeholder card is `application/vnd.microsoft.card.codesnippet`. 
 
 **Note**  - The **contentUrl** and **content** properties for a placeholder card will not have values.
 
