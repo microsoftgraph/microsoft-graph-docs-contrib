@@ -19,11 +19,11 @@ The [chatMessage](/graph/api/resources/chatMessage) resource type represents mes
 
 > **Note:** The examples in this section show only the relevant schema elements and not the entire message payload.
 
-### attachments
+### Attachments
 
 The [chatMessageAttachment](/graph/api/resources/chatmessageattachment) resource type represents entities that can be referenced from a [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). These entities include files, tabs, cards, meetings, or other messages. The items themselves might be located somewhere else. For example, files might be stored in SharePoint. The following sections describe the possible types of attachments on a **chatMessage** object.
 
-#### card attachment
+#### Card attachment
 
 Cards represent visual elements backed by a predefined schema. Teams supports the cards defined by the [Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true#attachment-object) in addition to the following card types:
 
@@ -97,7 +97,7 @@ The following example shows the schema for a loop component as two attachments.
     ],
 ```
 
-#### file attachment
+#### File attachment
 
 When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a file, it contains information about the file, including the link to open the file. The file itself is located in an accessible store like SharePoint. When a **chatMessage** has an attachment of type file, the value of the **contentType** property on the [attachment](/graph/api/resources/chatmessageattachment) resource is set to `reference`, and the **contentUrl** property contains the file URL.
 
@@ -119,7 +119,7 @@ The following example shows the schema for a file attachment.
     ],
 ```
 
-#### forwarded message attachment
+#### Forwarded message attachment
 
 An [attachment](/graph/api/resources/chatmessageattachment) object contains a forwarded message that was forwarded to a [chat](/graph/api/resources/chat). For message attachments, the **id** property contains the ID of the forwarded message. The **content** property contains more details about the message; for example, the original message context and original sender detail. For message attachments, the **contentType** property is set to `forwardedMessageReference`.
 
@@ -139,7 +139,7 @@ The following example shows the schema for a forwarded message attachment.
     ],
 ```
 
-#### meeting attachment
+#### Meeting attachment
 
 When a meeting is scheduled in a channel, a message with meeting details is posted in the channel. A meeting attachment represents this object and includes the meeting details. The **id** property contains the ID of the meeting, and the **content** property includes details about the meeting organizer and the Exchange ID of the meeting. You can use the Exchange ID to look up the meeting by using the calendar APIs. The **contentType** property is set to `meetingReference` for meeting attachments.
 
@@ -158,7 +158,7 @@ The following example shows the schema for an adaptive card attachment.
     ],
 ```
 
-#### message attachment
+#### Message attachment
 
 An [attachment](/graph/api/resources/chatmessageattachment) object contains a message when a [chat](/graph/api/resources/chat) includes a reply to a specific message. For message attachments, the **id** property contains the ID of the message. The **content** property contains more details about the message; for example, the message preview text and sender. For message attachments, the **contentType** property is set to `messageReference`.
 
@@ -176,7 +176,7 @@ The following example shows the schema for a message attachment.
     ],
 ```
 
-#### tab attachment
+#### Tab attachment
 
 When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a [tab](/graph/api/resources/teamstab) hosted in the present context, the **contentType** property is set to `tabReference`, the **id** property is set to the ID of the tab, and the **name** property is set to the tab name. This scenario often applies when tabs are newly added. 
 
@@ -196,7 +196,7 @@ The following example shows the schema for an tab attachment.
     ],
 ```
 
-### body
+### body property
 
 The **body** property of a **chatMessage** object represents the body of the message. The **body** property can refer to other elements in the schema such as mentions or attachments. The contents can be `text` or `html`, as specified by the **contentType** property of the [itemBody](/graph/api/resources/itembody) resource type.
 
@@ -317,7 +317,7 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
 }
 ```
 
-### channelIdentity
+### channelIdentity property
 
 If a [chatMessage](/graph/api/resources/chatmessage) is sent in a [channel](/graph/api/resources/channel), the **channelIdentity** property contains details about the channel. This includes the ID of the [channel](/graph/api/resources/channel) and the [team](/graph/api/resources/team). This property is read-only.
 
@@ -330,7 +330,7 @@ The following example shows the schema for a **channelIdentity** in a message.
     },
 ```
 
-### chatId
+### chatId property
 
 If a [chatMessage](/graph/api/resources/chatmessage?preserve-view=true) is sent in a [chat](/graph/api/resources/chat), the **chatId** property contains the ID of the chat. This property is read-only.
 
@@ -340,25 +340,25 @@ The following example shows the schema for a **chatId**.
 "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
 ```
 
-### createdDateTime
+### createdDateTime property
 
 The **createdDateTime** property represents the time when the message was created on the server. This timestamp might be different than the time when the message was sent by the caller. The server only records the server-side timestamp. This property is read-only; however, it can be written when you [import messages from an external system](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
-### deletedDateTime
+### deletedDateTime property
 
 If a [chatMessage](/graph/api/resources/chatmessage) is deleted, the **deletedDateTime** property contains the time that the message was deleted. This property is read-only.
 
 > **Note:** Deleted messages are not always returned by all APIs. [Change notifications](/graph/teams-changenotifications-chatmessage) always return deleted message notifications if the **changeType** of the subscription includes `deleted`.
 
-### etag
+### etag property
 
 The **etag** property represents the version of the message. Any changes to the message (including reactions and edits) changes the **etag** value of the message. This property is read-only.
 
-### eventDetail
+### eventDetail property
 
 If present, the **eventDetails** property represents details of an event that happened in a [chat](/graph/api/resources/chat), a [channel](/graph/api/resources/channel), or a [team](/graph/api/resources/team); for example, the addition of new members. For event messages, the **messageType** property of the **chatMessage** is set to `systemEventMessage`. For more information, see [Get system messages](/graph/system-messages).
 
-### from
+### from property
 
 The **from** property represents the sender of the message. Microsoft Teams supports the following sender types.
 
