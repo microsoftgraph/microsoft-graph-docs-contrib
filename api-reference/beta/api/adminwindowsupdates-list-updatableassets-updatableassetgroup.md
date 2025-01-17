@@ -3,7 +3,7 @@ title: "List updatableAssetGroup resources"
 description: "Get a list of updatableAssetGroup objects and their properties."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: apiPageType
 ms.date: 09/16/2024
 ---
