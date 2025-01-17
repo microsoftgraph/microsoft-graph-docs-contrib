@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of mailboxes that belong to a user. Currently the mailbox types supported are user's primary and in-place archive. To learn how to get a list of users in a tenant, see [List users](../api/user-list.md).
+Get a list of mailboxes that belong to a user. Currently, the mailbox types supported are the user's primary and in-place archive. To learn how to get a list of users in a tenant, see [List users](../api/user-list.md).
 
 ## Permissions
 

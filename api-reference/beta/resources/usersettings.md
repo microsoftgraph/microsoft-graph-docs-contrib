@@ -17,6 +17,7 @@ Namespace: microsoft.graph
 
 Settings that represent a user’s preferences for the following:
 - Access to Delve
+- [Exchange settings](../resources/exchangesettings.md)
 - [Item insights](../resources/officegraphinsights.md)
 - [Regional locale and languages](../resources/regionalandlanguagesettings.md)
 - [Shift scheduling](../resources/shiftpreferences.md)

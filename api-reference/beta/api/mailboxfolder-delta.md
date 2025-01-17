@@ -1,6 +1,6 @@
 ---
 title: "mailboxFolder: delta"
-description: "Get a set of folders that have been added, deleted, or removed from the user's mailbox."
+description: "Get a set of mailboxFolder objects that have been added, deleted, or removed from the user's mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium

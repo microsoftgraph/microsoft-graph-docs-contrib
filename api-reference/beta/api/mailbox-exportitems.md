@@ -1,6 +1,6 @@
 ---
 title: "mailbox: exportItems"
-description: "Export Exchange mailboxItem objects in full fidelity FTS format for the purpose of backup."
+description: "Export Exchange mailboxItem objects in full fidelity FastTransfer format for the purpose of backup."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full fidelity [FTS format](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450)
-for the purpose of backup. This item format can be restored back to the same or a different mailbox.
+Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full fidelity [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450) format for the purpose of backup. This item format can be restored to the same or a different mailbox.
 
 You can export up to 20 items in a single export request.
 
