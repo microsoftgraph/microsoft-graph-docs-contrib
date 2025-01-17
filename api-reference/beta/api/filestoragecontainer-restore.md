@@ -1,5 +1,5 @@
 ---
-title: "Restore deleted fileStorageContainer"
+title: "fileStorageContainer: restore"
 description: "Restore deleted fileStorageContainer from the deleted container collection."
 author: "tonchan-msft"
 ms.localizationpriority: medium
