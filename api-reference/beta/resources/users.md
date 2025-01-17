@@ -24,6 +24,8 @@ You can access users through Microsoft Graph in two ways:
 
 ## Common API operations
 
+In Microsoft Graph, users are represented by the [user](../resources/user.md) resource type. The following table lists common operations that you can perform on users.
+
 | Path | Description |
 |--|--|
 | [`/me`](../api/user-get.md) | Get the signed-in user's details. |
@@ -36,6 +38,7 @@ You can access users through Microsoft Graph in two ways:
 | [`/users/{id}/drive`](../api/drive-get.md) | Gets the user's OneDrive file store. |
 | [`/users/{id}/memberOf`](../api/user-list-memberof.md) | Lists the groups that the user is a member of. |
 | [`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md) | Lists the Microsoft Teams that the user is a member of. |
+| [`POST /invitations`](../api/invitation-post.md) | Invite a guest as part of business-to-business (B2B) collaboration in Microsoft Entra External ID |
 
 ## Authorization and privileges
 
