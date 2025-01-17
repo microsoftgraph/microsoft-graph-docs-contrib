@@ -1,6 +1,6 @@
 ---
 title: "x509CertificateCrlValidationConfiguration resource type"
-description: "Determines whether certificate based authentication should fail if the issuing CA does not have a valid certificate revocation list (CRL) configured. Includes the SKI of the Certificate Authorities that should be exempted from CRL validation."
+description: "Determines whether certificate-based authentication should fail if the issuing CA doesn't have a valid certificate revocation list (CRL) configured."
 author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -19,7 +19,7 @@ Determines whether issuer(CA) hints are sent back to the client side to filter t
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|exemptedCertificateAuthoritiesSubjectKeyIdentifiers|Represents the SKIs of CAs that should be excluded from the Valid CRLDistributionPoint check. SKIs should be represented as a hexadecimal string.|Collection of SKI strings.|
+|exemptedCertificateAuthoritiesSubjectKeyIdentifiers| String collection|Represents the SKIs of CAs that should be excluded from the valid CRL distribution point check. SKI is represented as a hexadecimal string.|
 |state|x509CertificateCrlValidationConfigurationState|The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
 
 ## Relationships
