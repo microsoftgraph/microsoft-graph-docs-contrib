@@ -1,6 +1,6 @@
 ---
 title: "mailboxItem resource type"
-description: "Represents an item in a mailbox folder."
+description: "Represents an item in a mailboxFolder."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an item in a mailbox folder. Items are Exchange mailbox items like message, task, event, contact, or note.
+Represents an item in a [mailboxFolder](../resources/mailboxfolder.md). Items are Exchange mailbox items like message, task, event, contact, or note.
 
 This resource supports [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a delta function. It also supports single-value and multi-value extended properties for filtering on custom data that isn't already exposed in the Microsoft Graph API metadata.
 

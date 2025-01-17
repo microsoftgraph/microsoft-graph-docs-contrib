@@ -14,11 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a folder in a user's mailbox, such as inbox, drafts, or other user created folders. Folders can contain various mailbox items like messages, events, contacts, 
-other Outlook items, and child folders.
+Represents a folder in a user's mailbox, such as inbox, drafts, or other user created folders. Folders can contain various mailbox items like messages, events, contacts, other Outlook items, and child folders.
 
-This resource supports [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
-by providing a [delta](../api/mailboxfolder-delta.md) function. It also supports [single-value and multi-value extended properties](../resources/extended-properties-overview.md) for storing and accessing custom data that isn't already exposed in the Microsoft Graph API metadata.
+This resource supports [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/mailboxfolder-delta.md) function. It also supports [single-value and multi-value extended properties](../resources/extended-properties-overview.md) for storing and accessing custom data that isn't already exposed in the Microsoft Graph API metadata.
 
 ## Methods
 |Method|Return type|Description|
@@ -44,7 +42,7 @@ by providing a [delta](../api/mailboxfolder-delta.md) function. It also supports
 |displayName|String|The display name of the folder.|
 |id|String|The unique identifier for the folder.|
 |parentFolderId|String|The unique identifier for the parent folder of this folder.|
-|parentMailboxUrl|String|The routing link to the actual underlying mailbox where the folder physically resides. The folder can be accessed using `GET {parentMailboxUrl}/folders/{id}`, which treats the entire URL as an opaque string. <br><br> This method is especially important when auto-expanding archiving is enabled for user's in-place archive mailbox. The user's archive content can span across multiple mailboxes in such cases. The **parentMailboxUrl** in such cases, provides the link to the actual underlying mailbox where the folder physically resides in.|
+|parentMailboxUrl|String|The routing link to the actual underlying mailbox where the folder physically resides. The folder can be accessed using `GET {parentMailboxUrl}/folders/{id}`, which treats the entire URL as an opaque string. <br><br> This method is especially important when auto-expanding archiving is enabled for a user's in-place archive mailbox. The user's archive content can span across multiple mailboxes in such scenarios.|
 |totalItemCount|Int32|The number of items in the folder.|
 |type|String|Describes the folder class type.|
 

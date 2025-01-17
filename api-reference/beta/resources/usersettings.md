@@ -44,10 +44,12 @@ Configure [contactMergeSuggestions](../resources/contactmergesuggestions.md):
   - Determine whether suggestions to merge duplicate contacts for a user is enabled.
   - Disable or enable suggestions to merge duplicate contacts for a user.
 
+Access the user's [Exchange settings](../resources/exchangesettings.md). Get a list of mailboxes that belong to a user.
+
 Export users' Windows settings and values stored in a cloud:
   - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects.
   - Get a filtered list of the user's [windowsSetting](../resources/windowssetting.md) objects by passing one of the following in the filter query:
-    - [windowssettingtype](../resources/enums.md#windowssettingtype-values)
+    - [windowsSettingType](../resources/enums.md#windowssettingtype-values)
     - [windowsDeviceId](../resources/windowssetting.md#properties)
 
 Inherits from [entity](entity.md).
