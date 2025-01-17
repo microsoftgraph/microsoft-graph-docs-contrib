@@ -19,6 +19,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## January 2025: New and generally available 
 
+### Files
+
+Updated the endpoint of the [fileStorageContainer: restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore) method.
+
 ### Teamwork and communications | Messaging
 
 [Get](/graph/api/chatmessage-get#example-5-get-a-chat-message-with-an--for-everyone) a chat message with an @mention for everyone.
@@ -29,6 +33,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - [Retry](/graph/api/cloudpcbulkaction-retry?view=graph-rest-beta&preserve-view=true) a bulk action with selected Cloud PCs.
 - Use the **productType** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the product type of a Cloud PC or to filter Cloud PCs by product type.
+
+### Files
+
+Updated the endpoint of the [fileStorageContainer: restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore?view=graph-rest-beta&preserve-view=true) method.
 
 ### Identity and access | Directory management
 
