@@ -21,8 +21,8 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create import session](../api/mailbox-createimportsession.md)|[mailboxItemImportSession](../resources/mailboxitemimportsession.md)|Create a session for importing an Exchange mailbox item using its [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450) format.|
-|[Export items](../api/mailbox-exportitems.md)|[exportItemResponse](../resources/exportitemresponse.md) collection|Export Exchange **mailboxItem** objects in full fidelity [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450) format for the purpose of backup.|
+|[Create import session](../api/mailbox-createimportsession.md)|[mailboxItemImportSession](../resources/mailboxitemimportsession.md)|Create a session for [importing an Exchange mailbox item](/graph/import-exchange-mailbox-item) using its [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format.|
+|[Export items](../api/mailbox-exportitems.md)|[exportItemResponse](../resources/exportitemresponse.md) collection|Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full fidelity [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450) format for the purpose of backup. This item format can be restored to the same or a different mailbox.|
 
 ## Properties
 |Property|Type|Description|

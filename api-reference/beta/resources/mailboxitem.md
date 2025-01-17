@@ -23,9 +23,9 @@ Inherits from [outlookItem](../resources/outlookitem.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified folder in a mailbox.|
+|[List](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.|
 |[Get](../api/mailboxitem-get.md)|[mailboxItem](../resources/mailboxitem.md)|Read the properties and relationships of a [mailboxItem](../resources/mailboxitem.md) object.|
-|[Get delta](../api/mailboxitem-delta.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get a set of [mailboxItem](../resources/mailboxitem.md) objects that have been added, deleted, or updated in a specified folder.|
+|[Get delta](../api/mailboxitem-delta.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get a set of [mailboxItem](../resources/mailboxitem.md) objects that have been added, deleted, or updated in a specified [mailboxFolder](../resources/mailboxfolder.md).|
 |**Extended properties**| | |
 |[Get singleValueExtendedProperty](../api/singlevaluelegacyextendedproperty-get.md)|[mailboxItem](../resources/mailboxitem.md)|Get mailbox items that contain a single-value extended property by using `$expand` or `$filter`.|
 |[Get multiValueExtendedProperties](../api/multivaluelegacyextendedproperty-get.md)|[mailboxItem](../resources/mailboxitem.md)|Get a mailbox item that contains a multi-value extended property by using `$expand`.|

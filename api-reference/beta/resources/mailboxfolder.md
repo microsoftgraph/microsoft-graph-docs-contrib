@@ -22,13 +22,13 @@ This resource supports [delta query](/graph/delta-query-overview) to track incre
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/mailbox-list-folders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get all the [mailboxFolder](../resources/mailboxfolder.md) objects in the specified mailbox, including any search folders.|
-|[Create](../api/mailbox-post-folders.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new [mailboxFolder](../resources/mailboxfolder.md) or child folder in a mailbox.|
+|[Create](../api/mailbox-post-folders.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create a new [mailboxFolder](../resources/mailboxfolder.md) or child **mailboxFolder** in a user's mailbox.|
 |[Get](../api/mailboxfolder-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Read the properties and relationships of a [mailboxFolder](../resources/mailboxfolder.md) object.|
 |[Update](../api/mailboxfolder-update.md)|[mailboxFolder](../resources/mailboxfolder.md)|Update [mailboxFolder](../resources/mailboxfolder.md) properties such as the **displayName** within a mailbox.|
-|[Delete](../api/mailbox-delete-folders.md)|None|Delete a [folder](../resources/mailboxfolder.md) or a child folder within a mailbox.|
+|[Delete](../api/mailbox-delete-folders.md)|None|Delete a [mailboxFolder](../resources/mailboxfolder.md) or a child **mailboxFolder** within a mailbox.|
 |[Get delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that have been added, deleted, or removed from the user's mailbox.|
-|[List child mailbox folders](../api/mailboxfolder-list-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get the [mailboxFolder](../resources/mailboxfolder.md) collection under the specified folder in a mailbox.|
-|[List items in folder](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified folder in a mailbox.|
+|[List child mailbox folders](../api/mailboxfolder-list-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get the [mailboxFolder](../resources/mailboxfolder.md) collection under the specified **mailboxFolder** in a mailbox.|
+|[List items in folder](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.|
 |**Extended properties**| | |
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get mailbox folders that contain a single-value extended property by using `$expand` or `$filter`.|
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create one or more single-value extended properties in a new or existing mailbox folder.|

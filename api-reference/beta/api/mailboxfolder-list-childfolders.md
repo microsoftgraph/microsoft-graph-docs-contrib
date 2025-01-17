@@ -1,6 +1,6 @@
 ---
 title: "List childFolders"
-description: "Get the mailboxFolder collection under the specified folder in a mailbox."
+description: "Get the mailboxFolder collection under the specified mailboxFolder in a mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [mailboxFolder](../resources/mailboxfolder.md) collection under the specified folder in a mailbox.
+Get the [mailboxFolder](../resources/mailboxfolder.md) collection under the specified [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.
 
 ## Permissions
 

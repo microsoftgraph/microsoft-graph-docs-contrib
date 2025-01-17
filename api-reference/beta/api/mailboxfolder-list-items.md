@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified folder in a mailbox.
+Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.
 
 ## Permissions
 
