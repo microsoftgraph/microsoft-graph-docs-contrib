@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Get change notifications for chats using Microsoft Graph
@@ -81,16 +82,16 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Subscribe to changes in a particular chat using the **notifyOnUserSpecificProperties** query parameter (preview)
+### Example 2: Subscribe to changes in a particular chat using the **notifyOnUserSpecificProperties** query parameter
 
 The following example shows how to subscribe to receive notifications of changes in a particular chat by providing the **notifyOnUserSpecificProperties** query parameter.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
-  "changeType": "created,updated",
+  "changeType": "updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "/chats/{id}?notifyOnUserSpecificProperties=true",
   "includeResourceData": true,
@@ -101,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to changes in any chat at user level (preview)
+## Subscribe to changes in any chat at user level
 
 To get change notifications for all changes across all chats a particular user is part of, subscribe to `/users/{user-id}/chats`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification and [providing the **notifyOnUserSpecificProperties** query string parameter](#notification-payloads-for-user-specific-properties) in user context.
 
@@ -118,7 +119,7 @@ To get change notifications for all changes across all chats a particular user i
 The following example shows how to subscribe to receive notifications of changes across all chats a particular user is part of.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -138,7 +139,7 @@ Content-Type: application/json
 The following example shows how to subscribe to receive notifications of changes across all chats the signed-in user is part of.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -158,7 +159,7 @@ Content-Type: application/json
 The following example shows how to subscribe to receive notifications of changes across all chats a particular user is part of by providing the **notifyOnUserSpecificProperties** query parameter.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

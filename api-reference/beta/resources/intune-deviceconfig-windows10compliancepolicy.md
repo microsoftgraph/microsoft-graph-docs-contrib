@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 10/22/2024
 ---
 
 # windows10CompliancePolicy resource type
@@ -75,6 +76,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune-shared-devicecomplian
 |configurationManagerComplianceRequired|Boolean|Require to consider SCCM Compliance state into consideration for Intune Compliance State.|
 |tpmRequired|Boolean|Require Trusted Platform Module(TPM) to be present.|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)||
+|wslDistributions|[wslDistributionConfiguration](../resources/intune-deviceconfig-wsldistributionconfiguration.md) collection||
 
 ## Relationships
 |Relationship|Type|Description|
@@ -153,6 +155,14 @@ Here is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
     "deviceComplianceScriptId": "String",
     "rulesContent": "binary"
-  }
+  },
+  "wslDistributions": [
+    {
+      "@odata.type": "microsoft.graph.wslDistributionConfiguration",
+      "distribution": "String",
+      "minimumOSVersion": "String",
+      "maximumOSVersion": "String"
+    }
+  ]
 }
 ```

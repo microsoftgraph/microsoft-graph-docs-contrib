@@ -1,10 +1,11 @@
 ---
 title: "cloudPcConnection resource type"
-description: "Represents a cloud PC connection for a given managed tenant."
+description: "Represents a Cloud PC connection for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # cloudPcConnection resource type
@@ -13,13 +14,13 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud PC connection for a given managed tenant.
+Represents a Cloud PC connection for a given managed tenant.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloud PC connections](../api/managedtenants-managedtenant-list-cloudpcconnections.md)|[microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md) collection|Get a list of the [cloudPcConnection](../resources/managedtenants-cloudpcconnection.md) objects and their properties.|
-|[Get cloud PC connection](../api/managedtenants-cloudpcconnection-get.md)|[microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md)|Read the properties and relationships of a [cloudPcConnection](../resources/managedtenants-cloudpcconnection.md) object.|
+|[List Cloud PC connections](../api/managedtenants-managedtenant-list-cloudpcconnections.md)|[microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md) collection|Get a list of the [cloudPcConnection](../resources/managedtenants-cloudpcconnection.md) objects and their properties.|
+|[Get Cloud PC connection](../api/managedtenants-cloudpcconnection-get.md)|[microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md)|Read the properties and relationships of a [cloudPcConnection](../resources/managedtenants-cloudpcconnection.md) object.|
 
 ## Properties
 |Property|Type|Description|

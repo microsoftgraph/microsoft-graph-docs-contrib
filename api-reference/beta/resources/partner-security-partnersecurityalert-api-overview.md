@@ -5,6 +5,7 @@ author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
+ms.date: 05/07/2024
 ---
 
 # Use the partner security alert API in Microsoft Graph (preview)

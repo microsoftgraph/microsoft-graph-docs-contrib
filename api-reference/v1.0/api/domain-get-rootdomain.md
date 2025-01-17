@@ -5,6 +5,7 @@ author: "shilpi-kansal"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get rootDomain
@@ -15,7 +16,7 @@ Get the [root domain](../resources/domain.md) of a subdomain.
 
 This API returns a single object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "domain_get_rootdomain" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-get-rootdomain-permissions.md)]
+
+[!INCLUDE [rbac-domain-apis-read](../includes/rbac-for-apis/rbac-domain-apis-read.md)]
 
 ## HTTP request
 

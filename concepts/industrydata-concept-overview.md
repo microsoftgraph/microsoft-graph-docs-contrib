@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "industry-data-etl"
 ms.custom: scenarios:getting-started
 doc_type: conceptual
+ms.date: 11/07/2024
 ---
 
 # Overview of the industry data API in Microsoft Graph (preview)

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Invalid license
+ms.date: 09/19/2024
 ---
 
 # invalidLicenseAlertConfiguration resource type

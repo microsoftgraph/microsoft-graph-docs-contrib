@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ms.date: 04/03/2024
 ---
 
 # privilegedAccess resource type

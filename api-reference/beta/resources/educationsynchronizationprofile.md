@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Synchronization profile (deprecated)
+ms.date: 07/22/2024
 ---
 
 # educationSynchronizationProfile resource type (deprecated)

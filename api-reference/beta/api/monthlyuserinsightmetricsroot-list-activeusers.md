@@ -5,6 +5,7 @@ author: "srutto"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List monthly activeUsers

@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkPeripheral resource type
@@ -25,6 +26,9 @@ Inherits from [entity](../resources/entity.md).
 |productId|String|The product ID of the device. Each product from a vendor has its own ID.|
 |vendorId|String|The unique identifier for the vendor of the device. Each vendor has a unique ID.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

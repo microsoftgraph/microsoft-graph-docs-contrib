@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
+ms.date: 11/07/2024
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -48,7 +49,7 @@ The following table specifies which operations are available in each state.
 | Delete connection | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Create schema     | :heavy_check_mark: | :x:                | :x:                | :x:                |
 | Read schema       | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Update schema     | :x:                | :x:                | :x:                | :x:                |
+| Update schema     | :x:                | :heavy_check_mark: | :x:                | :x:                |
 | Delete schema     | :x:                | :x:                | :x:                | :x:                |
 | Create item       | :x:                | :heavy_check_mark: | :x:                | :x:                |
 | Read item         | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |

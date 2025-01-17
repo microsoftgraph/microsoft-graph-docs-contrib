@@ -1,17 +1,18 @@
 ---
 title: "invitation resource type"
-description: "Represents an invitation that is used to add external users to an organization as part of Microsoft Entra business-to-business (Microsoft Entra B2B) collaboration."
+description: "Represents an invitation that is used to add external users to an organization as part of B2B collaboration in Microsoft Entra External ID."
 ms.localizationpriority: high
 author: "ppolkadots"
-ms.subservice: "entra-sign-in"
+ms.subservice: "entra-users"
 doc_type: resourcePageType
+ms.date: 06/05/2024
 ---
 
 # invitation resource type
 
 Namespace: microsoft.graph
 
-Represents an invitation that is used to add external users to an organization as part of Microsoft Entra business-to-business (Microsoft Entra B2B) collaboration.
+Represents an invitation that is used to add external users to an organization as part of business-to-business (B2B) collaboration in Microsoft Entra External ID.
 
 The invitation process uses the following flow:
 

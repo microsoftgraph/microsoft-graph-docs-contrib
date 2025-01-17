@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "skandula"
 ms.subservice: autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # itemBody resource type

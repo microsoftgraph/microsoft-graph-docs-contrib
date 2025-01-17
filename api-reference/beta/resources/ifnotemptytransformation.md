@@ -5,6 +5,7 @@ author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.subservice: entra-id
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # ifNotEmptyTransformation resource type

@@ -5,6 +5,7 @@ author: "AkJo"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/18/2024
 ---
 
 # aadUserConversationMemberResult resource type
@@ -21,8 +22,11 @@ Inherits from [actionResultPart](actionresultpart.md).
 
 | Property | Type	| Description |
 |:---------------|:--------|:----------|
-|userId|String|The user object ID of the Microsoft Entra user that was being added as part of the bulk operation.|
 |error|[publicError](publicerror.md) |The error that occurred, if any, during the course of the bulk operation.|
+|userId|String|The user object ID of the Microsoft Entra user that was being added as part of the bulk operation.|
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -35,14 +39,15 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-    "userId": "String",
-    "error": "microsoft.graph.publicError"
+  "error": "microsoft.graph.publicError",
+  "userId": "String"
 }
 ```
 
 ## Related content
 
 - [Add members in bulk to a team](../api/conversationmembers-add.md)
+- [Remove members in bulk from a team](../api/conversationmember-remove.md)
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->

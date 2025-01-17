@@ -5,6 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 01/09/2025
 ---
 
 # customAuthenticationExtension resource type
@@ -18,6 +19,7 @@ Custom authentication extensions define interactions with external systems durin
 - [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+- [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) resource type.
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
@@ -41,6 +43,7 @@ Learn how to use this API when [Configuring a custom claim provider token issuan
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|behaviorOnError|[customExtensionBehaviorOnError](../resources/customextensionbehavioronerror.md)|The behaviour on error for the custom authentication extension.|
 |clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |description|String|The description of the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|The display name for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
@@ -74,6 +77,9 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "endpointConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+  },
+  "behaviorOnError": {
+    "@odata.type": "microsoft.graph.customExtensionBehaviorOnError"
   }
 }
 ```

@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|LearningAssignedCourse.Read|LearningSelfInitiatedCourse.Read|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|LearningAssignedCourse.Read.All|LearningSelfInitiatedCourse.Read.All|
+|Application|LearningAssignedCourse.Read.All|LearningAssignedCourse.ReadWrite.All, LearningSelfInitiatedCourse.Read.All, LearningSelfInitiatedCourse.ReadWrite.All|
 

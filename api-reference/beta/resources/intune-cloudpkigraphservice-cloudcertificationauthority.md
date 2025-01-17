@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 10/14/2024
 ---
 
 # cloudCertificationAuthority resource type
@@ -30,6 +31,8 @@ Entity that represents a collection of metadata of a cloud certification authori
 |[patchCloudCertificationAuthority action](../api/intune-cloudpkigraphservice-cloudcertificationauthority-patchcloudcertificationauthority.md)|[cloudCertificationAuthority](../resources/intune-cloudpkigraphservice-cloudcertificationauthority.md)||
 |[getAllCloudCertificationAuthorityLeafCertificates action](../api/intune-cloudpkigraphservice-cloudcertificationauthority-getallcloudcertificationauthorityleafcertificates.md)|[cloudCertificationAuthorityLeafCertificate](../resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate.md) collection||
 |[revokeLeafCertificate action](../api/intune-cloudpkigraphservice-cloudcertificationauthority-revokeleafcertificate.md)|[cloudCertificationAuthorityLeafCertificate](../resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate.md)||
+|[revokeLeafCertificateBySerialNumber action](../api/intune-cloudpkigraphservice-cloudcertificationauthority-revokeleafcertificatebyserialnumber.md)|[cloudCertificationAuthorityLeafCertificate](../resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate.md)||
+|[searchCloudCertificationAuthorityLeafCertificateBySerialNumber action](../api/intune-cloudpkigraphservice-cloudcertificationauthority-searchcloudcertificationauthorityleafcertificatebyserialnumber.md)|[cloudCertificationAuthorityLeafCertificate](../resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate.md)||
 |[changeCloudCertificationAuthorityStatus action](../api/intune-cloudpkigraphservice-cloudcertificationauthority-changecloudcertificationauthoritystatus.md)|[cloudCertificationAuthority](../resources/intune-cloudpkigraphservice-cloudcertificationauthority.md)||
 |[revokeCloudCertificationAuthorityCertificate action](../api/intune-cloudpkigraphservice-cloudcertificationauthority-revokecloudcertificationauthoritycertificate.md)|[cloudCertificationAuthority](../resources/intune-cloudpkigraphservice-cloudcertificationauthority.md)||
 |[uploadExternallySignedCertificationAuthorityCertificate action](../api/intune-cloudpkigraphservice-cloudcertificationauthority-uploadexternallysignedcertificationauthoritycertificate.md)|[cloudCertificationAuthority](../resources/intune-cloudpkigraphservice-cloudcertificationauthority.md)||

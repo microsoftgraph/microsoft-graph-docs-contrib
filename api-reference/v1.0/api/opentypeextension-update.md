@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.subservice: extensions
 doc_type: apiPageType
+ms.date: 07/22/2024
 ---
 
 # Update open extension

@@ -5,6 +5,7 @@ ms.reviewer: ric.lewis
 ms.subservice: change-notifications
 ms.topic: include
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD041-->
@@ -33,7 +34,7 @@ ms.localizationpriority: high
 | Group [conversation][]                         | 4,230 minutes (under three days)  |
 | OneDrive [driveItem][]                         | 42,300 minutes (under 30 days)    |
 | SharePoint [list][]                            | 42,300 minutes (under 30 days)    |
-| Outlook [message][], [event][], [contact][]    | 4,230 minutes (under three days)  |
+| Outlook [message][], [event][], [contact][]    | 10,080 minutes (under seven days)  |
 | [user][], [group][], other directory resources | 41,760 minutes (under 29 days)    |
 | [onlineMeeting][]                              | 4,230 minutes (under three days)  |
 | [presence][]                                   | 60 minutes (1 hour)               |

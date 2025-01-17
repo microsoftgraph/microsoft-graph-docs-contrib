@@ -8,23 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new FileStorageContainer
 {
 	DisplayName = "My Application Storage Container",
 	Description = "Description of My Application Storage Container",
 	ContainerTypeId = Guid.Parse("91710488-5756-407f-9046-fbe5f0b4de73"),
-	AdditionalData = new Dictionary<string, object>
+	Settings = new FileStorageContainerSettings
 	{
-		{
-			"settings" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"isOcrEnabled", new UntypedBoolean(true)
-				},
-			})
-		},
+		IsOcrEnabled = true,
 	},
 };
 

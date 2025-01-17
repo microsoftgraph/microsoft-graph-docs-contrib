@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 08/14/2024
 ---
 
 # List outcomes

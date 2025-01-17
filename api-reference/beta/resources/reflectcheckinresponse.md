@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: "Reflect check-in response"
+ms.date: 09/19/2024
 ---
 
 # reflectCheckInResponse resource type
@@ -15,7 +16,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a response to [Microsoft Reflect](https://reflect.microsoft.com/) check-in.
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods

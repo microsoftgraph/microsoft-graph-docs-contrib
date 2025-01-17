@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: sseth-msft
 ms.subservice: "compliance"
 doc_type: conceptualPageType
+ms.date: 06/11/2024
 ---
 
 # Use the Microsoft Graph records management APIs

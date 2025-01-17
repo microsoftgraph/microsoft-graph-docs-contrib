@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: extensions
 author: "dkershaw10"
+ms.date: 04/18/2024
 ---
 
 # extensionSchemaProperty resource type
@@ -32,6 +33,9 @@ The following data types are supported when defining a property in a schema exte
 | DateTime | Must be specified in ISO 8601 format. Is stored in UTC. |
 | Integer | 32-bit value. Not supported for messages, events, and posts. |
 | String | 256 characters maximum. |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

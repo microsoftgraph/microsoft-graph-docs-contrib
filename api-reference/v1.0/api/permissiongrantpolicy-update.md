@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: "apiPageType"
 ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 06/26/2024
 ---
 
 # Update permissionGrantPolicy

@@ -5,6 +5,7 @@ author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # virtualEventTownhall: getByUserRole
@@ -159,7 +160,13 @@ Content-Type: application/json
       ],
       "settings": {
         "isAttendeeEmailNotificationEnabled": false
-      }
+      },
+      "externalEventInformation": [
+        {
+          "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",
+          "externalEventId": "myExternalEventId"
+        }
+      ]
     }
   ]
 }

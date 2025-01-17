@@ -16,6 +16,16 @@ Namespace: microsoft.graph
 The **Folder** resource groups folder-related data on an item into a single structure.
 [**DriveItems**](driveitem.md) with a non-null **folder** facet are containers for other DriveItems.
 
+## Properties
+
+| Property       | Type           | Description|
+|:---------------|:---------------|:-------------------------------------------|
+| childCount | Int64          | Number of children contained immediately within this container.|
+| view       | [folderView][] | A collection of properties defining the recommended view for the folder.|
+
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
@@ -34,15 +44,6 @@ The following JSON representation shows the resource type.
   "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
-
-## Properties
-
-| Property       | Type           | Description
-|:---------------|:---------------|:-------------------------------------------
-| **childCount** | Int64          | Number of children contained immediately within this container.
-| **view**       | [folderView][] | A collection of properties defining the recommended view for the folder.
-
-
 ## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem][].

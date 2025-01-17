@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 toc.title: Virtual event registration question
+ms.date: 06/27/2024
 ---
 
 # virtualEventRegistrationQuestionBase resource type
@@ -38,6 +39,9 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|Display name of the registration question.|
 |id|String|Unique identifier of the registration question. Inherited from [entity](../resources/entity.md).|
 |isRequired|Boolean| Indicates whether an answer to the question is required. The default value is `false`.|
+
+## Relationships
+None.
 
 ## JSON representation
 

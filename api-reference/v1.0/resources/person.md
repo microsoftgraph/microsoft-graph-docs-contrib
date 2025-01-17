@@ -5,6 +5,7 @@ author: "simonhult"
 ms.localizationpriority: high
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # person resource type

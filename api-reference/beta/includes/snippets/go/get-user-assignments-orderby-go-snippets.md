@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &grapheducation.EducationMeAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ItemAssignmentsRequestBuilderGetQueryParameters{
 	Orderby: [] string {"status"},
 }
-configuration := &grapheducation.EducationMeAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ItemAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

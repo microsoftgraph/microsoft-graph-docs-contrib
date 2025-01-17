@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: resourcePageType
 toc.title: Cloud clipboard
+ms.date: 05/23/2024
 ---
 
 # cloudClipboardRoot resource type

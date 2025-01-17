@@ -12,8 +12,8 @@ SocialIdentityProvider identityProviderBase = new SocialIdentityProvider();
 identityProviderBase.setOdataType("microsoft.graph.socialIdentityProvider");
 identityProviderBase.setDisplayName("Login with Amazon");
 identityProviderBase.setIdentityProviderType("Amazon");
-identityProviderBase.setClientId("56433757-cadd-4135-8431-2c9e3fd68ae8");
-identityProviderBase.setClientSecret("000000000000");
+identityProviderBase.setClientId("00001111-aaaa-2222-bbbb-3333cccc4444");
+identityProviderBase.setClientSecret("42*****96");
 IdentityProviderBase result = graphClient.identity().identityProviders().post(identityProviderBase);
 
 

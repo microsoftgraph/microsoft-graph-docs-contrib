@@ -6,13 +6,14 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 05/23/2024
 ---
 
 # Remove member
 
 Namespace: microsoft.graph
 
-Remove a member from a group via the **members** navigation property. You can't remove a member from groups with dynamic memberships.
+Remove a member from a [group](../resources/group.md) via the **members** navigation property. You can't remove a member from groups with dynamic memberships.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -5,6 +5,7 @@ description: "The documentSetContent resource contains metadata about a file pre
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 03/12/2024
 ---
 
 # documentSetContent resource type

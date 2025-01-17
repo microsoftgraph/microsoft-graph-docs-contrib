@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # Delete teamsApp

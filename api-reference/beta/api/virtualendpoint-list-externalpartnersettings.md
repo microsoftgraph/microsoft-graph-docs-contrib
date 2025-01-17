@@ -5,6 +5,7 @@ author: "Shaowei-Dong"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List cloudPcExternalPartnerSettings

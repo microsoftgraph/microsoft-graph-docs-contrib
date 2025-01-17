@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 09/23/2024
 ---
 
 # Update profilePhoto
@@ -46,7 +47,7 @@ The following tables show the least privileged permission or permissions require
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 | Delegated (work or school account)        | TeamSettings.ReadWrite.All | Not supported. |
 | Delegated (personal Microsoft account)    | Not supported.     | Not supported. |
-| Application                               | Not supported. | Not supported. |
+| Application                               | TeamSettings.ReadWrite.All | Not supported. |
 
 ### To update the profile photo of a user
 

@@ -5,6 +5,7 @@ author: "sponnada"
 ms.localizationpriority: medium
 ms.subservice: "entra-users"
 doc_type: apiPageType
+ms.date: 05/28/2024
 ---
 
 # List invitedBy

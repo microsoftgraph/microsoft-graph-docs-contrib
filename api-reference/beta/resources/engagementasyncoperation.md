@@ -5,6 +5,7 @@ author: "aditijha4"
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: resourcePageType
+ms.date: 07/21/2024
 ---
 
 # engagementAsyncOperation resource type
@@ -44,6 +45,9 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 |:---------------|:----------|
 | createCommunity | Operation to create a Viva Engage community. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+
+## Relationships
+None.
 
 ## JSON representation
 

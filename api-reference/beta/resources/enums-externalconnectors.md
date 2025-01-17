@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "search"
 ms.author: "emzho"
 author: "emzho"
+ms.date: 03/06/2024
 ---
 
 # External connectors enum values

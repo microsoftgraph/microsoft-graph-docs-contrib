@@ -5,11 +5,266 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "security"
 author: "BenAlfasi"
+ms.date: 11/11/2024
 ---
 
 # Security enum values
 
 Namespace: microsoft.graph.security
+
+### appCategory values 
+
+|Member|
+|:---|
+|security|
+|collaboration|
+|hostingServices|
+|onlineMeetings|
+|newsAndEntertainment|
+|eCommerce|
+|education|
+|cloudStorage|
+|marketing|
+|operationsManagement|
+|health|
+|advertising|
+|productivity|
+|accountingAndFinance|
+|contentManagement|
+|contentSharing|
+|businessManagement|
+|communications|
+|dataAnalytics|
+|businessIntelligence|
+|webemail|
+|codeHosting|
+|webAnalytics|
+|socialNetwork|
+|crm|
+|forums|
+|humanResourceManagement|
+|transportationAndTravel|
+|productDesign|
+|sales|
+|cloudComputingPlatform|
+|projectManagement|
+|personalInstantMessaging|
+|developmentTools|
+|itServices|
+|supplyChainAndLogistics|
+|propertyManagement|
+|customerSupport|
+|internetOfThings|
+|vendorManagementSystems|
+|websiteMonitoring|
+|generativeAi|
+|unknown|
+|unknownFutureValue|
+
+### appInfoCsaStarLevel values 
+
+|Member|
+|:---|
+|selfAssessment|
+|certification|
+|attestation|
+|cStarAssessment|
+|continuousMonitoring|
+|unknown|
+|unknownFutureValue|
+
+### appInfoDataAtRestEncryptionMethod values 
+
+|Member|
+|:---|
+|aes|
+|bitLocker|
+|blowfish|
+|des3|
+|des|
+|rc4|
+|rsA|
+|notSupported|
+|unknown|
+|unknownFutureValue|
+
+### appInfoDataRetentionPolicy values 
+
+|Member|
+|:---|
+|dataRetained|
+|deletedImmediately|
+|deletedWithinTwoWeeks|
+|deletedWithinOneMonth|
+|deletedWithinThreeMonths|
+|deletedWithinMoreThanThreeMonths|
+|unknown|
+|unknownFutureValue|
+
+### appInfoFedRampLevel values 
+
+|Member|
+|:---|
+|high|
+|moderate|
+|low|
+|liSaaS|
+|unknown|
+|unknownFutureValue|
+|notSupported|
+
+### appInfoHolding values 
+
+|Member|
+|:---|
+|private|
+|public|
+|unknown|
+|unknownFutureValue|
+
+### appInfoPciDssVersion values 
+
+|Member|
+|:---|
+|v1|
+|v2|
+|v3|
+|v3_1|
+|v3_2|
+|v3_2_1|
+|notSupported|
+|unknown|
+|unknownFutureValue|
+|v4|
+
+### appInfoEncryptionProtocol values 
+
+|Member|
+|:---|
+|tls1_0|
+|tls1_1|
+|tls1_2|
+|tls1_3|
+|notApplicable|
+|notSupported|
+|unknown|
+|unknownFutureValue|
+|ssl3|
+
+### appInfoUploadedDataTypes values 
+
+|Member|
+|:---|
+|documents|
+|mediaFiles|
+|codingFiles|
+|creditCards|
+|databaseFiles|
+|none|
+|unknown|
+|unknownFutureValue|
+
+### cloudAppInfoState values 
+
+|Member|
+|:---|
+|true|
+|false|
+|unknown|
+|unknownFutureValue|
+
+### entityType values 
+
+|Member|
+|:---|
+|userName|
+|ipAddress|
+|machineName|
+|other|
+|unknown|
+|unknownFutureValue|
+
+### logDataProvider values 
+
+|Member|
+|:---|
+|barracuda|
+|bluecoat|
+|checkpoint|
+|ciscoAsa|
+|ciscoIronportProxy|
+|fortigate|
+|paloAlto|
+|squid|
+|zscaler|
+|mcafeeSwg|
+|ciscoScanSafe|
+|juniperSrx|
+|sophosSg|
+|websenseV75|
+|websenseSiemCef|
+|machineZoneMeraki|
+|squidNative|
+|ciscoFwsm|
+|microsoftIsaW3C|
+|sonicwall|
+|sophosCyberoam|
+|clavister|
+|customParser|
+|juniperSsg|
+|zscalerQradar|
+|juniperSrxSd|
+|juniperSrxWelf|
+|microsoftConditionalAppAccess|
+|ciscoAsaFirepower|
+|genericCef|
+|genericLeef|
+|genericW3C|
+|iFilter|
+|checkpointXml|
+|checkpointSmartViewTracker|
+|barracudaNextGenFw|
+|barracudaNextGenFwWeblog|
+|microsoftDefenderForEndpoint|
+|zscalerCef|
+|sophosXg|
+|iboss|
+|forcepoint|
+|fortios|
+|ciscoIronportWsaIi|
+|paloAltoLeef|
+|forcepointLeef|
+|stormshield|
+|contentkeeper|
+|ciscoIronportWsaIii|
+|checkpointCef|
+|corrata|
+|ciscoFirepowerV6|
+|menloSecurityCef|
+|watchguardXtm|
+|openSystemsSecureWebGateway|
+|wandera|
+|unknownFutureValue|
+
+### receiverProtocol values 
+
+|Member|
+|:---|
+|ftp|
+|ftps|
+|syslogUdp|
+|syslogTcp|
+|syslogTls|
+|unknownFutureValue|
+
+### trafficType values 
+
+|Member|
+|:---|
+|downloadedBytes|
+|uploadedBytes|
+|unknown|
+|unknownFutureValue|
 
 ### auditLogQueryStatus values
 

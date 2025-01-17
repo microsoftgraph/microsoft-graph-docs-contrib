@@ -5,6 +5,7 @@ author: "vinny2020"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 07/02/2024
 ---
 
 # List relatedHosts

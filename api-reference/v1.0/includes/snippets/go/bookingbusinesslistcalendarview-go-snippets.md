@@ -19,11 +19,11 @@ import (
 requestStart := "2018-04-30T00:00:00Z"
 requestEnd := "2018-05-10T00:00:00Z"
 
-requestParameters := &graphsolutions.SolutionsBookingBusinesseItemCalendarViewRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.BookingBusinessesItemCalendarViewRequestBuilderGetQueryParameters{
 	Start: &requestStart,
 	End: &requestEnd,
 }
-configuration := &graphsolutions.SolutionsBookingBusinesseItemCalendarViewRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.BookingBusinessesItemCalendarViewRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

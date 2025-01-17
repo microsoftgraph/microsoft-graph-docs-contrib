@@ -5,6 +5,7 @@ author: "payiAzure"
 ms.localizationpriority: medium
 ms.subservice: "service-communications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # serviceUpdateMessage: unfavorite

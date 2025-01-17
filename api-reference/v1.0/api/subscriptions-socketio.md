@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 description: "Allows you to receive near-real-time change notifications for a drive using socket.io."
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get websocket endpoint

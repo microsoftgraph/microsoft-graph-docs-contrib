@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # onenoteOperation resource type

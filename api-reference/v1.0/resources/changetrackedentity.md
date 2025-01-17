@@ -2,7 +2,8 @@
 title: "changeTrackedEntity resource type"
 description: "Represents an entity to track changes made to any supported Shifts resource"
 ms.localizationpriority: medium
-author: "akumar39"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
@@ -12,6 +13,16 @@ doc_type: "resourcePageType"
 Namespace: microsoft.graph
 
 Represents an entity to track changes made to any supported [schedule](schedule.md) and associated resource.
+
+Base type of [openShift](../resources/openshift.md), [shift](../resources/shift.md), and [timeOff](../resources/timeoff.md).
+
+Inherits from [entity](../resources/entity.md).
+
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Stage for deletion](../api/changetrackedentity-stagefordeletion.md)|None|Stage the deletion of an [openShift](../resources/openshift.md), [shift](../resources/shift.md), or [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.|
 
 ## Properties
 
@@ -42,6 +53,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.changeTrackedEntity",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
