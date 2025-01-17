@@ -2139,6 +2139,26 @@
       ]
     },
     {
+      "name": "Mailbox import and export",
+      "overview": "../../resources/exchange-import-export-api-overview.md",
+      "keywords": [
+        "Exchange",
+        "Exchange Import-Export",
+        "Mailbox",
+        "Mailbox import and export"
+      ],
+      "resources": [
+        "mailbox",
+        "mailboxItem",
+        "mailboxFolder",
+        "exchangeSettings"
+      ],
+      "complexTypes": [
+        "exportItemResponse",
+        "mailboxItemImportSession"
+      ]
+    },
+    {
       "name": "Notes",
       "overview": "../../resources/onenote-api-overview.md",
       "keywords": [
@@ -3244,25 +3264,6 @@
         "workbookSessionInfo",
         "workbookSortField",
         "workbookWorksheetProtectionOptions"
-      ]
-    },
-    {
-      "name": "Exchange",
-      "overview": "../../resources/exchange-import-export-api-overview.md",
-      "keywords": [
-        "Exchange",
-        "Exchange Import-Export",
-        "Mailbox"
-      ],
-      "resources": [
-        "mailbox",
-        "mailboxItem",
-        "mailboxFolder",
-        "exchangeSettings"
-      ],
-      "complexTypes": [
-        "exportItemResponse",
-        "mailboxItemImportSession"
       ]
     }
   ],
