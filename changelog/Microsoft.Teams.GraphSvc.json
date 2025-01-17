@@ -2535,20 +2535,28 @@
     {
       "ChangeList": [
         {
-          "Id": "51235d32-f43b-4fb8-a418-75ea80730a40",
+          "Id": "1603e01e-0754-4e96-a370-ba15c9d88ac0",
           "ApiChange": "Relationship",
           "ChangedApiName": "interactionHistory",
           "ChangeType": "Addition",
           "Description": "Added the **interactionHistory** relationship to the [copilotRoot](https://learn.microsoft.com/en-us/graph/api/resources/copilotRoot?view=graph-rest-beta) resource.",
           "Target": "copilotRoot"
+        },
+        {
+          "Id": "1603e01e-0754-4e96-a370-ba15c9d88ac0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "copilotRoot",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [copilotRoot](https://learn.microsoft.com/en-us/graph/api/resources/copilotRoot?view=graph-rest-beta) resource.",
+          "Target": "copilotRoot"
         }
       ],
-      "Id": "51235d32-f43b-4fb8-a418-75ea80730a40",
+      "Id": "1603e01e-0754-4e96-a370-ba15c9d88ac0",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-01-17T19:08:30.9147043Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "AI interactions"
+      "CreatedDateTime": "2025-01-15T15:54:22.6526036Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
     }
   ]
 }
