@@ -482,7 +482,6 @@ The following example shows how to create a meeting with a Microsoft Teams [meet
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-online-meeting-with-meeting-template"
