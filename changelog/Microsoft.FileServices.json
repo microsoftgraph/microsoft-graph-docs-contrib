@@ -5,9 +5,9 @@
             {
               "Id": "5d4a0643-925e-4659-a4e7-f1dac8dbfa18",
               "ApiChange": "Method",
-              "ChangedApiName": "fileStorageContainer",
+              "ChangedApiName": "restore",
               "ChangeType": "Change",
-              "Description": "Updated the endpoint for the [Restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore?view=graph-rest-beta) operation of the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource to use `/storage/fileStorage/deletedContainers/{containerId}/restore` instead of `/deletedStorageContainers/{containerId}/restore` in the request URL.",
+              "Description": "Updated the endpoint for the [fileStorageContainer: restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore?view=graph-rest-beta) operation of the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource to use `/storage/fileStorage/deletedContainers/{containerId}/restore` instead of `/deletedStorageContainers/{containerId}/restore` in the request URL.",
               "Target": "fileStorageContainer"
             }
           ],
@@ -23,9 +23,9 @@
             {
               "Id": "f32c8329-6da0-4b0b-81b6-4947ad148d8c",
               "ApiChange": "Method",
-              "ChangedApiName": "fileStorageContainer",
+              "ChangedApiName": "restore",
               "ChangeType": "Change",
-              "Description": "Updated the endpoint for the [Restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore?view=graph-rest-1.0) operation of the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource to use `/storage/fileStorage/deletedContainers/{containerId}/restore` instead of `/deletedStorageContainers/{containerId}/restore` in the request URL.",
+              "Description": "Updated the endpoint for the [fileStorageContainer: restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore?view=graph-rest-1.0) operation of the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource to use `/storage/fileStorage/deletedContainers/{containerId}/restore` instead of `/deletedStorageContainers/{containerId}/restore` in the request URL.",
               "Target": "fileStorageContainer"
             }
           ],
