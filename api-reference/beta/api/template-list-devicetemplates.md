@@ -120,8 +120,8 @@ Content-Type: application/json
       "id": "16f1d02a-af59-4ca7-b2ea-494a262353b9",
       "mutualTlsOauthConfigurationId": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "mutualTlsOauthConfigurationTenantId": "00001111-aaaa-2222-bbbb-3333cccc4445",
-      "deviceAuthority": "IoT Device Authority",
-      "manufacturer": "IoT Manufacturer",
+      "deviceAuthority": "Lakeshore Retail",
+      "manufacturer": "Tailwind Traders",
       "model": "IoT Device K1",
       "operatingSystem": "WindowsIoT"
     },
@@ -129,8 +129,8 @@ Content-Type: application/json
       "id": "3a0698d9-fd85-4b9e-9655-e26d19013459",
       "mutualTlsOauthConfigurationId": "00001111-aaaa-2222-bbbb-3333cccc4433",
       "mutualTlsOauthConfigurationTenantId": "00001111-aaaa-2222-bbbb-3333cccc4435",
-      "deviceAuthority": "IoT Test for owner",
-      "manufacturer": "IoT manufacturer",
+      "deviceAuthority": "Lakeshore Retail",
+      "manufacturer": "Tailwind Traders",
       "model": "IoT Devices",
       "operatingSystem": null
     }
