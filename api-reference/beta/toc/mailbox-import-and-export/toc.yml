@@ -24,9 +24,9 @@ items:
     href: ../../api/mailboxitem-delta.md
   - name: Extended properties
     items:
-    - name: Get singleValueExtendedProperty
+    - name: Get single-value property
       href: ../../api/singlevaluelegacyextendedproperty-get.md
-    - name: Get multiValueExtendedProperties
+    - name: Get multi-value property
       href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Mailbox folder
   items:
@@ -50,14 +50,14 @@ items:
     href: ../../api/mailboxfolder-list-items.md
   - name: Extended properties
     items:
-    - name: Get single-value property
-      href: ../../api/singlevaluelegacyextendedproperty-get.md
     - name: Create single-value property
       href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-    - name: Get multi-value property
-      href: ../../api/multivaluelegacyextendedproperty-get.md
+    - name: Get single-value property
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
     - name: Create multi-value property
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    - name: Get multi-value property
+      href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Exchange settings
   items:
   - name: Exchange settings
