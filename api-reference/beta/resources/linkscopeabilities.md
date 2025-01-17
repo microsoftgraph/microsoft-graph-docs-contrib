@@ -5,6 +5,7 @@ author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 04/16/2024
 ---
 
 # linkScopeAbilities resource type

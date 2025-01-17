@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET policies/activityBasedTimeoutPolicies
+GET /policies/activityBasedTimeoutPolicies
 ```
 
 ## Optional query parameters

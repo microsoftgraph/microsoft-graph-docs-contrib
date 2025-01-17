@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sadia353"
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # List sponsors

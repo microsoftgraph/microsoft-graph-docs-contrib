@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "frank-masuelli"
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/16/2024
 ---
 
 # user: assignLicense

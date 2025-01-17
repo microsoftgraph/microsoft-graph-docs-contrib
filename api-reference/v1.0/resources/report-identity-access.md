@@ -1,34 +1,58 @@
 ---
 title: "Identity and access reports API overview"
-description: "Access identity and access reports to get information about how people in your business use applications in your Microsoft Entra tenant."
-ms.localizationpriority: high
-ms.subservice: "entra-monitoring-health"
-author: "kvenkit"
+description: "Access identity and access reports to monitor, investigate, and troubleshoot all activities in your tenant."
+ms.localizationpriority: medium
+ms.subservice: entra-monitoring-health
+author: faithombongi
+ms.author: ombongifaith
+ms.reviewer: egreenberg
 doc_type: conceptualPageType
-ms.date: 03/12/2024
+ms.date: 12/30/2024
 ---
 
 # Identity and access reports API overview
 
-With Microsoft Graph, you can use access identity and access reports to get information about how users in your organization are using identity and access features in your Microsoft Entra tenant.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## Authorization
+With Microsoft Graph, you can programmatically access identity and access reports to monitor and troubleshoot all activities in your tenant. In addition, you can analyze these logs with Azure Monitor logs and Log Analytics, or stream to third-party SIEM tools for further investigations.
 
-Microsoft Graph controls access to resources using permissions. You must specify the permissions you need in order to access reports resources. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
+The availability of all Microsoft Entra identity and access reports is governed by the [Microsoft Entra data retention policies](/entra/identity/monitoring-health/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-## What are identity and access reports?
+Fore more information about identity and access reports, see [Microsoft Entra monitoring and health](/entra/identity/monitoring-health).
 
-The following identity and access reports are available to help you understand application activity in your tenant:
+## Available reports
 
-- Registration and usage
+### Application activity reports
 
-### Registration and usage
+#### AD FS application activity
 
-Get a better understanding of how users in your organization use Microsoft Entra capabilities, such as self-service password reset (SSPR) and multi-factor authentication (MFA). You can determine which authentication methods are more successful for your organization, what types of errors end users run into, and what campaign you need to run to help your end users adopt the use of SSPR and MFA. 
+The AD FS application activity report provides information about how a relying party is configured with Active Directory Federation Services (AD FS), its aggregated usage, and whether the relying party configuration can be migrated to Microsoft Entra ID. For more information, see the [relyingPartyDetailedSummary](/graph/api/resources/applicationsigninsummary) resource.
 
-## Next steps
+#### Authentication methods registration and usage activity
 
-Identity and access reports API can open up new ways for you to engage with users and manage their experiences with Microsoft Graph. To learn more:
+Authentication methods activity reports provide information on the registration and usage of [authentication methods](../resources/authenticationmethods-overview.md) in your tenant. For example, how many users are registered for an authentication method, how any are capable for MFA or SSPR, and so on. You can determine which authentication methods are more successful for your organization, what types of errors end users are running into, and what campaign you need to run to help your end users adopt the use of SSPR and MFA.
 
-- Drill down on the methods and properties of the resources most helpful to your scenario.
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+For more information, see [authentication method usage APIs](../resources/authenticationmethods-usage-insights-overview.md).
+
+### Microsoft Entra audit logs
+
+Audit logs are available for sign-ins, activities in the directory, and provisioning. For more information, see [Microsoft Entra audit logs](../resources/azure-ad-auditlog-overview.md).
+
+## Reports in preview only
+
+The following reports are available on the `beta` endpoint only:
+
+- [Application credential sign-in activity](/graph/api/resources/appcredentialsigninactivity?view=graph-rest-beta&preserve-view=true)
+- [Service principal sign-in activity](/graph/api/resources/serviceprincipalsigninactivity?view=graph-rest-beta&preserve-view=true)
+- Application sign-in reports: [summarized count](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true) or [detailed report](/graph/api/resources/applicationsignindetailedsummary?view=graph-rest-beta&preserve-view=true)
+- Application user activity for Microsoft Entra External ID: [daily insights](/graph/api/resources/dailyuserinsightmetricsroot?view=graph-rest-beta&preserve-view=true) and [monthly insights](/graph/api/resources/monthlyuserinsightmetricsroot?view=graph-rest-beta&preserve-view=true)
+- Health reports: [SLA attainment](/graph/api/azureadauthentication-get?view=graph-rest-beta&preserve-view=true), [service activity](/graph/api/resources/serviceactivity?view=graph-rest-beta&preserve-view=true), and [health monitoring](/graph/api/resources/healthmonitoring-overview?view=graph-rest-beta&preserve-view=true)
+- The following authentication methods registration and usage reports
+  - [Credential usage summary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true)
+  - [Credential user registration count](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta&preserve-view=true)
+  - [User credential usage details](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true)
+- [Microsoft Entra recommendations](/graph/api/resources/recommendations-api-overview?view=graph-rest-beta&preserve-view=true)
+
+## Related content
+
+- For more information about these reports, see [Microsoft Entra monitoring and health](/entra/identity/monitoring-health)

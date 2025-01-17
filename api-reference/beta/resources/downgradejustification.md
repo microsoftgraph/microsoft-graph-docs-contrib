@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "tommoser"
 ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 03/21/2024
 ---
 
 # downgradeJustification resource type (deprecated)

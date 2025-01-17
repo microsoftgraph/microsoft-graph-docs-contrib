@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Microsoft Entra admin center settings
+ms.date: 11/06/2024
 ---
 
 # uxSetting resource type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 10/08/2024
 ---
 
 # Delete educationalActivity

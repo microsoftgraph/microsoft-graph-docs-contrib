@@ -18,11 +18,11 @@ import (
 
 requestFilter := "originId eq '0282e19d-bf41-435d-92a4-99bab93af305'"
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceEntitlementManagementCatalogItemResourcesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.EntitlementManagementCatalogsItemResourcesRequestBuilderGetQueryParameters{
 	Expand: [] string {"roles","scopes"},
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagementCatalogItemResourcesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.EntitlementManagementCatalogsItemResourcesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

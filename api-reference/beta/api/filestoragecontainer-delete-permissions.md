@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 11/12/2024
 ---
 
 # Delete permissions
@@ -18,7 +19,7 @@ Delete permissions from a [fileStorageContainer](../resources/filestoragecontain
 
 By default, this API removes access for an identity to the container and all items within the container, regardless of whether the identity has container-scoped or item-level permissions. You can add an optional `Prefer: onlyRemoveContainerScopedPermission` header when you call the API if only the identity's container-scoped permissions need to be removed. All item-level permissions explicitly granted to the identity (if any) are retained. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

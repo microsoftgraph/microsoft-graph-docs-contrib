@@ -5,6 +5,7 @@ author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: enumTypes
+ms.date: 03/06/2024
 ---
 
 # Multi-tenant management enumeration values

@@ -5,6 +5,7 @@ author: "mravela"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: conceptualPageType
+ms.date: 11/19/2024
 ---
 
 # Use the Microsoft Defender for Cloud apps API in Microsoft Graph (preview)

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsDeletedItemsWorkflowItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.LifecycleWorkflowsDeletedItemsWorkflowsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","category","displayName","description","version","executionConditions"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsDeletedItemsWorkflowItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.LifecycleWorkflowsDeletedItemsWorkflowsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -6,6 +6,7 @@ author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "resourcePageType"
 toc.title: Feedback outcome
+ms.date: 07/23/2024
 ---
 
 # educationFeedbackOutcome resource type

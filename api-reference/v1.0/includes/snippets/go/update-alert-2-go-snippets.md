@@ -21,7 +21,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
 
-configuration := &graphsecurity.SecurityAlertItemRequestBuilderPatchRequestConfiguration{
+configuration := &graphsecurity.AlertsItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewAlert()

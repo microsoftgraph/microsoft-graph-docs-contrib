@@ -5,6 +5,7 @@ author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: enumPageType
+ms.date: 06/04/2024
 ---
 
 # Health monitoring enum Values

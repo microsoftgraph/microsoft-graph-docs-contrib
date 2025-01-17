@@ -5,6 +5,7 @@ author: "ecmadao"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 06/03/2024
 ---
 
 # cloudPcAuditResource resource type

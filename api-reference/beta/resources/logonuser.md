@@ -26,6 +26,9 @@ Contains stateful information about the logged on user on this host
 |logonId|String|User logon ID.|
 |logonTypes|String collection|Collection of the logon types observed for the logged on user from when first to last seen. Possible values are: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

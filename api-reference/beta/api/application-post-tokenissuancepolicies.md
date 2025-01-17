@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 07/26/2024
 ---
 
 # Assign tokenIssuancePolicy

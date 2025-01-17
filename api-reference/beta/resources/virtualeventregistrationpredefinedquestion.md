@@ -5,6 +5,7 @@ author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 06/13/2024
 ---
 
 # virtualEventRegistrationPredefinedQuestion resource type
@@ -27,6 +28,9 @@ Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventre
 |id|String|Unique identifier of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 |isRequired|Boolean| Indicates whether an answer to the question is required. The default value is `false`. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 |label|virtualEventRegistrationPredefinedQuestionLabel|Label of the predefined registration question. The following label values accept a single line  of text: `street`, `city`, `state`, `postalCode`, `countryOrRegion`, `industry`, `jobTitle`, and `organization`. `unknownFutureValue` is an evolvable enumeration sentinel value; do not use this label.|
+
+## Relationships
+None.
 
 ## JSON representation
 

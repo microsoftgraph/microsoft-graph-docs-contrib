@@ -5,6 +5,7 @@ author: "jkdouglas"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/31/2024
 ---
 
 # tenantRelationshipAccessPolicyBase resource type

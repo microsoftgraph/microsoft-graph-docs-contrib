@@ -5,6 +5,7 @@ author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 11/13/2024
 ---
 
 # virtualEventExternalInformation resource type
@@ -23,6 +24,9 @@ The **applicationId** and **externalEventId** properties allow external event in
 |:---|:---|:---|
 |applicationId|String| Identifier of the application that hosts the **externalEventId**. Read-only. |
 |externalEventId|String| The identifier for a **virtualEventExternalInformation** object that associates the virtual event with an event ID in an external application. This association bundles all the information (both supported and not supported in [virtualEvent](../resources/virtualevent.md)) into one virtual event object. Optional. If set, the maximum supported length is 256 characters.|
+
+## Relationships
+None.
 
 ## JSON representation
 

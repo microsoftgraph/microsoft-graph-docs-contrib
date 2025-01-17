@@ -5,6 +5,7 @@ author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 11/08/2024
 ---
 
 # reportRoot: getRelyingPartyDetailedSummary

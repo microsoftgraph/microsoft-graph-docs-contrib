@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphpolicies.PoliciesAppManagementPolicieItemAppliesToRequestBuilderGetQueryParameters{
+requestParameters := &graphpolicies.AppManagementPoliciesItemAppliesToRequestBuilderGetQueryParameters{
 	Select: [] string {"id","appId","displayName","createdDateTime"},
 }
-configuration := &graphpolicies.PoliciesAppManagementPolicieItemAppliesToRequestBuilderGetRequestConfiguration{
+configuration := &graphpolicies.AppManagementPoliciesItemAppliesToRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

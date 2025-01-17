@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Models;
 
-var requestBody = new IdentityProviderBase
+var requestBody = new OidcIdentityProvider
 {
 	OdataType = "#microsoft.graph.oidcIdentityProvider",
 	DisplayName = "Contoso",

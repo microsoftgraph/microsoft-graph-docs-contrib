@@ -18,11 +18,11 @@ import (
 
 requestTop := int32(2)
 
-requestParameters := &graphchats.ChatItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ItemMessagesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Orderby: [] string {"createdDateTime desc"},
 }
-configuration := &graphchats.ChatItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

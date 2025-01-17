@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 08/14/2024
 ---
 
 # accessPackageAssignmentRequest resource type

@@ -19,6 +19,16 @@ A null (or missing) value indicates that the file is not deleted.
 
 See [view changes for an item](../api/driveitem-delta.md) for more information on tracking changes and finding deleted items.
 
+## Properties
+
+| Property | Type   | Description                               |
+|:---------|:-------|:------------------------------------------|
+| state    | String | Represents the state of the deleted item. |
+
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
@@ -35,12 +45,6 @@ The following JSON representation shows the resource type.
   "state": "string"
 }
 ```
-## Properties
-
-| Property | Type   | Description                               |
-|:---------|:-------|:------------------------------------------|
-| state    | String | Represents the state of the deleted item. |
-
 ## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "JacobSatora"
 ms.subservice: "teams"
+ms.date: 08/06/2024
 ---
 
 # callTranscript: delta

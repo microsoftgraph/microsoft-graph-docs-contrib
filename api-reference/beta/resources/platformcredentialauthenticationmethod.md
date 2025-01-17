@@ -55,7 +55,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.platformCredentialAuthenticationMethod",
   "id": "String (Identifier)",
   "displayName": "String",
-  "createdDateTime": "String",
+  "createdDateTime": "String (timestamp)",
   "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"},
   "platform": {"@odata.type": "microsoft.graph.authenticationMethodPlatform"}
 }

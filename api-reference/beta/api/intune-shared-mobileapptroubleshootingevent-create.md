@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jaiprakashmb"
 ms.prod: "Intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create mobileAppTroubleshootingEvent

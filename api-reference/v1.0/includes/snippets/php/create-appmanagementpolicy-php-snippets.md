@@ -10,6 +10,7 @@ use Microsoft\Graph\Generated\Models\AppManagementPolicy;
 use Microsoft\Graph\Generated\Models\CustomAppManagementConfiguration;
 use Microsoft\Graph\Generated\Models\PasswordCredentialConfiguration;
 use Microsoft\Graph\Generated\Models\AppCredentialRestrictionType;
+use Microsoft\Graph\Generated\Models\AppManagementRestrictionState;
 use Microsoft\Graph\Generated\Models\KeyCredentialConfiguration;
 
 
@@ -22,39 +23,27 @@ $requestBody->setIsEnabled(true);
 $restrictions = new CustomAppManagementConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration1 = new PasswordCredentialConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration1->setRestrictionType(new AppCredentialRestrictionType('passwordAddition'));
+$passwordCredentialsPasswordCredentialConfiguration1->setState(new AppManagementRestrictionState('enabled'));
 $passwordCredentialsPasswordCredentialConfiguration1->setMaxLifetime(null);
 $passwordCredentialsPasswordCredentialConfiguration1->setRestrictForAppsCreatedAfterDateTime(new \DateTime('2019-10-19T10:37:00Z'));
-$additionalData = [
-	'state' => 'enabled',
-];
-$passwordCredentialsPasswordCredentialConfiguration1->setAdditionalData($additionalData);
 $passwordCredentialsArray []= $passwordCredentialsPasswordCredentialConfiguration1;
 $passwordCredentialsPasswordCredentialConfiguration2 = new PasswordCredentialConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration2->setRestrictionType(new AppCredentialRestrictionType('passwordLifetime'));
+$passwordCredentialsPasswordCredentialConfiguration2->setState(new AppManagementRestrictionState('enabled'));
 $passwordCredentialsPasswordCredentialConfiguration2->setMaxLifetime(new \DateInterval('P90D'));
 $passwordCredentialsPasswordCredentialConfiguration2->setRestrictForAppsCreatedAfterDateTime(new \DateTime('2014-10-19T10:37:00Z'));
-$additionalData = [
-	'state' => 'enabled',
-];
-$passwordCredentialsPasswordCredentialConfiguration2->setAdditionalData($additionalData);
 $passwordCredentialsArray []= $passwordCredentialsPasswordCredentialConfiguration2;
 $passwordCredentialsPasswordCredentialConfiguration3 = new PasswordCredentialConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration3->setRestrictionType(new AppCredentialRestrictionType('symmetricKeyAddition'));
+$passwordCredentialsPasswordCredentialConfiguration3->setState(new AppManagementRestrictionState('enabled'));
 $passwordCredentialsPasswordCredentialConfiguration3->setMaxLifetime(null);
 $passwordCredentialsPasswordCredentialConfiguration3->setRestrictForAppsCreatedAfterDateTime(new \DateTime('2019-10-19T10:37:00Z'));
-$additionalData = [
-	'state' => 'enabled',
-];
-$passwordCredentialsPasswordCredentialConfiguration3->setAdditionalData($additionalData);
 $passwordCredentialsArray []= $passwordCredentialsPasswordCredentialConfiguration3;
 $passwordCredentialsPasswordCredentialConfiguration4 = new PasswordCredentialConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration4->setRestrictionType(new AppCredentialRestrictionType('symmetricKeyLifetime'));
+$passwordCredentialsPasswordCredentialConfiguration4->setState(new AppManagementRestrictionState('enabled'));
 $passwordCredentialsPasswordCredentialConfiguration4->setMaxLifetime(new \DateInterval('P90D'));
 $passwordCredentialsPasswordCredentialConfiguration4->setRestrictForAppsCreatedAfterDateTime(new \DateTime('2014-10-19T10:37:00Z'));
-$additionalData = [
-	'state' => 'enabled',
-];
-$passwordCredentialsPasswordCredentialConfiguration4->setAdditionalData($additionalData);
 $passwordCredentialsArray []= $passwordCredentialsPasswordCredentialConfiguration4;
 $restrictions->setPasswordCredentials($passwordCredentialsArray);
 

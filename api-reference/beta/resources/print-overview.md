@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "mnorman-ms"
 doc_type: conceptualPageType
 ms.subservice: "universal-print"
+ms.date: 09/09/2024
 ---
 
 # Use the Universal Print API

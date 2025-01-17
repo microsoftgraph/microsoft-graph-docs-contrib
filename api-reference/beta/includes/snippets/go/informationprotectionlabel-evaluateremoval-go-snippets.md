@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphinformationprotection.InformationProtectionPolicyLabelsEvaluateRemovalRequestBuilderPostRequestConfiguration{
+configuration := &graphinformationprotection.PolicyLabelsEvaluateRemovalRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphinformationprotection.NewEvaluateRemovalPostRequestBody()

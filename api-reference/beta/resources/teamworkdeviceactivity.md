@@ -34,6 +34,9 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|The UTC date and time when the device activity detail was last modified.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

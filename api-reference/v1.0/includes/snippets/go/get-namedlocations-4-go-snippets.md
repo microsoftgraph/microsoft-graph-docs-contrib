@@ -18,10 +18,10 @@ import (
 
 requestFilter := "microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')"
 
-requestParameters := &graphidentity.IdentityConditionalAccessNamedLocationsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.ConditionalAccessNamedLocationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentity.IdentityConditionalAccessNamedLocationsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.ConditionalAccessNamedLocationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
