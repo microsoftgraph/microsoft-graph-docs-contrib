@@ -21,7 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Files
 
-Updated the endpoint of the [fileStorageContainer: restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore) method.
+Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestoragecontainer-restore) method.
 
 ### Identity and access | Identity and sign-in
 - Added riskEventType entry for the Suspicious API Traffic detection for [service principals](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-1.0&preserve-view=true).
@@ -40,7 +40,7 @@ Updated the endpoint of the [fileStorageContainer: restore](https://learn.micros
 
 ### Files
 
-Updated the endpoint of the [fileStorageContainer: restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore?view=graph-rest-beta&preserve-view=true) method.
+Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestoragecontainer-restore?view=graph-rest-beta&preserve-view=true) method.
 
 ### Identity and access | Directory management
 
