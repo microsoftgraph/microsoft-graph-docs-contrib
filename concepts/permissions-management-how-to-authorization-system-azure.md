@@ -7,13 +7,13 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-permissions-management
-ms.date: 01/05/2024
+ms.date: 01/17/2025
 #CustomerIntent: As a developer, I want a one-stop shop for all the common tasks I can program through the permissions management APIs so that I don't have to visit all API docs one at a time.
 ---
 
 # Permissions Management API operations quick reference for Azure authorization systems
 
-The permissions management APIs enable you to discover permissions assigned to all identities across multiple clouds; request permissions; approve, reject, and cancel permissions requests. This article provides a quick reference guide for API operations on Azure authorization systems, supported through the permissions management APIs.
+The permissions management APIs enable you to discover permissions assigned to all identities across multiple clouds; request permissions; approve, reject, and cancel permissions requests. This article provides a quick reference guide for API operations on Azure authorization systems, supported through the [Microsoft Entra permissions management APIs in Microsoft Graph](/graph/api/resources/permissions-management-api-overview?view=graph-rest-beta&preserve-view=true).
 
 ## Get all authorization systems
 
