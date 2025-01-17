@@ -41,7 +41,7 @@ An app can access data in one of two ways as illustrated in the following image.
 
 ### Delegated access (access on behalf of a user)
 
-In this access scenario, a user signs into a client application which calls Microsoft Graph on behalf of their behalf. *Both the client app and the user must be authorized to make the request*.
+In this access scenario, a user signs into a client application which calls Microsoft Graph on their behalf. *Both the client app and the user must be authorized to make the request*.
 
 For the client app to be authorized to access the data on behalf of the signed-in user, it must have the required permissions, which it receives through a combination of two factors:
 - *Delegated permissions*, also referred to as *scopes*: The permissions exposed by Microsoft Graph and that represent the operations that the app can perform on behalf of the signed-in user. The app might be allowed to perform an operation on behalf of one user but not another.

@@ -38,6 +38,12 @@ multiChoiceValues2.add("Beijing");
 virtualEventRegistrationQuestionAnswer2.setMultiChoiceValues(multiChoiceValues2);
 registrationQuestionAnswers.add(virtualEventRegistrationQuestionAnswer2);
 virtualEventRegistration.setRegistrationQuestionAnswers(registrationQuestionAnswers);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+ externalRegistrationInformation = new ();
+externalRegistrationInformation.setReferrer("Facebook");
+externalRegistrationInformation.setRegistrationId("myExternalRegistrationId");
+additionalData.put("externalRegistrationInformation", externalRegistrationInformation);
+virtualEventRegistration.setAdditionalData(additionalData);
 VirtualEventRegistration result = graphClient.solutions().virtualEvents().webinars().byVirtualEventWebinarId("{virtualEventWebinar-id}").registrations().post(virtualEventRegistration);
 
 

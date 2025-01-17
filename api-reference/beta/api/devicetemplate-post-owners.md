@@ -64,6 +64,7 @@ For more information, see [Microsoft Graph error responses and resource types](/
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_directoryobjects"
@@ -77,6 +78,12 @@ Content-Type: application/json
   "@odata.id": "https://graph.microsoft.com/beta/users/00001111-aaaa-2222-bbbb-3333cccc4444"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-directoryobjects-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
