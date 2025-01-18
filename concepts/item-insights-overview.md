@@ -30,7 +30,7 @@ An example of an experience empowered by item insights is the files under **Reco
 
 ### Recent files in card-based interfaces
 In card-based interfaces such as [the profile cards in Microsoft 365](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501), item insights bring forward OneDrive, SharePoint, or Outlook files that you have modified recently or shared with the person looking at your profile. The viewer of your profile can only see these items if they can access that content. Such personalized insights help your colleagues save time searching for the right person or information.  
-![Profile card for Megan Bowen, highlighting her recent files: LiveCaptions, Fabrikam3DPrinterBrochure, and X1050 Product Roadmap. Each dated 2/19/2021.](images/Recent-files-in-card-based-interfaces.PNG)
+![Profile card for Megan Bowen, highlighting her recent files: LiveCaptions, Fabrikam3DPrinterBrochure, and X1050 Product Roadmap. Each dated 2/19/2021.](images/recent-files-in-card-based-interfaces.PNG)
 
 ## Microsoft runs on trust
 Microsoft uses only your activities in a shared working space (activities such as sharing, modifying, commenting actions) within your organization to calculate recommendations for others. That means, for example, that if you simply glanced at or clicked on a shared document without changing or commenting on it, your colleagues don't see the document as a recommendation.
@@ -64,10 +64,10 @@ After your item insights are disabled, the following happens:
 * Experiences that show content trending around you are inaccessible to others in places such as the **Recommended** section in Office.com. The lack of trending insights also reduces your personalized relevance in Microsoft Search since it can't use your trending content as signals for relevance. When searching for your name in Microsoft 365 experiences, your colleagues can't discover relevant files they have access to in experiences such as the **Recent Files** tab under your name in Bing.
 * Insights about your file-based activities in collaborative workspaces are no longer shared with others, protecting you from undesirable discovery of your data. On the other hand, your access to experiences showing trending content isn't revoked. You can see the activities and data of users who haven't disabled item insights. For example, in the previous example with Megan, Adele, Lynne, and Mike, even though Megan has turned off item insights, recommendations for all the relevant files updated by Megan's colleagues will still appear in Megan's experiences.
 
-The following example shows the Bing experience that Adele Vance gets when her colleague Megan Vance enables item insights.
+The following example shows the Bing experience that Adele Vance gets when her colleague Megan Bowen enables item insights.
 ![Adele’s Bing query results for "Megan Bowen" when Megan has Insights enabled, highlighting recent files that Megan modified.](images/enabled-item-insights-bing-experience.PNG)
 
-The following example shows the Bing experience that Adele Vance gets when her colleague Megan Vance disables item insights. 
+The following example shows the Bing experience that Adele Vance gets when her colleague Megan Bowen disables item insights. 
 ![Adele’s Bing query results for "Megan Bowen" when Megan has Insights disabled, highlighting no work results found for recent files.](images/disabled-item-insights-bing-experience.PNG)
 
 ## API reference
