@@ -5,14 +5,13 @@ author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 09/18/2024
+ms.date: 01/17/2025
 ---
 
 # calendar: permanentDelete
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Permanently delete a calendar folder and the events that it contains and remove them from the mailbox. For more information about item retention, see [Configure Deleted Item retention and Recoverable Items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
 
@@ -64,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/calendar/permanentDelete
+POST https://graph.microsoft.com/v1.0/users/{usersId}/calendar/permanentDelete
 ```
 
 # [C#](#tab/csharp)
