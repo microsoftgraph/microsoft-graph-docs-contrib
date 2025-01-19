@@ -1,5 +1,5 @@
 ---
-title: "Import an Exchange item using the Exchange import and export APIs"
+title: "Import an Exchange item using the mailbox import and export APIs"
 description: "Learn how to import an Exchange mailbox item using its FastTransfer stream format."
 author: "cparker-msft"
 ms.localizationpriority: medium
@@ -7,9 +7,9 @@ ms.subservice: "outlook"
 ms.date: 12/06/2024
 ---
 
-# Import an Exchange item using the Exchange import and export APIs
+# Import an Exchange item using the mailbox import and export APIs
 
-The Exchange import and export APIs allow you to import an Exchange [mailbox item](/graph/resources/mailboxitem?view=graph-rest-beta&preserve-view=true) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
+The mailbox import and export APIs allow you to import an Exchange [mailbox item](/graph/resources/mailboxitem?view=graph-rest-beta&preserve-view=true) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
 
 This article describes the two steps required to perform the import process. Each step also provides an example for this process. After successfully uploading the item, you get a response that contains the **itemId** and **changeKey**, which can be saved for later use.
 
