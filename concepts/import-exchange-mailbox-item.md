@@ -11,7 +11,7 @@ ms.date: 12/06/2024
 
 The mailbox import and export APIs allow you to import an Exchange [mailbox item](/graph/resources/mailboxitem?view=graph-rest-beta&preserve-view=true) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
 
-This article describes the two steps required to perform the import process. Each step also provides an example for this process. After successfully uploading the item, you get a response that contains the **itemId** and **changeKey**, which can be saved for later use.
+This article describes the two steps required to perform the import process, with an example provided for each step. After successfully uploading the item, you get a response that contains the **itemId** and **changeKey**, which can be saved for later use.
 
 ## Step 1: Create an import session
 
