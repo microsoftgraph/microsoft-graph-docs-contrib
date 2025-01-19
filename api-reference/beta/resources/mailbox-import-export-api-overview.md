@@ -1,6 +1,6 @@
 ---
-title: "Use the Exchange import and export APIs in Microsoft Graph (preview)"
-description: "Learn how to use the Exchange import and export APIs in Microsoft Graph to import and export contents from Exchange mailboxes."
+title: "Use the mailbox import and export APIs in Microsoft Graph (preview)"
+description: "Learn how to use the mailbox import and export APIs in Microsoft Graph to import and export contents from Exchange Online mailboxes."
 ms.localizationpriority: high
 author: "cparker-msft"
 ms.subservice: "outlook"
@@ -8,15 +8,15 @@ doc_type: conceptualPageType
 ms.date: 12/06/2024
 ---
 
-# Use the Exchange import and export APIs in Microsoft Graph (preview)
+# Use the mailbox import and export APIs in Microsoft Graph (preview)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Exchange import and export APIs in Microsoft Graph let your app import and export contents from Exchange mailboxes. Contents within a mailbox can be accessed as a set of [folders](./mailboxfolder.md) and [items](./mailboxitem.md) in a uniform format without having to understand the metadata and structure of each item type separately. These items can be [exported](../api/mailbox-exportitems.md) in [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) format in full fidelity. Full-fidelity exports ensure that when you [import](../api/mailbox-createimportsession.md) an item back, Exchange recreates the item without any loss of information.
+The mailbox import and export APIs in Microsoft Graph allow your application to import and export contents from Exchange Online mailboxes. Mailbox contents can be accessed as a collection of [folders](./mailboxfolder.md) and [items](./mailboxitem.md) in a consistent format, without the need to manage the metadata or structure of each item type individually. These items can be [exported](../api/mailbox-exportitems.md) in [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) format with full fidelity. Full-fidelity exports ensure that when you [import](../api/mailbox-createimportsession.md) an item, Exchange recreates it with no loss of information.
 
-These APIs support access to data in users' primary and [in-place archive](/exchange/clients-and-mobile-in-exchange-online/archive-client-and-compliance-&-security-feature-details?tabs=Archive-features#archive-mailbox) mailboxes on Exchange online.
+These APIs support access to data in users' primary and [in-place archive](/exchange/clients-and-mobile-in-exchange-online/archive-client-and-compliance-&-security-feature-details?tabs=Archive-features#archive-mailbox) mailboxes on Exchange.
 
-## How to use the Exchange import and export APIs
+## How to use the mailbox import and export APIs
 
 The following steps allow your app to systematically export and import contents from Exchange mailboxes:
 
@@ -37,11 +37,11 @@ The following steps allow your app to systematically export and import contents 
 
 ## Next steps
 
-Use the Exchange import and export APIs in Microsoft Graph to import and export contents from Exchange mailboxes. To learn more:
+Use the mailbox import and export APIs in Microsoft Graph to import and export contents from Exchange mailboxes. To learn more:
 
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 ## Related content
 
-[Import an Exchange mailbox item](/graph/import-exchange-mailbox-item)
+[Import an Exchange mailbox item using the mailbox import and export APIs](/graph/import-exchange-mailbox-item)
