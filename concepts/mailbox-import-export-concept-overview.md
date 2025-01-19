@@ -11,7 +11,7 @@ ms.date: 12/06/2024
 
 # Overview of the mailbox import and export APIs in Microsoft Graph (preview)
 
-The mailbox import and export APIs in Microsoft Graph let your application import and export contents from Exchange Online mailboxes. Contents within a mailbox can be accessed as a set of [folders](./mailboxfolder.md) and [items](./mailboxitem.md) in a uniform format without having to understand the metadata and structure of each item type separately. These items can be [exported](../api/mailbox-exportitems.md) in [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) format in full fidelity. Full-fidelity exports ensure that when you [import](../api/mailbox-createimportsession.md) an item back, Exchange recreates the item without any loss of information.
+The mailbox import and export APIs in Microsoft Graph let your application import and export contents from Exchange Online mailboxes. Contents within a mailbox can be accessed as a set of [folders](/graph/api/resources/mailboxfolder) and [items](/graph/api/resources/mailboxitem) in a uniform format without having to understand the metadata and structure of each item type separately. These items can be [exported](/graph/api/mailbox-exportitems) in [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) format in full fidelity. Full-fidelity exports ensure that when you [import](/graph/api/mailbox-createimportsession) an item back, Exchange recreates the item without any loss of information.
 
 These APIs support access to data in users' primary and [in-place archive](/exchange/clients-and-mobile-in-exchange-online/archive-client-and-compliance-&-security-feature-details?tabs=Archive-features#archive-mailbox) mailboxes on Exchange Online. Items can be imported to the same mailbox or a different one.
 
@@ -23,8 +23,8 @@ Exchange is a gold mine of important information: email, contacts, tasks, and ca
 
 The following are some of the scenarios that the mailbox import and export APIs enable:
 
-- [Get a list of mailboxes that belong to a user](/api-reference/beta/api/usersettings-list-exchange.md)
-- [Import or export mailbox items](/api-reference/beta/resources/mailboxitem.md#methods)
+- [Get a list of mailboxes that belong to a user](/graph/api/usersettings-list-exchange)
+- [Import or export mailbox items](/graph/api/resources/mailboxitem#methods)
 
 ### Move items from one mailbox to another
 
@@ -32,10 +32,10 @@ You can use the mailbox import and export APIs to move items between mailboxes, 
 
 ## API reference
 
-Looking for the API reference for this service, see [Mailbox import and export APIs in Microsoft Graph beta](/api-reference/beta/resources/mailbox-import-export-api-overview.md).
+Looking for the API reference for this service, see [Mailbox import and export APIs in Microsoft Graph beta](/graph/api/resources/mailbox-import-export-api-overview?view=graph-rest-beta&preserve-view=true).
 
 ## Next steps
 
-- To learn more about the mailbox import and export APIs, see [Use the mailbox import and export APIs in Microsoft Graph (preview)](/api-reference/beta/resources/mailbox-import-export-api-overview.md).
+- To learn more about the mailbox import and export APIs, see [Use the mailbox import and export APIs in Microsoft Graph (preview)](/graph/api/resources/mailbox-import-export-api-overview).
 - To learn how to import a mailbox item, see [Import an Exchange mailbox item using the mailbox import and export APIs](/graph/import-exchange-mailbox-item).
 - Try the mailbox import and export APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
