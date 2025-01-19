@@ -111,7 +111,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-01-09T21:50:39.9393866Z",
-      "WorkloadArea": "Calendar, Mail, Personal Contacts",
+      "WorkloadArea": "Mailbox import and export",
       "SubArea": ""
     },
     {
