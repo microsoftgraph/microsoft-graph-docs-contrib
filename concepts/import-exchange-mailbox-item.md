@@ -82,7 +82,7 @@ Because the initial opaque URL is preauthenticated and contains the appropriate 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |FolderId|String|The ID of the folder into which you want to import the item. Required.|
-|Mode|String|Specify the import mode can be `create` or `update`. Required. <br><br> <ul><li>create: Creates a new item. Specifying ItemId or ChangeKey in request body would result in an error.</li><li>update: Updates an existing item. ItemId & ChangeKey mandatory in the request body for updates. The operation would fail if (ItemID + ChangeKey) combination doesn't match with any existing item in folder.</li></ul>|
+|Mode|String|Specifies that the import mode can be `create` or `update`. Required. <br><br> <ul><li>`create`: Creates a new item. If you specify **ItemId** or **ChangeKey** in the request body, it results in an error.</li><li>`update`: Updates an existing item. **ItemId** and **ChangeKey** are required in the request body for updates. The operation fails if the combination of **ItemId** and **ChangeKey** doesn't match with any existing item in the folder.</li></ul>|
 |Data|String|Data that represents an item in a base64 encoded [FTS format](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450). Required.|
 |ItemId|String|The unique identifier for the item. Required during `update`.|
 |ChangeKey|String|The version of the item. Required during `update`.|
