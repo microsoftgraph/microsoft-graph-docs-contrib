@@ -2120,7 +2120,7 @@
       ]
     },
     {
-      "name": "Mailbox import and export",
+      "name": "Mailbox import and export (preview)",
       "overview": "../../resources/mailbox-import-export-api-overview.md",
       "keywords": [
         "Exchange",
