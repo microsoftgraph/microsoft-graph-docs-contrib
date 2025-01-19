@@ -715,8 +715,10 @@ items:
       href: outlook-change-notifications-overview.md
   - name: Mailbox import and export
     items:
+    - name: Overview
+      href: mailbox-import-export-concept-overview.md
     - name: Import mailbox item
-      href: import-exchange-mailbox-item.md
+      href: import-mailbox-item.md
   - name: Notes
     items:
     - name: Overview
