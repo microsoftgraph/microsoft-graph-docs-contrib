@@ -71,11 +71,11 @@ Content-length: 232
 
 To import the item into the mailbox, make a POST request to the URL returned in the previous step in the **importUrl** property of the [mailboxItemImportSession](/graph/resources/mailboxitemimportsession?view=graph-rest-beta&preserve-view=true) object.
 
-Specify the request body as described in the following section.
+Specify the request body as described in the [Request body](#request-body) section.
 
 ### Request headers
 
-Because the initial opaque URL is preauthenticated and contains the appropriate authorization token for subsequent queries for that import session, don't specify an Authorization request header for this operation.
+Because the initial opaque URL is preauthenticated and contains the appropriate authorization token for subsequent queries for that import session, don't specify an `Authorization` request header for this operation.
 
 ### Request body
 
@@ -93,11 +93,11 @@ If successful, this action returns a `200 OK` response code and an [importMailbo
 
 ### Examples
 
-### Example 1: Create an item in a mailbox using import operation
+#### Example 1: Create an item in a mailbox using import operation
 
 The following example shows how to import a new item into the mailbox in `create` mode.
 
-#### Request
+##### Request
 
 The following example shows a request.
 
@@ -118,7 +118,7 @@ POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/
 }
 ```
 
-#### Response
+##### Response
 
 The following example shows the response.
 
@@ -140,11 +140,11 @@ Content-length: 232
 }
 ```
 
-### Example 2: Update an existing item in a mailbox using import operation
+#### Example 2: Update an existing item in a mailbox using import operation
 
 The following example shows how to import a new version of an existing item into the mailbox in `update` mode.
 
-#### Request
+##### Request
 
 The following example shows a request.
 
@@ -166,7 +166,7 @@ POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/
 }
 ```
 
-#### Response
+##### Response
 
 The following example shows the response.
 
