@@ -51,7 +51,7 @@ Tracking changes in folders incurs a round of one or more **delta** function cal
 
 ### OData query parameters
 
-You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The **id** & **parentMailboxUrl** properties are always returned.
+You can use the `$select` query parameter to specify only the properties you need for best performance. The **id** and **parentMailboxUrl** properties are always returned.
 
 ## Request headers
 
