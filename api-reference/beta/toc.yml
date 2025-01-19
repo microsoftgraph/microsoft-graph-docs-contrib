@@ -82,8 +82,8 @@ items:
   - name: Mail
     href: toc/mail/toc.yml
     displayName: Outlook, Outlook mail
-  - name: Mailbox import and export
-    href: toc/mailbox-import-and-export/toc.yml
+  - name: Mailbox import and export (preview)
+    href: toc/mailbox-import-and-export-(preview)/toc.yml
     displayName: Exchange, Exchange Import-Export, Mailbox, Mailbox import and export
   - name: Notes
     href: toc/notes/toc.yml
