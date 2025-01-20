@@ -19,20 +19,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## January 2025: New and generally available 
 
-
-### Teamwork and communications | Calls and online meetings
-
-Microsoft Teams custom meeting templates allow you to specify values for many of the meeting options available to meeting organizers. Use the **meetingTemplateId** property on [onlineMeeting](/graph/api/resources/onlinemeeting) to create an online meeting with a meeting template.
-
 ### Files
 
 Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestoragecontainer-restore) method.
-
 
 ### Identity and access | Identity and sign-in
 
 Added riskEventType entry for the Suspicious API Traffic detection for [service principals](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-1.0&preserve-view=true).
 
+### Teamwork and communications | Calls and online meetings
+
+Microsoft Teams custom meeting templates allow you to specify values for many of the meeting options available to meeting organizers. Use the **meetingTemplateId** property on [onlineMeeting](/graph/api/resources/onlinemeeting) to create an online meeting with a meeting template.
 
 ### Teamwork and communications | Messaging
 
