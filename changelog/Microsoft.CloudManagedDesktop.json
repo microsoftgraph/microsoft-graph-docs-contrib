@@ -1,5 +1,31 @@
 {
   "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
+            "ApiChange": "Property",
+            "ChangedApiName": "regionRestrictionDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the **regionRestrictionDetail** property to the [cloudPcSupportedRegion](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSupportedRegion?view=graph-rest-beta) resource.",
+            "Target": "cloudPcSupportedRegion"
+          },
+          {
+            "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
+            "ApiChange": "Property",
+            "ChangedApiName": "cloudPcSupportedRegionRestrictionDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcSupportedRegionRestrictionDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSupportedRegionRestrictionDetail?view=graph-rest-beta) resource type.",
+            "Target": "cloudPcSupportedRegion"
+          }
+        ],
+        "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-01-16T06:09:33.7283612Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+     },
      {
         "ChangeList": [
           {
