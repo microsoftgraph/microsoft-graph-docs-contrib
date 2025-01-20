@@ -5010,13 +5010,6 @@ Possible values for user account types (group membership), per Windows definitio
 |completedWithErrors|
 |unknownFutureValue|
 
-### cloudPCPerformanceReportName values
-
-| Member                 |
-| ---------------------- |
-| performanceTrendReport | 
-| unknownFutureValue     |
-
 ### cloudPCInaccessibleReportName values
 
 | Member                         |
