@@ -64,7 +64,7 @@ items:
     - name: Delete
       href: ../../api/protectionrulebase-delete.md
     - name: Delete And Unprotect
-      href: ../../protectionrulebase-deleteandunprotect.md
+      href: ../../api/protectionrulebase-deleteandunprotect.md
     - name: Update
       href: ../../api/protectionrulebase-update.md
     - name: Run
@@ -82,7 +82,7 @@ items:
     - name: Delete
       href: ../../api/protectionrulebase-delete.md
     - name: Delete And Unprotect
-      href: ../../protectionrulebase-deleteandunprotect.md
+      href: ../../api/protectionrulebase-deleteandunprotect.md
     - name: Update
       href: ../../api/protectionrulebase-update.md
     - name: Run
