@@ -38,6 +38,13 @@ $registrationQuestionAnswersVirtualEventRegistrationQuestionAnswer3->setMultiCho
 $registrationQuestionAnswersArray []= $registrationQuestionAnswersVirtualEventRegistrationQuestionAnswer3;
 $requestBody->setRegistrationQuestionAnswers($registrationQuestionAnswersArray);
 
+$additionalData = [
+'externalRegistrationInformation' => [
+	'referrer' => 'Facebook',
+	'registrationId' => 'myExternalRegistrationId',
+],
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->solutions()->virtualEvents()->webinars()->byVirtualEventWebinarId('virtualEventWebinar-id')->registrations()->post($requestBody)->wait();
 
