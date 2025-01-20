@@ -61,11 +61,11 @@ The following table shows the parameters that you can use with this method.
 
 ### cloudPCPerformanceReportName values
 
-| Member                       | Description       |
-| :--------------------------- | :---------------- |
+| Member                     | Description       |
+| :------------------------- | :---------------- |
 | performanceTrendReport     | Indicates a daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time.  | 
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.             |
-| cloudPcInsightReport         | Indicates Cloud PC level configuration data with insights.             |
+| cloudPcInsightReport       | Indicates Cloud PC-level configuration data with insights.   |
 
 ## Response
 
@@ -73,13 +73,15 @@ If successful, this method returns a `200 OK` response code and a Stream object 
 
 ## Examples
 
-### Request
+### Example 1: TODO
+
+#### Request
 
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "cloudpcreportsthis.retrieveCloudPcTenantMetricsReport"
+  "name": "cloudpcreportsthis.retrieveCloudPcTenantMetricsReport.performanceTrendReport"
 }
 -->
 ``` http
@@ -102,7 +104,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -158,86 +160,133 @@ Content-Type: application/octet-stream
   ]
 }
 ```
-### Request
+
+### Example 2: TODO
+
+#### Request
 
 The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "cloudpcreportsthis.retrieveCloudPcTenantMetricsReport.cloudPcInsightReport"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveCloudPcTenantMetricsReport
+
 {
-    "reportName":"cloudPcInsightReport",
-    "filter": "",
-    "select": ["ManagedDeviceName", "DeviceId", "ClientOS", "ClientVersion", "MultimediaRedirectVersion", "TeamsClientVersion", "HostOSVersion", "HostSxSStackVersion", "HostAgentVersion", "PolicyName", "UserSettingName", "HostRegion", "AzureNetworkConnectName"],
-    "search": "",
-    "skip": 0,
-    "top": 50
+  "reportName": "cloudPcInsightReport",
+  "filter": "",
+  "select": [
+    "ManagedDeviceName",
+    "DeviceId",
+    "ClientOS",
+    "ClientVersion",
+    "MultimediaRedirectVersion",
+    "TeamsClientVersion",
+    "HostOSVersion",
+    "HostSxSStackVersion",
+    "HostAgentVersion",
+    "PolicyName",
+    "UserSettingName",
+    "HostRegion",
+    "AzureNetworkConnectName"
+  ],
+  "search": "",
+  "skip": 0,
+  "top": 50
 }
 ```
 
-### Response
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Edm.Stream"
+} -->
 ``` http
 HTTP/1.1 200 OK
+
 {
-    "TotalRowCount": 1,
-    "Schema": [
-        {
-            "Column": "ManagedDeviceName",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "DeviceId",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "ClientOS",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "ClientVersion",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "MultimediaRedirectVersion",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "TeamsClientVersion",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "HostOSVersion",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "HostOSVersion",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "HostSxSStackVersion",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "HostAgentVersion",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "PolicyName",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "UserSettingName",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "HostRegion",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "AzureNetworkConnectName",
-            "PropertyType": "String"
-        }
-    ],
-    "Values" :[
-        ["CPC_96718d38-74ef-4026-8d54-508d52901763", "96718d38-74ef-4026-8d54-508d52901763", "Windows 10", "2.0.02817.898", "1.0.2311.2004", "1.7.00.26062", "10.0.22631.4169", "rdp-sxs240705700", "1.0.9742.1900_release", "zengyantestPolicy", "mingjunTest", "eastus", "CRUD_TestIntuneAdminWSubReader"],
+  "TotalRowCount": 1,
+  "Schema": [
+    {
+      "Column": "ManagedDeviceName",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "DeviceId",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "ClientOS",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "ClientVersion",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "MultimediaRedirectVersion",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "TeamsClientVersion",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "HostOSVersion",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "HostOSVersion",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "HostSxSStackVersion",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "HostAgentVersion",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "PolicyName",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "UserSettingName",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "HostRegion",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "AzureNetworkConnectName",
+      "PropertyType": "String"
+    }
+  ],
+  "Values": [
+    [
+      "CPC_96718d38-74ef-4026-8d54-508d52901763",
+      "96718d38-74ef-4026-8d54-508d52901763",
+      "Windows 10",
+      "2.0.02817.898",
+      "1.0.2311.2004",
+      "1.7.00.26062",
+      "10.0.22631.4169",
+      "rdp-sxs240705700",
+      "1.0.9742.1900_release",
+      "zengyantestPolicy",
+      "mingjunTest",
+      "eastus",
+      "CRUD_TestIntuneAdminWSubReader"
     ]
+  ]
 }
 ```
