@@ -63,6 +63,10 @@ items:
       href: ../../api/protectionrulebase-get.md
     - name: Delete
       href: ../../api/protectionrulebase-delete.md
+    - name: Delete And Unprotect
+      href: ../../protectionrulebase-deleteandunprotect.md
+    - name: Update
+      href: ../../api/protectionrulebase-update.md
     - name: Run
       href: ../../api/protectionrulebase-run.md
   - name: Mailbox protection rule
