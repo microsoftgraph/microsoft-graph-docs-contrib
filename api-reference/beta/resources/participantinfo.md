@@ -29,6 +29,9 @@ Contains additional properties about the participant identity
 | participantId    | String                          | The participant ID of the participant. Read-only.    |
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

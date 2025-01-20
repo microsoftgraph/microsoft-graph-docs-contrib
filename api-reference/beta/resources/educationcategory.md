@@ -34,6 +34,9 @@ A category that can be applied to assignments.
 |id|String|Unique identifier for the category.|
 |displayName|String|Unique identifier for the category.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

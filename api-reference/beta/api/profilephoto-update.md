@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: apiPageType
-ms.date: 09/24/2024
+ms.date: 11/14/2024
 ---
 
 # Update profilePhoto
@@ -45,9 +45,9 @@ You can use either PATCH or PUT for this operation.
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-| Delegated (work or school account)        | TeamSettings.ReadWrite.All | Not supported. |
-| Delegated (personal Microsoft account)    | Not supported.     | Not supported. |
-| Application                               | Not supported. | Not supported. |
+| Delegated (work or school account)        | TeamSettings.ReadWrite.All | Group.ReadWrite.All |
+| Delegated (personal Microsoft account)    | Not supported.  | Not supported.                  |
+| Application                               | TeamSettings.ReadWrite.All | Group.ReadWrite.All |
 
 ### To update the profile photo of a user
 

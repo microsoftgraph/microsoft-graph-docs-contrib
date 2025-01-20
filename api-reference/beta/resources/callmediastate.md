@@ -22,6 +22,9 @@ Represents the media state for a [call](call.md).
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
 | audio           | mediaState  | The audio media state. Possible values are: `active`, `inactive`, `unknownFutureValue`. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

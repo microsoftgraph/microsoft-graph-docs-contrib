@@ -26,6 +26,9 @@ Base type of [serviceProvisioningXmlError](../resources/serviceprovisioningxmler
 | isResolved      | Boolean        | Indicates whether the Error has been attended to.                                                    |
 | serviceInstance | String         | Qualified service instance (for example, "SharePoint/Dublin") that published the service error information. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

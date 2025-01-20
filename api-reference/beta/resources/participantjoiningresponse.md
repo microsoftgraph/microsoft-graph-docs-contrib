@@ -16,13 +16,19 @@ Namespace: microsoft.graph
 
 An abstract base class that contains the response to a participant joining notification.
 
-## Derived types
+The following table shows the types that inherit from this type.
 
 | Type                                                   | Description                                                                                          |
 | :----------------------------------------------------- | :--------------------------------------------------------------------                                |
 | [acceptJoinResponse](./acceptjoinresponse.md)          | Response to accept participant to the call.                                                           |
 | [rejectJoinResponse](./rejectjoinresponse.md)          | Response to reject participant to the call.                                                           |
 | [inviteNewBotResponse](./invitenewbotresponse.md)      | Response to request participant joining notification sent out again as an incoming call notification. |
+
+## Properties
+None.
+
+## Relationships
+None.
 
 ## JSON representation
 

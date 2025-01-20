@@ -31,6 +31,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |meetingOrganizer|[identitySet](../resources/identityset.md)|Organizer of the meeting.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

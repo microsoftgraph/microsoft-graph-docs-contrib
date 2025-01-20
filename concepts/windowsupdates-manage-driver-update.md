@@ -3,7 +3,7 @@ title: "Deploy a driver update using Windows Autopatch"
 description: "Follow these steps to manage driver approvals for devices in a Microsoft Entra tenant by using Windows Autopatch."
 author: "Ryan-K-Williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: conceptualPageType
 ms.date: 11/07/2024
 ---

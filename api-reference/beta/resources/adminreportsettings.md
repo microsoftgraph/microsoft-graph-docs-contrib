@@ -29,6 +29,9 @@ Represents the tenant-level settings for Microsoft 365 reports.
 | -------------- | -------------- | ------------------------------------------- |
 | displayConcealedNames | Boolean | If set to `true`, all reports conceal user information such as usernames, groups, and sites. If `false`, all reports show identifiable information. This property represents a setting in the Microsoft 365 admin center. Required. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -18,10 +18,10 @@ import (
 
 requestFilter := "locale eq 'en'"
 
-requestParameters := &graphsecurity.SecurityAttackSimulationTrainingItemLanguageDetailItemRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.AttackSimulationTrainingsItemLanguageDetailsItemRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphsecurity.SecurityAttackSimulationTrainingItemLanguageDetailItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.AttackSimulationTrainingsItemLanguageDetailsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

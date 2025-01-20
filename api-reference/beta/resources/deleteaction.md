@@ -18,6 +18,16 @@ The presence of the **DeleteAction** resource on an [**itemActivity**][activity]
 
 [activity]: itemactivity.md
 
+## Properties
+
+| Property   | Type   | Description                                                    |
+| :--------- | :----- | :------------------------------------------------------------- |
+| name       | string | The name of the item that was deleted.                         |
+| objectType | string | `File` or `Folder`, depending on the type of the deleted item. |
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {
@@ -32,13 +42,6 @@ The presence of the **DeleteAction** resource on an [**itemActivity**][activity]
   "objectType": "File | Folder"
 }
 ```
-
-## Properties
-
-| Property   | Type   | Description                                                    |
-| :--------- | :----- | :------------------------------------------------------------- |
-| name       | string | The name of the item that was deleted.                         |
-| objectType | string | `File` or `Folder`, depending on the type of the deleted item. |
 
 ## Remarks
 

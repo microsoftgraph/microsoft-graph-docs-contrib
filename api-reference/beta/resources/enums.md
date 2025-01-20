@@ -5,12 +5,26 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 12/06/2024
+ms.date: 12/31/2024
 ---
 
 # Enum values
 
 Namespace: microsoft.graph
+
+### changeAnnouncementChangeType values
+
+|Member|
+|:---|
+|breakingChange|
+|deprecation|
+|endOfSupport|
+|featureChange|
+|other|
+|retirement|
+|securityIncident|
+|uxChange|
+|unknownFutureValue|
 
 ### hardwareOathTokenHashFunction values
 
@@ -2136,31 +2150,6 @@ Namespace: microsoft.graph
 | lightRed    | 8     |
 | maxColor    | 9     |
 
-### educationSynchronizationProfileState values
-
-| Member             | Value |
-| ------------------ | ----- |
-| deleting           | 2     |
-| deletionFailed     | 3     |
-| provisioningFailed | 5     |
-| provisioned        | 6     |
-| provisioning       | 7     |
-| unknownFutureValue | 8     |
-
-### educationSynchronizationStatus values
-
-| Member |
-| ------------------ |
-| paused |
-| inProgress |
-| success |
-| error |
-| validationError |
-| quarantined |
-| unknownFutureValue |
-| extracting |
-| validating |
-
 ### educationExternalSource values
 
 | Member |
@@ -2951,6 +2940,26 @@ Possible values for user account types (group membership), per Windows definitio
 | disabled |
 | enabledForReportingButNotEnforced |
 
+
+### privateNetworkDestinationType values 
+
+|Member|
+|:---|
+|ipAddress|
+|ipRange|
+|ipRangeCidr|
+|fqdn|
+|dnsSuffix|
+|unknownFutureValue|
+
+### privateNetworkProtocol values 
+
+|Member|
+|:---|
+|tcp|
+|udp|
+|unknownFutureValue|
+
 ### conditionalAccessGrantControl values
 
 | Member |
@@ -3389,6 +3398,7 @@ Possible values for user account types (group membership), per Windows definitio
 | project |
 | driveItem |
 | user |
+| teamsChannel|
 
 ### plannerPlanContextType values
 
@@ -4303,6 +4313,9 @@ Possible values for user account types (group membership), per Windows definitio
 | tokenIssuanceStart |
 | pageRenderStart |
 | unknownFutureValue |
+|attributeCollectionStart|
+|attributeCollectionSubmit|
+|emailOtpSend|
 
 ### microsoftAuthenticatorAuthenticationMethodClientAppName values
 
@@ -4953,6 +4966,25 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
+### callEventType values
+
+| Member |
+| ------------------ |
+| callStarted |
+| callEnded |
+| unknownFutureValue |
+| rosterUpdated |
+
+### restoreArtifactsBulkRequestStatus values 
+
+|Member|
+|:---|
+|unkown|
+|active|
+|completed|
+|completedWithErrors|
+|unknownFutureValue|
+
 ### cloudPCPerformanceReportName values
 
 | Member                 |
@@ -4976,10 +5008,108 @@ Possible values for user account types (group membership), per Windows definitio
 |true|
 |unknownFutureValue|
 
+### changeItemService values
+
+|Member|
+|:---|
+|accessReviews|
+|appProxy|
+|audit|
+|authenticationsLogins|
+|azureADDomainServices|
+|b2B|
+|b2CConsumerIdentityManagement|
+|conditionalAccess|
+|deviceAccessManagement|
+|deviceRegistrationandManagement|
+|directoryManagement|
+|enterpriseApps|
+|entitlementManagement|
+|groupManagement|
+|identityProtection|
+|internetAccess|
+|lifecycleWorkflows|
+|linkedIn|
+|managedidentitiesforAzureresources|
+|mfA|
+|microsoftAuthenticatorApp|
+|microsoftIdentityManager|
+|msGraph|
+|myApps|
+|myProfileAccount|
+|na|
+|o365Groups|
+|other|
+|privateAccess|
+|privilegedIdentityManagement|
+|provisioning|
+|rbac|
+|reporting|
+|roles|
+|selfServicePasswordReset|
+|sovereignClouds|
+|termsofUse|
+|userAccessManagement|
+|userExperienceandManagement|
+|userManagement|
+|microsoftEntraDomainServices|
+|verifiedId|
+|unknownFutureValue|
+
+### changeItemState values
+
+|Member|
+|:---|
+|available|
+|comingSoon|
+|unknownFutureValue|
+
+### roadmapItemDeliveryStage values
+
+|Member|
+|:---|
+|privatePreview|
+|publicPreview|
+|ga|
+|unknownFutureValue|
+
+### changeAnnouncementChangeType values 
+
+|Member|
+|:---|
+|breakingChange|
+|deprecation|
+|endOfSupport|
+|featureChange|
+|other|
+|retirement|
+|securityIncident|
+|uxChange|
+
 ### restoreJobType values 
 
 |Member|
 |:---|
 |standard|
 |bulk|
+|unknownFutureValue|
+
+### mailboxType values 
+
+|Member|
+|:---|
+|unknown|
+|user|
+|shared|
+|unknownFutureValue|
+
+### tlsClientRegistrationMetadata values 
+
+|Member|
+|:---|
+|tls_client_auth_subject_dn|
+|tls_client_auth_san_dns|
+|tls_client_auth_san_uri|
+|tls_client_auth_san_ip|
+|tls_client_auth_san_email|
 |unknownFutureValue|

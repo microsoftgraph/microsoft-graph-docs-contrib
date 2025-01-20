@@ -23,6 +23,9 @@ The basic representation of a time zone.
 | name | string | The name of a time zone. It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

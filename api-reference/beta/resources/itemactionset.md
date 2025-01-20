@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: The ItemActionSet resource provides information about the actions that made up an [activity][itemActivity] on an item.
+description: Provides information about the actions that made up an [activity][itemActivity] on an item.
 ms.date: 09/14/2017
 title: ItemActionSet
 ms.localizationpriority: medium
@@ -14,35 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.
+Provides information about the actions that made up an [activity][itemActivity] on an item.
 
 [itemActivity]: itemactivity.md
-
-## JSON representation
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "keyProperty": "id",
-  "@type": "microsoft.graph.itemActionSet",
-  "@type.aka": "oneDrive.action"
-}-->
-
-```json
-{
-  "comment": {"@odata.type": "microsoft.graph.commentAction"},
-  "create": {"@odata.type": "microsoft.graph.createAction"},
-  "delete": {"@odata.type": "microsoft.graph.deleteAction"},
-  "edit": {"@odata.type": "microsoft.graph.editAction"},
-  "mention": {"@odata.type": "microsoft.graph.mentionAction"},
-  "move": {"@odata.type": "microsoft.graph.moveAction"},
-  "rename": {"@odata.type": "microsoft.graph.renameAction"},
-  "restore": {"@odata.type": "microsoft.graph.restoreAction"},
-  "share": {"@odata.type": "microsoft.graph.shareAction"},
-  "version": {"@odata.type": "microsoft.graph.versionAction"},
-  
-}
-```
 
 ## Properties
 
@@ -72,6 +46,37 @@ New actions may get logged in the future, so make sure your app is tolerant of h
 [restoreAction]: restoreaction.md
 [shareAction]: shareaction.md
 [versionAction]: versionaction.md
+
+## Relationships
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "keyProperty": "id",
+  "@type": "microsoft.graph.itemActionSet",
+  "@type.aka": "oneDrive.action"
+}-->
+
+```json
+{
+  "comment": {"@odata.type": "microsoft.graph.commentAction"},
+  "create": {"@odata.type": "microsoft.graph.createAction"},
+  "delete": {"@odata.type": "microsoft.graph.deleteAction"},
+  "edit": {"@odata.type": "microsoft.graph.editAction"},
+  "mention": {"@odata.type": "microsoft.graph.mentionAction"},
+  "move": {"@odata.type": "microsoft.graph.moveAction"},
+  "rename": {"@odata.type": "microsoft.graph.renameAction"},
+  "restore": {"@odata.type": "microsoft.graph.restoreAction"},
+  "share": {"@odata.type": "microsoft.graph.shareAction"},
+  "version": {"@odata.type": "microsoft.graph.versionAction"},
+  
+}
+```
 
 ## Remarks
 

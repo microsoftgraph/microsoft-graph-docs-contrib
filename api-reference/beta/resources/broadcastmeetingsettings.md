@@ -36,6 +36,9 @@ Represents settings related to a [live event](/microsoftteams/teams-live-events/
 | roleIsAttendee     | Only the specified people can join this Teams live event.                |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.  |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -14,6 +14,7 @@ var requestBody = new Team
 	Visibility = TeamVisibilityType.Private,
 	DisplayName = "Sample Engineering Team",
 	Description = "This is a sample engineering team, used to showcase the range of properties supported by this API",
+	FirstChannelName = "My First Channel of the team",
 	Channels = new List<Channel>
 	{
 		new Channel

@@ -24,6 +24,9 @@ Represents a web site.
 |address|string|The URL of the website.|
 |displayName|string|The display name of the web site.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

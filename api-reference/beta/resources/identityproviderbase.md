@@ -47,6 +47,9 @@ Configuring an identity provider in your external or Azure AD B2C tenant enables
 |id|String|The identifier of the identity provider.|
 |displayName|String|The display name of the identity provider.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -24,6 +24,9 @@ Represents the details about the update status of the software for various compo
 |softwareFreshness|teamworkSoftwareFreshness|The update status of the software. The possible values are: `unknown`, `latest`, `updateAvailable`, `unknownFutureValue`.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

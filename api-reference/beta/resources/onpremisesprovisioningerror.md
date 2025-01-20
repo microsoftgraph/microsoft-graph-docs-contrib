@@ -25,6 +25,9 @@ Represents directory synchronization errors for the [user](user.md), [group](gro
 |propertyCausingError|String| Name of the directory property causing the error. Current possible values: *UserPrincipalName* or *ProxyAddress* |
 |value|String| Value of the property causing the error. |
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

@@ -5,7 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
-ms.date: 09/26/2024
+ms.date: 11/14/2024
 ---
 
 # fileStorageContainer resource type
@@ -24,6 +24,8 @@ Represents a location where multiple users or a group of users can store files a
 |[Update](../api/filestoragecontainer-update.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Delete](../api/filestorage-delete-containers.md)|None|Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Activate](../api/filestoragecontainer-activate.md)|None|Activate a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
+|[Restore deleted container](../api/filestoragecontainer-restore.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Restore a deleted [fileStorageContainer](../resources/filestoragecontainer.md) object.|
+|[Remove deleted containers](../api/filestorage-delete-deletedcontainers.md)|None|Remove a deleted [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Permanently delete](../api/filestoragecontainer-permanentdelete.md)|None|Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get drive](../api/filestoragecontainer-get-drive.md)|[drive](../resources/drive.md)|Get the drive resource from a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md)| List permissions on a fileStorageContainer.|
@@ -32,8 +34,19 @@ Represents a location where multiple users or a group of users can store files a
 |[Delete permissions](../api/filestoragecontainer-delete-permissions.md)|[permission](../resources/permission.md)|Delete permission from a fileStorageContainer.|
 |[List custom property](../api/filestoragecontainer-list-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|List custom properties of the fileStorageContainer.|
 |[Add custom property](../api/filestoragecontainer-post-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Add custom property to the fileStorageContainer.|
+|[List columns](../api/filestoragecontainer-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|List columns in a fileStorageContainer.|
 |[Update custom property](../api/filestoragecontainer-update-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Update custom property on a fileStorageContainer.|
 |[Delete custom property](../api/filestoragecontainer-delete-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Delete custom property from a fileStorageContainer.|
+|[Add column](../api/filestoragecontainer-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a columnDefinition for afileStorageContainer.|
+|[Update column](../api/filestoragecontainer-update-column.md)|[columnDefinition](../resources/columndefinition.md)|Update a column in a fileStorageContainer.|
+|[Delete file storage container column](../api/filestoragecontainer-delete-column.md)|None|Delete a column from a fileStorageContainer.|
+|[Get column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get a column from a fileStorageContainer.|
+|[Update recycle bin settings](../api/filestoragecontainer-update-recyclebinsettings.md)|[recyclebinsettings](../resources/recyclebinsettings.md)|Update recycleBin settings for a fileStorageContainer.|
+|[Restore recycle bin items](../api/filestoragecontainer-restore-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
+|[Delete recycle bin items](../api/filestoragecontainer-delete-recyclebinitem.md)|None|Delete recycle bin items from a fileStorageContainer.|
+|[Get recycle bin items](../api/filestoragecontainer-list-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
+|[Lock](../api/filestoragecontainer-lock.md)|None|Lock a [fileStorageContainer](../resources/filestoragecontainer.md).|
+|[Unlock](../api/filestoragecontainer-unlock.md)|None|Unlock a [fileStorageContainer](../resources/filestoragecontainer.md).|
 
 ## Properties
 
@@ -45,9 +58,10 @@ Represents a location where multiple users or a group of users can store files a
 |description|String|Provides a user-visible description of the **fileStorageContainer**. Read-write.|
 |displayName|String|The display name of the **fileStorageContainer**. Read-write.|
 |id|String|The unique stable identifier of the **filerStorageContainer**. Read-only.|
+|lockState|siteLockState|Indicates the lock state of the **fileStorageContainer**. The possible values are `unlocked` and `lockedReadOnly`. Read-only.|
+|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.|
 |status|fileStorageContainerStatus|Status of the **fileStorageContainer**. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours. The possible values are: `inactive `, `active `. Read-only.|
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
-|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.
 
 ## Relationships
 
@@ -55,6 +69,7 @@ Represents a location where multiple users or a group of users can store files a
 |:---|:---|:---|
 |drive|[drive](../resources/drive.md)|The drive of the resource **fileStorageContainer**. Read-only.|
 |permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. Permission for each user is set by the **roles** property. The possible values are: `reader`, `writer`, `manager`, and `owner`. Read-write.|
+|recycleBin|[recycleBin](../resources/recyclebin.md)|Recycle bin of the **fileStorageContainer**. Read-only.|
 
 ### roles property values
 

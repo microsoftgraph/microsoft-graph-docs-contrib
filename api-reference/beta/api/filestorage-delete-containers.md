@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. Deleting a file storage container with this API moves it to the deleted container collection, so that it can be restored later. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

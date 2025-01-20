@@ -34,6 +34,9 @@ as an automatic reply for a message recipient.
 | recipientSuggestions | [recipient](../resources/recipient.md) collection | Recipients suggested based on previous contexts where they appear in the same message. |
 | totalMemberCount | Int32 | The number of members if the recipient is a distribution list. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

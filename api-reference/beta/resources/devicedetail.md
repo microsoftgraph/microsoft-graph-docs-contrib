@@ -25,6 +25,9 @@ Indicates details of the device used in a sign-in activity. Includes information
 |operatingSystem|String|Indicates the OS name and version used in the sign-in.|
 |trustType|String|Indicates information on whether the device used in the sign-in is workplace-joined, Microsoft Entra-joined, domain-joined.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

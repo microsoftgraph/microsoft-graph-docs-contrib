@@ -20,6 +20,9 @@ Represents a response to accept a participant who tries to join the meeting.
 
 None.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -26,6 +26,9 @@ Represents an individual template setting definition, including the default valu
 |name|string|Name of the setting. Read-only.|
 |type|string|Type of the setting. Read-only.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

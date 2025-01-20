@@ -52,6 +52,9 @@ Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 | processing | Interim status indicating the status is processing. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

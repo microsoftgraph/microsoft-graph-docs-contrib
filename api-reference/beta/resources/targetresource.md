@@ -26,6 +26,9 @@ Represents target resource types associated with audit activity.
 |groupType|groupType|When **type** is set to `Group`, this indicates the group type.  Possible values are: `unifiedGroups`, `azureAD`, and `unknownFutureValue`|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Indicates name, old value and new value of each attribute that changed. Property values depend on the operation **type**.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

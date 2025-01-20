@@ -6,12 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\IdentityProviderBase;
+use Microsoft\Graph\Beta\Generated\Models\OidcIdentityProvider;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new IdentityProviderBase();
+$requestBody = new OidcIdentityProvider();
 $requestBody->setOdataType('#microsoft.graph.oidcIdentityProvider');
 $requestBody->setDisplayName('Contoso');
 

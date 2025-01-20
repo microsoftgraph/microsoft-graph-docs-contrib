@@ -27,6 +27,9 @@ Represents the access permission that a [governanceSubject](../resources/governa
 |isActive|Boolean|Indicate if the requestor has any active role assignment for the access level.|
 |isEligible|Boolean|Indicate if the requestor has any eligible role assignment for the access level.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

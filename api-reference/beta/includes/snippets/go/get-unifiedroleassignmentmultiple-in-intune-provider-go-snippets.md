@@ -18,10 +18,10 @@ import (
 
 requestFilter := " principalIds/any(x:x eq '564ae70c-73d9-476b-820b-fb61eb7384b9')"
 
-requestParameters := &graphrolemanagement.RoleManagementDeviceManagementRoleAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphrolemanagement.DeviceManagementRoleAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphrolemanagement.RoleManagementDeviceManagementRoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphrolemanagement.DeviceManagementRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -22,6 +22,9 @@ Represents a license assigned to a user or group. The **assignedLicenses** prope
 |disabledPlans|Guid collection|A collection of the unique identifiers for plans that have been disabled. IDs are available in **servicePlans** > **servicePlanId** in the tenant's [subscribedSkus](../resources/subscribedsku.md) or **serviceStatus** > **servicePlanId** in the tenant's [companySubscription](../resources/subscribedsku.md). |
 |skuId|Guid|The unique identifier for the SKU. Corresponds to the **skuId** from [subscribedSkus](../resources/subscribedsku.md) or [companySubscription](../resources/companysubscription.md).|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

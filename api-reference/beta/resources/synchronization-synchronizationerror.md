@@ -25,6 +25,9 @@ Represents an error that occurred during the synchronization process.
 |message|String| The error message. For example, `Policy permitting auto-redemption of invitations not configured`.  |
 |tenantActionable|Boolean| The action to take to resolve the error. For example, `false`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

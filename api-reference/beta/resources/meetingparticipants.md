@@ -30,6 +30,9 @@ Participants in a meeting.
 > **attendees** collection. Use the **role** property of [meetingParticipantInfo](meetingparticipantinfo.md)
 > to identify the meeting role of the attendee.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

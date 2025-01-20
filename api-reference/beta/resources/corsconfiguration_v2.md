@@ -1,11 +1,11 @@
 ---
 title: "corsConfiguration_v2 resource type"
-description: "Represents the CORS settings for an on-premises web application segment published via Application Proxy."
+description: "Represents the CORS settings for an on-premises web application segment published via application proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
-ms.date: 07/26/2024
+ms.date: 12/19/2024
 ---
 
 # corsConfiguration_v2 resource type
@@ -16,6 +16,14 @@ Namespace: microsoft.graph
 
 Represents the CORS settings for the [webApplicationSegment](webapplicationsegment.md) resource when publishing an on-premises application through Microsoft Entra application proxy. For more information, see [Understand and solve Microsoft Entra application proxy CORS issues](/azure/active-directory/app-proxy/application-proxy-understand-cors-issues).
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/webapplicationsegment-list-corsconfigurations.md)|[corsConfiguration_v2](../resources/corsconfiguration_v2.md) collection|Get a list of the [corsConfiguration_v2](../resources/corsconfiguration_v2.md) objects and their properties.|
+|[Create](../api/webapplicationsegment-post-corsconfigurations.md)|[corsConfiguration_v2](../resources/corsconfiguration_v2.md)|Create a new [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object.|
+|[Get](../api/corsconfiguration_v2-get.md)|[corsConfiguration_v2](../resources/corsconfiguration_v2.md)|Read the properties and relationships of a [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object.|
+|[Update](../api/corsconfiguration_v2-update.md)|[corsConfiguration_v2](../resources/corsconfiguration_v2.md)|Update the properties of a [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object.|
+|[Delete](../api/webapplicationsegment-delete-corsconfigurations.md)|None|Delete a [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object.|
 
 ## Properties
 

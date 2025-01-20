@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 01/12/2024
+ms.date: 01/15/2025
 #customer intent: As a developer, I want to learn how to track changes to specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
 ---
 
@@ -16,7 +16,9 @@ ms.date: 01/12/2024
 
 Delta query, also called *change tracking*, enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 
-Using delta query helps you avoid constantly polling Microsoft Graph, as the app requests only data that changed since the last request. This pattern allows the application to reduce the amount of data  it requests, thereby reducing the cost of the request and as such, likely limit the chances of the requests being [throttled](throttling.md).
+Using delta query helps you avoid constantly polling Microsoft Graph, as the app requests only data that changed since the last request. This pattern allows the application to reduce the amount of data it requests, thereby reducing the cost of the request and as such, likely limit the chances of the requests being [throttled](throttling.md).
+
+Delta query uses a *pull* model, where the application requests changes from Microsoft Graph; while [change notifications](./change-notifications-overview.md) use a *push* model, where Microsoft Graph notifies the application of changes.
 
 ## Use delta query to track changes in a resource collection
 
@@ -29,19 +31,21 @@ The typical call pattern is as follows:
 
 2. Microsoft Graph responds with the requested resource and a [state token](#state-tokens).
 
-     a.  If Microsoft Graph returns a `@odata.nextLink` URL, there are more pages of data to retrieve in the session, even if the current response contains an empty result. The application uses the `@odata.nextLink` URL to continue making requests to retrieve all pages of data until Microsoft Graph returns a `@odata.deltaLink` URL in the response.
+     a. If Microsoft Graph returns a `@odata.nextLink` URL, there are more pages of data to retrieve in the session, even if the current response contains an empty result. The application uses the `@odata.nextLink` URL to continue making requests to retrieve all pages of data until Microsoft Graph returns a `@odata.deltaLink` URL in the response.
 
-     b.  If Microsoft Graph returns a `@odata.deltaLink` URL, there's no more data about the existing state of the resource to return in the current session. For future requests, the application uses the `@odata.deltaLink` URL to learn about changes to the resource.
+     b. If Microsoft Graph returns a `@odata.deltaLink` URL, there's no more data about the existing state of the resource to return in the current session. For future requests, the application uses the `@odata.deltaLink` URL to learn about changes to the resource.
+
+     c. A page can't contain both `@odata.deltaLink` and `@odata.nextLink`.
 
     > [!NOTE]
-    > The Microsoft Graph response in Step 2 includes the resources that *currently* exist in the collection. Resources that were deleted prior to the initial delta query aren't returned. Updates made before the initial request are summarized on the resource returned as its latest state.
+    > The Microsoft Graph response in Step 2 includes the resources that *currently* exist in the collection. Resources that were deleted before the initial delta query aren't returned. Updates made before the initial request are summarized on the resource returned as its latest state.
 
-3. When the application needs to learn about changes to the resource, it uses the `@odata.deltaLink` URL it received in step 2 to make requests. The application can make this request immediately after completing step 2 or when it checks for changes.
+4. When the application needs to learn about changes to the resource, it uses the `@odata.deltaLink` URL it received in step 2 to make requests. The application can make this request immediately after completing step 2 or when it checks for changes.
 
-4. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
+5. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
 
 > [!NOTE]
-> - Resources stored in Microsoft Entra ID (such as users and groups) support "sync from now" scenarios. This allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `@odata.deltaLink` instead. Append `$deltatoken=latest` to the `delta` function and the response will contain a `@odata.deltaLink` and no resource data. Resources in OneDrive and SharePoint also support this feature but require `token=latest` instead.
+> - Microsoft Entra ID resources such as users and groups support "sync from now" scenarios. This feature allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `@odata.deltaLink` instead. Append `$deltatoken=latest` to the `delta` function and the response contains a `@odata.deltaLink` and no resource data. Resources in OneDrive and SharePoint also support this feature but require `token=latest` instead.
 > - `$select` and `$deltaLink` query parameters are supported for some Microsoft Entra resources so that customers can change the properties they want to track for an existing `@odata.deltaLink`. Delta queries with both `$select` and `$skiptoken` aren't supported.
 
 ### State tokens
@@ -163,7 +167,7 @@ Delta queries for supported resources are available for customers hosted on the 
 
 ### Changes to properties stored outside the main data store aren't tracked
 
-Some resources contain properties that are stored outside the main data store for the resource. For example, the [user](/graph/api/resources/user) resource data is mostly stored in Microsoft Entra ID, but some of its properties, like **skills**, are stored in SharePoint Online. Currently, only the properties stored in the main data store trigger changes in the delta query; properties stored outside the main data store aren't supported as part of change tracking. Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
+Some resources contain properties that are stored outside the main data store for the resource. For example, some properties of the [user](/graph/api/resources/user) resource like **skills**, are stored in SharePoint and not Microsoft Entra ID. Currently, only the properties stored in the main data store trigger changes in the delta query; properties stored outside the main data store aren't supported as part of change tracking. Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
 
 For more information about properties stored outside of the main data store, see the [users](/graph/api/resources/users) and [groups](/graph/api/resources/groups-overview) documentation.
 
@@ -199,9 +203,4 @@ Applications can use this strategy to nearly eliminate (only for supported resou
 
 ## Related content
 
-Learn more about delta query in the following tutorials:
-
-- [Get incremental changes to events in a calendar view](delta-query-events.md)
-- [Get incremental changes to messages in a folder](./delta-query-messages.md)
-- [Get incremental changes to groups](./delta-query-groups.md)
-- [Get incremental changes to users](./delta-query-users.md)
+- [Explore change notifications, which uses a push model to notify your app when a resource changes](./change-notifications-overview.md)

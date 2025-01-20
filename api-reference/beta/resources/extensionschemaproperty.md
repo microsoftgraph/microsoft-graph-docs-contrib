@@ -34,6 +34,9 @@ The following data types are supported when defining a property in a schema exte
 | Integer | 32-bit value. Not supported for messages, events, and posts. |
 | String | 256 characters maximum. |
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

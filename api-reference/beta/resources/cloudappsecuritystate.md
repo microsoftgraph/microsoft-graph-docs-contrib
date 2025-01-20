@@ -22,6 +22,9 @@ Contains stateful information about the cloud application (destinationServiceNam
 |destinationServiceName|String|Cloud application/service name (for example "Salesforce", "DropBox", etc.).|
 |riskScore|String|Provider-generated/calculated risk score of the Cloud Application/Service. Recommended value range of 0-1, which equates to a percentage.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

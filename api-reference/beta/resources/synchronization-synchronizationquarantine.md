@@ -26,6 +26,9 @@ Provides information about the quarantine state of a [synchronizationJob](synchr
 |seriesCount|Int64|Number of times in this series the quarantine was re-evaluated and left in effect (a series starts when quarantine is first imposed, and is reset as soon as quarantine is lifted).|
 |error|[synchronizationError](synchronization-synchronizationerror.md)|Describes the error(s) that occurred when putting the synchronization job into quarantine.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

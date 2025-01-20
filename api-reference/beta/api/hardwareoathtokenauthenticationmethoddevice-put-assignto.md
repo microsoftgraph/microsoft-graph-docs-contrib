@@ -21,12 +21,10 @@ Assign a hardware OATH token, represented by a [hardwareOathTokenAuthenticationM
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "hardwareoathtokenauthenticationmethoddevice-post-assignto-permissions"
-}
--->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-post-assignto-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
 
 ## HTTP request
 
@@ -64,6 +62,7 @@ If successful, this method returns a `204 No Content` response code and a [user]
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
@@ -77,6 +76,12 @@ Content-Type: application/json
     "@odata.id": "https://graph.microsoft-ppe.com/beta/users/0cadbf92-####-####-####-############"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

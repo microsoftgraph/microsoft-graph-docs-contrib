@@ -6,7 +6,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 09/26/2024
+ms.date: 11/14/2024
 ---
 
 # Update fileStorageContainer
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -53,7 +53,9 @@ If successful, this method returns a `200 OK` response code and an updated [file
 
 ### Request
 The following example shows a request.
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainer"
@@ -124,7 +126,9 @@ Content-type: application/json
   "status": "active",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
   "settings": {
-    "isOcrEnabled": false
+    "isOcrEnabled": false,
+    "itemMajorVersionLimit": 50,
+    "isItemVersioningEnabled": true
   }
 }
 ```

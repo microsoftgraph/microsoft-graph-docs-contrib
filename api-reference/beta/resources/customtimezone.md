@@ -26,6 +26,9 @@ Represents a time zone where the transition from standard to daylight saving tim
 | standardOffset | [standardTimeZoneOffset](standardtimezoneoffset.md) | Specifies when the time zone switches from daylight saving time to standard time. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

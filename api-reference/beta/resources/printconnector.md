@@ -38,6 +38,9 @@ Represents a print connector that has been registered by using a Universal Print
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the connector was registered.|
 |registeredBy|[userIdentity](useridentity.md)|The user who registered the connector.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

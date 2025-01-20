@@ -24,6 +24,9 @@ Represents the file metadata for an export in eDiscovery.
 |fileName | String | The name of the file. |
 |size| Int64 | The size of the file. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

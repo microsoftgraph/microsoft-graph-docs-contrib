@@ -26,6 +26,9 @@ Inherits from [identity](identity.md).
 | email | String | The email of the guest user. |
 | id | String | The unique identifier for the guest user. Inherited from **identity**.  |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

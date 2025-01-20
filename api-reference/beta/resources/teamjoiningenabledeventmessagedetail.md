@@ -26,6 +26,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |teamId|String|Unique identifier of the team.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

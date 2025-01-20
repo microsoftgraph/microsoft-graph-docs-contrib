@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Schedule.ReadWrite.All|Group.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Schedule.Read.All|Schedule.ReadWrite.All|
+|Application|Schedule.ReadWrite.All|Not available.|
 

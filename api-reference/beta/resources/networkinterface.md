@@ -24,6 +24,9 @@ Represents a Network Interface Card (NIC) associated with this host.
 |localIpV6Address|String|Last local (link-local or site-local) IPv6 address associated with this NIC.|
 |macAddress|String|MAC address of the NIC on this host.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -22,6 +22,9 @@ Contains a response to a request to have a participant joining notification sent
 | :--------------- | :------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | inviteUri        | String                          | URI to receive new incoming call notification.                                                                                                                |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
