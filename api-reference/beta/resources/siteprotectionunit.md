@@ -36,7 +36,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |lastModifiedDateTime|DateTimeOffset|The time the protection unit was last modified. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. Protection unit protected by multiple sources is indicated by comma seperated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`.|
+|protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. Protection unit protected by multiple sources is indicated by comma seperated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |siteId|String|Unique identifier of the SharePoint site.|
 |siteName|String|Name of the SharePoint site.|
 |siteWebUrl|String|The web URL of the SharePoint site.|

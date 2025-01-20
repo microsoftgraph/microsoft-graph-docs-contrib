@@ -38,7 +38,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |lastModifiedDateTime|DateTimeOffset|The time the protection unit was last modified. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |mailboxType|[mailboxType](../resources/enums.md#mailboxtype-values)|The type of mailbox which is assigned to the user with id: `directoryObjectId`.The possible values are: `unknown`, `user`, `shared`, `unknownFutureValue`.|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|protectionSources|[protectionSource](../resources/enums.md#protectionsource-values)|Indicates the sources by which a protection unit is currently protected. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`. Protection unit protected by multiple sources have comma separated sources.|
+|protectionSources|[protectionSource](../resources/enums.md#protectionsource-values)|Indicates the sources by which a protection unit is currently protected. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`. Protection unit protected by multiple sources have comma separated sources. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |status|[protectionUnitStatus](../resources/mailboxprotectionunit.md#protectionunitstatus-values)|The individual enable, disable, or removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values

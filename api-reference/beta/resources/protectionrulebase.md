@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 Represents a protection rule specified by the client as part of a protection plan applied to Microsoft 365 data in an organization. Currently, only inclusion rules, which are rules that indicate that a protection policy should match the specified criteria, can be defined.
 
-<!-- Currently, protection rules are static in nature, meaning policy changes are applied only when the rule is executed, with no automatic/dynamic updates. -->
-- Protection rules can be static or dynamic in nature, depending on the property `isAutoApplyEnabled` set to `false` or `true` respectively.
-- This property can be set only at the time of creation and can't be changed later on. This also means that static to dynamic rule and vice-versa isn't allowed.
-- `isAutoApplyEnabled` = `true` indicates that the rule is dynamic in nature (a.k.a dynamic rule).
+- Protection rules can be static or dynamic. If the **isAutoApplyEnabled** property is `true`, the protection rule is dynamic. Otherwise, it is static.
+- Static rule changes are applied once when it is created with no automatic/dynamic updates.
+- Dynamic rule is re-evaulated at regular intervals to fetch the latest scope of the rule, resulting in addition/removal of artifacts based on latest rule evaluation.
+- This property can only be set when a **protectionRuleBase** object is created. Therefore, a dynamic rule cannot be changed to a static rule, nor vice versa.
 
 This abstract type is the base type for [siteProtectionRule](../resources/siteprotectionrule.md), [mailboxProtectionRule](../resources/mailboxprotectionrule.md), and [driveProtectionRule](../resources/driveprotectionrule.md).
 
