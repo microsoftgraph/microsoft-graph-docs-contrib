@@ -355,6 +355,40 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
+Following the monitoring url
+```http
+{
+  "@odata.context": "https://contoso.sharepoint.com/sites/site2/_api/v2.1/$metadata#drives('driveId')/operations/$entity",
+  "id": "e410fb22-fc84-41df-ac9f-e95e5110a5cb",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastActionDateTime": "0001-01-01T00:00:00Z",
+  "status": "failed",
+  "error": {
+    "message": "Errors occurred during copy/move operation.",
+    "details": [
+      {
+        "code": "nameAlreadyExists",
+        "message": "Name already exists"
+      },
+      {
+        "code": "nameAlreadyExists",
+        "message": "Name already exists"
+      },
+      {
+        "code": "nameAlreadyExists",
+        "message": "Name already exists",
+        "target": "01E4CGZM4FGUVRMKSJWBCLZQTWNFGHOTXG"
+      },
+      {
+        "code": "nameAlreadyExists",
+        "message": "Name already exists",
+        "target": "01E4CGZM2XRHETBOUOYVA2OKZFMGGBQ6VU"
+      }
+    ]
+  }
+}
+```
+
 ### Example 5: Copy operation preserve version history
 
 The following example copies the item identified by `{item-id}` into a folder identified with a `driveId` and `id` value. It also copies the version history to the target folder. If the source file contains 20 versions and the destination version limit setting is 10, the copy only transfers the maximum number of versions the destination site allows, starting from the most recent.
