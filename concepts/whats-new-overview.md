@@ -19,9 +19,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## January 2025: New and generally available 
 
+
 ### Teamwork and communications | Calls and online meetings
 
 Use the **allowedLobbyAdmitters** property on [onlineMeeting](/graph/api/resources/onlinemeeting) to get or set the users who can admit from the lobby.
+
+### Files
+
+Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestoragecontainer-restore) method.
+
 
 ### Identity and access | Identity and sign-in
 - Added riskEventType entry for the Suspicious API Traffic detection for [service principals](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-1.0&preserve-view=true).
@@ -37,6 +43,10 @@ Use the **allowedLobbyAdmitters** property on [onlineMeeting](/graph/api/resourc
 
 - [Retry](/graph/api/cloudpcbulkaction-retry?view=graph-rest-beta&preserve-view=true) a bulk action with selected Cloud PCs.
 - Use the **productType** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the product type of a Cloud PC or to filter Cloud PCs by product type.
+
+### Files
+
+Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestoragecontainer-restore?view=graph-rest-beta&preserve-view=true) method.
 
 ### Identity and access | Directory management
 
