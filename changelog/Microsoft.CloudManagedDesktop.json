@@ -6328,6 +6328,14 @@
         },
         {
           "Id": "b3d5f5e8-4a6b-4c8a-9f3e-2d5e4a6b4c8a",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudPcInsightReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudPcInsightReport` member to the **cloudPCPerformanceReportName** enumeration.",
+          "Target": "cloudPCPerformanceReportName"
+        },
+        {
+          "Id": "b3d5f5e8-4a6b-4c8a-9f3e-2d5e4a6b4c8a",
           "ApiChange": "Method",
           "ChangedApiName": "getCloudPcPerformanceReport",
           "ChangeType": "Deprecation",
