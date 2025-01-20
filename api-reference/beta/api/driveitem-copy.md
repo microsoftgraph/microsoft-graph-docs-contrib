@@ -39,14 +39,15 @@ POST /users/{userId}/drive/items/{itemId}/copy
 ```
 ## Optional query parameters
 
-This method supports the `@microsoft.graph.conflictBehavior` query parameter to customize the behavior when a conflict occurs.
+This method supports the `@microsoft.graph.conflictBehavior` query parameter to customize the behavior when a conflict occurs. This parameter can also be used alongside the `childrenOnly` parameter in which case every child will be subject to the `@microsoft.graph.conflictBehavior` specified.
 
 | Value           | Description                                    |
 |:----------------|:---------------------------------------------- |
-| fail            | Default behavior is to report the failure.     |
-| replace         | Overwrite existing item at the target site.    |
-| rename          | Rename the item.                               |
+| fail            | Default behavior if option is not specified. Entire operation will fail.  |
+| replace         | Only supported for file items. NB this will delete the pre-existing item at the destination and then create a new item with the same name. History of the deleted item will also not retained.  |
+| rename          | Amends the name of the new items at the destination by appending the lowest integer that guarantees uniqueness to the name of the target file or folder.  |
 
+In the case were `@microsoft.graph.conflictBehavior=replace` is used on folder items, this API will return a `202 Accepted` response. However querying the monitoring url will report a `nameAlreadyExists` error. If this option is used in conjunction with the `childrenOnly` parameter, similar behavior will be observed if there is at least 1 folder item amongst the children of the source item.
 
 >[!NOTE]
 >The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
