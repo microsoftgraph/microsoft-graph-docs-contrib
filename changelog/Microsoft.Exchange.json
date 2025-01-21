@@ -101,9 +101,9 @@
         {
           "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",
           "ApiChange": "Parameter",
-          "ChangedApiName": "bindingparameter",
+          "ChangedApiName": "bindingParameter",
           "ChangeType": "Addition",
-          "Description": "Added the `bindingparameter` parameter to the [delta](https://learn.microsoft.com/en-us/graph/delta-query-overview?view=beta) method.",
+          "Description": "Added the **bindingParameter** parameter to the [mailboxFolder: delta](https://learn.microsoft.com/en-us/graph/api/mailboxFolder-delta?view=graph-rest-beta) method.",
           "Target": "delta"
         },
         {
@@ -117,9 +117,9 @@
         {
           "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",
           "ApiChange": "Parameter",
-          "ChangedApiName": "bindingparameter",
+          "ChangedApiName": "bindingParameter",
           "ChangeType": "Addition",
-          "Description": "Added the `bindingparameter` parameter to the [delta](https://learn.microsoft.com/en-us/graph/delta-query-overview?view=beta) method.",
+          "Description": "Added the **bindingParameter** parameter to the [mailboxItem: delta](https://learn.microsoft.com/en-us/graph/api/mailboxItem-delta?view=graph-rest-beta) method.",
           "Target": "delta"
         }
       ],
