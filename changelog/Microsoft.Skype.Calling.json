@@ -51,6 +51,26 @@
       "SubArea": "Call"
     },
     {
+      "ChangeList": [
+        {
+          "Id": "14c5e7c8-5ba9-44eb-ac3a-b99452dde78f",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingTemplateId** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "14c5e7c8-5ba9-44eb-ac3a-b99452dde78f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-25T21:59:08.9618388Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
           "ApiChange": "Property",
           "ChangedApiName": "allowRecording",
