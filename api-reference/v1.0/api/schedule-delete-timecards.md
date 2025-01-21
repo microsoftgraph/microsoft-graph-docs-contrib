@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/schedule/timeCards/{timeCardId}/$ref
+DELETE /teams/{teamsId}/schedule/timeCards/{timeCardId}
 ```
 
 ## Request headers
