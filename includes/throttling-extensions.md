@@ -5,7 +5,12 @@ ms.subservice: extensions
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
-<!-- this file is auto-generated don't edit it manually! -->
+
+| Request type | Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any          | 455 requests per 10 seconds |
+
+The preceding limits apply to the following resources:
 
 | <!-- fake header--> | <!-- fake header--> |
 |--|--|

@@ -6328,11 +6328,19 @@
         },
         {
           "Id": "b3d5f5e8-4a6b-4c8a-9f3e-2d5e4a6b4c8a",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudPcInsightReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudPcInsightReport` member to the **cloudPCPerformanceReportName** enumeration.",
+          "Target": "cloudPCPerformanceReportName"
+        },
+        {
+          "Id": "b3d5f5e8-4a6b-4c8a-9f3e-2d5e4a6b4c8a",
           "ApiChange": "Method",
           "ChangedApiName": "getCloudPcPerformanceReport",
           "ChangeType": "Deprecation",
           "Description": "Deprecated the [getCloudPcPerformanceReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getCloudPcPerformanceReport?view=graph-rest-beta) method of the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource. Going forward, use the [retrieveCloudPcTenantMetricsReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrieveCloudPcTenantMetricsReport?view=graph-rest-beta) API.",
-          "Target": "cloudPcReportName"
+          "Target": "cloudPcReports"
         },
         {
           "Id": "b3d5f5e8-4a6b-4c8a-9f3e-2d5e4a6b4c8a",
