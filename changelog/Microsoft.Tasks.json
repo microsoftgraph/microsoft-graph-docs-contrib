@@ -4,10 +4,10 @@
       "ChangeList": [
         {
           "Id": "3da1192e-9af9-47d4-b32c-1ba82ddabcd1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "channel",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "planner",
           "ChangeType": "Addition",
-          "Description": "Added the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the **planner** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsChannelPlanner",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsChannelPlanner](https://learn.microsoft.com/en-us/graph/api/resources/teamsChannelPlanner?view=graph-rest-beta) resource.",
+          "Description": "Added the [teamsChannelPlanner](https://learn.microsoft.com/en-us/graph/api/resources/teamsChannelPlanner?view=graph-rest-beta) resource and an associated method.",
           "Target": "teamsChannelPlanner"
         }
       ],
