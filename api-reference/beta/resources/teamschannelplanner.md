@@ -1,6 +1,6 @@
 ---
 title: "teamsChannelPlanner resource type"
-description: "The **teamsChannelPlanner** resource provides access to Planner resources for a Teams shared channel. It doesn't contain any usable properties."
+description: "Provides access to Planner resources for a Teams shared channel."
 ms.localizationpriority: medium
 author: "DanluCui"
 ms.subservice: "planner"
@@ -14,25 +14,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **teamsChannelPlanner** resource provides access to Planner resources for a [channel](channel.md). It doesn't contain any usable properties.
+Provides access to Planner resources for a Teams shared [channel](channel.md). It doesn't contain any usable properties.
 
 ## Methods
-
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List Teams channel's plans](../api/teamsChannelPlanner-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
+|[List plans](../api/teamschannelplanner-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a list of [plannerPlan](../resources/plannerplan.md) objects owned by a shared [channel](../resources/channel.md) in Teams.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Identifier of the **teamsChannelPlanner**|
+|id|String| The unique identifier for the **teamsChannelPlanner** object. Read-only.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the Teams channel (this is only supported for shared channel now).|
+|plans|[plannerPlan](plannerplan.md) collection| A collection of [plannerPlan](plannerplan.md) objects owned by the Teams channel. Currently, only shared channels are supported. Read-only. Nullable.|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 
 <!-- {
@@ -49,7 +49,6 @@ The following JSON representation shows the resource type.
 {
   "id": "String (identifier)"
 }
-
 ```
 
 <!-- uuid: 3da1192e-9af9-47d4-b32c-1ba82ddabcd1
