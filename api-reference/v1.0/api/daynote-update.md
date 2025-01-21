@@ -61,11 +61,6 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
-<!-- {
-  "blockType": "request",
-  "name": "update_daynote"
-}
--->
 ``` http
 PUT /teams/d72f9b8e-4c76-4f50-bf93-51b17aab0cd9/schedule/dayNotes/NOTE_ff2194ab-0ae5-43e3-acb4-ec2654927213
 Content-Type: application/json
@@ -85,11 +80,6 @@ Content-Type: application/json
 
 The following example shows the response.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 204 No Content
 ```
