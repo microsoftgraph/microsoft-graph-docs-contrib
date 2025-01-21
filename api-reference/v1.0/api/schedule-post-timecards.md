@@ -69,6 +69,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/v1.0/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards
 Content-Type: application/json
+
 {
   "clockInEvent": {
     "dateTime": "2025-01-07T21:00:00.000Z",

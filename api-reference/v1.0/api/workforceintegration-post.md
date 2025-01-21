@@ -13,7 +13,7 @@ ms.date: 09/18/2024
 Namespace: microsoft.graph
 
 Create a new [workforceIntegration](../resources/workforceintegration.md) object.
-You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
+You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by your workforce management system (WFM) rules eligibility for, including swap requests.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -202,7 +202,7 @@ HTTP/1.1 200 OK
 }
 
 ```
-To see how to update an existing workforceintegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).
+To see how to update an existing workforceIntegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).
 
 ## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
 The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.

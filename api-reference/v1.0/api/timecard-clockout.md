@@ -69,7 +69,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "timecardthis.clockin"
+  "name": "timecardthis.clockout"
 }
 -->
 ```http
