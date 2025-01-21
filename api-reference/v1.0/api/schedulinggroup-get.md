@@ -33,7 +33,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to customize the response.
+This method doesn't support OData query parameters to customize the response.
 
 ## Request headers
 

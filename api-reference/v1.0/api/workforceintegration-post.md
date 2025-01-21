@@ -229,15 +229,10 @@ The following is an example of the response from the workforce integration servi
 HTTP/1.1 200 OK
 {
   "responses": [
-  {
-    "body": {
-      "SHFT_6548f642-cbc1-4228-8621-054327576457",
-      "SHFT_6548f642-cbc1-4228-8621-054327571234"
-  }
     "id": "{shiftId}",
     "status: 200,
     "body": {
-       "data": [{ShiftId}, {ShiftId}...]
+       "data": [{shiftId}, {shiftId}...]
        "error": null
     }
   ]

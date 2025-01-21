@@ -195,10 +195,10 @@ Content-type: application/json
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-To see how to create a new workforceintegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).
+To see how to create a new workforceIntegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).
 
 ## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
-The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
+The interaction between Shifts app and workforce integration endpoints  follow the existing pattern.
 
 ### Request
 
@@ -223,15 +223,10 @@ The following is an example of the response from the workforce integration servi
 HTTP/1.1 200 OK
 {
   "responses": [
-  {
-    "body": {
-      "SHFT_6548f642-cbc1-4228-8621-054327576457",
-      "SHFT_6548f642-cbc1-4228-8621-054327571234"
-  }
     "id": "{shiftId}",
     "status: 200,
     "body": {
-       "data": [{ShiftId}, {ShiftId}...]
+       "data": [{shiftId}, {shiftId}...]
        "error": null
     }
   ]
