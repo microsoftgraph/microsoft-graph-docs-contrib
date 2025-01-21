@@ -132,7 +132,8 @@ Content-type: application/json
           "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
           "displayName": "John Doe"
         }
-      }
+      },
+      "code": "CashierCode"
     }
   ]
 }

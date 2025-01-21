@@ -27,19 +27,23 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | enabled 			    |Boolean    | Indicates whether the schedule is enabled for the team. Required.|
 | id			        |string  |ID of the schedule.|
+| isActivitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts include activities from the original shift. |
 | offerShiftRequestsEnabled			        |Boolean  | Indicates whether offer shift requests are enabled for the schedule.             |
 | openShiftsEnabled			        |Boolean  | Indicates whether open shifts are enabled for the schedule.             | 
 | provisionStatus       |operationStatus    | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
 | provisionStatusCode   |string  | Additional information about why schedule provisioning failed. |
+| startDayOfWeek            | dayOfWeek          | Indicates the start day of the week. The possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. |
 | swapShiftsRequestsEnabled			        |Boolean| Indicates whether swap shifts requests are enabled for the schedule.             |
-| timeClockEnabled			        |Boolean  | Indicates whether time clock is enabled for the schedule.             |
+| timeClockEnabled          | Boolean            | Indicates whether time clock is enabled for the schedule.                                                        |
+| timeClockSettings         | [timeClockSettings](../resources/timeclocksettings.md) | The time clock location settings for this schedule.   
 | timeOffRequestsEnabled			        |Boolean | Indicates whether time off requests are enabled for the schedule.             | 
 | timeZone 		        |string  | Indicates the time zone of the schedule team using tz database format. Required.|
-
+| workforceIntegrationIds   | String collection | The IDs for the workforce integrations associated with this schedule.
 
 ## Relationships
 |Name                   |Type           |Description                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|dayNotes|[dayNote](daynote.md) collection|The day notes in the schedule.|
 | offerShiftRequests   |[offerShiftRequest](offershiftrequest.md) collection  | The offer requests for shifts in the schedule. |
 | openShiftChangeRequests   |[openShiftChangeRequest](openshiftchangerequest.md) collection  | The open shift requests in the schedule. |
 | openShifts   |[openShift](openshift.md) collection | The set of open shifts in a scheduling group in the schedule. |
@@ -63,11 +67,25 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
-  "enabled": true,
-  "timeZone": "America/Chicago",
-  "provisionStatus": "Completed",
-  "provisionStatusCode": null
+  "@odata.type": "#microsoft.graph.schedule",
+  "id": "String (identifier)",
+  "enabled": "Boolean",
+  "timeZone": "String",
+  "provisionStatus": "String",
+  "provisionStatusCode": "String",
+  "workforceIntegrationIds": [
+    "String"
+  ],
+  "timeClockEnabled": "Boolean",
+  "timeClockSettings": {
+    "@odata.type": "microsoft.graph.timeClockSettings"
+  },
+  "openShiftsEnabled": "Boolean",
+  "swapShiftsRequestsEnabled": "Boolean",
+  "offerShiftRequestsEnabled": "Boolean",
+  "timeOffRequestsEnabled": "Boolean",
+  "startDayOfWeek": "String",
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": "Boolean"
 }
 ```
 

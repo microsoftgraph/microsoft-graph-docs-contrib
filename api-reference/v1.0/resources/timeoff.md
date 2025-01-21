@@ -30,6 +30,7 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| createdBy | [identitySet](identityset.md) |ShiftsCreatedByDescription|
 | createdDateTime		| DateTimeOffset        |The timestamp at which this **timeOff** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
 | draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this **timeOff** item that is viewable by managers. It must be shared before it's visible to team members. Required.|
 | id			| String      |ID of the **timeOff**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
@@ -53,6 +54,9 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.timeOff",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
   "createdDateTime": "String (timestamp)",
   "draftTimeOff": {"@odata.type": "microsoft.graph.timeOffItem"},
   "id": "String (identifier)",
