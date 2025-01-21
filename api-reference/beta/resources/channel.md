@@ -108,7 +108,7 @@ For a POST request example, see [Request (create channel in migration state)](/m
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
 |messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
-|planner|[teamsChannelPlanner](teamsChannelPlanner.md) | Selective Planner services available to this channel. Currently, only shared channels are supported. Read-only. Nullable. |
+|planner|[teamsChannelPlanner](teamschannelplanner.md) | Selective Planner services available to this channel. Currently, only shared channels are supported. Read-only. Nullable. |
 |sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|A collection of teams with which a channel is shared.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 
