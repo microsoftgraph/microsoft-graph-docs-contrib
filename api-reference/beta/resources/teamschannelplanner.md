@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides access to Planner resources for a Teams shared [channel](channel.md). It doesn't contain any usable properties.
+Provides access to Planner resources for a Teams shared [channel](channel.md). This resource doesn't contain any usable properties.
 
 ## Methods
 | Method		   | Return Type	|Description|
@@ -22,9 +22,7 @@ Provides access to Planner resources for a Teams shared [channel](channel.md). I
 |[List plans](../api/teamschannelplanner-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a list of [plannerPlan](../resources/plannerplan.md) objects owned by a shared [channel](../resources/channel.md) in Teams.|
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|id|String| The unique identifier for the **teamsChannelPlanner** object. Read-only.|
+None.
 
 ## Relationships
 | Relationship | Type	|Description|
