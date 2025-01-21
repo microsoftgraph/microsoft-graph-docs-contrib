@@ -45,7 +45,7 @@ Configure [contactMergeSuggestions](../resources/contactmergesuggestions.md):
   - Determine whether suggestions to merge duplicate contacts for a user is enabled.
   - Disable or enable suggestions to merge duplicate contacts for a user.
 
-Access the user's [Exchange settings](../resources/exchangesettings.md). Get a list of mailboxes that belong to a user.
+Access the user's [Exchange settings](../resources/exchangesettings.md). Get a list of Exchange settings, including mailboxes that belong to a user.
 
 Export users' Windows settings and values stored in a cloud:
   - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects.
@@ -63,7 +63,7 @@ Inherits from [entity](entity.md).
 |:---------------|:--------|:----------|
 |[Get](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
 |[Update](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
-|[List Exchange settings](../api/usersettings-list-exchange.md)|[exchangeSettings](../resources/exchangesettings.md) collection|Get a list of mailboxes that belong to a user.|
+|[List Exchange settings](../api/usersettings-list-exchange.md)|[exchangeSettings](../resources/exchangesettings.md) collection|Get a list of Exchange settings, including mailboxes that belong to a user.|
 |[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
 
 ## Properties
