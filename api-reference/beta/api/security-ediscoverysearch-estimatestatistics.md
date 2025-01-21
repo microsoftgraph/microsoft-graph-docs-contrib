@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## Request body
 |Property|Type|Description|
 |:---|:---|:---|
-| statisticsOptions | microsoft.graph.security.statisticsOptions | The options to specify the inputs and results of estimate statistics operation. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`. |
+| statisticsOptions | microsoft.graph.security.statisticsOptions | The options to specify the inputs and results of estimate statistics operation. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`. `advancedIndexing` and `locationsWithoutHits` is only considered if `includeUnindexedStats` is included.|
 
 ## Response
 
