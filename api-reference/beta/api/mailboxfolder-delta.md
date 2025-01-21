@@ -99,7 +99,7 @@ The following example shows a `$deltaToken` in an **@odata.deltaLink** response 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.OutlookServices.mailboxFolder)"
+  "@odata.type": "Collection(microsoft.graph.mailboxFolder)"
 }
 -->
 ``` http

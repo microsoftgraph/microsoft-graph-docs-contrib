@@ -126,7 +126,7 @@ The following example uses the `$filter`, `$select`, and `$top` query parameters
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_mailboxfolder",
+  "name": "list_mailboxfolder_with_query_parameters",
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->

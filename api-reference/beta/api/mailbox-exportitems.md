@@ -90,7 +90,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.OutlookServices.exportItemResponse)"
+  "@odata.type": "Collection(microsoft.graph.exportItemResponse)"
 }
 -->
 ``` http

@@ -74,7 +74,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.OutlookServices.mailboxItemImportSession"
+  "@odata.type": "microsoft.graph.mailboxItemImportSession"
 }
 -->
 ``` http

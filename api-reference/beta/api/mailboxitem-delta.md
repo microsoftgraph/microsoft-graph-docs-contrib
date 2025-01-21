@@ -103,7 +103,7 @@ The following example shows a `$skipToken` in an **@odata.nextLink** response he
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.OutlookServices.mailboxItem)"
+  "@odata.type": "Collection(microsoft.graph.mailboxItem)"
 }
 -->
 ``` http
