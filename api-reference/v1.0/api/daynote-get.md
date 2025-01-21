@@ -56,11 +56,6 @@ If successful, this method returns a `200 OK` response code and a [dayNote](../r
 ### Request
 The following example shows a request.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_daynote"
-}
--->
 ``` http
 GET /teams/d72f9b8e-4c76-4f50-bf93-51b17aab0cd9/schedule/dayNotes/NOTE_52191d41-ce2d-4295-a477-b75941bd8e0f
 ```
@@ -69,12 +64,6 @@ GET /teams/d72f9b8e-4c76-4f50-bf93-51b17aab0cd9/schedule/dayNotes/NOTE_52191d41-
 ### Response
 The following example shows the response.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.dayNote"
-}
--->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

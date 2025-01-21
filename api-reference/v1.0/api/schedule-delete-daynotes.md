@@ -55,22 +55,13 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "delete_daynote"
-}
--->
+
 ``` http
 DELETE /teams/d72f9b8e-4c76-4f50-bf93-51b17aab0cd9/schedule/dayNotes/NOTE_ff2194ab-0ae5-43e3-acb4-ec2654927213
 ```
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
