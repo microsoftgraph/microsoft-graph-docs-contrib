@@ -50,6 +50,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | schedulingGroups   |[schedulingGroup](schedulinggroup.md) collection  | The logical grouping of users in the schedule (usually by role). |
 | shifts   | [shift](shift.md) collection  | The shifts in the schedule. |
 | swapShiftsChangeRequests   |[swapShiftsChangeRequest](swapshiftschangerequest.md) collection  | The swap requests for shifts in the schedule. |
+| timeCards  |[timeCard](timecard.md) collection  | The time cards in the schedule. |
 | timesOff   |[timeOff](timeoff.md) collection  | The instances of times off in the schedule. |
 | timeOffReasons   |[timeOffReason](timeoffreason.md) collection  | The set of reasons for a time off in the schedule. |
 | timeOffRequests   |[timeOffRequest](timeoffrequest.md) collection  | The time off requests in the schedule. |

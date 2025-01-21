@@ -99,6 +99,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "id": "TCK_18aeaf79-71c3-44a5-8a6c-236d25d0f726",
   "createdDateTime": "2025-01-07T21:30:20.487Z",
