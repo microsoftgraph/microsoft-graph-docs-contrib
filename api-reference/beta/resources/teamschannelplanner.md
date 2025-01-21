@@ -16,13 +16,17 @@ Namespace: microsoft.graph
 
 Provides access to Planner resources for a Teams shared [channel](channel.md). This resource doesn't contain any usable properties.
 
+Inherits from [entity](entity.md).
+
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List plans](../api/teamschannelplanner-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a list of [plannerPlan](../resources/plannerplan.md) objects owned by a shared [channel](../resources/channel.md) in Teams.|
 
 ## Properties
-None.
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|id|String| The unique identifier for the **teamsChannelPlanner** object. Read-only. Inherited from [entity](entity.md).|
 
 ## Relationships
 | Relationship | Type	|Description|
