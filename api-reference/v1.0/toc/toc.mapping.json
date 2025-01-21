@@ -21,6 +21,7 @@
       "overview": "../../resources/applications-api-overview.md",
       "resources": [
         "application",
+        "applicationTemplate",
         "servicePrincipal"
       ],
       "childNodes": [
@@ -28,7 +29,6 @@
           "name": "Application",
           "shouldSort": true,
           "resources": [
-            "applicationTemplate",
             "extensionProperty",
             "federatedIdentityCredential"
           ],
