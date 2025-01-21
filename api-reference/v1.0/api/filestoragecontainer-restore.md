@@ -1,5 +1,5 @@
 ---
-title: "Restore deleted fileStorageContainer"
+title: "fileStorageContainer: restore"
 description: "Restore deleted fileStorageContainer from the deleted container collection."
 author: "harmoneddie"
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /deletedStorageContainers/{containerId}/restore
+POST /storage/fileStorage/deletedContainers/{containerId}/restore
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/deletedStorageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/restore
+POST https://graph.microsoft.com/v1.0/storage/fileStorage/deletedContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/restore
 ```
 
 
