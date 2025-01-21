@@ -73,14 +73,8 @@ If successful, this method returns a `200 OK` response code and a Stream object 
 
 ## Examples
 
-<<<<<<< HEAD
 ### Example 1: Retrieve the performance trend report with daily aggregated data, which provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant.
 ### Request
-=======
-### Example 1: TODO
-
-#### Request
->>>>>>> f0950a290b926d8c23e162d3d950797b1442e07e
 
 The following example shows a request.
 
@@ -166,14 +160,8 @@ Content-Type: application/octet-stream
 }
 ```
 
-<<<<<<< HEAD
 ### Example 2: Retrieve the Cloud PC Insight Report, which provides configuration data and insights at the Cloud PC level.
 ### Request
-=======
-### Example 2: TODO
-
-#### Request
->>>>>>> f0950a290b926d8c23e162d3d950797b1442e07e
 
 The following example shows a request.
 
