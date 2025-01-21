@@ -103,13 +103,11 @@ Content-length: 232
     "value": [
         {
             "itemId": "EDSVrdi3lRAADmpnf1AAA=",
-            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAEu4C+G",
-            "data": "AQAAAAgAAAAAAAAAAQAAAAMAAAAYAAAAAQAAAAcDAgAAAAAAwAAAAAAAAEYAJACABAAAAAYAAAAUDwCSghc"
+            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAEu4C+G"
         },
         {
             "itemId": "EDSVrdi3lRAAD45b7RAAA=",
-            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAD4pUax",
-            "data": "AAAAwHsAAAMAFwABAAAAsIQaABIAAABJAFAATQAuAE4AbwB0AGUAAAADACYAAAAAAAsAKQAAAAMANgAAAAAAsIQ3AFwAAABB"
+            "changeKey": "CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAD4pUax"
         }
     ]
 }
