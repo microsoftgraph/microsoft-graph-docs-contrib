@@ -21,7 +21,7 @@ Represents a timecard entry in the schedule.
 |[List](../api/schedule-list-timecards.md)|[timeCard](../resources/timecard.md) collection|Get a list of the **timeCard** objects and their properties.|
 |[Create](../api/schedule-post-timecards.md)|[timeCard](../resources/timecard.md)|Create a new **timeCard** object.|
 |[Get](../api/timecard-get.md)|[timeCard](../resources/timecard.md)|Read the properties and relationships of a **timeCard** object.|
-|[Update](../api/timecard-update.md)|[timeCard](../resources/timecard.md)|Update the properties of a **timeCard** object.|
+|[Replace](../api/timecard-replace.md)|[timeCard](../resources/timecard.md)|Replace a **timeCard** object.|
 |[Delete](../api/schedule-delete-timecards.md)|None|Delete a timeCard object.|
 |[Clock in](../api/timecard-clockin.md)|[timeCard](timecard.md)|Clock in to start a **timeCard**.|
 |[Clock out](../api/timecard-clockout.md)|None|Clock out to end an open **timeCard**.|
@@ -36,10 +36,10 @@ Represents a timecard entry in the schedule.
 |clockInEvent|[timeCardEvent](../resources/timecardevent.md)|The clock-in event of the **timeCard**.|
 |clockOutEvent|[timeCardEvent](../resources/timecardevent.md)|The clock-out event of the **timeCard**.|
 |confirmedBy|confirmedBy|Indicates whether this **timeCard** entry is confirmed. Possible values are: `none`, `user`, `manager`, `unknownFutureValue`.|
-|createdBy|[identitySet](identityset)|Identity of the creator of this **timecard**.|
+|createdBy|[identitySet](../resources/identityset)|Identity of the creator of this **timecard**.|
 |createdDateTime|DateTimeOffset|The timestamp in which the **timeCard** was created.|
 |id|String|Unique identifier for the **timeCard**.|
-|lastModifiedBy|[identitySet](identityset)|Identity of the last modifier of this **timecard**.|
+|lastModifiedBy|[identitySet](../resources/identityset)|Identity of the last modifier of this **timecard**.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp in which the **timeCard** was last modified.|
 |notes|[itemBody](../resources/itembody.md)|Notes about the **timeCard**.|
 |originalEntry|[timeCardEntry](../resources/timecardentry.md)|The original **timeCardEntry** of the **timeCard** before it was edited.|
