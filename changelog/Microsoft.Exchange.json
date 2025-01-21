@@ -100,11 +100,27 @@
         },
         {
           "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "bindingparameter",
+          "ChangeType": "Addition",
+          "Description": "Added the `bindingparameter` parameter to the [delta](https://learn.microsoft.com/en-us/graph/delta-query-overview?view=beta) method.",
+          "Target": "delta"
+        },
+        {
+          "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
           "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/mailboxItem-delta?view=graph-rest-beta) method to the [mailboxItem](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItem?view=graph-rest-beta) resource.",
           "Target": "mailboxItem"
+        },
+        {
+          "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "bindingparameter",
+          "ChangeType": "Addition",
+          "Description": "Added the `bindingparameter` parameter to the [delta](https://learn.microsoft.com/en-us/graph/delta-query-overview?view=beta) method.",
+          "Target": "delta"
         }
       ],
       "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",
