@@ -128,7 +128,7 @@ The following example uses the `$filter`, `$select`, and `$top` query parameters
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_mailboxitem",
+  "name": "list_mailboxitem_using_query_parameter",
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
