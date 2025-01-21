@@ -93,7 +93,7 @@ If successful, this action returns a `200 OK` response code and an [importMailbo
 
 ### Examples
 
-#### Example 1: Create an item in a mailbox using import operation
+#### Example 1: Create an item in a mailbox using the import operation
 
 The following example shows how to import a new item into the mailbox in `create` mode.
 
@@ -140,7 +140,7 @@ Content-length: 232
 }
 ```
 
-#### Example 2: Update an existing item in a mailbox using import operation
+#### Example 2: Update an existing item in a mailbox using the import operation
 
 The following example shows how to import a new version of an existing item into the mailbox in `update` mode.
 

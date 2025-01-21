@@ -55,7 +55,7 @@ Tracking changes in items incurs a round of one or more **delta** function calls
 - Limited support exists for `$filter` and `$orderby`:
   - The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}` and `$filter=receivedDateTime+gt+{value}`.
   - The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you don't include an `$orderby` expression, the return order isn't guaranteed.
-- No support exists for `$search`.
+- The `$search` query parameter isn't supported.
 
 ## Request headers
 
