@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-/teams/{teamsId}/schedule/timeCards/{timeCardId}
+PUT /teams/{teamsId}/schedule/timeCards/{timeCardId}
 ```
 
 ## Request headers
