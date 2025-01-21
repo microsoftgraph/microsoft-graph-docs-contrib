@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 01/13/2025
+ms.date: 01/20/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1391,7 +1391,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | - | c645bb69-adc4-4242-b620-02e635f03bf6 |
 | DisplayText | - | Read all Configuration Monitoring entities |
 | Description | - | Allows the app to read all Configuration Monitoring entities on behalf of the signed-in user. |
-| AdminConsentRequired | - | No |
+| AdminConsentRequired | - | Yes |
 
 ---
 
@@ -1402,7 +1402,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | - | 54505ce9-e719-41f7-a7cc-dbe114e1d811 |
 | DisplayText | - | Read and write all Configuration Monitoring entities |
 | Description | - | Allows the app to read and write all Configuration Monitoring entities on behalf of the signed-in user. |
-| AdminConsentRequired | - | No |
+| AdminConsentRequired | - | Yes |
 
 ---
 
@@ -6926,6 +6926,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 1801e8f4-cf09-4c4e-a1b5-036dfcca6c90 | 6997c35c-a586-440c-8a0b-4ffe5d118dc0 |
 | DisplayText | Read and Write Teams policy user assignment and unassigment for all policy types. | Read and Write Teams policy user assignment and unassigment for all policy types. |
 | Description | Allow the app to read or write/update the policy assignment and unassigment for Teams users for all policy type categories. | Allow the app to read or write/update the policy assignment and unassigment for Teams users for all policy type categories. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### TeamsResourceAccount.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | b55aa226-33a1-4396-bcf4-edce5e7a31c1 | ea2cbd09-253c-4f69-a0e6-07383c5f07cc |
+| DisplayText | Read Teams resource accounts | Read Teams resource accounts |
+| Description | Allows the app to read your tenant's resource accounts without a signed-in user. | Allows the app to read your tenant's resource accounts on behalf of the signed-in admin user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
