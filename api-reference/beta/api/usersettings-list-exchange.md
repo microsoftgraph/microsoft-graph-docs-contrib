@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [exchangeSettings](../resources/exchangesettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [exchangeSettings](../resources/exchangesettings.md) objects in the response body.
 
 ## Examples
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.exchangeSettings"
+  "@odata.type": "Collection(microsoft.graph.exchangeSettings)"
 }
 -->
 ``` http
@@ -86,8 +86,12 @@ Content-type: application/json
 Content-length: 232
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('megan%40contoso.com')/settings/exchange/$entity",
-    "primaryMailboxId": "MBX:e0643f21@a7809c93",
-    "inPlaceArchiveMailboxId": "MBX:4eba5149@a7809c93"
+  "value": [
+    {
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('megan%40contoso.com')/settings/exchange/$entity",
+      "primaryMailboxId": "MBX:e0643f21@a7809c93",
+      "inPlaceArchiveMailboxId": "MBX:4eba5149@a7809c93"
+    }
+  ]
 }
 ```
