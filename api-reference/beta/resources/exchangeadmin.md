@@ -1,6 +1,6 @@
 ---
 title: "exchangeAdmin resource type"
-description: "Represents a container for Exchange admin functionality."
+description: "Represents a container for the Exchange admin functionality."
 author: "cparker-msft"
 ms.date: 01/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for Exchange admin functionality.
+Represents a container for the Exchange admin functionality.
 
 ## Relationships
 |Relationship|Type|Description|

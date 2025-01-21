@@ -51,7 +51,7 @@ Tracking changes in items incurs a round of one or more **delta** function calls
 ### OData query parameters
 
 - You can use the `$select` query parameter to specify only the properties you need for best performance. The **id** property is always returned.
-- Delta query supports the `$select` and `$top` query parameters for items.  
+- This delta query supports the `$select` and `$top` query parameters for items.  
 - Limited support exists for `$filter` and `$orderby`:
   - The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}` and `$filter=receivedDateTime+gt+{value}`.
   - The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you don't include an `$orderby` expression, the return order isn't guaranteed.
