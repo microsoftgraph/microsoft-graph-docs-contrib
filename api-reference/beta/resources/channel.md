@@ -58,6 +58,7 @@ where files are shared, and where tabs are added.
 |[Unshare channel with team](../api/sharedwithchannelteaminfo-delete.md)|None|Unshare a channel with a team.|
 |[List allowed members](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of team members who have access to the shared channel.|
 |[Check user access](../api/channel-doesuserhaveaccess.md)|Boolean|Check whether a user has access to a shared channel or not.|
+|[List plans](../api/teamschannelplanner-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a list of [plannerPlan](../resources/plannerplan.md) objects owned by a shared [channel](../resources/channel.md) in Teams.|
 
 ## Properties
 
