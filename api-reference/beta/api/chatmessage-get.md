@@ -779,7 +779,7 @@ Content-type: application/json
 
 ### Example 7: Get a chat message with a loop component
 
-The following example shows a request that gets a chat message with a loop component as attachments. 
+The following example shows a request that gets a chat message that has a loop component as two attachments. 
 
 #### Request
 

@@ -71,7 +71,7 @@ Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-bet
 
 ### Teamwork and communications | Messaging
 
-- [Get](/graph/api/chatmessage-get#example-7-get-a-chat-message-with-a-loop-component) a chat message that has loop component as attachments.
+- [Get](/graph/api/chatmessage-get#example-7-get-a-chat-message-with-a-loop-component) a chat message that includes a loop component as two attachments.
 
 ## December 2024: New and generally available
 
