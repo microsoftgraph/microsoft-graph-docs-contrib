@@ -218,7 +218,7 @@ Accept-Language: en-us
 ```
 ### Response
 
-The following is an example of the response from the workforce integration service.
+This is an example of the response from the workforce integration service.
 ```
 HTTP/1.1 200 OK
 {

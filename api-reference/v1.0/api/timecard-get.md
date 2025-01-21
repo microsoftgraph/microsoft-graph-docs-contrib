@@ -85,6 +85,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "id": "TCK_3e74d9a1-f45f-4da3-95df-be72a8af448d",
   "createdDateTime": "2025-01-08T15:44:09.545Z",

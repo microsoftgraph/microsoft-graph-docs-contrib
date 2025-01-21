@@ -156,7 +156,7 @@ Content-Type: application/json
 }
 ```
 
-## Examples for Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility
+## Examples for use cases of WorkforceIntegration entity for Eligibility Filtering by workforce management system (WFM) rules
 
 ### Use case: Create a new WorkforceIntegration with SwapRequest enabled for eligibility filtering
 
@@ -204,11 +204,11 @@ HTTP/1.1 200 OK
 To see how to update an existing workforceIntegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).
 
 ## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
-The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
+The interaction between Shifts app and workforce integration endpoints  follow the existing pattern.
 
 ### Request
 
-The following example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+This example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -224,7 +224,7 @@ Accept-Language: en-us
 ```
 ### Response
 
-The following is an example of the response from the workforce integration service.
+This is an example of the response from the workforce integration service.
 ```
 HTTP/1.1 200 OK
 {
