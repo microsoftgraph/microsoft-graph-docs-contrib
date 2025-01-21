@@ -13,7 +13,7 @@
         {
           "Id": "b38cf417-78db-49da-a2b0-15db5d94e784",
           "ApiChange": "Property",
-          "ChangedApiName": "allowedLobbyAdmitterRoles",
+          "ChangedApiName": "allowedLobbyAdmitters",
           "ChangeType": "Addition",
           "Description": "Added the **allowedLobbyAdmitterRoles** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
           "Target": "onlineMeetingBase"
