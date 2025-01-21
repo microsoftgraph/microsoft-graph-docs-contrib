@@ -57,7 +57,7 @@ The following table shows the parameters that you can use with this method.
 | search     | String                       | Specifies a String to search.                                                                        |
 | select     | String collection            | OData `$select` syntax. The selected columns of the reports.                                         |
 | skip       | Int32                        | Number of records to skip.                                                                           |
-| top        | Int32                        | Specifies the page size. If not defined, the default is 25, with a maximum of 100.                   |
+| top        | Int32                        | Specifies the page size. If not defined, the default is 25, with a maximum value of 100.                   |
 
 ### cloudPCPerformanceReportName values
 
