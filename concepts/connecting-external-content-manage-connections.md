@@ -16,13 +16,13 @@ The Microsoft Graph connectors platform offers an intuitive way to add your exte
 After a connection has been created, you can add your content from any external data source such as an on-premises content source or an external software as a service (SaaS) service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
 
 <!-- markdownlint-disable MD036 -->
-![Sample custom helpdesk system Tickets Connector structure.](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
+![Sample custom helpdesk system Tickets connector structure.](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
 
 *Sample custom helpdesk system Tickets Connector structure.*
 
-![Admin view of connections including the custom Tickets Connector.](./images/connectors-images/connecting-external-content-manage-connections-admin-view.svg)
+![Admin view of connections including the custom Tickets connector.](./images/connectors-images/connecting-external-content-manage-connections-admin-view.svg)
 
-*Admin view of connections including the custom Tickets Connector.*
+*Admin view of connections including the custom Tickets connector.*
 
 <!-- markdownlint-enable MD036 -->
 
