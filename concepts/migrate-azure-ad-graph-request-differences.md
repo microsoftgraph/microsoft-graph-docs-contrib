@@ -6,7 +6,8 @@ ms.author: ombongifaith
 ms.reviewer: krbash
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
-ms.date: 01/12/2024
+ms.date: 01/21/2025
+
 #Customer intent: As a developer, I want to understand how REST API endpoints differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
@@ -44,9 +45,9 @@ Suppose you want a list of all users with names beginning with "Dan" in the Cont
 |---------|---------|
 |`GET https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6`  |  `GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`       |
 
-### Primary key identifiers: objectId vs id
+### Primary key identifiers: objectId vs Id
 
-In Azure AD Graph, all entity resource types have a unique identifier (or primary key) called **objectId**.  For most entities (unless otherwise stated) this identifier is called **id** in Microsoft Graph.
+In Azure AD Graph, all entity resource types have a unique identifier (or primary key) called **objectId**.  For most entities (unless otherwise stated) this identifier is called **Id** in Microsoft Graph.
 
 In addition to the primary key, some entities support an alternate key identifier. For example, the **application** and **servicePrincipal** resources in Microsoft Graph support an alternate key identifier for their **appId** property.
 
@@ -54,7 +55,7 @@ In addition to the primary key, some entities support an alternate key identifie
 
 It's a best practice to only request the properties your app really needs. Use the `$select` query parameter, in GET requests, to customize the response to include only the properties that your app requires.
 
-In some cases in Microsoft Graph, for example, the **GET** or **LIST** operations for **user** and **group** resources, only a subset of all properties are returned. These _default properties_ represent the most commonly used properties for the resources. On the other hand, Azure AD Graph returns the full set of all properties for the respective resource. Where the resource returns only the default properties, your app needs to explicitly request other properties using the `$select` query parameter.
+In some cases in Microsoft Graph, for example, the **GET** or **LIST** operations for **user** and **group** resources, only a subset of all properties are returned. These *default properties* represent the most commonly used properties for the resources. On the other hand, Azure AD Graph returns the full set of all properties for the respective resource. Where the resource returns only the default properties, your app needs to explicitly request other properties using the `$select` query parameter.
 
 To illustrate the difference, use Graph Explorer to run the following requests and compare the different responses.
 
@@ -72,7 +73,7 @@ https://graph.microsoft.com/v1.0/me?$select=displayName,streetAddress,city,state
 To learn more about:
 
 - Default properties on user and group resources, see [users](/graph/api/resources/users) and [groups](/graph/api/resources/groups-overview)
-- The `$select` parameter and other supported ODATA query parameters, see [Use query parameters to customize responses](./query-parameters.md).
+- The `$select` parameter and other supported OData query parameters, see [Use query parameters to customize responses](./query-parameters.md).
 - Other recommended optimizations, see [Best practices](./best-practices-concept.md).
 
 ## Relationships and navigation properties
