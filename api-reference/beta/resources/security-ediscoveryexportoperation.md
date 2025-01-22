@@ -52,8 +52,8 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |pdfReplacement|Replace original file with PDF version when available.|
 |tags|Include tag information in fileInfo.|
 |fileInfo (deprecated) |Include metadata of original files in a load file. The `fileInfo` member is deprecated and will stop returning data on April 30, 2023. Going forward, the summary and load file are always included. |
-|splitSource|Organize data from different locations into seperate folders or PSTs.|
-|includeFolderAndPath|Include folder and path structure of sourece.|
+|splitSource|Organize data from different locations into separate folders or PSTs.|
+|includeFolderAndPath|Include folder and path structure of source.|
 |friendlyName|Give each item a friendly name.|
 |condensePaths|Condense paths to fit within 259 characters.|
 |optimizedPartitionSize|Optimize export package partition size.|
