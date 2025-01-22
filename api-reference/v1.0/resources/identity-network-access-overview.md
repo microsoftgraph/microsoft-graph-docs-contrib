@@ -8,7 +8,7 @@ ms.subservice: entra-id
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw10, krbash
-ms.date: 12/31/2024
+ms.date: 01/07/2025
 ---
 
 # Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph
@@ -27,7 +27,7 @@ Microsoft Entra is a family of identity and network access capabilities that are
 
 ## Manage user identities
 
-Users are the main identities in any identity and access solution. You can manage the entire lifecycle of users in your organization, and their entitlements like licenses or group memberships, using Microsoft Graph APIs. For more information, see [Working with users in Microsoft Graph](/graph/api/resources/users).
+Users are the main identities in any identity and access solution. You can manage the entire lifecycle of users in your organization, including guests, and their entitlements like licenses or group memberships, using Microsoft Graph APIs. For more information, see [Working with users in Microsoft Graph](/graph/api/resources/users).
 
 ## Manage groups
 
@@ -82,7 +82,6 @@ A core functionality of identity and access management is managing your tenant c
 |Force autoacceleration sign-in to skip the username entry screen and automatically forward users to federated sign-in endpoints |[homeRealmDiscoveryPolicy resource type](homerealmdiscoverypolicy.md) resource type and its associated APIs|
 | Detect, investigate, and remediate identity-based risks using Microsoft Entra ID Protection and feed the data into security information and event management (SIEM) tools for further investigation and correlation | See [Use the Microsoft Graph identity protection APIs](identityprotection-overview.md) |
 | Manage identity providers for Microsoft Entra ID, Microsoft Entra External ID, and Azure AD B2C tenants. You can perform the following operations: <li> Manage identity providers for external identities, including social identity providers, OIDC, Apple, SAML/WS-Fed, and built-in providers <li> Manage configuration for federated domains and token validation | [identityProviderBase resource type](identityproviderbase.md) and its associated APIs |
-| Invite external users to collaborate with your tenant by using Microsoft Entra External ID | [invitation resource type](invitation.md) and its associated APIs |
 | Define a group of tenants belonging to your organization and streamline intra-organization cross-tenant collaboration | See [Multitenant organization API overview](multitenantorganization-overview.md) |
 | Customize sign-in UIs to match your company branding, including applying branding that's based on the browser language | [organizationalBranding resource type](organizationalbranding.md) and its associated APIs |
 | User flows for Microsoft Entra External ID in workforce tenants | The following resource types and their associated APIs: <li>[b2xIdentityUserFlow](b2xidentityuserflow.md) to configure the base user flow and its properties such as identity providers <li> [identityUserFlowAttribute](identityuserflowattribute.md) to manage built-in and custom user flow attributes <li> [identityUserFlowAttributeAssignment](identityuserflowattributeassignment.md) to manage user flow attribute assignments <li> [userFlowLanguageConfiguration resource type](userflowlanguageconfiguration.md) to configure custom languages for user flows |
@@ -121,6 +120,10 @@ Microsoft Graph also provides the following identity and access capabilities for
 | Microsoft partners can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives extra control to customers over their security posture while allowing them to receive support from the Microsoft resellers | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
 
 ---
+
+## Identity and access reports
+
+Microsoft Entra records *every* activity in your tenant and produces reports and audit logs that you can analyze for monitoring, compliance, and troubleshooting. Records of these activities are also available through Microsoft Graph reporting and audit logs APIs, which allow you to analyze the activities with Azure Monitor logs and Log Analytics, or stream to third-party SIEM tools for further investigations. For more information, see [Identity and access reports API overview](../resources/report-identity-access.md).
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 

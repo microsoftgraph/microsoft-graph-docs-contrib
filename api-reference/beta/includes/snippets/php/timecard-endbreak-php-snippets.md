@@ -16,10 +16,10 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new EndBreakPostRequestBody();
 $notes = new ItemBody();
 $notes->setContentType(new BodyType('text'));
-$notes->setContent('end break smaple notes');
+$notes->setContent('ending break');
 $requestBody->setNotes($notes);
 $additionalData = [
-	'atAprovedLocation' => true,
+	'isAtApprovedLocation' => true,
 ];
 $requestBody->setAdditionalData($additionalData);
 

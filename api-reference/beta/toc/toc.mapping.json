@@ -4,7 +4,8 @@
       "name": "Users",
       "overview": "../../resources/users.md",
       "resources": [
-        "user"
+        "user",
+        "invitation"
       ]
     },
     {
@@ -21,6 +22,7 @@
       "shouldSort": true,
       "resources": [
         "application",
+        "applicationTemplate",
         "servicePrincipal"
       ],
       "childNodes": [
@@ -28,7 +30,6 @@
           "name": "Application",
           "shouldSort": true,
           "resources": [
-            "applicationTemplate",
             "federatedIdentityCredential"
           ],
           "childNodes": [
@@ -822,9 +823,6 @@
         "educationRubricOutcome",
         "educationSubmission",
         "educationSubmissionResource",
-        "educationSynchronizationError",
-        "educationSynchronizationProfile",
-        "educationSynchronizationProfileStatus",
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
         "relatedContact"
@@ -859,23 +857,7 @@
         "rubricLevel",
         "rubricQuality",
         "rubricQualityFeedbackModel",
-        "rubricQualitySelectedColumnModel",
-        "educationCsvDataProvider",
-        "educationFileSynchronizationVerificationMessage",
-        "educationIdentityCreationConfiguration",
-        "educationIdentityDomain",
-        "educationIdentityMatchingConfiguration",
-        "educationIdentityMatchingOptions",
-        "educationIdentitySynchronizationConfiguration",
-        "educationOneRosterApiDataProvider",
-        "educationPowerSchoolDataProvider",
-        "educationSynchronizationConnectionSettings",
-        "educationSynchronizationCustomization",
-        "educationSynchronizationCustomizations",
-        "educationSynchronizationDataProvider",
-        "educationSynchronizationLicenseAssignment",
-        "educationSynchronizationOAuth1ConnectionSettings",
-        "educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
+        "rubricQualitySelectedColumnModel"
       ]
     },
     {
@@ -1461,8 +1443,7 @@
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
-            "externalIdentitiesPolicy",
-            "invitation"
+            "externalIdentitiesPolicy"
           ],
           "childNodes": [
             {
@@ -1471,6 +1452,7 @@
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
                 "onAuthenticationMethodLoadStartListener",
+                "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1580,6 +1562,7 @@
                 "customAuthenticationExtension",
                 "onAttributeCollectionStartCustomExtension",
                 "onAttributeCollectionSubmitCustomExtension",
+                "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -2929,6 +2912,13 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ]
+            },
+            {
+              "name": "Call events",
+              "resources": [
+                "microsoft.graph.callEvent",
+                "microsoft.graph.emergencyCallEvent"
               ]
             },
             {
