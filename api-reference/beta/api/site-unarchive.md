@@ -63,6 +63,7 @@ If successful, this method returns a `202 Accepted` response code. The response 
 
 The following example shows how to unarchive a site.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "unarchive_site",
@@ -72,6 +73,12 @@ The following example shows how to unarchive a site.
 ```http
 POST https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740/unarchive
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unarchive-site-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
