@@ -37,13 +37,14 @@ None.
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |unindexedItemCount|Int64|The estimated count of unindexed items for the collection.|
 |unindexedItemsSize|Int64|The estimated size of unindexed items for the collection.|
+|statisticsOptions|Int64|The options to generate statistics.|
 
 ### statisticsOptions values
 |Name|Description|
 |:----|-----------|
-|includeRefiners      | Include refiners.|
-|includeQueryStats    | Include query segment stats.|
-|includeUnindexedStats| Include unindexed item stats.|
+|includeRefiners      | Refine with categories to include people, sensitive information types, item types, and errors.|
+|includeQueryStats    | Include query keywords report to assess keyword relevance of your search query.|
+|includeUnindexedStats| Include partially indexed items.|
 |advancedIndexing     | Perform advanced indexing during search to reduce false matches.|
 |locationsWithoutHits | Estimate unindexed items even in locations without hits.|
 
@@ -82,7 +83,8 @@ The following JSON representation shows the resource type.
   "unindexedItemCount": "Integer",
   "unindexedItemsSize": "Integer",
   "mailboxCount": "Integer",
-  "siteCount": "Integer"
+  "siteCount": "Integer",
+  "statisticsOptions": "Integer"
 }
 ```
 

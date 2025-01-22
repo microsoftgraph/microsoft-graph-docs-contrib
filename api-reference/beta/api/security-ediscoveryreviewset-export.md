@@ -48,8 +48,8 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |description|String| Description of the export. |
-|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`. The `fileInfo` member is deprecated and has stopped returning data. The summary and load file are always included. `text` and `pdfReplacement` is only applicable if `originalFiles` is selected.|
-|exportStructure|String| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `msg`. However, `directory` has been deprecated, so format for exportStructure will default to `msg`.|
+|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`. The `fileInfo` member is deprecated and has stopped returning data. The summary and load file are always included. Note: If `originalFiles` is not selected, only the `tags` member is considered. |
+|exportStructure|String| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `msg`. Note: `directory` is on the way for deprecation. Currently, if `directory` is selected the format will be `msg`, and the exportOptions `splitSource`, `includeFolderAndPath`, `friendlyName` will be disregarded.|
 |outputName|String| Name of the export. Required. |
 |azureBlobContainer (deprecated)|String| When you export to your own Azure storage account, the value is the container URL. The **azureBlobContainer** property is deprecated and has stopped returning data. |
 |azureBlobToken (deprecated)|String| When you export to your own Azure storage account, SAS token for the container URL. The **azureBlobToken** property is deprecated and has stopped returning data. |

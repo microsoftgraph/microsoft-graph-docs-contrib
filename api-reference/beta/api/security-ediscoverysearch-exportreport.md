@@ -51,11 +51,11 @@ The following table lists the parameters that you can use with this action.
 
 | Parameter | Type | Description |
 |:---|:---|:---|
-| additionalOptions | [microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values) | The additional options for the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `htmlTranscripts`, `advancedIndexing`, `allItemsInFolder`, `includeReport`, `unknownFutureValue`. Required. `advancedIndexing` is only available if exportCriteria includes `partiallyIndexed`. Required. |
+| additionalOptions | [microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values) | The additional options for the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `htmlTranscripts`, `advancedIndexing`, `allItemsInFolder`, `unknownFutureValue`. Note: `advancedIndexing` is only available if exportCriteria includes `partiallyIndexed`. Required. |
 | description | String | The description of the export report. |
 | displayName | String | The display name of the export report. |
 | exportCriteria | [microsoft.graph.security.exportCriteria](../resources/security-ediscoverysearchexportoperation.md#exportcriteria-values) | The portion of the estimate report to be exported. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`. Required.|
-| exportLocation | [microsoft.graph.security.exportLocation](../resources/security-ediscoverysearchexportoperation.md#exportlocation-values) | Location scope for partially indexed items. You can choose to include partially indexed items only in responsive locations with search hits or in all targeted locations. The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`. `nonresponsiveLocations` is only available if exportCriteria includes `partiallyIndexed`.|
+| exportLocation | [microsoft.graph.security.exportLocation](../resources/security-ediscoverysearchexportoperation.md#exportlocation-values) | Location scope for partially indexed items. You can choose to include partially indexed items only in responsive locations with search hits or in all targeted locations. The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`. Note: `nonresponsiveLocations` is only available if exportCriteria includes `partiallyIndexed`.|
 | cloudAttachmentVersion | microsoft.graph.security.cloudAttachmentVersion | The versions to include for cloud attachments in messages. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
 | documentVersion | microsoft.graph.security.documentVersion | The versions to include for files in sharepoint. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
 ## Response
@@ -314,7 +314,7 @@ Content-Type: application/json
   "displayName": "Export 4",
   "exportCriteria": "partiallyIndexed",
   "exportLocation": "responsiveLocations, nonresponsiveLocations",
-  "additionalOptions": "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments, includeFolderAndPath, splitSource, condensePaths, friendlyName, optimizedPartitionSize, includeReport"
+  "additionalOptions": "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments, includeFolderAndPath, splitSource, condensePaths, friendlyName, optimizedPartitionSize"
 }
 ```
 
