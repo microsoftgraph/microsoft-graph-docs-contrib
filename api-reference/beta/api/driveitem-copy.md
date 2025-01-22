@@ -381,7 +381,7 @@ has items with colliding names to the children at the source folder. The request
 
 #### Request
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-5", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy?@microsoft.graph.conflictBehavior=replace
@@ -400,7 +400,7 @@ Content-Type: application/json
 
 The following example shows the response.
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -408,7 +408,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 Checking the monitoring url yields the following status report.
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
 {
   "@odata.context": "https://contoso.sharepoint.com/sites/site2/_api/v2.1/$metadata#drives('driveId')/operations/$entity",
