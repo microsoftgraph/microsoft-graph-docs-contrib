@@ -813,14 +813,6 @@
         {
           "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "bodyType",
-          "ChangeType": "Addition",
-          "Description": "Added the **bodyType** enumeration type.",
-          "Target": "bodyType"
-        },
-        {
-          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
-          "ApiChange": "Enumeration",
           "ChangedApiName": "confirmedBy",
           "ChangeType": "Addition",
           "Description": "Added the **confirmedBy** enumeration type.",
@@ -841,14 +833,6 @@
           "ChangeType": "Addition",
           "Description": "Added the `timeCard` member to the **workforceIntegrationSupportedEntities** enumeration.",
           "Target": "workforceIntegrationSupportedEntities"
-        },
-        {
-          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
-          "ApiChange": "Resource",
-          "ChangedApiName": "geoCoordinates",
-          "ChangeType": "Addition",
-          "Description": "Added the [geoCoordinates](https://learn.microsoft.com/en-us/graph/api/resources/geoCoordinates?view=graph-rest-1.0) resource.",
-          "Target": "geoCoordinates"
         },
         {
           "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
@@ -961,46 +945,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **code** property to the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeOffReason?view=graph-rest-1.0) resource.",
           "Target": "timeOffReason"
-        },
-        {
-          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
-          "ApiChange": "Method",
-          "ChangedApiName": "clockIn",
-          "ChangeType": "Addition",
-          "Description": "Added the [clockIn](https://learn.microsoft.com/en-us/graph/api/timeCard-clockIn?view=graph-rest-1.0) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-1.0) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
-          "ApiChange": "Method",
-          "ChangedApiName": "clockOut",
-          "ChangeType": "Addition",
-          "Description": "Added the [clockOut](https://learn.microsoft.com/en-us/graph/api/timeCard-clockOut?view=graph-rest-1.0) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-1.0) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
-          "ApiChange": "Method",
-          "ChangedApiName": "confirm",
-          "ChangeType": "Addition",
-          "Description": "Added the [confirm](https://learn.microsoft.com/en-us/graph/api/timeCard-confirm?view=graph-rest-1.0) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-1.0) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
-          "ApiChange": "Method",
-          "ChangedApiName": "endBreak",
-          "ChangeType": "Addition",
-          "Description": "Added the [endBreak](https://learn.microsoft.com/en-us/graph/api/timeCard-endBreak?view=graph-rest-1.0) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-1.0) resource.",
-          "Target": "timeCard"
-        },
-        {
-          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
-          "ApiChange": "Method",
-          "ChangedApiName": "startBreak",
-          "ChangeType": "Addition",
-          "Description": "Added the [startBreak](https://learn.microsoft.com/en-us/graph/api/timeCard-startBreak?view=graph-rest-1.0) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-1.0) resource.",
-          "Target": "timeCard"
         }
       ],
       "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",

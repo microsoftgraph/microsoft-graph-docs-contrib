@@ -3451,10 +3451,3 @@ Possible values for user account types (group membership), per Windows definitio
 |onBreak|
 |clockedOut|
 |unknownFutureValue|
-
-### bodyType values
-
-| Member |
-| ---------- |
-| text |
-| html |
