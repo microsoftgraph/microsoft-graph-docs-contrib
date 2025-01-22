@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Users
 
 $params = @{
 	theme = "light"
-	color = "yellow"
+	color = "purple"
 	lang = "Swahili"
 }
 
