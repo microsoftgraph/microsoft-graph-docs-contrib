@@ -136,8 +136,8 @@ Content-type: application/json
 ```
 
 ## Filtering items in a list
-Filtering can be used to retrieve a subset of the listitem collection.
-Properties of the listitem as well listitem fields can be filtered.
+Filtering can be used to retrieve a subset of the listItem collection.
+Properties of the listItem as well listItem fields can be filtered.
 If filtering on indexed fields, the service can only filter on a single indexed field at a time.
 **Note:** Filtering works best on indexed columns
 
@@ -150,9 +150,10 @@ If filtering on indexed fields, the service can only filter on a single indexed 
 
 #### Filtering on large lists
 Depending on the number of items that match the filtering condition, the results either be returned all at once or in a paged manner.
-Paged results typically occurs for large lists where a large number of items match the filtering conditions, the service will go through all items in the list in a increments (sliding window) and return the set of listItems that match the filter condition along with a nextlink.
-If there are no items that match the filter condition within the current increment of items the service is handling, an empty set will be retuned along with a nextlink.
-This is expected behaviour, follow the nextlink for the next increment of items in the list.
+Paged results typically occur for large lists where a large number of items match the filtering conditions.
+The service goes through all items in the list in a increments (sliding window) and return the set of listItems that match the filter condition along with a `@odata.nextLink`.
+If am empty result is returned, there are no items within the current increment of items the service is handling that matchs the filter condition.
+If a `@odata.nextLink` URL is returned, there are more pages of data to retrieve in the session, even if the current response contains an empty result. 
 
 ### Example
 <!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
