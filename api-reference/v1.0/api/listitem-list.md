@@ -151,8 +151,8 @@ If filtering on indexed fields, the service can only filter on a single indexed 
 #### Filtering on large lists
 Depending on the number of items that match the filtering condition, the results either be returned all at once or in a paged manner.
 Paged results typically occur for large lists where a large number of items match the filtering conditions.
-The service goes through all items in the list in a increments (sliding window) and return the set of listItems that match the filter condition along with a `@odata.nextLink`.
-If am empty result is returned, there are no items within the current increment of items the service is handling that matchs the filter condition.
+The service goes through all items in the list in a increments (sliding window) and returns the set of listItems that match the filter condition along with a `@odata.nextLink`.
+If an empty result is returned, there are no items within the current increment of items the service is handling that matches the filter condition.
 If a `@odata.nextLink` URL is returned, there are more pages of data to retrieve in the session, even if the current response contains an empty result. 
 
 ### Example
