@@ -1,10 +1,10 @@
 ---
 title: "schedule resource type"
-description: "A collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team."
+description: "A collection of schedulingGroups, shifts, timeOffReasons, and timesOff within a team."
 author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
-doc_type: resourcePageType_
+doc_type: resourcePageType
 ms.date: 07/22/2024
 ---
 

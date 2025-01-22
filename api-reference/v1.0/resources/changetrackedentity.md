@@ -1,6 +1,6 @@
 ---
 title: "changeTrackedEntity resource type"
-description: "Represents an entity to track changes made to any supported Shifts resource"
+description: "Represents an entity to track changes made to any supported Shifts resource."
 ms.localizationpriority: medium
 ms.date: 11/21/2024
 author: "victorcheng"

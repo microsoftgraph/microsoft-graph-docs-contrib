@@ -37,13 +37,13 @@ Represents a timecard entry in the schedule.
 |clockOutEvent|[timeCardEvent](../resources/timecardevent.md)|The clock-out event of the **timeCard**.|
 |confirmedBy|confirmedBy|Indicates whether this **timeCard** entry is confirmed. Possible values are: `none`, `user`, `manager`, `unknownFutureValue`.|
 |createdBy|[IdentitySet](../resources/identityset.md)|Identity of the creator of this **timecard**.|
-|createdDateTime|DateTimeOffset|The timestamp in which the **timeCard** was created.|
+|createdDateTime|DateTimeOffset|The date and time at which the **timeCard** was created.|
 |id|String|Unique identifier for the **timeCard**.|
 |lastModifiedBy|[IdentitySet](../resources/identityset.md)|Identity of the last modifier of this **timecard**.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp in which the **timeCard** was last modified.|
 |notes|[itemBody](../resources/itembody.md)|Notes about the **timeCard**.|
 |originalEntry|[timeCardEntry](../resources/timecardentry.md)|The original **timeCardEntry** of the **timeCard** before it was edited.|
-|state|timeCardState|The current state of the **timeCard** during its life cycle.The possible values are: `clockedIn`, `onBreak`, `clockedOut`, `unknownFutureValue`.|
+|state|timeCardState|The current state of the **timeCard** during its life cycle. The possible values are: `clockedIn`, `onBreak`, `clockedOut`, `unknownFutureValue`.|
 |userId|String|User ID to which the **timeCard** belongs.|
 
 ## JSON representation

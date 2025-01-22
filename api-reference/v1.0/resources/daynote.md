@@ -1,6 +1,6 @@
 ---
 title: "dayNote resource type"
-description: "Represents a note relevant for a specific day on a Teams schedule"
+description: "Represents a note relevant for a specific day on a Teams schedule."
 author: lemike
 ms.date: 01/17/2025
 ms.localizationpriority: medium

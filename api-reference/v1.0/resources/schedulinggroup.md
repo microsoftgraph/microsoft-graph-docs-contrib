@@ -4,7 +4,7 @@ description: "A logical grouping of members in the schedule (usually by role)."
 author: "akumar39"
 ms.localizationpriority: high
 ms.subservice: "teams"
-doc_type: resourcePageType_
+doc_type: resourcePageType
 ms.date: 07/22/2024
 ---
 
