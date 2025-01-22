@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const startTranscription = {
+const startTranscriptionOperation = {
   language: 'en-us'
 };
 
 await client.api('/communications/calls/02000980-58ea-4bf2-bb77-8ba548da56f7/microsoft.graph.StartTranscription')
 	.version('beta')
-	.post(startTranscription);
+	.post(startTranscriptionOperation);
 
 ```

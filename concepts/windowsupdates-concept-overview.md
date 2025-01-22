@@ -3,7 +3,7 @@ title: "Windows updates API overview"
 description: "Windows Autopatch gives control to your organization over the updates offered to your devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: conceptualPageType
 ms.date: 11/07/2024
 ---
