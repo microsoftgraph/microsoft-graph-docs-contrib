@@ -20,17 +20,17 @@ Represents a protection rule specified by the client as part of a protection pla
 
 - Protection rules can be static or dynamic. If the **isAutoApplyEnabled** property is `true`, the protection rule is dynamic. Otherwise, it is static.
 - Static rule changes are applied once when it is created with no automatic/dynamic updates.
-- Dynamic rule is re-evaulated at regular intervals to fetch the latest scope of the rule, resulting in addition/removal of artifacts based on latest rule evaluation.
-- This property can only be set when a **protectionRuleBase** object is created. Therefore, a dynamic rule cannot be changed to a static rule, nor vice versa.
+- Dynamic rule is reevaluated at regular intervals to fetch the latest scope of the rule, resulting in addition/removal of artifacts based on latest rule evaluation.
+- This property can only be set when a **protectionRuleBase** object is created. Therefore, a dynamic rule can't be changed to a static rule, nor vice versa.
 
 This abstract type is the base type for [siteProtectionRule](../resources/siteprotectionrule.md), [mailboxProtectionRule](../resources/mailboxprotectionrule.md), and [driveProtectionRule](../resources/driveprotectionrule.md).
 
 The following limitations apply to this resource:
 
-- The protection rule APIs for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and a maximum of 255 characters.
+- The protection rule APIs for adding multiple sites by site names or URL in the backup policy creation workflow can handle a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and a maximum of 255 characters.
 - The protection rule APIs for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time.
 - The static rules are applied one time only. That is, the security groups or distribution lists are flattened at the time they're added to the backup configuration policy. For example, groups or lists aren't dynamically updated in the system if users are added or removed from the original security group.
-- The dynamic rules are refreshed at regular intervals resulting in automatic addition and removal of artifacts to the configuration policy depending on the result of rule evaluation.
+- The dynamic rules are refreshed at regular intervals, automatically adding and removing of artifacts to the configuration policy depending on the result of rule evaluation.
 - A protection policy can have only one active dynamic rule.
 - Dynamic rules aren't available for sharepoint protection policies.
 
@@ -45,7 +45,7 @@ The following limitations apply to this resource:
 |isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification made to the rule.|
-|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`, `updateRequested`, `deleteRequested`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `updateRequested` , `deleteRequested`. The `draft` member is currently unsupported. |
+|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`, `updateRequested`, `deleteRequested`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `updateRequested` , `deleteRequested`. The `draft` member is currently unsupported. |
 
 
 ### protectionRuleStatus values
@@ -57,8 +57,8 @@ The following limitations apply to this resource:
 |completed | The status of the protection rule when it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule when the rule ran but encountered errors.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.    |
-|updateRequested | The status of the protection rule when it's patch. This is applicable only for dynamic rules|
-|deleteRequested | The status of the protection rule on deleteAndUnprotect action. This is applicable only for dynamic rules|
+|updateRequested | The status of the protection rule when it's patch. This value only applies to dynamic rules|
+|deleteRequested | The status of the protection rule on deleteAndUnprotect action. This value only applies to dynamic rules|
 
 ## Relationships
 
