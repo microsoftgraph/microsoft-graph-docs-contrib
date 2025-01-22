@@ -48,9 +48,18 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ### Request
 
-The following example shows a request.
+<!-- { "blockType": "ignored" } -->
+```http
+GET /teams/a738af50-90f1-472c-b3c3-a468f88ceaba/channels/19:yVS-hfmJ8w61Vu4oehlAr-y9G0eeyY11D8elrrDSvCU1@thread.tacv2/planner/plans
+```
 
-TODO
+## Request headers
+| Name      |Description|
+|:----------|:----------|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+Don't supply a request body for this method.
 
 ### Response
 
@@ -73,7 +82,7 @@ Content-type: application/json
       "createdDateTime": "2025-01-14T18:03:25.8457422Z",
       "isArchived": false,
       "owner": "ba2b2488-cb8c-4dbc-882e-a9a8311bfee9",
-      "title": "title-value",
+      "title": "travel plan",
       "id": "TQZYwVBC4E6BUIg4nfSnfJUADdBY",
       "createdBy": {
         "application": {
