@@ -381,8 +381,7 @@ has items with colliding names to the children at the source folder. The request
 
 #### Request
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-4", "scopes": "files.readwrite", "target": "action" } -->
-
+<!-- { "blockType": "request", "name": "copy-item-5", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy?@microsoft.graph.conflictBehavior=replace
@@ -408,6 +407,8 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 ```
 
 Checking the monitoring url yields the following status report.
+
+<!-- { "blockType": "response" } -->
 ```http
 {
   "@odata.context": "https://contoso.sharepoint.com/sites/site2/_api/v2.1/$metadata#drives('driveId')/operations/$entity",
@@ -448,7 +449,7 @@ The following example copies the item identified by `{item-id}` into a folder id
 #### Request
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-5", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item-6", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -515,7 +516,7 @@ The `childrenOnly` parameter isn't set to true.
 The request fails because the copy operation can't be done on the root folder.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-6" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-7" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/root/copy
@@ -562,7 +563,7 @@ The `childrenOnly` parameter is set to true. The drive item identified by `{item
 The request fails because the limit is 150 direct children.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-7" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-8" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -611,7 +612,7 @@ The `{item-id}` refers to a file, not a folder. The `childrenOnly` parameter is 
 The request fails since the `{item-id}` is a non-folder driveItem.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-8" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-9" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -658,7 +659,7 @@ The requets body sets the`childrenOnly` parameter to true and also specifies a `
 The request fails because `childrenOnly` and `name` can't be used together.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-9" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-10" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
