@@ -16,10 +16,10 @@ var requestBody = new MutualTlsOauthConfiguration
 		new CertificateAuthority
 		{
 			IsRootAuthority = true,
-			CertificateRevocationListUrl = "http://acme.com/root.crl",
+			CertificateRevocationListUrl = "http://LakeshoreRetail.com/root.crl",
 			DeltaCertificateRevocationListUrl = null,
 			Certificate = Convert.FromBase64String("Binary"),
-			Issuer = "acme Inc",
+			Issuer = "Lakeshore Retail",
 			AdditionalData = new Dictionary<string, object>
 			{
 				{

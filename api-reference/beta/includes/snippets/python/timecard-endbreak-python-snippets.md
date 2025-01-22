@@ -13,10 +13,10 @@ from msgraph_beta.generated.models.body_type import BodyType
 request_body = EndBreakPostRequestBody(
 	notes = ItemBody(
 		content_type = BodyType.Text,
-		content = "end break smaple notes",
+		content = "ending break",
 	),
 	additional_data = {
-			"at_aproved_location" : True,
+			"is_at_approved_location" : True,
 	}
 )
 
