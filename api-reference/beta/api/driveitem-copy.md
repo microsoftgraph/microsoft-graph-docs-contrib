@@ -39,15 +39,15 @@ POST /users/{userId}/drive/items/{itemId}/copy
 ```
 ## Optional query parameters
 
-This method supports the `@microsoft.graph.conflictBehavior` query parameter to customize the behavior when a conflict occurs. This parameter can also be used alongside the `childrenOnly` parameter in which case every child will be subject to the `@microsoft.graph.conflictBehavior` specified.
+This method supports the `@microsoft.graph.conflictBehavior` query parameter to customize the behavior when a conflict occurs.
 
 | Value           | Description                                    |
 |:----------------|:---------------------------------------------- |
 | fail            | Default behavior if option is not specified. Entire operation will fail.  |
-| replace         | Only supported for file items. NB this will delete the pre-existing item at the destination and then create a new item with the same name. History of the deleted item will also not retained.  |
+| replace         | Only supported for file items.This will delete the pre-existing item at the destination and then create a new item with the same name. History of the deleted item will not be retained.  |
 | rename          | Amends the name of the new items at the destination by appending the lowest integer that guarantees uniqueness to the name of the target file or folder.  |
 
-In the case were `@microsoft.graph.conflictBehavior=replace` is used on folder items, this API will return a `202 Accepted` response. However querying the monitoring url will report a `nameAlreadyExists` error. If this option is used in conjunction with the `childrenOnly` parameter, similar behavior will be observed if there is at least 1 folder item amongst the children of the source item.
+In the case where `@microsoft.graph.conflictBehavior=replace` is used on folder items, this API will return a `202 Accepted` response. However querying the monitoring url will report a `nameAlreadyExists` error. If this option is used in conjunction with the `childrenOnly` parameter, similar behavior will be observed if there is at least 1 folder item amongst the children of the source item.
 
 >[!NOTE]
 >The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
@@ -69,6 +69,9 @@ In the request body, provide a JSON object with the following parameters.
 >
 >In a single request, the `childrenOnly` option copies 150 children items, and for the grandchildren items the SharePoint limit applies. For more information, see [SharePoint limitation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
 
+> If the `@microsoft.graph.conflictBehavior` query parameter is used alongside the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
+
+
 ## Response
 
 The response returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request. The response indicates whether the copy operation was accepted or rejected - for example, if the destination filename is already in use.
@@ -77,7 +80,7 @@ The response returns details about how to [monitor the progress](/graph/long-run
 
 ### Example 1: Copy a file to a folder
 
-The following example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The following example copies a file identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
 The new copy of the file is named `contoso plan (copy).txt`.
 
 #### Request
@@ -144,7 +147,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 ### Example 2: Copy the children in a folder
 
-The following example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The following example copies the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
 The `childrenOnly` parameter is set to true.
 
 #### Request 
@@ -207,12 +210,29 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
-Monitoring is important because the copy operation with childrenOnly occurs across multiple operations.
 
-### Example 3: Copy the children in a folder with name conflict
+It's important to check the status of the monitoring url in the location header as the actual copy operation can happen asynchronously and thus be completed
+after an unspecified period of time.
 
-The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-The destination already has the same name found at the source. The operation is accepted but it encounters a failure during processing.
+Checking the monitoring yields the following status report
+```
+{
+  "@odata.context": "https://https://contoso.sharepoint.com/sites/site1/_api/v2.1/$metadata#drives('driveId')/operations/$entity",
+  "id": "049af13f-d177-4c70-aed0-eb6f04a5d88b",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastActionDateTime": "0001-01-01T00:00:00Z",
+  "percentageComplete": 100,
+  "percentComplete": 100,
+  "resourceId": "016OGUCSF6Y2GOVW7725BZO354PWSELRRZ",
+  "resourceLocation": "https://https://contoso.sharepoint.com/sites/site2/_api/v2.0/drives/b!1YwGyNd6RUuVB42eCVw7ULlXybr_-09Br67iDGnYY-neBqwZd6jJRJbgCTx0On5n/items/016OGUCSF6Y2GOVW7725BZO354PWSELRRZ",
+  "status": "completed"
+}
+```
+
+### Example 3: Copy a file item to a folder with a pre-existing item with the same name
+
+The following example attempts to copy a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
+The destination already has a file with the same name. The operation is accepted but it encounters a failure during processing.
 
 #### Request
 # [HTTP](#tab/http)
@@ -274,7 +294,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-Follow the monitor url.
+Checking the monitor url yields the following the status report.
 ```http
 {
   "id": "46cf980a-28e1-4623-b8d0-11fc5278efe6",
@@ -289,11 +309,10 @@ Follow the monitor url.
 ```
 To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters).
 
-### Example 4: Copy the children in a folder with name conflict setting conflictBehavior
+### Example 4: Copy a file item to a folder with a pre-existing item with the same name. Resolve the name conflict by using the @microsoft.graph.conflictBehavior query parameter
 
-The following example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-The optional query parameter @microsoft.graph.conflictBehavior is set to replace. The possible values are `replace`, `rename`, or `fail`.
-The destination already has the same name found at the source.
+The following example attempts to copy a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
+The destination already has a file with the same name. The query parameter `@microsoft.graph.conflictBehavior` is set to replace. The possible values are `replace`, `rename`, or `fail`.
 
 #### Request
 # [HTTP](#tab/http)
@@ -355,7 +374,40 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-Following the monitoring url
+### Example 5: Copy the children in a folder to a destination with name conflicts. Attempt to use @microsoft.graph.conflictBehavior to resolve the name conflicts
+
+The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. One of the child items is a folder item. The destination
+has items with colliding names to the children at the source folder. The request attempts to resolve the name conflict by setting the optional query parameter `@microsoft.graph.conflictBehavior` to replace. The request is accepted but the monitoring url reports failures. Instead use `rename` or `fail` if at least one of the children is a folder item.
+
+#### Request
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "copy-item-4", "scopes": "files.readwrite", "target": "action" } -->
+
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy?@microsoft.graph.conflictBehavior=replace
+Content-Type: application/json
+
+{
+  "parentReference": {
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+  },
+  "childrenOnly": true
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
+```
+
+Checking the monitoring url yields the following status report.
 ```http
 {
   "@odata.context": "https://contoso.sharepoint.com/sites/site2/_api/v2.1/$metadata#drives('driveId')/operations/$entity",
@@ -389,9 +441,9 @@ Following the monitoring url
 }
 ```
 
-### Example 5: Copy operation preserve version history
+### Example 6: Copy operation preserve version history
 
-The following example copies the item identified by `{item-id}` into a folder identified with a `driveId` and `id` value. It also copies the version history to the target folder. If the source file contains 20 versions and the destination version limit setting is 10, the copy only transfers the maximum number of versions the destination site allows, starting from the most recent.
+The following example copies the item identified by `{item-id}` into a folder identified by the `driveId` and `id` values. It also copies the version history to the target folder. If the source file contains 20 versions and the destination version limit setting is 10, the copy only transfers the maximum number of versions the destination site allows, starting from the most recent.
 
 #### Request
 
@@ -456,11 +508,11 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 ```
 
-### Example 6: Copy the children in a folder from root
+### Example 7: Copy the children in a folder from root
 
-The following example attempts to copy the children in a folder identified by `{item-id}` (also known as root) into a folder identified with a `driveId` and `id` value.
+The following example attempts to copy the children in the folder identified by `{item-id}` (also known as root) into a folder identified by the `driveId` and `id` values.
 The `childrenOnly` parameter isn't set to true.
-The request fails because the copy operation can't be done in the root folder.
+The request fails because the copy operation can't be done on the root folder.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-6" } -->
@@ -503,9 +555,9 @@ Content-Length: 283
 ```
 To resolve this error, set the `childrenOnly` parameter to true.
 
-### Example 7: Copy the children in a folder where source has more than 150 direct children
+### Example 8: Copy the children in a folder where source has more than 150 direct children
 
-The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
 The `childrenOnly` parameter is set to true. The drive item identified by `{item-id}` contains more than 150 direct children.
 The request fails because the limit is 150 direct children.
 
@@ -520,7 +572,8 @@ Content-Type: application/json
   "parentReference": {
     "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
-  }
+  },
+  "childrenOnly": true
 }
 ```
 
@@ -551,11 +604,11 @@ Content-Length: 341
 ```
 To resolve this error, reorganize the source folder structure only to have 150 children.
 
-### Example 8: Copy the children where the source item is a file
+### Example 9: Copy the children where the source item is a file
 
-The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
 The `{item-id}` refers to a file, not a folder. The `childrenOnly` parameter is set to true.
-The request fails since the `{item-id}` is a nonfolder driveItem.
+The request fails since the `{item-id}` is a non-folder driveItem.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-8" } -->
@@ -598,10 +651,10 @@ Content-Length: 290
 }
 ```
 
-### Example 9: Copy the children in a folder with childrenOnly and name
+### Example 10: Copy the children in a folder with both the childrenOnly and name request body parameters
 
-The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-The `childrenOnly` parameter is set to true and specify a `name` value.
+The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
+The requets body sets the`childrenOnly` parameter to true and also specifies a `name` value.
 The request fails because `childrenOnly` and `name` can't be used together.
 
 #### Request
