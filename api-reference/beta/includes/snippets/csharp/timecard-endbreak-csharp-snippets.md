@@ -15,12 +15,12 @@ var requestBody = new EndBreakPostRequestBody
 	Notes = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "end break smaple notes",
+		Content = "ending break",
 	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"atAprovedLocation" , true
+			"isAtApprovedLocation" , true
 		},
 	},
 };
