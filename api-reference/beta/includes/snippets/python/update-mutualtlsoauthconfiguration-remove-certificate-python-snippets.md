@@ -13,10 +13,10 @@ request_body = MutualTlsOauthConfiguration(
 	certificate_authorities = [
 		CertificateAuthority(
 			is_root_authority = True,
-			certificate_revocation_list_url = "http://acme.com/root.crl",
+			certificate_revocation_list_url = "http://LakeshoreRetail.com/root.crl",
 			delta_certificate_revocation_list_url = None,
 			certificate = base64.urlsafe_b64decode("Binary"),
-			issuer = "acme Inc",
+			issuer = "Lakeshore Retail",
 			additional_data = {
 					"issuer_subjectkey_identifier" : "SKI",
 			}
