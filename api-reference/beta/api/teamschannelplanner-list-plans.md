@@ -48,18 +48,16 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ### Request
 
-<!-- { "blockType": "ignored" } -->
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_plans_owned_by_channel",
+  "sampleKeys" : ["a738af50-90f1-472c-b3c3-a468f88ceaba", "19:yVS-hfmJ8w61Vu4oehlAr-y9G0eeyY11D8elrrDSvCU1@thread.tacv2"]
+}-->
 ```http
-GET /teams/a738af50-90f1-472c-b3c3-a468f88ceaba/channels/19:yVS-hfmJ8w61Vu4oehlAr-y9G0eeyY11D8elrrDSvCU1@thread.tacv2/planner/plans
+GET https://graph.microsoft.com/beta/teams/a738af50-90f1-472c-b3c3-a468f88ceaba/channels/19:yVS-hfmJ8w61Vu4oehlAr-y9G0eeyY11D8elrrDSvCU1@thread.tacv2/planner/plans
 ```
-
-## Request headers
-| Name      |Description|
-|:----------|:----------|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-
-## Request body
-Don't supply a request body for this method.
 
 ### Response
 
