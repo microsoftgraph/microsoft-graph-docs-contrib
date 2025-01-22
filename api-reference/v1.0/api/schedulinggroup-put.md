@@ -54,6 +54,7 @@ If successful, this method returns a `200 OK` response code and a [schedulingGro
 The following example shows a request.
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-put-schedulinggroups"
@@ -73,6 +74,12 @@ Prefer: return=representation
   "code": "CashierCode"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/schedule-put-schedulinggroups-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
