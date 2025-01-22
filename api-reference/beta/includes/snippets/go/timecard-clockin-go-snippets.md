@@ -20,12 +20,12 @@ requestBody := graphteams.NewClockInPostRequestBody()
 notes := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
 notes.SetContentType(&contentType) 
-content := "clock in notes"
+content := "clocking in"
 notes.SetContent(&content) 
 requestBody.SetNotes(notes)
 additionalData := map[string]interface{}{
-	atAprovedLocation := true
-requestBody.SetAtAprovedLocation(&atAprovedLocation) 
+	isAtApprovedLocation := true
+requestBody.SetIsAtApprovedLocation(&isAtApprovedLocation) 
 }
 requestBody.SetAdditionalData(additionalData)
 
