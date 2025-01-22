@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the restriction status of a [cloudPcSupportedRegion]((../resources/cloudpcsupportedregion.md)). Including CPU quota status, GPU quota status and Nested Virtualization status.
+Represent the restriction status of a [cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md). Including CPU quota status, GPU quota status and Nested Virtualization status.
 
 ## Properties
 

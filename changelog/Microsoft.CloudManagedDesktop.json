@@ -12,11 +12,11 @@
           },
           {
             "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
-            "ApiChange": "Property",
+            "ApiChange": "ComplexType",
             "ChangedApiName": "cloudPcSupportedRegionRestrictionDetail",
             "ChangeType": "Addition",
-            "Description": "Added the [cloudPcSupportedRegionRestrictionDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSupportedRegionRestrictionDetail?view=graph-rest-beta) resource type.",
-            "Target": "cloudPcSupportedRegion"
+            "Description": "Added the [cloudPcSupportedRegionRestrictionDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSupportedRegionRestrictionDetail?view=graph-rest-beta) complex type.",
+            "Target": "cloudPcSupportedRegionRestrictionDetail"
           }
         ],
         "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
