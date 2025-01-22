@@ -15,12 +15,12 @@ var requestBody = new StartBreakPostRequestBody
 	Notes = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "start break smaple notes",
+		Content = "starting break",
 	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"atAprovedLocation" , true
+			"isAtApprovedLocation" , true
 		},
 	},
 };
