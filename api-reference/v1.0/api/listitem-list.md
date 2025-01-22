@@ -135,6 +135,57 @@ Content-type: application/json
 }
 ```
 
+## Filtering items in a list
+Filtering can be used to retrieve a subset of the listitem collection.
+Properties of the listitem as well listitem fields can be filtered.
+If filtering on indexed fields, the service can only filter on a single indexed field at a time.
+**Note:** Filtering works best on indexed columns
+
+### Operations supported for filtering listItems in a list.
+| Operator type         | Operator                                                                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Equality operators    | <ul><li> Equals (`eq`) </li><li> Not equals (`ne`)</li></ul> |
+| Relational operators  | <ul><li> Less than (`lt`) </li><li> Greater than (`gt`)</li><li> Less than or equal to (`le`)</li><li> Greater than or equal to (`ge`)</li></ul> |
+| Functions             | <ul><li> Starts with (`startswith`) </li></ul>    |
+
+#### Filtering on large lists
+Depending on the number of items that match the filtering condition, the results either be returned all at once or in a paged manner.
+Paged results typically occurs for large lists where a large number of items match the filtering conditions, the service will go through all items in the list in a increments (sliding window) and return the set of listItems that match the filter condition along with a nextlink.
+If there are no items that match the filter condition within the current increment of items the service is handling, an empty set will be retuned along with a nextlink.
+This is expected behaviour, follow the nextlink for the next increment of items in the list.
+
+### Example
+<!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
+```http
+GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)&$filter=fields/Quantity lt 600
+```
+
+### Response
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+  "value": [
+    {
+      "id": "2",
+      "fields": {
+        "Name": "Gadget",
+        "Color": "Red",
+        "Quantity": 503
+       }
+    },
+    {
+      "id": "7",
+      "fields": {
+        "Name": "Gizmo",
+        "Color": "Green",
+        "Quantity": 92
+       }
+    }
+  ]
+}
+```
 <!-- {
   "type": "#page.annotation",
   "description": "",
