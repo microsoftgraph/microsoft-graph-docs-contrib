@@ -32,6 +32,8 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |exportFormat|[microsoft.graph.security.exportFormat](../resources/security-ediscoverysearchexportoperation.md#exportformat-values)|Format of the emails of the export. The possible values are: `pst`, `msg`, `eml`, `unknownFutureValue`.|
 |exportLocation|[microsoft.graph.security.exportLocation](../resources/security-ediscoverysearchexportoperation.md#exportlocation-values)| Location scope for partially indexed items. You can choose to include partially indexed items only in responsive locations with search hits or in all targeted locations. The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`.|
 |exportSingleItems|Boolean|Indicates whether to export single items.|
+|cloudAttachmentVersion|[microsoft.graph.security.cloudAttachmentVersion](../resources/security-ediscoverysearchexportoperation.md#cloudattachmentversion-values)|The versions to include for cloud attachments in messages.|
+|documentVersion|[microsoft.graph.security.documentVersion](../resources/security-ediscoverysearchexportoperation.md#documentversion-values)| The versions to include for files in sharepoint.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |percentProgress|Int32|The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
@@ -47,14 +49,14 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 | allDocumentVersions         | Collect all versions of SharePoint documents. If not selected, only current versions are collected.|
 | subfolderContents           | Collect items inside subfolders of a matched folder.|
 | listAttachments             | Collect files attached to SharePoint lists and their child items.|
-| htmlTranscripts             | Convert messages close together into transcripts. |
+| htmlTranscripts             | Contextual chat messages will be threaded into HTML transcripts. |
 | advancedIndexing            | Perform advanced indexing during export to reduce false matches. |
 | allItemsInFolder            | Include all content in list if the list itself matches a query. |
 | includeFolderAndPath        | Include folder and path structure of the source. | 
 | condensePaths               | Truncate file paths so they will fit within 1024 characters.|
 | friendlyName                | Give each item a friendly name. |
 | splitSource                 | Organize data from different locations into separate folders or PSTs. |
-| optimizedPartitionSize      | Optimize partition size. |
+| optimizedPartitionSize      | Optimize export package partition  size. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### exportCriteria values

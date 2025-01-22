@@ -42,9 +42,9 @@ None.
 ### statisticsOptions values
 |Name|Description|
 |:----|-----------|
-|includeRefiners      | Include refiners.|
-|includeQueryStats    | Include query segment stats.|
-|includeUnindexedStats| Include unindexed item stats.|
+|includeRefiners      | Refine with categories to include people, sensitive information types, item types, and errors.|
+|includeQueryStats    | Include query keywords report to assess keyword relevance of your search query.|
+|includeUnindexedStats| Include partially indexed items.|
 |advancedIndexing     | Perform advanced indexing during search to reduce false matches.|
 |locationsWithoutHits | Estimate unindexed items even in locations without hits.|
 
@@ -83,7 +83,8 @@ The following JSON representation shows the resource type.
   "unindexedItemCount": "Integer",
   "unindexedItemsSize": "Integer",
   "mailboxCount": "Integer",
-  "siteCount": "Integer"
+  "siteCount": "Integer",
+  "statisticsOptions": "Integer"
 }
 ```
 

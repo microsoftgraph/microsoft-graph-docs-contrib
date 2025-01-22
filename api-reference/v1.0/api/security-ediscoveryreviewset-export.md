@@ -49,8 +49,8 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |description|String| Description of the export. |
-|exportOptions|microsoft.graph.security.exportOptions|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `unknownFutureValue`. `text`and `pdfReplacement` is only applicable if `originalFiles` is selected.|
-|exportStructure|microsoft.graph.security.exportFileStructure| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `msg`, `unknownFutureValue`. However, `directory` has been deprecated, so format will default to `msg`.|
+|exportOptions|microsoft.graph.security.exportOptions|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizePartitionSize`, `unknownFutureValue`. Note: If `originalFiles` is not selected, only the `tags` member is considered.|
+|exportStructure|microsoft.graph.security.exportFileStructure| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `msg`, `unknownFutureValue`. Note: `directory` is on the way for deprecation. Currently, if `directory` is selected the format will be `msg`, and the exportOptions `splitSource`, `includeFolderAndPath`, `friendlyName` will be disregarded.|
 |outputName|String| Name of the export. Required. |
 
 ## Response

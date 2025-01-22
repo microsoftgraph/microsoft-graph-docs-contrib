@@ -45,7 +45,7 @@ Content-Type: application/json
 ## Request body
 |Property|Type|Description|
 |:---|:---|:---|
-| statisticsOptions | microsoft.graph.security.statisticsOptions | The options to specify the inputs and results of estimate statistics operation. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`. `advancedIndexing` and `locationsWithoutHits` is only considered if `includeUnindexedStats` is included.|
+| statisticsOptions | microsoft.graph.security.statisticsOptions | The options to generate statistics. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`. Note: `advancedIndexing` and `locationsWithoutHits` is only considered if `includeUnindexedStats` is set.|
 
 ## Response
 
