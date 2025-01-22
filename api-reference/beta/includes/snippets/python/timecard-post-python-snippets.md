@@ -15,11 +15,13 @@ from msgraph_beta.generated.models.time_card_break import TimeCardBreak
 request_body = TimeCard(
 	clock_in_event = TimeCardEvent(
 		date_time = "2019-03-18T00:00:00.000Z",
-		at_approved_location = True,
 		notes = ItemBody(
 			content = "Started late due to traffic in CA 237",
 			content_type = BodyType.Text,
 		),
+		additional_data = {
+				"is_at_approved_location" : True,
+		}
 	),
 	notes = ItemBody(
 		content = "8 To 5 Inventory management",
@@ -34,11 +36,13 @@ request_body = TimeCard(
 			),
 			start = TimeCardEvent(
 				date_time = "2019-03-18T02:00:00.000Z",
-				at_approved_location = True,
 				notes = ItemBody(
 					content = "Reduced break to make up for lost time",
 					content_type = BodyType.Text,
 				),
+				additional_data = {
+						"is_at_approved_location" : True,
+				}
 			),
 		),
 	],

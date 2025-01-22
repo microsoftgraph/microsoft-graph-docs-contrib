@@ -21,13 +21,13 @@ requestBody := graphmodels.NewMutualTlsOauthConfiguration()
 certificateAuthority := graphmodels.NewCertificateAuthority()
 isRootAuthority := true
 certificateAuthority.SetIsRootAuthority(&isRootAuthority) 
-certificateRevocationListUrl := "http://acme.com/root.crl"
+certificateRevocationListUrl := "http://LakeshoreRetail.com/root.crl"
 certificateAuthority.SetCertificateRevocationListUrl(&certificateRevocationListUrl) 
 deltaCertificateRevocationListUrl := null
 certificateAuthority.SetDeltaCertificateRevocationListUrl(&deltaCertificateRevocationListUrl) 
 certificate := []byte("binary")
 certificateAuthority.SetCertificate(&certificate) 
-issuer := "acme Inc"
+issuer := "Lakeshore Retail"
 certificateAuthority.SetIssuer(&issuer) 
 additionalData := map[string]interface{}{
 	"issuerSubjectkeyIdentifier" : "SKI", 
