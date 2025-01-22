@@ -69,6 +69,15 @@ registrationQuestionAnswers := []graphmodels.VirtualEventRegistrationQuestionAns
 	virtualEventRegistrationQuestionAnswer2,
 }
 requestBody.SetRegistrationQuestionAnswers(registrationQuestionAnswers)
+additionalData := map[string]interface{}{
+externalRegistrationInformation := graph.New()
+referrer := "Facebook"
+externalRegistrationInformation.SetReferrer(&referrer) 
+registrationId := "myExternalRegistrationId"
+externalRegistrationInformation.SetRegistrationId(&registrationId) 
+	requestBody.SetExternalRegistrationInformation(externalRegistrationInformation)
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 registrations, err := graphClient.Solutions().VirtualEvents().Webinars().ByVirtualEventWebinarId("virtualEventWebinar-id").Registrations().Post(context.Background(), requestBody, nil)
