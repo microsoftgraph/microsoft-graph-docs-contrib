@@ -2016,12 +2016,6 @@ items:
         href: ../../api/identityprovider-delete.md
       - name: List
         href: ../../api/identityprovider-list.md
-  - name: Invitation
-    items:
-    - name: Invitation
-      href: ../../resources/invitation.md
-    - name: Create
-      href: ../../api/invitation-post.md
   - name: Multitenant organization
     displayName: MTO
     items:

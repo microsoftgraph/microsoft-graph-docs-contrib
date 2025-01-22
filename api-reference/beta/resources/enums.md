@@ -2150,31 +2150,6 @@ Namespace: microsoft.graph
 | lightRed    | 8     |
 | maxColor    | 9     |
 
-### educationSynchronizationProfileState values
-
-| Member             | Value |
-| ------------------ | ----- |
-| deleting           | 2     |
-| deletionFailed     | 3     |
-| provisioningFailed | 5     |
-| provisioned        | 6     |
-| provisioning       | 7     |
-| unknownFutureValue | 8     |
-
-### educationSynchronizationStatus values
-
-| Member |
-| ------------------ |
-| paused |
-| inProgress |
-| success |
-| error |
-| validationError |
-| quarantined |
-| unknownFutureValue |
-| extracting |
-| validating |
-
 ### educationExternalSource values
 
 | Member |
@@ -3423,6 +3398,7 @@ Possible values for user account types (group membership), per Windows definitio
 | project |
 | driveItem |
 | user |
+| teamsChannel|
 
 ### plannerPlanContextType values
 
@@ -4989,6 +4965,15 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+
+### callEventType values
+
+| Member |
+| ------------------ |
+| callStarted |
+| callEnded |
+| unknownFutureValue |
+| rosterUpdated |
 
 ### restoreArtifactsBulkRequestStatus values 
 

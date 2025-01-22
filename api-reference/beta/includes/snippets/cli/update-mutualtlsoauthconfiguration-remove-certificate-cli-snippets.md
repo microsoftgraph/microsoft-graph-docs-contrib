@@ -9,10 +9,10 @@ mgc-beta directory certificate-authorities mutual-tls-oauth-configurations patch
   "certificateAuthorities": [\
     {\
       "isRootAuthority": true,\
-      "certificateRevocationListUrl": "http://acme.com/root.crl",\
+      "certificateRevocationListUrl": "http://LakeshoreRetail.com/root.crl",\
       "deltaCertificateRevocationListUrl": null,\
       "certificate": "Binary",\
-      "issuer": "acme Inc",\
+      "issuer": "Lakeshore Retail",\
       "issuerSubjectkeyIdentifier": "SKI"\
     }\
   ]\

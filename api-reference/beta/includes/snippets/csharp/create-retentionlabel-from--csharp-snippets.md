@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // Dependencies
-using Microsoft.Graph.Models.Security;
+using Microsoft.Graph.Beta.Models.Security;
 
 var requestBody = new RetentionLabel
 {
