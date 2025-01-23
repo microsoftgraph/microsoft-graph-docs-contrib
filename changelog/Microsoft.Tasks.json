@@ -3,6 +3,50 @@
     {
       "ChangeList": [
         {
+          "Id": "3da1192e-9af9-47d4-b32c-1ba82ddabcd1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "planner",
+          "ChangeType": "Addition",
+          "Description": "Added the **planner** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "3da1192e-9af9-47d4-b32c-1ba82ddabcd1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsChannelPlanner",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsChannelPlanner](https://learn.microsoft.com/en-us/graph/api/resources/teamsChannelPlanner?view=graph-rest-beta) resource and an associated method.",
+          "Target": "teamsChannelPlanner"
+        }
+      ],
+      "Id": "3da1192e-9af9-47d4-b32c-1ba82ddabcd1",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-22T22:58:43.1666848Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ac461ffd-f78b-4889-a030-1477634802db",
+          "ApiChange": "Member",
+          "ChangedApiName": "teamsChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the `teamsChannel` member to the **plannerContainerType** enumeration.",
+          "Target": "plannerContainerType"
+        }
+      ],
+      "Id": "ac461ffd-f78b-4889-a030-1477634802db",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-12T20:25:44.9502669Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9d06f609-aef0-4d24-ba1b-a5d5dbab9dd3",
           "ApiChange": "Property",
           "ChangedApiName": "assignedSensitivityLabel",

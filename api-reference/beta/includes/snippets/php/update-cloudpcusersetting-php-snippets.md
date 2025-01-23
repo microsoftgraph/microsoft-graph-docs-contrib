@@ -36,10 +36,7 @@ $additionalData = [
 $crossRegionDisasterRecoverySettingDisasterRecoveryNetworkSetting->setAdditionalData($additionalData);
 $crossRegionDisasterRecoverySetting->setDisasterRecoveryNetworkSetting($crossRegionDisasterRecoverySettingDisasterRecoveryNetworkSetting);
 $crossRegionDisasterRecoverySetting->setDisasterRecoveryType(new CloudPcDisasterRecoveryType('premium'));
-$additionalData = [
-	'userInitiatedDisasterRecoveryAllowed' => true,
-];
-$crossRegionDisasterRecoverySetting->setAdditionalData($additionalData);
+$crossRegionDisasterRecoverySetting->setUserInitiatedDisasterRecoveryAllowed(true);
 $requestBody->setCrossRegionDisasterRecoverySetting($crossRegionDisasterRecoverySetting);
 $requestBody->setLocalAdminEnabled(false);
 $requestBody->setResetEnabled(true);

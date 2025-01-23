@@ -17,6 +17,8 @@ You can configure Apple as a social identity provider for an external or Azure A
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
+For more information, see [Add Apple as an identity provider (preview)](/entra/external-id/customers/how-to-apple-federation-customers).
+
 ## Methods
 
 None.

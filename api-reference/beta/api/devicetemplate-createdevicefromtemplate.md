@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Create a new [device](../resources/device.md) from a [deviceTemplate](../resources/devicetemplate.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "devicetemplate-createdevicefromtemplate-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "devicetemplate_createdevicefromtemplate" } -->
 [!INCLUDE [permissions-table](../includes/permissions/devicetemplate-createdevicefromtemplate-permissions.md)]
 
 [!INCLUDE [rbac-devicestemplate-apis](../includes/rbac-for-apis/rbac-devicetemplate-apis.md)]
@@ -57,7 +55,7 @@ The following table lists the parameters that you can use when you call this act
 |:---|:---|:---|
 | accountEnabled       | Boolean                             | `true` if the account is enabled; otherwise, `false`. The default value is `true`. A disabled device can't authenticate with Microsoft Entra ID. Optional.|
 | alternativeNames     | String collection                   | A collection of ARM resource IDs associated with the device, if any. Optional. |
-| externalDeviceId     | String                              | UUID of the device by IoT registry. Must be unique within a tenant. Required. |
+| externalDeviceId     | String                              | ID of the device in IoT registry. Must be unique within a tenant. Required. |
 | externalSourceName   | String                              | Identifies the source name of the device. Optional. |
 | keyCredential        | [keyCredential](../resources/keycredential.md) | The key credential when you use self-signed certificates. Optional. |
 | operatingSystemVersion | String                              | The operating system version of the device specified. Optional. |
@@ -73,6 +71,7 @@ For more information, see [Microsoft Graph error responses and resource types](/
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "devicetemplatethis.createdevicefromtemplate"
@@ -92,6 +91,36 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/devicetemplatethiscreatedevicefromtemplate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/devicetemplatethiscreatedevicefromtemplate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/devicetemplatethiscreatedevicefromtemplate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/devicetemplatethiscreatedevicefromtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/devicetemplatethiscreatedevicefromtemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/devicetemplatethiscreatedevicefromtemplate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/devicetemplatethiscreatedevicefromtemplate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
