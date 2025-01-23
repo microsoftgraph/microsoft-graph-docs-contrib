@@ -44,6 +44,14 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |:---|:---|:---|
 |id|String|The unique identifier for the reports. Read-only. |
 
+### cloudPCPerformanceReportName values
+
+| Member                     | Description       |
+| :------------------------- | :---------------- |
+| performanceTrendReport     | Indicates a daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time.  | 
+| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.             |
+| cloudPcInsightReport       | Indicates Cloud PC-level configuration data with insights.   |
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
