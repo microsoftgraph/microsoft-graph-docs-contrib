@@ -106,11 +106,11 @@ For a POST request example, see [Request (create channel in migration state)](/m
 |allMembers|[conversationMember](conversationmember.md) collection |A collection of membership records associated with the channel. It includes both direct and indirect members of shared channels.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
-|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
+|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. Nullable.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
 |planner|[teamsChannelPlanner](teamschannelplanner.md) | Selective Planner services available to this channel. Currently, only shared channels are supported. Read-only. Nullable. |
 |sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|A collection of teams with which a channel is shared.|
-|tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
+|tabs|[teamsTab](../resources/teamstab.md) collection| A collection of all the tabs in the channel.|
 
 ## JSON representation
 
