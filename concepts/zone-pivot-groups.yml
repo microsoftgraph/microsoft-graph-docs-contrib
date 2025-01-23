@@ -26,3 +26,13 @@ groups:
     title: Graph Toolkit with React
   - id: mgt-react-chat
     title: Graph Toolkit with React (including Chat)
+- id: multicloud-permissions-management-api-quickreference
+  title: API operations quick reference guide for Microsoft Entra Permissions Management APIs
+  prompt: Select the authorization system
+  pivots:
+  - id: azure-authorization-systems
+    title: Azure
+  - id: aws-authorization-systems
+    title: AWS
+  - id: gcp-authorization-systems
+    title: GCP
