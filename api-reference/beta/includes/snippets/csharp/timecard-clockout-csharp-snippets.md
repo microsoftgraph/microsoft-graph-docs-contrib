@@ -15,12 +15,12 @@ var requestBody = new ClockOutPostRequestBody
 	Notes = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "clock out smaple notes",
+		Content = "clocking out",
 	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"atAprovedLocation" , true
+			"isAtApprovedLocation" , true
 		},
 	},
 };
