@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Get a report related to the performance of Cloud PCs.
 
 >[!CAUTION] 
-> This API is deprecated and will stop returning data on December 31, 2024. Going forward, use the [retrieveCloudPcTenantMetricsReport](cloudpcreports-retrievecloudpctenantmetricsreport.md) API.
+> This API is deprecated and stopped returning data on December 31, 2024. Going forward, use the [retrieveCloudPcTenantMetricsReport](cloudpcreports-retrievecloudpctenantmetricsreport.md) API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
