@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_list_agreementacceptances" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-agreementacceptances-permissions.md)]
 
-> [!TIP]
+> [!IMPORTANT]
 > Allows the signed-in user to retrieve their [agreementAcceptance](../resources/agreementacceptance.md) objects. The signed-in user must not be assigned an additional [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) as the [Default user role](/entra/fundamentals/users-default-permissions) authorize them to retrieve their agreementAcceptance objects.
 
 ## HTTP request
