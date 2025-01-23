@@ -380,8 +380,7 @@ The following example attempts to copy the children in a folder identified by `{
 has items with colliding names to the children at the source folder. The request attempts to resolve the name conflict by setting the optional query parameter `@microsoft.graph.conflictBehavior` to replace. The request is accepted but the monitoring url reports failures. Instead use `rename` or `fail` if at least one of the children is a folder item.
 
 #### Request
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-5", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item-conflicts", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy?@microsoft.graph.conflictBehavior=replace
@@ -395,40 +394,6 @@ Content-Type: application/json
   "childrenOnly": true
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-4-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/copy-item-4-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/copy-item-4-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/copy-item-4-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-4-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/copy-item-4-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/copy-item-4-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/copy-item-4-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -484,7 +449,7 @@ The following example copies the item identified by `{item-id}` into a folder id
 #### Request
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item-6", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item-5", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -551,7 +516,7 @@ The `childrenOnly` parameter isn't set to true.
 The request fails because the copy operation can't be done on the root folder.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-7" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-6" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/root/copy
@@ -598,7 +563,7 @@ The `childrenOnly` parameter is set to true. The drive item identified by `{item
 The request fails because the limit is 150 direct children.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-8" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-7" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -647,7 +612,7 @@ The `{item-id}` refers to a file, not a folder. The `childrenOnly` parameter is 
 The request fails since the `{item-id}` is a non-folder driveItem.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-9" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-8" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -694,7 +659,7 @@ The requets body sets the`childrenOnly` parameter to true and also specifies a `
 The request fails because `childrenOnly` and `name` can't be used together.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-10" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-9" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
