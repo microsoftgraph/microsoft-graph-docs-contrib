@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Updates the properties of a protectionRuleBase object.
-Update is only supported for dynamic rules of exchangeProtectionPolicy and onedriveForBusinessProtectionPolicy.
-After updation, the rule will move to `updateRequested` state.
+- Update is only supported for dynamic rules of exchangeProtectionPolicy and onedriveForBusinessProtectionPolicy.
+- After updation, the rule will move to `updateRequested` state.
 
 ## Permissions
 

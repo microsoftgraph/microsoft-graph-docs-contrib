@@ -165,7 +165,7 @@ HTTP/1.1 200 OK
       "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCOne", // Newly Added
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
       "status": "unprotectRequested",
-      "protectionSources": "manual",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

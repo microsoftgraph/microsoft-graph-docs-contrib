@@ -130,7 +130,7 @@ HTTP/1.1 200 OK
       "email": "lee@contoso.com", // Newly Added
       "mailboxType": "user",
       "status": "unprotectRequested",
-      "protectionSources": "manual",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -340,7 +340,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
-      "status": "protectRequested",
+      "status": "protected",
       "protectionSources": "manual, dynamicRule",
       "mailboxType": "user",
       "createdBy": {
@@ -448,8 +448,8 @@ HTTP/1.1 200 OK
       "directoryObjectId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
-      "status": "protectRequested",
-      "protectionSources": "manual",
+      "status": "removeRequested",
+      "protectionSources": "none",
       "mailboxType": "user",
       "createdBy": {
         "application": {

@@ -23,6 +23,7 @@ The following points apply to deleting a dynamic Rule and unprotecting all artif
 - Rule moves to `deleteRequested` status when deleteAndUnprotect action is performed on dynamic rule.
 - Unprotection of artifacts and deletion of rule are async operations and they are carried by background jobs, which may cause some delay to complete the operation. 
 - This action will result in resetting the "dynamicRule" protection source. So, if the artifact is protected by another protection source as well, it will result in the artifact being protected by the other protection source only.
+- No operation is allowed on dynamic rule once a rule is in `deleteRequested` state.
 
 ## Permissions
 
