@@ -20,12 +20,12 @@ requestBody := graphteams.NewClockOutPostRequestBody()
 notes := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
 notes.SetContentType(&contentType) 
-content := "clock out smaple notes"
+content := "clocking out"
 notes.SetContent(&content) 
 requestBody.SetNotes(notes)
 additionalData := map[string]interface{}{
-	atAprovedLocation := true
-requestBody.SetAtAprovedLocation(&atAprovedLocation) 
+	isAtApprovedLocation := true
+requestBody.SetIsAtApprovedLocation(&isAtApprovedLocation) 
 }
 requestBody.SetAdditionalData(additionalData)
 
