@@ -1,5 +1,5 @@
 ---
-title: "x509CertificateCrlValidationConfiguration resource type"
+title: "x509CertificateCRLValidationConfiguration resource type"
 description: "Determines whether certificate-based authentication should fail if the issuing CA doesn't have a valid certificate revocation list (CRL) configured."
 author: "vimrang"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 04/05/2024
 ---
 
-# x509CertificateCrlValidationConfiguration resource type
+# x509CertificateCRLValidationConfiguration resource type
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Determines whether issuer(CA) hints are sent back to the client side to filter t
 |Property|Type|Description|
 |:---|:---|:---|
 |exemptedCertificateAuthoritiesSubjectKeyIdentifiers| String collection|Represents the SKIs of CAs that should be excluded from the valid CRL distribution point check. SKI is represented as a hexadecimal string.|
-|state|x509CertificateCrlValidationConfigurationState|The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
+|state||The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -29,12 +29,12 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.x509CertificateCrlValidationConfiguration"
+  "@odata.type": "microsoft.graph.x509CertificateCRLValidationConfiguration"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.x509CertificateCrlValidationConfiguration",
+  "@odata.type": "#microsoft.graph.x509CertificateCRLValidationConfiguration",
   "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": "Collection(Edm.String)",
   "state": "String"
 }
