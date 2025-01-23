@@ -20,7 +20,7 @@ Discard the check out of a [driveItem](../resources/driveitem.md). This action r
 The same user that performed the checkout must discard it. Another alternative is to use application permissions.
 
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

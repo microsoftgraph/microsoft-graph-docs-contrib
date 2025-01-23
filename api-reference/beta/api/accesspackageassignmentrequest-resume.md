@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vikama-microsoft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/05/2024
 ---
 
 # accessPackageAssignmentRequest: resume

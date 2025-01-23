@@ -6,6 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: "resourcePageType"
+ms.date: 03/21/2024
 ---
 
 # evaluateDynamicMembershipResult resource type

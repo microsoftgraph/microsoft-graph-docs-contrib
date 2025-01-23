@@ -123,51 +123,35 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-      "createdDateTime": "2019-03-14T04:32:51.451Z",
-      "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-      "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-      "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+      "id": "SHFT_b986be48-7396-4ea4-ad62-470e18d9d2f1",
+      "createdDateTime": "2024-10-10T19:40:59.924Z",
+      "lastModifiedDateTime": "2024-10-10T19:40:59.924Z",
+      "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+      "userId": "5ca83ce7-291d-43b7-bf53-af79eef4bc1d",
+      "isStagedForDeletion": false,
+      "sharedShift": null,
       "lastModifiedBy": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
           "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-          "displayName": "John Doe"
+          "displayName": "John Doe",
+          "userIdentityType": "aadUser",
+          "tenantId": null
         }
       },
-      "sharedShift": {
-        "displayName": "Day shift",
-        "notes": "Please do inventory as part of your shift.",
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-12T00:00:00Z",
-        "theme": "blue",
-        "activities": [
-          {
-            "isPaid": true,
-            "startDateTime": "2019-03-11T15:00:00Z",
-            "endDateTime": "2019-03-11T15:15:00Z",
-            "code": "",
-            "displayName": "Lunch"
-          }
-        ]
-      },
       "draftShift": {
-        "displayName": "Day shift",
-        "notes": "Please do inventory as part of your shift.",
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-12T00:00:00Z",
+        "displayName": null,
+        "startDateTime": "2024-10-08T15:00:00Z",
+        "endDateTime": "2024-10-09T00:00:00Z",
         "theme": "blue",
-        "activities": [
-          {
-            "isPaid": true,
-            "startDateTime": "2019-03-11T15:00:00Z",
-            "endDateTime": "2019-03-11T15:30:00Z",
-            "code": "",
-            "displayName": "Lunch"
-          }
-        ]
+        "notes": null,
+        "activities": []
+      },
+      "schedulingGroupInfo": {
+        "displayName": "",
+        "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+        "code": null
       }
     }
   ]

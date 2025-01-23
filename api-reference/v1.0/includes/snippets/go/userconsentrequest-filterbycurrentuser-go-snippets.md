@@ -18,10 +18,10 @@ import (
 
 requestFilter := " (status eq 'Completed')"
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsentRequestItemUserConsentRequestsFilterByCurrentUserWithOnRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.AppConsentAppConsentRequestsItemUserConsentRequestsFilterByCurrentUserWithOnRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsentRequestItemUserConsentRequestsFilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.AppConsentAppConsentRequestsItemUserConsentRequestsFilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

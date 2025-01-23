@@ -1,6 +1,6 @@
 ---
 title: "Get incremental changes for groups"
-description: "Use delta query to discover changes without fetching the entire set of groups to compare changes. Example shows a series of requests to track changes to groups."
+description: "Learn how to use delta query in Microsoft Graph to discover changes without fetching the entire set of groups to compare changes."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 01/12/2024
+ms.date: 01/15/2025
 #customer intent: As a developer, I want to track changes to groups, so that I can build apps that process the changes according to the business requirements.
 ---
 
@@ -44,11 +44,12 @@ To track changes in the group resource, make a request and include the **delta**
 
 Take note of the following items:
 
-- The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests. If required, query parameters must be specified in the initial request.
+- The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests. If you want to use query parameters to control how much data is returned, you must include them in the initial request.
   - Only properties included in `$select` are tracked for changes. If `$select` isn't specified, all properties of the object are tracked for changes.
 - The optional `$select` query parameter is also used to show how group members can be retrieved together with group objects. This capability allows tracking of membership changes, such as when users are added or removed from groups.
 - The initial request doesn't include a state token. State tokens are used in subsequent requests.
-
+- Subsequent requests can't be modified.
+- [Limitations of query parameters in delta functions](delta-query-overview.md#optional-query-parameters).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -283,7 +284,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVA
 
 ### Final nextLink response
 
-When a `@odata.deltaLink` URL is returned, there's no more data about the existing state of group objects.  For future requests, the application uses the `@odata.deltaLink` URL to learn about other changes to groups. Save the `deltatoken` and use it in the subsequent request URL to discover more changes to groups.
+When a `@odata.deltaLink` URL is returned, there's no more data about the existing state of group objects. For future requests, the application uses the `@odata.deltaLink` URL to learn about other changes to groups. Save the `deltatoken` and use it in the subsequent request URL to discover more changes to groups.
 
 <!-- {
   "blockType": "response",
@@ -398,7 +399,7 @@ Some things to note about the example response:
 - The objects are returned with the same set of properties originally specified via the `$select` query parameter.
 - Both changed and unchanged properties are included - the **description** property has a new value, while the **displayName** property hasn't changed.
 - `members@delta` contains the following changes to the group membership.
-  - The user with ID `632f6bb2-3ec8-4c1f-9073-0027a8c6859` was removed from the group by removing their membership, as described by the `@removed` property. Objects that are removed from a group through deletion of the object aren't detected by delta queries.
+  - The user with ID `632f6bb2-3ec8-4c1f-9073-0027a8c6859` was removed from the group by removing their membership, as described by the `@removed` property. However, the delta function doesn't detect members that are removed from a group through deletion of the member object.
   - The second user with ID `37de1ae3-408f-4702-8636-20824abda004` was added to the group.
 
 A group object can contain the `@removed` annotation in the following scenarios:
@@ -447,7 +448,7 @@ Content-type: application/json
 The `members@delta` property is included in group objects by default, when the `$select` query parameter isn't specified, or when the `$select=members` parameter is explicitly specified. For groups with many members, it's possible that all members can't fit into a single response. Implement the following pattern to handle such cases.
 
 > [!NOTE]
-> This pattern applies to both the initial retrieval of group state as well as to subsequent calls to get delta changes.
+> This pattern applies to both the initial retrieval of group state and to subsequent calls to get delta changes.
 
 Let's assume you're running the following delta query - either to capture the initial full state of groups, or later on to get delta changes:
 

@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
 
-configuration := &graphsecurity.SecurityTiIndicatorItemRequestBuilderPatchRequestConfiguration{
+configuration := &graphsecurity.TiIndicatorsItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewTiIndicator()

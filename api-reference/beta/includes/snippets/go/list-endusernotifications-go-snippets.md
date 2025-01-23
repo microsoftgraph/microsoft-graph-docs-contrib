@@ -18,10 +18,10 @@ import (
 
 requestFilter := "source eq 'global'"
 
-requestParameters := &graphsecurity.SecurityAttackSimulationEndUserNotificationsRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.AttackSimulationEndUserNotificationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphsecurity.SecurityAttackSimulationEndUserNotificationsRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.AttackSimulationEndUserNotificationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

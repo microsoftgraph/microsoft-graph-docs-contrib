@@ -20,6 +20,8 @@ displayName := "My Sample Team"
 requestBody.SetDisplayName(&displayName) 
 description := "My Sample Team's Description"
 requestBody.SetDescription(&description) 
+firstChannelName := "My First Channel of the sample team"
+requestBody.SetFirstChannelName(&firstChannelName) 
 additionalData := map[string]interface{}{
 	"template@odata.bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')", 
 }

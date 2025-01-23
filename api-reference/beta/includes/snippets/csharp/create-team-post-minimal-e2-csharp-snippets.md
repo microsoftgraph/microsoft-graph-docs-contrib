@@ -13,6 +13,7 @@ var requestBody = new Team
 {
 	DisplayName = "My Sample Team",
 	Description = "My Sample Team’s Description",
+	FirstChannelName = "My First Channel of the sample team",
 	Members = new List<ConversationMember>
 	{
 		new AadUserConversationMember

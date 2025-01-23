@@ -5,6 +5,7 @@ author: "AkJo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 04/05/2024
 ---
 
 # Get chat between user and teamsApp

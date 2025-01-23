@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "zhvolosh"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/21/2024
 ---
 
 # Get passwordAuthenticationMethod

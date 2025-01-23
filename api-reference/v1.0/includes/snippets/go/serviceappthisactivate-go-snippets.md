@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer <Access-Token>")
 
-configuration := &graphsolutions.SolutionsBackupRestoreServiceAppItemActivateRequestBuilderPostRequestConfiguration{
+configuration := &graphsolutions.BackupRestoreServiceAppsItemActivateRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphsolutions.NewActivatePostRequestBody()

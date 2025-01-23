@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &grapheducation.EducationClasseItemAssignmentItemSubmissionsRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemAssignmentsItemSubmissionsRequestBuilderGetQueryParameters{
 	Expand: [] string {"outcomes"},
 }
-configuration := &grapheducation.EducationClasseItemAssignmentItemSubmissionsRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemAssignmentsItemSubmissionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

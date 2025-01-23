@@ -20,6 +20,8 @@ displayName := "My Sample Team"
 requestBody.SetDisplayName(&displayName) 
 description := "My Sample Team’s Description"
 requestBody.SetDescription(&description) 
+firstChannelName := "My First Channel of the sample team"
+requestBody.SetFirstChannelName(&firstChannelName) 
 
 
 conversationMember := graphmodels.NewAadUserConversationMember()

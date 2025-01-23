@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphsolutions.SolutionsBusinessScenarioItemPlannerTaskItemRequestBuilderPatchRequestConfiguration{
+configuration := &graphsolutions.BusinessScenariosItemPlannerTasksItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewBusinessScenarioTask()

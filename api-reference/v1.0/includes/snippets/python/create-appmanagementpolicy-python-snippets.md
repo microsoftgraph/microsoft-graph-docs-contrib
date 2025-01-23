@@ -10,6 +10,7 @@ from msgraph.generated.models.app_management_policy import AppManagementPolicy
 from msgraph.generated.models.custom_app_management_configuration import CustomAppManagementConfiguration
 from msgraph.generated.models.password_credential_configuration import PasswordCredentialConfiguration
 from msgraph.generated.models.app_credential_restriction_type import AppCredentialRestrictionType
+from msgraph.generated.models.app_management_restriction_state import AppManagementRestrictionState
 from msgraph.generated.models.key_credential_configuration import KeyCredentialConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AppManagementPolicy(
@@ -20,35 +21,27 @@ request_body = AppManagementPolicy(
 		password_credentials = [
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.PasswordAddition,
+				state = AppManagementRestrictionState.Enabled,
 				max_lifetime = None,
 				restrict_for_apps_created_after_date_time = "2019-10-19T10:37:00Z",
-				additional_data = {
-						"state" : "enabled",
-				}
 			),
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.PasswordLifetime,
+				state = AppManagementRestrictionState.Enabled,
 				max_lifetime = "P90D",
 				restrict_for_apps_created_after_date_time = "2014-10-19T10:37:00Z",
-				additional_data = {
-						"state" : "enabled",
-				}
 			),
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.SymmetricKeyAddition,
+				state = AppManagementRestrictionState.Enabled,
 				max_lifetime = None,
 				restrict_for_apps_created_after_date_time = "2019-10-19T10:37:00Z",
-				additional_data = {
-						"state" : "enabled",
-				}
 			),
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.SymmetricKeyLifetime,
+				state = AppManagementRestrictionState.Enabled,
 				max_lifetime = "P90D",
 				restrict_for_apps_created_after_date_time = "2014-10-19T10:37:00Z",
-				additional_data = {
-						"state" : "enabled",
-				}
 			),
 		],
 		key_credentials = [

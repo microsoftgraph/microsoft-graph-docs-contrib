@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Permanently remove a [fileStorageContainer](../resources/filestoragecontainer.md) from the deleted container collection. Removing a file storage container with this API permanently removes it from the deleted container collection. Therefore, it can't be restored later. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

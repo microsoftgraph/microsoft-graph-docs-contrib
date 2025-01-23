@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphonpremisespublishingprofiles.OnPremisesPublishingProfileItemAgentsRequestBuilderGetQueryParameters{
+requestParameters := &graphonpremisespublishingprofiles.ItemAgentsRequestBuilderGetQueryParameters{
 	Expand: [] string {"agentGroups"},
 }
-configuration := &graphonpremisespublishingprofiles.OnPremisesPublishingProfileItemAgentsRequestBuilderGetRequestConfiguration{
+configuration := &graphonpremisespublishingprofiles.ItemAgentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

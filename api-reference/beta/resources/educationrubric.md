@@ -6,6 +6,7 @@ author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "resourcePageType"
 toc.title: Rubric
+ms.date: 07/24/2024
 ---
 
 # educationRubric resource type

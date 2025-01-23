@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "Sureshpadimi88"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 07/24/2024
 ---
 
 # List rubrics

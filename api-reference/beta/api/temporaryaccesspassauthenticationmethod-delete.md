@@ -5,6 +5,7 @@ author: "tilarso"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/21/2024
 ---
 
 # Delete temporaryAccessPassAuthenticationMethod

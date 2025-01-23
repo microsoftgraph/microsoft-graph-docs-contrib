@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "Specifies in which order a content type appears in the selection UI."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # contentTypeOrder resource type

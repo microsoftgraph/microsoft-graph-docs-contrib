@@ -5,7 +5,7 @@ author: "keylimesoda"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 09/18/2024
+ms.date: 12/23/2024
 ---
 
 # Restore deleted item (directory object)
@@ -28,7 +28,7 @@ The following table shows the least privileged permission or permissions require
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
-| [user](../resources/user.md) | User.ReadWrite.All | Not supported. | User.ReadWrite.All |
+| [user](../resources/user.md) | User.DeleteRestore.All | Not supported. | User.DeleteRestore.All |
 
 [!INCLUDE [rbac-deleted-items-restore-apis](../includes/rbac-for-apis/rbac-deleted-items-restore-apis.md)]
 
@@ -209,6 +209,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+    "@odata.type": "#microsoft.graph.user",
     "id": "78bf875b-9343-4edc-9130-0d3958113563",
     "businessPhones": [],
     "displayName": "SampleUser",

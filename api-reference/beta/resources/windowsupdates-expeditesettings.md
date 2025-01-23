@@ -5,6 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: resourcePageType
+ms.date: 09/09/2024
 ---
 
 # expediteSettings resource type

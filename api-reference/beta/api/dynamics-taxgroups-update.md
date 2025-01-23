@@ -7,6 +7,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Update taxGroups

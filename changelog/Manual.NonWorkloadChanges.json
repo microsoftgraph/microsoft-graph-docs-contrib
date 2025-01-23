@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "c0cc0f29-7750-4d31-be4d-efe86835e352",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Microsoft Graph activity logs",
+          "ChangeType": "Addition",
+          "Description": "[Microsoft Graph activity logs](https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview) are now available in China operated by 21Vianet.",
+          "Target": "Microsoft Graph activity logs"
+        }
+      ],
+      "Id": "c0cc0f29-7750-4d31-be4d-efe86835e352",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-16T00:00:00",
+      "WorkloadArea": "Microsoft Graph activity logs",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bf84f9b9-7809-48b4-aeeb-4db380be2b4b",
           "ApiChange": "Resource",
           "ChangedApiName": "changeNotification",

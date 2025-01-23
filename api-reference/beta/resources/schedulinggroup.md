@@ -5,6 +5,7 @@ author: shanemalone
 ms.localizationpriority: high
 ms.subservice: teams
 doc_type: resourcePageType
+ms.date: 07/08/2024
 ---
 
 # schedulingGroup resource type
@@ -37,6 +38,9 @@ A logical grouping of users in a [schedule](schedule.md) (usually by role).
 | lastModifiedBy       | [identitySet](identityset.md) | The identity that last updated this `schedulingGroup`. |
 | lastModifiedDateTime | `DateTimeOffset`              | The time stamp in which this `schedulingGroup` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.  |
 | userIds              | `collection(string)`          | The list of user IDs that are a member of the `schedulingGroup`. Required.   |
+
+## Relationships
+None.
 
 ## JSON representation
 

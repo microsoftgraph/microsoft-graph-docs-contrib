@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 03/21/2024
 ---
 
 # informationalUrl resource type
@@ -24,6 +25,9 @@ Basic profile information of the application.
 |privacyStatementUrl|String| Link to the application's privacy statement. For example, https://www.contoso.com/app/privacy |
 |supportUrl|String| Link to the application's support page. For example, https://www.contoso.com/app/support |
 |termsOfServiceUrl|String| Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

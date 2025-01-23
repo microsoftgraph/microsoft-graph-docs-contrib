@@ -23,11 +23,11 @@ headers.Add("Prefer", "outlook.body-content-type=\"text\"")
 requestStartDateTime := "2017-01-01T19:00:00-08:00"
 requestEndDateTime := "2017-10-01T19:00:00.00-08:00"
 
-requestParameters := &graphgroups.GroupItemCalendarViewRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.ItemCalendarViewRequestBuilderGetQueryParameters{
 	StartDateTime: &requestStartDateTime,
 	EndDateTime: &requestEndDateTime,
 }
-configuration := &graphgroups.GroupItemCalendarViewRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.ItemCalendarViewRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemOnlineMeetingItemAttendanceReportItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.OnlineMeetingsItemAttendanceReportsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"attendanceRecords"},
 }
-configuration := &graphusers.ItemOnlineMeetingItemAttendanceReportItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.OnlineMeetingsItemAttendanceReportsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "preetikr"
 doc_type: conceptualPageType
 ms.subservice: "security"
+ms.date: 10/31/2024
 ---
 
 # Use the Microsoft Graph security API

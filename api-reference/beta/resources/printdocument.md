@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printDocument resource type
@@ -29,6 +30,9 @@ Represents a document being printed.
 |displayName|String|The document's name. Read-only.|
 |contentType|String|The document's content (MIME) type. Read-only.|
 |size|Int64|The document's size in bytes. Read-only.|
+
+## Relationships
+None.
 
 ## JSON representation
 

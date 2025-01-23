@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # programResource resource type (deprecated)
@@ -24,6 +25,9 @@ This type inherits from [identity](identity.md).
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
 | type | String | Type of the resource, indicating whether it is a group or an app. |
+
+## Relationships
+None.
 
 ## JSON representation
 

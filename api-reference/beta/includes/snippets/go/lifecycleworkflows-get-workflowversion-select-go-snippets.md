@@ -15,11 +15,11 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowItemVersionItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.LifecycleWorkflowsWorkflowsItemVersionsItemRequestBuilderGetQueryParameters{
 	Select: [] string {"category","displayName","versionNumber","executionConditions"},
 	Expand: [] string {"tasks"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowItemVersionItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.LifecycleWorkflowsWorkflowsItemVersionsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

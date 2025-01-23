@@ -1,11 +1,11 @@
 ---
 title: "Get shift"
-description: "Get a shift by ID."
-author: "akumar39"
+description: "Retrieve the properties and relationships of a shift object by ID."
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 04/04/2024
 ---
 
 # Get shift
@@ -115,21 +115,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"id": "SHFT_ca485cdd-a42c-4b93-9e6a-6fa54fd45fe1",
-	"createdDateTime": "2019-06-06T20:15:38.9Z",
-	"lastModifiedDateTime": "2019-11-18T01:12:08.318Z",
-	"schedulingGroupId": "TAG_d18fd675-3ac8-41b2-8038-d17fdac8b0d3",
-	"userId": "a7b0c8c4-3f5c-492f-ab13-40f0e0f0ffa8",
-	"draftShift": null,
-	"lastModifiedBy": {
-		"application": null,
-		"device": null,
-		"conversation": null,
-		"user": {
-			"id": "1c717a55-febd-4850-b5f6-101f3a29972c",
-			"displayName": "Sumanth Lingom"
-		}
-	}
+  "id": "SHFT_ca485cdd-a42c-4b93-9e6a-6fa54fd45fe1",
+  "createdDateTime": "2019-06-06T20:15:38.9Z",
+  "lastModifiedDateTime": "2019-11-18T01:12:08.318Z",
+  "schedulingGroupId": "TAG_d18fd675-3ac8-41b2-8038-d17fdac8b0d3",
+  "userId": "a7b0c8c4-3f5c-492f-ab13-40f0e0f0ffa8",
+  "draftShift": null,
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "conversation": null,
+    "user": {
+      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+      "displayName": "John Doe"
+    }
+  },
+  "isStagedForDeletion": false
 }
 ```
 

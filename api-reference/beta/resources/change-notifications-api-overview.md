@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: conceptualPageType
 ms.subservice: change-notifications
+ms.date: 06/07/2024
 ---
 
 # Use the Microsoft Graph API to get change notifications

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "malabikaroy"
 ms.subservice: "viva-learning"
 doc_type: conceptualPageType
+ms.date: 05/01/2024
 ---
 
 # Use the employee learning API to integrate with Viva Learning
