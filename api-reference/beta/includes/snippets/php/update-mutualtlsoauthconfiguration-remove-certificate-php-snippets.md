@@ -15,10 +15,10 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new MutualTlsOauthConfiguration();
 $certificateAuthoritiesCertificateAuthority1 = new CertificateAuthority();
 $certificateAuthoritiesCertificateAuthority1->setIsRootAuthority(true);
-$certificateAuthoritiesCertificateAuthority1->setCertificateRevocationListUrl('http://acme.com/root.crl');
+$certificateAuthoritiesCertificateAuthority1->setCertificateRevocationListUrl('http://LakeshoreRetail.com/root.crl');
 $certificateAuthoritiesCertificateAuthority1->setDeltaCertificateRevocationListUrl(null);
 $certificateAuthoritiesCertificateAuthority1->setCertificate(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('Binary')));
-$certificateAuthoritiesCertificateAuthority1->setIssuer('acme Inc');
+$certificateAuthoritiesCertificateAuthority1->setIssuer('Lakeshore Retail');
 $additionalData = [
 	'issuerSubjectkeyIdentifier' => 'SKI',
 ];
