@@ -36,7 +36,6 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems?$filter=conta
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}
 ```
 
-
 ---
 
 <!-- start the azure-authorization-systems zone -->
@@ -1364,7 +1363,6 @@ Content-Type: application/json
 
 ::: zone-end
 <!-- end the azure-authorization-systems zone -->
----
 
 <!-- start the aws-authorization-systems zone -->
 ::: zone pivot="aws-authorization-systems"
@@ -2681,7 +2679,6 @@ Content-Type: application/json
 
 ::: zone-end
 <!-- end the aws-authorization-systems zone -->
----
 
 <!-- start the gcp-authorization-systems zone -->
 ::: zone pivot="gcp-authorization-systems"
@@ -3745,6 +3742,7 @@ Content-Type: application/json
 
 ::: zone-end
 <!-- end the gcp-authorization-systems zone -->
+
 ---
 
 <!-- start the shared content-->
