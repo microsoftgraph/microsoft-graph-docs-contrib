@@ -120,7 +120,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "microsoft.graph.cloudPcConnectivityEvent",
-      "activityId": "6b39fae5-0497-44cd-b0d1-19ffef7940e0",
+      "activityId": "00000000-0000-0000-0000-000000000000",
       "eventDateTime": "2022-03-23T18:40:00Z",
       "eventName": "DomainJoinCheck",
       "eventResult": "failure",
