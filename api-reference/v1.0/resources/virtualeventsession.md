@@ -38,6 +38,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the virtual event session. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| chatRestrictions | [chatrestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | endDateTime           | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session end time.   |
 | id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
@@ -102,6 +103,7 @@ The following JSON representation shows the resource type.
   "allowedLobbyAdmitters": "String",
   "allowedPresenters": "String",
   "allowMeetingChat": "String",
+  "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
   "allowParticipantsToChangeName": "Boolean",
   "allowTeamworkReactions": "Boolean",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
