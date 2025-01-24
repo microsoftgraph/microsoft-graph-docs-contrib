@@ -40,7 +40,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | availability        | String collection                             | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`.                                                                                                           |
 | id                  | String                                        | The unique identifier for the user.                                                                                                                                                                                                                                                                             |
 | outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The out of office settings for a user.                                                                                                                                                                                                                                                     |
-| sequenceNumber | string | The lexicographically sortable string stamp that represents the version of a **presence** object. |
+| sequenceNumber | String | The lexicographically sortable String stamp that represents the version of a **presence** object. |
 | statusMessage | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
 
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
