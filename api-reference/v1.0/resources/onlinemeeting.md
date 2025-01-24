@@ -105,14 +105,6 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | none               | No meeting chat history is shared.                                     |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
 
-### meetingLiveShareOptions values
-
-| Value              | Description                                                            |
-| ------------------ | ---------------------------------------------------------------------- |
-| enabled            | Meeting live share is enabled.                                         |
-| disabled           | Meeting live share is disabled.                                        |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
-
 ## Relationships
 
 | Relationship | Type | Description |
