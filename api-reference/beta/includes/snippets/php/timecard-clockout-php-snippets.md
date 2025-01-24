@@ -16,10 +16,10 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new ClockOutPostRequestBody();
 $notes = new ItemBody();
 $notes->setContentType(new BodyType('text'));
-$notes->setContent('clock out smaple notes');
+$notes->setContent('clocking out');
 $requestBody->setNotes($notes);
 $additionalData = [
-	'atAprovedLocation' => true,
+	'isAtApprovedLocation' => true,
 ];
 $requestBody->setAdditionalData($additionalData);
 
