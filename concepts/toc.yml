@@ -676,12 +676,8 @@ items:
           displayName: PIM alerts, privileged identity management
     - name: Multicloud permissions management (preview)
       items:
-      - name: AWS authorization systems API operations
-        href: permissions-management-how-to-authorization-system-aws.md
-      - name: Azure authorization systems API operations
-        href: permissions-management-how-to-authorization-system-azure.md
-      - name: GCP authorization systems API operations
-        href: permissions-management-how-to-authorization-system-gcp.md
+      - name: API operations reference
+        href: permissions-management-howto.md
     - name: Network access (preview)
       items:
       - name: Configure Microsoft Entra Private Access
