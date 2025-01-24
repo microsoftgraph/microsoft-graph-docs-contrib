@@ -47,7 +47,7 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 | replace         | The pre-existing file item will be deleted and replaced with the new item when a conflict occurs. This option is only supported for file items. The new item has the same name as the old one. The old item's history is deleted.  |
 | rename          | Appends the lowest integer that guarantees uniqueness to the name of the new file or folder and completes the operation.  |
 
-In the case where `@microsoft.graph.conflictBehavior=replace` is used on folder items, this API will return a `202 Accepted` response. However querying the monitoring url will report a `nameAlreadyExists` error. If this option is used in conjunction with the `childrenOnly` parameter, similar behavior will be observed if there is at least 1 folder item amongst the children of the source item.
+If you specify `@microsoft.graph.conflictBehavior=replace` for a source folder item, this API will return a `202 Accepted` response. In this case, querying the monitoring url will report a `nameAlreadyExists` error. If you specify this parameter with the `childrenOnly` parameter, a nameAlreadyExists error will occur if there are any folder items in the source item's children.
 
 >[!NOTE]
 >The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
@@ -145,7 +145,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-### Example 2: Copy the children in a folder
+### Example 2: Copy the child items in a folder
 
 The following example copies the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
 The `childrenOnly` parameter is set to true.
@@ -228,7 +228,7 @@ To receive a status report similar to the one in the following example, GET the 
 }
 ```
 
-### Example 3: Copy a file item to a folder with a pre-existing item with the same name
+### Example 3: Failure to copy a file item to a folder with a pre-existing item with the same name
 
 The following example attempts to copy a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
 The destination already has a file with the same name. The operation is accepted but it encounters a failure during processing.
@@ -306,11 +306,12 @@ Checking the monitor url yields the following the status report.
   }
 }
 ```
-To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters).
 
-### Example 4: Copy a file item to a folder with a pre-existing item with the same name. Resolve the name conflict by using the @microsoft.graph.conflictBehavior query parameter
+To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters) as seen in the [next example](#example-4-copy-a-file-item-to-a-folder-with-a-pre-existing-item-with-the-same-name-by-specifying-the-microsoftgraphconflictbehavior-query-parameter) .
 
-The following example attempts to copy a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
+### Example 4: Copy a file item to a folder with a pre-existing item with the same name by specifying the @microsoft.graph.conflictBehavior query parameter
+
+The following example copies a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
 The destination already has a file with the same name. The query parameter `@microsoft.graph.conflictBehavior` is set to replace. The possible values are `replace`, `rename`, or `fail`.
 
 #### Request
@@ -373,10 +374,10 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-### Example 5: Copy the children in a folder to a destination with name conflicts. Attempt to use @microsoft.graph.conflictBehavior to resolve the name conflicts
+### Example 5: Failure to copy child items in a source folder to a target folder by specifying @microsoft.graph.conflictBehavior as replace. One of the child items is a folder item
 
-The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. One of the child items is a folder item. The destination
-has items with colliding names to the children at the source folder. The request attempts to resolve the name conflict by setting the optional query parameter `@microsoft.graph.conflictBehavior` to replace. The request is accepted but the monitoring url reports failures. Instead use `rename` or `fail` if at least one of the children is a folder item.
+The following example attempts to copy the child items  in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. One of the child items is a folder item. The destination
+may have items with colliding names to the children at the source folder. The request attempts to resolve potential name conflicts by setting the optional query parameter `@microsoft.graph.conflictBehavior` to replace. The request is accepted but the monitoring url reports failures. Instead use `rename` or `fail` if at least one of the children is a folder item.
 
 #### Request
 <!-- { "blockType": "request", "name": "copy-item-conflicts", "scopes": "files.readwrite", "target": "action" } -->
@@ -441,7 +442,7 @@ Visiting the monitoring URL yields a status report similar to the following exam
 }
 ```
 
-### Example 6: Copy operation preserve version history
+### Example 6: Copy item to a destination folder whilst preserving it's version history
 
 The following example copies the item identified by `{item-id}` into a folder identified by the `driveId` and `id` values. It also copies the version history to the target folder. If the source file contains 20 versions and the destination version limit setting is 10, the copy only transfers the maximum number of versions the destination site allows, starting from the most recent.
 
@@ -508,9 +509,9 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 ```
 
-### Example 7: Copy the children in a folder from root
+### Example 7: Failure to copy the child items in a root folder to a destination folder without specifying the childreOnly parameter as true
 
-The following example attempts to copy the children in the folder identified by `{item-id}`, also known as "root," into a folder identified by the `driveId` and `id` values.
+The following example attempts to copy the child items in the folder identified by `{item-id}`, also known as "root", into a folder identified by the `driveId` and `id` values.
 The `childrenOnly` parameter isn't set to true.
 The request fails because the copy operation can't be done on the root folder.
 
@@ -531,7 +532,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the response.
+Visiting the monitoring URL yields a status report similar to the following example.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -555,10 +556,10 @@ Content-Length: 283
 ```
 To resolve this error, set the `childrenOnly` parameter to true.
 
-### Example 8: Copy the children in a folder where source has more than 150 direct children
+### Example 8: Failure to copy more than 150 direct child items from a folder
 
 The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
-The `childrenOnly` parameter is set to true. The drive item identified by `{item-id}` contains more than 150 direct children.
+The `childrenOnly` parameter is set to true. The source folder item identified by `{item-id}` contains more than 150 direct children.
 The request fails because the limit is 150 direct children.
 
 #### Request
@@ -579,7 +580,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the response.
+Visiting the monitoring URL yields a status report similar to the following example.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -604,9 +605,9 @@ Content-Length: 341
 ```
 To resolve this error, reorganize the source folder structure only to have 150 children.
 
-### Example 9: Copy the children where the source item is a file
+### Example 9: Failure to copy the child items of a file item
 
-The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
+The following example attempts to copy the children of a source item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
 The `{item-id}` refers to a file, not a folder. The `childrenOnly` parameter is set to true.
 The request fails since the `{item-id}` is a non-folder driveItem.
 
@@ -628,7 +629,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the response.
+Visiting the monitoring URL yields a status report similar to the following example.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -651,11 +652,9 @@ Content-Length: 290
 }
 ```
 
-### Example 10: Copy the children in a folder with both the childrenOnly and name request body parameters
+### Example 10: Failure to copy the child items in a source folder by specifying both the childrenOnly and name request body parameters
 
-The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
-The requets body sets the`childrenOnly` parameter to true and also specifies a `name` value.
-The request fails because `childrenOnly` and `name` can't be used together.
+The following example attempts to copy the child items  in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. The request body sets the `childrenOnly` parameter to true and also specifies a `name` value. The request fails as the `childrenOnly` and `name` parameters are mutually exclusive.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-9" } -->
@@ -676,7 +675,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the response.
+Visiting the monitoring URL yields a status report similar to the following example.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -718,5 +717,3 @@ For error information, see [Error responses][error-response].
   ]
 }
 -->
-
-
