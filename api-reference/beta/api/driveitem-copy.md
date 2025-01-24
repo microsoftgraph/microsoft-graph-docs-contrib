@@ -43,9 +43,9 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 
 | Value           | Description                                    |
 |:----------------|:---------------------------------------------- |
-| fail            | Default behavior if option is not specified. Entire operation will fail.  |
-| replace         | Only supported for file items.This will delete the pre-existing item at the destination and then create a new item with the same name. History of the deleted item will not be retained.  |
-| rename          | Amends the name of the new items at the destination by appending the lowest integer that guarantees uniqueness to the name of the target file or folder.  |
+| fail            | The entire operation will fail when a conflict occurs. This behavior is the default if no option is specified.  |
+| replace         | The pre-existing file item will be deleted and replaced with the new item when a conflict occurs. This option is only supported for file items. The new item has the same name as the old one. The old item's history is deleted.  |
+| rename          | Appends the lowest integer that guarantees uniqueness to the name of the new file or folder and completes the operation.  |
 
 In the case where `@microsoft.graph.conflictBehavior=replace` is used on folder items, this API will return a `202 Accepted` response. However querying the monitoring url will report a `nameAlreadyExists` error. If this option is used in conjunction with the `childrenOnly` parameter, similar behavior will be observed if there is at least 1 folder item amongst the children of the source item.
 
