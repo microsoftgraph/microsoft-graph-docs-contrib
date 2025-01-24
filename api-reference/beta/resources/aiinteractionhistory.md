@@ -43,6 +43,6 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "interactions": [{"@odata.type": "microsoft.graph.aiinteraction"}]
+  "@odata.type": "#microsoft.graph.aiInteractionHistory"
 }
 ```
