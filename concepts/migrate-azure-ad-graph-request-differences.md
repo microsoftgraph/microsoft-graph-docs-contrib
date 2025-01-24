@@ -45,9 +45,9 @@ Suppose you want a list of all users with names beginning with "Dan" in the Cont
 |---------|---------|
 |`GET https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6`  |  `GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`       |
 
-### Primary key identifiers: objectId vs Id
+### Primary key identifiers: objectId vs id
 
-In Azure AD Graph, all entity resource types have a unique identifier (or primary key) called **objectId**.  For most entities (unless otherwise stated) this identifier is called **Id** in Microsoft Graph.
+In Azure AD Graph, all entity resource types have a unique identifier (or primary key) called **objectId**.  For most entities (unless otherwise stated) this identifier is called **id** in Microsoft Graph.
 
 In addition to the primary key, some entities support an alternate key identifier. For example, the **application** and **servicePrincipal** resources in Microsoft Graph support an alternate key identifier for their **appId** property.
 
