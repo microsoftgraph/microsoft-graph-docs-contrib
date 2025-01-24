@@ -93,7 +93,7 @@ The last column indicates whether updating this property takes effect for an in-
 | allowBreakoutRooms          | Boolean                                                    | Indicates whether breakout rooms are enabled for the meeting.                       | No                                  |
 | allowedLobbyAdmitters       | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. | Yes                                 |
 | allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes                                 |
-| allowLiveShare              | Boolean                                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
+| allowLiveShare              | meetingLiveShareOptions                                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
 | allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                                 |
 | allowPowerPointSharing      | Boolean                                                    | Indicates whether PowerPoint live is enabled for the meeting.                       | No                                  |
 | allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                                 |
@@ -108,7 +108,7 @@ The last column indicates whether updating this property takes effect for an in-
 
 > [!NOTE]
 >
->- For the list of possible values for **allowedPresenters** and **allowMeetingChat**, see [onlineMeeting](../resources/onlinemeeting.md).
+>- For the list of possible values for **allowedPresenters**, **allowLiveShare**, and **allowMeetingChat**, see [onlineMeeting](../resources/onlinemeeting.md).
 >- When updating the value of **allowedPresenters** to `roleIsPresenter`, include a full list of **attendees** with specified attendees' **role** set to `presenter` in the request body.
 
 ## Response
