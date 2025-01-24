@@ -138,6 +138,8 @@ This resource supports:
 | [Upgrade app installed for user](../api/userteamwork-teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user. |
 | [Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [Chat](chat.md) | Lists one-on-one chat between the user and the app. |
 |[List permission grants](../api/user-list-permissiongrants.md)| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) of a [user](../resources/user.md). |
+| **Terms of use agreements** |||
+| [Agreement acceptances for a user](../api/user-list-agreementacceptances.md) | [agreementAcceptance](agreementacceptance.md) | Retrieve a user's agreementAcceptance objects. |
 | **To-do tasks** |  |  |
 | [List tasks](../api/todotasklist-list-tasks.md) | [todoTask](todotask.md) collection | Get all the [todoTask](todotask.md) resources in the specified list. |
 | [Create task](../api/todotasklist-post-tasks.md) | [todoTask](todotask.md) | Create a [todoTask](todotask.md) in the specified task list. |
