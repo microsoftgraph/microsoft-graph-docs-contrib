@@ -20,12 +20,12 @@ requestBody := graphteams.NewStartBreakPostRequestBody()
 notes := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
 notes.SetContentType(&contentType) 
-content := "start break smaple notes"
+content := "starting break"
 notes.SetContent(&content) 
 requestBody.SetNotes(notes)
 additionalData := map[string]interface{}{
-	atAprovedLocation := true
-requestBody.SetAtAprovedLocation(&atAprovedLocation) 
+	isAtApprovedLocation := true
+requestBody.SetIsAtApprovedLocation(&isAtApprovedLocation) 
 }
 requestBody.SetAdditionalData(additionalData)
 
