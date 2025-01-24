@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the properties of the specified [onlineMeeting](../resources/onlinemeeting.md) object.
 
-Please see [Request body](#request-body) section for the list of properties that support updating.
+For the list of properties that support updating, see the [Request body](#request-body) section.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -65,7 +65,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 > [!NOTE]
 >
-> - **userId** is the object ID of a user in the [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `userId` is the object ID of a user in the [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Request headers
@@ -77,10 +77,10 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 ## Request body
 
-The following table lists the properties that can be updated. In the request body, include only the properties that need updating, with the following exceptions:
+The following table lists the properties that can be updated. In the request body, supply *only* the values for properties that should be updated, with the following exceptions:
 
 - Adjusting the start or end date/time of an online meeting always requires both **startDateTime** and **endDateTime** properties in the request body.
-- The **organizer** field of the **participants** property cannot be updated. The organizer of the meeting cannot be modified after the meeting is created.
+- The **organizer** field of the **participants** property can't be updated. The organizer of the meeting can't be modified after the meeting is created.
 - Adjusting the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
 
 The last column indicates whether updating this property will take effect for an in-progress meeting.
