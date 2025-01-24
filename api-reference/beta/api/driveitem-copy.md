@@ -292,7 +292,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-Checking the monitor url yields the following the status report.
+The following example shows an example status report obtained by visiting the URL in the value of the `Location` field in the response to the initial request.
 ```http
 {
   "id": "46cf980a-28e1-4623-b8d0-11fc5278efe6",
