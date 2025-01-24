@@ -2541,6 +2541,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **interactionHistory** relationship to the [copilotRoot](https://learn.microsoft.com/en-us/graph/api/resources/copilotRoot?view=graph-rest-beta) resource.",
           "Target": "copilotRoot"
+        },
+        {
+          "Id": "51235d32-f43b-4fb8-a418-75ea80730a40",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "interactions",
+          "ChangeType": "Addition",
+          "Description": "Removed the **interactions** relationship from the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiinteractionhistory?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionHistory"
         }
       ],
       "Id": "51235d32-f43b-4fb8-a418-75ea80730a40",
