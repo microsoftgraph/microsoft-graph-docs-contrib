@@ -47,8 +47,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowPowerPointSharing | Boolean | Indicates whether PowerPoint live is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
-| allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowRecording | Boolean | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).                                                  |
@@ -71,7 +71,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).                                                                                 |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | attendeeReport (deprecated) | Stream | The content stream of the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
-| broadcastSettings (deprecated)    | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | Settings related to a live event.                                                                  |
+| broadcastSettings (deprecated)    | [broadcastMeetingSettings](broadcastmeetingsettings.md)                      | Settings related to a live event.                                                                  |
 | isBroadcast (deprecated) | Boolean                                       | Indicates whether this meeting is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events).                  |
 
 ### onlineMeetingPresenters values
@@ -137,15 +137,25 @@ The following JSON representation shows the resource type.
 {
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean",
+  "allowBreakoutRooms": "Boolean",
   "allowedPresenters": "String",
+  "allowLiveShare": "String",
+  "allowMeetingChat": "String",
+  "allowParticipantsToChangeName": "Boolean",
+  "allowPowerPointSharing": "Boolean",
+  "allowRecording": "Boolean",
+  "allowTeamworkReactions": "Boolean",
+  "allowTranscription": "Boolean",
+  "allowWhiteboard": "Boolean",
+  "attendeeReport": "Stream",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastMeetingSettings"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
-  "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
+  "chatRestrictions": {"@odata.type": "microsoft.graph.chatRestrictions"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
+  "isBroadcast": "Boolean",
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
@@ -154,8 +164,10 @@ The following JSON representation shows the resource type.
   "meetingTemplateId": "String",
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
+  "shareMeetingChatHistoryDefault": "String",
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "videoTeleconferenceId": "String",
+  "watermarkProtection": "String"
 }
 ```
