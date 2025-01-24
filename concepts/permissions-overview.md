@@ -112,7 +112,7 @@ Container objects such as groups support members of various types, for example u
 
 This principle is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type. Examples include `/groups/{id}/members`, `/users/{id}/memberOf`, and `me/ownedObjects`.
 
-For example, a group can have users, groups, applications, service principals, devices, and contacts as members. An app is granted the *GroupMember.Read.All* least privileged permission to [List group members](/graph/api/group-list-members). In the response object, only the **id** and **@odata.type** properties are populated for all the members that are returned. The other properties are indicated as `null`. For this API, and to return data for the other object types, the app needs the following additional permissions:
+For example, a group can have users, groups, applications, service principals, devices, and contacts as members. An app is granted the *GroupMember.Read.All* least privileged permission to [List group members](/graph/api/group-list-members). In the response object, only the **id** and **@odata.type** properties are populated for all the members that are returned. The other properties are indicated as `null`. For this API, and to return more information for the group's members, the app needs the following additional permissions:
 - To read the basic properties of a group's members that are users, *User.ReadBasic.All* is the least privileged permission.
 - To read the basic properties of a group's members that are groups, *GroupMember.Read.All* is the least privileged permission.
 - To read the basic properties of a group's members that are devices, *Device.Read.All* is the least privileged permission.
