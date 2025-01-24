@@ -230,8 +230,7 @@ To receive a status report similar to the one in the following example, GET the 
 
 ### Example 3: Failure to copy a file item to a folder with a pre-existing item with the same name
 
-The following example attempts to copy a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
-The destination already has a file with the same name. The operation is accepted but it encounters a failure during processing.
+The following example attempts to copy a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` property values. The destination already has a file with the same name. However, because the request doesn't specify a `@microsoft.graph.conflictBehavior` query parameter value of either `replace` or `rename`, the operation is accepted but fails during processing.
 
 #### Request
 # [HTTP](#tab/http)
