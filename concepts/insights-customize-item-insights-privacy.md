@@ -12,7 +12,7 @@ ms.date: 11/07/2024
 
 Item insights are relationships that Microsoft calculates using advanced machine learning techniques. When users collaborate over documents, SharePoint sites and lists, Teams chats and channels, Microsoft aggregates these activities as signals. From these signals, Microsoft derives insights to make user-centric content recommendations for users in an organization.
 
-Item insights can help users quickly find files that matter to them, such as in the **Recommended** experience in Office.com. Users can see potentially useful content to which they have access but might not have seen before in the **Discover** area in Outlook Mobile or in the **Recent** section undar a name in Bing. Users can easily discover their recent files from personalized insights such as **Recent files** in a persona card in Bing and **Recent** in Microsoft 365 apps.
+Item insights can help users quickly find files that matter to them, such as in the **Recommended** experience in Microsoft365.com. Users can see potentially useful content to which they have access but might not have seen before in the **Discover** area in Outlook Mobile or the **Recent** section under a name in Bing. Users can easily discover their recent files from personalized insights such as **Recent files** in a persona card in Bing and **Recent** in Microsoft 365 apps.
 
 These item insights reflect only content to which users have access. No user gets recommendations to content that they can't access.
 
@@ -37,7 +37,7 @@ The rest of this article describes how an administrator can customize item insig
 
 ## Background
 
-At the time of first release in 2014, Office Graph was a backend service for Delve. (Delve was deprecated in December 2024.) They shared a set of privacy controls over both the Office Graph insights and the Delve user experience. Office Graph has since become more independent and powerful, as part of every Microsoft 365 experience and of Microsoft Graph. To offer a coherent Microsoft Graph schema, Microsoft introduced an [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-1.0&preserve-view=true) entity, which inherits all the properties of the pre-existing [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0&preserve-view=true) resource, and has kept **officeGraphInsights** around for backward compatibility. The introduction of **itemInsights** also decouples the privacy story for the two independent pieces.
+At the time of its first release in 2014, Office Graph was a backend service for Delve. (Delve was deprecated in December 2024.) They shared a set of privacy controls over both the Office Graph insights and the Delve user experience. Office Graph has since become more independent and powerful, as part of every Microsoft 365 experience and of Microsoft Graph. To offer a coherent Microsoft Graph schema, Microsoft introduced an [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-1.0&preserve-view=true) entity, which inherits all the properties of the pre-existing [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0&preserve-view=true) resource, and has kept **officeGraphInsights** around for backward compatibility. The introduction of **itemInsights** also decouples the privacy story for the two independent pieces.
 
 Although existing apps can continue to use **officeGraphInsights**, they should upgrade to **itemInsights** to gain the flexibility to fine-tune item insights in Office Graph and Delve.
 
