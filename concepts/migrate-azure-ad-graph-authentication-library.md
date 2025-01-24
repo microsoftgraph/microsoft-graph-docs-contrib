@@ -42,7 +42,7 @@ When you switch your app over to MSAL, you need to make a few changes, including
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
 ```
 
-This expression restricts the permission scopes to those configured during the application's registration in the Microsoft Entra admin center, preventing existing users from needing to re-consent to your app.
+This expression restricts the permission scopes to those configured on the app registration in the Microsoft Entra admin center, preventing existing users from needing to re-consent to your app.
 
 Learn [.NET client library](migrate-azure-ad-graph-client-libraries.md) differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph.
 
