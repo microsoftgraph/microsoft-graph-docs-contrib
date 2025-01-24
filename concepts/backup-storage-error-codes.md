@@ -251,21 +251,21 @@ The following table lists the possible error and response code that can be retur
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleCreateRequest|Can't process the request because it's malformed or incorrect.|Invalid create request.|
-|400|InvalidRuleExpressionGroupLimitExceeded|Rule expression containing more than 100 group ids is not allowed.|Expression contains more group id's than imposed limit.|
-|400|InvalidRuleExpression|Value cannot be null or Invalid expression.|Expression cannot is not valid and cannot be parsed.|
+|400|InvalidRuleExpressionGroupLimitExceeded|Rule expression containing more than 100 group ids is not allowed.|Expression contains more group Ids than imposed limit.|
+|400|InvalidRuleExpression|Value cannot be null or Invalid expression.|Expression is not valid and cannot be parsed.|
 
 ## Update inclusion rule API errors
 
-The error codes in this section apply to the following API:
+The error codes in this section apply to the following APIs:
 
 - [Update MailboxProtectionRule](/graph/api/protectionrulebase-update)
 - [Update DriveProtectionRule](/graph/api/protectionrulebase-update)
 
-The following table lists the possible error and response code that can be returned.
+The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
-|400|InvalidRuleExpression|Value cannot be null or Invalid expression|Expression cannot is not valid and cannot be parsed.|
+|400|InvalidRuleExpression|Value cannot be null or Invalid expression|Expression is not valid and cannot be parsed.|
 |400|PatchNotAllowedForStaticRule|Patch operation is not allowed for static rule|Invalid update request.|
 |400|InvalidProtectionRuleStatusForDynamicRuleEdit|Patch operation is not allowed in current state.|Patch operation is not allowed in deleteRequested state|
 |400|InvalidProtectionRulePatchRequest|IsAutoApplyEnabled parameter is not supported in patch request.|`IsAutoApplyEnabled` can be supplied only at the time of creation. Conversion of static rule to dynamic rule and vice-versa is not allowed.|
@@ -287,7 +287,7 @@ The following table lists the possible error and response code that can be retur
 |400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is invalid.|
 |400|InvalidProtectionRuleStatusForDynamicRuleEdit|Patch operation is not allowed in current state.|Patch operation is not allowed in deleteRequested state|
 |404|ProtectionRuleNotFound|Protection rule with given ID doesn't exists.|Rule ID given is either wrong or the rule is deleted.|
-
+|400|InvalidProtectionRuleStatusForDynamicRuleDeleteAndUnprotectAll|DeleteAndUnprotect operation is not allowed in current state.|DeleteAndUnprotect operation is not allowed in deleteRequested state
 ## Run inclusion rule API errors
 
 The error codes in this section apply to the following API:
@@ -330,7 +330,7 @@ The following table lists the possible error and response code that can be retur
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is invalid.|
 |404|ProtectionRuleNotFound|Protection rule with given ID doesn't exists.|Rule ID given is either wrong or the rule is deleted.|
-|400|InvalidProtectionRuleStatusForDeletion|Delete operation is not allowed in current state.|Invalid state to invoke delete operation.|
+|422|InvalidProtectionRuleStatusForDeletion|Delete operation is not allowed in current state.|Invalid state to invoke delete operation.|
 
 ## Get restore point API errors
 
