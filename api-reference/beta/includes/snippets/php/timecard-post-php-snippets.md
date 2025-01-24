@@ -18,11 +18,14 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new TimeCard();
 $clockInEvent = new TimeCardEvent();
 $clockInEvent->setDateTime(new \DateTime('2019-03-18T00:00:00.000Z'));
-$clockInEvent->setAtApprovedLocation(true);
 $clockInEventNotes = new ItemBody();
 $clockInEventNotes->setContent('Started late due to traffic in CA 237');
 $clockInEventNotes->setContentType(new BodyType('text'));
 $clockInEvent->setNotes($clockInEventNotes);
+$additionalData = [
+	'isAtApprovedLocation' => true,
+];
+$clockInEvent->setAdditionalData($additionalData);
 $requestBody->setClockInEvent($clockInEvent);
 $notes = new ItemBody();
 $notes->setContent('8 To 5 Inventory management');
@@ -36,11 +39,14 @@ $breaksTimeCardBreak1Notes->setContentType(new BodyType('text'));
 $breaksTimeCardBreak1->setNotes($breaksTimeCardBreak1Notes);
 $breaksTimeCardBreak1Start = new TimeCardEvent();
 $breaksTimeCardBreak1Start->setDateTime(new \DateTime('2019-03-18T02:00:00.000Z'));
-$breaksTimeCardBreak1Start->setAtApprovedLocation(true);
 $breaksTimeCardBreak1StartNotes = new ItemBody();
 $breaksTimeCardBreak1StartNotes->setContent('Reduced break to make up for lost time');
 $breaksTimeCardBreak1StartNotes->setContentType(new BodyType('text'));
 $breaksTimeCardBreak1Start->setNotes($breaksTimeCardBreak1StartNotes);
+$additionalData = [
+	'isAtApprovedLocation' => true,
+];
+$breaksTimeCardBreak1Start->setAdditionalData($additionalData);
 $breaksTimeCardBreak1->setStart($breaksTimeCardBreak1Start);
 $breaksArray []= $breaksTimeCardBreak1;
 $requestBody->setBreaks($breaksArray);
