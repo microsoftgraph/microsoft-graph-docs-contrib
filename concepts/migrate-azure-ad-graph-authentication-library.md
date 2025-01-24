@@ -7,7 +7,7 @@ ms.reviewer: krbash
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-applications
-ms.date: 01/21/2025
+ms.date: 01/24/2025
 #Customer intent: As a developer, I want to learn what authentication libraries to use, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
@@ -24,9 +24,7 @@ Most apps use an authentication library to acquire and manage access tokens to c
 
 If your app still uses ADAL, use a two-stage migration approach:
 
-1. Update your app to acquire access tokens for Microsoft Graph. Continue to use ADAL for this step. Update the **resourceURL**, which holds the URI representing the resource web API, from:
-
-    `https://graph.windows.net` to `https://graph.microsoft.com`
+1. Update your app to acquire access tokens for Microsoft Graph. Continue to use ADAL for this step. Update the **resourceURL**, which holds the URI representing the resource web API, from  `https://graph.windows.net` to `https://graph.microsoft.com`.
 
     Newly acquired tokens have the same scopes after this change, but the audience of the access tokens is now Microsoft Graph.  
 
