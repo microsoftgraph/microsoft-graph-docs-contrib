@@ -510,7 +510,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 ### Example 7: Copy the children in a folder from root
 
-The following example attempts to copy the children in the folder identified by `{item-id}` (also known as root) into a folder identified by the `driveId` and `id` values.
+The following example attempts to copy the children in the folder identified by `{item-id}`, also known as "root," into a folder identified by the `driveId` and `id` values.
 The `childrenOnly` parameter isn't set to true.
 The request fails because the copy operation can't be done on the root folder.
 
