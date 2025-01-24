@@ -101,7 +101,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-    "@odata.type": "#microsoft.graph.virtualEventSession",
+  "@odata.type": "#microsoft.graph.virtualEventSession",
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
   "allowedPresenters": "String",
