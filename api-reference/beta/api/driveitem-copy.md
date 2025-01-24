@@ -69,7 +69,7 @@ In the request body, provide a JSON object with the following parameters.
 >
 >In a single request, the `childrenOnly` option copies 150 children items, and for the grandchildren items the SharePoint limit applies. For more information, see [SharePoint limitation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
 
-> If the `@microsoft.graph.conflictBehavior` query parameter is used alongside the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
+> If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
 
 
 ## Response
