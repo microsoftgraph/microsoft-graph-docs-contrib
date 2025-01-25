@@ -373,7 +373,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-### Example 5: Failure to copy child items in a source folder to a target folder by specifying @microsoft.graph.conflictBehavior as replace. One of the child items is a folder item
+### Example 5: Failure to copy a folder item in the child items in a source folder with @microsoft.graph.conflictBehavior=replace
 
 The following example attempts to copy the child items  in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. One of the child items is a folder item. The destination
 may have items with colliding names to the children at the source folder. The request attempts to resolve potential name conflicts by setting the optional query parameter `@microsoft.graph.conflictBehavior` to replace. The request is accepted but the monitoring url reports failures. Instead use `rename` or `fail` if at least one of the children is a folder item.
@@ -508,7 +508,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 ```
 
-### Example 7: Failure to copy the child items in a root folder to a destination folder without specifying the childreOnly parameter as true
+### Example 7: Failure to copy the child items in a root folder by not specifying the childreOnly parameter as true
 
 The following example attempts to copy the child items in the folder identified by `{item-id}`, also known as "root", into a folder identified by the `driveId` and `id` values.
 The `childrenOnly` parameter isn't set to true.
@@ -651,7 +651,7 @@ Content-Length: 290
 }
 ```
 
-### Example 10: Failure to copy the child items in a source folder by specifying both the childrenOnly and name request body parameters
+### Example 10: Failure to copy child items by specifying both the childrenOnly and name request body parameters
 
 The following example attempts to copy the child items  in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. The request body sets the `childrenOnly` parameter to true and also specifies a `name` value. The request fails as the `childrenOnly` and `name` parameters are mutually exclusive.
 
@@ -674,7 +674,7 @@ Content-Type: application/json
 
 #### Response
 
-Visiting the monitoring URL yields a status report similar to the following example.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } -->
 ```http
