@@ -9,7 +9,10 @@ doc_type: apiPageType
 ms.date: 10/15/2024
 ---
 
-# user: convertExternalToInternalMemberUser
+# user: convertExternalToInternalMemberUser 
+<!-- I am not sure where is the typo error so I will include a comment here since it's from the function here as memeber: -->
+<!-- (User-ConvertToInternal {User-ConvertToInternal.ReadWrite.All Convert an external user to internal "memeber" user} -->
+
 
 Namespace: microsoft.graph
 
