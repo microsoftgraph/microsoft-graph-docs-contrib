@@ -55,7 +55,7 @@ The following table lists the parameters that you can use when you call this act
 |:---|:---|:---|
 | accountEnabled       | Boolean                             | `true` if the account is enabled; otherwise, `false`. The default value is `true`. A disabled device can't authenticate with Microsoft Entra ID. Optional.|
 | alternativeNames     | String collection                   | A collection of ARM resource IDs associated with the device, if any. Optional. |
-| externalDeviceId     | String                              | UUID of the device by IoT registry. Must be unique within a tenant. Required. |
+| externalDeviceId     | String                              | ID of the device in IoT registry. Must be unique within a tenant. Required. |
 | externalSourceName   | String                              | Identifies the source name of the device. Optional. |
 | keyCredential        | [keyCredential](../resources/keycredential.md) | The key credential when you use self-signed certificates. Optional. |
 | operatingSystemVersion | String                              | The operating system version of the device specified. Optional. |
