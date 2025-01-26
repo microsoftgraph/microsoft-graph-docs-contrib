@@ -1,6 +1,6 @@
 ---
 title: "cloudPcSupportedRegionRestrictionDetail resource type"
-description: "Restriction status of cloud PC supported region. Including CPU quota status, GPU quota status and Nested Virtualization status."
+description: "Restriction status of cloud PC supported region. Including CPU provisioning status, GPU provisioning status and Nested Virtualization provisioning status."
 author: "JannyMa"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -20,9 +20,9 @@ Represent the restriction status of a [cloudPcSupportedRegion](../resources/clou
 
 | Property                       | Type       | Description |
 |:-------------------------------|:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------         |
-| cPURestricted                  | Edm.Boolean| Indicates whether CPU quota is available for the region. When TRUE, CPU quota is available for the region, When FALSE, CPU quota is not available for the region. Default is FALSE. Read-Only                                     | No       | Yes      |
-| gPURestricted                  | Edm.Boolean| Indicates whether GPU quota is available for the region. When TRUE, GPU quota is available for the region, When FALSE, GPU quota is not available for the region. Default is FALSE.. Read-Only                                     | No       | Yes      |
-| nestedVirtualizationRestricted | Edm.Boolean| Indicates whether Nested Virtualization quota is available for the region. When TRUE, Nested Virtualization quota is available for the region. When FALSE, Nested Virtualization quota is not available for the region. Read-Only | No       | Yes      |
+| cPURestricted                  | Edm.Boolean| Indicates that the region is restricted for Cloud PC CPU provisioning. When TRUE, Cloud PC provisioning with CPU is not available in this region. When FALSE, Cloud PC provisioning with CPU is available in the region. Default is FALSE. Read-Only                                     | No       | Yes      |
+| gPURestricted                  | Edm.Boolean| Indicates that the region is restricted for Cloud PC GPU provisioning. When TRUE, Cloud PC provisioning with GPU is not available in this region. When FALSE, Cloud PC provisioning with GPU is available in the region. Default is FALSE. Read-Only                                     | No       | Yes      |
+| nestedVirtualizationRestricted | Edm.Boolean| Indicates that the region is restricted for Cloud PC nested virtualization provisioning. When TRUE, Cloud PC provisioning with nested virtualization is not available in this region. When FALSE, Cloud PC provisioning with nested virtualization is available in the region. Default is FALSE. Read-Only | No       | Yes      |
 
 ## Relationships
 
