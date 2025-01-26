@@ -1,6 +1,6 @@
 ---
-title: "Working with calendars and events in the Microsoft Graph REST API"
-description: "Learn how to manage calendars and events with the Microsoft Graph API."
+title: "Working with calendars and events using the Microsoft Graph API"
+description: "Learn how to manage calendars and events with the Calendar API in Microsoft Graph."
 ms.localizationpriority: high
 author: "mnorman-ms"
 doc_type: conceptualPageType
@@ -8,14 +8,15 @@ ms.subservice: "universal-print"
 ms.date: 01/06/2025
 ---
 
-# Working with calendars and events in the Microsoft Graph REST API
+# Working with calendars and events using the Microsoft Graph API
+
 The Microsoft Graph Calendar API provides [calendar](./calendar.md), [calendarGroup](./calendargroup.md), [event](./event.md), and other resources that enable you to create events and meetings, find workable meeting times, manage attendees, and more. With the Calendar API, you can build a variety of experiences with calendar data.
 
 ## Manage events and meetings
-The [event](./event.md) type represents a scheduled occurrence on a calendar, such as a meeting, holiday, time block, and so on. Meetings, such as team meetings, one-on-ones, and so on, are all represented by **event** resources. You can directly manage the event lifecycle by creating, canceling, and deleting events directly, and more. Also, you can create draft event messages, send them, forward them, and create draft replies, and more. By working with event messages, you enable the user to take an active role in creating events and meetings and to communicate to meeting originators, other recipients, and attendees. 
+The [event](./event.md) type represents a scheduled occurrence on a calendar, such as a meeting, holiday, or time block. Meetings, such as team meetings or one-on-ones, are all represented by **event** resources. You can directly manage the event lifecycle by creating, canceling, and deleting events directly, among other actions. Also, you can create draft event messages, send them, forward them, and create draft replies, and more. By working with event messages, you enable the user to take an active role in creating events and meetings. You also enable them to communicate to meeting originators, other recipients, and attendees. 
 
 ### Working directly with events
-The Microsoft Graph API provides methods for creating, updating, deleting, and canceling events, and more. The following table lists some common lifecycle event use cases and the APIs that Microsoft Graph provides for working with them.
+The Microsoft Graph API provides methods for operations such as creating, updating, deleting, and canceling events. The following table lists some common lifecycle event use cases and the APIs that Microsoft Graph provides for working with them.
 
 | Use case | Verb | Example URL |
 |:---------|:-----|:----|
@@ -25,7 +26,7 @@ The Microsoft Graph API provides methods for creating, updating, deleting, and c
 | [Update an event.](../api/event-update.md)<br/>**Note**: Specify the event details to update in the [request body](../api/event-update.md#request-body).  | PATCH | /users/{id \| userPrincipalName}/events/{id} |
 | [Accept an event.](../api/event-accept.md) | POST | /users/{id \| userPrincipalName}/events/{id}/accept |
 | [Tentatively accept an event.](../api/event-tentativelyaccept.md) | POST | /users/{id \| userPrincipalName}/events/{id}/tentativelyAccept |
-| [Decline an event.](../api/event-decline.md) | POST | /users/{id \| userPrincipalName}/events/{id}/decline |
+| [Decline an event.](../api/event-decline.md) | POST | /users/{id | userPrincipalName}/events/{id}/decline |
 | [Dismiss an event reminder.](../api/event-dismissreminder.md) | POST | /users/{id \| userPrincipalName}/events/{id}/dismissReminder |
 | [Snooze an event reminder.](../api/event-snoozereminder.md) | POST | /users/{id \| userPrincipalName}/events/{id}/snoozeReminder |
 
@@ -36,14 +37,13 @@ The following table lists some common event message use cases and the APIs for w
 
 | Use case | Verb | Example URL |
 |:---------|:-----|:----|
-| [Send an existing draft message](../api/message-send.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/send |
+| [Send an existing draft message.](../api/message-send.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/send |
 | [Create a draft reply.](../api/message-createreply.md) | POST|  /users/{id \| userPrincipalName}/messages/{id}/createReply |
 | [Reply to an event message.](../api/message-reply.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/reply |
 | [Create a draft reply-all message.](../api/message-createreplyall.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/createReplyAll |
 | [Reply-all to an event message.](../api/message-replyall.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/replyAll |
-| [Create a draft forward.](../api/message-createforward.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/forward |
+| [Create a draft forward.](../api/message-createforward.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/createForward |
 | [Forward an event message.](../api/message-forward.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/forward |
-
 
 ## Adding and removing attachments
 The abstract [attachment](./attachment.md) type serves as a base for files, items, and references that are attached to events, messages, and posts. You can view the attachments for an event, for example, with the [List attachments](../api/event-list-attachments.md) method. You can delete an attachment with the [Delete attachment](../api/attachment-delete.md) method. Events in group calendars don't support attachments.
@@ -53,7 +53,6 @@ The [fileAttachment](./fileattachment.md), [itemAttachment](./itemattachment.md)
 
 ### Uploading attachments
 You can directly upload attachments less than 3 MB in size to an event for a user with the [Add attachment](../api/event-post-attachments.md) method. For an attachment that is larger than 3 MB, however, you must use the [attachment: createUploadSession](../api/attachment-createuploadsession.md) method to get an upload URL that you use to iteratively upload the attachment.
-
 
 ## Work with calendars, calendar groups, and Outlook categories
 With the Calendar API, you can create, read, update, and delete calendars, create and view calendar events, get free/busy information for users, and find suggested meeting times.
@@ -66,9 +65,9 @@ The Calendar API provides methods to operate on calendars and calendar groups. T
 |:---------|:-----|:----|
 | [List calendars for a user.](../api/user-list-calendars.md) | GET | /users/{id \| userPrincipalName}/calendars |
 | [List a user's calendars in a group.](../api/user-list-calendars.md) | GET | /users/{id \| userPrincipalName}/calendarGroups/{calendar_group_id}/calendars |
-| [Create a calendar.](../api/user-post-calendars.md) | POST | /users/{id \| userPrincipalName}/calendars/{id} |
+| [Create a calendar.](../api/user-post-calendars.md) | POST | /users/{id \| userPrincipalName}/calendars |
 | [Get a calendar.](../api/calendar-get.md) | GET | /users/{id \| userPrincipalName}/calendar |
-| [Update a calendar.](../api/calendar-update.md) | PATCH | /users/{id \| userPrincipalName}/calendars{id} |
+| [Update a calendar.](../api/calendar-update.md) | PATCH | /users/{id \| userPrincipalName}/calendars/{id} |
 | [Delete a calendar.](../api/calendar-delete.md) | DELETE | /users/{id \| userPrincipalName}/calendar |
 | [Create a calendar group.](../api/user-post-calendargroups.md) | POST | /users/{id \| userPrincipalName}/calendarGroups |
 | [Get a calendar group.](../api/calendargroup-get.md) | GET | /users/{id \| userPrincipalName}/calendarGroups/{id} |
@@ -76,13 +75,13 @@ The Calendar API provides methods to operate on calendars and calendar groups. T
 | [Delete a calendar group.](../api/calendargroup-delete.md) | DELETE | /users/{id \| userPrincipalName}/calendarGroups/{id} |
 
 ### Free/busy data and meeting times
-Two of the core functions of calendaring are to find free/busy information and find meeting times in order to schedule meetings. The Calendar API provides the [Get free/busy schedule](../api/calendar-getschedule.md) method that returns a collection of [scheduleInformation](./scheduleinformation.md) resources for a time period and a collection of users, resources, and/or distribution lists. You can present this information to the user so that they can manually pick an appropriate time at which to schedule a meeting. Use the [user: findMeetingTimes](../api/user-findmeetingtimes.md) method to get a [meetingTimeSuggestionResult](./meetingtimesuggestionsresult.md) that contains a collection of [meetingTimeSuggestion](./meetingtimesuggestion.md) objects that represent detailed information about proposed meeting times for the participants and constraints that you sent.
+Two of the core functions of calendaring are to find free/busy information and find meeting times in order to schedule meetings. The Calendar API provides the [Get free/busy schedule](../api/calendar-getschedule.md) method that returns a collection of [scheduleInformation](./scheduleinformation.md) objects for a time period and a collection of users, resources, or distribution lists. You can present this information to the user so that they can manually pick an appropriate time at which to schedule a meeting. Use the [user: findMeetingTimes](../api/user-findmeetingtimes.md) method to get a [meetingTimeSuggestionResult](./meetingtimesuggestionsresult.md) that contains a collection of [meetingTimeSuggestion](./meetingtimesuggestion.md) objects that represent detailed information about proposed meeting times for the participants and constraints that you sent.
 
 ### Outlook categories
-A calendar category is a combination of a description and a **categoryColor** that together define a category for an Outlook item and control how Outlook displays the item. Outlook users can group messages and events, for example, by category. For more information, see [outlookCategory resource type](./outlookcategory.md).
+A calendar category is a combination of a description and a **categoryColor** that together define a category for an Outlook item and control how Outlook displays the item. Outlook users can group messages and events, for example, by category. For more information, see [outlookCategory](./outlookcategory.md).
 
 ### Calendar permissions
-When users share calendars with other users from within Outlook clients, they can control the calendar items that the recipients can and/or edit. The [calendarPermissions](../resources/calendar.md#relationships) relationship contains permissions for every user with whom a user shared their calendar. This relationship allows you to see which users can view free/busy information for the owner, view all calendar information, or edit events on the calendar, and so on.
+When users share calendars with other users from within Outlook clients, they can control the calendar items that the recipients can view or edit. The [calendarPermissions](../resources/calendar.md#relationships) relationship contains permissions for every user with whom a user shared their calendar. This relationship allows you to, for example, see which users can view free/busy information for the owner, view all calendar information, or edit events on the calendar.
 
 ## Work with open extensions and extended properties
 [Open extensions](./opentypeextension.md), formerly known as Office 365 data extensions, represent the preferred way to store and access custom data for resources in a user's mailbox. If an Outlook MAPI property isn't available in the Microsoft Graph API metadata, then you can fall back to Outlook extended properties. For more information, see [Outlook extended properties overview](./extended-properties-overview.md).
