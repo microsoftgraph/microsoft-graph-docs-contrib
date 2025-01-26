@@ -43,7 +43,7 @@ Microsoft Teams custom meeting templates allow you to specify values for many of
 - [Retry](/graph/api/cloudpcbulkaction-retry?view=graph-rest-beta&preserve-view=true) a bulk action with selected Cloud PCs.
 - Use the **productType** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the product type of a Cloud PC or to filter Cloud PCs by product type.
 - Deprecated the [getCloudPcPerformanceReport](/graph/api/cloudpcreports-getcloudpcperformancereport?view=graph-rest-beta&preserve-view=true) method of the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource in favor of the [retrieveCloudPcTenantMetricsReport](/graph/api/cloudpcreports-retrievecloudpctenantmetricsreport?view=graph-rest-beta&preserve-view=true) method.
-- Use the **regionRestrictionDetail** property on [cloudPcSupportedRegion](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true)  to get the restriction status of a Cloud PC supported region, including the CPU quota, GPU quota, and nested virtualization statuses. 
+- Use the **regionRestrictionDetail** property on [cloudPcSupportedRegion](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true) to get the restriction status of a Cloud PC supported region, including the CPU quota, GPU quota, and nested virtualization statuses. 
 
 ### Files
 
