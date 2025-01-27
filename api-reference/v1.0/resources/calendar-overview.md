@@ -85,3 +85,10 @@ When users share calendars with other users from within Outlook clients, they ca
 
 ## Work with open extensions and extended properties
 [Open extensions](./opentypeextension.md), formerly known as Office 365 data extensions, represent the preferred way to store and access custom data for resources in a user's mailbox. If an Outlook MAPI property isn't available in the Microsoft Graph API metadata, then you can fall back to Outlook extended properties. For more information, see [Outlook extended properties overview](./extended-properties-overview.md).
+
+## Next steps
+
+The Calendar API in Microsoft Graph allows you to build a range of experiences with calendar data. To learn more:
+
+- Drill down on the methods and properties of the resources most helpful to your scenario.
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
