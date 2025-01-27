@@ -47,6 +47,7 @@ None.
 |includeUnindexedStats| Include partially indexed items.|
 |advancedIndexing     | Perform advanced indexing during search to reduce false matches.|
 |locationsWithoutHits | Estimate unindexed items even in locations without hits.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 |Relationship|Type|Description|
