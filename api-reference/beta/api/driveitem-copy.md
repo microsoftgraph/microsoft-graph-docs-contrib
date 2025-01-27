@@ -306,7 +306,7 @@ The following example shows an example status report obtained by visiting the UR
 }
 ```
 
-To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters) as seen in the [next example](#example-4-copy-a-file-item-to-a-folder-with-a-preexisting-item-with-the-same-name-by-specifying-the-@microsoft-graph-conflictbehavior-query-parameter).
+To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters) as seen in the [next example](#example-4-copy-a-file-item-to-a-folder-with-a-preexisting-item-with-the-same-name-by-specifying-the-@microsoftgraphconflictbehavior-query-parameter).
 
 ### Example 4: Copy a file item to a folder with a preexisting item with the same name by specifying the @microsoft.graph.conflictBehavior query parameter
 
