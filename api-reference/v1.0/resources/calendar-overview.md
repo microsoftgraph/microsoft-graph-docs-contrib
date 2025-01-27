@@ -4,7 +4,7 @@ description: "Learn how to manage calendars and events with the Calendar API in 
 ms.localizationpriority: high
 author: "mnorman-ms"
 doc_type: conceptualPageType
-ms.subservice: "universal-print"
+ms.subservice: "outlook"
 ms.date: 01/06/2025
 ---
 
@@ -41,7 +41,7 @@ The following table lists some common event message use cases and the APIs for w
 | [Create a draft reply.](../api/message-createreply.md) | POST|  /users/{id \| userPrincipalName}/messages/{id}/createReply |
 | [Reply to an event message.](../api/message-reply.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/reply |
 | [Create a draft reply-all message.](../api/message-createreplyall.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/createReplyAll |
-| [Reply-all to an event message.](../api/message-replyall.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/replyAll |
+| [Reply to all in an event message.](../api/message-replyall.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/replyAll |
 | [Create a draft forward.](../api/message-createforward.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/createForward |
 | [Forward an event message.](../api/message-forward.md) | POST | /users/{id \| userPrincipalName}/messages/{id}/forward |
 
@@ -64,11 +64,11 @@ The Calendar API provides methods to operate on calendars and calendar groups. T
 | Use case | Verb | Example URL |
 |:---------|:-----|:----|
 | [List calendars for a user.](../api/user-list-calendars.md) | GET | /users/{id \| userPrincipalName}/calendars |
-| [List a user's calendars in a group.](../api/user-list-calendars.md) | GET | /users/{id \| userPrincipalName}/calendarGroups/{calendar_group_id}/calendars |
+| [List a user's calendars in a group.](../api/user-list-calendars.md) | GET | /users/{id \| userPrincipalName}/calendarGroups/{calendarGroupId}/calendars |
 | [Create a calendar.](../api/user-post-calendars.md) | POST | /users/{id \| userPrincipalName}/calendars |
-| [Get a calendar.](../api/calendar-get.md) | GET | /users/{id \| userPrincipalName}/calendar |
+| [Get a calendar.](../api/calendar-get.md) | GET | /users/{id \| userPrincipalName}/calendars/{id} |
 | [Update a calendar.](../api/calendar-update.md) | PATCH | /users/{id \| userPrincipalName}/calendars/{id} |
-| [Delete a calendar.](../api/calendar-delete.md) | DELETE | /users/{id \| userPrincipalName}/calendar |
+| [Delete a calendar.](../api/calendar-delete.md) | DELETE | /users/{id \| userPrincipalName}/calendars/{id} |
 | [Create a calendar group.](../api/user-post-calendargroups.md) | POST | /users/{id \| userPrincipalName}/calendarGroups |
 | [Get a calendar group.](../api/calendargroup-get.md) | GET | /users/{id \| userPrincipalName}/calendarGroups/{id} |
 | [Update a calendar group.](../api/calendargroup-update.md) | PATCH | /users/{id \| userPrincipalName}/calendarGroups/{id} |
