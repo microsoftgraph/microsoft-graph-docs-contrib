@@ -60,9 +60,6 @@ The following table lists the properties that are required to create a chat obje
 ### Response for creating a one-on-one chat without installed apps
 If successful, this method returns a `201 Created` response code and the newly created [chat](../resources/chat.md) resource in the response body.
 
-> [!NOTE]
-> If you need to specify permissions during app installation, you must add your tenant or app ID to the preapproved permissions list.
-
 ### Response for creating a one-on-one chat with installed apps
 If successful, this method returns a `202 Accepted` response code and Location header that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md). The link can be used to get the operation status and details. For details, see [Get operation on chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
@@ -681,6 +678,53 @@ Content-Type: application/json
     }
 }
 ```
+
+### Example 7: Create a one-on-one chat with resource-specific consent (RSC) permissions
+
+#### Request
+
+``` http
+POST https://graph.microsoft.com/beta/chats
+Content-Type: application/json
+
+{
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('4b822dfc-2864-44e6-aa1e-7e0e8552168f')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('6d1e1501-7a3d-45b7-b71b-68d372e5ce14')"
+    }
+  ],
+  "installedApps": [
+    {
+      "teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/8e55a7b1-6766-4f0a-8610-ecacfe3d569a",
+      "consentedPermissionSet": {
+        "resourceSpecificPermissions": [
+          {
+            "permissionValue": "ChatMessage.Read.Chat",
+            "permissionType": "application"
+          },
+          {
+            "permissionValue": "OnlineMeeting.ReadBasic.Chat",
+            "permissionType": "application"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+
+
 
 ## Related content
 

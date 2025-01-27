@@ -511,6 +511,52 @@ Content-Type: application/json
 }
 ```
 
+### Example 6: Create a one-on-one chat with resource-specific consent (RSC) permissions
+
+#### Request
+
+``` http
+POST https://graph.microsoft.com/beta/chats
+Content-Type: application/json
+
+{
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('4b822dfc-2864-44e6-aa1e-7e0e8552168f')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('6d1e1501-7a3d-45b7-b71b-68d372e5ce14')"
+    }
+  ],
+  "installedApps": [
+    {
+      "teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/8e55a7b1-6766-4f0a-8610-ecacfe3d569a",
+      "consentedPermissionSet": {
+        "resourceSpecificPermissions": [
+          {
+            "permissionValue": "ChatMessage.Read.Chat",
+            "permissionType": "application"
+          },
+          {
+            "permissionValue": "OnlineMeeting.ReadBasic.Chat",
+            "permissionType": "application"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+
 ## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
