@@ -35,6 +35,9 @@ Represents information about a presenter of a virtual event.
 |identity|[identity](../resources/identity.md)|Identity information of the presenter. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 |presenterDetails|[virtualEventPresenterDetails](../resources/virtualeventpresenterdetails.md)|Other detail information of the presenter. This property returns `null` when the virtual event type is [virtualEventTownhall](../resources/virtualeventtownhall.md). |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

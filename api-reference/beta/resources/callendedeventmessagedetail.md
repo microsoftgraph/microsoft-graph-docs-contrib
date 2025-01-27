@@ -29,6 +29,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |callParticipants|[callParticipantInfo](../resources/callparticipantinfo.md) collection|List of call participants.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

@@ -41,6 +41,9 @@ Describes print activity for a user during a specified time period (usageDate).
 |usageDate|Date|The date associated with these statistics.|
 |userPrincipalName|String|The UPN of the user represented by these statistics.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

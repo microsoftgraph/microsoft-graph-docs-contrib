@@ -21,6 +21,9 @@ Contains compliance certification data associated with secure score control.
 |name | string | Certification control name. |
 |url | string | URL for the Microsoft Service Trust Portal. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

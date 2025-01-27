@@ -34,6 +34,9 @@ A permission grant condition set contains several conditions. For an event to ma
 | certifiedClientApplicationsOnly | Boolean | Set to `true` to only match on client applications that are [Microsoft 365 certified](/microsoft-365-app-certification/docs/enterprise-app-certification-guide). Set to `false` to match on any other client app. Default is `false`. |
 | scopeSensitivityLabels | [scopeSensitivityLabels](scopeSensitivityLabels.md) | Defines the sensitivity labels for groups that are included in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md). |
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

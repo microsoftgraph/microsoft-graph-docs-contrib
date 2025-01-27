@@ -24,6 +24,9 @@ Represents the status of asynchronous operations scheduled on a domain.
 | operation | String | Type of asynchronous operation. The values can be `ForceDelete` or `Verification`. |
 | status | String | Current status of the operation. <br> `Scheduled` - Operation is scheduled but hasn't started. <br> `InProgress` - Task is in progress. <br> `Failed` - The operation failed. |
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

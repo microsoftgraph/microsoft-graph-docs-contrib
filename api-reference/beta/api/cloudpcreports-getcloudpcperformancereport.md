@@ -1,5 +1,5 @@
 ---
-title: "cloudPcReports: getCloudPCPerformanceReport"
+title: "cloudPcReports: getCloudPCPerformanceReport (deprecated)"
 description: "Get a report related to the performance of Cloud PCs."
 author: "Gutentag0004"
 ms.localizationpriority: medium
@@ -8,13 +8,18 @@ doc_type: apiPageType
 ms.date: 11/30/2024
 ---
 
-# cloudPcReports: getCloudPCPerformanceReport
+# cloudPcReports: getCloudPCPerformanceReport (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a report related to the performance of Cloud PCs.
+
+>[!CAUTION] 
+> This API is deprecated and stopped returning data on December 31, 2024. Going forward, use the [retrieveCloudPcTenantMetricsReport](cloudpcreports-retrievecloudpctenantmetricsreport.md) API.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

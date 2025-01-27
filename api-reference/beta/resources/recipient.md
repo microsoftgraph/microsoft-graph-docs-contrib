@@ -21,6 +21,9 @@ Represents information about a user in the sending or receiving end of an event,
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|The recipient's email address.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

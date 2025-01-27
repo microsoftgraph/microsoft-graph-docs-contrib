@@ -45,8 +45,11 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| allowRecording | Boolean | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).                                                  |
 | chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).                                                                 |
+| chatRestrictions      | [chatrestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                               |
 | endDateTime           | DateTime                                      | The meeting end time in UTC. Required when you create an online meeting.                    
 | joinWebUrl            | String                                        | The join URL of the online meeting. The format of the URL may change; therefore, users shouldn't rely on any information extracted from parsing the URL. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -57,6 +60,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).                 |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).                                                              |
+| meetingTemplateId | String | The ID of the [meeting template](/microsoftteams/create-custom-meeting-template). |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. Possible values are: `all`, `none`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
@@ -126,6 +130,7 @@ The following JSON representation shows the resource type.
   "allowedPresenters": "String",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
+  "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
@@ -134,6 +139,7 @@ The following JSON representation shows the resource type.
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
   "joinWebUrl": "String",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
+  "meetingTemplateId": "String",
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
   "startDateTime": "String (timestamp)",

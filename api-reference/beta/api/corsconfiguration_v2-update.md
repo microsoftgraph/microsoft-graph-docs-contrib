@@ -65,6 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [cors
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_corsconfiguration_v2"
@@ -90,6 +91,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-corsconfiguration-v2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

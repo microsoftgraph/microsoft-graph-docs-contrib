@@ -27,6 +27,9 @@ Inherits from [identity](identity.md).
 | id | String | The object ID of the resource account user in Microsoft Entra ID. Inherited from **identity**. |
 | tenantId | String | The tenant ID of the application. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

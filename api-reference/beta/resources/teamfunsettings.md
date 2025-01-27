@@ -24,6 +24,9 @@ Settings to configure use of Giphy, memes, and stickers in the [team](team.md).
 |allowStickersAndMemes|Boolean|If set to true, enables users to include stickers and memes.|
 |allowCustomMemes|Boolean|If set to true, enables users to include custom memes.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

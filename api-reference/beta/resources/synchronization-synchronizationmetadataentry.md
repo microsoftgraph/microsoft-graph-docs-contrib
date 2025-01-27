@@ -35,6 +35,9 @@ Metadata for the given object.
 |SynchronizationLearnMoreIbizaFwLink |The documentation link that's displayed in the Microsoft Entra admin center.  |
 |ConfigurationFields |A JSON containing the textbox configuration names that are displayed in the Microsoft Entra admin center. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

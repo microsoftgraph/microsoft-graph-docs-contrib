@@ -44,6 +44,9 @@ Represents a custom registration question, other than first name, last name, and
 | radioButton | Question accepts an answer chosen from radio buttons. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

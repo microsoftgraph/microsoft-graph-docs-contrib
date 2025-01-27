@@ -30,6 +30,9 @@ Contains stateful information about the host (including devices, computers, and 
 |publicIpAddress|String|Publicly routable IPv4 or IPv6 address (see [RFC 1918](https://tools.ietf.org/html/rfc1918)) at time of the alert.|
 |riskScore|String|Provider-generated/calculated risk score of the host.  Recommended value range of 0-1, which equates to a percentage.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -26,6 +26,9 @@ Groups retention and compliance-related properties on an item into a single stru
 | name                     | String                                                           | The retention label on the document. Read-write.                                                                                                                                                                                                       |
 | retentionSettings        | [retentionLabelSettings](../resources/retentionlabelsettings.md) | The retention settings enforced on the item. Read-write.                                                                                                                                                                                               |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

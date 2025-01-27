@@ -59,6 +59,9 @@ Inherits from [entity](../resources/entity.md).
 | rejectedByOrganizer | Manual approval is enabled and the organizer rejected the attendee. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type

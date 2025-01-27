@@ -21,6 +21,9 @@ Represents a single DTMF event.
 | state | String | Possible values are: `notStarted`, `active`, `inactive`. |
 | lastModifiedDateTime | DateTime | The state modified time in UTC. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

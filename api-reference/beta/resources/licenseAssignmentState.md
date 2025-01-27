@@ -32,6 +32,9 @@ The **licenseAssignmentStates** property of the [user](user.md) entity is a coll
 |skuId|String|The unique identifier for the SKU. Read-Only.|
 |state|String|Indicate the current state of this assignment. Read-Only. The possible values are `Active`, `ActiveWithError`, `Disabled`, and `Error`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

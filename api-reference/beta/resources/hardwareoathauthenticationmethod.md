@@ -35,6 +35,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|createdDateTime|DateTimeOffset| The date and time the authentication method was registered to the user. Read-only. Optional. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|Unique identifier for the device. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
@@ -55,6 +56,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethod",
+  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
 }
 ```

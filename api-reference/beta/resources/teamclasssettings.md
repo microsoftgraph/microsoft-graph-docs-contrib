@@ -21,6 +21,9 @@ Represents class-specific properties of a [team](team.md). Available only when t
 |:---------------|:--------|:----------|
 |notifyGuardiansAboutAssignments|Boolean|If set to `true`, enables sending of weekly assignments digest emails to parents/guardians, provided the tenant admin has enabled the setting globally.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

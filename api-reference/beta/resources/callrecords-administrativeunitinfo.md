@@ -22,6 +22,9 @@ Represents an object that exposes information about the administrative units ass
 |:---------|:-------|------------------------------------------------|
 | id       | String | Unique identifier for the administrative unit. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

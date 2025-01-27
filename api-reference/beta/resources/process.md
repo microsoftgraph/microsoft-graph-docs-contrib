@@ -33,6 +33,9 @@ Contains stateful information about the process related to the alert.
 |path|String|Full path, including filename.|
 |processId|Int32|The Process ID (PID) of the process.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

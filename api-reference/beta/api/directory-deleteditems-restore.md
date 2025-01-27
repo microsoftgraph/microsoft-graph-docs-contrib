@@ -1,6 +1,6 @@
 ---
 title: "Restore deleted item (directory object)"
-ms.date: 11/14/2024
+ms.date: 12/23/2024
 description: "Restore a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
@@ -40,13 +40,13 @@ The following table shows the least privileged permission or permissions require
 |:-|:-|:-|:-|
 | [administrativeUnit](../resources/administrativeunit.md) | AdministrativeUnit.ReadWrite.All | Not supported. | AdministrativeUnit.ReadWrite.All |
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
+| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.ReadWrite.All | Not supported | ExternalUserProfile.ReadWrite.All |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.ReadWrite.All | Not supported | PendingExternalUserProfile.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
-| [user](../resources/user.md) | User.ReadWrite.All | Not supported. |  User.ReadWrite.All |
-| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
-| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [user](../resources/user.md) | User.DeleteRestore.All | Not supported. | User.DeleteRestore.All |
 
 [!INCLUDE [rbac-deleted-items-restore-apis](../includes/rbac-for-apis/rbac-deleted-items-restore-apis.md)]
 
@@ -242,6 +242,7 @@ Content-type: application/json
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restore_directory_deleteditem_newUserPrincipalName"
@@ -254,6 +255,40 @@ Content-Type: application/json
   "newUserPrincipalName": "johndoe@contoso.com"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/restore-directory-deleteditem-newuserprincipalname-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/restore-directory-deleteditem-newuserprincipalname-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/restore-directory-deleteditem-newuserprincipalname-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/restore-directory-deleteditem-newuserprincipalname-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/restore-directory-deleteditem-newuserprincipalname-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/restore-directory-deleteditem-newuserprincipalname-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/restore-directory-deleteditem-newuserprincipalname-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/restore-directory-deleteditem-newuserprincipalname-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 > **Note:** The response object shown here might be shortened for readability.

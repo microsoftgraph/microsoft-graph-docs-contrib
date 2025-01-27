@@ -45,6 +45,9 @@ and available rule conditions and exceptions are represented by the [messageRule
 | sequence | Int32 | Indicates the order in which the rule is executed, among other rules. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

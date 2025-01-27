@@ -25,6 +25,9 @@ Contains metadata for validating the column.
 SharePoint formulas use a syntax similar to Excel formulas.
 See [Examples of common formulas in SharePoint Lists][SPFormulas] for more information.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following is a JSON representation of a **columnValidation** resource.

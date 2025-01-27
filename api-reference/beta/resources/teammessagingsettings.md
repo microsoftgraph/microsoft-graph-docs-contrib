@@ -25,6 +25,9 @@ Settings to configure messaging and mentions in the [team](team.md).
 |allowTeamMentions|Boolean|If set to true, @team mentions are allowed.|
 |allowChannelMentions|Boolean|If set to true, @channel mentions are allowed.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

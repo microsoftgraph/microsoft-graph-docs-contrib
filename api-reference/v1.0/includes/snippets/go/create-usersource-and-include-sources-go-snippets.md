@@ -18,7 +18,7 @@ import (
 requestBody := graphmodelssecurity.NewUserSource()
 email := "admin@contoso.com"
 requestBody.SetEmail(&email) 
-includedSources := graphmodels.MAILBOX, SITE_SOURCETYPE 
+includedSources := graphmodels.MAILBOX_SOURCETYPE 
 requestBody.SetIncludedSources(&includedSources) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

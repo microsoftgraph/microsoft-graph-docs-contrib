@@ -34,6 +34,7 @@ Inherits from [entity](../resources/entity.md).
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added.|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
+| chatRestrictions      | [chatrestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. |
 | id | String | The default ID associated with the online meeting. Read-only.    |
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. |
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. |
@@ -98,9 +99,12 @@ The following JSON representation shows the resource type.
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
   "allowTeamworkReactions": "Boolean",
   "allowedPresenters": "String",
+  "allowRecording": "Boolean",
+  "allowTranscription": "Boolean",
   "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
+  "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
   "id": "String (identifier)",  
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},

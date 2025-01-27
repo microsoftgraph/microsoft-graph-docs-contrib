@@ -23,6 +23,9 @@ The media information used in actions for prompts.
 | uri            | String  | Path to the prompt to be played. Currently only Wave file (.wav) format, single-channel, 16-bit samples with a 16,000 (16 KHz) sampling rate is only supported. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

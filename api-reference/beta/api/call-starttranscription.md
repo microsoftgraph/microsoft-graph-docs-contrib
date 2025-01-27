@@ -59,6 +59,7 @@ The following example shows how to call this API.
 
 The following example shows the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-startTranscription"
@@ -73,6 +74,12 @@ Content-Length: 56
   "language": "en-us"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-starttranscription-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

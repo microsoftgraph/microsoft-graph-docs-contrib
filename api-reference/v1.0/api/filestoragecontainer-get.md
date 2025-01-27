@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a [fileStorageContainer](../resources/filestoragecontainer.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

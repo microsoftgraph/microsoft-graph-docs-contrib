@@ -23,6 +23,9 @@ Represents a single assertion that a candidate object must satisfy, and is evalu
 |sourceOperandName|String|Name of source operand (the operand being tested). The source operand name must match one of the attribute names on the source object.|
 |targetOperand|[filterOperand](synchronization-filteroperand.md)|Values that the source operand will be tested against.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

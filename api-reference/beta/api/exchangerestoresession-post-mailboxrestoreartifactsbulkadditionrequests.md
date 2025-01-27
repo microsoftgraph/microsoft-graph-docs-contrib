@@ -18,6 +18,8 @@ Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxre
 
 The initial status upon creation of the restore session is `active`. When all the mailboxes are added to the corresponding Exchange restore session and the restore session is activated, the status becomes `completed`. If any failures are encountered during resource resolution, the status of the restore session becomes `completedWithErrors`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

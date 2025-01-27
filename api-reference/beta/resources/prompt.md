@@ -20,6 +20,9 @@ Prompt action base type.
 
 None
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

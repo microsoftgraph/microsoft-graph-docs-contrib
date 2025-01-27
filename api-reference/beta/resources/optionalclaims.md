@@ -25,6 +25,9 @@ Application developers can configure optional claims in their Microsoft Entra ap
 |accessToken|[optionalClaim](optionalclaim.md) collection| The optional claims returned in the JWT access token. |
 |saml2Token|[optionalClaim](optionalclaim.md) collection| The optional claims returned in the SAML token.|
 
+## Relationships
+None.
+
 ## JSON Representation
 The following JSON representation shows the resource type.
 <!--{

@@ -24,6 +24,9 @@ Represents the idle session sign-out policy settings for SharePoint.
 | signOutAfterInSeconds | Int64    | Number of seconds of inactivity after which a user is signed out.                         |
 | warnAfterInSeconds    | Int64    | Number of seconds of inactivity after which a user is notified that they'll be signed out.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

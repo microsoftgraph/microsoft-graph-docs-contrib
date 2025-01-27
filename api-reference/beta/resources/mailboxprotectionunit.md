@@ -36,6 +36,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |id|String|Unique identifier of the protection policy associated with this protection unit.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |lastModifiedDateTime|DateTimeOffset|The time the protection unit was last modified. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|mailboxType|[mailboxType](../resources/enums.md#mailboxtype-values)|The type of mailbox which is assigned to the user with id: `directoryObjectId`.The possible values are: `unknown`, `user`, `shared`, `unknownFutureValue`.|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |status|[protectionUnitStatus](../resources/mailboxprotectionunit.md#protectionunitstatus-values)|The individual enable, disable, or removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
@@ -48,7 +49,6 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |unprotected | Protection was successfully disabled for the unit.|
 |removeRequested |A user requested removal of the protected unit from the policy. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
-
 
 ## Relationships
 None.
@@ -82,7 +82,8 @@ The following JSON representation shows the resource type.
   },
   "directoryObjectId": "String",
   "displayName": "String",
-  "email": "String"
+  "email": "String",
+  "mailboxType": "String"
 }
 ```
 

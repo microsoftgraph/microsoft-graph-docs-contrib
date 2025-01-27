@@ -33,6 +33,9 @@ Inherits from [identitySet](identityset.md).
 | phone | [communicationsPhoneIdentity](communicationsphoneidentity.md) | The phone user associated with this action. |
 | user | [communicationsUserIdentity](communicationsuseridentity.md) | The user associated with this action. Inherited from **identitySet**. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

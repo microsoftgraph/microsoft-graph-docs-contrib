@@ -26,7 +26,7 @@ Contains information about a participant in a meeting.
 
 ### onlineMeetingRole values
 
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the `coorganizer` value in this evolvable enum.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to get the `coorganizer` value in this evolvable enum.
 
 | Value              | Description                                                            |
 | ------------------ | ---------------------------------------------------------------------- |
@@ -39,6 +39,9 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 > [!TIP]
 >
 > To set the **presenter** role of a meeting attendee when creating or updating an [onlineMeeting](onlinemeeting.md), the value of **allowedPresenters** must also be set to `roleIsPresenter`.
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -24,6 +24,9 @@ Base type of [organizerMeetingInfo](organizermeetinginfo.md), [tokenMeetingInfo]
 
 None.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

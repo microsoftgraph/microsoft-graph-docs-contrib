@@ -24,6 +24,9 @@ Contains the capabilities of a meeting
 | allowAnonymousUsersToStartMeeting | Boolean | Indicates whether anonymous users are allowed to start a meeting.  |
 | autoAdmittedUsers                 | autoAdmittedUsersType  | Possible values are: `everyoneInCompany`, `everyone`.              |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

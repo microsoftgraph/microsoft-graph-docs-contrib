@@ -42,6 +42,9 @@ The following shows the supported types of answer input for a custom registratio
 | Boolean | The registration question accepts a yes, or no answer. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

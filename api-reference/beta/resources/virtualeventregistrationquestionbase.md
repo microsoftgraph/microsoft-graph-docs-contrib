@@ -40,6 +40,9 @@ Inherits from [entity](../resources/entity.md).
 |id|String|Unique identifier of the registration question. Inherited from [entity](../resources/entity.md).|
 |isRequired|Boolean| Indicates whether an answer to the question is required. The default value is `false`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

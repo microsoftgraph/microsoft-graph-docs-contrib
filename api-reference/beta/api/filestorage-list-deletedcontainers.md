@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects from the deleted container collection. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

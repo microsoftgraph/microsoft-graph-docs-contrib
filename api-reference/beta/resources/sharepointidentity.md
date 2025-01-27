@@ -23,6 +23,9 @@ This resource extends from the **identity** resource to expose SharePoint-specif
 | loginName        | String                      | The sign in name of the SharePoint identity. |
 | thumbnails       | [thumbnailSet][] collection | Collection that contains [thumbnailSet][] objects associated with the item. For more information, see [List thumbnails for a driveItem][]. Read-only. Nullable. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.sharePointIdentity",

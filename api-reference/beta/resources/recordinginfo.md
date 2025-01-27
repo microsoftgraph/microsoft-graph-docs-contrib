@@ -24,6 +24,9 @@ Recording information for a participant.
 | recordingStatus | String | Possible values are: `unknown`, `notRecording`, `recording`, or `failed`. |
 | initiator | [identitySet](identitySet.md) | The identities of recording initiator. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -33,6 +33,9 @@ Represents the details about the system configuration for a Microsoft Teams-enab
 |networkConfiguration|[teamworkNetworkConfiguration](../resources/teamworknetworkconfiguration.md)|The network configuration for the device.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

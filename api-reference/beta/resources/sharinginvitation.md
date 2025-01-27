@@ -16,6 +16,17 @@ Namespace: microsoft.graph
 
 The **SharingInvitation** resource groups invitation-related data items into a single structure.
 
+## Properties
+
+| Property       | Type                          | Description                                                                                                                   |
+| :------------- | :---------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| email          | String                        | The email address provided for the recipient of the sharing invitation. Read-only.                                            |
+| invitedBy      | [identitySet](identityset.md) | Provides information about who sent the invitation that created this permission, if that information is available. Read-only. |
+| signInRequired | Boolean                       | If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.                     |
+
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
@@ -36,14 +47,6 @@ The following JSON representation shows the resource type.
 }
 
 ```
-
-## Properties
-
-| Property       | Type                          | Description                                                                                                                   |
-| :------------- | :---------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
-| email          | String                        | The email address provided for the recipient of the sharing invitation. Read-only.                                            |
-| invitedBy      | [identitySet](identityset.md) | Provides information about who sent the invitation that created this permission, if that information is available. Read-only. |
-| signInRequired | Boolean                       | If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.                     |
 
 ## Remarks
 

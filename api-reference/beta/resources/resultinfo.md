@@ -29,6 +29,9 @@ The subcodes provide supplementary information related to the type of success or
 | message  | String | The message.         |
 | subcode  | Int32 | The result sub-code. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

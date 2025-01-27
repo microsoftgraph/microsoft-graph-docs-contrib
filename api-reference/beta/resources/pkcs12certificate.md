@@ -25,6 +25,9 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 |pkcs12Value|String| Specifies the field for sending pfx content. The value should be a base-64 encoded version of the actual certificate content. Required.|
 |password|String| Specifies the password for the pfx file. Required. If no password is used, must still provide a value of `""`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

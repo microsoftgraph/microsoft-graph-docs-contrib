@@ -27,6 +27,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |teamsAppDisplayName|String|Display name of the **teamsApp**.|
 |teamsAppId|String|Unique identifier of the **teamsApp**.|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

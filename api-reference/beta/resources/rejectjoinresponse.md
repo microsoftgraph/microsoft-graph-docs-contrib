@@ -24,6 +24,9 @@ This has the same effect as rejecting a policy recording incoming call notificat
 | :--------------- | :------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | reason           | String                          | The rejection reason. Possible values are `None`, `Busy`, and `Forbidden`.                                                                                     |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
