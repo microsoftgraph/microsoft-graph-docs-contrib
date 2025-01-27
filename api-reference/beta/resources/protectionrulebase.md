@@ -35,6 +35,7 @@ The following limitations apply to this resource:
 - Dynamic rules aren't available for sharepoint protection policies.
 - The dynamic rule expression supports a maximum of 100 group ID's in an expression.
 - At present maximum 6,000 users can be protected via dynamic rule.
+- Expression with next distribution list or security group is not supported.
 
 ## Properties
 
