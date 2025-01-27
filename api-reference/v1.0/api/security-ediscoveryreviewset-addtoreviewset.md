@@ -48,10 +48,10 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|The ID of the eDiscovery search you'd like to add to the review set.|
-|additionalDataOptions|additionalDataOptions|The options for adding items to reviewSet. Note: `locationsWithoutHits` and `advancedIndexing` is only considered if itemsToIncude is set to `partiallyIndexed`.|
-| itemsToInclude | microsoft.graph.security.itemsToInclude | The items to include in terms of their indexing. The possible values are `searchHits`, `partiallyIndexed`. |
-| cloudAttachmentVersion | microsoft.graph.security.cloudAttachmentVersion | The versions to include for cloud attachments in messages. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
-| documentVersion | microsoft.graph.security.documentVersion | The versions to include for files in sharepoint. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
+|additionalDataOptions|additionalDataOptions|The options for adding items to reviewSet. Note: `locationsWithoutHits` and `advancedIndexing` are only considered if itemsToIncude is set to `partiallyIndexed`.|
+| itemsToInclude | microsoft.graph.security.itemsToInclude | The items to include in the review set. The possible values are `searchHits`, `partiallyIndexed`. |
+| cloudAttachmentVersion | microsoft.graph.security.cloudAttachmentVersion | Specify how many versions of cloud attachments to collect. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
+| documentVersion | microsoft.graph.security.documentVersion | Specify how many versions of documents to collect. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
 
 ### additionalDataOptions values
 |Name|Description|

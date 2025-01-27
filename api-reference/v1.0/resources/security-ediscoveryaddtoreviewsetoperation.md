@@ -31,12 +31,17 @@ None.
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|additionalDataOptions|String|The options for adding items to reviewSet. |
+|cloudAttachmentVersion|String| Specify how many versions of cloud attachments to collect.|
+|documentVersion|String| Specify how many version of SharePoint documents to collect.|
+|itemsToInclude|String| The items to include in the review set. Possible values are: `searchHits`, `partiallyIndexed`.|
 
 ### itemsToInclude values
 |Member|Description|
 |:----|-----------|
 |searchHits       | Include indexed items that match.|
 |partiallyIndexed | Include unindexed items that may not match query.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -68,7 +73,12 @@ The following JSON representation shows the resource type.
   "status": "String",
   "resultInfo": {
     "@odata.type": "microsoft.graph.resultInfo"
-  }
+  },
+  ,
+  "additionalDataOptions": "String",
+  "cloudAttachmentVersion": "String",
+  "documentVersion": "String",
+  "itemsToInclude": "String"
 }
 ```
 
