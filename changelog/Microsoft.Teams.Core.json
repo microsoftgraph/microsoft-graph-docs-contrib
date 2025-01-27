@@ -5741,7 +5741,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "contentType",
           "ChangeType": "Change",
-          "Description": "Added loop component as two types of attachments, a loop component and a place holder. New **contentType** properties `application/vnd.microsoft.card.fluidEmbedCard` and `application/vnd.microsoft.card.codesnippet` are in the [chatMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-1.0) resource.",
+          "Description": "Added Microsoft Loop components as two types of attachments, a Loop component and a place holder. New **contentType** properties `application/vnd.microsoft.card.fluidEmbedCard` and `application/vnd.microsoft.card.codesnippet` are in the [chatMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-1.0) resource.",
           "Target": "chatMessageAttachment"
         }
       ],

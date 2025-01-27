@@ -29,7 +29,7 @@ Cards represent visual elements backed by a predefined schema. Teams supports th
 
 - Code snippet or Place holder - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
 - Announcement card - Set **contentType** set to `application/vnd.microsoft.card.announcement`
-- Loop component card - Set **contentType** set to `application/vnd.microsoft.card.fluidEmbedCard`
+- Mircosoft Loop component card - Set **contentType** set to `application/vnd.microsoft.card.fluidEmbedCard`
 
 For cards, the **contentType** property is set to the type of card, and the **content** property contains the serialized json for the card.
 
@@ -71,7 +71,7 @@ The following example shows the schema for an adaptive card attachment when the 
 
 > **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** aren't supported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
 
-The following example shows the schema for a loop component as two attachments.
+The following example shows the schema for a Loop component as two attachments.
 
 ```json
     "attachments": [
