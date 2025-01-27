@@ -73,7 +73,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [chatMessage](../resources/chatmessage.md) object in the response body.
 
 ## Examples
 
@@ -589,7 +589,7 @@ GET https://graph.microsoft.com/beta/chats/19:80a7ff67c0ef43c19d88a7638be436b1@t
 
 #### Response
 
-The following example shows the response. The message body contains an @mention for everyone in a group chat that is represented by the `<at></at>` tag. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mentioned** object.
+The following example shows the response. The message body contains `<at></at>` tags for each @mention of everyone in a group chat. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mentioned** object.
 
 <!-- {
   "blockType": "response",
@@ -777,9 +777,9 @@ Content-type: application/json
 }
 ```
 
-### Example 7: Get a chat message with a loop component
+### Example 7: Get a chat message with a Microsoft Loop component
 
-The following example shows a request that gets a chat message that has a loop component as two attachments. 
+The following example shows a request that gets a chat message that has a Loop component as two attachments. 
 
 #### Request
 
@@ -798,7 +798,7 @@ GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@t
 
 #### Response
 
-The following example shows the response. The message body contains two attachments. The value of the **contentType** property of the loop component is `application/vnd.microsoft.card.fluidEmbedCard`, and the value of the **contentType** property of the placeholder card is `application/vnd.microsoft.card.codesnippet`. 
+The following example shows the response. The message body contains two attachments. The value of the **contentType** property of the Loop component is `application/vnd.microsoft.card.fluidEmbedCard`, and the value of the **contentType** property of the placeholder card is `application/vnd.microsoft.card.codesnippet`. 
 
 > **Note**  - The **contentUrl** and **content** properties for a placeholder card don't have values.
 
