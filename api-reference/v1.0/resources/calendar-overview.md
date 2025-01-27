@@ -26,7 +26,7 @@ The Microsoft Graph API provides methods for operations such as creating, updati
 | [Update an event.](../api/event-update.md)<br/>**Note**: Specify the event details to update in the [request body](../api/event-update.md#request-body).  | PATCH | /users/{id \| userPrincipalName}/events/{id} |
 | [Accept an event.](../api/event-accept.md) | POST | /users/{id \| userPrincipalName}/events/{id}/accept |
 | [Tentatively accept an event.](../api/event-tentativelyaccept.md) | POST | /users/{id \| userPrincipalName}/events/{id}/tentativelyAccept |
-| [Decline an event.](../api/event-decline.md) | POST | /users/{id | userPrincipalName}/events/{id}/decline |
+| [Decline an event.](../api/event-decline.md) | POST | /users/{id \| userPrincipalName}/events/{id}/decline |
 | [Dismiss an event reminder.](../api/event-dismissreminder.md) | POST | /users/{id \| userPrincipalName}/events/{id}/dismissReminder |
 | [Snooze an event reminder.](../api/event-snoozereminder.md) | POST | /users/{id \| userPrincipalName}/events/{id}/snoozeReminder |
 
