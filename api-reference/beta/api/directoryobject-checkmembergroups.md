@@ -14,7 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), [device](../resources/device.md), or [directory object](../resources/directoryobject.md) is a member. This function is transitive.
+Check for membership in a specified list of [group](../resources/group.md) IDs, and return from that list the IDs of groups where a specified object is a member. The specified object can be of one of the following types:
+- [user](../resources/user.md)
+- [group](../resources/group.md)
+- [service principal](../resources/serviceprincipal.md)
+- [organizational contact](../resources/orgcontact.md)
+- [device](../resources/device.md)
+- [directory object](../resources/directoryobject.md)
+
+This function is transitive.
 
 You can check up to a maximum of 20 groups per request. This function supports all groups provisioned in Microsoft Entra ID. Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
@@ -26,47 +34,65 @@ One of the following permissions is required to call this API. To learn more, in
 
 ### Group memberships for a directory object
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged)           |
-|:---------------------------------------|:------------------------------------------------------|
-| Delegated (work or school account)     | User.ReadBasic.All, User.Read.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported.                                        |
-| Application                            | User.Read.All, Directory.Read.All                     |
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.ReadBasic.All and GroupMember.Read.All|User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All |
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|User.ReadBasic.All and GroupMember.Read.All|User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All|
 
 ### Group memberships for the signed-in user
+
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type | Permissions (from least to most privileged) |
-|:-|:-|
-| Delegated (work or school account) | User.Read, User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | Not supported. |
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.Read|User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All |
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
 
 ### Group memberships for other users
+
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type | Permissions (from least to most privileged) |
-|:-|:-|
-| Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.ReadBasic.All and GroupMember.Read.All|User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All |
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|User.ReadBasic.All and GroupMember.Read.All|User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All|
 
 ### Group memberships for a group
+
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type | Permissions (from least to most privileged) |
-|:-|:-|
-| Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|GroupMember.Read.All|Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|GroupMember.Read.All|Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All|
 
 ### Group memberships for a service principal
+
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|Application.Read.All|Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Application.Read.All|Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All|
 
 ### Group memberships for an organizational contact
-<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_6" } -->
-[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-6-permissions.md)]
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|Directory.Read.All|Directory.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Directory.Read.All|Directory.ReadWrite.All |
+
+### Group memberships for a device
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|Device.Read.All|Directory.Read.All, Directory.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Device.Read.All|Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
