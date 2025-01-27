@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for work or school documents trending around users. Derived from [Microsoft Graph insights](officegraphinsights.md).
+Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for work or school documents trending around users. Derived from [officeGraphInsights](officegraphinsights.md).
 
 Insights are returned by the following APIs:
 
