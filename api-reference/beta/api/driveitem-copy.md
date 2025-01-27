@@ -674,7 +674,7 @@ Content-Type: application/json
 
 #### Response
 
-Visiting the monitoring URL yields a status report similar to the following example.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } -->
 ```http
