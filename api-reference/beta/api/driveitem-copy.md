@@ -230,7 +230,7 @@ To receive a status report similar to the one in the following example, GET the 
 
 ### Example 3: Failure to copy a file item to a folder with a preexisting item with the same name
 
-The following example attempts to copy a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` property values. The destination already has a file with the same name. However, because the request doesn't specify a `@microsoft.graph.conflictBehavior` query parameter value of either `replace` or `rename`, the operation is accepted but fails during processing.
+The following example attempts to copy a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` property values. In this example, the destination already has a file with the same name. However, because the request doesn't specify a `@microsoft.graph.conflictBehavior` query parameter value of either `replace` or `rename`, the operation is accepted but fails during processing.
 
 #### Request
 # [HTTP](#tab/http)
@@ -311,7 +311,7 @@ To resolve this error, use the optional query parameter [@microsoft.graph.confli
 ### Example 4: Copy a file item to a folder with a preexisting item with the same name by specifying the @microsoft.graph.conflictBehavior query parameter
 
 The following example copies a file item identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
-The destination already has a file with the same name. The query parameter `@microsoft.graph.conflictBehavior` is set to replace. The possible values are `replace`, `rename`, or `fail`.
+In this example, the destination already has a file with the same name. The query parameter `@microsoft.graph.conflictBehavior` is set to replace. The possible values are `replace`, `rename`, or `fail`.
 
 #### Request
 # [HTTP](#tab/http)
@@ -375,8 +375,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 ### Example 5: Failure to copy child items that contain a folder item by specifying @microsoft.graph.conflictBehavior as replace
 
-The following example attempts to copy the child items  in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. One of the child items is a folder item. The destination
-might have items with colliding names to the children at the source folder. The request attempts to resolve potential name conflicts by setting the optional query parameter `@microsoft.graph.conflictBehavior` to replace. The request is accepted but the monitoring url reports failures. Instead use `rename` or `fail` if at least one of the children is a folder item.
+The following example attempts to copy the child items  in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values. One of the child items is a folder item. The destination might have items with colliding names to the children at the source folder. The request attempts to resolve potential name conflicts by setting the optional query parameter `@microsoft.graph.conflictBehavior` to replace. The request is accepted but the monitoring url reports failures. Instead use `rename` or `fail` if at least one of the children is a folder item.
 
 #### Request
 <!-- { "blockType": "request", "name": "copy-item-conflicts", "scopes": "files.readwrite", "target": "action" } -->
