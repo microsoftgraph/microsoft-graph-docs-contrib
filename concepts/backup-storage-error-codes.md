@@ -251,8 +251,8 @@ The following table lists the possible error and response code that can be retur
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleCreateRequest|Can't process the request because it's malformed or incorrect.|Invalid create request.|
-|400|InvalidRuleExpressionGroupLimitExceeded|Rule expression containing more than 100 group ids is not allowed.|Expression contains more group Ids than imposed limit.|
 |400|InvalidRuleExpression|Value cannot be null or Invalid expression.|Expression is not valid and cannot be parsed.|
+|413|InvalidRuleExpressionGroupLimitExceeded|Rule expression containing more than 100 group ids is not allowed.|Expression contains more group id's than imposed limit.|
 
 ## Update inclusion rule API errors
 
@@ -267,11 +267,11 @@ The following table lists the possible error and response codes that can be retu
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidRuleExpression|Value cannot be null or Invalid expression|Expression is not valid and cannot be parsed.|
 |400|PatchNotAllowedForStaticRule|Patch operation is not allowed for static rule|Invalid update request.|
-|400|InvalidProtectionRuleStatusForDynamicRuleEdit|Patch operation is not allowed in current state.|Patch operation is not allowed in deleteRequested state|
 |400|InvalidProtectionRulePatchRequest|IsAutoApplyEnabled parameter is not supported in patch request.|`IsAutoApplyEnabled` can be supplied only at the time of creation. Conversion of static rule to dynamic rule and vice-versa is not allowed.|
-|400|InvalidRuleExpressionGroupLimitExceeded|Rule expression containing more than 100 group ids is not allowed.|Expression contains more group id's than imposed limit.|
-|404|ProtectionRuleNotFound|Protection rule with given ID doesn't exists.|Rule ID given is either wrong or the rule is deleted.|
 |400|InvalidProtectionRuleStatusForUpdation|Update operation is not allowed in current state.|Invalid state to invoke update operation.|
+|404|ProtectionRuleNotFound|Protection rule with given ID doesn't exists.|Rule ID given is either wrong or the rule is deleted.|
+|413|InvalidRuleExpressionGroupLimitExceeded|Rule expression containing more than 100 group ids is not allowed.|Expression contains more group id's than imposed limit.|
+|422|InvalidProtectionRuleStatusForDynamicRuleEdit|Patch operation is not allowed in current state.|Patch operation is not allowed in deleteRequested state.|
 
 ## DeleteAndUnprotect inclusion rule API errors
 
@@ -285,9 +285,9 @@ The following table lists the possible error and response code that can be retur
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is invalid.|
-|400|InvalidProtectionRuleStatusForDynamicRuleEdit|Patch operation is not allowed in current state.|Patch operation is not allowed in deleteRequested state|
 |404|ProtectionRuleNotFound|Protection rule with given ID doesn't exists.|Rule ID given is either wrong or the rule is deleted.|
-|400|InvalidProtectionRuleStatusForDynamicRuleDeleteAndUnprotectAll|DeleteAndUnprotect operation is not allowed in current state.|DeleteAndUnprotect operation is not allowed in deleteRequested state
+|422|InvalidProtectionRuleStatusForDynamicRuleDeleteAndUnprotectAll|DeleteAndUnprotect operation is not allowed in current state.|Invalid state to invoke deleteandunprotect action.|
+
 ## Run inclusion rule API errors
 
 The error codes in this section apply to the following API:
@@ -301,9 +301,9 @@ The following table lists the possible error and response code that can be retur
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is invalid.|
+|400|ProtectionRuleActionNotAllowed|Run action is not allowed for protection rule.|Invalid state for invoke run operation.|
 |400|RunNotAllowedForDynamicRule|Run operation is not allowed for dynamic rule|Invalid operation for dynamic rules.|
 |404|ProtectionRuleNotFound|Protection rule with given ID doesn't exists.|Rule ID given is either wrong or the rule is deleted.|
-|400|InvalidProtectionRuleStatusForRun|Run action is not allowed for protection rule.|Invalid state for invoke run operation.|
 
 ## Get inclusion rule by ID API errors
 
@@ -329,8 +329,9 @@ The following table lists the possible error and response code that can be retur
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is invalid.|
+|400|InvalidProtectionRuleStatusForDeletion|Delete operation is not allowed in current state.|Invalid state to invoke delete operation.|
 |404|ProtectionRuleNotFound|Protection rule with given ID doesn't exists.|Rule ID given is either wrong or the rule is deleted.|
-|422|InvalidProtectionRuleStatusForDeletion|Delete operation is not allowed in current state.|Invalid state to invoke delete operation.|
+|422|InvalidProtectionRuleStatusForDynamicRuleDeletion|Delete operation is not allowed in current state.|Invalid state to invoke delete operation on dynamic rule.|
 
 ## Get restore point API errors
 
