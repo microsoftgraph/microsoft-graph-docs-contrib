@@ -28,6 +28,8 @@ You can check up to a maximum of 20 groups per request. This function supports a
 
 ## Permissions
 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
 ### Group memberships for a directory object
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
