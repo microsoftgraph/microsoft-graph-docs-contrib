@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for work or school documents trending around users. Derived from [officeGraphInsights](officegraphinsights.md).
+Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for work or school documents trending around users. Derived from [Microsoft Graph insights](/graph/item-insights-overview).
 
 Insights are returned by the following APIs:
 
@@ -36,7 +36,7 @@ None.
 
 | Relationship      | Type          | Description  |
 | :------------- | :---------------| :-------------|
-| shared        | [sharedInsight](insights-shared.md) collection        | Calculated relationship that identifies documents shared with or by the user, includes file attachments in emails and meetings, as well as URLs and reference attachments to OneDrive for work or school and SharePoint, files found in emails, meetings, and Teams conversations. Ordered by recency of share. Inherited from [officeGraphInsights](officegraphinsights.md).|
+| shared        | [sharedInsight](insights-shared.md) collection        | Calculated relationship that identifies documents shared with or by the user, includes file attachments in emails and meetings, as well as URLs and reference attachments to OneDrive for work or school and SharePoint, files found in emails, meetings, and Teams conversations. Ordered by recency of share. Inherited from [Microsoft Graph insights](officegraphinsights.md).|
 | trending        | [trending](insights-trending.md) collection        | Calculated relationship that identifies documents trending around a user. Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for work or school and SharePoint. Trending insights help users discover potentially useful content they have access to but have never viewed before. Inherited from [officeGraphInsights](officegraphinsights.md).|
 | used        | [usedInsight](insights-used.md) collection        | Calculated relationship that identifies the latest documents viewed and modified by a user, including OneDrive for work or school and SharePoint documents. Ranked by recency of use. Inherited from [officeGraphInsights](officegraphinsights.md).|
 
