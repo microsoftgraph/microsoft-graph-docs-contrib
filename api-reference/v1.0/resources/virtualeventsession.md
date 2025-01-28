@@ -34,6 +34,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 | allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowRecording | Boolean | Indicates whether recording is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| allowedLobbyAdmitters | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the virtual event session. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
@@ -97,45 +98,29 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.virtualEventSession",
-  "id": "String (identifier)",
-  "joinWebUrl": "String",
-  "subject": "String",
-  "audioConferencing": {
-    "@odata.type": "microsoft.graph.audioConferencing"
-  },
-  "chatInfo": {
-    "@odata.type": "microsoft.graph.chatInfo"
-  },
-  "videoTeleconferenceId": "String",
-  "joinMeetingIdSettings": {
-    "@odata.type": "microsoft.graph.joinMeetingIdSettings"
-  },
-  "joinInformation": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "lobbyBypassSettings": {
-    "@odata.type": "microsoft.graph.lobbyBypassSettings"
-  },
-  "isEntryExitAnnounced": "Boolean",
-  "allowedPresenters": "String",
-  "allowAttendeeToEnableMic": "Boolean",
   "allowAttendeeToEnableCamera": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowedLobbyAdmitters": "String",
+  "allowedPresenters": "String",
   "allowMeetingChat": "String",
-  "allowTeamworkReactions": "Boolean",
   "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
-  "shareMeetingChatHistoryDefault": "String",
   "allowParticipantsToChangeName": "Boolean",
+  "allowTeamworkReactions": "Boolean",
+  "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "id": "String (identifier)",
+  "isEntryExitAnnounced": "Boolean",
+  "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
+  "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
+  "joinWebUrl": "String",
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "recordAutomatically": "Boolean",
-  "watermarkProtection": {
-    "@odata.type": "microsoft.graph.watermarkProtectionValues"
-  },
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  }
+  "shareMeetingChatHistoryDefault": "String",
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "subject": "String",
+  "videoTeleconferenceId": "String",
+  "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
 }
 ```
 

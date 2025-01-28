@@ -98,6 +98,7 @@ The last column indicates whether updating this property will take effect for an
 | allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                          |
 | allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                          |
 | allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                          |
+| allowedLobbyAdmitters       | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. | Yes                                 |
 | recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                           |
 
 > [!NOTE]
