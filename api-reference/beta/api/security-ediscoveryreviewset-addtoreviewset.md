@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start the process of adding a collection from Microsoft 365 services to a [review set](../resources/security-ediscoveryreviewset.md). After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [Add to review set operation](../resources/security-ediscoveryaddtoreviewsetoperation.md).
+Start the process of adding a collection from Microsoft 365 services to a [review set](../resources/security-ediscoveryreviewset.md). After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers. The location provides a URL that returns a [Add to review set operation](../resources/security-ediscoveryaddtoreviewsetoperation.md).
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -57,10 +57,10 @@ The following table shows the parameters that can be used with this action.
 |Name|Description|
 |:---|:---|
 |allVersions|include all versions of a sharepoint document matching the source collection query. Caution: SharePoint versions can significantly increase the volume of items |
-|linkedFiles|include linked files that were shared in outlook, teams, or yammer messages by attaching a link to the file.|
-|advancedIndexing|Perform advanced indexing during export to reduce false matches.|
+|linkedFiles|include linked files that were shared in outlook, teams, or Yammer messages by attaching a link to the file.|
+|advancedIndexing|To reduce false matches, perform advanced indexing during export.|
 |listAttachments|Include list attachments.|
-|htmlTranscripts|Contextual chat messages will be threaded into HTML transcript.|
+|htmlTranscripts|Contextual chat messages are threaded into HTML transcript.|
 |messageConversationExpansion|Include conversation context around a hit.|
 |locationsWithoutHits|Look for unindexed items even in locations without hits.|
 |allItemsInFolder|Include all content in folder if the folder itself matches a query.|

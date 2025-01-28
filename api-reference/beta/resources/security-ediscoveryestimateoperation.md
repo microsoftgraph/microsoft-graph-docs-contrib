@@ -43,7 +43,7 @@ None.
 |Name|Description|
 |:----|-----------|
 |includeRefiners      | Refine with categories to include people, sensitive information types, item types, and errors.|
-|includeQueryStats    | Include query keywords report to assess keyword relevance of your search query.|
+|includeQueryStats    | Include query keywords report assessing keyword relevance of your search query.|
 |includeUnindexedStats| Include partially indexed items.|
 |advancedIndexing     | Perform advanced indexing during search to reduce false matches.|
 |locationsWithoutHits | Estimate unindexed items even in locations without hits.|
