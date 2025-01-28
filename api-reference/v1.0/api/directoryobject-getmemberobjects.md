@@ -1,5 +1,5 @@
 ---
-title: "Get member objects"
+title: "directoryObject: getMemberObjects"
 description: "Return all the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of. This function is transitive."
 ms.localizationpriority: medium
 author: "keylimesoda"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# Get member objects
+# directoryObject: getMemberObjects
 
 Namespace: microsoft.graph
 
@@ -31,9 +31,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|User.ReadBasic.All and GroupMember.Read.All|Directory.Read.All |
+|Delegated (work or school account)|Directory.Read.All|Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|User.ReadBasic.All and GroupMember.Read.All|Directory.Read.All|
+|Application|Directory.Read.All|Directory.ReadWrite.All  |
+
+> [!NOTE]
+> The *Directory.\** permissions allow you to retrieve any supported directory object type via this API. To retrieve only a specific type, you can use permissions specific to the resource.
 
 ### Memberships for the signed-in user
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->

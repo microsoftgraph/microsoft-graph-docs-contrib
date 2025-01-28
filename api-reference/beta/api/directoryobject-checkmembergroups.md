@@ -36,9 +36,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|User.ReadBasic.All and GroupMember.Read.All|User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All |
+|Delegated (work or school account)|Directory.Read.All|Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|User.ReadBasic.All and GroupMember.Read.All|User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All|
+|Application|Directory.Read.All|Directory.ReadWrite.All  |
+
+> [!NOTE]
+> The *Directory.\** permissions allow you to retrieve any supported directory object type via this API. To retrieve only a specific type, you can use permissions specific to the resource.
 
 ### Group memberships for the signed-in user
 
