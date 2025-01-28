@@ -32,8 +32,8 @@ None.
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |additionalDataOptions|String|The options for adding items to reviewSet. |
-|cloudAttachmentVersion|String| Specify how many versions of cloud attachments to collect.|
-|documentVersion|String| Specify how many versions of SharePoint documents to collect.|
+|cloudAttachmentVersion|[microsoft.graph.security.cloudAttachmentVersion](../resources/enums.md#cloudattachmentversion-values)| Specify how many versions of cloud attachments to collect.|
+|documentVersion|[microsoft.graph.security.documentVersion](../resources/enums.md#documentversion-values)| Specify how many versions of SharePoint documents to collect.|
 |itemsToInclude|String| The items to include in the review set. Possible values are: `searchHits`, `partiallyIndexed`.|
 
 ### itemsToInclude values
@@ -74,7 +74,6 @@ The following JSON representation shows the resource type.
   "resultInfo": {
     "@odata.type": "microsoft.graph.resultInfo"
   },
-  ,
   "additionalDataOptions": "String",
   "cloudAttachmentVersion": "String",
   "documentVersion": "String",
