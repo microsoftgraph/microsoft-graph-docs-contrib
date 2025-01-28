@@ -11,8 +11,6 @@ ms.date: 10/29/2024
 # Get auditLogQuery
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of an [auditLogQuery](../resources/security-auditlogquery.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -71,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/auditLog/queries/{auditLogQueryId}
+GET https://graph.microsoft.com/v1.0/security/auditLog/queries/{auditLogQueryId}
 ```
 
 # [C#](#tab/csharp)

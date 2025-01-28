@@ -12,8 +12,6 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a JSON object containing the actual audit log data.
 
 Inherits from [auditData](../resources/security-auditdata.md).

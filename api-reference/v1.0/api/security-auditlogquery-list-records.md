@@ -12,8 +12,6 @@ ms.date: 10/29/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of the [auditLogRecord](../resources/security-auditlogrecord.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -80,7 +78,7 @@ The following example shows a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/security/auditLog/queries/{auditLogQueryId}/records
+GET https://graph.microsoft.com/v1.0/security/auditLog/queries/{auditLogQueryId}/records
 ```
 
 # [C#](#tab/csharp)

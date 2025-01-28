@@ -11,8 +11,6 @@ ms.date: 10/29/2024
 # Create auditLogQuery
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [auditLogQuery](../resources/security-auditlogquery.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -89,7 +87,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/auditLog/queries
+POST https://graph.microsoft.com/v1.0/security/auditLog/queries
 Content-Type: application/json
 
 {
