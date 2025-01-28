@@ -3432,21 +3432,3 @@ Possible values for user account types (group membership), per Windows definitio
 |deviceCodeFlow|
 |authenticationTransfer|
 |unknownFutureValue|
-
-### cloudAttachmentVersion values
-
-|Member|Description|
-|:----|-----------|
-|latest     | Latest version only. |
-|recent10   | Last 10 versions. |
-|recent100  | Last 100 versions. |
-|all        | All versions. |
-
-### documentVersion values
-
-|Member|Description|
-|:----|-----------|
-|latest     | Latest version only. |
-|recent10   | Last 10 versions. |
-|recent100  | Last 100 versions. |
-|all        | All versions. |
