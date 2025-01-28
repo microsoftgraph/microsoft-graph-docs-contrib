@@ -56,7 +56,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 | advancedIndexing            | Perform advanced indexing during export to reduce false matches. |
 | allItemsInFolder            | Include all content in list if the list itself matches a query. |
 | includeFolderAndPath        | Include folder and path structure of the source. | 
-| condensePaths               | Truncate file paths so they fit within 1024 characters.|
+| condensePaths               | Truncate file paths so they fit within 1,024 characters.|
 | friendlyName                | Give each item a friendly name. |
 | splitSource                 | Organize data from different locations into separate folders or PSTs. |
 | optimizedPartitionSize      | Optimize export package partition size. |

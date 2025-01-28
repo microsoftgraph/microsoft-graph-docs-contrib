@@ -39,8 +39,8 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|azureBlobContainer (deprecated)|String| The name of the Azure storage location where the export is stored. This only applies to exports stored in your own Azure storage location. The **azureBlobContainer** property is deprecated and will stop returning data on April 30, 2023. |
-|azureBlobToken (deprecated)|String| The SAS token for the Azure storage location. This only applies to exports stored in your own Azure storage location. The **azureBlobToken** property is deprecated and will stop returning data on April 30, 2023. |
+|azureBlobContainer (deprecated)|String| The name of the Azure storage location where the export is stored. This name only applies to exports stored in your own Azure storage location. The **azureBlobContainer** property is deprecated and will stop returning data on April 30, 2023. |
+|azureBlobToken (deprecated)|String| The SAS token for the Azure storage location. This token only applies to exports stored in your own Azure storage location. The **azureBlobToken** property is deprecated and will stop returning data on April 30, 2023. |
 |outputFolderId (deprecated) | String | The output folder ID. The **outputFolderId** property is deprecated and will stop returning data on April 30, 2023.
 
 ### exportOptions values
