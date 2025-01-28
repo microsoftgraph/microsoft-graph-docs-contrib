@@ -58,7 +58,7 @@ Alerts from the following security providers are available via these rich alerts
 - [Microsoft Defender for Identity](/defender-for-identity/alerts-overview) 
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview?view=o365-worldwide&preserve-view=true)
 - [Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide&preserve-view=true)
-- [Microsoft Purview Insider Risk Management](/purview/insider-risk-management?view=o365-worldwide) 
+- [Microsoft Purview Insider Risk Management](/purview/insider-risk-management?view=o365-worldwide&preserve-view=true) 
 
 ### Legacy alerts
 
