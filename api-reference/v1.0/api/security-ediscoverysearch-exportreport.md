@@ -49,7 +49,7 @@ The following table lists the parameters that you can use with this action.
 
 | Parameter | Type | Description |
 |:---|:---|:---|
-| additionalOptions | [microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values) | The additional options for the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `htmlTranscripts`, `advancedIndexing`, `allItemsInFolder`, `unknownFutureValue`. Note: `advancedIndexing` is only avaliable if exportCriteria includes `partiallyIndexed`. Required.|
+| additionalOptions | [microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values) | The additional options for the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `htmlTranscripts`, `advancedIndexing`, `allItemsInFolder`, `unknownFutureValue`. Note: `advancedIndexing` is only available if exportCriteria includes `partiallyIndexed`. Required.|
 | description | String | The description of the export report. |
 | displayName | String | The display name of the export report. |
 | exportCriteria | [microsoft.graph.security.exportCriteria](../resources/security-ediscoverysearchexportoperation.md#exportcriteria-values) | The portion of the estimate report to be exported. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`. Required.|

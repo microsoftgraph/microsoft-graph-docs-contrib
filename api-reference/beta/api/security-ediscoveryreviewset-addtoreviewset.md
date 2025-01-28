@@ -63,7 +63,7 @@ The following table shows the parameters that can be used with this action.
 |htmlTranscripts|Contextual chat messages will be threaded into HTML transcript.|
 |messageConversationExpansion|Include conversation context around a hit.|
 |locationsWithoutHits|Look for unindexed items even in locations without hits.|
-|allItemsInFolder|Include all content in folder if the folder iteself matches a query.|
+|allItemsInFolder|Include all content in folder if the folder itself matches a query.|
 
 ## Response
 

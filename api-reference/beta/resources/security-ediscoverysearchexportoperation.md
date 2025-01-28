@@ -52,11 +52,11 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 | subfolderContents           | Collect items inside subfolders of a matched folder.|
 | listAttachments             | Collect files attached to SharePoint lists and their child items.|
 | unknownFutureValue          | Evolvable enumeration sentinel value. Don't use. |
-| htmlTranscripts             | Contextual chat messages will be threaded into HTML transcripts. |
+| htmlTranscripts             | Contextual chat messages are threaded into HTML transcripts. |
 | advancedIndexing            | Perform advanced indexing during export to reduce false matches. |
 | allItemsInFolder            | Include all content in list if the list itself matches a query. |
 | includeFolderAndPath        | Include folder and path structure of the source. | 
-| condensePaths               | Truncate file paths so they will fit within 1024 characters.|
+| condensePaths               | Truncate file paths so they fit within 1024 characters.|
 | friendlyName                | Give each item a friendly name. |
 | splitSource                 | Organize data from different locations into separate folders or PSTs. |
 | optimizedPartitionSize      | Optimize export package partition size. |

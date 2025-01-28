@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the process of estimating statistics (items count, size and number of locations) of an eDiscovery search.
+Represents the process of estimating statistics (items count, size, and number of locations) of an eDiscovery search.
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 

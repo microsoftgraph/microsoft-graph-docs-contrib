@@ -48,7 +48,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## Response
 
 If the estimate is started successfully, this action returns a `202 Accepted` response code.
-The response will also contain a `Location` header, which contains the location of the [microsoft.graph.security.estimateStatisticsOperation](../resources/security-ediscoveryestimateoperation.md) that was created to handle the estimate. Check the status of the estimate operation by making a GET request to the location.
+The response also contains a `Location` header, which contains the location of the [microsoft.graph.security.estimateStatisticsOperation](../resources/security-ediscoveryestimateoperation.md) that was created to handle the estimate. Check the status of the estimate operation by making a GET request to the location.
 
 ## Examples
 

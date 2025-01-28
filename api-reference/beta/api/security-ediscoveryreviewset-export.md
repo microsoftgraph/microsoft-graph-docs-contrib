@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |description|String| Description of the export. |
 |exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`. The `fileInfo` member is deprecated and has stopped returning data. The summary and load file are always included. Note: If `originalFiles` is not selected, only the `tags` member is considered. |
-|exportStructure|String| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `msg`. Note: `directory` is on the way for deprecation. Currently, if `directory` is selected the format will be `msg`, and the exportOptions `splitSource`, `includeFolderAndPath`, `friendlyName` will be disregarded.|
+|exportStructure|String| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `msg`. Note: `directory` is on the way for deprecation. Currently, if `directory` is selected, the format is `msg`, and the export options `splitSource`, `includeFolderAndPath`, and `friendlyName` are disregarded.|
 |outputName|String| Name of the export. Required. |
 |azureBlobContainer (deprecated)|String| When you export to your own Azure storage account, the value is the container URL. The **azureBlobContainer** property is deprecated and has stopped returning data. |
 |azureBlobToken (deprecated)|String| When you export to your own Azure storage account, SAS token for the container URL. The **azureBlobToken** property is deprecated and has stopped returning data. |

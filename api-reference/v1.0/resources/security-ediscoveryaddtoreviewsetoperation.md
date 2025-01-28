@@ -33,7 +33,7 @@ None.
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |additionalDataOptions|String|The options for adding items to reviewSet. |
 |cloudAttachmentVersion|String| Specify how many versions of cloud attachments to collect.|
-|documentVersion|String| Specify how many version of SharePoint documents to collect.|
+|documentVersion|String| Specify how many versions of SharePoint documents to collect.|
 |itemsToInclude|String| The items to include in the review set. Possible values are: `searchHits`, `partiallyIndexed`.|
 
 ### itemsToInclude values
