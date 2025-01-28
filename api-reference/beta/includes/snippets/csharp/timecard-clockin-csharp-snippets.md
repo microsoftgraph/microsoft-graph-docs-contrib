@@ -15,12 +15,12 @@ var requestBody = new ClockInPostRequestBody
 	Notes = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "clock in notes",
+		Content = "clocking in",
 	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"atAprovedLocation" , true
+			"isAtApprovedLocation" , true
 		},
 	},
 };

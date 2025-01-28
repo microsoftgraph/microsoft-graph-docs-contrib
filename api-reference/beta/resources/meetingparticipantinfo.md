@@ -26,7 +26,7 @@ Contains information about a participant in a meeting.
 
 ### onlineMeetingRole values
 
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the `coorganizer` value in this evolvable enum.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to get the `coorganizer` value in this evolvable enum.
 
 | Value              | Description                                                            |
 | ------------------ | ---------------------------------------------------------------------- |
