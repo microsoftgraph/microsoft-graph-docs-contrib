@@ -13,10 +13,10 @@ from msgraph_beta.generated.models.body_type import BodyType
 request_body = ClockOutPostRequestBody(
 	notes = ItemBody(
 		content_type = BodyType.Text,
-		content = "clock out smaple notes",
+		content = "clocking out",
 	),
 	additional_data = {
-			"at_aproved_location" : True,
+			"is_at_approved_location" : True,
 	}
 )
 
