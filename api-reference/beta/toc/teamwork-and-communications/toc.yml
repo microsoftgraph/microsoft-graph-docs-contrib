@@ -334,6 +334,18 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+  - name: Call delegation
+    items:
+    - name: Overview
+      href: ../../resources/calldelegation.md
+    - name: List delegators
+      href: ../../api/caldelegate-listdelegators.md
+    - name: Get delegator
+      href: ../../api/caldelegate-getdelegator.md
+    - name: List delegates
+      href: ../../api/caldelegate-listdelegates.md
+    - name: Get delegates
+      href: ../../api/caldelegate-getdelegate.md
   - name: Call events
     items:
     - name: Call event
