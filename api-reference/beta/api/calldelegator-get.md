@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a [delegator](..
 
 ### Example 1: Get details from specific delegator
 
-The following example shows how to get details from an specific delegator from a user.
+The following example shows how to get details from a specific delegator from a user.
 
 #### Request
 

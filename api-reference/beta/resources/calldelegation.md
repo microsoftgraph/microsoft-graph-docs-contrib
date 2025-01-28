@@ -8,13 +8,12 @@ ms.subservice: "cloud-communications"
 ms.date: 01/28/2025
 ---
 
-# call delegation resource type
+# Delegation Call APIs
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-# Microsoft Graph Call Delegation APIs
 
 ## Overview
 
@@ -90,7 +89,7 @@ To access these APIs, the following configurations are required:
 | **allowedActions.pickUpHeldCalls**                | Determines if the delegate can pick up held calls. |
 | **allowedActions.joinActiveCalls**                | Determines if the delegate can join active calls. |
 
-## Additional Resources
+## More Resources
 
 - [Share a phone line with a delegate in Microsoft Teams](https://support.microsoft.com/en-us/teams/share-phone-line-delegate)
 - [Microsoft Teams PowerShell - Set-CsTeamsCallingPolicy](https://learn.microsoft.com/en-us/powershell/module/teams/set-csteamscallingpolicy)

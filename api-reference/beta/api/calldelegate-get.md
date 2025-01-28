@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a [delegate](../
 
 ### Example 1: Get details from specific delegate
 
-The following example shows how to get details from an specific delegate from a user.
+The following example shows how to get details from a specific delegate from a user.
 
 #### Request
 
