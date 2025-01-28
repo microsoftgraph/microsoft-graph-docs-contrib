@@ -14047,6 +14047,80 @@
       "SubArea": "Directory management"
   },
   {
+    "ChangeList": [
+      {
+        "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+        "ApiChange": "Property",
+        "ChangedApiName": "keyCredentials",
+        "ChangeType": "Deletion",
+        "Description": "Removed the **keyCredentials** property from the [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+        "Target": "appManagementConfiguration"
+      },
+      {
+        "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+        "ApiChange": "Property",
+        "ChangedApiName": "passwordCredentials",
+        "ChangeType": "Deletion",
+        "Description": "Removed the **passwordCredentials** property from the [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+        "Target": "appManagementConfiguration"
+      },
+      {
+        "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "keyCredentials",
+        "ChangeType": "Addition",
+        "Description": "Added the [keyCredentials](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+        "Target": "appManagementConfiguration"
+      },
+      {
+        "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "passwordCredentials",
+        "ChangeType": "Addition",
+        "Description": "Added the [passwordCredentials](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+        "Target": "appManagementConfiguration"
+      },
+      {
+        "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+        "ApiChange": "Resource",
+        "ChangedApiName": "keyCredentialConfiguration",
+        "ChangeType": "Deletion",
+        "Description": "Removed the **keyCredentialConfiguration** resource.",
+        "Target": "keyCredentialConfiguration"
+      },
+      {
+        "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+        "ApiChange": "Resource",
+        "ChangedApiName": "passwordCredentialConfiguration",
+        "ChangeType": "Deletion",
+        "Description": "Removed the **passwordCredentialConfiguration** resource.",
+        "Target": "passwordCredentialConfiguration"
+      },
+      {
+        "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+        "ApiChange": "Resource",
+        "ChangedApiName": "keyCredentialConfiguration",
+        "ChangeType": "Addition",
+        "Description": "Added the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-beta) resource.",
+        "Target": "keyCredentialConfiguration"
+      },
+      {
+        "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+        "ApiChange": "Resource",
+        "ChangedApiName": "passwordCredentialConfiguration",
+        "ChangeType": "Addition",
+        "Description": "Added the [passwordCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordCredentialConfiguration?view=graph-rest-beta) resource.",
+        "Target": "passwordCredentialConfiguration"
+      }
+    ],
+    "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+    "Cloud": "Prod",
+    "Version": "beta",
+    "CreatedDateTime": "2025-01-27T19:34:12.8370904Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Directory management"
+  },
+  {
       "ChangeList": [
 	{
         "Id": "8cd03a79-71de-467d-bd73-0b3449a28bfc",
