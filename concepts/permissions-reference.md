@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 01/20/2025
+ms.date: 01/27/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -2016,6 +2016,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### DeviceManagementScripts.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | c7a5be92-2b3d-4540-8a67-c96dcaae8b43 | d32381d8-ee89-4220-9c83-b672aa68d404 |
+| DisplayText | Read Microsoft Intune Scripts | Read Microsoft Intune Scripts |
+| Description | Allows the app to read Microsoft Intune device compliance scripts, device management scripts, device shell scripts, device custom attribute shell scripts and device health scripts, without a signed-in user. | Allows the app to read Microsoft Intune device compliance scripts, device management scripts, device shell scripts, device custom attribute shell scripts and device health scripts on behalf of the signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### DeviceManagementScripts.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9255e99d-faf5-445e-bbf7-cb71482737c4 | 8b9d79d0-ad75-4566-8619-f7500ecfcebe |
+| DisplayText | Read and write Microsoft Intune Scripts | Read and write Microsoft Intune Scripts |
+| Description | Allows the app to read and write Microsoft Intune device compliance scripts, device management scripts, device shell scripts, device custom attribute shell scripts and device health scripts, without a signed-in user. | Allows the app to read and write Microsoft Intune device compliance scripts, device management scripts, device shell scripts, device custom attribute shell scripts and device health scripts on behalf of the signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### DeviceManagementServiceConfig.Read.All
 
 | Category | Application | Delegated |
@@ -2039,6 +2061,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes |
 
 [!INCLUDE [DeviceManagementServiceConfig.ReadWrite.All](../includes/permissions-notes/devicemanagementserviceconfig.readwrite.all.md)]
+
+---
+
+### DeviceTemplate.Create
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | abf6441f-0772-4932-96e7-0191478dd73a | 0b1717ff-3e42-4a73-8c29-e6b2e1093960 |
+| DisplayText | Create device template | Create device templates |
+| Description | Allows the app to create device templates. The app is marked as owner of the created device template. As a member of owners, the app will be allowed to manage devices created from the template. | Allows the app to create device templates on behalf of the signed in user. The user is marked as owners of the created device template. As a member of owners, the user will be allowed to manage devices created from the template. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 

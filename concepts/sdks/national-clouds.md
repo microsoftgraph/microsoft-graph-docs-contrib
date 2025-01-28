@@ -66,6 +66,6 @@ Connect-MgGraph -Environment USGov -ClientId 'YOUR_CLIENT_ID' `
 
 ### [TypeScript](#tab/typescript)
 
-:::code language="csharp" source="./snippets/typescript/src/snippets/nationalClouds.ts" id="NationalCloudSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/nationalClouds.ts" id="NationalCloudSnippet":::
 
 ---
