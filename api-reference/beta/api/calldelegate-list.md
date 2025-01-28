@@ -1,6 +1,6 @@
 ---
 title: "List all delegates"
-description: "Retrieve a list of all delegates for a user.."
+description: "Retrieve a list of all delegates for a user."
 author: "garchiro7"
 ms.localizationpriority: medium
 doc_type: apiPageType

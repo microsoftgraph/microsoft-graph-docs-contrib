@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fetch details of a specific delegate.. See [call delegation](../resources/calldelegation.md) for reference.
+Fetch details of a specific delegate. See [call delegation](../resources/calldelegation.md) for reference.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -46,9 +46,9 @@ If successful, this method returns a `200 OK` response code and a [delegate](../
 
 ## Examples
 
-### Example 1: Get details from specific delegte
+### Example 1: Get details from specific delegate
 
-The following example shows how to get details from an specifc delegates from a user.
+The following example shows how to get details from an specific delegate from a user.
 
 #### Request
 

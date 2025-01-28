@@ -1,5 +1,5 @@
 ---
-title: "call delegation resource type"
+title: "Call delegation resource type"
 description: "Contains information about a call delegation process."
 author: "garchiro7"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "cloud-communications"
 ms.date: 01/28/2025
 ---
 
-# call deleagation resource type
+# call delegation resource type
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Microsoft Graph introduces Call Delegation APIs to streamline communication work
 
 ## Introduction to Teams Delegation
 
-Microsoft Teams Delegation allows users to share call responsibilities by assigning delegates. Delegates can perform actions such as receiving calls, making calls on behalf of others, and managing call settings. This feature is particularly useful in scenarios where an assistant or team member handles communications for another user.
+Microsoft Teams Delegation allows users to share call responsibilities by assigning delegates. Delegates can perform actions such as receiving calls, making calls on behalf of others, and managing call settings. This feature is useful in scenarios where an assistant or team member handles communications for another user.
 
 Microsoft Graph enable developers to programmatically manage delegators and delegates. Common scenarios include:
 
@@ -31,7 +31,7 @@ Microsoft Graph enable developers to programmatically manage delegators and dele
 - Streamlining communication workflows within teams.
 
 ### What is a Delegator?
-A delegator is a user who grants another user (delegate) the ability to perform certain actions on their behalf, such as making and receiving calls, managing call settings, or joining active calls. Delegators are typically users who need assistance in handling their communication responsibilities.
+A delegator is a user who grants another user (delegate) the ability to perform certain actions on their behalf, such as making and receiving calls, manage call settings, or join active calls. Delegators are typically users who need assistance in handling their communication responsibilities.
 
 ### What is a Delegate?
 A delegate is a user who is assigned responsibilities by a delegator. Delegates can take specific actions like answering calls, initiating calls, and managing call settings on behalf of the delegator. This role is commonly used by assistants or team members to facilitate seamless communication workflows.
