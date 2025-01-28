@@ -91,5 +91,5 @@ To access these APIs, the following configurations are required:
 
 ## More Resources
 
-- [Share a phone line with a delegate in Microsoft Teams](https://support.microsoft.com/teams/share-phone-line-delegate)
+- [Share a phone line with a delegate in Microsoft Teams](https://support.microsoft.com/office/share-a-phone-line-with-a-delegate-in-microsoft-teams-16307929-a51f-43fc-8323-3b1bf115e5a8)
 - [Microsoft Teams PowerShell - Set-CsTeamsCallingPolicy](https://learn.microsoft.com/powershell/module/teams/set-csteamscallingpolicy)
