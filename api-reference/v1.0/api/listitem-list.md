@@ -156,7 +156,7 @@ If an empty result is returned, there are no items within the current increment 
 If a `@odata.nextLink` URL is returned, there are more pages of data to retrieve in the session, even if the current response contains an empty result. 
 
 ### Example
-<!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-items-with-filter", "scopes": "sites.read.all" } -->
 ```http
 GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)&$filter=fields/Quantity lt 600
 ```
