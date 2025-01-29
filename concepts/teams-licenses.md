@@ -150,9 +150,9 @@ The organization that owns the app registration is responsible for the payment. 
 ## Payment-related errors
 
 If incorrect licensing is detected, the API call fails and data won't be returned.
-Specifically, for most APIs, attempting to GET messages for an unlicensed user will result in a `402` error code. 
+Specifically, for most APIs, attempting to GET messages for an unlicensed user, results in a `402` error code. 
 For change notifications, messages sent by unlicensed users won't generate a change notification. 
-API calls and change notifications used in evaluation mode in excess of the evaluation quota will fail. 
+API calls and change notifications used in evaluation mode in excess of the evaluation quota fails. 
 
 | Error code | Scenario | Sample error message |
 |:-----------|:-----------|:-----------------|
@@ -218,7 +218,7 @@ You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-get
 | How do I create an Azure subscription? | The Azure subscription must be available in the same tenant where the app is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is also possible to create a PAYG subscription using a credit card or pay by check or wire transfer. For details, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) and [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement). |
 | Who is responsible for the payment in the case of multitenant apps? | The organization that owns the app registration. |
 | Is possible to differentiate billing from multitenant or single tenant app? | Yes, this information must be provided as part of Azure billing details. |
-| Is there a charge when no message is returned using any model? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages will not be charged. | 
+| Is there a charge when no message is returned using any model? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages aren't charged. | 
 | Where can I monitor the cost and billing? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource ID among other parameters. For more details, please see [View the costs billed for the metered Microsoft Teams APIs](#view-the-costs-billed-for-the-metered-microsoft-teams-apis) above. |
 | Is there a volume discount? | Flat rates apply. |  
 | Are these APIs enrolled in [Microsoft Azure Consumption Commitment (MACC) program](/azure/marketplace/azure-consumption-commitment-enrollment)? | Not at this time.|
