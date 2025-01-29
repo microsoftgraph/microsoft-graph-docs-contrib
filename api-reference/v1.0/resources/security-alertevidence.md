@@ -53,6 +53,7 @@ This resource is the base type for the following evidence types:
 * [securityGroupEvidence](security-securitygroupevidence.md)
 * [urlEvidence](security-urlevidence.md)
 * [userEvidence](security-userevidence.md)
+* [teamsMessage](security-teamsmessageevidence.md)
 
 ## Properties
 
