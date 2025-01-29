@@ -2517,6 +2517,66 @@
         "CreatedDateTime": "2024-11-14T16:54:36.7087445Z",
         "WorkloadArea": "Security",
         "SubArea": "Alerts and incidents"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "d21a4fff-2802-4df4-8d79-c1a54676f7e4",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "antispamTeamsDirection",
+            "ChangeType": "Addition",
+            "Description": "Added the **antispamTeamsDirection** enumeration type.",
+            "Target": "antispamTeamsDirection"
+          },
+          {
+            "Id": "d21a4fff-2802-4df4-8d79-c1a54676f7e4",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "teamsDeliveryLocation",
+            "ChangeType": "Addition",
+            "Description": "Added the **teamsDeliveryLocation** enumeration type.",
+            "Target": "teamsDeliveryLocation"
+          },
+          {
+            "Id": "d21a4fff-2802-4df4-8d79-c1a54676f7e4",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "teamsMessageDeliveryAction",
+            "ChangeType": "Addition",
+            "Description": "Added the **teamsMessageDeliveryAction** enumeration type.",
+            "Target": "teamsMessageDeliveryAction"
+          },
+          {
+            "Id": "d21a4fff-2802-4df4-8d79-c1a54676f7e4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "teamsMessageEvidence",
+            "ChangeType": "Addition",
+            "Description": "Added the [teamsMessageEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-teamsMessageEvidence?view=graph-rest-1.0) resource.",
+            "Target": "teamsMessageEvidence"
+          }
+        ],
+        "Id": "d21a4fff-2802-4df4-8d79-c1a54676f7e4",
+        "Cloud": "Review",
+        "Version": "v1.0",
+        "CreatedDateTime": "2025-01-27T17:01:34.9888434Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "6cd36606-327e-4119-b985-8122fd634b07",
+            "ApiChange": "Property",
+            "ChangedApiName": "upn",
+            "ChangeType": "Addition",
+            "Description": "Added the **upn** property to the [mailboxEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxEvidence?view=graph-rest-1.0) resource.",
+            "Target": "mailboxEvidence"
+          }
+        ],
+        "Id": "6cd36606-327e-4119-b985-8122fd634b07",
+        "Cloud": "Review",
+        "Version": "v1.0",
+        "CreatedDateTime": "2025-01-29T09:23:56.8552672Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
       }
   ]
 }

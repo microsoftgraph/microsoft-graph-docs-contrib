@@ -19,7 +19,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## January 2025: New and generally available 
 
+
 ### Files
+
+- Added [TeamsMessageEvidence](/api-reference/v1.0/resources/security-teamsmessageevidence.md) to the supported security entities.
 
 Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestoragecontainer-restore) method.
 
