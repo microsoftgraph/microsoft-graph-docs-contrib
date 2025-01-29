@@ -1,5 +1,23 @@
 {
   "changelog": [
+        {
+       "ChangeList": [
+          {
+          "Id": "9cf27d17-1736-4fde-be33-2cdaa0e6c33b",
+          "ApiChange": "Property",
+          "ChangedApiName": "riskEventType",
+          "ChangeType": "Change",
+          "Description": "Added `anomalousUserActivity`, `anomalousToken`, `attackerinTheMiddle`, `attemptedPRTAccess`, `generic`, `investigationsThreatIntelligenceSigninLinked`, `maliciousIPAddressValidCredentialsBlockedIP`,`mcasImpossibleTravel`, `mcasFinSuspiciousFileAccess`,`nationStateIP`,`suspiciousSendingPatterns`, and , `userReportedSuspiciousActivity` as a supported values for the **riskEventType** property in the [RiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-1.0) resource.",
+          "Target": "RiskDetection"
+          }
+        ],
+        "Id": "9cf27d17-1736-4fde-be33-2cdaa0e6c33b ",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2025-01-28T22:19:32.3422617Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Identity and sign-in"
+      },
       {
        "ChangeList": [
           {
