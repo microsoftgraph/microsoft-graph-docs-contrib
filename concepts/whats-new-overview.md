@@ -25,6 +25,8 @@ Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestora
 
 ### Identity and access | Identity and sign-in
 
+Added riskEvetType entries `anomalousUserActivity`, `anomalousToken`, `attackerinTheMiddle`, `attemptedPRTAccess`, `generic`,`investigationsThreatIntelligenceSigninLinked`, `maliciousIPAddressValidCredentialsBlockedIP`,`mcasImpossibleTravel`, `mcasFinSuspiciousFileAccess`,`nationStateIP`,`suspiciousSendingPatterns`, and , `userReportedSuspiciousActivity` for [risk detections](/graph/api/resources/riskdetection?view=graph-rest-1.0&preserve-view=true).
+        
 Added riskEventType entry for the Suspicious API Traffic detection for [service principals](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-1.0&preserve-view=true).
 
 ### Teamwork and communications | Calls and online meetings
