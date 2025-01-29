@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "riskEventType",
           "ChangeType": "Change",
-          "Description": "Added `anomalousUserActivity`, `anomalousToken`, `attackerinTheMiddle`, `attemptedPRTAccess`, `generic`, `investigationsThreatIntelligenceSigninLinked`, `maliciousIPAddressValidCredentialsBlockedIP`,`mcasImpossibleTravel`, `mcasFinSuspiciousFileAccess`,`nationStateIP`,`suspiciousSendingPatterns`, and , `userReportedSuspiciousActivity` as a supported values for the **riskEventType** property in the [RiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-1.0) resource.",
+          "Description": "Added `anomalousUserActivity`, `anomalousToken`, `attackerinTheMiddle`, `attemptedPRTAccess`, `generic`, `investigationsThreatIntelligenceSigninLinked`, `maliciousIPAddressValidCredentialsBlockedIP`,`mcasImpossibleTravel`, `mcasFinSuspiciousFileAccess`,`nationStateIP`,`suspiciousSendingPatterns`, and , `userReportedSuspiciousActivity` as a supported values for the **riskEventType** property in the [riskDetection](https://learn.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-1.0) resource.",
           "Target": "RiskDetection"
           }
         ],
