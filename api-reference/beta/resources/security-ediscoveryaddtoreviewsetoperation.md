@@ -32,8 +32,8 @@ None.
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |additionalDataOptions|String| The options for adding items to reviewSet. |
-|cloudAttachmentVersion|String| Specify how many versions of cloud attachments to collect.|
-|documentVersion|String| Specify how many versions of SharePoint documents to collect.|
+|cloudAttachmentVersion|String| How many most recent versions of cloud attachments to collect.|
+|documentVersion|String| How many most recent versions of SharePoint documents to collect.|
 |itemsToInclude|String| The items to include in the review set. Possible values are: `searchHits`, `partiallyIndexed`.|
 
 ### itemsToInclude values

@@ -48,16 +48,16 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|The ID of the eDiscovery search you'd like to add to the review set.|
-|additionalDataOptions|additionalDataOptions|The options for adding items to reviewSet. Note: `locationsWithoutHits` and `advancedIndexing` are only considered if itemsToIncude is set to `partiallyIndexed`.|
+|additionalDataOptions|additionalDataOptions|The options for adding items to reviewSet. Note: `locationsWithoutHits` and `advancedIndexing` are only considered if **itemsToIncude** is set to `partiallyIndexed`.|
 | itemsToInclude | microsoft.graph.security.itemsToInclude | The items to include in the review set. The possible values are `searchHits`, `partiallyIndexed`. |
-| cloudAttachmentVersion | [microsoft.graph.security.cloudAttachmentVersion](../resources/enums-security.md#cloudattachmentversion-values) | Specify how many versions of cloud attachments to collect. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
-| documentVersion | [microsoft.graph.security.documentVersion](../resources/enums-security.md#documentversion-values) | Specify how many versions of documents to collect. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
+| cloudAttachmentVersion | [microsoft.graph.security.cloudAttachmentVersion](../resources/enums-security.md#cloudattachmentversion-values) | The number of most recent versions of cloud attachments to collect. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
+| documentVersion | [microsoft.graph.security.documentVersion](../resources/enums-security.md#documentversion-values) | The number of most recent versions of documents to collect. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
 
 ### additionalDataOptions values
 |Name|Description|
 |:---|:---|
 |allVersions|include all versions of a sharepoint document matching the source collection query. Caution: SharePoint versions can significantly increase the volume of items |
-|linkedFiles|include linked files that were shared in outlook, teams, or yammer messages by attaching a link to the file.|
+|linkedFiles|include linked files that were shared in outlook, teams, or Yammer messages by attaching a link to the file.|
 |advancedIndexing|Perform advanced indexing during export to reduce false matches.|
 |listAttachments|Include list attachments.|
 |htmlTranscripts|Contextual chat messages are threaded into HTML transcripts|

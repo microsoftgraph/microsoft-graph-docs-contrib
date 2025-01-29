@@ -43,12 +43,11 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## Request body
 |Property|Type|Description|
 |:---|:---|:---|
-| statisticsOptions | microsoft.graph.security.statisticsOptions | The options to generate statistics. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`. Note: `advancedIndexing` and `locationsWithoutHits` is only considered if `includeUnindexedStats` is set.|
+| statisticsOptions | microsoft.graph.security.statisticsOptions | Bitwise options that specify the statistics to generate. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`. Note: `advancedIndexing` and `locationsWithoutHits` is only considered if `includeUnindexedStats` is set.|
 
 ## Response
 
-If the estimate is started successfully, this action returns a `202 Accepted` response code.
-The response also contains a `Location` header, which contains the location of the [microsoft.graph.security.estimateStatisticsOperation](../resources/security-ediscoveryestimateoperation.md) that was created to handle the estimate. Check the status of the estimate operation by making a GET request to the location.
+If the estimate is started successfully, this action returns a `202 Accepted` response code. The response contains a `Location` header, which contains the location of the [microsoft.graph.security.estimateStatisticsOperation](../resources/security-ediscoveryestimateoperation.md) that was created to handle the estimate. Check the status of the estimate operation by making a GET request to the value of the `Location` header.
 
 ## Examples
 

@@ -50,7 +50,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 | subfolderContents           | Collect items inside subfolders of a matched folder.|
 | listAttachments             | Collect files attached to SharePoint lists and their child items.|
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
-| htmlTranscripts             | Contextual chat messages are threaded into HTML transcripts. |
+| htmlTranscripts             | Thresd contextual chat messages into HTML transcripts. |
 | advancedIndexing            | Perform advanced indexing during export to reduce false matches. |
 | allItemsInFolder            | Include all content in list if the list itself matches a query. |
 | includeFolderAndPath        | Include folder and path structure of the source. | 

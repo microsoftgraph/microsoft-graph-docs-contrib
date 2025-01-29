@@ -40,7 +40,7 @@ None.
 |Member|Description|
 |:----|-----------|
 |searchHits       | Include indexed items that match.|
-|partiallyIndexed | Include unindexed items that may not match query.|
+|partiallyIndexed | Include unindexed items that might not match the query.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
