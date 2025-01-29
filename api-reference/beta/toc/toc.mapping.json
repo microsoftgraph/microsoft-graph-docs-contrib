@@ -2485,6 +2485,9 @@
             "microsoft.graph.security.alert",
             "microsoft.graph.security.alertEvidence",
             "microsoft.graph.security.incident"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.teamsMessageEvidence"
           ]
         },
         {
