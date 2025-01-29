@@ -36,7 +36,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |  messageDirection | [microsoft.graph.security.antispamTeamsDirection](#antispamteamsdirection-values)  | The direction of the Teams message. |
 |  messageId   | String  | Non unique identifier of a message    |
 |  owningTenantId   | Guid  | Tenant ID (GUID) of the owner of the message.  |
-|  parentMessageId  | String  | Identifier of the message to which the current message is a reply; otherwise, it is the same as the **messageId**.  |
+|  parentMessageId  | String  | Identifier of the message to which the current message is a reply; otherwise, it's the same as the **messageId**.  |
 |  receivedDateTime | DateTimeOffset | The received date of this message.   |
 |  recipients  | String collection | The recipients of this Teams message.    |
 |  remediationStatus | [microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)  | Inherited from [alertEvidence](../resources/security-alertevidence.md).   |
