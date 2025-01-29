@@ -149,9 +149,9 @@ The organization that owns the app registration is responsible for the payment. 
 
 ## Payment-related errors
 
-If incorrect licensing is detected, the API call fails and data won't be returned.
+If incorrect licensing is detected, the API call fails and data isn't returned.
 Specifically, for most APIs, attempting to GET messages for an unlicensed user, results in a `402` error code. 
-For change notifications, messages sent by unlicensed users won't generate a change notification. 
+For change notifications, messages sent by unlicensed users don't generate a change notification. 
 API calls and change notifications used in evaluation mode in excess of the evaluation quota fails. 
 
 | Error code | Scenario | Sample error message |
@@ -185,7 +185,7 @@ For more information about cost management, see [Cost Management + Billing docum
 
 ## Monitor the number of messages billed for the metered Teams APIs
 
-This section describes how to monitor the number of messages billed for the metered Teams APIs. Unlike with cost analysis, this allows you to analyze the usage of  messages within the seeded capacity, not just those above the seeded capacity for billing, if applicable to the selected licensing models.
+This section describes how to monitor the number of messages billed for the metered Teams APIs. Unlike with cost analysis, you can analyze the usage of  messages within the seeded capacity, not just the ones above the seeded capacity for billing, if applicable to the selected licensing models.
 
 A subscription owner, or anyone with required [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data), can set up a report, in CSV format, with the billing details for the entire subscription. You can export the report periodically (daily, weekly, monthly). For details, see [Tutorial: Create and manage exported data](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
 
@@ -193,7 +193,7 @@ A subscription owner, or anyone with required [RBAC (Roles Based Access Control)
 
 ## Estimate the number of messages in your Teams
 
-This section describes how to look up the number of messages in your Teams tenant. This can help you estimate the cost for using the metered APIs. If a message is retrieved through metered APIs multiple times, it's billed multiple times. Keep this in mind when you estimate the cost based on the number of messages in your Teams tenant. For example, if you called `getAllMessages` (without any filters) yesterday, and then call it again (without any filters) today, all messages from earlier than today are billed twice. For this reason, when using metered APIs, we recommend that you use filters (for example, `$top=10`, `$filter=lastModifiedDateTime gt 2019-03-17T07:13:28.000z`) or [change notifications](/graph/teams-change-notification-in-microsoft-teams-overview) to avoid retrieving the same message multiple times.
+This section describes how to look up the number of messages in your Teams tenant. It can help you estimate the cost for using the metered APIs. If a message is retrieved through metered APIs multiple times, it's billed multiple times. Keep this in mind when you estimate the cost based on the number of messages in your Teams tenant. For example, if you called `getAllMessages` (without any filters) yesterday, and then call it again (without any filters) today, all messages from earlier than today are billed twice. For this reason, when using metered APIs, we recommend that you use filters (for example, `$top=10`, `$filter=lastModifiedDateTime gt 2019-03-17T07:13:28.000z`) or [change notifications](/graph/teams-change-notification-in-microsoft-teams-overview) to avoid retrieving the same message multiple times.
 
 You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail) API, or you can use the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/) as follows:
 
@@ -210,7 +210,7 @@ You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-get
 
 |    Scenario    | Details |
 |:-------------------------|:--------|
-| Why was the number of messages billed higher than the number of messages in my Teams? | If your app is retrieving the same message multiple times, it is billed for multiple times. One way to avoid this is to use [change notifications](/graph/api/subscription-post-subscriptions) instead of [export APIs](/microsoftteams/export-teams-content).  If you must use export APIs, make sure to use filters (for example, `$filter=lastModifiedDateTime`, `$filter=from`). |
+| Why was the number of messages billed higher than the number of messages in my Teams? | If your app is retrieving the same message multiple times, it is billed for multiple times. One way to avoid it is to use [change notifications](/graph/api/subscription-post-subscriptions) instead of [export APIs](/microsoftteams/export-teams-content).  If you must use export APIs, make sure to use filters (for example, `$filter=lastModifiedDateTime`, `$filter=from`). |
 | Did billing actually started on July 5? | Yes, we're onboarding partners in phases. For continued access, follow the instructions on [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes. 
 | What should I expect after setting up an Azure subscription? | Billing is effective immediately.  You can monitor the costs as described in the [View the costs billed for the metered Microsoft Teams APIs](#view-the-costs-billed-for-the-metered-microsoft-teams-apis) section above. |
 | Do I need to provide an Azure subscription if my application isn't calling metered APIs? | We recommend that you provide an Azure subscription because most scenarios use metered APIs. |
