@@ -58,8 +58,6 @@ where files are shared, and where tabs are added.
 |[Unshare channel with team](../api/sharedwithchannelteaminfo-delete.md)|None|Unshare a channel with a team.|
 |[List allowed members](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of team members who have access to the shared channel.|
 |[Check user access](../api/channel-doesuserhaveaccess.md)|Boolean|Check whether a user has access to a shared channel or not.|
-| **Planner** |  |  |
-|[List plans](../api/teamschannelplanner-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a list of [plannerPlan](../resources/plannerplan.md) objects owned by a shared [channel](../resources/channel.md) in Teams.|
 
 ## Properties
 
@@ -103,14 +101,13 @@ For a POST request example, see [Request (create channel in migration state)](/m
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
+|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
+|tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
+|members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
 |allMembers|[conversationMember](conversationmember.md) collection |A collection of membership records associated with the channel. It includes both direct and indirect members of shared channels.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
-|members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
-|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. Nullable.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
-|planner|[teamsChannelPlanner](teamschannelplanner.md) | Selective Planner services available to this channel. Currently, only shared channels are supported. Read-only. Nullable. |
 |sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|A collection of teams with which a channel is shared.|
-|tabs|[teamsTab](../resources/teamstab.md) collection| A collection of all the tabs in the channel.|
 
 ## JSON representation
 
