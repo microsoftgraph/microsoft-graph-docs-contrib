@@ -1,8 +1,8 @@
 ---
 title: "teamsMessageEvidence resource type"
 description: "Represents a teams message that is reported as part of the security detection alert."
-ms.date: 29/01/2025
-author: "t-hareldamti"
+ms.date: 01/29/2025
+author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
@@ -39,7 +39,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |  recipients  | String collection | The recipients of this Teams message.    |
 |  remediationStatus | [microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)  | Inherited from [alertEvidence](../resources/security-alertevidence.md).   |
 |  remediationStatusDetails | String  | Inherited from [alertEvidence](../resources/security-alertevidence.md).   |
-|  roles   | [microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md##evidencerole-values) collection | Inherited from [alertEvidence](../resources/security-alertevidence.md). |
+|  roles   | [microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md#evidencerole-values) collection | Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 |  senderFromAddress     | String  | The SMTP format address of the sender. |
 |  senderIP    | String  | The IP address of the sender.  |
 |  sourceAppName    | String  | Source of the message; for example, `desktop` and `mobile`.  |
