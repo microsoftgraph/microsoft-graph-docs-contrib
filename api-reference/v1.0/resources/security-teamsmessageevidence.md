@@ -1,6 +1,6 @@
 ---
 title: "teamsMessageEvidence resource type"
-description: "Represents a teams message that is reported as part of the security detection alert."
+description: "Represents a Microsoft Teams message that is reported as part of the security detection alert."
 ms.date: 01/29/2025
 author: "hareldamti"
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents a teams message that is reported as part of the security detection alert.
+Represents a Microsoft Teams message that is reported as part of the security detection alert.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
