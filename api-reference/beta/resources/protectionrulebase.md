@@ -36,6 +36,7 @@ The following limitations apply to this resource:
 - The dynamic rule expression supports a maximum of 100 group ID's in an expression.
 - At present maximum 6,000 users can be protected via dynamic rule.
 - Expression with nested distribution list or security group is not supported.
+- Multi-geo is not available for dynamic rules.
 
 ## Properties
 
