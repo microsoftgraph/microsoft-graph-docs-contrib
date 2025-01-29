@@ -8,7 +8,6 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-
 # teamsMessageEvidence resource type
 
 Namespace: microsoft.graph.security

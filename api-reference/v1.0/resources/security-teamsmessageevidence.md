@@ -1,6 +1,6 @@
 ---
 title: "teamsMessageEvidence resource type"
-description: "A file that is reported in the alert as evidence."
+description: "Represents a teams message that is reported as part of the security detection alert."
 ms.date: 29/01/2025
 author: "t-hareldamti"
 ms.localizationpriority: medium
@@ -8,12 +8,11 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-
-# fileEvidence resource type
+# teamsMessageEvidence resource type
 
 Namespace: microsoft.graph.security
 
-A file that is reported in the alert as evidence.
+Represents a teams message that is reported as part of the security detection alert.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
@@ -21,70 +20,68 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| `campaignId` | String  | The identifier of the campaign in which teams message is present. |
-| `groupId`    | String  | The identifier of Team or Group in which this message is present.   |
-| `messageId`  | String  | Non unique identifier of a message    |
-| `parentMessageId` | String  | Identifier of the message for which current message was a reply, else same as MessageId    |
-| `owningTenantId`  | Guid  | Tenant Id of the owner of the message (GUID)   |
-| `threadId`   | String  | Identifier of the channel/chat that this message is part of|
-| `threadType` | String  | Teams message type - Chat, Topic, Space, Meeting   |
-| `channelId`  | String  | The channel id of this Teams message|
-| `sourceId`   | String  | The source id of this Teams message |
-| `sourceAppName`   | String  | Source of the message (desktop, mobile etc.)  |
-| `isExternal` | Boolean | Indicates if there are external users in the chat  |
-| `isOwned`    | Boolean | Boolean value indicating if the message is owned by your organization  |
-| `messageDirection`| [microsoft.graph.security.antispamTeamsDirection](#antispamTeamsDirection-values)  | Directionality of the Teams Message |
-| `deliveryAction`  | [microsoft.graph.security.teamsMessageDeliveryAction](#teamsMessageDeliveryAction-values)  | The delivery action of this Teams message like Delivered, Blocked, Redelivered   |
-| `deliveryLocation`| [microsoft.graph.security.teamsDeliveryLocation](#teamsDeliveryLocation-values)   | The delivery location of this Teams message like Teams, Quarantine|
-| `subject`    | String  | The subject of this Teams message   |
-| `receivedDateTime`| DateTimeOffset | The received date of this message   |
-| `lastModifiedDateTime` | DateTimeOffset | Date and time when the message was last edited|
-| `recipients` | String collection | The recipients of this Teams message.    |
-| `senderFromAddress`    | String  | The sender's smtp format address |
-| `senderIP`   | String  | The sender's IP address   |
-| `suspiciousRecipients` | String collection | The list of recipients who were detected as suspicious  |
-| `files` | [microsoft.graph.security.fileEvidence](./security-fileevidence.md) collection  | Holds list of File entities which relate (attached) to this Teams message entity instance. |
-| `urls`  | [microsoft.graph.security.urlEvidence](./security-urlevidence.md) collection  | The Urls contained in this Teams message   |
+|  campaignId  | String  | The identifier of the campaign that this Teams message is part of. |
+|  channelId   | String  | The channel ID associated with this Teams message. |
+|  createdDateTime | DateTimeOffset | Inherited from [alertEvidence](../resources/security-alertevidence.md). |
+|  deliveryAction   | [microsoft.graph.security.teamsMessageDeliveryAction](#teamsmessagedeliveryaction-values)  | The delivery action of this Teams message. Possible values are: `unknown`, `deliveredAsSpam`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.   |
+|  deliveryLocation | [microsoft.graph.security.teamsDeliveryLocation](#teamsdeliverylocation-values)   | The delivery location of this Teams message. Possible values are: `unknown`, `teams`, `quarantine`, `failed`, `unknownFutureValue`. |
+|  detailedRoles | String collection | Inherited from [alertEvidence](../resources/security-alertevidence.md).    |
+|  files | [microsoft.graph.security.fileEvidence](./security-fileevidence.md) collection  | The list of file entities which relate (attached) to this Teams message entity instance. |
+|  groupId     | String  | The identifier of the team or group that this message is part of.   |
+|  isExternal  | Boolean | Indicates whether external users are in the chat.  |
+|  isOwned     | Boolean | Indicates whether the message is owned by your organization.  |
+|  lastModifiedDateTime  | DateTimeOffset | Date and time when the message was last edited. |
+|  messageDirection | [microsoft.graph.security.antispamTeamsDirection](#antispamteamsdirection-values)  | The direction of the Teams message. |
+|  messageId   | String  | Non unique identifier of a message    |
+|  owningTenantId   | Guid  | Tenant ID (GUID) of the owner of the message.  |
+|  parentMessageId  | String  | Identifier of the message to which the current message is a reply; otherwise, it is the same as the **messageId**.  |
+|  receivedDateTime | DateTimeOffset | The received date of this message.   |
+|  recipients  | String collection | The recipients of this Teams message.    |
+|  remediationStatus | [microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)  | Inherited from [alertEvidence](../resources/security-alertevidence.md).   |
+|  remediationStatusDetails | String  | Inherited from [alertEvidence](../resources/security-alertevidence.md).   |
+|  roles   | [microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md##evidencerole-values) collection | Inherited from [alertEvidence](../resources/security-alertevidence.md). |
+|  senderFromAddress     | String  | The SMTP format address of the sender. |
+|  senderIP    | String  | The IP address of the sender.  |
+|  sourceAppName    | String  | Source of the message; for example, `desktop` and `mobile`.  |
+|  sourceId    | String  | The source ID of this Teams message. |
+|  subject     | String  | The subject of this Teams message.   |
+|  suspiciousRecipients | String collection | The list of recipients who were detected as suspicious.  |
+|  tags   | String collection | Inherited from [alertEvidence](../resources/security-alertevidence.md). |
+|  threadId    | String  | Identifier of the channel or chat that this message is part of. |
+|  threadType  | String  | Teams message type - Chat, Topic, Space, Meeting   |
+|  urls  | [microsoft.graph.security.urlEvidence](./security-urlevidence.md) collection  | The URLs contained in this Teams message.   |
+|  verdict  |[microsoft.graph.security.evidenceVerdict](../resources/security-alertevidence.md#evidenceverdict-values)| Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 
-#### antispamTeamsDirection values
-
-Teams Directionality Status enumeration
-
-| Member | Description   |
-| :------------| :------------------ |
-| `unknown`  | Unknown enumeration value.  |
-| `inbound`  | Inbound.|
-| `outbound` | Outbound.    |
-| `intraorg` | Internal.    |
-| `unknownFutureValue` | unknownFutureValue for evolvable enums pattern. |
-
-
-#### teamsMessageDeliveryAction values
-
-Delivery action enumeration
+### antispamTeamsDirection values
 
 | Member | Description|
 | :------| :--------------- |
-| `unknown`  | Unknown enumeration value.  |
-| `deliveredAsSpam`    | Junked. |
-| `delivered`| Delivered.   |
-| `blocked`  | Blocked.|
-| `replaced` | Replaced.    |
-| `unknownFutureValue` | unknownFutureValue for evolvable enums pattern. |
+|  unknown   | Unknown enumeration value.  |
+|  inbound   | Inbound.|
+|  outbound  | Outbound.    |
+|  intraorg  | Internal.    |
+|  unknownFutureValue  | Evolvable enumeration sentinel value. Don't use. |
 
+### teamsDeliveryLocation values
 
-#### teamsDeliveryLocation values
+| Member | Description|
+| :------| :--------------- |
+|  unknown   | Unknown enumeration value.  |
+|  teams     | Message is delivered.   |
+|  quarantine     | Quarantined. |
+|  failed    | Message was blocked.    |
+|  unknownFutureValue  | Evolvable enumeration sentinel value. Don't use. |
 
-Teams Delivery location enumeration
+### teamsMessageDeliveryAction values
 
-| Value | Description  |
-|------------|------------|
-| `unknown`  | Unknown enumeration value.  |
-| `teams`    | Message is delivered.   |
-| `quarantine`    | Quarantined. |
-| `failed`   | Message was blocked.    |
-| `unknownFutureValue` | unknownFutureValue for evolvable enums pattern. |
-
+| Member | Description|
+| :------| :--------------- |
+|  unknown   | Unknown enumeration value.  |
+|  deliveredAsSpam     | Junked. |
+|  delivered | Delivered.   |
+|  blocked   | Blocked.|
+|  replaced  | Replaced.    |
+|  unknownFutureValue  | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 None.
@@ -93,54 +90,42 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.fileEvidence",
+  "@odata.type": "microsoft.graph.security.teamsMessageEvidence",
   "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
-``` json
+```  json
 {
   "@odata.type": "#microsoft.graph.security.teamsMessageEvidence",
-  "createdDateTime": "String (timestamp)",
-  "verdict": "String",
-  "remediationStatus": "String",
-  "remediationStatusDetails": "String",
-  "roles": [
-    "String"
-  ],
-  "tags": [
-    "String"
-  ],
   "campaignId": "String",
-  "groupId": "String",
-  "messageId": "String",
-  "parentMessageId": "String",
-  "owningTenantId": "Guid",
-  "threadId": "String",
-  "threadType": "String",
   "channelId": "String",
-  "sourceId": "String",
-  "sourceAppName": "String",
-  "isExternal": "Boolean",
-  "isOwned": "Boolean",
-  "messageDirection": "String",
+  "createdDateTime": "String (timestamp)",
   "deliveryAction": "String",
   "deliveryLocation": "String",
-  "subject": "String",
-  "receivedDateTime": "String (timestamp)",
+  "files": [{"@odata.type": "microsoft.graph.security.fileEvidence"}],
+  "groupId": "String",
+  "isExternal": "Boolean",
+  "isOwned": "Boolean",
   "lastModifiedDateTime": "String (timestamp)",
-  "recipients": [
-    "String"
-  ],
+  "messageDirection": "String",
+  "messageId": "String",
+  "owningTenantId": "Guid",
+  "parentMessageId": "String",
+  "receivedDateTime": "String (timestamp)",
+  "recipients": ["String"],
+  "remediationStatus": "String",
+  "remediationStatusDetails": "String",
+  "roles": ["String"],
   "senderFromAddress": "String",
   "senderIP": "String",
-  "suspiciousRecipients": [
-    "String"
-  ],
-  "files": [{
-    "@odata.type": "microsoft.graph.security.fileEvidence"
-  }],
-  "urls": [{
-    "@odata.type": "microsoft.graph.security.urlEvidence"
-  }]
+  "sourceAppName": "String",
+  "sourceId": "String",
+  "subject": "String",
+  "suspiciousRecipients": ["String"],
+  "tags": ["String"],
+  "threadId": "String",
+  "threadType": "String",
+  "urls": [{"@odata.type": "microsoft.graph.security.urlEvidence"}],
+  "verdict": "String"
 }
 ```
