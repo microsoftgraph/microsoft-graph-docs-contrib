@@ -2772,8 +2772,7 @@
         "plannerPlanDetails",
         "plannerRoster",
         "plannerUser",
-        "plannerTaskDetails",
-        "teamsChannelPlanner"
+        "plannerTaskDetails"
       ],
       "complexTypes": [
         "businessScenarioGroupTarget",
