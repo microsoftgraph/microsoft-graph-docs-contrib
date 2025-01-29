@@ -19,16 +19,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## January 2025: New and generally available 
 
-
 ### Files
-
-- Added [TeamsMessageEvidence](/api-reference/v1.0/resources/security-teamsmessageevidence.md) to the supported security entities.
 
 Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestoragecontainer-restore) method.
 
 ### Identity and access | Identity and sign-in
 
 Added riskEventType entry for the Suspicious API Traffic detection for [service principals](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-1.0&preserve-view=true).
+
+### Security
+
+Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence) as a supported [alert evidence](/graph/api/resources/security-alertevidence).
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -70,6 +71,10 @@ The functionality also allows you to configure the default fallback option when 
 ### Industry data ETL
 
 Use the [start](/graph/api/industrydata-industrydatarun-start?view=graph-rest-beta&preserve-view=true) operation on the [industryDataRun](/graph/api/resources/industrydata-industrydatarun?view=graph-rest-beta&preserve-view=true) resource to perform an on-demand run, with throttling limits of up to five successful runs every 12 hours.
+
+### Security
+
+Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence?view=graph-rest-beta&preserve-view=true) as a supported [alert evidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true).
 
 ### Tasks and plans
 
