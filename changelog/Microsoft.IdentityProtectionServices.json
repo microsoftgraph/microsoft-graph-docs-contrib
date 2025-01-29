@@ -7,13 +7,13 @@
           "ApiChange": "Property",
           "ChangedApiName": "riskEventType",
           "ChangeType": "Change",
-          "Description": "Added `anomalousToken``newCountry`, `passwordSpray`, `riskyIPAddress`, `suspiciousBrowser`, `suspiciousInboxForwarding`, `tokenIssuerAnomaly`, as a supported values for the **riskEventType** property in the [servicePrincipalRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-beta) resource.",
-          "Target": "servicePrincipalRiskDetection"
+          "Description": "Added `anomalousToken``newCountry`, `passwordSpray`, `riskyIPAddress`, `suspiciousBrowser`, `suspiciousInboxForwarding`, `tokenIssuerAnomaly`, as a supported values for the **riskEventType** property in the [RiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-beta) resource.",
+          "Target": "RiskDetection"
           }
         ],
         "Id": "fe06198f-3161-48d1-8bc8-c0edb038d428",
         "Cloud": "Prod",
-        "Version": "v1.0",
+        "Version": "beta",
         "CreatedDateTime": "2025-01-28T22:19:32.3422617Z",
         "WorkloadArea": "Identity and access",
         "SubArea": "Identity and sign-in"
