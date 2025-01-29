@@ -51,9 +51,9 @@ This resource is the base type for the following evidence types:
 * [registryKeyEvidence](security-registrykeyevidence.md)
 * [registryValueEvidence](security-registryvalueevidence.md)
 * [securityGroupEvidence](security-securitygroupevidence.md)
+* [teamsMessageEvidence](security-teamsmessageevidence.md)
 * [urlEvidence](security-urlevidence.md)
 * [userEvidence](security-userevidence.md)
-* [teamsMessage](security-teamsmessageevidence.md)
 
 ## Properties
 
