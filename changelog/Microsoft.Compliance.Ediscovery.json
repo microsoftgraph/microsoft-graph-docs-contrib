@@ -321,7 +321,11 @@
           "ChangeType": "Addition",
           "Description": "Added the `documentVersion` parameter to the [exportResult](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
           "Target": "exportResult"
-        },
+        }
+      ]
+    },
+    {
+      "ChangeList": [
         {
           "Id": "43fe0f3f-3358-11eb-9836-6aeb5ee7dda6",
           "ApiChange": "Resource",
