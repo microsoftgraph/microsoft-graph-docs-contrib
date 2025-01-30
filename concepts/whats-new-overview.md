@@ -81,6 +81,12 @@ Use the new mailbox import and export APIs in Microsoft Graph to build solutions
 
 Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true#container-type-teams-channel) container type to create plans in shared channels in Microsoft Teams.
 
+### Teamwork and communications | Messaging
+
+Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
+ - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
+ - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
+
 ## December 2024: New and generally available
 
 ### Reports
