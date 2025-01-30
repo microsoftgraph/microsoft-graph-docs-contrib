@@ -21,8 +21,8 @@ This action deletes a dynamic Rule and unprotects all protection units protected
 
 The following points apply to deleting a dynamic Rule and unprotecting all artifacts protected under it:
 - Rule moves to `deleteRequested` status when deleteAndUnprotect action is performed on dynamic rule.
-- Unprotection of artifacts and deletion of rule are async operations and they are carried by background jobs, which may cause some delay to complete the operation. 
-- This action will result in resetting the "dynamicRule" protection source. So, if the artifact is protected by another protection source as well, it will result in the artifact being protected by the other protection source only.
+- Unprotecting artifacts and deleting rules are asynchronous operations, so the operations might not complete right away. 
+- This action results in resetting the "dynamicRule" protection source. So, if the artifact is protected by another protection source as well, it results in the artifact being protected by the other protection source only.
 - No operation is allowed on dynamic rule once a rule is in `deleteRequested` state.
 
 ## Permissions
@@ -62,7 +62,7 @@ If successful, this action returns a `202 Accepted` response code and a [protect
 
 ## Examples
 
-### Example 1: DeleteAndUnprotect driveInclusionRule associated with an onedriveForBusiness protection policy
+### Example 1: DeleteAndUnprotect driveInclusionRule associated with a onedriveForBusiness protection policy
 
 The following example shows how to delete a **driveInclusionRule** associated with a [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) and unprotect units protected by it.
 

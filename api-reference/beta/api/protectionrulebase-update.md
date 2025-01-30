@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the properties of a protectionRuleBase object.
-- Update is only supported for dynamic rules of exchangeProtectionPolicy and onedriveForBusinessProtectionPolicy.
-- After updation, the rule will move to `updateRequested` state.
+Updates the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object. Update is only supported for the dynamic rules of [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) objects. After this method is used, the value of the **status** property of the **protectionRuleBase** object will be `updateRequested`.
 
 ## Permissions
 
@@ -51,7 +49,7 @@ PATCH /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPol
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-In the request body, provide a JSON representation of either of the following properties to update the **protectionRuleBase** object.
+In the request body, provide a JSON representation of one of the following properties to update the **protectionRuleBase** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
