@@ -14,6 +14,7 @@ ms.date: 11/07/2024
 
 | Resource                                       | Maximum expiration time           |
 |:-----------------------------------------------|:----------------------------------|
+| Copilot [aiInteraction][]                      | 4,320 minutes (three days)     |
 | Security [alert][]                             | 43,200 minutes (under 30 days)    |
 | Teams [approvals][]                            | 43,200 minutes (under 30 days)    |
 | Teams [callRecord][]                           | 4,230 minutes (under three days)  |
@@ -45,6 +46,7 @@ ms.date: 11/07/2024
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 
+[aiInteraction]: /graph/api/resources/aiinteraction
 [contact]: /graph/api/resources/contact
 [conversation]: /graph/api/resources/conversation
 [driveItem]: /graph/api/resources/driveitem
