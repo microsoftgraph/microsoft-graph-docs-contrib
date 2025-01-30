@@ -1,4 +1,4 @@
-/microsoft-365-app-certification/overview---
+---
 title: "certification resource type"
 description: "Represents the certification details of an application."
 ms.localizationpriority: medium
