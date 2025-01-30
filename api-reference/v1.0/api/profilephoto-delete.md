@@ -44,7 +44,7 @@ The following tables show the least privileged permission or permissions require
 |Application      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite.All |
 
 > [!NOTE]
-> - Global and user admins can delete the photo of any user in the organization using delegated permissions. This operation also supports application permissions. Deleting the photo of any user in the organization requires *ProfilePhoto.ReadWrite.All* or *User.ReadWrite.All* permissions. Deleting the photo of the signed-in user only requires *User.ReadWrite* permissions.
+> - Global admins, user admins and people admins can delete the photo of any user in the organization using delegated permissions. This operation also supports application permissions. Deleting the photo of any user in the organization requires *ProfilePhoto.ReadWrite.All* or *User.ReadWrite.All* permissions. Deleting the photo of the signed-in user only requires *User.ReadWrite* permissions.
 
 ## HTTP request
 
