@@ -49,7 +49,7 @@ Content-Type: application/json
 
 {
     "source": "cloud",
-    "allowedRoles": {}
+    "allowedRoles": []
 }
 ```
 
