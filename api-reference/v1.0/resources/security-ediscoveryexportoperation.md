@@ -52,6 +52,12 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |text|Include extracted text from the original files.|
 |pdfReplacement|Replace original file with PDF version when available.|
 |tags|Include tag information.|
+|splitSource|Organize data from different locations into separate folders or PSTs.|
+|includeFolderAndPath|Include folder and path structure of source.|
+|friendlyName|Give each item a friendly name.|
+|condensePaths|Condense paths to fit within 259 characters.|
+|optimizedPartitionSize|Optimize export package partition size.|
+|unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 
 ### exportFileStructure values
 
@@ -61,6 +67,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |directory|All files in a single folder called Native files.|
 |pst|Mails are grouped in pst format.|
 |msg|Messages are in msg format.|
+|unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 |Relationship|Type|Description|

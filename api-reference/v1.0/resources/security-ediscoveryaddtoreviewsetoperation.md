@@ -34,13 +34,26 @@ None.
 |additionalDataOptions|String|The options for adding items to reviewSet. |
 |cloudAttachmentVersion|[microsoft.graph.security.cloudAttachmentVersion](../resources/enums-security.md#cloudattachmentversion-values)| Specify how many versions of cloud attachments to collect.|
 |documentVersion|[microsoft.graph.security.documentVersion](../resources/enums-security.md#documentversion-values)| Specify how many versions of SharePoint documents to collect.|
-|itemsToInclude|String| The items to include in the review set. Possible values are: `searchHits`, `partiallyIndexed`.|
+|itemsToInclude|String| The items to include in the review set. Possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
 
 ### itemsToInclude values
 |Member|Description|
 |:----|-----------|
 |searchHits       | Include indexed items that match.|
 |partiallyIndexed | Include unindexed items that might not match the query.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+### additionalDataOptions values
+|Name|Description|
+|:---|:---|
+|allVersions|include all versions of a sharepoint document matching the source collection query. Caution: SharePoint versions can significantly increase the volume of items |
+|linkedFiles|include linked files that were shared in outlook, teams, or Yammer messages by attaching a link to the file.|
+|advancedIndexing|To reduce false matches, perform advanced indexing during export.|
+|listAttachments|Include list attachments.|
+|htmlTranscripts|Contextual chat messages are threaded into HTML transcript.|
+|messageConversationExpansion|Include conversation context around a hit.|
+|locationsWithoutHits|Look for unindexed items even in locations without hits.|
+|allItemsInFolder|Include all content in folder if the folder itself matches a query.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships

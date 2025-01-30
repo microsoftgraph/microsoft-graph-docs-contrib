@@ -53,17 +53,6 @@ The following table shows the parameters that can be used with this action.
 | cloudAttachmentVersion | [microsoft.graph.security.cloudAttachmentVersion](../resources/enums-security.md#cloudattachmentversion-values) | The number of most recent versions of cloud attachments to collect. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
 | documentVersion | [microsoft.graph.security.documentVersion](../resources/enums-security.md#documentversion-values) | The number of most recent versions of documents to collect. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
 
-### additionalDataOptions values
-|Name|Description|
-|:---|:---|
-|allVersions|include all versions of a sharepoint document matching the source collection query. Caution: SharePoint versions can significantly increase the volume of items |
-|linkedFiles|include linked files that were shared in outlook, teams, or Yammer messages by attaching a link to the file.|
-|advancedIndexing|Perform advanced indexing during export to reduce false matches.|
-|listAttachments|Include list attachments.|
-|htmlTranscripts|Contextual chat messages are threaded into HTML transcripts|
-|messageConversationExpansion|Include conversation context around a hit.|
-|locationsWithoutHits|Look for unindexed items even in locations without hits.|
-|allItemsInFolder|Include all content in folder if the folder itself matches a query.|
 
 ## Response
 
