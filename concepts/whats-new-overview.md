@@ -80,6 +80,10 @@ Use the new mailbox import and export APIs in Microsoft Graph to build solutions
 
 Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true#container-type-teams-channel) container type to create plans in shared channels in Microsoft Teams.
 
+### Teamwork and communications | Messaging
+
+- [Get](/graph/api/chatmessage-get#example-7-get-a-chat-message-with-a-loop-component) a chat message that includes a Microsoft Loop component as two attachments.
+
 ## December 2024: New and generally available
 
 ### Reports
