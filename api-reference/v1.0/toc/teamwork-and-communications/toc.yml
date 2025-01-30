@@ -512,7 +512,9 @@ items:
     - name: List tabs
       href: ../../api/channel-list-tabs.md
     - name: List channel members
-      href: ../../api/channel-list-members.md
+      href: ../../api/channel-list-members.
+    - name: List all members
+      href: ../../api/channel-list-allmembers.md
     - name: Add channel member
       href: ../../api/channel-post-members.md
     - name: Get channel member
