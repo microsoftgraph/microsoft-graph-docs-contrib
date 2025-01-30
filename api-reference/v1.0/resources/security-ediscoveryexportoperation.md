@@ -30,8 +30,8 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |createdDateTime|DateTimeOffset| The date and time the export was created. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |description|String| The description provided for the export.|
 |exportFileMetadata | [microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.  |
-|exportOptions|microsoft.graph.security.exportOptions| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md).|
-|exportStructure|microsoft.graph.security.exportFileStructure|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
+|exportOptions|microsoft.graph.security.exportOptions| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `unknownFutureValue`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/concepts/best-practices-concept#handling-future-members-in-evolvable-enumerations): `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`.|
+|exportStructure|microsoft.graph.security.exportFileStructure|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`, `msg`.  Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/concepts/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
@@ -47,12 +47,13 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |text|Include extracted text from the original files.|
 |pdfReplacement|Replace original file with PDF version when available.|
 |tags|Include tag information.|
+|unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 |splitSource|Organize data from different locations into separate folders or PSTs.|
 |includeFolderAndPath|Include folder and path structure of source.|
 |friendlyName|Give each item a friendly name.|
 |condensePaths|Condense paths to fit within 259 characters.|
 |optimizedPartitionSize|Optimize export package partition size.|
-|unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
+
 
 ### exportFileStructure values
 
