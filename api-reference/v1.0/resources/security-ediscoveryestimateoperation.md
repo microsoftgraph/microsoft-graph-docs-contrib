@@ -38,7 +38,7 @@ None.
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |unindexedItemCount|Int64|The estimated count of unindexed items for the collection.|
 |unindexedItemsSize|Int64|The estimated size of unindexed items for the collection.|
-|statisticsOptions|String|The options to generate statistics.|
+|statisticsOptions|String|The options to generate statistics. Possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`.|
 
 ### statisticsOptions values
 |Name|Description|

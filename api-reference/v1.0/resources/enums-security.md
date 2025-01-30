@@ -162,21 +162,21 @@ Namespace: microsoft.graph.security
 
 ### cloudAttachmentVersion values
 
-|Member|Description|
-|:----|-----------|
-|latest     | Latest version only. |
-|recent10   | Last 10 versions. |
-|recent100  | Last 100 versions. |
-|all        | All versions. |
+|Member|
+|:----|
+|latest     |
+|recent10   |
+|recent100  |
+|all        |
 
 ### documentVersion values
 
-|Member|Description|
-|:----|-----------|
-|latest     | Latest version only. |
-|recent10   | Last 10 versions. |
-|recent100  | Last 100 versions. |
-|all        | All versions. |
+|Member|
+|:----|
+|latest     |
+|recent10   |
+|recent100  |
+|all        |
 
 <!--
 {
