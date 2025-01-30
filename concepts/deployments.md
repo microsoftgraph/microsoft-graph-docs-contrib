@@ -61,10 +61,10 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 
 ## Service API support in national clouds
 
-For details about API support for Microsoft Graph services in national clouds, see the [API beta reference](/graph/api/overview?view=graph-rest-beta&preserve=true) and [API v1.0 reference](/graph/api/overview?view=graph-rest-1.0&preserve=true). 
+For details about API support for Microsoft Graph services in national clouds, see the [API beta reference](/graph/api/overview?view=graph-rest-beta&preserve-view=true) and [API v1.0 reference](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). 
 
 > [!IMPORTANT]
-> Certain services and features that are in specific regions of the global service might not be available in all national clouds. To find out what services are available, see [Product Availability by Region](https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/table).
+> Certain services and features that are in specific regions of the global service might not be available in all national clouds. To find out what services are available, see [Product Availability by Region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/table).
 
 ## Related content
 
