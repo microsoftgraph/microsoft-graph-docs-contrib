@@ -5739,7 +5739,7 @@
         {
           "Id": "4b5ab92c-9c68-4d3a-8a25-a8d1211379e3",
           "ApiChange": "Method",
-          "ChangedApiName": "allMembers",
+          "ChangedApiName": "List",
           "ChangeType": "Addition",
           "Description": "Added the [List allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
           "Target": "channel"
