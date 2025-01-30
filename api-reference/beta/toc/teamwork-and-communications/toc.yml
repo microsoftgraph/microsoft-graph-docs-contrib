@@ -344,7 +344,7 @@ items:
       href: ../../api/calldelegator-get.md
     - name: List delegates
       href: ../../api/calldelegate-list.md
-    - name: Get delegates
+    - name: Get delegate
       href: ../../api/calldelegate-get.md
   - name: Call events
     items:

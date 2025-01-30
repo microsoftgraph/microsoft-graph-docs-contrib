@@ -42,7 +42,7 @@ GET /users/{user_id}/communications/callSettings/delegators
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [delegate](../resources/calldelegation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a list of [delegator](../resources/calldelegation.md) objects in the response body.
 
 ## Examples
 
@@ -64,18 +64,18 @@ GET https://graph.microsoft.com/beta/users/{user_id}/communications/callSettings
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1574
+
 {
-  "@odata.context": "https://graph.microsoft.com/$metadata#users/{user_id}/communications/callSettings/delegators",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('{user_id}')/communications/callSettings/delegators",
   "value": [
     {
-      "id": "f114658b-b0ed-4c8c-813c-99aeb01f04a3",
+      "id": "00000000-0000-0000-0000-000000000000",
       "createdDateTime": "0001-01-01T00:00:00Z",
       "isActive": true,
       "allowedActions": {
         "makeCalls": true,
         "receiveCalls": true,
-        "manageCallAnddelegatorsettings": true,
+        "manageCallAndDelegateSettings": true,
         "pickUpHeldCalls": true,
         "joinActiveCalls": true
       }

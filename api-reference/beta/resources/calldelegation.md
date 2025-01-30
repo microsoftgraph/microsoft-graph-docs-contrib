@@ -29,10 +29,10 @@ Microsoft Graph enable developers to programmatically manage delegators and dele
 - Managing permissions for making and receiving calls.
 - Streamlining communication workflows within teams.
 
-### What is a Delegator?
+### Who is a delegator?
 A delegator is a user who grants another user (delegate) the ability to perform certain actions on their behalf, such as making and receiving calls, manage call settings, or join active calls. Delegators are typically users who need assistance in handling their communication responsibilities.
 
-### What is a Delegate?
+### Who is a delegate?
 A delegate is a user who is assigned responsibilities by a delegator. Delegates can take specific actions like answering calls, initiating calls, and managing call settings on behalf of the delegator. This role is commonly used by assistants or team members to facilitate seamless communication workflows.
 
 ## Prerequisites
@@ -42,10 +42,10 @@ To access these APIs, the following configurations are required:
 1. **Permissions**: Assign delegated scopes to your application for access. Use the following URL to log in with an admin account and assign permissions:
 
    ```
-   https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={Client-App-ID}&response_type=code&scope=https://graph.microsoft.com/CallDelegation.ReadWrite
+   https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={Client-App-ID}&response_type=code&scope=https://graph.microsoft.com/CallDelegation.Read
    ```
 
-2. **Policies**: Assign the `AllowDelegation` policy in Microsoft Teams using PowerShell:
+2. **Policies**: Assign the `AllowDelegation` policy in Microsoft Teams using [PowerShell]( https://learn.microsoft.com/powershell/module/teams/set-csteamscallingpolicy?view=teams-ps#-allowdelegation):
 
    ```
    Set-CsTeamsCallingPolicy -AllowDelegation $true

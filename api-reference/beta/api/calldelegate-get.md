@@ -64,10 +64,10 @@ GET https://graph.microsoft.com/beta/users/{user_id}/communications/callSettings
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1574
+
 {
-  "@odata.context": "https://graph.microsoft.com/$metadata#users/{user_uid}/communications/callSettings/delegates/$entity",
-  "id": "739cfec7-7956-409a-a1c8-a76daab23c2a",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('{user_id}')/communications/callSettings/delegates/$entity",
+  "id": "00000000-0000-0000-0000-000000000000",
   "createdDateTime": "0001-01-01T00:00:00Z",
   "isActive": true,
   "allowedActions": {
