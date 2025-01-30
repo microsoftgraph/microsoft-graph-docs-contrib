@@ -1,4 +1,4 @@
----
+/microsoft-365-app-certification/overview---
 title: "certification resource type"
 description: "Represents the certification details of an application."
 ms.localizationpriority: medium
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents the certification details of an [application](application.md). 
 
-The certification property of an application is read-only, and can't be manually set. It is updated when the application is certified through the Microsoft 365 App Compliance Program. For more information, see [Microsoft 365 App Compliance Program](/microsoft-365-app-certification/docs/enterprise-app-certification-guide).
+The certification property of an application is read-only, and can't be manually set. It is updated when the application is certified through the Microsoft 365 App Compliance Program. For more information, see [Microsoft 365 App Compliance Program](/microsoft-365-app-certification/overview).
 
 ## Properties
 |Property|Type|Description|
