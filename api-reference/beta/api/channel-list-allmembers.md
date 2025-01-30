@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Get a list of all [members](../resources/conversationmember.md) in a [channel](../resources/channel.md). It supports all types of channels. In the case of shared channels, it includes all cross-tenant and cross-team members in a channel.
 
 > [!NOTE]
-> The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
+> The membership IDs returned by the server must be treated as opaque strings. The client shouldn't try to parse or make any assumptions about these resource IDs.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
