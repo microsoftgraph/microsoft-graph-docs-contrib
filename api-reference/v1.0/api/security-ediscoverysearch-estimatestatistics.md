@@ -46,7 +46,7 @@ Content-Type: application/json
 ## Request body
 |Property|Type|Description|
 |:---|:---|:---|
-| statisticsOptions | microsoft.graph.security.statisticsOptions | Bitwise options that specify which statistics to generate. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`. Note: `advancedIndexing` and `locationsWithoutHits` is only considered if `includeUnindexedStats` is set.|
+| statisticsOptions | microsoft.graph.security.statisticsOptions | Bitwise options that specify which statistics to generate. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`. Note: `advancedIndexing` and `locationsWithoutHits` is only considered if `includeUnindexedStats` is set.|
 
 ## Response
 

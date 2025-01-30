@@ -49,9 +49,9 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|The ID of the eDiscovery search you'd like to add to the review set.|
 |additionalDataOptions|microsoft.graph.security.additionalDataOptions|The options for adding items to reviewSet. The possible values are `allVersions`, `linkedFiles`, `advancedIndexing`, `listAttachments`, `htmlTranscripts`, `messageConversationExpansion`, `locationsWithoutHits`, `allItemsInFolder`, `unknownFutureValue`. Note: `locationsWithoutHits` and `advancedIndexing` are only considered if the **itemsToIncude** parameter is set to `partiallyIndexed`.|
-| itemsToInclude | microsoft.graph.security.itemsToInclude | The items to include in the review set. The possible values are `searchHits`, `partiallyIndexed`. |
 | cloudAttachmentVersion | microsoft.graph.security.cloudAttachmentVersion | Specify how many versions of cloud attachments to collect. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
 | documentVersion | microsoft.graph.security.documentVersion | Specify how many versions of documents to collect. The possible values are `latest`, `recent10`, `recent100`, `all`. Default is `latest`.|
+| itemsToInclude | microsoft.graph.security.itemsToInclude | The items to include in the review set. The possible values are `searchHits`, `partiallyIndexed`, `unknownFutureValue`. |
 
 ## Response
 

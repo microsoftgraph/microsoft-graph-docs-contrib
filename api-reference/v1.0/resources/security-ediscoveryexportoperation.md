@@ -37,11 +37,6 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|splitSource|Organize data from different locations into separate folders or PSTs.|
-|includeFolderAndPath|Include folder and path structure of source.|
-|friendlyName|Give each item a friendly name.|
-|condensePaths|Condense paths to fit within 259 characters.|
-|optimizedPartitionSize|Optimize export package partition size.|
 
 
 ### exportOptions values

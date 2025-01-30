@@ -24,17 +24,17 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|additionalDataOptions|String|The options for adding items to reviewSet. |
+|cloudAttachmentVersion|[microsoft.graph.security.cloudAttachmentVersion](../resources/enums-security.md#cloudattachmentversion-values)| Specify how many versions of cloud attachments to collect.|
 |completedDateTime|DateTimeOffset| The date and time the operation was completed. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |createdDateTime|DateTimeOffset| The date and time the operation was created. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|documentVersion|[microsoft.graph.security.documentVersion](../resources/enums-security.md#documentversion-values)| Specify how many versions of SharePoint documents to collect.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|itemsToInclude|String| The items to include in the review set. Possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|additionalDataOptions|String|The options for adding items to reviewSet. |
-|cloudAttachmentVersion|[microsoft.graph.security.cloudAttachmentVersion](../resources/enums-security.md#cloudattachmentversion-values)| Specify how many versions of cloud attachments to collect.|
-|documentVersion|[microsoft.graph.security.documentVersion](../resources/enums-security.md#documentversion-values)| Specify how many versions of SharePoint documents to collect.|
-|itemsToInclude|String| The items to include in the review set. Possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
 
 ### itemsToInclude values
 |Member|Description|

@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |description|String| Description of the export. |
-|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`. The `fileInfo` member is deprecated and stopped returning data. The summary and load file are always included. Note: If `originalFiles` isn't selected, only the `tags` member is considered. |
+|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`, `unknownFutureValue`. The `fileInfo` member is deprecated and stopped returning data. The summary and load file are always included. Note: If `originalFiles` isn't selected, only the `tags` member is considered. |
 |exportStructure|String| Bitwise options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `msg`. Note: `directory` is on the way for deprecation. Currently, if `directory` is selected, the format is `msg`, and the export options `splitSource`, `includeFolderAndPath`, and `friendlyName` are disregarded.|
 |outputName|String| Name of the export. Required. |
 |azureBlobContainer (deprecated)|String| When you export to your own Azure storage account, the value is the container URL. The **azureBlobContainer** property is deprecated and stopped returning data. |
