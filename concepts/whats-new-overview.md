@@ -19,10 +19,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## January 2025: New and generally available 
 
-### Microsoft Graph Bicep templates
-
-You can now deploy the user resource in a Bicep template for your infrastructure as code (IaC) projects. For more information, see the [Microsoft.Graph users](/graph/templates/reference/users) Bicep reference.
-
 ### Files
 
 Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestoragecontainer-restore) method.
@@ -30,6 +26,10 @@ Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestora
 ### Identity and access | Identity and sign-in
 
 Added riskEventType entry for the Suspicious API Traffic detection for [service principals](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-1.0&preserve-view=true).
+
+### Microsoft Graph Bicep templates
+
+You can now deploy the user resource in a Bicep template for your infrastructure as code (IaC) projects. For more information, see the [Microsoft.Graph users](/graph/templates/reference/users) Bicep reference.
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -82,7 +82,7 @@ Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-bet
 
 ### Teamwork and communications | Messaging
 
-- [Get](/graph/api/chatmessage-get#example-7-get-a-chat-message-with-a-loop-component) a chat message that includes a Microsoft Loop component as two attachments.
+- [Get](/graph/api/chatmessage-get?view=graph-rest-beta&preserve-view=true#example-7-get-a-chat-message-with-a-loop-component) a chat message that includes a Microsoft Loop component as two attachments.
 
 ## Contribute to Microsoft Graph
 
