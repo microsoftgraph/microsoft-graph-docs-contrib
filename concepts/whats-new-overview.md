@@ -19,6 +19,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## January 2025: New and generally available 
 
+### Microsoft Graph Bicep templates
+
+You can now deploy the user resource in a Bicep template for your infrastructure as code (IaC) projects. For more information, see the [Microsoft.Graph users](/graph/templates/reference/users) Bicep reference.
+
 ### Files
 
 Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestoragecontainer-restore) method.
@@ -75,6 +79,10 @@ Use the new mailbox import and export APIs in Microsoft Graph to build solutions
 ### Tasks and plans
 
 Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true#container-type-teams-channel) container type to create plans in shared channels in Microsoft Teams.
+
+### Teamwork and communications | Messaging
+
+- [Get](/graph/api/chatmessage-get#example-7-get-a-chat-message-with-a-loop-component) a chat message that includes a Microsoft Loop component as two attachments.
 
 ## December 2024: New and generally available
 

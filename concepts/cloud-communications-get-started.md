@@ -21,7 +21,7 @@ Before you get started, familiarize yourself with the following topics:
 
 ## Register a bot
 
-The terms "service application" and "bot" can be used interchangeably. You can either create a bot through the [Azure portal](https://azure.microsoft.com/features/azure-portal/) directly or register a bot that isn't hosted on Azure.
+The terms "service application" and "bot" can be used interchangeably. You can either create a bot through the [Azure portal](https://azure.microsoft.com/get-started/azure-portal/) directly or register a bot that isn't hosted on Azure.
 For more information, see [Registering a calling bot](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). 
 
 To make things easier later, it's helpful to understand the different [types of permissions](/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) within Microsoft Entra ID. Apps with delegated permissions require a signed-in user. Application-based permissions don't need a signed-in user and can often run as a background service.

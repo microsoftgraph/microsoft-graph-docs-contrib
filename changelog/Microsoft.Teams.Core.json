@@ -5735,13 +5735,31 @@
       "SubArea": "Messaging"
     },
     {
+      "ChangeList": [ 
+        {
+          "Id": "5dcb0d48-8790-4447-acc0-c7018569adf5",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentType",
+          "ChangeType": "Change",
+          "Description": "Added Microsoft Loop components as two types of attachments, a Loop component and a place holder. New **contentType** properties `application/vnd.microsoft.card.fluidEmbedCard` and `application/vnd.microsoft.card.codesnippet` are in the [chatMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-1.0) resource.",
+          "Target": "chatMessageAttachment"
+        }
+      ],
+      "Id": "5dcb0d48-8790-4447-acc0-c7018569adf5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-14T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
       "ChangeList": [
         {
           "Id": "4b5ab92c-9c68-4d3a-8a25-a8d1211379e3",
           "ApiChange": "Method",
           "ChangedApiName": "List",
           "ChangeType": "Addition",
-          "Description": "Added the [list allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Description": "Added [list allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
           "Target": "channel"
         },
         {
@@ -5749,7 +5767,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "allMembers",
           "ChangeType": "Addition",
-          "Description": "Added the **allMembers** navigation property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Description": "Added **allMembers** navigation property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
           "Target": "channel"
         }
       ],
