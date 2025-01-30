@@ -55,10 +55,10 @@ To access these APIs, the following configurations are required:
 
 | Operation                                          |  Return Type                                                       |  Description                              |
 |--------------------------                          |--------------------------------------------------------------------|-------------------------------------------|
-| [List All Delegates](../api/calldelegate-list.md)  |  [delegate](../resources/calldelegation.md?delegate) collection    | Retrieve all delegates for a user         |
-| [Get Delegate by ID](../api/calldelegate-get.md)   |  [delegate](../resources/calldelegation.md?delegate)               | Fetch details of a specific delegate      |
-| [List All Delegators](../api/calldelegator-list.md)|  [delegator](../resources/calldelegation.md?delegator) collection  | Retrieve all delegators for a user        |
-| [Get Delegator by ID](../api/calldelegator-get.md) |  [delegator](../resources/calldelegation.md?delegator)             | Fetch details of a specific delegator     |
+| [List All Delegates](../api/calldelegate-list.md)  |  [delegate](../resources/calldelegation.md#delegate) collection    | Retrieve all delegates for a user         |
+| [Get Delegate by ID](../api/calldelegate-get.md)   |  [delegate](../resources/calldelegation.md#delegate)               | Fetch details of a specific delegate      |
+| [List All Delegators](../api/calldelegator-list.md)|  [delegator](../resources/calldelegation.md#delegator) collection  | Retrieve all delegators for a user        |
+| [Get Delegator by ID](../api/calldelegator-get.md) |  [delegator](../resources/calldelegation.md#delegator)             | Fetch details of a specific delegator     |
 
 ## Properties
 

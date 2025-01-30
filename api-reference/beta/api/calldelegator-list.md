@@ -52,14 +52,15 @@ The following example shows how to get a list of delegators from a user.
 
 #### Request
 
-
-# [HTTP](#tab/http)
+The following example shows a request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{user_id}/communications/callSettings/delegators
 ```
 
 #### Response
+
+The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
