@@ -74,7 +74,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationMember"
+  "@odata.type": "Collection(microsoft.graph.conversationMember)"
 } -->
 
 ```http
