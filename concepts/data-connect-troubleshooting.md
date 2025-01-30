@@ -153,6 +153,10 @@ The following error message indicates that a **Microsoft.GraphServices** type re
 
 ![Screenshot that shows an error for the already existent billing resource.](images/app-registration-already-premium-usage.png)
 
+### Developer Email Missing
+
+When creating a new registration, it may appear successful, but you’ll receive a "Developer Email Not Found" error. This happens when the registration is created with a guest user; using a non-guest user will succeed.
+
 ## Related content
 
 - [Data Connect overview](data-connect-concept-overview.md)
