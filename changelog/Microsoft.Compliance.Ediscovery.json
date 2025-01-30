@@ -3,6 +3,326 @@
     {
       "ChangeList": [
         {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "advancedIndexing",
+          "ChangeType": "Addition",
+          "Description": "Added the `advancedIndexing` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "listAttachments",
+          "ChangeType": "Addition",
+          "Description": "Added the `listAttachments` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "htmlTranscripts",
+          "ChangeType": "Addition",
+          "Description": "Added the `htmlTranscripts` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "messageConversationExpansion",
+          "ChangeType": "Addition",
+          "Description": "Added the `messageConversationExpansion` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "locationsWithoutHits",
+          "ChangeType": "Addition",
+          "Description": "Added the `locationsWithoutHits` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "allItemsInFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the `allItemsInFolder` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "htmlTranscripts",
+          "ChangeType": "Addition",
+          "Description": "Added the `htmlTranscripts` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "advancedIndexing",
+          "ChangeType": "Addition",
+          "Description": "Added the `advancedIndexing` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "allItemsInFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the `allItemsInFolder` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeFolderAndPath",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeFolderAndPath` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "condensePaths",
+          "ChangeType": "Addition",
+          "Description": "Added the `condensePaths` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "friendlyName",
+          "ChangeType": "Addition",
+          "Description": "Added the `friendlyName` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "splitSource",
+          "ChangeType": "Addition",
+          "Description": "Added the `splitSource` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "optimizedPartitionSize",
+          "ChangeType": "Addition",
+          "Description": "Added the `optimizedPartitionSize` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeReport` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudAttachmentVersion** enumeration type.",
+          "Target": "cloudAttachmentVersion"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentVersion** enumeration type.",
+          "Target": "documentVersion"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "msg",
+          "ChangeType": "Addition",
+          "Description": "Added the `msg` member to the **exportFileStructure** enumeration.",
+          "Target": "exportFileStructure"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "splitSource",
+          "ChangeType": "Addition",
+          "Description": "Added the `splitSource` member to the **exportOptions** enumeration.",
+          "Target": "exportOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeFolderAndPath",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeFolderAndPath` member to the **exportOptions** enumeration.",
+          "Target": "exportOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "friendlyName",
+          "ChangeType": "Addition",
+          "Description": "Added the `friendlyName` member to the **exportOptions** enumeration.",
+          "Target": "exportOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "condensePaths",
+          "ChangeType": "Addition",
+          "Description": "Added the `condensePaths` member to the **exportOptions** enumeration.",
+          "Target": "exportOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "optimizedPartitionSize",
+          "ChangeType": "Addition",
+          "Description": "Added the `optimizedPartitionSize` member to the **exportOptions** enumeration.",
+          "Target": "exportOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "itemsToInclude",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemsToInclude** enumeration type.",
+          "Target": "itemsToInclude"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "statisticsOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **statisticsOptions** enumeration type.",
+          "Target": "statisticsOptions"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "additionalDataOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **additionalDataOptions** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudAttachmentVersion** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentVersion** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemsToInclude",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemsToInclude** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "statisticsOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **statisticsOptions** property to the [ediscoveryEstimateOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryEstimateOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryEstimateOperation"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudAttachmentVersion** property to the [ediscoverySearchExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverySearchExportOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoverySearchExportOperation"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentVersion** property to the [ediscoverySearchExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverySearchExportOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoverySearchExportOperation"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "itemsToInclude",
+          "ChangeType": "Addition",
+          "Description": "Added the `itemsToInclude` parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/ediscoveryReviewSet?view=graph-rest-beta) method.",
+          "Target": "addToReviewSet"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudAttachmentVersion` parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/ediscoveryReviewSet?view=graph-rest-beta) method.",
+          "Target": "addToReviewSet"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the `documentVersion` parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/ediscoveryReviewSet?view=graph-rest-beta) method.",
+          "Target": "addToReviewSet"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "statisticsOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the `statisticsOptions` parameter to the [estimateStatistics](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+          "Target": "estimateStatistics"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudAttachmentVersion` parameter to the [exportReport](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+          "Target": "exportReport"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the `documentVersion` parameter to the [exportReport](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+          "Target": "exportReport"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudAttachmentVersion` parameter to the [exportResult](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+          "Target": "exportResult"
+        },
+        {
+          "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the `documentVersion` parameter to the [exportResult](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+          "Target": "exportResult"
+        },
+        {
           "Id": "43fe0f3f-3358-11eb-9836-6aeb5ee7dda6",
           "ApiChange": "Resource",
           "ChangedApiName": "case",
