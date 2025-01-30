@@ -64,7 +64,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/mailFolders/{mailFolderId}/permanentDelete
 ```
----
+
 
 ### Response
 

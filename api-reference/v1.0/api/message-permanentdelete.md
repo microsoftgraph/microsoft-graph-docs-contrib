@@ -65,7 +65,6 @@ The following example shows a request.
 POST https://graph.microsoft.com/v1.0/users/{usersId}/messages/{messageId}/permanentDelete
 ```
 
----
 
 ### Response
 

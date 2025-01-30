@@ -65,10 +65,6 @@ The following example shows a request.
 POST https://graph.microsoft.com/v1.0/users/{usersId}/calendar/permanentDelete
 ```
 
-
-
----
-
 ### Response
 
 The following example shows the response.
