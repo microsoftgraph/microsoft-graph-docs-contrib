@@ -182,6 +182,7 @@
         "Outlook",
         "Outlook calendar"
       ],
+      "overview": "../../resources/calendar-overview.md",
       "resources": [
         "calendar",
         "event",
