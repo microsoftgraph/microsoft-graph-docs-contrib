@@ -263,7 +263,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "itemsToInclude",
           "ChangeType": "Addition",
-          "Description": "Added the `itemsToInclude` parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/ediscoveryReviewSet?view=graph-rest-beta) method.",
+          "Description": "Added the `itemsToInclude` parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryReviewSet-addtoreviewset?view=graph-rest-beta) method.",
           "Target": "addToReviewSet"
         },
         {
@@ -271,7 +271,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "cloudAttachmentVersion",
           "ChangeType": "Addition",
-          "Description": "Added the `cloudAttachmentVersion` parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/ediscoveryReviewSet?view=graph-rest-beta) method.",
+          "Description": "Added the `cloudAttachmentVersion` parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryReviewSet-addtoreviewset?view=graph-rest-beta) method.",
           "Target": "addToReviewSet"
         },
         {
@@ -279,7 +279,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "documentVersion",
           "ChangeType": "Addition",
-          "Description": "Added the `documentVersion` parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/ediscoveryReviewSet?view=graph-rest-beta) method.",
+          "Description": "Added the `documentVersion` parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryReviewSet-addtoreviewset?view=graph-rest-beta) method.",
           "Target": "addToReviewSet"
         },
         {
@@ -287,7 +287,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "statisticsOptions",
           "ChangeType": "Addition",
-          "Description": "Added the `statisticsOptions` parameter to the [estimateStatistics](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+          "Description": "Added the `statisticsOptions` parameter to the [estimateStatistics](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-estimatestatistics?view=graph-rest-beta) method.",
           "Target": "estimateStatistics"
         },
         {
@@ -295,7 +295,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "cloudAttachmentVersion",
           "ChangeType": "Addition",
-          "Description": "Added the `cloudAttachmentVersion` parameter to the [exportReport](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+          "Description": "Added the `cloudAttachmentVersion` parameter to the [exportReport](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-exportreport?view=graph-rest-beta) method.",
           "Target": "exportReport"
         },
         {
@@ -303,7 +303,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "documentVersion",
           "ChangeType": "Addition",
-          "Description": "Added the `documentVersion` parameter to the [exportReport](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+          "Description": "Added the `documentVersion` parameter to the [exportReport](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-exportreport?view=graph-rest-beta) method.",
           "Target": "exportReport"
         },
         {
@@ -311,7 +311,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "cloudAttachmentVersion",
           "ChangeType": "Addition",
-          "Description": "Added the `cloudAttachmentVersion` parameter to the [exportResult](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+          "Description": "Added the `cloudAttachmentVersion` parameter to the [exportResult](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-exportresult?view=graph-rest-beta) method.",
           "Target": "exportResult"
         },
         {
@@ -319,7 +319,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "documentVersion",
           "ChangeType": "Addition",
-          "Description": "Added the `documentVersion` parameter to the [exportResult](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+          "Description": "Added the `documentVersion` parameter to the [exportResult](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-exportresult?view=graph-rest-beta) method.",
           "Target": "exportResult"
         }
       ]
