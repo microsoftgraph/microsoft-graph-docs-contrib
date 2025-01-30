@@ -322,7 +322,13 @@
           "Description": "Added the `documentVersion` parameter to the [exportResult](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-exportresult?view=graph-rest-beta) method.",
           "Target": "exportResult"
         }
-      ]
+      ],
+      "Id": "d18facda-0934-40ba-ab8b-cf93249e62b8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-30T17:13:06.5520497Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": "eDiscovery"
     },
     {
       "ChangeList": [
