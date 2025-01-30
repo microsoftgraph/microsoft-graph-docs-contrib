@@ -5741,7 +5741,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Group.Read.All",
           "ChangeType": "Deletion",
-          "Description": "Removed support for the delegated permission `Group.Read.All` from the [List allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-beta) operation of the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Description": "Removed support for the delegated permission `Group.Read.All` from the [List allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-beta) operation of the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
