@@ -41,6 +41,7 @@ Added riskEventType entry for the Suspicious API Traffic detection for [service 
 
 - [Get](/graph/api/chatmessage-get#example-5-get-a-chat-message-with-an--for-everyone) a chat message with an @mention for everyone.
 - [Get](/graph/api/chatmessage-get#example-6-get-a-chat-message-with-a-forwarded-message) a chat message that has a forwarded message as an attachment.
+- [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
 
 ## January 2025: New in preview only 
 
@@ -79,6 +80,12 @@ Use the new mailbox import and export APIs in Microsoft Graph to build solutions
 ### Tasks and plans
 
 Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true#container-type-teams-channel) container type to create plans in shared channels in Microsoft Teams.
+
+### Teamwork and communications | Messaging
+
+Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
+ - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
+ - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
 
 ### Teamwork and communications | Messaging
 

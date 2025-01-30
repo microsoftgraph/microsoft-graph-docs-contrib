@@ -5737,18 +5737,34 @@
     {
       "ChangeList": [ 
         {
-          "Id": "5dcb0d48-8790-4447-acc0-c7018569adf5",
-          "ApiChange": "Property",
-          "ChangedApiName": "contentType",
-          "ChangeType": "Change",
-          "Description": "Added Microsoft Loop components as two types of attachments, a Loop component and a place holder. New **contentType** properties `application/vnd.microsoft.card.fluidEmbedCard` and `application/vnd.microsoft.card.codesnippet` are in the [chatMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-1.0) resource.",
-          "Target": "chatMessageAttachment"
+          "Id": "3093c7bf-127e-4768-8636-52cd2c3f747c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Group.Read.All",
+          "ChangeType": "Deletion",
+          "Description": "Removed support for the delegated permission `Group.Read.All` from the [List allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-beta) operation of the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "3093c7bf-127e-4768-8636-52cd2c3f747c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChannelMember.Read.Group",
+          "ChangeType": "Addition",
+          "Description": "Added support for the resource-specific consent application permission `ChannelMember.Read.Group` in the [List allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-beta) operation of the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "3093c7bf-127e-4768-8636-52cd2c3f747c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChannelMember.ReadWrite.Group",
+          "ChangeType": "Addition",
+          "Description": "Added support for the resource-specific consent application permission `ChannelMember.ReadWrite.Group` in the [List allMembers](https://learn.microsoft.com/en-us/graph/api/channel-list-allmembers?view=graph-rest-beta) operation of the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
         }
       ],
-      "Id": "5dcb0d48-8790-4447-acc0-c7018569adf5",
+      "Id": "3093c7bf-127e-4768-8636-52cd2c3f747c",
       "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-01-14T18:15:55.2254479Z",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-30T13:04:38.8112517Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
     },
@@ -5775,8 +5791,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-01-30T13:04:38.8112517Z",
-      "WorkloadArea": "Teamwork and Communications",
-      "SubArea": ""
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
