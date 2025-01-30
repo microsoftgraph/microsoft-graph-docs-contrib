@@ -134,6 +134,7 @@ Content-Type: application/json
     "referrer": "Facebook",
     "registrationId": "myExternalRegistrationId"
   },
+  "registrantVideoOnDemandWebUrl" : "https://df.events.teams.microsoft.com/webinars/webinarid/sessions/session1/attendee/registrationId",
   "status": "registered",
   "registrationDateTime": "2023-03-07T22:04:17",
   "cancelationDateTime": null,
