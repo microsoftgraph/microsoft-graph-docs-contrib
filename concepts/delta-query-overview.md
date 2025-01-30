@@ -127,6 +127,8 @@ Delta query is currently supported for the following resources. Some resources t
 | [callRecording](/graph/api/resources/callrecording)                 | [callRecording: delta](/graph/api/callrecording-delta) function                 |
 | [callTranscript](/graph/api/resources/calltranscript)               | [callTranscript: delta](/graph/api/calltranscript-delta) function               |
 | [chatMessage](/graph/api/resources/chatmessage)                     | [chatMessage: delta](/graph/api/chatmessage-delta) function                     |
+| [contact](/graph/api/resources/contact) resource                    | [contact: delta](/graph/api/contact-delta) function                             |
+| [contactFolder](/graph/api/resources/contactfolder)                 | [contactFolder: delta](/graph/api/contactfolder-delta) function                 |
 | [device](/graph/api/resources/device)                               | [device: delta](/graph/api/device-delta) function                               |
 | [directoryRole](/graph/api/resources/directoryrole)                 | [directoryRole: delta](/graph/api/directoryrole-delta) function                 |
 | [directoryObject](/graph/api/resources/directoryObject)             | [directoryObject: delta](/graph/api/directoryobject-delta) function             |
@@ -139,12 +141,12 @@ Delta query is currently supported for the following resources. Some resources t
 | [event](/graph/api/resources/event)                                 | [event: delta](/graph/api/event-delta) function                                 |
 | [group](/graph/api/resources/group)                                 | [group: delta](/graph/api/group-delta) function                                 |
 | [listItem](/graph/api/resources/listitem) <sup>1</sup>              | [listItem: delta](/graph/api/listitem-delta) function                           |
+| [mailboxFolder](/graph/api/resources/mailboxfolder) *               | [mailboxFolder: delta](/graph/api/mailboxfolder-delta) function                 |
+| [mailboxItem](/graph/api/resources/mailboxitem) *                   | [mailboxItem: delta](/graph/api/mailboxitem-delta) function                     |
 | [mailFolder](/graph/api/resources/mailfolder)                       | [mailFolder: delta](/graph/api/mailfolder-delta) function                       |
 | [message](/graph/api/resources/message)                             | [message: delta](/graph/api/message-delta) function                             |
 | [orgContact](/graph/api/resources/orgcontact)                       | [orgContact: delta](/graph/api/orgcontact-delta) function                       |
 | [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant) | [oAuth2PermissionGrant: delta](/graph/api/oauth2permissiongrant-delta) function |
-| [contactFolder](/graph/api/resources/contactfolder)                 | [contactFolder: delta](/graph/api/contactfolder-delta) function                 |
-| [contact](/graph/api/resources/contact) resource                    | [contact: delta](/graph/api/contact-delta) function                             |
 | [plannerBucket](/graph/api/resources/plannerbucket) *               | [plannerBucket: delta](/graph/api/plannerbucket-delta) function                 |
 | [plannerUser](/graph/api/resources/planneruser) <sup>2</sup>        | [plannerUser: delta](/graph/api/planneruser-list-delta) function                |
 | [sites](/graph/api/resources/site)                                  | [delta](/graph/api/site-delta) function of the [site](/graph/api/resources/site) resource                |
