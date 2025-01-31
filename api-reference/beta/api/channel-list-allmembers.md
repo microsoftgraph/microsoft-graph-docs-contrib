@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Get a list of all [members](../resources/conversationmember.md) in a [channel](../resources/channel.md). It supports all types of channels. In the case of shared channels, it includes all cross-tenant and cross-team members in a channel.
 
 > [!NOTE]
-> The membership IDs returned by the server must be treated as opaque strings. The client shouldn't try to parse or make any assumptions about these resource IDs.
+> The membership IDs returned by the server must be treated as opaque strings. Users shouldn't try to parse or make any assumptions about these resource IDs.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-allmembers-permissions.md)]
 
 > [!NOTE]
-> The `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). These permissions currently don't work for Shared channel.
+> The `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). Currently, these permissions don't work for shared channels.
 
 ## HTTP request
 
