@@ -819,10 +819,6 @@ items:
       href: ../../api/sharedwithchannelteaminfo-list-allowedmembers.md
     - name: Check user access
       href: ../../api/channel-doesuserhaveaccess.md
-    - name: Planner
-      items:
-      - name: List plans
-        href: ../../api/teamschannelplanner-list-plans.md
   - name: Chat
     items:
     - name: Chat
