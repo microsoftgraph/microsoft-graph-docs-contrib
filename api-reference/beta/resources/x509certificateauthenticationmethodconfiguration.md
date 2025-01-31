@@ -77,7 +77,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.x509CertificateIssuerHintsConfiguration"
   },
   "crlValidationConfiguration": {
-    "@odata.type": "microsoft.graph.x509CertificateCrlValidationConfiguration"
+    "@odata.type": "microsoft.graph.x509CertificateCRLValidationConfiguration"
   }
 }
 ```
