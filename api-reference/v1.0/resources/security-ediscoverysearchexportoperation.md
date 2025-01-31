@@ -21,14 +21,12 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `contentExport`,  `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|additionalOptions|[microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values)| The additional items to include in the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`, `htmlTranscripts`,`advancedIndexing`, `allItemsInFolder`, `includeFolderAndPath`, `condensePaths`, `friendlyName`, `splitSource`, `optimizedPartitionSize`, `includeReport`.  Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/concepts/best-practices-concept#handling-future-members-in-evolvable-enumerations): `htmlTranscripts`,`advancedIndexing`, `allItemsInFolder`, `includeFolderAndPath`, `condensePaths`, `friendlyName`, `splitSource`, `optimizedPartitionSize`, `includeReport`.|
-|cloudAttachmentVersion|[microsoft.graph.security.cloudAttachmentVersion](../resources/enums-security.md#cloudattachmentversion-values)|The versions to include for cloud attachments in messages.|
+|additionalOptions|[microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values)| The additional items to include in the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`.|
 |completedDateTime|DateTimeOffset|The date and time when the operation was completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The user who created the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |createdDateTime|DateTimeOffset|The date and time when the operation was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |description|String|The description of the export by the user.|
 |displayName|String|The name of export provided by the user.|
-|documentVersion|[microsoft.graph.security.documentVersion](../resources/enums-security.md#documentversion-values)| The versions to include for files in sharepoint.|
 |exportCriteria|[microsoft.graph.security.exportCriteria](../resources/security-ediscoverysearchexportoperation.md#exportcriteria-values)|Items to be included in the export. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
 |exportFileMetadata|[microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md) collection|Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.|
 |exportFormat|[microsoft.graph.security.exportFormat](../resources/security-ediscoverysearchexportoperation.md#exportformat-values)|Format of the emails of the export. The possible values are: `pst`, `msg`, `eml`, `unknownFutureValue`.|
@@ -50,15 +48,6 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 | subfolderContents           | Collect items inside subfolders of a matched folder.|
 | listAttachments             | Collect files attached to SharePoint lists and their child items.|
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
-| htmlTranscripts             | Thresd contextual chat messages into HTML transcripts. |
-| advancedIndexing            | Perform advanced indexing during export to reduce false matches. |
-| allItemsInFolder            | Include all content in list if the list itself matches a query. |
-| includeFolderAndPath        | Include folder and path structure of the source. | 
-| condensePaths               | Truncate file paths so they fit within 1024 characters.|
-| friendlyName                | Give each item a friendly name. |
-| splitSource                 | Organize data from different locations into separate folders or PSTs. |
-| optimizedPartitionSize      | Optimize export package partition  size. |
-| includeReport               | Include report of item metadata. |
 
 ### exportCriteria values
 
@@ -116,8 +105,6 @@ The following JSON representation shows the resource type.
   "exportFormat": "String",
   "exportLocation": "String",
   "exportSingleItems": "Boolean",
-  "cloudAttachmentVersion": "String",
-  "documentVersion": "String",
   "id": "String (identifier)",
   "percentProgress": "Int32",
   "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},

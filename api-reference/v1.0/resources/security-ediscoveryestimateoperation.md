@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 
 
-Represents the process of estimating statistics (items count, size, and number of locations) of an eDiscovery search.
+Represents the process of estimating statistics (items count, size and number of locations) of an eDiscovery search.
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
@@ -35,20 +35,9 @@ None.
 |percentProgress|Int32|The progress of the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |siteCount|Int32|The number of mailboxes that had search hits.|
-|statisticsOptions|[microsoft.graph.security.statisticsOptions](#statisticsoptions-values)|The options to generate statistics. Possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`.|
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |unindexedItemCount|Int64|The estimated count of unindexed items for the collection.|
 |unindexedItemsSize|Int64|The estimated size of unindexed items for the collection.|
-
-### statisticsOptions values
-|Name|Description|
-|:----|-----------|
-|includeRefiners      | Refine with categories to include people, sensitive information types, item types, and errors.|
-|includeQueryStats    | Include query keywords report to assess keyword relevance of your search query.|
-|includeUnindexedStats| Include partially indexed items.|
-|advancedIndexing     | Perform advanced indexing during search to reduce false matches.|
-|locationsWithoutHits | Estimate unindexed items even in locations without hits.|
-|unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -85,8 +74,7 @@ The following JSON representation shows the resource type.
   "unindexedItemCount": "Integer",
   "unindexedItemsSize": "Integer",
   "mailboxCount": "Integer",
-  "siteCount": "Integer",
-  "statisticsOptions": "Integer"
+  "siteCount": "Integer"
 }
 ```
 

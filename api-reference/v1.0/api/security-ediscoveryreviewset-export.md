@@ -49,13 +49,13 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |description|String| Description of the export. |
-|exportOptions|microsoft.graph.security.exportOptions|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`,  `unknownFutureValue`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizePartitionSize`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/concepts/best-practices-concept#handling-future-members-in-evolvable-enumerations): `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizePartitionSize`. Note: If `originalFiles` isn't selected, only the `tags` member is considered.|
-|exportStructure|microsoft.graph.security.exportFileStructure| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`, `msg`.  Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/concepts/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`. Note: `directory` is on the way for deprecation. Currently, if `directory` is selected, the format is `msg`, and the export options `splitSource`, `includeFolderAndPath`, and `friendlyName` are disregarded.|
+|exportOptions|microsoft.graph.security.exportOptions|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `unknownFutureValue`. |
+|exportStructure|microsoft.graph.security.exportFileStructure| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`.|
 |outputName|String| Name of the export. Required. |
 
 ## Response
 
-If the export started successfully, this action returns a `202 Accepted` response code. The response contains also a `Location` header, which contains the location of the [Export operation](../resources/security-ediscoveryexportoperation.md) that was created to handle the export.
+If the export has started successfully, this action returns a `202 Accepted` response code. The response contains also a `Location` header, which contains the location of the [Export operation](../resources/security-ediscoveryexportoperation.md) that was created to handle the export.
 
 ## Examples
 

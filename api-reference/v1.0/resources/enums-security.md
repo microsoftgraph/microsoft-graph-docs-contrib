@@ -160,24 +160,6 @@ Namespace: microsoft.graph.security
 | critical           |
 | unknownFutureValue |
 
-### cloudAttachmentVersion values
-
-|Member|
-|:----|
-|latest     |
-|recent10   |
-|recent100  |
-|all        |
-
-### documentVersion values
-
-|Member|
-|:----|
-|latest     |
-|recent10   |
-|recent100  |
-|all        |
-
 <!--
 {
   "type": "#page.annotation",
