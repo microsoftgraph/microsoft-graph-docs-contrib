@@ -2531,6 +2531,32 @@
       "CreatedDateTime": "2025-01-06T00:00:00",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "51235d32-f43b-4fb8-a418-75ea80730a40",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "interactionHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the **interactionHistory** relationship to the [copilotRoot](https://learn.microsoft.com/en-us/graph/api/resources/copilotRoot?view=graph-rest-beta) resource.",
+          "Target": "copilotRoot"
+        },
+        {
+          "Id": "51235d32-f43b-4fb8-a418-75ea80730a40",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "interactions",
+          "ChangeType": "Addition",
+          "Description": "Removed the **interactions** relationship from the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiinteractionhistory?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionHistory"
+        }
+      ],
+      "Id": "51235d32-f43b-4fb8-a418-75ea80730a40",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-30T19:08:30.9147043Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "AI interactions"
     }
   ]
 }
