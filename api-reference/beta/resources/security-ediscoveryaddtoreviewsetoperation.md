@@ -31,7 +31,7 @@ None.
 |createdDateTime|DateTimeOffset| The date and time the operation was created. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |documentVersion|String| How many most recent versions of SharePoint documents to collect.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|itemsToInclude|String| The items to include in the review set. Possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
+|itemsToInclude|[microsoft.graph.security.itemsToInclude](#itemstoinclude-values)| The items to include in the review set. Possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|

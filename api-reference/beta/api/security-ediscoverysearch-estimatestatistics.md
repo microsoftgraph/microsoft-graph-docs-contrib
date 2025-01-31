@@ -43,7 +43,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## Request body
 |Property|Type|Description|
 |:---|:---|:---|
-| statisticsOptions | microsoft.graph.security.statisticsOptions | Bitwise options that specify the statistics to generate. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`. Note: `advancedIndexing` and `locationsWithoutHits` is only considered if `includeUnindexedStats` is set.|
+| statisticsOptions | [microsoft.graph.security.statisticsOptions](../resources/security-ediscoveryestimateoperation.md#statisticsoptions-values) | Bitwise options that specify the statistics to generate. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`. Note: `advancedIndexing` and `locationsWithoutHits` is only considered if `includeUnindexedStats` is set.|
 
 ## Response
 

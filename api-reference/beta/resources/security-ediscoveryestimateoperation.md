@@ -34,7 +34,7 @@ None.
 |percentProgress|Int32|The progress of the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |siteCount|Int32|The number of mailboxes that had search hits.|
-|statisticsOptions|String|The options to generate statistics. Possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`.|
+|statisticsOptions|[microsoft.graph.security.statisticsOptions](#statisticsoptions-values)|The options to generate statistics. Possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`.|
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |unindexedItemCount|Int64|The estimated count of unindexed items for the collection.|
 |unindexedItemsSize|Int64|The estimated size of unindexed items for the collection.|
