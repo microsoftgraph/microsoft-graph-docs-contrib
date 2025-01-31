@@ -315,7 +315,7 @@ Content-Type: application/json
   "displayName": "Export 4",
   "exportCriteria": "partiallyIndexed",
   "exportLocation": "responsiveLocations, nonresponsiveLocations",
-  "additionalOptions": "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments, includeFolderAndPath, splitSource, condensePaths, friendlyName, optimizedPartitionSize"
+  "additionalOptions": "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments"
 }
 ```
 
