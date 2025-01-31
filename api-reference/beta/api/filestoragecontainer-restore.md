@@ -99,7 +99,6 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers/b!IS
 
 ---
 
-
 ### Response
 
 The following example shows the response.
