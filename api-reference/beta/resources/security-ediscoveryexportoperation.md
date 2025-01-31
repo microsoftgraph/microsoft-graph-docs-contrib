@@ -66,6 +66,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |None|Default file structure.|
 |directory|All files in a singe folder called NativeFiles.|
 |pst|Mails are grouped in pst format.|
+|unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 |msg|Mails are in msg format.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 
