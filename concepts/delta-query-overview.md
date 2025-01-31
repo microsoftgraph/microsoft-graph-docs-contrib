@@ -26,6 +26,9 @@ The typical call pattern is as follows:
 
 1. The application makes a GET request with the **delta** function on the desired resource. For example, `GET https://graph.microsoft.com/v1.0/users/delta`.
 
+  > [!TIP]
+  > `/delta` is a shortcut for the fully qualified name `/microsoft.graph.delta`.
+
 2. Microsoft Graph responds with the requested resource and a [state token](#state-tokens).
 
      a. If Microsoft Graph returns a `@odata.nextLink` URL, there are more pages of data to retrieve in the session, even if the current response contains an empty result. The application uses the `@odata.nextLink` URL to continue making requests to retrieve all pages of data until Microsoft Graph returns a `@odata.deltaLink` URL in the response.
