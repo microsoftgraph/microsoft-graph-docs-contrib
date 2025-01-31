@@ -41,9 +41,9 @@ Represents the export job for downloading a specified Cloud PC report.
 
 |Member|Description|
 |:-----|:----------|
-|notStarted|The export job doesn't start yet.|
+|notStarted|The export isn't started.|
 |inProgress|The export job is in progress.|
-|completed|The export job is completed with the export URL returned.|
+|completed|The export job is completed. The export URL is returned.|
 |failed|The export job failed.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
@@ -54,6 +54,7 @@ Represents the export job for downloading a specified Cloud PC report.
 |remoteConnectionHistoricalReports|The historical aggregated remote connections report.|
 |dailyAggregatedRemoteConnectionReports|The daily aggregated remote connections report.|
 |totalAggregatedRemoteConnectionReports|The total aggregated remote connections report.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 |sharedUseLicenseUsageReport|The daily/hourly aggregated shared use license usage report.|
 |sharedUseLicenseUsageRealTimeReport|The real-time data for shared use license usage.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|

@@ -20,74 +20,74 @@ The following table describes the columns in the returned report if you specify 
 
 |Column|Description|
 |:-----|:----------|
-|HostRegion|The region where the Cloud PC provision is located.|
-|GatewayRegion|The region where the gateway is located.|
-|AvgRoundTripTimeInMs|The average round trip time in milliseconds of certain HostRegion-GatewayRegion pair.|
 |AvgBandwidthInMbps|The average available bandwidth in Mbps of certain HostRegion-GatewayRegion pair.|
-|ConnectionErrorCount|The number of connection errors in certain HostRegion-GatewayRegion pair.|
-|RTTIssueCount|The number of Cloud PC instances with round trip time issues.|
-|ConnectionQualityIssueCount|The number of Cloud PC instances with connection quality issues.|
-|StabilityIssueCount|The number of Cloud PC instances with stability issues.|
+|AvgRoundTripTimeInMs|The average round trip time in milliseconds of certain HostRegion-GatewayRegion pair.|
 |BandwidthIssueCount|The number of Cloud PC instances with available bandwidth issues.|
-|ConnnectErrorIssueCount|The number of Cloud PC instances with connection error issues.|
-|RTTStabilityIssueCount|The number of Cloud PC instances with round trip time stability issues.|
 |BandwidthStabilityIssueCount|The number of Cloud PC instances with bandwidth stability issues.|
+|ConnectErrorIssueCount|The number of Cloud PC instances with connection error issues.|
+|ConnectionErrorCount|The number of connection errors in certain HostRegion-GatewayRegion pair.|
+|ConnectionQualityIssueCount|The number of Cloud PC instances with connection quality issues.|
+|GatewayRegion|The region where the gateway is located.|
+|HostRegion|The region where the Cloud PC provision is located.|
+|RTTIssueCount|The number of Cloud PC instances with round trip time issues.|
+|RTTStabilityIssueCount|The number of Cloud PC instances with round trip time stability issues.|
+|StabilityIssueCount|The number of Cloud PC instances with stability issues.|
 
 
 The following table describes the columns in the returned report if you specify `troubleshootDetailsReport` for the **reportName** property when calling this API.
 
 |Column|Description|
 |:-----|:----------|
-|UsageInsight|Insights on the current usage of the resource.|
-|CurrentSize|The current size of the resource.|
-|CurrentCPU|The current CPU usage of the resource.|
-|CurrentRamInGB|The current RAM usage in GB.|
-|CurrentDiskInGB|The current disk usage in GB.|
-|RecommendedSize|The recommended size for the resource.|
-|RecommendedCPU|The recommended CPU usage for the resource.|
-|RecommendedRamInGB|The recommended RAM usage in GB.|
-|RecommendedDiskInGB|The recommended disk usage in GB.|
-|ProvisionPolicyName|The name of the provision policy.|
-|RoundTripTimeInMsAvg|The average round trip time in milliseconds.|
 |AvailableBandwidthInMbpsAvg|The average available bandwidth in Mbps.|
-|HasPerformanceIssue|Indicates a performance issue.|
-|HasNetworkIssue|Indicates a network issue.|
-|HasReliabilityIssue|Indicates a reliability issue.|
 |ConnectionErrorCount|The number of connection errors.|
+|CurrentCPU|The current CPU usage of the resource.|
+|CurrentDiskInGB|The current disk usage in GB.|
+|CurrentRamInGB|The current RAM usage in GB.|
+|CurrentSize|The current size of the resource.|
+|HasNetworkIssue|Indicates a network issue.|
+|HasPerformanceIssue|Indicates a performance issue.|
+|HasReliabilityIssue|Indicates a reliability issue.|
+|ProvisionPolicyName|The name of the provision policy.|
+|RecommendedRamInGB|The recommended RAM usage in GB.|
+|RecommendedCPU|The recommended CPU usage for the resource.|
+|RecommendedDiskInGB|The recommended disk usage in GB.|
+|RecommendedSize|The recommended size for the resource.|
+|RoundTripTimeInMsAvg|The average round trip time in milliseconds.|
+|UsageInsight|Insights on the current usage of the resource.|
 
 The following table describes the columns in the returned report if you specify `troubleshootTrendCountReport` for the **reportName** property when calling this API. 
 
 |Column|Description|
 |:-----|:----------|
 |CpuIssueCloudPcCount|The number of Cloud PC instances with CPU issues.|
-|CpuIssueTrend|The count trend of Cloud PC instances with CPU issues over a week.|
-|MemoryIssueCloudPcCount|The number of Cloud PC instances with memory issues.|
-|MemoryIssueTrend|The count trend of Cloud PC instances with memory issues over a week.|
-|RTTIssueCloudPcCount|The number of Cloud PC instances with round trip time issues.|
-|RTTIssueTrend|The count trend of Cloud PC instances with round trip time issues over a week.|
-|StabilityIssueCloudPcCount|The number of Cloud PC instances with stability issues.|
-|StabilityIssueTrend|The count trend of Cloud PC instances with stability issues over a week.|
+|CpuIssueTrend|The trend in the weekly number of Cloud PC instances with CPU issues.|
 |ConnectionQualityIssueCloudPcCount|The number of Cloud PC instances with connection quality issues.|
-|ConnectionQualityIssueTrend|The count trend of Cloud PC instances with connection quality issues over time.|
-|TotalImpactedCloudPcCount|The total count of impacted Cloud PCs.|
-|PerformanceIssueCount|The number of performance issues.|
+|ConnectionQualityIssueTrend|The trend in the weekly number of Cloud PC instances with connection quality issues.|
+|MemoryIssueCloudPcCount|The number of Cloud PC instances with memory issues.|
+|MemoryIssueTrend|The trend in the weekly number of Cloud PC instances with memory issues.|
 |NetworkIssueCount|The number of network issues.|
+|PerformanceIssueCount|The number of performance issues.|
 |ReliabilityIssueCount|The number of reliability issues.|
+|RTTIssueCloudPcCount|The number of Cloud PC instances with round trip time issues.|
+|RTTIssueTrend|The trend in the weekly number of Cloud PC instances with round trip time issues.|
+|StabilityIssueCloudPcCount|The number of Cloud PC instances with stability issues.|
+|StabilityIssueTrend|The trend in the weekly number of Cloud PC instances with stability issues.|
+|TotalImpactedCloudPcCount|The total count of impacted Cloud PCs.|
 
 
 The following table describes the columns in the returned report if you specify `troubleshootIssueCountReport` for the **reportName** property when calling this API.   
 
 |Column|Description|
 |:-----|:----------|
-|AsofDate|The date time of data.|
-|PerformanceIssueCount|The number of performance issues.|
-|NetworkIssueCount|The number of network issues.|
-|ReliabilityIssueCount|The number of reliability issues.|
+|AsofDate|The date and time of when the data was recorded.|
+|ConnectionQualityIssueCount|The number of connection quality issues.|
 |CpuIssueCount|The number of CPU issues.|
 |MemoryIssueCount|The number of memory issues.|
+|NetworkIssueCount|The number of network issues.|
+|PerformanceIssueCount|The number of performance issues.|
+|ReliabilityIssueCount|The number of reliability issues.|
 |RTTIssueCount|The number of round trip time issues.|
 |StabilityIssueCount|The number of stability issues.|
-|ConnectionQualityIssueCount|The number of connection quality issues.|
 
 ## Permissions
 
@@ -123,25 +123,25 @@ In the request body, supply a JSON representation of the parameters.
 
 The following table lists the parameters that are required when you call this action.
 
-|Parameter|Required|Type|Description|
-|:----------|:---------|:---------|:-------------------------------------------------------------------------------------------------------|
-|filter|No|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`.|
-|reportName|Yes|[cloudPCTroubleshootReportType](#cloudpctroubleshootreporttype-values)|The report name, possible values: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`. Default value is: troubleshootDetailsReport.|
-|groupBy|No|String collection|Specifies how to group the reports. If used, must have the same content as the **select** parameter.|
-|orderBy|No|String collection|Specifies the order by columns name.|
-|search|No|String|Specifies a string to search for.|
-|select|No|String collection|OData `$select` syntax. The selected columns of the reports.|
-|skip|No|Int32|Number of records to skip.|
-|top|No|Int32|The number of top records to return. If not specified, the default limit is 25, with a maximum of 100.|
+|Parameter|Type|Description|
+|:--------|:---|:----------|
+|filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`. Optional.|
+|groupBy|String collection|Specifies how to group the reports. If used, must have the same content as the **select** parameter. Optional|
+|orderBy|String collection|Specifies the order by columns name. Optional.|
+|reportName|[cloudPCTroubleshootReportType](#cloudpctroubleshootreporttype-values)|The report name, possible values: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`. Default value is: `troubleshootDetailsReport`.|
+|search|String|The search string. Optional.|
+|select|String collection|OData `$select` syntax. The selected columns of the reports. Optional.|
+|skip|Int32|Number of records to skip. Optional.|
+|top|Int32|The number of top records to return. If not specified, the default limit is 25, with a maximum of 100. Optional.|
 
 ### cloudPCTroubleshootReportType values
-|Member|Description|Value|
-|--------------------------------------------|-----------------------------------------------------------------------------------------------------|-----|
-|`troubleshootDetailsReport`|The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues.|0|
-|`troubleshootTrendCountReport`|The aggregated report that shows the number and trend of issues per tenant.|1|
-|`troubleshootRegionalReport`|The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues.|2|
-|`roubleshootIssueCountReport`|The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.|3|
-|`unknownFutureValue`|Evolvable enumeration sentinel value. Don't use.|4|use.|
+|Member|Description|
+|------|-----------|
+|`troubleshootDetailsReport`|The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues.|
+|`troubleshootTrendCountReport`|The aggregated report that shows the number and trend of issues per tenant.|
+|`troubleshootRegionalReport`|The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues.|
+|`troubleshootIssueCountReport`|The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.|
+|`unknownFutureValue`|Evolvable enumeration sentinel value. Don't use.|
 
 
 ## Response
