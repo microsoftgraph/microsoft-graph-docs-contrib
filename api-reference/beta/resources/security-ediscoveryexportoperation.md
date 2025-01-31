@@ -51,7 +51,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |text|Include extracted text from the original files.|
 |pdfReplacement|Replace original file with PDF version when available.|
 |tags|Include tag information in fileInfo.|
-|fileInfo (deprecated) |Include metadata of original files in a load file. The `fileInfo` member is deprecated and will stop returning data on April 30, 2023. Going forward, the summary and load files are always included. |
+|fileInfo (deprecated) |Include metadata of original files in a load file. The `fileInfo` member is deprecated and stopped returning data on April 30, 2023. Going forward, the summary and load files are always included. |
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 |splitSource|Organize data from different locations into separate folders or PSTs.|
 |includeFolderAndPath|Include folder and path structure of source.|

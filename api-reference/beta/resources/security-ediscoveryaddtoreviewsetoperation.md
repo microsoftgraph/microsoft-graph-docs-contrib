@@ -39,8 +39,8 @@ None.
 ### additionalDataOptions values
 |Name|Description|
 |:---|:---|
-|allVersions|include all versions of a sharepoint document matching the source collection query. Caution: SharePoint versions can significantly increase the volume of items |
-|linkedFiles|include linked files that were shared in outlook, teams, or Yammer messages by attaching a link to the file.|
+|allVersions|include all versions of a SharePoint document matching the source collection query. Caution: SharePoint versions can significantly increase the volume of items |
+|linkedFiles| Include linked files shared in Outlook, Teams, or Yammer messages by attaching a link to the file.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 |advancedIndexing|To reduce false matches, perform advanced indexing during export.|
 |listAttachments|Include list attachments.|
