@@ -51,7 +51,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -60,7 +59,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups
 ```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-list-schedulinggroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -132,7 +130,8 @@ Content-type: application/json
           "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
           "displayName": "John Doe"
         }
-      }
+      },
+      "code": "CashierCode"
     }
   ]
 }

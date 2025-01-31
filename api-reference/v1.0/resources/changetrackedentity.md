@@ -1,6 +1,6 @@
 ---
 title: "changeTrackedEntity resource type"
-description: "Represents an entity to track changes made to any supported Shifts resource"
+description: "Represents an entity to track changes made to any supported Shifts resource."
 ms.localizationpriority: medium
 ms.date: 11/21/2024
 author: "victorcheng"
@@ -28,6 +28,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|createdBy|[identitySet](identityset.md)|Identity of the creator of the entity.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |lastModifiedBy|[identitySet](identityset.md)|Identity of the person who last modified the entity.|
@@ -54,6 +55,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.changeTrackedEntity",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
