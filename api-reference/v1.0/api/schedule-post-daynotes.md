@@ -20,12 +20,8 @@ Create a new [dayNote](../resources/daynote.md) object.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "schedule-post-daynotes-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/daynote-create-permissions.md)]
+<!-- { "blockType": "permissions", "name": "schedule_post_daynotes" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedule-post-daynotes-permissions.md)]
 
 ## HTTP request
 
