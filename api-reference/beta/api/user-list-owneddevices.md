@@ -33,7 +33,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /users/{id | userPrincipalName}/ownedDevices
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. For more information on properties that support query parameters, see the [device resource type](../resources/device.md#properties). 
+
+Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
