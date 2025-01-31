@@ -27,10 +27,7 @@ Represents a list of messages exchanged involving AI.
 None.
 
 ## Relationships
-| Relationship | Type     | Description |
-|:--------------|:---------|:------------|
-| interactions  | [aiInteraction](../resources/aiinteraction.md) collection| The list of AI interactions. |
-
+None.
 
 ## JSON representation
 
@@ -46,6 +43,6 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "interactions": [{"@odata.type": "microsoft.graph.aiinteraction"}]
+  "@odata.type": "#microsoft.graph.aiInteractionHistory"
 }
 ```
