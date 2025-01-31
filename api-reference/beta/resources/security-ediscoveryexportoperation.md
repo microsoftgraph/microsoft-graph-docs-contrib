@@ -21,7 +21,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getDownloadUrl](../api/security-ediscoveryexportoperation-getdownloadurl.md) (deprecated) |String| Return the URL for the export. The **getDownloadUrl** function is deprecated and will stop returning data on April 30, 2023. Use the new **exportFileMetadata** property returned by the [Get caseOperation](../api/security-caseoperation-get.md) API instead.|
+|[getDownloadUrl](../api/security-ediscoveryexportoperation-getdownloadurl.md) (deprecated) |String| Return the URL for the export. The **getDownloadUrl** function is deprecated and stopped returning data on April 30, 2023. Use the new **exportFileMetadata** property returned by the [Get caseOperation](../api/security-caseoperation-get.md) API instead.|
 
 ## Properties
 |Property|Type|Description|
@@ -41,7 +41,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |azureBlobContainer (deprecated)|String| The name of the Azure storage location where the export is stored. This name only applies to exports stored in your own Azure storage location. The **azureBlobContainer** property is deprecated and stopped returning data on April 30, 2023. |
 |azureBlobToken (deprecated)|String| The SAS token for the Azure storage location. This token only applies to exports stored in your own Azure storage location. The **azureBlobToken** property is deprecated and stopped returning data on April 30, 2023. |
-|outputFolderId (deprecated) | String | The output folder ID. The **outputFolderId** property is deprecated and will stop returning data on April 30, 2023.
+|outputFolderId (deprecated) | String | The output folder ID. The **outputFolderId** property is deprecated and stopped returning data on April 30, 2023.
 
 ### exportOptions values
 
