@@ -15,12 +15,12 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Determines whether issuer(CA) hints are sent back to the client side to filter the certificates shown in certificate picker.
-
+ 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |exemptedCertificateAuthoritiesSubjectKeyIdentifiers| String collection|Represents the SKIs of CAs that should be excluded from the valid CRL distribution point check. SKI is represented as a hexadecimal string.|
-|state||The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
+|state|x509CertificateCRLValidationConfigurationState|The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.
