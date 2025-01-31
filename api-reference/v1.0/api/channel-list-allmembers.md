@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-allmembers-permissions.md)]
 
 > [!NOTE]
-> The `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> The `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). These permissions currently don't work for Shared channel.
 
 ## HTTP request
 
