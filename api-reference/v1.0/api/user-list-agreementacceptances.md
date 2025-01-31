@@ -12,7 +12,7 @@ ms.date: 04/17/2024
 
 Namespace: microsoft.graph
 
-Retrieve the signed-in user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
+Allows the signed-in user to retrieve their [agreementAcceptance](../resources/agreementacceptance.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -21,6 +21,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "user_list_agreementacceptances" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-agreementacceptances-permissions.md)]
+
+> [!IMPORTANT]
+> This API allows the signed-in user to retrieve their [agreementAcceptance](../resources/agreementacceptance.md) objects. It doesn't require them to have any additional [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) as the [Default user role](/entra/fundamentals/users-default-permissions?toc=%2Fgraph%2Ftoc.json) authorizes them to retrieve their agreement acceptances.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
