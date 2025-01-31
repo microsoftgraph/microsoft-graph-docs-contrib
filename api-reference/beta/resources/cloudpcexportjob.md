@@ -77,6 +77,7 @@ Represents the export job for downloading a specified Cloud PC report.
 |troubleshootTrendCountReport|The aggregated report that shows the number and trend of issues per tenant.|
 |troubleshootRegionalReport|The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues.|
 |troubleshootIssueCountReport|The aggregated report that shows the number of performance issues, network issues, and reliability issues for 28 days.|
+
 ## Relationships
 
 None.
