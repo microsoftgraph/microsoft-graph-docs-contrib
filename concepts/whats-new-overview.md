@@ -17,6 +17,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## February 2025: New and generally available 
+
+### Teamwork and communications | Messaging
+
+[Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
+
+## February 2025: New in preview only 
+
+Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
+ - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
+ - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
+
 ## January 2025: New and generally available 
 
 ### Files
@@ -41,7 +53,6 @@ You can now deploy the user resource in a Bicep template for your infrastructure
 
 - [Get](/graph/api/chatmessage-get#example-5-get-a-chat-message-with-an--for-everyone) a chat message with an @mention for everyone.
 - [Get](/graph/api/chatmessage-get#example-6-get-a-chat-message-with-a-forwarded-message) a chat message that has a forwarded message as an attachment.
-- [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
 
 ## January 2025: New in preview only 
 
@@ -87,10 +98,7 @@ Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-bet
 
 ### Teamwork and communications | Messaging
 
-- [Get](/graph/api/chatmessage-get?view=graph-rest-beta&preserve-view=true#example-7-get-a-chat-message-with-a-loop-component) a chat message that includes a Microsoft Loop component as two attachments.
-Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
- - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
- - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
+[Get](/graph/api/chatmessage-get?view=graph-rest-beta&preserve-view=true#example-7-get-a-chat-message-with-a-loop-component) a chat message that includes a Microsoft Loop component as two attachments.
 
 ## Contribute to Microsoft Graph
 
