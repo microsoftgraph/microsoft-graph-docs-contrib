@@ -87,7 +87,7 @@ Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-bet
 
 ### Teamwork and communications | Messaging
 
-- [Get](/graph/api/chatmessage-get#example-7-get-a-chat-message-with-a-loop-component) a chat message that includes a Microsoft Loop component as two attachments.
+- [Get](/graph/api/chatmessage-get?view=graph-rest-beta&preserve-view=true#example-7-get-a-chat-message-with-a-loop-component) a chat message that includes a Microsoft Loop component as two attachments.
 Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
  - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
  - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
