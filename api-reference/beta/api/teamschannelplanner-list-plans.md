@@ -30,6 +30,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /teams/{team-id}/channels/{channel-id}/planner/plans
 ```
 
+### Optional query parameters
+
+TODO
+
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
