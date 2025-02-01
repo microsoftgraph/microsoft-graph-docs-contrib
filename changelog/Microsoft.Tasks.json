@@ -4,10 +4,10 @@
       "ChangeList": [
         {
           "Id": "8061d856-c50b-4bee-9cec-54f69812a763",
-          "ApiChange": "Resource",
-          "ChangedApiName": "channel",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "planner",
           "ChangeType": "Addition",
-          "Description": "Added the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the **planner** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
