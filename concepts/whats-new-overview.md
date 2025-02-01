@@ -25,7 +25,7 @@ Updated the endpoint of the [fileStorageContainer: restore](/graph/api/filestora
 
 ### Identity and access | Identity and sign-in
 
-Added riskEventType entry for the Suspicious API Traffic detection for [service principals](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-1.0&preserve-view=true).
+Added riskEventType entry for the Suspicious API Traffic detection for [service principals](/graph/api/resources/serviceprincipalriskdetection).
 
 ### Microsoft Graph Bicep templates
 
