@@ -36,6 +36,8 @@ You can now deploy the user resource in a Bicep template for your infrastructure
 - Microsoft Teams custom meeting templates allow you to specify values for many of the meeting options available to meeting organizers. Use the **meetingTemplateId** property on [onlineMeeting](/graph/api/resources/onlinemeeting) to create an online meeting with a meeting template.
 - Use the **allowBreakoutRooms**, **allowLiveShare**, **allowPowerPointSharing**, and **allowWhiteboard** to indicate whether breakout rooms, live share, PowerPoint live, and whiteboard features are enabled in an [onlineMeeting](/graph/api/resources/onlinemeeting) or [virtualEventSession](/graph/api/resources/virtualeventsession).
 - Use the **allowedLobbyAdmitters** property on [onlineMeeting](/graph/api/resources/onlinemeeting) to get or set the users who can admit from the lobby.
+- Use the **allowRecording** and **allowTranscription** properties on the [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to indicate whether recording or transcription is enabled for a meeting or virtual event session.
+
 
 ### Teamwork and communications | Messaging
 
@@ -92,6 +94,10 @@ Added `attributeCollectionStart`, `attributeCollectionSubmit`, and `emailOtpSend
 ### Tasks and plans
 
 Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true#container-type-teams-channel) container type to create plans in shared channels in Microsoft Teams.
+
+### Teamwork and communications | Calls and online meetings
+
+[Get](/graph/changenotifications-for-emergencycalls) change notifications for Microsoft Teams emergency call event updates.
 
 ### Teamwork and communications | Messaging
 
