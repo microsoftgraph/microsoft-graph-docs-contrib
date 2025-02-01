@@ -81,6 +81,10 @@ Use the [start](/graph/api/industrydata-industrydatarun-start?view=graph-rest-be
 
 Use the new mailbox import and export APIs in Microsoft Graph to build solutions that integrate with mailbox resources for data import and export scenarios. For more information, see [Overview of the mailbox import and export APIs in Microsoft Graph](/graph/mailbox-import-export-concept-overview).
 
+### Reports | Identity and access reports
+
+Added `attributeCollectionStart`, `attributeCollectionSubmit`, and `emailOtpSend` as supported values for the **eventType** property of the [appliedAuthenticationEventListener](/graph/api/resources/appliedauthenticationeventlistener?view=graph-rest-beta&preserve-view=true) resource.
+
 ### Tasks and plans
 
 Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true#container-type-teams-channel) container type to create plans in shared channels in Microsoft Teams.
