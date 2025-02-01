@@ -38,7 +38,6 @@ You can now deploy the user resource in a Bicep template for your infrastructure
 - Use the **allowedLobbyAdmitters** property on [onlineMeeting](/graph/api/resources/onlinemeeting) to get or set the users who can admit from the lobby.
 - Use the **allowRecording** and **allowTranscription** properties on the [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to indicate whether recording or transcription is enabled for a meeting or virtual event session.
 
-
 ### Teamwork and communications | Messaging
 
 - [Get](/graph/api/chatmessage-get#example-5-get-a-chat-message-with-an--for-everyone) a chat message with an @mention for everyone.
