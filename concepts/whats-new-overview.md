@@ -85,6 +85,10 @@ Use the new mailbox import and export APIs in Microsoft Graph to build solutions
 
 Added `attributeCollectionStart`, `attributeCollectionSubmit`, and `emailOtpSend` as supported values for the **eventType** property of the [appliedAuthenticationEventListener](/graph/api/resources/appliedauthenticationeventlistener?view=graph-rest-beta&preserve-view=true) resource.
 
+### Sites and lists
+
+[Archive](/graph/api/site-archive?view=graph-rest-beta&preserve-view=true) or [unarchive](/graph/api/site-unarchive?view=graph-rest-beta&preserve-view=true) a SharePoint site.
+
 ### Tasks and plans
 
 Use the [teamsChannel](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true#container-type-teams-channel) container type to create plans in shared channels in Microsoft Teams.
