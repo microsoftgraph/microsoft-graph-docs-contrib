@@ -22,10 +22,10 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:---|:---|:---|
 |  campaignId  | String  | The identifier of the campaign that this Teams message is part of. |
 |  channelId   | String  | The channel ID associated with this Teams message. |
-|  createdDateTime | DateTimeOffset | Inherited from [alertEvidence](../resources/security-alertevidence.md). |
+|  createdDateTime | DateTimeOffset | The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |  deliveryAction   | [microsoft.graph.security.teamsMessageDeliveryAction](#teamsmessagedeliveryaction-values)  | The delivery action of this Teams message. Possible values are: `unknown`, `deliveredAsSpam`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.   |
 |  deliveryLocation | [microsoft.graph.security.teamsDeliveryLocation](#teamsdeliverylocation-values)   | The delivery location of this Teams message. Possible values are: `unknown`, `teams`, `quarantine`, `failed`, `unknownFutureValue`. |
-|  detailedRoles | String collection | Inherited from [alertEvidence](../resources/security-alertevidence.md).    |
+|  detailedRoles | String collection |Detailed description of the entity role/s in an alert. Values are free-form.  |
 |  files | [microsoft.graph.security.fileEvidence](./security-fileevidence.md) collection  | The list of file entities that are attached to this Teams message. |
 |  groupId     | String  | The identifier of the team or group that this message is part of.   |
 |  isExternal  | Boolean | Indicates whether the message is owned by the organization that reported the security detection alert. |
@@ -37,20 +37,20 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |  parentMessageId  | String  | Identifier of the message to which the current message is a reply; otherwise, it's the same as the **messageId**.  |
 |  receivedDateTime | DateTimeOffset | The received date of this message.   |
 |  recipients  | String collection | The recipients of this Teams message.    |
-|  remediationStatus | [microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)  | Inherited from [alertEvidence](../resources/security-alertevidence.md).   |
-|  remediationStatusDetails | String  | Inherited from [alertEvidence](../resources/security-alertevidence.md).   |
-|  roles   | [microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md#evidencerole-values) collection | Inherited from [alertEvidence](../resources/security-alertevidence.md). |
+|  remediationStatus | [microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)  | Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`, `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`. |
+|  remediationStatusDetails | String  | Details about the remediation status. |
+|  roles   | [microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md#evidencerole-values) collection | The role/s that an evidence entity represents in an alert, for example, an IP address that is associated with an attacker has the evidence role **Attacker**. |
 |  senderFromAddress     | String  | The SMTP format address of the sender. |
 |  senderIP    | String  | The IP address of the sender.  |
 |  sourceAppName    | String  | Source of the message; for example, `desktop` and `mobile`.  |
 |  sourceId    | String  | The source ID of this Teams message. |
 |  subject     | String  | The subject of this Teams message.   |
 |  suspiciousRecipients | String collection | The list of recipients who were detected as suspicious.  |
-|  tags   | String collection | Inherited from [alertEvidence](../resources/security-alertevidence.md). |
+|  tags   | String collection | Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc. |
 |  threadId    | String  | Identifier of the channel or chat that this message is part of. |
 |  threadType  | String  | The Teams message type. Supported values are: `Chat`, `Topic`, `Space`, and `Meeting`. |
 |  urls  | [microsoft.graph.security.urlEvidence](./security-urlevidence.md) collection  | The URLs contained in this Teams message.   |
-|  verdict  |[microsoft.graph.security.evidenceVerdict](../resources/security-alertevidence.md#evidenceverdict-values)| Inherited from [alertEvidence](../resources/security-alertevidence.md). |
+|  verdict  |[microsoft.graph.security.evidenceVerdict](../resources/security-alertevidence.md#evidenceverdict-values)| The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`. |
 
 ## Relationships
 None.
