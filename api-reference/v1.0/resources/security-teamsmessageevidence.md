@@ -30,12 +30,12 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |  groupId     | String  | The identifier of the team or group that this message is part of.   |
 |  isExternal  | Boolean | Indicates whether the message is owned by the organization that reported the security detection alert. |
 |  isOwned     | Boolean | Indicates whether the message is owned by your organization.  |
-|  lastModifiedDateTime  | DateTimeOffset | Date and time when the message was last edited. |
+|  lastModifiedDateTime  | DateTimeOffset | Date and time when the message was last edited. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |  messageDirection | microsoft.graph.security.antispamTeamsDirection | The direction of the Teams message. |
 |  messageId   | String  | Non unique identifier of a message    |
-|  owningTenantId   | Guid  | Tenant ID (GUID) of the owner of the message.  |
+|  owningTenantId   | String  | Tenant ID (GUID) of the owner of the message.  |
 |  parentMessageId  | String  | Identifier of the message to which the current message is a reply; otherwise, it's the same as the **messageId**.  |
-|  receivedDateTime | DateTimeOffset | The received date of this message.   |
+|  receivedDateTime | DateTimeOffset | The received date of this message. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.  |
 |  recipients  | String collection | The recipients of this Teams message.    |
 |  remediationStatus | [microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)  | Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`, `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`. |
 |  remediationStatusDetails | String  | Details about the remediation status. |
@@ -78,7 +78,7 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)",
   "messageDirection": "String",
   "messageId": "String",
-  "owningTenantId": "Guid",
+  "owningTenantId": "String",
   "parentMessageId": "String",
   "receivedDateTime": "String (timestamp)",
   "recipients": ["String"],
