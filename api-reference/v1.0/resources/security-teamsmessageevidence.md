@@ -52,37 +52,6 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |  urls  | [microsoft.graph.security.urlEvidence](./security-urlevidence.md) collection  | The URLs contained in this Teams message.   |
 |  verdict  |[microsoft.graph.security.evidenceVerdict](../resources/security-alertevidence.md#evidenceverdict-values)| Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 
-### antispamTeamsDirection values
-
-| Member | Description|
-| :------| :--------------- |
-|  unknown   | Unknown enumeration value.  |
-|  inbound   | Inbound.|
-|  outbound  | Outbound.    |
-|  intraorg  | Internal.    |
-|  unknownFutureValue  | Evolvable enumeration sentinel value. Don't use. |
-
-### teamsDeliveryLocation values
-
-| Member | Description|
-| :------| :--------------- |
-|  unknown   | Unknown enumeration value.  |
-|  teams     | Message is delivered.   |
-|  quarantine     | Quarantined. |
-|  failed    | Message was blocked.    |
-|  unknownFutureValue  | Evolvable enumeration sentinel value. Don't use. |
-
-### teamsMessageDeliveryAction values
-
-| Member | Description|
-| :------| :--------------- |
-|  unknown   | Unknown enumeration value.  |
-|  deliveredAsSpam     | Junked. |
-|  delivered | Delivered.   |
-|  blocked   | Blocked.|
-|  replaced  | Replaced.    |
-|  unknownFutureValue  | Evolvable enumeration sentinel value. Don't use. |
-
 ## Relationships
 None.
 
