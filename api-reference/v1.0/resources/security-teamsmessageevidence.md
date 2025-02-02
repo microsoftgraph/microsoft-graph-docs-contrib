@@ -23,15 +23,15 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |  campaignId  | String  | The identifier of the campaign that this Teams message is part of. |
 |  channelId   | String  | The channel ID associated with this Teams message. |
 |  createdDateTime | DateTimeOffset | The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-|  deliveryAction   | [microsoft.graph.security.teamsMessageDeliveryAction](#teamsmessagedeliveryaction-values)  | The delivery action of this Teams message. Possible values are: `unknown`, `deliveredAsSpam`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.   |
-|  deliveryLocation | [microsoft.graph.security.teamsDeliveryLocation](#teamsdeliverylocation-values)   | The delivery location of this Teams message. Possible values are: `unknown`, `teams`, `quarantine`, `failed`, `unknownFutureValue`. |
+|  deliveryAction   | microsoft.graph.security.teamsMessageDeliveryAction | The delivery action of this Teams message. Possible values are: `unknown`, `deliveredAsSpam`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.   |
+|  deliveryLocation | microsoft.graph.security.teamsDeliveryLocation | The delivery location of this Teams message. Possible values are: `unknown`, `teams`, `quarantine`, `failed`, `unknownFutureValue`. |
 |  detailedRoles | String collection |Detailed description of the entity role/s in an alert. Values are free-form.  |
 |  files | [microsoft.graph.security.fileEvidence](./security-fileevidence.md) collection  | The list of file entities that are attached to this Teams message. |
 |  groupId     | String  | The identifier of the team or group that this message is part of.   |
 |  isExternal  | Boolean | Indicates whether the message is owned by the organization that reported the security detection alert. |
 |  isOwned     | Boolean | Indicates whether the message is owned by your organization.  |
 |  lastModifiedDateTime  | DateTimeOffset | Date and time when the message was last edited. |
-|  messageDirection | [microsoft.graph.security.antispamTeamsDirection](#antispamteamsdirection-values)  | The direction of the Teams message. |
+|  messageDirection | microsoft.graph.security.antispamTeamsDirection | The direction of the Teams message. |
 |  messageId   | String  | Non unique identifier of a message    |
 |  owningTenantId   | Guid  | Tenant ID (GUID) of the owner of the message.  |
 |  parentMessageId  | String  | Identifier of the message to which the current message is a reply; otherwise, it's the same as the **messageId**.  |
