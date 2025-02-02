@@ -50,7 +50,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |  suspiciousRecipients | String collection | The list of recipients who were detected as suspicious.  |
 |  tags   | String collection | Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 |  threadId    | String  | Identifier of the channel or chat that this message is part of. |
-|  threadType  | String  | Teams message type - Chat, Topic, Space, Meeting   |
+|  threadType  | String  | The Teams message type. Supported values are: `Chat`, `Topic`, `Space`, and `Meeting`. |
 |  urls  | [microsoft.graph.security.urlEvidence](./security-urlevidence.md) collection  | The URLs contained in this Teams message.   |
 |  verdict  |[microsoft.graph.security.evidenceVerdict](../resources/security-alertevidence.md#evidenceverdict-values)| Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 
