@@ -17,6 +17,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## February 2025: New and generally available 
+
+### Security
+
+Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence) as a supported [alert evidence](/graph/api/resources/security-alertevidence).
+
+## February 2025: New in preview only
+
+### Security
+
+Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence?view=graph-rest-beta&preserve-view=true) as a supported [alert evidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true).
+
 ## January 2025: New and generally available 
 
 ### Files
@@ -30,10 +42,6 @@ Added riskEventType entry for the Suspicious API Traffic detection for [service 
 ### Microsoft Graph Bicep templates
 
 You can now deploy the user resource in a Bicep template for your infrastructure as code (IaC) projects. For more information, see the [Microsoft.Graph users](/graph/templates/reference/users) Bicep reference.
-
-### Security
-
-Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence) as a supported [alert evidence](/graph/api/resources/security-alertevidence).
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -83,10 +91,6 @@ Use the [start](/graph/api/industrydata-industrydatarun-start?view=graph-rest-be
 ### Mailbox import and export
 
 Use the new mailbox import and export APIs in Microsoft Graph to build solutions that integrate with mailbox resources for data import and export scenarios. For more information, see [Overview of the mailbox import and export APIs in Microsoft Graph](/graph/mailbox-import-export-concept-overview).
-
-### Security
-
-Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence?view=graph-rest-beta&preserve-view=true) as a supported [alert evidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true).
 
 ### Tasks and plans
 
