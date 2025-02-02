@@ -32,7 +32,7 @@ GET /teams/{team-id}/channels/{channel-id}/planner/plans
 
 ### Optional query parameters
 
-TODO
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 | Name      |Description|
