@@ -883,6 +883,37 @@ Namespace: microsoft.graph.security
 | reasonLostInTransit |
 | bulk |
 
+### antispamTeamsDirection values
+
+| Member |
+| :------|
+|  unknown   |
+|  inbound   |
+|  outbound  |
+|  intraorg  |
+|  unknownFutureValue  |
+
+### teamsDeliveryLocation values
+
+| Member |
+| :------|
+|  unknown   |
+|  teams     |
+|  quarantine     |
+|  failed    |
+|  unknownFutureValue  |
+
+### teamsMessageDeliveryAction values
+
+| Member |
+| :------|
+|  unknown   |
+|  deliveredAsSpam     |
+|  delivered |
+|  blocked   |
+|  replaced  |
+|  unknownFutureValue  |
+
 <!--
 {
   "type": "#page.annotation",
