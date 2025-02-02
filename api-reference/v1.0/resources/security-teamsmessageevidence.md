@@ -28,7 +28,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |  detailedRoles | String collection | Inherited from [alertEvidence](../resources/security-alertevidence.md).    |
 |  files | [microsoft.graph.security.fileEvidence](./security-fileevidence.md) collection  | The list of file entities which relate (attached) to this Teams message entity instance. |
 |  groupId     | String  | The identifier of the team or group that this message is part of.   |
-|  isExternal  | Boolean | Indicates whether external users are in the chat.  |
+|  isExternal  | Boolean | Indicates whether the message is owned by the organization that reported the security detection alert. |
 |  isOwned     | Boolean | Indicates whether the message is owned by your organization.  |
 |  lastModifiedDateTime  | DateTimeOffset | Date and time when the message was last edited. |
 |  messageDirection | [microsoft.graph.security.antispamTeamsDirection](#antispamteamsdirection-values)  | The direction of the Teams message. |
