@@ -3434,37 +3434,6 @@ Possible values for user account types (group membership), per Windows definitio
 |authenticationTransfer|
 |unknownFutureValue|
 
-### antispamTeamsDirection values
-
-| Member |
-| :------|
-|  unknown   |
-|  inbound   |
-|  outbound  |
-|  intraorg  |
-|  unknownFutureValue  |
-
-### teamsDeliveryLocation values
-
-| Member |
-| :------|
-|  unknown   |
-|  teams     |
-|  quarantine     |
-|  failed    |
-|  unknownFutureValue  |
-
-### teamsMessageDeliveryAction values
-
-| Member |
-| :------|
-|  unknown   |
-|  deliveredAsSpam     |
-|  delivered |
-|  blocked   |
-|  replaced  |
-|  unknownFutureValue  |
-
 ### confirmedBy values 
 
 |Member|
