@@ -26,7 +26,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |  deliveryAction   | [microsoft.graph.security.teamsMessageDeliveryAction](#teamsmessagedeliveryaction-values)  | The delivery action of this Teams message. Possible values are: `unknown`, `deliveredAsSpam`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.   |
 |  deliveryLocation | [microsoft.graph.security.teamsDeliveryLocation](#teamsdeliverylocation-values)   | The delivery location of this Teams message. Possible values are: `unknown`, `teams`, `quarantine`, `failed`, `unknownFutureValue`. |
 |  detailedRoles | String collection | Inherited from [alertEvidence](../resources/security-alertevidence.md).    |
-|  files | [microsoft.graph.security.fileEvidence](./security-fileevidence.md) collection  | The list of file entities which relate (attached) to this Teams message entity instance. |
+|  files | [microsoft.graph.security.fileEvidence](./security-fileevidence.md) collection  | The list of file entities that are attached to this Teams message. |
 |  groupId     | String  | The identifier of the team or group that this message is part of.   |
 |  isExternal  | Boolean | Indicates whether the message is owned by the organization that reported the security detection alert. |
 |  isOwned     | Boolean | Indicates whether the message is owned by your organization.  |
