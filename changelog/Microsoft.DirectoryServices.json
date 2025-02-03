@@ -18,6 +18,9 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
       }, 
+    {
+      "ChangeList": [
+        {
           "Id": "370a2bc0-4ec9-4052-95ee-0990a1204483",
           "ApiChange": "Enumeration",
           "ChangedApiName": "tlsClientRegistrationMetadata",
