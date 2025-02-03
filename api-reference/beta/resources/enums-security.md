@@ -891,6 +891,7 @@ Namespace: microsoft.graph.security
 |recent10   |
 |recent100  |
 |all        |
+|unknownFutureValue|
 
 ### documentVersion values
 
@@ -900,6 +901,7 @@ Namespace: microsoft.graph.security
 |recent10   |
 |recent100  |
 |all        |
+|unknownFutureValue|
 
 <!--
 {
