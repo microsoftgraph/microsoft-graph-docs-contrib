@@ -2,6 +2,56 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "8c186a13-9252-49fe-8cba-fa6c77fa4f51",
+          "ApiChange": "Property",
+          "ChangedApiName": "audiences",
+          "ChangeType": "Addition",
+          "Description": "Added the **audiences** property to the [appManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementApplicationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementApplicationConfiguration"
+        },
+        {
+          "Id": "8c186a13-9252-49fe-8cba-fa6c77fa4f51",
+          "ApiChange": "Resource",
+          "ChangedApiName": "audienceRestriction",
+          "ChangeType": "Addition",
+          "Description": "Added the [audienceRestriction](https://learn.microsoft.com/en-us/graph/api/resources/audienceRestriction?view=graph-rest-beta) resource.",
+          "Target": "audienceRestriction"
+        },
+        {
+          "Id": "8c186a13-9252-49fe-8cba-fa6c77fa4f51",
+          "ApiChange": "Resource",
+          "ChangedApiName": "audiencesConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [audiencesConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/audiencesConfiguration?view=graph-rest-beta) resource.",
+          "Target": "audiencesConfiguration"
+        },
+        {
+          "Id": "8c186a13-9252-49fe-8cba-fa6c77fa4f51",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppManagementApplicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAppManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customAppManagementApplicationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "customAppManagementApplicationConfiguration"
+        },
+        {
+          "Id": "8c186a13-9252-49fe-8cba-fa6c77fa4f51",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationRestrictions** property to the [customAppManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customAppManagementConfiguration?view=graph-rest-beta) resource.",
+          "Target": "customAppManagementConfiguration"
+        }
+      ],
+      "Id": "8c186a13-9252-49fe-8cba-fa6c77fa4f51",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-09-05T14:47:22.0067839Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
       {
         "Id": "8b9db607-81fd-4013-af2e-d6cb709aa313",
         "ApiChange": "Enumeration",
