@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 01/27/2025
+ms.date: 02/03/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -3218,6 +3218,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### IndustryData-Run.Start
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 7e429772-5b5e-47c0-8fd6-7279294c8033 | f03a6d0e-0989-460f-80b2-e57c8561763e |
+| DisplayText | View and start runs | View and start runs |
+| Description | Allows the app to view and start IndustryData runs without a signed-in user. | Allows the app to view and start IndustryData runs on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### IndustryData-SourceSystem.Read.All
 
 | Category | Application | Delegated |
@@ -6230,6 +6241,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Upload user data to the identity synchronization service | Upload user data to the identity synchronization service |
 | Description | Allows the application to upload bulk user data to the identity synchronization service, without a signed-in user. | Allows the app to upload bulk user data to the identity synchronization service, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### SynchronizationData-User.Upload.OwnedBy
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 25c32ff3-849a-494b-b94f-20a8ac4e6774 | - |
+| DisplayText | Upload user data to the identity sync service for apps that this application creates or owns | - |
+| Description | Allows the application to upload bulk user data to the identity synchronization service for apps that this application creates or owns, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
