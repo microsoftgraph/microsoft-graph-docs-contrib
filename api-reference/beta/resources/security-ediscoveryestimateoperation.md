@@ -74,16 +74,16 @@ The following JSON representation shows the resource type.
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "indexedItemCount": "Integer",
-  "indexedItemsSize": "Integer",
-  "mailboxCount": "Integer",
-  "percentProgress": "Integer",
+  "indexedItemCount": "Int64",
+  "indexedItemsSize": "Int64",
+  "mailboxCount": "Int32",
+  "percentProgress": "Int32",
   "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
-  "siteCount": "Integer",
+  "siteCount": "Int32",
   "statisticsOptions": "String",
   "status": "String",
-  "unindexedItemCount": "Integer",
-  "unindexedItemsSize": "Integer"
+  "unindexedItemCount": "Int64",
+  "unindexedItemsSize": "Int64"
 }
 ```
 
