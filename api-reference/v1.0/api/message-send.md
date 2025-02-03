@@ -3,8 +3,9 @@ title: "message: send"
 description: "Send an existing draft message."
 ms.localizationpriority: high
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # message: send
@@ -40,7 +41,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Length | number | 0. Required. |
 
 ## Request body
@@ -58,7 +59,7 @@ The following example shows how to call this API.
 
 ##### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,7 +107,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 
 ##### Response
 
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

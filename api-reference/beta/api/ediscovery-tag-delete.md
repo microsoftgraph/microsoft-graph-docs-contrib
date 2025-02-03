@@ -3,8 +3,9 @@ title: "Delete tag"
 description: "Delete a tag object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Delete tag

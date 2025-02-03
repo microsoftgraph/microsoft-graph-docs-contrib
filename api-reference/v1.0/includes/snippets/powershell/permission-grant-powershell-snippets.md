@@ -16,8 +16,8 @@ $params = @{
 		}
 	)
 	roles = @(
-		"read"
-	)
+	"read"
+)
 }
 
 Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params

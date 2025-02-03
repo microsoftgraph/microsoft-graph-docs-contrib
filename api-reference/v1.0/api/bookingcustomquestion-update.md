@@ -3,8 +3,9 @@ title: "Update bookingCustomQuestion"
 description: "Update the properties of a bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # Update bookingCustomQuestion
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -62,10 +63,10 @@ If successful, this method returns a `200 OK` response code and an updated [book
 <!-- {
   "blockType": "request",
   "name" : "bookingcustomquestionupdate",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "91f1ef26-ca00-451c-1c64-8f3560c80d3d"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com", "91f1ef26-ca00-451c-1c64-8f3560c80d3d"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/91f1ef26-ca00-451c-1c64-8f3560c80d3d
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/customQuestions/91f1ef26-ca00-451c-1c64-8f3560c80d3d
 Content-Type: application/json
 
 {

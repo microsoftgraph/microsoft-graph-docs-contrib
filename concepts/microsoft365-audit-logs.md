@@ -3,8 +3,9 @@ title: "Use Microsoft 365 audit logs with Microsoft Graph Data Connect"
 description: "Learn how to use Microsoft 365 audit logs with Microsoft Graph Data Connect to track consent and data extraction operations events."
 author: "michaelvenables"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Use Microsoft 365 audit logs with Microsoft Graph Data Connect

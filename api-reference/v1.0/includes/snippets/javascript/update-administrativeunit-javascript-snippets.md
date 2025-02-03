@@ -11,7 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const administrativeUnit = {
-    displayName: 'Greater Seattle District Technical Schools'
+    displayName: 'Executive Division',
+    membershipType: 'Dynamic',
+    membershipRule: '(user.country -eq \"United States\")',
+    membershipRuleProcessingState: 'On'
 };
 
 await client.api('/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8')

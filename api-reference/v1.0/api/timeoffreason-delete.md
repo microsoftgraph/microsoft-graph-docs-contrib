@@ -3,8 +3,9 @@ title: "Delete timeOffReason"
 description: "Mark a timeOffReason as inactive by setting the isActive property."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # Delete timeOffReason
@@ -24,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timeoffreason_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timeoffreason-delete-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -52,7 +53,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -100,7 +101,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffReasons/{
 
 ### Response
 
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",

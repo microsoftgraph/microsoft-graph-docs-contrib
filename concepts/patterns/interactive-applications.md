@@ -2,7 +2,8 @@
 title: "Build interactive apps by using Microsoft Graph APIs"
 description: "Learn about the integration pattern that uses Microsoft Graph APIs to build interactive apps."
 author: "OlgaPodo"
-ms.localizationpriority: low
+ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 # Build interactive apps by using Microsoft Graph APIs
@@ -44,8 +45,7 @@ The following considerations support the use of this integration pattern:
 
 - **Solution complexity**: Although this solution might use the Microsoft Graph SDK, it still requires custom code to poll and process the data. If the data volume is large, sequential processing might not be sufficient, and parallel processing might be necessary. For this reason, this solution has a medium level of complexity.
 
-## See also
+## Related content
 
 - [Best practices in cloud applications](/azure/architecture/best-practices/index-best-practices)
-- [Microsoft Graph fundamentals](/training/basics-learn-graph)
 

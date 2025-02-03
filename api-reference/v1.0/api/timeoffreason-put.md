@@ -3,8 +3,9 @@ title: "Replace timeOffReason"
 description: "Replace an existing timeOffReason."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # Replace timeOffReason
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timeoffreason_put" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timeoffreason-put-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -68,13 +69,10 @@ Prefer: return=representation
 {
   "displayName": "Vacation",
   "iconType": "plane",
-  "isActive": true
+  "isActive": true,
+  "code": "VacationCode"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-put-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/timeoffreason-put-javascript-snippets.md)]
@@ -112,7 +110,8 @@ Content-type: application/json
       "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
       "displayName": "Alex Wilbur"
     }
-  }
+  },
+  "code": "VacationCode"
 }
 ```
 

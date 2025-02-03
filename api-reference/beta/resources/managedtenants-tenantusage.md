@@ -3,8 +3,9 @@ title: "tenantUsage resource type"
 description: "Represents the number of monthly active users per service in a managed tenant for the previous month. The time period for the data is a sliding window that takes a snapshot once a day."
 author: "kylewirpel"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # tenantUsage resource type
@@ -19,7 +20,7 @@ Represents the number of monthly active users per service in a managed tenant fo
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tenantUsage](../api/managedtenants-managedtenant-list-tenantusage.md)|[microsoft.graph.managedTenants.tenantUsage](../resources/managedtenants-tenantusage.md) collection|Gets the [monthly usage data for each service](../resources/managedtenants-tenantusage.md) in a [managed tenant](../resources/managedtenants-managedtenant.md).|
+|[List](../api/managedtenants-managedtenant-list-tenantusage.md)|[microsoft.graph.managedTenants.tenantUsage](../resources/managedtenants-tenantusage.md) collection|Gets the [monthly usage data for each service](../resources/managedtenants-tenantusage.md) in a [managed tenant](../resources/managedtenants-managedtenant.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +35,7 @@ Represents the number of monthly active users per service in a managed tenant fo
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

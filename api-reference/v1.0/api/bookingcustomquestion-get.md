@@ -3,8 +3,9 @@ title: "Get bookingCustomQuestion"
 description: "Read the properties and relationships of a bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # Get bookingCustomQuestion
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -59,11 +60,11 @@ If successful, this method returns a `200 OK` response code and a [bookingCustom
 <!-- {
   "blockType": "request",
   "name": "bookingcustomquestionget",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
 ```
 
 # [C#](#tab/csharp)

@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ItemPatent itemPatent = new ItemPatent();
-itemPatent.number = "USPTO-3954432633";
-itemPatent.webUrl = "https://patents.gov/3954432633";
+itemPatent.setNumber("USPTO-3954432633");
+itemPatent.setWebUrl("https://patents.gov/3954432633");
+ItemPatent result = graphClient.users().byUserId("{user-id}").profile().patents().byItemPatentId("{itemPatent-id}").patch(itemPatent);
 
-graphClient.users("{userId}").profile().patents("{id}")
-	.buildRequest()
-	.patch(itemPatent);
 
 ```

@@ -3,8 +3,9 @@ title: "orgContact: delta"
 description: "Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection." 
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # orgContact: delta
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection. See [change tracking](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection. For more information, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "orgcontact_delta" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-delta-permissions.md)]
+
+[!INCLUDE [rbac-org-contacts-apis-read-all](../includes/rbac-for-apis/rbac-org-contacts-apis-read-all.md)]
 
 ## HTTP request
 
@@ -42,7 +45,7 @@ You only need to specify any query parameters once up front.
 
 In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response. That URL already includes the encoded parameters.
 
-| Query parameter	   | Type	|Description|
+| Query parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same organization contact collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL, including this token, in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked in the same organization contact collection. |
@@ -102,7 +105,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 #### Request
 
-Here's an example of the request. Because there's no `$select` parameter, a default set of properties is tracked and returned.
+The following example shows a request. Because there's no `$select` parameter, a default set of properties is tracked and returned.
 
 
 # [HTTP](#tab/http)
@@ -342,7 +345,7 @@ Content-type: application/json
   ]
 }
 ```
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 

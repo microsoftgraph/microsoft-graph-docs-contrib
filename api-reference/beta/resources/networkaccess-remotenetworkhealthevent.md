@@ -3,8 +3,9 @@ title: "remoteNetworkHealthEvent resource type"
 description: "Contains information about network health, status, metrics, and operations."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # remoteNetworkHealthEvent resource type

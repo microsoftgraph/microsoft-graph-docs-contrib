@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MeetingRegistrationQuestion meetingRegistrationQuestion = new MeetingRegistrationQuestion();
-meetingRegistrationQuestion.answerInputType = AnswerInputType.RADIO_BUTTON;
-LinkedList<String> answerOptionsList = new LinkedList<String>();
-answerOptionsList.add("Software Engineer");
-answerOptionsList.add("Software Development Manager");
-answerOptionsList.add("Product Manager");
-answerOptionsList.add("Data scientist");
-answerOptionsList.add("Other");
-meetingRegistrationQuestion.answerOptions = answerOptionsList;
+meetingRegistrationQuestion.setAnswerInputType(AnswerInputType.RadioButton);
+LinkedList<String> answerOptions = new LinkedList<String>();
+answerOptions.add("Software Engineer");
+answerOptions.add("Software Development Manager");
+answerOptions.add("Product Manager");
+answerOptions.add("Data scientist");
+answerOptions.add("Other");
+meetingRegistrationQuestion.setAnswerOptions(answerOptions);
+MeetingRegistrationQuestion result = graphClient.me().onlineMeetings().byOnlineMeetingId("{onlineMeeting-id}").registration().customQuestions().byMeetingRegistrationQuestionId("{meetingRegistrationQuestion-id}").patch(meetingRegistrationQuestion);
 
-graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ").registration().customQuestions("MSNhYjc5NWI4MC119zX3gwMDIwX3lvdXJfeDAwMjBfam8=")
-	.buildRequest()
-	.patch(meetingRegistrationQuestion);
 
 ```

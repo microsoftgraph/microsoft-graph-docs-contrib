@@ -3,8 +3,9 @@ title: "Get plannerBucket"
 description: "Retrieve the properties and relationships of a plannerBucket object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get plannerBucket

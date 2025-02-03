@@ -3,8 +3,9 @@ title: "signInLocation resource type"
 description: "Provides the city, state and country/region from where the sign-in happened."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 author: "egreenberg14"
+ms.date: 03/21/2024
 ---
 
 # signInLocation resource type
@@ -25,9 +26,12 @@ Provides the city, state and country/region from where the sign-in happened.
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Provides the latitude, longitude and altitude where the sign-in originated.|
 |state|String|Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

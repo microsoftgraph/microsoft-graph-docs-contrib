@@ -4,8 +4,9 @@ description: "Get a list of the unifiedRbacResourceNamespace objects and their p
 author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List resourceNamespaces
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "rbacapplicationmultiple_list_resourcenamespaces" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplicationmultiple-list-resourcenamespaces-permissions.md)]
+
+[!INCLUDE [rbac-role-assignment-apis-read](../includes/rbac-for-apis/rbac-role-assignment-apis-read.md)]
 
 ## HTTP request
 

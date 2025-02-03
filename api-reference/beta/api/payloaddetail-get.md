@@ -3,8 +3,9 @@ title: "Get payloadDetail"
 description: "Get an attack simulation campaign payload detail for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 12/01/2024
 ---
 
 # Get payloadDetail
@@ -34,7 +35,7 @@ GET /security/attackSimulation/payloads/{payloadId}/detail
 
 ## Optional query parameters
 
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -54,8 +55,9 @@ If successful, this method returns a `200 OK` response code and a [payloadDetail
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_payloadDetail",
@@ -63,8 +65,14 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/payload/f1b13829-3829-f1b1-2938-b1f12938b1a/detail
+GET https://graph.microsoft.com/beta/security/attackSimulation/payloads/f1b13829-3829-f1b1-2938-b1f12938b1a/detail
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-payloaddetail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

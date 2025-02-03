@@ -3,8 +3,9 @@ title: "Get application"
 description: "Get the properties and relationships of an application object."
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get application
@@ -60,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [application]
 ### Example 1: Retrieve the properties of an application object
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,7 +107,7 @@ GET https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e919
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -195,7 +196,7 @@ Content-type: application/json
 ### Example 2: Retrieve an application by its appId and only specific properties
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -219,7 +220,7 @@ GET https://graph.microsoft.com/beta/applications(appId='46e6adf4-a9cf-4b60-9390
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-application-by-appid-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -241,7 +242,7 @@ GET https://graph.microsoft.com/beta/applications(appId='46e6adf4-a9cf-4b60-9390
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

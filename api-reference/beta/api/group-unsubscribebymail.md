@@ -2,9 +2,11 @@
 title: "group: unsubscribeByMail"
 description: "Calling this method disables the current user to receive email notifications for this group about new posts, events, and files in that group."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # group: unsubscribeByMail
@@ -51,7 +53,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -100,7 +102,7 @@ POST https://graph.microsoft.com/beta/groups/{id}/unsubscribeByMail
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

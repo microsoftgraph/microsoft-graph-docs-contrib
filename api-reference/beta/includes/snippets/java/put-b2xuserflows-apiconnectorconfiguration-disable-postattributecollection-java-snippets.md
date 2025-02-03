@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-IdentityApiConnector identityApiConnector = new IdentityApiConnector();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.identity().b2xUserFlows("B2X_1_testuserflow").postAttributeCollection().reference()
-	.buildRequest()
-	.put(identityApiConnector);
+com.microsoft.graph.beta.models.ReferenceUpdate referenceUpdate = new com.microsoft.graph.beta.models.ReferenceUpdate();
+graphClient.identity().b2xUserFlows().byB2xIdentityUserFlowId("{b2xIdentityUserFlow-id}").apiConnectorConfiguration().postAttributeCollection().ref().put(referenceUpdate);
+
 
 ```

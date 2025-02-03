@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessPackageAssignmentRequestCollectionPage accessPackageAssignmentRequests = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests()
-	.buildRequest()
-	.filter("(requestState eq 'PendingApproval')")
-	.expand("requestor($expand=connectedOrganization)")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AccessPackageAssignmentRequestCollectionResponse result = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"requestor($expand=connectedOrganization)"};
+	requestConfiguration.queryParameters.filter = "(requestState eq 'PendingApproval')";
+});
+
 
 ```

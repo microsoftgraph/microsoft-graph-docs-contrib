@@ -3,8 +3,9 @@ title: url resource type"
 description: "Contains a Uniform Resource Locator (URL), including the protocol, domain, path, and parameters."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # url resource type

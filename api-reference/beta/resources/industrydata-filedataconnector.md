@@ -3,8 +3,9 @@ title: "fileDataConnector resource type"
 description: "Represents an abstract type that provides the resources to establish a connection with a file-based data source."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # fileDataConnector resource type
@@ -33,7 +34,7 @@ Base type of [azureDataLakeConnector](../resources/industrydata-azuredatalakecon
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

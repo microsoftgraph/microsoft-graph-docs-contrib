@@ -2,9 +2,10 @@
 title: "windowsPhone81TrustedRootCertificate resource type"
 description: "Windows Phone 8.1+ Trusted Root Certificate configuration profile"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsPhone81TrustedRootCertificate resource type

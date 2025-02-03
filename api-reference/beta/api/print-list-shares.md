@@ -3,8 +3,9 @@ title: Get shares
 description: Retrieve a list of printer shares.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List shares

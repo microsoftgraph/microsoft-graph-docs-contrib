@@ -3,8 +3,9 @@ title: "List pronounsSettings"
 description: "Get the properties of the pronounsSettings resource for an organization."
 author: "aymen-ms"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List pronounsSettings
@@ -15,7 +16,7 @@ Get the properties of the [pronounsSettings](../resources/pronounssettings.md) r
 
 For more information on settings to manage pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/pronouns-configure-pronouns-availability).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

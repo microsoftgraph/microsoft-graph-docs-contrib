@@ -2,9 +2,10 @@
 title: "tuple_2OfExecutionType_ICollection_1OfOperation resource type"
 description: "Intune Esim Tuple_2Ofexecutiontype_Icollection_1Ofoperation Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # tuple_2OfExecutionType_ICollection_1OfOperation resource type

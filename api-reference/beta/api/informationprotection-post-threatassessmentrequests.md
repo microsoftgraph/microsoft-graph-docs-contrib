@@ -3,8 +3,9 @@ title: "Create threatAssessmentRequest"
 description: "Create a new threat assessment request."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Create threatAssessmentRequest
@@ -73,7 +74,7 @@ Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.mailAssessmentRequest",
-  "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
   "expectedAssessment": "block",
   "category": "spam",
   "messageUri": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
@@ -140,7 +141,7 @@ Content-type: application/json
   "category": "spam",
   "status": "pending",
   "requestSource": "administrator",
-  "recipientEmail": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
   "destinationRoutingReason": "notJunk",
   "messageUri": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
   "createdBy": {
@@ -170,7 +171,7 @@ Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.emailFileAssessmentRequest",
-  "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
   "expectedAssessment": "block",
   "category": "malware",
   "contentData": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
@@ -237,7 +238,7 @@ Content-type: application/json
   "category": "malware",
   "status": "completed",
   "requestSource": "administrator",
-  "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
   "destinationRoutingReason": "notJunk",
   "contentData": "",
   "createdBy": {

@@ -3,8 +3,9 @@ title: "Get sourceCollection"
 description: "Read the properties and relationships of a sourceCollection object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Get sourceCollection
@@ -143,7 +144,7 @@ Content-Type: application/json
         "user": {
             "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
             "displayName": "EDisco Admin",
-            "userPrincipalname": "admin@contoso.onmicrosoft.com"
+            "userPrincipalname": "admin@contoso.com"
         }
     },
     "addToReviewSetOperation": {

@@ -3,8 +3,9 @@ title: "userSignUpMetric resource type"
 description: "Represents insights of daily and monthly user sign-ups on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # userSignUpMetric resource type
@@ -20,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily signUps](../api/dailyuserinsightmetricsroot-list-signups.md)|[userSignUpMetric](../resources/usersignupmetric.md) collection|Get a list of daily [user sign-ups](../resources/usersignupmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
-|[List monthly signUps](../api/monthlyuserinsightmetricsroot-list-signups.md)|[userSignUpMetric](../resources/usersignupmetric.md) collection|Get a list of monthly [user sign-ups](../resources/usersignupmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List daily](../api/dailyuserinsightmetricsroot-list-signups.md)|[userSignUpMetric](../resources/usersignupmetric.md) collection|Get a list of daily [user sign-ups](../resources/usersignupmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List monthly](../api/monthlyuserinsightmetricsroot-list-signups.md)|[userSignUpMetric](../resources/usersignupmetric.md) collection|Get a list of monthly [user sign-ups](../resources/usersignupmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|

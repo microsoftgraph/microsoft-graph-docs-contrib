@@ -4,19 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String key = "Base64-encoded-pfx-content";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String password = "password-value";
+com.microsoft.graph.beta.trustframework.keysets.item.uploadpkcs12.UploadPkcs12PostRequestBody uploadPkcs12PostRequestBody = new com.microsoft.graph.beta.trustframework.keysets.item.uploadpkcs12.UploadPkcs12PostRequestBody();
+uploadPkcs12PostRequestBody.setKey("Base64-encoded-pfx-content");
+uploadPkcs12PostRequestBody.setPassword("password-value");
+var result = graphClient.trustFramework().keySets().byTrustFrameworkKeySetId("{trustFrameworkKeySet-id}").uploadPkcs12().post(uploadPkcs12PostRequestBody);
 
-graphClient.trustFramework().keySets("{id}")
-	.uploadPkcs12(TrustFrameworkKeySetUploadPkcs12ParameterSet
-		.newBuilder()
-		.withKey(key)
-		.withPassword(password)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

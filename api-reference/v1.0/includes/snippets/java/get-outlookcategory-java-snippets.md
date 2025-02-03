@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-OutlookCategory outlookCategory = graphClient.me().outlook().masterCategories("feafe4e8-52ff-488a-817f-cfea7e43ff8b")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+OutlookCategory result = graphClient.me().outlook().masterCategories().byOutlookCategoryId("{outlookCategory-id}").get();
+
 
 ```

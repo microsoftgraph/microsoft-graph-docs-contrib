@@ -15,12 +15,12 @@ const user = {
   identities: [
     {
       signInType: 'userName',
-      issuer: 'contoso.onmicrosoft.com',
+      issuer: 'contoso.com',
       issuerAssignedId: 'johnsmith'
     },
     {
       signInType: 'emailAddress',
-      issuer: 'contoso.onmicrosoft.com',
+      issuer: 'contoso.com',
       issuerAssignedId: 'jsmith@yahoo.com'
     },
     {

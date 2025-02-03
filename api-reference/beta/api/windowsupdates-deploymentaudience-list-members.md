@@ -3,8 +3,9 @@ title: "List deployment audience members"
 description: "List the updatableAsset resources that are members of a deploymentAudience."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: autopatch
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # List deployment audience members
@@ -37,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /admin//windows/updates/deploymentAudiences/{deploymentAudienceId}/members
 ```
-**Note:** Only $skiptoken is supported for paging, client-driven paging is not impelemented.
+**Note:** Only `$skipToken` is supported for paging. Client-driven paging isn't implemented.
 
 
 ## Request headers

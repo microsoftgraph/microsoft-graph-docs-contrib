@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph import GraphServiceClient
+from msgraph.generated.models.user import User
+from msgraph.generated.models.password_profile import PasswordProfile
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = User(
 	account_enabled = True,
 	display_name = "Adele Vance",
 	mail_nickname = "AdeleV",
-	user_principal_name = "AdeleV@contoso.onmicrosoft.com",
+	user_principal_name = "AdeleV@contoso.com",
 	password_profile = PasswordProfile(
 		force_change_password_next_sign_in = True,
 		password = "xWwvJ]6NMw+bWH-d",

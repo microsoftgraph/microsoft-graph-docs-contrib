@@ -4,8 +4,9 @@ description: "List direct and transitive role assignments for a specific princip
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
+ms.date: 07/26/2024
 ---
 
 # List transitiveRoleAssignment
@@ -29,6 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "rbacapplication_list_transitiveroleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-transitiveroleassignments-permissions.md)]
+
+[!INCLUDE [rbac-role-assignment-apis-read](../includes/rbac-for-apis/rbac-role-assignment-apis-read.md)]
 
 ## HTTP request
 

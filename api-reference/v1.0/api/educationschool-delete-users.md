@@ -3,8 +3,9 @@ title: "Remove educationUser from an educationSchool"
 description: "Delete a user from a school."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 03/13/2024
 ---
 
 # Remove educationUser from an educationSchool
@@ -40,7 +41,7 @@ If successful, this method returns a `204 No Content` response code and an empty
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

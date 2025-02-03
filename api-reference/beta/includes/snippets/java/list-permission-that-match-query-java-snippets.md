@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("search", "{query}"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-SiteCollectionPage sites = graphClient.sites()
-	.buildRequest( requestOptions )
-	.get();
+SiteCollectionResponse result = graphClient.sites().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.search = "{query}";
+});
+
 
 ```

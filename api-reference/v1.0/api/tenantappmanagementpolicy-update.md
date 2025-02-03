@@ -3,8 +3,9 @@ title: "Update tenantAppManagementPolicy"
 description: "Update the default tenant policy that applies to applications and service principals objects."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 09/13/2024
 ---
 
 # Update tenantAppManagementPolicy
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "tenantappmanagementpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/tenantappmanagementpolicy-update-permissions.md)]
 
-[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
+[!INCLUDE [rbac-app-auth-method-default-policy-api-update](../includes/rbac-for-apis/rbac-app-auth-method-default-policy-api-update.md)]
 
 ## HTTP request
 

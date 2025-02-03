@@ -3,8 +3,9 @@ title: "verifiableCredentialSettings resource type"
 description: "Settings for verifiable credential types that a requestor must present to a service such as Entitlement Management."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # verifiableCredentialSettings resource type
@@ -27,7 +28,7 @@ Used for the **verifiableCredentialSettings** property of an [access package ass
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.verifiableCredentialSettings"

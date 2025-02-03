@@ -3,8 +3,9 @@ title: "Get certificateAuthorityAsEntity"
 description: "Read the properties and relationships of a certificateAuthorityAsEntity object."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # Get certificateAuthorityAsEntity
@@ -24,7 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "certificateauthorityasentity_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/certificateauthorityasentity-get-permissions.md)]
 
-[!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
+[!INCLUDE [rbac-trusted-app-cert-config-apis](../includes/rbac-for-apis/rbac-trusted-app-cert-config-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [certificateAu
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -3,8 +3,9 @@ title: "Add internalSponsors"
 description: "Add a user or group to the connected organization's internal sponsors."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # Add internalSponsors
 
@@ -19,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "connectedorganization_post_internalsponsors" } -->
 [!INCLUDE [permissions-table](../includes/permissions/connectedorganization-post-internalsponsors-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-identity-governance-write](../includes/rbac-for-apis/rbac-entitlement-identity-governance-admin-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

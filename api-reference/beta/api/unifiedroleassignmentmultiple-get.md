@@ -4,8 +4,9 @@ description: "Retrieve the properties and relationships of a unifiedRoleAssignme
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Get unifiedRoleAssignmentMultiple
@@ -22,7 +23,7 @@ The following RBAC providers are currently supported:
 
 For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -245,7 +246,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request with the `$expand` query parameter.
+The following example shows a request with the `$expand` query parameter.
 
 
 # [HTTP](#tab/http)
@@ -436,7 +437,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request with the `$expand` query parameter.
+The following example shows a request with the `$expand` query parameter.
 
 
 # [HTTP](#tab/http)

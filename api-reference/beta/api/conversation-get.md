@@ -3,8 +3,9 @@ title: "Get conversation"
 description: "Retrieve the properties and relationships of conversation object."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get conversation

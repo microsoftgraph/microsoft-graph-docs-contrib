@@ -3,8 +3,9 @@ title: "Get tenant"
 description: "Read the properties and relationships of a tenant object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get tenant
@@ -113,7 +114,7 @@ Content-Type: application/json
   "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
   "contract": {
     "displayName": "Fourth Coffee",
-    "defaultDomainName": "fourthcoffe001.onmicrosoft.com",
+    "defaultDomainName": "contoso.com",
     "contractType": 2
   },
   "tenantStatusInformation": {

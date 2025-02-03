@@ -3,8 +3,9 @@ title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an online meeting object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 11/01/2024
 ---
 
 # Get onlineMeeting
@@ -21,19 +22,105 @@ For example, you can:
 Teams live event attendee report **(deprecated)** is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 > [!CAUTION]
-> 
-> The online meeting APIs that support Microsoft Teams live events stopped returning data on September 30, 2024. For details about the removal of these APIs and upcoming new APIs to replace them, see the [Deprecation of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/) blog post.
+> Teams live events was not removed on September 30, 2024, as previously announced. You can continue to use Teams live events; however, to get the latest new features and experiences, we recommend that you use [Teams town halls](https://support.microsoft.com/en-us/office/switch-from-microsoft-teams-live-events-to-town-halls-c71bf6e2-ece1-4809-900e-51271f39ac72) and the [Microsoft Graph virtual event townhall APIs](../resources/virtualeventtownhall.md) instead.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "onlinemeeting_get" } -->
+Permissions for the following HTTP requests:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/onlineMeetings/{meetingId}
+GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
+GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_get", 
+  "requestUrls": ["GET /me/onlineMeetings/{meetingId}", "GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'", "GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'"],
+  "mergePermissions": true
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-permissions.md)]
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
+Permissions for the following HTTP requests:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}
+GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
+GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_get_2", 
+  "requestUrls": ["GET /users/{userId}/onlineMeetings/{meetingId}", "GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'", "GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'", "GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'", "GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'"],
+  "mergePermissions": true
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-2-permissions.md)]
+
+Permissions for the following HTTP requests:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/onlineMeetings/{meetingId}/attendeeReport
+GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_get_3", 
+  "requestUrls": ["GET /me/onlineMeetings/{meetingId}/attendeeReport", "GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport"],
+  "mergePermissions": true
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-3-permissions.md)]
+
+Permissions for the following HTTP requests:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/onlineMeetings/{meetingId}/recording
+GET /me/onlineMeetings/{meetingId}/alternativeRecording
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_get_4", 
+  "requestUrls": ["GET /me/onlineMeetings/{meetingId}/recording", "GET /me/onlineMeetings/{meetingId}/alternativeRecording"],
+  "mergePermissions": true
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-4-permissions.md)]
+
+Permissions for the following HTTP requests:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}/recording
+GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "onlinemeeting_get_5", 
+  "requestUrls": ["GET /users/{userId}/onlineMeetings/{meetingId}/recording", "GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording"],
+  "mergePermissions": true
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-5-permissions.md)]
+
+> [!NOTE]
+> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 > [!IMPORTANT]
 > Only the _OnlineMeetingArtifact.Read.All_ permissions are required if you fetch online meeting artifacts and you cannot fetch meeting artifacts without it. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
@@ -83,6 +170,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 > - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. For details, see [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 > - \* This scenario only supports application token and doesn't support application access policy.
 > - **joinWebUrl** must be URL encoded.
+>- The format of `joinWebUrl` might differ from the following examples, depending on how the URLs were obtained. These variations don't affect how `joinWebUrl` is used in the API.
 >- **joinMeetingId** is the meeting ID to be used to join a meeting.
 
 ## Optional query parameters
@@ -118,7 +206,7 @@ If successful, this method returns a `200 OK` response code. The response also i
 ### Example 1: Retrieve an online meeting by videoTeleconferenceId
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -255,7 +343,7 @@ You can retrieve meeting information via meeting ID with either a user or applic
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following example shows a request that uses a user (delegated) token.
 
 > **Note:** The meeting ID has been truncated for readability.
 
@@ -363,7 +451,7 @@ You can retrieve meeting information via JoinWebUrl by using either a user or ap
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following example shows a request that uses a user (delegated) token.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "get-onlinemeeting-joinurl-user-token", "sampleKeys": ["https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d"]} -->
@@ -473,7 +561,7 @@ You can retrieve meeting information via the **joinMeetingId** by using either a
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following example shows a request that uses a user (delegated) token.
 
 # [HTTP](#tab/http)
 <!-- {

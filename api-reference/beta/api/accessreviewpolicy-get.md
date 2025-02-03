@@ -3,8 +3,9 @@ title: "Get accessReviewPolicy"
 description: "Read the properties and relationships of an accessReviewPolicy object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get accessReviewPolicy
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accessreviewpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accessreviewpolicy-get-permissions.md)]
+
+[!INCLUDE [rbac-access-review-policy-apis-read](../includes/rbac-for-apis/rbac-access-review-policy-apis-read.md)]
 
 ## HTTP request
 

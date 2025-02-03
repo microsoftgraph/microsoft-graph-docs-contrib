@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UserScopeTeamsAppInstallation userScopeTeamsAppInstallation = graphClient.users("5b649834-7412-4cce-9e69-176e95a394f5").teamwork().installedApps("NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk=")
-	.buildRequest()
-	.expand("teamsAppDefinition")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UserScopeTeamsAppInstallation result = graphClient.users().byUserId("{user-id}").teamwork().installedApps().byUserScopeTeamsAppInstallationId("{userScopeTeamsAppInstallation-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"teamsAppDefinition"};
+});
+
 
 ```

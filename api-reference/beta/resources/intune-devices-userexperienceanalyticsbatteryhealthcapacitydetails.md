@@ -2,9 +2,10 @@
 title: "userExperienceAnalyticsBatteryHealthCapacityDetails resource type"
 description: "The user experience analytics battery health capacity entity contains count of devices broken down into 3 categories - devices with capacity > 80%, devices with capacity 50-80% and devices with capacity < 50 %.This API provides the count of devices in these 3 categories.."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # userExperienceAnalyticsBatteryHealthCapacityDetails resource type

@@ -3,8 +3,9 @@ title: "messageUnpinnedEventMessageDetail resource type"
 description: "Represents the details of an event message about an unpinned chat message."
 author: "sumanac"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # messageUnpinnedEventMessageDetail resource type
@@ -23,8 +24,11 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |eventDateTime|DateTimeOffset|Date and time when the event occurred.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.messageUnpinnedEventMessageDetail",
@@ -42,6 +46,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about an unpinned chat message](/graph/system-messages/#message-unpinned)
 - For more information about other types of events, see [System messages](/graph/system-messages).

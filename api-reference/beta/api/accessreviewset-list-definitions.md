@@ -3,8 +3,9 @@ title: "List definitions"
 description: "Retrieve accessReviewScheduleDefinition objects."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List definitions
@@ -298,7 +299,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related content
 
 - [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 

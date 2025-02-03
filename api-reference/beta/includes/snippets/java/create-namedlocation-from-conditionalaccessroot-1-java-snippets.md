@@ -4,22 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IpNamedLocation namedLocation = new IpNamedLocation();
-namedLocation.displayName = "Untrusted IP named location";
-namedLocation.isTrusted = false;
-LinkedList<IpRange> ipRangesList = new LinkedList<IpRange>();
-IPv4CidrRange ipRanges = new IPv4CidrRange();
-ipRanges.cidrAddress = "12.34.221.11/22";
-ipRangesList.add(ipRanges);
-IPv6CidrRange ipRanges1 = new IPv6CidrRange();
-ipRanges1.cidrAddress = "2001:0:9d38:90d6:0:0:0:0/63";
-ipRangesList.add(ipRanges1);
-namedLocation.ipRanges = ipRangesList;
+namedLocation.setOdataType("#microsoft.graph.ipNamedLocation");
+namedLocation.setDisplayName("Untrusted IP named location");
+namedLocation.setIsTrusted(false);
+LinkedList<IpRange> ipRanges = new LinkedList<IpRange>();
+IPv4CidrRange ipRange = new IPv4CidrRange();
+ipRange.setOdataType("#microsoft.graph.iPv4CidrRange");
+ipRange.setCidrAddress("12.34.221.11/22");
+ipRanges.add(ipRange);
+IPv6CidrRange ipRange1 = new IPv6CidrRange();
+ipRange1.setOdataType("#microsoft.graph.iPv6CidrRange");
+ipRange1.setCidrAddress("2001:0:9d38:90d6:0:0:0:0/63");
+ipRanges.add(ipRange1);
+namedLocation.setIpRanges(ipRanges);
+NamedLocation result = graphClient.identity().conditionalAccess().namedLocations().post(namedLocation);
 
-graphClient.identity().conditionalAccess().namedLocations()
-	.buildRequest()
-	.post(namedLocation);
 
 ```

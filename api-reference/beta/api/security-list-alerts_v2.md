@@ -3,8 +3,9 @@ title: "List alerts_v2"
 description: "Get a list of the security alert objects and their properties."
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 09/19/2024
 ---
 
 # List alerts_v2
@@ -12,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [alert](../resources/security-alert.md) resources that have been created to track suspicious activities in an organization.
+Get a list of [alert](../resources/security-alert.md) resources that were created to track suspicious activities in an organization.
 
 This operation lets you filter and sort through alerts to create an informed cyber security response. It exposes a collection of alerts that were flagged in your network, within the time range you specified in your environment retention policy. The most recent alerts are displayed at the top of the list.
 
@@ -37,7 +38,7 @@ GET /security/alerts_v2
 ## Optional query parameters
 This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`.
 
-The following properties support `$filter` : **assignedTo**, **classification**, **determination**, **createdDateTime**, **lastUpdateDateTime**, **severity**, **serviceSource** and **status**.
+The following properties support `$filter` : **assignedTo**, **classification**, **determination**, **createdDateTime**, **lastUpdateDateTime**, **severity**, **serviceSource**, and **status**.
 
 Use `@odata.nextLink` for pagination.
 
@@ -70,6 +71,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,13 +119,15 @@ GET https://graph.microsoft.com/beta/security/alerts_v2
 ---
 
 ### Response
+
+The following example shows a response.
+
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.alert",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.security.alert)"
 }
 -->
 ``` http
@@ -173,7 +178,10 @@ Content-type: application/json
           "firstSeenDateTime": "2020-09-12T07:28:32.4321753Z",
           "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
           "azureAdDeviceId": null,
-          "deviceDnsName": "tempDns",
+          "deviceDnsName": "yonif-lap3.middleeast.corp.microsoft.com",
+          "hostName": "yonif-lap3",
+          "ntDomain": null,
+          "dnsDomain": "middleeast.corp.microsoft.com",
           "osPlatform": "Windows10",
           "osBuild": 22424,
           "version": "Other",
@@ -284,6 +292,9 @@ Content-type: application/json
           "detailedRoles": [],
           "tags": []
         }
+        ],
+        "systemTags" : [
+            "Defender Experts"
       ]
     }
   ]

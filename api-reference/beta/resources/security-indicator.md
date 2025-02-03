@@ -3,8 +3,9 @@ title: "indicator resource type"
 description: "An abstract type that represents an indicator of compromise or increased risk."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # indicator resource type
@@ -37,7 +38,7 @@ This resource isn't directly addressable. You can interact with this resource th
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

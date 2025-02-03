@@ -1,10 +1,11 @@
 ---
 title: "Update event"
 description: "Update an event object."
-author: "Jordanndahl"
+author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Update event
@@ -38,7 +39,7 @@ PATCH /groups/{id}/calendar/events/{id}
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -187,7 +188,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Johanna Lorenz",
-                "address": "JohannaL@contoso.OnMicrosoft.com"
+                "address": "JohannaL@contoso.com"
             }
         },
         {
@@ -198,7 +199,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Retail",
-                "address": "Retail@contoso.onmicrosoft.com"
+                "address": "Retail@contoso.com"
             }
         },
         {
@@ -209,7 +210,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+                "address": "AlexW@contoso.com"
             }
         },
         {
@@ -220,7 +221,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "MeganB@contoso.OnMicrosoft.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
@@ -231,14 +232,14 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Nestor Wilke",
-                "address": "NestorW@contoso.OnMicrosoft.com"
+                "address": "NestorW@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Retail",
-            "address": "Retail@contoso.onmicrosoft.com"
+            "address": "Retail@contoso.com"
         }
     }
 }

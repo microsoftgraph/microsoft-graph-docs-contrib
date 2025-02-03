@@ -3,8 +3,9 @@ title: "attackSimulationTrainingUserCoverage resource type"
 description: "Represents cumulative training data for a user in attack simulation and training."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # attackSimulationTrainingUserCoverage resource type
@@ -30,7 +31,7 @@ Represents cumulative training data for a user in attack simulation and training
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.attackSimulationTrainingUserCoverage"

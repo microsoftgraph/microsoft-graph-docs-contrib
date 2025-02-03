@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-MessageCollectionPage messages = graphClient.me().mailFolders("Inbox").messages()
-	.buildRequest()
-	.orderBy("from/emailAddress/name desc,subject")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+MessageCollectionResponse result = graphClient.me().mailFolders().byMailFolderId("{mailFolder-id}").messages().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.orderby = new String []{"from/emailAddress/name desc", "subject"};
+});
+
 
 ```

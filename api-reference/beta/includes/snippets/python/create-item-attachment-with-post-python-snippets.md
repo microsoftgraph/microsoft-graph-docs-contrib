@@ -4,10 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.groups.item.threads.item.reply.reply_post_request_body import ReplyPostRequestBody
+from msgraph_beta.generated.models.post import Post
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.attachment import Attachment
+from msgraph_beta.generated.models.item_attachment import ItemAttachment
+from msgraph_beta.generated.models.event import Event
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ReplyPostRequestBody(
 	post = Post(
 		body = ItemBody(

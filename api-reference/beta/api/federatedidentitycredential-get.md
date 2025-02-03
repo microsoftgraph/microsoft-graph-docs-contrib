@@ -3,8 +3,9 @@ title: "Get federatedIdentityCredential"
 description: "Read the properties and relationships of a federatedIdentityCredential object."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 12/03/2024
 ---
 
 # Get federatedIdentityCredential
@@ -126,7 +127,8 @@ Content-Type: application/json
     "description": "This is my test  federated identity credential",
     "audiences": [
         "api://AzureADTokenExchange"
-    ]
+    ],
+    "claimsMatchingExpression": null
   }
 }
 ```

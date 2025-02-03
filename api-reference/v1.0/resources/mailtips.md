@@ -3,8 +3,9 @@ title: "mailTips resource type"
 description: "Informative messages about a recipient, that are displayed to users while they're composing a message. For example, an out-of-office message "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # mailTips resource type
@@ -33,7 +34,7 @@ as an automatic reply for a message recipient.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

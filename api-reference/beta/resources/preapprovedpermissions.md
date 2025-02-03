@@ -3,8 +3,9 @@ title: "preApprovedPermissions resource type"
 description: "Describes the set of permissions that are pre-approved for a resource."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # preApprovedPermissions resource type
@@ -29,7 +30,7 @@ A **preApprovedPermissions** type describes the set of permissions that are pre-
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.preApprovedPermissions"

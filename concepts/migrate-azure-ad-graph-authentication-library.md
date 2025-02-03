@@ -1,11 +1,13 @@
 ---
 title: "Review app authentication library changes"
 description: "Describes how to update authentication library use in order to migrate an app from Azure AD Graph to Microsoft Graph."
-author: "FaithOmbongi"
-ms.reviewer: dkershaw
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: krbash
 ms.localizationpriority: medium
-ms.prod: "applications"
-ms.date: 01/12/2024
+ms.topic: how-to
+ms.subservice: entra-applications
+ms.date: 01/24/2025
 #Customer intent: As a developer, I want to learn what authentication libraries to use, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
@@ -22,19 +24,13 @@ Most apps use an authentication library to acquire and manage access tokens to c
 
 If your app still uses ADAL, use a two-stage migration approach:
 
-1. Update your app to acquire access tokens for Microsoft Graph. Continue to use ADAL for this step. Update the **resourceURL**, which holds the URI representing the resource web API, from:
-
-    `https://graph.windows.net`  
-
-    To:  
-
-    `https://graph.microsoft.com`
+1. Update your app to acquire access tokens for Microsoft Graph. Continue to use ADAL for this step. Update the **resourceURL**, which holds the URI representing the resource web API, from  `https://graph.windows.net` to `https://graph.microsoft.com`.
 
     Newly acquired tokens have the same scopes after this change, but the audience of the access tokens is now Microsoft Graph.  
 
     Once you update **resourceURL** and verified functionality, release an interim update for your app users.
 
-1.  Next, begin migrating your app to use MSAL, which is the only supported library, now that ADAL is retired.
+1. Next, begin migrating your app to use MSAL, which is the only supported library, now that ADAL is retired.
 
 ## Migrating to MSAL
 
@@ -46,7 +42,7 @@ When you switch your app over to MSAL, you need to make a few changes, including
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
 ```
 
-The expression above limits the permission scopes request to the scopes configured during application registration in the Microsoft Entra admin center, and saves your existing users from having to consent to your app again.
+This expression restricts the permission scopes to those configured on the app registration in the Microsoft Entra admin center, preventing existing users from needing to re-consent to your app.
 
 Learn [.NET client library](migrate-azure-ad-graph-client-libraries.md) differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph.
 

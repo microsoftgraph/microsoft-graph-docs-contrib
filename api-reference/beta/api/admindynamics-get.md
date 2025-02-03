@@ -3,8 +3,9 @@ title: "Get adminDynamics"
 description: "Read the properties and relationships of a Microsoft Graph adminDynamics object."
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get adminDynamics
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [adminDynamics
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -3,8 +3,9 @@ title: "Update deviceRegistrationPolicy"
 description: "Update the properties of a deviceRegistrationPolicy object."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 06/03/2024
 ---
 # Update deviceRegistrationPolicy
 
@@ -21,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "deviceregistrationpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/deviceregistrationpolicy-update-permissions.md)]
 
-When calling on behalf of a user, the user needs the *Cloud Device Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[!INCLUDE [rbac-device-registration-policy-apis-update](../includes/rbac-for-apis/rbac-device-registration-policy-apis-update.md)]
 
 ## HTTP request
 
@@ -72,34 +73,33 @@ PUT https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 Content-Type: application/json
 
 {
-    "id": "deviceRegistrationPolicy",
-    "displayName": "Device Registration Policy",
-    "description": "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
-    "userDeviceQuota": 50,
-    "multiFactorAuthConfiguration": "0",
-    "azureADRegistration": {
-        "isAdminConfigurable": true,
-        "allowedToRegister": {
-            "@odata.type": "#microsoft.graph.enumeratedDeviceRegistrationMembership",
-            "users": [],
-            "groups": ["3c8ef067-8b96-44de-b2ae-557dfa0f97a0"]
+  "userDeviceQuota": 2,
+  "multiFactorAuthConfiguration": "notRequired",
+  "azureADRegistration": {
+    "isAdminConfigurable": false,
+    "allowedToRegister": {
+      "@odata.type": "#microsoft.graph.enumeratedDeviceRegistrationMembership",
+      "users": ["3c8ef067-8b96-44de-b2ae-557dfa0f97a0"],
+      "groups": []
+    },
+  },
+  "azureADJoin": {
+    "isAdminConfigurable": true,
+    "allowedToJoin": {
+      "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
+    },
+    "localAdmins": {
+      "enableGlobalAdmins": false,
+      "registeringUsers": {
+        "@odata.type": "#microsoft.graph.noDeviceRegistrationMembership"
       }
     },
-    "azureADJoin": {
-        "isAdminConfigurable": true,
-        "allowedToJoin": {
-            "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
-        }
-    },
-    "localAdminPassword": {
-      "isEnabled": true
-    }
+  },
+  "localAdminPassword": {
+    "isEnabled": true
+  }
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-deviceregistrationpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-deviceregistrationpolicy-javascript-snippets.md)]
@@ -121,26 +121,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceRegistrationPolicy",
-    "id": "deviceRegistrationPolicy",
-    "displayName": "Device Registration Policy",
-    "description": "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
-    "userDeviceQuota": 50,
-    "multiFactorAuthConfiguration": "0",
-    "azureADRegistration": {
-        "appliesTo": "1",
-        "isAdminConfigurable": false,
-        "allowedUsers": [],
-        "allowedGroups": []
+  "id": "deviceRegistrationPolicy",
+  "displayName": "Device Registration Policy",
+  "description": "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
+  "userDeviceQuota": 2,
+  "multiFactorAuthConfiguration": "notRequired",
+  "azureADRegistration": {
+    "isAdminConfigurable": false,
+    "allowedToRegister": {
+      "@odata.type": "#microsoft.graph.enumeratedDeviceRegistrationMembership",
+      "users": ["3c8ef067-8b96-44de-b2ae-557dfa0f97a0"],
+      "groups": []
     },
-    "azureADJoin": {
-        "appliesTo": "1",
-        "isAdminConfigurable": true,
-        "allowedUsers": [],
-        "allowedGroups": []
+  },
+  "azureADJoin": {
+    "isAdminConfigurable": true,
+    "allowedToJoin": {
+      "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
     },
-    "localAdminPassword": {
-      "isEnabled": true
-    }
+    "localAdmins": {
+      "enableGlobalAdmins": false,
+      "registeringUsers": {
+        "@odata.type": "#microsoft.graph.noDeviceRegistrationMembership"
+      }
+    },
+  },
+  "localAdminPassword": {
+    "isEnabled": true
+  }
 }
 ```

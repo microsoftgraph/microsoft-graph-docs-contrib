@@ -3,8 +3,9 @@ title: "accessPackageAssignmentRequestRequirements resource type"
 description: "Identifies the requirements necessary to request the specified access package."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 # accessPackageAssignmentRequestRequirements resource type
 
@@ -27,7 +28,7 @@ Represents requirements that a caller must fulfill in order to successfully crea
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageAssignmentRequestRequirements"

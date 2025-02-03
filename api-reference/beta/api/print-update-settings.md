@@ -3,8 +3,9 @@ title: Update printSettings
 description: Update tenant-wide settings for the Universal Print service.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update printSettings
@@ -60,10 +61,6 @@ Content-type: application/json
   "documentConversionEnabled": true
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-settings-for-print-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-settings-for-print-javascript-snippets.md)]

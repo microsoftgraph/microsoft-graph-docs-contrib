@@ -4,10 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph import GraphServiceClient
+from msgraph.generated.models.team import Team
+from msgraph.generated.models.team_visibility_type import TeamVisibilityType
+from msgraph.generated.models.channel import Channel
+from msgraph.generated.models.teams_tab import TeamsTab
+from msgraph.generated.models.teams_tab_configuration import TeamsTabConfiguration
+from msgraph.generated.models.team_member_settings import TeamMemberSettings
+from msgraph.generated.models.team_guest_settings import TeamGuestSettings
+from msgraph.generated.models.team_fun_settings import TeamFunSettings
+from msgraph.generated.models.giphy_rating_type import GiphyRatingType
+from msgraph.generated.models.team_messaging_settings import TeamMessagingSettings
+from msgraph.generated.models.teams_app_installation import TeamsAppInstallation
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Team(
 	visibility = TeamVisibilityType.Private,
 	display_name = "Sample Engineering Team",

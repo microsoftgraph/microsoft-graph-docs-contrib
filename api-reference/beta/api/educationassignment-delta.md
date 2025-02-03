@@ -3,8 +3,9 @@ title: "educationAssignment: delta"
 description: "Get a list of newly-created or updated assignments without reading the entire collection."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 06/04/2024
 ---
 
 # educationAssignment: delta
@@ -42,7 +43,6 @@ This method only supports the `$top` OData query parameter.
 
 ```http
 GET /education/classes/{educationClassId}/assignments/delta
-GET /education/classes/{educationClassId}/members/{educationUserId}/assignments/delta
 ```
 
 ## Request headers

@@ -3,8 +3,9 @@ title: "Delete identity of member"
 description: "Remove a member from an externalGroup by deleting the corresponding identity resource."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete identity

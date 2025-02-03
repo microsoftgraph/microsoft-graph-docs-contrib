@@ -14,15 +14,14 @@ $params = @{
 		time = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
 	}
 	recurrence = $null
-	uid = "iCalUId-value"
 	reminderMinutesBeforeStart = 99
 	isOnlineMeeting = $true
 	onlineMeetingProvider = "teamsForBusiness"
 	isReminderOn = $true
 	hideAttendees = $false
 	categories = @(
-		"Red category"
-	)
+	"Red category"
+)
 }
 
 # A UPN can also be used as -UserId.

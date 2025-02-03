@@ -3,8 +3,9 @@ title: "ChartCollection: ItemAt"
 description: "Gets a chart based on its position in the collection."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # ChartCollection: ItemAt
@@ -50,12 +51,12 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [WorkbookChart](../resources/chart.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookChart](../resources/workbookchart.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!--{
@@ -100,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,25 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String type = "edit";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String scope = "organization";
+com.microsoft.graph.beta.sites.item.lists.item.items.item.createlink.CreateLinkPostRequestBody createLinkPostRequestBody = new com.microsoft.graph.beta.sites.item.lists.item.items.item.createlink.CreateLinkPostRequestBody();
+createLinkPostRequestBody.setType("edit");
+createLinkPostRequestBody.setScope("organization");
+var result = graphClient.sites().bySiteId("{site-id}").lists().byListId("{list-id}").items().byListItemId("{listItem-id}").createLink().post(createLinkPostRequestBody);
 
-graphClient.sites("{siteId}").lists("{listId}").items("{itemId}")
-	.createLink(ListItemCreateLinkParameterSet
-		.newBuilder()
-		.withType(type)
-		.withScope(scope)
-		.withExpirationDateTime(null)
-		.withPassword(null)
-		.withMessage(null)
-		.withRecipients(null)
-		.withRetainInheritedPermissions(null)
-		.withSendNotification(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

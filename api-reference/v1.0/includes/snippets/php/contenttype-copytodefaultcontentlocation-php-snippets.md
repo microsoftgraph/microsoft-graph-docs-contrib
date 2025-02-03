@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Sites\Item\ContentTypes\Item\CopyToDefaultContentLocation\CopyToDefaultContentLocationPostRequestBody;
+use Microsoft\Graph\Generated\Models\ItemReference;
+use Microsoft\Graph\Generated\Models\SharepointIds;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

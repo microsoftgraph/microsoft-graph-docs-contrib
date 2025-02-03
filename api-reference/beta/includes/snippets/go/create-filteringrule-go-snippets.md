@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,18 +15,15 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodelsnetworkaccess.NewPolicyRule()
-name := "Block Alcohol"
+name := "Block Gambling Sites"
 requestBody.SetName(&name) 
 ruleType := graphmodels.WEBCATEGORY_NETWORKDESTINATIONTYPE 
 requestBody.SetRuleType(&ruleType) 
 
 
 ruleDestination := graphmodelsnetworkaccess.NewWebCategory()
-name := "AlcoholAndTobacco"
+name := "Gambling"
 ruleDestination.SetName(&name) 
 
 destinations := []graphmodelsnetworkaccess.RuleDestinationable {
@@ -31,6 +31,7 @@ destinations := []graphmodelsnetworkaccess.RuleDestinationable {
 }
 requestBody.SetDestinations(destinations)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 policyRules, err := graphClient.NetworkAccess().FilteringPolicies().ByFilteringPolicyId("filteringPolicy-id").PolicyRules().Post(context.Background(), requestBody, nil)
 
 

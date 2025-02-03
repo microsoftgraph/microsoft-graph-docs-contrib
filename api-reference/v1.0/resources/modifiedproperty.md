@@ -3,8 +3,9 @@ title: "modifiedProperty resource type"
 description: "Indicates all the properties on a Microsoft Entra resource that have been modified, including the old and new values."
 ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # modifiedProperty resource type
@@ -23,7 +24,7 @@ Indicates all the properties on a Microsoft Entra resource that have been modifi
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

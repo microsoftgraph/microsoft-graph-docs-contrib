@@ -3,8 +3,9 @@ title: "policyLink resource type"
 description: "The link to a policy associated with a specific profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # policyLink resource type
@@ -34,7 +35,7 @@ None.
 |policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Policy. |
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

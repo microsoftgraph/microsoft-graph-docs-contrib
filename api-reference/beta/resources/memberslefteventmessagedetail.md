@@ -3,8 +3,9 @@ title: "membersLeftEventMessageDetail resource type"
 description: "Represents the details of an event message about members left."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # membersLeftEventMessageDetail resource type
@@ -25,8 +26,11 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of members who left the chat.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.membersLeftEventMessageDetail",
@@ -48,6 +52,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about members left](/graph/system-messages/#members-left)
 - For more information about other types of events, see [System messages](/graph/system-messages).

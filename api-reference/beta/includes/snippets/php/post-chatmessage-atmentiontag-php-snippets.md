@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageMention;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageMentionedIdentitySet;
+use Microsoft\Graph\Beta\Generated\Models\TeamworkTagIdentity;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -12,7 +19,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new ChatMessage();
 $body = new ItemBody();
 $body->setContentType(new BodyType('html'));
-$body->setContent('<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>');
+$body->setContent('<at id=\"0\">TestTag</at>&nbsp;Testing Tags');
 $requestBody->setBody($body);
 $mentionsChatMessageMention1 = new ChatMessageMention();
 $mentionsChatMessageMention1->setId(0);

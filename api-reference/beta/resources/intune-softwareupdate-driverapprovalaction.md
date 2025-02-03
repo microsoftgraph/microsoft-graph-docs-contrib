@@ -2,9 +2,10 @@
 title: "driverApprovalAction enum type"
 description: "An enum type to represent approval actions of single or list of drivers."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # driverApprovalAction enum type

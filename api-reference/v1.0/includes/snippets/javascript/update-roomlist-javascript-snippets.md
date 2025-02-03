@@ -30,7 +30,7 @@ const place = {
  }
 };
 
-await client.api('/places/Building1RroomList@contoso.onmicrosoft.com')
+await client.api('/places/Building1RroomList@contoso.com')
 	.update(place);
 
 ```

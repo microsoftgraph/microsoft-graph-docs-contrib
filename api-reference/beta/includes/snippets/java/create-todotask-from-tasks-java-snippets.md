@@ -4,26 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TodoTask todoTask = new TodoTask();
-todoTask.title = "A new task";
-LinkedList<String> categoriesList = new LinkedList<String>();
-categoriesList.add("Important");
-todoTask.categories = categoriesList;
-LinkedList<LinkedResource> linkedResourcesList = new LinkedList<LinkedResource>();
-LinkedResource linkedResources = new LinkedResource();
-linkedResources.webUrl = "http://microsoft.com";
-linkedResources.applicationName = "Microsoft";
-linkedResources.displayName = "Microsoft";
-linkedResourcesList.add(linkedResources);
-LinkedResourceCollectionResponse linkedResourceCollectionResponse = new LinkedResourceCollectionResponse();
-linkedResourceCollectionResponse.value = linkedResourcesList;
-LinkedResourceCollectionPage linkedResourceCollectionPage = new LinkedResourceCollectionPage(linkedResourceCollectionResponse, null);
-todoTask.linkedResources = linkedResourceCollectionPage;
+todoTask.setTitle("A new task");
+LinkedList<String> categories = new LinkedList<String>();
+categories.add("Important");
+todoTask.setCategories(categories);
+LinkedList<LinkedResource> linkedResources = new LinkedList<LinkedResource>();
+LinkedResource linkedResource = new LinkedResource();
+linkedResource.setWebUrl("http://microsoft.com");
+linkedResource.setApplicationName("Microsoft");
+linkedResource.setDisplayName("Microsoft");
+linkedResources.add(linkedResource);
+todoTask.setLinkedResources(linkedResources);
+TodoTask result = graphClient.me().todo().lists().byTodoTaskListId("{todoTaskList-id}").tasks().post(todoTask);
 
-graphClient.me().todo().lists("AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM").tasks()
-	.buildRequest()
-	.post(todoTask);
 
 ```

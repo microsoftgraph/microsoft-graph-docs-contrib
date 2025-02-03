@@ -11,13 +11,13 @@ $params = @{
 	surname = "Bansky"
 	emailAddresses = @(
 		@{
-			address = "pavelb@fabrikam.onmicrosoft.com"
+			address = "pavelb@contoso.com"
 			name = "Pavel Bansky"
 		}
 	)
 	businessPhones = @(
-		"+1 732 555 0102"
-	)
+	"+1 732 555 0102"
+)
 }
 
 # A UPN can also be used as -UserId.

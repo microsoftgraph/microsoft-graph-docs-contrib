@@ -3,8 +3,9 @@ title: "Delete externalConnection"
 description: "Deletes an externalConnection object."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete externalConnection

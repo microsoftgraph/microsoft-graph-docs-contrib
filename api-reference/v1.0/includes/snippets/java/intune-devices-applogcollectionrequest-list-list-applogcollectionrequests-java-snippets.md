@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AppLogCollectionRequestCollectionPage appLogCollectionRequests = graphClient.deviceManagement().mobileAppTroubleshootingEvents("{mobileAppTroubleshootingEventId}").appLogCollectionRequests()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AppLogCollectionRequestCollectionResponse result = graphClient.deviceManagement().mobileAppTroubleshootingEvents().byMobileAppTroubleshootingEventId("{mobileAppTroubleshootingEvent-id}").appLogCollectionRequests().get();
+
 
 ```

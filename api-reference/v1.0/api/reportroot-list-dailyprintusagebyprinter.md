@@ -3,8 +3,9 @@ title: List dailyPrintUsageByPrinter
 description: Retrieve a list of daily print usage summaries, grouped by printer.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List dailyPrintUsageByPrinter

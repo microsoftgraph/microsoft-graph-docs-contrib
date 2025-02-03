@@ -3,7 +3,8 @@ title: "How to protect your company app data with Microsoft Intune - Microsoft G
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
+ms.date: 04/01/2024
 ---
 
 # How to protect your company app data with Microsoft Intune

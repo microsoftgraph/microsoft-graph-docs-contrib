@@ -3,8 +3,10 @@ title: "List user devices (deprecated)"
 description: "Get a list of user devices that support Project Rome capabilities. This includes the ability to launch an app, or message or send data to an application. After you do a GET call on me/devices, pass in the ID of the device to send a command to your device."
 ms.localizationpriority: medium
 author: "yyuank"
-ms.prod: "users"
+ms.reviewer: "iamut"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List user devices (deprecated)
@@ -67,9 +69,7 @@ HTTP/1.1 200 OK
       "id": "id",
       "status": "status",
       "platform": "platform",
-      "kind": "formFactor",
-      "model": "model",
-      "manufacturer": "manufacturer",
+      "kind": "formFactor"
     }
   ]
 }
@@ -113,8 +113,6 @@ Content-type: application/json
     {
       "Name": "JimSurface",
       "id": "6841b3db-2b55-467b-ad84-79a41a4ef665",
-      "Manufacturer": "Microsoft Corporation",
-      "Model": "Surface Book",
       "Kind": "Tablet",
       "Status": "Unknown",
       "Platform": "Windows"

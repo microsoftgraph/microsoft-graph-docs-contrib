@@ -22,7 +22,7 @@ var requestBody = new CheckMemberGroupsPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.DirectoryObjects["{directoryObject-id}"].CheckMemberGroups.PostAsync(requestBody);
+var result = await graphClient.DirectoryObjects["{directoryObject-id}"].CheckMemberGroups.PostAsCheckMemberGroupsPostResponseAsync(requestBody);
 
 
 ```

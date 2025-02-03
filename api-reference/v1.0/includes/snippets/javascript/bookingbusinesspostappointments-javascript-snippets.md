@@ -13,12 +13,17 @@ const client = Client.init(options);
 const bookingAppointment = {
     '@odata.type': '#microsoft.graph.bookingAppointment',
     customerTimeZone: 'America/Chicago',
+    customerName: 'Jordan Miller',
+    customerEmailAddress: 'jordanm@contoso.com',
+    customerPhone: '213-555-0199',
+    customerNotes: null,	
     smsNotificationsEnabled: true,
-    endDateTime: {
+    end: {
         '@odata.type': '#microsoft.graph.dateTimeTimeZone',
         dateTime: '2018-05-01T12:30:00.0000000+00:00',
         timeZone: 'UTC'
     },
+    isCustomerAllowedToManageBooking: true,
     isLocationOnline: true,
     optOutOfCustomerEmail: false,
     anonymousJoinWebUrl: null,
@@ -80,7 +85,7 @@ const bookingAppointment = {
     staffMemberIds: [
       '8ee1c803-a1fa-406d-8259-7ab53233f148'
     ],
-    startDateTime: {
+    start: {
         '@odata.type': '#microsoft.graph.dateTimeTimeZone',
         dateTime: '2018-05-01T12:00:00.0000000+00:00',
         timeZone: 'UTC'
@@ -136,7 +141,7 @@ const bookingAppointment = {
     ]
 };
 
-await client.api('/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments')
+await client.api('/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/appointments')
 	.post(bookingAppointment);
 
 ```

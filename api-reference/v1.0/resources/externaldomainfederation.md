@@ -3,8 +3,9 @@ title: "externalDomainFederation resource type"
 description: "The externalDomainFederation type identifies a non-tenant domain with a configured identity provider as an identity source for a connected organization."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 # externalDomainFederation resource type
 
@@ -23,7 +24,7 @@ Used in the identity sources of an [connectedOrganization](connectedOrganization
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalDomainFederation"

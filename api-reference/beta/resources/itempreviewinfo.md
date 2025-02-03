@@ -5,7 +5,7 @@ ms.date: 3/16/2018
 title: ItemPreviewInfo - OneDrive API
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # ItemPreviewInfo resource type
@@ -15,16 +15,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ItemPreviewInfo** resource contains information on how to embed a preview of a [DriveItem](driveitem.md).
-
-## JSON representation
-
-```json
-{
-    "getUrl": "https://www.onedrive.com/embed?foo=bar&bar=baz",
-    "postParameters": "param1=value&param2=another%20value",
-    "postUrl": "https://www.onedrive.com/embed_by_post"
-}
-```
 
 ## Properties
 
@@ -46,3 +36,16 @@ param1=value&param2=another%20value
 ```
 
 The formats of URLs and parameters should be considered opaque.
+
+## Relationships
+None.
+
+## JSON representation
+
+```json
+{
+    "getUrl": "https://www.onedrive.com/embed?foo=bar&bar=baz",
+    "postParameters": "param1=value&param2=another%20value",
+    "postUrl": "https://www.onedrive.com/embed_by_post"
+}
+```

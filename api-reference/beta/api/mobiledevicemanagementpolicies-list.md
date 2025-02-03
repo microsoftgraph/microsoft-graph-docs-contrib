@@ -3,8 +3,9 @@ title: "List mobileDeviceManagementPolicies"
 description: "Get a list of the mobile device management objects and their properties."
 author: "ravennMSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # List mobileDeviceManagementPolicies
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "mobiledevicemanagementpolicies_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/mobiledevicemanagementpolicies-list-permissions.md)]
+
+[!INCLUDE [rbac-mam-mdm-policies-apis-read](../includes/rbac-for-apis/rbac-mam-mdm-policies-apis-read.md)]
 
 ## HTTP request
 

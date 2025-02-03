@@ -4,7 +4,7 @@ description: The MentionAction resource provides information about an activity t
 ms.date: 09/14/2017
 title: MentionAction
 ms.localizationpriority: medium
-ms.prod: insights
+ms.subservice: insights
 doc_type: resourcePageType
 ---
 
@@ -17,6 +17,17 @@ Namespace: microsoft.graph
 The **MentionAction** resource provides information about an [activity][] that mentioned people.
 
 [activity]: itemactivity.md
+
+## Properties
+
+| Property   | Type                       | Description                                           |
+| :--------- | :------------------------- | :---------------------------------------------------- |
+| mentionees | [identitySet][] collection | The identities of the users mentioned in this action. |
+
+[identitySet]: identityset.md
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -31,14 +42,6 @@ The **MentionAction** resource provides information about an [activity][] that m
   "mentionees": [{"@odata.type": "microsoft.graph.identitySet"}]
 }
 ```
-
-## Properties
-
-| Property   | Type                       | Description                                           |
-| :--------- | :------------------------- | :---------------------------------------------------- |
-| mentionees | [identitySet][] collection | The identities of the users mentioned in this action. |
-
-[identitySet]: identityset.md
 
 ## Remarks
 

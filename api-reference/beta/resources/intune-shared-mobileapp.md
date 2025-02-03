@@ -2,9 +2,10 @@
 title: "mobileApp resource type"
 description: "An abstract class containing the base properties for Intune mobile apps."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # mobileApp resource type

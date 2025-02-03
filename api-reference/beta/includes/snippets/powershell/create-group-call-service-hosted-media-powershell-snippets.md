@@ -47,13 +47,13 @@ $params = @{
 		}
 	)
 	requestedModalities = @(
-		"audio"
-	)
-	mediaConfig = @{
-		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-		removeFromDefaultAudioGroup = $false
-	}
-	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+	"audio"
+)
+mediaConfig = @{
+	"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+	removeFromDefaultAudioGroup = $false
+}
+tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params

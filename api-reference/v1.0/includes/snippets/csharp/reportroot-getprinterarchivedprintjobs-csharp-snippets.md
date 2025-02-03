@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Reports.GetPrinterArchivedPrintJobsWithPrinterIdWithStartDateTimeWithEndDateTime(DateTimeOffset.Parse("{endDateTime}"),"{printerId}",DateTimeOffset.Parse("{startDateTime}")).GetAsync();
+var result = await graphClient.Reports.GetPrinterArchivedPrintJobsWithPrinterIdWithStartDateTimeWithEndDateTime(DateTimeOffset.Parse("{endDateTime}"),"{printerId}",DateTimeOffset.Parse("{startDateTime}")).GetAsGetPrinterArchivedPrintJobsWithPrinterIdWithStartDateTimeWithEndDateTimeGetResponseAsync();
 
 
 ```

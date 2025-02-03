@@ -3,8 +3,10 @@ title: "workbookChartAxisTitle resource type"
 description: "Represents the title of a chart axis."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart axis title
+ms.date: 08/01/2024
 ---
 
 # workbookChartAxisTitle resource type
@@ -20,14 +22,14 @@ Represents the title of a chart axis.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [workbookChartAxisTitle](workbookchartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
-|[Update](../api/chartaxistitle-update.md) | [workbookChartAxisTitle](workbookchartaxistitle.md)	|Update ChartAxisTitle object. |
+|[Get](../api/chartaxistitle-get.md) | [workbookChartAxisTitle](workbookchartaxistitle.md) |Read the properties and relationships of a chart axis title.|
+|[Update](../api/chartaxistitle-update.md) | [workbookChartAxisTitle](workbookchartaxistitle.md)	|Update a chart axis title. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |text|string|Represents the axis title.|
-|visible|boolean|A boolean that specifies the visibility of an axis title.|
+|visible|Boolean|A Boolean that specifies the visibility of an axis title.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -36,7 +38,7 @@ Represents the title of a chart axis.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

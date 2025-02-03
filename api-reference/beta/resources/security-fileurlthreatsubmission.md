@@ -3,8 +3,9 @@ title: "fileUrlThreatSubmission resource type"
 description: "Represents file threat submission object created when a submission is made using a file URL."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # fileUrlThreatSubmission resource type
@@ -26,7 +27,7 @@ Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -4,28 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.users.item.messages.item.replyall.ReplyAllPostRequestBody replyAllPostRequestBody = new com.microsoft.graph.beta.users.item.messages.item.replyall.ReplyAllPostRequestBody();
 Message message = new Message();
-LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
-FileAttachment attachments = new FileAttachment();
-attachments.name = "guidelines.txt";
-attachments.contentBytes = Base64.getDecoder().decode("bWFjIGFuZCBjaGVlc2UgdG9kYXk=");
-attachmentsList.add(attachments);
-AttachmentCollectionResponse attachmentCollectionResponse = new AttachmentCollectionResponse();
-attachmentCollectionResponse.value = attachmentsList;
-AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage(attachmentCollectionResponse, null);
-message.attachments = attachmentCollectionPage;
+LinkedList<Attachment> attachments = new LinkedList<Attachment>();
+FileAttachment attachment = new FileAttachment();
+attachment.setOdataType("#microsoft.graph.fileAttachment");
+attachment.setName("guidelines.txt");
+byte[] contentBytes = Base64.getDecoder().decode("bWFjIGFuZCBjaGVlc2UgdG9kYXk=");
+attachment.setContentBytes(contentBytes);
+attachments.add(attachment);
+message.setAttachments(attachments);
+replyAllPostRequestBody.setMessage(message);
+replyAllPostRequestBody.setComment("Please take a look at the attached guidelines before you decide on the name.");
+graphClient.me().messages().byMessageId("{message-id}").replyAll().post(replyAllPostRequestBody);
 
-String comment = "Please take a look at the attached guidelines before you decide on the name.";
-
-graphClient.me().messages("AAMkADA1MTAAAH5JaKAAA=")
-	.replyAll(MessageReplyAllParameterSet
-		.newBuilder()
-		.withMessage(message)
-		.withComment(comment)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

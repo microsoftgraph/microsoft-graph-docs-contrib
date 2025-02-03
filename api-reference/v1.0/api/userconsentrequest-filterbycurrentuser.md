@@ -3,8 +3,9 @@ title: "userConsentRequest: filterByCurrentUser"
 description: "Retrieve userConsentRequest objects for which the current user is the reviewer."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # userConsentRequest: filterByCurrentUser

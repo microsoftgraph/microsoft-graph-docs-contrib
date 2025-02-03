@@ -3,8 +3,9 @@ title: "recommendation: dismiss"
 description: "Dismiss a recommendation object and updates its status to dismissed."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # recommendation: dismiss
@@ -58,7 +59,7 @@ If successful, this action returns a `200 OK` response code and a [recommendatio
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

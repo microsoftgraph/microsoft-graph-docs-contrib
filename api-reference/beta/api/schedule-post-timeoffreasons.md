@@ -3,8 +3,9 @@ title: "Create timeOffReason"
 description: "Create a new timeOffReason."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/19/2024
 ---
 
 # Create timeOffReason
@@ -21,15 +22,16 @@ Create a new [timeOffReason](../resources/timeoffreason.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+This API supports admin permissions. Users with admin roles can access teams that they aren't members of.
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.ReadWrite.All* |
 
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
-
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> [!NOTE]
+> The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
 
 ## HTTP request
 

@@ -4,8 +4,10 @@ description: "Represents an action in a GCP authorization system."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+toc.title: GCP actions
+ms.date: 07/25/2024
 ---
 
 # gcpAuthorizationSystemTypeAction resource type
@@ -21,8 +23,8 @@ Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemty
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List gcpAuthorizationSystemTypeActions](../api/gcpauthorizationsystem-list-actions.md)|[gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) collection|Get a list of the [gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) objects and their properties.|
-|[Get gcpAuthorizationSystemTypeAction](../api/gcpauthorizationsystemtypeaction-get.md)|[gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md)|Read the properties and relationships of a [gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) object.|
+|[List](../api/gcpauthorizationsystem-list-actions.md)|[gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) collection|Get a list of the [gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) objects and their properties.|
+|[Get](../api/gcpauthorizationsystemtypeaction-get.md)|[gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md)|Read the properties and relationships of a [gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) object.|
 
 ## Properties
 |Property|Type|Description|

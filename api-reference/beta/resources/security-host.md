@@ -3,8 +3,9 @@ title: "host resource type"
 description: "Represents a hostname or IP address that is currently or was previously available on the Internet and Microsoft Defender Threat Intelligence has detected."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # host resource type
@@ -71,7 +72,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

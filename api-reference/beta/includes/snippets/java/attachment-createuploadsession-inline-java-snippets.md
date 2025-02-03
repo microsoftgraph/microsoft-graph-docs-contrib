@@ -4,21 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.users.item.messages.item.attachments.createuploadsession.CreateUploadSessionPostRequestBody createUploadSessionPostRequestBody = new com.microsoft.graph.beta.users.item.messages.item.attachments.createuploadsession.CreateUploadSessionPostRequestBody();
 AttachmentItem attachmentItem = new AttachmentItem();
-attachmentItem.attachmentType = AttachmentType.FILE;
-attachmentItem.name = "scenary";
-attachmentItem.size = 7208534L;
-attachmentItem.isInline = true;
-attachmentItem.contentId = "my_inline_picture";
+attachmentItem.setAttachmentType(AttachmentType.File);
+attachmentItem.setName("scenary");
+attachmentItem.setSize(7208534L);
+attachmentItem.setIsInline(true);
+attachmentItem.setContentId("my_inline_picture");
+createUploadSessionPostRequestBody.setAttachmentItem(attachmentItem);
+var result = graphClient.me().messages().byMessageId("{message-id}").attachments().createUploadSession().post(createUploadSessionPostRequestBody);
 
-graphClient.me().messages("AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA=").attachments()
-	.createUploadSession(AttachmentCreateUploadSessionParameterSet
-		.newBuilder()
-		.withAttachmentItem(attachmentItem)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

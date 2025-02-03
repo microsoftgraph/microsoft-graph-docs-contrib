@@ -20,7 +20,7 @@ $params = @{
 	}
 	clientConfiguration = @{
 		"@odata.type" = "#microsoft.graph.customExtensionClientConfiguration"
-		maximumRetries = 
+		maximumRetries = 1
 		timeoutInMilliseconds = 1000
 	}
 	callbackConfiguration = @{

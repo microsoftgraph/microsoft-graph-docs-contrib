@@ -3,8 +3,9 @@ title: "authenticationEventHandlerResult resource type"
 description: "An abstract type that defines the result of authentication to event listeners in Microsoft Entra sign-ins."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # authenticationEventHandlerResult resource type
@@ -22,7 +23,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationEventHandlerResult"

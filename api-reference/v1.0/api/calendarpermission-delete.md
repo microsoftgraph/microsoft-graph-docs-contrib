@@ -3,8 +3,9 @@ title: "Delete calendarPermission"
 description: "Delete calendarPermission."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Delete calendarPermission

@@ -3,8 +3,9 @@ title: "List additionalSources"
 description: "Get the list of additional sources associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # List additionalSources
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -118,7 +119,7 @@ Content-Type: application/json
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
             "id": "43434642-3137-3138-3432-374142313639",
-            "email": "AlexW@M365x809305.OnMicrosoft.com",
+            "email": "AlexW@contoso.com",
             "includedSources": "mailbox",
             "siteWebUrl": null,
             "createdBy": {
@@ -135,7 +136,7 @@ Content-Type: application/json
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
             "id": "38423145-4639-4244-4437-464630424139",
-            "email": "IrvinS@M365x809305.OnMicrosoft.com",
+            "email": "IrvinS@contoso.com",
             "includedSources": "mailbox",
             "siteWebUrl": null,
             "createdBy": {
@@ -152,7 +153,7 @@ Content-Type: application/json
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
             "id": "36304536-3033-3845-4639-394538443235",
-            "email": "AllanD@M365x809305.OnMicrosoft.com",
+            "email": "AllanD@contoso.com",
             "includedSources": "mailbox",
             "siteWebUrl": null,
             "createdBy": {

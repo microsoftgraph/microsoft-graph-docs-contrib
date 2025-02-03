@@ -2,8 +2,9 @@
 title: "Create and send a notification from your app service (deprecated)"
 description: "You can create and send a notification to a user by using Microsoft Graph APIs (deprecated)."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 author: "merzink"
+ms.date: 11/07/2024
 ---
 
 

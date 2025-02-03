@@ -4,8 +4,9 @@ description: "List the details of inactive roles in AWS authorization systems on
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List inactiveAwsRoleFinding objects

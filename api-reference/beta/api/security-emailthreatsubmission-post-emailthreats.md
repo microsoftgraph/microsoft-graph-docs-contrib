@@ -3,8 +3,9 @@ title: "Create emailThreatSubmission"
 description: "Create a new emailThreatSubmission object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create emailThreatSubmission
@@ -41,7 +42,7 @@ POST /security/threatSubmission/emailThreats
 ## Request body
 In the request body, supply a JSON representation of either an [emailContentThreatSubmission](../resources/security-emailcontentthreatsubmission.md) object or an [emailUrlThreatSubmission](../resources/security-emailurlthreatsubmission.md) object.
 
-The **emailContentThreatSubmission** and **emailUrlThreatSubmission** resources are both subtypes of the **emailThreatSubmission** entity. Choose what to include in the request body based on the following:  
+The **emailContentThreatSubmission** and **emailUrlThreatSubmission** resources are both subtypes of the **emailThreatSubmission** entity. Choose what to include in the request body based on the following:
 * If you want to create a submission with the email content itself, include an **emailContentThreatSubmission** object.
 * If you want to create a submission with a URL that points to the email, include an **emailUrlThreatSubmission** object.
 
@@ -70,7 +71,7 @@ Content-type: application/json
 {
   "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
-  "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "messageUrl": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
 }
 ```
@@ -127,7 +128,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
   "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
-  "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
   "createdDateTime": "2021-10-10T03:30:18.6890937Z",
   "contentType": "email",
@@ -138,7 +139,7 @@ Content-type: application/json
     "user": {
       "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
       "displayName": "Ronald Admin",
-      "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+      "email": "tifc@contoso.com"
     }
   },
   "result": {
@@ -175,9 +176,9 @@ Content-type: application/json
 {
   "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "notSpam",
-  "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "messageUrl": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
-  "tenantAllowOrBlockListAction": 
+  "tenantAllowOrBlockListAction":
   {
     "action": "allow",
     "expirationDateTime": "2021-10-30T03:30:18.6890937Z"
@@ -203,7 +204,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
   "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
-  "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
   "createdDateTime": "2021-10-10T03:30:18.6890937Z",
   "contentType": "email",
@@ -214,7 +215,7 @@ Content-type: application/json
     "user": {
       "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
       "displayName": "Ronald Admin",
-      "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+      "email": "tifc@contoso.com"
     }
   },
   "result": {
@@ -236,7 +237,7 @@ Content-type: application/json
   "receivedDateTime": "2021-10-09T03:30:18.6890937Z",
   "originalCategory": "notSpam",
   "attackSimulationInfo": null,
-  "tenantAllowOrBlockListAction": 
+  "tenantAllowOrBlockListAction":
   {
     "action": "allow",
     "expirationDateTime": "2021-10-30T03:30:18.6890937Z",
@@ -257,7 +258,7 @@ Content-type: application/json
 {
   "@odata.type": "#microsoft.graph.security.emailContentThreatSubmission",
   "category": "spam",
-  "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "fileContent": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
 }
 ```
@@ -279,7 +280,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
   "@odata.type": "#microsoft.graph.security.emailContentThreatSubmission",
   "category": "spam",
-  "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
   "createdDateTime": "2021-10-10T03:30:18.6890937Z",
   "contentType": "email",
@@ -290,7 +291,7 @@ Content-type: application/json
     "user": {
       "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
       "displayName": "Ronald Admin",
-      "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+      "email": "tifc@contoso.com"
     }
   },
   "result": {

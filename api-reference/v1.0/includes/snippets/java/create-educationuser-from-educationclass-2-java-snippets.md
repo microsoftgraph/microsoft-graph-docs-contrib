@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EducationUser educationUser = new EducationUser();
-educationUser.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/v1.0/education/users/14011"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.education().classes("{class-id}").teachers().references()
-	.buildRequest()
-	.post(educationUser);
+com.microsoft.graph.models.ReferenceCreate referenceCreate = new com.microsoft.graph.models.ReferenceCreate();
+referenceCreate.setOdataId("https://graph.microsoft.com/v1.0/education/users/14011");
+graphClient.education().classes().byEducationClassId("{educationClass-id}").teachers().ref().post(referenceCreate);
+
 
 ```

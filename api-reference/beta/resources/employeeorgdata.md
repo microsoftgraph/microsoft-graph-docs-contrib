@@ -3,8 +3,9 @@ title: "employeeOrgData resource type"
 description: "Represents organization data associated with a user." 
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
-author: "cmmdesai"
+ms.subservice: entra-users
+author: "yyuank"
+ms.date: 08/09/2024
 ---
 
 # employeeOrgData resource type
@@ -21,9 +22,12 @@ Represents organization data associated with a user. The **employeeOrgData** pro
 | division | String | The name of the division in which the user works. <br><br>Returned only on `$select`. Supports `$filter`. |
 | costCenter | String | The cost center associated with the user. <br><br>Returned only on `$select`. Supports `$filter`. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

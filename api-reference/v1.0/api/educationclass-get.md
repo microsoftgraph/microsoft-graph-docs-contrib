@@ -3,8 +3,9 @@ title: "Get educationClass"
 description: "Retrieve a class from the system."
 ms.localizationpriority: medium
 author: "mlafleur"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get educationClass
@@ -43,7 +44,7 @@ If successful, this method returns a `200 OK` response code and an [educationCla
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

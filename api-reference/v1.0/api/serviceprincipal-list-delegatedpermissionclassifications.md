@@ -3,8 +3,9 @@ title: "List delegatedPermissionClassifications collection of servicePrincipal"
 description: "Retrieve a list of classifications given to delegated permissions exposed by an API's service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 04/18/2024
 ---
 
 # List delegatedPermissionClassifications collection of servicePrincipal

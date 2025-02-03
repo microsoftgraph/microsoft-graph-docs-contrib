@@ -2,9 +2,10 @@
 title: "deviceConfigAssignmentIntent enum type"
 description: "The administrator intent for the assignment of the profile."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceConfigAssignmentIntent enum type

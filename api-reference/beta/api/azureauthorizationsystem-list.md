@@ -4,8 +4,9 @@ description: "Get a list of the azureAuthorizationSystem objects and their prope
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List azureAuthorizationSystems

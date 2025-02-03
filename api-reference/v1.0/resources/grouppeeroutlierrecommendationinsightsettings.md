@@ -3,8 +3,9 @@ title: "groupPeerOutlierRecommendationInsightSettings resource type"
 description: "In the Microsoft Entra access reviews, the groupPeerOutlierRecommendationInsightSettings represents the settings associated with user-to-group affiliation insights, and that is used to aid reviewers to make decisions."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # groupPeerOutlierRecommendationInsightSettings resource type
@@ -23,7 +24,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.groupPeerOutlierRecommendationInsightSettings",

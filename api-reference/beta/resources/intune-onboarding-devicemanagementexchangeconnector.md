@@ -2,9 +2,10 @@
 title: "deviceManagementExchangeConnector resource type"
 description: "Entity which represents a connection to an Exchange environment."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementExchangeConnector resource type

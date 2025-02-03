@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ManagedAndroidLobApp;
+use Microsoft\Graph\Generated\Models\MimeContent;
+use Microsoft\Graph\Generated\Models\MobileAppPublishingState;
+use Microsoft\Graph\Generated\Models\ManagedAppAvailability;
+use Microsoft\Graph\Generated\Models\AndroidMinimumOperatingSystem;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

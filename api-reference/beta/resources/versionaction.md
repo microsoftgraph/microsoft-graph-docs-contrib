@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: VersionAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # VersionAction resource type
@@ -17,6 +17,15 @@ Namespace: microsoft.graph
 The presence of the **VersionAction** resource on an [**itemActivity**][activity] indicates that the activity caused a new version to be created.
 
 [activity]: itemactivity.md
+
+## Properties
+
+| Property   | Type   | Description                                                  |
+| :--------- | :----- | :----------------------------------------------------------- |
+| newVersion | string | The name of the new version that was created by this action. |
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -31,12 +40,6 @@ The presence of the **VersionAction** resource on an [**itemActivity**][activity
   "newVersion": "string"
 }
 ```
-
-## Properties
-
-| Property   | Type   | Description                                                  |
-| :--------- | :----- | :----------------------------------------------------------- |
-| newVersion | string | The name of the new version that was created by this action. |
 
 ## Remarks
 

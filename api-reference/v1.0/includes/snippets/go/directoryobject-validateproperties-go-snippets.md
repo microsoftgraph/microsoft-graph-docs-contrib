@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  "github.com/google/uuid"
@@ -12,9 +15,6 @@ import (
 	  graphdirectoryobjects "github.com/microsoftgraph/msgraph-sdk-go/directoryobjects"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphdirectoryobjects.NewValidatePropertiesPostRequestBody()
 entityType := "Group"
@@ -26,6 +26,7 @@ requestBody.SetMailNickname(&mailNickname)
 onBehalfOfUserId := uuid.MustParse("onBehalfOfUserId-value")
 requestBody.SetOnBehalfOfUserId(&onBehalfOfUserId) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.DirectoryObjects().ValidateProperties().Post(context.Background(), requestBody, nil)
 
 

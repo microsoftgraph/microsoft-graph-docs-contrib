@@ -3,8 +3,9 @@ title: "availabilityItem resource type"
 description: "Indicates the status of a staff member for a given time slot."
 author: "kwekua"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # availabilityItem resource type
@@ -22,9 +23,13 @@ Indicates the status of a [staff member](bookingstaffmember.md) for a given time
 |status |bookingsAvailabilityStatus |The status of the staff member. Possible values are: `available`, `busy`, `slotsAvailable`, `outOfOffice`, `unknownFutureValue`.|
 |startDateTime |dateTimeTimeZone |The start time of the time slot.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

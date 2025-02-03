@@ -4,27 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcExportJob cloudPcExportJob = new CloudPcExportJob();
-cloudPcExportJob.reportName = CloudPcReportName.REMOTE_CONNECTION_QUALITY_REPORTS;
-LinkedList<String> selectList = new LinkedList<String>();
-selectList.add("CloudPcId");
-selectList.add("ManagedDeviceName");
-selectList.add("AvgRoundTripTimeInMsP50");
-selectList.add("LastConnectionRoundTripTimeInMs");
-selectList.add("AvgAvailableBandwidthInMBpsP50");
-selectList.add("LastConnectionAvailableBandWidthInMSps");
-selectList.add("AvgRemoteSignInTimeInSecP50");
-selectList.add("UDPConnectionPercentage");
-selectList.add("LastConnectionGateway");
-selectList.add("LastConnectionProtocol");
-selectList.add("EventDateTime");
-cloudPcExportJob.select = selectList;
-cloudPcExportJob.filter = "EventDateTime gt datetime'2023-06-14T07:40:41.694Z'";
+cloudPcExportJob.setReportName(CloudPcReportName.RemoteConnectionQualityReports);
+LinkedList<String> select = new LinkedList<String>();
+select.add("CloudPcId");
+select.add("ManagedDeviceName");
+select.add("AvgRoundTripTimeInMsP50");
+select.add("LastConnectionRoundTripTimeInMs");
+select.add("AvgAvailableBandwidthInMBpsP50");
+select.add("LastConnectionAvailableBandWidthInMSps");
+select.add("AvgRemoteSignInTimeInSecP50");
+select.add("UDPConnectionPercentage");
+select.add("LastConnectionGateway");
+select.add("LastConnectionProtocol");
+select.add("EventDateTime");
+cloudPcExportJob.setSelect(select);
+cloudPcExportJob.setFilter("EventDateTime gt datetime'2023-06-14T07:40:41.694Z'");
+CloudPcExportJob result = graphClient.deviceManagement().virtualEndpoint().reports().exportJobs().post(cloudPcExportJob);
 
-graphClient.deviceManagement().virtualEndpoint().reports().exportJobs()
-	.buildRequest()
-	.post(cloudPcExportJob);
 
 ```

@@ -3,8 +3,9 @@ title: "scoredEmailAddress resource type"
 description: "Represents a scored email address."
 ms.localizationpriority: medium
 author: "AAmatino"
-ms.prod: mail
+ms.subservice: mail
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # scoredEmailAddress resource type
@@ -22,7 +23,7 @@ Represents a scored email address.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,8 +3,9 @@ title: "Share assignments with an embedded Teams application"
 description: "Learn how to use Microsoft Graph to embed a Teams app resource in an assignment."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Embed a Teams app in an assignment

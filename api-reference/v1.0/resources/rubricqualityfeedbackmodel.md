@@ -3,8 +3,9 @@ title: "rubricQualityFeedbackModel resource type"
 description: "Feedback related to a specific quality of an educationRubric."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # rubricQualityFeedbackModel resource type
@@ -20,9 +21,13 @@ Feedback related to a specific [quality](rubricquality.md) of an [educationRubri
 |feedback|[itemBody](itembody.md)|Specific feedback for one quality of this rubric.|
 |qualityId|String|The ID of the [rubricQuality](rubricquality.md) that this feedback is related to.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

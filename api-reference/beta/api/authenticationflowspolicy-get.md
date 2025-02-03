@@ -3,8 +3,9 @@ title: "Get authenticationFlowsPolicy"
 description: "Read the properties and relationships of an authenticationFlowsPolicy object."
 author: "linkhp"
 ms.localizationpriority: high
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get authenticationFlowsPolicy
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "authenticationflowspolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationflowspolicy-get-permissions.md)]
+
+[!INCLUDE [rbac-authentication-flow-policy-read](../includes/rbac-for-apis/rbac-authentication-flow-policy-read.md)]
 
 ## HTTP request
 

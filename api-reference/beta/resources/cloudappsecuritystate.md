@@ -3,8 +3,9 @@ title: "cloudAppSecurityState resource type"
 description: "Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: security
+ms.subservice: security
 author: "preetikr"
+ms.date: 03/21/2024
 ---
 
 # cloudAppSecurityState resource type
@@ -21,9 +22,12 @@ Contains stateful information about the cloud application (destinationServiceNam
 |destinationServiceName|String|Cloud application/service name (for example "Salesforce", "DropBox", etc.).|
 |riskScore|String|Provider-generated/calculated risk score of the Cloud Application/Service. Recommended value range of 0-1, which equates to a percentage.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

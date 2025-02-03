@@ -2,9 +2,10 @@
 title: "Get macOSImportedPFXCertificateProfile"
 description: "Read properties and relationships of the macOSImportedPFXCertificateProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get macOSImportedPFXCertificateProfile
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [macOSImportedPFXCertificateProfile](../resources/intune-deviceconfig-macosimportedpfxcertificateprofile.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1564
+Content-Length: 1605
 
 {
   "value": {
@@ -106,7 +109,8 @@ Content-Length: 1564
     "subjectAlternativeNameType": "emailAddress",
     "certificateValidityPeriodValue": 14,
     "certificateValidityPeriodScale": "months",
-    "intendedPurpose": "smimeEncryption"
+    "intendedPurpose": "smimeEncryption",
+    "deploymentChannel": "userChannel"
   }
 }
 ```

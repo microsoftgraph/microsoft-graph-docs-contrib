@@ -3,8 +3,9 @@ title: "serviceStorageQuotaBreakdown resource type"
 description: "Represents a proportion of the unified storage quota associated with a specific service."
 author: "BarryShehadeh"
 ms.localizationpriority: medium
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # serviceStorageQuotaBreakdown resource type
@@ -18,8 +19,8 @@ Represents a proportion of the unified storage quota associated with a specific 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List serviceStorageQuotaBreakdown](../api/unifiedstoragequota-list-services.md)| [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) collection|Get a list of services in the serviceStorageQuotaBreakdown.|
-|[Get serviceStorageQuotaBreakdown](../api/servicestoragequotabreakdown-get.md)|[serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md)|Read the properties and relationships of a [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) object.|
+|[List](../api/unifiedstoragequota-list-services.md)| [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) collection|Get a list of services in the serviceStorageQuotaBreakdown.|
+|[Get](../api/servicestoragequotabreakdown-get.md)|[serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md)|Read the properties and relationships of a [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,7 +34,7 @@ Represents a proportion of the unified storage quota associated with a specific 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

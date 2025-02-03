@@ -14,7 +14,7 @@ const outlookTaskGroup = {
   name: 'Personal Tasks',
 };
 
-await client.api('/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=')
+await client.api('/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=')
 	.version('beta')
 	.update(outlookTaskGroup);
 

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RiskDetectionCollectionPage riskDetections = graphClient.identityProtection().riskDetections()
-	.buildRequest()
-	.filter("userDisplayName eq 'MyTestUser1'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+RiskDetectionCollectionResponse result = graphClient.identityProtection().riskDetections().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "userDisplayName eq 'MyTestUser1'";
+});
+
 
 ```

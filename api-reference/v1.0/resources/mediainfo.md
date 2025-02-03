@@ -3,8 +3,9 @@ title: "mediaInfo resource type"
 description: "The media information used in actions for prompts."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # mediaInfo resource type
@@ -22,7 +23,7 @@ The media information used in actions for prompts.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

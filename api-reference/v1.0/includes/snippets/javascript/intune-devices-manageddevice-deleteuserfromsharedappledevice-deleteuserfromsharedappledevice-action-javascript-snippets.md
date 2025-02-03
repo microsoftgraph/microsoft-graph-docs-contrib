@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const deleteUserFromSharedAppleDevice = Content-type: application/json
-Content-length: 56
-
-{
+const deleteUserFromSharedAppleDevice = {
   userPrincipalName: 'User Principal Name value'
 };
 

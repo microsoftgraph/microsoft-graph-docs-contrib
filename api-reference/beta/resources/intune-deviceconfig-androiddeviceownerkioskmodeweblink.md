@@ -2,9 +2,10 @@
 title: "androidDeviceOwnerKioskModeWeblink resource type"
 description: "A weblink on the Android Device Owner Managed Home Screen"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # androidDeviceOwnerKioskModeWeblink resource type

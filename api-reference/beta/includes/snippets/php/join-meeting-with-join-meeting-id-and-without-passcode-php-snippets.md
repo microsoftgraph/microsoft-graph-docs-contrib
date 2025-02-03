@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Call;
+use Microsoft\Graph\Beta\Generated\Models\Modality;
+use Microsoft\Graph\Beta\Generated\Models\ServiceHostedMediaConfig;
+use Microsoft\Graph\Beta\Generated\Models\MediaInfo;
+use Microsoft\Graph\Beta\Generated\Models\JoinMeetingIdMeetingInfo;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

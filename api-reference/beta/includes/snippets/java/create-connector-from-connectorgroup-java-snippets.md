@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Connector connector = new Connector();
-connector.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.onPremisesPublishingProfiles("applicationProxy").connectorGroups("{id}").members().references()
-	.buildRequest()
-	.post(connector);
+com.microsoft.graph.beta.models.ReferenceCreate referenceCreate = new com.microsoft.graph.beta.models.ReferenceCreate();
+referenceCreate.setOdataId("https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}");
+graphClient.onPremisesPublishingProfiles().byOnPremisesPublishingProfileId("{onPremisesPublishingProfile-id}").connectorGroups().byConnectorGroupId("{connectorGroup-id}").members().ref().post(referenceCreate);
+
 
 ```

@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> userIdsList = new LinkedList<String>();
-userIdsList.add("4628e7df-dff3-407c-a08f-75f08c0806dc");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.identityProtection().riskyUsers()
-	.dismiss(RiskyUserDismissParameterSet
-		.newBuilder()
-		.withUserIds(userIdsList)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.identityprotection.riskyusers.dismiss.DismissPostRequestBody dismissPostRequestBody = new com.microsoft.graph.identityprotection.riskyusers.dismiss.DismissPostRequestBody();
+LinkedList<String> userIds = new LinkedList<String>();
+userIds.add("4628e7df-dff3-407c-a08f-75f08c0806dc");
+dismissPostRequestBody.setUserIds(userIds);
+graphClient.identityProtection().riskyUsers().dismiss().post(dismissPostRequestBody);
+
 
 ```

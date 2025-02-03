@@ -3,8 +3,9 @@ title: "callRecordingEventMessageDetail resource type"
 description: "Represents the details of an event message about call recording."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # callRecordingEventMessageDetail resource type
@@ -29,7 +30,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |meetingOrganizer|[identitySet](../resources/identityset.md)|Organizer of the meeting.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.callRecordingEventMessageDetail",
@@ -54,7 +55,7 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about call recording](/graph/system-messages/#call-recording)
 - For more information about other types of events, see [System messages](/graph/system-messages).
 

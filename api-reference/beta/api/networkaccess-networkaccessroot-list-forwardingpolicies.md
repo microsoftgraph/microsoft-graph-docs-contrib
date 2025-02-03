@@ -3,8 +3,9 @@ title: "List forwardingPolicies"
 description: "Retrieve a list of forwarding policies associated with a specific traffic forwarding profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List forwardingPolicies
@@ -14,7 +15,7 @@ Namespace: microsoft.graph.networkaccess
 
 Retrieve a list of forwarding policies associated with a specific traffic forwarding profile.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -52,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_forwardingpolicy"

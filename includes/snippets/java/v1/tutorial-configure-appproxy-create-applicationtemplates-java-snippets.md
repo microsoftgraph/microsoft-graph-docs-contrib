@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String displayName = "Contoso IWA App";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.applicationTemplates("8adf8e6e-67b2-4cf2-a259-e3dc5476c621")
-	.instantiate(ApplicationTemplateInstantiateParameterSet
-		.newBuilder()
-		.withDisplayName(displayName)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.applicationtemplates.item.instantiate.InstantiatePostRequestBody instantiatePostRequestBody = new com.microsoft.graph.applicationtemplates.item.instantiate.InstantiatePostRequestBody();
+instantiatePostRequestBody.setDisplayName("Contoso IWA App");
+var result = graphClient.applicationTemplates().byApplicationTemplateId("{applicationTemplate-id}").instantiate().post(instantiatePostRequestBody);
+
 
 ```

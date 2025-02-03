@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ServicePrincipalCollectionPage servicePrincipal = graphClient.groups("3802e9bb-0951-4e18-b9eb-f934b4241194").members().microsoft.graph.servicePrincipal()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ServicePrincipalCollectionResponse result = graphClient.groups().byGroupId("{group-id}").members().graphServicePrincipal().get();
+
 
 ```

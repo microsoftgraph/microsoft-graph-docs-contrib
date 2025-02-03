@@ -2,9 +2,10 @@
 title: "importedWindowsAutopilotDeviceIdentityState resource type"
 description: "Intune Enrollment Importedwindowsautopilotdeviceidentitystate Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # importedWindowsAutopilotDeviceIdentityState resource type

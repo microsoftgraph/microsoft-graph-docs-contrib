@@ -3,8 +3,9 @@ title: "Get schema"
 description: "Retrieve the properties of a schema for an externalConnection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Get schema

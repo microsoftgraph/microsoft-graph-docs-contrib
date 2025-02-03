@@ -3,8 +3,9 @@ title: "Update connectorGroups"
 description: "Update the properties of connectorgroup object."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 08/01/2024
 ---
 
 # Update connectorGroups
@@ -38,7 +39,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Indicates the type of hybrid agent and is preset by the system. |
 |id|string| Unique identifier for this connectorGroup. Read-only. |
-|isDefault|boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is preset by the system. |
+|isDefault|Boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is preset by the system. |
 |name|string| The name associated with the connectorGroup. |
 |region|string| The region the connectorGroup is assigned to and for which it optimizes traffic. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
@@ -47,7 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and updated [connectorGroup](../resources/connectorgroup.md) object in the response body.
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +100,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,8 +3,9 @@ title: "idleSessionSignOut resource type"
 description: "Represents the idle session sign-out policy settings for SharePoint."
 author: "lfernandez"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # idleSessionSignOut resource type
@@ -23,7 +24,7 @@ Represents the idle session sign-out policy settings for SharePoint.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.idleSessionSignOut" } -->
 

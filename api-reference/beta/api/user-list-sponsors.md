@@ -3,8 +3,9 @@ title: "List sponsors"
 description: "Get a user's sponsors."
 ms.localizationpriority: medium
 author: "sadia353"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # List sponsors
@@ -25,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/user-list-sponsors-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+[!INCLUDE [rbac-user-sponsors-apis-read](../includes/rbac-for-apis/rbac-user-sponsors-apis-read.md)]
 
 ## HTTP request
 
@@ -111,7 +114,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
-} 
+}
 -->
 ```http
 HTTP/1.1 200 OK
@@ -125,8 +128,8 @@ Content-type: application/json
             "id": "263a1289-8282-4bf7-91f7-550d9bba8c02",
             "displayName": "Sara Davis",
             "jobTitle": "Finance VP",
-            "mail": "SaraD@contoso.onmicrosoft.com",
-            "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
+            "mail": "SaraD@contoso.com",
+            "userPrincipalName": "SaraD@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.group",

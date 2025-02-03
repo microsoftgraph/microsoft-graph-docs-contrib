@@ -2,9 +2,10 @@
 title: "Create macOSPkcsCertificateProfile"
 description: "Create a new macOSPkcsCertificateProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create macOSPkcsCertificateProfile
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -73,6 +76,7 @@ The following table shows the properties that are required when you create the m
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
 |customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
 |allowAllAppsAccess|Boolean|AllowAllAppsAccess setting|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the deployment channel type used to deploy the configuration profile. Possible values are deviceChannel, userChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 
 
 
@@ -86,7 +90,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1857
+Content-length: 1896
 
 {
   "@odata.type": "#microsoft.graph.macOSPkcsCertificateProfile",
@@ -136,7 +140,8 @@ Content-length: 1857
       "name": "Name value"
     }
   ],
-  "allowAllAppsAccess": true
+  "allowAllAppsAccess": true,
+  "deploymentChannel": "userChannel"
 }
 ```
 
@@ -145,7 +150,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2029
+Content-Length: 2068
 
 {
   "@odata.type": "#microsoft.graph.macOSPkcsCertificateProfile",
@@ -198,6 +203,7 @@ Content-Length: 2029
       "name": "Name value"
     }
   ],
-  "allowAllAppsAccess": true
+  "allowAllAppsAccess": true,
+  "deploymentChannel": "userChannel"
 }
 ```

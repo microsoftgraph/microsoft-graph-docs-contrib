@@ -2,9 +2,11 @@
 title: "userSecurityState resource type"
 description: "Contains stateful information about the user account."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # userSecurityState resource type
@@ -34,7 +36,7 @@ Contains stateful information about the user account.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

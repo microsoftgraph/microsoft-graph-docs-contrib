@@ -4,7 +4,8 @@ description: "Clear the presence information for a user's application presence s
 author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
+ms.date: 04/05/2024
 ---
 
 # presence: clearPresence

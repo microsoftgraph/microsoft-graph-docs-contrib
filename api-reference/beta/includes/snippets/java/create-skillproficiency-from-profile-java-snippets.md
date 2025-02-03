@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SkillProficiency skillProficiency = new SkillProficiency();
-LinkedList<String> categoriesList = new LinkedList<String>();
-categoriesList.add("Professional");
-skillProficiency.categories = categoriesList;
-skillProficiency.allowedAudiences = EnumSet.of(AllowedAudiences.ORGANIZATION);
-skillProficiency.displayName = "API Design";
-skillProficiency.proficiency = SkillProficiencyLevel.GENERAL_PROFESSIONAL;
-LinkedList<String> collaborationTagsList = new LinkedList<String>();
-collaborationTagsList.add("ableToMentor");
-skillProficiency.collaborationTags = collaborationTagsList;
+LinkedList<String> categories = new LinkedList<String>();
+categories.add("Professional");
+skillProficiency.setCategories(categories);
+skillProficiency.setAllowedAudiences(EnumSet.of(AllowedAudiences.Organization));
+skillProficiency.setDisplayName("API Design");
+skillProficiency.setProficiency(SkillProficiencyLevel.GeneralProfessional);
+LinkedList<String> collaborationTags = new LinkedList<String>();
+collaborationTags.add("ableToMentor");
+skillProficiency.setCollaborationTags(collaborationTags);
+SkillProficiency result = graphClient.me().profile().skills().post(skillProficiency);
 
-graphClient.me().profile().skills()
-	.buildRequest()
-	.post(skillProficiency);
 
 ```

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -13,22 +16,20 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphteams.NewClockInPostRequestBody()
 notes := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
 notes.SetContentType(&contentType) 
-content := "clock in notes"
+content := "clocking in"
 notes.SetContent(&content) 
 requestBody.SetNotes(notes)
 additionalData := map[string]interface{}{
-	atAprovedLocation := true
-requestBody.SetAtAprovedLocation(&atAprovedLocation) 
+	isAtApprovedLocation := true
+requestBody.SetIsAtApprovedLocation(&isAtApprovedLocation) 
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 clockIn, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().ClockIn().Post(context.Background(), requestBody, nil)
 
 

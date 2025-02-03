@@ -3,7 +3,8 @@ title: "Use the Microsoft Search API to search content using query templates"
 description: "Learn how to use query templates in the Microsoft Search API in Microsoft Graph to search for content based on query variables and KQL."
 author: "yiwenwang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Search API to search content using query templates

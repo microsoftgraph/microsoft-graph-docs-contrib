@@ -19,7 +19,7 @@ var requestBody = new FavoritePostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Admin.ServiceAnnouncement.Messages.Favorite.PostAsync(requestBody);
+var result = await graphClient.Admin.ServiceAnnouncement.Messages.Favorite.PostAsFavoritePostResponseAsync(requestBody);
 
 
 ```

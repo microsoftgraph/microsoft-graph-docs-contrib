@@ -3,8 +3,9 @@ title: "Get fileThreatSubmission"
 description: "Read the properties and relationships of a fileThreatSubmission object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get fileThreatSubmission
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [fileThreatSub
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -125,7 +126,7 @@ Content-Type: application/json
     "user": {
       "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
       "displayName": "Ronald Admin",
-      "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+      "email": "tifc@contoso.com"
     }
   },
   "result": {

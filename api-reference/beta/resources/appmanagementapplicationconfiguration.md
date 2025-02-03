@@ -1,10 +1,11 @@
 ---
 title: "appManagementApplicationConfiguration resource type"
-description: "App management configuration object that contains properties which can be configured to enable various restrictions for applications and service principals."
-author: "madansr7"
+description: "App management application configuration object to configure app management policy restrictions like identifier URIs, password credentials, and certificate credentials that are specific to applications."
+author: "yogesh-randhawa"
 ms.localizationpriority: medium
-ms.subservice: ""
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # appManagementApplicationConfiguration resource type
@@ -13,18 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-App management configuration object that contains properties which can be configured to enable various restrictions for applications and service principals.
+Configuration object to configure app management policy restrictions like identifier URIs, password credentials, and certificate credentials that are specific to applications.
 
-Inherits from [appManagementConfiguration](../resources/appmanagementconfiguration.md).
+Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
 
 ## Properties
 
-| Property            | Type                                                                                          | Description                                                                                                                                                                                      |
-| :------------------ | :-------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| audiences           | [audiencesConfiguration](../resources/audiencesconfiguration.md)                              | Property to restrict creation or update of apps based on their target signInAudience types.                                                                                                      |
-| identifierUris      | [identifierUriConfiguration](../resources/identifieruriconfiguration.md)                      | Property to restrict custom URIs for applications. All but the 'default' URI of the format (api://{appId}) are blocked.                                                                          |
-| keyCredentials      | [keyCredentialConfiguration](../resources/keycredentialconfiguration.md) collection           | Collection of keyCredential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md). |
-| passwordCredentials | [passwordCredentialConfiguration](../resources/passwordcredentialconfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md).      |
+| Property            | Type                                                                             | Description                                                                                                                                                                                               |
+| :------------------ | :------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| identifierUris      | [identifierUriConfiguration](identifieruriconfiguration.md)                      | Configuration object for restrictions on **identifierUris** property for an application                                                                                                                   |
+| keyCredentials      | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection           | Collection of certificate credential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md). |
+| passwordCredentials | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md).               |
 
 ## Relationships
 
@@ -53,14 +53,8 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.keyCredentialConfiguration"
     }
   ],
-  "federatedIdentityCredentials": {
-    "@odata.type": "microsoft.graph.federatedIdentityCredentialConfiguration"
-  },
   "identifierUris": {
     "@odata.type": "microsoft.graph.identifierUriConfiguration"
-  },
-  "audiences": {
-    "@odata.type": "microsoft.graph.audiencesConfiguration"
   }
 }
 ```

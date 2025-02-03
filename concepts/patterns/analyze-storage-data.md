@@ -2,7 +2,8 @@
 title: "Analyze Microsoft Graph data in your data storage"
 description: "Learn about Microsoft Graph interaction patterns for non-interactive use cases that rely on a large amount of extracted Microsoft 365 data."
 author: "OlgaPodo"
-ms.localizationpriority: low
+ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 # Analyze Microsoft Graph data in your data storage
@@ -46,8 +47,8 @@ The following considerations support the use of this integration pattern:
 
 - **Solution complexity**: This data egress solution is of low complexity from an integration perspective because it doesn't require custom code, has few components, and is tolerant of data latency.
 
-## See also
+## Related content
 
-- [Overview of Microsoft Graph Data Connect](./../data-connect-concept-overview.md)
-- [Training: Build your first Microsoft Graph Data Connect application](/training/modules/data-connect-quickstart)
+- [Overview of Microsoft Graph Data Connect](/graph/data-connect-concept-overview)
+- [Training: Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart)
 

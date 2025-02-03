@@ -4,8 +4,9 @@ description: "Create a new temporaryAccessPassAuthenticationMethod object for a 
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/06/2024
 ---
 
 # Create temporaryAccessPassMethod

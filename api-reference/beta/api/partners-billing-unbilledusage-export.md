@@ -3,8 +3,9 @@ title: "unbilledUsage: export"
 description: "Export the unbilled Azure usage data for a specific billing period and a given currency."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # unbilledUsage: export
@@ -15,7 +16,9 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
-Export the unbilled Azure usage data for a specific billing period and a given currency.
+Export unbilled Azure usage data for a specific billing period and currency.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -102,6 +105,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/unbilledusagethisexport-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unbilledusagethisexport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

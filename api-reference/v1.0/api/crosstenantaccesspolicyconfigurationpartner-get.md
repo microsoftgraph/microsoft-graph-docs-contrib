@@ -3,8 +3,9 @@ title: "Get crossTenantAccessPolicyConfigurationPartner"
 description: "Read the properties and relationships of a partner-specific configuration."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Get crossTenantAccessPolicyConfigurationPartner
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "crosstenantaccesspolicyconfigurationpartner_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicyconfigurationpartner-get-permissions.md)]
+
+[!INCLUDE [rbac-xtap-apis-read](../includes/rbac-for-apis/rbac-xtap-apis-read.md)]
 
 ## HTTP request
 
@@ -113,6 +116,7 @@ Content-Type: application/json
 {
   "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
   "inboundTrust": null,
+  "isInMultiTenantOrganization": false,
   "automaticUserConsentSettings":
   {
     "inboundAllowed": null,
@@ -139,6 +143,26 @@ Content-Type: application/json
       "targets": [
         {
           "target": "Office365",
+          "targetType": "application"
+        }
+      ]
+    }
+  },
+  "tenantRestrictions": {
+    "usersAndGroups": {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllUsers",
+          "targetType": "user"
+        }
+      ]
+    },
+    "applications": {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllApplications",
           "targetType": "application"
         }
       ]

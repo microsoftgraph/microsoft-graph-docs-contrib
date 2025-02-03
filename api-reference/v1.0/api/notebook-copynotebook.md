@@ -3,8 +3,9 @@ title: "notebook: copyNotebook"
 description: "Copies a notebook to the Notebooks folder in the destination Documents library. The folder is created if it doesn't exist."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # notebook: copyNotebook
@@ -32,7 +33,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string | `application/json` |
 
 ## Request body
@@ -50,7 +51,7 @@ If successful, this method returns a `202 Accepted` response code and an `Operat
 ## Example
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +103,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

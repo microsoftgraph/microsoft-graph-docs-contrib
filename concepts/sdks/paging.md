@@ -3,6 +3,7 @@ title: "Page through a collection using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph API requests using the Microsoft Graph SDKs."
 ms.localizationpriority: medium
 author: DarrelMiller
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD051 -->
@@ -36,8 +37,7 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 ### [Java](#tab/java)
 
-> [!NOTE]
-> The Microsoft Graph Java SDK does not currently have a **PageIterator** class. You can [manually request subsequent pages](#manually-requesting-subsequent-pages).
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="PagingSnippet":::
 
 ### [PHP](#tab/PHP)
 
@@ -66,8 +66,7 @@ Some scenarios require stopping the iteration process in order to perform other 
 
 ### [Java](#tab/java)
 
-> [!NOTE]
-> The Microsoft Graph Java SDK does not currently have a **PageIterator** class. You can [manually request subsequent pages](#manually-requesting-subsequent-pages).
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="ResumePagingSnippet":::
 
 ### [PHP](#tab/PHP)
 

@@ -3,8 +3,9 @@ title: "accessPackageAssignmentRequestCallbackData resource type"
 description: "Access package assignment request workflow callback that defines a custom extension endpoint callback."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # accessPackageAssignmentRequestCallbackData resource type
@@ -30,7 +31,7 @@ Inherits from [customExtensionData](../resources/customextensiondata.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageAssignmentRequestCallbackData"

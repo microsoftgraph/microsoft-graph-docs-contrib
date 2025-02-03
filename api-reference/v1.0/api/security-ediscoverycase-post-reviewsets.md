@@ -3,8 +3,9 @@ title: "Create reviewSets"
 description: "Create a new ediscoveryReviewSet object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # Create reviewSets
@@ -55,7 +56,7 @@ If successful, this method returns a `201 Created` response code and an [microso
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessReviewScheduleDefinitionCollectionPage definitions = graphClient.identityGovernance().accessReviews().definitions()
-	.buildRequest()
-	.filter("contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AccessReviewScheduleDefinitionCollectionResponse result = graphClient.identityGovernance().accessReviews().definitions().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')";
+});
+
 
 ```

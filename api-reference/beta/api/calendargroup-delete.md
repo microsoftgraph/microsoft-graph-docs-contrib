@@ -3,8 +3,9 @@ title: "Delete calendarGroup"
 description: "Delete a calendar group other than the default calendar group."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Delete calendarGroup
@@ -37,7 +38,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -51,7 +52,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ##### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -100,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/me/calendarGroups/{id}
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

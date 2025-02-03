@@ -1,10 +1,11 @@
 ---
 title: "cloudPcOnPremisesConnectionHealthCheck resource type"
-description: "The result of a Cloud PC Azure network connection health check."
+description: "Represents the result of a Cloud PC Azure network connection health check."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 11/26/2024
 ---
 
 # cloudPcOnPremisesConnectionHealthCheck resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The result of a Cloud PC Azure network connection health check.
+Represents the result of a Cloud PC Azure network connection health check.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
@@ -21,13 +22,13 @@ The result of a Cloud PC Azure network connection health check.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run the health checks of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
+|[Run health checks](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run the health checks of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|additionalDetails|String|More details about the health check or the recommended action.|
+|additionalDetail|String|More details about the health check or the recommended action. Read-only.|
 |correlationId|String|The unique identifier of the health check item-related activities. This identifier can be useful in troubleshooting.|
 |displayName|String|The display name for this health check item.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `warning`, `informational`, `unknownFutureValue`. Read-only.|
@@ -37,6 +38,7 @@ The result of a Cloud PC Azure network connection health check.
 |recommendedAction|String|The recommended action to fix the corresponding error.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
+|additionalDetails (deprecated)|String|More details about the health check or the recommended action. Read-only. The **additionalDetails** property is deprecated and stopped returning data on January 31, 2024. Goind forward, use the **additionalDetail** property. |
 
 ### cloudPcOnPremisesConnectionHealthCheckErrorType values
 
@@ -61,6 +63,7 @@ The result of a Cloud PC Azure network connection health check.
 |endpointConnectivityCheckIntuneUrlNotAllowListed|During provisioning, one or more required Intune URLs couldn't be contacted. Make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |endpointConnectivityCheckAzureADUrlNotAllowListed|During provisioning, one or more required Microsoft Entra URLs couldn't be contacted. Make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |endpointConnectivityCheckLocaleUrlNotAllowListed|During provisioning, one or more language pack URLs couldn't be contacted. If you choose a non-English (United States) **Language & Region** setting in a provisioning policy, the language pack might not be successfully installed. Make sure that all of the required URLs are allowed through your firewalls and proxies. For a list or required URLs, see [Azure network connections health checks](https://go.microsoft.com/fwlink/?linkid=2156206).|
+|endpointConnectivityCheckVMAgentEndPointCommunicationError|The VM extension provisioning failed because the VM-agent-related endpoints were unreachable. Review the onboarding policy settings to ensure the endpoints are reachable for joining the domain.|
 |endpointConnectivityCheckUnknownError|During provisioning, one or more required URLs couldn't be contacted. Make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |azureAdDeviceSyncCheckDeviceNotFound|The Cloud PC object can't be found in Microsoft Entra ID. Make sure that Microsoft Entra Connect works and syncs frequently so that the Cloud PC objects are synced to Microsoft Entra ID. Microsoft Entra device sync must be enabled and synced within the last 60 minutes.|
 |azureAdDeviceSyncCheckLongSyncCircle|The check whether the Cloud PC object has been synced to Microsoft Entra ID has timed out. Make sure that Microsoft Entra Connect works and syncs frequently so that the Cloud PC objects are synced to Microsoft Entra ID. Microsoft Entra device sync must be enabled and synced within the last 60 minutes.|
@@ -117,7 +120,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck"
@@ -127,13 +130,14 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+  "additionalDetail": "String",
+  "additionalDetails": "String",
+  "correlationId": "String",
   "displayName": "String",
-  "status": "String",
-  "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "errorType": "String",
   "recommendedAction": "String",
-  "additionalDetails": "String",
-  "correlationId": "String"
+  "startDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```

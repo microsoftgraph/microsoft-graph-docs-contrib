@@ -3,8 +3,9 @@ title: "Delete siteSource"
 description: "Delete a siteSource object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Delete siteSource

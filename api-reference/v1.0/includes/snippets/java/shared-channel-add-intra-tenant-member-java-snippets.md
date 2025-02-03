@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AadUserConversationMember conversationMember = new AadUserConversationMember();
-LinkedList<String> rolesList = new LinkedList<String>();
-conversationMember.roles = rolesList;
-conversationMember.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4"));
+conversationMember.setOdataType("#microsoft.graph.aadUserConversationMember");
+LinkedList<String> roles = new LinkedList<String>();
+conversationMember.setRoles(roles);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("user@odata.bind", "https://graph.microsoft.com/v1.0/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4");
+conversationMember.setAdditionalData(additionalData);
+ConversationMember result = graphClient.teams().byTeamId("{team-id}").channels().byChannelId("{channel-id}").members().post(conversationMember);
 
-graphClient.teams("6a720ba5-7373-463b-bc9f-4cd04b5c6742").channels("19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2").members()
-	.buildRequest()
-	.post(conversationMember);
 
 ```

@@ -3,8 +3,9 @@ title: "educationModule: pin"
 description: "Pin an educationModule in the class work list."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # educationModule: pin
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Pin an [educationModule](../resources/educationmodule.md) in the class work list. This action sets the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
+Pin an [educationModule](../resources/educationmodule.md) in the class work list. This action sets the **isPinned** property to `true` for an [educationModule](../resources/educationmodule.md).
 
 Only teachers can perform this action and only one module at a time can be pinned in the class work list.
 
@@ -40,13 +41,12 @@ POST /education/classes/{id}/modules/{id}/pin
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 Ok` response code and an [educationModule](../resources/educationmodule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationModule](../resources/educationmodule.md) object in the response body.
 
 ## Example
-The following example shows how to call this API.
 
 ### Request
-Here's an example  of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +94,7 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 ---
 
 ### Response
-Here's an example  of a response.
+The following example shows the request.
 
 <!-- {
   "blockType": "response",
@@ -103,7 +103,7 @@ Here's an example  of a response.
 } -->
 
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 200 OK
 
 {
     "@odata.context": "https://graph.microsoft.com/$metadata#educationModule",

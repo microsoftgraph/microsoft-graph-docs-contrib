@@ -3,8 +3,9 @@ title: "Create program (deprecated)"
 description: "In the Microsoft Entra access reviews feature, create a new program object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
+ms.date: 04/05/2024
 ---
 
 # Create program (deprecated)
@@ -123,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|

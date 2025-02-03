@@ -3,8 +3,9 @@ title: "Create Custom Task Extension"
 description: "Create a new customTaskExtension object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create customTaskExtensions
@@ -69,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

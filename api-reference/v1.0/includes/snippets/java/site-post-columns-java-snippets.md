@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ColumnDefinition columnDefinition = new ColumnDefinition();
-columnDefinition.description = "test";
-columnDefinition.enforceUniqueValues = false;
-columnDefinition.hidden = false;
-columnDefinition.indexed = false;
-columnDefinition.name = "Title";
+columnDefinition.setDescription("test");
+columnDefinition.setEnforceUniqueValues(false);
+columnDefinition.setHidden(false);
+columnDefinition.setIndexed(false);
+columnDefinition.setName("Title");
 TextColumn text = new TextColumn();
-text.allowMultipleLines = false;
-text.appendChangesToExistingText = false;
-text.linesForEditing = 0;
-text.maxLength = 255;
-columnDefinition.text = text;
+text.setAllowMultipleLines(false);
+text.setAppendChangesToExistingText(false);
+text.setLinesForEditing(0);
+text.setMaxLength(255);
+columnDefinition.setText(text);
+ColumnDefinition result = graphClient.sites().bySiteId("{site-id}").columns().post(columnDefinition);
 
-graphClient.sites("{site-id}").columns()
-	.buildRequest()
-	.post(columnDefinition);
 
 ```

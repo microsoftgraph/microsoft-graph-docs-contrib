@@ -3,8 +3,9 @@ title: "Get servicePrincipalRiskDetection"
 description: "Read the properties and relationships of a servicePrincipalRiskDetection object."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Get servicePrincipalRiskDetection
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipalriskdetection_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipalriskdetection-get-permissions.md)]
 
-[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
+[!INCLUDE [rbac-identity-protection-apis-read](../includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 

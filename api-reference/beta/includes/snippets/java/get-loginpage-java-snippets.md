@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LoginPage loginPage = graphClient.security().attackSimulation().loginPages("2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+LoginPage result = graphClient.security().attackSimulation().loginPages().byLoginPageId("{loginPage-id}").get();
+
 
 ```

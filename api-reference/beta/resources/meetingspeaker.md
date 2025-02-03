@@ -3,7 +3,7 @@ title: "meetingSpeaker resource type"
 description: "Represents the speaker of an online meeting that has registration enabled."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.date: 09/30/2021
 doc_type: resourcePageType
 ---
@@ -22,6 +22,9 @@ Represents the speaker of an online meeting that has registration enabled.
 | :------- | :--- | :---------- |
 | bio | String | Bio of the speaker. |
 | displayName | String | Display name of the speaker. |
+
+## Relationships
+None.
 
 ## JSON representation
 

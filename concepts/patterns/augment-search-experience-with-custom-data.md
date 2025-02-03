@@ -2,12 +2,13 @@
 title: "Use Microsoft Graph to augment Microsoft Search with custom data"
 description: "Learn about the Microsoft Graph integration pattern for bringing custom data into search experiences."
 author: "OlgaPodo"
-ms.localizationpriority: low
+ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 # Use Microsoft Graph to augment Microsoft Search with custom data
 
-This article describes a common Microsoft Graph integration pattern for a business scenario that requires adding custom enterprise data to the Microsoft Search and Microsoft Copilot for Microsoft 365 experiences. The custom data is ingested into unstructured Microsoft 365 storage and added to various search indexes.
+This article describes a common Microsoft Graph integration pattern for a business scenario that requires adding custom enterprise data to the Microsoft Search and Microsoft 365 Copilot experiences. The custom data is ingested into unstructured Microsoft 365 storage and added to various search indexes.
 
 This non-interactive scenario has the following requirements:
 
@@ -41,7 +42,7 @@ The following considerations support the use of this integration pattern:
 
 - **Solution complexity**: This solution can use connectors built by independent software vendors (ISVs), but if it accesses Microsoft Graph SDKs or Microsoft Graph APIs, it needs to serialize custom data into the required format for connectors. This provides flexibility but also increases the complexity. This solution can therefore range from low to medium complexity.
 
-## See also
+## Related content
 
-- [Microsoft Graph connectors overview](./../connecting-external-content-connectors-overview.md)
-- [Training: Build your first Microsoft Graph Data Connect application](/training/modules/data-connect-quickstart)
+- [Microsoft Graph connectors overview](/graph/connecting-external-content-connectors-overview)
+- [Training: Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart)

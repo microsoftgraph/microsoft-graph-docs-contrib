@@ -3,7 +3,8 @@ title: "Error codes for workbooks and charts APIs"
 description: "Lists and describes the error codes that are returned by the workbooks and charts APIs in Microsoft Graph when a request sent through the API fails."
 author: "grangeryy"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
+ms.date: 11/07/2024
 ---
 
 # Error codes for workbooks and charts APIs
@@ -70,6 +71,6 @@ For examples of optional error codes within the first-level of nested **innerErr
   "tocPath": ""
 } -->
 
-## See also
+## Related content
 
 - [Use the Excel REST API](/graph/api/resources/excel)

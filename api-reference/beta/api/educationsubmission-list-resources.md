@@ -3,8 +3,9 @@ title: "List submission resources"
 description: "List the resources associated with a submission."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List submission resources

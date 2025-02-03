@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\Planner\PlannerRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\PlannerUser;
+use Microsoft\Graph\Beta\Generated\Models\PlannerFavoritePlanReferenceCollection;
+use Microsoft\Graph\Beta\Generated\Models\PlannerFavoritePlanReference;
+use Microsoft\Graph\Beta\Generated\Models\PlannerRecentPlanReferenceCollection;
+use Microsoft\Graph\Beta\Generated\Models\PlannerRecentPlanReference;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

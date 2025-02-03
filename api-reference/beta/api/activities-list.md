@@ -4,7 +4,8 @@ title: List activities
 description: "List the recent activities that took place on an item or under a hierarchy."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: files
+ms.subservice: onedrive
+ms.date: 04/04/2024
 ---
 # List activities (preview)
 

@@ -3,8 +3,9 @@ title: "Delete browserSiteList"
 description: "Delete a browserSiteList object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete browserSiteList
@@ -45,7 +46,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

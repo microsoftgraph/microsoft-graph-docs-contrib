@@ -3,8 +3,9 @@ title: "subjectRightsRequest: getFinalAttachment"
 description: "Get the final attachment for a subject rights request."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # subjectRightsRequest: getFinalAttachment

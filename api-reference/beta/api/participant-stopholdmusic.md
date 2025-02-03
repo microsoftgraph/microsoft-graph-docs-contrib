@@ -3,8 +3,9 @@ title: "participant: stopHoldMusic"
 description: "Reincorporate a participant previously put on hold to the call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # participant: stopHoldMusic
@@ -49,7 +50,7 @@ If successful, this method returns a `202 Accepted` response code and a [stopHol
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { 

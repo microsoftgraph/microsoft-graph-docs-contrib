@@ -3,8 +3,9 @@ title: "Create cloudPcDeviceImage"
 description: "Upload a custom OS image that you can later provision on Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/27/2024
 ---
 
 # Create cloudPcDeviceImage
@@ -145,6 +146,7 @@ Content-Type: application/json
   "statusDetails": null,
   "errorCode": null,
   "osStatus": null,
-  "expirationDate": null
+  "expirationDate": null,
+  "osVersionNumber": null
 }
 ```

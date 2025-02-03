@@ -3,8 +3,9 @@ title: "personAnnotation resource type"
 description: "personAnnotation resource type"
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # personAnnotation resource type
@@ -18,11 +19,11 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List notes](../api/profile-list-notes.md)|[personAnnotation](../resources/personannotation.md) collection|Get the personAnnotation resources from the notes navigation property.|
-|[Create personAnnotation](../api/profile-post-notes.md)|[personAnnotation](../resources/personannotation.md)|Create a new personAnnotation object.|
-|[Get personAnnotation](../api/personannotation-get.md)|[personAnnotation](../resources/personannotation.md)|Read the properties and relationships of a [personAnnotation](../resources/personannotation.md) object.|
-|[Update personAnnotation](../api/personannotation-update.md)|[personAnnotation](../resources/personannotation.md)|Update the properties of a [personAnnotation](../resources/personannotation.md) object.|
-|[Delete personAnnotation](../api/personannotation-delete.md)|None|Deletes a [personAnnotation](../resources/personannotation.md) object.|
+|[List](../api/profile-list-notes.md)|[personAnnotation](../resources/personannotation.md) collection|Get the personAnnotation resources from the notes navigation property.|
+|[Create](../api/profile-post-notes.md)|[personAnnotation](../resources/personannotation.md)|Create a new personAnnotation object.|
+|[Get](../api/personannotation-get.md)|[personAnnotation](../resources/personannotation.md)|Read the properties and relationships of a [personAnnotation](../resources/personannotation.md) object.|
+|[Update](../api/personannotation-update.md)|[personAnnotation](../resources/personannotation.md)|Update the properties of a [personAnnotation](../resources/personannotation.md) object.|
+|[Delete](../api/personannotation-delete.md)|None|Deletes a [personAnnotation](../resources/personannotation.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,7 +43,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

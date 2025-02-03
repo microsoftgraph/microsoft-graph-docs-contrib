@@ -3,8 +3,9 @@ title: "Get agreementFile"
 description: "Retrieve the details of the default file for an agreement, including the language and version information. "
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get agreementFile
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "agreementfile_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agreementfile-get-permissions.md)]
+
+[!INCLUDE [rbac-tou-security-reader-apis](../includes/rbac-for-apis/rbac-tou-security-reader-apis.md)]
 
 ## HTTP request
 

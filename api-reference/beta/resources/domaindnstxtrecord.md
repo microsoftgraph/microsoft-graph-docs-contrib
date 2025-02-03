@@ -1,10 +1,11 @@
 ---
 title: "domainDnsTxtRecord resource type"
 description: "Represents a TXT record added to the DNS zone file of a particular domain in the tenant."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 05/09/2024
 ---
 
 # domainDnsTxtRecord resource type
@@ -34,7 +35,7 @@ None
 
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -46,7 +47,6 @@ Here's a JSON representation of the resource.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

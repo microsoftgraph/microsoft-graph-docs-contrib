@@ -2,16 +2,18 @@
 title: "List groups"
 description: "List all the groups available in an organization, excluding dynamic distribution groups."
 ms.localizationpriority: high
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # List groups
 
 Namespace: microsoft.graph
 
-List all the groups available in an organization, excluding dynamic distribution groups. To retrieve dynamic distribution groups, [use the Exchange admin center](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
+List all the [groups](../resources/group.md) available in an organization, excluding dynamic distribution groups. To retrieve dynamic distribution groups, [use the Exchange admin center](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query.
 
@@ -58,6 +60,16 @@ Extension properties also support query parameters as follows:
 
 For more information on OData query options, see [OData query parameters](/graph/query-parameters). For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
+### Filter by group types
+
+| Group type                     | API request |
+|--------------------------------|-------------|
+| Microsoft 365 (unified) groups | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DgroupTypes%2Fany(c%3Ac%2Beq%2B'Unified')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) `/groups?$filter=groupTypes/any(c:c+eq+'Unified')`            |
+| Security groups                | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DmailEnabled%2Beq%2Bfalse%26securityEnabled%2Beq%2Btrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)  `/groups?$filter=mailEnabled eq false&securityEnabled eq true`           |
+| Mail-enabled security groups   | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%2BgroupTypes%2Fany(c%3Ac%2Beq%2B'Unified')%2Band%2BmailEnabled%2Beq%2Btrue%2Band%2BsecurityEnabled%2Beq%2Btrue%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)  `/groups?$filter=NOT groupTypes/any(c:c eq 'Unified') and mailEnabled eq true and securityEnabled eq true&$count=true` <sup> ** </sup>          |
+| Distribution groups            | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%2BgroupTypes%2Fany(c%3Ac%2Beq%2B'Unified')%2Band%2BmailEnabled%2Beq%2Btrue%2Band%2BsecurityEnabled%2Beq%2Bfalse%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `/groups?$filter=NOT groupTypes/any(c:c eq 'Unified') and mailEnabled eq true and securityEnabled eq false&$count=true` <sup> ** </sup>           |
+
+** : This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 
 ## Request headers
 
@@ -170,7 +182,7 @@ Content-type: application/json
       "preferredDataLocation": "CAN",
       "preferredLanguage": null,
       "proxyAddresses": [
-        "smtp:golfassist@contoso.onmicrosoft.com",
+        "smtp:golfassist@contoso.com",
         "SMTP:golfassist@contoso.com"
       ],
       "renewedDateTime": "2018-12-22T02:21:05Z",
@@ -202,7 +214,7 @@ Content-type: application/json
       "preferredDataLocation": "CAN",
       "preferredLanguage": null,
       "proxyAddresses": [
-        "smtp:golftalk@contoso.onmicrosoft.com",
+        "smtp:golftalk@contoso.com",
         "SMTP:golftalk@contoso.com"
       ],
       "renewedDateTime": "2018-11-19T20:29:40Z",
@@ -218,11 +230,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a filtered list of groups including the count of returned objects
+### Example 2: Get a filtered list of groups
 
-The following example shows a request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
-
-> **Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
+This request that filters against the **hasMembersWithLicenseErrors** property doesn't support retrieving the count of returned objects.
 
 #### Request
 
@@ -234,8 +244,7 @@ The following example shows a request. This request requires the **ConsistencyLe
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups?$count=true&$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
-ConsistencyLevel: eventual
+GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
 
 # [C#](#tab/csharp)
@@ -289,7 +298,6 @@ Content-type: application/json
 
 {
    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
-   "@odata.count":2,
    "value":[
       {
          "id":"11111111-2222-3333-4444-555555555555",
@@ -452,7 +460,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-video-count-search-notin-adb2c-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -513,7 +521,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request that filters by the **membershipRuleProcessingState** to retrieve dynamic groups. You may also filter by the **groupTypes** properties (that is, `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request uses the `not` operator of the `$filter` query parameter. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+The following example shows a request that filters by the **membershipRuleProcessingState** to retrieve dynamic groups. You may also filter by the **groupTypes** properties (that is, `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request uses the `not` operator of the `$filter` query parameter. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 > **Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 

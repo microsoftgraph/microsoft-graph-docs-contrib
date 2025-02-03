@@ -55,7 +55,14 @@ const tenantAppManagementPolicy = {
                 ],
                 maxLifetime: null
             }
-        ]
+        ],
+        identifierUris: {
+            nonDefaultUriAddition: {
+                restrictForAppsCreatedAfterDateTime: '2024-01-01T10:37:00Z',
+                excludeAppsReceivingV2Tokens: true,
+                excludeSaml: true
+            }
+        }
     }
 };
 

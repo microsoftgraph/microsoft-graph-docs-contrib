@@ -3,7 +3,8 @@ title: "Organize Outlook messages using the Outlook mail API"
 description: "Organize your Outlook messages the way you like them. Conveniently filter, search, or sort messages in your entire mailbox or in specific folders."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Organize Outlook messages

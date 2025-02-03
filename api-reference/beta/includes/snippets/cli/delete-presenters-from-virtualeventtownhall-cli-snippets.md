@@ -1,0 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```bash
+
+
+mgc-beta solutions virtual-events townhalls presenters delete --virtual-event-townhall-id {virtualEventTownhall-id} --virtual-event-presenter-id {virtualEventPresenter-id}
+
+```

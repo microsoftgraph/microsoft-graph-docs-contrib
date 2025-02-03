@@ -3,8 +3,9 @@ title: "Get riskDetection"
 description: "Retrieve the properties of a **riskdetection** object."
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 # Get riskDetection
 
@@ -25,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskdetection_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskdetection-get-permissions.md)]
 
-[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
+[!INCLUDE [rbac-identity-protection-apis-read](../includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [riskDetection
 ## Examples
 ### Example 1: Get risk detections
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +100,7 @@ GET https://graph.microsoft.com/beta/riskDetections
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,7 +140,7 @@ Content-type: application/json
 ```
 ### Example 2: Get risk detections for specific user
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -186,7 +187,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

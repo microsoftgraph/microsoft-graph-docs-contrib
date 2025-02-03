@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Group group = new Group();
-group.bellowscollege_courses = null;
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("bellowscollege_courses", null);
+group.setAdditionalData(additionalData);
+Group result = graphClient.groups().byGroupId("{group-id}").patch(group);
 
-graphClient.groups("8fb45944-4085-449f-b95d-f7dd74a1b081")
-	.buildRequest()
-	.patch(group);
 
 ```

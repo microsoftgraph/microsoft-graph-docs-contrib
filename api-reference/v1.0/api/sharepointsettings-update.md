@@ -3,8 +3,9 @@ title: "Update sharepointSettings"
 description: "Update one or more tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # Update settings
@@ -20,9 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "sharepointsettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointsettings-update-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to one of the following admin roles. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles):
-* Global Administrator
-* SharePoint Administrator
+When calling on behalf of a user, the user needs to belong to the SharePoint Administrator role. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## HTTP request
 
@@ -83,7 +82,7 @@ If successful, this method returns a `200 OK` response code and an updated [sett
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

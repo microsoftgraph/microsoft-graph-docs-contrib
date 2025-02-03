@@ -20,7 +20,7 @@ var requestBody = new ReplyPostRequestBody
 			{
 				EmailAddress = new EmailAddress
 				{
-					Address = "samanthab@contoso.onmicrosoft.com",
+					Address = "samanthab@contoso.com",
 					Name = "Samantha Booth",
 				},
 			},
@@ -28,7 +28,7 @@ var requestBody = new ReplyPostRequestBody
 			{
 				EmailAddress = new EmailAddress
 				{
-					Address = "randiw@contoso.onmicrosoft.com",
+					Address = "randiw@contoso.com",
 					Name = "Randi Welch",
 				},
 			},

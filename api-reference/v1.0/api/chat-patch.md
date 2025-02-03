@@ -3,16 +3,15 @@ title: "Update chat"
 description: "Update the properties of a chat object."
 author: "anandjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/06/2024
 ---
 
 # Update chat
 Namespace: microsoft.graph
 
 Update the properties of a [chat](../resources/chat.md) object.
-
-[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

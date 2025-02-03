@@ -4,8 +4,9 @@ description: "Read the details of the Temporary Access Pass policy for the Micro
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get temporaryAccessPassAuthenticationMethodConfiguration

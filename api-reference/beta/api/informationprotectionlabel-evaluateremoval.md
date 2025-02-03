@@ -3,8 +3,9 @@ title: "informationProtectionLabel: evaluateRemoval (deprecated)"
 description: "Evaluate which label to remove and how to remove it based on existing content info. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # informationProtectionLabel: evaluateRemoval (deprecated)

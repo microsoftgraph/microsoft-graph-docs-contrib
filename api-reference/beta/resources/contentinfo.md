@@ -3,8 +3,9 @@ title: "contentInfo resource type (deprecated)"
 description: "Represents the current state of some information that is to be labeled. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # contentInfo resource type (deprecated)
@@ -28,7 +29,7 @@ Represents the current state of some information that is to be labeled. **conten
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

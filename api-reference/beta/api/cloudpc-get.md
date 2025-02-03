@@ -3,8 +3,9 @@ title: "Get cloudPC"
 description: "Read the properties and relationships of a specific cloudPC object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 07/30/2024
 ---
 
 # Get cloudPC
@@ -46,7 +47,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -68,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -118,7 +119,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -159,10 +160,10 @@ Content-Type: application/json
         }
       ]
     },
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-    "provisioningType": "shared",
+    "provisioningType": "sharedByUser",
     "diskEncryptionState": "notAvailable"
 }
 ```
@@ -171,8 +172,7 @@ Content-Type: application/json
 
 #### Request
 
-Here's an example of a request.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -182,7 +182,7 @@ Here's an example of a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType
 ```
 
 # [C#](#tab/csharp)
@@ -202,7 +202,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpc-selected-properties-javascript-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -221,7 +221,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -264,7 +264,10 @@ Content-Type: application/json
           "additionalDetails": "SessionHost unhealthy: SessionHost is not joined to a domain"
         }
       ]
-    }
+    },
+    "allotmentDisplayName": null,
+    "deviceRegionName": "eastus2",
+    "productType": null
 }
 ```
 
@@ -272,7 +275,7 @@ Content-Type: application/json
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -322,7 +325,7 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac1
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -363,10 +366,10 @@ Content-Type: application/json
         }
       ]
     },
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-    "provisioningType": "shared",
+    "provisioningType": "dedicated",
     "diskEncryptionState": "notAvailable"
 }
 ```

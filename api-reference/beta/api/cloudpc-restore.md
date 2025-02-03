@@ -3,8 +3,9 @@ title: "cloudPC: restore"
 description: "Restore a specific Cloud PC."
 author: "xumzheng"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # cloudPC: restore
@@ -60,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

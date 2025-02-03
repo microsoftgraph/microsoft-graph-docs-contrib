@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkbookTable workbookTable = new WorkbookTable();
-workbookTable.name = "name-value";
-workbookTable.showHeaders = true;
-workbookTable.showTotals = true;
-workbookTable.style = "style-value";
+workbookTable.setName("name-value");
+workbookTable.setShowHeaders(true);
+workbookTable.setShowTotals(true);
+workbookTable.setStyle("style-value");
+WorkbookTable result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().tables().byWorkbookTableId("{workbookTable-id}").patch(workbookTable);
 
-graphClient.me().drive().items("{id}").workbook().tables("{id|name}")
-	.buildRequest()
-	.patch(workbookTable);
 
 ```

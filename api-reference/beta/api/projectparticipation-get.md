@@ -3,8 +3,9 @@ title: "Get projectParticipation"
 description: "Retrieve the properties and relationships of a projectParticipation object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 07/11/2024
 ---
 
 # Get projectParticipation
@@ -55,7 +56,7 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +104,7 @@ GET https://graph.microsoft.com/beta/me/profile/projects/{id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -157,6 +158,7 @@ Content-type: application/json
       "displayName": "Adventureworks Inc.",
       "pronunciation": null,
       "department": "Consulting",
+      "companyCode": "C-100",
       "officeLocation": null,
       "address": null,
       "webUrl": "https://adventureworks.com"

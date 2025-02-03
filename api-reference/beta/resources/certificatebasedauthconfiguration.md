@@ -2,9 +2,11 @@
 title: "certificateBasedAuthConfiguration resource type"
 description: "Represents a collection of certificate authorities."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "identity-and-sign-in"
+author: "vimrang"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.keywords: [ CBA ]
+ms.date: 11/07/2024
 ---
 
 # certificateBasedAuthConfiguration resource type
@@ -24,14 +26,17 @@ Certificate-based authentication configuration is provided through a collection 
 
 Learn more about [certificate-based authentication in Microsoft Entra ID](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 
+>[!NOTE]
+>Administrators are highly recommended to configure the new scalable platform for [PKI (Public Key Infrastructure) based store](certificatebasedauthpki.md). This new PKI based CA store has higher limits for the number of CAs that supports up to 250CAs as well as the size of up to 8KB for each CA file and also supports new functionality such as issuer hints.  
+
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-list.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | List the properties of the **certificateBasedAuthConfiguration** collection. |
-| [Get certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-get.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Read the properties of a **certificateBasedAuthConfiguration** object. |
-| [Create certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Create a new **certificateBasedAuthConfiguration** object. |
-| [Delete certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | None | Delete a **certificateBasedAuthConfiguration** object. |
+| [List](../api/certificatebasedauthconfiguration-list.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | List the properties of the **certificateBasedAuthConfiguration** collection. |
+| [Get](../api/certificatebasedauthconfiguration-get.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Read the properties of a **certificateBasedAuthConfiguration** object. |
+| [Create](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Create a new **certificateBasedAuthConfiguration** object. |
+| [Delete](../api/certificatebasedauthconfiguration-delete.md) | None | Delete a **certificateBasedAuthConfiguration** object. |
 
 >[!NOTE]
 >Updating cerficateBasedAuthConfiguration is not supported. To change a cerficateBasedAuthConfiguration, first delete and then create a new cerficateBasedAuthConfiguration.
@@ -49,7 +54,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

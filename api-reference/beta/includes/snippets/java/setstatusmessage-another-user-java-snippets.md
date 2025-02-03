@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.users.item.presence.setstatusmessage.SetStatusMessagePostRequestBody setStatusMessagePostRequestBody = new com.microsoft.graph.beta.users.item.presence.setstatusmessage.SetStatusMessagePostRequestBody();
 PresenceStatusMessage statusMessage = new PresenceStatusMessage();
 ItemBody message = new ItemBody();
-message.content = "Hey I am available now";
-message.contentType = BodyType.TEXT;
-statusMessage.message = message;
+message.setContent("Hey I am available now");
+message.setContentType(BodyType.Text);
+statusMessage.setMessage(message);
+setStatusMessagePostRequestBody.setStatusMessage(statusMessage);
+graphClient.users().byUserId("{user-id}").presence().setStatusMessage().post(setStatusMessagePostRequestBody);
 
-graphClient.users("fa8bf3dc-eca7-46b7-bad1-db199b62afc3").presence()
-	.setStatusMessage(PresenceSetStatusMessageParameterSet
-		.newBuilder()
-		.withStatusMessage(statusMessage)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

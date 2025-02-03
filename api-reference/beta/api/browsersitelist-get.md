@@ -3,8 +3,9 @@ title: "Get browserSiteList"
 description: "Get a browserSiteList that contains browserSite and browserSharedCookie resources."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get browserSiteList
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [browserSiteLi
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,8 +3,9 @@ title: "microsoftTrainingAssignmentMapping resource type"
 description: "Represents a Microsoft training assignment mapping."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # microsoftTrainingAssignmentMapping resource type

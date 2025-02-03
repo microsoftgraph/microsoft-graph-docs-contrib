@@ -3,8 +3,9 @@ title: "assignedPlan resource type"
 description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."
 ms.localizationpriority: medium
 author: "frank-masuelli"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # assignedPlan resource type
@@ -39,7 +40,7 @@ The following table describes the possible statuses for the **capabilityStatus**
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

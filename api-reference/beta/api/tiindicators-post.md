@@ -3,8 +3,9 @@ title: "Create threat intelligence indicator"
 description: "Create a new tiIndicator."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Create threat intelligence indicator
@@ -36,7 +37,7 @@ POST /security/tiIndicators
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

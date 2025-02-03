@@ -3,8 +3,9 @@ title: "Update educationAssignmentDefaults"
 description: "Update the properties of an educationAssignmentDefaults object."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update educationAssignmentDefaults
@@ -127,6 +128,6 @@ Content-Type: application/json
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```
-## See also
+## Related content
 
 * [Specify the default channel for education assignment notifications](/graph/education-build-notificationchannelurl)

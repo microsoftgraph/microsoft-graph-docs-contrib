@@ -3,8 +3,9 @@ title: "List ediscoveryCustodian"
 description: "Get a list of the ediscovery custodian object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # List ediscoveryCustodian
@@ -118,7 +119,7 @@ Content-Type: application/json
             "releasedDateTime": null,
             "id": "0053a61a3b6c42738f7606791716a22a",
             "displayName": "Alex Wilber",
-            "email": "AlexW@M365x809305.OnMicrosoft.com",
+            "email": "AlexW@contoso.com",
             "acknowledgedDateTime": "0001-01-01T00:00:00Z"
         }
     ]

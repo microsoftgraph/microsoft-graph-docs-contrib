@@ -4,26 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.applications.item.addkey.AddKeyPostRequestBody addKeyPostRequestBody = new com.microsoft.graph.applications.item.addkey.AddKeyPostRequestBody();
 KeyCredential keyCredential = new KeyCredential();
-keyCredential.type = "X509CertAndPassword";
-keyCredential.usage = "Sign";
-keyCredential.key = Base64.getDecoder().decode("MIIDYDCCAki...");
-
+keyCredential.setType("X509CertAndPassword");
+keyCredential.setUsage("Sign");
+byte[] key = Base64.getDecoder().decode("MIIDYDCCAki...");
+keyCredential.setKey(key);
+addKeyPostRequestBody.setKeyCredential(keyCredential);
 PasswordCredential passwordCredential = new PasswordCredential();
-passwordCredential.secretText = "MKTr0w1...";
+passwordCredential.setSecretText("MKTr0w1...");
+addKeyPostRequestBody.setPasswordCredential(passwordCredential);
+addKeyPostRequestBody.setProof("eyJ0eXAiOiJ...");
+KeyCredential result = graphClient.applications().byApplicationId("{application-id}").addKey().post(addKeyPostRequestBody);
 
-String proof = "eyJ0eXAiOiJ...";
-
-graphClient.applications("{id}")
-	.addKey(ApplicationAddKeyParameterSet
-		.newBuilder()
-		.withKeyCredential(keyCredential)
-		.withPasswordCredential(passwordCredential)
-		.withProof(proof)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

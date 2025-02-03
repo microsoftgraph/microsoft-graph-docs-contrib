@@ -3,8 +3,9 @@ title: "Update pronounsSettings"
 description: "Update the properties of a pronounsSettings object in an organization."
 author: "aymen-ms"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Update pronounsSettings

@@ -2,9 +2,10 @@
 title: "enrollmentState enum type"
 description: "Intune Shared Enrollmentstate Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # enrollmentState enum type

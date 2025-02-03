@@ -21,52 +21,52 @@ $params = @{
 			durationInDays = 2
 			recommendationsEnabled = $false
 			decisionsThatWillMoveToNextStage = @(
-				"NotReviewed"
-				"Approve"
-			)
-			reviewers = @(
-				@{
-					query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
-					queryType = "MicrosoftGraph"
-				}
-			)
-		}
+			"NotReviewed"
+		"Approve"
+	)
+	reviewers = @(
 		@{
-			stageId = "2"
-			dependsOn = @(
-				"1"
-			)
-			durationInDays = 2
-			recommendationsEnabled = $true
-			reviewers = @(
-				@{
-					query = "./manager"
-					queryType = "MicrosoftGraph"
-					queryRoot = "decisions"
-				}
-			)
-			fallbackReviewers = @(
-				@{
-					query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
-					queryType = "MicrosoftGraph"
-				}
-			)
+			query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+			queryType = "MicrosoftGraph"
 		}
 	)
-	settings = @{
-		instanceDurationInDays = 4
-		recurrence = @{
-			pattern = @{
-				type = "weekly"
-				interval = 1
-			}
-			range = @{
-				type = "noEnd"
-				startDate = "2020-09-08T12:02:30.667Z"
-			}
-		}
-		decisionHistoriesForReviewersEnabled = $true
+}
+@{
+	stageId = "2"
+	dependsOn = @(
+	"1"
+)
+durationInDays = 2
+recommendationsEnabled = $true
+reviewers = @(
+	@{
+		query = "./manager"
+		queryType = "MicrosoftGraph"
+		queryRoot = "decisions"
 	}
+)
+fallbackReviewers = @(
+	@{
+		query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+		queryType = "MicrosoftGraph"
+	}
+)
+}
+)
+settings = @{
+instanceDurationInDays = 4
+recurrence = @{
+pattern = @{
+	type = "weekly"
+	interval = 1
+}
+range = @{
+	type = "noEnd"
+	startDate = "2020-09-08T12:02:30.667Z"
+}
+}
+decisionHistoriesForReviewersEnabled = $true
+}
 }
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params

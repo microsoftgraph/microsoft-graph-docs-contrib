@@ -3,8 +3,9 @@ title: "accessPackageTextInputQuestion resource type"
 description: "Child of accessPackageQuestion that has text input as the question's answer format."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # accessPackageTextInputQuestion resource type
@@ -31,7 +32,7 @@ Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageTextInputQuestion"

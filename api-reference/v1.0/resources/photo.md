@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: photo
 ms.localizationpriority: medium
 description: "The photo resource provides photo and camera properties, for example, EXIF metadata, on a driveItem."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 # photo resource type

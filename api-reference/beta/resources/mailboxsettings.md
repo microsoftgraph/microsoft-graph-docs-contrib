@@ -3,8 +3,9 @@ title: "mailboxSettings resource type"
 description: "Settings for the primary mailbox of the signed-in user."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # mailboxSettings resource type
@@ -42,9 +43,12 @@ You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update
 | others             | A mailbox was found but the user purpose is different from the ones specified in the previous scenarios. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                                        |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

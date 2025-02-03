@@ -3,8 +3,9 @@ title: "Create workPosition"
 description: "Use this API to create a new workPosition."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 07/15/2024
 ---
 
 # Create workPosition
@@ -178,6 +179,7 @@ Content-type: application/json
       "displayName": "Adventureworks Ltd.",
       "pronunciation": null,
       "department": "Consulting",
+      "companyCode": null,
       "officeLocation": "AW23/344",
       "address": {
         "type": "business",

@@ -3,8 +3,9 @@ title: "List deviceLocalCredentialInfo"
 description: "Get a list of deviceLocalCredentialInfo and their properties, excluding the credentials property."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List deviceLocalCredentialInfo
@@ -20,7 +21,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "directory_list_devicelocalcredentials" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directory-list-devicelocalcredentials-permissions.md)]
 
-[!INCLUDE [rbac-device-local-credentials-basic-apis-read](../includes/rbac-for-apis/rbac-device-local-credentials-basic-apis-read.md)]
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Cloud Device Administrator
+> - Helpdesk Administrator
+> - Intune Service Administrator
+> - Security Administrator
+> - Security Reader
+> - Global Reader
 
 ## HTTP request
 To get a list of **deviceLocalCredentialInfo** objects within the tenant:
@@ -46,7 +54,7 @@ The response might also contain an `odata.nextLink`, which you can use to page t
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,10 +64,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "devicelocalcredentialinfo_list"
 }
 -->
 ``` http
@@ -70,7 +79,7 @@ ocp-client-version: "1.2"
 ```
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

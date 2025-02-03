@@ -2,9 +2,10 @@
 title: "List windows10XCertificateProfiles"
 description: "List properties and relationships of the windows10XCertificateProfile objects."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List windows10XCertificateProfiles
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [windows10XCertificateProfile](../resources/intune-rapolicy-windows10xcertificateprofile.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 474
+Content-Length: 641
 
 {
   "value": [
@@ -74,6 +77,12 @@ Content-Length: 474
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
+      ],
+      "serverApplicabilityRules": [
+        {
+          "@odata.type": "microsoft.graph.applicabilityRule",
+          "filterType": "include"
+        }
       ]
     }
   ]

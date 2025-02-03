@@ -3,8 +3,9 @@ title: "customExtensionAuthenticationConfiguration resource type"
 description: "Abstract base type that exposes the configuration for the **authenticationConfiguration** property of the derived types that inherit from the customCalloutExtension abstract type"
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # customExtensionAuthenticationConfiguration resource type
@@ -25,9 +26,13 @@ The type of token authentication used depends on the token security. If the toke
 
 None.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration",

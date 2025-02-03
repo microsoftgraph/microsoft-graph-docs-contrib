@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.education.classes.item.assignments.item.submissions.submissions_request_builder import SubmissionsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = SubmissionsRequestBuilder.SubmissionsRequestBuilderGetQueryParameters(
 		filter = "id eq 'ff2c7fe6-91cd-57a4-aa62-5b9c6b73222a'",
 )
 
-request_configuration = SubmissionsRequestBuilder.SubmissionsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

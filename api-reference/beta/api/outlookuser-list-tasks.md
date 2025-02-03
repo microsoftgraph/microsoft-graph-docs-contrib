@@ -3,8 +3,9 @@ title: "List tasks"
 description: "Get all the Outlook tasks in the user's mailbox."
 ms.localizationpriority: medium
 author: "mashriv"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List tasks (deprecated)
@@ -53,7 +54,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [outlookTask](../resources/outlooktask.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +100,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 ---
 
 ##### Response
-Here is an example of the response. By default, the date-time properties in the response are in UTC.
+The following example shows the response. By default, the date-time properties in the response are in UTC.
 
 Note: The response object shown here might be shortened for readability.
 <!-- {

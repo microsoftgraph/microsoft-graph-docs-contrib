@@ -4,10 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph import GraphServiceClient
+from msgraph.generated.models.identity_governance.custom_task_extension import CustomTaskExtension
+from msgraph.generated.models.logic_app_trigger_endpoint_configuration import LogicAppTriggerEndpointConfiguration
+from msgraph.generated.models.azure_ad_pop_token_authentication import AzureAdPopTokenAuthentication
+from msgraph.generated.models.custom_extension_client_configuration import CustomExtensionClientConfiguration
+from msgraph.generated.models.identity_governance.custom_task_extension_callback_configuration import CustomTaskExtensionCallbackConfiguration
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CustomTaskExtension(
 	display_name = "Grant manager access to mailbox and OneDrive",
 	description = "Grant manager access to mailbox and OneDrive",
@@ -22,10 +26,8 @@ request_body = CustomTaskExtension(
 	),
 	client_configuration = CustomExtensionClientConfiguration(
 		odata_type = "#microsoft.graph.customExtensionClientConfiguration",
+		maximum_retries = 1,
 		timeout_in_milliseconds = 1000,
-		additional_data = {
-				"maximum_retries" : 1,
-		}
 	),
 	callback_configuration = CustomTaskExtensionCallbackConfiguration(
 		odata_type = "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",

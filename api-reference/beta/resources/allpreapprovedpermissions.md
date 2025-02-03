@@ -3,8 +3,9 @@ title: "allPreApprovedPermissions resource type"
 description: "Indicates that all permissions for all APIs are pre-approved for consent."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # allPreApprovedPermissions resource type
@@ -27,7 +28,7 @@ Inherits from [preApprovedPermissions](../resources/preapprovedpermissions.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.allPreApprovedPermissions",

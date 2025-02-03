@@ -3,8 +3,9 @@ title: "todoTask: delta"
 description: "Get a set of todoTask resources that have been added, deleted, or updated in a specified todoTaskList."
 ms.localizationpriority: medium
 author: "avijityadav"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # todoTask: delta
@@ -60,7 +61,7 @@ _id_ property is always returned.
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
@@ -157,7 +158,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
 

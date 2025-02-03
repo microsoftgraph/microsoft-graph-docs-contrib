@@ -15,7 +15,7 @@ var requestBody = new GetMemberGroupsPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.DirectoryObjects["{directoryObject-id}"].GetMemberGroups.PostAsync(requestBody);
+var result = await graphClient.DirectoryObjects["{directoryObject-id}"].GetMemberGroups.PostAsGetMemberGroupsPostResponseAsync(requestBody);
 
 
 ```

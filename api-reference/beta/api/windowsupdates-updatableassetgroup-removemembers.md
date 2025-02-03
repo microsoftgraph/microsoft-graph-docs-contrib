@@ -3,8 +3,9 @@ title: "updatableAssetGroup: removeMembers"
 description: "Remove members from an updatableAssetGroup."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: autopatch
 doc_type: apiPageType
+ms.date: 08/31/2024
 ---
 
 # updatableAssetGroup: removeMembers

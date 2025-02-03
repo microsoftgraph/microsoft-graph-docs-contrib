@@ -3,8 +3,9 @@ title: "List rules"
 description: "Get all the messageRule objects defined for the user's inbox."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # List rules
@@ -36,7 +37,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -46,7 +47,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -142,7 +143,7 @@ Content-type: application/json
           {
             "emailAddress":{
               "name":"Alex Wilbur",
-              "address":"AlexW@contoso.onmicrosoft.com"
+              "address":"AlexW@contoso.com"
             }
           }
         ]

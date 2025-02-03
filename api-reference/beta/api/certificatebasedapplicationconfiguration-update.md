@@ -3,8 +3,9 @@ title: "Update certificateBasedApplicationConfiguration"
 description: "Update the properties of a certificateBasedApplicationConfiguration object."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # Update certificateBasedApplicationConfiguration
@@ -20,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "certificatebasedapplicationconfiguration_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedapplicationconfiguration-update-permissions.md)]
 
-[!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
+[!INCLUDE [rbac-trusted-app-cert-config-apis](../includes/rbac-for-apis/rbac-trusted-app-cert-config-apis.md)]
 
 ## HTTP request
 
@@ -53,7 +54,7 @@ If successful, this method returns a `204 No Content` response code and does not
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -62,7 +63,7 @@ The following is an example of a request.
 -->
 
 ``` http
-PATCH /directory/certificateAuthorities/certificateBasedApplicationConfigurations/d5b0af1c-9376-6b66-16b6-e402965862c1
+PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/certificateBasedApplicationConfigurations/d5b0af1c-9376-6b66-16b6-e402965862c1
 Content-Type: application/json
 
 {

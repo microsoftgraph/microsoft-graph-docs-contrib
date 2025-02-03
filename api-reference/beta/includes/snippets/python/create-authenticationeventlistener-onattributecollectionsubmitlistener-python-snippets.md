@@ -4,10 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.on_attribute_collection_submit_listener import OnAttributeCollectionSubmitListener
+from msgraph_beta.generated.models.authentication_conditions import AuthenticationConditions
+from msgraph_beta.generated.models.authentication_conditions_applications import AuthenticationConditionsApplications
+from msgraph_beta.generated.models.authentication_condition_application import AuthenticationConditionApplication
+from msgraph_beta.generated.models.on_attribute_collection_submit_custom_extension_handler import OnAttributeCollectionSubmitCustomExtensionHandler
+from msgraph_beta.generated.models.on_attribute_collection_submit_custom_extension import OnAttributeCollectionSubmitCustomExtension
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = OnAttributeCollectionSubmitListener(
 	odata_type = "#microsoft.graph.onAttributeCollectionSubmitListener",
 	priority = 500,

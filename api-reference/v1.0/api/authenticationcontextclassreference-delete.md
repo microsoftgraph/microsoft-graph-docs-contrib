@@ -4,8 +4,9 @@ description: "Delete an authenticationContextClassReference object that's not pu
 ms.localizationpriority: medium
 author: "swetha-rai"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Delete authenticationContextClassReference
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "authenticationcontextclassreference_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationcontextclassreference-delete-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]
 
 ## HTTP request
 
@@ -49,7 +52,7 @@ This method returns a `403 Forbidden` error code when deleting a published authe
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -60,7 +63,7 @@ Here's an example of the request.
 }-->
 
 ```http
-DELETE /identity/conditionalAccess/authenticationContextClassReferences/c1
+DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationContextClassReferences/c1
 ```
 
 # [C#](#tab/csharp)
@@ -99,7 +102,7 @@ DELETE /identity/conditionalAccess/authenticationContextClassReferences/c1
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

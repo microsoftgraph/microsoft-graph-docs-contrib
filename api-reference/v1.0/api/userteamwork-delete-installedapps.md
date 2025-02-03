@@ -4,7 +4,8 @@ description: "Uninstall an app from the personal scope of the specified user."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 04/04/2024
 ---
 
 # Uninstall app for user
@@ -119,6 +120,6 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

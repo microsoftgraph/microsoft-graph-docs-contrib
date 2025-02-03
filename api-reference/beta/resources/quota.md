@@ -1,11 +1,11 @@
 ---
+title: "quota resource type"
+description: "Represents details about space constraints on a drive resource."
 author: spgraph-docs-team
-description: The quota resource provides details about space constraints on a drive resource.
 ms.date: 09/10/2017
-title: Quota
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: "onedrive"
 ---
 
 # quota resource type
@@ -15,29 +15,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **quota** resource provides details about space constraints on a [drive](drive.md) resource. In OneDrive Personal, the values reflect the total/used unified storage quota across multiple Microsoft services.
-
-## JSON representation
-
-Here is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.quota"
-}-->
-
-```json
-{
-  "deleted": 1024,
-  "remaining": 1024,
-  "state": "normal | nearing | critical | exceeded",
-  "storagePlanInformation": {
-    "upgradeAvailable": true
-  },
-  "total": 1024,
-  "used": 1024
-}
-```
 
 ## Properties
 
@@ -58,6 +35,32 @@ Here is a JSON representation of the resource.
 | `nearing`  | Remaining quota is less than 10% of total quota space.                                                                                                                      |
 | `critical` | Remaining quota is less than 1% of total quota space.                                                                                                                       |
 | `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
+
+## Relationships
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "@odata.type": "microsoft.graph.quota"
+}-->
+
+```json
+{
+  "deleted": 1024,
+  "remaining": 1024,
+  "state": "normal | nearing | critical | exceeded",
+  "storagePlanInformation": {
+    "upgradeAvailable": true
+  },
+  "total": 1024,
+  "used": 1024
+}
+```
 
 <!--
 {

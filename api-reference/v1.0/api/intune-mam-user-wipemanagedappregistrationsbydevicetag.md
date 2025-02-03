@@ -2,9 +2,10 @@
 title: "wipeManagedAppRegistrationsByDeviceTag action"
 description: "Issues a wipe operation on an app registration with specified device tag."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # wipeManagedAppRegistrationsByDeviceTag action
@@ -64,7 +65,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_mam_user_wipemanagedappregistrationsbydevicetag_wipemanagedappregistrationsbydevicetag_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
-
 Content-type: application/json
 Content-length: 39
 
@@ -73,12 +73,32 @@ Content-length: 39
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-user-wipemanagedappregistrationsbydevicetag-wipemanagedappregistrationsbydevicetag-action-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/intune-mam-user-wipemanagedappregistrationsbydevicetag-wipemanagedappregistrationsbydevicetag-action-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-mam-user-wipemanagedappregistrationsbydevicetag-wipemanagedappregistrationsbydevicetag-action-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-mam-user-wipemanagedappregistrationsbydevicetag-wipemanagedappregistrationsbydevicetag-action-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-mam-user-wipemanagedappregistrationsbydevicetag-wipemanagedappregistrationsbydevicetag-action-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-mam-user-wipemanagedappregistrationsbydevicetag-wipemanagedappregistrationsbydevicetag-action-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-mam-user-wipemanagedappregistrationsbydevicetag-wipemanagedappregistrationsbydevicetag-action-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

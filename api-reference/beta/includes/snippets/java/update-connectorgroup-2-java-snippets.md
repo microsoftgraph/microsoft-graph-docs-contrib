@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ConnectorGroup connectorGroup = new ConnectorGroup();
-connectorGroup.name = "name-value";
-connectorGroup.region = ConnectorGroupRegion.NAM;
+connectorGroup.setName("name-value");
+connectorGroup.setRegion(ConnectorGroupRegion.Nam);
+ConnectorGroup result = graphClient.onPremisesPublishingProfiles().byOnPremisesPublishingProfileId("{onPremisesPublishingProfile-id}").connectorGroups().byConnectorGroupId("{connectorGroup-id}").patch(connectorGroup);
 
-graphClient.onPremisesPublishingProfiles("applicationProxy").connectorGroups("{id}")
-	.buildRequest()
-	.patch(connectorGroup);
 
 ```

@@ -3,8 +3,9 @@ author: spgraph-docs-team
 title: album resource type
 description: Facet describing a bundle that is a photo album.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 # album resource type
 

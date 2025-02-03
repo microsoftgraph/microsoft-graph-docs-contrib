@@ -3,8 +3,9 @@ title: "deviceManagement resource type"
 description: "Singleton entity that acts as a container for all device management functionality."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagement resource type

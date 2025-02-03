@@ -3,8 +3,9 @@ title: "Update remoteDesktopSecurityConfiguration"
 description: "Update the properties of a remoteDesktopSecurityConfiguration object on the servicePincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # Update remoteDesktopSecurityConfiguration

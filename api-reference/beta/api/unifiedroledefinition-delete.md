@@ -4,8 +4,9 @@ description: "Delete a unifiedRoleDefinition object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
+ms.date: 07/26/2024
 ---
 
 # Delete unifiedRoleDefinition
@@ -44,6 +45,8 @@ The following tables show the least privileged permission or permissions require
 
 <!-- { "blockType": "permissions", "name": "unifiedroledefinition_delete_3" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-delete-3-permissions.md)]
+
+[!INCLUDE [rbac-role-definition-apis-write](../includes/rbac-for-apis/rbac-role-definition-apis-write.md)]
 
 ## HTTP request
 

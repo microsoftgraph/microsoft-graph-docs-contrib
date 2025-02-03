@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EducationAssignmentCollectionPage assignments = graphClient.education().me().assignments()
-	.buildRequest()
-	.filter("dueDateTime eq 2050-05-18T17:00:00Z")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+EducationAssignmentCollectionResponse result = graphClient.education().me().assignments().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "dueDateTime eq 2050-05-18T17:00:00Z";
+});
+
 
 ```

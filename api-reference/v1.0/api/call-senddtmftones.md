@@ -3,8 +3,9 @@ title: "call: sendDtmfTones"
 description: "Send DTMF tones in a call."
 author: "jackry2023"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # call: sendDtmfTones

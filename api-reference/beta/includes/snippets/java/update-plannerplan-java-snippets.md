@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "return=representation"));
-requestOptions.add(new HeaderOption("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PlannerPlan plannerPlan = new PlannerPlan();
-plannerPlan.title = "title-value";
+plannerPlan.setTitle("title-value");
+PlannerPlan result = graphClient.planner().plans().byPlannerPlanId("{plannerPlan-id}").patch(plannerPlan, requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "return=representation");
+	requestConfiguration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
 
-graphClient.planner().plans("{id}")
-	.buildRequest( requestOptions )
-	.patch(plannerPlan);
 
 ```

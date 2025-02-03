@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Identity identity = new Identity();
-identity.id = "e5477431-1038-484e-bf69-1dfedb97a110";
-identity.type = IdentityType.GROUP;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.external().connections("contosohr").groups("31bea3d537902000").members()
-	.buildRequest()
-	.post(identity);
+com.microsoft.graph.models.externalconnectors.Identity identity = new com.microsoft.graph.models.externalconnectors.Identity();
+identity.setId("e5477431-1038-484e-bf69-1dfedb97a110");
+identity.setType(com.microsoft.graph.models.externalconnectors.IdentityType.Group);
+com.microsoft.graph.models.externalconnectors.Identity result = graphClient.external().connections().byExternalConnectionId("{externalConnection-id}").groups().byExternalGroupId("{externalGroup-id}").members().post(identity);
+
 
 ```

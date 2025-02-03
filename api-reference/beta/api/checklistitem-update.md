@@ -3,8 +3,9 @@ title: "Update checklistItem"
 description: "Update the properties of a checklistItem object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update checklistItem

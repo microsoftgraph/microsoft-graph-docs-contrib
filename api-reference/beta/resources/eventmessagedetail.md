@@ -3,8 +3,9 @@ title: "eventMessageDetail resource type"
 description: "Represents the base type for event message detail."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # eventMessageDetail resource type
@@ -56,7 +57,8 @@ The following table lists the supported events.
 ## Properties
 None.
 
-
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

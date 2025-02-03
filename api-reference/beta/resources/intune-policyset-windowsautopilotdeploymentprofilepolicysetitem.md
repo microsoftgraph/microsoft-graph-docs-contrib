@@ -2,9 +2,10 @@
 title: "windowsAutopilotDeploymentProfilePolicySetItem resource type"
 description: "A class containing the properties used for windows autopilot deployment profile PolicySetItem."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsAutopilotDeploymentProfilePolicySetItem resource type

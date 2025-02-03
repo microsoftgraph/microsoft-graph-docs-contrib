@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ServicePrincipalCollectionPage servicePrincipals = graphClient.servicePrincipals()
-	.buildRequest()
-	.filter("appId eq '00000002-0000-0000-c000-000000000000'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ServicePrincipalCollectionResponse result = graphClient.servicePrincipals().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "appId eq '00000002-0000-0000-c000-000000000000'";
+});
+
 
 ```

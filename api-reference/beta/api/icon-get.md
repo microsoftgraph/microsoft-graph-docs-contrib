@@ -4,7 +4,8 @@ description: "Retrieve the properties and relationships of icon object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
+ms.date: 04/05/2024
 ---
 
 # Get icon
@@ -44,7 +45,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [workbookIcon](../resources/workbookicon.md) object in the response body.
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_icon"

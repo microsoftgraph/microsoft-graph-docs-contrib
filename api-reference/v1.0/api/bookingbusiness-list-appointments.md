@@ -3,8 +3,9 @@ title: "List appointments"
 description: "Get a list of bookingAppointment objects for the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 07/30/2024
 ---
 
 # List appointments
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a list of [bookingAppointment](../resources/bookingappointment.md) objects for the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -58,10 +59,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinesslistappointments",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/appointments
 ```
 
 # [C#](#tab/csharp)
@@ -114,12 +115,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/appointments",
     "value": [
         {
             "id": "AAMkADKoAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
+	    "customerName": "Jordan Miller",
+	    "customerEmailAddress": "jordanm@contoso.com",
+	    "customerPhone": "213-555-0199",
+	    "customerNotes": null,	
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "customers": [
                 {
@@ -155,6 +160,10 @@ Content-type: application/json
                 }
             ],
             "customerTimeZone": "America/Chicago",
+            "customerName": "Bob Kelly",
+            "customerEmailAddress": "bobk@tailspintoys.com",
+            "customerPhone": "213-555-0103",
+            "customerNotes": "This is a test note",
             "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
@@ -167,11 +176,11 @@ Content-type: application/json
             "optOutOfCustomerEmail": false,
             "anonymousJoinWebUrl": null,
             "staffMemberIds": [],
-            "startDateTime": {
+            "start": {
                 "dateTime": "2018-04-30T13:00:00.0000000Z",
                 "timeZone": "UTC"
             },
-            "endDateTime": {
+            "end": {
                 "dateTime": "2018-04-30T13:30:00.0000000Z",
                 "timeZone": "UTC"
             },
@@ -263,11 +272,12 @@ Content-type: application/json
             "optOutOfCustomerEmail": false,
             "anonymousJoinWebUrl": null,
             "staffMemberIds": [],
-            "startDateTime": {
+            "isCustomerAllowedToManageBooking": true,
+            "start": {
                 "dateTime": "2018-05-01T12:00:00.0000000Z",
                 "timeZone": "UTC"
             },
-            "endDateTime": {
+            "end": {
                 "dateTime": "2018-05-01T12:30:00.0000000Z",
                 "timeZone": "UTC"
             },

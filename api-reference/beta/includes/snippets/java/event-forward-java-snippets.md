@@ -4,26 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
-Recipient toRecipients = new Recipient();
-EmailAddress EmailAddress = new EmailAddress();
-EmailAddress.Address = "danas@contoso.onmicrosoft.com";
-EmailAddress.Name = "Dana Swope";
-toRecipients.EmailAddress = EmailAddress;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-toRecipientsList.add(toRecipients);
+com.microsoft.graph.beta.users.item.events.item.forward.ForwardPostRequestBody forwardPostRequestBody = new com.microsoft.graph.beta.users.item.events.item.forward.ForwardPostRequestBody();
+LinkedList<Recipient> toRecipients = new LinkedList<Recipient>();
+Recipient recipient = new Recipient();
+EmailAddress emailAddress = new EmailAddress();
+emailAddress.setAddress("danas@contoso.com");
+emailAddress.setName("Dana Swope");
+recipient.setEmailAddress(emailAddress);
+toRecipients.add(recipient);
+forwardPostRequestBody.setToRecipients(toRecipients);
+forwardPostRequestBody.setComment("Dana, hope you can make this meeting.");
+graphClient.me().events().byEventId("{event-id}").forward().post(forwardPostRequestBody);
 
-String comment = "Dana, hope you can make this meeting.";
-
-graphClient.me().events("{id}")
-	.forward(EventForwardParameterSet
-		.newBuilder()
-		.withToRecipients(toRecipientsList)
-		.withComment(comment)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

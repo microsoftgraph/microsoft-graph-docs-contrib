@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UserCollectionPage users = graphClient.users()
-	.buildRequest()
-	.select("ext55gb1l09_msLearnCourses")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UserCollectionResponse result = graphClient.users().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"ext55gb1l09_msLearnCourses"};
+});
+
 
 ```

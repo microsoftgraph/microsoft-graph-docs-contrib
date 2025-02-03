@@ -3,8 +3,9 @@ title: "teamworkTagIdentity resource type"
 description: "Represents a tag in Microsoft Teams."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkTagIdentity resource type
@@ -28,7 +29,7 @@ Inherits from [identity](../resources/identity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkTagIdentity"

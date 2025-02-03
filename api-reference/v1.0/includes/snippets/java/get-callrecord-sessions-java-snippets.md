@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SessionCollectionPage sessions = graphClient.communications().callRecords("{id}").sessions()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.callrecords.SessionCollectionResponse result = graphClient.communications().callRecords().byCallRecordId("{callRecord-id}").sessions().get();
+
 
 ```

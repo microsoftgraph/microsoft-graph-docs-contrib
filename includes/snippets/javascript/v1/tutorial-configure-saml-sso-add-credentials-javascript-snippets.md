@@ -13,39 +13,38 @@ const client = Client.init(options);
 const servicePrincipal = {
     keyCredentials: [
         {
-            customKeyIdentifier: 'lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=',
-            endDateTime: '2021-04-22T22:10:13Z',
+            customKeyIdentifier: '5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A',
+            endDateTime: '2027-01-22T00:00:00Z',
             keyId: '4c266507-3e74-4b91-aeba-18a25b450f6e',
-            startDateTime: '2020-04-22T21:50:13Z',
+            startDateTime: '2024-02-21T17:09:35Z',
             type: 'X509CertAndPassword',
             usage: 'Sign',
-            key: 'MIIKIAIBAz.....HBgUrDgMCERE20nuTptI9MEFCh2Ih2jaaLZBZGeZBRFVNXeZmAAgIH0A==',
-            displayName: 'CN=awsAPI'
+            key: 'MIICqjCCAZKgAwIBAgIIZYCy..KlDixjUT61i4tFs=',
+            displayName: 'CN=AWSContoso'
         },
         {
-            customKeyIdentifier: 'lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=',
-            endDateTime: '2021-04-22T22:10:13Z',
+            customKeyIdentifier: '5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A',
+            endDateTime: '2027-01-22T00:00:00Z',
             keyId: 'e35a7d11-fef0-49ad-9f3e-aacbe0a42c42',
-            startDateTime: '2020-04-22T21:50:13Z',
+            startDateTime: '2024-02-21T17:09:35Z',
             type: 'AsymmetricX509Cert',
             usage: 'Verify',
-            key: 'MIIDJzCCAg+gAw......CTxQvJ/zN3bafeesMSueR83hlCSyg==',
-            displayName: 'CN=awsAPI'
+            key: 'MIICqjCCAZKgAwIBAgIIZYCy..KlDixjUT61i4tFs=',
+            displayName: 'CN=AWSContoso'
         }
-
     ],
     passwordCredentials: [
         {
-            customKeyIdentifier: 'lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=',
+            customKeyIdentifier: '5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A',
             keyId: '4c266507-3e74-4b91-aeba-18a25b450f6e',
             endDateTime: '2022-01-27T19:40:33Z',
-            startDateTime: '2020-04-20T19:40:33Z',
+            startDateTime: '2027-01-22T00:00:00Z',
             secretText: '61891f4ee44d'
         }
     ]
 };
 
-await client.api('/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e')
+await client.api('/servicePrincipals/ef04fead-8549-4e59-b5f7-d1d8c697ec64')
 	.update(servicePrincipal);
 
 ```

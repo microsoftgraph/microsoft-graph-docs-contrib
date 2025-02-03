@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-WorkflowVersion workflowVersion = graphClient.identityGovernance().lifecycleWorkflows().workflows("15239232-66ed-445b-8292-2f5bbb2eb833").versions("2")
-	.buildRequest()
-	.expand("tasks")
-	.select("category,displayName,versionNumber,executionConditions")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.identitygovernance.WorkflowVersion result = graphClient.identityGovernance().lifecycleWorkflows().workflows().byWorkflowId("{workflow-id}").versions().byWorkflowVersionVersionNumber(2).get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"category", "displayName", "versionNumber", "executionConditions"};
+	requestConfiguration.queryParameters.expand = new String []{"tasks"};
+});
+
 
 ```

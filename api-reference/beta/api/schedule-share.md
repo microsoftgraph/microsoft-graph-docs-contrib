@@ -3,8 +3,9 @@ title: "schedule: share"
 description: "Share a schedule time range with schedule members."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # schedule: share
@@ -142,6 +143,6 @@ HTTP/1.1 200 OK
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

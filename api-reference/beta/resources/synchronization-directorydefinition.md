@@ -4,7 +4,8 @@ description: "Provides the synchronization engine information about a directory 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
+ms.date: 05/23/2024
 ---
 
 # directoryDefinition resource type
@@ -28,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Discover directoryDefinition](../api/synchronization-directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
+|[Discover](../api/synchronization-directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
 
 ## Properties
 
@@ -42,9 +43,12 @@ Inherits from [entity](../resources/entity.md).
 |discoveryDateTime|DateTimeOffset| Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |discoverabilities|directoryDefinitionDiscoverabilities| Read-only value indicating what type of discovery the app supports. The possible values are: `None`, `AttributeNames`, `AttributeDataTypes`, `AttributeReadOnly`, `ReferenceAttributes`, `UnknownFutureValue`. This is a multi-valued object.| 
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -59,11 +63,6 @@ Here's a JSON representation of the resource.
   "discoverabilities": "String",
   "discoveryDateTime": "DateTimeOffset",
   "id": "String",
-  "metadata": [
-    {
-      "@odata.type": "microsoft.graph.stringKeyStringValuePair"
-    }
-  ],
   "name": "String",
   "objects": [
     {

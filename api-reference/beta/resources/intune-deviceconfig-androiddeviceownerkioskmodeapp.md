@@ -2,9 +2,10 @@
 title: "androidDeviceOwnerKioskModeApp resource type"
 description: "An application on the Android Device Owner Managed Home Screen"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # androidDeviceOwnerKioskModeApp resource type

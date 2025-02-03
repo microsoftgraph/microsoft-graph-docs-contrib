@@ -3,8 +3,10 @@ title: "educationOutcome resource type"
 description: "Represents a base class for the result of grading an assignment."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
+toc.title: Outcome
+ms.date: 07/22/2024
 ---
 
 # educationOutcome resource type
@@ -21,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update the **educationOutcome** object. |
+| [Update outcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update the **educationOutcome** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -36,7 +38,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

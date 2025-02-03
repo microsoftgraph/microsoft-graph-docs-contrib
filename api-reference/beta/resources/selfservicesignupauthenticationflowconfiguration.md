@@ -3,8 +3,9 @@ title: "selfServiceSignUpAuthenticationFlowConfiguration resource type"
 description: "Represents the configurations related to self-service sign-up."
 author: "linkhp"
 ms.localizationpriority: high
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # selfServiceSignUpAuthenticationFlowConfiguration resource type
@@ -23,7 +24,7 @@ Represents the configurations related to self-service sign-up.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"

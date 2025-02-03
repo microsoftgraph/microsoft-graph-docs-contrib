@@ -3,8 +3,9 @@ title: "locationConstraint resource type"
 description: "The conditions stated by a client for the location of a meeting."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: calendar
+ms.subservice: calendar
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # locationConstraint resource type
@@ -15,7 +16,7 @@ The conditions stated by a client for the location of a meeting.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

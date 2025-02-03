@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Windows10TeamGeneralConfiguration;
+use Microsoft\Kiota\Abstractions\Types\Time;
+use Microsoft\Graph\Generated\Models\MiracastChannel;
+use Microsoft\Graph\Generated\Models\WelcomeScreenMeetingInformation;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

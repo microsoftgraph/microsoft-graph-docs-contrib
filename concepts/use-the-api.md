@@ -3,6 +3,7 @@ title: "Use the Microsoft Graph API"
 description: "Learn how to register your app and get authentication tokens for a user or service before you make requests to the Microsoft Graph API."
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Graph API
@@ -52,7 +53,7 @@ Microsoft Graph uses the HTTP method on your request to determine what your requ
 | :----- | :------------------------------------------- |
 | GET    | Read data from a resource.                   |
 | POST   | Create a new resource, or perform an action. |
-| PATCH  | Update a resource with new values.           |
+| PATCH  | Update a resource with new values, or upsert a resource (create if resource doesn't exist, update otherwise). |
 | PUT    | Replace a resource with a new one.           |
 | DELETE | Remove a resource.                           |
 

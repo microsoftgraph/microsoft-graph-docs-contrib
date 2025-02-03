@@ -16,7 +16,7 @@ var requestBody = new BookingService
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services["{bookingService-id}"].PatchAsync(requestBody);
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Services["{bookingService-id}"].PatchAsync(requestBody);
 
 
 ```

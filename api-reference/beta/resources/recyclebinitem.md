@@ -1,10 +1,11 @@
 ---
 author: "vanshisingh"
 title: "recycleBinItem resource type"
-description: "Represents information about a deleted item in a recycleBin."
+description: "Represents information about a deleted item in a recycleBin of a SharePoint site."
 ms.localizationpriority: "medium"
-ms.prod: "sharepoint"
-doc_type: apiPageType
+doc_type: resourcePageType
+ms.subservice: "sharepoint"
+ms.date: 05/23/2024
 ---
 
 # recycleBinItem resource type
@@ -19,23 +20,29 @@ Inherits from [baseItem](baseitem.md).
 
 ## Methods
 
-| Method                                                  | Return Type                                                 | Description                                                                              |
-|:--------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------------------------------------------------|
-| [List recycleBinItems](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site. |
+| Method | Return Type | Description |
+|:----------------------------------|:------------------------------------------|:---------------------------------------------------|
+| [List](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).|
+|[Delete](../api/filestoragecontainer-delete-recyclebinitem.md)|None.|Permanently delete **recycleBinItem** objects from the [recycleBin](../resources/recyclebin.md) of a **fileStorageContainer**.|
+|[Restore](../api/filestoragecontainer-restore-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore **recycleBinItem** objects from the [recycleBin](../resources/recyclebin.md) of a **fileStorageContainer**.|
+
 
 ## Properties
 
-| Property            | Type           | Description                                                                                                                                                                                                      |
-|:--------------------|:---------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Property            | Type           |Description   |
+|:--------------------|:---------------|:--------------------------------------------------------------------------------------|
 | deletedDateTime     | DateTimeOffset | Date and time when the item was deleted. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | deletedFromLocation | String         | Relative URL of the list or folder that originally contained the item.                                                                                                                                           |
 | id                  | String         | Unique identifier of the delete transaction. Inherited from [baseItem](baseitem.md).                                                                                                                             |
 | name                | String         | Name of the item. Inherited from [baseItem](baseitem.md).                                                                                                                                                        |
 | size                | Int64          | Size of the item in bytes.                                                                                                                                                                                       |
 
+## Relationships
+None.
+
 ## JSON Representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

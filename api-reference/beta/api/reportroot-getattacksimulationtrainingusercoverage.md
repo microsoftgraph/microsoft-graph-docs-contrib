@@ -3,8 +3,9 @@ title: "reportRoot: getAttackSimulationTrainingUserCoverage"
 description: "List training coverage for users of a tenant in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getAttackSimulationTrainingUserCoverage (deprecated)
@@ -128,5 +129,5 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 [securityReportsRoot: getAttackSimulationTrainingUserCoverage](securityreportsroot-getattacksimulationtrainingusercoverage.md)

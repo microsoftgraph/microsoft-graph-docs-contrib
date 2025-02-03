@@ -4,23 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String decision = "Approve";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String justification = "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team";
+com.microsoft.graph.identitygovernance.accessreviews.definitions.item.instances.item.batchrecorddecisions.BatchRecordDecisionsPostRequestBody batchRecordDecisionsPostRequestBody = new com.microsoft.graph.identitygovernance.accessreviews.definitions.item.instances.item.batchrecorddecisions.BatchRecordDecisionsPostRequestBody();
+batchRecordDecisionsPostRequestBody.setDecision("Approve");
+batchRecordDecisionsPostRequestBody.setJustification("All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team");
+batchRecordDecisionsPostRequestBody.setResourceId("a5c51e59-3fcd-4a37-87a1-835c0c21488a");
+graphClient.identityGovernance().accessReviews().definitions().byAccessReviewScheduleDefinitionId("{accessReviewScheduleDefinition-id}").instances().byAccessReviewInstanceId("{accessReviewInstance-id}").batchRecordDecisions().post(batchRecordDecisionsPostRequestBody);
 
-String resourceId = "a5c51e59-3fcd-4a37-87a1-835c0c21488a";
-
-graphClient.identityGovernance().accessReviews().definitions("e6cafba0-cbf0-4748-8868-0810c7f4cc06").instances("1234fba0-cbf0-6778-8868-9999c7f4cc06")
-	.batchRecordDecisions(AccessReviewInstanceBatchRecordDecisionsParameterSet
-		.newBuilder()
-		.withDecision(decision)
-		.withJustification(justification)
-		.withPrincipalId(null)
-		.withResourceId(resourceId)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

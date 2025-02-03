@@ -12,10 +12,10 @@ const client = Client.init(options);
 
 const accessReviewInstanceDecisionItem = {
     decision: 'Deny',
-    justification: 'Aline Dupuy should join an allowed group to maintain access to the User Administrator role. For more details, refer to the company policy \'#132487: Privileged roles\''
+    justification: 'Adele should join an allowed group to maintain access to the User Administrator role. For more details, refer to the company policy \'#132487: Administrative roles\''
 };
 
-await client.api('/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/decisions/4d79fbf6-36e6-430b-ba0a-2a727a480303')
+await client.api('/identityGovernance/accessReviews/definitions/02800b79-1a6f-40b7-8381-c0bebc3763bd/instances/30f0cb53-da42-402e-8be5-9005f9c374f7/decisions/25bf64c2-2396-4efc-9bb8-e9dc39ee0441')
 	.post(accessReviewInstanceDecisionItem);
 
 ```

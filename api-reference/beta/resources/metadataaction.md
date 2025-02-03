@@ -3,8 +3,9 @@ title: "metadataAction resource type (deprecated)"
 description: "Represents the metadata to be written or removed from a file. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # metadataAction resource type (deprecated)
@@ -26,7 +27,7 @@ Represents the metadata to be written or removed from a file. **metadataAction**
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

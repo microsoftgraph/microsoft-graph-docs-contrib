@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.home_realm_discovery_policy import HomeRealmDiscoveryPolicy
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+request_body = HomeRealmDiscoveryPolicy(
+	definition = [
+		"{\"HomeRealmDiscoveryPolicy\":{\"AccelerateToFederatedDomain\":true,\"PreferredDomain\":\"federated.example.edu\",\"AlternateIdLogin\":{\"Enabled\":true}}}",
+	],
+	display_name = "Contoso default HRD Policy",
+)
+
+result = await graph_client.policies.home_realm_discovery_policies.by_home_realm_discovery_policy_id('homeRealmDiscoveryPolicy-id').patch(request_body)
+
+
+```

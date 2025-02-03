@@ -3,8 +3,9 @@ title: "educationAssignmentClassRecipient resource type"
 description: "Resource type that is used inside the assignment.assignTo property."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # educationAssignmentClassRecipient resource type
@@ -21,6 +22,14 @@ This resource is a subclass of [educationAssignmentRecipient](educationassignmen
 ## Properties
 
 None.
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
 
 
 <!-- {

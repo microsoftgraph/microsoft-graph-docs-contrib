@@ -3,8 +3,9 @@ title: "Get deviceLocalCredentialInfo"
 description: "Retrieve the properties of a deviceLocalCredential for a specified device object."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get deviceLocalCredentialInfo
@@ -24,14 +25,21 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To access the actual passwords on the device, done by including `$select=credentials` as part of the query parameters, the app must be assigned the *DeviceLocalCredential.Read.All* permission and *DeviceLocalCredential.ReadBasic.All* is insufficient.
 
-[!INCLUDE [rbac-device-local-credentials-apis-read](../includes/rbac-for-apis/rbac-device-local-credentials-apis-read.md)]
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Cloud Device Administrator
+> - Helpdesk Administrator
+> - Intune Service Administrator
+> - Security Administrator
+> - Security Reader
+> - Global Reader
+> 
+> To access the actual passwords on the device by using the `$select=credentials` query parameter, the following least privileged roles are supported:
+> - Cloud Device Administrator
+> - Intune Service Administrator
 
 ## HTTP request
 To get the device local credential for a specific device object:
-
-> [!CAUTION]
-> The `GET /deviceLocalCredentials` endpoint will be deprecated on December 31, 2023. Use the `GET /directory/deviceLocalCredentials` endpoint instead.
->
 
 <!-- {
   "blockType": "ignored"  
@@ -39,7 +47,6 @@ To get the device local credential for a specific device object:
 -->
 ``` http
 GET /directory/deviceLocalCredentials/{deviceId}
-GET /deviceLocalCredentials/{deviceId}
 ```
 
 ## Request headers
@@ -69,6 +76,7 @@ The following example shows a request. This example doesn't return the **credent
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->
@@ -112,6 +120,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get_credentials",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->

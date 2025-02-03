@@ -3,8 +3,9 @@ title: "serviceActivityValueMetric resource type"
 description: "Describes the aggregated value of a service activity metric over a given interval from the start time."
 author: "Zacharypeng"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # serviceActivityValueMetric resource type

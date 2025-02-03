@@ -3,8 +3,9 @@ title: "Delete plannerRoster"
 description: "Deletes a plannerRoster object."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete plannerRoster
@@ -48,7 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

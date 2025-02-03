@@ -3,8 +3,9 @@ author: learafa
 description: "Check in a checked out driveItem resource, which makes the version of the document available to others."
 title: "driveItem: checkin"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # driveItem: checkin
 
@@ -64,7 +65,7 @@ This example checks in a file identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/checkin
+POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/checkin
 Content-Type: application/json
 
 {

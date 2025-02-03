@@ -3,8 +3,9 @@ title: "call: unmute"
 description: "Allow the application to unmute itself."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # call: unmute

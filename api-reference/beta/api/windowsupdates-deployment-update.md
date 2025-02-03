@@ -3,8 +3,9 @@ title: "Update deployment"
 description: "Update the properties of a deployment object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: autopatch
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # Update deployment
@@ -61,7 +62,7 @@ In this example, the deployment is paused by updating the **requestedValue** of 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -163,7 +164,7 @@ In this example, the **settings** property of the deployment is updated to add a
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

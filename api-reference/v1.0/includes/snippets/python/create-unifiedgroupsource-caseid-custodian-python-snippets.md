@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph import GraphServiceClient
+from msgraph.generated.models.security.unified_group_source import UnifiedGroupSource
+from msgraph.generated.models.group import Group
+from msgraph.generated.models.source_type import SourceType
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = UnifiedGroupSource(
 	group = Group(
-		mail = "SOCTeam@M365x809305.onmicrosoft.com",
+		mail = "SOCTeam@contoso.com",
 	),
 	included_sources = SourceType.Mailbox | SourceType.Site,
 )

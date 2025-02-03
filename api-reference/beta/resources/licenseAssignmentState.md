@@ -3,8 +3,9 @@ title: "licenseAssignmentState resource type"
 description: "The **licenseAssignmentStates** property of the user entity is a collection of **licenseAssignmentState**. It provides details about license assignments to a user. The details include information like:  "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.subservice: entra-users
 author: "frank-masuelli"
+ms.date: 04/17/2024
 ---
 
 # licenseAssignmentState resource type
@@ -31,9 +32,12 @@ The **licenseAssignmentStates** property of the [user](user.md) entity is a coll
 |skuId|String|The unique identifier for the SKU. Read-Only.|
 |state|String|Indicate the current state of this assignment. Read-Only. The possible values are `Active`, `ActiveWithError`, `Disabled`, and `Error`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

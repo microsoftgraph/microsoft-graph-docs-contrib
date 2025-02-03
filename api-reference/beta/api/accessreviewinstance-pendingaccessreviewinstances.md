@@ -3,8 +3,9 @@ title: "accessReviewInstance: pendingAccessReviewInstances"
 description: "Retrieve accessReviewInstance objects pending approval by calling user."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # accessReviewInstance: pendingAccessReviewInstances (deprecated)
@@ -175,7 +176,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get accessReviewInstance](accessreviewinstance-get.md)
 - [Get accessReviewInstanceDecisionItems pending approval](accessreviewinstancedecisionitem-listpendingapproval.md)

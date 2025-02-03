@@ -4,28 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<SearchRequest> requestsList = new LinkedList<SearchRequest>();
-SearchRequest requests = new SearchRequest();
-LinkedList<EntityType> entityTypesList = new LinkedList<EntityType>();
-entityTypesList.add(EntityType.CHAT_MESSAGE);
-requests.entityTypes = entityTypesList;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.search.query.QueryPostRequestBody queryPostRequestBody = new com.microsoft.graph.search.query.QueryPostRequestBody();
+LinkedList<SearchRequest> requests = new LinkedList<SearchRequest>();
+SearchRequest searchRequest = new SearchRequest();
+LinkedList<EntityType> entityTypes = new LinkedList<EntityType>();
+entityTypes.add(EntityType.ChatMessage);
+searchRequest.setEntityTypes(entityTypes);
 SearchQuery query = new SearchQuery();
-query.queryString = "test";
-requests.query = query;
-requests.from = 0;
-requests.size = 15;
-requests.enableTopResults = true;
+query.setQueryString("test");
+searchRequest.setQuery(query);
+searchRequest.setFrom(0);
+searchRequest.setSize(15);
+searchRequest.setEnableTopResults(true);
+requests.add(searchRequest);
+queryPostRequestBody.setRequests(requests);
+var result = graphClient.search().query().post(queryPostRequestBody);
 
-requestsList.add(requests);
-
-graphClient.search()
-	.query(SearchEntityQueryParameterSet
-		.newBuilder()
-		.withRequests(requestsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

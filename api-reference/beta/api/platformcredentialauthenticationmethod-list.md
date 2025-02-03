@@ -3,8 +3,9 @@ title: "List platformCredentialAuthenticationMethods"
 description: "Get a list of the platformCredentialAuthenticationMethod objects and their properties."
 author: "Veena11"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List platformCredentialAuthenticationMethods
@@ -23,7 +24,7 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "platformcredentialauthenticationmethod_list" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-list-permissions.md)]
 
 ### Permissions acting on other users

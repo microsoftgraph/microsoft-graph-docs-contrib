@@ -3,8 +3,9 @@ title: "Update workforceintegration"
 description: "Update the properties of a workforceintegration object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Update workforceintegration
@@ -65,7 +66,7 @@ The following example updates a **workforceIntegration** object.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -126,7 +127,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -159,7 +160,7 @@ The following example creates a new **workforceIntegration** with SwapRequest en
 
 #### Request
 
-Here's an example of the request. 
+The following example shows a request. 
 ```
 POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
 Authorization: Bearer {token}
@@ -181,7 +182,7 @@ Content-type: application/json
 ```
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 ```
 HTTP/1.1 200 OK
 {
@@ -207,7 +208,7 @@ The interaction between Shifts app and workforce integration endpoints follow th
 
 #### Request
 
-Here's an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+The following example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -248,7 +249,7 @@ HTTP/1.1 200 OK
 
 #### Request
 
-Here's an example of the request. 
+The following example shows a request. 
 ```
 POST https://foobarWorkforceIntegration.com/foobar/v1/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/update
 Accept-Language: en-us
@@ -340,7 +341,7 @@ Content-type: application/json
 ```
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 ```
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-InboundFileFlow inboundFlow = new InboundFileFlow();
-inboundFlow.displayName = "Updated flow name";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.external().industryData().inboundFlows("7bd62d17-8c37-4494-f68d-08daddab2911")
-	.buildRequest()
-	.patch(inboundFlow);
+com.microsoft.graph.beta.models.industrydata.InboundFileFlow inboundFlow = new com.microsoft.graph.beta.models.industrydata.InboundFileFlow();
+inboundFlow.setOdataType("#microsoft.graph.industryData.inboundFileFlow");
+inboundFlow.setDisplayName("Updated flow name");
+com.microsoft.graph.models.industrydata.InboundFlow result = graphClient.external().industryData().inboundFlows().byInboundFlowId("{inboundFlow-id}").patch(inboundFlow);
+
 
 ```

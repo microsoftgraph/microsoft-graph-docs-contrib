@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BrowserSharedCookie browserSharedCookie = new BrowserSharedCookie();
-browserSharedCookie.hostOrDomain = "www.microsoft.com";
-browserSharedCookie.sourceEnvironment = BrowserSharedCookieSourceEnvironment.MICROSOFT_EDGE;
-browserSharedCookie.displayName = "Microsoft Cookie";
-browserSharedCookie.path = "/";
-browserSharedCookie.hostOnly = true;
-browserSharedCookie.comment = "Updating source environment.";
+browserSharedCookie.setHostOrDomain("www.microsoft.com");
+browserSharedCookie.setSourceEnvironment(BrowserSharedCookieSourceEnvironment.MicrosoftEdge);
+browserSharedCookie.setDisplayName("Microsoft Cookie");
+browserSharedCookie.setPath("/");
+browserSharedCookie.setHostOnly(true);
+browserSharedCookie.setComment("Updating source environment.");
+BrowserSharedCookie result = graphClient.admin().edge().internetExplorerMode().siteLists().byBrowserSiteListId("{browserSiteList-id}").sharedCookies().byBrowserSharedCookieId("{browserSharedCookie-id}").patch(browserSharedCookie);
 
-graphClient.admin().edge().internetExplorerMode().siteLists("20579923-e6c8-425a-b728-47f43c10bc05").sharedCookies("972a5778-df43-45fd-9c2a-5dd944c7a1ce")
-	.buildRequest()
-	.patch(browserSharedCookie);
 
 ```

@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceComplianceScheduledActionForRule deviceComplianceScheduledActionForRule = new DeviceComplianceScheduledActionForRule();
-deviceComplianceScheduledActionForRule.ruleName = "Rule Name value";
+deviceComplianceScheduledActionForRule.setOdataType("#microsoft.graph.deviceComplianceScheduledActionForRule");
+deviceComplianceScheduledActionForRule.setRuleName("Rule Name value");
+DeviceComplianceScheduledActionForRule result = graphClient.deviceManagement().deviceCompliancePolicies().byDeviceCompliancePolicyId("{deviceCompliancePolicy-id}").scheduledActionsForRule().byDeviceComplianceScheduledActionForRuleId("{deviceComplianceScheduledActionForRule-id}").patch(deviceComplianceScheduledActionForRule);
 
-graphClient.deviceManagement().deviceCompliancePolicies("{deviceCompliancePolicyId}").scheduledActionsForRule("{deviceComplianceScheduledActionForRuleId}")
-	.buildRequest()
-	.patch(deviceComplianceScheduledActionForRule);
 
 ```

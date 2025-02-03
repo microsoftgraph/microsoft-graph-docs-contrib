@@ -4,8 +4,9 @@ description: "Retrieve a list of scopedRoleMembership objects for a directory ro
 author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # List scopedMembers for a directory role
@@ -13,6 +14,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!NOTE]
+> Microsoft recommends that you use the unified RBAC API instead of this API. The unified RBAC API provides more functionality and flexibility. For more information, see [List unifiedRoleAssignments](./rbacapplication-list-roleassignments.md).
 
 Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects for a directory role.
 
@@ -54,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1:  Get the scoped members of a directory role using role id
 
 #### Request
-The following is an example of a request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
+The following example shows a request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -131,7 +135,7 @@ Content-type: application/json
 ### Example 2:  Get the scoped members of a directory role using roleTemplateId
 
 #### Request
-The following is an example of a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
+The following example shows a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
 
 <!-- {
   "blockType": "request",

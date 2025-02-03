@@ -3,8 +3,9 @@ title: "hostReputationRule resource type"
 description: "Represents a rule that is used (in combination with other rules) to determine the reputation of a hostname or IP address."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # hostReputationRule resource type
@@ -32,7 +33,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.hostReputationRule"

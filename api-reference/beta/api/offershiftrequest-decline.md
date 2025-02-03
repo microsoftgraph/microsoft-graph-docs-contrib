@@ -3,8 +3,9 @@ title: "offerShiftRequest: decline"
 description: "Decline an offer shift request."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # offerShiftRequest: decline
@@ -70,10 +71,6 @@ Content-type: application/json
   "message": "Sorry, you can't offer this shift."
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/offershiftrequest-decline-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-decline-javascript-snippets.md)]

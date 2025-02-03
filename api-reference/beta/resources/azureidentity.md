@@ -4,8 +4,9 @@ description: "Represents identities in Azure including managed identities, servi
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # azureIdentity resource type
@@ -29,8 +30,8 @@ The following resources inherit from this resource type:
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List all identities](../api/azureassociatedidentities-list-all.md)|[azureIdentity](../resources/azureidentity.md) collection|Get a list of the [azureIdentity](../resources/azureidentity.md) objects and their properties.|
-|[Get azureIdentity](../api/azureidentity-get.md)|[azureIdentity](../resources/azureidentity.md)|Read the properties and relationships of an [azureIdentity](../resources/azureidentity.md) object.|
+|[List](../api/azureassociatedidentities-list-all.md)|[azureIdentity](../resources/azureidentity.md) collection|Get a list of the [azureIdentity](../resources/azureidentity.md) objects and their properties.|
+|[Get](../api/azureidentity-get.md)|[azureIdentity](../resources/azureidentity.md)|Read the properties and relationships of an [azureIdentity](../resources/azureidentity.md) object.|
 
 ## Properties
 |Property|Type|Description|

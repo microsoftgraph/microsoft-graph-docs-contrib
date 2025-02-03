@@ -3,8 +3,9 @@ title: "serviceHealth resource type"
 description: "Represents the health information of a service."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # serviceHealth resource type
@@ -18,7 +19,7 @@ Represents the health information of a service subscribed by a tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get serviceHealth](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.|
+|[Get service health](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,7 +34,7 @@ Represents the health information of a service subscribed by a tenant.
 |issues|Collection([serviceHealthIssue](../resources/servicehealthissue.md))|A collection of issues that happened on the service, with detailed information for each issue.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

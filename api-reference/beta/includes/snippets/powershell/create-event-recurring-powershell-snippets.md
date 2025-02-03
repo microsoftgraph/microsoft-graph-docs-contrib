@@ -25,27 +25,27 @@ $params = @{
 			type = "weekly"
 			interval = 1
 			daysOfWeek = @(
-				"Monday"
-			)
-		}
-		range = @{
-			type = "endDate"
-			startDate = "2017-09-04"
-			endDate = "2017-12-31"
-		}
+			"Monday"
+		)
 	}
-	location = @{
-		displayName = "Harry's Bar"
+	range = @{
+		type = "endDate"
+		startDate = "2017-09-04"
+		endDate = "2017-12-31"
 	}
-	attendees = @(
-		@{
-			emailAddress = @{
-				address = "AdeleV@contoso.onmicrosoft.com"
-				name = "Adele Vance"
-			}
-			type = "required"
+}
+location = @{
+	displayName = "Harry's Bar"
+}
+attendees = @(
+	@{
+		emailAddress = @{
+			address = "AdeleV@contoso.com"
+			name = "Adele Vance"
 		}
-	)
+		type = "required"
+	}
+)
 }
 
 # A UPN can also be used as -UserId.

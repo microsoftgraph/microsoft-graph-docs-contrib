@@ -4,27 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.drives.item.items.item.workbook.worksheets.item.protection.protect.ProtectPostRequestBody protectPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.worksheets.item.protection.protect.ProtectPostRequestBody();
 WorkbookWorksheetProtectionOptions options = new WorkbookWorksheetProtectionOptions();
-options.allowFormatCells = true;
-options.allowFormatColumns = true;
-options.allowFormatRows = true;
-options.allowInsertColumns = true;
-options.allowInsertRows = true;
-options.allowInsertHyperlinks = true;
-options.allowDeleteColumns = true;
-options.allowDeleteRows = true;
-options.allowSort = true;
-options.allowAutoFilter = true;
-options.allowPivotTables = true;
+options.setAllowFormatCells(true);
+options.setAllowFormatColumns(true);
+options.setAllowFormatRows(true);
+options.setAllowInsertColumns(true);
+options.setAllowInsertRows(true);
+options.setAllowInsertHyperlinks(true);
+options.setAllowDeleteColumns(true);
+options.setAllowDeleteRows(true);
+options.setAllowSort(true);
+options.setAllowAutoFilter(true);
+options.setAllowPivotTables(true);
+protectPostRequestBody.setOptions(options);
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().byWorkbookWorksheetId("{workbookWorksheet-id}").protection().protect().post(protectPostRequestBody);
 
-graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").protection()
-	.protect(WorkbookWorksheetProtectionProtectParameterSet
-		.newBuilder()
-		.withOptions(options)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

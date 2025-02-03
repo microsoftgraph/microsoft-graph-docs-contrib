@@ -3,8 +3,9 @@ title: Create printJob for a printer
 description: Create a new printJob for a printer. 
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 06/07/2024
 ---
 
 # Create printJob for a printer
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [printJob](../resources/printJob.md) for a [printer](../resources/printer.md). 
 
-> **Note:** A user can submit up to ~10000 print jobs in 10 days.
+> **Note:** A user can submit up to ~10000 print jobs in 12 days.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

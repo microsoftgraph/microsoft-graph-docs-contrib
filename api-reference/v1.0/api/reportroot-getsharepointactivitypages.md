@@ -2,9 +2,10 @@
 title: "reportRoot: getSharePointActivityPages"
 description: "Get the number of unique pages visited by users."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getSharePointActivityPages

@@ -3,8 +3,9 @@ title: "verifiableCredentialType resource type"
 description: "Contains details of a verifiable credential type, including the type of the credential issued and list of accepted issuers."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # verifiableCredentialType resource type
@@ -26,7 +27,7 @@ Contains details of a verifiable credential type, including the type of the cred
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.verifiableCredentialType"

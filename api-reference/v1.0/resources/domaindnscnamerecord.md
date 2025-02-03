@@ -1,10 +1,11 @@
 ---
 title: "domainDnsCnameRecord resource type"
 description: "Represents a CNAME record added to the DNS zone file of a particular domain in the tenant."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 04/25/2024
 ---
 
 # domainDnsCnameRecord resource type
@@ -18,7 +19,7 @@ Represents a CNAME record added to the DNS zone file of a particular domain in t
 Direct queries to this resource aren't supported. See the [domain](domain.md) article for information on how to query for domain service records.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |canonicalName|String| The canonical name of the CNAME record. Used to configure the CNAME record at the DNS host. |
 |id|String| Unique identifier assigned to this entity. Not nullable, Read-only|
@@ -33,7 +34,7 @@ None
 
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

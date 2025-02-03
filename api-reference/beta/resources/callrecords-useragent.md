@@ -3,8 +3,9 @@ title: "userAgent resource type"
 description: "The userAgent type"
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # userAgent resource type
@@ -26,7 +27,7 @@ The [clientUserAgent](callrecords-clientuseragent.md) and
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

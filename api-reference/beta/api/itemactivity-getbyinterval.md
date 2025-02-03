@@ -4,7 +4,8 @@ description: "Get itemActivityStats for the activities that took place under thi
 title: Get item activity stats by interval
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "files"
+ms.subservice: "onedrive"
+ms.date: 04/04/2024
 ---
 # Get item activity stats by interval
 
@@ -63,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an [itemActivity
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-activities-by-interval" } -->

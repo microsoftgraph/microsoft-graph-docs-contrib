@@ -3,8 +3,9 @@ title: "List authoredNotes"
 description: "Get the authoredNote resources from the notes navigation property."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # List authoredNotes

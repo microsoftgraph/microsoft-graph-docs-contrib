@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-IdentityUserFlowAttributeAssignmentCollectionPage userAttributeAssignments = graphClient.identity().b2xUserFlows("B2X_1_Partner").userAttributeAssignments()
-	.buildRequest()
-	.expand("userAttribute")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+IdentityUserFlowAttributeAssignmentCollectionResponse result = graphClient.identity().b2xUserFlows().byB2xIdentityUserFlowId("{b2xIdentityUserFlow-id}").userAttributeAssignments().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"userAttribute"};
+});
+
 
 ```

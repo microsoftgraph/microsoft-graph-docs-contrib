@@ -3,8 +3,10 @@ title: "Get governanceRoleAssignment"
 description: "Retrieve the properties and relationships of a governanceRoleAssignment."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
+ms.date: 08/13/2024
 ---
 
 # Get governanceRoleAssignment
@@ -50,7 +52,7 @@ This method does **not** supports [OData Query Parameters](/graph/query-paramete
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

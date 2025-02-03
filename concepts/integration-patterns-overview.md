@@ -2,7 +2,8 @@
 title: "Common integration patterns with Microsoft Graph"
 description: "Get an overview of the integration patterns that you can apply to solutions that you build using Microsoft Graph."
 author: "OlgaPodo"
-ms.localizationpriority: low
+ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 # Common integration patterns with Microsoft Graph
@@ -14,31 +15,31 @@ Microsoft Graph is a technology platform that allows organizations to connect th
 - Microsoft Graph Data Connect - A bulk data export mechanism that follows an ETL (extract, transform & load) pattern, with a data gathering phase that stages data before transferring it in bulk to the customers' provided storage, and serves data with high latency.  
 - Event-driven integration APIs - Allows client applications to receive notifications of changes or full object data after an event in the Microsoft 365 ecosystem. This push mechanism is supported by webhooks and doesn’t guarantee message delivery or message order. 
 - Event streaming integration APIs - Allows client applications to react to activities in Microsoft 365 at their own pace and guarantees the persistence of immutable event data. Microsoft Graph change notifications with Azure Event Hubs support this pull mechanism. 
-- Microsoft Graph connectors - Enable the ingestion of large amounts of customer data into Microsoft 365 storage, which enriches Microsoft Copilot for Microsoft 365, the augmentation loop, and search-based Microsoft 365 experiences. These connectors are available through product-specific connectors, such as Microsoft Graph connector for ServiceNow, or generic-content REST APIs.
+- Microsoft Graph connectors - Enable the ingestion of large amounts of customer data into Microsoft 365 storage, which enriches Microsoft 365 Copilot, the augmentation loop, and search-based Microsoft 365 experiences. These connectors are available through product-specific connectors, such as Microsoft Graph connector for ServiceNow, or generic-content REST APIs.
 
 The following image shows the Microsoft Graph integration patterns, their associated architectural characteristic, and the types of solutions they map to.
 
 ![A diagram that lists integration patterns, the associated architectural components for each, and types of solutions](./images/integrationoptions.png)
 
-The wide range of integration options can make it difficult to choose the best option for your needs. We recommend that you start with a business scenario and identify your functional and non-functional requirements. Then you can select an integration option based on those requirements.
+The wide range of integration options can make it difficult to choose the best option for your needs. We recommend that you start with a business scenario and identify your functional and nonfunctional requirements. Then you can select an integration option based on those requirements.
 
 ![Diagram of the analysis flow which starts with a business scenario, then the definition of architecture requirements, and then the selection of an integration option](./images/scenariorequirementssolution.png)
 
-Based on many known scenarios in the Microsoft Graph ecosystem, we identified four architecture requirements that have a profound impact on the selection of integration options. These architectural significant requirements are:
+Based on many known scenarios in the Microsoft Graph ecosystem, the following architecture requirements impact the selection of integration options:
 
 - Integration type - Application integrations involve client applications that depend on both the data and functionality of the Microsoft 365 services; for example, the **sendMail** API accesses user data and also send an email. Data integrations involve applications that produce or consume Microsoft Graph data but don't rely in Microsoft 365 services. All Microsoft Graph integration options support data integration scenarios.
 - Direction of data flow - Outbound flow is when customer data leaves the Microsoft Graph compliance boundaries and inbound flow is when customer data enters Microsoft Graph.
 - Volume of data - The amount of customer data processed in a critical period, such as a business day.
-- Data latency - The time difference between when data is created and when it is extracted.
+- Data latency - The time difference between when data is created and when it's extracted.
 
 Use the following decision tree to choose an integration option based on your architecture requirements.
 
-![decisionTree](./images/decisiontree.png)
+![A diagram that lists business scenarios and the associated integration pattern options](./images/decisiontree.png)
 
 - Application integration requirements - Use Microsoft Graph APIs.
 - Data integration scenarios:
   - Outbound flow of Microsoft 365 data:
-    - For high data latency and high data volume - Use Data connect.
+    - For high data latency and high data volume - Use Data Connect.
     - For high data latency and low data volume - Use Microsoft Graph APIs or notifications
     - For low data latency and high data volume -Use Microsoft Graph notifications via Event Hub.
     - For low data latency and low data volume - Use Microsoft Graph notifications via webhooks.
@@ -55,8 +56,8 @@ To explore each of the integration options in more detail, see the following top
 - [Retrieve events at your speed by using Microsoft Graph](./patterns/notifications-in-pull-mode.md)
 - [Use Microsoft Graph to augment Microsoft Search with custom data](./patterns/augment-search-experience-with-custom-data.md)
 
-## See also
+## Related content
 
-- [Azure and Microsoft 365 scenarios](./azure/architecture/solutions/microsoft-365-scenarios)
-- [Cloud design patterns](./azure/architecture/patterns/)
+- [Azure and Microsoft 365 scenarios](/azure/architecture/solutions/microsoft-365-scenarios)
+- [Cloud design patterns](/azure/architecture/patterns/)
   

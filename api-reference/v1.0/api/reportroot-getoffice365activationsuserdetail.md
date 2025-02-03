@@ -2,9 +2,10 @@
 title: "reportRoot: getOffice365ActivationsUserDetail"
 description: "Get details about users who have activated Microsoft 365."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getOffice365ActivationsUserDetail

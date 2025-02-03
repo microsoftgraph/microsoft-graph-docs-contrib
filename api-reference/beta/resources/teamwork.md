@@ -3,8 +3,9 @@ title: "teamwork resource type"
 description: "A container for the range of Microsoft Teams functionalities that are available for the organization."
 author: "charlieforce"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/18/2024
 ---
 
 # teamwork resource type
@@ -29,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|string|The default teamwork identifier.|
 |isTeamsEnabled|Boolean|Indicates whether Microsoft Teams is enabled for the organization.|  
-|region|string|Represents the region of the organization.|
+|region|string|Represents the region of the organization or the tenant. The **region** value can be any region supported by the Teams payload. The possible values are: `Americas`, `Europe and MiddleEast`, `Asia Pacific`, `UAE`, `Australia`, `Brazil`, `Canada`, `Switzerland`, `Germany`, `France`, `India`, `Japan`, `South Korea`, `Norway`, `Singapore`, `United Kingdom`, `South Africa`, `Sweden`, `Qatar`, `Poland`, `Italy`, `Israel`, `Spain`, `Mexico`, `USGov Community Cloud`, `USGov Community Cloud High`, `USGov Department of Defense`, and `China`.|
 
 ## Relationships
 | Relationship | Type | Description |
@@ -61,6 +62,6 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 - [userTeamwork resource](userteamwork.md)

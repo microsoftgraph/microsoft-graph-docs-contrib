@@ -3,8 +3,9 @@ title: "Create custodian siteSource"
 description: "Create a new custodian siteSource object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Create custodian siteSource

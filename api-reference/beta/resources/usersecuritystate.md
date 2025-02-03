@@ -3,8 +3,10 @@ title: "userSecurityState resource type"
 description: "Contains stateful information about the user account."
 ms.localizationpriority: medium
 author: "yyuank"
-ms.prod: "users"
+ms.reviewer: "iamut"
+ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # userSecurityState resource type
@@ -34,9 +36,12 @@ Contains stateful information about the user account.
 |userAccountType|userAccountSecurityType|User account type (group membership), per Windows definition. Possible values are: `unknown`, `standard`, `power`, `administrator`.|
 |userPrincipalName|String|User sign-in name - internet format: (user account name)@(user account DNS domain name).|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,8 +3,9 @@ title: "Get securityAction"
 description: "Retrieve the properties and relationships of securityAction object."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Get securityAction
@@ -40,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

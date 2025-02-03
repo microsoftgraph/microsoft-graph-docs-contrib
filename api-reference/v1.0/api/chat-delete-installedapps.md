@@ -1,10 +1,11 @@
 ---
 title: "Uninstall app in a chat"
 description: "Uninstall (remove) an app installed in a chat."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/19/2024
 ---
 
 # Uninstall app in a chat
@@ -122,6 +123,6 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

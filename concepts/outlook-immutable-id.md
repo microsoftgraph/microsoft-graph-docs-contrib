@@ -3,7 +3,8 @@ title: "Obtain immutable identifiers for Outlook resources"
 description: "Use immutable identifiers (IDs) to enable your Outlook application to obtain an ID that doesn't change for the lifetime of the item."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Obtain immutable identifiers for Outlook resources

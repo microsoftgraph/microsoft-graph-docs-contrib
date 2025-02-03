@@ -3,8 +3,9 @@ title: "List learningCourseActivities"
 description: "Get a list of the learningCourseActivity objects (assigned or self-initiated) for a user."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List learningCourseActivities
@@ -33,7 +34,7 @@ To retrieve the course activity list for a signed-in user:
 }
 -->
 ``` http
-GET me/employeeExperience/learningCourseActivities
+GET /me/employeeExperience/learningCourseActivities
 ```
 
 To retrieve the course activity list for a user:
@@ -43,7 +44,7 @@ To retrieve the course activity list for a user:
 }
 -->
 ``` http
-GET users/{user-id}/employeeExperience/learningCourseActivities
+GET /users/{user-id}/employeeExperience/learningCourseActivities
 ```
 
 ## Optional query parameters
@@ -68,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request to retrieve all the course activities for a given user.
+The following example shows how to retrieve all the course activities for a given user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -120,8 +121,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.learningCourseActivity",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.learningCourseActivity)"
 }
 -->
 

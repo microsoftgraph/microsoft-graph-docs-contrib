@@ -3,14 +3,15 @@ title: "ediscoveryCustodian: applyHold"
 description: "Start the process of applying hold to eDiscovery custodians."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # ediscoveryCustodian: applyHold
 Namespace: microsoft.graph.security
 
-Start the process of applying hold on [eDiscovery custodians](../resources/security-ediscoverycustodian.md). After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers. The location provides a URL that will return an [eDiscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) object.
+Start the process of applying hold on [eDiscovery custodians](../resources/security-ediscoverycustodian.md). After the operation is created, you can use [Get ediscoveryCustodian](security-ediscoverycustodian-get.md) to retrieve the status of an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -55,7 +56,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ### Example 1: Apply hold to multiple custodians
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +122,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Apply hold to a single custodian
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,6 +3,7 @@ title: "Use the Microsoft Graph SDKs with the beta API"
 description: "Describes how to use the Microsoft Graph SDKs with the beta version of the API."
 ms.localizationpriority: medium
 author: jasonjoh
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD051 -->
@@ -43,10 +44,7 @@ client := graphbeta.NewGraphServiceClientWithCredentials(credentials, scopes)
 To call the API, you must install the [Microsoft Graph Beta Java SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Usage is the same as the nonbeta SDK.
 
 ```Java
-GraphServiceClient graphClient = GraphServiceClient
-    .builder()
-    .authenticationProvider(authProvider)
-    .buildClient();
+GraphServiceClient graphClient = new GraphServiceClient(tokenCredential, scopes);
 ```
 
 ## [PHP](#tab/php)
@@ -90,6 +88,6 @@ The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgrap
 
 ---
 
-## See also
+## Related content
 
 [SDKs in preview or GA status](sdks-overview.md#sdks-in-preview-or-ga-status).

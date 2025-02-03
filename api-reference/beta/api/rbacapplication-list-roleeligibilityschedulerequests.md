@@ -3,8 +3,9 @@ title: "List roleEligibilityScheduleRequests"
 description: "Get a list of the unifiedRoleEligibilityScheduleRequest objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List roleEligibilityScheduleRequests
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "rbacapplication_list_roleeligibilityschedulerequests" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roleeligibilityschedulerequests-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 

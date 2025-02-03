@@ -4,7 +4,8 @@ description: "Get the status of a command on a device. For the  full list of sta
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ailae"
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
+ms.date: 04/04/2024
 ---
 
 # Get device command status (deprecated)
@@ -84,7 +85,7 @@ HTTP/1.1 200 OK
 
 ## Example
 
-In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call to `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
+In this example, you need the ID of the device and the ID of the command that was issued to the device. The device ID is returned when issuing a GET call to `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
 
 #### Request
 
@@ -178,7 +179,7 @@ HTTP/1.1 200 OK
 
 ### Example
 
-In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
+In this example, you need the ID of the device and the ID of the command that was issued to the device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
 
 #### Request
 

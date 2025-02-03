@@ -2,9 +2,10 @@
 title: "androidDeviceOwnerCertificateAccessType enum type"
 description: "An enum representing possible values for cross profile data sharing."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # androidDeviceOwnerCertificateAccessType enum type

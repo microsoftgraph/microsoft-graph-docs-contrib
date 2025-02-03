@@ -2,9 +2,10 @@
 title: "userExperienceAnalyticsAnomalyType enum type"
 description: "Indicates the category of the anomaly. Eg: anomaly type can be device, application, stop error, driver or other."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # userExperienceAnalyticsAnomalyType enum type

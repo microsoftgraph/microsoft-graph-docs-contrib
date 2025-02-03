@@ -3,7 +3,8 @@ title: "To Do API overview"
 description: "Use the Microsoft To Do API in Microsoft Graph to manage tasks and plan your day. Tasks are organized in task lists accessed across To Do clients, Outlook, and Teams."
 author: "avijityadav"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # To Do API overview

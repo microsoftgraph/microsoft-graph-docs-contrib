@@ -3,8 +3,9 @@ title: "chat: markChatUnreadForUser"
 description: "Mark a chat as unread for a user."
 author: "sweta-thapliyal"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # chat: markChatUnreadForUser
@@ -89,6 +90,10 @@ Content-length: 158
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-markchatunreadforuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-markchatunreadforuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

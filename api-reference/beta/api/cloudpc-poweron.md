@@ -3,8 +3,9 @@ title: "cloudPC: powerOn"
 description: "Power on specific Cloud PC."
 author: "rbayetov"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # cloudPC: powerOn

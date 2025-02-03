@@ -3,8 +3,9 @@ title: "accessPackageResourceScope resource type"
 description: "In Microsoft Entra entitlement management, an access package resource scope is a reference to a scope within a resource."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # accessPackageResourceScope resource type
@@ -40,7 +41,7 @@ If the resource is in an access package catalog but has not yet had its roles ad
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

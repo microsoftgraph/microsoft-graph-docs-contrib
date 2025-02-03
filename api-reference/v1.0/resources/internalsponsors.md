@@ -1,12 +1,13 @@
 ---
-title: "internalSponsors complex type"
-description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
+title: "internalSponsors resource type"
+description: "Identifies a relationship to another user in the tenant who is allowed as approver."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
-# internalSponsors complex type
+# internalSponsors resource type
 
 Namespace: microsoft.graph
 
@@ -19,7 +20,7 @@ None.
 ## Relationships
 None.
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.internalSponsors",

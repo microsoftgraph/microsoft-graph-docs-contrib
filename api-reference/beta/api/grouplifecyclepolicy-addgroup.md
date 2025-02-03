@@ -1,10 +1,12 @@
 ---
 title: "groupLifecyclePolicy: addGroup"
-description: "Adds a group to a lifecycle policy."
-author: "Jordanndahl"
+description: "Add a group to a lifecycle policy."
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # groupLifecyclePolicy: addGroup
@@ -13,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds specific groups to a lifecycle policy. This action limits the group lifecycle policy to a set of groups only if the **managedGroupTypes** property of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) is set to `Selected`.
+Add a group to a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md). This action is supported only if the **managedGroupTypes** property of the policy is set to `Selected`.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -53,13 +55,13 @@ Only one group can be added per request.
 
 ## Response
 
-If successful, this method returns `200 OK` response code. If the group is added to the policy, a `true` value is returned in the response body. Otherwise, a `false` value is returned in the response body.
+If successful, this method returns `200 OK` response code. If the group is added to the policy, a `true` value is returned in the response body and the **expirationDateTime** property of the added group is set based on the policy's **groupLifetimeInDays** value. Otherwise, a `false` value is returned in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -86,7 +88,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": true
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.Boolean",
+    "value": true
 }
 ```
 

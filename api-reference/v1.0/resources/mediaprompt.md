@@ -3,8 +3,9 @@ title: "mediaPrompt resource type"
 description: "This resource type contains information about the audio file to be played and other additional settings."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # mediaPrompt resource type
@@ -21,7 +22,7 @@ This resource type contains information about the audio file to be played and ot
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -2,9 +2,10 @@
 title: "createCatalogApp action"
 description: "Intune Apps Mobileapp Createcatalogapp Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # createCatalogApp action
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,7 +68,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/createCatalogApp
 
 Content-type: application/json
-Content-length: 2580
+Content-length: 2890
 
 {
   "mobileApp": {
@@ -105,6 +108,11 @@ Content-length: 2580
       "targetDisplayName": "Target Display Name value",
       "targetDisplayVersion": "Target Display Version value",
       "targetPublisher": "Target Publisher value",
+      "targetPublisherDisplayName": "Target Publisher Display Name value",
+      "sourceId": "Source Id value",
+      "sourceDisplayName": "Source Display Name value",
+      "sourceDisplayVersion": "Source Display Version value",
+      "sourcePublisherDisplayName": "Source Publisher Display Name value",
       "targetType": "parent"
     }
   ],

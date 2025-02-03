@@ -3,8 +3,10 @@ title: "invalidLicenseAlertIncident resource type"
 description: "Represents the details of an alert incident that is triggered if the current tenant doesn't have a valid Microsoft Entra ID P2 license."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Invalid license
+ms.date: 09/19/2024
 ---
 
 # invalidLicenseAlertIncident resource type
@@ -17,6 +19,11 @@ Represents the details of an alert incident that is triggered if the current ten
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) resource type.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -27,7 +34,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

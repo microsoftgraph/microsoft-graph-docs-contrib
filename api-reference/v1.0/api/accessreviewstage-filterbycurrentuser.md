@@ -3,8 +3,9 @@ title: "accessReviewStage: filterByCurrentUser"
 description: "Return all accessReviewStage objects for a given reviewer."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # accessReviewStage: filterByCurrentUser

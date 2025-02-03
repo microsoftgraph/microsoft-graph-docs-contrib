@@ -4,7 +4,8 @@ description: "Get the presence information for multiple users."
 author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
+ms.date: 04/04/2024
 ---
 
 # cloudCommunications: getPresencesByUserId
@@ -156,5 +157,5 @@ Content-Length: 1574
 }
 -->
 
-## See also
+## Related content
 - [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)

@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IdentityProvider identityProvider = new IdentityProvider();
-identityProvider.name = "Login with Amazon";
-identityProvider.type = "Amazon";
-identityProvider.clientId = "56433757-cadd-4135-8431-2c9e3fd68ae8";
-identityProvider.clientSecret = "000000000000";
+identityProvider.setName("Login with Amazon");
+identityProvider.setType("Amazon");
+identityProvider.setClientId("56433757-cadd-4135-8431-2c9e3fd68ae8");
+identityProvider.setClientSecret("000000000000");
+IdentityProvider result = graphClient.identityProviders().post(identityProvider);
 
-graphClient.identityProviders()
-	.buildRequest()
-	.post(identityProvider);
 
 ```

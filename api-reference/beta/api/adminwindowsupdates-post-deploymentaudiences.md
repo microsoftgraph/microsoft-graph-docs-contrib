@@ -3,8 +3,9 @@ title: "Create deploymentAudience"
 description: "Create a new deploymentAudience object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 08/31/2024
 ---
 
 # Create deploymentAudience
@@ -55,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

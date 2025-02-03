@@ -3,8 +3,9 @@ title: "cloudPcDeviceImage: reupload"
 description: "Reupload a cloudPcDeviceImage object."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # cloudPcDeviceImage: reupload

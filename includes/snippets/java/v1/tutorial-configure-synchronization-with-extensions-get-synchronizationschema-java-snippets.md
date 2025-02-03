@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Authorization", "Bearer {Token}"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-SynchronizationSchema synchronizationSchema = graphClient.servicePrincipals("{servicePrincipalId}").synchronization().jobs("{jobId}").schema()
-	.buildRequest( requestOptions )
-	.get();
+SynchronizationSchema result = graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").synchronization().jobs().bySynchronizationJobId("{synchronizationJob-id}").schema().get(requestConfiguration -> {
+	requestConfiguration.headers.add("Authorization", "Bearer {Token}");
+});
+
 
 ```

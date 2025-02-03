@@ -3,8 +3,9 @@ title: "accessReviewInstanceDecisionItemServicePrincipalTarget resource type"
 description: "Represents the target of a review as a service principal target."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # accessReviewInstanceDecisionItemServicePrincipalTarget resource type
@@ -22,7 +23,7 @@ Inherits from [accessReviewInstanceDecisionItemTarget](../resources/accessreview
 ## Properties
 | Property | Type | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| servicePrincipalID | String | The identifier of the service principal whose access is being reviewed. |
+| servicePrincipalId | String | The identifier of the service principal whose access is being reviewed. |
 | servicePrincipalDisplayName | String | The display name of the service principal whose access is being reviewed. |
 | appId | String | The appId for the service principal entity being reviewed. |
 
@@ -30,7 +31,7 @@ Inherits from [accessReviewInstanceDecisionItemTarget](../resources/accessreview
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemServicePrincipalTarget"

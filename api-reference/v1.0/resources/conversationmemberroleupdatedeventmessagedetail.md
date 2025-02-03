@@ -3,8 +3,9 @@ title: "conversationMemberRoleUpdatedEventMessageDetail resource type"
 description: "Represents the details of an event message about an updated role of a conversation member in a channel or a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # conversationMemberRoleUpdatedEventMessageDetail resource type
@@ -25,7 +26,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |conversationMemberUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Identity of the **conversation member** user.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.conversationMemberRoleUpdatedEventMessageDetail",
@@ -38,7 +39,7 @@ The following is a JSON representation of the resource.
   "conversationMemberRoles": [
     "String"
   ],
-  "converstaionMemberUser": {
+  "conversationMemberUser": {
     "@odata.type": "microsoft.graph.teamworkUserIdentity"
   },
   "initiator": {
@@ -48,6 +49,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about an updated role of a **conversation member** in a **channel** or a **team**](/graph/system-messages/#conversation-member-role-updated)
 - For more information about other types of events, see [System messages](/graph/system-messages).

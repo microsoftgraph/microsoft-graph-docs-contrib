@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\EducationAssignment;
+use Microsoft\Graph\Beta\Generated\Models\EducationItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\EducationAddedStudentAction;
+use Microsoft\Graph\Beta\Generated\Models\EducationAddToCalendarOptions;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

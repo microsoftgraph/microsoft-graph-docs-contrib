@@ -70,6 +70,7 @@ var requestBody = new BookingAppointment
 	},
 	InvoiceId = "1001",
 	InvoiceStatus = BookingInvoiceStatus.Open,
+	IsCustomerAllowedToManageBooking = true,
 	InvoiceUrl = "theInvoiceUrl",
 	IsLocationOnline = true,
 	OptOutOfCustomerEmail = false,
@@ -242,7 +243,7 @@ var requestBody = new BookingAppointment
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Appointments.PostAsync(requestBody);
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Appointments.PostAsync(requestBody);
 
 
 ```

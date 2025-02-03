@@ -3,8 +3,9 @@ title: "List deleted items (directory objects) owned by a user"
 description: "Retrieves a list of recently deleted application or group objects that are owned by the specified user."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List deleted items (directory objects) owned by a user
@@ -51,7 +52,7 @@ Successful requests return `200 OK` response codes; the response object includes
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,7 +77,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response. Note: This response object may be truncated for brevity. All supported properties are returned
+The following example shows the response. Note: This response object may be truncated for brevity. All supported properties are returned
 from actual calls.
 
 <!-- {

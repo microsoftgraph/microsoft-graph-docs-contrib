@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String comment = "Cancelling for this week due to all hands";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().events("{id}")
-	.cancel(EventCancelParameterSet
-		.newBuilder()
-		.withComment(comment)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.users.item.events.item.cancel.CancelPostRequestBody cancelPostRequestBody = new com.microsoft.graph.users.item.events.item.cancel.CancelPostRequestBody();
+cancelPostRequestBody.setComment("Cancelling for this week due to all hands");
+graphClient.me().events().byEventId("{event-id}").cancel().post(cancelPostRequestBody);
+
 
 ```

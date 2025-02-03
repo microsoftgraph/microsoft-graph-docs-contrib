@@ -3,8 +3,9 @@ title: "Update targetDeviceGroup"
 description: "Update the properties of a targetDeviceGroup object for remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # Update targetDeviceGroup

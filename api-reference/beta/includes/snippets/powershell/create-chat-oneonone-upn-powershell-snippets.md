@@ -12,18 +12,18 @@ $params = @{
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('alex@contoso.com')"
-		}
+			"owner"
+		)
+		"user@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+	}
+	@{
+		"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+		roles = @(
+		"owner"
 	)
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users('alex@contoso.com')"
+}
+)
 }
 
 New-MgBetaChat -BodyParameter $params

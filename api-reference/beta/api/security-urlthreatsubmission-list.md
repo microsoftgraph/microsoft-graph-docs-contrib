@@ -3,8 +3,9 @@ title: "List urlThreatSubmissions"
 description: "Get a list of the urlThreatSubmission objects and their properties."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List urlThreatSubmissions
@@ -112,7 +113,7 @@ Content-Type: application/json
     {
       "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/urlThreatSubmission/$entity",
       "@odata.type": "#microsoft.graph.security.urlThreatSubmission",
-      "category": "phishing",  
+      "category": "phishing",
       "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
       "createdDateTime": "2021-10-10T03:30:18.6890937Z",
       "contentType": "url",
@@ -123,7 +124,7 @@ Content-Type: application/json
         "user": {
           "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
           "displayName": "Ronald Admin",
-          "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+          "email": "tifc@contoso.com"
         }
       },
       "result": {

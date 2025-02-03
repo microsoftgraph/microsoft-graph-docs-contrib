@@ -2,9 +2,10 @@
 title: "internetExplorerMessageSetting enum type"
 description: "What message will be displayed by Edge before switching to Internet Explorer."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # internetExplorerMessageSetting enum type

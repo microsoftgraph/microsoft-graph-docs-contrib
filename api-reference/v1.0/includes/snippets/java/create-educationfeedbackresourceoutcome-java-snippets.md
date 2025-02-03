@@ -4,15 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationFeedbackResourceOutcome educationOutcome = new EducationFeedbackResourceOutcome();
+educationOutcome.setOdataType("#microsoft.graph.educationFeedbackResourceOutcome");
 EducationWordResource feedbackResource = new EducationWordResource();
-feedbackResource.displayName = "Document1.docx";
-educationOutcome.feedbackResource = feedbackResource;
+feedbackResource.setOdataType("#microsoft.graph.educationWordResource");
+feedbackResource.setDisplayName("Document1.docx");
+educationOutcome.setFeedbackResource(feedbackResource);
+EducationOutcome result = graphClient.education().classes().byEducationClassId("{educationClass-id}").assignments().byEducationAssignmentId("{educationAssignment-id}").submissions().byEducationSubmissionId("{educationSubmission-id}").outcomes().post(educationOutcome);
 
-graphClient.education().classes("37d99af7-cfc5-4e3b-8566-f7d40e4a2070").assignments("a3cce0ba-2008-4c4d-bf62-079408562d96").submissions("2185e6d7-2924-4ed1-dde1-269f89e29184").outcomes()
-	.buildRequest()
-	.post(educationOutcome);
 
 ```

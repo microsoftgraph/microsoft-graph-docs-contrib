@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: ThumbnailSet
 ms.localizationpriority: medium
 description: "The ThumbnailSet resource is a keyed collection of thumbnail resources."
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ It's used to represent a set of thumbnails associated with a DriveItem.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

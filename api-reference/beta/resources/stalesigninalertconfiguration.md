@@ -3,8 +3,10 @@ title: "staleSignInAlertConfiguration resource type"
 description: "Represents an alert configuration that is triggered if there are accounts in a privileged role that haven't signed into Microsoft Entra ID within a specified period."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Inactive account
+ms.date: 09/19/2024
 ---
 
 # staleSignInAlertConfiguration resource type
@@ -16,6 +18,11 @@ Namespace: microsoft.graph
 Represents an alert configuration that is triggered if there are accounts in a privileged role that haven't signed into Microsoft Entra ID within a specified period. These accounts might be service or shared accounts that aren't being maintained and are vulnerable to security threats.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) resource type.
 
 ## Properties
 |Property|Type|Description|
@@ -33,7 +40,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)| The definition of the alert that contains its description, impact, and measures to mitigate or prevent it. Supports `$expand`.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

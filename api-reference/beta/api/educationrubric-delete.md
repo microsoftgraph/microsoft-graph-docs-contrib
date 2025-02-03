@@ -3,8 +3,9 @@ title: "Delete educationRubric"
 description: "Delete an educationRubric object."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 07/30/2024
 ---
 
 # Delete educationRubric
@@ -50,7 +51,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -59,7 +60,7 @@ Here's an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/education/me/rubrics/{id}
+DELETE https://graph.microsoft.com/beta/education/me/rubrics/767f2532-1fdd-41a5-85de-1f641e7bb9fc
 ```
 
 # [C#](#tab/csharp)
@@ -98,7 +99,7 @@ DELETE https://graph.microsoft.com/beta/education/me/rubrics/{id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

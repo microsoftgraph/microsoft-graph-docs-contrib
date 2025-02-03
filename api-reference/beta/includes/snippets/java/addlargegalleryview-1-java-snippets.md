@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String clientContext = "785f4929-92ca-497b-863f-c778c77c9758";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.communications().calls("57dab8b1-894c-409a-b240-bd8beae78896")
-	.addLargeGalleryView(CallAddLargeGalleryViewParameterSet
-		.newBuilder()
-		.withClientContext(clientContext)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.communications.calls.item.addlargegalleryview.AddLargeGalleryViewPostRequestBody addLargeGalleryViewPostRequestBody = new com.microsoft.graph.beta.communications.calls.item.addlargegalleryview.AddLargeGalleryViewPostRequestBody();
+addLargeGalleryViewPostRequestBody.setClientContext("785f4929-92ca-497b-863f-c778c77c9758");
+var result = graphClient.communications().calls().byCallId("{call-id}").addLargeGalleryView().post(addLargeGalleryViewPostRequestBody);
+
 
 ```

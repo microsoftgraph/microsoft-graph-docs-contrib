@@ -4,8 +4,9 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Learn how to host your Microsoft Graph connector as a Windows service."
+ms.date: 11/07/2024
 ---
 
 # Host a Microsoft Graph connector as a Windows service

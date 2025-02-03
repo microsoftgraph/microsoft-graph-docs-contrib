@@ -3,8 +3,9 @@ title: "ediscoveryReviewTag: asHierarchy"
 description: "List tag as hierarchy*"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # ediscoveryReviewTag: asHierarchy
@@ -45,9 +46,9 @@ Don't supply a request body for this method.
 If successful, this function returns a `200 OK` response code and a [microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection in the response body.
 
 ## Examples
-
-### Request
-The following is an example of a request.
+### Example 1: Retrieve child tags of a specific eDiscovery 
+#### Request
+The following example shows a request that retrieves child tags.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-ceb
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -121,7 +122,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -137,7 +138,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -152,7 +153,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -168,7 +169,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -184,7 +185,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 },
                 "application": {
                     "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
@@ -194,6 +195,38 @@ Content-Type: application/json
             "childTags": []
         }
     ]
+}
+```
+
+### Example 2: Retrieve child tags of a specific eDiscovery review tag
+#### Request
+The following example shows a request that retrieves child tags.
+<!-- {
+  "blockType": "request",
+  "name": "ediscoveryreviewtagthis.childtags"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b6f72954-c7d0-414c-ad50-00167216cb03/tags/318f79767abf4b8fab4d8e37b3174c5a/childTags
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.security.ediscoveryReviewTag)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.security.ediscoveryReviewTag)",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET security/cases/ediscoveryCases('<guid>')/tags('<guid>')/childTags?$select=childSelectability",
+    "value": []
 }
 ```
 

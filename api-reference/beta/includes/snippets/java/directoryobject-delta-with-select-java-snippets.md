@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DirectoryObjectDeltaCollectionPage delta = graphClient.directoryObjects()
-	.delta()
-	.buildRequest()
-	.filter("isof('microsoft.graph.user') or isof('microsoft.graph.group')")
-	.select(",")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.directoryObjects().delta().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "isof('microsoft.graph.user') or isof('microsoft.graph.group')";
+	requestConfiguration.queryParameters.select = new String []{"microsoft.graph.user/surname", "microsoft.graph.group/displayName"};
+});
+
 
 ```

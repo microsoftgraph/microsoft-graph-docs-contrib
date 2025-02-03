@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Boolean moveToJunk = true;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().messages("AAMkADhAAATs28OAAA=")
-	.markAsJunk(MessageMarkAsJunkParameterSet
-		.newBuilder()
-		.withMoveToJunk(moveToJunk)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.users.item.messages.item.markasjunk.MarkAsJunkPostRequestBody markAsJunkPostRequestBody = new com.microsoft.graph.beta.users.item.messages.item.markasjunk.MarkAsJunkPostRequestBody();
+markAsJunkPostRequestBody.setMoveToJunk(true);
+var result = graphClient.me().messages().byMessageId("{message-id}").markAsJunk().post(markAsJunkPostRequestBody);
+
 
 ```

@@ -4,8 +4,9 @@ description: View the count of inactive GCP service accounts in your authorizati
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # inactiveGcpServiceAccountFinding: aggregatedSummary
@@ -33,7 +34,6 @@ GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inacti
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

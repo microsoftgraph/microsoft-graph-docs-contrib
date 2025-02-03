@@ -2,9 +2,10 @@
 title: "reportRoot: getSharePointSiteUsageDetail"
 description: "Get details about SharePoint site usage."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getSharePointSiteUsageDetail

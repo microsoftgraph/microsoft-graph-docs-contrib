@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SiteSource siteSource = new SiteSource();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.models.ediscovery.SiteSource siteSource = new com.microsoft.graph.beta.models.ediscovery.SiteSource();
 Site site = new Site();
-site.webUrl = "https://contoso.sharepoint.com/sites/SecretSite";
-siteSource.site = site;
+site.setWebUrl("https://contoso.sharepoint.com/sites/SecretSite");
+siteSource.setSite(site);
+com.microsoft.graph.models.ediscovery.SiteSource result = graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").legalHolds().byLegalHoldId("{legalHold-id}").siteSources().post(siteSource);
 
-graphClient.compliance().ediscovery().cases("c816dd6f-5af8-40c5-a760-331361e05c60").legalHolds("387566cc-38ae-4e85-ab4b-cd2dd34faa07").siteSources()
-	.buildRequest()
-	.post(siteSource);
 
 ```

@@ -3,8 +3,9 @@ title: "Get deleted item (directory object)"
 description: "Retrieve the properties of a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get deleted item (directory object)
@@ -55,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,8 +3,9 @@ title: "plannerExternalBucketSource resource type"
 description: "Contains information about the relationship of a plannerBucket to a user experience outside of Planner."
 author: "DanluCui"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # plannerExternalBucketSource resource type
@@ -31,7 +32,7 @@ This type is derived from [plannerBucketCreation](plannerBucketCreation.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerExternalBucketSource"

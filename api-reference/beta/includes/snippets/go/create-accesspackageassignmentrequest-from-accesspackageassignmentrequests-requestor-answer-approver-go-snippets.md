@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := "userAdd"
@@ -45,13 +45,14 @@ answers := []graphmodels.AccessPackageAnswerable {
 }
 requestBody.SetAnswers(answers)
 additionalData := map[string]interface{}{
-assignment := graphmodels.New()
+assignment := graph.New()
 accessPackageId := "977c7ff4-ef8f-4910-9d31-49048ddf3120"
 assignment.SetAccessPackageId(&accessPackageId) 
 	requestBody.SetAssignment(assignment)
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 assignmentRequests, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequests().Post(context.Background(), requestBody, nil)
 
 

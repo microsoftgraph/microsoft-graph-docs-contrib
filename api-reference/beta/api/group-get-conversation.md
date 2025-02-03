@@ -1,10 +1,11 @@
 ---
 title: "Get conversation"
-description: "Get a conversation object."
-author: "Jordanndahl"
+description: "Get a group's conversation."
+author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get conversation
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [conversation](../resources/conversation.md) object.
+Get a group's [conversation](../resources/conversation.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

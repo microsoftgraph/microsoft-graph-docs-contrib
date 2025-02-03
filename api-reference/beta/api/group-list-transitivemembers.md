@@ -2,9 +2,11 @@
 title: "List group transitive members"
 description: "Get a list of the group's members."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 11/30/2024
 ---
 
 # List group transitive members
@@ -13,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the group's members. A group can have different object types as members. For more information about supported member types for different groups, see [Group membership](../resources/groups-overview.md#group-membership).
+Get a list of a [group's](../resources/group.md) members. A group can have different object types as members. For more information about supported member types for different groups, see [Group membership](../resources/groups-overview.md#group-membership).
 
 This operation is transitive and returns a flat list of all nested members. An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error with the `Request_UnsupportedQuery` code.
 
@@ -26,9 +28,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_list_transitivemembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-list-transitivemembers-permissions.md)]
 
-> **Note:** To list the members of a hidden membership group, the _Member.Read.Hidden_ permission is required.
-
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> **Note:** To list the members of a hidden membership group, the _Member.Read.Hidden_ permission is required.
 
 ## HTTP request
 

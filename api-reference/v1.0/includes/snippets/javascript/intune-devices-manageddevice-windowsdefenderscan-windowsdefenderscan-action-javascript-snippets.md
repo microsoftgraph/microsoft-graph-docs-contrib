@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const windowsDefenderScan = Content-type: application/json
-Content-length: 25
-
-{
+const windowsDefenderScan = {
   quickScan: true
 };
 

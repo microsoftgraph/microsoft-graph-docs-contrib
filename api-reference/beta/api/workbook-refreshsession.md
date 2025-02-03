@@ -3,8 +3,9 @@ title: "Refresh Session"
 description: "Use this API to refresh an existing workbook session. "
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Refresh Session
@@ -42,7 +43,7 @@ If successful, this method returns `204 No Content` response code.
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,7 +94,7 @@ The workbook-session-id header is required.
 
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",

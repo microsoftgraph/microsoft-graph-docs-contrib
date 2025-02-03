@@ -4,8 +4,10 @@ description: "Represents a service in an authorization system that is onboarded 
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+toc.title: Services
+ms.date: 07/25/2024
 ---
 
 # authorizationSystemTypeService resource type

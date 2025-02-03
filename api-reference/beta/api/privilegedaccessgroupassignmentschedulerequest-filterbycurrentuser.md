@@ -3,8 +3,9 @@ title: "privilegedAccessGroupAssignmentScheduleRequest: filterByCurrentUser"
 description: "In PIM for groups, retrieve the requests for membership or ownership assignments for the calling principal to groups that are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # privilegedAccessGroupAssignmentScheduleRequest: filterByCurrentUser

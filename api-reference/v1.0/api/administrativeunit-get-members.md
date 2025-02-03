@@ -3,8 +3,9 @@ title: "Get a member"
 description: "Use this API to get a specific member (user, group, or device) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # Get a member
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "administrativeunit_get_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-get-members-permissions.md)]
+
+[!INCLUDE [rbac-admin-units-apis-read](../includes/rbac-for-apis/rbac-admin-units-apis-read.md)]
 
 ## HTTP request
 
@@ -42,7 +45,7 @@ If successful, this method returns a `200 OK` response code and a [user](../reso
 ## Example
 
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -54,10 +57,6 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9-4847-bbf2-dde106594bf4/members/5bde3e51-d13b-4db1-9948-fe4b109d11a7
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunit-members-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-administrativeunit-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -65,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9
 ---
 
 ### Response
-Here is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -87,11 +86,11 @@ Content-type: application/json
     "displayName": "MOD Administrator",
     "givenName": "MOD",
     "jobTitle": null,
-    "mail": "admin@M365x214355.onmicrosoft.com",
+    "mail": "admin@contoso.com",
     "mobilePhone": "5555555555",
     "officeLocation": null,
     "preferredLanguage": "en-US",
     "surname": "Administrator",
-    "userPrincipalName": "admin@M365x214355.onmicrosoft.com"
+    "userPrincipalName": "admin@contoso.com"
 }
 ```

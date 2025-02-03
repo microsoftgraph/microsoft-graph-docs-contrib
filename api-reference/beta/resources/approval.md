@@ -3,8 +3,9 @@ title: "approval resource type"
 description: "The approval object associated with a userConsentRequest, an accessPackageAssignmentRequest or a privilegedAccessGroupAssignmentScheduleRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # approval resource type
@@ -29,8 +30,8 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object in entitlement management and PIM. |
-|[filterByCurrentUser](../api/approval-filterbycurrentuser.md)| [approval](approval.md) collection| Retrieve the **approval** objects for an approver in entitlement management and PIM.|
+|[Get](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object in entitlement management and PIM. |
+|[Filter by current user](../api/approval-filterbycurrentuser.md)| [approval](approval.md) collection| Retrieve the **approval** objects for an approver in entitlement management and PIM.|
 
 ## Properties
 |Property|Type|Description|
@@ -44,7 +45,7 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 |steps|[approvalStep](../resources/approvalstep.md) collection|Used to represent the decision associated with a single step in the approval process configured in [approvalStage](../resources/approvalstage.md).|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.networkaccess().filteringProfiles("9020f79d-71f6-4650-83a9-6b532479578f").policies("d00cf227-8645-4ab8-bd99-a9b455fd83a3")
-	.buildRequest()
-	.delete();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.networkAccess().filteringProfiles().byFilteringProfileId("{filteringProfile-id}").policies().byPolicyLinkId("{policyLink-id}").delete();
+
 
 ```

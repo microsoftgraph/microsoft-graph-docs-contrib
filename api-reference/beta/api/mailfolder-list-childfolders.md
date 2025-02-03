@@ -3,8 +3,9 @@ title: "List childFolders"
 description: "Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level "
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # List childFolders
@@ -53,7 +54,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name          | Type   | Description               |
 |:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

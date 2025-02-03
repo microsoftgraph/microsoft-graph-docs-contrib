@@ -3,8 +3,9 @@ title: "targetResource resource type"
 description: "Represents target resource types associated with audit activity."
 ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # targetResource resource type
@@ -26,7 +27,7 @@ Represents target resource types associated with audit activity.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

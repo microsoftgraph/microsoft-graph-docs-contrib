@@ -3,8 +3,9 @@ title: "user: sendMail"
 description: "Send the message specified in the request body using either JSON or MIME format."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 <!-- markdownlint-disable MD001 MD022 MD024 MD033 MD051 -->
@@ -51,7 +52,7 @@ POST /users/{id | userPrincipalName}/sendMail
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------
-| Authorization  | string  | Bearer {token}. Required.|
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content.|
 
 ## Request body
@@ -103,14 +104,14 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "samanthab@contoso.onmicrosoft.com"
+          "address": "samanthab@contoso.com"
         }
       }
     ],
     "ccRecipients": [
       {
         "emailAddress": {
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       }
     ]
@@ -185,7 +186,7 @@ Content-type: application/json
       {
         "emailAddress": {
           "name": "Samantha Booth",
-          "address": "samanthab@contoso.onmicrosoft.com"
+          "address": "samanthab@contoso.com"
         }
       }
     ],
@@ -193,7 +194,7 @@ Content-type: application/json
       {
         "mentioned": {
           "name": "Dana Swope",
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       }
     ]
@@ -270,7 +271,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "AlexW@contoso.OnMicrosoft.com"
+          "address": "AlexW@contoso.com"
         }
       }
     ],
@@ -356,7 +357,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "meganb@contoso.onmicrosoft.com"
+          "address": "meganb@contoso.com"
         }
       }
     ],
@@ -453,7 +454,7 @@ MDRNQjY5ODFhcGNwXy0t
 ```
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -498,7 +499,7 @@ Content-type: application/json
   "toRecipients": [
     {
       "emailAddress": {
-        "address": "meganb@contoso.onmicrosoft.com"
+        "address": "meganb@contoso.com"
       }
     }
   ],

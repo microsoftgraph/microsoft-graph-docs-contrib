@@ -3,8 +3,9 @@ title: "message: reply"
 description: "Reply to the sender of a message using either JSON or MIME format."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # message: reply
@@ -86,13 +87,13 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"samanthab@contoso.onmicrosoft.com",
+          "address":"samanthab@contoso.com",
           "name":"Samantha Booth"
         }
       },
       {
         "emailAddress":{
-          "address":"randiw@contoso.onmicrosoft.com",
+          "address":"randiw@contoso.com",
           "name":"Randi Welch"
         }
       }

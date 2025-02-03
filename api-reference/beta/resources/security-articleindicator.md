@@ -3,8 +3,9 @@ title: "articleIndicator resource type"
 description: "Represents a resource that communicates indicators of threat or compromise related to the contents of an article."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # articleIndicator resource type
@@ -25,7 +26,7 @@ Inherits from [indicator](../resources/security-indicator.md).
 
 | Method                                                          | Return type                                                                            | Description                                                                                                      |
 | :-------------------------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
-| [Get articleIndicator](../api/security-articleindicator-get.md) | [microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) | Read the properties and relationships of a [articleIndicator](../resources/security-articleindicator.md) object. |
+| [Get article indicator](../api/security-articleindicator-get.md) | [microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) | Read the properties and relationships of a [articleIndicator](../resources/security-articleindicator.md) object. |
 
 ## Properties
 
@@ -42,7 +43,7 @@ Inherits from [indicator](../resources/security-indicator.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

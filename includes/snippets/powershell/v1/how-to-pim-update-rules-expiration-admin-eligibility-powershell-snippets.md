@@ -15,14 +15,14 @@ $params = @{
 		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
 		caller = "Admin"
 		operations = @(
-			"All"
-		)
-		level = "Eligibility"
-		inheritableSettings = @(
-		)
-		enforcedSettings = @(
-		)
-	}
+		"All"
+	)
+	level = "Eligibility"
+	inheritableSettings = @(
+	)
+	enforcedSettings = @(
+	)
+}
 }
 
 Update-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params

@@ -3,7 +3,8 @@ title: "Send Outlook messages from another user using the Outlook mail API"
 description: "Use Send As and Send On Behalf Of permissions to send Outlook messages as another user or shared mailbox in Microsoft Graph."
 author: "jasonjoh"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Send Outlook messages from another user

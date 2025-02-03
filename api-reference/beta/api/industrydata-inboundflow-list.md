@@ -3,8 +3,9 @@ title: "List inboundFlows"
 description: "Get a list of the inboundFlow objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 05/29/2024
 ---
 
 # List inboundFlows
@@ -57,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -131,6 +132,15 @@ Content-Type: application/json
       "expirationDateTime": "2023-03-13T11:10:46.924769Z",
       "id": "7bd62d17-8c37-4494-f68d-08daddab2911",
       "readinessStatus": "ready"
+    },
+    {
+      "@odata.type": "#microsoft.graph.industryData.inboundApiFlow",
+      "dataDomain": "educationRostering",
+      "displayName": "Inbound API Flow",
+      "effectiveDateTime": "2024-03-12T11:10:46.924769Z",
+      "expirationDateTime": "2024-03-13T11:10:46.924769Z",
+      "id": "af37f530-9eeb-4a68-862c-fca4baf6410e",
+      "readinessStatus": "ready",
     }
   ]
 }

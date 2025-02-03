@@ -3,8 +3,9 @@ title: "Get teamsAppSettings"
 description: "Read the properties and relationships of a teamsAppSettings object."
 author: "subray2014"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get teamsAppSettings
@@ -118,6 +119,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

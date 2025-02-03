@@ -3,8 +3,9 @@ title: "Get appRoleAssignment"
 description: "Read the properties and relationships of an appRoleAssignment object."
 author: "psignoret"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 10/16/2024
 ---
 
 # Get appRoleAssignment
@@ -14,48 +15,9 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [appRoleAssignment](../resources/approleassignment.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-
-<!--
-### For client service principals
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-<!--
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
-
-### For resource service principals
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-<!--
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
-
-### For groups
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-<!--
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
-
-### For users
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-<!--
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadBasic.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All |
-
--->
 
 The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -68,6 +30,18 @@ The following table shows the least privileged permission or permissions require
 | [user](../resources/user.md) | User.Read | Not supported. | Directory.Read.All |
 
 [!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
+
+### Other supported permissions
+
+The following higher privileged permissions are supported by each resource:
+- Groups:
+  - Delegated and application permissions: Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All
+- Users: 
+  - Delegated permissions: User.ReadBasic.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All
+  - Application permissions: Directory.Read.All, AppRoleAssignment.ReadWrite.All
+- Service principals:
+  - Delegated permissions: Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All
+  - Application permissions: Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All
 
 ## HTTP request
 

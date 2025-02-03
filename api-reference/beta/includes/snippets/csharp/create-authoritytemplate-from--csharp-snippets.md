@@ -8,16 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models.Security;
-using Microsoft.Graph.Beta.Models;
 
 var requestBody = new AuthorityTemplate
 {
 	OdataType = "#microsoft.graph.security.authorityTemplate",
-	DisplayName = "String",
-	CreatedBy = new IdentitySet
-	{
-		OdataType = "microsoft.graph.identitySet",
-	},
+	DisplayName = "Business",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -3,8 +3,9 @@ title: "authenticationAttributeCollectionPage resource type"
 description: "Represents the attribute collection page that is part of a self-service user flow for external identities."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # authenticationAttributeCollectionPage resource type
@@ -25,7 +26,7 @@ Represents the attribute collection page that is part of a self-service user flo
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationAttributeCollectionPage"

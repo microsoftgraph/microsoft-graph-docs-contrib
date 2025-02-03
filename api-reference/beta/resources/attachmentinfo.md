@@ -3,8 +3,9 @@ title: "attachmentInfo resource type"
 description: "Represents the attributes of an attachment."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # attachmentInfo resource type
@@ -27,7 +28,7 @@ Represents the attributes of an attachment.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.attachmentInfo"

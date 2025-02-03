@@ -3,8 +3,9 @@ title: "tenantInfo resource type"
 description: "Represents information for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # tenantInfo resource type
@@ -24,7 +25,7 @@ Represents information for a managed tenant.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.tenantInfo"

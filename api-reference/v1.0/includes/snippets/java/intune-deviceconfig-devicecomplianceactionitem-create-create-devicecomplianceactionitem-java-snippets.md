@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceComplianceActionItem deviceComplianceActionItem = new DeviceComplianceActionItem();
-deviceComplianceActionItem.gracePeriodHours = 0;
-deviceComplianceActionItem.actionType = DeviceComplianceActionType.NOTIFICATION;
-deviceComplianceActionItem.notificationTemplateId = "Notification Template Id value";
-LinkedList<String> notificationMessageCCListList = new LinkedList<String>();
-notificationMessageCCListList.add("Notification Message CCList value");
-deviceComplianceActionItem.notificationMessageCCList = notificationMessageCCListList;
+deviceComplianceActionItem.setOdataType("#microsoft.graph.deviceComplianceActionItem");
+deviceComplianceActionItem.setGracePeriodHours(0);
+deviceComplianceActionItem.setActionType(DeviceComplianceActionType.Notification);
+deviceComplianceActionItem.setNotificationTemplateId("Notification Template Id value");
+LinkedList<String> notificationMessageCCList = new LinkedList<String>();
+notificationMessageCCList.add("Notification Message CCList value");
+deviceComplianceActionItem.setNotificationMessageCCList(notificationMessageCCList);
+DeviceComplianceActionItem result = graphClient.deviceManagement().deviceCompliancePolicies().byDeviceCompliancePolicyId("{deviceCompliancePolicy-id}").scheduledActionsForRule().byDeviceComplianceScheduledActionForRuleId("{deviceComplianceScheduledActionForRule-id}").scheduledActionConfigurations().post(deviceComplianceActionItem);
 
-graphClient.deviceManagement().deviceCompliancePolicies("{deviceCompliancePolicyId}").scheduledActionsForRule("{deviceComplianceScheduledActionForRuleId}").scheduledActionConfigurations()
-	.buildRequest()
-	.post(deviceComplianceActionItem);
 
 ```

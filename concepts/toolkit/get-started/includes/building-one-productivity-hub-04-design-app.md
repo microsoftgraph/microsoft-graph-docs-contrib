@@ -1,5 +1,6 @@
 ---
 ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD041 -->
@@ -158,7 +159,11 @@ Under the div tagged with `class="row"`, add the File list component inside the 
         <script src='main.js'></script>
       </head>
       <body>
-        <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
+        <script type="module">
+          import { registerMgtComponents, registerMgtMsal2Provider } from "https://unpkg.com/@microsoft/mgt@4";
+          registerMgtMsal2Provider();
+          registerMgtComponents();
+        </script>
         <mgt-msal2-provider
             client-id="<YOUR_CLIENT_ID>"
             scopes="User.Read,

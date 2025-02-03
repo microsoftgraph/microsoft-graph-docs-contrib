@@ -3,8 +3,9 @@ title: "List authenticationEventListeners"
 description: "Get a list of the authenticationEventListener objects and their properties."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/16/2024
 ---
 
 # List authenticationEventListeners
@@ -30,6 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "identitycontainer_list_authenticationeventlisteners" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identitycontainer-list-authenticationeventlisteners-permissions.md)]
+
+[!INCLUDE [rbac-custom-auth-ext-apis-read](../includes/rbac-for-apis/rbac-custom-auth-ext-apis-read.md)]
 
 ## HTTP request
 
@@ -59,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

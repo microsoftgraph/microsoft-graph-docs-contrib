@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,17 +15,15 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
-requestParameters := &graphpolicies.PoliciesCrossTenantAccessPolicyPartnersRequestBuilderGetQueryParameters{
+requestParameters := &graphpolicies.CrossTenantAccessPolicyPartnersRequestBuilderGetQueryParameters{
 	Select: [] string {"tenantId"},
 	Expand: [] string {"identitySynchronization"},
 }
-configuration := &graphpolicies.PoliciesCrossTenantAccessPolicyPartnersRequestBuilderGetRequestConfiguration{
+configuration := &graphpolicies.CrossTenantAccessPolicyPartnersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 partners, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Get(context.Background(), configuration)
 
 

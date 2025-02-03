@@ -3,8 +3,9 @@ title: "informationalUrl resource type"
 description: "Basic profile information of the application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 03/21/2024
 ---
 
 # informationalUrl resource type
@@ -25,8 +26,11 @@ Basic profile information of the application.
 |supportUrl|String| Link to the application's support page. For example, https://www.contoso.com/app/support |
 |termsOfServiceUrl|String| Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice |
 
+## Relationships
+None.
+
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

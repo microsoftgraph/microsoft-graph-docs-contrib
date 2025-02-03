@@ -3,8 +3,9 @@ title: "whoisRecord resource type"
 description: "Represents a WHOIS record that contains information about a registered host, the contacts for the registered host, and other metadata about the registration."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # whoisRecord resource type
@@ -23,8 +24,8 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List whoisRecords](../api/security-threatintelligence-list-whoisrecords.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) collection|Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
-|[Get whoisRecord](../api/security-whoisrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|Get the specified [whoisRecord](../resources/security-whoisrecord.md) resource.|
+|[List](../api/security-threatintelligence-list-whoisrecords.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) collection|Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
+|[Get](../api/security-whoisrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|Get the specified [whoisRecord](../resources/security-whoisrecord.md) resource.|
 
 ## Properties
 
@@ -58,7 +59,7 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

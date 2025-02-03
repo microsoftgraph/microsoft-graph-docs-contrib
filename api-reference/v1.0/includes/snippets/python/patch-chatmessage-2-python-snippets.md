@@ -4,10 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph import GraphServiceClient
+from msgraph.generated.models.chat_message import ChatMessage
+from msgraph.generated.models.chat_message_type import ChatMessageType
+from msgraph.generated.models.chat_message_importance import ChatMessageImportance
+from msgraph.generated.models.chat_message_from_identity_set import ChatMessageFromIdentitySet
+from msgraph.generated.models.identity import Identity
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.body_type import BodyType
+from msgraph.generated.models.chat_message_attachment import ChatMessageAttachment
+from msgraph.generated.models.chat_message_mention import ChatMessageMention
+from msgraph.generated.models.chat_message_mentioned_identity_set import ChatMessageMentionedIdentitySet
+from msgraph.generated.models.chat_message_reaction import ChatMessageReaction
+from msgraph.generated.models.chat_message_history_item import ChatMessageHistoryItem
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ChatMessage(
 	message_type = ChatMessageType.Message,
 	deleted_date_time = None,

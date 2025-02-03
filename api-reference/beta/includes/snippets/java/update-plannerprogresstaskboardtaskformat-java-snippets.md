@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "return=representation"));
-requestOptions.add(new HeaderOption("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PlannerProgressTaskBoardTaskFormat plannerProgressTaskBoardTaskFormat = new PlannerProgressTaskBoardTaskFormat();
-plannerProgressTaskBoardTaskFormat.orderHint = "A6673H Ejkl!";
+plannerProgressTaskBoardTaskFormat.setOrderHint("A6673H Ejkl!");
+PlannerProgressTaskBoardTaskFormat result = graphClient.planner().tasks().byPlannerTaskId("{plannerTask-id}").progressTaskBoardFormat().patch(plannerProgressTaskBoardTaskFormat, requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "return=representation");
+	requestConfiguration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
 
-graphClient.planner().tasks("{id}").progressTaskBoardFormat()
-	.buildRequest( requestOptions )
-	.patch(plannerProgressTaskBoardTaskFormat);
 
 ```

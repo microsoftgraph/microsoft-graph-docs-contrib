@@ -3,8 +3,9 @@ title: "invitationParticipantInfo resource type"
 description: "Represents an entity that is being invited to a group call."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # invitationParticipantInfo resource type
@@ -26,9 +27,12 @@ Represents an entity that is being invited to a group call.
 | removeFromDefaultAudioRoutingGroup | Boolean                       | Optional. Whether to remove them from the main mixer. |
 | hidden                             | Boolean                       | Optional. Whether to hide the participant from the roster. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

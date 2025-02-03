@@ -3,8 +3,9 @@ title: "searchRequest resource type"
 description: "The search request to be sent to the query endpoint. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the fields request and the actual search query."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # searchRequest resource type
@@ -17,7 +18,7 @@ Namespace: microsoft.graph
 
 A search request formatted in a JSON blob. 
 
-The JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, sort options, requested aggregations and fields, and actual search query. See [examples](#see-also) of search requests on various resources.
+The JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, sort options, requested aggregations and fields, and actual search query. See [examples](#related-content) of search requests on various resources.
 
 > [!NOTE]
 > Be aware of [known limitations](search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results.
@@ -46,7 +47,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -78,7 +79,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [Use query templates](/graph/search-concept-query-template)
 - [Search mail messages](/graph/search-concept-messages)
 - [Search calendar events](/graph/search-concept-events)

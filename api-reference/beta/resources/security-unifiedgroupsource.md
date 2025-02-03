@@ -3,8 +3,9 @@ title: "unifiedGroupSource resource type"
 description: "The container for a custodian's group."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # unifiedGroupSource resource type
@@ -42,7 +43,7 @@ None.
 |group|[group](../resources/group.md)|Represents a group.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -4,8 +4,9 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Learn about the connection management API and models in the Microsoft Graph connectors SDK."
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph connectors SDK connection management API and models
@@ -76,6 +77,6 @@ Request model to get the schema response of the data source.
 |status |[OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details such as error messages. |
 |dataSourceSchema |[DataSourceSchema](/graph/custom-connector-sdk-contracts-common#datasourceschema) |Shows the data source schema.|
 
-## See also
+## Related content
 
 * [Microsoft Graph connectors API schema resource type](/graph/api/resources/externalconnectors-schema)

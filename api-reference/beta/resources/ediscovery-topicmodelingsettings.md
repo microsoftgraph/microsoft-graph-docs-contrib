@@ -3,8 +3,9 @@ title: "topicModelingSettings resource type"
 description: "Article modeling settings for an eDiscovery case"
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # topicModelingSettings resource type
@@ -30,7 +31,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ediscovery.topicModelingSettings"

@@ -3,8 +3,9 @@ title: "virtualEndpoint: retrieveScopedPermissions"
 description: "Get the permissions and corresponding scope IDs for which the authenticated user has access."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/24/2024
 ---
 
 # virtualEndpoint: retrieveScopedPermissions
@@ -235,7 +236,7 @@ Content-Type: application/json
 
 #### Request
 
-When the signed-in user has the Microsoft Entra Global admin role, the Windows 365 admin role, or the Intune admin role assigned by Microsoft Entra ID, the returned permission is *\**, and no scope IDs are returned. In these cases, queries aren't supported.
+When the signed-in user has an admin role such as the Intune admin or the Windows 365 admin role assigned by Microsoft Entra ID, the returned permission is *\**, and no scope IDs are returned. In these cases, queries aren't supported.
 
 # [HTTP](#tab/http)
 <!-- {

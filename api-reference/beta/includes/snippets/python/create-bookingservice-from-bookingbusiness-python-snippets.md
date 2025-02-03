@@ -4,10 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.booking_service import BookingService
+from msgraph_beta.generated.models.location import Location
+from msgraph_beta.generated.models.physical_address import PhysicalAddress
+from msgraph_beta.generated.models.booking_price_type import BookingPriceType
+from msgraph_beta.generated.models.booking_reminder import BookingReminder
+from msgraph_beta.generated.models.booking_reminder_recipients import BookingReminderRecipients
+from msgraph_beta.generated.models.booking_scheduling_policy import BookingSchedulingPolicy
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = BookingService(
 	odata_type = "#microsoft.graph.bookingService",
 	default_duration = "PT1H30M",
@@ -55,6 +61,7 @@ request_body = BookingService(
 	display_name = "Bento",
 	is_location_online = True,
 	sms_notifications_enabled = True,
+	is_customer_allowed_to_manage_booking = True,
 	language_tag = "en-US",
 	is_hidden_from_customers = False,
 	notes = "Home-cooked special",
@@ -80,7 +87,7 @@ request_body = BookingService(
 	}
 )
 
-result = await graph_client.booking_businesses.by_booking_business_id('bookingBusiness-id').services.post(request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').services.post(request_body)
 
 
 ```

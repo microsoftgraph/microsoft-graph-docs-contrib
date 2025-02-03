@@ -3,8 +3,9 @@ title: "baseTask: move"
 description: "Move a baseTask object from one baseTaskList to another."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # baseTask: move (deprecated)

@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: RenameAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # RenameAction resource type
@@ -17,6 +17,16 @@ Namespace: microsoft.graph
 The presence of the **RenameAction** resource on an [**itemActivity**][activity] indicates that the activity renamed an item.
 
 [activity]: itemactivity.md
+
+## Properties
+
+| Property | Type   | Description                    |
+| :------- | :----- | :----------------------------- |
+| oldName  | string | The previous name of the item. |
+| newName  | string | The new name of the item.      |
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -32,13 +42,6 @@ The presence of the **RenameAction** resource on an [**itemActivity**][activity]
   "newName": "string"
 }
 ```
-
-## Properties
-
-| Property | Type   | Description                    |
-| :------- | :----- | :----------------------------- |
-| oldName  | string | The previous name of the item. |
-| newName  | string | The new name of the item.      |
 
 ## Remarks
 

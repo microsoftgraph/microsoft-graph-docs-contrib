@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ExternalGroup externalGroup = new ExternalGroup();
-externalGroup.id = "31bea3d537902000";
-externalGroup.displayName = "Contoso Marketing";
-externalGroup.description = "The product marketing team";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.external().connections("contosohr").groups()
-	.buildRequest()
-	.post(externalGroup);
+com.microsoft.graph.beta.models.externalconnectors.ExternalGroup externalGroup = new com.microsoft.graph.beta.models.externalconnectors.ExternalGroup();
+externalGroup.setId("31bea3d537902000");
+externalGroup.setDisplayName("Contoso Marketing");
+externalGroup.setDescription("The product marketing team");
+com.microsoft.graph.models.externalconnectors.ExternalGroup result = graphClient.external().connections().byExternalConnectionId("{externalConnection-id}").groups().post(externalGroup);
+
 
 ```

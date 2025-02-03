@@ -3,8 +3,9 @@ title: "Get unifiedRoleAssignmentSchedule"
 description: "Retrieve the schedule for an active role assignment operation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get unifiedRoleAssignmentSchedule
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "unifiedroleassignmentschedule_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentschedule-get-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 

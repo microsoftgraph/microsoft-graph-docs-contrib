@@ -4,29 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CustomTaskExtension customTaskExtension = new CustomTaskExtension();
-customTaskExtension.displayName = "Grant manager access to mailbox and OneDrive";
-customTaskExtension.description = "Grant manager access to mailbox and OneDrive";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.models.identitygovernance.CustomTaskExtension customTaskExtension = new com.microsoft.graph.beta.models.identitygovernance.CustomTaskExtension();
+customTaskExtension.setDisplayName("Grant manager access to mailbox and OneDrive");
+customTaskExtension.setDescription("Grant manager access to mailbox and OneDrive");
 LogicAppTriggerEndpointConfiguration endpointConfiguration = new LogicAppTriggerEndpointConfiguration();
-endpointConfiguration.subscriptionId = "c500b67c-e9b7-4ad2-a90d-77d41385ae55";
-endpointConfiguration.resourceGroupName = "RG-LCM";
-endpointConfiguration.logicAppWorkflowName = "ManagerAccess";
-customTaskExtension.endpointConfiguration = endpointConfiguration;
+endpointConfiguration.setOdataType("#microsoft.graph.logicAppTriggerEndpointConfiguration");
+endpointConfiguration.setSubscriptionId("c500b67c-e9b7-4ad2-a90d-77d41385ae55");
+endpointConfiguration.setResourceGroupName("RG-LCM");
+endpointConfiguration.setLogicAppWorkflowName("ManagerAccess");
+customTaskExtension.setEndpointConfiguration(endpointConfiguration);
 AzureAdTokenAuthentication authenticationConfiguration = new AzureAdTokenAuthentication();
-authenticationConfiguration.resourceId = "542dc01a-0b5d-4edc-b3f9-5cfe6393f557";
-customTaskExtension.authenticationConfiguration = authenticationConfiguration;
+authenticationConfiguration.setOdataType("#microsoft.graph.azureAdTokenAuthentication");
+authenticationConfiguration.setResourceId("542dc01a-0b5d-4edc-b3f9-5cfe6393f557");
+customTaskExtension.setAuthenticationConfiguration(authenticationConfiguration);
 CustomExtensionClientConfiguration clientConfiguration = new CustomExtensionClientConfiguration();
-clientConfiguration.maximumRetries = 1;
-clientConfiguration.timeoutInMilliseconds = 1000;
-customTaskExtension.clientConfiguration = clientConfiguration;
-CustomTaskExtensionCallbackConfiguration callbackConfiguration = new CustomTaskExtensionCallbackConfiguration();
-callbackConfiguration.timeoutDuration = DatatypeFactory.newInstance().newDuration("PT5M");
-customTaskExtension.callbackConfiguration = callbackConfiguration;
+clientConfiguration.setOdataType("#microsoft.graph.customExtensionClientConfiguration");
+clientConfiguration.setMaximumRetries(1);
+clientConfiguration.setTimeoutInMilliseconds(1000);
+customTaskExtension.setClientConfiguration(clientConfiguration);
+com.microsoft.graph.beta.models.identitygovernance.CustomTaskExtensionCallbackConfiguration callbackConfiguration = new com.microsoft.graph.beta.models.identitygovernance.CustomTaskExtensionCallbackConfiguration();
+callbackConfiguration.setOdataType("#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration");
+PeriodAndDuration timeoutDuration = PeriodAndDuration.ofDuration(Duration.parse("PT5M"));
+callbackConfiguration.setTimeoutDuration(timeoutDuration);
+customTaskExtension.setCallbackConfiguration(callbackConfiguration);
+com.microsoft.graph.models.identitygovernance.CustomTaskExtension result = graphClient.identityGovernance().lifecycleWorkflows().customTaskExtensions().post(customTaskExtension);
 
-graphClient.identityGovernance().lifecycleWorkflows().customTaskExtensions()
-	.buildRequest()
-	.post(customTaskExtension);
 
 ```

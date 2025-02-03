@@ -3,7 +3,8 @@ title: "Use the Microsoft Search API to search Outlook messages"
 description: "You can use the Microsoft Search API in Microsoft Graph to search for information in email messages and return messages ranked by relevance."
 author: "knightsu"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Search API to search Outlook messages

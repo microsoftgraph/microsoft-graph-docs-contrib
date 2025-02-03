@@ -3,8 +3,9 @@ title: "plannerTaskCreation resource type"
 description: "Contains information about the origin of the plannerTask."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # plannerTaskCreation resource type
@@ -23,7 +24,7 @@ The resources that derive from plannerPlanCreation contain information about the
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerTaskCreation"

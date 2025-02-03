@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewComplianceManagementPartner()
 lastHeartbeatDateTime , err := time.Parse(time.RFC3339, "2016-12-31T23:59:37.9174975-08:00")
@@ -66,6 +66,7 @@ iosEnrollmentAssignments := []graphmodels.ComplianceManagementPartnerAssignmenta
 }
 requestBody.SetIosEnrollmentAssignments(iosEnrollmentAssignments)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 complianceManagementPartners, err := graphClient.DeviceManagement().ComplianceManagementPartners().ByComplianceManagementPartnerId("complianceManagementPartner-id").Patch(context.Background(), requestBody, nil)
 
 

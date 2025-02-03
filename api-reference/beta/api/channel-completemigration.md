@@ -3,8 +3,9 @@ title: "channel: completeMigration"
 description: "Complete the migration of external messages by removing migration mode from a channel."
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # channel: completeMigration

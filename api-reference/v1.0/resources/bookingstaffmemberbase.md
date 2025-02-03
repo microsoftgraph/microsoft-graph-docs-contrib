@@ -3,8 +3,9 @@ title: "bookingStaffMemberBase resource type"
 description: "Abstract base type for Bookings staff members."
 author: "davisjms"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # bookingStaffMemberBase resource type
@@ -22,7 +23,7 @@ Base type of [bookingStaffMember](bookingstaffmember.md).
 |id|String|ID of the staff member. Inherited from [entity](../resources/entity.md).|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

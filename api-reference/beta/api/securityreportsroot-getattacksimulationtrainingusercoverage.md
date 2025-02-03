@@ -3,8 +3,9 @@ title: "securityReportsRoot: getAttackSimulationTrainingUserCoverage"
 description: "List training coverage for tenant users in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # securityReportsRoot: getAttackSimulationTrainingUserCoverage
@@ -51,7 +52,7 @@ If successful, this function returns a `200 OK` response code and an [attackSimu
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -139,5 +140,5 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 [reportRoot: getAttackSimulationTrainingUserCoverage](reportroot-getattacksimulationtrainingusercoverage.md) (deprecated)

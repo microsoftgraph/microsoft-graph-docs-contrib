@@ -3,7 +3,8 @@ title: "Supported call types in the cloud communications API"
 description: "Learn about the supported call types in the cloud communications API in Microsoft Graph and how they're used for the signaling process."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
+ms.date: 11/07/2024
 ---
 
 # Supported call types
@@ -32,7 +33,7 @@ Currently, bots are able to:
 - Invite other participants into an existing group call
 - Be invited into existing group calls
 
-## See also
+## Related content
 
 - [Teams API overview](teams-concept-overview.md)
 - [Permissions for calls](./permissions-reference.md)

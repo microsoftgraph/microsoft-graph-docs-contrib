@@ -2,9 +2,10 @@
 title: "assignmentFilterTypeAndEvaluationResult resource type"
 description: "Represents the filter type and evalaution result of the filter."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # assignmentFilterTypeAndEvaluationResult resource type

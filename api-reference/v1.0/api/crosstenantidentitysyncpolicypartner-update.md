@@ -3,8 +3,9 @@ title: "Update crossTenantIdentitySyncPolicyPartner"
 description: "Update the user synchronization policy of a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Update crossTenantIdentitySyncPolicyPartner
@@ -20,9 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "crosstenantidentitysyncpolicypartner_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantidentitysyncpolicypartner-update-permissions.md)]
 
-The signed-in user must also be assigned the following minimum [directory role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-* Security Administrator
+[!INCLUDE [rbac-xtap-apis-write](../includes/rbac-for-apis/rbac-xtap-apis-write.md)]
 
 ## HTTP request
 
@@ -58,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,10 +75,6 @@ Content-Type: application/json
   }
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-crosstenantidentitysyncpolicypartner-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantidentitysyncpolicypartner-javascript-snippets.md)]

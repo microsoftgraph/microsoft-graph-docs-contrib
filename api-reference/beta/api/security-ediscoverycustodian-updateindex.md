@@ -3,8 +3,9 @@ title: "ediscoveryCustodian: updateIndex"
 description: "Trigger an indexOperation to make a custodian and associated sources searchable."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # ediscoveryCustodian: updateIndex
@@ -14,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Trigger an [indexOperation](../resources/security-ediscoveryIndexOperation.md)
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

@@ -3,8 +3,9 @@ title: Dismiss riskyUser
 description: Dismiss the risk of a riskyUser object.
 author: tracyshi
 ms.localizationpriority: medium
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # riskyUser: dismiss
@@ -25,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskyusers_dismiss" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskyusers-dismiss-permissions.md)]
 
-[!INCLUDE [rbac-identity-protection-apis-write](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
+[!INCLUDE [rbac-identity-protection-apis-write](../includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +49,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 ## Examples
 <!--### Example 1: Dismiss risky users-->
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +111,7 @@ HTTP/1.1 204 No Content
 <!--
 ### Example 2: Dismiss a risky user
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -128,7 +129,7 @@ Content-Type: application/json
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

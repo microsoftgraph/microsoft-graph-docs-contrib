@@ -3,8 +3,9 @@ title: "Get bookingBusiness"
 description: "Get the properties and relationships of a bookingBusiness object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 08/02/2024
 ---
 
 # Get bookingBusiness
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [bookingBusiness](../resources/bookingbusiness.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -27,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}
+GET /solutions/bookingbusinesses/{id}
 ```
 
 ## Optional query parameters
@@ -37,7 +38,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -55,10 +56,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_bookingbusiness",
-  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/fabrikam@contoso.com
 ```
 
 # [C#](#tab/csharp)
@@ -85,10 +86,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicros
 [!INCLUDE [sample-code](../includes/snippets/php/get-bookingbusiness-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingbusiness-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-bookingbusiness-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -108,8 +105,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses/$entity",
-    "id":"Fabrikam@contoso.onmicrosoft.com",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses/$entity",
+    "id":"Fabrikam@contoso.com",
     "displayName":"Fabrikam",
     "businessType":"",
     "phone":"206-555-0100",

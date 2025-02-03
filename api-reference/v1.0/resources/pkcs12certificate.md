@@ -3,8 +3,9 @@ title: "pkcs12Certificate resource type"
 description: "Represents the configuration for uploading a pkcs12Certificate."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # pkcs12Certificate resource type
@@ -24,7 +25,7 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.pkcs12Certificate"

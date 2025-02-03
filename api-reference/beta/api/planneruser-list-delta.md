@@ -3,8 +3,9 @@ title: "Planner: delta"
 description: "Retrieves changes to objects that the user is subscribed to."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Planner: delta
@@ -65,7 +66,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ##### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -113,7 +114,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ---
 
 ##### Response
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown might be shortened for readability. All the changed properties will be returned from an actual call.
 

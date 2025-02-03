@@ -4,36 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String displayName = "Test Printer";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String manufacturer = "Test Printer Manufacturer";
-
-String model = "Test Printer Model";
-
-
-
-Boolean hasPhysicalDevice = false;
-
+com.microsoft.graph.beta.print.printers.create.CreatePostRequestBody createPostRequestBody = new com.microsoft.graph.beta.print.printers.create.CreatePostRequestBody();
+createPostRequestBody.setDisplayName("Test Printer");
+createPostRequestBody.setManufacturer("Test Printer Manufacturer");
+createPostRequestBody.setModel("Test Printer Model");
+createPostRequestBody.setPhysicalDeviceId(null);
+createPostRequestBody.setHasPhysicalDevice(false);
 PrintCertificateSigningRequest certificateSigningRequest = new PrintCertificateSigningRequest();
-certificateSigningRequest.content = "{content}";
-certificateSigningRequest.transportKey = "{sampleTransportKey}";
+certificateSigningRequest.setContent("{content}");
+certificateSigningRequest.setTransportKey("{sampleTransportKey}");
+createPostRequestBody.setCertificateSigningRequest(certificateSigningRequest);
+createPostRequestBody.setConnectorId(null);
+graphClient.print().printers().create().post(createPostRequestBody);
 
-
-
-graphClient.print().printers()
-	.create(PrinterCreateParameterSet
-		.newBuilder()
-		.withDisplayName(displayName)
-		.withManufacturer(manufacturer)
-		.withModel(model)
-		.withPhysicalDeviceId(physicalDeviceId)
-		.withHasPhysicalDevice(hasPhysicalDevice)
-		.withCertificateSigningRequest(certificateSigningRequest)
-		.withConnectorId(connectorId)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

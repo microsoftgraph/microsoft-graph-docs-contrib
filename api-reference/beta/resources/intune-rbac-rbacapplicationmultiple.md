@@ -2,9 +2,10 @@
 title: "rbacApplicationMultiple resource type"
 description: "Intune Rbac Rbacapplicationmultiple Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # rbacApplicationMultiple resource type
@@ -26,7 +27,6 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String||
 
 ## Relationships
 None
@@ -41,7 +41,6 @@ Here is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.rbacApplicationMultiple",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.rbacApplicationMultiple"
 }
 ```

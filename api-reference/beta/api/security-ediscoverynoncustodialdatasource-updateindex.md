@@ -3,8 +3,9 @@ title: "ediscoveryNoncustodialDataSource: updateIndex"
 description: "Trigger an indexOperation to make a non-custodial data source and its associated data source searchable."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # ediscoveryNoncustodialDataSource: updateIndex
@@ -48,7 +49,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +96,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

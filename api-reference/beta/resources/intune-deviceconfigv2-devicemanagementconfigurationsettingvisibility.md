@@ -2,9 +2,10 @@
 title: "deviceManagementConfigurationSettingVisibility enum type"
 description: "Supported setting types"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementConfigurationSettingVisibility enum type
@@ -24,3 +25,4 @@ Supported setting types
 |settingsCatalog|1|Visible to setting catalog policy type.|
 |template|2|Visible to template policy type.|
 |unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+|inventoryCatalog|8|Visible to inventory catalog policy type.|

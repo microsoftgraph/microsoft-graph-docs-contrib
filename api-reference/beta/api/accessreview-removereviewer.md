@@ -3,8 +3,9 @@ title: "Remove accessReview reviewer (deprecated)"
 description: "Remove an access review reviewer."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Remove accessReview reviewer (deprecated)

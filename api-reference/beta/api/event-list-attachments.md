@@ -3,8 +3,9 @@ title: "List attachments"
 description: "Retrieve a list of attachment objects attached to an event."
 author: "svpsiva"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # List attachments
@@ -51,7 +52,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -65,7 +66,7 @@ If successful, this method returns a `200 OK` response code and collection of [A
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +114,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "event_get_attachments_beta",

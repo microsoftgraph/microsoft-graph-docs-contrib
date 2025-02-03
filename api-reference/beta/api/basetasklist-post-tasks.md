@@ -3,8 +3,9 @@ title: "Create baseTask"
 description: "Create a new baseTask object in a specific baseTaskList."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create baseTask (deprecated)

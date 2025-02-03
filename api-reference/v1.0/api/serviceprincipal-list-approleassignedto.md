@@ -3,8 +3,9 @@ title: "List appRoleAssignments granted for a service principal"
 description: "Retrieve a list of app role assignments granted for a service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 10/15/2024
 ---
 
 # List appRoleAssignments granted for a service principal
@@ -28,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_list_approleassignedto" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-approleassignedto-permissions.md)]
 
-[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
+[!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
 
 ## HTTP request
 
@@ -62,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request to retrieve the app roles assignments that have been granted for a given resource service principal.
+The following example shows a request to retrieve the app roles assignments that have been granted for a given resource service principal.
 
 
 # [HTTP](#tab/http)
@@ -111,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-5
 
 ### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 

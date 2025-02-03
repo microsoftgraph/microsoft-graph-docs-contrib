@@ -2,9 +2,10 @@
 title: "reportRoot: getYammerActivityCounts"
 description: "Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getYammerActivityCounts

@@ -29,6 +29,11 @@ $params = @{
 						isRequired = $false
 						sequence = 
 						isSingleLineQuestion = $true
+						text = @{
+							defaultText = "Title"
+							localizedTexts = @(
+							)
+						}
 					}
 				}
 				attributeDestination = @{

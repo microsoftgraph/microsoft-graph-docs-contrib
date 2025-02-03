@@ -3,8 +3,9 @@ title: "List roleEligibilityScheduleInstances"
 description: "Get the instances of role eligibilities."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List roleEligibilityScheduleInstances
@@ -19,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "rbacapplication_list_roleeligibilityscheduleinstances" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roleeligibilityscheduleinstances-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 

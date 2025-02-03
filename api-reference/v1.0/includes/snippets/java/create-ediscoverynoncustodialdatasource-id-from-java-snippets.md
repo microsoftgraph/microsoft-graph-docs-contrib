@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryNoncustodialDataSource ediscoveryNoncustodialDataSource = new EdiscoveryNoncustodialDataSource();
-SiteSource dataSource = new SiteSource();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.EdiscoveryNoncustodialDataSource ediscoveryNoncustodialDataSource = new com.microsoft.graph.models.security.EdiscoveryNoncustodialDataSource();
+com.microsoft.graph.models.security.SiteSource dataSource = new com.microsoft.graph.models.security.SiteSource();
+dataSource.setOdataType("microsoft.graph.security.siteSource");
 Site site = new Site();
-site.webUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret";
-dataSource.site = site;
-ediscoveryNoncustodialDataSource.dataSource = dataSource;
+site.setWebUrl("https://m365x809305.sharepoint.com/sites/Design-topsecret");
+dataSource.setSite(site);
+ediscoveryNoncustodialDataSource.setDataSource(dataSource);
+com.microsoft.graph.models.security.EdiscoveryNoncustodialDataSource result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").noncustodialDataSources().post(ediscoveryNoncustodialDataSource);
 
-graphClient.security().cases().ediscoveryCases("b0073e4e-4184-41c6-9eb7-8c8cc3e2288b").noncustodialDataSources()
-	.buildRequest()
-	.post(ediscoveryNoncustodialDataSource);
 
 ```

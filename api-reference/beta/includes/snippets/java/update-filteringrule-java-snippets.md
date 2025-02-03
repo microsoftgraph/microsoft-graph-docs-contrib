@@ -4,21 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-WebCategoryFilteringRule policyRule = new WebCategoryFilteringRule();
-policyRule.name = "Gambling and Storage cateogries";
-LinkedList<RuleDestination> destinationsList = new LinkedList<RuleDestination>();
-WebCategory destinations = new WebCategory();
-destinations.name = "Gambling";
-destinationsList.add(destinations);
-WebCategory destinations1 = new WebCategory();
-destinations1.name = "WebRepositoryAndStorage";
-destinationsList.add(destinations1);
-policyRule.destinations = destinationsList;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.networkaccess().filteringPolicies("bb1d249e-0691-477c-aae4-adfca179746a").policyRules("4619a550-7466-41ac-bdd9-b118bb6e004a")
-	.buildRequest()
-	.patch(policyRule);
+com.microsoft.graph.beta.models.networkaccess.WebCategoryFilteringRule policyRule = new com.microsoft.graph.beta.models.networkaccess.WebCategoryFilteringRule();
+policyRule.setOdataType("#microsoft.graph.networkaccess.webCategoryFilteringRule");
+policyRule.setName("Gambling and Storage cateogries");
+LinkedList<com.microsoft.graph.beta.models.networkaccess.RuleDestination> destinations = new LinkedList<com.microsoft.graph.beta.models.networkaccess.RuleDestination>();
+com.microsoft.graph.beta.models.networkaccess.WebCategory ruleDestination = new com.microsoft.graph.beta.models.networkaccess.WebCategory();
+ruleDestination.setOdataType("#microsoft.graph.networkaccess.webCategory");
+ruleDestination.setName("Gambling");
+destinations.add(ruleDestination);
+com.microsoft.graph.beta.models.networkaccess.WebCategory ruleDestination1 = new com.microsoft.graph.beta.models.networkaccess.WebCategory();
+ruleDestination1.setOdataType("#microsoft.graph.networkaccess.webCategory");
+ruleDestination1.setName("WebRepositoryAndStorage");
+destinations.add(ruleDestination1);
+policyRule.setDestinations(destinations);
+com.microsoft.graph.models.networkaccess.PolicyRule result = graphClient.networkAccess().filteringPolicies().byFilteringPolicyId("{filteringPolicy-id}").policyRules().byPolicyRuleId("{policyRule-id}").patch(policyRule);
+
 
 ```

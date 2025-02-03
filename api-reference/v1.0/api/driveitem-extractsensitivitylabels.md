@@ -3,8 +3,9 @@ title: "driveItem: extractSensitivityLabels"
 description: "Extract one or more sensitivity labels assigned to a drive item."
 author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # driveItem: extractSensitivityLabels
@@ -69,7 +70,7 @@ The following are the possible values for the error types.
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -86,7 +87,7 @@ POST https://graph.microsoft.com/v1.0/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

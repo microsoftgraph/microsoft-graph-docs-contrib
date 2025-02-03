@@ -3,8 +3,9 @@ title: "List customAppScopes"
 description: "Get a list of customAppScope objects for an RBAC provider."
 ms.localizationpriority: medium
 author: "cubika"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # List customAppScopes

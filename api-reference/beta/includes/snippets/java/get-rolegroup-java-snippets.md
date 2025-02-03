@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RoleGroup roleGroup = graphClient.external().industryData().roleGroups("students")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.industrydata.RoleGroup result = graphClient.external().industryData().roleGroups().byRoleGroupId("{roleGroup-id}").get();
+
 
 ```

@@ -2,9 +2,10 @@
 title: "Delete teamsApp"
 description: "Delete an app from an organization's app catalog (the tenant app catalog)."
 ms.localizationpriority: medium
-author: "nkramer"
-ms.prod: "microsoft-teams"
+author: "MSFTRickyCastaneda"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # Delete teamsApp
@@ -23,20 +24,40 @@ You can also use this API to remove a submitted app from the review process.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
->**Note:** Only global administrators can call this API. 
+> [!NOTE]
+> - The Directory.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using this permissions going forward.
+> - You can only use the AppCatalog.Submit permission to delete app definitions in review.
+> - Only Teams Service admins or a higher privileged role can call this API.
 
-| Permission Type                        | Permissions (from least to most privileged)|
-|:----------------------------------     |:-------------|
-| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
-| Delegated (personal Microsoft account) | Not supported.|
-| Application                            | Not supported. |
+Permissions for the following HTTP request:
 
-> **Note:**
->
-> * Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
-> * You can only use the `AppCatalog.Submit` permission to delete app definitions in review.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /appCatalogs/teamsApps/{id}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "teamsapp_delete", 
+  "requestUrls": ["DELETE /appCatalogs/teamsApps/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamsapp-delete-permissions.md)]
+
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
+```
+<!-- { 
+  "blockType": "permissions", 
+  "name": "teamsapp_delete_2", 
+  "requestUrls": ["DELETE /appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamsapp-delete-2-permissions.md)]
+
 
 ## HTTP request
 
@@ -48,7 +69,7 @@ To delete an app from the app catalog:
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-To delete an app that has been submitted but has not been approved:
+To delete an app that is submitted but isn't yet approved:
 
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
@@ -134,6 +155,6 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

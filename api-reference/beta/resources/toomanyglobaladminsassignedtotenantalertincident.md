@@ -3,8 +3,10 @@ title: "tooManyGlobalAdminsAssignedToTenantAlertIncident resource type"
 description: "Represents the details of an alert incident that is triggered if there are too many accounts assigned the Global Administrator role in the tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Too many Global Administrators
+ms.date: 09/19/2024
 ---
 
 # tooManyGlobalAdminsAssignedToTenantAlertIncident resource type
@@ -19,6 +21,11 @@ The threshold that triggers this incident when its reached is defined in the [to
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) resource type.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -31,7 +38,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

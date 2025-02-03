@@ -3,8 +3,9 @@ title: "List approvalSteps"
 description: "List approval steps associated with an approval object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # List approvalSteps
@@ -19,7 +20,7 @@ List the [approvalStep](../resources/approvalstep.md) objects associated with an
 - In [PIM for Microsoft Entra roles](../resources/privilegedidentitymanagementv3-overview.md), providing the identifier of the [role assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md).
 - In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,6 +30,8 @@ The following tables show the least privileged permission or permissions require
 
 <!-- { "blockType": "permissions", "name": "approval_list_steps" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approval-list-steps-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 <a name='for-pim-for-azure-ad-roles'></a>
 

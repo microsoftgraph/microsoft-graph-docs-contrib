@@ -3,8 +3,9 @@ title: "Get ediscoverySearch"
 description: "Read the properties and relationships of an ediscoverySearch object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Get ediscoverySearch
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and an [microsoft.gr
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,7 +124,7 @@ Content-Type: application/json
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "80ccca67-54bd-44ab-8625-4b79c4dc7775",

@@ -11,8 +11,8 @@ using Microsoft.Graph.Models.Security;
 
 var requestBody = new UserSource
 {
-	Email = "admin@M365x809305.onmicrosoft.com",
-	IncludedSources = SourceType.Mailbox | SourceType.Site,
+	Email = "admin@contoso.com",
+	IncludedSources = SourceType.Mailbox,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

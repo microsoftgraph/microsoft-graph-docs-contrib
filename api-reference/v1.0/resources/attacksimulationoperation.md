@@ -3,8 +3,9 @@ title: "attackSimulationOperation resource type"
 description: "Represents the status of a long-running attack simulation training operation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # attackSimulationOperation resource type
@@ -19,7 +20,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get attackSimulationOperation](../api/attacksimulationoperation-get.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get an attack simulation operation to track a long-running operation request for a tenant.|
+|[Get](../api/attacksimulationoperation-get.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get an attack simulation operation to track a long-running operation request for a tenant.|
 
 ## Properties
 
@@ -73,7 +74,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 - [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)
 - [Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).

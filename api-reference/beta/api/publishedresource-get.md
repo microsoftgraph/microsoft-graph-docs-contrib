@@ -3,8 +3,9 @@ title: "Get publishedResource"
 description: "Retrieve the properties and relationships of a [publishedResource](../resources/publishedresource.md) object."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Get publishedResource

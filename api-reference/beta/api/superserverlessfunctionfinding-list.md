@@ -4,8 +4,9 @@ description: "Get a list of the superServerlessFunctionFinding objects and their
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # List superServerlessFunctionFinding objects
@@ -140,7 +141,7 @@ Content-Type: application/json
           "source": {
             "@odata.type": "graph.aadSource",
             "identityProviderType": "aad",
-            "domain": "mciemc1.onmicrosoft.com"
+            "domain": "contoso.com"
           },
           "authorizationSystem": {
             "@odata.type": "graph.azureAuthorizationSystem",

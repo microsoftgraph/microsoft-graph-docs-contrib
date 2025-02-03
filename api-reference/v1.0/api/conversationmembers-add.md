@@ -4,7 +4,8 @@ description: "Add members in bulk to a team."
 author: "abshar-teams"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 08/19/2024
 ---
 
 # conversationMember: add
@@ -12,6 +13,9 @@ ms.prod: "microsoft-teams"
 Namespace: microsoft.graph
 
 Add multiple members in a single request to a [team](../resources/team.md). The response provides details about which memberships could and couldn't be created.
+
+> [!NOTE]
+> Sometimes it takes time to reflect the addition of a member after they are added. Users can use [change notifications](../resources/change-notifications-api-overview.md) to subscribe to notifications for membership changes in a particular team.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -225,7 +229,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -256,7 +260,7 @@ Content-Type: application/json
 ```
 
 
-## See also
+## Related content
 
 - [Add member to a team](team-post-members.md)
 

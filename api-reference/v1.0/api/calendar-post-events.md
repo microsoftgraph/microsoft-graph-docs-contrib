@@ -3,15 +3,16 @@ title: "Create event"
 description: "Use this API to create a new event in the default or the specified calendar."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create event
 
 Namespace: microsoft.graph
 
-Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md). 
+Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -91,7 +92,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"adelev@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -136,7 +137,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -221,14 +222,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Megan Bowen",
-            "address": "MeganB@contoso.OnMicrosoft.com"
+            "address": "MeganB@contoso.com"
         }
     }
 }
@@ -268,7 +269,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"adelev@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -314,7 +315,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -398,14 +399,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Megan Bowen",
-            "address": "MeganB@contoso.OnMicrosoft.com"
+            "address": "MeganB@contoso.com"
         }
     },
     "onlineMeeting": {

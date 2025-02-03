@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TokenIssuancePolicy tokenIssuancePolicy = new TokenIssuancePolicy();
-LinkedList<String> definitionList = new LinkedList<String>();
-definitionList.add("definition-value");
-tokenIssuancePolicy.definition = definitionList;
-tokenIssuancePolicy.displayName = "displayName-value";
-tokenIssuancePolicy.isOrganizationDefault = true;
+LinkedList<String> definition = new LinkedList<String>();
+definition.add("definition-value");
+tokenIssuancePolicy.setDefinition(definition);
+tokenIssuancePolicy.setDisplayName("displayName-value");
+tokenIssuancePolicy.setIsOrganizationDefault(true);
+TokenIssuancePolicy result = graphClient.policies().tokenIssuancePolicies().byTokenIssuancePolicyId("{tokenIssuancePolicy-id}").patch(tokenIssuancePolicy);
 
-graphClient.policies().tokenIssuancePolicies("{id}")
-	.buildRequest()
-	.patch(tokenIssuancePolicy);
 
 ```

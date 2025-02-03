@@ -3,8 +3,9 @@ title: "Add attachment"
 description: "Use this API to create a new Attachment."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Add attachment
@@ -39,7 +40,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
@@ -51,7 +52,7 @@ If successful, this method returns `201 Created` response code and [Attachment](
 
 ## Example (File attachment)
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +110,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->
@@ -174,7 +175,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be
+The following example shows the response. Note: The response object shown here may be
 truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response"

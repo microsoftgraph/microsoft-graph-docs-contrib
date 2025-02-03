@@ -3,8 +3,9 @@ title: "List entries"
 description: "Get a list of catalogEntry resources from the catalog."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: autopatch
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # List entries
@@ -56,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +105,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -4,7 +4,8 @@ title: "List columns in a site"
 description: "List columns in a site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
+ms.date: 04/05/2024
 ---
 
 # List columns in a site

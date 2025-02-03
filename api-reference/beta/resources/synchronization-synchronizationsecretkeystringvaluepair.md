@@ -4,7 +4,8 @@ description: "Represents a single secret value."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
+ms.date: 03/21/2024
 ---
 
 # synchronizationSecretKeyStringValuePair resource type
@@ -31,9 +32,12 @@ Represents a single secret value.
 |SyncAll    |Determines scope of sync between all users and groups or only ones that are assigned. When provisioning users into applications, the value is generally "True".|
 |SkipOutOfScopeDeletions |Determines if accounts that go out of scope are/aren't disabled in the target.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

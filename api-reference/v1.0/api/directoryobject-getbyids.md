@@ -3,8 +3,9 @@ title: "directoryObject: getByIds"
 description: "Returns the directory objects specified in a list of IDs."
 author: "keylimesoda"
 ms.localizationpriority: high
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # directoryObject: getByIds

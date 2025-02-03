@@ -1,10 +1,11 @@
 ---
 title: "Get multiValueLegacyExtendedProperty"
-description: "expand`."
+description: "Get a resource instance that contains a multi-value extended property by using $expand."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: non-product-specific
+ms.subservice: non-product-specific
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get multiValueLegacyExtendedProperty
@@ -281,7 +282,7 @@ Content-type: application/json
     "organizer": {
         "emailAddress": {
             "name": "MOD Administrator",
-            "address": "admin@M365x39866865.OnMicrosoft.com"
+            "address": "admin@contoso.com"
         }
     },
     "onlineMeeting": null,

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta device-management virtual-endpoint reports get-inaccessible-cloud-pc-reports post --body '{\
   "filter": "region eq 'westus2'",\
   "orderBy": [\

@@ -3,8 +3,9 @@ title: "List accessReviewInstanceDecisionItem pending approval"
 description: "Retrieve accessReviewInstanceDecisionItem objects pending approval by the calling user."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List accessReviewInstanceDecisionItems pending approval (deprecated)
@@ -163,7 +164,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 - [Get accessReviewInstance](accessreviewinstance-get.md)

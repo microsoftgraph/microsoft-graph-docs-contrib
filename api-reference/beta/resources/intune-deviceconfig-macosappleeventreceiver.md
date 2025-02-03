@@ -2,9 +2,10 @@
 title: "macOSAppleEventReceiver resource type"
 description: "Represents a process that can receive an Apple Event notification."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # macOSAppleEventReceiver resource type

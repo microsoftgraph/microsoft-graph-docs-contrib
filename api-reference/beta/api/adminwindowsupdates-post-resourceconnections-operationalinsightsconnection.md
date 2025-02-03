@@ -3,8 +3,9 @@ title: "Create operationalInsightsConnection"
 description: "Create a new operationalInsightsConnection object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 08/31/2024
 ---
 
 # Create operationalInsightsConnection
@@ -66,7 +67,7 @@ The following errors are possible:
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -4,10 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.x509_certificate_authentication_method_configuration import X509CertificateAuthenticationMethodConfiguration
+from msgraph_beta.generated.models.authentication_method_state import AuthenticationMethodState
+from msgraph_beta.generated.models.x509_certificate_user_binding import X509CertificateUserBinding
+from msgraph_beta.generated.models.x509_certificate_authentication_mode_configuration import X509CertificateAuthenticationModeConfiguration
+from msgraph_beta.generated.models.x509_certificate_authentication_mode import X509CertificateAuthenticationMode
+from msgraph_beta.generated.models.x509_certificate_rule import X509CertificateRule
+from msgraph_beta.generated.models.x509_certificate_rule_type import X509CertificateRuleType
+from msgraph_beta.generated.models.x509_certificate_issuer_hints_configuration import X509CertificateIssuerHintsConfiguration
+from msgraph_beta.generated.models.x509_certificate_issuer_hints_state import X509CertificateIssuerHintsState
+from msgraph_beta.generated.models.authentication_method_target import AuthenticationMethodTarget
+from msgraph_beta.generated.models.authentication_method_target_type import AuthenticationMethodTargetType
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = X509CertificateAuthenticationMethodConfiguration(
 	odata_type = "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
 	id = "X509Certificate",

@@ -3,8 +3,9 @@ title: "teamworkOnPremisesCalendarSyncConfiguration resource type"
 description: "Represents the details about the account used to sync calendars in the Microsoft Teams client of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkOnPremisesCalendarSyncConfiguration resource type
@@ -23,8 +24,11 @@ Represents the details about the account used to sync calendars in the Microsoft
 |smtpAddress|String|The Simple Mail Transfer Protocol (SMTP) address of the user account. This is only required if a different user principal name (UPN) is used to sign in to Exchange other than Microsoft Teams and Skype for Business. This is a common scenario in a hybrid environment where an on-premises Exchange server is used.|
 
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkOnPremisesCalendarSyncConfiguration"

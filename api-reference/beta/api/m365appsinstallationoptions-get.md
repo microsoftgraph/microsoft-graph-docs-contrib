@@ -3,8 +3,9 @@ title: "Get m365AppsInstallationOptions"
 description: "Read the properties of an m365AppsInstallationOptions object."
 author: "yan-git"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 09/19/2024
 ---
 
 # Get m365AppsInstallationOptions
@@ -23,9 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/m365appsinstallationoptions-get-permissions.md)]
 
 When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-+ Global administrator
-+ Global reader
-+ Office apps administrator
++ Office apps administrator (recommended)
++ Global Reader
 
 ## HTTP request
 
@@ -50,7 +50,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object in the response body.
 
 ## Examples
 

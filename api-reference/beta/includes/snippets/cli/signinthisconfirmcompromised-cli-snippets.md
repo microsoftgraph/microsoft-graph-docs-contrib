@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta audit-logs sign-ins confirm-compromised post --body '{\
   "requestIds": [\
     "f01c6af6-6683-4a37-a945-0a925501eede",\

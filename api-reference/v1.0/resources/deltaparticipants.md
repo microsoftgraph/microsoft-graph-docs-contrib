@@ -3,8 +3,9 @@ title: "deltaParticipants resource type"
 description: "Represents a notification for the creation, update, or deletion of a participant in a meeting."
 author: "sasthana"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # deltaParticipants resource type

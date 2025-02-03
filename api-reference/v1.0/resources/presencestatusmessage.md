@@ -3,8 +3,9 @@ title: "presenceStatusMessage resource type"
 description: "Represents a presence status message related to the presence of a user in Microsoft Teams."
 author: "afedorov"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # presenceStatusMessage resource type
@@ -23,7 +24,7 @@ Represents a presence status message related to the [presence](presence.md) of a
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

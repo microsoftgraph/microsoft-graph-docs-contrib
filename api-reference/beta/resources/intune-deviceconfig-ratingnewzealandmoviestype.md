@@ -2,9 +2,10 @@
 title: "ratingNewZealandMoviesType enum type"
 description: "Movies rating labels in New Zealand"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # ratingNewZealandMoviesType enum type

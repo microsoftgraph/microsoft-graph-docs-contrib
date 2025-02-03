@@ -4,46 +4,63 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AppManagementPolicy appManagementPolicy = new AppManagementPolicy();
-appManagementPolicy.displayName = "Credential management policy";
-appManagementPolicy.description = "Cred policy sample";
-appManagementPolicy.isEnabled = true;
-AppManagementConfiguration restrictions = new AppManagementConfiguration();
-LinkedList<PasswordCredentialConfiguration> passwordCredentialsList = new LinkedList<PasswordCredentialConfiguration>();
-PasswordCredentialConfiguration passwordCredentials = new PasswordCredentialConfiguration();
-passwordCredentials.restrictionType = AppCredentialRestrictionType.PASSWORD_ADDITION;
-passwordCredentials.maxLifetime = DatatypeFactory.newInstance().newDuration("null");
-passwordCredentials.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2019-10-19T10:37:00Z");
-passwordCredentialsList.add(passwordCredentials);
-PasswordCredentialConfiguration passwordCredentials1 = new PasswordCredentialConfiguration();
-passwordCredentials1.restrictionType = AppCredentialRestrictionType.PASSWORD_LIFETIME;
-passwordCredentials1.maxLifetime = DatatypeFactory.newInstance().newDuration("P4DT12H30M5S");
-passwordCredentials1.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2014-10-19T10:37:00Z");
-passwordCredentialsList.add(passwordCredentials1);
-PasswordCredentialConfiguration passwordCredentials2 = new PasswordCredentialConfiguration();
-passwordCredentials2.restrictionType = AppCredentialRestrictionType.SYMMETRIC_KEY_ADDITION;
-passwordCredentials2.maxLifetime = DatatypeFactory.newInstance().newDuration("null");
-passwordCredentials2.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2019-10-19T10:37:00Z");
-passwordCredentialsList.add(passwordCredentials2);
-PasswordCredentialConfiguration passwordCredentials3 = new PasswordCredentialConfiguration();
-passwordCredentials3.restrictionType = AppCredentialRestrictionType.SYMMETRIC_KEY_LIFETIME;
-passwordCredentials3.maxLifetime = DatatypeFactory.newInstance().newDuration("P4D");
-passwordCredentials3.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2014-10-19T10:37:00Z");
-passwordCredentialsList.add(passwordCredentials3);
-restrictions.passwordCredentials = passwordCredentialsList;
-LinkedList<KeyCredentialConfiguration> keyCredentialsList = new LinkedList<KeyCredentialConfiguration>();
-KeyCredentialConfiguration keyCredentials = new KeyCredentialConfiguration();
-keyCredentials.restrictionType = AppKeyCredentialRestrictionType.ASYMMETRIC_KEY_LIFETIME;
-keyCredentials.maxLifetime = DatatypeFactory.newInstance().newDuration("P90D");
-keyCredentials.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2014-10-19T10:37:00Z");
-keyCredentialsList.add(keyCredentials);
-restrictions.keyCredentials = keyCredentialsList;
-appManagementPolicy.restrictions = restrictions;
+appManagementPolicy.setDisplayName("Credential management policy");
+appManagementPolicy.setDescription("Cred policy sample");
+appManagementPolicy.setIsEnabled(true);
+CustomAppManagementConfiguration restrictions = new CustomAppManagementConfiguration();
+LinkedList<PasswordCredentialConfiguration> passwordCredentials = new LinkedList<PasswordCredentialConfiguration>();
+PasswordCredentialConfiguration passwordCredentialConfiguration = new PasswordCredentialConfiguration();
+passwordCredentialConfiguration.setRestrictionType(AppCredentialRestrictionType.PasswordAddition);
+passwordCredentialConfiguration.setState(AppManagementRestrictionState.Enabled);
+passwordCredentialConfiguration.setMaxLifetime(null);
+OffsetDateTime restrictForAppsCreatedAfterDateTime = OffsetDateTime.parse("2019-10-19T10:37:00Z");
+passwordCredentialConfiguration.setRestrictForAppsCreatedAfterDateTime(restrictForAppsCreatedAfterDateTime);
+passwordCredentials.add(passwordCredentialConfiguration);
+PasswordCredentialConfiguration passwordCredentialConfiguration1 = new PasswordCredentialConfiguration();
+passwordCredentialConfiguration1.setRestrictionType(AppCredentialRestrictionType.PasswordLifetime);
+passwordCredentialConfiguration1.setState(AppManagementRestrictionState.Enabled);
+PeriodAndDuration maxLifetime1 = PeriodAndDuration.ofDuration(Duration.parse("P90D"));
+passwordCredentialConfiguration1.setMaxLifetime(maxLifetime1);
+OffsetDateTime restrictForAppsCreatedAfterDateTime1 = OffsetDateTime.parse("2014-10-19T10:37:00Z");
+passwordCredentialConfiguration1.setRestrictForAppsCreatedAfterDateTime(restrictForAppsCreatedAfterDateTime1);
+passwordCredentials.add(passwordCredentialConfiguration1);
+PasswordCredentialConfiguration passwordCredentialConfiguration2 = new PasswordCredentialConfiguration();
+passwordCredentialConfiguration2.setRestrictionType(AppCredentialRestrictionType.SymmetricKeyAddition);
+passwordCredentialConfiguration2.setState(AppManagementRestrictionState.Enabled);
+passwordCredentialConfiguration2.setMaxLifetime(null);
+OffsetDateTime restrictForAppsCreatedAfterDateTime2 = OffsetDateTime.parse("2019-10-19T10:37:00Z");
+passwordCredentialConfiguration2.setRestrictForAppsCreatedAfterDateTime(restrictForAppsCreatedAfterDateTime2);
+passwordCredentials.add(passwordCredentialConfiguration2);
+PasswordCredentialConfiguration passwordCredentialConfiguration3 = new PasswordCredentialConfiguration();
+passwordCredentialConfiguration3.setRestrictionType(AppCredentialRestrictionType.SymmetricKeyLifetime);
+passwordCredentialConfiguration3.setState(AppManagementRestrictionState.Enabled);
+PeriodAndDuration maxLifetime3 = PeriodAndDuration.ofDuration(Duration.parse("P90D"));
+passwordCredentialConfiguration3.setMaxLifetime(maxLifetime3);
+OffsetDateTime restrictForAppsCreatedAfterDateTime3 = OffsetDateTime.parse("2014-10-19T10:37:00Z");
+passwordCredentialConfiguration3.setRestrictForAppsCreatedAfterDateTime(restrictForAppsCreatedAfterDateTime3);
+passwordCredentials.add(passwordCredentialConfiguration3);
+restrictions.setPasswordCredentials(passwordCredentials);
+LinkedList<KeyCredentialConfiguration> keyCredentials = new LinkedList<KeyCredentialConfiguration>();
+restrictions.setKeyCredentials(keyCredentials);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+ applicationRestrictions = new ();
+ identifierUris = new ();
+ nonDefaultUriAddition = new ();
+nonDefaultUriAddition.setState("disabled");
+nonDefaultUriAddition.setRestrictForAppsCreatedAfterDateTime(null);
+nonDefaultUriAddition.setExcludeAppsReceivingV2Tokens(true);
+nonDefaultUriAddition.setExcludeSaml(true);
+identifierUris.setNonDefaultUriAddition(nonDefaultUriAddition);
+applicationRestrictions.setIdentifierUris(identifierUris);
+additionalData.put("applicationRestrictions", applicationRestrictions);
+restrictions.setAdditionalData(additionalData);
+appManagementPolicy.setRestrictions(restrictions);
+AppManagementPolicy result = graphClient.policies().appManagementPolicies().post(appManagementPolicy);
 
-graphClient.policies().appManagementPolicies()
-	.buildRequest()
-	.post(appManagementPolicy);
 
 ```

@@ -2,9 +2,10 @@
 title: "zebraFotaScheduleMode enum type"
 description: "Represents various schedule modes for Zebra FOTA deployment."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # zebraFotaScheduleMode enum type

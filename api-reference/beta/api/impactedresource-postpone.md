@@ -3,8 +3,9 @@ title: "impactedResource: postpone"
 description: "Postpone action on an impactedResource object to a specified future date and time."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # impactedResource: postpone
@@ -58,7 +59,7 @@ If successful, this action returns a `200 OK` response code and a [impactedResou
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

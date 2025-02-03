@@ -3,8 +3,9 @@ title: "customExtensionOverwriteConfiguration resource type"
 description: "Configuration regarding properties of the custom extension that can be overwritten per event listener."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # customExtensionOverwriteConfiguration resource type

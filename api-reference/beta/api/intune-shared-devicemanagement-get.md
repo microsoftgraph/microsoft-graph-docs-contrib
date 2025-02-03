@@ -2,9 +2,10 @@
 title: "Get deviceManagement"
 description: "Read properties and relationships of the deviceManagement object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get deviceManagement
@@ -17,7 +18,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
-## Permissions
+        ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -66,6 +67,8 @@ One of the following permissions is required to call this API. To learn more, in
 | &nbsp; &nbsp; **Telecom expense management** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {

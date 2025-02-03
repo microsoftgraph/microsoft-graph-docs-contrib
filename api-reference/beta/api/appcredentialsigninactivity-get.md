@@ -4,7 +4,8 @@ doc_type: apiPageType
 description: "Get an appCredentialSignInActivity object that contains recent activity of an application credential."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
+ms.date: 04/04/2024
 ---
 
 # Get appCredentialSignInActivity
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "appcredentialsigninactivity_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/appcredentialsigninactivity-get-permissions.md)]
+
+[!INCLUDE [rbac-usage-insights-apis](../includes/rbac-for-apis/rbac-usage-insights-apis.md)]
 
 ## HTTP request
 
@@ -53,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an [appCredentia
 
 ### Request
 
-The following is an example of a request that shows how to get an **appCredentialSignInActivity** object based on its ID.
+The following example shows a request that gets an **appCredentialSignInActivity** object based on its ID.
 
 # [HTTP](#tab/http)
 <!-- {

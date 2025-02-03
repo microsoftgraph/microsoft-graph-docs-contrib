@@ -3,8 +3,9 @@ title: "application: removePassword"
 description: "Remove a password from an application"
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # application: removePassword

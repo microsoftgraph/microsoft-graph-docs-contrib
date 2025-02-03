@@ -3,8 +3,9 @@ title: "authenticationAppPolicyDetails resource type"
 description: "Provides details of the Microsoft Entra policies applied to a user and client authentication app during the authentication step."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # authenticationAppPolicyDetails resource type
@@ -27,7 +28,7 @@ Provides details of the Microsoft Entra policies applied to a user and client au
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationAppPolicyDetails"

@@ -3,8 +3,9 @@ title: "accessReviewRecurrenceSettings resource type (deprecated)"
 description: "Specifies that the access review recurs at regular intervals."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # accessReviewRecurrenceSettings resource type (deprecated)
@@ -25,6 +26,9 @@ The **accessReviewRecurrenceSettings** resource type is used in the [accessRevie
 | recurrenceEndType | String | How the recurrence ends. Possible values: `never`, `endBy`, `occurrences`, or `recurrenceCount`. If it's `never`, then there's no explicit end of the recurrence series. If it's `endBy`, then the recurrence ends at a certain date. If it's `occurrences`, then the series ends after `recurrenceCount` instances of the review have completed. |
 | durationInDays | Int32 | The duration in days for recurrence. |
 | recurrenceCount | Int32 | The count of recurrences, if the value of **recurrenceEndType** is `occurrences`, or `0` otherwise. |
+
+## Relationships
+None.
 
 ## JSON representation
 

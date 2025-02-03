@@ -4,7 +4,8 @@ description: "Retrieve the list of apps installed in the personal scope of the s
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 04/04/2024
 ---
 
 # List apps installed for user
@@ -332,7 +333,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

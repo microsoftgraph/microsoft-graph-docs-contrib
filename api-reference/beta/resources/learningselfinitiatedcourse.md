@@ -3,8 +3,9 @@ title: "learningSelfInitiatedCourse resource type"
 description: "Represents the details of a learning course activity that is self-initiated by a user."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # learningSelfInitiatedCourse resource type
@@ -35,7 +36,7 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -56,6 +57,6 @@ The following is a JSON representation of the resource.
   "learningProviderId": "String",
   "learnerUserId": "String",
   "startedDateTime": "String (timestamp)",
-  "status": {"@odata.type": "microsoft.graph.courseStatus"}
+  "status": "String"
 }
 ```

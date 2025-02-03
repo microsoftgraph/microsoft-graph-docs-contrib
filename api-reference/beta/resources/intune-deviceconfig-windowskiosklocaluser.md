@@ -2,9 +2,10 @@
 title: "windowsKioskLocalUser resource type"
 description: "The class used to identify a local account for the kiosk configuration"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsKioskLocalUser resource type

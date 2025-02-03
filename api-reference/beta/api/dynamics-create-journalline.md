@@ -5,8 +5,9 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create journalLines
@@ -50,7 +51,7 @@ If successful, this method returns ```201 Created``` response code and **journal
 
 **Request**
 
-Here is an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines

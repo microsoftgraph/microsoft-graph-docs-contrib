@@ -2,9 +2,10 @@
 title: "getTopMobileApps function"
 description: "Intune Shared Mobileapp Gettopmobileapps Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # getTopMobileApps function
@@ -17,7 +18,9 @@ Namespace: microsoft.graph
 
 
 
-## Permissions
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|

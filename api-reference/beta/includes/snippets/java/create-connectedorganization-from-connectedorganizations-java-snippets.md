@@ -4,21 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ConnectedOrganization connectedOrganization = new ConnectedOrganization();
-connectedOrganization.displayName = "Connected organization name";
-connectedOrganization.description = "Connected organization description";
-LinkedList<IdentitySource> identitySourcesList = new LinkedList<IdentitySource>();
-DomainIdentitySource identitySources = new DomainIdentitySource();
-identitySources.domainName = "example.com";
-identitySources.displayName = "example.com";
-identitySourcesList.add(identitySources);
-connectedOrganization.identitySources = identitySourcesList;
-connectedOrganization.state = ConnectedOrganizationState.PROPOSED;
+connectedOrganization.setDisplayName("Connected organization name");
+connectedOrganization.setDescription("Connected organization description");
+LinkedList<IdentitySource> identitySources = new LinkedList<IdentitySource>();
+DomainIdentitySource identitySource = new DomainIdentitySource();
+identitySource.setOdataType("#microsoft.graph.domainIdentitySource");
+identitySource.setDomainName("example.com");
+identitySource.setDisplayName("example.com");
+identitySources.add(identitySource);
+connectedOrganization.setIdentitySources(identitySources);
+connectedOrganization.setState(ConnectedOrganizationState.Proposed);
+ConnectedOrganization result = graphClient.identityGovernance().entitlementManagement().connectedOrganizations().post(connectedOrganization);
 
-graphClient.identityGovernance().entitlementManagement().connectedOrganizations()
-	.buildRequest()
-	.post(connectedOrganization);
 
 ```

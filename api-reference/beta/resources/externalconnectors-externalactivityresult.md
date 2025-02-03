@@ -3,8 +3,9 @@ title: "externalActivityResult resource type"
 description: "Represents the result of processing an externalActivity."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # externalActivityResult resource type
@@ -33,7 +34,7 @@ Inherits from [externalActivity](../resources/externalconnectors-externalactivit
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

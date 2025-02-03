@@ -3,8 +3,9 @@ title: "unifiedRoleManagementPolicyApprovalRule resource type"
 description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines rules for approving a role assignment."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # unifiedRoleManagementPolicyApprovalRule resource type
@@ -28,7 +29,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

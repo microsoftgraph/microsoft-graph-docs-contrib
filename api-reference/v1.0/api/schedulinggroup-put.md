@@ -3,8 +3,9 @@ title: "Replace schedulingGroup"
 description: "Replace an existing schedulingGroup."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Replace schedulingGroup
@@ -69,13 +70,10 @@ Prefer: return=representation
   "userIds": [
     "c5d0c76b-80c4-481c-be50-923cd8d680a1",
     "2a4296b3-a28a-44ba-bc66-0274b9b95851"
-  ]
+  ],
+  "code": "CashierCode"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/schedule-put-schedulinggroups-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-put-schedulinggroups-javascript-snippets.md)]
@@ -116,7 +114,8 @@ Content-type: application/json
       "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
       "displayName": "John Doe"
     }
-  }
+  },
+  "code": "CashierCode"
 }
 ```
 

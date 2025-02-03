@@ -3,8 +3,9 @@ title: "Create Calendar"
 description: "Use this API to create a new calendar in a calendar group for a user."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create Calendar
@@ -64,7 +65,7 @@ If successful, this method returns `201 Created` response code and [calendar](..
 
 ##### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -121,7 +122,7 @@ In the request body, supply a JSON representation of [calendar](../resources/cal
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -144,7 +145,7 @@ Content-type: application/json
     "canEdit": true,
     "owner": {
         "name": "Adele Vance",
-        "address": "adelev@contoso.OnMicrosoft.com"
+        "address": "adelev@contoso.com"
     }
 }
 ```

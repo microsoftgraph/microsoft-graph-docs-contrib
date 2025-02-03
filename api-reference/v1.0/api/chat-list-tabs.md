@@ -3,8 +3,9 @@ title: "List tabs in chat"
 description: "Retrieve the list of tabs in the specified chat. "
 author: "subray"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List tabs in chat
@@ -277,7 +278,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List tabs in channel](channel-list-tabs.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

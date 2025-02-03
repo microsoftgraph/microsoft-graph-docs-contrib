@@ -3,8 +3,9 @@ title: "Get unifiedRoleManagementAlertDefinition"
 description: "Read the properties and relationships of a unifiedRoleManagementAlertDefinition object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get unifiedRoleManagementAlertDefinition
@@ -52,7 +53,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -98,7 +99,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 ---
 
 ### Response
-Here's an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

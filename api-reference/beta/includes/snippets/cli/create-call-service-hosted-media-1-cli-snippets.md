@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta communications calls create --body '{\
   "@odata.type": "#microsoft.graph.call",\
   "callbackUri": "https://bot.contoso.com/callback",\
@@ -26,7 +26,8 @@ mgc-beta communications calls create --body '{\
   ],\
   "callOptions": {\
     "@odata.type": "#microsoft.graph.outgoingCallOptions",\
-    "isContentSharingNotificationEnabled": true\
+    "isContentSharingNotificationEnabled": true,\
+    "isDeltaRosterEnabled": true\
   },\
   "mediaConfig": {\
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"\

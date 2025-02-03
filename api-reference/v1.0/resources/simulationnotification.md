@@ -3,8 +3,9 @@ title: "simulationNotification resource type"
 description: "Represents the content of a notification that targets users who are part of a simulation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # simulationNotification resource type

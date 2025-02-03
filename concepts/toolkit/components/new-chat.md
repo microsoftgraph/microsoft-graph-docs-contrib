@@ -3,6 +3,7 @@ title: "New Chat component in Microsoft Graph Toolkit"
 description: "The New Chat component allows user to create new 1:1 or group conversations in Microsoft Teams."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date: 11/07/2024
 ---
 
 # New chat component in Microsoft Graph Toolkit
@@ -57,6 +58,10 @@ This control uses the following Microsoft Graph APIs and permissions.
 | Configuration | Permission | API |
 | - | - | - |
 | Default | Chat.Create, ChatMessage.Send | [/chats](/graph/api/chat-post), [/chats/{id}/messages](/graph/api/chat-post-messages) |
+
+### Subcomponents
+
+The `mgt-new-chat` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-people-picker](people-picker.md).
 
 ## Authentication
 

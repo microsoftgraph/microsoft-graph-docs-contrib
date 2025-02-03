@@ -4,57 +4,61 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessReviewScheduleDefinition accessReviewScheduleDefinition = new AccessReviewScheduleDefinition();
-accessReviewScheduleDefinition.displayName = "Review inactive guests on teams";
-accessReviewScheduleDefinition.descriptionForAdmins = "Control guest user access to our teams.";
-accessReviewScheduleDefinition.descriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more.";
+accessReviewScheduleDefinition.setDisplayName("Review inactive guests on teams");
+accessReviewScheduleDefinition.setDescriptionForAdmins("Control guest user access to our teams.");
+accessReviewScheduleDefinition.setDescriptionForReviewers("Information security is everyone's responsibility. Review our access policy for more.");
 AccessReviewQueryScope instanceEnumerationScope = new AccessReviewQueryScope();
-instanceEnumerationScope.query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')";
-instanceEnumerationScope.queryType = "MicrosoftGraph";
-accessReviewScheduleDefinition.instanceEnumerationScope = instanceEnumerationScope;
+instanceEnumerationScope.setOdataType("#microsoft.graph.accessReviewQueryScope");
+instanceEnumerationScope.setQuery("/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')");
+instanceEnumerationScope.setQueryType("MicrosoftGraph");
+accessReviewScheduleDefinition.setInstanceEnumerationScope(instanceEnumerationScope);
 AccessReviewInactiveUsersQueryScope scope = new AccessReviewInactiveUsersQueryScope();
-scope.query = "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')";
-scope.queryType = "MicrosoftGraph";
-scope.inactiveDuration = DatatypeFactory.newInstance().newDuration("P30D");
-accessReviewScheduleDefinition.scope = scope;
-LinkedList<AccessReviewReviewerScope> reviewersList = new LinkedList<AccessReviewReviewerScope>();
-AccessReviewReviewerScope reviewers = new AccessReviewReviewerScope();
-reviewers.query = "./owners";
-reviewers.queryType = "MicrosoftGraph";
-reviewersList.add(reviewers);
-accessReviewScheduleDefinition.reviewers = reviewersList;
-LinkedList<AccessReviewReviewerScope> fallbackReviewersList = new LinkedList<AccessReviewReviewerScope>();
-AccessReviewReviewerScope fallbackReviewers = new AccessReviewReviewerScope();
-fallbackReviewers.query = "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f";
-fallbackReviewers.queryType = "MicrosoftGraph";
-fallbackReviewersList.add(fallbackReviewers);
-accessReviewScheduleDefinition.fallbackReviewers = fallbackReviewersList;
+scope.setOdataType("#microsoft.graph.accessReviewInactiveUsersQueryScope");
+scope.setQuery("./members/microsoft.graph.user/?$filter=(userType eq 'Guest')");
+scope.setQueryType("MicrosoftGraph");
+PeriodAndDuration inactiveDuration = PeriodAndDuration.ofDuration(Duration.parse("P30D"));
+scope.setInactiveDuration(inactiveDuration);
+accessReviewScheduleDefinition.setScope(scope);
+LinkedList<AccessReviewReviewerScope> reviewers = new LinkedList<AccessReviewReviewerScope>();
+AccessReviewReviewerScope accessReviewReviewerScope = new AccessReviewReviewerScope();
+accessReviewReviewerScope.setQuery("./owners");
+accessReviewReviewerScope.setQueryType("MicrosoftGraph");
+reviewers.add(accessReviewReviewerScope);
+accessReviewScheduleDefinition.setReviewers(reviewers);
+LinkedList<AccessReviewReviewerScope> fallbackReviewers = new LinkedList<AccessReviewReviewerScope>();
+AccessReviewReviewerScope accessReviewReviewerScope1 = new AccessReviewReviewerScope();
+accessReviewReviewerScope1.setQuery("/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f");
+accessReviewReviewerScope1.setQueryType("MicrosoftGraph");
+fallbackReviewers.add(accessReviewReviewerScope1);
+accessReviewScheduleDefinition.setFallbackReviewers(fallbackReviewers);
 AccessReviewScheduleSettings settings = new AccessReviewScheduleSettings();
-settings.mailNotificationsEnabled = true;
-settings.reminderNotificationsEnabled = true;
-settings.justificationRequiredOnApproval = true;
-settings.recommendationsEnabled = true;
-settings.instanceDurationInDays = 3;
+settings.setMailNotificationsEnabled(true);
+settings.setReminderNotificationsEnabled(true);
+settings.setJustificationRequiredOnApproval(true);
+settings.setRecommendationsEnabled(true);
+settings.setInstanceDurationInDays(3);
 PatternedRecurrence recurrence = new PatternedRecurrence();
 RecurrencePattern pattern = new RecurrencePattern();
-pattern.type = RecurrencePatternType.ABSOLUTE_MONTHLY;
-pattern.dayOfMonth = 5;
-pattern.interval = 3;
-recurrence.pattern = pattern;
+pattern.setType(RecurrencePatternType.AbsoluteMonthly);
+pattern.setDayOfMonth(5);
+pattern.setInterval(3);
+recurrence.setPattern(pattern);
 RecurrenceRange range = new RecurrenceRange();
-range.type = RecurrenceRangeType.NO_END;
-range.startDate = new DateOnly(1900,1,1);
-recurrence.range = range;
-settings.recurrence = recurrence;
-settings.defaultDecisionEnabled = true;
-settings.defaultDecision = "Deny";
-settings.autoApplyDecisionsEnabled = true;
-accessReviewScheduleDefinition.settings = settings;
+range.setType(RecurrenceRangeType.NoEnd);
+LocalDate startDate = LocalDate.parse("2020-05-04T00:00:00.000Z");
+range.setStartDate(startDate);
+recurrence.setRange(range);
+settings.setRecurrence(recurrence);
+settings.setDefaultDecisionEnabled(true);
+settings.setDefaultDecision("Deny");
+settings.setAutoApplyDecisionsEnabled(true);
+accessReviewScheduleDefinition.setSettings(settings);
+AccessReviewScheduleDefinition result = graphClient.identityGovernance().accessReviews().definitions().post(accessReviewScheduleDefinition);
 
-graphClient.identityGovernance().accessReviews().definitions()
-	.buildRequest()
-	.post(accessReviewScheduleDefinition);
 
 ```

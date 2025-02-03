@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let educationRubric = await client.api('/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric')
+let educationRubric = await client.api('/education/classes/f1e03281-acd7-4fb0-84c3-902b3d30104c/assignments/09e2e94f-c701-45f5-98a8-cb5000195d2b/rubric')
 	.get();
 
 ```

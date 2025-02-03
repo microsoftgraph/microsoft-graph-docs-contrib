@@ -3,8 +3,9 @@ title: "scheduleItem resource type"
 description: "An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource (room or equipment) as well."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # scheduleItem resource type
@@ -26,7 +27,7 @@ An item that describes the availability of a user corresponding to an actual eve
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

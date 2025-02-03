@@ -3,8 +3,9 @@ title: "Delete simulation"
 description: "Delete an attack simulation campaign for a tenant."
 author: stuartcl
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete simulation

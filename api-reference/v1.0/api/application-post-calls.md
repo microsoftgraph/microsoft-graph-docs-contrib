@@ -3,32 +3,45 @@ title: "Create call"
 description: "Create a new call."
 author: rahulva-msft
 ms.localizationpriority: medium
-ms.prod: cloud-communications
+ms.subservice: cloud-communications
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Create call
 
 Namespace: microsoft.graph
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You will need to [register the calling bot](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.
+Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You need to [register the calling bot](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed.
+
+This API supports the following PSTN scenarios:
+
++ Incoming call to bot's PSTN number and then bot invites another PSTN.
++ Incoming call to bot's PSTN number and then bot transfer to another PSTN.
++ Incoming call to bot's PSTN number and then bot redirects to another PSTN.
++ Incoming call to bot's instance identifier and then bot invites another PSTN.
++ Incoming call to bot's instance identifier and then bot transfer to another PSTN.
++ Incoming call to bot's instance identifier and then bot redirects to another PSTN.
++ Incoming call to bot's instance identifier from Scheduled Meeting and then bot invites PSTN.
++ Outgoing call from bot (with instance identifier) to a PSTN.
++ P2P call between bot and another peer (Teams user, PSTN), bot invites another PSTN.
++ P2P call between bot and another peer (Teams user, PSTN), bot invites another Teams user.
++ Bot join the scheduled meeting and then invite PSTN.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                             |
-|:---------------------------------------|:----------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Not supported.                                                                          |
-| Delegated (personal Microsoft account) | Not supported.                                                                          |
-| Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
+<!-- { "blockType": "permissions", "name": "application_post_calls" } -->
+[!INCLUDE [permissions-table](../includes/permissions/application-post-calls-permissions.md)]
 
-> **Notes:** 
+> [!NOTE]
 > - For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the previous table.
-> - Cloud Video Interop solutions that are [Certified for Microsoft Teams](/MicrosoftTeams/cloud-video-interop) have permission to call this API to join meetings for which they have meeting join links, similar to external users joining through a browser.
-> - Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The Calls.JoinGroupCalls.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+
+Cloud Video Interop solutions that are [Certified for Microsoft Teams](/MicrosoftTeams/cloud-video-interop) have permission to call this API to join meetings for which they have meeting join links, similar to external users joining through a browser.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,13 +63,12 @@ If successful, this method returns a `201 Created` response code and a [call](..
 
 ## Examples
 
-### Example 1: Create peer-to-peer VoIP call with service hosted media
+### Example 1: Create a peer-to-peer VoIP call with service-hosted media
 
 > **Note:** This call needs the Calls.Initiate.All permission.
 
 #### Request
-The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
-
+The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the service hosts the media. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,7 +101,8 @@ Content-Type: application/json
   ],
   "callOptions": {
     "@odata.type": "#microsoft.graph.outgoingCallOptions",
-    "isContentSharingNotificationEnabled": true
+    "isContentSharingNotificationEnabled": true,
+    "isDeltaRosterEnabled": true
   },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
@@ -209,6 +222,11 @@ Content-Type: application/json
   "chatInfo": null,
   "meetingInfo": null,
   "transcription": null,
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
+    "isContentSharingNotificationEnabled": true,
+    "isDeltaRosterEnabled": true
+  },
   "toneInfo": null
 }
 ```
@@ -1522,7 +1540,7 @@ The following shows an example that requires a **joinMeetingId** and a **passcod
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -1685,7 +1703,7 @@ The following shows an example that requires a **joinMeetingId** but doesn't req
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

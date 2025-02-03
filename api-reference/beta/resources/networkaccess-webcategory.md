@@ -3,8 +3,9 @@ title: "webCategory resource type"
 description: "Specifies the category or type of a website or online resource, helping to classify and filter internet traffic based on content."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # webCategory resource type

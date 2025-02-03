@@ -37,12 +37,12 @@ $params = @{
 		}
 	)
 	requestedModalities = @(
-		"audio"
-	)
-	mediaConfig = @{
-		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-	}
-	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+	"audio"
+)
+mediaConfig = @{
+	"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+}
+tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgCommunicationCall -BodyParameter $params

@@ -3,8 +3,9 @@ title: "message: createForward"
 description: "Create a draft to forward an existing message, in either JSON or MIME format."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # message: createForward
@@ -47,7 +48,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required.|
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content.|
 
 ## Request body
@@ -72,7 +73,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Create a draft message in JSON format to forward an existing message
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -90,7 +91,7 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"danas@contoso.onmicrosoft.com",
+          "address":"danas@contoso.com",
           "name":"Dana Swope"
         }
       }
@@ -135,7 +136,7 @@ Content-Type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -158,7 +159,7 @@ Content-type: application/json
   "sender": {
     "emailAddress": {
       "name": "Admin",
-      "address": "admin@contoso.onmicrosoft.com"
+      "address": "admin@contoso.com"
     }
   },
   "from": null,
@@ -166,7 +167,7 @@ Content-type: application/json
     {
       "emailAddress": {
         "name": "Dana Swope",
-        "address": "danas@contoso.onmicrosoft.com"
+        "address": "danas@contoso.com"
       }
     }
   ]
@@ -198,7 +199,7 @@ OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1FeGNoYW5n
 ```
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

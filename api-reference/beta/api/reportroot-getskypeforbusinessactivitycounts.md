@@ -2,9 +2,10 @@
 title: "reportRoot: getSkypeForBusinessActivityCounts"
 description: "Get the trends on how many users organized and participated in conference sessions held in your organization through Skype for Business. The report also includes the number of peer-to-peer sessions."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getSkypeForBusinessActivityCounts

@@ -4,22 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LegalHold legalHold = new LegalHold();
-legalHold.description = "String";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.models.ediscovery.LegalHold legalHold = new com.microsoft.graph.beta.models.ediscovery.LegalHold();
+legalHold.setOdataType("#microsoft.graph.ediscovery.legalHold");
+legalHold.setDescription("String");
 IdentitySet createdBy = new IdentitySet();
-legalHold.createdBy = createdBy;
-legalHold.isEnabled = false;
-legalHold.status = LegalHoldStatus.PENDING;
-legalHold.contentQuery = "String";
-LinkedList<String> errorsList = new LinkedList<String>();
-errorsList.add("String");
-legalHold.errors = errorsList;
-legalHold.displayName = "String";
+createdBy.setOdataType("microsoft.graph.identitySet");
+legalHold.setCreatedBy(createdBy);
+legalHold.setIsEnabled(boolean);
+legalHold.setStatus(com.microsoft.graph.beta.models.ediscovery.LegalHoldStatus.Pending);
+legalHold.setContentQuery("String");
+LinkedList<String> errors = new LinkedList<String>();
+errors.add("String");
+legalHold.setErrors(errors);
+legalHold.setDisplayName("String");
+com.microsoft.graph.models.ediscovery.LegalHold result = graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").legalHolds().post(legalHold);
 
-graphClient.compliance().ediscovery().cases("{caseId}").legalHolds()
-	.buildRequest()
-	.post(legalHold);
 
 ```

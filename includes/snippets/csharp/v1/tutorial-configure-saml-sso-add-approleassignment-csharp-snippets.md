@@ -11,10 +11,10 @@ using Microsoft.Graph.Models;
 
 var requestBody = new AppRoleAssignment
 {
-	PrincipalId = Guid.Parse("040f9599-7c0f-4f94-aa75-8394c4c6ea9b"),
+	PrincipalId = Guid.Parse("59bb3898-0621-4414-ac61-74f9d7201355"),
 	PrincipalType = "User",
 	AppRoleId = Guid.Parse("3a84e31e-bffa-470f-b9e6-754a61e4dc63"),
-	ResourceId = Guid.Parse("a750f6cf-2319-464a-bcc3-456926736a91"),
+	ResourceId = Guid.Parse("d3616293-fff8-4415-9f01-33b05dad1b46"),
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

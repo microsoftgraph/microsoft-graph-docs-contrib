@@ -3,8 +3,9 @@ title: "destinationSummary resource type"
 description: "A summary for device destinations."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # destinationSummary resource type

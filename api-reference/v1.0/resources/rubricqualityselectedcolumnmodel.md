@@ -3,8 +3,9 @@ title: "rubricQualitySelectedColumnModel resource type"
 description: "Indicates the rubricLevel selected by the teacher when grading an educationRubric."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
+ms.date: 08/08/2024
 ---
 
 # rubricQualitySelectedColumnModel resource type
@@ -20,9 +21,13 @@ Indicates the [rubricLevel](rubriclevel.md) selected by the teacher when grading
 |columnId|String|ID of the selected level for this quality.|
 |qualityId|String|ID of the associated quality.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

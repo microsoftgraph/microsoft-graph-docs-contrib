@@ -4,10 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.unified_role_management_policy import UnifiedRoleManagementPolicy
+from msgraph_beta.generated.models.unified_role_management_policy_rule import UnifiedRoleManagementPolicyRule
+from msgraph_beta.generated.models.unified_role_management_policy_approval_rule import UnifiedRoleManagementPolicyApprovalRule
+from msgraph_beta.generated.models.unified_role_management_policy_rule_target import UnifiedRoleManagementPolicyRuleTarget
+from msgraph_beta.generated.models.approval_settings import ApprovalSettings
+from msgraph_beta.generated.models.approval_stage import ApprovalStage
+from msgraph_beta.generated.models.user_set import UserSet
+from msgraph_beta.generated.models.unified_role_management_policy_authentication_context_rule import UnifiedRoleManagementPolicyAuthenticationContextRule
+from msgraph_beta.generated.models.unified_role_management_policy_enablement_rule import UnifiedRoleManagementPolicyEnablementRule
+from msgraph_beta.generated.models.unified_role_management_policy_expiration_rule import UnifiedRoleManagementPolicyExpirationRule
+from msgraph_beta.generated.models.unified_role_management_policy_notification_rule import UnifiedRoleManagementPolicyNotificationRule
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = UnifiedRoleManagementPolicy(
 	rules = [
 		UnifiedRoleManagementPolicyApprovalRule(

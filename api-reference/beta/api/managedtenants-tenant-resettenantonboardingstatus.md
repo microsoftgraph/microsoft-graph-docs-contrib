@@ -3,8 +3,9 @@ title: "tenant: resetTenantOnboardingStatus"
 description: "Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multitenant management platform using the offboardTenant action. By invoking this action the platform attempts to onboard the managed tenant for management."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # tenant: resetTenantOnboardingStatus
@@ -110,7 +111,7 @@ Content-Type: application/json
   "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
   "contract": {
     "displayName": "Fourth Coffee",
-    "defaultDomainName": "fourthcoffe001.onmicrosoft.com",
+    "defaultDomainName": "contoso.com",
     "contractType": 2
   },
   "tenantStatusInformation": {

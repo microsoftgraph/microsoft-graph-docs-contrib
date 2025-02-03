@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UserCollectionPage users = graphClient.users()
-	.buildRequest()
-	.filter("identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')")
-	.select("displayName,id")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UserCollectionResponse result = graphClient.users().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"displayName", "id"};
+	requestConfiguration.queryParameters.filter = "identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')";
+});
+
 
 ```

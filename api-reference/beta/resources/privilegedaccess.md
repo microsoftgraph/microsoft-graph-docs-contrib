@@ -3,8 +3,9 @@ title: "privilegedAccess resource type"
 description: " for example, `privilegedAccess/azureResources` represents PIM managing privileged access to Azure resources."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ms.date: 04/03/2024
 ---
 
 # privilegedAccess resource type
@@ -37,7 +38,7 @@ Represents a group of functionalities provided by the Privileged Identity Manage
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

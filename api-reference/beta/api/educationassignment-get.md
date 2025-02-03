@@ -3,8 +3,9 @@ title: "Get educationAssignment"
 description: "Get the properties and relationships of an assignment."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 08/27/2024
 ---
 
 # Get educationAssignment
@@ -17,7 +18,7 @@ Get the properties and relationships of an [assignment](../resources/educationas
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
-You can use the `Prefer` header in your request to get the `inactive` status in case the assignment is deactivated; otherwise, you will get an `unknownFutureValue` value in the response.
+You can use the `Prefer` header in your request to get the `inactive` status in case the assignment is deactivated; otherwise, the response value for the **status** property is `unknownFutureValue`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -33,16 +34,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /education/classes/{id}/assignments/{id}
 ```
 ## Optional query parameters
-This method supports the  `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$orderby`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+You can use `$orderby` with the following properties of the [educationAssignment](../resources/educationassignment.md) resource: **assignDateTime**, **assignedDateTime**, **closeDateTime**, **createdDateTime**, **displayName**, **dueDateTime**, **lastModifiedDateTime**, **moduleUrl**, and **status**.
 
-The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*` which includes all the previous options.
+The following `$expand` options are available for this method: `categories`, `resources`, `rubric`, `submissions`, `gradingScheme`, `gradingCategory`, and `*`. `*` specifies all the previous options.
 
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
 | Prefer        | include-unknown-enum-members. Optional. |
 
 ## Request body
@@ -51,9 +52,11 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.
 
-## Example
+## Examples
 
-### Example 1: Get education assignment
+### Example 1: Get an education assignment
+
+The following example shows how to get an **educationAssignment**.
 
 #### Request
 The following example shows a request.
@@ -102,7 +105,7 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -166,7 +169,10 @@ Content-length: 279
 }
 ```
 
-### Example 2: Get assignment in inactive state with optional Prefer header
+### Example 2: Get an assignment in inactive state with the optional Prefer header
+
+The following example shows how to get an `inactive` assignment using the optional `Prefer` header.
+
 #### Request
 The following example shows a request.
 
@@ -216,7 +222,8 @@ Prefer: include-unknown-enum-members
 ---
 
 #### Response
-The following is an example of the response with status as inactive, when `Prefer: include-unknown-enum-members` is provided in the request header.
+
+The following example shows the response with **status** as `inactive` when `Prefer: include-unknown-enum-members` is provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -276,9 +283,13 @@ Content-type: application/json
 }
 ```
 
-## Example 3: Get assignment in inactive state without optional Prefer header
+### Example 3: Get an assignment in inactive state without the optional Prefer header
+
+The following example shows how to get an `inactive` assignment without the optional `Prefer` header.
+
 #### Request
-The following is an example of the request, where the status is `unknownFutureValue`. `Prefer: include-unknown-enum-members` is not provided in the request header.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -325,7 +336,7 @@ GET https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d
 ---
 
 #### Response
-The following is an example of the response when `Prefer: include-unknown-enum-members` is not provided in the request header.
+The following example shows the response with **status** as `unknownFutureValue` when `Prefer: include-unknown-enum-members` isn't provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 

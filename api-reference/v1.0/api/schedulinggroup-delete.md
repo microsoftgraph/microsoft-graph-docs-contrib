@@ -3,8 +3,9 @@ title: "Delete schedulingGroup"
 description: "Mark a schedulingGroup as inactive by setting its isActive property"
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete schedulingGroup
@@ -122,6 +123,6 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

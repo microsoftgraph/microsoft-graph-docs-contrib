@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ServiceAnnouncementAttachment serviceAnnouncementAttachment = graphClient.admin().serviceAnnouncement().messages("MC54091").attachments("30356a46-ffad-47e1-acf6-40a99b1538c1")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ServiceAnnouncementAttachment result = graphClient.admin().serviceAnnouncement().messages().byServiceUpdateMessageId("{serviceUpdateMessage-id}").attachments().byServiceAnnouncementAttachmentId("{serviceAnnouncementAttachment-id}").get();
+
 
 ```

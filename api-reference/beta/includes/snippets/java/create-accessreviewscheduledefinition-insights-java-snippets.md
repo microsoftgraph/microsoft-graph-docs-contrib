@@ -4,46 +4,51 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessReviewScheduleDefinition accessReviewScheduleDefinition = new AccessReviewScheduleDefinition();
-accessReviewScheduleDefinition.displayName = "Test create";
-accessReviewScheduleDefinition.descriptionForAdmins = "New scheduled access review";
-accessReviewScheduleDefinition.descriptionForReviewers = "If you have any questions, contact jerry@contoso.com";
+accessReviewScheduleDefinition.setDisplayName("Test create");
+accessReviewScheduleDefinition.setDescriptionForAdmins("New scheduled access review");
+accessReviewScheduleDefinition.setDescriptionForReviewers("If you have any questions, contact jerry@contoso.com");
 AccessReviewQueryScope scope = new AccessReviewQueryScope();
-scope.query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers";
-scope.queryType = "MicrosoftGraph";
-accessReviewScheduleDefinition.scope = scope;
-LinkedList<AccessReviewReviewerScope> reviewersList = new LinkedList<AccessReviewReviewerScope>();
-AccessReviewReviewerScope reviewers = new AccessReviewReviewerScope();
-reviewers.query = "/users/398164b1-5196-49dd-ada2-364b49f99b27";
-reviewers.queryType = "MicrosoftGraph";
-reviewersList.add(reviewers);
-accessReviewScheduleDefinition.reviewers = reviewersList;
+scope.setOdataType("#microsoft.graph.accessReviewQueryScope");
+scope.setQuery("/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers");
+scope.setQueryType("MicrosoftGraph");
+accessReviewScheduleDefinition.setScope(scope);
+LinkedList<AccessReviewReviewerScope> reviewers = new LinkedList<AccessReviewReviewerScope>();
+AccessReviewReviewerScope accessReviewReviewerScope = new AccessReviewReviewerScope();
+accessReviewReviewerScope.setQuery("/users/398164b1-5196-49dd-ada2-364b49f99b27");
+accessReviewReviewerScope.setQueryType("MicrosoftGraph");
+reviewers.add(accessReviewReviewerScope);
+accessReviewScheduleDefinition.setReviewers(reviewers);
 AccessReviewScheduleSettings settings = new AccessReviewScheduleSettings();
-settings.instanceDurationInDays = 1;
+settings.setInstanceDurationInDays(1);
 PatternedRecurrence recurrence = new PatternedRecurrence();
 RecurrencePattern pattern = new RecurrencePattern();
-pattern.type = RecurrencePatternType.WEEKLY;
-pattern.interval = 1;
-recurrence.pattern = pattern;
+pattern.setType(RecurrencePatternType.Weekly);
+pattern.setInterval(1);
+recurrence.setPattern(pattern);
 RecurrenceRange range = new RecurrenceRange();
-range.type = RecurrenceRangeType.NO_END;
-range.startDate = new DateOnly(1900,1,1);
-recurrence.range = range;
-settings.recurrence = recurrence;
-LinkedList<AccessReviewRecommendationInsightSetting> recommendationInsightSettingsList = new LinkedList<AccessReviewRecommendationInsightSetting>();
-UserLastSignInRecommendationInsightSetting recommendationInsightSettings = new UserLastSignInRecommendationInsightSetting();
-recommendationInsightSettings.recommendationLookBackDuration = DatatypeFactory.newInstance().newDuration("P30D");
-recommendationInsightSettings.signInScope = UserSignInRecommendationScope.TENANT;
-recommendationInsightSettingsList.add(recommendationInsightSettings);
-GroupPeerOutlierRecommendationInsightSettings recommendationInsightSettings1 = new GroupPeerOutlierRecommendationInsightSettings();
-recommendationInsightSettingsList.add(recommendationInsightSettings1);
-settings.recommendationInsightSettings = recommendationInsightSettingsList;
-accessReviewScheduleDefinition.settings = settings;
+range.setType(RecurrenceRangeType.NoEnd);
+LocalDate startDate = LocalDate.parse("2020-09-08T12:02:30.667Z");
+range.setStartDate(startDate);
+recurrence.setRange(range);
+settings.setRecurrence(recurrence);
+LinkedList<AccessReviewRecommendationInsightSetting> recommendationInsightSettings = new LinkedList<AccessReviewRecommendationInsightSetting>();
+UserLastSignInRecommendationInsightSetting accessReviewRecommendationInsightSetting = new UserLastSignInRecommendationInsightSetting();
+accessReviewRecommendationInsightSetting.setOdataType("#microsoft.graph.userLastSignInRecommendationInsightSetting");
+PeriodAndDuration recommendationLookBackDuration = PeriodAndDuration.ofDuration(Duration.parse("P30D"));
+accessReviewRecommendationInsightSetting.setRecommendationLookBackDuration(recommendationLookBackDuration);
+accessReviewRecommendationInsightSetting.setSignInScope(UserSignInRecommendationScope.Tenant);
+recommendationInsightSettings.add(accessReviewRecommendationInsightSetting);
+GroupPeerOutlierRecommendationInsightSettings accessReviewRecommendationInsightSetting1 = new GroupPeerOutlierRecommendationInsightSettings();
+accessReviewRecommendationInsightSetting1.setOdataType("#microsoft.graph.groupPeerOutlierRecommendationInsightSettings");
+recommendationInsightSettings.add(accessReviewRecommendationInsightSetting1);
+settings.setRecommendationInsightSettings(recommendationInsightSettings);
+accessReviewScheduleDefinition.setSettings(settings);
+AccessReviewScheduleDefinition result = graphClient.identityGovernance().accessReviews().definitions().post(accessReviewScheduleDefinition);
 
-graphClient.identityGovernance().accessReviews().definitions()
-	.buildRequest()
-	.post(accessReviewScheduleDefinition);
 
 ```

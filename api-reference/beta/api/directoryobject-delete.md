@@ -3,8 +3,9 @@ title: "Delete directoryObject"
 description: "Delete a directory object, for example, a group, user, application, or service principal."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete directoryObject

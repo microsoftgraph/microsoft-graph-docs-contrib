@@ -3,8 +3,9 @@ title: "Get profileCardProperty"
 description: "Retrieve the properties of a profileCardProperty entity."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 09/19/2024
 ---
 
 # Get profileCardProperty
@@ -24,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "profilecardproperty_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/profilecardproperty-get-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator role.
 
 ## HTTP request
 
@@ -38,7 +39,7 @@ GET /admin/people/profileCardProperties/{id}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -128,7 +129,7 @@ Content-type: application/json
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "ru-RU",
+          "languageTag": "ru",
           "displayName": "центр затрат"
         }
       ]

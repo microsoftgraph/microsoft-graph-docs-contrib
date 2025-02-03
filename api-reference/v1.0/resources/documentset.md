@@ -3,8 +3,9 @@ title: "documentSet resource type"
 description: "Contains the metadata about the document set settings."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # documentSet resource type

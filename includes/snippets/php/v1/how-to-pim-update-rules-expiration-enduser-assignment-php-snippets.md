@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyExpirationRule;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyRuleTarget;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyRuleTargetOperations;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

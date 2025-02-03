@@ -2,9 +2,10 @@
 title: "List windows10CompliancePolicies"
 description: "List properties and relationships of the windows10CompliancePolicy objects."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # List windows10CompliancePolicies
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2503
+Content-Length: 2802
 
 {
   "value": [
@@ -121,7 +124,15 @@ Content-Length: 2503
         "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
         "deviceComplianceScriptId": "Device Compliance Script Id value",
         "rulesContent": "cnVsZXNDb250ZW50"
-      }
+      },
+      "wslDistributions": [
+        {
+          "@odata.type": "microsoft.graph.wslDistributionConfiguration",
+          "distribution": "Distribution value",
+          "minimumOSVersion": "Minimum OSVersion value",
+          "maximumOSVersion": "Maximum OSVersion value"
+        }
+      ]
     }
   ]
 }

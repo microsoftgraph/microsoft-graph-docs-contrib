@@ -4,8 +4,9 @@ description: "Create a new authenticationContextClassReference."
 ms.localizationpriority: medium
 author: "swetha-rai"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Create authenticationContextClassReference
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "conditionalaccessroot_post_authenticationcontextclassreferences" } -->
 [!INCLUDE [permissions-table](../includes/permissions/conditionalaccessroot-post-authenticationcontextclassreferences-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]
 
 > [!NOTE]
 > This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13671) and may require consent to multiple permissions.
@@ -121,7 +124,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": false,

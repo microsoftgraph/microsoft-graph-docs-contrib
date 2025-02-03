@@ -3,8 +3,9 @@ title: "Create sourceSystemDefinition"
 description: "Create a new sourceSystemDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create sourceSystemDefinition
@@ -62,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

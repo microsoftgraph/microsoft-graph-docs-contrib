@@ -3,8 +3,9 @@ title: "Delete externalGroupMember"
 description: "Delete an externalGroupMember object."
 author: "snlraju-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete externalGroupMember

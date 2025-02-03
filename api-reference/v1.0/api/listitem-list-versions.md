@@ -2,9 +2,10 @@
 title: "Listing versions of a ListItem"
 description: "SharePoint can be configured to retain the history for list items."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # Listing versions of a ListItem

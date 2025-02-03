@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const wipeManagedAppRegistrationsByDeviceTag = Content-type: application/json
-Content-length: 39
-
-{
+const wipeManagedAppRegistrationsByDeviceTag = {
   deviceTag: 'Device Tag value'
 };
 

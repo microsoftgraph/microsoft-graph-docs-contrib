@@ -4,8 +4,9 @@ description: "View EC2 instances with S3 Bucket access."
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 04/18/2024
 ---
 
 # virtualMachineWithAwsStorageBucketAccessFinding resource type

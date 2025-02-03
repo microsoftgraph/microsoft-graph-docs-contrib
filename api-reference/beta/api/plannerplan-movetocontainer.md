@@ -3,8 +3,9 @@ title: "plannerPlan: moveToContainer"
 description: "Move a planner plan object from one planner plan container to another."
 ms.localizationpriority: medium
 author: "vasrinwork"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # plannerPlan: moveToContainer

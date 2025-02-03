@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphsolutions "github.com/microsoftgraph/msgraph-beta-sdk-go/solutions"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+headers := abstractions.NewRequestHeaders()
+headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-
+configuration := &graphsolutions.BusinessScenariosItemPlannerTasksItemRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
+}
 requestBody := graphmodels.NewBusinessScenarioTask()
 title := "Customer order #12010"
 requestBody.SetTitle(&title) 
@@ -27,7 +35,8 @@ externalObjectVersion := "000003"
 businessScenarioProperties.SetExternalObjectVersion(&externalObjectVersion) 
 requestBody.SetBusinessScenarioProperties(businessScenarioProperties)
 
-tasks, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().Tasks().ByBusinessScenarioTaskId("businessScenarioTask-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+tasks, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().Tasks().ByBusinessScenarioTaskId("businessScenarioTask-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

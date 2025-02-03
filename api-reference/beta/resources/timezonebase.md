@@ -3,8 +3,9 @@ title: "timeZoneBase resource type"
 description: "The basic representation of a time zone."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
+ms.subservice: mail
 author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # timeZoneBase resource type
@@ -22,9 +23,12 @@ The basic representation of a time zone.
 | name | string | The name of a time zone. It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

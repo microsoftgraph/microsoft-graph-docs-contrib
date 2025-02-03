@@ -4,7 +4,8 @@ description: "Deliver change notifications to clients."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: conceptualPageType
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
+ms.date: 06/07/2024
 ---
 
 # Use the Microsoft Graph API to get change notifications
@@ -27,11 +28,11 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][], [baseTask][] (deprecated) |
-| Delegated - personal Microsoft account | [baseTask][] (deprecated), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
-| Application                            | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlineMeeting][], [printer][], [printTaskDefinition][], [team][] |
+| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][] (preview), [contact][], [conversation][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [openShiftChangeRequest][], [presence][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [todoTask][], [user][], [baseTask][] (deprecated) |
+| Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [list][], [message][], [todoTask][], [baseTask][] (deprecated) |
+| Application                            | [alert][], [callRecord][], [approvals][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][], [contact][],  [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [onlineMeeting][], [openShiftChangeRequest][], [printer][], [printTaskDefinition][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [user][] |
 
-## See also
+## Related content
 
 - [subscription resource type](subscription.md)
 - [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
@@ -54,12 +55,18 @@ In general, subscription operations require read permission to the resource. For
 [user]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md
+[offerShiftRequest]: ./offershiftrequest.md
+[openShiftChangeRequest]: ./openshiftchangerequest.md
 [presence]: ./presence.md
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[shift]: ./shift.md
+[swapShiftsChangeRequest]: ./swapshiftschangerequest.md
 [team]: ./team.md
+[timeOffRequest]: ./timeoffrequest.md
 [baseTask]: ./baseTask.md
 [todoTask]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
 [callTranscript]: ./calltranscript.md
 [callRecording]: ./callrecording.md
+[approvals]: ./approvalitem.md

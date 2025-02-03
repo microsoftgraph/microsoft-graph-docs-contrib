@@ -34,6 +34,10 @@ $params = @{
 		}
 	)
 	backupReviewers = @(
+		@{
+			query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+			queryType = "MicrosoftGraph"
+		}
 	)
 	fallbackReviewers = @(
 		@{

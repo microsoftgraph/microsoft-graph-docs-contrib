@@ -3,8 +3,9 @@ author: "spgraph-docs-team"
 title: "Update bundle"
 description: "Update a bundle of driveItems"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update bundle

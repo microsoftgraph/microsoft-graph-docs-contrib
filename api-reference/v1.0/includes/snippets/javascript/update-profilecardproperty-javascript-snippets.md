@@ -16,7 +16,7 @@ const profileCardProperty = {
       displayName: 'Cost Center',
       localizations: [
         {
-          languageTag: 'nb-NO',
+          languageTag: 'no',
           displayName: 'Kostnadssenter'
         }
       ]

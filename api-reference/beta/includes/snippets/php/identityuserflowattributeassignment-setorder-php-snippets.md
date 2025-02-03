@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Identity\B2cUserFlows\Item\UserAttributeAssignments\SetOrder\SetOrderPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\AssignmentOrder;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

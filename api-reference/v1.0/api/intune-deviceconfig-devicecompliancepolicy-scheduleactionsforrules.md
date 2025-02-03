@@ -2,9 +2,10 @@
 title: "scheduleActionsForRules action"
 description: "Not yet documented"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # scheduleActionsForRules action
@@ -63,7 +64,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules_scheduleactionsforrules_action" }-->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
+POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
 Content-type: application/json
 Content-length: 242
 

@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	tenantIds = @(
-		"String"
-	)
+	"String"
+)
 }
 
 Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -TenantTagId $tenantTagId -BodyParameter $params

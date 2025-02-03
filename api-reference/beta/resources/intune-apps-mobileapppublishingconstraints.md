@@ -2,9 +2,10 @@
 title: "mobileAppPublishingConstraints resource type"
 description: "Contains properties for constraints that the UX need to take into consideration to guide the user experience for app creation and publishing flow."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # mobileAppPublishingConstraints resource type

@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DetectedApp detectedApp = new DetectedApp();
-detectedApp.displayName = "Display Name value";
-detectedApp.version = "Version value";
-detectedApp.sizeInByte = 10L;
-detectedApp.deviceCount = 11;
-detectedApp.publisher = "Publisher value";
-detectedApp.platform = DetectedAppPlatformType.WINDOWS;
+detectedApp.setOdataType("#microsoft.graph.detectedApp");
+detectedApp.setDisplayName("Display Name value");
+detectedApp.setVersion("Version value");
+detectedApp.setSizeInByte(10L);
+detectedApp.setDeviceCount(11);
+detectedApp.setPublisher("Publisher value");
+detectedApp.setPlatform(DetectedAppPlatformType.Windows);
+DetectedApp result = graphClient.deviceManagement().detectedApps().post(detectedApp);
 
-graphClient.deviceManagement().detectedApps()
-	.buildRequest()
-	.post(detectedApp);
 
 ```

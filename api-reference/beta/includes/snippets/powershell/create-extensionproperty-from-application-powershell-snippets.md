@@ -11,8 +11,8 @@ $params = @{
 	dataType = "String"
 	isMultiValued = $true
 	targetObjects = @(
-		"User"
-	)
+	"User"
+)
 }
 
 New-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params

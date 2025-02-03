@@ -2,9 +2,10 @@
 title: "macOSContentCachingPeerPolicy enum type"
 description: "Determines which content caches other content caches will peer with."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # macOSContentCachingPeerPolicy enum type

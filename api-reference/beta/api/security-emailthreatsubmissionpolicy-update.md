@@ -3,8 +3,9 @@ title: "Update emailThreatSubmissionPolicy"
 description: "Update the properties of an emailThreatSubmissionPolicy object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update emailThreatSubmissionPolicy
@@ -68,7 +69,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

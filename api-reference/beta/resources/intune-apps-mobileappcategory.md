@@ -2,9 +2,10 @@
 title: "mobileAppCategory resource type"
 description: "Contains properties for a single Intune app category."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # mobileAppCategory resource type
@@ -29,9 +30,9 @@ Contains properties for a single Intune app category.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The key of the entity.|
+|id|String|The key of the entity. This property is read-only.|
 |displayName|String|The name of the app category.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified. This property is read-only.|
 
 ## Relationships
 None

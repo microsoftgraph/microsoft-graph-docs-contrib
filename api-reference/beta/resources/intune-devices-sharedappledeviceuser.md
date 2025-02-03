@@ -2,9 +2,10 @@
 title: "sharedAppleDeviceUser resource type"
 description: "Intune Devices Sharedappledeviceuser Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # sharedAppleDeviceUser resource type

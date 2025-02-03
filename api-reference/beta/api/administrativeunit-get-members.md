@@ -3,8 +3,9 @@ title: "Get a member"
 description: "Use this API to get a specific member (user, group, or device) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # Get a member
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "administrativeunit_get_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-get-members-permissions.md)]
+
+[!INCLUDE [rbac-admin-units-apis-read](../includes/rbac-for-apis/rbac-admin-units-apis-read.md)]
 
 ## HTTP request
 

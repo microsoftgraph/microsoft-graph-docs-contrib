@@ -3,8 +3,9 @@ title: "noMediaConfig resource type"
 description: "Media configuration for indicating no media."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # noMediaConfig resource type
@@ -19,11 +20,14 @@ Media configuration for indicating no media.
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| removeFromDefaultAudioGroup | Boolean |Remove media from the default audio group.|
+
+## Relationships
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

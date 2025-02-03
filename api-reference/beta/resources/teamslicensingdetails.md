@@ -4,7 +4,8 @@ description: "A container where you can find all the different Microsoft Teams l
 author: "mea"
 doc_type: resourcePageType
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 03/06/2024
 ---
 
 # teamsLicensingDetails resource type
@@ -55,7 +56,7 @@ The following JSON representation shows the resource type.
 }
 -->
 
-## See also
+## Related content
 
 - [teamwork resource type](teamwork.md)
 - [userTeamwork resource type](userteamwork.md)

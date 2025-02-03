@@ -45,7 +45,7 @@ var requestBody = new AddPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Teams["{team-id}"].Members.Add.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Members.Add.PostAsAddPostResponseAsync(requestBody);
 
 
 ```

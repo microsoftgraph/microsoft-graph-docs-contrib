@@ -3,8 +3,9 @@ title: "Get userAttributeAssignments"
 description: "Read the properties and relationships of an identityUserFlowAttributeAssignment object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Get identityUserFlowAttributeAssignment
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "identityuserflowattributeassignment_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityuserflowattributeassignment-get-permissions.md)]
+
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 

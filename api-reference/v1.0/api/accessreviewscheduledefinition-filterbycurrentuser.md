@@ -3,8 +3,9 @@ title: "accessReviewScheduleDefinition: filterByCurrentUser"
 description: "Returns accessReviewScheduleDefinition objects where the calling user is the reviewer."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # accessReviewScheduleDefinition: filterByCurrentUser

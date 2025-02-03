@@ -3,6 +3,7 @@ title: "Open the OneNote client by using the OneNote API"
 description: "Use the links property of a page or notebook to open a OneNote application to a particular page or notebook. Includes iOS and Android examples."
 author: "Jewan-microsoft"
 ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 # Open the OneNote client
@@ -190,7 +191,7 @@ if (response.getResponseCode() == 201) {
 }
 ```
 
-## See also
+## Related content
 
 - [Get OneNote content and structure](onenote-get-content.md)
 - [Create OneNote pages](onenote-create-page.md)

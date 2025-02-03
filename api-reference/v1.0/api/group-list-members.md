@@ -2,19 +2,21 @@
 title: "List group members"
 description: "Get a list of the group's direct members. A group can have users, organizational contacts, devices, service principals and other groups as members."
 ms.localizationpriority: high
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 09/12/2024
 ---
 
 # List group members
 
 Namespace: microsoft.graph
 
-Get a list of the group's direct members. A group can have users, organizational contacts, devices, service principals and other groups as members. This operation is not transitive.
+Get a list of the [group's](../resources/group.md) direct members. A group can have users, organizational contacts, devices, service principals and other groups as members. This operation is not transitive.
 
 > [!IMPORTANT]
-> This API has a known issue where service principals are not listed as group members in v1.0. Use this API on the `beta` endpoint instead or the `/groups/{id}?$expand=members` API. Note the [limitations of $expand on directory objects](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
+> This API has a known issue where service principals are not listed as group members in v1.0. As a workaround, use this API on the `beta` endpoint or use the `/groups/{id}?$expand=members` API. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=25984).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -26,6 +28,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/group-list-members-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/members/read` or `microsoft.directory/groups/members/limitedRead` role permission, or `microsoft.directory/groups/hiddenMembers/read` role permission to read hidden members. The following least privileged roles are supported for this operation:
+
+- Group owners
+- "Member" users
+- "Guest" users - have [limited read permissions](/entra/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions)
+- Directory Readers
+- Directory Writers
+- Groups Administrator
+- User Administrator - Including hidden members
+- Exchange Administrator - Including hidden members
+- SharePoint Administrator - Including hidden members 
+- Intune Administrator - Including hidden members
+- Teams Administrator - Including hidden members
+- Yammer Administrator - Including hidden members
+
+To list the members of a hidden membership group, the *Member.Read.Hidden* permission is also required.
 
 ## HTTP request
 

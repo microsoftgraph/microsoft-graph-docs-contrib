@@ -3,8 +3,9 @@ title: "accessReviewQueryScope resource type"
 description: "Defines what needs to be reviewed in an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # accessReviewQueryScope resource type
@@ -28,7 +29,7 @@ Specifying the **@odata.type** type property with the value `#microsoft.graph.ac
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewQueryScope"

@@ -2,9 +2,10 @@
 title: "Get androidWorkProfileEnterpriseWiFiConfiguration"
 description: "Read properties and relationships of the androidWorkProfileEnterpriseWiFiConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Get androidWorkProfileEnterpriseWiFiConfiguration
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [androidWorkProfileEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofileenterprisewificonfiguration.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2046
+Content-Length: 2123
 
 {
   "value": {
@@ -106,6 +109,10 @@ Content-Length: 2046
     "connectAutomatically": true,
     "connectWhenNetworkNameIsHidden": true,
     "wiFiSecurityType": "wpaEnterprise",
+    "preSharedKey": "Pre Shared Key value",
+    "preSharedKeyIsSet": true,
+    "proxySettings": "manual",
+    "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
     "eapType": "eapTtls",
     "trustedServerCertificateNames": [
       "Trusted Server Certificate Names value"
@@ -113,9 +120,7 @@ Content-Length: 2046
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
     "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
-    "proxySettings": "manual",
-    "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
   }
 }
 ```

@@ -1,10 +1,11 @@
 ---
 title: "Delete domain"
-description: "Deletes a domain from a tenant."
-author: "adimitui"
+description: "Delete a domain from a tenant."
+author: "tafra00"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Delete domain
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a domain from a tenant.
+Delete a domain from a tenant.
 
 > **Important:**
 > Deleted domains are not recoverable.
@@ -28,10 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-delete-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* Domain Name Administrator
+[!INCLUDE [rbac-domain-apis-write](../includes/rbac-for-apis/rbac-domain-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

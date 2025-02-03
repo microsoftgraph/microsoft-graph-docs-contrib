@@ -3,8 +3,9 @@ title: "Get workbookOperation"
 description: "Retrieve the properties and relationships of a workbookOperation object."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Get workbookOperation

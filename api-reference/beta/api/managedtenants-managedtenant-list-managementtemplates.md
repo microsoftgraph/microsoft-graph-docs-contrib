@@ -3,8 +3,9 @@ title: "List managementTemplates"
 description: "Get a list of the managementTemplate objects and their properties."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List managementTemplates

@@ -3,7 +3,8 @@ title: "Use the Microsoft Search API to search Outlook calendar events"
 description: "Use the Microsoft Search API in Microsoft Graph to search for events in the signed-in user’s primary calendar. The user identity is based on the auth token."
 author: "knightsu"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Search API to search Outlook calendar events

@@ -2,9 +2,10 @@
 title: "Get deviceManagementConfigurationCategory"
 description: "Read properties and relationships of the deviceManagementConfigurationCategory object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get deviceManagementConfigurationCategory
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/inventoryCategories/{deviceManagementConfigurationCategoryId}
 GET /deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 GET /deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 ```
@@ -56,7 +60,7 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
+GET https://graph.microsoft.com/beta/deviceManagement/inventoryCategories/{deviceManagementConfigurationCategoryId}
 ```
 
 ### Response

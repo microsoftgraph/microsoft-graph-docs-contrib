@@ -1,10 +1,12 @@
 ---
 title: "List memberOf"
 description: "Get groups that the group is a direct member of. "
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List memberOf

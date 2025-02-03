@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.messages.item.attachments.item.attachment_item_request_builder import AttachmentItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = AttachmentItemRequestBuilder.AttachmentItemRequestBuilderGetQueryParameters(
 		expand = ["microsoft.graph.itemattachment/item"],
 )
 
-request_configuration = AttachmentItemRequestBuilder.AttachmentItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

@@ -4,7 +4,8 @@ description: "Represents the SharePoint content type of an item."
 title: "contentTypeInfo resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
+ms.date: 03/21/2024
 ---
 
 # contentTypeInfo resource type
@@ -22,9 +23,12 @@ Represents the SharePoint [contentType](contenttype.md) of an item.
 | id       | String | The ID of the content type.   |
 | name     | String | The name of the content type. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentTypeInfo", "@type.aka": "oneDrive.contentTypeFacet" } -->
 

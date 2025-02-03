@@ -4,35 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String callbackUri = "https://bot.contoso.com/api/calls";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<Modality> acceptedModalitiesList = new LinkedList<Modality>();
-acceptedModalitiesList.add(Modality.AUDIO);
-
+com.microsoft.graph.communications.calls.item.answer.AnswerPostRequestBody answerPostRequestBody = new com.microsoft.graph.communications.calls.item.answer.AnswerPostRequestBody();
+answerPostRequestBody.setCallbackUri("https://bot.contoso.com/api/calls");
+LinkedList<Modality> acceptedModalities = new LinkedList<Modality>();
+acceptedModalities.add(Modality.Audio);
+answerPostRequestBody.setAcceptedModalities(acceptedModalities);
 ServiceHostedMediaConfig mediaConfig = new ServiceHostedMediaConfig();
-LinkedList<MediaInfo> preFetchMediaList = new LinkedList<MediaInfo>();
-MediaInfo preFetchMedia = new MediaInfo();
-preFetchMedia.uri = "https://cdn.contoso.com/beep.wav";
-preFetchMedia.resourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E";
-preFetchMediaList.add(preFetchMedia);
-MediaInfo preFetchMedia1 = new MediaInfo();
-preFetchMedia1.uri = "https://cdn.contoso.com/cool.wav";
-preFetchMedia1.resourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088F";
-preFetchMediaList.add(preFetchMedia1);
-mediaConfig.preFetchMedia = preFetchMediaList;
+mediaConfig.setOdataType("#microsoft.graph.serviceHostedMediaConfig");
+LinkedList<MediaInfo> preFetchMedia = new LinkedList<MediaInfo>();
+MediaInfo mediaInfo = new MediaInfo();
+mediaInfo.setUri("https://cdn.contoso.com/beep.wav");
+mediaInfo.setResourceId("1D6DE2D4-CD51-4309-8DAA-70768651088E");
+preFetchMedia.add(mediaInfo);
+MediaInfo mediaInfo1 = new MediaInfo();
+mediaInfo1.setUri("https://cdn.contoso.com/cool.wav");
+mediaInfo1.setResourceId("1D6DE2D4-CD51-4309-8DAA-70768651088F");
+preFetchMedia.add(mediaInfo1);
+mediaConfig.setPreFetchMedia(preFetchMedia);
+answerPostRequestBody.setMediaConfig(mediaConfig);
+graphClient.communications().calls().byCallId("{call-id}").answer().post(answerPostRequestBody);
 
-graphClient.communications().calls("57DAB8B1894C409AB240BD8BEAE78896")
-	.answer(CallAnswerParameterSet
-		.newBuilder()
-		.withCallbackUri(callbackUri)
-		.withMediaConfig(mediaConfig)
-		.withAcceptedModalities(acceptedModalitiesList)
-		.withParticipantCapacity(null)
-		.withCallOptions(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

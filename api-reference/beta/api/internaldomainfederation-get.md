@@ -3,8 +3,9 @@ title: "Get internalDomainFederation"
 description: "Read the properties and relationships of an internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/21/2024
 ---
 
 # Get internalDomainFederation
@@ -129,7 +130,8 @@ Content-Type: application/json
         "certificateUpdateResult": "Success",
         "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"
     },
-    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
+    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp",
+    "passwordResetUri": "https://sts.contoso.com/adfs/passwordReset"
   }
 }
 ```

@@ -4,7 +4,8 @@ title: "thumbnailColumn resource type"
 description: "The thumbnailColumn resource indicates that the column contains information about thumbnail."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
+ms.date: 03/06/2024
 ---
 # thumbnailColumn resource type
 
@@ -15,6 +16,9 @@ The **thumbnailColumn** on a [columnDefinition](columnDefinition.md) resource in
 ## Properties
 
 The **thumbnailColumn** resource contains no properties.
+
+## Relationships
+None.
 
 ## JSON representation
 

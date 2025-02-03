@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ManagedAppOperation managedAppOperation = new ManagedAppOperation();
-managedAppOperation.displayName = "Display Name value";
-managedAppOperation.state = "State value";
-managedAppOperation.version = "Version value";
+managedAppOperation.setOdataType("#microsoft.graph.managedAppOperation");
+managedAppOperation.setDisplayName("Display Name value");
+managedAppOperation.setState("State value");
+managedAppOperation.setVersion("Version value");
+ManagedAppOperation result = graphClient.deviceAppManagement().managedAppRegistrations().byManagedAppRegistrationId("{managedAppRegistration-id}").operations().byManagedAppOperationId("{managedAppOperation-id}").patch(managedAppOperation);
 
-graphClient.deviceAppManagement().managedAppRegistrations("{managedAppRegistrationId}").operations("{managedAppOperationId}")
-	.buildRequest()
-	.patch(managedAppOperation);
 
 ```

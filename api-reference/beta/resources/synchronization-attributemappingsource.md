@@ -4,7 +4,8 @@ description: "Defines how a value should be extracted (or transformed) from the 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
+ms.date: 03/21/2024
 ---
 
 # attributeMappingSource resource type
@@ -77,8 +78,11 @@ Expression extracting first eight characters from the source attribute.
 }
 ```
 
+## Relationships
+None.
+
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.attributeMappingSource"

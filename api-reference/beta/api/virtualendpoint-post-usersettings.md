@@ -1,10 +1,11 @@
 ---
 title: "Create cloudPcUserSetting"
-description: "Create a new cloudPcUserSetting ."
+description: "Create a new cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 12/04/2024
 ---
 
 # Create cloudPcUserSetting
@@ -50,11 +51,12 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|crossRegionDisasterRecoverySetting |[cloudPcCrossRegionDisasterRecoverySetting](../resources/cloudpccrossregiondisasterrecoverysetting.md)|Indicates cross-region disaster recovery settings for the user's Cloud PC.|
 |displayName|String|The setting name as it appears in the UI. |
-|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
-|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `True`.  |
+|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.  |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created (that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
-|selfServiceEnabled (deprecated)|Boolean|To turn on the self service option, change this setting to `True`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
+|selfServiceEnabled (deprecated)|Boolean|To turn on the self service option, change this setting to `true`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
 
 ## Response
 
@@ -63,6 +65,8 @@ If successful, this method returns a `201 Created` response code and a [cloudPcU
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -79,8 +83,19 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
+  "crossRegionDisasterRecoverySetting": {
+     "crossRegionDisasterRecoveryEnabled": false,
+     "maintainCrossRegionRestorePointEnabled": true,
+     "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
+  },
   "restorePointSetting": {
     "frequencyInHours": 16,
+    "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   }
 }
@@ -121,6 +136,7 @@ Content-Type: application/json
 ---
 
 ### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -138,11 +154,21 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
+  "crossRegionDisasterRecoverySetting": {
+     "crossRegionDisasterRecoveryEnabled": false,
+     "maintainCrossRegionRestorePointEnabled": true,
+     "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
+  },
   "restorePointSetting": {
     "frequencyInHours": 16,
+    "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   },
   "lastModifiedDateTime": "2021-02-01T10:29:57Z"  
 }
 ```
-

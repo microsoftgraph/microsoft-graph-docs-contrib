@@ -3,8 +3,10 @@ title: "Get endpoint"
 description: "Retrieve the properties and relationships of a specific endpoint object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "groups"
-author: "Jordanndahl"
+ms.subservice: "entra-groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.date: 04/04/2024
 ---
 
 # Get endpoint
@@ -101,7 +103,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 > Note: The response object shown here might be shortened for readability.
 

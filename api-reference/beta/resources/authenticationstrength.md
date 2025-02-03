@@ -3,8 +3,9 @@ title: "authenticationStrength resource type"
 description: "Represents the custom authentication strength enforced in a conditional access policy."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # authenticationStrength resource type
@@ -26,7 +27,7 @@ Represents the custom authentication strength enforced in a conditional access p
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationStrength"

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Tenant tenant = graphClient.tenantRelationships().managedTenants().tenants("{tenantId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.managedtenants.Tenant result = graphClient.tenantRelationships().managedTenants().tenants().byTenantId("{tenant-id}").get();
+
 
 ```

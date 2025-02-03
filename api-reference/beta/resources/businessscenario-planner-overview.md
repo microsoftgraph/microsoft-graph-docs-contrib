@@ -3,8 +3,9 @@ title: "Use the business scenarios API in Microsoft Graph to integrate with Plan
 description: "Learn how to use the business scenarios in Microsoft Graph to integrate with Planner."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: conceptualPageType
+ms.date: 03/12/2024
 ---
 
 # Use the business scenarios API in Microsoft Graph to integrate with Planner (preview)

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ConversationThread conversationThread = new ConversationThread();
-conversationThread.isLocked = true;
+conversationThread.setIsLocked(true);
+ConversationThread result = graphClient.groups().byGroupId("{group-id}").threads().byConversationThreadId("{conversationThread-id}").patch(conversationThread);
 
-graphClient.groups("0fbf2921-5d17-4c2b-bae4-cc581de72c13").threads("AAQkAGU3OGZjZTE2LTFlOWItNGExYi1hMGMzLTMwZWU4OGUzYjU5MQMkABAALmW2hn6Ui0_7hOBeAIFdWhAALmW2hn6Ui0_7hOBeAIFdWg==")
-	.buildRequest()
-	.patch(conversationThread);
 
 ```

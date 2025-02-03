@@ -38,7 +38,7 @@ const accessPackageAssignmentRequest = {
     }
 };
 
-await client.api('/identityGovernance/entitlementManagement/assignmentRequests')
+await client.api('/identityGovernance/entitlementManagement/accessPackageAssignmentRequests')
 	.version('beta')
 	.post(accessPackageAssignmentRequest);
 

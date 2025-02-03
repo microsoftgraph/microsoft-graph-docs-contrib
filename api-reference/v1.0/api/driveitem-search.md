@@ -2,9 +2,10 @@
 author: spgraph-docs-team
 title: Search for files
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Search the hierarchy of items for items matching a query."
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 # Search for DriveItems within a drive
 

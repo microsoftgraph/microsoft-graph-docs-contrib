@@ -3,8 +3,9 @@ title: "driveItem: restore"
 description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
 ms.localizationpriority: medium
 author: "learafa"
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # driveItem: restore

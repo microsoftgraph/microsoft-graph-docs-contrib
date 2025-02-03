@@ -3,8 +3,9 @@ title: "Update onAttributeCollectionSubmitCustomExtension"
 description: "Associate a custom extension with an onAttributeCollectionSubmitCustomExtension object that's linked to an onAttributeCollectionSubmitListener object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update onAttributeCollectionSubmitCustomExtension
@@ -63,17 +64,13 @@ The following example shows a request.
 }
 -->
 ``` http
-PUT https://microsoft.graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension/$ref
+PUT https://graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension/$ref
 Content-Type: application/json
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customExtensionId}"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-onattributecollectionsubmitcustomextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-onattributecollectionsubmitcustomextension-javascript-snippets.md)]

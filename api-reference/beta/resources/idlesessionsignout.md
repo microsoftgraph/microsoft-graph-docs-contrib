@@ -3,8 +3,9 @@ title: "idleSessionSignOut resource type"
 description: "Represents the idle session sign-out policy settings for SharePoint."
 author: "lfernandez"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # idleSessionSignOut resource type
@@ -23,9 +24,12 @@ Represents the idle session sign-out policy settings for SharePoint.
 | signOutAfterInSeconds | Int64    | Number of seconds of inactivity after which a user is signed out.                         |
 | warnAfterInSeconds    | Int64    | Number of seconds of inactivity after which a user is notified that they'll be signed out.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.idleSessionSignOut" } -->
 

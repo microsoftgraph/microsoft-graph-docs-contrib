@@ -3,8 +3,9 @@ title: "Create enrollmentTroubleshootingEvent"
 description: "Create a new enrollmentTroubleshootingEvent object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 03/14/2024
 ---
 
 # Create enrollmentTroubleshootingEvent

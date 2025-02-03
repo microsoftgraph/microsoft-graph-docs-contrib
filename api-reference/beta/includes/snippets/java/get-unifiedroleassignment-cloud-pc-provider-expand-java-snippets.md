@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UnifiedRoleAssignmentMultiple unifiedRoleAssignmentMultiple = graphClient.roleManagement().cloudPC().roleAssignments("dbe9d288-fd87-41f4-b33d-b498ed207096")
-	.buildRequest()
-	.expand("roleDefinition")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UnifiedRoleAssignmentMultiple result = graphClient.roleManagement().cloudPC().roleAssignments().byUnifiedRoleAssignmentMultipleId("{unifiedRoleAssignmentMultiple-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"roleDefinition"};
+});
+
 
 ```

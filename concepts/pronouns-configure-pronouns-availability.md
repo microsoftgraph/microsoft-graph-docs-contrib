@@ -3,8 +3,9 @@ title: "Manage pronouns settings for an organization using the Microsoft Graph A
 description: "Learn how to use Microsoft Graph APIs to enable, disable, or get settings that manage pronouns in an organization."
 author: "aymen-ms"
 ms.localizationpriority: high
-ms.prod: "people"
+ms.subservice: "people"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Manage pronouns settings for an organization using the Microsoft Graph API
@@ -160,7 +161,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Turn pronouns on or off for your organization in the Microsoft 365 admin center](/microsoft-365/admin/add-users/turn-pronouns-on-or-off)
 - [Pronouns in Microsoft 365](https://support.microsoft.com/topic/232c3bfb-a947-4310-86db-b22d63663d85)

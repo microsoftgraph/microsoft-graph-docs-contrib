@@ -4,8 +4,9 @@ description: "Retrieve the properties and relationships of authorizationPolicy o
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get authorizationPolicy
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "authorizationpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authorizationpolicy-get-permissions.md)]
+
+[!INCLUDE [rbac-authorization-policy-apis-read](../includes/rbac-for-apis/rbac-authorization-policy-apis-read.md)]
 
 ## HTTP request
 

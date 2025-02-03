@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-FilteringPolicy filteringPolicy = graphClient.networkaccess().filteringPolicies("d0187e08-04cc-41b4-9a47-dd640e804280")
-	.buildRequest()
-	.expand("policyRules")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.networkaccess.FilteringPolicy result = graphClient.networkAccess().filteringPolicies().byFilteringPolicyId("{filteringPolicy-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"policyRules"};
+});
+
 
 ```

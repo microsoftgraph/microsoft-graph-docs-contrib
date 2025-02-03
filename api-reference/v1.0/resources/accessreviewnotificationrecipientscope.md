@@ -1,13 +1,14 @@
 ---
-title: "accessreviewnotificationrecipientscope resource type"
+title: "accessReviewNotificationRecipientScope resource type"
 description: "Represents who will receive access review notifications."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
-# accessreviewnotificationrecipientscope resource type
+# accessReviewNotificationRecipientScope resource type
 
 Namespace: microsoft.graph
 
@@ -19,7 +20,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewNotificationRecipientScope"

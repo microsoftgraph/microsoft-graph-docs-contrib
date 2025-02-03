@@ -3,6 +3,7 @@ title: "Access national cloud deployments with the Microsoft Graph SDKs"
 description: "Provides instructions for accessing national cloud deployments using the Microsoft Graph SDKs."
 ms.localizationpriority: medium
 author: jasonjoh
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD051 -->
@@ -65,6 +66,6 @@ Connect-MgGraph -Environment USGov -ClientId 'YOUR_CLIENT_ID' `
 
 ### [TypeScript](#tab/typescript)
 
-:::code language="csharp" source="./snippets/typescript/src/snippets/nationalClouds.ts" id="NationalCloudSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/nationalClouds.ts" id="NationalCloudSnippet":::
 
 ---

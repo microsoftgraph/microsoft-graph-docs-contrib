@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EBookInstallSummary eBookInstallSummary = new EBookInstallSummary();
-eBookInstallSummary.installedDeviceCount = 4;
-eBookInstallSummary.failedDeviceCount = 1;
-eBookInstallSummary.notInstalledDeviceCount = 7;
-eBookInstallSummary.installedUserCount = 2;
-eBookInstallSummary.failedUserCount = 15;
-eBookInstallSummary.notInstalledUserCount = 5;
+eBookInstallSummary.setOdataType("#microsoft.graph.eBookInstallSummary");
+eBookInstallSummary.setInstalledDeviceCount(4);
+eBookInstallSummary.setFailedDeviceCount(1);
+eBookInstallSummary.setNotInstalledDeviceCount(7);
+eBookInstallSummary.setInstalledUserCount(2);
+eBookInstallSummary.setFailedUserCount(15);
+eBookInstallSummary.setNotInstalledUserCount(5);
+EBookInstallSummary result = graphClient.deviceAppManagement().managedEBooks().byManagedEBookId("{managedEBook-id}").installSummary().patch(eBookInstallSummary);
 
-graphClient.deviceAppManagement().managedEBooks("{managedEBookId}").installSummary()
-	.buildRequest()
-	.patch(eBookInstallSummary);
 
 ```

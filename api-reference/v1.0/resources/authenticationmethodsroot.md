@@ -3,8 +3,9 @@ title: "authenticationMethodsRoot resource type"
 description: "Container for navigation properties of resources for Microsoft Entra authentication methods."
 author: "kvenkit"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # authenticationMethodsRoot resource type
@@ -33,7 +34,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

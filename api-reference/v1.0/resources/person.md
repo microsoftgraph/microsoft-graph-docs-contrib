@@ -3,8 +3,9 @@ title: "person resource type"
 description: "Represents an aggregation of information about a person from across mail and contacts."
 author: "simonhult"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # person resource type
@@ -50,7 +51,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

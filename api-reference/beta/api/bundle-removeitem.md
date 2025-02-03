@@ -3,8 +3,9 @@ author: "spgraph-docs-team"
 title: "Remove item from bundle"
 description: "Remove item from a bundle of driveItems."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Remove item from bundle
@@ -50,7 +51,7 @@ For information about error responses, see [Microsoft Graph error responses and 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
@@ -58,10 +59,6 @@ The following is an example of a request.
 ```http
 DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item-id}
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/remove-from-bundle-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-from-bundle-javascript-snippets.md)]

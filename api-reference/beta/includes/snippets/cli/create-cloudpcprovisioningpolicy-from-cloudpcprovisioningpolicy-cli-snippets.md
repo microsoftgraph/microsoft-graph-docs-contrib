@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta device-management virtual-endpoint provisioning-policies create --body '{\
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",\
     "description": "Description value",\
@@ -31,6 +31,9 @@ mgc-beta device-management virtual-endpoint provisioning-policies create --body 
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",\
     "windowsSettings": {\
         "language": "en-US"\
+    },\
+    "windowsSetting": {\
+        "locale": "en-US"\
     },\
     "provisioningType": "dedicated"\
 }\

@@ -2,9 +2,10 @@
 title: "List activeDirectoryWindowsAutopilotDeploymentProfiles"
 description: "List properties and relationships of the activeDirectoryWindowsAutopilotDeploymentProfile objects."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List activeDirectoryWindowsAutopilotDeploymentProfiles
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1627
+Content-Length: 2080
 
 {
   "value": [
@@ -70,6 +73,7 @@ Content-Length: 1627
       "displayName": "Display Name value",
       "description": "Description value",
       "language": "Language value",
+      "locale": "Locale value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "outOfBoxExperienceSettings": {
@@ -80,6 +84,15 @@ Content-Length: 1627
         "deviceUsageType": "shared",
         "skipKeyboardSelectionPage": true,
         "hideEscapeLink": true
+      },
+      "outOfBoxExperienceSetting": {
+        "@odata.type": "microsoft.graph.outOfBoxExperienceSetting",
+        "privacySettingsHidden": true,
+        "eulaHidden": true,
+        "userType": "standard",
+        "deviceUsageType": "shared",
+        "keyboardSelectionPageSkipped": true,
+        "escapeLinkHidden": true
       },
       "enrollmentStatusScreenSettings": {
         "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
@@ -92,9 +105,11 @@ Content-Length: 1627
         "allowDeviceUseOnInstallFailure": true
       },
       "extractHardwareHash": true,
+      "hardwareHashExtractionEnabled": true,
       "deviceNameTemplate": "Device Name Template value",
-      "deviceType": "surfaceHub2",
+      "deviceType": "holoLens",
       "enableWhiteGlove": true,
+      "preprovisioningAllowed": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],

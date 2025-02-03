@@ -3,8 +3,9 @@ title: "Create deployment"
 description: "Create a new deployment object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # Create deployment

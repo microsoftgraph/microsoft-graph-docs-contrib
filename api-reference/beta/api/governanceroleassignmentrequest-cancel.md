@@ -3,8 +3,10 @@ title: "Cancel governanceRoleAssignmentRequest"
 description: "Cancel a governanceRoleAssignmentRequest."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
+ms.date: 03/13/2024
 ---
 
 # Cancel governanceRoleAssignmentRequest
@@ -70,7 +72,7 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

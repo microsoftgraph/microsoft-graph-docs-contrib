@@ -3,8 +3,9 @@ title: "accessPackageQuestion resource type"
 description: "Represents the questions configured on an access package assignment policy."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # accessPackageQuestion resource type
@@ -30,7 +31,7 @@ Subtypes include [accessPackageTextInputQuestion](../resources/accesspackagetext
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageQuestion"

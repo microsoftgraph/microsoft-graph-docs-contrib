@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SmsAuthenticationMethodConfiguration authenticationMethodConfiguration = new SmsAuthenticationMethodConfiguration();
-authenticationMethodConfiguration.id = "Sms";
-authenticationMethodConfiguration.state = AuthenticationMethodState.ENABLED;
+authenticationMethodConfiguration.setOdataType("#microsoft.graph.smsAuthenticationMethodConfiguration");
+authenticationMethodConfiguration.setId("Sms");
+authenticationMethodConfiguration.setState(AuthenticationMethodState.Enabled);
+AuthenticationMethodConfiguration result = graphClient.policies().authenticationMethodsPolicy().authenticationMethodConfigurations().byAuthenticationMethodConfigurationId("{authenticationMethodConfiguration-id}").patch(authenticationMethodConfiguration);
 
-graphClient.policies().authenticationMethodsPolicy().authenticationMethodConfigurations("sms")
-	.buildRequest()
-	.patch(authenticationMethodConfiguration);
 
 ```

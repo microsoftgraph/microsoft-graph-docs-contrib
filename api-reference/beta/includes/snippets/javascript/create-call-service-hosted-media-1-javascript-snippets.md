@@ -31,7 +31,8 @@ const call = {
   ],
   callOptions: {
     '@odata.type': '#microsoft.graph.outgoingCallOptions',
-    isContentSharingNotificationEnabled: true
+    isContentSharingNotificationEnabled: true,
+    isDeltaRosterEnabled: true
   },
   mediaConfig: {
     '@odata.type': '#microsoft.graph.serviceHostedMediaConfig'

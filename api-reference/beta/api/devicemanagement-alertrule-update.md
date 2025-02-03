@@ -3,8 +3,9 @@ title: "Update alertRule"
 description: "Update the properties of an alertRule object."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/27/2024
 ---
 
 # Update alertRule
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Update the properties of an [alertRule](../resources/devicemanagement-alertrule.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

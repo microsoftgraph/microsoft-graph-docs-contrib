@@ -3,8 +3,9 @@ title: "participantInfo resource type"
 description: "Contains additional properties about the participant identity"
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # participantInfo resource type
@@ -27,7 +28,7 @@ Contains additional properties about the participant identity
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

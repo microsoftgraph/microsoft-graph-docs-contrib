@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
-requestOptions.add(new QueryOption("$search", "\"displayName:OneVideo\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-GroupCollectionPage groups = graphClient.groups()
-	.buildRequest( requestOptions )
-	.filter("mailEnabled eq true")
-	.get();
+GroupCollectionResponse result = graphClient.groups().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "mailEnabled eq true";
+	requestConfiguration.queryParameters.search = "\"displayName:OneVideo\"";
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```

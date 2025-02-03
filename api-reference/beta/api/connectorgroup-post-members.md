@@ -3,8 +3,9 @@ title: "Add connector to connectorGroup"
 description: "Use this API to add a connector to a connectorGroup."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Add connector to connectorGroup

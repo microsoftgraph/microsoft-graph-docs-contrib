@@ -3,8 +3,9 @@ title: "sessionlifetimepolicy resource type"
 description: "Describes the session lifetime policies Microsoft Entra ID applied to a sign-in event."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # sessionlifetimepolicy resource type
@@ -28,7 +29,7 @@ For more details about session management with conditional access in Microsoft E
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.sessionLifetimePolicy"

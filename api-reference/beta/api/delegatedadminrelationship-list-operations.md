@@ -3,8 +3,9 @@ title: "List operations"
 description: "Get a list of the delegatedAdminRelationshipOperation objects and their properties."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List operations

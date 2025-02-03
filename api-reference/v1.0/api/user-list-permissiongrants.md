@@ -3,8 +3,9 @@ title: "List permissionGrants of a user"
 description: "List all resource-specific permission grants of a user."
 author: "edle"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List permissionGrants of a user
@@ -123,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List permission grants of a chat](chat-list-permissiongrants.md)
 - [List permission grants of a group](group-list-permissiongrants.md)

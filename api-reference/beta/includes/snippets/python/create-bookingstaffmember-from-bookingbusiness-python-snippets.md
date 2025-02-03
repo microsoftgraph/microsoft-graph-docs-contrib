@@ -4,10 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.booking_staff_member import BookingStaffMember
+from msgraph_beta.generated.models.booking_staff_role import BookingStaffRole
+from msgraph_beta.generated.models.booking_work_hours import BookingWorkHours
+from msgraph_beta.generated.models.day_of_week import DayOfWeek
+from msgraph_beta.generated.models.booking_work_time_slot import BookingWorkTimeSlot
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = BookingStaffMember(
 	odata_type = "#microsoft.graph.bookingStaffMember",
 	color_index = 1,
@@ -100,7 +104,7 @@ request_body = BookingStaffMember(
 	}
 )
 
-result = await graph_client.booking_businesses.by_booking_business_id('bookingBusiness-id').staff_members.post(request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').staff_members.post(request_body)
 
 
 ```

@@ -3,8 +3,9 @@ title: "List educationUsers"
 description: "Retrieve a list of users at a school."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List educationUsers

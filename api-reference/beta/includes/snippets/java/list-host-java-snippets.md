@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-HostSslCertificateCollectionWithReferencesPage sslCertificates = graphClient.security().threatIntelligence().hosts("contoso.com").sslCertificates()
-	.buildRequest()
-	.skip(5)
-	.top(1)
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.HostSslCertificateCollectionResponse result = graphClient.security().threatIntelligence().hosts().byHostId("{host-id}").sslCertificates().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.count = true;
+	requestConfiguration.queryParameters.top = 1;
+	requestConfiguration.queryParameters.skip = 5;
+});
+
 
 ```

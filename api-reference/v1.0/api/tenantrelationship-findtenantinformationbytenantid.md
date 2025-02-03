@@ -3,8 +3,9 @@ title: "tenantRelationship: findTenantInformationByTenantId"
 description: "Given a tenant ID, search for a tenant and read its tenant information."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # tenantRelationship: findTenantInformationByTenantId
@@ -21,6 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "tenantrelationship_findtenantinformationbytenantid" } -->
 [!INCLUDE [permissions-table](../includes/permissions/tenantrelationship-findtenantinformationbytenantid-permissions.md)]
+
+> [!IMPORTANT]
+> This API operation doesn't require the calling user to be assigned any [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -118,6 +122,6 @@ Content-Type: application/json
     "tenantId": "6babcaad-604b-40ac-a9d7-9fd97c0b779f",
     "federationBrandName": null,
     "displayName": "Contoso, Ltd",
-    "defaultDomainName": "CONTOSO18839.onmicrosoft.com"
+    "defaultDomainName": "contoso.com"
 }
 ```

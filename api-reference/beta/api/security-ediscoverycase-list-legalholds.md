@@ -3,8 +3,9 @@ title: "List ediscoveryHoldPolicies"
 description: "Get a list of the ediscoveryHoldPolicy objects and their properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # List ediscoveryHoldPolicies
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

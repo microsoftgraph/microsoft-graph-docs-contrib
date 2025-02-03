@@ -3,8 +3,9 @@ title: "Update permissionGrantPolicy"
 description: "Update a permissionGrantPolicy object."
 ms.localizationpriority: medium
 doc_type: "apiPageType"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 04/05/2024
 ---
 
 # Update permissionGrantPolicy

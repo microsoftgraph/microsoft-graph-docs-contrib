@@ -3,8 +3,9 @@ title: "printJob: abort"
 description: Abort a print job.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # printJob: abort

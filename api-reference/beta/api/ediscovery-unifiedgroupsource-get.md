@@ -3,8 +3,9 @@ title: "Get unifiedGroupSource"
 description: "Read the properties and relationships of a unifiedGroupSource object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Get unifiedGroupSource

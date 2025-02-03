@@ -3,8 +3,9 @@ title: "Create cloudPcCrossCloudGovernmentOrganizationMapping"
 description: "Create a new cloudPcCrossCloudGovernmentOrganizationMapping object."
 author: "SuyliuMS"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create cloudPcCrossCloudGovernmentOrganizationMapping
@@ -61,10 +62,6 @@ X-MS-CloudPC-USGovCloudTenantAADToken: {token}
 
 {}
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-cloudpccrosscloudgovernmentorganizationmapping-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpccrosscloudgovernmentorganizationmapping-from--javascript-snippets.md)]

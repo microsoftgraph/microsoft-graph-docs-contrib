@@ -3,8 +3,9 @@ title: "Get attributeSet"
 description: "Read the properties and relationships of an attributeSet object."
 author: "Cecily"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get attributeSet

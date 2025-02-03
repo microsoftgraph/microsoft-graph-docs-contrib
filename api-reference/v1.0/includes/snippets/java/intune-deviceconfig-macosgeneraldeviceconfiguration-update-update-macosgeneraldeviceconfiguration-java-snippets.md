@@ -4,36 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MacOSGeneralDeviceConfiguration deviceConfiguration = new MacOSGeneralDeviceConfiguration();
-deviceConfiguration.description = "Description value";
-deviceConfiguration.displayName = "Display Name value";
-deviceConfiguration.version = 7;
-LinkedList<AppListItem> compliantAppsListList = new LinkedList<AppListItem>();
-AppListItem compliantAppsList = new AppListItem();
-compliantAppsList.name = "Name value";
-compliantAppsList.publisher = "Publisher value";
-compliantAppsList.appStoreUrl = "https://example.com/appStoreUrl/";
-compliantAppsList.appId = "App Id value";
-compliantAppsListList.add(compliantAppsList);
-deviceConfiguration.compliantAppsList = compliantAppsListList;
-deviceConfiguration.compliantAppListType = AppListType.APPS_IN_LIST_COMPLIANT;
-LinkedList<String> emailInDomainSuffixesList = new LinkedList<String>();
-emailInDomainSuffixesList.add("Email In Domain Suffixes value");
-deviceConfiguration.emailInDomainSuffixes = emailInDomainSuffixesList;
-deviceConfiguration.passwordBlockSimple = true;
-deviceConfiguration.passwordExpirationDays = 6;
-deviceConfiguration.passwordMinimumCharacterSetCount = 0;
-deviceConfiguration.passwordMinimumLength = 5;
-deviceConfiguration.passwordMinutesOfInactivityBeforeLock = 5;
-deviceConfiguration.passwordMinutesOfInactivityBeforeScreenTimeout = 14;
-deviceConfiguration.passwordPreviousPasswordBlockCount = 2;
-deviceConfiguration.passwordRequiredType = AndroidRequiredPasswordType.ALPHANUMERIC;
-deviceConfiguration.passwordRequired = true;
+deviceConfiguration.setOdataType("#microsoft.graph.macOSGeneralDeviceConfiguration");
+deviceConfiguration.setDescription("Description value");
+deviceConfiguration.setDisplayName("Display Name value");
+deviceConfiguration.setVersion(7);
+LinkedList<AppListItem> compliantAppsList = new LinkedList<AppListItem>();
+AppListItem appListItem = new AppListItem();
+appListItem.setOdataType("microsoft.graph.appListItem");
+appListItem.setName("Name value");
+appListItem.setPublisher("Publisher value");
+appListItem.setAppStoreUrl("https://example.com/appStoreUrl/");
+appListItem.setAppId("App Id value");
+compliantAppsList.add(appListItem);
+deviceConfiguration.setCompliantAppsList(compliantAppsList);
+deviceConfiguration.setCompliantAppListType(AppListType.AppsInListCompliant);
+LinkedList<String> emailInDomainSuffixes = new LinkedList<String>();
+emailInDomainSuffixes.add("Email In Domain Suffixes value");
+deviceConfiguration.setEmailInDomainSuffixes(emailInDomainSuffixes);
+deviceConfiguration.setPasswordBlockSimple(true);
+deviceConfiguration.setPasswordExpirationDays(6);
+deviceConfiguration.setPasswordMinimumCharacterSetCount(0);
+deviceConfiguration.setPasswordMinimumLength(5);
+deviceConfiguration.setPasswordMinutesOfInactivityBeforeLock(5);
+deviceConfiguration.setPasswordMinutesOfInactivityBeforeScreenTimeout(14);
+deviceConfiguration.setPasswordPreviousPasswordBlockCount(2);
+deviceConfiguration.setPasswordRequiredType(RequiredPasswordType.Alphanumeric);
+deviceConfiguration.setPasswordRequired(true);
+DeviceConfiguration result = graphClient.deviceManagement().deviceConfigurations().byDeviceConfigurationId("{deviceConfiguration-id}").patch(deviceConfiguration);
 
-graphClient.deviceManagement().deviceConfigurations("{deviceConfigurationId}")
-	.buildRequest()
-	.patch(deviceConfiguration);
 
 ```

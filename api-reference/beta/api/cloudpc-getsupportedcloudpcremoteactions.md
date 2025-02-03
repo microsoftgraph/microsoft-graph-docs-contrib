@@ -3,8 +3,9 @@ title: "cloudPC: getSupportedCloudPcRemoteActions"
 description: "Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities."
 author: "hanky0301"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # cloudPC: getSupportedCloudPcRemoteActions
@@ -53,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -103,7 +104,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/8
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

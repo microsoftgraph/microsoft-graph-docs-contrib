@@ -2,9 +2,10 @@
 author: spgraph-docs-team
 title: Get a SharePoint list
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Returns the metadata for a list."
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # Get metadata for a list
 

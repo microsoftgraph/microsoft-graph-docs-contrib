@@ -3,8 +3,9 @@ title: "taskViewpoint resource type"
 description: Contains personal properties of a task"
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 04/22/2024
 ---
 
 # taskViewpoint resource type
@@ -25,7 +26,7 @@ Contains personal properties of a [task](task.md). When sharing or assigning a *
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.taskViewpoint"
@@ -34,7 +35,7 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.taskViewpoint",
-  "reminderDatetime": {
+  "reminderDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },
   "categories": ["string"]

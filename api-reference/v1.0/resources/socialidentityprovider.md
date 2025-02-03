@@ -3,8 +3,9 @@ title: "socialIdentityProvider resource type"
 description: "Represents social identity providers in a Microsoft Entra tenant and an Azure AD B2C tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "namkedia"
+ms.date: 07/22/2024
 ---
 
 # socialIdentityProvider resource type
@@ -24,14 +25,9 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to si
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the [socialidentityprovider](../resources/socialidentityprovider.md) object types. There is no way to retrieve only the social identity providers in a tenant.|
-|[Create](../api/identitycontainer-post-identityproviders.md)|[socialidentityprovider](../resources/socialidentityprovider.md) |Create a new [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[Get](../api/identityproviderbase-get.md) |[socialidentityprovider](../resources/socialidentityprovider.md) |Retrieve properties of a [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[Update](../api/identityproviderbase-update.md)|None|Update a [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[Delete](../api/identityproviderbase-delete.md)|None|Delete a [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
+None. 
+
+For the list of API operations for managing social identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 
 ## Properties
 
@@ -49,13 +45,12 @@ Each identity provider has a process for creating an app registration. For examp
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.socialIdentityProvider"
 } -->
-
 ```json
 {
     "id": "String",

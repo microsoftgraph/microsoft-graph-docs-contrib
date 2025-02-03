@@ -4,8 +4,9 @@ description: "View the raw count of super users in the specified AWS, Azure, or 
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # superUserFinding: aggregatedSummary
@@ -52,7 +53,6 @@ GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.superU
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

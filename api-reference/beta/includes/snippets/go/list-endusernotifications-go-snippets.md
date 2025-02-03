@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,19 +15,17 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 
 requestFilter := "source eq 'global'"
 
-requestParameters := &graphsecurity.SecurityAttackSimulationEndUserNotificationsRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.AttackSimulationEndUserNotificationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphsecurity.SecurityAttackSimulationEndUserNotificationsRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.AttackSimulationEndUserNotificationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 endUserNotifications, err := graphClient.Security().AttackSimulation().EndUserNotifications().Get(context.Background(), configuration)
 
 

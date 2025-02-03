@@ -1,10 +1,10 @@
 ---
 author: spgraph-docs-team
-description: "List a set of items that have been recently used by the signed in user."
+description: "List a set of items recently used by the signed-in user."
 ms.date: 09/10/2017
 title: List Recent Files
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List recent files
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List a set of items that have been recently used by the signed in user.
+List a set of items recently used by the signed-in user.
 This collection includes items that are in the user's drive and items they have access to from other drives.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -34,11 +34,13 @@ GET /me/drive/recent
 
 ## Response
 
-This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive has recently accessed.
+This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive recently accessed.
 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "view-recent-files" } -->
@@ -82,6 +84,8 @@ GET /me/drive/recent
 ---
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
     "blockType": "response",
@@ -131,9 +135,8 @@ Content-Type: application/json
 
 ## Remarks
 
-
-Some driveItems returned from the **recent** action will include the **remoteItem** facet that indicates the items are from another drive. 
-To access the original driveItem object, you need to make a request using the information provided in **remoteItem** in the following format:
+Some driveItems returned from the **recent** action includes the **remoteItem** facet that indicates the items are from another drive.
+To access the original driveItem object, you need to make a request, using the information provided in **remoteItem** in the following format:
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 

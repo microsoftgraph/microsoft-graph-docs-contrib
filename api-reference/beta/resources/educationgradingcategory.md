@@ -3,8 +3,10 @@ title: "educationGradingCategory resource type"
 description: "Represents the weighted contribution of an assignment to a class average grade."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Grading category
+ms.date: 07/22/2024
 ---
 
 # educationGradingCategory resource type
@@ -21,9 +23,9 @@ Represents the weighted contribution of an assignment to a class average grade.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Add gradingCategory](../api/educationassignment-post-gradingcategory.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
-|[Remove gradingCategory](../api/educationassignment-delete-gradingcategory.md) | [educationCategory](educationgradingcategory.md) | Remove existing **gradingCategory**.|
-|[Update gradingCategory](../api/educationgradingcategory-update.md) | [educationCategory](educationgradingcategory.md) | Update a single **gradingCategory**.|
+|[Add](../api/educationassignment-post-gradingcategory.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
+|[Delete](../api/educationassignment-delete-gradingcategory.md) | [educationCategory](educationgradingcategory.md) | Remove existing **gradingCategory**.|
+|[Update](../api/educationgradingcategory-update.md) | [educationCategory](educationgradingcategory.md) | Update a single **gradingCategory**.|
 
 
 ## Properties
@@ -33,9 +35,12 @@ Represents the weighted contribution of an assignment to a class average grade.
 |displayName|String|The name of the grading category.|
 |percentageWeight|Int32|The weight of the category; an integer between 0 and 100.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

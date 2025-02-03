@@ -1,17 +1,19 @@
 ---
 title: "Get group"
 description: "Get the properties and relationships of a group object."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
-# Get group 
+# Get group
 
 Namespace: microsoft.graph
 
-Get the properties and relationships of a group object.
+Get the properties and relationships of a [group](../resources/group.md) object.
 
 This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that aren't_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and aren't returned in the `$select` query.
 
@@ -50,7 +52,7 @@ For more information on OData query options, see [OData Query Parameters](/graph
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -118,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 #### Response
 
-Here's an example of the response. It includes only the default properties.
+The following example shows the response. It includes only the default properties.
 
 > **Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 
@@ -146,7 +148,7 @@ Content-type: application/json
         "Unified"
     ],
     "isAssignableToRole": null,
-    "mail": "HRTaskforce@M365x214355.onmicrosoft.com",
+    "mail": "HRTaskforce@contoso.com",
     "mailEnabled": true,
     "mailNickname": "HRTaskforce",
     "membershipRule": null,
@@ -160,7 +162,7 @@ Content-type: application/json
     "preferredDataLocation": null,
     "preferredLanguage": null,
     "proxyAddresses": [
-        "SMTP:HRTaskforce@M365x214355.onmicrosoft.com",
+        "SMTP:HRTaskforce@contoso.com",
         "SPO:SPO_896cf652-b200-4b74-8111-c013f64406cf@SPO_dcd219dd-bc68-4b9b-bf0b-4a33a796be35"
     ],
     "renewedDateTime": "2020-01-24T19:01:14Z",

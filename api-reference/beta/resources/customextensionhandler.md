@@ -3,8 +3,9 @@ title: "customExtensionHandler resource type (deprecated)"
 description: "Defines when to execute a custom access package workflow extension."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # customExtensionHandler resource type (deprecated)
@@ -16,9 +17,6 @@ Namespace: microsoft.graph
 Defines when to execute a [custom access package workflow extension](customaccesspackageworkflowextension.md).
 
 Inherits from [entity](entity.md).
-
-## Methods
-None.
 
 > [!NOTE]
 >
@@ -38,7 +36,7 @@ None.
 |customExtension|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Indicates which custom workflow extension is executed at this stage. Nullable. Supports `$expand`.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

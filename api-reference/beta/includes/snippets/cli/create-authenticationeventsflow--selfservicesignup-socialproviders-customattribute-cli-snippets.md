@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta identity authentication-events-flows create --body '{\
     "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",\
     "displayName": "Woodgrove User Flow 2",\

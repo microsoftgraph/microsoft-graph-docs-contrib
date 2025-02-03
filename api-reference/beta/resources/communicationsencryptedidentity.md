@@ -3,8 +3,9 @@ title: "communicationsEncryptedIdentity resource type"
 description: "Represents the identity of a user whose underlying identity isn't available to the application due to privacy restrictions."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # communicationsEncryptedIdentity resource type
@@ -23,6 +24,9 @@ Inherits from [identity](identity.md).
 | :----------------------------- | :---------------------------| :-------------|
 | displayName | String | Inherited from **identity**. The display name associated with the user. |
 | id | String | Inherited from **identity**. The user's encrypted identifier. |
+
+## Relationships
+None.
 
 ## JSON representation
 

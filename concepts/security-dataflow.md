@@ -3,7 +3,8 @@ title: "Microsoft Graph Security API data flow"
 description: "The Microsoft Graph Security API federates requests to all providers in the security ecosystem based on the security provider consent provided by the application."
 author: "preetikr"
 ms.localizationpriority: high
-ms.prod: "security"
+ms.subservice: "security"
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph Security API data flow

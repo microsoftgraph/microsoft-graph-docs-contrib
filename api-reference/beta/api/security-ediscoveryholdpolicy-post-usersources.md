@@ -3,8 +3,9 @@ title: "Create userSource"
 description: "Create a new userSource object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # Create userSource
@@ -12,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new userSource object.
+Create a new [userSource](../resources/security-usersource.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -46,7 +47,7 @@ You can specify the following properties when you create a **userSource**.
 |Property|Type|Description|
 |:---|:---|:---|
 |email|String|SMTP address of the user.|
-|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`. Only `mailbox` is applicable for user sources.|
 
 
 ## Response
@@ -56,7 +57,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -69,8 +70,8 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 Content-Type: application/json
 
 {
-    "email": "admin@M365x809305.onmicrosoft.com",
-    "includedSources": "mailbox, site"
+    "email": "admin@contoso.com",
+    "includedSources": "mailbox"
 }
 ```
 
@@ -127,14 +128,14 @@ Content-Type: application/json
     "createdDateTime": "0001-01-01T00:00:00Z",
     "holdStatus": "applied",
     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
-    "email": "admin@M365x809305.onmicrosoft.com",
+    "email": "admin@contoso.com",
     "includedSources": "mailbox,site",
     "siteWebUrl": "",
     "createdBy": {
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",

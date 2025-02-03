@@ -1,10 +1,11 @@
 ---
 title: "Create openShift"
-description: "Create an instance of openshift object."
+description: "Create an instance of openShift object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 11/30/2024
 ---
 
 # Create openShift
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an instance of an [openshift](../resources/openshift.md) object.
+Create an instance of an [openShift](../resources/openshift.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -52,11 +53,12 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "openshift_post"
+  "name": "openshift_post",
+  "sampleKeys": ["788b75d2-a911-48c0-a5e2-dc98480457e3"]
 }-->
 
 ```http
@@ -135,7 +137,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

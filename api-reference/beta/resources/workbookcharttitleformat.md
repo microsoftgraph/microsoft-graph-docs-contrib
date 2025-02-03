@@ -3,8 +3,9 @@ title: "workbookChartTitleFormat resource type"
 description: "Encapsulates the format properties for the chart title."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # workbookChartTitleFormat resource type
@@ -32,7 +33,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

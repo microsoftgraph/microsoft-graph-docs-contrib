@@ -3,8 +3,9 @@ title: "webApplication resource type"
 description: "Specifies settings for a web application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 04/03/2024
 ---
 
 # webApplication resource type
@@ -23,7 +24,7 @@ Specifies settings for a web application.
 | redirectUris | String collection | Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. |
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

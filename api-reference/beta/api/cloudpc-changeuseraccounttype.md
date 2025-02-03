@@ -3,8 +3,9 @@ title: "cloudPC: changeUserAccountType"
 description: "Change the account type of the user on a specific Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # cloudPC: changeUserAccountType

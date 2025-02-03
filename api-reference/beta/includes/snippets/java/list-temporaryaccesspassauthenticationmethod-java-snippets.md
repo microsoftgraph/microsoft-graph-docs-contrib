@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TemporaryAccessPassAuthenticationMethodCollectionPage temporaryAccessPassMethods = graphClient.users("071cc716-8147-4397-a5ba-b2105951cc0b").authentication().temporaryAccessPassMethods()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+TemporaryAccessPassAuthenticationMethodCollectionResponse result = graphClient.users().byUserId("{user-id}").authentication().temporaryAccessPassMethods().get();
+
 
 ```

@@ -17,11 +17,11 @@ var requestBody = new Contact
 		{
 			Type = EmailType.Personal,
 			Name = "Pavel Bansky",
-			Address = "pavelb@adatum.onmicrosoft.com",
+			Address = "pavelb@contoso.com",
 		},
 		new TypedEmailAddress
 		{
-			Address = "pavelb@fabrikam.onmicrosoft.com",
+			Address = "pavelb@contoso.com",
 			Name = "Pavel Bansky",
 			Type = EmailType.Other,
 			OtherLabel = "Volunteer work",

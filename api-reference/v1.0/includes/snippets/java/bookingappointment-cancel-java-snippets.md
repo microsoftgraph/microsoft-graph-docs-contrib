@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String cancellationMessage = "Your appointment has been successfully cancelled. Please call us again.";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.solutions().bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").appointments("AAMkADKoAAA=")
-	.cancel(BookingAppointmentCancelParameterSet
-		.newBuilder()
-		.withCancellationMessage(cancellationMessage)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.solutions.bookingbusinesses.item.appointments.item.cancel.CancelPostRequestBody cancelPostRequestBody = new com.microsoft.graph.solutions.bookingbusinesses.item.appointments.item.cancel.CancelPostRequestBody();
+cancelPostRequestBody.setCancellationMessage("Your appointment has been successfully cancelled. Please call us again.");
+graphClient.solutions().bookingBusinesses().byBookingBusinessId("{bookingBusiness-id}").appointments().byBookingAppointmentId("{bookingAppointment-id}").cancel().post(cancelPostRequestBody);
+
 
 ```

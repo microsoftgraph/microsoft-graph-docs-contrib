@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OnTokenIssuanceStartListener authenticationEventListener = new OnTokenIssuanceStartListener();
+authenticationEventListener.setOdataType("#microsoft.graph.onTokenIssuanceStartListener");
 AuthenticationConditions conditions = new AuthenticationConditions();
 AuthenticationConditionsApplications applications = new AuthenticationConditionsApplications();
-applications.includeAllApplications = false;
-conditions.applications = applications;
-authenticationEventListener.conditions = conditions;
-authenticationEventListener.priority = 500;
+applications.setIncludeAllApplications(false);
+conditions.setApplications(applications);
+authenticationEventListener.setConditions(conditions);
+authenticationEventListener.setPriority(500);
+AuthenticationEventListener result = graphClient.identity().authenticationEventListeners().byAuthenticationEventListenerId("{authenticationEventListener-id}").patch(authenticationEventListener);
 
-graphClient.identity().authenticationEventListeners("990d94e5-cc8f-4c4b-97b4-27e2678aac28")
-	.buildRequest()
-	.patch(authenticationEventListener);
 
 ```

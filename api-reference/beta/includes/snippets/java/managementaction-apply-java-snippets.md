@@ -4,25 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String tenantId = "String";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String tenantGroupId = "String";
+com.microsoft.graph.beta.tenantrelationships.managedtenants.managementactions.item.microsoftgraphmanagedtenantsapply.ApplyPostRequestBody applyPostRequestBody = new com.microsoft.graph.beta.tenantrelationships.managedtenants.managementactions.item.microsoftgraphmanagedtenantsapply.ApplyPostRequestBody();
+applyPostRequestBody.setTenantId("String");
+applyPostRequestBody.setTenantGroupId("String");
+applyPostRequestBody.setManagementTemplateId("String");
+var result = graphClient.tenantRelationships().managedTenants().managementActions().byManagementActionId("{managementAction-id}").microsoftGraphManagedTenantsApply().post(applyPostRequestBody);
 
-String managementTemplateId = "String";
-
-graphClient.tenantRelationships().managedTenants().managementActions("{managementActionId}")
-	.apply(ManagementActionApplyParameterSet
-		.newBuilder()
-		.withTenantId(tenantId)
-		.withTenantGroupId(tenantGroupId)
-		.withManagementTemplateId(managementTemplateId)
-		.withIncludeAllUsers(null)
-		.withIncludeGroups(null)
-		.withExcludeGroups(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

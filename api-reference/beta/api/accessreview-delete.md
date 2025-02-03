@@ -3,8 +3,9 @@ title: "Delete accessReview (deprecated)"
 description: "In the Microsoft Entra access reviews feature, delete an accessReview object."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete accessReview (deprecated)

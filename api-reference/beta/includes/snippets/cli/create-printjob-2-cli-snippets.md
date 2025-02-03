@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta print shares jobs create --printer-share-id {printerShare-id} --body '{\
   "displayName": "testjob",\
   "configuration": {\

@@ -3,8 +3,9 @@ title: "List payloads"
 description: "Get a list of payloads for attack simulation campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 07/23/2024
 ---
 
 # List payloads
@@ -45,13 +46,15 @@ The following list shows examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $count=true
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $filter={property} eq '{property-value}'
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $orderby={property}
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $skipToken={skipToken}
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $top=1
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $select={property}
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$count=true
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&{property} eq '{property-value}'
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&{property} eq '{property-value}' &$top=5
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$filter={property} eq '{property-value}'
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$orderby={property}
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$skipToken={skipToken}
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$top=1
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$select={property}
 ```
 
 ## Request headers
@@ -93,6 +96,10 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/payloads?$filter=
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-payloads-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-payloads-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

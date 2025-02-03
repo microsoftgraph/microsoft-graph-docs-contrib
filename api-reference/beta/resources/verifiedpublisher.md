@@ -3,8 +3,9 @@ title: "verifiedPublisher resource type"
 description: "Represents the verified publisher of the application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "xurobertMSFT"
+ms.date: 03/21/2024
 ---
 
 # verifiedPublisher resource type
@@ -24,8 +25,11 @@ Represents a verified publisher of an [application](application.md). For more in
 |verifiedPublisherId|String| The ID of the verified publisher from the app publisher's Partner Center account. |
 
 
+## Relationships
+None.
+
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

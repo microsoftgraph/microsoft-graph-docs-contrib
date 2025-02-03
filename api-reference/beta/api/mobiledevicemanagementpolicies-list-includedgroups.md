@@ -3,8 +3,9 @@ title: "List includedGroups"
 description: "Get the list of groups that are included in a mobile device management policy."
 author: "ravennMSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/31/2024
 ---
 
 # List includedGroups
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the list of groups that are included in a mobile device management policy.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "mobiledevicemanagementpolicies_list_includedgroups" } -->
 [!INCLUDE [permissions-table](../includes/permissions/mobiledevicemanagementpolicies-list-includedgroups-permissions.md)]
+
+[!INCLUDE [rbac-mam-mdm-policies-apis-read](../includes/rbac-for-apis/rbac-mam-mdm-policies-apis-read.md)]
 
 ## HTTP request
 

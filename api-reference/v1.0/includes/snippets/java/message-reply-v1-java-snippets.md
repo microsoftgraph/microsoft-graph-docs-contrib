@@ -4,33 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.users.item.messages.item.reply.ReplyPostRequestBody replyPostRequestBody = new com.microsoft.graph.users.item.messages.item.reply.ReplyPostRequestBody();
 Message message = new Message();
-LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
-Recipient toRecipients = new Recipient();
+LinkedList<Recipient> toRecipients = new LinkedList<Recipient>();
+Recipient recipient = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.address = "samanthab@contoso.onmicrosoft.com";
-emailAddress.name = "Samantha Booth";
-toRecipients.emailAddress = emailAddress;
-toRecipientsList.add(toRecipients);
-Recipient toRecipients1 = new Recipient();
+emailAddress.setAddress("samanthab@contoso.com");
+emailAddress.setName("Samantha Booth");
+recipient.setEmailAddress(emailAddress);
+toRecipients.add(recipient);
+Recipient recipient1 = new Recipient();
 EmailAddress emailAddress1 = new EmailAddress();
-emailAddress1.address = "randiw@contoso.onmicrosoft.com";
-emailAddress1.name = "Randi Welch";
-toRecipients1.emailAddress = emailAddress1;
-toRecipientsList.add(toRecipients1);
-message.toRecipients = toRecipientsList;
+emailAddress1.setAddress("randiw@contoso.com");
+emailAddress1.setName("Randi Welch");
+recipient1.setEmailAddress(emailAddress1);
+toRecipients.add(recipient1);
+message.setToRecipients(toRecipients);
+replyPostRequestBody.setMessage(message);
+replyPostRequestBody.setComment("Samantha, Randi, would you name the group please?");
+graphClient.me().messages().byMessageId("{message-id}").reply().post(replyPostRequestBody);
 
-String comment = "Samantha, Randi, would you name the group please?";
-
-graphClient.me().messages("AAMkADA1MTAAAAqldOAAA=")
-	.reply(MessageReplyParameterSet
-		.newBuilder()
-		.withMessage(message)
-		.withComment(comment)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

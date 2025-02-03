@@ -3,8 +3,9 @@ title: "Close eDiscoveryCase"
 description: "Close an eDiscoveryCase."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Close eDiscoveryCase
@@ -61,7 +62,7 @@ If successful, this action returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/security/cases/ediscoveryCases/061b9a92-8926-4bd9-b41d-abf35edc7583/close
+POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/061b9a92-8926-4bd9-b41d-abf35edc7583/close
 ```
 
 # [C#](#tab/csharp)

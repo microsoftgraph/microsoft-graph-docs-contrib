@@ -4,8 +4,9 @@ description: "Represents a Microsoft Entra ID named location defined by countrie
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # countryNamedLocation resource type
@@ -20,11 +21,11 @@ Inherits from [namedLocation](../resources/namedLocation.md)
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List countryNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) collection | Get all the **countryNamedLocation** objects in the organization. |
-| [Create countryNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) | Create a new **countryNamedLocation** object. |
-| [Get countryNamedLocation](../api/countrynamedlocation-get.md) | [countryNamedLocation](countrynamedlocation.md) | Read the properties and relationships of a **countryNamedLocation** object. |
-| [Update countryNamedLocation](../api/countrynamedlocation-update.md) | [countryNamedLocation](countrynamedlocation.md) | Update a **countryNamedLocation** object. |
-| [Delete countryNamedLocation](../api/countrynamedlocation-delete.md) | None | Delete a **countryNamedLocation** object. |
+| [List](../api/conditionalaccessroot-list-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) collection | Get all the **countryNamedLocation** objects in the organization. |
+| [Create](../api/conditionalaccessroot-post-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) | Create a new **countryNamedLocation** object. |
+| [Get](../api/countrynamedlocation-get.md) | [countryNamedLocation](countrynamedlocation.md) | Read the properties and relationships of a **countryNamedLocation** object. |
+| [Update](../api/countrynamedlocation-update.md) | [countryNamedLocation](countrynamedlocation.md) | Update a **countryNamedLocation** object. |
+| [Delete](../api/countrynamedlocation-delete.md) | None | Delete a **countryNamedLocation** object. |
 
 ## Properties
 
@@ -44,7 +45,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -66,7 +67,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
 + [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)

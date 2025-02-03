@@ -3,8 +3,9 @@ title: "servicePrincipalLockConfiguration resource type"
 description: "Specifies the sensitive properties of the app that are locked for editing on the service principal. You can disable this configuration to allow the properties to be updated."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "madansr7"
+ms.date: 03/21/2024
 ---
 
 # servicePrincipalLockConfiguration resource type
@@ -27,8 +28,11 @@ For more information about managing this object, see [Lock sensitive properties 
 | credentialsWithUsageSign   | Boolean | Locks the keyCredentials and passwordCredentials properties for modification where credential **usage** type is `Sign`.                                                                 |
 | tokenEncryptionKeyId       | Boolean | Locks the tokenEncryptionKeyId property for modification on the service principal.                                                                            |
 
+## Relationships
+None.
+
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,8 +3,9 @@ title: "searchEntity: query"
 description: "Run a specified search query. Search results are provided in the response."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
+ms.date: 05/02/2024
 ---
 
 # searchEntity: query
@@ -80,6 +81,7 @@ Content-type: application/json
       "contentSources": [
         "/external/connections/connectionfriendlyname"
       ],
+      "region": "US",
       "query": {
         "queryString": "contoso product"
       },
@@ -186,6 +188,7 @@ Content-type: application/json
       "entityTypes": [
         "listItem"
       ],
+      "region": "US",
       "query": {
         "queryString": "contoso",
         "queryTemplate":"{searchTerms} CreatedBy:Bob"
@@ -241,12 +244,12 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
 - Search [person](/graph/search-concept-person)
-- Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
+- Search content in SharePoint and OneDrive ([files, lists, and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
 - Search with [queryTemplate](/graph/search-concept-query-template)
 - [Sort](/graph/search-concept-sort) search results

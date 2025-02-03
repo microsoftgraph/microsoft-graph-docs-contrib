@@ -3,8 +3,9 @@ title: "applicableContentDeviceMatch resource type"
 description: "Represents a collection of devices and recommendations for the applicable catalog content."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # applicableContentDeviceMatch resource type
@@ -18,23 +19,25 @@ Represents a collection of devices and recommendations for the applicable catalo
 ## Properties
 | Property      | Type              | Description                                      |
 |:--------------|:------------------|:-------------------------------------------------|
+| deviceId | String  | Collection of vendors who recommend the content. |
 | recommendedBy | String collection | Collection of vendors who recommend the content. |
 
 ## Relationships
 | Relationship | Type                                             | Description                                      |
 |:-------------|:-------------------------------------------------|:-------------------------------------------------|
-| device       | [microsoft.graph.device](../resources/device.md) | Represents a device registered in the directory. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.windowsUpdates.applicableContentDeviceMatch"
+  "@odata.type": "microsoft.graph.windowsUpdates.applicableContentDeviceMatch", 
+  "keyProperty": "deviceId"
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.applicableContentDeviceMatch",
+  "deviceId": "String",
   "recommendedBy": ["String"]
 }
 ```

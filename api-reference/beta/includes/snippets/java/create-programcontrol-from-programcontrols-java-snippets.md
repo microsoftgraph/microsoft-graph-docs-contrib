@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ProgramControl programControl = new ProgramControl();
-programControl.controlId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213";
-programControl.controlTypeId = "6e4f3d20-c5c3-407f-9695-8460952bcc68";
-programControl.programId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213";
+programControl.setControlId("7e59d237-2fb0-4e5d-b7bb-d4f9f9129213");
+programControl.setControlTypeId("6e4f3d20-c5c3-407f-9695-8460952bcc68");
+programControl.setProgramId("7e59d237-2fb0-4e5d-b7bb-d4f9f9129213");
+ProgramControl result = graphClient.programControls().post(programControl);
 
-graphClient.programControls()
-	.buildRequest()
-	.post(programControl);
 
 ```

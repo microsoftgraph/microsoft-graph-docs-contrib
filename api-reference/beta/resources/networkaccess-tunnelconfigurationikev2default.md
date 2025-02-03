@@ -3,8 +3,9 @@ title: "tunnelConfigurationIKEv2Default resource type"
 description: "Specifies connectivity settings such as protocol, IPSec policy, and preshared key) for establishing connectivity."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # tunnelConfigurationIKEv2Default resource type
@@ -26,7 +27,7 @@ Inherits from [microsoft.graph.networkaccess.tunnelConfiguration](../resources/n
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.tunnelConfigurationIKEv2Default"

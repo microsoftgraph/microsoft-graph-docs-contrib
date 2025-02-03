@@ -3,8 +3,9 @@ title: "serviceActivity: getMetricsForConditionalAccessCompliantDevicesSignInSuc
 description: "Get the number of user authentication requests, during a specified time period, that satisfy a Conditional Access policy that requires device compliance. Microsoft Intune manages compliant devices, including mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid)."
 author: "Zacharypeng"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # serviceActivity: getMetricsForConditionalAccessCompliantDevicesSignInSuccess
@@ -20,16 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceactivity_getmetricsforconditionalaccesscompliantdevicessigninsuccess" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess-permissions.md)]
 
-In addition to the delegated permissions, the signed-in user who is accessing the data needs to belong to one of the following directory roles, which allow them to read sign-in reports:
+[!INCLUDE [rbac-entra-health-service-activity-apis](../includes/rbac-for-apis/rbac-entra-health-service-activity-apis.md)]
 
-+ Global Administrator
-+ Global Reader
-+ Reports Reader
-+ Security Administrator
-+ Security Operator
-+ Security Reader
-
-To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 ## HTTP request
 
 <!-- {

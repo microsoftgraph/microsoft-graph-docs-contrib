@@ -3,8 +3,9 @@ title: "Get teamworkHostedContent"
 description: "Retrieve the hosted content in a teamsAppIcon."
 ms.localizationpriority: medium
 author: "jecha"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Get teamworkHostedContent
@@ -195,7 +196,7 @@ HTTP/1.1 200 OK
 Content-type: image/png
 ```
 
-## See also
+## Related content
 
 - [Get icons of a Teams app](teamsappicon-get.md)
 - [List apps in catalog](appcatalogs-list-teamsapps.md)

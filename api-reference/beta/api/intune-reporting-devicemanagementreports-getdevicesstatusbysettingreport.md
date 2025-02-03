@@ -2,9 +2,10 @@
 title: "getDevicesStatusBySettingReport action"
 description: "Intune Reporting Devicemanagementreports Getdevicesstatusbysettingreport Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/12/2024
 ---
 
 # getDevicesStatusBySettingReport action
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,9 +52,9 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |select|String collection||
-|search|String||
 |groupBy|String collection||
 |orderBy|String collection||
+|search|String||
 |skip|Int32||
 |top|Int32||
 |sessionId|String||
@@ -76,13 +79,13 @@ Content-length: 253
   "select": [
     "Select value"
   ],
-  "search": "Search value",
   "groupBy": [
     "Group By value"
   ],
   "orderBy": [
     "Order By value"
   ],
+  "search": "Search value",
   "skip": 4,
   "top": 3,
   "sessionId": "Session Id value",

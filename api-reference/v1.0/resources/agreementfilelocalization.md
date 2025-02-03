@@ -3,8 +3,9 @@ title: "agreementFileLocalization resource type"
 description: "Represents a localized policy file of a terms-of-use agreement in Microsoft Entra."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: AlexFilipin
+ms.date: 05/23/2024
 ---
 
 # agreementFileLocalization resource type
@@ -18,10 +19,10 @@ Inherits from [agreementFileProperties](agreementfileproperties.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get agreementFile](../api/agreementfile-get.md)|[agreementFile](../resources/agreementfile.md)|Read the properties and relationships of an [agreementFile](../resources/agreementfile.md) object.|
-|[List agreementFiles](../api/agreement-list-files.md)|[agreementFile](../resources/agreementfile.md) collection|Get a list of the [agreementFile](../resources/agreementfile.md) objects and their properties.|
-|[Create agreementFile](../api/agreement-post-files.md)|[agreementFile](../resources/agreementfile.md)|Create a new [agreementFile](../resources/agreementfile.md) object.|
-|[List localizations](../api/agreementfile-list-localizations.md)|[agreementFileLocalization](../resources/agreementfilelocalization.md) collection|Get the agreementFileLocalization resources from the localizations navigation property.|
+|[Get default file](../api/agreementfile-get.md)|[agreementFile](../resources/agreementfile.md)|Read the properties and relationships of an [agreementFile](../resources/agreementfile.md) object.|
+|[List files](../api/agreement-list-files.md)|[agreementFile](../resources/agreementfile.md) collection|Get a list of the [agreementFile](../resources/agreementfile.md) objects and their properties.|
+|[Create localized files](../api/agreement-post-files.md)|[agreementFile](../resources/agreementfile.md)|Create a new [agreementFile](../resources/agreementfile.md) object.|
+|[List localized files](../api/agreementfile-list-localizations.md)|[agreementFileLocalization](../resources/agreementfilelocalization.md) collection|Get the agreementFileLocalization resources from the localizations navigation property.|
 
 
 ## Properties
@@ -45,7 +46,7 @@ Inherits from [agreementFileProperties](agreementfileproperties.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

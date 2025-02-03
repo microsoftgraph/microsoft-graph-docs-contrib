@@ -3,8 +3,9 @@ title: "plannerPlanDetails resource type"
 description: "Represents the additional information about a plan."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # plannerPlanDetails resource type
@@ -17,8 +18,8 @@ Represents the additional information about a plan. Each [plan](plannerplan.md) 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |Read properties and relationships of **plannerPlanDetails** object.|
-|[Update](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)	|Update **plannerPlanDetails** object. |
+|[Get plan details](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |Read properties and relationships of **plannerPlanDetails** object.|
+|[Update plan details](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)	|Update **plannerPlanDetails** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -31,7 +32,7 @@ Represents the additional information about a plan. Each [plan](plannerplan.md) 
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

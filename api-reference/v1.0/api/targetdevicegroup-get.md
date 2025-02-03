@@ -3,8 +3,9 @@ title: "Get targetDeviceGroup"
 description: "Read the properties and relationships of a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # Get targetDeviceGroup

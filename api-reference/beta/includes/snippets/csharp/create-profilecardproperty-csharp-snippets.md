@@ -21,7 +21,7 @@ var requestBody = new ProfileCardProperty
 			{
 				new DisplayNameLocalization
 				{
-					LanguageTag = "ru-RU",
+					LanguageTag = "ru",
 					DisplayName = "центр затрат",
 				},
 			},

@@ -3,8 +3,9 @@ title: "teamworkPeripheral resource type"
 description: "Represents the details about the peripherals attached to a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkPeripheral resource type
@@ -26,8 +27,11 @@ Inherits from [entity](../resources/entity.md).
 |vendorId|String|The unique identifier for the vendor of the device. Each vendor has a unique ID.|
 
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

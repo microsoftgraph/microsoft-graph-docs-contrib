@@ -1,16 +1,20 @@
 ---
 title: "Remove acceptedSender"
 description: "Remove a user or group from the accepted-senders list. "
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 05/14/2024
 ---
 
 # Remove acceptedSender
 
 Namespace: microsoft.graph
 Remove a user or group from the accepted-senders list.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -4,7 +4,8 @@ description: "Represents the response from the synchronizationSchema: parseExpre
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # parseExpressionResponse resource type
@@ -24,9 +25,12 @@ Represents the response from the [parseExpression](../api/synchronization-synchr
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|An [attributeMappingSource](synchronization-attributemappingsource.md) object representing the parsed expression.|
 |parsingSucceeded|Boolean|`true` if the expression was parsed successfully.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

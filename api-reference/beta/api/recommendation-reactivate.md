@@ -3,8 +3,9 @@ title: "recommendation: reactivate"
 description: "Reactivate a completed, dismissed, or postponed recommendation object."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # recommendation: reactivate
@@ -49,7 +50,7 @@ If successful, this action returns a `200 OK` response code and a [recommendatio
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

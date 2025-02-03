@@ -2,9 +2,10 @@
 title: "unmanagedDeviceDiscoveryTask resource type"
 description: "This task derived type represents a list of unmanaged devices discovered in the network."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # unmanagedDeviceDiscoveryTask resource type

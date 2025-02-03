@@ -3,8 +3,9 @@ title: "List custodian's unifiedGroupSources"
 description: "Get a list of the custodian's unifiedGroupSource objects and their properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # List unifiedGroupSources
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -127,7 +128,7 @@ Content-Type: application/json
                 }
             },
             "group": {
-                "email": "Design@M365x809305.onmicrosoft.com",
+                "email": "Design@contoso.com",
                 "webUrl": "https://m365x809305.sharepoint.com/sites/Design",
                 "id": "32e14fa4-3106-4bd2-a245-34bf0c718a7e",
                 "displayName": "Design (Mailbox)",
@@ -149,7 +150,7 @@ Content-Type: application/json
                 }
             },
             "group": {
-                "email": "ceoconnection@M365x809305.onmicrosoft.com",
+                "email": "ceoconnection@contoso.com",
                 "webUrl": "https://m365x809305.sharepoint.com/sites/ceoconnection",
                 "id": "21be9868-b58b-4f8b-800c-591e9ad8d4ec",
                 "displayName": "CEO Connection (Mailbox)",

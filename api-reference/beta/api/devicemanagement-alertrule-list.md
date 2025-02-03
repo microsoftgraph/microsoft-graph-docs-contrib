@@ -3,8 +3,9 @@ title: "List alertRules"
 description: "Get a list of the alertRule objects and their properties."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List alertRules
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Get a list of the [alertRule](../resources/devicemanagement-alertrule.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -52,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -115,7 +116,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://canary.graph.microsoft.com/testprodbeta_cpc_sh/$metadata#deviceManagement/monitoring/alertRules",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/monitoring/alertRules",
   "value": [
       {
           "id": "215c55cc-b1c9-4d36-a870-be5778101714",

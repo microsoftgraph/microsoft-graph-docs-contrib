@@ -3,8 +3,9 @@ title: "Get conversationThread"
 description: "Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, "
 ms.localizationpriority: medium
 author: "mikemcleanlive"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get conversationThread
@@ -46,7 +47,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [conversationThread](../resources/conversationthread.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +93,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

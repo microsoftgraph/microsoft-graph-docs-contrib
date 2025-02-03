@@ -4,10 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.access_review import AccessReview
+from msgraph_beta.generated.models.identity import Identity
+from msgraph_beta.generated.models.access_review_reviewer import AccessReviewReviewer
+from msgraph_beta.generated.models.access_review_settings import AccessReviewSettings
+from msgraph_beta.generated.models.access_review_recurrence_settings import AccessReviewRecurrenceSettings
+from msgraph_beta.generated.models.auto_review_settings import AutoReviewSettings
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessReview(
 	display_name = "TestReview",
 	start_date_time = "2017-02-10T00:35:53.214Z",

@@ -4,44 +4,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ConditionalAccessPolicy conditionalAccessPolicy = new ConditionalAccessPolicy();
-conditionalAccessPolicy.displayName = "Access to EXO requires MFA";
-conditionalAccessPolicy.state = ConditionalAccessPolicyState.ENABLED;
+conditionalAccessPolicy.setDisplayName("Access to EXO requires MFA");
+conditionalAccessPolicy.setState(ConditionalAccessPolicyState.Enabled);
 ConditionalAccessConditionSet conditions = new ConditionalAccessConditionSet();
-LinkedList<ConditionalAccessClientApp> clientAppTypesList = new LinkedList<ConditionalAccessClientApp>();
-clientAppTypesList.add(ConditionalAccessClientApp.MOBILE_APPS_AND_DESKTOP_CLIENTS);
-clientAppTypesList.add(ConditionalAccessClientApp.BROWSER);
-conditions.clientAppTypes = clientAppTypesList;
+LinkedList<ConditionalAccessClientApp> clientAppTypes = new LinkedList<ConditionalAccessClientApp>();
+clientAppTypes.add(ConditionalAccessClientApp.MobileAppsAndDesktopClients);
+clientAppTypes.add(ConditionalAccessClientApp.Browser);
+conditions.setClientAppTypes(clientAppTypes);
 ConditionalAccessApplications applications = new ConditionalAccessApplications();
-LinkedList<String> includeApplicationsList = new LinkedList<String>();
-includeApplicationsList.add("00000002-0000-0ff1-ce00-000000000000");
-applications.includeApplications = includeApplicationsList;
-conditions.applications = applications;
+LinkedList<String> includeApplications = new LinkedList<String>();
+includeApplications.add("00000002-0000-0ff1-ce00-000000000000");
+applications.setIncludeApplications(includeApplications);
+conditions.setApplications(applications);
 ConditionalAccessUsers users = new ConditionalAccessUsers();
-LinkedList<String> includeGroupsList = new LinkedList<String>();
-includeGroupsList.add("ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba");
-users.includeGroups = includeGroupsList;
-conditions.users = users;
+LinkedList<String> includeGroups = new LinkedList<String>();
+includeGroups.add("ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba");
+users.setIncludeGroups(includeGroups);
+conditions.setUsers(users);
 ConditionalAccessLocations locations = new ConditionalAccessLocations();
-LinkedList<String> includeLocationsList = new LinkedList<String>();
-includeLocationsList.add("All");
-locations.includeLocations = includeLocationsList;
-LinkedList<String> excludeLocationsList = new LinkedList<String>();
-excludeLocationsList.add("AllTrusted");
-locations.excludeLocations = excludeLocationsList;
-conditions.locations = locations;
-conditionalAccessPolicy.conditions = conditions;
+LinkedList<String> includeLocations = new LinkedList<String>();
+includeLocations.add("All");
+locations.setIncludeLocations(includeLocations);
+LinkedList<String> excludeLocations = new LinkedList<String>();
+excludeLocations.add("AllTrusted");
+locations.setExcludeLocations(excludeLocations);
+conditions.setLocations(locations);
+conditionalAccessPolicy.setConditions(conditions);
 ConditionalAccessGrantControls grantControls = new ConditionalAccessGrantControls();
-grantControls.operator = "OR";
-LinkedList<ConditionalAccessGrantControl> builtInControlsList = new LinkedList<ConditionalAccessGrantControl>();
-builtInControlsList.add(ConditionalAccessGrantControl.MFA);
-grantControls.builtInControls = builtInControlsList;
-conditionalAccessPolicy.grantControls = grantControls;
+grantControls.setOperator("OR");
+LinkedList<ConditionalAccessGrantControl> builtInControls = new LinkedList<ConditionalAccessGrantControl>();
+builtInControls.add(ConditionalAccessGrantControl.Mfa);
+grantControls.setBuiltInControls(builtInControls);
+conditionalAccessPolicy.setGrantControls(grantControls);
+ConditionalAccessPolicy result = graphClient.identity().conditionalAccess().policies().post(conditionalAccessPolicy);
 
-graphClient.identity().conditionalAccess().policies()
-	.buildRequest()
-	.post(conditionalAccessPolicy);
 
 ```

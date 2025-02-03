@@ -3,8 +3,9 @@ title: "Update featureRolloutPolicy"
 description: "Update the properties of featurerolloutpolicy object."
 ms.localizationpriority: medium
 author: "madhavpatel6"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Update featurerolloutpolicy

@@ -3,8 +3,9 @@ title: "Get browserSite"
 description: "Get a browserSite that resides on a site list."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get browserSite
@@ -48,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a [browserSite](
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

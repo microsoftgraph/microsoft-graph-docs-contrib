@@ -4,8 +4,9 @@ description: "Update the properties of an smsAuthenticationMethodConfiguration o
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update smsAuthenticationMethodConfiguration
@@ -56,7 +57,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -109,7 +110,7 @@ Content-Type: application/json
 ---
 
 ### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

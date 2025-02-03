@@ -3,8 +3,9 @@ title: "Create agreement"
 description: "Create a new agreement object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 04/05/2024
 ---
 
 # Create agreement

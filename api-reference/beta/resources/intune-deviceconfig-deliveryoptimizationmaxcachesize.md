@@ -2,9 +2,10 @@
 title: "deliveryOptimizationMaxCacheSize resource type"
 description: "Delivery Optimization max cache size types."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deliveryOptimizationMaxCacheSize resource type

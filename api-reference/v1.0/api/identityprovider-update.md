@@ -3,8 +3,9 @@ title: "Update identityProvider"
 description: "Update properties in an existing identityProvider"
 ms.localizationpriority: high
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update identityProvider (deprecated)
@@ -23,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identityprovider_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityprovider-update-permissions.md)]
 
-The work or school account must be a global administrator of the tenant.
+[!INCLUDE [rbac-identity-provider-apis](../includes/rbac-for-apis/rbac-identity-provider-apis.md)]
 
 ## HTTP request
 

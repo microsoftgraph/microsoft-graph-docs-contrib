@@ -3,8 +3,9 @@ title: "cloudPcDeviceImage: getSourceImages"
 description: "Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # cloudPcDeviceImage: getSourceImages

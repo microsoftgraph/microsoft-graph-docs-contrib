@@ -3,8 +3,9 @@ title: printerLocation resource type
 description: Represents the physical and hierarchical location of a printer.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # printerLocation resource type
@@ -38,7 +39,7 @@ Represents the physical and hierarchical location of a printer.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printerLocation"
@@ -51,7 +52,7 @@ The following is a JSON representation of the resource.
   "longitude": "Double",
   "altitudeInMeters": "Integer",
   "streetAddress": "String",
-  "subunit": [
+  "subUnit": [
     "String"
   ],
   "city": "String",

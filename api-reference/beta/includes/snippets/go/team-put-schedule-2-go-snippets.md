@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewSchedule()
 enabled := true
@@ -34,21 +34,19 @@ timeOffRequestsEnabled := true
 requestBody.SetTimeOffRequestsEnabled(&timeOffRequestsEnabled) 
 startDayOfWeek := graphmodels.TUESDAY_DAYOFWEEK 
 requestBody.SetStartDayOfWeek(&startDayOfWeek) 
-activitiesIncludedWhenCopyingShiftsEnabled := true
-requestBody.SetActivitiesIncludedWhenCopyingShiftsEnabled(&activitiesIncludedWhenCopyingShiftsEnabled) 
+isCrossLocationShiftsEnabled := true
+requestBody.SetIsCrossLocationShiftsEnabled(&isCrossLocationShiftsEnabled) 
+isCrossLocationShiftRequestApprovalRequired := true
+requestBody.SetIsCrossLocationShiftRequestApprovalRequired(&isCrossLocationShiftRequestApprovalRequired) 
 timeClockEnabled := true
 requestBody.SetTimeClockEnabled(&timeClockEnabled) 
-timeClockSettings := graphmodels.NewTimeClockSettings()
-approvedLocation := graphmodels.NewGeoCoordinates()
-altitude := float64(1024.13)
-approvedLocation.SetAltitude(&altitude) 
-latitude := float64(26.13246)
-approvedLocation.SetLatitude(&latitude) 
-longitude := float64(24.34616)
-approvedLocation.SetLongitude(&longitude) 
-timeClockSettings.SetApprovedLocation(approvedLocation)
-requestBody.SetTimeClockSettings(timeClockSettings)
+additionalData := map[string]interface{}{
+	isActivitiesIncludedWhenCopyingShiftsEnabled := true
+requestBody.SetIsActivitiesIncludedWhenCopyingShiftsEnabled(&isActivitiesIncludedWhenCopyingShiftsEnabled) 
+}
+requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 schedule, err := graphClient.Teams().ByTeamId("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
 

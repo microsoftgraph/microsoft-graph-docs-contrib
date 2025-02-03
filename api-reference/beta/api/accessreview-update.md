@@ -3,8 +3,9 @@ title: "Update accessReview (deprecated)"
 description: "In the Microsoft Entra access reviews feature, update an existing accessReview object to change one or more of its properties."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update accessReview (deprecated)

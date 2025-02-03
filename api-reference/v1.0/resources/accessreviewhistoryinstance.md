@@ -3,8 +3,9 @@ title: "accessReviewHistoryInstance resource type"
 description: "Represents a recurrence of an accessReviewHistoryDefinition object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 06/19/2024
 ---
 
 # accessReviewHistoryInstance resource type
@@ -19,8 +20,8 @@ Namespace: microsoft.graph
 
 | Method  | Return type | Description |
 |:---|:---|:---|
-|[List accessReviewHistoryInstances](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md) collection| Retrieve a list of the [accessReviewHistoryInstance](accessreviewhistoryinstance.md) objects and their properties.|
-|[generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generates a URI that can be used to retrieve the instance's review history data.|
+|[List](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md) collection| Retrieve a list of the [accessReviewHistoryInstance](accessreviewhistoryinstance.md) objects and their properties.|
+|[Generate download URI](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generates a URI that can be used to retrieve the instance's review history data.|
 
 ## Properties
 
@@ -37,7 +38,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

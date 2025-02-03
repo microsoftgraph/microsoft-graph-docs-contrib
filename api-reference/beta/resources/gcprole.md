@@ -4,8 +4,9 @@ description: "Represents a GCP role in a GCP authorization system."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # gcpRole resource type
@@ -20,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List gcpRoles](../api/gcpauthorizationsystem-list-roles.md)|[gcpRole](../resources/gcprole.md) collection|Get a list of the [gcpRole](../resources/gcprole.md) objects and their properties.|
-|[Get gcpRole](../api/gcprole-get.md)|[gcpRole](../resources/gcprole.md)|Read the properties and relationships of a [gcpRole](../resources/gcprole.md) object.|
+|[List](../api/gcpauthorizationsystem-list-roles.md)|[gcpRole](../resources/gcprole.md) collection|Get a list of the [gcpRole](../resources/gcprole.md) objects and their properties.|
+|[Get](../api/gcprole-get.md)|[gcpRole](../resources/gcprole.md)|Read the properties and relationships of a [gcpRole](../resources/gcprole.md) object.|
 
 ## Properties
 |Property|Type|Description|

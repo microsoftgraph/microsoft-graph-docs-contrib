@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AppRoleAssignment appRoleAssignment = graphClient.me().appRoleAssignments("Lo6gEKI-4EyAy9X91LBepo6Aq0Rt6QxBjWRl76txk8I")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AppRoleAssignment result = graphClient.me().appRoleAssignments().byAppRoleAssignmentId("{appRoleAssignment-id}").get();
+
 
 ```

@@ -3,8 +3,9 @@ title: "workbookApplication: calculate"
 description: "Recalculate all currently opened workbooks in Excel."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # workbookApplication: calculate
@@ -48,7 +49,7 @@ If successful, this method returns a `200 OK` response code. It doesn't return a
 ## Example
 Here is an example of how to call this API.
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -96,7 +97,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ConnectedOrganization connectedOrganization = new ConnectedOrganization();
-connectedOrganization.displayName = "Connected organization new name";
-connectedOrganization.description = "Connected organization new description";
-connectedOrganization.state = ConnectedOrganizationState.CONFIGURED;
+connectedOrganization.setDisplayName("Connected organization new name");
+connectedOrganization.setDescription("Connected organization new description");
+connectedOrganization.setState(ConnectedOrganizationState.Configured);
+ConnectedOrganization result = graphClient.identityGovernance().entitlementManagement().connectedOrganizations().byConnectedOrganizationId("{connectedOrganization-id}").patch(connectedOrganization);
 
-graphClient.identityGovernance().entitlementManagement().connectedOrganizations("{id}")
-	.buildRequest()
-	.patch(connectedOrganization);
 
 ```

@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DeploymentAudience deploymentAudience = new DeploymentAudience();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.admin().windows().updates().deploymentAudiences()
-	.buildRequest()
-	.post(deploymentAudience);
+com.microsoft.graph.beta.models.windowsupdates.DeploymentAudience deploymentAudience = new com.microsoft.graph.beta.models.windowsupdates.DeploymentAudience();
+com.microsoft.graph.models.windowsupdates.DeploymentAudience result = graphClient.admin().windows().updates().deploymentAudiences().post(deploymentAudience);
+
 
 ```

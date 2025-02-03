@@ -3,8 +3,9 @@ title: "List timesOff"
 description: "Get the list of timesOff in this schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # List timesOff
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "schedule_list_timesoff" } -->
 [!INCLUDE [permissions-table](../includes/permissions/schedule-list-timesoff-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -52,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request that gets all **timeOff** objects that have a shared version and a draft version between March 11 - March 18, 2019.
+The following example shows a request that gets all **timeOff** objects that have a shared version and a draft version between March 11 - March 18, 2019.
 
 
 # [HTTP](#tab/http)

@@ -3,8 +3,9 @@ author: spgraph-docs-team
 description: "Get the collection of lists for a site."
 title: List the SharePoint lists in a site
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 # Get lists in a site
 
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

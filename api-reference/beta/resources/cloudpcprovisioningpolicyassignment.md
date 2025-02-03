@@ -3,8 +3,9 @@ title: "cloudPcProvisioningPolicyAssignment resource type"
 description: "CloudPC provisioning policy assignments"
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # cloudPcProvisioningPolicyAssignment resource type
@@ -19,7 +20,7 @@ Represents a defined collection of provisioning policy assignments.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the provisioning policy assignment. Read-only. If `target` is a user group, then the ID is shown as {policyId}\_{groupId}.|
+|id|String|Unique Identifier for the provisioning policy assignment. Read-only. If `target` is a user group, then the ID is shown as {policyId_groupId}.|
 |target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the provisioning policy. Currently, the only target supported for this policy is a user group. For details, see [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md). |
 
 ## Relationships
@@ -29,7 +30,7 @@ Represents a defined collection of provisioning policy assignments.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

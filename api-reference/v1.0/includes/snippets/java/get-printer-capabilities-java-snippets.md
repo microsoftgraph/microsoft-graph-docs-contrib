@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Printer printer = graphClient.print().printers("{printerId}")
-	.buildRequest()
-	.select("id,displayName,capabilities")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+Printer result = graphClient.print().printers().byPrinterId("{printer-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"id", "displayName", "capabilities"};
+});
+
 
 ```

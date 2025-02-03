@@ -3,8 +3,9 @@ title: "accessPackageAssignmentRequest: reprocess"
 description: "Reprocess accessPackageAssignmentRequest objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/05/2024
 ---
 
 # accessPackageAssignmentRequest: reprocess
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_reprocess" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-reprocess-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write.md)]
   
 ## HTTP request
 
@@ -56,7 +59,7 @@ If successful, this method returns a  `202 Accepted` response code and retries t
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -68,7 +71,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 
 <!-- {

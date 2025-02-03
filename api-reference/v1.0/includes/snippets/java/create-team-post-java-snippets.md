@@ -4,15 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Team team = new Team();
-team.additionalDataManager().put("template@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/teamsTemplates('standard')"));
-team.displayName = "My Sample Team";
-team.description = "My Sample Team’s Description";
+team.setDisplayName("My Sample Team");
+team.setDescription("My Sample Team’s Description");
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('standard')");
+team.setAdditionalData(additionalData);
+Team result = graphClient.teams().post(team);
 
-graphClient.teams()
-	.buildRequest()
-	.post(team);
 
 ```

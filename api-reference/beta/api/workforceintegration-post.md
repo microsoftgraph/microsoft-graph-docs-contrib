@@ -3,8 +3,9 @@ title: "Create workforceIntegration"
 description: "Create a new workforceIntegration object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Create workforceIntegration
@@ -54,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 #### Request
 
-The following is an example of a request to create a new **workforceIntegration** object.
+The following example shows a request to create a new **workforceIntegration** object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -144,7 +145,7 @@ Content-type: application/json
 
 ### Example 2: Create a new workforceIntegration with SwapRequest enabled for eligibility filtering
 
-The following is an example of a request with SwapRequest enabled for eligibility filtering. 
+The following example shows a request with SwapRequest enabled for eligibility filtering. 
 
 #### Request
 
@@ -195,7 +196,7 @@ The interaction between Shifts app and workforce integration endpoints will foll
 
 ### Request
 
-The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+The following example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read

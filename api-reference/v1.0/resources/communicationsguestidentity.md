@@ -3,8 +3,9 @@ title: "communicationsGuestIdentity resource type"
 description: "Represents the identity of a participant who joined a communication without authentication."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # communicationsGuestIdentity resource type

@@ -2,9 +2,10 @@
 title: "Update deviceManagementConfigurationSimpleSettingCollectionDefinition"
 description: "Update the properties of a deviceManagementConfigurationSimpleSettingCollectionDefinition object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update deviceManagementConfigurationSimpleSettingCollectionDefinition

@@ -4,8 +4,9 @@ description: "Contains information on external AWS accounts that have access to 
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 04/18/2024
 ---
 
 # accountsWithAccess resource type

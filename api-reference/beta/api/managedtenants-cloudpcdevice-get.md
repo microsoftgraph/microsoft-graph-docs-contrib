@@ -3,8 +3,9 @@ title: "Get cloudPcDevice"
 description: "Read the properties and relationships of a cloudPcDevice object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get cloudPcDevice
@@ -114,7 +115,7 @@ Content-Type: application/json
     "displayName": "device01",
     "managedDeviceId": "",
     "managedDeviceName": "",
-    "userPrincipalName": "sally@lucernepublishing001.onmicrosoft.com",
+    "userPrincipalName": "sally@contoso.com",
     "servicePlanName": "CloudPC_Standard",
     "status": "NotProvisioned",
     "tenantId": "aa060093-1e81-45b4-bebc-652713194ef7",

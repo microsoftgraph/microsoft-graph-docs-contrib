@@ -2,8 +2,9 @@
 title: "Get schedule"
 description: "Retrieve the properties and relationships of a **schedule** object."
 author: "shanemalone"
+ms.date: 12/04/2024
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -134,7 +135,10 @@ Content-type: application/json
   "offerShiftRequestsEnabled": true,
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Monday",
-  "activitiesIncludedWhenCopyingShiftsEnabled": true
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true
 }
 ```
 
@@ -152,6 +156,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

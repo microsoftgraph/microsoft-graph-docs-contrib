@@ -3,8 +3,9 @@ title: "List timeCard"
 description: "Retrieve a list of timeCard entries in the schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List timeCard
@@ -19,15 +20,13 @@ Retrieve a list of [timeCard](../resources/timecard.md) entries in a [schedule](
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.Read.All, Schedule.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+<!-- { "blockType": "permissions", "name": "timecard_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/timecard-list-permissions.md)]
 
->\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
+> [!IMPORTANT]
+> When you use the Schedule.Read.All and Schedule.ReadWrite.All application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
 
 ## HTTP request
 
@@ -143,6 +142,7 @@ Content-type: application/json
             "clockInEvent": {
                 "dateTime": "2020-09-21T18:01:29.302Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "ClockIn-OBO Shorbani"
@@ -151,6 +151,7 @@ Content-type: application/json
             "clockOutEvent": {
                 "dateTime": "2021-05-27T18:14:44.503Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "clock out notes"
@@ -161,6 +162,7 @@ Content-type: application/json
                 "clockInEvent": {
                     "dateTime": "2020-09-21T18:01:29.302Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "ClockIn-OBO Shorbani"
@@ -169,6 +171,7 @@ Content-type: application/json
                 "clockOutEvent": {
                     "dateTime": "2021-05-27T18:14:44.503Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "clock out notes"
@@ -207,6 +210,7 @@ Content-type: application/json
             "clockInEvent": {
                 "dateTime": "2020-09-21T18:02:48.688Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "ClockIn-OBO Shorbani"
@@ -215,6 +219,7 @@ Content-type: application/json
             "clockOutEvent": {
                 "dateTime": "2021-05-27T18:16:14.766Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "clock out notes"
@@ -225,6 +230,7 @@ Content-type: application/json
                 "clockInEvent": {
                     "dateTime": "2020-09-21T18:02:48.688Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "ClockIn-OBO Shorbani"
@@ -233,6 +239,7 @@ Content-type: application/json
                 "clockOutEvent": {
                     "dateTime": "2021-05-27T18:16:14.766Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "clock out notes"

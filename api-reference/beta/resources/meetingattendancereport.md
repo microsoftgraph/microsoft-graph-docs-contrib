@@ -3,8 +3,9 @@ title: "meetingAttendanceReport resource type"
 description: "Contains information associated with a meeting attendance report."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # meetingAttendanceReport resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information associated with a meeting attendance report.
+Contains information associated with a meeting attendance report for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md).
 
 Meeting attendance reports are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
@@ -21,13 +22,14 @@ Meeting attendance reports are online meeting artifacts. For details, see [Onlin
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List meetingAttendanceReports](../api/meetingattendancereport-list.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Get a list of  [meetingAttendanceReport](../resources/meetingattendancereport.md) objects and their properties.|
-|[Get meetingAttendanceReport](../api/meetingattendancereport-get.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md)|Read the properties and relationships of a [meetingAttendanceReport](../resources/meetingattendancereport.md) object.|
+|[List](../api/meetingattendancereport-list.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Get a list of  [meetingAttendanceReport](../resources/meetingattendancereport.md) objects and their properties.|
+|[Get](../api/meetingattendancereport-get.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md)|Read the properties and relationships of a [meetingAttendanceReport](../resources/meetingattendancereport.md) object.|
 
 ## Properties
 
 | Property              | Type                                               | Description                     |
 |:----------------------|:---------------------------------------------------|:--------------------------------|
+| externalEventInformation | [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) collection | The external information of a virtual event. Returned only for event organizers or coorganizers. Read-only. |
 | id                    | String   | Unique identifier for the attendance report. Read-only. |
 | meetingEndDateTime    | DateTimeOffset | UTC time when the meeting ended. Read-only.   |
 | meetingStartDateTime  | DateTimeOffset | UTC time when the meeting started. Read-only.   |
@@ -41,7 +43,7 @@ Meeting attendance reports are online meeting artifacts. For details, see [Onlin
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -59,6 +61,7 @@ The following is a JSON representation of the resource.
   "meetingEndDateTime": "String (timestamp)",
   "meetingStartDateTime": "String (timestamp)",
   "totalParticipantCount": "Int32",
+  "externalEventInformation": [{"@odata.type": "microsoft.graph.virtualEventExternalInformation"}],
 
   "attendanceRecords": [{"@odata.type": "#microsoft.graph.attendanceRecord"}]
 }

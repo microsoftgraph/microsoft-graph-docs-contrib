@@ -3,8 +3,9 @@ title: "Delete educationRubric"
 description: "Delete an educationRubric object."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 07/18/2024
 ---
 
 # Delete educationRubric
@@ -27,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/me/rubrics/{rubric-id}
+DELETE /education/me/rubrics/{id}
 ```
 
 ## Request headers

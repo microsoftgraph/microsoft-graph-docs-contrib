@@ -3,8 +3,9 @@ title: "List operations"
 description: "Get the list of richLongRunningOperations associated with a site."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List operations

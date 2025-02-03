@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.identity.b2xuserflows.item.userattributeassignments.setorder.SetOrderPostRequestBody setOrderPostRequestBody = new com.microsoft.graph.identity.b2xuserflows.item.userattributeassignments.setorder.SetOrderPostRequestBody();
 AssignmentOrder newAssignmentOrder = new AssignmentOrder();
-LinkedList<String> orderList = new LinkedList<String>();
-orderList.add("City");
-orderList.add("extension_GUID_ShoeSize");
-newAssignmentOrder.order = orderList;
+LinkedList<String> order = new LinkedList<String>();
+order.add("City");
+order.add("extension_GUID_ShoeSize");
+newAssignmentOrder.setOrder(order);
+setOrderPostRequestBody.setNewAssignmentOrder(newAssignmentOrder);
+graphClient.identity().b2xUserFlows().byB2xIdentityUserFlowId("{b2xIdentityUserFlow-id}").userAttributeAssignments().setOrder().post(setOrderPostRequestBody);
 
-graphClient.identity().b2xUserFlows("{id}").userAttributeAssignments()
-	.setOrder(IdentityUserFlowAttributeAssignmentSetOrderParameterSet
-		.newBuilder()
-		.withNewAssignmentOrder(newAssignmentOrder)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

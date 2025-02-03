@@ -2,12 +2,13 @@
 title: "Add custom data to groups using schema extensions"
 description: "Learn how to register a schema extension definition, extend a group with the schema extension, and update custom data in the schema extension for the group."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: dkershaw
-ms.prod: "extensions"
+ms.subservice: extensions
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.topic: tutorial
-ms.date: 01/25/2024
+ms.date: 01/17/2025
 #Customer intent: As a developer, I want to learn how to store lightweight data to Microsoft Entra groups through Microsoft Graph, and avoid using an external database system.
 ---
 
@@ -112,15 +113,16 @@ You can also query by the **id** as a path parameter as follows: `GET https://gr
 
 You want to create and register a new extension definition for training courses on the **group** resource. Specify the following properties:
 
-- **id**: Provide a string for this property following one of two ways:
-  - Option 1: Concatenate a *verified* vanity domain name for your tenant with a name for the schema extension. For example, if the domain is `bellowscollege.com`, and the name of the schema extension is `courses`, then you can use the **id** `bellowscollege_courses`. 
+- **id**: *Required.* Provide a string for this property following one of two ways:
+  - Option 1: Concatenate a *verified* vanity domain name for your tenant with a name for the schema extension. For example, if the domain is `bellowscollege.com`, and the name of the schema extension is `courses`, then you can use the **id** `bellowscollege_courses`. The request fails if you use a domain name that isn't verified with your tenant.
   - Option 2: An alternative way is to provide only a schema name, such as `courses`, and let Microsoft Graph automatically generate the **id** for you by prefixing the provided name with a random alphanumeric string.
 
     This **id** becomes the name of the schema extension property on a group.
-- **description**
-- **targetTypes**: Specify the resource types that the schema extension can be applied to. In this example, the resource type is `Group`. You can add more resource types by updating the schema extension definition later.
-- **properties**: Specify the custom properties that make up the schema. In this example, specify the `courseId`, `courseName` and `courseType` custom properties and their types. Only additive changes are permitted after you create the schema extension definition.
-- **owner**: Specify the application that owns the schema extension definition. If you're running this example from an app that you're not assigned as owner, specify the **appId** of the application that you're assigned in the **owner** property.
+
+- **description**: *Optional.*
+- **targetTypes**: *Required*. Specify the resource types that the schema extension can be applied to. In this example, the resource type is `Group`. You can add more resource types by updating the schema extension definition later. Only additive changes are permitted after you create the schema extension definition.
+- **properties**: *Required*. Specify the custom properties that make up the schema. In this example, specify the `courseId`, `courseName`, and `courseType` custom properties and their types. Only additive changes are permitted after you create the schema extension definition.
+- **owner**: *Conditional*. Specify the application that owns the schema extension definition. If you're running this example from an app that you're not assigned as owner, specify the **appId** of the application that you're assigned in the **owner** property.
 
 ### Request
 
@@ -283,7 +285,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/schemaextensions-groups-creategroupwithextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -368,7 +370,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/schemaextensions-groups-updategroupwithextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -426,7 +428,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/schemaextensions-groups-updateextensiondataingroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -571,7 +573,7 @@ PATCH https://graph.microsoft.com/v1.0/groups/8fb45944-4085-449f-b95d-f7dd74a1b0
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/schemaextensions-groups-deleteextensionproperty-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

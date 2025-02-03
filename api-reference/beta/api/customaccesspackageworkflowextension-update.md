@@ -3,8 +3,9 @@ title: "Update customAccessPackageWorkflowExtension"
 description: "Update the properties of a customAccessPackageWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/04/2024
 ---
 
 # Update customAccessPackageWorkflowExtension
@@ -19,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "customaccesspackageworkflowextension_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/customaccesspackageworkflowextension-update-permissions.md)]
+
+[!INCLUDE [rbac-for-logic-apps-write](../includes/rbac-for-apis/rbac-entitlement-management-logic-apps-apis-write.md)]
 
 ## HTTP request
 
@@ -72,10 +75,6 @@ Content-Type: application/json
   "description": "this is for graph testing only"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-customaccesspackageworkflowextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-customaccesspackageworkflowextension-javascript-snippets.md)]

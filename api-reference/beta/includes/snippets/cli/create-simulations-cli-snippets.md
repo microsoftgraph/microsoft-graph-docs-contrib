@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta security attack-simulation simulations create --body '{\
   "displayName": "Graph Simulation",\
   "payload@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",\
@@ -31,7 +31,7 @@ mgc-beta security attack-simulation simulations create --body '{\
     "settingType": "noTraining",\
     "positiveReinforcement": {\
       "deliveryPreference": "deliverAfterCampaignEnd",\
-      "endUserNotification": "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",\
+      "endUserNotification@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",\
       "defaultLanguage": "en"\
     },\
     "simulationNotification": {\

@@ -3,8 +3,9 @@ title: "Create subjectRightsRequest"
 description: "Create a new subjectRightsRequest object."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Create subjectRightsRequest

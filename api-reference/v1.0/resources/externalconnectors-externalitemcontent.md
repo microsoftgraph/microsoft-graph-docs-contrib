@@ -3,8 +3,9 @@ title: "externalItemContent resource type"
 description: "The content of an item indexed via a Microsoft Search connection."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # externalItemContent resource type
@@ -23,7 +24,7 @@ The content of an [externalItem](externalconnectors-externalitem.md) indexed via
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalConnectors.externalItemContent"

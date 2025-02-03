@@ -3,8 +3,9 @@ title: "List contactedReviewers"
 description: "Get the reviewers for an access review instance."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List contactedReviewers

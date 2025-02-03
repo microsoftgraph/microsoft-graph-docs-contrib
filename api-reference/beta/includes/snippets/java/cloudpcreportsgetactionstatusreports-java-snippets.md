@@ -4,40 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String filter = "ActionState eq 'failed'";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<String> selectList = new LinkedList<String>();
-selectList.add("Id");
-selectList.add("CloudPcDeviceDisplayName");
-selectList.add("BulkActionId");
-selectList.add("BulkActionDisplayName");
-selectList.add("CloudPcId");
-selectList.add("InitiatedByUserPrincipalName");
-selectList.add("DeviceOwnerUserPrincipalName");
-selectList.add("Action");
-selectList.add("ActionState");
-selectList.add("RequestDateTime");
-selectList.add("LastUpdatedDateTime");
-selectList.add("ActionParameters");
+com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getactionstatusreports.GetActionStatusReportsPostRequestBody getActionStatusReportsPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getactionstatusreports.GetActionStatusReportsPostRequestBody();
+getActionStatusReportsPostRequestBody.setFilter("ActionState eq 'failed'");
+LinkedList<String> select = new LinkedList<String>();
+select.add("Id");
+select.add("CloudPcDeviceDisplayName");
+select.add("BulkActionId");
+select.add("BulkActionDisplayName");
+select.add("CloudPcId");
+select.add("InitiatedByUserPrincipalName");
+select.add("DeviceOwnerUserPrincipalName");
+select.add("Action");
+select.add("ActionState");
+select.add("RequestDateTime");
+select.add("LastUpdatedDateTime");
+select.add("ActionParameters");
+getActionStatusReportsPostRequestBody.setSelect(select);
+getActionStatusReportsPostRequestBody.setSkip(0);
+getActionStatusReportsPostRequestBody.setTop(50);
+graphClient.deviceManagement().virtualEndpoint().reports().getActionStatusReports().post(getActionStatusReportsPostRequestBody);
 
-int skip = 0;
-
-int top = 50;
-
-graphClient.deviceManagement().virtualEndpoint().reports()
-	.getActionStatusReports(CloudPcReportsGetActionStatusReportsParameterSet
-		.newBuilder()
-		.withFilter(filter)
-		.withSelect(selectList)
-		.withSearch(null)
-		.withGroupBy(null)
-		.withOrderBy(null)
-		.withSkip(skip)
-		.withTop(top)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

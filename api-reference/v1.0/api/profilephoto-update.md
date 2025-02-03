@@ -3,8 +3,9 @@ title: "Update profilePhoto"
 description: "Update the photo for any user in the tenant, including the signed-in user, or the specified group or contact or team."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 09/23/2024
 ---
 
 # Update profilePhoto
@@ -35,9 +36,9 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   Group.ReadWrite.All           | Not supported. |
-|Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
-|Application      |    Not supported.           | Not supported. |
+|Delegated (work or school account)      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite.All |
+|Delegated (personal Microsoft account)      |    Not supported.            | Not supported. |
+|Application      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite.All |
 
 ### To update the profile photo of a team
 
@@ -46,21 +47,20 @@ The following tables show the least privileged permission or permissions require
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 | Delegated (work or school account)        | TeamSettings.ReadWrite.All | Not supported. |
 | Delegated (personal Microsoft account)    | Not supported.     | Not supported. |
-| Application                               | Not supported. | Not supported. |
+| Application                               | TeamSettings.ReadWrite.All | Not supported. |
 
 ### To update the profile photo of a user
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   User.ReadWrite | User.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
-|Application      |    User.ReadWrite.All           | Not supported. |
+|Delegated (work or school account)      |   ProfilePhoto.ReadWrite.All  | User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   User.ReadWrite           | Not supported. |
+|Application      |     ProfilePhoto.ReadWrite.All           | User.ReadWrite.All |
 
 > [!NOTE]
 >
-> - An app with only application permissions cannot update a group's photo.
-> - Global admin and User admin can update the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Updating the photo of any user in the organization requires *User.ReadWrite.All* permission. Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
+> - Users with admin roles such as User admins can update the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Updating the photo of any user in the organization requires *ProfilePhoto.ReadWrite.All* or *User.ReadWrite.All* permission. Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
 > - Updating a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request
@@ -124,7 +124,7 @@ If successful, this method returns a `200 OK` response code or a `204 No Content
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -141,10 +141,6 @@ Binary data for the image
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/update-profilephoto-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-profilephoto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -172,7 +168,7 @@ HTTP/1.1 200 OK
 
 #### Request
 
-The following is an example of a request to update a team photo.
+The following example shows a request to update a team photo.
 
 
 # [HTTP](#tab/http)
@@ -189,10 +185,6 @@ Binary data for the image
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/update-team-photo-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-team-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

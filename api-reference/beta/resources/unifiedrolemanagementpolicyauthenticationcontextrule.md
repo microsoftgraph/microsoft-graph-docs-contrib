@@ -3,8 +3,9 @@ title: "unifiedRoleManagementPolicyAuthenticationContextRule resource type"
 description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the authentication context rule for the conditional access policy associated with a role management policy."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # unifiedRoleManagementPolicyAuthenticationContextRule resource type
@@ -25,7 +26,7 @@ A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedro
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

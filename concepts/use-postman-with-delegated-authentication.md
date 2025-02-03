@@ -3,6 +3,7 @@ title: "Use delegated authentication with Postman for Microsoft Graph"
 description: "Learn how to use delegated authentication with Postman for Microsoft Graph to run requests on behalf of the signed-in user."
 author: "jasonjoh"
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 # Use delegated authentication with Postman for Microsoft Graph
@@ -58,7 +59,7 @@ Certain [conditional access policies](/azure/active-directory/conditional-access
 
 See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-forbidden-access-to-odata-is-disabled).
 
-## See also
+## Related content
 
 - [Use Postman with the Microsoft Graph API](use-postman.md)
 - [Use app-only authentication with Postman for Microsoft Graph](use-postman-with-app-only-authentication.md)

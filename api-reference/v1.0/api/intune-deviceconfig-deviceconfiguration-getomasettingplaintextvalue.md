@@ -2,9 +2,10 @@
 title: "getOmaSettingPlainTextValue function"
 description: "Not yet documented"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # getOmaSettingPlainTextValue function
@@ -18,11 +19,14 @@ Not yet documented
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+> [!NOTE]
+> This API involves potential secret values; ReadWrite permission is required.
+
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)| DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application| DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {

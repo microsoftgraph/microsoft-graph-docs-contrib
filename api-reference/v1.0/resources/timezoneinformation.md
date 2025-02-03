@@ -3,8 +3,9 @@ title: "timeZoneInformation resource type"
 description: "Represents a time zone. The supported format is Windows, and Internet Assigned Numbers Authority (IANA) time zone (also known as Olson time zone)"
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: outlook
+ms.subservice: outlook
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # timeZoneInformation resource type
@@ -23,7 +24,7 @@ format as well when the current known problem is fixed.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

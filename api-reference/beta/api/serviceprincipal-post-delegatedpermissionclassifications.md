@@ -3,8 +3,9 @@ title: "Create delegatedPermissionClassification"
 description: "Classify a permission by adding a delegatedPermissionClassification to the API's service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 04/19/2024
 ---
 
 # Create delegatedPermissionClassification
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Classify a delegated permission by adding a [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) to the [servicePrincipal](../resources/servicePrincipal.md) representing the API.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

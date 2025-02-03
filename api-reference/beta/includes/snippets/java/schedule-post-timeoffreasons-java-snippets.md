@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TimeOffReason timeOffReason = new TimeOffReason();
-timeOffReason.displayName = "Vacation";
-timeOffReason.code = "VacationCode";
-timeOffReason.iconType = TimeOffReasonIconType.PLANE;
-timeOffReason.isActive = true;
+timeOffReason.setDisplayName("Vacation");
+timeOffReason.setCode("VacationCode");
+timeOffReason.setIconType(TimeOffReasonIconType.Plane);
+timeOffReason.setIsActive(true);
+TimeOffReason result = graphClient.teams().byTeamId("{team-id}").schedule().timeOffReasons().post(timeOffReason);
 
-graphClient.teams("{teamId}").schedule().timeOffReasons()
-	.buildRequest()
-	.post(timeOffReason);
 
 ```

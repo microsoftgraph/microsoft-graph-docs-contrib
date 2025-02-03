@@ -4,7 +4,8 @@ description: "Update the role of member in a channel."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 04/05/2024
 ---
 
 # Update member in channel
@@ -131,7 +132,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Update member's role in a team](team-update-members.md)
 

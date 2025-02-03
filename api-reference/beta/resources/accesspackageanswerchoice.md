@@ -3,8 +3,9 @@ title: "accessPackageAnswerChoice resource type"
 description: "An answer option for an accessPackageMultipleChoiceQuestion."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # accessPackageAnswerChoice resource type
@@ -25,7 +26,7 @@ Indicates an answer option for an [accessPackageMultipleChoiceQuestion](../resou
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageAnswerChoice"

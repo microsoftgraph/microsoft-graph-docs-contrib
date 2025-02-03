@@ -3,8 +3,9 @@ title: "unifiedRoleManagementPolicyExpirationRule resource type"
 description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the maximum duration a role can be assigned to a principal (either through direct assignment or through activation of eligibility).."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # unifiedRoleManagementPolicyExpirationRule resource type
@@ -30,7 +31,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

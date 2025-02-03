@@ -4,29 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationAssignmentSettings educationAssignmentSettings = new EducationAssignmentSettings();
-LinkedList<EducationGradingCategory> gradingCategoriesList = new LinkedList<EducationGradingCategory>();
-EducationGradingCategory gradingCategories = new EducationGradingCategory();
-gradingCategories.displayName = "Lab";
-gradingCategories.percentageWeight = 10;
-gradingCategoriesList.add(gradingCategories);
-EducationGradingCategory gradingCategories1 = new EducationGradingCategory();
-gradingCategories1.displayName = "Homework";
-gradingCategories1.percentageWeight = 80;
-gradingCategoriesList.add(gradingCategories1);
-EducationGradingCategory gradingCategories2 = new EducationGradingCategory();
-gradingCategories2.displayName = "Test";
-gradingCategories2.percentageWeight = 10;
-gradingCategoriesList.add(gradingCategories2);
-EducationGradingCategoryCollectionResponse educationGradingCategoryCollectionResponse = new EducationGradingCategoryCollectionResponse();
-educationGradingCategoryCollectionResponse.value = gradingCategoriesList;
-EducationGradingCategoryCollectionPage educationGradingCategoryCollectionPage = new EducationGradingCategoryCollectionPage(educationGradingCategoryCollectionResponse, null);
-educationAssignmentSettings.gradingCategories = educationGradingCategoryCollectionPage;
+LinkedList<EducationGradingCategory> gradingCategories = new LinkedList<EducationGradingCategory>();
+EducationGradingCategory educationGradingCategory = new EducationGradingCategory();
+educationGradingCategory.setDisplayName("Lab");
+educationGradingCategory.setPercentageWeight(10);
+gradingCategories.add(educationGradingCategory);
+EducationGradingCategory educationGradingCategory1 = new EducationGradingCategory();
+educationGradingCategory1.setDisplayName("Homework");
+educationGradingCategory1.setPercentageWeight(80);
+gradingCategories.add(educationGradingCategory1);
+EducationGradingCategory educationGradingCategory2 = new EducationGradingCategory();
+educationGradingCategory2.setDisplayName("Test");
+educationGradingCategory2.setPercentageWeight(10);
+gradingCategories.add(educationGradingCategory2);
+educationAssignmentSettings.setGradingCategories(gradingCategories);
+EducationAssignmentSettings result = graphClient.education().classes().byEducationClassId("{educationClass-id}").assignmentSettings().patch(educationAssignmentSettings);
 
-graphClient.education().classes("37d99af7-cfc5-4e3b-8566-f7d40e4a2070").assignmentSettings()
-	.buildRequest()
-	.patch(educationAssignmentSettings);
 
 ```

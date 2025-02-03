@@ -3,8 +3,9 @@ title: "bookingNamedEntity resource type"
 description: "A base type for Microsoft Bookings entities that provide a display name, for example, bookingBusiness, bookingPerson, bookingService."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # bookingNamedEntity resource type
@@ -27,7 +28,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

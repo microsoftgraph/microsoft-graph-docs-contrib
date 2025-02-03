@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Calendar calendar = graphClient.users("meganb@contoso.OnMicrosoft.com").calendars("AAMkADlAABhbftjAAA=")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+Calendar result = graphClient.users().byUserId("{user-id}").calendars().byCalendarId("{calendar-id}").get();
+
 
 ```

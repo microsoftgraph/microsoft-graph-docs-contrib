@@ -2,9 +2,10 @@
 title: "Create and send a notification"
 description: "Create and send a notification targeting a user through Microsoft Graph."
 ms.localizationpriority: medium
-ms.prod: "notifications"
+ms.subservice: "notifications"
 doc_type: apiPageType
 author: "merzink"
+ms.date: 04/04/2024
 ---
 
 # Create and send a notification
@@ -63,7 +64,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Example
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/notifications/

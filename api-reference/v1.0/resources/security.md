@@ -3,8 +3,9 @@ title: "security resource type"
 description: "The security resource is the entry point for the Security object model. It returns a singleton security resource. It doesn't contain any usable properties."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # security resource type
@@ -17,7 +18,7 @@ The security resource is the entry point for the Security object model. It retur
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[runHuntingQuery](../api/security-security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.|
+|[Run hunting query](../api/security-security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.|
 
 
 ## Properties
@@ -28,11 +29,12 @@ None
 |:-------------|:------------|:------------|
 |alerts|[alert](alert.md) collection| Read-only. Nullable.|
 |alerts_v2 | [microsoft.graph.security.alert](security-alert.md) collection | A collection of alerts in Microsoft 365 Defender.|
+|identities|[microsoft.graph.security.identityContainer](../resources/security-identitycontainer.md)|A container for security identities APIs.|
 |incidents | [microsoft.graph.security.incident](security-incident.md) collection | A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.|
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

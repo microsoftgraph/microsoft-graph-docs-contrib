@@ -2,16 +2,18 @@
 title: "group: validateProperties"
 description: "Validate if a Microsoft 365 group's display name or mail nickname complies with naming policies."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 11/30/2024
 ---
 
 # group: validateProperties
 
 Namespace: microsoft.graph
 
-Validate if a Microsoft 365 group's display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** a Microsoft 365 group. For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.
+Validate if a Microsoft 365 [group's](../resources/group.md) display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** a Microsoft 365 group. For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.
 
 The following validations are performed for the display name and mail nickname properties:
 
@@ -41,7 +43,7 @@ POST /groups/{id}/validateProperties
 
 | Name          | Description      |
 | :------------ | :--------------- |
-| Authorization | Bearer {code}    |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body

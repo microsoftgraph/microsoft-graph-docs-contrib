@@ -3,8 +3,9 @@ title: "Delete bookingAppointment"
 description: "Delete a bookingAppointment in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Delete bookingAppointment
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Delete a [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -32,7 +33,7 @@ DELETE /solutions/bookingBusinesses/{id}/appointments/{id}
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -46,16 +47,16 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bookingappointment_delete",
-  "sampleKeys": ["AAMkADKqAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["AAMkADKqAAA=", "Contosolunchdelivery@contoso.com"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKqAAA=
+DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/appointments/AAMkADKqAAA=
 ```
 
 # [C#](#tab/csharp)

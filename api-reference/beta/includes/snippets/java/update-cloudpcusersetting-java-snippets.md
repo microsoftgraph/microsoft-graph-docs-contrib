@@ -4,20 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcUserSetting cloudPcUserSetting = new CloudPcUserSetting();
-cloudPcUserSetting.displayName = "Example";
-cloudPcUserSetting.selfServiceEnabled = true;
+cloudPcUserSetting.setOdataType("#microsoft.graph.cloudPcUserSetting");
+cloudPcUserSetting.setDisplayName("Example");
+cloudPcUserSetting.setSelfServiceEnabled(true);
 CloudPcRestorePointSetting restorePointSetting = new CloudPcRestorePointSetting();
-restorePointSetting.frequencyInHours = 16;
-restorePointSetting.userRestoreEnabled = true;
-cloudPcUserSetting.restorePointSetting = restorePointSetting;
-cloudPcUserSetting.localAdminEnabled = false;
-cloudPcUserSetting.resetEnabled = true;
+restorePointSetting.setFrequencyInHours(16);
+restorePointSetting.setFrequencyType(CloudPcRestorePointFrequencyType.SixteenHours);
+restorePointSetting.setUserRestoreEnabled(true);
+cloudPcUserSetting.setRestorePointSetting(restorePointSetting);
+CloudPcCrossRegionDisasterRecoverySetting crossRegionDisasterRecoverySetting = new CloudPcCrossRegionDisasterRecoverySetting();
+crossRegionDisasterRecoverySetting.setCrossRegionDisasterRecoveryEnabled(false);
+crossRegionDisasterRecoverySetting.setMaintainCrossRegionRestorePointEnabled(true);
+CloudPcDisasterRecoveryNetworkSetting disasterRecoveryNetworkSetting = new CloudPcDisasterRecoveryNetworkSetting();
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("regionName", "westus");
+additionalData.put("regionGroup", "usEast");
+disasterRecoveryNetworkSetting.setAdditionalData(additionalData);
+crossRegionDisasterRecoverySetting.setDisasterRecoveryNetworkSetting(disasterRecoveryNetworkSetting);
+crossRegionDisasterRecoverySetting.setDisasterRecoveryType(CloudPcDisasterRecoveryType.Premium);
+crossRegionDisasterRecoverySetting.setUserInitiatedDisasterRecoveryAllowed(true);
+cloudPcUserSetting.setCrossRegionDisasterRecoverySetting(crossRegionDisasterRecoverySetting);
+cloudPcUserSetting.setLocalAdminEnabled(false);
+cloudPcUserSetting.setResetEnabled(true);
+CloudPcUserSetting result = graphClient.deviceManagement().virtualEndpoint().userSettings().byCloudPcUserSettingId("{cloudPcUserSetting-id}").patch(cloudPcUserSetting);
 
-graphClient.deviceManagement().virtualEndpoint().userSettings("b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff")
-	.buildRequest()
-	.patch(cloudPcUserSetting);
 
 ```

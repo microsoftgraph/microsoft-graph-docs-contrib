@@ -3,8 +3,9 @@ title: "TableSort: apply"
 description: "Perform a sort operation."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # TableSort: apply
@@ -42,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |fields|WorkbookSortField collection|The list of conditions to sort on.|
-|matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
+|matchCase|Boolean|Optional. Whether to have the casing impact string ordering.|
 |method|string|Optional. The ordering method used for Chinese characters.  The possible values are: `PinYin`, `StrokeCount`.|
 
 ## Response
@@ -52,7 +53,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 ## Example
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +114,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

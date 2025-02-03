@@ -4,8 +4,9 @@ description: "Retrieve a list of authenticationContextClassReference objects."
 ms.localizationpriority: medium
 author: "swetha-rai"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # List authenticationContextClassReferences
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "conditionalaccessroot_list_authenticationcontextclassreferences" } -->
 [!INCLUDE [permissions-table](../includes/permissions/conditionalaccessroot-list-authenticationcontextclassreferences-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-read](../includes/rbac-for-apis/rbac-conditionalaccess-apis-read.md)]
 
 ## HTTP request
 

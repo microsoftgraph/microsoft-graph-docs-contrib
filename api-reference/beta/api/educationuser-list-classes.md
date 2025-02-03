@@ -3,8 +3,9 @@ title: "List classes"
 description: "Get the educationClass resources an educationUser is a member of."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List classes

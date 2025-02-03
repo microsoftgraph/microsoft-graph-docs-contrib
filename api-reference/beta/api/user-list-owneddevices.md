@@ -2,9 +2,11 @@
 title: "List ownedDevices"
 description: "Get the list of devices that are owned by the user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # List ownedDevices
@@ -46,7 +48,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +94,7 @@ GET https://graph.microsoft.com/beta/me/ownedDevices
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

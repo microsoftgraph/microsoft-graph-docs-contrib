@@ -4,7 +4,8 @@ description: "List all operators supported in the scoping filters."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
+ms.date: 06/21/2024
 ---
 
 # synchronizationSchema: filterOperators
@@ -35,7 +36,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 
 | Name           | Type    | Description|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -48,7 +49,7 @@ If successful, this method returns a `200, OK` response code and a [filterOperat
 ## Example
 
 ##### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs
 ---
 
 ##### Response
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 

@@ -3,8 +3,9 @@ title: "Get cloudPcUserSetting"
 description: "Read the properties and relationships of a cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 12/04/2024
 ---
 
 # Get cloudPcUserSetting
@@ -125,7 +126,18 @@ Content-Type: application/json
     "resetEnabled": true,
     "restorePointSetting": {
       "frequencyInHours": 16,
+      "frequencyType": "sixteenHours",
       "userRestoreEnabled": true
+    },
+    "crossRegionDisasterRecoverySetting": {
+      "crossRegionDisasterRecoveryEnabled": false,
+      "maintainCrossRegionRestorePointEnabled": true,
+      "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
     },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z"
@@ -205,7 +217,18 @@ Content-Type: application/json
     "resetEnabled": true,
     "restorePointSetting": {
       "frequencyInHours": 16,
+      "frequencyType": "sixteenHours",
       "userRestoreEnabled": true
+    },
+    "crossRegionDisasterRecoverySetting": {
+      "crossRegionDisasterRecoveryEnabled": false,
+      "maintainCrossRegionRestorePointEnabled": true,
+      "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium",
+      "userInitiatedDisasterRecoveryAllowed": true
     },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z",

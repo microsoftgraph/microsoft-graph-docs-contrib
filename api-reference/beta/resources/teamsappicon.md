@@ -3,8 +3,9 @@ title: "teamsAppIcon resource type"
 description: "Represents an icon associated with an app on Microsoft Teams."
 author: "jecha"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 03/08/2024
 ---
 
 # teamsAppIcon resource type
@@ -52,7 +53,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)

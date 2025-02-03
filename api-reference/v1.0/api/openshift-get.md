@@ -3,8 +3,9 @@ title: "Get openShift"
 description: "Retrieve the properties and relationships of openshift object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 09/18/2024
 ---
 
 # Get openShift
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "openshift_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/openshift-get-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -55,7 +56,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -116,56 +117,39 @@ Here's an example of the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "sharedOpenShift": {
-  "notes": "Inventory Management",
-  "openSlotCount":2,
-  "displayName": "Day shift",
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T09:50:45.332Z",
-  "theme": "white",
-  "activities": [
-  {
-  "isPaid": true,
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T01:58:45.340Z",
-  "code": "",
-  "displayName": "Lunch"
-  }
-  ]
-  },
-  "draftOpenShift": {
-  "notes": "Inventory Management",
-  "openSlotCount":3,
-  "displayName": "Day shift",
-  "startDateTime": "2018-10-04T00:58:45.332Z",
-  "endDateTime": "2018-10-04T08:58:45.340Z",
-  "theme": "white",
-  "activities": [
-  {
-  "isPaid": true,
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T07:58:45.332Z",
-  "code": "Break",
-  "displayName": "Lunch"
-  }
-  ]
-  },
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "lastModifiedBy": {
-  "application": null,
-  "device": null,
-  "conversation": null,
-  "user": {
-  "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-  "displayName": "John Doe"
-  }
-  }
+    "id": "OPNSHFT_d8da84aa-0138-45f9-9ac7-5d06712211d3",
+    "createdDateTime": "2024-11-08T22:11:18.091Z",
+    "lastModifiedDateTime": "2024-11-08T22:11:18.091Z",
+    "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+    "isStagedForDeletion": false,
+    "draftOpenShift": null,
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+            "displayName": "John Doe",
+            "userIdentityType": "aadUser",
+            "tenantId": null
+        }
+    },
+    "sharedOpenShift": {
+        "displayName": null,
+        "startDateTime": "2024-11-04T20:00:00Z",
+        "endDateTime": "2024-11-04T21:00:00Z",
+        "theme": "blue",
+        "notes": null,
+        "openSlotCount": 1,
+        "activities": []
+    },
+    "schedulingGroupInfo": {
+        "displayName": "",
+        "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+        "code": null
+    }
 }
 ```
 

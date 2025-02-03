@@ -2,9 +2,10 @@
 title: "Update auditEvent"
 description: "Update the properties of a auditEvent object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update auditEvent
@@ -133,6 +134,10 @@ Content-length: 1496
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-auditing-auditevent-update-update-auditevent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-auditing-auditevent-update-update-auditevent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

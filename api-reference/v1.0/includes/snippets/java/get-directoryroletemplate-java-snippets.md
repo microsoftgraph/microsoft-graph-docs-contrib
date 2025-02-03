@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DirectoryRoleTemplate directoryRoleTemplate = graphClient.directoryRoleTemplates("62e90394-69f5-4237-9190-012177145e10")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+DirectoryRoleTemplate result = graphClient.directoryRoleTemplates().byDirectoryRoleTemplateId("{directoryRoleTemplate-id}").get();
+
 
 ```

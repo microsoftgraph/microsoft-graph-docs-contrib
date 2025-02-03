@@ -53,6 +53,7 @@ const bookingService = {
     displayName: 'Bento',
     isLocationOnline: true,
     smsNotificationsEnabled: true,
+    isCustomerAllowedToManageBooking: true,
     languageTag: 'en-US',
     isHiddenFromCustomers: false,
     notes: 'Home-cooked special',
@@ -74,7 +75,7 @@ const bookingService = {
     isAnonymousJoinEnabled: false
 };
 
-await client.api('/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services')
+await client.api('/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/services')
 	.post(bookingService);
 
 ```

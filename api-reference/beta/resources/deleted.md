@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Deleted
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # Deleted facet
 
@@ -19,9 +19,19 @@ A null (or missing) value indicates that the file is not deleted.
 
 See [view changes for an item](../api/driveitem-delta.md) for more information on tracking changes and finding deleted items.
 
+## Properties
+
+| Property | Type   | Description                               |
+|:---------|:-------|:------------------------------------------|
+| state    | String | Represents the state of the deleted item. |
+
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -35,12 +45,6 @@ Here is a JSON representation of the resource.
   "state": "string"
 }
 ```
-## Properties
-
-| Property | Type   | Description                               |
-|:---------|:-------|:------------------------------------------|
-| state    | String | Represents the state of the deleted item. |
-
 ## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).

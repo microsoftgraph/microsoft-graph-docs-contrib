@@ -3,8 +3,9 @@ title: "applicationServicePrincipal resource type"
 description: "A combination of an application and a servicePrincipal."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # applicationServicePrincipal resource type
@@ -32,7 +33,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,8 +3,9 @@ title: "inviteParticipantsOperation resource type"
 description: "Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # inviteParticipantsOperation resource type
@@ -25,7 +26,7 @@ Represents the status of a long-running participant invitation operation, trigge
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

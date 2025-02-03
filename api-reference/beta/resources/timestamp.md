@@ -3,8 +3,9 @@ title: "timeStamp resource type"
 description: "Date and time information for a point in time."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 author: "spgraph-docs-team"
+ms.date: 03/21/2024
 ---
 
 # timeStamp resource type
@@ -22,9 +23,12 @@ Date and time information for a point in time.
 |time|TimeOfDay|The time portion of the timestamp.|
 |timeZone|String|The timezone portion of the timestamp, which is one of the 24 longitudinal areas in the world.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

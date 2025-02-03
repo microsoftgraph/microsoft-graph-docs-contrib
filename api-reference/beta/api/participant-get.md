@@ -3,8 +3,9 @@ title: "Get participant"
 description: "Retrieve the properties and relationships of a **participant** object."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Get participant
@@ -14,6 +15,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a **participant** object.
+
+> [!NOTE]
+> Peer-to-peer calls between a calling bot and another peer, including both VoIP and PSTN calls, aren't supported.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

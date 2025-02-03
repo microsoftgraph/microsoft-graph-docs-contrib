@@ -22,4 +22,4 @@ jobs:
       with:
         repoToken: ${{ secrets.GITHUB_TOKEN }}
         changeLogDirectory: changelog
-      uses: microsoftgraph/changelog-link-check@v1.0.7
+      uses: microsoftgraph/changelog-link-check@v1.0.8

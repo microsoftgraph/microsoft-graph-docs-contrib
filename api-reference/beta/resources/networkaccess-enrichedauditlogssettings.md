@@ -3,8 +3,9 @@ title: "enrichedAuditLogsSettings resource type"
 description: "Represents a configuration object that centralizes enriched audit logs settings related to specific Microsoft 365 workload."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # enrichedAuditLogsSettings resource type
@@ -24,7 +25,7 @@ Represents a configuration object that centralizes enriched audit logs settings 
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.enrichedAuditLogsSettings"

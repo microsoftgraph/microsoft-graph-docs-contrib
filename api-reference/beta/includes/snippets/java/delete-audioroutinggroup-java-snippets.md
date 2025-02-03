@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.communications().calls("{id}").audioRoutingGroups("{id}")
-	.buildRequest()
-	.delete();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.communications().calls().byCallId("{call-id}").audioRoutingGroups().byAudioRoutingGroupId("{audioRoutingGroup-id}").delete();
+
 
 ```

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Chat chat = new Chat();
-chat.topic = "Group chat title update";
+chat.setTopic("Group chat title update");
+Chat result = graphClient.chats().byChatId("{chat-id}").patch(chat);
 
-graphClient.chats("19:1c5b01696d2e4a179c292bc9cf04e63b@thread.v2")
-	.buildRequest()
-	.patch(chat);
 
 ```

@@ -2,7 +2,8 @@
 title: "Build interactive Microsoft Graph apps with real-time feed"
 description: "Learn how to use the Microsoft Graph integration pattern for interactive apps that use change notifications."
 author: "OlgaPodo"
-ms.localizationpriority: low
+ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 # Build interactive Microsoft Graph apps with real-time feed
@@ -41,7 +42,7 @@ The following considerations support the use of this integration pattern:
 
 - **Solution complexity**: This solution requires custom code to orchestrate APIs, maintain notification subscriptions, and receive change notifications via webhooks. Although this solution doesn't require elasticity, it needs to support users under different network conditions and potentially handle a burst of change notifications. Therefore, this solution is highly complex.
 
-## See also
+## Related content
 
 - [Best practices in cloud applications](/azure/architecture/best-practices/index-best-practices)
 - [Microsoft Graph fundamentals](/training/paths/m365-msgraph-fundamentals/)

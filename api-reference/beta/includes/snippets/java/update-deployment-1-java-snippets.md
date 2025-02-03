@@ -4,15 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Deployment deployment = new Deployment();
-DeploymentState state = new DeploymentState();
-state.requestedValue = RequestedDeploymentStateValue.PAUSED;
-deployment.state = state;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.admin().windows().updates().deployments("b5171742-1742-b517-4217-17b5421717b5")
-	.buildRequest()
-	.patch(deployment);
+com.microsoft.graph.beta.models.windowsupdates.Deployment deployment = new com.microsoft.graph.beta.models.windowsupdates.Deployment();
+deployment.setOdataType("#microsoft.graph.windowsUpdates.deployment");
+com.microsoft.graph.beta.models.windowsupdates.DeploymentState state = new com.microsoft.graph.beta.models.windowsupdates.DeploymentState();
+state.setOdataType("microsoft.graph.windowsUpdates.deploymentState");
+state.setRequestedValue(com.microsoft.graph.beta.models.windowsupdates.RequestedDeploymentStateValue.Paused);
+deployment.setState(state);
+com.microsoft.graph.models.windowsupdates.Deployment result = graphClient.admin().windows().updates().deployments().byDeploymentId("{deployment-id}").patch(deployment);
+
 
 ```

@@ -3,8 +3,9 @@ title: "onlineMeetingRestricted resource type"
 description: "Indicates the reason or reasons media content from a participant is restricted."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # onlineMeetingRestricted resource type
@@ -36,7 +37,7 @@ Indicates the reason or reasons media content from a participant is restricted.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

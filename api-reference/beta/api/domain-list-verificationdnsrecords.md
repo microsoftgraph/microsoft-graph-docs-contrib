@@ -1,10 +1,11 @@
 ---
 title: "List verificationDnsRecords"
 description: "Retrieve a list of domainDnsRecord objects."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List verificationDnsRecords
@@ -29,11 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_list_verificationdnsrecords" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-list-verificationdnsrecords-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* Domain Name Administrator
-* Global Reader
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation: *Domain Name Administrator* or *Global Reader*.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

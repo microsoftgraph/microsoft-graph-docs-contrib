@@ -1,7 +1,7 @@
 ---
 author: sebastienlevert
 ms.date: 10/28/2020
-ms.prod: aad
+ms.subservice: aad
 ms.topic: include
 ms.localizationpriority: medium
 ---

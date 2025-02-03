@@ -3,8 +3,9 @@ title: "permission: revokeGrants"
 description: "Update an item's sharing permissions"
 author: "learafa"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # permission: revokeGrants

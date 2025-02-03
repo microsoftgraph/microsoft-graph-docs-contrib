@@ -3,16 +3,15 @@ title: "List userSources"
 description: "Get the userSource resources from the userSources navigation property."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # List userSources
 Namespace: microsoft.graph.security
 
-
-
-Get a list of the [userSource](../resources/security-usersource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
+Get a list of the [userSource](../resources/security-usersource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) or [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -50,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,6 +95,8 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-418
 
 ---
 
+---
+
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -117,7 +118,7 @@ Content-Type: application/json
             "createdDateTime": "2022-05-23T00:58:19.0702524Z",
             "holdStatus": "applied",
             "id": "43434642-3137-3138-3432-374142313639",
-            "email": "AlexW@M365x809305.OnMicrosoft.com",
+            "email": "AlexW@contoso.com",
             "includedSources": "mailbox,site",
             "siteWebUrl": "https://m365x809305-my.sharepoint.com/personal/alexw_m365x809305_onmicrosoft_com/",
             "createdBy": {

@@ -3,8 +3,9 @@ title: "Create tokenIssuancePolicy"
 description: "Create a new tokenIssuancePolicy."
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Create tokenIssuancePolicy

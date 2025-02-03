@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const updateDeviceProperties = Content-type: application/json
-Content-length: 187
-
-{
+const updateDeviceProperties = {
   userPrincipalName: 'User Principal Name value',
   addressableUserName: 'Addressable User Name value',
   groupTag: 'Group Tag value',

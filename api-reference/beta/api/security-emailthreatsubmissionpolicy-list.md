@@ -3,8 +3,9 @@ title: "List emailThreatSubmissionPolicies"
 description: "Get a list of the emailThreatSubmissionPolicy objects and their properties."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List emailThreatSubmissionPolicies

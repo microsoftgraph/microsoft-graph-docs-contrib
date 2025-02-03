@@ -25,7 +25,7 @@ var requestBody = new GetConnectionQualityReportsPostRequestBody
 		"UDPConnectionPercentage",
 		"LastConnectionGateway",
 		"LastConnectionProtocol",
-		"EventDateTime",
+		"LastActiveTime",
 	},
 	Skip = 0,
 	Top = 25,

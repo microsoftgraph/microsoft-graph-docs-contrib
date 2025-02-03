@@ -3,8 +3,9 @@ title: "cloudPcConnectivityEvent resource type"
 description: "Describes a user connection record, including when and how the Cloud PC was connected and whether the connection was successful. "
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # cloudPcConnectivityEvent resource type
@@ -47,7 +48,7 @@ Describes a user connection record, including when and how the Cloud PC was conn
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcConnectivityEvent"

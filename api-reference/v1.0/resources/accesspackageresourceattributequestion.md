@@ -3,8 +3,9 @@ title: "accessPackageResourceAttributeQuestion resource type"
 description: "Resource that defines the question provided to an end user, for the purpose of obtaining an attribute value to be passed to the end system or the request approver."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # accessPackageResourceAttributeQuestion resource type

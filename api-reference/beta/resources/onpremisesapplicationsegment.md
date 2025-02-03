@@ -3,8 +3,9 @@ title: "onPremisesApplicationSegment resource type (deprecated)"
 description: "Represents onPremisesApplicationSegment object when publishing an on-premises wildcard application with Microsoft Entra application proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # onPremisesApplicationSegment resource type (deprecated)
@@ -25,11 +26,13 @@ Represents a [onPremisesApplicationSegment](onPremisesApplicationSegment.md) obj
 |externalUrl|String |The published external URL for the application segment; for example, https://intranet.contoso.com./|
 |internalUrl|String |The internal URL of the application segment; for example, https://intranet/.|
 
+## Relationships
 
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onPremisesApplicationSegment"

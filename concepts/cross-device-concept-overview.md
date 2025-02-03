@@ -2,8 +2,9 @@
 title: "Cross-device experiences in Microsoft Graph"
 description: "Use Microsoft Graph to access the activities and devices that belong to your customers and enable rich human-centric experiences that cross devices and platforms."
 ms.localizationpriority: high
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Cross-device experiences in Microsoft Graph
@@ -31,7 +32,7 @@ Looking for the API reference for these services?
 - [API for cross-device experiences in Microsoft Graph v1.0](/graph/api/resources/project-rome-overview?view=graph-rest-1.0&preserve-view=true)
 - [API for cross-device experiences in Microsoft Graph beta](/graph/api/resources/project-rome-overview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Related content
 
 - [Learn more about the activity feed API in Microsoft Graph](activity-feed-concept-overview.md)
 - [Learn more about the device relay API in Microsoft Graph](device-relay-concept-overview.md)

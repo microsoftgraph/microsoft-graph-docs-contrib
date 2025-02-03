@@ -3,8 +3,9 @@ title: "reports: getPrinterArchivedPrintJobs"
 description: Get a list of archived print jobs that were queued for particular printer.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getPrinterArchivedPrintJobs
@@ -76,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/reports/getPrinterArchivedPrintJobs(printer
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getprinterarchivedprintjobs-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getprinterarchivedprintjobs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

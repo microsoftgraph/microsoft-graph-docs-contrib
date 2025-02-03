@@ -3,7 +3,7 @@ title: "Overview of federated identity credentials in Microsoft Entra ID"
 description: "Federated identity credentials allow you to access Azure and Microsoft Graph resources without having to manage secrets. This is part of workload identity federation in Azure AD."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: conceptualPageType
 ms.date: 08/03/2022
 ---
@@ -28,20 +28,21 @@ You create a trust relationship between an external identity provider (IdP) and 
 
 ## Set up federated identity credentials through Microsoft Graph
 
-The [federatedIdentityCredential](federatedidentitycredential.md) resource represents the configuration of a federated identity credential via Microsoft Graph. The following properties are the building blocks of federated identity credentials:
+The [federatedIdentityCredential](federatedidentitycredential.md) resource represents the configuration of a federated identity credential via Microsoft Graph. Use the [Create federatedIdentityCredential](../api/application-post-federatedidentitycredentials.md) API to configure the object. The following properties are the building blocks of federated identity credentials:
 
-+ **audiences** — The audience that can appear in the external token. This field is mandatory and should be set to `api://AzureADTokenExchange` for Microsoft Entra ID. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you might need to create a new application registration in your IdP to serve as the audience of this token.
-+ **issuer** — The URL of the external identity provider. Must match the **issuer** claim of the external token being exchanged.
-+ **subject** — The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each IdP uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the sub claim within the token presented to Microsoft Entra ID.
++ **audiences** - The audience that can appear in the external token. This field is mandatory and should be set to `api://AzureADTokenExchange` for Microsoft Entra ID. It says what Microsoft identity platform should accept in the `aud` claim in the incoming token. This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you might need to create a new application registration in your IdP to serve as the audience of this token.
++ **issuer** - The URL of the external identity provider. Must match the **issuer** claim of the external token being exchanged.
++ **subject** - The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each IdP uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the `sub` claim within the token presented to Microsoft Entra ID.
++ **name** - A unique string to identify the credential. This property is an alternate key and the value can be used to reference the federated identity credential via the [GET](../api/federatedidentitycredential-get.md) and [UPSERT](../api/federatedidentitycredential-upsert.md) operations.
 
-The combination of **issuer** and **subject** must be unique on the app.  When the external software workload requests Microsoft identity platform to exchange the external token for an access token, the **issuer** and **subject** values of the federated identity credential are checked against the `issuer` and `subject` claims provided in the external token. If that validation check passes, Microsoft identity platform issues an access token to the external software workload.
+The combination of **issuer** and **subject** must be unique on the app.  When the external software workload requests Microsoft identity platform to exchange the external token for an access token, the **issuer** and **subject** values of the federated identity credential are checked against the `issuer` and `subject` claims provided in the external token. If that validation check passes, Microsoft identity platform issues an access token to the external software workload.
 
 
 ## Design considerations
 
 A maximum of 20 federated identity credentials can be added per application object or user-assigned managed identity.
 
-## See also
+## Related content
 
 + [federatedIdentityCredential resource type](federatedidentitycredential.md)
 + [Workload identity federation](/azure/active-directory/develop/workload-identity-federation)

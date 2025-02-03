@@ -3,8 +3,9 @@ title: "authenticationConditionsApplications resource type"
 description: "The applications on which an authenticationEventListener should trigger."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # authenticationConditionsApplications resource type
@@ -26,7 +27,7 @@ The applications on which an authenticationEventListener should trigger.
 |includeApplications|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|Collection of the application conditions on which an authenticationEventListener should trigger.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationConditionsApplications"

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-InboundSharedUserProfile inboundSharedUserProfile = graphClient.directory().inboundSharedUserProfiles("c228b2ae-c4fb-4eda-9620-7e73dddd1cac")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+InboundSharedUserProfile result = graphClient.directory().inboundSharedUserProfiles().byInboundSharedUserProfileUserId("{inboundSharedUserProfile-userId}").get();
+
 
 ```

@@ -3,8 +3,9 @@ title: "informationProtectionLabel: listLabels (deprecated)"
 description: "Retrieve a list of information protection labels. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # informationProtectionLabel: listLabels (deprecated)

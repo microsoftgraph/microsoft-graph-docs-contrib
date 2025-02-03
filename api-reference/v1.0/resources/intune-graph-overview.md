@@ -3,8 +3,9 @@ title: "Working with Intune in Microsoft Graph"
 description: "The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the Azure Portal."
 author: "jaiprakashmb"
 ms.localizationpriority: high
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: conceptualPageType
+ms.date: 09/25/2024
 ---
 
 # Working with Intune in Microsoft Graph  
@@ -54,5 +55,5 @@ You can use either API to manage Windows updates; however, these two APIs are no
 
 ## Next Steps
 
-- Learn [how to use Azure AD](/intune/intune-graph-apis) to access the Microsoft Graph API for Intune.  
-- Explore the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples), which show how to use the Microsoft Graph API for Intune in context of working examples.
+- Learn [how to use Entra ID](/graph/auth/auth-concepts) to access the Microsoft Graph API for Intune.  
+- Explore the [PowerShell Intune samples](https://microsoft.github.io/webportal-intune-samples/), which show how to use the Microsoft Graph API for Intune in context of working examples.

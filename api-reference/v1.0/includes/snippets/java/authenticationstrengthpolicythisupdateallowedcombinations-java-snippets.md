@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<AuthenticationMethodModes> allowedCombinationsList = new LinkedList<AuthenticationMethodModes>();
-allowedCombinationsList.add(AuthenticationMethodModes.PASSWORD);
-allowedCombinationsList.add(AuthenticationMethodModes.VOICE);
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.policies().authenticationStrengthPolicies("33c5d2c0-884e-4b5d-a5b8-5395082b092c")
-	.updateAllowedCombinations(AuthenticationStrengthPolicyUpdateAllowedCombinationsParameterSet
-		.newBuilder()
-		.withAllowedCombinations(allowedCombinationsList)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.policies.authenticationstrengthpolicies.item.updateallowedcombinations.UpdateAllowedCombinationsPostRequestBody updateAllowedCombinationsPostRequestBody = new com.microsoft.graph.policies.authenticationstrengthpolicies.item.updateallowedcombinations.UpdateAllowedCombinationsPostRequestBody();
+LinkedList<AuthenticationMethodModes> allowedCombinations = new LinkedList<AuthenticationMethodModes>();
+allowedCombinations.add(AuthenticationMethodModes.Password);
+allowedCombinations.add(AuthenticationMethodModes.Voice);
+updateAllowedCombinationsPostRequestBody.setAllowedCombinations(allowedCombinations);
+var result = graphClient.policies().authenticationStrengthPolicies().byAuthenticationStrengthPolicyId("{authenticationStrengthPolicy-id}").updateAllowedCombinations().post(updateAllowedCombinationsPostRequestBody);
+
 
 ```

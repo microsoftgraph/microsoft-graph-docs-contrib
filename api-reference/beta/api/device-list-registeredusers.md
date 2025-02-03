@@ -3,8 +3,9 @@ title: "List registeredUsers"
 description: "Retrieve a list of users that are registered users of the device."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List registeredUsers
@@ -27,34 +28,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-* Global Administrator
-* Users
-* Directory Readers
-* Directory Writers
-* Compliance Administrator
-* Device Managers
-* Application Administrator
-* Security Reader
-* Security Administrator
-* Privileged Role Administrator
-* Cloud Application Administrator
-* Customer LockBox Access Approver
-* Dynamics 365 Administrator
-* Power BI Administrator
-* Desktop Analytics Administrator
-* Microsoft Managed Desktop Administrator
-* Teams Communications Administrator
-* Teams Communications Support Engineer
-* Teams Communications Support Specialist
-* Teams Administrator
-* Compliance Data Administrator
-* Security Operator
-* Kaizala Administrator
-* Global Reader
-* Directory Reviewer
-* Windows 365 Administrator
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Directory Readers
+> - Global Reader
+> - Intune Administrator
+> - Windows 365 Administrator
 
 ## HTTP request
 
@@ -85,7 +64,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -131,7 +110,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/registeredUsers
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

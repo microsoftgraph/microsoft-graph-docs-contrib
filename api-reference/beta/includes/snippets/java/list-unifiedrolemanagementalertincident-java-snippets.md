@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UnifiedRoleManagementAlertIncidentCollectionPage alertIncidents = graphClient.identityGovernance().roleManagementAlerts().alerts("DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert").alertIncidents()
-	.buildRequest()
-	.top(5)
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UnifiedRoleManagementAlertIncidentCollectionResponse result = graphClient.identityGovernance().roleManagementAlerts().alerts().byUnifiedRoleManagementAlertId("{unifiedRoleManagementAlert-id}").alertIncidents().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.top = 5;
+});
+
 
 ```

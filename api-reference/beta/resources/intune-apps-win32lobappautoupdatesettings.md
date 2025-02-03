@@ -2,9 +2,10 @@
 title: "win32LobAppAutoUpdateSettings resource type"
 description: "Contains properties used to perform the auto-update of an application."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # win32LobAppAutoUpdateSettings resource type
@@ -20,7 +21,7 @@ Contains properties used to perform the auto-update of an application.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|autoUpdateSupersededApps|[win32LobAppAutoUpdateSupersededApps](../resources/intune-apps-win32lobappautoupdatesupersededapps.md)|The auto-update superseded apps setting for the app assignment. Possible values are notConfigured and enabled. Default value is notConfigured. Possible values are: `notConfigured`, `enabled`, `unknownFutureValue`.|
+|autoUpdateSupersededAppsState|[win32LobAutoUpdateSupersededAppsState](../resources/intune-apps-win32lobautoupdatesupersededappsstate.md)|The auto-update superseded apps state setting for the app assignment. Possible values are notConfigured and enabled. Default value is notConfigured. Possible values are: `notConfigured`, `enabled`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -35,6 +36,6 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.win32LobAppAutoUpdateSettings",
-  "autoUpdateSupersededApps": "String"
+  "autoUpdateSupersededAppsState": "String"
 }
 ```

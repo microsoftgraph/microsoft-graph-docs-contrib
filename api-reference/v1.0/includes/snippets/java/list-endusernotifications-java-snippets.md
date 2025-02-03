@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EndUserNotificationCollectionPage endUserNotifications = graphClient.security().attackSimulation().endUserNotifications()
-	.buildRequest()
-	.filter("source eq 'global'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+EndUserNotificationCollectionResponse result = graphClient.security().attackSimulation().endUserNotifications().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "source eq 'global'";
+});
+
 
 ```

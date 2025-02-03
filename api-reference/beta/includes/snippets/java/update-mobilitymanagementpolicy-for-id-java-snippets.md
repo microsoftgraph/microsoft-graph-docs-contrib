@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MobilityManagementPolicy mobilityManagementPolicy = new MobilityManagementPolicy();
-mobilityManagementPolicy.complianceUrl = "https://portal.mg.contoso.com/?portalAction=Compliance";
-mobilityManagementPolicy.discoveryUrl = "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc";
-mobilityManagementPolicy.termsOfUseUrl = "https://portal.mg.contoso.com/TermsofUse.aspx";
+mobilityManagementPolicy.setOdataType("#microsoft.graph.mobilityManagementPolicy");
+mobilityManagementPolicy.setComplianceUrl("https://portal.mg.contoso.com/?portalAction=Compliance");
+mobilityManagementPolicy.setDiscoveryUrl("https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc");
+mobilityManagementPolicy.setTermsOfUseUrl("https://portal.mg.contoso.com/TermsofUse.aspx");
+MobilityManagementPolicy result = graphClient.policies().mobileAppManagementPolicies().byMobilityManagementPolicyId("{mobilityManagementPolicy-id}").patch(mobilityManagementPolicy);
 
-graphClient.policies().mobileAppManagementPolicies("ab90bacf-55a3-4a3e-839a-aa4b74e4f020")
-	.buildRequest()
-	.patch(mobilityManagementPolicy);
 
 ```

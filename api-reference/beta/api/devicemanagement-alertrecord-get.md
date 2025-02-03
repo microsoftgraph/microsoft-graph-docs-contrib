@@ -3,8 +3,9 @@ title: "Get alertRecord"
 description: "Read the properties and relationships of an alertRecord object."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/27/2024
 ---
 
 # Get alertRecord
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Read the properties and relationships of an [alertRecord](../resources/devicemanagement-alertrecord.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -52,7 +53,7 @@ If successful, this method returns a `200 OK` response code and an [microsoft.gr
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

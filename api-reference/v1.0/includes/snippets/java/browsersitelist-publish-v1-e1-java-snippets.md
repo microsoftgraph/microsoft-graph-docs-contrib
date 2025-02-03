@@ -4,18 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String revision = "1.0";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.admin().edge().internetExplorerMode().siteLists("36ba61eb-c492-4283-a38b-963a1dbb2f69")
-	.publish(BrowserSiteListPublishParameterSet
-		.newBuilder()
-		.withRevision(revision)
-		.withSites(null)
-		.withSharedCookies(null)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.admin.edge.internetexplorermode.sitelists.item.publish.PublishPostRequestBody publishPostRequestBody = new com.microsoft.graph.admin.edge.internetexplorermode.sitelists.item.publish.PublishPostRequestBody();
+publishPostRequestBody.setRevision("1.0");
+var result = graphClient.admin().edge().internetExplorerMode().siteLists().byBrowserSiteListId("{browserSiteList-id}").publish().post(publishPostRequestBody);
+
 
 ```

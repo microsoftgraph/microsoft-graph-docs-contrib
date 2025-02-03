@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UnifiedGroupSource unifiedGroupSource = new UnifiedGroupSource();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.models.ediscovery.UnifiedGroupSource unifiedGroupSource = new com.microsoft.graph.beta.models.ediscovery.UnifiedGroupSource();
 Group group = new Group();
-group.mail = "SecretGroup@contoso.com";
-unifiedGroupSource.group = group;
-unifiedGroupSource.includedSources = EnumSet.of(SourceType.MAILBOX,SourceType.SITE);
+group.setMail("SecretGroup@contoso.com");
+unifiedGroupSource.setGroup(group);
+unifiedGroupSource.setIncludedSources(EnumSet.of(com.microsoft.graph.beta.models.ediscovery.SourceType.Mailbox, com.microsoft.graph.beta.models.ediscovery.SourceType.Site));
+com.microsoft.graph.models.ediscovery.UnifiedGroupSource result = graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").custodians().byCustodianId("{custodian-id}").unifiedGroupSources().post(unifiedGroupSource);
 
-graphClient.compliance().ediscovery().cases("15d80234-8320-4f10-96d0-d98d53ffdfc9").custodians("8904528fef4d4578b44f71a80188f400").unifiedGroupSources()
-	.buildRequest()
-	.post(unifiedGroupSource);
 
 ```

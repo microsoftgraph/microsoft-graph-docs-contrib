@@ -2,9 +2,10 @@
 title: "iosVpnSecurityAssociationParameters resource type"
 description: "VPN Security Association Parameters"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # iosVpnSecurityAssociationParameters resource type

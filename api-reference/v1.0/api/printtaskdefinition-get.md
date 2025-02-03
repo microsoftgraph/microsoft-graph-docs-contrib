@@ -3,8 +3,9 @@ title: Get taskDefinition
 description: Get details about a task definition.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # Get printTaskDefinition

@@ -3,8 +3,9 @@ title: "Get regionalAndLanguageSettings resource"
 description: "Retrieve the properties of a user's regionalAndLanguageSettings"
 author: "jasonbro"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # Get regionalAndLanguageSettings
@@ -52,7 +53,7 @@ The following example gets the properties of the signed-in user.
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +100,7 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

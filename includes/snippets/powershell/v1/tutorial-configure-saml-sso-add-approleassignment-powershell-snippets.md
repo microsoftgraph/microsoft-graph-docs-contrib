@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	principalId = "040f9599-7c0f-4f94-aa75-8394c4c6ea9b"
+	principalId = "59bb3898-0621-4414-ac61-74f9d7201355"
 	principalType = "User"
 	appRoleId = "3a84e31e-bffa-470f-b9e6-754a61e4dc63"
-	resourceId = "a750f6cf-2319-464a-bcc3-456926736a91"
+	resourceId = "d3616293-fff8-4415-9f01-33b05dad1b46"
 }
 
 New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $servicePrincipalId -BodyParameter $params

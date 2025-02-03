@@ -1,10 +1,11 @@
 ---
 title: "List resourceRoles"
-description: "Retrieve a list of accessPackageResourceRole objects."
+description: "Retrieve a list of accessPackageResourceRole objects of an accessPackageResource in an accessPackageCatalog."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 03/08/2024
 ---
 
 # List resourceRoles
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [accessPackageResourceRole](../resources/accesspackageresourcerole.md) objects of an [accessPackageResource](../resources/accesspackageresource.md) in an [accessPackageCatalog](../resources/accesspackagecatalog.md). The resource should have been added to the catalog by [creating an accessPackageResourceRequest](entitlementmanagement-post-resourcerequests.md). This list of roles can then be used by the caller to select a role, which is needed when subsequently [creating an accessPackageResourceRoleScope](accesspackage-post-resourcerolescopes.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackagecatalog_list_resourceroles" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackagecatalog-list-resourceroles-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 

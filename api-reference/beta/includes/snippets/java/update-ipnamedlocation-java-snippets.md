@@ -4,19 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IpNamedLocation namedLocation = new IpNamedLocation();
-namedLocation.displayName = "Untrusted named location with only IPv4 address";
-namedLocation.isTrusted = false;
-LinkedList<IpRange> ipRangesList = new LinkedList<IpRange>();
-IPv4CidrRange ipRanges = new IPv4CidrRange();
-ipRanges.cidrAddress = "6.5.4.3/18";
-ipRangesList.add(ipRanges);
-namedLocation.ipRanges = ipRangesList;
+namedLocation.setOdataType("#microsoft.graph.ipNamedLocation");
+namedLocation.setDisplayName("Untrusted named location with only IPv4 address");
+namedLocation.setIsTrusted(false);
+LinkedList<IpRange> ipRanges = new LinkedList<IpRange>();
+IPv4CidrRange ipRange = new IPv4CidrRange();
+ipRange.setOdataType("#microsoft.graph.iPv4CidrRange");
+ipRange.setCidrAddress("6.5.4.3/18");
+ipRanges.add(ipRange);
+namedLocation.setIpRanges(ipRanges);
+NamedLocation result = graphClient.identity().conditionalAccess().namedLocations().byNamedLocationId("{namedLocation-id}").patch(namedLocation);
 
-graphClient.identity().conditionalAccess().namedLocations("0854951d-5fc0-4eb1-b392-9b2c9d7949c2")
-	.buildRequest()
-	.patch(namedLocation);
 
 ```

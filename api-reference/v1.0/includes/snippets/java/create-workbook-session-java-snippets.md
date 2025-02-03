@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Boolean persistChanges = true;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().drive().items("{id}").workbook()
-	.createSession(WorkbookCreateSessionParameterSet
-		.newBuilder()
-		.withPersistChanges(persistChanges)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.drives.item.items.item.workbook.createsession.CreateSessionPostRequestBody createSessionPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.createsession.CreateSessionPostRequestBody();
+createSessionPostRequestBody.setPersistChanges(true);
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().createSession().post(createSessionPostRequestBody);
+
 
 ```

@@ -3,8 +3,9 @@ title: "broadcastMeetingSettings resource type"
 description: "Represents settings related to a live event in Microsoft Teams."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # broadcastMeetingSettings resource type
@@ -35,9 +36,12 @@ Represents settings related to a [live event](/microsoftteams/teams-live-events/
 | roleIsAttendee     | Only the specified people can join this Teams live event.                |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.  |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

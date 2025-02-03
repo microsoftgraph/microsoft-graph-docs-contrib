@@ -4,25 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String use = "use-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String k = "application-secret-to-be-uploaded";
+com.microsoft.graph.beta.trustframework.keysets.item.uploadsecret.UploadSecretPostRequestBody uploadSecretPostRequestBody = new com.microsoft.graph.beta.trustframework.keysets.item.uploadsecret.UploadSecretPostRequestBody();
+uploadSecretPostRequestBody.setUse("use-value");
+uploadSecretPostRequestBody.setK("application-secret-to-be-uploaded");
+uploadSecretPostRequestBody.setNbf(1508969811L);
+uploadSecretPostRequestBody.setExp(1508973711L);
+var result = graphClient.trustFramework().keySets().byTrustFrameworkKeySetId("{trustFrameworkKeySet-id}").uploadSecret().post(uploadSecretPostRequestBody);
 
-Long nbf = 1508969811L;
-
-Long exp = 1508973711L;
-
-graphClient.trustFramework().keySets("{id}")
-	.uploadSecret(TrustFrameworkKeySetUploadSecretParameterSet
-		.newBuilder()
-		.withUse(use)
-		.withK(k)
-		.withNbf(nbf)
-		.withExp(exp)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -1,11 +1,11 @@
 ---
 author: "jaiprakashmb"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: intune
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
-<!-- this file is auto-generated don't edit it manually! -->
+
 #### Intune books service limits
 
 | Request type | Limit per tenant for all apps | Limit per app per tenant |

@@ -3,8 +3,9 @@ title: "Delete activityBasedTimeoutPolicy"
 description: "Delete activityBasedTimeoutPolicy."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Delete activityBasedTimeoutPolicy

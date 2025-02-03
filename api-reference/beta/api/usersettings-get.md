@@ -2,9 +2,11 @@
 title: "Get settings"
 description: "Read the user and organization settings object."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # Get settings
@@ -55,7 +57,7 @@ GET https://graph.microsoft.com/beta/me/settings
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

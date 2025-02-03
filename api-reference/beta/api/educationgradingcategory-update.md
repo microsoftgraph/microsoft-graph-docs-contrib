@@ -3,8 +3,9 @@ title: "Update gradingCategory"
 description: "Update a single gradingCategory."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # Update gradingCategory
@@ -36,7 +37,7 @@ PATCH /education/classes/{classId}/assignmentSettings/gradingCategories/{grading
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -57,7 +58,7 @@ The following example shows a request.
   "name": "update_gradingCategoties"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070//assignmentSettings/gradingCategories/8bfb6d7f-8634-4f3b-9b6a-b6b6ff663f01
+PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingCategories/8bfb6d7f-8634-4f3b-9b6a-b6b6ff663f01
 Content-type: application/json
 
 {

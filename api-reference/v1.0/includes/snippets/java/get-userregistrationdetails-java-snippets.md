@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UserRegistrationDetails userRegistrationDetails = graphClient.reports().authenticationMethods().userRegistrationDetails("86462606-fde0-4fc4-9e0c-a20eb73e54c6")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UserRegistrationDetails result = graphClient.reports().authenticationMethods().userRegistrationDetails().byUserRegistrationDetailsId("{userRegistrationDetails-id}").get();
+
 
 ```

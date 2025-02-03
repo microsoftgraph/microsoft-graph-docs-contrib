@@ -3,8 +3,9 @@ title: "Delete businessScenario"
 description: "Delete a businessScenario object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete businessScenario
@@ -52,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +102,7 @@ DELETE https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

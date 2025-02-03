@@ -3,8 +3,9 @@ title: "Get unifiedRoleEligibilitySchedule"
 description: "Retrieve the schedule for a role eligibility operation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get unifiedRoleEligibilitySchedule
@@ -19,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "unifiedroleeligibilityschedule_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleeligibilityschedule-get-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 

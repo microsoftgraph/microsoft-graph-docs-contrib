@@ -2,9 +2,10 @@
 title: "reportRoot: getTeamsDeviceUsageUserCounts"
 description: "Get the number of Microsoft Teams daily unique users by device type."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getTeamsDeviceUsageUserCounts

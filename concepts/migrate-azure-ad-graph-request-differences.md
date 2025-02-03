@@ -1,11 +1,13 @@
 ---
 title: "Request differences between Azure AD Graph and Microsoft Graph"
 description: "Describes how Microsoft Graph requests differ from Azure Active Directory (Azure AD) Graph requests, which helps migrate apps to the newer service."
-author: "FaithOmbongi"
-ms.reviewer: dkershaw
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: krbash
 ms.localizationpriority: medium
-ms.prod: "applications"
-ms.date: 01/12/2024
+ms.subservice: "entra-applications"
+ms.date: 01/21/2025
+
 #Customer intent: As a developer, I want to understand how REST API endpoints differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
@@ -53,7 +55,7 @@ In addition to the primary key, some entities support an alternate key identifie
 
 It's a best practice to only request the properties your app really needs. Use the `$select` query parameter, in GET requests, to customize the response to include only the properties that your app requires.
 
-In some cases in Microsoft Graph, for example, the **GET** or **LIST** operations for **user** and **group** resources, only a subset of all properties are returned. These _default properties_ represent the most commonly used properties for the resources. On the other hand, Azure AD Graph returns the full set of all properties for the respective resource. Where the resource returns only the default properties, your app needs to explicitly request other properties using the `$select` query parameter.
+In some cases in Microsoft Graph, for example, the **GET** or **LIST** operations for **user** and **group** resources, only a subset of all properties are returned. These *default properties* represent the most commonly used properties for the resources. On the other hand, Azure AD Graph returns the full set of all properties for the respective resource. Where the resource returns only the default properties, your app needs to explicitly request other properties using the `$select` query parameter.
 
 To illustrate the difference, use Graph Explorer to run the following requests and compare the different responses.
 
@@ -71,7 +73,7 @@ https://graph.microsoft.com/v1.0/me?$select=displayName,streetAddress,city,state
 To learn more about:
 
 - Default properties on user and group resources, see [users](/graph/api/resources/users) and [groups](/graph/api/resources/groups-overview)
-- The `$select` parameter and other supported ODATA query parameters, see [Use query parameters to customize responses](./query-parameters.md).
+- The `$select` parameter and other supported OData query parameters, see [Use query parameters to customize responses](./query-parameters.md).
 - Other recommended optimizations, see [Best practices](./best-practices-concept.md).
 
 ## Relationships and navigation properties

@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Event event = new Event();
-event.isOnlineMeeting = true;
-event.onlineMeetingProvider = OnlineMeetingProviderType.TEAMS_FOR_BUSINESS;
+event.setIsOnlineMeeting(true);
+event.setOnlineMeetingProvider(OnlineMeetingProviderType.TeamsForBusiness);
+Event result = graphClient.me().events().byEventId("{event-id}").patch(event);
 
-graphClient.me().events("AAMkADAGu0AABIGYDaAAA=")
-	.buildRequest()
-	.patch(event);
 
 ```

@@ -3,8 +3,9 @@ title: "Get deviceLocalCredentialInfo"
 description: "Retrieve the properties of a deviceLocalCredential for a specified device object."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get deviceLocalCredentialInfo
@@ -20,9 +21,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "devicelocalcredentialinfo_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/devicelocalcredentialinfo-get-permissions.md)]
 
-To access the actual passwords on the device by using the `$select=credentials` query parameter, the app must be assigned the DeviceLocalCredential.Read.All permission. DeviceLocalCredential.ReadBasic.All is insufficient.
+To access the actual passwords on the device, done by including `$select=credentials` as part of the query parameters, the app must be assigned the *DeviceLocalCredential.Read.All* permission and *DeviceLocalCredential.ReadBasic.All* is insufficient.
 
-[!INCLUDE [rbac-device-local-credentials-apis-read](../includes/rbac-for-apis/rbac-device-local-credentials-apis-read.md)]
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Cloud Device Administrator
+> - Helpdesk Administrator
+> - Intune Service Administrator
+> - Security Administrator
+> - Security Reader
+> - Global Reader
+> 
+> To access the actual passwords on the device by using the `$select=credentials` query parameter, the following least privileged roles are supported:
+> - Cloud Device Administrator
+> - Intune Service Administrator
 
 ## HTTP request
 To get the device local credential for a specific device object:
@@ -57,10 +69,11 @@ If successful, this method returns a `200 OK` response code and a [deviceLocalCr
 ### Example 1: Get a device's local administrator account credential info
 
 #### Request
-The following is an example of the request. This example doesn't return the **credentials** property.
+The following example shows a request. This example doesn't return the **credentials** property.
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->
@@ -73,7 +86,7 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -100,10 +113,11 @@ Content-type: application/json
 ### Example 2: Get the device local administrator account credential info with the **credentials** property
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get_credentials",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->
@@ -115,7 +129,7 @@ ocp-client-version: "1.2"
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -2,9 +2,10 @@
 title: "wiredNetworkAuthenticationType enum type"
 description: "Wired Network Authentication Type Settings."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # wiredNetworkAuthenticationType enum type

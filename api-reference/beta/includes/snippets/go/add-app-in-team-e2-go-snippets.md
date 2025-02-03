@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewTeamsAppInstallation()
 consentedPermissionSet := graphmodels.NewTeamsAppPermissionSet()
@@ -37,10 +37,11 @@ resourceSpecificPermissions := []graphmodels.TeamsAppResourceSpecificPermissiona
 consentedPermissionSet.SetResourceSpecificPermissions(resourceSpecificPermissions)
 requestBody.SetConsentedPermissionSet(consentedPermissionSet)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785", 
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785", 
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 installedApps, err := graphClient.Teams().ByTeamId("team-id").InstalledApps().Post(context.Background(), requestBody, nil)
 
 

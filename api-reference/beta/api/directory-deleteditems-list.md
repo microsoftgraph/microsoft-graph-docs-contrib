@@ -1,9 +1,10 @@
 ---
 title: "List deletedItems (directory objects)"
+ms.date: 11/14/2024
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -13,7 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of recently deleted directory objects. Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md), [administrative unit](../resources/administrativeunit.md), and [user](../resources/user.md) resources.
+Retrieve a list of recently deleted directory objects from [deleted items](../resources/directory.md). The following types are supported:
+- [administrativeUnit](../resources/administrativeunit.md)
+- [application](../resources/application.md)
+- [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md
+- [externalUserProfile](../resources/externaluserprofile.md)
+- [group](../resources/group.md)
+- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
+- [servicePrincipal](../resources/serviceprincipal.md)
+- [user](../resources/user.md)
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 
@@ -27,9 +37,13 @@ The following table shows the least privileged permission or permissions require
 |:-|:-|:-|:-|
 | [administrativeUnit](../resources/administrativeunit.md) | AdministrativeUnit.Read.All | Not supported. | AdministrativeUnit.Read.All |
 | [application](../resources/application.md) | Application.Read.All | Not supported. | Application.Read.All |
+| [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.Read.All | Not supported | ExternalUserProfile.Read.All |
 | [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
+| [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.Read.All | Not supported | PendingExternalUserProfile.Read.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](../resources/user.md) | User.Read.All | Not supported. | User.Read.All |
+| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -41,6 +55,10 @@ GET /directory/deleteditems/microsoft.graph.servicePrincipal
 GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.administrativeUnit
+GET /directory/deletedItems/microsoft.graph.externalUserProfile
+GET /directory/deletedItems/microsoft.graph.pendingExternalUserProfile
+GET /directory/deletedItems/microsoft.graph.certificateBasedAuthPki
+GET /directory/deletedItems/microsoft.graph.certificateAuthorityDetail
 ```
 
 The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
@@ -58,9 +76,9 @@ ConsistencyLevel: eventual
 
 This example requires the **ConsistencyLevel** header because the `$orderby` and `$count` query parameters are used in the query.
 
-### Examples using the $orderby OData query parameter
+### $orderby OData query parameter examples
 
-The `$orderby` OData query parameter is supported on the **deletedDateTime**, **displayName**, and **userPrincipalName** properties of the deleted object types. On the **deletedDateTime** property, the query requires adding the [advanced query parameters](/graph/aad-advanced-queries) (**ConsistencyLevel** header set to `true` and `$count=true` query string).
+The `$orderby` OData query parameter is supported on the **deletedDateTime**, **displayName**, and **userPrincipalName** properties of the deleted object types. On the **deletedDateTime** property, the query requires adding the [advanced query parameters](/graph/aad-advanced-queries) (**ConsistencyLevel** header set to `eventual` and `$count=true` query string).
 
 | OData cast | Properties supporting $orderby | Example |
 | :--- | :--- | :--- |

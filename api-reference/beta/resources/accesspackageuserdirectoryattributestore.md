@@ -3,8 +3,9 @@ title: "accessPackageUserDirectoryAttributeStore resource type"
 description: "The type used for objects that expose the Microsoft Entra ID end system to which the user configured values will be saved to."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # accessPackageUserDirectoryAttributeStore resource type
@@ -22,7 +23,8 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageUserDirectoryAttributeStore",

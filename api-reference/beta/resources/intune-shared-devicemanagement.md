@@ -1,10 +1,11 @@
 ---
 title: "deviceManagement resource type"
 description: "The deviceManagement resource represents a container whose contents vary according to workflow, including:  "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jaiprakashmb"
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # deviceManagement resource type

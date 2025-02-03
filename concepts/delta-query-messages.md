@@ -2,9 +2,10 @@
 title: "Get incremental changes to messages in a folder"
 description: "Use delta query to track changes of messages in a folder hierarchy by tracking each folder individually. Example shows how to synchronize messages in a folder."
 author: "SuryaLashmiS"
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/07/2024
 ---
 
 # Get incremental changes to messages in a folder
@@ -156,7 +157,7 @@ The `@odata.nextLink` URL indicates there are more messages in the folder to get
       "sender": {
         "emailAddress": {
           "name": "Dana Swope",
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       },
       "id": "AAMkADNkNAAASq35xAAA="
@@ -169,7 +170,7 @@ The `@odata.nextLink` URL indicates there are more messages in the folder to get
       "sender": {
         "emailAddress": {
           "name": "Samantha Booth",
-          "address": "samanthab@contoso.onmicrosoft.com"
+          "address": "samanthab@contoso.com"
         }
       },
       "id": "AQMkADNkNAAAVRMKAAAAA=="
@@ -232,7 +233,7 @@ more messages to get from the folder.
       "sender": {
         "emailAddress": {
           "name": "Randi Welch",
-          "address": "randiw@contoso.onmicrosoft.com"
+          "address": "randiw@contoso.com"
         }
       },
       "id": "AQMkADNkNAAAgWJAAAA"
@@ -336,7 +337,7 @@ The response contains a `@odata.deltaLink`. This indicates that all changes in t
       "sender": {
         "emailAddress": {
           "name": "Dana Swope",
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       },
       "id": "AAMkADNkNAAASq35xAAA="
@@ -550,7 +551,7 @@ The response contains a `@odata.deltaLink`. This indicates that all changes in t
     ]
 }
 ```
-## See also
+## Related content
 
 - [Microsoft Graph delta query](delta-query-overview.md)
 - [Get incremental changes to events in a calendar view](delta-query-events.md)

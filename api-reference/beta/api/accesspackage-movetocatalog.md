@@ -1,10 +1,11 @@
 ---
 title: "accessPackage: moveToCatalog"
-description: "Allows callers to move an access package from one catalog to the another."
+description: "Allows callers to move an access package from one catalog to the other."
 author: "fsheik"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # accessPackage: moveToCatalog
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackage_movetocatalog" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-movetocatalog-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-access-package-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-manager-apis-write.md)]
 
 ## HTTP request
 
@@ -45,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|catalogId|String|ID of the catalog to which the access package will be moved.|
+|catalogId|String|ID of the catalog to which the access package is moved.|
 
 
 
@@ -56,7 +59,7 @@ If successful, this action returns a `200 OK` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

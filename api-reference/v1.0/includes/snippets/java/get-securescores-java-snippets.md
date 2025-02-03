@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SecureScoreCollectionPage secureScores = graphClient.security().secureScores()
-	.buildRequest()
-	.top(1)
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+SecureScoreCollectionResponse result = graphClient.security().secureScores().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.top = 1;
+});
+
 
 ```

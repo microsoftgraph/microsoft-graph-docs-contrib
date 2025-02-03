@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: CreateAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # CreateAction resource type
@@ -19,6 +19,9 @@ The presence of the **CreateAction** resource on an [**itemActivity**][activity]
 **Note**: While this resource is empty today, in future API revisions it may be populated with additional properties.
 
 [activity]: itemactivity.md
+
+## Relationships
+None.
 
 ## JSON representation
 

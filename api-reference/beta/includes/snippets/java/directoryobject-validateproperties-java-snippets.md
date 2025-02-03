@@ -4,25 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String entityType = "Group";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String displayName = "Myprefix_test_mysuffix";
+com.microsoft.graph.beta.directoryobjects.validateproperties.ValidatePropertiesPostRequestBody validatePropertiesPostRequestBody = new com.microsoft.graph.beta.directoryobjects.validateproperties.ValidatePropertiesPostRequestBody();
+validatePropertiesPostRequestBody.setEntityType("Group");
+validatePropertiesPostRequestBody.setDisplayName("Myprefix_test_mysuffix");
+validatePropertiesPostRequestBody.setMailNickname("Myprefix_test_mysuffix");
+validatePropertiesPostRequestBody.setOnBehalfOfUserId(UUID.fromString("onBehalfOfUserId-value"));
+graphClient.directoryObjects().validateProperties().post(validatePropertiesPostRequestBody);
 
-String mailNickname = "Myprefix_test_mysuffix";
-
-UUID onBehalfOfUserId = UUID.fromString("onBehalfOfUserId-value");
-
-graphClient.directoryObjects()
-	.validateProperties(DirectoryObjectValidatePropertiesParameterSet
-		.newBuilder()
-		.withEntityType(entityType)
-		.withDisplayName(displayName)
-		.withMailNickname(mailNickname)
-		.withOnBehalfOfUserId(onBehalfOfUserId)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

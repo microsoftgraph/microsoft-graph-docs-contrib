@@ -3,8 +3,9 @@ title: "Remove application owner"
 description: "Remove an owner from an application."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Remove application owner

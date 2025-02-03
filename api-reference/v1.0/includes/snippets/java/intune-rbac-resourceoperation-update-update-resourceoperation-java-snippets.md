@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ResourceOperation resourceOperation = new ResourceOperation();
-resourceOperation.resourceName = "Resource Name value";
-resourceOperation.actionName = "Action Name value";
-resourceOperation.description = "Description value";
+resourceOperation.setOdataType("#microsoft.graph.resourceOperation");
+resourceOperation.setResourceName("Resource Name value");
+resourceOperation.setActionName("Action Name value");
+resourceOperation.setDescription("Description value");
+ResourceOperation result = graphClient.deviceManagement().resourceOperations().byResourceOperationId("{resourceOperation-id}").patch(resourceOperation);
 
-graphClient.deviceManagement().resourceOperations("{resourceOperationId}")
-	.buildRequest()
-	.patch(resourceOperation);
 
 ```

@@ -3,8 +3,9 @@ title: "Get plannerRoster"
 description: "Read the properties and relationships of a plannerRoster object."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get plannerRoster

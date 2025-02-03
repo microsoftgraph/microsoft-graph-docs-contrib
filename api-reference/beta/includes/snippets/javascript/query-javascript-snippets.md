@@ -19,6 +19,7 @@ const searchResponse = {
       contentSources: [
         '/external/connections/connectionfriendlyname'
       ],
+      region: 'US',
       query: {
         queryString: 'contoso product'
       },

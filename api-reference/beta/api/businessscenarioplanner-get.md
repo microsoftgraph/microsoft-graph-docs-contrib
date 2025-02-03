@@ -3,8 +3,9 @@ title: "Get businessScenarioPlanner"
 description: "Read the properties and relationships of a businessScenarioPlanner object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get businessScenarioPlanner
@@ -56,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [businessScena
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

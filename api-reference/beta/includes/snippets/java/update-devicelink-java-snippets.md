@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DeviceLink deviceLink = new DeviceLink();
-deviceLink.name = "Backup Link";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.networkAccess().connectivity().branches("{branchSiteId}").deviceLinks("{deviceLinkId}")
-	.buildRequest()
-	.patch(deviceLink);
+com.microsoft.graph.beta.models.networkaccess.DeviceLink deviceLink = new com.microsoft.graph.beta.models.networkaccess.DeviceLink();
+deviceLink.setName("Backup Link");
+com.microsoft.graph.models.networkaccess.DeviceLink result = graphClient.networkAccess().connectivity().branches().byBranchSiteId("{branchSite-id}").deviceLinks().byDeviceLinkId("{deviceLink-id}").patch(deviceLink);
+
 
 ```

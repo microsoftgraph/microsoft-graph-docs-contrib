@@ -4,8 +4,9 @@ description: "RBAC role management resource"
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
+ms.date: 03/06/2024
 ---
 
 # roleManagement resource type

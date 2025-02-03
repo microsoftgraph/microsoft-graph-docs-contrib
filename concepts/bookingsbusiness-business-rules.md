@@ -3,8 +3,9 @@ title: "Business rules to follow when creating or updating Bookings appointments
 description: "Follow these business rules for business-level settings and service-level settings when using the create or update Bookings appointments APIs in Microsoft Graph."
 ms.localizationpriority: medium
 author: kwekua
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Business rules for Bookings appointments
@@ -62,7 +63,7 @@ This is the extra time needed for an appointment before a following appointment.
 
 This is the extra time needed for an appointment after a previous appointment. In the staff member calendar, the appointment is of duration "appointment slot time" + "post buffer time".
 
-## See also
+## Related content
 
 - [Microsoft Bookings API overview](booking-concept-overview.md)
 - [Microsoft Bookings API in Microsoft Graph](/graph/api/resources/booking-api-overview)

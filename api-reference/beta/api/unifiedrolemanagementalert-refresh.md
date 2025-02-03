@@ -3,8 +3,9 @@ title: "unifiedRoleManagementAlert: refresh"
 description: "Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 07/19/2024
 ---
 
 # unifiedRoleManagementAlert: refresh
@@ -64,7 +65,7 @@ For refreshing a single alert, do not specify a request body.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code with a **Location** header which specifies the URL for polling the operation status.
+If successful, this action returns a `202 Accepted` response code with a **Location** header which specifies the URL for polling the operation status via the [Get longRunningOperation API](../api/longrunningoperation-get.md)
 
 ## Examples
 
@@ -72,7 +73,7 @@ If successful, this action returns a `202 Accepted` response code with a **Locat
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -140,7 +141,7 @@ Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAler
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

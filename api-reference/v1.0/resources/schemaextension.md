@@ -3,8 +3,9 @@ title: "schemaExtension resource type (schema extensions)"
 description: "Schema extensions allow you to define a schema to extend and add strongly-typed custom data to a resource type. The custom data appears as a complex type on the extended resource. "
 ms.localizationpriority: high
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 
 # schemaExtension resource type (schema extensions)
@@ -16,7 +17,6 @@ Schema extensions allow you to define a schema to extend and add strongly-typed 
 + [user](/graph/api/resources/user)
 + [group](/graph/api/resources/group)
 + [administrativeUnit](/graph/api/resources/administrativeunit)
-+ [application](/graph/api/resources/application)
 + [contact](/graph/api/resources/contact)
 + [device](/graph/api/resources/device)
 + [event](/graph/api/resources/event) (for both user and group calendars)
@@ -65,7 +65,7 @@ The owner app can move the extension through different states of a lifecycle, us
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -86,7 +86,7 @@ Here is a JSON representation of the resource.
 
 ```
 
-## See also
+## Related content
 
 + [Add custom properties to resources using extensions](/graph/extensibility-overview)
 + [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)

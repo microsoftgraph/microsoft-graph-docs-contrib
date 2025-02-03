@@ -3,8 +3,9 @@ title: "cloudPcLaunchInfo resource type"
 description: "Contains the information to connect a Cloud PC."
 author: "andrewku0409"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # cloudPcLaunchInfo resource type
@@ -27,7 +28,7 @@ Contains the information to connect a [cloudPC](../resources/cloudpc.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcLaunchInfo"

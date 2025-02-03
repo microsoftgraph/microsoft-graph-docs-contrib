@@ -3,8 +3,9 @@ title: "verifiableCredentialRequirementStatus resource type"
 description: "Represents the status of processing the verifiable credential requirement for an access package request."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # verifiableCredentialRequirementStatus resource type
@@ -21,7 +22,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.verifiableCredentialRequirementStatus"

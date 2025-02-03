@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Agreement agreement = new Agreement();
-agreement.displayName = "All Contoso volunteers - Terms of use";
-agreement.isViewingBeforeAcceptanceRequired = true;
+agreement.setDisplayName("All Contoso volunteers - Terms of use");
+agreement.setIsViewingBeforeAcceptanceRequired(true);
+Agreement result = graphClient.identityGovernance().termsOfUse().agreements().byAgreementId("{agreement-id}").patch(agreement);
 
-graphClient.identityGovernance().termsOfUse().agreements("0ec9f6a6-159d-4dd8-a563-1f0b5935e80b")
-	.buildRequest()
-	.patch(agreement);
 
 ```

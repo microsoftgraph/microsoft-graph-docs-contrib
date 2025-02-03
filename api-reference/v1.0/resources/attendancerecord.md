@@ -3,8 +3,9 @@ title: "attendanceRecord resource type"
 description: "Contains information associated with an attendance record in a meetingAttendanceReport."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 10/21/2024
 ---
 
 # attendanceRecord resource type
@@ -17,7 +18,7 @@ Contains information associated with an attendance record in a [meetingAttendanc
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List attendanceRecords](../api/attendancerecord-list.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and their properties.|
+|[List](../api/attendancerecord-list.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and their properties.|
 
 ## Properties
 
@@ -31,7 +32,7 @@ Contains information associated with an attendance record in a [meetingAttendanc
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

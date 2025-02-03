@@ -3,8 +3,9 @@ title: "siteSource resource type"
 description: "The container for a site associated with a custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # siteSource resource type
@@ -34,7 +35,7 @@ None.
 |site|[site](../resources/site.md)|The SharePoint site associated with the **siteSource**.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

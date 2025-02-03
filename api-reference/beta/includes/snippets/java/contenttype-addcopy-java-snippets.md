@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String contentType = "https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.sites("{site-id}").lists("{list-id}").contentTypes()
-	.addCopy(ContentTypeAddCopyParameterSet
-		.newBuilder()
-		.withContentType(contentType)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.sites.item.lists.item.contenttypes.addcopy.AddCopyPostRequestBody addCopyPostRequestBody = new com.microsoft.graph.beta.sites.item.lists.item.contenttypes.addcopy.AddCopyPostRequestBody();
+addCopyPostRequestBody.setContentType("https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101");
+var result = graphClient.sites().bySiteId("{site-id}").lists().byListId("{list-id}").contentTypes().addCopy().post(addCopyPostRequestBody);
+
 
 ```

@@ -3,8 +3,9 @@ title: "Create linkedResource_v2"
 description: "Create a new linkedResource_v2 object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create linkedResource_v2 (deprecated)

@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String groupId = "ffffffff-ffff-ffff-ffff-ffffffffffff";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.groupLifecyclePolicies()
-	.renewGroup(GroupLifecyclePolicyRenewGroupParameterSet
-		.newBuilder()
-		.withGroupId(groupId)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.grouplifecyclepolicies.renewgroup.RenewGroupPostRequestBody renewGroupPostRequestBody = new com.microsoft.graph.beta.grouplifecyclepolicies.renewgroup.RenewGroupPostRequestBody();
+renewGroupPostRequestBody.setGroupId("ffffffff-ffff-ffff-ffff-ffffffffffff");
+var result = graphClient.groupLifecyclePolicies().renewGroup().post(renewGroupPostRequestBody);
+
 
 ```

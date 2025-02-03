@@ -19,12 +19,12 @@ var requestBody = new ServicePrincipal
 			{
 				"User",
 			},
+			Description = "User",
 			DisplayName = "User",
 			Id = Guid.Parse("8774f594-1d59-4279-b9d9-59ef09a23530"),
 			IsEnabled = true,
-			Description = "User",
-			Value = null,
 			Origin = "Application",
+			Value = null,
 		},
 		new AppRole
 		{
@@ -32,12 +32,12 @@ var requestBody = new ServicePrincipal
 			{
 				"User",
 			},
+			Description = "msiam_access",
 			DisplayName = "msiam_access",
 			Id = Guid.Parse("e7f1a7f3-9eda-48e0-9963-bd67bf531afd"),
 			IsEnabled = true,
-			Description = "msiam_access",
-			Value = null,
 			Origin = "Application",
+			Value = null,
 		},
 		new AppRole
 		{

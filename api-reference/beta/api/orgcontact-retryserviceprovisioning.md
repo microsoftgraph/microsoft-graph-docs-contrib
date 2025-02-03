@@ -3,8 +3,9 @@ title: "orgContact: retryServiceProvisioning"
 description: "Retries orgContact service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/06/2024
 ---
 
 # orgContact: retryServiceProvisioning
@@ -24,6 +25,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "orgcontact_retryserviceprovisioning" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-retryserviceprovisioning-permissions.md)]
 
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Directory Writers
+> - Intune Administrator
+> - User Administrator
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +46,7 @@ POST /contacts/{id}/retryServiceProvisioning
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

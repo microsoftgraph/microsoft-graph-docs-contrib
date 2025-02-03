@@ -4,25 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Contact contact = new Contact();
-LinkedList<TypedEmailAddress> emailAddressesList = new LinkedList<TypedEmailAddress>();
-TypedEmailAddress emailAddresses = new TypedEmailAddress();
-emailAddresses.type = EmailType.PERSONAL;
-emailAddresses.name = "Pavel Bansky";
-emailAddresses.address = "pavelb@adatum.onmicrosoft.com";
-emailAddressesList.add(emailAddresses);
-TypedEmailAddress emailAddresses1 = new TypedEmailAddress();
-emailAddresses1.address = "pavelb@fabrikam.onmicrosoft.com";
-emailAddresses1.name = "Pavel Bansky";
-emailAddresses1.type = EmailType.OTHER;
-emailAddresses1.otherLabel = "Volunteer work";
-emailAddressesList.add(emailAddresses1);
-contact.emailAddresses = emailAddressesList;
+LinkedList<TypedEmailAddress> emailAddresses = new LinkedList<TypedEmailAddress>();
+TypedEmailAddress typedEmailAddress = new TypedEmailAddress();
+typedEmailAddress.setType(EmailType.Personal);
+typedEmailAddress.setName("Pavel Bansky");
+typedEmailAddress.setAddress("pavelb@contoso.com");
+emailAddresses.add(typedEmailAddress);
+TypedEmailAddress typedEmailAddress1 = new TypedEmailAddress();
+typedEmailAddress1.setAddress("pavelb@contoso.com");
+typedEmailAddress1.setName("Pavel Bansky");
+typedEmailAddress1.setType(EmailType.Other);
+typedEmailAddress1.setOtherLabel("Volunteer work");
+emailAddresses.add(typedEmailAddress1);
+contact.setEmailAddresses(emailAddresses);
+Contact result = graphClient.me().contacts().byContactId("{contact-id}").patch(contact);
 
-graphClient.me().contacts("AAMkADh6v5AAAvgTCEAAA=")
-	.buildRequest()
-	.patch(contact);
 
 ```

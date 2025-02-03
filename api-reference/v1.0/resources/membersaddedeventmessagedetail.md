@@ -3,8 +3,9 @@ title: "membersAddedEventMessageDetail resource type"
 description: "Represents the details of an event message about members added."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # membersAddedEventMessageDetail resource type
@@ -28,7 +29,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |visibleHistoryStartDateTime|DateTimeOffset|The timestamp that denotes how far back a conversation's history is shared with the conversation members.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.membersAddedEventMessageDetail",
@@ -51,6 +52,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about **members** added](/graph/system-messages/#members-added)
 - For more information about other types of events, see [System messages](/graph/system-messages).

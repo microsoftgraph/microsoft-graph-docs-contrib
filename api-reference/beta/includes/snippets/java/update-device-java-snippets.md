@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Device device = new Device();
-device.accountEnabled = false;
+device.setAccountEnabled(false);
+Device result = graphClient.devices().byDeviceId("{device-id}").patch(device);
 
-graphClient.devices("7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac")
-	.buildRequest()
-	.patch(device);
 
 ```

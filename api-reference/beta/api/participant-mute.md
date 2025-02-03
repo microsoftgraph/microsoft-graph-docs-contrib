@@ -3,8 +3,9 @@ title: "participant: mute"
 description: "Mute a specific participant in the call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # participant: mute

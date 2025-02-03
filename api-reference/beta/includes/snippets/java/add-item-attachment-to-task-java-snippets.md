@@ -4,28 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ItemAttachment attachment = new ItemAttachment();
-attachment.name = "Holiday event";
+attachment.setOdataType("#microsoft.graph.itemAttachment");
+attachment.setName("Holiday event");
 Event item = new Event();
-item.subject = "Discuss gifts for children";
+item.setOdataType("microsoft.graph.event");
+item.setSubject("Discuss gifts for children");
 ItemBody body = new ItemBody();
-body.contentType = BodyType.HTML;
-body.content = "Let's look for funding!";
-item.body = body;
+body.setContentType(BodyType.Html);
+body.setContent("Let's look for funding!");
+item.setBody(body);
 DateTimeTimeZone start = new DateTimeTimeZone();
-start.dateTime = "2020-01-12T18:00:00";
-start.timeZone = "Pacific Standard Time";
-item.start = start;
+start.setDateTime("2020-01-12T18:00:00");
+start.setTimeZone("Pacific Standard Time");
+item.setStart(start);
 DateTimeTimeZone end = new DateTimeTimeZone();
-end.dateTime = "2020-01-12T19:00:00";
-end.timeZone = "Pacific Standard Time";
-item.end = end;
-attachment.item = item;
+end.setDateTime("2020-01-12T19:00:00");
+end.setTimeZone("Pacific Standard Time");
+item.setEnd(end);
+attachment.setItem(item);
+Attachment result = graphClient.me().outlook().tasks().byOutlookTaskId("{outlookTask-id}").attachments().post(attachment);
 
-graphClient.me().outlook().tasks("AAMkADAAAANXbdnAAA=").attachments()
-	.buildRequest()
-	.post(attachment);
 
 ```

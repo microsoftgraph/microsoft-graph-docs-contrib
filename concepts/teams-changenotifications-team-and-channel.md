@@ -3,8 +3,9 @@ title: "Get change notifications for teams and channels using Microsoft Graph"
 description: "Learn how to get notifications for changes (create, update, and delete) for teams and channels using Microsoft Graph APIs."
 author: "anandab"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Get change notifications for teams and channels using Microsoft Graph
@@ -323,7 +324,7 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-## See also
+## Related content
 
 - [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)

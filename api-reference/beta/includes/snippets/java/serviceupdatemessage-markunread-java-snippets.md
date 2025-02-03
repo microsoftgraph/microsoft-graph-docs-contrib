@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> messageIdsList = new LinkedList<String>();
-messageIdsList.add("MC172851");
-messageIdsList.add("MC167983");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.admin().serviceAnnouncement().messages()
-	.markUnread(ServiceUpdateMessageMarkUnreadParameterSet
-		.newBuilder()
-		.withMessageIds(messageIdsList)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.admin.serviceannouncement.messages.markunread.MarkUnreadPostRequestBody markUnreadPostRequestBody = new com.microsoft.graph.beta.admin.serviceannouncement.messages.markunread.MarkUnreadPostRequestBody();
+LinkedList<String> messageIds = new LinkedList<String>();
+messageIds.add("MC172851");
+messageIds.add("MC167983");
+markUnreadPostRequestBody.setMessageIds(messageIds);
+var result = graphClient.admin().serviceAnnouncement().messages().markUnread().post(markUnreadPostRequestBody);
+
 
 ```

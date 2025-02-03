@@ -3,8 +3,9 @@ title: "educationTeacher resource type"
 description: "Additional information added to an educationUser that is present when the primaryRole of a user is `teacher`."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # educationTeacher resource type
@@ -25,9 +26,12 @@ Additional information added to an [educationUser](educationuser.md) that is pre
 | externalId    | String | Id of the Teacher in external source system. |
 | teacherNumber | String | Teacher number.                              |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

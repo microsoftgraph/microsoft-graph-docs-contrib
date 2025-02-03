@@ -4,18 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-YearTimePeriodDefinition yearTimePeriodDefinition = new YearTimePeriodDefinition();
-yearTimePeriodDefinition.displayName = "Fiscal Year 2022";
-yearTimePeriodDefinition.endDate = new DateOnly(1900,1,1);
-yearTimePeriodDefinition.startDate = new DateOnly(1900,1,1);
-YearReferenceValue year = new YearReferenceValue();
-year.code = "2022";
-yearTimePeriodDefinition.year = year;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.external().industryData().years()
-	.buildRequest()
-	.post(yearTimePeriodDefinition);
+com.microsoft.graph.beta.models.industrydata.YearTimePeriodDefinition yearTimePeriodDefinition = new com.microsoft.graph.beta.models.industrydata.YearTimePeriodDefinition();
+yearTimePeriodDefinition.setDisplayName("Fiscal Year 2022");
+LocalDate endDate = LocalDate.parse("2023-06-15");
+yearTimePeriodDefinition.setEndDate(endDate);
+LocalDate startDate = LocalDate.parse("2022-09-01");
+yearTimePeriodDefinition.setStartDate(startDate);
+com.microsoft.graph.beta.models.industrydata.YearReferenceValue year = new com.microsoft.graph.beta.models.industrydata.YearReferenceValue();
+year.setCode("2022");
+yearTimePeriodDefinition.setYear(year);
+com.microsoft.graph.models.industrydata.YearTimePeriodDefinition result = graphClient.external().industryData().years().post(yearTimePeriodDefinition);
+
 
 ```

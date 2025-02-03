@@ -3,8 +3,9 @@ title: "List threatAssessmentRequests"
 description: "Retrieve a list of threatassessmentrequest objects."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # List threatAssessmentRequests
@@ -144,7 +145,7 @@ Content-type: application/json
       "category": "spam",
       "status": "pending",
       "requestSource": "administrator",
-      "recipientEmail": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com",
+      "recipientEmail": "tifc@contoso.com",
       "destinationRoutingReason": "notJunk",
       "messageUri": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
       "createdBy": {
@@ -163,7 +164,7 @@ Content-type: application/json
       "category": "malware",
       "status": "completed",
       "requestSource": "administrator",
-      "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+      "recipientEmail": "tifc@contoso.com",
       "destinationRoutingReason": "notJunk",
       "contentData": "",
       "createdBy": {

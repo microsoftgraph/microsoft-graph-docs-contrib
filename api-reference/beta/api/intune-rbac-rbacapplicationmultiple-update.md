@@ -2,9 +2,10 @@
 title: "Update rbacApplicationMultiple"
 description: "Update the properties of a rbacApplicationMultiple object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update rbacApplicationMultiple
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +51,6 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String||
 
 
 
@@ -74,10 +76,9 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 114
+Content-Length: 65
 
 {
-  "@odata.type": "#microsoft.graph.rbacApplicationMultiple",
-  "id": "ee4797e5-97e5-ee47-e597-47eee59747ee"
+  "@odata.type": "#microsoft.graph.rbacApplicationMultiple"
 }
 ```

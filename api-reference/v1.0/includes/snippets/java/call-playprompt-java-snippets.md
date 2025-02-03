@@ -4,26 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<Prompt> promptsList = new LinkedList<Prompt>();
-MediaPrompt prompts = new MediaPrompt();
+com.microsoft.graph.communications.calls.item.playprompt.PlayPromptPostRequestBody playPromptPostRequestBody = new com.microsoft.graph.communications.calls.item.playprompt.PlayPromptPostRequestBody();
+playPromptPostRequestBody.setClientContext("d45324c1-fcb5-430a-902c-f20af696537c");
+LinkedList<Prompt> prompts = new LinkedList<Prompt>();
+MediaPrompt prompt = new MediaPrompt();
+prompt.setOdataType("#microsoft.graph.mediaPrompt");
 MediaInfo mediaInfo = new MediaInfo();
-mediaInfo.uri = "https://cdn.contoso.com/beep.wav";
-mediaInfo.resourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E";
-prompts.mediaInfo = mediaInfo;
+mediaInfo.setOdataType("#microsoft.graph.mediaInfo");
+mediaInfo.setUri("https://cdn.contoso.com/beep.wav");
+mediaInfo.setResourceId("1D6DE2D4-CD51-4309-8DAA-70768651088E");
+prompt.setMediaInfo(mediaInfo);
+prompts.add(prompt);
+playPromptPostRequestBody.setPrompts(prompts);
+var result = graphClient.communications().calls().byCallId("{call-id}").playPrompt().post(playPromptPostRequestBody);
 
-promptsList.add(prompts);
-
-graphClient.communications().calls("57dab8b1-894c-409a-b240-bd8beae78896")
-	.playPrompt(CallPlayPromptParameterSet
-		.newBuilder()
-		.withPrompts(promptsList)
-		.withClientContext(clientContext)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

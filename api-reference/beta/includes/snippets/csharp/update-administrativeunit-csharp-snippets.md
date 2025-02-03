@@ -12,18 +12,9 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new AdministrativeUnit
 {
 	DisplayName = "Executive Division",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"membershipType" , "Dynamic"
-		},
-		{
-			"membershipRule" , "(user.country -eq \"United States\")"
-		},
-		{
-			"membershipRuleProcessingState" , "On"
-		},
-	},
+	MembershipType = "Dynamic",
+	MembershipRule = "(user.country -eq \"United States\")",
+	MembershipRuleProcessingState = "On",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -3,8 +3,9 @@ title: "ruleDestination resource type"
 description: "Represents the list of potential destinations and destination types that the user could be accessing in the context of a network filtering policy, including IPs and FQDNs or URLs."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # ruleDestination resource type
@@ -30,7 +31,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.ruleDestination"

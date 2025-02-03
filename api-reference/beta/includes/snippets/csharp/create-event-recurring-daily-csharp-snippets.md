@@ -37,7 +37,7 @@ var requestBody = new Event
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "AlexW@contoso.OnMicrosoft.com",
+				Address = "AlexW@contoso.com",
 				Name = "Alex Wilbur",
 			},
 			Type = AttendeeType.Required,

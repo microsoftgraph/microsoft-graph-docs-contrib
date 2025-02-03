@@ -3,8 +3,9 @@ title: "List exportJobs"
 description: "Get a list of goalsExportJob objects and their properties in a Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "employee-goals"
+ms.subservice: "viva-goals"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List exportJobs
@@ -221,7 +222,7 @@ GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-goalsexportjob3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

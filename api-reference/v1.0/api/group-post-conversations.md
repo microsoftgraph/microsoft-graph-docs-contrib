@@ -1,10 +1,11 @@
 ---
 title: "Create conversation"
 description: "Create a new conversation by including a thread and a post. "
-author: "Jordanndahl"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create conversation
@@ -84,7 +85,7 @@ Content-type: application/json
                         {
                             "emailAddress": {
                                 "name": "Adele Vance",
-                                "address": "AdeleV@contoso.onmicrosoft.com"
+                                "address": "AdeleV@contoso.com"
                             }
                         }
                     ]

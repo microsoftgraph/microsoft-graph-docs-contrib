@@ -3,8 +3,9 @@ author: spgraph-docs-team
 title: Access shared items
 ms.localizationpriority: medium
 description: "Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: apiPageType
+ms.date: 03/13/2024
 ---
 # Accessing shared DriveItems
 
@@ -80,7 +81,7 @@ If successful, this method returns a `200 OK` response code and a [sharedDriveIt
 
 ### Request
 
-Here's an example of the request to retrieve a shared item:
+The following example shows a request to retrieve a shared item:
 
 
 # [HTTP](#tab/http)
@@ -126,7 +127,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.sharedDriveItem" } -->
 

@@ -1,11 +1,10 @@
 ---
 author: "ananmishr"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: cloud-communications
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
-<!-- this file is auto-generated don't edit it manually! -->
 
 | Request type | Limit per app for all tenants |
 | ------------ | ----------------------------- |

@@ -3,8 +3,9 @@ title: "singlePropertySchema resource type"
 description: "The schema of one property from the results of hunting query API"
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # singlePropertySchema resource type
@@ -21,8 +22,11 @@ The schema of one property in the results of running an [advanced hunting query]
 |name|String|The name of the property.|
 |type|String|The type of the property.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.singlePropertySchema"
@@ -30,7 +34,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "Name": "Timestamp",
-    "Type": "DateTime"
+    "name": "Timestamp",
+    "type": "DateTime"
 }
 ```

@@ -3,8 +3,9 @@ title: "tokenIssuancePolicy resource type"
 description: "Represents the policy to specify the characteristics of SAML tokens issued by Azure AD."
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # tokenIssuancePolicy resource type
@@ -25,12 +26,12 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List tokenIssuancePolicy](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of tokenIssuancePolicy objects. |
-| [Create tokenIssuancePolicy](../api/tokenissuancepolicy-post-tokenissuancepolicy.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Create a tokenIssuancePolicy object. |
-| [Get tokenIssuancePolicy](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of a tokenIssuancePolicy object. |
-| [Update tokenIssuancePolicy](../api/tokenissuancepolicy-update.md) | None | Update a tokenIssuancePolicy object. |
-| [Delete tokenIssuancePolicy](../api/tokenissuancepolicy-delete.md) | None | Delete a tokenIssuancePolicy object. |
-| [List appliesTo](../api/tokenissuancepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [List](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of tokenIssuancePolicy objects. |
+| [Create](../api/tokenissuancepolicy-post-tokenissuancepolicy.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Create a tokenIssuancePolicy object. |
+| [Get](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of a tokenIssuancePolicy object. |
+| [Update](../api/tokenissuancepolicy-update.md) | None | Update a tokenIssuancePolicy object. |
+| [Delete](../api/tokenissuancepolicy-delete.md) | None | Delete a tokenIssuancePolicy object. |
+| [List applied to applications](../api/tokenissuancepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
 
 ## Properties
 
@@ -73,7 +74,7 @@ The properties form the JSON object that represents a token issuance policy. Thi
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

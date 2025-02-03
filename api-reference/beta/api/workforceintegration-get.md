@@ -3,8 +3,9 @@ title: "Get workforceIntegration"
 description: "Retrieve the properties and relationships of workforceintegration object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Get workforceIntegration
@@ -55,7 +56,7 @@ If successful, this method returns a `200 OK` response code and the requested [w
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +104,7 @@ GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforcein
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

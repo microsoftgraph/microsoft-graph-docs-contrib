@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ChannelCollectionPage channels = graphClient.teams("6a720ba5-7373-463b-bc9f-4cd04b5c6742").channels()
-	.buildRequest()
-	.filter("membershipType eq 'shared'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ChannelCollectionResponse result = graphClient.teams().byTeamId("{team-id}").channels().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "membershipType eq 'shared'";
+});
+
 
 ```

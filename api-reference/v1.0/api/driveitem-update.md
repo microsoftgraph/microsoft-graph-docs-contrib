@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Update a file or folder
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Update the metadata for a driveItem by ID or path."
 doc_type: apiPageType
 ---
@@ -42,14 +42,14 @@ PATCH /users/{user-id}/drive/items/{item-id}
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
-| if-match      | String. If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
+| if-match      | String. If this request header is included and the eTag (or cTag) provided doesn't match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
 ## Request body
 
 In the request body, supply the values for properties that should be updated.
 
-Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
-For best performance your app should not include properties that haven't changed.
+Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values.
+For best performance, your app shouldn't include properties that haven't changed.
 
 ## Response
 
@@ -64,7 +64,7 @@ This example renames the DriveItem resource to "new-file-name.docx".
 <!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
-PATCH /me/drive/items/{item-id}
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{item-id}
 Content-type: application/json
 
 {

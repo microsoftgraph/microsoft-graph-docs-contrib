@@ -4,24 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceManagementExportJob deviceManagementExportJob = new DeviceManagementExportJob();
-deviceManagementExportJob.reportName = "Report Name value";
-deviceManagementExportJob.filter = "Filter value";
-LinkedList<String> selectList = new LinkedList<String>();
-selectList.add("Select value");
-deviceManagementExportJob.select = selectList;
-deviceManagementExportJob.format = DeviceManagementReportFileFormat.PDF;
-deviceManagementExportJob.snapshotId = "Snapshot Id value";
-deviceManagementExportJob.localizationType = DeviceManagementExportJobLocalizationType.REPLACE_LOCALIZABLE_VALUES;
-deviceManagementExportJob.status = DeviceManagementReportStatus.NOT_STARTED;
-deviceManagementExportJob.url = "Url value";
-deviceManagementExportJob.requestDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:03:07.1589002+00:00");
-deviceManagementExportJob.expirationDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:57:57.2481234+00:00");
+deviceManagementExportJob.setOdataType("#microsoft.graph.deviceManagementExportJob");
+deviceManagementExportJob.setReportName("Report Name value");
+deviceManagementExportJob.setFilter("Filter value");
+LinkedList<String> select = new LinkedList<String>();
+select.add("Select value");
+deviceManagementExportJob.setSelect(select);
+deviceManagementExportJob.setFormat(DeviceManagementReportFileFormat.Pdf);
+deviceManagementExportJob.setSnapshotId("Snapshot Id value");
+deviceManagementExportJob.setLocalizationType(DeviceManagementExportJobLocalizationType.ReplaceLocalizableValues);
+deviceManagementExportJob.setStatus(DeviceManagementReportStatus.NotStarted);
+deviceManagementExportJob.setUrl("Url value");
+OffsetDateTime requestDateTime = OffsetDateTime.parse("2017-01-01T00:03:07.1589002-08:00");
+deviceManagementExportJob.setRequestDateTime(requestDateTime);
+OffsetDateTime expirationDateTime = OffsetDateTime.parse("2016-12-31T23:57:57.2481234-08:00");
+deviceManagementExportJob.setExpirationDateTime(expirationDateTime);
+DeviceManagementExportJob result = graphClient.deviceManagement().reports().exportJobs().byDeviceManagementExportJobId("{deviceManagementExportJob-id}").patch(deviceManagementExportJob);
 
-graphClient.deviceManagement().reports().exportJobs("{deviceManagementExportJobId}")
-	.buildRequest()
-	.patch(deviceManagementExportJob);
 
 ```

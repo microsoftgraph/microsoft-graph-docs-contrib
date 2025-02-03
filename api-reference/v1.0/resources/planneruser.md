@@ -3,8 +3,9 @@ title: "plannerUser resource type"
 description: "Provides access to Planner resources for a user."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # plannerUser resource type
@@ -19,7 +20,7 @@ Provides access to Planner resources for a [user](user.md). It doesn't contain a
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List plans](../api/planneruser-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
-|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
+|[Get tasks for user](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -33,7 +34,7 @@ Provides access to Planner resources for a [user](user.md). It doesn't contain a
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

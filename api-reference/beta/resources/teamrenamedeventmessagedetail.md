@@ -3,8 +3,9 @@ title: "teamRenamedEventMessageDetail resource type"
 description: "Represents the details of an event message about a renamed team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamRenamedEventMessageDetail resource type
@@ -26,8 +27,11 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |teamDisplayName|String|The updated name of the team.|
 |teamId|String|Unique identifier of the team.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamRenamedEventMessageDetail",
@@ -46,6 +50,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about a renamed team](/graph/system-messages/#team-renamed)
 - For more information about other types of events, see [System messages](/graph/system-messages).

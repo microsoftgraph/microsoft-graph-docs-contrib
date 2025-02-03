@@ -2,20 +2,25 @@
 title: "List userExperienceAnalyticsRemoteConnections"
 description: "List properties and relationships of the userExperienceAnalyticsRemoteConnection objects."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 12/04/2024
 ---
 
 # List userExperienceAnalyticsRemoteConnections
 
 Namespace: microsoft.graph
 
+> **Caution:** This API is deprecated and will stop returning data on December 31, 2024. Going forward, use the [getRawRemoteConnectionReports](./cloudpcreports-getrawremoteconnectionreports.md) resource and its supported APIs.
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [userExperienceAnalyticsRemoteConnection](../resources/intune-devices-userexperienceanalyticsremoteconnection.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

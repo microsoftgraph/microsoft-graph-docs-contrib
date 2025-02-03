@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AadUserConversationMember conversationMember = new AadUserConversationMember();
-LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("owner");
-conversationMember.roles = rolesList;
+conversationMember.setOdataType("#microsoft.graph.aadUserConversationMember");
+LinkedList<String> roles = new LinkedList<String>();
+roles.add("owner");
+conversationMember.setRoles(roles);
+ConversationMember result = graphClient.teams().byTeamId("{team-id}").channels().byChannelId("{channel-id}").members().byConversationMemberId("{conversationMember-id}").patch(conversationMember);
 
-graphClient.teams("{id}").channels("{id}").members("{id}")
-	.buildRequest()
-	.patch(conversationMember);
 
 ```

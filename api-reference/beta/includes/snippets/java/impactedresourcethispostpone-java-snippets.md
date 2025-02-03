@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-OffsetDateTime postponeUntilDateTime = OffsetDateTimeSerializer.deserialize("03/01/2023 09:40:39");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.directory().recommendations("0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.ApplicationCredentialExpiry").impactedResources("dbd9935e-15b7-4800-9049-8d8704c23ad2")
-	.postpone(ImpactedResourcePostponeParameterSet
-		.newBuilder()
-		.withPostponeUntilDateTime(postponeUntilDateTime)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.directory.recommendations.item.impactedresources.item.postpone.PostponePostRequestBody postponePostRequestBody = new com.microsoft.graph.beta.directory.recommendations.item.impactedresources.item.postpone.PostponePostRequestBody();
+OffsetDateTime postponeUntilDateTime = OffsetDateTime.parse("2023-03-01T09:40:39.0420371Z");
+postponePostRequestBody.setPostponeUntilDateTime(postponeUntilDateTime);
+var result = graphClient.directory().recommendations().byRecommendationId("{recommendation-id}").impactedResources().byImpactedResourceId("{impactedResource-id}").postpone().post(postponePostRequestBody);
+
 
 ```

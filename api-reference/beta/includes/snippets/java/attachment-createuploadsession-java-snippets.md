@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.users.item.messages.item.attachments.createuploadsession.CreateUploadSessionPostRequestBody createUploadSessionPostRequestBody = new com.microsoft.graph.beta.users.item.messages.item.attachments.createuploadsession.CreateUploadSessionPostRequestBody();
 AttachmentItem attachmentItem = new AttachmentItem();
-attachmentItem.attachmentType = AttachmentType.FILE;
-attachmentItem.name = "flower";
-attachmentItem.size = 3483322L;
+attachmentItem.setAttachmentType(AttachmentType.File);
+attachmentItem.setName("flower");
+attachmentItem.setSize(3483322L);
+createUploadSessionPostRequestBody.setAttachmentItem(attachmentItem);
+var result = graphClient.me().messages().byMessageId("{message-id}").attachments().createUploadSession().post(createUploadSessionPostRequestBody);
 
-graphClient.me().messages("AAMkADI5MAAIT3drCAAA=").attachments()
-	.createUploadSession(AttachmentCreateUploadSessionParameterSet
-		.newBuilder()
-		.withAttachmentItem(attachmentItem)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

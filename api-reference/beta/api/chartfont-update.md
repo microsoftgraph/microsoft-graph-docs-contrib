@@ -3,8 +3,9 @@ title: "Update workbookChartFont"
 description: "Update the properties of workbookChartFont object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update chartfont
@@ -40,13 +41,13 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/a
 | Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that didn't change.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bold|boolean|Represents the bold status of font.|
+|bold|Boolean|Represents the bold status of font.|
 |color|string|HTML color code representation of the text color. for example, #FF0000 represents Red.|
-|italic|boolean|Represents the italic status of the font.|
+|italic|Boolean|Represents the italic status of the font.|
 |name|string|Font name (for example "Calibri")|
 |size|double|Size of the font (for example, 11)|
 |underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`.|
@@ -54,9 +55,10 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 
 If successful, this method returns a `200 OK` response code and updated [workbookChartFont](../resources/workbookchartfont.md) object in the response body.
+
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,7 +110,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

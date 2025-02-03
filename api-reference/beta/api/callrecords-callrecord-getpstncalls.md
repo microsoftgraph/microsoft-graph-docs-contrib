@@ -1,10 +1,11 @@
 ---
 title: "callRecord: getPstnCalls"
 description: "Get log of PSTN calls."
-author: "williamlooney"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
+ms.date: 10/10/2024
 ---
 
 # callRecord: getPstnCalls
@@ -13,7 +14,10 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
+Get a log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
+
+> [!NOTE]
+> This API doesn't return information for **Telstra** or **Softbank** calling plans.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -58,14 +62,14 @@ The following table shows the parameters that can be used with this function.
 
 If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body.
 
-If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
+If there are more than 1,000 entries in the date range, the body also includes an `@odata.nextLink` with a URL to query the next page of call entries. The last page in the date range doesn't have `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
 
-The following example shows how to get a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.NextLink` to get records beyond the first 1000. For readability, the response shows only a collection of 1 record. Please assume there are more than 1000 calls in that date range.
+The following example shows how to get a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.nextLink` to get records beyond the first 1,000. For readability, the response shows only a collection of one record. Assume there are more than 1,000 calls in that date range.
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -153,18 +157,26 @@ HTTP/1.1 200 OK
             "clientPublicIpV4Address": "99.76.33.16",
             "clientPublicIpV6Address": "1234:fd2:5621:1:89::4500",
             "clientLocalIpV4Address": "192.168.1.165",
-            "clientLocalIpV6Address": "2600:1700:1dca:8110::40"
+            "clientLocalIpV6Address": "2600:1700:1dca:8110::40",
+            "administrativeUnitInfos": [
+               {
+                  "id": "639b616c-f164-4a6f-a933-24936b8eb210"
+               },
+               {
+                  "id": "cc6ea167-4e92-4c2d-9391-85791e978006"
+               }
+            ]
         }
     ]
 }
 ```
 
-## See also
+## Related content
 
 - [Get aggregated report of the audio conferencing dial-out](callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)
 - [Get log of users who are blocked from making PSTN calls](callrecords-callrecord-getpstnblockeduserslog.md)
 - [Get log of sent/received SMS](callrecords-callrecord-getsmslog.md)
-- [Get log of direct routing calls](callrecords-callrecord-getdirectroutingcalls.md)
+- [Get log of Direct Routing calls](callrecords-callrecord-getdirectroutingcalls.md)
 - [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 
 <!-- {

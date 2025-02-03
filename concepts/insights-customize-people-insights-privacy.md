@@ -3,8 +3,9 @@ title: "Customize people insights privacy in Microsoft Graph (preview)"
 description: "Learn about customizing people insights at the organization level by using the Microsoft Graph insightsSettings API."
 author: "anthona"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Customize people insights privacy in Microsoft Graph (preview)

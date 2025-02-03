@@ -3,8 +3,9 @@ title: "Update ediscoveryReviewSetQuery"
 description: "Update the properties of an ediscoveryReviewSetQuery object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 # Update ediscoveryReviewSetQuery
 Namespace: microsoft.graph.security
@@ -54,7 +55,7 @@ If successful, this method returns a `204 No content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

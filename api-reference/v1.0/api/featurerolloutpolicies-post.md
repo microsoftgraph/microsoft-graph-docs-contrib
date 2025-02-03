@@ -3,8 +3,9 @@ title: "Create featureRolloutPolicy"
 description: "Create a new featureRolloutPolicy object."
 ms.localizationpriority: medium
 author: "madhavpatel6"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 03/06/2024
 ---
 
 # Create featureRolloutPolicy

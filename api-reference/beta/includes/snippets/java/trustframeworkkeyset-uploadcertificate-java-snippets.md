@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String key = "key-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.trustFramework().keySets("{id}")
-	.uploadCertificate(TrustFrameworkKeySetUploadCertificateParameterSet
-		.newBuilder()
-		.withKey(key)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.trustframework.keysets.item.uploadcertificate.UploadCertificatePostRequestBody uploadCertificatePostRequestBody = new com.microsoft.graph.beta.trustframework.keysets.item.uploadcertificate.UploadCertificatePostRequestBody();
+uploadCertificatePostRequestBody.setKey("key-value");
+var result = graphClient.trustFramework().keySets().byTrustFrameworkKeySetId("{trustFrameworkKeySet-id}").uploadCertificate().post(uploadCertificatePostRequestBody);
+
 
 ```

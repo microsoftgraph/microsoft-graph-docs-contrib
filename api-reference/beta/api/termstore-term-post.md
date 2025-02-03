@@ -3,8 +3,9 @@ title: "Create term"
 description: "Create a new term object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create term

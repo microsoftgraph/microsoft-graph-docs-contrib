@@ -2,9 +2,11 @@
 title: "List users"
 description: "Retrieve a list of user objects."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 12/23/2024
 ---
 
 # List users
@@ -29,7 +31,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-Guest users cannot call this API. For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users)
+Guest users cannot call this API. For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users).
+
+### Permissions for specific scenarios
+- *User-Mail.ReadWrite.All* is the least privileged permission to read and write the **otherMails** property; also allows to read some identifier-related properties on the user object.
+- *User-PasswordProfile.ReadWrite.All* is the least privileged permission to read and write password reset-related properties; also allows to read some identifier-related properties on the user object.
+- *User-Phone.ReadWrite.All* is the least privileged permission to read and write the **businessPhones** and **mobilePhone** properties; also allows to read some identifier-related properties on the user object.
+- *User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions to read and write the **accountEnabled** property.
 
 ## HTTP request
 
@@ -139,7 +147,7 @@ Content-type: application/json
       "mailNickname":"contoso1_gmail.com#EXT#",
       "otherMails":["contoso1@gmail.com"],
       "proxyAddresses":["SMTP:contoso1@gmail.com"],
-      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"contoso1_gmail.com#EXT#@contoso.com"
     }
   ]
 }
@@ -256,7 +264,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2b-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -316,7 +324,10 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission. 
+The following example shows a request. 
+
+> [!Note]
+> Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the `AuditLog.Read.All` permission.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -385,7 +396,9 @@ Content-type: application/json
         "lastSignInDateTime": "2021-07-29T15:53:27Z",
         "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
         "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
-        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200"
+        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200",
+        "lastSuccessfulSignInDateTime": "",
+        "lastSuccessfulSignInRequestId": ""
       }
     }
   ]
@@ -396,7 +409,10 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission. 
+The following example shows a request. 
+
+> [!Note]
+> Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the `AuditLog.Read.All` permission.
 
 <!-- {
   "blockType": "ignored",
@@ -431,7 +447,9 @@ Content-type: application/json
         "lastSignInDateTime": "2021-06-17T16:41:33Z",
         "lastSignInRequestId": "d4d31c40-4c36-4775-ad59-7d1e6a171f00",
         "lastNonInteractiveSignInDateTime": "0001-01-01T00:00:00Z",
-        "lastNonInteractiveSignInRequestId": ""
+        "lastNonInteractiveSignInRequestId": "",
+        "lastSuccessfulSignInDateTime": "",
+        "lastSuccessfulSignInRequestId": ""
       }
     },
     {
@@ -441,7 +459,9 @@ Content-type: application/json
         "lastSignInDateTime": "2021-07-29T15:53:27Z",
         "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
         "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
-        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200"
+        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200",
+        "lastSuccessfulSignInDateTime": "",
+        "lastSuccessfulSignInRequestId": ""
       }
     }
   ]
@@ -558,7 +578,7 @@ Content-type: application/json
       "mailNickname":"a_contoso.com#EXT#",
       "otherMails":["a@contoso.com"],
       "proxyAddresses":["SMTP:a@contoso.com"],
-      "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"a_contoso.com#EXT#@contoso.com"
     }
   ]
 }
@@ -763,7 +783,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-to-count-e10-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -815,7 +835,7 @@ Content-type: application/json
       "mail":"'contosoadmin1@gmail.com",
       "mailNickname":"contosoadmin1_gmail.com#EXT#",
       "proxyAddresses":["SMTP:contosoadmin1@gmail.com"],
-      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@contoso.com"
     }
   ]
 }

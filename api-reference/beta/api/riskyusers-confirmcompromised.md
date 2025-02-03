@@ -1,11 +1,13 @@
 ---
-title: Confirm riskyUser compromised
-description: Confirm a riskyUser object as compromised.
+title: "riskyUser: confirmCompromised"
+description: "Confirm one or more riskyUser objects as compromised."
 author: tracyshi
 ms.localizationpriority: medium
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
+
 # riskyUser: confirmCompromised
 
 Namespace: microsoft.graph
@@ -24,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskyusers_confirmcompromised" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskyusers-confirmcompromised-permissions.md)]
 
-[!INCLUDE [rbac-identity-protection-apis-write](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
+[!INCLUDE [rbac-identity-protection-apis-write](../includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +41,7 @@ POST /riskyUsers/confirmCompromised
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Specify the risky user IDs to dismiss in the request body.
+Specify the user IDs to confirm as compromised in the request body.
 
 ## Response
 
@@ -109,7 +111,7 @@ HTTP/1.1 204 No Content
 <!--
 ### Example 2: Confirm a user as compromised
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -127,7 +129,7 @@ Content-type: application/json
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

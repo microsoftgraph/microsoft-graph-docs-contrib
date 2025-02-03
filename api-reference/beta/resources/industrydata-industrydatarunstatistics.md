@@ -3,8 +3,9 @@ title: "industryDataRunStatistics resource type"
 description: "Represents statistics for a single run."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # industryDataRunStatistics resource type
@@ -30,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

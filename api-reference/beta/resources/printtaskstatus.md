@@ -3,8 +3,9 @@ title: printTaskStatus resource type
 description: Represents the current execution status of a printTask.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # printTaskStatus resource type
@@ -35,9 +36,13 @@ For details about how to use this resource to add pull printing support to Unive
 |aborted|3|Task execution was aborted.|
 |unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

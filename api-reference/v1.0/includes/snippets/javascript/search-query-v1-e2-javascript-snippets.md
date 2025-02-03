@@ -16,7 +16,8 @@ const searchResponse = {
       entityTypes: [
         'listItem'
       ],
-      query: {
+        region: 'US',
+        query: {
         queryString: 'contoso',
         queryTemplate: '{searchTerms} CreatedBy:Bob'
       },

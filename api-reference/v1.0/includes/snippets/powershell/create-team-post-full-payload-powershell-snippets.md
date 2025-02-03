@@ -73,6 +73,9 @@ $params = @{
 		allowTeamMentions = $true
 		allowChannelMentions = $true
 	}
+	discoverySettings = @{
+		showInTeamsSearchAndSuggestions = $true
+	}
 	installedApps = @(
 		@{
 			"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"

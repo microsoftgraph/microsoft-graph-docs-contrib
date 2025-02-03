@@ -1,10 +1,12 @@
 ---
 title: "Delete groupLifecyclePolicy"
 description: "Deletes a groupLifecyclePolicy."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 03/13/2024
 ---
 
 # Delete groupLifecyclePolicy
@@ -13,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -49,7 +51,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -98,7 +100,7 @@ DELETE https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 
 ### Response
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "response",

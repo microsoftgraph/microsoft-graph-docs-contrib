@@ -3,7 +3,8 @@ title: "Create teams and manage members using the Microsoft Teams API"
 description: "Use the Microsoft Teams API in Microsoft Graph to create teams in multiple ways, add and manage members, and validate your results."
 author: "hachandr"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 11/07/2024
 ---
 
 # Create teams and manage members using the Microsoft Teams API
@@ -125,6 +126,6 @@ After you create a team, you can use the following checklist to verify that the 
 
 2. Verify that newly added members can see the team after signing into the Teams desktop or web client.
 
-## See also
+## Related content
 
 - [Microsoft Teams API overview](teams-concept-overview.md)

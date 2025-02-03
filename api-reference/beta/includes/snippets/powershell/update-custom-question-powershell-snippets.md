@@ -9,12 +9,12 @@ Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	answerInputType = "radioButton"
 	answerOptions = @(
-		"Software Engineer"
-		"Software Development Manager"
-		"Product Manager"
-		"Data scientist"
-		"Other"
-	)
+	"Software Engineer"
+"Software Development Manager"
+"Product Manager"
+"Data scientist"
+"Other"
+)
 }
 
 # A UPN can also be used as -UserId.

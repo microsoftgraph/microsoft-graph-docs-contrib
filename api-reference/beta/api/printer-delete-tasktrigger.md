@@ -3,8 +3,9 @@ title: Delete taskTrigger
 description: Delete a printer's task trigger.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete taskTrigger

@@ -3,8 +3,9 @@ title: "accessReviewInstanceDecisionItem: recordAllDecisions"
 description: "Record the decisions for an accessReviewInstanceDecisionItem object."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # accessReviewInstanceDecisionItem: recordAllDecisions
@@ -79,10 +80,6 @@ Content-Type: application/json
   "resourceId": "733ef921-89e1-4d7e-aeff-83612223c37e"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstancedecisionitem-recordalldecisions-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewinstancedecisionitem-recordalldecisions-javascript-snippets.md)]

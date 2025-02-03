@@ -4,35 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.users.item.teamwork.sendactivitynotification.SendActivityNotificationPostRequestBody sendActivityNotificationPostRequestBody = new com.microsoft.graph.users.item.teamwork.sendactivitynotification.SendActivityNotificationPostRequestBody();
 TeamworkActivityTopic topic = new TeamworkActivityTopic();
-topic.source = TeamworkActivityTopicSource.ENTITY_URL;
-topic.value = "https://graph.microsoft.com/v1.0/users/{userId}/teamwork/installedApps/{installationId}";
-
-String activityType = "taskCreated";
-
+topic.setSource(TeamworkActivityTopicSource.EntityUrl);
+topic.setValue("https://graph.microsoft.com/v1.0/users/{userId}/teamwork/installedApps/{installationId}");
+sendActivityNotificationPostRequestBody.setTopic(topic);
+sendActivityNotificationPostRequestBody.setActivityType("taskCreated");
 ItemBody previewText = new ItemBody();
-previewText.content = "New Task Created";
+previewText.setContent("New Task Created");
+sendActivityNotificationPostRequestBody.setPreviewText(previewText);
+LinkedList<KeyValuePair> templateParameters = new LinkedList<KeyValuePair>();
+KeyValuePair keyValuePair = new KeyValuePair();
+keyValuePair.setName("taskId");
+keyValuePair.setValue("Task 12322");
+templateParameters.add(keyValuePair);
+sendActivityNotificationPostRequestBody.setTemplateParameters(templateParameters);
+graphClient.users().byUserId("{user-id}").teamwork().sendActivityNotification().post(sendActivityNotificationPostRequestBody);
 
-LinkedList<KeyValuePair> templateParametersList = new LinkedList<KeyValuePair>();
-KeyValuePair templateParameters = new KeyValuePair();
-templateParameters.name = "taskId";
-templateParameters.value = "Task 12322";
-
-templateParametersList.add(templateParameters);
-
-graphClient.users("{userId}").teamwork()
-	.sendActivityNotification(UserTeamworkSendActivityNotificationParameterSet
-		.newBuilder()
-		.withTopic(topic)
-		.withActivityType(activityType)
-		.withChainId(null)
-		.withPreviewText(previewText)
-		.withTeamsAppId(null)
-		.withTemplateParameters(templateParametersList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

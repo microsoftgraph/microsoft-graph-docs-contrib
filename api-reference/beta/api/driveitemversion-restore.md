@@ -4,7 +4,7 @@ description: "Restore a previous version of a DriveItem to be the current versio
 ms.date: 09/10/2017
 title: Restore a previous version
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Restore a previous version of a DriveItem
@@ -49,7 +49,7 @@ This example restores a version of a file identified by `{item-id}` and `{versio
 <!-- { "blockType": "request", "name": "restore-item-version", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
+POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
 # [C#](#tab/csharp)

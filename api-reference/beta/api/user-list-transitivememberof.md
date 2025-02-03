@@ -2,9 +2,11 @@
 title: "List a user's memberships (direct and transitive)"
 description: "Get groups, directory roles, and administrative units that the user is a member of through either direct or transitive membership."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "users"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # List a user's memberships (direct and transitive)
@@ -21,15 +23,31 @@ Get [groups](../resources/group.md), [directory roles](../resources/directoryrol
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "user_list_transitivememberof" } -->
+### Permissions for the signed-in user's memberships
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-transitivememberof-permissions.md)]
+
+### Permissions for another user's memberships
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-transitivememberof-2-permissions.md)]
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> [!TIP]
+> - Calling the `/me/transitiveMemberOf` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when you use the `/me/transitiveMemberOf` endpoint.
+> - To list the members of a group with hidden membership, the `Member.Read.Hidden` permission is required.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /me/transitiveMemberOf
+```
+
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{id | userPrincipalName}/transitiveMemberOf
 ```
 
@@ -58,7 +76,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 

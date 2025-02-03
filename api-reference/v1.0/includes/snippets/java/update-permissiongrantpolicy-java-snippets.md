@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PermissionGrantPolicy permissionGrantPolicy = new PermissionGrantPolicy();
-permissionGrantPolicy.displayName = "Custom permission grant policy";
+permissionGrantPolicy.setDisplayName("Custom permission grant policy");
+PermissionGrantPolicy result = graphClient.policies().permissionGrantPolicies().byPermissionGrantPolicyId("{permissionGrantPolicy-id}").patch(permissionGrantPolicy);
 
-graphClient.policies().permissionGrantPolicies("my-custom-consent-policy")
-	.buildRequest()
-	.patch(permissionGrantPolicy);
 
 ```

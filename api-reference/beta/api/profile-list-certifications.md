@@ -3,8 +3,9 @@ title: "List certifications"
 description: "Get a collection of personCertifications from the certifications navigation property."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List certifications

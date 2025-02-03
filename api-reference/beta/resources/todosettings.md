@@ -3,8 +3,9 @@ title: "todoSettings resource type"
 description: "Company-wide settings for Microsoft Todo"
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # todoSettings resource type
@@ -26,7 +27,7 @@ Company-wide settings for Microsoft Todo.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.todoSettings"

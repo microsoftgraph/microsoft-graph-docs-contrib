@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/11/2017
 title: Delete an entry from a SharePoint list
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Removes an item from a list."
 doc_type: apiPageType
 ---

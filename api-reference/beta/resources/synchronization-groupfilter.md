@@ -3,8 +3,9 @@ title: "groupFilter resource type"
 description: "Defines how groups should be considered in scope for a synchronization rule. This object is only used by Azure Active Directory Connect cloud sync scenarios."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # groupFilter resource type

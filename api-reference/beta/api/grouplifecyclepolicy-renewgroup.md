@@ -2,9 +2,11 @@
 title: "groupLifecyclePolicy: renewGroup"
 description: "Renew a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # groupLifecyclePolicy: renewGroup
@@ -48,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description                   |
 | :-------- | :--- | :---------------------------- |
-| groupId   | Guid | The id of the group to renew. |
+| groupId   | Guid | The object ID of the group to renew. |
 
 ## Response
 

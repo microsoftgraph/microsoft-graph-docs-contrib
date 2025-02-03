@@ -1,10 +1,11 @@
 ---
 title: "Update event"
 description: "Update an event object."
-author: "Jordanndahl"
+author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Update event
@@ -40,7 +41,7 @@ PATCH /groups/{id}/calendar/events/{id}
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

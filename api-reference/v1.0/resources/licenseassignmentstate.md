@@ -3,8 +3,9 @@ title: "licenseAssignmentState resource type"
 description: "The **licenseAssignmentStates** property of the user entity is a collection of **licenseAssignmentState** objects. It provides details about license assignments to a user."
 author: "frank-masuelli"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 
 # licenseAssignmentState resource type
@@ -32,7 +33,7 @@ The **licenseAssignmentStates** property of the [user](user.md) entity is a coll
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 ```json
 {

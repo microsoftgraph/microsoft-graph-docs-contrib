@@ -3,8 +3,9 @@ title: "virtualAppointment: getVirtualAppointmentJoinWebUrl"
 description: "Get a virtual appointment join link."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # virtualAppointment: getVirtualAppointmentJoinWebUrl

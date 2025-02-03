@@ -3,8 +3,9 @@ title: "plannerChecklistRequirement resource type"
 description: "Represents a checklist completion requirement on a plannerTask."
 author: "prasad5596"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # plannerChecklistRequirement resource type
@@ -27,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

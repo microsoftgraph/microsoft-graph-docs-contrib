@@ -3,8 +3,9 @@ title: "accessPackageLocalizedContent resource type"
 description: "A complex type used to represent text in different locals, along with a default text.*"
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # accessPackageLocalizedContent resource type
@@ -25,7 +26,7 @@ A complex type used to represent a text in multiple localized forms. It includes
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageLocalizedContent"

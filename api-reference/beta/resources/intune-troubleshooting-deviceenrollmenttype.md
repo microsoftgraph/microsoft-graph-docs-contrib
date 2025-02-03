@@ -2,9 +2,10 @@
 title: "deviceEnrollmentType enum type"
 description: "Possible ways of adding a mobile device to management."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # deviceEnrollmentType enum type
@@ -37,3 +38,8 @@ Possible ways of adding a mobile device to management.
 |androidEnterpriseDedicatedDevice|15|Android Enterprise Dedicated Device|
 |androidEnterpriseFullyManaged|16|Android Enterprise Fully Managed|
 |androidEnterpriseCorporateWorkProfile|17|Android Enterprise Corporate Work Profile|
+|appleACMEBasicBYOD|20|Apple ACME BYOD enrollment|
+|appleACMEDEPUserless|21|Apple ACME DEP Userless enrollment|
+|appleACMEDEPUDACompanyPortal|22|Apple ACME DEP UDA enrollment at CP|
+|appleACMEDEPUDASetupAsstLegacy|23|Apple ACME DEP UDA enrollment at Setup Asst (legacy)|
+|appleACMEDEPUDAModernAuth|24|Apple ACME DEP UDA enrollment at Setup Asst (Modern Auth)|

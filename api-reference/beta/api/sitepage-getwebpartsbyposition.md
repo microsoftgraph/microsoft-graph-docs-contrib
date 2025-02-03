@@ -3,8 +3,9 @@ title: "sitepage: getWebPartsByPosition"
 description: "Get a collection of webParts by position information"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # sitepage: getWebPartsByPosition
@@ -41,7 +42,7 @@ In the request URL, provide one or more following parameters with a valid value.
 | :------------------ | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | columnId            | Double  | Indicate the identifier of the column where the WebPart located in. Only works if `horizontalSectionId` is provided.                                           |
 | horizontalSectionId | Double  | Indicate the horizontal section where the WebPart located in.                                                                                                  |
-| isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.                                                                                                  |
+| isInVerticalSection | Boolean | Indicate whether the WebPart located in the vertical section.                                                                                                  |
 | webPartIndex        | Double  | Index of the current WebPart. Represents the order of WebPart in this column or section. Only works if either `columnId` or `isInVerticalSection` is provided. |
 
 ## Optional query parameters
@@ -67,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -78,12 +79,8 @@ The following is an example of a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{siteId}/pages/{sitePageId}/microsoft.graph.sitePage/getWebPartsByPosition?isInVerticalSection=true
+GET https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/getWebPartsByPosition?isInVerticalSection=true
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-webparts-by-position-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-webparts-by-position-javascript-snippets.md)]

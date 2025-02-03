@@ -1,10 +1,11 @@
 ---
 title: "customAppManagementConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Configuration object that contains properties that can be configured to enable various restrictions for applications and service principals as part of an appManagementPolicy object."
+author: "yogesh-randhawa"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # customAppManagementConfiguration resource type
@@ -13,18 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains settings to block specific signInAudience types.
+Configuration object that can be configured to enable various restrictions for applications and service principals as part of the [appManagementPolicy](../resources/appmanagementpolicy.md) object. Some of these restrictions apply to both applications and service principals while others are applicable only to applications.
 
-Inherits from [appManagementConfiguration](../resources/appmanagementconfiguration.md).
+Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
 
 ## Properties
 
-| Property                     | Type                                                                                                                 | Description                                                                                                                                                                                      |
-| :--------------------------- | :------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| applicationRestrictions      | [customAppManagementApplicationConfiguration](../resources/customappmanagementapplicationconfiguration.md)           | Configuration for restrictions that apply to application objects.                                                                                                                                |
-| keyCredentials               | [keyCredentialConfiguration](../resources/keycredentialconfiguration.md) collection                                  | Collection of keyCredential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md). |
-| passwordCredentials          | [passwordCredentialConfiguration](../resources/passwordcredentialconfiguration.md) collection                        | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md).      |
-| servicePrincipalRestrictions | [customAppManagementServicePrincipalConfiguration](../resources/customappmanagementserviceprincipalconfiguration.md) | Configuration for restrictions that apply to service principal objects.                                                                                                                          |
+| Property                | Type                                                                                          | Description                                                                                                                                                                         |
+| :---------------------- | :-------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| applicationRestrictions | [customAppManagementApplicationConfiguration](customappmanagementapplicationconfiguration.md) | Restrictions applicable only to application objects that the policy applies to.                                                                                                     |
+| keyCredentials          | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection                        | Collection of keyCredential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](appmanagementconfiguration.md). |
+| passwordCredentials     | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection              | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](appmanagementconfiguration.md).      |
 
 ## Relationships
 
@@ -53,14 +53,8 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.keyCredentialConfiguration"
     }
   ],
-  "federatedIdentityCredentials": {
-    "@odata.type": "microsoft.graph.federatedIdentityCredentialConfiguration"
-  },
   "applicationRestrictions": {
     "@odata.type": "microsoft.graph.customAppManagementApplicationConfiguration"
-  },
-  "servicePrincipalRestrictions": {
-    "@odata.type": "microsoft.graph.customAppManagementServicePrincipalConfiguration"
   }
 }
 ```

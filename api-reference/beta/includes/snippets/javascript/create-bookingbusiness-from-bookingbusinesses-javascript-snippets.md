@@ -26,7 +26,7 @@ const bookingBusiness = {
     defaultCurrencyIso: 'USD'
 };
 
-await client.api('/bookingBusinesses')
+await client.api('/solutions/bookingbusinesses')
 	.version('beta')
 	.post(bookingBusiness);
 

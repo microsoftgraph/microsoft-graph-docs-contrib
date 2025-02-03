@@ -3,8 +3,9 @@ title: "Get plannerAssignedToTaskBoardTaskFormat"
 description: "Retrieve the properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get plannerAssignedToTaskBoardTaskFormat

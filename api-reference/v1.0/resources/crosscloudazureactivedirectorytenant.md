@@ -3,8 +3,9 @@ title: "crossCloudAzureActiveDirectoryTenant resource type"
 description: "The crossCloudAzureActiveDirectoryTenant type identifies another Microsoft Entra tenant in a different cloud as an identity source for a connected organization."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 03/08/2024
 ---
 
 # crossCloudAzureActiveDirectoryTenant resource type

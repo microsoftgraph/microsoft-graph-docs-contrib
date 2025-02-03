@@ -3,8 +3,9 @@ title: "List activityBasedTimeoutPolicies"
 description: "Get a list of activityBasedTimeoutPolicy objects."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # List activityBasedTimeoutPolicies
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET policies/activityBasedTimeoutPolicies
+GET /policies/activityBasedTimeoutPolicies
 ```
 
 ## Optional query parameters
