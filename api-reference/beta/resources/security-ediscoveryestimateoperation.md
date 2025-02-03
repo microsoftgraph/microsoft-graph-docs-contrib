@@ -20,6 +20,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 ## Methods
 None.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -40,10 +41,11 @@ None.
 |unindexedItemsSize|Int64|The estimated size of unindexed items for the collection.|
 
 ### statisticsOptions values
+
 |Name|Description|
-|:----|-----------|
+|:----|:----------|
 |includeRefiners      | Refine with categories to include people, sensitive information types, item types, and errors.|
-|includeQueryStats    | Include query keywords report assessing keyword relevance of your search query.|
+|includeQueryStats    | Include query keywords report to assess the relevance of your search query.|
 |includeUnindexedStats| Include partially indexed items.|
 |advancedIndexing     | Perform advanced indexing during search to reduce false matches.|
 |locationsWithoutHits | Estimate unindexed items even in locations without hits.|
@@ -67,25 +69,21 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryEstimateOperation",
-  "id": "String (identifier)",
-  "createdDateTime": "String (timestamp)",
-  "completedDateTime": "String (timestamp)",
   "action": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "percentProgress": "Integer",
-  "status": "String",
-  "resultInfo": {
-    "@odata.type": "microsoft.graph.resultInfo"
-  },
+  "completedDateTime": "String (timestamp)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "indexedItemCount": "Integer",
   "indexedItemsSize": "Integer",
-  "unindexedItemCount": "Integer",
-  "unindexedItemsSize": "Integer",
   "mailboxCount": "Integer",
+  "percentProgress": "Integer",
+  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
   "siteCount": "Integer",
-  "statisticsOptions": "Integer"
+  "statisticsOptions": "String",
+  "status": "String",
+  "unindexedItemCount": "Integer",
+  "unindexedItemsSize": "Integer"
 }
 ```
 
