@@ -12,6 +12,10 @@ VirtualEventRegistration virtualEventRegistration = new VirtualEventRegistration
 virtualEventRegistration.setFirstName("Diane");
 virtualEventRegistration.setLastName("Demoss");
 virtualEventRegistration.setEmail("DianeDemoss@contoso.com");
+VirtualEventExternalRegistrationInformation externalRegistrationInformation = new VirtualEventExternalRegistrationInformation();
+externalRegistrationInformation.setReferrer("Facebook");
+externalRegistrationInformation.setRegistrationId("myExternalRegistrationId");
+virtualEventRegistration.setExternalRegistrationInformation(externalRegistrationInformation);
 virtualEventRegistration.setPreferredTimezone("Pacific Standard Time");
 virtualEventRegistration.setPreferredLanguage("en-us");
 LinkedList<VirtualEventRegistrationQuestionAnswer> registrationQuestionAnswers = new LinkedList<VirtualEventRegistrationQuestionAnswer>();

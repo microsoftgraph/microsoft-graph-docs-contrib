@@ -5697,6 +5697,60 @@
       "CreatedDateTime": "2024-10-24T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f9666fc8-6101-4ca6-bd26-3f11395ffc5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "mentions",
+          "ChangeType": "Change",
+          "Description": "Added `chat` as a supported value for the **mentions** property in the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "f9666fc8-6101-4ca6-bd26-3f11395ffc5f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-14T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+       },
+      {
+      "ChangeList": [ 
+        {
+          "Id": "5527a808-1e9a-4fa0-b52b-869cd2b870be",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentType",
+          "ChangeType": "Change",
+          "Description": "Added `forwardedMessageReference` as a supported value for the **contentType** property in the [chatMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-1.0) resource.",
+          "Target": "chatMessageAttachment"
+        }
+      ],
+      "Id": "5527a808-1e9a-4fa0-b52b-869cd2b870be",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-14T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [ 
+        {
+          "Id": "5dcb0d48-8790-4447-acc0-c7018569adf5",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentType",
+          "ChangeType": "Change",
+          "Description": "Added Microsoft Loop components as two types of attachments, a Loop component and a place holder. New **contentType** properties `application/vnd.microsoft.card.fluidEmbedCard` and `application/vnd.microsoft.card.codesnippet` are in the [chatMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-1.0) resource.",
+          "Target": "chatMessageAttachment"
+        }
+      ],
+      "Id": "5dcb0d48-8790-4447-acc0-c7018569adf5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-14T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }

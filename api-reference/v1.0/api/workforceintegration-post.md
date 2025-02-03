@@ -13,7 +13,6 @@ ms.date: 09/18/2024
 Namespace: microsoft.graph
 
 Create a new [workforceIntegration](../resources/workforceintegration.md) object.
-You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -50,12 +49,12 @@ The following table lists the properties that you can use when you create a **wo
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|apiVersion|Int32|API version for the call back URL. Start with 1.|
+|apiVersion|Int32|API version for the callback URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
-|eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| Support to view eligibility-filtered results. Possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
+|eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| Support to view eligibility-filtered results. Possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
 |encryption|[workforceIntegrationEncryption](../resources/workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts call back to the provided URL when client changes occur to the entities specified in this property. By default, no entities are supported for change notifications. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openShift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`, `timeOff`, `timeOffRequest`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason` , `timeOff` , `timeOffRequest`.|
+|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts call the provided URL when client changes occur to the entities specified in this property. By default, no entities are supported for change notifications. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openShift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason` , `timeOff` , `timeOffRequest`.|
 |url|String| Workforce integration URL used for callbacks from the Shifts service.|
 
 ## Response
@@ -157,7 +156,7 @@ Content-Type: application/json
 }
 ```
 
-## Examples for Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility
+## Examples for use cases of WorkforceIntegration entity for Eligibility Filtering by workforce management system (WFM) rules
 
 ### Use case: Create a new WorkforceIntegration with SwapRequest enabled for eligibility filtering
 
@@ -202,14 +201,14 @@ HTTP/1.1 200 OK
 }
 
 ```
-To see how to update an existing workforceintegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).
+To see how to update an existing workforceIntegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).
 
 ## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
-The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
+The interaction between Shifts app and workforce integration endpoints  follow the existing pattern.
 
 ### Request
 
-The following example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+This example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -225,20 +224,15 @@ Accept-Language: en-us
 ```
 ### Response
 
-The following is an example of the response from the workforce integration service.
+The following example shows the response from the workforce integration service.
 ```
 HTTP/1.1 200 OK
 {
   "responses": [
-  {
-    "body": {
-      "SHFT_6548f642-cbc1-4228-8621-054327576457",
-      "SHFT_6548f642-cbc1-4228-8621-054327571234"
-  }
     "id": "{shiftId}",
     "status: 200,
     "body": {
-       "data": [{ShiftId}, {ShiftId}...]
+       "data": [{shiftId}, {shiftId}...]
        "error": null
     }
   ]
