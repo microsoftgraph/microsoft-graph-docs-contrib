@@ -1,7 +1,8 @@
 ---
 title: "onPhoneMethodLoadStartExternalUsersAuthHandler resource type"
 description: "Represents a step in a multi-event user flow policy defining what happens when telephony methods are ready to be presented to the user."
-author: "Regina Yap (reyap)"
+author: "aloom3"
+ms.date: 01/14/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -13,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a managed handler for the phone method load start step in an external identities user flow for Microsoft Entra workforce or customer tenants. It defines what calling codes are enabled or disabled for telephony services. 
-
+A managed handler that defines what calling codes are enabled or disabled for telephony services in an [external identities user flow for Microsft Entra external tenants] (../resources/authenticationevents.flow.md). 
 This configuration enumerates what region codes can be opted-in or out for SMS or voice MFA.
+
 
 Inherits from [onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md).
 
@@ -23,8 +24,8 @@ Inherits from [onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstar
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|smsOptions|[phoneOptions](../resources/phoneoptions.md)| Telephony options to enable or disable regions for SMS.|
-|voiceOptions|[phoneOptions](../resources/phoneoptions.md)|Telephony options to enable or disable regions for voice. |
+|smsOptions|[phoneOptions](../resources/phoneoptions.md)|Telephony options to enable or disable regions for SMS.|
+|voiceOptions|[phoneOptions](../resources/phoneoptions.md)|Telephony options to enable or disable regions for voice.|
 
 ## Relationships
 None.
@@ -40,14 +41,10 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler",
   "smsOptions": {
-    "@odata.type": "microsoft.graph.phoneOptions",
-    "includeAdditionalRegions": "[Integer]", 
-    "excludeRegions": "[Integer]"
+    "@odata.type": "microsoft.graph.phoneOptions"
   },
   "voiceOptions": {
-    "@odata.type": "microsoft.graph.phoneOptions",
-    "includeAdditionalRegions":  "[Integer]", 
-    "excludeRegions": "[Integer]"
+    "@odata.type": "microsoft.graph.phoneOptions"
   }
 }
 ```

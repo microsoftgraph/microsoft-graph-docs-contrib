@@ -1466,7 +1466,8 @@
                 "onAuthenticationMethodLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener"
+                "onUserCreateStartListener",
+                "onphonemethodloadstartlistener"
               ]
             },
             {

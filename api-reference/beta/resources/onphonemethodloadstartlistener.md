@@ -1,7 +1,7 @@
 ---
 title: "onPhoneMethodLoadStartListener resource type"
 description: "Represents a step in a multi-event user flow policy defining what happens when telephony methods are ready to be presented to the user."
-author: "Regina Yap (reyap)"
+author: "aloom3"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
