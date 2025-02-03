@@ -77,7 +77,7 @@ Represents the image resource on a Cloud PC.
 |:---|:---|
 |pending|The image upload is in progress.|
 |ready|The image is ready for use on Cloud PCs.|
-|warning| Indicates the Cloud PC image uploaded may not be provisioned in certain scenarios. For details see the error message.|
+|warning| Indicates the Cloud PC image uploaded may not be provisioned in certain scenarios. For details, see the error message.|
 |failed|Indicates that the image failed to upload. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
