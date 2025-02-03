@@ -22,7 +22,8 @@ Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
 
 | Property            | Type                                                                             | Description                                                                                                                                                                                               |
 | :------------------ | :------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| identifierUris      | [identifierUriConfiguration](identifieruriconfiguration.md)                      | Configuration object for restrictions on **identifierUris** property for an application                                                                                                                   |
+| audiences           | [audiencesConfiguration](../resources/audiencesconfiguration.md)                              | Property to restrict creation or update of apps based on their target signInAudience types.                                                                                                      |
+| identifierUris      | [identifierUriConfiguration](identifieruriconfiguration.md)                      | Configuration object for restrictions on **identifierUris** property for an application.                                                                                                                   |
 | keyCredentials      | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection           | Collection of certificate credential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md). |
 | passwordCredentials | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md).               |
 
@@ -55,6 +56,9 @@ The following JSON representation shows the resource type.
   ],
   "identifierUris": {
     "@odata.type": "microsoft.graph.identifierUriConfiguration"
+  },
+  "audiences": {
+    "@odata.type": "microsoft.graph.audiencesConfiguration"
   }
 }
 ```

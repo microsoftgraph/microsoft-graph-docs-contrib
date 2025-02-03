@@ -22,9 +22,10 @@ Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
 
 | Property                | Type                                                                                          | Description                                                                                                                                                                         |
 | :---------------------- | :-------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| applicationRestrictions | [customAppManagementApplicationConfiguration](customappmanagementapplicationconfiguration.md) | Restrictions applicable only to application objects that the policy applies to.                                                                                                     |
+| applicationRestrictions | [customAppManagementApplicationConfiguration](customappmanagementapplicationconfiguration.md) | Restrictions that are applicable only to application objects to which the policy is attached.                                                                                                     |
 | keyCredentials          | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection                        | Collection of keyCredential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](appmanagementconfiguration.md). |
 | passwordCredentials     | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection              | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](appmanagementconfiguration.md).      |
+| servicePrincipalRestrictions | [customAppManagementServicePrincipalConfiguration](../resources/customappmanagementserviceprincipalconfiguration.md) | Restrictions that are applicable only to service principal objects to which the policy is attached.                                                                                                                          |
 
 ## Relationships
 
@@ -55,6 +56,9 @@ The following JSON representation shows the resource type.
   ],
   "applicationRestrictions": {
     "@odata.type": "microsoft.graph.customAppManagementApplicationConfiguration"
+  },
+  "servicePrincipalRestrictions": {
+    "@odata.type": "microsoft.graph.customAppManagementServicePrincipalConfiguration"
   }
 }
 ```
