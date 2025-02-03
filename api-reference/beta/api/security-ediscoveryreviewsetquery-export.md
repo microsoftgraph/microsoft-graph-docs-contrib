@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |description|String| Description of the export. |
-|exportOptions|String|Bitwise options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo` (deprecated), `tags`. The `fileInfo` member is deprecated and has stopped returning data. The summary and load files are always included.|
+|exportOptions|[microsoft.graph.security.exportOptions](../resources/security-ediscoveryexportoperation.md#exportoptions-values)|Bitwise options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo` (deprecated), `tags`. The `fileInfo` member is deprecated and has stopped returning data. The summary and load files are always included.|
 |exportStructure|[microsoft.graph.security.exportFileStructure](../resources/security-ediscoveryexportoperation.md#exportfilestructure-values)| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`.|
 |outputName|String| Name of the export. Required. |
 |azureBlobContainer (deprecated) |String| When you export to your own Azure storage account, the value is the container URL. The **azureBlobContainer** property is deprecated and has stopped returning data. |
