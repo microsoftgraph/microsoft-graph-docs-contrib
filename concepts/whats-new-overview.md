@@ -25,15 +25,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2025: New in preview only 
 
+### Tasks and plans
+
+[List Planner plans](/graph/api/teamschannelplanner-list-plans?view=graph-rest-beta&preserve-view=true) owned by a shared channel in Teams.
+
 ### Teamwork and communications | Messaging
 
 Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
  - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
  - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
-
-### Tasks and plans
-
-[List Planner plans](/graph/api/teamschannelplanner-list-plans?view=graph-rest-beta&preserve-view=true) owned by a shared channel in Teams.
 
 ## January 2025: New and generally available 
 
