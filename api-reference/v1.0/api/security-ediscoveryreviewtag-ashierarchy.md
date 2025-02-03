@@ -211,7 +211,7 @@ The following example shows a request that retrieves child tags.
 GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b6f72954-c7d0-414c-ad50-00167216cb03/tags/318f79767abf4b8fab4d8e37b3174c5a/childTags
 ```
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
