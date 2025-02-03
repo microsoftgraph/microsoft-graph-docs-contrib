@@ -47,10 +47,10 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 |Member|Description|
 |:----|-----------|
-|originalFiles|Include original files in native format. For example: docx, xlsx, pptx, doc, xlst, pptm, etc.|
+|originalFiles|Include original files in native format; for example: docx, xlsx, pptx, doc, xlst, and pptm.|
 |text|Include extracted text from the original files.|
-|pdfReplacement|Replace original file with PDF version when available.|
-|tags|Include tag information in fileInfo.|
+|pdfReplacement|Replace the original file with a PDF version when available.|
+|tags|Include tag information in `fileInfo`.|
 |fileInfo (deprecated) |Include metadata of original files in a load file. The `fileInfo` member is deprecated and stopped returning data on April 30, 2023. Going forward, the summary and load files are always included. |
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 |splitSource|Organize data from different locations into separate folders or PSTs.|
@@ -65,9 +65,9 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |:----|-----------|
 |None|Default file structure.|
 |directory|All files in a singe folder called NativeFiles.|
-|pst|Mails are grouped in pst format.|
+|pst|Mails are grouped in PST format.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
-|msg|Mails are in msg format.|
+|msg|Mails are in MSG format.|
 
 ## Relationships
 |Relationship|Type|Description|
