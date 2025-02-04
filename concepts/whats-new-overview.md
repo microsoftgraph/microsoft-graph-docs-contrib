@@ -17,6 +17,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## February 2025: New in preview only 
+
+### Identity and access | Identity and sign-in
+
+Replaced the following API operations for managing custom authentication extensions:
+
+|Old endpoint | Recommended endpoint  |
+|:--- |:---|
+|`GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionStartListener/handler/microsoft.graph.onAttributeCollectionStartCustomExtensionHandler/customExtension` <br/><br/>`GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension` <br/></br> `GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.OnEmailOtpSendListener/handler/microsoft.graph.OnOtpSendCustomExtensionHandler/customExtension`|[GET /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}](https://learn.microsoft.com/en-us/graph/api/customauthenticationextension-get?view=graph-rest-beta&preserve-view=true)|
+|`PUT /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionStartListener/handler/microsoft.graph.onAttributeCollectionStartCustomExtensionHandler/customExtension/$ref` <br/><br/> `PUT /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension/$ref` <br/><br/> `PUT /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onEmailOtpSendListener/handler/microsoft.graph.onOtpSendCustomExtensionHandler/customExtension/$ref`|[PATCH /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}](https://learn.microsoft.com/en-us/graph/api/customauthenticationextension-update?view=graph-rest-beta&preserve-view=true)|
+
 ## January 2025: New and generally available 
 
 ### Files
