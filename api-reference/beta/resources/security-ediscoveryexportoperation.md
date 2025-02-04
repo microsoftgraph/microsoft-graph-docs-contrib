@@ -33,7 +33,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |description|String| The description provided for the export.|
 |exportFileMetadata | [microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**. If you export to an Azure storage location, this property returns empty. |
 |exportOptions|[microsoft.graph.security.exportOptions](#exportoptions-values)| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). The `fileInfo` member is deprecated and stopped returning data on April 30, 2023. Going forward, the summary and load files are always included. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `unknownFutureValue`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`.|
-|exportStructure|[microsoft.graph.security.exportFileStructure](#exportfilestructure-values)|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`, `msg`.  Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`.|
+|exportStructure|[microsoft.graph.security.exportFileStructure](#exportfilestructure-values)|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`, `msg`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
@@ -47,10 +47,10 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 |Member|Description|
 |:----|-----------|
-|originalFiles|Include original files in native format. For example: docx, xlsx, pptx, doc, xlst, pptm, etc.|
+|originalFiles|Include original files in native format; for example: docx, xlsx, pptx, doc, xlst, and pptm.|
 |text|Include extracted text from the original files.|
-|pdfReplacement|Replace original file with PDF version when available.|
-|tags|Include tag information in fileInfo.|
+|pdfReplacement|Replace the original file with a PDF version when available.|
+|tags|Include tag information in `fileInfo`.|
 |fileInfo (deprecated) |Include metadata of original files in a load file. The `fileInfo` member is deprecated and stopped returning data on April 30, 2023. Going forward, the summary and load files are always included. |
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 |splitSource|Organize data from different locations into separate folders or PSTs.|
@@ -65,9 +65,9 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |:----|-----------|
 |None|Default file structure.|
 |directory|All files in a singe folder called NativeFiles.|
-|pst|Mails are grouped in pst format.|
+|pst|Mails are grouped in PST format.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
-|msg|Mails are in msg format.|
+|msg|Mails are in MSG format.|
 
 ## Relationships
 |Relationship|Type|Description|

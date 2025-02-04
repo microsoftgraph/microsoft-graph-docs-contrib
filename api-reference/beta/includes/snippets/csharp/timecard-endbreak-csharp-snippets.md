@@ -12,16 +12,11 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new EndBreakPostRequestBody
 {
+	IsAtApprovedLocation = true,
 	Notes = new ItemBody
 	{
 		ContentType = BodyType.Text,
 		Content = "ending break",
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isAtApprovedLocation" , true
-		},
 	},
 };
 

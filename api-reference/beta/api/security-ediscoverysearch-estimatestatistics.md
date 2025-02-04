@@ -41,9 +41,14 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 |Content-Type|application/json. Required.|
 
 ## Request body
-|Property|Type|Description|
+
+In the request body, supply a JSON representation of the parameters.
+
+The following table lists the parameters that you can use with this action.
+
+| Parameter | Type | Description |
 |:---|:---|:---|
-| statisticsOptions | [microsoft.graph.security.statisticsOptions](../resources/security-ediscoveryestimateoperation.md#statisticsoptions-values) | Bitwise options that specify the statistics to generate. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`. Note: `advancedIndexing` and `locationsWithoutHits` is only considered if `includeUnindexedStats` is set.|
+| statisticsOptions | [microsoft.graph.security.statisticsOptions](../resources/security-ediscoveryestimateoperation.md#statisticsoptions-values) | Bitwise options that specify the statistics to generate. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`. The `advancedIndexing` and `locationsWithoutHits` values are only considered if `includeUnindexedStats` is set.|
 
 ## Response
 
@@ -112,6 +117,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('4c551bc5-f6f8-435c-8391-d1a08f1ffd5b')/operations('698514cc118f4c8b8cdf1bf0797bf478')
 ```
