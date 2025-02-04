@@ -35,7 +35,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.x509CertificateCRLValidationConfiguration",
-  "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": "Collection(Edm.String)",
+  "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": [
+    "String"
+  ],
   "state": "String"
 }
 ```
