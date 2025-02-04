@@ -33,7 +33,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to customize the response.
+This method doesn't support OData query parameters to customize the response.
 
 ## Request headers
 
@@ -132,7 +132,8 @@ Content-type: application/json
       "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
       "displayName": "John Doe"
     }
-  }
+  },
+  "code": "CashierCode"
 }
 ```
 
