@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Determines whether issuer(CA) hints are sent back to the client side to filter the certificates shown in certificate picker.
+Determines whether certificate-based authentication should fail if the issuing Certificate Authority (CA) doesn't have a valid certificate revocation list (CRL) configured. Includes the subject key identifier (SKI) of the CAs that should be exempted from CRL validation.
  
 ## Properties
 |Property|Type|Description|
