@@ -108,7 +108,7 @@ The following table shows the supported language codes for translation languages
 | Tahitian                                 | ty      |
 | Thai (Thailand)                          | th      |
 | Tongan                                   | to      |
-| Turkish (Turkey)                         | tr      |
+| Turkish (Türkiye)                         | tr      |
 | Ukrainian (Ukraine)                      | uk      |
 | Urdu (Islamic Republic of Pakistan)      | ur      |
 | Vietnamese (Vietnam)                     | vi      |
