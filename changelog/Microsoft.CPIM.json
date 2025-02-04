@@ -951,6 +951,80 @@
       "CreatedDateTime": "2024-05-06T09:05:40.4087924Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartExternalUsersAuthHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPhoneMethodLoadStartExternalUsersAuthHandler](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartExternalUsersAuthHandler?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartExternalUsersAuthHandler"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartExternalUsersAuthHandler",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [onPhoneMethodLoadStartExternalUsersAuthHandler](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartExternalUsersAuthHandler?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartExternalUsersAuthHandler"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPhoneMethodLoadStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartHandler?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartHandler"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartHandler",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [onPhoneMethodLoadStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartHandler?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartHandler"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "phoneOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [phoneOptions](https://learn.microsoft.com/en-us/graph/api/resources/phoneOptions?view=graph-rest-beta) resource.",
+          "Target": "phoneOptions"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "phoneOptions",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [phoneOptions](https://learn.microsoft.com/en-us/graph/api/resources/phoneOptions?view=graph-rest-beta) resource.",
+          "Target": "phoneOptions"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPhoneMethodLoadStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartListener?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartListener"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartListener",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [onPhoneMethodLoadStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartListener?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartListener"
+        }
+      ],
+      "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-14T23:24:21.7328074Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
