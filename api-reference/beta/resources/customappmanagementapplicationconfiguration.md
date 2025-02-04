@@ -20,7 +20,7 @@ Custom app management application configuration object that contains properties 
 
 | Property       | Type                                                        | Description                                   |
 | :------------- | :---------------------------------------------------------- | :-------------------------------------------- |
-| audiences      | [audiencesConfiguration](../resources/audiencesconfiguration.md)         | Property to restrict creation or update of apps based on their target signInAudience types.                             |
+| audiences      | [audiencesConfiguration](../resources/audiencesconfiguration.md)         | Property to restrict creation or update of apps based on their target **signInAudience** types.                             |
 | identifierUris | [identifierUriConfiguration](identifieruriconfiguration.md) | Configuration for identifierUris restrictions.|
 
 ## Relationships

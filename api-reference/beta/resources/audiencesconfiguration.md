@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains settings to block specific signInAudience types.
+Contains settings to block specific **signInAudience** types in an [application management policy](../resources/applicationauthenticationmethodpolicy.md). Only restrictions for `azureAdMultipleOrgs` and `personalMicrosoftAccount` **signInAudience** types are available.
 
 ## Properties
 
 | Property                 | Type                                                       | Description                                                                                    |
 | :----------------------- | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| azureAdMultipleOrgs      | [audienceRestriction](../resources/audiencerestriction.md) | Setting to allow or disallow creation of apps with multi-tenant signIn audience.               |
-| personalMicrosoftAccount | [audienceRestriction](../resources/audiencerestriction.md) | Setting to allow or disallow creation of apps with Personal Microsoft Account signIn audience. |
+| azureAdMultipleOrgs      | [audienceRestriction](../resources/audiencerestriction.md) | Setting to allow or disallow creation of apps with multitenant **signInAudience**.               |
+| personalMicrosoftAccount | [audienceRestriction](../resources/audiencerestriction.md) | Setting to allow or disallow creation of apps with personal Microsoft account **signInAudience**. |
 
 ## Relationships
 
