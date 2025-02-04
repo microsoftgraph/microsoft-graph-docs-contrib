@@ -5,6 +5,7 @@ author: "madansr7"
 ms.localizationpriority: medium
 ms.subservice: ""
 doc_type: resourcePageType
+ms.date: 02/04/2025
 ---
 
 # audiencesConfiguration resource type
@@ -17,9 +18,9 @@ Contains settings to block specific **signInAudience** types in an [application 
 
 ## Properties
 
-| Property                 | Type                                                       | Description                                                                                    |
-| :----------------------- | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| azureAdMultipleOrgs      | [audienceRestriction](../resources/audiencerestriction.md) | Setting to allow or disallow creation of apps with multitenant **signInAudience**.               |
+| Property                 | Type                                                       | Description                                                                                       |
+| :----------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
+| azureAdMultipleOrgs      | [audienceRestriction](../resources/audiencerestriction.md) | Setting to allow or disallow creation of apps with multitenant **signInAudience**.                |
 | personalMicrosoftAccount | [audienceRestriction](../resources/audiencerestriction.md) | Setting to allow or disallow creation of apps with personal Microsoft account **signInAudience**. |
 
 ## Relationships

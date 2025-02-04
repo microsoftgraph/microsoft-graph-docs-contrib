@@ -5,6 +5,7 @@ author: "madansr7"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 02/04/2025
 ---
 
 # audienceRestriction resource type
