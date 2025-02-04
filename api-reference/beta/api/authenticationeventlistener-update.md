@@ -308,7 +308,7 @@ POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
 ```
 
 #### Response
-The following example shows the response to a request to to activate telecom in a region, where the example region codes are 222 and 998.
+The following example shows the response to a request to to deactivatge telecom in a region, where the example region codes are 1001, 999, 777.
 ```http
 
 HTTP/1.1 201 Created 
