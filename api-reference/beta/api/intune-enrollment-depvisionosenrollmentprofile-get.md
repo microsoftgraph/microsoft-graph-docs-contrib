@@ -1,6 +1,6 @@
 ---
-title: "Get deviceManagement"
-description: "Read properties and relationships of the deviceManagement object."
+title: "Get depVisionOSEnrollmentProfile"
+description: "Read properties and relationships of the depVisionOSEnrollmentProfile object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 08/01/2024
 ---
 
-# Get deviceManagement
+# Get depVisionOSEnrollmentProfile
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [deviceManagement](../resources/intune-osprovisioninggraphservice-devicemanagement.md) object.
+Read properties and relationships of the [depVisionOSEnrollmentProfile](../resources/intune-enrollment-depvisionosenrollmentprofile.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement
+GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultVisionOSEnrollmentProfile
 ```
 
 ## Optional query parameters
@@ -51,14 +51,14 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune-osprovisioninggraphservice-devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [depVisionOSEnrollmentProfile](../resources/intune-enrollment-depvisionosenrollmentprofile.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement
+GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultVisionOSEnrollmentProfile
 ```
 
 ### Response
@@ -66,12 +66,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 130
+Content-Length: 465
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagement",
-    "id": "0b283420-3420-0b28-2034-280b2034280b"
+    "@odata.type": "#microsoft.graph.depVisionOSEnrollmentProfile",
+    "id": "730c4f73-4f73-730c-734f-0c73734f0c73",
+    "displayName": "Display Name value",
+    "description": "Description value",
+    "requiresUserAuthentication": true,
+    "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
+    "enableAuthenticationViaCompanyPortal": true,
+    "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
   }
 }
 ```

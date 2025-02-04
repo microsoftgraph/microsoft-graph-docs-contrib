@@ -1,14 +1,14 @@
 ---
-title: "Get deviceManagement"
-description: "Read properties and relationships of the deviceManagement object."
+title: "retrieveCloudPkiLeafCertificateSummaryReport action"
+description: "Intune Cloudpkigraphservice Devicemanagementreports Retrievecloudpkileafcertificatesummaryreport Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 10/22/2024
+ms.date: 08/01/2024
 ---
 
-# Get deviceManagement
+# retrieveCloudPkiLeafCertificateSummaryReport action
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [deviceManagement](../resources/intune-multidevicepivotservice-devicemanagement.md) object.
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -35,11 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement
+POST /deviceManagement/reports/retrieveCloudPkiLeafCertificateSummaryReport
 ```
-
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -48,17 +45,36 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|certificationAuthorityId|String||
+|select|String collection||
+
+
 
 ## Response
-If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune-multidevicepivotservice-devicemanagement.md) object in the response body.
+If successful, this action returns a `200 OK` response code and a Stream in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement
+POST https://graph.microsoft.com/beta/deviceManagement/reports/retrieveCloudPkiLeafCertificateSummaryReport
+
+Content-type: application/json
+Content-length: 111
+
+{
+  "certificationAuthorityId": "Certification Authority Id value",
+  "select": [
+    "Select value"
+  ]
+}
 ```
 
 ### Response
@@ -66,11 +82,9 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 79
+Content-Length: 119
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceManagement"
-  }
+  "value": "cmV0cmlldmVDbG91ZFBraUxlYWZDZXJ0aWZpY2F0ZVN1bW1hcnlSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgLTIxNTU1NDM1OA=="
 }
 ```

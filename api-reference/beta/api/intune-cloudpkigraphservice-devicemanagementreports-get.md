@@ -1,14 +1,14 @@
 ---
-title: "getAllManagedDeviceWindowsOSImages function"
-description: "Intune Osprovisioninggraphservice Manageddevicewindowsoperatingsystemimage Getallmanageddevicewindowsosimages Api ."
+title: "Get deviceManagementReports"
+description: "Read properties and relationships of the deviceManagementReports object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 09/09/2024
+ms.date: 08/01/2024
 ---
 
-# getAllManagedDeviceWindowsOSImages function
+# Get deviceManagementReports
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-
+Read properties and relationships of the [deviceManagementReports](../resources/intune-cloudpkigraphservice-devicemanagementreports.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -35,8 +35,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/managedDeviceWindowsOSImages/{managedDeviceWindowsOperatingSystemImageId}/getAllManagedDeviceWindowsOSImages
+GET /deviceManagement/reports
 ```
+
+## Optional query parameters
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -48,14 +51,14 @@ GET /deviceManagement/managedDeviceWindowsOSImages/{managedDeviceWindowsOperatin
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [managedDeviceWindowsOperatingSystemImage](../resources/intune-osprovisioninggraphservice-manageddevicewindowsoperatingsystemimage.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and [deviceManagementReports](../resources/intune-cloudpkigraphservice-devicemanagementreports.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/managedDeviceWindowsOSImages/{managedDeviceWindowsOperatingSystemImageId}/getAllManagedDeviceWindowsOSImages
+GET https://graph.microsoft.com/beta/deviceManagement/reports
 ```
 
 ### Response
@@ -63,32 +66,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 725
+Content-Length: 137
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.managedDeviceWindowsOperatingSystemImage",
-      "id": "32a4ac62-ac62-32a4-62ac-a43262aca432",
-      "supportedEditions": [
-        {
-          "@odata.type": "microsoft.graph.managedDeviceWindowsOperatingSystemEdition",
-          "editionType": "professionalN",
-          "supportEndDate": "2016-12-31"
-        }
-      ],
-      "supportedArchitectures": [
-        "x86"
-      ],
-      "availableUpdates": [
-        {
-          "@odata.type": "microsoft.graph.managedDeviceWindowsOperatingSystemUpdate",
-          "buildVersion": "Build Version value",
-          "releaseMonth": 12,
-          "releaseYear": 11
-        }
-      ]
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.deviceManagementReports",
+    "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
+  }
 }
 ```

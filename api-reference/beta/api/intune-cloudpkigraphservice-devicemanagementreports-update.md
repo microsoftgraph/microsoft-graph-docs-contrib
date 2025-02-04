@@ -1,14 +1,14 @@
 ---
-title: "Update deviceManagement"
-description: "Update the properties of a deviceManagement object."
+title: "Update deviceManagementReports"
+description: "Update the properties of a deviceManagementReports object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 10/22/2024
+ms.date: 08/01/2024
 ---
 
-# Update deviceManagement
+# Update deviceManagementReports
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [deviceManagement](../resources/intune-multidevicepivotservice-devicemanagement.md) object.
+Update the properties of a [deviceManagementReports](../resources/intune-cloudpkigraphservice-devicemanagementreports.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /deviceManagement
+PATCH /deviceManagement/reports
 ```
 
 ## Request headers
@@ -45,29 +45,30 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-multidevicepivotservice-devicemanagement.md) object.
+In the request body, supply a JSON representation for the [deviceManagementReports](../resources/intune-cloudpkigraphservice-devicemanagementreports.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-multidevicepivotservice-devicemanagement.md).
+The following table shows the properties that are required when you create the [deviceManagementReports](../resources/intune-cloudpkigraphservice-devicemanagementreports.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|Required Graph property|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-multidevicepivotservice-devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagementReports](../resources/intune-cloudpkigraphservice-devicemanagementreports.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement
+PATCH https://graph.microsoft.com/beta/deviceManagement/reports
 Content-type: application/json
-Content-length: 58
+Content-length: 65
 
 {
-  "@odata.type": "#microsoft.graph.deviceManagement"
+  "@odata.type": "#microsoft.graph.deviceManagementReports"
 }
 ```
 
@@ -76,9 +77,10 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 58
+Content-Length: 114
 
 {
-  "@odata.type": "#microsoft.graph.deviceManagement"
+  "@odata.type": "#microsoft.graph.deviceManagementReports",
+  "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
 }
 ```
