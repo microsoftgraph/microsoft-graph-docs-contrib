@@ -42,7 +42,7 @@ The following table lists the language tags, locales, and the corresponding coun
 |`fr-ca`| French (Canada) | Canada - French | 
 |`fr-fr`| French (France) | France | 
 |`de-de`| German (Germany) | Germany | 
-|`zh-hk`| Chinese (Hong Kong) | Hong Kong |
+|`zh-hk`| Chinese (Hong Kong SAR) | Hong Kong SAR |
 |`en-in`| English (India) | India |
 |`it-it`| Italian (Italy) | Italy |
 |`pt-br`| Portuguese (Brazil) | Brazil |
