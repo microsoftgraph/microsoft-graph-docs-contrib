@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|SynchronizationData-User.Upload|Not available.|
+|Delegated (work or school account)|Tasks.Read|Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|SynchronizationData-User.Upload.OwnedBy|SynchronizationData-User.Upload|
-
+|Application|Tasks.Read.All|Tasks.ReadWrite.All|
