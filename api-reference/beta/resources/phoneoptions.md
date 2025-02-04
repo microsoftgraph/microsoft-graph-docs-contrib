@@ -18,9 +18,9 @@ Defines the calling codes to opt-in and opt-out for telephony services in [exter
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultRegions|Int16 collection|A read-only, Microsoft-defined list of regions that already enable MFA. For more information check out the following [list of countries]("https://learn.microsoft.com/en-us/entra/external-id/customers/how-to-region-code-opt-in")|
+|defaultRegions|Int16 collection|A read-only, Microsoft-defined list of regions that already enable MFA. For more information check out the following [list of countries](/entra/external-id/customers/how-to-region-code-opt-in)|
 |excludeRegions|Int16 collection|A numbers-only set representing the region telecom codes to prevent or disable the telephony service. Validates against current International Subscriber Dialing (ISD) country codes where the maximum code length is 4. Values must be non-null.|
-|includeAdditionalRegions|Int16 collection| A numbers-only set representing the country codes that can be manually added to enable telephony service in those regions, in addition to the list of countries that are already enabled. For more information about regions that require opt-in, see [Regions that need to opt in for MFA telephony verification](/entra/identity/authentication/concept-mfa-regional-opt-in). Validates against current International Subscriber Dialing (ISD) country codes where the maximum code length is 4. Values must be positive integers and cannot overlap with 'excludeRegions'. |
+|includeAdditionalRegions|Int16 collection| A numbers-only set representing the country codes that can be manually added to enable telephony service in those regions, in addition to the list of countries that are already enabled. For more information about regions that require opt-in, see [Regions that need to opt in for MFA telephony verification](/entra/external-id/customers/how-to-region-code-opt-in). Validates against current International Subscriber Dialing (ISD) country codes where the maximum code length is 4. Values must be positive integers and cannot overlap with 'excludeRegions'. |
 
 ## Relationships
 None.

@@ -218,3 +218,119 @@ Content-Type: application/json
     "appId": "63856651-13d9-4784-9abf-20758d509e19"
 }
 ```
+### Example 3: Activate telecom in a region, we're using region codes 222 and 998
+# [HTTP](#tab/http)
+
+```http
+
+
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners  
+{  
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener",  
+    "conditions": {  
+        "applications": {  
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ]  
+        }  
+    },  
+    "priority": 500,  
+    "handler": {  
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler", 
+        /* An Admin can state the country codes they would like to opt in or opt out from. */ 
+        { 
+                "includeAdditionalRegions": [222, 998], 
+                 "excludeRegions": [] 
+        } 
+    }
+} 
+
+```
+
+#### Response
+The following example shows the response to a request to to activate telecom in a region, where the example region codes are 222 and 998.
+```http
+
+HTTP/1.1 201 Created 
+{ 
+    "@odata.context": "https://microsoft.graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity", 
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener", 
+    "id": "2be3336b-e3b4-44f3-9128-b6fd9ad39bb8", 
+    "conditions": {  
+        "applications": { 
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ] 
+        }   
+    },   
+    "handler": 
+    {   
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler ",  
+        { 
+            "includeAdditionalRegions": [222, 998], 
+            "excludeRegions": [] 
+        }, 
+    } 
+} 
+
+
+```
+
+
+### Example 4: Deactivate telecom in a region, we're using region codes 1001, 99, 777 for this example
+# [HTTP](#tab/http)
+
+```http
+
+
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners  
+{  
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener",  
+    "conditions": {  
+        "applications": {  
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ]  
+        }  
+    },  
+    "priority": 500,  
+    "handler": {  
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler", 
+        /* An Admin can state the country codes they would like to opt in or opt out from. */ 
+        { 
+                "includeAdditionalRegions": [], 
+                 "excludeRegions": [1001, 99, 777] 
+        }
+      } 
+} 
+
+
+```
+
+#### Response
+The following example shows the response to a request to to activate telecom in a region, where the example region codes are 222 and 998.
+```http
+
+HTTP/1.1 201 Created 
+{ 
+    "@odata.context": "https://microsoft.graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity", 
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener", 
+    "id": "2be3336b-e3b4-44f3-9128-b6fd9ad39bb8", 
+    "conditions": {  
+        "applications": { 
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ] 
+        }   
+    },   
+    "handler": 
+    {   
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler ",  
+        { 
+            "includeAdditionalRegions": [], 
+            "excludeRegions": [1001, 99, 777] 
+        }, 
+    } 
+}  
+
+```
