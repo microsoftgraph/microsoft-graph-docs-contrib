@@ -25,6 +25,9 @@ The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is
 | suspended | Int32 | The number of units that are suspended because the subscription of the service SKU has been canceled. The units can't be assigned but can still be reactivated before they're deleted.                                  |
 | warning   | Int32 | The number of units that are in warning status. When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it's canceled (moved to a `suspended` state).   |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

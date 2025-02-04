@@ -12,6 +12,9 @@ TimeOffReason timeOffReason = new TimeOffReason();
 timeOffReason.setDisplayName("Vacation");
 timeOffReason.setIconType(TimeOffReasonIconType.Plane);
 timeOffReason.setIsActive(true);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("code", "VacationCode");
+timeOffReason.setAdditionalData(additionalData);
 TimeOffReason result = graphClient.teams().byTeamId("{team-id}").schedule().timeOffReasons().post(timeOffReason);
 
 

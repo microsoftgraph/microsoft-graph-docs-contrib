@@ -51,6 +51,9 @@ Inherits from [conversationMember](conversationmember.md).
 |userId| String | The GUID of the user. |
 |visibleHistoryStartDateTime| DateTimeOffset  | The timestamp that denotes how far back the history of a conversation is shared with the conversation member. This property is settable only for members of a chat.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -26,6 +26,9 @@ Represents the Microsoft Teams client configuration details for a Teams-enabled 
 |isSendLogsAndFeedbackEnabled|Boolean|`True` if sending logs and feedback is enabled.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

@@ -410,6 +410,9 @@ Describes an object and its attributes. Object definitions are part of [director
 }
 ```
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

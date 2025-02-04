@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 12/19/2024
+ms.date: 12/31/2024
 ---
 
 # Enum values
@@ -2150,31 +2150,6 @@ Namespace: microsoft.graph
 | lightRed    | 8     |
 | maxColor    | 9     |
 
-### educationSynchronizationProfileState values
-
-| Member             | Value |
-| ------------------ | ----- |
-| deleting           | 2     |
-| deletionFailed     | 3     |
-| provisioningFailed | 5     |
-| provisioned        | 6     |
-| provisioning       | 7     |
-| unknownFutureValue | 8     |
-
-### educationSynchronizationStatus values
-
-| Member |
-| ------------------ |
-| paused |
-| inProgress |
-| success |
-| error |
-| validationError |
-| quarantined |
-| unknownFutureValue |
-| extracting |
-| validating |
-
 ### educationExternalSource values
 
 | Member |
@@ -3423,6 +3398,7 @@ Possible values for user account types (group membership), per Windows definitio
 | project |
 | driveItem |
 | user |
+| teamsChannel|
 
 ### plannerPlanContextType values
 
@@ -4337,6 +4313,9 @@ Possible values for user account types (group membership), per Windows definitio
 | tokenIssuanceStart |
 | pageRenderStart |
 | unknownFutureValue |
+|attributeCollectionStart|
+|attributeCollectionSubmit|
+|emailOtpSend|
 
 ### microsoftAuthenticatorAuthenticationMethodClientAppName values
 
@@ -4987,6 +4966,15 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
+### callEventType values
+
+| Member |
+| ------------------ |
+| callStarted |
+| callEnded |
+| unknownFutureValue |
+| rosterUpdated |
+
 ### restoreArtifactsBulkRequestStatus values 
 
 |Member|
@@ -4996,13 +4984,6 @@ Possible values for user account types (group membership), per Windows definitio
 |completed|
 |completedWithErrors|
 |unknownFutureValue|
-
-### cloudPCPerformanceReportName values
-
-| Member                 |
-| ---------------------- |
-| performanceTrendReport | 
-| unknownFutureValue     |
 
 ### cloudPCInaccessibleReportName values
 
@@ -5104,4 +5085,24 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |standard|
 |bulk|
+|unknownFutureValue|
+
+### mailboxType values 
+
+|Member|
+|:---|
+|unknown|
+|user|
+|shared|
+|unknownFutureValue|
+
+### tlsClientRegistrationMetadata values 
+
+|Member|
+|:---|
+|tls_client_auth_subject_dn|
+|tls_client_auth_san_dns|
+|tls_client_auth_san_uri|
+|tls_client_auth_san_ip|
+|tls_client_auth_san_email|
 |unknownFutureValue|

@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/up
 
 ---
 
-
 ### Response
 
 The following example shows the response.

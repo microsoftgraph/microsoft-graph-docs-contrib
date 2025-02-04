@@ -39,6 +39,9 @@ For more information about granting apps consent to access a specific instance o
 | permissionType  | string        | The type of permission. Possible values are: `Application`, `Delegated`. Read-only. |
 | permission      | string        | The name of the resource-specific permission. Read-only.                                                |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -59,7 +59,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "deviceTag": "String",
   "phoneAppVersion": "String",
-  "createdDateTime": "DateTimeOffset",
+  "createdDateTime": "String (timestamp)",
   "clientAppName": "microsoftAuthenticator"
 }
 ```

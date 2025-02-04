@@ -4,14 +4,16 @@
       "name": "Users",
       "overview": "../../resources/users.md",
       "resources": [
-        "user"
+        "user",
+        "invitation"
       ]
     },
     {
       "name": "Groups",
       "overview": "../../resources/groups-overview.md",
       "resources": [
-        "group"
+        "group",
+        "groupLifecyclePolicy"
       ]
     },
     {
@@ -20,6 +22,7 @@
       "shouldSort": true,
       "resources": [
         "application",
+        "applicationTemplate",
         "servicePrincipal"
       ],
       "childNodes": [
@@ -27,7 +30,6 @@
           "name": "Application",
           "shouldSort": true,
           "resources": [
-            "applicationTemplate",
             "federatedIdentityCredential"
           ],
           "childNodes": [
@@ -821,9 +823,6 @@
         "educationRubricOutcome",
         "educationSubmission",
         "educationSubmissionResource",
-        "educationSynchronizationError",
-        "educationSynchronizationProfile",
-        "educationSynchronizationProfileStatus",
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
         "relatedContact"
@@ -858,23 +857,7 @@
         "rubricLevel",
         "rubricQuality",
         "rubricQualityFeedbackModel",
-        "rubricQualitySelectedColumnModel",
-        "educationCsvDataProvider",
-        "educationFileSynchronizationVerificationMessage",
-        "educationIdentityCreationConfiguration",
-        "educationIdentityDomain",
-        "educationIdentityMatchingConfiguration",
-        "educationIdentityMatchingOptions",
-        "educationIdentitySynchronizationConfiguration",
-        "educationOneRosterApiDataProvider",
-        "educationPowerSchoolDataProvider",
-        "educationSynchronizationConnectionSettings",
-        "educationSynchronizationCustomization",
-        "educationSynchronizationCustomizations",
-        "educationSynchronizationDataProvider",
-        "educationSynchronizationLicenseAssignment",
-        "educationSynchronizationOAuth1ConnectionSettings",
-        "educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
+        "rubricQualitySelectedColumnModel"
       ]
     },
     {
@@ -1029,7 +1012,13 @@
             "featureRolloutPolicy",
             "mobilityManagementPolicy",
             "organizationSettings",
-            "uxSetting"
+            "uxSetting", 
+            "deviceTemplate", 
+            "mutualTlsOauthConfiguration"
+          ],
+          "complexTypes": [
+            "template",
+            "trustedCertificateAuthorityBase"
           ],
           "childNodes": [
             {
@@ -1454,8 +1443,7 @@
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
-            "externalIdentitiesPolicy",
-            "invitation"
+            "externalIdentitiesPolicy"
           ],
           "childNodes": [
             {
@@ -1464,6 +1452,7 @@
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
                 "onAuthenticationMethodLoadStartListener",
+                "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener",
@@ -1487,6 +1476,25 @@
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
                 "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+              ]
+            },
+            {
+              "name": "Authentication methods policy",
+              "overview": "../../resources/authenticationmethodspolicies-overview.md",
+              "shouldSort": true,
+              "resources": [
+                "authenticationMethodsPolicy",
+                "emailAuthenticationMethodConfiguration",
+                "externalAuthenticationMethodConfiguration",
+                "fido2AuthenticationMethodConfiguration",
+                "hardwareOathAuthenticationMethodConfiguration",
+                "hardwareOathTokenAuthenticationMethodDevice",
+                "microsoftAuthenticatorAuthenticationMethodConfiguration",
+                "smsAuthenticationMethodConfiguration",
+                "temporaryAccessPassAuthenticationMethodConfiguration",
+                "softwareOathAuthenticationMethodConfiguration",
+                "voiceAuthenticationMethodConfiguration",
+                "x509CertificateAuthenticationMethodConfiguration"
               ]
             },
             {
@@ -1555,6 +1563,7 @@
                 "customAuthenticationExtension",
                 "onAttributeCollectionStartCustomExtension",
                 "onAttributeCollectionSubmitCustomExtension",
+                "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -1652,27 +1661,6 @@
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
                 "deviceRegistrationPolicy"
-              ],
-              "childNodes": [
-                {
-                  "name": "Authentication methods policy",
-                  "overview": "../../resources/authenticationmethodspolicies-overview.md",
-                  "shouldSort": true,
-                  "resources": [
-                    "authenticationMethodsPolicy",
-                    "emailAuthenticationMethodConfiguration",
-                    "externalAuthenticationMethodConfiguration",
-                    "fido2AuthenticationMethodConfiguration",
-                    "hardwareOathAuthenticationMethodConfiguration",
-                    "hardwareOathTokenAuthenticationMethodDevice",
-                    "microsoftAuthenticatorAuthenticationMethodConfiguration",
-                    "smsAuthenticationMethodConfiguration",
-                    "temporaryAccessPassAuthenticationMethodConfiguration",
-                    "softwareOathAuthenticationMethodConfiguration",
-                    "voiceAuthenticationMethodConfiguration",
-                    "x509CertificateAuthenticationMethodConfiguration"
-                  ]
-                }
               ]
             },
             {
@@ -2133,6 +2121,26 @@
       ]
     },
     {
+      "name": "Mailbox import and export (preview)",
+      "overview": "../../resources/mailbox-import-export-api-overview.md",
+      "keywords": [
+        "Exchange",
+        "Exchange Import-Export",
+        "Mailbox",
+        "Mailbox import and export"
+      ],
+      "resources": [
+        "mailbox",
+        "mailboxItem",
+        "mailboxFolder",
+        "exchangeSettings"
+      ],
+      "complexTypes": [
+        "exportItemResponse",
+        "mailboxItemImportSession"
+      ]
+    },
+    {
       "name": "Notes",
       "overview": "../../resources/onenote-api-overview.md",
       "keywords": [
@@ -2276,6 +2284,7 @@
       "childNodes": [
         {
           "name": "Identity and access reports",
+          "overview": "../../resources/report-identity-access.md",
           "childNodes": [
             {
               "name": "Microsoft Entra recommendations (preview)",
@@ -2287,7 +2296,6 @@
             },
             {
               "name": "Microsoft Entra activity reports",
-              "overview": "../../resources/report-identity-access.md",
               "shouldSort": true,
               "resources": [
                 "appCredentialSignInActivity",
@@ -2347,7 +2355,7 @@
                   ]
                 },
                 {
-                  "name": "Registration and usage",
+                  "name": "Authentication methods registration and usage",
                   "overview": "../../resources/authenticationmethods-usage-insights-overview.md",
                   "resources": [
                     "credentialUsageSummary",
@@ -2785,7 +2793,8 @@
         "plannerPlanDetails",
         "plannerRoster",
         "plannerUser",
-        "plannerTaskDetails"
+        "plannerTaskDetails",
+        "teamsChannelPlanner"
       ],
       "complexTypes": [
         "businessScenarioGroupTarget",
@@ -2925,6 +2934,13 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ]
+            },
+            {
+              "name": "Call events",
+              "resources": [
+                "microsoft.graph.callEvent",
+                "microsoft.graph.emergencyCallEvent"
               ]
             },
             {

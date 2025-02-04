@@ -733,6 +733,226 @@
       "CreatedDateTime": "2024-12-04T22:51:07.7910122Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Property",
+          "ChangedApiName": "isAtApprovedLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **isAtApprovedLocation** property to the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource.",
+          "Target": "timeCardEvent"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Property",
+          "ChangedApiName": "isActivitiesIncludedWhenCopyingShiftsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isActivitiesIncludedWhenCopyingShiftsEnabled** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "clockIn",
+          "ChangeType": "Addition",
+          "Description": "Added the `isAtApprovedLocation` parameter to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timecard-clockin?view=graph-rest-beta&tabs=http) method.",
+          "Target": "timecard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "clockOut",
+          "ChangeType": "Addition",
+          "Description": "Added the `isAtApprovedLocation` parameter to the [clockOut](https://learn.microsoft.com/en-us/graph/api/timecard-clockout?view=graph-rest-beta&tabs=http) method.",
+          "Target": "timecard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "parameter",
+          "ChangedApiName": "endBreak",
+          "ChangeType": "Addition",
+          "Description": "Added the `isAtApprovedLocation` parameter to the [endBreak](https://learn.microsoft.com/en-us/graph/api/timecard-endbreak?view=graph-rest-beta&tabs=http) method.",
+          "Target": "timecard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "parameter",
+          "ChangedApiName": "startBreak",
+          "ChangeType": "Addition",
+          "Description": "Added the `isAtApprovedLocation` parameter to the [startBreak](https://learn.microsoft.com/en-us/graph/api/timecard-startbreak?view=graph-rest-beta&tabs=http) method.",
+          "Target": "timecard"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Property",
+          "ChangedApiName": "atApprovedLocation",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **atApprovedLocation** property from the  [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource. The **atApprovedLocation** property will stop returning data on November 27, 2027. Going forward, use the **isAtApprovedLocation** property.",
+          "Target": "timeCardEvent"
+        },
+        {
+          "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+          "ApiChange": "Property",
+          "ChangedApiName": "activitiesIncludedWhenCopyingShiftsEnabled",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **activitiesIncludedWhenCopyingShiftsEnabled** property from the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource. The **activitiesIncludedWhenCopyingShiftsEnabled** property will stop returning data on November 27, 2027. Going forward, use the **isActivitiesIncludedWhenCopyingShiftsEnabled** property.",
+          "Target": "schedule"
+        }
+      ],
+      "Id": "153ef394-76c5-49c8-9aa3-cb1455e916df",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-14T04:21:47.560727Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "confirmedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **confirmedBy** enumeration type.",
+          "Target": "confirmedBy"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "timeCardState",
+          "ChangeType": "Addition",
+          "Description": "Added the **timeCardState** enumeration type.",
+          "Target": "timeCardState"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Member",
+          "ChangedApiName": "timeCard",
+          "ChangeType": "Addition",
+          "Description": "Added the `timeCard` member to the **workforceIntegrationSupportedEntities** enumeration.",
+          "Target": "workforceIntegrationSupportedEntities"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timeCardBreak",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCardBreak](https://learn.microsoft.com/en-us/graph/api/resources/timeCardBreak?view=graph-rest-1.0) resource.",
+          "Target": "timeCardBreak"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timeCardEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCardEntry](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEntry?view=graph-rest-1.0) resource.",
+          "Target": "timeCardEntry"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timeCardEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-1.0) resource.",
+          "Target": "timeCardEvent"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timeClockSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeClockSettings](https://learn.microsoft.com/en-us/graph/api/resources/timeClockSettings?view=graph-rest-1.0) resource.",
+          "Target": "timeClockSettings"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdBy** property to the [changeTrackedEntity](https://learn.microsoft.com/en-us/graph/api/resources/changeTrackedEntity?view=graph-rest-1.0) resource.",
+          "Target": "changeTrackedEntity"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dayNote",
+          "ChangeType": "Addition",
+          "Description": "Added the [dayNote](https://learn.microsoft.com/en-us/graph/api/resources/dayNote?view=graph-rest-1.0) resource.",
+          "Target": "dayNote"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Property",
+          "ChangedApiName": "isActivitiesIncludedWhenCopyingShiftsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isActivitiesIncludedWhenCopyingShiftsEnabled** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Property",
+          "ChangedApiName": "startDayOfWeek",
+          "ChangeType": "Addition",
+          "Description": "Added the **startDayOfWeek** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Property",
+          "ChangedApiName": "timeClockSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **timeClockSettings** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dayNotes",
+          "ChangeType": "Addition",
+          "Description": "Added the **dayNotes** relationship to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "timeCards",
+          "ChangeType": "Addition",
+          "Description": "Added the **timeCards** relationship to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Property",
+          "ChangedApiName": "code",
+          "ChangeType": "Addition",
+          "Description": "Added the **code** property to the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulingGroup?view=graph-rest-1.0) resource.",
+          "Target": "schedulingGroup"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timeCard",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-1.0) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+          "ApiChange": "Property",
+          "ChangedApiName": "code",
+          "ChangeType": "Addition",
+          "Description": "Added the **code** property to the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeOffReason?view=graph-rest-1.0) resource.",
+          "Target": "timeOffReason"
+        }
+      ],
+      "Id": "e3ed6468-159c-4a1b-b481-e69b06f81db0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-31T06:45:47.5305703Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }

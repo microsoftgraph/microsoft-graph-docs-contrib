@@ -35,6 +35,9 @@ Metadata for the given object.
 |MaximumLength  |The maximum character length of the target attribute. |
 |ReferencedProperty  |If this is a reference attribute, the property that's referenced.  |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

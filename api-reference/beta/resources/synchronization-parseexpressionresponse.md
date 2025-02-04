@@ -25,6 +25,9 @@ Represents the response from the [parseExpression](../api/synchronization-synchr
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|An [attributeMappingSource](synchronization-attributemappingsource.md) object representing the parsed expression.|
 |parsingSucceeded|Boolean|`true` if the expression was parsed successfully.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

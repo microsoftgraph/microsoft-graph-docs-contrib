@@ -24,6 +24,8 @@ You can access users through Microsoft Graph in two ways:
 
 ## Common API operations
 
+In Microsoft Graph, users are represented by the [user](../resources/user.md) resource type. The following table lists common operations that you can perform on users.
+
 | Path | Description |
 |--|--|
 | [`/me`](../api/user-get.md) | Get the signed-in user's details. |
@@ -36,6 +38,7 @@ You can access users through Microsoft Graph in two ways:
 | [`/users/{id}/drive`](../api/drive-get.md) | Gets the user's OneDrive file store. |
 | [`/users/{id}/memberOf`](../api/user-list-memberof.md) | Lists the groups that the user is a member of. |
 | [`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md) | Lists the Microsoft Teams that the user is a member of. |
+| [`POST /invitations`](../api/invitation-post.md) | Invite a guest as part of business-to-business (B2B) collaboration in Microsoft Entra External ID |
 
 ## Authorization and privileges
 
@@ -162,7 +165,9 @@ Some properties of the user object aren't returned by default and must be specif
 
 While the user resource data is mostly stored in Microsoft Entra ID, some of its properties, like **skills**, are stored in SharePoint Online. In most instances, you can't specify these properties in the same Create or Update request body as other user properties.
 
-Properties stored outside the main data store also aren't supported as part of change tracking. Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
+Properties stored outside the main data store also aren't supported as part of [change tracking](/graph/delta-query-overview). Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
+
+The following properties on the user object are stored outside the main data store: **signInActivity**, **cloudLicensing**, **mailboxSettings**, **deviceEnrollmentLimit**, **print**, **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**.
 
 ## Related content
 

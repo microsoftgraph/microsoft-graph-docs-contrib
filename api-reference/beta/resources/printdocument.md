@@ -31,6 +31,9 @@ Represents a document being printed.
 |contentType|String|The document's content (MIME) type. Read-only.|
 |size|Int64|The document's size in bytes. Read-only.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

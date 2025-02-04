@@ -26,6 +26,9 @@ Base type of [associatedTeamInfo](associatedteaminfo.md) and [sharedWithChannelT
 |tenantId|String|The ID of the Microsoft Entra tenant.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

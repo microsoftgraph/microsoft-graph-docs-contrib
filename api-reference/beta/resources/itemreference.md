@@ -26,6 +26,9 @@ Provides information necessary to address a [driveItem](driveitem.md) or a [list
 | sharepointIds | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | siteId        | String            | For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the **id** property of that [site][] resource. It's an [opaque string that consists of three identifiers](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true#id-property) of the site. <br>For OneDrive, this property isn't populated.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

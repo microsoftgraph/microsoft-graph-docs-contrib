@@ -23,6 +23,9 @@ Represents the details about the hardware health of a Microsoft Teams-enabled [d
 |hdmiIngestHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The health details about the HDMI ingest of a device.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

@@ -23,6 +23,9 @@ The media that's hosted remotely. This is inherited from [mediaConfig](mediaconf
 | preFetchMedia               | [mediaInfo](mediainfo.md) collection                        | The list of media to prefetch.                   |
 | removeFromDefaultAudioGroup | Boolean                                                     | Remove self participant from default audio group. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

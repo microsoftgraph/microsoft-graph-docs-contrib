@@ -23,6 +23,9 @@ The [iPv4CidrRange](ipv4cidrrange.md) derived type is used to configure IPv4 add
 
 None.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

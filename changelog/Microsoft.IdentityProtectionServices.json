@@ -39,6 +39,24 @@
       {
        "ChangeList": [
           {
+          "Id": "95e7994e-b2ca-48bd-bc51-173812e9422a",
+          "ApiChange": "Property",
+          "ChangedApiName": "riskEventType",
+          "ChangeType": "Change",
+          "Description": "Added `suspiciousAPITraffic` as a supported value for the **riskEventType** property in the [servicePrincipalRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-v1.0) resource.",
+          "Target": "servicePrincipalRiskDetection"
+          }
+        ],
+        "Id": "95e7994e-b2ca-48bd-bc51-173812e9422a",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2025-01-15T22:19:32.3422617Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Identity and sign-in"
+      },
+      {
+       "ChangeList": [
+          {
           "Id": "cc62ad51-15d6-4cb9-a1fa-fe18df3abd31",
           "ApiChange": "Enumeration",
           "ChangedApiName": "conditionalAccessInsiderRiskLevels",

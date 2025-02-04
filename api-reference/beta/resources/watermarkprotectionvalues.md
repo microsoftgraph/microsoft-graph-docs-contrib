@@ -25,6 +25,9 @@ These flags indicate that a watermark is enabled for this particular meeting. An
 | isEnabledForContentSharing | Boolean | Indicates whether to apply a watermark to any shared content.  |
 | isEnabledForVideo          | Boolean | Indicates whether to apply a watermark to everyone's video feed. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

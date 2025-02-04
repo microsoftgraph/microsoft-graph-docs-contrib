@@ -35,7 +35,11 @@ If a user deletes one, it is recreated when written to again.
 | name      | string | The unique identifier for this item in the `/drive/special` collection |
 
 
+## Relationships
+None.
+
 ## JSON representation
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

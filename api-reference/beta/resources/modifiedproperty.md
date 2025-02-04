@@ -24,6 +24,9 @@ Describes the changes performed in the target system.
 |newValue|String|New property value.|
 |oldValue|String|Old property value.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

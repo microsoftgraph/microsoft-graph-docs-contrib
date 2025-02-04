@@ -35,6 +35,9 @@ Synchronization rules are updated as part of the [synchronization schema](synchr
 |sourceDirectoryName       |String    |Name of the source directory. Must match one of the directory definitions in [synchronizationSchema](synchronization-synchronizationschema.md).|
 |targetDirectoryName       |String    |Name of the target directory. Must match one of the directory definitions in [synchronizationSchema](synchronization-synchronizationschema.md).|
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 

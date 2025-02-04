@@ -24,6 +24,9 @@ Defines the schedule used to run a [synchronizationJob](synchronization-synchron
 |state|synchronizationScheduleState|The possible values are: `Active`, `Disabled`, `Paused`.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

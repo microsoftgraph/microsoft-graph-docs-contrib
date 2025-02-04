@@ -27,6 +27,9 @@ Represents health details for all peripheral devices attached to a Microsoft Tea
 |speakerHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The health details about the speaker.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

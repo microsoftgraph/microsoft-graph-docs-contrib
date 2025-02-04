@@ -1,8 +1,8 @@
 ---
-author: spgraph-docs-team
+title: "Get drive"
 description: "Retrieve the properties and relationships of a Drive resource."
 ms.date: 09/10/2017
-title: Get drive
+author: spgraph-docs-team
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType

@@ -26,6 +26,9 @@ Base type of [incomingCallOptions](../resources/incomingcalloptions.md) and [out
 | isContentSharingNotificationEnabled  | Boolean                  | Indicates whether content sharing notifications should be enabled for the call.   |
 | isDeltaRosterEnabled                 | Boolean                  | Indicates whether delta roster is enabled for the call.                           |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

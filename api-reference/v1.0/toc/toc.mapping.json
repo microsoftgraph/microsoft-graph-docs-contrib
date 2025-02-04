@@ -4,14 +4,16 @@
       "name": "Users",
       "overview": "../../resources/users.md",
       "resources": [
-        "user"
+        "user",
+        "invitation"
       ]
     },
     {
       "name": "Groups",
       "overview": "../../resources/groups-overview.md",
       "resources": [
-        "group"
+        "group",
+        "groupLifecyclePolicy"
       ]
     },
     {
@@ -19,6 +21,7 @@
       "overview": "../../resources/applications-api-overview.md",
       "resources": [
         "application",
+        "applicationTemplate",
         "servicePrincipal"
       ],
       "childNodes": [
@@ -26,7 +29,6 @@
           "name": "Application",
           "shouldSort": true,
           "resources": [
-            "applicationTemplate",
             "extensionProperty",
             "federatedIdentityCredential"
           ],
@@ -180,6 +182,7 @@
         "Outlook",
         "Outlook calendar"
       ],
+      "overview": "../../resources/calendar-overview.md",
       "resources": [
         "calendar",
         "event",
@@ -954,8 +957,7 @@
           "resources": [
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration",
-            "invitation"
+            "certificateBasedAuthConfiguration"
           ],
           "childNodes": [
             {
@@ -984,6 +986,21 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod"
+              ]
+            },
+            {
+              "name": "Authentication methods policy",
+              "overview": "../../resources/authenticationmethodspolicies-overview.md",
+              "resources": [
+                "authenticationMethodsPolicy",
+                "emailAuthenticationMethodConfiguration",
+                "fido2AuthenticationMethodConfiguration",
+                "microsoftAuthenticatorAuthenticationMethodConfiguration",
+                "smsAuthenticationMethodConfiguration",
+                "temporaryAccessPassAuthenticationMethodConfiguration",
+                "softwareOathAuthenticationMethodConfiguration",
+                "voiceAuthenticationMethodConfiguration",
+                "x509CertificateAuthenticationMethodConfiguration"
               ]
             },
             {
@@ -1112,23 +1129,6 @@
                 "authenticationStrengthPolicy",
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy"
-              ],
-              "childNodes": [
-                {
-                  "name": "Authentication methods policy",
-                  "overview": "../../resources/authenticationmethodspolicies-overview.md",
-                  "resources": [
-                    "authenticationMethodsPolicy",
-                    "emailAuthenticationMethodConfiguration",
-                    "fido2AuthenticationMethodConfiguration",
-                    "microsoftAuthenticatorAuthenticationMethodConfiguration",
-                    "smsAuthenticationMethodConfiguration",
-                    "temporaryAccessPassAuthenticationMethodConfiguration",
-                    "softwareOathAuthenticationMethodConfiguration",
-                    "voiceAuthenticationMethodConfiguration",
-                    "x509CertificateAuthenticationMethodConfiguration"
-                  ]
-                }
               ]
             },
             {
@@ -1307,6 +1307,7 @@
       "childNodes": [
         {
           "name": "Identity and access reports",
+          "overview": "../../resources/report-identity-access.md",
           "childNodes": [
             {
               "name": "Microsoft Entra activity reports",
@@ -1318,7 +1319,7 @@
                   ]
                 },
                 {
-                  "name": "Registration and usage",
+                  "name": "Authentication methods registration and usage",
                   "overview": "../../resources/authenticationmethods-usage-insights-overview.md",
                   "resources": [
                     "userRegistrationDetails",

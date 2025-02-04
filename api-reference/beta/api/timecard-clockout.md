@@ -50,8 +50,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|atApprovedLocation| `Edm.boolean ` | Indicate if this action happens at an approved location.|
-|notes| [itemBody](../resources/itembody.md)  |Notes for the clock out. |
+|isAtApprovedLocation|Boolean|Indicates whether this action happens at an approved location.|
+|notes|[itemBody](../resources/itembody.md)|Notes for the clock out.|
+|atApprovedLocation (deprecated)|Boolean|Indicates whether this action happens at an approved location. This property will be removed by November 27, 2027. Use `isAtApprovedLocation` instead. `atApprovedLocation` and `isAtApprovedLocation` always have the same value, so setting one automatically sets the value for the other. If both are included in the request with different values, the value for `isAtApprovedLocation` takes precedence.|
 
 ## Response
 
@@ -76,10 +77,10 @@ POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32
 Content-type: application/json
 
 {
-    "atAprovedLocation": true,
+    "isAtApprovedLocation": true,
     "notes": {
         "contentType": "text",
-        "content": "clock out smaple notes"
+        "content": "clocking out"
     }
 }
 ```

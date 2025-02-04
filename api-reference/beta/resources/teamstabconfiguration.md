@@ -27,6 +27,9 @@ In addition to the properties below, some tab provider applications specify addi
 |  removeUrl  |   string |  Url called by Teams client when a Tab is removed using the Teams Client.     |
 |  websiteUrl |   string |  Url for showing tab contents outside of Teams.     |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

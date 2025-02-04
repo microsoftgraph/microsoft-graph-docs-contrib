@@ -27,6 +27,9 @@ Delegated permission classifications can be used in combination with user consen
 | permissionId | Guid | The unique identifier (**id**) for the delegated permission listed in the **publishedPermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Required on create. Doesn't support `$filter`. |
 | permissionName | String | The claim value (**value**) for the delegated permission listed in the **publishedPermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Doesn't support `$filter`. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

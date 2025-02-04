@@ -22,6 +22,9 @@ This resource contains a tenant score and description for an individual control.
 |	controlCategory	|	String	|  Control action category (Identity, Data, Device, Apps, Infrastructure). |
 |	description	|	String	|  Description of the control. |
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

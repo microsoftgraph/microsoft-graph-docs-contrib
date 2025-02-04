@@ -22,6 +22,9 @@ Represents any translation override for a language.
 |languageTag	      |String               		  			    |The language to apply the override.<br><br>Returned by default. Not nullable.       |                   
 |translationBehavior  |[translationBehavior](translationPreferences.md#translationbehavior-values)        |The translation override behavior for the language, if any.<br><br>Returned by default. Not nullable.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following is a JSON definition of the resource.

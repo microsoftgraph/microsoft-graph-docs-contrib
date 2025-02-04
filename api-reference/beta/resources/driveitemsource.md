@@ -36,6 +36,9 @@ It's available on the source property of [driveItem](driveitem.md) resources.
 | other               | The application is a third party application.       |
 | unknownFutureValue  | Marker value for future compatibility.            |
 
+## Relationships
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
