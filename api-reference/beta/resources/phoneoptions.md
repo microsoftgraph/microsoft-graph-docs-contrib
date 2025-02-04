@@ -4,6 +4,7 @@ description: "Defines the calling codes to opt-in and opt-out for telephony serv
 author: "aloom3"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
+ms.date: 02/05/2025
 doc_type: resourcePageType
 ---
 

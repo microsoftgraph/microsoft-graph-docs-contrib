@@ -1,10 +1,11 @@
 ---
 title: "onPhoneMethodLoadStartListener resource type"
-description: "Represents a step in a multi-event user flow policy defining what happens when telephony methods are ready to be presented to the user."
+description: "A listener for when calling codes are enabled or disabled for telephony services in an external identities user flow for Microsoft Entra external tenants."
 author: "aloom3"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 02/05/2025
 ---
 
 # onPhoneMethodLoadStartListener resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for configuring the telephony settings for enabling or disabling MFA as defined in the **onPhoneMethodLoadStart** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type. If this listener isn't specified, the default list of calling regions are enabled for MFA.
+A listener for when calling codes are enabled or disabled for telephony services in an external identities user flow for Microsoft Entra external tenants. If this listener isn't specified, the default list of calling regions are enabled for MFA.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 

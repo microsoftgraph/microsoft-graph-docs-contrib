@@ -1,10 +1,11 @@
 ---
 title: "onPhoneMethodLoadStartHandler resource type"
-description: "Represents a step in a multi-event user flow policy defining what happens when telephony methods are ready to be presented to the user."
+description: "Used for configuring the telephony settings for enabling or disabling MFA in an external identities user flow for Microsoft Entra external tenants."
 author: "aloom3"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 02/05/2025
 ---
 
 # onPhoneMethodLoadStartHandler resource type
@@ -13,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for configuring the telephony settings for enabling or disabling MFA as defined in the **onPhoneMethodLoadStartHandler** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
+Used for configuring the telephony settings for enabling or disabling MFA as defined in an external identities user flow for Microsoft Entra external tenants.
 
-This is an abstract complex type from which the [onphonemethodLoadStartExternalUsersAuthHandler](../resources/onphonemethodloadsstartexternalusersauthhandler.md) subtype is derived.
+This is an abstract complex type from which the [onPhoneMethodLoadStartExternalUsersAuthHandler](../resources/onphonemethodloadstartexternalusersauthhandler.md) subtype is derived.
 
 ## Properties
 None.
