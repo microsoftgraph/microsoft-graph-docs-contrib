@@ -23,7 +23,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
 |[List](../api/serviceprincipal-list.md) | [servicePrincipal](serviceprincipal.md) collection | Retrieve a list of servicePrincipal objects. |
-|[Create](../api/federated-serviceprincipals.md)| [servicePrincipal](serviceprincipal.md) | Creates a new servicePrincipal object. |
+|[Create](../api/serviceprincipal-post-serviceprincipals.md)| [servicePrincipal](serviceprincipal.md) | Creates a new servicePrincipal object. |
 |[Get](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Read properties and relationships of servicePrincipal object.|
 |[Update](../api/serviceprincipal-update.md) | None  |Update servicePrincipal object. |
 |[Upsert](../api/serviceprincipal-upsert.md) | [servicePrincipal](serviceprincipal.md) | Create a new servicePrincipal if it doesn't exist, or update the properties of an existing servicePrincipal.|
