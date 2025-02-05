@@ -883,6 +883,26 @@ Namespace: microsoft.graph.security
 | reasonLostInTransit |
 | bulk |
 
+### cloudAttachmentVersion values
+
+|Member|
+|:----|
+|latest     |
+|recent10   |
+|recent100  |
+|all        |
+|unknownFutureValue|
+
+### documentVersion values
+
+|Member|
+|:----|
+|latest     |
+|recent10   |
+|recent100  |
+|all        |
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",

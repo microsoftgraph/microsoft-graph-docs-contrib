@@ -27,11 +27,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "copilotadminlimitedmode-get-permissions"
 }
 -->
-> **Note:** Global admin or Global reader permission is required to call this API.
 
 <!-- { "blockType": "permissions", "name": "copilotadminlimitedmode_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/copilotadminlimitedmode-get-permissions.md)]
 
+> [!IMPORTANT]
+> Global Reader is the least privileged [administrator role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) supported for this operation.
 
 ## HTTP request
 

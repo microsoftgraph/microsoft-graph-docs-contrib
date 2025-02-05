@@ -218,7 +218,6 @@ Content-type: application/json
             "identifierUris": {
                 "nonDefaultUriAddition": {
                     "state": "disabled",
-                    "restrictForAppsCreatedAfterDateTime": null,
                     "excludeAppsReceivingV2Tokens": true,
                     "excludeSaml": true
                 }

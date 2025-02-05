@@ -20,12 +20,10 @@ request_body = Schedule(
 	offer_shift_requests_enabled = True,
 	time_off_requests_enabled = True,
 	start_day_of_week = DayOfWeek.Tuesday,
+	is_activities_included_when_copying_shifts_enabled = True,
 	is_cross_location_shifts_enabled = True,
 	is_cross_location_shift_request_approval_required = True,
 	time_clock_enabled = True,
-	additional_data = {
-			"is_activities_included_when_copying_shifts_enabled" : True,
-	}
 )
 
 result = await graph_client.teams.by_team_id('team-id').schedule.put(request_body)

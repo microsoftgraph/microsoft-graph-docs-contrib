@@ -84,7 +84,7 @@ where files are shared, and where tabs are added.
 |:-------------------|:----------------------------------------------------------------------------------|
 | standard           | Channel inherits the list of members of the parent team.                          |
 | private            | Channel can have members that are a subset of all the members on the parent team. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                 |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
 | shared             | Members can be directly added to the channel without adding them to the team.     |
 
 ### Instance attributes
@@ -110,11 +110,11 @@ For a POST request example, see [Request (create channel in migration state)](/m
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
 |planner|[teamsChannelPlanner](teamschannelplanner.md) | Selective Planner services available to this channel. Currently, only shared channels are supported. Read-only. Nullable. |
 |sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|A collection of teams with which a channel is shared.|
-|tabs|[teamsTab](../resources/teamstab.md) collection| A collection of all the tabs in the channel.|
+|tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. |
 
 ## JSON representation
 
-The following JSON representation shows the resource type
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
