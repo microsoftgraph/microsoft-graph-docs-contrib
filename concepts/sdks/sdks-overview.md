@@ -39,6 +39,13 @@ A release of an SDK in *GA* status can use the Microsoft Graph API v1.0 endpoint
 
 In some cases, it's beneficial to use a Kiota-generated client instead of a Microsoft Graph SDK. For example, a developer that only uses a small subset of the Microsoft Graph APIs and wants to minimize the overall install size of their app can use Kiota to generate a smaller client library. For details, see [Generate Microsoft Graph client libraries with Kiota](generate-with-kiota.md).
 
+
+## SDKs supportability
+
+Microsoft Graph SDKs are open-source GitHub projects so if you have an issue with the SDK, submit it with all the needed information on the "issues" page.  SDK authors and contributors should look into the issue and release a fix accordingly.
+Microsoft CSS doesn't officially, support SDKs but Microsoft supports the HTTP request of the Microsoft Graph API call you are making.
+
+
 ## Related content
 
 - Learn more about the features and capabilities of the SDK in the [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
