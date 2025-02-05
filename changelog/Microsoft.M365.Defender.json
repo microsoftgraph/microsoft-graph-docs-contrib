@@ -2551,6 +2551,14 @@
             "ChangeType": "Addition",
             "Description": "Added the [teamsMessageEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-teamsMessageEvidence?view=graph-rest-beta) resource type.",
             "Target": "teamsMessageEvidence"
+          },
+          {
+            "Id": "d21a4fff-2802-4df4-8d79-c1a54676f7e4",
+            "ApiChange": "Property",
+            "ChangedApiName": "upn",
+            "ChangeType": "Addition",
+            "Description": "Added the **upn** property to the [mailboxEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxEvidence?view=graph-rest-beta) resource.",
+            "Target": "mailboxEvidence"
           }
         ],
         "Id": "a6cdf517-a090-462e-9471-1fdf85322530",
@@ -2593,19 +2601,9 @@
             "ChangeType": "Addition",
             "Description": "Added the [teamsMessageEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-teamsMessageEvidence?view=graph-rest-1.0) resource type.",
             "Target": "teamsMessageEvidence"
-          }
-        ],
-        "Id": "d21a4fff-2802-4df4-8d79-c1a54676f7e4",
-        "Cloud": "Prod",
-        "Version": "v1.0",
-        "CreatedDateTime": "2025-01-27T17:01:34.9888434Z",
-        "WorkloadArea": "Security",
-        "SubArea": ""
-      },
-      {
-        "ChangeList": [
+          },
           {
-            "Id": "6cd36606-327e-4119-b985-8122fd634b07",
+            "Id": "d21a4fff-2802-4df4-8d79-c1a54676f7e4",
             "ApiChange": "Property",
             "ChangedApiName": "upn",
             "ChangeType": "Addition",
@@ -2613,10 +2611,10 @@
             "Target": "mailboxEvidence"
           }
         ],
-        "Id": "6cd36606-327e-4119-b985-8122fd634b07",
-        "Cloud": "Review",
+        "Id": "d21a4fff-2802-4df4-8d79-c1a54676f7e4",
+        "Cloud": "Prod",
         "Version": "v1.0",
-        "CreatedDateTime": "2025-01-29T09:23:56.8552672Z",
+        "CreatedDateTime": "2025-01-27T17:01:34.9888434Z",
         "WorkloadArea": "Security",
         "SubArea": ""
       }
