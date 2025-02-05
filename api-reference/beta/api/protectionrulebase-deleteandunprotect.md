@@ -1,6 +1,6 @@
 ---
 title: "protectionRuleBase: deleteAndUnprotect"
-description: "Delete a dynamic rule and unprotect all drives protected under it**"
+description: "Delete a dynamic rule and unprotect all drives protected under it."
 author: "manikantsinghms"
 ms.reviewer: "manikantsinghms"
 ms.date: 01/15/2025
@@ -9,21 +9,20 @@ ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# driveProtectionRule: deleteAndUnprotect
+# protectionRuleBase: deleteAndUnprotect
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-DeleteAndUnprotect action is only applicable for dynamic rules.
-This action deletes a dynamic Rule and unprotects all protection units protected under it.
+Delete a dynamic rule and unprotect all drives it protects. This action is only applicable to dynamic rules.
 
-The following points apply to deleting a dynamic Rule and unprotecting all artifacts protected under it:
-- Rule moves to `deleteRequested` status when deleteAndUnprotect action is performed on dynamic rule.
-- Unprotecting artifacts and deleting rules are asynchronous operations, so the operations might not complete right away. 
-- This action results in resetting the "dynamicRule" protection source. So, if the artifact is protected by another protection source as well, it results in the artifact being protected by the other protection source only.
-- No operation is allowed on dynamic rule once a rule is in `deleteRequested` state.
+The following points apply when deleting a dynamic rule and unprotecting all artifacts it protects.
+- The rule moves to the `deleteRequested` status when this action is performed on a dynamic rule.
+- Unprotecting artifacts and deleting rules are asynchronous operations, and they might not complete immediately. 
+- This action resets the `dynamicRule` protection source. If the artifact is also protected by another protection source, it's only protected by that source afterward.
+- No operation is allowed on a dynamic rule once a rule is in the `deleteRequested` state.
 
 ## Permissions
 
@@ -62,12 +61,11 @@ If successful, this action returns a `202 Accepted` response code and a [protect
 
 ## Examples
 
-### Example 1: DeleteAndUnprotect driveInclusionRule associated with a onedriveForBusiness protection policy
+### Example 1: Delete and unprotect the driveInclusionRule associated with a OneDrive for work or school protection policy
 
-The following example shows how to delete a **driveInclusionRule** associated with a [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) and unprotect units protected by it.
+The following example shows how to delete a **driveInclusionRule** associated with a [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) and unprotect the units it protects.
 
-
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -79,8 +77,7 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/solutions/backupRestore/driveInclusionRules/40005fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -104,20 +101,20 @@ Content-Type: application/json
     "isAutoApplyEnabled": true,
     "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))",
     "createdBy": {
-        "user": {
-            "identity": "8aaaaec3-5dcb-4b47-9ef9-0dda3e95b9f4"
-        }
+      "user": {
+        "identity": "8aaaaec3-5dcb-4b47-9ef9-0dda3e95b9f4"
+      }
     },
     "lastModifiedBy": {}
   }
 }
 ```
 
-### Example 2: DeleteAndUnprotect mailboxInclusionRule associated with an exchange protection policy
+### Example 2: Delete and unprotect the mailboxInclusionRule associated with an Exchange protection policy
 
-The following example shows how to update a **mailboxInclusionRule** associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+The following example shows how to update a **mailboxInclusionRule** associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -129,8 +126,7 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/solutions/backupRestore/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
