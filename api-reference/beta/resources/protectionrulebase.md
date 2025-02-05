@@ -18,8 +18,8 @@ Namespace: microsoft.graph
 
 Represents a protection rule specified by the client as part of a protection plan applied to Microsoft 365 data in an organization. Currently, only inclusion rules, which are rules that indicate that a protection policy should match the specified criteria, can be defined.
 
-- Protection rules can be static or dynamic. If the **isAutoApplyEnabled** property is `true`, the protection rule is dynamic. Otherwise, it is static.
-- Static rule changes are applied once when it is created with no automatic/dynamic updates.
+- Protection rules can be static or dynamic. If the **isAutoApplyEnabled** property is `true`, the protection rule is dynamic. Otherwise, it's static.
+- Static rule changes are applied once when it's created with no automatic/dynamic updates.
 - Dynamic rule is reevaluated at regular intervals to fetch the latest scope of the rule, resulting in addition/removal of artifacts based on latest rule evaluation.
 - This property can only be set when a **protectionRuleBase** object is created. Therefore, a dynamic rule can't be changed to a static rule, nor vice versa.
 
@@ -33,10 +33,10 @@ The following limitations apply to this resource:
 - The dynamic rules are refreshed at regular intervals, automatically adding and removing of artifacts to the configuration policy depending on the result of rule evaluation.
 - A protection policy can have only one active dynamic rule.
 - Dynamic rules aren't available for sharepoint protection policies.
-- The dynamic rule expression supports a maximum of 100 group ID's in an expression.
+- The dynamic rule expression supports a maximum of 100 group IDs in an expression.
 - At present maximum 6,000 users can be protected via dynamic rule.
-- Expression with nested distribution list or security group is not supported.
-- Multi-geo is not available for dynamic rules.
+- Expression with nested distribution list or security group isn't supported.
+- Multi-geo isn't available for dynamic rules.
 
 ## Properties
 
