@@ -22,6 +22,7 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md)
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
+- [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md)
 
 > [!NOTE]
 >
@@ -69,7 +70,9 @@ You can specify the following properties when creating an **authenticationEventL
 |handler|[onInteractiveAuthFlowStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onInteractiveAuthFlowStartListener** listener type.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
 |handler|[onUserCreateStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onUserCreateStartListener** listener type.|
+|handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md) | The handler to invoke when conditions are met. Can be set for the **onPhoneMethodLoadStartListener** listener type. |
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
+
 
 ## Response
 
@@ -390,6 +393,145 @@ Content-Type: application/json
     "handler": {
         "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler",
         "configuration": null
+    }
+}
+```
+
+### Example 3: Activate telecom for select regions
+
+#### Request
+The following example shows a request that activates telecom in region codes 222 and 998.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onPhoneMethodLoadStartExternalUsersAuthHandler_activate"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+Content-Type: application/json
+
+{  
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener",  
+    "conditions": {  
+        "applications": {  
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ]  
+        }  
+    },  
+    "priority": 500,  
+    "handler": {  
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler", 
+        "smsOptions": { 
+            "includeAdditionalRegions": [222, 998], 
+            "excludeRegions": [] 
+        }
+    }
+} 
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{ 
+    "@odata.context": "https://microsoft.graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity", 
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener", 
+    "id": "2be3336b-e3b4-44f3-9128-b6fd9ad39bb8", 
+    "conditions": {  
+        "applications": { 
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ] 
+        }   
+    },   
+    "handler": {   
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler ",  
+        "smsOptions": { 
+            "includeAdditionalRegions": [222, 998], 
+            "excludeRegions": [] 
+        }, 
+    }
+} 
+```
+
+
+### Example 4: Deactivate telecom in select regions
+
+#### Request
+The following example shows a request that deactivates telecom in region codes 1001, 99, and 777.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onPhoneMethodLoadStartExternalUsersAuthHandler_deactivate"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+Content-Type: application/json
+  
+{  
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener",  
+    "conditions": {  
+        "applications": {  
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ]  
+        }  
+    },  
+    "priority": 500,  
+    "handler": {  
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler",
+        "smsOptions": { 
+            "includeAdditionalRegions": [], 
+            "excludeRegions": [1001, 99, 777] 
+        }
+    } 
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{ 
+    "@odata.context": "https://microsoft.graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity", 
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener", 
+    "id": "2be3336b-e3b4-44f3-9128-b6fd9ad39bb8", 
+    "conditions": {  
+        "applications": { 
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ] 
+        }   
+    },   
+    "handler": {  
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler",
+        "smsOptions": { 
+            "includeAdditionalRegions": [], 
+            "excludeRegions": [1001, 99, 777] 
+        }
     }
 }
 ```

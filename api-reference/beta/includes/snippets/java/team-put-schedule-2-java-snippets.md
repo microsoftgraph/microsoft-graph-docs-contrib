@@ -18,12 +18,10 @@ schedule.setSwapShiftsRequestsEnabled(true);
 schedule.setOfferShiftRequestsEnabled(true);
 schedule.setTimeOffRequestsEnabled(true);
 schedule.setStartDayOfWeek(DayOfWeek.Tuesday);
+schedule.setIsActivitiesIncludedWhenCopyingShiftsEnabled(true);
 schedule.setIsCrossLocationShiftsEnabled(true);
 schedule.setIsCrossLocationShiftRequestApprovalRequired(true);
 schedule.setTimeClockEnabled(true);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("isActivitiesIncludedWhenCopyingShiftsEnabled", true);
-schedule.setAdditionalData(additionalData);
 Schedule result = graphClient.teams().byTeamId("{team-id}").schedule().put(schedule);
 
 
