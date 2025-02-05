@@ -12,28 +12,6 @@ ms.date: 12/31/2024
 
 Namespace: microsoft.graph
 
-### protectionRuleStatus values 
-
-|Member|
-|:---|
-|draft|
-|active|
-|completed|
-|completedWithErrors|
-|unknownFutureValue|
-|updateRequested|
-|deleteRequested|
-
-### protectionSource values 
-
-|Member|
-|:---|
-|none|
-|manual|
-|dynamicRule|
-|unknownFutureValue|
-
-
 ### changeAnnouncementChangeType values
 
 |Member|
@@ -5127,4 +5105,13 @@ Possible values for user account types (group membership), per Windows definitio
 |tls_client_auth_san_uri|
 |tls_client_auth_san_ip|
 |tls_client_auth_san_email|
+|unknownFutureValue|
+
+### protectionSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|dynamicRule|
 |unknownFutureValue|
