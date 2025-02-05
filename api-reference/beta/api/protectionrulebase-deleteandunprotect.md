@@ -1,6 +1,6 @@
 ---
 title: "protectionRuleBase: deleteAndUnprotect"
-description: "Delete a dynamic rule and unprotect all drives protected under it."
+description: "Delete a dynamic rule and unprotect all drives it protects."
 author: "manikantsinghms"
 ms.reviewer: "manikantsinghms"
 ms.date: 01/15/2025
@@ -14,7 +14,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 
 Delete a dynamic rule and unprotect all drives it protects. This action is only applicable to dynamic rules.
 
@@ -61,7 +60,7 @@ If successful, this action returns a `202 Accepted` response code and a [protect
 
 ## Examples
 
-### Example 1: Delete and unprotect the driveInclusionRule associated with a OneDrive for work or school protection policy
+### Example 1: Delete and unprotect a driveInclusionRule associated with a onedriveForBusiness protection policy
 
 The following example shows how to delete a **driveInclusionRule** associated with a [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) and unprotect the units it protects.
 
@@ -110,7 +109,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Delete and unprotect the mailboxInclusionRule associated with an Exchange protection policy
+### Example 2: Delete and unprotect a mailboxInclusionRule associated with an Exchange protection policy
 
 The following example shows how to update a **mailboxInclusionRule** associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 

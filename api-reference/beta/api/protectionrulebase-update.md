@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object. Update is only supported for the dynamic rules of [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) objects. After this method is used, the value of the **status** property of the **protectionRuleBase** object will be `updateRequested`.
+Update the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object. This method is only supported for the dynamic rules of [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) objects. After the update is applied, the value of the **status** property of the **protectionRuleBase** object is set `updateRequested`.
 
 ## Permissions
 
@@ -56,18 +56,17 @@ In the request body, provide a JSON representation of one of the following prope
 |driveExpression|String|Contains a drive expression. For examples, see [driveExpression examples](../resources/driveprotectionrule.md#driveexpression-examples).|
 |mailboxExpression|String|Contains a mailbox expression. For examples, see [mailboxExpression examples](../resources/mailboxprotectionrule.md#mailboxexpression-examples).|
 
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [protectionRuleBase](../resources/protectionrulebase.md) object in the response body.
 
 ## Examples
 
-### Example 1: Update driveInclusionRule associated with an onedriveForBusiness protection policy
+### Example 1: Update a driveInclusionRule associated with a onedriveForBusiness protection policy
 
 The following example shows how to update a **driveInclusionRule** associated with a [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -77,14 +76,14 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/driveInclusionRules/c31adc5c-b65d-4a85-8eda-976947a24124
+Content-Type: application/json
 
 {
-    "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))"
+  "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))"
 }
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -99,37 +98,37 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.driveProtectionRule)",
-    "id": "c31adc5c-b65d-4a85-8eda-976947a24124",
-    "status": "updateRequested",
-    "createdDateTime": "2025-01-15T14:42:34.5329239Z",
-    "lastModifiedDateTime": "2025-01-15T14:58:08.5918017Z",
-    "isAutoApplyEnabled": true,
-    "createdBy": {
-        "application": {
-            "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264"
-        },
-        "user": {
-            "id": "845457dc-4bb2-4815-bef3-8628ebd1952e"
-        }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.driveProtectionRule)",
+  "id": "c31adc5c-b65d-4a85-8eda-976947a24124",
+  "status": "updateRequested",
+  "createdDateTime": "2025-01-15T14:42:34.5329239Z",
+  "lastModifiedDateTime": "2025-01-15T14:58:08.5918017Z",
+  "isAutoApplyEnabled": true,
+  "createdBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264"
     },
-    "lastModifiedBy": {
-        "application": {
-            "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264"
-        },
-        "user": {
-            "id": "845457dc-4bb2-4815-bef3-8628ebd1952e"
-        }
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e"
+    }
+  },
+  "lastModifiedBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264"
     },
-    "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))",
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e"
+    }
+  },
+  "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))"
 }
 ```
 
-### Example 2: Update mailboxInclusionRule associated with an exchange protection policy
+### Example 2: Update a mailboxInclusionRule associated with an Exchange protection policy
 
-The following example shows how to update a **mailboxInclusionRule** associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+The following example shows how to update a **mailboxInclusionRule** associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -142,12 +141,11 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectio
 Content-Type: application/json
 
 {
-   "mailboxExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
+  "mailboxExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -162,28 +160,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxProtectionRule)",
-    "id": "c31adc5c-b65d-4a85-8eda-976947a24124",
-    "status": "updateRequested",
-    "createdBy": {
-        "application": {
-            "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264"
-        },
-        "user": {
-            "id": "845457dc-4bb2-4815-bef3-8628ebd1952e"
-        }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxProtectionRule)",
+  "id": "c31adc5c-b65d-4a85-8eda-976947a24124",
+  "status": "updateRequested",
+  "createdBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264"
     },
-    "createdDateTime": "2015-06-19T12:01:03.45Z",
-    "lastModifiedBy": {
-        "application": {
-            "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264"
-        },
-        "user": {
-            "id": "845457dc-4bb2-4815-bef3-8628ebd1952e"
-        }
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e"
+    }
+  },
+  "createdDateTime": "2015-06-19T12:01:03.45Z",
+  "lastModifiedBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264"
     },
-    "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-    "isAutoApplyEnabled": true,
-    "mailboxExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e"
+    }
+  },
+  "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
+  "isAutoApplyEnabled": true,
+  "mailboxExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
