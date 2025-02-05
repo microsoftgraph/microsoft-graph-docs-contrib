@@ -1455,7 +1455,8 @@
                 "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener"
+                "onUserCreateStartListener",
+                "onPhoneMethodLoadStartListener"
               ]
             },
             {
@@ -2795,7 +2796,8 @@
         "plannerPlanDetails",
         "plannerRoster",
         "plannerUser",
-        "plannerTaskDetails"
+        "plannerTaskDetails",
+        "teamsChannelPlanner"
       ],
       "complexTypes": [
         "businessScenarioGroupTarget",
