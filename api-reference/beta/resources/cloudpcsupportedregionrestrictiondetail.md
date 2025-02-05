@@ -1,6 +1,6 @@
 ---
 title: "cloudPcSupportedRegionRestrictionDetail resource type"
-description: "Represents the restriction status of a cloudPcSupportedRegion, including the CPU quota, GPU quota, and nested virtualization statuses."
+description: "Represents the restriction status of cloud PC supported region. Including CPU provisioning status, GPU provisioning status and Nested Virtualization provisioning status."
 author: "JannyMa"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the restriction status of a [cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md), including the CPU quota, GPU quota, and nested virtualization statuses.
+Represents the restriction status of a [cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md), including the CPU provisioning status, GPU provisioning status, and nested virtualization provisioning status.
 
 ## Properties
 
