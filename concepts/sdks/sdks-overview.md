@@ -42,7 +42,7 @@ In some cases, it's beneficial to use a Kiota-generated client instead of a Micr
 
 ## SDKs supportability
 
-Graph SDK are open-source GitHub projects so if you have an issue with the SDK, submit it with all the needed information on the "issues" page. The SDK project authors and contributors should look into the issue and release a fix for it accordingly.
+Microsoft Graph SDKs are open-source GitHub projects so if you have an issue with the SDK, submit it with all the needed information on the "issues" page. The SDK project authors and contributors should look into the issue and release a fix for it accordingly.
 Microsoft CSS doesn't officially, support SDKs but Microsoft supports the HTTP request of the Microsoft Graph API call you are making.
 
 
