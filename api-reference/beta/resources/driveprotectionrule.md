@@ -26,10 +26,10 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |[List](../api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md) collection|Get a list of the [driveProtectionRule](../resources/driveprotectionrule.md) objects and their properties.|
 |[Create](../api/protectionrulebase-post.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Create a new [driveProtectionRule](../resources/driveprotectionrule.md).|
 |[Get](../api/protectionrulebase-get.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Read the properties and relationships of a [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[Update](../api/protectionrulebase-update.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Update the properties of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.|
 |[Delete](../api/protectionrulebase-delete.md)|None|Delete a [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[Delete and unprotect](../api/protectionrulebase-deleteandunprotect.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Delete and unprotect all the artifacts protected by a dynamic rule.|
 |[Run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activate a drive protection rule.|
-|[DeleteAndUnprotect](../api/protectionrulebase-deleteandunprotect.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Delete and unprotects all the artifacts protected by a dynamic rule.|
-|[Update](../api/protectionrulebase-update.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Updates the dynamic rule expression.|
 
 ## Properties
 

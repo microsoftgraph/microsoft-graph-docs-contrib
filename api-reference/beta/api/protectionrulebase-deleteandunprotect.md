@@ -1,6 +1,6 @@
 ---
 title: "protectionRuleBase: deleteAndUnprotect"
-description: "Delete a dynamic rule and unprotect all drives it protects."
+description: "Delete and unprotect all the artifacts protected by a dynamic rule."
 author: "manikantsinghms"
 ms.reviewer: "manikantsinghms"
 ms.date: 01/15/2025
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a dynamic rule and unprotect all drives it protects. This action is only applicable to dynamic rules.
+Delete and unprotect all the artifacts protected by a dynamic rule. This action is only applicable to dynamic rules.
 
 The following points apply when deleting a dynamic rule and unprotecting all artifacts it protects.
 - The rule moves to the `deleteRequested` status when this action is performed on a dynamic rule.

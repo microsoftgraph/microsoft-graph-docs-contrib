@@ -26,10 +26,10 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |[List](../api/exchangeprotectionpolicy-list-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|Get a list of the [mailboxProtectionRule](../resources/mailboxprotectionrule.md) objects and their properties.|
 |[Create](../api/protectionrulebase-post.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Create a new [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
 |[Get](../api/protectionrulebase-get.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Read the properties and relationships of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
+|[Update](../api/protectionrulebase-update.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Update the properties of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.|
 |[Delete](../api/protectionrulebase-delete.md)|None|Delete a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
+|[Delete and unprotect](../api/protectionrulebase-deleteandunprotect.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Delete and unprotect all the artifacts protected by a dynamic rule.|
 |[Run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activate a mailbox protection rule.|
-|[DeleteAndUnprotect](../api/protectionrulebase-deleteandunprotect.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Delete and unprotects all the artifacts protected by dynamic rule.|
-|[Update](../api/protectionrulebase-update.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Updates the dynamic rule expression.|
 
 ## Properties
 
