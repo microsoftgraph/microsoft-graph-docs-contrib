@@ -1853,6 +1853,14 @@ Namespace: microsoft.graph
 | enabled |
 | unknownFutureValue |
 
+### x509CertificateCRLValidationConfigurationState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
+| unknownFutureValue |
+
 ### anniversaryType values
 
 | Member |
@@ -2149,31 +2157,6 @@ Namespace: microsoft.graph
 | lightBrown  | 7     |
 | lightRed    | 8     |
 | maxColor    | 9     |
-
-### educationSynchronizationProfileState values
-
-| Member             | Value |
-| ------------------ | ----- |
-| deleting           | 2     |
-| deletionFailed     | 3     |
-| provisioningFailed | 5     |
-| provisioned        | 6     |
-| provisioning       | 7     |
-| unknownFutureValue | 8     |
-
-### educationSynchronizationStatus values
-
-| Member |
-| ------------------ |
-| paused |
-| inProgress |
-| success |
-| error |
-| validationError |
-| quarantined |
-| unknownFutureValue |
-| extracting |
-| validating |
 
 ### educationExternalSource values
 
@@ -5009,13 +4992,6 @@ Possible values for user account types (group membership), per Windows definitio
 |completed|
 |completedWithErrors|
 |unknownFutureValue|
-
-### cloudPCPerformanceReportName values
-
-| Member                 |
-| ---------------------- |
-| performanceTrendReport | 
-| unknownFutureValue     |
 
 ### cloudPCInaccessibleReportName values
 

@@ -27,10 +27,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "copilotadminlimitedmode-update-permissions"
 }
 -->
-> **Note:** Global admin or Global reader permission is required to call this API.
 
 <!-- { "blockType": "permissions", "name": "copilotadminlimitedmode_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/copilotadminlimitedmode-update-permissions.md)]
+
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned the *Global Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
