@@ -49,8 +49,7 @@ The following limitations apply to this resource:
 |isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification made to the rule.|
-|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`, `updateRequested`, `deleteRequested`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `updateRequested` , `deleteRequested`. The `draft` member is currently unsupported. |
-
+|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values)|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`, `updateRequested`, `deleteRequested`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `updateRequested` , `deleteRequested`. The `draft` member is currently unsupported. |
 
 ### protectionRuleStatus values
 
@@ -61,8 +60,8 @@ The following limitations apply to this resource:
 |completed | The status of the protection rule when it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule when the rule ran but encountered errors.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.    |
-|updateRequested | The status of the protection rule when it's patch. This value only applies to dynamic rules|
-|deleteRequested | The status of the protection rule on deleteAndUnprotect action. This value only applies to dynamic rules|
+|updateRequested | The status of the protection rule when it's patched. This value applies only to dynamic rules.|
+|deleteRequested | The status of the protection rule on deleteAndUnprotect action. This value applies only to dynamic rules.|
 
 ## Relationships
 
