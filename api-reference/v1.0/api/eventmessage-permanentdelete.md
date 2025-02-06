@@ -1,6 +1,6 @@
 ---
 title: "eventMessage: permanentDelete"
-description: "Permanently delete an event message and place it in the Purges folder in the user's mailbox."
+description: "Permanently delete an event message and place it in the purges folder in the user's mailbox."
 author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
