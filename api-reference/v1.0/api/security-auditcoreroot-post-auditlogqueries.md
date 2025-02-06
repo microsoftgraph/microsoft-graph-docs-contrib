@@ -82,38 +82,6 @@ The following example shows a request.
   "name": "create_auditlogquery_from_"
 }
 -->
-``` http
-POST https://graph.microsoft.com/v1.0/security/auditLog/queries
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.auditLogQuery",
-  "displayName": "String",
-  "filterStartDateTime": "String (timestamp)",
-  "filterEndDateTime": "String (timestamp)",
-  "recordTypeFilters": [
-    "String"
-  ],
-  "keywordFilter": "String",
-  "serviceFilter": "String",
-  "operationFilters": [
-    "String"
-  ],
-  "userPrincipalNameFilters": [
-    "String"
-  ],
-  "ipAddressFilters": [
-    "String"
-  ],
-  "objectIdFilters": [
-    "String"
-  ],
-  "administrativeUnitIdFilters": [
-    "String"
-  ],
-  "status": "String"
-}
-```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-auditlogquery-from--csharp-snippets.md)]
