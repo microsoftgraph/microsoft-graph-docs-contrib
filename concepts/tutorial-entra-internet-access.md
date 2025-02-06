@@ -107,7 +107,7 @@ To configure policies in Microsoft Entra Internet Access, you first need to Crea
 
 ### Step 2.1: Review available web categories list
 
-If you need to review the list of supported web categories before you create a filtering policy, you can gather the full list via this Graph API request. 
+If you need to review the list of supported web categories before you create a filtering policy, you can gather the full list via the following Graph API request. 
 
 #### Request
 
@@ -221,7 +221,7 @@ Content-type: application/json
 
 Step 2.3: Create a filtering profile (also known as a security profile)
 
-Create a filtering profile (renamed to security profile in the Entra admin portal) to hold your policies and target in Conditional Access session control. Once this profile is created, take note of the filtering profile ID when linking in the Conditional Access policy.
+Create a filtering profile (renamed to security profile in the Entra admin portal) that holds your policies and target in Conditional Access session control. Once this profile is created, take note of the filtering profile ID when linking in the Conditional Access policy.
 
 ### Request 
 
