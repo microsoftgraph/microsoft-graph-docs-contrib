@@ -1853,6 +1853,14 @@ Namespace: microsoft.graph
 | enabled |
 | unknownFutureValue |
 
+### x509CertificateCRLValidationConfigurationState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
+| unknownFutureValue |
+
 ### anniversaryType values
 
 | Member |

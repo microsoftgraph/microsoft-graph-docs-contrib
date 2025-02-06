@@ -23,11 +23,7 @@ Update [mailboxFolder](../resources/mailboxfolder.md) properties such as the **d
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "mailboxfolder-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "mailboxfolder_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/mailboxfolder-update-permissions.md)]
 
 ## HTTP request
@@ -65,6 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [mail
 ### Request
 
 The following example shows how to update certain folder properties of a mailbox folder.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_mailboxfolder",
@@ -84,6 +81,12 @@ PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab
     ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
