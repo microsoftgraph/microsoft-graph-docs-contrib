@@ -3,6 +3,56 @@
       {
         "ChangeList": [
           {
+            "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
+            "ApiChange": "Member",
+            "ChangedApiName": "updateRequested",
+            "ChangeType": "Addition",
+            "Description": "Added the `updateRequested` member to the **protectionRuleStatus** enumeration.",
+            "Target": "protectionRuleStatus"
+          },
+          {
+            "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
+            "ApiChange": "Member",
+            "ChangedApiName": "deleteRequested",
+            "ChangeType": "Addition",
+            "Description": "Added the `deleteRequested` member to the **protectionRuleStatus** enumeration.",
+            "Target": "protectionRuleStatus"
+          },
+          {
+            "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "protectionSource",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSource** enumeration type.",
+            "Target": "protectionSource"
+          },
+          {
+            "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-beta) resource.",
+            "Target": "protectionUnitBase"
+          },
+          {
+            "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
+            "ApiChange": "Method",
+            "ChangedApiName": "deleteAndUnprotect",
+            "ChangeType": "Addition",
+            "Description": "Added the [deleteAndUnprotect](https://learn.microsoft.com/en-us/graph/api/protectionRuleBase-deleteAndUnprotect?view=graph-rest-beta) method to the [protectionRuleBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionRuleBase?view=graph-rest-beta) resource.",
+            "Target": "protectionRuleBase"
+          }
+        ],
+        "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-01-07T17:35:40.7754113Z",
+        "WorkloadArea": "EnhancedRestore",
+        "SubArea": "Backup and Restore"
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "9ddaec40-375d-4557-9c2c-b31b99520210",
             "ApiChange": "Enumeration",
             "ChangedApiName": "mailboxType",
