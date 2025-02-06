@@ -12,7 +12,7 @@ ms.date: 01/17/2025
 
 Namespace: microsoft.graph
 
-Permanently delete a mail folder and remove its items from the user's mailbox. For more information about item retention, see [Configure Deleted Item retention and Recoverable Items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
+Permanently delete a mail folder and remove its items from the user's mailbox. For more information about item retention, see [Configure deleted item retention and recoverable items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
 
 > [!Note]
 > Folders aren't placed in the **purges** folder when they're permanently deleted. Permanently deleted folders are removed from the mailbox.
