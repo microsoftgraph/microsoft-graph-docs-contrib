@@ -38,17 +38,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |lastModifiedDateTime|DateTimeOffset|The time of last modification of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. A protection unit protected by multiple sources is indicated by comma-separated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|status|[protectionUnitStatus](../resources/driveprotectionunit.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
-
-### protectionUnitStatus values
-|Member | Description |
-|:------|:------------|
-|protectRequested | Protection of the unit was requested. Applies when a policy is activated or new units are added to an active policy.|
-|protected | Protection was successfully enabled for the unit.|
-|unprotectRequested |A request was made to deactivate protection for the unit.|
-|unprotected | Protection was successfully disabled for the unit.|
-|removeRequested |A user requested removal of the protected unit from the policy. |
-|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ## Relationships
 None.
