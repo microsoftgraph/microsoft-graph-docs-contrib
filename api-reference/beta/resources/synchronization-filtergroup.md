@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # filterGroup resource type
@@ -20,6 +21,9 @@ Defines a set of clauses that an object must satisfy to be considered in scope. 
 |:---------------|:--------|:----------|
 |clauses|[filterClause](synchronization-filterclause.md) collection|Filter clauses (conditions) of this group. All clauses in a group must be satisfied in order for the filter group to evaluate to `true`.|
 |name|String|Human-readable name of the filter group.|
+
+## Relationships
+None.
 
 ## JSON representation
 

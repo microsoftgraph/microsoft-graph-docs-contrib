@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "tommoser"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # parentLabelDetails resource type

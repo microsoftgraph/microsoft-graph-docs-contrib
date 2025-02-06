@@ -18,11 +18,11 @@ import (
 
 requestFilter := "(originSystem eq 'AadGroup' and displayName eq 'Member' and resource/id eq '274a1e21c5-8a76-4578-acb1-641160e076e')"
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceEntitlementManagementCatalogItemResourceRolesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.EntitlementManagementCatalogsItemResourceRolesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Expand: [] string {"resource"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagementCatalogItemResourceRolesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.EntitlementManagementCatalogsItemResourceRolesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -18,10 +18,10 @@ import (
 
 requestFilter := "dueDateTime eq 2050-05-18T17:00:00Z"
 
-requestParameters := &grapheducation.EducationMeAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ItemAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &grapheducation.EducationMeAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ItemAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

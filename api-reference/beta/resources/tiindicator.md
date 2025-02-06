@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # tiIndicator resource type (deprecated)

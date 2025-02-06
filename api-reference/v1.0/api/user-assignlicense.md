@@ -5,6 +5,7 @@ author: "frank-masuelli"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # user: assignLicense
@@ -21,11 +22,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_assignlicense" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-assignlicense-permissions.md)]
 
-For delegated scenarios, the calling user needs at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
-
-- Directory Writers
-- License Administrator
-- User Administrator
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/users/assignLicense` role permission. The following least privileged roles are supported for this operation:
+> - Directory Writers
+> - License Administrator
+> - User Administrator
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

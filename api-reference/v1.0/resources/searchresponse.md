@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # searchResponse resource type

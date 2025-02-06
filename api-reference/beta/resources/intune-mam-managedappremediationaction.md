@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 10/22/2024
 ---
 
 # managedAppRemediationAction enum type
@@ -20,6 +21,7 @@ An admin initiated action to be applied on a managed app.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|block|0|app and the corresponding company data to be blocked|
-|wipe|1|app and the corresponding company data to be wiped|
-|warn|2|app and the corresponding user to be warned|
+|block|0|Indicates the user will be blocked from accessing the app and corporate data|
+|wipe|1|Indicates the corporate data will be removed from the app|
+|warn|2|Indicates user will be warned the when accessing the app|
+|blockWhenSettingIsSupported|3|Indicates user will be blocked from accessing the app and corporate data if devices supports this setting|

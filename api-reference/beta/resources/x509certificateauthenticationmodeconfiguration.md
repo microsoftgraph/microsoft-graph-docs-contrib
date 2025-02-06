@@ -5,6 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # x509CertificateAuthenticationModeConfiguration resource type

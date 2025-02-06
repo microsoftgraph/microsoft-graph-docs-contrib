@@ -5,6 +5,7 @@ author: "DougKirschner"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/29/2024
 ---
 
 # List administrativeUnits
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directory_list_administrativeunits" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directory-list-administrativeunits-permissions.md)]
+
+[!INCLUDE [rbac-admin-units-apis-write](../includes/rbac-for-apis/rbac-admin-units-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -115,9 +118,9 @@ Content-type: application/json
             "deletedDateTime": null,
             "displayName": "Seattle District Technical Schools",
             "description": "Seattle district technical schools administration",
-            "membershipRule": null,
-            "membershipType": null,
-            "membershipRuleProcessingState": null,
+            "membershipRule": "(user.country -eq \"United States\")",
+            "membershipType": "Dynamic",
+            "membershipRuleProcessingState": "On",
             "visibility": "HiddenMembership"
         }
     ]

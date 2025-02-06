@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create timeCard
@@ -70,7 +71,7 @@ Content-type: application/json
   "onBehalfOfUserId":"a3601044-a1b5-438e-b742-f78d01d68a67",
   "clockInEvent":{
      "dateTime":"2019-03-18T00:00:00.000Z",
-     "atApprovedLocation":true,
+     "isAtApprovedLocation":true,
      "notes": {
         "content": "Started late due to traffic in CA 237",
         "contentType": "text"
@@ -89,7 +90,7 @@ Content-type: application/json
         },
         "start":{
            "dateTime":"2019-03-18T02:00:00.000Z",
-           "atApprovedLocation":true,
+           "isAtApprovedLocation":true,
            "notes": {
                 "content": "Reduced break to make up for lost time",
                 "contentType": "text"
@@ -172,6 +173,7 @@ Content-type: application/json
     "clockInEvent": {
       "dateTime": "2019-03-18T00:00:00.000Z",
       "atApprovedLocation": true,
+      "isAtApprovedLocation": true,
       "notes": {
         "content": "Started late due to traffic in CA 237",
         "contentType": "text"
@@ -188,6 +190,7 @@ Content-type: application/json
         "start": {
           "dateTime": "2019-03-18T02:00:00.000Z",
           "atApprovedLocation": true,
+          "isAtApprovedLocation": true,
           "notes": {
             "content": "Reduced break to make up for lost time",
             "contentType": "text"
@@ -200,6 +203,7 @@ Content-type: application/json
   "clockInEvent": {
     "dateTime": "2019-03-18T00:00:00.000Z",
     "atApprovedLocation": true,
+    "isAtApprovedLocation": true,
     "notes": {
       "content": "Started late due to traffic in CA 237",
       "contentType": "text"
@@ -220,6 +224,7 @@ Content-type: application/json
       "start": {
         "dateTime": "2019-03-18T02:00:00.000Z",
         "atApprovedLocation": true,
+        "isAtApprovedLocation": true,
         "notes": {
           "content": "Reduced break to make up for lost time",
           "contentType": "text"

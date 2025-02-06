@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # membersLeftEventMessageDetail resource type
@@ -24,6 +25,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of members who left the chat.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

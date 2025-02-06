@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mikemcleanlive"
 ms.subservice: "entra-groups"
 doc_type: resourcePageType
+ms.date: 06/19/2024
 ---
 
 # conversation resource type

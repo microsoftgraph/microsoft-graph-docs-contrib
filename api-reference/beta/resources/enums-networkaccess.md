@@ -5,6 +5,7 @@ author: "moti-ba"
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: enumTypes
+ms.date: 03/27/2024
 ---
 
 # Network Access Enum Values

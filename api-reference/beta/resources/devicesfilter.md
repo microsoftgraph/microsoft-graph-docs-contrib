@@ -5,6 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 06/08/2024
 ---
 
 # devicesFilter resource type

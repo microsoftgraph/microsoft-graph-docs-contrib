@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "The FolderView resource provides or sets recommendations on the user-experience of a folder."
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # folderView resource type

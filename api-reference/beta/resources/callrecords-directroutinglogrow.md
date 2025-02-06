@@ -5,6 +5,7 @@ author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # directRoutingLogRow resource type

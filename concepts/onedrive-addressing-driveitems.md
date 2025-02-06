@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Address resources in a drive on OneDrive

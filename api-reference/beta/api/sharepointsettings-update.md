@@ -5,6 +5,7 @@ author: "liamfernandez"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # Update settings

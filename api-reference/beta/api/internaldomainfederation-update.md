@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/25/2024
 ---
 
 # Update internalDomainFederation
@@ -65,7 +66,7 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate.|
 |signOutUri|String|URI that clients are redirected to when they sign out of Microsoft Entra services. Corresponds to the **LogOffUri** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings).|
 
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../api-reference/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 ### federatedIdpMfaBehavior values
 
@@ -83,7 +84,7 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [internalDomainFederation](../resources/internaldomainfederation.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -143,37 +144,12 @@ Content-Type: application/json
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.internalDomainFederation"
+  "blockType": "response"
 }
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.internalDomainFederation",
-  "id": "6601d14b-d113-8f64-fda2-9b5ddda18ecc",
-   "displayName": "Contoso name change",
-   "issuerUri": "http://contoso.com/adfs/services/trust",
-   "metadataExchangeUri": "https://sts.contoso.com/adfs/services/trust/mex",
-   "signingCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
-   "passiveSignInUri": "https://sts.contoso.com/adfs/ls",
-   "preferredAuthenticationProtocol": "wsFed",
-   "activeSignInUri": "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed",
-   "signOutUri": "https://sts.contoso.com/adfs/ls",
-   "promptLoginBehavior": "nativeSupport",
-   "isSignedAuthenticationRequestRequired": true,
-   "nextSigningCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
-   "signingCertificateUpdateStatus": {
-        "certificateUpdateResult": "Success",
-        "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"
-    },
-   "federatedIdpMfaBehavior": "acceptIfMfaDoneByFederatedIdp",
-   "passwordResetUri": "https://sts.contoso.com/adfs/passwordReset"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!--

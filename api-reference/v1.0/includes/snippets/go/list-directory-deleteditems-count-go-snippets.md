@@ -22,12 +22,12 @@ headers.Add("ConsistencyLevel", "eventual")
 
 requestCount := true
 
-requestParameters := &graphdirectory.DirectoryDeletedItemsGraph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphdirectory.DeletedItemsGraph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"deletedDateTime asc"},
 	Select: [] string {"id","DisplayName","deletedDateTime"},
 }
-configuration := &graphdirectory.DirectoryDeletedItemsGraph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphdirectory.DeletedItemsGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

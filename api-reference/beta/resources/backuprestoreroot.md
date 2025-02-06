@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Backup restore
+ms.date: 06/27/2024
 ---
 
 # backupRestoreRoot resource type

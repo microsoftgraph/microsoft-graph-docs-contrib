@@ -5,6 +5,7 @@ author: "benjaminlee"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/09/2024
 ---
 
 # virtualEventSettings resource type

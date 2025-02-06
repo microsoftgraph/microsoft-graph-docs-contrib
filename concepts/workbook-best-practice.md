@@ -4,6 +4,7 @@ description: "Find tips for working with Excel APIs in Microsoft Graph. Learn ho
 author: "grangeryy"
 ms.localizationpriority: medium
 ms.subservice: "excel"
+ms.date: 11/07/2024
 ---
 
 # Best practices for working with the Excel API

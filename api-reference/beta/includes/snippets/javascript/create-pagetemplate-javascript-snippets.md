@@ -19,7 +19,7 @@ const pageTemplate = {
   showRecommendedPages: false,
   titleArea: {
     enableGradientEffect: true,
-    imageWebUrl: '/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG',
+    imageWebUrl: 'https://media.contoso.odsp.cdn.office.net/sitepagethumbnail.png',
     layout: 'colorBlock',
     showAuthor: true,
     showPublishedDate: false,

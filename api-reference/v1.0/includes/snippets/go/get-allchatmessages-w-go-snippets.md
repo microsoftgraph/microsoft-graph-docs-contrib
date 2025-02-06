@@ -22,10 +22,10 @@ headers.Add("Prefer", "include-unknown-enum-members")
 
 requestTop := int32(2)
 
-requestParameters := &graphchats.ChatItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ItemMessagesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphchats.ChatItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ItemMessagesRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

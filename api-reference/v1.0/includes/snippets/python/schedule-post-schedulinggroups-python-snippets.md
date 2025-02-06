@@ -15,6 +15,9 @@ request_body = SchedulingGroup(
 		"c5d0c76b-80c4-481c-be50-923cd8d680a1",
 		"2a4296b3-a28a-44ba-bc66-0274b9b95851",
 	],
+	additional_data = {
+			"code" : "CashierCode",
+	}
 )
 
 result = await graph_client.teams.by_team_id('team-id').schedule.scheduling_groups.post(request_body)

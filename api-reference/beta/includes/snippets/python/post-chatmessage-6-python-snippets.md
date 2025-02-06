@@ -14,7 +14,7 @@ from msgraph_beta.generated.models.chat_message_hosted_content import ChatMessag
 request_body = ChatMessage(
 	body = ItemBody(
 		content_type = BodyType.Html,
-		content = "<div><div>\n<div><span><img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>",
+		content = "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">",
 	),
 	hosted_contents = [
 		ChatMessageHostedContent(

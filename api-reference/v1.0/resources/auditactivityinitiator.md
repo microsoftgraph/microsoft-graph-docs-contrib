@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhanyahk"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # auditActivityInitiator resource type

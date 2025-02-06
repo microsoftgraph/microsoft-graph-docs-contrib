@@ -18,10 +18,10 @@ import (
 
 requestFilter := "status eq 'working'"
 
-requestParameters := &grapheducation.EducationClasseItemGetRecentlyModifiedSubmissionsWithRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemGetRecentlyModifiedSubmissionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &grapheducation.EducationClasseItemGetRecentlyModifiedSubmissionsWithRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemGetRecentlyModifiedSubmissionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

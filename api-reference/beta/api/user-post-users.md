@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Create user
@@ -20,7 +21,7 @@ The request body contains the user to create. At a minimum, you must specify the
 This operation returns by default only a subset of the properties for each user. These default properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are not returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
 
 >[!NOTE]
->To create external users, use the [invitation API](invitation-post.md).
+>To create external users as part of B2B collaboration with your organization, use the [invitation API](invitation-post.md). To create a customer, citizen, or business partner in Microsoft Entra External ID in external tenants, see [Example 3: Create a customer account](#example-3-create-a-customer-account-in-external-tenants).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -166,9 +167,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a user with social and local account identities
+### Example 2: Create a user with social and local account identities in Azure AD B2C
 
-Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.
+Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in Azure AD B2C tenants.
 
 >[!NOTE]
 >For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
@@ -284,6 +285,108 @@ Content-type: application/json
     }
   ],
   "passwordPolicies": "DisablePasswordExpiration"
+}
+```
+
+### Example 3: Create a customer account in external tenants
+
+This example shows how to create a customer account in Microsoft Entra External ID in external tenants.
+
+>[!NOTE]
+>For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_user_customer_external_tenant"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/users
+Content-type: application/json
+
+{
+    "displayName": "Test User",
+    "identities": [
+        {
+            "signInType": "emailAddress",
+            "issuer": "contoso.onmicrosoft.com",
+            "issuerAssignedId": "adelev@adatum.com"
+        }
+    ],
+    "mail": "adelev@adatum.com",
+    "passwordProfile": {
+        "password": "passwordValue",
+        "forceChangePasswordNextSignIn": false
+    },
+    "passwordPolicies": "DisablePasswordExpiration"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-user-customer-external-tenant-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-user-customer-external-tenant-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-user-customer-external-tenant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-user-customer-external-tenant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-user-customer-external-tenant-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-user-customer-external-tenant-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-user-customer-external-tenant-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-user-customer-external-tenant-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "id": "daabd280-3978-4d29-acce-d677b9cf2e4d",
+    "businessPhones": [],
+    "displayName": "Test User",
+    "givenName": null,
+    "jobTitle": null,
+    "mail": "adelev@adatum.com",
+    "mobilePhone": null,
+    "officeLocation": null,
+    "preferredLanguage": null,
+    "surname": null,
+    "userPrincipalName": "daabd280-3978-4d29-acce-d677b9cf2e4d@contoso.onmicrosoft.com"
 }
 ```
 

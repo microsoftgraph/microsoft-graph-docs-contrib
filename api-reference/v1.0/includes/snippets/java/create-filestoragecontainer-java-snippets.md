@@ -12,11 +12,9 @@ FileStorageContainer fileStorageContainer = new FileStorageContainer();
 fileStorageContainer.setDisplayName("My Application Storage Container");
 fileStorageContainer.setDescription("Description of My Application Storage Container");
 fileStorageContainer.setContainerTypeId(UUID.fromString("91710488-5756-407f-9046-fbe5f0b4de73"));
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
- settings = new ();
+FileStorageContainerSettings settings = new FileStorageContainerSettings();
 settings.setIsOcrEnabled(true);
-additionalData.put("settings", settings);
-fileStorageContainer.setAdditionalData(additionalData);
+fileStorageContainer.setSettings(settings);
 FileStorageContainer result = graphClient.storage().fileStorage().containers().post(fileStorageContainer);
 
 

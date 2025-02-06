@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 toc.title: Connectivity configuration link (deprecated)
+ms.date: 08/02/2024
 ---
 
 # connectivityConfigurationLink resource type (deprecated)

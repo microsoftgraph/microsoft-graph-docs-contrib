@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let driveProtectionUnits = await client.api('/solutions/backupRestore/driveProtectionUnits')
+let driveProtectionUnit = await client.api('/solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit')
 	.version('beta')
 	.get();
 

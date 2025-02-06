@@ -5,6 +5,7 @@ author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # insights resource type

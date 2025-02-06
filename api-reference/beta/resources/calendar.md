@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "iamgirishck"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 08/21/2024
 ---
 
 # calendar resource type

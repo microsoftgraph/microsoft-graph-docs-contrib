@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: conceptualPageType
+ms.date: 05/13/2024
 ---
 
 # Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs (preview)

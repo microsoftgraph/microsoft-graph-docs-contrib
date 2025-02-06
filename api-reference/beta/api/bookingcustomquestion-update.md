@@ -5,6 +5,7 @@ author: "razortbone"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 04/19/2024
 ---
 
 # Update bookingCustomQuestion

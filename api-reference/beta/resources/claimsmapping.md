@@ -5,6 +5,7 @@ author: "namkedia"
 ms.localizationpriority: high
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # claimsMapping resource type

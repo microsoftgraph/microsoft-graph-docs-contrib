@@ -5,6 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # attackSimulationTrainingUserCoverage resource type

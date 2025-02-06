@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 07/03/2024
 ---
 
 # Get meetingAttendanceReport
@@ -402,6 +403,12 @@ Content-Type: application/json
   "id": "b76965d4-0763-496e-9980-b323c5f3aa3b",
   "totalParticipantCount": 2,
   "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
-  "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
+  "meetingEndDateTime": "2021-10-04T23:18:57.563Z",
+  "externalEventInformation": [
+    {
+      "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+      "externalEventId": "myExternalEventId"
+    }
+  ]
 }
 ```

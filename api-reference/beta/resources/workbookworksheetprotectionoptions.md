@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # workbookWorksheetProtectionOptions resource type
@@ -29,6 +30,9 @@ Represents the options in sheet protection.
 |allowInsertRows|Boolean|Represents the worksheet protection option of allowing inserting rows.|
 |allowPivotTables|Boolean|Represents the worksheet protection option of allowing using pivot table feature.|
 |allowSort|Boolean|Represents the worksheet protection option of allowing using sort feature.|
+
+## Relationships
+None.
 
 ## JSON representation
 

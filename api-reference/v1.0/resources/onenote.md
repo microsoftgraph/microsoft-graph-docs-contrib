@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # onenote resource type

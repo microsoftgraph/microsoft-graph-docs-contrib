@@ -5,6 +5,7 @@ author: "malabikaroy"
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # employeeExperience resource type

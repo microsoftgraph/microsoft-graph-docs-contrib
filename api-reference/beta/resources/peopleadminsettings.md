@@ -5,6 +5,7 @@ author: "rwaithera"
 ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # peopleAdminSettings resource type

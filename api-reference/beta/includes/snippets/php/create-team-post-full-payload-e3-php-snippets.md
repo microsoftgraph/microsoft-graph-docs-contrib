@@ -26,6 +26,7 @@ $requestBody = new Team();
 $requestBody->setVisibility(new TeamVisibilityType('private'));
 $requestBody->setDisplayName('Sample Engineering Team');
 $requestBody->setDescription('This is a sample engineering team, used to showcase the range of properties supported by this API');
+$requestBody->setFirstChannelName('My First Channel of the team');
 $channelsChannel1 = new Channel();
 $channelsChannel1->setDisplayName('Announcements 📢');
 $channelsChannel1->setIsFavoriteByDefault(true);

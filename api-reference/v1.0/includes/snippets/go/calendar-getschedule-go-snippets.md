@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphusers.ItemCalendarGetScheduleRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.CalendarGetScheduleRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphusers.NewItemGetSchedulePostRequestBody()

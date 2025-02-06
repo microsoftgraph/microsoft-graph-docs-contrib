@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 03/21/2024
 ---
 
 # attributeMappingSource resource type
@@ -76,6 +77,9 @@ Expression extracting first eight characters from the source attribute.
     "type": "Function"
 }
 ```
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

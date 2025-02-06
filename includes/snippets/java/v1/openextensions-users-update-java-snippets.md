@@ -11,7 +11,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 Extension extension = new Extension();
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
 additionalData.put("theme", "light");
-additionalData.put("color", "yellow");
+additionalData.put("color", "purple");
 additionalData.put("lang", "Swahili");
 extension.setAdditionalData(additionalData);
 Extension result = graphClient.me().extensions().byExtensionId("{extension-id}").patch(extension);

@@ -13,9 +13,9 @@ from msgraph_beta.generated.models.open_id_connect_response_types import OpenIdC
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = OpenIdConnectIdentityProvider(
 	odata_type = "microsoft.graph.openIdConnectIdentityProvider",
-	display_name = "Login with the Contoso identity provider",
-	client_id = "56433757-cadd-4135-8431-2c9e3fd68ae8",
-	client_secret = "12345",
+	display_name = "Contoso",
+	client_id = "00001111-aaaa-2222-bbbb-3333cccc4444",
+	client_secret = "4294967296",
 	claims_mapping = ClaimsMapping(
 		user_id = "myUserId",
 		given_name = "myGivenName",

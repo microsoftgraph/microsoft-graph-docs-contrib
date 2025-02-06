@@ -1,10 +1,11 @@
 ---
 title: settings resource type
-description: "The tenant configuration settings that are associated with Microsoft Entra Internet Access and Microsoft Entra Private Access capabilities under the umbrella of Global Secure Access."
+description: "The tenant configuration settings associated with Microsoft Entra Internet Access and Microsoft Entra Private Access. These capabilities are under the umbrella of Global Secure Access."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # settings resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The tenant configuration settings that are associated with the Microsoft Entra Internet Access and Microsoft Entra Private Access capabilities under the umbrella of Global Secure Access.
+The tenant configuration settings associated with Microsoft Entra Internet Access and Microsoft Entra Private Access. These capabilities are under the umbrella of Global Secure Access.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

@@ -5,6 +5,7 @@ description: Get itemAnalyticyStats for the activities that took place on this r
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 03/12/2024
 ---
 # Get item activity stats by interval
 

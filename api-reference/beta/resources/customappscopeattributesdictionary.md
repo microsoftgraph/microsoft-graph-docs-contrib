@@ -5,6 +5,7 @@ author: "cubika"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # customAppScopeAttributesDictionary resource type
@@ -19,11 +20,13 @@ Currently only the Exchange Online RBAC provider is supported.
 
 ## Properties
 
-<!--### For an Exchange Online provider-->
 |Property|Type|Description|
 |:---|:---|:---|
 |exclusive | Boolean | Indicates whether the object is an [exclusive scope](/exchange/understanding-exclusive-scopes-exchange-2013-help). |
 |recipientFilter| String | A filter query that defines how you segment your recipients that admins can manage. |
+
+## Relationships
+None.
 
 ## JSON representation
 

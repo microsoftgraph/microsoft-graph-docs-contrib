@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 toc.title: "Health monitoring"
+ms.date: 10/09/2024
 ---
 
 # Microsoft Entra Health monitoring API overview

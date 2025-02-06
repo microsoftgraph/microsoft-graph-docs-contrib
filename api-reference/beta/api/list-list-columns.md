@@ -5,6 +5,7 @@ description: "List columns in a list."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.date: 04/05/2024
 ---
 
 # List columns in a list

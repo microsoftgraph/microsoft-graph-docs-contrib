@@ -12,6 +12,7 @@ Team team = new Team();
 team.setVisibility(TeamVisibilityType.Private);
 team.setDisplayName("Sample Engineering Team");
 team.setDescription("This is a sample engineering team, used to showcase the range of properties supported by this API");
+team.setFirstChannelName("My First Channel of the team");
 LinkedList<Channel> channels = new LinkedList<Channel>();
 Channel channel = new Channel();
 channel.setDisplayName("Announcements 📢");

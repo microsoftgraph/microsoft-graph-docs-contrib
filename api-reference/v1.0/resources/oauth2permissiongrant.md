@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "psignoret"
 toc.title: OAuth2 (delegated) permission grant
+ms.date: 07/22/2024
 ---
 
 # oAuth2PermissionGrant resource type

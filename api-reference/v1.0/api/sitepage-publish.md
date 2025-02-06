@@ -5,6 +5,7 @@ title: "sitePage: publish"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 # sitePage: publish
 

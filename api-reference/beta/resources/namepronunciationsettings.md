@@ -5,6 +5,7 @@ author: "fondieki"
 ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: resourcePageType
+ms.date: 10/28/2024
 ---
 
 # namePronunciationSettings resource type
@@ -17,8 +18,6 @@ Represents a setting to control people-related admin settings in the tenant.
 
 
 Inherits from [entity](../resources/entity.md).
-
-[!INCLUDE [namepronunciation-add-boundary-warning-note](../../../includes/namepronunciation-boundary-warning-note.md)]
 
 ## Methods
 |Method|Return type|Description|

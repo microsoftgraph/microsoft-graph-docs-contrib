@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jasonbro"
 ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 # translationLanguageOverride resource type
 
@@ -20,6 +21,9 @@ Represents any translation override for a language.
 |---------------------|-------------------------------------------------------------|-----------------------------------------------------------------------|
 |languageTag	      |String               		  			    |The language to apply the override.<br><br>Returned by default. Not nullable.       |                   
 |translationBehavior  |[translationBehavior](translationPreferences.md#translationbehavior-values)        |The translation override behavior for the language, if any.<br><br>Returned by default. Not nullable.|
+
+## Relationships
+None.
 
 ## JSON representation
 

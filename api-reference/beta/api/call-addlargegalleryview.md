@@ -5,6 +5,7 @@ author: "navali-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # call: addLargeGalleryView

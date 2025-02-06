@@ -4,6 +4,7 @@ description: "Learn how to embed the Microsoft Teams experience within your own 
 author: "erichui-ms"
 ms.localizationpriority: high
 ms.subservice: "teams"
+ms.date: 11/07/2024
 ---
 
 # Embed Microsoft Teams in your app

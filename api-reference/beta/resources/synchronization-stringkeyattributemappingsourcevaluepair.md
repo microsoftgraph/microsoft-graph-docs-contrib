@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # stringKeyAttributeMappingSourceValuePair resource type
@@ -20,6 +21,9 @@ Represents a key-value pair where the key is a string and the value is [attribut
 |:---------------|:--------|:----------|
 |key|String|The name of the parameter.|
 |value|[attributeMappingSource](synchronization-attributemappingsource.md)|The value of the parameter.|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer <token>")
 
-configuration := &graphserviceprincipals.ServicePrincipalItemSynchronizationJobItemRestartRequestBuilderPostRequestConfiguration{
+configuration := &graphserviceprincipals.ItemSynchronizationJobsItemRestartRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphserviceprincipals.NewRestartPostRequestBody()

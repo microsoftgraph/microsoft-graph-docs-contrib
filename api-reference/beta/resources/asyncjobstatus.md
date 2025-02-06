@@ -20,6 +20,16 @@ The following API calls return **asyncJobStatus** resources:
 
 * [Copy Item](../api/driveitem-copy.md)
 
+## Properties
+
+| Property name          | Type   | Description                                                                                |
+|:-----------------------|:-------|:-------------------------------------------------------------------------------------------|
+| percentageComplete| Double | A value between 0 and 100 that indicates the completion percentage.                          |
+| status             | String | A string value that maps to an enumeration of possible values about the status of the job. |
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.asyncJobStatus", "@type.aka": "oneDrive.asyncOperationStatus" } -->
@@ -30,13 +40,6 @@ The following API calls return **asyncJobStatus** resources:
   "status": "notStarted | inProgress | completed | updating | failed | deletePending | deleteFailed | waiting"
 }
 ```
-
-## Properties
-
-| Property name          | Type   | Description                                                                                |
-|:-----------------------|:-------|:-------------------------------------------------------------------------------------------|
-| **percentageComplete** | Double | A value between 0 and 100 that indicates the percentage complete.                          |
-| **status**             | String | A string value that maps to an enumeration of possible values about the status of the job. |
 
 <!--
 {

@@ -12,7 +12,6 @@ using Microsoft.Graph.Models;
 var requestBody = new AccessPackageAssignmentRequest
 {
 	OdataType = "#microsoft.graph.accessPackageAssignmentRequest",
-	Id = "7a6ab703-0780-4b37-8445-81f679b2d75c",
 	RequestType = AccessPackageRequestType.AdminUpdate,
 	Answers = new List<AccessPackageAnswer>
 	{

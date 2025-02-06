@@ -5,6 +5,7 @@ description: Represents an item in a sharepoint list.
 ms.localizationpriority: high
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 10/09/2024
 ---
 
 # listItem resource type

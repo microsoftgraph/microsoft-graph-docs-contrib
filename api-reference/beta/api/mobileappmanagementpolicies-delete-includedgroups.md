@@ -5,6 +5,7 @@ author: "ravennMSFT"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/31/2024
 ---
 
 # Delete includedGroup
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "mobileappmanagementpolicies_delete_includedgroups" } -->
 [!INCLUDE [permissions-table](../includes/permissions/mobileappmanagementpolicies-delete-includedgroups-permissions.md)]
+
+[!INCLUDE [rbac-mam-mdm-policies-apis-write](../includes/rbac-for-apis/rbac-mam-mdm-policies-apis-write.md)]
 
 ## HTTP request
 

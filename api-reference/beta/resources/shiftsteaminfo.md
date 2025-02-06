@@ -5,6 +5,7 @@ author: shanemalone
 ms.localizationpriority: high
 ms.subservice: teams
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # shiftsTeamInfo resource type

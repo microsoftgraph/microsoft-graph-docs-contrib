@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphshares.ShareItemDriveItemRequestBuilderGetQueryParameters{
+requestParameters := &graphshares.ItemDriveItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"children"},
 }
-configuration := &graphshares.ShareItemDriveItemRequestBuilderGetRequestConfiguration{
+configuration := &graphshares.ItemDriveItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

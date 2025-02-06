@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 07/30/2024
 ---
 
 # workbookChartAxis resource type

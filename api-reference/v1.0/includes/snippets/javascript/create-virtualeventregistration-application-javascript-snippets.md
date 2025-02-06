@@ -14,6 +14,10 @@ const virtualEventRegistration = {
   firstName: 'Diane',
   lastName: 'Demoss',
   email: 'DianeDemoss@contoso.com',
+  externalRegistrationInformation: {
+    referrer: 'Facebook',
+    registrationId: 'myExternalRegistrationId'
+  },
   preferredTimezone: 'Pacific Standard Time',
   preferredLanguage: 'en-us',
   registrationQuestionAnswers: [

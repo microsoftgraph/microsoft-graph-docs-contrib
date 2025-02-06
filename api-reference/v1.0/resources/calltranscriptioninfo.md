@@ -5,6 +5,7 @@ author: "rzhang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # callTranscriptionInfo resource type

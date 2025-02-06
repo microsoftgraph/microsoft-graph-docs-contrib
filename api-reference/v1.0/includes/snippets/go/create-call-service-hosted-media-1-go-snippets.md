@@ -42,6 +42,8 @@ requestBody.SetRequestedModalities(requestedModalities)
 callOptions := graphmodels.NewOutgoingCallOptions()
 isContentSharingNotificationEnabled := true
 callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
+isDeltaRosterEnabled := true
+callOptions.SetIsDeltaRosterEnabled(&isDeltaRosterEnabled) 
 requestBody.SetCallOptions(callOptions)
 mediaConfig := graphmodels.NewServiceHostedMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)

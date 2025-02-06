@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/06/2024
 ---
 
 # List certificateBasedAuthConfigurations
@@ -26,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "certificatebasedauthconfiguration_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthconfiguration-list-permissions.md)]
+
+[!INCLUDE [rbac-cert-based-auth-config-apis](../includes/rbac-for-apis/rbac-cert-based-auth-config-apis.md)]
 
 ## HTTP request
 

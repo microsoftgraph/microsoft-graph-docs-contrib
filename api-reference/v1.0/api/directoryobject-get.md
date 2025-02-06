@@ -5,6 +5,7 @@ author: "keylimesoda"
 ms.localizationpriority: high
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get directoryObject

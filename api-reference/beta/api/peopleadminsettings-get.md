@@ -5,6 +5,7 @@ author: "rwaithera"
 ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 09/19/2024
 ---
 
 # Get peopleAdminSettings

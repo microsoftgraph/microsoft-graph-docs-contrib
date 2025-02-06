@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 03/21/2024
 ---
 
 # webApplication resource type
@@ -24,6 +25,9 @@ Specifies settings for a web application.
 | logoutUrl | String | Specifies the URL that will be used by Microsoft's authorization service to logout a user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols. |
 | redirectUris | String collection | Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. |
 |redirectUriSettings| [redirectUriSettings](redirecturisettings.md) collection | Specifies the index of the URLs where user tokens are sent for sign-in. This is only valid for applications using SAML.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

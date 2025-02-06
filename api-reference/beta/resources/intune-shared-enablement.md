@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # enablement enum type

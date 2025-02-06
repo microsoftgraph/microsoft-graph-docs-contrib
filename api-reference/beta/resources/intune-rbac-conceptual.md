@@ -4,6 +4,7 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) that def
 ms.localizationpriority: medium
 author: "jaiprakashmb"
 ms.subservice: "intune"
+ms.date: 04/01/2024
 ---
 
 # Role-based access control in Microsoft Intune

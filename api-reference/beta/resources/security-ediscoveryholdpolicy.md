@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 10/28/2024
 ---
 
 # ediscoveryHoldPolicy resource type
@@ -36,6 +37,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |createdDateTime|DateTimeOffset|The date and time the legal hold was created. |
 |description|String| The legal hold description. |
 |displayName|String| The display name of the legal hold. |
+|contentQuery|String| KQL query that specifies content to be held in the specified locations. |
 |errors|String collection|Lists any errors that happened while placing the hold. |
 |id|String|The ID for the eDiscovery case. Read-only. Inherited from [entity](../resources/entity.md). |
 |isEnabled|Boolean|Indicates whether the hold is enabled and actively holding content. |

@@ -18,10 +18,10 @@ import (
 
 requestFilter := "scopeId eq '/' and scopeType eq 'DirectoryRole'"
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceRoleManagementAlertsAlertsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.RoleManagementAlertsAlertsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernanceRoleManagementAlertsAlertsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.RoleManagementAlertsAlertsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

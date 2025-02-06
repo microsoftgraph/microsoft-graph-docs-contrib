@@ -5,6 +5,7 @@ author: "charlieforce"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/18/2024
 ---
 
 # teamwork resource type

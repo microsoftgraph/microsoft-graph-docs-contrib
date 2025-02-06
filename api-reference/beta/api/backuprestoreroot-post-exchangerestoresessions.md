@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+ms.date: 11/10/2024
 ---
 
 # Create exchangeRestoreSession
@@ -145,6 +146,13 @@ Content-Type: application/json
   "@odata.context": "/solutions/backupRestore/$metadata#exchangeRestoreSessions/$entity",
   "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
   "status": "draft",
+  "restoreJobType": "standard",
+  "restoreSessionArtifactCount": {
+    "total": 2,
+    "completed": 0,
+    "inProgress": 0,
+    "failed": 0
+  },
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -251,6 +259,13 @@ Content-Type: application/json
   "@odata.context": "/solutions/backupRestore/$metadata#exchangeRestoreSessions/$entity",
   "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
   "status": "draft",
+  "restoreJobType": "standard",
+  "restoreSessionArtifactCount": {
+    "total": 2,
+    "completed": 0,
+    "inProgress": 0,
+    "failed": 0
+  },
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

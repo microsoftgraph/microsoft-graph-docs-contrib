@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Too many Global Administrators
+ms.date: 09/19/2024
 ---
 
 # tooManyGlobalAdminsAssignedToTenantAlertIncident resource type

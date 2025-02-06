@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "luleonpla"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/19/2024
 ---
 
 # servicePrincipal: addTokenSigningCertificate

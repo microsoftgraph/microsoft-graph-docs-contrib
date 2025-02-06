@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 04/05/2024
 ---
 
 # List files (terms of use agreement files)
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "agreement_list_files" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agreement-list-files-permissions.md)]
+
+[!INCLUDE [rbac-tou-security-reader-apis](../includes/rbac-for-apis/rbac-tou-security-reader-apis.md)]
 
 
 ## HTTP request

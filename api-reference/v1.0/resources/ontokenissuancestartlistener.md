@@ -5,6 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 10/15/2024
 ---
 
 # onTokenIssuanceStartListener resource type
@@ -18,7 +19,7 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 ## Methods
 None.
 
-For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.        
+For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.   
 
 ## Properties
 |Property|Type|Description|

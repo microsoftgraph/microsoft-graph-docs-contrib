@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: kwekua
 ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # bookingsBusiness: getStaffAvailability

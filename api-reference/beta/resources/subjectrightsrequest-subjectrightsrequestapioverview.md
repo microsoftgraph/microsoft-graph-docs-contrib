@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "skadam-msft"
 ms.subservice: "compliance"
 doc_type: conceptualPageType
+ms.date: 06/11/2024
 ---
 
 # Use the Microsoft Graph subject rights request API

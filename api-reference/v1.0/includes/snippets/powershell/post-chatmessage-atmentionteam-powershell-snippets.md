@@ -9,7 +9,7 @@ Import-Module Microsoft.Graph.Teams
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "<div><div><at id="0">GraphTesting</at>&nbsp;Hello team</div></div>"
+		content = "<at id="0">GraphTesting</at>&nbsp;Hello team"
 	}
 	mentions = @(
 		@{

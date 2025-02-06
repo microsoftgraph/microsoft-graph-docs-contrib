@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "simonhult"
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 07/10/2024
 ---
 
 # userInsightsSettings resource type
@@ -32,6 +33,9 @@ Use the [insightsSettings](insightssettings.md) resource to enable or disable th
 | Property  | Type     | Description                                                                                                                                                         |
 |-----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | isEnabled | Boolean  | `True` if the user's **itemInsights** and meeting hours insights are enabled; `false` if the user's **itemInsights** and meeting hours insights are disabled. The default value is `true`. Optional.|
+
+## Relationships
+None.
 
 ## JSON representation
 

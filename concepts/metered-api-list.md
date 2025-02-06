@@ -4,6 +4,7 @@ description: "Get a list of metered APIs and services in Microsoft Graph."
 author: "spgraph-docs-team"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Metered APIs and services in Microsoft Graph

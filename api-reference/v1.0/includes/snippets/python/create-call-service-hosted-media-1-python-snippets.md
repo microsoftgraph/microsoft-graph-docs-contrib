@@ -36,6 +36,7 @@ request_body = Call(
 	call_options = OutgoingCallOptions(
 		odata_type = "#microsoft.graph.outgoingCallOptions",
 		is_content_sharing_notification_enabled = True,
+		is_delta_roster_enabled = True,
 	),
 	media_config = ServiceHostedMediaConfig(
 		odata_type = "#microsoft.graph.serviceHostedMediaConfig",

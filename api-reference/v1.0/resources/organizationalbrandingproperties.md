@@ -5,6 +5,7 @@ author: "quievey"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 05/22/2024
 ---
 
 # organizationalBrandingProperties resource type

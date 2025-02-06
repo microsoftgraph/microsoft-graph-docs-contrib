@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphpolicies.PoliciesFeatureRolloutPolicieItemRequestBuilderGetQueryParameters{
+requestParameters := &graphpolicies.FeatureRolloutPoliciesItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"appliesTo"},
 }
-configuration := &graphpolicies.PoliciesFeatureRolloutPolicieItemRequestBuilderGetRequestConfiguration{
+configuration := &graphpolicies.FeatureRolloutPoliciesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 08/14/2024
 ---
 
 # Update educationOutcome

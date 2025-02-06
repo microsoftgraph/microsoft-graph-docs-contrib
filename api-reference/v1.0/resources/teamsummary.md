@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akhilkohlimicrosoft"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamSummary resource type

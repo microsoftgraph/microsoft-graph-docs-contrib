@@ -5,6 +5,7 @@ title: List the SharePoint lists in a site
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 # Get lists in a site
 

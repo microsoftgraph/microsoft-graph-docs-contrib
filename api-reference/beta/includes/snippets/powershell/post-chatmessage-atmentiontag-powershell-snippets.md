@@ -9,7 +9,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "<div><div><at id="0">TestTag</at>&nbsp;Testing Tags</div></div>"
+		content = "<at id="0">TestTag</at>&nbsp;Testing Tags"
 	}
 	mentions = @(
 		@{

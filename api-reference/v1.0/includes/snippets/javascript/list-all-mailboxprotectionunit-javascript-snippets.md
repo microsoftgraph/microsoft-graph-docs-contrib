@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let mailboxProtectionUnits = await client.api('/solutions/backupRestore/mailboxProtectionUnits')
+let mailboxProtectionUnit = await client.api('/solutions/backupRestore/protectionUnits/microsoft.graph.mailboxProtectionUnit')
 	.get();
 
 ```

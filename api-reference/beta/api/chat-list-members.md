@@ -5,6 +5,7 @@ author: "anandjo"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List members of a chat

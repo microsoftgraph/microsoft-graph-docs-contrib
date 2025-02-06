@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
+ms.date: 11/07/2024
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -15,13 +16,13 @@ The Microsoft Graph connectors platform offers an intuitive way to add your exte
 After a connection has been created, you can add your content from any external data source such as an on-premises content source or an external software as a service (SaaS) service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
 
 <!-- markdownlint-disable MD036 -->
-![Sample custom helpdesk system Tickets Connector structure.](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
+![Sample custom helpdesk system Tickets connector structure.](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
 
 *Sample custom helpdesk system Tickets Connector structure.*
 
-![Admin view of connections including the custom Tickets Connector.](./images/connectors-images/connecting-external-content-manage-connections-admin-view.svg)
+![Admin view of connections including the custom Tickets connector.](./images/connectors-images/connecting-external-content-manage-connections-admin-view.png)
 
-*Admin view of connections including the custom Tickets Connector.*
+*Admin view of connections including the custom Tickets connector.*
 
 <!-- markdownlint-enable MD036 -->
 
@@ -48,7 +49,7 @@ The following table specifies which operations are available in each state.
 | Delete connection | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Create schema     | :heavy_check_mark: | :x:                | :x:                | :x:                |
 | Read schema       | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Update schema     | :x:                | :x:                | :x:                | :x:                |
+| Update schema     | :x:                | :heavy_check_mark: | :x:                | :x:                |
 | Delete schema     | :x:                | :x:                | :x:                | :x:                |
 | Create item       | :x:                | :heavy_check_mark: | :x:                | :x:                |
 | Read item         | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |

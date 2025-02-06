@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 09/19/2024
 ---
 
 # List timeOffRequest

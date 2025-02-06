@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "PaulEkirapa"
 ms.subservice: entra-users
 doc_type: "apiPageType"
+ms.date: 04/18/2024
 ---
 
 # user: retryServiceProvisioning

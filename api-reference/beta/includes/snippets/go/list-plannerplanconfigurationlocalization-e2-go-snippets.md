@@ -18,10 +18,10 @@ import (
 
 requestFilter := "languageTag eq 'en-us'"
 
-requestParameters := &graphsolutions.SolutionsBusinessScenarioItemPlannerPlanConfigurationLocalizationsRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.BusinessScenariosItemPlannerPlanConfigurationLocalizationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphsolutions.SolutionsBusinessScenarioItemPlannerPlanConfigurationLocalizationsRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.BusinessScenariosItemPlannerPlanConfigurationLocalizationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -5,6 +5,7 @@ author: "keylimesoda"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/19/2024
 ---
 
 # List deletedItems (directory objects)

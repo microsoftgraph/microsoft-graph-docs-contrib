@@ -17,6 +17,15 @@ The **SearchResult** resource indicates than an item is the response to a search
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
+## Properties
+
+| Property            | Type   | Description
+|:--------------------|:-------|:----------------------------------------------
+| onClickTelemetryUrl | String | A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {
@@ -30,12 +39,6 @@ The **SearchResult** resource indicates than an item is the response to a search
   "onClickTelemetryUrl": "url"
 }
 ```
-
-## Properties
-
-| Property            | Type   | Description
-|:--------------------|:-------|:----------------------------------------------
-| onClickTelemetryUrl | String | A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.
 
 ## Remarks
 

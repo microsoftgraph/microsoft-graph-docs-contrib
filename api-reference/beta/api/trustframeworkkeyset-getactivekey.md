@@ -2,9 +2,10 @@
 title: "trustFrameworkKeySet: getActiveKey"
 description: "Get the active key in the keyset."
 ms.localizationpriority: medium
-author: "Nickgmicrosoft"
+author: "gysingh"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 10/17/2024
 ---
 
 # trustFrameworkKeySet: getActiveKey
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "trustframeworkkeyset_getactivekey" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframeworkkeyset-getactivekey-permissions.md)]
+
+[!INCLUDE [rbac-b2c-trustframework-keyset-apis](../includes/rbac-for-apis/rbac-b2c-trustframework-keyset-apis.md)]
 
 ## HTTP request
 

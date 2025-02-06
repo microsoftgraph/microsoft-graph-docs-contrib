@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "namkedia"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # b2cAuthenticationMethodsPolicy resource type

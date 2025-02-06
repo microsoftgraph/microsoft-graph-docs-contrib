@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkDeviceActivity resource type
@@ -32,6 +33,9 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the device activity details.|
 |lastModifiedDateTime|DateTimeOffset|The UTC date and time when the device activity detail was last modified.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

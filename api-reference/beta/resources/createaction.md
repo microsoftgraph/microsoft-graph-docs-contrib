@@ -20,6 +20,9 @@ The presence of the **CreateAction** resource on an [**itemActivity**][activity]
 
 [activity]: itemactivity.md
 
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {

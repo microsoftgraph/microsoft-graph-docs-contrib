@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const timeCard = {
-    atAprovedLocation: true,
+    isAtApprovedLocation: true,
     notes: {
         contentType: 'text',
-        content: 'end break smaple notes'
+        content: 'ending break'
     }
 };
 

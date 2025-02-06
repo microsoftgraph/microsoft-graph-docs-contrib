@@ -5,6 +5,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 
-mgc solutions backup-restore site-protection-units list
+mgc solutions backup-restore protection-units get --protection-unit-base-id {protectionUnitBase-id}
 
 ```

@@ -5,6 +5,7 @@ author: "vikailas"
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # solutionsRoot resource type

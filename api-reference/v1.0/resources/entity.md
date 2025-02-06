@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # entity resource type

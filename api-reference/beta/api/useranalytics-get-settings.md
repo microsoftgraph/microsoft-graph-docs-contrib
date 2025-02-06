@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madehmer"
 ms.subservice: "insights"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Get settings for user analytics

@@ -1,6 +1,6 @@
 ---
 author: spgraph-docs-team
-description: The FolderView resource provides or sets recommendations on the user-experience of a folder.
+description: Provides or sets recommendations on the user-experience of a folder.
 ms.date: 09/10/2017
 title: FolderView
 ms.localizationpriority: medium
@@ -14,29 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **FolderView** resource provides or sets recommendations on the user-experience of a folder.
+Provides or sets recommendations on the user-experience of a folder.
 
 It is available from the [folder][folder-facet] property of [driveItem][item-resource] resources.
-
-## JSON representation
-
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.folderView" } -->
-
-```json
-{
-  "sortBy": "default | name | type | size | takenOrCreatedDateTime | lastModifiedDateTime | sequence",
-  "viewType": "default | icons | details | thumbnails",
-  "sortOrder": "string"
-}
-```
 
 ## Properties
 
 | Property      | Type   | Description                                                                                                      |
 | :------------ | :----- | :--------------------------------------------------------------------------------------------------------------- |
-| **sortBy**    | string | The method by which the folder should be sorted.                                                                 |
-| **sortOrder** | string | If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending. |
-| **viewType**  | string | The type of view that should be used to represent the folder.                                                    |
+| sortBy    | string | The method by which the folder should be sorted.                                                                 |
+| sortOrder | string | If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending. |
+| viewType  | string | The type of view that should be used to represent the folder.                                                    |
 
 You can use the _sortBy_ property to control the sort order of the items in applications that respect the **viewType** facet.
 
@@ -76,6 +64,23 @@ The following values are defined for the **viewType** property.
 
 [item-resource]: driveitem.md
 [folder-facet]: folder.md
+
+## Relationships
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.folderView" } -->
+
+```json
+{
+  "sortBy": "default | name | type | size | takenOrCreatedDateTime | lastModifiedDateTime | sequence",
+  "viewType": "default | icons | details | thumbnails",
+  "sortOrder": "string"
+}
+```
 
 <!-- uuid: f9e446fd-190b-4692-a605-bb60e78f1f19
 2017-05-03 02:34:40 UTC -->

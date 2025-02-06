@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 10/29/2024
 ---
 
 # Create ediscoveryHoldPolicy
@@ -47,6 +48,7 @@ You can specify the following properties when you create an **ediscoveryHoldPoli
 |:---|:---|:---|
 |displayName|String|The display name of the legal hold policy. Required.|
 |description|String|The description of the legal hold policy. Optional.|
+|contentQuery|String|KQL query that specifies content to be held in the specified locations. Optional. |
 
 ## Response
 
@@ -70,20 +72,7 @@ Content-Type: application/json
 {
     "displayName": "My legalHold with sources",
     "description": "Created from Graph API",
-    "userSources@odata.bind": [
-        {
-            "@odata.type": "microsoft.graph.security.userSource",
-            "email": "SalesTeam@contoso.com"
-        }
-    ],
-    "siteSources@odata.bind": [
-        {
-            "@odata.type": "microsoft.graph.security.siteSource",
-            "site": {
-                "webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"
-            }
-        }
-    ]
+    "contentQuery": "KQL content query",
 }
 ```
 
@@ -93,6 +82,10 @@ Content-Type: application/json
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/create-ediscoveryholdpolicy-from--cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryholdpolicy-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

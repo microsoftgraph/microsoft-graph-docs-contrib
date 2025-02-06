@@ -6,6 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # appScope resource type

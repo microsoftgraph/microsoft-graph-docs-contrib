@@ -18,10 +18,10 @@ import (
 
 requestFilter := "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'"
 
-requestParameters := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.PrivilegedAccessGroupAssignmentScheduleInstancesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.PrivilegedAccessGroupAssignmentScheduleInstancesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

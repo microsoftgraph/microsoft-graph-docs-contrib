@@ -19,10 +19,10 @@ import (
 
 requestMicrosoftGraphConflictBehavior := "replace"
 
-requestParameters := &graphdrives.DriveItemItemItemCopyRequestBuilderPostQueryParameters{
+requestParameters := &graphdrives.ItemItemsItemCopyRequestBuilderPostQueryParameters{
 	MicrosoftGraphConflictBehavior: &requestMicrosoftGraphConflictBehavior,
 }
-configuration := &graphdrives.DriveItemItemItemCopyRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemCopyRequestBuilderPostRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 requestBody := graphdrives.NewCopyPostRequestBody()

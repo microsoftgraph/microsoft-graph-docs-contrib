@@ -9,15 +9,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Models;
 
-var requestBody = new SocialIdentityProvider
+var requestBody = new OpenIdConnectIdentityProvider
 {
-	OdataType = "#microsoft.graph.socialIdentityProvider",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"responseType" , "id_token"
-		},
-	},
+	OdataType = "#microsoft.graph.openIdConnectIdentityProvider",
+	ResponseType = OpenIdConnectResponseTypes.Id_token,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

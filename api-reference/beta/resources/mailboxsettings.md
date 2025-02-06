@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # mailboxSettings resource type
@@ -41,6 +42,9 @@ You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update
 | equipment          | A mailbox that represents a piece of equipment.                                                          |
 | others             | A mailbox was found but the user purpose is different from the ones specified in the previous scenarios. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                                        |
+
+## Relationships
+None.
 
 ## JSON representation
 

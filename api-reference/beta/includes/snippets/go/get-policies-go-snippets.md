@@ -18,10 +18,10 @@ import (
 
 requestFilter := "displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'"
 
-requestParameters := &graphidentity.IdentityConditionalAccessPoliciesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.ConditionalAccessPoliciesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentity.IdentityConditionalAccessPoliciesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.ConditionalAccessPoliciesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

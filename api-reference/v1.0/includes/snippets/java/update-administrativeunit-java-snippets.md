@@ -9,7 +9,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AdministrativeUnit administrativeUnit = new AdministrativeUnit();
-administrativeUnit.setDisplayName("Greater Seattle District Technical Schools");
+administrativeUnit.setDisplayName("Executive Division");
+administrativeUnit.setMembershipType("Dynamic");
+administrativeUnit.setMembershipRule("(user.country -eq \"United States\")");
+administrativeUnit.setMembershipRuleProcessingState("On");
 AdministrativeUnit result = graphClient.directory().administrativeUnits().byAdministrativeUnitId("{administrativeUnit-id}").patch(administrativeUnit);
 
 

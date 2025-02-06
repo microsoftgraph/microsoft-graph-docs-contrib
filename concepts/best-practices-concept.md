@@ -3,6 +3,7 @@ title: "Best practices for working with Microsoft Graph"
 description: "Apply these best practices to improve your Microsoft Graph application's performance and make your app more reliable for end users."
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/07/2024
 ---
 
 # Best practices for working with Microsoft Graph
@@ -159,3 +160,4 @@ To ensure reliability and facilitate support for your application:
 - Generate a unique GUID and send it on each Microsoft Graph REST request. This helps Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
   - On every request to Microsoft Graph, generate a unique GUID, send it in the `client-request-id` HTTP request header, and also log it in your application's logs.
   - Always log the `request-id` and `Date` from the HTTP response headers. These, together with the `client-request-id`, are required when reporting issues in [Microsoft Q&A](/answers/products/m365#microsoft-graph) or to Microsoft Support.
+  - If you're using a third-party application, the app vendor needs to engage with our support team to investigate the issue.

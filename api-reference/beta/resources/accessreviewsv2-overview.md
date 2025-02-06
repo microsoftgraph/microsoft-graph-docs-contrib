@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jyothig123"
 ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
+ms.date: 05/20/2024
 ---
 
 # Overview of access reviews APIs

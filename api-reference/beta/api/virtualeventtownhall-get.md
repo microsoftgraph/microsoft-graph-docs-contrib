@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/18/2024
 ---
 
 # Get virtualEventTownhall
@@ -166,6 +167,12 @@ Content-Type: application/json
   "settings": {
     "isAttendeeEmailNotificationEnabled": false
   },
-  "isInviteOnly": false
+  "isInviteOnly": false,
+  "externalEventInformation": [
+    {
+      "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",
+      "externalEventId": "myExternalEventId"
+    }
+  ]
 }
 ```

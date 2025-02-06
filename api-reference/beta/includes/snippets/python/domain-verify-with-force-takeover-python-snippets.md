@@ -9,7 +9,9 @@ from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.domains.item.verify.verify_post_request_body import VerifyPostRequestBody
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = VerifyPostRequestBody(
-	force_takeover = True,
+	additional_data = {
+			"force_takeover" : True,
+	}
 )
 
 result = await graph_client.domains.by_domain_id('domain-id').verify.post(request_body)

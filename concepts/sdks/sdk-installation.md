@@ -3,6 +3,7 @@ title: "Install a Microsoft Graph SDK"
 description: "Find instructions for installing the Microsoft Graph SDKs for .NET, Go, Java, JavaScript, PHP, PowerShell, and Python."
 ms.localizationpriority: medium
 author: MichaelMainer
+ms.date: 11/07/2024
 ---
 
 # Install a Microsoft Graph SDK

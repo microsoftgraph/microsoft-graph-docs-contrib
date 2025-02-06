@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "rwaithera"
 ms.subservice: "people"
 doc_type: "resourcePageType"
+ms.date: 06/10/2024
 ---
 
 # profileCardProperty resource type

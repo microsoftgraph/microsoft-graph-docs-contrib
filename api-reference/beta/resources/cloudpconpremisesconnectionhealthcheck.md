@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 11/26/2024
 ---
 
 # cloudPcOnPremisesConnectionHealthCheck resource type
@@ -62,6 +63,7 @@ Represents the result of a Cloud PC Azure network connection health check.
 |endpointConnectivityCheckIntuneUrlNotAllowListed|During provisioning, one or more required Intune URLs couldn't be contacted. Make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |endpointConnectivityCheckAzureADUrlNotAllowListed|During provisioning, one or more required Microsoft Entra URLs couldn't be contacted. Make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |endpointConnectivityCheckLocaleUrlNotAllowListed|During provisioning, one or more language pack URLs couldn't be contacted. If you choose a non-English (United States) **Language & Region** setting in a provisioning policy, the language pack might not be successfully installed. Make sure that all of the required URLs are allowed through your firewalls and proxies. For a list or required URLs, see [Azure network connections health checks](https://go.microsoft.com/fwlink/?linkid=2156206).|
+|endpointConnectivityCheckVMAgentEndPointCommunicationError|The VM extension provisioning failed because the VM-agent-related endpoints were unreachable. Review the onboarding policy settings to ensure the endpoints are reachable for joining the domain.|
 |endpointConnectivityCheckUnknownError|During provisioning, one or more required URLs couldn't be contacted. Make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |azureAdDeviceSyncCheckDeviceNotFound|The Cloud PC object can't be found in Microsoft Entra ID. Make sure that Microsoft Entra Connect works and syncs frequently so that the Cloud PC objects are synced to Microsoft Entra ID. Microsoft Entra device sync must be enabled and synced within the last 60 minutes.|
 |azureAdDeviceSyncCheckLongSyncCircle|The check whether the Cloud PC object has been synced to Microsoft Entra ID has timed out. Make sure that Microsoft Entra Connect works and syncs frequently so that the Cloud PC objects are synced to Microsoft Entra ID. Microsoft Entra device sync must be enabled and synced within the last 60 minutes.|

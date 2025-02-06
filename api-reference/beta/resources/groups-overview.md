@@ -268,13 +268,14 @@ For more information about what guest users can do with groups, see [Compare mem
 You can use group-based licensing to assign one or more product licenses to a Microsoft Entra group, and the licenses are then inherited by the members of the group, and automatically by any new members. When members leave the group, those licenses are removed. The feature can only be used with security groups and Microsoft 365 groups that have **securityEnabled** set to `true`. 
 
 To learn more about group-based licensing, see [What is group-based licensing in Microsoft Entra ID?](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+
 ## Properties stored outside the main data store
 
 While the group resource data is mostly stored in Microsoft Entra ID, some of its properties, like **autoSubscribeNewMembers** and **allowExternalSenders**, are stored in Microsoft Exchange. In most instances, you can't specify these properties in the same Create or Update request body as other group properties.
 
-<!-- describe how to identify properties stored outside the main data store-->
-
 Properties stored outside the main data store also aren't supported as part of [change tracking](/graph/delta-query-overview). Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
+
+The following properties on the group object are stored outside the main data store: **accessType**, **allowExternalSenders**, **autoSubscribeNewMembers**, **cloudLicensing**, **hideFromAddressLists**, **hideFromOutlookClients**, **isFavorite**, **isSubscribedByMail**, **unseenConversationsCount**, **unseenCount**, **unseenMessagesCount**, **membershipRuleProcessingStatus**, **isArchived**.
 
 ## Common use cases for the groups API in Microsoft Graph
 

@@ -29,6 +29,9 @@ Groups available hashes into a single structure for an item.
 
 > **Note:** In cases where the hash values are not available, the hash values on an item will be updated after the item is downloaded.
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

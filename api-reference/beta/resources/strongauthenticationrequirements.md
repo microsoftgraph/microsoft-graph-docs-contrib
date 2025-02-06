@@ -5,6 +5,7 @@ author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/10/2024
 ---
 
 # strongAuthenticationRequirements resource type

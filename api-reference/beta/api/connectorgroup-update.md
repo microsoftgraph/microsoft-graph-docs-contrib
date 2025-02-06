@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 08/01/2024
 ---
 
 # Update connectorGroups

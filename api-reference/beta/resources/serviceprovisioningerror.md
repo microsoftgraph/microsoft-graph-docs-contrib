@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "PaulEkirapa"
+ms.date: 03/21/2024
 ---
 
 # serviceProvisioningError resource type
@@ -24,6 +25,9 @@ Base type of [serviceProvisioningXmlError](../resources/serviceprovisioningxmler
 | createdDateTime | DateTimeOffset | The date and time at which the error occurred.                                                       |
 | isResolved      | Boolean        | Indicates whether the Error has been attended to.                                                    |
 | serviceInstance | String         | Qualified service instance (for example, "SharePoint/Dublin") that published the service error information. |
+
+## Relationships
+None.
 
 ## JSON representation
 

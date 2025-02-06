@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
+ms.date: 03/21/2024
 ---
 
 # governancePermission resource type
@@ -25,6 +26,9 @@ Represents the access permission that a [governanceSubject](../resources/governa
 |accessLevel|String|The access level. Valid values: ``None``, ``UserRead``, ``AdminRead``, and ``AdminReadWrite``.|
 |isActive|Boolean|Indicate if the requestor has any active role assignment for the access level.|
 |isEligible|Boolean|Indicate if the requestor has any eligible role assignment for the access level.|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cubika"
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # customAppScope resource type

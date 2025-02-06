@@ -5,6 +5,7 @@ author: "GGsmile"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 10/01/2024
 ---
 
 # reportRoot: getMicrosoft365CopilotUserCountTrend

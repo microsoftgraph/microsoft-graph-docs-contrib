@@ -3,8 +3,9 @@ title: "List resourceConnections"
 description: "Get a list of the resourceConnection objects and their properties."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # List resourceConnections

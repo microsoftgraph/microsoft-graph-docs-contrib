@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "search"
 author: "snlraju-msft"
 scenarios: "getting-started"
+ms.date: 11/07/2024
 ---
 
 # Overview of the Microsoft Search API in Microsoft Graph

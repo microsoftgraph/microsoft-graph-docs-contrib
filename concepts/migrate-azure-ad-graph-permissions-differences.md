@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: jackson.woods, krbash
 ms.localizationpriority: medium
 ms.subservice: entra-applications
-ms.date: 01/18/2024
+ms.date: 01/24/2025
 ms.topic: concept-article
 #Customer intent: As a developer migrating apps from Azure AD Graph to Microsoft Graph, I want to understand the differences in permissions between the two APIs, so that I can grant the rightly scoped Microsoft Graph permissions to my app.
 ---
@@ -19,7 +19,7 @@ The least privileged permission for a specific scenario might be different betwe
 
 For example, on Azure AD Graph, reading users in app-only scenarios requires the *Directory.Read.All* permission. This permission also allows your app to read all the groups, apps, and some policies in your tenant. However, on Microsoft Graph, reading users in app-only scenarios requires only the *User.Read.All* permission.
 
-While the permission strings might be the same in both Azure AD Graph and Microsoft Graph, they have different identifiers. However, similar to Azure AD Graph, Microsoft Graph also exposes both application and delegated permissions. Administrator consent is always required for application permissions.
+While the permission display strings might be the same in both Azure AD Graph and Microsoft Graph, they have different permissions IDs. Similar to Azure AD Graph, Microsoft Graph also exposes both application and delegated permissions. Administrator consent is always required for application permissions.
 
 The article provides a mapping of Azure AD Graph to Microsoft Graph permissions to help you migrate your apps.
 
@@ -152,11 +152,11 @@ Not applicable.
 
 ### Delegated
 
-| Parameter               | Azure AD Graph | Microsoft Graph        |
-|-------------------------|----------------|------------------------|
-| Permission ID           | Not available  | Read and write domains |
-| Display String          | Not available  | Read and write domains |
-| Admin consent required? | Not available  | Yes                    |
+| Parameter               | Azure AD Graph | Microsoft Graph                      |
+|-------------------------|----------------|--------------------------------------|
+| Permission ID           | Not available  | 0b5d694c-a244-4bde-86e6-eb5cd07730fe |
+| Display String          | Not available  | Read and write domains               |
+| Admin consent required? | Not available  | Yes                                  |
 
 
 ### Application

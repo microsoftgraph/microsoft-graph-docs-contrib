@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
+ms.date: 05/16/2024
 ---
 
 # identityContainer resource type

@@ -5,6 +5,7 @@ title: "listItem: delta"
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/30/2024
 ---
 # listItem: delta
 

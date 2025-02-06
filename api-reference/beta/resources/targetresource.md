@@ -5,6 +5,7 @@ author: "egreenberg14"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
+ms.date: 03/21/2024
 ---
 
 # targetResource resource type
@@ -24,6 +25,9 @@ Represents target resource types associated with audit activity.
 |userPrincipalName|String|When **type** is set to `User`, this includes the user name that initiated the action; `null` for other types.|
 |groupType|groupType|When **type** is set to `Group`, this indicates the group type.  Possible values are: `unifiedGroups`, `azureAD`, and `unknownFutureValue`|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Indicates name, old value and new value of each attribute that changed. Property values depend on the operation **type**.|
+
+## Relationships
+None.
 
 ## JSON representation
 

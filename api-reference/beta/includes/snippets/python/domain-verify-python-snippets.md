@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 
-result = await graph_client.domains.by_domain_id('domain-id').verify.post(None)
+result = await graph_client.domains.by_domain_id('domain-id').verify.post()
 
 
 ```

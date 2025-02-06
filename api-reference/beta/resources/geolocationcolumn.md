@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 The **geolocationColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a geolocation.
 
+## Relationships
+None.
+
 ## JSON representation
 
 Here is a JSON representation of a **geolocationColumn** resource.

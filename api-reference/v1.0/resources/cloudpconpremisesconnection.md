@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType,
 toc.title: Cloud PC Azure network connection
+ms.date: 10/21/2024
 ---
 
 # cloudPcOnPremisesConnection resource type

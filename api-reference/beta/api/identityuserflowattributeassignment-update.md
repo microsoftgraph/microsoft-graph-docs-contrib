@@ -5,6 +5,7 @@ author: "jkdouglas"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/18/2024
 ---
 
 # Update identityUserFlowAttributeAssignment
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "identityuserflowattributeassignment_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityuserflowattributeassignment-update-permissions.md)]
+
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 

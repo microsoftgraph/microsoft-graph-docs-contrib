@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphgroups.GroupsDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupsDeltaRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","description","mailNickname"},
 }
-configuration := &graphgroups.GroupsDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupsDeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

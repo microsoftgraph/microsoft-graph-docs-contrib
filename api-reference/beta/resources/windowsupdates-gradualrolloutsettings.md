@@ -5,6 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # gradualRolloutSettings resource type

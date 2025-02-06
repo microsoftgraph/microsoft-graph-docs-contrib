@@ -5,6 +5,7 @@ author: "bingqiangxiang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/16/2024
 ---
 
 # cloudPcReports: retrieveConnectionQualityReports

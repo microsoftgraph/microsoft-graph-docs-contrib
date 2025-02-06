@@ -5,6 +5,7 @@ author: "PurvaEkatpure"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 07/30/2024
 ---
 
 # bookingsAvailabilityWindow resource type

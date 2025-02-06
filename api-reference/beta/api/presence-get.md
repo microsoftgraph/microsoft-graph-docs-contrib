@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "cloud-communications"
+ms.date: 04/05/2024
 ---
 
 # Get presence

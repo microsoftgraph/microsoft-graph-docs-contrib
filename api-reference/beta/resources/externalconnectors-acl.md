@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/23/2024
 ---
 
 # acl resource type

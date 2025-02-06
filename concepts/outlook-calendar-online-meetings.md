@@ -4,6 +4,7 @@ description: "Use the Outlook calendar API to organize an event where meeting in
 author: "juforan"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Create or set an event as an online meeting in an Outlook calendar

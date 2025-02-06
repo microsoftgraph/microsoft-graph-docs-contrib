@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 10/01/2024
 ---
 
 # restorePoint: search
@@ -66,6 +67,7 @@ If successful, this action returns a `200 OK` response code and a [restorePointS
 > [!NOTE]
 > - Calls return a maximum of five restore points.
 > - You can include a maximum of 20 protection units in a single request, and the response isn't paginated.
+> - When you provide an expression for the **artifactQuery** property, you must provide only one protection unit ID in the **protectionUnitIds** property.
 
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 

@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkHardwareDetail resource type
@@ -24,6 +25,9 @@ Represents the details about the hardware properties of a Microsoft Teams-enable
 |serialNumber|String|Device serial number.|
 |uniqueId|String|The unique identifier for the device.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

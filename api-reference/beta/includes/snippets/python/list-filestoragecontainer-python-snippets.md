@@ -10,7 +10,7 @@ from msgraph_beta.generated.storage.file_storage.containers.containers_request_b
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = ContainersRequestBuilder.ContainersRequestBuilderGetQueryParameters(
-		filter = "containerTypeId eq {containerTypeId}",
+		filter = "containerTypeId eq e2756c4d-fa33-4452-9c36-2325686e1082",
 )
 
 request_configuration = RequestConfiguration(

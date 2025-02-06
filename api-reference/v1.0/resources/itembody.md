@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "grangeryy"
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # itemBody resource type

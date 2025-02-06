@@ -4,6 +4,7 @@ description: "Use immutable identifiers (IDs) to enable your Outlook application
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Obtain immutable identifiers for Outlook resources

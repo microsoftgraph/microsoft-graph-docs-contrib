@@ -117,6 +117,40 @@ items:
       href: ../../resources/siteprotectionunit.md
     - name: List
       href: ../../api/backuprestoreroot-list-siteprotectionunits.md
+- name: Protection units bulk addition job
+  href: ../../resources/protectionunitsbulkjobbase.md
+- name: Protection units bulk job
+  items:
+  - name: Drive protection units bulk addition job
+    items:
+    - name: Drive protection units bulk addition job
+      href: ../../resources/driveprotectionunitsbulkadditionjob.md
+    - name: List
+      href: ../../api/onedriveforbusinessprotectionpolicy-list-driveprotectionunitsbulkadditionjobs.md
+    - name: Create
+      href: ../../api/driveprotectionunitsbulkadditionjobs-post.md
+    - name: Get
+      href: ../../api/driveprotectionunitsbulkadditionjobs-get.md
+  - name: Mailbox protection units bulk addition job
+    items:
+    - name: Mailbox protection units bulk addition job
+      href: ../../resources/mailboxprotectionunitsbulkadditionjob.md
+    - name: List
+      href: ../../api/exchangeprotectionpolicy-list-mailboxprotectionunitsbulkadditionjobs.md
+    - name: Create
+      href: ../../api/mailboxprotectionunitsbulkadditionjobs-post.md
+    - name: Get
+      href: ../../api/mailboxprotectionunitsbulkadditionjobs-get.md
+  - name: Site protection units bulk addition job
+    items:
+    - name: Site protection units bulk addition job
+      href: ../../resources/siteprotectionunitsbulkadditionjob.md
+    - name: List
+      href: ../../api/sharepointprotectionpolicy-list-siteprotectionunitsbulkadditionjobs.md
+    - name: Create
+      href: ../../api/siteprotectionunitsbulkadditionjobs-post.md
+    - name: Get
+      href: ../../api/siteprotectionunitsbulkadditionjobs-get.md
 - name: Restore artifact
   href: ../../resources/restoreartifactbase.md
   items:
@@ -144,6 +178,45 @@ items:
       href: ../../resources/siterestoreartifact.md
     - name: List
       href: ../../api/sharepointrestoresession-list-siterestoreartifacts.md
+- name: Restore artifacts bulk request
+  href: ../../resources/restoreartifactsbulkrequestbase.md
+  items:
+  - name: Drive restore artifacts bulk addition request
+    items:
+    - name: Drive restore artifacts bulk addition request
+      href: ../../resources/driverestoreartifactsbulkadditionrequest.md
+    - name: List
+      href: ../../api/onedriveforbusinessrestoresession-list-driverestoreartifactsbulkadditionrequests.md
+    - name: Create
+      href: ../../api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests.md
+    - name: Get
+      href: ../../api/driverestoreartifactsbulkadditionrequest-get.md
+    - name: Delete
+      href: ../../api/driverestoreartifactsbulkadditionrequest-delete.md
+  - name: Mailbox restore artifacts bulk addition request
+    items:
+    - name: Mailbox restore artifacts bulk addition request
+      href: ../../resources/mailboxrestoreartifactsbulkadditionrequest.md
+    - name: List
+      href: ../../api/exchangerestoresession-list-mailboxrestoreartifactsbulkadditionrequests.md
+    - name: Create
+      href: ../../api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests.md
+    - name: Get
+      href: ../../api/mailboxrestoreartifactsbulkadditionrequest-get.md
+    - name: Delete
+      href: ../../api/mailboxrestoreartifactsbulkadditionrequest-delete.md
+  - name: Site restore artifacts bulk addition request
+    items:
+    - name: Site restore artifacts bulk addition request
+      href: ../../resources/siterestoreartifactsbulkadditionrequest.md
+    - name: List
+      href: ../../api/sharepointrestoresession-list-siterestoreartifactsbulkadditionrequests.md
+    - name: Create
+      href: ../../api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests.md
+    - name: Get
+      href: ../../api/siterestoreartifactsbulkadditionrequest-get.md
+    - name: Delete
+      href: ../../api/siterestoreartifactsbulkadditionrequest-delete.md
 - name: Restore point
   items:
   - name: Restore point

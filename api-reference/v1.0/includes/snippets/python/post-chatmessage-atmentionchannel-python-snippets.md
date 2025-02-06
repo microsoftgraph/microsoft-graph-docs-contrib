@@ -17,7 +17,7 @@ from msgraph.generated.models.teamwork_conversation_identity_type import Teamwor
 request_body = ChatMessage(
 	body = ItemBody(
 		content_type = BodyType.Html,
-		content = "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>",
+		content = "<at id=\"0\">General</at>&nbsp;Hello there!",
 	),
 	mentions = [
 		ChatMessageMention(

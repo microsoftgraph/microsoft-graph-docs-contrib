@@ -2,6 +2,7 @@
 title: "Get schedule"
 description: "Retrieve the properties and relationships of a **schedule** object."
 author: "shanemalone"
+ms.date: 12/04/2024
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -135,6 +136,7 @@ Content-type: application/json
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Monday",
   "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": true,
   "isCrossLocationShiftsEnabled": true,
   "isCrossLocationShiftRequestApprovalRequired": true
 }

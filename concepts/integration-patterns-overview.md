@@ -2,7 +2,8 @@
 title: "Common integration patterns with Microsoft Graph"
 description: "Get an overview of the integration patterns that you can apply to solutions that you build using Microsoft Graph."
 author: "OlgaPodo"
-ms.localizationpriority: low
+ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 # Common integration patterns with Microsoft Graph

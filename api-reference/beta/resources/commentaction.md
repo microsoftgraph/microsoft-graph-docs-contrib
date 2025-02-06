@@ -18,6 +18,17 @@ The **CommentAction** resource provides information about a comment [activity][]
 
 [activity]: itemactivity.md
 
+## Properties
+
+| Property     | Type                       | Description                                                       |
+| :----------- | :------------------------- | :---------------------------------------------------------------- |
+| isReply      | Boolean                    | If true, this activity was a reply to an existing comment thread. |
+| parentAuthor | [identitySet][]            | The identity of the user who started the comment thread.          |
+| participants | [identitySet][] collection | The identities of the users participating in this comment thread. |
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {
@@ -33,15 +44,6 @@ The **CommentAction** resource provides information about a comment [activity][]
   "participants": [{"@odata.type": "microsoft.graph.identitySet"}]
 }
 ```
-
-## Properties
-
-| Property     | Type                       | Description                                                       |
-| :----------- | :------------------------- | :---------------------------------------------------------------- |
-| isReply      | Boolean                    | If true, this activity was a reply to an existing comment thread. |
-| parentAuthor | [identitySet][]            | The identity of the user who started the comment thread.          |
-| participants | [identitySet][] collection | The identities of the users participating in this comment thread. |
-
 [identitySet]: identityset.md
 
 ## Remarks

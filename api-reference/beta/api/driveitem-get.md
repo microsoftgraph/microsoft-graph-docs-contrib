@@ -5,6 +5,7 @@ title: Get driveItem
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 06/12/2024
 ---
 # Get driveItem
 

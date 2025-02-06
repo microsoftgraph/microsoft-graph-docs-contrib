@@ -4,14 +4,16 @@
       "name": "Users",
       "overview": "../../resources/users.md",
       "resources": [
-        "user"
+        "user",
+        "invitation"
       ]
     },
     {
       "name": "Groups",
       "overview": "../../resources/groups-overview.md",
       "resources": [
-        "group"
+        "group",
+        "groupLifecyclePolicy"
       ]
     },
     {
@@ -19,6 +21,7 @@
       "overview": "../../resources/applications-api-overview.md",
       "resources": [
         "application",
+        "applicationTemplate",
         "servicePrincipal"
       ],
       "childNodes": [
@@ -26,7 +29,6 @@
           "name": "Application",
           "shouldSort": true,
           "resources": [
-            "applicationTemplate",
             "extensionProperty",
             "federatedIdentityCredential"
           ],
@@ -180,6 +182,7 @@
         "Outlook",
         "Outlook calendar"
       ],
+      "overview": "../../resources/calendar-overview.md",
       "resources": [
         "calendar",
         "event",
@@ -234,6 +237,12 @@
       "overview": "../../resources/change-notifications-api-overview.md",
       "resources": [
         "subscription"
+      ],
+      "complexTypes": [
+        "changeNotificationCollection",
+        "changeNotification",
+        "changeNotificationEncryptedContent",
+        "resourceData"
       ]
     },
     {
@@ -596,7 +605,9 @@
         "bundle",
         "permission",
         "fileStorageContainer",
-        "sharedDriveItem"
+        "sharedDriveItem",
+        "recycleBin",
+        "recycleBinItem"
       ]
     },
     {
@@ -944,14 +955,24 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
-            "authenticationEventListener",
-            "customAuthenticationExtension",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration",
-            "invitation"
+            "certificateBasedAuthConfiguration"
           ],
           "childNodes": [
+            {
+              "name": "Authentication event listeners",
+              "resources": [
+                "authenticationEventListener",
+                "onAttributeCollectionListener",
+                "onAttributeCollectionStartListener",
+                "onAttributeCollectionSubmitListener",
+                "onAuthenticationMethodLoadStartListener",
+                "onInteractiveAuthFlowStartListener",
+                "onTokenIssuanceStartListener",
+                "onUserCreateStartListener"
+              ]
+            },
             {
               "name": "Authentication methods",
               "overview": "../../resources/authenticationmethods-overview.md",
@@ -965,6 +986,21 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod"
+              ]
+            },
+            {
+              "name": "Authentication methods policy",
+              "overview": "../../resources/authenticationmethodspolicies-overview.md",
+              "resources": [
+                "authenticationMethodsPolicy",
+                "emailAuthenticationMethodConfiguration",
+                "fido2AuthenticationMethodConfiguration",
+                "microsoftAuthenticatorAuthenticationMethodConfiguration",
+                "smsAuthenticationMethodConfiguration",
+                "temporaryAccessPassAuthenticationMethodConfiguration",
+                "softwareOathAuthenticationMethodConfiguration",
+                "voiceAuthenticationMethodConfiguration",
+                "x509CertificateAuthenticationMethodConfiguration"
               ]
             },
             {
@@ -1007,8 +1043,9 @@
               ]
             },
             {
-              "name": "Custom authentication extension",
+              "name": "Custom authentication extensions",
               "resources": [
+                "customAuthenticationExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -1018,6 +1055,7 @@
               "resources": [
                 "riskDetection",
                 "riskyUser",
+                "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
                 "riskyServicePrincipal"
               ]
@@ -1091,23 +1129,6 @@
                 "authenticationStrengthPolicy",
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy"
-              ],
-              "childNodes": [
-                {
-                  "name": "Authentication methods policy",
-                  "overview": "../../resources/authenticationmethodspolicies-overview.md",
-                  "resources": [
-                    "authenticationMethodsPolicy",
-                    "emailAuthenticationMethodConfiguration",
-                    "fido2AuthenticationMethodConfiguration",
-                    "microsoftAuthenticatorAuthenticationMethodConfiguration",
-                    "smsAuthenticationMethodConfiguration",
-                    "temporaryAccessPassAuthenticationMethodConfiguration",
-                    "softwareOathAuthenticationMethodConfiguration",
-                    "voiceAuthenticationMethodConfiguration",
-                    "x509CertificateAuthenticationMethodConfiguration"
-                  ]
-                }
               ]
             },
             {
@@ -1125,7 +1146,8 @@
                 "identityUserFlowAttribute",
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
-                "identityApiConnector"
+                "identityApiConnector",
+                "identityUserFlow"
               ]
             }
           ]
@@ -1285,6 +1307,7 @@
       "childNodes": [
         {
           "name": "Identity and access reports",
+          "overview": "../../resources/report-identity-access.md",
           "childNodes": [
             {
               "name": "Microsoft Entra activity reports",
@@ -1296,7 +1319,7 @@
                   ]
                 },
                 {
-                  "name": "Registration and usage",
+                  "name": "Authentication methods registration and usage",
                   "overview": "../../resources/authenticationmethods-usage-insights-overview.md",
                   "resources": [
                     "userRegistrationDetails",
@@ -1444,12 +1467,14 @@
         },
         {
           "name": "eDiscovery",
+          "overview": "../../resources/security-ediscovery-apioverview.md",
           "resources": [
             "microsoft.graph.security.ediscoveryCase",
             "microsoft.graph.security.ediscoveryCaseSettings",
             "microsoft.graph.security.caseOperation",
             "microsoft.graph.security.ediscoveryCustodian",
             "microsoft.graph.security.ediscoveryNoncustodialDataSource",
+            "microsoft.graph.security.ediscoveryHoldPolicy",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
             "microsoft.graph.security.ediscoveryReviewTag"
@@ -1458,10 +1483,15 @@
         {
           "name": "Identities",
           "resources": [
-            "microsoft.graph.security.healthIssue"
+            "microsoft.graph.security.healthIssue",
+            "microsoft.graph.security.sensor"
           ],
           "complexTypes": [
-            "microsoft.graph.security.identityContainer"
+            "microsoft.graph.security.deploymentAccessKeyType",
+            "microsoft.graph.security.identityContainer",
+            "microsoft.graph.security.networkAdapter",
+            "microsoft.graph.security.sensorDeploymentPackage",
+            "microsoft.graph.security.sensorSettings"
           ]
         },
         {
@@ -1852,6 +1882,7 @@
         {
           "name": "Shift management",
           "resources": [
+            "dayNote",
             "offerShiftRequest",
             "openShift",
             "openShiftChangeRequest",
@@ -1860,6 +1891,7 @@
             "shift",
             "shiftPreferences",
             "swapShiftsChangeRequest",
+            "timeCard",
             "timeOff",
             "timeOffReason",
             "timeOffRequest",
@@ -1867,9 +1899,10 @@
             "workingTimeSchedule"
           ],
           "complexTypes": [
-            "changeTrackedEntity",
+            "geoCoordinates",
             "identity",
             "identitySet",
+            "itemBody",
             "openShiftItem",
             "patternedRecurrence",
             "recurrencePattern",
@@ -1877,6 +1910,10 @@
             "shiftActivity",
             "shiftAvailability",
             "shiftItem",
+            "timeCardBreak",
+            "timeCardEntry",
+            "timeCardEvent",
+            "timeClockSettings",
             "timeOffItem",
             "timeRange",
             "userSolutionRoot",

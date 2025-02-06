@@ -4,8 +4,6 @@ Thank you for your interest in Microsoft Graph documentation! For the best exper
 
 ## Give us your feedback
 
-**Coming soon:** In March 2024, we will be phasing out the current feedback mechanism for content (GitHub issues) described below and replacing it with a new feedback system. For more information, see https://aka.ms/ContentUserFeedback.
-
 Your feedback is important to us.
 
 - To let us know about any questions or issues you find in the documentation, [leave feedback using the standard experience](https://learn.microsoft.com/en-us/contribute/content/provide-feedback#use-the-standard-experience).

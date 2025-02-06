@@ -5,6 +5,7 @@ author: "fsheik"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # attributeRuleMembers resource type

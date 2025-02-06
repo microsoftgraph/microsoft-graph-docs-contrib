@@ -20,6 +20,12 @@ displayName := "Seattle District Technical Schools"
 requestBody.SetDisplayName(&displayName) 
 description := "Seattle district technical schools administration"
 requestBody.SetDescription(&description) 
+membershipType := "Dynamic"
+requestBody.SetMembershipType(&membershipType) 
+membershipRule := "(user.country -eq \"United States\")"
+requestBody.SetMembershipRule(&membershipRule) 
+membershipRuleProcessingState := "On"
+requestBody.SetMembershipRuleProcessingState(&membershipRuleProcessingState) 
 visibility := "HiddenMembership"
 requestBody.SetVisibility(&visibility) 
 

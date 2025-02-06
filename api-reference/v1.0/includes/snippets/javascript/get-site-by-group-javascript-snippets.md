@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let site = await client.api('/groups/{group-id}/sites/root')
+let site = await client.api('/groups/2C712604-1370-44E7-A1F5-426573FDA80A/sites/root')
 	.get();
 
 ```

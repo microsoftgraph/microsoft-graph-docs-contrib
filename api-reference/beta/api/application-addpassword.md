@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/16/2024
 ---
 
 # application: addPassword

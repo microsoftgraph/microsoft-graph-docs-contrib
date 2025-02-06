@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
+ms.date: 07/22/2024
 ---
 
 # appleManagedIdentityProvider resource type

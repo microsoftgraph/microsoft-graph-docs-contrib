@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # virtualEventRegistrationCustomQuestion resource type

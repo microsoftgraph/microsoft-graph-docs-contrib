@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List timeCard
@@ -141,6 +142,7 @@ Content-type: application/json
             "clockInEvent": {
                 "dateTime": "2020-09-21T18:01:29.302Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "ClockIn-OBO Shorbani"
@@ -149,6 +151,7 @@ Content-type: application/json
             "clockOutEvent": {
                 "dateTime": "2021-05-27T18:14:44.503Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "clock out notes"
@@ -159,6 +162,7 @@ Content-type: application/json
                 "clockInEvent": {
                     "dateTime": "2020-09-21T18:01:29.302Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "ClockIn-OBO Shorbani"
@@ -167,6 +171,7 @@ Content-type: application/json
                 "clockOutEvent": {
                     "dateTime": "2021-05-27T18:14:44.503Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "clock out notes"
@@ -205,6 +210,7 @@ Content-type: application/json
             "clockInEvent": {
                 "dateTime": "2020-09-21T18:02:48.688Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "ClockIn-OBO Shorbani"
@@ -213,6 +219,7 @@ Content-type: application/json
             "clockOutEvent": {
                 "dateTime": "2021-05-27T18:16:14.766Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "clock out notes"
@@ -223,6 +230,7 @@ Content-type: application/json
                 "clockInEvent": {
                     "dateTime": "2020-09-21T18:02:48.688Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "ClockIn-OBO Shorbani"
@@ -231,6 +239,7 @@ Content-type: application/json
                 "clockOutEvent": {
                     "dateTime": "2021-05-27T18:16:14.766Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "clock out notes"

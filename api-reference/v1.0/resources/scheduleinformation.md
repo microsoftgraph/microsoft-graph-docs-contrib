@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "iamgirishck"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # scheduleInformation resource type

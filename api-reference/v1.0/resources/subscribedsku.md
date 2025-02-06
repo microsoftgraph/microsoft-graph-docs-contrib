@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "frank-masuelli"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # subscribedSku resource type

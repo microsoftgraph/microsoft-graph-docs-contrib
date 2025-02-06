@@ -5,6 +5,7 @@ author: "suvanka"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/06/2024
 ---
 
 # onlineMeeting: getAllTranscripts

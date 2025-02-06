@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemMessageItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.MessagesItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"singleValueExtendedProperties($filter=id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color')"},
 }
-configuration := &graphusers.ItemMessageItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.MessagesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

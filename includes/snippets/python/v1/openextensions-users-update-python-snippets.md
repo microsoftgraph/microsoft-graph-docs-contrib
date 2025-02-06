@@ -11,7 +11,7 @@ from msgraph.generated.models.extension import Extension
 request_body = Extension(
 	additional_data = {
 			"theme" : "light",
-			"color" : "yellow",
+			"color" : "purple",
 			"lang" : "Swahili",
 	}
 )

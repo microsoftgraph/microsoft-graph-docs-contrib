@@ -6,6 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get a group setting template
@@ -22,6 +23,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "groupsettingtemplate_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/groupsettingtemplate-get-permissions.md)]
+
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Microsoft Entra Joined Device Local Administrator - basic properties only
+> - Directory Readers
+> - Global Reader
 
 ## HTTP request
 

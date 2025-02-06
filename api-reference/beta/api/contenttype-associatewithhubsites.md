@@ -5,6 +5,7 @@ description: "Associate a content type with list of hubsites."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.date: 04/05/2024
 ---
 
 # contentType: associateWithHubSites

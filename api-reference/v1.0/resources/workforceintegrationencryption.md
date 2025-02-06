@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 08/08/2024
 ---
 
 # workforceIntegrationEncryption resource type

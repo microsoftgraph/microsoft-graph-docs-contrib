@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 description: "Create a new list in a site."
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # Create a new list
 

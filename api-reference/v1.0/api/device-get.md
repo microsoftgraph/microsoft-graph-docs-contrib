@@ -5,6 +5,7 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get device
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "device_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/device-get-permissions.md)]
+
+[!INCLUDE [rbac-devices-apis-read](../includes/rbac-for-apis/rbac-devices-apis-read.md)]
 
 ## HTTP request
 

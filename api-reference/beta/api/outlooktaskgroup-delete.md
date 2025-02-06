@@ -5,6 +5,7 @@ author: "mashriv"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/22/2024
 ---
 
 # Delete outlookTaskGroup (deprecated)

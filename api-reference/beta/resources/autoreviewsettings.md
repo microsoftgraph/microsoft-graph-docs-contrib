@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # autoReviewSettings resource type (deprecated)
@@ -22,6 +23,9 @@ The **autoReviewSettings** resource type is used in the [accessReviewSettings](a
 | Property | Type | Description |
 | :------- | :--- | :---------- |
 | notReviewedResult | String | Possible values: `Approve`, `Deny`, or `Recommendation`.  If `Recommendation`, then **accessRecommendationsEnabled** in the **accessReviewSettings** resource should also be set to `true`. If you want to have the system provide a decision even if the reviewer does not make a choice, set the **autoReviewEnabled** property in the **accessReviewSettings** resource to `true` and include an **autoReviewSettings** object with the **notReviewedResult** property. Then, when a review completes, based on the **notReviewedResult** property, the decision is recorded as either `Approve` or `Deny`.|
+
+## Relationships
+None.
 
 ## JSON representation
 

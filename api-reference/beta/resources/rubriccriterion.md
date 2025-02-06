@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "resourcePageType"
+ms.date: 07/23/2024
 ---
 
 # rubricCriterion resource type

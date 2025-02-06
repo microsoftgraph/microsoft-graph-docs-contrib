@@ -18,10 +18,10 @@ import (
 
 requestFilter := "userId eq 'b7ef013a-c73c-4ec7-8ccb-e56290f45f68'"
 
-requestParameters := &graphsolutions.SolutionsVirtualEventsWebinarItemRegistrationsRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.VirtualEventsWebinarsItemRegistrationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphsolutions.SolutionsVirtualEventsWebinarItemRegistrationsRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.VirtualEventsWebinarsItemRegistrationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

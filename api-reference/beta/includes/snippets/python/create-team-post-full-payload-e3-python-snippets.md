@@ -23,6 +23,7 @@ request_body = Team(
 	visibility = TeamVisibilityType.Private,
 	display_name = "Sample Engineering Team",
 	description = "This is a sample engineering team, used to showcase the range of properties supported by this API",
+	first_channel_name = "My First Channel of the team",
 	channels = [
 		Channel(
 			display_name = "Announcements 📢",

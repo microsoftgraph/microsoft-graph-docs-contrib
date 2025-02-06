@@ -18,10 +18,10 @@ import (
 
 requestIncludeHiddenFolders := "true"
 
-requestParameters := &graphusers.ItemMailFolderItemChildFoldersRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.MailFoldersItemChildFoldersRequestBuilderGetQueryParameters{
 	IncludeHiddenFolders: &requestIncludeHiddenFolders,
 }
-configuration := &graphusers.ItemMailFolderItemChildFoldersRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.MailFoldersItemChildFoldersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

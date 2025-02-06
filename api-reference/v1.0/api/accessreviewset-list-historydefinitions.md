@@ -5,6 +5,7 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 05/20/2024
 ---
 
 # List historyDefinitions

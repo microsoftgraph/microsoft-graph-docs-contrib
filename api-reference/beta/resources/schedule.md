@@ -2,6 +2,7 @@
 title: "schedule resource type"
 description: "Represents a collection of scheduling groups, shifts, times off, and time off reasons for a team."
 author: "shanemalone"
+ms.date: 05/23/2024
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
@@ -27,9 +28,9 @@ Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift
 
 | Property                  | Type               | Description                                                                                                      |
 | ------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| activitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts should include the activities.                                             |
 | enabled                   | Boolean            | Indicates whether the schedule is enabled for the team. Required.                                                |
-| id                        | String             | ID of the schedule.                                                                                              |
+| id                        | String             | ID of the schedule.|                      
+| isActivitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts include activities from the original shift. |
 | isCrossLocationShiftRequestApprovalRequired | Boolean | Indicates whether approval is required by a manager of this schedule for cross location shift requests.   |
 | isCrossLocationShiftsEnabled | Boolean         | Indicates whether the cross-location marketplace feature is enabled for this schedule.                           |
 | offerShiftRequestsEnabled | Boolean            | Indicates whether offer shift requests are enabled for the schedule.                                             |
@@ -39,10 +40,11 @@ Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift
 | startDayOfWeek            | dayOfWeek          | Indicates the start day of the week. The possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. |
 | swapShiftsRequestsEnabled | Boolean            | Indicates whether swap shifts requests are enabled for the schedule.                                             |
 | timeClockEnabled          | Boolean            | Indicates whether time clock is enabled for the schedule.                                                        |
-| timeClockSettings         | [timeClockSettings](timeclocksettings.md)  | The time clock location settings for this schedule.                                      |
+| timeClockSettings         | [timeClockSettings](../resources/timeclocksettings.md) | The time clock location settings for this schedule.                         |
 | timeOffRequestsEnabled    | Boolean            | Indicates whether time off requests are enabled for the schedule.                                                |
 | timeZone                  | String             | Indicates the time zone of the schedule team using tz database format. Required.                                 |
 | workforceIntegrationIds   | String collection | The IDs for the workforce integrations associated with this schedule.                                             |
+| activitiesIncludedWhenCopyingShiftsEnabled  (deprecated) | Boolean | Indicates whether copied shifts should include the activities. This property will be removed by November 20, 2027. Use `isActivitiesIncludedWhenCopyingShiftsEnabled` instead. `activitiesIncludedWhenCopyingShiftsEnabled` and `isActivitiesIncludedWhenCopyingShiftsEnabled` always have the same value, so setting one automatically sets the value for the other. If both are included in the request with different values, the value for `isActivitiesIncludedWhenCopyingShiftsEnabled` takes precedence.|
 
 ## Relationships
 
@@ -74,13 +76,28 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
-  "enabled": true,
-  "timeZone": "America/Chicago",
-  "provisionStatus": "Completed",
-  "provisionStatusCode": null,
-  "isCrossLocationShiftRequestApprovalRequired": "Boolean",
-  "isCrossLocationShiftsEnabled": "Boolean"
+  "@odata.type": "#microsoft.graph.schedule",
+  "id": "String (identifier)",
+  "enabled": "Boolean",
+  "timeZone": "String",
+  "provisionStatus": "String",
+  "provisionStatusCode": "String",
+  "workforceIntegrationIds": [
+    "String"
+  ],
+  "timeClockEnabled": "Boolean",
+  "timeClockSettings": {
+    "@odata.type": "microsoft.graph.timeClockSettings"
+  },
+  "openShiftsEnabled": "Boolean",
+  "swapShiftsRequestsEnabled": "Boolean",
+  "offerShiftRequestsEnabled": "Boolean",
+  "timeOffRequestsEnabled": "Boolean",
+  "startDayOfWeek": "String",
+  "activitiesIncludedWhenCopyingShiftsEnabled": "Boolean",
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": "Boolean",
+  "isCrossLocationShiftsEnabled": "Boolean",
+  "isCrossLocationShiftRequestApprovalRequired": "Boolean"
 }
 ```
 

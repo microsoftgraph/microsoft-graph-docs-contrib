@@ -21,47 +21,34 @@ var requestBody = new AppManagementPolicy
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.PasswordAddition,
+				State = AppManagementRestrictionState.Enabled,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
+				State = AppManagementRestrictionState.Enabled,
 				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.SymmetricKeyAddition,
+				State = AppManagementRestrictionState.Enabled,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
-				MaxLifetime = TimeSpan.Parse("P30D"),
+				State = AppManagementRestrictionState.Enabled,
+				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
 			},
 		},
 		KeyCredentials = new List<KeyCredentialConfiguration>
 		{
-			new KeyCredentialConfiguration
-			{
-				RestrictionType = AppKeyCredentialRestrictionType.AsymmetricKeyLifetime,
-				MaxLifetime = TimeSpan.Parse("P90D"),
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
-			},
-			new KeyCredentialConfiguration
-			{
-				RestrictionType = AppKeyCredentialRestrictionType.TrustedCertificateAuthority,
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
-				CertificateBasedApplicationConfigurationIds = new List<string>
-				{
-					"eec5ba11-2fc0-4113-83a2-ed986ed13743",
-					"bb8e164b-f9ed-4b98-bc45-65eddc14f4c1",
-				},
-				MaxLifetime = null,
-			},
 		},
 		ApplicationRestrictions = new CustomAppManagementApplicationConfiguration
 		{
@@ -69,7 +56,8 @@ var requestBody = new AppManagementPolicy
 			{
 				NonDefaultUriAddition = new IdentifierUriRestriction
 				{
-					RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2024-01-01T10:37:00Z"),
+					State = AppManagementRestrictionState.Disabled,
+					RestrictForAppsCreatedAfterDateTime = null,
 					ExcludeAppsReceivingV2Tokens = true,
 					ExcludeSaml = true,
 				},

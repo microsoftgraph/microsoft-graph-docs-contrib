@@ -5,6 +5,7 @@ description: The incompleteData facet indicates that a resource was generated wi
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # incompleteData resource type
 

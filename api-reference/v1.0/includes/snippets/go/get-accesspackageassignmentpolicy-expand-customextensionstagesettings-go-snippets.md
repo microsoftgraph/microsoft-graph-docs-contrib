@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceEntitlementManagementAssignmentPolicieItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.EntitlementManagementAssignmentPoliciesItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"customExtensionStageSettings($expand=customExtension)"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagementAssignmentPolicieItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.EntitlementManagementAssignmentPoliciesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -20,3 +20,13 @@ items:
     href: ../../api/subscription-delete.md
   - name: Reauthorize
     href: ../../api/subscription-reauthorize.md
+- name: Complex types
+  items:
+  - name: Change notification
+    href: ../../resources/changenotification.md
+  - name: Change notification collection
+    href: ../../resources/changenotificationcollection.md
+  - name: Change notification encrypted content
+    href: ../../resources/changenotificationencryptedcontent.md
+  - name: Resource data
+    href: ../../resources/resourcedata.md

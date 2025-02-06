@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "tafra00"
+ms.date: 04/25/2024
 ---
 
 # verifiedDomain resource type
@@ -24,6 +25,9 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 | isInitial | Boolean | `true` if this is the initial domain associated with the tenant; otherwise, `false`. |
 | name | String | The domain name; for example, `contoso.com`. |
 | type | String | For example, `Managed`. |
+
+## Relationships
+None.
 
 ## JSON representation
 

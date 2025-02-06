@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceEntitlementManagementAccessPackageItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.EntitlementManagementAccessPackagesItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"resourceRoleScopes($expand=role,scope)"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagementAccessPackageItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.EntitlementManagementAccessPackagesItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

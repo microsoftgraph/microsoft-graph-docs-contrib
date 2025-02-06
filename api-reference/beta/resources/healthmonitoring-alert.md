@@ -5,6 +5,7 @@ author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 
 # alert resource type
@@ -28,7 +29,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|alertType|microsoft.graph.healthMonitoring.alertType|Indicates which type of scenario an alert is associated with. The possible values are: `unknown`, `mfaSignInFailure`, `managedDeviceSignInFailure`, `compliantDeviceSignInFailure`, `unknownFutureValue`. |
+|alertType|microsoft.graph.healthMonitoring.alertType|Indicates which type of scenario an alert is associated with. The possible values are: `unknown`, `mfaSignInFailure`, `managedDeviceSignInFailure`, `compliantDeviceSignInFailure`, `unknownFutureValue`. Supports `$filter` (`eq`).|
 |category|microsoft.graph.healthMonitoring.category|The classification that groups the scenario. The possible values are: `unknown`, `authentication`, `unknownFutureValue`. |
 |createdDateTime|DateTimeOffset|The time when Microsoft Entra Health monitoring generated the alert. Supports `$orderby`.|
 |documentation|[microsoft.graph.healthMonitoring.documentation](../resources/healthmonitoring-documentation.md)|A key-value pair that contains the name of and link to the documentation to aid in investigation of the alert.|

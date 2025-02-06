@@ -7,6 +7,7 @@ ms.service: "microsoft-graph"
 ms.subservice: "non-product-specific"
 author: "lauragra"
 ms.topic: overview
+ms.date: 05/16/2024
 ---
 
 # Microsoft Graph REST API beta endpoint reference

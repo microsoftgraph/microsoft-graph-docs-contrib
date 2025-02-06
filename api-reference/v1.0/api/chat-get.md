@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 05/29/2024
 ---
 
 # Get chat
@@ -130,7 +131,8 @@ Content-type: application/json
     "viewpoint": {
         "isHidden": true,
         "lastMessageReadDateTime": "2021-05-06T23:55:07.191Z"
-    }
+    },
+    "isHiddenForAllMembers": false
 }
 ```
 
@@ -208,7 +210,8 @@ Content-type: application/json
     "viewpoint": {
         "isHidden": false,
         "lastMessageReadDateTime": "2021-07-06T22:26:27.98Z"
-    }
+    },
+    "isHiddenForAllMembers": false
 }
 ```
 
@@ -287,6 +290,7 @@ Content-type: application/json
         "isHidden": false,
         "lastMessageReadDateTime": "2021-08-09T17:38:24.101Z"
     },
+    "isHiddenForAllMembers": false,
     "members": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -433,7 +437,8 @@ Content-type: application/json
             "displayName": null,
             "userIdentityType": "aadUser"
         }
-    }
+    },
+    "isHiddenForAllMembers": false
 }
 ```
 
@@ -543,7 +548,8 @@ Content-type: application/json
                 }
             }
         }
-    }
+    },
+    "isHiddenForAllMembers": false
 }
 ```
 

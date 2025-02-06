@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "hafen-ms"
 ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # mailAssessmentRequest resource type

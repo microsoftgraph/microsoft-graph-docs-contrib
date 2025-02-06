@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # List mailboxProtectionUnits
@@ -60,6 +61,7 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_all_mailboxprotectionunit"
@@ -68,6 +70,40 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/microsoft.graph.mailboxProtectionUnit
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-all-mailboxprotectionunit-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-all-mailboxprotectionunit-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-all-mailboxprotectionunit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-all-mailboxprotectionunit-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-all-mailboxprotectionunit-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-all-mailboxprotectionunit-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-all-mailboxprotectionunit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-all-mailboxprotectionunit-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -92,6 +128,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
+      "mailboxType": "user",
       "status": "unprotectRequested",
       "createdBy": {
         "application": {
@@ -127,6 +164,7 @@ HTTP/1.1 200 OK
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "mastura@contoso.com", // Newly Added
       "status": "unprotected",
+      "mailboxType": "shared",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -160,6 +198,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "2d1d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
+      "mailboxType": "user",
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -194,6 +233,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "2e1d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Jeffry Goh", // Newly Added
       "email": "jeffry@contoso.com", // Newly Added
+      "mailboxType": "user",
       "status": "protected",
       "createdBy": {
         "application": {
@@ -228,6 +268,7 @@ HTTP/1.1 200 OK
       "displayName": "Suresh Pasupuleti", // Newly Added
       "email": "suresh@contoso.com", // Newly Added
       "status": "unprotected",
+      "mailboxType": "shared",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -295,6 +336,7 @@ HTTP/1.1 200 OK
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
       "status": "protectRequested",
+      "mailboxType": "user",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -328,6 +370,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "184d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "mastura@contoso.com", // Newly Added
+      "mailboxType": "shared",
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -363,6 +406,7 @@ HTTP/1.1 200 OK
       "displayName": "Esmira Musayeva", // Newly Added
       "email": "esmira@contoso.com", // Newly Added
       "status": "protectRequested",
+      "mailboxType": "user",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -397,6 +441,7 @@ HTTP/1.1 200 OK
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
       "status": "protectRequested",
+      "mailboxType": "user",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -431,6 +476,7 @@ HTTP/1.1 200 OK
       "displayName": "Rashmi Mishra ", // Newly Added
       "email": "rashmi@contoso.com", // Newly Added
       "status": "protectRequested",
+      "mailboxType": "shared",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

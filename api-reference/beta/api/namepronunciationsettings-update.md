@@ -5,6 +5,7 @@ author: "fondieki"
 ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 10/28/2024
 ---
 
 # Update namePronunciationSettings
@@ -22,12 +23,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "namepronunciationsettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/namepronunciationsettings-update-permissions.md)]
 
+<!-- {
+  "blockType": "request"
+}-->
+
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 PATCH /admin/people/namePronunciation
 ```

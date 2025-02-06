@@ -5,6 +5,7 @@ author: "rbayetov"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # cloudPcReports: getFrontlineReport

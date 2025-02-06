@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.subservice: "onenote"
 doc_type: conceptualPageType
+ms.date: 03/06/2024
 ---
 
 # Use the OneNote REST API

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 09/11/2024
 ---
 
 # chatMessageMention resource type
@@ -39,6 +40,9 @@ For a fuller context of the example, see [List channel message replies](../api/c
 |mentionText|string|String used to represent the mention. For example, a user's display name, a team name.|
 |mentioned|[chatMessageMentionedIdentitySet](chatmessagementionedidentityset.md)|The entity (user, application, team, channel, or chat) that was @mentioned.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 

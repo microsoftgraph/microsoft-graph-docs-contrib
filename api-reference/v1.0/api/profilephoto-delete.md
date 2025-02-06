@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kristinmcleod"
 ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 08/08/2024
 ---
 
 # Delete profilePhoto

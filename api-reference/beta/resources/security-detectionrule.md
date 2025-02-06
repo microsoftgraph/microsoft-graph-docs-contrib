@@ -5,6 +5,7 @@ author: "mmekler"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 06/06/2024
 ---
 
 # detectionRule resource type

@@ -12,10 +12,10 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new AppleManagedIdentityProvider
 {
 	OdataType = "microsoft.graph.appleManagedIdentityProvider",
-	DisplayName = "Sign in with Apple",
-	DeveloperId = "UBF8T346G9",
-	ServiceId = "com.microsoft.rts.b2c.test.client",
-	KeyId = "99P6D879C4",
+	DisplayName = "Apple",
+	DeveloperId = "qazx.1234",
+	ServiceId = "com.contoso.app",
+	KeyId = "4294967296",
 	CertificateData = "******",
 };
 

@@ -5,6 +5,7 @@ author: "sourishdeb"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: enumPageTypes
+ms.date: 03/06/2024
 ---
 
 # attributeSet enum type

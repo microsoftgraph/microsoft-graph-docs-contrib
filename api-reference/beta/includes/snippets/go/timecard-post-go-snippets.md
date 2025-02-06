@@ -19,8 +19,8 @@ requestBody := graphmodels.NewTimeCard()
 clockInEvent := graphmodels.NewTimeCardEvent()
 dateTime , err := time.Parse(time.RFC3339, "2019-03-18T00:00:00.000Z")
 clockInEvent.SetDateTime(&dateTime) 
-atApprovedLocation := true
-clockInEvent.SetAtApprovedLocation(&atApprovedLocation) 
+isAtApprovedLocation := true
+clockInEvent.SetIsAtApprovedLocation(&isAtApprovedLocation) 
 notes := graphmodels.NewItemBody()
 content := "Started late due to traffic in CA 237"
 notes.SetContent(&content) 
@@ -48,8 +48,8 @@ timeCardBreak.SetNotes(notes)
 start := graphmodels.NewTimeCardEvent()
 dateTime , err := time.Parse(time.RFC3339, "2019-03-18T02:00:00.000Z")
 start.SetDateTime(&dateTime) 
-atApprovedLocation := true
-start.SetAtApprovedLocation(&atApprovedLocation) 
+isAtApprovedLocation := true
+start.SetIsAtApprovedLocation(&isAtApprovedLocation) 
 notes := graphmodels.NewItemBody()
 content := "Reduced break to make up for lost time"
 notes.SetContent(&content) 

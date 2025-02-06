@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 toc.keywords: [ Microsoft Endpoint Manager admin center alerts ]
+ms.date: 09/23/2024
 ---
 
 # monitoring resource type

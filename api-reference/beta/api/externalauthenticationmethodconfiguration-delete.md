@@ -5,6 +5,7 @@ author: "gregkmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Delete externalAuthenticationMethodConfiguration

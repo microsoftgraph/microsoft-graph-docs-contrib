@@ -5,6 +5,7 @@ author: "afedorov"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # presenceStatusMessage resource type
@@ -22,6 +23,9 @@ Represents a presence status message related to the [presence](presence.md) of a
 | expiryDateTime | [dateTimeTimeZone](datetimetimezone.md) | Time in which the status message expires.<br/>If not provided, the status message doesn't expire.<br/><br/>**expiryDateTime.dateTime** shouldn't include time zone.<br/><br/>**expiryDateTime** isn't available when you request the presence of another user. |
 | message | [itemBody](itembody.md) | Status message item.<br/><br/> The only supported format currently is `message.contentType = 'text'`. |
 | publishedDateTime | DateTimeOffset |Time in which the status message was published.<br/>Read-only.<br/><br/>**publishedDateTime** isn't available when you request the presence of another user. |
+
+## Relationships
+None.
 
 ## JSON representation
 

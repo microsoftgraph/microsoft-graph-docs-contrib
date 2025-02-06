@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkConnection resource type
@@ -22,6 +23,9 @@ The connection status is useful when you calculate the device health as when the
 |connectionStatus|teamworkConnectionStatus|Indicates whether a component/peripheral is connected/disconnected or its state is unknown. The possible values are: `unknown`, `connected`, `disconnected`, `unknownFutureValue`.|
 |lastModifiedDateTime|DateTimeOffset|Time at which the state was last changed. For example, indicates _connected since_ when the state is `connected` and _disconnected since_ when the state is `disconnected`.|
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

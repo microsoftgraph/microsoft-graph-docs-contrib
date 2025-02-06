@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
 ms.subservice: change-notifications
+ms.date: 04/18/2024
 ---
 
 # resourceData resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the resource data attached to the change notification sent to the subscriber. This resource is an open type and allows other properties to be passed in.
+Represents the resource data attached to the [change notification](../resources/changenotification.md) sent to the subscriber. This resource is an open type and allows other properties to be passed in.
 
 For details, see [Use Microsoft Graph to get change notifications](change-notifications-api-overview.md).
 

@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: "iamgirishck"
 ms.subservice: "outlook"
+ms.date: 06/21/2024
 ---
 
 # List calendarView

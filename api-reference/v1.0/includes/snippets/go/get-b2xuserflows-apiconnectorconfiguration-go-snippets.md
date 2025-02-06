@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentity.IdentityB2xUserFlowItemApiConnectorConfigurationRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.B2xUserFlowsItemApiConnectorConfigurationRequestBuilderGetQueryParameters{
 	Expand: [] string {"postFederationSignup","postAttributeCollection"},
 }
-configuration := &graphidentity.IdentityB2xUserFlowItemApiConnectorConfigurationRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.B2xUserFlowsItemApiConnectorConfigurationRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

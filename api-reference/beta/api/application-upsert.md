@@ -5,6 +5,7 @@ author: "sureshja"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 08/22/2024
 ---
 
 # Upsert application

@@ -18,10 +18,10 @@ import (
 
 requestFilter := "domains/any(x: x/id eq 'contoso.com')"
 
-requestParameters := &graphdirectory.DirectoryFederationConfigurationItemRequestBuilderGetQueryParameters{
+requestParameters := &graphdirectory.FederationConfigurationsItemRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphdirectory.DirectoryFederationConfigurationItemRequestBuilderGetRequestConfiguration{
+configuration := &graphdirectory.FederationConfigurationsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

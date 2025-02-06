@@ -5,6 +5,7 @@ author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # blob resource type

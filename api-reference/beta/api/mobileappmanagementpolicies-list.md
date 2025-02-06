@@ -5,6 +5,7 @@ author: "ravennMSFT"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # List mobileAppManagementPolicies
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "mobileappmanagementpolicies_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/mobileappmanagementpolicies-list-permissions.md)]
+
+[!INCLUDE [rbac-mam-mdm-policies-apis-read](../includes/rbac-for-apis/rbac-mam-mdm-policies-apis-read.md)]
 
 ## HTTP request
 

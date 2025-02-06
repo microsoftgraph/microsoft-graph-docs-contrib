@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Role management alert
+ms.date: 07/22/2024
 ---
 
 # unifiedRoleManagementAlert resource type

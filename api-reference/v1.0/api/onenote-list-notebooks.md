@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # List notebooks

@@ -5,13 +5,14 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-groups"
 author: "psignoret"
+ms.date: 10/15/2024
 ---
 
 # Delete appRoleAssignment
 
 Namespace: microsoft.graph
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.
+Deletes an [appRoleAssignment](../resources/approleassignment.md) that a [group](../resources/group.md) has been granted.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "group_delete_approleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-delete-approleassignments-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
 

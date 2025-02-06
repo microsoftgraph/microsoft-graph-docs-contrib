@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinitionItemInstanceItemDecisionsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.AccessReviewsDefinitionsItemInstancesItemDecisionsRequestBuilderGetQueryParameters{
 	Expand: [] string {"insights"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinitionItemInstanceItemDecisionsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.AccessReviewsDefinitionsItemInstancesItemDecisionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

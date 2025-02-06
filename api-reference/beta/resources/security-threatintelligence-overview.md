@@ -5,6 +5,7 @@ author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: conceptualPageType
+ms.date: 03/06/2024
 ---
 
 # Use the Microsoft Graph APIs for Microsoft Defender Threat Intelligence (preview)

@@ -18,10 +18,10 @@ import (
 
 requestFilter := "userConsentRequests/any (u:u/status eq 'InProgress')"
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsentRequestsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.AppConsentAppConsentRequestsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsentRequestsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.AppConsentAppConsentRequestsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

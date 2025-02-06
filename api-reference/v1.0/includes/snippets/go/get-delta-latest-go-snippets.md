@@ -18,10 +18,10 @@ import (
 
 requestToken := "latest"
 
-requestParameters := &graphdrives.DriveItemItemItemDeltaWithRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.ItemItemsItemDeltaRequestBuilderGetQueryParameters{
 	Token: &requestToken,
 }
-configuration := &graphdrives.DriveItemItemItemDeltaWithRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemDeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

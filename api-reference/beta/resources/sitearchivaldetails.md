@@ -6,6 +6,7 @@ ms.date: 11/15/2024
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # siteArchivalDetails resource type
@@ -20,17 +21,17 @@ Represents the archival details of a [siteCollection](../resources/sitecollectio
 |archivedDateTime|DateTimeOffset| Time when the container was archived. |
 | archiveStatus | siteArchiveStatus | Represents the current archive status of the site collection. Returned only on `$select`.|
 
-## Relationships
-None.
-
-## siteArchiveStatus values
+### siteArchiveStatus values
 
 | Value         | Description                                           |
 |:--------------|:------------------------------------------------------|
 | recentlyArchived | The site collection was recently archived. |
 | fullyArchived | The site collection is fully archived.       |
 | reactivating | The site collection is reactivating.         |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.  |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.  |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

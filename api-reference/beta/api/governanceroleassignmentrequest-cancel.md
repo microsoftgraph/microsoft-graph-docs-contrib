@@ -6,6 +6,7 @@ doc_type: apiPageType
 ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
+ms.date: 03/13/2024
 ---
 
 # Cancel governanceRoleAssignmentRequest

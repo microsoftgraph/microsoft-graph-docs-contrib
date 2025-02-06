@@ -3,8 +3,9 @@ title: "Schedule a deployment using Windows Autopatch"
 description: "When deploying an update, you can schedule the deployment so that devices receive the update later by using Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Schedule a deployment using Windows Autopatch

@@ -6,6 +6,7 @@ author: "lumine2008"
 ms.subservice: "excel"
 doc_type: resourcePageType
 toc.title: Range format
+ms.date: 07/30/2024
 ---
 
 # workbookRangeFormat resource type

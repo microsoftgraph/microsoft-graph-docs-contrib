@@ -18,11 +18,11 @@ import (
 
 requestFilter := "appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'"
 
-requestParameters := &graphrolemanagement.RoleManagementEntitlementManagementRoleAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphrolemanagement.EntitlementManagementRoleAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Expand: [] string {"principal"},
 }
-configuration := &graphrolemanagement.RoleManagementEntitlementManagementRoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphrolemanagement.EntitlementManagementRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

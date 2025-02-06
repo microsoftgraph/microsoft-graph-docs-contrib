@@ -5,6 +5,7 @@ title: site resource type
 ms.localizationpriority: high
 ms.subservice: sharepoint
 doc_type: resourcePageType
+ms.date: 09/18/2024
 ---
 
 # site resource type
@@ -31,6 +32,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List sites across geographies][]                 | GET /site/getAllSites                                       |
 | [List subsites for a site][]                      | GET /sites/{site-id}/sites                                  |
 | [Search for sites][]                              | GET /sites?search={query}                                   |
+| [Archive site](../api/site-archive.md)            | POST /sites/{site-id}/archive                               |
+| [Unarchive site](../api/site-unarchive.md)        | POST /sites/{site-id}/unarchive                             |
 | [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |
 | [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |
 | [List followed sites][]                           | GET /me/followedSites                                       |

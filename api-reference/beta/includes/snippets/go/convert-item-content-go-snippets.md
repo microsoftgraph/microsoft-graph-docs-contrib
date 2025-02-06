@@ -18,10 +18,10 @@ import (
 
 requestFormat := "{format}"
 
-requestParameters := &graphdrives.DriveItemItemItemContentRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.ItemItemsItemContentRequestBuilderGetQueryParameters{
 	Format: &requestFormat,
 }
-configuration := &graphdrives.DriveItemItemItemContentRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemContentRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

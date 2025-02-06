@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # userSettings resource type
@@ -16,6 +17,7 @@ Namespace: microsoft.graph
 
 Settings that represent a user’s preferences for the following:
 - Access to Delve
+- [Exchange settings](../resources/exchangesettings.md)
 - [Item insights](../resources/officegraphinsights.md)
 - [Regional locale and languages](../resources/regionalandlanguagesettings.md)
 - [Shift scheduling](../resources/shiftpreferences.md)
@@ -43,10 +45,12 @@ Configure [contactMergeSuggestions](../resources/contactmergesuggestions.md):
   - Determine whether suggestions to merge duplicate contacts for a user is enabled.
   - Disable or enable suggestions to merge duplicate contacts for a user.
 
+Access the user's [Exchange settings](../resources/exchangesettings.md). Get a list of Exchange settings, including mailboxes that belong to a user.
+
 Export users' Windows settings and values stored in a cloud:
   - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects.
   - Get a filtered list of the user's [windowsSetting](../resources/windowssetting.md) objects by passing one of the following in the filter query:
-    - [windowssettingtype](../resources/enums.md#windowssettingtype-values)
+    - [windowsSettingType](../resources/enums.md#windowssettingtype-values)
     - [windowsDeviceId](../resources/windowssetting.md#properties)
 
 Inherits from [entity](entity.md).
@@ -57,9 +61,10 @@ Inherits from [entity](entity.md).
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get settings](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
-|[Update settings](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
-|[List](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
+|[Get](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
+|[Update](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
+|[List Exchange settings](../api/usersettings-list-exchange.md)|[exchangeSettings](../resources/exchangesettings.md) collection|Get a list of Exchange settings, including mailboxes that belong to a user.|
+|[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
 
 ## Properties
 
@@ -74,6 +79,7 @@ Inherits from [entity](entity.md).
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |contactMergeSuggestions|[contactMergeSuggestions](contactmergesuggestions.md)| The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.|
+|exchange|[exchangeSettings](../resources/exchangesettings.md)|The Exchange settings for mailbox discovery.|
 |itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |

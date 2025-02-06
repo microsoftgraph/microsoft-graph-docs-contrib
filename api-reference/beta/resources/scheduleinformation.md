@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "teams"
 author: "iamgirishck"
+ms.date: 09/12/2024
 ---
 
 # scheduleInformation resource type
@@ -24,6 +25,9 @@ Represents the availability of a user, distribution list, or resource (room or e
 |scheduleItems |[scheduleItem](scheduleitem.md) collection |Contains the items that describe the availability of the user or resource. |
 |workingHours |[workingHours](workinghours.md) |The days of the week and hours in a specific time zone that the user works. These are set as part of the user's [mailboxSettings](mailboxsettings.md).|
 
+
+## Relationships
+None.
 
 ## JSON representation
 

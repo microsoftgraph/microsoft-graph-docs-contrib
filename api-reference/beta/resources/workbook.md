@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 07/17/2024
 ---
 
 # workbook resource type

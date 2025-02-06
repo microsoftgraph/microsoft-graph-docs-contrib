@@ -5,6 +5,7 @@ description: The renameAction object provides information about an activity that
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # renameAction resource type
 

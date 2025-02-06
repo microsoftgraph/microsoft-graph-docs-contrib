@@ -5,6 +5,7 @@ author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
 ms.subservice: entra-monitoring-health
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
 # reportRoot: getRelyingPartyDetailedSummary
@@ -26,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getrelyingpartydetailedsummary-permissions.md)]
+
+[!INCLUDE [rbac-usage-insights-apis](../includes/rbac-for-apis/rbac-usage-insights-apis.md)]
 
 ## HTTP request
 

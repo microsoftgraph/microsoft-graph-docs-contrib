@@ -4,6 +4,7 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) that man
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
+ms.date: 04/18/2024
 ---
 
 # Manage resource access certificates in Intune

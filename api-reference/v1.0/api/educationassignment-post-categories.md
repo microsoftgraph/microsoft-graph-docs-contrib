@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 09/10/2024
 ---
 
 # Create educationCategories

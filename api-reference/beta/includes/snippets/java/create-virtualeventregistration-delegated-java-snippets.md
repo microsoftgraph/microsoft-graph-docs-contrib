@@ -9,6 +9,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 VirtualEventRegistration virtualEventRegistration = new VirtualEventRegistration();
+VirtualEventExternalRegistrationInformation externalRegistrationInformation = new VirtualEventExternalRegistrationInformation();
+externalRegistrationInformation.setReferrer("Facebook");
+externalRegistrationInformation.setRegistrationId("myExternalRegistrationId");
+virtualEventRegistration.setExternalRegistrationInformation(externalRegistrationInformation);
 virtualEventRegistration.setPreferredTimezone("Pacific Standard Time");
 virtualEventRegistration.setPreferredLanguage("en-us");
 LinkedList<VirtualEventRegistrationQuestionAnswer> registrationQuestionAnswers = new LinkedList<VirtualEventRegistrationQuestionAnswer>();

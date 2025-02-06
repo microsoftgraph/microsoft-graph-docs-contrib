@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # broadcastMeetingCaptionSettings resource type
@@ -113,6 +114,9 @@ The following table shows the supported language codes for translation languages
 | Vietnamese (Vietnam)                     | vi      |
 | Welsh (United Kingdom)                   | cy      |
 | Yucatec Maya                             | yua     |
+
+## Relationships
+None.
 
 ## JSON representation
 

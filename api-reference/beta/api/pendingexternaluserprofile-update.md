@@ -6,6 +6,7 @@ ms.reviewer: mapamu
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/11/2024
 ---
 
 # Update pendingExternalUserProfile

@@ -17,8 +17,6 @@ import (
 
 requestBody := graphmodels.NewAccessPackageResourceRoleScope()
 role := graphmodels.NewAccessPackageResourceRole()
-id := "748f8431-c7c6-404d-8564-df67aa8cfc5e"
-role.SetId(&id) 
 displayName := "Member"
 role.SetDisplayName(&displayName) 
 originSystem := "AadGroup"

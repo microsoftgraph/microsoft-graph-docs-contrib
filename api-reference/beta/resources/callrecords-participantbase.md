@@ -5,6 +5,7 @@ title: "participantBase resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "cloud-communications"
+ms.date: 03/06/2024
 ---
 
 # participantBase resource type
@@ -24,6 +25,9 @@ Base type of [organizer](callrecords-organizer.md) and [participant](callrecords
 | id                      | String                                                                                                 | Unique identifier for the call participant.                                                      |
 | identity                | [communicationsIdentitySet](communicationsidentityset.md)                                              | The identity of the call participant.                                                            |
 | administrativeUnitInfos | [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection | List of [administrativeUnitInfo](callrecords-administrativeunitinfo.md) of the call participant. |
+
+## Relationships
+None.
 
 ## JSON representation
 

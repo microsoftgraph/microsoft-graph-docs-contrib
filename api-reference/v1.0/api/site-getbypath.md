@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 description: "Retrieve properties and relationships for a site resource."
 doc_type: apiPageType
+ms.date: 03/14/2024
 ---
 # Get a site resource by path
 

@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/02/2024
 ---
 
 # chat resource type
@@ -62,6 +63,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | id| String| The chat's unique identifier. Read-only.|
+| isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all its members. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or the list of members was last changed. Read-only.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
 | tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
@@ -71,12 +73,12 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 ### chatType values 
 
-| Member             | Value | Description               |
-| :----------------- | :---- | :------------------------ |
-|oneOnOne            | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members can't be removed/added.|
-|group               | 1     | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
-|meeting             | 2     | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
-|unknownFutureValue  | 3     | Evolvable enumeration sentinel value. Don't use. |
+| Member             | Description               |
+| :----------------- | :------------------------ |
+|oneOnOne            | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members can't be removed/added.|
+|group               | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
+|meeting             | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
+|unknownFutureValue  | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
@@ -104,7 +106,8 @@ The following JSON representation shows the resource type.
 {
   "createdDateTime": "dateTimeOffset",
   "chatType": "string",
-  "id": "string (identifier)",
+  "id": "string (identifier)",  
+  "isHiddenForAllMembers": "Boolean",
   "lastUpdatedDateTime": "dateTimeOffset",
   "onlineMeetingInfo": {
     "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"

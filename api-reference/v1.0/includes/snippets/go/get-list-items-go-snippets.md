@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphsites.SiteItemListItemItemsRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.ItemListsItemItemsRequestBuilderGetQueryParameters{
 	Expand: [] string {"fields($select=Name,Color,Quantity)"},
 }
-configuration := &graphsites.SiteItemListItemItemsRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.ItemListsItemItemsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

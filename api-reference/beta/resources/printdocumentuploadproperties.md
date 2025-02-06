@@ -5,6 +5,7 @@ title: "printDocumentUploadProperties resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
 ms.subservice: universal-print
+ms.date: 07/23/2024
 ---
 # printDocumentUploadProperties resource type
 

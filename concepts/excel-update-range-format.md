@@ -4,6 +4,7 @@ description: "View examples that show how to use Excel APIs in Microsoft Graph t
 ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
+ms.date: 11/07/2024
 ---
 
 # Update a range format in Excel

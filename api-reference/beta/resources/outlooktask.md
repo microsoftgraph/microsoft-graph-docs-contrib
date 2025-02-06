@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: resourcePageType
 toc.title: Outlook task (deprecated)
+ms.date: 08/23/2024
 ---
 
 # outlookTask resource type (deprecated)

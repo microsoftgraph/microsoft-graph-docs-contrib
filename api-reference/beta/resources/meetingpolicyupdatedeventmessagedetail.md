@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # meetingPolicyUpdatedEventMessageDetail resource type
@@ -25,6 +26,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |meetingChatEnabled|Boolean|Represents whether the meeting chat is enabled or not.|
 |meetingChatId|String|Unique identifier of the meeting chat.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

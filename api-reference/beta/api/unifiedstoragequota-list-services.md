@@ -5,6 +5,7 @@ author: "BarryShehadeh"
 ms.localizationpriority: medium
 ms.subservice: onedrive
 doc_type: apiPageType
+ms.date: 04/19/2024
 ---
 
 # List serviceStorageQuotaBreakdown

@@ -18,10 +18,10 @@ import (
 
 requestFilter := "source eq 'Tenant'"
 
-requestParameters := &graphsecurity.SecurityAttackSimulationPayloadsRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.AttackSimulationPayloadsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphsecurity.SecurityAttackSimulationPayloadsRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.AttackSimulationPayloadsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphsites.SiteItemListItemItemItemRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.ItemListsItemItemsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"fields"},
 }
-configuration := &graphsites.SiteItemListItemItemItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.ItemListsItemItemsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

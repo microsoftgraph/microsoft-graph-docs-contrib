@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # membersAddedEventMessageDetail resource type
@@ -29,6 +30,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of members added.|
 |visibleHistoryStartDateTime|DateTimeOffset|The timestamp denoting how far back a conversation's history is shared with the conversation members.|
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

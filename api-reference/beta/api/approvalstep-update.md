@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Update approvalStep
@@ -25,6 +26,8 @@ The following tables show the least privileged permission or permissions require
 
 <!-- { "blockType": "permissions", "name": "approvalstep_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-end-user-apis-write](../includes/rbac-for-apis/rbac-entitlement-management-end-user-apis-write.md)]
 
 <a name='for-pim-for-azure-ad-roles'></a>
 

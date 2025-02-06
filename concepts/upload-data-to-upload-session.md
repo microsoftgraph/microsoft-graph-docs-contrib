@@ -4,6 +4,7 @@ description: "Use the Universal Print API in Microsoft Graph to create a print j
 author: "nilakhan"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Upload documents using the Microsoft Graph Universal Print API

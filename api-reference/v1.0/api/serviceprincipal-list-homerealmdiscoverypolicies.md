@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "nickludwig"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 07/30/2024
 ---
 
 # List assigned homeRealmDiscoveryPolicy

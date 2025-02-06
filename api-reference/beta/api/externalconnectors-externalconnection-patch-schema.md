@@ -5,9 +5,10 @@ ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.subservice: "search"
 doc_type: "apiPageType"
+ms.date: 06/01/2024
 ---
 
-# Create schema
+# Create or update schema
 
 Namespace: microsoft.graph.externalConnectors
 

@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.ItemMailFolderItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.MailFoldersItemMessagesRequestBuilderGetQueryParameters{
 	Orderby: [] string {"from/emailAddress/name desc","subject"},
 }
-configuration := &graphusers.ItemMailFolderItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.MailFoldersItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

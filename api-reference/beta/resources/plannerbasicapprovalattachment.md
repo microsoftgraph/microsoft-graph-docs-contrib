@@ -5,6 +5,7 @@ author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 04/16/2024
 ---
 
 # plannerBasicApprovalAttachment resource type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: entra-users
 author: "yyuank"
+ms.date: 08/09/2024
 ---
 
 # employeeOrgData resource type

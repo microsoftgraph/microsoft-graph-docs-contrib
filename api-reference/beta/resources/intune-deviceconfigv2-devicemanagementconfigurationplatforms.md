@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagementConfigurationPlatforms enum type
@@ -28,3 +29,5 @@ Supported platform types.
 |windows10|32|Settings for Windows 10 platform.|
 |linux|128|Settings for Linux platform.|
 |unknownFutureValue|256|Evolvable enumeration sentinel value. Do not use.|
+|androidEnterprise|512|Settings for Corporate Owned Android Enterprise devices.|
+|aosp|1024|Settings for Android Open Source Project platform.|

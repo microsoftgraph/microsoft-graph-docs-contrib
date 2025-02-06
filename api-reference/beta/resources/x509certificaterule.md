@@ -5,6 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # x509CertificateRule resource type
@@ -23,7 +24,7 @@ Defines the strong authentication configuration rules for the X.509 certificate.
 |policyOidIdentifier|String| The identifier of the X.509 certificate policyOID. |
 |x509CertificateAuthenticationMode|x509CertificateAuthenticationMode| The type of strong authentication mode. The possible values are: `x509CertificateSingleFactor`, `x509CertificateMultiFactor`, `unknownFutureValue`. Required.|
 |x509CertificateRequiredAffinityLevel|x509CertificateAffinityLevel| The possible values are: `low`, `high`, `unknownFutureValue`.|
-|x509CertificateRuleType|x509CertificateRuleType| The type of the X.509 certificate mode configuration rule. The possible values are: `issuerSubject`, `policyOID`, `unknownFutureValue`, `issuerSubjectAndPolicyOID`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `issuerSubjectAndPolicyOID`. Required.|
+|x509CertificateRuleType|x509CertificateRuleType| The type of the X.509 certificate mode configuration rule. The possible values are: `issuerSubject`, `policyOID`, `unknownFutureValue`, `issuerSubjectAndPolicyOID`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `issuerSubjectAndPolicyOID`. Required.|
 
 ## Relationships
 None.

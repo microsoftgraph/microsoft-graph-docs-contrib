@@ -5,6 +5,7 @@ author: "AkJo"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
 # resourceSpecificPermissionGrant resource type
@@ -37,6 +38,9 @@ For more information about granting apps consent to access a specific instance o
 | resourceAppId   | string        | ID of the Microsoft Entra app that is hosting the resource. Read-only.                        |
 | permissionType  | string        | The type of permission. Possible values are: `Application`, `Delegated`. Read-only. |
 | permission      | string        | The name of the resource-specific permission. Read-only.                                                |
+
+## Relationships
+None.
 
 ## JSON representation
 

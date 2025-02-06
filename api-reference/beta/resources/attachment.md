@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "outlook"
 author: "SuryaLashmiS"
+ms.date: 08/08/2024
 ---
 
 # attachment resource type
@@ -41,7 +42,8 @@ The following methods apply to any of the derived types of attachments (**fileAt
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get attachment](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties, relationships, or raw contents of an attachment, attached to a user event, message, Outlook task, or post.|
+|[Get](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties, relationships, or raw contents of an attachment, attached to a user event, message, Outlook task, or post.|
+|[Delete](../api/attachment-delete.md) | None |Delete an attachment on an event, message, Outlook task, or post. |
 |[Add attachment to a user event](../api/event-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event in a user calendar. This operation limits the size of the attachment you can add to under 3 MB.|
 |[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message. This operation limits the size of the attachment you can add to under 3 MB.|
 |[Create session to attach large file](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified **message** or **event**. The file size must be between 3 MB and 150 MB.|
@@ -51,7 +53,6 @@ The following methods apply to any of the derived types of attachments (**fileAt
 |[List attachments of a message](../api/message-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
 |[List attachments of an Outlook task](../api/outlooktask-list-attachments.md) (deprecated) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task. |
 |[List attachments of a post](../api/post-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
-|[Delete](../api/attachment-delete.md) | None |Delete an attachment on an event, message, Outlook task, or post. |
 
 ## Properties
 

@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 doc_type: resourcePageType
+ms.date: 09/11/2024
 ---
 
 # virtualEventsRoot resource type

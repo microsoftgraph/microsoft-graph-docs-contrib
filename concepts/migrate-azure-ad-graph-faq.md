@@ -44,7 +44,7 @@ If you own an application's source code, search for the `https://graph.windows.n
 
 ## As an IT admin, how do I identify apps in my tenant that use Azure AD Graph?
 
-Use one of the following three methods to identify apps in your tenant with a dependency on Azure AD Graph.
+Use the following four methods to identify apps in your tenant with a dependency on Azure AD Graph. Method 1 and 2 identify your apps that use Azure AD Graph based on the actual app activities while method 3 and 4 use static app configuration and consent status. You can combine these methods to find apps that have a dependency on Azure AD Graph.
 
 ### Method 1: Through network proxy logs
 
@@ -67,7 +67,7 @@ Check your network server traffic logs through a filter proxy for any apps calli
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI-AAD.png" alt-text="Filter apps that use Azure AD Graph." border="true":::
 
-### Method 3: Use a PowerShell script
+### Method 4: Use a PowerShell script
 
 Download and run [this PowerShell script](https://github.com/microsoft/AzureADGraphApps). Use this method to retrieve apps with their home directory in your tenant and apps with their home directories in other tenants.
 

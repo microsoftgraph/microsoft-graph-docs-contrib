@@ -5,6 +5,7 @@ title: mediaSource resource type
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: "resourcePageType"
+ms.date: 03/12/2024
 ---
 # mediaSource resource type
 

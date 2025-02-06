@@ -5,6 +5,7 @@ author: "SarahBar"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 10/09/2024
 ---
 
 # azureADAuthentication resource type

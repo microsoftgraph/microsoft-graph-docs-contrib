@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Accept-Language", "0")
 
-configuration := &graphorganization.OrganizationItemBrandingRequestBuilderPatchRequestConfiguration{
+configuration := &graphorganization.ItemBrandingRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewOrganizationalBranding()

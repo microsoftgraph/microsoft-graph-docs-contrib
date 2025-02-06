@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceEntitlementManagementCatalogItemResourcesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.EntitlementManagementCatalogsItemResourcesRequestBuilderGetQueryParameters{
 	Expand: [] string {"scopes"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagementCatalogItemResourcesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.EntitlementManagementCatalogsItemResourcesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

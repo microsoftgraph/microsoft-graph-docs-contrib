@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "stuartcl"
 doc_type: conceptualPageType
 ms.subservice: "security"
+ms.date: 05/13/2024
 ---
 
 # Reports API overview for attack simulation training as part of Microsoft Defender for Office 365

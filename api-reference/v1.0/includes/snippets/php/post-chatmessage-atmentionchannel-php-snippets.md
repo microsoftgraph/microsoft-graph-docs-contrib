@@ -20,7 +20,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new ChatMessage();
 $body = new ItemBody();
 $body->setContentType(new BodyType('html'));
-$body->setContent('<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>');
+$body->setContent('<at id=\"0\">General</at>&nbsp;Hello there!');
 $requestBody->setBody($body);
 $mentionsChatMessageMention1 = new ChatMessageMention();
 $mentionsChatMessageMention1->setId(0);

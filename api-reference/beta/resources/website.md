@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: mail
 author: "AAmatino"
+ms.date: 03/21/2024
 ---
 
 # website resource type
@@ -22,6 +23,9 @@ Represents a web site.
 |type|String| Possible values are: `other`, `home`, `work`, `blog`, `profile`.|
 |address|string|The URL of the website.|
 |displayName|string|The display name of the web site.|
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: "iamgirishck"
 ms.subservice: "outlook"
+ms.date: 04/04/2024
 ---
 
 # Create event

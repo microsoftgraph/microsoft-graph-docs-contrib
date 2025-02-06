@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 author: "iamgirishck"
 ms.subservice: "outlook"
+ms.date: 08/08/2024
 ---
 
 # dateTimeTimeZone resource type

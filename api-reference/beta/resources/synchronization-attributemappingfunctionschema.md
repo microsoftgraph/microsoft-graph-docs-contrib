@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # attributeMappingFunctionSchema resource type
@@ -27,6 +28,9 @@ Describes a function that can be used in an [attribute mapping](synchronization-
 |:---------------------------|:-------------------------|:---------------|
 |id                        |String                    |Key. Read-only. |
 |parameters                  |[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection  |Collection of function parameters.|
+
+## Relationships
+None.
 
 ## JSON representation
 

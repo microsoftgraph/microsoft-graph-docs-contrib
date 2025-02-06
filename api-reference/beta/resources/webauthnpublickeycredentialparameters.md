@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium  
 ms.subservice: "entra-sign-in"  
 doc_type: resourcePageType  
+ms.date: 07/25/2024
 ---  
 
 # webauthnPublicKeyCredentialParameters resource type

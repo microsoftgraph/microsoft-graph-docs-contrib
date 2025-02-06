@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
 toc.title: Chart series
+ms.date: 07/17/2024
 ---
 
 # workbookChartSeries resource type
