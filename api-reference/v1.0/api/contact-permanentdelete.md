@@ -1,6 +1,6 @@
 ---
 title: "contact: permanentDelete"
-description: "Permanently delete a contact and place it in the Purges folder in the user's mailbox."
+description: "Permanently delete a contact and place it in the purges folder in the user's mailbox."
 author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
