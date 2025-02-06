@@ -77,9 +77,6 @@ The following example shows a request.
 }
 -->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/security/auditLog/queries/{auditLogQueryId}/records
-```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-auditlogrecord-csharp-snippets.md)]
