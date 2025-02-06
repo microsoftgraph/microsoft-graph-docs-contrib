@@ -64,9 +64,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_auditlogquery"
 }
 -->
-``` http
-GET https://graph.microsoft.com/v1.0/security/auditLog/queries
-```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-auditlogquery-csharp-snippets.md)]
