@@ -42,6 +42,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}/deleteAndUnprotect
+POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/deleteAndUnprotect
 ```
 
 ## Request headers
@@ -73,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/driveInclusionRules/40005fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
+POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/deleteAndUnprotect
 ```
 
 #### Response
@@ -93,7 +94,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.protectionRuleBase",
-    "id": "40005fb9-2682-47bc-a8f6-6c38c1ff498d",
+    "id": "61633878-8321-4950-bfaf-ed285bdd1461",
     "status": "deleteRequested",
     "createdDateTime": "2025-01-15T15:07:44.3043505Z",
     "lastModifiedDateTime": "2025-01-15T14:42:12.6779064Z",
@@ -111,7 +112,7 @@ Content-Type: application/json
 
 ### Example 2: Delete and unprotect a mailboxInclusionRule associated with an Exchange protection policy
 
-The following example shows how to update a **mailboxInclusionRule** associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+The following example shows how to delete a **mailboxInclusionRule** associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
 #### Request
 
@@ -122,7 +123,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
+POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/6b0991b9-e7d4-4794-86fa-2a3f2a4e3177/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
 ```
 
 #### Response
