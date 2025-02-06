@@ -13,7 +13,7 @@ ms.date: 02/05/2025
 
 # Configure Microsoft Entra Internet Access using Microsoft Graph APIs
 
-[Microsoft Entra Internet Access](https://learn.microsoft.com/en-us/entra/global-secure-access/concept-internet-access) provIDes an IDentity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic.
+[Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access) provIDes an IDentity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic.
 
 In this tutorial, you learn how to configure Microsoft Entra Internet Access programmatically using the Microsoft Graph network access APIs. You:
 
