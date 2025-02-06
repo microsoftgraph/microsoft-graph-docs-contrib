@@ -36,10 +36,42 @@
           },
           {
             "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-beta) resource.",
+            "Target": "mailboxProtectionUnit"
+          },
+          {
+            "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnit?view=graph-rest-beta) resource.",
+            "Target": "driveProtectionUnit"
+          },
+          {
+            "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnit?view=graph-rest-beta) resource.",
+            "Target": "siteProtectionUnit"
+          },
+          {
+            "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
             "ApiChange": "Method",
             "ChangedApiName": "deleteAndUnprotect",
             "ChangeType": "Addition",
             "Description": "Added the [deleteAndUnprotect](https://learn.microsoft.com/en-us/graph/api/protectionRuleBase-deleteAndUnprotect?view=graph-rest-beta) method to the [protectionRuleBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionRuleBase?view=graph-rest-beta) resource.",
+            "Target": "protectionRuleBase"
+          },
+          {
+            "Id": "54b186d9-5184-4065-91f0-b9a16a6a6ccf",
+            "ApiChange": "Method",
+            "ChangedApiName": "protectionRuleBase",
+            "ChangeType": "Addition",
+            "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/protectionRuleBase-update?view=graph-rest-beta) method to the [protectionRuleBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionRuleBase?view=graph-rest-beta) resource.",
             "Target": "protectionRuleBase"
           }
         ],
@@ -47,8 +79,8 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2025-01-07T17:35:40.7754113Z",
-        "WorkloadArea": "EnhancedRestore",
-        "SubArea": "Backup and Restore"
+        "WorkloadArea": "Backup storage",
+        "SubArea": ""
       },
       {
         "ChangeList": [
