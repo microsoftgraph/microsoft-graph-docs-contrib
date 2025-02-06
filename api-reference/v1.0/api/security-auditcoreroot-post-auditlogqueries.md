@@ -40,9 +40,6 @@ Auditing data can be accessed through Microsoft Purview Audit Search API via the
   "blockType": "ignored"
 }
 -->
-``` http
-POST /security/auditLog/queries
-```
 
 ## Request headers
 |Name|Description|
