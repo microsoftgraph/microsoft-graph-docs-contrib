@@ -26,7 +26,7 @@ Represents caption settings of a Microsoft Teams [live event](/microsoftteams/te
 
 > [!TIP]
 >
-> Translation languages cannot contain the same language code as the spoken language.
+> Translation languages can't contain the same language code as the spoken language.
 
 ### spokenLanguage values
 
