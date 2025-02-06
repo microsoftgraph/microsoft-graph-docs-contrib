@@ -13,9 +13,9 @@ ms.date: 02/05/2025
 
 # Configure Microsoft Entra Internet Access using Microsoft Graph APIs
 
-[Microsoft Entra Internet Access](https://learn.microsoft.com/en-us/entra/global-secure-access/concept-internet-access) provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic.
+[Microsoft Entra Internet Access](https://learn.microsoft.com/en-us/entra/global-secure-access/concept-internet-access) provIDes an IDentity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic.
 
-In this tutorial, you learn how to configure Microsoft Entra Internet Access programmatically using the Microsoft Graph networkaccess APIs. You:
+In this tutorial, you learn how to configure Microsoft Entra Internet Access programmatically using the Microsoft Graph network access APIs. You:
 
 > [!div class="checklist"]
 > * Create web content filtering policies to allow or block access to given destinations.
@@ -28,7 +28,7 @@ In this tutorial, you learn how to configure Microsoft Entra Internet Access pro
 
 To complete the steps in this tutorial:
 
-- Sign in to an API client such as Graph Explorer with an account that has supported administrator roles. The following Microsoft Entra roles are the least pivileged for the operations in this tutorial:
+- Sign in to an API client such as Graph Explorer with an account assigned to the supported administrator roles. The following Microsoft Entra roles are the least privileged for the operations in this tutorial:
   - Global Secure Access Administrator for configuring the Web content filtering policies and filtering profiles.
   - Conditional Access Administrator for configuring Conditional Access policies.
 - Grant consent to your admin for the *NetworkAccess.Read.All*, *NetworkAccess.ReadWrite.All*, and *Policy.ReadWrite.ConditionalAccess* delegated permissions.
@@ -40,7 +40,7 @@ Before you configure Microsoft Entra Internet Access filtering policies, start b
 
 ### Step 1.1: Retrieve the Internet Access traffic forwarding profile
 
-Record the id of the profile to use.
+Record the ID of the profile to use.
 
 #### Request
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 ## Step 2: Create a web content filtering policy and security profile
 
-To configure policies in Microsoft Entra Internet Access, you first need to Create a filtering policy, which is a collection of rules, governing access to destinations like web categories and FQDNs. For example, you can create a filtering policy with rules that block access to the Artificial Intelligence category and individual FQDNs. Then you’ll organize filtering policies into a security profile which will be used to assign to Conditional Access policies.
+To configure policies in Microsoft Entra Internet Access, you first need to Create a filtering policy, which is a collection of rules, governing access to destinations like web categories and Fully Qualified Domain Names (FQDNs). For example, you can create a filtering policy with rules that block access to the Artificial Intelligence category and individual FQDNs. Then you organize filtering policies into a security profile which, to which you can target with Conditional Access policies.
 
 ### Step 2.1: Review available web categories list
 
@@ -151,7 +151,7 @@ Content-type: application/json
 
 ### Step 2.2: Retrieve the Internet Access traffic forwarding profile
 
-In this example, you can create a filtering policy with rules that block access to the Artificial Intelligence category and FQDNs for bing.com. Once this is created, take note of the filtering policy id for linking in the filtering profile.
+In this example, you can create a filtering policy with rules that block access to the Artificial Intelligence category and FQDNs for bing.com. Once this policy is created, take note of the filtering policy ID for linking in the filtering profile.
 
 #### Request
 
@@ -221,7 +221,7 @@ Content-type: application/json
 
 Step 2.3: Create a filtering profile (also known as a security profile)
 
-Create a filtering profile (renamed to security profile in the Entra admin portal) to hold your policies and target in Conditional Access session control. Once this is created, take note of the filtering profile id when linking in the Conditional Access policy.
+Create a filtering profile (renamed to security profile in the Entra admin portal) to hold your policies and target in Conditional Access session control. Once this profile is created, take note of the filtering profile ID when linking in the Conditional Access policy.
 
 ### Request 
 
@@ -323,7 +323,7 @@ Content-type: application/json
 
 Step 3: Create and Link Conditional Access policy
 
-To make the contents of your filtering profile user- and context-aware, you will need to link it to a Conditional Access policy.
+To make the contents of your filtering profile user- and context-aware, you need to link it to a Conditional Access policy.
 
 ### Request
 
@@ -435,5 +435,5 @@ Content-type: application/json
 
 ## Related content
 
-- [Microsoft Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/gsa-deployment-guide-internet-access)
+- [Microsoft Security Service Edge Solution Deployment GuIDe for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/gsa-deployment-guIDe-internet-access)
 - [Tutorial: Configure Microsoft Entra Internet Access using Microsoft Graph APIs](/graph/tutorial-entra-internet-access)
