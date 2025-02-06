@@ -2,11 +2,10 @@
 author: "guptasandeep"
 description: "Represents the archival details of a siteCollection."
 title: "siteArchivalDetails resource type"
-ms.date: 11/15/2024
+ms.date: 02/06/2025
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
-ms.date: 08/01/2024
 ---
 
 # siteArchivalDetails resource type
