@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 ```http
-POST /storageContainers/b!d2XNj_LW80yZbxDjj4Uj4E1ZFa6_76xEroXu_lX_DFE59ZD-2EcGRZlA0R8Vm3f0/unarchive
+POST /storageContainers/{containerId}/unarchive
 ```
 
 ## Request headers
@@ -47,7 +47,8 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "unarchive_fileStorageContainer"
+  "name": "unarchive_fileStorageContainer",
+  "sampleKeys": ["b!d2XNj_LW80yZbxDjj4Uj4E1ZFa6_76xEroXu_lX_DFE59ZD-2EcGRZlA0R8Vm3f0"]
 }
 -->
 ```http

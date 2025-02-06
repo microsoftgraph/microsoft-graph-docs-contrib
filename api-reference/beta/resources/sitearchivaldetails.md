@@ -17,7 +17,7 @@ Represents the archival details of a [siteCollection](../resources/sitecollectio
 
 | Property      | Type   | Description                                    |
 |:------------- |:------ |:-----------------------------------------------|
-|archivedBy|[identitySet](../resources/identityset.md)| User or application who archived the container. |
+|archivedBy|[identitySet](../resources/identityset.md)| The user or application that archived the container. |
 |archivedDateTime|DateTimeOffset| Time when the container was archived. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | archiveStatus | siteArchiveStatus | Represents the current archive status of the site collection. Returned only on `$select`.|
 
