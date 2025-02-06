@@ -2066,6 +2066,8 @@ items:
       href: ../../resources/ontokenissuancestartlistener.md
     - name: On user create start listener
       href: ../../resources/onusercreatestartlistener.md
+    - name: On phone method load start listener
+      href: ../../resources/onphonemethodloadstartlistener.md
   - name: Authentication methods
     items:
     - name: Overview
