@@ -112,7 +112,7 @@ Content-Type: application/json
 
 ### Example 2: Delete and unprotect a mailboxInclusionRule associated with an Exchange protection policy
 
-The following example shows how to delete a **mailboxInclusionRule** associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+The following example shows how to delete a **mailboxInclusionRule** associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
 #### Request
 
