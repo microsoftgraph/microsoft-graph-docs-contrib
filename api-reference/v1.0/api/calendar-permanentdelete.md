@@ -5,7 +5,7 @@ author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 01/17/2025
+ms.date: 02/05/2025
 ---
 
 # calendar: permanentDelete
