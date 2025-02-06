@@ -30,7 +30,7 @@ The following limitations apply to this resource:
 - The protection rule APIs for adding multiple sites by site names or URL in the backup policy creation workflow can handle a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and a maximum of 255 characters.
 - The protection rule APIs for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time.
 - The static rules are applied only once, during which time the security groups or distribution lists are flattened when added to the backup configuration policy. For example, groups or lists aren't dynamically updated in the system if users are added or removed from the original security group.
-- The dynamic rules are refreshed at regular intervals, automatically adding and removing of artifacts to the configuration policy depending on the result of rule evaluation.
+- The dynamic rules are refreshed at regular intervals, automatically adding and removing artifacts from the configuration policy depending on the result of the rule evaluation.
 - A protection policy can have only one active dynamic rule.
 - Dynamic rules aren't available for SharePoint protection policies.
 - The dynamic rule expression supports a maximum of 100 group IDs in an expression.
@@ -60,7 +60,7 @@ The following limitations apply to this resource:
 |completed | The status of the protection rule when it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule when the rule ran but encountered errors.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.    |
-|updateRequested | The status of the protection rule when it's patched. This value applies only to dynamic rules.|
+|updateRequested | The status of the protection rule when a patch is requested. This value applies only to dynamic rules.|
 |deleteRequested | The status of the protection rule on deleteAndUnprotect action. This value applies only to dynamic rules.|
 
 ## Relationships
