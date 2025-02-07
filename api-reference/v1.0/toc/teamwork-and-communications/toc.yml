@@ -845,6 +845,20 @@ items:
         href: ../../api/userteamwork-get.md
 - name: Shift management
   items:
+  - name: Day note
+    items:
+    - name: Day note
+      href: ../../resources/daynote.md
+    - name: List
+      href: ../../api/schedule-list-daynotes.md
+    - name: Create
+      href: ../../api/schedule-post-daynotes.md
+    - name: Get
+      href: ../../api/daynote-get.md
+    - name: Update
+      href: ../../api/daynote-update.md
+    - name: Delete
+      href: ../../api/schedule-delete-daynotes.md
   - name: Offer shift request
     items:
     - name: Offer shift request
@@ -951,6 +965,30 @@ items:
       href: ../../api/swapshiftschangerequest-approve.md
     - name: Decline
       href: ../../api/swapshiftschangerequest-decline.md
+  - name: Time card
+    items:
+    - name: Time card
+      href: ../../resources/timecard.md
+    - name: List
+      href: ../../api/schedule-list-timecards.md
+    - name: Create
+      href: ../../api/schedule-post-timecards.md
+    - name: Get
+      href: ../../api/timecard-get.md
+    - name: Replace
+      href: ../../api/timecard-replace.md
+    - name: Delete
+      href: ../../api/schedule-delete-timecards.md
+    - name: Clock in
+      href: ../../api/timecard-clockin.md
+    - name: Clock out
+      href: ../../api/timecard-clockout.md
+    - name: Start break
+      href: ../../api/timecard-startbreak.md
+    - name: End break
+      href: ../../api/timecard-endbreak.md
+    - name: Confirm
+      href: ../../api/timecard-confirm.md
   - name: Time off
     items:
     - name: Time off
@@ -1021,10 +1059,14 @@ items:
       href: ../../api/workingtimeschedule-endworkingtime.md
   - name: Complex types
     items:
+    - name: Geo coordinates
+      href: ../../resources/geocoordinates.md
     - name: Identity
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
+    - name: Item body
+      href: ../../resources/itembody.md
     - name: Open shift item
       href: ../../resources/openshiftitem.md
     - name: Patterned recurrence
@@ -1039,6 +1081,14 @@ items:
       href: ../../resources/shiftavailability.md
     - name: Shift item
       href: ../../resources/shiftitem.md
+    - name: Time card break
+      href: ../../resources/timecardbreak.md
+    - name: Time card entry
+      href: ../../resources/timecardentry.md
+    - name: Time card event
+      href: ../../resources/timecardevent.md
+    - name: Time clock settings
+      href: ../../resources/timeclocksettings.md
     - name: Time off item
       href: ../../resources/timeoffitem.md
     - name: Time range
