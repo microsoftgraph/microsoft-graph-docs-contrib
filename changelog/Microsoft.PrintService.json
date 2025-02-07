@@ -21461,7 +21461,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "downloadedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **downloadedDateTime** property to the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/intune-printDocument?view=graph-rest-1.0) resource.",
+          "Description": "Added the **downloadedDateTime** property to the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource.",
           "Target": "printDocument"
         },
         {
@@ -21469,7 +21469,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "uploadedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **uploadedDateTime** property to the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/intune-printDocument?view=graph-rest-1.0) resource.",
+          "Description": "Added the **uploadedDateTime** property to the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource.",
           "Target": "printDocument"
         },
         {
@@ -21477,7 +21477,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "acknowledgedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **acknowledgedDateTime** property to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/intune-printJob?view=graph-rest-1.0) resource.",
+          "Description": "Added the **acknowledgedDateTime** property to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
           "Target": "printJob"
         },
         {
@@ -21485,7 +21485,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "errorCode",
           "ChangeType": "Addition",
-          "Description": "Added the **errorCode** property to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/intune-printJob?view=graph-rest-1.0) resource.",
+          "Description": "Added the **errorCode** property to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
           "Target": "printJob"
         }
       ],
