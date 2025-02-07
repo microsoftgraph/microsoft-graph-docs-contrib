@@ -35,7 +35,7 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containers/{id}/sharePointGroups/{groupId}
+DELETE /storage/fileStorage/containers/{id}/sharePointGroups/{sharePointGroupId}
 ```
 
 ## Request headers
@@ -47,16 +47,14 @@ DELETE /storage/fileStorage/containers/{id}/sharePointGroups/{groupId}
 ## Request body
 No request body should be supplied.
 
-
 ## Response
 
 If successful, this action returns a `204 No Content` response.
-## Examples
+
+## Example 1 : Delete a SharePointGroup
+The following example deletes a SharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`.
 
 ### Request
-
-The following example shows a successful delete request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -64,7 +62,7 @@ The following example shows a successful delete request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{groupId}
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
 ```
 
 # [C#](#tab/csharp)
@@ -110,3 +108,66 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
+## Example 2: Attempt to delete a SharePointGroup that does not exist.
+
+The following example attempts to delete a SharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`. There is no such group in the container.
+
+### Request
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delete_sharepointgroup"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/activate-filestoragecontainer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/activate-filestoragecontainer-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/activate-filestoragecontainer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/activate-filestoragecontainer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/activate-filestoragecontainer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/activate-filestoragecontainer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/activate-filestoragecontainer-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows a sample response. Only existing SharePointGroups can be deleted.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 404 Not Found
+{
+  "error":{
+    "code": "itemNotFound",
+    "message": "Item not found"
+  }
+}
+```

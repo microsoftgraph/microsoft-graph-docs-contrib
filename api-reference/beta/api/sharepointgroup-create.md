@@ -49,19 +49,18 @@ In the request body, supply the values for the title and description of the **sh
 
 |Property|Type|Description|
 |:---|:---|:---|
-|title|String|The title of the **sharePointGroup**. Required.|
-|description|String|Provides a user-visible description of the **sharePointGroup**. Required.|
-
+|title|string|The title of the **sharePointGroup**. The title cannot be more than 255 characters long and cannot have the document library GUID embedded within it. Required.|
+|description|string|A user-visible description of the **sharePointGroup**. Description cannot be longer than 512 characters. Optional.|
 
 ## Response
 
 If successful, this action returns a `201 Created` response code with a json representation of the created group.
 
-## Examples
+## Example 1: Create a new SharePointGroup that is local to a SharePointEmbedded container
+
+The following example creates a new SharePointGroup under the container identified by `{containerId}`. The title and description of the SharePointGroup are shown in the request body.
 
 ### Request
-
-The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +108,7 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerI
 
 ### Response
 
-The following example shows the response.
+The following example shows a sample response. The group is successfully created with a newly assigned id that acts as an identifier.
 
 <!-- {
   "blockType": "response",
@@ -124,4 +123,3 @@ HTTP/1.1 201 Created
     "description": "This is sample description"
 }
 ```
-

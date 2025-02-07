@@ -55,11 +55,11 @@ In the request body, supply the values for the identity of the **sharePointGroup
 
 If successful, this action returns a `201 Created` response code with a json representation of the created **sharePointGroupMember**.
 
-## Examples
+## Example 1: Create a sharePointGroupMember using their upn
+
+The following adds a member to a sharePointGroup identified by `{sharePointGroupId}` that is under a container identified by `{containerId}`. We add the member via the member's UPN.
 
 ### Request
-
-The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/members
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members
 {
     "identity":
     {
@@ -112,7 +112,7 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerI
 
 ### Response
 
-The following example shows the response.
+The following example shows a sample response with a json object representing the created member.
 
 <!-- {
   "blockType": "response",

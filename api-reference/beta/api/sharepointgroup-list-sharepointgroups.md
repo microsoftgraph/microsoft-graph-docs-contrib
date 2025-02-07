@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 List [sharePointGroup](../resources/sharepointgroup.md) objects.
 
-A collection of **sharePointGroup** objects that are local to the SharePointEmbedded container or SharePoint site are retrieved.
+A collection of **sharePointGroup** objects that are local to the SharePointEmbedded container or SharePoint site is returned.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -47,17 +47,14 @@ GET /storage/fileStorage/containers/{id}/sharePointGroups
 ## Request body
 No request body is supplied for this api.
 
-
 ## Response
 
 If successful, this action returns a `200 OK` response code with a json representation of the collection of retrieved group.
 
-## Examples
+## Example 1 : Retrieve all the existing SharePointGroups that are local to a container
+The following example retrieves all the SharePointGroups that are local to the SharePointEmbedded container identified by `{containerId}`
 
 ### Request
-
-The following example shows a request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -65,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups
 ```
 
 # [C#](#tab/csharp)
@@ -100,7 +97,7 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId
 
 ### Response
 
-The following example shows the response.
+The following example shows a sample response containing the collection of SharePointGroups that exist.
 
 <!-- {
   "blockType": "response",
@@ -121,4 +118,65 @@ HTTP/1.1 200 OK
         "description": "This is sample description for group 2"
     }
 ]
+```
+
+## Example 2 : Attempt to retrieve all the existing SharePointGroups that are local to a container. The container has no SharePointGroups
+The following example attempts to retrieve all the SharePointGroups that are local to the SharePointEmbedded container identified by `{containerId}`. This container is new and has no SharePointGroups in it.
+
+### Request
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_sharepointgroup"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/activate-filestoragecontainer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/activate-filestoragecontainer-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/activate-filestoragecontainer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/activate-filestoragecontainer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/activate-filestoragecontainer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/activate-filestoragecontainer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/activate-filestoragecontainer-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows a sample response. As there are no SharePointGroups in the container, the response has an empty list.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+{
+  "@odata.context": "https://contoso.sharepoint.com/_api/v2.1/$metadata#storageContainers({containerId})/sharePointGroups",
+  "value": []
+}
 ```

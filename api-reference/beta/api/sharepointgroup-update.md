@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [sharePointGroup](../resources/sharepointgroup.md) object.
-
-An existing **sharePointGroup** object is updated by invoking this api.
+An existing [sharePointGroup](../resources/sharepointgroup.md) object is updated by invoking this api.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -49,8 +47,8 @@ In the request body, supply the values for the updated title or updated descript
 
 |Property|Type|Description|
 |:---|:---|:---|
-|title|String|The new title of the **sharePointGroup**. Optional.|
-|description|String|Provides a new user-visible description of the **sharePointGroup**. Optional.|
+|title|string|The new title of the **sharePointGroup**. The new title cannot be more than 255 characters long and cannot have the document library id embedded within it. Optional.|
+|description|string|The new description of the **sharePointGroup**. Updated description cannot be longer than 512 characters. Optional.|
 
 
 ## Response

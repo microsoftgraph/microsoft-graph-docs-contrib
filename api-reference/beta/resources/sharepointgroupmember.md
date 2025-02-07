@@ -44,6 +44,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.sharePointGroupMember",
   "id": "string (identifier)",
-  "identity": {"@odata.type":"microsoft.graph.sharePointIdentitySet"},
+  "identity": "microsoft.graph.sharePointIdentitySet",
 }
 ```

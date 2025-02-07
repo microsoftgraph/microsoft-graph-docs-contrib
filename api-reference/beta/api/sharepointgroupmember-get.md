@@ -35,7 +35,7 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-POST /storage/fileStorage/containers/{id}/sharePointGroups/members
+POST /storage/fileStorage/containers/{id}/sharePointGroups/{sharePointGroupId}/members
 ```
 
 ## Request headers
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/members/{groupMemberId}
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
 ```
 
 # [C#](#tab/csharp)
