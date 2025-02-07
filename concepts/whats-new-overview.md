@@ -17,6 +17,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## February 2025: New and generally available 
+
+### Teamwork and communications | Messaging
+
+[Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
+
 ## February 2025: New in preview only 
 
 ### Backup storage
@@ -32,6 +38,12 @@ Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, *
 ### Tasks and plans
 
 [List Planner plans](/graph/api/teamschannelplanner-list-plans?view=graph-rest-beta&preserve-view=true) owned by a shared channel in Teams.
+
+### Teamwork and communications | Messaging
+
+Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
+ - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
+ - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
 
 ## January 2025: New and generally available 
 
