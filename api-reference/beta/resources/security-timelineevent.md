@@ -14,18 +14,18 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Delivery and post-delivery events that happened to the email
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|eventDateTime|DateTimeOffset|**TODO: Add Description**|
-|eventDetails|String|**TODO: Add Description**|
-|eventResult|String|**TODO: Add Description**|
-|eventSource|[microsoft.graph.security.eventSource](#eventsource-values)|**TODO: Add Description**.The possible values are: `system`, `admin`, `user`, `unknownFutureValue`.|
-|eventThreats|String collection|**TODO: Add Description**|
-|eventType|[microsoft.graph.security.timelineEventType](#timelineeventtype-values)|**TODO: Add Description**.The possible values are: `originalDelivery`, `systemTimeTravel`, `dynamicDelivery`, `userUrlClick`, `reprocessed`, `zap`, `quarantineRelease`, `air`, `unknown`, `unknownFutureValue`.|
+|eventDateTime|DateTimeOffset|The date and time when the event occurred|
+|eventDetails|String|Additional details or context about the event|
+|eventResult|String|The outcome or result of the event, such as delivery location or action taken.|
+|eventSource|[microsoft.graph.security.eventSource](#eventsource-values)|The origin or actor that triggered the event. The possible values are: `system`, `admin`, `user`, `unknownFutureValue`.|
+|eventThreats|String collection|Collection of threats identified or associated with this event.|
+|eventType|[microsoft.graph.security.timelineEventType](#timelineeventtype-values)|The type of event that occurred. The possible values are: `originalDelivery`, `systemTimeTravel`, `dynamicDelivery`, `userUrlClick`, `reprocessed`, `zap`, `quarantineRelease`, `air`, `unknown`, `unknownFutureValue`.|
 
 ### eventSource values 
 

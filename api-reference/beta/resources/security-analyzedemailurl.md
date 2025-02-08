@@ -23,7 +23,7 @@ Represents information about URLs found in an [analyzed email](security-analyzed
 |detonationDetails|[microsoft.graph.security.detonationDetails](../resources/security-detonationdetails.md)|Detonation data associated with the URL.|
 |threatType|microsoft.graph.security.threatType|The type of threat associated with the URL. The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
 |url|String|The URL that is found in the email. This is full URL string, including query parameters.|
-|tenantAllowBlockListDetailInfo|String|**TODO: Add Description**|
+|tenantAllowBlockListDetailInfo|String|Details of entries in tenant allow/block list configured by tenant|
 
 ## Relationships
 None.

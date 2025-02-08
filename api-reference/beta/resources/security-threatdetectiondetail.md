@@ -14,15 +14,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+ThreatDetectionDetail represents threat analysis information from Microsoft Defender for Office 365, including threat classification, confidence levels, and priority account protection status.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|confidenceLevel|String|**TODO: Add Description**|
-|priorityAccountProtection|String|**TODO: Add Description**|
-|threats|String|**TODO: Add Description**|
+|confidenceLevel|String|Indicates the confidence level in the threat detection|
+|priorityAccountProtection|String|Indicates if the account has priority protection enabled|
+|threats|String|Lists the detected threats|
 
 ## Relationships
 None.

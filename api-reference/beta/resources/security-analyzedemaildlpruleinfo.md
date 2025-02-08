@@ -20,8 +20,8 @@ Namespace: microsoft.graph.security
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description**|
-|ruleId|String|**TODO: Add Description**|
+|name|String|Name of the the data loss prevention rule|
+|ruleId|String|Unique identifier of the data loss prevention rule|
 
 ## Relationships
 None.

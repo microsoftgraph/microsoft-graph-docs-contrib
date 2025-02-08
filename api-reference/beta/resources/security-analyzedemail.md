@@ -55,14 +55,14 @@ Contains metadata for email messages that are analyzed for security threats.
 |subject|String|Subject of the email.|
 |threatTypes|[microsoft.graph.security.threatType](#threattype-values) collection|Indicates the threat types. The possible values are: `unknown`, `spam`, `malware`, `phish`, `none`, `unknownFutureValue`.|
 |urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|A collection of the URLs in the email.|
-|timelineEvents|[microsoft.graph.security.timelineEvent](../resources/security-timelineevent.md) collection|**TODO: Add Description**|
-|threatDetectionDetails|[microsoft.graph.security.threatDetectionDetail](../resources/security-threatdetectiondetail.md) collection|**TODO: Add Description**|
-|primaryOverrideSource|String|**TODO: Add Description**|
-|inboundConnectorFormattedName|String|**TODO: Add Description**|
-|policyType|String|**TODO: Add Description**|
-|clientType|String|**TODO: Add Description**|
-|dlpRules|[microsoft.graph.security.analyzedEmailDlpRuleInfo](../resources/security-analyzedemaildlpruleinfo.md) collection|**TODO: Add Description**|
-|forwardingDetail|String|**TODO: Add Description**|
+|timelineEvents|[microsoft.graph.security.timelineEvent](../resources/security-timelineevent.md) collection|Delivery and post-delivery events that happened to the email|
+|threatDetectionDetails|[microsoft.graph.security.threatDetectionDetail](../resources/security-threatdetectiondetail.md) collection|Information about threats detected in the email|
+|primaryOverrideSource|String|Shows the organization or user setting that altered the intended delivery location of the message (allowed instead of blocked, or blocked instead of allowed).|
+|inboundConnectorFormattedName|String|Custom instructions name that define organizational mail flow and how the email was routed|
+|policyType|String|Type of policy configured that defines the delivery action on email|
+|clientType|String|Shows the type of client that sent the message (for example, REST)|
+|dlpRules|[microsoft.graph.security.analyzedEmailDlpRuleInfo](../resources/security-analyzedemaildlpruleinfo.md) collection|Data loss prevention rules configured in purview|
+|forwardingDetail|String|Email smtp forwarding details|
 |recipientDetail|[microsoft.graph.security.analyzedEmailRecipientDetail](../resources/security-analyzedemailrecipientdetail.md)|Details of the recipients|
 
 ### antispamDirectionality values

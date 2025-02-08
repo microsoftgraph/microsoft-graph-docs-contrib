@@ -19,8 +19,8 @@ Namespace: microsoft.graph.security
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ccRecipients|String collection|**TODO: Add Description**|
-|domainName|String|**TODO: Add Description**|
+|ccRecipients|String collection|Recipient address in the cc field|
+|domainName|String|Domain name of the recipient|
 
 ## Relationships
 None.
