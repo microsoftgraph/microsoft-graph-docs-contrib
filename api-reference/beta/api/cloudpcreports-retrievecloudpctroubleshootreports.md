@@ -199,10 +199,11 @@ Content-Type: application/json
     ]
 }
 ```
+
 ## Response values
 The following table describes the columns in the returned report if you specify `troubleshootRegionalReport` for the **reportName** property when calling this API.
 
-|Column|Description|
+|Member|Description|
 |:-----|:----------|
 |AvgBandwidthInMbps|The average available bandwidth in Mbps of certain HostRegion-GatewayRegion pair.|
 |AvgRoundTripTimeInMs|The average round trip time in milliseconds of certain HostRegion-GatewayRegion pair.|
@@ -220,7 +221,7 @@ The following table describes the columns in the returned report if you specify 
 
 The following table describes the columns in the returned report if you specify `troubleshootDetailsReport` for the **reportName** property when calling this API.
 
-|Column|Description|
+|Member|Description|
 |:-----|:----------|
 |AvailableBandwidthInMbpsAvg|The average available bandwidth in Mbps.|
 |ConnectionErrorCount|The number of connection errors.|
@@ -241,7 +242,7 @@ The following table describes the columns in the returned report if you specify 
 
 The following table describes the columns in the returned report if you specify `troubleshootTrendCountReport` for the **reportName** property when calling this API. 
 
-|Column|Description|
+|Member|Description|
 |:-----|:----------|
 |CpuIssueCloudPcCount|The number of Cloud PC instances with CPU issues.|
 |CpuIssueTrend|The trend in the weekly number of Cloud PC instances with CPU issues.|
@@ -261,7 +262,7 @@ The following table describes the columns in the returned report if you specify 
 
 The following table describes the columns in the returned report if you specify `troubleshootIssueCountReport` for the **reportName** property when calling this API.   
 
-|Column|Description|
+|Member|Description|
 |:-----|:----------|
 |AsofDate|The date and time of when the data was recorded.|
 |ConnectionQualityIssueCount|The number of connection quality issues.|
