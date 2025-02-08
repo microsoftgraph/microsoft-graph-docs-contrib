@@ -1,6 +1,6 @@
 ---
 title: "detonationBehaviourDetails resource type"
-description: Detonation behaviour details
+description: Detonation behavior details
 author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security
@@ -23,7 +23,7 @@ Shows the exact events that took place during detonation, and problematic or ben
 |actionStatus|String|The status of the action performed during detonation (e.g., "Successful", "Failed", "Blocked").|
 |behaviourCapability|String|Categorizes the capability or type of behavior observed (e.g., "FileSystem", "Network", "Process", "Registry")|
 |behaviourGroup|String|Groups related behaviors together for classification purposes (e.g., "Persistence", "DataExfiltration", "CodeExecution")|
-|details|String|dditional contextual information about the observed behavior or action.|
+|details|String|Additional contextual information about the observed behavior or action.|
 |eventDateTime|DateTimeOffset|The date and time when the behavior or action was observed during detonation.|
 |operation|String|The specific operation or action that was performed (e.g., "FileCreate", "NetworkConnection", "ProcessLaunch").|
 |processId|String|The unique identifier of the process involved in the behavior.|

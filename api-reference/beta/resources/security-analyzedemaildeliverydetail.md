@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmailDeliveryDetail resource type"
-description: Represnts the delivery action and location of an analyzed email.
+description: Represents the delivery action and location of an analyzed email.
 author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.subservice: security
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represnts the delivery action and location of an [analzed email](security-analyzedemail.md).
+Represents the delivery action and location of an [analzed email](security-analyzedemail.md).
 
 ## Properties
 |Property|Type|Description|

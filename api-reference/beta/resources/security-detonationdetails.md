@@ -26,7 +26,7 @@ Represents detonation details specific to email attachments and URLs. These deta
 |detonationVerdictReason|String|The reason for the verdict of the detonation.|
 |detonationBehaviourDetails|[microsoft.graph.security.detonationBehaviourDetails](../resources/security-detonationbehaviourdetails.md)|Shows the exact events that took place during detonation, and problematic or benign observations that contain URLs, IPs, domains, and files that were found during detonation|
 |detonationScreenshotUri|String|Show any screenshots that were captured during detonation. No screenshots are captured if the URL opens into a link that directly downloads a file. However, you see the downloaded file in the detonation chain.|
-|compromiseIndicators|[microsoft.graph.security.compromiseIndicator](../resources/security-compromiseindicator.md) collection|Represents indicators and its associated verdict that suggests whether an email has been compromised|
+|compromiseIndicators|[microsoft.graph.security.compromiseIndicator](../resources/security-compromiseindicator.md) collection|Represents indicators and its associated verdict that suggests whether an email is compromised|
 
 ## Relationships
 None.

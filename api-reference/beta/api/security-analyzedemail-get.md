@@ -215,7 +215,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Get an analyzedEmail attachments
+### Example 3: Get analyzedEmail attachments
 
 #### Request
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an indicator and its associated verdict that suggests whether an email has been compromised. The resource combines specific indicators found in the email with categorized verdicts to help identify potential security threats like malware, phishing attempts, or spam
+Represents an indicator and its associated verdict that suggests whether an email is compromised. The resource combines specific indicators found in the email with categorized verdicts to help identify potential security threats like malware, phishing attempts, or spam
 
 ## Properties
 |Property|Type|Description|
