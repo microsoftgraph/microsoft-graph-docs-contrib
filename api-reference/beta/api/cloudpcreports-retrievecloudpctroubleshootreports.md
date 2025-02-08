@@ -16,79 +16,6 @@ Namespace: microsoft.graph
 
 Get troubleshoot related reports for CloudPCs. This report would be `troubleshootRegionalReport`, `troubleshootDetailsReport`,`troubleshootTrendCountReport`, `troubleshootIssueCountReport`.
 
-If report name is `troubleshootRegionalReport`, it can also get daily  regional details report for Cloud PCs.
-
-| Column                      | Description                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------|
-| HostRegion                  | The region where the Cloud PC provision is located.                         |
-| GatewayRegion               | The region where the gateway is located.                                    |
-| AvgRoundTripTimeInMs        | The average round trip time in milliseconds of certain HostRegion-GatewayRegion pair. |
-| AvgBandwidthInMbps          | The average available bandwidth in Mbps of certain HostRegion-GatewayRegion pair. |
-| ConnectionErrorCount        | The count of connection errors in certain HostRegion-GatewayRegion pair.    |
-| RTTIssueCount               | The count of Cloud PC with round trip time issues.                          |
-| ConnectionQualityIssueCount | The count of Cloud PC with connection quality issues.                       |
-| StabilityIssueCount         | The count of Cloud PC with stability issues.                                |
-| BandwidthIssueCount         | The count of Cloud PC with available bandwidth issues.                      |
-| ConnnectErrorIssueCount     | The count of Cloud PC with connection error issues.                         |
-| RTTStabilityIssueCount      | The count of Cloud PC with round trip time stability issues.                |
-| BandwidthStabilityIssueCount| The count of Cloud PC with bandwidth stability issues.                      |
-
-
-If report name is `troubleshootDetailsReport`, this report is used to get the details.  
-
-| Column                          | Description                                                                 |
-|---------------------------------|-----------------------------------------------------------------------------|
-| UsageInsight                    | Insights on the current usage of the resource.                               |
-| CurrentSize                     | The current size of the resource.                                            |
-| CurrentCPU                      | The current CPU usage of the resource.                                       |
-| CurrentRamInGB                  | The current RAM usage in GB.                                                 |
-| CurrentDiskInGB                 | The current disk usage in GB.                                                |
-| RecommendedSize                 | The recommended size for the resource.                                       |
-| RecommendedCPU                  | The recommended CPU usage for the resource.                                  |
-| RecommendedRamInGB              | The recommended RAM usage in GB.                                             |
-| RecommendedDiskInGB             | The recommended disk usage in GB.                                            |
-| ProvisionPolicyName             | The name of the provision policy.                                            |
-| RoundTripTimeInMsAvg            | The average round trip time in milliseconds.                                 |
-| AvailableBandwidthInMbpsAvg     | The average available bandwidth in Mbps.                                     |
-| HasPerformanceIssue             | Indicates if there is a performance issue.                                   |
-| HasNetworkIssue                 | Indicates if there is a network issue.                                       |
-| HasReliabilityIssue             | Indicates if there is a reliability issue.                                   |
-| ConnectionErrorCount            | The count of connection errors.                                              |
-
-If report name is `troubleshootTrendCountReport`, this report is used to get daily overview issue insight of Cloud PCs. 
-
-| Column                          | Description                                                                 |
-|---------------------------------|-----------------------------------------------------------------------------|
-| CpuIssueCloudPcCount            | The count of Cloud PCs with CPU issues.                                     |
-| CpuIssueTrend                   | The count trend of Cloud PCs with CPU issues over a week.                   |
-| MemoryIssueCloudPcCount         | The count of Cloud PCs with memory issues.                                  |
-| MemoryIssueTrend                | The count trend of Cloud PCs with memory issues over a week.                |
-| RTTIssueCloudPcCount            | The count of Cloud PCs with round trip time issues.                         |
-| RTTIssueTrend                   | The count trend of Cloud PCs with round trip time issues over a week.       |
-| StabilityIssueCloudPcCount      | The count of Cloud PCs with stability issues.                               |
-| StabilityIssueTrend             | The count trend of Cloud PCs with stability issues over a week.             |
-| ConnectionQualityIssueCloudPcCount | The count of Cloud PCs with connection quality issues.                   |
-| ConnectionQualityIssueTrend     | The count trend of Cloud PCs with connection quality issues over time.      |
-| TotalImpactedCloudPcCount       | The total count of impacted Cloud PCs.                                      |
-| PerformanceIssueCount           | The metric count of performance issues.                             |
-| NetworkIssueCount               | The metric count of network issues.                                 |
-| ReliabilityIssueCount           | The metric count of reliability issues.                             |
-
-
-If report name is `troubleshootIssueCountReport`, this aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.  
-
-| Column                      | Description                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------|
-| AsofDate                    | The date time of data.                                                      |
-| PerformanceIssueCount       | The metric count of performance issues.                                     |
-| NetworkIssueCount           | The metric count of network issues.                                         |
-| ReliabilityIssueCount       | The metric count of reliability issues.                                     |
-| CpuIssueCount               | The metric count of CPU issues.                                             |
-| MemoryIssueCount            | The metric count of memory issues.                                          |
-| RTTIssueCount               | The metric count of round trip time issues.                                 |
-| StabilityIssueCount         | The metric count of stability issues.                                       |
-| ConnectionQualityIssueCount | The metric count of connection quality issues.                              |
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -127,7 +54,6 @@ The following table lists the parameters that are required when you call this ac
 |:----------|:---------|:---------|:-------------------------------------------------------------------------------------------------------|
 | filter    | No       |String            | OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`.              |
 | reportName| Yes      | [cloudPCTroubleshootReportType](#cloudpctroubleshootreporttype-values)  |The report name, possible values: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`.Default value is: troubleshootDetailsReport.|
-| groupBy   | No       |String collection | Specifies how to group the reports. If used, must have the same content as the **select** parameter.   |
 | orderBy   | No       |String collection | Specifies the order by columns name.              |
 | search    | No       |String            | Specifies a string to search for.                                                                      |
 | select    | No       |String collection | OData `$select` syntax. The selected columns of the reports.                                           |
@@ -271,4 +197,77 @@ Content-Type: application/json
     ]
 }
 ```
+## Response values
+If report name is `troubleshootRegionalReport`, it can also get daily  regional details report for Cloud PCs.
+
+| Column                      | Description                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| HostRegion                  | The region where the Cloud PC provision is located.                         |
+| GatewayRegion               | The region where the gateway is located.                                    |
+| AvgRoundTripTimeInMs        | The average round trip time in milliseconds of certain HostRegion-GatewayRegion pair. |
+| AvgBandwidthInMbps          | The average available bandwidth in Mbps of certain HostRegion-GatewayRegion pair. |
+| ConnectionErrorCount        | The count of connection errors in certain HostRegion-GatewayRegion pair.    |
+| RTTIssueCount               | The count of Cloud PC with round trip time issues.                          |
+| ConnectionQualityIssueCount | The count of Cloud PC with connection quality issues.                       |
+| StabilityIssueCount         | The count of Cloud PC with stability issues.                                |
+| BandwidthIssueCount         | The count of Cloud PC with available bandwidth issues.                      |
+| ConnnectErrorIssueCount     | The count of Cloud PC with connection error issues.                         |
+| RTTStabilityIssueCount      | The count of Cloud PC with round trip time stability issues.                |
+| BandwidthStabilityIssueCount| The count of Cloud PC with bandwidth stability issues.                      |
+
+
+If report name is `troubleshootDetailsReport`, this report is used to get the details.  
+
+| Column                          | Description                                                                 |
+|---------------------------------|-----------------------------------------------------------------------------|
+| UsageInsight                    | Insights on the current usage of the resource.                               |
+| CurrentSize                     | The current size of the resource.                                            |
+| CurrentCPU                      | The current CPU usage of the resource.                                       |
+| CurrentRamInGB                  | The current RAM usage in GB.                                                 |
+| CurrentDiskInGB                 | The current disk usage in GB.                                                |
+| RecommendedSize                 | The recommended size for the resource.                                       |
+| RecommendedCPU                  | The recommended CPU usage for the resource.                                  |
+| RecommendedRamInGB              | The recommended RAM usage in GB.                                             |
+| RecommendedDiskInGB             | The recommended disk usage in GB.                                            |
+| ProvisionPolicyName             | The name of the provision policy.                                            |
+| RoundTripTimeInMsAvg            | The average round trip time in milliseconds.                                 |
+| AvailableBandwidthInMbpsAvg     | The average available bandwidth in Mbps.                                     |
+| HasPerformanceIssue             | Indicates if there is a performance issue.                                   |
+| HasNetworkIssue                 | Indicates if there is a network issue.                                       |
+| HasReliabilityIssue             | Indicates if there is a reliability issue.                                   |
+| ConnectionErrorCount            | The count of connection errors.                                              |
+
+If report name is `troubleshootTrendCountReport`, this report is used to get daily overview issue insight of Cloud PCs. 
+
+| Column                          | Description                                                                 |
+|---------------------------------|-----------------------------------------------------------------------------|
+| CpuIssueCloudPcCount            | The count of Cloud PCs with CPU issues.                                     |
+| CpuIssueTrend                   | The count trend of Cloud PCs with CPU issues over a week.                   |
+| MemoryIssueCloudPcCount         | The count of Cloud PCs with memory issues.                                  |
+| MemoryIssueTrend                | The count trend of Cloud PCs with memory issues over a week.                |
+| RTTIssueCloudPcCount            | The count of Cloud PCs with round trip time issues.                         |
+| RTTIssueTrend                   | The count trend of Cloud PCs with round trip time issues over a week.       |
+| StabilityIssueCloudPcCount      | The count of Cloud PCs with stability issues.                               |
+| StabilityIssueTrend             | The count trend of Cloud PCs with stability issues over a week.             |
+| ConnectionQualityIssueCloudPcCount | The count of Cloud PCs with connection quality issues.                   |
+| ConnectionQualityIssueTrend     | The count trend of Cloud PCs with connection quality issues over time.      |
+| TotalImpactedCloudPcCount       | The total count of impacted Cloud PCs.                                      |
+| PerformanceIssueCount           | The metric count of performance issues.                             |
+| NetworkIssueCount               | The metric count of network issues.                                 |
+| ReliabilityIssueCount           | The metric count of reliability issues.                             |
+
+
+If report name is `troubleshootIssueCountReport`, this aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.  
+
+| Column                      | Description                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| AsofDate                    | The date time of data.                                                      |
+| PerformanceIssueCount       | The metric count of performance issues.                                     |
+| NetworkIssueCount           | The metric count of network issues.                                         |
+| ReliabilityIssueCount       | The metric count of reliability issues.                                     |
+| CpuIssueCount               | The metric count of CPU issues.                                             |
+| MemoryIssueCount            | The metric count of memory issues.                                          |
+| RTTIssueCount               | The metric count of round trip time issues.                                 |
+| StabilityIssueCount         | The metric count of stability issues.                                       |
+| ConnectionQualityIssueCount | The metric count of connection quality issues.                              |
 
