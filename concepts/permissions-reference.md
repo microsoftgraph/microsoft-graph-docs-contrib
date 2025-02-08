@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 01/13/2025
+ms.date: 01/27/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1391,7 +1391,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | - | c645bb69-adc4-4242-b620-02e635f03bf6 |
 | DisplayText | - | Read all Configuration Monitoring entities |
 | Description | - | Allows the app to read all Configuration Monitoring entities on behalf of the signed-in user. |
-| AdminConsentRequired | - | No |
+| AdminConsentRequired | - | Yes |
 
 ---
 
@@ -1402,7 +1402,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | - | 54505ce9-e719-41f7-a7cc-dbe114e1d811 |
 | DisplayText | - | Read and write all Configuration Monitoring entities |
 | Description | - | Allows the app to read and write all Configuration Monitoring entities on behalf of the signed-in user. |
-| AdminConsentRequired | - | No |
+| AdminConsentRequired | - | Yes |
 
 ---
 
@@ -2016,6 +2016,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### DeviceManagementScripts.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | c7a5be92-2b3d-4540-8a67-c96dcaae8b43 | d32381d8-ee89-4220-9c83-b672aa68d404 |
+| DisplayText | Read Microsoft Intune Scripts | Read Microsoft Intune Scripts |
+| Description | Allows the app to read Microsoft Intune device compliance scripts, device management scripts, device shell scripts, device custom attribute shell scripts and device health scripts, without a signed-in user. | Allows the app to read Microsoft Intune device compliance scripts, device management scripts, device shell scripts, device custom attribute shell scripts and device health scripts on behalf of the signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### DeviceManagementScripts.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9255e99d-faf5-445e-bbf7-cb71482737c4 | 8b9d79d0-ad75-4566-8619-f7500ecfcebe |
+| DisplayText | Read and write Microsoft Intune Scripts | Read and write Microsoft Intune Scripts |
+| Description | Allows the app to read and write Microsoft Intune device compliance scripts, device management scripts, device shell scripts, device custom attribute shell scripts and device health scripts, without a signed-in user. | Allows the app to read and write Microsoft Intune device compliance scripts, device management scripts, device shell scripts, device custom attribute shell scripts and device health scripts on behalf of the signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### DeviceManagementServiceConfig.Read.All
 
 | Category | Application | Delegated |
@@ -2039,6 +2061,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes |
 
 [!INCLUDE [DeviceManagementServiceConfig.ReadWrite.All](../includes/permissions-notes/devicemanagementserviceconfig.readwrite.all.md)]
+
+---
+
+### DeviceTemplate.Create
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | abf6441f-0772-4932-96e7-0191478dd73a | 0b1717ff-3e42-4a73-8c29-e6b2e1093960 |
+| DisplayText | Create device template | Create device templates |
+| Description | Allows the app to create device templates. The app is marked as owner of the created device template. As a member of owners, the app will be allowed to manage devices created from the template. | Allows the app to create device templates on behalf of the signed in user. The user is marked as owners of the created device template. As a member of owners, the user will be allowed to manage devices created from the template. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -6926,6 +6959,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 1801e8f4-cf09-4c4e-a1b5-036dfcca6c90 | 6997c35c-a586-440c-8a0b-4ffe5d118dc0 |
 | DisplayText | Read and Write Teams policy user assignment and unassigment for all policy types. | Read and Write Teams policy user assignment and unassigment for all policy types. |
 | Description | Allow the app to read or write/update the policy assignment and unassigment for Teams users for all policy type categories. | Allow the app to read or write/update the policy assignment and unassigment for Teams users for all policy type categories. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### TeamsResourceAccount.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | b55aa226-33a1-4396-bcf4-edce5e7a31c1 | ea2cbd09-253c-4f69-a0e6-07383c5f07cc |
+| DisplayText | Read Teams resource accounts | Read Teams resource accounts |
+| Description | Allows the app to read your tenant's resource accounts without a signed-in user. | Allows the app to read your tenant's resource accounts on behalf of the signed-in admin user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
