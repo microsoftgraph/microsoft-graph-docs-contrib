@@ -27,6 +27,10 @@ Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, *
 
 [List Planner plans](/graph/api/teamschannelplanner-list-plans?view=graph-rest-beta&preserve-view=true) owned by a shared channel in Teams.
 
+### Teamwork and communications | Calls and online meetings
+
+[Fetch the recording of a Teams live event](/graph/api/onlinemeeting-get#example-6-fetch-the-recording-of-a-teams-live-event-deprecated).
+
 ## January 2025: New and generally available 
 
 ### Files
