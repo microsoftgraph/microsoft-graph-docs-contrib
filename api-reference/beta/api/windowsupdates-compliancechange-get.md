@@ -3,7 +3,7 @@ title: "Get complianceChange"
 description: "Read the properties and relationships of a complianceChange object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: apiPageType
 ms.date: 09/16/2024
 ---
