@@ -3,7 +3,7 @@ title: "cveInformation resource type"
 description: "Represents the number and URL for a Common Vulnerability and Exposure (CVE)."
 author: "angiechen22"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 09/16/2024
 ---

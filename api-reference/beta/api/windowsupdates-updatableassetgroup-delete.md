@@ -3,7 +3,7 @@ title: "Delete updatableAssetGroup"
 description: "Delete an updatableAssetGroup object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: apiPageType
 ms.date: 08/31/2024
 ---

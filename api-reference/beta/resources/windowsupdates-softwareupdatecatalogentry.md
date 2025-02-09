@@ -3,7 +3,7 @@ title: "softwareUpdateCatalogEntry resource type"
 description: "Metadata for a software update that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 09/16/2024
 ---

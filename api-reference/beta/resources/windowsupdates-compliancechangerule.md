@@ -3,7 +3,7 @@ title: "complianceChangeRule resource type"
 description: "An abstract type that represents a rule for governing the automatic creation of compliance changes."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 09/16/2024
 ---

@@ -3,7 +3,7 @@ title: "rateDrivenRolloutSettings resource type"
 description: "Represents settings for governing rate driven rollouts."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 08/31/2024
 ---

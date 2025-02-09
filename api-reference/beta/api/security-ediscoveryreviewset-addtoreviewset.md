@@ -76,7 +76,9 @@ Content-Type: application/json
     "search": {
         "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
     },
-    "additionalDataOptions": "linkedFiles"
+    "additionalDataOptions": "linkedFiles",
+    "cloudAttachmentVersion": "latest",
+    "documentVersion": "recent10"
 }
 ```
 

@@ -3,7 +3,7 @@ title: "List deployment audience exclusions"
 description: "List the updatableAsset resources that are excluded from a deploymentAudience."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: apiPageType
 ms.date: 09/08/2024
 ---

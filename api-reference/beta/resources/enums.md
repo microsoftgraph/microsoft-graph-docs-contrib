@@ -5114,3 +5114,12 @@ Possible values for user account types (group membership), per Windows definitio
 |tls_client_auth_san_ip|
 |tls_client_auth_san_email|
 |unknownFutureValue|
+
+### protectionSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|dynamicRule|
+|unknownFutureValue|

@@ -3,7 +3,7 @@ title: "qualityUpdateFilter resource type"
 description: "Represents a filter to determine which quality update content matches the rule on an ongoing basis."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 11/12/2024
 ---

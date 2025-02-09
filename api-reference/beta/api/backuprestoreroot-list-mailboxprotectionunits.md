@@ -130,6 +130,7 @@ HTTP/1.1 200 OK
       "email": "lee@contoso.com", // Newly Added
       "mailboxType": "user",
       "status": "unprotectRequested",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -164,6 +165,7 @@ HTTP/1.1 200 OK
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "mastura@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "mailboxType": "shared",
       "createdBy": {
         "application": {
@@ -200,6 +202,7 @@ HTTP/1.1 200 OK
       "email": "ahmad@contoso.com", // Newly Added
       "mailboxType": "user",
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -235,6 +238,7 @@ HTTP/1.1 200 OK
       "email": "jeffry@contoso.com", // Newly Added
       "mailboxType": "user",
       "status": "protected",
+      "protectionSources": "dynamicRule",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -268,6 +272,7 @@ HTTP/1.1 200 OK
       "displayName": "Suresh Pasupuleti", // Newly Added
       "email": "suresh@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "mailboxType": "shared",
       "createdBy": {
         "application": {
@@ -335,7 +340,8 @@ HTTP/1.1 200 OK
       "directoryObjectId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
-      "status": "protectRequested",
+      "status": "protected",
+      "protectionSources": "manual, dynamicRule",
       "mailboxType": "user",
       "createdBy": {
         "application": {
@@ -372,6 +378,7 @@ HTTP/1.1 200 OK
       "email": "mastura@contoso.com", // Newly Added
       "mailboxType": "shared",
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -406,6 +413,7 @@ HTTP/1.1 200 OK
       "displayName": "Esmira Musayeva", // Newly Added
       "email": "esmira@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual",
       "mailboxType": "user",
       "createdBy": {
         "application": {
@@ -440,7 +448,8 @@ HTTP/1.1 200 OK
       "directoryObjectId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
-      "status": "protectRequested",
+      "status": "removeRequested",
+      "protectionSources": "none",
       "mailboxType": "user",
       "createdBy": {
         "application": {
@@ -476,6 +485,7 @@ HTTP/1.1 200 OK
       "displayName": "Rashmi Mishra ", // Newly Added
       "email": "rashmi@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "dynamicRule",
       "mailboxType": "shared",
       "createdBy": {
         "application": {
