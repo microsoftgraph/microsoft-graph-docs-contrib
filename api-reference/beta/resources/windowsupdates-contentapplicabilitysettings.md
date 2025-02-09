@@ -3,7 +3,7 @@ title: "contentApplicabilitySettings resource type"
 description: "Represents settings for governing whether content is applicable to a device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 08/31/2024
 ---
