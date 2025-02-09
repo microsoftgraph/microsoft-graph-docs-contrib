@@ -54,6 +54,7 @@ Represents a location where multiple users or a group of users can store files a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|archivalDetails|[siteArchivalDetails](../resources/sitearchivaldetails.md)|The archival details of a [siteCollection](../resources/sitecollection.md).|
 |assignedSensitivityLabel|[assignedLabel](../resources/assignedlabel.md)|Sensitivity label assigned to the **fileStorageContainer**. Read-write.|
 |containerTypeId|GUID|Container type ID of the **fileStorageContainer**. Each container must have only one container type. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of the **fileStorageContainer** creation. Read-only.|
