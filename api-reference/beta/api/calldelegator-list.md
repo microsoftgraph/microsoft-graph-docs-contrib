@@ -43,7 +43,7 @@ GET /users/{user_id}/communications/callSettings/delegators
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a list of [delegator](../resources/delegationsettings.md.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a list of [delegator](../resources/delegationsettings.md) objects in the response body.
 
 ## Examples
 

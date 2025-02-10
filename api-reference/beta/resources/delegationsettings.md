@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the settings for a [delagator or delegate](../resources/callsettings.md?#Call-delegation).
+Represents the settings for a [delagator or delegate](../resources/callsettings.md#call-delegation).
 
 ## Properties
 
