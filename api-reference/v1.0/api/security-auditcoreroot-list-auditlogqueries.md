@@ -16,7 +16,7 @@ Get a list of [auditLogQuery](../resources/security-auditlogquery.md) objects an
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/graph/security-authorization).
 
 <!-- {
   "blockType": "ignored"
@@ -38,9 +38,8 @@ Auditing data can be accessed through Microsoft Purview Audit Search API via the
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/auditLog/queries
-```
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
