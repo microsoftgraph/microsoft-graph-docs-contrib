@@ -63,9 +63,9 @@ The following table shows the parameters that you can use with this action.
 
 |Member|Description|
 |:---|:---|
-| crossRegionDisasterRecoveryReport          | Default. Indicates the report that shows the overview and details of Cloud PCs with cross-region disaster recovery configurations, health check, and status.    |
-| disasterRecoveryReport                     | Indicates the report that shows the disaster recovery status of Cloud PCs with their associated category.                                                       |
-| unknownFutureValue                         | Evolvable enumeration sentinel value. Don't use.                                                                                                                |
+| crossRegionDisasterRecoveryReport| Default. Indicates the report that shows the overview and details of Cloud PCs with cross-region disaster recovery configurations, health check, and status.|
+| disasterRecoveryReport| Indicates the report that shows the disaster recovery status of Cloud PCs with their associated category. |
+| unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ## Response
 
