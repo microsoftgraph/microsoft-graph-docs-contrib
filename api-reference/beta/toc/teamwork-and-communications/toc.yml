@@ -334,18 +334,6 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
-  - name: Call delegation
-    items:
-    - name: Overview
-      href: ../../resources/calldelegation.md
-    - name: List delegators
-      href: ../../api/calldelegator-list.md
-    - name: Get delegator
-      href: ../../api/calldelegator-get.md
-    - name: List delegates
-      href: ../../api/calldelegate-list.md
-    - name: Get delegate
-      href: ../../api/calldelegate-get.md
   - name: Call events
     items:
     - name: Call event
@@ -416,6 +404,20 @@ items:
         href: ../../resources/callrecords-smslogrow.md
       - name: Get SMS log
         href: ../../api/callrecords-callrecord-getsmslog.md
+  - name: Call settings
+    items:
+    - name: Overview
+      href: ../../resources/callsettings.md
+    - name: Call delegation
+      items:
+      - name: List delegators
+        href: ../../api/calldelegator-list.md
+      - name: Get delegator
+        href: ../../api/calldelegator-get.md
+      - name: List delegates
+        href: ../../api/calldelegate-list.md
+      - name: Get delegate
+        href: ../../api/calldelegate-get.md
   - name: Copilot settings
     items:
     - name: Copilot admin limited mode

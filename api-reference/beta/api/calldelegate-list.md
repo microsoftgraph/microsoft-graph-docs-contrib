@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of all delegates for a user. See [call delegation](../resources/calldelegation.md) for reference.
+Retrieve a list of all delegates for a user. 
+See [call settings](../resources/callsettings.md) for reference.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -42,7 +43,7 @@ GET /users/{user_id}/communications/callSettings/delegates
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a list [delegate](../resources/calldelegation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a list [delegate](../resources/delegationsettings.md) objects in the response body.
 
 ## Examples
 

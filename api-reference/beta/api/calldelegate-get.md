@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fetch details of a specific delegate. See [call delegation](../resources/calldelegation.md) for reference.
+Fetch details of a specific delegate. 
+See [call settings](../resources/callsettings.md) for reference.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -42,7 +43,7 @@ GET /users/{user_id}/communications/callSettings/delegates/{delegateId}
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [delegate](../resources/calldelegation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [delegate](../resources/delegationsettings.md) object in the response body.
 
 ## Examples
 
