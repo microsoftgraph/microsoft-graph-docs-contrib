@@ -18,6 +18,8 @@ Contains information associated with a meeting attendance report for an [onlineM
 
 Meeting attendance reports are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
+The policies that apply to [Teams attendance report](https://support.microsoft.com/office/manage-meeting-attendance-reports-in-microsoft-teams-ae7cf170-530c-47d3-84c1-3aedac74d310) also extend here in Graph. This means the same rules and retention periods apply under Graph, including a one-year retention policy from the meeting date.
+
 ## Methods
 
 |Method|Return type|Description|
