@@ -18,8 +18,8 @@ Complex type containing properties of [officeGraphInsights](officegraphinsights.
 
 | Property      | Type      | Description  |
 | ------------- |-----------| -------------|
-| **Delegates**                     |Boolean| Determines if the delegator/delegate allows making calls on their behalf. |
-| **Delegations**                  |Boolean| Determines if the delegator/delegate allows receiving calls on their behalf. |
+| **makeCalls**                     |Boolean| Determines if the delegator/delegate allows making calls on their behalf. |
+| **receiveCalls**                  |Boolean| Determines if the delegator/delegate allows receiving calls on their behalf. |
 | **manageCallAndDelegateSettings** |Boolean| Determines if the delegator/delegate allows managing call and delegation settings. |
 | **pickUpHeldCalls**               |Boolean| Determines if the delegator/delegate allows picking up held calls. |
 | **joinActiveCalls**               |Boolean| Determines if the delegator/delegate allows joining active calls. |
