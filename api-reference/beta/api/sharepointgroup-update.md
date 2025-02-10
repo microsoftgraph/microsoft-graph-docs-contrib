@@ -1,5 +1,5 @@
 ---
-title: "sharePointGroup: get"
+title: "sharePointGroup: update"
 description: "Update a sharePointGroup object."
 author: "tmarwendo-msft"
 ms.localizationpriority: medium

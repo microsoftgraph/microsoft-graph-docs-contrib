@@ -35,7 +35,7 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-POST /storage/fileStorage/containers/{id}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
+DELETE /storage/fileStorage/containers/{id}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
 ```
 
 ## Request headers

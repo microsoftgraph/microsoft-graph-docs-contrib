@@ -62,7 +62,7 @@ The following example deletes a SharePointGroup identified by `{sharePointGroupI
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
 ```
 
 # [C#](#tab/csharp)
@@ -120,7 +120,7 @@ The following example attempts to delete a SharePointGroup identified by `{share
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
 ```
 
 # [C#](#tab/csharp)
