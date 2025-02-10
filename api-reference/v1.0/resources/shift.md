@@ -32,12 +32,13 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| createdDateTime		|DateTimeOffset        |The timestamp on which this **shift** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
-| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they are [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property.|
+| createdBy             | [identitySet](identityset.md)     | Identity of the creator of **shift** object. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
+| createdDateTime		|DateTimeOffset        |The date and time at which this **shift** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
+| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they're [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property.|
 | id			|String      |ID of the **shift**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
 | isStagedForDeletion   | Boolean                           | The **shift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). |
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **shift**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
-| lastModifiedDateTime		|DateTimeOffset        |The timestamp on which this **shift** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
+| lastModifiedDateTime		|DateTimeOffset        |The date and time at which this **shift** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
 | schedulingGroupId 		|String      |ID of the scheduling group the **shift** is part of. Required. |
 | sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Updates to the **sharedShift** property send notifications to users in the Teams client.|
 | userId 			|String      |ID of the user assigned to the **shift**. Required. |
@@ -56,6 +57,9 @@ The following JSON representation shows the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.shift",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
   "createdDateTime": "String (timestamp)",
   "draftShift": {"@odata.type": "microsoft.graph.shiftItem"},
   "id": "String (identifier)",

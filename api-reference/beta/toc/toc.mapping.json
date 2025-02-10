@@ -823,9 +823,6 @@
         "educationRubricOutcome",
         "educationSubmission",
         "educationSubmissionResource",
-        "educationSynchronizationError",
-        "educationSynchronizationProfile",
-        "educationSynchronizationProfileStatus",
         "readingAssignmentSubmission",
         "reflectCheckInResponse",
         "relatedContact"
@@ -860,23 +857,7 @@
         "rubricLevel",
         "rubricQuality",
         "rubricQualityFeedbackModel",
-        "rubricQualitySelectedColumnModel",
-        "educationCsvDataProvider",
-        "educationFileSynchronizationVerificationMessage",
-        "educationIdentityCreationConfiguration",
-        "educationIdentityDomain",
-        "educationIdentityMatchingConfiguration",
-        "educationIdentityMatchingOptions",
-        "educationIdentitySynchronizationConfiguration",
-        "educationOneRosterApiDataProvider",
-        "educationPowerSchoolDataProvider",
-        "educationSynchronizationConnectionSettings",
-        "educationSynchronizationCustomization",
-        "educationSynchronizationCustomizations",
-        "educationSynchronizationDataProvider",
-        "educationSynchronizationLicenseAssignment",
-        "educationSynchronizationOAuth1ConnectionSettings",
-        "educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
+        "rubricQualitySelectedColumnModel"
       ]
     },
     {
@@ -1474,7 +1455,8 @@
                 "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener"
+                "onUserCreateStartListener",
+                "onPhoneMethodLoadStartListener"
               ]
             },
             {
@@ -2139,6 +2121,26 @@
       ]
     },
     {
+      "name": "Mailbox import and export (preview)",
+      "overview": "../../resources/mailbox-import-export-api-overview.md",
+      "keywords": [
+        "Exchange",
+        "Exchange Import-Export",
+        "Mailbox",
+        "Mailbox import and export"
+      ],
+      "resources": [
+        "mailbox",
+        "mailboxItem",
+        "mailboxFolder",
+        "exchangeSettings"
+      ],
+      "complexTypes": [
+        "exportItemResponse",
+        "mailboxItemImportSession"
+      ]
+    },
+    {
       "name": "Notes",
       "overview": "../../resources/onenote-api-overview.md",
       "keywords": [
@@ -2791,7 +2793,8 @@
         "plannerPlanDetails",
         "plannerRoster",
         "plannerUser",
-        "plannerTaskDetails"
+        "plannerTaskDetails",
+        "teamsChannelPlanner"
       ],
       "complexTypes": [
         "businessScenarioGroupTarget",
