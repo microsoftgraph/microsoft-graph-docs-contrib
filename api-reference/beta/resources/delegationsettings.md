@@ -10,7 +10,7 @@ ms.date: 02/01/2025
 
 # delegationSettings resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.delegationSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -406,10 +406,12 @@ items:
         href: ../../api/callrecords-callrecord-getsmslog.md
   - name: Call settings
     items:
-    - name: Overview
+    - name: Call settings
       href: ../../resources/callsettings.md
     - name: Call delegation
       items:
+      - name: Overview
+        href: ../../resources/calldelegation.md
       - name: List delegators
         href: ../../api/calldelegator-list.md
       - name: Get delegator
