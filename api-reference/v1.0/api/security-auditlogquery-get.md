@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [auditLogQuery
 
 ### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_auditlogquery"
