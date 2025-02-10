@@ -76,6 +76,9 @@ The following example shows a request.
 }
 -->
 
+# [HTTP](#tab/http)
+```http
+GET /security/auditLog/queries
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-auditlogrecord-csharp-snippets.md)]
