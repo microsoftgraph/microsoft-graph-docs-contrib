@@ -83,6 +83,10 @@ The following example shows a request.
 }
 -->
 
+# [HTTP](#tab/http)
+```http
+GET /security/auditLog/queries
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-auditlogquery-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
