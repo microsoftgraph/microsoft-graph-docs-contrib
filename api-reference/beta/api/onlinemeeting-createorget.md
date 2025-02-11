@@ -62,9 +62,11 @@ In the request body, provide a JSON object with the following parameters.
 | chatInfo      | [chatInfo](../resources/chatinfo.md)                       | The chat information associated with this online meeting.                                            |
 | endDateTime   | DateTime                                                   | The meeting end time in UTC.                                                                         |
 | externalId    | String                                                     | The external ID. A custom ID. (Required)                                                             |
+| isEndToEndEncryptionEnabled | Boolean | Enabling End to End Encryption (E2EE) for an online meeting  |
 | participants  | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | startDateTime | DateTime                                                   | The meeting start time in UTC.                                                                       |
 | subject       | String                                                     | The subject of the online meeting.                                                                   |
+
 
 > **Notes:**
 >

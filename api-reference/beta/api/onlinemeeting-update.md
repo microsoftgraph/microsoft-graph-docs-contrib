@@ -99,6 +99,7 @@ The last column indicates whether updating this property takes effect for an in-
 | allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                                 |
 | allowWhiteboard             | Boolean                                                    | Indicates whether whiteboard is enabled for the meeting.                            | No                                  |
 | endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                                  |
+| isEndToEndEncryptionEnabled | Boolean  | Enabling End to End Encryption (E2EE) for an online meeting  | No                                  |
 | isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                                 |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                                 |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                                  |
@@ -340,4 +341,116 @@ Content-Type: application/json
 }
 -->
 
+#### Example 3: Update the isEndToEndEncryptionEnabled
+> **Note:** This property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For details, see [Require end-to-end encryption for sensitive Teams meetings](https://learn.microsoft.com/MicrosoftTeams/end-to-end-encrypted-meetings).
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
+  "name": "update_isEndToEndEncryptionEnabled"
+}-->
+
+``` http
+PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
+Content-Type: application/json 
+
+{
+    "isEndToEndEncryptionEnabled": true
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-isEndToEndEncryptionEnabled-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-isEndToEndEncryptionEnabled-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-isEndToEndEncryptionEnabled-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-isEndToEndEncryptionEnabled-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-isEndToEndEncryptionEnabled-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-isEndToEndEncryptionEnabled-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-lobbybypasssettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-isEndToEndEncryptionEnabled-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi",
+    "creationDateTime":"2020-07-03T00:23:39.444642Z",
+    "startDateTime":"2020-09-09T21:33:30.8546353Z",
+    "endDateTime":"2020-09-09T22:03:30.8566356Z",
+    "joinWebUrl":"(redacted)",
+    "subject":"Patch Meeting Subject",
+    "autoAdmittedUsers": "EveryoneInCompany",
+    "isEndToEndEncryptionEnabled": true,
+    "isEntryExitAnnounced": true,
+    "allowedPresenters": "everyone",
+    "videoTeleconferenceId": "(redacted)",
+    "participants": {
+        "organizer": {
+            "upn": "(redacted)",
+            "role": "presenter",
+            "identity": {
+                "user": {
+                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "displayName": null,
+                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "identityProvider": "AAD"
+                }
+            }
+        },
+        "attendees": [],
+    },
+    "lobbyBypassSettings": {
+        "scope": "organization",
+        "isDialInBypassEnabled": true
+    }
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2020-7-16 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Patch online meeting",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
