@@ -33,7 +33,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |  isExternal  | Boolean | Indicates whether the message is owned by the organization that reported the security detection alert. |
 |  isOwned     | Boolean | Indicates whether the message is owned by your organization.  |
 |  lastModifiedDateTime  | DateTimeOffset | Date and time when the message was last edited. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-|  messageDirection | microsoft.graph.security.antispamTeamsDirection | The direction of the Teams message. |
+|  messageDirection | microsoft.graph.security.antispamTeamsDirection | The direction of the Teams message. The possible values are: `unknown`, `inbound`, `outbound`, `intraorg`, `unknownFutureValue`. |
 |  messageId   | String  | The message identifier, unique within the thread. |
 |  owningTenantId   | Guid  | Tenant ID (GUID) of the owner of the message.  |
 |  parentMessageId  | String  | Identifier of the message to which the current message is a reply; otherwise, it's the same as the **messageId**.  |
