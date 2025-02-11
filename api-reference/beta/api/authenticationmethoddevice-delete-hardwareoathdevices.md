@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/directory/authenticationMethodDevices/ha
 [!INCLUDE [sample-code](../includes/snippets/php/delete-hardwareoathtokenauthenticationmethoddevice-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-hardwareoathtokenauthenticationmethoddevice-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-hardwareoathtokenauthenticationmethoddevice-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

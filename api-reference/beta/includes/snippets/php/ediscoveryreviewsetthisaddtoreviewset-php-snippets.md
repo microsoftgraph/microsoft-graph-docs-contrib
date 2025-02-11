@@ -18,6 +18,11 @@ $search = new EdiscoverySearch();
 $search->setId('c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7');
 $requestBody->setSearch($search);
 $requestBody->setAdditionalDataOptions(new AdditionalDataOptions('linkedFiles'));
+$additionalData = [
+	'cloudAttachmentVersion' => 'latest',
+	'documentVersion' => 'recent10',
+];
+$requestBody->setAdditionalData($additionalData);
 
 $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->reviewSets()->byEdiscoveryReviewSetId('ediscoveryReviewSet-id')->microsoftGraphSecurityAddToReviewSet()->post($requestBody)->wait();
 
