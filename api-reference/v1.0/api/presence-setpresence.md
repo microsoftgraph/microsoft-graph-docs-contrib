@@ -32,7 +32,7 @@ A presence session may **time out** and **expire**, so the application needs to 
 
 A presence session can time out if the availability is `Available` and the timeout is 5 minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
 
-The expiration of a presence session is configurable with the `expirationDuration` parameter. When a session expires it becomes `Offline`.
+Use `expirationDuration` to configure a presence session’s expiration; without it, the default is 5 minutes. Valid values range from 5 minutes to 4 hours, after which the session becomes `Offline`.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
