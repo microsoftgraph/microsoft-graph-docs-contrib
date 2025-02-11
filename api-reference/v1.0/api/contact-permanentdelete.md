@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/users/{usersId}/contacts/{contactId}/permanentDelete
+POST https://graph.microsoft.com/v1.0/users/xyz@contoso.com/contacts/AAsdjipajdwnoiwsda=/permanentDelete
 ```
 
 
