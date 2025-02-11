@@ -12,7 +12,7 @@ ms.date: 01/17/2025
 
 Namespace: microsoft.graph
 
-Permanently delete an event message and place it in the **purges** folder in the user's mailbox. Email clients such as Outlook or Outlook on the web can't access permanently deleted items. Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
+Permanently delete an event message and place it in the **purges** folder in the user's mailbox. Email clients such as outlook or outlook on the web can't access permanently deleted items. Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 
 For more information about item retention, see [Configure deleted item retention and recoverable items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
 
