@@ -33,6 +33,7 @@ To complete the steps in this tutorial:
   - Conditional Access Administrator for configuring Conditional Access policies.
 - Grant consent to your admin for the *NetworkAccess.Read.All*, *NetworkAccess.ReadWrite.All*, and *Policy.ReadWrite.ConditionalAccess* delegated permissions.
 - Have a test user to assign to the Conditional Access policy.
+- [Deploy the Global Secure Access (GSA) client](/entra/global-secure-access/concept-clients) to your organization's devices.
 
 ## Step 1: Enable Internet Access traffic forwarding
 
