@@ -28,7 +28,7 @@ In this tutorial, you learn how to configure Microsoft Entra Internet Access pro
 
 To complete the steps in this tutorial:
 
-- Sign in to an API client such as Graph Explorer with an account assigned to the supported administrator roles. The following Microsoft Entra roles are the least privileged for the operations in this tutorial:
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account assigned to the supported administrator roles. The following Microsoft Entra roles are the least privileged for the operations in this tutorial:
   - Global Secure Access Administrator for configuring the Web content filtering policies and filtering profiles.
   - Conditional Access Administrator for configuring Conditional Access policies.
 - Grant consent to your admin for the *NetworkAccess.Read.All*, *NetworkAccess.ReadWrite.All*, and *Policy.ReadWrite.ConditionalAccess* delegated permissions.
