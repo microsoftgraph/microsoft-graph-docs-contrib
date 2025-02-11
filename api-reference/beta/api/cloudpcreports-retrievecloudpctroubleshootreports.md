@@ -48,7 +48,7 @@ POST /deviceManagement/virtualEndpoint/reports/retrieveCloudPcTroubleshootReport
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that you can use when you call this action.
+The following table lists the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:--------|:---|:----------|
