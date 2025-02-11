@@ -13,7 +13,7 @@ ms.date: 02/05/2025
 Namespace: microsoft.graph
 
 
-Permanently delete a calendar folder and the events that it contains and remove them from the mailbox. For more information about item retention, see [Configure Deleted Item retention and Recoverable Items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
+Permanently delete a calendar folder and the events that it contains and remove them from the mailbox. For more information about item retention, see [Configure deleted item retention and recoverable items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
 
 > [!Note]
 > Folders aren't placed in the **purges** folder when they're permanently deleted. Permanently deleted folders are removed from the mailbox.

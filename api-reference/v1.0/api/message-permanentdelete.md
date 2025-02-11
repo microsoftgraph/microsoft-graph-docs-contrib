@@ -1,6 +1,6 @@
 ---
 title: "message: permanentDelete"
-description: "Permanently delete a message and place it in the Purges folder in the user's mailbox."
+description: "Permanently delete a message and place it in the purges folder in the user's mailbox."
 author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Permanently delete a message and place it in the **purges** folder in the dumpster in the user's mailbox. Email clients such as outlook or outlook on the web can't access permanently deleted items. Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 
-For more information about item retention, see [Configure Deleted Item retention and Recoverable Items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
+For more information about item retention, see [Configure deleted item retention and recoverable items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
