@@ -38,7 +38,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[Get Cloud PC performance report (deprecated)](../api/cloudpcreports-getcloudpcperformancereport.md)|Stream|Get a report related to the performance of Cloud PCs. This API is deprecated and stopped returning data on December 31, 2024. Going forward, use the [retrieveCloudPcTenantMetricsReport](../api/cloudpcreports-retrievecloudpctenantmetricsreport.md) API.|
 |[Get connection quality reports (deprecated)](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the overall connection quality reports for all devices within a current tenant during a given period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage. Also get other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol. This API is deprecated and will stop returning data on December 31, 2024. Going forward, use the [retrieveConnectionQualityReports](../api/cloudpcreports-retrieveconnectionqualityreports.md) API.|
 |[Get shared use license usage report (deprecated)](../api/cloudpcreports-getshareduselicenseusagereport.md)|Stream| Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
-|[Get cloudpc troubleshoot reports](../api/cloudpcreports-retrievecloudpctroubleshootreports.md)|Stream|Get troubleshoot related reports for CloudPCs. It provides four different reoprts. TroubleshootDetailsReport is used to get the details for Cloud PCs, including performance issues, network issues, and reliability issues. TroubleshootTrendCountReport shows the number and trend of issues per tenant. TroubleshootRegionalReport shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues. TroubleshootIssueCountReport is the aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.|
+|[Get Cloud PC troubleshooting reports](../api/cloudpcreports-retrievecloudpctroubleshootreports.md)|Stream|Get troubleshooting reports for Cloud PCs.|
 
 ## Properties
 |Property|Type|Description|
@@ -52,6 +52,16 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | performanceTrendReport     | Indicates a daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time.  | 
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.             |
 | cloudPcInsightReport       | Indicates Cloud PC-level configuration data with insights.   |
+
+### cloudPCTroubleshootReportType values
+
+| Member                        | Description       |
+| :---------------------------- | :---------------- |
+| troubleshootDetailsReport     | The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues.|
+| troubleshootTrendCountReport  | The aggregated report that shows the number and trend of issues per tenant.|
+| troubleshootRegionalReport    | The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues.|
+| troubleshootIssueCountReport  | The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.|
+| unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 |Relationship|Type|Description|
