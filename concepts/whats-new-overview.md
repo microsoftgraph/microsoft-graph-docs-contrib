@@ -19,6 +19,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2025: New and generally available 
 
+### Teamwork and communications | Calls and online meetings
+
+[Fetch the recording of a Teams live event](/graph/api/onlinemeeting-get#example-6-fetch-the-recording-of-a-teams-live-event-deprecated).
+
 ### Teamwork and communications | Messaging
 
 [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
