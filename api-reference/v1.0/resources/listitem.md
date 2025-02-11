@@ -25,6 +25,7 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 
 | Method                                                                   | Return Type                        | Description                                                               |
 |:-------------------------------------------------------------------------|:-----------------------------------|:--------------------------------------------------------------------------|
+| [List|                                                                   | listItem collection                | Get the collection of items in a list.                                    |
 | [Get][]                                                                  | listItem                           | Get an item in a list.                                                    |
 | [Get column values][Get]                                                 | listItem                           | Get column values from listItem.                                          |
 | [Get analytics][]                                                        | [itemAnalytics][]                  | Get analytics for this resource.                                          |
