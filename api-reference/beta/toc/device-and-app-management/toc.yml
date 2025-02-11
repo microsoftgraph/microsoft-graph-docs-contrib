@@ -280,6 +280,8 @@ items:
       href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
     - name: Get Cloud PC recommendation reports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
+    - name: Get Cloud PC troubleshooting reports
+      href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
     - name: Get frontline report
       href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: Get inaccessible Cloud PC reports
@@ -308,8 +310,6 @@ items:
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: Get shared use license usage report (deprecated)
       href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
-    - name: Get Cloud PC troubleshooting reports
-      href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
     - name: Cloud PC export job
       items:
       - name: Cloud PC export job
