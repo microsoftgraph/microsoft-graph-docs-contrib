@@ -50,7 +50,7 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 | Microsoft Graph China operated by 21Vianet | `https://microsoftgraph.chinacloudapi.cn` | Not supported. |
 
 > [!IMPORTANT]
-> For an app in US Government clouds, use the following root endpoints for the Azure portal and Microsoft Graph respectively.
+> For a software application working in US Government context, use the following root endpoints for the Azure portal and Microsoft Graph respectively.
 >
 > - If you're working in a Microsoft 365 GCC environment, continue using the worldwide endpoints: `https://portal.azure.com` and `https://graph.microsoft.com`.
 > - If you're working in a Microsoft 365 GCC High environment, use `https://portal.azure.us` and `https://graph.microsoft.us`.
