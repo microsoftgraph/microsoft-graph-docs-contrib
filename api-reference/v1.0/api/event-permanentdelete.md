@@ -16,7 +16,8 @@ Permanently delete an event and place it in the **purges** folder in the dumpste
 
 For more information about item retention, see [Configure deleted item retention and recoverable items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
 
->**Note:** Folders aren't placed in the Purges folder when they are permanently deleted. Permanently deleted folders are removed from the mailbox.
+> [!Note]
+> Folders aren't placed in the **purges** folder when they're permanently deleted. Permanently deleted folders are removed from the mailbox.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
