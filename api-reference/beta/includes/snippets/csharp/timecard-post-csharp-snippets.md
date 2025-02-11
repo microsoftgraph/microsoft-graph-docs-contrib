@@ -14,16 +14,11 @@ var requestBody = new TimeCard
 	ClockInEvent = new TimeCardEvent
 	{
 		DateTime = DateTimeOffset.Parse("2019-03-18T00:00:00.000Z"),
+		IsAtApprovedLocation = true,
 		Notes = new ItemBody
 		{
 			Content = "Started late due to traffic in CA 237",
 			ContentType = BodyType.Text,
-		},
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"isAtApprovedLocation" , true
-			},
 		},
 	},
 	Notes = new ItemBody
@@ -44,16 +39,11 @@ var requestBody = new TimeCard
 			Start = new TimeCardEvent
 			{
 				DateTime = DateTimeOffset.Parse("2019-03-18T02:00:00.000Z"),
+				IsAtApprovedLocation = true,
 				Notes = new ItemBody
 				{
 					Content = "Reduced break to make up for lost time",
 					ContentType = BodyType.Text,
-				},
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"isAtApprovedLocation" , true
-					},
 				},
 			},
 		},

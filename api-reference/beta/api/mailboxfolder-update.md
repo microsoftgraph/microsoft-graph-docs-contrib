@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [mail
 ### Request
 
 The following example shows how to update certain folder properties of a mailbox folder.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_mailboxfolder",
@@ -80,6 +81,12 @@ PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab
     ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
