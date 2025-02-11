@@ -53,9 +53,8 @@ The following table lists the parameters that you can use when you call this act
 |Parameter|Type|Description|
 |:--------|:---|:----------|
 |filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`. Optional.|
-|groupBy|String collection|Specifies how to group the reports. If used, must have the same content as the **select** parameter. Optional|
 |orderBy|String collection|Specifies the order by column name. Optional.|
-|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`, `unknownFutureValue`. The default value is `troubleshootDetailsReport`.|
+|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `unknownFutureValue`, `troubleshootIssueCountReport`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `troubleshootIssueCountReport`. The default value is `troubleshootDetailsReport`.|
 |search|String|The search string. Optional.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. Optional.|
 |skip|Int32|Number of records to skip. Optional.|
