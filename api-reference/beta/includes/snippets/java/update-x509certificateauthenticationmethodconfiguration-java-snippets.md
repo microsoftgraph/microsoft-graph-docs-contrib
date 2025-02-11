@@ -44,6 +44,13 @@ authenticationMethodTarget.setId("all_users");
 authenticationMethodTarget.setIsRegistrationRequired(false);
 includeTargets.add(authenticationMethodTarget);
 authenticationMethodConfiguration.setIncludeTargets(includeTargets);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+ crlValidationConfiguration = new ();
+crlValidationConfiguration.setState("disabled");
+LinkedList<Object> exemptedCertificateAuthoritiesSubjectKeyIdentifiers = new LinkedList<Object>();
+crlValidationConfiguration.setExemptedCertificateAuthoritiesSubjectKeyIdentifiers(exemptedCertificateAuthoritiesSubjectKeyIdentifiers);
+additionalData.put("crlValidationConfiguration", crlValidationConfiguration);
+authenticationMethodConfiguration.setAdditionalData(additionalData);
 AuthenticationMethodConfiguration result = graphClient.policies().authenticationMethodsPolicy().authenticationMethodConfigurations().byAuthenticationMethodConfigurationId("{authenticationMethodConfiguration-id}").patch(authenticationMethodConfiguration);
 
 
