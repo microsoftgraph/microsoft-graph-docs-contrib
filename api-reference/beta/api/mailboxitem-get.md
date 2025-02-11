@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09
 
 ---
 
-
 ### Response
 
 The following example shows the response.
