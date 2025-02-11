@@ -40,9 +40,9 @@ This method supports the `$filter` and `$expand` of the [OData query parameters]
 
 ### Using the $filter query parameter
 
-You can apply the `$filter` (`eq`, `ne`, `lt`, `gt`, `le`, `ge`, `startswith`) query parameter to get a subset of the [listItem](../resources/listitem.md) collection. Both **listItem** properties and fields can be filtered. When filtering on indexed fields, the service can only filter one indexed field at a time.
+You can apply the `$filter` (`eq`, `ne`, `lt`, `gt`, `le`, `ge`, and `startswith`) query parameter to get a subset of the [listItem](../resources/listitem.md) collection. Both **listItem** properties and fields can be filtered. When filtering on indexed fields, the service can only filter one indexed field at a time.
 
-> ![NOTE]
+> [!NOTE]
 > Filtering works best on indexed columns.
 
 Depending on the number of items that match the filtering condition, the results are either be returned all at once or in multiple pages. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
