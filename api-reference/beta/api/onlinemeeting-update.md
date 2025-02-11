@@ -336,14 +336,7 @@ Content-Type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
-  "name": "update_isEndToEndEncryptionEnabled"
-}-->
-
-``` http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 Content-Type: application/json 
 
@@ -352,8 +345,6 @@ Content-Type: application/json
 }
 
 ```
-
----
 
 #### Response
 
