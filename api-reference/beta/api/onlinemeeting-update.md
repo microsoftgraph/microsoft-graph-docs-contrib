@@ -227,9 +227,10 @@ Content-Type: application/json
 }
 ```
 
-#### Example 2: Update the lobbyBypassSettings
+### Example 2: Update the lobbyBypassSettings
 > **Note:** The meeting ID has been shortened for readability.
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -284,6 +285,8 @@ Content-Type: application/json
 
 #### Response
 
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -327,23 +330,11 @@ Content-Type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2020-7-16 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Patch online meeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
+### Example 3: Update the isEndToEndEncryptionEnabled
 
-#### Example 3: Update the isEndToEndEncryptionEnabled
 > **Note:** This property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For details, see [Require end-to-end encryption for sensitive Teams meetings](https://learn.microsoft.com/MicrosoftTeams/end-to-end-encrypted-meetings).
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -366,6 +357,8 @@ Content-Type: application/json
 
 #### Response
 
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -375,7 +368,6 @@ Content-Type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
     "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi",
     "creationDateTime":"2020-07-03T00:23:39.444642Z",
@@ -409,17 +401,3 @@ Content-Type: application/json
     }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2020-7-16 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Patch online meeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
