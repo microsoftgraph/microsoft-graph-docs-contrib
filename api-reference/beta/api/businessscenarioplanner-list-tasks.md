@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Get tasks associated with a specific externalObjectId
 
-The following example shows a request that gets all tasks associated with a specific context.
+The following example shows a request that gets all tasks associated with a specific external ID.
 
 #### Request
 
