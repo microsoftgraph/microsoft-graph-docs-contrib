@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "riskEventType",
           "ChangeType": "Change",
-          "Description": "Added `anomalousToken``newCountry`, `passwordSpray`, `riskyIPAddress`, `suspiciousBrowser`, `suspiciousInboxForwarding`, `tokenIssuerAnomaly`, as a supported values for the **riskEventType** property in the [RiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-beta) resource.",
+          "Description": "Added `anomalousToken``newCountry`, `passwordSpray`, `riskyIPAddress`, `suspiciousBrowser`, `suspiciousInboxForwarding`, `tokenIssuerAnomaly`, as a supported values for the **riskEventType** property in the [riskDetection](https://learn.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-beta) resource.",
           "Target": "RiskDetection"
           }
         ],
