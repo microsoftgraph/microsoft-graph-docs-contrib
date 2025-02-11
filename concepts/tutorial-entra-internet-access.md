@@ -51,7 +51,6 @@ Record the ID of the profile for use later in this tutorial.
 }-->
 ```http
 GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles?$filter=trafficForwardingType eq 'internet'
-Content-type: application/json
 ```
 
 #### Response
@@ -219,7 +218,7 @@ Content-type: application/json
 }
 ```
 
-Step 2.3: Link the filtering policy to the filtering profile
+### Step 2.3: Link the filtering policy to the filtering profile
 
 #### Request
 
