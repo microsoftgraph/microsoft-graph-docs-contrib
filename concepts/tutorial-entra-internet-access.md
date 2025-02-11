@@ -33,7 +33,7 @@ To complete the steps in this tutorial:
   - Conditional Access Administrator for configuring Conditional Access policies.
 - Grant consent to your admin for the *NetworkAccess.Read.All*, *NetworkAccess.ReadWrite.All*, and *Policy.ReadWrite.ConditionalAccess* delegated permissions.
 - Have a test user to assign to the Conditional Access policy.
-- [Deploy the Global Secure Access (GSA) client](/entra/global-secure-access/concept-clients) to your organization's devices.
+- Deploy the [Global Secure Access (GSA) client](/entra/global-secure-access/concept-clients) to your organization's devices.
 
 ## Step 1: Enable Internet Access traffic forwarding
 
@@ -41,7 +41,7 @@ Before you configure Microsoft Entra Internet Access filtering policies, start b
 
 ### Step 1.1: Retrieve the Internet Access traffic forwarding profile
 
-Record the ID of the profile to use.
+Record the ID of the profile for use later in this tutorial.
 
 #### Request
 
@@ -67,7 +67,7 @@ Content-type: application/json
 {
             "trafficForwardingType": "internet",
             "priority": 2,
-            "id": "70314902-4902-4097-8bba-48c0ed00f0c2",
+            "id": "bbbbbbbb-1111-2222-3333-cccccccccccc",
             "name": "Internet traffic forwarding profile",
             "description": "Default traffic forwarding profile for Internet traffic acquisition. Assign the profile to client or branch offices to acquire Internet traffic for Zero Trust Network Access.Internet traffic forwarding profile will exclude all endpoints defined in Microsoft 365 traffic forwarding profile.",
             "state": "enabled",
@@ -75,8 +75,8 @@ Content-type: application/json
             "lastModifiedDateTime": "2025-01-14T13:11:57.9295327Z",
             "associations": [],
             "servicePrincipal": {
-                "appId": "14d5bf67-9857-4404-baf1-c35e9bce4559",
-                "id": "aa9cd481-29b6-4bcc-a97e-f7bf25c2c1b5"
+                "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+                "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
             }
 }
 ```
@@ -92,7 +92,7 @@ The request returns a `204 No Content` response code.
   "name": "tutorial_configure_entrainternetaccess_enable_forwardingprofiles"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/70314902-4902-4097-8bba-48c0ed00f0c2
+PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/bbbbbbbb-1111-2222-3333-cccccccccccc
 Content-type: application/json
 
 {
@@ -104,50 +104,7 @@ Content-type: application/json
 
 To configure policies in Microsoft Entra Internet Access, you first need to Create a filtering policy, which is a collection of rules, governing access to destinations like web categories and Fully Qualified Domain Names (FQDNs). For example, you can create a filtering policy with rules that block access to the Artificial Intelligence category and individual FQDNs. Then you organize filtering policies into a security profile which, to which you can target with Conditional Access policies.
 
-### Step 2.1: Review available web categories list
-
-If you need to review the list of supported web categories before you create a filtering policy, you can gather the full list via the following Graph API request. 
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "tutorial_configure_entrainternetaccess_list_webcategories"
-}-->
-```http
-GET https://graph.microsoft.com/beta/networkaccess/connectivity/webCategories
-Content-type: application/json
-```
-
-#### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.networkaccess.connectivity.webCategories"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/webCategories",
-    "value": [
-        {
-            "name": "AlcoholAndTobacco",
-            "displayName": "Alcohol And Tobacco",
-            "group": "Liability"
-        },
-        {
-            "name": "ChildAbuseImages",
-            "displayName": "Child Abuse Images",
-            "group": "Liability"
-        },
-        ...
-    ]
-}
-```
-
-### Step 2.2: Retrieve the Internet Access traffic forwarding profile
+### Step 2.1: Create a web content filtering policy
 
 In this example, you can create a filtering policy with rules that block access to the Artificial Intelligence category and FQDNs for bing.com. Once this policy is created, take note of the filtering policy ID for linking in the filtering profile.
 
@@ -206,8 +163,8 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "ec01c111-a066-4330-bd77-2d9c75208ee3",
-    "name": "Search Engines",
+    "id": "cccccccc-2222-3333-4444-dddddddddddd",
+    "name": "AI and Bing",
     "description": null,
     "version": "1.0.0",
     "lastModifiedDateTime": "2025-02-05T18:10:28.9760687Z",
@@ -216,9 +173,9 @@ Content-type: application/json
 }
 ```
 
-Step 2.3: Create a filtering profile (also known as a security profile)
+Step 2.2: Create a filtering profile or security profile
 
-Create a filtering profile (renamed to security profile in the Entra admin portal) that holds your policies and target in Conditional Access session control. Once this profile is created, take note of the filtering profile ID when linking in the Conditional Access policy.
+Create a filtering profile or security profile that holds your policies and target it in Conditional Access session control. Once this profile is created, take note of the filtering profile ID for use later in the Conditional Access policy.
 
 ### Request 
 
@@ -253,7 +210,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringProfiles/$entity",
     "priority": 100,
     "createdDateTime": "2025-02-05T18:27:31Z",
-    "id": "37bd8bf7-a2c9-4c43-a154-cf6d9151d69c",
+    "id": "dddddddd-3333-4444-5555-eeeeeeeeeeee",
     "name": "Security Profile for UserA",
     "description": null,
     "state": "enabled",
@@ -262,7 +219,7 @@ Content-type: application/json
 }
 ```
 
-Step 2.4: Link the filtering policy to the filtering profile
+Step 2.3: Link the filtering policy to the filtering profile
 
 #### Request
 
@@ -271,7 +228,7 @@ Step 2.4: Link the filtering policy to the filtering profile
   "name": "tutorial_configure_entrainternetaccess_link_filteringPolicy"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/networkaccess/filteringProfiles/37bd8bf7-a2c9-4c43-a154-cf6d9151d69c/policies
+POST https://graph.microsoft.com/beta/networkaccess/filteringProfiles/dddddddd-3333-4444-5555-eeeeeeeeeeee/policies
 Content-type: application/json
 
 {
@@ -280,7 +237,7 @@ Content-type: application/json
 	"@odata.type": "#microsoft.graph.networkaccess.filteringPolicyLink",
 	"loggingState": "enabled",
 	"policy": {
-		"id": "71c34af5-bc2d-4e02-8c76-a5f639da50fc",
+		"id": "cccccccc-2222-3333-4444-dddddddddddd",
 		"@odata.type": "#microsoft.graph.networkaccess.filteringPolicy"
 }
 ```
@@ -297,7 +254,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "8cc2e4d8-ceb1-4a4a-bcf9-1b199fdb2f4d",
+    "id": "dddddddd-9999-0000-1111-eeeeeeeeeeee",
     "priority": 100,
     "state": "enabled",
     "version": "1.0.0",
@@ -306,8 +263,8 @@ Content-type: application/json
     "createdDateTime": "2025-02-05T18:31:32Z",
     "policy": {
         "@odata.type": "#microsoft.graph.networkaccess.filteringPolicy",
-        "id": "71c34af5-bc2d-4e02-8c76-a5f639da50fc",
-        "name": "Search Engines",
+        "id": "cccccccc-2222-3333-4444-dddddddddddd",
+        "name": "AI and Bing",
         "description": null,
         "version": "1.0.0",
         "lastModifiedDateTime": "2025-02-05T18:15:17.0759384Z",
@@ -341,14 +298,14 @@ Content-type: application/json
 		},
 		"users": {
 			"includeUsers": [
-				"6a5e61f8-2fdd-4a4d-a926-c9c7285538bb"
+				"00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
 			]
 		}
 	},
 	"displayName": "UserA Access to AI and Bing",
 	"sessionControls": {
 		"globalSecureAccessFilteringProfile": {
-			"profileId": "3b40eb9f-0624-4690-9d91-e9e413e023aa",
+			"profileId": "dddddddd-9999-0000-1111-eeeeeeeeeeee",
 			"isEnabled": true
 		}
 	},
@@ -398,7 +355,7 @@ Content-type: application/json
         },
         "users": {
             "includeUsers": [
-                "6a5e61f8-2fdd-4a4d-a926-c9c7285538bb"
+                "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
             ],
             "excludeUsers": [],
             "includeGroups": [],
@@ -418,11 +375,11 @@ Content-type: application/json
         "continuousAccessEvaluation": null,
         "secureSignInSession": null,
         "networkAccessSecurity": {
-            "policyId": "3b40eb9f-0624-4690-9d91-e9e413e023aa",
+            "policyId": "dddddddd-9999-0000-1111-eeeeeeeeeeee",
             "isEnabled": true
         },
         "globalSecureAccessFilteringProfile": {
-            "profileId": "3b40eb9f-0624-4690-9d91-e9e413e023aa",
+            "profileId": "dddddddd-9999-0000-1111-eeeeeeeeeeee",
             "isEnabled": true
         }
     }
