@@ -5095,6 +5095,15 @@ Possible values for user account types (group membership), per Windows definitio
 |bulk|
 |unknownFutureValue|
 
+### cloudPcPolicyApplyActionStatus values
+
+|Member|
+|:---|
+|processing|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
 ### mailboxType values 
 
 |Member|
