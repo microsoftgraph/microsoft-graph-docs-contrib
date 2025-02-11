@@ -13,7 +13,7 @@ ms.date: 02/05/2025
 
 # Configure Microsoft Entra Internet Access using Microsoft Graph APIs
 
-[Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access) provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other internet traffic.
+[Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access) provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other internet traffic. Admins use Microsoft Entra Internet Access to protect users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs. Deeply integrated to Entra ID Conditional Access, Microsoft's SWG is identity-centric, making it easy for IT Administrators to manage their organization's policy in one engine.
 
 In this tutorial, you learn how to configure Microsoft Entra Internet Access programmatically using the Microsoft Graph network access APIs. You:
 
@@ -44,7 +44,6 @@ Record the ID of the profile to use.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_entrainternetaccess_list_forwardingprofiles"
@@ -87,7 +86,6 @@ The request returns a `204 No Content` response code.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_entrainternetaccess_enable_forwardingprofiles"
@@ -111,7 +109,6 @@ If you need to review the list of supported web categories before you create a f
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_entrainternetaccess_list_webcategories"
@@ -155,7 +152,6 @@ In this example, you can create a filtering policy with rules that block access 
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_entrainternetaccess_create_filteringPolicy"
@@ -225,7 +221,6 @@ Create a filtering profile (renamed to security profile in the Entra admin porta
 
 ### Request 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_entrainternetaccess_create_filteringProfile"
@@ -270,7 +265,6 @@ Step 2.4: Link the filtering policy to the filtering profile
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_entrainternetaccess_link_filteringPolicy"
@@ -291,6 +285,7 @@ Content-type: application/json
 ```
 
 #### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -327,7 +322,7 @@ To make the contents of your filtering profile user- and context-aware, you need
 
 ### Request
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_entrainternetaccess_create_ConditionalAccess"
