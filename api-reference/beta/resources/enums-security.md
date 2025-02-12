@@ -903,6 +903,14 @@ Namespace: microsoft.graph.security
 |all        |
 |unknownFutureValue|
 
+### recipientType values
+
+|Member|
+|:---|
+|user|
+|roleGroup|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",
