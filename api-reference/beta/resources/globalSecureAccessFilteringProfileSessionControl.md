@@ -1,6 +1,6 @@
 ---
 title: "globalSecureAccessFilteringProfileSessionControl resource type"
-description: "Session control to link to Global Secure Access security profiles or filtering profiles."
+description: "Session control to link to a Global Secure Access security profile or filtering profile."
 ms.localizationpriority: medium
 author: "fgomulka"
 ms.subservice: "entra-global-secure-access"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to link to Global Secure Access security profiles or filtering profiles. Inherits from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
+Session control to link to a Global Secure Access security profile or filtering profile. Inherits from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
 
 ## Properties
 
