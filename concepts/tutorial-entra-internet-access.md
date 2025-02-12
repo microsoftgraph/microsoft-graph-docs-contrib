@@ -101,7 +101,7 @@ Content-type: application/json
 
 ## Step 2: Create a web content filtering policy and security profile
 
-To configure policies in Microsoft Entra Internet Access, you first need to Create a filtering policy, which is a collection of rules, governing access to destinations like web categories and Fully Qualified Domain Names (FQDNs). For example, you can create a filtering policy with rules that block access to the Artificial Intelligence category and individual FQDNs. Then you organize filtering policies into a security profile which, to which you can target with Conditional Access policies.
+To configure policies in Microsoft Entra Internet Access, you first need to create a filtering policy, which is a collection of rules governing access to destinations like web categories and Fully Qualified Domain Names (FQDNs). For example, you can create a filtering policy with rules that block access to the Artificial Intelligence category and individual FQDNs. Then you organize filtering policies into a security profile that you can target with Conditional Access policies.
 
 ### Step 2.1: Create a web content filtering policy
 
@@ -275,7 +275,10 @@ Content-type: application/json
 
 Step 3: Create and Link Conditional Access policy
 
-To make the contents of your filtering profile user- and context-aware, you need to link it to a Conditional Access policy.
+To enforce your filtering profile, you need to link it to a Conditional Access (CA) policy. Doing so will make the contents of your filtering profile user- and context-aware. In this step, you create a CA policy with the following settings:
+
+- Target it to a user with id `00aa00aa-bb11-cc22-dd33-44ee44ee44ee` and the app "All internet resources with Global Secure Access" with app id `5dc48733-b5df-475c-a49b-fa307ef00853`.
+- Configure a session control with globalSecureAccessFilteringProfile id `dddddddd-9999-0000-1111-eeeeeeeeeeee`.
 
 ### Request
 
