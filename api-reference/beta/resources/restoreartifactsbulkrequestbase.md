@@ -21,6 +21,13 @@ Base type for [siteRestoreArtifactsBulkAdditionRequests](../resources/siterestor
 
 Inherits from [entity](../resources/entity.md).
 
+The following points apply to RestoreArtifactsBulkAdditionRequests : 
+
+1. As of now only one bulk addition job per restore session is possible.
+2. The limit on sites/users in bulk request is 10k.
+3. We do not support Patch operations for bulk restore sessions.
+4. In a single restore session, we cannot add both siteRestoreArtifact & siteBulkAdditionRequest.
+
 ## Properties
 | Property               | Type                                   | Description                                                                 |
 |:-----------------------|:---------------------------------------|:---------------------------------------------------------------------------|

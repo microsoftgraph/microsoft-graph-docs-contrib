@@ -14,9 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with an [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
-The initial status upon creation of the restore session is `active`. When all the sites are added to the corresponding SharePoint restore session and the restore session is activated, the status becomes `completed`. If any failures are encountered during resource resolution, the status of the restore session becomes `completedWithErrors`.
+• **Step 1:** Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md) with Empty payload.
+
+• **Step 2:** Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+
+• **Step 3:** Get status of [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) of the SharePoint restore session. The initial status upon creation is `active` and will remain so until it the [sharePointRestoreSession](../resources/sharepointrestoresession.md) is activated.
+
+• **Step 4:** Activate the [sharePointRestoreSession](../resources/sharepointrestoresession.md) created in step 1
+
+• **Step 5:** Monitor the status of [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md). When all the sites are added to the corresponding [sharePointRestoreSession](../resources/sharepointrestoresession.md), the status of [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) becomes `completed`. If any failures are encountered during resource resolution, the status becomes `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -52,9 +60,18 @@ POST /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessio
 
 In the request body, supply a JSON representation of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object.
 
+You can specify the following properties when you create a **siteRestoreArtifactsBulkAdditionRequest** object.
+
+|Property|Type|Description|
+ |:---|:---|:---|
+ |siteWebUrls|[Collection(Edm.String)]|A property which contains the list of SharePoint site URLs. Optional.|
+ |siteIds|[Collection(Edm.String)]|A property which contains the list of SharePoint siteIds. Optional.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object in the response body.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 

@@ -16,7 +16,15 @@ Namespace: microsoft.graph
 
 Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
-The initial status upon creation of the restore session is `active`. When all the mailboxes are added to the corresponding Exchange restore session and the restore session is activated, the status becomes `completed`. If any failures are encountered during resource resolution, the status of the restore session becomes `completedWithErrors`.
+• **Step 1:** Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md) with Empty payload.
+
+• **Step 2:** Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with a [exchangeRestoreSession](../resources/exchangerestoresession.md).
+
+• **Step 3:** Get status of [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) of the SharePoint restore session. The initial status upon creation is `active` and will remain so until it the [exchangeRestoreSession](../resources/exchangerestoresession.md) is activated.
+
+• **Step 4:** Activate the [exchangeRestoreSession](../resources/exchangerestoresession.md) created in step 1
+
+• **Step 5:** Monitor the status of [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md). When all the sites are added to the corresponding [exchangeRestoreSession](../resources/exchangerestoresession.md), the status of [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) becomes `completed`. If any failures are encountered during resource resolution, the status becomes `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -52,9 +60,18 @@ POST /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}
 
 In the request body, supply a JSON representation of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object.
 
+You can specify the following properties when you create a **driveRestoreArtifactsBulkAdditionRequest** object.
+
+|Property|Type|Description|
+ |:---|:---|:---|
+ |mailboxes|[Collection(Edm.String)]|A property which contains the list of email-addresses. Optional.|
+ |directoryObjectIds|[Collection(Edm.String)]|A property which contains the list of directoryObjectIds. Optional.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object in the response body.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 

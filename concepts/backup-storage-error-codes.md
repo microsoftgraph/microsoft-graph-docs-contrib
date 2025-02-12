@@ -362,3 +362,49 @@ The following table lists the possible error and response codes that can be retu
 |403|UnableToReadBillingProfile|Unable to read billing profile from billing profile provider.|Unable to read billing profile from billing profile provider.|
 |402|InvalidBillingProfile|Invalid billing profile received from the provider.|Invalid billing profile received from the provider.|
 |400|InvalidAppOwnerTenantId|Owning tenant id not found|Invalid App owner tenant id received from the user.|
+
+## Create RestoreArtifactsBulkAdditionRequests API errors
+
+The error codes in this section apply to the following API:
+
+- [Create siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests.md)
+- [Create mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests.md)
+- [Create driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests.md)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|400|InvalidBulkRestoreArtifactId|Bulk Restore request Id is invalid.|Invalid guid provided in uri.|
+|400|BulkRestoreInvalidCreateRequest|BulkRestoreCreateRequest is null.|Create request is null or invalid.|
+|400|BulkRestoreRestorationResourcesCountExceedsLimit|Bulk Restore input limit exceeded|Input size is too big.|
+|400|BulkRestoreInvalidCreateRequestSiteUrl|Bulk Restore site web url is invalid.|If site url provided is null, empty or in wrong format|
+|400|BulkRestoreInvalidCreateRequestUserEmail|Bulk Restore user email is invalid.|If email provided is null, empty or in wrong format|
+
+# Get RestoreArtifactsBulkAdditionRequests API errors
+
+The error codes in this section apply to the following API :
+
+- [Get siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/siterestoreartifactsbulkadditionrequest-get.md)
+- [Get mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-get.md)
+- [Get driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-get.md)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|404|BulkRestoreArtifactsNotFound|No bulkRestoreArtifact item with givrn bulkRestoreArtifactId.|There is no restoreArtifactBulkAdditionRequest associated with the restoreArtifactBulkAdditionRequest id given in uri.|
+
+# Delete RestoreArtifactsBulkAdditionRequests API errors
+
+The error codes in this section apply to the following API :
+
+- [Delete siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/siterestoreartifactsbulkadditionrequest-delete.md)
+- [Delete mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-delete.md)
+- [Delete driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-delete.md)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|403|InvalidStateForBulkRequestDeletion|Validation fails when service type of restore session and create request is different|Bulk Request can only be deleted when the status is `completed` or `completedWithErrors`.|
