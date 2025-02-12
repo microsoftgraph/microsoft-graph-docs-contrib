@@ -20,7 +20,7 @@ Represents a user within a SharePoint group.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/sharepointgroupmember-list-members.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md) collection|Get a list of the [sharePointGroupMember](../resources/sharepointgroupmember.md) objects and their properties.|
-|[Create](../api/sharepointgroupmember-create.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object.|
+|[Create](../api/sharepointgroup-post-member.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object.|
 |[Get](../api/sharepointgroupmember-get.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Read the properties of a [sharePointGroupMember](../resources/sharepointgroupmember.md) object.|
 |[Delete](../api/sharepointgroupmember-delete.md)|None|Delete a [sharePointGroupMember](../resources/sharepointgroupmember.md) object.|
 

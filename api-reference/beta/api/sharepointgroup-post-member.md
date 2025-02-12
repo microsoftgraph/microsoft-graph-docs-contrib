@@ -47,7 +47,7 @@ POST /storage/fileStorage/containers/{containerId}/sharePointGroups/members
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sharePointGroupMember](../resources/sharepointgroupmember) resource  that includes a [sharePointIdentitySet](../resources/sharepointidentityset.md) to refer to the identity that is to be added to the [sharePointGroup](../resources/sharepointgroup).
+In the request body, supply a JSON representation of the [sharePointGroupMember](../resources/sharepointgroupmember.md) resource  that includes a [sharePointIdentitySet](../resources/sharepointidentityset.md) to refer to the identity that is to be added to the [sharePointGroup](../resources/sharepointgroup.md).
 
 Said `sharePointIdentitySet` may only contain one and only one of "user" or "group". 
 
