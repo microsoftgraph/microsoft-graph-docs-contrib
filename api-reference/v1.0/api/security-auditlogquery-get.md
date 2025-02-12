@@ -39,9 +39,6 @@ Auditing data can be accessed through Microsoft Purview Audit Search API via the
   "blockType": "ignored"
 }
 -->
-``` http
-GET /security/auditLog/queries/{auditLogQueryId}
-```
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -68,9 +65,6 @@ The following example shows a request.
   "name": "get_auditlogquery"
 }
 -->
-``` http
-GET https://graph.microsoft.com/v1.0/security/auditLog/queries/{auditLogQueryId}
-```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-auditlogquery-csharp-snippets.md)]
