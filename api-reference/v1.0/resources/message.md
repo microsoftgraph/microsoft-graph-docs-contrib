@@ -43,7 +43,7 @@ by providing a [delta](../api/message-delta.md) function.
 |[Reply to a message](../api/message-reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
 |[Reply-all to a message](../api/message-replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[Send draft message](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
-|[Permanently delete](../api/message-permanentdelete.md)|None|Permanently delete a message and place it in the Purges folder in the Recoverable Items folder in the user's mailbox.|
+|[Permanently delete](../api/message-permanentdelete.md)|None|Permanently delete a message and place it in the purges folder in the recoverable Items folder in the user's mailbox.|
 |**Attachments**| | |
 |[List attachments](../api/message-list-attachments.md) |[Attachment](attachment.md) collection| Gets all attachments on a message.|
 |[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
