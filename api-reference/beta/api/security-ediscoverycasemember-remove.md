@@ -1,20 +1,20 @@
 ---
-title: "Delete ediscoveryCaseMember"
-description: "Delete a ediscoveryCaseMember object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.date: 12/16/2024
+title: "Remove ediscoveryCaseMember"
+description: "Remove a ediscoveryCaseMember object."
+author: "arevers"
+ms.date: 2/12/2015
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Delete ediscoveryCaseMember
+# Remove ediscoveryCaseMember
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a ediscoveryCaseMember object.
+Remove an [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) from an [ediscoveryCase](../resources/security-ediscoverycase.md).
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /ediscoveryCaseMember
+DELETE security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
 ```
 
 ## Request headers
@@ -42,10 +42,15 @@ DELETE /ediscoveryCaseMember
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-Don't supply a request body for this method.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The id of the eDiscovery case member. Can be obtained by calling **GET /caseMembers**. Required.|
 
 ## Response
 
@@ -62,14 +67,17 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/ediscoveryCaseMember
+DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
+
+{
+    "id": "c4af6f9d-37f6-43f9-9e17-601544234146"
+}
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

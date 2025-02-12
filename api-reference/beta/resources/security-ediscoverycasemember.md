@@ -1,10 +1,10 @@
 ---
 title: "ediscoveryCaseMember resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.date: 12/16/2024
+author: "annierevers"
+ms.date: 2/12/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+In the context of eDiscovery, case members are granted access to an [ediscoveryCase](../resources/security-ediscoverycase.md) and its data. These cases are accessible to case members via the eDiscovery UX portal or through the eDiscovery Case Graph APIs. Case members can be one of two types: a user or a role group. For more details, see [Add or remove members from an eDiscovery (Premium) case](/purview/ediscovery-add-or-remove-members-from-a-case).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -24,17 +23,16 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/security-ediscoverycasemember-list.md)|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) collection|Get a list of the ediscoveryCaseMember objects and their properties.|
-|[Get](../api/security-ediscoverycasemember-get.md)|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md)|Read the properties and relationships of a ediscoveryCaseMember object.|
-|[Update](../api/security-ediscoverycasemember-update.md)|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md)|Update the properties of a ediscoveryCaseMember object.|
-|[Delete](../api/security-ediscoverycasemember-delete.md)|None|Delete a ediscoveryCaseMember object.|
+|[Add](../api/security-ediscoverycasemember-add.md)|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md)|Add a case member to an ediscovery case.|
+|[Remove](../api/security-ediscoverycasemember-remove.md)|None|Remove a case member from an ediscovery case.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|recipientType|microsoft.graph.security.recipientType|**TODO: Add Description**.The possible values are: `user`, `roleGroup`, `unknownFutureValue`.|
-|smtpAddress|String|**TODO: Add Description**|
+|recipientType|microsoft.graph.security.recipientType|Specifies the recipient type of the eDiscovery case member. The possible values are: `user`, `roleGroup`, `unknownFutureValue`.|
+|id|String|The id of the eDiscovery case member.|
+|displayName|String|The display name of the eDiscovery case member. Allowed only for case members of type **roleGroup**. |
+|smtpAddress|String|The smtp address of the eDiscovery case member. Allowed only for case members of type **user**. |
 
 ## Relationships
 None.
@@ -53,9 +51,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryCaseMember",
   "id": "String (identifier)",
-  "recipientType": "String",
+  "recipientType": "'@odata.type': 'microsoft.graph.security.recipientType'",
   "displayName": "String",
   "smtpAddress": "String"
 }
 ```
-

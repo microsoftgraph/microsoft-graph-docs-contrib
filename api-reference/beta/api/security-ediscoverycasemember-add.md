@@ -1,20 +1,20 @@
 ---
-title: "Update ediscoveryCaseMember"
-description: "Update the properties of a ediscoveryCaseMember object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.date: 12/16/2024
+title: "Add ediscoveryCaseMember"
+description: "Update the properties of an ediscoveryCaseMember object."
+author: "annierevers"
+ms.date: 2/12/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Update ediscoveryCaseMember
+# Add ediscoveryCaseMember
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a ediscoveryCaseMember object.
+Add an [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) to an [ediscoveryCase](../resources/security-ediscoverycase.md). The [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) can be can be one of two types: a user or a role group.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /ediscoveryCaseMember
+POST security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
 ```
 
 ## Request headers
@@ -48,23 +48,21 @@ PATCH /ediscoveryCaseMember
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|recipientType|microsoft.graph.security.recipientType|**TODO: Add Description**. The possible values are: `user`, `roleGroup`, `unknownFutureValue`. Optional.|
-|displayName|String|**TODO: Add Description** Optional.|
-|smtpAddress|String|**TODO: Add Description** Optional.|
-
-
+|recipientType|microsoft.graph.security.recipientType|Specifies the recipient type of the eDiscovery case member. The possible values are: `user`, `roleGroup`, `unknownFutureValue`. Required.|
+|id|String|The id of the eDiscovery case member. If not specified, then either **displayName** (for role group) or **smtpAddress** (for user) must be provided.|
+|displayName|String|The display name of the eDiscovery case member. Allowed only for case members of type **roleGroup**. If not specified, then **id** must be provided. |
+|smtpAddress|String|The smtp address of the eDiscovery case member. Allowed only for case members of type **user**. If not specified, then **id** must be provided. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the added [microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) object in the response body.
 
 ## Examples
 
-### Request
+### Example 1: Add a case member of type **user** using **smtAddress**
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -73,22 +71,19 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/ediscoveryCaseMember
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryCaseMember",
-  "recipientType": "String",
-  "displayName": "String",
-  "smtpAddress": "String"
+    "recipientType": "user",
+    "smtpAddress": "user3@microsoft.com"
 }
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -99,11 +94,127 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryCaseMember",
-  "id": "333889ac-73a8-cb9a-7877-0a3c009f7e39",
-  "recipientType": "String",
-  "displayName": "String",
-  "smtpAddress": "String"
+    "recipientType": "user",
+    "id": "c4af6f9d-37f6-43f9-9e17-601544234146",
+    "displayName": "User3",
+    "smtpAddress": "user3@microsoft.com"
 }
 ```
 
+### Example 2: Add a case member of type **roleGroup** using **displayName**
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_ediscoverycasemember"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
+Content-Type: application/json
+
+{
+    "recipientType": "roleGroup",
+    "displayName": "Security Administrator"
+}
+```
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "recipientType": "roleGroup",
+    "id": "b9fb4f22-5f90-47a0-b309-44fe96a959fd",
+    "displayName": "Security Administrator",
+    "smtpAddress": ""
+}
+```
+
+### Example 3: Add a case member of type **user** using **id**
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_ediscoverycasemember"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
+Content-Type: application/json
+
+{
+    "recipientType": "user",
+    "id": "c4af6f9d-37f6-43f9-9e17-601544234146"
+}
+```
+
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "recipientType": "user",
+    "id": "c4af6f9d-37f6-43f9-9e17-601544234146",
+    "displayName": "User3",
+    "smtpAddress": "user3@microsoft.com"
+}
+```
+
+### Example 4: Add a case member of type **roleGroup** using **id**.
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_ediscoverycasemember"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
+Content-Type: application/json
+
+{
+    "recipientType": "roleGroup",
+    "id": "b9fb4f22-5f90-47a0-b309-44fe96a959fd"
+}
+```
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "recipientType": "roleGroup",
+    "id": "b9fb4f22-5f90-47a0-b309-44fe96a959fd",
+    "displayName": "Security Administrator",
+    "smtpAddress": ""
+}
+```

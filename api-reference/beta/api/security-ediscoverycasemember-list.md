@@ -1,10 +1,10 @@
 ---
 title: "List ediscoveryCaseMember objects"
 description: "Get a list of the ediscoveryCaseMember objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.date: 12/16/2024
+author: "annierevers"
+ms.date: 2/12/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the ediscoveryCaseMember objects and their properties.
+Get a list of [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) objects for an [ediscoveryCase](../resources/security-ediscoverycase.md).
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.security.ediscoveryCaseMember not found
+GET security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
 ```
 
 ## Optional query parameters
@@ -45,7 +45,7 @@ This method supports some of the OData query parameters to help customize the re
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 
 ## Request body
 
@@ -66,14 +66,13 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.security.ediscoveryCaseMember not found
+GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,15 +84,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.ediscoveryCaseMember",
-      "id": "333889ac-73a8-cb9a-7877-0a3c009f7e39",
-      "recipientType": "String",
-      "displayName": "String",
-      "smtpAddress": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/caseMembers",
+    "value": [
+        {
+            "recipientType": "user",
+            "id": "c4af6f9d-37f6-43f9-9e17-601544234146",
+            "displayName": "User3",
+            "smtpAddress": "user3@microsoft.com"
+        },
+        {
+            "recipientType": "roleGroup",
+            "id": "b9fb4f22-5f90-47a0-b309-44fe96a959fd",
+            "displayName": "Security Administrator",
+            "smtpAddress": ""
+        }
+    ]
 }
 ```
-
