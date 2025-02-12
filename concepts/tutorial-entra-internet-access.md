@@ -388,6 +388,10 @@ Content-type: application/json
 }
 ```
 
+## Conclusion
+
+Now that you've configured a security profile or filtering profile blocking the Artificial Intelligence and bing.com for the sample user, that user will be blocked from accessing those sites.
+
 ## Related content
 
 - [Microsoft Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/gsa-deployment-guide-internet-access)
