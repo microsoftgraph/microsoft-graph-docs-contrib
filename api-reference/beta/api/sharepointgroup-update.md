@@ -20,11 +20,11 @@ An existing [sharePointGroup](../resources/sharepointgroup.md) object is updated
 
 ## Permissions
 
-This api only supports application only permissions.
+Applications calling this API must have permissions to update containers permissions of containers of type identified by `containerTypeId`.
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Application|FileStorageContainer.Selected|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Application                            | FileStorageContainer.Selected               |
 
 ## HTTP request
 
@@ -33,14 +33,15 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-PATCH /storage/fileStorage/containers/{id}/sharePointGroups/{sharePointGroupId}
+PATCH /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json. Required. |
 
 ## Request body
 In the request body, supply the values for the updated title or updated description for the **sharePointGroup**

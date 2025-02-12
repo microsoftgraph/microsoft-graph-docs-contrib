@@ -65,7 +65,8 @@ Represents a location where multiple users or a group of users can store files a
 |storageUsedInBytes|Int64|Storage used in the **fileStorageContainer**, in bytes. Read-only.|
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
 |lockState|siteLockState|Indicates the lock state of the **fileStorageContainer**. The possible values are `unlocked` and `lockedReadOnly`. Read-only.|
-|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.
+|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.|
+|sharePointGroups|[sharePointGroup](../resources/sharepointgroup.md) collection|The collection of sharePointGroups local to the container. Read-write.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -74,6 +75,7 @@ Represents a location where multiple users or a group of users can store files a
 |drive|[drive](../resources/drive.md)|The drive of the resource **fileStorageContainer**. Read-only.|
 |permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. The permission for each user is set by the **roles** property. The possible values are `reader`, `writer`, `manager`, and `owner`. Read-write.|
 |recycleBin|[recycleBin](../resources/recyclebin.md)|Recycle bin of the **fileStorageContainer**. Read-only.|
+|sharePointGroups|[sharePointGroup](../resources/sharepointgroup.md) collection|The collection of sharePointGroups local to the container. Read-write.|
 
 ### roles property values
 |Value|Description|
@@ -115,7 +117,8 @@ The following JSON representation shows the resource type.
   "ownershipType": {"@odata.type": "microsoft.graph.fileStorageContainerOwnershipType"},
   "expiryDateTime": "string (timestamp)",
   "lockState": {"@odata.type": "microsoft.graph.siteLockState"},
-  "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" }
+  "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" },
+  "sharePointGroups": [{"@odata.type": "microsoft.graph.sharePointGroup"}]
 }
 ```
 

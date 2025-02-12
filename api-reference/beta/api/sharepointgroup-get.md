@@ -22,11 +22,11 @@ A **sharePointGroup** object is retrieved by invoking this api.
 
 ## Permissions
 
-This api only supports application only permissions.
+Applications calling this API must have permissions to get containers permissions of containers of type identified by `containerTypeId`.
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Application|FileStorageContainer.Selected|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Application                            | FileStorageContainer.Selected               |
 
 ## HTTP request
 
@@ -35,14 +35,14 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-GET /storage/fileStorage/containers/{id}/sharePointGroups/{sharePointGroupId}
+GET /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 No request body is supplied for this api.

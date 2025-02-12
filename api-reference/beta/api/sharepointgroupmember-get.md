@@ -22,11 +22,11 @@ A **sharePointGroupMember** object is retrieved by invoking this api.
 
 ## Permissions
 
-This api only supports application only permissions.
+Applications calling this API must have permissions to add containers permissions of containers of type identified by `containerTypeId`.
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Application|FileStorageContainer.Selected|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Application                            | FileStorageContainer.Selected               |
 
 ## HTTP request
 
@@ -35,14 +35,15 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-GET /storage/fileStorage/containers/{id}/sharePointGroups/{sharePointGroupId}/members
+GET /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json. Required. |
 
 ## Request body
 No request body is supplied to this api.
@@ -109,14 +110,12 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 {
-    "id" : "dsfadjlfaksdjfswerasdfw",
-    "identity":
-    {
-        "user":
-        {
-            "displayName: "User 0",
-            "email" : "user0@contoso.com"
-        }
+  "id": "aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ",
+  "identity": {
+    "user": {
+      "displayName": "TestUser",
+      "email": TestUser@testTenant.onmicrosoft.com
+      }
     }
 }
 ```

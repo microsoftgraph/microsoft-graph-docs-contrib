@@ -22,11 +22,11 @@ A collection of **sharePointGroup** objects that are local to the SharePointEmbe
 
 ## Permissions
 
-This api only supports application only permissions.
+Applications calling this API must have permissions to get containers permissions of containers of type identified by `containerTypeId`.
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Application|FileStorageContainer.Selected|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Application                            | FileStorageContainer.Selected               |
 
 ## HTTP request
 
@@ -35,14 +35,14 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-GET /storage/fileStorage/containers/{id}/sharePointGroups
+GET /storage/fileStorage/containers/{containerId}/sharePointGroups
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 No request body is supplied for this api.
@@ -106,18 +106,20 @@ The following example shows a sample response containing the collection of Share
 -->
 ``` http
 HTTP/1.1 200 OK
-[
+{
+  "value": [
     {
-        "id" : "4",
-        "title": "Sample Group",
-        "description": "This is sample description"
+      "id": "7",
+      "title": "sampleTitle1",
+      "description": "sampleDescription1"
     },
     {
-        "id" : "5",
-        "title": "Sample Group 2",
-        "description": "This is sample description for group 2"
+      "id": "9",
+      "title": "sampleTitle2",
+      "description": "sampleDescription2"
     }
-]
+  ]
+}
 ```
 
 ## Example 2 : Attempt to retrieve all the existing SharePointGroups that are local to a container. The container has no SharePointGroups

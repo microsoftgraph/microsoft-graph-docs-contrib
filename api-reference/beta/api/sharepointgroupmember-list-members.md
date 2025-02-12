@@ -22,11 +22,11 @@ Lists a [sharePointGroupMember](../resources/sharepointgroupmember.md) objects f
 
 ## Permissions
 
-This api only supports application only permissions.
+Applications calling this API must have permissions to add containers permissions of containers of type identified by `containerTypeId`.
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Application|FileStorageContainer.Selected|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Application                            | FileStorageContainer.Selected               |
 
 ## HTTP request
 
@@ -35,14 +35,15 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-GET /storage/fileStorage/containers/{id}/sharePointGroups/{sharePointGroupId}/members
+GET /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json. Required. |
 
 ## Request body
 No request body is supplied to this api.
@@ -108,28 +109,26 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-[
+{
+  "value": [
     {
-        "id" : "dsfadjlfaksdjfswerasdfw",
-        "identity":
-        {
-            "user":
-            {
-                "displayName: "User 0",
-                "email" : "user0@contoso.com"
-            }
+      "id": "aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ",
+      "identity": {
+        "user": {
+        "displayName": "TestUser",
+        "email": TestUser@testTenant.onmicrosoft.com
         }
+      }
     },
     {
-        "id" : "wrawsdjfafjasdjflasjdfalsd",
-        "identity":
-        {
-            "user":
-            {
-                "displayName: "User 1",
-                "email" : "user1@contoso.com"
-            }
+      "id": "YzowdC5jfHRlbmFudHxiODg5YmFkMy1lMTBlLTQ5M2MtYWY3MC1mMDdlZGJkMDcyZWM",
+      "identity": {
+        "user": {
+        "displayName": "TestUser2",
+        "email": TestUser2@testTenant.onmicrosoft.com
         }
+      }
     }
-]
+  ]
+}
 ```

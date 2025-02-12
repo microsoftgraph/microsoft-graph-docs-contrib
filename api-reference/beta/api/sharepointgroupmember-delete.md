@@ -24,9 +24,11 @@ A **sharePointGroupMember** object is deleted from a **sharePointGroup** by invo
 
 This api only supports application only permissions.
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Application|FileStorageContainer.Selected|
+Applications calling this API must have permissions to add containers permissions of containers of type identified by `containerTypeId`.
+
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Application                            | FileStorageContainer.Selected               |
 
 ## HTTP request
 
@@ -35,14 +37,15 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containers/{id}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
+DELETE /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type   | application/json. Required. |
 
 ## Request body
 No request body is supplied to this api.

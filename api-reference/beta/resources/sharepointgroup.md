@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cohort or group of users localized to a SharePointEmbedded container or a SharePoint site.
-
+The **sharePointGroup** resource represents a group of users or m365 groups that is local to the container or site.
 
 ## Methods
 |Method|Return type|Description|
@@ -31,7 +30,7 @@ Represents a cohort or group of users localized to a SharePointEmbedded containe
 |:---|:---|:---|
 |description|String|Provides a user-visible description of the **sharePointGroup**. Read-write.|
 |id|String|The unique stable identifier of the **sharePointGroup**. This id is unique only within the context of a gingle SharePointEmbedded container or SharePoint site. Read-only.|
-|members|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Collection of the members in the  **sharePointGroup**. Read-write.|
+|members|[sharePointGroupMember](../resources/sharepointgroupmember.md) collection|Collection of the members in the  **sharePointGroup**. Read-write.|
 |title|String|Provides a user-visible title of the **sharePointGroup**. Read-write.|
 
 ## Relationships

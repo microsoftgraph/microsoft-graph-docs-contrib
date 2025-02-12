@@ -22,11 +22,11 @@ A **sharePointGroupMember** object is created by invoking this api.
 
 ## Permissions
 
-This api only supports application only permissions.
+Applications calling this API must have permissions to add containers permissions of containers of type identified by `containerTypeId`.
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Application|FileStorageContainer.Selected|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Application                            | FileStorageContainer.Selected               |
 
 ## HTTP request
 
@@ -35,21 +35,29 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-POST /storage/fileStorage/containers/{id}/sharePointGroups/members
+POST /storage/fileStorage/containers/{containerId}/sharePointGroups/members
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json. Required. |
 
 ## Request body
-In the request body, supply the values for the identity of the **sharePointGroupMember**
+
+In the request body, supply a JSON representation of the [sharePointGroupMember](../resources/sharepointgroupmember) resource  that includes a [sharePointIdentitySet](../resources/sharepointidentityset.md) to refer to the identity that is to be added to the [sharePointGroup](../resources/sharepointgroup).
+
+Said `sharePointIdentitySet` may only contain one and only one of "user" or "group". 
+
+If the `sharePointIdentitySet` contains "user", it should have one and only one of "id" or "upn" to refer to the user identity.
+
+If the `sharePointIdentitySet` contains "group", it should have one and only one of "id" or "email" to refer to the group identity. This group identity can only refer to an m365 group.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|identity|"microsoft.graph.sharePointIdentitySet"|The identity of the **sharePointGroupMember**. Required.|
+|identity|{"@odata.type": "microsoft.graph.sharePointIdentitySet"}|The identity of the **sharePointGroupMember**. Required.|
 
 ## Response
 
@@ -122,14 +130,12 @@ The following example shows a sample response with a json object representing th
 ``` http
 HTTP/1.1 201 Created
 {
-    "id" : "dsfadjlfaksdjfswerasdfw",
-    "identity":
-    {
-        "user":
-        {
-            "displayName: "User 0",
-            "email" : "user0@contoso.com"
-        }
+  "id": "aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ",
+  "identity": {
+    "user": {
+      "displayName": "TestUser",
+      "email": TestUser@testTenant.onmicrosoft.com
+      }
     }
 }
 ```

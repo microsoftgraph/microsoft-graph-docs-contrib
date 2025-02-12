@@ -28,7 +28,7 @@ Represents a user within a SharePoint group.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique stable identifier of the **sharePointGroup**. Read-only.|
-|identity|[sharePointIdentitySet](../resources/sharepointidentityset.md)|The details of the user. Read-only.|
+|identity|[sharePointIdentitySet](../resources/sharepointidentityset.md)|The identity that the sharePointGroupMember object represents. |
 
 
 ## JSON representation
@@ -44,6 +44,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.sharePointGroupMember",
   "id": "string (identifier)",
-  "identity": "microsoft.graph.sharePointIdentitySet",
+  "identity": {"@odata.type": "microsoft.graph.sharePointIdentitySet"},
 }
 ```

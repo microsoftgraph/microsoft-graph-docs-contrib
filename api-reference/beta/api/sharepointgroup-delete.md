@@ -1,6 +1,6 @@
 ---
 title: "sharePointGroup: delete"
-description: "De;ete a sharePointGroup object."
+description: "Delete a sharePointGroup object."
 author: "tmarwendo-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -22,11 +22,11 @@ A **sharePointGroup** object is deleted by invoking this api.
 
 ## Permissions
 
-This api only supports application only permissions.
+Applications calling this API must have permissions to delete containers permissions of containers of type identified by `containerTypeId`.
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Application|FileStorageContainer.Selected|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Application                            | FileStorageContainer.Selected               |
 
 ## HTTP request
 
@@ -35,7 +35,7 @@ This api only supports application only permissions.
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containers/{id}/sharePointGroups/{sharePointGroupId}
+DELETE /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
 ```
 
 ## Request headers
