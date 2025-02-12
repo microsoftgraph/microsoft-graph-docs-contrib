@@ -39,6 +39,8 @@ Auditing data can be accessed through Microsoft Purview Audit Search API via the
   "blockType": "ignored"
 }
 -->
+
+# [HTTP](#tab/http)
 ``` http
 GET /security/auditLog/queries/{auditLogQueryId}
 ```
@@ -68,6 +70,7 @@ The following example shows a request.
   "name": "get_auditlogquery"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/v1.0/security/auditLog/queries/{auditLogQueryId}
 ```
