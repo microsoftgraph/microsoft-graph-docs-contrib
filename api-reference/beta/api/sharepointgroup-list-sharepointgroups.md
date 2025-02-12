@@ -1,7 +1,7 @@
 ---
 title: "sharePointGroup: list"
 description: "List sharePointGroup objects."
-author: "tmarwendo-msft"
+author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType

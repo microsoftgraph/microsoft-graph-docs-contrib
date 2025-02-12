@@ -1,7 +1,7 @@
 ---
 title: "sharePointGroup resource type"
 description: "Represents a cohort of users localized to a SharePointEmbedded container or SharePoint site."
-author: "tmarwendo-msft"
+author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType

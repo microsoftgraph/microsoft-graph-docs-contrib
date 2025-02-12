@@ -1,7 +1,7 @@
 ---
 title: "sharePointGroupMember resource type"
 description: "Represents a user within a SharePoint Group."
-author: "tmarwendo-msft"
+author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType

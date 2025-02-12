@@ -1,7 +1,7 @@
 ---
 title: "sharePointGroupMember: get"
 description: "Get a sharePointGroupMember object."
-author: "tmarwendo-msft"
+author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
