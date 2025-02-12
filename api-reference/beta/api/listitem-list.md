@@ -1,13 +1,14 @@
 ---
 author: spgraph-docs-team
 description: "Get the collection of items in a list."
-title: Retrieve items from a SharePoint list
+title: "List items"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ms.date: 04/05/2024
 ---
-# Enumerate items in a list
+
+# List items
 
 Namespace: microsoft.graph
 
@@ -35,6 +36,19 @@ GET /sites/{site-id}/lists/{list-id}/items?expand=fields
 GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
+## Optional query parameters
+
+This method supports the `$filter` and `$expand` of the [OData query parameters](/graph/query-parameters) to help customize the response. 
+
+### Using the $filter query parameter
+
+You can apply the `$filter` (`eq`, `ne`, `lt`, `gt`, `le`, `ge`, and `startswith`) query parameter to get a subset of the [listItem](../resources/listitem.md) collection. Both **listItem** properties and fields can be filtered. When filtering on indexed fields, the service can only filter one indexed field at a time.
+
+> [!NOTE]
+> Filtering works best on indexed columns.
+
+Depending on the number of items that match the filtering condition, the results are either be returned all at once or in multiple pages. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+
 ## Request headers
 
 | Name      |Description|
@@ -49,9 +63,13 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [listItem][item] objects in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Get list items with specific fields
+
+The following example shows how to get a **listItem** collection with specific fields using the `$expand` query parameter.
+
+#### Request
 
 The following example shows a request.
 
@@ -96,7 +114,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -136,33 +154,23 @@ Content-type: application/json
 }
 ```
 
-## Filtering items in a list
-Filtering can be used to retrieve a subset of the listItem collection.
-Properties of the listItem as well listItem fields can be filtered.
-If filtering on indexed fields, the service can only filter on a single indexed field at a time.
-**Note:** Filtering works best on indexed columns
+### Example 2: Get filtered list items with specific fields
 
-### Operations supported for filtering listItems in a list.
-| Operator type         | Operator                                                                                                                                         |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Equality operators    | <ul><li> Equals (`eq`) </li><li> Not equals (`ne`)</li></ul> |
-| Relational operators  | <ul><li> Less than (`lt`) </li><li> Greater than (`gt`)</li><li> Less than or equal to (`le`)</li><li> Greater than or equal to (`ge`)</li></ul> |
-| Functions             | <ul><li> Starts with (`startswith`) </li></ul>    |
+The following example shows how to get a **listItem** collection filtered by the **Quantity** field with specific fields using the `$expand` query parameter.
 
-#### Filtering on large lists
-Depending on the number of items that match the filtering condition, the results either be returned all at once or in a paged manner.
-Paged results typically occur for large lists where a large number of items match the filtering conditions.
-The service goes through all items in the list in a increments (sliding window) and returns the set of listItems that match the filter condition along with a `@odata.nextLink`.
-If an empty result is returned, there are no items within the current increment of items the service is handling that matches the filter condition.
-If a `@odata.nextLink` URL is returned, there are more pages of data to retrieve in the session, even if the current response contains an empty result. 
+#### Request
 
-### Example
+The following example shows a request.
+
 <!-- { "blockType": "request", "name": "get-list-items-with-filter", "scopes": "sites.read.all" } -->
 ```http
-GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)&$filter=fields/Quantity lt 600
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)&$filter=fields/Quantity lt 600
 ```
 
-### Response
+#### Response
+
+The following example shows the response.
+
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
 ```http
