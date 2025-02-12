@@ -59,12 +59,15 @@ If successful, this method returns a `200 OK` response code and a [auditLogQuery
 
 ### Request
 The following example shows a request.
-
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_auditlogquery"
 }
 -->
+``` http
+GET https://graph.microsoft.com/beta/security/auditLog/queries/{auditLogQueryId}
+```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-auditlogquery-csharp-snippets.md)]
