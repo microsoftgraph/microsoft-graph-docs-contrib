@@ -1,6 +1,6 @@
 ---
 title: "networkAccessSecurityControl resource type"
-description: "Session control to link to Global Secure Access security profiles or filtering profiles."
+description: "Session control to link to Global Secure Access filtering profile."
 ms.localizationpriority: medium
 author: "fgomulka"
 ms.subservice: "entra-global-secure-access"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to link to Global Secure Access filtering profiles. Duplicate of globalSecureAccessFilteringProfileSecurityControl. Inherits from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
+Session control to link to Global Secure Access filtering profile. Duplicate of globalSecureAccessFilteringProfileSecurityControl. Inherits from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
 
 ## Properties
 
@@ -34,3 +34,8 @@ The following JSON representation shows the resource type.
 }
 -->
 ``` json
+{
+  "@odata.type": "#microsoft.graph.networkAccessSessionControl",
+  "isEnabled": "Boolean"
+}
+```
