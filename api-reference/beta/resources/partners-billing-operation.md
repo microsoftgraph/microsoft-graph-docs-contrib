@@ -1,5 +1,5 @@
 ---
-title: "billing operation resource type"
+title: "operation resource type"
 description: "Represents an operation to export the billing data of a partner."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 05/23/2024
 ---
 
-# billing operation resource type
+# operation resource type
 
 Namespace: microsoft.graph.partners.billing
 
