@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "airPrintSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [airPrintSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-airPrintSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the [airPrintSettings](https://learn.microsoft.com/en-us/graph/api/resources/airPrintSettings?view=graph-rest-1.0) resource.",
           "Target": "airPrintSettings"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerDiscoverySettings",
           "ChangeType": "Addition",
-          "Description": "Added the [printerDiscoverySettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-printerDiscoverySettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the [printerDiscoverySettings](https://learn.microsoft.com/en-us/graph/api/resources/printerDiscoverySettings?view=graph-rest-1.0) resource.",
           "Target": "printerDiscoverySettings"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "printerDiscoverySettings",
           "ChangeType": "Addition",
-          "Description": "Added the **printerDiscoverySettings** property to the [printSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-printSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the **printerDiscoverySettings** property to the [printSettings](https://learn.microsoft.com/en-us/graph/api/resources/printSettings?view=graph-rest-1.0) resource.",
           "Target": "printSettings"
         }
       ],
