@@ -58,7 +58,7 @@ Contains metadata for email messages that are analyzed for security threats.
 |timelineEvents|[microsoft.graph.security.timelineEvent](../resources/security-timelineevent.md) collection|Delivery and post-delivery events that happened to the email.|
 |threatDetectionDetails|[microsoft.graph.security.threatDetectionDetail](../resources/security-threatdetectiondetail.md) collection|Information about threats detected in the email.|
 |primaryOverrideSource|String|Shows the organization or user setting that altered the intended delivery location of the message (allowed instead of blocked, or blocked instead of allowed).|
-|inboundConnectorFormattedName|String|Custom instructions name that define organizational mail flow and how the email was routed|
+|inboundConnectorFormattedName|String|Custom instructions name that defines organizational mail flow and how the email was routed.|
 |policyType|String|Type of policy configured that defines the delivery action on email|
 |clientType|String|Shows the type of client that sent the message (for example, REST)|
 |dlpRules|[microsoft.graph.security.analyzedEmailDlpRuleInfo](../resources/security-analyzedemaildlpruleinfo.md) collection|Data loss prevention rules configured in purview|
