@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Represents tenant-wide settings to configure the behavior of printers when print jobs are submitted to Universal Print from macOS, which requires AirPrint compatibility.
 
 > [!NOTE]
-> Credit notice: **AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.
+> **AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.
 
 ## Properties
 |Property|Type|Description|
