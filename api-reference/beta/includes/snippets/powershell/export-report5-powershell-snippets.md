@@ -11,6 +11,8 @@ $params = @{
 	exportCriteria = "partiallyIndexed"
 	exportLocation = "responsiveLocations"
 	additionalOptions = "cloudAttachments"
+	cloudAttachmentVersion = "all"
+	doucmentVersion = "recent100"
 }
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params

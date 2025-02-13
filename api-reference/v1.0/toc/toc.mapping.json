@@ -182,6 +182,7 @@
         "Outlook",
         "Outlook calendar"
       ],
+      "overview": "../../resources/calendar-overview.md",
       "resources": [
         "calendar",
         "event",
@@ -1449,6 +1450,9 @@
             "microsoft.graph.security.alert",
             "microsoft.graph.security.alertEvidence",
             "microsoft.graph.security.incident"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.teamsMessageEvidence"
           ]
         },
         {
@@ -1894,6 +1898,7 @@
         {
           "name": "Shift management",
           "resources": [
+            "dayNote",
             "offerShiftRequest",
             "openShift",
             "openShiftChangeRequest",
@@ -1902,6 +1907,7 @@
             "shift",
             "shiftPreferences",
             "swapShiftsChangeRequest",
+            "timeCard",
             "timeOff",
             "timeOffReason",
             "timeOffRequest",
@@ -1909,8 +1915,10 @@
             "workingTimeSchedule"
           ],
           "complexTypes": [
+            "geoCoordinates",
             "identity",
             "identitySet",
+            "itemBody",
             "openShiftItem",
             "patternedRecurrence",
             "recurrencePattern",
@@ -1918,6 +1926,10 @@
             "shiftActivity",
             "shiftAvailability",
             "shiftItem",
+            "timeCardBreak",
+            "timeCardEntry",
+            "timeCardEvent",
+            "timeClockSettings",
             "timeOffItem",
             "timeRange",
             "userSolutionRoot",

@@ -1192,6 +1192,7 @@ Possible types of Windows settings.
 | openShiftRequest |
 | offerShiftRequest |
 | unknownFutureValue |
+| timeCard |
 | timeOffReason |
 | timeOff |
 | timeOffRequest |
@@ -3431,4 +3432,22 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |deviceCodeFlow|
 |authenticationTransfer|
+|unknownFutureValue|
+
+### confirmedBy values 
+
+|Member|
+|:---|
+|none|
+|user|
+|manager|
+|unknownFutureValue|
+
+### timeCardState values 
+
+|Member|
+|:---|
+|clockedIn|
+|onBreak|
+|clockedOut|
 |unknownFutureValue|

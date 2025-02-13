@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "DanluCui"
 ms.subservice: "planner"
 doc_type: apiPageType
-ms.date: 01/15/2025
+ms.date: 01/29/2025
 ---
 
 # List plans
@@ -29,6 +29,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /teams/{team-id}/channels/{channel-id}/planner/plans
 ```
+
+### Optional query parameters
+
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -113,4 +117,3 @@ Content-type: application/json
   ]
 }
 -->
-

@@ -3,6 +3,162 @@
     {
       "ChangeList": [
         {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingLiveShareOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingLiveShareOptions** enumeration type.",
+          "Target": "meetingLiveShareOptions"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowBreakoutRooms",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowBreakoutRooms** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowLiveShare",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowLiveShare** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPowerPointSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPowerPointSharing** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowWhiteboard",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowWhiteboard** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowBreakoutRooms",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowBreakoutRooms** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowLiveShare",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowLiveShare** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPowerPointSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPowerPointSharing** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowWhiteboard",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowWhiteboard** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowBreakoutRooms",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowBreakoutRooms** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowLiveShare",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowLiveShare** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPowerPointSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPowerPointSharing** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowWhiteboard",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowWhiteboard** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-28T04:07:42.7434446Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b38cf417-78db-49da-a2b0-15db5d94e784",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "allowedLobbyAdmitterRoles",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedLobbyAdmitterRoles** enumeration type.",
+          "Target": "allowedLobbyAdmitterRoles"
+        },
+        {
+          "Id": "b38cf417-78db-49da-a2b0-15db5d94e784",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedLobbyAdmitters",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedLobbyAdmitters** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "b38cf417-78db-49da-a2b0-15db5d94e784",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedLobbyAdmitters",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedLobbyAdmitters** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "b38cf417-78db-49da-a2b0-15db5d94e784",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedLobbyAdmitters",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedLobbyAdmitters** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "b38cf417-78db-49da-a2b0-15db5d94e784",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-28T19:34:07.3297702Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7ef7a8a7-bb6f-4c4f-b594-42a90d00b41f",
           "ApiChange": "Resource",
           "ChangedApiName": "chatRestrictions",
@@ -101,14 +257,46 @@
           "ChangeType": "Addition",
           "Description": "Added the **allowTranscription** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
           "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowRecording** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowTranscription",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowTranscription** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowRecording** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowTranscription",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowTranscription** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
         }
       ],
       "Id": "e9108fde-6bae-4b24-a1ab-993bb6f9ac23",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-01-15T20:42:00.4091409Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -149,8 +337,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-01-10T20:21:16.9977147Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [

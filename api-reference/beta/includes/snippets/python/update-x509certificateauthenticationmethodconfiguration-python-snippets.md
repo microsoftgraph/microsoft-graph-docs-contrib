@@ -54,6 +54,13 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 			is_registration_required = False,
 		),
 	],
+	additional_data = {
+			"crl_validation_configuration" : {
+					"state" : "disabled",
+					"exempted_certificate_authorities_subject_key_identifiers" : [
+					],
+			},
+	}
 )
 
 result = await graph_client.policies.authentication_methods_policy.authentication_method_configurations.by_authentication_method_configuration_id('authenticationMethodConfiguration-id').patch(request_body)

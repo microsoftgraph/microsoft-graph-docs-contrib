@@ -16,6 +16,10 @@ $requestBody = new TimeOffReason();
 $requestBody->setDisplayName('Vacation');
 $requestBody->setIconType(new TimeOffReasonIconType('plane'));
 $requestBody->setIsActive(true);
+$additionalData = [
+	'code' => 'VacationCode',
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timeOffReasons()->post($requestBody)->wait();
 
