@@ -46,12 +46,12 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|apiVersion|Int32|API version for the call back URL. Start with 1.|
+|apiVersion|Int32|API version for the callback URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
 |eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| Support to view eligibility-filtered results. Possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
 |encryption|[workforceIntegrationEncryption](../resources/workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts call back to the provided URL when client changes occur to the entities specified in this property. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openShift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`, `timeOff`, `timeOffRequest`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason` , `timeOff` , `timeOffRequest`.|
+|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts call the provided URL when client changes occur to the entities specified in this property. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openShift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason` , `timeOff` , `timeOffRequest`.|
 |url|String| Workforce integration URL for callbacks from the Shifts service.|
 
 ## Response
@@ -153,7 +153,7 @@ Content-type: application/json
 }
 ```
 
-## Examples Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility
+## Examples use cases of WorkforceIntegration entity for Eligibility Filtering by workforce management system (WFM) rules
 
 ### Use case: Replace an existing WorkforceIntegration to enable SwapRequest for eligibility filtering
 
@@ -195,10 +195,10 @@ Content-type: application/json
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-To see how to create a new workforceintegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).
+To see how to create a new workforceIntegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).
 
 ## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
-The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
+The interaction between Shifts app and workforce integration endpoints  follow the existing pattern.
 
 ### Request
 
@@ -218,20 +218,15 @@ Accept-Language: en-us
 ```
 ### Response
 
-The following is an example of the response from the workforce integration service.
+The following example shows the response from the workforce integration service.
 ```
 HTTP/1.1 200 OK
 {
   "responses": [
-  {
-    "body": {
-      "SHFT_6548f642-cbc1-4228-8621-054327576457",
-      "SHFT_6548f642-cbc1-4228-8621-054327571234"
-  }
     "id": "{shiftId}",
     "status: 200,
     "body": {
-       "data": [{ShiftId}, {ShiftId}...]
+       "data": [{shiftId}, {shiftId}...]
        "error": null
     }
   ]

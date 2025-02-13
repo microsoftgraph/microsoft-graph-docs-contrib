@@ -335,7 +335,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 5: Enable default user role to use Self-Serve Password Reset feature
+### Example 5: Enable administrators to use the self-serve password reset feature
 
 #### Request
 

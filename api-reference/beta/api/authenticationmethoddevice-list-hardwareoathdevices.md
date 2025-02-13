@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 [!INCLUDE [sample-code](../includes/snippets/php/list-hardwareoathtokenauthenticationmethoddevice-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-hardwareoathtokenauthenticationmethoddevice-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-hardwareoathtokenauthenticationmethoddevice-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -199,6 +203,10 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 [!INCLUDE [sample-code](../includes/snippets/php/list-hardwareoathtokenauthenticationmethoddevice-filter-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-hardwareoathtokenauthenticationmethoddevice-filter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-hardwareoathtokenauthenticationmethoddevice-filter-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -281,6 +289,10 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

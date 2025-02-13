@@ -19,6 +19,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 |---|---|---|
 | Cloud printing [printer][] | Changes when a print job is ready to be downloaded (jobFetchable event): `/print/printers/{id}/jobs` | - |
 | Cloud printing [printTaskDefinition][] | Changes when there's a valid job in the queue (jobStarted event): `/print/printtaskdefinition/{id}/tasks` | - |
+| Copilot [aiInteraction][] | Copilot AI interactions that a particular user is part of: `copilot/users/{userId}/interactionHistory/getAllEnterpriseInteractions` <br><br> Copilot AI interactions in an organization: `copilot/interactionHistory/getAllEnterpriseInteractions` | Maximum subscription quotas: <li> Per app and tenant combination (for subscriptions tracking AI interactions across a tenant): 1 <li> Per app and user combination (for subscriptions tracking AI interactions a particular user is part of): 1 <li> Per user (for subscriptions tracking AI interactions a particular user is part of): 10 subscriptions. <li> Per organization: 10,000 total subscriptions. |
 | [driveItem][] on OneDrive (personal) | Changes to content within the hierarchy of _any folder_: `/users/{id}/drive/root` | - |
 | [driveItem][] on OneDrive for work or school | Changes to content within the hierarchy of the _root folder_: `/drives/{id}/root` , `/users/{id}/drive/root` | - |
 | [group][] | Changes to all groups: `/groups`  <br><br> Changes to a specific group: `/groups/{id}` <br><br> Changes to owners of a specific group:  `/groups/{id}/owners` <br><br> Changes to members of a specific group: `/groups/{id}/members` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1,000 total subscriptions across all apps. <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>**NOTE:** Creation and soft-deletion of groups also trigger the `updated` **changeType**. |
@@ -52,6 +53,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 
 Some of these resources support rich notifications (notifications with resource data). For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
 
+[aiInteraction]: /graph/api/resources/aiinteraction
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [contact]: /graph/api/resources/contact

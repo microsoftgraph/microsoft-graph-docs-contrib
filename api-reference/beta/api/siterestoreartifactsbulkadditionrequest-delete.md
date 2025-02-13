@@ -92,6 +92,10 @@ DELETE https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestor
 [!INCLUDE [sample-code](../includes/snippets/php/delete-siterestoreartifactsbulkadditionrequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-siterestoreartifactsbulkadditionrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-siterestoreartifactsbulkadditionrequest-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

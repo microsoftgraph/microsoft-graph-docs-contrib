@@ -3,7 +3,7 @@ title: "contentApprovalRule resource type"
 description: "Represents a rule for governing the automatic creation of content approvals."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 08/31/2024
 ---
