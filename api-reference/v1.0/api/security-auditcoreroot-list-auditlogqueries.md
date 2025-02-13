@@ -16,7 +16,7 @@ Get a list of [auditLogQuery](../resources/security-auditlogquery.md) objects an
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/graph/security-authorization).
+Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](../includes/permissions/security-auditcoreroot-list-auditlogqueries-permissions.md).
 
 <!-- {
   "blockType": "ignored"
