@@ -12,8 +12,6 @@ ms.date: 02/12/2025
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents tenant-wide printer discovery settings for the Universal Print service.
 
 ## Properties
