@@ -945,7 +945,9 @@
         "fileStorageContainer",
         "recycleBin",
         "recycleBinItem",
-        "sharedDriveItem"
+        "sharedDriveItem",
+        "sharePointGroup",
+        "sharePointGroupMember"
       ]
     },
     {
