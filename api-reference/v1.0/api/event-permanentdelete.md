@@ -32,15 +32,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /users/{usersId}/events/{eventId}/permanentDelete
+POST /users/{id | userPrincipalName}/events/{eventId}/permanentDelete
 POST /groups/{groupsId}/events/{eventId}/permanentDelete
-POST /users/{usersId}/calendarView/{eventId}/permanentDelete
+POST /users/{id | userPrincipalName}/calendarView/{eventId}/permanentDelete
 POST /groups/{groupsId}/calendarView/{eventId}/permanentDelete
-POST /users/{usersId}/messages/{messageId}/event/permanentDelete
-POST /users/{usersId}/messages/{messageId}/event/instances/{eventId}/permanentDelete
-POST /users/{usersId}/messages/{messageId}/event/calendar/events/{eventId}/permanentDelete
-POST /users/{usersId}/messages/{messageId}/event/exceptionOccurrences/{eventId}/permanentDelete
-POST /users/{usersId}/messages/{messageId}/event/calendar/calendarView/{eventId}/permanentDelete
+POST /users/{id | userPrincipalName}/messages/{messageId}/event/permanentDelete
+POST /users/{id | userPrincipalName}/messages/{messageId}/event/instances/{eventId}/permanentDelete
+POST /users/{id | userPrincipalName}/messages/{messageId}/event/calendar/events/{eventId}/permanentDelete
+POST /users/{id | userPrincipalName}/messages/{messageId}/event/exceptionOccurrences/{eventId}/permanentDelete
+POST /users/{id | userPrincipalName}/messages/{messageId}/event/calendar/calendarView/{eventId}/permanentDelete
 ```
 
 ## Request headers

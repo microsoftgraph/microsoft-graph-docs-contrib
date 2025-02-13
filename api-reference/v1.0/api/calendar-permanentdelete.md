@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /users/{usersId}/calendar/permanentDelete
+POST /users/{id | userPrincipalName}/calendar/permanentDelete
 POST /groups/{groupsId}/calendar/permanentDelete
 ```
 

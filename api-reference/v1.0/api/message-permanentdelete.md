@@ -32,8 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /users/{usersId}/messages/{messageId}/permanentDelete
-POST /users/{usersId}/mailFolders/{mailFolderId}/messages/{messageId}/permanentDelete
+POST /users/{id | userPrincipalName}/messages/{messageId}/permanentDelete
+POST /users/{id | userPrincipalName}/mailFolders/{mailFolderId}/messages/{messageId}/permanentDelete
 ```
 
 ## Request headers
