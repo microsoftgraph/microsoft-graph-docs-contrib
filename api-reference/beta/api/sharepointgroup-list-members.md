@@ -92,7 +92,7 @@ HTTP/1.1 200 OK
       "identity": {
         "user": {
         "displayName": "TestUser",
-        "email": TestUser@testTenant.onmicrosoft.com
+        "email": "TestUser@testTenant.onmicrosoft.com"
         }
       }
     },
@@ -101,7 +101,7 @@ HTTP/1.1 200 OK
       "identity": {
         "user": {
         "displayName": "TestUser2",
-        "email": TestUser2@testTenant.onmicrosoft.com
+        "email": "TestUser2@testTenant.onmicrosoft.com"
         }
       }
     }

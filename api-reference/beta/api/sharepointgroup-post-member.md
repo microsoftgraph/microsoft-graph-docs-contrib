@@ -110,7 +110,7 @@ HTTP/1.1 201 Created
   "identity": {
     "user": {
       "displayName": "TestUser",
-      "email": TestUser@testTenant.onmicrosoft.com
+      "email": "TestUser@testTenant.onmicrosoft.com"
       }
     }
 }
