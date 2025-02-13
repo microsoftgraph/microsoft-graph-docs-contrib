@@ -567,7 +567,7 @@ Namespace: microsoft.graph.security
 | retainAsRegulatoryRecord |
 | unknownFutureValue       |
 
-## contentFormat values
+### contentFormat values
 
 | Member             |
 | :----------------- |
@@ -882,7 +882,6 @@ Namespace: microsoft.graph.security
 | spoofedAllowed |
 | reasonLostInTransit |
 | bulk |
-=======
 ### antispamTeamsDirection values
 
 | Member |
