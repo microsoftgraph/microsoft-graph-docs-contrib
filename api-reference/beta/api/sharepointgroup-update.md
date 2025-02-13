@@ -51,7 +51,7 @@ In the request body, supply the values for the updated title or updated descript
 
 |Property|Type|Description|
 |:---|:---|:---|
-|title|string|The new title of the **sharePointGroup**. The new title can't be more than 255 characters long and can't have the document library ID embedded within it. Optional.|
+|title|string|The new title of the **sharePointGroup**. The new title can't be more than 255 characters long. Optional.|
 |description|string|The new description of the **sharePointGroup**. Updated description can't be longer than 512 characters. Optional.|
 
 ## Response

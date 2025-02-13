@@ -53,7 +53,7 @@ In the request body, supply the values for the title and description of the **sh
 
 |Property|Type|Description|
 |:---|:---|:---|
-|title|string|The title of the **sharePointGroup**. The title can't be more than 255 characters long and can't have the document library GUID embedded within it. Required.|
+|title|string|The title of the **sharePointGroup**. The title can't be more than 255 characters long. Required.|
 |description|string|A user-visible description of the **sharePointGroup**. Description can't be longer than 512 characters. Optional.|
 
 ## Response
