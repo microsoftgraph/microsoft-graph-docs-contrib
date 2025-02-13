@@ -56,7 +56,7 @@ Contains metadata for email messages that are analyzed for security threats.
 |threatTypes|[microsoft.graph.security.threatType](#threattype-values) collection|Indicates the threat types. The possible values are: `unknown`, `spam`, `malware`, `phish`, `none`, `unknownFutureValue`.|
 |urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|A collection of the URLs in the email.|
 |timelineEvents|[microsoft.graph.security.timelineEvent](../resources/security-timelineevent.md) collection|Delivery and post-delivery events that happened to the email.|
-|threatDetectionDetails|[microsoft.graph.security.threatDetectionDetail](../resources/security-threatdetectiondetail.md) collection|Information about threats detected in the email|
+|threatDetectionDetails|[microsoft.graph.security.threatDetectionDetail](../resources/security-threatdetectiondetail.md) collection|Information about threats detected in the email.|
 |primaryOverrideSource|String|Shows the organization or user setting that altered the intended delivery location of the message (allowed instead of blocked, or blocked instead of allowed).|
 |inboundConnectorFormattedName|String|Custom instructions name that define organizational mail flow and how the email was routed|
 |policyType|String|Type of policy configured that defines the delivery action on email|
