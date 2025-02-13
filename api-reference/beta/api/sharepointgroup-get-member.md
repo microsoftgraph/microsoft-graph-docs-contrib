@@ -61,6 +61,7 @@ If successful, this action returns a `200 OK` response code with a json represen
 
 The following example shows a request.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -69,6 +70,8 @@ The following example shows a request.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
+Content-Type: application/json
+
 ```
 
 ---

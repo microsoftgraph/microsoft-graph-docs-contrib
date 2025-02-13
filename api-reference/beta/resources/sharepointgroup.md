@@ -20,7 +20,7 @@ The **sharePointGroup** resource represents a group of users or m365 groups that
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/sharepointgroup-list-sharepointgroups.md)|[sharePointGroup](../resources/sharepointgroup.md) collection|Get a list of the [sharePointGroup](../resources/sharepointgroup.md) objects and their properties.|
-|[Create](../api/sharepointgroup-create.md)|[sharePointGroup](../resources/sharepointgroup.md)|Create a new [sharePointGroup](../resources/sharepointgroup.md) object.|
+|[Create](../api/sharepointgroup-post.md)|[sharePointGroup](../resources/sharepointgroup.md)|Create a new [sharePointGroup](../resources/sharepointgroup.md) object.|
 |[Get](../api/sharepointgroup-get.md)|[sharePointGroup](../resources/sharepointgroup.md)|Read the properties and relationships of a [sharePointGroup](../resources/sharepointgroup.md) object.|
 |[Update](../api/sharepointgroup-update.md)|[sharePointGroup](../resources/sharepointgroup.md)|Update the properties of a [sharePointGroup](../resources/sharepointgroup.md) object.|
 |[Delete](../api/sharepointgroup-delete.md)|None|Delete a [sharePointGroup](../resources/sharepointgroup.md) object.|

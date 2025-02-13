@@ -46,6 +46,7 @@ GET /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGr
 |Name|Description|
 |:---|:---|
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json. Required. |
 
 ## Request body
 No request body is supplied for this API.
@@ -57,6 +58,7 @@ If successful, this action returns a `200 OK` response code with a json represen
 ## Example 1: Get a SharePointGroup using ID 
 The following example retrieves a SharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`.
 
+
 ### Request
 # [HTTP](#tab/http)
 <!-- {
@@ -66,6 +68,8 @@ The following example retrieves a SharePointGroup identified by `{sharePointGrou
 -->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
+Content-Type: application/json
+
 ```
 
 ---
@@ -92,6 +96,7 @@ HTTP/1.1 200 OK
 ## Example 2: Attempt to get a SharePointGroup using ID 
 The following example attempts to get a SharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`. There's no such group in the container.
 
+
 ### Request
 # [HTTP](#tab/http)
 <!-- {
@@ -101,6 +106,8 @@ The following example attempts to get a SharePointGroup identified by `{sharePoi
 -->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
+Content-Type: application/json
+
 ```
 
 ---

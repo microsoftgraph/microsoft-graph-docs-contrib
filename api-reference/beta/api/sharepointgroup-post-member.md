@@ -72,6 +72,7 @@ The following example adds a member to a sharePointGroup identified by `{sharePo
 
 ### Request
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -80,6 +81,8 @@ The following example adds a member to a sharePointGroup identified by `{sharePo
 -->
 ``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members
+Content-Type: application/json
+
 {
     "identity":
     {

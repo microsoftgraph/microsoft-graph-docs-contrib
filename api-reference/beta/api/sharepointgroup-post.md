@@ -66,6 +66,7 @@ The following example creates a new SharePointGroup under the container identifi
 
 ### Request
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -74,6 +75,8 @@ The following example creates a new SharePointGroup under the container identifi
 -->
 ``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
+Content-Type: application/json
+
 {
     "title": "Sample Group",
     "description": "This is a sample description"

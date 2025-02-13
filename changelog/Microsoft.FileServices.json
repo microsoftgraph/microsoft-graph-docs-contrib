@@ -3983,8 +3983,8 @@
           "CreatedDateTime": "2024-09-10T05:34:22.37196Z",
           "WorkloadArea": "Files",
           "SubArea": ""
-        },
-        {
+    },
+    {
       "ChangeList": [
         {
           "Id": "2c87b8f3-16e3-42ef-a9d5-d17cf01786a6",
@@ -4159,6 +4159,40 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-12-10T19:48:29.7062786Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "44e0641f-94f1-4721-94d6-e329a3e3083f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharePointGroups",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointGroups** relationship to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "44e0641f-94f1-4721-94d6-e329a3e3083f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointGroup](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroup?view=graph-rest-beta) resource.",
+          "Target": "sharePointGroup"
+        },
+        {
+          "Id": "44e0641f-94f1-4721-94d6-e329a3e3083f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointGroupMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointGroupMember](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroupMember?view=graph-rest-beta) resource.",
+          "Target": "sharePointGroupMember"
+        }
+      ],
+      "Id": "44e0641f-94f1-4721-94d6-e329a3e3083f",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-23T20:05:07.5172911Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     }

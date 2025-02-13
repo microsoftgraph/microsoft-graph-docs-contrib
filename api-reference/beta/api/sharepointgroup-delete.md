@@ -45,7 +45,8 @@ DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/{containe
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type   | application/json. Required. |
 
 ## Request body
 No request body should be supplied.
@@ -57,15 +58,17 @@ If successful, this action returns a `204 No Content` response.
 ## Example 1: Delete a SharePointGroup
 The following example deletes a SharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`.
 
+
 ### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_sharepointgroup"
+  "name": "delete_sharepointgroup1"
 }
 -->
 ``` http
 DELETE /storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
+Content-Type: application/json
 
 ```
 
@@ -88,15 +91,18 @@ HTTP/1.1 204 No Content
 
 The following example attempts to delete a SharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`. There's no such group in the container.
 
+
 ### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_sharepointgroup"
+  "name": "delete_sharepointgroup2"
 }
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/11
+Content-Type: application/json
+
 ```
 
 ---

@@ -64,6 +64,7 @@ If successful, this action returns a `200 OK` response code with a json represen
 
 The following example shows a request.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -72,6 +73,8 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
+Content-Type: application/json
+
 {
     "title" : "This is the new group title",
     "description": "Updated group description"
