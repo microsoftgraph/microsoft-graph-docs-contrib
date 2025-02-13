@@ -167,7 +167,7 @@ items:
       - name: Attack simulation training user coverage
         href: ../../resources/attacksimulationtrainingusercoverage.md
       - name: Get training coverage for users
-        href: ../../api/securityreportsroot-getattacksimulationtrainingusercoverage.md 
+        href: ../../api/securityreportsroot-getattacksimulationtrainingusercoverage.md
 - name: eDiscovery
   items:
   - name: Overview
