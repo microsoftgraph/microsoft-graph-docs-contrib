@@ -19,6 +19,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2025: New and generally available 
 
+### Security | eDiscovery
+
+- Enabled **contentQuery** as a supported parameter for the [update](/graph/api/security-ediscoveryholdpolicy-update) operation of the [ediscoveryHoldPolicy](/graph/api/resources/security-ediscoveryholdpolicy) resource.
+- [Delete](/graph/api/security-ediscoveryholdpolicy-delete-usersources) a [userSource](/graph/api/resources/ediscovery-usersource).
+- [Delete](/graph/api/security-ediscoveryholdpolicy-delete-sitesources) a [siteSource](/graph/api/resources/ediscovery-sitesource).
+
 ### Teamwork and communications | Calls and online meetings
 
 [Fetch the recording of a Teams live event](/graph/api/onlinemeeting-get#example-6-fetch-the-recording-of-a-teams-live-event-deprecated).
@@ -35,9 +41,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - [Update](/graph/api/protectionrulebase-update?view=graph-rest-beta&preserve-view=true) a [driveProtectionRule](/graph/api/resources/driveprotectionrule?view=graph-rest-beta&preserve-view=true) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule?view=graph-rest-beta&preserve-view=true).
 - [Delete and unprotect](/graph/api/protectionrulebase-deleteandunprotect?view=graph-rest-beta&preserve-view=true) all the artifacts protected by a dynamic rule in a [driveProtectionRule](/graph/api/resources/driveprotectionrule?view=graph-rest-beta&preserve-view=true) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule?view=graph-rest-beta&preserve-view=true).
 
-### Compliance | eDiscovery
+### Security | eDiscovery
 
-Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, **additionalDataOptions**, and **statisticsOptions** as supported properties and parameters across various resources and actions of the eDiscovery API.
+- Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, **additionalDataOptions**, and **statisticsOptions** as supported properties and parameters across various resources and actions of the eDiscovery API.
+- Enabled **contentQuery** as a supported parameter for the [update](/graph/api/security-ediscoveryholdpolicy-update?view=graph-rest-beta&preserve-view=true) operation of the [ediscoveryHoldPolicy](/graph/api/resources/security-ediscoveryholdpolicy?view=graph-rest-beta&preserve-view=true) resource.
+- [Delete](/graph/api/security-ediscoveryholdpolicy-delete-usersources?view=graph-rest-beta&preserve-view=true) a [userSource](/graph/api/resources/ediscovery-usersource?view=graph-rest-beta&preserve-view=true).
+- [Delete](/graph/api/security-ediscoveryholdpolicy-delete-sitesources?view=graph-rest-beta&preserve-view=true) a [siteSource](/graph/api/resources/ediscovery-sitesource?view=graph-rest-beta&preserve-view=true).
+- [Delete](/graph/api/security-ediscoverycustodian-delete-usersources?view=graph-rest-beta&preserve-view=true) a [userSource](/graph/api/resources/ediscovery-usersource?view=graph-rest-beta&preserve-view=true).
+- [Delete](/graph/api/security-ediscoverycustodian-delete-sitesources?view=graph-rest-beta&preserve-view=true) a [siteSource](/graph/api/resources/ediscovery-sitesource?view=graph-rest-beta&preserve-view=true).
+- [Delete](/graph/api/security-ediscoverycustodian-delete-unifiedgroupsources?view=graph-rest-beta&preserve-view=true) a [unifiedGroupSource](/graph/api/resources/ediscovery-unifiedgroupsource?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Identity and sign-in
 
