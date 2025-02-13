@@ -37,13 +37,7 @@ The following JSON representation shows the resource type.
 }-->
 ```json
 {
-  "documentConversionEnabled": true,
-  "printerDiscoverySettings": {
-    "@odata.type": "microsoft.graph.printerDiscoverySettings"
-  }
+  "documentConversionEnabled": "Boolean",
+  "printerDiscoverySettings": {"@odata.type": "microsoft.graph.printerDiscoverySettings"}
 }
 ```
-
-## Credit notice
-
-**AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.
