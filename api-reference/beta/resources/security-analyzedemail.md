@@ -61,7 +61,7 @@ Contains metadata for email messages that are analyzed for security threats.
 |inboundConnectorFormattedName|String|Custom instructions name that defines organizational mail flow and how the email was routed.|
 |policyType|String|Type of policy configured that defines the delivery action on email.|
 |clientType|String|Shows the type of client that sent the message (for example, REST).|
-|dlpRules|[microsoft.graph.security.analyzedEmailDlpRuleInfo](../resources/security-analyzedemaildlpruleinfo.md) collection|Data loss prevention rules configured in purview|
+|dlpRules|[microsoft.graph.security.analyzedEmailDlpRuleInfo](../resources/security-analyzedemaildlpruleinfo.md) collection|Data loss prevention rules configured in purview.|
 |forwardingDetail|String|Email smtp forwarding details|
 |recipientDetail|[microsoft.graph.security.analyzedEmailRecipientDetail](../resources/security-analyzedemailrecipientdetail.md)|Details of the recipients|
 
