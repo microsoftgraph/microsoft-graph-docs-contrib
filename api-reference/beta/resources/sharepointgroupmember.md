@@ -19,10 +19,10 @@ Represents a user within a SharePoint group.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/sharepointgroupmember-list-members.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md) collection|Get a list of the [sharePointGroupMember](../resources/sharepointgroupmember.md) objects and their properties.|
+|[List](../api/sharepointgroup-list-members.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md) collection|Get a list of the [sharePointGroupMember](../resources/sharepointgroupmember.md) objects and their properties.|
 |[Create](../api/sharepointgroup-post-member.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object.|
-|[Get](../api/sharepointgroupmember-get.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Read the properties of a [sharePointGroupMember](../resources/sharepointgroupmember.md) object.|
-|[Delete](../api/sharepointgroupmember-delete.md)|None|Delete a [sharePointGroupMember](../resources/sharepointgroupmember.md) object.|
+|[Get](../api/sharepointgroup-get-member.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Read the properties of a [sharePointGroupMember](../resources/sharepointgroupmember.md) object.|
+|[Delete](../api/sharepointgroup-delete-member.md)|None|Delete a [sharePointGroupMember](../resources/sharepointgroupmember.md) object.|
 
 ## Properties
 |Property|Type|Description|
