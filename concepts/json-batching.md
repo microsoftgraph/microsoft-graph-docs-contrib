@@ -23,7 +23,7 @@ In this article, we explore the basics of JSON batching, how it works, and how y
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/tzWGOp8zYh8]
 
-## Scenario
+## Example scenario
 
 Consider a client that wants to compose a view of the following unrelated data:
 
@@ -40,21 +40,25 @@ To create a batch request:
 1. Specify the request HTTP method as **POST**.
 1. Specify the URL endpoint, whether it targets the `v1.0` or `beta` version of Microsoft Graph, and append the `$batch` segment to the URL. That is, `https://graph.microsoft.com/v1.0/$batch`.
 1. Define the batch request body as follows:
-  1. A JSON batch request body consists of a single JSON object with one required property: **requests**. The **requests** property is a collection of individual requests.
-  2. For each individual request, the following properties can be passed.
+    1. A JSON batch request body consists of a single JSON object with one required property: **requests**. This property is a collection of individual requests.
+    2. For each individual request, the following properties can be passed.
 
-  | Property | Description |
-  |----------|-------------|
-  | id       | Required. String. A correlation value to associate individual responses with requests. This value allows the server to process requests in the batch in the most efficient order. Not case-sensitive. Must be unique in the batch, otherwise, the batch request fails with a `400` error code. |
-  | method   | Required. The HTTP method supported for the request specified in **url**.    |
-  | url      | Required. The relative resource URL for the individual request. Therefore, while the absolute URL is `https://graph.microsoft.com/v1.0/users`, this url is `/users`. |
-  | headers   | Optional but required when the **body** is specified. A JSON object with the key/value pair for the headers. For example, when the **ConsistencyLevel** header is required, this property is represented as `"headers": {"ConsistencyLevel": "eventual"}`. When the **body** is supplied, a **Content-Type** header must be included.    |
-  | body   | Optional. Might be a JSON object or a base64 URL-encoded value, for example, when the body is an image. When a **body** is included with the request, the **headers** object must contain a value for **Content-Type**. |
+    | Property | Description |
+    |----------|-------------|
+    | id       | Required. String. A correlation value to associate individual responses with requests. This value allows the server to process requests in the batch in the most efficient order. Not case-sensitive. Must be unique in the batch, otherwise, the batch request fails with a `400` error code. |
+    | method   | Required. The HTTP method supported for the request specified in **url**.    |
+    | url      | Required. The relative resource URL for the individual request. Therefore, while the absolute URL is `https://graph.microsoft.com/v1.0/users`, this url is `/users`. |
+    | headers   | Optional but required when the **body** is specified. A JSON object with the key/value pair for the headers. For example, when the **ConsistencyLevel** header is required, this property is represented as `"headers": {"ConsistencyLevel": "eventual"}`. When the **body** is supplied, a **Content-Type** header must be included.    |
+    | body   | Optional. Might be a JSON object or a base64 URL-encoded value, for example, when the body is an image. When a **body** is included with the request, the **headers** object must contain a value for **Content-Type**. |
 
 ### Example JSON batch request
 
 In this example scenario, you construct the JSON batch request. The individual requests aren't interdependent and therefore can be placed into the batch request in any order.
 
+<!-- {
+  "blockType": "request",
+  "name": "json-batching-example-request"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/$batch
 Accept: application/json
@@ -228,7 +232,7 @@ Content-Type: application/json
 }
 ```
 
-### Explanation of individual responses in the batch response
+### Explanation of individual responses in the example batch response
 
 - Requests 1 and 5 succeeded as shown by the `200` status code.
 - Requests 2 and 3 failed with a `403` status code because the caller didn't have the required permissions.
