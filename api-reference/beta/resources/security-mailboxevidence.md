@@ -23,7 +23,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:---|:---|:---|
 |displayName|String|The name associated with the mailbox.|
 |primaryAddress|String|The primary email address of the mailbox.|
-|upn|String|The mailbox's UPN.|
+|upn|String|The user principal name of the mailbox.|
 |userAccount|[microsoft.graph.security.userAccount](../resources/security-useraccount.md)|The user account of the mailbox.|
 
 ## Relationships
