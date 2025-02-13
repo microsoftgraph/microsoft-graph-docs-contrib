@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /users/{id | userPrincipalName}/calendar/permanentDelete
+POST /users/{usersId}/calendar/permanentDelete
 POST /groups/{groupsId}/calendar/permanentDelete
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/users/fredsm@contoso.com/calendar/permanentDelete
+POST https://graph.microsoft.com/v1.0/users/bob@contoso.com/calendar/permanentDelete
 ```
 
 ### Response

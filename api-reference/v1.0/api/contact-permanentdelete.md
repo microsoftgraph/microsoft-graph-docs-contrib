@@ -32,8 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /users/{id | userPrincipalName}/contacts/{contactId}/permanentDelete
-POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts/{contactId}/permanentDelete
+POST /users/{usersId}/contacts/{contactId}/permanentDelete
+POST /users/{usersId}/contactFolders/{contactFolderId}/contacts/{contactId}/permanentDelete
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/users/fredsm@contoso.com/contacts/AAsdjipajdwnoiwsda=/permanentDelete
+POST https://graph.microsoft.com/v1.0/users/bob@contoso.com/contacts/AAsdjipajdwnoiwsda=/permanentDelete
 ```
 
 

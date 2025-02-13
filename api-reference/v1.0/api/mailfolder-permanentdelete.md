@@ -34,8 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /users/{id | userPrincipalName}/mailFolders/{mailFolderId}/permanentDelete
-POST /users/{id | userPrincipalName}/mailFolders/{mailFolderId}/childFolders/{mailFolderId}/permanentDelete
+POST /users/{usersId}/mailFolders/{mailFolderId}/permanentDelete
+POST /users/{usersId}/mailFolders/{mailFolderId}/childFolders/{mailFolderId}/permanentDelete
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/users/fredsm@contoso.com/mailFolders/AAsadaksdjlknsca=/permanentDelete
+POST https://graph.microsoft.com/v1.0/users/bob@contoso.com/mailFolders/AAsadaksdjlknsca=/permanentDelete
 ```
 
 
