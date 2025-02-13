@@ -1381,8 +1381,6 @@
             "microsoft.graph.partners.billing.operation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
-        }
-      ]
     },
     {
       "name": "Search",
