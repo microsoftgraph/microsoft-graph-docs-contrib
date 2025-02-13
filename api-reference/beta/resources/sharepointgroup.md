@@ -29,7 +29,7 @@ The **sharePointGroup** resource represents a group of users or m365 groups that
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Provides a user-visible description of the **sharePointGroup**. Read-write.|
-|id|String|The unique stable identifier of the **sharePointGroup**. This id is unique only within the context of a gingle SharePointEmbedded container or SharePoint site. Read-only.|
+|id|String|The unique stable identifier of the **sharePointGroup**. This ID is unique only within the context of a single SharePointEmbedded container or SharePoint site. Read-only.|
 |members|[sharePointGroupMember](../resources/sharepointgroupmember.md) collection|Collection of the members in the  **sharePointGroup**. Read-write.|
 |title|String|Provides a user-visible title of the **sharePointGroup**. Read-write.|
 
