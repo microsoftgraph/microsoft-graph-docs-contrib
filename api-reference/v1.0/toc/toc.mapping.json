@@ -1356,11 +1356,12 @@
             "attackSimulationSimulationUserCoverage",
             "attackSimulationTrainingUserCoverage"
           ]
-            }
-          ]
+        }
+      ]
         },
         {
           "name": "Audit log query",
+          "overview": "../../resources/security-auditlogquery.md",
           "resources": [
             "microsoft.graph.security.auditLogQuery",
             "microsoft.graph.security.auditLogRecord"
