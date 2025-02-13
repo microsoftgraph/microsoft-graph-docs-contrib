@@ -37,7 +37,7 @@ GET /solutions/businessScenarios/{businessScenarioId}/planner/tasks?$filter=targ
 
 ## Query parameters
 
-This method requires the `$filter` (`eq`) query parameter to scope the request to a **externalObjectId**, **externalContextId**,  or a **groupId**.
+This method requires the `$filter` (`eq`) query parameter to scope the request to an **externalObjectId**, **externalContextId**,  or a **groupId**.
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
