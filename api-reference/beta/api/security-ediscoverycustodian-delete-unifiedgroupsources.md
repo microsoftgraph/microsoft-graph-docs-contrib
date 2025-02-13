@@ -1,5 +1,5 @@
 ---
-title: "Delete unifiedGroupSource"
+title: "Delete custodian unifiedGroupSource"
 description: "Delete a unifiedGroupSource object."
 author: "manjarisenthil"
 ms.date: 02/11/2025
@@ -8,7 +8,7 @@ ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Delete unifiedGroupSource
+# Delete custodian unifiedGroupSource
 
 Namespace: microsoft.graph.security
 

@@ -1,5 +1,5 @@
 ---
-title: "List custodian's unifiedGroupSources"
+title: "List custodian unifiedGroupSources"
 description: "Get a list of the custodian's unifiedGroupSource objects and their properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
