@@ -90,7 +90,7 @@ Content-length: 200
     "ManagedDeviceName",
     "AvgRoundTripTimeInMsP50",
     "LastConnectionRoundTripTimeInMs",
-    "AvgAvailableBandwidthInMBpsP50",
+    "AvgAvailableBandwidthInMbpsP50",
     "LastConnectionAvailableBandWidthInMSps",
     "AvgRemoteSignInTimeInSecP50",
     "UDPConnectionPercentage",
@@ -169,7 +169,7 @@ Content-Type: application/octet-stream
       "PropertyType": "Double"
     },
     {
-      "Column": "AvgAvailableBandwidthInMBpsP50",
+      "Column": "AvgAvailableBandwidthInMbpsP50",
       "PropertyType": "Double"
     },
     {

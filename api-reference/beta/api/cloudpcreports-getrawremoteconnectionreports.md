@@ -78,7 +78,7 @@ Content-length: 199
 
 {
     "filter": "ActivityId eq 'cb6ad4c4-8a17-4245-a644-e4436b1ee204'",
-    "select":["RoundTripTimeInMs", "AvailableBandwidthInMBps", "SignInDateTime"],
+    "select":["RoundTripTimeInMs", "AvailableBandwidthInMbps", "SignInDateTime"],
     "skip": 0,
     "top": 50
 }
@@ -139,7 +139,7 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         }
         {
-            "Column": "AvailableBandwidthInMBps",
+            "Column": "AvailableBandwidthInMbps",
             "PropertyType": "Double"
         },
         {
