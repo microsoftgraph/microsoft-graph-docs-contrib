@@ -1,6 +1,48 @@
 ﻿{
   "changelog": [
-{
+    {
+      "ChangeList": [
+        {
+          "Id": "bbaa354c-b759-4e8b-ac3f-ccb26b6a8277",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "incompatiblePrinterSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **incompatiblePrinterSettings** enumeration type.",
+          "Target": "incompatiblePrinterSettings"
+        },
+        {
+          "Id": "bbaa354c-b759-4e8b-ac3f-ccb26b6a8277",
+          "ApiChange": "Resource",
+          "ChangedApiName": "airPrintSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [airPrintSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-airPrintSettings?view=graph-rest-1.0) resource.",
+          "Target": "airPrintSettings"
+        },
+        {
+          "Id": "bbaa354c-b759-4e8b-ac3f-ccb26b6a8277",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerDiscoverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerDiscoverySettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-printerDiscoverySettings?view=graph-rest-1.0) resource.",
+          "Target": "printerDiscoverySettings"
+        },
+        {
+          "Id": "bbaa354c-b759-4e8b-ac3f-ccb26b6a8277",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerDiscoverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **printerDiscoverySettings** property to the [printSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-printSettings?view=graph-rest-1.0) resource.",
+          "Target": "printSettings"
+        }
+      ],
+      "Id": "bbaa354c-b759-4e8b-ac3f-ccb26b6a8277",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-02-13T01:02:56.1853617Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
       "ChangeList": [
         {
           "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
