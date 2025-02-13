@@ -1,5 +1,5 @@
 ---
-title: "printSettings resource type
+title: "printSettings resource type"
 description: "Represents tenant-wide settings for the Universal Print service."
 author: "nilakhan"
 ms.localizationpriority: medium

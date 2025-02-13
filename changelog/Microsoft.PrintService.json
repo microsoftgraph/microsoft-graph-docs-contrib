@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "airPrintSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [airPrintSettings](https://learn.microsoft.com/en-us/graph/api/resources/airPrintSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the [airPrintSettings](https://learn.microsoft.com/en-us/graph/api/resources/airPrintSettings?view=graph-rest-1.0) resource type.",
           "Target": "airPrintSettings"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerDiscoverySettings",
           "ChangeType": "Addition",
-          "Description": "Added the [printerDiscoverySettings](https://learn.microsoft.com/en-us/graph/api/resources/printerDiscoverySettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the [printerDiscoverySettings](https://learn.microsoft.com/en-us/graph/api/resources/printerDiscoverySettings?view=graph-rest-1.0) resource type.",
           "Target": "printerDiscoverySettings"
         },
         {
@@ -39,7 +39,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-02-13T01:02:56.1853617Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
