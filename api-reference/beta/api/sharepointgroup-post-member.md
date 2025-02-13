@@ -33,10 +33,6 @@ This API only supports application only permissions.
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 POST /storage/fileStorage/containers/{containerId}/sharePointGroups/members
 ```
@@ -72,13 +68,6 @@ The following example adds a member to a sharePointGroup identified by `{sharePo
 
 ### Request
 
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_sharepointgroupmember"
-}
--->
 ``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members
 Content-Type: application/json
@@ -94,17 +83,10 @@ Content-Type: application/json
 }
 ```
 
----
-
 ### Response
 
 The following example shows a sample response with a json object representing the created member.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 201 Created
 {

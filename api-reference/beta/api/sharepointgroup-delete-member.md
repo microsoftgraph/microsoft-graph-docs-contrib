@@ -33,10 +33,6 @@ This API only supports application only permissions.
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 DELETE /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
 ```
@@ -61,30 +57,15 @@ If successful, this action returns a `204 No Content` response.
 
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "delete_sharepointgroupmember"
-}
--->
 ``` http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
 Content-Type: application/json
-
 ```
-
----
 
 ### Response
 
 The following example shows the response.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 204 No Content
 ```

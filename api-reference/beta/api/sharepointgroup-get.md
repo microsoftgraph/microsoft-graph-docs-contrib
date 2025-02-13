@@ -33,10 +33,6 @@ This API only supports application only permissions.
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 GET /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
 ```
@@ -60,29 +56,17 @@ The following example retrieves a SharePointGroup identified by `{sharePointGrou
 
 
 ### Request
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_sharepointgroup"
-}
--->
+
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
 Content-Type: application/json
 
 ```
 
----
-
 ### Response
 
 The following example shows s sample response with a json object representing the SharePointGroup
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 200 OK
 {
@@ -96,13 +80,8 @@ HTTP/1.1 200 OK
 ## Example 2: Attempt to get a SharePointGroup using ID 
 The following example attempts to get a SharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`. There's no such group in the container.
 
-
 ### Request
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_sharepointgroup_item_not_found"
-}
+
 -->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
@@ -110,17 +89,10 @@ Content-Type: application/json
 
 ```
 
----
-
 ### Response
 
 The following example shows a sample response detailing the nonexistence of the group.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 404 Not Found
 {

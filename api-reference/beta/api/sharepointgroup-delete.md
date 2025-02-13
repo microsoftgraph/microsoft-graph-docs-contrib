@@ -33,10 +33,6 @@ This API only supports application only permissions.
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
 ```
@@ -58,31 +54,18 @@ If successful, this action returns a `204 No Content` response.
 ## Example 1: Delete a SharePointGroup
 The following example deletes a SharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`.
 
-
 ### Request
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "delete_sharepointgroup1"
-}
--->
+
 ``` http
 DELETE /storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
 Content-Type: application/json
 
 ```
 
----
-
 ### Response
 
 The following example shows the response.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 204 No Content
 ```
@@ -91,31 +74,18 @@ HTTP/1.1 204 No Content
 
 The following example attempts to delete a SharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`. There's no such group in the container.
 
-
 ### Request
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "delete_sharepointgroup2"
-}
--->
+
 ``` http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/11
 Content-Type: application/json
 
 ```
 
----
-
 ### Response
 
 The following example shows a sample response. Only existing SharePointGroups can be deleted.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 404 Not Found
 {

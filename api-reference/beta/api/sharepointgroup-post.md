@@ -33,10 +33,6 @@ This API only supports application only permissions.
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 POST /storage/fileStorage/containers/{containerId}/sharePointGroups/
 ```
@@ -66,13 +62,6 @@ The following example creates a new SharePointGroup under the container identifi
 
 ### Request
 
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_sharepointgroup"
-}
--->
 ``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
 Content-Type: application/json
@@ -83,17 +72,10 @@ Content-Type: application/json
 }
 ```
 
----
-
 ### Response
 
 The following example shows a sample response. The group is successfully created with a newly assigned ID that acts as an identifier.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 201 Created
 {
