@@ -146,7 +146,7 @@ Content-Type: application/json
       },
       "error": {
         "code": "BulkRestoreArtifactsNotFound",
-        "message": "Errors while resolving restore artifacts",
+        "message": "Bulk Restore Artifacts not found",
         "details": [
           {
             "code": "SiteUrlNotFound",
