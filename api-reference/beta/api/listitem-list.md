@@ -1,7 +1,7 @@
 ---
 author: spgraph-docs-team
 description: "Get the collection of items in a list."
-title: "List items"
+title: "List items in a List"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -164,7 +164,7 @@ The following example shows a request.
 
 <!-- { "blockType": "request", "name": "get-list-items-with-filter", "scopes": "sites.read.all" } -->
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)&$filter=fields/Quantity lt 600
+GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/243bca4b-4e5e-45af-b37d-25f6135a740d/items?expand=fields(select=Name,Color,Quantity)&$filter=fields/Quantity lt 600
 ```
 
 #### Response
