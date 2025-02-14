@@ -34,7 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /callSettings/delegators
+GET /me/communications/callSettings/delegators
+GET /users/{user_id}/communications/callSettings/delegators
 ```
 
 ## Optional query parameters
@@ -66,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/callSettings/delegators
+GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators
 ```
 
 
