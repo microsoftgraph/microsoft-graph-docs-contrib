@@ -22,11 +22,13 @@ A collection of **sharePointGroup** objects that are local to the SharePointEmbe
 
 ## Permissions
 
-This API only supports application only permissions.
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Application                            | FileStorageContainer.Selected               |
+| Permission type                        | Least privileged permissions  | Higher privileged permissions |
+| :------------------------------------- | :---------------------------- | :---------------------------- |
+| Delegated (work or school account)     | Not supported.                | Not supported.                |
+| Delegated (personal Microsoft account) | Not supported.                | Not supported.                |
+| Application                            | FileStorageContainer.Selected | Not available.                |
 
 > [!Note]
 > In addition to Microsoft Graph permissions, applications calling this API must at least have the `EnumeratePermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#Authorization).
