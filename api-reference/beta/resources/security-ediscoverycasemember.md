@@ -23,14 +23,14 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/security-ediscoverycasemember-list.md)|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) collection|Get a list of the ediscoveryCaseMember objects and their properties.|
-|[Add](../api/security-ediscoverycasemember-add.md)|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md)|Add a case member to an ediscovery case.|
-|[Remove](../api/security-ediscoverycasemember-remove.md)|None|Remove a case member from an ediscovery case.|
+|[Add](../api/security-ediscoverycasemember-add.md)|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md)|Add a case member.|
+|[Remove](../api/security-ediscoverycasemember-remove.md)|None|Remove a case member.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |recipientType|microsoft.graph.security.recipientType|Specifies the recipient type of the eDiscovery case member. The possible values are: `user`, `roleGroup`, `unknownFutureValue`.|
-|id|String|The id of the eDiscovery case member.|
+|ID|String|The ID of the eDiscovery case member.|
 |displayName|String|The display name of the eDiscovery case member. Allowed only for case members of type **roleGroup**. |
 |smtpAddress|String|The smtp address of the eDiscovery case member. Allowed only for case members of type **user**. |
 
