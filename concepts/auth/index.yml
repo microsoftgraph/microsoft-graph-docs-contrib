@@ -9,6 +9,7 @@ metadata:
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.reviewer: jawoods
+  ms.service: microsoft-graph
   ms.subservice: entra-applications
   ms.custom: graphiamtop20   
 
