@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.subservice: non-product-specific
 ms.topic: concept-article
 ms.custom: graphiamtop20
-ms.date: 02/13/2025
+ms.date: 02/14/2025
 #Customer intent: As a developer, I want to learn how to use Microsoft Graph to combine multiple requests into a single JSON batch request, so that I can optimize my application.
 ---
 
@@ -236,7 +236,7 @@ Content-Type: application/json
 
 - Requests 1 and 5 succeeded as shown by the `200` status code.
 - Requests 2 and 3 failed with a `403` status code because the caller didn't have the required permissions.
-- Request 4 failed with a `405` status code because the endpoint specified in the **url** property of the request is currently in `beta` only yet the request URL targets the `v1.0` endpoint of Microsoft Graph.
+- Request 4 failed with a `405` status code because the endpoint specified in the **url** property of the request is currently in `beta` only yet the request URL targets the `v1.0` endpoint of Microsoft Graph. While the target URL doesn't require a request body, you must still specify the **headers** and **body** paremeters where only **body** can be an empty object.
 <!--- For requests that succeded, the **x-ms-resource-unit** throttling-related header indicates how much the request consumed against the service-defined throttling limits. 
 
 Hide for now because this header seems to be returned for directory objects only-->
