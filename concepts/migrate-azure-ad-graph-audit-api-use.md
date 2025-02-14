@@ -7,7 +7,7 @@ ms.reviewer: krbash
 ms.topic: quickstart
 ms.localizationpriority: medium
 ms.subservice: entra-applications
-ms.date: 02/14/2024
+ms.date: 02/14/2025
 #Customer intent: As a developer, I want to learn what to investigate in my app code and logic, so that I can migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
