@@ -5096,6 +5096,15 @@ Possible values for user account types (group membership), per Windows definitio
 |bulk|
 |unknownFutureValue|
 
+### cloudPcPolicyApplyActionStatus values
+
+|Member|
+|:---|
+|processing|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
 ### mailboxType values 
 
 |Member|
@@ -5114,4 +5123,13 @@ Possible values for user account types (group membership), per Windows definitio
 |tls_client_auth_san_uri|
 |tls_client_auth_san_ip|
 |tls_client_auth_san_email|
+|unknownFutureValue|
+
+### protectionSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|dynamicRule|
 |unknownFutureValue|

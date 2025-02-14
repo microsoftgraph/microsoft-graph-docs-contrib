@@ -10,7 +10,7 @@ ms.date: 01/30/2025
 
 This article provides information about the different Microsoft Graph national cloud deployments and the capabilities that are available to developers within each.
 
-In addition to a global network of datacenters, Microsoft cloud services are available in two separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services that are confined within the geographic borders of specific countries and operated by local personnel.
+In addition to a global network of datacenters, Microsoft cloud services are available in two separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services that are confined within the geographic borders of specific countries/regions and operated by local personnel.
 
 Current national clouds include:
 
@@ -50,7 +50,7 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 | Microsoft Graph China operated by 21Vianet | `https://microsoftgraph.chinacloudapi.cn` | Not supported. |
 
 > [!IMPORTANT]
-> For an app in US Government clouds, use the following root endpoints for the Azure portal and Microsoft Graph respectively.
+> For a software application working in US Government context, use the following root endpoints for the Azure portal and Microsoft Graph respectively.
 >
 > - If you're working in a Microsoft 365 GCC environment, continue using the worldwide endpoints: `https://portal.azure.com` and `https://graph.microsoft.com`.
 > - If you're working in a Microsoft 365 GCC High environment, use `https://portal.azure.us` and `https://graph.microsoft.us`.

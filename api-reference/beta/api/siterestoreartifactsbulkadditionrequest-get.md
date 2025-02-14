@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSe
 [!INCLUDE [sample-code](../includes/snippets/php/get-siterestoreartifactsbulkadditionrequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-siterestoreartifactsbulkadditionrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-siterestoreartifactsbulkadditionrequest-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
