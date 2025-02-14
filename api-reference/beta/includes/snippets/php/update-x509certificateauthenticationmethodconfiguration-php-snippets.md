@@ -57,6 +57,13 @@ $includeTargetsAuthenticationMethodTarget1->setIsRegistrationRequired(false);
 $includeTargetsArray []= $includeTargetsAuthenticationMethodTarget1;
 $requestBody->setIncludeTargets($includeTargetsArray);
 
+$additionalData = [
+'crlValidationConfiguration' => [
+'state' => 'disabled',
+'exemptedCertificateAuthoritiesSubjectKeyIdentifiers' => [],
+],
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurations()->byAuthenticationMethodConfigurationId('authenticationMethodConfiguration-id')->patch($requestBody)->wait();
 

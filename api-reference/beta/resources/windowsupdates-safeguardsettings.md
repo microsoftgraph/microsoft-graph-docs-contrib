@@ -3,7 +3,7 @@ title: "safeguardSettings resource type"
 description: "Manages the safeguards that Windows Autopatch applies to devices in a deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 09/16/2024
 ---

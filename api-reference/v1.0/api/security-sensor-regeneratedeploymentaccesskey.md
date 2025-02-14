@@ -86,6 +86,10 @@ POST https://graph.microsoft.com/v1.0/security/identities/sensors/regenerateDepl
 [!INCLUDE [sample-code](../includes/snippets/php/sensorthisregeneratedeploymentaccesskey-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sensorthisregeneratedeploymentaccesskey-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/sensorthisregeneratedeploymentaccesskey-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

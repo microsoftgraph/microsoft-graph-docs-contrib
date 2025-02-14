@@ -1,5 +1,5 @@
 ---
-title: "Change notifications for Microsoft Teams emergency call event updates"
+title: "Get change notifications for Microsoft Teams emergency call event updates"
 description: "Use change notifications in Microsoft Graph to subscribe to various events for Microsoft Teams emergency calls."
 author: "awang119"
 ms.localizationpriority: high
@@ -8,6 +8,7 @@ ms.custom: "scenarios:getting-started"
 ms.date: 12/03/2024
 ms.doc_type: "conceptual"
 ---
+
 # Get change notifications for Microsoft Teams emergency call event updates
 
 Microsoft Teams supports notifications for emergency calls. These notifications can be routed to inform specific security personnel within Teams. Microsoft Graph's emergency call events notification extends this capability to allow emergency call notifications to be received outside of Teams (for example, by custom client applications), as shown in the following diagram. 
