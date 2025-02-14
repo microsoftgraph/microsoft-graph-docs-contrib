@@ -13,7 +13,7 @@ ms.date: 02/14/2024
 
 # Examine Azure AD Graph APIs app usage
 
-This is step 2 of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+> This article is step 2 in the [Azure AD Graph app migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) series.
 
 While planning your migration to Microsoft Graph, take time to review your existing application and to catalog the Azure Active Directory (Azure AD) Graph APIs you're currently using.
 
