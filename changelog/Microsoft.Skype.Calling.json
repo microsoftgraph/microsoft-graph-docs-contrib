@@ -13,14 +13,6 @@
       {
         "Id": "cddc0287-34a4-45f4-a10d-c44c6474c978",
         "ApiChange": "Resource",
-        "ChangedApiName": "callSettings",
-        "ChangeType": "Addition",
-        "Description": "Added the [callSettings](https://learn.microsoft.com/en-us/graph/api/resources/callSettings?view=graph-rest-beta) resource.",
-        "Target": "callSettings"
-      },
-      {
-        "Id": "cddc0287-34a4-45f4-a10d-c44c6474c978",
-        "ApiChange": "Resource",
         "ChangedApiName": "delegationSettings",
         "ChangeType": "Addition",
         "Description": "Added the [delegationSettings](https://learn.microsoft.com/en-us/graph/api/resources/delegationSettings?view=graph-rest-beta) resource.",
