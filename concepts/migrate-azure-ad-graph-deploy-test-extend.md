@@ -13,7 +13,7 @@ ms.date: 02/14/2025
 
 # Deploy, test, and extend
 
-This article is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+> This article is step 4 in the [Azure AD Graph app migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) series.
 
 ## Test thoroughly
 

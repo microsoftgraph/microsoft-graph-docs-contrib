@@ -13,7 +13,7 @@ ms.date: 02/14/2025
 
 # Differences between resources in Azure AD Graph and Microsoft Graph
 
-> This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+> This article is part of *Step 1: review API differences* in the [Azure AD Graph app migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) series.
 
 When migrating apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph, some resources have different names and different types. For example, if your Azure AD Graph app uses the **TenantDetail** resource, you need to update your code to refer to [organization](/graph/api/resources/organization) instead.
 
@@ -24,7 +24,6 @@ If a resource is **not** shown in this list, it's already available in the [v1.0
 > [!NOTE]
 > Resource type names in Azure AD Graph are Pascal-cased, whereas in Microsoft Graph they're camel-cased.
 
- [!div class="mx-tdBreakAll"]
 |Azure AD Graph <br>(v1.6) resource |Microsoft Graph<br>resource|Comments|
 |---|---|---|
 | [CertificateAuthorityInformation](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta&preserve-view=true)<br>v1.0&nbsp;-&nbsp;[certificateAuthority](/graph/api/resources/certificateauthority) | |
