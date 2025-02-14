@@ -19,15 +19,15 @@ import (
 
 requestMicrosoftGraphConflictBehavior := "replace"
 
-requestParameters := &graphdrives.DriveItemItemItemCopyRequestBuilderPostQueryParameters{
+requestParameters := &graphdrives.ItemItemsItemCopyRequestBuilderPostQueryParameters{
 	MicrosoftGraphConflictBehavior: &requestMicrosoftGraphConflictBehavior,
 }
-configuration := &graphdrives.DriveItemItemItemCopyRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.ItemItemsItemCopyRequestBuilderPostRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 requestBody := graphdrives.NewCopyPostRequestBody()
 parentReference := graphmodels.NewItemReference()
-driveId := "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
+driveId := "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
 parentReference.SetDriveId(&driveId) 
 id := "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
 parentReference.SetId(&id) 

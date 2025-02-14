@@ -1,18 +1,19 @@
 ---
 title: "group: renew"
-description: "Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
+description: "Renew a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # group: renew
 
 Namespace: microsoft.graph
 
-Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
+Renew a [group's](../resources/group.md) expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

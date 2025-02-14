@@ -1,19 +1,20 @@
 ---
-title: "Range: LastRow"
-description: "."
+title: "range: lastRow"
+description: "Get the last row within the range."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 11/08/2024
 ---
 
-# Range: LastRow
+# range: lastRow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
+Get the last row within the range. For example, the last row of *B2:D5* is *B5:D5*.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -38,7 +39,7 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 

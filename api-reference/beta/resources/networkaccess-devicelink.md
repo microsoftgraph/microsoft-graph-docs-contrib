@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 toc.title: Device link
+ms.date: 08/01/2024
 ---
 
 # deviceLink resource type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: notifications
 doc_type: resourcePageType
 author: merzink
+ms.date: 05/23/2024
 ---
 
 # notification resource type (deprecated)

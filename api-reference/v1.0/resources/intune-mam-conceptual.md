@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: conceptualPageType
+ms.date: 04/18/2024
 ---
 
 # How to protect your company app data with Microsoft Intune

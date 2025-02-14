@@ -5,6 +5,7 @@ author: "linkhp"
 ms.localizationpriority: high
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # authenticationFlowsPolicy resource type

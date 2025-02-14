@@ -7,12 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\VirtualEventRegistration;
+use Microsoft\Graph\Beta\Generated\Models\VirtualEventExternalRegistrationInformation;
 use Microsoft\Graph\Beta\Generated\Models\VirtualEventRegistrationQuestionAnswer;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new VirtualEventRegistration();
+$externalRegistrationInformation = new VirtualEventExternalRegistrationInformation();
+$externalRegistrationInformation->setReferrer('Facebook');
+$externalRegistrationInformation->setRegistrationId('myExternalRegistrationId');
+$requestBody->setExternalRegistrationInformation($externalRegistrationInformation);
 $requestBody->setPreferredTimezone('Pacific Standard Time');
 $requestBody->setPreferredLanguage('en-us');
 $registrationQuestionAnswersVirtualEventRegistrationQuestionAnswer1 = new VirtualEventRegistrationQuestionAnswer();

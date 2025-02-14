@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Delete enterpriseCodeSigningCertificate
@@ -78,10 +79,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSignin
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-enterprisecodesigningcertificate-delete-delete-enterprisecodesigningcertificate-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-enterprisecodesigningcertificate-delete-delete-enterprisecodesigningcertificate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

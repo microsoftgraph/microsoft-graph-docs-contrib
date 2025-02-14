@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get enterpriseCodeSigningCertificate
@@ -81,10 +82,6 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCe
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-enterprisecodesigningcertificate-get-get-enterprisecodesigningcertificate-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-enterprisecodesigningcertificate-get-get-enterprisecodesigningcertificate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

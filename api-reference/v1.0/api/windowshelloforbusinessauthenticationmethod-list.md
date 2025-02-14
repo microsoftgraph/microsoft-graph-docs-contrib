@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List windowsHelloForBusinessAuthenticationMethods
@@ -21,12 +22,12 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "windowshelloforbusinessauthenticationmethod_list" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/windowshelloforbusinessauthenticationmethod-list-permissions.md)]
 
 ### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "windowshelloforbusinessauthenticationmethod_list_2" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/windowshelloforbusinessauthenticationmethod-list-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]

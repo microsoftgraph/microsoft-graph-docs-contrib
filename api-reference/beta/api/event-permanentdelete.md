@@ -5,6 +5,7 @@ author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # event: permanentDelete
@@ -108,7 +109,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/events/{eventId}/permanent
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

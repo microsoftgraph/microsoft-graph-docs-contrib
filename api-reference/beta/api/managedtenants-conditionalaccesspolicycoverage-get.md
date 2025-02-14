@@ -5,6 +5,7 @@ author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
+ms.date: 07/26/2024
 ---
 
 # Get conditionalAccessPolicyCoverage

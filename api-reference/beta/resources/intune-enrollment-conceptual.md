@@ -4,6 +4,7 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) that enr
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
+ms.date: 04/01/2024
 ---
 
 # Enroll corporate-owned devices by using Intune

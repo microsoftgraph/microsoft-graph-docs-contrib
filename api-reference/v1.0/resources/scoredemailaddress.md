@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "AAmatino"
 ms.subservice: mail
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # scoredEmailAddress resource type

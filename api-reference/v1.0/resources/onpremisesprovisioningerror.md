@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # onPremisesProvisioningError resource type

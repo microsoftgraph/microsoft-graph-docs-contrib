@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Redundant assignment
+ms.date: 09/19/2024
 ---
 
 # redundantAssignmentAlertIncident resource type
@@ -19,6 +20,11 @@ Represents an alert incident that is triggered if a user goes over a specified n
 The threshold that triggers this incident when it's reached is defined in the [redundantAssignmentAlertConfiguration resource type](redundantassignmentalertconfiguration.md).
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) resource type.
 
 ## Properties
 |Property|Type|Description|

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "Represents the default value for a columnDefinition."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # defaultColumnValue resource type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: conceptualPageType
+ms.date: 03/06/2024
 ---
 
 # Use the Microsoft Graph API for security threat detection and protection (preview)

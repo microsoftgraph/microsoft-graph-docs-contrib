@@ -5,6 +5,7 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # printSettings resource type

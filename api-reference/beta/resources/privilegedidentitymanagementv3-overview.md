@@ -1,28 +1,38 @@
 ---
-title: "Manage Microsoft Entra role assignments using the privileged identity management (PIM) APIs"
-description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization."
+title: "Manage Microsoft Entra role assignments using the PIM APIs"
+description: "PIM is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.topic: overview
-ms.subservice: "entra-id-governance"
-ms.date: 10/12/2023
+ms.subservice: entra-id-governance
+ms.date: 09/24/2024
+# Customer intent: As a developer, I want to learn how to get started with PIM APIs for managing Microsoft Entra roles.
 ---
 
 # Manage Microsoft Entra role assignments using PIM APIs
 
-[Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization. One method through which principals such as users, groups, and service principals (applications) are granted access to important resources is through assignment of [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[Privileged Identity Management (PIM)](/entra/id-governance/privileged-identity-management/pim-configure) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization. One method through which principals such as users, groups, and service principals (applications) are granted access to important resources is through assignment of [Microsoft Entra administrator roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 The PIM for Microsoft Entra roles APIs allow you to govern privileged access and limit excessive access to Microsoft Entra roles. This article introduces the governance capabilities of PIM for Microsoft Entra roles APIs in Microsoft Graph.
 
 > [!NOTE]
 > To manage Azure resource roles use the [PIM APIs for Azure Resource Manager](/rest/api/authorization/privileged-role-eligibility-rest-sample).
 
+## Methods of assigning roles
+
+PIM for Microsoft Entra roles provides two methods for assigning roles to principals:
+- **Active role assignments**: A principal can have a permanent or temporary perpetually active role assignment.
+- **Eligible role assignments**: A principal can be eligibile for a role either permanently or temporarily. With eligible assigments, the principal activates their role - thereby creating a temporarily active role assignment - when they need to perform privileged tasks. The activation is always time-bound for a maximum of 8 hours but the maximum duration can be lowered in the role settings. The activation can also be renewed or extended.
+
 ## PIM APIs for managing active role assignments
 
 PIM allows you to manage active role assignments by creating permanent assignments or temporary assignments. Use the [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) resource type and its related methods to manage role assignments.
+
+> [!NOTE]
+> We recommend using PIM to manage active role assignments over using the [unifiedRoleAssignment](../resources/unifiedroleassignment.md) or the [directoryRole](../resources/directoryrole.md) resource types to manage them directly.
 
 The following table lists scenarios for using PIM to manage role assignments and the APIs to call.
 
@@ -40,7 +50,7 @@ The following table lists scenarios for using PIM to manage role assignments and
 
 ## PIM APIs for managing role eligibilities
 
-Your principals may not require permanent role assignments because they may not require the privileges granted through the privileged role all the time. In this case, PIM also allows you to create role eligibilities and assign them to the principals. With role eligibilities, the principal activates the role when they need to perform privileged tasks. The activation is always time-bound for a maximum of 8 hours. The role eligibility can also be a permanent eligibility or a temporary eligibility.
+Your principals may not require permanent role assignments because they don't require the privileges granted through the privileged role all the time. In this case, PIM also allows you to create role eligibilities and assign them to the principals. With role eligibilities, the principal activates the role when they need to perform privileged tasks. The activation is always time-bound for a maximum of 8 hours. The principal can also be permanently or temporarily eligible fot the role.
 
 Use the [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) resource type and its related methods to manage role eligibilities.
 
@@ -88,8 +98,6 @@ The following table lists scenarios for using PIM to manage rules for Microsoft 
 
 For more information about using Microsoft Graph to configure rules, see [Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules).
 
-<a name='security-alerts-for-azure-ad-roles'></a>
-
 ## Security alerts for Microsoft Entra roles
 
 PIM for Microsoft Entra roles generates alerts when it detects suspicious or unsafe settings for Microsoft Entra roles in your tenant. The following seven alert types are available:
@@ -117,9 +125,6 @@ Use the following Microsoft Graph resources to manage PIM alerts.
 | [unifiedRoleManagementAlertConfiguration](unifiedrolemanagementalertconfiguration.md) | The tenant-specific configuration for the alert including whether the PIM service should scan the tenant for incidences relating to the alert, the thresholds that trigger the alert, and the related alert definition. This is an abstract type from which resources that represent the individual alert types are derived. | [List](../api/rolemanagementalert-list-alertconfigurations.md) <br/><br/> [Get](../api/unifiedrolemanagementalertconfiguration-get.md) <br/><br/> [Update](../api/unifiedrolemanagementalertconfiguration-update.md)|
 | [unifiedRoleManagementAlertIncident](unifiedrolemanagementalertincident.md) | The incidences in the tenant that match the alert type. | [List](../api/unifiedrolemanagementalert-list-alertincidents.md) <br/><br/> [Get](../api/unifiedrolemanagementalertincident-get.md) <br/><br/> [Remediate](../api/unifiedrolemanagementalertincident-remediate.md) |
 
-
-For more information about working with security alerts for Microsoft Entra roles, see [Configure security alerts for Microsoft Entra roles in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts).
-
 For more information about working with security alerts for Microsoft Entra roles using PIM APIs, see [Manage security alerts for Microsoft Entra roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
 
 ## Audit logs
@@ -132,30 +137,12 @@ All activities made through PIM for Microsoft Entra roles are logged in Microsof
 
 <!-- End of: Link to ZT guidance -->
 
-<!--
-## Permissions and privileges
-
-The following permissions are supported for PIM for Microsoft Entra roles API operations:
-
-|Permissions  |Supported operations  |
-|---------|---------|
-| RoleAssignmentSchedule.Read.Directory <br/> RoleAssignmentSchedule.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory     | To manage role assignment operations.        |
-| RoleEligibilitySchedule.Read.Directory <br/> RoleEligibilitySchedule.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory    | To manage role eligibility operations.         |
-| RoleManagementAlert.Read.Directory <br/> RoleManagementAlert.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory    | To manage security alerts for Microsoft Entra roles.         |
-
-For delegated scenarios, the signed-in user must be assigned the *Privileged Role Administrator* or *Global Administrator* role in Microsoft Entra ID.
--->
 ## Licensing
 
-The tenant where Privileged Identity Management is being used must have enough purchased or trial licenses. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
+The tenant where Privileged Identity Management is being used must have enough purchased or trial licenses. For more information, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
 
 ## Related content
 
-- See the following articles to learn more about working with PIM APIs:
-  - [Working with rules for Microsoft Entra roles in PIM APIs](/graph/identity-governance-pim-rules-overview).
-  - [Use PIM APIs to update rules (settings) for Microsoft Entra roles](/graph/how-to-pim-update-rules).
-  - [Manage security alerts for Microsoft Entra roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
-  - [Tutorial: Use PIM APIs to assign Microsoft Entra roles](/graph/tutorial-assign-azureadroles).
 - To learn more about security operations, see [Microsoft Entra security operations for Privileged Identity Management](/azure/active-directory/architecture/security-operations-privileged-identity-management?source=docs#privileged-identity-management-alerts) in the Microsoft Entra architecture center.
 
 

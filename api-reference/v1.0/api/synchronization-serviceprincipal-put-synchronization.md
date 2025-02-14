@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 08/13/2024
 ---
 
 # Add synchronization secrets

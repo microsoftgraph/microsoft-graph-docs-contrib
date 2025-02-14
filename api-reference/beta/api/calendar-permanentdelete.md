@@ -5,6 +5,7 @@ author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # calendar: permanentDelete
@@ -99,7 +100,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/calendar/permanentDelete
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kristinmcleod"
 ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 08/08/2024
 ---
 
 # Get profilePhoto
@@ -65,6 +66,7 @@ The following tables show the least privileged permission or permissions require
 > [!NOTE]
 > 
 > - Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+> - Guest users can view profile photos of users, even when the **Guest user access** settings are configured to the **most restrictive** option in Azure Active Directory External Identities settings.
 
 ## HTTP request
 

@@ -23,12 +23,12 @@ headers.Add("ConsistencyLevel", "eventual")
 requestCount := true
 requestFilter := "startswith(displayName, 'a')"
 
-requestParameters := &graphdevices.DeviceItemTransitiveMemberOfGraph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphdevices.ItemTransitiveMemberOfGraph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Filter: &requestFilter,
 }
-configuration := &graphdevices.DeviceItemTransitiveMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphdevices.ItemTransitiveMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

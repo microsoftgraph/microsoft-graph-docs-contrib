@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 author: "dhruvinrshah"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # connectorGroup resource type

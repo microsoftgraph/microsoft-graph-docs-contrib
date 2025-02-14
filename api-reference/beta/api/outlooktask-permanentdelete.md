@@ -5,6 +5,7 @@ author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # outlookTask: permanentDelete
@@ -99,7 +100,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/outlook/tasks/{outlookTask
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

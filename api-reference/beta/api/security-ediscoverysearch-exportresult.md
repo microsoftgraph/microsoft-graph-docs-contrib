@@ -5,6 +5,7 @@ author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 10/30/2024
 ---
 
 # ediscoverySearch: exportResult
@@ -46,20 +47,22 @@ POST /security/cases/ediscoveryCases('{ediscoveryCaseId}')/searches('{ediscovery
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that you can be use with this action.
+The following table lists the parameters that you can use with this action.
 
 | Parameter | Type | Description |
 |:---|:---|:---|
-| additionalOptions | [microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values) | The additional options for the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`. Required.|
+| additionalOptions | [microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values) | The additional options for the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`, `htmlTranscripts`, `advancedIndexing`, `allItemsInFolder`, `includeFolderAndPath`, `condensePaths`, `friendlyName`, `splitSource`, `optimizedPartitionSize`, `includeReport`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `htmlTranscripts`, `advancedIndexing`, `allItemsInFolder`, `includeFolderAndPath`, `condensePaths`, `friendlyName`, `splitSource`, `optimizedPartitionSize`, `includeReport`. The `advancedIndexing` value is only available if **exportCriteria** includes `partiallyIndexed`. Required.|
+| cloudAttachmentVersion | microsoft.graph.security.cloudAttachmentVersion | The versions of cloud attachments to include in messages. Possible values are: `latest`, `recent10`, `recent100`, `all`, `unknownFutureValue`. The default value is `latest`. |
 | description | String | The description of the export result. |
 | displayName | String | The display name of the export result. |
+| documentVersion | microsoft.graph.security.documentVersion | The versions of files in SharePoint to include. Possible values are: `latest`, `recent10`, `recent100`, `all`, `unknownFutureValue`. The default value is `latest`. |
 | exportCriteria | [microsoft.graph.security.exportCriteria](../resources/security-ediscoverysearchexportoperation.md#exportcriteria-values) | The portion of the estimate results to be exported. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`. Required.|
 | exportFormat | [microsoft.graph.security.exportFormat](../resources/security-ediscoverysearchexportoperation.md#exportformat-values) | The desired format of the exported emails. The possible values are: `pst`, `msg`, `eml`, `unknownFutureValue`. Required. |
-| exportLocation | [microsoft.graph.security.exportLocation](../resources/security-ediscoverysearchexportoperation.md#exportlocation-values) | Location scope for partially indexed items. You can choose to include partially indexed items only in responsive locations with search hits or in all targeted locations. The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`.|
+| exportLocation | [microsoft.graph.security.exportLocation](../resources/security-ediscoverysearchexportoperation.md#exportlocation-values) | Location scope for partially indexed items. You can choose to include partially indexed items only in responsive locations with search hits or in all targeted locations. The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`. The `nonresponsiveLocations` value is only available if **exportCriteria** includes `partiallyIndexed`.|
 
 ## Response
 
-If the export has started successfully, this action returns a `202 Accepted` response code. The response also contains a `Location` header that includes the location of the [microsoft.graph.security.ediscoverySearchExportOperation](../resources/security-ediscoverysearchexportoperation.md) that was created to handle the export. To check the status of the export operation, make a GET request to the location URL.
+If the export started successfully, this action returns a `202 Accepted` response code. The response also contains a `Location` header that includes the location of the [microsoft.graph.security.ediscoverySearchExportOperation](../resources/security-ediscoverysearchexportoperation.md) that was created to handle the export. To check the status of the export operation, make a GET request to the location URL.
 
 ## Examples
 
@@ -78,7 +81,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a6a5-46a2-8e4e-534353b071e4'/searches/'6c2ab774-2d2a-46b9-a601-3130f518757b'/exportResult
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
 {
@@ -154,7 +157,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a6a5-46a2-8e4e-534353b071e4'/searches/'6c2ab774-2d2a-46b9-a601-3130f518757b'/exportResult
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
 {
@@ -231,7 +234,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a6a5-46a2-8e4e-534353b071e4'/searches/'6c2ab774-2d2a-46b9-a601-3130f518757b'/exportResult
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
 {
@@ -308,14 +311,14 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a6a5-46a2-8e4e-534353b071e4'/searches/'6c2ab774-2d2a-46b9-a601-3130f518757b'/exportResult
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
 {
   "displayName": "Export 4",
   "exportCriteria": "partiallyIndexed",
   "exportLocation": "responsiveLocations, nonresponsiveLocations",
-  "additionalOptions": "teamsAndYammerConversations, cloudAttachments, allDocumentVersions, subfolderContents, listAttachments",
+  "additionalOptions": "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments, includeFolderAndPath, splitSource, condensePaths, friendlyName, optimizedPartitionSize, includeReport",
   "exportFormat": "eml"
 }
 ```
@@ -372,7 +375,7 @@ Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06
 
 ### Example 5: Export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message
 
-The following example shows how to export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message.
+The following example shows how to export results with partially indexed items in search hit locations and cloud attachments. It specifies how many document and cloud attachment versions to include and .eml files for each message. 
 
 #### Request
 
@@ -385,7 +388,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a6a5-46a2-8e4e-534353b071e4'/searches/'6c2ab774-2d2a-46b9-a601-3130f518757b'/exportResult
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
 {
@@ -393,7 +396,9 @@ Content-Type: application/json
   "exportCriteria": "partiallyIndexed",
   "exportLocation": "responsiveLocations",
   "additionalOptions": "cloudAttachments",
-  "exportFormat": "eml"
+  "exportFormat": "eml",
+  "cloudAttachmentVersion": "all",
+  "documentVersion": "recent100"
 }
 ```
 

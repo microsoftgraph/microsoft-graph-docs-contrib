@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
 toc.title: Training campaign (preview)
+ms.date: 06/04/2024
 ---
 
 # trainingCampaign resource type

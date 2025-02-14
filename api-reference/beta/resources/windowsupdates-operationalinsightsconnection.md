@@ -1,10 +1,11 @@
 ---
 title: "operationalInsightsConnection resource type"
-description: "Represents a specialized resourceConnection that links a Log Analytics workspace to the Windows Update for Business deployment service."
+description: "Represents a specialized resourceConnection that links a Log Analytics workspace to Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # operationalInsightsConnection resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a specialized [resourceConnection](../resources/windowsupdates-resourceconnection.md) that links a Log Analytics workspace to the Windows Update for Business deployment service.
+Represents a specialized [resourceConnection](../resources/windowsupdates-resourceconnection.md) that links a Log Analytics workspace to Windows Autopatch.
 
 Inherits from [resourceConnection](../resources/windowsupdates-resourceconnection.md).
 

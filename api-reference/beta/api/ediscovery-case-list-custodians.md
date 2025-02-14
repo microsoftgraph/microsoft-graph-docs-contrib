@@ -5,6 +5,7 @@ author: "mahage-msft"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List custodians

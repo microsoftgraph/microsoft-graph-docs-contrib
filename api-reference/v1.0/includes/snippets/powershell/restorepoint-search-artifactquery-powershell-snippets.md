@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.BackupRestore
 
 $params = @{
 	artifactQuery = @{
-		queryExpression = "((subject -contains ‘Finance’)  -or  (subject -contains ‘Legal’)) -and (sender -eq 'alex@contoso.com') -and (recipient -eq 'carol@contoso.com') -and hasAttachment -eq true"
+		queryExpression = "(Sender -eq 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '{2024-09-21T08:20:00.0000000Z}')"
 		artifactType = "message"
 	}
 	protectionUnitIds = @(
@@ -20,6 +20,6 @@ protectionTimePeriod = @{
 restorePointPreference = "oldest"
 }
 
-Search-MgBackupRestorePoint -BodyParameter $params
+Search-MgSolutionBackupRestorePoint -BodyParameter $params
 
 ```

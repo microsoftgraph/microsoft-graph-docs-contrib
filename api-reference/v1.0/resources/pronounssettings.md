@@ -5,6 +5,7 @@ author: "aymen-ms"
 ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # pronounsSettings resource type

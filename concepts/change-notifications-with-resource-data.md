@@ -461,7 +461,7 @@ RSA rsa = certificate.GetRSAPrivateKey();
 byte[] encryptedSymmetricKey = Convert.FromBase64String(<value from dataKey property>);
 
 // Decrypt using OAEP padding.
-byte[] decryptedSymmetricKey = rsa.Decrypt(encryptedSymmetricKey, fOAEP: true);
+byte[] decryptedSymmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.OaepSHA1);
 
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```

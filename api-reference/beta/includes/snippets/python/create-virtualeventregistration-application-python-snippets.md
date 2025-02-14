@@ -7,12 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.virtual_event_registration import VirtualEventRegistration
+from msgraph_beta.generated.models.virtual_event_external_registration_information import VirtualEventExternalRegistrationInformation
 from msgraph_beta.generated.models.virtual_event_registration_question_answer import VirtualEventRegistrationQuestionAnswer
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = VirtualEventRegistration(
 	first_name = "Diane",
 	last_name = "Demoss",
 	email = "DianeDemoss@contoso.com",
+	external_registration_information = VirtualEventExternalRegistrationInformation(
+		referrer = "Facebook",
+		registration_id = "myExternalRegistrationId",
+	),
 	preferred_timezone = "Pacific Standard Time",
 	preferred_language = "en-us",
 	registration_question_answers = [

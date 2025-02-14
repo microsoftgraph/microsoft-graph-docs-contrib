@@ -5,6 +5,7 @@ title: listItem resource type
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 10/10/2024
 ---
 
 # listItem resource type
@@ -38,8 +39,8 @@ All examples are relative to a **[list][]**; for example, `https://graph.microso
 | [Restore document set version](../api/documentsetversion-restore.md)       | No Content                         | Restore the document set item to a specific version.                      |
 | [Get delta](../api/listitem-delta.md) | [listItem](../resources/listitem.md) collection | Get newly created, updated, or deleted [list items](../resources/listitem.md) without having to perform a full read of the entire items collection. |
 | [List permissions](../api/listitem-list-permissions.md)| [permission](../resources/permission.md) |Get a list of the [permission](../resources/permission.md) objects associated with a [listItem](../resources/listitem.md).|
-| [Create permission](../api/listitem-list-permissions.md)| [permission](../resources/permission.md) |Get a list of the [permission](../resources/permission.md) objects associated with a [listItem](../resources/listitem.md).|
-| [Get permission](../api/listitem-post-permissions.md)| [permission](../resources/permission.md) |Create a new [permission](../resources/permission.md) object on a [listItem](../resources/listitem.md).|
+| [Create permission](../api/listitem-post-permissions.md)| [permission](../resources/permission.md) |Create a new [permission](../resources/permission.md) object on a [listItem](../resources/listitem.md).|
+| [Get permission](../api/listitem-get-permissions.md)| [permission](../resources/permission.md) |Get a list of the [permission](../resources/permission.md) objects associated with a [listItem](../resources/listitem.md).|
 | [Update permission](../api/listitem-update-permissions.md)| [permission](../resources/permission.md) |Update a [permission](../resources/permission.md) object on a [listItem](../resources/listitem.md).|
 | [Delete permission](../api/listitem-delete-permissions.md)| None |Delete a [permission](../resources/permission.md) object on a [listItem](../resources/listitem.md).|
 

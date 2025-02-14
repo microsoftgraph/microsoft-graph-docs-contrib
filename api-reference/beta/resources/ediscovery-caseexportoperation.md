@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mahage-msft"
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # caseExportOperation resource type

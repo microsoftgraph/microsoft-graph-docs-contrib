@@ -5,6 +5,7 @@ author: "dkershaw10"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # Get transitiveReports for orgContact
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "orgcontact_get_transitivereports" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-get-transitivereports-permissions.md)]
+
+[!INCLUDE [rbac-org-contacts-apis-read-all](../includes/rbac-for-apis/rbac-org-contacts-apis-read-all.md)]
 
 ## HTTP request
 

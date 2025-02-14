@@ -1,10 +1,11 @@
 ---
 title: "timeSlot resource type"
-description: "A time period."
+description: "Represents a time slot for a meeting."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "vrod9429"
 ms.subservice: "outlook"
+ms.date: 11/08/2024
 ---
 
 # timeSlot resource type

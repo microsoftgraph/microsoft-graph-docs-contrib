@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
 ms.subservice: "entra-sign-in"
+ms.date: 08/01/2024
 ---
 
 # Create identityUserFlowAttribute

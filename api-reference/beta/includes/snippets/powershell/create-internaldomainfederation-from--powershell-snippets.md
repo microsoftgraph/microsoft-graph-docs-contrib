@@ -20,6 +20,7 @@ $params = @{
 	isSignedAuthenticationRequestRequired = $true
 	nextSigningCertificate = "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI"
 	federatedIdpMfaBehavior = "rejectMfaByFederatedIdp"
+	passwordResetUri = "https://sts.contoso.com/adfs/passwordReset"
 }
 
 New-MgBetaDomainFederationConfiguration -DomainId $domainId -BodyParameter $params

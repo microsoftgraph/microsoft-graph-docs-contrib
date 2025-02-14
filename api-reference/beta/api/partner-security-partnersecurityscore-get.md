@@ -5,6 +5,7 @@ author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # Get partnerSecurityScore
@@ -100,7 +101,6 @@ GET https://graph.microsoft.com/beta/security/partner/securityScore
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

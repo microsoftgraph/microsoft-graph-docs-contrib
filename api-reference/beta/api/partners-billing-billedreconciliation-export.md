@@ -5,6 +5,7 @@ author: "sourishdeb"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # billedReconciliation: export

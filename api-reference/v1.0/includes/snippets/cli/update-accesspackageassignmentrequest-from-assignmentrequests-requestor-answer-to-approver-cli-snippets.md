@@ -7,7 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 mgc identity-governance entitlement-management assignment-requests create --body '{\
     "@odata.type": "#microsoft.graph.accessPackageAssignmentRequest",\
-    "id": "7a6ab703-0780-4b37-8445-81f679b2d75c",\
     "requestType": "adminUpdate",\
     "answers": [\
         {\

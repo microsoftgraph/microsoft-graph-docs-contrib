@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/20/2024
 ---
 
 # cloudPcReports: getDailyAggregatedRemoteConnectionReports
@@ -106,10 +107,6 @@ Content-length: 199
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetdailyaggregatedremoteconnectionreports-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetdailyaggregatedremoteconnectionreports-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

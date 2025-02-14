@@ -4,6 +4,7 @@ description: "Use the Planner API in Microsoft Graph to create plans, organize a
 author: "TarkanSevilmis"
 ms.localizationpriority: high
 ms.subservice: "planner"
+ms.date: 11/07/2024
 ---
 
 # Planner tasks and plans API overview

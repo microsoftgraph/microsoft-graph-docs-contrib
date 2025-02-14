@@ -8,12 +8,12 @@ Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.networkaccess.webCategoryFilteringRule"
-	name = "Block Alcohol"
+	name = "Block Gambling Sites"
 	ruleType = "webCategory"
 	destinations = @(
 		@{
 			"@odata.type" = "#microsoft.graph.networkaccess.webCategory"
-			name = "AlcoholAndTobacco"
+			name = "Gambling"
 		}
 	)
 }

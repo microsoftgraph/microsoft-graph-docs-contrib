@@ -1,10 +1,11 @@
 ---
 title: "List accessPackageAssignmentPolicies"
-description: "Retrieve a list of accessPackageAssignmentPolicy objects."
+description: "Retrieve a list of accessPackageAssignmentPolicy objects in Microsoft Entra entitlement management."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/20/2024
 ---
 
 # List accessPackageAssignmentPolicies
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects. If the delegated user is in a directory role, the resulting list includes all the assignment policies that the caller has access to read, across all catalogs and access packages.  If the delegated user is an access package manager or catalog owner, they should instead retrieve the policies for the access packages they can read with [list accessPackages](entitlementmanagement-list-accesspackages.md) by including `$expand=accessPackageAssignmentPolicies` in the query.
+Retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects in [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md). If the delegated user is in a directory role, the resulting list includes all the assignment policies that the caller has access to read, across all catalogs and access packages.  If the delegated user is an access package manager or catalog owner, they should instead retrieve the policies for the access packages they can read with [list accessPackages](entitlementmanagement-list-accesspackages.md) by including `$expand=accessPackageAssignmentPolicies` in the query.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_list_accesspackageassignmentpolicies" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-list-accesspackageassignmentpolicies-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 

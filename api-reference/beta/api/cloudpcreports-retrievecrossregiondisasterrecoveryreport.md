@@ -5,6 +5,7 @@ author: "ms-linxin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 07/02/2024
 ---
 
 # cloudPcReports: retrieveCrossregionDisasterRecoveryReport
@@ -122,10 +123,6 @@ Content-length: 199
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisretrievecrossregiondisasterrecoveryreport-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisretrievecrossregiondisasterrecoveryreport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

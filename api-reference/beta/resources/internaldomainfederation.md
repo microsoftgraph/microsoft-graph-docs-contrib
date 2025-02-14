@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 11/25/2024
 ---
 
 # internalDomainFederation resource type
@@ -40,13 +41,14 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 |metadataExchangeUri|String|URI of the metadata exchange endpoint used for authentication from rich client applications. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |nextSigningCertificate|String|Fallback token signing certificate that can also be used to sign tokens, for example when the primary signing certificate expires. Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.|
 |passiveSignInUri|String|URI that web-based clients are directed to when signing into Microsoft Entra services. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|preferredAuthenticationProtocol|authenticationProtocol|Preferred authentication protocol. The possible values are: `wsFed`, `saml`, `unknownFutureValue`. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|passwordResetUri|String|URI that clients are redirected to for resetting their password.|
+|preferredAuthenticationProtocol|authenticationProtocol|Preferred authentication protocol. This parameter must be configured explicitly for the federation passive authentication flow to work. The possible values are: `wsFed`, `saml`, `unknownFutureValue`. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |promptLoginBehavior|promptLoginBehavior|Sets the preferred behavior for the sign-in prompt. The possible values are: `translateToFreshPasswordAuthentication`, `nativeSupport`, `disabled`, `unknownFutureValue`.|
 |signingCertificate|String|Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class. <br>This property is used in the following scenarios: <li> If a rollover is required outside of the autorollover update <li> A new federation service is being set up <li> If the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.<br>Microsoft Entra ID updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Microsoft Entra ID monitors the metadata daily and will update the federation settings for the domain when a new certificate is available. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate.|
 |signOutUri|String|URI that clients are redirected to when they sign out of Microsoft Entra services. Corresponds to the **LogOffUri** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings).|
 
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../api-reference/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 ### federatedIdpMfaBehavior values
 
@@ -96,7 +98,8 @@ The following JSON representation shows the resource type.
     "certificateUpdateResult": "String",
     "@odata.type": "microsoft.graph.signingCertificateUpdateStatus"
   },
-  "federatedIdpMfaBehavior": "String"
+  "federatedIdpMfaBehavior": "String",
+  "passwordResetUri": "String"
 }
 ```
 

@@ -5,6 +5,7 @@ author: "prasad5596"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # plannerChecklistRequirement resource type

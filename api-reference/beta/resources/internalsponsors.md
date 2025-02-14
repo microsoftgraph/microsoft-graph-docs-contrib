@@ -1,13 +1,14 @@
 ---
-title: "internalSponsors complex type"
-description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
+title: "internalSponsors resource type"
+description: "Identifies a relationship to another user in the tenant who can approve."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 10/04/2024
 ---
 
-# internalSponsors complex type
+# internalSponsors resource type
 
 Namespace: microsoft.graph
 

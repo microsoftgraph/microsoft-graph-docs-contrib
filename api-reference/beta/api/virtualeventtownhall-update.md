@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/18/2024
 ---
 
 # Update virtualEventTownhall
@@ -181,6 +182,12 @@ Content-Type: application/json
       "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
       "displayName": "Emilee Pham",
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+    }
+  ],
+  "externalEventInformation": [
+    {
+      "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",
+      "externalEventId": "myExternalEventId"
     }
   ]
 }

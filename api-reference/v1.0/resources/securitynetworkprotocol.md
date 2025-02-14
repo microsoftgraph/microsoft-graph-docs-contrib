@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: enumPageType
+ms.date: 03/06/2024
 ---
 
 # securityNetworkProtocol enum type

@@ -75,7 +75,7 @@ function Generate-Markdown {
             try {
                 $lines = Get-Content -Path $msaPermissionNoteFile -ErrorAction Stop
                 if ($lines -like "*$name*") {
-                    $markdown += "`n![personal Microsoft accounts][MSA] The *" + $name + "* delegated permission is available for consent in personal Microsoft accounts.`n"
+                    $markdown += "`n![personal Microsoft accounts][MSA] The *" + $name + "* delegated permission is also available for consent in personal Microsoft accounts.`n"
                 }
             } 
             catch {
@@ -135,13 +135,21 @@ function Update-FileContent {
         $beforeFirstHeader = $fileContents[0..($firstHeaderIndex - 1)]
         $afterSecondHeader = $fileContents[$secondHeaderIndex..($fileContents.Count - 1)]
 		
-		# Update ms.date
-		$today = Get-Date -Format "MM/dd/yyyy"
-		$beforeFirstHeader = $beforeFirstHeader -replace '^ms\.date:.*', "ms.date: $today"
+        # Trim any trailing empty lines
+        for ($i = $afterSecondHeader.Length - 1; $i -ge 0; $i--) {
+            if ($afterSecondHeader[$i] -ne "") {
+                break
+            }
+            $afterSecondHeader = $afterSecondHeader[0..($i - 1)]
+        }
+		
+        # Update ms.date
+        $today = Get-Date -Format "MM/dd/yyyy"
+        $beforeFirstHeader = $beforeFirstHeader -replace '^ms\.date:.*', "ms.date: $today"
 
         # Combine the parts with the new content
-        $updatedContent = $beforeFirstHeader + $NewContent.Split("`n") + $afterSecondHeader
-		
+        $updatedContent = $beforeFirstHeader + $NewContent + $afterSecondHeader
+
         # Write the updated content back to the file
         $updatedContent | Set-Content -Path $FilePath
     }

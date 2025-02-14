@@ -12,6 +12,8 @@ use Microsoft\Graph\Beta\Generated\Models\PasswordCredentialConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AppCredentialRestrictionType;
 use Microsoft\Graph\Beta\Generated\Models\KeyCredentialConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AppKeyCredentialRestrictionType;
+use Microsoft\Graph\Beta\Generated\Models\IdentifierUriConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IdentifierUriRestriction;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -59,6 +61,13 @@ $keyCredentialsKeyCredentialConfiguration2->setMaxLifetime(null);
 $keyCredentialsArray []= $keyCredentialsKeyCredentialConfiguration2;
 $applicationRestrictions->setKeyCredentials($keyCredentialsArray);
 
+$applicationRestrictionsIdentifierUris = new IdentifierUriConfiguration();
+$applicationRestrictionsIdentifierUrisNonDefaultUriAddition = new IdentifierUriRestriction();
+$applicationRestrictionsIdentifierUrisNonDefaultUriAddition->setRestrictForAppsCreatedAfterDateTime(new \DateTime('2024-01-01T10:37:00Z'));
+$applicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeAppsReceivingV2Tokens(true);
+$applicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeSaml(true);
+$applicationRestrictionsIdentifierUris->setNonDefaultUriAddition($applicationRestrictionsIdentifierUrisNonDefaultUriAddition);
+$applicationRestrictions->setIdentifierUris($applicationRestrictionsIdentifierUris);
 $requestBody->setApplicationRestrictions($applicationRestrictions);
 
 $result = $graphServiceClient->policies()->defaultAppManagementPolicy()->patch($requestBody)->wait();

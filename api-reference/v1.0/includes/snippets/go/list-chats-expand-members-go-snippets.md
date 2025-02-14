@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.UserItemChatsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemChatsRequestBuilderGetQueryParameters{
 	Expand: [] string {"members"},
 }
-configuration := &graphusers.UserItemChatsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemChatsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

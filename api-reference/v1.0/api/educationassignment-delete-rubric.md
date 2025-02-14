@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 07/31/2024
 ---
 
 # Delete educationRubric from educationAssignment

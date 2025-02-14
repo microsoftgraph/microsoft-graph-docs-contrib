@@ -5,6 +5,7 @@ author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 09/17/2024
 ---
 
 # eventMessage: permanentDelete
@@ -102,7 +103,6 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/permanentDelete
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

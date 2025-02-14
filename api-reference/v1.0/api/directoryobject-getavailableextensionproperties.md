@@ -5,6 +5,7 @@ author: "dkershaw10"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # directoryObject: getAvailableExtensionProperties
@@ -97,10 +98,6 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProp
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/directoryobject-getavailableextensionproperties-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getavailableextensionproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

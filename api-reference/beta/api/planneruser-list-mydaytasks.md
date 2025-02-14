@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "NupurGarg"
 ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List myDayTasks

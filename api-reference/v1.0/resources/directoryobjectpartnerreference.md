@@ -5,6 +5,7 @@ author: "keylimesoda"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # directoryObjectPartnerReference resource type

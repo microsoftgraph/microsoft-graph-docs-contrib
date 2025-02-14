@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 04/11/2024
 ---
 
 # workbookChartLegendFormat resource type

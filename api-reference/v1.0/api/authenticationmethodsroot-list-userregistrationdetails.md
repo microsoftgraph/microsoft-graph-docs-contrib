@@ -5,6 +5,7 @@ author: "kvenkit"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 07/30/2024
 ---
 
 # List userRegistrationDetails

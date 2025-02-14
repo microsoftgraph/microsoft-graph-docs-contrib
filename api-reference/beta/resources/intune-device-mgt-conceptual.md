@@ -4,6 +4,7 @@ description: "Lists Microsoft Graph API for Intune endpoints (REST) that define 
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
+ms.date: 04/01/2024
 ---
 
 # Device management in Microsoft Intune

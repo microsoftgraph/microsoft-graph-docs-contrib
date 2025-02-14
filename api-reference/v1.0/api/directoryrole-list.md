@@ -6,11 +6,15 @@ ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List directoryRoles
 
 Namespace: microsoft.graph
+
+> [!NOTE]
+> Microsoft recommends that you use the unified RBAC API instead of this API. The unified RBAC API provides more functionality and flexibility. For more information, see [List roleDefinitions](./rbacapplication-list-roledefinitions.md).
 
 List the directory roles that are activated in the tenant.
 
@@ -25,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directoryrole_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryrole-list-permissions.md)]
+
+[!INCLUDE [rbac-directory-role-apis-read](../includes/rbac-for-apis/rbac-directory-role-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -1,11 +1,12 @@
 ---
 title: "List driveProtectionUnits"
-description: "Get a list of the drive protection units that are associated with a OneDrive for Business protection policy."
+description: "Get a list of the drive protection units that are associated with a OneDrive for work or school protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 # List driveProtectionUnits
 
@@ -31,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/backupRestore/driveProtectionUnits
+GET /solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveProtectionUnits
 ```
 
@@ -60,6 +61,7 @@ The following example shows how to get a list of all the **driveProtectionUnits*
 #### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -67,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /solutions/backupRestore/driveProtectionUnits
+GET /solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit
 ```
 
 # [C#](#tab/csharp)
@@ -117,7 +119,7 @@ The following example shows the response.
 HTTP/1.1 200 OK
 
 {
-  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/driveProtectionUnits?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
   "value": [
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
@@ -126,6 +128,7 @@ HTTP/1.1 200 OK
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -159,7 +162,8 @@ HTTP/1.1 200 OK
       "directoryObjectId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "ibrahim@contoso.com", // Newly Added
-      "status": "protectRequested",
+      "status": "protected",
+      "protectionSources": "manual, dynamicRule",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -194,6 +198,7 @@ HTTP/1.1 200 OK
       "displayName": "Esmira Musayeva", // Newly Added
       "email": "esmira@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -227,7 +232,8 @@ HTTP/1.1 200 OK
       "directoryObjectId": "2e1d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
-      "status": "protected",
+      "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -261,6 +267,7 @@ HTTP/1.1 200 OK
       "displayName": "Rashmi Mishra ", // Newly Added
       "email": "eddyb@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -291,7 +298,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 2: List the driveProtectionUnits associated with a OneDrive for Business protection policy
+### Example 2: List the driveProtectionUnits associated with a OneDrive for work or school protection policy
 
 The following example shows how to list all the **driveProtectionUnits** associated with a **oneDriveForBusinessProtectionPolicy**.
 
@@ -365,6 +372,7 @@ HTTP/1.1 200 OK
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -399,6 +407,7 @@ HTTP/1.1 200 OK
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "ibrahim@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "dynamicRule",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -433,6 +442,7 @@ HTTP/1.1 200 OK
       "displayName": "Esmira Musayeva", // Newly Added
       "email": "esmira@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "dynamicRule",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -466,7 +476,8 @@ HTTP/1.1 200 OK
       "directoryObjectId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
-      "status": "protectRequested",
+      "status": "removeRequested",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -500,7 +511,8 @@ HTTP/1.1 200 OK
       "directoryObjectId": "2d1d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Jeffry Goh ", // Newly Added
       "email": "jeffry@contoso.com", // Newly Added
-      "status": "protectRequested",
+      "status": "protected",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

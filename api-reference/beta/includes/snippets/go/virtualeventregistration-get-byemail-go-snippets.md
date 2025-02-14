@@ -18,10 +18,10 @@ import (
 
 requestFilter := "email eq 'EmileeMPham@contoso.com'"
 
-requestParameters := &graphsolutions.SolutionsVirtualEventsWebinarItemRegistrationsRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.VirtualEventsWebinarsItemRegistrationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphsolutions.SolutionsVirtualEventsWebinarItemRegistrationsRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.VirtualEventsWebinarsItemRegistrationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
