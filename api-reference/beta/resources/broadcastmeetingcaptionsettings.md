@@ -26,7 +26,7 @@ Represents caption settings of a Microsoft Teams [live event](/microsoftteams/te
 
 > [!TIP]
 >
-> Translation languages cannot contain the same language code as the spoken language.
+> Translation languages can't contain the same language code as the spoken language.
 
 ### spokenLanguage values
 
@@ -108,7 +108,7 @@ The following table shows the supported language codes for translation languages
 | Tahitian                                 | ty      |
 | Thai (Thailand)                          | th      |
 | Tongan                                   | to      |
-| Turkish (Turkey)                         | tr      |
+| Turkish (Türkiye)                         | tr      |
 | Ukrainian (Ukraine)                      | uk      |
 | Urdu (Islamic Republic of Pakistan)      | ur      |
 | Vietnamese (Vietnam)                     | vi      |

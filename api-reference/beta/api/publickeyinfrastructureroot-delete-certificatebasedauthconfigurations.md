@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certif
 [!INCLUDE [sample-code](../includes/snippets/php/delete-certificatebasedauthpki-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-certificatebasedauthpki-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-certificatebasedauthpki-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

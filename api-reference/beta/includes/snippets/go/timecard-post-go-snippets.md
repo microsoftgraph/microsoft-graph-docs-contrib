@@ -19,17 +19,14 @@ requestBody := graphmodels.NewTimeCard()
 clockInEvent := graphmodels.NewTimeCardEvent()
 dateTime , err := time.Parse(time.RFC3339, "2019-03-18T00:00:00.000Z")
 clockInEvent.SetDateTime(&dateTime) 
+isAtApprovedLocation := true
+clockInEvent.SetIsAtApprovedLocation(&isAtApprovedLocation) 
 notes := graphmodels.NewItemBody()
 content := "Started late due to traffic in CA 237"
 notes.SetContent(&content) 
 contentType := graphmodels.TEXT_BODYTYPE 
 notes.SetContentType(&contentType) 
 clockInEvent.SetNotes(notes)
-additionalData := map[string]interface{}{
-	isAtApprovedLocation := true
-clockInEvent.SetIsAtApprovedLocation(&isAtApprovedLocation) 
-}
-clockInEvent.SetAdditionalData(additionalData)
 requestBody.SetClockInEvent(clockInEvent)
 notes := graphmodels.NewItemBody()
 content := "8 To 5 Inventory management"
@@ -51,17 +48,14 @@ timeCardBreak.SetNotes(notes)
 start := graphmodels.NewTimeCardEvent()
 dateTime , err := time.Parse(time.RFC3339, "2019-03-18T02:00:00.000Z")
 start.SetDateTime(&dateTime) 
+isAtApprovedLocation := true
+start.SetIsAtApprovedLocation(&isAtApprovedLocation) 
 notes := graphmodels.NewItemBody()
 content := "Reduced break to make up for lost time"
 notes.SetContent(&content) 
 contentType := graphmodels.TEXT_BODYTYPE 
 notes.SetContentType(&contentType) 
 start.SetNotes(notes)
-additionalData := map[string]interface{}{
-	isAtApprovedLocation := true
-start.SetIsAtApprovedLocation(&isAtApprovedLocation) 
-}
-start.SetAdditionalData(additionalData)
 timeCardBreak.SetStart(start)
 
 breaks := []graphmodels.TimeCardBreakable {

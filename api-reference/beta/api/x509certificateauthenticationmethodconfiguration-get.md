@@ -136,6 +136,10 @@ Content-Type: application/json
     "issuerHintsConfiguration": {
         "state": "disabled"
     },
+    "crlValidationConfiguration": {
+        "state": "disabled",
+        "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []
+    },
     "includeTargets": [
         {
             "targetType": "group",
