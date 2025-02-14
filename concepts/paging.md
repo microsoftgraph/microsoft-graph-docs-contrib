@@ -27,13 +27,13 @@ Learn more about pagination through the following video.
 
 ## How paging works
 
-## Server-side paging
+### Server-side paging
 
 In server-side paging, the Microsoft Graph service returns a default number of results in a single page without the client specifying the number of results to return using `$top`. For example, the `GET /users` endpoint returns a default of 100 results in a single page.
 
 When there's at least one more page of data available, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results. You use this URL to query for the next page of results. Microsoft Graph will continue to return a reference to the next page of results in the `@odata.nextLink` property with each response until there are no more pages of results to retrieve. To read all results, you must continue to call Microsoft Graph with the `@odata.nextLink` property returned in each response until the `@odata.nextLink` property is no longer returned.
 
-## Client-side paging
+### Client-side paging
 
 In client-side paging, a client app specifies the number of results it wants Microsoft Graph to return in a single page by using the [$top](query-parameters.md#top-parameter), [$skip](query-parameters.md#skip-parameter), or [$skipToken](query-parameters.md#skiptoken-parameter) query parameters. Support for client-side paging, including the number of results that the client can request for in a single page depends on the API and the query being performed. For example, the `/users` endpoint supports `$top` but not `$skip`.
 
