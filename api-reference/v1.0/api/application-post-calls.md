@@ -1372,24 +1372,10 @@ Content-Type: application/json
                   "acsUser": {
                     "@odata.type": "#microsoft.graph.identity",
                     "id": "bb05cfe0-0344-4747-9fa1-489c7e53d546_00000022-175f-5180-3397-b23a0d0047e8",
-                    "identityProvider": "None",
-                    "acsResourceId": "bb05cfe0-0344-4747-9fa1-489c7e53d546"
+                    "identityProvider": "None"
                   }
-                },
-                "endpointType": "default",
-                "endpointId": "2dd4321c-539a-424a-913e-12b176b7adba",
-                "clientVersion": "Microsoft.Skype.Calling.Test.Ccts/1.19.4966.0",
-                "participantId": "e20770da-e8ac-4210-bc2e-25b18af6fdaa"
-              },
-              "mediaStreams": [
-                {
-                  "@odata.type": "#microsoft.graph.mediaStream",
-                  "mediaType": "audio",
-                  "label": "main-audio",
-                  "sourceId": "402",
-                  "direction": "sendReceive",
-                  "serverMuted": false
                 }
+              }
               ],
               "isMuted": false,
               "isOnHold": false,
