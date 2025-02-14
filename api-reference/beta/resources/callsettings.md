@@ -8,20 +8,51 @@ ms.subservice: "cloud-communications"
 ms.date: 02/01/2025
 ---
 
+
 # callSettings resource type
 
-Namespace: microsoft.graph.callSettings
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the available call settings.
 
-## Methods
+Inherits from [entity](../resources/entity.md).
 
-| Operation                                          |  Return Type                                                 |  Description                              |
-|--------------------------                          |--------------------------------------------------------------|-------------------------------------------|
-| [List All Delegates](../api/calldelegate-list.md)  |  [delegate](../resources/delegationsettings.md) collection   | Retrieve all delegates for a user         |
-| [Get Delegate by ID](../api/calldelegate-get.md)   |  [delegate](../resources/delegationsettings.md)              | Fetch details of a specific delegate      |
-| [List All Delegators](../api/calldelegator-list.md)|  [delegator](../resources/delegationsettings.md) collection  | Retrieve all delegators for a user        |
-| [Get Delegator by ID](../api/calldelegator-get.md) |  [delegator](../resources/delegationsettings.md)             | Fetch details of a specific delegator     |
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/callsettings-list.md)|[callSettings](../resources/callsettings.md) collection|Get a list of the callSettings objects and their properties.|
+|[Get](../api/callsettings-get.md)|[callSettings](../resources/callsettings.md)|Read the properties and relationships of a callSettings object.|
+|[List delegates](../api/callsettings-list-delegates.md)|[delegationSettings](../resources/delegationsettings.md) collection|Retrieve all delegates for a user  |
+|[List delegators](../api/callsettings-list-delegators.md)|[delegationSettings](../resources/delegationsettings.md) collection|Retrieve all delegators for a user|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|delegates|[delegationSettings](../resources/delegationsettings.md) collection|Represents the delegate settings.|
+|delegators|[delegationSettings](../resources/delegationsettings.md) collection|Represents the delegator settings.|
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.callSettings",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.callSettings",
+  "id": "String (identifier)"
+}
+```
 

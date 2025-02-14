@@ -10,52 +10,51 @@ ms.date: 02/01/2025
 
 # delegationSettings resource type
 
-Namespace: microsoft.graph.delegationSettings
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the properties for a [delagator or delegate](../resources/callsettings.md).
 
-## Properties
+Inherits from [entity](../resources/entity.md).
 
+This resource is an open type.
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/callsettings-list-delegates.md)|[delegationSettings](../resources/delegationsettings.md) collection|Get a list of the delegationSettings objects and their properties.|
+|[Get](../api/delegationsettings-get.md)|[delegationSettings](../resources/delegationsettings.md)|Read the properties and relationships of a delegationSettings object.|
+
+## Properties
 |Property|Type|Description|
-|--------------------------------------------------|-------------- |-------------|
-| **id**                                           |String         |Unique identifier of the delegator/delegate. |
-| **createdDateTime**                              |DateTimeOffset | Timestamp when the delegator/delegate entry was created. |
-| **isActive**                                     |Boolean        | Indicates if the delegator/delegate relationship is currently active. |
-| **allowedActions**                               |[Allowed actions](../resources/delegateAllowedActions.md) entity      | Represent the allowed actions by the delegator/delegate. |
+|:---|:---|:---|
+|allowedActions|[delegateAllowedActions](../resources/delegateallowedactions.md)|Represent the allowed actions by the delegator/delegate.|
+|createdDateTime|DateTimeOffset|Timestamp when the delegator/delegate entry was created.|
+|id|String|Unique identifier of the delegator/delegate. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|isActive|Boolean|Indicates if the delegator/delegate relationship is currently active.|
 
 ## Relationships
-
-|Relationship|Type|Description|
-|:---|:---|:---|
-|callSettings|[call settings](../resources/callsettings.md)| Provides the settings for call settings.|
+None.
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.delegationSettings"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.delegationSettings",
+  "baseType": "microsoft.graph.entity",
+  "openType": true
 }
 -->
 ``` json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('{user_id}')/communications/callSettings/delegators",
-  "value": [
-    {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "createdDateTime": "0001-01-01T00:00:00Z",
-      "isActive": true,
-      "allowedActions": {
-        "makeCalls": true,
-        "receiveCalls": true,
-        "manageCallAndDelegateSettings": true,
-        "pickUpHeldCalls": true,
-        "joinActiveCalls": true
-      }
-    }
-  ]
+  "@odata.type": "#microsoft.graph.delegationSettings",
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "isActive": "Boolean",
+  "allowedActions": {
+    "@odata.type": "microsoft.graph.delegateAllowedActions"
+  }
 }
 ```
