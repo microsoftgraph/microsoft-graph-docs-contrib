@@ -1,10 +1,10 @@
 ---
 title: "List delegators"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "API description to list the delegators"
+author: "garchiro7"
 ms.date: 11/19/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

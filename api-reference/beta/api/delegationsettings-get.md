@@ -1,10 +1,10 @@
 ---
 title: "Get delegationSettings"
 description: "Read the properties and relationships of a delegationSettings object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "garchiro7"
 ms.date: 11/19/2024
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
