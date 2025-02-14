@@ -16,23 +16,10 @@ Create a new [auditLogQuery](../resources/security-auditlogquery.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](../includes/permissions/security-auditcoreroot-post-auditlogqueries-permissions.md).
+Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-
-|Microsoft 365 service|Delegated (work or school account)|Delegated (personal Microsoft account)|Application|
-|:---|:---|:---|:---|
-|Microsoft OneDrive|AuditLogsQuery-OneDrive.Read.All|Not supported|AuditLogsQuery-OneDrive.Read.All|
-|Microsoft Exchange|AuditLogsQuery-Exchange.Read.All|Not supported|AuditLogsQuery-Exchange.Read.All|
-|Microsoft SharePoint|AuditLogsQuery-SharePoint.Read.All|Not supported|AuditLogsQuery-SharePoint.Read.All|
-|Data Loss Protection for Endpoint|AuditLogsQuery-Endpoint.Read.All|Not supported|AuditLogsQuery-Endpoint.Read.All|
-|Microsoft Dynamics CRM|AuditLogsQuery-CRM.Read.All|Not supported|AuditLogsQuery-CRM.Read.All|
-|Microsoft Entra|AuditLogsQuery-Entra.Read.All|Not supported|AuditLogsQuery-Entra.Read.All|
-|All Audit Logs|AuditLogsQuery.Read.All|Not supported|AuditLogsQuery.Read.All|
-
+<!-- { "blockType": "permissions", "name": "security_auditcoreroot_post_auditlogqueries" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-auditcoreroot-post-auditlogqueries-permissions.md)]
 
 ## HTTP request
 

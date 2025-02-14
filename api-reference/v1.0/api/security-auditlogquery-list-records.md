@@ -19,12 +19,10 @@ Get a list of the [auditLogRecord](../resources/security-auditlogrecord.md) obje
 
 ## Permissions
 
-Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](../includes/permissions/security-auditlogquery-list-records-permissions.md).
+Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_auditlogquery_list_records" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-auditlogquery-list-records-permissions.md)]
 
 ## HTTP request
 
