@@ -41,7 +41,7 @@ Permissions for the following HTTP request:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /users/{userId}/onlineMeetings/{meetingId}
+PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 <!-- { 
@@ -86,24 +86,31 @@ The following table lists the properties that can be updated. In the request bod
 The last column indicates whether updating this property will take effect for an in-progress meeting.
 
 | Property                    | Type                                                       | Description                                                                         | Applies to in-progress meetings?    |
-|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
-| allowAttendeeToEnableCamera | Boolean                                                    | Indicates whether attendees can turn on their camera.                               | Yes                          |
-| allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                          |
+|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------------ |
+| allowAttendeeToEnableCamera | Boolean                                                    | Indicates whether attendees can turn on their camera.                               | Yes                                 |
+| allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                                 |
 | allowBreakoutRooms          | Boolean                                                    | Indicates whether breakout rooms are enabled for the meeting.                       | No                                  |
-| allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes                          |
-| allowLiveShare              | meetingLiveShareOptions                                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
-| allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                          |
-| allowPowerPointSharing      | Boolean                                                    | Indicates whether PowerPoint live is enabled for the meeting.                       | No                                  |
-| allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                          |
 | allowedLobbyAdmitters       | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. | Yes                                 |
-| allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
-| endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                           |
-| isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                          |
-| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                          |
-| participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                           |
-| recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                           |
-| startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                           |
-| subject                     | String                                                     | The subject of the online meeting.                                                  | No                           |
+| allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes                                 |
+| allowLiveShare              | meetingLiveShareOptions                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
+| allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                                 |
+| allowPowerPointSharing      | Boolean                                                    | Indicates whether PowerPoint live is enabled for the meeting.                       | No                                  |
+
+| allowRecording | Boolean | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). | Yes                                 |
+| allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                                 |
+| allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). | Yes                                 |
+| allowWhiteboard             | Boolean                                                    | Indicates whether whiteboard is enabled for the meeting.                            | No                                  |
+| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
+| broadcastSettings (deprecated)    | [broadcastMeetingSettings](broadcastmeetingsettings.md)| Settings related to a live event.                                                 |
+No                                  |
+| endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                                  |
+| isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                                 |
+| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                                 |
+| participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                                  |
+| recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                                  |
+| startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                                  |
+| subject                     | String                                                     | The subject of the online meeting.                                                  | No                                  |
+| watermarkProtection         | [watermarkProtectionValues](watermarkprotectionvalues.md)  | Specifies whether the client application should apply a watermark a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
 
 > [!NOTE]
 >
