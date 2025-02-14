@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 12/10/2024
 ---
 
-# List items
+# List items in the recycle bin
 
 Namespace: microsoft.graph
 

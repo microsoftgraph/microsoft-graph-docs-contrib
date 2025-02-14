@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# List items
+# List items in a list
 
 Namespace: microsoft.graph
 
