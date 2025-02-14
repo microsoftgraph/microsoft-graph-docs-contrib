@@ -36,7 +36,7 @@ GET /users/{id | userPrincipalName}/ownedDevices
 
 This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. For more information on properties that support query parameters, see the [device resource type](../resources/device.md#properties). 
 
-Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+The use of `$filter` with this API requires the **ConsistencyLevel** header set to `eventual` and `$count`. However, in such scenarios, you can't use `$expand` in the same request as it isn't supported with advanced query parameters. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 | Header       | Value |
