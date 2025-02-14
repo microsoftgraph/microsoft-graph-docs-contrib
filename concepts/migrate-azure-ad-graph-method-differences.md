@@ -7,16 +7,17 @@ ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: entra-applications
-ms.date: 02/14/2024
+ms.date: 02/14/2025
 #Customer intent: As a developer, I want to to understand how actions differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Differences in actions between Azure AD Graph and Microsoft Graph
 
-This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+> This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
 Some Azure Active Directory (Azure AD) Graph actions have changed. If an action is **not** shown in this list, it's already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
 
+[!div class="mx-tdBreakAll"]
 |Azure AD Graph <br>(v1.6) function or action |Microsoft Graph<br>(resource/method)|Comments|
 |---|---|---|
 | getAvailableExtensionProperties | beta&nbsp;-&nbsp;_Not available_ <br> v1.0&nbsp;-&nbsp;[directoryObjects/getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties) |  |
