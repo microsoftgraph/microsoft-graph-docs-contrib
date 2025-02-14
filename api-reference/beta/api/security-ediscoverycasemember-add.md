@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) to an [ediscoveryCase](../resources/security-ediscoverycase.md). The [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) can be can be one of two types: a user or a role group.
+Add an [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) to an [ediscoveryCase](../resources/security-ediscoverycase.md). The [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) can be one of two types: a user or a role group.
 
 ## Permissions
 
@@ -51,9 +51,9 @@ POST security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
 |Property|Type|Description|
 |:---|:---|:---|
 |recipientType|microsoft.graph.security.recipientType|Specifies the recipient type of the eDiscovery case member. The possible values are: `user`, `roleGroup`, `unknownFutureValue`. Required.|
-|id|String|The id of the eDiscovery case member. If not specified, then either **displayName** (for role group) or **smtpAddress** (for user) must be provided.|
-|displayName|String|The display name of the eDiscovery case member. Allowed only for case members of type **roleGroup**. If not specified, then **id** must be provided. |
-|smtpAddress|String|The smtp address of the eDiscovery case member. Allowed only for case members of type **user**. If not specified, then **id** must be provided. |
+|ID|String|The ID of the eDiscovery case member. If not specified, then either **displayName** (for role group) or **smtpAddress** (for user) must be provided.|
+|displayName|String|The display name of the eDiscovery case member. Allowed only for case members of type **roleGroup**. If not specified, then **ID** must be provided. |
+|smtpAddress|String|The smtp address of the eDiscovery case member. Allowed only for case members of type **user**. If not specified, then **ID** must be provided. |
 
 ## Response
 
@@ -61,13 +61,13 @@ If successful, this method returns a `200 OK` response code and the added [micro
 
 ## Examples
 
-### Example 1: Add a case member of type **user** using **smtAddress**
+### Example 1: Add a case member of type **user** using **smtpAddress**
 #### Request
 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_ediscoverycasemember"
+  "name": "user/smtp request"
 }
 -->
 ``` http
@@ -86,7 +86,8 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "user/smtp response"
+  "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
 ``` http
@@ -107,7 +108,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_ediscoverycasemember"
+  "name": "roleGroup/displayName request"
 }
 -->
 ``` http
@@ -125,7 +126,8 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "roleGroup/displayName response",
+  "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
 ``` http
@@ -146,7 +148,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_ediscoverycasemember"
+  "name": "user/id request"
 }
 -->
 ``` http
@@ -165,7 +167,8 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "user/id response",
+  "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
 ``` http
@@ -186,7 +189,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_ediscoverycasemember"
+  "name": "roleGroup/id request"
 }
 -->
 ``` http
@@ -204,7 +207,8 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "roleGroup/id response",
+  "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
 ``` http
