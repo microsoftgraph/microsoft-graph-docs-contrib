@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and the added [micro
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "user/smtp request"
+  "name": "user/smtp"
 }
 -->
 ``` http
@@ -86,7 +86,7 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "name": "user/smtp response"
+  "name": "user/smtp"
   "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
@@ -108,7 +108,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "roleGroup/displayName request"
+  "name": "roleGroup/displayName"
 }
 -->
 ``` http
@@ -126,7 +126,7 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "name": "roleGroup/displayName response",
+  "name": "roleGroup/displayName",
   "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
@@ -148,7 +148,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "user/id request"
+  "name": "user/id"
 }
 -->
 ``` http
@@ -167,7 +167,7 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "name": "user/id response",
+  "name": "user/id",
   "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
@@ -189,7 +189,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "roleGroup/id request"
+  "name": "roleGroup/id"
 }
 -->
 ``` http
@@ -207,7 +207,7 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "name": "roleGroup/id response",
+  "name": "roleGroup/id",
   "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
