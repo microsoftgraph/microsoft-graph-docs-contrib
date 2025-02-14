@@ -20,15 +20,10 @@ var requestBody = new Schedule
 	OfferShiftRequestsEnabled = true,
 	TimeOffRequestsEnabled = true,
 	StartDayOfWeek = DayOfWeekObject.Tuesday,
+	IsActivitiesIncludedWhenCopyingShiftsEnabled = true,
 	IsCrossLocationShiftsEnabled = true,
 	IsCrossLocationShiftRequestApprovalRequired = true,
 	TimeClockEnabled = true,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isActivitiesIncludedWhenCopyingShiftsEnabled" , true
-		},
-	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

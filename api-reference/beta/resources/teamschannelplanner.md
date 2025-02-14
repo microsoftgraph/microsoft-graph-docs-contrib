@@ -40,7 +40,6 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
   ],
   "keyProperty": "id",
   "baseType":"microsoft.graph.entity",  
@@ -65,4 +64,3 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-
