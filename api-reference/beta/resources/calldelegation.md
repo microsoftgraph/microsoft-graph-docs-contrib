@@ -50,10 +50,10 @@ To access these APIs, the following configurations are required:
 
 | Operation                                          |  Return Type                                                 |  Description                              |
 |--------------------------                          |--------------------------------------------------------------|-------------------------------------------|
-| [List All Delegates](../api/calldelegate-list.md)  |  [delegate](../resources/delegationsettings.md) collection   | Retrieve all delegates for a user         |
-| [Get Delegate by ID](../api/calldelegate-get.md)   |  [delegate](../resources/delegationsettings.md)              | Fetch details of a specific delegate      |
-| [List All Delegators](../api/calldelegator-list.md)|  [delegator](../resources/delegationsettings.md) collection  | Retrieve all delegators for a user        |
-| [Get Delegator by ID](../api/calldelegator-get.md) |  [delegator](../resources/delegationsettings.md)             | Fetch details of a specific delegator     |
+| [List All Delegates](../api/callsettings-list-delegates.md)  |  [delegate](../resources/delegationsettings.md) collection   | Retrieve all delegates for a user         |
+| [Get Delegate by ID](../api/delegationsettings-get.md)   |  [delegate](../resources/delegationsettings.md)              | Fetch details of a specific delegate      |
+| [List All Delegators](../api/callsettings-list-delegators.md)|  [delegator](../resources/delegationsettings.md) collection  | Retrieve all delegators for a user        |
+| [Get Delegator by ID](../api/delegationsettings-get.md) |  [delegator](../resources/delegationsettings.md)             | Fetch details of a specific delegator     |
 
 ## More Resources
 
