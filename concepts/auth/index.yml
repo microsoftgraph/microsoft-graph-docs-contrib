@@ -5,10 +5,11 @@ summary: Learn how to authenticate and get your app authorized to securely acces
 
 metadata: 
   ms.topic: landing-page
-  ms.date: 02/13/2025
+  ms.date: 02/14/2025
   author: FaithOmbongi
   ms.author: ombongifaith
-  ms.reviewer: jawoods  
+  ms.reviewer: jawoods
+  ms.subservice: entra-applications
   ms.custom: graphiamtop20   
 
 landingContent:
