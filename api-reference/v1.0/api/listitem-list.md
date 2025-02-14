@@ -165,7 +165,7 @@ The following example shows a request.
   "blockType": "request", 
   "name": "get-list-items-with-filter", 
   "scopes": "sites.read.all",
-  "sampleKeys": ["contoso.sharepoint.com,48f1898f-77d9-4a1b-bddc-1f49bb6dc134,7206fc09-e4af-48b3-8730-ed7321396d7a", "243bca4b-4e5e-45af-b37d-25f6135a740d"] 
+  "sampleKeys": ["contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE", "243bca4b-4e5e-45af-b37d-25f6135a740d"] 
   } -->
 ```http
 GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/243bca4b-4e5e-45af-b37d-25f6135a740d/items?expand=fields(select=Name,Color,Quantity)&$filter=fields/Quantity lt 600
