@@ -101,7 +101,7 @@ The last column indicates whether updating this property will take effect for an
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). | Yes                                 |
 | allowWhiteboard             | Boolean                                                    | Indicates whether whiteboard is enabled for the meeting.                            | No                                  |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
-| broadcastSettings (deprecated)    | [broadcastMeetingSettings](broadcastmeetingsettings.md)| Settings related to a live event.                                                 |
+| broadcastSettings (deprecated)    | [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md)| Settings related to a live event.                                                 |
 No                                  |
 | endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                                  |
 | isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                                 |
@@ -110,7 +110,7 @@ No                                  |
 | recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                                  |
 | startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                                  |
 | subject                     | String                                                     | The subject of the online meeting.                                                  | No                                  |
-| watermarkProtection         | [watermarkProtectionValues](watermarkprotectionvalues.md)  | Specifies whether the client application should apply a watermark a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
+| watermarkProtection         | [watermarkProtectionValues](../resources/watermarkprotectionvalues.md)  | Specifies whether the client application should apply a watermark a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
 
 > [!NOTE]
 >
