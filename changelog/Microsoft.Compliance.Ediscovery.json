@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "siteSource",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-sitesources?view=graph-rest-beta) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-beta) resource.",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-sitesources?view=graph-rest-beta) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-sitesource?view=graph-rest-beta) resource.",
           "Target":"siteSource"
         },
         {
@@ -97,7 +97,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "siteSource",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-sitesources?view=graph-rest-1.0) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-1.0) resource.",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-sitesources?view=graph-rest-1.0) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-sitesource?view=graph-rest-1.0) resource.",
           "Target":"siteSource"
         },
         {
