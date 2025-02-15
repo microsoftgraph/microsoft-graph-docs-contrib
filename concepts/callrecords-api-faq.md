@@ -54,7 +54,7 @@ No, the call records API doesn't return call records older than 30 days. Request
 
 ## Why is my first call record notification delayed?
 
-Your call record notification can be delayed because it can take up to 150 minutes for the service to make the **first** version of a call record available. If you experience a longer delay for delivery of the first call record version, check for outages reported by the call records API team in the **Health** tab of the [Teams Admin Portal](https://admin.teams.microsoft.com/). Also, you can open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team.
+Your call record notification can be delayed because it can take up to 150 minutes for the service to make the **first** version of a call record available. If you experience a longer delay for delivery of the first call record version, check for outages reported by the call records API team in the **Health** tab of the [Teams Admin portal](https://admin.teams.microsoft.com/). Also, you can open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team.
 
 ## Why are subsequent versions of my call record delayed?
 
@@ -102,4 +102,4 @@ The following are some reasons why you might encounter a `404 Not Found` error:
 
 * **Recent call**: If the call was made within the last 150 minutes, the call record might not be generated yet. Wait 150 minutes after the call ended and try again.
 * **Old call**: If the call is older than 30 days, the call records API returns a `404 Not Found` error by design.
-* **Other issues**: If neither of the reasons apply, check for any outages reported by the call records API team in the **Health** tab of the [Teams Admin Portal](https://admin.teams.microsoft.com/). Also, you can open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team for assistance.
+* **Other issues**: If neither of the reasons apply, check for any outages reported by the call records API team in the **Health** tab of the [Teams Admin portal](https://admin.teams.microsoft.com/). Also, you can open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team for assistance.
