@@ -1,5 +1,5 @@
 ---
-title: "Delete custodian userSource"
+title: "Delete userSource"
 description: "Delete a userSource object associated with an ediscoveryCustodian."
 author: "manjarisenthil"
 ms.date: 02/11/2025
@@ -8,7 +8,7 @@ ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Delete custodian userSource
+# Delete userSource
 
 Namespace: microsoft.graph.security
 
