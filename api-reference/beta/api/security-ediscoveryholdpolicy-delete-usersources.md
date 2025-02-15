@@ -1,6 +1,6 @@
 ---
 title: "Delete userSource"
-description: "Delete a userSource object."
+description: "Delete a userSource object associated with an ediscoveryHoldPolicy."
 author: "manjarisenthil"
 ms.date: 02/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [userSource](../resources/security-usersource.md) object.
+Delete a [userSource](../resources/security-usersource.md) object associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -62,7 +62,6 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/4c551bc5-f6f8-435c-8391-d1a08f1ffd5b/legalHolds/2114ada2-3958-4945-bb6e-66fe9fca4772/userSources/08345ae2-bc5a-4d71-a18b-c490993959ee
 ```
-
 
 ### Response
 

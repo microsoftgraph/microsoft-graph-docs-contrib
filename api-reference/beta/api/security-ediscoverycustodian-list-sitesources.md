@@ -1,6 +1,6 @@
 ---
-title: "List custodian siteSources"
-description: "Get the siteSource resources associated with an eDiscovery custodian."
+title: "List siteSources"
+description: "Get a list of the siteSource objects associated with an ediscoveryCustodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -8,7 +8,8 @@ doc_type: apiPageType
 ms.date: 10/23/2024
 ---
 
-# List custodian siteSources
+# List siteSources
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

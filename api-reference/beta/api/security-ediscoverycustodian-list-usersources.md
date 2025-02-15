@@ -1,5 +1,5 @@
 ---
-title: "List custodian userSources"
+title: "List userSources"
 description: "Get the userSource resources associated with an eDiscovery custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/23/2024
 ---
 
-# List custodian userSources
+# List userSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

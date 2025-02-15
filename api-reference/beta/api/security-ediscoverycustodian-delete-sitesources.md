@@ -1,6 +1,6 @@
 ---
-title: "Delete custodian siteSource"
-description: "Delete a siteSource object associated with an eDiscovery custodian."
+title: "Delete siteSource"
+description: "Delete a siteSource object associated with an ediscoveryCustodian."
 author: "manjarisenthil"
 ms.date: 02/11/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Delete custodian siteSource
+# Delete siteSource
 
 Namespace: microsoft.graph.security
 

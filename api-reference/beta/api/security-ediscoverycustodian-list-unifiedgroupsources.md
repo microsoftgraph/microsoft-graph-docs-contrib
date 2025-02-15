@@ -1,6 +1,6 @@
 ---
-title: "List custodian unifiedGroupSources"
-description: "Get a list of the custodian's unifiedGroupSource objects and their properties."
+title: "List unifiedGroupSources"
+description: "Get a list of the unifiedGroupSource objects associated with an ediscoveryCustodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"

@@ -1,6 +1,6 @@
 ---
 title: "Delete userSource"
-description: "Delete a userSource object."
+description: "Delete a userSource object associated with an ediscoveryHoldPolicy."
 author: "manjarisenthil"
 ms.date: 02/05/2025
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-Delete a [userSource](../resources/security-usersource.md) object.
+Delete a [userSource](../resources/security-usersource.md) object associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

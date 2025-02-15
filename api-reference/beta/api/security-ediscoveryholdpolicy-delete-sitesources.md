@@ -1,6 +1,6 @@
 ---
 title: "Delete siteSource"
-description: "Delete a siteSource object."
+description: "Delete a siteSource object associated with an ediscoveryHoldPolicy."
 author: "manjarisenthil"
 ms.date: 02/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [siteSource](../resources/security-sitesource.md) object.
+Delete a [siteSource](../resources/security-sitesource.md) object associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

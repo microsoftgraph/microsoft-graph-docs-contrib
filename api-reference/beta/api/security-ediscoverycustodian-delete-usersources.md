@@ -1,6 +1,6 @@
 ---
 title: "Delete custodian userSource"
-description: "Delete a userSource object associated with an eDiscovery custodian."
+description: "Delete a userSource object associated with an ediscoveryCustodian."
 author: "manjarisenthil"
 ms.date: 02/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [userSource](../resources/security-userSource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
+Delete a [userSource](../resources/security-usersource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
