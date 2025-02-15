@@ -13,10 +13,34 @@
         {
           "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
           "ApiChange": "Method",
+          "ChangedApiName": "unifiedGroupSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-delete-unifiedgroupsources?view=graph-rest-beta) method to the [unifiedGroupSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-unifiedgroupsource?view=graph-rest-beta) resource.",
+          "Target":"unifiedGroupSource"
+        },
+        {
+          "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
+          "ApiChange": "Method",
           "ChangedApiName": "userSource",
           "ChangeType": "Addition",
           "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-usersources?view=graph-rest-beta) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-beta) resource.",
           "Target":"userSource"
+        },
+        {
+          "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
+          "ApiChange": "Method",
+          "ChangedApiName": "userSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-usersources?view=graph-rest-beta) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-beta) resource.",
+          "Target":"userSource"
+        },
+        {
+          "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
+          "ApiChange": "Method",
+          "ChangedApiName": "siteSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-sitesources?view=graph-rest-beta) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-beta) resource.",
+          "Target":"siteSource"
         },
         {
           "Id":"040f8df8-d943-4012-b3e7-908849a51f57",
@@ -47,10 +71,34 @@
         {
           "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
           "ApiChange": "Method",
+          "ChangedApiName": "unifiedGroupSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-delete-unifiedgroupsources?view=graph-rest-1.0) method to the [unifiedGroupSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-unifiedgroupsource?view=graph-rest-1.0) resource.",
+          "Target":"unifiedGroupSource"
+        },
+        {
+          "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
+          "ApiChange": "Method",
           "ChangedApiName": "userSource",
           "ChangeType": "Addition",
           "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-usersources?view=graph-rest-1.0) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-1.0) resource.",
           "Target":"userSource"
+        },
+        {
+          "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
+          "ApiChange": "Method",
+          "ChangedApiName": "userSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-usersources?view=graph-rest-1.0) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-1.0) resource.",
+          "Target":"userSource"
+        },
+        {
+          "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
+          "ApiChange": "Method",
+          "ChangedApiName": "siteSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-sitesources?view=graph-rest-1.0) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-1.0) resource.",
+          "Target":"siteSource"
         },
         {
           "Id":"0012bf5d-e9e1-40eb-b3a1-19926204bc88",
