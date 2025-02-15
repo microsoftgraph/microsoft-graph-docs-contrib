@@ -25,7 +25,7 @@ Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence)
 
 ### Sites and lists
 
-Enabled the `$filter` query parameter for the [list](/graph/api/listitem-list) operation of the [listItem]() resource. For more information, see [Get filtered SharePoint list items with specific fields](/graph/api/listitem-list#example-2-get-filtered-list-items-with-specific-fields).
+Enabled the `$filter` query parameter for the [list](/graph/api/listitem-list) operation of the [listItem](/graph/api/resources/listitem) resource. For more information, see [Get filtered SharePoint list items with specific fields](/graph/api/listitem-list#example-2-get-filtered-list-items-with-specific-fields).
 
 ### Teamwork and communications | Calls and online meetings
 
