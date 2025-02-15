@@ -366,6 +366,18 @@ items:
       href: ../../api/security-ediscoverycustodian-removehold.md
     - name: Get last index operation
       href: ../../api/security-ediscoverycustodian-list-lastindexoperation.md
+    - name: List site sources
+      href: ../../api/security-ediscoverycustodian-list-sitesources.md
+    - name: Create site source
+      href: ../../api/security-ediscoverycustodian-post-sitesources.md
+    - name: List unified group sources
+      href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
+    - name: Create unified group source
+      href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
+    - name: List user sources
+      href: ../../api/security-ediscoverycustodian-list-usersources.md
+    - name: Create user source
+      href: ../../api/security-ediscoverycustodian-post-usersources.md
     - name: Site source
       items:
       - name: Site source
@@ -373,19 +385,9 @@ items:
       - name: List
         href: ../../api/security-ediscoverycustodian-list-sitesources.md
       - name: Create
-        href: ../../api/security-ediscoverycustodian-post-sitesources.md
+        href: ../../api/security-ediscoveryholdpolicy-post-sitesources.md
       - name: Delete
-        href: ../../api/security-ediscoverycustodian-delete-sitesources.md
-    - name: Unified group source
-      items:
-      - name: Unified group source
-        href: ../../resources/security-unifiedgroupsource.md
-      - name: List
-        href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
-      - name: Create
-        href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
-      - name: Delete
-        href: ../../api/security-ediscoverycustodian-delete-unifiedgroupsources.md
+        href: ../../api/security-ediscoveryholdpolicy-delete-sitesources.md
     - name: User source
       items:
       - name: User source
@@ -393,9 +395,15 @@ items:
       - name: List
         href: ../../api/security-ediscoverycustodian-list-usersources.md
       - name: Create
-        href: ../../api/security-ediscoverycustodian-post-usersources.md
+        href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
       - name: Delete
-        href: ../../api/security-ediscoverycustodian-delete-usersources.md
+        href: ../../api/security-ediscoveryholdpolicy-delete-usersources.md
+    - name: Unified group source
+      items:
+      - name: Unified group source
+        href: ../../resources/security-unifiedgroupsource.md
+      - name: List
+        href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
   - name: eDiscovery noncustodial data source
     items:
     - name: eDiscovery noncustodial data source
@@ -435,7 +443,7 @@ items:
       - name: Site source
         href: ../../resources/security-sitesource.md
       - name: List
-        href: ../../api/security-ediscoveryholdpolicy-list-sitesources.md
+        href: ../../api/security-ediscoverycustodian-list-sitesources.md
       - name: Create
         href: ../../api/security-ediscoveryholdpolicy-post-sitesources.md
       - name: Delete
@@ -445,7 +453,7 @@ items:
       - name: User source
         href: ../../resources/security-usersource.md
       - name: List
-        href: ../../api/security-ediscoveryholdpolicy-list-usersources.md
+        href: ../../api/security-ediscoverycustodian-list-usersources.md
       - name: Create
         href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
       - name: Delete
@@ -506,14 +514,30 @@ items:
       href: ../../api/security-ediscoveryreviewset-addtoreviewset.md
     - name: List files
       href: ../../api/security-ediscoveryreviewset-list-files.md
+    - name: List queries
+      href: ../../api/security-ediscoveryreviewset-list-queries.md
+    - name: Create review set query
+      href: ../../api/security-ediscoveryreviewset-post-queries.md
     - name: eDiscovery review set query
-      items:  
+      items:
+      - name: eDiscovery review set query
+        href: ../../resources/security-ediscoveryreviewsetquery.md
       - name: List
         href: ../../api/security-ediscoveryreviewset-list-queries.md
       - name: Create
         href: ../../api/security-ediscoveryreviewset-post-queries.md
+      - name: Get
+        href: ../../api/security-ediscoveryreviewsetquery-get.md
+      - name: Update
+        href: ../../api/security-ediscoveryreviewsetquery-update.md
+      - name: Delete
+        href: ../../api/security-ediscoveryreviewset-delete-queries.md
       - name: Export
         href: ../../api/security-ediscoveryreviewsetquery-export.md
+      - name: Apply tags
+        href: ../../api/security-ediscoveryreviewsetquery-applytags.md
+      - name: Run (preview)
+        href: ../../api/security-ediscoveryreviewsetquery-run.md
   - name: eDiscovery review tag
     items:
     - name: eDiscovery review tag
