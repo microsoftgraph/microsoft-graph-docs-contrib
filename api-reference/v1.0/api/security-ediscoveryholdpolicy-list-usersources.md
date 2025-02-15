@@ -54,7 +54,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_usersource_for_custodian"
+  "name": "list_usersource_for_legalholds"
 }
 -->
 ``` http
