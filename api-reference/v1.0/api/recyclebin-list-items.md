@@ -1,6 +1,6 @@
 ---
 author: "vanshisingh"
-title: "List items in Recycle Bin"
+title: "List items"
 description: "Get a collection of recycleBinItem resources in the recycleBin of the specified SharePoint site."
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 12/10/2024
 ---
 
-# List items in the recycle bin
+# List items
 
 Namespace: microsoft.graph
 
