@@ -94,7 +94,8 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
+{  
+    "@odata.type": "microsoft.graph.security.ediscoveryCaseMember",
     "recipientType": "user",
     "id": "c4af6f9d-37f6-43f9-9e17-601544234146",
     "displayName": "User3",
@@ -135,6 +136,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+    "@odata.type": "microsoft.graph.security.ediscoveryCaseMember",
     "recipientType": "roleGroup",
     "id": "b9fb4f22-5f90-47a0-b309-44fe96a959fd",
     "displayName": "Security Administrator",
@@ -176,6 +178,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+    "@odata.type": "microsoft.graph.security.ediscoveryCaseMember",
     "recipientType": "user",
     "id": "c4af6f9d-37f6-43f9-9e17-601544234146",
     "displayName": "User3",
@@ -216,6 +219,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+    "@odata.type": "microsoft.graph.security.ediscoveryCaseMember",
     "recipientType": "roleGroup",
     "id": "b9fb4f22-5f90-47a0-b309-44fe96a959fd",
     "displayName": "Security Administrator",
