@@ -2565,21 +2565,6 @@
           ],
           "childNodes": [
             {
-              "name": "eDiscovery hold policy",
-              "resources": [
-                "microsoft.graph.security.siteSource",
-                "microsoft.graph.security.userSource"
-              ]
-            },
-            {
-              "name": "eDiscovery custodian",
-              "resources": [
-                "microsoft.graph.security.siteSource",
-                "microsoft.graph.security.userSource",
-                "microsoft.graph.security.unifiedGroupSource"
-              ]
-            },
-            {
               "name": "eDiscovery review set",
               "resources": [
                 "microsoft.graph.security.ediscoveryReviewSetQuery"
