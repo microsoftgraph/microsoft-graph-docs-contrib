@@ -298,6 +298,8 @@ items:
         href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
       - name: Create
         href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
+      - name: Delete
+        href: ../../api/security-ediscoverycustodian-delete-unifiedgroupsources.md
   - name: eDiscovery noncustodial data source
     items:
     - name: eDiscovery noncustodial data source
@@ -332,6 +334,22 @@ items:
       href: ../../api/security-ediscoveryholdpolicy-update.md
     - name: Delete
       href: ../../api/security-ediscoverycase-delete-legalholds.md
+    - name: Site sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoveryholdpolicy-list-sitesources.md
+      - name: Create
+        href: ../../api/security-ediscoveryholdpolicy-post-sitesources.md
+      - name: Delete
+        href: ../../api/security-ediscoveryholdpolicy-delete-sitesources.md
+    - name: User sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoveryholdpolicy-list-usersources.md
+      - name: Create
+        href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
+      - name: Delete
+        href: ../../api/security-ediscoveryholdpolicy-delete-usersources.md
     - name: Site source
       items:
       - name: Site source
