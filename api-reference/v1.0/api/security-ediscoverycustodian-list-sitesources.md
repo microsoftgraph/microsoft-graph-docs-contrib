@@ -1,6 +1,6 @@
 ---
 title: "List siteSources"
-description: "Get the siteSource resources from the siteSources navigation property."
+description: "Get a list of the siteSource objects associated with an ediscoveryCustodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -9,6 +9,7 @@ ms.date: 10/30/2024
 ---
 
 # List siteSources
+
 Namespace: microsoft.graph.security
 
 Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).

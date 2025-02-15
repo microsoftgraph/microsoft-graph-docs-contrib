@@ -1,6 +1,6 @@
 ---
 title: "Delete unifiedGroupSource"
-description: "Delete a unifiedGroupSource object."
+description: "Delete a unifiedGroupSource object associated with an ediscoveryCustodian."
 author: "manjarisenthil"
 ms.date: 02/11/2025
 ms.localizationpriority: medium
@@ -9,9 +9,10 @@ doc_type: apiPageType
 ---
 
 # Delete unifiedGroupSource
+
 Namespace: microsoft.graph.security
 
-Delete a [unifiedGroupSource](../resources/security-unifiedGroupSource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
+Delete a [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

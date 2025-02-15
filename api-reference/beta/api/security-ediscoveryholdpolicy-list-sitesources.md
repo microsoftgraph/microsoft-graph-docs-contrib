@@ -1,6 +1,6 @@
 ---
 title: "List siteSources"
-description: "Get the siteSource resources from the siteSources navigation property."
+description: "Get a list of the siteSource objects associated with an ediscoveryHoldPolicy."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -9,6 +9,7 @@ ms.date: 10/23/2024
 ---
 
 # List siteSources
+
 Namespace: microsoft.graph.security
 
 Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).
@@ -49,9 +50,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_sitesource_for_legalhold"
@@ -75,27 +76,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/siteSources",
-    "value": [
-        {
-            "@odata.id": "https://graph.microsoft.com/beta/sites/169718e3-a8df-449d-bef4-ee09fe1ddc5d",
-            "displayName": "U.S. Sales",
-            "createdDateTime": "2022-05-23T02:35:42.926309Z",
-            "holdStatus": "applied",
-            "id": "169718e3-a8df-449d-bef4-ee09fe1ddc5d",
-            "createdBy": {
-                "application": null,
-                "user": {
-                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
-                    "displayName": null
-                }
-            },
-            "site": {
-                "webUrl": "https://m365x809305.sharepoint.com/sites/USSales",
-                "id": "169718e3-a8df-449d-bef4-ee09fe1ddc5d",
-                "createdDateTime": "2022-05-23T02:35:42.926309Z"
-            }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/siteSources",
+  "value": [
+    {
+      "@odata.id": "https://graph.microsoft.com/beta/sites/169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+      "displayName": "U.S. Sales",
+      "createdDateTime": "2022-05-23T02:35:42.926309Z",
+      "holdStatus": "applied",
+      "id": "169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+      "createdBy": {
+        "application": null,
+        "user": {
+          "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+          "displayName": null
         }
-    ]
+      },
+      "site": {
+        "webUrl": "https://m365x809305.sharepoint.com/sites/USSales",
+        "id": "169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+        "createdDateTime": "2022-05-23T02:35:42.926309Z"
+      }
+    }
+  ]
 }
 ```

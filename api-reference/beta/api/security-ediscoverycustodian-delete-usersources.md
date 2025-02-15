@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_ediscoveryusersource"
+  "name": "delete_ediscoverycustodian_usersource"
 }
 -->
 ``` http

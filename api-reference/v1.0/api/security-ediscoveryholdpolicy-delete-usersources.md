@@ -61,7 +61,6 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/4c551bc5-f6f8-435c-8391-d1a08f1ffd5b/legalHolds/2114ada2-3958-4945-bb6e-66fe9fca4772/userSources/08345ae2-bc5a-4d71-a18b-c490993959ee
 ```
 
-
 ### Response
 
 The following example shows the response.

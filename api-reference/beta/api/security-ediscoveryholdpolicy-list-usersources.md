@@ -1,6 +1,6 @@
 ---
 title: "List userSources"
-description: "Get the userSource resources from the userSources navigation property."
+description: "Get a list of the userSource objects associated with an ediscoveryHoldPolicy."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -9,6 +9,7 @@ ms.date: 10/23/2024
 ---
 
 # List userSources
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -50,9 +51,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_usersource_for_custodian"
@@ -76,25 +77,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/legalholds('0053a61a3b6c42738f7606791716a22a')/userSources",
-    "value": [
-        {
-            "displayName": "Alex Wilber",
-            "createdDateTime": "2022-05-23T00:58:19.0702524Z",
-            "holdStatus": "applied",
-            "id": "43434642-3137-3138-3432-374142313639",
-            "email": "AlexW@contoso.com",
-            "includedSources": "mailbox,site",
-            "siteWebUrl": "https://m365x809305-my.sharepoint.com/personal/alexw_m365x809305_onmicrosoft_com/",
-            "createdBy": {
-                "application": null,
-                "user": {
-                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
-                    "displayName": null
-                }
-            }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/legalholds('0053a61a3b6c42738f7606791716a22a')/userSources",
+  "value": [
+    {
+      "displayName": "Alex Wilber",
+      "createdDateTime": "2022-05-23T00:58:19.0702524Z",
+      "holdStatus": "applied",
+      "id": "43434642-3137-3138-3432-374142313639",
+      "email": "AlexW@contoso.com",
+      "includedSources": "mailbox,site",
+      "siteWebUrl": "https://m365x809305-my.sharepoint.com/personal/alexw_m365x809305_onmicrosoft_com/",
+      "createdBy": {
+        "application": null,
+        "user": {
+          "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+          "displayName": null
         }
-    ]
+      }
+    }
+  ]
 }
 ```
 
