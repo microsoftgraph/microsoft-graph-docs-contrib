@@ -35,7 +35,6 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.callSettings"
   "openType": false
 }
