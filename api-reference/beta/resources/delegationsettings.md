@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties for a [delagator or delegate](../resources/calldelegation.md).
+Represents the settings for a [delagator or delegate](../resources/calldelegation.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,16 +23,16 @@ This resource is an open type.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/callsettings-list-delegates.md)|[delegationSettings](../resources/delegationsettings.md) collection|Get a list of the delegationSettings objects and their properties.|
-|[Get](../api/delegationsettings-get.md)|[delegationSettings](../resources/delegationsettings.md)|Read the properties and relationships of a delegationSettings object.|
+|[List](../api/callsettings-list-delegates.md)|[delegationSettings](../resources/delegationsettings.md) collection|Get a list of the [delegationSettings](../resources/delegationsettings.md) objects and their properties.|
+|[Get](../api/delegationsettings-get.md)|[delegationSettings](../resources/delegationsettings.md)|Read the properties and relationships of a [delegationSettings](../resources/delegationsettings.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedActions|[delegateAllowedActions](../resources/delegateallowedactions.md)|Represent the allowed actions by the delegator/delegate.|
-|createdDateTime|DateTimeOffset|Timestamp when the delegator/delegate entry was created.|
-|id|String|Unique identifier of the delegator/delegate. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isActive|Boolean|Indicates if the delegator/delegate relationship is currently active.|
+|allowedActions|[delegateAllowedActions](../resources/delegateallowedactions.md)|The allowed actions for the delegator or delegate.|
+|createdDateTime|DateTimeOffset|Date and time when the delegator or delegate entry was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+|id|String|Unique identifier of the delegator or delegate. Inherited from [entity](../resources/entity.md). |
+|isActive|Boolean|Indicates whether the delegator or delegate relationship is currently active.|
 
 ## Relationships
 None.
@@ -50,11 +50,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegationSettings",
-  "id": "String (identifier)",
+  "allowedActions": {"@odata.type": "microsoft.graph.delegateAllowedActions"},
   "createdDateTime": "String (timestamp)",
-  "isActive": "Boolean",
-  "allowedActions": {
-    "@odata.type": "microsoft.graph.delegateAllowedActions"
-  }
+  "id": "String (identifier)",
+  "isActive": "Boolean"
 }
 ```

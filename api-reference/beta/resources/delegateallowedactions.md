@@ -1,6 +1,6 @@
 ---
 title: "delegateAllowedActions resource type"
-description: "Complex type that represents the allowed actions for a delegate and delegator."
+description: "Represents the allowed actions for a delegate and delegator."
 author: "garchiro7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the allowed actions by the delegator/delegate. 
+Represents the allowed actions for a delegate and delegator.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|joinActiveCalls|Boolean|Determines if the delegator/delegate allows joining active calls.|
-|makeCalls|Boolean|Determines if the delegator/delegate allows making calls on their behalf.|
-|manageCallAndDelegateSettings|Boolean|Determines if the delegator/delegate allows managing call and delegation settings.|
-|pickUpHeldCalls|Boolean|Determines if the delegator/delegate allows picking up held calls.|
-|receiveCalls|Boolean|Determines if the delegator/delegate allows receiving calls on their behalf.|
+|joinActiveCalls|Boolean|Indicates whether the delegator or delegate allows participation in active calls.|
+|makeCalls|Boolean|Indicates whether the delegator or delegate allows calls to be made on their behalf.|
+|manageCallAndDelegateSettings|Boolean|Indicates whether the delegator or delegate allows the management of call and delegation settings.|
+|pickUpHeldCalls|Boolean|Indicates whether the delegator or delegate allows held calls to be picked up.|
+|receiveCalls|Boolean|Indicates whether the delegator or delegate allows calls to be received on their behalf.|
 
 ## Relationships
 None.
@@ -38,10 +38,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegateAllowedActions",
+  "joinActiveCalls": "Boolean",
   "makeCalls": "Boolean",
-  "receiveCalls": "Boolean",
   "manageCallAndDelegateSettings": "Boolean",
   "pickUpHeldCalls": "Boolean",
-  "joinActiveCalls": "Boolean"
+  "receiveCalls": "Boolean"
 }
 ```
