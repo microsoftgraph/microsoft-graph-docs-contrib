@@ -70,7 +70,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/me/communications/callSettings/delegates
 ```
 
-
 ### Response
 
 The following example shows the response.
