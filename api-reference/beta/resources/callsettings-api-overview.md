@@ -1,5 +1,5 @@
 ---
-title: "Call delegation flow"
+title: "Working with the call delegation APIs in Microsoft Graph"
 description: "Contains information about a call delegation flow."
 author: "garchiro7"
 ms.localizationpriority: medium
@@ -8,15 +8,13 @@ ms.subservice: "cloud-communications"
 ms.date: 02/01/2025
 ---
 
-# Call delegation
+# Working with the call delegation APIs in Microsoft Graph
 
-## Overview
+Learn how to use the call delegation APIs to streamline communication workflows into custom applications. These APIs enable querying and managing delegates and delegators to enhance collaborative call scenarios, such as shared line appearances and proxy calling.
 
-Microsoft Graph introduces Call Delegation APIs to streamline communication workflows into custom applications. These APIs enable querying and managing delegates and delegators to enhance collaborative call scenarios, such as shared line appearances and proxy calling.
+## Introduction to Teams delegation
 
-## Introduction to Teams Delegation
-
-Microsoft Teams Delegation allows users to share call responsibilities by assigning delegates. Delegates can perform actions such as receiving calls, making calls on behalf of others, and managing call settings. This feature is useful in scenarios where an assistant or team member handles communications for another user.
+Microsoft Teams delegation allows users to share call responsibilities by assigning delegates. Delegates can perform actions such as receiving calls, making calls on behalf of others, and managing call settings. This feature is useful in scenarios where an assistant or team member handles communications for another user.
 
 Microsoft Graph enable developers to programmatically manage delegators and delegates. Common scenarios include:
 
@@ -46,18 +44,24 @@ To access these APIs, the following configurations are required:
    Set-CsTeamsCallingPolicy -AllowDelegation $true
    ```
 
-## API methods
+## Common use cases
 
 | Operation                                          |  Return Type                                                 |  Description                              |
 |--------------------------                          |--------------------------------------------------------------|-------------------------------------------|
-| [List All Delegates](../api/callsettings-list-delegates.md)  |  [delegate](../resources/delegationsettings.md) collection   | Retrieve all delegates for a user         |
-| [Get Delegate by ID](../api/delegationsettings-get.md)   |  [delegate](../resources/delegationsettings.md)              | Fetch details of a specific delegate      |
-| [List All Delegators](../api/callsettings-list-delegators.md)|  [delegator](../resources/delegationsettings.md) collection  | Retrieve all delegators for a user        |
-| [Get Delegator by ID](../api/delegationsettings-get.md) |  [delegator](../resources/delegationsettings.md)             | Fetch details of a specific delegator     |
+| [List all delegates](../api/callsettings-list-delegates.md)  |  [delegate](../resources/delegationsettings.md) collection   | Retrieve all delegates for a user.         |
+| [Get delegate by ID](../api/delegationsettings-get.md)   |  [delegate](../resources/delegationsettings.md)              | Get details about a specific delegate.      |
+| [List all delegators](../api/callsettings-list-delegators.md)|  [delegator](../resources/delegationsettings.md) collection  | Retrieve all delegators for a user.        |
+| [Get delegator by ID](../api/delegationsettings-get.md) |  [delegator](../resources/delegationsettings.md)             | Get details about a specific delegator.     |
 
-## More Resources
+## Next steps
 
-- [Share a phone line with a delegate in Microsoft Teams](https://support.microsoft.com/office/share-a-phone-line-with-a-delegate-in-microsoft-teams-16307929-a51f-43fc-8323-3b1bf115e5a8)
-- [Microsoft Teams PowerShell - Set-CsTeamsCallingPolicy](https://learn.microsoft.com/powershell/module/teams/set-csteamscallingpolicy)
+Use the call delegation API in Microsoft Graph to query and manage delegates and delegators in Teams. To learn more:
 
+- Explore the resources and methods that are most helpful to your scenario.
+- Try the API in the Graph Explorer.
+
+## Related content
+
+- [Share a phone line with a delegate in Microsoft Teams](https://support.microsoft.com/office/share-a-phone-line-with-a-delegate-in-microsoft-teams-16307929-a51f-43fc-8323-3b1bf115e5a8).
+- [Microsoft Teams PowerShell - Set-CsTeamsCallingPolicy](/powershell/module/teams/set-csteamscallingpolicy)
 
