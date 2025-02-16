@@ -2,7 +2,7 @@
 title: "List delegators"
 description: "API description to list the delegators"
 author: "garchiro7"
-ms.date: 11/19/2024
+ms.date: 02/01/2025
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType

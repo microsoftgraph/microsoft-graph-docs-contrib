@@ -2,7 +2,7 @@
 title: "Get delegationSettings"
 description: "Read the properties and relationships of a delegationSettings object."
 author: "garchiro7"
-ms.date: 11/19/2024
+ms.date: 02/01/2025
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
@@ -29,6 +29,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+To get details about a specific delegator:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/communications/callSettings/delegators/{delegatorId}
+GET /users/{user_id}/communications/callSettings/delegators/{delegatorId}
+```
+
+To get details about a specific delegate:
 <!-- {
   "blockType": "ignored"
 }
@@ -36,9 +48,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /me/communications/callSettings/delegates/{delegateId}
 GET /users/{user_id}/communications/callSettings/delegates/{delegateId}
-
-GET /me/communications/callSettings/delegators/{delegatorId}
-GET /users/{user_id}/communications/callSettings/delegators/{delegatorId}
 ```
 
 ## Optional query parameters
