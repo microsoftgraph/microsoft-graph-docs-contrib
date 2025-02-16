@@ -1,5 +1,5 @@
 ---
-title: "Working with the call delegation APIs in Microsoft Graph"
+title: "Working with the call delegation APIs in Microsoft Graph (preview)"
 description: "Contains information about a call delegation flow."
 author: "garchiro7"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "cloud-communications"
 ms.date: 02/01/2025
 ---
 
-# Working with the call delegation APIs in Microsoft Graph
+# Working with the call delegation APIs in Microsoft Graph (preview)
 
 Learn how to use the call delegation APIs to streamline communication workflows into custom applications. These APIs enable querying and managing delegates and delegators to enhance collaborative call scenarios, such as shared line appearances and proxy calling.
 
@@ -64,4 +64,3 @@ Use the call delegation API in Microsoft Graph to query and manage delegates and
 
 - [Share a phone line with a delegate in Microsoft Teams](https://support.microsoft.com/office/share-a-phone-line-with-a-delegate-in-microsoft-teams-16307929-a51f-43fc-8323-3b1bf115e5a8).
 - [Microsoft Teams PowerShell - Set-CsTeamsCallingPolicy](/powershell/module/teams/set-csteamscallingpolicy)
-
