@@ -7,5 +7,5 @@ ms.localizationpriority: medium
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|CallDelegation.Read|CallDelegation.ReadWrite|
-|Delegated (personal Microsoft account)|Not Supported|Not Supported|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|Not supported.|Not supported.|
