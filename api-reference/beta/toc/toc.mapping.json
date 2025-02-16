@@ -2956,6 +2956,16 @@
               ]
             },
             {
+              "name": "Call settings",
+              "overview": "../../resources/callsettings-api-overview.md",
+              "resources": [
+                "delegationSettings"
+              ],
+              "complexTypes": [
+                "delegateAllowedActions"
+              ]
+            },
+            {
               "name": "Copilot settings",
               "resources": [
                 "copilotAdminLimitedMode"
