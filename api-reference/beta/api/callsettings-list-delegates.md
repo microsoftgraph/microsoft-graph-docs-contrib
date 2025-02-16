@@ -1,5 +1,5 @@
 ---
-title: "List delegationSettings objects"
+title: "List delegates"
 description: "Get a list of the delegationSettings objects and their properties."
 author: "garchiro7"
 ms.date: 11/19/2024
@@ -8,7 +8,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List delegationSettings objects
+# List delegates
 
 Namespace: microsoft.graph
 
