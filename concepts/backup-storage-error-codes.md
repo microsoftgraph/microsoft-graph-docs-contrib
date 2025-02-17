@@ -381,7 +381,7 @@ The following table lists the possible error and response codes that can be retu
 |400|BulkRestoreInvalidCreateRequestSiteUrl|Bulk restore site web URL is invalid.|Site URL is null, empty, or in an incorrect format.|
 |400|BulkRestoreInvalidCreateRequestUserEmail|Bulk restore user email is invalid.|Email is null, empty, or in an incorrect format.|
 
-# Get bulk addition requests for restoring artifacts API errors
+## Get bulk addition requests for restoring artifacts API errors
 
 The error codes in this section apply to the following APIs:
 
@@ -395,7 +395,7 @@ The following table lists the possible error and response code that can be retur
 |:------------------|:--------------|:--------------|:--------------|
 |404|BulkRestoreArtifactsNotFound|No bulkRestoreArtifact item with the given bulkRestoreArtifactId.|No restoreArtifactBulkAdditionRequest associated with the provided bulkRestoreArtifactId in the URI.|
 
-# Delete bulk addition requests for restoring artifacts API errors
+## Delete bulk addition requests for restoring artifacts API errors
 
 The error codes in this section apply to the following APIs:
 
