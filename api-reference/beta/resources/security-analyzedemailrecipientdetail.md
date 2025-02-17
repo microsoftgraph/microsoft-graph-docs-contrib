@@ -1,6 +1,6 @@
 ---
 title: "Recipient Detail resource type"
-description: Recipient Detail
+description: Details about the recipient(s) as mentioned in the mail
 author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security
@@ -14,13 +14,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Details about the recipient(s) as mentioned in the mail
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ccRecipients|String collection|Recipient address in the cc field|
-|domainName|String|Domain name of the recipient|
+|ccRecipients|String collection|Recipient address in the cc field.|
+|domainName|String|Domain name of the recipient.|
 
 ## Relationships
 None.

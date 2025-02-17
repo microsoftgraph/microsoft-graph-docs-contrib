@@ -22,12 +22,12 @@ Represents an attachment to an analyzed email.
 |detonationDetails|[microsoft.graph.security.detonationDetails](../resources/security-detonationdetails.md)|The detonation details of the attachment.|
 |fileName|String|The name of the attachment in the email.|
 |fileType|String|The type of the attachment in the email.|
-|fileSize|Int32|Size of the file|
-|fileExtension|String|Extension of the file|
+|fileSize|Int32|Size of the file.|
+|fileExtension|String|Extension of the file.|
 |sha256|String|The SHA256 file hash of the attachment.|
 |malwareFamily|String|The threat name associated with the threat type.|
 |threatType|microsoft.graph.security.threatType|The threat type associated with the attachment. The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
-|tenantAllowBlockListDetailInfo|String|Details of entries in tenant allow/block list configured by tenant|
+|tenantAllowBlockListDetailInfo|String|Details of entries in tenant allow/block list configured by tenant.|
 
 ## Relationships
 None.

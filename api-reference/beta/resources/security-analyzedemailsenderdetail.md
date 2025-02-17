@@ -19,15 +19,15 @@ Represents the sender details of an email.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|fromAddress|String|The sender email address in the mail **From** header, also known as the envelope sender or the P1 sender. |
-|ipv4|String|The IPv4 address of the last detected mail server that relayed the message.  |
-|mailFromAddress|String|The sender email address in the **From** header, which is visible to email recipients on their email clients. Also known as P2 sender.|
-|displayName|String|Display name of sender from address|
-|domainCreationDateTime|DateTimeOffset|Date and time of creation of the sender domain|
-|domainName|String|Registered name of the domain|
-|domainOwner|String|Owner of the domain|
-|mailFromDomainName|String|Domain name of sender mail from address|
-|location|String|Location of the domain|
+|displayName|String|Display name of sender from address.|
+|domainCreationDateTime|DateTimeOffset|Date and time of creation of the sender domain.|
+|domainName|String|Registered name of the domain.|
+|domainOwner|String|Owner of the domain.|
+|fromAddress|String|The sender email address in the mail From header, also known as the envelope sender or the P1 sender.|
+|ipv4|String|The IPv4 address of the last detected mail server that relayed the message.|
+|location|String|Location of the domain.|
+|mailFromAddress|String|The sender email address in the From header, which is visible to email recipients on their email clients. Also known as P2 sender.|
+|mailFromDomainName|String|Domain name of sender mail from address.|
 
 ## Relationships
 None.

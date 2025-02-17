@@ -14,14 +14,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents Data loss prevention rules that have been applied to the email
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Name of the the data loss prevention rule|
-|ruleId|String|Unique identifier of the data loss prevention rule|
+|name|String|Name of the the data loss prevention rule.|
+|ruleId|String|Unique identifier of the data loss prevention rule.|
 
 ## Relationships
 None.
