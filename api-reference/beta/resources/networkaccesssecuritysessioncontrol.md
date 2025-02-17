@@ -1,5 +1,5 @@
 ---
-title: "networkAccessSecurityControl resource type"
+title: "networkAccessSecuritySessionControl resource type"
 description: "Session control to link to Global Secure Access filtering profile."
 ms.localizationpriority: medium
 author: "fgomulka"
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 02/11/2025
 ---
 
-# networkAccessSecurityControl resource type
+# networkaccesssecuritysessioncontrol resource type
 
 Namespace: microsoft.graph
 
@@ -30,7 +30,7 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.networkAccessSecurityControl"
+  "@odata.type": "microsoft.graph.networkaccesssecuritysessioncontrol"
 }
 -->
 ``` json
