@@ -1439,12 +1439,15 @@ Content-Type: application/json
                   "@odata.type": "#microsoft.graph.identitySet",
                   "acsUser": {
                     "@odata.type": "#microsoft.graph.identity",
-                    "id": "bb05cfe0-0344-4747-9fa1-489c7e53d546",
+                    "id": "f56e36db-9bb3-4fca-b794-a3efd7361f09_00000022-175f-5180-3397-b23a0d0047e8",
                     "identityProvider": "None",
+                    "acsResourceId": "f56e36db-9bb3-4fca-b794-a3efd7361f09"
                   }
                 },
-               
-                "participantId": "e20770da-e8ac-4210-bc2e-25b18af6fdaa"
+                "endpointType": "default",
+                "endpointId": "99b83373-efe6-405f-ba33-32043e9de267",
+                "clientVersion": "Microsoft.Skype.Calling.Test.Ccts/1.19.4966.0",
+                "participantId": "62de48e1-a72c-40db-9193-a3bd8cf167c9"
               },
               "mediaStreams": [
                 {
@@ -1462,7 +1465,7 @@ Content-Type: application/json
               "publishedStates": [],
               "meetingRole": "none",
               "isIdentityAnonymized": false,
-              "id": "e20770da-e8ac-4210-bc2e-25b18af6fdaa"
+              "id": "62de48e1-a72c-40db-9193-a3bd8cf167c9"
             }
           ],
           "sequenceNumber": 1
@@ -2385,36 +2388,40 @@ Content-Type: application/json
           "id": "05491616-385f-44a8-9974-18cc5f9933c1"
         },
         {
-          "@odata.type": "#microsoft.graph.participant",
-          "info": {
-            "@odata.type": "#microsoft.graph.participantInfo",
-            "identity": {
-              "@odata.type": "#microsoft.graph.identitySet",
-              "acsUser": {
-                "@odata.type": "#microsoft.graph.identity",
-                "id": "bb05cfe0-0344-4747-9fa1-489c7e53d546",
-                "identityProvider": "None",
-              }
-            },
-            "participantId": "e20770da-e8ac-4210-bc2e-25b18af6fdaa"
-          },
-          "mediaStreams": [
-            {
-              "@odata.type": "#microsoft.graph.mediaStream",
-              "mediaType": "audio",
-              "label": "main-audio",
-              "sourceId": "402",
-              "direction": "sendReceive",
-              "serverMuted": false
-            }
-          ],
-          "isMuted": false,
-          "isOnHold": false,
-          "isInLobby": false,
-          "publishedStates": [],
-          "meetingRole": "none",
-          "isIdentityAnonymized": false,
-          "id": "e20770da-e8ac-4210-bc2e-25b18af6fdaa"
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "acsUser": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "id": "f56e36db-9bb3-4fca-b794-a3efd7361f09_00000022-175f-5180-3397-b23a0d0047e8",
+                    "identityProvider": "None",
+                    "acsResourceId": "f56e36db-9bb3-4fca-b794-a3efd7361f09"
+                  }
+                },
+                "endpointType": "default",
+                "endpointId": "99b83373-efe6-405f-ba33-32043e9de267",
+                "clientVersion": "Microsoft.Skype.Calling.Test.Ccts/1.19.4966.0",
+                "participantId": "62de48e1-a72c-40db-9193-a3bd8cf167c9"
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "label": "main-audio",
+                  "sourceId": "402",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": false,
+              "isOnHold": false,
+              "isInLobby": false,
+              "publishedStates": [],
+              "meetingRole": "none",
+              "isIdentityAnonymized": false,
+              "id": "62de48e1-a72c-40db-9193-a3bd8cf167c9"
         }
       ]
     }
@@ -2477,7 +2484,8 @@ Content-Type: application/json
 }
 ```
 
-> **Note:** The application doesn't receive the roster for participants in the meeting until its admitted from lobby.
+> **Note:** The application doesn't receive the roster for participants in the meeting until its admitted from lobby. 
+> During the roster notification, ACS identities will also be provided and recognized as `acsUser` entries.
 
 ### Example 11: Create peer-to-peer PSTN call with service hosted media
 

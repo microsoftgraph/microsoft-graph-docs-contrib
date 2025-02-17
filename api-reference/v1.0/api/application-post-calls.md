@@ -1362,28 +1362,6 @@ Content-Type: application/json
               "removedState": {
                 "reason": "Removed from roster"
               }
-            },
-            {
-              "@odata.type": "#microsoft.graph.participant",
-              "info": {
-                "@odata.type": "#microsoft.graph.participantInfo",
-                "identity": {
-                  "@odata.type": "#microsoft.graph.identitySet",
-                  "acsUser": {
-                    "@odata.type": "#microsoft.graph.identity",
-                    "id": "bb05cfe0-0344-4747-9fa1-489c7e53d546_00000022-175f-5180-3397-b23a0d0047e8",
-                    "identityProvider": "None"
-                  }
-                }
-              }
-              ],
-              "isMuted": false,
-              "isOnHold": false,
-              "isInLobby": false,
-              "publishedStates": [],
-              "meetingRole": "none",
-              "isIdentityAnonymized": false,
-              "id": "e20770da-e8ac-4210-bc2e-25b18af6fdaa"
             }
           ],
           "sequenceNumber": 1
@@ -1395,7 +1373,6 @@ Content-Type: application/json
 ```
 
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
-> During the roster notification, ACS identities will also be provided and recognized as `acsUser` entries.
 
 ### Example 6: Join scheduled meeting with application hosted media
 Update the media config with the [appHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown in the following example.
