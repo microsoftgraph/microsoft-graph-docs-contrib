@@ -14,17 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with an [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
-• **Step 1:** Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md) with Empty payload.
-
-• **Step 2:** Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
-
-• **Step 3:** Get status of [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) of the SharePoint restore session. The initial status upon creation is `active` and will remain so until it the [sharePointRestoreSession](../resources/sharepointrestoresession.md) is activated.
-
-• **Step 4:** Activate the [sharePointRestoreSession](../resources/sharepointrestoresession.md) created in step 1
-
-• **Step 5:** Monitor the status of [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md). When all the sites are added to the corresponding [sharePointRestoreSession](../resources/sharepointrestoresession.md), the status of [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) becomes `completed`. If any failures are encountered during resource resolution, the status becomes `completedWithErrors`.
+1. Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md) with empty payload.
+1. Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+1. Get the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) for the SharePoint restore session. The initial status upon creation is `active` and remains in this state until the [sharePointRestoreSession](../resources/sharepointrestoresession.md) is activated.
+1. Activate the [sharePointRestoreSession](../resources/sharepointrestoresession.md) created in the first step.
+1. Monitor the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md). When all the sites are added to the corresponding [sharePointRestoreSession](../resources/sharepointrestoresession.md), the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) changes to `completed`. If any failures occur during resource resolution, the status changes to `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
