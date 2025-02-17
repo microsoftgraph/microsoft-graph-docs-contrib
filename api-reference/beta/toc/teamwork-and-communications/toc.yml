@@ -404,20 +404,6 @@ items:
         href: ../../resources/callrecords-smslogrow.md
       - name: Get SMS log
         href: ../../api/callrecords-callrecord-getsmslog.md
-  - name: Call settings
-    items:
-    - name: Call delegation
-      items:
-      - name: Overview
-        href: ../../resources/calldelegation.md
-      - name: List delegators
-        href: ../../api/callsettings-list-delegators.md
-      - name: Get delegator
-        href: ../../api/delegationsettings-get.md
-      - name: List delegates
-        href: ../../api/callsettings-list-delegates.md
-      - name: Get delegate
-        href: ../../api/delegationsettings-get.md
   - name: Copilot settings
     items:
     - name: Copilot admin limited mode

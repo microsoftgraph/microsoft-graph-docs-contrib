@@ -1,6 +1,6 @@
 ---
 title: "List delegators"
-description: "API description to list the delegators"
+description: "Get a list of all delegators for a user."
 author: "garchiro7"
 ms.date: 02/01/2025
 ms.localizationpriority: medium
@@ -40,7 +40,7 @@ GET /users/{user_id}/communications/callSettings/delegators
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the OData query parameters like `filter` or `count` to help  customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -88,11 +88,78 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegationSettings",
-      "id": "2290d2bf-756d-7b64-5377-53a01a854ecb",
-      "createdDateTime": "String (timestamp)",
-      "isActive": "Boolean",
+      "id": "62de48e1-a72c-40db-9193-a3bd8cf167c9",
+      "createdDateTime": "2025-01-01T00:00:00Z",
+      "isActive": true,
       "allowedActions": {
-        "@odata.type": "microsoft.graph.delegateAllowedActions"
+        "@odata.type": "microsoft.graph.delegateAllowedActions",
+        "makeCalls": true, 
+        "receiveCalls": true, 
+        "manageCallAndDelegateSettings": true, 
+        "pickUpHeldCalls": true, 
+        "joinActiveCalls": false 
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.delegationSettings",
+      "id": "739cfec7-7956-409a-a1c8-a76daab23c2a",
+      "createdDateTime": "2025-02-01T00:00:00Z",
+      "isActive": true,
+      "allowedActions": {
+        "@odata.type": "microsoft.graph.delegateAllowedActions",
+        "makeCalls": false, 
+        "receiveCalls": true, 
+        "manageCallAndDelegateSettings": true, 
+        "pickUpHeldCalls": true, 
+        "joinActiveCalls": false 
+      }
+    }
+  ]
+}
+```
+
+
+### Request
+
+The example below demonstrates a request for delegators able to make calls.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_delegationsettings_delegators"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators?filter=allowedActions/makeCalls eq true 
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.delegationSettings"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.delegationSettings",
+      "id": "62de48e1-a72c-40db-9193-a3bd8cf167c9",
+      "createdDateTime": "2025-01-01T00:00:00Z",
+      "isActive": true,
+      "allowedActions": {
+        "@odata.type": "microsoft.graph.delegateAllowedActions",
+        "makeCalls": true, 
+        "receiveCalls": true, 
+        "manageCallAndDelegateSettings": true, 
+        "pickUpHeldCalls": true, 
+        "joinActiveCalls": false 
       }
     }
   ]

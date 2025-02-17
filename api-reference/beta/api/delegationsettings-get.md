@@ -52,7 +52,17 @@ GET /users/{user_id}/communications/callSettings/delegates/{delegateId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the OData query parameters like `filter` or `count` to help  customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+Get my delegators who have allowed MakeCalls permission to me 
+
+GET me/communications/callSettings/delegates?filter=allowedActions/makeCalls eq true 
+
+Get the number of delegators I have 
+
+GET me/communications/callSettings/delegates?$count=true 
+
+
 
 ## Request headers
 
@@ -79,7 +89,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/communications/callSettings/delegates/{id}
+GET https://graph.microsoft.com/beta/me/communications/callSettings/delegates/62de48e1-a72c-40db-9193-a3bd8cf167c9
 ```
 
 ### Response
@@ -99,11 +109,16 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.delegationSettings",
-    "id": "2290d2bf-756d-7b64-5377-53a01a854ecb",
-    "createdDateTime": "String (timestamp)",
-    "isActive": "Boolean",
+    "id": "62de48e1-a72c-40db-9193-a3bd8cf167c9",
+    "createdDateTime": "2025-01-01T00:00:00Z",
+    "isActive": true,
     "allowedActions": {
-      "@odata.type": "microsoft.graph.delegateAllowedActions"
+      "@odata.type": "microsoft.graph.delegateAllowedActions",
+      "makeCalls": true, 
+      "receiveCalls": true, 
+      "manageCallAndDelegateSettings": true, 
+      "pickUpHeldCalls": true, 
+      "joinActiveCalls": false 
     }
   }
 }

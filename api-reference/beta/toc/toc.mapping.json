@@ -2956,7 +2956,7 @@
               ]
             },
             {
-              "name": "Call settings",
+              "name": "Call delegation",
               "overview": "../../resources/callsettings-api-overview.md",
               "resources": [
                 "delegationSettings"
