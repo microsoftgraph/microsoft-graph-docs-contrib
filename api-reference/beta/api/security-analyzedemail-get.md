@@ -170,7 +170,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get an analyzedEmail urls
+### Example 2: Get the URLs from an analyzedEmail
 
 #### Request
 
@@ -215,7 +215,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Get analyzedEmail attachments
+### Example 3: Get the attachments of an analyzedEmail
 
 #### Request
 
