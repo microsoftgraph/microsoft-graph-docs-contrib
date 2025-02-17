@@ -16,15 +16,11 @@ Namespace: microsoft.graph
 
 Create a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
 
-• **Step 1:** Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) with Empty payload.
-
-• **Step 2:** Create a new [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
-
-• **Step 3:** Get status of [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) of the SharePoint restore session. The initial status upon creation is `active` and will remain so until it the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) is activated.
-
-• **Step 4:** Activate the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) created in step 1
-
-• **Step 5:** Monitor the status of [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md). When all the sites are added to the corresponding [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md), the status of [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) becomes `completed`. If any failures are encountered during resource resolution, the status becomes `completedWithErrors`.
+1. Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) with empty payload.
+1. Create a new [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
+1. Get the status of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) for the SharePoint restore session. The initial status upon creation is `active` and remains in this state until the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) is activated.
+1. Activate the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) created in the first step.
+1. Monitor the status of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md). When all the sites are added to the corresponding [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md), the status of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) changes to `completed`. If any failures occur during resource resolution, the status changes to `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -63,9 +59,9 @@ In the request body, supply a JSON representation of the [driveRestoreArtifactsB
 You can specify the following properties when you create a **driveRestoreArtifactsBulkAdditionRequest** object.
 
 |Property|Type|Description|
- |:---|:---|:---|
- |drives|[Collection(Edm.String)]|A property which contains the list of email-addresses. Optional.|
- |directoryObjectIds|[Collection(Edm.String)]|A property which contains the list of directoryObjectIds. Optional.|
+|:---|:---|:---|
+|drives|String collection|The list of email addresses. Optional.|
+|directoryObjectIds|String collection|The list of directory object IDs. Optional.|
 
 ## Response
 
