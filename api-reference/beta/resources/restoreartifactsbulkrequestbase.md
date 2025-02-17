@@ -19,14 +19,14 @@ An abstract type that represents a bulk request associated with one of the resto
 
 Base type for [siteRestoreArtifactsBulkAdditionRequests](../resources/siterestoreartifactsbulkadditionrequest.md), [mailboxRestoreArtifactsBulkAdditionRequests](../resources/mailboxrestoreartifactsbulkadditionrequest.md), and [driveRestoreArtifactsBulkAdditionRequests](../resources/driverestoreartifactsbulkadditionrequest.md).
 
+The following points apply to bulk addition requests for restoring artifacts:
+
+- Currently, only one bulk addition job can be processed per restore session.
+- The limit for the number of sites and users in a bulk request is 10,000.
+- Patch operations aren't supported for bulk restore sessions.
+- A single restore session can't include both [siteRestoreArtifact](../resources/siterestoreartifact.md) and **siteBulkAdditionRequest**.
+
 Inherits from [entity](../resources/entity.md).
-
-The following points apply to RestoreArtifactsBulkAdditionRequests : 
-
-1. As of now only one bulk addition job per restore session is possible.
-2. The limit on sites/users in bulk request is 10k.
-3. We do not support Patch operations for bulk restore sessions.
-4. In a single restore session, we cannot add both siteRestoreArtifact & siteBulkAdditionRequest.
 
 ## Properties
 | Property               | Type                                   | Description                                                                 |
