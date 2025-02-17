@@ -59,9 +59,9 @@ In the request body, supply a JSON representation of the [siteRestoreArtifactsBu
 You can specify the following properties when you create a **siteRestoreArtifactsBulkAdditionRequest** object.
 
 |Property|Type|Description|
- |:---|:---|:---|
- |siteWebUrls|[Collection(Edm.String)]|A property which contains the list of SharePoint site URLs. Optional.|
- |siteIds|[Collection(Edm.String)]|A property which contains the list of SharePoint siteIds. Optional.|
+|:---|:---|:---|
+|siteWebUrls|String collection|The list of SharePoint site URLs. Optional.|
+|siteIds|String collection|The list of SharePoint site IDs. Optional.|
 
 ## Response
 
