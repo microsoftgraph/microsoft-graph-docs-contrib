@@ -1,6 +1,7 @@
 ---
 title: "List sharePointGroupMember objects"
 description: "Get a list of the sharePointGroupMember objects and their properties."
+author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType

@@ -32,7 +32,6 @@ Inherits from [entity](../resources/entity.md)
 |[List](../api/sharepointgroup-list-members.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md) collection|Get a list of the sharePointGroupMember objects and their properties.|
 |[Create](../api/sharepointgroup-post-members.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Create a new sharePointGroupMember object.|
 |[Get](../api/sharepointgroupmember-get.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Read the properties and relationships of a sharePointGroupMember object.|
-|[Update](../api/sharepointgroupmember-update.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Update the properties of a sharePointGroupMember object.|
 |[Delete](../api/sharepointgroup-delete-members.md)|None|Delete a sharePointGroupMember object.|
 
 ## Properties
