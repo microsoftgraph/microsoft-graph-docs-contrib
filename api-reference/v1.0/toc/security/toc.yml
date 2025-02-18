@@ -386,10 +386,6 @@ items:
       href: ../../api/security-ediscoveryreviewset-export.md
     - name: Add to review set
       href: ../../api/security-ediscoveryreviewset-addtoreviewset.md
-    - name: List queries
-      href: ../../api/security-ediscoveryreviewset-list-queries.md
-    - name: Create review set query
-      href: ../../api/security-ediscoveryreviewset-post-queries.md
     - name: eDiscovery review set query
       items:
       - name: eDiscovery review set query

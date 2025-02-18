@@ -12,8 +12,6 @@ ms.date: 06/11/2024
 
 Namespace: microsoft.graph.security
 
-
-
 The container for a custodian's group.
 
 Inherits from [dataSource](../resources/security-datasource.md).
