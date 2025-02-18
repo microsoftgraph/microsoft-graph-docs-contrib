@@ -6479,6 +6479,40 @@
     {
       "ChangeList": [
         {
+          "Id": "fd3a1e11-2b40-4b2e-a27f-c8bc529dcc40",
+          "ApiChange": "Member",
+          "ChangedApiName": "warning",
+          "ChangeType": "Addition",
+          "Description": "Added the `warning` member to the **cloudPcDeviceImageStatus** enumeration.",
+          "Target": "cloudPcDeviceImageStatus"
+        },
+        {
+          "Id": "fd3a1e11-2b40-4b2e-a27f-c8bc529dcc40",
+          "ApiChange": "Member",
+          "ChangedApiName": "sourceImageWithDataDiskNotSupported",
+          "ChangeType": "Addition",
+          "Description": "Added the `sourceImageWithDataDiskNotSupported` member to the **cloudPcDeviceImageErrorCode** enumeration.",
+          "Target": "cloudPcDeviceImageErrorCode"
+        },
+        {
+          "Id": "fd3a1e11-2b40-4b2e-a27f-c8bc529dcc40",
+          "ApiChange": "Member",
+          "ChangedApiName": "sourceImageWithDiskEncryptionSetNotSupported",
+          "ChangeType": "Addition",
+          "Description": "Added the `sourceImageWithDiskEncryptionSetNotSupported` member to the **cloudPcDeviceImageErrorCode** enumeration.",
+          "Target": "cloudPcDeviceImageErrorCode"
+        }
+      ],
+          "Id": "fd3a1e11-2b40-4b2e-a27f-c8bc529dcc40",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2025-02-11T00:25:04.0954058Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+      },
+      {
+      "ChangeList": [
+        {
           "Id": "51186d13-0d6a-4a64-a631-e841ccb1f999",
           "ApiChange": "Property",
           "ChangedApiName": "activityId",
