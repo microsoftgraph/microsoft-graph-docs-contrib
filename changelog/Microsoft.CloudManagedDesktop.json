@@ -6504,9 +6504,11 @@
         }
       ],
           "Id": "fd3a1e11-2b40-4b2e-a27f-c8bc529dcc40",
-            "Cloud": "Prod",
+          "Cloud": "Prod",
           "Version": "beta",
-          "CreatedDateTime": "2025-02-11T00:25:04.0954058Z"
+          "CreatedDateTime": "2025-02-11T00:25:04.0954058Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
       },
       {
       "ChangeList": [
