@@ -40,6 +40,7 @@ In the request body, supply the values for the relevant [printSettings](../resou
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |documentConversionEnabled|Boolean|Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service will automatically convert documents into a format compatible with the printer (for example, XPS to PDF) when needed.|
+|printerDiscoverySettings|[printerDiscoverySettings](../resources/printerdiscoverysettings.md)|Specifies settings that affect printer discovery when using Universal Print.|
 
 ## Response
 If successful, this method returns a `204 No Content` response code and an empty response body.
