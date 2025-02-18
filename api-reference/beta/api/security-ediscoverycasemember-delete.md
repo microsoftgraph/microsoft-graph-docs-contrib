@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
+DELETE security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers/{eDiscoveryCaseMemberId}
 ```
 
 ## Request headers
@@ -67,11 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
-
-{
-    "id": "c4af6f9d-37f6-43f9-9e17-601544234146"
-}
+DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers/{eDiscoveryCaseMemberId}
 ```
 
 

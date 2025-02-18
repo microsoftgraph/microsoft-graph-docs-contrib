@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryCaseMember resource type"
-description: "**TODO: Add Description**"
+description: "Represents an eDiscovery case member"
 author: "annierevers"
 ms.date: 2/12/2025
 ms.localizationpriority: medium

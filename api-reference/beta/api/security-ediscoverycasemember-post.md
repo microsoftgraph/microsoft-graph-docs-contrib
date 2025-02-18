@@ -1,6 +1,6 @@
 ---
 title: "Add ediscoveryCaseMember"
-description: "Update the properties of an ediscoveryCaseMember object."
+description: "Add an ediscoveryCaseMember object."
 author: "annierevers"
 ms.date: 2/12/2025
 ms.localizationpriority: medium
@@ -76,7 +76,7 @@ Content-Type: application/json
 
 {
     "recipientType": "user",
-    "smtpAddress": "user3@microsoft.com"
+    "smtpAddress": "johnadams@microsoft.com"
 }
 ```
 
@@ -98,8 +98,8 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.security.ediscoveryCaseMember",
     "recipientType": "user",
     "id": "c4af6f9d-37f6-43f9-9e17-601544234146",
-    "displayName": "User3",
-    "smtpAddress": "user3@microsoft.com"
+    "displayName": "John Adams",
+    "smtpAddress": "johnadams@microsoft.com"
 }
 ```
 
@@ -181,8 +181,8 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.security.ediscoveryCaseMember",
     "recipientType": "user",
     "id": "c4af6f9d-37f6-43f9-9e17-601544234146",
-    "displayName": "User3",
-    "smtpAddress": "user3@microsoft.com"
+    "displayName": "John Adams",
+    "smtpAddress": "johnadams@microsoft.com"
 }
 ```
 

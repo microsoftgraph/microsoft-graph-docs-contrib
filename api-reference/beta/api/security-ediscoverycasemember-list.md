@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryCaseMember objects"
+title: "List ediscoveryCaseMember"
 description: "Get a list of the ediscoveryCaseMember objects and their properties."
 author: "annierevers"
 ms.date: 2/12/2025
@@ -8,7 +8,7 @@ ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
-# List ediscoveryCaseMember objects
+# List ediscoveryCaseMember
 
 Namespace: microsoft.graph.security
 
@@ -89,8 +89,8 @@ Content-Type: application/json
         {
             "recipientType": "user",
             "id": "c4af6f9d-37f6-43f9-9e17-601544234146",
-            "displayName": "User3",
-            "smtpAddress": "user3@microsoft.com"
+            "displayName": "John Adams",
+            "smtpAddress": "johnadams@microsoft.com"
         },
         {
             "recipientType": "roleGroup",
