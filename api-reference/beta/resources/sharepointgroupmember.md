@@ -16,14 +16,6 @@ Namespace: microsoft.graph
 
 Represents a user within a SharePoint group.
 
-# sharePointGroupMember resource type
-
-Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents a user within a SharePoint group.
-
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
