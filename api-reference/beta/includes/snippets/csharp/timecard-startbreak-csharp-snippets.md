@@ -12,16 +12,11 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new StartBreakPostRequestBody
 {
+	IsAtApprovedLocation = true,
 	Notes = new ItemBody
 	{
 		ContentType = BodyType.Text,
 		Content = "starting break",
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isAtApprovedLocation" , true
-		},
 	},
 };
 

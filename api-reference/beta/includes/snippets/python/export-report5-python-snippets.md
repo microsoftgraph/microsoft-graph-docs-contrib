@@ -16,6 +16,10 @@ request_body = ExportReportPostRequestBody(
 	export_criteria = ExportCriteria.PartiallyIndexed,
 	export_location = ExportLocation.ResponsiveLocations,
 	additional_options = AdditionalOptions.CloudAttachments,
+	additional_data = {
+			"cloud_attachment_version" : "all",
+			"doucment_version" : "recent100",
+	}
 )
 
 await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').searches.by_ediscovery_search_id('ediscoverySearch-id').microsoft_graph_security_export_report.post(request_body)

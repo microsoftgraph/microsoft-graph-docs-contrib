@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/4ef5e3e6-545b
 [!INCLUDE [sample-code](../includes/snippets/php/subjectrightsrequest-getfinalattachment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/subjectrightsrequest-getfinalattachment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/subjectrightsrequest-getfinalattachment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
