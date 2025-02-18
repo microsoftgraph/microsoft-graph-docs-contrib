@@ -16,11 +16,9 @@ var requestBody = new ExportReportPostRequestBody
 	ExportCriteria = ExportCriteria.PartiallyIndexed,
 	ExportLocation = ExportLocation.ResponsiveLocations,
 	AdditionalOptions = AdditionalOptions.CloudAttachments,
+	CloudAttachmentVersion = CloudAttachmentVersion.All,
 	AdditionalData = new Dictionary<string, object>
 	{
-		{
-			"cloudAttachmentVersion" , "all"
-		},
 		{
 			"doucmentVersion" , "recent100"
 		},
