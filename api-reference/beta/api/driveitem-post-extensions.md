@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an open [extension](../resources/openExtension.md) object and add custom properties in a new or existing instance of a resource.
+Create an open [extension](../resources/extension.md) object and add custom properties in a new or existing instance of a resource.
 
 ## Permissions
 
@@ -83,14 +83,14 @@ If successful, this method returns a `201 Created` response code and an [extensi
 
 | Scenario       | Response body |
 |:---------------|:--------------|
-| Creating an OpenExtension on a driveItem | [extension](../resources/openExtension.md) |
+| Creating an extension on a driveItem | [extension](../resources/extension.md) |
 | Creating an extension while implicitly creating a driveItem resource instance | [driveItem](../resources/driveItem.md) |
 
 ## Examples
 
 ### Request 1
 
-The first example creates an openExtension on a driveItem
+The first example creates an extension on a driveItem
 
 <!-- {
 "blockType": "ignored",

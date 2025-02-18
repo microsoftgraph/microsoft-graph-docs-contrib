@@ -52,7 +52,7 @@ PATCH drive/items/{itemId}/extensions/{extensionId}
 
 ## Request body
 
-Provide a JSON body of an [extension](../resources/openExtension.md), with the following required
+Provide a JSON body of an [extension](../resources/extension.md), with the following required
 name-value pairs, and any additional custom data. The data in the JSON payload can be primitive types only.
 
 | Name       | Value |
