@@ -212,10 +212,12 @@ Here's a request with a full payload. The client can override values in the base
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_team_post_full_payload"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
