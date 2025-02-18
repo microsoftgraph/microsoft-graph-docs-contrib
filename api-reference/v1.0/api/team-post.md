@@ -145,7 +145,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
-   "firstChannelName": "My First Channel of the sample team",
+   "firstChannelName": "My First Channel of the sample team"
    "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
@@ -225,7 +225,7 @@ Content-Type: application/json
     "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
     "visibility": "Private",
     "displayName": "Sample Engineering Team",
-    "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",,
+    "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",
     "firstChannelName": "My First Channel of the team",
     "channels": [
         {
