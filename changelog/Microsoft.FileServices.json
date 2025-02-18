@@ -4177,7 +4177,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointGroup](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroup?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharePointGroup](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroup?view=graph-rest-beta) resource and its methods.",
           "Target": "sharePointGroup"
         },
         {
@@ -4185,7 +4185,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointGroupMember",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointGroupMember](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroupMember?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharePointGroupMember](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroupMember?view=graph-rest-beta) resource and its methods.",
           "Target": "sharePointGroupMember"
         }
       ],

@@ -1,6 +1,6 @@
 ---
-title: "sharePointGroup: create"
-description: "Create a sharePointGroup object."
+title: "Create sharePointGroup"
+description: "Create a new sharePointGroup object."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# sharePointGroup: create  
+# Create sharePointGroup
 
 Namespace: microsoft.graph
 
@@ -16,13 +16,19 @@ Namespace: microsoft.graph
 
 Create a [sharePointGroup](../resources/sharepointgroup.md) object.
 
-A **sharePointGroup** object is created by invoking this API.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+Create a new sharePointGroup object.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "ignored",
+  "name": "filestoragecontainer-post-sharepointgroups-permissions"
+}
+-->
+
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-post-sharepointgroups-permissions.md)]
 
 | Permission type                        | Least privileged permissions  | Higher privileged permissions |
 | :------------------------------------- | :---------------------------- | :---------------------------- |
@@ -35,19 +41,26 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
-POST /storage/fileStorage/containers/{containerId}/sharePointGroups/
+POST /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the values for the title and description of the **sharePointGroup**
+
+In the request body, supply a JSON representation of the [sharePointGroup](../resources/sharepointgroup.md) object.
+
+You can specify the following properties when creating a **sharePointGroup**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -56,7 +69,8 @@ In the request body, supply the values for the title and description of the **sh
 
 ## Response
 
-If successful, this action returns a `201 Created` response code with a json representation of the created group.
+If successful, this method returns a `201 Created` response code and a [sharePointGroup](../resources/sharepointgroup.md) object in the response body.
+
 
 ## Example 1: Create a new SharePointGroup that is local to a SharePointEmbedded container
 
@@ -69,6 +83,7 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro
 Content-Type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.sharePointGroup",
     "title": "Sample Group",
     "description": "This is a sample description"
 }
@@ -81,9 +96,9 @@ The following example shows a sample response. The group is successfully created
 ``` http
 HTTP/1.1 201 Created
 {
-    "@odata.context": "https://contoso.sharepoint.com/_api/v2.1/$metadata#storageContainers('b%21oHTW5i_nhk6psByTjEFuUG6vW5yZJRNDkRSLCcmzK6ZPVcywz3AFT5jpBl1KUcbG')/sharePointGroups/$entity",
-    "id" : "4",
-    "title": "Sample Group",
-    "description": "This is sample description"
+  "@odata.type": "#microsoft.graph.sharePointGroup",
+  "id" : "4",
+  "title": "Sample Group",
+  "description": "This is sample description"
 }
 ```

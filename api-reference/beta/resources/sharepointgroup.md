@@ -16,14 +16,18 @@ Namespace: microsoft.graph
 
 The **sharePointGroup** resource represents a group of users or m365 groups that is local to the container or site.
 
+Inherits from [entity](../resources/entity.md)
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/sharepointgroup-list-sharepointgroups.md)|[sharePointGroup](../resources/sharepointgroup.md) collection|Get a list of the [sharePointGroup](../resources/sharepointgroup.md) objects and their properties.|
-|[Create](../api/sharepointgroup-post.md)|[sharePointGroup](../resources/sharepointgroup.md)|Create a new [sharePointGroup](../resources/sharepointgroup.md) object.|
-|[Get](../api/sharepointgroup-get.md)|[sharePointGroup](../resources/sharepointgroup.md)|Read the properties and relationships of a [sharePointGroup](../resources/sharepointgroup.md) object.|
-|[Update](../api/sharepointgroup-update.md)|[sharePointGroup](../resources/sharepointgroup.md)|Update the properties of a [sharePointGroup](../resources/sharepointgroup.md) object.|
-|[Delete](../api/sharepointgroup-delete.md)|None|Delete a [sharePointGroup](../resources/sharepointgroup.md) object.|
+|[List](../api/filestoragecontainer-list-sharepointgroups.md)|[sharePointGroup](../resources/sharepointgroup.md) collection|Get a list of the sharePointGroup objects and their properties.|
+|[Create](../api/filestoragecontainer-post-sharepointgroups.md)|[sharePointGroup](../resources/sharepointgroup.md)|Create a new sharePointGroup object.|
+|[Get](../api/sharepointgroup-get.md)|[sharePointGroup](../resources/sharepointgroup.md)|Read the properties and relationships of a sharePointGroup object.|
+|[Update](../api/sharepointgroup-update.md)|[sharePointGroup](../resources/sharepointgroup.md)|Update the properties of a sharePointGroup object.|
+|[Delete](../api/filestoragecontainer-delete-sharepointgroups.md)|None|Delete a sharePointGroup object.|
+|[List members](../api/sharepointgroup-list-members.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md) collection|Get a list of the [sharePointGroupMember](../resources/sharepointgroupmember.md) objects and their properties.|
+|[Create sharePointGroupMember](../api/sharepointgroup-post-members.md)|[sharePointGroupMember](../resources/sharepointgroupmember.md)|Create a new sharePointGroupMember object.|
 
 ## Properties
 |Property|Type|Description|
@@ -50,9 +54,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointGroup",
-  "id": "string (identifier)",
-  "title": "string",
-  "description": "string",
-  "members": [{"@odata.type": "microsoft.graph.sharePointGroupMember" }],
+  "id": "String (identifier)",
+  "title": "String",
+  "description": "String"
 }
 ```

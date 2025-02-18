@@ -1,6 +1,6 @@
 ---
-title: "sharePointGroup: list"
-description: "List sharePointGroup objects."
+title: "List sharePointGroup objects"
+description: "Get a list of the sharePointGroup objects and their properties."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,21 +8,25 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# sharePointGroup: list  
+# List sharePointGroup objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List [sharePointGroup](../resources/sharepointgroup.md) objects.
+Get a list of the sharePointGroup objects and their properties.
 
-A collection of **sharePointGroup** objects that are local to the SharePointEmbedded container or SharePoint site is returned.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "ignored",
+  "name": "filestoragecontainer-list-sharepointgroups-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-sharepointgroups-permissions.md)]
 
 | Permission type                        | Least privileged permissions  | Higher privileged permissions |
 | :------------------------------------- | :---------------------------- | :---------------------------- |
@@ -35,27 +39,34 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
-GET /storage/fileStorage/containers/{containerId}/sharePointGroups
+GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups
 ```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type   | application/json. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-No request body is supplied for this API.
+
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code with a json representation of the collection of retrieved group.
+If successful, this method returns a `200 OK` response code and a collection of [sharePointGroup](../resources/sharepointgroup.md) objects in the response body.
 
 ## Example 1: Retrieve all the existing SharePointGroups that are local to a container
 The following example retrieves all the SharePointGroups that are local to the SharePointEmbedded container identified by `{containerId}`
-
 
 ### Request
 
@@ -71,15 +82,18 @@ The following example shows a sample response containing the collection of Share
 
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
-  "@odata.context": "https://contoso.sharepoint.com/_api/v2.1/$metadata#storageContainers(b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z)/sharePointGroups",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.sharePointGroup",
       "id": "7",
       "title": "sampleTitle1",
       "description": "sampleDescription1"
     },
     {
+      "@odata.type": "#microsoft.graph.sharePointGroup",
       "id": "9",
       "title": "sampleTitle2",
       "description": "sampleDescription2"
@@ -106,7 +120,6 @@ The following example shows a sample response. As there are no SharePointGroups 
 ``` http
 HTTP/1.1 200 OK
 {
-  "@odata.context": "https://contoso.sharepoint.com/_api/v2.1/$metadata#storageContainers(b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z)/sharePointGroups",
   "value": []
 }
 ```

@@ -1,6 +1,6 @@
 ---
-title: "sharePointGroupMember: create"
-description: "Create a sharePointGroupMember object."
+title: "Create sharePointGroupMember"
+description: "Create a new sharePointGroupMember object."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,21 +8,25 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# sharePointGroupMember: create  
+# Create sharePointGroupMember
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [sharePointGroupMember](../resources/sharepointgroupmember.md) object.
-
-A **sharePointGroupMember** object is created by invoking this API.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+Create a new sharePointGroupMember object.
 
 ## Permissions
 
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "ignored",
+  "name": "sharepointgroup-post-members-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-post-members-permissions.md)]
 
 | Permission type                        | Least privileged permissions  | Higher privileged permissions |
 | :------------------------------------- | :---------------------------- | :---------------------------- |
@@ -35,26 +39,26 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
-POST /storage/fileStorage/containers/{containerId}/sharePointGroups/members
+POST /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{sharePointGroupId}/members
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sharePointGroupMember](../resources/sharepointgroupmember.md) resource  that includes a [sharePointIdentitySet](../resources/sharepointidentityset.md) to refer to the identity that is to be added to the [sharePointGroup](../resources/sharepointgroup.md).
+In the request body, supply a JSON representation of the [sharePointGroupMember](../resources/sharepointgroupmember.md) object.
 
-Said `sharePointIdentitySet` may only contain one and only one of "user" or "group". 
-
-If the `sharePointIdentitySet` contains "user", it should have one and only one of "id" or "userPrincipalName" to refer to the user identity.
-
-If the `sharePointIdentitySet` contains "group", it should have one and only one of "id" or "email" to refer to the group identity. This group identity can only refer to an m365 group.
+You can specify the following properties when creating a **sharePointGroupMember**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -62,7 +66,8 @@ If the `sharePointIdentitySet` contains "group", it should have one and only one
 
 ## Response
 
-If successful, this action returns a `201 Created` response code with a json representation of the created **sharePointGroupMember**.
+If successful, this method returns a `201 Created` response code and a [sharePointGroupMember](../resources/sharepointgroupmember.md) object in the response body.
+
 
 ## Example 1: Create a sharePointGroupMember using their userPrincipalName
 
@@ -75,13 +80,14 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro
 Content-Type: application/json
 
 {
-    "identity":
+  "@odata.type": "#microsoft.graph.sharePointGroupMember",
+  "identity":
+  {
+    "user":
     {
-        "user":
-        {
-            "userPrincipalName" : "user0@contoso.com"
-        }
+        "userPrincipalName" : "user0@contoso.com"
     }
+  }
 }
 ```
 
@@ -92,13 +98,14 @@ The following example shows a sample response with a json object representing th
 ``` http
 HTTP/1.1 201 Created
 {
-  "@odata.context": "https://contoso.sharepoint.com/_api/v2.1/$metadata#Collection(oneDrive.sharePointGroupMember)",
+  "@odata.type": "#microsoft.graph.sharePointGroupMember",
   "id": "aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ",
   "identity": {
+    "@odata.type": "microsoft.graph.sharePointIdentitySet",
     "user": {
       "displayName": "TestUser",
       "email": "TestUser@testTenant.onmicrosoft.com"
-      }
     }
+  }
 }
 ```

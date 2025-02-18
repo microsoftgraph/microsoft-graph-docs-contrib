@@ -1,6 +1,6 @@
 ---
-title: "sharePointGroupMember: get"
-description: "Get a sharePointGroupMember object."
+title: "Delete sharePointGroupMember"
+description: "Delete a sharePointGroupMember object."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,21 +8,24 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# sharePointGroupMember: get  
+# Delete sharePointGroupMember
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets a [sharePointGroupMember](../resources/sharepointgroupmember.md) object from a [sharePointGroup](../resources/sharepointgroup.md).
-
-A **sharePointGroupMember** object is retrieved by invoking this API.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+Delete a sharePointGroupMember object.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "ignored",
+  "name": "sharepointgroup-delete-members-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-delete-members-permissions.md)]
 
 | Permission type                        | Least privileged permissions  | Higher privileged permissions |
 | :------------------------------------- | :---------------------------- | :---------------------------- |
@@ -36,22 +39,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 ``` http
-GET /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
+DELETE /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
 ```
 
 ## Request headers
 
+
 |Name|Description|
 |:---|:---|
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-No request body is supplied to this API.
+
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code with a json representation of the retrieved **sharePointGroupMember**.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -60,9 +64,8 @@ If successful, this action returns a `200 OK` response code with a json represen
 The following example shows a request.
 
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
 Content-Type: application/json
-
 ```
 
 ### Response
@@ -70,15 +73,5 @@ Content-Type: application/json
 The following example shows the response.
 
 ``` http
-HTTP/1.1 200 OK
-{
-  "@odata.context": "https://contoso.sharepoint.com/_api/v2.1/$metadata#Collection(oneDrive.sharePointGroupMember)",
-  "id": "aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ",
-  "identity": {
-    "user": {
-      "displayName": "TestUser",
-      "email": TestUser@testTenant.onmicrosoft.com
-      }
-    }
-}
+HTTP/1.1 204 No Content
 ```

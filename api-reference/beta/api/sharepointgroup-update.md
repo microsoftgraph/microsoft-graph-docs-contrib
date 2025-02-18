@@ -1,6 +1,6 @@
 ---
-title: "sharePointGroup: update"
-description: "Update a sharePointGroup object."
+title: "Update sharePointGroup"
+description: "Update the properties of a sharePointGroup object."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,19 +8,25 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# sharePointGroup: update  
+# Update sharePointGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An existing [sharePointGroup](../resources/sharepointgroup.md) object is updated by invoking this API.
+Update the properties of a sharePointGroup object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "ignored",
+  "name": "sharepointgroup-update-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-update-permissions.md)]
 
 | Permission type                        | Least privileged permissions  | Higher privileged permissions |
 | :------------------------------------- | :---------------------------- | :---------------------------- |
@@ -33,19 +39,24 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
-PATCH /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
+PATCH /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{sharePointGroupId}
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the values for the updated title or updated description for the **sharePointGroup**
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -54,7 +65,7 @@ In the request body, supply the values for the updated title or updated descript
 
 ## Response
 
-If successful, this action returns a `200 OK` response code with a json representation of the updated group.
+If successful, this method returns a `200 OK` response code and an updated [sharePointGroup](../resources/sharepointgroup.md) object in the response body.
 
 ## Examples
 
@@ -67,6 +78,7 @@ PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRr
 Content-Type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.sharePointGroup",
     "title" : "This is the new group title",
     "description": "Updated group description"
 }
@@ -79,7 +91,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 {
-    "@odata.context": "https://contoso.sharepoint.com/_api/v2.1/$metadata#storageContainers('b%21oHTW5i_nhk6psByTjEFuUG6vW5yZJRNDkRSLCcmzK6ZPVcywz3AFT5jpBl1KUcbG')/sharePointGroups/$entity",
+    "@odata.type": "#microsoft.graph.sharePointGroup",
     "id" : "4",
     "title" : "This is the new group title",
     "description": "Updated group description"

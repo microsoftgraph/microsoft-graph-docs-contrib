@@ -1,6 +1,6 @@
 ---
-title: "sharePointGroupMember: delete"
-description: "Delete a sharePointGroupMember object."
+title: "Get sharePointGroupMember"
+description: "Read the properties and relationships of a sharePointGroupMember object."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,21 +8,24 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# sharePointGroupMember: delete  
+# Get sharePointGroupMember
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [sharePointGroupMember](../resources/sharepointgroupmember.md) object from a [sharePointGroup](../resources/sharepointgroup.md).
-
-A **sharePointGroupMember** object is deleted from a **sharePointGroup** by invoking this API.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+Read the properties and relationships of a sharePointGroupMember object.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "ignored",
+  "name": "sharepointgroupmember-get-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/sharepointgroupmember-get-permissions.md)]
 
 | Permission type                        | Least privileged permissions  | Higher privileged permissions |
 | :------------------------------------- | :---------------------------- | :---------------------------- |
@@ -35,23 +38,31 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
-DELETE /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
+GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{sharePointGroupId}/members/{sharePointGroupMemberId}
 ```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type   | application/json. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-No request body is supplied to this API.
+
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response.
+If successful, this method returns a `200 OK` response code and a [sharePointGroupMember](../resources/sharepointgroupmember.md) object in the response body.
 
 ## Examples
 
@@ -60,8 +71,9 @@ If successful, this action returns a `204 No Content` response.
 The following example shows a request.
 
 ``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
 Content-Type: application/json
+
 ```
 
 ### Response
@@ -69,5 +81,20 @@ Content-Type: application/json
 The following example shows the response.
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.sharePointGroupMember",
+    "id": "aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ7",
+    "identity": {
+      "@odata.type": "microsoft.graph.sharePointIdentitySet",
+      "user": {
+        "displayName": "TestUser",
+        "email": TestUser@testTenant.onmicrosoft.com
+      }
+    }
+  }
+}
 ```

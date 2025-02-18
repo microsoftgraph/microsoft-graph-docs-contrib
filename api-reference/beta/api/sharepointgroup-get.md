@@ -1,6 +1,6 @@
 ---
-title: "sharePointGroup: get"
-description: "Get a sharePointGroup object."
+title: "Get sharePointGroup"
+description: "Read the properties and relationships of a sharePointGroup object."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,21 +8,24 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# sharePointGroup: get  
+# Get sharePointGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [sharePointGroup](../resources/sharepointgroup.md) object.
-
-A **sharePointGroup** object is retrieved by invoking this API.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+Read the properties and relationships of a sharePointGroup object.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "ignored",
+  "name": "sharepointgroup-get-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-get-permissions.md)]
 
 | Permission type                        | Least privileged permissions  | Higher privileged permissions |
 | :------------------------------------- | :---------------------------- | :---------------------------- |
@@ -35,23 +38,31 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
-GET /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}
+GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{sharePointGroupId}
 ```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-No request body is supplied for this API.
+
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code with a json representation of the retrieved group.
+If successful, this method returns a `200 OK` response code and a [sharePointGroup](../resources/sharepointgroup.md) object in the response body.
 
 ## Example 1: Get a SharePointGroup using ID 
 The following example retrieves a SharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`.
@@ -72,7 +83,7 @@ The following example shows s sample response with a json object representing th
 ``` http
 HTTP/1.1 200 OK
 {
-  "@odata.context": "https://contoso.sharepoint.com/_api/v2.1/$metadata#storageContainers('b%21oHTW5i_nhk6psByTjEFuUG6vW5yZJRNDkRSLCcmzK6ZPVcywz3AFT5jpBl1KUcbG')/sharePointGroups/$entity",
+  "@odata.type": "#microsoft.graph.sharePointGroup",
   "id" : "4",
   "title": "Sample Group",
   "description": "This is sample description"
@@ -84,7 +95,6 @@ The following example attempts to get a SharePointGroup identified by `{sharePoi
 
 ### Request
 
--->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
 Content-Type: application/json

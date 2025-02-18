@@ -1,28 +1,30 @@
 ---
-title: "sharePointGroupMember: list"
-description: "List sharePointGroupMember objects."
-author: "tmarwendo-microsoft"
+title: "List sharePointGroupMember objects"
+description: "Get a list of the sharePointGroupMember objects and their properties."
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# sharePointGroupMember: list  
+# List sharePointGroupMember objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lists [sharePointGroupMember](../resources/sharepointgroupmember.md) objects from a [sharePointGroup](../resources/sharepointgroup.md).
-
-**SharePointGroupMember** objects are retrieved by invoking this API.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+Get a list of the sharePointGroupMember objects and their properties.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "ignored",
+  "name": "sharepointgroup-list-members-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-list-members-permissions.md)]
 
 | Permission type                        | Least privileged permissions  | Higher privileged permissions |
 | :------------------------------------- | :---------------------------- | :---------------------------- |
@@ -35,23 +37,31 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
-GET /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members
+GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{sharePointGroupId}/members
 ```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-No request body is supplied to this API.
+
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code with a json representation of the collection of **sharePointGroupMember**.
+If successful, this method returns a `200 OK` response code and a collection of [sharePointGroupMember](../resources/sharepointgroupmember.md) objects in the response body.
 
 ## Examples
 
@@ -72,23 +82,25 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 {
-  "@odata.context": "https://contoso.sharepoint.com/_api/v2.1/$metadata#Collection(oneDrive.sharePointGroupMember)",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.sharePointGroupMember",
       "id": "aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ",
       "identity": {
+        "@odata.type": "microsoft.graph.sharePointIdentitySet",
         "user": {
-        "displayName": "TestUser",
-        "email": "TestUser@testTenant.onmicrosoft.com"
+          "displayName": "TestUser",
+          "email": "TestUser@testTenant.onmicrosoft.com"
         }
       }
     },
     {
       "id": "YzowdC5jfHRlbmFudHxiODg5YmFkMy1lMTBlLTQ5M2MtYWY3MC1mMDdlZGJkMDcyZWM",
       "identity": {
+        "@odata.type": "microsoft.graph.sharePointIdentitySet"
         "user": {
-        "displayName": "TestUser2",
-        "email": "TestUser2@testTenant.onmicrosoft.com"
+          "displayName": "TestUser2",
+          "email": "TestUser2@testTenant.onmicrosoft.com"
         }
       }
     }
