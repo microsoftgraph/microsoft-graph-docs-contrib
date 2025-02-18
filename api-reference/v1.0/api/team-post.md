@@ -212,7 +212,6 @@ Here's a request with a full payload. The client can override values in the base
 #### Request
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "create_team_post_full_payload"
