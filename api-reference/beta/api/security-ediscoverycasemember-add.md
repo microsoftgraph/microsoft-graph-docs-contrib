@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-ediscoverycasemember-update-permissions"
+  "name": "security-ediscoverycasemember-add-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycasemember-add-permissions.md)]
