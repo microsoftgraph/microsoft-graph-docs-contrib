@@ -125,7 +125,7 @@ The example below demonstrates a request for delegators able to receive calls.
 
 <!-- {
   "blockType": "request",
-  "name": "list_delegationsettings_delegators"
+  "name": "list_delegationsettings_delegates"
 }
 -->
 ``` http
