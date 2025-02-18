@@ -39,34 +39,32 @@ The initial steps required here follow most of the same steps used to register a
 
 ### Preconsent your app for all your customers
 
-Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using [Azure AD PowerShell V2](https://www.powershellgallery.com/packages/AzureAD) or [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation). Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
+Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using [Microsoft Entra PowerShell](/powershell/entra-powershell/installation) or [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation). Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
 
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
-
-# [Azure AD PowerShell](#tab/azuread)
+# [Microsoft Entra PowerShell](#tab/entraps)
 
 1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
 
     ```PowerShell
-    Connect-AzureAd
+    Connect-Entra
     ```
 
 2. Find the group that represents the *Adminagents*.
 
     ```PowerShell
-    $group = Get-AzureADGroup -Filter "displayName eq 'Adminagents'"
+    $group = Get-EntraGroup -Filter "displayName eq 'Adminagents'"
     ```
 
 3. Find the service principal that has the same *appId* as your app.
 
     ```PowerShell
-    $sp = Get-AzureADServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
+    $sp = Get-EntraServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
     ```
 
 4. Finally, add the service principal to the *Adminagents* group.
 
     ```PowerShell
-    Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
+    Add-EntraGroupMember -GroupId $group.Id -MemberId $sp.Id
     ```
 
 # [Microsoft Graph PowerShell](#tab/graphpowershell)
