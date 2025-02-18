@@ -42,7 +42,7 @@ You can find and collect call IDs in the following ways:
 
 ## When is a call record available?
 
-A first version of a call record is typically generated and a notification is sent within 15 minutes after a call ends. However, it can take up to 150 minutes for the service to make the call record available. For more information, see [Latency](/graph/api/resources/subscription#latency) page.
+A first version of a call record is typically generated and a notification is sent within 30 minutes after a call ends. However, it can take up to 150 minutes for the service to make the call record available. For more information, see [Latency](/graph/api/resources/subscription#latency) page.
 
 ## How long are call records retained?
 
