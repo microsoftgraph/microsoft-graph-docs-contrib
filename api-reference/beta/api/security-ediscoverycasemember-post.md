@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "security-ediscoverycasemember-add-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycasemember-add-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycasemember-post-permissions.md)]
 
 ## HTTP request
 

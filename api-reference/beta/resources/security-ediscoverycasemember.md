@@ -23,8 +23,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/security-ediscoverycasemember-list.md)|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) collection|Get a list of the ediscoveryCaseMember objects and their properties.|
-|[Add](../api/security-ediscoverycasemember-add.md)|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md)|Add a case member.|
-|[Remove](../api/security-ediscoverycasemember-remove.md)|None|Remove a case member.|
+|[Add](../api/security-ediscoverycasemember-post.md)|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md)|Add a case member.|
+|[Remove](../api/security-ediscoverycasemember-delete.md)|None|Remove a case member.|
 
 ## Properties
 |Property|Type|Description|
