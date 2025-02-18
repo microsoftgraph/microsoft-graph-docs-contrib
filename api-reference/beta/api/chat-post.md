@@ -722,9 +722,14 @@ Content-Type: application/json
 ```
 
 #### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 
-
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
+```
 
 ## Related content
 
