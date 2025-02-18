@@ -14,49 +14,43 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents open extension, an extensibility option that provides an easy way to directly add untyped properties to a resource in Microsoft Graph.
+
+Any open extension added to a resource shows up in the extensions navigation property. Each extension has an extensionName property which is the only pre-defined, writable property for all extensions, along with your custom data.
+
 An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).
 
-## Methods
+Inherits from [entity](../resources/entity.md)
 
-See the methods of the derived type [openTypeExtension](opentypeextension.md) for supported methods.
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Create](../api/driveitem-post-extensions.md)|[extension](../resources/extension.md)| Create an open extension using an extensionName.|
+|[Get](../api/extension-get.md)|[extension](../resources/extension.md)| Get an open extension identified by id.|
+|[Update](../api/extension-update.md)|[extension](../resources/extension.md)|Update an open extension identified by id.|
+|[Delete](../api/driveitem-delete-extensions.md)|None| Delete an open extension identified by id.|
 
 ## Properties
-| Property       | Type    |Description|
-|:---------------|:--------|:----------|
-|id|String| The identifier for the extension. Read-only.|
+|Property|Type|Description|
+|:---|:---|:---|
+| extensionName | string | A unique text identifier for an open type data extension.
+| id            | string | A fully qualified identifier that concatenates the extension type with the extensionName. Read-only.
 
 ## Relationships
 None.
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.extension"
-}-->
-
-```json
-{
-  "id": "string (identifier)"
-}
-
-```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "extension resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.extension",
+  "openType": false
 }
 -->
-
-
+``` json
+{
+    "extensionName": "string",
+    "id": "string"
+}
+```

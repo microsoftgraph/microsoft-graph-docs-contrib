@@ -80,6 +80,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | [itemRetentionLabel](../resources/itemretentionlabel.md) | Lock or unlock a retention label on a **driveItem** that classifies content as records. |
 |[Create upload session](../api/driveitem-createuploadsession.md)              |[uploadSession](../resources/uploadsession.md)|Create an upload session to allow your app to upload files up to the maximum file size.|
 | [Download file (deprecated)](../api/driveitem-get-content.md)                          | download URL | Download content of a **driveItem**.|
+|[Create extension](../api/driveitem-post-extensions.md)|[extension](../resources/extension.md)|Create a new extension object.|
 
 
 ## Properties
@@ -145,6 +146,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | thumbnails         | [thumbnailSet][] collection | Collection of [thumbnailSet][] objects associated with the item. For more information, see [getting thumbnails][]. Read-only. Nullable.
 | versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
 | workbook           | [workbook][]                | For files that are Excel spreadsheets, access to the workbook API to work with the spreadsheet's contents. Nullable.
+|extensions|[extension](../resources/extension.md) collection|**TODO: Add Description**|
 
 ## Instance Attributes
 
