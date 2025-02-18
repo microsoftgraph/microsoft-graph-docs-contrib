@@ -86,7 +86,7 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "name": "user/smtp"
+  "name": "user/smtp",
   "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
