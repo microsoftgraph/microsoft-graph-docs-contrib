@@ -679,7 +679,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 7: Create a one-on-one chat with resource-specific consent (RSC) permissions
+### Example 7: Create a one-on-one chat with installed apps which have resource-specific consent (RSC) permissions
 
 #### Request
 
