@@ -600,3 +600,66 @@ Content-Type: application/json
   ]
 }
 -->
+
+### Example 5: Enable policy isEndToEndEncryptionEnabled into existing meeting
+
+> **Note:** This property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For details, see [Require end-to-end encryption for sensitive Teams meetings](https://learn.microsoft.com/MicrosoftTeams/end-to-end-encrypted-meetings).
+
+#### Request
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
+Content-Type: application/json 
+
+{
+    "isEndToEndEncryptionEnabled": true
+}
+
+```
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+{
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi",
+    "creationDateTime":"2020-07-03T00:23:39.444642Z",
+    "startDateTime":"2020-09-09T21:33:30.8546353Z",
+    "endDateTime":"2020-09-09T22:03:30.8566356Z",
+    "joinWebUrl":"(redacted)",
+    "subject":"Patch Meeting Subject",
+    "autoAdmittedUsers": "EveryoneInCompany",
+    "isEndToEndEncryptionEnabled": true,
+    "isEntryExitAnnounced": true,
+    "allowedPresenters": "everyone",
+    "videoTeleconferenceId": "(redacted)",
+    "participants": {
+        "organizer": {
+            "upn": "(redacted)",
+            "role": "presenter",
+            "identity": {
+                "user": {
+                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "displayName": null,
+                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "identityProvider": "AAD"
+                }
+            }
+        },
+        "attendees": [],
+    },
+    "lobbyBypassSettings": {
+        "scope": "organization",
+        "isDialInBypassEnabled": true
+    }
+}
+```

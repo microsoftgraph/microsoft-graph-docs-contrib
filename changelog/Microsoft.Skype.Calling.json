@@ -11,6 +11,14 @@
           "Target": "onlineMeeting"
         },
         {
+          "Id": "cfcf975b-3ebc-4a17-afc0-7b7b7783af98",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEndToEndEncryptionEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isEndToEndEncryptionEnabled** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
           "Id": "5f068f2c-7886-4e73-900a-fac41b59795f",
           "ApiChange": "Property",
           "ChangedApiName": "isEndToEndEncryptionEnabled",
