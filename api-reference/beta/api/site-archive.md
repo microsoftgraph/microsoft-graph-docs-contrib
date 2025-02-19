@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |:---|:---|:---|
 |Delegated (work or school account)|Sites.FullControl.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Sites.FullControl.All|Not available.|
+|Application|Sites.Archive.All|Sites.FullControl.All|
 
 > [!IMPORTANT]
 > In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *SharePoint Administrator* is the least privileged role for this operation.
