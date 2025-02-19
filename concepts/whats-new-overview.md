@@ -29,7 +29,7 @@ Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence)
 
 ### Teamwork and communications | Messaging
 
-Use the **firstChannelName** property on [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
+Use the **firstChannelName** property on a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
 [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
 
 ## February 2025: New in preview only 
