@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|ThreatIntelligence.Read.All|Not available.|
+|Delegated (work or school account)|AuditLogsQuery-Entra.Read.All|AuditLogsQuery-CRM.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|ThreatIntelligence.Read.All|Not available.|
+|Application|AuditLogsQuery-Entra.Read.All|AuditLogsQuery-CRM.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery.Read.All|
+
