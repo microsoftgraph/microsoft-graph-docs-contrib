@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [sharePointGroup](../resources/sharepointgroup.md) object.
-
-Create a new sharePointGroup object.
+Create a new [sharePointGroup](../resources/sharepointgroup.md) object.
 
 ## Permissions
 
