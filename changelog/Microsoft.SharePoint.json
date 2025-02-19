@@ -16,7 +16,7 @@
           "ChangedApiName": "unarchive",
           "ChangeType": "Addition",
           "Description": "Added support for the application permission `Sites.Archive.All` to the [site: unarchive](https://learn.microsoft.com/en-us/graph/api/site-unarchive?view=graph-rest-beta) method.",
-          "Target": "archive"
+          "Target": "unarchive"
         }
       ],
       "Id": "584a312d-86ac-4622-bc31-0c1651362206",
