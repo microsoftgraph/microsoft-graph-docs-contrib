@@ -65,6 +65,7 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |[Copy mail folder](../api/mailfolder-copy.md)|[MailFolder](mailfolder.md)|Copy a mailFolder and its contents to another mailFolder.|
 |[Get mail folder delta](../api/mailfolder-delta.md)|[mailFolder](mailfolder.md) collection|Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.|
 |[Move mail folder](../api/mailfolder-move.md)|[MailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
+|[Permanently delete](../api/mailfolder-permanentdelete.md)|None|Permanently delete a mail folder and remove its items from the user's mailbox.|
 |**Extended properties**| | |
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[mailFolder](mailfolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
