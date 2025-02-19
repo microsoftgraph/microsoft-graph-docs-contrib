@@ -2565,7 +2565,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "firstChannelName",
           "ChangeType": "Addition",
-          "Description": "Added the **firstChannelName** property to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Description": "Added the **firstChannelName** property on a [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
           "Target": "team"
         }
       ],
