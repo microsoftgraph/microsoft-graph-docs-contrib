@@ -27,7 +27,7 @@ Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence)
 
 [Fetch the recording of a Teams live event](/graph/api/onlinemeeting-get#example-6-fetch-the-recording-of-a-teams-live-event-deprecated).
 
-### Teamwork and communications | Messaging
+### Teamwork and communications | Teams and Channel
 
 Use the **firstChannelName** property on [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
 [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
