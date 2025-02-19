@@ -290,7 +290,7 @@ items:
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
     - name: Get real-time remote connection status reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-    - name: Get remove connection hitorical reports
+    - name: Get remote connection historical reports
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
