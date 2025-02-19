@@ -2557,6 +2557,24 @@
       "CreatedDateTime": "2025-01-30T19:08:30.9147043Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "AI interactions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fc85a381-3549-4388-bc52-305b9b5f3cf1",
+          "ApiChange": "Property",
+          "ChangedApiName": "firstChannelName",
+          "ChangeType": "Addition",
+          "Description": "Added the **firstChannelName** property to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "fc85a381-3549-4388-bc52-305b9b5f3cf1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-02-14T08:54:28.4245939Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }
