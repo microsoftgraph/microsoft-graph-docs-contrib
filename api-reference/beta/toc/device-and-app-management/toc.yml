@@ -286,7 +286,7 @@ items:
       href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
     - name: Get raw remote connection reports
       href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
-    - name: Get real time remote connection agency reports
+    - name: Get real-time remote connection latency reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
     - name: Get real-time remote connection status reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
