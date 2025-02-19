@@ -16,11 +16,13 @@ Namespace: microsoft.graph
 
 Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
+The following steps describe how to create and manage a **exchangeRestoreSession** with bulk artifact additions:
+
 1. Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md) with Empty payload.
-1. Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with a [exchangeRestoreSession](../resources/exchangerestoresession.md).
-1. Get the status of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) for the SharePoint restore session. The initial status upon creation is `active` and remains in this state until the [exchangeRestoreSession](../resources/exchangerestoresession.md) is activated.
-1. Activate the [exchangeRestoreSession](../resources/exchangerestoresession.md) created in the first step.
-1. Monitor the status of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md). When all the sites are added to the corresponding [exchangeRestoreSession](../resources/exchangerestoresession.md), the status of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) changes to `completed`. If any failures occur during resource resolution, the status changes to `completedWithErrors`.
+2. Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with a [exchangeRestoreSession](../resources/exchangerestoresession.md).
+3. Get the status of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) for the Exchange restore session. The initial status upon creation is `active` and remains in this state until the [exchangeRestoreSession](../resources/exchangerestoresession.md) is activated.
+4. Activate the [exchangeRestoreSession](../resources/exchangerestoresession.md) created in the first step.
+5. Monitor the status of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md). When all the emails are added to the corresponding [exchangeRestoreSession](../resources/exchangerestoresession.md), the status of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) changes to `completed`. If any failures occur during resource resolution, the status changes to `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
