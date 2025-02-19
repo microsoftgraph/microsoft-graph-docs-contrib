@@ -127,7 +127,7 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         },
         {
-            "Column": "AvailableBandwidthInMBps",
+            "Column": "AvailableBandwidthInMbps",
             "PropertyType": "Double"
         },
         {
