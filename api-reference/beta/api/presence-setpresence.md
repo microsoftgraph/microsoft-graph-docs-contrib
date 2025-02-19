@@ -23,7 +23,7 @@ A user can have multiple presence sessions because the user can be on multiple T
 
 Similarly, an application can have its own presence session for a user and be able to update the state.
 
-The following is the precedence for how session states are aggregated, with "A > B" representing A having precedence over B:
+The following precedence is used for how session states are aggregated, with "A > B" representing that A has precedence over B:
 * User-preferred state > session-level states (user-preferred state overrides session-level states)
 * Among session-level states: DoNotDisturb > Busy > Available > Away
 

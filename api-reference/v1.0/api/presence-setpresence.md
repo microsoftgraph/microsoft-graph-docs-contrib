@@ -21,7 +21,7 @@ A user can have multiple presence sessions because the user can be on multiple T
 
 Similarly, an application can have its own presence session for a user and be able to update the state.
 
-The following is the precedence for how session states are aggregated:
+The following precedence is used for how session states are aggregated:
 * User-configured > app-configured (user-configured state overrides others)
 * Among app-configured: DoNotDisturb > Busy > Available > Away
 
