@@ -27,7 +27,7 @@ by providing a [delta](../api/contact-delta.md) function.
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get contact](../api/contact-get.md) | [contact](contact.md) |Read properties and relationships of contact object.|
-|[Create contact](../api/user-post-contacts.md) | [contact](contact.md) |Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.|
+|[Create contact](../api/user-post-contacts.md) | [contact](contact.md) |Add a contact to the root Contacts folder or the contacts endpoint of another contact folder.|
 |[Update contact](../api/contact-update.md) | [contact](contact.md) |Update contact object. |
 |[Delete contact](../api/contact-delete.md) | None |Delete contact object. |
 |[Permanently delete](../api/contact-permanentdelete.md)|None|Permanently delete a contact and place it in the purges folder in the recoverable Items folder in the user's mailbox.|
