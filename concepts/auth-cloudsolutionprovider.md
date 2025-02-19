@@ -16,7 +16,7 @@ This article describes how to enable application access to partner-managed custo
 
 > [!IMPORTANT]
 > Calling Microsoft Graph from a CSP application is only supported for directory resources (such as **user**, **group**,**device**, **organization**) and [Intune](/graph/api/resources/intune-graph-overview) resources.
-> 
+>
 
 ## What is a partner-managed application
 
@@ -24,9 +24,9 @@ The CSP program enables Microsoft's partners to resell and manage Microsoft Onli
 
 Additionally, as a partner developer, you can build a **partner-managed app** to manage your customers' Microsoft services. Partner-managed apps are often called *preconsented* apps because all your customers are automatically preconsented for your partner-managed apps. This means when a user from one of your customer tenants uses one of your partner-managed apps, the user can use it without being prompted to give consent. Partner-managed apps also inherit Delegated Admin Privileges, so your partner agents can also get privileged access to your customers through your partner-managed application.
 
-## How to set-up a partner-managed application
+## How to set up a partner-managed application
 
-An application is viewed as *partner-managed* when it is granted elevated permissions to access your customers' data.
+An application is *partner-managed* when it has elevated permissions to access customer data.
 
 > **Note:** Partner-managed apps can *only* be configured on Partner tenants, and in order to manage customer tenant resources, partner-managed apps **must** be configured as **multi-tenant applications**.
 
@@ -92,6 +92,7 @@ Finally grant your partner-managed app those configured permissions for all your
     ```PowerShell
     New-MgGroupMember -GroupId $group.Id -DirectoryObjectId $sp.Id
     ```
+
 ----
 
 ## Token acquisition flows
@@ -126,15 +127,16 @@ This is a standard [authorization code grant flow](/azure/active-directory/devel
     ```
 
 ## Register your app in the regions you support
+
 <a name="region"></a>
 
-CSP customer engagement is currently limited to a single region. Partner-managed applications carry the same limitation. This means you must have a separate tenant for each region you sell in. For example, if your partner-managed app is registered in a tenant in the US but your customer is in the EU – the partner-managed app will not work.  Each of your regional partner tenants must maintain their own set of partner-managed apps to manage customers within the same region. This might require additional logic in your app (prior to sign-in) to get your customers' sign-in username to decide which region-specific partner-managed app identity to use, to serve the user.
+CSP customer engagement is currently limited to a single region. Partner-managed applications carry the same limitation. This means you must have a separate tenant for each region you sell in. For example, if your partner-managed app is registered in a tenant in the US but your customer is in the EU – the partner-managed app won't work.  Each of your regional partner tenants must maintain their own set of partner-managed apps to manage customers within the same region. This might require additional logic in your app (prior to sign-in) to get your customers' sign-in username to decide which region-specific partner-managed app identity to use, to serve the user.
 
 ## Calling Microsoft Graph immediately after customer creation
 
-When you create a new customer using the [Partner Center API](/partner-center/developer/create-a-customer), a new customer tenant gets created. Additionally, a partner relationship also gets created, which makes you the partner of record for this new customer tenant. This partner relationship can take up to 3 minutes to propagate to the new customer tenant. If your app calls Microsoft Graph straight after creation, your app will likely receive an access denied error. A similar delay may be experienced when an existing customer accepts your invitation. This is because preconsent relies on the partner relationship being present in the customer tenant.
+When you create a new customer using the [Partner Center API](/partner-center/developer/create-a-customer), a new customer tenant gets created. Additionally, a partner relationship also gets created, which makes you the partner of record for this new customer tenant. This partner relationship can take up to 3 minutes to propagate to the new customer tenant. If your app calls Microsoft Graph straight after creation, your app will likely receive an access denied error. A similar delay might be experienced when an existing customer accepts your invitation. This is because preconsent relies on the partner relationship being present in the customer tenant.
 
-To avoid this problem, we recommend that your partner app should wait **three minutes** after customer creation before calling Microsoft Entra ID to acquire a token (to call Microsoft Graph). This should cover most cases. 
+To avoid this problem, we recommend that your partner app should wait **three minutes** after customer creation before calling Microsoft Entra ID to acquire a token (to call Microsoft Graph). This should cover most cases.
 However, if after waiting three minutes you still receive an authorization error, please wait an extra 60 seconds and try again.
 
 > **Note:** On the retry, you must acquire a new access token from Microsoft Entra ID, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an hour and won't contain the pre-consented permission claims.
