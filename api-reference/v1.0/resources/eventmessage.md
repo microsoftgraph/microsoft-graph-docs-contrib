@@ -28,6 +28,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 |[Get](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object. |
 |[Delete](../api/message-delete.md) | None |Delete eventMessage object. |
+|[Permanently delete](../api/eventmessage-permanentdelete.md)|None|Permanently delete an event message and place it in the purges folder in the recoverable Items folder in the user's mailbox.|
 |[Copy message](../api/message-copy.md)|[message](message.md)|Copy a message to a folder.|
 |[Create draft to forward message](../api/message-createforward.md)|[message](message.md)|Create a draft of the Forward message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
 |[Create draft to reply](../api/message-createreply.md)|[message](message.md)|Create a draft of the Reply message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
@@ -66,10 +67,10 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String|Unique identifier for the event message. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only. |
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
-|inferenceClassification|String| The possible values are: `focused`, `other`.|
+|inferenceClassification|String| The possible values are: `focused`, and `other`.|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
 |internetMessageId |String |The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
-|isDelegated|Boolean|True if this meeting request is accessible to a delegate, false otherwise. Default is false.|
+|isDelegated|Boolean|True if this meeting request is accessible to a delegate, false otherwise. The default is false.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it isn't yet sent.|
 |isRead|Boolean|Indicates whether the message is read.|
@@ -79,7 +80,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
-|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [for a shared calendar, or as a delegate](/graph/outlook-share-or-delegate-calendar). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
+|sender|[recipient](recipient.md)|The account that is used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [for a shared calendar, or as a delegate](/graph/outlook-share-or-delegate-calendar). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
