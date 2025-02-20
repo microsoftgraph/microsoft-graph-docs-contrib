@@ -40,6 +40,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[Get shared use license usage report (deprecated)](../api/cloudpcreports-getshareduselicenseusagereport.md) |Stream| Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for the reports. Read-only. |
@@ -53,11 +54,13 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | cloudPcInsightReport       | Indicates Cloud PC-level configuration data with insights.   |
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |exportJobs|[cloudPcExportJob](../resources/cloudpcexportjob.md) collection|The export jobs created for downloading reports.|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
