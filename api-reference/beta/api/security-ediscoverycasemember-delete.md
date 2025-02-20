@@ -1,6 +1,6 @@
 ---
 title: "Remove ediscoveryCaseMember"
-description: "Remove a ediscoveryCaseMember object."
+description: "Remove an ediscoveryCaseMember object."
 author: "arevers"
 ms.date: 2/12/2015
 ms.localizationpriority: medium

@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryCaseMember resource type"
-description: "Represents an eDiscovery case member"
+description: "Represents an eDiscovery case member."
 author: "annierevers"
 ms.date: 2/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the context of eDiscovery, case members are granted access to an [ediscoveryCase](../resources/security-ediscoverycase.md) and its data. These cases are accessible to case members via the eDiscovery UX portal or through the eDiscovery Case Graph APIs. Case members can be one of two types: a user or a role group. For more details, see [Add or remove members from an eDiscovery (Premium) case](/purview/ediscovery-add-or-remove-members-from-a-case).
+Represents an eDiscovery case member. In the context of eDiscovery, case members are granted access to an [ediscoveryCase](../resources/security-ediscoverycase.md) and its data. These cases are accessible to case members via the eDiscovery UX portal or through the eDiscovery Case Graph APIs. Case members can be one of two types: a user or a role group. For more information, see [Add or remove members from an eDiscovery (Premium) case](/purview/ediscovery-add-or-remove-members-from-a-case).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
