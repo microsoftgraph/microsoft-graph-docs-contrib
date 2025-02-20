@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel the [approval item](../resources/approvalitem.md). The owner of the approval can trigger this endpoint.
+Cancel the [approval item](../resources/approvalitem.md). The owner of the approval is the only user who can trigger this endpoint.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
