@@ -23,6 +23,9 @@ The authentication method policies APIs are used to manage policy settings. For 
 * Define the users or groups of users who are allowed to use FIDO2 Security Keys or Passwordless Phone Sign-in to sign in to Microsoft Entra ID.
 * Define the users or groups of users who should be reminded to set up the Microsoft Authenticator for MFA using push notifications.
 
+> [!NOTE]
+> Requests to the authentication methods policies APIs timeout after 60 seconds.
+
 ## What authentication methods policies can be managed in Microsoft Graph?
 
 |Authentication method policy       | Description |

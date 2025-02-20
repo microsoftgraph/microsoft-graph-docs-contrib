@@ -31,6 +31,9 @@ The ability for a user to use an authentication method is governed by the [authe
 
 We don't recommend using the authentication methods APIs for scenarios where you need to iterate over your entire user population for auditing or security check purposes. For these types of scenarios, we recommend using the [authentication method registration and usage reporting APIs](/graph/api/resources/authenticationmethods-usage-insights-overview) (available on the `beta` endpoint only).
 
+> [!NOTE]
+> Requests to the authentication methods APIs timeout after 60 seconds.
+
 ## What authentication methods can be managed in Microsoft Graph?
 
 |Authentication method       | Description |Examples     |
