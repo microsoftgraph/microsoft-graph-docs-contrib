@@ -361,7 +361,59 @@ Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-982
 
 The async operation is initiated, and the response contains a Location header, which includes a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md). The link can be used to get the operation status and details. For details, see [Get operation on chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
-### Example 4: Create a one-on-one chat using user principal name
+### Example 4: Create a one-on-one chat with installed apps which have resource-specific consent (RSC) permissions
+
+#### Request
+
+``` http
+POST https://graph.microsoft.com/beta/chats
+Content-Type: application/json
+
+{
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('4b822dfc-2864-44e6-aa1e-7e0e8552168f')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('6d1e1501-7a3d-45b7-b71b-68d372e5ce14')"
+    }
+  ],
+  "installedApps": [
+    {
+      "teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/8e55a7b1-6766-4f0a-8610-ecacfe3d569a",
+      "consentedPermissionSet": {
+        "resourceSpecificPermissions": [
+          {
+            "permissionValue": "ChatMessage.Read.Chat",
+            "permissionType": "application"
+          },
+          {
+            "permissionValue": "OnlineMeeting.ReadBasic.Chat",
+            "permissionType": "application"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
+```
+
+### Example 5: Create a one-on-one chat using user principal name
 
 #### Request
 
@@ -465,7 +517,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Create a group chat with in-tenant guest
+### Example 6: Create a group chat with in-tenant guest
 
 #### Request
 
@@ -574,7 +626,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 6: Create a one-on-one chat with a federated user (outside of own organization)
+### Example 7: Create a one-on-one chat with a federated user (outside of own organization)
 
 #### Request
 
@@ -677,58 +729,6 @@ Content-Type: application/json
         }
     }
 }
-```
-
-### Example 7: Create a one-on-one chat with installed apps which have resource-specific consent (RSC) permissions
-
-#### Request
-
-``` http
-POST https://graph.microsoft.com/beta/chats
-Content-Type: application/json
-
-{
-  "chatType": "oneOnOne",
-  "members": [
-    {
-      "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "roles": ["owner"],
-      "user@odata.bind": "https://graph.microsoft.com/beta/users('4b822dfc-2864-44e6-aa1e-7e0e8552168f')"
-    },
-    {
-      "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "roles": ["owner"],
-      "user@odata.bind": "https://graph.microsoft.com/beta/users('6d1e1501-7a3d-45b7-b71b-68d372e5ce14')"
-    }
-  ],
-  "installedApps": [
-    {
-      "teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/8e55a7b1-6766-4f0a-8610-ecacfe3d569a",
-      "consentedPermissionSet": {
-        "resourceSpecificPermissions": [
-          {
-            "permissionValue": "ChatMessage.Read.Chat",
-            "permissionType": "application"
-          },
-          {
-            "permissionValue": "OnlineMeeting.ReadBasic.Chat",
-            "permissionType": "application"
-          }
-        ]
-      }
-    }
-  ]
-}
-```
-
-#### Response
-
->**Note:** The response object shown here might be shortened for readability.
-
-```http
-HTTP/1.1 202 Accepted
-Content-Type: application/json
-Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
 ```
 
 ## Related content
