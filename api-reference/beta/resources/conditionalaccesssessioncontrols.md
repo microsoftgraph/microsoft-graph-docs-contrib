@@ -30,7 +30,6 @@ All the session controls inherit from [conditionalAccessSessionControl](conditio
 |secureSignInSession|[secureSignInSessionControl](securesigninsessioncontrol.md)|Session control to require sign in sessions to be bound to a device.|
 |signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Session control to enforce signin frequency.|
 |globalSecureAccessFilteringProfile|[globalSecureAccessFilteringProfileSessionControl](globalSecureAccessFilteringProfileSessionControl.md)|Session control to link to Global Secure Access security profiles or filtering profiles.|
-|networkAccessSecurity|[networkAccessSecuritySessionControl](networkAccessSecuritySessionControl.md)|Session control to link to Global Secure Access security profiles or filtering profiles. Duplicate of globalSecureAccessFilteringProfile.|
 
 ## Relationships
 
@@ -65,8 +64,7 @@ The following JSON representation shows the resource type.
   "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"},
   "disableResilienceDefaults": false,
   "secureSignInSession": {"@odata.type": "microsoft.graph.secureSignInSessionControl"},
-  "globalSecureAccessFilteringProfile": {"@odata.type": "microsoft.graph.globalSecureAccessFilteringProfileSessionControl"},
-  "networkAccessSecurity": {"@odata.type": "microsoft.graph.networkAccessSecurityControl"}
+  "globalSecureAccessFilteringProfile": {"@odata.type": "microsoft.graph.globalSecureAccessFilteringProfileSessionControl"}
 }
 ```
 
