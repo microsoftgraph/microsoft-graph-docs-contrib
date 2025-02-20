@@ -31,7 +31,7 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 
 | Well-known folder name | Description |
 |:-----------------------|:------------|
-| archive | The archive folder messages are sent to when using the One_Click Archive feature in Outlook clients that support it. **Note:** this isn't the same as the Archive Mailbox feature of Exchange online. |
+| archive | The archive folder messages are sent to when using the One_Click Archive feature in Outlook clients that support it. **Note:** This isn't the same as the Archive Mailbox feature of Exchange online. |
 | clutter | The clutter folder low-priority messages are moved to when using the Clutter feature. |
 | conflicts | The folder that contains conflicting items in the mailbox. |
 | conversationhistory | The folder where Skype saves IM conversations (if Skype is configured to do so). |
