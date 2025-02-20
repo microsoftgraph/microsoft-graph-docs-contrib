@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 Content-Type: application/json
 
 {
@@ -113,7 +113,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 Content-Type: application/json
 
 {
@@ -144,7 +144,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Add a case member of type **user** using **id**
+### Example 3: Add a case member of type **user** using **ID**
 #### Request
 
 The following example shows a request.
@@ -154,7 +154,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 Content-Type: application/json
 
 {
@@ -186,7 +186,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Add a case member of type **roleGroup** using **id**.
+### Example 4: Add a case member of type **roleGroup** using **ID**.
 #### Request
 
 The following example shows a request.
@@ -196,7 +196,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 Content-Type: application/json
 
 {

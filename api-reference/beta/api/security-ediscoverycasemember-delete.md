@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers/{eDiscoveryCaseMemberId}
+DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58fcd4c1-e11c-42a4-bc90-f57e1990319c/caseMembers/4e82e429-97bb-4796-b376-286396ecb2c3
 ```
 
 
