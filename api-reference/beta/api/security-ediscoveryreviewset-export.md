@@ -76,8 +76,8 @@ Content-Type: application/json
 {
     "outputName": "Export via API",
     "description": "Export for the Contoso investigation",
-    "exportOptions": "originalFiles,fileInfo,tags",
-    "exportStructure": "directory"
+    "exportOptions": "originalFiles, tags, splitSource, includeFolderAndPath, friendlyName, condensePaths, optimizedPartitionSize",
+    "exportStructure": "msg"
 }
 ```
 
