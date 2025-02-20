@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "03c89b83-ac3b-4ece-a385-1d71ece68725",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowCopyingAndSharingMeetingContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowCopyingAndSharingMeetingContent** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        }
+      ],
+      "Id": "03c89b83-ac3b-4ece-a385-1d71ece68725",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-02-20T17:05:23.3008252Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2bc95484-74f0-4eef-ab77-f33f13deec20",
           "ApiChange": "Enumeration",
           "ChangedApiName": "meetingLiveShareOptions",

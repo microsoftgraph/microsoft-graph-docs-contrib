@@ -38,6 +38,7 @@ Inherits from [entity](../resources/entity.md).
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. |
 | allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the meeting. |
+| allowCopyingAndSharingMeetingContent | Boolean | Indicates whether copying and  sharing meeting content is enabled for the meeting. |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added.|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
