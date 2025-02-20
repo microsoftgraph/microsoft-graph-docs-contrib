@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk restore action. Perform a bulk restore for a set of Cloud PCs with associated Cloud PC ID and restore point. If some of the devices don't have any snapshots to restore, they're set as restore failed, while the others with snapshots still be triggered successfully.
+This defines the entity for perform bulk restore action with executeAction API and it inherits from CloudPcBulkAction base type. Perform bulk restore for a set of Cloud PCs with associated cloud PC ID and restore point date time. If some of the devices don't have any snapshot to restore, then they will be set as restore failed, while the others with snapshots will still be triggered restore.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
@@ -27,10 +27,11 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 |displayName|String|Name of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 |id|String|ID of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 |initiatedByUserPrincipalName|String|Indicates the user principal name (UPN) of the user who initiated this bulk action. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|restorePointDateTime|DateTimeOffset|The date and time point for the selected Cloud PCs to restore. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|restorePointDateTime|DateTimeOffset|Indicates the date and time to restore selected Cloud PCs to. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk action is scheduled according to the maintenance window. When `true`, the bulk action uses the maintenance window to schedule the action; `false` means that the bulk action doesn't use the maintenance window. The default value is `false`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |status|[cloudPcBulkActionStatus](../resources/cloudpcbulkaction.md#cloudpcbulkactionstatus-values)|Indicates the status of bulk actions. Possible values are `pending`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|timeRange|restoreTimeRange|The time range of the restore point. The possible values are: `before`, `after`, `beforeOrAfter`, `unknownFutureValue`. The default value is `before`.|
+|timeRange|restoreTimeRange|Indicates the time range of restore point. Value can be `before`, `after` or `beforeOrAfter`, default value is `before`.   |
+| ignoreUnhealthySnapshots            | Edm.Boolean | When true, indicates that snapshots of unhealthy Cloud PCs will be ignored. If there is no healthy snapshot within the selected `timeRange`, the healthy snapshot closest to the `restorePointDateTime` will be used. When false, the snapshot, within the selected `timeRange` and closest to the `restorePointDateTime`, will be used. Default value is false.                                                                                                                                   | No  | No      | No       |
 
 ## Relationships
 None.
@@ -57,6 +58,7 @@ The following JSON representation shows the resource type.
   "restorePointDateTime": "String (timestamp)",
   "scheduledDuringMaintenanceWindow": "Boolean",
   "status": "String",
-  "timeRange": "String"
+  "timeRange": "String",
+  "ignoreUnhealthySnapshots": "String"
 }
 ```
