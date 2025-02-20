@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-TBD
+Represents the details of the Microsoft Entra native QRCodePin in the tenant, including whether the authentication method is enabled or disabled and the users and groups who can register and use it.
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
@@ -31,12 +31,10 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationModeConfiguration|[qrCodepinAuthenticationMethodConfiguration](../resources/qrcodepinauthenticationmethodconfiguration.md)|Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. |
-|standardQRCodeLifetimeInDays|Int|TBD|
-|pinLength|Int|TBD|
+|standardQRCodeLifetimeInDays|Int|Standard QR code lifetime is in days and max. is 395 days ( 13 months) and default value is 365 days ( 12 months)|
+|pinLength|Int|A at-least-8-digit memorized secret. Min length default is 8 as per NIST standards and can't be longer than 20 digits |
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The identifier for the authentication method policy. The value is always `QRCodePin`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). |
-|issuerHintsConfiguration|[x509CertificateIssuerHintsConfiguration](../resources/x509certificateissuerhintsconfiguration.md)|Determines whether issuer(CA) hints are sent back to the client side to filter the certificates shown in certificate picker. |
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`. |
 
 
@@ -51,14 +49,14 @@ TBD
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
+  "@odata.type": "microsoft.graph.qrCodePinAuthenticationMethodConfiguration",
   "baseType": "microsoft.graph.authenticationMethodConfiguration",
   "openType": false
 }
-
+-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
+  "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
   "excludeTargets": [
@@ -66,17 +64,7 @@ TBD
       "@odata.type": "microsoft.graph.excludeTarget"
     }
   ],
-  "certificateUserBindings": [
-    {
-      "@odata.type": "microsoft.graph.x509CertificateUserBinding"
-    }
-  ],
-  "authenticationModeConfiguration": {
-    "@odata.type": "microsoft.graph.x509CertificateAuthenticationModeConfiguration"
-  },
-  "issuerHintsConfiguration": {
-    "@odata.type": "microsoft.graph.x509CertificateIssuerHintsConfiguration"
-  }
+  "standardQRCodeLifetimeInDays": "Int",
+  "pinLength": "Int"
 }
 ```
--->
