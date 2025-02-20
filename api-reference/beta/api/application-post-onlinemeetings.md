@@ -608,11 +608,14 @@ Content-Type: application/json
 #### Request
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
+POST  https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 Content-Type: application/json 
 
 {
-    "isEndToEndEncryptionEnabled": true
+  "startDateTime":"2025-02-01T14:30:34.2444915-07:00",
+  "endDateTime":"2025-02-01T15:00:34.2464912-07:00",
+  "subject":"Encrypted Meeting"
+  "isEndToEndEncryptionEnabled": true
 }
 
 ```
@@ -633,10 +636,10 @@ Content-Type: application/json
 {
     "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi",
     "creationDateTime":"2020-07-03T00:23:39.444642Z",
-    "startDateTime":"2020-09-09T21:33:30.8546353Z",
-    "endDateTime":"2020-09-09T22:03:30.8566356Z",
+    "startDateTime":"2025-02-01T14:30:34.2444915-07:00",
+    "endDateTime":"2025-02-01T15:00:34.2464912-07:00",
     "joinWebUrl":"(redacted)",
-    "subject":"Patch Meeting Subject",
+    "subject":"Encrypted Meeting"
     "autoAdmittedUsers": "EveryoneInCompany",
     "isEndToEndEncryptionEnabled": true,
     "isEntryExitAnnounced": true,
