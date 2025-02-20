@@ -376,10 +376,6 @@ Content-type: application/json
         "persistentBrowser": null,
         "continuousAccessEvaluation": null,
         "secureSignInSession": null,
-        "networkAccessSecurity": {
-            "policyId": "dddddddd-9999-0000-1111-eeeeeeeeeeee",
-            "isEnabled": true
-        },
         "globalSecureAccessFilteringProfile": {
             "profileId": "dddddddd-9999-0000-1111-eeeeeeeeeeee",
             "isEnabled": true
