@@ -5000,6 +5000,7 @@ Possible values for user account types (group membership), per Windows definitio
 | inaccessibleCloudPcReports     |
 | inaccessibleCloudPcTrendReport |
 | unknownFutureValue             |
+| regionalInaccessibleCloudPcTrendReport |
 
 ### nonAdminSetting values
 

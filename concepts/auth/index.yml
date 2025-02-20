@@ -5,10 +5,12 @@ summary: Learn how to authenticate and get your app authorized to securely acces
 
 metadata: 
   ms.topic: landing-page
-  ms.date: 02/14/2024
+  ms.date: 02/14/2025
   author: FaithOmbongi
   ms.author: ombongifaith
-  ms.reviewer: jawoods  
+  ms.reviewer: jawoods
+  ms.service: microsoft-graph
+  ms.subservice: entra-applications
   ms.custom: graphiamtop20   
 
 landingContent:
@@ -28,8 +30,6 @@ landingContent:
         links:
           - text: Microsoft Graph and app registration (7:29)
             url: https://www.youtube.com/watch?v=93j0MmRruFo
-          - text: How delegated permissions work (1:21)
-            url: https://learn-video.azurefd.net/vod/player?show=one-dev-minute&ep=how-do-delegated-permissions-work
   - title: Authorize your app
     linkLists:
       - linkListType: how-to-guide
