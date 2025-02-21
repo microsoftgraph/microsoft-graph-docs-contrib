@@ -19,12 +19,7 @@ Inherits from [dataSource](../resources/security-datasource.md).
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get the [siteSource](../resources/security-sitesource.md) resources from the **siteSources** navigation property.|
-|[Create](../api/security-ediscoveryholdpolicy-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object.|
-|[Delete](../api/security-ediscoveryholdpolicy-delete-sitesources.md)|None|Delete a [siteSource](../resources/security-sitesource.md) object.|
-
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
