@@ -2557,6 +2557,32 @@
       "CreatedDateTime": "2025-01-30T19:08:30.9147043Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "AI interactions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "replyWithQuote",
+          "ChangeType": "Addition",
+          "Description": "Added the [replyWithQuote](https://learn.microsoft.com/en-us/graph/api/chatmessage-replywithquote?view=graph-rest-beta) action to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource type collection.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "forwardToChat",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardToChat](https://learn.microsoft.com/en-us/graph/api/chatmessage-forwardtochat?view=graph-rest-beta) action to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource type collection.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-02-20T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
