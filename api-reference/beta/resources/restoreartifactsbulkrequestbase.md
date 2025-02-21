@@ -24,7 +24,7 @@ The following points apply to bulk addition requests for restoring artifacts:
 - Currently, only one bulk addition job can be processed per restore session.
 - The limit for the number of sites or users in a bulk request is 10,000.
 - Patch operations aren't supported for bulk restore sessions.
-- In a single restore session, restore artifacts cannot be added using both manual and bulk addition methods simultaneously.
+- In a single restore session, you can't add restore artifacts using both manual and bulk addition methods simultaneously.
 
 Inherits from [entity](../resources/entity.md).
 
