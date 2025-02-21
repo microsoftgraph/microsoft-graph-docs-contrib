@@ -62,7 +62,7 @@ You can specify the following properties when you create a **driveRestoreArtifac
 
 |Property|Type|Description|
 |:---|:---|:---|
-|drives|String collection|The list of oneDriveForBusiness email addresses. Optional.|
+|drives|String collection|The list of OneDrive for work or school email addresses. Optional.|
 |directoryObjectIds|String collection|The list of directory object IDs. Optional.|
 
 ## Response

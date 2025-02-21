@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
+The following steps describe how to create and manage an **exchangeRestoreSession** with bulk artifact additions:
+
 1. Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md) with empty payload.
 1. Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).
 1. Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md) with Empty payload.
