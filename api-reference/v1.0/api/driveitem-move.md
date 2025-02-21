@@ -53,7 +53,7 @@ Existing properties that are not included in the request body will maintain thei
 For best performance you shouldn't include existing values that haven't changed.
 
 **Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.
-Your app needs to provide the actual ID of the root folder for the parent reference.  For example, `/drives/{drive-id}/root`.
+Your app needs to provide the actual ID of the root folder for the parent reference. For example, `/drives/{drive-id}/root`.
 
 ## Response
 
