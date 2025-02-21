@@ -5,25 +5,33 @@
         {
           "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
           "ApiChange": "Method",
-          "ChangedApiName": "siteSource",
-          "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-sitesources?view=graph-rest-beta) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-sitesource?view=graph-rest-beta) resource.",
-          "Target":"siteSource"
-        },
-        {
-          "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
-          "ApiChange": "Method",
           "ChangedApiName": "unifiedGroupSource",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-delete-unifiedgroupsources?view=graph-rest-beta) method to the [unifiedGroupSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-unifiedgroupsource?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-unifiedgroupsource-delete?view=graph-rest-beta) method to the [unifiedGroupSource](https://learn.microsoft.com/en-us/graph/api/resources/security-unifiedgroupsource?view=graph-rest-beta) resource.",
           "Target":"unifiedGroupSource"
         },
         {
           "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
           "ApiChange": "Method",
+          "ChangedApiName": "siteSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete ediscoveryCustodian](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-delete-sitesources?view=graph-rest-beta) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-beta) resource.",
+          "Target":"siteSource"
+        },
+        {
+          "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
+          "ApiChange": "Method",
+          "ChangedApiName": "siteSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-sitesources?view=graph-rest-beta) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-beta) resource.",
+          "Target":"siteSource"
+        },
+        {
+          "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
+          "ApiChange": "Method",
           "ChangedApiName": "userSource",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-usersources?view=graph-rest-beta) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete ediscoveryCustodian](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-delete-usersources?view=graph-rest-beta) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-beta) resource.",
           "Target":"userSource"
         },
         {
@@ -31,7 +39,23 @@
           "ApiChange": "Method",
           "ChangedApiName": "userSource",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-usersources?view=graph-rest-beta) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-usersources?view=graph-rest-beta) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-beta) resource.",
+          "Target":"userSource"
+        },
+        {
+          "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
+          "ApiChange": "Method",
+          "ChangedApiName": "userSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [list ediscoveryCustodian](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-list-usersources?view=graph-rest-beta) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-beta) resource.",
+          "Target":"userSource"
+        },
+        {
+          "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
+          "ApiChange": "Method",
+          "ChangedApiName": "userSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [list ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-usersources?view=graph-rest-beta) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-beta) resource.",
           "Target":"userSource"
         },
         {
@@ -39,7 +63,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "siteSource",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-sitesources?view=graph-rest-beta) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-sitesource?view=graph-rest-beta) resource.",
+          "Description": "Added the [list ediscoveryCustodian](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-list-sitesources?view=graph-rest-beta) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-beta) resource.",
+          "Target":"siteSource"
+        },
+        {
+          "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
+          "ApiChange": "Method",
+          "ChangedApiName": "siteSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [list ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-sitesources?view=graph-rest-beta) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-beta) resource.",
           "Target":"siteSource"
         },
         {
@@ -65,7 +97,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "siteSource",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-sitesources?view=graph-rest-1.0) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-sitesource?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delete ediscoveryCustodian](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-delete-sitesources?view=graph-rest-1.0) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-1.0) resource.",
+          "Target":"siteSource"
+        },
+        {
+          "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
+          "ApiChange": "Method",
+          "ChangedApiName": "siteSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-sitesources?view=graph-rest-1.0) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-1.0) resource.",
           "Target":"siteSource"
         },
         {
@@ -73,7 +113,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unifiedGroupSource",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-delete-unifiedgroupsources?view=graph-rest-1.0) method to the [unifiedGroupSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-unifiedgroupsource?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-unifiedgroupsource-delete?view=graph-rest-1.0) method to the [unifiedGroupSource](https://learn.microsoft.com/en-us/graph/api/resources/security-unifiedgroupsource?view=graph-rest-1.0) resource.",
           "Target":"unifiedGroupSource"
         },
         {
@@ -81,7 +121,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "userSource",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-usersources?view=graph-rest-1.0) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delete ediscoveryCustodian](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-delete-usersources?view=graph-rest-1.0) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-1.0) resource.",
           "Target":"userSource"
         },
         {
@@ -89,7 +129,23 @@
           "ApiChange": "Method",
           "ChangedApiName": "userSource",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-usersources?view=graph-rest-1.0) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-usersource?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delete ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-usersources?view=graph-rest-1.0) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-1.0) resource.",
+          "Target":"userSource"
+        },
+        {
+          "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
+          "ApiChange": "Method",
+          "ChangedApiName": "userSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [list ediscoveryCustodian](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-list-usersources?view=graph-rest-1.0) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-1.0) resource.",
+          "Target":"userSource"
+        },
+        {
+          "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
+          "ApiChange": "Method",
+          "ChangedApiName": "userSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [list ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-usersources?view=graph-rest-1.0) method to the [userSource](https://learn.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-1.0) resource.",
           "Target":"userSource"
         },
         {
@@ -97,7 +153,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "siteSource",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-sitesources?view=graph-rest-1.0) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-sitesource?view=graph-rest-1.0) resource.",
+          "Description": "Added the [list ediscoveryCustodian](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-list-sitesources?view=graph-rest-1.0) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-1.0) resource.",
+          "Target":"siteSource"
+        },
+        {
+          "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
+          "ApiChange": "Method",
+          "ChangedApiName": "siteSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [list ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-list-sitesources?view=graph-rest-1.0) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-1.0) resource.",
           "Target":"siteSource"
         },
         {
