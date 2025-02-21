@@ -157,8 +157,6 @@ Content-Type: application/json
   "documentVersion": "recent10"
 }
 ```
----
-
 
 #### Response
 The following example shows the response.
