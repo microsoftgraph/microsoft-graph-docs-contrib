@@ -61,7 +61,7 @@ If the export started successfully, this action returns a `202 Accepted` respons
 ## Examples
 
 ### Request
-The following example is a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -81,7 +81,7 @@ Content-Type: application/json
 ```
 
 ### Response
-The following example is a response.
+The following example shows a response.
 
 <!-- {
   "blockType": "response",
