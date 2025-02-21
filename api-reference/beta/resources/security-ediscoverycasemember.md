@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an eDiscovery case member. In the context of eDiscovery, case members are granted access to an [ediscoveryCase](../resources/security-ediscoverycase.md) and its data. These cases are accessible to case members via the eDiscovery UX portal or through the eDiscovery Case Graph APIs. Case members can be one of two types: a user or a role group. For more information, see [Add or remove members from an eDiscovery (Premium) case](/purview/ediscovery-add-or-remove-members-from-a-case).
+Represents an eDiscovery case member. In the context of eDiscovery, case members are granted access to an [ediscoveryCase](../resources/security-ediscoverycase.md) and its data. These cases are accessible to case members via the eDiscovery UX portal or through the eDiscovery case Microsoft Graph APIs. Case members can be one of two types: a user or a role group. For more information, see [Add or remove members from an eDiscovery (premium) case](/purview/ediscovery-add-or-remove-members-from-a-case).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
