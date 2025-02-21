@@ -59,7 +59,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
-### Example 1: Add search with linked files and the latest cloud attachment versions
+### Example 1: Add search with linked files and the latest cloud attachment version
 
 The following example shows how to add search to the review set and include the latest version of files shared as links.
 
