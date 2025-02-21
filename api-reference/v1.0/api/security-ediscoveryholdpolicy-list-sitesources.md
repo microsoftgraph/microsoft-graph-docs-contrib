@@ -80,7 +80,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.id": "https://graph.microsoft.com/v1.0/sites/169718e3-a8df-449d-bef4-ee09fe1ddc5d",
-      "displayName": "U.S. Sales",
+      "displayName": "US Sales",
       "createdDateTime": "2022-05-23T02:35:42.926309Z",
       "holdStatus": "applied",
       "id": "169718e3-a8df-449d-bef4-ee09fe1ddc5d",
