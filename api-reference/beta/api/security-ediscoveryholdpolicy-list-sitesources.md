@@ -35,7 +35,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHol
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter`, `$orderby`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
