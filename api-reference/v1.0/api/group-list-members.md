@@ -56,9 +56,12 @@ GET /groups/{id}/members
 
 ## Optional query parameters
 
-This method supports the `$filter`, `$count`, `$select`, `$search`, `$top`, `$search`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 group objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+This method supports the `$filter`, `$count`, `$select`, `$search`, `$top`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+- OData cast is enabled. For example, `/groups/{id}/members/microsoft.graph.user` retrieves group members that are users.
+- `$search` is supported on the **displayName** and **description** properties only.
+- The use of query parameters with this API, except for `$expand`, is supported only with advanced query parameters. `$expand` isn't supported with advanced query parameters. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
-OData cast is also enabled. For example, `/groups/{id}}/members/microsoft.graph.user` retrives group members that are users.
+The default and maximum page size is 100 and 999 group objects respectively.
 
 ## Request headers
 
