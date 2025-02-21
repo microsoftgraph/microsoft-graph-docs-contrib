@@ -138,4 +138,4 @@ When you create a new customer using the [Partner Center API](/partner-center/de
 To avoid this problem, we recommend that your partner app should wait **three minutes** after customer creation before calling Microsoft Entra ID to acquire a token (to call Microsoft Graph). This should cover most cases.
 However, if after waiting three minutes you still receive an authorization error, please wait an extra 60 seconds and try again.
 
-> **Note:** On the retry, you must acquire a new access token from Microsoft Entra ID, before calling Microsoft Graph. Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an hour and won't contain the pre-consented permission claims.
+> **Note:** On the retry, you must acquire a new access token from Microsoft Entra ID, before calling Microsoft Graph. Calling Microsoft Graph with the access token you already have doesn't work, because the access token is good for an hour and doesn't contain the pre-consented permission claims.
