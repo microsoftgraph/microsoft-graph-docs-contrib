@@ -7,7 +7,7 @@ ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.topic: concept-article
 ms.subservice: entra-groups
 ms.localizationpriority: high
-ms.date: 02/14/2024
+ms.date: 02/21/2025
 #Customer intent: As a developer, I want to learn how to use Microsoft Graph to configure tenant-wide and object-specific settings for Microsoft 365 groups, security groups, consent policies, password rules, and prohibited sames.
 ---
 
