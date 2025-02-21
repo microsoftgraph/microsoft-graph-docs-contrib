@@ -381,7 +381,7 @@ items:
       - name: Create
         href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
       - name: Delete
-        href: ../../api/security-ediscoverycustodian-delete-unifiedgroupsources.md
+        href: ../../api/security-unifiedgroupsource-delete.md
     - name: User sources
       items:
       - name: List
