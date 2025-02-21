@@ -45,7 +45,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryH
 
 |Property|Type|Description|
 |:---|:---|:---|
-|contentQuery|String|KQL query that specifies content to be held in the specified locations. To learn more, see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions). To hold all content in the specified locations, don't specify a value for the **contentQuery** property. Optional.|
+|contentQuery|String|KQL query that specifies content to be held in the specified locations. To learn more, see [Keyword queries and search conditions for eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions). To hold all content in the specified locations, don't specify a value for the **contentQuery** property. Optional.|
 |description|String|The description of the legal hold policy. Optional.|
 
 
