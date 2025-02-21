@@ -16,7 +16,7 @@
           "ChangedApiName": "allowCopyingAndSharingMeetingContent",
           "ChangeType": "Addition",
           "Description": "Added the **allowCopyingAndSharingMeetingContent** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
-          "Target": "onlineMeetingBase"
+          "Target": "onlineMeeting"
         },
         {
           "Id": "03c89b83-ac3b-4ece-a385-1d71ece68725",
@@ -24,7 +24,7 @@
           "ChangedApiName": "allowCopyingAndSharingMeetingContent",
           "ChangeType": "Addition",
           "Description": "Added the **allowCopyingAndSharingMeetingContent** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
-          "Target": "onlineMeetingBase"
+          "Target": "VirtualEventSession"
         }
       ],
       "Id": "03c89b83-ac3b-4ece-a385-1d71ece68725",
