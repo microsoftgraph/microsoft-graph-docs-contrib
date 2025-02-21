@@ -11,6 +11,6 @@ use Microsoft\Graph\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->storage()->fileStorage()->containers()->byFileStorageContainerId('fileStorageContainer-id')->recycleBin()->items()->get()->wait();
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timeCards()->byTimeCardId('timeCard-id')->get()->wait();
 
 ```

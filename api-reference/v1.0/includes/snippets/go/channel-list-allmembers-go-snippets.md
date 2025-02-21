@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-items, err := graphClient.Storage().FileStorage().Containers().ByFileStorageContainerId("fileStorageContainer-id").RecycleBin().Items().Get(context.Background(), nil)
+allMembers, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").AllMembers().Get(context.Background(), nil)
 
 
 ```
