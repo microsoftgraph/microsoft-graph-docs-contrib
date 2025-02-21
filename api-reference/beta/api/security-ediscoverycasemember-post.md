@@ -144,11 +144,7 @@ Content-Type: application/json
 }
 ```
 
-<<<<<<< HEAD
-### Example 3: Add a case member of type **user** using **ID**
-=======
 ### Example 3: Add a case member of type **user** using **ID*
->>>>>>> 76f68beeaedac3b7e87a7e2e938ce27916af031d
 #### Request
 
 The following example shows a request.
@@ -190,7 +186,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Add a case member of type **roleGroup** using **ID**.
+### Example 4: Add a case member of type **roleGroup** using **ID**
 #### Request
 
 The following example shows a request.
