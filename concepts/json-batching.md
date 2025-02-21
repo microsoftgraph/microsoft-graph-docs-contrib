@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.subservice: non-product-specific
 ms.topic: concept-article
 ms.custom: graphiamtop20
-ms.date: 02/14/2025
+ms.date: 02/21/2025
 #Customer intent: As a developer, I want to learn how to use Microsoft Graph to combine multiple requests into a single JSON batch request, so that I can optimize my application.
 ---
 
@@ -136,11 +136,11 @@ Content-Type: application/json
                 "value": [
                     {
                         "@odata.type": "#microsoft.graph.directoryRole",
-                        "id": "c35a126a-7d13-46bc-bdc5-b147d029fc20",
+                        "id": "21004afc-7bb2-4fe6-a1e1-074ebd3e52c1",
                         "deletedDateTime": null,
-                        "description": "Can manage all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities.",
-                        "displayName": "Global Administrator",
-                        "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10"
+                        "description": "Can manage all aspects of users and groups, including resetting passwords for limited admins.",
+                        "displayName": "User Administrator",
+                        "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
                     }
                 ]
             }
