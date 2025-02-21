@@ -19,15 +19,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2025: New and generally available 
 
-### Security | eDiscovery
-
-- Enabled **contentQuery** as a supported parameter for the [update](/graph/api/security-ediscoveryholdpolicy-update) operation of the [ediscoveryHoldPolicy](/graph/api/resources/security-ediscoveryholdpolicy) resource.
-- [Delete](/graph/api/security-ediscoveryholdpolicy-delete-usersources) a [userSource](/graph/api/resources/ediscovery-usersource).
-- [Delete](/graph/api/security-ediscoveryholdpolicy-delete-sitesources) a [siteSource](/graph/api/resources/ediscovery-sitesource).
-
 ### Security
 
 Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence) as a supported [alert evidence](/graph/api/resources/security-alertevidence).
+
+### Security | eDiscovery
+
+- Enabled **contentQuery** as a supported parameter for the [update](/graph/api/security-ediscoveryholdpolicy-update) operation of the [ediscoveryHoldPolicy](/graph/api/resources/security-ediscoveryholdpolicy) resource.
+- List and delete a [userSource](/graph/api/resources/security-usersource) or [siteSource](/graph/api/resources/security-sitesource) object.
+- [Delete](/graph/api/security-unifiedgroupsource-delete) a [unifiedGroupSource](/graph/api/resources/security-unifiedgroupsource).
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -49,11 +49,8 @@ Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence)
 
 - Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, **additionalDataOptions**, and **statisticsOptions** as supported properties and parameters across various resources and actions of the eDiscovery API.
 - Enabled **contentQuery** as a supported parameter for the [update](/graph/api/security-ediscoveryholdpolicy-update?view=graph-rest-beta&preserve-view=true) operation of the [ediscoveryHoldPolicy](/graph/api/resources/security-ediscoveryholdpolicy?view=graph-rest-beta&preserve-view=true) resource.
-- [Delete](/graph/api/security-ediscoveryholdpolicy-delete-usersources?view=graph-rest-beta&preserve-view=true) a [userSource](/graph/api/resources/ediscovery-usersource?view=graph-rest-beta&preserve-view=true).
-- [Delete](/graph/api/security-ediscoveryholdpolicy-delete-sitesources?view=graph-rest-beta&preserve-view=true) a [siteSource](/graph/api/resources/ediscovery-sitesource?view=graph-rest-beta&preserve-view=true).
-- [Delete](/graph/api/security-ediscoverycustodian-delete-usersources?view=graph-rest-beta&preserve-view=true) a [userSource](/graph/api/resources/ediscovery-usersource?view=graph-rest-beta&preserve-view=true).
-- [Delete](/graph/api/security-ediscoverycustodian-delete-sitesources?view=graph-rest-beta&preserve-view=true) a [siteSource](/graph/api/resources/ediscovery-sitesource?view=graph-rest-beta&preserve-view=true).
-- [Delete](/graph/api/security-ediscoverycustodian-delete-unifiedgroupsources?view=graph-rest-beta&preserve-view=true) a [unifiedGroupSource](/graph/api/resources/ediscovery-unifiedgroupsource?view=graph-rest-beta&preserve-view=true).
+- List and delete a [userSource](/graph/api/resources/security-usersource?view=graph-rest-beta&preserve-view=true) or [siteSource](/graph/api/resources/security-sitesource?view=graph-rest-beta&preserve-view=true) object.
+- [Delete](/graph/api/security-unifiedgroupsource-delete) a [unifiedGroupSource](/graph/api/resources/security-unifiedgroupsource?view=graph-rest-beta&preserve-view=true).
 
 ### Device and app management | Cloud PC
 

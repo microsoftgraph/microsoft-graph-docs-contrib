@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete a [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -22,8 +20,8 @@ Delete a [unifiedGroupSource](../resources/security-unifiedgroupsource.md) objec
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "security_ediscoverycustodian_delete_unifiedgroupsources" } -->
-[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycustodian-delete-unifiedgroupsources-permissions.md)]
+<!-- { "blockType": "permissions", "name": "security_unifiedgroupsource_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-unifiedgroupsource-delete-permissions.md)]
 
 ## HTTP request
 
@@ -60,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/4c551bc5-f6f8-435c-8391-d1a08f1ffd5b/custodians/2114ada2-3958-4945-bb6e-66fe9fca4772/unifiedGroupSources/08345ae2-bc5a-4d71-a18b-c490993959ee
+DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/4c551bc5-f6f8-435c-8391-d1a08f1ffd5b/custodians/2114ada2-3958-4945-bb6e-66fe9fca4772/unifiedGroupSources/08345ae2-bc5a-4d71-a18b-c490993959ee
 ```
 
 
