@@ -55,7 +55,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-02-06T17:13:06.5520497Z",
-      "WorkloadArea": "Compliance",
+      "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
     },
     {
@@ -113,7 +113,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-02-06T17:13:06.5520497Z",
-      "WorkloadArea": "Compliance",
+      "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
     },
     { 
