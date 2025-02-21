@@ -20,7 +20,6 @@ Inherits from [dataSource](../resources/security-datasource.md).
 
 ## Methods
 None.
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
