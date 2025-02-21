@@ -36,7 +36,7 @@ GET /directory/administrativeUnits/{id}/members/$ref
 ```
 
 ## Optional query parameters
-This method (when used without `$ref`) supports the `$search`, `$count`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response. OData cast is also enabled, for example, you can cast to get just the users that are a member of the administrative unit.
+This method (when used without `$ref`) supports the `$search`, `$count`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response. OData cast is also enabled. For example, you can cast to get just the users that are a member of the administrative unit.
 
 `$search` is supported on the **displayName** and **description** properties only. The use of query parameters with this API is supported only with advanced query parameters. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
