@@ -376,14 +376,14 @@ The following table lists the possible error and response codes that can be retu
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidBulkRestoreArtifactId|Bulk restore request ID is invalid.|Invalid GUID provided in URI.|
-|400|BulkRestoreInvalidCreateRequest|BulkRestoreCreateRequest is null.|Create request is null or invalid.|
+|400|BulkRestoreInvalidCreateRequest|BulkRestoreCreateRequest is null.|The create request is null or invalid.|
 |400|BulkRestoreRestorationResourcesCountExceedsLimit|Bulk restore input limit exceeded.|Input size is too large.|
 |400|BulkRestoreInvalidCreateRequestSiteUrl|Bulk restore site web URL is invalid.|Site URL is null, empty, or in an incorrect format.|
 |400|BulkRestoreInvalidCreateRequestUserEmail|Bulk restore user email is invalid.|Email is null, empty, or in an incorrect format.|
 
 ## Get bulk addition requests for restoring artifacts API errors
 
-The error codes in this section apply to the following APIs:
+The error code in this section applies to the following APIs:
 
 - [Get driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-get.md)
 - [Get mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-get.md)
@@ -397,7 +397,7 @@ The following table lists the possible error and response code that can be retur
 
 ## Delete bulk addition requests for restoring artifacts API errors
 
-The error codes in this section apply to the following APIs:
+The error code in this section applies to the following APIs:
 
 - [Delete driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-delete.md)
 - [Delete mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-delete.md)

@@ -19,10 +19,10 @@ Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestorea
 The following steps describe how to create and manage a **sharePointRestoreSession** with bulk artifact additions:
 
 1. Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md) with empty payload.
-2. Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
-3. Get the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) for the SharePoint restore session. The initial status upon creation is `active` and remains in this state until the [sharePointRestoreSession](../resources/sharepointrestoresession.md) is activated.
-4. Activate the [sharePointRestoreSession](../resources/sharepointrestoresession.md) created in the first step.
-5. Monitor the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md). When all the sites are added to the corresponding [sharePointRestoreSession](../resources/sharepointrestoresession.md), the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) changes to `completed`. If any failures occur during resource resolution, the status changes to `completedWithErrors`.
+1. Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+1. Get the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) for the SharePoint restore session. The initial status upon creation is `active` and remains in this state until the [sharePointRestoreSession](../resources/sharepointrestoresession.md) is activated.
+1. Activate the [sharePointRestoreSession](../resources/sharepointrestoresession.md) created in the first step.
+1. Monitor the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md). When all the sites are added to the corresponding [sharePointRestoreSession](../resources/sharepointrestoresession.md), the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) changes to `completed`. If any failures occur during resource resolution, the status changes to `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -62,8 +62,8 @@ You can specify the following properties when you create a **siteRestoreArtifact
 
 |Property|Type|Description|
 |:---|:---|:---|
-|siteWebUrls|String collection|The list of SharePoint site URLs. Optional.|
 |siteIds|String collection|The list of SharePoint site IDs. Optional.|
+|siteWebUrls|String collection|The list of SharePoint site URLs. Optional.|
 
 ## Response
 
