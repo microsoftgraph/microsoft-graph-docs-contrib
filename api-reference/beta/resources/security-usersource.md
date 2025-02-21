@@ -19,7 +19,7 @@ The container for a user's mailbox and OneDrive for Business site.
 Inherits from [dataSource](../resources/security-datasource.md).
 
 ## Methods
-None.
+None. 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
