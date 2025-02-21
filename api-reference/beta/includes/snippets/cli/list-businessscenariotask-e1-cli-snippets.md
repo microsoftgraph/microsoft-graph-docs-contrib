@@ -5,6 +5,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 
-mgc-beta solutions business-scenarios planner tasks list --business-scenario-id {businessScenario-id}
+mgc-beta solutions business-scenarios planner tasks list --business-scenario-id {businessScenario-id} --filter "businessScenarioProperties/externalObjectId eq 'Order"
 
 ```
