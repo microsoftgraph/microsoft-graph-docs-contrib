@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 
 Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
-The following steps describe how to create and manage a **exchangeRestoreSession** with bulk artifact additions:
-
+1. Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md) with empty payload.
+1. Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).
 1. Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md) with Empty payload.
 2. Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with a [exchangeRestoreSession](../resources/exchangerestoresession.md).
 3. Get the status of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) for the Exchange restore session. The initial status upon creation is `active` and remains in this state until the [exchangeRestoreSession](../resources/exchangerestoresession.md) is activated.

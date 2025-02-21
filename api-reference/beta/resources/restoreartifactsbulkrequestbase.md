@@ -22,7 +22,7 @@ Base type for [siteRestoreArtifactsBulkAdditionRequests](../resources/siterestor
 The following points apply to bulk addition requests for restoring artifacts:
 
 - Currently, only one bulk addition job can be processed per restore session.
-- The limit for the number of sites and users in a bulk request is 10,000.
+- The limit for the number of sites or users in a bulk request is 10,000.
 - Patch operations aren't supported for bulk restore sessions.
 - In a single restore session, restore artifacts cannot be added using both manual and bulk addition methods simultaneously.
 
