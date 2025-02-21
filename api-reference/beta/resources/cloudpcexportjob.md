@@ -72,6 +72,10 @@ Represents the export job for downloading a specified Cloud PC report.
 | regionalConnectionQualityInsightsReport     | The regional connection quality insights reports of Cloud PCs.           |
 | remoteConnectionQualityReport               | The overall connection quality reports for all devices under a tenant.   |
 | bulkActionStatusReport               | The details of Cloud PC bulk actions, including bulk action status, name, type, state, completion state, and request date time.   |
+| troubleshootDetailsReport |The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues.|
+| troubleshootTrendCountReport |The aggregated report that shows the number and trend of issues per tenant.|
+| troubleshootRegionalReport |The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues.|
+| troubleshootIssueCountReport |The aggregated report that shows the number of performance issues, network issues, and reliability issues for 28 days.|
 | cloudPcInsightReport                     | Indicates Cloud PC-level configuration data and troubleshooting data with insights, including client version, client operating system, host region, Teams media, error source, error code symbolic, and error message. |
 | regionalInaccessibleCloudPcTrendReport      | The weekly regional aggregated report of inaccessible Cloud PC trends.    |
 
