@@ -25,7 +25,8 @@ Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence)
 
 ### Teamwork and communications | Calls and online meetings
 
-[Fetch the recording of a Teams live event](/graph/api/onlinemeeting-get#example-6-fetch-the-recording-of-a-teams-live-event-deprecated).
+- [Fetch the recording of a Teams live event](/graph/api/onlinemeeting-get#example-6-fetch-the-recording-of-a-teams-live-event-deprecated).
+- Enabled the **allowRecording**, **allowTranscription**, **anonymizeIdentityForRoles**, **broadcastSettings**, and **watermarkProtection** as supported properties in the [update](/graph/api/onlinemeeting-update) operation of the [onlineMeeting](/graph/api/resources/onlinemeeting).
 
 ### Teamwork and communications | Messaging
 
@@ -59,6 +60,10 @@ Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence?
 ### Tasks and plans
 
 [List Planner plans](/graph/api/teamschannelplanner-list-plans?view=graph-rest-beta&preserve-view=true) owned by a shared channel in Teams.
+
+### Teamwork and communications | Calls and online meetings
+
+Enabled the **allowRecording**, **allowTranscription**, **anonymizeIdentityForRoles**, **broadcastSettings**, and **watermarkProtection** as supported properties in the [update](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true) operation of the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork and communications | Messaging
 
