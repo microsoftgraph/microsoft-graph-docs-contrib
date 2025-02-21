@@ -6,7 +6,7 @@ author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 02/20/2025
+ms.date: 02/21/2025
 ---
 
 # Microsoft Entra authentication methods policies API overview
