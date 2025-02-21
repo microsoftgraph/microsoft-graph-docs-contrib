@@ -1,6 +1,6 @@
 ---
 title: "List userSources"
-description: "Get the userSource resources associated with an eDiscovery custodian."
+description: "Get the userSource resources from the userSources navigation property."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
