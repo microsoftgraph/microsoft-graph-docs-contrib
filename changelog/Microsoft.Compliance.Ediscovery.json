@@ -95,6 +95,14 @@
         {
           "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
           "ApiChange": "Method",
+          "ChangedApiName": "unifiedGroupSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-unifiedgroupsource-delete?view=graph-rest-1.0) method to the [unifiedGroupSource](https://learn.microsoft.com/en-us/graph/api/resources/security-unifiedgroupsource?view=graph-rest-1.0) resource.",
+          "Target":"unifiedGroupSource"
+        },
+        {
+          "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
+          "ApiChange": "Method",
           "ChangedApiName": "siteSource",
           "ChangeType": "Addition",
           "Description": "Added the [delete ediscoveryCustodian](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycustodian-delete-sitesources?view=graph-rest-1.0) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-1.0) resource.",
@@ -107,14 +115,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [delete ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryholdpolicy-delete-sitesources?view=graph-rest-1.0) method to the [siteSource](https://learn.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-1.0) resource.",
           "Target":"siteSource"
-        },
-        {
-          "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
-          "ApiChange": "Method",
-          "ChangedApiName": "unifiedGroupSource",
-          "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/security-unifiedgroupsource-delete?view=graph-rest-1.0) method to the [unifiedGroupSource](https://learn.microsoft.com/en-us/graph/api/resources/security-unifiedgroupsource?view=graph-rest-1.0) resource.",
-          "Target":"unifiedGroupSource"
         },
         {
           "Id": "0012bf5d-e9e1-40eb-b3a1-19926204bc88",
