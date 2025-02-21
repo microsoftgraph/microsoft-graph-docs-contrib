@@ -61,7 +61,7 @@ PATCH https://graph.microsoft.com/v1.0/users/aaaaaaaa-bbbb-cccc-1111-22222222222
 
 ---
 
-## Reset the employeeLeveDateTime property back to null
+## Reset the employeeLeaveDateTime property back to null
 
 The request returns a `204 No Content` response code.
 
