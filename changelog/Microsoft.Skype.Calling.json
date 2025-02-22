@@ -1,5 +1,41 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "71768e60-0d7f-4c1a-bfa9-049320a72828",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "communications",
+          "ChangeType": "Addition",
+          "Description": "Added the **communications** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "71768e60-0d7f-4c1a-bfa9-049320a72828",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-02-22T01:55:06.4995463Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a2b9b9ea-9f57-4b8b-8df5-15d6486eb0df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userCloudCommunication",
+          "ChangeType": "Addition",
+          "Description": "Added the [userCloudCommunication](https://learn.microsoft.com/en-us/graph/api/resources/userCloudCommunication?view=graph-rest-beta) resource.",
+          "Target": "userCloudCommunication"
+        }
+      ],
+      "Id": "a2b9b9ea-9f57-4b8b-8df5-15d6486eb0df",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-02-22T01:55:06.4997773Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
     {      
       "ChangeList": [
       {
