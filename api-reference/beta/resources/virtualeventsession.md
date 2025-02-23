@@ -32,6 +32,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowBreakoutRooms | Boolean | Indicates whether breakout rooms are enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowCopyingAndSharingMeetingContent | Boolean | Indicates whether copying and sharing meeting content is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowedLobbyAdmitters      | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`.  Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a virtual event session. Possible values are: `everyone`, `organization`, `roleIsPresenter`, `organizer`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowLiveShare | [meetingLiveShareOptions](#meetingliveshareoptions-values) | Indicates whether live share is enabled for the virtual event session. Possible values are: `enabled`, `disabled`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -42,7 +43,6 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
-| allowCopyingAndSharingMeetingContent | Boolean | Indicates whether copying and  sharing meeting content is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the virtual event session. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -119,6 +119,7 @@ The following JSON representation shows the resource type.
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
   "allowBreakoutRooms": "Boolean",
+  "allowCopyingAndSharingMeetingContent": "Boolean",
   "allowedLobbyAdmitters": "String",
   "allowedPresenters": "String",
   "allowLiveShare": "String",
