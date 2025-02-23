@@ -29,7 +29,9 @@ Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence)
 
 ### Teamwork and communications | Messaging
 
-[Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
+- [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
+- [Create](/graph/api/chat-post#example-3-create-a-one-on-one-chat-with-installed-apps) a one-on-one chat with installed apps.
+- [Create](/graph/api/chat-post#example-4-create-a-one-on-one-chat-with-rsc-granted-apps) a one-on-one chat with RSC-granted apps.
 
 ## February 2025: New in preview only 
 
@@ -67,9 +69,10 @@ Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence?
 
 ### Teamwork and communications | Messaging
 
-Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
- - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
- - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
+- Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
+  - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
+  - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
+- [Create](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true#example-4-create-a-one-on-one-chat-with-rsc-granted-apps) a one-on-one chat with RSC-granted apps.
 
 ## January 2025: New and generally available 
 
