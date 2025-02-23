@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel the [approval item](../resources/approvalitem.md). The owner of the approval can trigger this endpoint.
+Cancel the [approval item](../resources/approvalitem.md). The owner of the approval is the only user who can trigger this endpoint.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -86,10 +86,6 @@ POST https://graph.microsoft.com/beta/solutions/approval/approvalItems/ad65e077-
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/approvalitemthiscancel-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/approvalitemthiscancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

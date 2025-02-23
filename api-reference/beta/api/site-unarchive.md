@@ -16,23 +16,20 @@ Namespace: microsoft.graph
 
 Unarchive an archived SharePoint [site](../resources/site.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Sites.FullControl.All|Not available.|
+|Delegated (work or school account)|Sites.Archive.All|Sites.FullControl.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Sites.FullControl.All|Not available.|
+|Application|Sites.Archive.All|Sites.FullControl.All|
 
-In delegated scenarios, the signed-in user must also be assigned one of the following supported [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference) for this operation:
-
-* SharePoint Administrator
-* Global Administrator
-
-*SharePoint Administrator* is the least privileged role for this operation.
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *SharePoint Administrator* is the least privileged role for this operation.
 
 ## HTTP request
 
@@ -61,6 +58,7 @@ If successful, this method returns a `202 Accepted` response code. The response 
 
 The following example shows how to unarchive a site.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "unarchive_site",
@@ -70,6 +68,40 @@ The following example shows how to unarchive a site.
 ```http
 POST https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740/unarchive
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/unarchive-site-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/unarchive-site-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/unarchive-site-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/unarchive-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unarchive-site-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/unarchive-site-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unarchive-site-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/unarchive-site-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -51,7 +51,6 @@ request_body = AppManagementPolicy(
 						"identifier_uris" : {
 								"non_default_uri_addition" : {
 										"state" : "disabled",
-										"restrict_for_apps_created_after_date_time" : None,
 										"exclude_apps_receiving_v2_tokens" : True,
 										"exclude_saml" : True,
 								},

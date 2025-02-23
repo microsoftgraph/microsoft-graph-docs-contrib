@@ -3,7 +3,7 @@ title: "updatableAsset resource type"
 description: "Represents an asset that can receive updates."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 09/16/2024
 ---

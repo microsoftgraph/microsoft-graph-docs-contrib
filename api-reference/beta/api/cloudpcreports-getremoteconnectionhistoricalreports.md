@@ -65,7 +65,6 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreportsthis.getremoteconnectionhistoricalreports"
@@ -83,47 +82,13 @@ Content-length: 199
         "SignOutDateTime",
         "UsageInHour",
         "RoundTripTimeInMsP50",
-        "AvailableBandwidthInMBpsP50",
+        "AvailableBandwidthInMbpsP50",
         "RemoteSignInTimeInSec"
     ],
     "top": 25,
     "skip": 0
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgetremoteconnectionhistoricalreports-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgetremoteconnectionhistoricalreports-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisgetremoteconnectionhistoricalreports-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsthisgetremoteconnectionhistoricalreports-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsthisgetremoteconnectionhistoricalreports-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetremoteconnectionhistoricalreports-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetremoteconnectionhistoricalreports-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgetremoteconnectionhistoricalreports-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response
@@ -158,7 +123,7 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         },
         {
-            "Column": "AvailableBandwidthInMBpsP50",
+            "Column": "AvailableBandwidthInMbpsP50",
             "PropertyType": "Double"
         },
         {
