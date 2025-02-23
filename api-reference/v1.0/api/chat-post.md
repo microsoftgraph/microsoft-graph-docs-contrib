@@ -241,8 +241,17 @@ Content-Type: application/json
 
 ### Example 3: Create a one-on-one chat with installed apps
 
+The following example shows how to create a one-on-one chat with installed apps.
+
 #### Request
 
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_oneonone_with_installed_apps"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/v1.0/chats
 Content-Type: application/json
@@ -269,11 +278,10 @@ Content-Type: application/json
 }
 ```
 
----
-
 #### Response
 
->**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+
 <!-- {
   "blockType": "response"
 }
@@ -284,10 +292,19 @@ Content-Type: application/json
 Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
 ```
 
-### Example 4: Create a one-on-one chat with installed apps which have resource-specific consent (RSC) permissions
+### Example 4: Create a one-on-one chat with RSC-granted apps
+
+The following example shows how to create a one-on-one chat with installed apps that have resource-specific consent (RSC) permissions.
 
 #### Request
 
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_oneonone_with_rsc_granted_apps"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/v1.0/chats
 Content-Type: application/json
@@ -327,9 +344,11 @@ Content-Type: application/json
 ```
 
 #### Response
-
->**Note:** The response object shown here might be shortened for readability.
-
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+}
+-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json

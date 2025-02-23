@@ -361,10 +361,19 @@ Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-982
 
 The async operation is initiated, and the response contains a Location header, which includes a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md). The link can be used to get the operation status and details. For details, see [Get operation on chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
-### Example 4: Create a one-on-one chat with installed apps which have resource-specific consent (RSC) permissions
+### Example 4: Create a one-on-one chat with RSC-granted apps
+
+The following example shows how to create a one-on-one chat with installed apps that have resource-specific consent (RSC) permissions.
 
 #### Request
 
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_oneonone_with_rsc_granted_apps"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
@@ -404,9 +413,11 @@ Content-Type: application/json
 ```
 
 #### Response
-
->**Note:** The response object shown here might be shortened for readability.
-
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+}
+-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -707,7 +718,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
     "id": "19:82af01c5-f7cc-4a2e-a728-3a5df21afd9d_8b081ef6-4792-4def-b2c9-c363a1bf41d5@unq.gbl.spaces",
     "topic": null,
     "createdDateTime": "2020-12-04T23:10:28.51Z",
