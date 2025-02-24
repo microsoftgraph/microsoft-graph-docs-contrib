@@ -11,7 +11,7 @@
           "Target": "cloudPcSupportedRegion"
         },
         {
-          "Id": "299c38ce-4113-4405-9410-0e11fbf15007",
+          "Id": "82f27d11-a97b-4b47-85c1-3fce7e35bfe0",
           "ApiChange": "Member",
           "ChangedApiName": "australasia",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "cloudPcSupportedRegion"
         }
       ],
-      "Id": "46319e60-7488-43f4-9e96-ebeb8176e946",
+      "Id": "82f27d11-a97b-4b47-85c1-3fce7e35bfe0",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-02-24T10:03:56.9188489Z",
