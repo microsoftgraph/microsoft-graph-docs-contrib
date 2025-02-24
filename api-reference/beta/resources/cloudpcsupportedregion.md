@@ -69,6 +69,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 | middleEast         | The region belongs to the region group: Middle East.                               |
 | mexico             | The region belongs to the region group: Mexico.                                    |
 | australasia        | The region belongs to the region group: Australasia.                               |
+| europe             | The region belongs to the region group: Europe.                                    |
 
 ## Relationships
 
