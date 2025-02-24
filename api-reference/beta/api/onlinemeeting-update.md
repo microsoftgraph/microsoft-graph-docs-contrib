@@ -43,7 +43,7 @@ Permissions for the following HTTP request:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /users/{userId}/onlineMeetings/{meetingId}
+PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 <!-- { 
@@ -94,11 +94,14 @@ The last column indicates whether updating this property takes effect for an in-
 | allowCopyingAndSharingMeetingContent             | Boolean                               | Indicates whether copying and sharing meeting content is enabled for the meeting.   | Yes                                 |
 | allowedLobbyAdmitters       | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. | Yes                                 |
 | allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes                                 |
-| allowLiveShare              | meetingLiveShareOptions                                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
+| allowLiveShare              | meetingLiveShareOptions                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
 | allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                                 |
 | allowPowerPointSharing      | Boolean                                                    | Indicates whether PowerPoint live is enabled for the meeting.                       | No                                  |
+| allowRecording              | Boolean                                                    | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). | Yes                                 |
 | allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                                 |
+| allowTranscription          | Boolean                                                    | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). | Yes                                 |
 | allowWhiteboard             | Boolean                                                    | Indicates whether whiteboard is enabled for the meeting.                            | No                                  |
+| anonymizeIdentityForRoles   | onlineMeetingRole collection                               | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
 | endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                                  |
 | isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                                 |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                                 |
@@ -106,6 +109,8 @@ The last column indicates whether updating this property takes effect for an in-
 | recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                                  |
 | startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                                  |
 | subject                     | String                                                     | The subject of the online meeting.                                                  | No                                  |
+| watermarkProtection         | [watermarkProtectionValues](../resources/watermarkprotectionvalues.md)  | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
+| broadcastSettings (deprecated) | [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md)| Settings related to a live event.                                    | No                                  |
 
 > [!NOTE]
 >

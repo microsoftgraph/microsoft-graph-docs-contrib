@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 
-result = await graph_client.storage.file_storage.containers.by_file_storage_container_id('fileStorageContainer-id').recycle_bin.items.get()
+await graph_client.teams.by_team_id('team-id').schedule.time_cards.by_time_card_id('timeCard-id').delete()
 
 
 ```
