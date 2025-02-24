@@ -70,9 +70,9 @@ You can specify the following properties when creating a **sharePointGroup**.
 If successful, this method returns a `201 Created` response code and a [sharePointGroup](../resources/sharepointgroup.md) object in the response body.
 
 
-## Example 1: Create a new SharePointGroup that is local to a SharePointEmbedded container
+## Example 1: Create a new sharePointGroup that is local to a SharePointEmbedded container
 
-The following example creates a new SharePointGroup under the container identified by `{containerId}`. The title and description of the SharePointGroup are shown in the request body.
+The following example creates a new sharePointGroup under the container identified by `{containerId}`. The title and description of the sharePointGroup are shown in the request body.
 
 ### Request
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response. The group is successfully created with a newly assigned ID that acts as an identifier.
+The following example shows a sample response. The group is successfully created with a newly assigned ID that acts as an identifier.
 
 ``` http
 HTTP/1.1 201 Created

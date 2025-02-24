@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new sharePointGroupMember object.
+Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object.
 
 ## Permissions
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response with a JSON object representing the created member.
+The following example shows a sample response with a json object representing the created member.
 
 ``` http
 HTTP/1.1 201 Created

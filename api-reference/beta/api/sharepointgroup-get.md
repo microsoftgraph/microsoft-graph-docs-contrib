@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a sharePointGroup object.
+Read the properties and relationships of a [sharePointGroup](../resources/sharepointgroup.md) object.
 
 ## Permissions
 
@@ -64,8 +64,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [sharePointGroup](../resources/sharepointgroup.md) object in the response body.
 
-## Example 1: Get a SharePointGroup using ID 
-The following example retrieves a SharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`.
+## Example 1: Get a sharePointGroup using ID 
+The following example retrieves a sharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`.
 
 
 ### Request
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response with a JSON object representing the SharePointGroup.
+The following example shows s sample response with a json object representing the sharePointGroup
 
 ``` http
 HTTP/1.1 200 OK
@@ -90,8 +90,8 @@ HTTP/1.1 200 OK
 }
 ```
 
-## Example 2: Attempt to get a SharePointGroup using ID 
-The following example attempts to get a SharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`. There's no such group in the container.
+## Example 2: Attempt to get a sharePointGroup using ID 
+The following example attempts to get a sharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`. There's no such group in the container.
 
 ### Request
 
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response of a group that doesn't exist.
+The following example shows a sample response detailing the nonexistence of the group.
 
 ``` http
 HTTP/1.1 404 Not Found

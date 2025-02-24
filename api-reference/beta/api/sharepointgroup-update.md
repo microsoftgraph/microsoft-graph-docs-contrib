@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a sharePointGroup object.
+Update the properties of a [sharePointGroup](../resources/sharepointgroup.md) object.
 
 ## Permissions
 

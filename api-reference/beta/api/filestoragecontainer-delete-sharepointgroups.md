@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a sharePointGroup object.
+Delete a [sharePointGroup](../resources/sharepointgroup.md) object.
 
 ## Permissions
 
@@ -60,8 +60,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example 1: Delete a SharePointGroup
-The following example deletes a SharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`.
+## Example 1: Delete a sharePointGroup
+The following example deletes a sharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`.
 
 ### Request
 
@@ -79,9 +79,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## Example 2: Attempt to delete a SharePointGroup that doesn't exist.
+## Example 2: Attempt to delete a sharePointGroup that doesn't exist.
 
-The following example attempts to delete a SharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`. There's no such group in the container.
+The following example attempts to delete a sharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`. There's no such group in the container.
 
 ### Request
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response. Only existing SharePointGroups can be deleted.
+The following example shows a sample response. Only existing sharePointGroups can be deleted.
 
 ``` http
 HTTP/1.1 404 Not Found

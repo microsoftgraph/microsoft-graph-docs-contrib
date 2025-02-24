@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a sharePointGroupMember object.
+Delete a [sharePointGroupMember](../resources/sharepointgroupmember.md) object.
 
 ## Permissions
 
