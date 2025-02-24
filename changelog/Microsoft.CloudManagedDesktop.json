@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "4ba9666b-f552-6e71-0914-575550a4a675",
+          "ApiChange": "Member",
+          "ChangedApiName": "retrieveCloudPcTroubleshootReports",
+          "ChangeType": "Addition",
+          "Description": "Added the `groupby` parameter to the **retrieveCloudPcTroubleshootReports** request body.",
+          "Target": "Request body"
+        }
+      ],
+      "Id": "4ba9666b-f552-6e71-0914-575550a4a675",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-02-24T13:41:26.0746374Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
       "ChangeList":[
         {
           "Id": "933ef836-55b5-4db6-b2f1-b9a237c5259f",
