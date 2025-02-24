@@ -21,8 +21,8 @@ The Microsoft Graph command-line interface (CLI) is published on [GitHub](https:
 
 ### Windows environment setup (Optional)
 
-1. Open **Settings**.
-1. Select **About**, then **Advanced system settings**.
+1. Open **Settings** then **System**
+1. Select **About**, then **Advanced system settings**.    
 1. Select **Environment Variables...**.
 1. Locate and select **Path**, then select **Edit**.
 
