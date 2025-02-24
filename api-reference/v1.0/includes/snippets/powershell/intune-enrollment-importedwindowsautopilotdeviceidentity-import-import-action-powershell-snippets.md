@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Actions
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
 $params = @{
 	importedWindowsAutopilotDeviceIdentities = @(

@@ -22,11 +22,7 @@ List all hardware OATH tokens in the directory.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "authenticationmethoddevice-list-hardwareoathdevices-permissions"
-}
--->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationmethoddevice-list-hardwareoathdevices-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
@@ -98,6 +94,10 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-hardwareoathtokenauthenticationmethoddevice-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-hardwareoathtokenauthenticationmethoddevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -203,6 +203,10 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 [!INCLUDE [sample-code](../includes/snippets/php/list-hardwareoathtokenauthenticationmethoddevice-filter-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-hardwareoathtokenauthenticationmethoddevice-filter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-hardwareoathtokenauthenticationmethoddevice-filter-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -285,6 +289,10 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

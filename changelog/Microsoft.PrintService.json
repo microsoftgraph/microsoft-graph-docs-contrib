@@ -21453,6 +21453,48 @@
       "CreatedDateTime": "2020-10-16T00:00:00",
       "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3a019b83-c28c-4610-bcb0-fd633dc229af",
+          "ApiChange": "Property",
+          "ChangedApiName": "downloadedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **downloadedDateTime** property to the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource.",
+          "Target": "printDocument"
+        },
+        {
+          "Id": "3a019b83-c28c-4610-bcb0-fd633dc229af",
+          "ApiChange": "Property",
+          "ChangedApiName": "uploadedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **uploadedDateTime** property to the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource.",
+          "Target": "printDocument"
+        },
+        {
+          "Id": "3a019b83-c28c-4610-bcb0-fd633dc229af",
+          "ApiChange": "Property",
+          "ChangedApiName": "acknowledgedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **acknowledgedDateTime** property to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "3a019b83-c28c-4610-bcb0-fd633dc229af",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorCode** property to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "3a019b83-c28c-4610-bcb0-fd633dc229af",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-02-17T23:24:40.1000734Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
     }
   ]
 }

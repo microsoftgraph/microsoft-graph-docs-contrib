@@ -66,9 +66,6 @@ var requestBody = new AppManagementPolicy
 										"state", new UntypedString("disabled")
 									},
 									{
-										"restrictForAppsCreatedAfterDateTime", new UntypedNull()
-									},
-									{
 										"excludeAppsReceivingV2Tokens", new UntypedBoolean(true)
 									},
 									{

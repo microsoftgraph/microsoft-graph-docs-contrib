@@ -20,6 +20,8 @@ You can only update the following two properties: **displayName**, **certificate
 
 To update a subset of objects in the **certificateAuthorities** collection, first get the complete list, make your modifications, and then repost the entire contents of the **certificateAuthorities** attribute list in the request body. Excluding a subset of objects removes them from the collection.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -70,6 +72,7 @@ The following example shows how to update the display name of a **mutualTlsOauth
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_mutualtlsoauthconfiguration"
@@ -83,6 +86,40 @@ Content-Type: application/json
   "displayName": "THIS_IS_A_NEW_NAME"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mutualtlsoauthconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-mutualtlsoauthconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-mutualtlsoauthconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mutualtlsoauthconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mutualtlsoauthconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-mutualtlsoauthconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-mutualtlsoauthconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-mutualtlsoauthconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -122,18 +159,18 @@ This example assumes that the original object stored has the following value. No
   "certificateAuthorities": [
     {
       "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://acme.com/root.crl",
+      "certificateRevocationListUrl": "http://LakeshoreRetail.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "joGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "acme Inc",
+      "issuer": "Lakeshore Retail",
       "issuerSubjectkeyIdentifier": "SKI"
     },
     {
       "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://digicert.com/root.crl",
+      "certificateRevocationListUrl": "http://LakeshoreRetail.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "koGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "Digicert Inc",
+      "issuer": "Lakeshore Retail",
       "issuerSubjectkeyIdentifier": "SKI"
     }
   ]
@@ -144,6 +181,7 @@ This example assumes that the original object stored has the following value. No
 
 The following example shows a request that updates the certificate authority list to contain only a single certificate, which removes the other.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_mutualtlsoauthconfiguration_remove_certificate"
@@ -157,15 +195,49 @@ Content-Type: application/json
   "certificateAuthorities": [
     {
       "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://acme.com/root.crl",
+      "certificateRevocationListUrl": "http://LakeshoreRetail.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "Binary",
-      "issuer": "acme Inc",
+      "issuer": "Lakeshore Retail",
       "issuerSubjectkeyIdentifier": "SKI"
     }
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mutualtlsoauthconfiguration-remove-certificate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-mutualtlsoauthconfiguration-remove-certificate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-mutualtlsoauthconfiguration-remove-certificate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mutualtlsoauthconfiguration-remove-certificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mutualtlsoauthconfiguration-remove-certificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-mutualtlsoauthconfiguration-remove-certificate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-mutualtlsoauthconfiguration-remove-certificate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-mutualtlsoauthconfiguration-remove-certificate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -189,10 +261,10 @@ Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mut
   "certificateAuthorities": [
     {
       "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://acme.com/root.crl",
+      "certificateRevocationListUrl": "http://LakeshoreRetail.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "Binary",
-      "issuer": "acme Inc",
+      "issuer": "Lakeshore Retail",
       "issuerSubjectkeyIdentifier": "SKI"
     }
   ]
