@@ -24,6 +24,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[Get action status reports](../api/cloudpcreports-getactionstatusreports.md)|Stream|Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.|
 |[Get bulk action status reports](../api/cloudpcreports-retrievebulkactionstatusreport.md)|Stream|Get the bulk remote action status reports, including data such as the bulk action ID, bulk action display name, initiating user's principal name, action type, and action state.|
 |[Get Cloud PC recommendation reports](../api/cloudpcreports-getcloudpcrecommendationreports.md)|Stream|Get the device recommendation reports for Cloud PCs, such as the usage category report.|
+|[Get Cloud PC troubleshooting reports](../api/cloudpcreports-retrievecloudpctroubleshootreports.md)|Stream|Get troubleshooting reports for Cloud PCs.|
 |[Get frontline report](../api/cloudpcreports-getfrontlinereport.md)|Stream| Get Frontline Cloud PC license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 |[Get inaccessible Cloud PC reports](../api/cloudpcreports-getinaccessiblecloudpcreports.md)|Stream|Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status.|
 |[Get raw remote connection reports](../api/cloudpcreports-getrawremoteconnectionreports.md)|Stream|Get the raw real-time remote connection report for a Cloud PC without any calculation or aggregation.|
@@ -36,7 +37,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[Retrieve connection quality reports](../api/cloudpcreports-retrieveconnectionqualityreports.md)|Stream|Get the overall connection quality reports for all devices in the current tenant, the regional connection quality trend report, and the regional connection quality insight report, including round trip time, available bandwidth, UPD usage, and dropped connections.|
 |[Get daily aggregated remote connection reports](../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md)|Stream|Get the daily aggregated remote connection reports like round trip time and available bandwidth in a given period.|
 |[Get Cloud PC performance report (deprecated)](../api/cloudpcreports-getcloudpcperformancereport.md)|Stream|Get a report related to the performance of Cloud PCs. This API is deprecated and stopped returning data on December 31, 2024. Going forward, use the [retrieveCloudPcTenantMetricsReport](../api/cloudpcreports-retrievecloudpctenantmetricsreport.md) API.|
-|[Get connection quality reports (deprecated)](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the overall connection quality reports for all devices within a current tenant during a given period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage. Also get other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol. This API is deprecated and will stop returning data on December 31, 2024. Going forward, use the [retrieveConnectionQualityReports](../api/cloudpcreports-retrieveconnectionqualityreports.md) API.|
+|[Get connection quality reports (deprecated)](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the overall connection quality reports for all devices within a current tenant during a given period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage. Also get other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol. This API is deprecated and stopped returning data on December 31, 2024. Going forward, use the [retrieveConnectionQualityReports](../api/cloudpcreports-retrieveconnectionqualityreports.md) API.|
 |[Get shared use license usage report (deprecated)](../api/cloudpcreports-getshareduselicenseusagereport.md) |Stream| Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 
 ## Properties
@@ -52,6 +53,16 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | performanceTrendReport     | Indicates a daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time.  | 
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.             |
 | cloudPcInsightReport       | Indicates Cloud PC-level configuration data with insights.   |
+
+### cloudPCTroubleshootReportType values
+
+| Member                        | Description       |
+| :---------------------------- | :---------------- |
+| troubleshootDetailsReport     | The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues.|
+| troubleshootTrendCountReport  | The aggregated report that shows the number and trend of issues per tenant.|
+| troubleshootRegionalReport    | The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues.|
+| unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.|
+| troubleshootIssueCountReport  | The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.|
 
 ## Relationships
 
