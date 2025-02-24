@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [sharePointGroup](../resources/sharepointgroup.md) object.
+Delete a [sharePointGroup](../resources/sharepointgroup.md) object that is local to a fileStorageContainer.
 
 ## Permissions
 
@@ -61,14 +61,12 @@ Don't supply a request body for this method.
 If successful, this method returns a `204 No Content` response code.
 
 ## Example 1: Delete a sharePointGroup
-The following example deletes a sharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`.
+The following example deletes a sharePointGroup identified by the ID `10` from the fileStorageContainer identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 
 ### Request
 
 ``` http
 DELETE /storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
-Content-Type: application/json
-
 ```
 
 ### Response
@@ -81,14 +79,12 @@ HTTP/1.1 204 No Content
 
 ## Example 2: Attempt to delete a sharePointGroup that doesn't exist.
 
-The following example attempts to delete a sharePointGroup identified by `{sharePointGroupId}` from the container identified by `{containerId}`. There's no such group in the container.
+The following example attempts to delete a sharePointGroup identified by the ID `11` from the fileStorageContainer identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`. There's no such group in the container.
 
 ### Request
 
 ``` http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/11
-Content-Type: application/json
-
 ```
 
 ### Response

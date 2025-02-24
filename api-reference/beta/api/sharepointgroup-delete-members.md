@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [sharePointGroupMember](../resources/sharepointgroupmember.md) object.
+Deletes a [sharePointGroupMember](../resources/sharepointgroupmember.md) object from a sharePointGroup. The deleted member will
+lose permissions to items that they inherit from the sharePointGroup.
 
 ## Permissions
 
@@ -65,7 +66,6 @@ The following example shows a request.
 
 ``` http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
-Content-Type: application/json
 ```
 
 ### Response

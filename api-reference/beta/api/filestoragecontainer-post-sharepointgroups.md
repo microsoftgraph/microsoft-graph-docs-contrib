@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [sharePointGroup](../resources/sharepointgroup.md) object.
+Create a new [sharePointGroup](../resources/sharepointgroup.md) object. The sharePointGroup will only exist in the scope of the fileStorageContainer it was created in. To add permissions for the sharePointGroup on driveItems will require the use of the [driveItem permissions api](./driveitem-post-permissions.md)
 
 ## Permissions
 
@@ -70,7 +70,7 @@ You can specify the following properties when creating a **sharePointGroup**.
 If successful, this method returns a `201 Created` response code and a [sharePointGroup](../resources/sharepointgroup.md) object in the response body.
 
 
-## Example 1: Create a new sharePointGroup that is local to a SharePointEmbedded container
+## Example 1: Create a new sharePointGroup that is local to a fileStoragContainer
 
 The following example creates a new sharePointGroup under the container identified by `{containerId}`. The title and description of the sharePointGroup are shown in the request body.
 

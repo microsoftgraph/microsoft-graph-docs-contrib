@@ -48,7 +48,7 @@ GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports Filter, OrderBy, Top and Skip, and Count OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -64,15 +64,13 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [sharePointGroup](../resources/sharepointgroup.md) objects in the response body.
 
-## Example 1: Retrieve all the existing sharePointGroups that are local to a container
-The following example retrieves all the sharePointGroups that are local to the SharePointEmbedded container identified by `{containerId}`
+## Example 1: Retrieve all the existing sharePointGroups that are local to a fileStorageContainer
+The following example retrieves all the sharePointGroups that are local to a fileStoragecontainer identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`
 
 ### Request
 
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
-Content-Type: application/json
-
 ```
 
 ### Response
@@ -101,20 +99,18 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: Attempt to retrieve all the existing sharePointGroups that are local to a container. The container has no sharePointGroups
-The following example attempts to retrieve all the sharePointGroups that are local to the SharePointEmbedded container identified by `{containerId}`. This container is new and has no sharePointGroups in it.
+## Example 2: Attempt to retrieve all the existing sharePointGroups that are local to a fileStorageContainer. The fileStorageContainer has no sharePointGroups
+The following example attempts to retrieve all the sharePointGroups that are local to a fileStorageContainer identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`. This fileStorageContainer is new and has no sharePointGroups in it.
 
 ### Request
 
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
-Content-Type: application/json
-
 ```
 
 ### Response
 
-The following example shows a sample response. As there are no sharePointGroups in the container, the response has an empty list.
+The following example shows a sample response. As there are no sharePointGroups in the fileStorageContainer, the response has an empty list.
 
 ``` http
 HTTP/1.1 200 OK
