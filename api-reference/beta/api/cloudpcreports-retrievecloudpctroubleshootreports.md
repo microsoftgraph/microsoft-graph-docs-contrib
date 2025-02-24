@@ -59,6 +59,7 @@ The following table lists the parameters that you can use with this action.
 |select|String collection|OData `$select` syntax. The selected columns of the reports. Optional.|
 |skip|Int32|Number of records to skip. Optional.|
 |top|Int32|The number of top records to return. If not specified, the default limit is 25, with a maximum of 100. Optional.|
+| groupBy    | String collection            |The result can be grouped according to multiple columns. |
 
 ## Response
 
