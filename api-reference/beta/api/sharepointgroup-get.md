@@ -78,7 +78,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows s sample response with a json object representing the SharePointGroup
+The following example shows the response with a JSON object representing the SharePointGroup.
 
 ``` http
 HTTP/1.1 200 OK
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows a sample response detailing the nonexistence of the group.
+The following example shows the response of a group that doesn't exist.
 
 ``` http
 HTTP/1.1 404 Not Found

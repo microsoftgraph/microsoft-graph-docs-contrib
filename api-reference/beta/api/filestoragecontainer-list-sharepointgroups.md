@@ -66,7 +66,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [sharePointGroup](../resources/sharepointgroup.md) objects in the response body.
 
 ## Example 1: Retrieve all the existing SharePointGroups that are local to a container
-The following example retrieves all the SharePointGroups that are local to the SharePointEmbedded container identified by `{containerId}`
+The following example retrieves all the SharePointGroups that are local to the SharePointEmbedded container identified by `{containerId}`.
 
 ### Request
 
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows a sample response containing the collection of SharePointGroups that exist.
+The following example shows the response with a collection of SharePointGroups.
 
 ``` http
 HTTP/1.1 200 OK
@@ -115,7 +115,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows a sample response. As there are no SharePointGroups in the container, the response has an empty list.
+The following example shows the response. Since there aren't any SharePointGroups in the container, the response contains an empty list.
 
 ``` http
 HTTP/1.1 200 OK

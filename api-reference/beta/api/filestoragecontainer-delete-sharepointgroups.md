@@ -93,7 +93,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows a sample response. Only existing SharePointGroups can be deleted.
+The following example shows the response. Only existing SharePointGroups can be deleted.
 
 ``` http
 HTTP/1.1 404 Not Found

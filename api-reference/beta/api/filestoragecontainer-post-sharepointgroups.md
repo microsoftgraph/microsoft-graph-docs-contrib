@@ -89,7 +89,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows a sample response. The group is successfully created with a newly assigned ID that acts as an identifier.
+The following example shows the response. The group is successfully created with a newly assigned ID that acts as an identifier.
 
 ``` http
 HTTP/1.1 201 Created
