@@ -50,7 +50,7 @@ You can specify the following properties when you create a **cloudPcExportJob**.
 |:---|:---|:---|
 |filter|String|The filter applied on the report. Optional.|
 |format|String|The format of the exported report. Optional.|
-|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md#cloudpcreportname-values)|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`, `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `cloudPcInsightReport`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `cloudPcInsightReport`.|
+|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md#cloudpcreportname-values)|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`, `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `cloudPcInsightReport`, `regionalInaccessibleCloudPcTrendReport`, `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport` . Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `cloudPcInsightReport`, `regionalInaccessibleCloudPcTrendReport`, `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`.|
 |select|String collection|The selected columns of the report. Optional.|
 
 ## Response
@@ -166,7 +166,6 @@ The following example shows how to create an export job to download the `RemoteC
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_cloudpcexportjob_from_example2"
@@ -184,7 +183,7 @@ Content-length: 315
     "ManagedDeviceName",
     "AvgRoundTripTimeInMsP50",
     "LastConnectionRoundTripTimeInMs",
-    "AvgAvailableBandwidthInMBpsP50",
+    "AvgAvailableBandwidthInMbpsP50",
     "LastConnectionAvailableBandWidthInMSps",
     "AvgRemoteSignInTimeInSecP50",
     "UDPConnectionPercentage",
@@ -195,40 +194,6 @@ Content-length: 315
   "filter": "EventDateTime gt datetime'2023-06-14T07:40:41.694Z'"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpcexportjob-from-example2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-cloudpcexportjob-from-example2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcexportjob-from-example2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-cloudpcexportjob-from-example2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpcexportjob-from-example2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-cloudpcexportjob-from-example2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpcexportjob-from-example2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-cloudpcexportjob-from-example2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -254,7 +219,7 @@ Content-Type: application/json
     "ManagedDeviceName",
     "AvgRoundTripTimeInMsP50",
     "LastConnectionRoundTripTimeInMs",
-    "AvgAvailableBandwidthInMBpsP50",
+    "AvgAvailableBandwidthInMbpsP50",
     "LastConnectionAvailableBandWidthInMSps",
     "AvgRemoteSignInTimeInSecP50",
     "UDPConnectionPercentage",

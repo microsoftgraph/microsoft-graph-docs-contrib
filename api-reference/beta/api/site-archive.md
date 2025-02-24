@@ -22,12 +22,11 @@ Archive an active SharePoint [site](../resources/site.md).
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Sites.FullControl.All|Not available.|
+|Delegated (work or school account)|Sites.Archive.All|Sites.FullControl.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Sites.FullControl.All|Not available.|
+|Application|Sites.Archive.All|Sites.FullControl.All|
 
 > [!IMPORTANT]
 > In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *SharePoint Administrator* is the least privileged role for this operation.
