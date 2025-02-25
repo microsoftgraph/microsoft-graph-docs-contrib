@@ -15,7 +15,7 @@ request_body = GetRemoteConnectionHistoricalReportsPostRequestBody(
 		"SignOutDateTime",
 		"UsageInHour",
 		"RoundTripTimeInMsP50",
-		"AvailableBandwidthInMBpsP50",
+		"AvailableBandwidthInMbpsP50",
 		"RemoteSignInTimeInSec",
 	],
 	top = 25,
