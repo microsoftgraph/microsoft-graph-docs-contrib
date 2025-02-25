@@ -5,6 +5,7 @@ author: "ka-gunase"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 02/25/2025
 ---
 
 # mailFolderOperation resource type

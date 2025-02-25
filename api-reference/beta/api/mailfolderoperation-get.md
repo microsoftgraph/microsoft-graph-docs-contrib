@@ -5,6 +5,7 @@ author: "ka-gunase"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 02/25/2025
 ---
 
 # Get mailFolderOperation

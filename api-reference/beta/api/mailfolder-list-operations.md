@@ -1,19 +1,20 @@
 ---
-title: "List operations of mailFolder"
-description: "List the long running folder operations of a mailFolder object."
+title: "List operations"
+description: "List the long-running folder operations of a mailFolder object."
 author: "ka-gunase"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 02/25/2025
 ---
 
-# List operations of mailFolder
+# List operations
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the long running folder operations of a [mailFolder](../resources/mailfolder.md) object.
+List the long-running folder operations of a [mailFolder](../resources/mailfolder.md) object.
 
 ## Permissions
 
@@ -52,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of mailFolderOperation objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [mailFolderOperation](../resources/mailfolderoperation.md) objects in the response body.
 
 ## Examples
 
@@ -67,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/users/{usersId}/mailFolders/{mailFolderId}/operations
 ```
-
 
 ### Response
 
