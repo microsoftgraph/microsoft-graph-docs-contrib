@@ -21,10 +21,10 @@ The Microsoft Graph command-line interface (CLI) is published on [GitHub](https:
 
 ### Windows environment setup (Optional)
 
-1. Open **Settings** then **System**
-1. Select **About**, then **Advanced system settings**.    
+1. Open **Settings** > **System**.
+1. Select **About** > **Advanced system settings**.    
 1. Select **Environment Variables...**.
-1. Locate and select **Path**, then select **Edit**.
+1. Locate and select **Path** > select **Edit**.
 
     > [!NOTE]
     > The **Path** variable is present in **User variables** as well as **System variables**. Updating the variable in **User variables** will only update the current user's path. Updating the variable in **System variables** will update the path for all users on the computer.
