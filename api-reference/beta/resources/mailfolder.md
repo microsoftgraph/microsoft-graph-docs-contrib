@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 08/21/2024
 ---
 
 # mailFolder resource type
@@ -108,9 +109,9 @@ By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only 
 
 | Relationship | Type | Description |
 |:-------------|:-----|:------------|
-|childFolders|[MailFolder](mailfolder.md) collection|The collection of child folders in the mailFolder.|
+|childFolders|[mailFolder](mailfolder.md) collection|The collection of child folders in the mailFolder.|
 |messageRules | [messageRule](messagerule.md) collection | The collection of rules that apply to the user's Inbox folder. |
-|messages|[Message](message.md) collection|The collection of messages in the mailFolder.|
+|messages|[message](message.md) collection|The collection of messages in the mailFolder.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
 
