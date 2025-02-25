@@ -1413,7 +1413,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailFolderOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [mailFolderOperation](https://learn.microsoft.com/en-us/graph/api/resources/mailfolderoperation?view=graph-rest-beta) resource.",
+          "Description": "Added the [mailFolderOperation](https://learn.microsoft.com/en-us/graph/api/resources/mailfolderoperation?view=graph-rest-beta) resource type.",
           "Target": "mailFolderOperation"
         },
         {
