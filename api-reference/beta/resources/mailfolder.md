@@ -66,13 +66,12 @@ Well-known names work regardless of the locale of the user's mailbox, so the pre
 |[Get folder delta](../api/mailfolder-delta.md)|[mailFolder](mailfolder.md) collection|Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.|
 |[Move mail folder](../api/mailfolder-move.md)|[mailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
 |[Permanently delete](../api/mailfolder-permanentdelete.md)|None|Permanently delete a mail folder and remove its items from the user's mailbox.|
+|[Update all messages read state](../api/mailfolder-updateallmessagesreadstate.md) |[mailFolder](mailfolder.md)|Update the read state of all messages in a [mailFolder](../resources/mailfolder.md) object.|
 |**Extended properties**| | |
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[mailFolder](mailfolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [mailFolder](mailfolder.md) | Create one or more multi-value extended properties in a new or existing mailFolder.  |
 |[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get a mailFolder that contains a multi-value extended property by using `$expand`. |
-|[Update all messages read state](../api/mailfolder-updateallmessagesreadstate.md) | [mailFolder](mailfolder.md)|Marks all messages in a folder as read or unread. |
-
 
 ## Properties
 
