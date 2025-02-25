@@ -82,9 +82,8 @@ Enabled the **allowRecording**, **allowTranscription**, **anonymizeIdentityForRo
 
 ### Teamwork and communications | Messaging
 
--Introducing two new apis:
-  - Reply with quote in a chat. [replyWithQuote](https://learn.microsoft.com/en-us/graph/api/chatmessage-replywithquote?view=graph-rest-beta)
-  - forward a chat message, or a channel message or a channel reply message to a chat. [forwardToChat](https://learn.microsoft.com/en-us/graph/api/chatmessage-forwardtochat?view=graph-rest-beta)
+- [Reply with quote](/graph/api/chatmessage-replywithquote?view=graph-rest-beta&preserve-view=true) to a single chat message or multiple chat messages in a chat.
+- [Forward] (/graph/api/chatmessage-forwardtochat?view=graph-rest-beta&preserve-view=true) a chat message, a channel message, or a channel message reply to a chat.
 - Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
   - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
   - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
