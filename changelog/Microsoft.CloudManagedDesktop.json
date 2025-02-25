@@ -7,16 +7,16 @@
           "ApiChange": "Member",
           "ChangedApiName": "europe",
           "ChangeType": "Addition",
-          "Description": "Added the `europe` member to the **cloudPcSupportedRegion** enumeration.",
-          "Target": "cloudPcSupportedRegion"
+          "Description": "Added the `europe` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
         },
         {
           "Id": "82f27d11-a97b-4b47-85c1-3fce7e35bfe0",
           "ApiChange": "Member",
           "ChangedApiName": "australasia",
           "ChangeType": "Addition",
-          "Description": "Added the `australasia` member to the **cloudPcSupportedRegion** enumeration.",
-          "Target": "cloudPcSupportedRegion"
+          "Description": "Added the `australasia` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
         }
       ],
       "Id": "82f27d11-a97b-4b47-85c1-3fce7e35bfe0",
