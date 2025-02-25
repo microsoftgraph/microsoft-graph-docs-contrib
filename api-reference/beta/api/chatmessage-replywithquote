@@ -1,6 +1,6 @@
 ---
 title: "chatMessage: replyWithQuote"
-description: "Reply to a single message or multiple messages with quoted reference in a chat."
+description: "Reply with quote to a single chat message or multiple chat messages in a chat."
 author: "sumanac"
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Reply with quote](../resources/chatmessage.md) to a single [chatMessage](../resources/chatmessage.md) or multiple [chat messages](../resources/chatmessage.md) in a [chat](../resources/chat.md).
+Reply with quote to a single [chat message](../resources/chatmessage.md) or multiple chat messages in a [chat](../resources/chat.md).
 
 > [!NOTE]
-> When reply with quote to multiple messages, maximum 10 messages can be used to reply.
+> When replying with a quote to multiple messages, a maximum of 10 messages can be used for the reply.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -49,17 +49,18 @@ POST /chats/{chatId}/messages/replyWithQuote
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|messageIds|String collection|List of message ids in a chat that are replied with quote.|
-|replyMessage|[chatMessage](../resources/chatmessage.md) object|Message body for the reply. |
+|messageIds|String collection|List of message IDs in a chat that are replied to with a quote. |
+|replyMessage|[chatMessage](../resources/chatmessage.md) object|The message body for the reply. |
 
 ## Response
 
@@ -67,78 +68,95 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 ## Examples
 
-### Example 1: Reply with quote in a chat
+### Request
 
-#### Request
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "chatmessage.replywithquote",
+  "sampleKeys": ["19:97641583cf154265a237da28ebbde27a@thread.v2"]
+}
+-->
 
 ```http
 POST https://graph.microsoft.com/beta/chats/19:97641583cf154265a237da28ebbde27a@thread.v2/messages/replyWithQuote
-{    
-    "messageIds": ["1728088338580"],
-    "replyMessage": {
-        "body": {
-            "content": "Hello World"
-        }
+Content-Type: application/json
+
+{
+  "messageIds": [
+    "1728088338580"
+  ],
+  "replyMessage": {
+    "body": {
+      "content": "Hello World"
     }
+  }
 }
 ```
 
-#### Response
+### Response
 
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response"
-} -->
-
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+}
+-->
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A97641583cf154265a237da28ebbde27a%40thread.v2')/messages/$entity",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
-    "id": "1729091934196",
-    "replyToId": null,
-    "etag": "1729091934196",
-    "messageType": "message",
-    "createdDateTime": "2024-10-16T15:18:54.196Z",
-    "lastModifiedDateTime": "2024-10-16T15:18:54.196Z",
-    "lastEditedDateTime": null,
-    "deletedDateTime": null,
-    "subject": null,
-    "summary": null,
-    "chatId": "19:97641583cf154265a237da28ebbde27a@thread.v2",
-    "importance": "normal",
-    "locale": "en-us",
-    "webUrl": null,
-    "channelIdentity": null,
-    "policyViolation": null,
-    "eventDetail": null,
-    "from": {
-        "application": null,
-        "device": null,
-        "user": {
-            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Sumana Chakrabarti",
-            "userIdentityType": "aadUser",
-            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
-        }
-    },
-    "body": {
-        "contentType": "html",
-        "content": "<p></p>\n<attachment id=\"1728422677844\"></attachment>\ntest reply\n<p></p>"
-    },
-    "attachments": [
-        {
-            "id": "1728422677844",
-            "contentType": "messageReference",
-            "contentUrl": null,
-            "content": "{\"messageId\":\"1728422677844\",\"messagePreview\":\"Hello World Jane Smith\",\"messageSender\":{\"application\":null,\"device\":null,\"user\":{\"userIdentityType\":\"aadUser\",\"tenantId\":\"2432b57b-0abd-43db-aa7b-16eadd115d34\",\"id\":\"28c10244-4bad-4fda-993c-f332faef94f0\",\"displayName\":\"Sumana Chakrabarti\"}}}",
-            "name": null,
-            "thumbnailUrl": null,
-            "teamsAppId": null
-        }
-    ],
-    "mentions": [],
-    "reactions": []
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A97641583cf154265a237da28ebbde27a%40thread.v2')/messages/$entity",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+  "id": "1729091934196",
+  "replyToId": null,
+  "etag": "1729091934196",
+  "messageType": "message",
+  "createdDateTime": "2024-10-16T15:18:54.196Z",
+  "lastModifiedDateTime": "2024-10-16T15:18:54.196Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:97641583cf154265a237da28ebbde27a@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "channelIdentity": null,
+  "policyViolation": null,
+  "eventDetail": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+      "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+      "displayName": "Adele Vance",
+      "userIdentityType": "aadUser",
+      "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+    }
+  },
+  "body": {
+    "contentType": "html",
+    "content": "<p></p>\n<attachment id=\"1728422677844\"></attachment>\ntest reply\n<p></p>"
+  },
+  "attachments": [
+    {
+      "id": "1728422677844",
+      "contentType": "messageReference",
+      "contentUrl": null,
+      "content": "{\"messageId\":\"1728422677844\",\"messagePreview\":\"Hello World Jane Smith\",\"messageSender\":{\"application\":null,\"device\":null,\"user\":{\"userIdentityType\":\"aadUser\",\"tenantId\":\"2432b57b-0abd-43db-aa7b-16eadd115d34\",\"id\":\"28c10244-4bad-4fda-993c-f332faef94f0\",\"displayName\":\"Adele Vance\"}}}",
+      "name": null,
+      "thumbnailUrl": null,
+      "teamsAppId": null
+    }
+  ],
+  "mentions": [],
+  "reactions": []
 }
 ```
