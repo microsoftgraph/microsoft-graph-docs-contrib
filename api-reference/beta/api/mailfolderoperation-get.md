@@ -20,13 +20,12 @@ Read the properties and relationships of a [mailFolderOperation](../resources/ma
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-[!INCLUDE [permissions-table](../includes/permissions/mailfolderoperation-get-permissions.md)]
-
 <!-- {
   "blockType": "permissions",
   "name": "mailfolderoperation-get-permissions"
 }
 -->
+[!INCLUDE [permissions-table](../includes/permissions/mailfolderoperation-get-permissions.md)]
 
 ## HTTP request
 
@@ -55,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a mailFolderOperation object in the response body.
+If successful, this method returns a `200 OK` response code and a [mailFolderOperation](../resources/mailfolderoperation.md) object in the response body.
 
 ## Examples
 
@@ -70,7 +69,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/mailFolders/{mailFolderId}/operations/{mailFolderOperationId}
 ```
-
 
 ### Response
 
@@ -95,4 +93,3 @@ Content-Type: application/json
   }
 }
 ```
-

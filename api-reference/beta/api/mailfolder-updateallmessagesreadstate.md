@@ -53,9 +53,8 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|isRead|Boolean|Indicates whether to mark messages as read/unread.|
+|isRead|Boolean|Indicates whether to mark messages as read or unread.|
 |suppressReadReceipts|Boolean|Indicates whether to suppress the read receipts for messages from the receiving end.|
-
 
 ## Response
 
@@ -81,11 +80,10 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -94,4 +92,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
