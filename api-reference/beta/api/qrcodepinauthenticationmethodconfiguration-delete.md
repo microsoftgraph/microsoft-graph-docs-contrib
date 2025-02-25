@@ -1,6 +1,6 @@
 ---
-title: "Get qrCodePinAuthenticationMethodConfiguration"
-description: "Read the properties and relationships of a qrCodePinAuthenticationMethodConfiguration object."
+title: "Delete qrCodePinAuthenticationMethodConfiguration"
+description: "Delete a qrCodePinAuthenticationMethodConfiguration object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# Get qrCodePinAuthenticationMethodConfiguration
+# Delete qrCodePinAuthenticationMethodConfiguration
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a qrCodePinAuthenticationMethodConfiguration object.
+Delete a qrCodePinAuthenticationMethodConfiguration object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "qrcodepinauthenticationmethodconfiguration-get-permissions"
+  "name": "qrcodepinauthenticationmethodconfiguration-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethodconfiguration-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethodconfiguration-delete-permissions.md)]
 
 ## HTTP request
 
@@ -34,12 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /qrCodePinAuthenticationMethodConfiguration
+DELETE /qrCodePinAuthenticationMethodConfiguration
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [qrCodePinAuthenticationMethodConfiguration](../resources/qrcodepinauthenticationmethodconfiguration.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -62,11 +58,11 @@ If successful, this method returns a `200 OK` response code and a [qrCodePinAuth
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_qrcodepinauthenticationmethodconfiguration"
+  "name": "delete_qrcodepinauthenticationmethodconfiguration"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/qrCodePinAuthenticationMethodConfiguration
+DELETE https://graph.microsoft.com/beta/qrCodePinAuthenticationMethodConfiguration
 ```
 
 
@@ -76,27 +72,10 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.qrCodePinAuthenticationMethodConfiguration"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethodConfiguration",
-    "id": "1af5ba53-5a47-d528-0130-c616cd99ddc6",
-    "state": "String",
-    "excludeTargets": [
-      {
-        "@odata.type": "microsoft.graph.excludeTarget"
-      }
-    ],
-    "standardQRCodeLifetimeInDays": "Integer",
-    "pinLength": "Integer"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
