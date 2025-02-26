@@ -48,7 +48,7 @@ GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{s
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $expand and $select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). For the $expand OData query parameter, only the `members` field is eligible. For the $select OData query parameter `title`, `id` and `description` fields are eligible.
 
 ## Request headers
 

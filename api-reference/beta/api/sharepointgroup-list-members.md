@@ -48,7 +48,11 @@ GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{s
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports $count, $filter, $orderby, $skip and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). You can $filter or $orderby by the `id` and `displayName`fields.
+
+> [!Note]
+> Only 100 sharePointGroupMembers can be listed in a single request. Use the $top and $skip query parameters to
+efficiently retrieve all sharePointGroupMembers within a sharePointGroup.
 
 ## Request headers
 

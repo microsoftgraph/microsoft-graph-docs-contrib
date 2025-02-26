@@ -14,10 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object.
+Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object within a [sharePointGroup](../resources/sharepointgroup.md). A **sharePointGroup** can have upto 5000 users. See [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups) for more information on service limits.SharePoint users and M365 groups are supported as **sharePointGroupMember**. The newly created **sharePointGroupMember** will inherit driveItem permissions that have been granted to the **sharePointGroup**. It can take several minutes for Substrate's search index to be updated.
 
 ## Permissions
-
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 

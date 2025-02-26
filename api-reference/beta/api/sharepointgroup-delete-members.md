@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a [sharePointGroupMember](../resources/sharepointgroupmember.md) object from a sharePointGroup. The deleted member will
-lose permissions to items that they inherit from the sharePointGroup.
+lose permissions to items that they inherit from the sharePointGroup. It can take several minutes for Substrate's search index to update.
 
 ## Permissions
 
