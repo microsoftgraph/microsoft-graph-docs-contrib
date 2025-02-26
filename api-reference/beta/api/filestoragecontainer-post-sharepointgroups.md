@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [sharePointGroup](../resources/sharepointgroup.md) object. The sharePointGroup will only exist in the scope of the fileStorageContainer it was created in. To add permissions for the sharePointGroup on driveItems will require the use of the [driveItem permissions api](./driveitem-post-permissions.md). Upto 10000 sharePointGroups can be created for XXXX.
+Create a new [sharePointGroup](../resources/sharepointgroup.md) object. The sharePointGroup will only exist in the scope of the fileStorageContainer it was created in. To add permissions for the sharePointGroup on driveItems will require the use of the [driveItem permissions api](./driveitem-post-permissions.md). Upto 10000 sharePointGroups can be created per fileStorageContainer. See [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups) for more information on service limits. 
 
 ## Permissions
 
