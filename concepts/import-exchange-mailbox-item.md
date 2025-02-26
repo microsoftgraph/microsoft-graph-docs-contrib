@@ -89,7 +89,7 @@ Because the initial opaque URL is preauthenticated and contains the appropriate 
 
 ### Response
 
-If successful, this action returns a `200 OK` response code and an [importMailboxItemResponse](/graph/api/resources/importmailboxitemresponse) object in the response body.
+If successful, this action returns a `200 OK` response code and an **importMailboxItemResponse** object in the response body.
 
 ### Examples
 
@@ -102,7 +102,7 @@ The following example shows how to import a new item into the mailbox in `create
 The following example shows a request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "mailboxthis.importItemCreateMode"
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
@@ -123,7 +123,7 @@ POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/
 The following example shows the response.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.importMailboxItemResponse"
 }
@@ -149,7 +149,7 @@ The following example shows how to import a new version of an existing item into
 The following example shows a request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "mailboxthis.importItemUpdateMode"
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
@@ -171,7 +171,7 @@ POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/
 The following example shows the response.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.importMailboxItemResponse"
 }
