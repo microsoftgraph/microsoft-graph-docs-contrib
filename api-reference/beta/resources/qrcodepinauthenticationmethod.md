@@ -23,7 +23,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/authentication-post-qrcodepinmethod.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Create a new qrCodePinAuthenticationMethod object.|
+|[Create](../api/qrcodepinauthenticationmethod-update.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Create a new qrCodePinAuthenticationMethod object.|
 |[Get](../api/qrcodepinauthenticationmethod-get.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Read the properties and relationships of a qrCodePinAuthenticationMethod object.|
 |[Delete](../api/authentication-delete-qrcodepinmethod.md)|None|Delete a qrCodePinAuthenticationMethod object.|
 |[Create standard QRCode](../api/qrcodepinauthenticationmethod-post-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a new qrCode object.|
