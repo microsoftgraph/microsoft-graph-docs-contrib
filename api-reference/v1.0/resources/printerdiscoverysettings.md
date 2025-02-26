@@ -1,18 +1,16 @@
 ---
 title: "printerDiscoverySettings resource type"
 description: "Represents tenant-wide printer discovery settings for the Universal Print service."
-author: "JuliusShanMS"
+author: "carlapgavilan"
 ms.localizationpriority: medium
 ms.subservice: "universal-print"
 doc_type: resourcePageType
-ms.date: "03/06/2024"
+ms.date: "02/12/2025"
 ---
 
 # printerDiscoverySettings resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents tenant-wide printer discovery settings for the Universal Print service.
 

@@ -1,18 +1,16 @@
 ---
 title: "airPrintSettings resource type"
 description: "Represents tenant-wide settings to configure the behavior of printers when print jobs are submitted to Universal Print from macOS, which requires AirPrint compatibility."
-author: "JuliusShanMS"
+author: "carlapgavilan"
 ms.localizationpriority: medium
 ms.subservice: "universal-print"
 doc_type: resourcePageType
-ms.date: "03/06/2024"
+ms.date: "02/12/2025"
 ---
 
 # airPrintSettings resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents tenant-wide settings to configure the behavior of printers when print jobs are submitted to Universal Print from macOS, which requires AirPrint compatibility.
 

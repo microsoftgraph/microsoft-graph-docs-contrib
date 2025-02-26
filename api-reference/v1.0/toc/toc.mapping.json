@@ -386,6 +386,7 @@
             "printerShare"
           ],
           "complexTypes": [
+            "airPrintSettings",
             "appIdentity",
             "archivedPrintJob",
             "identity",
@@ -400,6 +401,7 @@
             "printTaskStatus",
             "printerCapabilities",
             "printerDefaults",
+            "printerDiscoverySettings",
             "printerLocation",
             "printerShareViewpoint",
             "printerStatus",
