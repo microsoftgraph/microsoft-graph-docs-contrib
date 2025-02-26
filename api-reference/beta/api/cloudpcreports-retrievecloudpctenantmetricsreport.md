@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a report related to the performance of Cloud PCs.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

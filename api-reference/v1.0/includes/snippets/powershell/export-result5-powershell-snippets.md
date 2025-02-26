@@ -12,8 +12,6 @@ $params = @{
 	exportLocation = "responsiveLocations"
 	additionalOptions = "cloudAttachments"
 	exportFormat = "eml"
-	cloudAttachmentVersion = "all"
-	documentVersion = "recent100"
 }
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
