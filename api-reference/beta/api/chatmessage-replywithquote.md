@@ -34,7 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Reply with quote to a **chatMessage** in a **chat**:
 <!-- {
   "blockType": "ignored"
 }
