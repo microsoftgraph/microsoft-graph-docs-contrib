@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "584a312d-86ac-4622-bc31-0c1651362206",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Sites.Archive.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Sites.Archive.All` to the [site: archive](https://learn.microsoft.com/en-us/graph/api/site-archive?view=graph-rest-beta) method.",
+          "Target": "archive"
+        },
+        {
+          "Id": "584a312d-86ac-4622-bc31-0c1651362206",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Sites.Archive.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Sites.Archive.All` to the [site: unarchive](https://learn.microsoft.com/en-us/graph/api/site-unarchive?view=graph-rest-beta) method.",
+          "Target": "unarchive"
+        }
+      ],
+      "Id": "584a312d-86ac-4622-bc31-0c1651362206",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-02-19T15:52:02.6103372Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a3f702b8-6939-4208-a6d3-6ec841bc13b3",
           "ApiChange": "Method",
           "ChangedApiName": "archive",
