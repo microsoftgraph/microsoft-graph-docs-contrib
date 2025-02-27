@@ -1,6 +1,6 @@
 ---
 title: "Recipient Detail resource type"
-description: Details about the recipient(s) as mentioned in the mail
+description: "Details about the recipient as mentioned in the email".
 author: akgraph
 ms.localizationpriority: medium
 ms.subservice: security
