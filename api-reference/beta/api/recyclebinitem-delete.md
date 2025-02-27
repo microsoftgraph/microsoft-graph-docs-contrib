@@ -1,6 +1,6 @@
 ---
-title: "Delete recycleBinItem"
-description: "Delete items from fileStorageContainer recycleBin."
+title: "recycleBinItem: delete"
+description: "Delete recycleBinItem objects permanently from the recycleBin of a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 10/01/2024
 ---
 
-# Delete recycleBinItem
+# recycleBinItem: delete
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete [recycleBinItem](../resources/recyclebinitem.md) objects from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md). Items deleted by this method can't be restored. 
+Delete [recycleBinItem](../resources/recyclebinitem.md) objects permanently from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md). Items deleted by this method can't be restored. 
 
 ## Permissions
 
