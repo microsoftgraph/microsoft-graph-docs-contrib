@@ -22,6 +22,7 @@ The wrapper adds the **distributeForStudentWork** property and indicates that th
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[Create assignment resource](../api/educationassignment-post-resource.md) |[educationAssignmentResource](educationassignmentresource.md)| Create a new **educationAssignmentResource** by posting to the resources collection.|
 |[Get](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Read properties and relationships of an **educationAssignmentResource** object.|
 |[Delete from assignment](../api/educationassignmentresource-delete.md) | None |Delete an **educationAssignmentResource** object. |
 
