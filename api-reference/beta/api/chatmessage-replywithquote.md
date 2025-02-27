@@ -25,12 +25,9 @@ Reply with quote to a single [chat message](../resources/chatmessage.md) or mult
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions for chat
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChatMessage.Send |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+### Permissions for replywithQuote
+<!-- { "blockType": "permissions", "name": "chatmessage_replywithquote" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage.md)]
 
 ## HTTP request
 
@@ -70,9 +67,10 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatmessage.replywithquote",
+  "name": "chatmessage.forwardToChat",
   "sampleKeys": ["19:97641583cf154265a237da28ebbde27a@thread.v2"]
 }
 -->

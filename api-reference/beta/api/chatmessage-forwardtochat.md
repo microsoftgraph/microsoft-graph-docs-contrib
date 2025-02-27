@@ -22,12 +22,9 @@ Forward a [chat message](../resources/chatmessage.md), a [channel message](../re
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions for chat
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChatMessage.Send |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+### Permissions for forwardToChat
+<!-- { "blockType": "permissions", "name": "chatmessage_forwardtochat" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage.md)]
 
 ## HTTP request
 
@@ -73,7 +70,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [conversationMember](../resources/conversationmember.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [forwardToChatResult](../resources/forwardtochatresult.md) objects in the response body.
 
 > [!NOTE]
 > Because only a single target chat ID is supported in the request payload, the response contains only one value.
@@ -82,14 +79,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Forward message from a chat to a chat
 
+#### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chatmessage.forwardToChat",
   "sampleKeys": ["19:97641583cf154265a237da28ebbde27a@thread.v2"]
 }
 -->
-
-#### Request
 
 ```http
 POST https://graph.microsoft.com/beta/chats/19:97641583cf154265a237da28ebbde27a@thread.v2/messages/forwardToChat
@@ -131,6 +129,9 @@ Content-Type: application/json
 
 ### Example 2: Forward message from a channel to a chat
 
+#### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chatmessage.forwardToChat",
@@ -138,7 +139,6 @@ Content-Type: application/json
 }
 -->
 
-#### Request
 ```http
 POST https://graph.microsoft.com/beta/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/channels/19:b6343216390d46cba965fe36bd877674@thread.tacv2/messages/forwardToChat
 Content-Type: application/json
@@ -179,14 +179,15 @@ Content-Type: application/json
 
 ### Example 3:  Forward reply message from a channel to a chat
 
+#### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chatmessage.forwardToChat",
   "sampleKeys": ["19:97641583cf154265a237da28ebbde27a@thread.v2"]
 }
 -->
-
-#### Request
 
 ```http
 POST https://graph.microsoft.com/beta/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/channels/19:b6343216390d46cba965fe36bd877674@thread.tacv2/messages/1727810802267/replies/forwardToChat
