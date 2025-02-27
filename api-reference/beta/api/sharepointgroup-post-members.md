@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object within a [sharePointGroup](../resources/sharepointgroup.md). A **sharePointGroup** can have upto 5000 users. See [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups) for more information on service limits. SharePoint users and M365 groups are supported as **sharePointGroupMember**. The newly created **sharePointGroupMember** will inherit driveItem permissions that have been granted to the **sharePointGroup**. It can take several minutes for Substrate's search index to be updated.
+Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object within a [sharePointGroup](../resources/sharepointgroup.md). A **sharePointGroup** can have upto 5000 users. See [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups) for more information on service limits. Users and M365 groups are supported as viable identities for **sharePointGroupMember**. The newly created **sharePointGroupMember** will immediately inherit driveItem permissions that have been granted to the **sharePointGroup**. It can take several minutes for Substrate related functionality such as search and Copilot to reflect the addition of the new **sharePointGroupMember**.
 
 ## Permissions
 
