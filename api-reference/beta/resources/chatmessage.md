@@ -54,6 +54,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Undo the deletion of a message in chat](../api/chatmessage-undosoftdelete.md)|[chatMessage](chatmessage.md)| Undelete the message in a chat.|
 |[Set reaction to a message in chat](../api/chatmessage-setreaction.md)|[chatMessage](chatmessage.md)| Set reaction to a message in a chat.|
 |[Unset reaction to a message in chat](../api/chatmessage-unsetreaction.md)|[chatMessage](chatmessage.md)| Unset reaction to a message in a chat.|
+|[Forward a message from a chat or channel to a chat](../api/chatmessage-forwardtochat.md)|[chatMessage](chatmessage.md)| Forward a message from a chat or channel to a chat.|
+|[Reply with quote to a message in chat](../api/chatmessage-replywithquote.md)|[chatMessage](chatmessage.md)| Reply with quote to a message in chat.|
 |**Hosted content**| | |
 |[List all hosted content](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted contents associated with a message.|
 |[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content (and its bytes) for a message.|

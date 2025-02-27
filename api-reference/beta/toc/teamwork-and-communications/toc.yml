@@ -979,10 +979,6 @@ items:
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in chat
         href: ../../api/chatmessage-unsetreaction.md
-      - name: Reply with quote in chat
-        href: ../../api/chatmessage-replywithquote.md
-      - name: Forward message to chat
-        href: ../../api/chatmessage-forwardtochat.md
     - name: Hosted content
       items:
       - name: List all hosted content
