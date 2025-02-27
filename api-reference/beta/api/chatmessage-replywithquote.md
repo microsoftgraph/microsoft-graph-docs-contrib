@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 ### Request
 
-The following example shows a request how to reply with quote to a message in a chat.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
