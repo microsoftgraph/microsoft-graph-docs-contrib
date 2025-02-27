@@ -9,7 +9,7 @@ ms.date: 12/06/2024
 
 # Import an Exchange mailbox item using the mailbox import and export APIs
 
-The mailbox import and export APIs allow you to import an Exchange [mailbox item](/graph/resources/mailboxitem) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
+The mailbox import and export APIs allow you to import an Exchange [mailbox item](/graph/api/resources/mailboxitem) using the [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format. Items can be restored to the same mailbox or a different one.
 
 This article describes the two steps required to perform the import process, with an example provided for each step. After successfully uploading the item, you get a response that contains the **itemId** and **changeKey**, which can be saved for later use.
 
@@ -17,7 +17,7 @@ This article describes the two steps required to perform the import process, wit
 
 [Create an import session](/graph/api/mailbox-createimportsession) to import an item in a folder in the mailbox.
 
-A successful operation returns a `HTTP 201 Created` response code and a new [mailboxItemImportSession](/graph/resources/mailboxitemimportsession) object in the response body, which contains an opaque **importUrl** that you can use in subsequent POST operations to upload items into a folder.
+A successful operation returns a `HTTP 201 Created` response code and a new [mailboxItemImportSession](/graph/api/resources/mailboxitemimportsession) object in the response body, which contains an opaque **importUrl** that you can use in subsequent POST operations to upload items into a folder.
 
 The **mailboxItemImportSession** object in the response also includes the **expirationDateTime** property that indicates the expiration date and time for the auth token embedded in the **importUrl** property value. After this time, the **importUrl** expires and is deleted.
 
@@ -69,7 +69,7 @@ Content-length: 232
 
 ## Step 2: Use the import URL to upload an item
 
-To import the item into the mailbox, make a POST request to the URL returned in the previous step in the **importUrl** property of the [mailboxItemImportSession](/graph/resources/mailboxitemimportsession) object.
+To import the item into the mailbox, make a POST request to the URL returned in the previous step in the **importUrl** property of the [mailboxItemImportSession](/graph/api/resources/mailboxitemimportsession) object.
 
 Specify the request body as described in the [Request body](#request-body) section.
 
@@ -89,7 +89,7 @@ Because the initial opaque URL is preauthenticated and contains the appropriate 
 
 ### Response
 
-If successful, this action returns a `200 OK` response code and an [importMailboxItemResponse](/graph/resources/importmailboxitemresponse) object in the response body.
+If successful, this action returns a `200 OK` response code and an **importMailboxItemResponse** object in the response body.
 
 ### Examples
 
@@ -102,7 +102,7 @@ The following example shows how to import a new item into the mailbox in `create
 The following example shows a request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "mailboxthis.importItemCreateMode"
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
@@ -123,7 +123,7 @@ POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/
 The following example shows the response.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.importMailboxItemResponse"
 }
@@ -149,7 +149,7 @@ The following example shows how to import a new version of an existing item into
 The following example shows a request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "mailboxthis.importItemUpdateMode"
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
@@ -171,7 +171,7 @@ POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/
 The following example shows the response.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.importMailboxItemResponse"
 }
