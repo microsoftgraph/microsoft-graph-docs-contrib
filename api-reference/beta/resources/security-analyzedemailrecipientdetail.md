@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details about the recipient(s) as mentioned in the mail
+Details about the recipient(s) as mentioned in the mail.
 
 ## Properties
 |Property|Type|Description|
