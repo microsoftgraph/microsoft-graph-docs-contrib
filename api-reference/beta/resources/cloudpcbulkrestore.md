@@ -28,10 +28,10 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 |id|String|ID of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 |ignoreUnhealthySnapshots|Boolean|`True` indicates that snapshots of unhealthy Cloud PCs are ignored. If no healthy snapshot exists within the selected **timeRange**, the healthy snapshot closest to the **restorePointDateTime** is used. `False` indicates that the snapshot within the selected **timeRange** and closest to the **restorePointDateTime** is used. The default value is `false`.|
 |initiatedByUserPrincipalName|String|Indicates the user principal name (UPN) of the user who initiated this bulk action. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|restorePointDateTime|DateTimeOffset|Indicates the date and time to restore selected Cloud PCs to. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
+|restorePointDateTime|DateTimeOffset|The date and time point for the selected Cloud PCs to restore. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk action is scheduled according to the maintenance window. When `true`, the bulk action uses the maintenance window to schedule the action; `false` means that the bulk action doesn't use the maintenance window. The default value is `false`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |status|[cloudPcBulkActionStatus](../resources/cloudpcbulkaction.md#cloudpcbulkactionstatus-values)|Indicates the status of bulk actions. Possible values are `pending`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|timeRange|restoreTimeRange|Indicates the time range of restore point. Value can be `before`, `after` or `beforeOrAfter`, default value is `before`.   |
+|timeRange|restoreTimeRange|Indicates the time range of the restore point. The possible values are: `before`, `after`, `beforeOrAfter`, `unknownFutureValue`. The default value is `before`.|
 
 ## Relationships
 None.
