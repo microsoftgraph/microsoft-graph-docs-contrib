@@ -125,6 +125,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-bulk-hardwareoathtokenauthenticationmethoddevice-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-bulk-hardwareoathtokenauthenticationmethoddevice-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-bulk-hardwareoathtokenauthenticationmethoddevice-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

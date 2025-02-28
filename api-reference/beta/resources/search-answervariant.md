@@ -14,7 +14,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an answer variant that can be used to change certain properties of a search answer based on country or platform.
+Represents an answer variant that can be used to change certain properties of a search answer based on country/region or platform.
 
 ## Properties
 

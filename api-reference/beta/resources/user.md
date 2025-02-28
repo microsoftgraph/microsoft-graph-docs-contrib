@@ -313,7 +313,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |MinorWithoutParentalConsent |(Reserved for future use)|
 |MinorWithParentalConsent| The user is considered a minor based on the age-related regulations of their country or region, and the administrator of the account has obtained appropriate consent from a parent or guardian.|
 |Adult|The user is considered an adult based on the age-related regulations of their country or region.|
-|NotAdult|The user is from a country or region that has additional age-related regulations (such as the United States, United Kingdom, European Union, or South Korea), and the user's age is between a minor and an adult age (as stipulated based on country or region). Generally, this means that teenagers are considered as `notAdult` in regulated countries.|
+|NotAdult|The user is from a country or region that has additional age-related regulations (such as the United States, United Kingdom, European Union, or South Korea), and the user's age is between a minor and an adult age (as stipulated based on country or region). Generally, this means that teenagers are considered as `notAdult` in regulated countries/regions.|
 |MinorNoParentalConsentRequired|The user is a minor but is from a country or region that has no age-related regulations.|
 
 #### ageGroup values

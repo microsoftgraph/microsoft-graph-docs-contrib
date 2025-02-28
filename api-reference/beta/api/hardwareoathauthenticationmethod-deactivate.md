@@ -104,6 +104,10 @@ POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{har
 [!INCLUDE [sample-code](../includes/snippets/php/hardwareoathauthenticationmethodthisdeactivate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/hardwareoathauthenticationmethodthisdeactivate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/hardwareoathauthenticationmethodthisdeactivate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

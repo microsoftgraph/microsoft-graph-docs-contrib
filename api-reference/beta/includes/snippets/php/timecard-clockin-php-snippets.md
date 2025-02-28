@@ -14,14 +14,11 @@ use Microsoft\Graph\Beta\Generated\Models\BodyType;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ClockInPostRequestBody();
+$requestBody->setIsAtApprovedLocation(true);
 $notes = new ItemBody();
 $notes->setContentType(new BodyType('text'));
 $notes->setContent('clocking in');
 $requestBody->setNotes($notes);
-$additionalData = [
-	'isAtApprovedLocation' => true,
-];
-$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timeCards()->clockIn()->post($requestBody)->wait();
 

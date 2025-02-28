@@ -59,7 +59,11 @@ If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
-### Request
+### Example 1: Add search with linked files and the latest cloud attachment version
+
+The following example shows how to add search to the review set and include the latest version of files shared as links.
+
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -73,10 +77,11 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 Content-Type: application/json
 
 {
-    "search": {
-        "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
-    },
-    "additionalDataOptions": "linkedFiles"
+  "search": {
+    "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
+  },
+  "additionalDataOptions": "linkedFiles",
+  "cloudAttachmentVersion": "latest"
 }
 ```
 
@@ -114,7 +119,46 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+```
+
+### Example 2: Add search with all data options and the latest cloud and document versions
+
+The following example shows how to add search to the review set with all options selected for **additionalDataOptions**, the 10 most recent versions selected for documents, and the latest version selected for cloud attachments.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "ediscoveryreviewsetthis.addtoreviewset_2"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/addToReviewSet
+Content-Type: application/json
+
+{
+  "search": {
+    "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
+  },
+  "additionalDataOptions": "linkedFiles, allVersions, advancedIndexing, listAttachments, htmlTranscripts, messageConversationExpansion, locationsWithoutHits, allItemsInFolder",
+  "cloudAttachmentVersion": "latest",
+  "documentVersion": "recent10"
+}
+```
+
+#### Response
 The following example shows the response.
 
 <!-- {

@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "852b5456-83eb-4c88-804b-d6ee5d720fe5",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Deletion",
+          "Description": "Removed the following methods for retrieving custom authentication extension objects: `GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionStartListener/handler/microsoft.graph.onAttributeCollectionStartCustomExtensionHandler/customExtension`, `GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension` , `GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.OnEmailOtpSendListener/handler/microsoft.graph.OnOtpSendCustomExtensionHandler/customExtension`. Use the [GET /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}](https://learn.microsoft.com/en-us/graph/api/customauthenticationextension-get?view=graph-rest-beta) operation instead.",
+          "Target": "customAuthenticationExtension"
+        },
+        {
+          "Id": "852b5456-83eb-4c88-804b-d6ee5d720fe5",
+          "ApiChange": "Method",
+          "ChangedApiName": "PUT",
+          "ChangeType": "Deletion",
+          "Description": "Removed the following methods for updating custom authentication extension objects: `PUT /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionStartListener/handler/microsoft.graph.onAttributeCollectionStartCustomExtensionHandler/customExtension/$ref` , `PUT /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension/$ref` , `PUT /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onEmailOtpSendListener/handler/microsoft.graph.onOtpSendCustomExtensionHandler/customExtension/$ref`. Use the [PATCH /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}](https://learn.microsoft.com/en-us/graph/api/customauthenticationextension-update?view=graph-rest-beta) operation instead.",
+          "Target": "customAuthenticationExtension"
+        }
+      ],
+      "Id": "852b5456-83eb-4c88-804b-d6ee5d720fe5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-02-07T21:28:16.00536Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "156e4486-869a-419d-b8cb-2d32348859bc",
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionBehaviorOnError",
@@ -949,6 +975,80 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-05-06T09:05:40.4087924Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartExternalUsersAuthHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPhoneMethodLoadStartExternalUsersAuthHandler](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartExternalUsersAuthHandler?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartExternalUsersAuthHandler"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartExternalUsersAuthHandler",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [onPhoneMethodLoadStartExternalUsersAuthHandler](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartExternalUsersAuthHandler?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartExternalUsersAuthHandler"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPhoneMethodLoadStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartHandler?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartHandler"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartHandler",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [onPhoneMethodLoadStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartHandler?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartHandler"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "phoneOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [phoneOptions](https://learn.microsoft.com/en-us/graph/api/resources/phoneOptions?view=graph-rest-beta) resource.",
+          "Target": "phoneOptions"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "phoneOptions",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [phoneOptions](https://learn.microsoft.com/en-us/graph/api/resources/phoneOptions?view=graph-rest-beta) resource.",
+          "Target": "phoneOptions"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPhoneMethodLoadStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartListener?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartListener"
+        },
+        {
+          "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPhoneMethodLoadStartListener",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [onPhoneMethodLoadStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onPhoneMethodLoadStartListener?view=graph-rest-beta) resource.",
+          "Target": "onPhoneMethodLoadStartListener"
+        }
+      ],
+      "Id": "517555bf-c19c-4de8-aac9-ab757b46e120",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-14T23:24:21.7328074Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }
