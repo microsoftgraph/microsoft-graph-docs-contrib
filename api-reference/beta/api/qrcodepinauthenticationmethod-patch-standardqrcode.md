@@ -1,20 +1,20 @@
 ---
-title: "Update qrCodePinAuthenticationMethod"
-description: "Update the properties of a qrCodePinAuthenticationMethod object."
+title: "Create qrCode"
+description: "Create a new qrCode object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.date: 02/25/2025
+ms.date: 02/27/2025
 ms.localizationpriority: medium
 ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType
 ---
 
-# Update qrCodePinAuthenticationMethod
+# Create qrCode
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a qrCodePinAuthenticationMethod object.
+Create a new qrCode object.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod
+POST /authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod/standardQRCode
 ```
 
 ## Request headers
@@ -46,21 +46,24 @@ PATCH /authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathD
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [qrCode](../resources/qrcode.md) object.
 
+You can specify the following properties when creating a **qrCode**.
 
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.strongAuthentication.authenticationMethod](../resources/authenticationmethod.md). Optional.|
-|isUsable|Boolean|**TODO: Add Description** Inherited from [microsoft.strongAuthentication.authenticationMethod](../resources/authenticationmethod.md). Optional.|
-|methodUsabilityReason|String|**TODO: Add Description** Inherited from [microsoft.strongAuthentication.authenticationMethod](../resources/authenticationmethod.md). Optional.|
+|expireDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|startDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|lastUsedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|image|[microsoft.strongAuthentication.qrCodeImageDetails](../resources/qrcodeimagedetails.md)|**TODO: Add Description** Optional.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [qrCode](../resources/qrcode.md) object in the response body.
 
 ## Examples
 
@@ -69,17 +72,21 @@ If successful, this method returns a `200 OK` response code and an updated [qrCo
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_qrcodepinauthenticationmethod"
+  "name": "create_qrcode_from_"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod
+POST https://graph.microsoft.com/beta/authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod/standardQRCode
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethod",
-  "isUsable": "Boolean",
-  "methodUsabilityReason": "String"
+  "@odata.type": "#microsoft.graph.qrCode",
+  "expireDateTime": "String (timestamp)",
+  "startDateTime": "String (timestamp)",
+  "lastUsedDateTime": "String (timestamp)",
+  "image": {
+    "@odata.type": "microsoft.graph.qrCodeImageDetails"
+  }
 }
 ```
 
@@ -90,18 +97,23 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.qrCode"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethod",
-  "id": "da1e549e-ff15-58f8-d365-b228c2b10009",
+  "@odata.type": "#microsoft.graph.qrCode",
+  "id": "cb960eac-7a22-1979-ec68-1ec73264ae8d",
+  "expireDateTime": "String (timestamp)",
+  "startDateTime": "String (timestamp)",
   "createdDateTime": "String (timestamp)",
-  "isUsable": "Boolean",
-  "methodUsabilityReason": "String"
+  "lastUsedDateTime": "String (timestamp)",
+  "image": {
+    "@odata.type": "microsoft.graph.qrCodeImageDetails"
+  }
 }
 ```
