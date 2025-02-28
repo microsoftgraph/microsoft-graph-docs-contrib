@@ -49,7 +49,13 @@ POST /storage/fileStorage/containers/{containerId}/recycleBin/items/restore
 
 ## Request body
 
-In the request body, supply a JSON representation of the [recycleBinItem](../resources/recyclebinitem.md) objects to restore.
+In the request body, supply a JSON representation of the parameters.
+
+The following table shows the parameters that you can use with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|ids|Collection(String)|The IDs of the [recycleBinItem](../resources/recyclebinitem.md) objects to restore. Required.|
 
 ## Response
 
