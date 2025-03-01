@@ -39,12 +39,12 @@ Represents a policy that can control Microsoft Entra authorization settings. It'
 
 ### allowInvitesFrom values
 
-|Member|Description|
-|:---|:---|
-|none|Prevent everyone, including admins, from inviting guests. Default setting for US Government.|
-|adminsAndGuestInviters|Allow members of *Global Administrator*, *User Administrator*, and *Guest Inviter* roles to invite guests.|
-|adminsGuestInvitersAndAllMembers|Allow the above admin roles and all other User role members to invite guests.|
-|everyone|Allow everyone in the organization, including guests, to invite guests. The default setting for all cloud environments except US Government.|
+|Member|Value|Description|
+|:---|:---|:---|
+|none|0|Prevent everyone, including admins, from inviting guests. Default setting for US Government.|
+|adminsAndGuestInviters|1|Allow members of *Global Administrator*, *User Administrator*, and *Guest Inviter* roles to invite guests.|
+|adminsGuestInvitersAndAllMembers|2|Allow the above admin roles and all other User role members to invite guests.|
+|everyone|3|Allow everyone in the organization, including guests, to invite guests. The default setting for all cloud environments except US Government.|
 
 ## Relationships
 
