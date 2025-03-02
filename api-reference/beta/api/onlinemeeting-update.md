@@ -284,9 +284,8 @@ Content-Type: application/json
 ---
 
 #### Response
-
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -332,7 +331,7 @@ Content-Type: application/json
 
 ### Example 3: Update the isEndToEndEncryptionEnabled
 
-The following example shows how to update the **isEndToEndEncryptionEnabled** property.
+The following example shows how to enable end-to-end encryption on an existing online meeting.
 
 > **Note:** This property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For more information, see [Require end-to-end encryption for sensitive Teams meetings](/microsoftteams/end-to-end-encrypted-meetings).
 
