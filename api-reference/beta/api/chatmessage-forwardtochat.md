@@ -20,11 +20,10 @@ Forward a [chat message](../resources/chatmessage.md), a [channel message](../re
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions for forwardToChat
 <!-- { "blockType": "permissions", "name": "chatmessage_forwardtochat" } -->
-[!INCLUDE [permissions-table](../includes/permissions/chatmessage.md)]
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage-forwardtochat-permissions.md)]
 
 ## HTTP request
 
@@ -77,37 +76,48 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Forward message from a chat to a chat
+### Example 1: Forward a message from a chat to a chat
+
+The following example shows how to forward a message from a chat to a chat.
 
 #### Request
 
-# [HTTP](#tab/http)
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "chatmessage.forwardToChat",
   "sampleKeys": ["19:97641583cf154265a237da28ebbde27a@thread.v2"]
 }
 -->
-
 ```http
 POST https://graph.microsoft.com/beta/chats/19:97641583cf154265a237da28ebbde27a@thread.v2/messages/forwardToChat
 Content-Type: application/json
 
 {
-    "targetChatIds": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2"],
-    "messageIds": ["1728088338580"],
-    "additionalMessage": {
-        "body": {
-            "content": "Hello World"
-        }
+  "targetChatIds": [
+    "19:e2ed97baac8e4bffbb91299a38996790@thread.v2"
+  ],
+  "messageIds": [
+    "1728088338580"
+  ],
+  "additionalMessage": {
+    "body": {
+      "content": "Hello World"
     }
+  }
 }
 ```
 
 #### Response
 
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.forwardToChatResult)"
 } -->
 
 ``` http
@@ -115,49 +125,60 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.forwardToChatResult)",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.forwardToChatResult",
-            "targetChatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
-            "forwardedMessageId": "1730918320559",
-            "error": null
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.forwardToChatResult)",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.forwardToChatResult",
+      "targetChatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+      "forwardedMessageId": "1730918320559",
+      "error": null
+    }
+  ]
 }
 ```
 
-### Example 2: Forward message from a channel to a chat
+### Example 2: Forward a message from a channel to a chat
+
+The following example shows how to forward a message from a channel to a chat.
 
 #### Request
 
-# [HTTP](#tab/http)
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "chatmessage.forwardToChat",
-  "sampleKeys": ["19:97641583cf154265a237da28ebbde27a@thread.v2"]
+  "sampleKeys": ["1e769eab-06a8-4b2e-ac42-1f040a4e52a1","19:b6343216390d46cba965fe36bd877674@thread.tacv2"]
 }
 -->
-
 ```http
 POST https://graph.microsoft.com/beta/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/channels/19:b6343216390d46cba965fe36bd877674@thread.tacv2/messages/forwardToChat
 Content-Type: application/json
 
 {
-    "targetChatIds": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2"],
-    "messageIds": ["1728088338580"],
-    "additionalMessage": {
-        "body": {
-            "content": "Hello World"
-        }
+  "targetChatIds": [
+    "19:e2ed97baac8e4bffbb91299a38996790@thread.v2"
+  ],
+  "messageIds": [
+    "1728088338580"
+  ],
+  "additionalMessage": {
+    "body": {
+      "content": "Hello World"
     }
+  }
 }
 ```
 
 #### Response
 
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.forwardToChatResult)"
 } -->
 
 ``` http
@@ -165,64 +186,74 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.forwardToChatResult)",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.forwardToChatResult",
-            "targetChatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
-            "forwardedMessageId": "1730918320559",
-            "error": null
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.forwardToChatResult)",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.forwardToChatResult",
+      "targetChatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+      "forwardedMessageId": "1730918320559",
+      "error": null
+    }
+  ]
 }
 ```
 
-### Example 3:  Forward reply message from a channel to a chat
+### Example 3: Forward a reply message from a channel to a chat
+
+The following example shows how to forward a reply message from a channel to a chat.
 
 #### Request
 
-# [HTTP](#tab/http)
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "chatmessage.forwardToChat",
-  "sampleKeys": ["19:97641583cf154265a237da28ebbde27a@thread.v2"]
+  "sampleKeys": ["1e769eab-06a8-4b2e-ac42-1f040a4e52a1", "19:b6343216390d46cba965fe36bd877674@thread.tacv2", "1727810802267"]
 }
 -->
-
 ```http
 POST https://graph.microsoft.com/beta/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/channels/19:b6343216390d46cba965fe36bd877674@thread.tacv2/messages/1727810802267/replies/forwardToChat
 Content-Type: application/json
 
 {
-    "targetChatIds": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2"],
-    "messageIds": ["1728088338580"],
-    "additionalMessage": {
-        "body": {
-            "content": "Hello World"
-        }
+  "targetChatIds": [
+    "19:e2ed97baac8e4bffbb91299a38996790@thread.v2"
+  ],
+  "messageIds": [
+    "1728088338580"
+  ],
+  "additionalMessage": {
+    "body": {
+      "content": "Hello World"
     }
+  }
 }
 ```
 
 #### Response
 
-<!-- {
-  "blockType": "response"
-} -->
+The following example shows the response.
 
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.forwardToChatResult)"
+} -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.forwardToChatResult)",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.forwardToChatResult",
-            "targetChatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
-            "forwardedMessageId": "1730918320559",
-            "error": null
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.forwardToChatResult)",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.forwardToChatResult",
+      "targetChatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+      "forwardedMessageId": "1730918320559",
+      "error": null
+    }
+  ]
 }
 ```
