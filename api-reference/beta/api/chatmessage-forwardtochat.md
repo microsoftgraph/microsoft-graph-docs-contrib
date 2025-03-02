@@ -44,7 +44,7 @@ Forward a **chatMessage** in a **channel** to a **chat**:
 }
 -->
 ``` http
-POST /teams/{teamsId}/channels/{channelId}/messages/forwardToChat
+POST /teams/{teamId}/channels/{channelId}/messages/forwardToChat
 POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/forwardToChat
 ```
 
