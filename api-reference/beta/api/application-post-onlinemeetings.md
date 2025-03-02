@@ -589,7 +589,7 @@ Content-Type: application/json
 
 ### Example 5: Enable policy isEndToEndEncryptionEnabled into existing meeting
 
-The following example shows how to create an encrypted online meeting.
+The following example shows how to create an online meeting that is end-to-end encrypted.
 
 > **Note:** This property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For details, see [Require end-to-end encryption for sensitive Teams meetings](/MicrosoftTeams/end-to-end-encrypted-meetings).
 
