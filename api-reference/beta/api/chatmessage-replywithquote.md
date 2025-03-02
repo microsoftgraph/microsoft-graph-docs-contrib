@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |messageIds|String collection|List of message IDs in a chat that are replied to with a quote. |
-|replyMessage|[chatMessage](../resources/chatmessage.md) object|The message body for the reply. |
+|replyMessage|[chatMessage](../resources/chatmessage.md)|The message body for the reply. |
 
 ## Response
 

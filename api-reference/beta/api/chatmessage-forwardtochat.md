@@ -86,7 +86,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "chatmessage.forwardToChat",
+  "name": "chatmessage.forwardMessage_from_chat_to_chat",
   "sampleKeys": ["19:97641583cf154265a237da28ebbde27a@thread.v2"]
 }
 -->
@@ -147,7 +147,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "chatmessage.forwardToChat",
+  "name": "chatmessage.forwardMessage_from_channel_to_chat",
   "sampleKeys": ["1e769eab-06a8-4b2e-ac42-1f040a4e52a1","19:b6343216390d46cba965fe36bd877674@thread.tacv2"]
 }
 -->
@@ -208,7 +208,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "chatmessage.forwardToChat",
+  "name": "chatmessage.forwardReplyMessage_from_channel_to_chat",
   "sampleKeys": ["1e769eab-06a8-4b2e-ac42-1f040a4e52a1", "19:b6343216390d46cba965fe36bd877674@thread.tacv2", "1727810802267"]
 }
 -->
