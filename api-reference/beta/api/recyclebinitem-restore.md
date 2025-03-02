@@ -55,7 +55,7 @@ The following table shows the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ids|Collection(String)|The IDs of the [recycleBinItem](../resources/recyclebinitem.md) objects to restore. Required.|
+|ids|String collection|The IDs of the [recycleBinItem](../resources/recyclebinitem.md) objects to restore. Required.|
 
 ## Response
 

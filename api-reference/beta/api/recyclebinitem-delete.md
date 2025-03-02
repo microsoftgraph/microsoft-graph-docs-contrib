@@ -54,7 +54,7 @@ The following table shows the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ids|Collection(String)|The IDs of the [recycleBinItem](../resources/recyclebinitem.md) objects to delete. Required.|
+|ids|String collection|The IDs of the [recycleBinItem](../resources/recyclebinitem.md) objects to delete. Required.|
 
 ## Response
 
@@ -88,12 +88,10 @@ Content-Type: application/json
 
 ---
 
----
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
