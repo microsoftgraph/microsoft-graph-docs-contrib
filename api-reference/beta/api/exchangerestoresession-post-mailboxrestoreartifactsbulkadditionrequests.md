@@ -16,7 +16,13 @@ Namespace: microsoft.graph
 
 Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
-The initial status upon creation of the restore session is `active`. When all the mailboxes are added to the corresponding Exchange restore session and the restore session is activated, the status becomes `completed`. If any failures are encountered during resource resolution, the status of the restore session becomes `completedWithErrors`.
+The following steps describe how to create and manage an **exchangeRestoreSession** with bulk artifact additions:
+
+1. Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md) with empty payload.
+1. Create a new [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object associated with an [exchangeRestoreSession](../resources/exchangerestoresession.md).
+1. Get the status of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) for the Exchange restore session. The initial status upon creation is `active` and remains in this state until the [exchangeRestoreSession](../resources/exchangerestoresession.md) is activated.
+1. Activate the [exchangeRestoreSession](../resources/exchangerestoresession.md) created in the first step.
+1. Monitor the status of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md). When all the emails are added to the corresponding [exchangeRestoreSession](../resources/exchangerestoresession.md), the status of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) changes to `completed`. If any failures occur during resource resolution, the status changes to `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -52,9 +58,18 @@ POST /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}
 
 In the request body, supply a JSON representation of the [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object.
 
+You can specify the following properties when you create a **mailboxRestoreArtifactsBulkAdditionRequest** object.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|directoryObjectIds|String collection|The list of directory object IDs. Optional.|
+|mailboxes|String collection|The list of email addresses. Optional.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [mailboxRestoreArtifactsBulkAdditionRequest](../resources/mailboxrestoreartifactsbulkadditionrequest.md) object in the response body.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 

@@ -14,7 +14,7 @@
       "Id": "9691c063-a19a-4ceb-a004-c00663d25264",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-02-15T15:52:02.6103372Z",
+      "CreatedDateTime": "2025-03-03T15:52:02.6103372Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
@@ -32,7 +32,33 @@
       "Id": "3a0c0098-608e-4972-9681-39d51db08ef0",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2025-02-15T15:52:02.6103372Z",
+      "CreatedDateTime": "2025-03-03T15:52:02.6103372Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "584a312d-86ac-4622-bc31-0c1651362206",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Sites.Archive.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Sites.Archive.All` to the [site: archive](https://learn.microsoft.com/en-us/graph/api/site-archive?view=graph-rest-beta) method.",
+          "Target": "archive"
+        },
+        {
+          "Id": "584a312d-86ac-4622-bc31-0c1651362206",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Sites.Archive.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Sites.Archive.All` to the [site: unarchive](https://learn.microsoft.com/en-us/graph/api/site-unarchive?view=graph-rest-beta) method.",
+          "Target": "unarchive"
+        }
+      ],
+      "Id": "584a312d-86ac-4622-bc31-0c1651362206",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-02-19T15:52:02.6103372Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
