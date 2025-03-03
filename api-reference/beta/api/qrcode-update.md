@@ -1,20 +1,20 @@
 ---
-title: "Create qrCode"
-description: "Create a new qrCode object."
+title: "Update qrCode"
+description: "Update the properties of a qrCode object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.date: 02/27/2025
+ms.date: 03/03/2025
 ms.localizationpriority: medium
 ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType
 ---
 
-# Create qrCode
+# Update qrCode
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new qrCode object.
+Update the properties of a qrCode object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "qrcodepinauthenticationmethod-update-permissions"
+  "name": "qrcode-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/qrcode-update-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod/temporaryQRCode
+PATCH /authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod/standardQRCode
+PATCH /authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod/temporaryQRCode
 ```
 
 ## Request headers
@@ -46,9 +47,8 @@ POST /authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDe
 
 ## Request body
 
-In the request body, supply a JSON representation of the [qrCode](../resources/qrcode.md) object.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-You can specify the following properties when creating a **qrCode**.
 
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
@@ -63,7 +63,7 @@ You can specify the following properties when creating a **qrCode**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [qrCode](../resources/qrcode.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [qrCode](../resources/qrcode.md) object in the response body.
 
 ## Examples
 
@@ -72,11 +72,11 @@ If successful, this method returns a `201 Created` response code and a [qrCode](
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_qrcode_from_"
+  "name": "update_qrcode"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod/temporaryQRCode
+PATCH https://graph.microsoft.com/beta/authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod/standardQRCode
 Content-Type: application/json
 
 {
@@ -97,12 +97,11 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.qrCode"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
