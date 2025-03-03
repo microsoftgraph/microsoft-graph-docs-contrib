@@ -21,18 +21,12 @@ Create a new [sharePointGroup](../resources/sharepointgroup.md) object. The shar
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "permissions",
   "name": "filestoragecontainer-post-sharepointgroups-permissions"
 }
 -->
 
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-post-sharepointgroups-permissions.md)]
-
-| Permission type                        | Least privileged permissions  | Higher privileged permissions |
-| :------------------------------------- | :---------------------------- | :---------------------------- |
-| Delegated (work or school account)     | Not supported.                | Not supported.                |
-| Delegated (personal Microsoft account) | Not supported.                | Not supported.                |
-| Application                            | FileStorageContainer.Selected | Not available.                |
 
 > [!Note]
 > In addition to Microsoft Graph permissions, applications calling this API must at least have the `AddPermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#Authorization).
