@@ -121,7 +121,7 @@ The following example shows how to use the `notificationUrl` with socket.io in J
   
   // 'io' comes from the socket.io client library
   var socket = io(notificationUrl, {
-    transports: ['websocket'] // Make sure to use "websocket" as the default is set to "polling" which is not supported
+    transports: ['websocket'] // Make sure to use "websocket" instead of the default value of "polling" which isn't supported
   });
   
   socket.on("connect", () => {
