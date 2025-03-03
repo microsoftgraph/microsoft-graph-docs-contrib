@@ -14,13 +14,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents open extension, an extensibility option that provides an easy way to directly add untyped properties to a resource in Microsoft Graph.
+Represents open extension, an [extensibility option](/graph/extensibility-overview) that provides an easy way to directly add untyped properties to a resource in Microsoft Graph.
 
 Any open extension added to a resource shows up in the extensions navigation property. Each extension has an extensionName property which is the only pre-defined, writable property for all extensions, along with your custom data.
 
 An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).
 
 Inherits from [entity](../resources/entity.md)
+
+### Considerations
+Apply the following limits when you create extension resources:
+
+- Maximum of 100 custom extensions per item/file, totaled from all apps.
+- Maximum of 5 custom extensions per App Id.
+- Maximum of 50 KB size per extension. 
+- Maximum of 50MB for all extensions on all items.
 
 ## Methods
 |Method|Return type|Description|
@@ -33,7 +41,6 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| extensionName | string | A unique text identifier for an open type data extension.
 | id            | string | A fully qualified identifier that concatenates the extension type with the extensionName. Read-only.
 
 ## Relationships
