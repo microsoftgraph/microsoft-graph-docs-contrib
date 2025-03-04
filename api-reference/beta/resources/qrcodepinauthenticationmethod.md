@@ -24,11 +24,11 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Create](../api/authentication-put-qrcodepinmethod.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Create a new qrCodePinAuthenticationMethod object.|
-|[Get](../api/qrcodepinauthenticationmethod-get.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Read the properties and relationships of a qrCodePinAuthenticationMethod object.|
-|[Create a QRCode](../api/qrpin-updatepin.md)|[qrCode](../resources/qrcode.md)|Create a new qrCode object.|
-|[Create a QRCode](../api/qrcodepinauthenticationmethod-delete-standardqrcode.md)|None|Delete a QRCode object.|
-|[Update qrPin](../api/qrpin-updatepin.md)|[qrPin](../resources/qrpin.md)|Create a new qrPin object.|
-|[Delete](../api/authentication-delete-qrcodepinmethod.md)|None|Delete a qrCodePinAuthenticationMethod object.|
+|[Get](../api/qrcodepinauthenticationmethod-get.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Read the properties and relationships of a user's qrCodePinAuthenticationMethod object.|
+|[Create a Standard QR code](../api/qrpin-updatepin.md)|[qrCode](../resources/qrcode.md)|Create a user's new qrCode object.|
+|[Delete a Standard QR code](../api/qrcodepinauthenticationmethod-delete-standardqrcode.md)|None|Delete a users' QRCode object.|
+|[Update Pin](../api/qrpin-updatepin.md)|[qrPin](../resources/qrpin.md)|Create a new user's Pin object.|
+|[Delete](../api/authentication-delete-qrcodepinmethod.md)|None|Delete a user's qrCodePinAuthenticationMethod object.|
 
 ## Properties
 |Property|Type|Description|
