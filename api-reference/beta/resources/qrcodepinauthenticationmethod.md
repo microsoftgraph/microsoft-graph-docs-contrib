@@ -27,6 +27,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |[Create](../api/authentication-put-qrcodepinmethod.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Create a user's new standardQRCode object.|
 |[Create a QRCode](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a user's new QRCode object.|
 |[Update a QRCode](../api/qrcode-update.md)|None|Update a user's new QRCode object.|
+|[Delete a QRCode](../api/qrcode-delete.md)|None|Delete a user's new QRCode object.|
 |[Update qrPin](../api/qrpin-updatepin.md)|[qrPin](../resources/qrpin.md)|Changing a user's qrPin.|
 |[Reset qrPin](../api/qrcodepinauthenticationmethod-patch-pin.md)|[qrPin](../resources/qrpin.md)|Reset a user's qrPin.|
 |[Delete](../api/authentication-delete-qrcodepinmethod.md)|None|Delete a user's qrCodePinAuthenticationMethod object.|
