@@ -16,7 +16,7 @@ import (
 )
 
 requestParameters := &graphsites.ItemListsItemItemsRequestBuilderGetQueryParameters{
-	Expand: [] string {"fields($select=Name,Color,Quantity)"},
+	Expand: [] string {"fields(select=Name,Color,Quantity)"},
 }
 configuration := &graphsites.ItemListsItemItemsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
