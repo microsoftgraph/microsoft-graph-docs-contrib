@@ -10,14 +10,15 @@ from msgraph_beta.generated.security.cases.ediscoverycases.item.searches.item.mi
 from msgraph_beta.generated.models.export_criteria import ExportCriteria
 from msgraph_beta.generated.models.export_location import ExportLocation
 from msgraph_beta.generated.models.additional_options import AdditionalOptions
+from msgraph_beta.generated.models.cloud_attachment_version import CloudAttachmentVersion
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ExportReportPostRequestBody(
 	display_name = "Export 5",
 	export_criteria = ExportCriteria.PartiallyIndexed,
 	export_location = ExportLocation.ResponsiveLocations,
 	additional_options = AdditionalOptions.CloudAttachments,
+	cloud_attachment_version = CloudAttachmentVersion.All,
 	additional_data = {
-			"cloud_attachment_version" : "all",
 			"doucment_version" : "recent100",
 	}
 )

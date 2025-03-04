@@ -10,6 +10,7 @@ use Microsoft\Graph\Beta\Generated\Security\Cases\EdiscoveryCases\Item\Searches\
 use Microsoft\Graph\Beta\Generated\Models\Security\ExportCriteria;
 use Microsoft\Graph\Beta\Generated\Models\Security\ExportLocation;
 use Microsoft\Graph\Beta\Generated\Models\Security\AdditionalOptions;
+use Microsoft\Graph\Beta\Generated\Models\Security\CloudAttachmentVersion;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -19,8 +20,8 @@ $requestBody->setDisplayName('Export 5');
 $requestBody->setExportCriteria(new ExportCriteria('partiallyIndexed'));
 $requestBody->setExportLocation(new ExportLocation('responsiveLocations'));
 $requestBody->setAdditionalOptions(new AdditionalOptions('cloudAttachments'));
+$requestBody->setCloudAttachmentVersion(new CloudAttachmentVersion('all'));
 $additionalData = [
-	'cloudAttachmentVersion' => 'all',
 	'doucmentVersion' => 'recent100',
 ];
 $requestBody->setAdditionalData($additionalData);
