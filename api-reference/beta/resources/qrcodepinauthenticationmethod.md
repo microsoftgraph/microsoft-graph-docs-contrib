@@ -23,20 +23,20 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/authentication-put-qrcodepinmethod.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Create a new qrCodePinAuthenticationMethod object.|
-|[Get](../api/qrcodepinauthenticationmethod-get.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Read the properties and relationships of a qrCodePinAuthenticationMethod object.|
-|[Create a QRCode](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a new qrCode object.|
-|[Update a QRCode](../api/qrcode-update.md)|None|Delete a QRCode object.|
-|[Update qrPin](../api/qrpin-updatepin.md)|[qrPin](../resources/qrpin.md)|Changing qrPin.|
-|[Delete](../api/authentication-delete-qrcodepinmethod.md)|None|Delete a qrCodePinAuthenticationMethod object.|
+|[Get](../api/qrcodepinauthenticationmethod-get.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Read the properties and relationships of a user's qrCodePinAuthenticationMethod object.|
+|[Create](../api/authentication-put-qrcodepinmethod.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Create a user's new standardQRCode object.|
+|[Create a QRCode](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a user's new QRCode object.|
+|[Update a QRCode](../api/qrcode-update.md)|None|Update a user's new QRCode object.|
+|[Update qrPin](../api/qrpin-updatepin.md)|[qrPin](../resources/qrpin.md)|Changing a user's qrPin.|
+|[Delete](../api/authentication-delete-qrcodepinmethod.md)|None|Delete a user's qrCodePinAuthenticationMethod object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
-|id|String|**TODO: Add Description** Inherited from [authenticationMethod](../resources/authenticationmethod.md). Inherits from [entity](../resources/entity.md)|
-|isUsable|Boolean|**TODO: Add Description** Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
-|methodUsabilityReason|String|**TODO: Add Description** Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
+|createdDateTime|DateTimeOffset|The date and time when the QR code auth was created. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
+|id|String|The identifier of the QR code auth added to this user. Inherited from [authenticationMethod](../resources/authenticationmethod.md). Inherits from [entity](../resources/entity.md)|
+|isUsable|Boolean|The state of the authentication method that indicates whether it's currently usable by the user. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
+|methodUsabilityReason|String|Details about the usability state (isUsable). Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, OneTimeUsed. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 
 ## Relationships
 |Relationship|Type|Description|
