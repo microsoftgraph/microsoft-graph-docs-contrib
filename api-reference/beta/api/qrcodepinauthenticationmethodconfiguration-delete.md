@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /qrCodePinAuthenticationMethodConfiguration
+DELETE /policies/authenticationmethodspolicy/authenticationmethodconfigurations/qrcodepin
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/qrCodePinAuthenticationMethodConfiguration
+DELETE https://graph.microsoft.com/beta//beta/policies/authenticationmethodspolicy/authenticationmethodconfigurations/qrcodepin
 ```
 
 

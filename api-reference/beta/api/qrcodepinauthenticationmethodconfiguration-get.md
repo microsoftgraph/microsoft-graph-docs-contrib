@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /qrCodePinAuthenticationMethodConfiguration
+GET /policies/authenticationmethodspolicy/authenticationmethodconfigurations/qrcodepin
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/qrCodePinAuthenticationMethodConfiguration
+GET https://graph.microsoft.com/beta/policies/authenticationmethodspolicy/authenticationmethodconfigurations/qrcodepin
 ```
 
 
@@ -87,15 +87,15 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethodConfiguration",
-    "id": "1af5ba53-5a47-d528-0130-c616cd99ddc6",
-    "state": "String",
+    "id": "QRCodePin",
+    "state": "disabled",
     "excludeTargets": [
       {
         "@odata.type": "microsoft.graph.excludeTarget"
       }
     ],
-    "standardQRCodeLifetimeInDays": "Integer",
-    "pinLength": "Integer"
+    "standardQRCodeLifetimeInDays": 365,
+    "pinLength": 8
   }
 }
 ```
