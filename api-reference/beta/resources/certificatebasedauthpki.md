@@ -38,7 +38,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |deletedDateTime|DateTimeOffset|The date and time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
-|displayName|String|The name of the object.|
+|displayName|String|The name of the object.Maximum length is 256 characters.|
 |id|String|The ID of the object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the object was created or last modified.|
 |status|String|The status of any asynchronous jobs runs on the object which can be upload or delete.|
