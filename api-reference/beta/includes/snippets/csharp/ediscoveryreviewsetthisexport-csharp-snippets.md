@@ -14,8 +14,8 @@ var requestBody = new ExportPostRequestBody
 {
 	OutputName = "Export via API",
 	Description = "Export for the Contoso investigation",
-	ExportOptions = ExportOptions.OriginalFiles | ExportOptions.FileInfo | ExportOptions.Tags,
-	ExportStructure = ExportFileStructure.Directory,
+	ExportOptions = ExportOptions.OriginalFiles | ExportOptions.Tags | ExportOptions.SplitSource | ExportOptions.IncludeFolderAndPath | ExportOptions.FriendlyName | ExportOptions.CondensePaths | ExportOptions.OptimizedPartitionSize,
+	ExportStructure = ExportFileStructure.Msg,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -10,7 +10,6 @@ from msgraph_beta.generated.security.cases.ediscoverycases.item.reviewsets.item.
 from msgraph_beta.generated.models.security.ediscovery_search import EdiscoverySearch
 from msgraph_beta.generated.models.additional_data_options import AdditionalDataOptions
 from msgraph_beta.generated.models.cloud_attachment_version import CloudAttachmentVersion
-from msgraph_beta.generated.models.document_version import DocumentVersion
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AddToReviewSetPostRequestBody(
 	search = EdiscoverySearch(
@@ -18,7 +17,6 @@ request_body = AddToReviewSetPostRequestBody(
 	),
 	additional_data_options = AdditionalDataOptions.LinkedFiles,
 	cloud_attachment_version = CloudAttachmentVersion.Latest,
-	document_version = DocumentVersion.Recent10,
 )
 
 await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').review_sets.by_ediscovery_review_set_id('ediscoveryReviewSet-id').microsoft_graph_security_add_to_review_set.post(request_body)
