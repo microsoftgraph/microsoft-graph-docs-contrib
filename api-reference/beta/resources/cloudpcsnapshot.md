@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |cloudPcId|String|The unique identifier for the Cloud PC.|
 |createdDateTime|DateTimeOffset|The date and time at which the snapshot was taken. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|expirationDateTime|DateTimeOffset| The date and time when the snapshot expires. The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|expirationDateTime|DateTimeOffset| The date and time when the snapshot expires. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |healthCheckStatus|[cloudPcSnapshotHealthCheckStatus](#cloudpcsnapshothealthcheckstatus-values)|Indicates the health check status of the Cloud PC snapshot. Possible values are, `unknown`, `healthy`, `unhealthy`, `unknownFutureValue`. The default value is `unknown`. Read-only. Nullable.|
 |id|String|The unique identifier for the snapshot of the Cloud PC device at a specific point in time. Inherited from [entity](../resources/entity.md).|
 |lastRestoredDateTime|DateTimeOffset|The date and time at which the snapshot was last used to restore the Cloud PC device. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
@@ -81,11 +81,11 @@ The following JSON representation shows the resource type.
   "cloudPcId": "String",
   "createdDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)",
+  "healthCheckStatus": "String",
   "id": "String (identifier)",
   "lastRestoredDateTime": "String (timestamp)",
   "snapshotType": "String",
-  "status": "String",
-  "healthCheckStatus": "String"
+  "status": "String"
 }
 ```
 
