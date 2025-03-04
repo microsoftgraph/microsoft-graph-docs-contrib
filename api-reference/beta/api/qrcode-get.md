@@ -1,20 +1,20 @@
 ---
-title: "qrPin: updatePin"
-description: "**TODO: Add Description**"
+title: "Get qrCode"
+description: "Read the properties and relationships of a qrCode object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.date: 03/03/2025
+ms.date: 03/04/2025
 ms.localizationpriority: medium
 ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType
 ---
 
-# qrPin: updatePin
+# Get qrCode
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Read the properties and relationships of a qrCode object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "qrpin-updatepin-permissions"
+  "name": "qrcode-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/qrpin-updatepin-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/qrcode-get-permissions.md)]
 
 ## HTTP request
 
@@ -34,32 +34,27 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /users/{id}/authentication/qrcodepinmethod/pin/updatepin
+GET /users/{id}/authentication/qrcodepinmethod/standardQRCode
+GET /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
-
-The following table lists the parameters that are required when you call this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|currentPin|String|**TODO: Add Description**|
-|newPin|String|**TODO: Add Description**|
-
-
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and a [qrCode](../resources/qrcode.md) object in the response body.
 
 ## Examples
 
@@ -68,17 +63,11 @@ If successful, this action returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "qrpinthis.updatepin"
+  "name": "get_qrcode"
 }
 -->
 ``` http
-PATCH /users/{id}/authentication/qrcodepinmethod/pin/updatepin
-Content-Type: application/json
-
-{
-  "currentPin": "String",
-  "newPin": "String"
-}
+GET /users/{id}/authentication/qrcodepinmethod/standardQRCode
 ```
 
 
@@ -88,9 +77,26 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.qrCode"
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.qrCode",
+    "id": "cb960eac-7a22-1979-ec68-1ec73264ae8d",
+    "expireDateTime": "String (timestamp)",
+    "startDateTime": "String (timestamp)",
+    "createdDateTime": "String (timestamp)",
+    "lastUsedDateTime": "String (timestamp)",
+    "image": {
+      "@odata.type": "microsoft.graph.qrCodeImageDetails"
+    }
+  }
+}
 ```
+

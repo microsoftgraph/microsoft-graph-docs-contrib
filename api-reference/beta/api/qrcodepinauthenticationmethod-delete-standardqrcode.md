@@ -34,8 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod/standardQRCode/$ref
-DELETE /authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod/temporaryQRCode/$ref
+DELETE /users/{id}/authentication/qrcodepinmethod/standardQRCode
+DELETE /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/authenticationMethodDevices/{authenticationMethodDevicesId}/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/authentication/qrCodePinMethod/standardQRCode
+DELETE /users/{id}/authentication/qrcodepinmethod/standardQRCode
 ```
 
 

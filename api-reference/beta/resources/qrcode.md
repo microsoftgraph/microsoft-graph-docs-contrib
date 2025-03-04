@@ -21,8 +21,7 @@ Inherits from [entity](../resources/entity.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/qrcodepinauthenticationmethod-list-standardqrcode.md)|[qrCode](../resources/qrcode.md) collection|Get a list of the qrCode objects and their properties.|
-|[Create](../api/qrcodepinauthenticationmethod-post-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a new qrCode object.|
+|[Create](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a new qrCode object.|
 |[Get](../api/qrcode-get.md)|[qrCode](../resources/qrcode.md)|Read the properties and relationships of a qrCode object.|
 |[Update](../api/qrcode-update.md)|[qrCode](../resources/qrcode.md)|Update the properties of a qrCode object.|
 |[Delete](../api/qrcodepinauthenticationmethod-delete-standardqrcode.md)|None|Delete a qrCode object.|

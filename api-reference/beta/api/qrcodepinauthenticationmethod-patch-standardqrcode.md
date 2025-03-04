@@ -1,20 +1,20 @@
 ---
-title: "Update qrCode"
-description: "Update the properties of a qrCode object."
+title: "Create qrCode"
+description: "Create a new qrCode object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.date: 03/03/2025
+ms.date: 03/04/2025
 ms.localizationpriority: medium
 ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType
 ---
 
-# Update qrCode
+# Create qrCode
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a qrCode object.
+Create a new qrCode object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "qrcode-update-permissions"
+  "name": "qrcodepinauthenticationmethod-post-standardqrcode-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/qrcode-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-post-standardqrcode-permissions.md)]
 
 ## HTTP request
 
@@ -47,17 +47,20 @@ PATCH /users/{id}/authentication/qrcodepinmethod/temporaryQRCode
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [qrCode](../resources/qrcode.md) object.
 
+You can specify the following properties when creating a **qrCode**.
 
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |expireDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|startDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an updated [qrCode](../resources/qrcode.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [qrCode](../resources/qrcode.md) object in the response body.
 
 ## Examples
 
@@ -66,7 +69,7 @@ If successful, this method returns a `201 Created` response code and an updated 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_qrcode"
+  "name": "create_qrcode_from_"
 }
 -->
 ``` http
@@ -75,7 +78,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.qrCode",
-  "expireDateTime": "2025-12-19T12:00:00Z",
+  "expireDateTime": "String (timestamp)",
+  "startDateTime": "String (timestamp)",
 }
 ```
 
@@ -86,7 +90,8 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.qrCode"
 }
 -->
 ``` http
@@ -95,11 +100,18 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.qrCode",
-  "id": "36c47c06-22ff-4fbf-beee-42111bb8ce0c",
+  "id": "44f2f040-ea9d-4283-9e7b-b63ddae391a9",
   "expireDateTime": "2025-12-19T12:00:00Z",
   "startDateTime": "2025-01-01T12:00:00Z",
-  "createdDateTime": "2025-02-01T00:03:32.1768757Z",
+  "createdDateTime": "2025-03-04T21:27:46.9771036Z",
   "lastUsedDateTime": "0001-01-01T00:00:00Z",
-  "image": null
+  "image": {
+    "@odata.type": "microsoft.graph.qrCodeImageDetails"
+    "binaryValue": "PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiIHdpZHRoPSIxOTUiIGhlaWdodD0iMTk1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw...",
+    "version": 1,
+    "errorCorrectionLevel": "l",
+    "rawContent": "bXMtcXJwaW46djF8YWRtaW5AeHBmcTgub25taWNyb3NvZnQuY29tfDQ0ZjJmMDQwLWVhOWQtNDI4My05ZTdiLW..."
+  }
 }
 ```
+

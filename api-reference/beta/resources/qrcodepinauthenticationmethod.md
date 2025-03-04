@@ -25,9 +25,9 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |:---|:---|:---|
 |[Create](../api/authentication-put-qrcodepinmethod.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Create a new qrCodePinAuthenticationMethod object.|
 |[Get](../api/qrcodepinauthenticationmethod-get.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Read the properties and relationships of a qrCodePinAuthenticationMethod object.|
-|[Create a QRCode](../api/qrpin-updatepin.md)|[qrCode](../resources/qrcode.md)|Create a new qrCode object.|
-|[Create a QRCode](../api/qrcodepinauthenticationmethod-delete-standardqrcode.md)|None|Delete a QRCode object.|
-|[Update qrPin](../api/qrpin-updatepin.md)|[qrPin](../resources/qrpin.md)|Create a new qrPin object.|
+|[Create a QRCode](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a new qrCode object.|
+|[Update a QRCode](../api/qrcode-update.md)|None|Delete a QRCode object.|
+|[Update qrPin](../api/qrpin-updatepin.md)|[qrPin](../resources/qrpin.md)|Changing qrPin.|
 |[Delete](../api/authentication-delete-qrcodepinmethod.md)|None|Delete a qrCodePinAuthenticationMethod object.|
 
 ## Properties
@@ -61,7 +61,16 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "isUsable": "Boolean",
-  "methodUsabilityReason": "String"
+  "methodUsabilityReason": "String",
+  "standardQRCode": {
+    "@odata.type": "microsoft.graph.qrCode"
+  },
+  "temporaryQRCode": {
+    "@odata.type": "microsoft.graph.qrCode"
+  },
+  "pin": {
+    "@odata.type": "microsoft.graph.qrPin"
+  },
 }
 ```
 
