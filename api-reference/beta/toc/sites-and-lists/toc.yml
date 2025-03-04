@@ -152,6 +152,8 @@ items:
   items:
   - name: List item
     href: ../../resources/listitem.md
+  - name: List
+    href: ../../api/listitem-list.md
   - name: Create
     href: ../../api/listitem-create.md
   - name: Get

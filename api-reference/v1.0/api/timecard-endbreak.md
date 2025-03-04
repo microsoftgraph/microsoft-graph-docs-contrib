@@ -110,7 +110,6 @@ POST https://graph.microsoft.com/v1.0/teams/fd15cad8-80f6-484f-9666-3caf695fbf32
 
 ---
 
-
 ### Response
 
 The following example shows the response.
