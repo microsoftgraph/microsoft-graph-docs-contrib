@@ -105,6 +105,7 @@ Enabled the **allowRecording**, **allowTranscription**, **anonymizeIdentityForRo
   - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
   - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
 - [Create](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true#example-4-create-a-one-on-one-chat-with-rsc-granted-apps) a one-on-one chat with RSC-granted apps.
+- Added new `<codeblock><code></code></codeblock>` tag support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource to represent code block in the message body in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).
 
 ## Contribute to Microsoft Graph
 
