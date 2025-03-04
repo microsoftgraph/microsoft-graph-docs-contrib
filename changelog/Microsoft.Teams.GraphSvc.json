@@ -2557,6 +2557,24 @@
       "CreatedDateTime": "2025-01-30T19:08:30.9147043Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "AI interactions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "579fe6a1-aa7e-4a19-aa10-1c237809032c",
+          "ApiChange": "Property",
+          "ChangedApiName": "content",
+          "ChangeType": "Change",
+          "Description": "Added new `<codeblock><code></code></codeblock>` tag support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource to represent code block in the message body in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta). This change shows up in the actual **content** property of the message body when you [get a chat message in a channel or chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta).",
+          "Target": "itemBody"
+        }
+      ],
+      "Id": "579fe6a1-aa7e-4a19-aa10-1c237809032c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-06T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }

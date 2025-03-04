@@ -906,6 +906,82 @@ Content-type: application/json
 }
 ```
 
+### Example 8: Get a chat message with a code block
+
+The following example shows a request that gets a chat message that has a Loop component as two attachments. 
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessage_7",
+  "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1732043970539"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1741124579808
+```
+
+#### Response
+
+The following example shows the response. The message body contains two attachments. The value of the **contentType** property of the Loop component is `application/vnd.microsoft.card.fluidEmbedCard`, and the value of the **contentType** property of the placeholder card is `application/vnd.microsoft.card.codesnippet`. 
+
+> **Note**  - The **contentUrl** and **content** properties for a placeholder card don't have values.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetateamsgraphdev/$metadata#chatMessage/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+    "id": "1741124579808",
+    "replyToId": null,
+    "etag": "1741124579808",
+    "messageType": "message",
+    "createdDateTime": "2025-03-04T21:42:59.808Z",
+    "lastModifiedDateTime": "2025-03-04T21:42:59.808Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "onBehalfOf": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": "test user",
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<p>&nbsp;</p>\n\n<codeblock class=\"Json\"><code>{<br> &nbsp;&nbsp; <span class=\"hljs-function\">\"body\"</span>:&nbsp;{<br> &nbsp;&nbsp; <span class=\"hljs-function\">\"contentType\"</span>:&nbsp;<span class=\"hljs-string\">\"html\"</span>,<br> &nbsp;&nbsp; <span class=\"hljs-function\">\"content\"</span>:&nbsp;<span class=\"hljs-string\">\"&lt;codeblock&gt;&lt;code&gt;Hello&nbsp;world&lt;/code&gt;&lt;/codeblock&gt;\"</span><br> &nbsp;&nbsp; }<br>}</code></codeblock>\n<p>&nbsp;</p>"
+    },
+    "attachments": [],
+    "mentions": [],
+    "reactions": []
+}
+```
+
 ## Related content
 
 - [List messages in a channel](channel-list-messages.md)
