@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "qrcodepinauthenticationmethod-post-pin-permissions"
+  "name": "qrcodepinauthenticationmethod-patch-pin-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-post-pin-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-patch-pin-permissions.md)]
 
 ## HTTP request
 

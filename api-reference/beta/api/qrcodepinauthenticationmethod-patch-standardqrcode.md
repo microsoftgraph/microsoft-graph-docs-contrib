@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "qrcodepinauthenticationmethod-post-standardqrcode-permissions"
+  "name": "qrcodepinauthenticationmethod-patch-standardqrcode-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-post-standardqrcode-permissions.md)]

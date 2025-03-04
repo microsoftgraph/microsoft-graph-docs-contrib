@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST ** Collection URI for microsoft.strongAuthentication.qrCodePinAuthenticationMethod not found
+PUT /users/{id}/authentication/qrcodepinmethod
 ```
 
 ## Request headers
@@ -53,10 +53,8 @@ You can specify the following properties when creating a **qrCodePinAuthenticati
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.strongAuthentication.authenticationMethod](../resources/authenticationmethod.md). Optional.|
-|isUsable|Boolean|**TODO: Add Description** Inherited from [microsoft.strongAuthentication.authenticationMethod](../resources/authenticationmethod.md). Optional.|
-|methodUsabilityReason|String|**TODO: Add Description** Inherited from [microsoft.strongAuthentication.authenticationMethod](../resources/authenticationmethod.md). Optional.|
-
+|standardQRCode|[qrCode](../resources/qrcode.md)|**TODO: Add Description**|
+|pin|[qrPin](../resources/qrpin.md)|**TODO: Add Description**. Optional.|
 
 
 ## Response
@@ -74,13 +72,18 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Collection URI for microsoft.strongAuthentication.qrCodePinAuthenticationMethod not found
+PUT /users/{id}/authentication/qrcodepinmethod
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethod",
-  "isUsable": "Boolean",
-  "methodUsabilityReason": "String"
+  "standardQRCode": {
+    "expireDateTime": "2025-12-19T12:00:00Z",
+    "startDateTime": "2025-01-01T12:00:00Z",
+  },
+  "pin": {
+    "code": "09599786"
+  }
 }
 ```
 
