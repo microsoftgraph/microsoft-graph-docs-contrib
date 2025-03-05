@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for the **notificationSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides details on if access package assignment email notifications are disabled within the specified access package assignment policy.  
+Used for the **accessPackageNotificationSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides details on if access package assignment email notifications are disabled within the specified access package assignment policy.  
 
 ## Properties
 |Property|Type|Description|
