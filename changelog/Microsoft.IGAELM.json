@@ -267,7 +267,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notificationSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **notificationSettings** property to the [accessPackageAssignmentPolicy](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the **accessPackageNotificationSettings** property to the [accessPackageAssignmentPolicy](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-beta) resource.",
           "Target": "accessPackageAssignmentPolicy"
         }
       ],
