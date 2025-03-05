@@ -19,7 +19,7 @@ Used for the **accessPackageNotificationSettings** property of an [access packag
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isAssignmentNotificationDisabled|Boolean|A property that represents if notification emails for an access package are disabled within an access package assignment policy.|
+|isAssignmentNotificationDisabled|Boolean|Indicates if notification emails for an access package are disabled within an access package assignment policy.|
 
 ## Relationships
 None.
