@@ -45,7 +45,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |id|String| Read-only.|
 |modifiedBy|String|Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|notificationSettings|[accessPackageNotificationSettings](../resources/accesspackagenotificationsettings.md)|This property represents what settings are set for email notifications for an access package.|
+|accessPackageNotificationSettings|[accessPackageNotificationSettings](../resources/accesspackagenotificationsettings.md)|Represents the settings for email notifications for requests to an access package.|
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Who can request this access package from this policy.|
 |questions|[accessPackageQuestion](accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
