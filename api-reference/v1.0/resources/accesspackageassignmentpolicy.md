@@ -87,13 +87,13 @@ The following JSON representation shows the resource type.
   "reviewSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
   },
+    "accessPackageNotificationSettings": {
+    "@odata.type": "microsoft.graph.accessPackageNotificationSettings"
+  },
   "specificAllowedTargets": [
     {
       "@odata.type": "microsoft.graph.singleUser"
     },
-    "accessPackageNotificationSettings": {
-    "@odata.type": "microsoft.graph.accessPackageNotificationSettings"
-  }
   ]
  
 }
