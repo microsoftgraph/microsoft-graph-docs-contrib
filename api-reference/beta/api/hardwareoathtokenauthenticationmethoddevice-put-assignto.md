@@ -87,7 +87,7 @@ PUT https://graph.microsoft.com/beta/users/{usersId}/authentication/hardwareOath
 Content-Type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft-ppe.com/beta/users/0cadbf92-####-####-####-############"
+    "@odata.id": "https://graph.microsoft.com/beta/users/0cadbf92-####-####-####-############"
 }
 ```
 
