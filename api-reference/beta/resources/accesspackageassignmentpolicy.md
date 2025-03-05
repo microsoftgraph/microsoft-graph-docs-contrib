@@ -105,7 +105,10 @@ The following JSON representation shows the resource type.
    },
    "verifiableCredentialSettings": {
       "@odata.type": "microsoft.graph.verifiableCredentialSettings"
-   }
+   },
+    "accessPackageNotificationSettings": {
+    "@odata.type": "microsoft.graph.accessPackageNotificationSettings"
+  }
 }
 ```
 
