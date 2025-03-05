@@ -329,7 +329,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Update the isEndToEndEncryptionEnabled
+### Example 3: Enable end-to-end encryption on an existing online meeting
 
 The following example shows how to enable end-to-end encryption on an existing online meeting.
 

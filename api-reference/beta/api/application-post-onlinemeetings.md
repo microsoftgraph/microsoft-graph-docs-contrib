@@ -587,7 +587,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Enable policy isEndToEndEncryptionEnabled into existing meeting
+### Example 5: Create an encrypted online meeting
 
 The following example shows how to create an online meeting that is end-to-end encrypted.
 
@@ -602,7 +602,7 @@ The following example shows a request.
   "name": "create-online-meeting-with-isendtoendencryptionenabled"
 }-->
 ```msgraph-interactive
-POST  https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
+POST  https://graph.microsoft.com/beta/me/onlineMeetings
 Content-Type: application/json 
 
 {
@@ -624,7 +624,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 OK
 Content-Type: application/json
 
 {
