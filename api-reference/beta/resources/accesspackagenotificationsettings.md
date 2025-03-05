@@ -1,6 +1,6 @@
 ---
 title: "accessPackageNotificationSettings resource type"
-description: "The accessPackageNotificationSettings type, used for the notificationSettings property of an access package assignment policy, provides details on if access package assignment emails are disabled for an access package assignment policy."
+description: "The accessPackageNotificationSettings type, used for the accessPackageNotificationSettings property of an access package assignment policy, provides details on if access package assignment emails are disabled for an access package assignment policy."
 author: "markwahl-msft"
 ms.date: 03/05/2025
 ms.localizationpriority: medium
