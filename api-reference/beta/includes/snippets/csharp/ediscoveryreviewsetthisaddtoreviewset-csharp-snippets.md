@@ -18,7 +18,6 @@ var requestBody = new AddToReviewSetPostRequestBody
 	},
 	AdditionalDataOptions = AdditionalDataOptions.LinkedFiles,
 	CloudAttachmentVersion = CloudAttachmentVersion.Latest,
-	DocumentVersion = DocumentVersion.Recent10,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
