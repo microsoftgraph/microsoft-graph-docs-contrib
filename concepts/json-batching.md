@@ -55,6 +55,7 @@ To create a batch request:
 
 In this example scenario, you construct the JSON batch request. The individual requests aren't interdependent and therefore can be placed into the batch request in any order.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "json-batching-example-request"
@@ -99,6 +100,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/json-batching-example-request-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ## Processing the JSON batch response
 
