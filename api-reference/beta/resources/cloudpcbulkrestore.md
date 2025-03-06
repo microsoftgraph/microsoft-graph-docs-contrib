@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This defines the entity for perform bulk restore action with executeAction API and it inherits from CloudPcBulkAction base type. Perform bulk restore for a set of Cloud PCs with associated cloud PC ID and restore point date time. If some of the devices don't have any snapshot to restore, then they will be set as restore failed, while the others with snapshots will still be triggered restore.
+Represents the entity that performs a bulk restore action. Perform a bulk restore for a set of Cloud PCs with associated Cloud PC ID and restore point. If some of the devices don't have any snapshots to restore, they're set as restore failed, while the others with snapshots still be triggered successfully.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
