@@ -1,5 +1,5 @@
 ---
-title: "List sharePointGroup objects"
+title: "List sharePointGroups"
 description: "Get a list of the sharePointGroup objects and their properties."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# List sharePointGroup objects
+# List sharePointGroups
 
 Namespace: microsoft.graph
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-sharepointgroups-permissions.md)]
 
-> [!Note]
+> [!NOTE]
 > In addition to Microsoft Graph permissions, applications calling this API must at least have the `EnumeratePermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#Authorization).
 
 ## HTTP request
@@ -42,11 +42,10 @@ GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups
 
 ## Optional query parameters
 
-This method supports $filter, $orderBy, $top and $skip, and Count OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$orderBy`, `$top`, `$skip`, and `$count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-> [!Note]
-> Only 100 sharePointGroups can be listed in a single request. Use the $top and $skip query parameters to
-efficiently retrieve all sharePointGroups in a fileStorageContainer.
+> [!NOTE]
+> Only 100 **sharePointGroup** objects can be listed in a single request. Use the `$top` and `$skip` query parameters to efficiently retrieve all **sharePointGroup** objects in a **fileStorageContainer**.
 
 ## Request headers
 
@@ -62,19 +61,33 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [sharePointGroup](../resources/sharepointgroup.md) objects in the response body.
 
-## Example 1: Retrieve all the existing sharePointGroups that are local to a fileStorageContainer
-The following example retrieves all the sharePointGroups that are local to a fileStoragecontainer identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`
+## Examples
 
-### Request
+### Example 1: Retrieve all the existing sharePointGroup objects that are local to a fileStorageContainer
 
+The following example retrieves all the **sharePointGroup** objects that are local to a **fileStoragecontainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_sharepointgroups_1"
+}-->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
 ```
 
-### Response
+#### Response
 
-The following example shows a sample response containing the collection of sharePointGroups that exist.
+The following example shows the response that contains the collection of **sharePointGroup** objects available.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.sharePointGroup)"
+} -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -97,21 +110,35 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: Attempt to retrieve all the existing sharePointGroups that are local to a fileStorageContainer. The fileStorageContainer has no sharePointGroups
-The following example attempts to retrieve all the sharePointGroups that are local to a fileStorageContainer identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`. This fileStorageContainer is new and has no sharePointGroups in it.
+### Example 2: Attempt to retrieve all the existing sharePointGroup objects that are local to a fileStorageContainer
 
-### Request
+The following example attempts to retrieve all the **sharePointGroup** objects that are local to a **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the **fileStorageContainer** contains no **sharePointGroup** objects.
 
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_sharepointgroups_2"
+}-->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
 ```
 
-### Response
+#### Response
 
-The following example shows a sample response. As there are no sharePointGroups in the fileStorageContainer, the response has an empty list.
+The following example shows the response. Because no **sharePointGroup** objects exist in the **fileStorageContainer**, the response has an empty list.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.sharePointGroup)"
+} -->
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "value": []
 }
