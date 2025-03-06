@@ -6601,16 +6601,16 @@
             "ApiChange": "Property",
             "ChangedApiName": "healthCheckStatus",
             "ChangeType": "Addition",
-            "Description": "Added the **healthCheckStatus** property to the [cloudPcSnapshotHealthCheckStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
-            "Target": "healthCheckStatus"
+            "Description": "Added the **healthCheckStatus** property to the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
+            "Target": "cloudPcSnapshot"
           },
           {
             "Id": "6aabaa26-e5e7-4a84-b54a-4af0fa836b0a",
             "ApiChange": "Property",
             "ChangedApiName": "ignoreUnhealthySnapshots",
             "ChangeType": "Addition",
-            "Description": "Added the **ignoreUnhealthySnapshots** property to the [cloudPcBulkRestoreSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta) resource.",
-            "Target": "ignoreUnhealthySnapshots"
+            "Description": "Added the **ignoreUnhealthySnapshots** property to the [cloudPcBulkRestore](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta) resource.",
+            "Target": "cloudPcBulkRestore"
           }
         ],
         "Id": "6aabaa26-e5e7-4a84-b54a-4af0fa836b0a",
