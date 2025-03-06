@@ -37,6 +37,9 @@ The following permissions are for getting the operation on a chat:
 GET /chats/{chat-id}/operations/{operation-id}
 ```
 
+> [!NOTE]
+> The status of individual operations returned by this API might be outdated. We recommend you to perform a `GET` request on a specific operation to obtain the latest status.
+
 ## Optional query parameters
 
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
