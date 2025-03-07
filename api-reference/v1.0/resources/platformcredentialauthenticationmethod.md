@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a platform credential instance registered to a user on Mac OS. Platform Credential is a sign-in authentication method for Mac OS devices.
+Represents a platform credential instance registered to a user on macOS. Platform Credential is a sign-in authentication method for macOS devices.
 
 This derived type inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
