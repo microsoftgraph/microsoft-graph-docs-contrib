@@ -23,7 +23,7 @@ Defines the Conditional Access claims you want to accept from other Microsoft En
 | isCompliantDeviceAccepted | Boolean | Specifies whether compliant devices from external Microsoft Entra organizations are trusted. |
 | isHybridAzureADJoinedDeviceAccepted | Boolean | Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted. |
 | isMfaAccepted | Boolean | Specifies whether MFA from external Microsoft Entra organizations is trusted.|
-| isCompliantNetworkAccepted | Boolean | Specifies whether Compliant Network from external Microsoft Entra organizations is trusted.|
+| isCompliantNetworkAccepted | Boolean | Specifies whether compliant network from external Microsoft Entra organizations is trusted.|
 
 ## Relationships
 
