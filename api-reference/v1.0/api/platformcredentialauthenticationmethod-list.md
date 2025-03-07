@@ -4,7 +4,7 @@ description: "Get a list of the platformCredentialAuthenticationMethod objects a
 author: "ploegert"
 ms.date: 02/28/2025
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

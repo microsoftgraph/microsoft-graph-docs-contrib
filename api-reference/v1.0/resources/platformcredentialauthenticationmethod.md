@@ -4,7 +4,7 @@ description: "A representation of a Platform Credential registered to a user. Pl
 author: "ploegert"
 ms.date: 02/28/2025
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
