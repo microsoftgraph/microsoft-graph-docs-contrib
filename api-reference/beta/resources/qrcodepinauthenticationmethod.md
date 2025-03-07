@@ -29,7 +29,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |[Create a QRCode](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a user's new QRCode object.|
 |[Update a QRCode](../api/qrcode-update.md)|None|Update a user's QRCode object.|
 |[Delete a QRCode](../api/qrcode-delete.md)|None|Delete a user's QRCode object.|
-|[Update Pin](../api/qrpin-updatepin.md)|[pin](../resources/qrpin.md)|Changing a user's Pin.|
+<!--|[Update Pin](../api/qrpin-updatepin.md)|[pin](../resources/qrpin.md)|Changing a user's Pin.|-->
 |[Reset Pin](../api/qrcodepinauthenticationmethod-patch-pin.md)|[pin](../resources/qrpin.md)|Resets a user's Pin by generating temporary PIN.|
 
 
