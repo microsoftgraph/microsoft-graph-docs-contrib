@@ -20,6 +20,9 @@ Using delta query helps you avoid constantly polling Microsoft Graph, as the app
 
 Delta query uses a *pull* model, where the application requests changes from Microsoft Graph; while [change notifications](./change-notifications-overview.md) use a *push* model, where Microsoft Graph notifies the application of changes.
 
+> [!IMPORTANT]
+> The change tracking feature isn't supported in Microsoft Entra External ID in external tenants and Azure AD B2C tenants.
+
 ## Use delta query to track changes in a resource collection
 
 The typical call pattern is as follows:
