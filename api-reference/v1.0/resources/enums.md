@@ -3451,3 +3451,14 @@ Possible values for user account types (group membership), per Windows definitio
 |onBreak|
 |clockedOut|
 |unknownFutureValue|
+
+## authenticationMethodPlatform values
+
+| Member  |
+| :------ |
+| windows |
+| macOS   |
+| iOS     |
+| android |
+| linux   |
+| unknown |
