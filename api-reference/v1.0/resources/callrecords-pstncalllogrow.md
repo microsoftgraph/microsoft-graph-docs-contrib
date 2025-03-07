@@ -14,6 +14,8 @@ Namespace: microsoft.graph.callRecords
 
 Represents a row of data in the public switched telephone network (PSTN) call log. Each row maps to one call.
 
+Because a PSTN call log may only reflect a portion of a larger call or meeting, the ID of a pstnCallLogRow cannot be used to retrieve a [callRecord](callrecords-callrecord.md) resource.
+
 ## Methods
 
 | Method       | Return Type | Description |

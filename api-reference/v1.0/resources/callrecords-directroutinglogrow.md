@@ -14,6 +14,8 @@ Namespace: microsoft.graph.callRecords
 
 Represents a row of data in the direct routing call log. Each row maps to one call.
 
+Because a direct routing call log may only reflect a portion of a larger call or meeting, the ID of a directRoutingLogRow cannot be used to retrieve a [callRecord](callrecords-callrecord.md) resource.
+
 ## Methods
 
 | Method       | Return Type | Description |

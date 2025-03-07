@@ -37,6 +37,9 @@ Each **session** contains one or more [segment](callrecords-segment.md) entities
 
 In the diagram above, the numbers denote how many children of each type can be present. For example, a 1..N relationship between a **callRecord** and a **session** means one **callRecord** instance can contain one or more **session** instances. Similarly, a 1..N relationship between a **segment** and a **media** means one **segment** instance can contain one or more [media](callrecords-media.md) streams.
 
+## PSTN and Direct Routing Logs
+The [pstnCallLogRow](callrecords-pstncalllogrow.md) and [directRoutingLogRow](callrecords-directroutinglogrow.md) resources only include information about calls that utilize public switched telephone network (PSTN) infrastructure. This information can be useful to understand the usage of calling products in your organization. However, these resources may only reflect a portion of a larger call or meeting experience. For example, a log row will include information about a user who places a PSTN call to join an online meeting, but will not include information about other participants in that online meeting. Additionally, because a log row is only a subset of call record information, the ID for a particular log row cannot be used to fetch a [callRecord](callrecords-callrecord.md) resource.
+
 ## Related content
 
 - [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true)
