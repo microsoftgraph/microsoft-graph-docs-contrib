@@ -2575,6 +2575,24 @@
       "CreatedDateTime": "2024-05-06T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fc85a381-3549-4388-bc52-305b9b5f3cf1",
+          "ApiChange": "Property",
+          "ChangedApiName": "firstChannelName",
+          "ChangeType": "Addition",
+          "Description": "Added the **firstChannelName** property on a [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "fc85a381-3549-4388-bc52-305b9b5f3cf1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-03-07T08:54:28.4245939Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }

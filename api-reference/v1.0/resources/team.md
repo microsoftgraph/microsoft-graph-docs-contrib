@@ -64,6 +64,7 @@ For more information about working with groups and members in teams, see [Use th
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
 |description|string| An optional description for the team. Maximum length: 1,024 characters. |
 |displayName|string| The name of the team. |
+|firstChannelName|String| The name of the first channel in the team. This is an optional property, only used during team creation and isn't returned in methods to get and list teams. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
 |internalId | string | A unique ID for the team that was used in a few places such as the audit log/[Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference). |
@@ -122,6 +123,7 @@ The following JSON representation shows the resource type.
   "createdDateTime": "DateTimeOffset",
   "description": "String",
   "displayName": "String",
+  "firstChannelName": "String",
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
   "internalId": "String",
