@@ -29,8 +29,8 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |[Create a QRCode](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a user's new QRCode object.|
 |[Update a QRCode](../api/qrcode-update.md)|None|Update a user's QRCode object.|
 |[Delete a QRCode](../api/qrcode-delete.md)|None|Delete a user's QRCode object.|
-|[Update Pin](../api/qrpin-updatepin.md)|[qrPin](../resources/qrpin.md)|Changing a user's Pin.|
-|[Reset Pin](../api/qrcodepinauthenticationmethod-patch-pin.md)|[qrPin](../resources/qrpin.md)|Resets a user's Pin by generating temporary PIN.|
+|[Update Pin](../api/qrpin-updatepin.md)|[pin](../resources/qrpin.md)|Changing a user's Pin.|
+|[Reset Pin](../api/qrcodepinauthenticationmethod-patch-pin.md)|[pin](../resources/qrpin.md)|Resets a user's Pin by generating temporary PIN.|
 
 
 ## Properties
@@ -44,9 +44,9 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|pin|[qrPin](../resources/qrpin.md)|**TODO: Add Description**|
-|standardQRCode|[qrCode](../resources/qrcode.md)|**TODO: Add Description**|
-|temporaryQRCode|[qrCode](../resources/qrcode.md)|**TODO: Add Description**|
+|pin|[Pin](../resources/qrpin.md)|Pin of the user. User is required to change admin provided temporary Pin durig sign-in.|
+|standardQRCode|[qrCode](../resources/qrcode.md)|Primary QR code of user's QR code authentication method.|
+|temporaryQRCode|[qrCode](../resources/qrcode.md)|Temporary QR code of user's QR code authentication method.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
