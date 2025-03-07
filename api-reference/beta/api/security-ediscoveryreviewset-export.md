@@ -61,7 +61,7 @@ If the export started successfully, this action returns a `202 Accepted` respons
 ## Examples
 
 ### Request
-Here's an example  of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,8 +76,8 @@ Content-Type: application/json
 {
     "outputName": "Export via API",
     "description": "Export for the Contoso investigation",
-    "exportOptions": "originalFiles,fileInfo,tags",
-    "exportStructure": "directory"
+    "exportOptions": "originalFiles, tags, splitSource, includeFolderAndPath, friendlyName, condensePaths, optimizedPartitionSize",
+    "exportStructure": "msg"
 }
 ```
 
@@ -116,7 +116,7 @@ Content-Type: application/json
 ---
 
 ### Response
-Here's an example  of the response.
+The following example shows a response.
 
 <!-- {
   "blockType": "response",
