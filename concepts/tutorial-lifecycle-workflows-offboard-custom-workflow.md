@@ -160,8 +160,6 @@ Content-Type: application/json
 
 In the following request, the user that's the target of the workflow is identified by ID `8930f0c7-cdd7-4885-9260-3b4a8111de5c`.
 
-The request returns a `204 No Content` response code.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -215,7 +213,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/work
 
 ## Check tasks and workflow status
 
-At any time, you can monitor the status of the workflows and the tasks at three levels.
+You can monitor the status of the workflows and the tasks at three levels:
 
 - Monitor tasks at the user level.
 - Monitor the aggregate high-level summary of the user-level results for a workflow, within a specified period.
