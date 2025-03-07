@@ -54,8 +54,8 @@ The following JSON representation shows the resource type.
   "excludeApplications": ["String"],
   "applicationFilter": {"@odata.type": "microsoft.graph.conditionalAccessFilter"},
   "includeUserActions": ["String"],
-  "networkAccess":{"String"},
-  "globalSecureAccess":{"String"}
+  "networkAccess": "String",
+  "globalSecureAccess": "String"
 }
 ```
 
