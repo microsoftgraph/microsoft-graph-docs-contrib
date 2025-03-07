@@ -2,9 +2,10 @@
 title: "List managedAndroidStoreApps"
 description: "List properties and relationships of the managedAndroidStoreApp objects."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # List managedAndroidStoreApps
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1766
+Content-Length: 1862
 
 {
   "value": [
@@ -115,7 +116,11 @@ Content-Length: 1766
         "v8_1": true,
         "v9_0": true,
         "v10_0": true,
-        "v11_0": true
+        "v11_0": true,
+        "v12_0": true,
+        "v13_0": true,
+        "v14_0": true,
+        "v15_0": true
       }
     }
   ]

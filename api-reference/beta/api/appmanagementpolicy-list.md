@@ -3,8 +3,9 @@ title: "List appManagementPolicies"
 description: "Get a list of application management policies."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 08/09/2024
 ---
 
 # List appManagementPolicies
@@ -163,7 +164,16 @@ Content-type: application/json
                   ],
                   "maxLifetime": null
                }
-            ]
+            ],
+            "applicationRestrictions": {
+               "identifierUris": {
+                  "nonDefaultUriAddition": {
+                     "restrictForAppsCreatedAfterDateTime": "2024-01-01T10:37:00Z",
+                     "excludeAppsReceivingV2Tokens": true,
+                     "excludeSaml": true
+                  }
+               }
+            }
          }
       }
    ]

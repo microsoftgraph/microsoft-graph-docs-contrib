@@ -3,8 +3,9 @@ title: "List timeOffReasons"
 description: "Get the list of timeOffReasons in a schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # List timeOffReasons
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "schedule_list_timeoffreasons" } -->
 [!INCLUDE [permissions-table](../includes/permissions/schedule-list-timeoffreasons-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -114,24 +115,45 @@ Content-type: application/json
 
 {
   "value": [
-    {
-      "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-      "createdDateTime": "2019-03-12T22:10:38.242Z",
-      "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
-      "displayName": "Vacation",
-      "iconType": "plane",
-      "isActive": true,
-      "lastModifiedBy": {
-        "application": null,
-        "device": null,
-        "conversation": null,
-        "user": {
-          "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-          "displayName": "John Doe"
+        {
+            "id": "TOR_7e5935da-7031-4dc1-850b-7304dbb822af",
+            "createdDateTime": null,
+            "lastModifiedDateTime": "2024-11-29T07:46:02.635Z",
+            "displayName": "Parental Leave",
+            "iconType": "cake",
+            "isActive": false,
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "24af8b1e-f894-491c-bde2-0c705ef3fbcd",
+                    "displayName": "John Doe",
+                    "userIdentityType": "aadUser",
+                    "tenantId": null
+                }
+            },
+            "code": "ParentalLeave"
+        },
+        {
+            "id": "TOR_078523b9-8c8e-4a2b-8c20-3a3b52410975",
+            "createdDateTime": null,
+            "lastModifiedDateTime": "2024-11-29T07:34:58.879Z",
+            "displayName": "Sick Day",
+            "iconType": "doctor",
+            "isActive": false,
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "24af8b1e-f894-491c-bde2-0c705ef3fbcd",
+                    "displayName": "John Doe",
+                    "userIdentityType": "aadUser",
+                    "tenantId": null
+                }
+            },
+            "code": null
         }
-      }
-    }
-  ]
+    ]
 }
 ```
 

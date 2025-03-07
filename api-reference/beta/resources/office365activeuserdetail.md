@@ -1,10 +1,11 @@
 ---
 title: "office365ActiveUserDetail resource type"
-description: "Here's a JSON representation of the resource."
+description: "The following JSON representation shows the resource type."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # office365ActiveUserDetail resource type
@@ -40,9 +41,14 @@ Namespace: microsoft.graph
 | teamsLicenseAssignDate            | Date              | The last date when the user was assigned a Teams license. |
 | assignedProducts                  | String collection | All the products assigned for the user.  |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",

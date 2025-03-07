@@ -3,8 +3,9 @@ title: "Create dayNote"
 description: "Create a day note in the schedule."
 author: fmcgurrenw
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create dayNote

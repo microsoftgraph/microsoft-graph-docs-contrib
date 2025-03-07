@@ -2,9 +2,10 @@
 title: "deviceManagementSettingSddlConstraint resource type"
 description: "Constraint enforcing the setting is well formed SDDL"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementSettingSddlConstraint resource type

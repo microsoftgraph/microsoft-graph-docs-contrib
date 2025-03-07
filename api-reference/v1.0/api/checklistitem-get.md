@@ -3,8 +3,9 @@ title: "Get checklistItem"
 description: "Read the properties and relationships of a checklistItem object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get checklistItem

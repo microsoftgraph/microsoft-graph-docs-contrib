@@ -4,15 +4,16 @@ description: "Get newly created, updated, or deleted groups, including group mem
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # group: delta
 
 Namespace: microsoft.graph
 
-Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted [groups](../resources/group.md), including group membership changes, without having to perform a full read of the entire group collection. For more information, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -103,7 +104,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 #### Request 1
 
-Here's an example of the request. There's no `$select` parameter, so a default set of properties is tracked and returned.
+The following example shows a request. There's no `$select` parameter, so a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
 

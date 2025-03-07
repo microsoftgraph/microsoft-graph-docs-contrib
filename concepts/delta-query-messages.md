@@ -2,9 +2,10 @@
 title: "Get incremental changes to messages in a folder"
 description: "Use delta query to track changes of messages in a folder hierarchy by tracking each folder individually. Example shows how to synchronize messages in a folder."
 author: "SuryaLashmiS"
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/07/2024
 ---
 
 # Get incremental changes to messages in a folder

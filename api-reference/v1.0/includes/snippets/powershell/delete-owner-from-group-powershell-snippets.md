@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Remove-MgGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+Remove-MgGroupOwnerDirectoryObjectByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
 
 ```

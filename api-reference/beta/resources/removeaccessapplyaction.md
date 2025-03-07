@@ -3,8 +3,9 @@ title: "removeAccessApplyAction resource type"
 description: "Remove access from a resource for those denied in an access review of that resource."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # removeAccessApplyAction resource type
@@ -26,7 +27,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.removeAccessApplyAction"

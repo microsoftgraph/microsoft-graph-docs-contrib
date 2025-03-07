@@ -3,8 +3,9 @@ title: "List checklistItems"
 description: "Get the checklistItem resources associated to the checklistItems navigation property of a baseTask."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List checklistItems

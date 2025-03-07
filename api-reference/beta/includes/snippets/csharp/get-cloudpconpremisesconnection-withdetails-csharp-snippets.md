@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{cloudPcOnPremisesConnection-id}"].GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Select = new string []{ "id","displayName","healthCheckStatus","healthCheckStatusDetails","inUse" };
+	requestConfiguration.QueryParameters.Select = new string []{ "id","displayName","healthCheckStatus","healthCheckStatusDetail","healthCheckStatusDetails","inUse" };
 });
 
 

@@ -2,9 +2,10 @@
 title: "windowsAutopilotProfileAssignmentDetailedStatus enum type"
 description: "Intune Enrollment Windowsautopilotprofileassignmentdetailedstatus Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # windowsAutopilotProfileAssignmentDetailedStatus enum type

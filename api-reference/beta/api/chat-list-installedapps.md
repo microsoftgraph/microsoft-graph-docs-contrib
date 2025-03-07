@@ -3,8 +3,9 @@ title: "List apps in chat"
 description: "List the apps installed in a chat."
 author: "subray"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List apps in chat
@@ -30,8 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_list_installedapps" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-list-installedapps-permissions.md)]
 
-> **Note:**
-The following permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent):
+> [!NOTE]
+> The following permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent):
 > - TeamsAppInstallation.ReadWriteAndConsentSelfForChat
 > - TeamsAppInstallation.ReadWriteAndConsentForChat
 > - TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All

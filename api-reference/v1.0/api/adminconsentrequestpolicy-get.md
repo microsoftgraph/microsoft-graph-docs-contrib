@@ -3,8 +3,9 @@ title: "Get adminConsentRequestPolicy"
 description: "Read the properties and relationships of an adminConsentRequestPolicy object."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get adminConsentRequestPolicy
@@ -22,11 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "adminconsentrequestpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/adminconsentrequestpolicy-get-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-+ Global Administrator
-+ Global Reader
-+ Cloud Application Administrator
-+ Application Administrator
+[!INCLUDE [rbac-adminconsentrequestpolicy-apis-read](../includes/rbac-for-apis/rbac-adminconsentrequestpolicy-apis-read.md)]
 
 ## HTTP request
 

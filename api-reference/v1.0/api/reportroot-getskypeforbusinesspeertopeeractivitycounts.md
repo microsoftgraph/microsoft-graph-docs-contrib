@@ -2,9 +2,10 @@
 title: "reportRoot: getSkypeForBusinessPeerToPeerActivityCounts"
 description: "Get usage trends on the number and type of sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfer."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getSkypeForBusinessPeerToPeerActivityCounts

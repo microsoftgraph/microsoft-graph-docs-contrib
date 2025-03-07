@@ -3,8 +3,9 @@ title: 'textWebPart resource type'
 description: Represents a text web part instance on a SharePoint page.
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # textWebPart resource type
@@ -30,7 +31,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

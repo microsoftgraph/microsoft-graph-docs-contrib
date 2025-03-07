@@ -3,8 +3,9 @@ title: "partners resource type"
 description: "Represents billing details for a Microsoft direct partner."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # partners resource type

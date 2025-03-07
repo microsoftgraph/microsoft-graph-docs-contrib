@@ -3,8 +3,9 @@ title: "preApprovalDetail resource type"
 description: "A preApprovalDetail describes a list of conditions under which an app can be preapproved for consent."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # preApprovalDetail resource type
@@ -28,7 +29,7 @@ A preApprovalDetail describes a list of conditions under which the app has been 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.preApprovalDetail"

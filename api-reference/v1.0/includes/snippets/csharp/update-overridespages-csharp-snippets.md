@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Identity.B2xUserFlows.Item.Languages.Item.OverridesPages.Item.Value;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new $valuePutRequestBody
 {
@@ -16,14 +17,24 @@ var requestBody = new $valuePutRequestBody
 		{
 			"LocalizedStrings" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					ElementType = "UxElement",
-					ElementId = null,
-					StringId = "alert_message",
-					Override = true,
-					Value = "Are you sure that you want to cancel entering your information?",
-				},
+					{
+						"elementType", new UntypedString("UxElement")
+					},
+					{
+						"elementId", new UntypedNull()
+					},
+					{
+						"stringId", new UntypedString("alert_message")
+					},
+					{
+						"override", new UntypedBoolean(true)
+					},
+					{
+						"value", new UntypedString("Are you sure that you want to cancel entering your information?")
+					},
+				}),
 			}
 		},
 	},

@@ -3,8 +3,9 @@ title: "traceRouteHop resource type"
 description: "Represents the network trace route hops collected for a media stream."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # traceRouteHop resource type
@@ -23,7 +24,7 @@ Represents the network trace route hops collected for a [media stream](callrecor
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -21,7 +21,7 @@ DateTimeTimeZone dueDateTime = new DateTimeTimeZone();
 dueDateTime.setDateTime("2022-09-22T16:05:00.0000000");
 dueDateTime.setTimeZone("UTC");
 learningCourseActivity.setDueDateTime(dueDateTime);
-learningCourseActivity.setExternalcourseActivityId("12a2228a-e020-11ec-9d64-0242ac120002");
+learningCourseActivity.setExternalCourseActivityId("12a2228a-e020-11ec-9d64-0242ac120002");
 learningCourseActivity.setLearningContentId("57baf9dc-e020-11ec-9d64-0242ac120002");
 learningCourseActivity.setLearnerUserId("7ba2228a-e020-11ec-9d64-0242ac120002");
 ItemBody notes = new ItemBody();

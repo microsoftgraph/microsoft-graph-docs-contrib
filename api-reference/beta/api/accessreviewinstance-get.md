@@ -3,8 +3,9 @@ title: "Get accessReviewInstance"
 description: "Retrieve an accessReviewInstance object."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get accessReviewInstance

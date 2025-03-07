@@ -3,8 +3,9 @@ title: "List legalHolds"
 description: "Get the legalHold resources from the legalHolds navigation property."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # List legalHolds

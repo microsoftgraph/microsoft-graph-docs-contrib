@@ -4,8 +4,10 @@ description: "A representation of a Software OATH token registered to a user. So
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Software OATH
+ms.date: 07/19/2024
 ---
 
 # softwareOathAuthenticationMethod resource type
@@ -29,6 +31,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|createdDateTime|DateTimeOffset| The date and time the authentication method was registered to the user. Read-only. Optional. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The authentication method identifier.|
 |secretKey|String|The secret key of the method. Always returns `null`.|
 
@@ -36,7 +39,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -48,6 +51,7 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.softwareOathAuthenticationMethod",
+  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "secretKey": "String"
 }

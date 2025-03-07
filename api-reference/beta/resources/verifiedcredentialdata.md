@@ -3,8 +3,9 @@ title: "verifiedCredentialData resource type"
 description: "Represents the metadata of the verifiable credential including the issuing authority, presented credentials, and the verified claims."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # verifiedCredentialData resource type
@@ -27,7 +28,7 @@ Used for the **verifiedCredentialsData** property of [access package assignment 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.verifiedCredentialData"

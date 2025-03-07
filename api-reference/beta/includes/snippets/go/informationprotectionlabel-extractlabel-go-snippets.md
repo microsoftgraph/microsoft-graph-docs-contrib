@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -14,13 +17,10 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphinformationprotection.InformationProtectionPolicyLabelsExtractLabelRequestBuilderPostRequestConfiguration{
+configuration := &graphinformationprotection.PolicyLabelsExtractLabelRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphinformationprotection.NewExtractLabelPostRequestBody()
@@ -80,13 +80,14 @@ metadata := []graphmodels.KeyValuePairable {
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.contentFormat", 
-	"odataType" : "#microsoft.graph.contentState", 
-	"odataType" : "#Collection(microsoft.graph.keyValuePair)", 
+	"format@odata.type" : "#microsoft.graph.contentFormat", 
+	"state@odata.type" : "#microsoft.graph.contentState", 
+	"metadata@odata.type" : "#Collection(microsoft.graph.keyValuePair)", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 extractLabel, err := graphClient.InformationProtection().Policy().Labels().ExtractLabel().Post(context.Background(), requestBody, configuration)
 
 

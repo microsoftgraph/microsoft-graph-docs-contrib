@@ -3,8 +3,9 @@ title: "Get cloudPcOverview"
 description: "Read the properties and relationships of a cloudPcOverview object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get cloudPcOverview

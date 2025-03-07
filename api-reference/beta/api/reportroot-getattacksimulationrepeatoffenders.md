@@ -3,8 +3,9 @@ title: "reportRoot: getAttackSimulationRepeatOffenders"
 description: "List repeat offender users of a tenant in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getAttackSimulationRepeatOffenders (deprecated)

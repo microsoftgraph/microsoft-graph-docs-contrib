@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -14,13 +17,10 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphinformationprotection.InformationProtectionPolicyLabelsEvaluateClassificationResultsRequestBuilderPostRequestConfiguration{
+configuration := &graphinformationprotection.PolicyLabelsEvaluateClassificationResultsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphinformationprotection.NewEvaluateClassificationResultsPostRequestBody()
@@ -32,8 +32,8 @@ contentInfo.SetIdentifier(&identifier)
 state := graphmodels.REST_CONTENTSTATE 
 contentInfo.SetState(&state) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.contentFormat", 
-	"odataType" : "#microsoft.graph.contentState", 
+	"format@odata.type" : "#microsoft.graph.contentFormat", 
+	"state@odata.type" : "#microsoft.graph.contentState", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
@@ -52,7 +52,8 @@ classificationResults := []graphmodels.ClassificationResultable {
 }
 requestBody.SetClassificationResults(classificationResults)
 
-evaluateClassificationResults, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().Post(context.Background(), requestBody, configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+evaluateClassificationResults, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().PostAsEvaluateClassificationResultsPostResponse(context.Background(), requestBody, configuration)
 
 
 ```

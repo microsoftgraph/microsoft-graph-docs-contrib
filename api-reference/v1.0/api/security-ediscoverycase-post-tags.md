@@ -3,8 +3,9 @@ title: "Create tags"
 description: "Create a new ediscoveryReviewTag object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # Create tags
@@ -55,7 +56,7 @@ If successful, this method returns a `201 Created` response code and an [microso
 
 ### Example 1: Create a tag
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -143,7 +144,7 @@ Content-Type: application/json
 
 ### Example 2: Create a tag with a parent
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

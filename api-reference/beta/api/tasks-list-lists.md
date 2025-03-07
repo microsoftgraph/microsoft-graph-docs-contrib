@@ -3,8 +3,9 @@ title: "List lists"
 description: "Get a list of the baseTaskList objects of a user and their properties."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List lists (deprecated)

@@ -3,8 +3,9 @@ title: "mediaConfig resource type"
 description: "An abstract base class that contains the media configuration used to connect to a call."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # mediaConfig resource type

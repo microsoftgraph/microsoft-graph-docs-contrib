@@ -1,10 +1,11 @@
 ---
 title: "Get userInsightsSettings"
-description: "Retrieve the properties of a userInsightsSettings object."
+description: "Get the user-customizable privacy settings for item insights and meeting hours insights."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
+ms.date: 07/10/2024
 ---
 
 # Get userInsightsSettings
@@ -32,7 +33,7 @@ GET /me/settings/itemInsights
 GET /users/{userId}/settings/itemInsights
 ```
 
->**Note:** Requests with a `userId` or `userPrincipalName` are only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference).
+>**Note:** Requests with a `userId` or `userPrincipalName` are only accessible by the user or by a user with the `User.ReadWrite.All` permission. To learn more, see [Permissions](/graph/permissions-reference).
 
 ## Request headers
 
@@ -52,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [userInsightsS
 
 ### Request
 
-The following is an example of the request to get user item insights and meeting hours insights settings.
+The following example shows a request to get user item insights and meeting hours insights settings.
 
 
 # [HTTP](#tab/http)
@@ -119,5 +120,4 @@ Content-type: application/json
   "isEnabled": true
 }
 ```
-
 

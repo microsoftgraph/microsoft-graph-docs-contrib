@@ -3,8 +3,9 @@ title: "reportRoot: getCredentialUsageSummary"
 description: "Report the current state of how many users in your organization are using self-service password reset capabilities."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getCredentialUsageSummary

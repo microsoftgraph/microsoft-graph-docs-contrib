@@ -2,9 +2,10 @@
 title: "Get trustFrameworkPolicy"
 description: "This operation retrieves an existing trustFrameworkPolicy content from an Azure AD B2C tenant."
 ms.localizationpriority: medium
-author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+author: "gysingh"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 # Get trustFrameworkPolicy
 
@@ -23,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "trustframeworkpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframeworkpolicy-get-permissions.md)]
 
-The work or school account must be a global administrator of the tenant.
+[!INCLUDE [rbac-b2c-trustframework-policy-apis](../includes/rbac-for-apis/rbac-b2c-trustframework-policy-apis.md)]
 
 ## HTTP request
 
@@ -78,11 +79,11 @@ HTTP/1.1 200 OK
 Content-Type: application/xml
 
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="contoso.com" PolicyId="B2C_1A_Test" PublicPolicyUri="http://contoso.com/B2C_1A_Test">
-	.....
-	....
-	<!---PolicyContent-->
-	....
-	....
+    .....
+    ....
+    <!---PolicyContent-->
+    ....
+    ....
 </TrustFrameworkPolicy>
 ```
 

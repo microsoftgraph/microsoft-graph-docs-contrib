@@ -3,8 +3,9 @@ title: "contentApprovalRule resource type"
 description: "Represents a rule for governing the automatic creation of content approvals."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 08/31/2024
 ---
 
 # contentApprovalRule resource type
@@ -30,7 +31,7 @@ Inherits from [complianceChangeRule](../resources/windowsupdates-compliancechang
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"

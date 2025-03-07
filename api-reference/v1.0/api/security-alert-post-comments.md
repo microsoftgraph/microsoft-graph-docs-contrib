@@ -4,7 +4,7 @@ description: "Adds a comment to the end of the alert comments list"
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an updated list 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

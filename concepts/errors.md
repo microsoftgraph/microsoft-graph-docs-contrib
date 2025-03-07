@@ -2,6 +2,7 @@
 title: "Microsoft Graph error responses and resource types"
 description: "Learn about errors that can be returned in Microsoft Graph responses. Errors are returned using standard HTTP status codes and a JSON error response object."
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph error responses and resource types
@@ -67,7 +68,7 @@ named **error**. This object includes all the details of the error. You can use 
 The error resource is returned whenever an error occurs in the processing of a request.
 
 Error responses follow the definition in the 
-[Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#7102-error-condition-responses).
+[Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/graph/articles/errorResponses.md).
 
 ### JSON representation
 

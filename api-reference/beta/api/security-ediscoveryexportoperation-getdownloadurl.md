@@ -3,8 +3,9 @@ title: "ediscoveryExportOperation: getDownloadUrl (deprecated)"
 description: "Return a download URL from where the export content is delivered as a stream."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # ediscoveryExportOperation: getDownloadUrl (deprecated)
@@ -52,7 +53,7 @@ If successful, this function returns a `200 OK` response code and a String in th
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

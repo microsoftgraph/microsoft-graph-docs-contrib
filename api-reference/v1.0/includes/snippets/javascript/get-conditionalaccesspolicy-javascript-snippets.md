@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let conditionalAccessPolicy = await client.api('/identity/conditionalAccess/policies/6b5e999b-0ba8-4186-a106-e0296c1c4358')
+let conditionalAccessPolicy = await client.api('/identity/conditionalAccess/policies/10ef4fe6-5e51-4f5e-b5a2-8fed19d0be67')
 	.get();
 
 ```

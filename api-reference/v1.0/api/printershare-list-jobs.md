@@ -3,8 +3,9 @@ title: List printJobs for a printerShare
 description: Retrieve a list of print jobs associated with the printe share.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List printJobs for a printerShare

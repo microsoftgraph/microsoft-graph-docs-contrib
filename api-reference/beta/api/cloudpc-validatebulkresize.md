@@ -3,8 +3,9 @@ title: "cloudPC: validateBulkResize"
 description: "Validate that a set of Cloud PC devices meet the requirements to be bulk resized."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # cloudPC: validateBulkResize
@@ -61,7 +62,7 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,10 +108,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcvalidatebulkresize-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcvalidatebulkresize-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudpcvalidatebulkresize-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -119,7 +116,7 @@ Content-Type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

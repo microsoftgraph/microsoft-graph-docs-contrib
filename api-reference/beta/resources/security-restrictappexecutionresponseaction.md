@@ -3,8 +3,9 @@ title: "restrictAppExecutionResponseAction resource type"
 description: "Describes a response action that sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # restrictAppExecutionResponseAction resource type

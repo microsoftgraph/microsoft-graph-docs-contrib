@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta education schools create --body '{\
   "displayName": "Fabrikam High School",\
   "description": "Magnate school for the arts. Los Angeles School District",\

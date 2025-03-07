@@ -3,8 +3,9 @@ title: "List accessPackagecustomWorkflowExtensions"
 description: "Get a list of the accessPackageCustomWorkflowExtension objects and their properties."
 author: "vikama-Microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # List accessPackageCustomWorkflowExtensions
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackagecatalog_list_accesspackagecustomworkflowextensions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackagecatalog-list-accesspackagecustomworkflowextensions-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 
@@ -58,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions
 ```
 
 # [C#](#tab/csharp)

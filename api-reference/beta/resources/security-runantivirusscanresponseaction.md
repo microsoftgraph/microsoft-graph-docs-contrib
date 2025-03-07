@@ -3,8 +3,9 @@ title: "runAntivirusScanResponseAction resource type"
 description: "Describes a response action that performs a full Microsoft Defender Antivirus scan on the device."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # runAntivirusScanResponseAction resource type

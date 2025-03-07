@@ -3,8 +3,9 @@ title: "List used"
 description: "Calculate and list the documents the user has viewed or modified."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List used

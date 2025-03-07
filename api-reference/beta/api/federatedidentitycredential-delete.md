@@ -3,8 +3,9 @@ title: "Delete federatedIdentityCredential"
 description: "Deletes a federatedIdentityCredential object."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete federatedIdentityCredential

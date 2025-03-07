@@ -3,8 +3,9 @@ author: chackman
 description: Unfollow an item that the user is following.
 title: Unfollow drive item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 # Unfollow drive item
 
@@ -46,7 +47,7 @@ If successful, the API call returns a `204 No Content`. It doesn't return anythi
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 This example unfollows an item identified by `{item-id}`.
 
 
@@ -54,7 +55,7 @@ This example unfollows an item identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
-POST /me/drive/items/{item-id}/unfollow
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/unfollow
 ```
 
 # [C#](#tab/csharp)

@@ -3,8 +3,9 @@ title: "Delete platformCredentialAuthenticationMethod"
 description: "Delete a platformCredentialAuthenticationMethod object."
 author: "Veena11"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete platformCredentialAuthenticationMethod
@@ -23,7 +24,7 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "platformcredentialauthenticationmethod_delete" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-delete-permissions.md)]
 
 ### Permissions acting on other users
@@ -57,7 +58,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content`. It does not return anything in the response body.
+If successful, this method returns a `204 No Content`. It doesn't return anything in the response body.
 
 ## Examples
 

@@ -3,8 +3,9 @@ title: "localizedDescription resource type"
 description: "Represents the localized description used to describe a term in the term store."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # localizedDescription resource type
@@ -24,7 +25,7 @@ Represents the localized description used to describe a [term] in the term [stor
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.termStore.localizedDescription"

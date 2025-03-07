@@ -4,6 +4,7 @@ description: "Get an introduction to metered APIs and services in Microsoft Grap
 author: "spgraph-docs-team"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Overview of metered APIs and services in Microsoft Graph
@@ -46,4 +47,5 @@ Keep the following considerations in mind when you use metered APIs and services
 
 - [Metered APIs and services in Microsoft Graph](/graph/metered-api-list)
 - [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup)
+- [Metered APIs frequently asked questions](/graph/metered-api-faq)
 - [Payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md)

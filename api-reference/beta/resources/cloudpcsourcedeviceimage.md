@@ -3,8 +3,9 @@ title: "cloudPcSourceDeviceImage resource type"
 description: "Represents the source image associated with your Azure subscription."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # cloudPcSourceDeviceImage resource type

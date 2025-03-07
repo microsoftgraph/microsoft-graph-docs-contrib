@@ -3,8 +3,9 @@ title: "ruleSchedule resource type"
 description: "Represents how often the custom detection rule runs, and when it next runs."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # ruleSchedule resource type

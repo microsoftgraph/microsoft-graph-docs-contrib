@@ -4,8 +4,9 @@ description: "Activate a directory role."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Activate directoryRole
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directoryrole_post_directoryroles" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryrole-post-directoryroles-permissions.md)]
+
+[!INCLUDE [rbac-directory-role-apis-write](../includes/rbac-for-apis/rbac-directory-role-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

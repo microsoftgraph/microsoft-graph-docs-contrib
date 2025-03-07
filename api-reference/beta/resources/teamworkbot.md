@@ -3,8 +3,9 @@ title: "teamworkBot resource type"
 description: "A bot in Microsoft Teams ecosystem."
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkBot resource type
@@ -29,7 +30,7 @@ Represents a bot in the Microsoft Teams ecosystem.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

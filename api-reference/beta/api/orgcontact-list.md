@@ -3,8 +3,9 @@ title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # List orgContacts
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "orgcontact_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-list-permissions.md)]
+
+[!INCLUDE [rbac-org-contacts-apis-read-all](../includes/rbac-for-apis/rbac-org-contacts-apis-read-all.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,7 +100,7 @@ GET https://graph.microsoft.com/beta/contacts
 
 #### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

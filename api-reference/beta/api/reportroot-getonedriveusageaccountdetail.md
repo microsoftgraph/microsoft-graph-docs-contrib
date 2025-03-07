@@ -2,9 +2,10 @@
 title: "reportRoot: getOneDriveUsageAccountDetail"
 description: "Get details about OneDrive usage by account."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getOneDriveUsageAccountDetail

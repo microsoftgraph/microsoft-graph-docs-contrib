@@ -3,8 +3,9 @@ title: "logonUser resource type"
 description: "Contains stateful information about the logged on user on this host"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: security
+ms.subservice: security
 author: "preetikr"
+ms.date: 07/22/2024
 ---
 
 # logonUser resource type
@@ -25,9 +26,12 @@ Contains stateful information about the logged on user on this host
 |logonId|String|User logon ID.|
 |logonTypes|String collection|Collection of the logon types observed for the logged on user from when first to last seen. Possible values are: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

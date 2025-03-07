@@ -4,7 +4,8 @@ description: "Get the messages in the signed-in user's mailbox (including the De
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 06/22/2024
 ---
 
 # List messages
@@ -86,7 +87,7 @@ Failing to do this results in the following error:
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body

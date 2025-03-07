@@ -3,8 +3,9 @@ title: "List linkedResources"
 description: "Get the linkedResource_v2 resources associated to a baseTask from the linkedResources navigation property."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List linkedResources (deprecated)

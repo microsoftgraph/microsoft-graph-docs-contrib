@@ -3,8 +3,9 @@ title: "Create multiTenantOrganization"
 description: "Create a new multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 06/04/2024
 ---
 
 # Create multiTenantOrganization

@@ -3,8 +3,9 @@ title: "Remove a member"
 description: "Use this API to remove a member (user, group, or device) from an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # Remove a member
@@ -22,10 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "administrativeunit_delete_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-delete-members-permissions.md)]
 
-To remove a member from an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-* Privileged Role Administrator
-* Global Administrator
+[!INCLUDE [rbac-admin-units-apis-write](../includes/rbac-for-apis/rbac-admin-units-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -97,7 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id1}/memb
 ---
 
 ### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

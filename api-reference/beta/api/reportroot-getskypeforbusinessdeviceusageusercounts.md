@@ -2,9 +2,10 @@
 title: "reportRoot: getSkypeForBusinessDeviceUsageUserCounts"
 description: "Get the usage trends on how many users in your organization have connected using the Skype for Business app. You'll also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getSkypeForBusinessDeviceUsageUserCounts
@@ -83,7 +84,7 @@ Here's an example that outputs CSV.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -98,7 +99,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessDeviceUsageUserC
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -129,7 +130,7 @@ Here's an example that returns JSON.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -144,7 +145,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessDeviceUsageUserC
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

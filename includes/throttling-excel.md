@@ -1,11 +1,12 @@
 ---
 author: "lumine2008"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: excel
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
-<!-- this file is auto-generated don't edit it manually! -->
+
+For explanations and best practices related to Excel service throttling, see [Reduce throttling errors](/graph/workbook-best-practice#reduce-throttling-errors). In addition, following are some throttling limits.
 
 | Request type | Limit per app for all tenants | Limit per app per tenant |
 | ------------ | ----------------------------- | ------------------------ |

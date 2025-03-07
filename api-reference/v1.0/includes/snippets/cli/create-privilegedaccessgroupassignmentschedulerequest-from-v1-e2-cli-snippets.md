@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc identity-governance privileged-access group assignment-schedule-requests create --body '{\
   "accessId": "member", \
   "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", \

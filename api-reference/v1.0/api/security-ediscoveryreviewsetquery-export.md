@@ -3,8 +3,9 @@ title: "ediscoveryReviewSetQuery: export"
 description: "Initiate an export from a reviewSet query."
 author: "vbhatt0211"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # ediscoveryReviewSetQuery: export
@@ -60,7 +61,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 

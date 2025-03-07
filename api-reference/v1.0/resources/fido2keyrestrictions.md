@@ -4,8 +4,9 @@ description: "Represents the key restrictions that are enforced as part of the F
 author: "calvinlui"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # fido2KeyRestrictions resource type
@@ -25,7 +26,7 @@ Represents the key restrictions that are enforced as part of the [FIDO2 security
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.fido2KeyRestrictions"

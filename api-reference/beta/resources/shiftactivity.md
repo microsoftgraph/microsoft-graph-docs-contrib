@@ -3,8 +3,9 @@ title: "shiftActivity resource type"
 description: "Represents an activity in a shift."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # shiftActivity resource type
@@ -24,9 +25,13 @@ Represents an activity in a [shift](shift.md).
 | code               | `string`                  | Customer defined code for the `shiftActivity`. Required.    |
 | displayName               | `string`                  | The name of the `shiftActivity`. Required.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -2,9 +2,10 @@
 title: "windowsDriverUpdateProfileAssignment resource type"
 description: "This entity contains the properties used to assign a windows driver update profile to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsDriverUpdateProfileAssignment resource type

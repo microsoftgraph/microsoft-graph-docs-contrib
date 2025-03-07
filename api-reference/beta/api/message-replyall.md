@@ -3,8 +3,9 @@ title: "message: replyAll"
 description: "Reply to all recipients of a message using either JSON or MIME format."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # message: replyAll
@@ -70,7 +71,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Reply-all to a message in JSON format
 The following example includes a comment and adds an attachment to the reply-all message.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -131,7 +132,7 @@ Content-Type: application/json
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -161,7 +162,7 @@ bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM...
 ```
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

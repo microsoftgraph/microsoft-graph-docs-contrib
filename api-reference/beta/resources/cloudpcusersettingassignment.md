@@ -3,8 +3,9 @@ title: "cloudPcUserSettingAssignment  resource type"
 description: "Represents a defined collection of user setting assignments."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # cloudPcUserSettingAssignment  resource type
@@ -28,7 +29,7 @@ Represents a defined collection of user setting assignments.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

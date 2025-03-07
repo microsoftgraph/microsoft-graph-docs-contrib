@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphteams.NewSharePostRequestBody()
 notifyTeam := true
@@ -24,6 +24,7 @@ requestBody.SetStartDateTime(&startDateTime)
 endDateTime , err := time.Parse(time.RFC3339, "2018-10-15T00:00:00.000Z")
 requestBody.SetEndDateTime(&endDateTime) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Teams().ByTeamId("team-id").Schedule().Share().Post(context.Background(), requestBody, nil)
 
 

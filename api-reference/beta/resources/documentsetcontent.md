@@ -4,7 +4,8 @@ title: documentSetContent resource type
 description: The documentSetContent resource contains metadata about a file present in default content location of a content.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
+ms.date: 03/06/2024
 ---
 
 # documentSetContent resource type
@@ -21,6 +22,9 @@ Contains metadata about a file present in default content location of a content 
 | contentType | microsoft.graph.contentTypeInfo | Content type information of the file.                                                                           |
 | fileName    | string                          | Name of the file in resource folder that should be added as a default content or a template in the document set |
 | folderName  | string                          | Folder name in which the file will be placed when a new document set is created in the library.                 |
+
+## Relationships
+None.
 
 ## JSON representation
 

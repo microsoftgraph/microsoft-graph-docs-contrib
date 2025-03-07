@@ -4,8 +4,9 @@ description: "Update the properties of the settings object. "
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 07/22/2024
 ---
 
 # Update userSettings
@@ -16,7 +17,7 @@ Update the properties of the [userSettings](../resources/usersettings.md) object
 Users in the same organization can have different settings based on their preference or on the organization policies. 
 To get the user current settings, see [current user settings](usersettings-get.md). 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ### Batch request
 
@@ -119,7 +120,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

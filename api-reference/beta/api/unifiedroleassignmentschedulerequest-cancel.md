@@ -3,8 +3,9 @@ title: "unifiedRoleAssignmentScheduleRequest: cancel"
 description: "Immediately cancel a unifiedRoleAssignmentScheduleRequest object whose status is Granted."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # unifiedRoleAssignmentScheduleRequest: cancel

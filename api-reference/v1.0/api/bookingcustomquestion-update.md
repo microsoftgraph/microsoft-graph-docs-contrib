@@ -3,8 +3,9 @@ title: "Update bookingCustomQuestion"
 description: "Update the properties of a bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # Update bookingCustomQuestion
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

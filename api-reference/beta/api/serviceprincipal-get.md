@@ -3,8 +3,9 @@ title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of serviceprincipal object."
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 10/01/2024
 ---
 
 # Get servicePrincipal
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [servicePrincipal](../resources/serviceprincipal.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -25,8 +26,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-get-permissions.md)]
 
 > [!NOTE]
-> A service principal can retrieve its own application and service principal details without being granted any application permissions.
-> The *Application.ReadWrite.OwnedBy* permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This scope of access has been allowed for the permission.
+> - A service principal can retrieve its own application and service principal details without being granted any application permissions.
+> - The *Application.ReadWrite.OwnedBy* permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This scope of access has been allowed for the permission.
+> - To read the **customSecurityAttributes** property:
+>   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.Read.All* delegated permission.
+>   - In app-only scenarios using Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.Reade.All* application permission.
 
 
 ## HTTP request
@@ -68,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -116,7 +120,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -184,7 +188,7 @@ Content-type: application/json
 ### Example 2: Retrieve a service principal by its appId and only specific properties
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -230,7 +234,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals(appId='00000003-0000-0000
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

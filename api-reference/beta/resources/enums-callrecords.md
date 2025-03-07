@@ -3,8 +3,9 @@ title: "Call records enum values"
 description: "Microsoft Graph call records enumeration values"
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 author: "gageames"
+ms.date: 03/06/2024
 ---
 
 # Call records enum values

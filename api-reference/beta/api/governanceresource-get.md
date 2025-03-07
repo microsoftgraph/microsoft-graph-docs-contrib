@@ -3,9 +3,10 @@ title: "Get governanceResource"
 description: "Retrieve the properties and relationships of a governanceResource object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
+ms.date: 08/02/2024
 ---
 
 # Get governanceResource
@@ -44,7 +45,7 @@ This method **only** supports  `$select` and `$expand` [OData Query Parameters](
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

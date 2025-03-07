@@ -3,7 +3,8 @@ title: "Use Microsoft Graph Data Connect to define the scope of a dataset"
 description: "Learn how to use Microsoft Graph Data Connect to extract objects."
 author: "rimisra2"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
+ms.date: 11/07/2024
 ---
 
 # Use Microsoft Graph Data Connect to define the scope of a dataset

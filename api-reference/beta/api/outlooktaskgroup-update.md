@@ -3,8 +3,9 @@ title: "Update outlooktaskgroup"
 description: "Update the writable properties of an Outlook task group."
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/22/2024
 ---
 
 # Update outlooktaskgroup (deprecated)
@@ -60,7 +61,7 @@ The following example changes the name of a task group to "Personal Tasks".
   "sampleKeys": ["AAMkADIyAAAhrbe-AAA="]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=
+PATCH https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=
 Content-type: application/json
 
 {
@@ -103,7 +104,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

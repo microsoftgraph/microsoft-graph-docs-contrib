@@ -3,8 +3,9 @@ title: "educationClass: delta"
 description: "Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection."
 ms.localizationpriority: medium
 author: "mlafleur"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 08/02/2024
 ---
 
 # educationClass: delta
@@ -36,7 +37,7 @@ GET /education/classes/delta
 
 | Name          | Description   |
 | :------------ | :------------ |
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

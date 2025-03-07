@@ -3,8 +3,9 @@ title: "virtualAppointment: sendVirtualAppointmentSms"
 description: "Send a virtual appointment SMS notification."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # virtualAppointment: sendVirtualAppointmentSms

@@ -2,9 +2,10 @@
 title: "reportRoot: getTeamsUserActivityTotalDistributionCounts"
 description: "Get the number of Microsoft Teams user activities over the selected period. The activity types are team chat messages, private chat messages, calls, meetings, meetings organized, meetings attended, audio duration, video duration, screen share duration, post messages, and reply messages."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "zhiliqiao"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getTeamsUserActivityTotalDistributionCounts

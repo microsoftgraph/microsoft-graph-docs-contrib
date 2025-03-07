@@ -3,8 +3,9 @@ author: chackman
 description: "Follow a driveItem."
 title: Follow drive item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 # Follow drive item
 
@@ -54,7 +55,7 @@ This example follows an item identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 
 ```http
-POST /me/drive/items/{item-id}/follow
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/follow
 ```
 
 # [C#](#tab/csharp)

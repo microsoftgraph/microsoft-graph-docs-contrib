@@ -2,9 +2,10 @@
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event, message, or post.  "
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "SuryaLashmiS"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # itemAttachment resource type
@@ -40,7 +41,7 @@ Derived from [attachment](attachment.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

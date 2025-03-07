@@ -3,8 +3,9 @@ title: "Update linkedResource_v2"
 description: "Update the properties of a linkedResource_v2 object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update linkedResource_v2 (deprecated)

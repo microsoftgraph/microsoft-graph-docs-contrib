@@ -3,8 +3,9 @@ title: "recentNotebook resource type"
 description: "A recently accessed OneNote notebook. A **recentNotebook** is similar to a notebook but has fewer properties."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: notes
+ms.subservice: onenote
 author: "jewan-microsoft"
+ms.date: 07/22/2024
 ---
 
 # recentNotebook resource type
@@ -23,9 +24,12 @@ A recently accessed OneNote notebook. A **recentNotebook** is similar to a [note
 |links|[recentNotebookLinks](recentnotebooklinks.md)|Links for opening the notebook. The `oneNoteClientURL` link opens the notebook in the OneNote client, if it's installed. The `oneNoteWebURL` link opens the notebook in OneNote on the web.|
 |sourceService|String|The backend store where the Notebook resides, either `OneDriveForBusiness` or `OneDrive`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -49,6 +53,6 @@ The following is a JSON representation of the resource.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [notebook](notebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
+|[Get recent notebooks](../api/notebook-getrecentnotebooks.md) | [notebook](notebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
 
 

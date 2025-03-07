@@ -2,9 +2,10 @@
 title: "wipeAndBlockManagedApps action"
 description: "Blocks the managed app user from app check-in."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # wipeAndBlockManagedApps action
@@ -20,16 +21,13 @@ Blocks the managed app user from app check-in.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-To call this API, you must have the Intune Role Permission "Application -> Wipe" and one of the listed permissions for Delegated permission type.  The Intune Role Permission only supports delegated authentication.  Although the API supports Application only permission type, the API call cannot be completed without the Intune Role delegated permission.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
-|Intune Role (RBAC)|Application -> Wipe|
-
-> **Note:** The Intune role permission is required for both delegated and app-only authentication scenarios.
 
 ## HTTP Request
 <!-- {

@@ -4,8 +4,9 @@ description: "Retrieve the properties and relationships of a conditionalAccessTe
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Get conditionalAccessTemplate
@@ -20,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "conditionalaccesstemplate_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/conditionalaccesstemplate-get-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-read](../includes/rbac-for-apis/rbac-conditionalaccess-apis-read.md)]
 
 ## HTTP request
 
@@ -52,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [conditionalAc
 ### Example 1: Get the properties a template by ID
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -175,7 +178,7 @@ Content-Type: application/json
 ### Example 2: Select details of a template
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

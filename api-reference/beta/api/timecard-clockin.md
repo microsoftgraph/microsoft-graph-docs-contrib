@@ -3,8 +3,9 @@ title: "timeCard: clockIn"
 description: "Clock in to start a timecard."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # timeCard: clockIn
@@ -19,15 +20,13 @@ Clock in to start a [timeCard](../resources/timeCard.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All* |
+<!-- { "blockType": "permissions", "name": "timecard_clockin" } -->
+[!INCLUDE [permissions-table](../includes/permissions/timecard-clockin-permissions.md)]
 
->\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
+> [!IMPORTANT]
+> When you use the Schedule.ReadWrite.All application permission, you must include the `MS-APP-ACTS-AS` header in the request.
 
 ## HTTP request
 
@@ -51,9 +50,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|atApprovedLocation| `Edm.boolean ` | Indicate if this action happens at an approved location.|
-|onBehalfOfUserId| String | Optional parameter used by the manager to clock in on behalf of a user.|
-|notes| [itemBody](../resources/itembody.md)  |Notes for the clock in. |
+|isAtApprovedLocation|Boolean|Indicates whether this action happens at an approved location.|
+|notes|[itemBody](../resources/itembody.md)|Notes for the clock in.|
+|atApprovedLocation (deprecated)|Boolean|Indicates whether this action happens at an approved location. This property will be removed by November 27, 2027. Use `isAtApprovedLocation` instead. `atApprovedLocation` and `isAtApprovedLocation` always have the same value, so setting one automatically sets the value for the other. If both are included in the request with different values, the value for `isAtApprovedLocation` takes precedence.|
 
 ## Response
 
@@ -75,10 +74,10 @@ POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32
 Content-type: application/json
 
 {
-    "atAprovedLocation": true,
+    "isAtApprovedLocation": true,
     "notes": {
         "contentType": "text",
-        "content": "clock in notes"
+        "content": "clocking in"
     }
 }
 ```
@@ -152,10 +151,11 @@ Content-type: application/json
     },
     "clockInEvent": {
         "dateTime": "2021-05-27T22:58:41.327Z",
-        "atApprovedLocation": null,
+        "atApprovedLocation": true,
+        "isAtApprovedLocation": true,
         "notes": {
             "contentType": "text",
-            "content": "clock in notes"
+            "content": "clocking in"
         }
     },
     "breaks": [],
@@ -163,10 +163,11 @@ Content-type: application/json
         "clockOutEvent": null,
         "clockInEvent": {
             "dateTime": "2021-05-27T22:58:41.327Z",
-            "atApprovedLocation": null,
+            "atApprovedLocation": true,
+            "isAtApprovedLocation": true,
             "notes": {
                 "contentType": "text",
-                "content": "clock in notes"
+                "content": "clocking in"
             }
         },
         "breaks": []

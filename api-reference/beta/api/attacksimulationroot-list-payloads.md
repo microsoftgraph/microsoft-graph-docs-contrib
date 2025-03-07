@@ -3,8 +3,9 @@ title: "List payloads"
 description: "Get a list of payloads for attack simulation campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 07/24/2024
 ---
 
 # List payloads
@@ -47,13 +48,15 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $count=true
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $filter={property} eq '{property-value}'
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $orderby={property}
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $skipToken={skipToken}
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $top=1
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $select={property}
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$count=true
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&{property} eq '{property-value}'
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&{property} eq '{property-value}' &$top=5
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$filter={property} eq '{property-value}'
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$orderby={property}
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$skipToken={skipToken}
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$top=1
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$select={property}
 ```
 
 ## Request headers
@@ -74,7 +77,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -118,7 +121,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/payloads?$filter=
 
 ### Response
 
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

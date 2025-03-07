@@ -3,8 +3,9 @@ title: printJobStatus resource type
 description: Represents the current status of a print job.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # printJobStatus resource type
@@ -46,8 +47,14 @@ Represents the current status of a print job.
 |releaseWait|5|Job is pending to be released.|
 |interpreting|6|Job is in 'processing' state, but more specifically, document payload is being interpreted.|
 
+## Relationships
+
+None.
+
 ## JSON representation
-Here's a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printJobStatus"

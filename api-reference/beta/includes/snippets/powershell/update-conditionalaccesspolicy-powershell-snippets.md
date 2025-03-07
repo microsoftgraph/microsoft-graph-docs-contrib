@@ -9,11 +9,11 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	conditions = @{
 		signInRiskLevels = @(
-			"high"
-			"medium"
-			"low"
-		)
-	}
+		"high"
+	"medium"
+"low"
+)
+}
 }
 
 Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId -BodyParameter $params

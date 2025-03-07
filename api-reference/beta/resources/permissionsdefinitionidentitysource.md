@@ -4,8 +4,9 @@ description: "An abstract type that defines the source of an identity that's req
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 04/18/2024
 ---
 
 # permissionsDefinitionIdentitySource resource type

@@ -3,8 +3,9 @@ title: "teamSummary resource type"
 description: "Contains information about a team in Microsoft Teams, including numbers of owners, members, and guests."
 ms.localizationpriority: medium
 author: "akhilkohlimicrosoft"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamSummary resource type
@@ -20,7 +21,7 @@ Contains information about a team in Microsoft Teams, including number of owners
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

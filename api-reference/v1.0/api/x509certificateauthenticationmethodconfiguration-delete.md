@@ -3,8 +3,9 @@ title: "Delete x509CertificateAuthenticationMethodConfiguration"
 description: "Delete the tenant-customized x509CertificateAuthenticationMethodConfiguration object and restore the default configuration."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # Delete x509CertificateAuthenticationMethodConfiguration

@@ -3,8 +3,9 @@ title: "communicationsUserIdentity resource type"
 description: "Represents the identity of a user present in Microsoft Entra ID who participates in a communication."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # communicationsUserIdentity resource type

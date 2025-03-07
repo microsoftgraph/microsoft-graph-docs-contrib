@@ -3,8 +3,9 @@ title: "passwordSingleSignOnField resource type"
 description: "Fields to capture the credentials for password SSO"
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 04/03/2024
 ---
 
 # passwordSingleSignOnField resource type
@@ -24,7 +25,7 @@ Contains the fields to capture to fill the use credentials for Password-based si
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

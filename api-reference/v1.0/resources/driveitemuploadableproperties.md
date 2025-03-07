@@ -3,8 +3,9 @@ title: "driveItemUploadableProperties resource type"
 description: "The driveItemUploadableProperties resource represents an item being uploaded when creating an upload session."
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # driveItemUploadableProperties resource type
@@ -15,7 +16,7 @@ Represents an item being uploaded when [creating an upload session](../api/drive
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

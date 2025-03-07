@@ -2,9 +2,10 @@
 title: "androidDeviceOwnerDelegatedScopeAppSetting resource type"
 description: "Represents one item in the list of managed apps with app details and its associated delegated scope(s)."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # androidDeviceOwnerDelegatedScopeAppSetting resource type

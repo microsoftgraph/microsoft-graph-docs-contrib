@@ -3,8 +3,9 @@ title: "Create taskList"
 description: "Create a new taskList object."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create baseTaskList (deprecated)

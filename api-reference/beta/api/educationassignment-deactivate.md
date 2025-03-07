@@ -3,8 +3,9 @@ title: "educationAssignment: deactivate"
 description: "Mark an assigned assignment as inactive to signal that the assignment has no further action items for teachers and students."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # educationAssignment: deactivate

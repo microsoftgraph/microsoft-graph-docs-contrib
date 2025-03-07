@@ -2,9 +2,10 @@
 title: "mobileContainedApp resource type"
 description: "An abstract class that represents a contained app in a mobileApp acting as a package."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # mobileContainedApp resource type
@@ -26,7 +27,7 @@ An abstract class that represents a contained app in a mobileApp acting as a pac
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 
 ## Relationships
 None

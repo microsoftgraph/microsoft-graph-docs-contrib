@@ -3,7 +3,8 @@ title: "Onboard managed devices with Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) used to onboard (configure and initialize) devices for a tenant organization."
 ms.localizationpriority: medium
 author: "jaiprakashmb"
-ms.prod: "intune"
+ms.subservice: "intune"
+ms.date: 04/01/2024
 ---
 
 # Enroll devices for management in Intune

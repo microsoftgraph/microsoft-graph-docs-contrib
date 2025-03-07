@@ -3,8 +3,9 @@ title: "educationModule: publish"
 description: "Change the state of an educationModule from its original draft status to the published status."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # educationModule: publish
@@ -22,7 +23,6 @@ Only teachers in the class can perform this operation. When a module is in draft
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationmodule_publish" } -->
-
 [!INCLUDE [permissions-table](../includes/permissions/educationmodule-publish-permissions.md)]
 
 ## HTTP request
@@ -38,7 +38,7 @@ POST /education/classes/{id}/modules/{id}/publish
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -54,7 +54,7 @@ The following example shows how to call this API.
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +103,7 @@ POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-
 
 ### Response
 
-Here's an example of a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -3,8 +3,9 @@ title: "unifiedRole resource type"
 description: "The directory roles that can be assigned to a Microsoft partner through a delegated admin relationship."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # unifiedRole resource type
@@ -23,7 +24,7 @@ The directory roles that can be assigned to a Microsoft partner through a delega
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unifiedRole"

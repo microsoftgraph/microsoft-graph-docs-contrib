@@ -3,8 +3,9 @@ title: "Update teamsAppSettings"
 description: "Update the properties of a teamsAppSettings object."
 author: "subray2014"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update teamsAppSettings

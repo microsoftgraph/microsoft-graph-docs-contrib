@@ -3,8 +3,9 @@ title: "socialIdentitySource resource type"
 description: "Identifies a social identity as an identity source for a connected organization."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # socialIdentitySource resource type

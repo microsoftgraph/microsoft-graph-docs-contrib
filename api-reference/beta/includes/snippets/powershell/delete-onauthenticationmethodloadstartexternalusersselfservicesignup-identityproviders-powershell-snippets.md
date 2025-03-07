@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Remove-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -IdentityProviderBaseId $identityProviderBaseId
+Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -IdentityProviderBaseId $identityProviderBaseId
 
 ```

@@ -3,8 +3,9 @@ title: "Get permissionGrantPolicy"
 description: "Retrieve a single permissionGrantPolicy object."
 ms.localizationpriority: medium
 doc_type: "apiPageType"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 04/04/2024
 ---
 
 # Get permissionGrantPolicy

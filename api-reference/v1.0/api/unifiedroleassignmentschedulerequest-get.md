@@ -3,8 +3,9 @@ title: "Get unifiedRoleAssignmentScheduleRequest"
 description: "In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get unifiedRoleAssignmentScheduleRequest

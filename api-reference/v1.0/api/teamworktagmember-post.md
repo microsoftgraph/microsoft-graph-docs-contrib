@@ -3,8 +3,9 @@ title: "Create teamworkTagMember"
 description: "Create a new teamworkTagMember object in a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create teamworkTagMember
@@ -53,7 +54,7 @@ If successful, this method returns a `201 Created` response code and a [teamwork
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

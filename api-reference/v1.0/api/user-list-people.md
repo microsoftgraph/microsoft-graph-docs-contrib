@@ -3,8 +3,9 @@ title: "List people"
 description: "Retrieve a collection of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships."
 author: "anthona"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List people

@@ -3,7 +3,8 @@ title: "Call records in the cloud communications API"
 description: "Get insights into the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business."
 author: "mcm223"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
+ms.date: 11/07/2024
 ---
 
 # Call records
@@ -17,7 +18,7 @@ Organizations can subscribe to changes to call records using the Microsoft Graph
 
 ## Subscribe to call records
 
-Organizations and partners often have their own tooling for generating reports about calls and online meetings. Using webhooks, they can receive a continuous feed of call records as they are created. This push-model enables organizations and partners to build their own real-time reporting solutions. A call record and its respective notification are created after a call or meeting ends.
+Organizations and partners often have their own tooling for generating reports about calls and online meetings. Using webhooks, they can receive a continuous feed of call records as they are created. This push model enables organizations and partners to build their own real-time reporting solutions. A call record and its respective notification are created after a call or meeting ends. For more information, see [Get change notifications for Microsoft Teams call records](/graph/changenotifications-for-callrecords).
 
 ## Look up a call record by its call ID
 

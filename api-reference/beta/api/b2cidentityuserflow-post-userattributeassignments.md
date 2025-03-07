@@ -3,8 +3,9 @@ title: "Create userAttributeAssignments"
 description: "Create a new identityUserFlowAttributeAssignment object."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Create userAttributeAssignments
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "b2cidentityuserflow_post_userattributeassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/b2cidentityuserflow-post-userattributeassignments-permissions.md)]
+
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 

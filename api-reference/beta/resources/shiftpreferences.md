@@ -3,8 +3,9 @@ title: "shiftPreferences resource type"
 description: "Represents a user's availability to be assigned shifts in the schedule."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # shiftPreferences resource type
@@ -39,7 +40,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

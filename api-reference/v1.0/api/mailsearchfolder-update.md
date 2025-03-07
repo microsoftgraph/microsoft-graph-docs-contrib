@@ -3,8 +3,9 @@ title: "Update mailSearchFolder"
 description: "Update the writable properties of a mailSearchFolder object."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
 # Update mailSearchFolder
@@ -38,7 +39,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Content-Type  | application/json. Required.  |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

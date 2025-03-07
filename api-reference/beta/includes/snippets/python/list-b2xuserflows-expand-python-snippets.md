@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.identity.b2xUserFlows.b2x_user_flows_request_builder import B2xUserFlowsRequestBuilder
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identity.b2x_user_flows.b2x_user_flows_request_builder import B2xUserFlowsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = B2xUserFlowsRequestBuilder.B2xUserFlowsRequestBuilderGetQueryParameters(
 		expand = ["identityProviders"],
 )
 
-request_configuration = B2xUserFlowsRequestBuilder.B2xUserFlowsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

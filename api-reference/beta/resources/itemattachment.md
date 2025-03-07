@@ -3,8 +3,9 @@ title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event,"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "SuryaLashmiS"
+ms.date: 05/23/2024
 ---
 
 # itemAttachment resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-A contact, event, or message that's attached to a user [event](../resources/event.md),
+A contact, event, or message attached to a user [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 
 Derived from [attachment](attachment.md).
@@ -40,11 +41,11 @@ Derived from [attachment](attachment.md).
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|The attached contact, message or event. Navigation property.|
+|item|[OutlookItem](outlookitem.md)|The attached contact, message, or event. Navigation property.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

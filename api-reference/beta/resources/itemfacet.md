@@ -1,10 +1,12 @@
 ---
 title: "itemFacet resource type"
-description: "itemFacet resource type"
+description: "Represents the abstract base type for the all resource types in the profile entity set."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.service: "microsoft-graph"
+ms.subservice: "people"
 doc_type: "resourcePageType"
+ms.date: 05/14/2024
 ---
 
 # itemFacet resource type
@@ -13,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.
+Represents the abstract base type for all resource types in the [profile](profile.md) entity set.
 
 ## Properties
 |Property|Type|Description|
@@ -26,12 +28,13 @@ Represents the abstract base type that all resource types in the [profile](profi
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created.|
 |source|[personDataSource](../resources/persondatasource.md)|Where the values within an entity originated if synced from another service.|
+|sources|[profileSourceAnnotation](../resources/profileSourceAnnotation.md) collection|Where the values within an entity originated if synced from another source.|
 
 ## Relationships
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -58,7 +61,12 @@ Here's a JSON representation of the resource.
   },
   "source": {
     "@odata.type": "microsoft.graph.personDataSource"
-  }
+  },
+  "sources": [
+    {
+      "@odata.type": "microsoft.graph.profileSourceAnnotation"
+    }
+  ]
 }
 ```
 

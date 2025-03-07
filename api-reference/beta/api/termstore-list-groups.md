@@ -3,8 +3,9 @@ title: "List groups"
 description: "Get the list of group objects of a store."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List groups

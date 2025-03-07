@@ -2,9 +2,10 @@
 title: "Get incremental changes to events in a calendar view"
 description: "Track event changes in calendar view using GET requests with the delta function. Example shows how to synchronize a user's default calendar in a set time range."
 author: "iamgirishck"
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/07/2024
 ---
 
 # Get incremental changes to events in a calendar view

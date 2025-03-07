@@ -3,8 +3,9 @@ title: "List accessReview reviewers (deprecated)"
 description: "In the Microsoft Entra access reviews feature, retrieve the reviewers of an accessReview object."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List accessReview reviewers (deprecated)

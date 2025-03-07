@@ -3,8 +3,9 @@ title: "updatableAsset resource type"
 description: "Represents an asset that can receive updates."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # updatableAsset resource type
@@ -24,18 +25,18 @@ This is an abstract type.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List updatableAsset resources](../api/adminwindowsupdates-list-updatableassets.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get a list of the [updatableAsset](../resources/windowsupdates-updatableasset.md) objects and their properties.|
-|[Create updatableAssetGroup](../api/adminwindowsupdates-post-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
-|[Get updatableAsset](../api/windowsupdates-updatableasset-get.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Read the properties and relationships of an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
-|[Delete updatableAsset](../api/windowsupdates-updatableasset-delete.md)|None|Delete an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
-|[Enroll asset in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll [updatableAssets](../resources/windowsupdates-updatableasset.md) in update management by the deployment service.|
-|[Enroll asset in management (by ID)](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll [updatableAssets](../resources/windowsupdates-updatableasset.md) of the same type in update management by the deployment service.|
-|[Unenroll asset from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll [updatableAssets](../resources/windowsupdates-updatableasset.md) from update management by the deployment service.|
-|[Unenroll asset from management (by ID)](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll [updatableAssets](../resources/windowsupdates-updatableasset.md) of the same type from update management by the deployment service.|
-|[Add members to group](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
-|[Add members to group (by ID)](../api/windowsupdates-updatableassetgroup-addmembersbyid.md)|None|Add members of the same type to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
-|[Remove members from group](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|Remove members from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
-|[Remove members from group (by ID)](../api/windowsupdates-updatableassetgroup-removemembersbyid.md)|None|Remove members of the same type from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[List updatable assets](../api/adminwindowsupdates-list-updatableassets.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get a list of the [updatableAsset](../resources/windowsupdates-updatableasset.md) objects and their properties.|
+|[Create updatable asset group](../api/adminwindowsupdates-post-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
+|[Get updatable asset](../api/windowsupdates-updatableasset-get.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Read the properties and relationships of an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
+|[Delete updatable asset](../api/windowsupdates-updatableasset-delete.md)|None|Delete an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
+|[Enroll in update management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources in update management by Windows Autopatch.|
+|[Enroll by ID](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources of the same type in update management by Windows Autopatch.|
+|[Unenroll from update management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources from update management by Windows Autopatch.|
+|[Unenroll by ID](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources of the same type from update management by Windows Autopatch.|
+|[Add members](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[Add members by ID](../api/windowsupdates-updatableassetgroup-addmembersbyid.md)|None|Add members of the same type to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[Remove members](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|Remove members from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[Remove members by ID](../api/windowsupdates-updatableassetgroup-removemembersbyid.md)|None|Remove members of the same type from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -46,7 +47,7 @@ This is an abstract type.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

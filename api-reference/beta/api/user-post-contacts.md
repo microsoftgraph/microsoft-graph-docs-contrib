@@ -3,8 +3,9 @@ title: "Create contact"
 description: "Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create contact

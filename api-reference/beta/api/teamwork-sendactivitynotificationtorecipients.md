@@ -3,9 +3,10 @@ title: "teamwork: sendActivityNotificationToRecipients"
 description:  Send activity feed notifications to multiple users in bulk.
 author: eddie-lee-msft
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 
+ms.date: 04/05/2024
 ---
 
 # teamwork: sendActivityNotificationToRecipients

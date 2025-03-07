@@ -3,8 +3,9 @@ title: "Delete conversation thread"
 description: "Delete a thread object."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete conversation thread

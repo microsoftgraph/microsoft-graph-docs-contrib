@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.planner.plans.item.details.details_request_builder import DetailsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.planner_plan_details import PlannerPlanDetails
 from msgraph.generated.models.planner_user_ids import PlannerUserIds
 from msgraph.generated.models.planner_category_descriptions import PlannerCategoryDescriptions
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = PlannerPlanDetails(
 	shared_with = PlannerUserIds(
 		additional_data = {
@@ -25,7 +25,7 @@ request_body = PlannerPlanDetails(
 	),
 )
 
-request_configuration = DetailsRequestBuilder.DetailsRequestBuilderPatchRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "return=representation")
 request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 

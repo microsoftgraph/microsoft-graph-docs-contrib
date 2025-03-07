@@ -3,8 +3,9 @@ title: "complianceInformation resource type"
 description: "Contains compliance data associated with secure score control."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # complianceInformation resource type
@@ -22,7 +23,7 @@ Contains compliance data associated with secure score control.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

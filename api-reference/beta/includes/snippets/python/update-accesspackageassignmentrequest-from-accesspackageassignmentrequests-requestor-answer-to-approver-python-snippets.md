@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
-from msgraph.generated.models.access_package_answer import AccessPackageAnswer
-from msgraph.generated.models.access_package_answer_string import AccessPackageAnswerString
-from msgraph.generated.models.access_package_multiple_choice_question import AccessPackageMultipleChoiceQuestion
-from msgraph.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
+from msgraph_beta.generated.models.access_package_answer import AccessPackageAnswer
+from msgraph_beta.generated.models.access_package_answer_string import AccessPackageAnswerString
+from msgraph_beta.generated.models.access_package_multiple_choice_question import AccessPackageMultipleChoiceQuestion
+from msgraph_beta.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageAssignmentRequest(
 	odata_type = "#microsoft.graph.accessPackageAssignmentRequest",
 	id = "7a6ab703-0780-4b37-8445-81f679b2d75c",
@@ -43,7 +42,7 @@ request_body = AccessPackageAssignmentRequest(
 	}
 )
 
-result = await graph_client.identity_governance.entitlement_management.assignment_requests.post(request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_requests.post(request_body)
 
 
 ```

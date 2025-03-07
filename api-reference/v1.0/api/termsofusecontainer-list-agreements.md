@@ -3,8 +3,9 @@ title: "List agreements"
 description: "Retrieve a list of agreement objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 04/04/2024
 ---
 
 # List agreements
@@ -20,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "termsofusecontainer_list_agreements" } -->
 [!INCLUDE [permissions-table](../includes/permissions/termsofusecontainer-list-agreements-permissions.md)]
+
+[!INCLUDE [rbac-tou-security-reader-apis](../includes/rbac-for-apis/rbac-tou-security-reader-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

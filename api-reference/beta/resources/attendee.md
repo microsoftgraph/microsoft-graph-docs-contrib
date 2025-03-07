@@ -1,10 +1,11 @@
 ---
 title: "attendee resource type"
-description: "An event attendee. The attendee can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant."
+description: "An event attendee. The attendee can be a person or resource, such as a meeting room or equipment, that is set up as a resource on the Exchange server for the tenant."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "iamgirishck"
+ms.date: 03/21/2024
 ---
 
 # attendee resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An event attendee. This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.
+An event attendee. An attendee can be a person or resource, such as a meeting room or equipment, that is set up as a resource on the Exchange server for the tenant.
 
 Derived from [attendeeBase](attendeebase.md).
 
@@ -25,9 +26,12 @@ Derived from [attendeeBase](attendeebase.md).
 |status|[ResponseStatus](responsestatus.md)|The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.|
 |type|String|The attendee type: `required`, `optional`, `resource`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

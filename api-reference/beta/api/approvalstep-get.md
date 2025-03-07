@@ -3,8 +3,9 @@ title: "Get approvalStep"
 description: "Retrieve the properties of an approvalStep object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Get approvalStep
@@ -25,6 +26,8 @@ The following tables show the least privileged permission or permissions require
 
 <!-- { "blockType": "permissions", "name": "approvalstep_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 <a name='for-pim-for-azure-ad-roles'></a>
 

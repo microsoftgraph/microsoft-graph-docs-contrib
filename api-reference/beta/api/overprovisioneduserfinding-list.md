@@ -4,8 +4,9 @@ description: "Get a list of the overprovisionedUserFinding objects and their pro
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # List overprovisionedUserFinding objects

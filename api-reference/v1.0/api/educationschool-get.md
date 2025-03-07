@@ -3,8 +3,9 @@ title: "Get educationSchool"
 description: "Read the properties and relationships of an educationSchool object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get educationSchool

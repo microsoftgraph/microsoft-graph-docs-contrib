@@ -4,7 +4,8 @@ description: "Get an open extension (openTypeExtension object) identified by nam
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "extensions"
+ms.subservice: extensions
+ms.date: 04/17/2024
 ---
 
 # Get openTypeExtension
@@ -47,7 +48,7 @@ Depending on the resource that contains the extension and the permission type (d
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+| [user](../resources/user.md) | User.Read | Not supported | User.Read.All |
 
 ## HTTP request
 

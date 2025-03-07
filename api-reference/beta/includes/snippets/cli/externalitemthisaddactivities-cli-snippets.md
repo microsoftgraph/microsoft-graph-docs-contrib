@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta external connections items microsoft-graph-external-connectors-add-activities post --external-connection-id {externalConnection-id} --external-item-id {externalItem-id} --body '{\
   "activities": [\
     {\

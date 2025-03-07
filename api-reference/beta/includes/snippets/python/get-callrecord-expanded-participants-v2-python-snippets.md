@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.communications.callRecords.item.call_record_item_request_builder import CallRecordItemRequestBuilder
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.communications.call_records.item.call_record_item_request_builder import CallRecordItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = CallRecordItemRequestBuilder.CallRecordItemRequestBuilderGetQueryParameters(
 		expand = ["participants_v2"],
 )
 
-request_configuration = CallRecordItemRequestBuilder.CallRecordItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

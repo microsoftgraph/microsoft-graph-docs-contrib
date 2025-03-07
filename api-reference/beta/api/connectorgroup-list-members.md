@@ -3,8 +3,9 @@ title: "List members"
 description: "Retrieve a list of connector objects associated with a connectorGroup."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # List members

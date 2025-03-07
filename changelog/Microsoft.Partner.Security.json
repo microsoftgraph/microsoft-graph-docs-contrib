@@ -1,0 +1,134 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "security",
+          "ChangeType": "Addition",
+          "Description": "Added the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "complianceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **complianceStatus** enumeration type.",
+          "Target": "complianceStatus"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "policyStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyStatus** enumeration type.",
+          "Target": "policyStatus"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "securityRequirementState",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityRequirementState** enumeration type.",
+          "Target": "securityRequirementState"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "securityRequirementType",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityRequirementType** enumeration type.",
+          "Target": "securityRequirementType"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customerMfaInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [customerMfaInsight](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-customerMfaInsight?view=graph-rest-beta) resource.",
+          "Target": "customerMfaInsight"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminsMfaEnforcedSecurityRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminsMfaEnforcedSecurityRequirement](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-adminsMfaEnforcedSecurityRequirement?view=graph-rest-beta) resource.",
+          "Target": "adminsMfaEnforcedSecurityRequirement"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customerInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [customerInsight](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-customerInsight?view=graph-rest-beta) resource.",
+          "Target": "customerInsight"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customersMfaEnforcedSecurityRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the [customersMfaEnforcedSecurityRequirement](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-customersMfaEnforcedSecurityRequirement?view=graph-rest-beta) resource.",
+          "Target": "customersMfaEnforcedSecurityRequirement"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customersSpendingBudgetSecurityRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the [customersSpendingBudgetSecurityRequirement](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-customersSpendingBudgetSecurityRequirement?view=graph-rest-beta) resource.",
+          "Target": "customersSpendingBudgetSecurityRequirement"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "partnerSecurity",
+          "ChangeType": "Addition",
+          "Description": "Added the [partnerSecurity](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-partnerSecurity?view=graph-rest-beta) resource.",
+          "Target": "partnerSecurity"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "partnerSecurityScore",
+          "ChangeType": "Addition",
+          "Description": "Added the [partnerSecurityScore](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-partnerSecurityScore?view=graph-rest-beta) resource.",
+          "Target": "partnerSecurityScore"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "responseTimeSecurityRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the [responseTimeSecurityRequirement](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-responseTimeSecurityRequirement?view=graph-rest-beta) resource.",
+          "Target": "responseTimeSecurityRequirement"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityRequirement](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-securityRequirement?view=graph-rest-beta) resource.",
+          "Target": "securityRequirement"
+        },
+        {
+          "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityScoreHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityScoreHistory](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-securityScoreHistory?view=graph-rest-beta) resource.",
+          "Target": "securityScoreHistory"
+        }
+      ],
+      "Id": "2dd9165c-c528-4423-a262-0d8341473032",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-30T21:02:50.6861196Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Partner Center security"
+    }
+  ]
+}

@@ -2,9 +2,10 @@
 title: "setAndroidDeviceOwnerFullyManagedEnrollmentState action"
 description: "Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # setAndroidDeviceOwnerFullyManagedEnrollmentState action

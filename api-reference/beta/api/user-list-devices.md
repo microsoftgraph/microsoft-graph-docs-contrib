@@ -4,8 +4,9 @@ description: "Get a list of user devices that support Project Rome capabilities.
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List user devices (deprecated)
@@ -34,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET me/devices
+GET /me/devices
 ```
 
 ## Request headers

@@ -3,8 +3,9 @@ title: "List peopleInsights"
 description: "Get the properties of an insightsSettings object for displaying or returning people insights in an organization."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # List peopleInsights

@@ -3,8 +3,9 @@ title: "sensitivityLabel: extractContentLabel"
 description: "Retrieve the contentLabel using the metadata from a labeled object."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # sensitivityLabel: extractContentLabel

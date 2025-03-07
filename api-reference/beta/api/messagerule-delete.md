@@ -3,8 +3,9 @@ title: "Delete messageRule"
 description: "Delete the specified messageRule object."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete messageRule
@@ -40,11 +41,11 @@ Don't supply a request body for this method.
 
 
 ## Response
-If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -54,7 +55,6 @@ Here is an example of the request.
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules/AQAAAJ5dZp8=
-
 ```
 
 # [C#](#tab/csharp)
@@ -91,8 +91,8 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules/AQAAAJ
 
 ---
 
-##### Response
-Here is an example of the response.
+### Response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "isEmpty": true

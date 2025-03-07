@@ -2,9 +2,10 @@
 title: "Get androidDeviceOwnerCompliancePolicy"
 description: "Read properties and relationships of the androidDeviceOwnerCompliancePolicy object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get androidDeviceOwnerCompliancePolicy
@@ -65,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1568
+Content-Length: 1641
 
 {
   "value": {
@@ -101,7 +102,8 @@ Content-Length: 1568
     "passwordPreviousPasswordCountToBlock": 4,
     "storageRequireEncryption": true,
     "securityRequireIntuneAppIntegrity": true,
-    "requireNoPendingSystemUpdates": true
+    "requireNoPendingSystemUpdates": true,
+    "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
   }
 }
 ```

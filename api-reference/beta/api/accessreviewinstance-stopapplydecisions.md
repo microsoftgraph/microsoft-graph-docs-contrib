@@ -3,8 +3,9 @@ title: "accessReviewInstance: stopApplyDecisions"
 description: "Stop the apply decision action on when accessReviewInstance when the decision is in the process of being applied."
 author: "rahulsharm0210"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # accessReviewInstance: stopApplyDecisions

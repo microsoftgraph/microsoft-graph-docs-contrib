@@ -3,8 +3,9 @@ title: "teamworkSoftwareUpdateStatus resource type"
 description: "Represents the details about the update status of the software for various components, such as admin agent, company portal, firmware, operating system, partner agent, and Microsoft Teams client, in a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkSoftwareUpdateStatus resource type
@@ -23,8 +24,11 @@ Represents the details about the update status of the software for various compo
 |softwareFreshness|teamworkSoftwareFreshness|The update status of the software. The possible values are: `unknown`, `latest`, `updateAvailable`, `unknownFutureValue`.|
 
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkSoftwareUpdateStatus"

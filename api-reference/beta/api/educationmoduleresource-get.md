@@ -3,8 +3,9 @@ title: "Get educationModuleResource"
 description: "Get the properties of a specific resource on a module."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get educationModuleResource

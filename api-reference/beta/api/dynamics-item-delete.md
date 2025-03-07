@@ -5,8 +5,9 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete items
@@ -49,14 +50,14 @@ If successful, this method returns ```204 No Content``` response code. It doesn'
 
 **Request**
 
-Here's an example of the request.
+The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 ```
 
 **Response**
 
-Here's an example of the response. 
+The following example shows the response. 
 
 ```http
 HTTP/1.1 204 No Content

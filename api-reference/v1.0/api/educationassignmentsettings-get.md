@@ -3,8 +3,9 @@ title: "Get educationAssignmentSettings"
 description: "Read the properties and relationships of an educationAssignmentSettings object."
 author: "sharad-sharma-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get educationAssignmentSettings

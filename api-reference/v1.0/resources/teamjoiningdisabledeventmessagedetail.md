@@ -3,8 +3,9 @@ title: "teamJoiningDisabledEventMessageDetail resource type"
 description: "Represents the details of an event message about team joining disabled."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamJoiningDisabledEventMessageDetail resource type
@@ -23,7 +24,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |teamId|String|Unique identifier of the **team**.|
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamJoiningDisabledEventMessageDetail",

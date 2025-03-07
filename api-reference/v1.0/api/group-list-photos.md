@@ -3,8 +3,9 @@ title: "List photos"
 description: "Retrieve a list of profilePhoto objects."
 author: "kristinmcleod"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # List photos
@@ -39,7 +40,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

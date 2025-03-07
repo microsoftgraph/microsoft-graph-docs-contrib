@@ -3,8 +3,9 @@ author: spgraph-docs-team
 title: Update listItem
 description: Update the properties on a listItem.
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 # Update listItem
 

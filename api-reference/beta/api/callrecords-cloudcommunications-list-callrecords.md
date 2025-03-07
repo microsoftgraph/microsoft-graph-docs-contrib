@@ -3,8 +3,9 @@ title: "List callRecords"
 description: "Get a list of callRecord objects and their properties."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
+ms.date: 07/01/2024
 ---
 
 # List callRecords
@@ -17,6 +18,8 @@ Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and
 
 > [!WARNING]
 > A call record is created after a call or meeting ends and remains available for **30 days**. This API doesn't return call records older than 30 days.
+
+<!-- { "blockType": "ignored" } -->
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

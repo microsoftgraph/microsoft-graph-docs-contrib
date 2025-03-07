@@ -3,8 +3,9 @@ title: "Update plannerBucketTaskBoardTaskFormat"
 description: "Update the properties of a plannerBucketTaskBoardTaskFormat object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update plannerBucketTaskBoardTaskFormat
@@ -50,7 +51,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

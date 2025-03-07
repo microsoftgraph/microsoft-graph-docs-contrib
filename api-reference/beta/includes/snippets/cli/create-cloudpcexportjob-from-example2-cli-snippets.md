@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta device-management virtual-endpoint reports export-jobs create --body '{\
   "reportName": "RemoteConnectionQualityReports",\
   "select": [\
@@ -12,7 +12,7 @@ mgc-beta device-management virtual-endpoint reports export-jobs create --body '{
     "ManagedDeviceName",\
     "AvgRoundTripTimeInMsP50",\
     "LastConnectionRoundTripTimeInMs",\
-    "AvgAvailableBandwidthInMBpsP50",\
+    "AvgAvailableBandwidthInMbpsP50",\
     "LastConnectionAvailableBandWidthInMSps",\
     "AvgRemoteSignInTimeInSecP50",\
     "UDPConnectionPercentage",\

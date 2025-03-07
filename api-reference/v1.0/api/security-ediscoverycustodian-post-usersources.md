@@ -3,8 +3,9 @@ title: "Create custodian userSource"
 description: "Create a new custodian userSource object associated with an eDiscovery custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 10/28/2024
 ---
 
 # Create custodian userSource
@@ -55,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,7 +69,7 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 
 {
     "email": "admin@contoso.com",
-    "includedSources": "mailbox, site"
+    "includedSources": "mailbox"
 }
 ```
 

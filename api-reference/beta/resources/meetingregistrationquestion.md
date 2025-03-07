@@ -3,8 +3,9 @@ title: "meetingRegistrationQuestion resource type"
 description: "Represents a custom registration question, other than first name, last name, and email address, associated with a meetingRegistration."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # meetingRegistrationQuestion resource type
@@ -42,6 +43,9 @@ Represents a custom registration question, other than first name, last name, and
 | text | Question accepts a single line text answer. |
 | radioButton | Question accepts an answer chosen from radio buttons. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+
+## Relationships
+None.
 
 ## JSON representation
 

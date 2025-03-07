@@ -3,8 +3,9 @@ title: "synchronization resource type"
 description: "Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # synchronization resource type
@@ -18,7 +19,7 @@ Represents the capability for Microsoft Entra identity synchronization through t
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[acquireAccessToken](../api/synchronization-synchronization-acquireaccesstoken.md)|None| Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application. |
+|[Acquire access token](../api/synchronization-synchronization-acquireaccesstoken.md)|None| Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application. |
 |[Add secrets](../api/synchronization-serviceprincipal-put-synchronization.md)|None| Provide credentials for establishing connectivity with the target system. |
 
 ## Properties
@@ -34,7 +35,7 @@ Represents the capability for Microsoft Entra identity synchronization through t
 |templates|[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) collection| Preconfigured synchronization settings for a particular application.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.synchronization",

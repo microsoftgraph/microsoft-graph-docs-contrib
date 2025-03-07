@@ -3,8 +3,9 @@ title: "teamsAppDashboardCardIcon resource type"
 description: "Represents a configuration for the icon of a dashboard card in a teamsApp."
 author: "ashish-goel"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # teamsAppDashboardCardIcon resource type

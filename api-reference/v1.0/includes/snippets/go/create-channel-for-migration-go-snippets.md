@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewChannel()
 displayName := "Import_150958_99z"
@@ -24,10 +24,11 @@ requestBody.SetDescription(&description)
 createdDateTime , err := time.Parse(time.RFC3339, "2020-03-14T11:22:17.067Z")
 requestBody.SetCreatedDateTime(&createdDateTime) 
 additionalData := map[string]interface{}{
-	"microsoftGraphChannelCreationMode" : "migration", 
+	"@microsoft.graph.channelCreationMode" : "migration", 
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 channels, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 

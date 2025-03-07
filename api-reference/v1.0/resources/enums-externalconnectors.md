@@ -3,8 +3,9 @@ title: "External connectors enum values"
 description: "Microsoft Graph external connectors enumeration values"
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 author: "emzho"
+ms.date: 03/06/2024
 ---
 
 # External connectors enum values

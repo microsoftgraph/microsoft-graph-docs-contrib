@@ -3,8 +3,9 @@ title: "List childHostPairs"
 description: "Get the list of hostPair resources associated with a host, where that host is the parent and has an outgoing pairing to a child."
 author: "jakedavies-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List childHostPairs
@@ -73,7 +74,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -3,8 +3,9 @@ title: "Create notebook"
 description: "Create a new OneNote notebook."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Create notebook
@@ -38,7 +39,7 @@ POST /sites/{id}/onenote/notebooks
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string | `application/json` |
 
 ## Request body

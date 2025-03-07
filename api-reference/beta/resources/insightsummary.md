@@ -3,8 +3,9 @@ title: "insightSummary resource type"
 description: "Represents a daily or monthly summary of all usage insights on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # insightSummary resource type
@@ -16,7 +17,6 @@ Namespace: microsoft.graph
 Represents a daily or monthly summary of all usage insights on apps registered in your tenant that is configured for Microsoft Entra External ID for customers. A user (in **activeUsers**) can be counted more that once if they use multiple device platforms.
 
 This resource represents a summary of the insights. For a breakdown of each insight, see the following resources and their associated APIs:
-- [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md)
 - [activeUsers](../resources/activeusersmetric.md)
 - [authentications](../resources/authenticationsmetric.md)
 - [mfaCompletion](../resources/mfacompletionmetric.md)
@@ -29,8 +29,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily summary](../api/dailyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md) collection|Get a list of daily [insightSummary](../resources/insightsummary.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
-|[List monthly summary](../api/monthlyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md) collection|Get a list of monthly  [insightSummary](../resources/insightsummary.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List daily](../api/dailyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md) collection|Get a list of daily [insightSummary](../resources/insightsummary.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List monthly](../api/monthlyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md) collection|Get a list of monthly  [insightSummary](../resources/insightsummary.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|

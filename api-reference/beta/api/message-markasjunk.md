@@ -3,8 +3,9 @@ title: "message: markAsJunk"
 description: "Mark a message as junk."
 author: "kagunase"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # message: markAsJunk

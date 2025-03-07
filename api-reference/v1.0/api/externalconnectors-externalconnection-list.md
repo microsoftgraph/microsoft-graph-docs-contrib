@@ -3,8 +3,9 @@ title: "List externalConnections"
 description: "Get a list of the externalConnection objects and their properties."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List externalConnections

@@ -4,7 +4,7 @@ description: "Represents a Kusto Query Language (KQL) advanced hunting query."
 ms.date: 01/29/2023
 author: "AviadHasidof"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

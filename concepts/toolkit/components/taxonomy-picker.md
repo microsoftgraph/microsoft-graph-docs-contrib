@@ -3,6 +3,7 @@ title: "Taxonomy picker component in the Microsoft Graph Toolkit"
 description: "Use the taxonomy picker component to query the Microsoft Graph API for Taxonomy and render a dropdown control with terms."
 ms.localizationpriority: medium
 author: anoopt
+ms.date: 11/07/2024
 ---
 
 # Taxonomy picker component in the Microsoft Graph Toolkit

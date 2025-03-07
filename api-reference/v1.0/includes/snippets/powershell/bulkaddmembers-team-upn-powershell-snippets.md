@@ -17,11 +17,11 @@ $params = @{
 		@{
 			"@odata.type" = "microsoft.graph.aadUserConversationMember"
 			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"
-		}
-	)
+			"owner"
+		)
+		"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"
+	}
+)
 }
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params

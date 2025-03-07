@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.device_compliance_device_status import DeviceComplianceDeviceStatus
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+from msgraph.generated.models.compliance_status import ComplianceStatus
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = DeviceComplianceDeviceStatus(
 	odata_type = "#microsoft.graph.deviceComplianceDeviceStatus",
 	device_display_name = "Device Display Name value",

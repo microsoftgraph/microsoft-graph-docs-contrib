@@ -3,8 +3,9 @@ title: "List includeApplications (for a user flow)"
 description: "List applications for an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/06/2024
 ---
 
 # List includeApplications (for a user flow)
@@ -13,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the applications linked to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. These are the applications for which the authentication experience that's defined by the user flow is enabled.
+
+To find the user flow that's linked to an application, see [Example 4: List user flow associated with specific application ID](../api/identitycontainer-list-authenticationeventsflows.md#example-4-list-user-flow-associated-with-specific-application-id).
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
@@ -53,7 +56,7 @@ If successful, this method returns a `200 OK` and a collection of [identityUserF
 ## Examples
 
 ### Request
-Here's an example of a request to retrieve the list of applications associated with a user flow.
+The following example shows a request to retrieve the list of applications associated with a user flow.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -99,7 +102,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 ---
 
 ### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

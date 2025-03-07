@@ -3,8 +3,9 @@ title: "businessScenarioGroupTarget resource type"
 description: "Represents a [group](../resources/group.md) which will be used as the target when creating tasks in a [businessScenario](businessscenario.md)."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # businessScenarioGroupTarget resource type
@@ -30,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.businessScenarioGroupTarget"

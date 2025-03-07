@@ -3,8 +3,9 @@ title: "List operations on a chat"
 description: "Retrieve operations on a chat."
 author: "jecha"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List operations on a chat
@@ -22,7 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_list_operations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-list-operations-permissions.md)]
 
-> **Note:** The ChatSettings.Read.Chat and ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChatSettings.Read.Chat and ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { 

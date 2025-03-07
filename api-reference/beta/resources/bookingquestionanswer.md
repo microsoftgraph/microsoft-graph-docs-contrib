@@ -3,8 +3,9 @@ title: "bookingQuestionAnswer resource type"
 description: "Contains a custom question, an answer given by the customer for the custom question, and the properties of the custom question at the time of creation of the appointment."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # bookingQuestionAnswer resource type
@@ -30,7 +31,7 @@ Contains a custom question, an answer given by the customer for the custom quest
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bookingQuestionAnswer"

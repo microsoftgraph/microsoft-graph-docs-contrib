@@ -3,8 +3,9 @@ title: "TableColumnCollection: add"
 description: "Adds a new column to the table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/06/2024
 ---
 
 # TableColumnCollection: add
@@ -44,7 +45,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |index|number|Specifies the relative position of the new column. The previous column at this position is shifted to the right. The index value should be equal to or less than the last column's index value, so it can't be used to append a column at the end of the table. Zero-indexed.|
-|values|(boolean or string or number) collection|Optional. A two-dimensional array of unformatted values of the table column.|
+|values|(Boolean or string or number) collection|Optional. A two-dimensional array of unformatted values of the table column.|
 
 ## Response
 
@@ -53,7 +54,7 @@ If successful, this method returns `200 OK` response code and [workbookTableColu
 ## Example
 Here's an example of how to call this API.
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +106,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

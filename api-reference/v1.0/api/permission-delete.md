@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Remove access to an item
 ms.localizationpriority: medium
 description: "Remove access to a DriveItem."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: apiPageType
 ---
 # Delete a sharing permission from a file or folder
@@ -58,7 +58,7 @@ This example removes the permission identified as {perm-id} from the item {item-
 <!-- { "blockType": "request", "name": "delete-permission-1", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
-DELETE /me/drive/items/{item-id}/permissions/{perm-id}
+DELETE https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
 # [C#](#tab/csharp)

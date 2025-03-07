@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta admin people profile-card-properties create --body '{\
   "directoryPropertyName": "CustomAttribute1",\
   "annotations": [\
@@ -12,7 +12,7 @@ mgc-beta admin people profile-card-properties create --body '{\
       "displayName": "Cost Center",\
       "localizations": [\
         {\
-          "languageTag": "ru-RU",\
+          "languageTag": "ru",\
           "displayName": "центр затрат"\
         }\
       ]\

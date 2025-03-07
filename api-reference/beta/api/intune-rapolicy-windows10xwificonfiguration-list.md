@@ -2,9 +2,10 @@
 title: "List windows10XWifiConfigurations"
 description: "List properties and relationships of the windows10XWifiConfiguration objects."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List windows10XWifiConfigurations
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 645
+Content-Length: 812
 
 {
   "value": [
@@ -76,6 +77,12 @@ Content-Length: 645
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
+      ],
+      "serverApplicabilityRules": [
+        {
+          "@odata.type": "microsoft.graph.applicabilityRule",
+          "filterType": "include"
+        }
       ],
       "authenticationCertificateId": "39b4cd38-cd38-39b4-38cd-b43938cdb439",
       "customXmlFileName": "Custom Xml File Name value",

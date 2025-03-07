@@ -4,7 +4,7 @@ description: The listItemVersion resource represents a previous version of a Lis
 ms.date: 09/17/2017
 title: ListItemVersion
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -30,29 +30,14 @@ The following tasks are available for listItemVersion resources.
 [version-get]: ../api/listitemversion-get.md
 [version-restore]: ../api/listitemversion-restore.md
 
-## JSON representation
-
-<!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.listItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
-
-```json
-{
-  "content": { "@odata.type": "Edm.Stream" },
-  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
-  "id": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
-  "published": { "@odata.type": "microsoft.graph.publicationFacet" }
-}
-```
-
 ## Properties
 
 | Property                 | Type                                                 | Description                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | The ID of the version. Read-only.                                       |
-| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
-| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
-| **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
+| id                  | string                                               | The ID of the version. Read-only.                                       |
+| lastModifiedBy       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
+| lastModifiedDateTime | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
+| published            | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
 
 ## Relationships
 
@@ -60,7 +45,27 @@ The following table defines the relationships that the **driveItemVersion** reso
 
 | Relationship | Type                                           | Description                                                              |
 | :----------- | :--------------------------------------------- | :----------------------------------------------------------------------- |
-| **fields**   | [FieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
+| fields   | [FieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
+
+## JSON representation
+
+<!-- { 
+	"blockType": "resource",
+	"keyProperty":"id", 
+	"baseType": "microsoft.graph.baseItemVersion",
+	"@odata.type": "microsoft.graph.listItemVersion", 
+	"@type.aka": "oneDrive.baseItemVersion" 
+} -->
+
+```json
+{
+  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "id": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
+  "published": { "@odata.type": "microsoft.graph.publicationFacet" }
+}
+```
 
 <!--
 {

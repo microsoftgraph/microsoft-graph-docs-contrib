@@ -3,8 +3,9 @@ title: "disableAndDeleteUserApplyAction resource type"
 description: "Disable and delete any B2B guest user who is denied in an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # disableAndDeleteUserApplyAction resource type

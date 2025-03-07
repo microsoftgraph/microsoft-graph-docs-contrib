@@ -3,8 +3,9 @@ title: "List recentPrinterShares"
 description: "Get a list of printer shares recently used by the signed-in user."
 author: "venkatnagula"
 ms.localizationpriority: medium
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # List recentPrinterShares

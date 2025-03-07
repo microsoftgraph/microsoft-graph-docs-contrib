@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new User
 {
@@ -23,12 +24,18 @@ var requestBody = new User
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"extkmpdyld2_graphLearnCourses" , new 
+			"extkmpdyld2_graphLearnCourses" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				CourseId = 100,
-				CourseName = "Explore Microsoft Graph",
-				CourseType = "Online",
-			}
+				{
+					"courseId", new UntypedString("100")
+				},
+				{
+					"courseName", new UntypedString("Explore Microsoft Graph")
+				},
+				{
+					"courseType", new UntypedString("Online")
+				},
+			})
 		},
 	},
 };

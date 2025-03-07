@@ -3,8 +3,9 @@ title: "unbilledUsage: export"
 description: "Export the unbilled Azure usage data for a specific billing period and a given currency."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # unbilledUsage: export
@@ -13,7 +14,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
-Export the unbilled Azure usage data for a specific billing period and a given currency.
+Export unbilled Azure usage data for a specific billing period and currency.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,7 +39,7 @@ POST /reports/partners/billing/usage/unbilled/export
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

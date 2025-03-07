@@ -3,8 +3,9 @@ title: "Get unifiedRoleManagementPolicy"
 description: "Retrieve the details of a role management policy."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get unifiedRoleManagementPolicy

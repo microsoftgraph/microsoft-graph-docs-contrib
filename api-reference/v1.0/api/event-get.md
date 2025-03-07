@@ -3,8 +3,9 @@ title: "Get event"
 description: "Get the properties and relationships of the specified event object."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get event
@@ -73,7 +74,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}. Required.  |
+| Authorization  | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 | Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
 
@@ -139,7 +140,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ##### Response 1
 
-Here is an example of the response. The **body** property is returned in the default format of HTML.
+The following example shows the response. The **body** property is returned in the default format of HTML.
 
 <!-- {
   "blockType": "response",
@@ -264,7 +265,7 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hM
 ---
 
 ##### Response 2
-Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for.
+The following example shows the response. The **locations** property includes details for the 3 locations that the event is organized for.
 
 Because the request does not specify any `Prefer: outlook.timezone` header,
 the **start** and **end** properties are displayed in the default UTC time zone.

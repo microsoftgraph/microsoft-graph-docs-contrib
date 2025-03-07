@@ -3,8 +3,9 @@ title: "cancelMediaProcessingOperation resource type"
 description: "This resource type is used to describe the response format of the cancel media processing operation."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # CancelMediaProcessingOperation resource type
@@ -28,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

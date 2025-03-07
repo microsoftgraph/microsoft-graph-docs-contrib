@@ -3,8 +3,9 @@ title: "List services"
 description: "Get a list of bookingService objects in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # List services
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a list of [bookingService](../resources/bookingservice.md) objects in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

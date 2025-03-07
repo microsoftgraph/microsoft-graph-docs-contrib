@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.security.attackSimulation.landingPages.landing_pages_request_builder import LandingPagesRequestBuilder
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.attack_simulation.landing_pages.landing_pages_request_builder import LandingPagesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = LandingPagesRequestBuilder.LandingPagesRequestBuilderGetQueryParameters(
 		filter = "source eq 'tenant'",
 )
 
-request_configuration = LandingPagesRequestBuilder.LandingPagesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

@@ -3,8 +3,9 @@ title: "List learningCourseActivities"
 description: "Get a list of the learningCourseActivity objects (assigned or self-initiated) for a user."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List learningCourseActivities

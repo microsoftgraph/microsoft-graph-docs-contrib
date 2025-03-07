@@ -4,7 +4,9 @@ description: "Delete a pendingExternalUserProfile object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.reviewer: mapamu
+ms.subservice: "entra-directory-management"
+ms.date: 10/11/2024
 ---
 
 # Delete pendingExternalUserProfile
@@ -23,11 +25,7 @@ Delete a [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "directory-delete-pendingexternaluserprofiles-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "directory_delete_pendingexternaluserprofiles" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directory-delete-pendingexternaluserprofiles-permissions.md)]
 
 [!INCLUDE [rbac-externaluserprofiles-apis-write](../includes/rbac-for-apis/rbac-externaluserprofiles-apis-write.md)]
@@ -43,7 +41,7 @@ DELETE /directory/pendingExternalUserProfiles/{id}
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -92,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/directory/pendingExternalUserProfiles/{i
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-pendingexternaluserprofile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-pendingexternaluserprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

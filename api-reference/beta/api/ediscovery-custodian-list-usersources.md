@@ -3,8 +3,9 @@ title: "List custodian userSources"
 description: "Get a list of the userSource objects and their properties."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List custodian userSources

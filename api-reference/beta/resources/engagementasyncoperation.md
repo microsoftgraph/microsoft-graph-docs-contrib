@@ -3,8 +3,9 @@ title: "engagementAsyncOperation resource type"
 description: "Represents the status of a Viva Engage async operation that is an operation that transcends the lifetime of a single API request."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: resourcePageType
+ms.date: 07/21/2024
 ---
 
 # engagementAsyncOperation resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents the status of a Viva Engage async operation that is an operation that transcends the lifetime of a single API request. These operations are long-running or too expensive to complete within the time frame of their original request.
 
-When an async operation is initiated, the method returns a `202 Accepted` response code and an operation location header that contains the location of the **engagementAsyncOperation**. Periodically check the status of the operation by making a GET request to this location; wait >30 seconds between checks. When the request completes successfully, the operation **status** indicates `succeeded` and the **resourceLocation** points to the created or modified resource.
+When an async operation is initiated, the method returns a `202 Accepted` response code and an `Operation-Location` header that contains the location of the **engagementAsyncOperation**. Periodically check the status of the operation by making a GET request to this location; wait >30 seconds between checks. When the request completes successfully, the operation **status** indicates `succeeded` and the **resourceLocation** points to the created or modified resource.
 
 Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
@@ -23,7 +24,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get engagementAsyncOperation](../api/engagementasyncoperation-get.md) | [engagementAsyncOperation](../resources/engagementasyncoperation.md) | Get an [engagementAsyncOperation](../resources/engagementasyncoperation.md) to track a long-running operation request. |
+| [Get](../api/engagementasyncoperation-get.md) | [engagementAsyncOperation](../resources/engagementasyncoperation.md) | Get an [engagementAsyncOperation](../resources/engagementasyncoperation.md) to track a long-running operation request. |
 
 ## Properties
 
@@ -44,6 +45,9 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 |:---------------|:----------|
 | createCommunity | Operation to create a Viva Engage community. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+
+## Relationships
+None.
 
 ## JSON representation
 

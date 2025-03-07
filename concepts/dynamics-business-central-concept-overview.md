@@ -5,7 +5,8 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
+ms.date: 11/07/2024
 ---
 
 # Dynamics 365 Business Central API overview (preview)

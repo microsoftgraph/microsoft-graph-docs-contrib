@@ -2,17 +2,18 @@
 title: "Examine Azure AD Graph APIs app usage"
 description: "Describes how to audit Azure Active Directory (Azure AD) Graph APIs to migrate an app to Microsoft Graph API."
 author: FaithOmbongi
-ms.reviewer: dkershaw
-ms.topic: conceptual
+ms.author: ombongifaith
+ms.reviewer: krbash
+ms.topic: quickstart
 ms.localizationpriority: medium
-ms.prod: applications
-ms.date: 02/14/2024
+ms.subservice: entra-applications
+ms.date: 02/14/2025
 #Customer intent: As a developer, I want to learn what to investigate in my app code and logic, so that I can migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Examine Azure AD Graph APIs app usage
 
-This is step 2 of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+> This article is step 2 in the [Azure AD Graph app migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) series.
 
 While planning your migration to Microsoft Graph, take time to review your existing application and to catalog the Azure Active Directory (Azure AD) Graph APIs you're currently using.
 

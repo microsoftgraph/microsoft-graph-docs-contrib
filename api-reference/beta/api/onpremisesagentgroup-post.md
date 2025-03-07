@@ -3,8 +3,9 @@ title: "Create onPremisesAgentGroup"
 description: "Create a new **onPremisesAgentGroup** object."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 05/14/2024
 ---
 
 # Create onPremisesAgentGroup
@@ -66,6 +67,10 @@ The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups
+
+{
+    "displayName": "New Group"
+}
 ```
 
 # [C#](#tab/csharp)
@@ -101,14 +106,6 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
-
-```json
-{
-    "displayName": "New Group"
-}
-```
 
 ### Response
 

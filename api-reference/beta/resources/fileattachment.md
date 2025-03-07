@@ -3,8 +3,9 @@ title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event, message, task, or post."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "SuryaLashmiS"
+ms.date: 09/23/2024
 ---
 
 # fileAttachment resource type
@@ -54,7 +55,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -78,7 +79,6 @@ Here's a JSON representation of the resource.
   "name": "string",
   "size": "Int32"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

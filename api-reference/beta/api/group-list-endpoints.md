@@ -4,8 +4,9 @@ description: "Retrieve a list of endpoint objects."
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List endpoints
@@ -103,7 +104,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 > Note: The response object shown here might be shortened for readability.
 

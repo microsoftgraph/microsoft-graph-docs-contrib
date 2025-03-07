@@ -3,8 +3,9 @@ title: "group: retryServiceProvisioning"
 description: "Retry the group service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: "apiPageType"
+ms.date: 03/13/2024
 ---
 
 # group: retryServiceProvisioning
@@ -37,7 +38,7 @@ POST /groups/{id}/retryServiceProvisioning
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -47,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -93,7 +94,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/retryServiceProvisioning
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

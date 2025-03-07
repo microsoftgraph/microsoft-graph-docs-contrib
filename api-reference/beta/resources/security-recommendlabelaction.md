@@ -3,8 +3,9 @@ title: "recommendLabelAction resource type"
 description: "Represents a label that should be recommended to the user for application to the file based on discovered sensitive information types."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # recommendLabelAction resource type
@@ -32,7 +33,7 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 | sensitivityLabel | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) | The label that is being recommended. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.recommendLabelAction"

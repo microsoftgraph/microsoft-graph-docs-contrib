@@ -3,8 +3,9 @@ title: "unifiedRoleEligibilityScheduleRequest: filterByCurrentUser"
 description: "Get a list of the unifiedRoleEligibilityScheduleRequest objects and their properties filtered by a particular user principal"
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # unifiedRoleEligibilityScheduleRequest: filterByCurrentUser

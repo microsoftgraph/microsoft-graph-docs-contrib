@@ -3,8 +3,9 @@ title: "peerConnectivityConfiguration resource type"
 description: "Specifies the customer's end of the tunnel configuration for a device link."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # peerConnectivityConfiguration resource type

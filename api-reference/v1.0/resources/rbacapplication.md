@@ -4,8 +4,9 @@ description: "Container for role definitions and role assignments for Microsoft 
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # rbacApplication resource type
@@ -41,7 +42,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

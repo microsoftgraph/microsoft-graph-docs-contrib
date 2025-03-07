@@ -3,8 +3,9 @@ title: List tasks
 description: Retrieve a list of task associated with a task definition.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List tasks

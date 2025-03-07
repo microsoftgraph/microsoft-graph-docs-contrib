@@ -3,8 +3,9 @@ title: "List monthly mfaCompletions"
 description: "Get a list of monthly MFA completions on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List monthly mfaCompletions

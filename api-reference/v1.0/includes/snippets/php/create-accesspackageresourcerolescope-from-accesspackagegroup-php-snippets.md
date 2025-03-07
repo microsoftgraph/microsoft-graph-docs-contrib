@@ -5,13 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessPackageResourceRoleScope;
+use Microsoft\Graph\Generated\Models\AccessPackageResourceRole;
+use Microsoft\Graph\Generated\Models\AccessPackageResource;
+use Microsoft\Graph\Generated\Models\AccessPackageResourceScope;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageResourceRoleScope();
 $role = new AccessPackageResourceRole();
-$role->setId('748f8431-c7c6-404d-8564-df67aa8cfc5e');
 $role->setDisplayName('Member');
 $role->setOriginSystem('AadGroup');
 $role->setOriginId('Member_0282e19d-bf41-435d-92a4-99bab93af305');

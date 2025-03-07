@@ -3,8 +3,9 @@ title: "disableAndDeleteUserApplyAction resource type"
 description: "Disable and delete any B2B guest user who is denied in an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # disableAndDeleteUserApplyAction resource type
@@ -26,7 +27,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.disableAndDeleteUserApplyAction"

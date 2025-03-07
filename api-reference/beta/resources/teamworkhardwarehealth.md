@@ -3,8 +3,9 @@ title: "teamworkHardwareHealth resource type"
 description: "Represents the details about the hardware health of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkHardwareHealth resource type
@@ -22,8 +23,11 @@ Represents the details about the hardware health of a Microsoft Teams-enabled [d
 |hdmiIngestHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The health details about the HDMI ingest of a device.|
 
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkHardwareHealth"

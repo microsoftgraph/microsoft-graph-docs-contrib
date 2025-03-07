@@ -3,8 +3,9 @@ title: "Get workbookApplication"
 description: "Retrieve the properties and relationships of a workbookApplication object."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get workbookApplication
@@ -42,7 +43,7 @@ If successful, this method returns a `200 OK` response code and a [workbookAppli
 
 ## Example
 ### Request
-Here is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -85,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application
 ---
 
 ### Response
-Here is an example of the response. 
+The following example shows the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

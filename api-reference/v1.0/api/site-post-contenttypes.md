@@ -4,7 +4,8 @@ title: "Create a content type"
 description: "Create a content type in a site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
+ms.date: 04/04/2024
 ---
 
 # Create a content type

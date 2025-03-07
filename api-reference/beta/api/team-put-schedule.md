@@ -2,8 +2,9 @@
 title: "Create or replace schedule"
 description: "Create or replace a **schedule** object."
 author: "shanemalone"
+ms.date: 12/04/2024
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -141,6 +142,7 @@ Content-type: application/json
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Sunday",
   "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": true,
   "isCrossLocationShiftsEnabled": true,
   "isCrossLocationShiftRequestApprovalRequired": true
 }
@@ -170,17 +172,10 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
   "offerShiftRequestsEnabled": true,
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Tuesday",
-  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": true,
   "isCrossLocationShiftsEnabled": true,
   "isCrossLocationShiftRequestApprovalRequired": true,
-  "timeClockEnabled": true,
-  "timeClockSettings": {
-    "approvedLocation": {
-      "altitude": 1024.13,
-      "latitude": 26.13246,
-      "longitude": 24.34616
-    }
-  }
+  "timeClockEnabled": true
 }
 ```
 
@@ -209,7 +204,7 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-put-schedule-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -244,16 +239,10 @@ Content-type: application/json
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Tuesday",
   "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": true,
   "isCrossLocationShiftsEnabled": true,
   "isCrossLocationShiftRequestApprovalRequired": true,
-  "timeClockEnabled": true,
-  "timeClockSettings": {
-    "approvedLocation": {
-      "altitude": 1024.13,
-      "latitude": 26.13246,
-      "longitude": 24.34616
-    }
-  }
+  "timeClockEnabled": true
 }
 ```
 

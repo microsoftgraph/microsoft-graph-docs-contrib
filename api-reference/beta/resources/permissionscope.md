@@ -3,8 +3,9 @@ title: "permissionScope resource type"
 description: "Represents the definition of a delegated permission, sometimes referred to as an OAuth 2.0 permission or an OAuth 2.0 scope. Once defined, the delegated permission may then be requested by a client application"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
+ms.date: 03/21/2024
 ---
 
 # permissionScope resource type
@@ -30,9 +31,12 @@ Delegated permissions can be requested by client applications needing an access 
 |userConsentDisplayName|String|A title for the permission, intended to be read by a user granting the permission on their own behalf. This text appears in consent experiences where the user is consenting only on behalf of themselves.|
 |value|String|Specifies the value to include in the `scp` (scope) claim in access tokens. Must not exceed 120 characters in length. Allowed characters are `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~`, and characters in the ranges `0-9`, `A-Z` and `a-z`. Any other character, including the space character, aren't allowed. May not begin with `.`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

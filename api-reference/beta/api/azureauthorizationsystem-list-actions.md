@@ -4,8 +4,9 @@ description: "List the azureAuthorizationSystemTypeAction objects and their prop
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List actions (for an Azure authorization system)

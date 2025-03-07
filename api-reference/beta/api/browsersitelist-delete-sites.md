@@ -3,8 +3,9 @@ title: "Delete browserSite"
 description: "Delete a browserSite from a browserSiteList."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete browserSite
@@ -49,7 +50,7 @@ If the site was not previously published, then this method returns a `204 No Con
 ### Example 1: Delete a site that was not previously published
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +111,7 @@ HTTP/1.1 204 No Content
 ### Example 2: Delete a site that was previously published
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

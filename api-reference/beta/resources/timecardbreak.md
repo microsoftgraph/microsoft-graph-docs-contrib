@@ -3,8 +3,9 @@ title: "timeCardBreak resource type"
 description: "Represents a specific timecard break."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # timeCardBreak resource type
@@ -23,10 +24,13 @@ Represents a specific [timeCard](timecard.md) break.
 | end			        |[timeCardEvent](timecardevent.md)    | The start event of the **timeCardBreak**.|
 | notes			        |[itemBody](itembody.md)  | Notes about the **timeCardBreak**.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,8 +3,9 @@ title: "Create table"
 description: "Use this API to create a new Table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create table
@@ -40,15 +41,15 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter           | Type      |Description|
 |:---------------|:----------|:----------|
 | Address  | string| Range address. If you're calling this API off of `worksheets/{id or name}/tables/add` path, there's no need to for sheet name prefix in the address. However, if you're calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
-| hasHeaders  | boolean|Boolean value that indicates whether the range has column labels. If the source doesn't contain headers (when this property set to false), Excel will automatically generate header shifting the data down by one row.|
+| hasHeaders  | Boolean|Boolean value that indicates whether the range has column labels. If the source doesn't contain headers (when this property set to false), Excel will automatically generate header shifting the data down by one row.|
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookTable](../resources/table.md) object in the response body.
+If successful, this method returns `201 Created` response code and [workbookTable](../resources/workbooktable.md) object in the response body.
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_table_from_worksheet_01"
@@ -63,7 +64,7 @@ Content-type: application/json
 }
 ```
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

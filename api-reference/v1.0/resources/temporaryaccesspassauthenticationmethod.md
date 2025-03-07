@@ -4,8 +4,11 @@ description: "Represents a Temporary Access Pass registered to a user."
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+toc.title: Temporary Access Pass
+toc.keywords: [ TAP ]
+ms.date: 07/22/2024
 ---
 
 # temporaryAccessPassAuthenticationMethod resource type
@@ -40,7 +43,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Relationships
 None.
 
-## JSON representation
+The following JSON representation shows the resource type.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

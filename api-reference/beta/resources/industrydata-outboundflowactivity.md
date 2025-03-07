@@ -3,8 +3,9 @@ title: "outboundFlowActivity resource type"
 description: "Represents details about the run of an outbound flow."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # outboundFlowActivity resource type
@@ -33,7 +34,7 @@ Inherits from [industryDataRunActivity](industrydata-industrydatarunactivity.md)
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

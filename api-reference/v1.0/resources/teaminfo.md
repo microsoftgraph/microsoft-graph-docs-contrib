@@ -3,8 +3,9 @@ title: "teamInfo resource type"
 description: "Represents a team with basic information."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # teamInfo resource type
@@ -24,7 +25,7 @@ Base type of [associatedTeamInfo](associatedteaminfo.md) and [sharedWithChannelT
 
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

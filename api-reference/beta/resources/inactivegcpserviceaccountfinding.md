@@ -4,8 +4,9 @@ description: "Represents the inactive GCP service acccounts."
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # inactiveGcpServiceAccountFinding resource type
@@ -21,9 +22,9 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List inactiveGcpServiceAccountFinding objects](../api/inactivegcpserviceaccountfinding-list.md)|[inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) collection|Get a list of the [inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) objects and their properties.|
-|[Get inactiveGcpServiceAccountFinding](../api/inactivegcpserviceaccountfinding-get.md)|[inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md)|Read the properties and relationships of an [inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) object.|
-|[aggregatedSummary](../api/inactivegcpserviceaccountfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
+|[List](../api/inactivegcpserviceaccountfinding-list.md)|[inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) collection|Get a list of the [inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) objects and their properties.|
+|[Get](../api/inactivegcpserviceaccountfinding-get.md)|[inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md)|Read the properties and relationships of an [inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) object.|
+|[Aggregated summary](../api/inactivegcpserviceaccountfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 
 
 ## Properties

@@ -15,6 +15,10 @@ var requestBody = new AuditLogQuery
 	DisplayName = "String",
 	FilterStartDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	FilterEndDateTime = DateTimeOffset.Parse("String (timestamp)"),
+	RecordTypeFilters = new List<AuditLogRecordType?>
+	{
+		AuditLogRecordType.ExchangeAdmin,
+	},
 	KeywordFilter = "String",
 	OperationFilters = new List<string>
 	{
@@ -39,9 +43,6 @@ var requestBody = new AuditLogQuery
 	Status = AuditLogQueryStatus.NotStarted,
 	AdditionalData = new Dictionary<string, object>
 	{
-		{
-			"recordTypeFilter" , "String"
-		},
 		{
 			"serviceFilter" , "String"
 		},

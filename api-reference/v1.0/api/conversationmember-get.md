@@ -3,8 +3,9 @@ title: "Get conversationMember"
 description: "Get member of chat or channel."
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/02/2024
 ---
 
 # Get conversationMember
@@ -25,7 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| For **user** or **chat** resource: Not supported.<br/><br/>For **channel** resource: TeamMember.Read.Group, ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 
-> **Note:** The TeamMember.Read.Group permmission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamMember.Read.Group permmission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 
 ## HTTP request

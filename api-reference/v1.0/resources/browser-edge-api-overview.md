@@ -3,8 +3,9 @@ title: "Use the Edge API in Microsoft Graph"
 description: "The Edge API in Microsoft Graph lets apps manage administrator tasks for organizations."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: conceptualPageType
+ms.date: 03/12/2024
 ---
 
 # Use the Edge API in Microsoft Graph

@@ -1,10 +1,11 @@
 ---
 title: "labelsRoot resource type"
-description: "Represents the entry point for the retentionLabels resource type."
+description: "A root resource for capabilities that support records management for Microsoft 365 data in an organization."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # labelsRoot resource type
@@ -13,8 +14,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entry point for the [retentionLabel](security-retentionlabel.md) resource type.
+A root resource for capabilities that support records management for Microsoft 365 data in an organization. 
 
+Those capabilities include using a [retention label](security-retentionlabel.md) to configure retention and deletion settings for a type of content in the Microsoft 365 data, and using one or more [file plan descriptors](security-fileplandescriptor.md) to supplement the retention label and provide additional options to better manage and organize the content.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -51,7 +53,7 @@ None.
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

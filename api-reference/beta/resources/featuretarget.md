@@ -4,8 +4,9 @@ description: "Defines a single group, Microsoft Entra role, or administrative un
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # featureTarget resource type
@@ -26,7 +27,7 @@ Defines a single group, Microsoft Entra role, or administrative unit that is inc
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.featureTarget"

@@ -9,12 +9,12 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	invitationRedemptionIdentityProviderConfiguration = @{
 		primaryIdentityProviderPrecedenceOrder = @(
-			"externalFederation"
-			"azureActiveDirectory"
-			"socialIdentityProviders"
-		)
-		fallbackIdentityProvider = "defaultConfiguredIdp"
-	}
+		"externalFederation"
+	"azureActiveDirectory"
+"socialIdentityProviders"
+)
+fallbackIdentityProvider = "defaultConfiguredIdp"
+}
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyDefault -BodyParameter $params

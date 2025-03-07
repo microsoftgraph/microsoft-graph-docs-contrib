@@ -3,8 +3,9 @@ title: "run: summary"
 description: "Get a summary of runs for a specified time period."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # run: summary
@@ -39,7 +40,6 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/runs/summary(s
 ## Function parameters
 
 In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -64,7 +64,7 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

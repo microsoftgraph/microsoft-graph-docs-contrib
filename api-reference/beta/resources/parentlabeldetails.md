@@ -3,8 +3,9 @@ title: "parentLabelDetails resource type"
 description: "Represents the label details of an information protection parent label."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # parentLabelDetails resource type
@@ -29,7 +30,7 @@ Represents the label details of an information protection parent label. **parent
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

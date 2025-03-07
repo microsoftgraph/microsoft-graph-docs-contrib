@@ -3,8 +3,9 @@ title: "Delete event"
 description: "Delete an event object."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete event

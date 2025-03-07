@@ -3,8 +3,9 @@ title: "contentType: getCompatibleHubContentTypes"
 description: "Get a list of compatible content types from the content type hub that can be added to a target site or a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # contentType: getCompatibleHubContentTypes
@@ -49,7 +50,7 @@ If successful, this function returns a `200 OK` response code and a collection o
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

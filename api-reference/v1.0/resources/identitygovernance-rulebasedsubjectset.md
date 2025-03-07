@@ -3,8 +3,9 @@ title: "ruleBasedSubjectSet resource type"
 description: "Specifies the rules to define the subjects that are the scope of a lifecycle workflow triggerAndScopeBasedConditions configuration."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # ruleBasedSubjectSet resource type
@@ -86,7 +87,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identityGovernance.ruleBasedSubjectSet"

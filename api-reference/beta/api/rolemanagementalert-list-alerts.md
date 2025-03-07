@@ -3,8 +3,9 @@ title: "List alerts"
 description: "Get a list of the unifiedRoleManagementAlert objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List alerts
@@ -54,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Get all alerts and expand the relationships
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

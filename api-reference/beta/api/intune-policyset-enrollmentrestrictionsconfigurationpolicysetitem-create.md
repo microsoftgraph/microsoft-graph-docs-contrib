@@ -2,9 +2,10 @@
 title: "Create enrollmentRestrictionsConfigurationPolicySetItem"
 description: "Create a new enrollmentRestrictionsConfigurationPolicySetItem object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create enrollmentRestrictionsConfigurationPolicySetItem

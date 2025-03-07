@@ -3,8 +3,9 @@ title: "Create documentSetVersion"
 description: "Create a new version of a document set item in a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create documentSetVersion
@@ -58,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [document
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

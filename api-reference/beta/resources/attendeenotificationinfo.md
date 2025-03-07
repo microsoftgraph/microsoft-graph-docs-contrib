@@ -3,8 +3,9 @@ title: "attendeeNotificationInfo resource type"
 description: "Represents information about an external attendee."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # attendeeNotificationInfo resource type

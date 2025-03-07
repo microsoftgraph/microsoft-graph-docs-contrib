@@ -3,8 +3,9 @@ title: "sourceCollection: purgeData"
 description: "Use the purge data method to delete sensitive misplaced Microsoft Teams messages in a sourceCollection."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # sourceCollection: purgeData

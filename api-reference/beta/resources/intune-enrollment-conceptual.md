@@ -3,7 +3,8 @@ title: "Enroll corporate devices by using Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that enroll devices for a tenant organization."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
+ms.date: 04/01/2024
 ---
 
 # Enroll corporate-owned devices by using Intune

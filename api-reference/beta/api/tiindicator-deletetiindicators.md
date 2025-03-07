@@ -3,8 +3,9 @@ title: "tiIndicator: deleteTiIndicators"
 description: "Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # tiIndicator: deleteTiIndicators
@@ -36,7 +37,7 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

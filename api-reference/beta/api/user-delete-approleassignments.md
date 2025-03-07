@@ -3,8 +3,9 @@ title: "Delete appRoleAssignment"
 description: "Delete an appRoleAssignment that has been granted to a user."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "users"
+ms.subservice: entra-users
 author: "psignoret"
+ms.date: 10/15/2024
 ---
 
 # Delete appRoleAssignment
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "user_delete_approleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-delete-approleassignments-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
 
@@ -53,7 +56,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here is an example of the request to delete an app role assignment.
+The following example shows a request to delete an app role assignment.
 
 
 # [HTTP](#tab/http)
@@ -102,7 +105,7 @@ DELETE https://graph.microsoft.com/beta/users/{id}/appRoleAssignments/{id}
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

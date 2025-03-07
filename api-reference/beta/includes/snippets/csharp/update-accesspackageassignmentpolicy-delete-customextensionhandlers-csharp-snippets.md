@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AccessPackageAssignmentPolicy
 {
@@ -31,11 +32,15 @@ var requestBody = new AccessPackageAssignmentPolicy
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"expiration" , new 
+			"expiration" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				Type = "afterDuration",
-				Duration = "P365D",
-			}
+				{
+					"type", new UntypedString("afterDuration")
+				},
+				{
+					"duration", new UntypedString("P365D")
+				},
+			})
 		},
 	},
 };

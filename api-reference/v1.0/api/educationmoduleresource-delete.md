@@ -3,8 +3,9 @@ title: "Delete educationModuleResource"
 description: "Delete a specific resource attached to a module."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Delete educationModuleResource
@@ -20,7 +21,6 @@ Delete a specific [educationModuleResource](../resources/educationmoduleresource
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationmoduleresource_delete" } -->
-
 [!INCLUDE [permissions-table](../includes/permissions/educationmoduleresource-delete-permissions.md)]
 
 ## HTTP request
@@ -36,7 +36,7 @@ DELETE /education/classes/{class-id}/modules/{module-id}/resources/{resource-id}
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

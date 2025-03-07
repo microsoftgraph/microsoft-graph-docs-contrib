@@ -3,8 +3,9 @@ title: "Create assignmentScheduleRequest"
 description: "Create a new privilegedAccessGroupAssignmentScheduleRequest object."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create assignmentScheduleRequest

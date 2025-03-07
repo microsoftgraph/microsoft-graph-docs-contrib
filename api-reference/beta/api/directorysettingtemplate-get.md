@@ -4,8 +4,9 @@ description: "Allows retrieval of the properties of the directorySettingTemplate
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Get a directory setting template
@@ -25,6 +26,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directorysettingtemplate_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysettingtemplate-get-permissions.md)]
+
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Microsoft Entra Joined Device Local Administrator - basic properties only
+> - Directory Readers
+> - Global Reader
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +54,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [directorySettingTemplate](../resources/directorysettingtemplate.md) object in the response body.
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

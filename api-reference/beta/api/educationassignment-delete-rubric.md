@@ -3,8 +3,9 @@ title: "Delete educationRubric from educationAssignment"
 description: "Remove an educationRubric from an educationAssignment"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 07/30/2024
 ---
 
 # Remove educationRubric from educationAssignment
@@ -52,17 +53,16 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "delete_educationrubric_from_educationassignment"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rubric/$ref
+DELETE https://graph.microsoft.com/beta/education/classes/f1e03281-acd7-4fb0-84c3-902b3d30104c/assignments/0b30b986-7457-45e2-b87a-53df3ac7657d/rubric/$ref
 ```
 
 # [C#](#tab/csharp)
@@ -101,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

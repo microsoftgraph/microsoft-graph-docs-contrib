@@ -3,8 +3,9 @@ title: "List contactInsights"
 description: "Retrieve properties of insightsSettings object for displaying or returning contact insights in an organization."
 author: "rogoy"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List contactInsights
@@ -49,7 +50,7 @@ If successful, this method returns a `200 OK` response code and [insightsSetting
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

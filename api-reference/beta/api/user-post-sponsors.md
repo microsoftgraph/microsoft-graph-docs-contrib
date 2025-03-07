@@ -3,8 +3,9 @@ title: "Add sponsor"
 description: "Assign a user a sponsor."
 author: "sadia353"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/16/2024
 ---
 
 # Add sponsor
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "user_post_sponsors" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-post-sponsors-permissions.md)]
+
+[!INCLUDE [rbac-user-sponsors-apis-write](../includes/rbac-for-apis/rbac-user-sponsors-apis-write.md)]
 
 ## HTTP request
 
@@ -53,7 +56,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 #### Request
 
-Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
+The following example shows a request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
 
 
 # [HTTP](#tab/http)
@@ -79,7 +82,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -91,7 +94,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
+The following example shows a request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +119,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

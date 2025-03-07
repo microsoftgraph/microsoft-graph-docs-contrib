@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -15,13 +18,10 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer {token}")
 
-configuration := &graphteams.TeamItemScheduleOpenShiftsRequestBuilderPostRequestConfiguration{
+configuration := &graphteams.ItemScheduleOpenShiftsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewOpenShift()
@@ -85,6 +85,7 @@ lastModifiedBy.SetConversation(&conversation)
 lastModifiedBy.SetAdditionalData(additionalData)
 requestBody.SetLastModifiedBy(lastModifiedBy)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 openShifts, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShifts().Post(context.Background(), requestBody, configuration)
 
 

@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/security-identitycontainer-delete-sensors.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/security-sensor-delete?view=graph-rest-beta",
+      "redirect_document_id": false
+    }
+  ]
+}

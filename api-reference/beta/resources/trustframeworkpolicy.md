@@ -2,9 +2,10 @@
 title: "trustFrameworkPolicy"
 description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This describes the operations available on a trustFrameworkPolicy object for the tenant."
 ms.localizationpriority: medium
-author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+author: "gysingh"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 # trustFrameworkPolicy resource type
 
@@ -25,11 +26,11 @@ For more information, see [Custom policies in Azure Active Directory B2C](/azure
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create trustFrameworkPolicy](../api/trustframework-post-trustframeworkpolicy.md)|trustFrameworkPolicy|Create a new trustFrameworkPolicy.|
-|[Get trustFrameworkPolicy](../api/trustframeworkpolicy-get.md) |trustFrameworkPolicy|Read properties of an existing trustFrameworkPolicy.|
-|[List trustFrameworkPolicies](../api/trustframework-list-trustframeworkpolicies.md)|trustFrameworkPolicy collection|List all trustFrameworkPolicies configured in a tenant.|
-|[Update or create trustFrameworkPolicy](../api/trustframework-put-trustframeworkpolicy.md)|None|Update an existing trustFrameworkPolicy.|
-|[Delete trustFrameworkPolicy](../api/trustframeworkpolicy-delete.md)|None|Delete an existing trustFrameworkPolicy.|
+|[Create](../api/trustframework-post-trustframeworkpolicy.md)|trustFrameworkPolicy|Create a new trustFrameworkPolicy.|
+|[Get](../api/trustframeworkpolicy-get.md) |trustFrameworkPolicy|Read properties of an existing trustFrameworkPolicy.|
+|[List](../api/trustframework-list-trustframeworkpolicies.md)|trustFrameworkPolicy collection|List all trustFrameworkPolicies configured in a tenant.|
+|[Update](../api/trustframework-put-trustframeworkpolicy.md)|None|Update an existing trustFrameworkPolicy.|
+|[Delete](../api/trustframeworkpolicy-delete.md)|None|Delete an existing trustFrameworkPolicy.|
 
 ## Properties
 
@@ -37,9 +38,12 @@ For more information, see [Custom policies in Azure Active Directory B2C](/azure
 |:---------------|:--------|:----------|
 |id|String|The ID of the policy.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

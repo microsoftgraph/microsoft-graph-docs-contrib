@@ -2,9 +2,10 @@
 title: "Create trustFrameworkPolicy"
 description: "This operation creates a new trustFrameworkPolicy object in an Azure AD B2C tenant."
 ms.localizationpriority: medium
-author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+author: "gysingh"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 # Create trustFrameworkPolicy
 
@@ -23,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "trustframework_post_trustframeworkpolicy" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframework-post-trustframeworkpolicy-permissions.md)]
 
-The work or school account must be a global administrator of the tenant.
+[!INCLUDE [rbac-b2c-trustframework-policy-apis](../includes/rbac-for-apis/rbac-b2c-trustframework-policy-apis.md)]
 
 ## HTTP request
 

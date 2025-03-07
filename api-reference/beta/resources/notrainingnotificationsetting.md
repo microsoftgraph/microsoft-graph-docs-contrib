@@ -3,8 +3,9 @@ title: "noTrainingNotificationSetting resource type"
 description: "Represents a notification setting when no training is selected on a simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # noTrainingNotificationSetting resource type
@@ -32,7 +33,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

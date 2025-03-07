@@ -3,8 +3,9 @@ title: "Get teamTemplateDefinition"
 description: "Read the properties and relationships of a teamTemplateDefinition object."
 author: "Charlieforce"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get teamTemplateDefinition
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [teamTemplateD
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

@@ -3,8 +3,9 @@ title: "alertTrigger resource type"
 description: "Contains information about the properties that triggered a detection (properties exist in the alert entity)."
 author: "preetikr"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # alertTrigger resource type
@@ -23,7 +24,7 @@ Contains information about the properties that triggered a detection (properties
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,8 +3,9 @@ title: "Create onlineMeeting"
 description: "Create an online meeting on behalf of a user specified in the request body."
 author: "awang119"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 12/03/2024
 ---
 
 # Create onlineMeeting
@@ -24,12 +25,41 @@ Create an online meeting on behalf of a user.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "application_post_onlinemeetings" } -->
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/onlineMeetings
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "application_post_onlinemeetings", 
+  "requestUrls": ["POST /me/onlineMeetings"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-post-onlinemeetings-permissions.md)]
 
-To use the OnlineMeetings.ReadWrite.All application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
+
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /users/{userId}/onlineMeetings
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "application_post_onlinemeetings_2", 
+  "requestUrls": ["POST /users/{userId}/onlineMeetings"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/application-post-onlinemeetings-2-permissions.md)]
+
+> [!NOTE]
+> To use the OnlineMeetings.ReadWrite.All application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
 
@@ -41,7 +71,7 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
->- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+>- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 

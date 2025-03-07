@@ -3,8 +3,9 @@ title: "convertIdResult resource type"
 description: "The result of an ID format conversion performed by the translateExchangeIds function."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # convertIdResult resource type
@@ -23,9 +24,12 @@ The result of an ID format conversion performed by the [translateExchangeIds](..
 | targetId | String | The converted identifier. This value isn't present if the conversion failed. |
 | errorDetails | [genericError](genericerror.md) | An error object indicating the reason for the conversion failure. This value isn't present if the conversion succeeded. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

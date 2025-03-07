@@ -3,8 +3,9 @@ title: "Use the Microsoft Search API to manage administrative answers"
 description: "Use Microsoft Graph to manage administrative search answers in the Microsoft Search experience."
 ms.localizationpriority: high
 author: "jakeost-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: conceptualPageType
+ms.date: 09/24/2024
 ---
 
 # Use the Microsoft Search API to manage administrative answers
@@ -13,7 +14,7 @@ doc_type: conceptualPageType
 
 You can use Microsoft Graph to [manage administrative search answer results](/graph/search-concept-answers) in the [Microsoft Search](/microsoftsearch/overview-microsoft-search) experience.
 
-Requests to manage administrative search answers are performed by global administrators, search administrators, search editors, or are performed on behalf of an application without the presence of a signed-in user, identified using an [access token with application permission](/graph/auth-v2-service).
+Requests to manage administrative search answers are performed by users with administrator roles, such as Search Administrators and Search Editors, or are performed on behalf of an application without the presence of a signed-in user, identified using an [access token with application permission](/graph/auth-v2-service).
 
 ## Common use cases
 
@@ -43,7 +44,7 @@ The following table lists the language tags, locales, and the corresponding coun
 |`fr-ca`| French (Canada) | Canada - French | 
 |`fr-fr`| French (France) | France | 
 |`de-de`| German (Germany) | Germany | 
-|`zh-hk`| Chinese (Hong Kong) | Hong Kong |
+|`zh-hk`| Chinese (Hong Kong SAR) | Hong Kong SAR |
 |`en-in`| English (India) | India |
 |`it-it`| Italian (Italy) | Italy |
 |`pt-br`| Portuguese (Brazil) | Brazil |
@@ -64,7 +65,7 @@ The following table lists the language tags, locales, and the corresponding coun
 |`de-ch`| German (Switzerland) | Switzerland - German |
 |`en-za`| English (South Africa) | South Africa |
 |`zh-tw`| Chinese (Taiwan) | Taiwan |
-|`tr-tr`| Turkish (Turkey) | Turkey |
+|`tr-tr`| Turkish (Türkiye) | Türkiye |
 |`en-gb`| English (United Kingdom) | United Kingdom |
 |`en-us`| English (United States) | United States - English |
 |`es-us`| Spanish (United States) | United States - Spanish |
@@ -72,5 +73,5 @@ The following table lists the language tags, locales, and the corresponding coun
 ## Next steps
 
 - Learn about [setting up administrative search answers for users in an organization](/graph/search-concept-answers).
-- Drill down on the methods, properties, and relationships of the answer type resources: [bookmarks](search-bookmark.md), [acronyms](search-acronym.md), and [QnAs](search-qna.md).
+- Drill down on the methods, properties, and relationships of the answer type resources: [acronym](search-acronym.md), [bookmark](search-bookmark.md), and [qna](search-qna.md).
 - See the [Microsoft Search API overview](/graph/search-concept-overview).

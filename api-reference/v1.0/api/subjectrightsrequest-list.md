@@ -3,8 +3,9 @@ title: "List subjectRightsRequests"
 description: "Get a list of subject rights requests and their properties."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List subjectRightsRequests

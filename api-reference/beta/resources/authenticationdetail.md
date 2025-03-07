@@ -3,8 +3,9 @@ title: "authenticationDetail resource type"
 description: "Provides the authentication details for a user sign-in, such as multifactor authentication (MFA) information and PTA/PHS details."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # authenticationDetail resource type
@@ -28,7 +29,7 @@ Provides the authentication details for a user sign-in, such as multifactor auth
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

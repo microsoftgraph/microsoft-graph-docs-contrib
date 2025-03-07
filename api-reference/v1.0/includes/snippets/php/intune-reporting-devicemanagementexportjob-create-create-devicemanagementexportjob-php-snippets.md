@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\DeviceManagementExportJob;
+use Microsoft\Graph\Generated\Models\DeviceManagementReportFileFormat;
+use Microsoft\Graph\Generated\Models\DeviceManagementExportJobLocalizationType;
+use Microsoft\Graph\Generated\Models\DeviceManagementReportStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

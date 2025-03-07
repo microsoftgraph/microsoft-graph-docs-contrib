@@ -2,9 +2,10 @@
 title: "reportRoot: getTeamsDeviceUsageUserDetail"
 description: "Get details about Microsoft Teams device usage by user."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getTeamsDeviceUsageUserDetail
@@ -79,7 +80,7 @@ The CSV file has the following headers for columns:
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(perio
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "ignored"

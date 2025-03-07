@@ -3,8 +3,9 @@ title: "Get unifiedRoleAssignmentSchedule"
 description: "Retrieve the schedule for an active role assignment operation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get unifiedRoleAssignmentSchedule

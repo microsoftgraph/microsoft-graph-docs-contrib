@@ -3,8 +3,9 @@ title: "Update learningCourseActivity"
 description: "Update the properties of a learningCourseActivity object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update learningCourseActivity

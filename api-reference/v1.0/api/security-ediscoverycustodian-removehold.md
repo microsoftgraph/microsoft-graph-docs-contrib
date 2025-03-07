@@ -3,8 +3,9 @@ title: "ediscoveryCustodian: removeHold"
 description: "**TODO: Add Description**"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # ediscoveryCustodian: removeHold
@@ -54,7 +55,7 @@ If successful, this action returns a `202 Accepted` response code.
 ## Examples
 ### Example 1: Remove hold from multiple custodians
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +122,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Remove hold from a single custodian
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

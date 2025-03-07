@@ -3,8 +3,9 @@ title: "Update multiTenantOrganization"
 description: "Update the properties of a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 07/09/2024
 ---
 
 # Update multiTenantOrganization

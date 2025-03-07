@@ -4,7 +4,8 @@ title: "List columnDefinitions in a content type"
 description: "List columns in a content type."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
+ms.date: 04/04/2024
 ---
 
 # List columnDefinitions in a content type

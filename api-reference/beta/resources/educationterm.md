@@ -3,8 +3,9 @@ title: "educationTerm resource type"
 description: "A term. This represents a designated portion of the academic year. It's used within educationClass."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # educationTerm resource type
@@ -23,9 +24,12 @@ A term. This represents a designated portion of the academic year. It's used wit
 |startDate|Date|Start of the term.|
 |endDate|Date|End of the term.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

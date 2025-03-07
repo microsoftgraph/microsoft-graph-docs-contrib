@@ -3,8 +3,9 @@ title: List printConnectors for printer
 description: Retrieve a list of connectors associated with the printer.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List printConnectors for a printer

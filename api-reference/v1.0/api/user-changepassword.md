@@ -4,15 +4,16 @@ description: "Update your own password."
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 08/16/2024
 ---
 
 # user: changePassword
 
 Namespace: microsoft.graph
 
-Enable the user to update their password. Any user can update their password without belonging to any administrator role.
+Update the signed-in [user's](../resources/user.md) password. Any user can update their password without belonging to any administrator role.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

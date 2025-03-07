@@ -3,8 +3,9 @@ title: "Delete linkedResource_v2"
 description: "Delete a linkedResource_v2 object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete linkedResource_v2 (deprecated)

@@ -56,6 +56,7 @@ invoiceDate.setTimeZone("UTC");
 bookingAppointment.setInvoiceDate(invoiceDate);
 bookingAppointment.setInvoiceId("1001");
 bookingAppointment.setInvoiceStatus(BookingInvoiceStatus.Open);
+bookingAppointment.setIsCustomerAllowedToManageBooking(true);
 bookingAppointment.setInvoiceUrl("theInvoiceUrl");
 bookingAppointment.setIsLocationOnline(true);
 bookingAppointment.setOptOutOfCustomerEmail(false);

@@ -3,8 +3,9 @@ title: "daylightTimeZoneOffset resource type"
 description: "Specifies when a time zone switches from standard time to daylight saving time."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: outlook
+ms.subservice: outlook
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # daylightTimeZoneOffset resource type
@@ -39,7 +40,7 @@ daylight saving time to standard occurs at 2 AM on the fourth Sunday of May, eve
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

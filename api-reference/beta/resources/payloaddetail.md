@@ -3,8 +3,9 @@ title: "payloadDetail resource type"
 description: "Represents details about a payload."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 04/22/2024
 ---
 
 # payloadDetail resource type
@@ -21,7 +22,7 @@ Base type of [emailPayloadDetail](../resources/emailpayloaddetail.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|coachmarks|[payloadCoachmark](../resources/payloadcoachmark.md) collection|Payload coachmark details.|
+|coachMarks|[payloadCoachmark](../resources/payloadcoachmark.md) collection|Payload coachmark details.|
 |content|String|Payload content details.|
 |phishingUrl|String|The phishing URL used to target a user.|
 
@@ -31,7 +32,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.payloadDetail"

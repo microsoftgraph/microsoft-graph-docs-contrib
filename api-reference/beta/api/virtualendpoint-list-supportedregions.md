@@ -3,8 +3,9 @@ title: "List supportedRegions"
 description: "List the supported regions that are available for creating Cloud PC connections."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List supportedRegions

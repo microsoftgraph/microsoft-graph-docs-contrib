@@ -3,8 +3,9 @@ title: "servicePrincipal: addTokenSigningCertificate"
 description: "Add a signing certificate to a servicePrincipal."
 ms.localizationpriority: medium
 author: "alamaral"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/18/2024
 ---
 
 # servicePrincipal: addTokenSigningCertificate

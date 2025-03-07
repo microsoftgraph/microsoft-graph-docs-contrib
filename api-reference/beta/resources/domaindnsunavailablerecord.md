@@ -2,9 +2,10 @@
 title: "domainDnsUnavailableRecord resource type"
 description: "Indicates that serviceConfigurationRecords can't be generated."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "directory-management"
+author: "tafra00"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 05/09/2024
 ---
 
 # domainDnsUnavailableRecord resource type
@@ -27,26 +28,25 @@ Direct queries to this resource aren't supported. See the [domain](domain.md) ar
 None
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.domainDnsUnavailableRecord"
+  "@odata.type": "microsoft.graph.domainDnsUnavailableRecord",
+  "baseType": "microsoft.graph.domainDnsRecord"
 }-->
 
 ```json
 {
-  "canonicalName": "String",
   "description": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
   "recordType": "String",
   "supportedService": "String",
-  "text": "String",
   "ttl": 1024
 }
 

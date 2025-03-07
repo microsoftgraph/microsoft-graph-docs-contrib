@@ -1,12 +1,11 @@
 ---
 author: InbarckMS
 ms.topic: include
-ms.date: 03/17/2023
 ms.author: inbarc
 ---
 
-For delegated scenarios, the calling user must also be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-- Conditional Access administrator
-- Security Administrator
-- Security Reader
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Conditional Access administrator
+> - Security Administrator
+> - Security Reader

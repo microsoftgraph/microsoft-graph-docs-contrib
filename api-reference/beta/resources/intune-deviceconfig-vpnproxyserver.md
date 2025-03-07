@@ -2,9 +2,10 @@
 title: "vpnProxyServer resource type"
 description: "VPN Proxy Server."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # vpnProxyServer resource type

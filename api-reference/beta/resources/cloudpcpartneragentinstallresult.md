@@ -3,8 +3,9 @@ title: "cloudPcPartnerAgentInstallResult resource type"
 description: "Describes installation results for a partner agent on a Cloud PC."
 author: "JannyMa"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # cloudPcPartnerAgentInstallResult resource type

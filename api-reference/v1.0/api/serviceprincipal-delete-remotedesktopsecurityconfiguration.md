@@ -3,8 +3,9 @@ title: "Delete remoteDesktopSecurityConfiguration"
 description: "Delete a remoteDesktopSecurityConfiguration object on a servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete remoteDesktopSecurityConfiguration

@@ -1,10 +1,11 @@
 ---
 title: "applicationSegment resource type"
-description: "An abstract type that exposes properties used to configure segment configurations that are allowed for an on-premises wildcard application that's published through Microsoft Entra application proxy."
+description: "An abstract type for configuring allowed segment configurations for on-premises wildcard apps published through Microsoft Entra application proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 12/19/2024
 ---
 
 # applicationSegment resource type
@@ -13,8 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource type is an abstract type that exposes properties used to configure segment configurations that are allowed for an on-premises wildcard application that's published through Microsoft Entra application proxy. The following types are derived from this abstract type:
+An abstract type that exposes properties for configuring allowed segment configurations for on-premises wildcard apps published through Microsoft Entra application proxy. The following types are derived from this abstract type:
 + [webApplicationSegment](webapplicationsegment.md)
++ [ipApplicationSegment](ipapplicationsegment.md)
+
+## Methods
+
+None.
 
 ## Properties
 
@@ -22,9 +28,13 @@ This resource type is an abstract type that exposes properties used to configure
 |:-------------|:------------|:------------|
 |id|String|The unique identifier that is assigned to an application segment by Microsoft Entra ID. Not nullable. Read-only. Supports `$filter` (`eq`).  |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.applicationSegment"

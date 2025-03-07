@@ -3,8 +3,9 @@ title: "Update educationSchool"
 description: "Update the properties of an educationSchool object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
 # Update educationSchool

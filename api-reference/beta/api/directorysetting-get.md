@@ -4,8 +4,9 @@ description: "Retrieve the properties of a specific directory setting object."
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get directorySetting
@@ -24,12 +25,12 @@ The following tables show the least privileged permission or permissions require
 
 ### List tenant-wide settings
 
-<!-- { "blockType": "permissions", "name": "directorysetting_get" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-get-permissions.md)]
 
 ### List group-specific settings
 
-<!-- { "blockType": "permissions", "name": "directorysetting_get_2" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-get-2-permissions.md)]
 
 [!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
@@ -68,7 +69,7 @@ If successful, this method returns a `200 OK` response code and [directorySettin
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

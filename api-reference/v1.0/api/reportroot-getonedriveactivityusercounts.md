@@ -2,9 +2,10 @@
 title: "reportRoot: getOneDriveActivityUserCounts"
 description: "Get the trend in the number of active OneDrive users."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getOneDriveActivityUserCounts

@@ -3,8 +3,9 @@ title: "privilegedAccessRoot resource type"
 description: "Represents the entry point for resources related to Privileged Identity Management (PIM)."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # privilegedAccessRoot resource type
@@ -29,7 +30,7 @@ None.
 |group|[privilegedAccessGroup](../resources/privilegedaccessgroup.md)|A group that's governed through Privileged Identity Management (PIM).|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

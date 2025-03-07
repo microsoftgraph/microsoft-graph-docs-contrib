@@ -3,8 +3,9 @@ title: "Create event"
 description: "Use this API to create a new event."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create event
@@ -52,7 +53,7 @@ If successful, this method returns a `201 Created` response code and an [event](
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 

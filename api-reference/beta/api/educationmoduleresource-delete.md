@@ -3,8 +3,9 @@ title: "Delete educationModuleResource"
 description: "Delete a specific resource attached to a module."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete educationModuleResource

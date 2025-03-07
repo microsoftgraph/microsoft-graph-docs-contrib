@@ -4,7 +4,8 @@ description: "Update the role of member in a team."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 04/04/2024
 ---
 
 # Update member in team

@@ -4,8 +4,9 @@ description: "Represents locations included in and excluded from the policy scop
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # conditionalAccessLocations resource type
@@ -23,13 +24,12 @@ Represents locations included in and excluded from the policy scope.
 | includeLocations | String collection | Location IDs in scope of policy unless explicitly excluded, `All`, or `AllTrusted`. |
 | excludeLocations | String collection | Location IDs excluded from scope of policy. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
-
-## Relationships
-
-None.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

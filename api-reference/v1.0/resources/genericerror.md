@@ -3,8 +3,9 @@ title: "genericError resource type"
 description: "A general-purpose error."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: outlook
+ms.subservice: outlook
 author: "SuryaLashmiS"
+ms.date: 04/12/2024
 ---
 
 # genericError resource type
@@ -22,7 +23,7 @@ A general-purpose error.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -33,6 +34,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.genericError",
   "code": "String",
   "message": "String"
 }

@@ -3,8 +3,9 @@ title: "Get endUserNotification"
 description: "Read the properties and relationships of an endUserNotification object."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 04/05/2024
 ---
 
 # Get endUserNotification
@@ -59,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an [endUserNotif
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

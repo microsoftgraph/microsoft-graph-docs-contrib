@@ -2,9 +2,10 @@
 title: "win32LobAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Win32 LOB mobile app to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # win32LobAppAssignmentSettings resource type
@@ -58,7 +59,7 @@ Here is a JSON representation of the resource.
   "deliveryOptimizationPriority": "String",
   "autoUpdateSettings": {
     "@odata.type": "microsoft.graph.win32LobAppAutoUpdateSettings",
-    "autoUpdateSupersededApps": "String"
+    "autoUpdateSupersededAppsState": "String"
   }
 }
 ```

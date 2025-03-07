@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.get_staff_availability_post_request_body import GetStaffAvailabilityPostRequestBody
-from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.solutions.bookingbusinesses.item.get_staff_availability.get_staff_availability_post_request_body import GetStaffAvailabilityPostRequestBody
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = GetStaffAvailabilityPostRequestBody(
 	staff_ids = [
 		"311a5454-08b2-4560-ba1c-f715e938cb79",

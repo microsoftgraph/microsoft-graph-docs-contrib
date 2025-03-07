@@ -3,8 +3,9 @@ title: "Delete appRoleAssignment"
 description: "Delete an appRoleAssignment that has been granted to a group."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 author: "psignoret"
+ms.date: 11/30/2024
 ---
 
 # Delete appRoleAssignment
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.
+Delete an [appRoleAssignment](../resources/approleassignment.md) that a [group](../resources/group.md) has been granted.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "group_delete_approleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-delete-approleassignments-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
 
@@ -53,7 +56,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here is an example of the request to delete an app role assignment.
+The following example shows a request to delete an app role assignment.
 
 
 # [HTTP](#tab/http)

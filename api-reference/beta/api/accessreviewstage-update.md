@@ -3,8 +3,9 @@ title: "Update accessReviewStage"
 description: "Update the properties of an accessReviewStage object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update accessReviewStage

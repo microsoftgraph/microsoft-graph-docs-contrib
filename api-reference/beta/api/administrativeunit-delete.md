@@ -3,8 +3,9 @@ title: "Delete administrativeUnit"
 description: "Delete an administrativeUnit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete administrativeUnit
@@ -45,7 +46,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}
 ---
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

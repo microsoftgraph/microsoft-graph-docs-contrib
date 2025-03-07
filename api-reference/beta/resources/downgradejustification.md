@@ -3,8 +3,9 @@ title: "downgradeJustification resource type (deprecated)"
 description: "Represents user input on why downgrade was performed. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 03/21/2024
 ---
 
 # downgradeJustification resource type (deprecated)
@@ -26,7 +27,7 @@ Represents user input on why downgrade was performed. Downgrade justification mi
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

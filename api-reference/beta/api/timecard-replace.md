@@ -3,8 +3,9 @@ title: "Replace timeCard"
 description: "Update an existing timeCard entry."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Replace timeCard
@@ -17,15 +18,13 @@ Replace an existing [timeCard](../resources/timecard.md) with updated values.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All*  |
+<!-- { "blockType": "permissions", "name": "timecard_replace" } -->
+[!INCLUDE [permissions-table](../includes/permissions/timecard-replace-permissions.md)]
 
->\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
+> [!IMPORTANT]
+> When you use the Schedule.ReadWrite.All application permission, you must include the `MS-APP-ACTS-AS` header in the request.
 
 ## HTTP request
 
@@ -75,7 +74,7 @@ Content-type: application/json
     "notes": null,
     "clockInEvent": {
         "dateTime": "2021-05-21T21:58:41.327Z",
-        "atApprovedLocation": null,
+        "isAtApprovedLocation": null,
         "notes": {
             "contentType": "text",
             "content": "update sample notes"
@@ -83,7 +82,7 @@ Content-type: application/json
     },
     "clockOutEvent": {
         "dateTime": "2021-05-21T22:01:46.205Z",
-        "atApprovedLocation": null,
+        "isAtApprovedLocation": null,
         "notes": {
             "contentType": "text",
             "content": "update sample notes"
@@ -95,7 +94,7 @@ Content-type: application/json
             "notes": null,
             "start": {
                 "dateTime": "2021-05-21T21:59:59.328Z",
-                "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "update sample notes"
@@ -103,7 +102,7 @@ Content-type: application/json
             },
             "end": {
                 "dateTime": "2021-05-21T22:01:10.205Z",
-                "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "update sample notes"

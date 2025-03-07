@@ -3,8 +3,9 @@ title: "userAttributeValuesItem resource type"
 description: "Used to populate the values for a user flow attribute within a user flow when there are multiple selections to choose from."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # userAttributeValuesItem resource type
@@ -27,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userAttributeValuesItem"

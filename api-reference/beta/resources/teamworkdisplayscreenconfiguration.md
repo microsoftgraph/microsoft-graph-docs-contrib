@@ -3,8 +3,9 @@ title: "teamworkDisplayScreenConfiguration resource type"
 description: "Represents the details about the display screen configuration for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkDisplayScreenConfiguration resource type
@@ -28,7 +29,7 @@ Represent the details about the display screen configuration for a Microsoft Tea
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkDisplayScreenConfiguration"

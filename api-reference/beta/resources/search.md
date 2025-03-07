@@ -3,8 +3,9 @@ title: "search resource type"
 description: "The top-level object that represents the search endpoint in Microsoft Graph."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # search resource type
@@ -23,7 +24,7 @@ This resource isn't called. Any request that calls the resource results in an HT
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [query](../api/search-query.md) | [searchResponse](searchresponse.md) collection| Run a specified search query. |
+| [Query data](../api/search-query.md) | [searchResponse](searchresponse.md) collection| Run a specified search query. |
 
 ## Properties
 

@@ -3,8 +3,9 @@ title: "Get chat"
 description: "Retrieve a single chat."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 05/23/2024
 ---
 
 # Get chat
@@ -27,7 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-get-permissions.md)]
 
-> **Note**: The ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -129,10 +131,22 @@ Content-type: application/json
     "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "onlineMeetingInfo": null,
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+        }
+    },
     "viewpoint": {
         "isHidden": true,
         "lastMessageReadDateTime": "2021-05-06T23:55:07.191Z"
-    }
+    },
+    "isHiddenForAllMembers": false
 }
 ```
 
@@ -207,10 +221,22 @@ Content-type: application/json
     "webUrl": "https://teams.microsoft.com/l/chat/19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
     "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
     "onlineMeetingInfo": null,
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
     "viewpoint": {
         "isHidden": false,
         "lastMessageReadDateTime": "2021-07-06T22:26:27.98Z"
-    }
+    },
+    "isHiddenForAllMembers": false
 }
 ```
 
@@ -285,10 +311,22 @@ Content-type: application/json
     "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "onlineMeetingInfo": null,
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+        }
+    },
     "viewpoint": {
         "isHidden": false,
         "lastMessageReadDateTime": "2021-08-09T17:38:24.101Z"
     },
+    "isHiddenForAllMembers": false,
     "members": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -427,6 +465,7 @@ Content-type: application/json
         "isHidden": false,
         "lastMessageReadDateTime": "2021-08-17T18:04:32.583Z"
     },
+    "isHiddenForAllMembers": false,
     "onlineMeetingInfo": {
         "calendarEventId": "AAMkADAzMjNhY2NiLWVmNDItNDVjYS05MnFjLTExY2U0ZWMyZTNmZQBGAAAAAAARDMODhhR0TZRGWo9nN0NcBwAmvYmLhDvYR6hCFdQLgxR-AAAAAAENAAAmvYmLhDvYR6hCFdQLgxR-AABkrglJAAA=",
         "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3Ameeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4%40thread.v2/0?context=%7b%22Tid%22%3a%222432b57b-0abd-43db-aa7b-16eadd115d34%22%2c%22Oid%22%3a%22bfb5bb25-3a8d-487d-9828-7875ced51a30%22%7d",
@@ -435,23 +474,20 @@ Content-type: application/json
             "displayName": null,
             "userIdentityType": "aadUser"
         }
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
     }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Get chat",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
 
 ### Example 5: Get the chat along with the preview of the last message sent in the chat
 #### Request
@@ -524,10 +560,22 @@ Content-type: application/json
     "webUrl": "https://teams.microsoft.com/l/chat/19%3Aebe3857aa388434bab0cad9d2e09f4de%40thread.v2/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
     "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
     "onlineMeetingInfo": null,
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
     "viewpoint": {
         "isHidden": true,
         "lastMessageReadDateTime": "2022-09-08T23:11:54.353Z"
     },
+    "isHiddenForAllMembers": false,
     "lastMessagePreview@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Aebe3857aa388434bab0cad9d2e09f4de%40thread.v2')/lastMessagePreview/$entity",
     "lastMessagePreview": {
         "id": "1662678714353",
@@ -566,3 +614,17 @@ Content-type: application/json
 ## Related content
 
 * [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get chat",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

@@ -3,8 +3,9 @@ title: "accessPackageLocalizedText resource type"
 description: "Represents a question in a specific language."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # accessPackageLocalizedText resource type
@@ -23,7 +24,7 @@ Represents a question in a specific language.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageLocalizedText"

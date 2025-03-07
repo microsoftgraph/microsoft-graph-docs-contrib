@@ -3,8 +3,9 @@ title: "chatMessageInfo resource type"
 description: "Represents a preview of a chatMessage resource."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # chatMessageInfo resource type
@@ -31,7 +32,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

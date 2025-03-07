@@ -3,8 +3,9 @@ title: "pkcs12CertificateInformation resource type"
 description: "Represents the public information of a Pkcs12 client certificate."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # pkcs12CertificateInformation resource type
@@ -24,7 +25,7 @@ Represents the public information of a Pkcs12 certificate.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.pkcs12CertificateInformation"

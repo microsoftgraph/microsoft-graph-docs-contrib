@@ -2,9 +2,10 @@
 title: "policySet resource type"
 description: "A class containing the properties used for PolicySet."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # policySet resource type

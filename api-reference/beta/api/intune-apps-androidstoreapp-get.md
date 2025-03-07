@@ -2,9 +2,10 @@
 title: "Get androidStoreApp"
 description: "Read properties and relationships of the androidStoreApp object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Get androidStoreApp
@@ -65,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1616
+Content-Length: 1658
 
 {
   "value": {
@@ -97,7 +98,6 @@ Content-Length: 1616
     "supersedingAppCount": 3,
     "supersededAppCount": 2,
     "packageId": "Package Id value",
-    "appIdentifier": "App Identifier value",
     "appStoreUrl": "https://example.com/appStoreUrl/",
     "minimumSupportedOperatingSystem": {
       "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -116,7 +116,11 @@ Content-Length: 1616
       "v8_1": true,
       "v9_0": true,
       "v10_0": true,
-      "v11_0": true
+      "v11_0": true,
+      "v12_0": true,
+      "v13_0": true,
+      "v14_0": true,
+      "v15_0": true
     }
   }
 }

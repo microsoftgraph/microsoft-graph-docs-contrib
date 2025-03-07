@@ -3,8 +3,9 @@ title: "List module resources"
 description: "Get all the resources associated with a module."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List module resources

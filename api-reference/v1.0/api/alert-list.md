@@ -3,8 +3,9 @@ title: "List alerts"
 description: "Retrieve a list of alert objects."
 author: "preetikr"
 ms.localizationpriority: high
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List alerts

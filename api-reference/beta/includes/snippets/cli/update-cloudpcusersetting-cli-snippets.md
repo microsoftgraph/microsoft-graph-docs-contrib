@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta device-management virtual-endpoint user-settings patch --cloud-pc-user-setting-id {cloudPcUserSetting-id} --body '{\
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",\
   "displayName": "Example",\
@@ -13,6 +13,16 @@ mgc-beta device-management virtual-endpoint user-settings patch --cloud-pc-user-
     "frequencyInHours": 16,\
     "frequencyType": "sixteenHours",\
     "userRestoreEnabled": true\
+  },\
+  "crossRegionDisasterRecoverySetting": {\
+    "crossRegionDisasterRecoveryEnabled": false,\
+    "maintainCrossRegionRestorePointEnabled": true,\
+    "disasterRecoveryNetworkSetting": {\
+      "regionName": "westus",\
+      "regionGroup": "usEast"\
+    },\
+    "disasterRecoveryType": "premium",\
+    "userInitiatedDisasterRecoveryAllowed": true\
   },\
   "localAdminEnabled": false,\
   "resetEnabled": true\

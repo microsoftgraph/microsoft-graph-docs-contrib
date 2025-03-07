@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	enabledPreviewFeatures = @(
-		"assignGroupsToRoles"
-	)
+	"assignGroupsToRoles"
+)
 }
 
 Update-MgBetaPolicyAuthorizationPolicy -AuthorizationPolicyId $authorizationPolicyId -BodyParameter $params

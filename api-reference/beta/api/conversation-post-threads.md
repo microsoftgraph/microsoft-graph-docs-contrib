@@ -3,8 +3,9 @@ title: "Create thread"
 description: "Create a new thread in the specified conversation."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Create thread
@@ -36,7 +37,7 @@ POST /groups/{id}/conversations/{id}/threads
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply a JSON representation of the [conversationThread](../resources/conversationthread.md) object.

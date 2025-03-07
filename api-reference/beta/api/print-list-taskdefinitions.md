@@ -3,8 +3,9 @@ title: List taskDefinitions
 description: Retrieve a list of task definitions that the requesting app defined in the tenant.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List taskDefinitions

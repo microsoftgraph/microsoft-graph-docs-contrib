@@ -3,8 +3,9 @@ title: "shiftItem resource type"
 description: "A shiftItem represents a version of the shift."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # shiftItem resource type
@@ -25,9 +26,13 @@ Represents a version of a [shift](shift.md).
 | theme | scheduleEntityTheme   |  Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 | activities 	| [shiftActivity](shiftactivity.md) collection   | An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

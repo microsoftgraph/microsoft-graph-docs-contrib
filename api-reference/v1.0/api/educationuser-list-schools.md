@@ -3,8 +3,9 @@ title: "List schools of an educationUser"
 description: "Retrieve a list of schools for a user."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List schools of an educationUser

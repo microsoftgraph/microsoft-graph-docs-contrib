@@ -1,10 +1,11 @@
 ---
-title: "List custodian's unifiedGroupSources"
-description: "Get a list of the custodian's unifiedGroupSource objects and their properties."
+title: "List unifiedGroupSources"
+description: "Get a list of the unifiedGroupSource objects associated with an ediscoveryCustodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # List unifiedGroupSources
@@ -33,7 +34,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$orderby`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

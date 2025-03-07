@@ -3,8 +3,9 @@ title: "alertTrigger resource type"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # alertTrigger resource type
@@ -23,9 +24,12 @@ Contains information about the properties that triggered a detection (properties
 |type|String|Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.|
 |value|String|Value of the property serving as a detection trigger.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

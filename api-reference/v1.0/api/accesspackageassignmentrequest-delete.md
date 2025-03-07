@@ -3,8 +3,9 @@ title: "Delete accessPackageAssignmentRequest"
 description: "Delete accessPackageAssignmentRequest."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # Delete accessPackageAssignmentRequest
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-delete-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write.md)]
 
 ## HTTP request
 

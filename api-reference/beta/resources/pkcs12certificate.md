@@ -3,8 +3,9 @@ title: "pkcs12Certificate resource type"
 description: "Represents configuration for uploading a pkcs12Certificate in an API call."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # pkcs12Certificate resource type
@@ -24,9 +25,12 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 |pkcs12Value|String| Specifies the field for sending pfx content. The value should be a base-64 encoded version of the actual certificate content. Required.|
 |password|String| Specifies the password for the pfx file. Required. If no password is used, must still provide a value of `""`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.pkcs12Certificate"

@@ -5,7 +5,7 @@ author: tushar20
 ms.author: tkanaujia
 ms.date: 5/3/2023
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

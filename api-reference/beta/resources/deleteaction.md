@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: DeleteAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # DeleteAction resource type
@@ -17,6 +17,16 @@ Namespace: microsoft.graph
 The presence of the **DeleteAction** resource on an [**itemActivity**][activity] indicates that the activity deleted an item.
 
 [activity]: itemactivity.md
+
+## Properties
+
+| Property   | Type   | Description                                                    |
+| :--------- | :----- | :------------------------------------------------------------- |
+| name       | string | The name of the item that was deleted.                         |
+| objectType | string | `File` or `Folder`, depending on the type of the deleted item. |
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -32,13 +42,6 @@ The presence of the **DeleteAction** resource on an [**itemActivity**][activity]
   "objectType": "File | Folder"
 }
 ```
-
-## Properties
-
-| Property   | Type   | Description                                                    |
-| :--------- | :----- | :------------------------------------------------------------- |
-| name       | string | The name of the item that was deleted.                         |
-| objectType | string | `File` or `Folder`, depending on the type of the deleted item. |
 
 ## Remarks
 

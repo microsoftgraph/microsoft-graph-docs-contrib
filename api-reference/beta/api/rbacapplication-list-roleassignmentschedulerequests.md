@@ -3,8 +3,9 @@ title: "List roleAssignmentScheduleRequests"
 description: "Retrieve the requests for active role assignments to principals made through the PIM unifiedRoleAssignmentScheduleRequest object or the role assignments API."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List roleAssignmentScheduleRequests

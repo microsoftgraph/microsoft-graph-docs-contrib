@@ -1,6 +1,6 @@
 {
   "changelog": [
-	{
+    {
       "ChangeList": [
         {
           "Id": "7b6aebb5-6126-4f2d-b4c4-e0952613719b",
@@ -26,9 +26,9 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
-	{
+    {
       "ChangeList": [
-		    {
+        {
           "Id": "8c297080-41ec-436e-9907-f0f8a3ee036d",
           "ApiChange": "Relationship",
           "ChangedApiName": "privilegedAccess",
@@ -36,7 +36,7 @@
           "Description": "Added the **privilegedAccess** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-1.0) resource.",
           "Target": "identityGovernance"
         },
-		    {
+        {
           "Id": "8c297080-41ec-436e-9907-f0f8a3ee036d",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessRoot",
@@ -214,7 +214,7 @@
     },
     {
       "ChangeList": [
-		{
+        {
           "Id": "7b6aebb5-6126-4f2d-b4c4-e0952613719b",
           "ApiChange": "Permission",
           "ChangedApiName": "RoleManagementAlert.Read.Directory",
@@ -1045,9 +1045,9 @@
       "SubArea": "Governance"
     },
     {
-      "ChangeList" :[
+      "ChangeList": [
         {
-          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "Id": "f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRole",
           "ChangeType": "Deletion",
@@ -1055,7 +1055,7 @@
           "Target": "privilegedRole"
         },
         {
-          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "Id": "f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRoleAssignment",
           "ChangeType": "Deletion",
@@ -1063,7 +1063,7 @@
           "Target": "privilegedRoleAssignment"
         },
         {
-          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "Id": "f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRoleAssignmentRequest",
           "ChangeType": "Deletion",
@@ -1071,7 +1071,7 @@
           "Target": "privilegedRoleAssignmentRequest"
         },
         {
-          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "Id": "f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedApproval",
           "ChangeType": "Deletion",
@@ -1079,7 +1079,7 @@
           "Target": "privilegedApproval"
         },
         {
-          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "Id": "f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRoleSummary",
           "ChangeType": "Deletion",
@@ -1087,7 +1087,7 @@
           "Target": "privilegedRoleSummary"
         },
         {
-          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "Id": "f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRoleSettings ",
           "ChangeType": "Deletion",
@@ -1095,7 +1095,7 @@
           "Target": "privilegedRoleSettings "
         },
         {
-          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "Id": "f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedOperationEvent",
           "ChangeType": "Deletion",
@@ -1103,12 +1103,12 @@
           "Target": "privilegedOperationEvent"
         }
       ],
-      "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
-      "Cloud":"Prod",
-      "Version":"beta",
-      "CreatedDateTime":"2023-05-05T00:00:00.0000000Z",
-      "WorkloadArea":"Identity and access",
-      "SubArea":"Governance"
+      "Id": "f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-05T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     }
   ]
 }

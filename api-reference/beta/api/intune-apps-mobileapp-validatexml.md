@@ -2,9 +2,10 @@
 title: "validateXml action"
 description: "Intune Apps Mobileapp Validatexml Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # validateXml action

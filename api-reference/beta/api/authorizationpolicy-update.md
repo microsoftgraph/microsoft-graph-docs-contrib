@@ -4,8 +4,9 @@ description: "Update the properties of authorizationPolicy object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/15/2024
 ---
 
 # Update authorizationPolicy
@@ -25,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "authorizationpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authorizationpolicy-update-permissions.md)]
 
-For delegated scenarios, the user needs to have the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[!INCLUDE [rbac-authorization-policy-apis-update](../includes/rbac-for-apis/rbac-authorization-policy-apis-update.md)]
 
 ## HTTP request
 
@@ -334,7 +335,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 5: Enable default user role to use Self-Serve Password Reset feature
+### Example 5: Enable administrators to use the self-serve password reset feature
 
 #### Request
 
@@ -473,7 +474,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-Here's an example of the request that allows user consent to apps, subject to the built-in [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low`, which allows delegated permissions classified "low", for client apps from verified publishers or registered in the same tenant.
+The following example shows a request that allows user consent to apps, subject to the built-in [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low`, which allows delegated permissions classified "low", for client apps from verified publishers or registered in the same tenant.
 
 # [HTTP](#tab/http)
 <!-- {

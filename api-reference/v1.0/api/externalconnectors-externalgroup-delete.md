@@ -3,8 +3,9 @@ title: "Delete externalGroup"
 description: "Delete an externalGroup object."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete externalGroup

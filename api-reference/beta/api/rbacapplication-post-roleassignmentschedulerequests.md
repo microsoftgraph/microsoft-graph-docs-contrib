@@ -3,8 +3,9 @@ title: "Create roleAssignmentScheduleRequests"
 description: "Create a new unifiedRoleAssignmentScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create roleAssignmentScheduleRequests

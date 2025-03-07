@@ -3,8 +3,9 @@ title: "Create delegatedPermissionClassification"
 description: "Classify a permission by adding a delegatedPermissionClassification to the API's service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 04/18/2024
 ---
 
 # Create delegatedPermissionClassification

@@ -3,7 +3,8 @@ title: "Shared resources in Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that support multiple workflows for a tenant organization."
 ms.localizationpriority: medium
 author: "jaiprakashmb"
-ms.prod: "intune"
+ms.subservice: "intune"
+ms.date: 04/01/2024
 ---
 
 # Shared resources in Microsoft Intune

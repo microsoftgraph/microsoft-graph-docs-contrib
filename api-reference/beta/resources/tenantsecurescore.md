@@ -3,8 +3,9 @@ title: "tenantSecureScore resource type"
 description: "Represents the Secure Score for a Microsoft Entra tenant."
 author: "sacsai"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # tenantSecureScore resource type

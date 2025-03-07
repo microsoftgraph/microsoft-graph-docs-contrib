@@ -3,8 +3,9 @@ title: "Outlook mail API overview"
 description: "Use the Outlook mail API in Microsoft Graph to manage contacts, schedule meetings, initiate online conversations, share files, and collaborate in groups."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Outlook mail API overview

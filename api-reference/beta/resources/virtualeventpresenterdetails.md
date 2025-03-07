@@ -1,10 +1,11 @@
 ---
 title: "virtualEventPresenterDetails resource type"
-description: "Detail information about a virtual event presenter."
-author: "awang119"
+description: "Represents detail information about a virtual event presenter."
+author: "frankpeng7"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 05/21/2024
 ---
 
 # virtualEventPresenterDetails resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Detail information of a virtual event presenter.
+Represents detail information about a virtual event presenter.
 
 ## Properties
 
@@ -26,6 +27,9 @@ Detail information of a virtual event presenter.
 |personalSiteWebUrl|String|The presenter's personal website URL.|
 |photo|Stream|The content stream of the presenter's photo.|
 |twitterProfileWebUrl|String|The presenter's Twitter profile URL.|
+
+## Relationships
+None.
 
 ## JSON representation
 

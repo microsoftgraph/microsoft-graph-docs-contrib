@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AccessReviewScheduleDefinition
 {
@@ -83,11 +84,15 @@ var requestBody = new AccessReviewScheduleDefinition
 		{
 			"backupReviewers" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-					QueryType = "MicrosoftGraph",
-				},
+					{
+						"query", new UntypedString("/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers")
+					},
+					{
+						"queryType", new UntypedString("MicrosoftGraph")
+					},
+				}),
 			}
 		},
 	},

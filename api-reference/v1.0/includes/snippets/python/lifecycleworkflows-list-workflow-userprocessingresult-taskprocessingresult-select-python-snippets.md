@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
-from msgraph.generated.identityGovernance.lifecycleWorkflows.workflows.item.userProcessingResults.item.taskProcessingResults.task_processing_results_request_builder import TaskProcessingResultsRequestBuilder
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+from msgraph.generated.identity_governance.lifecycle_workflows.workflows.item.user_processing_results.item.task_processing_results.task_processing_results_request_builder import TaskProcessingResultsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = TaskProcessingResultsRequestBuilder.TaskProcessingResultsRequestBuilderGetQueryParameters(
 		select = ["id","processingStatus","failureReason","subject","task"],
 )
 
-request_configuration = TaskProcessingResultsRequestBuilder.TaskProcessingResultsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

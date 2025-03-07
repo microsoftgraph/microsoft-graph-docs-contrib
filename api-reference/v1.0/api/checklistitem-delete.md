@@ -3,8 +3,9 @@ title: "Delete checklistItem"
 description: "Delete a checklistItem object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete checklistItem
@@ -47,6 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +96,7 @@ DELETE https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNG
 ---
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

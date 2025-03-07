@@ -1,10 +1,11 @@
 ---
 title: "Delete profile"
-description: "Delete profile."
+description: "Delete a profile object from a user's account."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # Delete profile
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [profile](../resources/profile.md) object from a user's account.
+Delete a [profile](../resources/profile.md) object from a user's account.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -52,7 +53,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/me/profile
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

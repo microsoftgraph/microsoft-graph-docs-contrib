@@ -4,8 +4,9 @@ description: "Read the properties and relationships of an emailAuthenticationMet
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Get emailAuthenticationMethodConfiguration

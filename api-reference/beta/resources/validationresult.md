@@ -4,8 +4,9 @@ description: "Exposes the properties that specify the rules against which a user
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # validationResult resource type
@@ -27,7 +28,7 @@ Exposes the properties that specify the rules against which a user's password wa
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.validationResult"

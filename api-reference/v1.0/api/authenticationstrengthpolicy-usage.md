@@ -4,8 +4,9 @@ description: "Allows the caller to see which Conditional Access policies referen
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # authenticationStrengthPolicy: usage
@@ -49,7 +50,7 @@ If successful, this function returns a `200 OK` response code and an [authentica
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -2,9 +2,10 @@
 title: "deviceManagementScriptAssignment resource type"
 description: "Contains properties used to assign a device management script to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagementScriptAssignment resource type
@@ -48,10 +49,11 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
     "deviceAndAppManagementAssignmentFilterType": "String",
-    "collectionId": "String"
+    "targetType": "String",
+    "entraObjectId": "String"
   }
 }
 ```

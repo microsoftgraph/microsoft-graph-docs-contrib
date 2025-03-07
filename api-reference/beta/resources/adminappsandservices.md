@@ -3,8 +3,9 @@ title: "adminAppsAndServices resource type"
 description: "Company-wide configuration for apps and services"
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # adminAppsAndServices resource type
@@ -21,8 +22,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminAppsAndServices](../api/adminappsandservices-get.md)|[adminAppsAndServices](../resources/adminappsandservices.md)|Read the properties and relationships of a [adminAppsAndServices](../resources/adminappsandservices.md) object.|
-|[Update adminAppsAndServices](../api/adminappsandservices-update.md)|[adminAppsAndServices](../resources/adminappsandservices.md)|Update the properties and relationships of a [adminAppsAndServices](../resources/adminappsandservices.md) object.|
+|[Get](../api/adminappsandservices-get.md)|[adminAppsAndServices](../resources/adminappsandservices.md)|Read the properties and relationships of a [adminAppsAndServices](../resources/adminappsandservices.md) object.|
+|[Update](../api/adminappsandservices-update.md)|[adminAppsAndServices](../resources/adminappsandservices.md)|Update the properties and relationships of a [adminAppsAndServices](../resources/adminappsandservices.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

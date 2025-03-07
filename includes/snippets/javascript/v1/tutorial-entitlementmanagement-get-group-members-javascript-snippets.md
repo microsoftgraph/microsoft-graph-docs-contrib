@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let members = await client.api('/groups/e93e24d1-2b65-4a6c-a1dd-654a12225487/members')
+let members = await client.api('/groups/f4892fac-e81c-4712-bdf2-a4450008a4b0/members')
 	.get();
 
 ```

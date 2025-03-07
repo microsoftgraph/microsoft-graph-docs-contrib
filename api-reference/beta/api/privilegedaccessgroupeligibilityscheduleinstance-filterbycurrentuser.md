@@ -3,8 +3,9 @@ title: "privilegedAccessGroupEligibilityScheduleInstance: filterByCurrentUser"
 description: "Return instances of membership and ownership eligibility schedules for the calling principal."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # privilegedAccessGroupEligibilityScheduleInstance: filterByCurrentUser
@@ -58,7 +59,7 @@ If successful, this function returns a `200 OK` response code and a [privilegedA
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

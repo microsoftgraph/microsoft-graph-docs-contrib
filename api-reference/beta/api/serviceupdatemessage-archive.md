@@ -3,8 +3,9 @@ title: "serviceUpdateMessage: archive"
 description: "Archive a list of service update messages for the signed in user."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # serviceUpdateMessage: archive

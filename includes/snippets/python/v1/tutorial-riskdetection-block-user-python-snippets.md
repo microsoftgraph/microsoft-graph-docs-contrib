@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.conditional_access_policy import ConditionalAccessPolicy
+from msgraph.generated.models.conditional_access_policy_state import ConditionalAccessPolicyState
 from msgraph.generated.models.conditional_access_condition_set import ConditionalAccessConditionSet
 from msgraph.generated.models.risk_level import RiskLevel
 from msgraph.generated.models.conditional_access_applications import ConditionalAccessApplications
 from msgraph.generated.models.conditional_access_users import ConditionalAccessUsers
 from msgraph.generated.models.conditional_access_grant_controls import ConditionalAccessGrantControls
 from msgraph.generated.models.conditional_access_grant_control import ConditionalAccessGrantControl
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ConditionalAccessPolicy(
 	display_name = "Policy for risky sign-in block access",
 	state = ConditionalAccessPolicyState.Enabled,

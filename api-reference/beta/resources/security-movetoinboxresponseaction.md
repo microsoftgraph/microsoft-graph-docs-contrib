@@ -3,8 +3,9 @@ title: "moveToInboxResponseAction resource type"
 description: "Describes an email response action that moves the email message to the user's Inbox."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # moveToInboxResponseAction resource type

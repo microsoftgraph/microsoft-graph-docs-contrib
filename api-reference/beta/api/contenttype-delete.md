@@ -4,7 +4,8 @@ title: "Delete contentType"
 description: "Delete a content type from a SharePoint list or a site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
+ms.date: 04/05/2024
 ---
 
 # Delete contentType

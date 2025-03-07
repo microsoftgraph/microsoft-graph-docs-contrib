@@ -3,8 +3,9 @@ title: "accessReviewInstance: acceptRecommendations"
 description: "Allows the acceptance of recommendations on all decisions that haven't been reviewed for an access review instance for which the calling user is a reviewer. "
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # accessReviewInstance: acceptRecommendations
@@ -74,10 +75,6 @@ POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-6
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/acceptrecommendations-accessreviewinstance-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/acceptrecommendations-accessreviewinstance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

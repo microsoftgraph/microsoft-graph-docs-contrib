@@ -3,8 +3,9 @@ title: "ediscoveryNoncustodialDataSource: applyHold"
 description: "Start the process of applying hold to eDiscovery non-custodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # ediscoveryNoncustodialDataSource: applyHold
@@ -57,7 +58,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ### Example 1: Apply hold to multiple non-custodial data sources
 #### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -112,7 +113,7 @@ Content-Type: application/json
 ---
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -125,7 +126,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Apply hold to a single non-custodial data source
 #### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -172,7 +173,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 ---
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

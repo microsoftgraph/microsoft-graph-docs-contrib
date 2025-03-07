@@ -2,9 +2,10 @@
 title: "Create windows10DeviceFirmwareConfigurationInterface"
 description: "Create a new windows10DeviceFirmwareConfigurationInterface object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Create windows10DeviceFirmwareConfigurationInterface

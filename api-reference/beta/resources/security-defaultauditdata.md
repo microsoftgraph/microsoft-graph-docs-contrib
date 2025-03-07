@@ -3,8 +3,9 @@ title: "defaultAuditData resource type"
 description: "Represents a JSON object containing the actual audit log data."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # defaultAuditData resource type

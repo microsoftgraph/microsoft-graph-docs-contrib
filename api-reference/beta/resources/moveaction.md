@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: MoveAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # MoveAction resource type
@@ -17,6 +17,16 @@ Namespace: microsoft.graph
 The presence of the **MoveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.
 
 [activity]: itemactivity.md
+
+## Properties
+
+| Property | Type   | Description                                       |
+| :------- | :----- | :------------------------------------------------ |
+| from     | string | The name of the location the item was moved from. |
+| to       | string | The name of the location the item was moved to.   |
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -32,13 +42,6 @@ The presence of the **MoveAction** resource on an [**itemActivity**][activity] i
   "to": "string"
 }
 ```
-
-## Properties
-
-| Property | Type   | Description                                       |
-| :------- | :----- | :------------------------------------------------ |
-| from     | string | The name of the location the item was moved from. |
-| to       | string | The name of the location the item was moved to.   |
 
 ## Remarks
 

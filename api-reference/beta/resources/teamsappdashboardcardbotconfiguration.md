@@ -3,8 +3,9 @@ title: "teamsAppDashboardCardBotConfiguration resource type"
 description: "Represents the bot configuration for a dashboard card in a teamsApp."
 author: "ashish-goel"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # teamsAppDashboardCardBotConfiguration resource type

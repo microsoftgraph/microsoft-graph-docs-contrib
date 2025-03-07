@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -13,9 +16,6 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodelssecurity.NewAuditLogQuery()
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
@@ -23,6 +23,11 @@ filterStartDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetFilterStartDateTime(&filterStartDateTime) 
 filterEndDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetFilterEndDateTime(&filterEndDateTime) 
+recordTypeFilters := []graphmodelssecurity.AuditLogRecordTypeable {
+	auditLogRecordType := graphmodels.STRING_AUDITLOGRECORDTYPE 
+	requestBody.SetAuditLogRecordType(&auditLogRecordType)
+}
+requestBody.SetRecordTypeFilters(recordTypeFilters)
 keywordFilter := "String"
 requestBody.SetKeywordFilter(&keywordFilter) 
 operationFilters := []string {
@@ -48,11 +53,11 @@ requestBody.SetAdministrativeUnitIdFilters(administrativeUnitIdFilters)
 status := graphmodels.STRING_AUDITLOGQUERYSTATUS 
 requestBody.SetStatus(&status) 
 additionalData := map[string]interface{}{
-	"recordTypeFilter" : "String", 
 	"serviceFilter" : "String", 
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 queries, err := graphClient.Security().AuditLog().Queries().Post(context.Background(), requestBody, nil)
 
 

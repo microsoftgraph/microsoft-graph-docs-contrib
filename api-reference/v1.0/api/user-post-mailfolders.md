@@ -3,8 +3,9 @@ title: "Create MailFolder"
 description: "Use this API to create a new mail folder in the root folder of the user's mailbox."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create MailFolder
@@ -53,7 +54,7 @@ If successful, this method returns `201 Created` response code and a [mailFolder
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +106,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

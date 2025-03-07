@@ -3,8 +3,9 @@ title: "Create awards"
 description: "Create a new awards object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Create personAward

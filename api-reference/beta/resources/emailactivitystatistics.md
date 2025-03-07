@@ -3,8 +3,9 @@ title: "emailActivityStatistics resource type"
 description: "Represents additional information about email activities for users"
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # emailActivityStatistics resource type
@@ -35,7 +36,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

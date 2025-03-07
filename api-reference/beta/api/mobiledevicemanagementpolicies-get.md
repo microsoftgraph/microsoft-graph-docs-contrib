@@ -3,8 +3,9 @@ title: "Get mobileDeviceManagementPolicy"
 description: "Read the properties and relationships of a mobile device management policy object."
 author: "ravennMSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # Get mobileDeviceManagementPolicy
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "mobiledevicemanagementpolicies_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/mobiledevicemanagementpolicies-get-permissions.md)]
+
+[!INCLUDE [rbac-mam-mdm-policies-apis-read](../includes/rbac-for-apis/rbac-mam-mdm-policies-apis-read.md)]
 
 ## HTTP request
 

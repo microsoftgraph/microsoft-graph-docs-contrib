@@ -3,8 +3,9 @@ title: "association resource type"
 description: "An association represents a relationship between two items. In the Global Secure Access services, it represents a relationship between a branch or a device and a traffic forwarding profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # association resource type
@@ -23,7 +24,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.association"

@@ -3,8 +3,9 @@ title: "Update adminConsentRequestPolicy"
 description: "Update the properties of an adminConsentRequestPolicy object."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/06/2024
 ---
 
 # Update adminConsentRequestPolicy
@@ -20,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "adminconsentrequestpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/adminconsentrequestpolicy-update-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) directory role.
+[!INCLUDE [rbac-adminconsentrequestpolicy-apis-update](../includes/rbac-for-apis/rbac-adminconsentrequestpolicy-apis-update.md)]
 
 ## HTTP request
 

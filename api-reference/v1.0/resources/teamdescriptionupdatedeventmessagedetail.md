@@ -3,8 +3,9 @@ title: "teamDescriptionUpdatedEventMessageDetail resource type"
 description: "Represents the details of an event message about an updated team description."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamDescriptionUpdatedEventMessageDetail resource type
@@ -25,7 +26,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |teamId|String|Unique identifier of the **team**.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamDescriptionUpdatedEventMessageDetail",

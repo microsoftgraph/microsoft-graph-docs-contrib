@@ -3,8 +3,9 @@ title: "searchHitsContainer resource type"
 description: "Represent the list of search results."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 08/08/2024
 ---
 
 # searchHitsContainer resource type
@@ -21,10 +22,13 @@ Represent the list of search results.
 |moreResultsAvailable|Boolean|Provides information if more results are available. Based on this information, you can adjust the **from** and **size** properties of the [searchRequest](searchrequest.md) accordingly.|
 |total|Int32|The total number of results. Note this isn't the number of results on the page, but the total number of results satisfying the query.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

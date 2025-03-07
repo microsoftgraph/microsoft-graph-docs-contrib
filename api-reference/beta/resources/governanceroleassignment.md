@@ -3,9 +3,10 @@ title: "governanceRoleAssignment resource type"
 description: "Represents the assignment of a user or group to a role."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
+ms.date: 04/03/2024
 ---
 
 # governanceRoleAssignment resource type
@@ -57,7 +58,7 @@ No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssi
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 <!-- {

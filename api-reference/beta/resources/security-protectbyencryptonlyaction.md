@@ -3,8 +3,9 @@ title: "protectByEncryptOnlyAction resource type"
 description: "Informs the application that an Azure Information Protection encrypt-only protection should be applied."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # protectByEncryptOnlyAction resource type
@@ -26,7 +27,7 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.protectByEncryptOnlyAction"

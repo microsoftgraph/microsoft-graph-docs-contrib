@@ -3,8 +3,9 @@ title: printServiceEndpoint resource type
 description: Represents URI and identifying information for a print service instance.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printServiceEndpoint resource type
@@ -30,7 +31,7 @@ Represents URI and identifying information for a print service instance.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -3,8 +3,9 @@ title: "manifest resource type"
 description: "Represents metadata for the exported data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # manifest resource type
@@ -23,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get manifest](../api/partners-billing-manifest-get.md)|[microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md)|Read the properties and relationships of a [manifest](../resources/partners-billing-manifest.md) object.|
+|[Get](../api/partners-billing-manifest-get.md)|[microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md)|Read the properties and relationships of a [manifest](../resources/partners-billing-manifest.md) object.|
 
 ## Properties
 

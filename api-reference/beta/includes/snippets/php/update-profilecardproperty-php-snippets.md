@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ProfileCardProperty;
+use Microsoft\Graph\Beta\Generated\Models\ProfileCardAnnotation;
+use Microsoft\Graph\Beta\Generated\Models\DisplayNameLocalization;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -13,7 +17,7 @@ $requestBody = new ProfileCardProperty();
 $annotationsProfileCardAnnotation1 = new ProfileCardAnnotation();
 $annotationsProfileCardAnnotation1->setDisplayName('Cost Center');
 $localizationsDisplayNameLocalization1 = new DisplayNameLocalization();
-$localizationsDisplayNameLocalization1->setLanguageTag('nb-NO');
+$localizationsDisplayNameLocalization1->setLanguageTag('no');
 $localizationsDisplayNameLocalization1->setDisplayName('Kostnadssenter');
 $localizationsArray []= $localizationsDisplayNameLocalization1;
 $annotationsProfileCardAnnotation1->setLocalizations($localizationsArray);

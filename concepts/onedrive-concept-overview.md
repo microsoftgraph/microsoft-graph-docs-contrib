@@ -2,8 +2,9 @@
 title: "OneDrive file storage API overview"
 description: "Use OneDrive, the files hub in Microsoft 365, to access files no matter where they are stored. Use Microsoft Graph to use a single API to work with these files. "
 ms.localizationpriority: high
-ms.prod: "files"
+ms.subservice: "onedrive"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # OneDrive file storage API overview

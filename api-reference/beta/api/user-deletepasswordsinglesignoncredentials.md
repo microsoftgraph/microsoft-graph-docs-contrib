@@ -3,8 +3,9 @@ title: "user: deletePasswordSingleSignOnCredentials"
 description: "Delete password-based single sign-on credentials for a service principal that is associated to a user."
 author: "AllisonAm"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # user: deletePasswordSingleSignOnCredentials
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete the password-based single sign-on credentials for a given user to a given service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -38,7 +39,7 @@ POST /users/{usersId}/deletePasswordSingleSignOnCredentials
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -3,7 +3,8 @@ title: "Automate creating, sending, and processing messages using the Outlook ma
 description: "Emails are represented by the message resource in the Outlook mail API in Microsoft Graph. You can create and send mail, check recipient status, and more."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Automate creating, sending, and processing messages

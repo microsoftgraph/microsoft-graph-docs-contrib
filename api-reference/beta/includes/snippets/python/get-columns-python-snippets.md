@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.drives.item.items.item.workbook.tables.item.columns.columns_request_builder import ColumnsRequestBuilder
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.drives.item.items.item.workbook.tables.item.columns.columns_request_builder import ColumnsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = ColumnsRequestBuilder.ColumnsRequestBuilderGetQueryParameters(
 		top = 5,
 		skip = 5,
 )
 
-request_configuration = ColumnsRequestBuilder.ColumnsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

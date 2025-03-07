@@ -3,8 +3,9 @@ title: "Exchange Web Services (EWS) to Microsoft Graph API mappings"
 description: "This article lists the Microsoft Graph APIs that map to Exchange Web Services (EWS) APIs."
 author: "sumithra-maran"
 ms.localizationpriority: medium
-ms.prod: "exchange"
+ms.subservice: "exchange"
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Exchange Web Services (EWS) to Microsoft Graph API mappings

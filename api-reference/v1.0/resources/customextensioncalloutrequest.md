@@ -3,8 +3,9 @@ title: "customExtensionCalloutRequest resource type"
 description: "Defines the custom extension callout request payload that's sent to external systems."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # customExtensionCalloutRequest resource type
@@ -24,7 +25,7 @@ Defines the custom extension callout request payload that's sent to external sys
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customExtensionCalloutRequest"

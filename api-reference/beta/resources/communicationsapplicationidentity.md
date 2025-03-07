@@ -3,8 +3,9 @@ title: "communicationsApplicationIdentity resource type"
 description: "Represents the identity of an application."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # communicationsApplicationIdentity resource type
@@ -25,6 +26,9 @@ Inherits from [identity](identity.md).
 | displayName | String | The display name associated with the application. Inherited from **identity**. |
 | hidden | Boolean | `True` if the participant shouldn't be shown in other participants' rosters. |
 | id | String | The client ID of the application from Microsoft Entra ID. Inherited from **identity**. |
+
+## Relationships
+None.
 
 ## JSON representation
 

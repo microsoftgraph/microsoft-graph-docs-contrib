@@ -3,8 +3,9 @@ author: "spgraph-docs-team"
 title: "List bundles"
 description: "List the bundles in a user's drive."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List bundles
@@ -60,7 +61,7 @@ To request an enumeration of all bundles defined in the drive, you can make a re
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
@@ -144,7 +145,7 @@ To filter the list of bundles returned from a request to the bundles collection,
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->

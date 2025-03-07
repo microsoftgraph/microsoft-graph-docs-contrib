@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+let windowsSettingInstance = await client.api('/me/settings/windows/{windowsSettingId}/instances/{windowsSettingInstanceId}')
+	.version('beta')
+	.get();
+
+```

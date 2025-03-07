@@ -3,8 +3,9 @@ title: "impactedMailboxAsset resource type"
 description: "Represents a mailbox that was identified in an alert triggered by a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # impactedMailboxAsset resource type

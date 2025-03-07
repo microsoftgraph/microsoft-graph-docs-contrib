@@ -4,8 +4,9 @@ description: "Lists all Azure roles in an Azure authorization system."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List roleDefinitions (for an Azure authorization system)

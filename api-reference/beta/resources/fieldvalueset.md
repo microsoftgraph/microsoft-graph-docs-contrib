@@ -2,34 +2,18 @@
 author: spgraph-docs-team
 description: "Represents the column values in a listItem resource."
 ms.date: 09/11/2017
-title: FieldValueSet
+title: fieldValueSet resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
-# FieldValueSet resource
+# fieldValueSet resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the column values in a [listItem](listitem.md) resource.
-
-## JSON representation
-
-Here's a JSON representation of a **fieldValueSet** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-       "keyProperty": "id", "openType": true } -->
-
-```json
-{
-    "Author": "Brad Cleaver",
-    "AuthorLookupId": "13",
-    "Name": "Kangaroos and Wallabies: A Deep Dive",
-    "Color": "Red",
-    "Quantity": 350,
-}
-```
 
 ## Properties
 
@@ -49,6 +33,27 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 ```
 
 You may request up to 12 lookup fields in a single query, plus any number of regular fields.
+
+## Relationships
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
+       "keyProperty": "id", "openType": true } -->
+
+```json
+{
+    "Author": "Brad Cleaver",
+    "AuthorLookupId": "13",
+    "Name": "Kangaroos and Wallabies: A Deep Dive",
+    "Color": "Red",
+    "Quantity": 350,
+}
+```
+
+
 
 <!--
 {

@@ -3,8 +3,9 @@ title: "presenceStatusMessage resource type"
 description: "Represents a presence status message related to the presence of a user in Microsoft Teams."
 author: "afedorov"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # presenceStatusMessage resource type
@@ -23,9 +24,12 @@ Represents a presence status message related to the [presence](presence.md) of a
 | message | [itemBody](itembody.md) | Status message item.<br/><br/> The only supported format currently is `message.contentType = 'text'`. |
 | publishedDateTime | DateTimeOffset |Time in which the status message was published.<br/>Read-only.<br/><br/>**publishedDateTime** isn't available when you request the presence of another user. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

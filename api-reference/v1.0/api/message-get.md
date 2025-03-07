@@ -3,8 +3,9 @@ title: "Get message"
 description: "Retrieve the properties and relationships of a message object."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get message
@@ -61,7 +62,7 @@ Use the `$value` parameter to get the MIME content of a message.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
@@ -77,7 +78,7 @@ Specifying the `$value` parameter returns the message content in MIME format, an
 ## Examples
 ### Example 1: Get a specific message
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -124,7 +125,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -248,7 +249,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=in
 ---
 
 #### Response
-Here is an example of the response. Note: The set of message headers in the response object is truncated for brevity. All of the headers will be returned from an actual call.
+The following example shows the response. Note: The set of message headers in the response object is truncated for brevity. All of the headers will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "name": "get_message_headers",
@@ -337,7 +338,7 @@ Prefer: outlook.body-content-type="text"
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
 <!-- {
   "blockType": "response",

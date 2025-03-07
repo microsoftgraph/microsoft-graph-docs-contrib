@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new EducationModuleResource
 {
@@ -18,10 +19,12 @@ var requestBody = new EducationModuleResource
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"file" , new 
+				"file" , new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					Odataid = "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ7A2QVVORGJNVBIC4LLM3XQ6UTS",
-				}
+					{
+						"odataid", new UntypedString("https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ7A2QVVORGJNVBIC4LLM3XQ6UTS")
+					},
+				})
 			},
 		},
 	},

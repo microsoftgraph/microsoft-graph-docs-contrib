@@ -3,8 +3,9 @@ title: "billingReconciliation resource type"
 description: "Represents details for billed invoice reconciliation and unbilled non-usage reconciliation data."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # billingReconciliation resource type

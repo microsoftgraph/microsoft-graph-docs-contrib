@@ -2,9 +2,10 @@
 title: "Create windows10EnrollmentCompletionPageConfigurationPolicySetItem"
 description: "Create a new windows10EnrollmentCompletionPageConfigurationPolicySetItem object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create windows10EnrollmentCompletionPageConfigurationPolicySetItem

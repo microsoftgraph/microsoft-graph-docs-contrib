@@ -3,8 +3,9 @@ title: "meetingParticipantInfo resource type"
 description: "Information about a participant in a meeting."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # meetingParticipantInfo resource type
@@ -23,7 +24,7 @@ Information about a participant in a meeting.
 
 ### onlineMeetingRole values
 
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `producer`, `coorganizer`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `producer`, `coorganizer`.
 
 | Value              | Description                                                            |
 | ------------------ | ---------------------------------------------------------------------- |
@@ -39,7 +40,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

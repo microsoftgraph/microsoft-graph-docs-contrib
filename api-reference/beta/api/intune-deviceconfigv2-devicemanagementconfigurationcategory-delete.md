@@ -2,9 +2,10 @@
 title: "Delete deviceManagementConfigurationCategory"
 description: "Deletes a deviceManagementConfigurationCategory."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Delete deviceManagementConfigurationCategory
@@ -34,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+DELETE /deviceManagement/inventoryCategories/{deviceManagementConfigurationCategoryId}
 DELETE /deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 DELETE /deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 ```
@@ -55,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/inventoryCategories/{deviceManagementConfigurationCategoryId}
 ```
 
 ### Response

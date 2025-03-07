@@ -3,8 +3,9 @@ title: "List associatedTeamInfo"
 description: "Get the list of teams in Microsoft Teams that a user is associated with."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 07/25/2024
 ---
 
 # List associatedTeamInfo
@@ -17,7 +18,7 @@ Currently, a [user](../resources/user.md) can be associated with a [team](../res
 * A [user](../resources/user.md) can be a direct member of a [team](../resources/team.md).
 * A [user](../resources/user.md) can be a member of a shared [channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -38,7 +39,7 @@ GET /users/{user-id}/teamwork/associatedTeams
 ```
 
 ## Optional query parameters
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -58,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -140,7 +141,7 @@ Content-Type: application/json
 ```
 
 
-## Related content
+## See also
 
 - [List joinedTeams](../api/user-list-joinedteams.md)
 - [List all teams in an organization](../api/teams-list.md)

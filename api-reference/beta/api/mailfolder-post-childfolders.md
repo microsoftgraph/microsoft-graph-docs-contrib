@@ -3,8 +3,9 @@ title: "Create child folder"
 description: "Use this API to create a new child mailFolder."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create child folder

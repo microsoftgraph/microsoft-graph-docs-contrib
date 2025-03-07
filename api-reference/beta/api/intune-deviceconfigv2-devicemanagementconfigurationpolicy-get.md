@@ -2,9 +2,10 @@
 title: "Get deviceManagementConfigurationPolicy"
 description: "Read properties and relationships of the deviceManagementConfigurationPolicy object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get deviceManagementConfigurationPolicy

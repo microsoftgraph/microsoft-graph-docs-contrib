@@ -3,8 +3,9 @@ title: "Set up a demo education tenant"
 description: "Learn how to create a new demo EDU tenant for testing and learning."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Set up a demo education tenant

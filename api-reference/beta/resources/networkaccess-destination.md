@@ -3,8 +3,9 @@ title: "destination resource type"
 description: "A unique network destination."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # destination resource type

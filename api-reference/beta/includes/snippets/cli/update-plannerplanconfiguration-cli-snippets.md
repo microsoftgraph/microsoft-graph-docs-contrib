@@ -4,9 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta solutions business-scenarios planner plan-configuration patch --business-scenario-id {businessScenario-id} --body '{\
-  "@odata.type": "#microsoft.graph.plannerPlanConfiguration",\
   "defaultLanguage": "en-us",\
   "buckets": [\
     {\
@@ -20,6 +19,54 @@ mgc-beta solutions business-scenarios planner plan-configuration patch --busines
     },\
     {\
       "externalBucketId": "returnProcessingBucket"\
+    }\
+  ],\
+  "localizations": [\
+    {\
+      "id": "en-us",\
+      "languageTag": "en-us",\
+      "planTitle": "Order Tracking",\
+      "buckets": [\
+        {\
+          "externalBucketId": "deliveryBucket",\
+          "name": "Deliveries"\
+        },\
+        {\
+          "externalBucketId": "storePickupBucket",\
+          "name": "Pickup"\
+        },\
+        {\
+          "externalBucketId": "specialOrdersBucket",\
+          "name": "Special Orders"\
+        },\
+        {\
+          "externalBucketId": "returnProcessingBucket",\
+          "name": "Customer Returns"\
+        }\
+      ]\
+    },\
+    {\
+      "id": "es-es",\
+      "languageTag": "es-es",\
+      "planTitle": "Seguimiento de pedidos",\
+      "buckets": [\
+        {\
+          "externalBucketId": "deliveryBucket",\
+          "name": "Entregas"\
+        },\
+        {\
+          "externalBucketId": "storePickupBucket",\
+          "name": "Recogida"\
+        },\
+        {\
+          "externalBucketId": "specialOrdersBucket",\
+          "name": "Pedidos especiales"\
+        },\
+        {\
+          "externalBucketId": "specialOrdersBucket",\
+          "name": "Devoluciones de clientes"\
+        }\
+      ]\
     }\
   ]\
 }\

@@ -1,17 +1,18 @@
 ---
 title: "Get taskDefinition"
-description: "Read the details of a built-in workflow task."
+description: "Read the details of a built-in workflow task in Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 08/23/2024
 ---
 
 # Get taskDefinition
 
 Namespace: microsoft.graph.identityGovernance
 
-Read the details of a built-in workflow [task](../resources/identitygovernance-taskdefinition.md).
+Read the details of a built-in workflow [task](../resources/identitygovernance-taskdefinition.md) in Lifecycle Workflows.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -56,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

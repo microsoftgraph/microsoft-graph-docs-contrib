@@ -3,8 +3,9 @@ title: "Get accessPackageAssignmentPolicy"
 description: "Retrieve the properties and relationships of an accessPackageAassignmentPolicy object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/06/2024
 ---
 
 # Get accessPackageAssignmentPolicy
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentpolicy-get-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 
@@ -134,7 +137,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request to retrieve the collection of custom extension handlers that are defined for a policy and their associated custom workflow extension.
+The following example shows a request to retrieve the collection of custom extension handlers that are defined for a policy and their associated custom workflow extension.
 
 
 # [HTTP](#tab/http)
@@ -247,8 +250,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request to retrieve the collection of custom extension stage settings that are defined for a policy and their associated access package custom workflow extension.
-
+The following example shows a request to retrieve the collection of custom extension stage settings that are defined for a policy and their associated access package custom workflow extension.
 
 # [HTTP](#tab/http)
 <!-- {

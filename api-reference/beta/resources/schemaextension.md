@@ -4,7 +4,8 @@ description: "Schema extensions allow you to define a schema to extend and add s
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: resourcePageType
-ms.prod: "extensions"
+ms.subservice: extensions
+ms.date: 04/17/2024
 ---
 
 # schemaExtension resource type (schema extensions)
@@ -65,9 +66,12 @@ The owner app can move the extension through different states of a lifecycle, us
 > [!NOTE]
 > Schema extension definitions (marked as `Available`) created by other developers from other tenants are visible to all developers (by listing all schema extensions). This is different from other APIs that only return tenant-specific data. On the other hand, extension data created based on schema extension definitions, is tenant-specific and can only be accessed by apps explicitly granted permission. 
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

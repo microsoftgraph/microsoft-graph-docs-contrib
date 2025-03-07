@@ -3,8 +3,9 @@ title: "servicePrincipal: removePassword"
 description: "Remove a password from a servicePrincipal"
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # servicePrincipal: removePassword

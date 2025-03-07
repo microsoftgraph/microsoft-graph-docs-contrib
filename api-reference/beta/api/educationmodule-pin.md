@@ -3,8 +3,9 @@ title: "educationModule: pin"
 description: "Pin an educationModule in the class work list."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # educationModule: pin

@@ -9,7 +9,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BusinessScenarioTask businessScenarioTask = new BusinessScenarioTask();
-businessScenarioTask.setOdataType("#microsoft.graph.businessScenarioTask");
 businessScenarioTask.setTitle("Customer order #12010");
 businessScenarioTask.setPercentComplete(0);
 businessScenarioTask.setPriority(5);

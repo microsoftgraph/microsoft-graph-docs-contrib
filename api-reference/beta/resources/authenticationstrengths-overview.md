@@ -4,8 +4,9 @@ description: "Authentication strengths are sets of authentication method combina
 ms.localizationpriority: medium
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
-doc_type: "conceptualPageType"
+ms.subservice: "entra-sign-in"
+doc_type: conceptualPageType
+ms.topic: overview
 ms.date: 09/12/2023
 ---
 

@@ -2,9 +2,10 @@
 title: "Delete windows10DeviceFirmwareConfigurationInterface"
 description: "Deletes a windows10DeviceFirmwareConfigurationInterface."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Delete windows10DeviceFirmwareConfigurationInterface

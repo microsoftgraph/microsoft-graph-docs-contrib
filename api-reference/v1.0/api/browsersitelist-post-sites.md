@@ -3,8 +3,9 @@ title: "Create browserSite"
 description: "Create a new browserSite object in a browserSiteList."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create browserSite
@@ -58,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [browserS
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

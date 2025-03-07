@@ -3,8 +3,9 @@ title: "Delete educationSubmissionResource"
 description: "Deletes a resource from the submission. This can only be done by the student. If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted."
 author: "sharad-sharma-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 03/13/2024
 ---
 
 # Delete educationSubmissionResource
@@ -43,7 +44,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -90,7 +91,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a85
 ---
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,11 @@ ms.date: 09/12/2018
 title: AccessAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 # accessAction resource type
 
 Namespace: microsoft.graph
-
 
 
 The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.
@@ -21,7 +20,10 @@ The presence of the **accessAction** resource on an [**itemActivity**][activity]
 
 ## Properties
 
-This resource type has no properties.
+None.
+
+## Relationships
+None.
 
 ## JSON representation
 

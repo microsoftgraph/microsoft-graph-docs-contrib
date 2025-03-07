@@ -3,8 +3,9 @@ title: "Update complianceChange"
 description: "Update the properties of a complianceChange object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-autopatch
 doc_type: apiPageType
+ms.date: 08/31/2024
 ---
 
 # Update complianceChange
@@ -55,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

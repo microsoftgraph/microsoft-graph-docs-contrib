@@ -3,8 +3,9 @@ title: "Delete educationAssignmentResource"
 description: "Delete a specific resource attached to an assignment."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete educationAssignmentResource
@@ -43,7 +44,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -90,7 +91,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a85
 ---
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 
 <!-- {

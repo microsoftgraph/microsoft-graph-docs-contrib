@@ -3,8 +3,9 @@ title: "Get event"
 description: "Get the properties and relationships of the specified event object."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Get event
@@ -69,7 +70,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 | Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header isn't specified, the **body** property is returned in HTML format. Optional. |
 
@@ -137,7 +138,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ---
 
 #### Response
-Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
+The following example shows the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 
 <!-- {
   "blockType": "response",
@@ -278,7 +279,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 #### Response
-Here is an example of the response. The **body** property is returned in text format.
+The following example shows the response. The **body** property is returned in text format.
 
 <!-- {
   "blockType": "response",
@@ -359,7 +360,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=?$select=subj
 
 #### Response
 
-Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for.
+The following example shows the response. The **locations** property includes details for the 3 locations that the event is organized for.
 
 Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header,
 the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.

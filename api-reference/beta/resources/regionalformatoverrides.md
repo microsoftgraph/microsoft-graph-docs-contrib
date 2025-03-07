@@ -3,8 +3,9 @@ title: "regionalFormatOverrides resource type"
 description: "A resource representing regional formatting overrides for calendars, dates, and times."
 ms.localizationpriority: medium
 author: "jasonbro"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 # regionalFormatOverrides resource type
 
@@ -25,6 +26,9 @@ A collection of strings representing formatting overrides for calendars, dates, 
 |shortTimeFormat      |String               	|The short time format to be used for displaying time.<br><br>Returned by default.|
 |longTimeFormat       |String               	|The long time format to be used for displaying time.<br><br>Returned by default.|
 |timeZone             |String               	|The timezone to be used for displaying time.<br><br>Returned by default.|
+
+## Relationships
+None.
 
 ## JSON representation
 

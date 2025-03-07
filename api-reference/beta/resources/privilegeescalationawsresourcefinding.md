@@ -4,8 +4,9 @@ description: "AWS resources with privilege escalation."
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 08/06/2024
 ---
 
 # privilegeEscalationAwsResourceFinding resource type
@@ -22,8 +23,8 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List privilegeEscalationAwsResourceFinding objects](../api/privilegeescalationawsresourcefinding-list.md)|[privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) collection|Get a list of the [privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) objects and their properties.|
-|[Get privilegeEscalationAwsResourceFinding](../api/privilegeescalationawsresourcefinding-get.md)|[privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md)|Read the properties and relationships of a [privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) object.|
+|[List](../api/privilegeescalationawsresourcefinding-list.md)|[privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) collection|Get a list of the [privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) objects and their properties.|
+|[Get](../api/privilegeescalationawsresourcefinding-get.md)|[privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md)|Read the properties and relationships of a [privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -37,7 +38,7 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 |Relationship|Type|Description|
 |:---|:---|:---|
 |identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [identityFinding](../resources/identityfinding.md). Autoexpanded by default.|
-|potentialPrivilegeEscalations|[privilegeEscalation](../resources/privilegeescalation.md) collection|The list of escalations that the identity is capable of performing. Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
+|privilegeEscalationDetails|[privilegeEscalation](../resources/privilegeescalation.md) collection|The list of escalations that the identity is capable of performing. Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

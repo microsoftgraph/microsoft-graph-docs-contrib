@@ -3,8 +3,9 @@ title: "educationSubmission: reassign"
 description: "Reassign the submission to the student with feedback for review."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 08/29/2024
 ---
 
 # educationSubmission: reassign
@@ -100,7 +101,8 @@ POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-
 The following is an example of the response when `Prefer: include-unknown-enum-members` isn't provided in the request header and the submission hasn't been returned before.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "response",  
+  "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
@@ -214,6 +216,7 @@ The following is an example of the response when `Prefer: include-unknown-enum-m
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
@@ -271,7 +274,7 @@ HTTP/1.1 200 OK
 
 ## Related content
 
-[States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition).
+[Status, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-status-transition).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

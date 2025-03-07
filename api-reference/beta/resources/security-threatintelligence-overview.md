@@ -3,8 +3,9 @@ title: "Use the Microsoft Graph APIs for Microsoft Defender Threat Intelligence 
 description: "The threat intelligence APIs in Microsoft Graph lets apps manage administrator tasks for organizations."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: conceptualPageType
+ms.date: 03/06/2024
 ---
 
 # Use the Microsoft Graph APIs for Microsoft Defender Threat Intelligence (preview)

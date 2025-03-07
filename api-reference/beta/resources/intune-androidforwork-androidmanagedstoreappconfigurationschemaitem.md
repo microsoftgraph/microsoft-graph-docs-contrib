@@ -2,9 +2,10 @@
 title: "androidManagedStoreAppConfigurationSchemaItem resource type"
 description: "Single configuration item inside an Android application's custom configuration schema."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # androidManagedStoreAppConfigurationSchemaItem resource type

@@ -5,8 +5,9 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update customerPaymentJournals
@@ -51,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an updated **cus
 
 **Request**
 
-Here's an example of the request.
+The following example shows a request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}
@@ -65,7 +66,7 @@ Content-type: application/json
 
 **Response**
 
-Here's an example of the response. 
+The following example shows the response. 
 
 > **Note**: The response object shown here might be shortened for readability.
 

@@ -2,9 +2,10 @@
 title: "Get androidWorkProfileCompliancePolicy"
 description: "Read properties and relationships of the androidWorkProfileCompliancePolicy object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get androidWorkProfileCompliancePolicy
@@ -65,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1722
+Content-Length: 2077
 
 {
   "value": {
@@ -87,6 +88,13 @@ Content-Length: 1722
     "passwordExpirationDays": 6,
     "passwordPreviousPasswordBlockCount": 2,
     "passwordSignInFailureCountBeforeFactoryReset": 12,
+    "workProfilePasswordExpirationInDays": 3,
+    "workProfilePasswordMinimumLength": 0,
+    "workProfileInactiveBeforeScreenLockInMinutes": 12,
+    "workProfilePreviousPasswordBlockCount": 5,
+    "workProfilePasswordRequiredType": "lowSecurityBiometric",
+    "workProfileRequiredPasswordComplexity": "low",
+    "workProfileRequirePassword": true,
     "securityPreventInstallAppsFromUnknownSources": true,
     "securityDisableUsbDebugging": true,
     "securityRequireVerifyApps": true,

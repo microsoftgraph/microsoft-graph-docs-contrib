@@ -3,8 +3,9 @@ title: "educationAssignmentGradeType resource type"
 description: "Represents how an assignment will be graded."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # educationAssignmentGradeType resource type
@@ -21,6 +22,14 @@ Base class for [educationAssignmentPointsGradeType](../resources/educationassign
 ## Properties
 
 None.
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

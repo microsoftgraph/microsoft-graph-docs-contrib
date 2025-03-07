@@ -3,8 +3,9 @@ title: "List auditLogQueries"
 description: "Get a list of the auditLogQuery objects and their properties."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 10/29/2024
 ---
 
 # List auditLogQueries
@@ -23,12 +24,12 @@ Auditing data can be accessed through Microsoft Purview Audit Search API via the
   "blockType": "ignored"
 }
 -->
-|Microsoft 365 service|Delegated (work or school account)|Delegated (personal Microsoft account)|Application
+|Microsoft 365 service|Delegated (work or school account)|Delegated (personal Microsoft account)|Application|
 |:---|:---|:---|:---|
 |Microsoft OneDrive|AuditLogsQuery-OneDrive.Read.All|Not supported|AuditLogsQuery-OneDrive.Read.All|
 |Microsoft Exchange|AuditLogsQuery-Exchange.Read.All|Not supported|AuditLogsQuery-Exchange.Read.All|
 |Microsoft SharePoint|AuditLogsQuery-SharePoint.Read.All|Not supported|AuditLogsQuery-SharePoint.Read.All|
-|Microsoft Intune|AuditLogsQuery-Endpoint.Read.All|Not supported|AuditLogsQuery-Endpoint.Read.All|
+|Data Loss Protection for Endpoint|AuditLogsQuery-Endpoint.Read.All|Not supported|AuditLogsQuery-Endpoint.Read.All|
 |Microsoft Dynamics CRM|AuditLogsQuery-CRM.Read.All|Not supported|AuditLogsQuery-CRM.Read.All|
 |Microsoft Entra|AuditLogsQuery-Entra.Read.All|Not supported|AuditLogsQuery-Entra.Read.All|
 |All Audit Logs|AuditLogsQuery.Read.All|Not supported|AuditLogsQuery.Read.All|
@@ -49,7 +50,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -106,7 +107,6 @@ GET https://graph.microsoft.com/beta/security/auditLog/queries
 
 ---
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -128,7 +128,9 @@ Content-Type: application/json
       "displayName": "String",
       "filterStartDateTime": "String (timestamp)",
       "filterEndDateTime": "String (timestamp)",
-      "recordTypeFilter": "String",
+      "recordTypeFilters": [
+        "String"
+      ],
       "keywordFilter": "String",
       "serviceFilter": "String",
       "operationFilters": [

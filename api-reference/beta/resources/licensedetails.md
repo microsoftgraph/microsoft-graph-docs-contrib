@@ -3,8 +3,9 @@ title: "licenseDetails resource type"
 description: "Contains information about a license assigned to a user."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.subservice: entra-users
 author: "frank-masuelli"
+ms.date: 05/23/2024
 ---
 
 # licenseDetails resource type
@@ -19,8 +20,8 @@ Contains information about a license assigned to a user.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List licenseDetails](../api/user-list-licensedetails.md) | [licenseDetails](../resources/licensedetails.md) collection |Retrieve a list of [licenseDetails](../resources/licensedetails.md) objects for a user.|
-|[getTeamsLicensingDetails](../api/licensedetails-getteamslicensingdetails.md)|[teamsLicensingDetails](../resources/teamslicensingdetails.md) object|Get the Microsoft Teams license details for the specified user.|
+|[List license details](../api/user-list-licensedetails.md) | [licenseDetails](../resources/licensedetails.md) collection |Retrieve a list of [licenseDetails](../resources/licensedetails.md) objects for a user.|
+|[Get](../api/licensedetails-getteamslicensingdetails.md)|[teamsLicensingDetails](../resources/teamslicensingdetails.md) object|Get the Microsoft Teams license details for the specified user.|
 
 <!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 

@@ -1,10 +1,11 @@
 ---
 title: "Reply to a message in a channel"
 description: "Reply to an existing message in a channel."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/19/2024
 ---
 
 # Reply to a message in a channel
@@ -36,7 +37,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -51,7 +52,7 @@ If successful, this method returns `201 Created` response code with the [message
 ### Example 1: Create a new reply to a chatMessage
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

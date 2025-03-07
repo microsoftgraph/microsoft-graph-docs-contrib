@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.cloud_pc_on_premises_connection import CloudPcOnPremisesConnection
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.cloud_pc_on_premises_connection import CloudPcOnPremisesConnection
+from msgraph_beta.generated.models.cloud_pc_on_premises_connection_type import CloudPcOnPremisesConnectionType
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CloudPcOnPremisesConnection(
 	display_name = "test-canary-02",
+	connection_type = CloudPcOnPremisesConnectionType.HybridAzureADJoin,
 	type = CloudPcOnPremisesConnectionType.HybridAzureADJoin,
 	subscription_id = "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
 	ad_domain_name = "contoso001.com",

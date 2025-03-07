@@ -2,9 +2,10 @@
 title: "List androidDeviceOwnerEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerEnterpriseWiFiConfiguration objects."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List androidDeviceOwnerEnterpriseWiFiConfigurations
@@ -63,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2373
+Content-Length: 2423
 
 {
   "value": [
@@ -112,6 +113,7 @@ Content-Length: 2373
       "proxyManualPort": 15,
       "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
       "proxyExclusionList": "Proxy Exclusion List value",
+      "macAddressRandomizationMode": "hardware",
       "eapType": "eapTtls",
       "trustedServerCertificateNames": [
         "Trusted Server Certificate Names value"

@@ -4,8 +4,9 @@ description: "Get the list of devices that are owned by the user."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # List ownedDevices
@@ -32,7 +33,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /users/{id | userPrincipalName}/ownedDevices
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. For more information on properties that support query parameters, see the [device resource type](../resources/device.md#properties). 
+
+The use of `$filter` with this API requires the **ConsistencyLevel** header set to `eventual` and `$count`. However, in such scenarios, you can't use `$expand` in the same request as it isn't supported with advanced query parameters. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -47,7 +52,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,7 +98,7 @@ GET https://graph.microsoft.com/beta/me/ownedDevices
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,8 +3,9 @@ title: "reports: getPrinterArchivedPrintJobs"
 description: Get a list of archived print jobs that were queued for particular printer.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getPrinterArchivedPrintJobs

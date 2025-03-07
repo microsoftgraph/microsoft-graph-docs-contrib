@@ -23,15 +23,16 @@ $params = @{
 		}
 	)
 	requestedModalities = @(
-		"audio"
-	)
-	callOptions = @{
-		"@odata.type" = "#microsoft.graph.outgoingCallOptions"
-		isContentSharingNotificationEnabled = $true
-	}
-	mediaConfig = @{
-		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-	}
+	"audio"
+)
+callOptions = @{
+	"@odata.type" = "#microsoft.graph.outgoingCallOptions"
+	isContentSharingNotificationEnabled = $true
+	isDeltaRosterEnabled = $true
+}
+mediaConfig = @{
+	"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+}
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params

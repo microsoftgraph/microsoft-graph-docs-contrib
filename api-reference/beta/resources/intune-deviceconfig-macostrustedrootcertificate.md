@@ -2,9 +2,10 @@
 title: "macOSTrustedRootCertificate resource type"
 description: "OS X Trusted Root Certificate configuration profile."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # macOSTrustedRootCertificate resource type
@@ -45,6 +46,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |trustedRootCertificate|Binary|Trusted Root Certificate.|
 |certFileName|String|File name to display in UI.|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the deployment channel type used to deploy the configuration profile. Possible values are deviceChannel, userChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -100,6 +102,7 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "version": 1024,
   "trustedRootCertificate": "binary",
-  "certFileName": "String"
+  "certFileName": "String",
+  "deploymentChannel": "String"
 }
 ```

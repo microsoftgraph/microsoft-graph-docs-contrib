@@ -3,8 +3,9 @@ title: "windowsProtectionState resource type"
 description: "Represent the Windows protection state for managed devices running Windows."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # windowsProtectionState resource type
@@ -18,8 +19,8 @@ Represent the Windows protection state for managed devices running Windows.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List windowsProtectionStates](../api/managedtenants-managedtenant-list-windowsprotectionstates.md)|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) collection|Get a list of the [windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) objects and their properties.|
-|[Get windowsProtectionState](../api/managedtenants-windowsprotectionstate-get.md)|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md)|Read the properties and relationships of a [windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) object.|
+|[List Windows protection state](../api/managedtenants-managedtenant-list-windowsprotectionstates.md)|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) collection|Get a list of the [windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) objects and their properties.|
+|[Get Windows protection state](../api/managedtenants-windowsprotectionstate-get.md)|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md)|Read the properties and relationships of a [windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -55,7 +56,7 @@ Represent the Windows protection state for managed devices running Windows.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

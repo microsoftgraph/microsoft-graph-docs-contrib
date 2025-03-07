@@ -2,9 +2,10 @@
 title: "reportRoot: getFormsUserActivityUserCounts"
 description: "Get a report that provides the total number of designers or responders who perform Microsoft Forms activities over a selected period."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "haoyli"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getFormsUserActivityUserCounts
@@ -84,7 +85,7 @@ Here's an example that outputs CSV.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -96,7 +97,7 @@ GET https://graph.microsoft.com/beta/reports/getFormsUserActivityUserCounts(peri
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 ```http
@@ -125,7 +126,7 @@ Here's an example that returns JSON.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -137,7 +138,7 @@ GET https://graph.microsoft.com/beta/reports/getFormsUserActivityUserCounts(peri
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

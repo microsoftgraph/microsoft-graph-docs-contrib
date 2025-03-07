@@ -3,8 +3,9 @@ title: "Get taskFileAttachment"
 description: "Read the properties and relationships of a taskFileAttachment object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get taskFileAttachment
@@ -60,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [taskFileAttac
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

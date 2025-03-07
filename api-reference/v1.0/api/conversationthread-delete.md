@@ -3,8 +3,9 @@ title: "Delete conversationThread"
 description: "Delete conversationThread."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 03/13/2024
 ---
 
 # Delete conversationThread
@@ -45,7 +46,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +92,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

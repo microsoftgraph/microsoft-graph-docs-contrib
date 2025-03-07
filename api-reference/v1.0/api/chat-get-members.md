@@ -3,8 +3,9 @@ title: "Get conversationMember in a chat"
 description: "Retrieve a member of a chat."
 author: "anandjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get conversationMember in a chat
@@ -59,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 
@@ -109,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:d0f51aeb0e8e43d0befb24be72b09ea7@t
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!--
 {

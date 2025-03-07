@@ -2,9 +2,10 @@
 title: "reportRoot: getSharePointActivityUserDetail"
 description: "Get details about SharePoint activity by user."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getSharePointActivityUserDetail

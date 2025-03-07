@@ -3,8 +3,9 @@ title: "Update tenantAppManagementPolicy"
 description: "Update the default tenant policy that applies to applications and service principals objects."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 08/09/2024
 ---
 
 # Update tenantAppManagementPolicy
@@ -50,7 +51,7 @@ In the request body, supply the values for relevant fields from the [tenantAppMa
 
 | Property                     | Type                                                                     | Description                                                                                      |
 | :--------------------------- | :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
-| applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all application objects in the tenant.                     |
+| applicationRestrictions      | [appManagementApplicationConfiguration](../resources/appmanagementapplicationconfiguration.md) | Restrictions that apply as default to all application objects in the tenant.                     |
 | displayName                  | String                                                                   | The display name of the default policy. Inherited from [policyBase](../resources/policybase.md). |
 | description                  | String                                                                   | The description of the default policy. Inherited from [policyBase](../resources/policybase.md).  |
 | isEnabled                    | Boolean                                                                  | Denotes if the policy is enabled. Default value is false.                                        |
@@ -110,7 +111,7 @@ Content-Type: application/json
                 "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
             }
         ],
-        "keyCredentials":[
+        "keyCredentials": [
             {
                 "restrictionType": "asymmetricKeyLifetime",
                 "maxLifetime": "P30D",
@@ -125,7 +126,14 @@ Content-Type: application/json
                 ],
                 "maxLifetime": null
             }
-        ]
+        ],
+        "identifierUris": {
+            "nonDefaultUriAddition": {
+                "restrictForAppsCreatedAfterDateTime": "2024-01-01T10:37:00Z",
+                "excludeAppsReceivingV2Tokens": true,
+                "excludeSaml": true
+            }
+        }
     }
 }
 ```

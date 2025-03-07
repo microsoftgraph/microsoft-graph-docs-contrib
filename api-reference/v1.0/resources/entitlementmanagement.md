@@ -3,8 +3,9 @@ title: "entitlementManagement resource type"
 description: "The container for entitlement management resources."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # entitlementManagement resource type
@@ -38,7 +39,7 @@ None.
 |settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)| The settings that control the behavior of Microsoft Entra entitlement management.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

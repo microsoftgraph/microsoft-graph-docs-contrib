@@ -3,8 +3,9 @@ title: "Update profileCardProperty"
 description: "Update the properties of a profileCardProperty object, identified by its directoryPropertyName property."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 09/19/2024
 ---
 
 # Update profileCardProperty
@@ -24,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "profilecardproperty_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/profilecardproperty-update-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or People Administrator role.
 
 ## HTTP request
 
@@ -51,7 +52,7 @@ PATCH /admin/people/profileCardProperties/{id}
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator has chosen to specify.|
+|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator chose to specify.|
 |directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card. |
 
 ## Response
@@ -62,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 
 ### Request
 
-The following example adds a localized label `Kostnadssenter` for the locale `nb-NO`.
+The following example adds a localized label `Kostnadssenter` for the locale `no`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,7 +82,7 @@ Content-type: application/json; charset=utf-8
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "nb-NO",
+          "languageTag": "no",
           "displayName": "Kostnadssenter"
         }
       ]
@@ -147,11 +148,7 @@ Content-type: application/json; charset=utf-8
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "ru-RU",
-          "displayName": "центр затрат"
-        },
-        {
-          "languageTag": "nb-NO",
+          "languageTag": "no",
           "displayName": "Kostnadssenter"
         }
       ]

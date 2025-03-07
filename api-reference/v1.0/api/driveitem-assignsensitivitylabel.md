@@ -3,8 +3,9 @@ title: "driveItem: assignSensitivityLabel"
 description: "Asynchronously assign a sensitivity label to a driveItem."
 author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # driveItem: assignSensitivityLabel
@@ -81,7 +82,7 @@ The following table lists the possible values for the error types.
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

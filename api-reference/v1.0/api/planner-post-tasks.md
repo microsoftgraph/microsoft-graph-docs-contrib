@@ -3,8 +3,9 @@ title: "Create plannerTask"
 description: "Create a new plannerTask."
 ms.localizationpriority: high
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create plannerTask

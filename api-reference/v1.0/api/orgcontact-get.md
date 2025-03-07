@@ -3,8 +3,9 @@ title: "Get orgContact"
 description: "Retrieve the properties of an orgContact object."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get orgContact
@@ -20,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "orgcontact_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-get-permissions.md)]
+
+[!INCLUDE [rbac-org-contacts-apis-read-all](../includes/rbac-for-apis/rbac-org-contacts-apis-read-all.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

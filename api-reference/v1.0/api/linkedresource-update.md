@@ -3,8 +3,9 @@ title: "Update linkedResource"
 description: "Update the properties of a linkedResource object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update linkedResource

@@ -3,8 +3,9 @@ title: "Create learningProvider"
 description: "Create a new learningProvider object and register it with Viva Learning using the specified display name and logos for different themes."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create learningProvider
@@ -23,8 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/employeeexperience-post-learningproviders-permissions.md)]
 
 > **Note:** The following are required for the user:
-> - Viva Suite or Viva Learning license
-> - Global admin, knowledge admin role
+> - Viva Suite or Viva Learning license.
+> - A supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json), where Knowledge Administrator is the least privileged supported role.
 
 ## HTTP request
 
@@ -67,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [learning
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

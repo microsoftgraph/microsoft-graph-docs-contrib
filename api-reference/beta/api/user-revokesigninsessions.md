@@ -4,8 +4,9 @@ description: "Invalidates all the user's refresh tokens issued to applications (
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # user: revokeSignInSessions

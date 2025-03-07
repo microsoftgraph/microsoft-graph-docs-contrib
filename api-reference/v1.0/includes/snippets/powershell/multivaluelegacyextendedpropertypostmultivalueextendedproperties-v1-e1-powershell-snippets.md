@@ -40,12 +40,12 @@ $params = @{
 		@{
 			id = "StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation"
 			value = @(
-				"Food"
-				"Hiking"
-				"Swimming"
-			)
-		}
-	)
+			"Food"
+		"Hiking"
+	"Swimming"
+)
+}
+)
 }
 
 # A UPN can also be used as -UserId.

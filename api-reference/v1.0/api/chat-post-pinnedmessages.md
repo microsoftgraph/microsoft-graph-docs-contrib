@@ -3,8 +3,9 @@ title: "Pin a message in a chat"
 description: "Pin a chat message in the specified chat."
 author: "sumanac"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Pin a message in a chat
@@ -46,7 +47,7 @@ If successful, this method returns a `201 Created` response code and a [pinnedCh
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

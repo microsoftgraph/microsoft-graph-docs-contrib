@@ -1,10 +1,11 @@
 ---
 title: "virtualEventWebinar: getByUserRole"
-description: "List all webinars where the signed-in user is either the organizer a coorganizer."
+description: "Get a list of virtualEventWebinar objects where the signed-in user is either the organizer a coorganizer."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/18/2024
 ---
 
 # virtualEventWebinar: getByUserRole
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the signed-in user is either the organizer or a coorganizer.
+Get a list of [virtualEventWebinar](../resources/virtualeventwebinar.md) objects where the signed-in user is either the organizer or a coorganizer.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -54,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [virtualEventWebinar](../resources/virtualeventwebinar.md) objects in the response body.
 
 ## Examples
 
@@ -126,7 +127,10 @@ Content-Type: application/json
       "id": "88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33",
       "status": "published",
       "displayName": "The Impact of Tech on Our Lives",
-      "description": "Discusses how technology has changed the way we communicate, work, and interact with each other.",
+      "description": {
+        "contentType": "text",
+        "content": "Discusses how technology has changed the way we communicate, work, and interact with each other."
+      },
       "startDateTime": {
         "dateTime": "2023-03-30T10:00:00",
         "timeZone": "PacificSt"
@@ -151,6 +155,15 @@ Content-Type: application/json
           "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
           "displayName": "Kenneth Brown",
           "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+        }
+      ],
+      "settings": {
+        "isAttendeeEmailNotificationEnabled": false
+      },
+      "externalEventInformation": [
+        {
+          "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+          "externalEventId": "myExternalEventId"
         }
       ]
     }

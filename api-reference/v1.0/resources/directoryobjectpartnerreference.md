@@ -3,8 +3,9 @@ title: "directoryObjectPartnerReference resource type"
 description: "Represents a reference to a directory object in a partner tenant. Inherits from directoryObject."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # directoryObjectPartnerReference resource type
@@ -25,7 +26,7 @@ Represents a reference to a directory object in a partner organization. Inherits
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

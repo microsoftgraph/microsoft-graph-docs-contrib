@@ -3,8 +3,9 @@ title: "Get referenceDefinition"
 description: "Read the properties and relationships of a referenceDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 05/15/2024
 ---
 
 # Get referenceDefinition
@@ -57,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -125,6 +126,7 @@ Content-Type: application/json
 {
   "code": "01",
   "createdDateTime": "0001-01-01T00:00:00Z",
+  "displayName": "English Language and Literature",
   "id": "RefAcademicSubject-01",
   "isDisabled": false,
   "lastModifiedDateTime": "0001-01-01T00:00:00Z",

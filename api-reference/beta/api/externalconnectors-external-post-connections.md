@@ -3,8 +3,9 @@ title: "Create connection"
 description: "Use this API to create a new externalConnection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Create connection

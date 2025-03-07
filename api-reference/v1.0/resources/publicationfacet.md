@@ -3,8 +3,9 @@ title: "PublicationFacet resource type"
 description: "The **publicationFacet** resource provides details on the published status of a driveItemVersion or driveItem resource."
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 03/11/2024
 ---
 
 # PublicationFacet resource type

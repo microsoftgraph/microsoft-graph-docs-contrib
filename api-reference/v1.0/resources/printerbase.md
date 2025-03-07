@@ -1,16 +1,17 @@
 ---
 title: printerBase resource type
-description: Represents base type for printer and printer share
+description: Represents the base type for printer and printer share.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 # printerBase resource type
 
 Namespace: microsoft.graph
 
-Represents a base type for [printer](printer.md) and [printerShare](printerShare.md) entity types.
+Represents the base type for the [printer](printer.md) and [printerShare](printerShare.md) entity types. Inherits from [printerBase](./printerbase.md).
 
 ## Properties
 |Property|Type|Description|
@@ -31,7 +32,7 @@ Represents a base type for [printer](printer.md) and [printerShare](printerShare
 |jobs|[printJob](printjob.md) collection|The list of jobs that are queued for printing by the printer/printerShare.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -2,9 +2,10 @@
 title: "createCopy action"
 description: "Intune Deviceconfigv2 Devicemanagementconfigurationpolicy Createcopy Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # createCopy action

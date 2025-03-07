@@ -3,8 +3,9 @@ title: "communicationsIdentitySet resource type"
 description: "Represents a combination of user and application identities that together identify a participant in a call or meeting."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # communicationsIdentitySet resource type
@@ -31,6 +32,9 @@ Inherits from [identitySet](identityset.md).
 | onPremises | [communicationsUserIdentity](communicationsuseridentity.md) | The Skype for Business on-premises user associated with this action. |
 | phone | [communicationsPhoneIdentity](communicationsphoneidentity.md) | The phone user associated with this action. |
 | user | [communicationsUserIdentity](communicationsuseridentity.md) | The user associated with this action. Inherited from **identitySet**. |
+
+## Relationships
+None.
 
 ## JSON representation
 

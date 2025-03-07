@@ -2,9 +2,10 @@
 title: "deviceManagementSettingDefinition resource type"
 description: "Entity representing the defintion for a given setting"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagementSettingDefinition resource type

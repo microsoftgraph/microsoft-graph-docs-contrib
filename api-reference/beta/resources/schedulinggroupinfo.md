@@ -3,8 +3,9 @@ title: schedulingGroupInfo resource type
 description: Represents the details of a scheduling group.
 author: shanemalone
 ms.localizationpriority: high
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # schedulingGroupInfo resource type
@@ -22,6 +23,10 @@ Represents the details of a [schedulingGroup](schedulingGroup.md).
 | displayName          | `string`                      | The display name for the `schedulingGroup`. Required.      |
 | schedulingGroupId    | `string`                      | ID of the `schedulingGroup`.  |
 | code                 | `string`                      | The code for the `schedulingGroup`. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

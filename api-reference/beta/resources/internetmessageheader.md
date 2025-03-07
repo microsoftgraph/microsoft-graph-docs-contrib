@@ -4,7 +4,8 @@ description: "A key-value pair that represents an Internet message header, as de
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 03/21/2024
 ---
 
 # internetMessageHeader resource type
@@ -26,9 +27,12 @@ For examples of an Internet message header, see
 |name|string|Represents the key in a key-value pair.|
 |value|string|The value in a key-value pair.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

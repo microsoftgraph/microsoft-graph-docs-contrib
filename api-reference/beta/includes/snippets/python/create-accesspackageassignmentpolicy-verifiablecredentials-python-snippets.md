@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
-from msgraph.generated.models.requestor_settings import RequestorSettings
-from msgraph.generated.models.user_set import UserSet
-from msgraph.generated.models.access_package_question import AccessPackageQuestion
-from msgraph.generated.models.custom_extension_handler import CustomExtensionHandler
-from msgraph.generated.models.verifiable_credential_settings import VerifiableCredentialSettings
-from msgraph.generated.models.verifiable_credential_type import VerifiableCredentialType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph_beta.generated.models.requestor_settings import RequestorSettings
+from msgraph_beta.generated.models.user_set import UserSet
+from msgraph_beta.generated.models.access_package_question import AccessPackageQuestion
+from msgraph_beta.generated.models.custom_extension_handler import CustomExtensionHandler
+from msgraph_beta.generated.models.verifiable_credential_settings import VerifiableCredentialSettings
+from msgraph_beta.generated.models.verifiable_credential_type import VerifiableCredentialType
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageAssignmentPolicy(
 	display_name = "policy-with-verified-id",
 	description = "test",

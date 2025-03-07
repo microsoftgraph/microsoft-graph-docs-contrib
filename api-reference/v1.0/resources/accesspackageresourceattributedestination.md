@@ -3,8 +3,9 @@ title: "accessPackageResourceAttributeDestination resource type"
 description: "An abstract type that exposes objects that define the end system to which the user configured values will be passed."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # accessPackageResourceAttributeDestination resource type

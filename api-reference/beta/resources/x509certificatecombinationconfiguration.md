@@ -4,8 +4,9 @@ description: "Configuration to require a specific certificate in an authenticati
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
-doc_type: apiPageType
+doc_type: resourcePageType
+ms.subservice: "entra-sign-in"
+ms.date: 07/22/2024
 ---
 
 
@@ -34,7 +35,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

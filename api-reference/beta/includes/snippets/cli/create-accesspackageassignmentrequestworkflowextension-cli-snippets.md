@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta identity-governance entitlement-management access-package-catalogs access-package-custom-workflow-extensions create --access-package-catalog-id {accessPackageCatalog-id} --body '{\
   "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",\
   "displayName": "test_action_0124_email",\

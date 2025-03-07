@@ -2,9 +2,10 @@
 title: "requestUpgrade action"
 description: "Intune Mstunnel Microsofttunnelsite Requestupgrade Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/09/2024
 ---
 
 # requestUpgrade action
@@ -17,7 +18,7 @@ Namespace: microsoft.graph
 
 
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

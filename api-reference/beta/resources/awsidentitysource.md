@@ -4,8 +4,9 @@ description: "Represents an permissionsDefinitionIdentitySource for a cross-acco
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 04/18/2024
 ---
 
 # awsIdentitySource resource type

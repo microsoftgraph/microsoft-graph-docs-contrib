@@ -29,33 +29,33 @@ $params = @{
 	pinCharacterSet = "alphanumericAndSymbol"
 	periodBeforePinReset = "PT3M29.6631862S"
 	allowedDataStorageLocations = @(
-		"sharePoint"
-	)
-	contactSyncBlocked = $true
-	printBlocked = $true
-	fingerprintBlocked = $true
-	disableAppPinIfDevicePinIsSet = $true
-	minimumRequiredOsVersion = "Minimum Required Os Version value"
-	minimumWarningOsVersion = "Minimum Warning Os Version value"
-	minimumRequiredAppVersion = "Minimum Required App Version value"
-	minimumWarningAppVersion = "Minimum Warning App Version value"
-	managedBrowser = "microsoftEdge"
-	appDataEncryptionType = "afterDeviceRestart"
-	screenCaptureBlocked = $true
-	encryptAppData = $true
-	disableAppEncryptionIfDeviceEncryptionIsEnabled = $true
-	minimumRequiredSdkVersion = "Minimum Required Sdk Version value"
-	customSettings = @(
-		@{
-			"@odata.type" = "microsoft.graph.keyValuePair"
-			name = "Name value"
-			value = "Value value"
-		}
-	)
-	deployedAppCount = 0
-	minimumRequiredPatchVersion = "Minimum Required Patch Version value"
-	minimumWarningPatchVersion = "Minimum Warning Patch Version value"
-	faceIdBlocked = $true
+	"sharePoint"
+)
+contactSyncBlocked = $true
+printBlocked = $true
+fingerprintBlocked = $true
+disableAppPinIfDevicePinIsSet = $true
+minimumRequiredOsVersion = "Minimum Required Os Version value"
+minimumWarningOsVersion = "Minimum Warning Os Version value"
+minimumRequiredAppVersion = "Minimum Required App Version value"
+minimumWarningAppVersion = "Minimum Warning App Version value"
+managedBrowser = "microsoftEdge"
+appDataEncryptionType = "afterDeviceRestart"
+screenCaptureBlocked = $true
+encryptAppData = $true
+disableAppEncryptionIfDeviceEncryptionIsEnabled = $true
+minimumRequiredSdkVersion = "Minimum Required Sdk Version value"
+customSettings = @(
+	@{
+		"@odata.type" = "microsoft.graph.keyValuePair"
+		name = "Name value"
+		value = "Value value"
+	}
+)
+deployedAppCount = 0
+minimumRequiredPatchVersion = "Minimum Required Patch Version value"
+minimumWarningPatchVersion = "Minimum Warning Patch Version value"
+faceIdBlocked = $true
 }
 
 Update-MgDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppProtectionId $defaultManagedAppProtectionId -BodyParameter $params

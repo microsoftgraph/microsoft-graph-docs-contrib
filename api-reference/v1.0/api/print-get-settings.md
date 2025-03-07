@@ -3,8 +3,9 @@ title: Get printSettings
 description: Retrieve tenant-wide settings for the Universal Print service.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # Get printSettings

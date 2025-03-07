@@ -3,8 +3,9 @@ title: "automaticRepliesMailTips resource type"
 description: "MailTips about any automatic replies that have been set up on a mailbox."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
+ms.subservice: mail
 author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # automaticRepliesMailTips resource type
@@ -23,9 +24,12 @@ Namespace: microsoft.graph
 | scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time that automatic replies are set to end. |
 | scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time that automatic replies are set to begin. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

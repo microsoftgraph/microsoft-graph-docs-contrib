@@ -3,8 +3,9 @@ title: "List conversationMembers"
 description: "Retrieve list of chat or channel members."
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 03/08/2024
 ---
 
 # List conversationMembers

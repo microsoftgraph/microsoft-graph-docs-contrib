@@ -2,9 +2,10 @@
 title: "reportRoot: getMailboxUsageQuotaStatusMailboxCounts"
 description: "Get the count of user mailboxes in each quota category."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getMailboxUsageQuotaStatusMailboxCounts

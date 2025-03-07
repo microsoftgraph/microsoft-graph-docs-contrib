@@ -3,8 +3,9 @@ title: "List contacts"
 description: "Get contacts in the user's mailbox."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List contacts

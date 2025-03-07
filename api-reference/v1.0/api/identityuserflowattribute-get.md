@@ -4,7 +4,8 @@ description: "Retrieve the properties and relationships of an identityUserFlowAt
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
+ms.date: 04/04/2024
 ---
 
 # Get identityUserFlowAttribute

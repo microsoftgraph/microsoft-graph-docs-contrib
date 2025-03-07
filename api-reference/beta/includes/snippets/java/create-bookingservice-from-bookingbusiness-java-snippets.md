@@ -57,6 +57,7 @@ bookingService.setDescription("Individual bento box lunch delivery");
 bookingService.setDisplayName("Bento");
 bookingService.setIsLocationOnline(true);
 bookingService.setSmsNotificationsEnabled(true);
+bookingService.setIsCustomerAllowedToManageBooking(true);
 bookingService.setLanguageTag("en-US");
 bookingService.setIsHiddenFromCustomers(false);
 bookingService.setNotes("Home-cooked special");

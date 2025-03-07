@@ -3,9 +3,10 @@ title: "Update internalDomainFederation"
 description: "Update the properties of an internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.custom: has-azure-ad-ps-ref
-ms.prod: "identity-and-sign-in"
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 11/25/2024
 ---
 
 # Update internalDomainFederation
@@ -22,6 +23,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-update-permissions.md)]
+
+> [!IMPORTANT]
+> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=21445) and might require consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios.
 
 [!INCLUDE [rbac-domainfederation-apis-write](../includes/rbac-for-apis/rbac-domainfederation-apis-write.md)]
 
@@ -55,11 +59,14 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 |metadataExchangeUri|String|URI of the metadata exchange endpoint used for authentication from rich client applications.|
 |nextSigningCertificate|String|Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires. Formatted as Base 64 encoded strings of the public portion of the federated IdP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Much like the **signingCertificate**, the **nextSigningCertificate** property is used if a rollover is required outside of the autorollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.|
 |passiveSignInUri|String|URI that web-based clients are directed to when signing into Microsoft Entra services. |
-|preferredAuthenticationProtocol|authenticationProtocol|Preferred authentication protocol. The possible values are: `wsFed`, `saml`, `unknownFutureValue`. |
+|passwordResetUri|String|URI that clients are redirected to for resetting their password.|
+|preferredAuthenticationProtocol|authenticationProtocol|Preferred authentication protocol. This parameter must be configured explicitly for the federation passive authentication flow to work. The possible values are: `wsFed`, `saml`, `unknownFutureValue`. |
 |promptLoginBehavior|promptLoginBehavior|Sets the preferred behavior for the sign-in prompt. The possible values are: `translateToFreshPasswordAuthentication`, `nativeSupport`, `disabled`, `unknownFutureValue`.|
-|signingCertificate|String|Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base 64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class. <br>This property is used in the following scenarios: <li> If a rollover is required outside of the autorollover update <li> A new federation service is being set up <li> If the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.<br>Microsoft Entra ID updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Microsoft Entra ID monitors the metadata daily and will update the federation settings for the domain when a new certificate is available. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|signingCertificate|String|Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base 64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class. <br>This property is used in the following scenarios: <li> If a rollover is required outside of the autorollover update <li> A new federation service is being set up <li> If the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.<br>Microsoft Entra ID updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Microsoft Entra ID monitors the metadata daily and updates the federation settings for the domain when a new certificate is available. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate.|
 |signOutUri|String|URI that clients are redirected to when they sign out of Microsoft Entra services. Corresponds to the **LogOffUri** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings).|
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 ### federatedIdpMfaBehavior values
 
@@ -75,11 +82,9 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 + If the **federatedIdpMfaBehavior** property is never set, Microsoft Entra ID continues to honor the **SupportsMfa** setting.
 + If neither **federatedIdpMfaBehavior** nor **SupportsMfa** is set, Microsoft Entra ID defaults to `acceptIfMfaDoneByFederatedIdp` behavior.
 
-
-
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [internalDomainFederation](../resources/internaldomainfederation.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -139,34 +144,25 @@ Content-Type: application/json
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.internalDomainFederation"
+  "blockType": "response"
 }
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.internalDomainFederation",
-  "id": "6601d14b-d113-8f64-fda2-9b5ddda18ecc",
-   "displayName": "Contoso name change",
-   "issuerUri": "http://contoso.com/adfs/services/trust",
-   "metadataExchangeUri": "https://sts.contoso.com/adfs/services/trust/mex",
-   "signingCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
-   "passiveSignInUri": "https://sts.contoso.com/adfs/ls",
-   "preferredAuthenticationProtocol": "wsFed",
-   "activeSignInUri": "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed",
-   "signOutUri": "https://sts.contoso.com/adfs/ls",
-   "promptLoginBehavior": "nativeSupport",
-   "isSignedAuthenticationRequestRequired": true,
-   "nextSigningCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
-   "signingCertificateUpdateStatus": {
-        "certificateUpdateResult": "Success",
-        "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"
-    },
-   "federatedIdpMfaBehavior": "acceptIfMfaDoneByFederatedIdp"
-}
+HTTP/1.1 204 No Content
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api/internaldomainfederation-update.md:
+      Exception processing links.
+      Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')"
+  ]
+}
+-->

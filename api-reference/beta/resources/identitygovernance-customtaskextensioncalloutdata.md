@@ -3,8 +3,9 @@ title: "customTaskExtensionCalloutData resource type"
 description: "Custom Task Extension callout data"
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # customTaskExtensionCalloutData resource type
@@ -32,7 +33,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identityGovernance.customTaskExtensionCalloutData",

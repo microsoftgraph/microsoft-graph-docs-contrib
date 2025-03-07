@@ -3,8 +3,9 @@ author: "vanshisingh"
 title: "List items"
 description: "Get a collection of recycleBinItem resources in the recycleBin of the specified SharePoint site."
 ms.localizationpriority: "medium"
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List items

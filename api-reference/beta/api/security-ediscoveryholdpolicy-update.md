@@ -3,8 +3,9 @@ title: "Update ediscoveryHoldPolicy"
 description: "Update the properties of an ediscoveryHoldPolicy object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Update ediscoveryHoldPolicy
@@ -44,17 +45,17 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryH
 
 |Property|Type|Description|
 |:---|:---|:---|
+|contentQuery|String|KQL query that specifies content to be held in the specified locations. To learn more, see [Keyword queries and search conditions for eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions). To hold all content in the specified locations, don't specify a value for the **contentQuery** property. Optional.|
 |description|String|The description of the legal hold policy. Optional.|
-
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an updated [microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,7 +67,8 @@ The following is an example of a request.
 PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalholds/783c3ea4-d474-4051-9c13-08707ce8c8b6
 
 {
-    "description": "updated description",
+  "description": "updated description",
+  "contentQuery": "updated kql query"
 }
 ```
 

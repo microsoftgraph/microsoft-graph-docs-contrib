@@ -3,8 +3,9 @@ title: Update printershare
 description: Update the properties of printer share. This method can be used to "swap" printers.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 06/06/2024
 ---
 
 # Update printerShare
@@ -48,6 +49,9 @@ Following properties can be updated:
 |printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example to update which printer this printer share is associated with.|
 |displayName|String|The name of the printer share that print clients should display.|
 |allowAllUsers|Boolean|	If true, all users and groups are granted access to this printer share. This supersedes the allowlists defined by the allowedUsers and allowedGroups navigation properties.|
+
+> [!NOTE]
+> If you're updating the **printer** property, other properties can't be updated in the same request.
 
 ## Response
 

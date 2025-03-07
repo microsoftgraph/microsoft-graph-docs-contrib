@@ -3,8 +3,9 @@ title: List printJobs for a printer
 description: Retrieve a list of print jobs associated with the printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List printJobs for a printer

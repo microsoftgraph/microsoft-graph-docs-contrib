@@ -3,8 +3,9 @@ title: "ediscoveryNoncustodialDataSource: removeHold"
 description: "Start the process of removing hold from eDiscovery non-custodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # ediscoveryNoncustodialDataSource: removeHold
@@ -58,7 +59,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ### Example 1: Remove hold from multiple non-custodial data sources
 #### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +114,7 @@ Content-Type: application/json
 ---
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -126,7 +127,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Remove hold from a single non-custodial data source
 #### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -173,7 +174,7 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 ---
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -3,8 +3,9 @@ title: "riskyServicePrincipalHistoryItem resource type"
 description: "Represents the risk history of Microsoft Entra service principals"
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # riskyServicePrincipalHistoryItem resource type
@@ -28,6 +29,9 @@ Represents the risk history of a Microsoft Entra service principal as determined
 | servicePrincipalId         | string  | The identifier of the service principal. |
 | initiatedBy    | bool    | The identifier of the actor of the operation. |
 | activity       | [riskServicePrincipalActivity](riskserviceprincipalactivity.md)| The activity related to service principal risk level change. | 
+
+## Relationships
+None.
 
 ## JSON representation
 

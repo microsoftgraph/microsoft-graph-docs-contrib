@@ -2,9 +2,10 @@
 title: "List macOSWiredNetworkConfigurations"
 description: "List properties and relationships of the macOSWiredNetworkConfiguration objects."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List macOSWiredNetworkConfigurations
@@ -63,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1872
+Content-Length: 1915
 
 {
   "value": [
@@ -109,7 +110,8 @@ Content-Length: 1872
       ],
       "authenticationMethod": "usernameAndPassword",
       "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
-      "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
+      "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value",
+      "deploymentChannel": "userChannel"
     }
   ]
 }

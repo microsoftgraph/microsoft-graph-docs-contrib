@@ -1,10 +1,10 @@
 ---
 title: "mailboxEvidence resource type"
-description: "A mailbox that is reported in the alert as evidence."
+description: "Represents a mailbox that is reported in the alert as evidence."
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A mailbox that is reported in the alert as evidence.
+Represents a mailbox that is reported in the alert as evidence.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
@@ -23,16 +23,18 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:---|:---|:---|
 |displayName|String|The name associated with the mailbox.|
 |primaryAddress|String|The primary email address of the mailbox.|
+|upn|String|The user principal name of the mailbox.|
 |userAccount|[microsoft.graph.security.userAccount](../resources/security-useraccount.md)|The user account of the mailbox.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.mailboxEvidence"
+  "@odata.type": "microsoft.graph.security.mailboxEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json
@@ -48,10 +50,9 @@ The following is a JSON representation of the resource.
   "tags": [
     "String"
   ],
-  "primaryAddress": "String",
   "displayName": "String",
-  "userAccount": {
-    "@odata.type": "microsoft.graph.security.userAccount"
-  }
+  "primaryAddress": "String",
+  "upn": "String",
+  "userAccount": {"@odata.type": "microsoft.graph.security.userAccount"}
 }
 ```

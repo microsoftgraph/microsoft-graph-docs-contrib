@@ -3,8 +3,9 @@ title: "webCategoriesSummary resource type"
 description: "A summary of the users, devices, and transactions that recently accessed a web category."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # webCategoriesSummary resource type

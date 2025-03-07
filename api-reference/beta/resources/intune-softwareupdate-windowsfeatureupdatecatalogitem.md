@@ -2,9 +2,10 @@
 title: "windowsFeatureUpdateCatalogItem resource type"
 description: "Windows update catalog item entity"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsFeatureUpdateCatalogItem resource type

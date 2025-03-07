@@ -3,8 +3,9 @@ title: "itemRetentionLabel resource type"
 description: "Groups retention and compliance-related properties on an item into a single structure."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # itemRetentionLabel resource type
@@ -24,6 +25,9 @@ Groups retention and compliance-related properties on an item into a single stru
 | labelAppliedDateTime     | DateTimeOffset                                                   | The date and time when the label was applied on the item. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | name                     | String                                                           | The retention label on the document. Read-write.                                                                                                                                                                                                       |
 | retentionSettings        | [retentionLabelSettings](../resources/retentionlabelsettings.md) | The retention settings enforced on the item. Read-write.                                                                                                                                                                                               |
+
+## Relationships
+None.
 
 ## JSON representation
 

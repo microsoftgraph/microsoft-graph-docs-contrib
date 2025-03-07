@@ -3,8 +3,9 @@ title: "responseAction resource type"
 description: "Describes an action taken on impacted assets as set in the custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # responseAction resource type

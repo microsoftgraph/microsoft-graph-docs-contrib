@@ -3,8 +3,9 @@ title: "tabUpdatedEventMessageDetail resource type"
 description: "Represents the details of an event message about an updated tab."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # tabUpdatedEventMessageDetail resource type
@@ -25,8 +26,11 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |tabId|String|Unique identifier of the tab.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.tabUpdatedEventMessageDetail",

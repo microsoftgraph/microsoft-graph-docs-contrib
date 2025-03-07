@@ -3,8 +3,9 @@ title: "caseExportOperation: getDownloadUrl"
 description: "Returns the download URL "
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # caseExportOperation: getDownloadUrl

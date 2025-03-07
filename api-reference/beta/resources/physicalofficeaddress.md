@@ -3,8 +3,9 @@ title: "physicalOfficeAddress resource type"
 description: "Represents the business address of a resource such as a contact or event."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "dkershaw10"
+ms.date: 03/21/2024
 ---
 
 # physicalOfficeAddress resource type
@@ -24,9 +25,12 @@ Represents the business address of a resource such as an organizational contact.
 |state|String|The state.|
 |street|String|The street.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

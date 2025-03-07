@@ -5,7 +5,7 @@ ms.date: 09/11/2017
 title: CurrencyColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # CurrencyColumn resource type
@@ -16,9 +16,19 @@ Namespace: microsoft.graph
 
 The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.
 
+## Properties
+
+| Property   | Type   | Description                                                   |
+| :--------- | :----- | :------------------------------------------------------------ |
+| **locale** | string | Specifies the locale from which to infer the currency symbol. |
+
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here is a JSON representation of a **currencyColumn** resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.currencyColumn" } -->
 
@@ -27,12 +37,6 @@ Here is a JSON representation of a **currencyColumn** resource.
   "locale": "en-us"
 }
 ```
-
-## Properties
-
-| Property   | Type   | Description                                                   |
-| :--------- | :----- | :------------------------------------------------------------ |
-| **locale** | string | Specifies the locale from which to infer the currency symbol. |
 
 <!--
 {

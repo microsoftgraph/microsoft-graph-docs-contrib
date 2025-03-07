@@ -3,7 +3,8 @@ title: "Create or set an event as an online meeting in an Outlook calendar"
 description: "Use the Outlook calendar API to organize an event where meeting invitees can select a join URL and attend the meeting online in Microsoft Teams or Skype."
 author: "juforan"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Create or set an event as an online meeting in an Outlook calendar

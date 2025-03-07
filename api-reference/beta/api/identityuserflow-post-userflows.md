@@ -3,8 +3,9 @@ title: "Create userFlow (deprecated)"
 description: "Use this API to create a new userFlow."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Create userFlow

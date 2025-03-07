@@ -3,8 +3,9 @@ title: "List simulations"
 description: "Get a list of attack simulation campaigns for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List simulations

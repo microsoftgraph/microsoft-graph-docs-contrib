@@ -3,8 +3,9 @@ title: "meetingPolicyUpdatedEventMessageDetail resource type"
 description: "Represents the details of an event message about an updated meeting policy."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # meetingPolicyUpdatedEventMessageDetail resource type
@@ -25,7 +26,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |meetingChatId|String|Unique identifier of the meeting **chat**.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.meetingPolicyUpdatedEventMessageDetail",

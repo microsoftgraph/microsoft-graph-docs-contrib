@@ -3,9 +3,10 @@ title: "Privileged Identity Management - Azure resources"
 description: "APIs for Microsoft Entra Privileged Identity Management to manage Azure resources."
 ms.localizationpriority: high
 author: "rkarim-ms"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ROBOTS: NOINDEX
+ms.date: 03/08/2024
 ---
 
 # Privileged Identity Management - Azure resources

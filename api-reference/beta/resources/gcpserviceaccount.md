@@ -4,8 +4,9 @@ description: "Represents GCP service accounts."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # gcpServiceAccount resource type
@@ -21,8 +22,8 @@ Inherits from [gcpIdentity](../resources/gcpidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List gcpServiceAccounts](../api/gcpassociatedidentities-list-serviceaccounts.md)|[gcpServiceAccount](../resources/gcpserviceaccount.md) collection|Get a list of the [gcpServiceAccount](../resources/gcpserviceaccount.md) objects and their properties.|
-|[Get gcpServiceAccount](../api/gcpserviceaccount-get.md)|[gcpServiceAccount](../resources/gcpserviceaccount.md)|Read the properties and relationships of a [gcpServiceAccount](../resources/gcpserviceaccount.md) object.|
+|[List](../api/gcpassociatedidentities-list-serviceaccounts.md)|[gcpServiceAccount](../resources/gcpserviceaccount.md) collection|Get a list of the [gcpServiceAccount](../resources/gcpserviceaccount.md) objects and their properties.|
+|[Get](../api/gcpserviceaccount-get.md)|[gcpServiceAccount](../resources/gcpserviceaccount.md)|Read the properties and relationships of a [gcpServiceAccount](../resources/gcpserviceaccount.md) object.|
 
 ## Properties
 |Property|Type|Description|

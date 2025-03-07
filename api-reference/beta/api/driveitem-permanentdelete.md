@@ -3,7 +3,7 @@ author: mahgoyal
 ms.date: 06/28/2023
 title: Permanently delete a file or folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Permanently delete a driveItem by using its ID."
 doc_type: apiPageType
 ---
@@ -11,8 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Permanently delete a [driveItem](../resources/driveitem.md) by using its ID.
-If you delete items using this method, they're permanently removed and won't be sent to the recycle bin. Therefore, they can't be restored afterward.
+Permanently delete a [driveItem](../resources/driveitem.md) by using its ID. If you delete items using this method, they're permanently removed and aren't sent to the recycle bin, unlike the [Delete driveItem](../api/driveitem-delete.md) API, which sends the item to the recycle bin. Therefore, permanently deleted drive items can't be restored afterward.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -53,7 +52,7 @@ The following example shows how to call this API.
 ### Request
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/permanentDelete
+POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/permanentDelete
 ```
 
 ### Response

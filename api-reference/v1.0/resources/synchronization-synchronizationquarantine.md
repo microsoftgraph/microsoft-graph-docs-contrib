@@ -4,7 +4,8 @@ description: "Provides information about the quarantine state of a synchronizati
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # synchronizationQuarantine resource type
@@ -27,7 +28,7 @@ Provides information about the quarantine state of a [synchronizationJob](synchr
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

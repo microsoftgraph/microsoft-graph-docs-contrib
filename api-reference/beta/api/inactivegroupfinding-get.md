@@ -4,8 +4,9 @@ description: "Get details about an inactive group in AWS, Azure, or GCP environm
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # Get inactiveGroupFinding

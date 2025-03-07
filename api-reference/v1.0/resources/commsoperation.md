@@ -3,8 +3,9 @@ title: "commsOperation resource type"
 description: "The status of certain long-running operations."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 05/15/2024
 ---
 
 # commsOperation resource type
@@ -40,7 +41,8 @@ The following example is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.commsOperation",
+  "baseType": "microsoft.graph.entity"
 }-->
 ```json
 {

@@ -3,8 +3,9 @@ title: "onUserCreateStartExternalUsersSelfServiceSignUp resource type"
 description: "Managed handler for user creation step in an external identities self-service sign-up user flow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # onUserCreateStartExternalUsersSelfServiceSignUp resource type
@@ -31,7 +32,7 @@ Inherits from [onUserCreateStartHandler](../resources/onusercreatestarthandler.m
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp"

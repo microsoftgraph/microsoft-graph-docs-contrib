@@ -3,8 +3,9 @@ title: "channelAddedEventMessageDetail resource type"
 description: "Represents the details of an event message about a channel added to a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # channelAddedEventMessageDetail resource type
@@ -26,8 +27,11 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |channelId|String|Unique identifier of the channel.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.channelAddedEventMessageDetail",

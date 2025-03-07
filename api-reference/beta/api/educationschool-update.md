@@ -3,8 +3,9 @@ title: "Update educationSchool properties"
 description: "Update the properties of a school object."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # Update educationschool properties
@@ -39,7 +40,7 @@ PATCH /education/schools/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property            | Type                                               | Description                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |

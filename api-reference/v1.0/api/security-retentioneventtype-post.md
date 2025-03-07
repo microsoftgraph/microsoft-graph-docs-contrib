@@ -3,8 +3,9 @@ title: "Create retentionEventType"
 description: "Create a new retentionEventType object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create retentionEventType

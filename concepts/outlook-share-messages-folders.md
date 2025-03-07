@@ -3,7 +3,8 @@ title: "Get Outlook messages in a shared or delegated folder using the Outlook m
 description: "Use the Outlook mail API to share mail folders with others and manage access to folders. You can also delegate another user to act on your behalf."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Get Outlook messages in a shared or delegated folder

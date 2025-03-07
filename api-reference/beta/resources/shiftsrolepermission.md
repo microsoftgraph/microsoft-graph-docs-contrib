@@ -3,8 +3,9 @@ title: "shiftsRolePermission resource type"
 description: "Represents permissions for a role in a Shifts schedule."
 author: "galalalym"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # shiftsRolePermission resource type

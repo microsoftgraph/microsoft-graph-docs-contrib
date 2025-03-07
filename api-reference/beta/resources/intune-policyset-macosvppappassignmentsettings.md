@@ -2,9 +2,10 @@
 title: "macOsVppAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Mac VPP mobile app to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # macOsVppAppAssignmentSettings resource type

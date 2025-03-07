@@ -2,9 +2,10 @@
 title: "Get windows10XTrustedRootCertificate"
 description: "Read properties and relationships of the windows10XTrustedRootCertificate object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get windows10XTrustedRootCertificate
@@ -65,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 614
+Content-Length: 769
 
 {
   "value": {
@@ -78,6 +79,12 @@ Content-Length: 614
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
+    ],
+    "serverApplicabilityRules": [
+      {
+        "@odata.type": "microsoft.graph.applicabilityRule",
+        "filterType": "include"
+      }
     ],
     "trustedRootCertificate": "dHJ1c3RlZFJvb3RDZXJ0aWZpY2F0ZQ==",
     "certFileName": "Cert File Name value",

@@ -3,8 +3,9 @@ title: "List plannerPlanConfigurationLocalizations"
 description: "Get a list of the plannerPlanConfigurationLocalization objects and their properties."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List plannerPlanConfigurationLocalizations
@@ -69,7 +70,7 @@ The following example shows a request that gets all localized names for a [plann
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -198,7 +199,7 @@ The following example shows a request that gets all localized names for a [plann
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

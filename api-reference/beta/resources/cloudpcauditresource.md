@@ -3,8 +3,9 @@ title: "cloudPcAuditResource resource type"
 description: "Represents the audit resource. This shows the target edited resource entity, with multiple edited properties."
 author: "ecmadao"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 06/03/2024
 ---
 
 # cloudPcAuditResource resource type
@@ -20,16 +21,16 @@ Represents the audit resource. This shows the target edited resource entity, w
 |:---|:---|:---|
 |displayName|String|The resource entity display name.|
 |modifiedProperties|[cloudPcAuditProperty](../resources/cloudpcauditproperty.md) collection|A list of modified properties.|
-|type|String|The type of the audit resource.|
 |resourceId|String|The ID of the audit resource.|
+|resourceType|String|The type of the audit resource.|
 
 ## Relationships
 
-None
+None.
 
 ## JSON Representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcAuditResource"
@@ -40,15 +41,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcAuditResource",
   "displayName": "String",
-  "modifiedProperties": [
-    {
-      "@odata.type": "microsoft.graph.cloudPcAuditProperty",
-      "displayName": "String",
-      "oldValue": "String",
-      "newValue": "String"
-    }
-  ],
-  "type": "String",
-  "resourceId": "String"
+  "modifiedProperties": [{"@odata.type": "microsoft.graph.cloudPcAuditProperty"}],
+  "resourceId": "String",
+  "resourceType": "String"
 }
 ```

@@ -3,8 +3,9 @@ title: "Create custodian unifiedGroupSource"
 description: "Create a new custodian unifiedGroupSource object associated with an eDiscovery custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Create custodian unifiedGroupSource
@@ -59,7 +60,7 @@ If successful, this method returns a `201 Created` response code and an [microso
 
 ### Example 1: Create unifiedGroupSource with group SMTP address
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -150,7 +151,7 @@ Content-Type: application/json
 
 ### Example 2: Create unifiedGroupSource with group@odata.bind
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

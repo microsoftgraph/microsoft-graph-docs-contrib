@@ -3,8 +3,9 @@ title: "Create nonCustodialDataSources"
 description: "Create a new ediscoveryNoncustodialDataSource object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # Create nonCustodialDataSources
@@ -58,7 +59,7 @@ If successful, this method returns a `201 Created` response code and an [microso
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,7 +116,7 @@ Content-Type: application/json
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

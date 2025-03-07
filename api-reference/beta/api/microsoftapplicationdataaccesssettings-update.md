@@ -3,8 +3,9 @@ title: "Update microsoftApplicationDataAccessSettings"
 description: "Update the properties of a microsoftApplicationDataAccessSettings object."
 author: "ttomi"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update microsoftApplicationDataAccessSettings

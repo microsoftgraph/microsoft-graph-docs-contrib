@@ -4,13 +4,17 @@ description: "Retrieve a list of scopedRoleMembership objects for a directory ro
 author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # List scopedMembers for a directory role
 
 Namespace: microsoft.graph
+
+> [!NOTE]
+> Microsoft recommends that you use the unified RBAC API instead of this API. The unified RBAC API provides more functionality and flexibility. For more information, see [List unifiedRoleAssignments](./rbacapplication-list-roleassignments.md).
 
 Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects for a directory role.
 
@@ -21,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directoryrole_list_scopedmembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryrole-list-scopedmembers-permissions.md)]
+
+[!INCLUDE [rbac-directory-role-apis-read](../includes/rbac-for-apis/rbac-directory-role-apis-read.md)]
 
 ## HTTP request
 
@@ -51,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Get the members of a directory role using role id
 
 #### Request
-The following is an example of a request for a directory role **id** `43a63cc2-582b-4d81-a79d-1591f91d5558`.
+The following example shows a request for a directory role **id** `43a63cc2-582b-4d81-a79d-1591f91d5558`.
 
 
 # [HTTP](#tab/http)
@@ -131,7 +137,7 @@ Content-type: application/json
 ### Example 2:  Get the scoped members of a directory role using roleTemplateId
 
 #### Request
-The following is an example of a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
+The following example shows a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

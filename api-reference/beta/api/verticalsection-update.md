@@ -3,8 +3,9 @@ title: 'Update verticalSection'
 description: "Update the properties of a verticalSection object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 04/12/2024
 ---
 # Update verticalSection
 
@@ -55,12 +56,12 @@ If the vertical section does not exist, this method returns a `404 NotFound` res
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection
+PATCH https://graph.microsoft.com/beta/sites/a69edae4-9208-4f60-9aa3-cd0911ff0ce1/pages/7f7a2740-2d74-47ba-af0c-71ed3a3384ca/microsoft.graph.sitePage/canvasLayout/verticalSection
 Content-Type: application/json
 
 {

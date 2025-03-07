@@ -3,8 +3,9 @@ title: "Get virtualAppointment"
 description: "Read the properties and relationships of a virtualAppointment object."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get virtualAppointment (deprecated)
@@ -59,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [virtualAppoin
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

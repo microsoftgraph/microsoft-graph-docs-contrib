@@ -3,8 +3,9 @@ title: "cloudPcReports: getFrontlineReport"
 description: "Get the Windows 365 Frontline reports, such as real-time or historical data reports."
 author: "rbayetov"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # cloudPcReports: getFrontlineReport
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) reports, such as real-time or historical data reports.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -111,10 +112,6 @@ Content-length: 199
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetfrontlinereport-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetfrontlinereport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

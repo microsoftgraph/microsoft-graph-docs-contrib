@@ -2,9 +2,10 @@
 title: "reportRoot: getTeamsUserActivityUserDetail"
 description: "Get details about Microsoft Teams user activity by user."
 ms.localizationpriority: high
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getTeamsUserActivityUserDetail

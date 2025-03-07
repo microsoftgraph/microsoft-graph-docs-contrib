@@ -3,8 +3,9 @@ title: "List attributeSets"
 description: "Get a list of the attributeSet objects and their properties."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List attributeSets
@@ -60,7 +61,7 @@ The following example gets all attribute sets in a tenant.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -143,7 +144,7 @@ The following example gets the top 10 attribute sets with support for paging.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -228,7 +229,7 @@ The following example gets attribute sets ordered by ID.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

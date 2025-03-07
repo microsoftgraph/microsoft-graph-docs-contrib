@@ -4,8 +4,9 @@ description: "Get groups, directory roles, and administrative units that the use
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # List a user's direct memberships
@@ -20,25 +21,39 @@ Get [groups](../resources/group.md), [directory roles](../resources/directoryrol
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "user_list_memberof" } -->
+### Permissions for the signed-in user's direct memberships
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-memberof-permissions.md)]
 
-> **Note:** To list the members of a group with hidden membership, the Member.Read.Hidden permission is required.
+### Permissions for another user's direct memberships
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-memberof-2-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> [!TIP]
+> - Calling the `/me/memberOf` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when you use the `/me/memberOf` endpoint.
+> - To list the members of a group with hidden membership, the `Member.Read.Hidden` permission is required.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /me/memberOf
+```
+
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{id | userPrincipalName}/memberOf
 ```
 
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled; for example, you can cast to get just the **directoryRoles** the user is a member of. You can use `$search` on the **displayName** property. Items that are added or updated for this resource are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it's available in the index.
+
+The use of `$filter` with this API requires the **ConsistencyLevel** header set to `eventual` and `$count`. However, in such scenarios, you can't use `$expand` in the same request as it isn't supported with advanced query parameters. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 

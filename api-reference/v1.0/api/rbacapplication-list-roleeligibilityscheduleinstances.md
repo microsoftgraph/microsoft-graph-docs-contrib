@@ -3,8 +3,9 @@ title: "List roleEligibilityScheduleInstances"
 description: "Get the instances of role eligibilities."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List roleEligibilityScheduleInstances

@@ -3,8 +3,9 @@ title: "conversation resource type"
 description: "A conversation is a collection of threads, and a thread contains posts to that thread. All threads and posts in a conversation share the same subject."
 ms.localizationpriority: medium
 author: "mikemcleanlive"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # conversation resource type
@@ -22,7 +23,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List conversations](../api/group-list-conversations.md) | [conversation](conversation.md) collection |Get the list of conversations in this group.|
-|[Create](../api/group-post-conversations.md) |[conversation](conversation.md)| Create a new conversation by including a thread and a post.|
+|[Create conversation](../api/group-post-conversations.md) |[conversation](conversation.md)| Create a new conversation by including a thread and a post.|
 |[Get conversation](../api/conversation-get.md) | [conversation](conversation.md) |Read properties and relationships of conversation object.|
 |[Delete](../api/conversation-delete.md) | None |Delete conversation object. |
 |[List conversation threads](../api/conversation-list-threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads in a group conversation.|
@@ -45,7 +46,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

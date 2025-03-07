@@ -3,8 +3,9 @@ title: "privilegedAccessScheduleInstance resource type"
 description: "An abstract type that exposes properties relating to the instances of membership and ownership assignments and eligibilities to groups that are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # privilegedAccessScheduleInstance resource type
@@ -31,7 +32,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

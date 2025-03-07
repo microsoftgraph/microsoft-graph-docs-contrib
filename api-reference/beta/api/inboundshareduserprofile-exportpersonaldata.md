@@ -1,10 +1,12 @@
 ---
 title: "inboundSharedUserProfile: exportPersonalData"
 description: "Create a request to export the personal data for an inboundSharedUserProfile."
-author: "jkdouglas"
+author: "yyuank"
+ms.reviewer: mapamu, iamut
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 05/16/2024
 ---
 
 # inboundSharedUserProfiles: exportPersonalData

@@ -3,8 +3,9 @@ title: "sectionGroup resource type"
 description: "A section group in a OneNote notebook. Section groups can contain sections and section groups."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
+ms.date: 06/19/2024
 ---
 
 # sectionGroup resource type
@@ -15,7 +16,7 @@ A section group in a OneNote notebook. Section groups can contain sections and s
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

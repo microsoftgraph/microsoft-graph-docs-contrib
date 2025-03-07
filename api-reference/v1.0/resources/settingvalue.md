@@ -4,8 +4,9 @@ description: "A setting represented by a name/value pair."
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # settingValue resource type
@@ -23,7 +24,7 @@ A setting represented by a name/value pair.
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

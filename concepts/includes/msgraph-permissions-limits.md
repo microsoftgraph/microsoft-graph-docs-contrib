@@ -1,7 +1,11 @@
 ---
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.topic: include
+ms.subservice: entra-applications
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD041-->

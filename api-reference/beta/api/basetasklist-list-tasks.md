@@ -3,8 +3,9 @@ title: "List baseTasks"
 description: "Get the baseTask resources from the tasks navigation property of a specific baseTaskList."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List baseTasks (deprecated)

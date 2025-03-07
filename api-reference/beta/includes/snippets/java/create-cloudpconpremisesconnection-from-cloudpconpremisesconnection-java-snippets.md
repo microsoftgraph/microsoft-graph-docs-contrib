@@ -10,6 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcOnPremisesConnection cloudPcOnPremisesConnection = new CloudPcOnPremisesConnection();
 cloudPcOnPremisesConnection.setDisplayName("test-canary-02");
+cloudPcOnPremisesConnection.setConnectionType(CloudPcOnPremisesConnectionType.HybridAzureADJoin);
 cloudPcOnPremisesConnection.setType(CloudPcOnPremisesConnectionType.HybridAzureADJoin);
 cloudPcOnPremisesConnection.setSubscriptionId("0ac520ee-14c0-480f-b6c9-0a90c585ffff");
 cloudPcOnPremisesConnection.setAdDomainName("contoso001.com");

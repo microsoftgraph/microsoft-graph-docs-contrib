@@ -3,8 +3,9 @@ title: "Get unifiedRoleManagementPolicyAssignment"
 description: "Get the details of a role management policy assignment including the policy and rules associated with the Microsoft Entra role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get unifiedRoleManagementPolicyAssignment
@@ -65,9 +66,9 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-<a name='example-1-rretrieve-the-details-of-a-policy-assignment-for-pim-for-azure-ad-roles'></a>
+<a name='example-1-retrieve-the-details-of-a-policy-assignment-for-pim-for-azure-ad-roles'></a>
 
-### Example 1: RRetrieve the details of a policy assignment for PIM for Microsoft Entra roles
+### Example 1: Retrieve the details of a policy assignment for PIM for Microsoft Entra roles
 
 #### Request
 

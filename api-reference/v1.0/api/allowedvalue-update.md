@@ -3,8 +3,9 @@ title: "Update allowedValue"
 description: "Update the properties of an allowedValue object."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update allowedValue
@@ -116,7 +117,7 @@ Content-length: 80
 
 ### Response
 
-The following is an example of a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

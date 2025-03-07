@@ -4,8 +4,9 @@ description: "An app scope is a scope defined and understood by a specific appli
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # appScope resource type
@@ -35,7 +36,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

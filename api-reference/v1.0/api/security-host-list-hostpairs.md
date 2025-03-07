@@ -3,8 +3,9 @@ title: "List hostPairs"
 description: "Get the list of hostPair resources associated with a host, where that host is either the parent or the child."
 author: "jakedavies-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List hostPairs

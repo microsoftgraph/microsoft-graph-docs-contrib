@@ -1,10 +1,11 @@
 ---
 title: "List accessPackagesIncompatibleWith"
-description: "Retrieve a list of access packages that have indicated that their access rights are incompatible with a specific access package."
+description: "Retrieve a list of access packages that indicate their access rights are incompatible with a specific access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/06/2024
 ---
 
 # List accessPackagesIncompatibleWith
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of the [accessPackage](../resources/accesspackage.md) objects that have marked a specified [accessPackage](../resources/accesspackage.md) as incompatible.
+Retrieve a list of the [accessPackage](../resources/accesspackage.md) objects marked a specified [accessPackage](../resources/accesspackage.md) as incompatible.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackage_list_accesspackagesincompatiblewith" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-list-accesspackagesincompatiblewith-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 
@@ -54,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -103,7 +106,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -3,8 +3,9 @@ title: "moveToDeletedItemsResponseAction resource type"
 description: "Describes an email response action that moves the email message to the user's Deleted items folder."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # moveToDeletedItemsResponseAction resource type

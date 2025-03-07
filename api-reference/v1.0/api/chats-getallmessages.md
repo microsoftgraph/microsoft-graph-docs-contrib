@@ -3,8 +3,9 @@ title: "chats: getAllMessages"
 description: "Get messages from all chats that a user is a participant in."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 05/22/2024
 ---
 
 # chats: getAllMessages
@@ -36,6 +37,7 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
 as shown in the following examples.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
@@ -45,6 +47,7 @@ If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#ev
 
 This method also supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
+<!-- { "blockType": "ignored" } -->
 ``` http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
@@ -108,10 +111,6 @@ GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/chat-getallmessages-1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/chat-getallmessages-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

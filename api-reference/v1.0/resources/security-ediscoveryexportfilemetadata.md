@@ -3,8 +3,9 @@ title: "ediscoveryExportFileMetadata resource type"
 description: "Represents the file metadata for an export in Microsoft Purview eDiscovery."
 author: "vbhatt0211"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # ediscoveryExportFileMetadata resource type
@@ -23,7 +24,7 @@ Represents the file metadata for an export in Microsoft Purview eDiscovery.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

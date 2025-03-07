@@ -3,8 +3,9 @@ title: "Assign a connectorGroup to an application"
 description: "Use this API to assign a connectorGroup to an application"
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 # Assign a connectorGroup to an application
 

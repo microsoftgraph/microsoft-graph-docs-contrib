@@ -22,10 +22,8 @@ authenticationConfiguration.setOdataType("#microsoft.graph.azureAdPopTokenAuthen
 customTaskExtension.setAuthenticationConfiguration(authenticationConfiguration);
 CustomExtensionClientConfiguration clientConfiguration = new CustomExtensionClientConfiguration();
 clientConfiguration.setOdataType("#microsoft.graph.customExtensionClientConfiguration");
+clientConfiguration.setMaximumRetries(1);
 clientConfiguration.setTimeoutInMilliseconds(1000);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("maximumRetries", 1);
-clientConfiguration.setAdditionalData(additionalData);
 customTaskExtension.setClientConfiguration(clientConfiguration);
 com.microsoft.graph.models.identitygovernance.CustomTaskExtensionCallbackConfiguration callbackConfiguration = new com.microsoft.graph.models.identitygovernance.CustomTaskExtensionCallbackConfiguration();
 callbackConfiguration.setOdataType("#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration");

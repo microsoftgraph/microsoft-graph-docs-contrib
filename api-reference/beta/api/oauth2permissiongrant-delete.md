@@ -3,8 +3,9 @@ title: "Delete oAuth2PermissionGrant (a delegated permission grant)"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 07/09/2024
 ---
 
 # Delete oAuth2PermissionGrant (a delegated permission grant)
@@ -28,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "oauth2permissiongrant_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/oauth2permissiongrant-delete-permissions.md)]
+
+[!INCLUDE [rbac-oauth2permissiongrant-apis-write](../includes/rbac-for-apis/rbac-oauth2permissiongrant-apis-write.md)]
 
 ## HTTP request
 
@@ -55,7 +58,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -4,7 +4,8 @@ description: "Represents a reaction to a chatMessage entity. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 10/18/2024
 ---
 
 # chatMessageReaction resource type
@@ -21,13 +22,18 @@ An entity of type `chatMessageReaction` is returned as part of the [Get channel 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|reactionType|String|Supported values are `like`, `angry`, `sad`, `laugh`, `heart`, `surprised`. |
+|createdDateTime|DateTimeOffset|The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|displayName|String|The name of the reaction.|
+|reactionContentUrl|String|The hosted content URL for the custom reaction type. |
+|reactionType|String|The reaction type. Supported values include Unicode characters, `custom`, and some backward-compatible reaction types, such as `like`, `angry`, `sad`, `laugh`, `heart`, and `surprised`. |
 |user|[chatMessageReactionIdentitySet](chatmessagereactionidentityset.md)|The user who reacted to the message.|
+
+## Relationships
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -41,6 +47,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "reactionContentUrl": "String",
   "reactionType": "String",
   "user": {"@odata.type": "microsoft.graph.chatMessageReactionIdentitySet"}
 }
@@ -55,5 +63,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

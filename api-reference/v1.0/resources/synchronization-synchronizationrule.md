@@ -4,7 +4,8 @@ description: "Defines how the synchronization should be performed for the synchr
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
+ms.date: 04/03/2024
 ---
 
 # synchronizationRule resource type
@@ -32,7 +33,7 @@ Synchronization rules are updated as part of the [synchronization schema](synchr
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

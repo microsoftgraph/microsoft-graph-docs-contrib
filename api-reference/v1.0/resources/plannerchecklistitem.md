@@ -3,8 +3,9 @@ title: "plannerChecklistItem resource type"
 description: "The **plannerChecklistItem** resource represents an item in the checklist of a task. The checklist on a task is represented by the checklistItems object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # plannerChecklistItem resource type
@@ -25,7 +26,7 @@ The **plannerChecklistItem** resource represents an item in the checklist of a t
 |title|String|Title of the checklist item|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

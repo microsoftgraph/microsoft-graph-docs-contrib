@@ -3,8 +3,9 @@ title: "securityVendorInformation resource type"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications isn't supported."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # securityVendorInformation resource type
@@ -24,9 +25,12 @@ Contains details about the security product/service vendor, provider, and subpro
 |subProvider|String|Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.|
 |vendor |String|Name of the alert vendor (for example, Microsoft, Dell, FireEye). **Required**|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

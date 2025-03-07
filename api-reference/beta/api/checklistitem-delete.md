@@ -3,8 +3,9 @@ title: "Delete checklistItem"
 description: "Delete a checklistItem object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete checklistItem
@@ -64,9 +65,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request 1
+### Example 1: Delete a checklistItem associated to a todoTask
 
-Here is an example to delete a **checklistItem** associated to a **todoTask**.
+#### Request
+
+The following example shows how to delete a **checklistItem** associated to a **todoTask**.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,8 +116,10 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNG
 
 ---
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -124,9 +129,11 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNG
 HTTP/1.1 204 No Content
 ```
 
-### Request 2
+### Example 2: Delete a checklistItem associated to a baseTask
 
-Here is an example to delete a **checklistItem** associated to a **baseTask** (deprecated).
+#### Request
+
+The following example shows how to delete a **checklistItem** associated to a **baseTask** (deprecated).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -173,8 +180,10 @@ DELETE https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtN
 
 ---
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -2,9 +2,10 @@
 title: "certificateConnectorDetails resource type"
 description: "Entity used to retrieve information about Intune Certificate Connectors."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # certificateConnectorDetails resource type

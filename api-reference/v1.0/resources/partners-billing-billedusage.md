@@ -3,8 +3,9 @@ title: "billedUsage resource type"
 description: "Represents details for billed Azure usage data."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # billedUsage resource type
@@ -19,7 +20,7 @@ Represents details for billed Azure usage data.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[export](../api/partners-billing-billedusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the billed Azure usage data.|
+|[Export](../api/partners-billing-billedusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the billed Azure usage data.|
 
 ## Properties
 

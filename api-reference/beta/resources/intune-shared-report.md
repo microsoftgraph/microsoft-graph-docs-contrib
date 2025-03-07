@@ -1,10 +1,11 @@
 ---
 title: "report resource type"
 description: "Describes the report resource of the Microsoft Graph API for Intune, which supports multiple workflows."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # report resource type

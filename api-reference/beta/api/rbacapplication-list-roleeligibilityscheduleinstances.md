@@ -3,8 +3,9 @@ title: "List roleEligibilityScheduleInstances"
 description: "Get a list of the unifiedRoleEligibilityScheduleInstance objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List roleEligibilityScheduleInstancess

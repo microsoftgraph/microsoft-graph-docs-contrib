@@ -3,8 +3,9 @@ title: "Update accessPackageAssignmentWorkflowExtension"
 description: "Update the properties of an accessPackageAssignmentWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/07/2024
 ---
 
 # Update accessPackageAssignmentWorkflowExtension
@@ -19,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentworkflowextension_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentworkflowextension-update-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-logic-apps-write](../includes/rbac-for-apis/rbac-entitlement-management-logic-apps-apis-write.md)]
 
 ## HTTP request
 
@@ -57,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -4,8 +4,9 @@ description: "Represents a complex type of session controls that is enforced aft
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 04/03/2024
 ---
 
 # conditionalAccessSessionControls resource type
@@ -31,7 +32,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,8 +3,9 @@ title: "Get landingPage"
 description: "Get a landingPage associated with an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 04/05/2024
 ---
 
 # Get landingPage
@@ -60,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [landingPage](
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

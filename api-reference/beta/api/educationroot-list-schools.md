@@ -3,8 +3,9 @@ title: "List educationSchools"
 description: "Retrieve a list of all school objects."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List educationSchools

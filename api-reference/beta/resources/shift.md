@@ -3,8 +3,9 @@ title: "shift resource type"
 description: "Represents a unit of scheduled work in a schedule."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # shift resource type
@@ -23,11 +24,11 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 
 | Method                                                              | Return Type                  | Description                                                                                                  |
 | :------------------------------------------------------------------ | :--------------------------- | :----------------------------------------------------------------------------------------------------------- |
-| [Create shift](../api/schedule-post-shifts.md)                      | [shift](shift.md)            | Create a new **shift**.                                                                                      |
-| [List shifts](../api/schedule-list-shifts.md)                       | [shift](shift.md) collection | Get the list of **shifts** in this schedule.                                                                 |
-| [Get shift](../api/shift-get.md)                                    | [shift](shift.md)            | Get a **shift** by ID.                                                                                       |
-| [Replace shift](../api/shift-put.md)                                | [shift](shift.md)            | Replace a **shift**.                                                                                         |
-| [Delete shift](../api/shift-delete.md)                              | None                         | Delete a **shift** from the schedule.                                                                        |
+| [Create](../api/schedule-post-shifts.md)                      | [shift](shift.md)            | Create a new **shift**.                                                                                      |
+| [List](../api/schedule-list-shifts.md)                       | [shift](shift.md) collection | Get the list of **shifts** in this schedule.                                                                 |
+| [Get](../api/shift-get.md)                                    | [shift](shift.md)            | Get a **shift** by ID.                                                                                       |
+| [Replace](../api/shift-put.md)                                | [shift](shift.md)            | Replace a **shift**.                                                                                         |
+| [Delete](../api/shift-delete.md)                              | None                         | Delete a **shift** from the schedule.                                                                        |
 | [Stage for deletion](../api/changetrackedentity-stagefordeletion.md)| None                         | Stage the deletion of a [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md) in draft mode.        |
 
 ## Properties
@@ -47,6 +48,9 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | teamInfo             | [shiftsTeamInfo](shiftsteaminfo.md)                  | Information of the team that the **shift** is in. |
 | userId               | String                      | ID of the user assigned to the **shift**. Required. |
 | userInfo             | [shiftsUserInfo](shiftsuserinfo.md)                  | Information of the user assigned to the **shift**. |
+
+## Relationships
+None.
 
 ## JSON representation
 

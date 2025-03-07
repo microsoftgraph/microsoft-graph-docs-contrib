@@ -3,8 +3,9 @@ title: "Update accessReviewInstance"
 description: "Update the properties of an accessReviewInstance object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update accessReviewInstance

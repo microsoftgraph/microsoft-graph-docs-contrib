@@ -2,9 +2,10 @@
 title: "androidDeviceOwnerKioskModeAppPositionItem resource type"
 description: "An item in the list of app positions that sets the order of items on the Managed Home Screen"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # androidDeviceOwnerKioskModeAppPositionItem resource type

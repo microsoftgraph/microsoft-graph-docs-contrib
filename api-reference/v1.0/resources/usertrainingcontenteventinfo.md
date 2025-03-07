@@ -3,8 +3,9 @@ title: "userTrainingContentEventInfo resource type"
 description: "Represents training event details of assigned trainings to users in an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # userTrainingContentEventInfo resource type
@@ -26,7 +27,7 @@ Represents training event details of assigned trainings to users in an attack si
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userTrainingContentEventInfo"

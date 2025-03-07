@@ -4,7 +4,8 @@ description: "Remove an incoming channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 09/16/2024
 ---
 
 # Remove channel
@@ -19,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/team-delete-incomingchannels-permissions.md)]
 
 
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+> **Note**: This API supports admin permissions. Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 
@@ -46,7 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

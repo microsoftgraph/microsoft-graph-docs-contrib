@@ -3,8 +3,9 @@ author: daspek
 title: Get item activity stats by interval
 description: Get itemAnalyticyStats for the activities that took place on this resource within the specified time interval.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 03/12/2024
 ---
 # Get item activity stats by interval
 

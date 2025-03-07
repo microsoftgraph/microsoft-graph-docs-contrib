@@ -3,8 +3,9 @@ title: "List members"
 description: "Use this API to get the members list (users, groups, or devices) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 02/21/2025
 ---
 
 # List members
@@ -21,9 +22,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "administrativeunit_list_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-list-members-permissions.md)]
 
-> Note: To list the members of a hidden membership in an administrative unit, the Member.Read.Hidden permission is required.
-
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> **Note:** To list the members of a hidden membership in an administrative unit, the *Member.Read.Hidden* permission is also required.
+
+[!INCLUDE [rbac-admin-units-apis-read](../includes/rbac-for-apis/rbac-admin-units-apis-read.md)]
 
 ## HTTP request
 
@@ -33,9 +36,9 @@ GET /directory/administrativeUnits/{id}/members/$ref
 ```
 
 ## Optional query parameters
-This method (when used without `$ref`) supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the users that are a member of the administrative unit.
+This method (when used without `$ref`) supports the `$search`, `$count`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response. OData cast is also enabled. For example, you can cast to get just the users that are a member of the administrative unit.
 
-`$search` is supported on the **displayName** and **description** properties only. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+`$search` is supported on the **displayName** and **description** properties only. The use of query parameters with this API is supported only with advanced query parameters. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 | Name      |Description|
@@ -102,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -187,7 +190,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

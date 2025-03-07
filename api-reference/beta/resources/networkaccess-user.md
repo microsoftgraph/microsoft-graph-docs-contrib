@@ -3,8 +3,9 @@ title: "user resource type (Global Secure Access user)"
 description: "Unique Microsoft Entra ID user identified by the Global Secure Access servics."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # user resource type (Global Secure Access user)

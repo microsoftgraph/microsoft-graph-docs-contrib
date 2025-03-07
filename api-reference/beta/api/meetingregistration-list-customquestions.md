@@ -3,8 +3,9 @@ title: "List customQuestions"
 description: "Get a list of the custom registration questions associated with a meetingRegistration object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List customQuestions

@@ -3,9 +3,10 @@ title: "governanceResource: register"
 description: "Register a governanceResource object in PIM."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
+ms.date: 03/08/2024
 ---
 
 # governanceResource: register

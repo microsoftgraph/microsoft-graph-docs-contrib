@@ -12,10 +12,7 @@ const client = Client.init(options);
 
 const filePlanReferenceTemplate = {
   '@odata.type': '#microsoft.graph.security.filePlanReferenceTemplate',
-  displayName: 'String',
-  createdBy: {
-    '@odata.type': 'microsoft.graph.identitySet'
-  }
+  displayName: 'FIN 01-02-001',
 };
 
 await client.api('/security/labels/filePlanReferences')

@@ -3,8 +3,9 @@ title: "user resource type"
 description: "Not yet documented"
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 03/14/2024
 ---
 
 # user resource type

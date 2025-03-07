@@ -3,8 +3,9 @@ title: "intelligenceProfileCountryOrRegionOfOrigin resource type"
 description: "Represents a country/region of origin for an actor related to a threat or vulnerability outlined in an intelligence profile."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # intelligenceProfileCountryOrRegionOfOrigin resource type
@@ -30,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

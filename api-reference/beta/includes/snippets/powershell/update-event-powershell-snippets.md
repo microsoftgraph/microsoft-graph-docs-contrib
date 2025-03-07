@@ -20,8 +20,8 @@ $params = @{
 	isReminderOn = $true
 	hideAttendees = $false
 	categories = @(
-		"Red category"
-	)
+	"Red category"
+)
 }
 
 # A UPN can also be used as -UserId.

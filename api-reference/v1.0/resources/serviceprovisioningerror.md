@@ -3,8 +3,9 @@ title: "serviceProvisioningError resource type"
 description: "Represents an abstract base type for service provisioning errors."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "PaulEkirapa"
+ms.date: 04/03/2024
 ---
 
 # serviceProvisioningError resource type

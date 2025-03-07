@@ -3,8 +3,9 @@ title: "azureCommunicationServicesUserConversationMember resource type"
 description: "Represents an Azure Communication Services user in a chat."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # azureCommunicationServicesUserConversationMember resource type
@@ -33,7 +34,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

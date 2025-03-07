@@ -3,8 +3,9 @@ title: "List identityProviders"
 description: "Retrieve all identityProviders"
 ms.localizationpriority: high
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List identityProviders (deprecated)
@@ -23,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identityprovider_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityprovider-list-permissions.md)]
 
-The work or school account must be a global administrator of the tenant.
+[!INCLUDE [rbac-identity-provider-apis](../includes/rbac-for-apis/rbac-identity-provider-apis.md)]
 
 ## HTTP request
 

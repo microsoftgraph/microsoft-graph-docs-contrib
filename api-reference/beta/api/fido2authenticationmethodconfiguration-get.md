@@ -4,8 +4,9 @@ description: "Read the properties and relationships of a fido2AuthenticationMeth
 author: "calvinlui"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Get fido2AuthenticationMethodConfiguration

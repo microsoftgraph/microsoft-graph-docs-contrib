@@ -3,8 +3,9 @@ title: "channelSharingUpdatedEventMessageDetail resource type"
 description: "Represents the details of an event message about a shared channel."
 author: "AgnesLiu"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # channelSharingUpdatedEventMessageDetail resource type
@@ -26,6 +27,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |ownerTeamId|String| The ID of the team to which the shared channel belongs. |
 |ownerTenantId|String| The ID of the tenant to which the shared channel belongs. |
 |sharedChannelId|String| The ID of the shared channel. |
+
+## Relationships
+None.
 
 ## JSON representation
 

@@ -4,8 +4,9 @@ description: "Get the details of inactive AWS roles in AWS authorization systems
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get inactiveAwsRoleFinding

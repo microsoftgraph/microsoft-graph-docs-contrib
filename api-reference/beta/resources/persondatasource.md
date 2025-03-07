@@ -3,8 +3,9 @@ title: "personDataSource resource type"
 description: "Represents the sources the user data comes from, such as Directory and Outlook Contacts."
 ms.localizationpriority: medium
 author: "simonhult"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # personDataSource resource type
@@ -15,9 +16,17 @@ Namespace: microsoft.graph
 
 Represents the sources the user data comes from, such as Directory and Outlook Contacts.
 
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|type|String|The type of data source.|
+
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -32,10 +41,6 @@ Here is a JSON representation of the resource
   "type": "string"
 }
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|type|String|The type of data source.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

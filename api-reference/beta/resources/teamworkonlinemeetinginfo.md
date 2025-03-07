@@ -3,8 +3,9 @@ title: "teamworkOnlineMeetingInfo resource type"
 description: "Represents details about an online meeting in Microsoft Teams."
 author: "jecha"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkOnlineMeetingInfo resource type
@@ -26,7 +27,7 @@ Represents details about an online meeting in Microsoft Teams.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"

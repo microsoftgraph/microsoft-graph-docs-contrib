@@ -3,8 +3,9 @@ title: "List partners"
 description: "Get a list of all partner configurations within a cross-tenant access policy."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # List partners
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "crosstenantaccesspolicy_list_partners" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicy-list-partners-permissions.md)]
+
+[!INCLUDE [rbac-xtap-apis-read](../includes/rbac-for-apis/rbac-xtap-apis-read.md)]
 
 ## HTTP request
 
@@ -127,6 +130,7 @@ Content-Type: application/json
     {
       "tenantId": "123f4846-ba00-4fd7-ba43-dac1f8f63013",
       "inboundTrust": null,
+      "isInMultiTenantOrganization": false,
       "automaticUserConsentSettings": {
         "inboundAllowed": null,
         "outboundAllowed": null
@@ -149,6 +153,26 @@ Content-Type: application/json
           "targets": [
             {
               "target": "Office365",
+              "targetType": "application"
+            }
+          ]
+        }
+      },
+      "tenantRestrictions": {
+        "usersAndGroups": {
+          "accessType": "blocked",
+          "targets": [
+            {
+              "target": "AllUsers",
+              "targetType": "user"
+            }
+          ]
+        },
+        "applications": {
+          "accessType": "blocked",
+          "targets": [
+            {
+              "target": "AllApplications",
               "targetType": "application"
             }
           ]

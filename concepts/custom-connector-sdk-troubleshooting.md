@@ -4,8 +4,9 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Learn how to troubleshoot issues with the Microsoft Graph connectors SDK."
+ms.date: 11/07/2024
 ---
 
 # Troubleshoot issues with the Microsoft Graph connectors SDK

@@ -3,8 +3,9 @@ title: "reportRoot: getAzureADApplicationSignInSummary"
 description: "Retrieve the properties and relationships of an applicationSigninSummary object."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getAzureADApplicationSignInSummary
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "reportroot_getazureadapplicationsigninsummary" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getazureadapplicationsigninsummary-permissions.md)]
+
+[!INCLUDE [rbac-usage-insights-apis](../includes/rbac-for-apis/rbac-usage-insights-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

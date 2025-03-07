@@ -3,8 +3,9 @@ title: "exportSuccessOperation resource type"
 description: "Represents an export operation that is completed successfully."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # exportSuccessOperation resource type

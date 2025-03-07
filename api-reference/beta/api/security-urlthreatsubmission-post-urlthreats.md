@@ -3,8 +3,9 @@ title: "Create urlThreatSubmission"
 description: "Create a new urlThreatSubmission object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create urlThreatSubmission
@@ -57,7 +58,7 @@ If successful, this method returns a `201 Created` response code and an [urlThre
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

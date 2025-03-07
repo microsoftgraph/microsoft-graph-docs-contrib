@@ -1,12 +1,13 @@
 ---
-title: "accessPackageAssignmentApprovalSettings complex type"
+title: "accessPackageAssignmentApprovalSettings resource type"
 description: "Specifies the settings for approval of a request for an access package assignment in an access package assignment policy."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
-# accessPackageAssignmentApprovalSettings complex type
+# accessPackageAssignmentApprovalSettings resource type
 
 Namespace: microsoft.graph
 
@@ -22,7 +23,7 @@ Used for the **requestApprovalSettings** property of an [access package assignme
 ## Relationships
 None.
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"

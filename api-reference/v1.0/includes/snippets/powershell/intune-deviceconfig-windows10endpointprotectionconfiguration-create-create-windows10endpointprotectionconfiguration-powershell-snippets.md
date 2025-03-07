@@ -67,39 +67,39 @@ $params = @{
 		policyRulesFromGroupPolicyMerged = $true
 	}
 	defenderAttackSurfaceReductionExcludedPaths = @(
-		"Defender Attack Surface Reduction Excluded Paths value"
-	)
-	defenderGuardedFoldersAllowedAppPaths = @(
-		"Defender Guarded Folders Allowed App Paths value"
-	)
-	defenderAdditionalGuardedFolders = @(
-		"Defender Additional Guarded Folders value"
-	)
-	defenderExploitProtectionXml = "ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA=="
-	defenderExploitProtectionXmlFileName = "Defender Exploit Protection Xml File Name value"
-	defenderSecurityCenterBlockExploitProtectionOverride = $true
-	appLockerApplicationControl = "enforceComponentsAndStoreApps"
-	smartScreenEnableInShell = $true
-	smartScreenBlockOverrideForFiles = $true
-	applicationGuardEnabled = $true
-	applicationGuardBlockFileTransfer = "blockImageAndTextFile"
-	applicationGuardBlockNonEnterpriseContent = $true
-	applicationGuardAllowPersistence = $true
-	applicationGuardForceAuditing = $true
-	applicationGuardBlockClipboardSharing = "blockBoth"
-	applicationGuardAllowPrintToPDF = $true
-	applicationGuardAllowPrintToXPS = $true
-	applicationGuardAllowPrintToLocalPrinters = $true
-	applicationGuardAllowPrintToNetworkPrinters = $true
-	bitLockerDisableWarningForOtherDiskEncryption = $true
-	bitLockerEnableStorageCardEncryptionOnMobile = $true
-	bitLockerEncryptDevice = $true
-	bitLockerRemovableDrivePolicy = @{
-		"@odata.type" = "microsoft.graph.bitLockerRemovableDrivePolicy"
-		encryptionMethod = "aesCbc256"
-		requireEncryptionForWriteAccess = $true
-		blockCrossOrganizationWriteAccess = $true
-	}
+	"Defender Attack Surface Reduction Excluded Paths value"
+)
+defenderGuardedFoldersAllowedAppPaths = @(
+"Defender Guarded Folders Allowed App Paths value"
+)
+defenderAdditionalGuardedFolders = @(
+"Defender Additional Guarded Folders value"
+)
+defenderExploitProtectionXml = "ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA=="
+defenderExploitProtectionXmlFileName = "Defender Exploit Protection Xml File Name value"
+defenderSecurityCenterBlockExploitProtectionOverride = $true
+appLockerApplicationControl = "enforceComponentsAndStoreApps"
+smartScreenEnableInShell = $true
+smartScreenBlockOverrideForFiles = $true
+applicationGuardEnabled = $true
+applicationGuardBlockFileTransfer = "blockImageAndTextFile"
+applicationGuardBlockNonEnterpriseContent = $true
+applicationGuardAllowPersistence = $true
+applicationGuardForceAuditing = $true
+applicationGuardBlockClipboardSharing = "blockBoth"
+applicationGuardAllowPrintToPDF = $true
+applicationGuardAllowPrintToXPS = $true
+applicationGuardAllowPrintToLocalPrinters = $true
+applicationGuardAllowPrintToNetworkPrinters = $true
+bitLockerDisableWarningForOtherDiskEncryption = $true
+bitLockerEnableStorageCardEncryptionOnMobile = $true
+bitLockerEncryptDevice = $true
+bitLockerRemovableDrivePolicy = @{
+"@odata.type" = "microsoft.graph.bitLockerRemovableDrivePolicy"
+encryptionMethod = "aesCbc256"
+requireEncryptionForWriteAccess = $true
+blockCrossOrganizationWriteAccess = $true
+}
 }
 
 New-MgDeviceManagementDeviceConfiguration -BodyParameter $params

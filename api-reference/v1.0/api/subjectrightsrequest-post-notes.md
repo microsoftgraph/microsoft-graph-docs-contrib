@@ -3,8 +3,9 @@ title: "Create authoredNote"
 description: "Create a new authoredNote object."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Create authoredNote
@@ -57,7 +58,7 @@ If successful, this method returns a `201 Created` response code and an [authore
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

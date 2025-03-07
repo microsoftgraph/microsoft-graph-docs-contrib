@@ -3,8 +3,9 @@ title: "Remove gradingCategory"
 description: "Remove gradingCategory from the assignment."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Remove gradingCategory

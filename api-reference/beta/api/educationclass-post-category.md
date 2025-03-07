@@ -3,8 +3,9 @@ title: "Create educationCategory"
 description: "Create a new educationCategory on an educationClass."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create educationCategory

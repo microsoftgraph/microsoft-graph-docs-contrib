@@ -3,8 +3,9 @@ title: "Get settings for user analytics"
 description: "Retrieve the properties of the settings object for user analytics."
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Get settings for user analytics

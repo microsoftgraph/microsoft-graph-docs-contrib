@@ -3,7 +3,7 @@ title: "Cross-tenant access settings API overview"
 description: "Cross-tenant access settings let you manage both B2B collaboration and B2B direct connect for your organization."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: conceptualPageType
 ms.date: 09/13/2022
 ---
@@ -25,11 +25,10 @@ In the traditional Microsoft Entra B2B collaboration, any invited user from an o
 Granular controls let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in cross-tenant collaboration. These controls are implemented through:
 
 + **Default cross-tenant access settings** which set the baseline settings for inbound and outbound access and tenant restrictions.
-    + In Microsoft Entra B2B collaboration, both inbound and outbound access settings are enabled by default. This default configuration means all your users can be invited to external organizations, and all your users can invite guest users.
+    + In Microsoft Entra B2B collaboration, both inbound and outbound access settings are enabled by default. This default configuration means all your users can be invited to external organizations, and all your users can invite guest users. 
     + In Microsoft Entra B2B direct connect, both inbound and outbound access settings are disabled by default.
     + The service default settings may be updated.
     + In Tenant Restrictions, all access settings are disabled by default.
-    + The service default settings may be updated.
 
 + **Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Microsoft Entra B2B collaboration, Microsoft Entra B2B direct connect, and tenant restrictions might be disabled across your organization, you can enable these features for a specific external organization.
 

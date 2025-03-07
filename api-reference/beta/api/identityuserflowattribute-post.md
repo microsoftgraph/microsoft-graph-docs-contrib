@@ -4,7 +4,8 @@ description: "Create a new custom identityUserFlowAttribute object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
+ms.date: 08/01/2024
 ---
 
 # Create identityUserFlowAttribute
@@ -51,7 +52,7 @@ In the request body, provide a JSON representation of [identityUserFlowAttribute
 |displayName|String|The display name of the user flow attribute.|
 |description|String|The description of the user flow attribute. It's shown to the user at the time of sign-up.|
 |userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property are `builtIn` or `custom`.|
-|dataType|String|The data type of the user flow attribute. This can't be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` : denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`boolean` : denotes that the dataType for the identityUserFlowAttribute is a boolean.</li><li>`int64` : denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul>|
+|dataType|String|The data type of the user flow attribute. This can't be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` : denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`Boolean` : denotes that the dataType for the identityUserFlowAttribute is a Boolean.</li><li>`int64` : denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul>|
 
 ## Response
 
@@ -61,7 +62,7 @@ If successful, this method returns a `201 Created` response code and [identityUs
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -118,7 +119,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 >>**Note:** The response object shown here might be shortened for readability.
 

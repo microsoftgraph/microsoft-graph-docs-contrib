@@ -3,8 +3,9 @@ title: "teamworkActivityTopic resource type"
 description: Represents the topic of an activity feed notification.
 author: eddie-lee-msft
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # teamworkActivityTopic resource type
@@ -24,7 +25,7 @@ Represents the topic of an activity feed notification.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkActivityTopic"

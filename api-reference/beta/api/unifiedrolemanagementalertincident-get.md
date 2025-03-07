@@ -3,8 +3,9 @@ title: "Get unifiedRoleManagementAlertIncident"
 description: "Read the properties and relationships of an unifiedRoleManagementAlertIncident object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get unifiedRoleManagementAlertIncident
@@ -60,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -3,8 +3,9 @@ title: "Get unifiedRoleEligibilityScheduleInstance"
 description: "Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get unifiedRoleEligibilityScheduleInstance

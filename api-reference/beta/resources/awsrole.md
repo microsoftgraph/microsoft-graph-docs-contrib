@@ -4,8 +4,9 @@ description: "Represents AWS role."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # awsRole resource type
@@ -21,8 +22,8 @@ Inherits from [awsIdentity](../resources/awsidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List roles](../api/awsassociatedidentities-list-roles.md)|[awsRole](../resources/awsrole.md)|Get a list of the [awsRole](../resources/awsrole.md) objects and their properties.|
-|[Get AWS Role](../api/awsrole-get.md)|[awsRole](../resources/awsrole.md)|Read the properties and relationships of an [awsRole](../resources/awsrole.md) object.|
+|[List](../api/awsassociatedidentities-list-roles.md)|[awsRole](../resources/awsrole.md)|Get a list of the [awsRole](../resources/awsrole.md) objects and their properties.|
+|[Get](../api/awsrole-get.md)|[awsRole](../resources/awsrole.md)|Read the properties and relationships of an [awsRole](../resources/awsrole.md) object.|
 
 ## Properties
 |Property|Type|Description|

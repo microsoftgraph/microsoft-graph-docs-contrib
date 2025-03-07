@@ -3,8 +3,9 @@ title: "Delete learningContent"
 description: "Delete the specified learningContent resource that represents the metadata of the specified provider's ingested content."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete learningContent

@@ -4,7 +4,8 @@ description: "Set the preferred availability and activity status for a user."
 author: "benjaminlee"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
+ms.date: 04/04/2024
 ---
 
 # presence: setUserPreferredPresence

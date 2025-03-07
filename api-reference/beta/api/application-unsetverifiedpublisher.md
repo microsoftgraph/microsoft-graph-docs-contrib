@@ -3,8 +3,9 @@ title: "application: unsetVerifiedPublisher"
 description: "Unset the verified publisher of an application."
 ms.localizationpriority: medium
 author: "xurobertMSFT"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # application: unsetVerifiedPublisher
@@ -50,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -99,7 +100,7 @@ POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

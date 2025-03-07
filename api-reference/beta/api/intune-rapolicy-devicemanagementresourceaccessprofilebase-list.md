@@ -2,9 +2,10 @@
 title: "List deviceManagementResourceAccessProfileBases"
 description: "List properties and relationships of the deviceManagementResourceAccessProfileBase objects."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List deviceManagementResourceAccessProfileBases
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 487
+Content-Length: 763
 
 {
   "value": [
@@ -76,6 +77,14 @@ Content-Length: 487
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
+      ],
+      "serverApplicabilityRules": [
+        {
+          "@odata.type": "microsoft.graph.osVersionApplicabilityRule",
+          "filterType": "include",
+          "minOSVersion": "Min OSVersion value",
+          "maxOSVersion": "Max OSVersion value"
+        }
       ]
     }
   ]

@@ -3,8 +3,9 @@ title: "Get system messages for Microsoft Teams"
 description: "Microsoft Teams generates system message events using Microsoft Graph APIs. Learn about supported GET operations, change notifications, and system message events."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Get system messages for Microsoft Teams

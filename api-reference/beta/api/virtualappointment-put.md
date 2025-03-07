@@ -3,8 +3,9 @@ title: "Create virtualAppointment"
 description: "Create a new virtualAppointment object."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create virtualAppointment (deprecated)
@@ -66,7 +67,7 @@ If successful, this method returns a `201 Created` response code and a [virtualA
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

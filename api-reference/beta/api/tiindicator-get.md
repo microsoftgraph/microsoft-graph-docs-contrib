@@ -3,8 +3,9 @@ title: "Get threat intelligence indicator"
 description: "Retrieve the properties and relationships of a tiindicator object."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Get threat intelligence indicator
@@ -40,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -54,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [tiIndicator](
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +103,7 @@ GET https://graph.microsoft.com/beta/security/tiIndicators/{id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > [!NOTE]
 > The response object shown here might be shortened for readability.

@@ -19,13 +19,13 @@ $params = @{
 				companyName = "Contoso"
 				expirationDate = "2015-07-03T13:04:00.000Z"
 				topPicks = @(
-					"Employees only"
-					"Add spouse or guest"
-					"Add family"
-				)
-			}
-		)
-	}
+				"Employees only"
+			"Add spouse or guest"
+		"Add family"
+	)
+}
+)
+}
 }
 
 Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params

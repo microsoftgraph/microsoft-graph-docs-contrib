@@ -10,21 +10,21 @@ $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule"
 	id = "Enablement_Admin_Assignment"
 	enabledRules = @(
-		"Justification"
-		"MultiFactorAuthentication"
-	)
-	target = @{
-		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
-		caller = "Admin"
-		operations = @(
-			"All"
-		)
-		level = "Assignment"
-		inheritableSettings = @(
-		)
-		enforcedSettings = @(
-		)
-	}
+	"Justification"
+"MultiFactorAuthentication"
+)
+target = @{
+"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
+caller = "Admin"
+operations = @(
+"All"
+)
+level = "Assignment"
+inheritableSettings = @(
+)
+enforcedSettings = @(
+)
+}
 }
 
 Update-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params

@@ -3,8 +3,9 @@ title: "Get bookingService"
 description: "Get the properties and relationships of a bookingService object in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 07/30/2024
 ---
 
 # Get bookingService
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [bookingService](../resources/bookingservice.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -91,7 +92,8 @@ Content-type: application/json
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
     "isAnonymousJoinEnabled": false,
-    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
+    "isCustomerAllowedToManageBooking": true,
+    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "customQuestions" : [
         {
             "questionId" : "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",

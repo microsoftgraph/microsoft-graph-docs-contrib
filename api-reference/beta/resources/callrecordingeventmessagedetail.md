@@ -3,8 +3,9 @@ title: "callRecordingEventMessageDetail resource type"
 description: "Represents the details of an event message about call recording."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # callRecordingEventMessageDetail resource type
@@ -30,8 +31,11 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |meetingOrganizer|[identitySet](../resources/identityset.md)|Organizer of the meeting.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.callRecordingEventMessageDetail",

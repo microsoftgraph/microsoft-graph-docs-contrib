@@ -3,7 +3,8 @@ title: "Manage sessions and persistence in Excel"
 description: "Learn how to use the Excel API in Microsoft Graph in the most efficient way possible. Learn about the three modes to call the APIs and the related request types."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
+ms.date: 11/07/2024
 ---
 
 # Manage sessions and persistence in Excel

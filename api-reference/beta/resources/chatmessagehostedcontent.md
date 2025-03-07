@@ -3,8 +3,9 @@ title: "chatMessageHostedContent resource type"
 description: "A content hosted in a chat message"
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # chatMessageHostedContent resource type
@@ -21,8 +22,8 @@ they're stored in SharePoint or OneDrive.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List chatMessageHostedContent](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) collection | Retrieve the list of **chatMessageHostedContent** for a message. |
-| [Get chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Read the properties and relationships of a **chatMessageHostedContent** object. |
+| [List hosted content](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) collection | Retrieve the list of **chatMessageHostedContent** for a message. |
+| [Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Read the properties and relationships of a **chatMessageHostedContent** object. |
 
 ## Properties
 
@@ -49,7 +50,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

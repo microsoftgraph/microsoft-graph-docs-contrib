@@ -3,8 +3,9 @@ title: "apiApplication resource type"
 description: "Specifies settings for a Web API application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 11/09/2024
 ---
 
 # apiApplication resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies settings for an application that implements a web API.
+Specifies settings for an [application](application.md) that implements a web API.
 
 ## Properties
 
@@ -25,9 +26,12 @@ Specifies settings for an application that implements a web API.
 |preAuthorizedApplications| [preAuthorizedApplication](preauthorizedapplication.md) collection | Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs. Users aren't required to consent to any preauthorized application (for the permissions specified). However, any other permissions not listed in preAuthorizedApplications (requested through incremental consent for example) will require user consent. |
 |requestedAccessTokenVersion| Int32 | Specifies the access token version expected by this resource. This changes the version and format of the JWT produced independent of the endpoint or client used to request the access token. <br><br> The endpoint used, v1.0 or v2.0, is chosen by the client and only impacts the version of id_tokens. Resources need to explicitly configure **requestedAccessTokenVersion** to indicate the supported access token format. <br><br> Possible values for **requestedAccessTokenVersion** are `1`, `2`, or `null`. If the value is `null`, this defaults to `1`, which corresponds to the v1.0 endpoint. <br><br> If **signInAudience** on the application is configured as `AzureADandPersonalMicrosoftAccount` or `PersonalMicrosoftAccount`, the value for this property must be `2`. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

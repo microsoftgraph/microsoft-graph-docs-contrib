@@ -3,8 +3,9 @@ title: "cloudPC: getCloudPcConnectivityHistory"
 description: "Get the connectivity history of a specific Cloud PC."
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # cloudPC: getCloudPcConnectivityHistory
@@ -53,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcConnec
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -90,10 +91,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetcloudpcconnectivityhistory-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetcloudpcconnectivityhistory-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudpcgetcloudpcconnectivityhistory-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -102,7 +99,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -119,6 +116,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "microsoft.graph.cloudPcConnectivityEvent",
+      "activityId": "00000000-0000-0000-0000-000000000000",
       "eventDateTime": "2022-03-23T18:40:00Z",
       "eventName": "DomainJoinCheck",
       "eventResult": "failure",

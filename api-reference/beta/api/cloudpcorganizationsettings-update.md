@@ -3,8 +3,9 @@ title: "Update cloudPcOrganizationSettings"
 description: "Update the properties of a cloudPcOrganizationSettings object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update cloudPcOrganizationSettings
@@ -58,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

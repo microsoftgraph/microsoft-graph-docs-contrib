@@ -3,8 +3,9 @@ title: "educationSubmission: return"
 description: "Make the grade and feedback associated with this submission available to the student."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 05/21/2024
 ---
 
 # educationSubmission: return
@@ -153,7 +154,7 @@ HTTP/1.1 200 OK
 
 ## Related content
 
-[States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition).
+[Status, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-status-transition).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

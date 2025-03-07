@@ -18,7 +18,7 @@ keywords1.add("Contoso");
 keywords1.add("install");
 keywords.setKeywords(keywords1);
 LinkedList<String> reservedKeywords = new LinkedList<String>();
-reservedKeywords.add("Contoso");
+reservedKeywords.add("Unique keyword");
 keywords.setReservedKeywords(reservedKeywords);
 keywords.setMatchSimilarKeywords(true);
 bookmark.setKeywords(keywords);

@@ -3,8 +3,9 @@ title: "Update plannerTaskDetails"
 description: "Update the properties of a **plannerTaskDetails** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update plannertaskdetails

@@ -3,8 +3,9 @@ title: "Get schedulingGroup"
 description: "Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by ID."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get schedulingGroup
@@ -32,7 +33,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to customize the response.
+This method doesn't support OData query parameters to customize the response.
 
 ## Request headers
 
@@ -131,7 +132,8 @@ Content-type: application/json
       "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
       "displayName": "John Doe"
     }
-  }
+  },
+  "code": "CashierCode"
 }
 ```
 

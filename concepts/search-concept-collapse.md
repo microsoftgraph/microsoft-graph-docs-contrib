@@ -3,7 +3,8 @@ title: "Use the Microsoft Search API to collapse search results"
 description: "Use the Microsoft Graph Search API collapseProperties property to collapse search results."
 author: "cxiang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Search API to collapse search results

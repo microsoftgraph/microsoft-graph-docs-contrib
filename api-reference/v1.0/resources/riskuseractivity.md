@@ -3,8 +3,9 @@ title: "riskUserActivity resource type"
 description: "riskUserActivity detections"
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 05/15/2024
 ---
 
 # riskUserActivity resource type

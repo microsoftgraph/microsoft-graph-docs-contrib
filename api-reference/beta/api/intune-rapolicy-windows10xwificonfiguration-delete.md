@@ -2,9 +2,10 @@
 title: "Delete windows10XWifiConfiguration"
 description: "Deletes a windows10XWifiConfiguration."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Delete windows10XWifiConfiguration

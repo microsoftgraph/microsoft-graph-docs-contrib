@@ -3,8 +3,9 @@ title: "Delete simulation"
 description: "Delete an attack simulation campaign for a tenant."
 author: stuartcl
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete simulation
@@ -51,7 +52,7 @@ If successful, this method returns a `204 No Content` response code in the respo
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,6 +87,10 @@ DELETE https://graph.microsoft.com/beta/security/attackSimulation/simulations/2f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-simulation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-simulation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

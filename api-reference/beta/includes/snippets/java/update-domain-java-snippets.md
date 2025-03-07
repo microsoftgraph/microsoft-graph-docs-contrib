@@ -13,6 +13,7 @@ domain.setIsDefault(true);
 LinkedList<String> supportedServices = new LinkedList<String>();
 supportedServices.add("Email");
 supportedServices.add("OfficeCommunicationsOnline");
+supportedServices.add("CustomUrlDomain");
 domain.setSupportedServices(supportedServices);
 Domain result = graphClient.domains().byDomainId("{domain-id}").patch(domain);
 

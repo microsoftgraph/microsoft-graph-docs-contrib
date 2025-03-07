@@ -3,8 +3,10 @@ title: "identityUserFlow resource type (deprecated)"
 description: "Identity user flows are built-in authentication journeys"
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.title: User flows in Azure AD B2C (deprecated)
+ms.date: 10/18/2024
 ---
 
 # identityUserFlow resource type
@@ -15,7 +17,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [identityuserflow-deprecate](../../includes/identityuserflow-deprecate.md)]
 
-User Flows enable you to define predefined, configurable policies for sign in, sign up, combined sign up and sign in, password reset and profile update.
+User Flows enable you to define predefined, configurable policies for sign-in, sign-up, combined sign-up and sign-in, password reset, and profile update.
 
 ## Methods
 
@@ -40,7 +42,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

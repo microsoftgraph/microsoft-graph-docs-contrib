@@ -3,8 +3,9 @@ title: "requestSignatureVerification resource type"
 description: "Specifies whether this application requires Microsoft Entra ID to verify the signed authentication requests."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # requestSignatureVerification resource type
@@ -23,7 +24,7 @@ Specifies whether this application requires Microsoft Entra ID to verify the sig
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.requestSignatureVerification"

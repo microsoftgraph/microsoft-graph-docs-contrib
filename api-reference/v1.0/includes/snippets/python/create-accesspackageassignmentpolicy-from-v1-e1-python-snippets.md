@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph.generated.models.allowed_target_scope import AllowedTargetScope
 from msgraph.generated.models.subject_set import SubjectSet
 from msgraph.generated.models.expiration_pattern import ExpirationPattern
+from msgraph.generated.models.expiration_pattern_type import ExpirationPatternType
 from msgraph.generated.models.access_package_assignment_requestor_settings import AccessPackageAssignmentRequestorSettings
 from msgraph.generated.models.access_package_assignment_approval_settings import AccessPackageAssignmentApprovalSettings
 from msgraph.generated.models.access_package_approval_stage import AccessPackageApprovalStage
 from msgraph.generated.models.access_package import AccessPackage
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageAssignmentPolicy(
 	display_name = "New Policy",
 	description = "policy for assignment",

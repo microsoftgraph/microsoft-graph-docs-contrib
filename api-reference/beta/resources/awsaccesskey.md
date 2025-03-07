@@ -4,8 +4,9 @@ description: "Represents AWS access keys."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # awsAccessKey resource type
@@ -36,7 +37,7 @@ None.
 |owner|[awsUser](../resources/awsuser.md)|Represents the owner of the access key.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

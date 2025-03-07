@@ -3,8 +3,9 @@ title: "Create cloudPcExternalPartnerSetting"
 description: "Create a new cloudPcExternalPartnerSetting object."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create cloudPcExternalPartnerSetting
@@ -58,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcE
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

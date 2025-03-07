@@ -4,8 +4,9 @@ description: "Get a list of the azureUser objects and their properties."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List users (in an Azure authorization system)
@@ -40,7 +41,7 @@ This method supports the `$select`, `$filter`, `$count`, `$top`, and `$skipToken
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

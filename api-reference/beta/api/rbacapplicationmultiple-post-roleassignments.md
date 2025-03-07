@@ -4,8 +4,9 @@ description: "Create a new unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # Create unifiedRoleAssignmentMultiple

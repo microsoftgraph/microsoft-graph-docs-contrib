@@ -3,8 +3,9 @@ title: "List enrichedAuditLogs"
 description: "Retrieve the enriched audit logs status for the configured workloads, providing access to comprehensive data that includes the original audit logs from partners such as SharePoint, Teams, and Exchange."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # List enrichedAuditLogs
@@ -52,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -85,6 +86,10 @@ GET https://graph.microsoft.com/beta/networkaccess/settings/enrichedAuditLogs
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-enrichedauditlogs-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-enrichedauditlogs-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

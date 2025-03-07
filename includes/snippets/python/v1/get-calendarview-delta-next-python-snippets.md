@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
-from msgraph.generated.users.item.calendarView.delta.delta_request_builder import DeltaRequestBuilder
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+from msgraph.generated.users.item.calendar_view.delta.delta_request_builder import DeltaRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = DeltaRequestBuilder.DeltaRequestBuilderGetQueryParameters(
 		deltatoken = "R0usmcMDNGg0J1E",
 )
 
-request_configuration = DeltaRequestBuilder.DeltaRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 request_configuration.headers.add("Prefer", "odata.maxpagesize=2")

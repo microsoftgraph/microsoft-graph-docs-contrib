@@ -3,8 +3,9 @@ title: Get printConnector
 description: Retrieve the properties and relationships of a connector object.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get printConnector

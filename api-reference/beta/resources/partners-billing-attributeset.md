@@ -3,8 +3,9 @@ title: "attributeSet enum type"
 description: "Represents attributes for exported data sets in the Microsoft Graph partner billing API."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: enumPageTypes
+ms.date: 03/06/2024
 ---
 
 # attributeSet enum type

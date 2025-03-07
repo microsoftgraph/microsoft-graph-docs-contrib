@@ -2,9 +2,10 @@
 title: "Get managedAppPolicyDeploymentSummary"
 description: "Read properties and relationships of the managedAppPolicyDeploymentSummary object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get managedAppPolicyDeploymentSummary
@@ -36,6 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/deploymentSummary
+GET /deviceAppManagement/windowsManagedAppProtections/{windowsManagedAppProtectionId}/deploymentSummary
 GET /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary
 GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/deploymentSummary
 ```

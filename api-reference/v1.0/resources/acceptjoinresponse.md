@@ -3,8 +3,9 @@ title: "acceptJoinResponse resource type"
 description: "Represents a response to accept a participant who tries to join the meeting."
 author: "yizhenww"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # acceptJoinResponse resource type
@@ -19,7 +20,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

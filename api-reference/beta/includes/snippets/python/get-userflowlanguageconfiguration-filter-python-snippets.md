@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.identity.b2cUserFlows.item.languages.languages_request_builder import LanguagesRequestBuilder
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identity.b2c_user_flows.item.languages.languages_request_builder import LanguagesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = LanguagesRequestBuilder.LanguagesRequestBuilderGetQueryParameters(
 		filter = "isEnabled eq true",
 )
 
-request_configuration = LanguagesRequestBuilder.LanguagesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

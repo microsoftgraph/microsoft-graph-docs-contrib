@@ -3,8 +3,9 @@ title: "Multi-tenant management enumeration values"
 description: "Microsoft Graph multi-tenant management enumeration values"
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: enumTypes
+ms.date: 03/06/2024
 ---
 
 # Multi-tenant management enumeration values

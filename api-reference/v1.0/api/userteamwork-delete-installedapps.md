@@ -4,7 +4,8 @@ description: "Uninstall an app from the personal scope of the specified user."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 04/04/2024
 ---
 
 # Uninstall app for user

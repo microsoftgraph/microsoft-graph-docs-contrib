@@ -3,8 +3,9 @@ title: governanceRoleAssignmentRequestStatus resource type
 description: Represents the status of the governanceRoleAssignmentRequest.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: governance
+ms.subservice: entra-id-governance
 author: rkarim-ms
+ms.date: 03/21/2024
 ---
 
 # governanceRoleAssignmentRequestStatus resource type
@@ -23,9 +24,12 @@ Represents the status of the [governanceRoleAssignmentRequest](../resources/gove
 | subStatus     | String                                          | The sub status of the role assignment request. The values can be `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, and `ProvisioningStarted`. |
 | statusDetails | [keyValue](../resources/keyvalue.md) collection | The details of the status of the role assignment request. It represents the evaluation results of different rules.                                                                                                                                                                                                                                                                              |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

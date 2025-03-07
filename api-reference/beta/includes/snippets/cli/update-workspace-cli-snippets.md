@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta places patch --place-id {place-id} --body '{\
   "@odata.type": "microsoft.graph.workspace",\
   "nickname": "Conf Room",\

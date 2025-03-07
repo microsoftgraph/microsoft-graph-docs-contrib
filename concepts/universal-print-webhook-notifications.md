@@ -3,8 +3,9 @@ title: "Subscribe to change notifications from cloud printing APIs"
 description: "Learn how to subscribe to change notifications for various print job events by using the Microsoft Graph API."
 author: "jahsu"
 ms.localizationpriority: high
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Subscribe to change notifications from cloud printing APIs using Microsoft Graph

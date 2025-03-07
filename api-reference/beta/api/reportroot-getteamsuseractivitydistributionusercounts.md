@@ -2,9 +2,10 @@
 title: "reportRoot: getTeamsUserActivityDistributionUserCounts"
 description: "Get the number of Microsoft Teams licensed users by activity type over the selected period. The activity types are number of teams chat messages, private chat messages, calls, and meetings."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getTeamsUserActivityDistributionUserCounts
@@ -81,7 +82,7 @@ Here's an example that outputs CSV.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -95,7 +96,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityDistributionUse
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -126,7 +127,7 @@ Here's an example that returns JSON.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -140,7 +141,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityDistributionUse
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

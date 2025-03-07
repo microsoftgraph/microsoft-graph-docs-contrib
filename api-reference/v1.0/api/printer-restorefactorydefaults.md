@@ -3,8 +3,9 @@ title: "printer: restoreFactoryDefaults"
 description: Reset a printer's default settings.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # printer: restoreFactoryDefaults

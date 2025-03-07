@@ -3,9 +3,10 @@ title: "objectIdentity resource type"
 description: "Represents an identity used to sign in to a user account."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.subservice: entra-users
 author: "yyuank"
 ms.reviewer: "iamut"
+ms.date: 04/17/2024
 ---
 
 # objectIdentity resource type
@@ -37,6 +38,9 @@ When filtering on the **identities** property for an **issuerAssignedId**:
 - Filtering for entries with a **signInType** of `userName` or `emailAddress` requires a valid **issuer** and **issuerAssignedId** but ignores the issuer value. This is by design.
 - Filtering for entries with a **signInType** of `userPrincipalName` isn't supported. You can filter on the **userPrincipalName** property on the user object instead.
 
+
+## Relationships
+None.
 
 ## JSON representation
 

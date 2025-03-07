@@ -3,8 +3,9 @@ author: ZeljkoTodorovic
 description: "Contains metadata about the source of the media (audio or video) drive item."
 title: mediaSource resource type
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: "resourcePageType"
+ms.date: 03/12/2024
 ---
 # mediaSource resource type
 

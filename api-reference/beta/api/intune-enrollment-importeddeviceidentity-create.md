@@ -2,9 +2,10 @@
 title: "Create importedDeviceIdentity"
 description: "Create a new importedDeviceIdentity object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create importedDeviceIdentity
@@ -52,7 +53,7 @@ The following table shows the properties that are required when you create the i
 |:---|:---|:---|
 |id|String|Id of the imported device identity|
 |importedDeviceIdentifier|String|Imported Device Identifier|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Type of Imported Device Identity. Possible values are: `unknown`, `imei`, `serialNumber`.|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Type of Imported Device Identity. Possible values are: `unknown`, `imei`, `serialNumber`, `manufacturerModelSerial`.|
 |lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description|
 |createdDateTime|DateTimeOffset|Created Date Time of the device|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device|

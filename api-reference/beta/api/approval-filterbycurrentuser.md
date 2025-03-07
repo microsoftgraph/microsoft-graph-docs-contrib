@@ -3,8 +3,9 @@ title: "approval: filterByCurrentUser"
 description: "Get the approval resources."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # approval: filterByCurrentUser

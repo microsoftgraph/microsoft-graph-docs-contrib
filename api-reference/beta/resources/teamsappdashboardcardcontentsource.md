@@ -3,8 +3,9 @@ title: "teamsAppDashboardCardContentSource resource type"
 description: "Represents a configuration for the source of the dashboard card content in a teamsApp."
 author: "ashish-goel"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # teamsAppDashboardCardContentSource resource type

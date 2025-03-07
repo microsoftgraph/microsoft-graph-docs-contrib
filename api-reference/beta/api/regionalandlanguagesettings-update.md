@@ -3,8 +3,9 @@ title: "Update regionalAndLanguageSettings"
 description: "Update the regional and language settings of a user."
 author: "jasonbro"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # Update regionalAndLanguageSettings

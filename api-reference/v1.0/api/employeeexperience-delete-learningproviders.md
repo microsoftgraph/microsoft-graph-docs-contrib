@@ -3,8 +3,9 @@ title: "Delete learningProvider"
 description: "Delete a learningProvider resource and remove its registration in Viva Learning for a tenant."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete learningProvider
@@ -48,7 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

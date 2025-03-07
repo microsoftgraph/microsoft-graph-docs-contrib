@@ -3,8 +3,9 @@ title: "channel: doesUserHaveAccess"
 description: "Determine whether a user has access to a shared channel."
 author: "devjha-ms"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # channel: doesUserHaveAccess
@@ -57,11 +58,11 @@ If successful, this function returns a `200 OK` response code and a Boolean in t
 
 ### Example 1: Check access for an internal user
 
-Here's an example of a request that checks whether an internal user has access to a shared channel.
+The following example shows a request that checks whether an internal user has access to a shared channel.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -99,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -118,11 +119,11 @@ Content-Type: application/json
 
 ### Example 2: Check access for an external user
 
-Here's an example of a request that uses the **tenantId** property to check whether an external user has access to a shared channel.
+The following example shows a request that uses the **tenantId** property to check whether an external user has access to a shared channel.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -160,7 +161,7 @@ GET https://graph.microsoft.com/v1.0/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -179,11 +180,11 @@ Content-Type: application/json
 
 ### Example 3: Check user access for a user using the user principal name
 
-Here's an example of a request that uses the **userPrincipalName** property to check whether an internal user has access to a shared channel.
+The following example shows a request that uses the **userPrincipalName** property to check whether an internal user has access to a shared channel.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -221,7 +222,7 @@ GET https://graph.microsoft.com/v1.0/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

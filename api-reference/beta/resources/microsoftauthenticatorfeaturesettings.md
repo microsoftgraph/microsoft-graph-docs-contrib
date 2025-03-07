@@ -4,8 +4,9 @@ description: "Represents Microsoft Authenticator settings such as number matchin
 author: "mjsantani"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # microsoftAuthenticatorFeatureSettings resource type
@@ -28,7 +29,7 @@ Represents Microsoft Authenticator settings such as number matching and location
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.microsoftAuthenticatorFeatureSettings"

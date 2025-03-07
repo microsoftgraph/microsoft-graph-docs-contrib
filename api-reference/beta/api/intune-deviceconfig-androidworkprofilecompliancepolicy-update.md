@@ -2,9 +2,10 @@
 title: "Update androidWorkProfileCompliancePolicy"
 description: "Update the properties of a androidWorkProfileCompliancePolicy object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update androidWorkProfileCompliancePolicy
@@ -65,6 +66,13 @@ The following table shows the properties that are required when you create the [
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign-in failures allowed before factory reset. Valid values 1 to 16|
+|workProfilePasswordExpirationInDays|Int32|Number of days before the work profile password expires. Valid values 1 to 365|
+|workProfilePasswordMinimumLength|Int32|Minimum length of work profile password. Valid values 4 to 16|
+|workProfileInactiveBeforeScreenLockInMinutes|Int32|Minutes of inactivity before the screen times out.|
+|workProfilePreviousPasswordBlockCount|Int32|Number of previous work profile passwords to block. Valid values 0 to 24|
+|workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|workProfileRequiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required work profile password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android 12+. Possible values are: `none`, `low`, `medium`, `high`.|
+|workProfileRequirePassword|Boolean|Password is required or not for work profile|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
@@ -95,7 +103,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1461
+Content-length: 1802
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCompliancePolicy",
@@ -113,6 +121,13 @@ Content-length: 1461
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "workProfilePasswordExpirationInDays": 3,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfileInactiveBeforeScreenLockInMinutes": 12,
+  "workProfilePreviousPasswordBlockCount": 5,
+  "workProfilePasswordRequiredType": "lowSecurityBiometric",
+  "workProfileRequiredPasswordComplexity": "low",
+  "workProfileRequirePassword": true,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -138,7 +153,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1633
+Content-Length: 1974
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCompliancePolicy",
@@ -159,6 +174,13 @@ Content-Length: 1633
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "workProfilePasswordExpirationInDays": 3,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfileInactiveBeforeScreenLockInMinutes": 12,
+  "workProfilePreviousPasswordBlockCount": 5,
+  "workProfilePasswordRequiredType": "lowSecurityBiometric",
+  "workProfileRequiredPasswordComplexity": "low",
+  "workProfileRequirePassword": true,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,

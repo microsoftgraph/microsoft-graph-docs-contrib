@@ -3,8 +3,9 @@ title: "Get todoTask"
 description: "Read the properties and relationships of a todoTask object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get todoTask
@@ -51,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [todoTask](../
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

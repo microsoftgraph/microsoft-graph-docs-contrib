@@ -5,8 +5,9 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
  
 # companyInformation resource type
@@ -21,8 +22,8 @@ Represents the information specified for the current company in Dynamics 365 Bus
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get companyInformation](../api/dynamics-companyinformation-get.md)|companyInformation|Gets a company information.|
-|[Patch companyInformation](../api/dynamics-companyinformation-update.md)|companyInformation|Updates a company information.|
+|[Get company information](../api/dynamics-companyinformation-get.md)|companyInformation|Gets a company information.|
+|[Update company information](../api/dynamics-companyinformation-update.md)|companyInformation|Updates a company information.|
 
 
 ## Properties

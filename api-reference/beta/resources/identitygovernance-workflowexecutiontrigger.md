@@ -3,8 +3,9 @@ title: "workflowExecutionTrigger resource type"
 description: "An abstract type that represents the workflow execution trigger when the workflow runs on schedule."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 10/21/2024
 ---
 
 # workflowExecutionTrigger resource type
@@ -13,8 +14,10 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type that represents the workflow execution trigger when the [workflow runs on schedule](../resources/identitygovernance-triggerandscopebasedconditions.md). It's inherited by the following derived types:
+The workflowExecutionTrigger type represents the workflow execution trigger when the [workflow runs on schedule](../resources/identitygovernance-triggerandscopebasedconditions.md). Inherited by the following derived types:
 + [timeBasedAttributeTrigger](../resources/identitygovernance-timebasedattributetrigger.md)
++ [attributeChangeTrigger](../resources/identitygovernance-attributechangetrigger.md)
++ [membershipChangeTrigger](../resources/identitygovernance-membershipchangetrigger.md)
 
 ## Properties
 
@@ -26,7 +29,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionTrigger"

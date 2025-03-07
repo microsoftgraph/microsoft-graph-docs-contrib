@@ -4,7 +4,8 @@ description: "Represents policy violation on a chat message. Policy violations a
 author: "RamjotSingh"
 doc_type: resourcePageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 04/03/2024
 ---
 # chatMessagePolicyViolation resource type
 
@@ -22,7 +23,7 @@ Represents a policy violation on a chat message. Policy violations are typically
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

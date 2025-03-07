@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta domains federation-configuration create --domain-id {domain-id} --body '{\
   "@odata.type": "#microsoft.graph.internalDomainFederation",\
   "displayName": "Contoso",\
@@ -18,7 +18,8 @@ mgc-beta domains federation-configuration create --domain-id {domain-id} --body 
   "promptLoginBehavior": "nativeSupport",\
   "isSignedAuthenticationRequestRequired": true,\
   "nextSigningCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",\
-  "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"\
+  "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp",\
+  "passwordResetUri": "https://sts.contoso.com/adfs/passwordReset"\
 }\
 '
 

@@ -10,15 +10,15 @@ $params = @{
 	requests = @(
 		@{
 			entityTypes = @(
-				"chatMessage"
-			)
-			query = @{
-				queryString = "test"
-			}
-			from = 0
-			size = 25
+			"chatMessage"
+		)
+		query = @{
+			queryString = "test"
 		}
-	)
+		from = 0
+		size = 25
+	}
+)
 }
 
 Invoke-MgBetaQuerySearch -BodyParameter $params

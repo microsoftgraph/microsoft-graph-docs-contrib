@@ -3,8 +3,9 @@ title: "reports: userReport"
 description: "Get a report of all users who had network traffic that Global Secure Access captured during a specified time period."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reports: userReport

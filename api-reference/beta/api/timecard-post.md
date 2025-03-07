@@ -3,8 +3,9 @@ title: "Create timeCard"
 description: "Create a timeCard instance in the schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create timeCard
@@ -19,15 +20,13 @@ Create a [timeCard](../resources/timecard.md) instance in a [schedule](../resour
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All* |
+<!-- { "blockType": "permissions", "name": "timecard_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/timecard-post-permissions.md)]
 
->\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
+> [!IMPORTANT]
+> When you use the Schedule.ReadWrite.All application permission, you must include the `MS-APP-ACTS-AS` header in the request.
 
 ## HTTP request
 
@@ -72,7 +71,7 @@ Content-type: application/json
   "onBehalfOfUserId":"a3601044-a1b5-438e-b742-f78d01d68a67",
   "clockInEvent":{
      "dateTime":"2019-03-18T00:00:00.000Z",
-     "atApprovedLocation":true,
+     "isAtApprovedLocation":true,
      "notes": {
         "content": "Started late due to traffic in CA 237",
         "contentType": "text"
@@ -91,7 +90,7 @@ Content-type: application/json
         },
         "start":{
            "dateTime":"2019-03-18T02:00:00.000Z",
-           "atApprovedLocation":true,
+           "isAtApprovedLocation":true,
            "notes": {
                 "content": "Reduced break to make up for lost time",
                 "contentType": "text"
@@ -174,6 +173,7 @@ Content-type: application/json
     "clockInEvent": {
       "dateTime": "2019-03-18T00:00:00.000Z",
       "atApprovedLocation": true,
+      "isAtApprovedLocation": true,
       "notes": {
         "content": "Started late due to traffic in CA 237",
         "contentType": "text"
@@ -190,6 +190,7 @@ Content-type: application/json
         "start": {
           "dateTime": "2019-03-18T02:00:00.000Z",
           "atApprovedLocation": true,
+          "isAtApprovedLocation": true,
           "notes": {
             "content": "Reduced break to make up for lost time",
             "contentType": "text"
@@ -202,6 +203,7 @@ Content-type: application/json
   "clockInEvent": {
     "dateTime": "2019-03-18T00:00:00.000Z",
     "atApprovedLocation": true,
+    "isAtApprovedLocation": true,
     "notes": {
       "content": "Started late due to traffic in CA 237",
       "contentType": "text"
@@ -222,6 +224,7 @@ Content-type: application/json
       "start": {
         "dateTime": "2019-03-18T02:00:00.000Z",
         "atApprovedLocation": true,
+        "isAtApprovedLocation": true,
         "notes": {
           "content": "Reduced break to make up for lost time",
           "contentType": "text"

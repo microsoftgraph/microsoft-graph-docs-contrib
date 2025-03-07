@@ -3,8 +3,9 @@ title: "contentApplicabilitySettings resource type"
 description: "Represents settings for governing whether content is applicable to a device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
+ms.date: 08/31/2024
 ---
 
 # contentApplicabilitySettings resource type
@@ -25,7 +26,7 @@ Represents settings for governing whether content is applicable to a device.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.contentApplicabilitySettings"

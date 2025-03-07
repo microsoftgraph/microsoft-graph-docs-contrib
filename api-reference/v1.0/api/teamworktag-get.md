@@ -3,8 +3,9 @@ title: "Get teamworkTag"
 description: "Read the properties and relationships of a teamworkTag object."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get teamworkTag
@@ -49,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkTag](
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

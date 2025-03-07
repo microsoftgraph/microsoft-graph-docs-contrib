@@ -12,10 +12,7 @@ const client = Client.init(options);
 
 const categoryTemplate = {
   '@odata.type': '#microsoft.graph.security.categoryTemplate',
-  displayName: 'String',
-  createdBy: {
-    '@odata.type': 'microsoft.graph.identitySet'
-  }
+  displayName: 'Accounts Payable',
 };
 
 await client.api('/security/labels/categories')

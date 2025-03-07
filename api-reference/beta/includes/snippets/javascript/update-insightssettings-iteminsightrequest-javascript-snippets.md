@@ -14,7 +14,7 @@ const insightsSettings = {
   disabledForGroup: 'edbfe4fb-ec70-4300-928f-dbb2ae86c981'
 };
 
-await client.api('/organization/{organizationId}/settings/itemInsights')
+await client.api('/admin/people/itemInsights')
 	.version('beta')
 	.update(insightsSettings);
 

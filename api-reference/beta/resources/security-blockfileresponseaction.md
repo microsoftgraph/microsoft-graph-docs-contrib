@@ -3,8 +3,9 @@ title: "blockFileResponseAction resource type"
 description: "Describes a response action that blocks a file from running on devices controlled by Microsoft Defender for Endpoint."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # blockFileResponseAction resource type

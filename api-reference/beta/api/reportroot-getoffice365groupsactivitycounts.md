@@ -2,9 +2,10 @@
 title: "reportRoot: getOffice365GroupsActivityCounts"
 description: "Get the number of group activities across group workloads."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getOffice365GroupsActivityCounts
@@ -100,7 +101,7 @@ Here's an example that outputs CSV.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -115,7 +116,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityCounts(pe
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -146,7 +147,7 @@ Here's an example that returns JSON.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -161,7 +162,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityCounts(pe
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -3,8 +3,9 @@ title: "userFeedback resource type"
 description: "The userFeedback type."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # userFeedback resource type
@@ -23,7 +24,7 @@ Represents the feedback provided by the user an endpoint about the quality of th
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

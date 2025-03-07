@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -13,15 +16,13 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphreports.NewExportPostRequestBody()
 invoiceId := "G016907411"
 requestBody.SetInvoiceId(&invoiceId) 
 attributeSet := graphmodels.FULL_ATTRIBUTESET 
 requestBody.SetAttributeSet(&attributeSet) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 microsoftGraphPartnersBillingExport, err := graphClient.Reports().Partners().Billing().Reconciliation().Billed().MicrosoftGraphPartnersBillingExport().Post(context.Background(), requestBody, nil)
 
 

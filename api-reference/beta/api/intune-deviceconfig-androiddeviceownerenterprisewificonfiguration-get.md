@@ -2,9 +2,10 @@
 title: "Get androidDeviceOwnerEnterpriseWiFiConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerEnterpriseWiFiConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get androidDeviceOwnerEnterpriseWiFiConfiguration
@@ -67,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2255
+Content-Length: 2303
 
 {
   "value": {
@@ -115,6 +116,7 @@ Content-Length: 2255
     "proxyManualPort": 15,
     "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
     "proxyExclusionList": "Proxy Exclusion List value",
+    "macAddressRandomizationMode": "hardware",
     "eapType": "eapTtls",
     "trustedServerCertificateNames": [
       "Trusted Server Certificate Names value"

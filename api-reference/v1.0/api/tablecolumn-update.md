@@ -3,8 +3,9 @@ title: "Update tablecolumn"
 description: "Update the properties of tablecolumn object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update tablecolumn
@@ -42,14 +43,14 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error return the error string.|
+|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a Boolean. Cells that contain an error return the error string.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +102,7 @@ Content-type: application/json
 > If you want to update multiple fields of a column, make **values** a string array in the request. For example: `"values": [["a"], [1], [2], [3]]`.
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

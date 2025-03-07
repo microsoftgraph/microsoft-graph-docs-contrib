@@ -3,8 +3,9 @@ title: "Create message"
 description: "Create a draft of a new message in either JSON or MIME format."
 ms.localizationpriority: high
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Create message
@@ -51,7 +52,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Length | number | 0. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
 
@@ -71,7 +72,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ## Examples
 ### Example 1: Create a new message draft using JSON format
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -135,7 +136,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -271,7 +272,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
 #### Response
-Here is an example of the response. Note: Internet message headers are not returned by default in a POST response. The response object shown here may also be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: Internet message headers are not returned by default in a POST response. The response object shown here may also be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
@@ -387,7 +388,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.message",

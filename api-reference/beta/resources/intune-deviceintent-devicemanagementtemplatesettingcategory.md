@@ -2,9 +2,10 @@
 title: "deviceManagementTemplateSettingCategory resource type"
 description: "Entity representing a template setting category"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagementTemplateSettingCategory resource type

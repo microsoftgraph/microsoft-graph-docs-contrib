@@ -8,7 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-OnPremisesAgentGroup result = graphClient.onPremisesPublishingProfiles().byOnPremisesPublishingProfileId("{onPremisesPublishingProfile-id}").agentGroups().post(null);
+OnPremisesAgentGroup onPremisesAgentGroup = new OnPremisesAgentGroup();
+onPremisesAgentGroup.setDisplayName("New Group");
+OnPremisesAgentGroup result = graphClient.onPremisesPublishingProfiles().byOnPremisesPublishingProfileId("{onPremisesPublishingProfile-id}").agentGroups().post(onPremisesAgentGroup);
 
 
 ```

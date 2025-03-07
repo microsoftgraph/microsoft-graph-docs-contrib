@@ -3,8 +3,9 @@ title: "Delete cloudPcOnPremisesConnection"
 description: "Delete a specific cloudPcOnPremisesConnection object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete cloudPcOnPremisesConnection

@@ -2,9 +2,10 @@
 title: "aospDeviceOwnerCompliancePolicy resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the AndroidDeviceOwnerAOSPCompliancePolicy resource."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # aospDeviceOwnerCompliancePolicy resource type

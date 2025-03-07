@@ -3,8 +3,9 @@ title: "reminder resource type"
 description: "A reminder for an event in a user calendar."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "iamgirishck"
+ms.date: 03/21/2024
 ---
 
 # reminder resource type
@@ -27,9 +28,12 @@ A reminder for an [event](event.md) in a user [calendar](calendar.md).
 |eventWebLink|String|The URL to open the event in Outlook on the web.<br/><br/>The event opens in the browser if you're logged in to your mailbox via Outlook on the web. You're prompted to log in if you aren't already logged in with the browser.<br/><br/>This URL can't be accessed from within an iFrame.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the reminder is set to occur.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

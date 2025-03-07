@@ -4,7 +4,8 @@ description: "Describes the date, time, and time zone of a point in time."
 ms.localizationpriority: high
 doc_type: resourcePageType
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 08/08/2024
 ---
 
 # dateTimeTimeZone resource type
@@ -22,7 +23,7 @@ Describes the date, time, and time zone of a point in time.
 In general, the **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones), as well as the other [time zones supported by the calendar API](#additional-time-zones).
 
 - Methods such as [create](../api/user-post-events.md) or [update](../api/event-update.md) might not support all  **dateTimeTimeZone** time zones.
-- If you use **dateTimeTimeZone** with the [virtual event](../resources/virtualevent.md) APIs, the only supported format for the **timeZone** property is [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones).
+- If you use **dateTimeTimeZone** with the [virtual event](../resources/virtualevent.md) APIs, the only supported format for the **timeZone** property is time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).
 
 ### Additional time zones
 
@@ -120,7 +121,7 @@ Asia/Damascus
 
 Africa/Johannesburg
 
-Europe/Kyiv (Kiev)
+Europe/Kyiv
 
 Europe/Istanbul
 
@@ -223,6 +224,10 @@ Pacific/Tongatapu
 Pacific/Apia
 
 Pacific/Kiritimati
+
+## Relationships
+
+None.
 
 ## JSON representation
 

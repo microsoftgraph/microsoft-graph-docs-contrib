@@ -3,8 +3,9 @@ title: "Get educationAssignment"
 description: "Get the properties and relationships of an assignment."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 08/27/2024
 ---
 
 # Get educationAssignment
@@ -33,10 +34,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /education/classes/{id}/assignments/{id}
 ```
 ## Optional query parameters
-This method supports the  `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$orderby`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+You can use `$orderby` with the following properties of the [educationAssignment](../resources/educationassignment.md) resource: **assignDateTime**, **assignedDateTime**, **closeDateTime**, **createdDateTime**, **displayName**, **dueDateTime**, **lastModifiedDateTime**, **moduleUrl**, and **status**.
 
-The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*` which includes all the previous options.
+The following `$expand` options are available for this method: `categories`, `resources`, `rubric`, `submissions`, `gradingScheme`, `gradingCategory`, and `*`. `*` specifies all the previous options.
 
 ## Request headers
 | Header       | Value |
@@ -288,7 +290,6 @@ The following example shows how to get an `inactive` assignment without the opti
 #### Request
 
 The following example shows a request.
-
 
 # [HTTP](#tab/http)
 <!-- {

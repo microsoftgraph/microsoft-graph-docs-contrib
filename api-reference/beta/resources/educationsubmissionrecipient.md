@@ -3,8 +3,9 @@ title: "educationSubmissionRecipient resource type"
 description: "Abstract class that represents the different sets of users to whom a submission can be assigned. Possible values include individuals or groups. This is used within the **submission.recipient** property."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationSubmissionRecipient resource type
@@ -17,7 +18,16 @@ Abstract class that represents the different sets of users to whom a submission 
 
 
 ## Properties
+
 None.
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

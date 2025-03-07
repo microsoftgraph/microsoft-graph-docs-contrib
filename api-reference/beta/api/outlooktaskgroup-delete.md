@@ -3,8 +3,9 @@ title: "Delete outlookTaskGroup"
 description: "Delete the specified outlookTaskGroup."
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/22/2024
 ---
 
 # Delete outlookTaskGroup (deprecated)
@@ -46,7 +47,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -55,7 +56,7 @@ Here is an example of the request.
   "sampleKeys": ["AAMkADIyAAAhrbe-AAA="]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=
+DELETE https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=
 ```
 
 # [C#](#tab/csharp)
@@ -93,7 +94,7 @@ DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AA
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

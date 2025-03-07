@@ -2,9 +2,10 @@
 title: "securityBaselineStateSummary resource type"
 description: "The security baseline compliance state summary for the security baseline of the account."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # securityBaselineStateSummary resource type

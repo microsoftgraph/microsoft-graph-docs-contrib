@@ -3,8 +3,9 @@ title: "ediscoveryCustodian: updateIndex"
 description: "Trigger an indexOperation to make a custodian and associated sources searchable."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # ediscoveryCustodian: updateIndex
@@ -47,7 +48,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

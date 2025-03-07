@@ -3,8 +3,9 @@ title: "rbacApplication: roleSchedules"
 description: "Retrieve both roleAssignmentSchedules and roleEligibilitySchedules."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # rbacApplication: roleSchedules

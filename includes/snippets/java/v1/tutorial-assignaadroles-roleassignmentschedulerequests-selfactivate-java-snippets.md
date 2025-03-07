@@ -15,7 +15,7 @@ unifiedRoleAssignmentScheduleRequest.setRoleDefinitionId("fe930be7-5e62-47db-91a
 unifiedRoleAssignmentScheduleRequest.setDirectoryScopeId("/");
 unifiedRoleAssignmentScheduleRequest.setJustification("Need to invalidate all app refresh tokens for Contoso users.");
 RequestSchedule scheduleInfo = new RequestSchedule();
-OffsetDateTime startDateTime = OffsetDateTime.parse("2021-09-04T15:13:00.000Z");
+OffsetDateTime startDateTime = OffsetDateTime.parse("2024-03-25T15:13:00.000Z");
 scheduleInfo.setStartDateTime(startDateTime);
 ExpirationPattern expiration = new ExpirationPattern();
 expiration.setType(ExpirationPatternType.AfterDuration);

@@ -3,8 +3,9 @@ title: List printers
 description: Retrieve the list of printers that are registered in the tenant.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List printers

@@ -3,8 +3,9 @@ title: "Remove educationClass"
 description: "Delete a class from a school."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
 # Remove educationClass

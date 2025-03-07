@@ -3,8 +3,9 @@ title: "unifiedRoleManagementPolicyEnablementRule resource type"
 description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the rules to enable the assignment, for example, enable MFA, justification on assignments or ticketing information."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # unifiedRoleManagementPolicyEnablementRule resource type
@@ -29,7 +30,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

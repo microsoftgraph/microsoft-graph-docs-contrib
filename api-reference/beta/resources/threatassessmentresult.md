@@ -3,8 +3,9 @@ title: "threatAssessmentResult resource type"
 description: "Represents a threat assessment result item."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 07/25/2024
 ---
 
 # threatAssessmentResult resource type
@@ -24,9 +25,13 @@ Represents a threat assessment result item.
 |message|String|The result message for each threat assessment.|
 |resultType|threatAssessmentResultType|The threat assessment result type. Possible values are: `checkPolicy` (only for mail assessment), `rescan`.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

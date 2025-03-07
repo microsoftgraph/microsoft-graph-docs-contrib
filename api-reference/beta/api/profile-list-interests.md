@@ -3,8 +3,9 @@ title: "List interests"
 description: "Retrieve a list of personInterest objects."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # List interests

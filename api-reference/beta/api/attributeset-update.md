@@ -3,8 +3,9 @@ title: "Update attributeSet"
 description: "Update the properties of an attributeSet object."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update attributeSet

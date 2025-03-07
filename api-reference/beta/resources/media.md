@@ -4,7 +4,8 @@ description: "The media resource contains metadata about the media (audio or vid
 title: media resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
+ms.date: 03/12/2024
 ---
 # media resource type
 
@@ -20,6 +21,9 @@ It is available on the media property of [driveItem][item-resource] resources.
 | **isTranscriptionShown** | Boolean               | If a file has a transcript, this setting controls if the closed captions / transcription for the media file should be shown to people during viewing. Read-Write.                                                    |
 | **mediaSource**          | [mediaSource](mediaSource.md)         | Information about the source of media. Read-only.                                                             | 
 
+
+## Relationships
+None.
 
 ## JSON representation
 

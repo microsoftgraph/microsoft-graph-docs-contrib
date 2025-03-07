@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\InternalDomainFederation;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationProtocol;
+use Microsoft\Graph\Beta\Generated\Models\PromptLoginBehavior;
+use Microsoft\Graph\Beta\Generated\Models\FederatedIdpMfaBehavior;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -23,6 +28,7 @@ $requestBody->setPromptLoginBehavior(new PromptLoginBehavior('nativeSupport'));
 $requestBody->setIsSignedAuthenticationRequestRequired(true);
 $requestBody->setNextSigningCertificate('MIIE3jCCAsagAwIBAgIQQcyDaZz3MI');
 $requestBody->setFederatedIdpMfaBehavior(new FederatedIdpMfaBehavior('rejectMfaByFederatedIdp'));
+$requestBody->setPasswordResetUri('https://sts.contoso.com/adfs/passwordReset');
 
 $result = $graphServiceClient->domains()->byDomainId('domain-id')->federationConfiguration()->post($requestBody)->wait();
 

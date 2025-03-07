@@ -3,9 +3,10 @@ title: "governanceRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Privileged Identity Management."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
+ms.date: 05/23/2024
 ---
 
 # governanceRoleAssignmentRequest resource type
@@ -24,7 +25,7 @@ Represents the request for role assignment operations in Privileged Identity Man
 
 | Method          |Return Type    |Description|
 |:------------|:--------|:--------|
-|[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Get a role assignment request specified by ID.  
+|[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Get a role assignment request specified by ID.
 |[List](../api/governanceroleassignmentrequest-list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)  collection|Get role assignment requests on a resource.|
 |[Create](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Create a request to manage the lifecycle of existing or new role assignment.|
 |[Cancel](../api/governanceroleassignmentrequest-cancel.md)|  |Cancel a pending role assignment request.|
@@ -68,7 +69,7 @@ Represents the request for role assignment operations in Privileged Identity Man
 
 ### JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

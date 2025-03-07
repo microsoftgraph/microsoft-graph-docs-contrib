@@ -3,8 +3,9 @@ title: "Delete appRoleAssignedTo"
 description: "Delete an appRoleAssignment granted for a service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 04/19/2024
 ---
 
 # Delete appRoleAssignedTo
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Deletes an [appRoleAssignment](../resources/approleassignment.md) that a user, group, or client service principal has been granted for a resource service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -55,7 +56,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request to delete an app role assignment from the resource service principal.
+The following example shows a request to delete an app role assignment from the resource service principal.
 
 
 # [HTTP](#tab/http)
@@ -106,7 +107,7 @@ In this example, `{resource-SP-id}` is the id of the resource service principal,
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

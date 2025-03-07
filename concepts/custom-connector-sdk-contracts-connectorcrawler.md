@@ -4,8 +4,9 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Learn about the contracts connector crawler API and models in the Microsoft Graph connectors SDK."
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph connectors SDK contracts connector crawler API and models

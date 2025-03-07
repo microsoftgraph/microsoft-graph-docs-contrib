@@ -3,8 +3,9 @@ title: "Get x509CertificateAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a x509CertificateAuthenticationMethodConfiguration object."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get x509CertificateAuthenticationMethodConfiguration

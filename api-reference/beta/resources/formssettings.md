@@ -3,8 +3,9 @@ title: "formsSettings resource type"
 description: "Company-wide settings for Microsoft Forms"
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # formsSettings resource type
@@ -30,7 +31,7 @@ Company-wide settings for Microsoft Forms.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.formsSettings"

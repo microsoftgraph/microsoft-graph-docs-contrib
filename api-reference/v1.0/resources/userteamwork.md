@@ -4,7 +4,8 @@ description: "Represents a container for the range of Microsoft Teams functional
 author: "akjo"
 doc_type: resourcePageType
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 01/30/2025
 ---
 
 # userTeamwork resource type
@@ -13,11 +14,19 @@ Namespace: microsoft.graph
 
 Represents a container for the range of Microsoft Teams functionalities that are available per user in the tenant.
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get](../api/userteamwork-get.md)|[userTeamwork](../resources/userteamwork.md)|Get userTeamwork settings for the specified [user](../resources/user.md), which includes the Microsoft Teams region and the locale chosen by the user.|
+
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|id|string| The unique identifier for the **userTeamwork** object. |
+|id| String|The unique identifier for the **userTeamwork** object.|
+|locale|String |Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting. A user's locale is represented by their preferred language and country or region. For example, `en-us`. The language component follows two-letter codes as defined in [ISO 639-1](https://www.iso.org/iso-639-language-code), and the country component follows two-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso-3166-country-codes.html).|
+|region|string|Represents the region of the organization or the user. For users with multigeo licenses, the property contains the user's region (if available). For users without multigeo licenses, the property contains the organization's region.<br><br>The **region** value can be any region supported by the Teams payload. The possible values are: `Americas`, `Europe and MiddleEast`, `Asia Pacific`, `UAE`, `Australia`, `Brazil`, `Canada`, `Switzerland`, `Germany`, `France`, `India`, `Japan`, `South Korea`, `Norway`, `Singapore`, `United Kingdom`, `South Africa`, `Sweden`, `Qatar`, `Poland`, `Italy`, `Israel`, `Spain`, `Mexico`, `USGov Community Cloud`, `USGov Community Cloud High`, `USGov Department of Defense`, and `China`.|
 
 ## Relationships
 
@@ -38,7 +47,9 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "locale" : "String",
+  "region" : "String"
 }
 ```
 
@@ -55,3 +66,6 @@ The following JSON representation shows the resource type.
 }
 -->
 
+## Related content
+
+- [teamwork resource type](teamwork.md)

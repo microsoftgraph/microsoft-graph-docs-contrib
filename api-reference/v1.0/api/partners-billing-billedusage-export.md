@@ -3,8 +3,9 @@ title: "billedUsage: export"
 description: "Export the billed Azure usage data."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # billedUsage: export
@@ -21,12 +22,8 @@ Export the billed Azure usage data.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "partners-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/partners-permissions.md)]
+<!-- { "blockType": "permissions", "name": "partners_billing_billedusage_export" } -->
+[!INCLUDE [permissions-table](../includes/permissions/partners-billing-billedusage-export-permissions.md)]
 
 ## HTTP request
 
@@ -42,7 +39,7 @@ POST /reports/partners/billing/usage/billed/export
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -126,6 +123,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 202 OK
+HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/v1.0/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
 ```

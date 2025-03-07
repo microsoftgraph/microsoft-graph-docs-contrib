@@ -5,18 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-
-
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 includePersonalNotebooks := false
-getRecentNotebooks, err := graphClient.Me().Onenote().Notebooks().GetRecentNotebooksWithIncludePersonalNotebooks(&includePersonalNotebooks).Get(context.Background(), nil)
+getRecentNotebooks, err := graphClient.Me().Onenote().Notebooks().GetRecentNotebooksWithIncludePersonalNotebooks(&includePersonalNotebooks).GetAsGetRecentNotebooksWithIncludePersonalNotebooksGetResponse(context.Background(), nil)
 
 
 ```

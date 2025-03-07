@@ -3,8 +3,9 @@ title: "Delete plannerRosterMember"
 description: "Delete a plannerRosterMember object."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Delete plannerRosterMember

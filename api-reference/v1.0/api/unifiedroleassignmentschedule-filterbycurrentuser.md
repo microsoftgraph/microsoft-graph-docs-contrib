@@ -3,8 +3,9 @@ title: "unifiedRoleAssignmentSchedule: filterByCurrentUser"
 description: "Retrieve the schedules for active role assignment operations for which the signed-in user is the principal."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
 # unifiedRoleAssignmentSchedule: filterByCurrentUser
@@ -34,7 +35,6 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pa
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

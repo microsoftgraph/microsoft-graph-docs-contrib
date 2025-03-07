@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.internal_domain_federation import InternalDomainFederation
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.internal_domain_federation import InternalDomainFederation
+from msgraph_beta.generated.models.authentication_protocol import AuthenticationProtocol
+from msgraph_beta.generated.models.prompt_login_behavior import PromptLoginBehavior
+from msgraph_beta.generated.models.federated_idp_mfa_behavior import FederatedIdpMfaBehavior
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = InternalDomainFederation(
 	odata_type = "#microsoft.graph.internalDomainFederation",
 	display_name = "Contoso",
@@ -23,6 +25,7 @@ request_body = InternalDomainFederation(
 	is_signed_authentication_request_required = True,
 	next_signing_certificate = "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
 	federated_idp_mfa_behavior = FederatedIdpMfaBehavior.RejectMfaByFederatedIdp,
+	password_reset_uri = "https://sts.contoso.com/adfs/passwordReset",
 )
 
 result = await graph_client.domains.by_domain_id('domain-id').federation_configuration.post(request_body)

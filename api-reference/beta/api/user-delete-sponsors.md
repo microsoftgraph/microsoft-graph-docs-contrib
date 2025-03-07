@@ -3,8 +3,9 @@ title: "Remove sponsor"
 description: "Remove a user's sponsor."
 author: "sadia353"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # Remove sponsor
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "user_delete_sponsors" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-delete-sponsors-permissions.md)]
+
+[!INCLUDE [rbac-user-sponsors-apis-write](../includes/rbac-for-apis/rbac-user-sponsors-apis-write.md)]
 
 ## HTTP request
 
@@ -53,7 +56,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

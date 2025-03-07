@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,13 +15,10 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewTenantAppManagementPolicy()
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
-applicationRestrictions := graphmodels.NewAppManagementConfiguration()
+applicationRestrictions := graphmodels.NewAppManagementApplicationConfiguration()
 
 
 passwordCredentialConfiguration := graphmodels.NewPasswordCredentialConfiguration()
@@ -92,8 +92,19 @@ keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 	keyCredentialConfiguration1,
 }
 applicationRestrictions.SetKeyCredentials(keyCredentials)
+identifierUris := graphmodels.NewIdentifierUriConfiguration()
+nonDefaultUriAddition := graphmodels.NewIdentifierUriRestriction()
+restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2024-01-01T10:37:00Z")
+nonDefaultUriAddition.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+excludeAppsReceivingV2Tokens := true
+nonDefaultUriAddition.SetExcludeAppsReceivingV2Tokens(&excludeAppsReceivingV2Tokens) 
+excludeSaml := true
+nonDefaultUriAddition.SetExcludeSaml(&excludeSaml) 
+identifierUris.SetNonDefaultUriAddition(nonDefaultUriAddition)
+applicationRestrictions.SetIdentifierUris(identifierUris)
 requestBody.SetApplicationRestrictions(applicationRestrictions)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 defaultAppManagementPolicy, err := graphClient.Policies().DefaultAppManagementPolicy().Patch(context.Background(), requestBody, nil)
 
 

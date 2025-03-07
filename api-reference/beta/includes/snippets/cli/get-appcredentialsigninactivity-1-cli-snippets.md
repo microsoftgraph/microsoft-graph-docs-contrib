@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta reports app-credential-sign-in-activities get --app-credential-sign-in-activity-id {appCredentialSignInActivity-id}
 
 ```

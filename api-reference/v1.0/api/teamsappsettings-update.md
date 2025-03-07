@@ -3,8 +3,9 @@ title: "Update teamsAppSettings"
 description: "Update the tenant-wide teamsAppSettings for all Teams apps in the tenant."
 author: "subray2014"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update teamsAppSettings
@@ -178,7 +179,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

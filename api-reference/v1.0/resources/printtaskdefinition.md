@@ -3,8 +3,9 @@ title: printTaskDefinition resource type
 description: Represents a task that can be triggered when various events occur within Universal Print.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printTaskDefinition resource type
@@ -42,7 +43,7 @@ This resource supports:
 |tasks|[printTask](printtask.md) collection|A list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. Read-only.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

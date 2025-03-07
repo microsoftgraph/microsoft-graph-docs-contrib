@@ -3,8 +3,9 @@ title: "skypeUserConversationMember resource type"
 description: "Represents a Skype user in a chat"
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # skypeUserConversationMember resource type
@@ -32,7 +33,7 @@ Inherits from [conversationMember](../resources/conversationmember.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

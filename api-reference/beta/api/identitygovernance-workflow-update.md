@@ -3,8 +3,9 @@ title: "Update workflow"
 description: "Update the properties of a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update workflow
@@ -51,7 +52,7 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 |:---|:---|:---|
 |description|String|Describes the purpose of the workflow for administrative use.|
 |displayName|String|A unique string that identifies the workflow.|
-|isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not.|
+|isEnabled|Boolean|A Boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
 
 > [!NOTE]
@@ -65,7 +66,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

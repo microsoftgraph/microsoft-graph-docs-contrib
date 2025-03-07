@@ -4,7 +4,7 @@ description: "Restore a previous version of a ListItem to be the current version
 ms.date: 09/10/2017
 title: Restore a previous version of a SharePoint list item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Restore a previous version of a ListItem
@@ -44,7 +44,7 @@ This example restores a version of a listItem identified by `{item-id}` and `{ve
 <!-- { "blockType": "request", "name": "restore-item-version-listItem", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
+POST https://graph.microsoft.com/beta/sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
 ## Response

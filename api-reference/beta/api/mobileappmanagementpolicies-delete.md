@@ -3,8 +3,9 @@ title: "Delete mobileAppManagementPolicy"
 description: "Delete a mobile app management policy."
 author: "michaelrm97"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/31/2024
 ---
 
 # Delete mobileAppManagementPolicy
@@ -18,7 +19,7 @@ Delete a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) ob
 > [!NOTE]
 > This operation is only supported when the policy is no longer valid; that is, when the **isValid** property is false, which indicates that the service principal associated with the application for this policy has been deleted.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -26,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "mobileappmanagementpolicies_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/mobileappmanagementpolicies-delete-permissions.md)]
+
+[!INCLUDE [rbac-mam-mdm-policies-apis-write](../includes/rbac-for-apis/rbac-mam-mdm-policies-apis-write.md)]
 
 ## HTTP request
 

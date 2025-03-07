@@ -3,8 +3,9 @@ title: "Get schemaExtension"
 description: "Get the properties of the specified schemaExtension definition."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # Get schemaExtension

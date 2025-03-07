@@ -3,8 +3,9 @@ title: "swapShiftsChangeRequest: decline"
 description: "Decline a swap shift request."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 09/18/2024
 ---
 
 # swapShiftsChangeRequest: decline
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "swapshiftschangerequest_decline" } -->
 [!INCLUDE [permissions-table](../includes/permissions/swapshiftschangerequest-decline-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -58,7 +59,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

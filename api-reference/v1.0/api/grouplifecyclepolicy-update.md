@@ -4,8 +4,9 @@ description: "Update the properties of a groupLifecyclePolicygroupLifecyclePolic
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update groupLifecyclePolicy

@@ -3,8 +3,9 @@ title: "Delete shift"
 description: "Delete a shift from the schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete shift

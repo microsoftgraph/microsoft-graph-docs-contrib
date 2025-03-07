@@ -3,8 +3,9 @@ title: "cloudPcRestorePointSetting resource type"
 description: "Represents specific settings of point-in-time restore."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # cloudPcRestorePointSetting resource type

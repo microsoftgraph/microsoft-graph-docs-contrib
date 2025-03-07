@@ -4,8 +4,9 @@ description: "Read the properties and relationships of a voiceAuthenticationMeth
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get voiceAuthenticationMethodConfiguration
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [voiceAuthenti
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

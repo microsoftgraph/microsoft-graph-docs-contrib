@@ -3,8 +3,9 @@ title: "List assignmentCategories"
 description: "Retrieve a list of category objects."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List assignmentCategories

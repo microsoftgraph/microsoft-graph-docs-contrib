@@ -10,6 +10,9 @@ $params = @{
 	applyHoldToSource = $false
 	dataSource = @{
 		"@odata.type" = "microsoft.graph.ediscovery.siteSource"
+		site = @{
+			webUrl = "https://contoso.sharepoint.com/sites/SecretSite"
+		}
 	}
 }
 

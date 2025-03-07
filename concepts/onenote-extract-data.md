@@ -3,7 +3,8 @@ title: "Use OneNote API div tags to extract data from captures"
 description: "Use the OneNote API to extract business card, recipe, and product data. Include a div that specifies the source content, extraction method, and fallback behavior in your request."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
+ms.date: 11/07/2024
 ---
 
 # Use OneNote API div tags to extract data from captures 

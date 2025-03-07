@@ -4,7 +4,8 @@ description: "Validate that the credentials are valid in the tenant."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
+ms.date: 08/02/2024
 ---
 
 # synchronizationJob: validateCredentials
@@ -34,7 +35,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

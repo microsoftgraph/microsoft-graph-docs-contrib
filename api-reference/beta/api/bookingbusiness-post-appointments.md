@@ -3,8 +3,9 @@ title: "Create bookingAppointment"
 description: "Create a new bookingAppointment for the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 04/19/2024
 ---
 
 # Create bookingAppointment
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -48,7 +49,7 @@ In the request body, supply a JSON representation of [bookingAppointment](../res
 If the maximum number of customers (**maximumAttedeesCount**) allowed in the [service](../resources/bookingservice.md) is greater than 1:
 
 - Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md) operation.
-- Pass valid customer IDs when you create or update the appointment. If the customer ID is not valid, that customer won't be included in the appointment object.
+- Pass valid customer IDs when you create or update the appointment. If the customer ID is invalid, that customer isn't included in the appointment object.
 
 ## Response
 
@@ -58,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [bookingA
 
 ### Request
 
-The following example shows a request. This appointment does not involve booking specific staff members.
+The following example shows a request. This appointment doesn't involve booking specific staff members.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,6 +116,7 @@ Content-type: application/json
     "invoiceId":"1001",
     "invoiceStatus@odata.type":"#microsoft.graph.bookingInvoiceStatus",
     "invoiceStatus":"open",
+    "isCustomerAllowedToManageBooking": true,
     "invoiceUrl":"theInvoiceUrl",
     "isLocationOnline": true,
     "optOutOfCustomerEmail": false,
@@ -304,6 +306,7 @@ Content-type: application/json
     "invoiceId": "1001",
     "invoiceStatus": "open",
     "invoiceUrl": "theInvoiceUrl",
+    "isCustomerAllowedToManageBooking": true,
     "customerLocation": {
         "displayName": "Customer",
         "locationEmailAddress": null,

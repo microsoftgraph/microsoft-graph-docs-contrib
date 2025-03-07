@@ -3,8 +3,9 @@ title: "automaticRepliesSetting resource type"
 description: "Configuration settings to automatically notify the sender of an incoming email with a message from the "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
+ms.subservice: mail
 author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # automaticRepliesSetting resource type
@@ -28,9 +29,12 @@ respond to emails.
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time that automatic replies are set to begin, if **Status** is set to `Scheduled`.|
 |status|automaticRepliesStatus|Configurations status for automatic replies. Possible values are: `disabled`, `alwaysEnabled`, `scheduled`.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -2,9 +2,10 @@
 author: spgraph-docs-team
 title: List subsites for a site
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Get a collection of subsites defined for a SharePoint site."
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # List subsites for a site
 
@@ -49,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

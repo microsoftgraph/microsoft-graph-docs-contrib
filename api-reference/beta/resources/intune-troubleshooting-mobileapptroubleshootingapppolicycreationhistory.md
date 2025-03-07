@@ -2,9 +2,10 @@
 title: "mobileAppTroubleshootingAppPolicyCreationHistory resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # mobileAppTroubleshootingAppPolicyCreationHistory resource type

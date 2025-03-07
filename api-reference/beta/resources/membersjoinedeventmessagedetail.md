@@ -3,8 +3,9 @@ title: "membersJoinedEventMessageDetail resource type"
 description: "Represents the details of an event message about members joined."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # membersJoinedEventMessageDetail resource type
@@ -25,8 +26,11 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of members who joined the chat.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.membersJoinedEventMessageDetail",

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewDeviceManagementExportJob()
 reportName := "Report Name value"
@@ -40,6 +40,7 @@ requestBody.SetRequestDateTime(&requestDateTime)
 expirationDateTime , err := time.Parse(time.RFC3339, "2016-12-31T23:57:57.2481234-08:00")
 requestBody.SetExpirationDateTime(&expirationDateTime) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 exportJobs, err := graphClient.DeviceManagement().Reports().ExportJobs().Post(context.Background(), requestBody, nil)
 
 

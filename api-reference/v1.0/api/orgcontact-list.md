@@ -3,8 +3,9 @@ title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List orgContacts
@@ -20,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "orgcontact_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-list-permissions.md)]
+
+[!INCLUDE [rbac-org-contacts-apis-read-all](../includes/rbac-for-apis/rbac-org-contacts-apis-read-all.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

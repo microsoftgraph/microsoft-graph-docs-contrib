@@ -3,8 +3,9 @@ title: "cloudPcGalleryImage resource type"
 description: "Represents the gallery image resource of the current organization that can be used to provision a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 09/27/2024
 ---
 
 # cloudPcGalleryImage resource type
@@ -19,8 +20,8 @@ Represents the gallery image resource of the current organization that can be us
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List galleryImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) objects.|
-|[Get cloudPcGalleryImage](../api/cloudpcgalleryimage-get.md)|[cloudPcDeviceImage](../resources/cloudpcgalleryimage.md)|Read the properties and relationships of a [cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) object.|
+|[List](../api/virtualendpoint-list-galleryimages.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.|
+|[Get](../api/cloudpcgalleryimage-get.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|Read the properties and relationships of a specific [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) object.|
 
 ## Properties
 
@@ -31,6 +32,7 @@ Represents the gallery image resource of the current organization that can be us
 |expirationDate|Date|The date when the image is no longer available. Users are unable to provision new Cloud PCs if the current time is later than **expirationDate**. The value is usually **endDate** plus six months. For example, if the **startDate** is `2025-10-14`, the **expirationDate** is usually `2026-04-14`. Read-only.|
 |id|String|The unique identifier (ID) of the gallery image resource on Cloud PC. The ID format is {publisherName_offerName_skuName}. For example, `MicrosoftWindowsDesktop_windows-ent-cpc_win11-22h2-ent-cpc-m365`. You can find the **publisherName**, **offerName**, and **skuName** in the Azure Marketplace. Read-only.|
 |offerName|String|The offer name of this gallery image that is passed to ARM to retrieve the image resource. Read-only.|
+|osVersionNumber|String|The operating system version of this gallery image. For example, `10.0.22000.296`. Read-only.|
 |publisherName|String|The publisher name of this gallery image that is passed to ARM to retrieve the image resource. Read-only.|
 |sizeInGB|Int32|Indicates the size of this image in gigabytes. For example, `64`. Read-only.|
 |skuName|String|The SKU name of this image that is passed to ARM to retrieve the image resource. Read-only.|
@@ -70,14 +72,15 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
+  "@odata.type": "#microsoft.graph.cloudPcGalleryImage",
   "displayName": "String",
   "endDate": "String (Date)",
-  "expiredDate": "String (Date)",
+  "expirationDate": "String (Date)",
   "id": "String (identifier)",
   "offer": "String",
   "offerDisplayName": "String",
   "offerName": "String",
+  "osVersionNumber": "String",
   "publisher": "String",
   "publisherName": "String",
   "recommendedSku": "String",

@@ -3,8 +3,9 @@ title: "Create outlookTask"
 description: "Create an Outlook task in the specified task folder."
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create outlookTask (deprecated)
@@ -52,7 +53,7 @@ If successful, this method returns `201 Created` response code and [outlookTask]
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

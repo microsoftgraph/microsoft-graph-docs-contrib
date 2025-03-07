@@ -3,8 +3,9 @@ title: "Get timeCard"
 description: "Get the properties and relationships of a timeCard object by ID."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get timeCard
@@ -19,15 +20,13 @@ Get the properties and relationships of a [timeCard](../resources/timecard.md) o
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.Read.All, Schedule.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+<!-- { "blockType": "permissions", "name": "timecard_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/timecard-get-permissions.md)]
 
->\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
+> [!IMPORTANT]
+> When you use the Schedule.Read.All and Schedule.ReadWrite.All application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
 
 ## HTTP request
 
@@ -38,7 +37,7 @@ GET /teams/{teamId}/schedule/timeCards/{timeCardId}
 ```
 
 ## Optional query parameters
-This method does not support [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -139,6 +138,7 @@ Content-type: application/json
     "clockInEvent": {
         "dateTime": "2021-05-27T22:58:41.327Z",
         "atApprovedLocation": null,
+        "isAtApprovedLocation": null,
         "notes": {
             "contentType": "text",
             "content": "clock in notes"
@@ -147,6 +147,7 @@ Content-type: application/json
     "clockOutEvent": {
         "dateTime": "2021-05-27T23:01:46.205Z",
         "atApprovedLocation": null,
+        "isAtApprovedLocation": null,
         "notes": {
             "contentType": "text",
             "content": "clock out smaple notes"
@@ -159,6 +160,7 @@ Content-type: application/json
             "start": {
                 "dateTime": "2021-05-27T22:59:59.328Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "start break smaple notes"
@@ -167,6 +169,7 @@ Content-type: application/json
             "end": {
                 "dateTime": "2021-05-27T23:01:10.205Z",
                 "atApprovedLocation": null,
+                "isAtApprovedLocation": null,
                 "notes": {
                     "contentType": "text",
                     "content": "end break smaple notes"
@@ -178,6 +181,7 @@ Content-type: application/json
         "clockInEvent": {
             "dateTime": "2021-05-27T22:58:41.327Z",
             "atApprovedLocation": null,
+            "isAtApprovedLocation": null,
             "notes": {
                 "contentType": "text",
                 "content": "clock in notes"
@@ -186,6 +190,7 @@ Content-type: application/json
         "clockOutEvent": {
             "dateTime": "2021-05-27T23:01:46.205Z",
             "atApprovedLocation": null,
+            "isAtApprovedLocation": null,
             "notes": {
                 "contentType": "text",
                 "content": "clock out smaple notes"
@@ -198,6 +203,7 @@ Content-type: application/json
                 "start": {
                     "dateTime": "2021-05-27T22:59:59.328Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "start break smaple notes"
@@ -206,6 +212,7 @@ Content-type: application/json
                 "end": {
                     "dateTime": "2021-05-27T23:01:10.205Z",
                     "atApprovedLocation": null,
+                    "isAtApprovedLocation": null,
                     "notes": {
                         "contentType": "text",
                         "content": "end break smaple notes"

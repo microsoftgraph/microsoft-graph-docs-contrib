@@ -3,8 +3,9 @@ title: "Get learningContent"
 description: "Read the properties and relationships of a learningContent object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
+ms.date: 03/14/2024
 ---
 
 # Get learningContent
@@ -129,6 +130,7 @@ Content-type: application/json
     "numberOfPages": 10,
     "duration": "PT20M",
     "format": "Book",
+    "level": "Beginner",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [
@@ -224,6 +226,7 @@ Content-type: application/json
     "numberOfPages": 10,
     "duration": "PT20M",
     "format": "Book",
+    "level": "Beginner",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [

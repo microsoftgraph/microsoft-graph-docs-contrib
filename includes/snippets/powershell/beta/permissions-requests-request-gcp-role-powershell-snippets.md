@@ -16,6 +16,9 @@ $params = @{
 		actionInfo = @{
 			"@odata.type" = "microsoft.graph.gcpRolePermissionsDefinitionAction"
 			roles = @(
+				@{
+					id = "roles/dialogflow.aamAdmin"
+				}
 			)
 		}
 		identityInfo = @{

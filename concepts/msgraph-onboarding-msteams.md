@@ -3,8 +3,9 @@ title: "Set up Microsoft Teams to work with tenant users"
 description: "Follow the steps in this article to set up Microsoft Teams to work with the education API in Microsoft Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Set up Microsoft Teams to work with tenant users
@@ -35,6 +36,7 @@ To create a team:
 
 You have successfully created your team.
 
-## Next steps
+## Next step
 
-[Use Graph Explorer](/graph/msgraph-onboarding-graphexplorer) to test Microsoft Graph calls.
+> [!div class="nextstepaction"]
+> [Use Graph Explorer to test Microsoft Graph API calls](/graph/msgraph-onboarding-graphexplorer)

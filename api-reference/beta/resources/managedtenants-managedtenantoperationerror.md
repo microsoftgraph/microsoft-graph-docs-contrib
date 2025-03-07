@@ -3,8 +3,9 @@ title: "managedTenantOperationError resource type"
 description: "An abstract type that represents an error for a managed tenant operation."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # managedTenantOperationError resource type
@@ -25,7 +26,7 @@ An abstract type that represents an error for a managed tenant operation.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.managedTenantOperationError"

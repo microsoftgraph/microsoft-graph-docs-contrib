@@ -3,8 +3,9 @@ title: "Update unifiedRoleManagementAlert"
 description: "Dismiss a unifiedRoleManagementAlert object by setting the isActive property to false."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update unifiedRoleManagementAlert
@@ -54,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request to dismiss an alert by specifying the alert id and setting the isActive to false.
+The following example shows a request to dismiss an alert by specifying the alert id and setting the isActive to false.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

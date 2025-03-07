@@ -3,8 +3,9 @@ title: "Create remoteDesktopSecurityConfiguration"
 description: "Create a new remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create remoteDesktopSecurityConfiguration

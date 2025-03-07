@@ -3,8 +3,9 @@ title: "servicePrincipal: removeKey"
 description: "Remove a key credential from a servicePrincipal"
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # servicePrincipal: removeKey

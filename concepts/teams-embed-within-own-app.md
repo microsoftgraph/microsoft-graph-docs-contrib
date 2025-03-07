@@ -3,7 +3,8 @@ title: "Embed Microsoft Teams in your app"
 description: "Learn how to embed the Microsoft Teams experience within your own application."
 author: "erichui-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
+ms.date: 11/07/2024
 ---
 
 # Embed Microsoft Teams in your app

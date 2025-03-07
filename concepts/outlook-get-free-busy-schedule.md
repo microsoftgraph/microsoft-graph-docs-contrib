@@ -3,7 +3,8 @@ title: "Get free/busy schedule of Outlook calendar users and resources"
 description: "Use the getSchedule action to get the availability information of one or more users, distribution lists, or resources for a specific period of time."
 author: "tariq-sharif"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # Get free/busy schedule of Outlook calendar users and resources
@@ -120,11 +121,10 @@ Content-type: application/json
 
 Apart from the free/busy schedule and working hours of Alex, **getSchedule** also returns **availabilityView**, which is a merged view of Alex' availability for that day. The merged view is a string that consists of time slots covering that day, with each time slot indicating Alex' availability using the following convention:
 
-- `0`= free
+- `0`= free or working elsewhere
 - `1`= tentative
 - `2`= busy
 - `3`= out of office
-- `4`= working elsewhere.
 
 By default, the length of each time slot is 30 minutes. This example uses the **availabilityViewInterval** property to customize the time slot to be 15 minutes.
 

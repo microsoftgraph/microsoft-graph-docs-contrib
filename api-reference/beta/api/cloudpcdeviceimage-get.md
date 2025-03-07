@@ -3,8 +3,9 @@ title: "Get cloudPcDeviceImage"
 description: "Read the properties and relationships of a cloudPcDeviceImage object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 08/29/2024
 ---
 
 # Get cloudPcDeviceImage
@@ -57,7 +58,6 @@ If successful, this method returns a `200 OK` response code and a [cloudPcDevice
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcDevice
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/eda7ed64-7705-4079-9d08-c2bd883f4fff
 ```
 
 # [C#](#tab/csharp)
@@ -130,6 +130,7 @@ Content-Type: application/json
     "lastModifiedDateTime": "2023-11-03T07:03:44.97Z",
     "status": "ready",
     "statusDetails": null,
-    "errorCode": null
+    "errorCode": null,
+    "osVersionNumber": "10.0.22631.3593"
 }
 ```

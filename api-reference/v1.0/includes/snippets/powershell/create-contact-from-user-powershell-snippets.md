@@ -16,8 +16,8 @@ $params = @{
 		}
 	)
 	businessPhones = @(
-		"+1 732 555 0102"
-	)
+	"+1 732 555 0102"
+)
 }
 
 # A UPN can also be used as -UserId.
