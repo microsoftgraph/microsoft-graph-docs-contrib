@@ -17,12 +17,19 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## March 2025: New and generally available
+
+### Teamwork and communications | Messaging
+
+Use the **firstChannelName** property on a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
+
 ## March 2025: New in preview only
 
 ### Device and app management | Cloud PC
 
 - Use the **healthCheckStatus** property on [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) to indicate the health status of the Cloud PC snapshot.
 - Use the **ignoreUnhealthySnapshots** property on [cloudPcBulkRestore](/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta&preserve-view=true) to specify whether to ignore snapshots of unhealthy Cloud PCs.
+- Removed the `GET /deviceManagement/virtualEndpoint/snapshots/{cloudPcSnapshotId}` method from the [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) resource.
 
 ## February 2025: New and generally available 
 
@@ -55,6 +62,7 @@ Enabled the `$filter` query parameter for the [list](/graph/api/listitem-list) o
 - [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
 - [Create](/graph/api/chat-post#example-3-create-a-one-on-one-chat-with-installed-apps) a one-on-one chat with installed apps.
 - [Create](/graph/api/chat-post#example-4-create-a-one-on-one-chat-with-rsc-granted-apps) a one-on-one chat with RSC-granted apps.
+- [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
 
 ## February 2025: New in preview only 
 
