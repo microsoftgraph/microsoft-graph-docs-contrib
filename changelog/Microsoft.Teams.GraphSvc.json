@@ -2565,7 +2565,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "content",
           "ChangeType": "Change",
-          "Description": "Added new `<codeblock><code></code></codeblock>` tag support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource to represent code block in the message body in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta). This change shows up in the actual **content** property of the message body when you [get a chat message in a channel or chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta).",
+          "Description": "Added new `<codeblock><code></code></codeblock>` tag support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource to represent a code block in the message body in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta). This change shows up in the actual **content** property of the message body when you [get a chat message in a channel or chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta).",
           "Target": "itemBody"
         }
       ],

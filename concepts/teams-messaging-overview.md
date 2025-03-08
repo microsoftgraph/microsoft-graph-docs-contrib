@@ -304,6 +304,7 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
 ```
 
 **Example: A message with a custom emoji**
+
 ```json
 {
     "body": {
@@ -315,7 +316,7 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
 
 **Example: A message with a code block**
 
->**Note:** Highlighted code block is not supported when message with code block is sent using graph api.
+>**Note:** Highlighted code blocks aren't supported when a message with a code block is sent using the Microsoft Graph API.
 
 ```json
 {
@@ -326,7 +327,7 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
 }
 ```
 
-**Example: A message with a code block that has language specific highlight**
+**Example: A message with a code block that has language-specific highlighting**
 
 ```json
 {
