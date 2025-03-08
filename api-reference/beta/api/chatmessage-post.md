@@ -716,7 +716,7 @@ Content-type: application/json
         "user": {
             "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Test User",
+            "displayName": "Adele Vance",
             "userIdentityType": "aadUser"
         }
     },
@@ -1717,7 +1717,7 @@ Content-type: application/json
         "device": null,
         "user": {
             "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Test user",
+            "displayName": "Adele Vance",
             "userIdentityType": "aadUser"
         }
     },
@@ -1844,7 +1844,7 @@ Content-type: application/json
         "device": null,
         "user": {
             "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Test User",
+            "displayName": "Adele Vance",
             "userIdentityType": "aadUser"
         }
     },
@@ -1867,7 +1867,7 @@ The following example shows how to send a message with a code block.
 The following example shows a request.
 
 > [!NOTE]
-> The highlighted code isn't supported for code block when sending a chat message with code block.
+> The highlighted code isn't supported for code blocks when sending a chat message with a code block.
 
 <!-- {
   "blockType": "request",
@@ -1928,7 +1928,7 @@ Content-type: application/json
     "user": {
       "@odata.type": "#microsoft.graph.teamworkUserIdentity",
       "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-      "displayName": "test user",
+      "displayName": "Adele Vance",
       "userIdentityType": "aadUser",
       "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
     }
