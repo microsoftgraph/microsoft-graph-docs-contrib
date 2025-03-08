@@ -602,7 +602,7 @@ The following example shows a request.
   "name": "create-online-meeting-with-isendtoendencryptionenabled"
 }-->
 ```msgraph-interactive
-POST  https://graph.microsoft.com/beta/me/onlineMeetings
+POST https://graph.microsoft.com/beta/me/onlineMeetings
 Content-Type: application/json 
 
 {
@@ -624,7 +624,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
