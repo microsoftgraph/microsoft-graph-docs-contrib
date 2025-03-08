@@ -1860,14 +1860,15 @@ Content-type: application/json
 
 ### Example 14: Send a message with a code block
 
+The following example shows how to send a message with a code block.
+
 #### Request
 
 The following example shows a request.
 
 > [!NOTE]
-> - The highlighted code is not supported for code block when sending a chat message with code block.
+> The highlighted code isn't supported for code block when sending a chat message with code block.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_14",
@@ -1879,10 +1880,10 @@ POST https://graph.microsoft.com/beta/chats/19:7fb82b685f9c457296a0ab6a1d98b4c1@
 Content-type: application/json
 
 {
-    "body": {
-        "contentType": "html",
-         "content": "<codeblock><code>Hello world</code></codeblock>"
-    }
+  "body": {
+    "contentType": "html",
+    "content": "<codeblock><code>Hello world</code></codeblock>"
+  }
 }
 ```
 
@@ -1901,50 +1902,50 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetateamsgraphdev/$metadata#chatMessage/$entity",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
-    "id": "1741124357685",
-    "replyToId": null,
-    "etag": "1741124357685",
-    "messageType": "message",
-    "createdDateTime": "2025-03-04T21:39:17.685Z",
-    "lastModifiedDateTime": "2025-03-04T21:39:17.685Z",
-    "lastEditedDateTime": null,
-    "deletedDateTime": null,
-    "subject": null,
-    "summary": null,
-    "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
-    "importance": "normal",
-    "locale": "en-us",
-    "webUrl": null,
-    "channelIdentity": null,
-    "onBehalfOf": null,
-    "policyViolation": null,
-    "eventDetail": null,
-    "from": {
-        "application": null,
-        "device": null,
-        "user": {
-            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "test user",
-            "userIdentityType": "aadUser",
-            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
-        }
-    },
-    "body": {
-        "contentType": "html",
-        "content": "\n<codeblock class=\"\"><code>Hello world</code></codeblock>"
-    },
-    "attachments": [],
-    "mentions": [],
-    "reactions": []
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#chatMessage/$entity",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+  "id": "1741124357685",
+  "replyToId": null,
+  "etag": "1741124357685",
+  "messageType": "message",
+  "createdDateTime": "2025-03-04T21:39:17.685Z",
+  "lastModifiedDateTime": "2025-03-04T21:39:17.685Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "channelIdentity": null,
+  "onBehalfOf": null,
+  "policyViolation": null,
+  "eventDetail": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+      "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+      "displayName": "test user",
+      "userIdentityType": "aadUser",
+      "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+    }
+  },
+  "body": {
+    "contentType": "html",
+    "content": "\n<codeblock class=\"\"><code>Hello world</code></codeblock>"
+  },
+  "attachments": [],
+  "mentions": [],
+  "reactions": []
 }
 ```
 
 ## Related content
 
-* [Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)
+[Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
