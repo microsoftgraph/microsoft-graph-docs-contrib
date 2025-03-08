@@ -62,7 +62,7 @@ If successful, this returns a `200 OK` response code and a [teamsAsyncOperation]
 
 ### Request
 
-The following example shows how to get the operation on a chat.
+The following example shows a request that gets the operation on a chat.
 
 # [HTTP](#tab/http)
 <!-- {
