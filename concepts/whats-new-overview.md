@@ -17,6 +17,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## March 2025: New in preview only
+
+### Device and app management | Cloud PC
+
+- Use the **healthCheckStatus** property on [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) to indicate the health status of the Cloud PC snapshot.
+- Use the **ignoreUnhealthySnapshots** property on [cloudPcBulkRestore](/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta&preserve-view=true) to specify whether to ignore snapshots of unhealthy Cloud PCs.
+
 ## February 2025: New and generally available 
 
 ### Device and app management | Cloud printing
@@ -89,7 +96,6 @@ Added [teamsMessageEvidence](/graph/api/resources/security-teamsmessageevidence?
 
 Enabled the application permission `Sites.Archive.All` for the [site: archive](/graph/api/site-archive?view=graph-rest-beta&preserve-view=true) and [site: unarchive](/graph/api/site-unarchive?view=graph-rest-beta&preserve-view=true) methods.
 Enabled the `$filter` query parameter for the [list](/graph/api/listitem-list?view=graph-rest-beta&preserve-view=true) operation of the [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) resource. For more information, see [Get filtered SharePoint list items with specific fields](/graph/api/listitem-list?view=graph-rest-beta&preserve-view=true#example-2-get-filtered-list-items-with-specific-fields).
-
 
 ### Tasks and plans
 
