@@ -833,7 +833,7 @@ GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@t
 
 The following example shows the response. The message body contains two attachments. The value of the **contentType** property of the Loop component is `application/vnd.microsoft.card.fluidEmbedCard`, and the value of the **contentType** property of the placeholder card is `application/vnd.microsoft.card.codesnippet`. 
 
-> **Note**  - The **contentUrl** and **content** properties for a placeholder card don't have values.
+> **Note:** The **contentUrl** and **content** properties for a placeholder card don't have values.
 
 <!-- {
   "blockType": "response",
@@ -925,7 +925,7 @@ GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@t
 
 #### Response
 
-The following example shows the response. The message body contains two attachments. The value of the **contentType** property of the Loop component is `application/vnd.microsoft.card.fluidEmbedCard`, and the value of the **contentType** property of the placeholder card is `application/vnd.microsoft.card.codesnippet`. 
+The following example shows the response. The message body contains two attachments: the **contentType** property of the Loop component is `application/vnd.microsoft.card.fluidEmbedCard`, and the **contentType** property of the placeholder card is `application/vnd.microsoft.card.codesnippet`.
 
 > **Note:** The **contentUrl** and **content** properties for a placeholder card don't have values.
 
@@ -966,7 +966,7 @@ Content-type: application/json
     "user": {
       "@odata.type": "#microsoft.graph.teamworkUserIdentity",
       "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-      "displayName": "test user",
+      "displayName": "Adele Vance",
       "userIdentityType": "aadUser",
       "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
     }
