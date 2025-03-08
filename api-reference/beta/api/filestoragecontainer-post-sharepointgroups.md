@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [sharePointGroup](../resources/sharepointgroup.md) object. The sharePointGroup will only exist in the scope of the fileStorageContainer it was created in. To add permissions for the sharePointGroup on driveItems will require the use of the [driveItem permissions api](./driveitem-post-permissions.md). Upto 10000 sharePointGroups can be created per fileStorageContainer. See [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups) for more information on service limits. 
+Create a new [sharePointGroup](../resources/sharepointgroup.md) object. The **sharePointGroup** only exists within the scope of the [fileStorageContainer](../resources/filestoragecontainer.md) in which it was created. To add permissions for the **sharePointGroup** on [driveItem](../resources/driveitem.md) objects, you must use the [Create permission on a driveItem](./driveitem-post-permissions.md) API. Up to 10,000 **sharePointGroup** objects can be created per **fileStorageContainer**. For more information on service limits, see [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups).
 
 ## Permissions
 
@@ -28,8 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-post-sharepointgroups-permissions.md)]
 
-> [!Note]
-> In addition to Microsoft Graph permissions, applications calling this API must at least have the `AddPermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#Authorization).
+> [!NOTE]
+> In addition to Microsoft Graph permissions, applications calling this API must at least have the `AddPermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#authorization).
 
 ## HTTP request
 
@@ -52,24 +52,28 @@ POST /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups
 
 In the request body, supply a JSON representation of the [sharePointGroup](../resources/sharepointgroup.md) object.
 
-You can specify the following properties when creating a **sharePointGroup**.
+You can specify the following properties when you create a **sharePointGroup**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|title|string|The title of the **sharePointGroup**. The title can't be more than 255 characters long. Required.|
-|description|string|A user-visible description of the **sharePointGroup**. Description can't be longer than 512 characters. Optional.|
+|description|String|A user-visible description of the **sharePointGroup**. The description can't be longer than 512 characters. Optional.|
+|title|String|The title of the **sharePointGroup**. The title can't be longer than 255 characters. Required.|
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [sharePointGroup](../resources/sharepointgroup.md) object in the response body.
 
-
-## Example 1: Create a new sharePointGroup that is local to a fileStoragContainer
-
-The following example creates a new sharePointGroup under the container identified by `{containerId}`. The title and description of the sharePointGroup are shown in the request body.
+## Examples
 
 ### Request
 
+The following example shows a request that creates a new **sharePointGroup** that is local to a **fileStoragContainer**. The title and description of the **sharePointGroup** are shown in the request body.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_sharePointGroup",
+  "@odata.type": "microsoft.graph.sharePointGroup"
+} -->
 ``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
 Content-Type: application/json
@@ -83,10 +87,18 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows a sample response. The group is successfully created with a newly assigned ID that acts as an identifier.
+The following example shows the response. The group is successfully created with a newly assigned ID that acts as an identifier.
 
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointGroup"
+} -->
 ``` http
 HTTP/1.1 201 Created
+
 {
   "@odata.type": "#microsoft.graph.sharePointGroup",
   "id" : "4",
