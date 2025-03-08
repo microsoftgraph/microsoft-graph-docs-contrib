@@ -17,12 +17,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-## March 2025: New in preview only
-
-### Teamwork and communications | Calls and online meetings
-
-Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to indicate whether end-to-end encryption (E2EE) is enabled for a meeting or virtual event session.
-
 ## March 2025: New and generally available
 
 ### Teamwork and communications | Teams and Channel
@@ -34,6 +28,10 @@ Use the **firstChannelName** property on a [team](/graph/api/resources/team?view
 ### Device and app management | Cloud PC
 
 Removed the `GET /deviceManagement/virtualEndpoint/snapshots/{cloudPcSnapshotId}` method from the [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) resource.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to indicate whether end-to-end encryption (E2EE) is enabled for a meeting or virtual event session.
 
 ## February 2025: New and generally available 
 

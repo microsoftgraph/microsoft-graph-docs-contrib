@@ -401,6 +401,18 @@ Content-Type: application/json
     "attendees": []
   },
   "lobbyBypassSettings": {
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2020-7-16 14:57:30 UTC -->
+<!--
+  "type": "#page.annotation",
+  "description": "Patch online meeting",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+-->
     "scope": "organization",
     "isDialInBypassEnabled": true
   }
