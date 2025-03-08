@@ -42,9 +42,9 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:---|:---|
-| unknown            | Default. Indicates that both session host and virtual machine agent connectivity statuses are unknown. |
-| healthy            | Indicates the Cloud PC snapshot is healthy to use. For example, the Cloud PC snapshot is healthy if either the connectivity status of the session host or the virtual machine agent is healthy, or virtual machine itself is unreachable due to shutdown or deallocated. |
-| unhealthy          | Indicates the Cloud PC snapshot is unhealthy to use. For example, the Cloud PC snapshot is unhealthy if both the connectivity status of the session host and the virtual machine agent are unhealthy. |
+| unknown            | Default. Indicates that both the session host and virtual machine agent connectivity statuses are unknown. |
+| healthy            | Indicates that the Cloud PC snapshot is healthy to use. For example, the Cloud PC snapshot is healthy if either the connectivity status of the session host or the virtual machine agent is healthy, or if the virtual machine itself is unreachable due to shutdown or deallocation. |
+| unhealthy          | Indicates that the Cloud PC snapshot is unhealthy to use. For example, the Cloud PC snapshot is unhealthy if both the connectivity status of the session host and the virtual machine agent are unhealthy. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotStatus values
