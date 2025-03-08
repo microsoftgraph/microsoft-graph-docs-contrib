@@ -917,7 +917,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_chatmessage_8",
-  "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1732043970539"]
+  "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1741124579808"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1741124579808
