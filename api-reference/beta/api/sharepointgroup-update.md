@@ -98,7 +98,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.sharePointGroup",
-  "id" : "4",
+  "id" : "12",
   "title" : "This is the new group title",
   "description": "Updated group description"
 }

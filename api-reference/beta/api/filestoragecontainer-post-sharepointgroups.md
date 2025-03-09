@@ -79,9 +79,9 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.sharePointGroup",
-    "title": "Sample Group",
-    "description": "This is a sample description"
+  "@odata.type": "#microsoft.graph.sharePointGroup",
+  "title": "Sample Group",
+  "description": "This is a sample description"
 }
 ```
 
