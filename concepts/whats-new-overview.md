@@ -17,7 +17,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-## March 2025: New in preview only 
+## March 2025: New and generally available
+
+### Teamwork and communications | Teams and Channel
+
+Use the **firstChannelName** property on a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
+
+## March 2025: New in preview only
+
+### Device and app management | Cloud PC
+
+Removed the `GET /deviceManagement/virtualEndpoint/snapshots/{cloudPcSnapshotId}` method from the [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Files
 
@@ -48,12 +58,14 @@ Enabled the `$filter` query parameter for the [list](/graph/api/listitem-list) o
 
 - [Fetch the recording of a Teams live event](/graph/api/onlinemeeting-get#example-6-fetch-the-recording-of-a-teams-live-event-deprecated).
 - Enabled the **allowRecording**, **allowTranscription**, **anonymizeIdentityForRoles**, **broadcastSettings**, and **watermarkProtection** as supported properties in the [update](/graph/api/onlinemeeting-update) operation of the [onlineMeeting](/graph/api/resources/onlinemeeting).
+- Updated the latency information for [callRecord](/graph/api/resources/callrecords-callrecord). The average latency was changed from 15 to 30 minutes, and the maximum latency was changed from 60 to 150 minutes. For more information, see [subscription](/graph/api/resources/subscription).
 
-### Teamwork and communications | Messaging
+### Teamwork and communications | Teams and Channel
 
 - [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
 - [Create](/graph/api/chat-post#example-3-create-a-one-on-one-chat-with-installed-apps) a one-on-one chat with installed apps.
 - [Create](/graph/api/chat-post#example-4-create-a-one-on-one-chat-with-rsc-granted-apps) a one-on-one chat with RSC-granted apps.
+- [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
 
 ## February 2025: New in preview only 
 
@@ -109,7 +121,8 @@ Introduced the following more granular delegated and application permissions for
 
 ### Teamwork and communications | Calls and online meetings
 
-Enabled the **allowRecording**, **allowTranscription**, **anonymizeIdentityForRoles**, **broadcastSettings**, and **watermarkProtection** as supported properties in the [update](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true) operation of the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
+- Enabled the **allowRecording**, **allowTranscription**, **anonymizeIdentityForRoles**, **broadcastSettings**, and **watermarkProtection** as supported properties in the [update](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true) operation of the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
+- Updated the latency information for [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true). The average latency was changed from 15 to 30 minutes, and the maximum latency was changed from 60 to 150 minutes. For more information, see [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork and communications | Messaging
 
