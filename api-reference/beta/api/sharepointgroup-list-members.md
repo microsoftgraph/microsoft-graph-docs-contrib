@@ -1,5 +1,5 @@
 ---
-title: "List sharePointGroupMember objects"
+title: "List members"
 description: "Get a list of the sharePointGroupMember objects and their properties."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# List sharePointGroupMember objects
+# List members
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [sharePointGroupMember](../resources/sharepointgroupmember.md) objects and their properties.
+Get a list of the [sharePointGroupMember](../resources/sharepointgroupmember.md) objects and their properties.
 
 ## Permissions
 
@@ -27,8 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-list-members-permissions.md)]
 
-> [!Note]
-> In addition to Microsoft Graph permissions, applications calling this API must at least have the `AddPermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#Authorization).
+> [!NOTE]
+> In addition to Microsoft Graph permissions, applications calling this API must at least have the `AddPermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#authorization).
 
 ## HTTP request
 
@@ -42,11 +42,10 @@ GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{s
 
 ## Optional query parameters
 
-This method supports $count, $filter, $orderby, $skip and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). You can $filter or $orderby by the `id` and `displayName`fields.
+This method supports the `$count`, `$filter`, `$orderby`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). You can `$filter` or `$orderby` by the **id** and **displayName** properties.
 
-> [!Note]
-> Only 100 sharePointGroupMembers can be listed in a single request. Use the $top and $skip query parameters to
-efficiently retrieve all sharePointGroupMembers within a sharePointGroup.
+> [!NOTE]
+> Only 100 **sharePointGroupMember** objects can be listed in a single request. Use the `$top` and `$skip` query parameters to efficiently retrieve all **sharePointGroupMember** objects within a [sharePointGroup](../resources/sharepointgroup.md).
 
 ## Request headers
 
@@ -68,18 +67,26 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "list_sharepointgroup_members"
+}-->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members
-Content-Type: application/json
-
 ```
 
 ### Response
 
 The following example shows the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.sharePointGroupMember)"
+} -->
 ``` http
 HTTP/1.1 200 OK
+
 {
   "value": [
     {
@@ -88,8 +95,8 @@ HTTP/1.1 200 OK
       "identity": {
         "@odata.type": "microsoft.graph.sharePointIdentitySet",
         "user": {
-          "displayName": "TestUser",
-          "email": "TestUser@testTenant.onmicrosoft.com"
+          "displayName": "Adele Vance",
+          "email": "adele.vance@contoso.onmicrosoft.com"
         }
       }
     },
@@ -98,8 +105,8 @@ HTTP/1.1 200 OK
       "identity": {
         "@odata.type": "microsoft.graph.sharePointIdentitySet"
         "user": {
-          "displayName": "TestUser2",
-          "email": "TestUser2@testTenant.onmicrosoft.com"
+          "displayName": "John Smith",
+          "email": "john.smith@contoso.onmicrosoft.com"
         }
       }
     }
