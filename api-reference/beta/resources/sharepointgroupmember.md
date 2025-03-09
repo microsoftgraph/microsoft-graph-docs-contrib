@@ -5,6 +5,7 @@ author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
+toc.title: "SharePoint group member"
 ms.date: 1/31/2025
 ---
 
