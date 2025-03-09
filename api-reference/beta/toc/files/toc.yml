@@ -228,9 +228,9 @@ items:
     href: ../../resources/shareddriveitem.md
   - name: Use sharing links
     href: ../../api/shares-get.md
-- name: Share point group
+- name: SharePoint group
   items:
-  - name: Share point group
+  - name: SharePoint group
     href: ../../resources/sharepointgroup.md
   - name: List
     href: ../../api/filestoragecontainer-list-sharepointgroups.md
@@ -246,9 +246,9 @@ items:
     href: ../../api/sharepointgroup-list-members.md
   - name: Create SharePoint group member
     href: ../../api/sharepointgroup-post-members.md
-- name: Share point group member
+- name: SharePoint group member
   items:
-  - name: Share point group member
+  - name: SharePoint group member
     href: ../../resources/sharepointgroupmember.md
   - name: List
     href: ../../api/sharepointgroup-list-members.md
