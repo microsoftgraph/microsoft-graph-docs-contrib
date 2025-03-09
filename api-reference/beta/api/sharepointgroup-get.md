@@ -62,12 +62,16 @@ If successful, this method returns a `200 OK` response code and a [sharePointGro
 
 ### Example 1: Get a sharePointGroup by ID 
 
-The following example shows how to get a **sharePointGroup** identified by `{sharePointGroupId}` that is local to a SharePoint Embedded container identified by `{containerId}`.
+The following example shows how to get a **sharePointGroup** identified by `10` that is local to a SharePoint Embedded container identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 
 #### Request
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_sharepointgroup_1"
+}-->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
 ```
@@ -76,6 +80,11 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0
 
 The following example shows the response with a JSON object that represents the **sharePointGroup**.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointGroup"
+} -->
 ``` http
 HTTP/1.1 200 OK
 
@@ -89,12 +98,16 @@ HTTP/1.1 200 OK
 
 ### Example 2: Attempt to get a sharePointGroup by ID 
 
-The following example attempts to get a sharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`. There's no such group in the container.
+The following example attempts to get a **sharePointGroup** identified by `12` that is local to a SharePoint Embedded container identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the group doesn't exist in the container.
 
 #### Request
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_sharepointgroup_2"
+}-->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
 ```
@@ -103,6 +116,10 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0
 
 The following example shows the response that details the nonexistence of the group.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ``` http
 HTTP/1.1 404 Not Found
 
