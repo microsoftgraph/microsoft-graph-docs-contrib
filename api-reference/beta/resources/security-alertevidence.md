@@ -53,6 +53,7 @@ This resource is the base type for the following evidence types:
 * [registryKeyEvidence](security-registrykeyevidence.md)
 * [registryValueEvidence](security-registryvalueevidence.md)
 * [securityGroupEvidence](security-securitygroupevidence.md)
+* [teamsMessageEvidence](security-teamsmessageevidence.md)
 * [urlEvidence](security-urlevidence.md)
 * [userEvidence](security-userevidence.md)
 
@@ -83,7 +84,7 @@ This resource is the base type for the following evidence types:
 
 | Member                     | Description                                    |
 | :--------------------------| :--------------------------------------------- |
-| none                       | No threats were found.                         |
+| none                       | The remediation status is unknown.             |
 | remediated                 | Remediation action completed successfully. |
 | prevented                  | The threat was prevented from executing.       |
 | blocked                    | The threat was blocked while executing.        |

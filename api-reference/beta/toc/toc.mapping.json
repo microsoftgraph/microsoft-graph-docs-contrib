@@ -1456,7 +1456,8 @@
                 "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener"
+                "onUserCreateStartListener",
+                "onPhoneMethodLoadStartListener"
               ]
             },
             {
@@ -2121,6 +2122,26 @@
       ]
     },
     {
+      "name": "Mailbox import and export (preview)",
+      "overview": "../../resources/mailbox-import-export-api-overview.md",
+      "keywords": [
+        "Exchange",
+        "Exchange Import-Export",
+        "Mailbox",
+        "Mailbox import and export"
+      ],
+      "resources": [
+        "mailbox",
+        "mailboxItem",
+        "mailboxFolder",
+        "exchangeSettings"
+      ],
+      "complexTypes": [
+        "exportItemResponse",
+        "mailboxItemImportSession"
+      ]
+    },
+    {
       "name": "Notes",
       "overview": "../../resources/onenote-api-overview.md",
       "keywords": [
@@ -2486,6 +2507,9 @@
             "microsoft.graph.security.alert",
             "microsoft.graph.security.alertEvidence",
             "microsoft.graph.security.incident"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.teamsMessageEvidence"
           ]
         },
         {
@@ -2538,7 +2562,16 @@
             "microsoft.graph.security.ediscoveryHoldPolicy",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
-            "microsoft.graph.security.ediscoveryReviewTag"
+            "microsoft.graph.security.ediscoveryReviewTag",
+            "microsoft.graph.security.ediscoveryCaseMember"
+          ],
+          "childNodes": [
+            {
+              "name": "eDiscovery review set",
+              "resources": [
+                "microsoft.graph.security.ediscoveryReviewSetQuery"
+              ]
+            }
           ]
         },
         {
@@ -2773,7 +2806,8 @@
         "plannerPlanDetails",
         "plannerRoster",
         "plannerUser",
-        "plannerTaskDetails"
+        "plannerTaskDetails",
+        "teamsChannelPlanner"
       ],
       "complexTypes": [
         "businessScenarioGroupTarget",

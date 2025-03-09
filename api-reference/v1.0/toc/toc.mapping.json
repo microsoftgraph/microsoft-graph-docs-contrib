@@ -182,6 +182,7 @@
         "Outlook",
         "Outlook calendar"
       ],
+      "overview": "../../resources/calendar-overview.md",
       "resources": [
         "calendar",
         "event",
@@ -388,6 +389,7 @@
             "printerShare"
           ],
           "complexTypes": [
+            "airPrintSettings",
             "appIdentity",
             "archivedPrintJob",
             "identity",
@@ -402,6 +404,7 @@
             "printTaskStatus",
             "printerCapabilities",
             "printerDefaults",
+            "printerDiscoverySettings",
             "printerLocation",
             "printerShareViewpoint",
             "printerStatus",
@@ -1358,6 +1361,20 @@
             "attackSimulationSimulationUserCoverage",
             "attackSimulationTrainingUserCoverage"
           ]
+        }
+      ]
+        },
+        {
+          "name": "Audit log query",
+          "overview": "../../resources/security-auditlogquery.md",
+          "resources": [
+            "microsoft.graph.security.auditLogQuery",
+            "microsoft.graph.security.auditLogRecord"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.auditData",
+            "microsoft.graph.security.defaultAuditData"
+          ]
         },
         {
           "name": "Partner billing reports",
@@ -1369,8 +1386,6 @@
             "microsoft.graph.partners.billing.operation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
-        }
-      ]
     },
     {
       "name": "Search",
@@ -1439,6 +1454,9 @@
             "microsoft.graph.security.alert",
             "microsoft.graph.security.alertEvidence",
             "microsoft.graph.security.incident"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.teamsMessageEvidence"
           ]
         },
         {
@@ -1480,6 +1498,14 @@
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
             "microsoft.graph.security.ediscoveryReviewTag"
+          ],
+          "childNodes": [
+            {
+              "name": "eDiscovery review set",
+              "resources": [
+                "microsoft.graph.security.ediscoveryReviewSetQuery"
+              ]
+            }
           ]
         },
         {
@@ -1884,6 +1910,7 @@
         {
           "name": "Shift management",
           "resources": [
+            "dayNote",
             "offerShiftRequest",
             "openShift",
             "openShiftChangeRequest",
@@ -1892,6 +1919,7 @@
             "shift",
             "shiftPreferences",
             "swapShiftsChangeRequest",
+            "timeCard",
             "timeOff",
             "timeOffReason",
             "timeOffRequest",
@@ -1899,8 +1927,10 @@
             "workingTimeSchedule"
           ],
           "complexTypes": [
+            "geoCoordinates",
             "identity",
             "identitySet",
+            "itemBody",
             "openShiftItem",
             "patternedRecurrence",
             "recurrencePattern",
@@ -1908,6 +1938,10 @@
             "shiftActivity",
             "shiftAvailability",
             "shiftItem",
+            "timeCardBreak",
+            "timeCardEntry",
+            "timeCardEvent",
+            "timeClockSettings",
             "timeOffItem",
             "timeRange",
             "userSolutionRoot",

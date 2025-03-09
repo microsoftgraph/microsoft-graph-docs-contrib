@@ -43,7 +43,7 @@ Permissions for the following HTTP request:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /users/{userId}/onlineMeetings/{meetingId}
+PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 <!-- { 
@@ -66,7 +66,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 > [!NOTE]
 >
-> - **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `userId` is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Request headers
@@ -93,11 +93,14 @@ The last column indicates whether updating this property takes effect for an in-
 | allowBreakoutRooms          | Boolean                                                    | Indicates whether breakout rooms are enabled for the meeting.                       | No                                  |
 | allowedLobbyAdmitters       | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. | Yes                                 |
 | allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes                                 |
-| allowLiveShare              | Boolean                                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
+| allowLiveShare              | meetingLiveShareOptions                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
 | allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                                 |
 | allowPowerPointSharing      | Boolean                                                    | Indicates whether PowerPoint live is enabled for the meeting.                       | No                                  |
+| allowRecording              | Boolean                                                    | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). | Yes                                 |
 | allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                                 |
+| allowTranscription          | Boolean                                                    | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). | Yes                                 |
 | allowWhiteboard             | Boolean                                                    | Indicates whether whiteboard is enabled for the meeting.                            | No                                  |
+| anonymizeIdentityForRoles   | onlineMeetingRole collection                               | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
 | endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                                  |
 | isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                                 |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                                 |
@@ -105,10 +108,12 @@ The last column indicates whether updating this property takes effect for an in-
 | recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                                  |
 | startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                                  |
 | subject                     | String                                                     | The subject of the online meeting.                                                  | No                                  |
+| watermarkProtection         | [watermarkProtectionValues](../resources/watermarkprotectionvalues.md)  | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
+| broadcastSettings (deprecated) | [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md)| Settings related to a live event.                                    | No                                  |
 
 > [!NOTE]
 >
->- For the list of possible values for **allowedPresenters** and **allowMeetingChat**, see [onlineMeeting](../resources/onlinemeeting.md).
+>- For the list of possible values for **allowedPresenters**, **allowLiveShare**, and **allowMeetingChat**, see [onlineMeeting](../resources/onlinemeeting.md).
 >- When updating the value of **allowedPresenters** to `roleIsPresenter`, include a full list of **attendees** with specified attendees' **role** set to `presenter` in the request body.
 
 ## Response

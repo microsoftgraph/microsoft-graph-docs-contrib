@@ -38,9 +38,11 @@ GET /groups/{id}/transitiveMemberOf
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. OData cast is also enabled, for example, you can cast to get just the transitive group members of a group. The default and maximum page sizes are 100 and 999 group objects respectively.
-
-Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
+- OData cast is enabled. For example, `/groups/{id}/transitiveMemberOf/microsoft.graph.group` retrieves only groups the group is a member of, either directly or indirectly.
+- `$search` is supported on the **displayName** and **description** properties only.
+- The default and maximum page size is 100 and 999 group objects respectively.
+- The use of query parameters with this API, except for `$expand`, is supported only with advanced query parameters. `$expand` isn't supported with advanced query parameters. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 
