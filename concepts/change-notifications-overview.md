@@ -16,6 +16,9 @@ ms.date: 12/27/2024
 
 Change notifications enable applications to receive alerts when a Microsoft Graph resource they're interested in changes; that is, created, updated, or deleted. Microsoft Graph sends notifications to the specified client endpoint, and the client service processes the notifications according to the business requirements. For example, the service might fetch more data, update its cache and views, and so on.
 
+> [!IMPORTANT]
+> The change notifications feature isn't supported in Microsoft Entra External ID in external tenants and Azure AD B2C tenants.
+
 ## Why get change notifications?
 
 Change notifications follow an event-driven model where customers receive alerts when changes occur instead of them polling Microsoft Graph. Depending on your business logic, change notifications are suitable when:
