@@ -21,7 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Teamwork and communications | Messaging
 
-Use the **firstChannelName** property on a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
+Use the **firstChannelName** property on a [team](/graph/api/resources/team) to set the name of the first channel created in a team.
 
 ## March 2025: New in preview only
 
