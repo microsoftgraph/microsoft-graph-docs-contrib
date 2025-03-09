@@ -98,6 +98,7 @@ The following example shows the response with a JSON object that represents the 
 } -->
 ``` http
 HTTP/1.1 201 Created
+Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.sharePointGroupMember",

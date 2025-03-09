@@ -103,9 +103,12 @@ DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WR
 
 The following example shows the response. Only existing SharePoint groups can be deleted.
 
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.publicError"
 }
 -->
 ``` http

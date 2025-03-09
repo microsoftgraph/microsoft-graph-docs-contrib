@@ -93,7 +93,7 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.sharePointIdentitySet",
       "user": {
         "displayName": "John Smith",
-        "email": john.smith@contoso.onmicrosoft.com
+        "email": "john.smith@contoso.onmicrosoft.com"
       }
     }
   }

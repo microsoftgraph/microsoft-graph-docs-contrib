@@ -87,6 +87,7 @@ The following example shows the response with a JSON object that represents the 
 } -->
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.sharePointGroup",
@@ -116,12 +117,16 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0
 
 The following example shows the response that details the nonexistence of the group.
 
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.publicError"
 } -->
 ``` http
 HTTP/1.1 404 Not Found
+Content-Type: application/json
 
 {
   "error": {

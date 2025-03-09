@@ -86,6 +86,7 @@ The following example shows the response.
 } -->
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "value": [
@@ -103,7 +104,7 @@ HTTP/1.1 200 OK
     {
       "id": "YzowdC5jfHRlbmFudHxiODg5YmFkMy1lMTBlLTQ5M2MtYWY3MC1mMDdlZGJkMDcyZWM",
       "identity": {
-        "@odata.type": "microsoft.graph.sharePointIdentitySet"
+        "@odata.type": "microsoft.graph.sharePointIdentitySet",
         "user": {
           "displayName": "John Smith",
           "email": "john.smith@contoso.onmicrosoft.com"
