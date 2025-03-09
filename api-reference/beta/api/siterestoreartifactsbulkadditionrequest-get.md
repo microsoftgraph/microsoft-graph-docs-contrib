@@ -57,6 +57,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -94,6 +96,10 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSe
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-siterestoreartifactsbulkadditionrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-siterestoreartifactsbulkadditionrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -144,7 +150,7 @@ Content-Type: application/json
       },
       "error": {
         "code": "BulkRestoreArtifactsNotFound",
-        "message": "Errors while resolving restore artifacts",
+        "message": "Bulk Restore Artifacts not found",
         "details": [
           {
             "code": "SiteUrlNotFound",

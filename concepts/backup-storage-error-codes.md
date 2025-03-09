@@ -58,7 +58,6 @@ The following table lists the possible error and response codes that can be retu
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
-|200|ProtectionUnitAlreadyExists|This is a delta patch ProtectionUnit level error returned when the request has duplicate Protection Unit in the list that is already present in the service.|ProtectionUnit level error: ProtectionUnit already exists.|
 |200|ProtectionUnitNotFound|This is a delta patch ProtectionUnit level error returned when the user requests to remove Protection Unit, which isn't present in the service.|ProtectionUnit level error: ProtectionUnit doesn't exist.|
 |400|DuplicateProtectionUnitInList|This is a Protection Unit level error returned when the request has duplicate artifacts in the list.|Protection Unit level error: Duplicate Protection Unit in list.|
 |400|ProtectionUnitActionNotAllowed|The artifact with the given protection unit ID can't be removed as it's protected by a dynamic rule.| Protection units protected via dynamic rules can't be removed manually.|
@@ -362,3 +361,49 @@ The following table lists the possible error and response codes that can be retu
 |403|UnableToReadBillingProfile|Unable to read billing profile from billing profile provider.|Unable to read billing profile from billing profile provider.|
 |402|InvalidBillingProfile|Invalid billing profile received from the provider.|Invalid billing profile received from the provider.|
 |400|InvalidAppOwnerTenantId|Owning tenant id not found|Invalid App owner tenant id received from the user.|
+
+## Create bulk addition requests for restoring artifacts API errors
+
+The error codes in this section apply to the following APIs:
+
+- [Create driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests.md)
+- [Create mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests.md)
+- [Create siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests.md)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|400|InvalidBulkRestoreArtifactId|Bulk restore request ID is invalid.|Invalid GUID provided in URI.|
+|400|BulkRestoreInvalidCreateRequest|BulkRestoreCreateRequest is null.|The create request is null or invalid.|
+|400|BulkRestoreRestorationResourcesCountExceedsLimit|Bulk restore input limit exceeded.|Input size is too large.|
+|400|BulkRestoreInvalidCreateRequestSiteUrl|Bulk restore site web URL is invalid.|Site URL is null, empty, or in an incorrect format.|
+|400|BulkRestoreInvalidCreateRequestUserEmail|Bulk restore user email is invalid.|Email is null, empty, or in an incorrect format.|
+
+## Get bulk addition requests for restoring artifacts API errors
+
+The error code in this section applies to the following APIs:
+
+- [Get driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-get.md)
+- [Get mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-get.md)
+- [Get siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/siterestoreartifactsbulkadditionrequest-get.md)
+
+The following table lists the possible error and response code that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|404|BulkRestoreArtifactsNotFound|No bulkRestoreArtifact item with the given bulkRestoreArtifactId.|No restoreArtifactBulkAdditionRequest associated with the provided bulkRestoreArtifactId in the URI.|
+
+## Delete bulk addition requests for restoring artifacts API errors
+
+The error code in this section applies to the following APIs:
+
+- [Delete driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-delete.md)
+- [Delete mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-delete.md)
+- [Delete siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/siterestoreartifactsbulkadditionrequest-delete.md)
+
+The following table lists the possible error and response code that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|403|InvalidStateForBulkRequestDeletion|Validation fails when the service type of the restore session and create request are different.|A bulk request can only be deleted when its status is `completed` or `completedWithErrors`.|

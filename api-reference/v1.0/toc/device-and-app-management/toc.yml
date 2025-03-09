@@ -370,6 +370,8 @@ items:
         href: ../../api/reports-getprinterarchivedprintjobs.md
   - name: Complex types
     items:
+    - name: Air print settings
+      href: ../../resources/airprintsettings.md
     - name: App identity
       href: ../../resources/appidentity.md
     - name: Archived print job
@@ -398,6 +400,8 @@ items:
       href: ../../resources/printercapabilities.md
     - name: Printer defaults
       href: ../../resources/printerdefaults.md
+    - name: Printer discovery settings
+      href: ../../resources/printerdiscoverysettings.md
     - name: Printer location
       href: ../../resources/printerlocation.md
     - name: Printer share viewpoint
