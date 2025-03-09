@@ -83,7 +83,7 @@ Content-length: 199
         "SignOutDateTime",
         "UsageInHour",
         "RoundTripTimeInMsP50",
-        "AvailableBandwidthInMBpsP50",
+        "AvailableBandwidthInMbpsP50",
         "RemoteSignInTimeInSec"
     ],
     "top": 25,
@@ -154,7 +154,7 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         },
         {
-            "Column": "AvailableBandwidthInMBpsP50",
+            "Column": "AvailableBandwidthInMbpsP50",
             "PropertyType": "Double"
         },
         {

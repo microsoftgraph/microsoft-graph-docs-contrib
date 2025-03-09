@@ -12,7 +12,6 @@ $params = @{
 	}
 	additionalDataOptions = "linkedFiles"
 	cloudAttachmentVersion = "latest"
-	documentVersion = "recent10"
 }
 
 Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
