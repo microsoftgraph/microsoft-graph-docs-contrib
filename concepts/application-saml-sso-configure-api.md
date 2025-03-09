@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.topic: tutorial
 ms.custom: scenarios:getting-started
 ms.subservice: entra-applications
-ms.date: 02/23/2024
+ms.date: 02/27/2025
 #customer intent: As a developer, I want to configure SAML-based single sign-on for my application using Microsoft Graph, so that I can improve usability of apps by enabling secure authentication and authorization for users.
 ---
 
@@ -27,13 +27,15 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) as a user with Cloud Application Administrator role in your Microsoft Entra tenant.
+This tutorial configures SSO for the AWS IAM Identity Center. However, most of the steps on Microsoft Graph apply to any other app that you want to configure SSO.
+
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with the privileges to instantiate apps from the Microsoft Entra application gallery, configure app roles, and policies on apps. *Cloud Application Administrator* in the least privileged Microsoft Entra built-in role with these permissions.
 - Grant yourself the following delegated permissions: `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All`.
-- Have a test user to assign to the application.
+- Have a test user to assign to the application. You'll create a matching user in the AWS IAM Identity Center later in this tutorial.
 
 ## Step 1: Identify the application to configure
 
-Microsoft Entra ID has a gallery that contains thousands of preintegrated applications that you can use as a template for your application. In Microsoft Graph, this list is available through the **applicationTemplate** entity.
+To create an app that supports SSO, you register it through the Microsoft Entra App Gallery. The Microsoft Entra App Gallery is a catalog of thousands of preintegrated apps that simplify deploying and configuring SSO and automated user provisioning. In Microsoft Graph, this list is available through the **applicationTemplate** entity.
 
 In this step, you identify the application template for the `AWS IAM Identity Center (successor to AWS Single Sign-On)` application that you want to configure. Record its **id**.
 
@@ -123,7 +125,7 @@ Content-type: application/json
 
 ## Step 2: Instantiate the application
 
-Using the **id** value for the application template, create an instance of the application in your tenant. Here, you name the application **AWS Contoso**. The response includes an application and service principal object for **AWS Contoso**, which is an instance of the **AWS IAM Identity Center (successor to AWS Single Sign-On)** app. Record the IDs of the two objects for use later in this tutorial.
+Using the **id** value for the application template, create an instance of the application in your tenant. Here, you name the application **AWS Contoso**. The response includes an application and service principal object for **AWS Contoso**, which is an instance of the **AWS IAM Identity Center (successor to AWS Single Sign-On)** app. Record the IDs of the created application and service principal objects for use later in this tutorial.
 
 #### Request
 
@@ -361,11 +363,11 @@ Content-type: application/json
 
 ## Step 3: Configure single sign-on
 
-In this step, you configure SSO for both the AWS Contoso application and the service principal. For the application, you configure the SAML URLs while for the service principal, you set the SSO mode to `saml`.
+In this step, you configure SSO for both the AWS Contoso. For the application, you configure the SAML URLs while for the service principal, you set the SSO mode to `saml`.
 
 ### Step 3.1: Set single sign-on mode for the service principal
 
-Set `saml` as the SSO mode for the service principal you created in Step 2. The request returns a `204 No Content` response code.
+Set `saml` as the SSO mode for the AWS Contoso service principal. The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -417,7 +419,7 @@ Content-type: application/json
 
 ### Step 3.2: Set basic SAML URLs for the application
 
-In this step, set the **web**/**redirectUris** and **web**/**redirectUris** for the application you created in Step 2. The request returns a `204 No Content` response code.
+Set the **web**/**redirectUris** and **web**/**redirectUris** for the AWS Contoso application. The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -476,7 +478,7 @@ Content-type: application/json
 
 ## Step 4: Add app roles
 
-If the application requires the role information in the token, add the definition of the roles in the application object. By default, the **appRoles** object in the application and service principal in Step 2 included the default `User` and `msiam_access` roles. Don't modify or remove them. To add more roles, you must include both the existing roles and the new roles in the **appRoles** object in the request, otherwise, the existing roles are replaced.
+If the application requires the role information in the token, add the definition of the roles in the **appRoles** property. AWS Contoso was instantiated with the default `User` and `msiam_access` roles - don't modify or remove them. To add more roles, you include both the existing roles and the new roles in the **appRoles** object in the request, otherwise, the existing roles are replaced.
 
 In this step, add the `Finance,WAAD` and `Admin,WAAD` roles to the AWS Contoso service principal. The request returns a `204 No Content` response code.
 
@@ -1128,7 +1130,7 @@ Content-type: application/json
 
 ### Assign a user to the application
 
-Assign the user that you created to the service principal and grant them the `Admin,WAAD` app role. In the request body, provide the following values:
+Assign the test user that you created to the service principal and grant them the `Admin,WAAD` app role. In the request body, provide the following values:
 
 - **principalId** - The ID of the user account that you created.
 - **appRoleId** - The ID of the `Admin,WAAD` app role that you added.
@@ -1236,12 +1238,12 @@ The following shows an example of what you might see for your application. Save 
 
 ## Step 9: Complete and test the integration 
 
-Now that you've completed the configuration steps for the application in Microsoft Entra ID and have the SAML metadata, sign in to your AWS IAM Identity Center company site as an administrator and:
-1. Complete the steps to [Configure AWS IAM Identity Center SSO](/entra/identity/saas-apps/aws-single-sign-on-tutorial#configure-aws-iam-identity-center-sso).
-1. Create a test user whose user name and email address match the user account that you created in Microsoft Entra ID.
+Now that you've configured the Microsoft Entra application and have the SAML metadata, sign in to your AWS IAM Identity Center company site as an administrator and:
+1. [Configure AWS IAM Identity Center SSO](/entra/identity/saas-apps/aws-single-sign-on-tutorial#configure-aws-iam-identity-center-sso).
+1. [Create an AWS IAM Identity Center test user whose user name and email address match the user account that you created in Microsoft Entra ID](/entra/identity/saas-apps/aws-single-sign-on-tutorial#create-aws-iam-identity-center-test-user).
 1. [Test the SSO integration](/entra/identity/saas-apps/aws-single-sign-on-tutorial#test-sso).
 
-## Step 10: Clean up resources
+## [Optional] Step 10: Clean up resources
 
 In this step, remove the resources that you created and no longer need.
 

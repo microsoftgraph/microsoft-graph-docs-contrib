@@ -25,7 +25,7 @@ Get a list of all [members](../resources/conversationmember.md) in a [channel](.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "channel-list-allmembers" } -->
+<!-- { "blockType": "permissions", "name": "channel_list_allmembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-allmembers-permissions.md)]
 
 > [!NOTE]
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/channel-list-allmembers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/channel-list-allmembers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

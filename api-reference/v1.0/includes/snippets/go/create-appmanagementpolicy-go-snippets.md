@@ -79,8 +79,6 @@ identifierUris := graph.New()
 nonDefaultUriAddition := graph.New()
 state := "disabled"
 nonDefaultUriAddition.SetState(&state) 
-	restrictForAppsCreatedAfterDateTime := null
-nonDefaultUriAddition.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
 	excludeAppsReceivingV2Tokens := true
 nonDefaultUriAddition.SetExcludeAppsReceivingV2Tokens(&excludeAppsReceivingV2Tokens) 
 	excludeSaml := true
