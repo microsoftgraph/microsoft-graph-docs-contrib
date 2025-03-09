@@ -1,6 +1,6 @@
 ---
 title: "Create sharePointGroupMember"
-description: "Create a new sharePointGroupMember object."
+description: "Create a new sharePointGroupMember object within a sharePointGroup."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object within a [sharePointGroup](../resources/sharepointgroup.md). A **sharePointGroup** can have upto 5000 users. See [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups) for more information on service limits. Users and M365 groups are supported as viable identities for **sharePointGroupMember**. The newly created **sharePointGroupMember** will immediately inherit driveItem permissions that have been granted to the **sharePointGroup**. It can take several minutes for Substrate related functionality such as search and Copilot to reflect the addition of the new **sharePointGroupMember**.
+Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object within a [sharePointGroup](../resources/sharepointgroup.md). A **sharePointGroup** can have up to 5,000 users. For more information on service limits, see [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups). Users and Microsoft 365 groups are supported as viable identities for **sharePointGroupMember**. The newly created **sharePointGroupMember** immediately inherits [driveItem](../resources/driveitem.md) permissions that have been granted to the **sharePointGroup**. It may take several minutes for substrate-related functionality, such as search and Copilot, to reflect the addition of the new **sharePointGroupMember**.
 
 ## Permissions
 
@@ -27,8 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-post-members-permissions.md)]
 
-> [!Note]
-> In addition to Microsoft Graph permissions, applications calling this API must at least have the `AddPermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#Authorization).
+> [!NOTE]
+> In addition to Microsoft Graph permissions, applications calling this API must at least have the `AddPermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#authorization).
 
 ## HTTP request
 
@@ -51,34 +51,36 @@ POST /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{
 
 In the request body, supply a JSON representation of the [sharePointGroupMember](../resources/sharepointgroupmember.md) object.
 
-You can specify the following properties when creating a **sharePointGroupMember**.
+You can specify the following property when you create a **sharePointGroupMember**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|identity|{"@odata.type": "microsoft.graph.sharePointIdentitySet"}|The identity of the **sharePointGroupMember**. Required.|
+|identity|[sharePointIdentitySet](../resources/sharepointidentityset.md)|The identity of the **sharePointGroupMember**. Required.|
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [sharePointGroupMember](../resources/sharepointgroupmember.md) object in the response body.
 
-
-## Example 1: Create a sharePointGroupMember using their userPrincipalName
-
-The following example adds a member to a sharePointGroup identified by `{sharePointGroupId}` that is under a container identified by `{containerId}`. We add the member via the member's userPrincipalName.
+## Examples
 
 ### Request
 
+The following example shows a request that creates a **sharePointGroupMember** using their user principal name.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_sharepointgroup_members",
+  "@odata.type": "microsoft.graph.sharePointGroupMember"
+} -->
 ``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.sharePointGroupMember",
-  "identity":
-  {
-    "user":
-    {
-        "userPrincipalName" : "user0@contoso.com"
+  "identity": {
+    "user": {
+      "userPrincipalName": "john.smith@contoso.com"
     }
   }
 }
@@ -86,18 +88,25 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows a sample response with a json object representing the created member.
+The following example shows the response with a JSON object that represents the created member.
 
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointGroupMember"
+} -->
 ``` http
 HTTP/1.1 201 Created
+
 {
   "@odata.type": "#microsoft.graph.sharePointGroupMember",
   "id": "aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ",
   "identity": {
     "@odata.type": "microsoft.graph.sharePointIdentitySet",
     "user": {
-      "displayName": "TestUser",
-      "email": "TestUser@testTenant.onmicrosoft.com"
+      "displayName": "John Smith",
+      "email": "john.smith@contoso.onmicrosoft.com"
     }
   }
 }
