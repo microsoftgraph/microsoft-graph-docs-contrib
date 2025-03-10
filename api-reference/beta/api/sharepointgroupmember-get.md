@@ -27,8 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointgroupmember-get-permissions.md)]
 
-> [!Note]
-> In addition to Microsoft Graph permissions, applications calling this API must at least have the `AddPermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#Authorization).
+> [!NOTE]
+> In addition to Microsoft Graph permissions, applications calling this API must at least have the `AddPermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#authorization).
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{s
 
 ## Optional query parameters
 
-This method supports $select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). The $select OData query parameter can be used the `id` and `identity` properties of the **sharePointGroupMember** object.
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). The `$select` OData query parameter can be used with the **id** and **identity** properties of the **sharePointGroupMember** object.
 
 ## Request headers
 
@@ -64,16 +64,23 @@ If successful, this method returns a `200 OK` response code and a [sharePointGro
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_sharepointgroupmember"
+}-->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
-Content-Type: application/json
-
 ```
 
 ### Response
 
 The following example shows the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointGroupMember"
+} -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -85,8 +92,8 @@ Content-Type: application/json
     "identity": {
       "@odata.type": "microsoft.graph.sharePointIdentitySet",
       "user": {
-        "displayName": "TestUser",
-        "email": TestUser@testTenant.onmicrosoft.com
+        "displayName": "John Smith",
+        "email": "john.smith@contoso.onmicrosoft.com"
       }
     }
   }

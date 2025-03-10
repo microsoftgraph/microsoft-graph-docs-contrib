@@ -27,8 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-update-permissions.md)]
 
-> [!Note]
-> In addition to Microsoft Graph permissions, applications calling this API must at least have the `UpdatePermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#Authorization).
+> [!NOTE]
+> In addition to Microsoft Graph permissions, applications calling this API must at least have the `UpdatePermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#authorization).
 
 ## HTTP request
 
@@ -53,8 +53,8 @@ PATCH /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/
 
 |Property|Type|Description|
 |:---|:---|:---|
-|title|string|The new title of the **sharePointGroup**. The new title can't be more than 255 characters long. Optional.|
-|description|string|The new description of the **sharePointGroup**. Updated description can't be longer than 512 characters. Optional.|
+|description|String|The new description of the **sharePointGroup**. The description can't be longer than 512 characters. Optional.|
+|title|String|The new title of the **sharePointGroup**. The title can't be longer than 255 characters. Optional.|
 
 ## Response
 
@@ -66,14 +66,19 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "update_sharePointGroup",
+  "@odata.type": "microsoft.graph.sharePointGroup"
+} -->
 ``` http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.sharePointGroup",
-    "title" : "This is the new group title",
-    "description": "Updated group description"
+  "@odata.type": "#microsoft.graph.sharePointGroup",
+  "title" : "This is the new group title",
+  "description": "Updated group description"
 }
 ```
 
@@ -81,12 +86,20 @@ Content-Type: application/json
 
 The following example shows the response.
 
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointGroup"
+} -->
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
-    "@odata.type": "#microsoft.graph.sharePointGroup",
-    "id" : "4",
-    "title" : "This is the new group title",
-    "description": "Updated group description"
+  "@odata.type": "#microsoft.graph.sharePointGroup",
+  "id" : "12",
+  "title" : "This is the new group title",
+  "description": "Updated group description"
 }
 ```

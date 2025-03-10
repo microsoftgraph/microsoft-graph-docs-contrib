@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [sharePointGroup](../resources/sharepointgroup.md) object that is local to a fileStorageContainer.
+Delete a [sharePointGroup](../resources/sharepointgroup.md) object that is local to a [fileStorageContainer](../resources/filestoragecontainer.md).
 
 ## Permissions
 
@@ -27,8 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-sharepointgroups-permissions.md)]
 
-> [!Note]
-> In addition to Microsoft Graph permissions, applications calling this API must at least have the `DeletePermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#Authorization).
+> [!NOTE]
+> In addition to Microsoft Graph permissions, applications calling this API must at least have the `DeletePermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#authorization).
 
 ## HTTP request
 
@@ -54,39 +54,67 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example 1: Delete a sharePointGroup
-The following example deletes a sharePointGroup identified by the ID `10` from the fileStorageContainer identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+## Examples
 
-### Request
+### Example 1: Delete a SharePoint group
 
+The following example deletes a **sharePointGroup** identified by the ID `10` from the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_sharepointgroup"
+}-->
 ``` http
-DELETE /storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ``` http
 HTTP/1.1 204 No Content
 ```
 
-## Example 2: Attempt to delete a sharePointGroup that doesn't exist.
+### Example 2: Attempt to delete a SharePoint group that doesn't exist
 
-The following example attempts to delete a sharePointGroup identified by the ID `11` from the fileStorageContainer identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`. There's no such group in the container.
+The following example attempts to delete a **sharePointGroup** identified by the ID `11` from the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the group doesn't exist in the container.
 
-### Request
+#### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "delete_nonexisting_sharepointgroup"
+}-->
 ``` http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/11
 ```
 
-### Response
+#### Response
 
-The following example shows a sample response. Only existing sharePointGroups can be deleted.
+The following example shows the response. Only existing SharePoint groups can be deleted.
 
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.publicError"
+}
+-->
 ``` http
 HTTP/1.1 404 Not Found
+Content-Type: application/json
+
 {
   "error":{
     "code": "itemNotFound",

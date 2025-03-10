@@ -27,8 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-get-permissions.md)]
 
-> [!Note]
-> In addition to Microsoft Graph permissions, applications calling this API must at least have the `EnumeratePermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#Authorization).
+> [!NOTE]
+> In addition to Microsoft Graph permissions, applications calling this API must at least have the `EnumeratePermissions` container type-level permission on the container type of the corresponding containers. For more information, see [container types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). To learn more about container type-level permissions, see [SharePoint Embedded authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#authorization).
 
 ## HTTP request
 
@@ -42,9 +42,7 @@ GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{s
 
 ## Optional query parameters
 
-This method supports the $expand and $select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). For the $expand OData query parameter, only the `members` field is eligible. The $select OData query parameter can be used the `title`, `id` and `description` properties of the **sharePointGroup** object.
-
-For the $select OData query parameter the `title`, `id` and `description` fields are eligible.
+This method supports the `$expand` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). For the `$expand` query parameter, only the **members** property is supported. The `$select` query parameter can be used with the **title**, **id**, and **description** properties of the **sharePointGroup** object.
 
 ## Request headers
 
@@ -60,49 +58,76 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [sharePointGroup](../resources/sharepointgroup.md) object in the response body.
 
-## Example 1: Get a sharePointGroup using ID 
-The following example retrieves a sharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`.
+## Examples
 
+### Example 1: Get a sharePointGroup by ID 
 
-### Request
+The following example shows how to get a **sharePointGroup** identified by `10` that is local to a SharePoint Embedded container identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_sharepointgroup_1"
+}-->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
-Content-Type: application/json
-
 ```
 
-### Response
+#### Response
 
-The following example shows s sample response with a json object representing the sharePointGroup
+The following example shows the response with a JSON object that represents the **sharePointGroup**.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointGroup"
+} -->
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.sharePointGroup",
-  "id" : "4",
+  "id" : "10",
   "title": "Sample Group",
   "description": "This is sample description"
 }
 ```
 
-## Example 2: Attempt to get a sharePointGroup using ID 
-The following example attempts to get a sharePointGroup identified by `{sharePointGroupId}` that is local to a SharePointEmbedded container identified by `{containerId}`. There's no such group in the container.
+### Example 2: Attempt to get a sharePointGroup by ID 
 
-### Request
+The following example attempts to get a **sharePointGroup** identified by `12` that is local to a SharePoint Embedded container identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the group doesn't exist in the container.
 
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_sharepointgroup_2"
+}-->
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
-Content-Type: application/json
-
 ```
 
-### Response
+#### Response
 
-The following example shows a sample response detailing the nonexistence of the group.
+The following example shows the response that details the nonexistence of the group.
 
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.publicError"
+} -->
 ``` http
 HTTP/1.1 404 Not Found
+Content-Type: application/json
+
 {
   "error": {
     "code": "itemNotFound",
