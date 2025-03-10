@@ -7,7 +7,7 @@ ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: X509 certificate
 toc.keywords: [ certificate-based authentication, CBA ]
-ms.date: 07/22/2024
+ms.date: 03/10/2025
 ---
 
 # x509CertificateAuthenticationMethodConfiguration resource type
@@ -34,7 +34,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The identifier for the authentication method policy. The value is always `X509Certificate`. Inherited from
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-
+|crlValidationConfiguration|[x509CertificateCRLValidationConfiguration](../resources/x509certificatecrlvalidationconfiguration.md)|Determines whether certificate based authentication should fail if the issuing CA doesn't have a valid certificate revocation list configured. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -62,7 +62,10 @@ The following is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.x509CertificateUserBinding"
     }
   ],
-    "excludeTargets": [
+  "crlValidationConfiguration": {
+    "@odata.type": "microsoft.graph.x509CertificateCRLValidationConfiguration"
+  },
+  "excludeTargets": [
     {
       "@odata.type": "microsoft.graph.excludeTarget"
     }
