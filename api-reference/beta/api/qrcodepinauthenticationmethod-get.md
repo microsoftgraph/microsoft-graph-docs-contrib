@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a user's single [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)  object.
+Retrieve a user's single [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-public.md)]
 
