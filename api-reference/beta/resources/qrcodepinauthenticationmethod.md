@@ -59,7 +59,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethod",
   "id": "String (identifier)",
-  "createdDateTime": "String (timestamp)",
   "isUsable": "Boolean",
   "methodUsabilityReason": "String",
   "standardQRCode": {

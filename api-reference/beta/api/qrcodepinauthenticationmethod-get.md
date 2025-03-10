@@ -87,13 +87,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethod",
-    "id": "da1e549e-ff15-58f8-d365-b228c2b10009",
-    "createdDateTime": "String (timestamp)",
-    "isUsable": "Boolean",
-    "methodUsabilityReason": "String"
-  }
+    "id": "d29518d4-b99a-4c88-b40c-92fd12959724",
+    "isUsable": false,
+    "methodUsabilityReason": null,
+    "standardQRCode": {
+        "id": "1a253da5-3f9a-457d-bd9c-de1aab9a2e59",
+        "expireDateTime": "2025-12-19T12:00:00Z",
+        "startDateTime": "2025-01-01T12:00:00Z",
+        "createdDateTime": "2025-03-05T00:03:11.1460378Z",
+        "lastUsedDateTime": "0001-01-01T00:00:00Z",
+        "image": null
+    },
+    "temporaryQRCode": null,
+    "pin": {
+        "id": "a98a1084-f503-4dfd-a293-c0e93cba124a",
+        "code": "",
+        "forceChangePinNextSignIn": true,
+        "createdDateTime": "2025-03-05T00:03:11.3120627Z",
+        "updatedDateTime": "2025-03-05T00:03:11.3120627Z"
+    }
 }
 ```
 
