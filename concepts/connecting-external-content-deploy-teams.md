@@ -216,6 +216,10 @@ To validate the experience:
 
 1. Sign in to the [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin or Global admin of the tenant.
 1. Select the **Manage apps** blade in the left rail.
+
+    > [!NOTE]
+    > The **Manage apps** in the Teams admin center will be deprecated soon, you can now use [Microsoft 365 admin center](https://admin.microsoft.com) to enable Microsoft Graph connector.
+
 1. Go to your Teams application.
 1. On the detail page of the Teams app, you notice a new **Graph Connector** tab that allows an admin to enable or disable the Microsoft Graph connector.
 1. Select the toggle button to send the enable or disable notifications to the notification endpoint of the app, as specified by the **graphConnector.notificationUrl** property in the app manifest.
