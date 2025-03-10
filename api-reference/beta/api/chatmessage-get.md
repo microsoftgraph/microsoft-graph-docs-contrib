@@ -908,7 +908,7 @@ Content-type: application/json
 
 ### Example 8: Get a chat message with a code block
 
-The following example shows a request that gets a chat message that with code block.
+The following example shows a request that gets a chat message with code block.
 
 #### Request
 

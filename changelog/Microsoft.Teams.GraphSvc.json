@@ -2572,7 +2572,7 @@
       "Id": "579fe6a1-aa7e-4a19-aa10-1c237809032c",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-05-06T18:15:55.2254479Z",
+      "CreatedDateTime": "2025-03-09T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
     },
@@ -2591,24 +2591,6 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-03-07T08:54:28.4245939Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Messaging"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "769568d6-d32c-4843-8b16-fb1c12956e01",
-          "ApiChange": "Property",
-          "ChangedApiName": "content",
-          "ChangeType": "Change",
-          "Description": "Added new code block support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource.",
-          "Target": "itemBody"
-        }        
-      ],
-      "Id": "769568d6-d32c-4843-8b16-fb1c12956e01",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2025-03-09T10:11:41.458Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
     }
