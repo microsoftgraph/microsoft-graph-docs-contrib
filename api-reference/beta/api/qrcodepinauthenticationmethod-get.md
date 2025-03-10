@@ -14,13 +14,30 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a user's qrCodePinAuthenticationMethod object.
+Retrieve a user's single [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object.
 
-[!INCLUDE national-cloud-support]
+[!INCLUDE [national-cloud-support](../../includes/global-public.md)]
 
 ## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+### Permissions acting on self
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|UserAuthenticationMethod.Read|UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
+
+### Permissions acting on other users
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
+
+[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
 
 <!-- {
   "blockType": "permissions",
@@ -87,6 +104,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+<<<<<<< HEAD
     "id": "d29518d4-b99a-4c88-b40c-92fd12959724",
     "isUsable": false,
     "methodUsabilityReason": null,
@@ -106,6 +124,21 @@ Content-Type: application/json
         "createdDateTime": "2025-03-05T00:03:11.3120627Z",
         "updatedDateTime": "2025-03-05T00:03:11.3120627Z"
     }
+=======
+  "value": {
+    "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethod",
+    "id": "da1e549e-ff15-58f8-d365-b228c2b10009",
+     "standardQRCode": {
+    "@odata.type": "microsoft.graph.qrCode"
+     },
+    "temporaryQRCode": {
+    "@odata.type": "microsoft.graph.qrCode"
+    },
+    "pin": {
+    "@odata.type": "microsoft.graph.qrPin"
+    }
+  }
+>>>>>>> 7508b108d52a408acb7c09e02553c3bbd5666dfc
 }
 ```
 

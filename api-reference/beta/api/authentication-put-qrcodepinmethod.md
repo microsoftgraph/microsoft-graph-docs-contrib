@@ -14,11 +14,30 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new qrCodePinAuthenticationMethod object.
+Create a new [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object for the user. A user can have only one QR code authentication method. A new QR code authentication can be added once existing one is expired or deleted, i.e. becomes unusable authentication method. A QR code authentication method can have standard and temporary QR codes. At any point of time of a user, there can be only one active QR code authentication method. An active QR code authentication method can have only one active standard QR code and one active temporary QR code. To create a new QR code authentication method, standard QR code, or temporary QR code, delete existing respective objects and add new.
+
+[!INCLUDE [national-cloud-support](../../includes/global-public.md)]
 
 ## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+### Permissions acting on self
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|UserAuthenticationMethod.Read|UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
+
+### Permissions acting on other users
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
+
+[!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
 
 <!-- {
   "blockType": "permissions",
@@ -53,8 +72,8 @@ You can specify the following properties when creating a **qrCodePinAuthenticati
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|standardQRCode|[qrCode](../resources/qrcode.md)|**TODO: Add Description**|
-|pin|[qrPin](../resources/qrpin.md)|**TODO: Add Description**. Optional.|
+|standardQRCode|[qrCode](../resources/qrcode.md)|Standard QR code is primary QR code of the user with longer lifetime. There can be only one active standard QR code for the user. It is created during creating QR code authentication method. A new standard QR code can be created if existing one is expired or deleted. During creating standard QR Code, admin needs to specify startDateTime, time when this QR code will be activated, and can change default expiration time, time when this QR code will be activated. startDateTime is mandatory attribute. If you don't pass expireDateTime, then default QR code lifetime policy will be applied.|
+|pin|[qrPin](../resources/qrpin.md)|It is the pin of the user. Admin creates the temporary pin, which is forced to be updated by the user during sign-in. Admin can specify custom temporary pin or auto-generate it during creation of the authentication method Optional. Custom pin support is only available during creation of QR code authentication method.|
 
 
 ## Response
