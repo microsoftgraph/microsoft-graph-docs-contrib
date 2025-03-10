@@ -104,7 +104,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-<<<<<<< HEAD
     "id": "d29518d4-b99a-4c88-b40c-92fd12959724",
     "isUsable": false,
     "methodUsabilityReason": null,
@@ -124,21 +123,6 @@ Content-Type: application/json
         "createdDateTime": "2025-03-05T00:03:11.3120627Z",
         "updatedDateTime": "2025-03-05T00:03:11.3120627Z"
     }
-=======
-  "value": {
-    "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethod",
-    "id": "da1e549e-ff15-58f8-d365-b228c2b10009",
-     "standardQRCode": {
-    "@odata.type": "microsoft.graph.qrCode"
-     },
-    "temporaryQRCode": {
-    "@odata.type": "microsoft.graph.qrCode"
-    },
-    "pin": {
-    "@odata.type": "microsoft.graph.qrPin"
-    }
-  }
->>>>>>> 7508b108d52a408acb7c09e02553c3bbd5666dfc
 }
 ```
 
