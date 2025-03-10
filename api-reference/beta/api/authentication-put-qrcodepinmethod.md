@@ -72,8 +72,8 @@ You can specify the following properties when creating a **qrCodePinAuthenticati
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|standardQRCode|[qrCode](../resources/qrcode.md)|**TODO: Add Description**|
-|pin|[qrPin](../resources/qrpin.md)|**TODO: Add Description**. Optional.|
+|standardQRCode|[qrCode](../resources/qrcode.md)|Standard QR code is primary QR code of the user with longer lifetime. There can be only one active standard QR code for the user. It is created during creating QR code authentication method. A new standard QR code can be created if existing one is expired or deleted. During creating standard QR Code, admin needs to specify startDateTime, time when this QR code will be activated, and can change default expiration time, time when this QR code will be activated. startDateTime is mandatory attribute. If you don't pass expireDateTime, then default QR code lifetime policy will be applied.|
+|pin|[qrPin](../resources/qrpin.md)|It is the pin of the user. Admin creates the temporary pin, which is forced to be updated by the user during sign-in. Admin can specify custom temporary pin or auto-generate it during creation of the authentication method Optional. Custom pin support is only available during creation of QR code authentication method.|
 
 
 ## Response
