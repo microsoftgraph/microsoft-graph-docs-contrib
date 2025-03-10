@@ -328,8 +328,6 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: Get
-      href: ../../api/cloudpcsnapshot-get.md
     - name: List (deprecated)
       href: ../../api/virtualendpoint-list-snapshots.md
   - name: Cloud PC supported region
