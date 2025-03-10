@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a qrCodePinAuthenticationMethod object.
+Retrieve a user's qrCodePinAuthenticationMethod object.
+
+[!INCLUDE national-cloud-support]
 
 ## Permissions
 
