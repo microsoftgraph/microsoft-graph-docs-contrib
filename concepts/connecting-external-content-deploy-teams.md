@@ -218,7 +218,7 @@ To validate the experience:
 1. Select the **Manage apps** blade in the left rail.
 
     > [!NOTE]
-    > The **Manage apps** in the Teams admin center will be deprecated soon, you can now use [Microsoft 365 admin center](https://admin.microsoft.com) to enable Microsoft Graph connector.
+    > The **Manage apps** in the Teams admin center will be deprecated soon. You can now use the [Microsoft 365 admin center](https://admin.microsoft.com) to enable the Microsoft Graph connector.
 
 1. Go to your Teams application.
 1. On the detail page of the Teams app, you notice a new **Graph Connector** tab that allows an admin to enable or disable the Microsoft Graph connector.
