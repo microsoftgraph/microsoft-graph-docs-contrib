@@ -25,8 +25,9 @@ exportLocation := graphmodels.RESPONSIVELOCATIONS_EXPORTLOCATION
 requestBody.SetExportLocation(&exportLocation) 
 additionalOptions := graphmodels.CLOUDATTACHMENTS_ADDITIONALOPTIONS 
 requestBody.SetAdditionalOptions(&additionalOptions) 
+cloudAttachmentVersion := graphmodels.ALL_CLOUDATTACHMENTVERSION 
+requestBody.SetCloudAttachmentVersion(&cloudAttachmentVersion) 
 additionalData := map[string]interface{}{
-	"cloudAttachmentVersion" : "all", 
 	"doucmentVersion" : "recent100", 
 }
 requestBody.SetAdditionalData(additionalData)

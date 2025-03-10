@@ -59,7 +59,11 @@ If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
-### Request
+### Example 1: Add search with linked files and the latest cloud attachment version
+
+The following example shows how to add search to the review set and include the latest version of files shared as links.
+
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -73,12 +77,11 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 Content-Type: application/json
 
 {
-    "search": {
-        "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
-    },
-    "additionalDataOptions": "linkedFiles",
-    "cloudAttachmentVersion": "latest",
-    "documentVersion": "recent10"
+  "search": {
+    "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
+  },
+  "additionalDataOptions": "linkedFiles",
+  "cloudAttachmentVersion": "latest"
 }
 ```
 
@@ -116,7 +119,81 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+```
+
+### Example 2: Add search with all data options and the latest cloud and document versions
+
+The following example shows how to add search to the review set with all options selected for **additionalDataOptions**, the 10 most recent versions selected for documents, and the latest version selected for cloud attachments.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "ediscoveryreviewsetthis.addtoreviewset_2"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/addToReviewSet
+Content-Type: application/json
+
+{
+  "search": {
+    "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
+  },
+  "additionalDataOptions": "linkedFiles, allVersions, advancedIndexing, listAttachments, htmlTranscripts, messageConversationExpansion, locationsWithoutHits, allItemsInFolder",
+  "cloudAttachmentVersion": "latest",
+  "documentVersion": "recent10"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoveryreviewsetthisaddtoreviewset-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/ediscoveryreviewsetthisaddtoreviewset-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/ediscoveryreviewsetthisaddtoreviewset-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoveryreviewsetthisaddtoreviewset-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoveryreviewsetthisaddtoreviewset-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/ediscoveryreviewsetthisaddtoreviewset-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoveryreviewsetthisaddtoreviewset-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/ediscoveryreviewsetthisaddtoreviewset-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 The following example shows the response.
 
 <!-- {
