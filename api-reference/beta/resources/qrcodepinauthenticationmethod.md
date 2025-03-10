@@ -26,9 +26,9 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |[Get](../api/qrcodepinauthenticationmethod-get.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Read the properties and relationships of a user's qrCodePinAuthenticationMethod object.|
 |[Create](../api/authentication-put-qrcodepinmethod.md)|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Create a user's new qrCodePinAuthenticationMethod object.|
 |[Delete](../api/authentication-delete-qrcodepinmethod.md)|None|Delete a user's qrCodePinAuthenticationMethod object.|
-|[Create a QRCode](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a user's new QRCode object.|
-|[Update a QRCode](../api/qrcode-update.md)|None|Update a user's QRCode object.|
-|[Delete a QRCode](../api/qrcode-delete.md)|None|Delete a user's QRCode object.|
+|[Create a Standard/Temporary QR code](../api/qrcodepinauthenticationmethod-patch-standardqrcode.md)|[qrCode](../resources/qrcode.md)|Create a user's new Standard/Temporary QR code object.|
+|[Update a Standard QR code](../api/qrcode-update.md)|None|Update a user's standardQRCode object.|
+|[Delete a Standard/Temporary QR code](../api/qrcode-delete.md)|None|Delete a user's Standard/Temporary QR code object.|
 <!--|[Update Pin](../api/qrpin-updatepin.md)|[pin](../resources/qrpin.md)|Changing a user's Pin.|-->
 |[Reset Pin](../api/qrcodepinauthenticationmethod-patch-pin.md)|[pin](../resources/qrpin.md)|Resets a user's Pin by generating temporary PIN.|
 
@@ -42,11 +42,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |methodUsabilityReason|String|Details about the usability state (isUsable). Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, OneTimeUsed. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|pin|[Pin](../resources/qrpin.md)|Pin of the user. User is required to change admin provided temporary Pin durig sign-in.|
-|standardQRCode|[qrCode](../resources/qrcode.md)|Primary QR code of user's QR code authentication method.|
-|temporaryQRCode|[qrCode](../resources/qrcode.md)|Temporary QR code of user's QR code authentication method.|
+None
 
 ## JSON representation
 The following JSON representation shows the resource type.
