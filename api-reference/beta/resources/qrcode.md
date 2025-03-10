@@ -18,6 +18,7 @@ Namespace: microsoft.graph
 
 Inherits from [entity](../resources/entity.md)
 
+<!--
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -25,7 +26,7 @@ Inherits from [entity](../resources/entity.md)
 |[Get](../api/qrcode-get.md)|[qrCode](../resources/qrcode.md)|Read the properties and relationships of a qrCode object.|
 |[Update](../api/qrcode-update.md)|[qrCode](../resources/qrcode.md)|Update the properties of a qrCode object.|
 |[Delete](../api/qrcodepinauthenticationmethod-delete-standardqrcode.md)|None|Delete a qrCode object.|
-
+-->
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
