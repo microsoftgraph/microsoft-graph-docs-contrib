@@ -3110,6 +3110,9 @@
                 }
               ]
             }
+          ],
+          "complexTypes": [
+            "forwardToChatResult"
           ]
         },
         {
