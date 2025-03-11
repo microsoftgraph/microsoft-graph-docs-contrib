@@ -16,13 +16,14 @@ Namespace: microsoft.graph
 
 **TODO: Add Description**
 
-
+<!--
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/qrpin-get.md)|[qrPin](../resources/qrpin.md)|Read the properties and relationships of a qrPin object.|
-<!--|[updatePin](../api/qrpin-updatepin.md)|None|**TODO: Add Description**|-->
+|[updatePin](../api/qrpin-updatepin.md)|None|**TODO: Add Description**|
 |[Reset Pin](../api/qrcodepinauthenticationmethod-patch-pin.md)|[pin](../resources/qrpin.md)|Resets a user's Pin by generating temporary PIN.|
+-->
 
 ## Properties
 |Property|Type|Description|
