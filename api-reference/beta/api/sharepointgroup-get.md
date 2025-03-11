@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0
 
 #### Response
 
-The following example shows the response that details the nonexistence of the group.
+The following example shows the response for a group that doesn't exist.
 
 >**Note:** The response object shown here might be shortened for readability.
 
