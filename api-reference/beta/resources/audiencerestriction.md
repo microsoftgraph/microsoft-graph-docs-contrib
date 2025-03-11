@@ -42,7 +42,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.audienceRestriction",
   "state": "String",
-  "restrictForAppsCreatedAfterDateTime": "String (timestamp)"
+  "restrictForAppsCreatedAfterDateTime": "String (timestamp)",
   "excludeActors": {
     "@odata.type": "microsoft.graph.appManagementPolicyActorExemptions"
   }
