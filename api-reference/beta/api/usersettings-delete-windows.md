@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsSetting"
 description: "Delete a windowsSetting object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ndyc1107"
 ms.date: 03/11/2025
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete all [windowsSetting](../resources/windowssetting.md) objects of a user. This method is only supported in AAD.
+Delete all [windowsSetting](../resources/windowssetting.md) objects of a user.
 
 ## Permissions
 
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/users/{user-id}@{tenant-id}/settings/windows
+DELETE https://graph.microsoft.com/beta/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd@4562bcc8-c436-4f95-b7c0-4f8ce89dca5e/settings/windows
 ```
 
 

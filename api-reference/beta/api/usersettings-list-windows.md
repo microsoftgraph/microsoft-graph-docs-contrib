@@ -57,7 +57,7 @@ You can filter the results by the following properties:
 - **windowsDeviceId**: A string value that represents the unique identifier of a Windows device. This identifier can be found in the response body. When you filter on **windowsDeviceId**, you can get a list of settings specific to that device. Only the equality (`eq`) comparison is supported for this parameter.
 - **settingType**: An enumeration with the following valid values: `roaming` and `backup`. The **settingType** property allows you to narrow down the results to settings related to either roaming or backup. Only the equality (`eq`) comparison is supported for this parameter. For more information, see [windowsSettingType](../resources/enums.md#windowssettingtype-values).
 
-For more details about how to use this query parameter, see the [Examples](./usersettings-list-windows.md#examples) section.
+For more information about how to use this query parameter, see the [Examples](./usersettings-list-windows.md#examples) section.
 
 ## Request headers
 
@@ -74,7 +74,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [windowsSetting](../resources/windowssetting.md) objects in the response body.
 
-If the response contains more than one page of data, the response body will contain an `@odata.nextLink` property. This property will contain a URL that can be used to request the next page of data. The URL should be used without any modification.
+If the response contains more than one page of data, the response body contains an `@odata.nextLink` property. This property will contain a URL that can be used to request the next page of data. The URL should be used without any modification.
 
 
 ## Examples
