@@ -34,17 +34,14 @@ timeOffRequestsEnabled := true
 requestBody.SetTimeOffRequestsEnabled(&timeOffRequestsEnabled) 
 startDayOfWeek := graphmodels.TUESDAY_DAYOFWEEK 
 requestBody.SetStartDayOfWeek(&startDayOfWeek) 
+isActivitiesIncludedWhenCopyingShiftsEnabled := true
+requestBody.SetIsActivitiesIncludedWhenCopyingShiftsEnabled(&isActivitiesIncludedWhenCopyingShiftsEnabled) 
 isCrossLocationShiftsEnabled := true
 requestBody.SetIsCrossLocationShiftsEnabled(&isCrossLocationShiftsEnabled) 
 isCrossLocationShiftRequestApprovalRequired := true
 requestBody.SetIsCrossLocationShiftRequestApprovalRequired(&isCrossLocationShiftRequestApprovalRequired) 
 timeClockEnabled := true
 requestBody.SetTimeClockEnabled(&timeClockEnabled) 
-additionalData := map[string]interface{}{
-	isActivitiesIncludedWhenCopyingShiftsEnabled := true
-requestBody.SetIsActivitiesIncludedWhenCopyingShiftsEnabled(&isActivitiesIncludedWhenCopyingShiftsEnabled) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 schedule, err := graphClient.Teams().ByTeamId("team-id").Schedule().Put(context.Background(), requestBody, nil)

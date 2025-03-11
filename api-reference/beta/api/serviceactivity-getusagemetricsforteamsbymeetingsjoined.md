@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getUsageMetricsForT
 [!INCLUDE [sample-code](../includes/snippets/php/serviceactivitythisgetusagemetricsforteamsbymeetingsjoined-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceactivitythisgetusagemetricsforteamsbymeetingsjoined-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/serviceactivitythisgetusagemetricsforteamsbymeetingsjoined-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

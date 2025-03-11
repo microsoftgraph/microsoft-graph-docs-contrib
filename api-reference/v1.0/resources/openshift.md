@@ -31,6 +31,7 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+| createdBy             | [identitySet](identityset.md)     | Identity of the creator of the **openShift** object. Inherited from [changeTrackedEntity](changetrackedentity.md).      |
 | createdDateTime       | DateTimeOffset                    | Date and time when the **openShift** was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](changetrackedentity.md).                               |
 | draftOpenShift        | [openShiftItem](openshiftitem.md) | Draft changes in the **openShift** are only visible to managers until they're [shared](../api/schedule-share.md).              |
 | id                    | String                            | Unique identifier for the **openShift** object. Read-only. Inherited from [changeTrackedEntity](changetrackedentity.md).        |
@@ -60,6 +61,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.openShift",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "draftOpenShift": {"@odata.type": "microsoft.graph.openShiftItem"},
   "id": "String (identifier)",

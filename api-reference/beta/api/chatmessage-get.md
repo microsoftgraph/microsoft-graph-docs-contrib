@@ -73,7 +73,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [chatMessage](../resources/chatmessage.md) object in the response body.
 
 ## Examples
 
@@ -589,7 +589,7 @@ GET https://graph.microsoft.com/beta/chats/19:80a7ff67c0ef43c19d88a7638be436b1@t
 
 #### Response
 
-The following example shows the response. The message body contains an @mention for everyone in a group chat that is represented by the `<at></at>` tag. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mentioned** object.
+The following example shows the response. The message body contains `<at></at>` tags for each @mention of everyone in a group chat. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mentioned** object.
 
 <!-- {
   "blockType": "response",
@@ -770,6 +770,135 @@ Content-type: application/json
             "name": null,
             "thumbnailUrl": null,
             "teamsAppId": null
+        }
+    ],
+    "mentions": [],
+    "reactions": []
+}
+```
+
+### Example 7: Get a chat message with a Microsoft Loop component
+
+The following example shows a request that gets a chat message that has a Loop component as two attachments. 
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessage_7",
+  "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1732043970539"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1732043970539
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessage-7-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-chatmessage-7-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessage-7-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessage-7-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessage-7-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-chatmessage-7-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessage-7-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-chatmessage-7-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response. The message body contains two attachments. The value of the **contentType** property of the Loop component is `application/vnd.microsoft.card.fluidEmbedCard`, and the value of the **contentType** property of the placeholder card is `application/vnd.microsoft.card.codesnippet`. 
+
+> **Note**  - The **contentUrl** and **content** properties for a placeholder card don't have values.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ae2ed97baac8e4bffbb91299a38996790%40thread.v2')/messages/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+    "id": "1732043970539",
+    "replyToId": null,
+    "etag": "1732043970539",
+    "messageType": "message",
+    "createdDateTime": "2024-11-19T19:19:30.539Z",
+    "lastModifiedDateTime": "2024-11-19T19:19:30.539Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "onBehalfOf": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"placeholderCard\"></attachment><span style=\"display:none\"></span><attachment id=\"b21e256a-8581-45cf-ae05-8bb998360bcc\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "b21e256a-8581-45cf-ae05-8bb998360bcc",
+            "contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+            "contentUrl": null,
+            "content": "{\r\n  \"componentUrl\": \"https://teamsgraph-my.sharepoint.com/:fl:/g/personal/sumanac_teamsgraph_onmicrosoft_com/EQnofOQM0MpOoDaRIvw-pS8Bfsj_WDFuanBBXnjDAD-w3g?nav=cz0lMkZwZXJzb25hbCUyRnN1bWFuYWNfdGVhbXNncmFwaF9vbm1pY3Jvc29mdF9jb20mZD1iIWVUcmxYX19jN2t5eW9GSFhJdG8yTDI4bmtnV2EtOXhEa244SVBOdGZFYnlxandPblkwdE9TcFVldkh6dWtBV1ImZj0wMUU2TzQ0WFlKNUI2T0lER1FaSkhLQU5VUkVMNkQ1SkpQJmM9JTJGJmZsdWlkPTEmYT1UZWFtcyZwPSU0MGZsdWlkeCUyRmxvb3AtcGFnZS1jb250YWluZXI%3D\",\r\n  \"sourceType\": \"Compose\"\r\n}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "FluidEmbedCard"
+        },
+        {
+            "id": "placeholderCard",
+            "contentType": "application/vnd.microsoft.card.codesnippet",
+            "contentUrl": null,
+            "content": "{}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "FLUID_PLACEHOLDER_CARD"
         }
     ],
     "mentions": [],
