@@ -12,16 +12,11 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ClockOutPostRequestBody
 {
+	IsAtApprovedLocation = true,
 	Notes = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "clock out smaple notes",
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"atAprovedLocation" , true
-		},
+		Content = "clocking out",
 	},
 };
 

@@ -3,7 +3,7 @@ title: "productRevision resource type"
 description: "Represents a product revision that is associated with a quality update."
 author: "Ryan-K-Williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: resourcePageType
 ms.date: 09/16/2024
 ---

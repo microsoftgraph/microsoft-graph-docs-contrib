@@ -50,7 +50,7 @@ You can specify the following properties when you create a **cloudPcExportJob**.
 |:---|:---|:---|
 |filter|String|The filter applied on the report. Optional.|
 |format|String|The format of the exported report. Optional.|
-|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md#cloudpcreportname-values)|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`, `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`.|
+|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md#cloudpcreportname-values)|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`, `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `cloudPcInsightReport`, `regionalInaccessibleCloudPcTrendReport`, `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport` . Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `cloudPcInsightReport`, `regionalInaccessibleCloudPcTrendReport`, `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`.|
 |select|String collection|The selected columns of the report. Optional.|
 
 ## Response
@@ -184,7 +184,7 @@ Content-length: 315
     "ManagedDeviceName",
     "AvgRoundTripTimeInMsP50",
     "LastConnectionRoundTripTimeInMs",
-    "AvgAvailableBandwidthInMBpsP50",
+    "AvgAvailableBandwidthInMbpsP50",
     "LastConnectionAvailableBandWidthInMSps",
     "AvgRemoteSignInTimeInSecP50",
     "UDPConnectionPercentage",
@@ -254,7 +254,7 @@ Content-Type: application/json
     "ManagedDeviceName",
     "AvgRoundTripTimeInMsP50",
     "LastConnectionRoundTripTimeInMs",
-    "AvgAvailableBandwidthInMBpsP50",
+    "AvgAvailableBandwidthInMbpsP50",
     "LastConnectionAvailableBandWidthInMSps",
     "AvgRemoteSignInTimeInSecP50",
     "UDPConnectionPercentage",

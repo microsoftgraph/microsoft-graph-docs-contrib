@@ -27,8 +27,9 @@ The [chatMessageAttachment](/graph/api/resources/chatmessageattachment) resource
 
 Cards represent visual elements backed by a predefined schema. Teams supports the cards defined by the [Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true#attachment-object) in addition to the following card types:
 
-- Code snippet - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
+- Code snippet or place holder - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
 - Announcement card - Set **contentType** set to `application/vnd.microsoft.card.announcement`
+- Microsoft Loop component card - Set **contentType** set to `application/vnd.microsoft.card.fluidEmbedCard`
 
 For cards, the **contentType** property is set to the type of card, and the **content** property contains the serialized json for the card.
 
@@ -69,6 +70,31 @@ The following example shows the schema for an adaptive card attachment when the 
 ```
 
 > **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** aren't supported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
+
+The following example shows the schema for a Loop component as two attachments.
+
+```json
+    "attachments": [
+        {
+            "id": "b21e256a-8581-45cf-ae05-8bb998360bcc",
+            "contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+            "contentUrl": null,
+            "content": "{\r\n  \"componentUrl\": \"https://teamsgraph-my.sharepoint.com/:fl:/g/personal/sumanac_teamsgraph_onmicrosoft_com/EQnofOQM0MpOoDaRIvw-pS8Bfsj_WDFuanBBXnjDAD-w3g?nav=cz0lMkZwZXJzb25hbCUyRnN1bWFuYWNfdGVhbXNncmFwaF9vbm1pY3Jvc29mdF9jb20mZD1iIWVUcmxYX19jN2t5eW9GSFhJdG8yTDI4bmtnV2EtOXhEa244SVBOdGZFYnlxandPblkwdE9TcFVldkh6dWtBV1ImZj0wMUU2TzQ0WFlKNUI2T0lER1FaSkhLQU5VUkVMNkQ1SkpQJmM9JTJGJmZsdWlkPTEmYT1UZWFtcyZwPSU0MGZsdWlkeCUyRmxvb3AtcGFnZS1jb250YWluZXI%3D\",\r\n  \"sourceType\": \"Compose\"\r\n}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "FluidEmbedCard"
+        },
+        {
+            "id": "placeholderCard",
+            "contentType": "application/vnd.microsoft.card.codesnippet",
+            "contentUrl": null,
+            "content": "{}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "FLUID_PLACEHOLDER_CARD"
+        }
+    ],
+```
 
 #### file attachment
 

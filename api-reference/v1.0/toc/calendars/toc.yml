@@ -2,6 +2,8 @@
 # GENERATED FILE - DO NOT EDIT
 #
 items:
+- name: Overview
+  href: ../../resources/calendar-overview.md
 - name: Calendar
   items:
   - name: Calendar
@@ -16,6 +18,8 @@ items:
     href: ../../api/calendar-update.md
   - name: Delete
     href: ../../api/calendar-delete.md
+  - name: Permanently delete
+    href: ../../api/calendar-permanentdelete.md
   - name: List calendar view
     href: ../../api/calendar-list-calendarview.md
   - name: List events
@@ -48,6 +52,8 @@ items:
     href: ../../api/event-update.md
   - name: Delete
     href: ../../api/event-delete.md
+  - name: Permanently delete
+    href: ../../api/event-permanentdelete.md
   - name: Get delta
     href: ../../api/event-delta.md
   - name: Forward event
@@ -98,6 +104,8 @@ items:
     href: ../../api/eventmessage-update.md
   - name: Delete
     href: ../../api/message-delete.md
+  - name: Permanently delete
+    href: ../../api/eventmessage-permanentdelete.md
   - name: Copy message
     href: ../../api/message-copy.md
   - name: Create draft to forward message

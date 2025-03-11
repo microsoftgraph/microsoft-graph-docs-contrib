@@ -105,10 +105,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetprovisionedcloudpcs-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetprovisionedcloudpcs-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudpcgetprovisionedcloudpcs-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -204,7 +200,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='30d0e128-de93-41dc-89ec-33d84bb662a0',servicePlanId='9ecf691d-8b82-46cb-b254-cd061b2c02fb')?$select=id,displayName,powerState,connectivityResult,lastLoginResult,lastRemoteActionResult,osVersion,provisioningPolicyName,userAccountType
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='30d0e128-de93-41dc-89ec-33d84bb662a0',servicePlanId='9ecf691d-8b82-46cb-b254-cd061b2c02fb')?$select=id,displayName,powerState,connectivityResult,lastLoginResult,lastRemoteActionResult,osVersion,provisioningPolicyName,userAccountType,productType
 ```
 
 # [C#](#tab/csharp)
@@ -229,10 +225,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetprovisionedcloudpcs-2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetprovisionedcloudpcs-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -268,7 +260,8 @@ Content-Type: application/json
       "lastRemoteActionResult": "Succeed",
       "osVersion": null,
       "provisioningPolicyName": "Test-Policy",
-      "userAccountType": null
+      "userAccountType": null,
+      "productType": null
     },
     {
       "@odata.type": "#microsoft.graph.cloudPC",
@@ -280,7 +273,8 @@ Content-Type: application/json
       "lastRemoteActionResult": "Succeed",
       "osVersion": null,
       "provisioningPolicyName": "Test-Policy",
-      "userAccountType": null
+      "userAccountType": null,
+      "productType": null
     }
   ]
 }

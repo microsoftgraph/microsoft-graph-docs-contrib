@@ -1,0 +1,72 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../resources/exchange-import-export-api-overview.md
+- name: Mailbox
+  items:
+  - name: Mailbox
+    href: ../../resources/mailbox.md
+  - name: Create import session
+    href: ../../api/mailbox-createimportsession.md
+  - name: Export items
+    href: ../../api/mailbox-exportitems.md
+- name: Mailbox item
+  items:
+  - name: Mailbox item
+    href: ../../resources/mailboxitem.md
+  - name: List
+    href: ../../api/mailboxfolder-list-items.md
+  - name: Get
+    href: ../../api/mailboxitem-get.md
+  - name: Get delta
+    href: ../../api/mailboxitem-delta.md
+  - name: Extended properties
+    items:
+    - name: Get single-value property
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
+    - name: Get multi-value property
+      href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Mailbox folder
+  items:
+  - name: Mailbox folder
+    href: ../../resources/mailboxfolder.md
+  - name: List
+    href: ../../api/mailbox-list-folders.md
+  - name: Create
+    href: ../../api/mailbox-post-folders.md
+  - name: Get
+    href: ../../api/mailboxfolder-get.md
+  - name: Update
+    href: ../../api/mailboxfolder-update.md
+  - name: Delete
+    href: ../../api/mailbox-delete-folders.md
+  - name: Get delta
+    href: ../../api/mailboxfolder-delta.md
+  - name: List child mailbox folders
+    href: ../../api/mailboxfolder-list-childfolders.md
+  - name: List items in folder
+    href: ../../api/mailboxfolder-list-items.md
+  - name: Extended properties
+    items:
+    - name: Create single-value property
+      href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    - name: Get single-value property
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
+    - name: Create multi-value property
+      href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    - name: Get multi-value property
+      href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Exchange settings
+  items:
+  - name: Exchange settings
+    href: ../../resources/exchangesettings.md
+  - name: List
+    href: ../../api/usersettings-list-exchange.md
+- name: Complex types
+  items:
+  - name: Export item response
+    href: ../../resources/exportitemresponse.md
+  - name: Mailbox item import session
+    href: ../../resources/mailboxitemimportsession.md
