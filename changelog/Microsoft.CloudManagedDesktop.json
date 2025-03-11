@@ -6653,7 +6653,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "retrieveCrossRegionDisasterRecoveryReport",
             "ChangeType": "Change",
-            "Description": "Updated the columns supported in the [retrieveCrossRegionDisasterRecoveryReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta). Removed the IsCrossRegionEnabled and CrossRegionHealthStatus columns, and added the EnabledDRType, DRHealthStatus, and BackupCloudPcStatus columns.",
+            "Description": "Updated the columns supported in the [retrieveCrossRegionDisasterRecoveryReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta). Removed the isCrossRegionEnabled and crossRegionHealthStatus columns, and added the enabledDRType, dRHealthStatus, and backupCloudPcStatus columns.",
             "Target": "retrieveCrossRegionDisasterRecoveryReport"
           }
         ],
