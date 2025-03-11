@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties for the signed-in user.
+Get a list of [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties for a user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -24,14 +24,27 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "windowssetting_list_instances" } -->
 [!INCLUDE [permissions-table](../includes/permissions/windowssetting-list-instances-permissions.md)]
+>[!NOTE]
+> - The `UserWindowsSettings.Read` permission allows the app to read the settings of the signed-in user only.
+> - The `UserWindowsSettings.Read.All` permission allows the app to read the settings of a specific user. The calling user must be assigned the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+>   - Microsoft 365 Backup Administrator
 
 ## HTTP request
 
+For a specific user:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET users/{user-id}@{tenant-id}/settings/windows/{windowsSettingId}/instances
+````
+> [!Note]
+> + {tenant-id} in the HTTP request URL must match the tenant id of the calling user.
+
+For the signed-in user:
+<!-- { "blockType": "ignored" } -->
+```http
 GET /me/settings/windows/{windowsSettingId}/instances
 ```
 
