@@ -23,10 +23,9 @@ Inherits from [customAuthenticationExtension](../resources/customauthenticatione
 For more information, see [Configure a custom email provider for one time passcode send events (preview)](/entra/identity-platform/custom-extension-email-otp-get-started).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get](../api/onotpsendcustomextension-get.md)|[onOtpSendCustomExtension](../resources/onotpsendcustomextension.md)|Read the properties and relationships of an [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) object.|
-|[Update](../api/onotpsendcustomextension-update.md)|[onOtpSendCustomExtension](../resources/onotpsendcustomextension.md)|Update the properties of an [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) object.|
+None.
+
+For the list of API operations for managing this resource type, see the [customAuthenticationExtension](../resources/customauthenticationextension.md) resource type.
 
 ## Properties
 |Property|Type|Description|
