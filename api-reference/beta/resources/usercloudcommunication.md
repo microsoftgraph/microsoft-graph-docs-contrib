@@ -14,11 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represent the communications path to reach Call Settings.
 
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 |Method|Return type|Description|
