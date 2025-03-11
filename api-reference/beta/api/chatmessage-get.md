@@ -908,7 +908,7 @@ Content-type: application/json
 
 ### Example 8: Get a chat message with a code block
 
-The following example shows a request that gets a chat message with code block.
+The following example shows a request that gets a chat message with a code block.
 
 #### Request
 
@@ -925,7 +925,7 @@ GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@t
 
 #### Response
 
-The following example shows the response. The message body contains code block represented inside `<codeblock></codeblock>` and `<code></code>` tags. 
+The following example shows the response. The message body contains a code block represented inside the `<codeblock></codeblock>` and `<code></code>` tags. 
 
 <!-- {
   "blockType": "response",
