@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a qrCodePinAuthenticationMethod object.
+Deletes user's [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object. Once the object is deleted, it can't be retreived. It will not appear in Entra ID as usable authentication method in user's profile. User will not be able to sign-in with QR codes associated with this object. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
