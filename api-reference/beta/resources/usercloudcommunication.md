@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List callSettings](../api/usercloudcommunication-list-callsettings.md)|[callSettings](../resources/callsettings.md) collection|*Contains information about a call settings resource.|
+|[Get callSettings](../resources/callsettings.md)|[callSettings](../resources/callsettings.md) collection|*Contains information about a call settings entity.|
 
 ## Properties
 |Property|Type|Description|
