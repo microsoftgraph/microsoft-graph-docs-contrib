@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "71768e60-0d7f-4c1a-bfa9-049320a72828",
+          "Id": "999068ba-8006-4d1b-a24b-4d72d4bdcbb7",
           "ApiChange": "Relationship",
           "ChangedApiName": "communications",
           "ChangeType": "Addition",
@@ -11,12 +11,30 @@
           "Target": "user"
         }
       ],
-      "Id": "71768e60-0d7f-4c1a-bfa9-049320a72828",
-      "Cloud": "Review",
+      "Id": "999068ba-8006-4d1b-a24b-4d72d4bdcbb7",
+      "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-02-22T01:55:06.4995463Z",
+      "CreatedDateTime": "2025-03-11T21:51:09.4920832Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e0073a12-525e-4e11-ad9b-c193a117c279",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userCloudCommunication",
+          "ChangeType": "Addition",
+          "Description": "Added the [userCloudCommunication](https://learn.microsoft.com/en-us/graph/api/resources/userCloudCommunication?view=graph-rest-beta) resource.",
+          "Target": "userCloudCommunication"
+        }
+      ],
+      "Id": "e0073a12-525e-4e11-ad9b-c193a117c279",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-11T21:51:09.4923283Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
     },
     {      
       "ChangeList": [
