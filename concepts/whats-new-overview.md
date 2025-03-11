@@ -17,24 +17,19 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-<<<<<<< HEAD
 ## March 2025: New and generally available
 
 ### Teamwork and communications | Teams and Channel
 
 Use the **firstChannelName** property on a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to set the name of the first channel created in a team.
 
-=======
->>>>>>> b8be026df2328d9c7c1554cf3ef5c7ea3dc60c6b
 ## March 2025: New in preview only
 
 ### Device and app management | Cloud PC
 
-<<<<<<< HEAD
 Removed the `GET /deviceManagement/virtualEndpoint/snapshots/{cloudPcSnapshotId}` method from the [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) resource.
-=======
+
 Use the new members `australasia` and `europe` in **cloudPcRegionGroup** to indicate the geographic group to which a region belongs.
->>>>>>> b8be026df2328d9c7c1554cf3ef5c7ea3dc60c6b
 
 ## February 2025: New and generally available 
 
@@ -116,7 +111,6 @@ Enabled the `$filter` query parameter for the [list](/graph/api/listitem-list?vi
 - [List Planner plans](/graph/api/teamschannelplanner-list-plans?view=graph-rest-beta&preserve-view=true) owned by a shared channel in Teams.
 - Updated the request URL of the [List businessScenarioTasks](/graph/api/businessscenarioplanner-list-tasks?view=graph-rest-beta&preserve-view=true) method to require the `$filter` query parameter to scope the request to an **externalObjectId**, **externalContextId**, or a **groupId**.
 
-<<<<<<< HEAD
 ### Teamwork and communications | Calls and online meetings
 
 - Enabled the **allowRecording**, **allowTranscription**, **anonymizeIdentityForRoles**, **broadcastSettings**, and **watermarkProtection** as supported properties in the [update](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true) operation of the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
@@ -128,13 +122,6 @@ Enabled the `$filter` query parameter for the [list](/graph/api/listitem-list?vi
   - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
   - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
 - [Create](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true#example-4-create-a-one-on-one-chat-with-rsc-granted-apps) a one-on-one chat with RSC-granted apps.
-=======
-### Teamwork and communications | Messaging
-
-Introduced the following more granular delegated and application permissions for retrieving all members of a channel:
- - Use the `ChannelMember.Read.All` delegated permission instead of the `Group.Read.All` delegated permission.
- - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
->>>>>>> b8be026df2328d9c7c1554cf3ef5c7ea3dc60c6b
 
 ## Contribute to Microsoft Graph
 

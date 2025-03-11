@@ -3,7 +3,6 @@
     {
       "ChangeList": [
         {
-<<<<<<< HEAD
           "Id": "82f27d11-a97b-4b47-85c1-3fce7e35bfe0",
           "ApiChange": "Member",
           "ChangedApiName": "europe",
@@ -27,7 +26,7 @@
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
-=======
+    { 
       "ChangeList": [
         {
           "Id": "3ea8c1de-06ee-4159-9066-d6d087d2081c",
@@ -42,7 +41,6 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-03-06T06:43:20.8792314Z",
->>>>>>> upstream/main
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
