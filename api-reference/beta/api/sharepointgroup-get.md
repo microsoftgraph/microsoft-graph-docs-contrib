@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [sharePointGro
 
 ### Example 1: Get a sharePointGroup by ID 
 
-The following example shows how to get a **sharePointGroup** identified by `10` that is local to a fileStorageContainer identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+The following example shows how to get a **sharePointGroup** identified by `10` that is local to a **fileStorageContainer** identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 
 #### Request
 
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 ### Example 2: Attempt to get a sharePointGroup by ID 
 
-The following example attempts to get a **sharePointGroup** identified by `12` that is local to a fileStorageContainer identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the group doesn't exist in the container.
+The following example attempts to get a **sharePointGroup** identified by `12` that is local to a **fileStorageContainer** identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the group doesn't exist in the container.
 
 #### Request
 
