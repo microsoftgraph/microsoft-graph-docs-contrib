@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# Create temporary pin
+# Create a Temporary Pin
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new qrPin object when admin creates temporary pin for the user.
+Create a new qrPin object when admin adds or resets temporary pin of the user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
