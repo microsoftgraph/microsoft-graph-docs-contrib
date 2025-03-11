@@ -212,7 +212,7 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
     - id - The ID of the custom emoji.
     - alt - An alternate representation for the custom emoji; for example, the name of the custom emoji.
     - source - The hosted content of the custom emoji associated with the message.
-- codeblock - When the body of message contains a code block. The `"<codeblock class=\"Json\"><code>Hello world</code></codeblock>"` element represents the properties of a *code block*.
+- codeblock - When the body of the message contains a code block, the `"<codeblock class=\"Json\"><code>Hello world</code></codeblock>"` element represents the properties of a code block.
  
 **Example: A message that @mentions a team**
 
