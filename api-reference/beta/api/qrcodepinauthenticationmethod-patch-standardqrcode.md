@@ -14,26 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new qrCode object.
+Create a new standard or temporary qrCode object. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-### Permissions acting on self
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read|UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
-
-### Permissions acting on other users
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
 
 [!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
 
@@ -43,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-post-standardqrcode-permissions.md)]
+
+<!-- TODO add permission and request/response for temporary QR code-->
 
 ## HTTP request
 
@@ -68,11 +54,10 @@ In the request body, supply a JSON representation of the [qrCode](../resources/q
 
 You can specify the following properties when creating a **qrCode**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|expireDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|startDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|expireDateTime|DateTimeOffset|It is a mandatory attribute. QR code will be expired and becomes unusable based on set expireDateTime. Max. lifetime of standard QR code is upto 395 days and temporary QR code is upto 12 hours. It can be modified for standard QR code later upto max. lifetime but can't be modified for temporary QR code.|
+|startDateTime|DateTimeOffset|It is a mandatory attribute. It determines when QR code will become active.|
 
 
 ## Response
