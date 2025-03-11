@@ -2579,6 +2579,40 @@
     {
       "ChangeList": [
         {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "replyWithQuote",
+          "ChangeType": "Addition",
+          "Description": "Added the [replyWithQuote](https://learn.microsoft.com/en-us/graph/api/chatmessage-replywithquote?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "forwardToChat",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardToChat](https://learn.microsoft.com/en-us/graph/api/chatmessage-forwardtochat?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "forwardToChatResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardToChatResult](https://learn.microsoft.com/en-us/graph/api/resources/forwardToChatResult?view=graph-rest-beta) resource type.",
+          "Target": "forwardToChatResult"
+        }
+      ],
+      "Id": "e1ba8da5-7311-41f7-8eba-f6cf1c9793f5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-11T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fc85a381-3549-4388-bc52-305b9b5f3cf1",
           "ApiChange": "Property",
           "ChangedApiName": "firstChannelName",
