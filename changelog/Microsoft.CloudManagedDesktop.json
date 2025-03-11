@@ -63,6 +63,32 @@
     {
       "ChangeList": [
         {
+          "Id": "b09ae587-6dc0-468c-82e7-d8ef1bab2617",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcDisasterRecoveryLicenseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcDisasterRecoveryLicenseType** enumeration type.",
+          "Target": "cloudPcDisasterRecoveryLicenseType"
+        },
+        {
+          "Id": "b09ae587-6dc0-468c-82e7-d8ef1bab2617",
+          "ApiChange": "Resource",
+          "ChangedApiName": "licenseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **licenseType** property to the [cloudPcDisasterRecoveryCapability](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdisasterrecoverycapability?view=graph-rest-beta) resource type",
+          "Target": "cloudPcDisasterRecoveryCapability"
+        }
+      ],
+      "Id": "b09ae587-6dc0-468c-82e7-d8ef1bab2617",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-11T15:45:13.2794293Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3ea8c1de-06ee-4159-9066-d6d087d2081c",
           "ApiChange": "Method",
           "ChangedApiName": "cloudPcSnapshot",
