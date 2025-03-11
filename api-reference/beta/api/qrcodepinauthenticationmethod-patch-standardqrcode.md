@@ -8,7 +8,7 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# Create qrCode
+# Create a qrCode
 
 Namespace: microsoft.graph
 
@@ -27,8 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-post-standardqrcode-permissions.md)]
-
-<!-- TODO add permission and request/response for temporary QR code-->
 
 ## HTTP request
 
