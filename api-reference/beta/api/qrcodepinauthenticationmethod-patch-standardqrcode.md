@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# Create a qrCode
+# Create a Standard or Temporary QR code
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new standard or temporary qrCode object. 
+Create a new standard or temporary qrCode object. A user can have only one active standard or temporary QR code. To create a new standard or temporary QR code, delete existing active standard or temporary QR code.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
