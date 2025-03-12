@@ -38,10 +38,6 @@ GET /me/mailFolders/{mailFolderId}/operations/{mailFolderOperationId}
 GET /users/{usersId}/mailFolders/{mailFolderId}/operations/{mailFolderOperationId}
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -67,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/mailFolders/{mailFolderId}/operations/{mailFolderOperationId}
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/operations/a384ae19-4f06-3576-81fc-795707bb498b
 ```
 
 ### Response
@@ -88,8 +84,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.mailFolderOperation",
     "id": "a384ae19-4f06-3576-81fc-795707bb498b",
-    "resourceLocation": "String",
-    "status": "String"
+    "resourceLocation": "https://graph.microsoft.com/beta/users('319eaf3g-c3b8-46f5-9f16-38adf00cbaf3')/mailFolders('AAMkAGU0NTIyOWE0LWYxMmUtNGViMi04ZjMyLTljMjUwYWM3NDI3YQAuAAAAAAA25z0YzVCgR6uHvkjbRp9VAQAretDva7GxQ4Hap0R24JZlAAAAAAEMAAA=')/operations('a384ae19-4f06-3576-81fc-795707bb498b')",
+    "status": "succeeded"
   }
 }
 ```
