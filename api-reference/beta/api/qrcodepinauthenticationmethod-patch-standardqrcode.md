@@ -54,8 +54,8 @@ You can specify the following properties when creating a **qrCode**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|expireDateTime|DateTimeOffset|It is a mandatory attribute. QR code will be expired and becomes unusable based on set expireDateTime. Max. lifetime of standard QR code is upto 395 days and temporary QR code is upto 12 hours. It can be modified for standard QR code later upto max. lifetime but can't be modified for temporary QR code.|
-|startDateTime|DateTimeOffset|It is a mandatory attribute. It determines when QR code will become active.|
+|expireDateTime|DateTimeOffset|It is a mandatory request value. QR code will be expired and becomes unusable based on set expireDateTime. Max. lifetime of standard QR code is upto 395 days and temporary QR code is upto 12 hours. It can be modified for standard QR code later upto max. lifetime but can't be modified for temporary QR code.|
+|startDateTime|DateTimeOffset|It is a mandatory request value. It determines when QR code will become active.|
 
 
 ## Response
