@@ -33,15 +33,13 @@ The calling user must be assigned the following [Microsoft Entra roles](/entra/i
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored"
-}
+  "blockType": "ignore"}
 -->
 ``` http
 DELETE users/{user-id}@{tenant-id}/settings/windows
 ```
 > [!Note]
->
-> + {tenant-id} in the request URL must match the tenant id of the calling user.
+> + {tenant-id} in the HTTP request URL must match the tenant id of the calling user.
 
 ## Request headers
 
@@ -64,7 +62,8 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_windowssetting"
+  "name": "delete_windowssetting",
+  "sampleKeys": ["87d349ed-44d7-43e1-9a83-5f2406dee5bd@4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"]
 }
 -->
 ``` http
