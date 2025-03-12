@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object for the user. A user can have only one QR code authentication method. A new QR code authentication can be added once existing one is expired or deleted, i.e. becomes unusable authentication method. A QR code authentication method can have standard and temporary QR codes. At any point of time of a user, there can be only one active QR code authentication method. An active QR code authentication method can have only one active standard QR code and one active temporary QR code. To create a new QR code authentication method, standard QR code, or temporary QR code, delete existing respective objects and add new.
+Create a new [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object for the user. A user can have only one active QR code authentication method. A new QR code authentication can be added once existing one is expired or deleted, i.e. becomes unusable for sign-in. This auth method can have standard and temporary QR codes. An active QR code authentication method can have only one active standard and one temporary QR code. To create a new QR code authentication method, standard QR code, or temporary QR code, delete existing respective objects and add new.
 
 
 ## Permissions
@@ -55,8 +55,8 @@ You can specify the following properties when creating a **qrCodePinAuthenticati
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|standardQRCode|[qrCode](../resources/qrcode.md)|Standard QR code is primary QR code of the user with lifetime upto 395 days (13 months). There can be only one active standard QR code for the user. It is created during creating QR code authentication method. A new standard QR code can be created if existing one is expired or deleted. Admin needs to specify startDateTime, time when this QR code will be activated, and, expireDateTime, time when this QR code will be expired, in the create request.|
-|pin|[qrPin](../resources/qrpin.md)|It is the pin of the user. Admin creates the temporary pin, which is forced to be updated by the user during sign-in. Admin can specify custom temporary pin or auto-generate it during creation of the authentication method Optional. Custom pin support is only available during creation of QR code authentication method.|
+|standardQRCode|[qrCode](../resources/qrcode.md)|Standard QR code is primary QR code of the user with lifetime upto 395 days (13 months). There can be only one active standard QR code for the user. It is created during adding QR code authentication method. A new standard QR code can be created if existing one is expired or deleted. Admin needs to specify startDateTime, time when this QR code will be activated, and, expireDateTime, time when this QR code will be expired, in the create request.|
+|pin|[qrPin](../resources/qrpin.md)|It is the pin of the user. Admin creates the temporary pin, which is forced to be changed by the user during sign-in. Admin can specify custom or auto-generate pin value. Custom pin support is only available during auth method creation.|
 
 
 ## Response
