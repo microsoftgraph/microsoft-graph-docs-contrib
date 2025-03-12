@@ -1,6 +1,6 @@
 ---
 title: "userCloudCommunication resource type"
-description: "Represents information about the interaction from communications and user"
+description: "Represents information about the interaction from communications and a user."
 author: "garchiro7"
 ms.date: 03/11/2025
 ms.localizationpriority: medium
@@ -14,24 +14,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the communications path to reach Call Settings.
-
-Inherits from [entity](../resources/entity.md).
+Represents information about the interaction from communications and the user.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get callSettings](../resources/callsettings.md)|[callSettings](../resources/callsettings.md) collection|*Contains information about a call settings entity.|
+|[List delegates](../api/callsettings-list-delegates.md)|[delegationSettings](../resources/delegationsettings.md) collection|Retrieve all delegates for a user.    |
+|[List delegators](../api/callsettings-list-delegators.md)|[delegationSettings](../resources/delegationsettings.md) collection|Retrieve all delegators for a user. |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|**User ID** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|callSettings|[callSettings](../resources/callsettings.md)|**Call Settings assigned to the user**|
+|callSettings|[callSettings](../resources/callsettings.md)|The call Settings assigned to the user.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -45,8 +42,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.userCloudCommunication",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.userCloudCommunication"
 }
 ```
 
