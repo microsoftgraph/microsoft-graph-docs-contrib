@@ -114,7 +114,7 @@ By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only 
 |messages|[message](message.md) collection|The collection of messages in the mailFolder.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
-|operations|[mailfolderoperation](mailfolderoperation.md) collection|The collection of long running operations in the mailFolder.|
+|operations|[mailFolderOperation](mailfolderoperation.md) collection|The collection of long running operations in the mailFolder.|
 
 ## JSON representation
 

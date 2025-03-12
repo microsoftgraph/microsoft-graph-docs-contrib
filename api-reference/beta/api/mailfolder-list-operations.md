@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/testuser@testorg.com/mailFolders/AAMkAGVmMDEzM/operations
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/operations
 ```
 
 ### Response
