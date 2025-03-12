@@ -13,7 +13,7 @@ ms.topic: concept-article
 
 # Permissions differences between Azure AD Graph and Microsoft Graph
 
-This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+> This article is part of *Step 1: review API differences* in the [Azure AD Graph app migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) series.
 
 The least privileged permission for a specific scenario might be different between Azure AD Graph and Microsoft Graph. When migrating your apps to call Microsoft Graph, analyze whether you also need to migrate to more narrowly scoped Microsoft Graph permissions to maintain least privilege.
 
