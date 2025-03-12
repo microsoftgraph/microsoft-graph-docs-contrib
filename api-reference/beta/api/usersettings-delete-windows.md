@@ -33,7 +33,8 @@ The calling user must be assigned the following [Microsoft Entra roles](/entra/i
 ## HTTP request
 
 <!-- {
-  "blockType": "ignore"}
+  "blockType": "ignored"
+}
 -->
 ``` http
 DELETE users/{user-id}@{tenant-id}/settings/windows
