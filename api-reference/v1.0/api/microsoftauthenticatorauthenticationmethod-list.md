@@ -40,6 +40,8 @@ Get details of your own Microsoft Authenticator authentication methods.
 GET /me/authentication/microsoftAuthenticatorMethods
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get details of your own or another user's Microsoft Authenticator authentication methods.
 <!-- { "blockType": "ignored" } -->
 ``` http
