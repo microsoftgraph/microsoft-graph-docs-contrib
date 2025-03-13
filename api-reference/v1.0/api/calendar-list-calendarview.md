@@ -1,27 +1,27 @@
 ---
 title: "List calendarView"
-description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,"
-localization_priority: Priority
-author: "harini84"
-ms.prod: "outlook"
+description: "Get the occurrences, exceptions and single instances of events in a calendar view defined by a time range."
+ms.localizationpriority: high
+author: "iamgirishck"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # List calendarView
 
 Namespace: microsoft.graph
 
-Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
-from a user's default calendar `(../me/calendarview)` or some other calendar of the user's.
+Get the occurrences, exceptions and single instances of events in a calendar view defined by a time range,
+from a user's default calendar `(../me/calendarView)` or some other calendar of the user's.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite |
-|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
-|Application | Calendars.Read, Calendars.ReadWrite |
+<!-- { "blockType": "permissions", "name": "calendar_list_calendarview" } -->
+[!INCLUDE [permissions-table](../includes/permissions/calendar-list-calendarview-permissions.md)]
 
 ## HTTP request
 
@@ -38,9 +38,6 @@ A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../
 ```http
 GET /me/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-
-GET /me/calendarGroup/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
@@ -59,9 +56,11 @@ In the request URL, provide the following required query parameters with values.
 | startDateTime | String | The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". |
 | endDateTime   | String | The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00".   |
 
-The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and are not impacted by the value of the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.
+The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and aren't impacted by the value of the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.
 
 This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+**CalendarView** with `$top` has a minimum value of 1 and maximum of 1000. 
 
 > [!NOTE]
 > The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
@@ -69,18 +68,21 @@ This method also supports some of the [OData Query Parameters](/graph/query-para
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}. Required.  |
+| Authorization  | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
+
+If the result set spans multiple pages, **calendarView** returns an **@odata.nextLink** property in the response that contains a URL to the next page of results. See [paging](/graph/paging) for details.
+
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -90,26 +92,44 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017-01-01T19:00:00-08:00&endDateTime=2017-01-07T19:00:00-08:00
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-calendarview-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-calendarview-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-calendarview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-calendarview-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-calendarview-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-calendarview-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following example shows the response. 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,7 +139,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 354
 
 {
   "value": [

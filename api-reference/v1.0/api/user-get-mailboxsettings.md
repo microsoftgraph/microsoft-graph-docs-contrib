@@ -1,10 +1,11 @@
 ---
 title: "Get user mailbox settings"
 description: "Get the user's mailboxSettings. This includes settings for automatic replies (notify people automatically upon "
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: "outlook"
+ms.localizationpriority: medium
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get user mailbox settings
@@ -23,6 +24,7 @@ receipt of their email)
 - time format
 - time zone
 - [working hours](../resources/workinghours.md)
+- [user purpose](../resources/mailboxsettings.md#userpurpose-values)
 
 Users can set their preferred date and time formats using Outlook on the web. Users can choose one of the supported [short date](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats. This `GET` operation returns the format the user has chosen.
 
@@ -30,16 +32,16 @@ Users can set the time zone they prefer on any Outlook client, by choosing from 
 
 This `GET` operation returns the user's preferred time zone in the format that the administrator has set up. If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md). Subsequently you will be able to get the time zone in that format. Alternatively, you can manage the format conversion separately in your app.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
-|Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
-|Application | MailboxSettings.Read, MailboxSettings.ReadWrite |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "user_get_mailboxsettings" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-get-mailboxsettings-permissions.md)]
 
 ## HTTP request
+
 To get all the mailbox settings for a user:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -47,7 +49,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, or working hours:
+To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, working hours, or user's recipient or mailbox type (for example, user purpose):
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -70,16 +72,20 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
+
+GET /me/mailboxSettings/userPurpose
+GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
+
 ## Optional query parameters
-This method supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -93,14 +99,20 @@ If successful, this method returns a `200 OK` response code and one of the follo
 - string (for **timeFormat**)
 - string (for **timeZone**)
 - [workingHours](../resources/workinghours.md)
+- [userPurpose](../resources/mailboxsettings.md#userpurpose-values)
 
 ## Examples
 
-### Example 1
-#### Request
-The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format,
-locale (language and country/region), time format, time zone, and working hours.
+### Example 1: Get all mailbox settings of the signed-in user's mailbox
 
+Get all the mailbox settings of the signed-in user's mailbox that include settings for automatic replies, date format, locale (language and country/region), time format, time zone, working hours, and user purpose.
+
+#### Request
+
+The following example shows a request.
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
@@ -109,9 +121,45 @@ locale (language and country/region), time format, time zone, and working hours.
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-mailboxsettings-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-mailboxsettings-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-mailboxsettings-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-mailboxsettings-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-mailboxsettings-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
-The response includes all the mailbox settings of the signed-in user.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+The following is an example of the response that includes all mailbox settings of the signed-in user.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -157,15 +205,20 @@ Content-type: application/json
             "name":"Pacific Standard Time"
         }
     },
+    "userPurpose": {
+        "value": "user"
+    },
     "dateFormat": "MM/dd/yyyy",
     "timeFormat": "hh:mm tt",
     "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
 }
 ```
 
-### Example 2
+### Example 2: Get specifically the automatic replies settings of the signed-in user's mailbox
+
 #### Request
-The second example gets specifically the automatic replies settings of the signed-in user's mailbox.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -175,27 +228,46 @@ The second example gets specifically the automatic replies settings of the signe
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-2-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-2-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-2-java-snippets.md)]
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
-The response includes only the automatic replies settings.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+The following is an example of the response that includes only the automatic replies settings.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -223,21 +295,62 @@ Content-type: application/json
 }
 ```
 
-### Example 3
+### Example 3: Get specifically the working hour settings of the signed-in user's mailbox
+
 #### Request
-The third example gets specifically the working hour settings of the signed-in user's mailbox.
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_mailboxsettings_3"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
-The response includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+The following is an example of the response that includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "name": "get_mailboxsettings_3",
   "truncated": true,
   "@odata.type": "microsoft.graph.workingHours"
@@ -282,6 +395,76 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Get specifically the user purpose settings of the signed-in user's mailbox
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_mailboxsettings_4"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/mailboxSettings/userPurpose
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response that includes only the [user purpose](../resources/mailboxsettings.md#userpurpose-values) settings.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_mailboxsettings_4",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userPurpose"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('622eaaff-0683-4862-9de4-f2ec83c2bd98')/mailboxSettings/userPurpose",
+    "value": "user"
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -290,7 +473,7 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
+  "suppressions": ["Error: getmailboxsettings4:
+      Unable to locate a definition for resource type: microsoft.graph.userPurpose"
   ]
 }-->
-

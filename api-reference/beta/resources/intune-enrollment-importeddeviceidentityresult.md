@@ -1,10 +1,11 @@
 ---
 title: "importedDeviceIdentityResult resource type"
 description: "The importedDeviceIdentityResult resource represents the result of attempting to import a device identity."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # importedDeviceIdentityResult resource type
@@ -34,7 +35,7 @@ Inherits from [importedDeviceIdentity](../resources/intune-enrollment-importedde
 |:---|:---|:---|
 |id|String|Id of the imported device identity Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |importedDeviceIdentifier|String|Imported Device Identifier Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Type of Imported Device Identity Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Possible values are: `unknown`, `imei`, `serialNumber`.|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Type of Imported Device Identity Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Possible values are: `unknown`, `imei`, `serialNumber`, `manufacturerModelSerial`.|
 |lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
@@ -69,9 +70,3 @@ Here is a JSON representation of the resource.
   "status": true
 }
 ```
-
-
-
-
-
-

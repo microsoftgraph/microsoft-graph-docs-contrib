@@ -1,10 +1,11 @@
 ---
 title: "networkSingleSignOnType enum type"
 description: "Wi-Fi Network Single Sign On Type Settings."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # networkSingleSignOnType enum type
@@ -23,9 +24,3 @@ Wi-Fi Network Single Sign On Type Settings.
 |disabled|0|Disabled|
 |prelogon|1|Pre-Logon|
 |postlogon|2|Post-Logon|
-
-
-
-
-
-

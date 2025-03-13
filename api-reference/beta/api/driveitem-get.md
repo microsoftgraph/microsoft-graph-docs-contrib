@@ -1,29 +1,29 @@
 ---
-author: JeremyKelley
-description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
-ms.date: 09/10/2017
-title: Get a file or folder
-localization_priority: Normal
-ms.prod: "sharepoint"
+author: spgraph-docs-team
+description: "Retrieve the metadata for a driveItem in a drive by file system path or ID."
+title: Get driveItem
+ms.localizationpriority: medium
+ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 06/12/2024
 ---
-# Get a DriveItem resource
+# Get driveItem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.
+Retrieve the metadata for a [driveItem](../resources/driveitem.md) in a [drive](../resources/drive.md) by file system path or ID.
+`item-id` is the ID of a drive item. It can also be the unique ID of a [SharePoint list item](../resources/listitem.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-get-permissions.md)]
 
 > Note:
 > The `/teams` endpoint requires the use of Group.Read.All or Group.ReadWrite.All permissions.
@@ -53,8 +53,8 @@ This method supports the `$expand` and `$select` [OData query parameters](/graph
 You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
 
 You can also use the `includeDeletedItems=true` query parameter to return deleted items.
-This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise will be ignored.
-This is currently only supported on OneDrive Personal.
+This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise ignored.
+It's currently only supported on OneDrive Personal.
 
 ## Optional request headers
 
@@ -64,13 +64,13 @@ This is currently only supported on OneDrive Personal.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.
+If successful, this method returns a `200 OK` response code and the [driveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
 
 ### Request
 
-Here is an example of the request to the root folder of the user's OneDrive.
+The following example shows a request to the root folder of the user's OneDrive.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
@@ -78,23 +78,44 @@ Here is an example of the request to the root folder of the user's OneDrive.
 ```msgraph-interactive
 GET /me/drive/root
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-metadata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-item-metadata-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-item-metadata-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-metadata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-metadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-item-metadata-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-item-metadata-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-item-metadata-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-## Response
+### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -128,10 +149,9 @@ Content-type: application/json
 }
 ```
 
-## Remarks
+## Related content
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+For details about how errors are returned, see [Error responses][error-response].
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters
@@ -149,5 +169,3 @@ how errors are returned.
   ]
 }
 -->
-
-

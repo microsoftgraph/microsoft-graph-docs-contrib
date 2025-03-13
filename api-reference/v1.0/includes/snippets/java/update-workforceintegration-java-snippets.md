@@ -4,21 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-WorkforceIntegration workforceIntegrations = new WorkforceIntegration();
-workforceIntegrations.displayName = "displayName-value";
-workforceIntegrations.apiVersion = 99;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+WorkforceIntegration workforceIntegration = new WorkforceIntegration();
+workforceIntegration.setDisplayName("ABCWorkforceIntegration");
+workforceIntegration.setApiVersion(1);
+workforceIntegration.setIsActive(true);
 WorkforceIntegrationEncryption encryption = new WorkforceIntegrationEncryption();
-encryption.protocol = WorkforceIntegrationEncryptionProtocol.SHARED_SECRET;
-encryption.secret = "secret-value";
-workforceIntegrations.encryption = encryption;
-workforceIntegrations.isActive = true;
-workforceIntegrations.url = "url-value";
-workforceIntegrations.supportedEntities = WorkforceIntegrationSupportedEntities.NONE;
+encryption.setProtocol(WorkforceIntegrationEncryptionProtocol.SharedSecret);
+encryption.setSecret("My Secret");
+workforceIntegration.setEncryption(encryption);
+workforceIntegration.setUrl("https://ABCWorkforceIntegration.com/Contoso/");
+workforceIntegration.setSupportedEntities(EnumSet.of(WorkforceIntegrationSupportedEntities.Shift, WorkforceIntegrationSupportedEntities.SwapRequest));
+workforceIntegration.setEligibilityFilteringEnabledEntities(EnumSet.of(EligibilityFilteringEnabledEntities.SwapRequest));
+WorkforceIntegration result = graphClient.teamwork().workforceIntegrations().byWorkforceIntegrationId("{workforceIntegration-id}").patch(workforceIntegration);
 
-graphClient.teamwork().workforceIntegrations()
-	.buildRequest()
-	.patch(workforceIntegrations);
 
 ```

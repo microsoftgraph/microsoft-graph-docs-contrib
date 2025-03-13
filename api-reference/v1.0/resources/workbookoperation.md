@@ -1,10 +1,12 @@
 ---
 title: "workbookOperation resource type"
-description: "Represents the status of a long-running workbook operations."
-localization_priority: Normal
+description: "Represents the status of a long-running workbook operation."
+ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "resourcePageType"
+toc.title: Operation
+ms.date: 07/30/2024
 ---
 
 # workbookOperation resource type
@@ -16,17 +18,17 @@ Represents the status of a long-running workbook operation.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Get the operation with `{operation-id}`. |
-
+| [Get](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Get a workbookOperation object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|String| The current status of the operation. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|id|String| The operation id. Read-only.|
 |error|[workbookOperationError](workbookoperationerror.md)| The error returned by the operation.|
+|id|String| The identifier for the operation. Read-only.|
 |resourceLocation|String| The resource URI for the result.|
+|status|String| The current status of the operation. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
+|statusCode| integer| Status code of the operation. | 
 
 ## Relationships
 
@@ -34,24 +36,27 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "id", "status", "error", "resourceLocation"
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.workbookOperation",
+  "error": {
+    "@odata.type": "microsoft.graph.workbookOperationError"
+  },
   "id": "String (identifier)",
-  "status": {"@odata.type": "microsoft.graph.workbookOperationStatus"},
-  "error": {"@odata.type": "microsoft.graph.workbookOperationError"},
   "resourceLocation": "String",
+  "status": "String",
+  "statusCode": "Integer"
 }
 ```
 

@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
-description: "The Identity resource represents an identity of an actor."
-ms.date: 09/14/2017
-title: Identity
-localization_priority: Normal
+author: "spgraph-docs-team"
+title: "identity resource type"
+description: "Represents an identity of an actor."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: onedrive
+ms.date: 07/23/2024
 ---
 # identity resource type
 
@@ -13,34 +13,37 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **Identity** resource represents an identity of an _actor_.
-For example, an actor can be a user, device, or application.
+Represents an identity of an _actor_. For example, an actor can be a user, device, or application. Multiple Microsoft Graph APIs share this resource and the data they return varies depending on the API.
 
-## JSON representation
-
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity", "optionalProperties": ["displayName", "tenantId", "thumbnails"], "openType": true } -->
-
-```json
-{
-  "displayName": "string",
-  "id": "string",
-  "tenantId": "string",
-  "thumbnails": { "@odata.type": "microsoft.graph.thumbnailSet" }
-}
-```
+Base type of [userIdentity](useridentity.md).
 
 ## Properties
 
 | Property            | Type   | Description                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName         | String | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).  |
-| id                  | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
-| tenantId            | String | Unique identity of the tenant (optional).                                                                                                                                                                                                                                                                             |
+| displayName         | String | The display name of the identity. <br/><br/>For drive items, the display name might not always be available or up to date. For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using [delta](../api/driveitem-delta.md).       |
+| id                  | String |Unique identifier for the identity or actor. For example, in the access reviews decisions API, this property might record the **id** of the principal, that is, the group, user, or application that's subject to review. |
+| tenantId            | String | Unique identity of the tenant. Optional.                                    |
+| thumbnails          | [thumbnailSet](thumbnailset.md) | Keyed collection of thumbnail resources. Optional. Applies to drive items, for example. |
 
-## Remarks
+## Relationships
 
-In some circumstances, the unique identifier for the actor may not be available.
-In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity", "optionalProperties": ["displayName", "tenantId", "thumbnails"], "openType": true } -->
+
+```json
+{
+  "displayName": "String",
+  "id": "String (identifier)",
+  "tenantId": "String",
+  "thumbnails": { "@odata.type": "microsoft.graph.thumbnailSet" }
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,10 +1,11 @@
 ---
 title: "deviceConfigurationSettingState resource type"
 description: "Device Configuration Setting State for a given device."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceConfigurationSettingState resource type
@@ -58,18 +59,10 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "String",
-      "displayName": "String"
+      "displayName": "String",
+      "sourceType": "String"
     }
   ],
   "currentValue": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

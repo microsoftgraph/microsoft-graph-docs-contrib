@@ -1,10 +1,11 @@
 ---
 title: "List win32LobApps"
 description: "List properties and relationships of the win32LobApp objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List win32LobApps
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [win32LobApp](../resources/intune-apps-win32lobapp.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ GET /deviceAppManagement/mobileApps
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3946
+Content-Length: 4179
 
 {
   "value": [
@@ -108,7 +111,11 @@ Content-Length: 3946
         "v10_1709": true,
         "v10_1803": true,
         "v10_1809": true,
-        "v10_1903": true
+        "v10_1903": true,
+        "v10_1909": true,
+        "v10_2004": true,
+        "v10_2H20": true,
+        "v10_21H1": true
       },
       "minimumFreeDiskSpaceInMB": 8,
       "minimumMemoryInMB": 1,
@@ -151,6 +158,7 @@ Content-Length: 3946
       "installExperience": {
         "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
         "runAsAccount": "user",
+        "maxRunTimeInMinutes": 3,
         "deviceRestartBehavior": "allow"
       },
       "returnCodes": [
@@ -171,14 +179,10 @@ Content-Length: 3946
         "publisher": "Publisher value"
       },
       "setupFilePath": "Setup File Path value",
-      "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+      "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+      "displayVersion": "Display Version value",
+      "allowAvailableUninstall": true
     }
   ]
 }
 ```
-
-
-
-
-
-

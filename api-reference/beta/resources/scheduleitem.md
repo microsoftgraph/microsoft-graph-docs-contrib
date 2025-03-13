@@ -1,10 +1,11 @@
 ---
 title: "scheduleItem resource type"
 description: "An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource as well."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-teams"
-author: "harini84"
+ms.subservice: "teams"
+author: "iamgirishck"
+ms.date: 07/22/2024
 ---
 
 # scheduleItem resource type
@@ -26,9 +27,12 @@ An item that describes the availability of a user corresponding to an actual eve
 |subject |String | The corresponding event's subject line. Optional.|
 
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -1,10 +1,11 @@
 ---
 title: "groupPolicyOperationStatus enum type"
 description: "Type of Group Policy operation status."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # groupPolicyOperationStatus enum type
@@ -24,9 +25,3 @@ Type of Group Policy operation status.
 |inProgress|1|Group Policy in progress operation status.|
 |success|2|Group Policy successful operation status.|
 |failed|3|Group Policy failed operation status.|
-
-
-
-
-
-

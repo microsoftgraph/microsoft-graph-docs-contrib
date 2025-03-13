@@ -1,10 +1,11 @@
 ---
 title: "groupPolicyUploadedDefinitionFile resource type"
 description: "The entity represents an ADMX (Administrative Template) XML file uploaded by Administrator. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # groupPolicyUploadedDefinitionFile resource type
@@ -28,11 +29,11 @@ Inherits from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-groupp
 |[Create groupPolicyUploadedDefinitionFile](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-create.md)|[groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)|Create a new [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) object.|
 |[Delete groupPolicyUploadedDefinitionFile](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-delete.md)|None|Deletes a [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md).|
 |[Update groupPolicyUploadedDefinitionFile](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-update.md)|[groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)|Update the properties of a [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) object.|
-|[addLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-addlanguagefiles.md)|None|Not yet documented|
-|[removeLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-removelanguagefiles.md)|None|Not yet documented|
-|[updateLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-updatelanguagefiles.md)|None|Not yet documented|
-|[uploadNewVersion action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-uploadnewversion.md)|None|Not yet documented|
-|[remove action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-remove.md)|None|Not yet documented|
+|[addLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-addlanguagefiles.md)|None||
+|[removeLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-removelanguagefiles.md)|None||
+|[updateLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-updatelanguagefiles.md)|None||
+|[uploadNewVersion action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-uploadnewversion.md)|None||
+|[remove action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-remove.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -44,9 +45,9 @@ Inherits from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-groupp
 |targetNamespace|String|Specifies the URI used to identify the namespace within the ADMX file. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md). Possible values are: `admxBacked`, `admxIngested`.|
 |revision|String|The revision version associated with the file. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|fileName|String|The file name of the ADMX file without the path. For example: edge.admx Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |id|String|Key of the entity. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|fileName|String|The file name of the uploaded ADML file.|
 |status|[groupPolicyUploadedDefinitionFileStatus](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)|The upload status of the uploaded ADMX file. Possible values are: `none`, `uploadInProgress`, `available`, `assigned`, `removalInProgress`, `uploadFailed`, `removalFailed`.|
 |content|Binary|The contents of the uploaded ADMX file.|
 |uploadDateTime|DateTimeOffset|The uploaded time of the uploaded ADMX file.|
@@ -79,9 +80,9 @@ Here is a JSON representation of the resource.
   "targetNamespace": "String",
   "policyType": "String",
   "revision": "String",
+  "fileName": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "fileName": "String",
   "status": "String",
   "content": "binary",
   "uploadDateTime": "String (timestamp)",
@@ -98,9 +99,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

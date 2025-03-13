@@ -1,10 +1,11 @@
 ---
 title: "requestorSettings complex type"
 description: "Used for the `requestorSettings` property of an access package assignment policy. Provides additional settings to select who can create a request."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # requestorSettings resource type
@@ -30,22 +31,24 @@ Used for the **requestorSettings** property of an [access package assignment pol
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| scopeType |String |Who can request. One of `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers`, `AllExistingDirectorySubjects` or `AllExternalSubjects`.  |
+| scopeType |String |Who can request. One of `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllConfiguredConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers`, `AllExistingDirectorySubjects` or `AllExternalSubjects`.  |
 | acceptRequests | Boolean | Indicates whether new requests are accepted on this policy. |
 | allowedRequestors | [userSet](userset.md) collection| The users who are allowed to request on this policy, which can be [singleUser](singleuser.md), [groupMembers](groupmembers.md), and [connectedOrganizationMembers](connectedorganizationmembers.md). |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-
-The following is a JSON representation of the **requestorSettings** property of a policy, which allows the members of a group to request.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.requestorSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.requestorSettings"
 }-->
 
 ```json

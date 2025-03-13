@@ -1,10 +1,11 @@
 ---
 title: "chatMessagePolicyViolationPolicyTip resource type"
 description: "Represents properties of a policy tip on a chatMessagePolicyViolation object. Policy tips provide the sender with information about the policy violation."
-author: "laujan"
+author: "RamjotSingh"
 doc_type: resourcePageType
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.localizationpriority: medium
+ms.subservice: "teams"
+ms.date: 07/22/2024
 ---
 # chatMessagePolicyTip resource type
 
@@ -22,7 +23,7 @@ Policy tips are typically set by a data loss prevention (DLP) app which watches 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -31,7 +32,6 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.chatMessagePolicyViolationPolicyTip"
 }-->
-
 ```json
 {
   "complianceUrl": "string",

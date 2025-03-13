@@ -1,10 +1,11 @@
 ---
 title: "mobileAppContent resource type"
 description: "Contains content properties for a specific app version. Each mobileAppContent can have multiple mobileAppContentFile."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # mobileAppContent resource type
@@ -29,7 +30,7 @@ Contains content properties for a specific app version. Each mobileAppContent ca
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The app content version.|
+|id|String|The app content version. This property is read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -51,9 +52,3 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
-
-
-
-

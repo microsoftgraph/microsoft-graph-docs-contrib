@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The hashes resource groups available hashes into a single structure for an item."
 ms.date: 09/10/2017
 title: Hashes
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: onedrive
 ---
 # hashes resource type
 
@@ -29,9 +29,12 @@ Groups available hashes into a single structure for an item.
 
 > **Note:** In cases where the hash values are not available, the hash values on an item will be updated after the item is downloaded.
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -48,10 +51,10 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
-- To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).
+- To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](/onedrive/developer/code-snippets/quickxorhash).
 
 
 <!--

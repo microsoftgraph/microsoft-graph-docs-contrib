@@ -1,10 +1,11 @@
 ---
 title: "windowsMobileMSI resource type"
 description: "Contains properties and inherited properties for Windows Mobile MSI Line Of Business apps."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windowsMobileMSI resource type
@@ -97,12 +98,3 @@ Here is a JSON representation of the resource.
   "ignoreVersionDetection": true
 }
 ```
-
-
-
-
-
-
-
-
-

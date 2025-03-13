@@ -4,21 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var webAccount = new WebAccount
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new WebAccount
 {
 	Description = "My Github contributions!",
 	UserId = "innocenty.popov",
 	Service = new ServiceInformation
 	{
 		Name = "GitHub",
-		WebUrl = "https://github.com"
-	}
+		WebUrl = "https://github.com",
+	},
 };
 
-await graphClient.Me.Profile.WebAccounts
-	.Request()
-	.AddAsync(webAccount);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Profile.WebAccounts.PostAsync(requestBody);
+
 
 ```

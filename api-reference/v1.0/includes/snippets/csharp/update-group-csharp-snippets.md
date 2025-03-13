@@ -4,23 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var group = new Group
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new Group
 {
-	Description = "description-value",
-	DisplayName = "displayName-value",
-	GroupTypes = new List<String>()
-	{
-		"groupTypes-value"
-	},
-	Mail = "mail-value",
-	MailEnabled = true,
-	MailNickname = "mailNickname-value"
+	Description = "Library Assist - ADC",
+	DisplayName = "Library Assist - ADC",
+	MailNickname = "library-help-adc",
 };
 
-await graphClient.Groups["{id}"]
-	.Request()
-	.UpdateAsync(group);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Groups["{group-id}"].PatchAsync(requestBody);
+
 
 ```

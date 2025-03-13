@@ -1,10 +1,11 @@
 ---
 title: "Delete calendar"
 description: "Delete a calendar other than the default calendar."
-author: "harini84"
-localization_priority: Normal
-ms.prod: "outlook"
+author: "iamgirishck"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Delete calendar
@@ -14,14 +15,14 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a calendar other than the default calendar.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
-|Application | Calendars.ReadWrite |
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "calendar_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/calendar-delete-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -29,9 +30,6 @@ A user's [calendar](../resources/calendar.md) other than the default calendar in
 ```http
 DELETE /me/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}
-
-DELETE /me/calendarGroup/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 A [calendar](../resources/calendar.md) other than the default calendar, in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
@@ -41,18 +39,18 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## Request headers
 | Name           |  Type    | Description|
 |:---------------|:---------|:----------|
-| Authorization  |  string  | Bearer {token}. Required. |
+| Authorization  |  string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -62,22 +60,15 @@ Here is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/me/calendar
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-calendar-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-calendar-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

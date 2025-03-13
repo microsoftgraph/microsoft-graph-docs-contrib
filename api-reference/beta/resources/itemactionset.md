@@ -1,23 +1,58 @@
 ---
 author: daspek
-description: "The ItemActionSet resource provides information about the actions that made up an [activity][itemActivity] on an item."
+description: Provides information about the actions that made up an [activity][itemActivity] on an item.
 ms.date: 09/14/2017
 title: ItemActionSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: sharepoint
 ---
+
 # ItemActionSet resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.
+Provides information about the actions that made up an [activity][itemActivity] on an item.
 
 [itemActivity]: itemactivity.md
 
+## Properties
+
+Below are the actions that are available today.
+New actions may get logged in the future, so make sure your app is tolerant of handling an **itemActionSet** without any actions that your app understands.
+
+| Property | Type              | Description                       |
+| :------- | :---------------- | :-------------------------------- |
+| comment  | [commentAction][] | A comment was added to the item.  |
+| create   | [createAction][]  | An item was created.              |
+| delete   | [deleteAction][]  | An item was deleted.              |
+| edit     | [editAction][]    | An item was edited.               |
+| mention  | [mentionAction][] | A user was mentioned in the item. |
+| move     | [moveAction][]    | An item was moved.                |
+| rename   | [renameAction][]  | An item was renamed.              |
+| restore  | [restoreAction][] | An item was restored.             |
+| share    | [shareAction][]   | An item was shared.               |
+| version  | [versionAction][] | An item was versioned.            |
+
+[commentAction]: commentaction.md
+[createAction]: createaction.md
+[deleteAction]: deleteaction.md
+[editAction]: editaction.md
+[mentionAction]: mentionaction.md
+[moveAction]: moveaction.md
+[renameAction]: renameaction.md
+[restoreAction]: restoreaction.md
+[shareAction]: shareaction.md
+[versionAction]: versionaction.md
+
+## Relationships
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -43,35 +78,6 @@ The **ItemActionSet** resource provides information about the actions that made 
 }
 ```
 
-## Properties
-
-Below are the actions that are available today.
-New actions may get logged in the future, so make sure your app is tolerant of handling an **itemActionSet** without any actions that your app understands.
-
-| Property name | Type              | Description
-|:--------------|:------------------|:-----------------------------------------
-| comment       | [commentAction][] | A comment was added to the item.
-| create        | [createAction][]  | An item was created.
-| delete        | [deleteAction][]  | An item was deleted.
-| edit          | [editAction][]    | An item was edited.
-| mention       | [mentionAction][] | A user was mentioned in the item.
-| move          | [moveAction][]    | An item was moved.
-| rename        | [renameAction][]  | An item was renamed.
-| restore       | [restoreAction][] | An item was restored.
-| share         | [shareAction][]   | An item was shared.
-| version       | [versionAction][] | An item was versioned.
-
-[commentAction]: commentaction.md
-[createAction]: createaction.md
-[deleteAction]: deleteaction.md
-[editAction]: editaction.md
-[mentionAction]: mentionaction.md
-[moveAction]: moveaction.md
-[renameAction]: renameaction.md
-[restoreAction]: restoreaction.md
-[shareAction]: shareaction.md
-[versionAction]: versionaction.md
-
 ## Remarks
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
@@ -86,5 +92,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

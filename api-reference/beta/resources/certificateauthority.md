@@ -1,10 +1,11 @@
 ---
 title: "certificateAuthority resource type"
 description: "Represents a certificate authority."
-localization_priority: Normal
-author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "vimrang"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # certificateAuthority resource type
@@ -28,7 +29,7 @@ Represents a certificate authority.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

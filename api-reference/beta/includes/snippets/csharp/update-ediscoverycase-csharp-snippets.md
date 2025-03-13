@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var ediscoveryCase = new EdiscoveryCase
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
+
+var requestBody = new EdiscoveryCase
 {
 	DisplayName = "My Case 1 - Renamed",
 	Description = "Updated description",
-	ExternalId = "Updated externalId"
 };
 
-await graphClient.Compliance.Ediscovery.Cases["061b9a92-8926-4bd9-b41d-abf35edc7583"]
-	.Request()
-	.UpdateAsync(ediscoveryCase);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].PatchAsync(requestBody);
+
 
 ```

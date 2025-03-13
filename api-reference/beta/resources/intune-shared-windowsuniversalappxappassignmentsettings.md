@@ -1,19 +1,20 @@
 ---
 title: "windowsUniversalAppXAppAssignmentSettings resource type"
 description: "Contains properties used when assigning a Windows Universal AppX mobile app to a group."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # windowsUniversalAppXAppAssignmentSettings resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Contains properties used when assigning a Windows Universal AppX mobile app to a group.
 
@@ -23,7 +24,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|useDeviceContext|Boolean|Whether or not to use device execution context for Windows Universal AppX mobile app.|
+|useDeviceContext|Boolean|If true, uses device execution context for Windows Universal AppX mobile app. Device-context install is not allowed when this type of app is targeted with Available intent. Defaults to false.|
 
 ## Relationships
 None
@@ -41,9 +42,3 @@ Here is a JSON representation of the resource.
   "useDeviceContext": true
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "timeOffRequest resource type"
 description: "Represents a type of shift request to take timeOff."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # timeOffRequest resource type
@@ -27,8 +28,8 @@ Represents a type of shift request to take [timeOff](../resources/timeoff.md).
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|endDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|endDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |timeOffReasonId|String|The reason for the time off.|
 
 ## Relationships
@@ -37,15 +38,15 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeOffRequest",
-  "baseType": ""
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.timeOffRequest"
 }-->
 
 ```json

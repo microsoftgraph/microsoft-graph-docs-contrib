@@ -1,10 +1,11 @@
 ---
 title: "androidForWorkCompliancePolicy resource type"
 description: "This class contains compliance settings for Android for Work."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # androidForWorkCompliancePolicy resource type
@@ -42,10 +43,18 @@ Inherits from [deviceCompliancePolicy](../resources/intune-shared-devicecomplian
 |passwordRequired|Boolean|Require a password to unlock device.|
 |passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Type of characters in password. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required device password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android API 12+. Possible values are: `none`, `low`, `medium`, `high`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign-in failures allowed before factory reset. Valid values 1 to 16|
+|workProfilePasswordExpirationInDays|Int32|Number of days before the work profile password expires. Valid values 1 to 365|
+|workProfilePasswordMinimumLength|Int32|Minimum length of work profile password. Valid values 4 to 16|
+|workProfileInactiveBeforeScreenLockInMinutes|Int32|Minutes of inactivity before the screen times out.|
+|workProfilePreviousPasswordBlockCount|Int32|Number of previous work profile passwords to block. Valid values 0 to 24|
+|workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|workProfileRequiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required work profile password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android 12+. Possible values are: `none`, `low`, `medium`, `high`.|
+|workProfileRequirePassword|Boolean|Password is required or not for work profile|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
@@ -56,16 +65,17 @@ Inherits from [deviceCompliancePolicy](../resources/intune-shared-devicecomplian
 |osMaximumVersion|String|Maximum Android version.|
 |minAndroidSecurityPatchLevel|String|Minimum Android security patch level.|
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
-|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the SafetyNet basic integrity check.|
-|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the SafetyNet certified device check.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the Play Integrity basic integrity check.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the Play Integrity device integrity check.|
 |securityRequireGooglePlayServices|Boolean|Require Google Play Services to be installed and enabled on the device.|
 |securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
+|securityRequiredAndroidSafetyNetEvaluationType|[androidSafetyNetEvaluationType](../resources/intune-deviceconfig-androidsafetynetevaluationtype.md)|Require a specific SafetyNet evaluation type for compliance. Possible values are: `basic`, `hardwareBacked`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) collection|The list of scheduled action for this rule Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) collection|The list of scheduled action per rule for this compliance policy. This is a required property when creating any individual per-platform compliance policies. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |deviceStatuses|[deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md) collection|List of DeviceComplianceDeviceStatus. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |userStatuses|[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) collection|List of DeviceComplianceUserStatus. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|Device compliance devices status overview Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -96,10 +106,18 @@ Here is a JSON representation of the resource.
   "passwordRequired": true,
   "passwordMinimumLength": 1024,
   "passwordRequiredType": "String",
+  "requiredPasswordComplexity": "String",
   "passwordMinutesOfInactivityBeforeLock": 1024,
   "passwordExpirationDays": 1024,
   "passwordPreviousPasswordBlockCount": 1024,
   "passwordSignInFailureCountBeforeFactoryReset": 1024,
+  "workProfilePasswordExpirationInDays": 1024,
+  "workProfilePasswordMinimumLength": 1024,
+  "workProfileInactiveBeforeScreenLockInMinutes": 1024,
+  "workProfilePreviousPasswordBlockCount": 1024,
+  "workProfilePasswordRequiredType": "String",
+  "workProfileRequiredPasswordComplexity": "String",
+  "workProfileRequirePassword": true,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -114,12 +132,7 @@ Here is a JSON representation of the resource.
   "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
-  "securityRequireCompanyPortalAppIntegrity": true
+  "securityRequireCompanyPortalAppIntegrity": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "String"
 }
 ```
-
-
-
-
-
-

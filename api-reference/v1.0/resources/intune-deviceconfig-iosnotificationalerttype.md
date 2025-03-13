@@ -1,10 +1,11 @@
 ---
 title: "iosNotificationAlertType enum type"
 description: "Notification Settings Alert Type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # iosNotificationAlertType enum type
@@ -22,12 +23,3 @@ Notification Settings Alert Type.
 |banner|1|Banner.|
 |modal|2|Modal.|
 |none|3|None.|
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "configurationUsage enum type"
 description: "Possible values of the ConfigurationUsage list."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # configurationUsage enum type
@@ -24,9 +25,3 @@ Possible values of the ConfigurationUsage list.
 |required|1|Required.|
 |allowed|2|Optional.|
 |notConfigured|3|Not Configured.|
-
-
-
-
-
-

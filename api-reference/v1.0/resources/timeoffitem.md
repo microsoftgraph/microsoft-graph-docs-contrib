@@ -2,9 +2,10 @@
 title: "timeOffItem resource type"
 description: "Represents a version of the timeOff."
 author: "akumar39"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: resourcePageType_
+ms.date: 07/26/2024
 ---
 
 # timeOffItem resource type
@@ -16,14 +17,15 @@ Represents a version of the [timeOff](timeoff.md).
 ## Properties
 | Property                         | Type                    | Description                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| timeOffReasonId               | string                  | ID of the `timeOffReason` for this `timeOffItem`. Required.     |
-| startDateTime               | DateTimeOffset                  | The start date and time for the `timeOffItem`. Required. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| endDateTime               | DateTimeOffset                  | The end date and time for the `timeOffItem`. Required. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
+| endDateTime               | DateTimeOffset                  | The end date and time for the `timeOffItem`. Required. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| startDateTime               | DateTimeOffset                  | The start date and time for the `timeOffItem`. Required. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | theme | scheduleEntityTheme   | Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
+| timeOffReasonId               | string                  | ID of the `timeOffReason` for this `timeOffItem`. Required.     |
+
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

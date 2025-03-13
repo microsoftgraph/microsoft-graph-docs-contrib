@@ -1,10 +1,11 @@
 ---
 title: "Update mobileAppContent"
 description: "Update the properties of a mobileAppContent object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update mobileAppContent
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Update the properties of a [mobileAppContent](../resources/intune-apps-mobileappcontent.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -40,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -50,7 +53,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The app content version.|
+|id|String|The app content version. This property is read-only.|
 
 
 
@@ -83,9 +86,3 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
-
-
-
-
-
-

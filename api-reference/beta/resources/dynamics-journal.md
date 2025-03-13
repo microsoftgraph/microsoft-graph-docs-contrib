@@ -4,9 +4,10 @@ description: A journal in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
-ms.prod: "dynamics-365-business-central"
+ms.localizationpriority: medium
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # journal resource type
@@ -17,13 +18,21 @@ Namespace: microsoft.graph
 
 Represents a journal in Dynamics 365 Business Central.
 
+> [!NOTE]
+> The journal resource type offers a bound action called `post` that posts the corresponding general journal batch.
+
+> Posting the general journal batch is illustrated in the following example:  
+> `POST https://graph.microsoft.com/beta/financials/companies{id}/journals{id}/post`.
+>
+>The response has no content; the response code is 204.
+
 ## Methods
 
 | Method                                            |Return Type|Description    |
 |:--------------------------------------------------|:----------|:--------------|
 |[Get journal](../api/dynamics-journal-get.md)      |journal    |Gets a journal.   |
-|[Post journal](../api/dynamics-create-journal.md)  |journal    |Creates a journal.|
-|[Patch journal](../api/dynamics-journal-update.md) |journal    |Updates a journal.|
+|[Create journal](../api/dynamics-create-journal.md)  |journal    |Creates a journal.|
+|[Update journal](../api/dynamics-journal-update.md) |journal    |Updates a journal.|
 |[Delete journal](../api/dynamics-journal-delete.md)|none       |Deletes a journal.|
 
 ## Properties
@@ -34,17 +43,12 @@ Represents a journal in Dynamics 365 Business Central.
 |displayName         |string, maximum size 50| The display name of the journal.                     |
 |lastModifiedDateTime|datetime               |The last datetime the journal was modified. Read-Only.|
 
-## Bound actions
-The journal resource type offers a bound action called `post` which posts the corresponding general journal batch.
-
-Posting the general journal batch is illustrated in the following example:  
-`POST https://graph.microsoft.com/beta/financials/companies{id}/journals{id}/post`.
-
-The response has no content; the response code is 204.
+## Relationships
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json

@@ -1,10 +1,11 @@
 ---
 title: "Delete domain"
-description: "Deletes a domain from a tenant."
-author: "adimitui"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+description: "Delete a domain from a tenant."
+author: "tafra00"
+ms.localizationpriority: medium
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # Delete domain
@@ -13,21 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a domain from a tenant.
+Delete a domain from a tenant.
 
 > **Important:**
 > Deleted domains are not recoverable.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Domain.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "domain_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/domain-delete-permissions.md)]
+
+[!INCLUDE [rbac-domain-apis-write](../includes/rbac-for-apis/rbac-domain-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,12 +43,12 @@ DELETE /domains/{id}
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -59,29 +61,50 @@ If successful, this method returns `204 No Content` response code. It does not r
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_domain"
+  "name": "delete_domain",
+  "sampleKeys": ["contoso.com"]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/domains/contoso.com
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-domain-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-domain-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-domain-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-domain-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-domain-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-domain-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-domain-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-domain-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-domain-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

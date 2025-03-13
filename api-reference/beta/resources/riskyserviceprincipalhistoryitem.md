@@ -1,10 +1,11 @@
 ---
 title: "riskyServicePrincipalHistoryItem resource type"
-description: "Represents the risk history of Azure AD service principals"
+description: "Represents the risk history of Microsoft Entra service principals"
 author: "ebasseri"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # riskyServicePrincipalHistoryItem resource type
@@ -12,22 +13,25 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Represents the risk history of an Azure AD service principal as determined by Azure AD Identity Protection. 
+Represents the risk history of a Microsoft Entra service principal as determined by Microsoft Entra ID Protection. Inherits from [riskyServicePrincipal](riskyserviceprincipal.md).
 
 ## Methods
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List history](../api/riskyserviceprincipal-list-history.md) | [riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) collection|Get the risk history of an Azure AD service principal.|
+|[List history](../api/riskyserviceprincipal-list-history.md) | [riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) collection|Get the risk history of a Microsoft Entra service principal.|
 
 
 ## Properties
 
 | Property       | Type    | Description |
 |:---------------|:--------|:------------|
-| servicePrincipalId         | string  | The id of the service principal. |
-| initiatedBy    | bool    | The id of actor that does the operation. |
-| activity       | [riskyServicePrincipalHistoryItem](riskserviceprincipalactivity.md)| The activity related to service principal risk level change. | 
+| servicePrincipalId         | string  | The identifier of the service principal. |
+| initiatedBy    | bool    | The identifier of the actor of the operation. |
+| activity       | [riskServicePrincipalActivity](riskserviceprincipalactivity.md)| The activity related to service principal risk level change. | 
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -35,14 +39,14 @@ Represents the risk history of an Azure AD service principal as determined by Az
   "blockType": "resource",
   "optionalProperties": [ ],
   "@odata.type": "microsoft.graph.riskyServicePrincipalHistoryItem",
-  "baseType": "microsoft.graph.riskyServicePrincipals"
+  "baseType": "microsoft.graph.riskyServicePrincipal"
 }-->
 
 ```json
 {
-    "servicePrincipalId": "string",
-    "initiatedBy": "string",
-    "activity": {"@odata.type": "microsoft.graph.riskyServicePrincipalActivity"}
+    "servicePrincipalId": "String",
+    "initiatedBy": "String",
+    "activity": {"@odata.type": "microsoft.graph.riskServicePrincipalActivity"}
 }
 ```
 

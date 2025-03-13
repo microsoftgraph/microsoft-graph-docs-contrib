@@ -1,11 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
 title: itemActionStat resource type
 description: The itemActionStat object provides aggregate details about an action over a period of time.
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # itemActionStat resource type
 

@@ -1,10 +1,11 @@
 ---
 title: "inkAccessSetting enum type"
 description: "Values for the InkWorkspaceAccess setting."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # inkAccessSetting enum type
@@ -23,9 +24,3 @@ Values for the InkWorkspaceAccess setting.
 |notConfigured|0|Not configured.|
 |enabled|1|Enabled.|
 |disabled|2|Disabled.|
-
-
-
-
-
-

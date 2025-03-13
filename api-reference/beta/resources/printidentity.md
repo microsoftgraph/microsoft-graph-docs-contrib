@@ -1,10 +1,11 @@
 ---
 title: printIdentity resource type
-description: Represents an identity within the Universal Print service. Maps to an Azure AD group.
+description: Represents an identity within the Universal Print service. Maps to a Microsoft Entra group.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # printIdentity resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an identity within the Universal Print service. Maps to an [Azure Active Directory (Azure AD) group](group.md).
+Represents an identity within the Universal Print service. Maps to an [Microsoft Entra group](group.md).
 
 ## Properties
 | Property     | Type        | Description |
@@ -21,9 +22,12 @@ Represents an identity within the Universal Print service. Maps to an [Azure Act
 |id|String|The printIdentity's identifier. Read-only.|
 |displayName|String|The printIdentity's display name.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -52,5 +56,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,10 +1,11 @@
 ---
 title: "teamMessagingSettings resource type"
 description: "Settings to configure messaging and mentions in the team."
-author: "nkramer"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "MSFTRickyCastaneda"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamMessagingSettings resource type
@@ -18,15 +19,15 @@ Settings to configure messaging and mentions in the [team](team.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Boolean|If set to true, users can edit their messages.|
-|allowUserDeleteMessages|Boolean|If set to true, users can delete their messages.|
-|allowOwnerDeleteMessages|Boolean|If set to true, owners can delete any message.|
-|allowTeamMentions|Boolean|If set to true, @team mentions are allowed.|
 |allowChannelMentions|Boolean|If set to true, @channel mentions are allowed.|
+|allowOwnerDeleteMessages|Boolean|If set to true, owners can delete any message.|
+|allowUserDeleteMessages|Boolean|If set to true, users can delete their messages.|
+|allowUserEditMessages|Boolean|If set to true, users can edit their messages.|
+|allowTeamMentions|Boolean|If set to true, @team mentions are allowed.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

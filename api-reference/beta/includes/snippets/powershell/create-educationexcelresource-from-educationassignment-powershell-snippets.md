@@ -1,0 +1,20 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	distributeForStudentWork = $false
+	resource = @{
+		"@odata.type" = "microsoft.graph.educationExcelResource"
+		displayName = "Graph Doc pages.xlsx"
+		fileUrl = "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RIR7PSV4JJSFJHKNPUVUWGPW4O2"
+	}
+}
+
+New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```

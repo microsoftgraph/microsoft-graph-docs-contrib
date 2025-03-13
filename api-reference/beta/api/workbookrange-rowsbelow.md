@@ -2,9 +2,10 @@
 title: "workbookRange: rowsBelow"
 description: "Gets certain number of rows below a given range."
 author: "lumine2008"
-localization_priority: Normal
-ms.prod: "excel"
+ms.localizationpriority: medium
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/22/2024
 ---
 
 # workbookRange: rowsBelow
@@ -15,19 +16,19 @@ Namespace: microsoft.graph
 
 Gets certain number of rows below a given range.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Files.ReadWrite    |
-|Application | Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "workbookrange_rowsbelow" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workbookrange-rowsbelow-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ```
 
@@ -40,11 +41,11 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,33 +54,25 @@ If successful, this method returns `200 OK` response code and [workbookRange](..
 ## Example
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workbookrange_rowsBelow"
 }-->
-```http
-POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsbelow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-rowsbelow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/workbookrange-rowsbelow-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,7 +81,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 157
 
 {
   "address": "address-value",

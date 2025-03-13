@@ -1,10 +1,11 @@
 ---
 title: "searchAggregation resource type"
 description: "Provides the details of the search aggregation in the search response."
-localization_priority: Normal
-author: "nmoreau"
-ms.prod: "search"
+ms.localizationpriority: medium
+author: "njerigrevious"
+ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/25/2024
 ---
 
 # searchAggregation resource type
@@ -23,9 +24,14 @@ Provides the details of the search aggregation in the search response.
 |field|String| Defines on which field the aggregation was computed on.|
 |buckets|[searchBucket](searchbucket.md) collection| Defines the actual buckets of the computed aggregation.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",

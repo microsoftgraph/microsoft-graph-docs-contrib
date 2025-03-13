@@ -2,9 +2,10 @@
 title: "List shifts"
 description: "Get the list of shifts in a schedule."
 author: "akumar39"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # List shifts
@@ -13,17 +14,16 @@ Namespace: microsoft.graph
 
 Get the list of [shift](../resources/shift.md) instances in a [schedule](../resources/schedule.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.Read.All, Schedule.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "schedule_list_shifts" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedule-list-shifts-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -34,16 +34,21 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## Optional query parameters
-This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.
+
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
+
+> [!NOTE]
+> The `$filter` parameter doesn't support the use of the same property more than once in a query. For example, the following query will not work: `sharedShift/startDateTime ge 2019-05-09T00:00:00Z and sharedShift/startDateTime le 2019-05-09T23:59:59Z`.
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,9 +56,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-#### Request
+### Request
 
-The following is an example of a request that gets all **shift** objects that have a shared version and a draft version between March 11 - March 18, 2019.
+The following example shows a request that gets all **shift** objects that have a shared version and a draft version between March 11 - March 18, 2019.
 
 
 # [HTTP](#tab/http)
@@ -64,32 +69,46 @@ The following is an example of a request that gets all **shift** objects that ha
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts?$filter=sharedShift/startDateTime ge 2019-03-11T00:00:00.000Z and sharedShift/endDateTime le 2019-03-18T00:00:00.000Z and draftShift/startDateTime ge 2019-03-11T00:00:00.000Z and draftShift/endDateTime le 2019-03-18T00:00:00.000Z
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-list-shifts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/schedule-list-shifts-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/schedule-list-shifts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/schedule-list-shifts-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-list-shifts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-list-shifts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/schedule-list-shifts-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/schedule-list-shifts-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-list-shifts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schedule-list-shifts-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+### Response
 
-#### Response
+The following example shows the response.
 
-The following is an example of the response. 
-
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,56 +119,39 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "value": [
     {
-      "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-      "createdDateTime": "2019-03-14T04:32:51.451Z",
-      "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-      "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-      "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+      "id": "SHFT_b986be48-7396-4ea4-ad62-470e18d9d2f1",
+      "createdDateTime": "2024-10-10T19:40:59.924Z",
+      "lastModifiedDateTime": "2024-10-10T19:40:59.924Z",
+      "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+      "userId": "5ca83ce7-291d-43b7-bf53-af79eef4bc1d",
+      "isStagedForDeletion": false,
+      "sharedShift": null,
       "lastModifiedBy": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
           "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-          "displayName": "John Doe"
+          "displayName": "John Doe",
+          "userIdentityType": "aadUser",
+          "tenantId": null
         }
       },
-      "sharedShift": {
-        "displayName": "Day shift",
-        "notes": "Please do inventory as part of your shift.",
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-12T00:00:00Z",
-        "theme": "blue",
-        "activities": [
-          {
-            "isPaid": true,
-            "startDateTime": "2019-03-11T15:00:00Z",
-            "endDateTime": "2019-03-11T15:15:00Z",
-            "code": "",
-            "displayName": "Lunch"
-          }
-        ]
-      },
       "draftShift": {
-        "displayName": "Day shift",
-        "notes": "Please do inventory as part of your shift.",
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-12T00:00:00Z",
+        "displayName": null,
+        "startDateTime": "2024-10-08T15:00:00Z",
+        "endDateTime": "2024-10-09T00:00:00Z",
         "theme": "blue",
-        "activities": [
-          {
-            "isPaid": true,
-            "startDateTime": "2019-03-11T15:00:00Z",
-            "endDateTime": "2019-03-11T15:30:00Z",
-            "code": "",
-            "displayName": "Lunch"
-          }
-        ]
+        "notes": null,
+        "activities": []
+      },
+      "schedulingGroupInfo": {
+        "displayName": "",
+        "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+        "code": null
       }
     }
   ]

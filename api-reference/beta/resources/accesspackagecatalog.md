@@ -1,10 +1,11 @@
 ---
 title: "accessPackageCatalog resource type"
 description: "An access package catalog is a container for access packages."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # accessPackageCatalog resource type
@@ -13,20 +14,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package catalog is a container for zero or more access packages.  An access package catalog might also have linked resources that are used in those access packages to provide access.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package catalog is a container for zero or more access packages. Microsoft Entra entitlement management includes a built-in catalog named **General**.
+
+An access package catalog might also have linked resources that are used in those access packages to provide access. To view or change the membership of catalog-scoped roles, use the [role assignments](unifiedroleassignment.md) API with the entitlement management RBAC provider.
 
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md) collection | Retrieve a list of accesspackagecatalog objects. |
-| [Create accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Create a new accessPackageCatalog object. |
-| [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
-| [Update accessPackageCatalog](../api/accesspackagecatalog-update.md)|None | Update the properties of an accessPackageCatalog object. |
-| [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
-| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
-| [List accessPackageCatalog resource roles](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects for resources in a catalog. |
+| [List](../api/entitlementmanagement-list-accesspackagecatalogs.md) | [accessPackageCatalog](accesspackagecatalog.md) collection | Retrieve a list of accesspackagecatalog objects. |
+| [Create](../api/entitlementmanagement-post-accesspackagecatalogs.md) | [accessPackageCatalog](accesspackagecatalog.md) | Create a new accessPackageCatalog object. |
+| [Get](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
+| [Update](../api/accesspackagecatalog-update.md)|None | Update the properties of an accessPackageCatalog object. |
+| [Delete](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
+| **Access package catalog resources**| | |
+| [List](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+| **Access package catalog resource roles**| | |
+| [List](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects for resources in a catalog. |
 
 ## Properties
 
@@ -35,25 +40,29 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |catalogStatus|String|Has the value `Published` if the access packages are available for management.|
 |catalogType|String|One of `UserManaged` or `ServiceDefault`. |
 |createdBy|String|UPN of the user who created this resource. Read-only.|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |description|String|The description of the access package catalog.|
-|displayName|String|The display name of the access package catalog.|
+|displayName|String|The display name of the access package catalog. Supports `$filter` (`eq`, `contains`).|
 |id|String| Read-only.|
 |isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.|
 |modifiedBy|String|The UPN of the user who last modified this resource. Read-only.|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackages|[accessPackage](accesspackage.md) collection| The access packages in this catalog. Read-only. Nullable.|
+|accessPackages|[accessPackage](accesspackage.md) collection| The access packages in this catalog. Read-only. Nullable. Supports `$expand`.|
+|accessPackageCustomWorkflowExtensions|[customCalloutExtension](../resources/customcalloutextension.md) collection|The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle. |
 |accessPackageResources|[accessPackageResource](accesspackageresource.md) collection| Read-only. Nullable.|
+|accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection|The roles in each resource in a catalog. Read-only.|
+|accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection|Read-only.|
+|customAccessPackageWorkflowExtension |[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -61,7 +70,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageCatalog",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -89,5 +97,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,11 +1,11 @@
 ---
 author: daspek
-description: "The ShareAction resource provides information about an activity that shared an item."
+description: The ShareAction resource provides information about an activity that shared an item.
 ms.date: 09/14/2017
 title: ShareAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: onedrive
 ---
 
 # ShareAction resource type
@@ -17,6 +17,17 @@ Namespace: microsoft.graph
 The **ShareAction** resource provides information about an [activity][activity] that shared an item.
 
 [activity]: itemactivity.md
+
+## Properties
+
+| Property   | Type                       | Description                                             |
+| :--------- | :------------------------- | :------------------------------------------------------ |
+| recipients | [identitySet][] collection | The identities the item was shared with in this action. |
+
+[identitySet]: identityset.md
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -32,14 +43,6 @@ The **ShareAction** resource provides information about an [activity][activity] 
 }
 ```
 
-## Properties
-
-| Property name | Type                       | Description
-|:--------------|:---------------------------|:-----------------------------
-| recipients    | [identitySet][] collection | The identities the item was shared with in this action.
-
-[identitySet]: identityset.md
-
 ## Remarks
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
@@ -54,5 +57,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

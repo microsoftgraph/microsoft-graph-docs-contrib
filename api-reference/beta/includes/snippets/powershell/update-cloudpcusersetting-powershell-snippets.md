@@ -1,0 +1,34 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
+	displayName = "Example"
+	selfServiceEnabled = $true
+	restorePointSetting = @{
+		frequencyInHours = 16
+		frequencyType = "sixteenHours"
+		userRestoreEnabled = $true
+	}
+	crossRegionDisasterRecoverySetting = @{
+		crossRegionDisasterRecoveryEnabled = $false
+		maintainCrossRegionRestorePointEnabled = $true
+		disasterRecoveryNetworkSetting = @{
+			regionName = "westus"
+			regionGroup = "usEast"
+		}
+		disasterRecoveryType = "premium"
+		userInitiatedDisasterRecoveryAllowed = $true
+	}
+	localAdminEnabled = $false
+	resetEnabled = $true
+}
+
+Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
+
+```

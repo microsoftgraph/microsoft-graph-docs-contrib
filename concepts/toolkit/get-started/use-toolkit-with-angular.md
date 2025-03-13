@@ -1,8 +1,9 @@
 ---
 title: "Use the Microsoft Graph Toolkit with Angular"
 description: "Get started using the Microsoft Graph Toolkit in an Angular application."
-localization_priority: Normal
-author: elisenyang
+ms.localizationpriority: medium
+author: sebastienlevert
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Graph Toolkit with Angular
@@ -11,8 +12,9 @@ Microsoft Graph Toolkit components work great with web frameworks like Angular i
 
 ## Add the Microsoft Graph Toolkit
 
-First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENT_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
-```ts
+First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENTS_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
+
+```TypeScript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -27,19 +29,27 @@ import { AppComponent } from './app.component';
 })
 export class AppModule {}
 ```
+
 Next, add the Microsoft Graph Toolkit to your project by installing the npm package with:
-```bash
+
+```Command Line
 npm install @microsoft/mgt
 ```
+
 ## Initialize a provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers.md). The provider you use depends on the context in which your solution will be used.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The provider you use depends on the context in which your solution will be used.
 
-The following example shows how to add the [MSAL Provider](../providers/msal.md), but you can follow the same model with any of the providers. Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
+The following example shows how to add the [MSAL2 Provider](../providers/msal2.md), but you can follow the same model with any of the providers.
 
-```ts
+> [!NOTE]
+> If you are currently using the MSAL Provider and would like to update to the MSAL2 Provider, follow the steps in the [MSAL2 Provider](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) article.
+
+Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
+
+```TypeScript
 import { Component, OnInit } from '@angular/core';
-import { Providers, MsalProvider } from '@microsoft/mgt';
+import { Providers, Msal2Provider } from '@microsoft/mgt';
 
 @Component({
     selector: 'app-root',
@@ -50,34 +60,63 @@ export class AppComponent implements OnInit {
 
     ngOnInit()
     {
-        Providers.globalProvider = new MsalProvider({
+        Providers.globalProvider = new Msal2Provider({
             clientId: '<YOUR-CLIENT-ID>'
         });
     }
 }
 ```
+
 ### Create an app/client ID
-In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD. 
->**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**.
+
+In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Microsoft Entra ID.
 
 ## Add components
 
-Now, you can use any of the Microsoft Graph Toolkit components as you normally would in your HTML templates. For example, to add the [Person component](../components/person.md),  add the following to your template:
+Now, you can register and use any of the Microsoft Graph Toolkit components as you normally would in your HTML templates. For example, to add the [Person component](../components/person.md), update the app to register the component:
+
+
+```TypeScript
+import { Component, OnInit } from '@angular/core';
+import { Providers } from '@microsoft/mgt-element';
+import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+import { registerMgtPersonComponent } from '@microsoft/mgt-components';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+
+    ngOnInit()
+    {
+        Providers.globalProvider = new Msal2Provider({
+            clientId: '<YOUR-CLIENT-ID>'
+        });
+        registerMgtPersonComponent();
+    }
+}
+```
+
+And then add the following to your template:
 
 ```html
 <mgt-person person-query="me" view="twolines"></mgt-person>
 ```
 
+> **Note:** The register component functions should be invoked close to their use in subcomponents. This ensures that in larger applications where code splitting and tree shaking are used during bundling, the weight of those components can be deferred until necessary.
+
 ## Customizing components with Angular
 
-All Microsoft Graph Toolkit components support [custom templates](../templates.md), which allow you to modify the content of a component. The default syntax for customizing the components is to use double braces to refer to the property data for each of the returned items, as shown:
+All Microsoft Graph Toolkit components support [custom templates](../customize-components/templates.md), which allow you to modify the content of a component. The default syntax for customizing the components is to use double braces to refer to the property data for each of the returned items, as shown:
 
 ```html
 <!-- Double braces are used for data binding in Angular. This will throw an error. -->
 <mgt-agenda>
-    <template data-type="event">
-        <div>{{event.subject}}</div>
-    </template>
+  <template data-type="event">
+    <div>{{event.subject}}</div>
+  </template>
 </mgt-agenda>
 ```
 
@@ -87,9 +126,11 @@ You can avoid these errors by changing the default characters used by the Toolki
 
 Import the `TemplateHelper` and use the `.setBindingSyntax()` method to set your custom binding syntax.
 
-```ts
+```TypeScript
 import { Component, OnInit } from '@angular/core';
-import { Providers, MsalProvider, TemplateHelper } from '@microsoft/mgt';
+import { Providers, TemplateHelper } from '@microsoft/mgt-element';
+import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+import { registerMgtPersonComponent } from '@microsoft/mgt-components';
 
 @Component({
     selector: 'app-root',
@@ -100,23 +141,26 @@ export class AppComponent implements OnInit {
 
     ngOnInit()
     {
-        Providers.globalProvider = new MsalProvider({ clientId: '<YOUR-CLIENT-ID>'})
+        Providers.globalProvider = new Msal2Provider({ clientId: '<YOUR-CLIENT-ID>'})
         TemplateHelper.setBindingSyntax('[[',']]');
+        registerMgtPersonComponent();
     }
 }
 ```
+
 Now, you can use your custom binding syntax to define custom templates.
 
 ```html
 <mgt-agenda>
-    <template data-type="event">
-        <div>[[event.subject]]</div>
-    </template>
+  <template data-type="event">
+    <div>[[event.subject]]</div>
+  </template>
 </mgt-agenda>
 ```
 
 ## Next steps
+
 - Check out this step-by-step tutorial on [building an Angular app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/).
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
-- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt/issues).

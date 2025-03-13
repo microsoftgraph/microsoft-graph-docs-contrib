@@ -1,10 +1,11 @@
 ---
 title: "samlSingleSignOnSettings resource type"
 description: "Represents the SAML single sign-on settings."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 03/21/2024
 ---
 
 # samlSingleSignOnSettings resource type
@@ -20,8 +21,11 @@ Represents a container for settings related to SAML single sign-on.
 |relayState|String| The relative URI the service provider would redirect to after completion of the single sign-on flow. |
 
 
+## Relationships
+None.
+
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

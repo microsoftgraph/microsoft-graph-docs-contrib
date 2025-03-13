@@ -1,10 +1,11 @@
 ---
 title: "localSecurityOptionsAdministratorElevationPromptBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsAdministratorElevationPromptBehavior"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # localSecurityOptionsAdministratorElevationPromptBehaviorType enum type
@@ -27,9 +28,3 @@ Possible values for LocalSecurityOptionsAdministratorElevationPromptBehavior
 |promptForCredentials|4|Prompt for credentials|
 |promptForConsent|5|Prompt for consent|
 |promptForConsentForNonWindowsBinaries|6|Prompt for consent for non-Windows binaries|
-
-
-
-
-
-

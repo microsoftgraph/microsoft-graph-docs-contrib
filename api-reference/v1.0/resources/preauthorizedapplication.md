@@ -1,17 +1,20 @@
 ---
 title: "preAuthorizedApplication resource type"
-description: "Lists the pre-authorized client applications"
-localization_priority: Normal
+description: "Lists the preauthorized client applications"
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "sureshja"
+ms.subservice: "entra-applications"
+author: "psignoret"
+ms.date: 04/03/2024
 ---
 
 # preAuthorizedApplication resource type
 
 Namespace: microsoft.graph
 
-Lists the client applications that are pre-authorized with the specified permissions to access this application's APIs. Users are not required to consent to any pre-authorized application (for the permissions specified). However, any additional permissions not listed in preAuthorizedApplications (requested through incremental consent for example) will require user consent.
+Lists the client applications that are preauthorized with the specified permissions to access this application's APIs. Users aren't required to consent to any preauthorized application (for the permissions specified). However, any other permissions not listed in preAuthorizedApplications (requested through incremental consent for example) require user consent.
+
+In some rare cases, an identifier listed in the `delegatedPermissionIds` property may actually identify an [app role](approle.md) (from the service principal's `appRoles` property), indicating that the client application identified by the `appId` property has been preauthorized for that app role.
 
 ## Properties
 
@@ -21,7 +24,7 @@ Lists the client applications that are pre-authorized with the specified permiss
 |delegatedPermissionIds|String collection| The unique identifier for the [oauth2PermissionScopes](permissionscope.md) the application requires. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

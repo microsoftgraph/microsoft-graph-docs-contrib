@@ -1,17 +1,18 @@
 ---
 title: "auditLogRoot resource type"
-description: "Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties."
+description: "Contains different types of audit logs. The auditLogRoot resource returns a singleton auditLog resource. It doesn't contain any usable properties."
 author: "dhanyahk"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # auditLogRoot resource type
 
 Namespace: microsoft.graph
 
-Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties.
+Contains different types of audit logs. The auditLogRoot resource returns a singleton auditLog resource. It doesn't contain any usable properties.
 
 ## Methods
 
@@ -35,7 +36,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Heres a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -60,24 +61,36 @@ Here is a JSON representation of the resource.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-auditlogs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-auditlogs-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-auditlogs-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-auditlogs-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-auditlogs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-auditlogs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-auditlogs-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-auditlogs-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-auditlogs-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 <!-- {
   "blockType": "response",

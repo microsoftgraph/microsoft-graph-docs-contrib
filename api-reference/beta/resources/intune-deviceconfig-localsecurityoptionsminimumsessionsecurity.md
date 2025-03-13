@@ -1,10 +1,11 @@
 ---
 title: "localSecurityOptionsMinimumSessionSecurity enum type"
 description: "Possible values for LocalSecurityOptionsMinimumSessionSecurity"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # localSecurityOptionsMinimumSessionSecurity enum type
@@ -24,9 +25,3 @@ Possible values for LocalSecurityOptionsMinimumSessionSecurity
 |requireNtmlV2SessionSecurity|1|Send LM & NTLM-use NTLMv2 session security if negotiated|
 |require128BitEncryption|2|Send LM & NTLM responses only|
 |ntlmV2And128BitEncryption|3|Send LM & NTLMv2 responses only|
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "referencedObject resource type"
 description: "Describes a reference to another object defined in the same directory definition."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # referencedObject resource type
@@ -22,9 +23,12 @@ Describes a reference to another object defined in the same [directory definitio
 |referencedObjectName        |String                     |Name of the referenced object. Must match one of the objects in the [directory definition](synchronization-directorydefinition.md).|
 |referencedProperty          |String                     |**Currently not supported**. Name of the property in the referenced object, the value for which is used as the reference.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -39,7 +43,6 @@ The following is a JSON representation of the resource.
   "referencedObjectName": "String",
   "referencedProperty": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

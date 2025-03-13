@@ -14,11 +14,13 @@
       "title",
       "description",
       "author",
-      "ms.prod",
-      "localization_priority",
-      "doc_type"
+      "doc_type",
+      "ms.subservice"
     ],
     "treatErrorsAsWarningsWorkloads": [
+      "intune"
+    ],
+    "skipPermissionTableUpdateForWorkloads": [
       "intune"
     ],
     "foldersToSkip": [
@@ -32,7 +34,10 @@
       "readme.md",
       "license.md",
       "index.md"
-    ]
+    ],
+    "textToRemoveFromPropertyNames": [
+      "(deprecated)"
+    ] 
   },
   "schemaDiffConfig": {
     "dropElementsContaining": [

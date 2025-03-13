@@ -1,10 +1,11 @@
 ---
 title: "contact: delta"
 description: "Get a set of contacts that have been added, deleted, or updated in a specified folder."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # contact: delta
@@ -21,14 +22,13 @@ you can query for incremental changes in the contacts in
 that folder. This allows you to maintain and synchronize a local store of a user's contacts without 
 having to fetch the entire set of contacts from the server every time.  
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    |
-|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    |
-|Application | Contacts.Read, Contacts.ReadWrite |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "contact_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/contact-delta-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -42,14 +42,14 @@ GET /users/{id}/contactFolders/{id}/contacts/delta
 Tracking changes in contacts incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
 it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
-into the token portion of the `nextLink` or `deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. 
-In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
+into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. 
+In subsequent requests, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already 
 includes the encoded, desired parameters.
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same contact collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same contact collection. |
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same contact collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same contact collection. |
 
 ### OData query parameters
 
@@ -60,7 +60,7 @@ _id_ property is always returned.
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
@@ -93,8 +93,9 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts/delta?$sele
 
 Prefer: odata.maxpagesize=2
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/contact-delta-csharp-snippets.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/contact-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -102,7 +103,6 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_  
@@ -112,7 +112,7 @@ getting all the changes for that round.
 
 The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,7 +122,6 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 337
 
 {
   "@odata.nextLink":"https://graph.microsoft.com/beta/me/contactfolders/{id}/contacts/delta?$skiptoken={_skipToken_}",
@@ -139,7 +138,7 @@ Content-length: 337
 }
 ```
 
-### See also
+### Related content
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
 - [Get incremental changes to messages in a folder](/graph/delta-query-messages)

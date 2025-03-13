@@ -1,10 +1,11 @@
 ---
 title: "mailFolder: copy"
-description: "Copy a mailfolder and its contents to another mailfolder."
-author: "svpsiva"
-localization_priority: Normal
-ms.prod: "outlook"
+description: "Copy a mail folder and its contents to another mail folder."
+author: "SuryaLashmiS"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # mailFolder: copy
@@ -13,17 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Copy a mailfolder and its contents to another mailfolder.
+Copy a mail folder and its contents to another mail folder.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:----------------|:--------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "mailfolder_copy" } -->
+[!INCLUDE [permissions-table](../includes/permissions/mailfolder-copy-permissions.md)]
 
 ## HTTP request
 
@@ -55,11 +55,11 @@ If successful, this method returns `200 OK` response code and a [mailFolder](../
 
 ## Example
 
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 
 ##### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -70,32 +70,51 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
 Content-type: application/json
-Content-length: 44
 
 {
   "destinationId": "destinationId-value"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-copy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/mailfolder-copy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/mailfolder-copy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/mailfolder-copy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-copy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/mailfolder-copy-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/mailfolder-copy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/mailfolder-copy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/mailfolder-copy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
 
-Here is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -106,7 +125,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "displayName-value",

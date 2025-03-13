@@ -1,41 +1,43 @@
 ---
 title: "Reply to a message in a channel"
 description: "Reply to an existing message in a channel."
-author: "nkramer"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "MSFTRickyCastaneda"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/19/2024
 ---
 
 # Reply to a message in a channel
 
 Namespace: microsoft.graph
 
-Create a new reply to a [message](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
+Create a new reply to a [chatMessage](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
 
-> **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | ChannelMessage.Send, Group.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-| Application                           | Not supported. |
+<!-- { "blockType": "permissions", "name": "channel_post_messagereply" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-post-messagereply-permissions.md)]
+
+> **Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels/{id}/messages/{id}/replies
+POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
 ## Request headers
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -45,17 +47,22 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Create a new reply to a chatMessage
+
+#### Request
+The following example shows a request.
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_reply_message"
+  "name": "post_reply_message",
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2", "1590776551682"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/replies
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages/1590776551682/replies
 Content-type: application/json
 
 {
@@ -65,26 +72,44 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-reply-message-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-reply-message-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-reply-message-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-reply-message-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-reply-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-reply-message-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-reply-message-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-reply-message-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-reply-message-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-### Response
+#### Response
 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,13 +119,12 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages('id-value')/replies/$entity",
-    "id": "id-value",
-    "replyToId": null,
-    "etag": "id-value",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies/$entity",
+    "id": "1591039710682",
+    "replyToId": "1590776551682",
+    "etag": "1591039710682",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
     "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
@@ -116,7 +140,7 @@ Content-length: 160
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
+            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
             "displayName": "Joh Doe",
             "userIdentityType": "aadUser"
         }
@@ -128,6 +152,84 @@ Content-length: 160
     "attachments": [],
     "mentions": [],
     "reactions": []
+}
+```
+
+### Example 2: Import messages
+
+> **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
+
+#### Request
+
+The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
+
+<!-- {
+  "blockType": "request",
+  "truncated": true,
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2", "1590776551682"]
+} -->
+```http
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages/1590776551682/replies
+
+{
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "from":{
+      "user":{
+         "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+         "displayName":"Joh Doe"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   }
+}
+
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 200 OK
+
+{
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies/$entity",
+   "id":"1591039710682",
+   "replyToId":"1590776551682",
+   "etag":"1591039710682",
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
 }
 ```
 

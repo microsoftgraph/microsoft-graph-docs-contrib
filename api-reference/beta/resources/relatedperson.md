@@ -1,10 +1,11 @@
 ---
 title: "relatedPerson resource type"
 description: "relatedPerson resource type"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
+ms.date: 06/11/2024
 ---
 
 # relatedPerson resource type
@@ -21,11 +22,12 @@ Represents information about people related to information within a given entity
 |:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |displayName      |String       | Name of the person.                                                                                                                                                                                                                             |
 |relationship     |String       | Possible values are: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`.|
-|userPrincipalName|String       | Email address or reference to person within organization.                                                                                                                                                                                       |
+|userId           |String       | The user's directory object ID (Microsoft Entra ID or CID).                                                                                                                                                                                       |
+|userPrincipalName|String       | Email address or reference to person within the organization.                                                                                                                                                                                       |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -40,6 +42,7 @@ The following is a JSON representation of the resource.
 {
   "displayName": "String",
   "relationship": "String",
+  "userId": "String",
   "userPrincipalName": "String"
 }
 ```
@@ -53,5 +56,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

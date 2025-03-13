@@ -2,9 +2,10 @@
 title: "List responsibilities"
 description: "Get the personResponsibilities from the responsibilities navigation property."
 author: "kevinbellinger"
-localization_priority: Normal
-ms.prod: "people"
+ms.localizationpriority: medium
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List responsibilities
@@ -14,13 +15,10 @@ Retrieve a list of [personResponsibility](../resources/personresponsibility.md) 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+<!-- { "blockType": "permissions", "name": "profile_list_responsibilities" } -->
+[!INCLUDE [permissions-table](../includes/permissions/profile-list-responsibilities-permissions.md)]
 
 ## HTTP request
 
@@ -29,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/profile/responsibilities
-GET /users/{id | userPrincipalName}/profile/responsibilities
+GET /me/responsibilities
+GET /users/{id | userPrincipalName}/responsibilities
 ```
 
 ## Optional query parameters
@@ -48,16 +46,17 @@ This method supports the following OData query parameters to help customize the 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [personResponsibility](../resources/personresponsibility.md) objects in the response body.
 
 ## Examples
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,18 +65,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/profile/responsibilities
+GET https://graph.microsoft.com/beta/me/responsibilities
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-responsibilities-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

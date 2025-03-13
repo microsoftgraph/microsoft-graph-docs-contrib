@@ -1,10 +1,11 @@
 ---
 title: "deviceHealthScriptDailySchedule resource type"
 description: "Device health script daily schedule."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # deviceHealthScriptDailySchedule resource type
@@ -45,9 +46,3 @@ Here is a JSON representation of the resource.
   "time": "String (time of day)"
 }
 ```
-
-
-
-
-
-

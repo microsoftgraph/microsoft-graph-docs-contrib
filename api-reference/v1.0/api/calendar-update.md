@@ -1,18 +1,22 @@
 ---
 title: "Update calendar"
 description: "Update the properties of a calendar object. The calendar can be one for a user, "
-localization_priority: Normal
-author: "harini84"
-ms.prod: "outlook"
+ms.localizationpriority: medium
+author: "iamgirishck"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Update calendar
 
 Namespace: microsoft.graph
 
-Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
+Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md),
 or the default calendar of a Microsoft 365 [group](../resources/group.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,9 +38,6 @@ A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}
-
-PATCH /me/calendarGroup/calendars/{id}
-PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
@@ -46,7 +47,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -55,6 +56,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|isDefaultCalendar|Boolean|True if this calendar is the user's default calendar, false otherwise.|
 |name|String|The calendar name.|
 
 ## Response
@@ -77,26 +79,39 @@ Content-type: application/json
   "name": "Social events"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-calendar-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-calendar-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-calendar-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-calendar-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,9 +127,11 @@ Content-type: application/json
     "id":"AAMkADJmMVAAA=",
     "name":"Social events",
     "color":"auto",
+    "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
     "canEdit":true,
     "allowedOnlineMeetingProviders": [
                 "teamsForBusiness"
@@ -124,7 +141,7 @@ Content-type: application/json
     "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
-        "address":"samanthab@adatum.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
     }
 }
 ```

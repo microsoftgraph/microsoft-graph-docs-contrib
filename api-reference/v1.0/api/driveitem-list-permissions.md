@@ -1,10 +1,9 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List who has access to a file
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
 description: "List the effective sharing permissions of on a driveItem."
 doc_type: apiPageType
 ---
@@ -13,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 List the effective sharing permissions on a [driveItem](../resources/driveitem.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Access to sharing permissions
 
@@ -24,13 +25,10 @@ The permissions collection includes potentially sensitive information and may no
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_list_permissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-list-permissions-permissions.md)]
 
 ## HTTP request
 
@@ -49,11 +47,13 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 This method supports the `$select` [OData Query Parameters](/graph/query-parameters) to customize the response.
 
-## Optional request headers
+## Request headers
 
-| Name          | Type   | Description                                                                                                                                     |
-|:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | string | If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+| if-none-match | String. If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned. |
 
 ## Response
 
@@ -67,8 +67,6 @@ Effective sharing permissions of a DriveItem can come from two sources:
 Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property.
 This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
 
-SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](/SharePoint/sites/user-permissions-and-permission-levels#section1).
-
 ## Example
 
 This example retrieves the collection of permissions on an item in the signed in user's drive.
@@ -79,24 +77,40 @@ This example retrieves the collection of permissions on an item in the signed in
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-item-permissions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-item-permissions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-item-permissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-item-permissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-item-permissions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-item-permissions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -120,11 +134,23 @@ Content-Type: application/json
     },
     {
       "id": "2",
+      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "roles": ["write"],
       "grantedTo": {
         "user": {
           "id": "5D33DD65C6932946",
-          "displayName": "John Doe"
+          "displayName": "Robin Danielsen"
+        }
+      },
+      "grantedToV2": {
+        "user": {
+          "id": "5D33DD65C6932946",
+          "displayName": "Robin Danielsen"
+        },
+        "siteUser": {
+          "id": "1",
+          "displayName": "Robin Danielsen",
+          "loginName": "Robin Danielsen"
         }
       },
       "inheritedFrom": {

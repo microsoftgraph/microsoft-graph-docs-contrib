@@ -1,10 +1,11 @@
 ---
 title: "iosExpeditedCheckinConfiguration resource type"
-description: "Experimental profile to increase the rate of device check-ins per day of iOS devices."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Experimental profile to increase the rate of device check-ins per day of iOS devices. This profile type is deprecated."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # iosExpeditedCheckinConfiguration resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Experimental profile to increase the rate of device check-ins per day of iOS devices.
+Experimental profile to increase the rate of device check-ins per day of iOS devices. This profile type is deprecated.
 
 
 Inherits from [appleExpeditedCheckinConfigurationBase](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
@@ -101,9 +102,3 @@ Here is a JSON representation of the resource.
   "enableExpeditedCheckin": true
 }
 ```
-
-
-
-
-
-

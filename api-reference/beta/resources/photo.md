@@ -2,9 +2,9 @@
 title: "photo resource type"
 description: "The photo resource provides photo and camera properties, for example, EXIF metadata, on a driveItem."
 ms.date: 09/10/2017
-localization_priority: Normal
-author: "JeremyKelley"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "spgraph-docs-team"
+ms.subservice: onedrive
 doc_type: "resourcePageType"
 ---
 
@@ -35,7 +35,7 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

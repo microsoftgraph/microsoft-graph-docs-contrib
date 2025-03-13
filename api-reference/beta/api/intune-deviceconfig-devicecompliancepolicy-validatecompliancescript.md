@@ -1,10 +1,11 @@
 ---
 title: "validateComplianceScript action"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Deviceconfig Devicecompliancepolicy Validatecompliancescript Api ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # validateComplianceScript action
@@ -15,12 +16,14 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
 
-## Prerequisites
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ POST /deviceManagement/deviceCompliancePolicies/validateComplianceScript
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Not yet documented|
+|deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)||
 
 
 
@@ -79,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 786
+Content-Length: 1045
 
 {
   "value": {
@@ -89,7 +92,9 @@ Content-Length: 786
         "@odata.type": "microsoft.graph.deviceComplianceScriptRule",
         "settingName": "Setting Name value",
         "operator": "and",
+        "deviceComplianceScriptRulOperator": "and",
         "dataType": "boolean",
+        "deviceComplianceScriptRuleDataType": "boolean",
         "operand": "Operand value"
       }
     ],
@@ -97,6 +102,7 @@ Content-Length: 786
       {
         "@odata.type": "microsoft.graph.deviceComplianceScriptError",
         "code": "jsonFileInvalid",
+        "deviceComplianceScriptRulesValidationError": "jsonFileInvalid",
         "message": "Message value"
       }
     ],
@@ -104,6 +110,7 @@ Content-Length: 786
       {
         "@odata.type": "microsoft.graph.deviceComplianceScriptRuleError",
         "code": "jsonFileInvalid",
+        "deviceComplianceScriptRulesValidationError": "jsonFileInvalid",
         "message": "Message value",
         "settingName": "Setting Name value"
       }
@@ -111,9 +118,3 @@ Content-Length: 786
   }
 }
 ```
-
-
-
-
-
-

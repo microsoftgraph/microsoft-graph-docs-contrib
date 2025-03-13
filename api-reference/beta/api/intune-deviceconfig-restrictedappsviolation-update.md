@@ -1,10 +1,11 @@
 ---
 title: "Update restrictedAppsViolation"
 description: "Update the properties of a restrictedAppsViolation object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # Update restrictedAppsViolation
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Update the properties of a [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -55,7 +58,7 @@ The following table shows the properties that are required when you create the [
 |deviceName|String|Device name|
 |deviceConfigurationId|String|Device configuration profile unique identifier, must be Guid|
 |deviceConfigurationName|String|Device configuration profile name|
-|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Platform type. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Platform type. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `androidAOSP`, `linux`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Restricted apps state. Possible values are: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) collection|List of violated restricted apps|
 
@@ -118,9 +121,3 @@ Content-Length: 613
   ]
 }
 ```
-
-
-
-
-
-

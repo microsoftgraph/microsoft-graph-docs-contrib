@@ -1,10 +1,11 @@
 ---
 title: "onPremisesAgentGroup resource type"
 description: "onPremisesAgentGroup resource type."
-localization_priority: Normal
-author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # onPremisesAgentGroup resource type
@@ -19,11 +20,11 @@ Represents on-premises agents group. Agent groups enable a tenant admin to assig
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups collection | Get an **onPremisesAgentGroup** objects collection. |
-| [Get onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Read the properties and relationships of an **onPremisesAgentGroup** object. |
-| [Create onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new **onPremisesAgentGroup**. |
-| [Update onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Update an **onPremisesAgentGroup** object. |
-| [Delete  onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | None | Delete an **onPremisesAgentGroup** object. |
+| [List](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups collection | Get an **onPremisesAgentGroup** objects collection. |
+| [Get](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Read the properties and relationships of an **onPremisesAgentGroup** object. |
+| [Create](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new **onPremisesAgentGroup**. |
+| [Update](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Update an **onPremisesAgentGroup** object. |
+| [Delete](../api/onpremisesagentgroup-delete.md) | None | Delete an **onPremisesAgentGroup** object. |
 
 ## Properties
 
@@ -32,7 +33,7 @@ Represents on-premises agents group. Agent groups enable a tenant admin to assig
 |displayName|String|Display name of the **onPremisesAgentGroup**.|
 |id|String| The object ID of the **onPremisesAgentGroup**. Read-only.|
 |isDefault|Boolean|Indicates if the **onPremisesAgentGroup** is the default agent group. Only a single agent group can be the default **onPremisesAgentGroup** and is set by the system.|
-|publishingType|string| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|String| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## Relationships
 
@@ -43,7 +44,7 @@ Represents on-premises agents group. Agent groups enable a tenant admin to assig
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -51,7 +52,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgentGroup",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -73,5 +73,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

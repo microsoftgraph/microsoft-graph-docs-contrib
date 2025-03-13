@@ -1,10 +1,11 @@
 ---
 title: "windowsUniversalAppXContainedApp resource type"
 description: "A class that represents a contained app of a WindowsUniversalAppX app."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsUniversalAppXContainedApp resource type
@@ -32,7 +33,7 @@ Inherits from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|id|String|Key of the entity. This property is read-only. Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
 |appUserModelId|String|The app user model ID of the contained app of a WindowsUniversalAppX app.|
 
 ## Relationships
@@ -53,9 +54,3 @@ Here is a JSON representation of the resource.
   "appUserModelId": "String"
 }
 ```
-
-
-
-
-
-

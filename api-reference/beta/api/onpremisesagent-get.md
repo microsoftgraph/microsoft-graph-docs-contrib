@@ -1,10 +1,11 @@
 ---
 title: "Get onPremisesAgent"
 description: "Retrieve the properties and relationships of an onPremisesAgent object."
-localization_priority: Normal
-author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Get onPremisesAgent
@@ -15,22 +16,21 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [onPremisesAgent](../resources/onpremisesagent.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "onpremisesagent_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/onpremisesagent-get-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/?$expand=agentGroups
+GET /onPremisesPublishingProfiles/{profile-id}/agents/{agent-id}?$expand=agentGroups
 ```
 
 ## Optional query parameters
@@ -41,11 +41,11 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an [onPremisesAg
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,26 +66,46 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agents/1234b780-965f-4149-85c5-a8c73e58b67d/?$expand=agentGroups
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onpremisesagent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-onpremisesagent-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onpremisesagent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-onpremisesagent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-onpremisesagent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-onpremisesagent-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-onpremisesagent-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onpremisesagent-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-onpremisesagent-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -120,5 +140,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

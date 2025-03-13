@@ -1,10 +1,11 @@
 ---
 title: "roleScopeTag resource type"
 description: "Role Scope Tag"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # roleScopeTag resource type
@@ -25,17 +26,17 @@ Role Scope Tag
 |[Create roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Create a new [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.|
 |[Delete roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|None|Deletes a [roleScopeTag](../resources/intune-rbac-rolescopetag.md).|
 |[Update roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Update the properties of a [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.|
-|[assign action](../api/intune-rbac-rolescopetag-assign.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) collection|Not yet documented|
-|[getRoleScopeTagsById action](../api/intune-rbac-rolescopetag-getrolescopetagsbyid.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection|Not yet documented|
-|[hasCustomRoleScopeTag function](../api/intune-rbac-rolescopetag-hascustomrolescopetag.md)|Boolean|Not yet documented|
+|[assign action](../api/intune-rbac-rolescopetag-assign.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) collection||
+|[getRoleScopeTagsById action](../api/intune-rbac-rolescopetag-getrolescopetagsbyid.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection||
+|[hasCustomRoleScopeTag function](../api/intune-rbac-rolescopetag-hascustomrolescopetag.md)|Boolean||
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. This is read-only and automatically generated.|
+|id|String|Key of the entity. This is read-only and automatically generated. This property is read-only.|
 |displayName|String|The display or friendly name of the Role Scope Tag.|
 |description|String|Description of the Role Scope Tag.|
-|isBuiltIn|Boolean|Description of the Role Scope Tag.|
+|isBuiltIn|Boolean|Description of the Role Scope Tag. This property is read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -59,9 +60,3 @@ Here is a JSON representation of the resource.
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
-

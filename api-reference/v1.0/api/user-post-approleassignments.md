@@ -1,31 +1,33 @@
 ---
 title: "Grant an appRoleAssignment to a user"
 description: "Grant an app role assignment to a user."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.subservice: entra-users
 author: "psignoret"
+ms.date: 10/15/2024
 ---
 
 # Grant an appRoleAssignment to a user
 
 Namespace: microsoft.graph
 
-Use this API to assign an app role to a user. To grant an app role assignment to a user, you need three identifiers:
+Assign an [app role](../resources/approle.md) to a [user](../resources/user.md), creating an [appRoleAssignment](../resources/approleassignment.md) object. To grant an app role assignment to a user, you need three identifiers:
 
 - `principalId`: The `id` of the user to whom you are assigning the app role.
 - `resourceId`: The `id` of the resource `servicePrincipal` that has defined the app role.
 - `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the user.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "user_post_approleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-post-approleassignments-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
 
@@ -41,7 +43,7 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body
@@ -56,7 +58,7 @@ If successful, this method returns a `201 Created` response code and an [appRole
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -66,42 +68,57 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/users/{id}/appRoleAssignments
+POST https://graph.microsoft.com/v1.0/users/cde330e5-2150-4c11-9c5b-14bfdc948c79/appRoleAssignments
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "appRoleId": "appRoleId-value"
+  "principalId": "cde330e5-2150-4c11-9c5b-14bfdc948c79",
+  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d",
+  "appRoleId": "00000000-0000-0000-0000-000000000000"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-create-approleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-create-approleassignment-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-create-approleassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-create-approleassignment-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-create-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-create-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-create-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-create-approleassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-create-approleassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-create-approleassignment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned user.
+In this example, note that the value used as the user **id** in the request URL (`cde330e5-2150-4c11-9c5b-14bfdc948c79`) is the same as the **principalId** property in the body.
 
 ### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -112,16 +129,18 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 253
 
 {
-  "id": "id-value",
-  "creationTimestamp": "2016-10-19T10:37:00Z",
-  "principalType": "principalType-value",
-  "principalId": "principalId-value",
-  "principalDisplayName": "principalDisplayName-value",
-  "resourceId": "resourceId-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('cde330e5-2150-4c11-9c5b-14bfdc948c79')/appRoleAssignments/$entity",
+  "id": "5TDjzVAhEUycWxS_3JSMeY-oHkjrWvBKi7aIZwYGQzg",
+  "deletedDateTime": null,
+  "appRoleId": "00000000-0000-0000-0000-000000000000",
+  "createdDateTime": "2021-02-15T10:31:53.5164841Z",
+  "principalDisplayName": "Megan Bowen",
+  "principalId": "cde330e5-2150-4c11-9c5b-14bfdc948c79",
+  "principalType": "User",
+  "resourceDisplayName": "dxprovisioning-graphapi-client",
+  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
 }
 ```
 

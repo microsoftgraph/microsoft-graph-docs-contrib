@@ -1,36 +1,36 @@
 ---
-title: "List schools"
+title: "List schools of an educationUser"
 description: "Retrieve a list of schools for a user."
 author: "mmast-msft"
-localization_priority: Normal
-ms.prod: "education"
+ms.localizationpriority: medium
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
-# List schools
+# List schools of an educationUser
 
 Namespace: microsoft.graph
 
 Retrieve a list of schools for a user.
 
->**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
+>**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...v1.0/education/me/schools` resource in this case.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | EduRoster.ReadBasic                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "educationuser_list_schools" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationuser-list-schools-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/me/schools
-GET /education/users/{id}/schools
+GET /education/users/{educationUserId}/schools
 ```
 
 ## Optional query parameters
@@ -41,11 +41,11 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,41 +55,57 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ##### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
-  "name": "get_schools"
+  "name": "get_schools_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/schools
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-schools-3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schools-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-schools-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-schools-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-schools-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-schools-3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
 
-The following is an example of the response.
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -100,7 +116,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
   "value": [

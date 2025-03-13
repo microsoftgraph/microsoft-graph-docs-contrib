@@ -1,10 +1,11 @@
 ---
 title: "user: getMailTips"
 description: "Get the MailTips of one or more recipients as available to the signed-in user."
-author: "svpsiva"
-localization_priority: Normal
-ms.prod: "outlook"
+author: "SuryaLashmiS"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # user: getMailTips
@@ -13,17 +14,16 @@ Namespace: microsoft.graph
 
 Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).
 
-Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to 
+Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to
 be returned for more than one recipient at one time. The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.Read.Shared    |
-|Delegated (personal Microsoft account) | Mail.Read    |
-|Application | Mail.Read |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "user_getmailtips" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-getmailtips-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -32,11 +32,11 @@ POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Header       | Value|
 |:-----------  |:------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -66,33 +66,49 @@ Content-Type: application/json
 
 {
     "EmailAddresses": [
-        "danas@contoso.onmicrosoft.com", 
-        "fannyd@contoso.onmicrosoft.com"
+        "danas@contoso.com",
+        "fannyd@contoso.com"
     ],
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmailtips-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-getmailtips-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-getmailtips-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-getmailtips-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-getmailtips-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-getmailtips-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-getmailtips-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-getmailtips-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-getmailtips-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-getmailtips-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,7 +125,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"",
-                "address":"danas@contoso.onmicrosoft.com"
+                "address":"danas@contoso.com"
             },
             "automaticReplies":{
                 "message":"<style type=\"text/css\" style=\"\">\r\n<!--\r\np\r\n\t{margin-top:0;\r\n\tmargin-bottom:0}\r\n-->\r\n</style>\r\n<div dir=\"ltr\">\r\n<div id=\"x_divtagdefaultwrapper\" style=\"font-size:12pt; color:#000000; background-color:#FFFFFF; font-family:Calibri,Arial,Helvetica,sans-serif\">\r\n<p>Hi, I am on vacation right now. I'll get back to you after I return.<br>\r\n</p>\r\n</div>\r\n</div>",
@@ -131,7 +147,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"",
-                "address":"fannyd@contoso.onmicrosoft.com"
+                "address":"fannyd@contoso.com"
             },
             "automaticReplies":{
                 "message":""
@@ -154,4 +170,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

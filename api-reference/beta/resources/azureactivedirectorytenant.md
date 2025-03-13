@@ -1,10 +1,11 @@
 ---
 title: "azureActiveDirectoryTenant resource type"
-description: "The azureActiveDirectoryTenant type identifies another Azure Active Directory tenant as an identity source for a connected organization."
-localization_priority: Normal
+description: "The azureActiveDirectoryTenant type identifies another Microsoft Entra tenant as an identity source for a connected organization."
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 10/31/2024
 ---
 
 # azureActiveDirectoryTenant resource type
@@ -13,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.azureActiveDirectoryTenant` indicates that this type identifies another Azure Active Directory tenant as an identity source for a connected organization.
+Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.azureActiveDirectoryTenant` indicates that this type identifies another Microsoft Entra tenant as an identity source for a connected organization.
 
 ## Properties
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |String | The name of the Azure Active Directory tenant. Read only. |
-| tenantId |String | The ID of the Azure Active Directory tenant. Read only. |
+| displayName |String | The name of the Microsoft Entra tenant. Read only. |
+| tenantId |String | The ID of the Microsoft Entra tenant. Read only. |
 
 ## Relationships
 
@@ -55,5 +56,3 @@ The following is a JSON representation of the type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

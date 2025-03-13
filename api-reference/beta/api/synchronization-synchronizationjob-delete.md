@@ -1,10 +1,11 @@
 ---
 title: "Delete synchronizationJob"
 description: "Stop the synchronization job, and permanently delete all the state associated with it."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
+ms.date: 06/22/2024
 ---
 
 # Delete synchronizationJob
@@ -15,14 +16,15 @@ Namespace: microsoft.graph
 
 Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported.  |
-|Application                            |Not supported. | 
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "synchronization_synchronizationjob_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationjob-delete-permissions.md)]
+
+[!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
@@ -34,20 +36,20 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 | Name           | Type    | Description|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, returns a `204 No Content` response. It does not return anything in the response body.
+If successful, returns a `204 No Content` response. It doesn't return anything in the response body.
 
 ## Example
 
 ##### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -57,23 +59,43 @@ The following is an example of a request.
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-synchronizationjob-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-synchronizationjob-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-synchronizationjob-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-synchronizationjob-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-synchronizationjob-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-synchronizationjob-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-synchronizationjob-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-synchronizationjob-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-synchronizationjob-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

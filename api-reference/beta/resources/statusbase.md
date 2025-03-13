@@ -1,17 +1,20 @@
 ---
 title: "statusBase resource type"
 description: "Describes the status of the provisioning summary event."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
-# statusBase resource type
+# statusBase resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+>[!CAUTION] 
+> The statusBase API is deprecated and will stop returning data om December 31, 2021. Please use the new [provisioningStatusInfo](provisioningstatusinfo.md) type.
 
 Describes the status of the provisioning summary event. 
 
@@ -19,11 +22,11 @@ Describes the status of the provisioning summary event.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|String| Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.|
+|status|provisioningResult| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`. Supports `$filter` (`eq`, `contains`).|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

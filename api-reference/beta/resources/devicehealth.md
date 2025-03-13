@@ -2,9 +2,10 @@
 title: deviceHealth resource type
 description: Represents a device's health, including any errors.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # deviceHealth resource type
@@ -20,9 +21,13 @@ Represents a device's health, including any errors.
 |:-------------|:------------|:------------|
 |lastConnectionTime|DateTimeOffset|The last time the device was connected.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

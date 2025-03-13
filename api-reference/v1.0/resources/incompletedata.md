@@ -1,11 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
 title: incompleteData resource type
 description: The incompleteData facet indicates that a resource was generated with incomplete data.
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # incompleteData resource type
 

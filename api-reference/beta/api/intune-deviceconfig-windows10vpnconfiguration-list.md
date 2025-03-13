@@ -1,10 +1,11 @@
 ---
 title: "List windows10VpnConfigurations"
 description: "List properties and relationships of the windows10VpnConfiguration objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List windows10VpnConfigurations
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -39,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -61,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5260
+Content-Length: 5371
 
 {
   "value": [
@@ -117,6 +120,7 @@ Content-Length: 5260
       "dnsSuffixes": [
         "Dns Suffixes value"
       ],
+      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
       "authenticationMethod": "usernameAndPassword",
       "rememberUserCredentials": true,
       "enableConditionalAccess": true,
@@ -180,7 +184,8 @@ Content-Length: 5260
           "appId": "App Id value",
           "appType": "desktop",
           "routingPolicyType": "splitTunnel",
-          "claims": "Claims value"
+          "claims": "Claims value",
+          "vpnTrafficDirection": "inbound"
         }
       ],
       "routes": [
@@ -218,9 +223,3 @@ Content-Length: 5260
   ]
 }
 ```
-
-
-
-
-
-

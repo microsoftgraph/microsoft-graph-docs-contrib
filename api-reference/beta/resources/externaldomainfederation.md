@@ -1,10 +1,11 @@
 ---
 title: "externalDomainFederation resource type"
 description: "The externalDomainFederation type identifies a non-tenant domain with a configured identity provider as an identity source for a connected organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 03/06/2024
 ---
 
 # externalDomainFederation resource type

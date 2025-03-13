@@ -1,59 +1,67 @@
 ---
-title: "Update bookingcustomer"
+title: "Update bookingCustomer"
 description: "Update the properties of a bookingCustomer object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 08/02/2024
 ---
 
-# Update bookingcustomer
+# Update bookingCustomer
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [bookingCustomer](../resources/bookingcustomer.md) object.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "bookingcustomer_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingcustomer-update-permissions.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}/customers/{id}
+PATCH /solutions/bookingbusinesses/{id}/customers/{id}
 ```
+
 ## Optional request headers
+
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business, and other addresses.|
+|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business, and mobile numbers.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and updated [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_bookingcustomer"
+  "name": "update_bookingcustomer",
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "8bb19078-0f45-4efb-b2c5-da78b860f73a"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
+PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
 Content-type: application/json
 
 {
@@ -61,22 +69,39 @@ Content-type: application/json
     "emailAddress": "adele@relecloud.com"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingcustomer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-bookingcustomer-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingcustomer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-bookingcustomer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingcustomer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-bookingcustomer-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-bookingcustomer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-bookingcustomer-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,7 +112,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/customers/$entity",
     "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
     "displayName": "Adele",
     "emailAddress": "adele@relecloud.com"

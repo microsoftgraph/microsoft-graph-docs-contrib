@@ -1,0 +1,102 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationSystem",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/authorizationSystem?view=graph-rest-beta) resource and its associated methods. This object represents authorization systems onboarded to Microsoft Entra Permissions Management.",
+          "Target": "authorizationSystem"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsAuthorizationSystem",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsAuthorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/awsAuthorizationSystem?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "awsAuthorizationSystem"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAuthorizationSystem",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAuthorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/azureAuthorizationSystem?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "azureAuthorizationSystem"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpAuthorizationSystem",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpAuthorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/gcpAuthorizationSystem?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "gcpAuthorizationSystem"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "dataCollectionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **dataCollectionStatus** enumeration type.",
+          "Target": "dataCollectionStatus"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "permissionsModificationCapability",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionsModificationCapability** enumeration type.",
+          "Target": "permissionsModificationCapability"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementsDataCollection",
+          "ChangeType": "Addition",
+          "Description": "Added the [entitlementsDataCollection](https://learn.microsoft.com/en-us/graph/api/resources/entitlementsDataCollection?view=graph-rest-beta) resource type.",
+          "Target": "entitlementsDataCollection"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementsDataCollectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [entitlementsDataCollectionInfo](https://learn.microsoft.com/en-us/graph/api/resources/entitlementsDataCollectionInfo?view=graph-rest-beta) resource type.",
+          "Target": "entitlementsDataCollectionInfo"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "noEntitlementsDataCollection",
+          "ChangeType": "Addition",
+          "Description": "Added the [noEntitlementsDataCollection](https://learn.microsoft.com/en-us/graph/api/resources/noEntitlementsDataCollection?view=graph-rest-beta) resource type.",
+          "Target": "noEntitlementsDataCollection"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dataCollectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataCollectionInfo](https://learn.microsoft.com/en-us/graph/api/resources/dataCollectionInfo?view=graph-rest-beta) resource.",
+          "Target": "dataCollectionInfo"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationSystems",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizationSystems** relationship to the [external](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-external?view=graph-rest-beta) resource.",
+          "Target": "external"
+        }
+      ],
+      "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-16T00:00:00.8333073Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Multicloud permissions management"
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 ---
 title: "call: mute"
 description: "Allows the application to mute itself."
-author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+author: "rahulva-msft"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # call: mute
@@ -19,14 +20,15 @@ For more details about how to handle mute operations, see [muteParticipantOperat
 
 > **Note:** This method is only supported for group calls.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not Supported.                               |
-| Delegated (personal Microsoft account) | Not Supported.                               |
-| Application                            | None.                                        |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "call_mute" } -->
+[!INCLUDE [permissions-table](../includes/permissions/call-mute-permissions.md)]
+
+> **Note:** Permissions are checked when the call is created; no additional permission check is made when calling this API. Calls.AccessMedia.All is only necessary for calls that use app-hosted media.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +39,7 @@ POST /communications/calls/{id}/mute
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -77,24 +79,39 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-mute-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-mute-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/call-mute-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-mute-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-mute-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-mute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-mute-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/call-mute-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-mute-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/call-mute-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
+> **Note:** The response object shown here might be shortened for readability. 
  
 <!-- { 
   "blockType": "response", 
@@ -106,14 +123,7 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.muteParticipantOperation",
-  "truncated": true
-}-->
-```json
 {
   "@odata.type": "#microsoft.graph.muteParticipantOperation",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#muteParticipantOperation",

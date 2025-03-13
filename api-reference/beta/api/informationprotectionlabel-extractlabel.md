@@ -1,32 +1,34 @@
 ---
-title: "informationProtectionLabel: extractLabel"
-description: "Retrieve informationProtectionContentLabel using metadata from a labeled object."
-localization_priority: Normal
+title: "informationProtectionLabel: extractLabel (deprecated)"
+description: "Retrieve informationProtectionContentLabel using metadata from a labeled object. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "security"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
-# informationProtectionLabel: extractLabel
+# informationProtectionLabel: extractLabel (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label. The [contentInfo](../resources/contentinfo.md) input is resolved to [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md).
 
 >[!NOTE]
 >The **[informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)** resource represents a sensitivity label that has been applied to a piece of information. [informationProtectionLabel](../resources/informationprotectionlabel.md) objects are the abstract labels that are part of the organizational labeling policy and can be applied to information.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | InformationProtectionPolicy.Read            |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+<!-- { "blockType": "permissions", "name": "informationprotectionlabel_extractlabel" } -->
+[!INCLUDE [permissions-table](../includes/permissions/informationprotectionlabel-extractlabel-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +42,7 @@ POST /informationprotection/policy/labels/extractLabel
 
 | Name          | Description                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required.                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | Content-type: application/json. Required.                                                                                                                                         |
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
@@ -62,7 +64,7 @@ The following is an example of how to call this API.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,7 +73,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/extractLabel
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/extractLabel
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
@@ -124,26 +126,46 @@ User-agent: ContosoLOBApp/1.0
     }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/informationprotectionlabel-extractlabel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/informationprotectionlabel-extractlabel-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-extractlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-extractlabel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/informationprotectionlabel-extractlabel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-extractlabel-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/informationprotectionlabel-extractlabel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-extractlabel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/informationprotectionlabel-extractlabel-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -166,7 +188,8 @@ Content-type: application/json
         "color": "#000000",
         "sensitivity": 13,
         "tooltip": "This information is top secret.",
-        "isActive": true
+        "isActive": true,
+        "parent" : null
     }
 }
 ```

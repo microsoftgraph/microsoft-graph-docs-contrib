@@ -1,10 +1,11 @@
 ---
 title: "userExperienceAnalyticsSettings resource type"
 description: "The user experience analytics insight is the recomendation to improve the user experience analytics score."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # userExperienceAnalyticsSettings resource type
@@ -20,7 +21,7 @@ The user experience analytics insight is the recomendation to improve the user e
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|configurationManagerDataConnectorConfigured|Boolean|True if Tenant attach is configured. If configured then SCCM tenant attached devices will show up in UXA reporting.|
+|configurationManagerDataConnectorConfigured|Boolean|When TRUE, indicates Tenant attach is configured properly and System Center Configuration Manager (SCCM) tenant attached devices will show up in endpoint analytics reporting. When FALSE, indicates Tenant attach is not configured. FALSE by default.|
 
 ## Relationships
 None
@@ -38,9 +39,3 @@ Here is a JSON representation of the resource.
   "configurationManagerDataConnectorConfigured": true
 }
 ```
-
-
-
-
-
-

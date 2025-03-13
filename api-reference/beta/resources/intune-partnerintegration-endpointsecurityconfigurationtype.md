@@ -1,10 +1,11 @@
 ---
 title: "endpointSecurityConfigurationType enum type"
 description: "The endpoint security policy type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # endpointSecurityConfigurationType enum type
@@ -27,9 +28,3 @@ The endpoint security policy type.
 |endpointDetectionAndResponse|4|Endpoint detection and response.|
 |attackSurfaceReduction|5|Attack surface reduction.|
 |accountProtection|6|Account protection.|
-
-
-
-
-
-

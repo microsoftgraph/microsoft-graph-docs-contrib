@@ -1,10 +1,11 @@
 ---
 title: "Update macOSDeviceFeaturesConfiguration"
 description: "Update the properties of a macOSDeviceFeaturesConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update macOSDeviceFeaturesConfiguration
@@ -15,14 +16,16 @@ Namespace: microsoft.graph
 
 Update the properties of a [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -62,6 +65,9 @@ If successful, this method returns a `200 OK` response code and an updated [macO
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_macosdevicefeaturesconfiguration_update_update_macosdevicefeaturesconfiguration" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
@@ -75,8 +81,44 @@ Content-length: 170
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.macOSDeviceFeaturesConfiguration" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -92,12 +134,3 @@ Content-Length: 342
   "version": 7
 }
 ```
-
-
-
-
-
-
-
-
-

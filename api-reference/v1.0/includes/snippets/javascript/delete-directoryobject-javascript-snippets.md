@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directoryObjects/{id}')
+await client.api('/directoryObjects/ffab4dce-9b82-49a6-b7c7-1a143106598c')
 	.delete();
 
 ```

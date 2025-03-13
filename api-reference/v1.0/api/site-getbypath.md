@@ -1,12 +1,11 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
+author: spgraph-docs-team
 title: Get SharePoint site by path
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
 description: "Retrieve properties and relationships for a site resource."
 doc_type: apiPageType
+ms.date: 03/14/2024
 ---
 # Get a site resource by path
 
@@ -29,25 +28,36 @@ There is also a reserved site identifier, `root`, which always references the ro
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "site_getbypath" } -->
+[!INCLUDE [permissions-table](../includes/permissions/site-getbypath-permissions.md)]
 
 ## HTTP Request
-
-To access the root SharePoint site with a relative path:
-
-<!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## Response
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Example
+
+### Request
+To access the root SharePoint site with a relative path:
+
+<!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+
+```http
+GET https://graph.microsoft.com/v1.0/sites/{hostname}:/{relative-path}
+```
+
+### Response
 
 This method returns a [site][] resource for the site referenced by the unique identifier.
 
@@ -60,6 +70,7 @@ Content-Type: application/json
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
   "displayName": "OneDrive Team Site",
+  "isPersonalSite": false,
   "name": "1drvteam",
   "createdDateTime": "2017-05-09T20:56:00Z",
   "lastModifiedDateTime": "2017-05-09T20:56:01Z",
@@ -73,10 +84,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: Couldn't serialize request for path /sites/{var}/children/{var} into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property 'children' on 'site'. Possible issues:
-         1) Doc bug where 'children' isn't defined on the resource.      2) Doc bug where 'children' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'site' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
-     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 982
-     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 653"
   ],
   "tocPath": "Sites/Get by path"
 } -->

@@ -1,10 +1,11 @@
 ---
 title: "List deviceManagementAutopilotPolicyStatusDetails"
 description: "List properties and relationships of the deviceManagementAutopilotPolicyStatusDetail objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List deviceManagementAutopilotPolicyStatusDetails
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ GET /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyS
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 405
+Content-Length: 428
 
 {
   "value": [
@@ -71,14 +74,9 @@ Content-Length: 405
       "policyType": "application",
       "complianceStatus": "compliant",
       "trackedOnEnrollmentStatus": true,
-      "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+      "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+      "errorCode": 9
     }
   ]
 }
 ```
-
-
-
-
-
-

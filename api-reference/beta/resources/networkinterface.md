@@ -1,10 +1,11 @@
 ---
 title: "networkInterface resource type"
 description: "Represents a Network Interface Card (NIC) associated with this host."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: cloud-pc
 author: "preetikr"
+ms.date: 07/08/2024
 ---
 
 # networkInterface resource type
@@ -17,15 +18,18 @@ Represents a Network Interface Card (NIC) associated with this host.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|description|String|Description of the NIC (e.g. Ethernet adapter, Wireless LAN adapter Local Area Connection *<#>, etc.).|
+|description|String|Description of the NIC (for example, Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).|
 |ipV4Address|String|Last IPv4 address associated with this NIC.|
-|ipV6Address|String|Last Public (aka global) IPv6 address associated with this NIC.|
+|ipV6Address|String|Last Public (also known as global) IPv6 address associated with this NIC.|
 |localIpV6Address|String|Last local (link-local or site-local) IPv6 address associated with this NIC.|
 |macAddress|String|MAC address of the NIC on this host.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

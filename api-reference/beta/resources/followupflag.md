@@ -1,10 +1,11 @@
 ---
 title: "followupFlag resource type"
 description: "Allows setting a flag for the user to follow up on an item later. Supported items include message and contact."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "svpsiva"
+ms.subservice: mail
+author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # followupFlag resource type
@@ -19,13 +20,16 @@ Allows setting a flag for the user to follow up on an item later. Supported item
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time that the follow-up was finished.|
-|dueDateTime|**dateTimeTimeZone**|The date and time that the follow up is to be finished. **Note**: To set the due date, you must also specify the `startDateTime`; otherwise, you will get a `400 Bad Request` response.|
+|dueDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to be finished. **Note**: To set the due date, you must also specify the `startDateTime`; otherwise, you get a `400 Bad Request` response.|
 |flagStatus|String|The status for follow-up for an item. Possible values are `notFlagged`, `complete`, and `flagged`.|
 |startDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to begin.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

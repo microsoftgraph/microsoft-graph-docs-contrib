@@ -1,10 +1,11 @@
 ---
 title: "complianceManagementPartner resource type"
 description: "Compliance management partner for all platforms"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # complianceManagementPartner resource type
@@ -63,7 +64,8 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "String"
       }
     }
   ],
@@ -71,7 +73,8 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "String"
       }
     }
   ],
@@ -79,14 +82,10 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "String"
       }
     }
   ]
 }
 ```
-
-
-
-
-

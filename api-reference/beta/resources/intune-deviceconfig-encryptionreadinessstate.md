@@ -1,10 +1,11 @@
 ---
 title: "encryptionReadinessState enum type"
 description: "Encryption readiness state"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # encryptionReadinessState enum type
@@ -22,9 +23,3 @@ Encryption readiness state
 |:---|:---|:---|
 |notReady|0|Not ready|
 |ready|1|Ready|
-
-
-
-
-
-

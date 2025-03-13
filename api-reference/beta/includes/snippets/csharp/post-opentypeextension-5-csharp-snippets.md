@@ -4,45 +4,60 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var conversation = new Conversation
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Conversation
 {
 	Topic = "Does anyone have a second?",
-	Threads = (IConversationThreadsCollectionPage)new List<ConversationThread>()
+	Threads = new List<ConversationThread>
 	{
 		new ConversationThread
 		{
-			Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
+			Posts = new List<Post>
 			{
 				new Post
 				{
 					Body = new ItemBody
 					{
 						ContentType = BodyType.Html,
-						Content = "This is urgent!"
+						Content = "This is urgent!",
 					},
-					Extensions = (IPostExtensionsCollectionPage)new List<Extension>()
+					Extensions = new List<Extension>
 					{
 						new OpenTypeExtension
 						{
+							OdataType = "microsoft.graph.openTypeExtension",
 							ExtensionName = "Com.Contoso.Benefits",
-							AdditionalData = new Dictionary<string, object>()
+							AdditionalData = new Dictionary<string, object>
 							{
-								{"companyName", "Contoso"},
-								{"expirationDate", "2016-08-03T11:00:00Z"},
-								{"topPicks", "[\"Employees only\",\"Add spouse or guest\",\"Add family\"]"}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+								{
+									"companyName" , "Contoso"
+								},
+								{
+									"expirationDate" , "2016-08-03T11:00:00.000Z"
+								},
+								{
+									"topPicks" , new List<string>
+									{
+										"Employees only",
+										"Add spouse or guest",
+										"Add family",
+									}
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	},
 };
 
-await graphClient.Groups["37df2ff0-0de0-4c33-8aee-75289364aef6"].Conversations
-	.Request()
-	.AddAsync(conversation);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Groups["{group-id}"].Conversations.PostAsync(requestBody);
+
 
 ```

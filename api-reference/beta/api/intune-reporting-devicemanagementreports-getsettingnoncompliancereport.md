@@ -1,10 +1,11 @@
 ---
 title: "getSettingNonComplianceReport action"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Reporting Devicemanagementreports Getsettingnoncompliancereport Api ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/12/2024
 ---
 
 # getSettingNonComplianceReport action
@@ -15,16 +16,18 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
 
-## Prerequisites
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ POST /deviceManagement/reports/getSettingNonComplianceReport
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,15 +51,15 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Not yet documented|
-|select|String collection|Not yet documented|
-|search|String|Not yet documented|
-|groupBy|String collection|Not yet documented|
-|orderBy|String collection|Not yet documented|
-|skip|Int32|Not yet documented|
-|top|Int32|Not yet documented|
-|sessionId|String|Not yet documented|
-|filter|String|Not yet documented|
+|name|String||
+|select|String collection||
+|groupBy|String collection||
+|orderBy|String collection||
+|search|String||
+|skip|Int32||
+|top|Int32||
+|sessionId|String||
+|filter|String||
 
 
 
@@ -78,13 +81,13 @@ Content-length: 278
   "select": [
     "Select value"
   ],
-  "search": "Search value",
   "groupBy": [
     "Group By value"
   ],
   "orderBy": [
     "Order By value"
   ],
+  "search": "Search value",
   "skip": 4,
   "top": 3,
   "sessionId": "Session Id value",
@@ -103,9 +106,3 @@ Content-Length: 99
   "value": "Z2V0U2V0dGluZ05vbkNvbXBsaWFuY2VSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgMTEwMDk1MTE2MA=="
 }
 ```
-
-
-
-
-
-

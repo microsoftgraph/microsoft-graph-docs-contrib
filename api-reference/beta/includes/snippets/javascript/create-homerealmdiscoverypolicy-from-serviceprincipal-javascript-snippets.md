@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const homeRealmDiscoveryPolicy = {
-  @odata.id:"https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
+    '@odata.id': 'https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde'
 };
 
-let res = await client.api('/servicePrincipals/{id}/homeRealmDiscoveryPolicies')
+await client.api('/servicePrincipals/19c308f2-e088-464d-8ccb-7137b7bab660/homeRealmDiscoveryPolicies/$ref')
 	.version('beta')
 	.post(homeRealmDiscoveryPolicy);
 

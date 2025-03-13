@@ -1,10 +1,11 @@
 ---
 title: "nonEapAuthenticationMethodForPeap enum type"
 description: "Non-EAP methods for authentication when PEAP is the selected EAP type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # nonEapAuthenticationMethodForPeap enum type
@@ -22,9 +23,3 @@ Non-EAP methods for authentication when PEAP is the selected EAP type.
 |:---|:---|:---|
 |none|0|None.|
 |microsoftChapVersionTwo|1|Microsoft CHAP Version 2 (MS-CHAP v2).|
-
-
-
-
-
-

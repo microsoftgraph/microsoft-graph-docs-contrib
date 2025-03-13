@@ -1,10 +1,11 @@
 ---
 title: "List complianceManagementPartners"
 description: "List properties and relationships of the complianceManagementPartner objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List complianceManagementPartners
@@ -15,14 +16,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +39,7 @@ GET /deviceManagement/complianceManagementPartners
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -49,16 +52,55 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_onboarding_compliancemanagementpartner_list_list_compliancemanagementpartners" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPartners
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.complianceManagementPartner" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1192
+Content-Length: 1408
 
 {
   "value": [
@@ -75,7 +117,8 @@ Content-Length: 1192
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+            "collectionId": "Collection Id value"
           }
         }
       ],
@@ -83,7 +126,8 @@ Content-Length: 1192
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+            "collectionId": "Collection Id value"
           }
         }
       ],
@@ -91,7 +135,8 @@ Content-Length: 1192
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+            "collectionId": "Collection Id value"
           }
         }
       ]
@@ -99,9 +144,3 @@ Content-Length: 1192
   ]
 }
 ```
-
-
-
-
-
-

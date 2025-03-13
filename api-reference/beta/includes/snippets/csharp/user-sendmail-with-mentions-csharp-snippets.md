@@ -4,38 +4,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var message = new Message
+// Dependencies
+using Microsoft.Graph.Beta.Me.SendMail;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SendMailPostRequestBody
 {
-	Subject = "Project kickoff",
-	ToRecipients = new List<Recipient>()
+	Message = new Message
 	{
-		new Recipient
+		Subject = "Project kickoff",
+		ToRecipients = new List<Recipient>
 		{
-			EmailAddress = new EmailAddress
+			new Recipient
 			{
-				Name = "Samantha Booth",
-				Address = "samanthab@contoso.onmicrosoft.com"
-			}
-		}
+				EmailAddress = new EmailAddress
+				{
+					Name = "Samantha Booth",
+					Address = "samanthab@contoso.com",
+				},
+			},
+		},
+		Mentions = new List<Mention>
+		{
+			new Mention
+			{
+				Mentioned = new EmailAddress
+				{
+					Name = "Dana Swope",
+					Address = "danas@contoso.com",
+				},
+			},
+		},
 	},
-	Mentions = (IMessageMentionsCollectionPage)new List<Mention>()
-	{
-		new Mention
-		{
-			Mentioned = new EmailAddress
-			{
-				Name = "Dana Swope",
-				Address = "danas@contoso.onmicrosoft.com"
-			}
-		}
-	}
 };
 
-await graphClient.Me
-	.SendMail(message,null)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Me.SendMail.PostAsync(requestBody);
+
 
 ```

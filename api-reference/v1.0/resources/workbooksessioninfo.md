@@ -2,9 +2,10 @@
 title: "workbookSessionInfo resource type"
 description: "Provides information about workbook session."
 author: "lumine2008"
-localization_priority: Normal
-ms.prod: "excel"
+ms.localizationpriority: medium
+ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # workbookSessionInfo resource type
@@ -16,7 +17,7 @@ Provides information about workbook session.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -35,7 +36,7 @@ Here is a JSON representation of the resource
 
 | Property | Type  | Description                               |
 |:---------|:------|:------------------------------------------|
-| id  | string | Id of the workbook session. |
-| persistChanges | boolean |  `true` for persistent session. `false` for non-persistent session (view mode) |
+| id  | string | ID of the workbook session. |
+| persistChanges | Boolean |  `true` for persistent session. `false` for non-persistent session (view mode) |
 
 

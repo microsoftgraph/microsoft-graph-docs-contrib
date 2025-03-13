@@ -1,10 +1,11 @@
 ---
 title: "itemBody resource type"
 description: "Represents properties of the body of an item, such as a message, event or group post."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # itemBody resource type
@@ -19,9 +20,13 @@ Represents properties of the body of an item, such as a message, event or group 
 |content|String|The content of the item.|
 |contentType|bodyType|The type of the content. Possible values are `text` and `html`.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

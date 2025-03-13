@@ -1,10 +1,11 @@
 ---
 title: "Get singleValueLegacyExtendedProperty"
 description: "You can get a single resource instance expanded with a specific extended property, or a collection of resource instances"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
-author: "svpsiva"
+ms.subservice: non-product-specific
+author: "SuryaLashmiS"
+ms.date: 04/05/2024
 ---
 
 # Get singleValueLegacyExtendedProperty
@@ -47,6 +48,8 @@ As well as the following group resources:
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
 open extensions or extended properties, and how to specify extended properties.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -293,10 +296,10 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -319,21 +322,43 @@ extended property that has its **id** matching the string `String {66f5a359-4659
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_singlevaluelegacyextendedproperty_1"
+  "name": "get_singlevaluelegacyextendedproperty_1",
+  "sampleKeys": ["AAMkAGE1M2_bs88AACHsLqWAAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=/?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-singlevaluelegacyextendedproperty-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-singlevaluelegacyextendedproperty-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-singlevaluelegacyextendedproperty-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-singlevaluelegacyextendedproperty-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-singlevaluelegacyextendedproperty-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-singlevaluelegacyextendedproperty-1-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-singlevaluelegacyextendedproperty-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-singlevaluelegacyextendedproperty-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-singlevaluelegacyextendedproperty-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -372,7 +397,6 @@ Content-type: application/json
             }
         }
     ],
-    "singleValueExtendedProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2_bs88AACHsLqWAAA%3D')/singleValueExtendedProperties",
     "singleValueExtendedProperties": [
         {
             "id": "String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",

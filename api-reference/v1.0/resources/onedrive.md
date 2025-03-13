@@ -1,10 +1,11 @@
 ---
 title: "Working with files in Microsoft Graph"
 description: "You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries."
-localization_priority: Priority
-ms.prod: "sharepoint"
+ms.localizationpriority: high
+ms.subservice: "sharepoint"
 author: "jewan-microsoft"
 doc_type: conceptualPageType
+ms.date: 03/12/2024
 ---
 
 # Working with files in Microsoft Graph
@@ -50,7 +51,7 @@ The following is an example of a DriveItem resource:
 **Drive** and **DriveItem** resources expose data in three different ways:
 
 * _Properties_ (like **id** and **name**) expose simple values (strings, numbers, Booleans).
-* _Facets_ (like **file** and **photo**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.
+* _Facets_ (like **file** and **image**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.
 * _References_ (like **children** and **thumbnails**) point to collections of other resources.
 
 ## Commonly accessed resources
@@ -82,6 +83,8 @@ This table provides an example of different ways to use the colon character to a
 | `/me/drive/root:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to the root of the user's OneDrive. |
 | `/me/drive/items/{item-id}:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to another item. |
 
+For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems).
+
 ## Drive resource
 
 The [Drive resource](drive.md) is the top-level object within a user's OneDrive or a [SharePoint][] document library.
@@ -112,9 +115,5 @@ Microsoft Graph allows your app to create [sharing links](../api/driveitem-creat
 
 Microsoft Graph also provides a way for your app to [access shared content](../api/shares-get.md) directly from a sharing link.
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 [SharePoint]: sharepoint.md
 [site]: site.md
-

@@ -1,10 +1,11 @@
 ---
 title: "vppTokenState enum type"
 description: "Possible states associated with an Apple Volume Purchase Program token."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # vppTokenState enum type
@@ -26,9 +27,3 @@ Possible states associated with an Apple Volume Purchase Program token.
 |invalid|3|Token is invalid.|
 |assignedToExternalMDM|4|Token is managed by another MDM Service.|
 |duplicateLocationId|5|Token is associated with the same location as another token on the account.|
-
-
-
-
-
-

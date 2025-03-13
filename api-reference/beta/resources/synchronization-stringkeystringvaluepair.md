@@ -1,10 +1,11 @@
 ---
 title: "stringKeyStringValuePair resource type"
 description: "Represents a key-value pair where the key is a string and the value is a string."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # stringKeyStringValuePair resource type
@@ -21,9 +22,12 @@ Represents a key-value pair where the key is a string and the value is a string.
 |key|String|Key.|
 |value|String|Value.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

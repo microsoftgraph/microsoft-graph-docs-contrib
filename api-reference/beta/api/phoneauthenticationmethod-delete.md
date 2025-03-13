@@ -1,10 +1,12 @@
 ---
 title: "Delete phoneAuthenticationMethod"
 description: "Delete a user's phone authentication method."
-localization_priority: Normal
-author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "luc-msft"
+ms.reviewer: intelligentaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/21/2024
 ---
 
 # Delete phoneAuthenticationMethod
@@ -17,54 +19,72 @@ Delete a user's [phone authentication method](../resources/phoneauthenticationme
 
 >**Note:** This removes the phone number from the user and they will no longer be able to use the number for authentication, whether via SMS or voice calls.
 
-Remember that a user cannot have an `alternateMobile` number without a `mobile` number. If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first [update](phoneauthenticationmethod-update.md) the `mobile` number to the new number, then delete the `alternateMobile` number.
+Remember that a user may not have an `alternateMobile` number without a `mobile` number. If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first [update](phoneauthenticationmethod-update.md) the `mobile` number to the new number, then delete the `alternateMobile` number.
 
-If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted. Have the user change their default authentication method, and then delete the number.
+If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted. Have the user change their default authentication method, and then delete the number.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegated (work or school account)     | Not supported. | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application                            | Not supported. | Not supported. |
+### Permissions acting on self
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|UserAuthenticationMethod.ReadWrite|UserAuthenticationMethod.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+### Permissions acting on other users
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|UserAuthenticationMethod.ReadWrite.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|UserAuthenticationMethod.ReadWrite.All|Not available.|
 
-* Global admin
-* Privileged authentication admin
-* Authentication admin
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
+Delete your own phone authentication method.
 <!-- { "blockType": "ignored" } -->
-
-```http
-DELETE /me/authentication/phoneMethods/{id}
-DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
+``` http
+DELETE /me/authentication/phoneMethods/{phoneMethodId}
 ```
+
+Delete your own or another user's phone authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
+DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
+```
+
+The value of `phoneMethodId` corresponding to the phoneType to delete is one of the following:
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` to delete the `alternateMobile` **phoneType**.
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` to delete the `office` **phoneType**.
++ `3179e48a-750b-4051-897c-87b9720928f7` to delete the `mobile` **phoneType**.
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,24 +95,44 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-phoneauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-phoneauthenticationmethod-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-phoneauthenticationmethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-phoneauthenticationmethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-phoneauthenticationmethod-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-phoneauthenticationmethod-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-phoneauthenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-phoneauthenticationmethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-phoneauthenticationmethod-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

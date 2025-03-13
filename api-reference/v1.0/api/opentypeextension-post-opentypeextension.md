@@ -1,23 +1,28 @@
 ---
 title: "Create open extension"
 description: "Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # Create open extension
 
 Namespace: microsoft.graph
 
-Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a resource.
+Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a resource. You can [create an open extension](/graph/api/opentypeextension-post-opentypeextension) in a resource instance and store custom data to it all in the same operation, except for specific resources.
+
+The table in the [Permissions](#permissions) section lists the resources that support open extensions.
 
 > **Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the resource you're creating, the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
@@ -29,8 +34,11 @@ Depending on the resource you're creating the extension in and the permission ty
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite | Not supported | User.ReadWrite.All |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## HTTP request
 
@@ -45,6 +53,8 @@ POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
+POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
+POST /users/{id|userPrincipalName}/todo/lists
 ```
 
 >**Note:** This syntax shows some common ways to create the supported resource instances. All other POST syntaxes
@@ -67,6 +77,8 @@ POST /users/{id|userPrincipalName}/messages/{id}/extensions
 POST /organization/{id}/extensions
 POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
+POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
+POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 ```
 
 >**Note:** This syntax shows some common ways to identify a resource instance, in order to create an
@@ -83,13 +95,13 @@ See the [Request body](#request-body) section about including _the extension_ in
 
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body
 
 Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md), with the following required
-name-value pairs, and any additional custom data. The data in the JSON payload can be primitive types, or arrays of
+name-value pairs, and any other custom data. The data in the JSON payload can be primitive types, or arrays of
 primitive types.
 
 | Name       | Value |
@@ -107,7 +119,7 @@ new **openTypeExtension** object, provide a JSON representation of the relevant 
 Depending on the operation, the response code can be `201 Created` or `202 Accepted`.
 
 When you create an extension using the same operation that you use to create a resource instance, the operation returns the same response code that it returns when you use the operation to create the resource instance without the extension.
-Refer to the corresponding topics for creating the instance, as listed [above](#create-an-extension-in-a-new-resource-instance).
+Refer to the corresponding articles for creating the instance, as listed [above](#create-an-extension-in-a-new-resource-instance).
 
 ### Response body
 
@@ -117,11 +129,12 @@ Refer to the corresponding topics for creating the instance, as listed [above](#
 | Creating an extension while implicitly creating a resource instance | [post](../resources/post.md) | The response includes only a response code but not a response body. |
 | Creating an extension in an _existing_ resource instance | All supported resources | Includes the **openTypeExtension** object. |
 
-## Example
+## Examples
 
-### Request 1
+### Example 1: Create a message and extension in the same call
+#### Request
 
-The first example creates a message and an extension in the same call. The request body includes the following:
+The following example creates a message and an extension in the same call. The request body includes the following:
 
 - The **subject**, **body**, and **toRecipients** properties typical of a new message.
 - And for the extension:
@@ -130,8 +143,10 @@ The first example creates a message and an extension in the same call. The reque
   - The extension name "Com.Contoso.Referral".
   - Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "post_opentypeextension_1"
 }-->
 ```http
@@ -162,16 +177,50 @@ POST https://graph.microsoft.com/v1.0/me/messages
 }
 ```
 
-### Response 1
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Here is the response for the first example. The response body includes properties of the new message,
-and the following for the new extension:
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-opentypeextension-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-opentypeextension-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-opentypeextension-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-opentypeextension-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+
+The following example shows the response for the first example. The response body includes properties of the new message, and the following for the new extension:
 
 - The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - The default property **extensionName** specified in the request.
-- The custom data specified in the request stored as 3 custom properties.
+- The custom data specified in the request stored as three custom properties.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -225,8 +274,6 @@ Content-type: application/json
   "webLink": "https://outlook.office.com/owa/?
 ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
   "inferenceClassification": "Focused",
-  "extensions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages
-('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
       "@odata.type": "#microsoft.graph.openTypeExtension",
@@ -244,18 +291,22 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 ****
 
-### Request 2
+### Example 2: Create an extension in the specified message
+#### Request
 
-The second example creates an extension in the specified message. The request body includes the following for the
+The following example creates an extension in the specified message. The request body includes the following for the
 extension:
 
 - The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.Referral".
-- Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.
+- Additional data to be stored as three custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "post_opentypeextension_2"
+  "blockType": "request",
+  "name": "post_opentypeextension_2",
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
@@ -269,9 +320,43 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi
 }
 ```
 
-### Response 2
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Here is the response for the second example. The response body includes the following for the new extension:
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-opentypeextension-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-opentypeextension-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-opentypeextension-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-opentypeextension-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response for the second example. The response body includes the following for the new extension:
 
 - The default property **extensionName**.
 - The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
@@ -299,20 +384,23 @@ Content-type: application/json
 }
 ```
 
-****
+### Example 3: Create an extension in the specified group event
 
-### Request 3
+#### Request
 
-The third example creates an extension in the specified group event. The request body includes the following for the
+The following example creates an extension in the specified group event. The request body includes the following for the
 extension:
 
 - The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.Deal".
-- Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.
+- Additional data to be stored as three custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "post_opentypeextension_3"
+  "blockType": "request",
+  "name": "post_opentypeextension_3",
+  "sampleKeys": ["f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
@@ -326,9 +414,43 @@ POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74
 }
 ```
 
-### Response 3
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Here is the response from the third example request.
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-opentypeextension-3-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-opentypeextension-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-opentypeextension-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-opentypeextension-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -350,21 +472,24 @@ Content-type: application/json
 }
 ```
 
-****
+### Example 4: Create an extension in a new group post
 
-### Request 4
+#### Request
 
-The fourth example creates an extension in a new group post, using the same **reply** action call to an existing group post. The **reply** action
+The following example creates an extension in a new group post, using the same **reply** action call to an existing group post. The **reply** action
 creates a new post, and a new extension embedded in the post. The request body includes a **post** property, which in turn contains
 the **body** of the new post, and the following data for the new extension:
 
 - The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.HR".
-- Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.
+- Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "post_opentypeextension_4"
+  "blockType": "request",
+  "name": "post_opentypeextension_4",
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6", "AAQkADJizZJpEWwqDHsEpV_KA==", "AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply
@@ -392,9 +517,43 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 }
 ```
 
-### Response 4
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Here is the response from the fourth example. Successfully creating an extension in a new group post results in only the
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-opentypeextension-4-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-opentypeextension-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-opentypeextension-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-opentypeextension-4-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response. Successfully creating an extension in a new group post results in only the
 HTTP 202 response code.
 
 <!-- {
@@ -407,22 +566,25 @@ Content-type: text/plain
 Content-Length: 0
 ```
 
-****
+### Example 5: Create an extension in a new group post using POST operation
 
-### Request 5
+#### Request 5
 
-The fifth example creates an extension in a new group post using the same POST operation to create a conversation. The POST operation
+The following example creates an extension in a new group post using the same POST operation to create a conversation. The POST operation
 creates a new conversation, thread and post, and a new extension embedded in the post. The request body includes the
 **Topic** and **Threads** properties, and a child **post** object for the new conversation. The **post** object
 in turn contains the **body** of the new post, and the following data for the extension:
 
 - The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.HR".
-- Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.
+- Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "post_opentypeextension_5"
+  "blockType": "request",
+  "name": "post_opentypeextension_5",
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6"]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations
@@ -457,12 +619,45 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 }
 ```
 
-### Response 5
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically
-created post, which in turn contains the new extension.
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-opentypeextension-5-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-opentypeextension-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-5-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-opentypeextension-5-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-5-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-opentypeextension-5-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response 5
+
+The following example shows the response, which contains the new conversation and a thread ID. This new thread contains an automatically created post, which in turn contains the new extension.
+
+Note: The response object shown here might be shortened for readability.
 
 To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this
 thread, and initially there should be only one. Then apply the post ID and the extension name `Com.Contoso.Benefits` to
@@ -480,7 +675,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations/$entity",
     "id": "AAQkADJToRlbJ5Mg7TFM7H-j3Y=",
-    "threads@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations('AAQkADJToRlbJ5Mg7TFM7H-j3Y%3D')/threads",
     "threads": [
         {
             "id": "AAQkADJDtMUzsf_PdhAAswJOhGVsnkyDtMUzsf_Pdg=="

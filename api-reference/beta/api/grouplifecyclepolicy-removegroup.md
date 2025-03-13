@@ -1,10 +1,12 @@
 ---
 title: "groupLifecyclePolicy: removeGroup"
 description: "Removes a group from a lifecycle policy."
-author: "yyuank"
-localization_priority: Normal
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.localizationpriority: medium
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # groupLifecyclePolicy: removeGroup
@@ -15,40 +17,41 @@ Namespace: microsoft.graph
 
 Removes a group from a lifecycle policy.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported |
-|Application |  Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "grouplifecyclepolicy_removegroup" } -->
+[!INCLUDE [permissions-table](../includes/permissions/grouplifecyclepolicy-removegroup-permissions.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groupLifecyclePolicies/{id}/removeGroup
 ```
 
 ## Request headers
 
-| Name | Description |
-|:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json |
+| Name          | Description               |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter | Type | Description |
-|:---------------|:--------|:----------|
-|groupId|Guid| The id of the group to remove from the policy.|
+| Parameter | Type   | Description                                            |
+| :-------- | :----- | :----------------------------------------------------- |
+| groupId   | String | The identifier of the group to remove from the policy. |
 
 ## Response
 
-If successful, this method returns `200 OK` response code. If the group is removed from the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
+If successful, this method returns `200 OK` response code. If the group is removed from the policy, a `true` value is returned in the response body. Otherwise, a `false` value is returned in the response body.
 
 ## Example
 
@@ -58,10 +61,10 @@ If successful, this method returns `200 OK` response code. If the group is remov
   "blockType": "ignored",
   "name": "grouplifecyclepolicy_removegroup"
 } -->
+
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/removeGroup
 Content-type: application/json
-Content-length: 57
 
 {
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
@@ -69,12 +72,12 @@ Content-length: 57
 ```
 
 ##### Response
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 21
 
 {
   "value": true
@@ -93,5 +96,3 @@ Content-length: 21
   "suppressions": []
 }
 -->
-
-

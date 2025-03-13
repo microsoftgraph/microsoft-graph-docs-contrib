@@ -1,17 +1,18 @@
 ---
 title: "mailTips resource type"
-description: "Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message "
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: "outlook"
+description: "Informative messages about a recipient, that are displayed to users while they're composing a message. For example, an out-of-office message "
+ms.localizationpriority: medium
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # mailTips resource type
 
 Namespace: microsoft.graph
 
-Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message 
+Informative messages about a recipient, that are displayed to users while they're composing a message. For example, an out-of-office message
 as an automatic reply for a message recipient.
 
 
@@ -31,20 +32,9 @@ as an automatic reply for a message recipient.
 | recipientSuggestions | [recipient](../resources/recipient.md) collection | Recipients suggested based on previous contexts where they appear in the same message. |
 | totalMemberCount | Int32 | The number of members if the recipient is a distribution list. |
 
-### recipientScopeType values
-
-| Value
-|:-------------------------
-| none
-| internal
-| external
-| externalPartner
-| externalNonPartner
-
-
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

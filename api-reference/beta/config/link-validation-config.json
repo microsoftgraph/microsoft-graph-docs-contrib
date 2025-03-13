@@ -1,11 +1,19 @@
 {
     "pathsToIgnore": [
+        "/adaptive-cards",
+        "/answers",
         "/aspnet",
         "/azure",
+        "/compliance",
         "/cloud-app-security",
+        "/concepts",
+        "/defender",
+        "/defender-for-identity",
+        "/deployedge",
         "/dotnet",
         "/dynamics-nav",
         "/exchange",
+        "/entra",
         "/graph",
         "/intune-classic",
         "/legal",
@@ -17,11 +25,21 @@
         "/office365",
         "/onedrive",
         "/openspecs",
+        "/partner-center",
         "/powershell",
         "/previous-versions",
+        "/project-for-the-web",
+        "/purview",
+        "/rest",
+        "/schooldatasync",
+        "/security",
         "/skypeforbusiness",
         "/sharepoint",
+        "/training",
+        "/troubleshoot",
+        "/viva",
         "/windows",
-        "/windows-hardware"
+        "/windows-hardware",
+        "/universal-print"
     ]
 }

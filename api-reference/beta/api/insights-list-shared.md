@@ -2,9 +2,10 @@
 title: "List shared"
 description: "Calculated insight that returns the list of files shared with a user."
 author: "simonhult"
-localization_priority: Normal
-ms.prod: "insights"
+ms.localizationpriority: medium
+ms.subservice: "insights"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List shared
@@ -15,14 +16,13 @@ Namespace: microsoft.graph
 
 Calculated insight that includes the list of documents shared with a user.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "insights_list_shared" } -->
+[!INCLUDE [permissions-table](../includes/permissions/insights-list-shared-permissions.md)]
 
 ## HTTP request
 Get a list of documents shared with the signed-in user.
@@ -58,59 +58,64 @@ See the [sharingDetail](../resources/insights-sharingdetail.md) complex type.
 ## Request headers
 | Header       |  Value|
 |:-------------|:------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a list of [shared](../resources/insights-shared.md) items in the response body.
+
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following example shows a request.
+
 ```http
 GET https://graph.microsoft.com/beta/me/insights/shared
 ```
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
+
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "value": [
-        {   
-            "id": "id-value",
-            "lastShared" : { 
-                "sharedDateTime" : "sharedDateTime-value",  
-                "sharingSubject" : "sharingSubject-value",
-                "sharingType" : "sharingType-value", 
-                "sharedBy" : { 
-                    "displayName" : "displayName-value", 
-                    "id": "id-value" 
-                }
-                "sharingReference" : { 
-                    "webUrl" : "webUrl-value",
-                    "type: "type-value", 
-                    "id": "id-value"
-                } 
+        {
+            "id": "AWb0Qy4TEA1KhLW-k1L5mSjtxZAcxDFkTKiTNA-2kZDTXzrMX_4FhECOU0bKZVj1uReivYoYYoJNqTeuC-x1Agtm9EMuExANSoS1vpNS-ZkoBA",
+            "lastShared": {
+                "sharedDateTime": "2021-03-23T08:41:05Z",
+                "sharingType": "Direct",
+                "sharedBy": {
+                    "displayName": "Megan Bowen",
+                    "address": "MeganB@contoso.com",
+                    "id": "3e0c9f05-b9b8-4cf5-9b35-a4e11b24b5b7"
+                },
+                "sharingReference": {}
             },
-            "resourceVisualization": { 
-                "title" : "title-value, 
-                "type"  : "type-value",
-                "mediaType" : "mediaType-value",
-                "previewImageUrl" : previewImageUrl-value, 
-                "previewText" : "previewText-value", 
-                "containerWebUrl" : "containerWebUrl-value", 
-                "containerDisplayName" : "containerDisplayName-value", 
-                "containerType" : "containerType-value" 
-            }, 
-            "resourceReference" : { 
-                "webUrl" : "webUrl-value", 
-                "id": "id-value", 
-                "type: "type-value" 
+            "resourceVisualization": {
+                "title": "CE Annual Report",
+                "type": "Word",
+                "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "previewImageUrl": "https://contoso-my.sharepoint.com/_api/v2.0/drives/b!ZvRDLhMQDUqEtb6TUvmZKO3FkBzEMWRMqJM0D7aRkNNfOsxf_gWEQI5TRsplWPW5/items/01K6ZMU4QXUK6YUGDCQJG2SN5OBPWHKAQL/thumbnails/0/small/thumbnailContent",
+                "previewText": "Contoso Annual Report Anne Wallace Sales Contoso today announced financial results for its most recent fi",
+                "containerWebUrl": "https://contoso-my.sharepoint.com/personal/meganb_m365x841051_onmicrosoft_com/Documents/Forms/All.aspx",
+                "containerDisplayName": "Megan Bowen",
+                "containerType": "OneDriveBusiness"
+            },
+            "resourceReference": {
+                "webUrl": "https://contoso-my.sharepoint.com/personal/meganb_m365x841051_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B8ABDA217-6218-4D82-A937-AE0BEC75020B%7D&file=CE%20Annual%20Report.docx&action=default&mobileredirect=true&DefaultItemOpen=1",
+                "id": "drives/b!ZvRDLhMQDUqEtb6TUvmZKO3FkBzEMWRMqJM0D7aRkNNfOsxf_gWEQI5TRsplWPW5/items/01K6ZMU4QXUK6YUGDCQJG2SN5OBPWHKAQL",
+                "type": "microsoft.graph.driveItem"
+            }
+        }
+    ]
 }
 ```

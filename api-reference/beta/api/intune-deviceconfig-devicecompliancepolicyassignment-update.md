@@ -1,10 +1,11 @@
 ---
 title: "Update deviceCompliancePolicyAssignment"
 description: "Update the properties of a deviceCompliancePolicyAssignment object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update deviceCompliancePolicyAssignment
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assi
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,14 +68,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
 Content-type: application/json
-Content-length: 388
+Content-length: 465
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -84,23 +89,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 437
+Content-Length: 514
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
   "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
 }
 ```
-
-
-
-
-
-

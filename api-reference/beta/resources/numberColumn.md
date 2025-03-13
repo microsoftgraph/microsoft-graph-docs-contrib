@@ -1,12 +1,13 @@
 ---
-author: JeremyKelley
-description: "The numberColumn on a columnDefinition resource indicates that the column's values are numbers."
+author: spgraph-docs-team
+description: The numberColumn on a columnDefinition resource indicates that the column's values are numbers.
 ms.date: 09/11/2017
 title: NumberColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: cloud-pc
 ---
+
 # NumberColumn resource type
 
 Namespace: microsoft.graph
@@ -15,9 +16,37 @@ Namespace: microsoft.graph
 
 The **numberColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are numbers.
 
+## Properties
+
+| Property          | Type   | Description                                                                                                                |
+| :---------------- | :----- | :------------------------------------------------------------------------------------------------------------------------- |
+| **decimalPlaces** | string | How many decimal places to display. See below for information about the possible values.                                   |
+| **displayAs**     | string | How the value should be presented in the UX. Must be one of `number` or `percentage`. If unspecified, treated as `number`. |
+| **maximum**       | double | The maximum permitted value.                                                                                               |
+| **minimum**       | double | The minimum permitted value.                                                                                               |
+
+## DecimalPlaces values
+
+| Value         | Description                                              |
+| :------------ | :------------------------------------------------------- |
+| **automatic** | Default. Automatically display decimal places as needed. |
+| **none**      | Do not display any decimal places.                       |
+| **one**       | Always display one decimal place.                        |
+| **two**       | Always display two decimal places.                       |
+| **three**     | Always display three decimal places.                     |
+| **four**      | Always display four decimal places.                      |
+| **five**      | Always display five decimal places.                      |
+
+Note: **decimalPlaces** and **displayAs** apply to how numbers are rendered, not stored.
+These properties may be updated.
+
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of a **numberColumn** resource.
+The following JSON representation shows the resource type.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.numberColumn" } -->
 
 ```json
@@ -29,30 +58,6 @@ Here is a JSON representation of a **numberColumn** resource.
 }
 ```
 
-## Properties
-
-| Property name      | Type   | Description
-|:-------------------|:-------|:-----------------------------------------------
-| **decimalPlaces**  | string | How many decimal places to display. See below for information about the possible values.
-| **displayAs**      | string | How the value should be presented in the UX. Must be one of `number` or `percentage`. If unspecified, treated as `number`.
-| **maximum**        | double | The maximum permitted value.
-| **minimum**        | double | The minimum permitted value.
-
-## DecimalPlaces values
-
-| Value          | Description
-|:---------------|:--------------------------------------------------------------
-| **automatic**  | Default. Automatically display decimal places as needed.
-| **none**       | Do not display any decimal places.
-| **one**        | Always display one decimal place.
-| **two**        | Always display two decimal places.
-| **three**      | Always display three decimal places.
-| **four**       | Always display four decimal places.
-| **five**       | Always display five decimal places.
-
-Note: **decimalPlaces** and **displayAs** apply to how numbers are rendered, not stored.
-These properties may be updated.
-
 <!--
 {
   "type": "#page.annotation",
@@ -63,5 +68,3 @@ These properties may be updated.
   "suppressions": []
 }
 -->
-
-

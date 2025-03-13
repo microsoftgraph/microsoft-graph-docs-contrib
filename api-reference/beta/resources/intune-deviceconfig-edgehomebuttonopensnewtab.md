@@ -1,10 +1,11 @@
 ---
 title: "edgeHomeButtonOpensNewTab resource type"
 description: "Show the home button; clicking the home button loads the New tab page."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # edgeHomeButtonOpensNewTab resource type
@@ -39,9 +40,3 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "averageComparativeScore resource type"
 description: "Contains various different scores based on different scopes."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
-ms.prod: ""
+ms.subservice: security
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 #  averageComparativeScore resource type
@@ -17,12 +18,12 @@ Contains various different scores based on different scopes (for example, averag
 
 |Property |Type |Description |
 |:--|:--|:--|
-|basis|String|Scope type. The possible values are: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
 |averageScore|Double|Average score within specified basis.|
+|basis|String|Scope type. The possible values are: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -34,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "basis": "String",
-  "averageScore": "Double"
+  "averageScore": "Double",
+  "basis": "String"
 }
 
 ```

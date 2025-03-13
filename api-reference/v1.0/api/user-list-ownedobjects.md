@@ -1,10 +1,12 @@
 ---
 title: "List ownedObjects"
 description: "Get the list of directory objects that are owned by the user."
-author: "krbain"
-localization_priority: Normal
-ms.prod: "users"
+author: "yyuank"
+ms.reviewer: "iamut"
+ms.localizationpriority: medium
+ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 04/17/2024
 ---
 
 # List ownedObjects
@@ -12,68 +14,87 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the list of directory objects that are owned by the user.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "user_list_ownedobjects" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-ownedobjects-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/ownedObjects
 GET /users/{id | userPrincipalName}/ownedObjects
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_ownedobjects"
+  "name": "get_ownedobjects_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/ownedObjects
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-ownedobjects-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-ownedobjects-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-ownedobjects-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-ownedobjects-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-ownedobjects-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-ownedobjects-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-ownedobjects-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-ownedobjects-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-ownedobjects-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-ownedobjects-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-ownedobjects-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-ownedobjects-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,14 +104,45 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
-  "value": [
-    {
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.group",
+            "id": "6796bed1-721f-4734-9cf7-1df0d0f4e0d4",
+            "classification": "Confidential",
+            "groupTypes": [
+                "Unified"
+            ],
+            "resourceBehaviorOptions": [
+                "HideGroupInOutlook",
+                "SubscribeMembersToCalendarEventsDisabled",
+                "WelcomeEmailDisabled"
+            ],
+            "resourceProvisioningOptions": [
+                "Team"
+            ],
+            "securityEnabled": false
+        },
+        {
+            "@odata.type": "#microsoft.graph.group",
+            "id": "654c426a-2cdb-426c-9fd8-3e41014339ef",
+            "classification": null,
+            "groupTypes": [
+                "Unified"
+            ],
+            "resourceBehaviorOptions": [
+                "HideGroupInOutlook",
+                "SubscribeMembersToCalendarEventsDisabled",
+                "WelcomeEmailDisabled"
+            ],
+            "resourceProvisioningOptions": [
+                "Team"
+            ],
+            "securityEnabled": false
+        }
+    ]
 }
 ```
 
@@ -105,4 +157,3 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
-

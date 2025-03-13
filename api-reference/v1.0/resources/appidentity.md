@@ -1,30 +1,35 @@
 ---
 title: "appIdentity resource type"
-description: "Indicates the identity of the application that performed the action or was changed. Includes Application Id, Name, Service Principal ID and Name. This resource is called by the directoryAudit API"
-localization_priority: Normal
+description: "Indicates the identity of the application that performed the action or was changed. This resource is called by the directoryAudit API"
+ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # appIdentity resource type
 
 Namespace: microsoft.graph
 
-Indicates the identity of the application that performed the action or was changed. Includes application ID, name, and service principal ID and name. This resource is used by the [Get directoryAudit](../api/directoryaudit-get.md) operation.
+Indicates the identity of the application that performed the action or was changed. Includes the application ID, name, and service principal ID and name. This resource is used by the [directoryAudit](../api/directoryaudit-get.md) operation.
 
 ## Properties
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|appId|String|Refers to the Unique GUID representing Application Id in the Azure Active Directory.|
-|displayName|String|Refers to the Application Name displayed in the Azure Portal.|
-|servicePrincipalId|String|Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.|
+|appId|String|Refers to the unique ID representing application in Microsoft Entra ID.|
+|displayName|String|Refers to the application name displayed in the Microsoft Entra admin center.|
+|servicePrincipalId|String|Refers to the unique ID for the service principal in Microsoft Entra ID.|
 |servicePrincipalName|String|Refers to the Service Principal Name is the Application name in the tenant. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -53,4 +58,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -1,23 +1,40 @@
 ---
-title: "Create Message"
-description: "Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut."
-localization_priority: Priority
-author: "svpsiva"
-ms.prod: "outlook"
+title: "Create message"
+description: "Create a draft of a new message in either JSON or MIME format."
+ms.localizationpriority: high
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
-# Create Message
+# Create message
 
 Namespace: microsoft.graph
 
-Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
+Create a draft of a new [message](../resources/message.md) in either JSON or MIME format.
 
-While creating the draft in the same **POST** call, you can include an [attachment](../resources/attachment.md).
+When using JSON format, you can:
+- Include an [attachment](../resources/attachment.md) to the **message**.
+- [Update](../api/message-update.md) the draft later to add content to the **body** or change other message properties.
+
+When using MIME format:
+- Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- \* Add any attachments and S/MIME properties to the MIME content.
+
+By default, this operation saves the draft in the Drafts folder.
+
+[Send](../api/message-send.md) the draft message in a subsequent operation.
+
+Alternatively, [send a new message](../api/user-sendmail.md) in a single operation, or create a draft to [forward](../api/message-createforward.md), [reply](../api/message-createreply.md) and [reply-all](../api/message-createreplyall.md) to an existing message.
+
+>\* **Note:** S/MIME message payloads are currently limited to 4 MB. Submission attempts that exceed this limit will result in an`HTTP 413 Request Entity Too Large` error response.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Mail.ReadWrite    |
@@ -33,13 +50,16 @@ POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Length | number | 0. Required. |
+| Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
 
 ## Request body
-In the request body, supply a JSON representation of [message](../resources/message.md) object.
+When using JSON format, provide a JSON representation of [message](../resources/message.md) object.
+
+When specifying the body in MIME format, provide the MIME content with the applicable Internet message headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
@@ -47,9 +67,12 @@ Since the **message** resource supports [extensions](/graph/extensibility-overvi
 
 If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
 
-## Example
-##### Request 1
-Here is an example of the request.
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".
+
+## Examples
+### Example 1: Create a new message draft using JSON format
+#### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -70,33 +93,50 @@ Content-type: application/json
     "toRecipients":[
         {
             "emailAddress":{
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"AdeleV@contoso.com"
             }
         }
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-message-from-user-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-message-from-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-message-from-user-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-message-from-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-message-from-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-message-from-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-message-from-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-message-from-user-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
-##### Response 1
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -141,7 +181,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"Adele Vance",
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"AdeleV@contoso.com"
             }
         }
     ],
@@ -157,8 +197,9 @@ Content-type: application/json
 }
 ```
 
-##### Request 2
-The next example adds a couple of customer Internet message headers when creating the message draft.
+### Example 2: Create message draft that includes custom message headers
+#### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -178,7 +219,7 @@ Content-type: application/json
     "toRecipients":[
         {
             "emailAddress":{
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -194,27 +235,44 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-with-headers-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-message-with-headers-from-user-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-message-with-headers-from-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-message-with-headers-from-user-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-message-with-headers-from-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-with-headers-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-message-with-headers-from-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-message-with-headers-from-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-message-with-headers-from-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-message-with-headers-from-user-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
-##### Response 2
-Here is an example of the response. Note: Internet message headers are not returned by default in a POST response. The response object shown here may also be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+The following example shows the response. Note: Internet message headers are not returned by default in a POST response. The response object shown here may also be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
@@ -258,7 +316,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -277,7 +335,145 @@ Content-type: application/json
 }
 ```
 
-## See also
+### Example 3: Create a new message draft using MIME format
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "message_create_draft_mime_v1"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-create-draft-mime-v1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/message-create-draft-mime-v1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-create-draft-mime-v1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('0aaa0aa0-0000-0a00-a00a-0000009000a0')/messages/$entity",
+    "@odata.etag": "W/\"AAAAAAAAAAAa00AAAa0aAaAa0a0AAAaAAAAaAa0a\"",
+    "id": "AAMkADA1MTAAAAqldOAAA=",
+    "createdDateTime": "2021-04-23T18:13:44Z",
+    "lastModifiedDateTime": "2021-04-23T18:13:44Z",
+    "changeKey": "AAAAAAAAAAAA00aaaa000aaA",
+    "categories": [],
+    "receivedDateTime": "2021-04-23T18:13:44Z",
+    "sentDateTime": "2021-02-28T07:15:00Z",
+    "hasAttachments": false,
+    "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
+    "subject": "Internal Resume Submission: Sales Associate",
+    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here...",
+    "importance": "normal",
+    "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
+    "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
+    "conversationIndex": "Adfsdfsdfsdfw==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": true,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWAvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here... Regards,Alex"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Megan Bowen",
+                "address": "MeganB@contoso.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}
+
+```
+
+If the request body includes malformed MIME content, this method returns the following error message.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
+```
+
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

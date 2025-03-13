@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups/{id}/members/microsoft.graph.user')
+let user = await client.api('/groups/{id}/members/microsoft.graph.user')
 	.version('beta')
 	.header('ConsistencyLevel','eventual')
 	.search('displayName:Pr')
 	.select('displayName,id')
-	.orderby('displayName ')
+	.orderby('displayName')
 	.get();
 
 ```

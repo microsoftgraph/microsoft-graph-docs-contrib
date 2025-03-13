@@ -1,10 +1,11 @@
 ---
 title: "hasPayloadLinkResultItem resource type"
 description: "A class containing the result of HasPayloadLinks action."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # hasPayloadLinkResultItem resource type
@@ -46,9 +47,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

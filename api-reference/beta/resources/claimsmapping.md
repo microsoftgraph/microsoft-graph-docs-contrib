@@ -2,9 +2,10 @@
 title: "claimsMapping resource type"
 description: "Map the claims from a token to the claims that Azure Active Directory B2C recognizes and uses."
 author: "namkedia"
-localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: high
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # claimsMapping resource type
@@ -16,8 +17,8 @@ After the custom identity provider sends an ID token back to Azure AD B2C, Azure
 ## Properties
 |Property|Type|Description|
 |:-------|:---|:----------|
-|userId|String|The claim that provides the unique identifier for the signed-in user. It is a required propoerty.|
-|displayName|String|The claim that provides the display name or full name for the user. It is a required propoerty.|
+|userId|String|The claim that provides the unique identifier for the signed-in user. It is a required property.|
+|displayName|String|The claim that provides the display name or full name for the user. It's a required property.|
 |givenName|String|The claim that provides the first name of the user.|
 |surname|String|The claim that provides the last name of the user.|
 |email|String|The claim that provides the email address of the user.|
@@ -26,7 +27,7 @@ After the custom identity provider sends an ID token back to Azure AD B2C, Azure
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.claimsMapping"

@@ -1,9 +1,10 @@
 ---
 title: "Get schedule"
 description: "Retrieve the properties and relationships of a **schedule** object."
-author: "nkramer"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "shanemalone"
+ms.date: 12/04/2024
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -22,15 +23,14 @@ During schedule provisioning, clients can use the GET method to get the schedule
 
 Clients can also inspect the configuration of the schedule.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.Read.All, Schedule.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "schedule_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/schedule-get-permissions.md)]
 
 ## HTTP request
 
@@ -48,11 +48,12 @@ This method does not support OData query parameters to customize the response.
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [schedule](../
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -72,26 +73,46 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-get-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/schedule-get-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-get-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/schedule-get-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/schedule-get-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-get-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schedule-get-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +122,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
@@ -113,7 +133,12 @@ Content-length: 401
   "openShiftsEnabled": true,
   "swapShiftsRequestsEnabled": true,
   "offerShiftRequestsEnabled": true,
-  "timeOffRequestsEnabled": true
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Monday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isActivitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true
 }
 ```
 
@@ -131,4 +156,6 @@ Content-length: 401
 }
 -->
 
+## Related content
 
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

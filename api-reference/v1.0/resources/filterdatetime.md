@@ -1,13 +1,14 @@
 ---
-title: "FilterDatetime resource type"
+title: "workbookFilterDatetime resource type"
 description: "Represents how to filter a date when filtering on values."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.subservice: excel
 doc_type: resourcePageType
+ms.date: 05/13/2024
 ---
 
-# FilterDatetime resource type
+# workbookFilterDatetime resource type
 
 Namespace: microsoft.graph
 
@@ -16,16 +17,16 @@ Represents how to filter a date when filtering on values.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|date|string|The date in ISO8601 format used to filter data.|
-|specificity|string|How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009. The possible values are: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
+|date|String|The date in ISO 8601 format used to filter data.|
+|specificity|String|Defines how specific you should use the **date** to keep data. For example, if the date is `2005-04-02` and the **specificity** property is set to `month`, the filter operation keeps all rows with a date in the month of April 2009. The possible values are: `Year`, `Month`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -37,10 +38,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "date": "string",
-  "specificity": "string"
+  "date": "String",
+  "specificity": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

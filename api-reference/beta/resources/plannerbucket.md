@@ -1,10 +1,11 @@
 ---
 title: "plannerBucket resource type"
-description: ") for tasks in a plan in Microsoft 365. It is contained in a plannerPlan and can have a collection of plannerTasks."
+description: "Represents a bucket for tasks in a plan in Microsoft 365."
 author: "TarkanSevilmis"
-localization_priority: Normal
-ms.prod: "planner"
+ms.localizationpriority: medium
+ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # plannerBucket resource type
@@ -13,26 +14,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerBucket** resource represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. It is contained in a [plannerPlan](plannerplan.md) and can have a collection of [plannerTasks](plannertask.md).
-
+Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. It is contained in a [plannerPlan](plannerplan.md) and can have a collection of [plannerTasks](plannertask.md).
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Read properties and relationships of **plannerBucket** object.|
-|[List plannerTasks](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
-|[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)	| Create a new **plannerBucket** object. |
-|[Update](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)	|Update **plannerBucket** object. |
-|[Delete](../api/plannerbucket-delete.md) | None |Delete **plannerBucket** object. |
+|[Get bucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Read properties and relationships of **plannerBucket** object.|
+|[List bucket tasks](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
+|[Create bucket](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)	| Create a new **plannerBucket** object. |
+|[Update bucket](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)	|Update **plannerBucket** object. |
+|[Delete bucket](../api/plannerbucket-delete.md) | None |Delete **plannerBucket** object. |
+|[Get delta](../api/plannerbucket-delta.md)|[plannerBucket](../resources/plannerbucket.md) collection| Get newly created, updated, or deleted **plannerBucket** objects in a Planner plan without having to perform a full read of the entire resource collection.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. ID of the bucket. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Read-only. Nullable. Contains information about who archived or unarchived the bucket and why.|
+|creationSource|[plannerBucketCreation](plannerbucketcreation.md)|  Contains information about the origin of the bucket.|
+|id|String| Read-only. Unique identifier for the bucket. It is 28 characters long and case-sensitive. The [format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|isArchived|Boolean|Read-only. If set to`true`, the bucket is archived. An archived bucket is read-only.|
 |name|String|Name of the bucket.|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
+|orderHint|String|Hint used to order items of this type in a list view. For details about the supported format, see [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 |planId|String|Plan ID to which the bucket belongs.|
 
 ## Relationships
@@ -41,7 +45,7 @@ The **plannerBucket** resource represents a bucket (or "custom column") for task
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. The collection of tasks in the bucket.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -55,12 +59,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "creationSource": {"@odata.type": "#microsoft.graph.plannerBucketCreation"},
   "id": "String (identifier)",
   "name": "String",
   "orderHint": "String",
   "planId": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -75,5 +79,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

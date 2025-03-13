@@ -4,17 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var linkedResource = new LinkedResource
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new LinkedResource
 {
+	OdataType = "#microsoft.graph.linkedResource",
 	WebUrl = "http://microsoft.com",
 	ApplicationName = "Microsoft",
-	DisplayName = "Microsoft"
+	DisplayName = "Microsoft",
 };
 
-await graphClient.Me.Todo.Lists["dfsdc-f9dfdfs-dcsda9"].Tasks["e2dc-f9cce2-dce29"].LinkedResources["f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9"]
-	.Request()
-	.UpdateAsync(linkedResource);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].LinkedResources["{linkedResource-id}"].PatchAsync(requestBody);
+
 
 ```

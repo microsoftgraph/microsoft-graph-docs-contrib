@@ -11,17 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-  description: "description-value",
-  displayName: "displayName-value",
-  groupTypes: [
-    "groupTypes-value"
-  ],
-  mail: "mail-value",
-  mailEnabled: true,
-  mailNickname: "mailNickname-value"
+  description: 'Library Assist - ADC',
+  displayName: 'Library Assist - ADC',
+  mailNickname: 'library-help-adc'
 };
 
-let res = await client.api('/groups/{id}')
+await client.api('/groups/0d09007d-45b2-458c-b180-880dde3a302e')
 	.update(group);
 
 ```

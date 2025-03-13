@@ -1,17 +1,20 @@
 ---
-title: "removeWatermarkAction resource type"
-description: "Represents an action that specifies the details on the content watermark to be removed from the information, if applicable."
-localization_priority: Normal
+title: "removeWatermarkAction resource type (deprecated)"
+description: "Represents an action that specifies the details on the content watermark to be removed from the information, if applicable. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
-# removeWatermarkAction resource type
+# removeWatermarkAction resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Represents an action that specifies the details on the content watermark to be removed from the information, if applicable. The [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md), or [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) APIs may return the **removeWatermarkAction** if the watermark is to be removed as a result of updating or removing the label. The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content watermark.
 
@@ -23,7 +26,7 @@ Represents an action that specifies the details on the content watermark to be r
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

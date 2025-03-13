@@ -1,48 +1,50 @@
 ---
 title: "Delete educationClass"
 description: "Delete a class. Because a class is also a universal group, deleting a class deletes the group."
-localization_priority: Normal
-author: "mmast-msft"
-ms.prod: "education"
+author: "mlafleur"
+ms.localizationpriority: medium
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Delete educationClass
 
 Namespace: microsoft.graph
 
-Delete a class. Because a class is also a universal group, deleting a class deletes the group.
+Delete an [educationClass](../resources/educationclass.md). Because a class is also a universal group, deleting a class deletes the group.
+
+> [!IMPORTANT]
+> Because a class is also a universal group, deleting a class deletes the group.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Not supported.  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.ReadWrite.All | 
+<!-- { "blockType": "permissions", "name": "educationclass_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationclass-delete-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/classes/{id}
-
 ```
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
-The following is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -52,26 +54,43 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationclass-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationclass-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-educationclass-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationclass-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationclass-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationclass-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationclass-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-educationclass-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationclass-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-educationclass-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-The following is an example of the response. 
+### Response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -92,4 +111,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

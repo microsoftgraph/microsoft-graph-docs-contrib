@@ -2,9 +2,10 @@
 title: print resource type
 description: When accompanied by a Universal Print subscription, the Print feature enables management of printers and discovery of printServiceEndpoints that can be used to manage printers and print jobs within Universal Print.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # print resource type
@@ -45,7 +46,7 @@ When accompanied by a Universal Print subscription, the Print feature enables ma
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -71,8 +72,7 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [ 
-    "Error: Resource print has documented navigation properties, but we thought it was a complex type!",
-    "Resource print has documented navigation properties, but we thought it was a complex type!"
+  ]
 }-->
 
 

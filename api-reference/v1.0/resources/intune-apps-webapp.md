@@ -1,10 +1,11 @@
 ---
 title: "webApp resource type"
 description: "Contains properties and inherited properties for web apps."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # webApp resource type
@@ -44,7 +45,7 @@ Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
-|appUrl|String|The web app URL.|
+|appUrl|String|The web app URL. This property cannot be PATCHed.|
 |useManagedBrowser|Boolean|Whether or not to use managed browser. This property is only applicable for Android and IOS.|
 
 ## Relationships
@@ -86,12 +87,3 @@ Here is a JSON representation of the resource.
   "useManagedBrowser": true
 }
 ```
-
-
-
-
-
-
-
-
-

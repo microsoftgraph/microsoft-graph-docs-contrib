@@ -1,10 +1,11 @@
 ---
 title: "remoteAssistancePartner resource type"
 description: "RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # remoteAssistancePartner resource type
@@ -60,9 +61,3 @@ Here is a JSON representation of the resource.
   "onboardingRequestExpiryDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "edgeSearchEngineType enum type"
 description: "Allows IT admind to set a predefined default search engine for MDM-Controlled devices"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # edgeSearchEngineType enum type
@@ -22,9 +23,3 @@ Allows IT admind to set a predefined default search engine for MDM-Controlled de
 |:---|:---|:---|
 |default|0|Uses factory settings of Edge to assign the default search engine as per the user market|
 |bing|1|Sets Bing as the default search engine|
-
-
-
-
-
-

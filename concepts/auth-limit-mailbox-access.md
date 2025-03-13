@@ -1,63 +1,85 @@
 ---
-title: "Scoping application permissions to specific Exchange Online mailboxes"
-description: "To scope an app's application permissions to specific Exchange Online mailboxes, you will need to create application access policies."
-author: "svpsiva"
-localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+title: "Limiting application permissions to specific Exchange Online mailboxes"
+description: "To scope an app's application permissions to specific Exchange Online mailboxes, you must create application access policies."
+author: "SuryaLashmiS"
+ms.localizationpriority: high
+ms.subservice: "exchange"
+ms.date: 11/07/2024
 ---
 
-# Scoping application permissions to specific Exchange Online mailboxes 
+# Limiting application permissions to specific Exchange Online mailboxes
 
-Some apps call Microsoft Graph using their own identity and not on behalf of a user. These are usually background services or daemon apps that run on a server without the presence of a signed-in user. These apps make use of [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to authenticate and are configured with application permissions, which enable such apps to access all mailboxes in a organization on Exchange Online. For example, the Mail.Read application permission allows apps to read mail in all mailboxes without a signed-in user. 
+Administrators who want to limit app access to specific mailboxes can create an application access policy by using the **New-ApplicationAccessPolicy** PowerShell cmdlet. This article covers the basic steps to configure access control. These steps are specific to Exchange Online resources and don't apply to other Microsoft Graph workloads.
 
-Administrators who want to limit the app access to a specific set of mailboxes can use the **New-ApplicationAccessPolicy** PowerShell cmdlet to configure access control. This article covers the basic steps to configure an application access policy.
+## Background
+Some apps call Microsoft Graph using their own identity and not on behalf of a user. These apps are usually background services or daemon apps that run on a server without the presence of a signed-in user. These apps make use of [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to authenticate and are configured with application permissions, which by default enables such apps to access _all_ mailboxes in an organization on Exchange Online. For example, the `Mail.Read` application permission allows apps to read mail in all mailboxes without a signed-in user.
 
-These steps are specific to Exchange Online resources and do not apply to other Microsoft Graph workloads. 
+> [!IMPORTANT]
+>
+> By default, apps that have been granted [application permissions](/graph/permissions-reference) to the following data sets can access all the mailboxes in the organization:
+>
+> - Calendars
+> - Contacts
+> - Mail
+> - Mailbox settings
+>
+>Administrators can configure [application access policy](#configure-applicationaccesspolicy) to limit app access to _specific_ mailboxes.
+
+There are scenarios where administrators might want to limit an app to only specific mailboxes and _not all_ Exchange Online mailboxes in the organization. Administrators can identify the set of mailboxes to permit access by putting them in a mail-enabled security group. Administrators can then limit third-party app access to only that set of  mailboxes by creating an application access policy for access to that group.
+
+As further described in the [Supported permissions and other resources](#supported-permissions-and-other-resources) section, application access policy restricts mailbox access for apps that are granted any of the Microsoft Graph or Exchange Web Services permission scopes that the policy supports.
 
 ## Configure ApplicationAccessPolicy
 
 To configure an application access policy and limit the scope of application permissions:
-1.	Connect to Exchange Online PowerShell. For details, see [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1.    Connect to Exchange Online PowerShell. For details, see [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
-2.	Identify the app’s client ID and a mail-enabled security group to restrict the app’s access to.
+2.   Identify the app's client ID and a mail-enabled security group to restrict the app's access to.
 
-    - Identify the app’s application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
-    - Create a new mail-enabled security group or use an existing one and identify the email address for the group. 
+     - Identify the app's application (client) ID in the [Microsoft Entra admin center > app registrations page](https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade/).
+     - Create a new mail-enabled security group or use an existing one and identify the email address for the group.
 
-3.	Create an application access policy. 
+3.   Create an application access policy.
 
-    Run the following command, replacing the **AppId**, **PolicyScopeGroupId**, and **Description** arguments.
-    ```sh 
-    New-ApplicationAccessPolicy -AppId e7e4dbfc-046f-4074-9b3b-2ae8f144f59b -PolicyScopeGroupId EvenUsers@contoso.com -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group EvenUsers."
-    ```
-4.	Test the newly created application access policy.
+     Run the following command, replacing the arguments for **AppId**, **PolicyScopeGroupId**, and **Description**.
+     ```powershell
+     New-ApplicationAccessPolicy -AppId e7e4dbfc-046f-4074-9b3b-2ae8f144f59b -PolicyScopeGroupId EvenUsers@contoso.com -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group EvenUsers."
+     ```
+4.   Test the newly created application access policy.
 
-    Run the following command, replacing the **AppId** and **Identity** arguments.
-    ```sh
-    Test-ApplicationAccessPolicy -Identity user1@contoso.com -AppId e7e4dbfc-046-4074-9b3b-2ae8f144f59b 
-    ```
-    The output of this command will indicate whether the app has access to User1’s mailbox.
+     Run the following command, replacing the arguments for **Identity** and **AppId**.
+     ```powershell
+     Test-ApplicationAccessPolicy -Identity user1@contoso.com -AppId e7e4dbfc-046-4074-9b3b-2ae8f144f59b
+     ```
+     The output of this command indicates whether the app has access to User1's mailbox.
 
-Note: Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
+> [!NOTE]
+> Changes to application access policies can take longer than 1 hour to take effect in Microsoft Graph REST API calls, even when `Test-ApplicationAccessPolicy` shows positive results.
 
-## Supported permissions and additional resources
-Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that has been granted any of the following application permissions: 
-- Mail.Read
-- Mail.ReadBasic
-- Mail.ReadBasic.All
-- Mail.ReadWrite
-- Mail.Send
-- MailboxSettings.Read	
-- MailboxSettings.ReadWrite
-- Calendars.Read
-- Calendars.ReadWrite
-- Contacts.Read
-- Contacts.ReadWrite
+## Supported permissions and other resources
 
-For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/exchange/organization/new-applicationaccesspolicy). 
+Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that is granted any of the following Microsoft Graph application permissions or Exchange Web Services permissions.
+
+Microsoft Graph application permissions:
+- `Mail.Read`
+- `Mail.ReadBasic`
+- `Mail.ReadBasic.All`
+- `Mail.ReadWrite`
+- `Mail.Send`
+- `MailboxSettings.Read`
+- `MailboxSettings.ReadWrite`
+- `Calendars.Read`
+- `Calendars.ReadWrite`
+- `Contacts.Read`
+- `Contacts.ReadWrite`
+
+Exchange Web Services permission scope: `full_access_as_app`.
+
+For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/exchange/new-applicationaccesspolicy?view=exchange-ps&preserve-view=true).
+
 
 ## Handling API errors
-You might encounter the following error when an API call is denied access due to a configured application access policy. 
+You might encounter the following error when an API call is denied access due to a configured application access policy.
 ```json
 {
     "error": {
@@ -70,11 +92,11 @@ You might encounter the following error when an API call is denied access due to
     }
 }
 ```
-If Microsoft Graph API calls from your app return this error, work with the Exchange Online administrator for the organization to ensure that your app has permission to access the mailbox resource.
+If the Microsoft Graph API calls from your app return this error, work with the Exchange Online administrator for the organization to ensure that your app has permission to access the mailbox resource.
 
 
 
-## See also
+## Related content
 
 - [Permissions reference](permissions-reference.md)
 - [New-ApplicationAccessPolicy](/powershell/module/exchange/organization/new-applicationaccesspolicy)
@@ -82,3 +104,4 @@ If Microsoft Graph API calls from your app return this error, work with the Exch
 - [Remove-ApplicationAccessPolicy](/powershell/module/exchange/organization/remove-applicationaccesspolicy)
 - [Set-ApplicationAccessPolicy](/powershell/module/exchange/organization/set-applicationaccesspolicy)
 - [Test-ApplicationAccessPolicy](/powershell/module/exchange/organization/test-applicationaccesspolicy)
+- [Application Access Policy Support in EWS](https://techcommunity.microsoft.com/t5/exchange-team-blog/application-access-policy-support-in-ews/ba-p/2110361)

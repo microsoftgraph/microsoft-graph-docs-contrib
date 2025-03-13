@@ -1,21 +1,24 @@
 ---
-title: "informationProtectionLabel: evaluateClassificationResults"
-description: "Evaluate which label to apply based on existing content info and a classification result."
-localization_priority: Normal
+title: "informationProtectionLabel: evaluateClassificationResults (deprecated)"
+description: "Evaluate which label to apply based on existing content info and a classification result. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "security"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
-# informationProtectionLabel: evaluateClassificationResults
+# informationProtectionLabel: evaluateClassificationResults (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Using [classification results](../resources/classificationresult.md), compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
-To evaluate based on classification results, provide [contentInfo](../resources/contentinfo.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/classificationresult.md). The API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains one of more of the following: 
+Using [classification results](../resources/classificationresult.md), compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
+
+To evaluate based on classification results, provide [contentInfo](../resources/contentinfo.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/classificationresult.md). The API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains one of more of the following:
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -33,29 +36,28 @@ To evaluate based on classification results, provide [contentInfo](../resources/
 * [removeProtectionAction](../resources/removeprotectionaction.md)
 * [removeWatermarkAction](../resources/removewatermarkaction.md)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | InformationProtectionPolicy.Read            |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+<!-- { "blockType": "permissions", "name": "informationprotectionlabel_evaluateclassificationresults" } -->
+[!INCLUDE [permissions-table](../includes/permissions/informationprotectionlabel-evaluateclassificationresults-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
+POST /informationProtection/policy/labels/evaluateClassificationResults
 ```
 
 ## Request headers
 
 | Name          | Description                                                                                                                                                           |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required.                                                                                                                                             |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.                                                                                                                                           |
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
@@ -66,7 +68,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter             | Type                                                                    | Description                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                                                                                                   |
-| classificationResults | [classificationResult](../resources/classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classification information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
+| classificationResults | [classificationResult](../resources/classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classification information is used to determine the appropriate label based on the Microsoft Purview Information Protection policy label configuration in Microsoft 365 Security and Compliance Center. |
 
 ## Response
 
@@ -78,7 +80,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,7 +89,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateClassificationResults
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/evaluateClassificationResults
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
@@ -109,26 +111,46 @@ User-agent: ContosoLOBApp/1.0
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/informationprotectionlabel-evaluateclassificationresults-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/informationprotectionlabel-evaluateclassificationresults-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateclassificationresults-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateclassificationresults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/informationprotectionlabel-evaluateclassificationresults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-evaluateclassificationresults-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/informationprotectionlabel-evaluateclassificationresults-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-evaluateclassificationresults-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/informationprotectionlabel-evaluateclassificationresults-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

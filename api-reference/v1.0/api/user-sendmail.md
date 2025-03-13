@@ -1,64 +1,91 @@
 ---
-title: "Send mail"
-description: "Send the message specified in the request body. The message is saved in the Sent Items folder by default."
-author: "svpsiva"
-localization_priority: Priority
-ms.prod: "outlook"
+title: "user: sendMail"
+description: "Send the message specified in the request body using either JSON or MIME format."
+author: "SuryaLashmiS"
+ms.localizationpriority: high
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
-# Send mail
+<!-- markdownlint-disable MD001 MD022 MD024 MD033 MD051 -->
+
+# user: sendMail
 
 Namespace: microsoft.graph
 
-Send the message specified in the request body. The message is saved in the Sent Items folder by default.
+Send the message specified in the request body using either JSON or MIME format.
 
-You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
+When using JSON format, you can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
+
+When using MIME format:
+
+- Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- Add any attachments and S/MIME properties to the MIME content.
+
+This method saves the message in the **Sent Items** folder.
+
+Alternatively, [create a draft message](../api/user-post-messages.md) to send later.
+
+To learn more about the steps involved in the backend before a mail is delivered to recipients, see [here](/graph/outlook-things-to-know-about-send-mail).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Send    |
-|Delegated (personal Microsoft account) | Mail.Send    |
-|Application | Mail.Send |
+<!-- { "blockType": "permissions", "name": "user_sendmail" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-sendmail-permissions.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Name          | Type   | Description                                                                                                                              |
+|:--------------|:-------|:-----------------------------------------------------------------------------------------------------------------------------------------|
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | string | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|message|[Message](../resources/message.md)|The message to send. Required.|
-|saveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional. |
+When using JSON format, provide a JSON object with the following parameters.
+
+| Parameter       | Type                               | Description |
+|:----------------|:-----------------------------------|:------------|
+| message         | [Message](../resources/message.md) | The message to send. Required. |
+| saveToSentItems | Boolean                            | Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true. Optional. |
+
+When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body.
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns `202 Accepted` response code. It doesn't return anything in the response body.
 
-## Example
-Here is an example of how to call this API.
-##### Request 1
-Here is an example of the request.
+> **Note**: A `202 Accepted` response code indicates that the request has been accepted; however, it does not indicate that the request processing has completed. Delivery of the message is subject to [Exchange Online limitations and throttling](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content."
+
+## Examples
+
+### Example 1: Send a new email using JSON format
+
+##### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
@@ -73,14 +100,14 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "fannyd@contoso.onmicrosoft.com"
+          "address": "frannis@contoso.com"
         }
       }
     ],
     "ccRecipients": [
       {
         "emailAddress": {
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       }
     ]
@@ -88,43 +115,63 @@ Content-type: application/json
   "saveToSentItems": "false"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-sendmail-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-sendmail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-sendmail-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+#### Response
 
-##### Response 1
-Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### Request 2
-The next example creates a message with custom Internet message headers and sends the message.
+### Example 2: Create a message with custom Internet message headers and send the message
+
+#### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
@@ -139,56 +186,72 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "AlexW@contoso.OnMicrosoft.com"
+          "address": "AlexW@contoso.com"
         }
       }
     ],
-    "internetMessageHeaders":[
+    "internetMessageHeaders": [
       {
-        "name":"x-custom-header-group-name",
-        "value":"Nevada"
+        "name": "x-custom-header-group-name",
+        "value": "Nevada"
       },
       {
-        "name":"x-custom-header-group-id",
-        "value":"NV001"
+        "name": "x-custom-header-group-id",
+        "value": "NV001"
       }
     ]
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-headers-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-sendmail-with-headers-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-headers-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-with-headers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-with-headers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-headers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-sendmail-with-headers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-with-headers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-sendmail-with-headers-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+#### Response
 
-##### Response 2
-Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### Request 3
+### Example 3: Create a message with a file attachment and send the message
 
-The next example creates a message with a file attachment and sends the message.
-
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -210,7 +273,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "meganb@contoso.onmicrosoft.com"
+          "address": "meganb@contoso.com"
         }
       }
     ],
@@ -225,28 +288,43 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-attachment-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-sendmail-with-attachment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-attachment-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-with-attachment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-with-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-attachment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-sendmail-with-attachment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-with-attachment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-sendmail-with-attachment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+#### Response
 
-##### Response 3
-
-Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -256,15 +334,112 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### Example 4: Send a new message using MIME format
+
+#### Request
+
 <!-- {
-  "type": "#page.annotation",
-  "description": "user: sendMail",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "blockType": "ignored",
+  "name": "message_send_mime_beta"
 }-->
 
+```http
+POST https://graph.microsoft.com/v1.0/me/sendMail
+Content-type: text/plain
+
+RnJvbTogQWRlbGUgVmFuY2UgPEFkZWxlVkBjb250b3NvLmNvbT4KVG86IEFsZXggV2lsYmVyIDxB
+bGV4V0Bjb250b3NvLmNvbT4KU3ViamVjdDpUZXN0IE1lc3NhZ2UKQ29udGVudC1UeXBlOiBtdWx0
+aXBhcnQvbWl4ZWQ7Cglib3VuZGFyeT0iXzAwNF9UWVpQUjA0TUI2OTgxNzNGRDAwMjE1MkQ1QURC
+OEZCNDdDOEJDQVRZWlBSMDRNQjY5ODFhcGNwXyIKTUlNRS1WZXJzaW9uOiAxLjAKCi0tXzAwNF9U
+WVpQUjA0TUI2OTgxNzNGRDAwMjE1MkQ1QURCOEZCNDdDOEJDQVRZWlBSMDRNQjY5ODFhcGNwXwpD
+b250ZW50LVR5cGU6IG11bHRpcGFydC9hbHRlcm5hdGl2ZTsKCWJvdW5kYXJ5PSJfMDAwX1RZWlBS
+MDRNQjY5ODE3M0ZEMDAyMTUyRDVBREI4RkI0N0M4QkNBVFlaUFIwNE1CNjk4MWFwY3BfIgoKLS1f
+MDAwX1RZWlBSMDRNQjY5ODE3M0ZEMDAyMTUyRDVBREI4RkI0N0M4QkNBVFlaUFIwNE1CNjk4MWFw
+Y3BfCkNvbnRlbnQtVHlwZTogdGV4dC9wbGFpbjsgY2hhcnNldD0iaXNvLTg4NTktMSIKQ29udGVu
+dC1UcmFuc2Zlci1FbmNvZGluZzogcXVvdGVkLXByaW50YWJsZQoKdGVzdCB0ZXh0IGJvZHkKCgot
+LV8wMDBfVFlaUFIwNE1CNjk4MTczRkQwMDIxNTJENUFEQjhGQjQ3QzhCQ0FUWVpQUjA0TUI2OTgx
+YXBjcF8KQ29udGVudC1UeXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9Imlzby04ODU5LTEiCkNvbnRl
+bnQtVHJhbnNmZXItRW5jb2Rpbmc6IHF1b3RlZC1wcmludGFibGUKCjxodG1sPgo8aGVhZD4KPC9o
+ZWFkPgo8Ym9keT4KdGVzdCBodG1sIGJvZHkKPC9ib2R5Pgo8L2h0bWw+CgotLV8wMDBfVFlaUFIw
+NE1CNjk4MTczRkQwMDIxNTJENUFEQjhGQjQ3QzhCQ0FUWVpQUjA0TUI2OTgxYXBjcF8tLQoKLS1f
+MDA0X1RZWlBSMDRNQjY5ODE3M0ZEMDAyMTUyRDVBREI4RkI0N0M4QkNBVFlaUFIwNE1CNjk4MWFw
+Y3BfCkNvbnRlbnQtVHlwZTogdGV4dC9wbGFpbjsKQ29udGVudC1EaXNwb3NpdGlvbjogYXR0YWNo
+bWVudDsKICAgICAgICBmaWxlbmFtZT0idGVzdC50eHQiCgp0aGlzIGlzIHRoZSBhdHRhY2htZW50
+IHRleHQKCi0tXzAwNF9UWVpQUjA0TUI2OTgxNzNGRDAwMjE1MkQ1QURCOEZCNDdDOEJDQVRZWlBS
+MDRNQjY5ODFhcGNwXy0t
+
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
+
+If the request body includes malformed MIME content, this method returns the following error message.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+  "error": {
+    "code": "ErrorMimeContentInvalidBase64String",
+    "message": "Invalid base64 string for MIME content."
+  }
+}
+```
+
+### Example 5: Send a new message flagged for follow-up
+
+#### Request
+
+<!-- {
+  "blockType": "ignored",
+  "name": "message_send_flagged"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/sendMail
+Content-type: application/json
+
+{
+  "subject": "Please respond by Friday",
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "address": "meganb@contoso.com"
+      }
+    }
+  ],
+  "flag": {
+    "flagStatus": "flagged",
+    "startDateTime": {
+      "dateTime": "2023-08-30T12:13:00",
+      "timeZone": "Eastern Standard Time"
+    },
+    "dueDateTime": {
+      "dateTime": "2023-09-01T17:00:00",
+      "timeZone": "Eastern Standard Time"
+    }
+  }
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```

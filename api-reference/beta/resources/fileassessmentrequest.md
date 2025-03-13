@@ -1,10 +1,11 @@
 ---
 title: "fileAssessmentRequest resource type"
 description: "Used to create and retrieve a file threat assessment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # fileAssessmentRequest resource type
@@ -21,19 +22,19 @@ The file can be a text file or Word document or binary file received in an email
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [fileAssessmentRequest](fileAssessmentRequest.md) | Create a new file assessment request by posting a **fileAssessmentRequest** object. |
-| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [fileAssessmentRequest](fileassessmentrequest.md) | Read the properties and relationships of a **fileAssessmentRequest** object. |
+| [Create](../api/informationprotection-post-threatassessmentrequests.md) | [fileAssessmentRequest](fileAssessmentRequest.md) | Create a new file assessment request by posting a **fileAssessmentRequest** object. |
+| [Get](../api/threatassessmentrequest-get.md) | [fileAssessmentRequest](fileassessmentrequest.md) | Read the properties and relationships of a **fileAssessmentRequest** object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|contentData|String|Base64 encoded file content. The file content cannot fetch back because it isn't stored.|
+|contentData|String|Base64 encoded file content. The file content can't fetch back because it isn't stored.|
 |fileName|String|The file name.|
 |category|[threatCategory](enums.md#threatcategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|The threat assessment request creator.|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|The expected assessment from submitter. Possible values are: `block`, `unblock`.|
 |id|String|The threat assessment request ID is a globally unique identifier (GUID).|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|The source of threat assessment request. Possible values are: `user`, `administrator`.|
@@ -43,11 +44,11 @@ The file can be a text file or Word document or binary file received in an email
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|results|[threatAssessmentResult](threatassessmentresult.md) collection|A collection of threat assessment results. Read-only. By default, a `GET /threatAssessmentRequests/{id}` does not return this property unless you apply `$expand` on it.|
+|results|[threatAssessmentResult](threatassessmentresult.md) collection|A collection of threat assessment results. Read-only. By default, a `GET /threatAssessmentRequests/{id}` doesn't return this property unless you apply `$expand` on it.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -55,7 +56,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.fileAssessmentRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

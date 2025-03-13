@@ -1,12 +1,13 @@
 ---
-title: "Branding guidelines for OneNote API developers "
-description: " "
+title: "Branding guidelines for OneNote API developers"
+description: "Integrate the OneNote brand within your product to satisfy branding requirements. Includes guidance for logos, size, color, and referencing the OneNote name."
 author: "jewan-microsoft"
-localization_priority: Normal
-ms.prod: "onenote"
+ms.localizationpriority: medium
+ms.subservice: "onenote"
+ms.date: 11/07/2024
 ---
 
-# Branding guidelines for OneNote API developers 
+# Branding guidelines for OneNote API developers
  
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
@@ -170,12 +171,10 @@ See the following table for details about how to refer to OneNote in various con
 
 If you have any questions about these guidelines or are creating new communications using the brand assets shown here, contact us at [@onenotedev](https://twitter.com/onenotedev).
 
-## See also
+## Related content
 
 - [Branding guidelines for OneNote API developers](https://www.microsoft.com/download/details.aspx?id=42977) (download page)
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
-
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)

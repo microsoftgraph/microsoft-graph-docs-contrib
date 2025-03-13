@@ -2,9 +2,10 @@
 title: "Update audio routing group"
 description: "Modify sources and receivers of an audioRoutingGroup."
 author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # Update audio routing group
@@ -15,14 +16,13 @@ Namespace: microsoft.graph
 
 Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-| Permission type | Permissions (from least to most privileged)                |
-| :-------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported                       |
-| Delegated (personal Microsoft account) | Not Supported                       |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "audioroutinggroup_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/audioroutinggroup-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,10 +35,10 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and an updated [audi
 
 ## Example
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -76,23 +76,44 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-audioroutinggroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-audioroutinggroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-audioroutinggroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-audioroutinggroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-audioroutinggroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-audioroutinggroup-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-audioroutinggroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-audioroutinggroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-audioroutinggroup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
+### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

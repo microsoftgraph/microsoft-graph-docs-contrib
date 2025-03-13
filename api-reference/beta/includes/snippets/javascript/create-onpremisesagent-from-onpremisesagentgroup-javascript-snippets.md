@@ -10,8 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/onPremisesPublishingProfiles/provisioning/agentGroups')
+const onPremisesAgentGroup = {
+    displayName: 'New Group'
+};
+
+await client.api('/onPremisesPublishingProfiles/provisioning/agentGroups')
 	.version('beta')
-	.post();
+	.post(onPremisesAgentGroup);
 
 ```

@@ -2,9 +2,10 @@
 title: "workbookChartAxisTitleFormat resource type"
 description: "Represents the chart axis title formatting."
 author: "lumine2008"
-localization_priority: Normal
-ms.prod: "excel"
+ms.localizationpriority: medium
+ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # workbookChartAxisTitleFormat resource type
@@ -29,7 +30,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

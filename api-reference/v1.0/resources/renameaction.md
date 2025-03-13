@@ -1,11 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
 title: renameAction resource type
 description: The renameAction object provides information about an activity that renamed an item.
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # renameAction resource type
 
@@ -21,8 +21,8 @@ The presence of the **renameAction** resource on an [**itemActivity**][activity]
 
 | Property name | Type   | Description
 |:--------------|:-------|:----------------------------------------------------
-| oldName       | string | The previous name of the item.
 | newName       | string | The new name of the item.
+| oldName       | string | The previous name of the item.
 
 ## JSON representation
 

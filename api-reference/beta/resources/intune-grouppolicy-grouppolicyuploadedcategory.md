@@ -1,10 +1,11 @@
 ---
 title: "groupPolicyUploadedCategory resource type"
 description: "The category entity stores the category of a group policy definition"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # groupPolicyUploadedCategory resource type
@@ -34,6 +35,7 @@ Inherits from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicyc
 |:---|:---|:---|
 |displayName|String|The string id of the category's display name Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |isRoot|Boolean|Defines if the category is a root category Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|ingestionSource|[ingestionSource](../resources/intune-grouppolicy-ingestionsource.md)|Defines this category's ingestion source (0 - unknown, 1 - custom, 2 - global) Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md). Possible values are: `unknown`, `custom`, `builtIn`, `unknownFutureValue`.|
 |id|String|Key of the entity. Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified. Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 
@@ -58,13 +60,8 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.groupPolicyUploadedCategory",
   "displayName": "String",
   "isRoot": true,
+  "ingestionSource": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

@@ -1,27 +1,30 @@
 ---
 title: "Update open extension"
-description: "Update an open extension (openTypeExtension object) with the properties in the request body:"
-localization_priority: Normal
+description: "Update an open extension (openTypeExtension object) on a supported resource type."
+ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: apiPageType
+ms.date: 07/22/2024
 ---
 
 # Update open extension
 
 Namespace: microsoft.graph
 
-Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) with the properties in the request body:
+Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) on a supported resource type.
+- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.
+- Otherwise, that property and its data are added to the extension. 
 
-- If a property in the request body matches the name of an existing property in the extension, the data in the 
-extension is updated.
-- Otherwise that property and its data are added to the extension. 
+The data in an extension can be primitive types or arrays of primitive types.
 
-The data in an extension can be primitive types, or arrays of primitive types.
+See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
@@ -33,7 +36,9 @@ Depending on the resource that the extension was created in and the permission t
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite | Not supported | User.ReadWrite.All |
 
 ## HTTP request
 In the request, identify the resource instance, use the **extensions** 
@@ -50,6 +55,8 @@ PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 PATCH /organization/{Id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it. 
@@ -57,34 +64,37 @@ All other syntax that allows you to identify these resource instances supports u
 
 See the [Request body](#request-body) section about including in the request body any custom data to change or add to that extension.
 
-
-## Path parameters
-|Parameter|Type|Description|
-|:-----|:-----|:-----|
-|id|string|A unique identifier for an instance of the corresponding collection. Required.|
-|extensionId|string|This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
-
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body
 
-Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md) object, with the 
-following required name-value pairs, and any custom data to change or add to that extension. 
-The data in the JSON payload can be primitive types, or arrays of primitive types.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Name       | Value |
-|:---------------|:----------|
-| @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string% |
+Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md) object, with the following required name-value pairs, and any custom data to change or add to that extension. 
+
+|Property|Type|Description|
+|:---|:---|:---|
+|@odata.type|String|Must be `#microsoft.graph.openTypeExtension`. Required.|
+|extensionName|String|Required if **id** isn't supplied. Updatable.|
+|id|String|Required if **id** isn't supplied. Read-only.|
+
+For resources that are directory (Microsoft Entra ID) objects:
+- To update any property in the open extension object, you must specify *all* properties in the request body; otherwise, Microsoft Graph deletes the unspecified properties.
+- To delete data from a property in the open extension object but keep the property, set its value to `null`.
+- To delete a property from the open extension object, don't pass it in the PATCH request body, and Microsoft Graph deletes it.
+- To delete data from all properties in the open extension object but keep the open extension object, update the values of all the properties to `null`.
+
+For Microsoft 365 resources like messages:
+- You can specify a subset of the properties in the request body to update them. The omitted properties and their values are retained.
+- `null` values aren't allowed.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the updated
-[openTypeExtension](../resources/opentypeextension.md) object.
+If successful, this method returns a `204 No Content` response code for directory objects or a `200 OK` response code and an updated [openTypeExtension](../resources/opentypeextension.md) object for other resources.
 
 
 ## Example
@@ -190,9 +200,11 @@ with an `expirationDate` value of `2015-07-03T13:04:00Z`:
 
 The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "sampleKeys": ["Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"],
+  "blockType": "request",
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6", "AAQkADJizZJpEWwqDHsEpV_KA==", "AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=","Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"],
   "name": "update_opentypeextension"
 }-->
 ```http
@@ -213,12 +225,46 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-opentypeextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-opentypeextension-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-opentypeextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-opentypeextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-opentypeextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-opentypeextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-opentypeextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response 2
 
 Here is the response of the second example which shows the updated `expirationDate` in the extension.
 
 <!-- {  
-  "blockType": "ignored",  
+  "blockType": "response",  
   "truncated": true,  
   "@odata.type": "microsoft.graph.openTypeExtension"  
 } --> 

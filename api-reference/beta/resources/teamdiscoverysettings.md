@@ -1,10 +1,11 @@
 ---
 title: "teamDiscoverySettings resource type"
 description: "Settings to configure team discoverability by others."
-localization_priority: Normal
-author: "nkramer"
-ms.prod: "microsoft-teams"
+ms.localizationpriority: medium
+author: "MSFTRickyCastaneda"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamDiscoverySettings resource type
@@ -20,9 +21,12 @@ Provides settings to enable others to configure [team](team.md) discoverability.
 |:---------------|:--------|:----------|
 |showInTeamsSearchAndSuggestions|Boolean|If set to true, the team is visible via search and suggestions from the Teams client.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -44,7 +48,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/teamdiscoverysettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }-->
 

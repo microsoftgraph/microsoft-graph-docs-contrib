@@ -1,10 +1,11 @@
 ---
 title: "windowsInformationProtection resource type"
 description: "Policy for Windows information protection to configure detailed management settings"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsInformationProtection resource type
@@ -25,7 +26,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |:---|:---|:---|
 |[List windowsInformationProtections](../api/intune-mam-windowsinformationprotection-list.md)|[windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md) collection|List properties and relationships of the [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md) objects.|
 |[Get windowsInformationProtection](../api/intune-mam-windowsinformationprotection-get.md)|[windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|Read properties and relationships of the [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md) object.|
-|[assign action](../api/intune-mam-windowsinformationprotection-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-mam-windowsinformationprotection-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -205,9 +206,3 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
-
-
-
-
-
-

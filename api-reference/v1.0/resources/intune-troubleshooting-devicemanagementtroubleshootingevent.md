@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementTroubleshootingEvent resource type"
 description: "Event representing an general failure."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 03/14/2024
 ---
 
 # deviceManagementTroubleshootingEvent resource type
@@ -50,12 +51,3 @@ Here is a JSON representation of the resource.
   "correlationId": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

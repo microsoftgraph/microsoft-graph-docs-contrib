@@ -11,28 +11,28 @@ const options = {
 const client = Client.init(options);
 
 const sendMail = {
-  Message: {
-    subject: "Project kickoff",
-    toRecipients:[
+  message: {
+    subject: 'Project kickoff',
+    toRecipients: [
       {
-          emailAddress:{
-              name:"Samantha Booth",
-              address:"samanthab@contoso.onmicrosoft.com"
-          }
+        emailAddress: {
+          name: 'Samantha Booth',
+          address: 'samanthab@contoso.com'
+        }
       }
     ],
-    mentions:[
+    mentions: [
       {
-        mentioned:{
-          name:"Dana Swope",
-          address:"danas@contoso.onmicrosoft.com"
-         }
+        mentioned: {
+          name: 'Dana Swope',
+          address: 'danas@contoso.com'
+        }
       }
     ]
   }
 };
 
-let res = await client.api('/me/sendMail')
+await client.api('/me/sendMail')
 	.version('beta')
 	.post(sendMail);
 

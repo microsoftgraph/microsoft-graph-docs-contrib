@@ -1,10 +1,11 @@
 ---
 title: "automaticUpdateMode enum type"
 description: "Possible values for automatic update mode."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # automaticUpdateMode enum type
@@ -24,12 +25,3 @@ Possible values for automatic update mode.
 |autoInstallAndRebootAtMaintenanceTime|3|Auto-install and reboot at maintenance time.|
 |autoInstallAndRebootAtScheduledTime|4|Auto-install and reboot at scheduled time.|
 |autoInstallAndRebootWithoutEndUserControl|5|Auto-install and restart without end-user control|
-
-
-
-
-
-
-
-
-

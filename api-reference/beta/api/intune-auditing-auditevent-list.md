@@ -1,10 +1,11 @@
 ---
 title: "List auditEvents"
 description: "List properties and relationships of the auditEvent objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List auditEvents
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [auditEvent](../resources/intune-auditing-auditevent.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ GET /deviceManagement/auditEvents
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1975
+Content-Length: 2089
 
 {
   "value": [
@@ -72,6 +75,7 @@ Content-Length: 1975
       "actor": {
         "@odata.type": "microsoft.graph.auditActor",
         "type": "Type value",
+        "auditActorType": "Audit Actor Type value",
         "userPermissions": [
           "User Permissions value"
         ],
@@ -110,6 +114,7 @@ Content-Length: 1975
             }
           ],
           "type": "Type value",
+          "auditResourceType": "Audit Resource Type value",
           "resourceId": "Resource Id value"
         }
       ],
@@ -118,9 +123,3 @@ Content-Length: 1975
   ]
 }
 ```
-
-
-
-
-
-

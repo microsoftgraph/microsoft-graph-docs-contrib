@@ -1,34 +1,37 @@
 ---
-title: "List programControls of a program"
-description: "In the Azure AD access reviews feature, list all the programControl objects, linked to a particular program."
-localization_priority: Normal
+title: "List programControls of a program (deprecated)"
+description: "In the Microsoft Entra access reviews feature, list all the programControl objects, linked to a particular program."
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "markwahl-msft"
+ms.subservice: "entra-id-governance"
+author: "shubhamguptacal"
+ms.date: 04/05/2024
 ---
 
-# List programControls of a program
+# List programControls of a program (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControl](../resources/programcontrol.md) objects, linked to a particular program.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, list all the [programControl](../resources/programcontrol.md) objects, linked to a particular program.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "program_listcontrols" } -->
+[!INCLUDE [permissions-table](../includes/permissions/program-listcontrols-permissions.md)]
 
  The signed in user must also be in a directory role that permits them to read a program.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /programs('{programId}')/controls
+GET /programs/{programId}/controls
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -53,23 +56,39 @@ If successful, this method returns a `200, OK` response code and an array of [pr
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b807/controls
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-programcontrol-from-program-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-programcontrol-from-program-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-programcontrol-from-program-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-programcontrol-from-program-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-programcontrol-from-program-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-programcontrol-from-program-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-programcontrol-from-program-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-programcontrol-from-program-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,5 +128,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

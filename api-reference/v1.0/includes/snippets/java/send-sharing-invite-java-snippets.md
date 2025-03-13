@@ -4,30 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<DriveRecipient> recipientsList = new LinkedList<DriveRecipient>();
-DriveRecipient recipients = new DriveRecipient();
-recipients.email = "ryan@contoso.com";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-recipientsList.add(recipients);
+com.microsoft.graph.drives.item.items.item.invite.InvitePostRequestBody invitePostRequestBody = new com.microsoft.graph.drives.item.items.item.invite.InvitePostRequestBody();
+LinkedList<DriveRecipient> recipients = new LinkedList<DriveRecipient>();
+DriveRecipient driveRecipient = new DriveRecipient();
+driveRecipient.setEmail("ryan@contoso.com");
+recipients.add(driveRecipient);
+invitePostRequestBody.setRecipients(recipients);
+invitePostRequestBody.setMessage("Here's the file that we're collaborating on.");
+invitePostRequestBody.setRequireSignIn(true);
+invitePostRequestBody.setSendInvitation(true);
+LinkedList<String> roles = new LinkedList<String>();
+roles.add("write");
+invitePostRequestBody.setRoles(roles);
+invitePostRequestBody.setPassword("password123");
+invitePostRequestBody.setExpirationDateTime("2018-07-15T14:00:00.000Z");
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").invite().post(invitePostRequestBody);
 
-String message = "Here's the file that we're collaborating on.";
-
-boolean requireSignIn = true;
-
-boolean sendInvitation = true;
-
-LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("write");
-
-String password = "password123";
-
-int expirationDateTime = 7/15/2018 2:00:00 PM;
-
-graphClient.me().drive().items("{item-id}")
-	.invite(requireSignIn,rolesList,sendInvitation,message,recipientsList,expirationDateTime,password)
-	.buildRequest()
-	.post();
 
 ```

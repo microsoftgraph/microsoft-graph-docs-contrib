@@ -2,9 +2,10 @@
 title: "Replace timeOffReason"
 description: "Replace an existing timeOffReason."
 author: "akumar39"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # Replace timeOffReason
@@ -17,15 +18,12 @@ If the specified [timeOffReason](../resources/timeoffreason.md) doesn't exist, t
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "timeoffreason_put" } -->
+[!INCLUDE [permissions-table](../includes/permissions/timeoffreason-put-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -39,8 +37,9 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
@@ -54,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [timeOffReason
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -70,35 +69,22 @@ Prefer: return=representation
 {
   "displayName": "Vacation",
   "iconType": "plane",
-  "isActive": true
+  "isActive": true,
+  "code": "VacationCode"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/timeoffreason-put-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/timeoffreason-put-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/timeoffreason-put-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-put-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
----
-
 
 ### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,7 +94,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
@@ -125,7 +110,8 @@ Content-length: 401
       "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
       "displayName": "Alex Wilbur"
     }
-  }
+  },
+  "code": "VacationCode"
 }
 ```
 

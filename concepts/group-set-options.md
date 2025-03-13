@@ -1,38 +1,47 @@
 ---
-title: "Set Microsoft 365 group behaviors and provisioning options"
-description: "Using the group resource in Microsoft Graph, you can set specific group behaviors and resources to provision when creating a Microsoft 365 group."
-author: "yyuank"
-localization_priority: Priority
+title: "Microsoft 365 group behaviors and provisioning options"
+description: "Configure behaviors and resources to provision when creating a Microsoft 365 group using the Microsoft Graph groups API."
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: yuhko, khotzteam, aadgroupssg
+ms.topic: concept-article
+ms.subservice: entra-groups
+ms.localizationpriority: high
+ms.date: 03/07/2024
+#Customer intent: As a developer, I want to learn what group behaviors and resources can be provisioned or configured for Microsoft 365 groups.
 ---
 
-# Set Microsoft 365 group behaviors and provisioning options (preview)
+# Microsoft 365 group behaviors and provisioning options
 
-Using the [group](/graph/api/resources/group?view=graph-rest-beta) resource in Microsoft Graph, you can set specific group behaviors and resources to provision when creating a Microsoft 365 group. Depending on the resource, some can also be provisioned on group update.
+On the [group](/graph/api/resources/group) resource in Microsoft Graph, you can use the **resourceBehaviorOptions** property to set specific group behaviors when creating a Microsoft 365 group. The **resourceProvisioningOptions** property on the other hand indicates the specific resources provisioned for the group.
 
-### Configuring and provisioning groups
+## Resource behavior options
 
-The **group** resource exposes two properties, **resourceBehaviorOptions** and **resourceProvisioningOptions**, to customize the behaviors and resources to be provisioned upon group creation. 
+**resourceBehaviorOptions** is a string collection that specifies group behaviors for a Microsoft 365 group. These behaviors can be set only on [group creation](/graph/api/group-post-groups).
 
-> [!NOTE]
-> The **resourceBehaviorOptions** and **resourceProvisioningOptions** properties are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
+| Supported values for resourceBehaviorOptions | Description                                                                                                                                     |
+|:---------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
+| `AllowOnlyMembersToPost`                     | Only group _members_ can post conversations to the group; otherwise, any user in the organization can post conversations to the group.          |
+| `CalendarMemberReadOnly`                     | Members can view the group calendar in Outlook but can't make changes; otherwise, members can both view and edit the group calendar in Outlook. |
+| `ConnectorsDisabled`                         | Changes made to the group in Exchange Online aren't synced back to on-premises Active Directory.                                                |
+| `HideGroupInOutlook`                         | This group is hidden in Outlook experiences; otherwise, the group is visible and discoverable in Outlook experiences.                           |
+| `SubscribeMembersToCalendarEventsDisabled`   | Members aren't subscribed to the group's calendar events in Outlook.                                                                            |
+| `SubscribeNewGroupMembers`                   | Group members are subscribed to receive group conversations.                                                                                    |
+| `WelcomeEmailDisabled`                       | Welcome emails aren't sent to new members.                                                                                                      |
+| `SkipExchangeInstantOn`                      | For internal use only. DO NOT USE.                                                                                                              |
 
-**resourceBehaviorOptions** is a string collection that specifies group behaviors for a Microsoft 365 group. These bahaviors can be set only on [group creation](/graph/api/group-post-groups?view=graph-rest-beta) (`POST`).
+## Resource provisioning options
 
-| Supported values for resourceBehaviorOptions   |Description|Default if not set|
-|:---------------|:--------|:-----------|
-| AllowOnlyMembersToPost|Only group *members* can post conversations to the group.|Any user in the organization can post conversations to the group.|
-| HideGroupInOutlook|This group is hidden in Outlook experiences.|All groups are visible and discoverable in Outlook experiences.|
-| SubscribeNewGroupMembers|Group members are subscribed to receive group conversations. |Group members do not receive group conversations.|
-| WelcomeEmailDisabled|Welcome emails are not sent to new members.|A welcome email is sent to a new member on joining the group.|
+**resourceProvisioningOptions** is a string collection that specifies the resources that are associated with the Microsoft 365 group. 
 
-**resourceProvisioningOptions** is a string collection that specifies group resources to be provisioned as part of creating the Microsoft 365 group, that are not normally part of default group creation.
+> [!CAUTION]
+> We recommend that you avoid configuring the **resourceProvisioningOptions** property during group creation or update and instead, let the system manage the property.
 
-| Supported values for resourceProvisioningOptions   |Description| Default if not set |
-|:---------------|:--------|:------------|
-| Teams|Provision this group as a team in Microsoft Teams. Additionally, this value can be added to the **resourceProvisioningOptions** string collection on [group update](/graph/api/group-update?view=graph-rest-beta) through a `PATCH` operation, in order to convert an existing Microsoft 365 group to a team.| The group is a regular Microsoft 365 group without Teams capabilities.|
+| Supported values for resourceProvisioningOptions | Description |
+|:-|:-|
+| `Team` | If set, the Microsoft 365 group is associated with a Teams team. |
 
+## Related content
 
-## See also
-
-- [Overview of Microsoft 365 groups in Microsoft Graph](office365-groups-concept-overview.md)
+- [Overview of Microsoft 365 groups in Microsoft Graph](microsoft365-groups-concept-overview.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)

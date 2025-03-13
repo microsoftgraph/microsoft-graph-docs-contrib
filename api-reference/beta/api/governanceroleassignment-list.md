@@ -1,10 +1,12 @@
 ---
 title: "List governanceRoleAssignments"
 description: "Retrieve a collection of governanceRoleAssignments."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.subservice: "entra-id-governance"
+author: "rkarim-ms"
+ROBOTS: NOINDEX
+ms.date: 08/13/2024
 ---
 
 # List governanceRoleAssignments
@@ -13,29 +15,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
+
 Retrieve a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.Read.AzureResources |
+The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-|:-|:-|:-|
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | PrivilegedAccess.Read.AzureAD |
+| Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | PrivilegedAccess.Read.AzureResources |
+| [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | PrivilegedAccess.Read.AzureADGroup |
+
+The requestor must also have at least one role assignment on the resource.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 List a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md) on a resource.
 
->**Note:** Besides the permission scope, this request requires the requestor to have at least one role assignment on the resource. 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-List a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md) of mine.
+List a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md) for the signed-in user.
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```
@@ -45,10 +52,10 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) objects in the response body.
@@ -122,5 +129,3 @@ Content-Length: 2062
   "suppressions": []
 }
 -->
-
-

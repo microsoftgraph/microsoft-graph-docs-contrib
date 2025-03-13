@@ -1,10 +1,11 @@
 ---
 title: "iosHomeScreenApp resource type"
 description: "Represents an icon for an app on the Home Screen"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # iosHomeScreenApp resource type
@@ -22,7 +23,7 @@ Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreen
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|bundleID|String|BundleID of app|
+|bundleID|String|BundleID of the app if isWebClip is false or the URL of a web clip if isWebClip is true.|
 
 ## Relationships
 None
@@ -41,12 +42,3 @@ Here is a JSON representation of the resource.
   "bundleID": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

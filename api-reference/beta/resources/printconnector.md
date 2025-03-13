@@ -2,9 +2,10 @@
 title: printConnector resource type
 description: Represents a print connector that has been registered by using a Universal Print subscription. The printConnector resource can be used to view connector status and update properties.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printConnector resource type
@@ -19,15 +20,16 @@ Represents a print connector that has been registered by using a Universal Print
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
-| [Update connector](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object. |
-| [Delete connector](../api/printconnector-delete.md) | None | Unregister the connector from the Universal Print service. |
+| [List](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Retrieve a list of print connectors. |
+| [Get](../api/printconnector-get.md) | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
+| [Update](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object. |
+| [Delete](../api/printconnector-delete.md) | None | Unregister the connector from the Universal Print service. |
 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String| Read-only.|
-|name|String|The name of the connector.|
+|displayName|String|The name of the connector.|
 |fullyQualifiedDomainName|String|The connector machine's hostname.|
 |operatingSystem|String|The connector machine's operating system version.|
 |appVersion|String|The connector's version.|
@@ -36,9 +38,12 @@ Represents a print connector that has been registered by using a Universal Print
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the connector was registered.|
 |registeredBy|[userIdentity](useridentity.md)|The user who registered the connector.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -51,7 +56,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
+  "displayName": "String",
   "fullyQualifiedDomainName": "String",
   "operatingSystem": "String",
   "appVersion": "String",

@@ -1,13 +1,17 @@
 ---
-title: "Integrate your Windows UWP app with the client-side SDK for user notifications"
-description: "Integrate your Windows UWP app with user notifications client SDK."
-localization_priority: Priority
-ms.prod: "notifications"
+title: "Integrate your Windows UWP app with the client-side SDK (deprecated)"
+description: "After you register your app and onboard your cross-device experiences, integrate your client app with the client-side SDK for Windows UWP apps (deprecated)."
+ms.localizationpriority: high
+ms.subservice: "notifications"
+ms.date: 11/07/2024
 ---
 
-# Integrate your Windows UWP app with the client-side SDK for user notifications
+# Integrate your Windows UWP app with the client-side SDK for user notifications (deprecated)
 
-After you [register your app](notifications-integration-app-registration.md) in the Azure Portal and onboard your [cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md) in the Partner Dev Center, the next step is to integrate your client app with the client-side SDK for Windows UWP apps.  
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and stopped returning data in January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs). For more information, see the blog post [Retiring Microsoft Graph notifications API (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
+
+After you [register your app](notifications-integration-app-registration.md) in the Microsoft Entra admin center and onboard your [cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md) in the Partner Dev Center, the next step is to integrate your client app with the client-side SDK for Windows UWP apps.  
 
 With the client-side SDK, your app can perform the necessary registration steps to start receiving notifications published from your app server targeted at the user who is currently signed in. The SDK then manages the notifications on the client side, including receiving new incoming notifications, managing the state of notifications to achieve scenarios like universal dismiss, and retrieving full notification history. 
 
@@ -83,7 +87,7 @@ After the installation finishes, the package shows up under **References** in th
 
 For more details about including and consuming NuGet packages from your UWP app, see:
 
-* [Use packages from nuget.org](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts)
+* [Use packages from nuget.org](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts&preserve-view=true)
 * [Quickstart: Install and use a package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
@@ -171,7 +175,7 @@ Microsoft Graph notifications, like many other resource types inside Microsoft G
 
 If you're using a Microsoft account, you will need to include the following permissions in your sign-in request: `wl.offline_access"`, `ccs.ReadWrite`, `wns.connect`, `asimovrome.telemetry`, and `https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp`. 
 
-If you're using an Azure AD account, you'll need to request the following audience: `https://cdpcs.access.microsoft.com`.
+If you're using a Microsoft Entra account, you'll need to request the following audience: `https://cdpcs.access.microsoft.com`.
 
 
 ## Adding the user account to the platform 
@@ -270,7 +274,7 @@ A notification is removed from the user notification store only if it is expired
 await channel.DeleteUserNotificationAsync(notification.Id);
 ```
 
-## See also
+## Related content
 
 - [API reference](/windows/project-rome/notifications/api-reference-for-windows/) for the full set of APIs related to notification features in the SDK. 
 - [Client-side sample](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample) for Windows UWP apps.

@@ -4,28 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var addLicenses = new List<AssignedLicense>()
+// Dependencies
+using Microsoft.Graph.Me.AssignLicense;
+using Microsoft.Graph.Models;
+
+var requestBody = new AssignLicensePostRequestBody
 {
-	new AssignedLicense
+	AddLicenses = new List<AssignedLicense>
 	{
-		DisabledPlans = new List<Guid>()
+		new AssignedLicense
 		{
-			Guid.Parse("11b0131d-43c8-4bbb-b2c8-e80f9a50834a")
+			DisabledPlans = new List<Guid?>
+			{
+				Guid.Parse("8a256a2b-b617-496d-b51b-e76466e88db0"),
+			},
+			SkuId = Guid.Parse("84a661c4-e949-4bd2-a560-ed7766fcaf2b"),
 		},
-		SkuId = Guid.Parse("guid")
-	}
+		new AssignedLicense
+		{
+			DisabledPlans = new List<string>
+			{
+			},
+			SkuId = Guid.Parse("f30db892-07e9-47e9-837c-80727f46fd3d"),
+		},
+	},
+	RemoveLicenses = new List<string>
+	{
+	},
 };
 
-var removeLicenses = new List<Guid>()
-{
-	Guid.Parse("bea13e0c-3828-4daa-a392-28af7ff61a0f")
-};
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.AssignLicense.PostAsync(requestBody);
 
-await graphClient.Me
-	.AssignLicense(addLicenses,removeLicenses)
-	.Request()
-	.PostAsync();
 
 ```

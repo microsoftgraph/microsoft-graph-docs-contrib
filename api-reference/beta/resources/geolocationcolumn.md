@@ -3,9 +3,9 @@ author: kevklam
 description: "The geolocationColumn on a columnDefinition resource indicates that the column holds a geolocation."
 ms.date: 09/10/2018
 title: GeolocationColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: sharepoint
 ---
 # geolocationColumn resource type
 
@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **geolocationColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a geolocation.
+
+## Relationships
+None.
 
 ## JSON representation
 

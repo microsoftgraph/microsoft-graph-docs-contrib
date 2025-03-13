@@ -1,10 +1,11 @@
 ---
 title: "Update event"
 description: "Update the properties of the event object."
-author: "harini84"
-localization_priority: Normal
-ms.prod: "outlook"
+author: "iamgirishck"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Update event
@@ -15,11 +16,26 @@ Namespace: microsoft.graph
 
 Update the properties of the [event](../resources/event.md) object.
 
-When updating the time zone of the start or end time of an event, first [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+### Notes for updating specific properties
+Note the following behaviors or recommendations when updating the corresponding properties:
+
+- **attendees** property and meeting updates
+  - An event update that includes only the **attendees** property in the request body sends a meeting update to only the attendees that have changed.
+  - An event update that removes an attendee specified as a member of a distribution list sends a meeting update to all the attendees.
+
+- **body** property and online meetings
+
+  Before updating the body of an event that has been set up as an online meeting, be sure to first get the **body** property, apply the appropriate changes to the content, and preserve the meeting blob for online meeting. Inadvertently removing the meeting blob from the body would disable meeting online. 
+
+- **end** and **start** properties and their time zones
+  
+  When updating the time zone of the start or end time of an event, first [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Calendars.ReadWrite    |
@@ -40,26 +56,24 @@ PATCH /groups/{id}/calendar/events/{id}
 PATCH /me/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-PATCH /me/calendargroup/calendars/{id}/events/{id}
-PATCH /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
-PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
-PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
+PATCH /me/calendarGroups/{id}/calendars/{id}/events/{id}
+PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	     | Type	   | Description |
 |:---------------|:--------|:------------|
-| attendees|Attendee|The collection of attendees for the event.|
-| body|ItemBody|The body of the message associated with the event.|
+| attendees|Attendee|The collection of attendees for the event. See additional [notes for updating specific properties](#notes-for-updating-specific-properties).|
+| body|ItemBody|The body of the message associated with the event. See additional [notes for updating specific properties](#notes-for-updating-specific-properties).|
 | categories|String collection|The categories associated with the event.|
-| end|DateTimeTimeZone|The date, time, and time zone that the event ends. |
+| end|DateTimeTimeZone|The date, time, and time zone that the event ends. See additional [notes for updating specific properties](#notes-for-updating-specific-properties). |
+|hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
 | importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
 |isOnlineMeeting|Boolean| `True` if this event has online meeting information, `false` otherwise. Default is false. Optional.|
@@ -72,7 +86,7 @@ In the request body, supply the values for relevant fields that should be update
 | responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 | sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|The status to show. Possible values are: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-| start|DateTimeTimeZone|The start date, time, and time zone of the event. |
+| start|DateTimeTimeZone|The start date, time, and time zone of the event. See additional [notes for updating specific properties](#notes-for-updating-specific-properties). |
 | subject|String|The text of the event's subject line.|
 
 Because the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to
@@ -88,9 +102,9 @@ If successful, this method returns a `200 OK` response code and updated [event](
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +114,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/events/{id}
 Content-type: application/json
-Content-length: 285
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
@@ -109,28 +122,55 @@ Content-length: 285
     "response": "",
     "time": "2016-10-19T10:37:00Z"
   },
-  "recurrence": null,
-  "uid": "iCalUId-value",
+  "recurrence": null, 
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true,
+  "hideAttendees": false,
   "categories": ["Red category"]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-event-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-event-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-event-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-event-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-event-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+### Response
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,7 +179,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
@@ -149,11 +188,13 @@ Content-length: 285
     "time": "2016-10-19T10:37:00Z"
   },
   "recurrence": null,
-  "uid": "iCalUId-value",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074=",
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true,
+  "hideAttendees": false,
   "onlineMeeting": {
         "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
         "conferenceId": "177513992",
@@ -163,7 +204,7 @@ Content-length: 285
 ```
 
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
@@ -183,5 +224,3 @@ Content-length: 285
   ]
 }
 -->
-
-

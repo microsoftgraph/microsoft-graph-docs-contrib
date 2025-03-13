@@ -1,10 +1,11 @@
 ---
 title: "iosLobAppProvisioningConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iOS Lob App Provisioning Configuration resource."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # iosLobAppProvisioningConfiguration resource type
@@ -26,9 +27,9 @@ This topic provides descriptions of the declared methods, properties and relatio
 |[Delete iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-delete.md)|None|Deletes a [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md).|
 |[Update iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-update.md)|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|Update the properties of a [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) object.|
 |**Apps**|
-|[assign action](../api/intune-shared-ioslobappprovisioningconfiguration-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-shared-ioslobappprovisioningconfiguration-assign.md)|None||
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|
@@ -78,9 +79,3 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
-
-
-
-

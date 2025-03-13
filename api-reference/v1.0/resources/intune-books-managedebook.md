@@ -1,10 +1,11 @@
 ---
 title: "managedEBook resource type"
 description: "An abstract class containing the base properties for Managed eBook."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # managedEBook resource type
@@ -71,12 +72,3 @@ Here is a JSON representation of the resource.
   "privacyInformationUrl": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

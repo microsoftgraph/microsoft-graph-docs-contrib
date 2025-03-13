@@ -1,0 +1,30 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const permission = {
+  type: 'view',
+  scope: 'anonymous',
+  password: 'String',
+  recipients: [
+    {
+      '@odata.type': 'microsoft.graph.driveRecipient'
+    }
+  ],
+  sendNotification: true,
+  retainInheritedPermissions: false
+};
+
+await client.api('/sites/{siteId}/lists/{listId}/items/{itemId}/createLink')
+	.version('beta')
+	.post(permission);
+
+```

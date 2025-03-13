@@ -1,27 +1,32 @@
 ---
 title: "Get signIn"
 description: "Describes the get method of the signIn resource (entity) from the Microsoft Graph API."
-localization_priority: Normal
-author: "khotz"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "egreenberg14"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Get signIn
 
 Namespace: microsoft.graph
 
-Retrieve a specific Azure AD user sign-in event for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
+Retrieve a specific Microsoft Entra user [sign-in](../resources/signin.md) event for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
+
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
-|Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All and Directory.Read.All |
+<!-- { "blockType": "permissions", "name": "signin_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/signin-get-permissions.md)]
+
+[!INCLUDE [rbac-signin-apis-read](../includes/rbac-for-apis/rbac-signin-apis-read.md)]
 
 ## HTTP request
 
@@ -32,17 +37,17 @@ GET /auditLogs/signIns/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
+This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,7 +57,7 @@ If successful, this method returns a `200 OK` response code and [signIn](../reso
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -62,31 +67,47 @@ Here is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/auditLogs/signIns/{id}
+GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-ff5a759b0100
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-signin-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signin-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-signin-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signin-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-signin-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-Here is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -97,17 +118,13 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 211
-```
 
-```json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/signIns",
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/auditLogs/signIns?$top=1&$skiptoken=9177f2e3532fcd4c4d225f68f7b9bdf7_1",
     "value": [
         {
             "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+            "createdDateTime": "2023-12-01T16:03:24Z",
             "userDisplayName": "Test Contoso",
             "userPrincipalName": "testaccount1@contoso.com",
             "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",
@@ -180,4 +197,3 @@ Content-length: 211
   "suppressions": [
   ]
 }-->
-

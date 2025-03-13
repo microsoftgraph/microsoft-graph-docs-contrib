@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementSettingRequiredConstraint resource type"
 description: "Constraint that enforces a particular required setting that is not null/undefined/empty string/not configured"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementSettingRequiredConstraint resource type
@@ -41,9 +42,3 @@ Here is a JSON representation of the resource.
   "notConfiguredValue": "String"
 }
 ```
-
-
-
-
-
-

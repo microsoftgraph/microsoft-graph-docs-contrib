@@ -1,9 +1,10 @@
 ---
-title: "Add images, videos, and files to OneNote pages"
-description: " Enterprise notebooks on Microsoft 365"
+title: "Add images, videos, and files to OneNote pages by using the OneNote API"
+description: "Use img, object, and iframe elements to add images, videos, and files to a OneNote page when you're creating or updating the page."
 author: "jewan-microsoft"
-localization_priority: Priority
-ms.prod: "onenote"
+ms.localizationpriority: high
+ms.subservice: "onenote"
+ms.date: 11/07/2024
 ---
 
 
@@ -48,8 +49,7 @@ Use `<img data-render-src="name:part-name" />` and send the PDF file in the data
 
 Use `object` with `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` and send an image file in the data part of a multipart request. Adds a file attachment to the OneNote page and displays a file icon.
 
-
-> **Note:**
+> [!NOTE]
 > To get images on a OneNote page, first send a [GET request for the page content](onenote-get-content.md#page-html-content). This returns the URLs to the image resources on the page. You then separate [GET requests to the image resources](onenote-get-content.md#image-or-other-file-resource).
 
 
@@ -61,7 +61,7 @@ An **img** element can optionally include **alt**, **height**, and **width** att
 
 Microsoft Graph supports TIFF, PNG, GIF, JPEG, and BMP image types. To capture an image that uses a different format that you don't want to convert, [send the binary data](#add-an-image-using-binary-data) in a multipart request. You don't need to use Base64 or otherwise encode the binary data that you send.
 
-> **Note:**
+> [!NOTE]
 > The API detects the original input image type, and returns it as the **data-fullres-src-type** attribute in the [output HTML](onenote-input-output-html.md#output-html). The API also returns the image type of the optimized image in **data-src-type**.
  
 See [limitations](#size-limitations-for-post-pages-requests) that apply when creating pages that contain media.
@@ -498,14 +498,14 @@ To create or update OneNote pages, you'll need to request appropriate permission
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md#notes-permissions).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).
 
 
 <a name="see-also"></a>
 
-## See also
+## Related content
 
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ItemAnalytics itemAnalytics = graphClient.drives("{drive-id}").items("{item-id}").analytics()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ItemActivityStat result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").analytics().allTime().get();
+
 
 ```

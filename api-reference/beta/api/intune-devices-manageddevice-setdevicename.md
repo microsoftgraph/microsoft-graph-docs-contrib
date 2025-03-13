@@ -1,10 +1,11 @@
 ---
 title: "setDeviceName action"
 description: "Set device name of the device."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # setDeviceName action
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Set device name of the device.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -44,7 +47,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -54,7 +57,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceName|String|Not yet documented|
+|deviceName|String||
 
 
 
@@ -81,9 +84,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-

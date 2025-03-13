@@ -1,10 +1,11 @@
 ---
 title: "Get mobileAppTroubleshootingEvent"
 description: "Describes the Get mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
-localization_priority: Normal
-author: "dougeby"
-ms.prod: "intune"
+ms.localizationpriority: medium
+author: "jaiprakashmb"
+ms.prod: "Intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get mobileAppTroubleshootingEvent
@@ -17,7 +18,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.
 
-## Prerequisites
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -29,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 |&nbsp; &nbsp; **Device management**|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |&nbsp; &nbsp; **Troubleshooting**|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {
@@ -46,7 +49,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -77,16 +80,3 @@ Content-Length: 143
   }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

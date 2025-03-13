@@ -2,9 +2,10 @@
 title: Create allowedUser for printerShare
 description: Grant the specified user access to submit print jobs to the associated printer share.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create allowedUser for printerShare
@@ -15,16 +16,13 @@ Namespace: microsoft.graph
 
 Grant the specified user access to submit print jobs to the associated [printerShare](../resources/printershare.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrinterShare.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+<!-- { "blockType": "permissions", "name": "printershare_post_allowedusers" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printershare-post-allowedusers-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,18 +32,18 @@ POST /print/shares/{id}/allowedUsers/$ref
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.|
 
 ## Request body
 In the request body, supply a reference to a user entity by using the `@odata.id` format, as shown in the following example.
 
 ## Response
-If successful, this method returns a `201 Created` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -56,22 +54,42 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers/$ref
 Content-type: application/json
-Content-length: 66
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-alloweduser-from-printers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-alloweduser-from-printers-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-alloweduser-from-printers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-alloweduser-from-printers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-alloweduser-from-printers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-alloweduser-from-printers-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-alloweduser-from-printers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-alloweduser-from-printers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-alloweduser-from-printers-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -79,11 +97,9 @@ Content-length: 66
 In the request body, supply a reference to a user entity by including the user's Microsoft Graph URI in the `@odata.id` field of the JSON body.
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

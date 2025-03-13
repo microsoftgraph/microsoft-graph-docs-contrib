@@ -1,88 +1,106 @@
 ---
 title: "group: renew"
-description: "Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
-localization_priority: Normal
-author: "yyuank"
-ms.prod: "groups"
+description: "Renew a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
+ms.localizationpriority: medium
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # group: renew
 
 Namespace: microsoft.graph
 
-Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
+Renew a [group's](../resources/group.md) expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
- 
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All or Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported |
-|Application | Group.ReadWrite.All or Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "group_renew" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-renew-permissions.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/renew
 ```
 
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
 
+| Name          | Description               |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
-##### Request
-
+### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_renew"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-renew-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-renew-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/group-renew-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-renew-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-renew-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-renew-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-renew-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/group-renew-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-renew-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-renew-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+### Response
 
-##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Boolean"
+  "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -98,4 +116,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

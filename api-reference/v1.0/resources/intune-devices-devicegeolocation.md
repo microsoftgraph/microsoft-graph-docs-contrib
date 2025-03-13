@@ -1,10 +1,11 @@
 ---
 title: "deviceGeoLocation resource type"
 description: "Device location"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceGeoLocation resource type
@@ -41,21 +42,12 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
   "lastCollectedDateTime": "String (timestamp)",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "altitude": "<Unknown Primitive Type Edm.Double>",
-  "horizontalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "verticalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "heading": "<Unknown Primitive Type Edm.Double>",
-  "speed": "<Unknown Primitive Type Edm.Double>"
+  "longitude": "4.2",
+  "latitude": "4.2",
+  "altitude": "4.2",
+  "horizontalAccuracy": "4.2",
+  "verticalAccuracy": "4.2",
+  "heading": "4.2",
+  "speed": "4.2"
 }
 ```
-
-
-
-
-
-
-
-
-

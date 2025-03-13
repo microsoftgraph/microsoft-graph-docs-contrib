@@ -1,28 +1,31 @@
 ---
-title: "Update a range format in Excel with Microsoft Graph"
-description: "The following examples demonstrate how to update properties of the RangeFormat, RangeFill, and RangeFont properties of a specified range."
-localization_priority: Normal
+title: "Update a range format in Excel"
+description: "View examples that show how to use Excel APIs in Microsoft Graph to update properties of the rangeFormat, rangeFill, and rangeFont properties of a specified range."
+ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
+ms.date: 11/07/2024
 ---
 
-# Update a range format in Excel with Microsoft Graph
+# Update a range format in Excel
 
-The following examples demonstrate how to update properties of the [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0), [RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0), and [RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) properties of a specified range.
+This article describes how to use Excel workbooks and charts APIs in Microsoft Graph to update the properties of the [rangeFormat](/graph/api/resources/rangeformat), [rangeFill](/graph/api/resources/rangefill), and [rangeFont](/graph/api/resources/rangefont) properties of a specified range.
 
-The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
+The result of this set of requests is a table with three cells formatted like the top three cells in the following image.
 
 ![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
-##### Request
-This request updates the vertical alignment, row height, and column height of the first cell.
+## Example 1: Cell 1 alignment and height
 
+The following request updates the vertical alignment, row height, and column height of the first cell.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat"
+  "name": "update_rangeformat_e1"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
@@ -35,26 +38,31 @@ Content-type: application/json
   "wrapText": false
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeformat-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/update-rangeformat-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/update-rangeformat-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/update-rangeformat-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-rangeformat-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,15 +81,17 @@ Content-type: application/json
 }
 ```
 
-##### Request
-This request updates the font style, size, and color of the first cell.
+## Example 2: Cell 1 font style, size, and color
 
+The following request updates the font style, size, and color of the first cell.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_font"
+  "name": "update_rangeformat_font_e2"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font
@@ -93,26 +103,31 @@ Content-type: application/json
   "size": 26
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeformat-font-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-rangeformat-font-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-font-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -132,15 +147,17 @@ Content-type: application/json
 }
 ```
 
-##### Request
-This request updates the background color of the first cell.
+## Example 3: Cell 1 background color
 
+The following request updates the background color of the first cell.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_fill"
+  "name": "update_rangeformat_fill_e3"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/fill
@@ -150,26 +167,31 @@ Content-type: application/json
   "color": "#FF0000"
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeformat-fill-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-rangeformat-fill-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-fill-e3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -183,15 +205,18 @@ Content-type: application/json
     "color": "#FF0000"
 }
 ```
-##### Request
-This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.
 
+## Example 4: Cell 2 alignment and height
+
+The following request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_two"
+  "name": "update_rangeformat_two_e4"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format
@@ -205,26 +230,31 @@ Content-type: application/json
   "wrapText": false
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeformat-two-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/update-rangeformat-two-e4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/update-rangeformat-two-e4-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/update-rangeformat-two-e4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-two-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-rangeformat-two-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-two-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-two-e4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -243,15 +273,17 @@ Content-type: application/json
 }
 ```
 
-##### Request
-This request updates the font style and size of the second cell.
+## Example 5: Cell 2 font style and size
 
+The following request updates the font style and size of the second cell.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_font_two"
+  "name": "update_rangeformat_font_two_e5"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font
@@ -262,26 +294,31 @@ Content-type: application/json
   "size": 26
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeformat-font-two-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-two-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-rangeformat-font-two-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-two-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-font-two-e5-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -301,15 +338,17 @@ Content-type: application/json
 }
 ```
 
-##### Request
-This request updates the background color of the second cell.
+## Example 6: Cell 2 background color
 
+The following request updates the background color of the second cell.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_fill_two"
+  "name": "update_rangeformat_fill_two_e6"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/fill
@@ -319,26 +358,31 @@ Content-type: application/json
   "color": "#00FF00"
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeformat-fill-two-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-two-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-rangeformat-fill-two-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-two-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-fill-two-e6-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -353,15 +397,17 @@ Content-type: application/json
 }
 ```
 
-##### Request
-This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.
+## Example 7: Cell 3 alignment and height
 
+The following request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_three"
+  "name": "update_rangeformat_three_e7"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format
@@ -375,26 +421,31 @@ Content-type: application/json
   "wrapText": false
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeformat-three-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/update-rangeformat-three-e7-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/update-rangeformat-three-e7-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/update-rangeformat-three-e7-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-three-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-rangeformat-three-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-three-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-three-e7-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -413,15 +464,19 @@ Content-type: application/json
 }
 ```
 
-##### Request
-This request updates the font style, size, and color of the third cell. Note that the underline property takes **Single** or **Double** as values.
+## Example 8: Cell 3 font style, size, and color
 
+The following request updates the font style, size, and color of the third cell.
+
+> **Note:** The underline property takes **Single** or **Double** as values.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_font_three"
+  "name": "update_rangeformat_font_three_e8"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/font
@@ -433,26 +488,31 @@ Content-type: application/json
   "size": 26
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeformat-font-three-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-three-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-rangeformat-font-three-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-three-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-font-three-e8-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -472,15 +532,17 @@ Content-type: application/json
 }
 ```
 
-##### Request
-This request updates the background color of the third cell.
+## Example 9: Cell 3 background color
 
+The following request updates the background color of the third cell.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_fill_three"
+  "name": "update_rangeformat_fill_three_e9"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill
@@ -490,26 +552,31 @@ Content-type: application/json
   "color": "#0000FF"
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeformat-fill-three-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-three-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-rangeformat-fill-three-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-three-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-fill-three-e9-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -524,13 +591,15 @@ Content-type: application/json
 }
 ```
 
+## Related content
 
-## See also
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
 * [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
-* [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)
+* [Excel workbooks and charts API reference](/graph/api/resources/excel)
+* [Workbook range border](/graph/api/resources/workbookrangeborder)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

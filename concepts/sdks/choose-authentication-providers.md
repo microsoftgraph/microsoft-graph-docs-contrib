@@ -1,428 +1,318 @@
 ---
 title: "Choose a Microsoft Graph authentication provider"
 description: "Learn how to choose scenario-specific authentication providers for your application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: MichaelMainer
+ms.date: 11/07/2024
 ---
 
-# Choose a Microsoft Graph authentication provider based on scenario
+<!-- markdownlint-disable MD024 MD051 -->
 
-Authentication providers implement the code required to acquire a token using the Microsoft Authentication Library (MSAL); handle a number of potential errors for cases like incremental consent, expired passwords, and conditional access; and then set the HTTP request authorization header. The following table lists the set of providers that match the scenarios for different [application types](/azure/active-directory/develop/v2-app-types).
+# Choose a Microsoft Graph authentication provider based on the scenario
 
-|Scenario | Flow/Grant | Audience | Provider|
-|--|--|--|--|
-| [Single Page App](/azure/active-directory/develop/scenario-spa-acquire-token)| | | |
-| | Implicit | Delegated Consumer/Org |[Implicit Provider](#ImplicitProvider) |
-| [Web App that calls web APIs](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) | | | |
-| | Authorization Code | Delegated Consumer/Org | [Authorization Code Provider](#AuthCodeProvider) |
-| | Client Credentials  | App Only | [Client Credentials Provider](#ClientCredentialsProvider) |
-| [Web API that calls web APIs](/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) | | | |
-| | On Behalf Of | Delegated Consumer/Org | [On Behalf Of Provider](#OnBehalfOfProvider) |
-| | Client Credentials  | App Only | [Client Credentials Provider](#ClientCredentialsProvider) |
-| [Desktop app that calls web APIs](/azure/active-directory/develop/scenario-desktop-acquire-token) | | | |
-| | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
-| | Integrated Windows | Delegated Org | [Integrated Windows Provider](#IntegratedWindowsProvider) |
-| | Resource Owner  | Delegated Org | [Username / Password Provider](#UsernamePasswordProvider) |
-| | Device Code  | Delegated Org | [Device Code Provider](#DeviceCodeProvider) |
-| [Daemon app](/azure/active-directory/develop/scenario-daemon-acquire-token) | | | |
-| | Client Credentials  | App Only | [Client Credentials Provider](#ClientCredentialsProvider) |
-| [Mobile app that calls web APIs](/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
-| | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
+Authentication providers implement the code required to acquire a token using the Microsoft Authentication Library (MSAL), handle some potential errors for cases like incremental consent, expired passwords, and conditional access, and then set the HTTP request authorization header. The following table lists the providers that match the scenarios for different [application types](/azure/active-directory/develop/v2-app-types).
 
+| Scenario                                                                                               | Flow/Grant         | Audience               | Provider |
+|--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
+| [Single Page App](/azure/active-directory/develop/scenario-spa-acquire-token)                          | Authorization Code with PKCE | Delegated Consumer/Org | [Authorization code provider](#authorization-code-provider) |
+| [Web App that calls web APIs](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
+|                                                                                                        | Authorization Code | Delegated Consumer/Org | [Authorization code provider](#authorization-code-provider) |
+|                                                                                                        | Client Credentials | App Only               | [Client credentials provider](#client-credentials-provider) |
+| [Web API that calls web APIs](/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) |                    |                        |     |
+|                                                                                                        | On Behalf Of       | Delegated Consumer/Org | [On-behalf-of provider](#on-behalf-of-provider) |
+|                                                                                                        | Client Credentials | App Only               | [Client credentials provider](#client-credentials-provider) |
+| [Desktop app that calls web APIs](/azure/active-directory/develop/scenario-desktop-acquire-token)      |                    |                        |     |
+|                                                                                                        | Interactive        | Delegated Consumer/Org | [Interactive provider](#interactive-provider) |
+|                                                                                                        | Integrated Windows | Delegated Org          | [Integrated Windows provider](#integrated-windows-provider) |
+|                                                                                                        | Resource Owner     | Delegated Org          | [Username/password provider](#usernamepassword-provider) |
+|                                                                                                        | Device Code        | Delegated Org          | [Device code provider](#device-code-provider) |
+| [Daemon app](/azure/active-directory/develop/scenario-daemon-acquire-token)                            |                    |                        |     |
+|                                                                                                        | Client Credentials | App Only               | [Client credentials provider](#client-credentials-provider) |
+| [Mobile app that calls web APIs](/azure/active-directory/develop/scenario-mobile-acquire-token)        |                    |                        |     |
+|                                                                                                        | Interactive        | Delegated Consumer/Org | [Interactive provider](#interactive-provider) |
 
-## <a name="AuthCodeProvider" ></a>Authorization code provider
+> [!NOTE]
+> The following code snippets were written with the latest versions of their respective SDKs. If you encounter compiler errors with these snippets, make sure you have the latest versions. The following Azure Identity libraries provide the authentication providers used:
+>
+> - .NET developers need to add the [Azure.Identity](/dotnet/api/azure.identity) package.
+> - TypeScript and JavaScript developers need to add the [@azure/identity](/javascript/api/@azure/identity) library.
+> - Java and Android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme) library.
 
-The authorization code flow enables native and web apps to securely obtain tokens in the name of the user. To learn more, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+## Authorization code provider
 
-# [C#](#tab/CS)
+The authorization code flow enables native and web apps to obtain tokens in the user's name securely. To learn more, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-```csharp
-IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
-    .Create(clientId)
-    .WithRedirectUri(redirectUri)
-    .WithClientSecret(clientSecret) // or .WithCertificate(certificate)
-    .Build();
+### [C#](#tab/csharp)
 
-AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(confidentialClientApplication, scopes);
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="AuthorizationCodeSnippet":::
 
-# [Javascript](#tab/Javascript)
+### [Go](#tab/go)
 
-Authorization code, client credential, and on-behalf-of OAuth flows require that you implement a custom authentication provider at this time. For more information, see [Using a custom authentication provider](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md).
+The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) doesn't support the authorization code flow.
 
-# [Java](#tab/Java)
+### [Java](#tab/java)
 
-```java
-AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
-                                                    clientId,
-                                                    scopes,
-                                                    authorizationCode,
-                                                    redirectUri,
-                                                    clientSecret);
-```
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="AuthorizationCodeSnippet":::
 
-# [Android](#tab/Android)
+### [PHP](#tab/PHP)
 
-Not applicable.
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. In this case, [AuthorizationCodeContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/AuthorizationCodeContext.php).
 
-# [Objective-C](#tab/Objective-C)
+:::code language="php" source="./snippets/php/snippets/CreateClients.php" id="AuthorizationCodeSnippet":::
 
-Not applicable.
+### [Python](#tab/python)
 
-# [PHP](#tab/PHP)
+In the following example, we're using the asynchronous [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.authorizationcodecredential?view=azure-python&preserve-view=true) of this credential.
 
-Not yet available. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="AuthorizationCodeSnippet":::
 
-# [Ruby](#tab/Ruby)
+### [TypeScript](#tab/typescript)
 
-Not available, yet. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+### Using @azure/MSAL-browser for browser applications
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="BrowserSnippet":::
+
+### Using @azure/identity for server-side applications
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="AuthorizationCodeSnippet":::
 
 ---
 
-##  <a name="ClientCredentialsProvider"></a>Client credentials provider
+## Client credentials provider
 
 The client credential flow enables service applications to run without user interaction. Access is based on the identity of the application. For more information, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-# [C#](#tab/CS)
+### [C#](#tab/csharp)
 
-```csharp
-IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
-    .Create(clientId)
-    .WithTenantId(tenantID)
-    .WithClientSecret(clientSecret)
-    .Build();
+### Using a client certificate
 
-ClientCredentialProvider authProvider = new ClientCredentialProvider(confidentialClientApplication);
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="ClientCertificateSnippet":::
 
-# [Javascript](#tab/Javascript)
+### Using a client secret
 
-Authorization code, client credential, and on-behalf-of OAuth flows require that you implement a custom authentication provider at this time. For more information, see [Using a custom authentication provider](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md).
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="ClientSecretSnippet":::
 
-# [Java](#tab/Java)
+### [Go](#tab/go)
 
-```java
-ClientCredentialProvider authProvider = new ClientCredentialProvider(
-                                                    clientId,
-                                                    scopes,
-                                                    clientSecret,
-                                                    tenant,
-                                                    endpoint);
-```
+### Using a client certificate
 
-# [Android](#tab/Android)
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="ClientCertificateSnippet":::
 
-Not applicable.
+### Using a client secret
 
-# [Objective-C](#tab/Objective-C)
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="ClientSecretSnippet":::
 
-Not applicable.
+### [Java](#tab/java)
 
-# [PHP](#tab/PHP)
+### Using a client certificate
 
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientCertificateSnippet":::
 
-# [Ruby](#tab/Ruby)
+### Using a client secret
 
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientSecretSnippet":::
 
----
+### [PHP](#tab/PHP)
 
-##  <a name="OnBehalfOfProvider"></a>On-behalf-of provider
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. In this case, [ClientCredentialContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/ClientCredentialContext.php).
 
-The on-behalf-of flow is applicable when your application calls a service/web API which in turns calls the Microsoft Graph API. Learn more by reading [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+### Using a client certificate
 
-# [C#](#tab/CS)
+:::code language="php" source="./snippets/php/snippets/CreateClients.php" id="ClientCertificateSnippet":::
 
-```csharp
-IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
-    .Create(clientId)
-    .WithRedirectUri(redirectUri)
-    .WithClientSecret(clientSecret)
-    .Build();
+### Using a client secret
 
-OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientApplication, scopes);
-```
+:::code language="php" source="./snippets/php/snippets/CreateClients.php" id="ClientSecretSnippet":::
 
-# [Javascript](#tab/Javascript)
+### [Python](#tab/python)
 
-Authorization code, client credential, and on-behalf-of OAuth flows require that you implement a custom authentication provider at this time. Read [Using Custom Authentication Provider](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) for more information.
+### Using a client certificate
 
-# [Java](#tab/Java)
+In the following example, we're using the asynchronous [CertificateCredential](/python/api/azure-identity/azure.identity.aio.certificatecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.certificatecredential?view=azure-python&preserve-view=true) of this credential.
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientCertificateSnippet":::
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+### Using a client secret
 
-# [Android](#tab/Android)
+In the following example, we're using the asynchronous [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.clientsecretcredential?view=azure-python&preserve-view=true) of this credential.
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientSecretSnippet":::
 
-Not applicable.
+### [TypeScript](#tab/typescript)
 
-# [Objective-C](#tab/Objective-C)
+### Using a client certificate
 
-Not applicable.
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientCertificateSnippet":::
 
-# [PHP](#tab/PHP)
+### Using a client's secret
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
-
-# [Ruby](#tab/Ruby)
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientSecretSnippet":::
 
 ---
 
-## <a name="ImplicitProvider"></a>Implicit provider
+## On-behalf-of provider
 
-The implicit grant flow is used in browser-based applications. For more information, see [Microsoft identity platform and Implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
+The on-behalf-of flow is applicable when your application calls a service/web API, which calls the Microsoft Graph API. Learn more by reading [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
-# [C#](#tab/CS)
+### [C#](#tab/csharp)
 
-Not applicable.
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="OnBehalfOfSnippet":::
 
-# [Javascript](#tab/Javascript)
+### [Go](#tab/go)
 
-```javascript
-const clientId = "your_client_id"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
-// An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
-const options = {
-	redirectUri: "Your redirect URI",
-};
-const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="OnBehalfOfSnippet":::
 
-// Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
-const userAgentApplication = new Msal.UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MicrosoftGraph.ImplicitMSALAuthenticationProvider(userAgentApplication, graphScopes);
+### [Java](#tab/java)
 
-const options = {
-	authProvider, // An instance created from previous step
-};
-const Client = MicrosoftGraph.Client;
-const client = Client.initWithMiddleware(options);
-```
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="OnBehalfOfSnippet":::
 
-# [Java](#tab/Java)
+### [PHP](#tab/PHP)
 
-Not applicable.
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. In this case, [OnBehalfOfContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/OnBehalfOfContext.php).
 
-# [Android](#tab/Android)
+:::code language="php" source="./snippets/php/snippets/CreateClients.php" id="OnBehalfOfSnippet":::
 
-Not applicable.
+### [Python](#tab/python)
 
-# [Objective-C](#tab/Objective-C)
+In the following example, we're using the asynchronous [OnBehalfOfCredential](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.onbehalfofcredential?view=azure-python&preserve-view=true) of this credential.
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="OnBehalfOfSnippet":::
 
-Not applicable.
+### [TypeScript](#tab/typescript)
 
-# [PHP](#tab/PHP)
-
-Not applicable.
-
-# [Ruby](#tab/Ruby)
-
-Not applicable.
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="OnBehalfOfSnippet":::
 
 ---
 
-##  <a name="DeviceCodeProvider"></a>Device code provider
+## Implicit provider
 
-The device code flow enables sign in to devices by way of another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](/azure/active-directory/develop/v2-oauth2-device-code).
+Implicit Authentication flow isn't recommended due to its [disadvantages](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6). Public clients such as native apps and single-page apps should now use the authorization code flow with the PKCE extension instead. [Reference](https://oauth.net/2/grant-types/implicit/).
 
-# [C#](#tab/CS)
+## Device code provider
 
-```csharp
-IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
-            .Create(clientId)
-            .Build();
+The device code flow enables sign-in to devices through another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](/azure/active-directory/develop/v2-oauth2-device-code).
 
-Func<DeviceCodeResult, Task> deviceCodeReadyCallback = async dcr => await Console.Out.WriteLineAsync(dcr.Message);
+### [C#](#tab/csharp)
 
-DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, scopes, deviceCodeReadyCallback);
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
-# [Javascript](#tab/Javascript)
+### [Go](#tab/go)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
-# [Java](#tab/Java)
+### [Java](#tab/java)
 
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
 
-# [Android](#tab/Android)
+### [PHP](#tab/PHP)
 
-Not applicable.
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
-# [Objective-C](#tab/Objective-C)
+### [Python](#tab/python)
 
-Not applicable.
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
-# [PHP](#tab/PHP)
+### [TypeScript](#tab/typescript)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
-
-# [Ruby](#tab/Ruby)
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
 ---
 
-##  <a name="IntegratedWindowsProvider"></a>Integrated Windows provider
+## Integrated Windows provider
 
-The integrated Windows flow provides a way for Windows computers to silently acquire an access token when they are domain joined. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
+The integrated Windows flow allows Windows computers to use the Web Account Manager (WAM) to acquire an access token when domain-joined silently.
 
-# [C#](#tab/CS)
+> [!NOTE]
+> Authentication through WAM has specific requirements. See [Azure Identity Brokered Authentication client library for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/identity/Azure.Identity.Broker) for details.
 
-```csharp
-IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
-            .Create(clientId)
-            .WithTenantId(tenantID)
-            .Build();
+### [C#](#tab/csharp)
 
-IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuthenticationProvider(publicClientApplication, scopes);
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="IntegratedWindowsSnippet":::
 
-# [Javascript](#tab/Javascript)
+### [Go](#tab/go)
 
 Not applicable.
 
-# [Java](#tab/Java)
+### [Java](#tab/java)
 
 Not applicable.
 
-# [Android](#tab/Android)
+### [PHP](#tab/PHP)
 
 Not applicable.
 
-# [Objective-C](#tab/Objective-C)
+### [Python](#tab/python)
 
 Not applicable.
 
-# [PHP](#tab/PHP)
-
-Not applicable.
-
-# [Ruby](#tab/Ruby)
+### [TypeScript](#tab/typescript)
 
 Not applicable.
 
 ---
 
-##  <a name="InteractiveProvider"></a>Interactive provider
+## Interactive provider
 
-The interactive flow is used by mobile applications (Xamarin and UWP) and desktops applications to call Microsoft Graph in the name of a user. For details, see [Acquiring tokens interactively](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
+The interactive flow is used by mobile applications (Xamarin and UWP) and desktop applications to call Microsoft Graph in the name of a user. For details, see [Acquiring tokens interactively](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
-# [C#](#tab/CS)
+### [C#](#tab/csharp)
 
-```csharp
-IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
-            .Create(clientId)
-            .Build();
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="InteractiveSnippet":::
 
-InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(publicClientApplication, scopes);
-```
+### [Go](#tab/go)
 
-# [Javascript](#tab/Javascript)
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="InteractiveSnippet":::
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+### [Java](#tab/java)
 
-# [Java](#tab/Java)
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="InteractiveSnippet":::
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+### [PHP](#tab/PHP)
 
-# [Android](#tab/Android)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
-```java
-PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "CLIENT_ID_OF_YOUR_APPLICATION");
-MSALAuthenticationProvider msalAuthenticationProvider = new MSALAuthenticationProvider(
-    getActivity(),
-    getApplication(),
-    publicClientApplication,
-    scopes);
+### [Python](#tab/python)
 
-IGraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(msalAuthenticationProvider)
-    .buildClient();
-```
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="InteractiveSnippet":::
 
-# [Objective-C](#tab/Objective-C)
+### [TypeScript](#tab/typescript)
 
-```objc
-NSError *error = nil;
-MSALPublicClientApplication *publicClientApplication = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID"
-error:&error];
-
-MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProviderOptions alloc] initWithScopes:<array-of-scopes-for-which-you-need-access-token>];
-
- MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:publicClientApplication
- andOptions:authProviderOptions];
-```
-
-# [PHP](#tab/PHP)
-
-Not applicable.
-
-# [Ruby](#tab/Ruby)
-
-Not applicable.
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="InteractiveSnippet":::
 
 ---
 
-##  <a name="UsernamePasswordProvider"></a>Username/password provider
+## Username/password provider
 
-The username/password provider allows an application to sign in a user by using their username and password. Use this flow only when you cannot use any of the other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc)
+The username/password provider allows an application to sign in a user using their username and password.
 
+> [!NOTE]
+> Microsoft recommends that you use the most secure authentication flow available. The authentication flow described in this procedure requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows, such as managed identities, aren't viable. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc).
 
+### [C#](#tab/csharp)
 
-# [C#](#tab/CS)
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="UserNamePasswordSnippet":::
 
-```csharp
-IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
-            .Create(clientId)
-            .WithTenantId(tenantID)
-            .Build();
+### [Go](#tab/go)
 
-UsernamePasswordProvider authProvider = new UsernamePasswordProvider(publicClientApplication, scopes);
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="UserNamePasswordSnippet":::
 
-GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+### [Java](#tab/java)
 
-User me = await graphClient.Me.Request()
-                .WithUsernamePassword(email, password)
-                .GetAsync();
-```
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="UserNamePasswordSnippet":::
 
-# [Javascript](#tab/Javascript)
+### [PHP](#tab/PHP)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
-# [Java](#tab/Java)
+### [Python](#tab/python)
 
-```java
-UsernamePasswordProvider authProvider = new UsernamePasswordProvider(
-                                                    clientId,
-                                                    scopes,
-                                                    username,
-                                                    password);
-```
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="UserNamePasswordSnippet":::
 
-# [Android](#tab/Android)
+### [TypeScript](#tab/typescript)
 
-Not applicable.
-
-# [Objective-C](#tab/Objective-C)
-
-Not applicable.
-
-# [PHP](#tab/PHP)
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
-
-# [Ruby](#tab/Ruby)
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="UserNamePasswordSnippet":::
 
 ---
 
 ## Next steps
 
-* Authentication providers require an client ID. You'll want to [register your application](https://portal.azure.com/) after you set up your authentication provider.
-* Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+- For code samples that show you how to use the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
+- Authentication providers require a client ID. You'll want to [register your application](https://entra.microsoft.com/) after you set up your authentication provider.
+- Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://aka.ms/graphrequests).

@@ -1,10 +1,11 @@
 ---
 title: "Create groupPolicyMigrationReport"
 description: "Create a new groupPolicyMigrationReport object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create groupPolicyMigrationReport
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Create a new [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +51,7 @@ The following table shows the properties that are required when you create the g
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |groupPolicyObjectId|Guid|The Group Policy Object GUID from GPO Xml content|
 |displayName|String|The name of Group Policy Object from the GPO Xml Content|
 |ouDistinguishedName|String|The distinguished name of the OU.|
@@ -61,6 +64,7 @@ The following table shows the properties that are required when you create the g
 |totalSettingsCount|Int32|The total number of Group Policy Settings from GPO file.|
 |supportedSettingsCount|Int32|The number of Group Policy Settings supported by Intune.|
 |supportedSettingsPercent|Int32|The Percentage of Group Policy Settings supported by Intune.|
+|roleScopeTagIds|String collection|The list of scope tags for the configuration.|
 
 
 
@@ -74,7 +78,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports
 Content-type: application/json
-Content-length: 544
+Content-length: 606
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyMigrationReport",
@@ -87,7 +91,10 @@ Content-length: 544
   "targetedInActiveDirectory": true,
   "totalSettingsCount": 2,
   "supportedSettingsCount": 6,
-  "supportedSettingsPercent": 8
+  "supportedSettingsPercent": 8,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -96,7 +103,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 716
+Content-Length: 778
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyMigrationReport",
@@ -112,12 +119,9 @@ Content-Length: 716
   "targetedInActiveDirectory": true,
   "totalSettingsCount": 2,
   "supportedSettingsCount": 6,
-  "supportedSettingsPercent": 8
+  "supportedSettingsPercent": 8,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
-
-
-
-
-

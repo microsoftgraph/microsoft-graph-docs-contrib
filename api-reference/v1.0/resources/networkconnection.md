@@ -1,10 +1,11 @@
 ---
 title: "networkConnection resource type"
 description: "Contains stateful information about the network connection related to the alert."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "chinguyen1"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # networkConnection resource type
@@ -19,12 +20,12 @@ Contains stateful information about the network connection related to the alert.
 |:---------------|:--------|:----------|
 |applicationName|String|Name of the application managing the network connection (for example, Facebook or SMTP).|
 |destinationAddress|String|Destination IP address (of the network connection).|
-|destinationLocation|String|Location (by IP address mapping) associated with the destination of a network connection.|
 |destinationDomain|String|Destination domain portion of the destination URL. (for example 'www.contoso.com').|
+|destinationLocation|String|Location (by IP address mapping) associated with the destination of a network connection.|
 |destinationPort|String|Destination port (of the network connection).|
 |destinationUrl|String|Network connection URL/URI string - excluding parameters. (for example 'www.contoso.com/products/default.html')|
 |direction|connectionDirection|Network connection direction. Possible values are: `unknown`, `inbound`, `outbound`.|
-|domainRegisteredDateTime|DateTimeOffset|Date when the destination domain was registered. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|domainRegisteredDateTime|DateTimeOffset|Date when the destination domain was registered. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |localDnsName|String|The local DNS name resolution as it appears in the host's local DNS cache (for example, in case the 'hosts' file was tampered with).|
 |natDestinationAddress|String|Network Address Translation destination IP address.|
 |natDestinationPort|String|Network Address Translation destination port.|
@@ -40,7 +41,7 @@ Contains stateful information about the network connection related to the alert.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

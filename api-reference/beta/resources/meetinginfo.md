@@ -1,10 +1,11 @@
 ---
 title: "meetingInfo resource type"
-description: "Meeting information specified to create or join a meeting."
+description: "An abstract class that contains meeting-specific information."
 author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # meetingInfo resource type
@@ -13,23 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract class that contains meeting specific information.
- 
-To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) 
-in combination with the [chatInfo](./chatinfo.md), or just the
-the [tokenMeetingInfo](tokenmeetinginfo.md).
+An abstract class that contains meeting-specific information.
 
+To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) in combination with the [chatInfo](./chatinfo.md), the [tokenMeetingInfo](tokenmeetinginfo.md), or the [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md).
 
-## Derived types
+Base type of [organizerMeetingInfo](organizermeetinginfo.md), [tokenMeetingInfo](tokenmeetinginfo.md), and [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md).
 
-| Type                                                 | Description                                                         |
-|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| [organizerMeetingInfo](./organizermeetinginfo.md)    | Details about the organizer of the meeting                          |
-| [tokenMeetingInfo](tokenmeetinginfo.md)              | An encrypted token that contains the information about the meeting  |
+## Properties
+
+None.
+
+## Relationships
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -55,5 +55,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

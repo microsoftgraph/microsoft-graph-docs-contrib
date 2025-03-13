@@ -1,20 +1,21 @@
 ---
 title: "Use the Microsoft Graph API"
-description: "Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you register your app and get authentication tokens for a user or service, you can make requests to the Microsoft Graph API."
-author: "jackson-woods"
-localization_priority: Priority
+description: "Learn how to register your app and get authentication tokens for a user or service before you make requests to the Microsoft Graph API."
+ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Graph API
 
 Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth-register-app-v2.md) and [get authentication tokens for a user](auth-v2-user.md) or [service](auth-v2-service.md), you can make requests to the Microsoft Graph API.
 
-> **Important:**  How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer Guidance for Azure Active Directory Conditional Access](/azure/active-directory/develop/active-directory-conditional-access-developer).
+> [!IMPORTANT]
+> How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer guidance for Microsoft Entra Conditional Access](/azure/active-directory/develop/active-directory-conditional-access-developer).
 
 ## OData namespace
 
-The Microsoft Graph API defines most of its resources, methods, and enumerations in the OData namespace, `microsoft.graph`, in the [Microsoft Graph metadata](traverse-the-graph.md#microsoft-graph-api-metadata). A small number of API sets are defined in their sub-namespaces, such as the [call records API](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta) which defines resources like [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) in `microsoft.graph.callRecords`. 
+The Microsoft Graph API defines most of its resources, methods, and enumerations in the OData namespace, `microsoft.graph`, in the [Microsoft Graph metadata](traverse-the-graph.md#microsoft-graph-api-metadata). A small number of API sets are defined in their sub-namespaces, such as the [call records API](/graph/api/resources/callrecords-api-overview) which defines resources like [callRecord](/graph/api/resources/callrecords-callrecord) in `microsoft.graph.callRecords`. 
 
 Unless explicitly specified in the corresponding topic, assume types, methods, and enumerations are part of the `microsoft.graph` namespace.
 
@@ -35,27 +36,36 @@ The components of a request include:
 * [{version}](#version) - The version of the Microsoft Graph API your application is using.
 * [{resource}](#resource) - The resource in Microsoft Graph that you're referencing. 
 * [{query-parameters}](#query-parameters) - Optional OData query options or REST method parameters that customize the response.
+* [{headers}](#headers) - Request headers that customize the request. Can be optional or required depending on the API.
 
 After you make a request, a response is returned that includes: 
 
 * Status code - An HTTP status code that indicates success or failure. For details about HTTP error codes, see [Errors](errors.md).
 * Response message - The data that you requested or the result of the operation. The response message can be empty for some operations.
-* `nextLink` - If your request returns a lot of data, you need to page through it by using the URL returned in `@odata.nextLink`. For details, see [Paging](paging.md).
+* `@odata.nextLink` - If your request returns a lot of data, you need to page through it by using the URL returned in `@odata.nextLink`. For details, see [Paging](paging.md).
+* Response headers - Additional information about the response, such as the type of content returned and the request-id that you can use to correlate the response to the request.
 
 ## HTTP methods
 
-Microsoft Graph uses the HTTP method on your request to determine what your request is doing. The API supports the following methods.
+Microsoft Graph uses the HTTP method on your request to determine what your request is doing. Depending on the resource, the API may support operations including actions, functions, or CRUD operations described below.
 
 |**Method** |**Description**                             |
 | :----- | :------------------------------------------- |
 | GET    | Read data from a resource.                   |
 | POST   | Create a new resource, or perform an action. |
-| PATCH  | Update a resource with new values.           |
+| PATCH  | Update a resource with new values, or upsert a resource (create if resource doesn't exist, update otherwise). |
 | PUT    | Replace a resource with a new one.           |
 | DELETE | Remove a resource.                           |
 
 * For the CRUD methods `GET` and `DELETE`, no request body is required.
 * The `POST`, `PATCH`, and `PUT` methods require a request body, usually specified in JSON format, that contains additional information, such as the values for properties of the resource.
+
+> [!IMPORTANT]
+> Write requests in the Microsoft Graph API have a size limit of 4 MB. 
+>
+> In some cases, the actual write request size limit is lower than 4 MB. For example, attaching a file to a user event by `POST /me/events/{id}/attachments` has a request size limit of 3 MB, because a file around 3.5 MB can become larger than 4 MB when encoded in base64.
+>
+> Requests exceeding the size limit fail with the status code HTTP 413, and the error message "Request entity too large" or "Payload too large".
 
 ## Version
 
@@ -64,7 +74,7 @@ Microsoft Graph currently supports two versions: `v1.0` and `beta`.
 * `v1.0` includes generally available APIs. Use the v1.0 version for all production apps.
 * `beta` includes APIs that are currently in preview. Because we might introduce breaking changes to our beta APIs, we recommend that you use the beta version only to test apps that are in development; do not use beta APIs in your production apps.
 
-We are always looking for feedback on our beta APIs. To provide feedback or request features, see our [UserVoice](https://officespdev.uservoice.com/) page.
+We are always looking for feedback on our beta APIs. To provide feedback or request features, see our [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 For more information about API versions, see [Versioning and support](versioning-and-support.md).
 
@@ -104,11 +114,19 @@ Aside from OData query options, some methods require parameter values specified 
 GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:00.0000000&endDateTime=2019-09-01T17:00:00.0000000
 ```
 
+## Headers
+
+Microsoft Graph supports both HTTP standard headers and custom headers.
+
+Specific APIs may require additional headers to be included in the request. On the other hand, Microsoft Graph will always return mandatory headers, such as the `request-id` header in the response, or some headers may be specific to some APIs or functionality, for example, the `Retry-After` header is included when your app hits throttling limits; or the `Location` header that's included for long-running operations.
+
+Headers are case-insensitive as defined in [rfc 9110](https://www.rfc-editor.org/rfc/rfc9110.html) unless explicitly specified otherwise.
+
 ## Tools for interacting with Microsoft Graph
 
 ### Graph Explorer
 
-Graph Explorer is a web-based tool that you can use to build and test requests using Microsoft Graph APIs. You can access Graph Explorer at: `https://developer.microsoft.com/graph/graph-explorer`.
+Graph Explorer is a web-based tool that you can use to build and test requests using Microsoft Graph APIs. You can access Graph Explorer at: [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 You can either access demo data without signing in, or you can sign in to a tenant of your own. Use the following steps to build the request:
 
@@ -127,9 +145,9 @@ A status code and message are displayed after a request is sent and the response
 
 ### Postman
 
-Postman is a tool that you can use to build and test requests using the Microsoft Graph APIs. You can download Postman at: `https://www.getpostman.com/`. To interact with Microsoft Graph in Postman, you use the Microsoft Graph collection.
+Postman is a tool that you can use to build and test requests using the Microsoft Graph APIs. You can download Postman at: [https://www.getpostman.com/](https://www.getpostman.com/). To interact with Microsoft Graph in Postman, you use the Microsoft Graph collection.
 
-For more information, see [Use Postman with the Microsoft Graph API](./use-postman.md?context=graph%252fapi%252fbeta&view=graph-rest-beta).
+For more information, see [Use Postman with the Microsoft Graph API](./use-postman.md).
 
 ## Next steps
 

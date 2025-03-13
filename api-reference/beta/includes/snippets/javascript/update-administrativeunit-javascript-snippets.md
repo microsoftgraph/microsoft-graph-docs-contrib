@@ -11,12 +11,13 @@ const options = {
 const client = Client.init(options);
 
 const administrativeUnit = {
-  displayName: "displayName-value",
-  description: "description-value",
-  visibility: "visibility-value"
+    displayName: 'Executive Division',
+    membershipType: 'Dynamic',
+    membershipRule: '(user.country -eq \"United States\")',
+    membershipRuleProcessingState: 'On'
 };
 
-let res = await client.api('/administrativeUnits/{id}')
+await client.api('/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8')
 	.version('beta')
 	.update(administrativeUnit);
 

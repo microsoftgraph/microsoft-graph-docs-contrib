@@ -4,14 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PlannerPlan plannerPlan = new PlannerPlan();
-plannerPlan.owner = "ebf3b108-5234-4e22-b93d-656d7dae5874";
-plannerPlan.title = "title-value";
+PlannerPlanContainer container = new PlannerPlanContainer();
+container.setUrl("https://graph.microsoft.com/v1.0/groups/ebf3b108-5234-4e22-b93d-656d7dae5874");
+plannerPlan.setContainer(container);
+plannerPlan.setTitle("title-value");
+PlannerPlan result = graphClient.planner().plans().post(plannerPlan);
 
-graphClient.planner().plans()
-	.buildRequest()
-	.post(plannerPlan);
 
 ```

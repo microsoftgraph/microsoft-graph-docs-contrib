@@ -1,47 +1,100 @@
 ---
-author: JeremyKelley
-description: "This resource represents an item in a SharePoint list."
-ms.date: 09/11/2017
-title: ListItem
-localization_priority: Normal
-ms.prod: "sharepoint"
+author: "spgraph-docs-team"
+description: "Represents an item in a SharePoint list."
+title: listItem resource type
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 10/10/2024
 ---
-# ListItem resource
+
+# listItem resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource represents an item in a SharePoint **[list][]**.
+Represents an item in a SharePoint [list][].
+
+All items in a SharePoint document library can be represented as a **listItem** or [driveItem][] resource.
+
 Column values in the list are available through the `fieldValueSet` dictionary.
 
-## Tasks on a listItem
+## Methods
 
 The following tasks are available for **listItem** resources.
-All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
+All examples are relative to a **[list][]**; for example, `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
 
-| Common task                    | HTTP method
-|:-------------------------------|:------------------------
-| [Get][]                        | GET /items/{item-id}
-| [Get column values][Get]       | GET /items/{item-id}?expand=fields
-| [Get analytics][]              | GET /items/{item-id}/analytics
-| [Get activities by interval][] | GET /items/{item-id}/getActivitiesByInterval
-| [Create][]                     | POST /items
-| [Delete][]                     | DELETE /items/{item-id}
-| [Update][]                     | PATCH /items/{item-id}
-| [Update column values][Update] | PATCH /items/{item-id}/fields
+| Method                                                                   | Return Type                        | Description                                                               |
+|:-------------------------------------------------------------------------|:-----------------------------------|:--------------------------------------------------------------------------|
+| [List](../api/listitem-list.md)                                          | listItem collection                | Get the collection of items in a list.                                    |
+| [Create][]                                                               | listItem                           | Create a new listItem in a list.                                          |
+| [Get][]                                                                  | listItem                           | Get an item in a list.                                                    |
+| [Update][]                                                               | [fieldValueSet][]                  | Update the properties on a listItem.                                      |
+| [Delete][]                                                               | No Content                         | Removes an item from a list.                                              |
+| [Get analytics][]                                                        | [itemAnalytics][]                  | Get analytics for this resource.                                          |
+| [Get column values][Get]                                                 | listItem                           | Get column values from listItem.                                          |
+| [Update column values][Update]                                           | [fieldValueSet][]                  | Update column values on a listItem.                                       |
+| [List document set version](../api/listitem-list-documentsetversions.md)  | [documentSetVersion][] collection  | Get a list of the versions of a document set item in a list.              |
+| [Create document set version](../api/listitem-post-documentsetversions.md) | [documentSetVersion][]             | Create a new version of a document set item in a list.                    |
+| [Restore document set version](../api/documentsetversion-restore.md)       | No Content                         | Restore the document set item to a specific version.                      |
+| [Get delta](../api/listitem-delta.md) | [listItem](../resources/listitem.md) collection | Get newly created, updated, or deleted [list items](../resources/listitem.md) without having to perform a full read of the entire items collection. |
+| [List permissions](../api/listitem-list-permissions.md)| [permission](../resources/permission.md) |Get a list of the [permission](../resources/permission.md) objects associated with a [listItem](../resources/listitem.md).|
+| [Create permission](../api/listitem-post-permissions.md)| [permission](../resources/permission.md) |Create a new [permission](../resources/permission.md) object on a [listItem](../resources/listitem.md).|
+| [Get permission](../api/listitem-get-permissions.md)| [permission](../resources/permission.md) |Get a list of the [permission](../resources/permission.md) objects associated with a [listItem](../resources/listitem.md).|
+| [Update permission](../api/listitem-update-permissions.md)| [permission](../resources/permission.md) |Update a [permission](../resources/permission.md) object on a [listItem](../resources/listitem.md).|
+| [Delete permission](../api/listitem-delete-permissions.md)| None |Delete a [permission](../resources/permission.md) object on a [listItem](../resources/listitem.md).|
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
-[Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
+[itemActivityStat]: itemactivitystat.md
+[fieldValueSet]: fieldvalueset.md
+[documentSetVersion]: documentsetversion.md
+
+## Properties
+
+The **listItem** resource has the following properties.
+
+| Property    | Type                | Description                        |
+| :---------- | :------------------ | :--------------------------------- |
+| contentType | [contentTypeInfo][] | The content type of this list item |
+
+The following properties are inherited from **[baseItem][]**.
+
+| Property name        | Type              | Description                                                              |
+| :------------------- | :---------------- | :----------------------------------------------------------------------- |
+| id                   | string            | The unique identifier of the item. Read-only.                            |
+| name                 | string            | The name / title of the item.                                            |
+| createdBy            | [identitySet][]   | Identity of the creator of this item. Read-only.                         |
+| createdDateTime      | DateTimeOffset    | The date and time the item was created. Read-only.                       |
+| description          | string            | The descriptive text for the item.                                       |
+| eTag                 | string            | ETag for the item. Read-only.                                            |
+| lastModifiedBy       | [identitySet][]   | Identity of the last modifier of this item. Read-only.                   |
+| lastModifiedDateTime | DateTimeOffset    | The date and time the item was last modified. Read-only.                 |
+| parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.                |
+| sharepointIds        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only. |
+| webUrl               | string (url)      | URL that displays the item in the browser. Read-only.                    |
+
+## Relationships
+
+ The **listItem** resource has the following relationships to other resources.
+
+| Relationship | Type                           | Description                                                                                        |
+| :----------- | :----------------------------- | :------------------------------------------------------------------------------------------------- |
+| activities   | [itemActivity][] collection    | The list of recent activities that took place on this item.                                        |
+| analytics    | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.|
+|documentSetVersions|[documentSetVersion](../resources/documentsetversion.md) collection| Version information for a document set version created by a user.|
+| driveItem    | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]** |
+| fields       | [fieldValueSet][]              | The values of the columns set on this list item.                                                   |
+| permissions  | [permission](permission.md) collection | The set of permissions for the item. Read-only. Nullable.                                          |
+| versions     | [listItemVersion][] collection | The list of previous versions of the list item.                                                    |
 
 ## JSON representation
 
-Here is a JSON representation of a **listItem** resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -59,6 +112,7 @@ Here is a JSON representation of a **listItem** resource.
   /* relationships */
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "documentSetVersions": [{"@odata.type": "microsoft.graph.documentSetVersion"}],
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
@@ -75,42 +129,6 @@ Here is a JSON representation of a **listItem** resource.
   "webUrl": "url"
 }
 ```
-
-## Properties
-
-The **listItem** resource has the following properties.
-
-| Property name | Type                | Description
-|:--------------|:--------------------|:-------------------------------
-| contentType   | [contentTypeInfo][] | The content type of this list item
-
-The following properties are inherited from **[baseItem][]**.
-
-| Property name        | Type              | Description
-|:---------------------|:------------------|:----------------------------------
-| id                   | string            | The unique identifier of the item. Read-only.
-| name                 | string            | The name / title of the item.
-| createdBy            | [identitySet][]   | Identity of the creator of this item. Read-only.
-| createdDateTime      | DateTimeOffset    | The date and time the item was created. Read-only.
-| description          | string            | The descriptive text for the item.
-| eTag                 | string            | ETag for the item. Read-only.                                                          |
-| lastModifiedBy       | [identitySet][]   | Identity of the last modifier of this item. Read-only.
-| lastModifiedDateTime | DateTimeOffset    | The date and time the item was last modified. Read-only.
-| parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.
-| sharepointIds        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-| webUrl               | string (url)      | URL that displays the item in the browser. Read-only.
-
-## Relationships
-
- The **listItem** resource has the following relationships to other resources.
-
-| Relationship name | Type                           | Description
-|:------------------|:-------------------------------|:-------------------------------
-| activities        | [itemActivity][] collection    | The list of recent activities that took place on this item.
-| analytics         | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.
-| driveItem         | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**
-| fields            | [fieldValueSet][]              | The values of the columns set on this list item.
-| versions          | [listItemVersion][] collection | The list of previous versions of the list item.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -137,5 +155,3 @@ The following properties are inherited from **[baseItem][]**.
   "suppressions": []
 }
 -->
-
-

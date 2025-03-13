@@ -1,10 +1,11 @@
 ---
 title: "numberRange resource type"
 description: "Number Range definition."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # numberRange resource type
@@ -40,9 +41,3 @@ Here is a JSON representation of the resource.
   "upperNumber": 1024
 }
 ```
-
-
-
-
-
-

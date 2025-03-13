@@ -1,10 +1,11 @@
 ---
 title: "Create windowsUpdateState"
 description: "Create a new windowsUpdateState object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create windowsUpdateState
@@ -17,7 +18,9 @@ Namespace: microsoft.graph
 
 Create a new [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -42,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -112,12 +115,3 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
-
-
-
-
-
-
-
-

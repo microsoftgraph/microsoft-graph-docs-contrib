@@ -4,32 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var alert = new Alert
+// Dependencies
+using Microsoft.Graph.Beta.Models.HealthMonitoring;
+
+var requestBody = new Alert
 {
-	AssignedTo = "String",
-	ClosedDateTime = DateTimeOffset.Parse("String (timestamp)"),
-	Comments = new List<String>()
-	{
-		"String"
-	},
-	Feedback = AlertFeedback.Unknown,
-	Status = AlertStatus.Unknown,
-	Tags = new List<String>()
-	{
-		"String"
-	},
-	VendorInformation = new SecurityVendorInformation
-	{
-		Provider = "String",
-		Vendor = "String"
-	}
+	State = AlertState.Resolved,
 };
 
-await graphClient.Security.Alerts["{alert_id}"]
-	.Request()
-	.Header("Prefer","return=representation")
-	.UpdateAsync(alert);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Reports.HealthMonitoring.Alerts["{alert-id}"].PatchAsync(requestBody);
+
 
 ```

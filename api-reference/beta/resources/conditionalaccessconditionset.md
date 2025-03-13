@@ -1,10 +1,12 @@
 ---
 title: "conditionalAccessConditionSet resource type"
 description: "Represents the type of conditions that govern when the policy applies."
-localization_priority: Normal
-author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 05/15/2024
 ---
 
 # conditionalAccessConditionSet resource type
@@ -20,22 +22,18 @@ Represents the type of conditions that govern when the policy applies.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Applications and user actions included in and excluded from the policy. Required. |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Required. |
-|clientAppTypes|String collection| Client application types included in the policy. Possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
-|deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Device states in the policy. |
+|authenticationFlows|[conditionalAccessAuthenticationFlows](conditionalaccessauthenticationflows.md)| Authentication flows included in the policy scope. For more information, see [Conditional Access: Authentication flows](/entra/identity/conditional-access/concept-authentication-flows). |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Either **users** or **clientApplications** is required. |
+|clientApplications|[conditionalAccessClientApplications](../resources/conditionalaccessclientapplications.md)|Client applications (service principals and workload identities) included in and excluded from the policy. Either **users** or **clientApplications** is required. |
+|clientAppTypes|conditionalAccessClientApp collection| Client application types included in the policy. Possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Required. <br/><br/> The `easUnsupported` enumeration member is deprecated in favor of `exchangeActiveSync`, which includes EAS supported and unsupported platforms.|
+|deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Device states in the policy. To be deprecated and removed. Use the **devices** property instead. |
 |devices|[conditionalAccessDevices](conditionalaccessdevices.md)| Devices in the policy. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy. |
 |platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy. |
-|signInRiskLevels|String collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
-|userRiskLevels|String collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
-
->**Note:** 
-
->**clientAppType** `modern` is going to be deprecated and replaced by `mobileAppsAndDesktopClients`. 
-
->**clientAppType** `easUnsupported` is going to be deprecated in favor of `exchangeActiveSync` which includes EAS supported and unsupported platforms. 
-
->We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use **devices** condition.
+|servicePrincipalRiskLevels|riskLevel collection| Service principal risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`, `unknownFutureValue`.|
+|signInRiskLevels|riskLevel collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
+|userRiskLevels|riskLevel collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
+|insiderRiskLevels|conditionalAccessInsiderRiskLevels| Insider risk levels included in the policy. The possible values are: `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -43,7 +41,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -53,7 +51,8 @@ The following is a JSON representation of the resource.
     "devices",
     "locations",
     "platforms",
-    "signInRiskLevels"
+    "signInRiskLevels",
+    "authenticationFlows"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessConditionSet",
   "baseType": null
@@ -61,14 +60,19 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
   "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
+  "clientApplications": {"@odata.type": "microsoft.graph.conditionalAccessClientApplications"},
   "clientAppTypes": ["String"],
   "deviceStates": {"@odata.type": "microsoft.graph.conditionalAccessDeviceStates"},
   "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
-  "signInRiskLevels": ["String"]
+  "servicePrincipalRiskLevels": ["String"],
+  "signInRiskLevels": ["String"],
+  "authenticationFlows": {"@odata.type": "microsoft.graph.conditionalAccessAuthenticationFlows"},
+  "insiderRiskLevels": "String"
 }
 ```
 
@@ -81,5 +85,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-int index = 3;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<Json> valuesList = new LinkedList<Json>();
-Json values = new Json();
+com.microsoft.graph.drives.item.items.item.workbook.tables.item.columns.add.AddPostRequestBody addPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.tables.item.columns.add.AddPostRequestBody();
+addPostRequestBody.setIndex(3);
+LinkedList<UntypedNode> values = new LinkedList<UntypedNode>();
+UntypedNode  = new UntypedNode();
+values.add();
+addPostRequestBody.setValues(values);
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().tables().byWorkbookTableId("{workbookTable-id}").columns().add().post(addPostRequestBody);
 
-valuesList.add(values);
-
-graphClient.me().drive().items("{id}").workbook().tables("{id|name}").columns()
-	.add(index,values,null)
-	.buildRequest()
-	.post();
 
 ```

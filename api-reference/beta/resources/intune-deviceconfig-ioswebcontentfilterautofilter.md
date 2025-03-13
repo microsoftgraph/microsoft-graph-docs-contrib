@@ -1,10 +1,11 @@
 ---
 title: "iosWebContentFilterAutoFilter resource type"
 description: "Represents an iOS Web Content Filter setting type, which enables iOS automatic filter feature and allows for additional URL access control. When constructed with no property values, the iOS device will enable the automatic filter regardless."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # iosWebContentFilterAutoFilter resource type
@@ -47,9 +48,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

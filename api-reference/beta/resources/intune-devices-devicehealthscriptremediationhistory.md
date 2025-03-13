@@ -1,10 +1,11 @@
 ---
 title: "deviceHealthScriptRemediationHistory resource type"
 description: "The number of devices remediated by a device health script on a given date with the last modified time."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceHealthScriptRemediationHistory resource type
@@ -42,14 +43,9 @@ Here is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.deviceHealthScriptRemediationHistoryData",
       "date": "String (Date)",
       "remediatedDeviceCount": 1024,
-      "noIssueDeviceCount": 1024
+      "noIssueDeviceCount": 1024,
+      "detectFailedDeviceCount": 1024
     }
   ]
 }
 ```
-
-
-
-
-
-

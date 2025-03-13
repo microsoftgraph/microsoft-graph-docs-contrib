@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementSettingIntegerConstraint resource type"
 description: "Constraint enforcing the permitted value range for an integer setting"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementSettingIntegerConstraint resource type
@@ -43,9 +44,3 @@ Here is a JSON representation of the resource.
   "maximumValue": 1024
 }
 ```
-
-
-
-
-
-

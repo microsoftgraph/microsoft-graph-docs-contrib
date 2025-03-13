@@ -1,10 +1,11 @@
 ---
 title: "bookingNamedEntity resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
-localization_priority: Normal
+description: "A base type for Microsoft Bookings entities that provide a display name, for example, bookingBusiness, bookingPerson, bookingService."
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # bookingNamedEntity resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-This is a base type for Microsoft Bookings entities that provide a display name, for example, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).
+A base type for Microsoft Bookings entities that provide a display name, for example, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md), [bookingCustomQuestion](bookingcustomquestion.md).
 
 ## Properties
 | Property	   | Type	|Description|
@@ -27,7 +28,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

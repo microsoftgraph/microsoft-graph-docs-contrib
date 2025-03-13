@@ -1,10 +1,11 @@
 ---
 title: "List deviceCategories"
 description: "List properties and relationships of the deviceCategory objects."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List deviceCategories
@@ -16,7 +17,7 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [deviceCategory](../resources/intune-shared-devicecategory.md) objects.
-## Prerequisites
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -26,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application||
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {
@@ -40,7 +43,7 @@ GET /deviceManagement/deviceCategories
 
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -81,15 +84,3 @@ Content-Length: 233
   ]
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

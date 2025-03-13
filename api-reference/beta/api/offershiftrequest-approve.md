@@ -1,10 +1,11 @@
 ---
 title: "offerShiftRequest: approve"
 description: "Approve an offershiftrequest object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # offerShiftRequest: approve
@@ -17,13 +18,10 @@ Approve an [offershiftrequest](../resources/offershiftrequest.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Schedule.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "offershiftrequest_approve" } -->
+[!INCLUDE [permissions-table](../includes/permissions/offershiftrequest-approve-permissions.md)]
 
 ## HTTP request
 
@@ -37,8 +35,9 @@ POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
@@ -50,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -72,28 +71,18 @@ Content-type: application/json
   "message": "Approved!"
 }
 ```
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-approve-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/offershiftrequest-approve-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/offershiftrequest-approve-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### Response
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

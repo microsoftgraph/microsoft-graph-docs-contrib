@@ -1,10 +1,11 @@
 ---
 title: "edgeKioskModeRestrictionType enum type"
 description: "Specify how the Microsoft Edge settings are restricted based on kiosk mode."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # edgeKioskModeRestrictionType enum type
@@ -25,9 +26,3 @@ Specify how the Microsoft Edge settings are restricted based on kiosk mode.
 |normalMode|2|Normal mode (full version of Microsoft Edge).|
 |publicBrowsingSingleApp|3|Public browsing in single-app mode.|
 |publicBrowsingMultiApp|4|Public browsing (inPrivate) in multi-app mode.|
-
-
-
-
-
-

@@ -1,17 +1,20 @@
 ---
-title: "customAction resource type"
-description: "Represents any custom actions that a label may provide, if configured by the administrator."
-localization_priority: Normal
+title: "customAction resource type (deprecated)"
+description: "Represents any custom actions that a label may provide, if configured by the administrator. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 03/21/2024
 ---
 
-# customAction resource type
+# customAction resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Represents any custom actions that a label may provide, if configured by the administrator. Custom actions might be defined as part of an [informationProtectionLabel](informationProtectionLabel.md) via Office 365 Security and Compliance Center's PowerShell module. The actions must be understood by the consuming application.
 
@@ -24,7 +27,7 @@ Represents any custom actions that a label may provide, if configured by the adm
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -1,10 +1,11 @@
 ---
 title: "Create bookingCustomer"
 description: "Create a new bookingCustomer object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 04/19/2024
 ---
 
 # Create bookingCustomer
@@ -14,68 +15,117 @@ Namespace: microsoft.graph
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [bookingCustomer](../resources/bookingcustomer.md) object.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "bookingbusiness_post_customers" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingbusiness-post-customers-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/customers
+POST /solutions/bookingbusinesses/{id}/customers
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [bookingCustomer](../resources/bookingcustomer.md) object.
+In the request body, supply a JSON representation of a [bookingCustomer](../resources/bookingcustomer.md) object.
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
 
 ## Example
-##### Request
-The following is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_bookingcustomer_from_bookingbusiness"
+  "name": "create_bookingcustomer_from_bookingbusiness",
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customers
 Content-type: application/json
 
 {
     "displayName": "Joni Sherman",
-    "emailAddress": "jonis@relecloud.com"
+    "emailAddress": "jonis@relecloud.com",
+    "addresses": [
+        {
+            "postOfficeBox":"",
+            "street":"4567 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "type":"home"
+        },
+        {
+            "postOfficeBox":"",
+            "street":"4570 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98054",
+            "type":"business"
+        }
+    ],
+    "phones": [
+        {
+            "number": "206-555-0100",
+            "type": "home"
+        },
+        {
+            "number": "206-555-0200",
+            "type": "business"
+        }
+     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bookingcustomer-from-bookingbusiness-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-bookingcustomer-from-bookingbusiness-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-bookingcustomer-from-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-bookingcustomer-from-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-bookingcustomer-from-bookingbusiness-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-bookingcustomer-from-bookingbusiness-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-bookingcustomer-from-bookingbusiness-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-bookingcustomer-from-bookingbusiness-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-In the request body, supply a JSON representation of [bookingCustomer](../resources/bookingcustomer.md) object.
-##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,10 +136,40 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/customers/$entity",
     "id": "36038f36-634e-44e4-9415-d7d59c2347aa",
     "displayName": "Joni Sherman",
-    "emailAddress": "jonis@relecloud.com"
+    "emailAddress": "jonis@relecloud.com",
+    "addresses": [
+        {
+            "postOfficeBox":"",
+            "street":"4567 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "type":"home"
+        },
+        {
+            "postOfficeBox":"",
+            "street":"4570 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98054",
+            "type":"business"
+        }
+    ],
+    "phones": [
+        {
+            "number": "206-555-0100",
+            "type": "home"
+        },
+        {
+            "number": "206-555-0200",
+            "type": "business"
+        }
+     ]
 }
 ```
 

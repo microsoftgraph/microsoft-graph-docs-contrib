@@ -221,29 +221,29 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
+      "feedback_system": "Standard",
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
-      "extendBreadcrumb": true,
+      "feedback_github_repo": "microsoftgraph/microsoft-graph-docs-contrib",
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
       "ms.suite": "microsoft-graph",
-      "ms.prod": "non-product-specific",
+      "ms.subservice": "non-product-specific",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "searchScope": ["graph"],
-      "toc_preview": true
+      "toc_preview": true,
+      "recommendations": false
     },
     "fileMetadata": {
       "breadcrumb_path": {
-        "v1.0/**": "/graph/ref-breadcrumb/toc.json?view=graph-rest-1.0",
-        "beta/**": "/graph/ref-breadcrumb/toc.json?view=graph-rest-beta"
+        "v1.0/**": "/graph/breadcrumb/toc.json",
+        "beta/**": "/graph/breadcrumb/toc.json"
       },
       "monikerRange": {
         "v1.0/**": "graph-rest-1.0",
         "beta/**": "graph-rest-beta"
       },
       "feedback_system": {},
-      "ms.technology": {
+      "ms.service": {
         "v1.0/api/*.md": "microsoft-graph",
         "beta/api/*.md": "microsoft-graph",
         "v1.0/resources/*.md": "microsoft-graph",

@@ -1,10 +1,11 @@
 ---
 title: "macOSCustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSCustomConfiguration resource."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # macOSCustomConfiguration resource type
@@ -72,12 +73,3 @@ Here is a JSON representation of the resource.
   "payload": "binary"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "mdmSupportedState enum type"
 description: "Mdm Support Status of the setting."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # mdmSupportedState enum type
@@ -24,9 +25,3 @@ Mdm Support Status of the setting.
 |supported|1|Setting is supported.|
 |unsupported|2|Setting is unsupported.|
 |deprecated|3|Setting is depcrecated.|
-
-
-
-
-
-

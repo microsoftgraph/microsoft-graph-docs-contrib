@@ -1,10 +1,11 @@
 ---
 title: "Get eventMessage"
 description: "expand parameter on the **event** navigation property to get the associated event in an attendee's calendar."
-localization_priority: Normal
-author: "harini84"
-ms.prod: "outlook"
+ms.localizationpriority: medium
+author: "iamgirishck"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get eventMessage
@@ -15,9 +16,11 @@ Get the properties and relationships of the [eventMessage](../resources/eventmes
 
 Currently, this operation returns event message bodies in only HTML format.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Mail.Read    |
@@ -38,10 +41,10 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,32 +59,49 @@ The first example shows how to get the properties of an event message based on t
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["AAMkADYAAAImV_lAAA="],
+  "sampleKeys": ["AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA="],
   "name": "get_eventmessage"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA=
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-eventmessage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-eventmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-eventmessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-eventmessage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-eventmessage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -127,20 +147,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.onmicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -158,40 +178,57 @@ Content-type: application/json
 
 ### Example 2
 #### Request
-The second example shows how to get the event associated with an event message. It uses 
-the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, 
+The second example shows how to get the event associated with an event message. It uses
+the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property,
 and apply an $expand parameter to get the properties of the event.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["AAMkADYAAAImV_jAAA="],
+  "sampleKeys": ["AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA="],
   "name": "get_event_based_on_eventmessage"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA=?$expand=microsoft.graph.eventMessage/event
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-based-on-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-event-based-on-eventmessage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-event-based-on-eventmessage-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-event-based-on-eventmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-event-based-on-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-event-based-on-eventmessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-event-based-on-eventmessage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-event-based-on-eventmessage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-Here is an example of the response. The properties of the associated event are returned in the response. 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. The properties of the associated event are returned in the response.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
@@ -237,20 +274,20 @@ Content-type: application/json
    "sender":{
       "emailAddress":{
          "name":"Administrator",
-         "address":"admin@contoso.onmicrosoft.com"
+         "address":"admin@contoso.com"
       }
    },
    "from":{
       "emailAddress":{
          "name":"Administrator",
-         "address":"admin@contoso.onmicrosoft.com"
+         "address":"admin@contoso.com"
       }
    },
    "toRecipients":[
       {
          "emailAddress":{
             "name":"Alex Wilber",
-            "address":"AlexW@contoso.onmicrosoft.com"
+            "address":"AlexW@contoso.com"
          }
       }
    ],
@@ -263,7 +300,6 @@ Content-type: application/json
    "replyTo":[
 
    ],
-   "event@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages('AAMkADYAAAImV_jAAA%3D')/microsoft.graph.eventMessage/event/$entity",
    "event":{
       "@odata.etag":"W/\"V5Qf0i9DeEOoOqPo0mABLgAACJpBWg==\"",
       "id":"AAMkADYAAAImVu6AAA=",
@@ -321,7 +357,7 @@ Content-type: application/json
             },
             "emailAddress":{
                "name":"Administrator",
-               "address":"admin@contoso.onmicrosoft.com"
+               "address":"admin@contoso.com"
             }
          },
          {
@@ -332,19 +368,19 @@ Content-type: application/json
             },
             "emailAddress":{
                "name":"Alex Wilber",
-               "address":"AlexW@contoso.onmicrosoft.com"
+               "address":"AlexW@contoso.com"
             }
          }
       ],
       "organizer":{
          "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
          }
       }
    }
 }
-``` 
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,10 +1,11 @@
 ---
 title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "harini84"
+ms.subservice: "entra-id-governance"
+author: "iamgirishck"
+ms.date: 07/23/2024
 ---
 
 # patternedRecurrence resource type
@@ -13,17 +14,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The recurrence pattern and range.
+The recurrence pattern and range. This shared object is used to define the recurrence of [access reviews](accessreviewscheduledefinition.md), [calendar events](event.md), and [access package assignments](accesspackageassignment.md) in Microsoft Entra ID.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event.|
+|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. Do not specify for a one-time access review. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li>  Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](recurrencepattern.md) are supported.|
 |range|[recurrenceRange](recurrencerange.md)|The duration of an event.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -53,5 +58,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

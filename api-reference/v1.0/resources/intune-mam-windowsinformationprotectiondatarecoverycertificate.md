@@ -1,10 +1,11 @@
 ---
 title: "windowsInformationProtectionDataRecoveryCertificate resource type"
 description: "Windows Information Protection DataRecoveryCertificate"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windowsInformationProtectionDataRecoveryCertificate resource type
@@ -42,12 +43,3 @@ Here is a JSON representation of the resource.
   "certificate": "binary"
 }
 ```
-
-
-
-
-
-
-
-
-

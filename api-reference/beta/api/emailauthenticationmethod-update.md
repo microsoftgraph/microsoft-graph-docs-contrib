@@ -1,10 +1,12 @@
 ---
 title: "Update emailAuthenticationMethod"
 description: "Update the properties of an emailAuthenticationMethod object."
-author: "mmcla"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "tilarso"
+ms.reviewer: intelligentaccesspm
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/01/2024
 ---
 
 # Update emailAuthenticationMethod
@@ -14,36 +16,31 @@ Namespace: microsoft.graph
 
 Update a user's email address associated with an [email Authentication Method](../resources/emailauthenticationmethod.md) object.
 
+Self-service operations aren't supported.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
-|:---|:---|:--|
-|Delegated (work or school account)|Not supported.|UserAuthenticationMethod.ReadWrite.All
-|Delegated (personal Microsoft account)|Not supported.|Not supported.
-|Application|Not supported.|Not supported.
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+[!INCLUDE [permissions-table](../includes/permissions/emailauthenticationmethod-update-permissions.md)]
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Global admin
-* Global reader
-* Privileged authentication admin
-* Authentication admin
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
+The ID of the email authentication method, referenced by `{emailMethods-id}`, is always `3ddfcfc8-9383-446f-83cc-3ab9be4be18f`.
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Update the email authentication method for another user's account.
+<!-- {  "blockType": "ignored" } -->
 ``` http
-PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
+PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{emailMethods-id}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -64,9 +61,12 @@ If successful, this method returns a `200 OK` response code and an updated [emai
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_emailauthenticationmethod"
+  "name": "update_emailauthenticationmethod",
+  "sampleKeys": ["kim@contoso.com", "3ddfcfc8-9383-446f-83cc-3ab9be4be18f"]
 }
 -->
 ``` http
@@ -78,10 +78,43 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-emailauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-emailauthenticationmethod-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-emailauthenticationmethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-emailauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-emailauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-emailauthenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-emailauthenticationmethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-emailauthenticationmethod-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -94,7 +127,6 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",

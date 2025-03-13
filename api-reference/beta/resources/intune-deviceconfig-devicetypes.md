@@ -1,10 +1,11 @@
 ---
 title: "deviceTypes enum type"
 description: "Device type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceTypes enum type
@@ -42,9 +43,3 @@ Device type.
 |blackberry|100|Blackberry.|
 |palm|101|Palm.|
 |unknown|255|Represents that the device type is unknown.|
-
-
-
-
-
-

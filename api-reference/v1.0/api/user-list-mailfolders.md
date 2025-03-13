@@ -1,11 +1,14 @@
 ---
-title: "List mailFolders"
-description: "Get the mail folder collection under the root folder of the signed-in user. "
-author: "svpsiva"
-localization_priority: Priority
+title: List mailFolders
+description: Get the mail folder collection under the root folder of the signed-in user.
+author: "SuryaLashmiS"
+ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
+ms.date: 04/04/2024
 ---
+
+<!-- markdownlint-disable MD001 MD022 MD024 MD025 MD051-->
 
 # List mailFolders
 
@@ -13,38 +16,62 @@ Namespace: microsoft.graph
 
 Get the mail folder collection directly under the root folder of the signed-in user. The returned collection includes any [mail search folders](../resources/mailsearchfolder.md) directly under the root.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+By default, this operation does not return hidden folders. Use a query parameter `includeHiddenFolders` to include them in the response. This operation does not return all mail folders in a mailbox, only the child folders of the root folder. To return all mail folders in a mailbox, each child folder must be [traversed separately](mailfolder-list-childfolders.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "user_list_mailfolders" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-mailfolders-permissions.md)]
 
 ## HTTP request
+
+To get all the mail folders in the root folder in the specified user's mailbox, excluding those that are hidden:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
+
+To include _hidden_ mail folders in the response:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
+```
+
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+To return a list of all mailFolders including those that are hidden (their **isHidden** property is true), in the request URL, specify the `includeHiddenFolders` query parameter as `true`, as shown in the [HTTP request](#http-request) section.
+
+This method supports [OData query parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
+
+| Header        | Value                     |
+|:--------------|:--------------------------|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [mailFolder](../resources/mailfolder.md) objects in the response body.
-## Example
-##### Request
-Here is an example of the request.
+
+## Examples
+
+### Example 1: List mail folders in the signed-in user's mailbox
+
+This example includes a **mailSearchFolder** object in the response. The mail search folder is a child folder under the Inbox with the display name "Weekly digests".
+
+#### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -54,28 +81,46 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailfolders-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-mailfolders-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-mailfolders-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-mailfolders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-mailfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailfolders-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-mailfolders-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-mailfolders-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-mailfolders-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-Here is an example of the response.
+#### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of the response, which includes a **mailSearchFolder** that is a child folder under the Inbox.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,10 +130,9 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
     "value": [
         {
             "id": "AQMkADYAAAIBXQAAAA==",
@@ -96,7 +140,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBFQAAAA==",
@@ -104,7 +149,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 1,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCgAAAA==",
@@ -112,7 +158,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDwAAAA==",
@@ -120,7 +167,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDAAAAA==",
@@ -128,7 +176,20 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 1,
             "unreadItemCount": 70,
-            "totalItemCount": 71
+            "totalItemCount": 71,
+            "isHidden": false
+        },
+        {
+            "@odata.type": "#microsoft.graph.mailSearchFolder",
+            "id": "AAMkADYRAAAZg1yTAAA=",
+            "displayName": "Weekly digests",
+            "parentFolderId": "AQMkADYAAAIBDAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 4,
+            "totalItemCount": 5,
+            "isHidden": false,
+            "isSupported": true,
+            "filterQuery": "contains(subject, 'weekly digest')"
         },
         {
             "id": "AQMkADYAAAIBGQAAAA==",
@@ -136,7 +197,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCwAAAA==",
@@ -144,7 +206,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCQAAAA==",
@@ -152,7 +215,102 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
+        }
+    ]
+}
+```
+
+> [!TIP]
+> If a collection exceeds the default page size (10 items), the **\@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
+>
+> You can control the page size through [optional query string parameters](/graph/query-parameters)
+
+### Example 2: Include hidden folders in the signed-in user's mailbox
+
+This example uses the `includeHiddenFolders` query parameter to get a list of mail folders including hidden mail folders. The response includes the "Clutter" folder that has the **isHidden** set to `true`.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_hiddenmailfolders"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/mailFolders/?includeHiddenFolders=true
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-hiddenmailfolders-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-hiddenmailfolders-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-hiddenmailfolders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-hiddenmailfolders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-hiddenmailfolders-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-hiddenmailfolders-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-hiddenmailfolders-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-hiddenmailfolders-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here is shortened for readability, and doesn't include all the default folders in a user mailbox.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "value": [
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Clutter",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "isHidden": true
+        },
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Conversation History",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 1,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "isHidden": false
         }
     ]
 }
@@ -160,7 +318,8 @@ Content-length: 232
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List mailFolders",
   "keywords": "",
@@ -168,5 +327,5 @@ Content-length: 232
   "tocPath": "",
   "suppressions": [
   ]
-}-->
-
+}
+-->

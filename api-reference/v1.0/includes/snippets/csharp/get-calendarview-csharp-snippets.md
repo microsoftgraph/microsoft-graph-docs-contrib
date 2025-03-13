@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Calendar.CalendarView.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("startDateTime", "2017-01-01T19:00:00-08:00"),
-	new QueryOption("endDateTime", "2017-01-07T19:00:00-08:00")
-};
+	requestConfiguration.QueryParameters.StartDateTime = "2017-01-01T19:00:00-08:00";
+	requestConfiguration.QueryParameters.EndDateTime = "2017-01-07T19:00:00-08:00";
+});
 
-var calendarView = await graphClient.Me.Calendar.CalendarView
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

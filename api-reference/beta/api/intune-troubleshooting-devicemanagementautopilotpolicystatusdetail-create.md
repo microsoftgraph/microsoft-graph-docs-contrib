@@ -1,10 +1,11 @@
 ---
 title: "Create deviceManagementAutopilotPolicyStatusDetail"
 description: "Create a new deviceManagementAutopilotPolicyStatusDetail object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create deviceManagementAutopilotPolicyStatusDetail
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Create a new [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policy
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -51,9 +54,10 @@ The following table shows the properties that are required when you create the d
 |id|String|UUID for the object|
 |displayName|String|The friendly name of the policy.|
 |policyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|The type of policy. Possible values are: `unknown`, `application`, `appModel`, `configurationPolicy`.|
-|complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|The policy compliance status. Possible values are: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
-|trackedOnEnrollmentStatus|Boolean|Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session|
+|complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|The policy compliance or enforcement status. Enforcement status takes precedence if it exists. Possible values are: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
+|trackedOnEnrollmentStatus|Boolean|Indicates if this policy was tracked as part of the autopilot bootstrap enrollment sync session|
 |lastReportedDateTime|DateTimeOffset|Timestamp of the reported policy status|
+|errorCode|Int32|The errorode associated with the compliance or enforcement status of the policy. Error code for enforcement status takes precedence if it exists.|
 
 
 
@@ -67,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails
 Content-type: application/json
-Content-length: 295
+Content-length: 314
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotPolicyStatusDetail",
@@ -75,7 +79,8 @@ Content-length: 295
   "policyType": "application",
   "complianceStatus": "compliant",
   "trackedOnEnrollmentStatus": true,
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "errorCode": 9
 }
 ```
 
@@ -84,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 344
+Content-Length: 363
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotPolicyStatusDetail",
@@ -93,12 +98,7 @@ Content-Length: 344
   "policyType": "application",
   "complianceStatus": "compliant",
   "trackedOnEnrollmentStatus": true,
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "errorCode": 9
 }
 ```
-
-
-
-
-
-

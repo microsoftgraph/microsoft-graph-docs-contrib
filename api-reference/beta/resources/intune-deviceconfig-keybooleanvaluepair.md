@@ -1,10 +1,11 @@
 ---
 title: "keyBooleanValuePair resource type"
 description: "A key-value pair with a string key and a Boolean value."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # keyBooleanValuePair resource type
@@ -43,9 +44,3 @@ Here is a JSON representation of the resource.
   "value": true
 }
 ```
-
-
-
-
-
-

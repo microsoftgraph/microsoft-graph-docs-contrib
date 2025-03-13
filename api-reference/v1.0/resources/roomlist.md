@@ -1,17 +1,16 @@
 ---
 title: "roomList resource type"
 description: "Represents a group of rooms created by the company."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "resourcePageType"
+ms.date: 03/22/2024
 ---
 
 # roomList resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a group of [room](room.md) objects defined in the tenant.
 
@@ -23,6 +22,7 @@ Derived from [place](place.md).
 |:------------------------------------|:-----------------------------|:--------|
 | [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** object defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.|
 | [Get place](../api/place-get.md)    | The requested, derived type of [place](place.md)            | Get the properties and relationships of the specified **place** object, such as a room list. |
+| [Update place](../api/place-update.md)    | The requested, derived type of [place](place.md)            | Update the properties and relationships of a specified **place** object. |
 
 ## Properties
 
@@ -31,8 +31,8 @@ Derived from [place](place.md).
 | address        | [physicalAddress](physicaladdress.md)             | The street address of the room list. |
 | displayName    | String                                            | The name associated with the room list. |
 | emailAddress   | String                                            | The email address of the room list. |
-| geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude and (optionally) altitude coordinates. |
-| id             | String                                            | Unique identifier for the room list. Read-only. |
+| geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude, and (optionally) altitude coordinates. |
+| id             | String                                            | Unique identifier for the room list. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. The beta version of this API has a new property added called **placeId**, which provides an immutable ID |
 | phone          | String                                            | The phone number of the room list. |
 
 ## Relationships
@@ -43,7 +43,7 @@ Derived from [place](place.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

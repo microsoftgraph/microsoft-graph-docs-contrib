@@ -1,17 +1,20 @@
 ---
 title: "Create event"
 description: "Use this API to create a new event in the default or the specified calendar."
-author: "harini84"
-localization_priority: Priority
-ms.prod: "outlook"
+author: "iamgirishck"
+ms.localizationpriority: high
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create event
 
 Namespace: microsoft.graph
 
-Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md). 
+Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Depending on the type of calendar that the event is created in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,9 +36,6 @@ A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../
 ```http
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
-
-POST /me/calendarGroup/calendars/{id}/events
-POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
@@ -45,7 +45,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -92,7 +92,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"adelev@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -101,27 +101,43 @@ Content-type: application/json
   "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-event-from-calendar-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-event-from-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-event-from-calendar-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-event-from-calendar-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-event-from-calendar-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
 #### Response
-Here is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -147,12 +163,14 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does mid month work for you?",
     "importance": "normal",
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
@@ -204,14 +222,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Megan Bowen",
-            "address": "MeganB@contoso.OnMicrosoft.com"
+            "address": "MeganB@contoso.com"
         }
     }
 }
@@ -251,7 +269,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"adelev@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -261,27 +279,43 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-with-online-meeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-with-online-meeting-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-event-from-calendar-with-online-meeting-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-with-online-meeting-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-event-from-calendar-with-online-meeting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-calendar-with-online-meeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-with-online-meeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-event-from-calendar-with-online-meeting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-event-from-calendar-with-online-meeting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-event-from-calendar-with-online-meeting-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
 #### Response
-Here is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -308,12 +342,14 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does next month work for you?",
     "importance": "normal",
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
@@ -363,14 +399,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Megan Bowen",
-            "address": "MeganB@contoso.OnMicrosoft.com"
+            "address": "MeganB@contoso.com"
         }
     },
     "onlineMeeting": {

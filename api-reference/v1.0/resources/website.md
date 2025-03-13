@@ -1,10 +1,11 @@
 ---
 title: "website resource type"
 description: "Represents a website."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "AAmatino"
-ms.prod: ""
+ms.subservice: entra-applications
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # website resource type
@@ -17,13 +18,13 @@ Represents a website.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|websiteType| The possible values are: `other`, `home`, `work`, `blog`, `profile`.|
 |address|string|The URL of the website.|
 |displayName|string|The display name of the web site.|
+|type|websiteType| The possible values are: `other`, `home`, `work`, `blog`, `profile`.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -35,9 +36,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "type": "String",
   "address": "string",
-  "displayName": "string"
+  "displayName": "string",
+  "type": "String"
 }
 
 ```

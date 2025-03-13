@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RejectReason reason = RejectReason.BUSY;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.communications().calls("57dab8b1-894c-409a-b240-bd8beae78896")
-	.reject(reason,null)
-	.buildRequest()
-	.post();
+com.microsoft.graph.communications.calls.item.reject.RejectPostRequestBody rejectPostRequestBody = new com.microsoft.graph.communications.calls.item.reject.RejectPostRequestBody();
+rejectPostRequestBody.setReason(RejectReason.Busy);
+graphClient.communications().calls().byCallId("{call-id}").reject().post(rejectPostRequestBody);
+
 
 ```

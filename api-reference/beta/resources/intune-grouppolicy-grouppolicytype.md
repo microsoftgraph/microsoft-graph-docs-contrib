@@ -1,10 +1,11 @@
 ---
 title: "groupPolicyType enum type"
 description: "Type of Group Policy File or Definition."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # groupPolicyType enum type
@@ -22,9 +23,3 @@ Type of Group Policy File or Definition.
 |:---|:---|:---|
 |admxBacked|0|Group Policy administrative templates built-in to the Policy configuration service provider (CSP).|
 |admxIngested|1|Group Policy administrative templates installed using the Policy configuration service provider (CSP).|
-
-
-
-
-
-

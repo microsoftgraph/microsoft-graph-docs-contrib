@@ -1,10 +1,11 @@
 ---
 title: "entitlementManagementSettings resource type"
-description: "Represents tenant-wide settings for Azure AD entitlement management."
-localization_priority: Normal
+description: "Represents tenant-wide settings for Microsoft Entra entitlement management."
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 03/21/2024
 ---
 
 # entitlementManagementSettings resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents settings that control the behavior of [Azure AD entitlement management](entitlementmanagement-root.md).
+Represents settings that control the behavior of [Microsoft Entra entitlement management](entitlementmanagement-overview.md).  This resource doesn't include the catalog creators setting; to view or change the catalog creators role membership, use the [role assignments](unifiedroleassignment.md) API with the entitlement management RBAC provider.
 
 ## Methods
 
@@ -27,7 +28,7 @@ Represents settings that control the behavior of [Azure AD entitlement managemen
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |externalUserLifecycleAction|String|One of `None`, `BlockSignIn`, or `BlockSignInAndDelete`. |
-|daysUntilExternalUserDeletedAfterBlocked|Int64|If `externalUserLifecycleAction` is `BlockSignInAndDelete`, the number of days after an external user is blocked from sign in before their account is deleted.|
+|daysUntilExternalUserDeletedAfterBlocked|Int64|If **externalUserLifecycleAction** is `BlockSignInAndDelete`, the number of days after an external user is blocked from sign in before their account is deleted.|
 
 ## Relationships
 
@@ -35,7 +36,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -43,7 +44,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.entitlementManagementSettings",
-  "baseType": "",
   "keyProperty": ""
 }-->
 
@@ -63,5 +63,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

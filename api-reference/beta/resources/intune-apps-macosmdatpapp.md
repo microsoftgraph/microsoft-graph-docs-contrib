@@ -1,10 +1,11 @@
 ---
 title: "macOSMdatpApp resource type"
-description: "Contains properties and inherited properties for the macOS Microsoft Defender Advanced Threat Protection (MDATP) App."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Contains properties and inherited properties for the macOS Microsoft Defender Advanced Threat Protection (MDATP) App. This is deprecated for MacOSMicrosoftDefenderApp in 2305 (May 2023)."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # macOSMdatpApp resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties and inherited properties for the macOS Microsoft Defender Advanced Threat Protection (MDATP) App.
+Contains properties and inherited properties for the macOS Microsoft Defender Advanced Threat Protection (MDATP) App. This is deprecated for MacOSMicrosoftDefenderApp in 2305 (May 2023).
 
 
 Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
@@ -58,9 +59,6 @@ Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|The set of direct relationships for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 
 ## JSON Representation
@@ -102,9 +100,3 @@ Here is a JSON representation of the resource.
   "supersededAppCount": 1024
 }
 ```
-
-
-
-
-
-

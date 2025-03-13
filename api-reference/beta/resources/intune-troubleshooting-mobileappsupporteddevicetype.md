@@ -1,10 +1,11 @@
 ---
 title: "mobileAppSupportedDeviceType resource type"
 description: "Device properties"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # mobileAppSupportedDeviceType resource type
@@ -20,7 +21,7 @@ Device properties
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[deviceType](../resources/intune-shared-devicetype.md)|Device type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `cloudPC`, `blackberry`, `palm`, `unknown`.|
+|type|[deviceType](../resources/intune-shared-devicetype.md)|Device type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |minimumOperatingSystemVersion|String|Minimum OS version|
 |maximumOperatingSystemVersion|String|Maximum OS version|
 
@@ -42,9 +43,3 @@ Here is a JSON representation of the resource.
   "maximumOperatingSystemVersion": "String"
 }
 ```
-
-
-
-
-
-

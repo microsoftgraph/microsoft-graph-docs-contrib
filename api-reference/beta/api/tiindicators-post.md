@@ -1,10 +1,11 @@
 ---
 title: "Create threat intelligence indicator"
 description: "Create a new tiIndicator."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # Create threat intelligence indicator
@@ -15,15 +16,14 @@ Namespace: microsoft.graph
 
 Create a new [tiIndicator](../resources/tiindicator.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy  |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
+<!-- { "blockType": "permissions", "name": "tiindicators_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/tiindicators-post-permissions.md)]
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ POST /security/tiIndicators
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -51,7 +51,7 @@ If successful, this method returns `201 Created` response code and a [tiIndicato
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,27 +81,47 @@ Content-type: application/json
   "tlpLevel": "green"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-tiindicator-from-security-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-tiindicator-from-security-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tiindicator-from-security-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-tiindicator-from-security-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-tiindicator-from-security-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-tiindicator-from-security-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-tiindicator-from-security-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-tiindicator-from-security-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-tiindicator-from-security-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

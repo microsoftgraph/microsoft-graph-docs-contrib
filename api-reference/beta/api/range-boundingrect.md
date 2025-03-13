@@ -1,41 +1,43 @@
 ---
-title: "Range: BoundingRect"
-description: "."
+title: "range: boundingRect"
+description: "Get the smallest range object that encompasses the given ranges."
 author: "lumine2008"
-localization_priority: Normal
-ms.prod: "excel"
+ms.localizationpriority: medium
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 11/08/2024
 ---
 
-# Range: BoundingRect
+# range: boundingRect
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Get the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of *B2:C5* and *D10:E15* is *B2:E16*.
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Files.ReadWrite    |
-|Application | Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "range_boundingrect" } -->
+[!INCLUDE [permissions-table](../includes/permissions/range-boundingrect-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/BoundingRect
-GET /workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
-GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
+GET /me/drive/items/{id}/workbook/names/{name}/range/BoundingRect
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/BoundingRect
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -49,9 +51,9 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "range_boundingrect"
@@ -59,7 +61,6 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/BoundingRect
 Content-type: application/json
-Content-length: 42
 
 {
   "anotherRange": "anotherRange-value"
@@ -67,7 +68,7 @@ Content-length: 42
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,7 +77,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

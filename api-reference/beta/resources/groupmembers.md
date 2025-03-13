@@ -1,33 +1,37 @@
 ---
-title: "groupMembers complex type"
-description: "Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer."
-localization_priority: Normal
+title: "groupMembers resource type"
+description: "Identifies a collection of users in the tenant who are allowed as requestor, approver, or reviewer."
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 10/04/2024
 ---
 
-# groupMembers complex type
+# groupMembers resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). 
-The `@odata.type` value "`#microsoft.graph.groupMembers`" indicates that this type identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer, who are the members of a specific group.
+The `@odata.type` value `#microsoft.graph.groupMembers` indicates that this type identifies a collection of users in the tenant who are allowed as requestor, approver, or reviewer, who are the members of a specific group.
 
 ## Properties
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | The ID of the group in Azure AD. |
-| description |String | The name of the group in Azure AD. Read only. |
+| id |String | The ID of the group in Microsoft Entra ID. |
+| description |String | The name of the group in Microsoft Entra ID. Read only. |
 | isBackup | Boolean | For **groupMembers** in an approval stage, this property indicates that the group members are a backup fallback approver. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 
-
-The following is a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -40,8 +44,8 @@ The following is a JSON representation of the type.
 
 ```json
 {
-  "id": "string (identifier)",
-  "description": "string",
+  "id": "String (identifier)",
+  "description": "String",
   "isBackup": false
 }
 ```
@@ -57,5 +61,3 @@ The following is a JSON representation of the type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

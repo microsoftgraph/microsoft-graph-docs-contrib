@@ -1,10 +1,11 @@
 ---
 title: "managedEBookAssignment resource type"
 description: "Contains properties used to assign a eBook to a group."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # managedEBookAssignment resource type
@@ -47,17 +48,8 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "installIntent": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "insightValueDouble resource type"
 description: "The value in an user experience analytics insight."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # insightValueDouble resource type
@@ -23,7 +24,7 @@ Inherits from [userExperienceAnalyticsInsightValue](../resources/intune-devices-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|value|Double|Not yet documented|
+|value|Double|The double value of the user experience analytics insight.|
 
 ## Relationships
 None
@@ -41,9 +42,3 @@ Here is a JSON representation of the resource.
   "value": "4.2"
 }
 ```
-
-
-
-
-
-

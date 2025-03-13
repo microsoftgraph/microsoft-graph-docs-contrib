@@ -1,10 +1,11 @@
 ---
 title: "managedBrowserType enum type"
 description: "Type of managed browser"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # managedBrowserType enum type
@@ -22,9 +23,3 @@ Type of managed browser
 |:---|:---|:---|
 |notConfigured|0|Not configured|
 |microsoftEdge|1|Microsoft Edge|
-
-
-
-
-
-

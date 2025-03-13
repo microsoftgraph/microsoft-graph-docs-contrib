@@ -1,0 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-sdk-go/models/security"
+	  //other-imports
+)
+
+requestBody := graphmodelssecurity.NewUserSource()
+email := "admin@contoso.com"
+requestBody.SetEmail(&email) 
+includedSources := graphmodels.MAILBOX_SOURCETYPE 
+requestBody.SetIncludedSources(&includedSources) 
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+userSources, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Custodians().ByEdiscoveryCustodianId("ediscoveryCustodian-id").UserSources().Post(context.Background(), requestBody, nil)
+
+
+```

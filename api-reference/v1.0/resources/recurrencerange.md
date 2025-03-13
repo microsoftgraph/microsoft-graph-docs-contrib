@@ -1,17 +1,18 @@
 ---
 title: "recurrenceRange resource type"
 description: "Describes a date range over which a recurring event repeats. "
-localization_priority: Normal
-author: "harini84"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "iamgirishck"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # recurrenceRange resource type
 
 Namespace: microsoft.graph
 
-Describes a date range over which a recurring [event](event.md) repeats.
+Describes a date range over which a recurring event. This shared object is used to define the recurrence of [access reviews](accessreviewscheduledefinition.md), [calendar events](event.md), and [access package assignments](accesspackageassignment.md) in Microsoft Entra ID.
 
 You can specify the date range for a recurring event in one of 3 ways depending on your scenario. While you must always specify a **startDate** value for the date range, you can specify a recurring event that ends by a specific date, or that doesn't end, or that ends after a specific number of occurrences. Note that the actual occurrences within the date range always follow the recurrence pattern that you specify for the recurring event. A recurring event is always defined by its [recurrencePattern](recurrencepattern.md) (how frequently the event repeats), and its **recurrenceRange** (for how long the event repeats).
 
@@ -33,10 +34,13 @@ Use the **type** property to specify the different types of **recurrenceRange**.
 |`noEnd`  |Range without an end date | Event repeats on all the days that fit the corresponding recurrence pattern beginning on the **startDate**. | Repeat event in the date range starting on June 1, 2017 indefinitely. | **type**, **startDate** |
 |`numbered`|Range with specific number of occurrences | Event repeats for the **numberOfOccurrences** based on the recurrence pattern beginning on the **startDate**. | Repeat event in the date range starting on June 1, 2017, for 10 occurrences.  | **type**, **startDate**, **numberOfOccurrences** |
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -65,9 +69,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-      "Warning: /api-reference/v1.0/resources/recurrencerange.md:
-      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |"
   ],
   "tocPath": ""
 }-->
-

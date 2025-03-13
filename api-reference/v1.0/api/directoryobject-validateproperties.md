@@ -1,10 +1,11 @@
 ---
 title: "directoryObject: validateProperties"
 description: "Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # directoryObject: validateProperties
@@ -18,16 +19,18 @@ The following policy validations are performed for the display name and mail nic
 2. Validate the custom banned words policy
 3. Validate that the mail nickname is unique
 
+> [!NOTE]
+> Invalid characters are not part of the policy validations. The following characters are invalid: @ () \ \[] " ; : <> , SPACE.
+
 This API only returns the first validation failure that is encountered. If the properties fail multiple validations, only the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy. To learn more about configuring naming policies, see [Configure naming policy](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "directoryobject_validateproperties" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-validateproperties-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +42,7 @@ POST /directoryObjects/validateProperties
 
 | Name           | Description      |
 |:---------------|:-----------------|
-| Authorization  | Bearer {token}. Required.    |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json |
 
 ## Request body
@@ -54,7 +57,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful and there are no validation errors, the method returns `204 No Content` response code. It does not return anything in the response body.
+If successful and there are no validation errors, the method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 
@@ -75,7 +78,6 @@ This is an example of a successful validation request.
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",
@@ -84,24 +86,36 @@ Content-length: 164
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-validateproperties-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/directoryobject-validateproperties-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-validateproperties-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-validateproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-validateproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/directoryobject-validateproperties-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/directoryobject-validateproperties-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {
@@ -120,7 +134,6 @@ This is an example of a request with validation errors.
 ```http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",

@@ -1,12 +1,13 @@
 ---
 author: daspek
-description: "The MentionAction resource provides information about an activity that mentioned people."
+description: The MentionAction resource provides information about an activity that mentioned people.
 ms.date: 09/14/2017
 title: MentionAction
-localization_priority: Normal
-ms.prod: "insights"
+ms.localizationpriority: medium
+ms.subservice: insights
 doc_type: resourcePageType
 ---
+
 # MentionAction resource type
 
 Namespace: microsoft.graph
@@ -16,6 +17,17 @@ Namespace: microsoft.graph
 The **MentionAction** resource provides information about an [activity][] that mentioned people.
 
 [activity]: itemactivity.md
+
+## Properties
+
+| Property   | Type                       | Description                                           |
+| :--------- | :------------------------- | :---------------------------------------------------- |
+| mentionees | [identitySet][] collection | The identities of the users mentioned in this action. |
+
+[identitySet]: identityset.md
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -31,14 +43,6 @@ The **MentionAction** resource provides information about an [activity][] that m
 }
 ```
 
-## Properties
-
-| Property name | Type                       | Description
-|:--------------|:---------------------------|:-----------------------------
-| mentionees    | [identitySet][] collection | The identities of the users mentioned in this action.
-
-[identitySet]: identityset.md
-
 ## Remarks
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
@@ -53,5 +57,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

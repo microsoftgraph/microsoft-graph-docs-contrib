@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/messages/AAMkADYAAAImV_jAAA=/')
+let message = await client.api('/me/messages/AAMkADYAAAImV_jAAA=/')
 	.version('beta')
-	.expand('eventMessage/event')
+	.expand('microsoft.graph.eventMessage/event')
 	.get();
 
 ```

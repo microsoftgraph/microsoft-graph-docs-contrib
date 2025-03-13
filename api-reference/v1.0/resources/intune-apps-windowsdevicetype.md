@@ -1,10 +1,11 @@
 ---
 title: "windowsDeviceType enum type"
 description: "Contains properties for Windows device type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # windowsDeviceType enum type
@@ -23,12 +24,3 @@ Contains properties for Windows device type.
 |mobile|2|Whether or not the Mobile Windows device type is supported.|
 |holographic|4|Whether or not the Holographic Windows device type is supported.|
 |team|8|Whether or not the Team Windows device type is supported.|
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "Create Outlook category"
 description: "Create an outlookCategory object in the user's master list of categories."
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: "outlook"
+ms.localizationpriority: medium
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create Outlook category
@@ -15,14 +16,13 @@ Namespace: microsoft.graph
 
 Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.ReadWrite    |
-|Delegated (personal Microsoft account) | MailboxSettings.ReadWrite   |
-|Application | MailboxSettings.ReadWrite |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "outlookuser_post_mastercategories" } -->
+[!INCLUDE [permissions-table](../includes/permissions/outlookuser-post-mastercategories-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,19 +33,19 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
-
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.
+In the request body, supply a JSON representation of an [outlookCategory](../resources/outlookcategory.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [outlookCategory](../resources/outlookcategory.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -58,27 +58,48 @@ Content-type: application/json
 Content-Length: 70
 
 {
-      "displayName":"Project expenses",
-      "color":"preset9"
+   "displayName": "Project expenses",
+   "color": "preset9"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlookcategory-from-outlookuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-outlookcategory-from-outlookuser-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-outlookcategory-from-outlookuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-outlookcategory-from-outlookuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-outlookcategory-from-outlookuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-outlookcategory-from-outlookuser-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-outlookcategory-from-outlookuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-outlookcategory-from-outlookuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-outlookcategory-from-outlookuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,13 +108,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 250
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
-  "id":"bac262b7-485d-4739-b436-e31467d64fac",
-  "displayName":"Project expenses",
-  "color":"preset9"
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+   "id": "bac262b7-485d-4739-b436-e31467d64fac",
+   "displayName": "Project expenses",
+   "color": "preset9"
 }
 ```
 

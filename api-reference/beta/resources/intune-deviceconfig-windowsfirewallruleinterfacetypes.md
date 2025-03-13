@@ -1,10 +1,11 @@
 ---
 title: "windowsFirewallRuleInterfaceTypes enum type"
 description: "Flags representing firewall rule interface types."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # windowsFirewallRuleInterfaceTypes enum type
@@ -24,9 +25,3 @@ Flags representing firewall rule interface types.
 |remoteAccess|1|The Remote Access interface type.|
 |wireless|2|The Wireless interface type.|
 |lan|4|The LAN interface type.|
-
-
-
-
-
-

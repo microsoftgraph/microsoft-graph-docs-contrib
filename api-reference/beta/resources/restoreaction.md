@@ -3,9 +3,9 @@ author: daspek
 description: <decription>
 ms.date: 09/14/2017
 title: RestoreAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: onedrive
 ---
 # RestoreAction resource type
 
@@ -19,6 +19,17 @@ The presence of the **RestoreAction** resource on an [**itemActivity**][activity
 
 [activity]: itemactivity.md
 
+## Properties
+
+None. This facet is a null or not-null value and contains no properties.
+
+## Relationships
+None.
+
+## Remarks
+
+Item activity records are currently only available on SharePoint and OneDrive for Business.
+
 ## JSON representation
 
 <!-- {
@@ -31,14 +42,6 @@ The presence of the **RestoreAction** resource on an [**itemActivity**][activity
 {
 }
 ```
-
-## Properties
-
-None. This facet is a null or not-null value and contains no properties.
-
-## Remarks
-
-Item activity records are currently only available on SharePoint and OneDrive for Business.
 
 <!--
 {

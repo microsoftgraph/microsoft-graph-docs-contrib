@@ -1,10 +1,11 @@
 ---
 title: "customTimeZone resource type"
 description: "Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "svpsiva"
+ms.subservice: calendar
+author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # customTimeZone resource type
@@ -17,7 +18,7 @@ Represents a time zone where the transition from standard to daylight saving tim
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property | Type	|Description|
 |:---------------|:--------|:----------|
 | bias | Edm.Int32 | The time offset of the time zone from Coordinated Universal Time (UTC). This value is in minutes. Time zones that are ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.|
 | daylightOffset | [daylightTimeZoneOffset](daylighttimezoneoffset.md) | Specifies when the time zone switches from standard time to daylight saving time. |
@@ -25,9 +26,12 @@ Represents a time zone where the transition from standard to daylight saving tim
 | standardOffset | [standardTimeZoneOffset](standardtimezoneoffset.md) | Specifies when the time zone switches from daylight saving time to standard time. |
 
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

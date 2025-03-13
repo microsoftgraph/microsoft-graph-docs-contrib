@@ -1,10 +1,11 @@
 ---
 title: "windows10DeviceFirmwareConfigurationInterface resource type"
 description: "Graph properties for Device Firmware Configuration Interface "
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windows10DeviceFirmwareConfigurationInterface resource type
@@ -50,6 +51,20 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |radios|[enablement](../resources/intune-shared-enablement.md)|Defines whether built-in radios e.g. WIFI, NFC, Bluetooth, are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |bootFromExternalMedia|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to boot from external media. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |bootFromBuiltInNetworkAdapters|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to boot from built-in network adapters. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|windowsPlatformBinaryTable|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Windows Platform Binary Table. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|simultaneousMultiThreading|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Simultaneous MultiThreading. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|frontCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Front Camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|rearCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable rear camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|infraredCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Infrared camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|microphone|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Microphone. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|bluetooth|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Bluetooth. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wirelessWideAreaNetwork|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wireless Wide Area Network. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|nearFieldCommunication|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Near Field Communication. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wiFi|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable WiFi. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|usbTypeAPort|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable USB Type A Port. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|sdCard|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable SD Card Port. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnLAN|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wake on LAN. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnPower|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wake On Power. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -110,12 +125,20 @@ Here is a JSON representation of the resource.
   "microphonesAndSpeakers": "String",
   "radios": "String",
   "bootFromExternalMedia": "String",
-  "bootFromBuiltInNetworkAdapters": "String"
+  "bootFromBuiltInNetworkAdapters": "String",
+  "windowsPlatformBinaryTable": "String",
+  "simultaneousMultiThreading": "String",
+  "frontCamera": "String",
+  "rearCamera": "String",
+  "infraredCamera": "String",
+  "microphone": "String",
+  "bluetooth": "String",
+  "wirelessWideAreaNetwork": "String",
+  "nearFieldCommunication": "String",
+  "wiFi": "String",
+  "usbTypeAPort": "String",
+  "sdCard": "String",
+  "wakeOnLAN": "String",
+  "wakeOnPower": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "win32LobAppReturnCodeType enum type"
 description: "Indicates the type of return code."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # win32LobAppReturnCodeType enum type
@@ -25,9 +26,3 @@ Indicates the type of return code.
 |softReboot|2|Soft-reboot is required.|
 |hardReboot|3|Hard-reboot is required.|
 |retry|4|Retry.|
-
-
-
-
-
-

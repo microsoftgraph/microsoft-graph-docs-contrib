@@ -1,10 +1,11 @@
 ---
 title: "managedAppFlaggedReason enum type"
 description: "The reason for which a user has been flagged"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # managedAppFlaggedReason enum type
@@ -24,9 +25,3 @@ The reason for which a user has been flagged
 |rootedDevice|1|The app registration is running on a rooted/unlocked device.|
 |androidBootloaderUnlocked|2|The app registration is running on an Android device on which the bootloader is unlocked.|
 |androidFactoryRomModified|3|The app registration is running on an Android device on which the factory ROM has been modified.|
-
-
-
-
-
-

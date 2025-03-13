@@ -1,10 +1,11 @@
 ---
 title: "offerShiftRequest resource type"
 description: "Represents a request to offer a shift to another user in the team."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # offerShiftRequest resource type
@@ -20,14 +21,14 @@ Represents a request to offer a shift to another user in the team.
 | [List](../api/offershiftrequest-list.md) | Collection of [offerShiftRequest](offershiftrequest.md) | Read the properties and relationships of all **offerShiftRequest** objects in a team. |
 | [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Create an instance of an **offerShiftRequest** object. |
 | [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Read the properties and relationships of an **offerShiftRequest** object. |
-|[Approve](../api/offershiftrequest-approve.md)|None|Approve an **offerShiftRequest**. |
-|[Decline](../api/offershiftrequest-decline.md)|None|Decline an **offerShiftRequest**. |
+| [Approve](../api/offershiftrequest-approve.md)|None|Approve an **offerShiftRequest**. |
+| [Decline](../api/offershiftrequest-decline.md)|None|Decline an **offerShiftRequest**. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|recipientActionDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|recipientActionDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |recipientActionMessage|String| Custom message sent by recipient of the offer shift request. |
 |recipientUserId|String| User ID of the recipient of the offer shift request.|
 |senderShiftId|String| User ID of the sender of the offer shift request.|
@@ -38,15 +39,14 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.offerShiftRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.offerShiftRequest"
 }-->
 
 ```json

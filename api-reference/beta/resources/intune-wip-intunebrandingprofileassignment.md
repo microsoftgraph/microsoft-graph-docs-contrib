@@ -1,10 +1,11 @@
 ---
 title: "intuneBrandingProfileAssignment resource type"
 description: "This entity contains the properties used to assign a branding profile to a group."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # intuneBrandingProfileAssignment resource type
@@ -48,15 +49,11 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "deviceAndAppManagementAssignmentFilterType": "String",
+    "targetType": "String",
+    "entraObjectId": "String"
   }
 }
 ```
-
-
-
-
-
-

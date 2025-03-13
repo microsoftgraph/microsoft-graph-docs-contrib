@@ -1,10 +1,11 @@
 ---
 title: "Update deviceManagementIntentAssignment"
 description: "Update the properties of a deviceManagementIntentAssignment object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update deviceManagementIntentAssignment
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/assignments/{deviceMa
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -63,14 +66,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/assignments/{deviceManagementIntentAssignmentId}
 Content-type: application/json
-Content-length: 327
+Content-length: 404
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   }
 }
 ```
@@ -80,21 +85,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 376
+Content-Length: 453
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
   "id": "bedc5365-5365-bedc-6553-dcbe6553dcbe",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   }
 }
 ```
-
-
-
-
-
-

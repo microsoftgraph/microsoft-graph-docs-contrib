@@ -1,10 +1,11 @@
 ---
 title: "Get targetedManagedAppPolicyAssignment"
 description: "Read properties and relationships of the targetedManagedAppPolicyAssignment object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # Get targetedManagedAppPolicyAssignment
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,6 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
 GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
+GET /deviceAppManagement/windowsManagedAppProtections/{windowsManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
 GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/assignments/{targetedManagedAppPolicyAssignmentId}
 GET /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/assignments/{targetedManagedAppPolicyAssignmentId}
 GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/assignments/{targetedManagedAppPolicyAssignmentId}
@@ -45,7 +49,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -67,25 +71,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 476
+Content-Length: 557
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
     "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
     "target": {
-      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+      "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
       "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-      "deviceAndAppManagementAssignmentFilterType": "include"
+      "deviceAndAppManagementAssignmentFilterType": "include",
+      "targetType": "user",
+      "entraObjectId": "Entra Object Id value"
     },
     "source": "policySets",
     "sourceId": "Source Id value"
   }
 }
 ```
-
-
-
-
-
-

@@ -1,12 +1,13 @@
 ---
-author: JeremyKelley
-description: "The currencyColumn on a columnDefinition resource indicates that the column's values represent currency."
+author: spgraph-docs-team
+description: The currencyColumn on a columnDefinition resource indicates that the column's values represent currency.
 ms.date: 09/11/2017
 title: CurrencyColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: sharepoint
 ---
+
 # CurrencyColumn resource type
 
 Namespace: microsoft.graph
@@ -15,9 +16,20 @@ Namespace: microsoft.graph
 
 The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.
 
+## Properties
+
+| Property   | Type   | Description                                                   |
+| :--------- | :----- | :------------------------------------------------------------ |
+| **locale** | string | Specifies the locale from which to infer the currency symbol. |
+
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here is a JSON representation of a **currencyColumn** resource.
+The following JSON representation shows the resource type.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.currencyColumn" } -->
 
 ```json
@@ -25,12 +37,6 @@ Here is a JSON representation of a **currencyColumn** resource.
   "locale": "en-us"
 }
 ```
-
-## Properties
-
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| **locale**    | string | Specifies the locale from which to infer the currency symbol.
 
 <!--
 {
@@ -42,5 +48,3 @@ Here is a JSON representation of a **currencyColumn** resource.
   "suppressions": []
 }
 -->
-
-

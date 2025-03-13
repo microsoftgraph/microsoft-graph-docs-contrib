@@ -1,10 +1,11 @@
 ---
 title: "Get androidStoreApp"
 description: "Read properties and relationships of the androidStoreApp object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Get androidStoreApp
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [androidStoreApp](../resources/intune-apps-androidstoreapp.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -33,8 +36,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceAppManagement/mobileApps/{mobileAppId}
-GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Optional query parameters
@@ -43,7 +44,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1572
+Content-Length: 1658
 
 {
   "value": {
@@ -97,7 +98,6 @@ Content-Length: 1572
     "supersedingAppCount": 3,
     "supersededAppCount": 2,
     "packageId": "Package Id value",
-    "appIdentifier": "App Identifier value",
     "appStoreUrl": "https://example.com/appStoreUrl/",
     "minimumSupportedOperatingSystem": {
       "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -114,14 +114,14 @@ Content-Length: 1572
       "v7_1": true,
       "v8_0": true,
       "v8_1": true,
-      "v9_0": true
+      "v9_0": true,
+      "v10_0": true,
+      "v11_0": true,
+      "v12_0": true,
+      "v13_0": true,
+      "v14_0": true,
+      "v15_0": true
     }
   }
 }
 ```
-
-
-
-
-
-

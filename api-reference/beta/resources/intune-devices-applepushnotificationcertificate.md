@@ -1,10 +1,11 @@
 ---
 title: "applePushNotificationCertificate resource type"
 description: "Apple push notification certificate."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # applePushNotificationCertificate resource type
@@ -36,7 +37,7 @@ Apple push notification certificate.
 |certificateUploadStatus|String|The certificate upload status.|
 |certificateUploadFailureReason|String|The reason the certificate upload failed.|
 |certificateSerialNumber|String|Certificate serial number. This property is read-only.|
-|certificate|String|Not yet documented|
+|certificate|String||
 
 ## Relationships
 None
@@ -63,9 +64,3 @@ Here is a JSON representation of the resource.
   "certificate": "String"
 }
 ```
-
-
-
-
-
-

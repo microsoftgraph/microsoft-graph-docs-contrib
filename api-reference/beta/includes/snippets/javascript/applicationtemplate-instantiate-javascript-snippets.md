@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const applicationServicePrincipal = {
-  displayName: "My custom name"
+    displayName: 'testProperties'
 };
 
-let res = await client.api('/applicationTemplates/{id}/instantiate')
+await client.api('/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate')
 	.version('beta')
 	.post(applicationServicePrincipal);
 

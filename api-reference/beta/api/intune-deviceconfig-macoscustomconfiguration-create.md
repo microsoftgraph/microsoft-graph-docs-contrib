@@ -1,10 +1,11 @@
 ---
 title: "Create macOSCustomConfiguration"
 description: "Create a new macOSCustomConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create macOSCustomConfiguration
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Create a new [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -39,7 +42,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -63,6 +66,7 @@ The following table shows the properties that are required when you create the m
 |payloadName|String|Name that is displayed to the user.|
 |payloadFileName|String|Payload file name (*.mobileconfig | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the channel used to deploy the configuration profile. Available choices are DeviceChannel, UserChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 
 
 
@@ -76,7 +80,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1146
+Content-length: 1185
 
 {
   "@odata.type": "#microsoft.graph.macOSCustomConfiguration",
@@ -110,7 +114,8 @@ Content-length: 1146
   "version": 7,
   "payloadName": "Payload Name value",
   "payloadFileName": "Payload File Name value",
-  "payload": "cGF5bG9hZA=="
+  "payload": "cGF5bG9hZA==",
+  "deploymentChannel": "userChannel"
 }
 ```
 
@@ -119,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1318
+Content-Length: 1357
 
 {
   "@odata.type": "#microsoft.graph.macOSCustomConfiguration",
@@ -156,12 +161,7 @@ Content-Length: 1318
   "version": 7,
   "payloadName": "Payload Name value",
   "payloadFileName": "Payload File Name value",
-  "payload": "cGF5bG9hZA=="
+  "payload": "cGF5bG9hZA==",
+  "deploymentChannel": "userChannel"
 }
 ```
-
-
-
-
-
-

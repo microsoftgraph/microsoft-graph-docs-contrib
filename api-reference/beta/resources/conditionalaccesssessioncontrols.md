@@ -1,10 +1,12 @@
 ---
 title: "conditionalAccessSessionControls resource type"
 description: "Represents a complex type of session controls that is enforced after sign-in."
-localization_priority: Normal
-author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # conditionalAccessSessionControls resource type
@@ -22,7 +24,10 @@ All the session controls inherit from [conditionalAccessSessionControl](conditio
 |:-------------|:------------|:------------|
 |applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Session control to enforce application restrictions. Only Exchange Online and Sharepoint Online support this session control. |
 |cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Session control to apply cloud app security.|
+|continuousAccessEvaluation|[continuousAccessEvaluationSessionControl](../resources/continuousaccessevaluationsessioncontrol.md)|Session control for continuous access evaluation settings.|
+|disableResilienceDefaults|Boolean| Session control that determines whether it's acceptable for Microsoft Entra ID to extend existing sessions based on information collected prior to an outage or not.|
 |persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Session control to define whether to persist cookies or not. All apps should be selected for this session control to work correctly. |
+|secureSignInSession|[secureSignInSessionControl](securesigninsessioncontrol.md)|Session control to require sign in sessions to be bound to a device.|
 |signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Session control to enforce signin frequency.|
 
 ## Relationships
@@ -31,14 +36,16 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
     "applicationEnforcedRestrictions",
-    "persistentBrowser",
     "cloudAppSecurity",
+    "continuousAccessEvaluation",
+    "disableResilienceDefaults",
+    "persistentBrowser",
     "signInFrequency"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessSessionControls",
@@ -49,8 +56,11 @@ The following is a JSON representation of the resource.
 {
   "applicationEnforcedRestrictions": {"@odata.type": "microsoft.graph.applicationEnforcedRestrictionsSessionControl"},
   "cloudAppSecurity": {"@odata.type": "microsoft.graph.cloudAppSecuritySessionControl"},
+  "continuousAccessEvaluation": {"@odata.type": "microsoft.graph.continuousAccessEvaluationSessionControl"},
   "persistentBrowser": {"@odata.type": "microsoft.graph.persistentBrowserSessionControl"},
-  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"}
+  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"},
+  "disableResilienceDefaults": false,
+  "secureSignInSession": {"@odata.type": "microsoft.graph.secureSignInSessionControl"},
 }
 ```
 
@@ -63,4 +73,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

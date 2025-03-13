@@ -1,10 +1,11 @@
 ---
 title: "iosVppAppAssignedLicense resource type"
 description: "iOS Volume Purchase Program license assignment. This class does not support Create, Delete, or Update."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # iosVppAppAssignedLicense resource type
@@ -29,7 +30,7 @@ iOS Volume Purchase Program license assignment. This class does not support Crea
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 |userEmailAddress|String|The user email address.|
 |userId|String|The user ID.|
 |userName|String|The user name.|
@@ -56,9 +57,3 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
-

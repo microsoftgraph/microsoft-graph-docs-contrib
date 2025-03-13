@@ -2,9 +2,10 @@
 title: "workbookChartSeriesFormat resource type"
 description: "encapsulates the format properties for the chart series"
 author: "lumine2008"
-localization_priority: Normal
-ms.prod: "excel"
+ms.localizationpriority: medium
+ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # workbookChartSeriesFormat resource type
@@ -25,13 +26,13 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[workbookChartFill](workbookchartfill.md)|Represents the fill format of a chart series, which includes background formating information. Read-only.|
+|fill|[workbookChartFill](workbookchartfill.md)|Represents the fill format of a chart series, which includes background formatting information. Read-only.|
 |line|[workbookChartLineFormat](workbookchartlineformat.md)|Represents line formatting. Read-only.|
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.unified_role_management_alert import UnifiedRoleManagementAlert
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+request_body = UnifiedRoleManagementAlert(
+	is_active = False,
+)
+
+result = await graph_client.identity_governance.role_management_alerts.alerts.by_unified_role_management_alert_id('unifiedRoleManagementAlert-id').patch(request_body)
+
+
+```

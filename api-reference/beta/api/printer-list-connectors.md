@@ -2,9 +2,10 @@
 title: List printConnectors for printer
 description: Retrieve a list of connectors associated with the printer.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List printConnectors for printer
@@ -15,16 +16,13 @@ Namespace: microsoft.graph
 
 Retrieve a list of **connectors** associated with the [printer](../resources/printer.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application| Not Supported. |
+<!-- { "blockType": "permissions", "name": "printer_list_connectors" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printer-list-connectors-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,41 +36,62 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [printConnector](../resources/printconnector.md) objects in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connectors"
+  "name": "get_connectors_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{id}/connectors
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectors-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectors-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-connectors-3-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connectors-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-connectors-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectors-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectors-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connectors-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-connectors-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-connectors-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-connectors-3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,7 +101,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1373
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printConnector)",
@@ -93,9 +111,6 @@ Content-length: 1373
       "fullyQualifiedDomainName": "connector1@redmond.corp.microsoft.com",
       "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
       "appVersion": "0.19.7338.23496",
-      "deviceHealth": {
-        "lastConnectionTime": "2020-02-04T07:00:00.0000000"
-      },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
       "location": {
         "latitude": 1.1,
@@ -111,9 +126,9 @@ Content-length: 1373
         "countryOrRegion": "USA",
         "site": "Puget Sound",
         "building": "Studio E",
-        "floorNumber": 1,
+        "floor": "1",
         "floorDescription": "First Floor",
-        "roomNumber": 1234,
+        "roomName": "1234",
         "roomDescription": "First floor copy room",
         "organization": [
             "C+AI",

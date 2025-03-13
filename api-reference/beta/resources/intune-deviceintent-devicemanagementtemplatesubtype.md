@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementTemplateSubtype enum type"
 description: "Template subtype"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementTemplateSubtype enum type
@@ -27,9 +28,6 @@ Template subtype
 |endpointDetectionReponse|4|Endpoint security endpoint detection and response subtype|
 |accountProtection|5|Endpoint security account protection subtype|
 |antivirus|6|Endpoint security anitivirus subtype|
-
-
-
-
-
-
+|firewallSharedAppList|7|Endpoint security firewall shared app subtype|
+|firewallSharedIpList|8|Endpoint security firewall shared ip range list subtype|
+|firewallSharedPortlist|9|Endpoint security firewall shared port range list subtype|

@@ -1,10 +1,11 @@
 ---
 title: "shiftAvailability resource type"
 description: "Availability of the user to be scheduled for work and its recurrence pattern."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # shiftAvailability resource type
@@ -23,7 +24,7 @@ Availability of the user to be scheduled for a [shift](shift.md) and its recurre
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

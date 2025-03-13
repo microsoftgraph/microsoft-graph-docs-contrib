@@ -1,10 +1,12 @@
 ---
 title: "educationFeedbackOutcome resource type"
 description: "An educationOutcome that gives feedback in the form of text."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
+toc.title: Feedback outcome
+ms.date: 07/23/2024
 ---
 
 # educationFeedbackOutcome resource type
@@ -19,22 +21,23 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
+| [Update outcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|id|String|Unique identifier for the educationFeedbackOutcome.|
 |feedback|[educationFeedback](educationfeedback.md)|Teacher's written feedback to the student.|
 |publishedFeedback|[educationFeedback](educationfeedback.md)|A copy of the feedback property that is made when the grade is released to the student.|
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -42,12 +45,12 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.educationFeedbackOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
+  "id": "String (identifier)",
   "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
   "publishedFeedback": {"@odata.type": "microsoft.graph.educationFeedback"}
 }

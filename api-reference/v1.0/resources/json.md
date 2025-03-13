@@ -1,25 +1,26 @@
 ---
-title: "Json resource type"
-description: "Represents data returned in JSON format"
-localization_priority: Normal
+title: "json resource type"
+description: "Represents data returned in JSON format for Excel."
+ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.subservice: excel
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
-# Json resource type
+# json resource type 
 
 Namespace: microsoft.graph
 
-Represents data returned in JSON format
+Represents data returned in JSON format for Excel.
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
-None
+None.
+
 ## JSON Representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.Json"

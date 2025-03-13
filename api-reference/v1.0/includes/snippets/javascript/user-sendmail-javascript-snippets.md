@@ -12,30 +12,30 @@ const client = Client.init(options);
 
 const sendMail = {
   message: {
-    subject: "Meet for lunch?",
+    subject: 'Meet for lunch?',
     body: {
-      contentType: "Text",
-      content: "The new cafeteria is open."
+      contentType: 'Text',
+      content: 'The new cafeteria is open.'
     },
     toRecipients: [
       {
         emailAddress: {
-          address: "fannyd@contoso.onmicrosoft.com"
+          address: 'frannis@contoso.com'
         }
       }
     ],
     ccRecipients: [
       {
         emailAddress: {
-          address: "danas@contoso.onmicrosoft.com"
+          address: 'danas@contoso.com'
         }
       }
     ]
   },
-  saveToSentItems: "false"
+  saveToSentItems: 'false'
 };
 
-let res = await client.api('/me/sendMail')
+await client.api('/me/sendMail')
 	.post(sendMail);
 
 ```

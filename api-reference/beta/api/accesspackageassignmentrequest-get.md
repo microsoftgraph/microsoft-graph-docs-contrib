@@ -1,10 +1,11 @@
 ---
 title: "Get accessPackageAssignmentRequest"
 description: "Retrieve the properties and relationships of an accessPackageAssignmentRequest object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 11/06/2024
 ---
 
 # Get accessPackageAssignmentRequest
@@ -13,39 +14,44 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve the properties and relationships of an  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-get-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
+
+> [!NOTE]
+> The `/accessPackageAssignmentRequests` path will be retired soon. Use the `/assignmentRequests` path instead.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
+GET /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageAssignmentRequestId}
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve the access package that was requested, include `$expand=accessPackage` in the query. To retrieve the resulting assignment, include `$expand=accessPackageAssignment` in the query.  For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to expand the relationships, to retrieve the `accessPackage`, `requestor` and `acccessPackageAssignment`.  For example, to retrieve the target of the access package assignment, include `$expand=accessPackageAssignment($expand=target)` in the query.  For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +61,7 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,26 +72,46 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-accesspackageassignmentrequest-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageassignmentrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignmentrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignmentrequest-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-accesspackageassignmentrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accesspackageassignmentrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-accesspackageassignmentrequest-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -98,12 +124,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "433dafca-5047-4614-95f7-a03510b1ded3",
-  "requestType": "AdminAdd",
-  "requestState": "Delivered",
-  "requestStatus": "Fulfilled",
-  "isValidationOnly": false,
-  "createdDateTime": "2019-10-25T22:55:11.623Z"
+    "id": "c0cfd117-f90e-4f48-8226-e282a2ae752c",
+    "requestType": "UserAdd",
+    "requestState": "delivered",
+    "requestStatus": "Delivered",
+    "createdDateTime": "2022-01-07T00:51:12.817Z",
+    "completedDate": "2022-01-07T00:53:15.127Z",
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": "notSpecified"
+        }
+    },
+    "customExtensionCalloutInstances": [
+        {
+            "status": "callbackReceived",
+            "externalCorrelationId": "08585600902100964604743022906CU13",
+            "customExtensionId": "e59ef33d-7bc4-4b15-8d3c-01153de8a498",
+            "id": "3C49CE50-E02C-4254-81E6-834328DF72DC",
+            "detail": "Request has been allowed"
+        }
+    ]
 }
 ```
 
@@ -116,5 +160,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

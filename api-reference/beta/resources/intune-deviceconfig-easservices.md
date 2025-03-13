@@ -1,10 +1,11 @@
 ---
 title: "easServices enum type"
 description: "Exchange Active Sync services."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # easServices enum type
@@ -20,15 +21,9 @@ Exchange Active Sync services.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|Not yet documented|
+|none|0||
 |calendars|1|Enables synchronization of calendars.|
 |contacts|2|Enables synchronization of contacts.|
 |email|4|Enables synchronization of email.|
 |notes|8|Enables synchronization of notes.|
 |reminders|16|Enables synchronization of reminders.|
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "messageRule resource type"
-description: "A rule that applies to messages in the Inbox of a user."
-author: "svpsiva"
-localization_priority: Normal
-ms.prod: "outlook"
+description: "Represents a rule that applies to messages in the Inbox of a user."
+author: "SuryaLashmiS"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # messageRule resource type
@@ -13,20 +14,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A rule that applies to messages in the Inbox of a user.
+Represents a rule that applies to messages in the Inbox of a user.
 
-In Outlook, you can set up rules for incoming messages in the Inbox to carry out specific actions upon certain conditions. 
+In Outlook, you can set up rules for incoming messages in the Inbox to carry out specific actions upon certain conditions.
 
-Programmatically, you can access rules through the **messageRules** navigation property of the Inbox [folder](mailfolder.md). 
-Each rule is represented by this **messageRule** resource, available rule actions are represented by the [messageRuleActions](messageruleactions.md) complex type, 
+Programmatically, you can access rules through the **messageRules** navigation property of the Inbox [folder](mailfolder.md).
+Each rule is represented by this **messageRule** resource, available rule actions are represented by the [messageRuleActions](messageruleactions.md) complex type,
 and available rule conditions and exceptions are represented by the [messageRulePredicates](messagerulepredicates.md) complex type.
 
+## Methods
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection |Get all the **messageRule** objects defined for the user's Inbox.|
+|[Get rule](../api/messagerule-get.md) | [messageRule](messagerule.md) |Read the properties and relationships of a **messageRule** object.|
+|[Create rule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Create a **messageRule** object by specifying a set of conditions and actions.|
+|[Update rule](../api/messagerule-update.md) | [messageRule](messagerule.md) |Change writable properties on a **messageRule** object and save the changes. |
+|[Delete rule](../api/messagerule-delete.md) | None |Delete the specified **messageRule** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | Actions to be taken on a message when the corresponding conditions are fulfilled. |
-| conditions | [messageRulePredicates](messagerulepredicates.md) | Conditions that when fulfilled, will trigger the corresponding actions for that rule. |
+| conditions | [messageRulePredicates](messagerulepredicates.md) | Conditions that when fulfilled trigger the corresponding actions for that rule. |
 | displayName | String | The display name of the rule. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Exception conditions for the rule. |
 | hasError | Boolean | Indicates whether the rule is in an error condition. Read-only. |
@@ -36,8 +45,11 @@ and available rule conditions and exceptions are represented by the [messageRule
 | sequence | Int32 | Indicates the order in which the rule is executed, among other rules. |
 
 
+## Relationships
+None.
+
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -58,17 +70,7 @@ Here is a JSON representation of the resource.
   "isReadOnly": "Boolean",
   "sequence": "Int32"
 }
-
 ```
-
-## Methods
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection |Get all the **messageRule** objects defined for the user's Inbox.|
-|[Get rule](../api/messagerule-get.md) | [messageRule](messagerule.md) |Read the properties and relationships of a **messageRule** object.|
-|[Create](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Create a **messageRule** object by specifying a set of conditions and actions.|
-|[Update](../api/messagerule-update.md) | [messageRule](messagerule.md) |Change writable properties on a **messageRule** object and save the changes. |
-|[Delete](../api/messagerule-delete.md) | None |Delete the specified **messageRule** object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

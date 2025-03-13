@@ -1,10 +1,11 @@
 ---
 title: "List deviceManagementPartners"
 description: "List properties and relationships of the deviceManagementPartner objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List deviceManagementPartners
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ GET /deviceManagement/deviceManagementPartners
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1242
+Content-Length: 1165
 
 {
   "value": [
@@ -73,17 +76,17 @@ Content-Length: 1242
       "singleTenantAppId": "Single Tenant App Id value",
       "displayName": "Display Name value",
       "isConfigured": true,
-      "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
-      "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
       "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
       "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
       "groupsRequiringPartnerEnrollment": [
         {
           "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+            "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
             "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-            "deviceAndAppManagementAssignmentFilterType": "include"
+            "deviceAndAppManagementAssignmentFilterType": "include",
+            "targetType": "user",
+            "entraObjectId": "Entra Object Id value"
           }
         }
       ]
@@ -91,9 +94,3 @@ Content-Length: 1242
   ]
 }
 ```
-
-
-
-
-
-

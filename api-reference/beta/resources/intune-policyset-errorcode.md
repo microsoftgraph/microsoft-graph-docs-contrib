@@ -1,10 +1,11 @@
 ---
 title: "errorCode enum type"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Policyset Errorcode Resources ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # errorCode enum type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Members
 |Member|Value|Description|
@@ -24,9 +25,3 @@ Not yet documented
 |unauthorized|1|The current user does not have access due to lack of RBAC permissions on the resource.|
 |notFound|2|The current user does not have access due to lack of RBAC Scope Tags on the resource.|
 |deleted|3|The resource has been deleted.|
-
-
-
-
-
-

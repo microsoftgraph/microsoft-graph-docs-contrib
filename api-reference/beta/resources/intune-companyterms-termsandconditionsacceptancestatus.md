@@ -1,10 +1,11 @@
 ---
 title: "termsAndConditionsAcceptanceStatus resource type"
 description: "A termsAndConditionsAcceptanceStatus entity represents the acceptance status of a given Terms and Conditions (T&C) policy by a given user. Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # termsAndConditionsAcceptanceStatus resource type
@@ -58,9 +59,3 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
-

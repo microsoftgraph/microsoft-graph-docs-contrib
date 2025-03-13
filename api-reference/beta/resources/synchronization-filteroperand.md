@@ -1,10 +1,11 @@
 ---
 title: "filterOperand resource type"
 description: "Contains a collection of values for the operand."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # filterOperand resource type
@@ -16,13 +17,16 @@ Namespace: microsoft.graph
 Contains a collection of values for the operand.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |values|String collection|Collection of values.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -36,7 +40,6 @@ The following is a JSON representation of the resource.
 {
   "values": ["String"]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

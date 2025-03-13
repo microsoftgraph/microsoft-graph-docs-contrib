@@ -1,15 +1,16 @@
 ---
-title: paymentTerms resource type 
-description: A payment terms object in Dynamics 365 Business Central.
+title: paymentTerm resource type
+description: A payment term object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
-ms.prod: "dynamics-365-business-central"
+ms.localizationpriority: medium
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
-# paymentTerms resource type
+# paymentTerm resource type
 
 Namespace: microsoft.graph
 
@@ -21,44 +22,43 @@ Represents a payment term in Dynamics 365 Business Central.
 
 | Method                                                      | Return Type|Description            |
 |:------------------------------------------------------------|:-----------|:----------------------|
-|[Get paymentTerms](../api/dynamics-paymentterms-get.md)      |paymentTerms|Get a payment terms object.   |
-|[Post paymentTerms](../api/dynamics-create-paymentterms.md)  |paymentTerms|Create a payment terms object.|
-|[Patch paymentTerms](../api/dynamics-paymentterms-update.md) |paymentTerms|Update a payment terms object.|
-|[Delete paymentTerms](../api/dynamics-paymentterms-delete.md)|none        |Delete a payment terms object.|
+|[Get payment terms](../api/dynamics-paymentterms-get.md)      |**paymentTerm**|Get a payment terms object.   |
+|[Create payment terms](../api/dynamics-create-paymentterms.md)  |**paymentTerm**|Create a payment terms object.|
+|[Update payment terms](../api/dynamics-paymentterms-update.md) |**paymentTerm**|Update a payment terms object.|
+|[Delete payment terms](../api/dynamics-paymentterms-delete.md)|none            |Delete a payment terms object.|
 
 ## Properties
 | Property	                   | Type	  |Description                                                |
 |:-----------------------------|:-------|:----------------------------------------------------------|
-|id                            |GUID    |The unique ID of the paymentTerms. Non-editable.           |
+|calculateDiscountOnCreditMemos|Boolean |Specifies whether the discount should be applied to credit memos. `True` indicates a discount is given; `false`* indicates a discount won't be given.|
 |code                          |string  |Specifies the payment term code.                           |
-|displayName                   |string  |Specifies the payment term display name.                   |
-|dueDateCalculation            |string  |Specifies the formula that is used to calculate the date that a payment must be made.|
 |discountDateCalculation       |string  |Specifies the formula that is used to calculate the date that a payment must be made in order to obtain a discount.|
 |discountPercent               |decimal |Specifies the discount percentage that is applied for early payment of an invoice amount.|
-|calculateDiscountOnCreditMemos|boolean |Specifies if the discount should be applied to credit memos. **True** indicates a discount will be given, **false** indicates a discount will not be given.|
-|lastModifiedDateTime          |datetime|The last datetime the paymentTerms was modified. Read-Only.|  
+|displayName                   |string  |Specifies the payment term display name.                   |
+|dueDateCalculation            |string  |Specifies the formula that is used to calculate the date that a payment must be made.|
+|id                            |GUID    |The unique identifier for the **paymentTerm**. Non-editable.           |
+|lastModifiedDateTime          |datetime|The date and time when the **paymentTerm** were last modified. Read-Only.|
 
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the paymentTerms.
+The following JSON representation shows the resource type.
 
 
 ```json
 {
-  "id": "GUID",
+  "calculateDiscountOnCreditMemos": "boolean",
   "code": "string",
-  "displayName": "string",
-  "dueDateCalculation": "string",
   "discountDateCalculation": "string",
   "discountPercent": "decimal",
-  "calculateDiscountOnCreditMemos": "boolean",
+  "displayName": "string",
+  "dueDateCalculation": "string",
+  "id": "GUID",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
 
 

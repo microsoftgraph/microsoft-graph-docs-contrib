@@ -1,10 +1,11 @@
 ---
 title: "singleValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a single value. "
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "SuryaLashmiS"
+ms.subservice: outlook
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # singleValueLegacyExtendedProperty resource type
@@ -21,8 +22,8 @@ open extensions or extended properties, and how to specify extended properties.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Post](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), or [contactFolder](../resources/contactfolder.md), but not group [post](../resources/post.md). | Create a **singleValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
-|[Get](../api/singlevaluelegacyextendedproperty-get.md) |One or a collection of supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), or group [post](../resources/post.md)), or one such instance expanded with a [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand` or `$filter`.|
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), or [contactFolder](../resources/contactfolder.md), but not group [post](../resources/post.md). | Create a **singleValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md) |One or a collection of supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), or group [post](../resources/post.md)), or one such instance expanded with a [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand` or `$filter`.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -36,7 +37,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -50,7 +51,6 @@ Here is a JSON representation of the resource.
   "id": "string (identifier)",
   "value": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

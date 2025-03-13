@@ -1,10 +1,11 @@
 ---
 title: "parseExpressionResponse resource type"
 description: "Represents the response from the synchronizationSchema: parseExpression action."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
+ms.date: 07/22/2024
 ---
 
 # parseExpressionResponse resource type
@@ -16,7 +17,7 @@ Namespace: microsoft.graph
 Represents the response from the [parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) action.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |error|publicError|Error details, if expression evaluation resulted in an error.|
 |evaluationResult|String collection|A collection of values produced by the evaluation of the expression.|
@@ -24,9 +25,12 @@ Represents the response from the [parseExpression](../api/synchronization-synchr
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|An [attributeMappingSource](synchronization-attributemappingsource.md) object representing the parsed expression.|
 |parsingSucceeded|Boolean|`true` if the expression was parsed successfully.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -38,13 +42,19 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "error": {"@odata.type": "microsoft.graph.publicError"},
-  "evaluationResult": ["String"],
-  "evaluationSucceeded": true,
-  "parsedExpression": {"@odata.type": "microsoft.graph.attributeMappingSource"},
-  "parsingSucceeded": true
+  "@odata.type": "#microsoft.graph.parseExpressionResponse",
+  "error": {
+    "@odata.type": "microsoft.graph.publicError"
+  },
+  "evaluationSucceeded": "Boolean",
+  "evaluationResult": [
+    "String"
+  ],
+  "parsedExpression": {
+    "@odata.type": "microsoft.graph.attributeMappingSource"
+  },
+  "parsingSucceeded": "Boolean"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

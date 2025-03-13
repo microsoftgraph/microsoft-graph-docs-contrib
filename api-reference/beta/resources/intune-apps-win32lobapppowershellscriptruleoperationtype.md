@@ -1,10 +1,11 @@
 ---
 title: "win32LobAppPowerShellScriptRuleOperationType enum type"
 description: "Contains all supported Powershell Script output detection type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # win32LobAppPowerShellScriptRuleOperationType enum type
@@ -27,9 +28,3 @@ Contains all supported Powershell Script output detection type.
 |float|4|Output data type is float.|
 |version|5|Output data type is version.|
 |boolean|6|Output data type is boolean.|
-
-
-
-
-
-

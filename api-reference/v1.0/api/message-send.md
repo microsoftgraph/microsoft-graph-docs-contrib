@@ -1,28 +1,32 @@
 ---
 title: "message: send"
-description: "Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or"
-localization_priority: Priority
-author: "svpsiva"
-ms.prod: "outlook"
+description: "Send an existing draft message."
+ms.localizationpriority: high
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # message: send
 
 Namespace: microsoft.graph
 
-Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or
-a forward draft. The message is then saved in the Sent Items folder.
+Send an existing draft message.
+
+The draft message can be a new message [draft](../api/user-post-messages.md), [reply draft](../api/message-createreply.md), [reply-all draft](../api/message-createreplyall.md), or a [forward draft](../api/message-createforward.md).
+
+This method saves the message in the **Sent Items** folder.
+
+Alternatively, [send a new message](../api/user-sendmail.md) in a single operation.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Send    |
-|Delegated (personal Microsoft account) | Mail.Send    |
-|Application | Mail.Send |
+<!-- { "blockType": "permissions", "name": "message_send" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-send-permissions.md)]
 
 ## HTTP request
 
@@ -37,22 +41,25 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Length | number | 0. Required. |
 
 ## Request body
+Since this method sends an already existing draft message, specifying a request body is not necessary.
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns `202 Accepted` response code. It doesn't return anything in the response body.
 
-## Example
+## Examples
+
+### Example 1: Send an existing draft message
 
 The following example shows how to call this API.
 
 ##### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,28 +70,44 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-send-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/message-send-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-send-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/message-send-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-send-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-send-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/message-send-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/message-send-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-send-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/message-send-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

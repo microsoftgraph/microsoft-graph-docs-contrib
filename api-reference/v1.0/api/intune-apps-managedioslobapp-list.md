@@ -1,10 +1,11 @@
 ---
 title: "List managedIOSLobApps"
 description: "List properties and relationships of the managedIOSLobApp objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List managedIOSLobApps
@@ -15,14 +16,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md) objects.
 
-## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from most to least privileged)|
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +39,7 @@ GET /deviceAppManagement/mobileApps
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -49,16 +52,55 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_apps_managedioslobapp_list_list_managedioslobapps" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-managedioslobapp-list-list-managedioslobapps-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-managedioslobapp-list-list-managedioslobapps-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-apps-managedioslobapp-list-list-managedioslobapps-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-apps-managedioslobapp-list-list-managedioslobapps-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-apps-managedioslobapp-list-list-managedioslobapps-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-apps-managedioslobapp-list-list-managedioslobapps-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-managedioslobapp-list-list-managedioslobapps-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-apps-managedioslobapp-list-list-managedioslobapps-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.managedIOSLobApp" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1680
+Content-Length: 1728
 
 {
   "value": [
@@ -100,7 +142,9 @@ Content-Length: 1680
         "v10_0": true,
         "v11_0": true,
         "v12_0": true,
-        "v13_0": true
+        "v13_0": true,
+        "v14_0": true,
+        "v15_0": true
       },
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "versionNumber": "Version Number value",
@@ -109,12 +153,3 @@ Content-Length: 1680
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

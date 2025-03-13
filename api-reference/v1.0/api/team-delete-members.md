@@ -1,25 +1,26 @@
 ---
-title: "Remove members from team"
+title: "Remove member from team"
 description: "Remove a conversationMember from a team."
-author: "nkramer"
-localization_priority: Priority
-ms.prod: "microsoft-teams"
+author: "MSFTRickyCastaneda"
+ms.localizationpriority: high
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/19/2024
 ---
 
-# Remove members from team
+# Remove member from team
 Namespace: microsoft.graph
 
-Remove a new [conversationMember](../resources/conversationmember.md) from a [team](../resources/team.md).
+Remove a [conversationMember](../resources/conversationmember.md) from a [team](../resources/team.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)| TeamMember.ReadWrite.All|
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application| TeamMember.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "team_delete_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/team-delete-members-permissions.md)]
+
 
 ## HTTP request
 
@@ -29,16 +30,15 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /teams/{team-id}/members/{membership-id}
-DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,32 +51,50 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_members_from_team"
+  "name": "delete_members_from_team",
+  "sampleKeys": ["ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062", "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk="]
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membership-id}
+DELETE https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-members-from-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-members-from-team-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-members-from-team-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-members-from-team-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-members-from-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-members-from-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-members-from-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-members-from-team-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-members-from-team-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-members-from-team-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -85,3 +103,7 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+## Related content
+
+- [Remove member from channel](channel-delete-members.md)

@@ -1,10 +1,11 @@
 ---
 title: "managedAndroidStoreApp resource type"
 description: "Contains properties and inherited properties for Android store apps that you can manage with an Intune app protection policy."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # managedAndroidStoreApp resource type
@@ -98,16 +99,15 @@ Here is a JSON representation of the resource.
     "v4_3": true,
     "v4_4": true,
     "v5_0": true,
-    "v5_1": true
+    "v5_1": true,
+    "v6_0": true,
+    "v7_0": true,
+    "v7_1": true,
+    "v8_0": true,
+    "v8_1": true,
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
   }
 }
 ```
-
-
-
-
-
-
-
-
-

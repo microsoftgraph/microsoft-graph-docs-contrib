@@ -4,25 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var message = new Message
+// Dependencies
+using Microsoft.Graph.Beta.Me.Messages.Item.ReplyAll;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ReplyAllPostRequestBody
 {
-	Attachments = (IMessageAttachmentsCollectionPage)new List<Attachment>()
+	Message = new Message
 	{
-		new FileAttachment
+		Attachments = new List<Attachment>
 		{
-			Name = "guidelines.txt",
-			ContentBytes = Encoding.ASCII.GetBytes("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
-		}
-	}
+			new FileAttachment
+			{
+				OdataType = "#microsoft.graph.fileAttachment",
+				Name = "guidelines.txt",
+				ContentBytes = Convert.FromBase64String("bWFjIGFuZCBjaGVlc2UgdG9kYXk="),
+			},
+		},
+	},
+	Comment = "Please take a look at the attached guidelines before you decide on the name.",
 };
 
-var comment = "Please take a look at the attached guidelines before you decide on the name.";
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Me.Messages["{message-id}"].ReplyAll.PostAsync(requestBody);
 
-await graphClient.Me.Messages["AAMkADA1MTAAAH5JaKAAA="]
-	.ReplyAll(message,comment)
-	.Request()
-	.PostAsync();
 
 ```

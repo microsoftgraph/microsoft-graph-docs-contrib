@@ -1,10 +1,11 @@
 ---
 title: "windows10VpnProxyServer resource type"
 description: "VPN Proxy Server."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windows10VpnProxyServer resource type
@@ -47,9 +48,3 @@ Here is a JSON representation of the resource.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
-
-
-
-
-

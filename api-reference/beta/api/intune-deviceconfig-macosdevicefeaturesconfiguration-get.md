@@ -1,10 +1,11 @@
 ---
 title: "Get macOSDeviceFeaturesConfiguration"
 description: "Read properties and relationships of the macOSDeviceFeaturesConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get macOSDeviceFeaturesConfiguration
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -43,7 +46,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5905
+Content-Length: 6648
 
 {
   "value": {
@@ -141,6 +144,16 @@ Content-Length: 5905
         "value": "Value value"
       }
     ],
+    "appAssociatedDomains": [
+      {
+        "@odata.type": "microsoft.graph.macOSAssociatedDomainsItem",
+        "applicationIdentifier": "Application Identifier value",
+        "domains": [
+          "Domains value"
+        ],
+        "directDownloadsEnabled": true
+      }
+    ],
     "singleSignOnExtension": {
       "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
       "extensionIdentifier": "Extension Identifier value",
@@ -185,7 +198,18 @@ Content-Length: 5905
       "activeDirectorySiteCode": "Active Directory Site Code value",
       "passwordEnableLocalSync": true,
       "blockActiveDirectorySiteAutoDiscovery": true,
-      "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+      "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+      "modeCredentialUsed": "Mode Credential Used value",
+      "usernameLabelCustom": "Username Label Custom value",
+      "userSetupDelayed": true,
+      "signInHelpText": "Sign In Help Text value",
+      "kerberosAppsInBundleIdACLIncluded": true,
+      "managedAppsInBundleIdACLIncluded": true,
+      "credentialsCacheMonitored": true,
+      "preferredKDCs": [
+        "Preferred KDCs value"
+      ],
+      "tlsForLDAPRequired": true
     },
     "contentCachingEnabled": true,
     "contentCachingType": "userContentOnly",
@@ -235,9 +259,3 @@ Content-Length: 5905
   }
 }
 ```
-
-
-
-
-
-

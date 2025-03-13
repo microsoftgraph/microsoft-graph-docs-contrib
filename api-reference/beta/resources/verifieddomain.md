@@ -1,10 +1,11 @@
 ---
 title: "verifiedDomain resource type"
-description: "Specifies a domain for a tenant. The **verifiedDomains** property of the organization entity is a collection of **VerifiedDomain**."
-localization_priority: Normal
+description: "Specifies a domain for a tenant. The verifiedDomains property of the organization entity is a collection of verifiedDomain objects."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "davidmu1"
+ms.subservice: "entra-directory-management"
+author: "tafra00"
+ms.date: 04/25/2024
 ---
 
 # verifiedDomain resource type
@@ -13,21 +14,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.
-
+Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **verifiedDomain** objects.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|capabilities|String|For example, “Email”, “OfficeCommunicationsOnline”.|
-|isDefault|Boolean|                **true** if this is the default domain associated with the tenant; otherwise, **false**.            |
-|isInitial|Boolean|**true** if this is the initial domain associated with the tenant; otherwise, **false**|
-|name|String|The domain name; for example, “contoso.onmicrosoft.com”|
-|type|String|For example, “Managed”.|
+
+| Property | Type | Description|
+|---------|---------|---------|
+| capabilities | String | For example, `Email`, `OfficeCommunicationsOnline`. |
+| isDefault | Boolean | `true` if this is the default domain associated with the tenant; otherwise, `false`. |
+| isInitial | Boolean | `true` if this is the initial domain associated with the tenant; otherwise, `false`. |
+| name | String | The domain name; for example, `contoso.com`. |
+| type | String | For example, `Managed`. |
+
+## Relationships
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -39,11 +43,11 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "capabilities": "string",
+  "capabilities": "String",
   "isDefault": true,
   "isInitial": true,
-  "name": "string",
-  "type": "string"
+  "name": "String",
+  "type": "String"
 }
 
 ```

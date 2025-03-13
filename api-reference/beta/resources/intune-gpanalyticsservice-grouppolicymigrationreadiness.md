@@ -1,10 +1,11 @@
 ---
 title: "groupPolicyMigrationReadiness enum type"
 description: "Indicates if the Group Policy Object file is covered and ready for Intune migration."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # groupPolicyMigrationReadiness enum type
@@ -25,9 +26,3 @@ Indicates if the Group Policy Object file is covered and ready for Intune migrat
 |complete|3|Complete Intune coverage|
 |error|4|Error when analyzing coverage|
 |notApplicable|5|No Group Policy settings in GPO|
-
-
-
-
-
-

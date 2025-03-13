@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementCertificationAuthority enum type"
 description: "Device Management Certification Authority Types."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementCertificationAuthority enum type
@@ -23,9 +24,3 @@ Device Management Certification Authority Types.
 |notConfigured|0|Not configured.|
 |microsoft|1|Microsoft Certification Authority type.|
 |digiCert|2|DigiCert Certification Authority type.|
-
-
-
-
-
-

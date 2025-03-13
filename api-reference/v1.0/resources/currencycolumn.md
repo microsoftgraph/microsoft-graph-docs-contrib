@@ -1,11 +1,10 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/11/2017
 title: CurrencyColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The currencyColumn on a columnDefinition resource indicates that the column's values represent currency."
-ms.prod: ""
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

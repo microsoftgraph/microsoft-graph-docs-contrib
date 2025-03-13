@@ -1,13 +1,14 @@
 ---
-title: "Create or replace a historyItem"
+title: "Create or replace an activityHistoryItem"
 description: "Create a new or replace an existing history item for an existing user activity."
-localization_priority: Normal
-ms.prod: "project-rome"
+ms.localizationpriority: medium
+ms.subservice: "project-rome"
 doc_type: apiPageType
 author: "ailae"
+ms.date: 06/22/2024
 ---
 
-# Create or replace a historyItem
+# Create or replace an activityHistoryItem
 
 Namespace: microsoft.graph
 
@@ -17,14 +18,11 @@ Create a new or replace an existing history item for an existing user activity.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "projectrome_put_historyitem" } -->
+[!INCLUDE [permissions-table](../includes/permissions/projectrome-put-historyitem-permissions.md)]
 
 ## HTTP request
 
@@ -34,37 +32,37 @@ One of the following permissions is required to call this API. To learn more, in
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Id needs to be a GUID.
+`{id}` needs to be a GUID.
 
 ## Request headers
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Required.|
+|Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.
+In the request body, supply a JSON representation of a [activityHistoryItem](../resources/projectrome-historyitem.md) object.
 
 ## Response
 
-If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.
+If successful, this method returns a `201 Created` response code if the **activityHistoryItem** was created or `200 OK` if the **activityHistoryItem** was replaced.
 
 ## Example
 
-#### Request
+### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 <!-- {
     "blockType": "ignored",
-    "name": "upsert_historyItem"
+    "name": "upsert_historyItem",
+  "sampleKeys": ["13881113971988980728", "390e06e2-7e5b-4133-8014-fac7ac5991af"]
 } -->
 
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 Content-type: application/json
-Content-length: 364
 
 {
     "startedDateTime": "2015-02-11T20:54:04.3457274+00:00",
@@ -73,14 +71,14 @@ Content-length: 364
 }
 ```
 
-#### Response
+### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.historyItem"
+    "@odata.type": "microsoft.graph.activityHistoryItem"
 } -->
 
 ```http

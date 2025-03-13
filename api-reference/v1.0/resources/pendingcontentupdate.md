@@ -1,10 +1,11 @@
 ---
 title: "pendingContentUpdate"
 description: "The pendingContentUpdate resource indicates that an operation that might affect the binary content of the driveItem is pending completion."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "learafa"
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # pendingContentUpdate resource type
@@ -21,7 +22,7 @@ Indicates that an operation that might affect the binary content of the **driveI
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

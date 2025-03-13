@@ -1,10 +1,11 @@
 ---
 title: "locateDeviceActionResult resource type"
 description: "Locate device action result"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # locateDeviceActionResult resource type
@@ -48,7 +49,6 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)",
   "deviceLocation": {
     "@odata.type": "microsoft.graph.deviceGeoLocation",
-    "lastCollectedDateTimeUtc": "String (timestamp)",
     "lastCollectedDateTime": "String (timestamp)",
     "longitude": "4.2",
     "latitude": "4.2",
@@ -60,9 +60,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "deviceInstallState resource type"
 description: "Contains properties for the installation state for a device."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceInstallState resource type
@@ -62,12 +63,3 @@ Here is a JSON representation of the resource.
   "userName": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

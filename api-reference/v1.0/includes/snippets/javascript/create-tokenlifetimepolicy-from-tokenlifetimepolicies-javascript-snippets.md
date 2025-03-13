@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const tokenLifetimePolicy = {
-  definition: [
-    "definition-value"
-  ],
-  displayName: "displayName-value",
-  isOrganizationDefault: true
+    definition: [
+        '{\"TokenLifetimePolicy\':{\'Version\':1,\'AccessTokenLifetime\':\"8:00:00\"}}"
+    ],
+    displayName: 'Contoso token lifetime policy',
+    isOrganizationDefault: true
 };
 
-let res = await client.api('/policies/tokenLifetimePolicies')
+await client.api('/policies/tokenLifetimePolicies')
 	.post(tokenLifetimePolicy);
 
 ```

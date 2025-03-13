@@ -1,10 +1,11 @@
 ---
 title: "windowsPrivacyDataAccessLevel enum type"
 description: "Determine the access level to specific Windows privacy data category."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # windowsPrivacyDataAccessLevel enum type
@@ -24,9 +25,3 @@ Determine the access level to specific Windows privacy data category.
 |forceAllow|1|Apps will be allowed to access the specified privacy data.|
 |forceDeny|2|Apps will be denied to access specified privacy data.|
 |userInControl|3|Users will be prompted when apps try to access specified privacy data.|
-
-
-
-
-
-

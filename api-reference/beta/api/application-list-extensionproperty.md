@@ -1,51 +1,54 @@
 ---
-title: "List extensionProperties"
-description: "Retrieve a list of extensionproperty objects."
-localization_priority: Normal
-author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+title: "List extensionProperties (directory extensions)"
+description: "Retrieve a list of directory extension definitions."
+ms.localizationpriority: medium
+author: "dkershaw10"
+ms.subservice: extensions
 doc_type: "apiPageType"
+ms.date: 04/17/2024
 ---
 
-# List extensionProperties
+# List extensionProperties (directory extensions)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an application.
+Retrieve the list of directory extension definitions, represented by [extensionProperty](../resources/extensionproperty.md) objects on an [application](../resources/application.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All    |
-|Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "application_list_extensionproperty" } -->
+[!INCLUDE [permissions-table](../includes/permissions/application-list-extensionproperty-permissions.md)]
+
+
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /applications/{id}/extensionProperties
+GET /applications/{application ObjectId}/extensionProperties
+GET /applications(appId='{appId}')/extensionProperties
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` (`eq` on **name**) OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -64,26 +67,46 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}/extensionProperties
+GET https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-extensionproperties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-extensionproperties-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-extensionproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-extensionproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-extensionproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-extensionproperties-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-extensionproperties-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-extensionproperties-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-extensionproperties-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -97,16 +120,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('fd918e4b-c821-4efb-b50a-5eddd23afc6f')/extensionProperties",
     "value": [
         {
-            "id": "a2c459db-f5dc-4328-ae9b-118e88d04d19",
+            "id": "da38c7b1-133e-4a79-abcd-e2fd586ce621",
             "deletedDateTime": null,
-            "appDisplayName": "Display name",
-            "name": "extension_b3efaf8f68a44275abcff28ef86b2ee3_extensionName",
+            "appDisplayName": "",
+            "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
+            "isMultiValued": true,
             "targetObjects": [
-            	"Application"
+                "User"
+            ]
+        },
+        {
+            "id": "1f0f15e3-925d-40f0-8fc8-9d3ad135bce0",
+            "deletedDateTime": null,
+            "appDisplayName": "",
+            "name": "extension_25883231668a43a780b25685c3f874bc_cpiminternal_useAccountEnabledForPhone",
+            "dataType": "String",
+            "isSyncedFromOnPremises": false,
+            "isMultiValued": true,
+            "targetObjects": [
+                "User"
             ]
         }
     ]
@@ -122,5 +159,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

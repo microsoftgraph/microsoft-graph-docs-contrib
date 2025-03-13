@@ -1,10 +1,11 @@
 ---
 title: "Update onPremisesPublishingProfile"
 description: "Update the properties of an onPremisesPublishingProfile object."
-localization_priority: Normal
-author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Update onPremisesPublishingProfile
@@ -17,27 +18,24 @@ Update the properties of an [onPremisesPublishingProfile](../resources/onpremise
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:--------------------------------------|:---------------------------------------------------------|
-| Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "onpremisespublishingprofile_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/onpremisespublishingprofile-update-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfiguration
+PATCH /onPremisesPublishingProfiles/{profile-id}/hybridAgentUpdaterConfiguration
 ```
 
 ## Request headers
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -59,12 +57,12 @@ The following example updates the **updateWindow** in the **hybridAgentUpdaterCo
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_onpremisespublishingprofile"
+  "name": "update_onpremisespublishingprofile_1"
 }-->
 
 ```http
@@ -79,43 +77,36 @@ Content-Type: application/json
   }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-onpremisespublishingprofile-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-onpremisespublishingprofile-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
+  "blockType": "response"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update deferUpdate in the hybridAgentUpdaterConfiguration 
+### Example 2: Update deferUpdate in the hybridAgentUpdaterConfiguration
 
 The following example updates **deferUpdate** in the **hybridAgentUpdaterConfiguration**.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_onpremisespublishingprofile"
+  "name": "update_onpremisespublishingprofile_2"
 }-->
 
 ```http
@@ -127,12 +118,16 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
+  "blockType": "response"
 } -->
 
 ```http
@@ -145,10 +140,12 @@ The following example updates **allowUpdateConfigurationOverride** in the **hybr
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_onpremisespublishingprofile"
+  "name": "update_onpremisespublishingprofile_3"
 }-->
 
 ```http
@@ -160,12 +157,16 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
+  "blockType": "response"
 } -->
 
 ```http
@@ -181,5 +182,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

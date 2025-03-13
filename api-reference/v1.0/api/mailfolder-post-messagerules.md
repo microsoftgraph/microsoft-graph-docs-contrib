@@ -1,10 +1,11 @@
 ---
 title: "Create rule"
 description: "Create a messageRule object by specifying a set of conditions and actions. "
-author: "svpsiva"
-localization_priority: Normal
-ms.prod: "outlook"
+author: "SuryaLashmiS"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create rule
@@ -12,18 +13,17 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions. 
+Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions.
 
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.ReadWrite    |
-|Delegated (personal Microsoft account) | MailboxSettings.ReadWrite    |
-|Application | MailboxSettings.ReadWrite |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "mailfolder_post_messagerules" } -->
+[!INCLUDE [permissions-table](../includes/permissions/mailfolder-post-messagerules-permissions.md)]
 
 
 ## HTTP request
@@ -35,11 +35,11 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body
-In the request body, supply the parameters that are applicable to your rule. The following are body parameters that are typically used 
+In the request body, supply the parameters that are applicable to your rule. The following are body parameters that are typically used
 when creating rules. You can specify any other writable **messageRule** properties as appropriate in the request body.
 
 | Name       | Type|Description|
@@ -56,7 +56,7 @@ If successful, this method returns `201 Created` response code and a **messageRu
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,13 +68,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 Content-type: application/json
 
-{      
-    "displayName": "From partner",      
-    "sequence": 2,      
-    "isEnabled": true,          
+{
+    "displayName": "From partner",
+    "sequence": 2,
+    "isEnabled": true,
     "conditions": {
         "senderContains": [
-          "adele"       
+          "adele"
         ]
      },
      "actions": {
@@ -82,35 +82,52 @@ Content-type: application/json
           {
              "emailAddress": {
                 "name": "Alex Wilbur",
-                "address": "AlexW@contoso.onmicrosoft.com"
+                "address": "AlexW@contoso.com"
               }
            }
         ],
         "stopProcessingRules": true
-     }    
+     }
 }
 
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-messagerule-from-mailfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-messagerule-from-mailfolder-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-messagerule-from-mailfolder-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-messagerule-from-mailfolder-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-messagerule-from-mailfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-messagerule-from-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-messagerule-from-mailfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-messagerule-from-mailfolder-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-messagerule-from-mailfolder-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-messagerule-from-mailfolder-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -138,7 +155,7 @@ Content-type: application/json
         {
           "emailAddress":{
             "name":"Alex Wilbur",
-            "address":"AlexW@contoso.onmicrosoft.com"
+            "address":"AlexW@contoso.com"
           }
         }
       ]

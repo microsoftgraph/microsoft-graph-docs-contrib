@@ -1,9 +1,10 @@
 ---
 title: "Replace shift"
 description: "Replace an existing shift."
-author: "akumar39"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.date: 11/21/2024
+author: "victorcheng"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -15,45 +16,52 @@ Replace an existing [shift](../resources/shift.md).
 
 If the specified [shift](../resources/shift.md) doesn't exist, this method returns `404 Not found`.
 
+The duration of a shift can't be less than 1 minute or longer than 24 hours.
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "shift_put" } -->
+[!INCLUDE [permissions-table](../includes/permissions/shift-put-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teams/{teamId}/schedule/shifts/{shiftId}
+PUT /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
-In the request body, supply a JSON representation of a [shift](../resources/shift.md) object.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+|Property|Type|Description|
+|:---|:---|:---|
+| draftShift           | [shiftItem](../resources/shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they're [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property. Either **draftOpenShift** or **sharedOpenShift** should be `null`. |
+| isStagedForDeletion   | Boolean                           | The **shift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional. |
+| schedulingGroupId    | String                      | ID of the scheduling group the **shift** is part of. Required. |
+| sharedShift          | [shiftItem](../resources/shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Updates to the **sharedShift** property send notifications to users in the Teams client. Either **draftOpenShift** or **sharedOpenShift** should be `null`. |
+| userId               | String                      | ID of the user assigned to the **shift**. Required. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and empty content. If the request specifies the `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 
 #### Request
 
-The following is an example of the request.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -61,162 +69,46 @@ The following is an example of the request.
   "name": "shift-put"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
+PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 Content-type: application/json
-Prefer: return=representation
 
 {
-  "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  },
-  "sharedShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:15:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  },
+  "userId": "5ca83ce7-291d-43b7-bf53-af79eef4bc1d",
   "draftShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
+    "displayName": null,
+    "startDateTime": "2024-10-08T15:00:00Z",
+    "endDateTime": "2024-10-09T00:00:00Z",
     "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:30:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  }
+    "notes": null,
+    "activities": []
+  },
+  "sharedShift": null,
+  "isStagedForDeletion": false
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-put-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shift-put-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-put-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-put-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
----
-
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.shift"
+  "truncated": true
 } -->
-
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 401
-
-{
-  "id": "string",
-  "userId": "string",
-  "schedulingGroupId": "string",
-  "sharedShift": {
-    "notes": "string",
-    "displayName": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
-  },
-  "draftShift": {
-    "notes": "string",
-    "displayName": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
-  },
-  "createdDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedBy": {
-    "user": {
-      "id": "string",
-      "displayName": "string"
-    },
-    "application": {
-      "id": "string",
-      "displayName": "string"
-    },
-    "device": {
-      "id": "string",
-      "displayName": "string"
-    }
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Replace an existing shift",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
   "suppressions": [
   ]
-}
--->
+}-->
 

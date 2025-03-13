@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var events = await graphClient.Groups["02bd9fd6-8f93-4758-87c3-1fb73740a315"].Events
-	.Request()
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Groups["{group-id}"].Events.GetAsync();
+
 
 ```

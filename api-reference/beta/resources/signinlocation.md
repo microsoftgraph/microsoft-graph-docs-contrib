@@ -1,15 +1,19 @@
 ---
 title: "signInLocation resource type"
 description: "Provides the city, state and country/region from where the sign-in happened."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "SarahBar"
+ms.subservice: "entra-monitoring-health"
+author: "egreenberg14"
+ms.date: 03/21/2024
 ---
 
 # signInLocation resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Provides the city, state and country/region from where the sign-in happened.
 
 
@@ -18,13 +22,16 @@ Provides the city, state and country/region from where the sign-in happened.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |city|String|Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.|
-|countryOrRegion|String|Provides the country code info (2 letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.|
+|countryOrRegion|String|Provides the country code info (two letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Provides the latitude, longitude and altitude where the sign-in originated.|
 |state|String|Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

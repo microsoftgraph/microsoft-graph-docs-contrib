@@ -2,9 +2,10 @@
 author: learafa
 description: "List the sites that have been followed by the signed in user."
 title: List followed sites
-localization_priority: Normal
-ms.prod: "SharePoint"
+ms.localizationpriority: medium
+ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # List followed sites
 
@@ -12,34 +13,29 @@ Namespace: microsoft.graph
 
 List the [sites](../resources/site.md) that have been followed by the signed in user.
 
+> **Note:** This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=15193) and might return incorrect results.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "sites_list_followed" } -->
+[!INCLUDE [permissions-table](../includes/permissions/sites-list-followed-permissions.md)]
 
 ## HTTP request
-
-This method is accessible only through OneDrive for Business.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-Get a list of the sites followed by a target user, based on its ID.
 
-```http
-GET /users/{user-id}/followedSites
-```
-**Note:** To access another targeted user's list of followed sites, you need application permissions.
+>**Note:** This method is accessible only through OneDrive for Business.
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -49,7 +45,7 @@ This method supports the [OData query parameters](/graph/query_parameters) to he
 
 ## Request Body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -65,31 +61,47 @@ If no sites were found, an empty collection is returned.
 <!-- { "blockType": "request", "name": "sites-list-followed", "scopes": "sites.readwrite.all" } -->
 
 ```msgraph-interactive
-GET /me/followedSites
+GET https://graph.microsoft.com/v1.0/me/followedSites
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/sites-list-followed-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/sites-list-followed-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/sites-list-followed-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/sites-list-followed-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/sites-list-followed-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/sites-list-followed-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/sites-list-followed-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/sites-list-followed-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sites-list-followed-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/sites-list-followed-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

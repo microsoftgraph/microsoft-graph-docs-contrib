@@ -1,10 +1,11 @@
 ---
 title: "Get depIOSEnrollmentProfile"
 description: "Read properties and relationships of the depIOSEnrollmentProfile object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get depIOSEnrollmentProfile
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -41,7 +44,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -63,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2200
+Content-Length: 2780
 
 {
   "value": {
@@ -78,7 +81,6 @@ Content-Length: 2200
     "isDefault": true,
     "supervisedModeEnabled": true,
     "supportDepartment": "Support Department value",
-    "passCodeDisabled": true,
     "isMandatory": true,
     "locationDisabled": true,
     "supportPhoneNumber": "Support Phone Number value",
@@ -88,7 +90,6 @@ Content-Length: 2200
     "termsAndConditionsDisabled": true,
     "touchIdDisabled": true,
     "applePayDisabled": true,
-    "zoomDisabled": true,
     "siriDisabled": true,
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
@@ -96,6 +97,13 @@ Content-Length: 2200
     "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value",
     "configurationWebUrl": true,
+    "enabledSkipKeys": [
+      "Enabled Skip Keys value"
+    ],
+    "enrollmentTimeAzureAdGroupIds": [
+      "7f64eb6c-eb6c-7f64-6ceb-647f6ceb647f"
+    ],
+    "waitForDeviceConfiguredConfirmation": true,
     "iTunesPairingMode": "allow",
     "managementCertificates": [
       {
@@ -120,13 +128,17 @@ Content-Length: 2200
     "expressLanguageScreenDisabled": true,
     "preferredLanguageScreenDisabled": true,
     "deviceToDeviceMigrationDisabled": true,
-    "welcomeScreenDisabled": true
+    "welcomeScreenDisabled": true,
+    "passCodeDisabled": true,
+    "zoomDisabled": true,
+    "restoreCompletedScreenDisabled": true,
+    "updateCompleteScreenDisabled": true,
+    "forceTemporarySession": true,
+    "temporarySessionTimeoutInSeconds": 0,
+    "userSessionTimeoutInSeconds": 11,
+    "passcodeLockGracePeriodInSeconds": 0,
+    "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+    "userlessSharedAadModeEnabled": true
   }
 }
 ```
-
-
-
-
-
-

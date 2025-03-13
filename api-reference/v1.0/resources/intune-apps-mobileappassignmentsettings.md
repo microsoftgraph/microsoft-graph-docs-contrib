@@ -1,10 +1,11 @@
 ---
 title: "mobileAppAssignmentSettings resource type"
 description: "Abstract class to contain properties used to assign a mobile app to a group."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # mobileAppAssignmentSettings resource type
@@ -34,12 +35,3 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
-
-
-
-
-
-
-
-
-

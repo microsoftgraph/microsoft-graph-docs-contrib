@@ -1,10 +1,11 @@
 ---
 title: "win32LobAppPowerShellScriptDetection resource type"
 description: "Contains PowerShell script properties to detect a Win32 App"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # win32LobAppPowerShellScriptDetection resource type
@@ -45,9 +46,3 @@ Here is a JSON representation of the resource.
   "scriptContent": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "tuple_2OfExecutionType_ICollection_1OfOperation resource type"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Esim Tuple_2Ofexecutiontype_Icollection_1Ofoperation Resources ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # tuple_2OfExecutionType_ICollection_1OfOperation resource type
@@ -15,12 +16,12 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|item2|** Unknown Type `microsoft.management.services.genericWorkloadActivity.models.operation` ** collection|Not yet documented|
+|item2|** Unknown Type `microsoft.management.services.genericWorkloadActivity.models.operation` ** collection||
 
 ## Relationships
 None
@@ -40,9 +41,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

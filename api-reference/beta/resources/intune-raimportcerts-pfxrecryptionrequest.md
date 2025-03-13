@@ -1,10 +1,11 @@
 ---
 title: "pfxRecryptionRequest resource type"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Raimportcerts Pfxrecryptionrequest Resources ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # pfxRecryptionRequest resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Methods
 |Method|Return Type|Description|
@@ -29,18 +30,18 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|Guid|Not yet documented|
-|userId|Guid|Not yet documented|
-|deviceId|Guid|Not yet documented|
-|profileId|Guid|Not yet documented|
-|thumbprint|String|Not yet documented|
-|deviceKeyThumbprint|String|Not yet documented|
-|status|Int32|Not yet documented|
-|sourceType|Int32|Not yet documented|
-|createdTime|DateTimeOffset|Not yet documented|
-|lastModifiedTime|DateTimeOffset|Not yet documented|
-|isDeleted|Boolean|Not yet documented|
-|eTag|String|Not yet documented|
+|tenantId|Guid||
+|userId|Guid||
+|deviceId|Guid||
+|profileId|Guid||
+|thumbprint|String||
+|deviceKeyThumbprint|String||
+|status|Int32||
+|sourceType|Int32||
+|createdTime|DateTimeOffset||
+|lastModifiedTime|DateTimeOffset||
+|isDeleted|Boolean||
+|eTag|String||
 
 ## Relationships
 None
@@ -70,9 +71,3 @@ Here is a JSON representation of the resource.
   "eTag": "String"
 }
 ```
-
-
-
-
-
-

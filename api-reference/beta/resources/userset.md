@@ -1,19 +1,27 @@
 ---
-title: "userSet complex type"
+title: "userSet resource type"
 description: "The abstract base type for types used in the request, approval, and assignment review settings of an access package assignment policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 10/04/2024
 ---
 
-# userSet complex type
+# userSet resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). The abstract base type for the [singleUser](singleuser.md),[groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), and [externalSponsors](externalsponsors.md) types.
+Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). It's an abstract base type inherited by the following resource types:
++ [singleUser](singleuser.md)
++ [groupMembers](groupmembers.md)
++ [connectedOrganizationMembers](connectedorganizationmembers.md)
++ [requestorManager](requestormanager.md)
++ [internalSponsors](internalsponsors.md)
++ [externalSponsors](externalsponsors.md)
++ [targetUserSponsors](targetusersponsors.md)
 
 ## Properties
 
@@ -21,22 +29,32 @@ Used in the request, approval, and assignment review settings of an [access pack
 | :--------------------------- | :------------------------ | :---------- |
 | isBackup | Boolean | For a user in an approval stage, this property indicates whether the user is a backup fallback approver. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of userSet.  Note that a userSet is an abstract base class, and so would not be sent or received.  Instead, one of the `@odata.type` of "`#microsoft.graph.singleUser`", "`#microsoft.graph.groupMembers`", "`#microsoft.graph.connectedOrganizationMembers`", "`#microsoft.graph.requestorManager`", "`#microsoft.graph.internalSponsors`" or "`#microsoft.graph.externalSponsors`" would be used.
+The following JSON representation shows the resource type. A [userSet](userset.md) is an abstract base class and so wouldn't be sent or received. Instead, one of the following `@odata.type` values representing the inherited types would be used:
++ `#microsoft.graph.singleUser`
++ `#microsoft.graph.groupMembers`
++ `#microsoft.graph.connectedOrganizationMembers`
++ `#microsoft.graph.requestorManager`
++ `#microsoft.graph.internalSponsors`
++ `#microsoft.graph.externalSponsors`
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.userSet",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.userSet"
 }-->
 
 ```json
 {
-       "isBackup": false
+  "@odata.type": "#microsoft.graph.userSet",
+  "isBackup": false
 }
 ```
 

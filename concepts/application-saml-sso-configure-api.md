@@ -1,359 +1,516 @@
 ---
-title: "Use Microsoft Graph APIs to configure SAML-based single sign-on"
-description: "Learn how to save time by using the Microsoft Graph APIs to automate the configuration of SAML-based single sign-on."
-author: "kenwith"
-localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+title: "Configure SAML-based single sign-on using Microsoft Graph"
+description: "Learn how to automate configuration of SAML-based single sign-on (SSO) for your Microsoft Entra application using Microsoft Graph APIs."
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: alamaral
+ms.localizationpriority: high
+ms.topic: tutorial
 ms.custom: scenarios:getting-started
+ms.subservice: entra-applications
+ms.date: 02/27/2025
+#customer intent: As a developer, I want to configure SAML-based single sign-on for my application using Microsoft Graph, so that I can improve usability of apps by enabling secure authentication and authorization for users.
 ---
 
-# Automate SAML-based SSO app configuration with Microsoft Graph API
+# Configure SAML-based single sign-on for your application using Microsoft Graph
 
-In this article, you'll learn how to create and configure an application from the Azure Active Directory (Azure AD) Gallery. This article uses AWS as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.
+Single sign-on (SSO) is an authentication method that allows users to sign in to one application and then access multiple applications without needing to sign in again. Microsoft Entra supports various SSO methods, including OpenID Connect, OAuth, Security Assertion Markup Language (SAML), password-based, and linked SSO. Using Microsoft Graph, you can automate the configuration of SSO for your application.
 
-**Steps to use Microsoft Graph APIs to automate configuration of SAML-based single sign-on**
+In this tutorial, you learn how to:
 
-| Step  | Details  |
-|---------|---------|
-| [1. Create the gallery application](#step-1-create-the-gallery-application) | Sign in to the API client <br> Retrieve the gallery application <br> Create the gallery application|
-| [2. Configure single sign-on](#step-2-configure-single-sign-on) | Retrieve app object ID and service principal object ID <br> Set single sign-on mode <br> Set basic SAML URLs such as identifier, reply URL, sign-on URL <br> Add app roles (Optional)|
-| [3. Configure claims mapping](#step-3-configure-claims-mapping) | Create claims mapping policy <br> Assign claims mapping policy to service principal|
-| [4. Configure signing certificate](#step-4-configure-signing-certificate) | Create a certificate <BR> Add a custom signing key <br> Activate the custom signing key|
-| [5. Assign users](#step-5-assign-users) | Assign users and groups to the application
-| [6. Configure the application side](#step-6-configure-the-application-side)| Get Azure AD SAML metadata
+> [!div class="checklist"]
+> * Identify SAML-based apps in the Microsoft Entra gallery and configure SAML-based SSO for an app
+> * Add app roles to an application and grant them to users
+> * Configure claims to emit in the SAML token
+> * Configure a certificate for federated SSO
+> * Retrieve the Microsoft Entra ID SAML metadata for your application that you use to complete the integration
 
-**List of all APIs used in the article**
+## Prerequisites
 
-Make sure you have the corresponding permissions to call the following APIs.
+This tutorial configures SSO for the AWS IAM Identity Center. However, most of the steps on Microsoft Graph apply to any other app that you want to configure SSO.
 
-|Resource type |Method |
-|---------|---------|
-|[applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[List applicationTemplate](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[Instantiate applicationTemplate](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
-|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Update servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Create appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [Assign claimsMappingPolicies](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
-|[applications](/graph/api/resources/application?view=graph-rest-1.0)|[Update application](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
-|[claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Create claimsMappingPolicy](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with the privileges to instantiate apps from the Microsoft Entra application gallery, configure app roles, and policies on apps. *Cloud Application Administrator* in the least privileged Microsoft Entra built-in role with these permissions.
+- Grant yourself the following delegated permissions: `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All`.
+- Have a test user to assign to the application. You'll create a matching user in the AWS IAM Identity Center later in this tutorial.
 
->[!NOTE]
->The response objects shown in this article might be shortened for readability. All the properties will be returned from an actual call.
+## Step 1: Identify the application to configure
 
-## Step 1: Create the gallery application
+To create an app that supports SSO, you register it through the Microsoft Entra App Gallery. The Microsoft Entra App Gallery is a catalog of thousands of preintegrated apps that simplify deploying and configuring SSO and automated user provisioning. In Microsoft Graph, this list is available through the **applicationTemplate** entity.
 
-### Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use
+In this step, you identify the application template for the `AWS IAM Identity Center (successor to AWS Single Sign-On)` application that you want to configure. Record its **id**.
 
-1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
-3. Upon successful sign-in, you'll see the user account details in the left-hand pane.
-
-### Retrieve the gallery application template identifier
-
-Applications in the Azure AD application gallery each have an [application template](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) that describes the metadata for that application. Using this template, you can create an instance of the application and service principal in your tenant for management.
-
-#### Request
-
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_applicationtemplates"
+  "name": "tutorial_configure_saml_sso_applicationtemplates_get"
 }-->
-
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applicationTemplates
+GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'AWS IAM Identity Center (successor to AWS Single Sign-On)'
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-applicationtemplates-get-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-applicationtemplates-get-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-applicationtemplates-get-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-applicationtemplates-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-applicationtemplates-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-applicationtemplates-get-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-applicationtemplates-get-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-applicationtemplates-get-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-#### Response
-
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.applicationTemplate",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.applicationTemplates"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-  {
-  	"id": "8b1025e4-1dd2-430b-a150-2ef79cd700f5",
-        "displayName": "Amazon Web Services (AWS)",
-        "homePageUrl": "http://aws.amazon.com/",
-        "supportedSingleSignOnModes": [
-             "password",
-             "saml",
-             "external"
-         ],
-         "supportedProvisioningTypes": [
-             "sync"
-         ],
-         "logoUrl": "https://az495088.vo.msecnd.net/app-logo/aws_215.png",
-         "categories": [
-             "developerServices"
-         ],
-         "publisher": "Amazon",
-         "description": null    
-  
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applicationTemplates",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applicationTemplates?$select=categories,description",
+    "value": [
+        {
+            "id": "21ed01d2-ec13-4e9e-86c1-cd546719ebc4",
+            "displayName": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+            "homePageUrl": "https://aws.amazon.com/",
+            "supportedSingleSignOnModes": [
+                "saml",
+                "external"
+            ],
+            "supportedProvisioningTypes": [
+                "sync"
+            ],
+            "logoUrl": "https://galleryapplogos1.azureedge.net/app-logo/awssinglesignon_FC86917E_215.png",
+            "categories": [
+                "developerServices",
+                "itInfrastructure",
+                "security",
+                "New"
+            ],
+            "publisher": "Amazon Web Services, Inc.",
+            "description": "Federate once to AWS IAM Identity Center (successor to AWS Single Sign-On) & use it to centrally manage access to multiple AWS accounts and IAM Identity Center enabled apps. Provision users via SCIM."
+        }
+    ]
 }
 ```
 
-### Create the gallery application
+## Step 2: Instantiate the application
 
-Using the template ID that you retrieved for your application in the last step, [create an instance](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) of the application and service principal in your tenant.
-
-> [!NOTE] 
-> You can use applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
-
-> [!NOTE]
-> Allow some time for the app to be provisioned into your Azure AD tenant. It is not instant. One strategy is to do a GET query on the application / service principal object every 5-10 seconds until the query is successful.
-
+Using the **id** value for the application template, create an instance of the application in your tenant. Here, you name the application **AWS Contoso**. The response includes an application and service principal object for **AWS Contoso**, which is an instance of the **AWS IAM Identity Center (successor to AWS Single Sign-On)** app. Record the IDs of the created application and service principal objects for use later in this tutorial.
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "applicationtemplate_instantiate"
+  "name": "tutorial_configure_saml_sso_applicationtemplate.instantiate"
 }-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/applicationTemplates/8b1025e4-1dd2-430b-a150-2ef79cd700f5/instantiate
+```http
+POST https://graph.microsoft.com/v1.0/applicationTemplates/21ed01d2-ec13-4e9e-86c1-cd546719ebc4/instantiate
 Content-type: application/json
 
 {
   "displayName": "AWS Contoso"
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/applicationtemplate-instantiate-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-applicationtemplateinstantiate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-applicationtemplateinstantiate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-applicationtemplateinstantiate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-applicationtemplateinstantiate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/applicationtemplate-instantiate-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-applicationtemplateinstantiate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-applicationtemplateinstantiate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-applicationtemplateinstantiate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-applicationtemplateinstantiate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
-
-
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.applicationServicePrincipal"
 } -->
-
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
-
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.applicationServicePrincipal",
     "application": {
-        "objectId": "cbc071a6-0fa5-4859-8g55-e983ef63df63",
-        "appId": "92653dd4-aa3a-3323-80cf-e8cfefcc8d5d",
-        "applicationTemplateId": "8b1025e4-1dd2-430b-a150-2ef79cd700f5",
+        "id": "b7308000-8bb3-467b-bfc7-8dbbfd759ad9",
+        "appId": "2fbc8259-0f56-4f56-9870-93a228020936",
+        "applicationTemplateId": "21ed01d2-ec13-4e9e-86c1-cd546719ebc4",
+        "createdDateTime": "2024-02-21T17:14:33Z",
+        "deletedDateTime": null,
         "displayName": "AWS Contoso",
-        "homepage": "https://signin.aws.amazon.com/saml?metadata=aws|ISV9.1|primary|z",
-        "replyUrls": [
-            "https://signin.aws.amazon.com/saml"
-        ],
-        "logoutUrl": null,
+        "description": null,
+        "groupMembershipClaims": null,
+        "identifierUris": [],
+        "isFallbackPublicClient": false,
+        "signInAudience": "AzureADMyOrg",
+        "tags": [],
+        "tokenEncryptionKeyId": null,
+        "defaultRedirectUri": null,
         "samlMetadataUrl": null,
+        "optionalClaims": null,
+        "addIns": [],
+        "api": {
+            "acceptMappedClaims": null,
+            "knownClientApplications": [],
+            "requestedAccessTokenVersion": null,
+            "oauth2PermissionScopes": [
+                {
+                    "adminConsentDescription": "Allow the application to access AWS Contoso on behalf of the signed-in user.",
+                    "adminConsentDisplayName": "Access AWS Contoso",
+                    "id": "f5419931-094d-481d-b801-ab3ed60d48d8",
+                    "isEnabled": true,
+                    "type": "User",
+                    "userConsentDescription": "Allow the application to access AWS Contoso on your behalf.",
+                    "userConsentDisplayName": "Access AWS Contoso",
+                    "value": "user_impersonation"
+                }
+            ],
+            "preAuthorizedApplications": []
+        },
+        "appRoles": [
+            {
+                "allowedMemberTypes": [
+                    "User"
+                ],
+                "displayName": "User",
+                "id": "8774f594-1d59-4279-b9d9-59ef09a23530",
+                "isEnabled": true,
+                "description": "User",
+                "value": null,
+                "origin": "Application"
+            },
+            {
+                "allowedMemberTypes": [
+                    "User"
+                ],
+                "displayName": "msiam_access",
+                "id": "e7f1a7f3-9eda-48e0-9963-bd67bf531afd",
+                "isEnabled": true,
+                "description": "msiam_access",
+                "value": null,
+                "origin": "Application"
+            }
+        ],
+        "info": {
+            "logoUrl": null,
+            "marketingUrl": null,
+            "privacyStatementUrl": null,
+            "supportUrl": null,
+            "termsOfServiceUrl": null
+        },
+        "keyCredentials": [],
+        "parentalControlSettings": {
+            "countriesBlockedForMinors": [],
+            "legalAgeGroupRule": "Allow"
+        },
+        "passwordCredentials": [],
+        "publicClient": {
+            "redirectUris": []
+        },
+        "requiredResourceAccess": [],
+        "verifiedPublisher": {
+            "displayName": null,
+            "verifiedPublisherId": null,
+            "addedDateTime": null
+        },
+        "web": {
+            "homePageUrl": "https://*.signin.aws.amazon.com/platform/saml/acs/*?metadata=awssinglesignon|ISV9.1|primary|z",
+            "redirectUris": [
+                "https://*.signin.aws.amazon.com/platform/saml/acs/*"
+            ],
+            "logoutUrl": null
+        }
     },
     "servicePrincipal": {
-        "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e",
+        "id": "d3616293-fff8-4415-9f01-33b05dad1b46",
+        "deletedDateTime": null,
+        "accountEnabled": true,
+        "appId": "2fbc8259-0f56-4f56-9870-93a228020936",
+        "applicationTemplateId": "21ed01d2-ec13-4e9e-86c1-cd546719ebc4",
         "appDisplayName": "AWS Contoso",
-        "applicationTemplateId": "8b1025e4-1dd2-430b-a150-2ef79cd700f5",
+        "alternativeNames": [],
+        "appOwnerOrganizationId": "38d49456-54d4-455d-a8d6-c383c71e0a6d",
+        "displayName": "AWS Contoso",
         "appRoleAssignmentRequired": true,
-        "displayName": "My custom name",
-        "homepage": "https://signin.aws.amazon.com/saml?metadata=aws|ISV9.1|primary|z",
-        "replyUrls": [
-            "https://signin.aws.amazon.com/saml"
-        ],
+        "loginUrl": null,
+        "logoutUrl": null,
+        "homepage": "https://*.signin.aws.amazon.com/platform/saml/acs/*?metadata=awssinglesignon|ISV9.1|primary|z",
+        "notificationEmailAddresses": [],
+        "preferredSingleSignOnMode": null,
+        "preferredTokenSigningKeyThumbprint": null,
+        "replyUrls": [],
         "servicePrincipalNames": [
-            "93653dd4-aa3a-4323-80cf-e8cfefcc8d7d"
+            "2fbc8259-0f56-4f56-9870-93a228020936"
         ],
+        "servicePrincipalType": "Application",
         "tags": [
             "WindowsAzureActiveDirectoryIntegratedApp"
         ],
+        "tokenEncryptionKeyId": null,
+        "samlSingleSignOnSettings": null,
+        "addIns": [],
+        "appRoles": [
+            {
+                "allowedMemberTypes": [
+                    "User"
+                ],
+                "displayName": "User",
+                "id": "8774f594-1d59-4279-b9d9-59ef09a23530",
+                "isEnabled": true,
+                "description": "User",
+                "value": null,
+                "origin": "Application"
+            },
+            {
+                "allowedMemberTypes": [
+                    "User"
+                ],
+                "displayName": "msiam_access",
+                "id": "e7f1a7f3-9eda-48e0-9963-bd67bf531afd",
+                "isEnabled": true,
+                "description": "msiam_access",
+                "value": null,
+                "origin": "Application"
+            }
+        ],
+        "info": {
+            "logoUrl": null,
+            "marketingUrl": null,
+            "privacyStatementUrl": null,
+            "supportUrl": null,
+            "termsOfServiceUrl": null
+        },
+        "keyCredentials": [],
+        "oauth2PermissionScopes": [
+            {
+                "adminConsentDescription": "Allow the application to access AWS Contoso on behalf of the signed-in user.",
+                "adminConsentDisplayName": "Access AWS Contoso",
+                "id": "f5419931-094d-481d-b801-ab3ed60d48d8",
+                "isEnabled": true,
+                "type": "User",
+                "userConsentDescription": "Allow the application to access AWS Contoso on your behalf.",
+                "userConsentDisplayName": "Access AWS Contoso",
+                "value": "user_impersonation"
+            }
+        ],
+        "passwordCredentials": [],
+        "verifiedPublisher": {
+            "displayName": null,
+            "verifiedPublisherId": null,
+            "addedDateTime": null
+        }
     }
 }
 ```
 
-## Step 2: Configure single sign-on
+## Step 3: Configure single sign-on
 
-### Retrieve app object ID and service principal object ID
+In this step, you configure SSO for both the AWS Contoso. For the application, you configure the SAML URLs while for the service principal, you set the SSO mode to `saml`.
 
-Use the response from the previous call to retrieve and save the application object ID and service principal object ID.
+### Step 3.1: Set single sign-on mode for the service principal
 
-```
-"application": {
-        "objectId": "cbc071a6-0fa5-4859-8g55-e983ef63df63"
-}
-"servicePrincipal": {
-        "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
-}
-```
-### Set single sign-on mode
-
-In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.
-
-Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer. Also, make sure you are using the **servicePrincipal** ID that you obtained earlier.
-
-#### Request
-
+Set `saml` as the SSO mode for the AWS Contoso service principal. The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "servicePrincipals"
+  "name": "tutorial_configure_saml_sso_update_serviceprincipal"
 }-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+```http
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/d3616293-fff8-4415-9f01-33b05dad1b46
 Content-type: application/json
 
 {
-    "preferredSingleSignOnMode": "saml"
+  "preferredSingleSignOnMode": "saml"
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-update-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-update-serviceprincipal-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-
-```http
-HTTP/1.1 204
-```
-
-### Set basic SAML URLs such as identifier, reply URL, sign-on URL
-
-Set the identifier and reply URLs for AWS in the application object.
-
-Make sure you are using the **application** id obtained earlier.
-
-#### Request
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/applications/cbc071a6-0fa5-4859-8g55-e983ef63df63
-Content-type: applications/json
-
-{
-    "web": {
-        "redirectUris": [
-            "https://signin.aws.amazon.com/saml"
-        ] 
-    },
-    "identifierUris": [
-        "https://signin.aws.amazon.com/saml"
-    ]    
-}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-update-serviceprincipal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-update-serviceprincipal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-update-serviceprincipal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-update-serviceprincipal-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-update-serviceprincipal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-update-serviceprincipal-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### Response
+### Step 3.2: Set basic SAML URLs for the application
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-
-```http
-HTTP/1.1 204
-```
-### Add app roles (Optional)
-
-If the application requires the role information in the token, add the definition of the roles in the application object. For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. 
-
-For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
-
-> [!NOTE] 
-> When adding app roles, don't modify the default app roles msiam_access. 
-
-#### Request
-
+Set the **web**/**redirectUris** and **web**/**redirectUris** for the AWS Contoso application. The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "servicePrincipals"
+  "name": "tutorial_configure_saml_sso_update_application"
 }-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/serviceprincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+```http
+PATCH https://graph.microsoft.com/v1.0/applications/b7308000-8bb3-467b-bfc7-8dbbfd759ad9
 Content-type: application/json
 
 {
-"appRoles": [
+    "identifierUris": [
+        "https://signin.aws.amazon.com/saml"
+    ],
+    "web": {
+        "redirectUris": [
+            "https://signin.aws.amazon.com/saml"
+        ]
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-update-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-update-application-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-update-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-update-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-update-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-update-application-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-update-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-update-application-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+## Step 4: Add app roles
+
+If the application requires the role information in the token, add the definition of the roles in the **appRoles** property. AWS Contoso was instantiated with the default `User` and `msiam_access` roles - don't modify or remove them. To add more roles, you include both the existing roles and the new roles in the **appRoles** object in the request, otherwise, the existing roles are replaced.
+
+In this step, add the `Finance,WAAD` and `Admin,WAAD` roles to the AWS Contoso service principal. The request returns a `204 No Content` response code.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_update_servicepricipal_approles"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/d3616293-fff8-4415-9f01-33b05dad1b46
+Content-type: application/json
+
+{
+    "appRoles": [
+        {
+            "allowedMemberTypes": [
+                "User"
+            ],
+            "description": "User",
+            "displayName": "User",
+            "id": "8774f594-1d59-4279-b9d9-59ef09a23530",
+            "isEnabled": true,
+            "origin": "Application",
+            "value": null
+        },
         {
             "allowedMemberTypes": [
                 "User"
             ],
             "description": "msiam_access",
             "displayName": "msiam_access",
-            "id": "7dfd756e-8c27-4472-b2b7-38c17fc5de5e",
+            "id": "e7f1a7f3-9eda-48e0-9963-bd67bf531afd",
             "isEnabled": true,
             "origin": "Application",
             "value": null
@@ -364,7 +521,7 @@ Content-type: application/json
             ],
             "description": "Admin,WAAD",
             "displayName": "Admin,WAAD",
-            "id": "454dc4c2-8176-498e-99df-8c4efcde41ef",
+            "id": "3a84e31e-bffa-470f-b9e6-754a61e4dc63",
             "isEnabled": true,
             "value": "arn:aws:iam::212743507312:role/accountname-aws-admin,arn:aws:iam::212743507312:saml-provider/WAAD"
         },
@@ -374,163 +531,288 @@ Content-type: application/json
             ],
             "description": "Finance,WAAD",
             "displayName": "Finance,WAAD",
-            "id": "8642d5fa-18a3-4245-ab8c-a96000c1a217",
+            "id": "7a960000-ded3-455b-8c04-4f2ace00319b",
             "isEnabled": true,
             "value": "arn:aws:iam::212743507312:role/accountname-aws-finance,arn:aws:iam::212743507312:saml-provider/WAAD"
         }
     ]
-
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-update-servicepricipal-approles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-update-servicepricipal-approles-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-update-servicepricipal-approles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-update-servicepricipal-approles-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-update-servicepricipal-approles-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-update-servicepricipal-approles-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-update-servicepricipal-approles-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-update-servicepricipal-approles-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+## Step 5: Configure claims mapping
 
-#### Response
+You want to configure the SAML attributes by mapping the Microsoft Entra ID fields with specific AWS IAM Identity Center application attributes. You therefore create a claims mapping policy and assign it to the service principal.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-```http
-HTTP/1.1 204
-```
+### Step 5.1: Create a claims mapping policy
 
-## Step 3: Configure claims mapping
+In addition to the basic claims, configure the following claims for Microsoft Entra ID to emit in the SAML token:
 
-### Create claims mapping policy
-
-In addition to the basic claims, configure the following claims for Azure AD to emit in the SAML token:
-
-| Claim name | Source  |
-|---------|---------|
-| `https://aws.amazon.com/SAML/Attributes/Role` | assignedroles| 
-| `https://aws.amazon.com/SAML/Attributes/RoleSessionName` | userprincipalname |
-| `https://aws.amazon.com/SAML/Attributes/SessionDuration` | "900" |
-| roles | assignedroles |
-| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | userprincipalname |
-
-For more information, see [Customize claims emitted in token](/azure/active-directory/develop/active-directory-claims-mapping).
+| Claim name                                                             | Source            |
+|------------------------------------------------------------------------|-------------------|
+| `https://aws.amazon.com/SAML/Attributes/Role`                          | `assignedroles`     |
+| `https://aws.amazon.com/SAML/Attributes/RoleSessionName`               | `userprincipalname` |
+| `https://aws.amazon.com/SAML/Attributes/SessionDuration`               | `"900"`             |
+| `appRoles`                                                             | `assignedroles`     |
+| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | `userprincipalname` |
 
 > [!NOTE]
-> Some keys in the claims mapping policy are case sensitive (for example, "Version"). If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.
+> Some keys in the claims mapping policy, such as **Version**, are case sensitive. The error message "Property has an invalid value" might be a case sensitivity issue.
+
+Create the claims mapping policy and record its ID for use later in this tutorial.
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "servicePrincipals"
+  "name": "tutorial_configure_saml_sso_create_claimsmappingpolicy"
 }-->
-
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
 Content-type: application/json
 
 {
     "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
     ],
     "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-create-claimsmappingpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-create-claimsmappingpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-create-claimsmappingpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-create-claimsmappingpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-create-claimsmappingpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-create-claimsmappingpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-create-claimsmappingpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-create-claimsmappingpolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.claimsMappingPolicies",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.claimsMappingPolicy"
 } -->
-
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
-    "id": "a7b19e62-9adb-4edb-8521-cd35305f095d",
+    "id": "92037c7a-a875-49a0-814e-8ec30f880e2e",
     "deletedDateTime": null,
     "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
     ],
     "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
 }
 ```
 
-### Assign claims mapping policy to service principal
+### Step 5.2: Assign the claims mapping policy to the service principal
 
-#### Request
+The request returns a `204 No Content` response code.
 
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "servicePrincipals"
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_assign_serviceprincipal_claimsmappingpolicy"
 }-->
-```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/claimsMappingPolicies/$ref
-
+```http
+POST https://graph.microsoft.com/v1.0/servicePrincipals/ef04fead-8549-4e59-b5f7-d1d8c697ec64/claimsMappingPolicies/$ref
 Content-type: application/json
 
 {
-  "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/6b33aa8e-51f3-41a6-a0fd-d660d276197a"
+    "@odata.id": "https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/92037c7a-a875-49a0-814e-8ec30f880e2e"
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-assign-serviceprincipal-claimsmappingpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-assign-serviceprincipal-claimsmappingpolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-assign-serviceprincipal-claimsmappingpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-assign-serviceprincipal-claimsmappingpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-assign-serviceprincipal-claimsmappingpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-assign-serviceprincipal-claimsmappingpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-assign-serviceprincipal-claimsmappingpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-assign-serviceprincipal-claimsmappingpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+## Step 6: Configure a signing certificate
+
+You need a certificate that Microsoft Entra ID can use to sign a SAML response. You can use the `/addTokenSigningCertificate` endpoint to [create a token signing certificate for the service principal](#option-1-create-a-token-signing-certificate-for-the-service-principal). Alternatively, you can [create a self-signed certificate and upload it to the service principal](#option-2-create-a-custom-signing-certificate).
+
+After you add the certificate, the service principal contains two objects in the **keyCredentials** collection: one for the private key and one for the public key; and an object in the **passwordCredentials** collection for the certificate password.
+
+### Option 1: Create a token signing certificate for the service principal
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_create_addtokensigningcertificate"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/servicePrincipals/d3616293-fff8-4415-9f01-33b05dad1b46/addTokenSigningCertificate
+Content-type: application/json
+
+{
+    "displayName": "CN=AWSContoso",
+    "endDateTime": "2027-01-22T00:00:00Z"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-create-addtokensigningcertificate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-create-addtokensigningcertificate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-create-addtokensigningcertificate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-create-addtokensigningcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-create-addtokensigningcertificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-create-addtokensigningcertificate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-create-addtokensigningcertificate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-create-addtokensigningcertificate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.selfSignedCertificate"
 } -->
 ```http
-HTTP/1.1 204
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.selfSignedCertificate",
+    "customKeyIdentifier": "wt3YBEyVas0CaadaZLeGLbndrD4=",
+    "displayName": "CN=AWSContoso",
+    "endDateTime": "2027-01-22T00:00:00Z",
+    "key": "MIICqjCCAZKgAwIBAgIIZYCy..KlDixjUT61i4tFs=",
+    "keyId": "04e5ac4e-31f9-41ad-83e2-6dd41e1d81f4",
+    "startDateTime": "2024-02-21T17:09:35.0006942Z",
+    "thumbprint": "C2DDD8044C956ACD0269A75A64B7862DB9DDAC3E",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+}
 ```
 
-## Step 4: Configure signing certificate
+### Option 2: Create a custom signing certificate
 
-Using the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default. Create your custom signing cert and assign it to the application. 
+You can use the following PowerShell and C# scripts to get a self-signed certificate for testing. Use your company's best security practices to create a signing certificate for production.
 
-### Create a custom signing certificate
-
-To test, you can use the following PowerShell command to get a self-signed certificate. You will then need to manipulate and pull the values you need manually using other tools. Use the best security practice from your company to create a signing certificate for production.
+# [PowerShell script](#tab/powershell-script)
+The following script creates a self-signed certificate with the name you give in `fqdn` when prompted, for example, `CN=AWSContoso`. It protects the certificate with the password you supply in `pwd` and exports the PFX and CER certificates to the location you specify in `location`.
 
 ```powershell
 Param(
@@ -557,7 +839,8 @@ Export-PfxCertificate -cert $path -FilePath $pfxFile -Password $pwdSecure
 Export-Certificate -cert $path -FilePath $cerFile
 ```
 
-Alternatively, the following C# console app can be used as a Proof of Concept to understand how the required values can be obtained. Note that this code is for **learning and reference ONLY** and should not be used as-is in production.
+# [C# script](#tab/csharp-script)
+The following C# console app can be used as a proof of concept to understand how the required values can be obtained. This code is for learning and reference only and shouldn't be used as-is in production.
 
 ```csharp
 using System;
@@ -649,172 +932,462 @@ namespace Self_signed_cert
     }
 }
 ```
+---
 
-### Add a custom signing key
+#### Extract certificate details
 
-Add the following information to the service principal:
+From the previous step, you have the CER and PFX certificates. Extract the values for the private key, password, public key, and the certificate thumbprint to add to the service principal.
 
-* Private key
-* Password
-* Public key 
+##### Extract the certificate thumbprint
 
-Extract the private and public key Base64 encoded from the PFX file. To learn more about the properties, see [keyCredential resource type](/graph/api/resources/keycredential?view=graph-rest-1.0).
+###### Request
 
-Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential. You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint. See the previous C# reference code.
+The following PowerShell script allows you to extract the thumbprint from the CER file. Replace the file path with the location of your certificate.
 
-#### Request
+```powershell-interactive
+## Replace the file path with the source of your certificate
 
-> [!NOTE]
-> The "key" value in the keyCredentials property is shortened for readability. The value is base 64 encoded. For the private key the property `usage` is "Sign". For the public key the property `usage` is "Verify".
+Get-PfxCertificate -Filepath "C:\Users\admin\Desktop\CN=AWSContoso.cer" | Out-File -FilePath "C:\Users\admin\Desktop\CN=AWSContoso.cer.thumbprint.txt"
+```
 
+###### Response
+
+The CN=AWSContoso.cer.thumbprint.txt file has an entry similar to the following output.
+
+```powershell
+Thumbprint                                Subject              EnhancedKeyUsageList
+----------                                -------              --------------------
+5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A  CN=AWSContoso        {Client Authentication, Server Authentication}
+```
+
+##### Extract the certificate key
+The following PowerShell script allows you to extract the public key from the CER file. Replace the file path with the location of your certificate.
+
+
+###### Request
+```powershell-interactive
+[convert]::ToBase64String((Get-Content C:\Users\admin\Desktop\CN=AWSContoso.cer -AsByteStream -Raw))  | Out-File -FilePath "C:\Users\admin\Desktop\CN=AWSContoso.cer.key.txt"
+```
+
+###### Response
+
+The CN=AWSContoso.cer.key.txt file has an base64 encoded value similar to the following truncated output.
+
+```bash
+MIIDHjCCAgagAwIBAgIQYDbahiL7NY...6qCMVJKHAQGzGwg==
+```
+
+#### Add the custom signing key
+
+Add the following details to the **keyCredentials** and **passwordCredentials** for the service principal. Where the two objects have the same properties, you must assign the same values for those properties.
+
+- The **customKeyIdentifier** is the certificate thumbprint hash.
+- The **startDateTime** is the date when or after the certificate was created.
+- The **endDateTime** can be a maximum of three years from the **startDateTime**. If unspecified, the system automatically assigns a date one year after the startDateTime.
+- The **type** and **usage** must be:
+   - `AsymmetricX509Cert` and `Verify` respectively in the same object.
+   - `X509CertAndPassword` and `Sign` respectively in the same object.
+- Assign the certificate subject name to the **displayName** property.
+- The **key** is the Base64 encoded value that you generated in the previous step.
+- The **keyId** is a GUID that you can define.
+
+The request returns a `204 No Content` response code.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-
+      "blockType": "request",
+      "name": "tutorial_configure_saml_sso_add_credentials"
+    }-->
+```http
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/ef04fead-8549-4e59-b5f7-d1d8c697ec64
 Content-type: application/json
 
 {
-    "keyCredentials":[
+    "keyCredentials": [
         {
-            "customKeyIdentifier": "lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=",
-            "endDateTime": "2021-04-22T22:10:13Z",
+            "customKeyIdentifier": "5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A",
+            "endDateTime": "2027-01-22T00:00:00Z",
             "keyId": "4c266507-3e74-4b91-aeba-18a25b450f6e",
-            "startDateTime": "2020-04-22T21:50:13Z",
+            "startDateTime": "2024-02-21T17:09:35Z",
             "type": "X509CertAndPassword",
             "usage": "Sign",
-            "key":"MIIKIAIBAz.....HBgUrDgMCERE20nuTptI9MEFCh2Ih2jaaLZBZGeZBRFVNXeZmAAgIH0A==",
-            "displayName": "CN=awsAPI"
+            "key": "MIICqjCCAZKgAwIBAgIIZYCy..KlDixjUT61i4tFs=",
+            "displayName": "CN=AWSContoso"
         },
         {
-            "customKeyIdentifier": "lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=",
-            "endDateTime": "2021-04-22T22:10:13Z",
+            "customKeyIdentifier": "5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A",
+            "endDateTime": "2027-01-22T00:00:00Z",
             "keyId": "e35a7d11-fef0-49ad-9f3e-aacbe0a42c42",
-            "startDateTime": "2020-04-22T21:50:13Z",
+            "startDateTime": "2024-02-21T17:09:35Z",
             "type": "AsymmetricX509Cert",
             "usage": "Verify",
-            "key": "MIIDJzCCAg+gAw......CTxQvJ/zN3bafeesMSueR83hlCSyg==",
-            "displayName": "CN=awsAPI"
+            "key": "MIICqjCCAZKgAwIBAgIIZYCy..KlDixjUT61i4tFs=",
+            "displayName": "CN=AWSContoso"
         }
-
     ],
     "passwordCredentials": [
         {
-            "customKeyIdentifier": "lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=",
+            "customKeyIdentifier": "5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A",
             "keyId": "4c266507-3e74-4b91-aeba-18a25b450f6e",
             "endDateTime": "2022-01-27T19:40:33Z",
-            "startDateTime": "2020-04-20T19:40:33Z",
+            "startDateTime": "2027-01-22T00:00:00Z",
             "secretText": "61891f4ee44d"
         }
     ]
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-add-credentials-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-```http
-HTTP/1.1 204
-```
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-add-credentials-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-add-credentials-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-add-credentials-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-add-credentials-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-add-credentials-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-add-credentials-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-add-credentials-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Activate the custom signing key
 
-You need to set the `preferredTokenSigningKeyThumbprint` property to the thumbprint of the certificate you want Azure AD to use to sign the SAML response. 
+You need to set the **preferredTokenSigningKeyThumbprint** property of the service principal to the thumbprint of the certificate that you want Microsoft Entra ID to use to sign the SAML response. The request returns a `204 No Content` response code.
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "servicePrincipals"
+  "name": "tutorial_configure_saml_sso_update_certificatethumbprint"
 }-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-
+```http
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/d3616293-fff8-4415-9f01-33b05dad1b46
 Content-type: application/json
 
 {
-    "preferredTokenSigningKeyThumbprint": "AC09FEF18DDE6983EE2A164FBA3C4DD7518BD787"
+    "preferredTokenSigningKeyThumbprint": "5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A"
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-update-certificatethumbprint-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-```http
-HTTP/1.1 204
-```
-## Step 5: Assign users
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-update-certificatethumbprint-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Assign users and groups to the application
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-update-certificatethumbprint-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Assign the following user to the service principal and assign the AWS_Role1. 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-update-certificatethumbprint-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-| Name  | ID  |
-|---------|---------|
-| User ID (principalId) | 6cad4079-4e79-4a3f-9efb-ea30a14bdb26 |
-| Type (principalType) | User |
-| App role ID (appRoleId) | 454dc4c2-8176-498e-99df-8c4efcde41ef |
-| servicePrincipalID (resourceId) | f47a6776-bca7-4f2e-bc6c-eec59d058e3e |
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-update-certificatethumbprint-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-update-certificatethumbprint-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-update-certificatethumbprint-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-update-certificatethumbprint-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+## Step 7: Assign users to the application
+
+### Assign a user to the application
+
+Assign the test user that you created to the service principal and grant them the `Admin,WAAD` app role. In the request body, provide the following values:
+
+- **principalId** - The ID of the user account that you created.
+- **appRoleId** - The ID of the `Admin,WAAD` app role that you added.
+- **resourceId** - The ID of the service principal.
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "servicePrincipals"
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_add_approleassignment"
 }-->
-```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/appRoleAssignments
-
+```http
+POST https://graph.microsoft.com/v1.0/servicePrincipals/d3616293-fff8-4415-9f01-33b05dad1b46/appRoleAssignments
 Content-type: application/json
 
 {
-  "principalId": "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
-  "principalType": "User",
-  "appRoleId":"454dc4c2-8176-498e-99df-8c4efcde41ef",
-  "resourceId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
+    "principalId": "59bb3898-0621-4414-ac61-74f9d7201355",
+    "principalType": "User",
+    "appRoleId": "3a84e31e-bffa-470f-b9e6-754a61e4dc63",
+    "resourceId": "d3616293-fff8-4415-9f01-33b05dad1b46"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-add-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-add-approleassignment-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-add-approleassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-add-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-add-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-add-approleassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-add-approleassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-add-approleassignment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 } -->
 ```http
-HTTP/1.1 201 
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "rq7hyzl4yECaNZleMrTpDV-OCe5TEl5Ao_o76XMrRFU",
-    "creationTimestamp": "2020-04-23T17:38:13.2508567Z",
-    "appRoleId": "454dc4c2-8176-498e-99df-8c4efcde41ef",
-    "principalDisplayName": "User 1",
-    "principalId": "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('d3616293-fff8-4415-9f01-33b05dad1b46')/appRoleAssignments/$entity",
+    "id": "mDi7WSEGFESsYXT51yATVdouI-92Rw1OgPSpSxEvaLg",
+    "deletedDateTime": null,
+    "appRoleId": "3a84e31e-bffa-470f-b9e6-754a61e4dc63",
+    "createdDateTime": "2024-02-21T18:07:54.7959075Z",
+    "principalDisplayName": "Adele Vance",
+    "principalId": "59bb3898-0621-4414-ac61-74f9d7201355",
     "principalType": "User",
-    "resourceDisplayName": "AWS API Created",
-    "resourceId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
+    "resourceDisplayName": "AWS Contoso",
+    "resourceId": "d3616293-fff8-4415-9f01-33b05dad1b46"
 }
 ```
 
-For more information, see [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).
+## Step 8: Get Microsoft Entra ID SAML metadata for AWS Contoso app
 
-## Step 6: Configure the application side
+Use the following URL to get the Microsoft Entra ID SAML metadata for AWS Contoso app. Replace `{tenant-id}` with the tenant ID and `{appId}` with the appId of the AWS Contoso app. The metadata contains information such as the signing certificate, Microsoft Entra entityID, and Microsoft Entra SingleSignOnService, among others.
 
-### Get Azure AD SAML metadata
+`https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={appId}`
 
-Use the following URL to get the Azure AD SAML metadata for the specific configured application. The metadata contains information such as the signing certificate, Azure AD entityID, and Azure AD SingleSignOnService, among others.
+The following shows an example of what you might see for your application. Save the data in XML format.
 
-`https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
+```xml
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" ID="_26313693-22d4-4361-8e48-ea19bb8616e1" entityID="https://sts.windows.net/38d49456-54d4-455d-a8d6-c383c71e0a6d/">
+<RoleDescriptor xmlns:fed="http://docs.oasis-open.org/wsfed/federation/200706" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="fed:SecurityTokenServiceType" protocolSupportEnumeration="http://docs.oasis-open.org/wsfed/federation/200706">
+<fed:ClaimTypesOffered>
+...
+<IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.microsoftonline.com/38d49456-54d4-455d-a8d6-c383c71e0a6d/saml2"/>
+<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.microsoftonline.com/38d49456-54d4-455d-a8d6-c383c71e0a6d/saml2"/>
+<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.microsoftonline.com/38d49456-54d4-455d-a8d6-c383c71e0a6d/saml2"/>
+</IDPSSODescriptor>
+</EntityDescriptor>
+```
 
-## Next steps
-- [Use Microsoft Graph APIs to configure user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-- [Use the AD FS application activity report to migrate applications to Azure AD](/azure/active-directory/manage-apps/migrate-adfs-application-activity)
+
+## Step 9: Complete and test the integration 
+
+Now that you've configured the Microsoft Entra application and have the SAML metadata, sign in to your AWS IAM Identity Center company site as an administrator and:
+1. [Configure AWS IAM Identity Center SSO](/entra/identity/saas-apps/aws-single-sign-on-tutorial#configure-aws-iam-identity-center-sso).
+1. [Create an AWS IAM Identity Center test user whose user name and email address match the user account that you created in Microsoft Entra ID](/entra/identity/saas-apps/aws-single-sign-on-tutorial#create-aws-iam-identity-center-test-user).
+1. [Test the SSO integration](/entra/identity/saas-apps/aws-single-sign-on-tutorial#test-sso).
+
+## [Optional] Step 10: Clean up resources
+
+In this step, remove the resources that you created and no longer need.
+
+### Delete the application
+
+When you delete the application, the service principal in your tenant is also deleted. The request returns a `204 No Content` response code.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_delete_application"
+}-->
+```http
+DELETE https://graph.microsoft.com/v1.0/applications/b7308000-8bb3-467b-bfc7-8dbbfd759ad9
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-delete-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-delete-application-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-delete-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-delete-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-delete-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-delete-application-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-delete-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-delete-application-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Delete the test user account
+
+The request returns a `204 No Content` response code.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+ "name": "tutorial_configure_saml_sso_delete_user"
+}-->
+```http
+DELETE https://graph.microsoft.com/v1.0/users/59bb3898-0621-4414-ac61-74f9d7201355
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-delete-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-delete-user-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-delete-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-delete-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-delete-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-delete-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-delete-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-delete-user-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Delete the claims mapping policy
+
+The request returns a `204 No Content` response code.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_delete_claimsmappingpolicy"
+}-->
+```http
+DELETE https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/a4b35718-fd5e-4ca8-8248-a3c9934b1b78
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-saml-sso-delete-claimsmappingpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-saml-sso-delete-claimsmappingpolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-saml-sso-delete-claimsmappingpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-saml-sso-delete-claimsmappingpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-saml-sso-delete-claimsmappingpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-delete-claimsmappingpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-saml-sso-delete-claimsmappingpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-delete-claimsmappingpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+## Related content
+
+- Review the [steps to integrate Microsoft Entra SSO with AWS IAM Identity Center using the Microsoft Entra admin center](/entra/identity/saas-apps/aws-single-sign-on-tutorial).

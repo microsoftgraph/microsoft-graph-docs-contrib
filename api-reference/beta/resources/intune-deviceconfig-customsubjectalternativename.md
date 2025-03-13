@@ -1,10 +1,11 @@
 ---
 title: "customSubjectAlternativeName resource type"
 description: "Custom Subject Alternative Name definition"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # customSubjectAlternativeName resource type
@@ -20,7 +21,7 @@ Custom Subject Alternative Name definition
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Custom SAN Type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|sanType|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Custom SAN Type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |name|String|Custom SAN Name|
 
 ## Relationships
@@ -40,9 +41,3 @@ Here is a JSON representation of the resource.
   "name": "String"
 }
 ```
-
-
-
-
-
-

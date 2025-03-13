@@ -1,10 +1,11 @@
 ---
 title: "Create androidDeviceOwnerTrustedRootCertificate"
 description: "Create a new androidDeviceOwnerTrustedRootCertificate object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create androidDeviceOwnerTrustedRootCertificate
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Create a new [androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -32,14 +35,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/deviceConfigurations
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/rootCertificatesForServerValidation
 ```
 
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -73,7 +75,7 @@ If successful, this method returns a `201 Created` response code and a [androidD
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/rootCertificatesForServerValidation
 Content-type: application/json
 Content-length: 1151
 
@@ -156,9 +158,3 @@ Content-Length: 1323
   "certFileName": "Cert File Name value"
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "iPv6Range resource type"
 description: "IPv6 Range definition."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # iPv6Range resource type
@@ -21,8 +22,8 @@ Inherits from [ipRange](../resources/intune-mam-iprange.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|lowerAddress|String|Lower address|
-|upperAddress|String|Upper address|
+|lowerAddress|String|Lower address.|
+|upperAddress|String|Upper address.|
 
 ## Relationships
 None
@@ -41,12 +42,3 @@ Here is a JSON representation of the resource.
   "upperAddress": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,12 @@
 ---
 title: "Activate directoryRole"
 description: "Activate a directory role."
-localization_priority: Normal
-author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "DougKirschner"
+ms.reviewer: msodsrbac
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Activate directoryRole
@@ -13,16 +15,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate a directory role. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators  and the implicit Users directory roles are activated by default. To access and assign members to another directory role, you must first activate it with its corresponding directory role template ([directoryRoleTemplate](../resources/directoryroletemplate.md)).
+Activate a directory role. To read a directory role or update its members, it must first be activated in the tenant.
+
+The Company Administrators and the implicit user directory roles (**User**, **Guest User**, and **Restricted Guest User** roles) are activated by default. To access and assign members to other directory roles, you must first activate it with its corresponding [directory role template](../resources/directoryroletemplate.md) ID.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.ReadWrite.Directory |
+<!-- { "blockType": "permissions", "name": "directoryrole_post_directoryroles" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryrole-post-directoryroles-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -31,9 +34,9 @@ POST /directoryRoles
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.
@@ -50,7 +53,7 @@ If successful, this method returns `201 Created` response code and [directoryRol
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -60,31 +63,49 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/directoryRoles
 Content-type: application/json
-Content-length: 153
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "roleTemplateId": "roleTemplateId-value"
+  "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryrole-from-directoryroles-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-directoryrole-from-directoryroles-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-directoryrole-from-directoryroles-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-directoryrole-from-directoryroles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryrole-from-directoryroles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryrole-from-directoryroles-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-directoryrole-from-directoryroles-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-directoryrole-from-directoryroles-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-directoryrole-from-directoryroles-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,13 +114,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 175
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "roleTemplateId": "roleTemplateId-value",
-  "id": "id-value"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryRoles/$entity",
+  "id": "76f84d30-2759-4c66-915d-65c6e4083fa0",
+  "deletedDateTime": null,
+  "description": "Can manage all aspects of users and groups, including resetting passwords for limited admins.",
+  "displayName": "User Administrator",
+  "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 ```
 

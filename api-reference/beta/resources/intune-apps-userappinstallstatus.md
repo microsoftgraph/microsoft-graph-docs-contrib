@@ -1,10 +1,11 @@
 ---
 title: "userAppInstallStatus resource type"
-description: "Contains properties for the installation status for a user."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Contains properties for the installation status for a user. This will be deprecated in May, 2023"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # userAppInstallStatus resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties for the installation status for a user.
+Contains properties for the installation status for a user. This will be deprecated in May, 2023
 
 ## Methods
 |Method|Return Type|Description|
@@ -61,9 +62,3 @@ Here is a JSON representation of the resource.
   "notInstalledDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

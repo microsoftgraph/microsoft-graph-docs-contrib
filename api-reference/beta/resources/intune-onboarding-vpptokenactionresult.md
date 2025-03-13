@@ -1,10 +1,11 @@
 ---
 title: "vppTokenActionResult resource type"
 description: "The status of the action performed with an Apple Volume Purchase Program token."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # vppTokenActionResult resource type
@@ -44,9 +45,3 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

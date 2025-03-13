@@ -1,10 +1,11 @@
 ---
 title: "win32LobAppMsiInformation resource type"
 description: "Contains MSI app properties for a Win32 App."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # win32LobAppMsiInformation resource type
@@ -48,8 +49,3 @@ Here is a JSON representation of the resource.
   "publisher": "String"
 }
 ```
-
-
-
-
-

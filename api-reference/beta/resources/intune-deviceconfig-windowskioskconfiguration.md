@@ -1,10 +1,11 @@
 ---
 title: "windowsKioskConfiguration resource type"
 description: "This entity provides descriptions of the declared methods, properties and relationships exposed by the kiosk resource."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windowsKioskConfiguration resource type
@@ -160,9 +161,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

@@ -2,9 +2,10 @@
 title: "Update personResponsibility"
 description: "Update the properties of a personResponsibility object."
 author: "kevinbellinger"
-localization_priority: Normal
-ms.prod: "people"
+ms.localizationpriority: medium
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Update personResponsibility
@@ -14,13 +15,10 @@ Update the properties of a [personResponsibility](../resources/personresponsibil
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+<!-- { "blockType": "permissions", "name": "personresponsibility_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/personresponsibility-update-permissions.md)]
 
 ## HTTP request
 
@@ -29,20 +27,20 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /me/profile/responsibilities/{id}
-PATCH /users/{id | userPrincipalName}/profile/responsibilities/{id}
+PATCH /me/responsibilities/{id}
+PATCH /users/{id | userPrincipalName}/responsibilities/{id}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of the [personResponsibility](../resources/personresponsibility.md) object.
 
-The following table shows the properties that are required when you create the [personResponsibility](../resources/personresponsibility.md).
+The following table lists the properties that are required when you create the [personResponsibility](../resources/personresponsibility.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -62,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 ## Examples
 
 ### Request
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f"],
@@ -70,9 +68,8 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
+PATCH https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 Content-Type: application/json
-Content-length: 446
 
 {
   "collaborationTags": [
@@ -80,19 +77,6 @@ Content-length: 446
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

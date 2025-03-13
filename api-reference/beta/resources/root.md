@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The Root facet indicates that an object is the top-most one in its hierarchy."
 ms.date: 09/10/2017
 title: Root
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: sharepoint
 ---
 # Root resource type
 
@@ -19,6 +19,13 @@ A null (or missing) value indicates the object is not the root.
 
 **Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.
 
+## Properties
+
+None.
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.root" } -->
@@ -27,10 +34,6 @@ A null (or missing) value indicates the object is not the root.
 {
 }
 ```
-
-## Properties
-
-The **Root** resource has no properties.
 
 
 <!--

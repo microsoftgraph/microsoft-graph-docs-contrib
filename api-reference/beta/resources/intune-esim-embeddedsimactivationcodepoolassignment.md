@@ -1,10 +1,11 @@
 ---
 title: "embeddedSIMActivationCodePoolAssignment resource type"
 description: "The embedded SIM activation code pool assignment entity assigns a specific embeddedSIMActivationCodePool to an AAD device group."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # embeddedSIMActivationCodePoolAssignment resource type
@@ -54,9 +55,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

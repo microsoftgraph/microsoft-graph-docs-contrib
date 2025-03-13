@@ -1,0 +1,11 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryFederationConfiguration -IdentityProviderBaseId $identityProviderBaseId -Filter "domains/any(x: x/id eq 'contoso.com')" 
+
+```

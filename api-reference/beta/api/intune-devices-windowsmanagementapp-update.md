@@ -1,10 +1,11 @@
 ---
 title: "Update windowsManagementApp"
 description: "Update the properties of a windowsManagementApp object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update windowsManagementApp
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Update the properties of a [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -50,6 +53,8 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Unique Identifier for the Windows management app|
 |availableVersion|String|Windows management app available version.|
+|managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Managed Installer Status. Possible values are: `disabled`, `enabled`.|
+|managedInstallerConfiguredDateTime|String|Managed Installer Configured Date Time|
 
 
 
@@ -63,11 +68,13 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp
 Content-type: application/json
-Content-length: 112
+Content-length: 235
 
 {
   "@odata.type": "#microsoft.graph.windowsManagementApp",
-  "availableVersion": "Available Version value"
+  "availableVersion": "Available Version value",
+  "managedInstaller": "enabled",
+  "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
 }
 ```
 
@@ -76,17 +83,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 161
+Content-Length: 284
 
 {
   "@odata.type": "#microsoft.graph.windowsManagementApp",
   "id": "5facc79c-c79c-5fac-9cc7-ac5f9cc7ac5f",
-  "availableVersion": "Available Version value"
+  "availableVersion": "Available Version value",
+  "managedInstaller": "enabled",
+  "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
 }
 ```
-
-
-
-
-
-

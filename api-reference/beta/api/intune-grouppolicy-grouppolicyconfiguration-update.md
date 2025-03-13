@@ -1,10 +1,11 @@
 ---
 title: "Update groupPolicyConfiguration"
 description: "Update the properties of a groupPolicyConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update groupPolicyConfiguration
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Update the properties of a [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -52,6 +55,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|User provided name for the resource object.|
 |description|String|User provided description for the resource object.|
 |roleScopeTagIds|String collection|The list of scope tags for the configuration.|
+|policyConfigurationIngestionType|[groupPolicyConfigurationIngestionType](../resources/intune-grouppolicy-grouppolicyconfigurationingestiontype.md)|Type of definitions configured for this policy. Possible values are: `unknown`, `custom`, `builtIn`, `mixed`, `unknownFutureValue`.|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 
@@ -67,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 Content-type: application/json
-Content-length: 207
+Content-length: 256
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
@@ -75,7 +79,8 @@ Content-length: 207
   "description": "Description value",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "policyConfigurationIngestionType": "custom"
 }
 ```
 
@@ -84,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 379
+Content-Length: 428
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
@@ -94,13 +99,8 @@ Content-Length: 379
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "policyConfigurationIngestionType": "custom",
   "id": "27b935ec-35ec-27b9-ec35-b927ec35b927",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "onPremisesConditionalAccessSettings resource type"
 description: "Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # onPremisesConditionalAccessSettings resource type
@@ -26,7 +27,7 @@ Singleton entity which represents the Exchange OnPremises Conditional Access Set
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |enabled|Boolean|Indicates if on premises conditional access is enabled for this organization|
 |includedGroups|Guid collection|User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.|
 |excludedGroups|Guid collection|User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.|
@@ -57,9 +58,3 @@ Here is a JSON representation of the resource.
   "overrideDefaultRule": true
 }
 ```
-
-
-
-
-
-

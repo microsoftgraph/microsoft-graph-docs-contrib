@@ -1,81 +1,67 @@
 ---
-title: "Remove teacher"
+title: "Remove teacher from educationClass "
 description: "Remove a teacher from a class."
 author: "mmast-msft"
-localization_priority: Normal
-ms.prod: "education"
+ms.localizationpriority: medium
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
-# Remove teacher
-
+# Remove teacher from educationClass
 Namespace: microsoft.graph
 
-Remove a teacher from a class.
+Remove a teacher from an [educationClass](../resources/educationclass.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Not supported.  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.ReadWrite.All | 
+<!-- { "blockType": "permissions", "name": "educationclass_delete_teachers" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationclass-delete-teachers-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/classes/{id}/teachers/{userId}/$ref
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
-
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code and an empty response body.
+
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
-The following is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationclass_from_educationschool"
+  "name": "create_educationclass_from_educationschool_2"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/{teacher-id}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationclass-from-educationschool-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationclass-from-educationschool-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationclass-from-educationschool-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationschool-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationclass-from-educationschool-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-##### Response
-The following is an example of the response. 
+### Response
+The following example shows a response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -90,4 +76,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

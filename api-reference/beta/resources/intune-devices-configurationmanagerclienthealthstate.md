@@ -1,10 +1,11 @@
 ---
 title: "configurationManagerClientHealthState resource type"
 description: "Configuration manager client health state"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # configurationManagerClientHealthState resource type
@@ -42,9 +43,3 @@ Here is a JSON representation of the resource.
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

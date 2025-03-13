@@ -1,10 +1,11 @@
 ---
 title: printUserIdentity resource type
-description: Represents a user identity within the Universal Print service. Maps to an Azure AD user.
+description: Represents a user identity within the Universal Print service. Maps to a Microsoft Entra user.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printUserIdentity resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user identity within the Universal Print service. Maps to an [Azure Active Directory (Azure AD) user](user.md).
+Represents a user identity within the Universal Print service. Maps to an [Microsoft Entra user](user.md).
 
 ## Properties
 | Property     | Type        | Description |
@@ -23,9 +24,12 @@ Represents a user identity within the Universal Print service. Maps to an [Azure
 |ipAddress|String|The printUserIdentity' IP address. Not populated.|
 |userPrincipalName|String|The printUserIdentity's user principal name (UPN).|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -56,5 +60,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

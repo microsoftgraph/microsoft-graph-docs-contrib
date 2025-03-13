@@ -1,10 +1,11 @@
 ---
 title: "passwordSingleSignOnField resource type"
 description: "Fields to capture the credentials for password SSO"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 04/03/2024
 ---
 
 # passwordSingleSignOnField resource type
@@ -19,12 +20,12 @@ Contains the fields to capture to fill the use credentials for Password-based si
 |:-------------|:------------|:------------|
 |customizedLabel|String|Title/label override for customization.|
 |defaultLabel|String|Label that would be used if no customizedLabel is provided. Read only.|
-|fieldId|String|Id used to identity the field type. This is an internal id and possible values are `param_1`, `param_2`, `param_userName`, `param_password`.|
+|fieldId|String|Id used to identity the field type. This is an internal ID and possible values are `param_1`, `param_2`, `param_userName`, `param_password`.|
 |type|String|	Type of the credential. The values can be `text`, `password`.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

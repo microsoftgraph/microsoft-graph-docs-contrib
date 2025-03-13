@@ -1,65 +1,71 @@
 ---
 title: "Deploy, test, and extend migrated apps"
-description: "Describes how to migrate Azure Active Directory (Azure AD) apps to use the Microsoft Graph API (REST); this discusses step 3: deploy, test, and extend."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "azure-active-directory"
+description: "Describes how to migrate Azure Active Directory (Azure AD) Graph apps to use the Microsoft Graph APIs."
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: krbash
+ms.topic: quickstart
+ms.localizationpriority: medium
+ms.subservice: entra-applications
+ms.date: 02/14/2025
+#Customer intent: As a developer migrating apps to Microsoft Graph, I want to understand some best practices for confidently deploying changes to my app, so that I can ensure a smooth transition from Azure AD Graph to Microsoft Graph.
 ---
 
 # Deploy, test, and extend
 
-This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+> This article is step 4 in the [Azure AD Graph app migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) series.
 
-1.  **Test throughly**
+## Test thoroughly
 
-    Once you've updated your app, test it thoroughly to verify that it works as expected and that you haven't introduced any regressions.  
+Once you update your app, test it thoroughly to verify that it works as expected and that you haven't introduced any regressions.
 
-    Be sure to use multiple environments, data sets, and end-user personas, e.g. credentials with different roles, rights, and responsibilities. Go through the entire lifecycle, by having a new test user acquire the app for the first time, as well as an existing user (who already consented) trying to use the app again.
+- Test your app in different environments to ensure compatibility across various setups.
 
-2.  **Deploy staged updates**
+- Utilize various data sets to simulate real-world scenarios.
 
-    Consider deploying your updates in stages.  A limited roll-out to a small set of friendly users can help identify glitches and other potentially-embarrassing issues.  This also gives you a chance to monitor initial reception and feedback.
+- Test with different user credentials, roles, rights, and responsibilities to cover all possible use cases.
 
-    If the initial roll-out goes well, monitor progress as you deploy to larger audiences.
+- Go through the entire lifecycle, including a new test user acquiring the app for the first time and an existing user (who already consented) using the app again.
 
-3.  **Explore new value**
+## Deploy staged updates
 
-    Now you've made the switch to Microsoft Graph, it's never been easier for you to unlock many more datasets and features that are now at your fingertips. 
-    Microsoft Graph supports many new Azure AD datasets and features that are not available in Azure AD Graph, including: 
+Consider deploying your updates in stages to minimize risks and gather feedback early.
 
-    - [Microsoft 365 group management](./office365-groups-concept-overview.md)
-    - [External user invitations](/graph/api/resources/invitation?view=graph-rest-1.0)
-    - The ability to [restore users and Microsoft 365 groups](/graph/api/resources/directory?view=graph-rest-1.0) after they've been deleted
-    - [Webhook notifications on users and groups](./webhooks.md?toc=.%252fref%252ftoc.json&view=graph-rest-1.0)
-    - Identity governance features such as:
-      - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) to elevate users to privileged roles only when needed and for a limited time period
-      - [Access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta) for one-time or recurring access reviews for attestation of user's access rights
-      - [Terms-of-use](/graph/api/resources/accessreviews-root?view=graph-rest-beta) to enable organizations to present information for legal or compliance requirements, like disclaimer notices
-    - Security features such as:
-      - [Identity risk events](/graph/api/resources/identityriskevent?view=graph-rest-1.0)
-      - [Risky users](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-    - [Client libraries and samples](./index.yml) available on many more platforms and languages. The Microsoft Graph SDKs provide a discoverable interface to easily access your data while transparently handling token acquisition, retry handling due to errors and throttling, secure redirect handling and model serialization and deserialization.
+- Start with a small set of friendly users to identify glitches and other issues.
 
-    Microsoft Graph offers access to many more services than just Azure Active Directory. It's the [API gateway to Microsoft 365 services too](./index.yml).
-    Check for new datasets and capabilities regularly.  
+- Monitor initial reception and feedback closely.
 
-    - Take a look at [what you can do with Microsoft Graph](/graph/examples)
-    - Explore the [Microsoft Graph blog](/graph/blogs) for the latest news about Microsoft Graph and some great learning series.
-    - The [changelog](/greaph/changelog) summarizes service and document updates. Following these updates will help you track new APIs introduced to /beta (preview) and those promoted to v1.0 (GA).  These new APIs can provide new ways for you to add more value and new experiences to your apps.  
+- If the initial roll-out goes well, *gradually* deploy to larger audiences.
 
-## See also
+- Continuously monitor progress and address any issues that arise.
+
+## Explore new value
+
+With the switch to Microsoft Graph, you can now unlock many more datasets and features.
+
+Microsoft Graph supports many new Microsoft Entra datasets and features that aren't available in Azure Active Directory (Azure AD) Graph. It's the [API gateway to Microsoft 365 services and Microsoft Entra services](./index.yml).
+
+- Check for new datasets and capabilities regularly.
+
+- See [Major services and features in Microsoft Graph](overview-major-services.md).
+
+- Explore [partner solutions](https://developer.microsoft.com/graph/partners) that use Microsoft Graph.
+
+- Follow the [Microsoft Graph blog](https://developer.microsoft.com/graph/blogs) for the latest news and learning series.
+
+- Subscribe to the [Microsoft Graph changelog](/graph/changelog) to keep track of new APIs introduced to `/beta` (preview) and those promoted to `v1.0` (GA).
+
+## Support
 
 If you run into problems or need help during the migration process, you can:
 
 - Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again
-- Post questions to [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)
+- Post questions to [Microsoft Graph on Q&A](/answers/topics/microsoft-graph-applications.html) 
 - Review Microsoft Graph samples to contrast and compare with your existing application code:
-  - **Apps that use the REST API**: explore [quick starts and samples](https://developer.microsoft.com/graph/get-started), choosing your platform of choice and run through the quick start or search for an appropriate sample
-  - **App that use the .NET client library**: review [console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
-
-## Next Steps
-
-- Use [quick starts and samples](/graph/get-started) to come up to speed quickly.
-- Leverage [client libraries and SDKs](https://developer.microsoft.com/graph/get-started) to develop custom applications 
-- Explore [Microsoft Graph](./overview.md) concepts and practices.
+  - **Apps that use the REST API**: explore [quick starts and samples](https://developer.microsoft.com/graph/get-started), choose your platform of choice and run through the quick start or search for an appropriate sample
+  - **App that uses the .NET client library**: review [console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
+
+## Related content
+
+- Use [client libraries and SDKs](/graph/sdks/sdks-overview) to develop custom applications

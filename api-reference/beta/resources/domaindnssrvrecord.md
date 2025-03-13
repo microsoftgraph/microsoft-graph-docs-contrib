@@ -1,10 +1,11 @@
 ---
 title: "domainDnsSrvRecord resource type"
 description: "Represents a SRV record added to the DNS zone file of a particular domain in the tenant."
-author: "adimitui"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "tafra00"
+ms.localizationpriority: medium
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 05/09/2024
 ---
 
 # domainDnsSrvRecord resource type
@@ -16,7 +17,7 @@ Namespace: microsoft.graph
 Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
 
 ## Methods
-Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.
+Direct queries to this resource aren't supported. See the [domain](domain.md) article for information on how to query for domain service records.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -30,7 +31,7 @@ Direct queries to this resource are not supported. Please see the [domain](domai
 |protocol|String| Value to use when configuring the *protocol* property of the SRV record at the DNS host. |
 |recordType|String|  Type of DNS record. The value is always *Srv*. Key |
 |service|String| Value to use when configuring the *service* property of the SRV record at the DNS host. |
-|supportedService|String| Microsoft Online Service or feature that has a dependency on this SRV record.</br></br>Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|supportedService|String| Microsoft Online Service or feature that has a dependency on this SRV record.</br></br> Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |ttl|Int32| Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable |
 |weight|Int32| Value to use when configuring the *weight* property of the SRV record at the DNS host. |
 
@@ -39,7 +40,7 @@ None
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -51,7 +52,6 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

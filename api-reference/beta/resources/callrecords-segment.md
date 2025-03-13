@@ -1,10 +1,11 @@
 ---
 title: "segment resource type"
 description: "The segment type"
-localization_priority: Normal
-author: "stephenjust"
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+author: "mcm223"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 03/21/2024
 ---
 
 # segment resource type
@@ -13,15 +14,14 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a portion of a User-User communication or a User-Meeting communication
-in the case of a Conference call. A typical VOIP call will have one segment per session. In certain
-scenarios, such as PSTN calls, there will be multiple segments per session due to additional
-server-to-server communication required to connect the call.
+Represents a portion of a User-User communication, or a User-Meeting communication
+for of a Conference call. A typical VOIP call has one segment per session. In certain
+scenarios, such as Public Switched Telephone Network (PSTN) calls, there are multiple segments per session due to other server-to-server communication required to connect the call.
 
 ## Methods
 
-No methods exist to directly access segments. Please use the [Get callRecord](../api/callrecords-callrecord-get.md)
-api with `$expand=sessions($expand=segments)` or the [List session](../api/callrecords-session-list.md) api with
+No methods exist to directly access segments. Use the [Get callRecord](../api/callrecords-callrecord-get.md)
+API with `$expand=sessions($expand=segments)` or the [List session](../api/callrecords-callrecord-list-sessions.md) API with
 `$expand=segments` to get the segments for a [callRecord](callrecords-callrecord.md).
 
 ## Properties
@@ -33,8 +33,8 @@ api with `$expand=sessions($expand=segments)` or the [List session](../api/callr
 |callee|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that answered this segment.|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Failure information associated with the segment if it failed.|
 |media|[microsoft.graph.callRecords.media](callrecords-media.md) collection|Media associated with this segment.|
-|startDateTime|DateTimeOffset|UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|endDateTime|DateTimeOffset|UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|endDateTime|DateTimeOffset|UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
 ## Relationships
 
@@ -42,7 +42,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -50,7 +50,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.callRecords.segment",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

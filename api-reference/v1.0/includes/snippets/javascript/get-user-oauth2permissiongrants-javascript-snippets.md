@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id}/oauth2PermissionGrants')
+let oauth2PermissionGrants = await client.api('/users/6e7b768e-07e2-4810-8459-485f84f8f204/oauth2PermissionGrants')
 	.get();
 
 ```

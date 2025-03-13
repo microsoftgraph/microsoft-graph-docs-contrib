@@ -1,10 +1,11 @@
 ---
 title: "inferenceClassificationOverride resource type"
 description: "Represents a user's override for how incoming messages from a specific sender should always be classified as."
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "SuryaLashmiS"
+ms.subservice: outlook
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # inferenceClassificationOverride resource type
@@ -18,8 +19,8 @@ Represents a user's override for how incoming messages from a specific sender sh
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | None |Delete an override specified by its ID. |
+|[Update Override](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
+|[Delete Override](../api/inferenceclassificationoverride-delete.md) | None |Delete an override specified by its ID. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -34,7 +35,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

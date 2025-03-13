@@ -1,10 +1,11 @@
 ---
 title: "Get targetedManagedAppProtection"
 description: "Read properties and relationships of the targetedManagedAppProtection object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get targetedManagedAppProtection
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -43,7 +46,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2595
+Content-Length: 3043
 
 {
   "value": {
@@ -103,6 +106,9 @@ Content-Length: 2595
     "printBlocked": true,
     "fingerprintBlocked": true,
     "disableAppPinIfDevicePinIsSet": true,
+    "maximumRequiredOsVersion": "Maximum Required Os Version value",
+    "maximumWarningOsVersion": "Maximum Warning Os Version value",
+    "maximumWipeOsVersion": "Maximum Wipe Os Version value",
     "minimumRequiredOsVersion": "Minimum Required Os Version value",
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
@@ -118,20 +124,18 @@ Content-Length: 2595
     "managedBrowser": "microsoftEdge",
     "maximumAllowedDeviceThreatLevel": "secured",
     "mobileThreatDefenseRemediationAction": "wipe",
+    "mobileThreatDefensePartnerPriority": "thirdPartyPartnerOverDefender",
     "blockDataIngestionIntoOrganizationDocuments": true,
     "allowedDataIngestionLocations": [
       "sharePoint"
     ],
     "appActionIfUnableToAuthenticateUser": "wipe",
     "dialerRestrictionLevel": "managedApps",
+    "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
+    "protectedMessagingRedirectAppType": "anyManagedApp",
     "isAssigned": true,
-    "targetedAppManagementLevels": "unmanaged"
+    "targetedAppManagementLevels": "unmanaged",
+    "appGroupType": "allCoreMicrosoftApps"
   }
 }
 ```
-
-
-
-
-
-

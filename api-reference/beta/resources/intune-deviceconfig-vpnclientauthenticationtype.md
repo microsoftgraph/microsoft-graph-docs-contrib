@@ -1,10 +1,11 @@
 ---
 title: "vpnClientAuthenticationType enum type"
 description: "The type of VPN client authentication type"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # vpnClientAuthenticationType enum type
@@ -22,9 +23,3 @@ The type of VPN client authentication type
 |:---|:---|:---|
 |userAuthentication|0|User Authentication|
 |deviceAuthentication|1|Device Authentication|
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "defenderProtectionType enum type"
 description: "Possible values of Defender PUA Protection"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # defenderProtectionType enum type
@@ -23,9 +24,5 @@ Possible values of Defender PUA Protection
 |userDefined|0|Device default value, no intent.|
 |enable|1|Block functionality.|
 |auditMode|2|Allow functionality but generate logs.|
-
-
-
-
-
-
+|warn|6|Warning message to end user with ability to bypass block from attack surface reduction rule.|
+|notConfigured|99|Not configured.|

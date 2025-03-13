@@ -1,10 +1,11 @@
 ---
 title: "Create windows10GeneralConfiguration"
 description: "Create a new windows10GeneralConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create windows10GeneralConfiguration
@@ -15,14 +16,16 @@ Namespace: microsoft.graph
 
 Create a new [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +39,7 @@ POST /deviceManagement/deviceConfigurations
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -67,7 +70,7 @@ The following table shows the properties that are required when you create the w
 |searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
-|smartScreenEnableAppInstallControl|Boolean|Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
+|smartScreenEnableAppInstallControl|Boolean|This property will be deprecated in July 2019 and will be replaced by property SmartScreenAppInstallControl. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
 |personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
 |personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 |bluetoothAllowedServices|String collection|Specify a list of allowed Bluetooth services and profiles in hex formatted strings.|
@@ -93,32 +96,32 @@ The following table shows the properties that are required when you create the w
 |cellularBlockDataWhenRoaming|Boolean|Whether or not to Block the user from using data over cellular while roaming.|
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
 |cellularBlockVpnWhenRoaming|Boolean|Whether or not to Block the user from using VPN when roaming over cellular.|
-|defenderBlockEndUserAccess|Boolean|Whether or not to block end user access to Defender.|
-|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Number of days before deleting quarantined malware. Valid values 0 to 90|
-|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Gets or sets Defender’s actions to take on detected Malware per threat level.|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender day of the week for the system scan. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
-|defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
-|defenderScanMaxCpu|Int32|Max CPU usage percentage during scan. Valid values 0 to 100|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Value for monitoring file activity. Possible values are: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
-|defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
-|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|The configuration for how to prompt user for sample submission. Possible values are: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
-|defenderRequireBehaviorMonitoring|Boolean|Indicates whether or not to require behavior monitoring.|
-|defenderRequireCloudProtection|Boolean|Indicates whether or not to require cloud protection.|
-|defenderRequireNetworkInspectionSystem|Boolean|Indicates whether or not to require network inspection system.|
 |defenderRequireRealTimeMonitoring|Boolean|Indicates whether or not to require real time monitoring.|
-|defenderScanArchiveFiles|Boolean|Indicates whether or not to scan archive files.|
+|defenderRequireBehaviorMonitoring|Boolean|Indicates whether or not to require behavior monitoring.|
+|defenderRequireNetworkInspectionSystem|Boolean|Indicates whether or not to require network inspection system.|
 |defenderScanDownloads|Boolean|Indicates whether or not to scan downloads.|
-|defenderScanNetworkFiles|Boolean|Indicates whether or not to scan files opened from a network folder.|
-|defenderScanIncomingMail|Boolean|Indicates whether or not to scan incoming mail messages.|
-|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Indicates whether or not to scan mapped network drives during full scan.|
-|defenderScanRemovableDrivesDuringFullScan|Boolean|Indicates whether or not to scan removable drives during full scan.|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|Indicates whether or not to scan scripts loaded in Internet Explorer browser.|
+|defenderBlockEndUserAccess|Boolean|Whether or not to block end user access to Defender.|
 |defenderSignatureUpdateIntervalInHours|Int32|The signature update interval in hours. Specify 0 not to check. Valid values 0 to 24|
-|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|The defender system scan type. Possible values are: `userDefined`, `disabled`, `quick`, `full`.|
-|defenderScheduledScanTime|TimeOfDay|The defender time for the system scan.|
-|defenderScheduledQuickScanTime|TimeOfDay|The time to perform a daily quick scan.|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Value for monitoring file activity. Possible values are: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
+|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Number of days before deleting quarantined malware. Valid values 0 to 90|
+|defenderScanMaxCpu|Int32|Max CPU usage percentage during scan. Valid values 0 to 100|
+|defenderScanArchiveFiles|Boolean|Indicates whether or not to scan archive files.|
+|defenderScanIncomingMail|Boolean|Indicates whether or not to scan incoming mail messages.|
+|defenderScanRemovableDrivesDuringFullScan|Boolean|Indicates whether or not to scan removable drives during full scan.|
+|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Indicates whether or not to scan mapped network drives during full scan.|
+|defenderScanNetworkFiles|Boolean|Indicates whether or not to scan files opened from a network folder.|
+|defenderRequireCloudProtection|Boolean|Indicates whether or not to require cloud protection.|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Specifies the level of cloud-delivered protection. Possible values are: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
+|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|The configuration for how to prompt user for sample submission. Possible values are: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
+|defenderScheduledQuickScanTime|TimeOfDay|The time to perform a daily quick scan.|
+|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|The defender system scan type. Possible values are: `userDefined`, `disabled`, `quick`, `full`.|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender day of the week for the system scan. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|defenderScheduledScanTime|TimeOfDay|The defender time for the system scan.|
+|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Gets or sets Defender’s actions to take on detected Malware per threat level.|
+|defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
+|defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
+|defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
 |lockScreenAllowTimeoutConfiguration|Boolean|Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to block action center notifications over lock screen.|
 |lockScreenBlockCortana|Boolean|Indicates whether or not the user can interact with Cortana using speech while the system is locked.|
@@ -146,7 +149,7 @@ The following table shows the properties that are required when you create the w
 |startMenuHidePowerButton|Boolean|Enabling this policy hides the power button from appearing in the start menu.|
 |startMenuHideRecentJumpLists|Boolean|Enabling this policy hides recent jump lists from appearing on the start menu/taskbar and disables the corresponding toggle in the Settings app.|
 |startMenuHideRecentlyAddedApps|Boolean|Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle in the Settings app.|
-|startMenuHideRestartOptions|Boolean|Enabling this policy hides “Restart/Update and Restart” from appearing in the power button in the start menu.|
+|startMenuHideRestartOptions|Boolean|Enabling this policy hides “Restart/Update and Restart� from appearing in the power button in the start menu.|
 |startMenuHideShutDown|Boolean|Enabling this policy hides shut down/update and shut down from appearing in the power button in the start menu.|
 |startMenuHideSignOut|Boolean|Enabling this policy hides sign out from appearing in the user tile in the start menu.|
 |startMenuHideSleep|Boolean|Enabling this policy hides sleep from appearing in the power button in the start menu.|
@@ -259,10 +262,18 @@ The following table shows the properties that are required when you create the w
 ## Response
 If successful, this method returns a `201 Created` response code and a [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) object in the response body.
 
+
+
+## Response
+If successful, this method returns a `201 Created` response code and a [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) object in the response body.
+
 ## Example
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10generalconfiguration_create_create_windows10generalconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
@@ -316,8 +327,28 @@ Content-length: 9822
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
+  "defenderRequireRealTimeMonitoring": true,
+  "defenderRequireBehaviorMonitoring": true,
+  "defenderRequireNetworkInspectionSystem": true,
+  "defenderScanDownloads": true,
+  "defenderScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderSignatureUpdateIntervalInHours": 6,
+  "defenderMonitorFileActivity": "disable",
   "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderScanMaxCpu": 2,
+  "defenderScanArchiveFiles": true,
+  "defenderScanIncomingMail": true,
+  "defenderScanRemovableDrivesDuringFullScan": true,
+  "defenderScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderScanNetworkFiles": true,
+  "defenderRequireCloudProtection": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderPromptForSampleSubmission": "alwaysPrompt",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScanType": "disabled",
+  "defenderSystemScanSchedule": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
     "lowSeverity": "clean",
@@ -325,35 +356,15 @@ Content-length: 9822
     "highSeverity": "clean",
     "severeSeverity": "clean"
   },
-  "defenderSystemScanSchedule": "everyday",
-  "defenderFilesAndFoldersToExclude": [
-    "Defender Files And Folders To Exclude value"
-  ],
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 2,
-  "defenderMonitorFileActivity": "disable",
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
-  "defenderPromptForSampleSubmission": "alwaysPrompt",
-  "defenderRequireBehaviorMonitoring": true,
-  "defenderRequireCloudProtection": true,
-  "defenderRequireNetworkInspectionSystem": true,
-  "defenderRequireRealTimeMonitoring": true,
-  "defenderScanArchiveFiles": true,
-  "defenderScanDownloads": true,
-  "defenderScanNetworkFiles": true,
-  "defenderScanIncomingMail": true,
-  "defenderScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderScanRemovableDrivesDuringFullScan": true,
-  "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 6,
-  "defenderScanType": "disabled",
-  "defenderScheduledScanTime": "11:59:10.9990000",
-  "defenderScheduledQuickScanTime": "11:58:49.3840000",
-  "defenderCloudBlockLevel": "high",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -502,8 +513,44 @@ Content-length: 9822
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windows10generalconfiguration-create-create-windows10generalconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-windows10generalconfiguration-create-create-windows10generalconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windows10generalconfiguration-create-create-windows10generalconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-windows10generalconfiguration-create-create-windows10generalconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-windows10generalconfiguration-create-create-windows10generalconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windows10generalconfiguration-create-create-windows10generalconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windows10generalconfiguration-create-create-windows10generalconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windows10generalconfiguration-create-create-windows10generalconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windows10GeneralConfiguration" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -560,8 +607,28 @@ Content-Length: 9994
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
+  "defenderRequireRealTimeMonitoring": true,
+  "defenderRequireBehaviorMonitoring": true,
+  "defenderRequireNetworkInspectionSystem": true,
+  "defenderScanDownloads": true,
+  "defenderScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderSignatureUpdateIntervalInHours": 6,
+  "defenderMonitorFileActivity": "disable",
   "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderScanMaxCpu": 2,
+  "defenderScanArchiveFiles": true,
+  "defenderScanIncomingMail": true,
+  "defenderScanRemovableDrivesDuringFullScan": true,
+  "defenderScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderScanNetworkFiles": true,
+  "defenderRequireCloudProtection": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderPromptForSampleSubmission": "alwaysPrompt",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScanType": "disabled",
+  "defenderSystemScanSchedule": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
     "lowSeverity": "clean",
@@ -569,35 +636,15 @@ Content-Length: 9994
     "highSeverity": "clean",
     "severeSeverity": "clean"
   },
-  "defenderSystemScanSchedule": "everyday",
-  "defenderFilesAndFoldersToExclude": [
-    "Defender Files And Folders To Exclude value"
-  ],
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 2,
-  "defenderMonitorFileActivity": "disable",
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
-  "defenderPromptForSampleSubmission": "alwaysPrompt",
-  "defenderRequireBehaviorMonitoring": true,
-  "defenderRequireCloudProtection": true,
-  "defenderRequireNetworkInspectionSystem": true,
-  "defenderRequireRealTimeMonitoring": true,
-  "defenderScanArchiveFiles": true,
-  "defenderScanDownloads": true,
-  "defenderScanNetworkFiles": true,
-  "defenderScanIncomingMail": true,
-  "defenderScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderScanRemovableDrivesDuringFullScan": true,
-  "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 6,
-  "defenderScanType": "disabled",
-  "defenderScheduledScanTime": "11:59:10.9990000",
-  "defenderScheduledQuickScanTime": "11:58:49.3840000",
-  "defenderCloudBlockLevel": "high",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -745,12 +792,3 @@ Content-Length: 9994
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
 }
 ```
-
-
-
-
-
-
-
-
-

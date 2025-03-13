@@ -2,9 +2,10 @@
 title: "resourceReference resource type"
 description: "Complex type containing properties of Insights."
 author: "simonhult"
-localization_priority: Normal
-ms.prod: "insights"
+ms.localizationpriority: medium
+ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # resourceReference resource type
@@ -15,9 +16,20 @@ Namespace: microsoft.graph
 
 Complex type containing properties of [itemInsights](iteminsights.md)
 
+## Properties
+
+| Property      | Type      | Description  |
+|: ------------- |: -----------|: -------------|
+| webUrl      	| String	| A URL leading to the referenced item. |
+| id     		| String    | The item's unique identifier.           |
+| type 			| String   	|It can be used to classify the item, such as **driveItem**. |
+
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -31,13 +43,5 @@ Here is a JSON representation of the resource
   "type": "string"
 }
 ```
-
-## Properties
-
-| Property      | Type      | Description  |
-| ------------- |-----------| -------------|
-| webUrl      	| String	| A URL leading to the referenced item. |
-| id     		| String    | The item's unique identifier.           |
-| type 			| String   	| A string value that can be used to classify the item, such as "microsoft.graph.driveItem" |
 
 

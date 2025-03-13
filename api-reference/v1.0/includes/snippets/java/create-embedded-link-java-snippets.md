@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String type = "embed";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().drive().items("{item-id}")
-	.createLink(type,null,null,null,null)
-	.buildRequest()
-	.post();
+com.microsoft.graph.drives.item.items.item.createlink.CreateLinkPostRequestBody createLinkPostRequestBody = new com.microsoft.graph.drives.item.items.item.createlink.CreateLinkPostRequestBody();
+createLinkPostRequestBody.setType("embed");
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").createLink().post(createLinkPostRequestBody);
+
 
 ```

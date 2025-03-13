@@ -4,46 +4,54 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var post = new Post
+// Dependencies
+using Microsoft.Graph.Groups.Item.Threads.Item.Reply;
+using Microsoft.Graph.Models;
+
+var requestBody = new ReplyPostRequestBody
 {
-	Body = new ItemBody
+	Post = new Post
 	{
-		ContentType = BodyType.Text,
-		Content = "I attached an event."
-	},
-	Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
-	{
-		new ItemAttachment
+		Body = new ItemBody
 		{
-			Name = "Holiday event",
-			Item = new Event
+			ContentType = BodyType.Text,
+			Content = "I attached an event.",
+		},
+		Attachments = new List<Attachment>
+		{
+			new ItemAttachment
 			{
-				Subject = "Discuss gifts for children",
-				Body = new ItemBody
+				OdataType = "#microsoft.graph.itemAttachment",
+				Name = "Holiday event",
+				Item = new Event
 				{
-					ContentType = BodyType.Html,
-					Content = "Let's look for funding!"
+					OdataType = "microsoft.graph.event",
+					Subject = "Discuss gifts for children",
+					Body = new ItemBody
+					{
+						ContentType = BodyType.Html,
+						Content = "Let's look for funding!",
+					},
+					Start = new DateTimeTimeZone
+					{
+						DateTime = "2019-12-02T18:00:00",
+						TimeZone = "Pacific Standard Time",
+					},
+					End = new DateTimeTimeZone
+					{
+						DateTime = "2019-12-02T19:00:00",
+						TimeZone = "Pacific Standard Time",
+					},
 				},
-				Start = new DateTimeTimeZone
-				{
-					DateTime = "2019-12-02T18:00:00",
-					TimeZone = "Pacific Standard Time"
-				},
-				End = new DateTimeTimeZone
-				{
-					DateTime = "2019-12-02T19:00:00",
-					TimeZone = "Pacific Standard Time"
-				}
-			}
-		}
-	}
+			},
+		},
+	},
 };
 
-await graphClient.Groups["1848753d-185d-4c08-a4e4-6ee40521d115"].Threads["AAQkADJUdfolA=="]
-	.Reply(post)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Reply.PostAsync(requestBody);
+
 
 ```

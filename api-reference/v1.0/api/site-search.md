@@ -1,11 +1,10 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Search for sites
 description: Search across a SharePoint tenant for sites that match keywords provided.
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Search for sites
@@ -14,48 +13,91 @@ Namespace: microsoft.graph
 
 Search across a SharePoint tenant for [sites][] that match keywords provided.
 
+The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
+
 [sites]: ../resources/site.md
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Sites.Read.All, Sites.ReadWrite.All
+<!-- { "blockType": "permissions", "name": "site_search" } -->
+[!INCLUDE [permissions-table](../includes/permissions/site-search-permissions.md)]
+
+>**Note:** This method does not support the Sites.Selected application permission.
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "search-sites", "scopes": "sites.readwrite.all", "tags": "service.sharepoint" } -->
-
-```msgraph-interactive
+``` http
 GET /sites?search={query}
 ```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and the collection of [site](../resources/site.md) objects in the response body.
+
+## Examples
+
+### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_permission_for_site"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/sites?search={query}
+```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-for-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-permission-for-site-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-permission-for-site-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/search-sites-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-permission-for-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-permission-for-site-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-permission-for-site-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-permission-for-site-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-permission-for-site-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-## Response
-
+### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
 ```http
@@ -83,7 +125,6 @@ Content-type: application/json
   ]
 }
 ```
->**Note:** The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
 
 <!-- {
   "type": "#page.annotation",
@@ -94,4 +135,3 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
-

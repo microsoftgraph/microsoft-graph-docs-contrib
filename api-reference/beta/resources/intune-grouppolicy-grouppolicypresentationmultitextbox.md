@@ -1,10 +1,11 @@
 ---
 title: "groupPolicyPresentationMultiTextBox resource type"
 description: "Represents an ADMX multiTextBox element and an ADMX multiText element."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # groupPolicyPresentationMultiTextBox resource type
@@ -18,7 +19,7 @@ Namespace: microsoft.graph
 Represents an ADMX multiTextBox element and an ADMX multiText element.
 
 
-Inherits from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
+Inherits from [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md)
 
 ## Methods
 |Method|Return Type|Description|
@@ -63,9 +64,3 @@ Here is a JSON representation of the resource.
   "maxStrings": 1024
 }
 ```
-
-
-
-
-
-

@@ -3,9 +3,9 @@ author: daspek
 description: "The itemAnalytics resource provides analytics about activities that took place on an item. This resource is currently only available on SharePoint and OneDrive for Business."
 ms.date: 09/14/2017
 title: ItemAnalytics
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: sharepoint
 ---
 # itemAnalytics resource type
 
@@ -19,7 +19,21 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 
 >**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
+## Properties
+
+| Property      | Type                 | Description|
+|:--------------|:---------------------|:--------------------------------------|
+| allTime       | [itemActivityStat][] | Analytics over the item's lifespan.|
+| lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.|
+
+[itemActivityStat]: itemactivitystat.md
+[getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
+
+## Relationships
+None.
+
 ## JSON representation
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -34,18 +48,6 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
   "lastSevenDays": {"@odata.type": "microsoft.graph.itemActivityStat"}
 }
 ```
-
-## Properties
-
-| Property      | Type                 | Description
-|:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | Analytics over the item's lifespan.
-| lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
-
-[itemActivityStat]: itemactivitystat.md
-
-
-[getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
 <!--
 {

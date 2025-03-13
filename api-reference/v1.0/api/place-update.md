@@ -1,10 +1,11 @@
 ---
 title: "Update place"
 description: "Update the properties of place object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "Outlook"
+ms.subservice: calendar
 doc_type: "apiPageType"
+ms.date: 07/22/2024
 ---
 
 # Update place
@@ -14,15 +15,14 @@ Namespace: microsoft.graph
 
 Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md) or [roomList](../resources/roomlist.md). You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Place.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported |
+<!-- { "blockType": "permissions", "name": "place_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/place-update-permissions.md)]
 
 ## HTTP request
 
@@ -36,12 +36,12 @@ PATCH /places/{id | emailAddress}
 
 | Name       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room** or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room** or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property               | Type                                              | Description |
 |:-----------------------|:--------------------------------------------------|:--|
@@ -49,12 +49,12 @@ In the request body, supply the values for relevant fields that should be update
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
 | bookingType            | [bookingType](../resources/room.md)                            | Type of room. Possible values are `Standard` and `Reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
-| capacity               | String                                            | Specifies the capacity of the room. |
+| capacity               | Int32                                             | Specifies the capacity of the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
 | floorLabel             | String                                            | Specifies the floor letter that the room is on. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Specifies the room or roomlist location in latitude, longitude and optionally, altitude coordinates. |
-| isWheelchairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
+| isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
 | phone                  | String                                            | The phone number of the room or roomlist. |
@@ -71,54 +71,70 @@ If successful, this method returns a `200 OK` response code and an updated [plac
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_room"
+  "name": "update_room",
+  "sampleKeys": ["cf100@contoso.com"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/places/cf100@contoso.com
 Content-type: application/json
-Content-length: 285
 
 {
   "@odata.type": "microsoft.graph.room",
   "nickname": "Conf Room",
   "building": "1",
   "label": "100",
-  "capacity": "50",
-  "isWheelchairAccessible": false
+  "capacity": 50,
+  "isWheelChairAccessible": false
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-room-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-room-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-room-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-room-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-room-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-room-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -150,12 +166,12 @@ Content-type: application/json
     "phone": "555-555-0100",
     "nickname": "Conf Room",
     "label": "100",
-    "capacity": "50",
+    "capacity": 50,
     "building": "1",
     "floorLabel": "1P",
     "floorNumber": 1,
     "isManaged": true,
-    "isWheelchairAccessible": false,
+    "isWheelChairAccessible": false,
     "bookingType": "standard",
     "tags": [
       "bean bags"
@@ -170,20 +186,21 @@ Content-type: application/json
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_roomlist"
+  "name": "update_roomlist",
+  "sampleKeys": ["Building1RroomList@contoso.com"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.onmicrosoft.com
+PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.com
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.roomlist",
+  "@odata.type": "microsoft.graph.roomList",
   "displayName": "Building 1",
   "phone":"555-555-0100",
   "address": {
@@ -202,32 +219,47 @@ Content-type: application/json
  }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-roomlist-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-roomlist-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-roomlist-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-roomlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-roomlist-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-roomlist-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

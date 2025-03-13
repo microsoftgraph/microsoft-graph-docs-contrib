@@ -1,10 +1,11 @@
 ---
 title: "userAgent resource type"
 description: "The userAgent type"
-localization_priority: Normal
-author: "stephenjust"
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+author: "mcm223"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # userAgent resource type
@@ -12,8 +13,7 @@ doc_type: "resourcePageType"
 Namespace: microsoft.graph.callRecords
 
 Represents the user agent of an endpoint in a call.
-The [clientUserAgent](callrecords-clientuseragent.md) and
-[serviceUserAgent](callrecords-serviceuseragent.md)) types inherit from this type.
+The [clientUserAgent](callrecords-clientuseragent.md) and [serviceUserAgent](callrecords-serviceuseragent.md) types inherit from this type.
 
 ## Properties
 
@@ -24,7 +24,7 @@ The [clientUserAgent](callrecords-clientuseragent.md) and
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

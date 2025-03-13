@@ -1,10 +1,11 @@
 ---
 title: "revokeAppleVppLicensesActionResult resource type"
 description: "Revoke Apple Vpp licenses action result"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # revokeAppleVppLicensesActionResult resource type
@@ -51,9 +52,3 @@ Here is a JSON representation of the resource.
   "failedLicensesCount": 1024
 }
 ```
-
-
-
-
-
-

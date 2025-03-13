@@ -1,13 +1,14 @@
 ---
-title: "Create Event"
+title: "Create event"
 description: "Create an event in the user's default calendar or specified calendar."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "harini84"
-ms.prod: "outlook"
+author: "iamgirishck"
+ms.subservice: "outlook"
+ms.date: 04/05/2024
 ---
 
-# Create Event
+# Create event
 
 Namespace: microsoft.graph
 
@@ -17,8 +18,8 @@ Create an [event](../resources/event.md) in the user's default calendar or speci
 
 By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event. See [Propose new meeting times](/graph/outlook-calendar-meeting-proposals) for more information on how to propose a time, and how to receive and accept a new time proposal.
 
-You can specify the time zone for each of the start and end times of the event as part of their values, because the 
-**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
+You can specify the time zone for each of the start and end times of the event as part of their values, because the
+**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server.
 
 When an event is sent, the server sends invitations to all the attendees.
 
@@ -45,9 +46,11 @@ Additionally, if the meeting location has been set up as a resource, or if the e
 5. Set the attendee **emailAddress** as the resource email address.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Calendars.ReadWrite    |
@@ -69,24 +72,24 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## Request headers
 | Header       | Value |
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+In the request body, supply a JSON representation of the [event](../resources/event.md) object.
 
 Since the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the event while creating it.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [event](../resources/event.md) object in the response body.
 
 ## Examples
 
 ### Example 1: Create an event in the specified time zone, and assign the event an optional transactionId value
 
 #### Request
-Here is an example of the request. It uses the Prefer: outlook.timezone request header to specify the time zone for the start and end times in the response. It also sets the transactionId property to reduce unnecessary retries on the server.
+The following example shows a request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the start and end times in the response. It also sets the **transactionId** property to reduce unnecessary retries on the server.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -118,7 +121,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"samanthab@contoso.onmicrosoft.com",
+        "address":"samanthab@contoso.com",
         "name": "Samantha Booth"
       },
       "type": "required"
@@ -128,24 +131,46 @@ Content-type: application/json
   "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-event-from-user-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-event-from-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-event-from-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-event-from-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-event-from-user-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
-Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+The following example shows the response that demonstrates how the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -155,12 +180,13 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2197
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
     "id":"AAMkAGI1AAAt9AHjAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "createdDateTime":"2017-04-15T03:00:50.7579581Z",
     "lastModifiedDateTime":"2017-04-15T03:00:51.245372Z",
     "changeKey":"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==",
@@ -169,10 +195,10 @@ Content-length: 2197
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "uid":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
+    "hideAttendees": false,
     "subject":"Let's go brunch",
     "bodyPreview":"Does noon work for you?",
     "importance":"normal",
@@ -231,14 +257,14 @@ Content-length: 2197
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"samanthab@contoso.onmicrosoft.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Dana Swope",
-            "address":"danas@contoso.onmicrosoft.com"
+            "address":"danas@contoso.com"
         }
     }
 }
@@ -248,9 +274,7 @@ Content-length: 2197
 ### Example 2: Create an event that occurs in multiple locations
 
 #### Request
-The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.
-
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+The next example request specifies three locations where the organizer and attendees can attend the meeting from.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -261,7 +285,6 @@ In the request body, supply a JSON representation of [event](../resources/event.
 POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 1390
 
 {
   "subject": "Plan summer company picnic",
@@ -280,14 +303,14 @@ Content-length: 1390
   "attendees": [
     {
       "emailAddress": {
-        "address": "DanaS@contoso.onmicrosoft.com",
+        "address": "DanaS@contoso.com",
         "name": "Dana Swope"
       },
       "type": "Required"
     },
     {
       "emailAddress": {
-        "address": "AlexW@contoso.onmicrosoft.com",
+        "address": "AlexW@contoso.com",
         "name": "Alex Wilber"
       },
       "type": "Required"
@@ -322,25 +345,45 @@ Content-length: 1390
   "allowNewTimeProposals": true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-multiple-locations-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-event-from-user-multiple-locations-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-event-from-user-multiple-locations-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-multiple-locations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-multiple-locations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-multiple-locations-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-event-from-user-multiple-locations-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-event-from-user-multiple-locations-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
-The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the
+The following example response shows the created event that specifies information for the three locations for the meeting. Because of the
 `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -350,12 +393,13 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2985
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074C=",
   "createdDateTime":"2017-08-30T07:06:33.8673345Z",
   "lastModifiedDateTime":"2017-08-30T07:06:34.5079772Z",
   "changeKey":"y53lbKh6jkaxHzFwGhgyxgAAz3IKMA==",
@@ -364,10 +408,10 @@ Content-length: 2985
   ],
   "originalStartTimeZone":"Pacific Standard Time",
   "originalEndTimeZone":"Pacific Standard Time",
-  "uid":"04000000820089190544",
   "reminderMinutesBeforeStart":15,
   "isReminderOn":true,
   "hasAttachments":false,
+  "hideAttendees": false,
   "subject":"Plan summer company picnic",
   "bodyPreview":"Let's kick-start this event planning!",
   "importance":"normal",
@@ -448,7 +492,7 @@ Content-length: 2985
       },
       "emailAddress":{
         "name":"Dana Swope",
-        "address":"DanaS@contoso.onmicrosoft.com"
+        "address":"DanaS@contoso.com"
       }
     },
     {
@@ -459,14 +503,14 @@ Content-length: 2985
       },
       "emailAddress":{
         "name":"Alex Wilber",
-        "address":"AlexW@contoso.onmicrosoft.com"
+        "address":"AlexW@contoso.com"
       }
     }
   ],
   "organizer":{
     "emailAddress":{
       "name":"Adele Vance",
-      "address":"AdeleV@contoso.onmicrosoft.com"
+      "address":"AdeleV@contoso.com"
     }
   }
 }
@@ -519,7 +563,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"AdeleV@contoso.onmicrosoft.com",
+        "address":"AdeleV@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -527,24 +571,44 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-recurring-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-event-recurring-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-event-recurring-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-recurring-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-recurring-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-event-recurring-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-event-recurring-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-event-recurring-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
-Here is an example of the response.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -559,6 +623,8 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
     "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==\"",
     "id":"AAMkADQwMD",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "createdDateTime":"2017-10-07T04:59:12.9698856Z",
     "lastModifiedDateTime":"2017-10-07T04:59:13.8136423Z",
     "changeKey":"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==",
@@ -567,10 +633,10 @@ Content-type: application/json
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "uid":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
+    "hideAttendees": false,
     "subject":"Let's go for lunch",
     "bodyPreview":"Does late morning work for you?",
     "importance":"normal",
@@ -647,14 +713,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Adele Vance",
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"AdeleV@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Alex Wilber",
-            "address":"AlexW@contoso.onmicrosoft.com"
+            "address":"AlexW@contoso.com"
         }
     },
     "OnlineMeeting":null
@@ -666,6 +732,7 @@ Content-type: application/json
 #### Request
 The fourth example shows how to create a daily recurring event. The event occurs from 12:00pm to 2:00pm, every day starting February 25, 2020, for two occurrences.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring_daily"
@@ -695,7 +762,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"AlexW@contoso.OnMicrosoft.com",
+        "address":"AlexW@contoso.com",
         "name": "Alex Wilbur"
       },
       "type": "required"
@@ -715,11 +782,43 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-recurring-daily-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-event-recurring-daily-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-event-recurring-daily-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-recurring-daily-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-recurring-daily-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-event-recurring-daily-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-event-recurring-daily-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-event-recurring-daily-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
-Here is an example of the response.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring_daily",
@@ -734,16 +833,18 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69')/calendar/events/$entity",
     "@odata.etag": "W/\"NDznl+Uh50WkanaCOKHkaQAAhrvLSg==\"",
     "id": "AAMkADU5NWAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "createdDateTime": "2020-02-18T22:13:47.2967773Z",
     "lastModifiedDateTime": "2020-02-18T22:13:47.7398267Z",
     "changeKey": "NDznl+Uh50WkanaCOKHkaQAAhrvLSg==",
     "categories": [],
     "originalStartTimeZone": "Pacific Standard Time",
     "originalEndTimeZone": "Pacific Standard Time",
-    "uid": "040000008200E00074C5B7101A82E0080000000027B6D5B0A8E6D50100000000000000001000000065CD4D206C79D44CBF53D42B6E79CE55",
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does noon work for you?",
     "importance": "normal",
@@ -818,14 +919,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+                "address": "AlexW@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Adele Vance",
-            "address": "AdeleV@contoso.OnMicrosoft.com"
+            "address": "AdeleV@contoso.com"
         }
     }
 }
@@ -835,7 +936,7 @@ Content-type: application/json
 ### Example 5: Create and enable an event as an online meeting
 
 #### Request
-Here is an example of a request which creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
+The following example shows a request that creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
 times in the response.
 
 # [HTTP](#tab/http)
@@ -868,7 +969,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"samanthab@contoso.onmicrosoft.com",
+        "address":"samanthab@contoso.com",
         "name": "Samantha Booth"
       },
       "type": "required"
@@ -879,24 +980,46 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-with-online-meeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-event-from-user-with-online-meeting-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-event-from-user-with-online-meeting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-with-online-meeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-with-online-meeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-with-online-meeting-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-event-from-user-with-online-meeting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-event-from-user-with-online-meeting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-event-from-user-with-online-meeting-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
-Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+The following example shows the response that demonstrates how the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_with_online_meeting",
@@ -906,12 +1029,13 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2197
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
     "id":"AAMkAGI1AAAt8AHjAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "createdDateTime":"2017-04-15T03:00:50.7579581Z",
     "lastModifiedDateTime":"2017-04-15T03:00:51.245372Z",
     "changeKey":"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==",
@@ -920,10 +1044,10 @@ Content-length: 2197
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "uid":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
+    "hideAttendees": false,
     "subject":"Let's go brunch",
     "bodyPreview":"Does noon work for you?",
     "importance":"normal",
@@ -980,14 +1104,14 @@ Content-length: 2197
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"samanthab@contoso.onmicrosoft.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Dana Swope",
-            "address":"danas@contoso.onmicrosoft.com"
+            "address":"danas@contoso.com"
         }
     },
     "onlineMeeting": {
@@ -1000,7 +1124,7 @@ Content-length: 2197
 
 
 
-## See also
+## Related content
 
 - [Schedule repeating appointments as recurring events in Outlook](/graph/outlook-schedule-recurring-events)
 - [Add custom data to resources using extensions](/graph/extensibility-overview)

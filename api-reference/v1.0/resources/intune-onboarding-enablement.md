@@ -1,10 +1,11 @@
 ---
 title: "enablement enum type"
 description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # enablement enum type
@@ -18,15 +19,6 @@ Not yet documented
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|notConfigured|0|Not yet documented|
-|enabled|1|Not yet documented|
-|disabled|2|Not yet documented|
-
-
-
-
-
-
-
-
-
+|notConfigured|0|Device default value, no intent.|
+|enabled|1|Enables the setting on the device.|
+|disabled|2|Disables the setting on the device.|

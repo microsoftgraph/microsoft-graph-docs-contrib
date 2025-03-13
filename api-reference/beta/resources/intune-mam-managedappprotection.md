@@ -1,10 +1,11 @@
 ---
 title: "managedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 10/22/2024
 ---
 
 # managedAppProtection resource type
@@ -25,7 +26,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |:---|:---|:---|
 |[List managedAppProtections](../api/intune-mam-managedappprotection-list.md)|[managedAppProtection](../resources/intune-mam-managedappprotection.md) collection|List properties and relationships of the [managedAppProtection](../resources/intune-mam-managedappprotection.md) objects.|
 |[Get managedAppProtection](../api/intune-mam-managedappprotection-get.md)|[managedAppProtection](../resources/intune-mam-managedappprotection.md)|Read properties and relationships of the [managedAppProtection](../resources/intune-mam-managedappprotection.md) object.|
-|[targetApps action](../api/intune-mam-managedappprotection-targetapps.md)|None|Not yet documented|
+|[targetApps action](../api/intune-mam-managedappprotection-targetapps.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -59,25 +60,31 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps.|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.|
 |disableAppPinIfDevicePinIsSet|Boolean|Indicates whether use of the app pin is required if the device pin is set.|
+|maximumRequiredOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data.|
+|maximumWarningOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data.|
+|maximumWipeOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data.|
 |minimumRequiredOsVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data.|
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app.|
 |minimumWipeOsVersion|String|Versions less than or equal to the specified version will wipe the managed app and the associated company data.|
 |minimumWipeAppVersion|String|Versions less than or equal to the specified version will wipe the managed app and the associated company data.|
-|appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true. Possible values are: `block`, `wipe`, `warn`.|
-|appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true. Possible values are: `block`, `wipe`, `warn`, `blockWhenSettingIsSupported`.|
+|appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Possible values are: `block`, `wipe`, `warn`, `blockWhenSettingIsSupported`.|
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode|
 |allowedOutboundClipboardSharingExceptionLength|Int32|Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed.|
 |notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Specify app notification restriction. Possible values are: `allow`, `blockOrganizationalData`, `block`.|
 |previousPinBlockCount|Int32|Requires a pin to be unique from the number specified in this property.|
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Indicates in which managed browser(s) that internet links should be opened. When this property is configured, ManagedBrowserToOpenLinksRequired should be true. Possible values are: `notConfigured`, `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Maximum allowed device threat level, as reported by the MTD app. Possible values are: `notConfigured`, `secured`, `low`, `medium`, `high`.|
-|mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determines what action to take if the mobile threat defense threat threshold isn't met. Warn isn't a supported value for this property. Possible values are: `block`, `wipe`, `warn`.|
+|mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determines what action to take if the mobile threat defense threat threshold isn't met. Warn isn't a supported value for this property. Possible values are: `block`, `wipe`, `warn`, `blockWhenSettingIsSupported`.|
+|mobileThreatDefensePartnerPriority|[mobileThreatDefensePartnerPriority](../resources/intune-mam-mobilethreatdefensepartnerpriority.md)| Indicates how to prioritize which Mobile Threat Defense (MTD) partner is enabled for a given platform, when more than one is enabled. An app can only be actively using a single Mobile Threat Defense partner. When NULL, Microsoft Defender will be given preference. Otherwise setting the value to defenderOverThirdPartyPartner or thirdPartyPartnerOverDefender will make explicit which partner to prioritize. Possible values are: null, defenderOverThirdPartyPartner, thirdPartyPartnerOverDefender and unknownFutureValue. Default value is null. Possible values are: `defenderOverThirdPartyPartner`, `thirdPartyPartnerOverDefender`, `unknownFutureValue`.|
 |blockDataIngestionIntoOrganizationDocuments|Boolean|Indicates whether a user can bring data into org documents.|
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data.|
-|appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Possible values are: `block`, `wipe`, `warn`, `blockWhenSettingIsSupported`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
+|gracePeriodToBlockAppsDuringOffClockHours|Duration|A grace period before blocking app access during off clock hours.|
+|protectedMessagingRedirectAppType|[messagingRedirectAppType](../resources/intune-mam-messagingredirectapptype.md)|Defines how app messaging redirection is protected by an App Protection Policy. Default is anyApp. Possible values are: `anyApp`, `anyManagedApp`, `specificApps`, `blocked`.|
 
 ## Relationships
 None
@@ -126,6 +133,9 @@ Here is a JSON representation of the resource.
   "printBlocked": true,
   "fingerprintBlocked": true,
   "disableAppPinIfDevicePinIsSet": true,
+  "maximumRequiredOsVersion": "String",
+  "maximumWarningOsVersion": "String",
+  "maximumWipeOsVersion": "String",
   "minimumRequiredOsVersion": "String",
   "minimumWarningOsVersion": "String",
   "minimumRequiredAppVersion": "String",
@@ -141,17 +151,14 @@ Here is a JSON representation of the resource.
   "managedBrowser": "String",
   "maximumAllowedDeviceThreatLevel": "String",
   "mobileThreatDefenseRemediationAction": "String",
+  "mobileThreatDefensePartnerPriority": "String",
   "blockDataIngestionIntoOrganizationDocuments": true,
   "allowedDataIngestionLocations": [
     "String"
   ],
   "appActionIfUnableToAuthenticateUser": "String",
-  "dialerRestrictionLevel": "String"
+  "dialerRestrictionLevel": "String",
+  "gracePeriodToBlockAppsDuringOffClockHours": "String (duration)",
+  "protectedMessagingRedirectAppType": "String"
 }
 ```
-
-
-
-
-
-

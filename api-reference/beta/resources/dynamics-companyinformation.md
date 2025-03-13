@@ -4,9 +4,10 @@ description: Company information in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
-ms.prod: "dynamics-365-business-central"
+ms.localizationpriority: medium
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
  
 # companyInformation resource type
@@ -21,8 +22,8 @@ Represents the information specified for the current company in Dynamics 365 Bus
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get companyInformation](../api/dynamics-companyinformation-get.md)|companyInformation|Gets a company information.|
-|[Patch companyInformation](../api/dynamics-companyinformation-update.md)|companyInformation|Updates a company information.|
+|[Get company information](../api/dynamics-companyinformation-get.md)|companyInformation|Gets a company information.|
+|[Update company information](../api/dynamics-companyinformation-update.md)|companyInformation|Updates a company information.|
 
 
 ## Properties
@@ -30,7 +31,7 @@ Represents the information specified for the current company in Dynamics 365 Bus
 |:-------------|:--------|:-------------------------------------|
 |id            |GUID|The unique ID of the company. Non-editable.|
 |displayName   |string   |The company's display name.           |
-|address       |[NAV.PostalAddress](../resources/dynamics-complextypes.md)|The company's address. View the complex type for additional detail.|
+|address       |[NAV.PostalAddress](../resources/dynamics-complextypes.md)|The company's address. View the complex type for more details.|
 |phoneNumber   |string   |The company's telephone number.       |
 |faxNumber     |string   |The company's fax number.             |
 |email         |string   |The company's email address.          |
@@ -49,7 +50,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the companyInformation
+Here's a JSON representation of the companyInformation
 ```json
 {
   "id": "GUID",

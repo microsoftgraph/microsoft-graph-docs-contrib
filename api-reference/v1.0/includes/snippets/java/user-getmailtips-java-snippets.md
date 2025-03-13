@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> emailAddressesList = new LinkedList<String>();
-emailAddressesList.add("danas@contoso.onmicrosoft.com");
-emailAddressesList.add("fannyd@contoso.onmicrosoft.com");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-MailTipsType mailTipsOptions = MailTipsType.AUTOMATIC_REPLIES;
+com.microsoft.graph.users.item.getmailtips.GetMailTipsPostRequestBody getMailTipsPostRequestBody = new com.microsoft.graph.users.item.getmailtips.GetMailTipsPostRequestBody();
+LinkedList<String> emailAddresses = new LinkedList<String>();
+emailAddresses.add("danas@contoso.com");
+emailAddresses.add("fannyd@contoso.com");
+getMailTipsPostRequestBody.setEmailAddresses(emailAddresses);
+getMailTipsPostRequestBody.setMailTipsOptions(EnumSet.of(MailTipsType.AutomaticReplies, MailTipsType.MailboxFullStatus));
+var result = graphClient.me().getMailTips().post(getMailTipsPostRequestBody);
 
-graphClient.me()
-	.getMailTips(emailAddressesList,mailTipsOptions)
-	.buildRequest()
-	.post();
 
 ```

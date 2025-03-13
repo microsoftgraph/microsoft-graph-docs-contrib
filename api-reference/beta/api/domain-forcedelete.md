@@ -1,10 +1,11 @@
 ---
 title: "domain: forceDelete"
-description: "Deletes a domain using an asynchronous operation."
-author: "adimitui"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+description: "Delete a domain using an asynchronous operation."
+author: "tafra00"
+ms.localizationpriority: medium
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # domain: forceDelete
@@ -13,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a domain using an asynchronous operation.
+Delete a domain using an asynchronous operation.
+
+Before performing this operation, you must update or remove any references to **Exchange** as the provisioning service.
 
 The following actions are performed as part of this operation:
 
@@ -23,22 +26,23 @@ The following actions are performed as part of this operation:
 
 * Renames the identifierUris of applications with references to the deleted domain.
 
-* If the number of objects to be renamed is greater than 1000, an error is returned.
+* If the number of objects to be renamed is greater than 1,000, an error is returned.
 
-* If one of the applications to be renamed is a multi-tenant app, an error is returned.
+* If one of the applications to be renamed is a multitenant app, an error is returned.
 
-After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code. To verify deletion of a domain, you can perform a [get domain](domain-get.md). If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
+After the domain deletion completes, API operations for the deleted domain return a 404 HTTP response code. To verify deletion of a domain, you can perform a [get domain](domain-get.md). If the domain was successfully deleted, a 404 HTTP response code is returned in the response.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Domain.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "domain_forcedelete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/domain-forcedelete-permissions.md)]
+
+[!INCLUDE [rbac-domain-apis-write](../includes/rbac-for-apis/rbac-domain-apis-write.md)]
 
 ## HTTP request
 
@@ -53,59 +57,77 @@ POST /domains/{id}/forceDelete
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| Option to disable renamed user accounts. If a user account is disabled, the user will not be allowed to sign in.<br>*True* (default) - User accounts renamed as part of this operation are disabled.<br>*False* - User accounts renamed as part of this operation are not disabled. |
+|disableUserAccounts|Boolean| Option to disable renamed user accounts. If a user account is disabled, the user isn't allowed to sign in.<br>`true` (default) - User accounts renamed as part of this operation are disabled.<br>`false` - User accounts renamed as part of this operation aren't disabled. |
 
 ## Response
 
 If successful, this method returns `200 OK` response code. 
 
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "domain_forcedelete"
+  "name": "domain_forcedelete",
+  "sampleKeys": ["contoso.com"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/forceDelete
 Content-type: application/json
-Content-length: 33
 
 {
   "disableUserAccounts": true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/domain-forcedelete-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/domain-forcedelete-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/domain-forcedelete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/domain-forcedelete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/domain-forcedelete-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/domain-forcedelete-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/domain-forcedelete-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-##### Response
+### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

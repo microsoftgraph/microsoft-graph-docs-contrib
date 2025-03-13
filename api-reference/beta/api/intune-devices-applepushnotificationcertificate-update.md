@@ -1,10 +1,11 @@
 ---
 title: "Update applePushNotificationCertificate"
 description: "Update the properties of a applePushNotificationCertificate object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update applePushNotificationCertificate
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Update the properties of a [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -56,7 +59,7 @@ The following table shows the properties that are required when you create the [
 |certificateUploadStatus|String|The certificate upload status.|
 |certificateUploadFailureReason|String|The reason the certificate upload failed.|
 |certificateSerialNumber|String|Certificate serial number. This property is read-only.|
-|certificate|String|Not yet documented|
+|certificate|String||
 
 
 
@@ -104,9 +107,3 @@ Content-Length: 594
   "certificate": "Certificate value"
 }
 ```
-
-
-
-
-
-

@@ -4,14 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var across = true;
+// Dependencies
+using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Names.Item.RangeNamespace.Merge;
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
-	.Range()
-	.Merge(across)
-	.Request()
-	.PostAsync();
+var requestBody = new MergePostRequestBody
+{
+	Across = true,
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"].Range.Merge.PostAsync(requestBody);
+
 
 ```

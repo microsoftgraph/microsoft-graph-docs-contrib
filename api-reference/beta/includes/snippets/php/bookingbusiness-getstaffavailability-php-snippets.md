@@ -1,0 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+<?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Solutions\BookingBusinesses\Item\GetStaffAvailability\GetStaffAvailabilityPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
+
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestBody = new GetStaffAvailabilityPostRequestBody();
+$requestBody->setStaffIds(['311a5454-08b2-4560-ba1c-f715e938cb79', 	]);
+$startDateTime = new DateTimeTimeZone();
+$startDateTime->setDateTime('2022-01-25T00:00:00');
+$startDateTime->setTimeZone('India Standard Time');
+$requestBody->setStartDateTime($startDateTime);
+$endDateTime = new DateTimeTimeZone();
+$endDateTime->setDateTime('2022-01-26T17:00:00');
+$endDateTime->setTimeZone('Pacific Standard Time');
+$requestBody->setEndDateTime($endDateTime);
+
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->getStaffAvailability()->post($requestBody)->wait();
+
+```

@@ -1,38 +1,36 @@
 ---
 title: "appScope resource type"
 description: "An app scope is a scope defined and understood by a specific application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/23/2024
 ---
 
 # appScope resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The scope of a role assignment determines the set of resources for which the principal has been granted access. An app scope is a scope defined and understood by a specific application. The other type of scope is directory scope. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. 
+The scope of a role assignment determines the set of resources for which the principal is granted access. An app scope is a scope defined and understood by a specific application. The other type of scope is directory scope. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. 
 
-This is employed in both the single principal, single scope entity and multiple principal, multiple scope entities.
-
-## Methods
-None
+This scope is employed in both the single principal, single scope entity and multiple principal, multiple scope entities.
 
 ## Properties
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| id | string | Id of an app-specific container or resource representing the scope of the assignment. Usually the immutable id of the resource. The scope of an assignment determines the set of resources for which the principal has been granted access. This property is required. |
-| type | String | Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only. |
-| displayName | string | Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only. |
+| id | string | ID of an app-specific container or resource representing the scope of the assignment. Usually the immutable ID of the resource. The scope of an assignment determines the set of resources for which the principal is granted access. Required. |
+| type | String | Describes the type of app-specific resource represented by the app scope. For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read only. |
+| displayName | string | Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable ID. Read only. |
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -1,27 +1,30 @@
 ---
-title: "Create program"
-description: "In the Azure AD access reviews feature, create a new program object."
-localization_priority: Normal
+title: "Create program (deprecated)"
+description: "In the Microsoft Entra access reviews feature, create a new program object."
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "markwahl-msft"
+ms.subservice: "entra-id-governance"
+author: "shubhamguptacal"
+ms.date: 04/05/2024
 ---
 
-# Create program
+# Create program (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [program](../resources/program.md) object.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | ProgramControl.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, create a new [program](../resources/program.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "program_create" } -->
+[!INCLUDE [permissions-table](../includes/permissions/program-create-permissions.md)]
 
 The signed in user must also be in a directory role that permits them to create a program.
 
@@ -68,23 +71,43 @@ Content-type: application/json
     "description": "test description"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-program-from-programs-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-program-from-programs-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-program-from-programs-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-program-from-programs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-program-from-programs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-program-from-programs-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-program-from-programs-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-program-from-programs-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-program-from-programs-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,14 +124,14 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List programs](program-list.md) |	[program](../resources/program.md) collection|	Get a collection of all the programs.|
-|[List programControls of a program](program-listcontrols.md) |		[programControl](../resources/programcontrol.md) collection|	Get a collection of the controls of a program.|
-|[Update program](program-update.md) |	[program](../resources/program.md)|	Update a program.|
-|[Create programControl](programcontrol-create.md) |		[programControl](../resources/programcontrol.md)	|	Add a programControl to a program.|
+|[List programs](program-list.md) |    [program](../resources/program.md) collection|    Get a collection of all the programs.|
+|[List programControls of a program](program-listcontrols.md) |        [programControl](../resources/programcontrol.md) collection|    Get a collection of the controls of a program.|
+|[Update program](program-update.md) |    [program](../resources/program.md)|    Update a program.|
+|[Create programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |    Add a programControl to a program.|
 
 <!--
 {
@@ -121,5 +144,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

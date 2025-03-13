@@ -1,0 +1,32 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.application import Application
+from msgraph_beta.generated.models.app_role import AppRole
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+request_body = Application(
+	app_roles = [
+		AppRole(
+			allowed_member_types = [
+				"User",
+				"Application",
+			],
+			description = "Survey.Read",
+			display_name = "Survey.Read",
+			id = UUID("ebb7c86c-fb47-4e3f-8191-420ff1b9de4a"),
+			is_enabled = False,
+			origin = "Application",
+			value = "Survey.Read",
+		),
+	],
+)
+
+result = await graph_client.applications.by_application_id('application-id').patch(request_body)
+
+
+```

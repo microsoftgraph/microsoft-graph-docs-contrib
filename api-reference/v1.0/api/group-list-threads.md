@@ -1,10 +1,11 @@
 ---
 title: "List threads"
 description: "Get all the threads of a group."
-author: "yyuank"
-localization_priority: Normal
-ms.prod: "groups"
+author: "mikemcleanlive"
+ms.localizationpriority: medium
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List threads
@@ -13,71 +14,99 @@ Namespace: microsoft.graph
 
 Get all the threads of a group.
 
->**Note:** You can also [get all the threads of a conversation](conversation-list-threads.md).
+> **Note:** You can also [get all the threads of a conversation](conversation-list-threads.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All |
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "group_list_threads" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-list-threads-permissions.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}/threads
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [ConversationThread](../resources/conversationthread.md) objects in the response body.
 
 ## Example
+
 #### Request
-The following is an example of the request.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_get_threads"
 }-->
+
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/{id}/threads
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/threads
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-threads-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-get-threads-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/group-get-threads-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-get-threads-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-get-threads-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-threads-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-get-threads-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/group-get-threads-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-get-threads-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-get-threads-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
 #### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -85,36 +114,23 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.conversationThread",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 536
 
 {
   "value": [
     {
-      "toRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ],
+      "id": "thread-id",
       "topic": "topic-value",
       "hasAttachments": true,
       "lastDeliveredDateTime": "datetime-value",
       "uniqueSenders": [
         "uniqueSenders-value"
       ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ]
+      "preview": "preview-value",
+      "isLocked": false
     }
   ]
 }
@@ -131,4 +147,3 @@ Content-length: 536
   "suppressions": [
   ]
 }-->
-

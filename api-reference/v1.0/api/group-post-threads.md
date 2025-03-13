@@ -1,58 +1,72 @@
 ---
 title: "Create conversation thread"
 description: "Start a new group conversation by first creating a thread. "
-author: "yyuank"
-localization_priority: Normal
-ms.prod: "groups"
+author: "mikemcleanlive"
+ms.localizationpriority: medium
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Create conversation thread
 
 Namespace: microsoft.graph
 
-Start a new group conversation by first creating a thread. 
+Start a new group conversation by first creating a thread.
 
-A new conversation, conversation thread, and post are created in the group. 
+A new conversation, conversation thread, and post are created in the group.
 Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that thread.
 
-Note: You can also [start a new thread in an existing conversation](conversation-post-threads.md). 
+Note: You can also [start a new thread in an existing conversation](conversation-post-threads.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/threads
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object containing a [post](../resources/post.md).
 
 ## Response
+
 If successful, this method returns `201 Created` response code and [conversationThread](../resources/conversationthread.md) object in the response body.
 
 ## Example
+
 #### Request
-The following is an example of the request.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_conversationthread_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/threads
 Content-type: application/json
@@ -73,36 +87,56 @@ Content-type: application/json
   }]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationthread-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversationthread-from-group-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-conversationthread-from-group-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-conversationthread-from-group-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conversationthread-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversationthread-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversationthread-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-conversationthread-from-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-conversationthread-from-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-conversationthread-from-group-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.conversationThread"
 } -->
+
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 419
 
 {
   "toRecipients": [
@@ -141,4 +175,3 @@ Content-length: 419
   "suppressions": [
   ]
 }-->
-

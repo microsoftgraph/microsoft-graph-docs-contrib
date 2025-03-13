@@ -1,10 +1,11 @@
 ---
 title: "shift resource type"
-description: "A shift is a unit of scheduled work in the schedule."
-author: "nkramer"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+description: "Represents a unit of scheduled work in a schedule."
+author: "shanemalone"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # shift resource type
@@ -13,56 +14,76 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A unit of scheduled work in a [schedule](schedule.md). 
+Represents a unit of scheduled work in a [schedule](schedule.md).
+
+The duration of a shift can't be less than 1 minute or longer than 24 hours.
+
+Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Create shift](../api/schedule-post-shifts.md) | [shift](shift.md) | Create a new `shift`.|
-|[List shifts](../api/schedule-list-shifts.md) | [shift](shift.md) collection | Get the list of `shifts` in this schedule.|
-|[Get shift](../api/shift-get.md) | [shift](shift.md) | Get a `shift` by ID.|
-|[Replace shift](../api/shift-put.md) | [shift](shift.md) | Replace a `shift`.|
-|[Delete shift](../api/shift-delete.md) | None | Delete a `shift` from the schedule.|
+| Method                                                              | Return Type                  | Description                                                                                                  |
+| :------------------------------------------------------------------ | :--------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| [Create](../api/schedule-post-shifts.md)                      | [shift](shift.md)            | Create a new **shift**.                                                                                      |
+| [List](../api/schedule-list-shifts.md)                       | [shift](shift.md) collection | Get the list of **shifts** in this schedule.                                                                 |
+| [Get](../api/shift-get.md)                                    | [shift](shift.md)            | Get a **shift** by ID.                                                                                       |
+| [Replace](../api/shift-put.md)                                | [shift](shift.md)            | Replace a **shift**.                                                                                         |
+| [Delete](../api/shift-delete.md)                              | None                         | Delete a **shift** from the schedule.                                                                        |
+| [Stage for deletion](../api/changetrackedentity-stagefordeletion.md)| None                         | Stage the deletion of a [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md) in draft mode.        |
 
 ## Properties
-|Name          |Type           |Description                                                                                                                                      |
-|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			|`string`      |ID of the `shift`.|
-| userId 			|`string`      |ID of the user assigned to the `shift`. Required. |
-| schedulingGroupId 		|`string`      |ID of the scheduling group the `shift` is part of. Required. |
-| sharedShift 	|[shiftItem](shiftitem.md)  |The shared version of this `shift` that is viewable by both employees and managers. Required. |
-| draftShift		|[shiftItem](shiftitem.md)        |The draft version of this `shift` that is viewable by managers. Required. |
-| createdDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this `shift`.|
+
+| Property             | Type                          | Description |
+| -------------------- | ----------------------------- | ----------- |
+| createdBy             | [identitySet](identityset.md)     | Identity of the user who created the **shift** object. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
+| createdDateTime      | DateTimeOffset              | The timestamp on which this **shift** was first created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
+| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they're [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property. |
+| id                   | String                      | The unique identifier for the **shift**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
+| isStagedForDeletion   | Boolean                           | The **shift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). |
+| lastModifiedBy       | [identitySet](identityset.md) | The identity of the user who last updated this **shift**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
+| lastModifiedDateTime | DateTimeOffset              | The timestamp on which this **shift** was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
+| schedulingGroupId    | String                      | ID of the scheduling group the **shift** is part of. Required. |
+| schedulingGroupInfo  | [schedulingGroupInfo](schedulinggroupinfo.md)  | Information of the scheduling group the **shift** is part of. |
+| sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Updates to the **sharedShift** property send notifications to users in the Teams client.|
+| teamInfo             | [shiftsTeamInfo](shiftsteaminfo.md)                  | Information of the team that the **shift** is in. |
+| userId               | String                      | ID of the user assigned to the **shift**. Required. |
+| userInfo             | [shiftsUserInfo](shiftsuserinfo.md)                  | Information of the user assigned to the **shift**. |
+
+## Relationships
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.shift"
+  "@odata.type": "microsoft.graph.shift",
+   "baseType":"microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
 {
-  "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "lastModifiedBy": {"@odata.type":"microsoft.graph.identitySet"},
-  "sharedShift": {"@odata.type":"microsoft.graph.shiftItem"},
-  "draftShift": {"@odata.type":"microsoft.graph.shiftItem"}
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "draftShift": { "@odata.type": "microsoft.graph.shiftItem" },
+  "id": "String (identifier)",
+  "isStagedForDeletion": "Boolean",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "String (timestamp)",
+  "schedulingGroupId": "String",
+  "schedulingGroupInfo": "microsoft.graph.schedulingGroupInfo",
+  "sharedShift": { "@odata.type": "microsoft.graph.shiftItem" },
+  "teamInfo": "microsoft.graph.shiftsTeamInfo",
+  "userId": "String",
+  "userInfo": "microsoft.graph.shiftsUserInfo"
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -73,5 +94,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

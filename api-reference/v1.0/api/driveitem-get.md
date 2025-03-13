@@ -1,28 +1,27 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Get a file or folder
-localization_priority: Priority
-ms.prod: "sharepoint"
-description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
+author: spgraph-docs-team
+title: Get driveItem
+ms.localizationpriority: high
+ms.subservice: "sharepoint"
+description: "Retrieve the metadata for a driveItem in a drive by file system path or ID."
 doc_type: apiPageType
+ms.date: 06/12/2024
 ---
-# Get a DriveItem resource
+# Get driveItem
 
 Namespace: microsoft.graph
 
-Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.
+Retrieve the metadata for a [driveItem](../resources/driveitem.md) in a [drive](../resources/drive.md) by file system path or ID.
+`item-id` is the ID of a drive item. It can also be the unique ID of a [SharePoint list item](../resources/listitem.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-get-permissions.md)]
 
 ## HTTP request
 
@@ -52,21 +51,22 @@ You can also use the `includeDeletedItems=true` query parameter to return delete
 This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise will be ignored.
 This is currently only supported on OneDrive Personal.
 
-## Optional request headers
+## Request headers
 
-| Name          | Value  | Description                                                                                                                                              |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| if-none-match | String. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.
+If successful, this method returns a `200 OK` response code and the [driveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
 
 ### Request
 
-Here is an example of the request to the root folder of the user's OneDrive.
+The following example shows a request to the root folder of the user's OneDrive.
 
 
 # [HTTP](#tab/http)
@@ -75,28 +75,44 @@ Here is an example of the request to the root folder of the user's OneDrive.
 ```msgraph-interactive
 GET /me/drive/root
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-root-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-drive-root-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-drive-root-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-root-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-root-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-root-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-drive-root-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-drive-root-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-drive-root-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+### Response
 
-## Response
-
-Here is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -130,10 +146,9 @@ Content-type: application/json
 }
 ```
 
-## Remarks
+## Related content
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+For details about how errors are returned, see [Error responses][error-response].
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters

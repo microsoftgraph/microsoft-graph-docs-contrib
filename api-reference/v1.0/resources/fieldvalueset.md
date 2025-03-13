@@ -1,15 +1,14 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/11/2017
-title: FieldValueSet
-localization_priority: Normal
+title: fieldValueSet resource type
+ms.localizationpriority: medium
 description: "Represents the column values in a listItem resource."
-ms.prod: ""
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
-# FieldValueSet resource
+# fieldValueSet resource type
 
 Namespace: microsoft.graph
 
@@ -17,7 +16,7 @@ Represents the column values in a [listItem](listitem.md) resource.
 
 ## JSON representation
 
-Here is a JSON representation of a **fieldValueSet** resource.
+Here's a JSON representation of a **fieldValueSet** resource.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
       "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
        "baseType": "microsoft.graph.entity", "openType": true } -->
@@ -26,8 +25,8 @@ Here is a JSON representation of a **fieldValueSet** resource.
 {
     "Author": "Brad Cleaver",
     "AuthorLookupId": "13",
-    "Name": "Kangaroos and Wallabies: A Deep Dive",
     "Color": "Red",
+    "Name": "Kangaroos and Wallabies: A Deep Dive",
     "Quantity": 350,
 }
 ```
@@ -37,12 +36,12 @@ Here is a JSON representation of a **fieldValueSet** resource.
 Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.
 The example above is for a list that contains four columns, **Author**, **Name**, **Color**, and **Quantity**.
 
-Lookup fields (like `Author` above) are not returned by default.
+Lookup fields (like `Author` above) aren't returned by default.
 Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.
 The name of the 'LookupId' field is the original field name followed by `LookupId`.
 
 Up to 12 lookup fields may be requested in a single query.
-The server will return lookup values if your request includes a `select` statement with the fields you need.
+The server returns lookup values if your request includes a `select` statement with the fields you need.
 Example:
 
 ```http

@@ -2,9 +2,10 @@
 title: "Update contact"
 description: "Update the properties of contact object."
 author: "kevinbellinger"
-localization_priority: Normal
-ms.prod: "outlook"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Update contact
@@ -14,9 +15,12 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of contact object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Contacts.ReadWrite    |
@@ -35,16 +39,16 @@ A [contact](../resources/contact.md) from a user's top level [contactFolder](../
 PATCH /me/contactFolders/{id}/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
-PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -85,7 +89,7 @@ In the request body, supply the values for relevant fields that should be update
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact. This property is optional.|
 |yomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
 
-Since the **contact** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
+Since the **contact** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **contact** instance.
 
 ## Response
@@ -98,7 +102,8 @@ The following example updates the personal email address of the specified contac
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_contact"
+  "name": "update_contact",
+  "sampleKeys": ["AAMkADh6v5AAAvgTCEAAA="]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/contacts/AAMkADh6v5AAAvgTCEAAA=
@@ -109,10 +114,10 @@ Content-type: application/json
         {
             "type":"personal",
             "name":"Pavel Bansky",
-            "address":"pavelb@adatum.onmicrosoft.com"
+            "address":"pavelb@contoso.com"
         },
         {
-          "address": "pavelb@fabrikam.onmicrosoft.com",
+          "address": "pavelb@contoso.com",
           "name": "Pavel Bansky",
           "type": "other",
           "otherLabel": "Volunteer work"
@@ -120,22 +125,43 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-contact-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-contact-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-contact-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-contact-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-contact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-contact-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-contact-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-contact-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-contact-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -190,13 +216,13 @@ Content-type: application/json
         {
             "type":"personal",
             "name":"Pavel Bansky",
-            "address":"pavelb@adatum.onmicrosoft.com"
+            "address":"pavelb@contoso.com"
         },
         {
             "type":"other",
             "otherLabel":"Volunteer work",
             "name":"Pavel Bansky",
-            "address":"pavelb@fabrikam.onmicrosoft.com"
+            "address":"pavelb@contoso.com"
         }
     ],
     "websites":[
@@ -217,7 +243,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

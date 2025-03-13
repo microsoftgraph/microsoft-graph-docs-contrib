@@ -1,10 +1,11 @@
 ---
 title: "reportRoot: getSkypeForBusinessActivityUserDetail"
 description: "Get details about Skype for Business activity by user."
-localization_priority: Normal
-ms.prod: "reports"
-author: "pranoychaudhuri"
+ms.localizationpriority: medium
+ms.subservice: "reports"
+author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getSkypeForBusinessActivityUserDetail
@@ -15,22 +16,21 @@ Get details about Skype for Business activity by user.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Skype for Business activity](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+<!-- { "blockType": "permissions", "name": "reportroot_getskypeforbusinessactivityuserdetail" } -->
+[!INCLUDE [permissions-table](../includes/permissions/reportroot-getskypeforbusinessactivityuserdetail-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
 
-<!-- { "blockType": "samples" } --> 
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 GET /reports/getSkypeForBusinessActivityUserDetail(period='{period_value}')
@@ -52,7 +52,7 @@ In the request URL, provide one of the following parameters with a valid value.
 
 | Name          | Description                              |
 | :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Required.                |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response
@@ -90,7 +90,7 @@ The CSV file has the following headers for columns.
 - Organized Conference Dial-in/out Microsoft Count
 - Organized Conference Dial-in Microsoft Minutes
 - Organized Conference Dial-out Microsoft Minutes
-- Paricipated Conference IM Count
+- Participated Conference IM Count
 - Participated Conference Audio/Video Count
 - Participated Conference Audio/Video Minutes
 - Participated Conference App Sharing Count
@@ -103,12 +103,12 @@ The CSV file has the following headers for columns.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
+# [HTTP](#tab/http)
 <!--{
-  "blockType": "ignored",
-  "isComposable": true,
+  "blockType": "request",
   "name": "reportroot_getskypeforbusinessactivityuserdetail"
 }-->
 
@@ -116,15 +116,42 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessActivityUserDetail(period='D7')
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getskypeforbusinessactivityuserdetail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/reportroot-getskypeforbusinessactivityuserdetail-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getskypeforbusinessactivityuserdetail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getskypeforbusinessactivityuserdetail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getskypeforbusinessactivityuserdetail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/reportroot-getskypeforbusinessactivityuserdetail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/reportroot-getskypeforbusinessactivityuserdetail-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "blockType": "ignored"
 } -->
 
 ```http
@@ -135,13 +162,16 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { 
+  "blockType": "response", 
+  "@odata.type": "String" 
+} -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Date,Total Peer-to-peer Session Count,Total Organized Conference Count,Total Participated Conference Count,Peer-to-peer Last Activity Date,Organized Conference Last Activity Date,Participated Conference Last Activity Date,Peer-to-peer IM Count,Peer-to-peer Audio Count,Peer-to-peer Audio Minutes,Peer-to-peer Video Count,Peer-to-peer Video Minutes,Peer-to-peer App Sharing Count,Peer-to-peer File Transfer Count,Organized Conference IM Count,Organized Conference Audio/Video Count,Organized Conference Audio/Video Minutes,Organized Conference App Sharing Count,Organized Conference Web Count,Organized Conference Dial-in/out 3rd Party Count,Organized Conference Dial-in/out Microsoft Count,Organized Conference Dial-in Microsoft Minutes,Organized Conference Dial-out Microsoft Minutes,Paricipated Conference IM Count,Participated Conference Audio/Video Count,Participated Conference Audio/Video Minutes,Participated Conference App Sharing Count,Participated Conference Web Count,Participated Conference Dial-in/out 3rd Party Count,Assigned Products,Report Period
+Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Date,Total Peer-to-peer Session Count,Total Organized Conference Count,Total Participated Conference Count,Peer-to-peer Last Activity Date,Organized Conference Last Activity Date,Participated Conference Last Activity Date,Peer-to-peer IM Count,Peer-to-peer Audio Count,Peer-to-peer Audio Minutes,Peer-to-peer Video Count,Peer-to-peer Video Minutes,Peer-to-peer App Sharing Count,Peer-to-peer File Transfer Count,Organized Conference IM Count,Organized Conference Audio/Video Count,Organized Conference Audio/Video Minutes,Organized Conference App Sharing Count,Organized Conference Web Count,Organized Conference Dial-in/out 3rd Party Count,Organized Conference Dial-in/out Microsoft Count,Organized Conference Dial-in Microsoft Minutes,Organized Conference Dial-out Microsoft Minutes,Participated Conference IM Count,Participated Conference Audio/Video Count,Participated Conference Audio/Video Minutes,Participated Conference App Sharing Count,Participated Conference Web Count,Participated Conference Dial-in/out 3rd Party Count,Assigned Products,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
@@ -154,4 +184,3 @@ Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Da
   "suppressions": [
   ]
 }-->
-

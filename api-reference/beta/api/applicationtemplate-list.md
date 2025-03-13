@@ -1,10 +1,11 @@
 ---
 title: "List applicationTemplates"
 description: "Retrieve a list of applicationtemplate objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 08/02/2024
 ---
 
 # List applicationTemplates
@@ -13,19 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects from the Azure AD application gallery.
+Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects from the Microsoft Entra application gallery.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | None. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | None. |
+<!-- {
+  "blockType": "permissions",
+  "name": "applicationtemplate-list-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/applicationtemplate-list-permissions.md)]
 
-Additional permissions are not required to call this API, as long as your application has a valid access token to call Microsoft Graph.
+Additional permissions aren't required to call this API, as long as your application has a valid access token to call Microsoft Graph.
 
 ## HTTP request
 
@@ -48,11 +52,11 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -73,33 +77,51 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-applicationtemplates-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplates-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-applicationtemplates-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationtemplates-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-applicationtemplates-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.applicationTemplate",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.applicationTemplate)"
 } -->
 
 ```http
@@ -107,16 +129,77 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applicationTemplates?$select=appCategory,categories",
   "value": [
     {
-      "id" : "id-value",
-      "displayName" : "displayName-value",
-      "homePageUrl" : "homePageUrl-value",
-      "supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
-      "logoUrl" : "logoUrl-value",
-      "categories" : ["categories-value"],
-      "publisher" : "publisher-value",
-      "description" : "description-value"
+      "id": "006a06ef-9160-42cd-88bf-17a7588fc844",
+      "displayName": "LinkedIn Lookup",
+      "homePageUrl": "www.linkedin.com",
+      "supportedSingleSignOnModes": [
+        "SAML",
+        "Password"
+      ],
+      "supportedProvisioningTypes": [],
+      "logoUrl": "https://images.microsoft.com",
+      "categories": [
+        "collaboration",
+        "social"
+      ],
+      "publisher": "LinkedIn",
+      "description": "LinkedIn Lookup is the easiest way to find coworkers and teams at your company. Lookup is a new people search tool that combines employees' LinkedIn profile information and Active Directory information, allowing you to quickly find and contact your coworkers, on desktop or mobile. Requires an existing Lookup company subscription.",
+      "supportedClaimConfiguration": {
+        "requiredClaims": [
+          {
+            "id": "first_name",
+            "namespace": "",
+            "source": "user",
+            "attribute": "firstname"
+          },
+          {
+            "id": "last_name",
+            "namespace": "",
+            "source": "user",
+            "attribute": "surname"
+          },
+          {
+            "id": "email_address",
+            "namespace": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/",
+            "source": "user",
+            "attribute": "mail"
+          }
+        ],
+        "groupMembershipClaims": "securityGroup",
+        "nameIdPolicyFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+      },
+      "informationalUrls": {
+        "singleSignOnDocumentationUrl": "https://go.microsoft.com/fwlink/?linkid=847714",
+        "provisioningDocumentationUrl": null,
+        "appSignUpUrl": null
+      },
+      "configurationUris": [
+        {
+          "usage": "redirectUri",
+          "examples": [
+            "https://www.linkedin.com/checkpoint/enterprise/<SUBDOMAIN>"
+          ],
+          "values": [
+            "https://www.linkedin.com/checkpoint/enterprise/*"
+          ],
+          "isRequired": false,
+          "appliesToSingleSignOnMode": "saml"
+        },
+        {
+          "usage": "identifierUri",
+          "examples": null,
+          "values": [
+            "linkedinlookup/primary",
+            "https://www.linkedin.com/lookup/*"
+          ],
+          "isRequired": true,
+          "appliesToSingleSignOnMode": "saml"
+        }
+      ]
     }
   ]
 }
@@ -131,5 +214,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

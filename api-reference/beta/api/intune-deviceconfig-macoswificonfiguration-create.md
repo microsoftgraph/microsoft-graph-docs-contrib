@@ -1,10 +1,11 @@
 ---
 title: "Create macOSWiFiConfiguration"
 description: "Create a new macOSWiFiConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create macOSWiFiConfiguration
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Create a new [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -39,7 +42,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,10 +68,11 @@ The following table shows the properties that are required when you create the m
 |connectAutomatically|Boolean|Connect automatically when this network is in range. Setting this to true will skip the user prompt and automatically connect the device to Wi-Fi network.|
 |connectWhenNetworkNameIsHidden|Boolean|Connect when the network is not broadcasting its name (SSID). When set to true, this profile forces the device to connect to a network that doesn't broadcast its SSID to all devices.|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Possible values are: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
-|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Proxy Type for this Wi-Fi connection. Possible values are: `none`, `manual`, `automatic`.|
+|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Proxy Type for this Wi-Fi connection. Possible values are: `none`, `manual`, `automatic`, `unknownFutureValue`.|
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected.|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected.|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the deployment channel type used to deploy the configuration profile. Possible values are deviceChannel, userChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
 
@@ -83,7 +87,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1450
+Content-length: 1489
 
 {
   "@odata.type": "#microsoft.graph.macOSWiFiConfiguration",
@@ -124,6 +128,7 @@ Content-length: 1450
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "deploymentChannel": "userChannel",
   "preSharedKey": "Pre Shared Key value"
 }
 ```
@@ -133,7 +138,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1622
+Content-Length: 1661
 
 {
   "@odata.type": "#microsoft.graph.macOSWiFiConfiguration",
@@ -177,12 +182,7 @@ Content-Length: 1622
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "deploymentChannel": "userChannel",
   "preSharedKey": "Pre Shared Key value"
 }
 ```
-
-
-
-
-
-

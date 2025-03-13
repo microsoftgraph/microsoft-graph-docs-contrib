@@ -1,10 +1,11 @@
 ---
 title: "createMigrationReport action"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Gpanalyticsservice Grouppolicymigrationreport Createmigrationreport Api ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # createMigrationReport action
@@ -15,12 +16,14 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
 
-## Prerequisites
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ POST /deviceManagement/groupPolicyMigrationReports/createMigrationReport
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|groupPolicyObjectFile|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|Not yet documented|
+|groupPolicyObjectFile|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)||
 
 
 
@@ -63,7 +66,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/createMigrationReport
 
 Content-type: application/json
-Content-length: 438
+Content-length: 506
 
 {
   "groupPolicyObjectFile": {
@@ -73,7 +76,10 @@ Content-length: 438
     "ouDistinguishedName": "Ou Distinguished Name value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "content": "Content value"
+    "content": "Content value",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```
@@ -89,9 +95,3 @@ Content-Length: 48
   "value": "Create Migration Report value"
 }
 ```
-
-
-
-
-
-

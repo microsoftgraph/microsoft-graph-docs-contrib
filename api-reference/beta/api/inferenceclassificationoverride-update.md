@@ -1,10 +1,11 @@
 ---
 title: "Update inferenceClassificationOverride"
 description: "Change the **classifyAs** field of a Focused Inbox override as specified. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "svpsiva"
-ms.prod: ""
+author: "SuryaLashmiS"
+ms.subservice: mail
+ms.date: 06/22/2024
 ---
 
 # Update inferenceClassificationOverride
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Change the **classifyAs** field of a [Focused Inbox](../resources/manage-focused-inbox.md) override as specified.
+Change the **classifyAs** field of a [focused Inbox](../resources/manage-focused-inbox.md) override as specified.
 
 You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) instance.
 
@@ -22,14 +23,13 @@ If an override exists for a sender and the sender changes his/her display name, 
 If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride-delete.md) the existing override and [creating](inferenceclassification-post-overrides.md) a new one with
 the new SMTP address is the only way to "update" the override for this sender.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "inferenceclassificationoverride_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/inferenceclassificationoverride-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
@@ -55,8 +55,8 @@ In the request body, supply the new value for **classifyAs**. For best performan
 
 If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
 ## Example
-##### Request
-The following example changes the override for the SMTP address randiw@adatum.onmicrosoft.com from `other` to `focused`.
+### Request
+The following example changes the override for the SMTP address randiw@contoso.com from `other` to `focused`.
 
 
 # [HTTP](#tab/http)
@@ -72,22 +72,45 @@ Content-type: application/json
   "classifyAs": "focused"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-inferenceclassificationoverride-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-inferenceclassificationoverride-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-inferenceclassificationoverride-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-inferenceclassificationoverride-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-inferenceclassificationoverride-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-inferenceclassificationoverride-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-inferenceclassificationoverride-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-inferenceclassificationoverride-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-inferenceclassificationoverride-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +124,7 @@ Content-type: application/json
   "classifyAs": "focused",
   "senderEmailAddress": {
     "name": "Randi Welch",
-    "address": "randiw@adatum.onmicrosoft.com"
+    "address": "randiw@contoso.com"
   },
   "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
 }

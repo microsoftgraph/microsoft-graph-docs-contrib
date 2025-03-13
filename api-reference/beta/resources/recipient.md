@@ -1,10 +1,11 @@
 ---
 title: "recipient resource type"
 description: "Represents information about a user in the sending or receiving end of an event, message or group post. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "svpsiva"
+ms.subservice: mail
+author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # recipient resource type
@@ -20,9 +21,12 @@ Represents information about a user in the sending or receiving end of an event,
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|The recipient's email address.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

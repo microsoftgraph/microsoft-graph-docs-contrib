@@ -1,10 +1,11 @@
 ---
 title: "shiftActivity resource type"
 description: "Represents an activity in a shift."
-author: "nkramer"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "aaku"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # shiftActivity resource type
@@ -19,14 +20,18 @@ Represents an activity in a [shift](shift.md).
 | Property                         | Type                    | Description                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
 | isPaid               | `bool`                  | Indicates whether the `microsoft.graph.user` should be paid for the activity during their `shift`. Required.    |
-| startDateTime               | `DateTimeOffset`                  | The start date and time for the `shiftActivity`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Required. |
-| endDateTime               | `DateTimeOffset`                  | The end date and time for the `shiftActivity`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Required.    |
+| startDateTime               | `DateTimeOffset`                  | The start date and time for the `shiftActivity`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
+| endDateTime               | `DateTimeOffset`                  | The end date and time for the `shiftActivity`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required.    |
 | code               | `string`                  | Customer defined code for the `shiftActivity`. Required.    |
 | displayName               | `string`                  | The name of the `shiftActivity`. Required.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

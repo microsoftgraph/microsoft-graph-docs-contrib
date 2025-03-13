@@ -1,10 +1,11 @@
 ---
 title: "Create groupPolicySettingMapping"
 description: "Create a new groupPolicySettingMapping object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create groupPolicySettingMapping
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Create a new [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +51,7 @@ The following table shows the properties that are required when you create the g
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |parentId|String|Parent Id of the group policy setting.|
 |childIdList|String collection|List of Child Ids of the group policy setting.|
 |settingName|String|The name of this group policy setting.|
@@ -62,7 +65,7 @@ The following table shows the properties that are required when you create the g
 |mdmCspName|String|The CSP name this group policy setting maps to.|
 |mdmSettingUri|String|The MDM CSP URI this group policy setting maps to.|
 |mdmMinimumOSVersion|Int32|The minimum OS version this mdm setting supports.|
-|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|The setting type (security or admx) of the Group Policy. Possible values are: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|The setting type (security or admx) of the Group Policy. Possible values are: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`, `appLockerRuleCollection`, `dataSourcesSettings`, `devicesSettings`, `driveMapSettings`, `environmentVariables`, `filesSettings`, `folderOptions`, `folders`, `iniFiles`, `internetOptions`, `localUsersAndGroups`, `networkOptions`, `networkShares`, `ntServices`, `powerOptions`, `printers`, `regionalOptionsSettings`, `registrySettings`, `scheduledTasks`, `shortcutSettings`, `startMenuSettings`.|
 |isMdmSupported|Boolean|Indicates if the setting is supported by Intune or not|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indicates if the setting is supported in Mdm or not. Possible values are: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|The scope of the setting. Possible values are: `unknown`, `device`, `user`.|
@@ -149,9 +152,3 @@ Content-Length: 1072
   "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
-
-
-
-
-
-

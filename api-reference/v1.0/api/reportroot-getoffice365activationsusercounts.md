@@ -1,31 +1,31 @@
 ---
 title: "reportRoot: getOffice365ActivationsUserCounts"
-description: "Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers."
-localization_priority: Normal
-ms.prod: "reports"
-author: "pranoychaudhuri"
+description: "Get the count of users that are enabled and the ones that activated the Office subscription on desktop or devices or shared computers."
+ms.localizationpriority: medium
+ms.subservice: "reports"
+author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getOffice365ActivationsUserCounts
 
 Namespace: microsoft.graph
 
-Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
+Get the count of users that are enabled and the ones that activated the Office subscription on desktop or devices or shared computers.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft Office activations](https://support.office.com/office/activate-office-5bd38f38-db92-448b-a982-ad170b1e187e).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+<!-- { "blockType": "permissions", "name": "reportroot_getoffice365activationsusercounts" } -->
+[!INCLUDE [permissions-table](../includes/permissions/reportroot-getoffice365activationsusercounts-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -40,14 +40,14 @@ GET /reports/getOffice365ActivationsUserCounts
 
 | Name          | Description                              |
 | :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Required.                |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -61,12 +61,12 @@ The CSV file has the following headers for columns.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
+# [HTTP](#tab/http)
 <!--{
-  "blockType": "ignored",
-  "isComposable": true,
+  "blockType": "request",
   "name": "reportroot_getoffice365activationsusercounts"
 }-->
 
@@ -74,15 +74,46 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserCounts
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365activationsusercounts-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/reportroot-getoffice365activationsusercounts-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getoffice365activationsusercounts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365activationsusercounts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365activationsusercounts-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/reportroot-getoffice365activationsusercounts-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getoffice365activationsusercounts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/reportroot-getoffice365activationsusercounts-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "blockType": "ignored"
 } -->
 
 ```http
@@ -91,9 +122,12 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+Follow the 302 redirection and the CSV file that downloads contains the following schema.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { 
+  "blockType": "response", 
+  "@odata.type": "String" 
+} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -112,4 +146,3 @@ Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
   "suppressions": [
   ]
 }-->
-

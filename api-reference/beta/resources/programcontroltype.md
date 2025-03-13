@@ -1,34 +1,37 @@
 ---
-title: "programControlType resource type"
-description: "In the Azure AD access reviews feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  "
-localization_priority: Normal
+title: "programControlType resource type (deprecated)"
+description: "In the Microsoft Entra access reviews feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  "
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "markwahl-msft"
+ms.subservice: "entra-id-governance"
+author: "shubhamguptacal"
+ms.date: 08/21/2024
 ---
 
-# programControlType resource type
+# programControlType resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](accessreviews-root.md) feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-The program control type objects are automatically generated when the global administrator onboards the tenant to use the access reviews feature.  No additional program control types can be created.
+In the Microsoft Entra [access reviews](accessreviews-root.md) feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  
+
+The program control type objects are automatically generated when an authorized administrator onboards the tenant to use the access reviews feature.  No additional program control types can be created.
 
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
+|[List](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-| `id`                     |`String`                | The feature-assigned identifier of the program control type                                      |
-| `displayName`            |`String`                | The name of the program control type                                                             |
+| id                     |String                | The feature-assigned identifier of the program control type                                      |
+| displayName            |String                | The name of the program control type                                                             |
 
 
 ## Relationships
@@ -36,16 +39,16 @@ The program control type objects are automatically generated when the global adm
 None.
 
 
-## See also
+## Related content
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Create programControl](../api/programcontrol-create.md) |		[programControl](programcontrol.md)	|	Add a programControl to a program.|
+|[Create programControl](../api/programcontrol-create.md) |        [programControl](programcontrol.md)    |    Add a programControl to a program.|
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -73,5 +76,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

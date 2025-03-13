@@ -1,10 +1,11 @@
 ---
 title: "edgeSearchEngineCustom resource type"
 description: "Allows IT admins to set a custom default search engine for MDM-Controlled devices."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # edgeSearchEngineCustom resource type
@@ -41,9 +42,3 @@ Here is a JSON representation of the resource.
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "deviceAppManagementTaskPriority enum type"
 description: "Device app management task priority."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceAppManagementTaskPriority enum type
@@ -23,9 +24,3 @@ Device app management task priority.
 |none|0|No priority set.|
 |high|1|High priority.|
 |low|2|Low priority.|
-
-
-
-
-
-

@@ -1,17 +1,20 @@
 ---
-title: "informationProtectionAction resource type"
-description: "Describes the abtract informationProtectionAction entity."
-localization_priority: Normal
+title: "informationProtectionAction resource type (deprecated)"
+description: "Describes the abstract informationProtectionAction entity. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
-# informationProtectionAction resource type
+# informationProtectionAction resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 The **informationProtectionAction** is an abstract entity that is returned as the result of any of the information protection evaluation APIs. The object contains one or more of the following actions that instruct the application on how to apply, update, or remove the information protection label. 
 
@@ -37,7 +40,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

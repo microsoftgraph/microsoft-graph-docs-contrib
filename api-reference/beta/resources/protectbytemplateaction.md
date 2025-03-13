@@ -1,19 +1,22 @@
 ---
-title: "protectByTemplateAction resource type"
-description: "Informs the application that an Azure Information Protection protection template should be applied."
-localization_priority: Normal
+title: "protectByTemplateAction resource type (deprecated)"
+description: "Informs the application that an Azure Information Protection protection template should be applied. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
-# protectByTemplateAction resource type
+# protectByTemplateAction resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informs the application that an Azure Information Protection protection template should be applied. **protectionByTemplateAction** may be returned by [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) if the resulting label has been configured to apply protection. The consuming application must read the templateId from the result and then use a client library, such as the Microsoft Information Protection SDK, to apply protection via Azure Information Protection.
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
+
+Informs the application that an Azure Information Protection protection template should be applied. **protectionByTemplateAction** may be returned by [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) if the resulting label has been configured to apply protection. The consuming application must read the templateId from the result and then use a client library, such as the Microsoft Purview Information Protection SDK, to apply protection via Azure Information Protection.
 
 ## Properties
 
@@ -23,7 +26,7 @@ Informs the application that an Azure Information Protection protection template
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

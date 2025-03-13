@@ -1,87 +1,112 @@
 ---
 title: "Delete groupLifecyclePolicy"
 description: "Deletes a groupLifecyclePolicy."
-author: "yyuank"
-localization_priority: Normal
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.localizationpriority: medium
+ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 03/13/2024
 ---
 
 # Delete groupLifecyclePolicy
 
 Namespace: microsoft.graph
 
-Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
+Delete a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "grouplifecyclepolicy_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/grouplifecyclepolicy-delete-permissions.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /groupLifecyclePolicies/{id}
-
 ```
 
 ## Request headers
 
-| Name | Description |
-|:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json |
+| Name          | Description               |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json          |
 
 ## Request body
-Do not supply a request body for this method.
 
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
-##### Request
+### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_grouplifecyclepolicy"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-grouplifecyclepolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-grouplifecyclepolicy-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-grouplifecyclepolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-grouplifecyclepolicy-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-grouplifecyclepolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-grouplifecyclepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-grouplifecyclepolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-grouplifecyclepolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-grouplifecyclepolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-grouplifecyclepolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
+
+The following example shows a request.
 
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -97,4 +122,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

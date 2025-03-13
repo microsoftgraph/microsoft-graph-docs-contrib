@@ -1,13 +1,14 @@
 ---
-author: JeremyKelley
-description: "The listInfo complex type provides additional information about a list."
+author: spgraph-docs-team
+description: The listInfo complex type provides additional information about a list.
 ms.date: 09/11/2017
-title: ListInfo
-localization_priority: Normal
-ms.prod: "sharepoint"
+title: listInfo resource type
+ms.localizationpriority: medium
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
-# ListInfo resource
+
+# listInfo resource type
 
 Namespace: microsoft.graph
 
@@ -17,9 +18,21 @@ The **listInfo** complex type provides additional information about a [list][].
 
 [list]: list.md
 
+## Properties
+
+| Property                | Type    | Description                                                                                                                                                                                              |
+| :---------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| contentTypesEnabled | Boolean | If `true`, it indicates that content types are enabled for this list.                                                                                                                                       |
+| hidden              | Boolean | If `true`, it indicates that the list isn't normally visible in the SharePoint user experience.                                                                                                            |
+| template            | String  | Represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more. |
+
+
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -35,23 +48,15 @@ Here is a JSON representation of the resource.
   "template": "documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
 }
 ```
-
-## Properties
-
-| Property name           | Type    | Description
-|:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | If `true`, indicates that content types are enabled for this list.
-| **hidden**              | Boolean | If `true`, indicates that the list is not normally visible in the SharePoint user experience.
-| **template**            | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more.
-
 ### Remarks
 
-While most lists created by users will have one of the values listed above, other values are possible as well.
-Your app should be prepared to handle any values that are not listed here.
+While most lists created by users have one of the values listed in the previous section, other values are possible as well.
+Your app should be prepared to handle any values that aren't listed here.
 For developers familiar with SharePoint's CSOM APIs, the `template` value corresponds to the `SPListTemplateType` enumeration.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -62,5 +67,3 @@ For developers familiar with SharePoint's CSOM APIs, the `template` value corres
   "suppressions": []
 }
 -->
-
-

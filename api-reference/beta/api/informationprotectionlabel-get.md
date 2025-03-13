@@ -1,29 +1,31 @@
 ---
-title: "Get informationProtectionLabel"
-description: "Retrieve the properties and relationships of the specified informationProtectionLabel object."
-localization_priority: Normal
+title: "Get informationProtectionLabel (deprecated)"
+description: "Retrieve the properties and relationships of the specified informationProtectionLabel object. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "security"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
-# Get informationProtectionLabel
+# Get informationProtectionLabel (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
+
 Retrieve the properties and relationships of an [informationProtectionLabel](../resources/informationprotectionlabel.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | InformationProtectionPolicy.Read            |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+<!-- { "blockType": "permissions", "name": "informationprotectionlabel_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/informationprotectionlabel-get-permissions.md)]
 
 ## HTTP request
 
@@ -47,12 +49,12 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name          | Description                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required.                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,7 +64,7 @@ If successful, this method returns a `200 OK` response code and the requested [i
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -73,26 +75,46 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-informationprotectionlabel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-informationprotectionlabel-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-informationprotectionlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-informationprotectionlabel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-informationprotectionlabel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-informationprotectionlabel-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-informationprotectionlabel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-informationprotectionlabel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-informationprotectionlabel-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -106,14 +128,14 @@ Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/policy/labels/$entity",
-    "id": "4662f9a3-dd50-4a20-b984-a7be82e0e79c",
-    "name": "LabelWithFooterAndHeaderActions_Tests",
-    "description": "",
-    "color": "",
-    "sensitivity": 12,
-    "tooltip": "LabelWithFooterAndHeaderActions_Tests",
-    "isActive": true
+  "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
+  "name": "Highly Confidential",
+  "description": "Consult Contoso data labeling policy for more details.",
+  "color": "",
+  "sensitivity": 3,
+  "tooltip": "Data classified as Contoso Highly Confidential.",
+  "isActive": true,
+  "parent": null
 }
 ```
 
@@ -124,7 +146,15 @@ User-agent: ContosoLOBApp/1.0
   "description": "Get informationProtectionLabel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+	"Error: microsoft.graph.microsoft.graph/me:
+      /me/informationprotection/policy/labels/{var}
+      Uri path requires navigating into unknown object hierarchy: missing property 'informationprotection' on 'user'. Possible issues:
+  	 1) Doc bug where 'informationprotection' isn't defined on the resource.
+  	 2) Doc bug where 'informationprotection' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'user' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
 }-->
 
 

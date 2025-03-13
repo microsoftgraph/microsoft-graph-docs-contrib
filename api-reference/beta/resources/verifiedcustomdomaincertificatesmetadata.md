@@ -1,10 +1,11 @@
 ---
 title: "verifiedCustomDomainCertificatesMetadata resource type"
 description: "Represents the custom cerificate metadata for an on-premises application published via Application Proxy."
-localization_priority: Normal
-author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/26/2024
 ---
 
 # verifiedCustomDomainCertificatesMetadata resource type
@@ -13,21 +14,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the custom domain certificate metadata for the [onPremisesPublishing](onpremisespublishing.md) resource when publishing an on-premises application with Application Proxy. Using a custom domain allows you to use your own domain name instead of the default domain, msappproxy.net, for your application. To learn more see, [Custom domains in Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
+Represents the custom domain certificate metadata for the [onPremisesPublishing](onpremisespublishing.md) resource when publishing an on-premises application with Application Proxy. Using a custom domain allows you to use your own domain name instead of the default domain, msappproxy.net, for your application. To learn more see, [Custom domains in Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|expiryDate|DateTimeOffset| The expiry date of the custom domain certificate. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
-|issueDate|DateTimeOffset| The issue date of the custom domain. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
+|expiryDate|DateTimeOffset| The expiry date of the custom domain certificate. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+|issueDate|DateTimeOffset| The issue date of the custom domain. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |issuerName|String| The issuer name of the custom domain certificate. |
 |subjectName|String| The subject name of the custom domain certificate. |
 |thumbprint|String| The thumbprint associated with the custom domain certificate. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

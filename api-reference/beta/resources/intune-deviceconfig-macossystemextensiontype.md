@@ -1,10 +1,11 @@
 ---
 title: "macOSSystemExtensionType enum type"
 description: "Flag enum representing the allowed macOS system extension types."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # macOSSystemExtensionType enum type
@@ -23,9 +24,3 @@ Flag enum representing the allowed macOS system extension types.
 |driverExtensionsAllowed|1|Enables driver extensions.|
 |networkExtensionsAllowed|2|Enables network extensions.|
 |endpointSecurityExtensionsAllowed|4|Enables endpoint security extensions.|
-
-
-
-
-
-

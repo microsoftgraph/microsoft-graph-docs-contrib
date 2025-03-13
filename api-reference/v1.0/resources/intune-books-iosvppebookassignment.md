@@ -1,10 +1,11 @@
 ---
 title: "iosVppEBookAssignment resource type"
 description: "Contains properties used to assign an iOS VPP EBook to a group."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # iosVppEBookAssignment resource type
@@ -55,12 +56,3 @@ Here is a JSON representation of the resource.
   "installIntent": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

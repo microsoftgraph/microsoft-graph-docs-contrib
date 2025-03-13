@@ -4,20 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workbookRangeFormat = new WorkbookRangeFormat
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new WorkbookRangeFormat
 {
-	ColumnWidth = 135,
+	ColumnWidth = 135d,
 	HorizontalAlignment = "Right",
 	VerticalAlignment = "Top",
-	RowHeight = 49,
-	WrapText = false
+	RowHeight = 49d,
+	WrapText = false,
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["Sheet1"]
-	.Range("$C$1").Format
-	.Request()
-	.UpdateAsync(workbookRangeFormat);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Range().Format.PatchAsync(requestBody);
+
 
 ```

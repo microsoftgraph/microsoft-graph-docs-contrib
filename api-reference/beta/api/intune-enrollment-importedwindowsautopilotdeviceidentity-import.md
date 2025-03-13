@@ -1,10 +1,11 @@
 ---
 title: "import action"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Enrollment Importedwindowsautopilotdeviceidentity Import Api ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # import action
@@ -15,16 +16,18 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
 
-## Prerequisites
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection|Not yet documented|
+|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection||
 
 
 
@@ -63,14 +66,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 
 Content-type: application/json
-Content-length: 860
+Content-length: 808
 
 {
   "importedWindowsAutopilotDeviceIdentities": [
     {
       "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
       "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
-      "orderIdentifier": "Order Identifier value",
       "groupTag": "Group Tag value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
@@ -94,14 +96,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 825
+Content-Length: 773
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
       "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
-      "orderIdentifier": "Order Identifier value",
       "groupTag": "Group Tag value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
@@ -119,9 +120,3 @@ Content-Length: 825
   ]
 }
 ```
-
-
-
-
-
-

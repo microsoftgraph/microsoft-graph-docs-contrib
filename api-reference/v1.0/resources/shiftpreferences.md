@@ -1,10 +1,11 @@
 ---
 title: "shiftPreferences resource type"
 description: "Represents a user's availability to be assigned shifts in the schedule."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # shiftPreferences resource type
@@ -24,12 +25,12 @@ Represents a user's availability to be assigned shifts in the [schedule](schedul
 
 |Property          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | `Edm.String` | The identifier of the entity. |
-| @odata.etag | `Edm.String` | The change key for the entity. |
 | availability | [shiftAvailability](shiftavailability.md) collection | Availability of the user to be scheduled for work and its recurrence pattern. |
 | createdDateTime | `Edm.DateTimeOffset` | Timestamp corresponding to when the entity was created. |
-| lastModifiedDateTime | `Edm.DateTimeOffset` | Timestamp corresponding to when the entity was last modified. |
+| id | `Edm.String` | The identifier of the entity. |
 | lastModifiedBy | [identitySet](identityset.md) | Identity of the person who last modified the entity. |
+| lastModifiedDateTime | `Edm.DateTimeOffset` | Timestamp corresponding to when the entity was last modified. |
+| @odata.etag | `Edm.String` | The change key for the entity. |
 
 ## Relationships
 
@@ -37,7 +38,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

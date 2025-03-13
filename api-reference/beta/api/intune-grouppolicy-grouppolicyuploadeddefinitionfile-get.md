@@ -1,10 +1,11 @@
 ---
 title: "Get groupPolicyUploadedDefinitionFile"
 description: "Read properties and relationships of the groupPolicyUploadedDefinitionFile object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get groupPolicyUploadedDefinitionFile
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -41,7 +44,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -77,9 +80,9 @@ Content-Length: 1108
     "targetNamespace": "Target Namespace value",
     "policyType": "admxIngested",
     "revision": "Revision value",
+    "fileName": "File Name value",
     "id": "0ce1a8cf-a8cf-0ce1-cfa8-e10ccfa8e10c",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "fileName": "File Name value",
     "status": "uploadInProgress",
     "content": "Y29udGVudA==",
     "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00",
@@ -97,9 +100,3 @@ Content-Length: 1108
   }
 }
 ```
-
-
-
-
-
-

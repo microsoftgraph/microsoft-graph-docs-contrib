@@ -2,9 +2,10 @@
 title: "playPromptOperation resource type"
 description: "The playPrompt operation to obtain the result of the playPrompt action."
 author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # playPromptOperation resource type
@@ -30,7 +31,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

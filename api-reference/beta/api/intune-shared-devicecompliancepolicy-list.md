@@ -1,10 +1,11 @@
 ---
 title: "List deviceCompliancePolicies"
 description: "List properties and relationships of the deviceCompliancePolicy objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List deviceCompliancePolicies
@@ -17,7 +18,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) objects.
 
-## Prerequisites
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -29,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 | &nbsp; &nbsp; **Device configuration**  | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp; &nbsp; **Policy Set** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {
@@ -42,7 +45,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -83,12 +86,3 @@ Content-Length: 467
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

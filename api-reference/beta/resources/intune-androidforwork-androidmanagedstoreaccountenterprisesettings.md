@@ -1,10 +1,11 @@
 ---
 title: "androidManagedStoreAccountEnterpriseSettings resource type"
 description: "Enterprise settings for an Android managed store account."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # androidManagedStoreAccountEnterpriseSettings resource type
@@ -22,13 +23,14 @@ Enterprise settings for an Android managed store account.
 |:---|:---|:---|
 |[Get androidManagedStoreAccountEnterpriseSettings](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-get.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|Read properties and relationships of the [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object.|
 |[Update androidManagedStoreAccountEnterpriseSettings](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-update.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|Update the properties of a [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object.|
-|[approveApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-approveapps.md)|None|Not yet documented|
-|[requestSignupUrl action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-requestsignupurl.md)|String|Not yet documented|
-|[completeSignup action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-completesignup.md)|None|Not yet documented|
-|[syncApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|None|Not yet documented|
-|[unbind action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|None|Not yet documented|
+|[approveApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-approveapps.md)|None||
+|[requestSignupUrl action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-requestsignupurl.md)|String||
+|[completeSignup action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-completesignup.md)|None||
+|[syncApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|None||
+|[unbind action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|None||
 |[createGooglePlayWebToken action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|Generates a web token that is used in an embeddable component.|
 |[setAndroidDeviceOwnerFullyManagedEnrollmentState action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|None|Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value.|
+|[addApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-addapps.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -45,6 +47,7 @@ Enterprise settings for an Android managed store account.
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 |companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) collection|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
 |androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
+|managedGooglePlayInitialScopeTagIds|String collection|Initial scope tags for MGP apps|
 
 ## Relationships
 None
@@ -84,12 +87,9 @@ Here is a JSON representation of the resource.
       }
     }
   ],
-  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true,
+  "managedGooglePlayInitialScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "List mobileAppSupersedences"
 description: "List properties and relationships of the mobileAppSupersedence objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # List mobileAppSupersedences
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -32,13 +35,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceAppManagement/mobileAppRelationships
 GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 ```
 
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -52,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppRelationships
 ```
 
 ### Response
@@ -60,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 382
+Content-Length: 807
 
 {
   "value": [
@@ -69,6 +73,13 @@ Content-Length: 382
       "id": "c0254204-4204-c025-0442-25c0044225c0",
       "targetId": "Target Id value",
       "targetDisplayName": "Target Display Name value",
+      "targetDisplayVersion": "Target Display Version value",
+      "targetPublisher": "Target Publisher value",
+      "targetPublisherDisplayName": "Target Publisher Display Name value",
+      "sourceId": "Source Id value",
+      "sourceDisplayName": "Source Display Name value",
+      "sourceDisplayVersion": "Source Display Version value",
+      "sourcePublisherDisplayName": "Source Publisher Display Name value",
       "targetType": "parent",
       "supersedenceType": "replace",
       "supersededAppCount": 2,
@@ -77,9 +88,3 @@ Content-Length: 382
   ]
 }
 ```
-
-
-
-
-
-

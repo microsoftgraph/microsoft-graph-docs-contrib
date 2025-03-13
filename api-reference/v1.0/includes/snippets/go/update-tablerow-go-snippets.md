@@ -1,0 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewWorkbookTableRow()
+index := int32(99)
+requestBody.SetIndex(&index) 
+values := "values-value"
+requestBody.SetValues(&values) 
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+rows, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Rows().ByWorkbookTableRowId("workbookTableRow-id").Patch(context.Background(), requestBody, nil)
+
+
+```

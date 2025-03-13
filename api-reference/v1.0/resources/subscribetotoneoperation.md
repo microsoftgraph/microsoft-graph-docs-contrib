@@ -2,9 +2,10 @@
 title: "SubscribeToToneOperation resource type"
 description: "Describes the response format of creation of subscription to receive DTMF tones."
 author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # SubscribeToToneOperation resource type
@@ -26,7 +27,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

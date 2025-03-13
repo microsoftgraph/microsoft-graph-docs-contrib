@@ -4,20 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Group group = new Group();
-group.description = "description-value";
-group.displayName = "displayName-value";
-LinkedList<String> groupTypesList = new LinkedList<String>();
-groupTypesList.add("groupTypes-value");
-group.groupTypes = groupTypesList;
-group.mail = "mail-value";
-group.mailEnabled = true;
-group.mailNickname = "mailNickname-value";
+group.setDescription("Library Assist - ADC");
+group.setDisplayName("Library Assist - ADC");
+group.setMailNickname("library-help-adc");
+Group result = graphClient.groups().byGroupId("{group-id}").patch(group);
 
-graphClient.groups("{id}")
-	.buildRequest()
-	.patch(group);
 
 ```

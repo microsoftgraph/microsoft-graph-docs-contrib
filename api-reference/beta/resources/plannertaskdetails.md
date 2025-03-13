@@ -1,10 +1,11 @@
 ---
 title: "plannerTaskDetails resource type"
-description: "The **plannerTaskDetails** resource represents the additional information about a task. Each task object has a details object."
-localization_priority: Normal
+description: "Represents the additional information about a task. Each task object has a details object."
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # plannerTaskDetails resource type
@@ -13,31 +14,35 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerTaskDetails** resource represents the additional information about a task. Each [task](plannertask.md) object has a details object.
+Represents the additional information about a task. Each [task](plannertask.md) object has a details object.
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |Read properties and relationships of **plannerTaskDetails** object.|
-|[Update](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)	|Update **plannerTaskDetails** object. |
+|[Get task details](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |Read properties and relationships of **plannerTaskDetails** object.|
+|[Update task details](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)	|Update **plannerTaskDetails** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|approvalAttachment|[plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md)|Detailed information about the approval that is attached to the task.|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|The collection of checklist items on the task.|
-|description|String|Description of the task|
-|id|String| Read-only. ID of the task details. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|forms|[plannerFormsDictionary](plannerformsdictionary.md)| Read-only. Represents a dictionary of data about the forms associated with a task. Each entry in the dictionary is a key-value pair, and the value is a [plannerFormReference](plannerformreference.md) object.|
+|completionRequirements|[plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md)|Contains detailed information about requirements on the task.|
+|description|String|Description of the task.|
+|id|String| Read-only. ID of the task details. It's 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|notes|[itemBody](itembody.md)|Rich text description of the task. To be used by HTML-aware clients. For backwards compatibility, a plain-text version of the HTML description will be synced to the "description" field. If this field hasn't previously been set but "description" has been, the existing description is synchronized to "notes" with minimal whitespace-preserving HTML markup. Setting both "description" and "notes" is an error and will result in an exception.|
 |previewType|string|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|The collection of references on the task.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -50,12 +55,15 @@ Here is a JSON representation of the resource.
 ```json
 {
   "checklist": {"@odata.type": "microsoft.graph.plannerChecklistItems"},
+  "forms": {"@odata.type": "microsoft.graph.plannerFormsDictionary"},
+  "completionRequirements": {"@odata.type": "microsoft.graph.plannerTaskCompletionRequirementDetails"},
   "description": "String",
   "id": "String (identifier)",
-  "previewType": "string",
-  "references": {"@odata.type": "microsoft.graph.plannerExternalReferences"}
+  "notes": {"@odata.type": "microsoft.graph.itemBody"},
+  "previewType": "String",
+  "references": {"@odata.type": "microsoft.graph.plannerExternalReferences"},
+  "approvalAttachment": {"@odata.type": "microsoft.graph.plannerBaseApprovalAttachment"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

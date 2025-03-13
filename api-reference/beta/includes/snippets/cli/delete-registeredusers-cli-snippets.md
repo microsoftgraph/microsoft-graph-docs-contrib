@@ -1,0 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```bash
+
+
+mgc-beta devices registered-users ref-by-id delete --device-id {device-id} --directory-object-id {directoryObject-id}
+
+```

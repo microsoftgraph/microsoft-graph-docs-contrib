@@ -1,10 +1,11 @@
 ---
 title: "win32LobAppRuleType enum type"
 description: "Contains rule types for Win32 LOB apps."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # win32LobAppRuleType enum type
@@ -22,9 +23,3 @@ Contains rule types for Win32 LOB apps.
 |:---|:---|:---|
 |detection|0|Detection rule.|
 |requirement|1|Requirement rule.|
-
-
-
-
-
-

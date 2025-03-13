@@ -1,10 +1,11 @@
 ---
 title: "servicePrincipal: removePassword"
 description: "Remove a password from a servicePrincipal"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # servicePrincipal: removePassword
@@ -13,36 +14,38 @@ Namespace: microsoft.graph
 
 Remove a password from a [servicePrincipal](../resources/serviceprincipal.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "serviceprincipal_removepassword" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-removepassword-permissions.md)]
 
 ## HTTP request
+
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /servicePrincipals/{id}/removePassword
+POST /servicePrincipals(appId='{appId}')/removePassword
 ```
 
 ## Request headers
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type   | application/json. Required.|
 
 ## Request body
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| keyId | GUID | The unique identifier for the password. Required. |
+| keyId | Guid | The unique identifier for the password. Required. |
 
 ## Response
 
@@ -54,7 +57,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -70,33 +73,47 @@ Content-type: application/json
     "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-removepassword-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-removepassword-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-removepassword-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-removepassword-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-removepassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-removepassword-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-removepassword-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-removepassword-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-removepassword-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-removepassword-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.passwordCredential"
+  "blockType": "response"
 } -->
 
 ```http

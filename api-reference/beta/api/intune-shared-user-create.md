@@ -1,10 +1,11 @@
 ---
 title: "Create user"
 description: "Create a new user object."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create user
@@ -17,7 +18,7 @@ Namespace: microsoft.graph
 
 Create a new [user](../resources/intune-shared-user.md) object.
 
-## Prerequisites
+        ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).  The specific permission required depends on the context.
 
@@ -35,6 +36,8 @@ One of the following permissions is required to call this API. To learn more, in
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## HTTP Request
 
 <!-- {
@@ -49,7 +52,7 @@ POST /users
 
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -100,15 +103,3 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String comment = "comment-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-boolean sendResponse = true;
+com.microsoft.graph.users.item.events.item.accept.AcceptPostRequestBody acceptPostRequestBody = new com.microsoft.graph.users.item.events.item.accept.AcceptPostRequestBody();
+acceptPostRequestBody.setComment("comment-value");
+acceptPostRequestBody.setSendResponse(true);
+graphClient.me().events().byEventId("{event-id}").accept().post(acceptPostRequestBody);
 
-graphClient.me().events("{id}")
-	.accept(comment,sendResponse)
-	.buildRequest()
-	.post();
 
 ```

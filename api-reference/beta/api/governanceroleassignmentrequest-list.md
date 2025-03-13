@@ -1,10 +1,12 @@
 ---
 title: "List governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.subservice: "entra-id-governance"
+author: "rkarim-ms"
+ROBOTS: NOINDEX
+ms.date: 08/02/2024
 ---
 
 # List governanceRoleAssignmentRequests
@@ -13,16 +15,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
+
 Retrieve a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.Read.AzureResources |
+## Permissions
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+### Azure resources
+
+<!-- { "blockType": "permissions", "name": "governanceroleassignmentrequest_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/governanceroleassignmentrequest-list-permissions.md)]
+
+<a name='azure-ad'></a>
+
+### Microsoft Entra ID
+
+<!-- { "blockType": "permissions", "name": "governanceroleassignmentrequest_list_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/governanceroleassignmentrequest-list-2-permissions.md)]
+
+### Groups
+
+<!-- { "blockType": "permissions", "name": "governanceroleassignmentrequest_list_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/governanceroleassignmentrequest-list-3-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -54,10 +71,10 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) objects in the response body.
@@ -74,9 +91,9 @@ Administrators query pending role assignment requests for subscription Wingtip T
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,7 +103,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests",
@@ -172,5 +188,3 @@ Content-length: 279
   "suppressions": []
 }
 -->
-
-

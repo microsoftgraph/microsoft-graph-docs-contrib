@@ -1,10 +1,11 @@
 ---
 title: "educationAssignmentRecipient resource type"
 description: "Used within the **assignments.assignTo** property. This superclass is abstract and you cannot"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationAssignmentRecipient resource type
@@ -18,9 +19,14 @@ set the property in assignments to this value. This superclass represents who th
 assignment should be assigned to when the assignment is published.
 
 
-The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.
+The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) and [educationAssignmentIndividualRecipient](educationassignmentindividualrecipient.md) resources are subclasses of this superclass.
 
 ## Properties
+
+None.
+
+## Relationships
+
 None.
 
 <!-- {

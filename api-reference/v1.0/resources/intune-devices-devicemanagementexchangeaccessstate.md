@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementExchangeAccessState enum type"
 description: "Device Exchange Access State."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagementExchangeAccessState enum type
@@ -23,12 +24,3 @@ Device Exchange Access State.
 |allowed|2|Device has access to Exchange|
 |blocked|3|Device is Blocked in Exchange|
 |quarantined|4|Device is Quarantined in Exchange|
-
-
-
-
-
-
-
-
-

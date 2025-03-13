@@ -1,10 +1,11 @@
 ---
 title: "List alerts"
 description: "Retrieve a list of alert objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List alerts
@@ -15,15 +16,14 @@ Namespace: microsoft.graph
 
 Retrieve a list of [alert](../resources/alert.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "alert_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/alert-list-permissions.md)]
 
 ## HTTP request
 
@@ -48,16 +48,16 @@ This method supports the following [OData query parameters](/graph/query-paramet
 - `$top` - Returns the aggregated top results from each security API provider.
 - `$filter`
 
-The following table lists the `$filter` keywords by each vendor name.
+The following table lists the `$filter` keywords by each vendor name. Even though some of these products have been rebranded, the API is yet to be updated. Filter keywords will continue to use the legacy names until further notice. See the [changelog](https://developer.microsoft.com/graph/changelog) for updates.
 
 | Vendor name      |$filter keyword|
 |:----------|:----------|
-| Azure Advanced Threat Protection | Azure Advanced Threat Protection | 
+| Microsoft Defender for Identity | Azure Advanced Threat Protection | 
 | Azure Security Center | ASC |
-| Microsoft Cloud App Security | MCAS |
-| Azure Active Directory Identity Protection | IPC |
-| Azure Sentinel | Azure Sentinel |
-| Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP |
+| Microsoft Defender for Cloud Apps | MCAS |
+| Microsoft Entra ID Protection | IPC |
+| Microsoft Sentinel | Azure Sentinel |
+| Microsoft Defender for Endpoint | Microsoft Defender ATP |
 | Office 365 |  Not currently supported. |
 
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
@@ -72,7 +72,7 @@ To return an alternative property set, use the OData `$select` query parameter t
 
 ## Request body
 
-Do not supply a request body for this method. The request body will be ignored.
+Don't supply a request body for this method. The request body will be ignored.
 
 ## Response
 
@@ -82,7 +82,7 @@ If successful, this method returns a `200 OK` response code and collection of **
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,26 +93,46 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/alerts
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alerts-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-alerts-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-alerts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-alerts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-alerts-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-alerts-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-alerts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-alerts-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -151,5 +171,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

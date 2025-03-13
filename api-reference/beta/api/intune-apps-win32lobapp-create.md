@@ -1,10 +1,11 @@
 ---
 title: "Create win32LobApp"
 description: "Create a new win32LobApp object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create win32LobApp
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Create a new [win32LobApp](../resources/intune-apps-win32lobapp.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ POST /deviceAppManagement/mobileApps
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,29 +51,29 @@ The following table shows the properties that are required when you create the w
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|id|String|Key of the entity. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|The publisher of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|createdDateTime|DateTimeOffset|The date and time the app was created. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|The privacy statement Url. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|The more information Url. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
-|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|uploadState|Int32|The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|dependentAppCount|Int32|The total number of dependencies the child app has. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|size|Int64|The total size, including all uploaded files. This property is read-only. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |installCommandLine|String|The command line to install this app|
 |uninstallCommandLine|String|The command line to uninstall this app|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
@@ -87,6 +90,8 @@ The following table shows the properties that are required when you create the w
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|The MSI details if this Win32 app is an MSI app.|
 |setupFilePath|String|The relative path of the setup file in the encrypted Win32LobApp package.|
 |minimumSupportedWindowsRelease|String|The value for the minimum supported windows release.|
+|displayVersion|String|The version displayed in the UX for this app.|
+|allowAvailableUninstall|Boolean|When TRUE, indicates that uninstall is supported from the company portal for the Windows app (Win32) with an Available assignment. When FALSE, indicates that uninstall is not supported for the Windows app (Win32) with an Available assignment. Default value is FALSE.|
 
 
 
@@ -100,7 +105,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 3313
+Content-length: 3518
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -143,7 +148,11 @@ Content-length: 3313
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true,
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "minimumFreeDiskSpaceInMB": 8,
   "minimumMemoryInMB": 1,
@@ -186,6 +195,7 @@ Content-length: 3313
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "user",
+    "maxRunTimeInMinutes": 3,
     "deviceRestartBehavior": "allow"
   },
   "returnCodes": [
@@ -206,7 +216,9 @@ Content-length: 3313
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+  "displayVersion": "Display Version value",
+  "allowAvailableUninstall": true
 }
 ```
 
@@ -215,7 +227,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3485
+Content-Length: 3690
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -261,7 +273,11 @@ Content-Length: 3485
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true,
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "minimumFreeDiskSpaceInMB": 8,
   "minimumMemoryInMB": 1,
@@ -304,6 +320,7 @@ Content-Length: 3485
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "user",
+    "maxRunTimeInMinutes": 3,
     "deviceRestartBehavior": "allow"
   },
   "returnCodes": [
@@ -324,12 +341,8 @@ Content-Length: 3485
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+  "displayVersion": "Display Version value",
+  "allowAvailableUninstall": true
 }
 ```
-
-
-
-
-
-

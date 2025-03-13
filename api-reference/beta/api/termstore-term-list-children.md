@@ -2,9 +2,10 @@
 title: "List children"
 description: "Get the terms from the children navigation property."
 author: mohitpcad
-ms.prod: "Sharepoint"
-localization_priority: Normal
+ms.subservice: sharepoint
+ms.localizationpriority: medium
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # List children
@@ -14,14 +15,13 @@ Namespace: microsoft.graph.termStore
 
 Get the first level children of a [set] or [term] resource using the children navigation property.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account) | TermStore.Read.All, TermStore.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "termstore_term_list_children" } -->
+[!INCLUDE [permissions-table](../includes/permissions/termstore-term-list-children-permissions.md)]
 
 ## HTTP request
 
@@ -40,10 +40,10 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,27 +56,42 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_term"
+  "name": "get_term_2"
 }-->
 
 ``` http
 GET https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-term-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-term-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-term-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-term-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-term-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-term-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-term-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-term-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-term-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-term-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

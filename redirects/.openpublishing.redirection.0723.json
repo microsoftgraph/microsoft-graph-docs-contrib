@@ -1,0 +1,24 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/concepts/known-issues.md",
+      "redirect_url": "https://developer.microsoft.com/en-us/graph/known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/organizationsettings-post-profilecardproperties.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/organizationsettings-list-profilecardproperties.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/organizationsettings-get.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-get?view=graph-rest-beta",
+      "redirect_document_id": false
+    }
+  ]
+}

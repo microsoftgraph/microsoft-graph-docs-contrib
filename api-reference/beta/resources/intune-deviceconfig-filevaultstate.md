@@ -1,10 +1,11 @@
 ---
 title: "fileVaultState enum type"
 description: "FileVault State"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # fileVaultState enum type
@@ -24,9 +25,3 @@ FileVault State
 |driveEncryptedByUser|1|FileVault has been enabled by user and is not being managed by policy|
 |userDeferredEncryption|2|FileVault policy is successfully installed but user has not started encryption|
 |escrowNotEnabled|4|FileVault recovery key escrow is not enabled|
-
-
-
-
-
-

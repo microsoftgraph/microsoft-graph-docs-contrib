@@ -1,10 +1,11 @@
 ---
 title: "policySetAssignment resource type"
 description: "A class containing the properties used for PolicySet Assignment."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # policySetAssignment resource type
@@ -50,15 +51,11 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "deviceAndAppManagementAssignmentFilterType": "String",
+    "targetType": "String",
+    "entraObjectId": "String"
   }
 }
 ```
-
-
-
-
-
-

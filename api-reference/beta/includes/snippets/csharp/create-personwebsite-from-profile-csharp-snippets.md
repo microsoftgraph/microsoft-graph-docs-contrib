@@ -4,20 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var personWebsite = new PersonWebsite
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new PersonWebsite
 {
-	Categories = new List<String>()
+	Categories = new List<string>
 	{
-		"football"
+		"football",
 	},
 	DisplayName = "Lyn Damer",
-	WebUrl = "www.lyndamer.no"
+	WebUrl = "www.lyndamer.no",
 };
 
-await graphClient.Me.Profile.Websites
-	.Request()
-	.AddAsync(personWebsite);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Profile.Websites.PostAsync(requestBody);
+
 
 ```

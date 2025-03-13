@@ -2,9 +2,10 @@
 title: "educationFeedback resource type"
 description: "Feedback from a teacher to a student. This property represents both the text part of the feedback along with the who."
 author: "mmast-msft"
-localization_priority: Normal
-ms.prod: "education"
+ms.localizationpriority: medium
+ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationFeedback resource type
@@ -20,12 +21,16 @@ Feedback from a teacher to a student. This property represents both the text par
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |feedbackBy|[identitySet](identityset.md)|User who created the feedback.|
-|feedbackDateTime|DateTimeOffset|Moment in time when the feedback was given. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|feedbackDateTime|DateTimeOffset|Moment in time when the feedback was given. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |text|[itemBody](itembody.md)|Feedback.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

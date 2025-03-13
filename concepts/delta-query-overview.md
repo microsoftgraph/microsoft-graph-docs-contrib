@@ -1,79 +1,95 @@
 ---
 title: "Use delta query to track changes in Microsoft Graph data"
-description: "Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store."
-author: "davidmu1"
-localization_priority: Priority
+description: "Use delta query to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request."
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: keylimesoda
+ms.topic: concept-article
+ms.subservice: change-notifications
+ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 01/15/2025
+#customer intent: As a developer, I want to learn how to track changes to specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
 ---
 
 # Use delta query to track changes in Microsoft Graph data
 
-Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
+Delta query, also called *change tracking*, enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 
-> [!div class="nextstepaction"]
-> [Tutorial: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
+Using delta query helps you avoid constantly polling Microsoft Graph, as the app requests only data that changed since the last request. This pattern allows the application to reduce the amount of data it requests, thereby reducing the cost of the request and as such, likely limit the chances of the requests being [throttled](throttling.md).
+
+Delta query uses a *pull* model, where the application requests changes from Microsoft Graph; while [change notifications](./change-notifications-overview.md) use a *push* model, where Microsoft Graph notifies the application of changes.
+
+> [!IMPORTANT]
+> The change tracking feature isn't supported in Microsoft Entra External ID in external tenants and Azure AD B2C tenants.
 
 ## Use delta query to track changes in a resource collection
 
 The typical call pattern is as follows:
 
-1. The application begins by calling a GET request with the delta function on the desired resource.
-2. Microsoft Graph sends a response containing the requested resource and a [state token](#state-tokens).
+1. The application makes a GET request with the **delta** function on the desired resource. For example, `GET https://graph.microsoft.com/v1.0/users/delta`.
 
-     a.  If a `nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL to retrieve all pages of data until a `deltaLink` URL is returned in the response.
+  > [!TIP]
+  > `/delta` is a shortcut for the fully qualified name `/microsoft.graph.delta`.
 
-     b.  If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `deltaLink` URL to learn about changes to the resource.
+2. Microsoft Graph responds with the requested resource and a [state token](#state-tokens).
 
-3. When the application needs to learn about changes to the resource, it makes a new request using the `deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
-4. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `nextLink` URL or a `deltaLink` URL.
+     a. If Microsoft Graph returns a `@odata.nextLink` URL, there are more pages of data to retrieve in the session, even if the current response contains an empty result. The application uses the `@odata.nextLink` URL to continue making requests to retrieve all pages of data until Microsoft Graph returns a `@odata.deltaLink` URL in the response.
 
->**Note:** Resources stored in Azure Active Directory (such as users and groups) support "sync from now" scenarios. This allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `deltaLink` instead. Append `$deltaToken=latest` to the `delta` function and the response will contain a `deltaLink` and no resource data. Resources in OneDrive and SharePoint also support this feature. For resources in OneDrive and SharePoint, append `token=latest` instead.
+     b. If Microsoft Graph returns a `@odata.deltaLink` URL, there's no more data about the existing state of the resource to return in the current session. For future requests, the application uses the `@odata.deltaLink` URL to learn about changes to the resource.
 
->**Note:** The delta query function is generally referred to by appending `/delta` to the resource name. However, `/delta` is a shortcut for the fully qualified name `/microsoft.graph.delta` that you see in requests generated by the Microsoft Graph SDKs.
+     c. A page can't contain both `@odata.deltaLink` and `@odata.nextLink`.
 
->**Note:** The initial request to the delta query function (no delta or skip token) will return the resources that currently exist in the collection. Resources that have been created and deleted prior to the initial delta query won't be returned. Updates made before the initial request are summarized on the resource returned as its latest state.
+    > [!NOTE]
+    > The Microsoft Graph response in Step 2 includes the resources that *currently* exist in the collection. Resources that were deleted before the initial delta query aren't returned. Updates made before the initial request are summarized on the resource returned as its latest state.
+
+4. When the application needs to learn about changes to the resource, it uses the `@odata.deltaLink` URL it received in step 2 to make requests. The application can make this request immediately after completing step 2 or when it checks for changes.
+
+5. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
+
+> [!NOTE]
+> - Microsoft Entra ID resources such as users and groups support "sync from now" scenarios. This feature allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `@odata.deltaLink` instead. Append `$deltatoken=latest` to the `delta` function and the response contains a `@odata.deltaLink` and no resource data. Resources in OneDrive and SharePoint also support this feature but require `token=latest` instead.
+> - `$select` and `$deltaLink` query parameters are supported for some Microsoft Entra resources so that customers can change the properties they want to track for an existing `@odata.deltaLink`. Delta queries with both `$select` and `$skiptoken` aren't supported.
 
 ### State tokens
 
-A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header.
-The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_.
+A delta query GET response always includes a URL specified in a `@odata.nextLink` or `@odata.deltaLink` response header.
+The `@odata.nextLink` URL includes a `$skiptoken`, and a `@odata.deltaLink` URL includes a `$deltatoken`.
 
-These tokens are opaque to the client. The following details are what you need to know about them:
+These tokens are opaque to the client app but important as follows:
 
 - Each token reflects the state and represents a snapshot of the resource in that round of change tracking.
-
-- The state tokens also encode and include other query parameters (such as `$select`) specified in the initial delta query request. Therefore, it's not required to repeat them in subsequent delta query requests.
-
-- When carrying out delta query, you can copy and apply the `nextLink` or `deltaLink` URL to the next **delta** function call without having to inspect the contents of the URL, including its state token.
+- The state tokens encode and include query parameters (such as `$select`) specified in the initial delta query request. Therefore, don't modify subsequent delta query requests to repeat these query parameters.
+- When carrying out delta query, you can copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL to the next **delta** function call without having to inspect the contents of the URL, including its state token.
 
 ### Optional query parameters
 
-If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph automatically encodes the specified parameter into the `nextLink` or `deltaLink` provided in the response. The calling application only needs to specify the query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
+If a client uses a query parameter, it *must* be specified in the initial request. Microsoft Graph automatically encodes the specified query parameter into the `@odata.nextLink` or `@odata.deltaLink` in the response and in all subsequent `@odata.nextLink` or `@odata.deltaLink` URLs.
 
 Note the general limited support of the following optional query parameters:
 
 - `$orderby`
 
-    Do not assume a specific sequence of the responses returned from a delta query. Assume that the same item can show up anywhere in the `nextLink` sequence and handle that in your merge logic.
+    Don't assume a specific sequence of the responses returned from a delta query. Assume that the same item can show up anywhere in the `@odata.nextLink` sequence and handle that in your merge logic.
 - `$top`
 
     The number of objects in each page can vary depending on the resource type and the type of changes made to the resource.
 
-For the [message](/graph/api/resources/message?view=graph-rest-1.0) resource, see details for [query parameters support in a delta query](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages).
+For the [message](/graph/api/resources/message) resource, see details for [query parameters support in a delta query](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages).
 
-For the [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources, there are restrictions on using some query parameters:
+For the [user](/graph/api/resources/user) and [group](/graph/api/resources/group) resources, there are restrictions on using some query parameters:
 
-- `$expand` is not supported.
-- `$top` is not supported.
-- `$orderby` is not supported.
-- If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
-- `$select` also supports `manager` and `members` navigational property for users and groups respectively. Selecting those properties allows tracking of changes to user's manager and group memberships.
+- `$expand` isn't supported.
+- `$top` isn't supported.
+- `$orderby` isn't supported.
+- If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that isn't selected, the resource for which that property changed doesn't appear in the delta response after a subsequent request.
+- `$select` also supports **manager** and **members** navigation properties for users and groups respectively. Selecting those properties allows tracking of changes to user's manager and group memberships.
 
-- Scoping filters allow you to track changes to one or more specific users or groups by object ID. For example, the following request returns changes for the groups matching the IDs specified in the query filter.
+- Scoping filters allow you to track changes to one or more specific users or groups, filtering **only by object ID**. For example, the following request returns changes for the groups matching the IDs specified in the query filter.
 
 <!-- {
   "blockType": "request",
-  "name": "group_delta"
+  "name": "delta-query-overview-scoping-filter"
 }-->
 ```http
 https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e'
@@ -83,119 +99,113 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - Newly created instances of a supported resource are represented in the delta query response using their standard representation.
 
-- Updated instances are represented by their **id** with *at least* the properties that have been updated, but additional properties may be included.
+- Updated instances are represented by their **id** with *at least* the updated properties, but other properties might be included.
 
-- Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
+- Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format **propertyName@delta**. The annotations are included in the response of the initial delta query request.
+  - Changes to relationships stored outside the main data store aren't supported as part of change tracking. For more information, see [Changes to properties stored outside the main data store aren't tracked](#changes-to-properties-stored-outside-the-main-data-store-arent-tracked).
 
-Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": "changed"}.
+- Removed instances are represented by their **id** and an **@removed** object. The **@removed** object might include additional information about why the instance was removed. For example,  `"@removed": {"reason": "changed"}`. Possible **@removed** reasons can be `changed` or `deleted`.
 
-Possible @removed reasons can be *changed* or *deleted*.
+  - `changed` indicates the item was deleted and can be restored from [deletedItems](/graph/api/directory-deleteditems-list).
+  - `deleted` indicates the item is deleted and can't be restored.
+    - Items [deleted from the deletedItems store](/graph/api/directory-deleteditems-delete) also show as `deleted`.
 
-- *Changed* indicates the item was deleted and can be restored from [deletedItems](/graph/api/resources/directory).
+    The **@removed** object can be returned in the initial delta query response and in tracked (`@odata.nextLink`) responses. For example, a deleted directory object that can still be restored from deleted items shows up as `"@removed": {"reason": "changed"}`. Clients using delta query requests should be designed to handle these objects in the responses.
 
-- *Deleted* indicates the item is deleted and cannot be restored.
+- Instances [restored from deletedItems](/graph/api/directory-deleteditems-list) show up as newly created instances in the delta query response.
 
-The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.
-
->**Note:** It's possible that a single entity will be contained multiple times in the response, if that entity was changed multiple times and under certain conditions. Delta queries enable your application to list all the changes, but can't ensure that entities are unified in a single response.
+> [!NOTE]
+> A single entity can be contained multiple times in the response, if that entity was changed multiple times and under certain conditions. Delta queries enable your application to list all the changes, but can't ensure that entities are unified in a single response.
 
 ## Supported resources
 
-Delta query is currently supported for the following resources. Note that some resources which are available in v1.0 have their corresponding **delta** functions still in preview status, as indicated.
+Delta query is currently supported for the following resources. Some resources that are available in v1.0 have their corresponding **delta** functions still in preview status, as indicated.
 
-| **Resource collection**                                        | **API**                                                                                                                                                                                          |
-|:---------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applications                                                   | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                                                                                   |
-| Administrative units (preview)                         | [delta](/graph/api/administrativeunit-delta) function (preview) of the [administrativeUnit](/graph/api/resources/administrativeunit) resource                                                    |
-| Chat messages in a channel                            | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                                                                            |
-| Classes                                               | [delta](/graph/api/educationclass-delta) function (preview) of the [educationClass](/graph/api/resources/educationclass) resource                                                                 |
-| Directory objects                                     | [delta](/graph/api/directoryobject-delta) function (preview) of the [directoryObject](/graph/api/resources/directoryobject) resource                                                              |
-| Directory roles                                                | [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) function of the [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) resource                                     |
-| Drive items\*                                                  | [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) function of the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource                                                 |
-| Education users                                       | [delta](/graph/api/educationuser-delta) function (preview) of the [educationUser](/graph/api/resources/educationuser) resource                                                                    |
-| Events in a calendar view (date range) of the primary calendar | [delta](/graph/api/event-delta?view=graph-rest-1.0) function of the [event](/graph/api/resources/event?view=graph-rest-1.0) resource                                                             |
-| Groups                                                         | [delta](/graph/api/group-delta?view=graph-rest-1.0) function of the [group](/graph/api/resources/group?view=graph-rest-1.0) resource                                                             |
-| Mail folders                                                   | [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) function of the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resource                                              |
-| Messages in a folder                                           | [delta](/graph/api/message-delta?view=graph-rest-1.0) function of the [message](/graph/api/resources/message?view=graph-rest-1.0) resource                                                       |
-| Organizational contacts                                        | [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) function of the [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource                                              |
-| OAuth2PermissionGrants                               | [delta](/graph/api/oauth2permissiongrant-delta) function of the [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) resource |
-| Personal contact folders                                       | [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) function of the [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) resource                                     |
-| Personal contacts in a folder                                  | [delta](/graph/api/contact-delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource                                                       |
-| Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta) function (preview) of the all segment of [plannerUser](/graph/api/resources/planneruser) resource                                                      |
-| Schools                                               | [delta](/graph/api/educationschool-delta) function (preview) of the [educationSchool](/graph/api/resources/educationschool) resource                                                              |
-| Service principals                                   | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource                                                          |
-| Tasks in a task list (preview)                                 | [delta](/graph/api/todotask-delta) function (preview) of the [todoTask](/graph/api/resources/todotask) resource                                                         |
-| Task lists (preview)                                           | [delta](/graph/api/todotasklist-delta) function (preview) of the [todoTaskList](/graph/api/resources/todotasklist) resource                                                         |
-| Users                                                          | [delta](/graph/api/user-delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource                                                                |
+> Note: The delta function for resources marked with an asterisk (*) are only available on the `/beta` endpoint.
 
+| Resource collection                                                 | API                                                                             |
+|:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| [application](/graph/api/resources/application)                     | [application: delta](/graph/api/application-delta) function                     |
+| [administrativeUnit](/graph/api/resources/administrativeunit)       | [administrativeUnit: delta](/graph/api/administrativeunit-delta) function       |
+| [callRecording](/graph/api/resources/callrecording)                 | [callRecording: delta](/graph/api/callrecording-delta) function                 |
+| [callTranscript](/graph/api/resources/calltranscript)               | [callTranscript: delta](/graph/api/calltranscript-delta) function               |
+| [chatMessage](/graph/api/resources/chatmessage)                     | [chatMessage: delta](/graph/api/chatmessage-delta) function                     |
+| [contact](/graph/api/resources/contact) resource                    | [contact: delta](/graph/api/contact-delta) function                             |
+| [contactFolder](/graph/api/resources/contactfolder)                 | [contactFolder: delta](/graph/api/contactfolder-delta) function                 |
+| [device](/graph/api/resources/device)                               | [device: delta](/graph/api/device-delta) function                               |
+| [directoryRole](/graph/api/resources/directoryrole)                 | [directoryRole: delta](/graph/api/directoryrole-delta) function                 |
+| [directoryObject](/graph/api/resources/directoryObject)             | [directoryObject: delta](/graph/api/directoryobject-delta) function             |
+| [driveItem](/graph/api/resources/driveitem) <sup>1</sup>            | [driveItem: delta](/graph/api/driveitem-delta) function                         |
+| [educationAssignment](/graph/api/resources/educationassignment)     | [educationAssignment: delta](/graph/api/educationassignment-delta) function     |
+| [educationCategory](/graph/api/resources/educationcategory)         | [educationCategory: delta](/graph/api/educationcategory-delta) function         |
+| [educationClass](/graph/api/resources/educationclass)               | [educationClass: delta](/graph/api/educationclass-delta) function               |
+| [educationSchool](/graph/api/resources/educationschool)             | [educationSchool: delta](/graph/api/educationschool-delta) function             |
+| [educationUser](/graph/api/resources/educationuser)                 | [educationUser: delta](/graph/api/educationuser-delta) function                 |
+| [event](/graph/api/resources/event)                                 | [event: delta](/graph/api/event-delta) function                                 |
+| [group](/graph/api/resources/group)                                 | [group: delta](/graph/api/group-delta) function                                 |
+| [listItem](/graph/api/resources/listitem) <sup>1</sup>              | [listItem: delta](/graph/api/listitem-delta) function                           |
+| [mailboxFolder](/graph/api/resources/mailboxfolder) *               | [mailboxFolder: delta](/graph/api/mailboxfolder-delta) function                 |
+| [mailboxItem](/graph/api/resources/mailboxitem) *                   | [mailboxItem: delta](/graph/api/mailboxitem-delta) function                     |
+| [mailFolder](/graph/api/resources/mailfolder)                       | [mailFolder: delta](/graph/api/mailfolder-delta) function                       |
+| [message](/graph/api/resources/message)                             | [message: delta](/graph/api/message-delta) function                             |
+| [orgContact](/graph/api/resources/orgcontact)                       | [orgContact: delta](/graph/api/orgcontact-delta) function                       |
+| [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant) | [oAuth2PermissionGrant: delta](/graph/api/oauth2permissiongrant-delta) function |
+| [plannerBucket](/graph/api/resources/plannerbucket) *               | [plannerBucket: delta](/graph/api/plannerbucket-delta) function                 |
+| [plannerUser](/graph/api/resources/planneruser) <sup>2</sup>        | [plannerUser: delta](/graph/api/planneruser-list-delta) function                |
+| [sites](/graph/api/resources/site)                                  | [delta](/graph/api/site-delta) function of the [site](/graph/api/resources/site) resource                |
+| [servicePrincipal](/graph/api/resources/serviceprincipal)           | [servicePrincipal: delta](/graph/api/serviceprincipal-delta) function           |
+| [todoTask](/graph/api/resources/todotask)                           | [todoTask: delta](/graph/api/todotask-delta) function                           |
+| [todoTaskList](/graph/api/resources/todotasklist)                   | [todoTaskList: delta](/graph/api/todotasklist-delta) function                   |
+| [user](/graph/api/resources/user)                                   | [user: delta](/graph/api/user-delta) function                                   |
 
-> \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
-[Track changes for a drive](/graph/api/driveitem-delta?view=graph-rest-1.0).
-
-> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/planneruser-list-delta).
-
-## Limitations
-
-### Properties stored outside of the main data store
-
-Some resources contain properties that are stored outside of the main data store for the resource (for example, the user resource is mostly stored in the Azure AD system, while some properties, like **skills**, are stored in SharePoint Online). Currently, those properties are not supported as part of change tracking; a change to one of those properties will not result in an object showing up in the delta query response. Currently, only the properties stored in the main data store trigger changes in the delta query.
-
-To verify that a property can be used in delta query, try to perform a regular `GET` operation on the resource collection, and select the property you're interested in. For example, you can try the **skills** property on the users collection.
-
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/?$select=skills
-```
-
-Because the **skills** property is stored outside of Azure AD, the following is the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
-} -->
-
-```http
-HTTP/1.1 501 Not Implemented
-Content-type: application/json
-
-{
-    "error": {
-        "code": "NotImplemented",
-        "message": "This operation target is not yet supported.",
-        "innerError": {
-            "request-id": "...",
-            "date": "2019-09-20T21:47:50"
-        }
-    }
-}
-```
-
-This tells you that the **skills** property is not supported for delta query on the **user** resource.
-
-### Navigation properties
-
-Navigation properties are not supported. For example, you cannot track changes to the users collection that would include changes to their **photo** property; **photo** is a navigation property stored outside of the user entity, and changes to it do not cause the user object to be included in the delta response.
-
-### Processing delays
-
-Expect varying delays between the time a change is made to a resource instance, which can be through an app interface or API, and the time the tracked change is reflected in a delta query response.
+> [!NOTE]
+> <sup>1</sup> The usage pattern for OneDrive and SharePoint resources is similar to the other supported resources with some minor syntax differences. For more information about the current syntax, see
+[driveItem: delta](/graph/api/driveitem-delta) and [listItem: delta](/graph/api/listitem-delta).
+>
+> <sup>2</sup> The usage pattern for Planner resources is similar to other supported resources with a few differences. For more information, see [planner: delta](/graph/api/planneruser-list-delta).
 
 ### National clouds
 
-Delta queries are available for customers hosted on the public cloud and Microsoft Graph China operated by 21Vianet only.
+Delta queries for supported resources are available for customers hosted on the public cloud, Microsoft Cloud for US Government, and Microsoft Cloud China operated by 21Vianet.
+
+## Limitations
+
+### Changes to properties stored outside the main data store aren't tracked
+
+Some resources contain properties that are stored outside the main data store for the resource. For example, some properties of the [user](/graph/api/resources/user) resource like **skills**, are stored in SharePoint and not Microsoft Entra ID. Currently, only the properties stored in the main data store trigger changes in the delta query; properties stored outside the main data store aren't supported as part of change tracking. Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
+
+For more information about properties stored outside of the main data store, see the [users](/graph/api/resources/users) and [groups](/graph/api/resources/groups-overview) documentation.
+
+### Processing delays
+
+Expect varying delays between the time a resource instance changes, and the time the tracked change is reflected in a delta query response.
+
+Sometimes, due to replication delays, the changes to the object might not show up immediately when you select the `@odata.nextLink` or the `@odata.deltaLink`. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
+
+### Replays
+
+Your application must be prepared for replays, which occur when the same change appears in subsequent responses. While delta query makes a best effort to reduce replays, they're still possible.
+
+### Synchronization reset
+
+Delta query can return a response code of `410 Gone` and a **Location** header containing a request URL with an empty `$deltatoken` (same as the initial query). This status usually happens to prevent data inconsistency due to internal maintenance or migration of the target tenant, and is an indication that the application must restart with a full synchronization of the target tenant.
 
 ### Token duration
 
-Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 7 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 7 days. For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
+Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again.
 
-## Prerequisites
+- For [directory objects](/graph/api/resources/directoryobject), the limit is seven days. 
+- For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is seven days.
+- For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit isn't fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
 
-The same [permissions](./permissions-reference.md) that are required to read a specific resource are also required to perform delta query on that resource.
+In case the token expires, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see [Error codes in Microsoft Graph](/graph/errors#code-property).
 
-## Delta query request examples
+## Combine delta query and change notifications
 
-- [Get incremental changes to events in a calendar view](delta-query-events.md)
-- [Get incremental changes to messages in a folder](./delta-query-messages.md)
-- [Get incremental changes to groups](./delta-query-groups.md)
-- [Get incremental changes to users](./delta-query-users.md)
+An app can use Microsoft Graph [change notifications](./webhooks.md) to subscribe to be notified when a specific resource changes. The application can then use delta query to request all changes since the last time it made the request.
+
+Applications can use this strategy to nearly eliminate (only for supported resources) the need to frequently poll Microsoft Graph and process those changes to keep a local data store in sync, greatly reducing the chances for their requests to be throttled.
+
+## Related content
+
+- [Explore change notifications, which uses a push model to notify your app when a resource changes](./change-notifications-overview.md)

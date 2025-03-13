@@ -1,10 +1,11 @@
 ---
 title: "securityVendorInformation resource type"
 description: " subProvider=AppLocker)."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # securityVendorInformation resource type
@@ -25,7 +26,7 @@ Contains details about the security product/service vendor, provider, and subpro
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

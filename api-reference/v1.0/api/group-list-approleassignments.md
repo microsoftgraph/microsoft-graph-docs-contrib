@@ -1,27 +1,29 @@
 ---
 title: "List appRoleAssignments granted to a group"
 description: "Retrieve the list of appRoleAssignments that have been granted to a group."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-groups"
 author: "psignoret"
+ms.date: 10/15/2024
 ---
 
 # List appRoleAssignments granted to a group
 
 Namespace: microsoft.graph
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a group.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a [group](../resources/group.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "group_list_approleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-list-approleassignments-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
 
 ## HTTP request
 
@@ -32,17 +34,17 @@ GET /groups/{id}/appRoleAssignments
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,32 +64,48 @@ The following example shows a request to retrieve the app roles that have been a
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/appRoleAssignments
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-approleassignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-get-approleassignments-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/group-get-approleassignments-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-get-approleassignments-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-get-approleassignments-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-approleassignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-get-approleassignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/group-get-approleassignments-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-get-approleassignments-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-get-approleassignments-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -99,17 +117,20 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('02bd9fd6-8f93-4758-87c3-1fb73740a315')/appRoleAssignments",
   "value": [
     {
-      "creationTimestamp": "2016-10-19T10:37:00Z",
-      "id": "id-value",
-      "principalDisplayName": "principalDisplayName-value",
-      "principalId": "principalId-value",
-      "principalType": "principalType-value",
-      "resourceDisplayName": "resourceDisplayName-value"
+      "id": "pNl5diMjzUS1wmc-yI2LEkGgWqFFrFdLhG2Ly2CysL4",
+      "deletedDateTime": null,
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "createdDateTime": "2021-02-19T17:55:08.3369542Z",
+      "principalDisplayName": "Young techmakers",
+      "principalId": "7679d9a4-2323-44cd-b5c2-673ec88d8b12",
+      "principalType": "Group",
+      "resourceDisplayName": "Yammer",
+      "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
     }
   ]
 }

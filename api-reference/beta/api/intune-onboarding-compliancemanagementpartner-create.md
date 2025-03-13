@@ -1,10 +1,11 @@
 ---
 title: "Create complianceManagementPartner"
 description: "Create a new complianceManagementPartner object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create complianceManagementPartner
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Create a new [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ POST /deviceManagement/complianceManagementPartners
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -53,11 +56,9 @@ The following table shows the properties that are required when you create the c
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Partner display name|
 |macOsOnboarded|Boolean|Partner onboarded for Mac devices.|
-|windowsOnboarded|Boolean|Partner onboarded for Windows devices.|
 |androidOnboarded|Boolean|Partner onboarded for Android devices.|
 |iosOnboarded|Boolean|Partner onboarded for ios devices.|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll Mac devices through partner.|
-|windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll Windows devices through partner.|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll Android devices through partner.|
 |iosEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll ios devices through partner.|
 
@@ -73,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/complianceManagementPartners
 Content-type: application/json
-Content-length: 1944
+Content-length: 1762
 
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartner",
@@ -81,26 +82,17 @@ Content-length: 1944
   "partnerState": "unavailable",
   "displayName": "Display Name value",
   "macOsOnboarded": true,
-  "windowsOnboarded": true,
   "androidOnboarded": true,
   "iosOnboarded": true,
   "macOsEnrollmentAssignments": [
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
-      }
-    }
-  ],
-  "windowsEnrollmentAssignments": [
-    {
-      "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
-      "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -108,9 +100,11 @@ Content-length: 1944
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -118,9 +112,11 @@ Content-length: 1944
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]
@@ -132,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1993
+Content-Length: 1811
 
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartner",
@@ -141,26 +137,17 @@ Content-Length: 1993
   "partnerState": "unavailable",
   "displayName": "Display Name value",
   "macOsOnboarded": true,
-  "windowsOnboarded": true,
   "androidOnboarded": true,
   "iosOnboarded": true,
   "macOsEnrollmentAssignments": [
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
-      }
-    }
-  ],
-  "windowsEnrollmentAssignments": [
-    {
-      "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
-      "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -168,9 +155,11 @@ Content-Length: 1993
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -178,17 +167,13 @@ Content-Length: 1993
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementPartnerAppType enum type"
 description: "Partner App Type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # deviceManagementPartnerAppType enum type
@@ -21,12 +22,3 @@ Partner App Type.
 |unknown|0|Partner App type is unknown.|
 |singleTenantApp|1|Partner App is Single tenant in AAD.|
 |multiTenantApp|2|Partner App is Multi tenant in AAD.|
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "globalDeviceHealthScriptState enum type"
 description: "Indicates whether global device health scripts are enabled and are in which state"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # globalDeviceHealthScriptState enum type
@@ -23,9 +24,3 @@ Indicates whether global device health scripts are enabled and are in which stat
 |notConfigured|0|Global device health scripts are not configured|
 |pending|1|Global device health scripts are configured but not fully enabled|
 |enabled|2|Global device health scripts are enabled and ready to use|
-
-
-
-
-
-

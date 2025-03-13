@@ -1,0 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```bash
+
+
+mgc-beta security attack-simulation simulation-automations get --simulation-automation-id {simulationAutomation-id}
+
+```

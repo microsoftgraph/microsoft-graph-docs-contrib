@@ -1,10 +1,11 @@
 ---
 title: "targetedManagedAppConfiguration resource type"
 description: "Configuration used to deliver a set of custom settings as-is to all users in the targeted security group"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # targetedManagedAppConfiguration resource type
@@ -29,10 +30,10 @@ Inherits from [managedAppConfiguration](../resources/intune-mam-managedappconfig
 |[Delete targetedManagedAppConfiguration](../api/intune-shared-targetedmanagedappconfiguration-delete.md)|None|Deletes a [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md).|
 |[Update targetedManagedAppConfiguration](../api/intune-shared-targetedmanagedappconfiguration-update.md)|[targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md)|Update the properties of a [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md) object.|
 |**Mobile app management (MAM)**|
-|[assign action](../api/intune-shared-targetedmanagedappconfiguration-assign.md)|None|Not yet documented|
-|[targetApps action](../api/intune-shared-targetedmanagedappconfiguration-targetapps.md)|None|Not yet documented|
+|[assign action](../api/intune-shared-targetedmanagedappconfiguration-assign.md)|None||
+|[targetApps action](../api/intune-shared-targetedmanagedappconfiguration-targetapps.md)|None||
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|
@@ -87,9 +88,3 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
-
-
-
-
-
-

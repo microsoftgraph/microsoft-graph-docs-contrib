@@ -1,10 +1,11 @@
 ---
 title: "bookingAppointment: cancel"
-description: "Cancel the specified bookingAppointment in the specified bookingbusiness, and send a message to the involved customer and staff members."
-localization_priority: Normal
+description: "Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members."
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 08/02/2024
 ---
 
 # bookingAppointment: cancel
@@ -13,79 +14,102 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel the specified [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingbusiness](../resources/bookingbusiness.md), and send a message to the involved customer and staff members.
+Cancel the specified [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingBusiness](../resources/bookingbusiness.md), and send a message to the involved customer and staff members.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "bookingappointment_cancel" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingappointment-cancel-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/appointments/{id}/cancel
-
+POST /solutions/bookingBusinesses/{id}/appointments/{id}/cancel
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|A message to acknowledge with the customer that the appointment has been cancelled.|
+|cancellationMessage|String|A message to acknowledge with the customer that the appointment has been canceled.|
 
 ## Response
-If successful, this method returns `204 No content` response code. It does not return anything in the response body.
 
-If you attempt to cancel an appointment that does not exisit, this method returns `HTTP 404 Not found`.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
+
+If you attempt to cancel an appointment that doesn't exist, this method returns `HTTP 404 Not Found`.
 
 ## Example
-The following is an example of how to call this API.
-##### Request
-The following is an example of the request.
+
+### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "bookingappointment_cancel"
+  "name": "bookingappointment_cancel",
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "AAMkADKoAAA="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel
+POST https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.com/appointments/AAMkADKoAAA=/cancel
 Content-type: application/json
 
 {
   "cancellationMessage": "Your appointment has been successfully cancelled. Please call us again."
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingappointment-cancel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/bookingappointment-cancel-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/bookingappointment-cancel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/bookingappointment-cancel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingappointment-cancel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/bookingappointment-cancel-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/bookingappointment-cancel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingappointment-cancel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/bookingappointment-cancel-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-##### Response
-The following is an example of the response.
+### Response
+The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content
@@ -104,5 +128,3 @@ HTTP/1.1 204 No content
   ]
 }
 -->
-
-

@@ -1,29 +1,32 @@
 ---
-title: "List organization"
+title: "List organizations"
 description: "Retrieve a list of organization objects."
-localization_priority: Normal
-author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
-# List organization
+# List organizations
 
 Namespace: microsoft.graph
 
+Retrieve a list of organization objects. There's only one organization object in the collection.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Retrieve a list of organization objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
+|Delegated (work or school account) | User.Read, Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+|Application | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
-> Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use Directory.Read.All.
+[!INCLUDE [rbac-organization-apis-read](../includes/rbac-for-apis/rbac-organization-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -31,50 +34,68 @@ One of the following permissions is required to call this API. To learn more, in
 GET /organization
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [organization](../resources/organization.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [organization](../resources/organization.md) objects in the response body. Only one object is returned in the collection.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organization"
+  "name": "get_organization_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-organization-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-organization-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organization-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-organization-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-organization-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organization-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-organization-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organization-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organization-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,28 +105,94 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 500
 
 {
-  "value": [
-    {
-      "assignedPlans": [
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization",
+    "value": [
         {
-          "assignedDateTime": "2016-10-19T10:37:00Z",
-          "capabilityStatus": "capabilityStatus-value",
-          "service": "service-value",
-          "servicePlanId": "servicePlanId-value"
+            "id": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "deletedDateTime": null,
+            "businessPhones": [
+                "425-555-0100"
+            ],
+            "city": null,
+            "country": null,
+            "countryLetterCode": "NL",
+            "createdDateTime": "2021-08-02T10:30:06Z",
+            "defaultUsageLocation": "String",
+            "displayName": "Contoso",
+            "isMultipleDataLocationsForServicesEnabled": null,
+            "marketingNotificationEmails": [],
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSyncEnabled": null,
+            "partnerTenantType": "ResellerPartnerDelegatedAdmin",
+            "postalCode": null,
+            "preferredLanguage": "en",
+            "securityComplianceNotificationMails": [],
+            "securityComplianceNotificationPhones": [],
+            "state": null,
+            "street": null,
+            "technicalNotificationMails": [
+                "admin@contoso.com"
+            ],
+            "tenantType": "AAD",
+            "directorySizeQuota": {
+                "used": 698,
+                "total": 50000
+            },
+            "assignedPlans": [
+                {
+                    "assignedDateTime": "2022-04-03T02:46:42Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "Adallom",
+                    "servicePlanId": "932ad362-64a8-4783-9106-97849a1a30b9"
+                },
+                {
+                    "assignedDateTime": "2022-04-03T02:46:42Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "MultiFactorService",
+                    "servicePlanId": "8a256a2b-b617-496d-b51b-e76466e88db0"
+                },
+                {
+                    "assignedDateTime": "2021-08-02T10:36:57Z",
+                    "capabilityStatus": "Enabled",
+                    "service": "exchange",
+                    "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318"
+                },
+                {
+                    "assignedDateTime": "2021-08-02T10:36:02Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "SCO",
+                    "servicePlanId": "882e1d05-acd1-4ccb-8708-6ee03664b117"
+                }
+            ],
+            "privacyProfile": {
+                "contactEmail": "",
+                "statementUrl": ""
+            },
+            "provisionedPlans": [
+                {
+                    "capabilityStatus": "Deleted",
+                    "provisioningStatus": "Success",
+                    "service": "Adallom"
+                },
+                {
+                    "capabilityStatus": "Enabled",
+                    "provisioningStatus": "Success",
+                    "service": "exchange"
+                }
+            ],
+            "verifiedDomains": [
+                {
+                    "capabilities": "Email, OfficeCommunicationsOnline",
+                    "isDefault": true,
+                    "isInitial": true,
+                    "name": "contoso.com",
+                    "type": "Managed"
+                }
+            ]
         }
-      ],
-      "businessPhones": [
-        "businessPhones-value"
-      ],
-      "city": "city-value",
-      "country": "country-value",
-      "countryLetterCode": "countryLetterCode-value",
-      "displayName": "displayName-value"
-    }
-  ]
+    ]
 }
 ```
 

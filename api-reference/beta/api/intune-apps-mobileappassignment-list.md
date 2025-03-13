@@ -1,10 +1,11 @@
 ---
 title: "List mobileAppAssignments"
 description: "List properties and relationships of the mobileAppAssignment objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List mobileAppAssignments
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 733
+Content-Length: 1155
 
 {
   "value": [
@@ -74,9 +77,19 @@ Content-Length: 733
         "deviceAndAppManagementAssignmentFilterType": "include"
       },
       "settings": {
-        "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-        "vpnConfigurationId": "Vpn Configuration Id value",
-        "uninstallOnDeviceRemoval": true
+        "@odata.type": "microsoft.graph.winGetAppAssignmentSettings",
+        "notifications": "showReboot",
+        "restartSettings": {
+          "@odata.type": "microsoft.graph.winGetAppRestartSettings",
+          "gracePeriodInMinutes": 4,
+          "countdownDisplayBeforeRestartInMinutes": 6,
+          "restartNotificationSnoozeDurationInMinutes": 10
+        },
+        "installTimeSettings": {
+          "@odata.type": "microsoft.graph.winGetAppInstallTimeSettings",
+          "useLocalTime": true,
+          "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+        }
       },
       "source": "policySets",
       "sourceId": "Source Id value"
@@ -84,9 +97,3 @@ Content-Length: 733
   ]
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "office365ActiveUserDetail resource type"
-description: "The following is a JSON representation of the resource."
-localization_priority: Normal
-ms.prod: "reports"
-author: "pranoychaudhuri"
+description: "The following JSON representation shows the resource type."
+ms.localizationpriority: medium
+ms.subservice: "reports"
+author: "sarahwxy"
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # office365ActiveUserDetail resource type
@@ -17,9 +18,9 @@ Namespace: microsoft.graph
 | :-------------------------------- | :---------------- | ---------------------------------------- |
 | reportRefreshDate                 | Date              | The latest date of the content.          |
 | userPrincipalName                 | String            | The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. |
-| displayName                       | String            | The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. |
+| displayName                       | String            | The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it can't be cleared during updates. |
 | isDeleted                         | Boolean           | Whether this user has been deleted or soft deleted. |
-| deletedDate                       | Date              | The date when the delete operation happened. Default value is "null" when the user has not been deleted. |
+| deletedDate                       | Date              | The date when the delete operation happened. Default value is "null" when the user hasn't been deleted. |
 | hasExchangeLicense                | Boolean           | Whether the user has been assigned an Exchange license. |
 | hasOneDriveLicense                | Boolean           | Whether the user has been assigned a OneDrive license. |
 | hasSharePointLicense              | Boolean           | Whether the user has been assigned a SharePoint license. |
@@ -40,9 +41,14 @@ Namespace: microsoft.graph
 | teamsLicenseAssignDate            | Date              | The last date when the user was assigned a Teams license. |
 | assignedProducts                  | String collection | All the products assigned for the user.  |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",

@@ -1,10 +1,11 @@
 ---
 title: "rubricCriterion resource type"
 description: "A criterion of a rubric"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
+ms.date: 07/23/2024
 ---
 
 # rubricCriterion resource type
@@ -21,9 +22,13 @@ A criterion of a rubric. See [educationRubric](educationrubric.md) for a descrip
 |:-------------|:------------|:------------|
 |description|[itemBody](itembody.md)|The description of this criterion.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

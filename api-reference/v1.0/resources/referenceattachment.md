@@ -1,17 +1,18 @@
 ---
 title: "referenceAttachment resource type"
-description: "A link to a file (such as a text file or Word document) on a OneDrive for Business cloud drive or other supported storage locations, attached to an event, message, or post."
-localization_priority: Normal
-ms.prod: "outlook"
-author: "svpsiva"
+description: "A link to a file, such as a text file or Word document, on a OneDrive for work or school cloud drive or other supported storage location, attached to an event, message, or post."
+ms.localizationpriority: medium
+ms.subservice: "outlook"
+author: "SuryaLashmiS"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # referenceAttachment resource type
 
 Namespace: microsoft.graph
 
-A link to a file (such as a text file or Word document) on a OneDrive for Business cloud drive or other supported storage locations, attached to an event, message, or post.
+A link to a file, such as a text file or Word document, on a OneDrive for work or school cloud drive or other supported storage locations, attached to an event, message, or post.
 
 Derived from [attachment](attachment.md).
 
@@ -25,12 +26,12 @@ Derived from [attachment](attachment.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentType|String|The content type of the attachment.|
-|id|String|The attachment ID.  Read-only.|
+|contentType|String|The content type of the attachment. Returned as `null` by default, when not set explicitly. Optional.|
+|id|String|The attachment ID. Read-only.|
 |isInline|Boolean|Set to true if the attachment appears inline in the body of the embedding object.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|name|String|The text that is displayed below the icon representing the embedded attachment. This does not need to be the actual file name.|
-|size|Int32|The size of the metadata that is stored on the message for the attachment in bytes. This value does not indicate the size of the actual file.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|name|String|The text that is displayed below the icon representing the embedded attachment. This value doesn't need to be the actual file name.|
+|size|Int32|The size of the metadata that is stored on the message for the attachment in bytes. This value doesn't indicate the size of the actual file.|
 
 ## Relationships
 None
@@ -39,7 +40,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

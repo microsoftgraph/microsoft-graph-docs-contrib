@@ -1,10 +1,11 @@
 ---
 title: "genericError resource type"
 description: "A general-purpose error."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "svpsiva"
+ms.subservice: non-product-specific
+author: "SuryaLashmiS"
+ms.date: 04/11/2024
 ---
 
 # genericError resource type
@@ -22,9 +23,12 @@ A general-purpose error.
 | message | String | The error message. |
 | code | String | The error code. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -35,6 +39,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.genericError",
   "message": "String",
   "code": "String"
 }

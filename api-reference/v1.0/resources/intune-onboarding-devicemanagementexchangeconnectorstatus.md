@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementExchangeConnectorStatus enum type"
 description: "The current status of the Exchange Connector."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # deviceManagementExchangeConnectorStatus enum type
@@ -22,12 +23,4 @@ The current status of the Exchange Connector.
 |connectionPending|1|Pending Connection to the Exchange Environment.|
 |connected|2|Connected to the Exchange Environment|
 |disconnected|3|Disconnected from the Exchange Environment|
-
-
-
-
-
-
-
-
-
+|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|

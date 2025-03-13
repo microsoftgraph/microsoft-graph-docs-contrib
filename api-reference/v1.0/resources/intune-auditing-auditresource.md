@@ -1,10 +1,11 @@
 ---
 title: "auditResource resource type"
 description: "A class containing the properties for Audit Resource."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # auditResource resource type
@@ -21,6 +22,7 @@ A class containing the properties for Audit Resource.
 |displayName|String|Display name.|
 |modifiedProperties|[auditProperty](../resources/intune-auditing-auditproperty.md) collection|List of modified properties.|
 |type|String|Audit resource's type.|
+|auditResourceType|String|Audit resource's type.|
 |resourceId|String|Audit resource's Id.|
 
 ## Relationships
@@ -46,15 +48,7 @@ Here is a JSON representation of the resource.
     }
   ],
   "type": "String",
+  "auditResourceType": "String",
   "resourceId": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

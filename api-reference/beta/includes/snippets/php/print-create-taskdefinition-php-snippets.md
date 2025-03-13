@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+<?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\PrintTaskDefinition;
+use Microsoft\Graph\Beta\Generated\Models\AppIdentity;
+
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestBody = new PrintTaskDefinition();
+$requestBody->setDisplayName('Test TaskDefinitionName');
+$createdBy = new AppIdentity();
+$createdBy->setDisplayName('Requesting App Display Name');
+$requestBody->setCreatedBy($createdBy);
+
+$result = $graphServiceClient->escapedPrint()->taskDefinitions()->post($requestBody)->wait();
+
+```

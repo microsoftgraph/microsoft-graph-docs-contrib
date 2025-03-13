@@ -4,15 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var sourceData = "sourceData-value";
+// Dependencies
+using Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Worksheets.Item.Charts.Item.SetData;
+using Microsoft.Kiota.Abstractions.Serialization;
 
-var seriesBy = "seriesBy-value";
+var requestBody = new SetDataPostRequestBody
+{
+	SourceData = new UntypedString("sourceData-value"),
+	SeriesBy = "seriesBy-value",
+};
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"]
-	.SetData(seriesBy,sourceData)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].SetData.PostAsync(requestBody);
+
 
 ```

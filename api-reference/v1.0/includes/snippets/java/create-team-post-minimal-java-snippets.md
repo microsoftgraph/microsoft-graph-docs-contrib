@@ -4,24 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Team team = new Team();
-team.additionalDataManager().put("template@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/teamsTemplates('standard')"));
-team.displayName = "My Sample Team";
-team.description = "My Sample Team’s Description";
-team.additionalDataManager().put("members@odata.bind", new JsonPrimitive("[
-  {
-    "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "roles": [
-      "owner"
-    ],
-    "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
-  }
-]"));
+team.setDisplayName("My Sample Team");
+team.setDescription("My sample team’s description");
+team.setFirstChannelName("My first channel of the sample team");
+LinkedList<ConversationMember> members = new LinkedList<ConversationMember>();
+AadUserConversationMember conversationMember = new AadUserConversationMember();
+conversationMember.setOdataType("#microsoft.graph.aadUserConversationMember");
+LinkedList<String> roles = new LinkedList<String>();
+roles.add("owner");
+conversationMember.setRoles(roles);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("user@odata.bind", "https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')");
+conversationMember.setAdditionalData(additionalData);
+members.add(conversationMember);
+team.setMembers(members);
+HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
+additionalData1.put("template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('standard')");
+team.setAdditionalData(additionalData1);
+Team result = graphClient.teams().post(team);
 
-graphClient.teams()
-	.buildRequest()
-	.post(team);
 
 ```

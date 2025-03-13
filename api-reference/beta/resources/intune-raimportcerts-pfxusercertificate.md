@@ -1,10 +1,11 @@
 ---
 title: "pfxUserCertificate resource type"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Raimportcerts Pfxusercertificate Resources ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # pfxUserCertificate resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Methods
 |Method|Return Type|Description|
@@ -29,23 +30,23 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|Guid|Not yet documented|
-|userId|Guid|Not yet documented|
-|thumbprint|String|Not yet documented|
-|userUpn|String|Not yet documented|
-|encryptedPfxBlob|String|Not yet documented|
-|encryptedPfxPassword|String|Not yet documented|
-|certStartDate|DateTimeOffset|Not yet documented|
-|certExpirationDate|DateTimeOffset|Not yet documented|
-|providerName|String|Not yet documented|
-|encryptionKeyName|String|Not yet documented|
-|paddingScheme|Int32|Not yet documented|
-|status|Int32|Not yet documented|
-|intendedPurpose|Int32|Not yet documented|
-|createdTime|DateTimeOffset|Not yet documented|
-|isDeleted|Boolean|Not yet documented|
-|lastModifiedTime|DateTimeOffset|Not yet documented|
-|eTag|String|Not yet documented|
+|tenantId|Guid||
+|userId|Guid||
+|thumbprint|String||
+|userUpn|String||
+|encryptedPfxBlob|String||
+|encryptedPfxPassword|String||
+|certStartDate|DateTimeOffset||
+|certExpirationDate|DateTimeOffset||
+|providerName|String||
+|encryptionKeyName|String||
+|paddingScheme|Int32||
+|status|Int32||
+|intendedPurpose|Int32||
+|createdTime|DateTimeOffset||
+|isDeleted|Boolean||
+|lastModifiedTime|DateTimeOffset||
+|eTag|String||
 
 ## Relationships
 None
@@ -80,9 +81,3 @@ Here is a JSON representation of the resource.
   "eTag": "String"
 }
 ```
-
-
-
-
-
-

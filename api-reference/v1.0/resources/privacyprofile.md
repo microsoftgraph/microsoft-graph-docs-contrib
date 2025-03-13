@@ -1,17 +1,18 @@
 ---
 title: "privacyProfile resource type"
 description: "Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "sauwat"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 04/25/2024
 ---
 
 # privacyProfile resource type
 
 Namespace: microsoft.graph
 
-Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement.
+Represents a [company's](organization.md) privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement.
 
 ## Properties
 | Property   | Type|Description|
@@ -21,7 +22,7 @@ Represents a company's privacy profile, which includes a privacy statement URL a
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

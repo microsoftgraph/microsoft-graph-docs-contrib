@@ -1,10 +1,11 @@
 ---
 title: "operator enum type"
 description: "Operator for rules."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # operator enum type
@@ -45,9 +46,3 @@ Operator for rules.
 |orderedSetEquals|22|OrderedSetEquals operator.|
 |subsetOf|23|SubsetOf operator.|
 |excludesAll|24|ExcludesAll operator.|
-
-
-
-
-
-

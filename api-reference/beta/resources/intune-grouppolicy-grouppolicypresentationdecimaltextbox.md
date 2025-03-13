@@ -1,10 +1,11 @@
 ---
 title: "groupPolicyPresentationDecimalTextBox resource type"
 description: "Represents an ADMX decimalTextBox element and an ADMX decimal element."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # groupPolicyPresentationDecimalTextBox resource type
@@ -18,7 +19,7 @@ Namespace: microsoft.graph
 Represents an ADMX decimalTextBox element and an ADMX decimal element.
 
 
-Inherits from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
+Inherits from [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md)
 
 ## Methods
 |Method|Return Type|Description|
@@ -69,9 +70,3 @@ Here is a JSON representation of the resource.
   "maxValue": 1024
 }
 ```
-
-
-
-
-
-

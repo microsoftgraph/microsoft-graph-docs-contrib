@@ -1,10 +1,11 @@
 ---
 title: "reportRoot: getSharePointActivityUserDetail"
 description: "Get details about SharePoint activity by user."
-localization_priority: Normal
-ms.prod: "reports"
-author: "pranoychaudhuri"
+ms.localizationpriority: medium
+ms.subservice: "reports"
+author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # reportRoot: getSharePointActivityUserDetail
@@ -17,17 +18,16 @@ Get details about SharePoint activity by user.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+<!-- { "blockType": "permissions", "name": "reportroot_getsharepointactivityuserdetail" } -->
+[!INCLUDE [permissions-table](../includes/permissions/reportroot-getsharepointactivityuserdetail-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -55,7 +55,7 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -82,7 +82,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[sharePointActivityUserDetail](../resources/sharepointactivityuserdetail.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 The default page size for this request is 200 items.
 
@@ -94,7 +94,7 @@ The following is an example that outputs CSV.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointActivityUserDetail(per
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -140,7 +140,7 @@ The following is an example that returns JSON.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -155,14 +155,14 @@ GET https://graph.microsoft.com/beta/reports/getSharePointActivityUserDetail(per
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sharePointActivityUserDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -171,7 +171,6 @@ Content-Type: application/json
 Content-Length: 473
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.sharePointActivityUserDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
@@ -203,5 +202,3 @@ Content-Length: 473
   "suppressions": [
   ]
 }-->
-
-

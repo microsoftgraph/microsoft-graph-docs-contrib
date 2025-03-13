@@ -1,47 +1,44 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
-title: DriveRecipient
-localization_priority: Normal
-ms.prod: "sharepoint"
-description: "The DriveRecipient resource represents a person, group, or other recipient to share with using the invite action."
+title: driveRecipient resource type
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
+description: "The driveRecipient resource represents a person, group, or other recipient to share with using the invite action."
 doc_type: resourcePageType
 ---
 
-# DriveRecipient resource
+# driveRecipient resource type
 
 Namespace: microsoft.graph
 
-The **DriveRecipient** resource represents a person, group, or other recipient to share with using the [invite](../api/driveitem-invite.md) action.
+Represents a person, group, or other recipient to share a drive item with using the [invite](../api/driveitem-invite.md) action.
 
-## JSON representation
-
-<!-- { 
-  "blockType": "resource", 
-  "@odata.type": "microsoft.graph.driveRecipient", 
-  "optionalProperties": ["alias", "objectId", "email"] } -->
-```json
-{
-  "email": "string",
-  "alias": "string",
-  "objectId": "string",
-}
-```
+When using [invite](../api/driveitem-invite.md) to add permissions, the **driveRecipient** object would specify the **email**, **alias**, or **objectId** of the recipient.
+Only one of these values is required; multiple values are not accepted.
 
 ## Properties
 The recipients resource has these properties.
 
 | Property name | Type   | Description                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | String | The email address for the recipient, if the recipient has an associated email address.                  |
 | alias         | String | The alias of the domain object, for cases where an email address is unavailable (e.g. security groups). |
+| email         | String | The email address for the recipient, if the recipient has an associated email address.                  |
 | objectId      | String | The unique identifier for the recipient in the directory.                                               |
 
-## Remarks
+## JSON representation
 
-When using [invite](../api/driveitem-invite.md) to add permissions, the DriveRecipient can specify **email**, **alias**, or **objectId**.
-Only one of these values is required.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.driveRecipient",
+  "optionalProperties": ["alias", "objectId", "email"] } -->
+```json
+{
+  "alias": "string",
+  "email": "string",
+  "objectId": "string",
+}
+```
 
 <!-- {
   "type": "#page.annotation",

@@ -2,9 +2,10 @@
 title: Get printSettings
 description: Retrieve tenant-wide settings for the Universal Print service.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Get printSettings
@@ -16,15 +17,10 @@ Namespace: microsoft.graph
 Retrieve tenant-wide settings for the Universal Print service.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| User.Read |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+<!-- { "blockType": "permissions", "name": "print_get_settings" } -->
+[!INCLUDE [permissions-table](../includes/permissions/print-get-settings-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,15 +34,15 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printSettings](../resources/printsettings.md) object in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -56,23 +52,16 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/settings
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-printsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-printsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-printsettings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,7 +71,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 144
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/settings",

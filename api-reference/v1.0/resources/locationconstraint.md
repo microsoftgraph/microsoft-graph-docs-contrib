@@ -1,10 +1,11 @@
 ---
 title: "locationConstraint resource type"
 description: "The conditions stated by a client for the location of a meeting."
-localization_priority: Normal
-author: "harini84"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "iamgirishck"
+ms.subservice: calendar
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # locationConstraint resource type
@@ -15,7 +16,7 @@ The conditions stated by a client for the location of a meeting.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -36,7 +37,7 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|isRequired|Boolean|The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, [findMeetingTimes](../api/user-findmeetingtimes.md) will not return any meeting time suggestions. If this is false and all the resources are busy, **findMeetingTimes** would still look for meeting times without locations. |
+|isRequired|Boolean|The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, [findMeetingTimes](../api/user-findmeetingtimes.md) won't return any meeting time suggestions. If this is false and all the resources are busy, **findMeetingTimes** would still look for meeting times without locations. |
 |locations|[locationConstraintItem](locationconstraintitem.md) collection|Constraint information for one or more locations that the client requests for the meeting.|
 |suggestLocation|Boolean|The client requests the service to suggest one or more meeting locations.|
 

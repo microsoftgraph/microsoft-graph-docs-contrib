@@ -1,10 +1,11 @@
 ---
 title: "List userExperienceAnalyticsScoreHistories"
 description: "List properties and relationships of the userExperienceAnalyticsScoreHistory objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List userExperienceAnalyticsScoreHistories
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ GET /deviceManagement/userExperienceAnalyticsScoreHistory
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 380
+Content-Length: 705
 
 {
   "value": [
@@ -68,18 +71,21 @@ Content-Length: 380
       "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
       "id": "d15e3ba8-3ba8-d15e-a83b-5ed1a83b5ed1",
       "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
+      "overallScore": 12,
       "startupScore": 12,
       "coreBootScore": 13,
       "coreSigninScore": 15,
       "recommendedSoftwareScore": 8,
+      "appHealthOverallScore": 5,
+      "workFromAnywhereScore": 5,
+      "batteryHealthScore": 2,
+      "startupTotalDevices": 3,
+      "recommendedSoftwareTotalDevices": 15,
+      "appHealthTotalDevices": 5,
+      "workFromAnywhereTotalDevices": 12,
+      "batteryHealthTotalDevices": 9,
       "restartScore": 12
     }
   ]
 }
 ```
-
-
-
-
-
-

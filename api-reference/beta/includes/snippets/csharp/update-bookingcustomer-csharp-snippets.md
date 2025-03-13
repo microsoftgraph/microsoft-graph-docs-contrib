@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var bookingCustomer = new BookingCustomer
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new BookingCustomer
 {
 	DisplayName = "Adele",
-	EmailAddress = "adele@relecloud.com"
+	EmailAddress = "adele@relecloud.com",
 };
 
-await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Customers["8bb19078-0f45-4efb-b2c5-da78b860f73a"]
-	.Request()
-	.UpdateAsync(bookingCustomer);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Customers["{bookingCustomer-id}"].PatchAsync(requestBody);
+
 
 ```

@@ -4,13 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var password = "password-value";
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Protection.Unprotect.PostAsync();
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Protection
-	.Unprotect()
-	.Request()
-	.PostAsync();
 
 ```

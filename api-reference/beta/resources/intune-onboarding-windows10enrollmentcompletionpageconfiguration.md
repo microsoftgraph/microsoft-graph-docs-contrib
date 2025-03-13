@@ -1,10 +1,11 @@
 ---
 title: "windows10EnrollmentCompletionPageConfiguration resource type"
 description: "Windows 10 Enrollment Status Page Configuration"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windows10EnrollmentCompletionPageConfiguration resource type
@@ -40,16 +41,19 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-shared-devicee
 |lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |roleScopeTagIds|String collection|Optional role scope tags for the enrollment restrictions. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|Show or hide installation progress to user|
-|blockDeviceSetupRetryByUser|Boolean|Allow the user to retry the setup on installation failure|
-|allowDeviceResetOnInstallFailure|Boolean|Allow or block device reset on installation failure|
-|allowLogCollectionOnInstallFailure|Boolean|Allow or block log collection on installation failure|
-|customErrorMessage|String|Set custom error message to show upon installation failure|
-|installProgressTimeoutInMinutes|Int32|Set installation progress timeout in minutes|
-|allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
-|selectedMobileAppIds|String collection|Selected applications to track the installation status|
-|trackInstallProgressForAutopilotOnly|Boolean|Only show installation progress for Autopilot enrollment scenarios|
-|disableUserStatusTrackingAfterFirstUser|Boolean|Only show installation progress for first user post enrollment|
+|deviceEnrollmentConfigurationType|[deviceEnrollmentConfigurationType](../resources/intune-onboarding-deviceenrollmentconfigurationtype.md)|Support for Enrollment Configuration Type Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md). Possible values are: `unknown`, `limit`, `platformRestrictions`, `windowsHelloForBusiness`, `defaultLimit`, `defaultPlatformRestrictions`, `defaultWindowsHelloForBusiness`, `defaultWindows10EnrollmentCompletionPageConfiguration`, `windows10EnrollmentCompletionPageConfiguration`, `deviceComanagementAuthorityConfiguration`, `singlePlatformRestriction`, `unknownFutureValue`, `enrollmentNotificationsConfiguration`.|
+|showInstallationProgress|Boolean|When TRUE, shows installation progress to user. When false, hides installation progress. The default is false.|
+|blockDeviceSetupRetryByUser|Boolean|When TRUE, blocks user from retrying the setup on installation failure. When false, user is allowed to retry. The default is false.|
+|allowDeviceResetOnInstallFailure|Boolean|When TRUE, allows device reset on installation failure. When false, reset is blocked. The default is false.|
+|allowLogCollectionOnInstallFailure|Boolean|When TRUE, allows log collection on installation failure. When false, log collection is not allowed. The default is false.|
+|customErrorMessage|String|The custom error message to show upon installation failure. Max length is 10000. example: "Setup could not be completed. Please try again or contact your support person for help."|
+|installProgressTimeoutInMinutes|Int32|The installation progress timeout in minutes. Default is 60 minutes.|
+|allowDeviceUseOnInstallFailure|Boolean|When TRUE, allows the user to continue using the device on installation failure. When false, blocks the user on installation failure. The default is false.|
+|selectedMobileAppIds|String collection|Selected applications to track the installation status. It is in the form of an array of GUIDs.|
+|allowNonBlockingAppInstallation|Boolean|When TRUE, ESP (Enrollment Status Page) installs all required apps targeted during technician phase and ignores any failures for non-blocking apps. When FALSE, ESP fails on any error during app install. The default is false.|
+|installQualityUpdates|Boolean|Allows quality updates installation during OOBE|
+|trackInstallProgressForAutopilotOnly|Boolean|When TRUE, installation progress is tracked for only Autopilot enrollment scenarios. When false, other scenarios are tracked as well. The default is false.|
+|disableUserStatusTrackingAfterFirstUser|Boolean|When TRUE, disables showing installation progress for first user post enrollment. When false, enables showing progress. The default is false.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -77,6 +81,7 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
+  "deviceEnrollmentConfigurationType": "String",
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,
@@ -87,13 +92,9 @@ Here is a JSON representation of the resource.
   "selectedMobileAppIds": [
     "String"
   ],
+  "allowNonBlockingAppInstallation": true,
+  "installQualityUpdates": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
-
-
-
-
-

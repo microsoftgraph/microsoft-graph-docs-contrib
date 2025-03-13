@@ -1,0 +1,262 @@
+[
+  {
+    "apiPath": "/appCatalogs/teamsApps",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/appCatalogs/teamsApps",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/appCatalogs/teamsApps/{teamsApp-id}/appDefinitions",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/appCatalogs/teamsApps/{teamsApp-id}",
+    "operation": "DELETE",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/appCatalogs/teamsApps/{teamsApp-id}/appDefinitions/{teamsAppDefinition-id}",
+    "operation": "DELETE",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/appCatalogs/teamsApps/{teamsApp-id}/appDefinitions/{teamsAppDefinition-id}/bot",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/installedApps",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/installedApps/{teamsAppInstallation-id}",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/installedApps",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/installedApps/{teamsAppInstallation-id}/upgrade",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/installedApps/{teamsAppInstallation-id}",
+    "operation": "DELETE",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/users/{user-id}/teamwork/installedApps",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/users/{user-id}/teamwork/installedApps/{userScopeTeamsAppInstallation-id}",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/users/{user-id}/teamwork/installedApps",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/users/{user-id}/teamwork/installedApps/{userScopeTeamsAppInstallation-id}/upgrade",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/users/{user-id}/teamwork/installedApps/{userScopeTeamsAppInstallation-id}",
+    "operation": "DELETE",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/chats/{chat-id}/permissionGrants",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/groups/{group-id}/permissionGrants",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/permissionGrants",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/chats/{chat-id}/sendActivityNotification",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/sendActivityNotification",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/users/{user-id}/teamwork/sendActivityNotification",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teamwork/sendActivityNotificationToRecipients",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/tabs",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/tabs/{teamsTab-id}",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/tabs",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/tabs/{teamsTab-id}",
+    "operation": "PATCH",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/tabs/{teamsTab-id}",
+    "operation": "DELETE",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/getAllMessages()",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/users/{user-id}/chats/getAllMessages()",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/messages/{chatMessage-id}",
+    "operation": "PATCH",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/messages/{chatMessage-id}/replies/{chatMessage-id1}",
+    "operation": "PATCH",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/chats/{chat-id}/messages/{chatMessage-id}",
+    "operation": "PATCH",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/drives/{drive-id}/items/{driveItem-id}/assignSensitivityLabel",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/users/{user-id}/teamwork/associatedTeams",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/sharedWithTeams/{sharedWithChannelTeamInfo-id}/allowedMembers",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/sharedWithTeams/{sharedWithChannelTeamInfo-id}",
+    "operation": "DELETE",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/sharedWithTeams/{sharedWithChannelTeamInfo-id}",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/sharedWithTeams",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/incomingChannels/{channel-id}/$ref",
+    "operation": "DELETE",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/allChannels",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/incomingChannels",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/provisionEmail",
+    "operation": "POST",
+    "cloud": "UsGov"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/messages/{chatMessage-id}/softDelete",
+    "operation": "POST",
+    "cloud": "UsGov"
+  },
+  {
+    "apiPath": "/teams/{{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/softDelete",
+    "operation": "POST",
+    "cloud": "UsGov"
+  },
+  {
+    "apiPath": "/users/{user-id}/chats/{chat-id}/messages/{chatMessage-id}/softDelete",
+    "operation": "POST",
+    "cloud": "UsGov"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/getAllMessages()",
+    "operation": "GET",
+    "cloud": "UsGov"
+  },
+  {
+    "apiPath": "/users/{user-id}/chats/getAllMessages()",
+    "operation": "GET",
+    "cloud": "UsGov"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/messages/{chatMessage-id}",
+    "operation": "PATCH",
+    "cloud": "UsGov"
+  },
+  {
+    "apiPath": "/teams/{team-id}/channels/{channel-id}/messages/{chatMessage-id}/replies/{chatMessage-id1}",
+    "operation": "PATCH",
+    "cloud": "UsGov"
+  },
+  {
+    "apiPath": "/chats/{chat-id}/messages/{chatMessage-id}",
+    "operation": "PATCH",
+    "cloud": "UsGov"
+  },
+  {
+    "apiPath": "/drives/{drive-id}/items/{driveItem-id}/assignSensitivityLabel",
+    "operation": "POST",
+    "cloud": "UsGov"
+  }
+]

@@ -1,10 +1,11 @@
 ---
 title: "Delete educationalActivity"
 description: "Delete an educationalActivity object from a user profile."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 10/08/2024
 ---
 
 # Delete educationalActivity
@@ -15,15 +16,41 @@ Namespace: microsoft.graph
 
 Delete an [educationalActivity](../resources/educationalactivity.md) object from a user's [profile](../resources/profile.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
-| Application                            | User.ReadWrite.All                          |
+Permissions for the following HTTP syntax:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /me/profile/educationalActivities/{id} 
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "educationalactivity_delete", 
+  "requestUrls": ["DELETE /me/profile/educationalActivities/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationalactivity-delete-permissions.md)]
+
+Permissions for the following HTTP syntax:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "educationalactivity_delete_2", 
+  "requestUrls": ["DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationalactivity-delete-2-permissions.md)]
 
 ## HTTP request
 
@@ -38,21 +65,21 @@ DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 | Name           |Description                  |
 |:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,24 +90,44 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-educationalactivity-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationalactivity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-educationalactivity-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationalactivity-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-educationalactivity-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationalactivity-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-educationalactivity-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

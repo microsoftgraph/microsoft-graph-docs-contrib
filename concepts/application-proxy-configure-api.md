@@ -1,626 +1,765 @@
 ---
-title: Configure Application Proxy using Microsoft Graph APIs
-description: Automatically configure Application Proxy using the Microsoft Graph APIs to provide remote access and single sign-on to on-premises applications.
-author: davidmu1
-ms.topic: conceptual
-localization_priority: Normal
-ms.prod: microsoft-identity-platform
+title: "Configure application proxy using Microsoft Graph APIs"
+description: "Provide remote access and single sign-on to on-premises applications by configuring Microsoft Entra application proxy using Microsoft Graph APIs."
+author: FaithOmbongi
+ma.author: ombongifaith
+ms.reviewer: dhruvinrshah, arpadg
+ms.topic: tutorial
+ms.localizationpriority: medium
+ms.subservice: entra-applications
+ms.date: 05/20/2024
+#customer intent: As a developer, I want to configure Microsoft Entra application proxy programmatically using Microsoft Graph, so that I can automate the process of providing secure remote access and single sign-on to on-premises web applications for users.
 ---
 
-# Automate the configuration of Application Proxy using the Microsoft Graph API
+# Configure Microsoft Entra application proxy using Microsoft Graph APIs
 
-In this article, you'll learn how to create and configure Azure Active Directory (Azure AD) [Application Proxy](https://aka.ms/whyappproxy) for an application. Application Proxy provides secure remote access and single sign-on to on-premises web applications. After configuring Application Proxy for an application, users can access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
+[Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) provides secure remote access and single sign-on (SSO) to on-premises web applications. It allows users to access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
 
-This article assumes you have already installed a connector and completed the [prerequisites](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) for Application Proxy so that connectors can communicate with Azure AD services.
+In this tutorial, you learn how to Configure Microsoft Entra application proxy using Microsoft Graph APIs.
 
-Make sure you have the corresponding permissions to call the following APIs.
+> [!IMPORTANT]
+> The app proxy-specific API operations are currently available only on the `beta` endpoint.
 
-|Resource type |Method |
-|---------|---------|
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Create application](https://docs.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta&tabs=http) <br> [Update application](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Add application to connectorGroup](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
-|[connector](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [Get connectors](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
-|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Create connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Add connector to connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Create servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta&tabs=http) <br> [Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+## Prerequisites
 
-> [!NOTE]
-> The requests shown in this article use sample values. You will need update these. The response objects shown might also be shortened for readability. 
+- Install a connector and complete the [prerequisites](/entra/identity/app-proxy/application-proxy-add-on-premises-application#prerequisites) for application proxy so that connectors can communicate with Microsoft Entra services.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has at least the Cloud Application Administrator role.
+- Grant yourself the Microsoft Graph `Directory.ReadWrite.All` delegated permission.
+- Have a test user to assign to the application.
 
-## Step 1: Create an application
+## Step 1: Create a custom application
 
-### Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use
+To configure application proxy, you first create a custom application, and then update the app proxy settings in the application's **onPremisesPublishing** property. In this tutorial, you use an application template to create an instance of a custom application and service principal in your tenant. The template ID for a custom application is `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`, which you can discover by running the following query: [GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'Custom'](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applicationTemplates%3F%24filter%3DdisplayName%2Beq%2B'Custom'&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com).
 
-1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Select **Sign-in with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
-3. Upon successful sign in, you'll see the user account details in the left pane.
-
-### Create an application
-
-To configure Application Proxy for an app using the API, you create an application, add a service principal to the app, and then update the application's **onPremisesPublishing** property to configure the App Proxy settings. When creating the application, set the application's **signInAudience** to "AzureADMyOrg".
+From the response, record the **id** of both the service principal and the application objects, and the value of **appId** for use later in the tutorial.
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_application"
+  "name": "tutorial_configure_appproxy_create_applicationtemplates"
 }-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/applications
-Content-type: application/json
-
-{
-  "displayName": "Contoso IWA App",
-  "signInAudience":"AzureADMyOrg"
-}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application",
-  "isCollection": true
-} -->
-
 ```http
-HTTP/1.1 201 Created
+POST https://graph.microsoft.com/v1.0/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
-  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
-  "deletedDateTime": null,
-  "addIns": [],
-  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "applicationTemplateId": null,
-  "identifierUris": [],
-  "createdDateTime": "2020-08-11T21:07:47.5919755Z",
-  "description": null,
-  "displayName": "Contoso IWA App",
-  "isAuthorizationServiceEnabled": false,
-  "isDeviceOnlyAuthSupported": null,
-  "isFallbackPublicClient": null,
-  "groupMembershipClaims": null,
-  "notes": null,
-  "optionalClaims": null,
-  "orgRestrictions": [],
-  "publisherDomain": "f128.info",
-  "signInAudience": "AzureADandPersonalMicrosoftAccount",
-  "tags": [],
-  "tokenEncryptionKeyId": null,
-  "uniqueName": null,
-  "verifiedPublisher": {
-      "displayName": null,
-      "verifiedPublisherId": null,
-      "addedDateTime": null
-  },
+  "displayName": "Contoso IWA App"
 }
 ```
 
-### Retrieve the application object ID and appId
-Use the response from the previous call to retrieve and save the application object ID and app ID.
-```
-"application": {
-  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
-  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
-}
-```
-### Create a servicePrincipal for the application and add required tags
-Use the **appId** to create a service principal for the application. Then add the tags required for configuring Application Proxy for an app.
-
-#### Request
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_servicePrincipal"
-}-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/serviceprincipals
-Content-type: appplication/json
-
-{
-  "appId":"d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "tags": [
-    "WindowsAzureActiveDirectoryIntegratedApp",
-    "WindowsAzureActiveDirectoryOnPremApp"
-  ]
-}
-```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-create-applicationtemplates-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-create-applicationtemplates-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-create-applicationtemplates-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-create-applicationtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-create-applicationtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-create-applicationtemplates-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-create-applicationtemplates-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-create-applicationtemplates-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.application",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.applicationServicePrincipal"
 } -->
-
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
-  "id": "a8cac399-cde5-4516-a674-819503c61313",
-  "deletedDateTime": null,
-  "accountEnabled": true,
-  "alternativeNames": [],
-  "createdDateTime": null,
-  "deviceManagementAppType": null,
-  "appDescription": null,
-  "appDisplayName": "Contoso IWA App",
-  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "applicationTemplateId": null,
-  "appOwnerOrganizationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece",
-  "appRoleAssignmentRequired": false,
-  "description": null,
-  "displayName": "vtestapi2",
-  "errorUrl": null,
-  "homepage": null,
-  "isAuthorizationServiceEnabled": false,
-  "loginUrl": null,
-  "logoutUrl": null,
-  "notes": null,
-  "notificationEmailAddresses": [],
-  "preferredSingleSignOnMode": null,
-  "preferredTokenSigningKeyEndDateTime": null,
-  "preferredTokenSigningKeyThumbprint": null,
-  "publisherName": "f/128 Photography",
-  "replyUrls": [],
-  "samlMetadataUrl": null,
-  "samlSingleSignOnSettings": null,
-  "servicePrincipalNames": [
-      "b92b92d4-3874-46a5-b715-a00ea01cff93"
-  ],
-  "servicePrincipalType": "Application",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.applicationServicePrincipal",
+    "application": {
+        "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
+        "appId": "32977d3b-ee0e-4614-9f50-f583a07842d2",
+        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+        "createdDateTime": "2024-02-22T16:48:09Z",
+        "deletedDateTime": null,
+        "displayName": "Contoso IWA App",
+        "description": null,
+        "groupMembershipClaims": null,
+        "identifierUris": [],
+        "isFallbackPublicClient": false,
+        "signInAudience": "AzureADMyOrg",
+        "tags": [],
+        "tokenEncryptionKeyId": null,
+        "defaultRedirectUri": null,
+        "samlMetadataUrl": null,
+        "optionalClaims": null,
+        "addIns": [],
+        "api": {
+            "acceptMappedClaims": null,
+            "knownClientApplications": [],
+            "requestedAccessTokenVersion": null,
+            "oauth2PermissionScopes": [
+                {
+                    "adminConsentDescription": "Allow the application to access Contoso IWA App on behalf of the signed-in user.",
+                    "adminConsentDisplayName": "Access Contoso IWA App",
+                    "id": "5cda2e1e-d9fd-4f69-b981-48fbc8a16be1",
+                    "isEnabled": true,
+                    "type": "User",
+                    "userConsentDescription": "Allow the application to access Contoso IWA App on your behalf.",
+                    "userConsentDisplayName": "Access Contoso IWA App",
+                    "value": "user_impersonation"
+                }
+            ],
+            "preAuthorizedApplications": []
+        },
+        "appRoles": [
+            {
+                "allowedMemberTypes": [
+                    "User"
+                ],
+                "displayName": "User",
+                "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
+                "isEnabled": true,
+                "description": "User",
+                "value": null,
+                "origin": "Application"
+            },
+            {
+                "allowedMemberTypes": [
+                    "User"
+                ],
+                "displayName": "msiam_access",
+                "id": "b9632174-c057-4f7e-951b-be3adc52bfe6",
+                "isEnabled": true,
+                "description": "msiam_access",
+                "value": null,
+                "origin": "Application"
+            }
+        ],
+        "info": {
+            "logoUrl": null,
+            "marketingUrl": null,
+            "privacyStatementUrl": null,
+            "supportUrl": null,
+            "termsOfServiceUrl": null
+        },
+        "keyCredentials": [],
+        "parentalControlSettings": {
+            "countriesBlockedForMinors": [],
+            "legalAgeGroupRule": "Allow"
+        },
+        "passwordCredentials": [],
+        "publicClient": {
+            "redirectUris": []
+        },
+        "requiredResourceAccess": [],
+        "verifiedPublisher": {
+            "displayName": null,
+            "verifiedPublisherId": null,
+            "addedDateTime": null
+        },
+        "web": {
+            "homePageUrl": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+            "redirectUris": [],
+            "logoutUrl": null
+        }
+    },
+    "servicePrincipal": {
+        "id": "a8cac399-cde5-4516-a674-819503c61313",
+        "deletedDateTime": null,
+        "accountEnabled": true,
+        "appId": "32977d3b-ee0e-4614-9f50-f583a07842d2",
+        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+        "appDisplayName": "Contoso IWA App",
+        "alternativeNames": [],
+        "appOwnerOrganizationId": "38d49456-54d4-455d-a8d6-c383c71e0a6d",
+        "displayName": "Contoso IWA App",
+        "appRoleAssignmentRequired": true,
+        "loginUrl": null,
+        "logoutUrl": null,
+        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+        "notificationEmailAddresses": [],
+        "preferredSingleSignOnMode": null,
+        "preferredTokenSigningKeyThumbprint": null,
+        "replyUrls": [],
+        "servicePrincipalNames": [
+            "32977d3b-ee0e-4614-9f50-f583a07842d2"
+        ],
+        "servicePrincipalType": "Application",
+        "tags": [
+            "WindowsAzureActiveDirectoryCustomSingleSignOnApplication",
+            "WindowsAzureActiveDirectoryIntegratedApp"
+        ],
+        "tokenEncryptionKeyId": null,
+        "samlSingleSignOnSettings": null,
+        "addIns": [],
+        "appRoles": [
+            {
+                "allowedMemberTypes": [
+                    "User"
+                ],
+                "displayName": "User",
+                "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
+                "isEnabled": true,
+                "description": "User",
+                "value": null,
+                "origin": "Application"
+            },
+            {
+                "allowedMemberTypes": [
+                    "User"
+                ],
+                "displayName": "msiam_access",
+                "id": "b9632174-c057-4f7e-951b-be3adc52bfe6",
+                "isEnabled": true,
+                "description": "msiam_access",
+                "value": null,
+                "origin": "Application"
+            }
+        ],
+        "info": {
+            "logoUrl": null,
+            "marketingUrl": null,
+            "privacyStatementUrl": null,
+            "supportUrl": null,
+            "termsOfServiceUrl": null
+        },
+        "keyCredentials": [],
+        "oauth2PermissionScopes": [
+            {
+                "adminConsentDescription": "Allow the application to access Contoso IWA App on behalf of the signed-in user.",
+                "adminConsentDisplayName": "Access Contoso IWA App",
+                "id": "5cda2e1e-d9fd-4f69-b981-48fbc8a16be1",
+                "isEnabled": true,
+                "type": "User",
+                "userConsentDescription": "Allow the application to access Contoso IWA App on your behalf.",
+                "userConsentDisplayName": "Access Contoso IWA App",
+                "value": "user_impersonation"
+            }
+        ],
+        "passwordCredentials": [],
+        "verifiedPublisher": {
+            "displayName": null,
+            "verifiedPublisherId": null,
+            "addedDateTime": null
+        }
+    }
 }
 ```
 
-## Step 2: Configure Application Proxy properties
+## Step 2: Configure application proxy
 
-### Set the onPremisesPublishing configuration
+For the app that you created in Step 1, configure the URIs for the application. Assume that the app's internal URL is `https://contosoiwaapp.com` and the default domain for the external URL is `https://contosoiwaapp-contoso.msappproxy.net`. Add the external URL value to the **identifierUris**, **web>redirectUris** and **web>homePageUrl** properties. 
 
-Use the application object ID from the previous step to configure Application Proxy for the app and update the **onPremisesPublishing** property to the desired configuration. In this example, you're using an app with the internal URL: `https://contosoiwaapp.com` and using the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
+Also, configure the **onPremisesPublishing** property to set the internal and external URLs, and other properties as needed. This property is only available in `beta` and can't be configured until you configure the URIs.
 
-#### Request
+### Step 2.1: Configure the URIs
 
+The following request uses the value of **appId** for the **identifierUris** property. You can also use any other identifier that matches the application id URI format expected by Microsoft Entra ID. The request returns a `204 No content` response.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_application"
+  "name": "tutorial_configure_appproxy_add_uris"
 }-->
+```http
+PATCH https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+Content-type: application/json
 
-```msgraph-interactive
+{
+    "identifierUris": [
+        "api://32977d3b-ee0e-4614-9f50-f583a07842d2"
+    ],
+    "web": {
+        "redirectUris": [
+            "https://contosoiwaapp-contoso.msappproxy.net"
+        ],
+        "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-add-uris-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-add-uris-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-add-uris-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-add-uris-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-add-uris-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-add-uris-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-add-uris-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-add-uris-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Step 2.2: Configure the onPremisesPublishing property
+
+The request returns a `204 No content` response.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_update_onpremisespublishing"
+}-->
+```http
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
-Content-type: appplication/json
+Content-type: application/json
 
 {
     "onPremisesPublishing": {
         "externalAuthenticationType": "aadPreAuthentication",
         "internalUrl": "https://contosoiwaapp.com",
-        "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+        "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net",
+        "isHttpOnlyCookieEnabled": true,
+        "isOnPremPublishingEnabled": true,
+        "isPersistentCookieEnabled": true,
+        "isSecureCookieEnabled": true,
+        "isStateSessionEnabled": true,
+        "isTranslateHostHeaderEnabled": true,
+        "isTranslateLinksInBodyEnabled": true
     }
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-update-onpremisespublishing-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-update-onpremisespublishing-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-update-onpremisespublishing-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-update-onpremisespublishing-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-update-onpremisespublishing-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-update-onpremisespublishing-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-update-onpremisespublishing-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-update-onpremisespublishing-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+## Step 3: Assign a connector group to the application
 
-#### Response
+### Step 3.1: Get connectors
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-
-```http
-HTTP/1.1 204 No content
-```
-### Complete the configuration of the application
-Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** properties to the external UR configured in the **onPremisesPublishing** property. Then update [implicitGrantSettings](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
+Identify the connector that you want to assign to the connector group. Record its **id**.
 
 #### Request
-<!-- {
-  "blockType": "request",
-  "name": "update_application"
-}-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
-Content-type: appplication/json
-
-{
-  "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-  "web": {
-    "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-    "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net",
-    "implicitGrantSettings": {
-      "enableIdTokenIssuance": true,
-      "enableAccessTokenIssuance": false
-    }
-  }
-}
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-
-```http
-HTTP/1.1 204 No content
-```
-
-## Step 3: Assign the connector group to the application
-
-### Get connectors
-
-List the connectors and use the response to retrieve and save the connector object ID. The connector object ID will be used to assign the connector to a connector group.
-
-#### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "connector"
+  "name": "tutorial_configure_appproxy_get_connectors"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
-
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/connector-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-get-connectors-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-get-connectors-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-get-connectors-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-get-connectors-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/connector-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-get-connectors-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/connector-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-get-connectors-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-get-connectors-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-get-connectors-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
-
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.connectors",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.connector"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectors",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#onPremisesPublishingProfiles('applicationProxy')/connectors",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET onPremisesPublishingProfiles('<key>')/connectors?$select=externalIp,machineName",
     "value": [
-        {
-            "id": "d2b1e8e8-8511-49d6-a4ba-323cb083fbb0",
-            "machineName": "connectorA.redmond.contoso.com"",
-            "externalIp": "131.137.147.164",
-            "status": "active"
-        },
-        {
-            "id": "f2cab422-a1c8-4d70-a47e-2cb297a2e051",
-            "machineName": "connectorB.contoso.com"",
-            "externalIp": "68.0.191.210",
-            "status": "active"
-        },
-        {
-            "id": "8555cc3c-5c8b-48a8-a8b2-5e97c32ef907",
-            "machineName": "connectorC.contoso.com",
-            "externalIp": "40.78.66.161",
-            "status": "active"
-        }
-    ]
+    {
+      "id": "d2b1e8e8-8511-49d6-a4ba-323cb083fbb0",
+      "machineName": "connectorA.redmond.contoso.com"",
+      "externalIp": "131.137.147.164",
+      "status": "active"
+    },
+    {
+      "id": "f2cab422-a1c8-4d70-a47e-2cb297a2e051",
+      "machineName": "connectorB.contoso.com"",
+      "externalIp": "68.0.191.210",
+      "status": "active"
+    }
+  ]
 }
 ```
 
-### Create a connectorGroup
-For this example, a new connectorGroup is created named "IWA Demo Connector Group" that is used for the application. You can also skip this step if your connector is already assigned to the appropriate connectorGroup. Retrieve and save the connectorGroup object ID to use in the next step.
+### Step 3.2: Create a connectorGroup
+
+Create a connectorGroup named `IWA Demo Connector Group` for the application. Record its **id**.
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "connectorGroup"
+  "name": "tutorial_configure_appproxy_create_connectorgroup"
 }-->
-
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
-
 Content-type: application/json
+
 {
-   "name": "IWA Demo Connector Group"
+  "name": "IWA Demo Connector Group"
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-create-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-create-connectorgroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-create-connectorgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-create-connectorgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-create-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-create-connectorgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-create-connectorgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-create-connectorgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.connectorGroup"
 } -->
-
 ```http
-HTTP/1.1 201
-Content-type: connectorGroup/json
+HTTP/1.1 201 Created
+Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectorGroups/$entity",
-    "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",
-    "name": "IWA Demo Connector Group",
-    "connectorGroupType": "applicationProxy",
-    "isDefault": false
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectorGroups/$entity",
+  "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",
+  "name": "IWA Demo Connector Group",
+  "connectorGroupType": "applicationProxy",
+  "region": "eur",
+  "isDefault": false
 }
 ```
 
-### Assign a connector to the connectorGroup
+### Step 3.3: Assign a connector to the connectorGroup
 
-#### Request
+The request returns a `204 No content` response.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "connectorGroup"
+  "name": "tutorial_configure_appproxy_create_connector_memberof"
 }-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/8555cc3c-5c8b-48a8-a8b2-5e97c32ef907/memberOf/$ref
-
+```http
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/f2cab422-a1c8-4d70-a47e-2cb297a2e051/memberOf/$ref
 Content-type: application/json
+
 {
   "@odata.id":"https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-create-connector-memberof-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-create-connector-memberof-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-```http
-HTTP/1.1 204 No content
-```
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-create-connector-memberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Assign the application to the connectorGroup
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-create-connector-memberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### Request
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-create-connector-memberof-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-create-connector-memberof-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-create-connector-memberof-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-create-connector-memberof-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Step 3.4: Assign the application to the connectorGroup
+
+The request returns a `204 No content` response.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "connectorGroup"
+  "name": "tutorial_configure_appproxy_assign_application_connectorgroup"
 }-->
-
-```msgraph-interactive
+```http
 PUT https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/connectorGroup/$ref
 Content-type: application/json
 
 {
-"@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
+  "@odata.id":"https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-assign-application-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-assign-application-connectorgroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-assign-application-connectorgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-assign-application-connectorgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-assign-application-connectorgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/connectorgroup-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-assign-application-connectorgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-assign-application-connectorgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-assign-application-connectorgroup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+## Step 4: Configure single sign-on (SSO)
 
-#### Response
+In this step, you configure the **onPremisesPublishing > singleSignOnSettings** and **onPremisesPublishing > singleSignOnMode** properties for the application.
 
+### Option 1: Configure IWA-based SSO
+
+The following request shows how to configure Integrated Windows Authentication (IWA) for the application. The request returns a `204 No content` response.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-
-```http
-HTTP/1.1 204 No content
-```
-
-## Step 4: Configure single sign-on
-This application uses Integrated Windows Authentication (IWA). To configure IWA, set the single sign-on properties in the [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) resource type.
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "update_application"
+  "blockType": "ignore",
+  "name": "tutorial_configure_appproxy_update_app_kerberos_sso"
 }-->
-
-```msgraph-interactive
+```http
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: appplication/json
 
 {
-   "onPremisesPublishing": {
-      "singleSignOnSettings": {
-         "kerberosSignOnSettings": {
-            "kerberosServicePrincipalName": "HTTP/iwademo.contoso.com",
-   	    "kerberosSignOnMappingAttributeType": "userPrincipalName"
-         },
-         "singleSignOnMode": "onPremisesKerberos"
-      }
-   }
+  "onPremisesPublishing": {
+    "singleSignOnSettings": {
+      "kerberosSignOnSettings": {
+        "kerberosServicePrincipalName": "HTTP/iwademo.contoso.com",
+           "kerberosSignOnMappingAttributeType": "userPrincipalName"
+      },
+      "singleSignOnMode": "onPremisesKerberos"
+    }
+  } 
 }
 ```
 
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-
-```http
-HTTP/1.1 204 No content
-```
-
-## Step 5: Assign users
-### Retrieve appRole for the applicaiton
-
-#### Request
-
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles
-```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-update-app-sso-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-update-app-sso-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-update-app-sso-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-update-app-sso-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-update-app-sso-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-update-app-sso-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-update-app-sso-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-update-app-sso-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+### Option 2: Configure header-based SSO
 
-#### Response
+The following request shows how to configure header-based SSO for the application. In this mode, the value of the **singleSignOnMode** property can be `aadHeaderBased`, `pingHeaderBased`, or `oAuthToken`. The request returns a `204 No content` response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
+  "blockType": "ignore",
+  "name": "tutorial_configure_appproxy_update_app_headerbased_sso"
+}-->
 ```http
-HTTP/1.1 200
-Content-type: application/json
+PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+Content-type: appplication/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('a8cac399-cde5-4516-a674-819503c61313')/appRoles",
-    "value": [
-        {
-            "allowedMemberTypes": [
-                "User"
-            ],
-            "description": "User",
-            "displayName": "User",
-            "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
-            "isEnabled": true,
-            "origin": "Application",
-            "value": null
-        },
-        {
-            "allowedMemberTypes": [
-                "User"
-            ],
-            "description": "msiam_access",
-            "displayName": "msiam_access",
-            "id": "b9632174-c057-4f7e-951b-be3adc52bfe6",
-            "isEnabled": true,
-            "origin": "Application",
-            "value": null
-        }
-    ]
+  "onPremisesPublishing": {
+    "singleSignOnSettings": {
+      "kerberosSignOnSettings": {},
+      "singleSignOnMode": "aadHeaderBased"
+    }
+  } 
 }
 ```
 
-Use the response from the previous call to retrieve and save the appRole ID to use for the next step.
-```
-      {
-            "description": "User",
-            "displayName": "User",
-            "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f"
-        }
-```
+## Step 5: Assign a user to the application
 
-### Assign users and groups to the application
+You want to assign a user to the application. From the service principal that you created in Step 1, record the ID of the default **User** role that's defined in the **appRoles** property. This value is `18d14569-c3bd-439b-9a66-3a2aee01d14f`.
 
-Use the following properties to assign a user to the application.
+In the request body, provide the following values:
 
-| Property  | Description |ID  |
-|---------|---------|---------|
-| principalId | User ID of the user that will be assigned to the app | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
-| principalType | Type of user | User |
-| appRoleId |  The App role ID of the default app role of the app | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
-| resourceId | The servicePrincipal ID of the app | a8cac399-cde5-4516-a674-819503c61313 |
+- **principalId** - The ID of the user account that you created.
+- **appRoleId** - The ID of the default `User` app role that you retrieved from the service principal.
+- **resourceId** - The ID of the service principal.
 
-#### Request
+### Request
 
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "servicePrincipals"
+  "blockType": "ignore",
+  "name": "tutorial_configure_appproxy_create_serviceprincipal_approleassignment"
 }-->
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
-
-Content-type: appRoleAssignments/json
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoleAssignments
+Content-type: application/json
 
 {
   "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
@@ -630,32 +769,212 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
 
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 } -->
 ```http
-HTTP/1.1 200
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments/$entity",
-    "id": "I23pL8ZdNU-CIgQmqMEVyLJ0E6fx0ixEo92az8MnhtU",
-    "creationTimestamp": "2020-06-09T00:06:07.5129268Z",
-    "appRoleId": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
-    "principalDisplayName": "Jean Green",
-    "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
-    "principalType": "User",
-    "resourceDisplayName": "Contoso IWA App",
-    "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments/$entity",
+  "id": "I23pL8ZdNU-CIgQmqMEVyLJ0E6fx0ixEo92az8MnhtU",
+  "creationTimestamp": "2020-06-09T00:06:07.5129268Z",
+  "appRoleId": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
+  "principalDisplayName": "MyTestUser1",
+  "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
+  "principalType": "User",
+  "resourceDisplayName": "Contoso IWA App",
+  "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
 }
 ```
+## Step 6: Test access to the application
 
-For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta) resource type.
+Test the application by visiting the **externalUrl** configured for the app on your browser and then sign in with your test user. You should be able to sign into the app and access the application.
 
+## Step 7: Clean up resources
 
-## Additional steps
-- [Automate configuration using PowerShell samples for Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
-- [Automate SAML-based SSO app configuration with Microsoft Graph API](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
+In this step, remove the resources that you created and no longer need.
+
+### Delete the user account
+
+The request returns a `204 No content` response.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_delete_user"
+}-->
+```http
+DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-delete-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-delete-user-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-delete-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-delete-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-delete-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-delete-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-delete-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-delete-user-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Delete the application
+
+When you delete the application, the service principal in your tenant is also deleted. This request returns a `204 No content` response.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_delete_application"
+}-->
+```http
+DELETE https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-delete-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-delete-application-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-delete-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-delete-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-delete-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-delete-application-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-delete-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-delete-application-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Delete the connector group
+
+The request returns a `204 No content` response.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "ignore",
+  "name": "tutorial_configure_appproxy_delete_connectorgroup"
+}-->
+```http
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-delete-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-delete-connectorgroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-delete-connectorgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-delete-connectorgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-delete-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-delete-connectorgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-delete-connectorgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-delete-connectorgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+## Related content
+
+- [Use Microsoft Entra application proxy to publish on-premises apps for remote users](/entra/identity/app-proxy/overview-what-is-app-proxy).
+- [On-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta&preserve-view=true).

@@ -1,10 +1,11 @@
 ---
 title: "settingSource resource type"
 description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # settingSource resource type
@@ -20,6 +21,7 @@ Not yet documented
 |:---|:---|:---|
 |id|String|Not yet documented|
 |displayName|String|Not yet documented|
+|sourceType|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|Not yet documented. Possible values are: `deviceConfiguration`, `deviceIntent`.|
 
 ## Relationships
 None
@@ -35,15 +37,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.settingSource",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "sourceType": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

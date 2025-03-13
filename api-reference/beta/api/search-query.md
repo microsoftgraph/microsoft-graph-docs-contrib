@@ -1,10 +1,11 @@
 ---
 title: "searchEntity: query"
-description: "Runs the query specified in the request body. Search results are provided in the response."
-localization_priority: Normal
-author: "nmoreau"
-ms.prod: "search"
+description: "Run a specified search query. Search results are provided in the response."
+ms.localizationpriority: medium
+author: "njerigrevious"
+ms.subservice: "search"
 doc_type: "apiPageType"
+ms.date: 05/02/2024
 ---
 
 # searchEntity: query
@@ -13,19 +14,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Runs the query specified in the request body. Search results are provided in the response.
+Run a specified search query. Search results are provided in the response.
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Mail.Read, Mail.ReadWrite, Calendars.Read, Calendars.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, ExternalItem.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "search_query" } -->
+[!INCLUDE [permissions-table](../includes/permissions/search-query-permissions.md)]
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ POST /search/query
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -46,23 +46,26 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
+|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
 
 ## Response
 
-If successful, this method returns `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
+If successful, this method returns an `HTTP 200 OK` response code and a collection of [searchResponse](../resources/searchresponse.md) objects in the response body.
  
 
 ## Examples
 
-### Request
+### Example 1: Basic call to perform a search request
 
-The following is an example of the request.
+The following example shows how to perform a search to get expected connector items.
+
+#### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "search_query"
+  "name": "query"
 }-->
 
 ```HTTP
@@ -78,6 +81,7 @@ Content-type: application/json
       "contentSources": [
         "/external/connections/connectionfriendlyname"
       ],
+      "region": "US",
       "query": {
         "queryString": "contoso product"
       },
@@ -91,26 +95,46 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/query-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/query-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/query-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/query-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/query-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/search-query-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/query-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/query-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/query-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -122,9 +146,7 @@ The following is an example of the response.
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
-```
 
-```json
 {
   "value": [
     {
@@ -150,14 +172,89 @@ Content-type: application/json
 }
 ```
 
-## See also
+### Example 2: Basic call to use queryTemplate
+
+The following example shows how to use the queryable property **createdBy** to retrieve all files created by a user.
+
+#### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "listItem"
+      ],
+      "region": "US",
+      "query": {
+        "queryString": "contoso",
+        "queryTemplate":"{searchTerms} CreatedBy:Bob"
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
+}
+```
+
+### Response
+
+The following example shows the response.
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "searchTerms": [
+                "contoso"
+            ],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "1",
+                            "rank": 1,
+                            "summary": "_summary-value",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.listItem",
+                                "id": "c23c7035-73d6-4bad-8901-9e2930d4be8e",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Bob",
+                                        "email": "Bob@contoso.com"
+                                    }
+                                },
+                                "createdDateTime": "2021-11-19T17:04:18Z",
+                                "lastModifiedDateTime": "2023-03-09T18:52:26Z"
+                            }
+                        }
+                    ],
+                    "total": 1,
+                    "moreResultsAvailable": false
+                }
+            ]
+        }
+    ]
+}
+```
+
+## Related content
+
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
-- Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
+- Search [person](/graph/search-concept-person)
+- Search content in SharePoint and OneDrive ([files, lists, and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
+- Search with [queryTemplate](/graph/search-concept-query-template)
 - [Sort](/graph/search-concept-sort) search results
-- Use [aggregations](/graph/search-concept-aggregations) to refine search results
-
+- Use [aggregations](/graph/search-concept-aggregation) to refine search results
+- Enable [spell corrections](/graph/search-concept-speller) in search results
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -168,5 +265,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

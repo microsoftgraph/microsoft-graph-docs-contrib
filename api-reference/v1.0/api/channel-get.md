@@ -1,10 +1,11 @@
 ---
 title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 doc_type: apiPageType
-ms.prod: "microsoft-teams"
-localization_priority: Normal
+ms.subservice: "teams"
+ms.localizationpriority: medium
+ms.date: 09/16/2024
 ---
 
 # Get channel
@@ -13,84 +14,112 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [channel](../resources/channel.md).
 
+This method supports federation. Only a user who is a member of the shared channel can retrieve channel information.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, ChannelSettings.Read.Group*, ChannelSettings.Edit.Group*, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+This API supports admin permissions. Microsoft Teams service admins can access teams that they aren't a member of.
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+<!-- { "blockType": "permissions", "name": "channel_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-get-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+> [!NOTE]
+> - The ChannelSettings.Read.Group and ChannelSettings.ReadWrite.Group permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The Group.Read.All, Group.ReadWrite.All, Directory.Read.All, and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}
+GET /teams/{team-id}/channels/{channel-id}
 ```
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+
+### Use $select for better performance
+
+Populating the **email** and **summary** property for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **summary** property to improve performance.
+
+> **Note**: The summary property can only be retrieved via the `select` parameter, as shown in Example 2 in this topic.
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [channel](../resources/channel.md) object in the response body.
 
-## Example
+## Examples
+### Example 1: Get a channel
+#### Request
 
-### Request
+The following example shows a request.
 
-Here is an example of the request.
+
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
-  "name": "get_channel"
+  "name": "get_channel",
+  "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
+GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-channel-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-channel-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-channel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-channel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-channel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-channel-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-### Response
+#### Response
 
-Here is an example of the response.
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -101,13 +130,90 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-    "description": "description-value",
-    "displayName": "display-name-value",
-    "id": "id-value",
-    "membershipType": "membership-type-value"
+    "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+    "createdDateTime": "2020-05-27T19:22:25.692Z",
+    "displayName": "General",
+    "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+    "membershipType": "standard",
+    "isArchived": false
+}
+```
+
+### Example 2: Get a channelSummary property
+
+#### Request
+
+The following example shows a request to get the **channelSummary** property.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_channel_summary",
+  "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"]
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2?$select=summary
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-summary-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-channel-summary-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-channel-summary-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-channel-summary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-summary-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-channel-summary-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-channel-summary-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-channel-summary-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channelSummary"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels(summary)/$entity",
+    "summary":{
+        "ownersCount":2,
+        "membersCount":3,
+        "guestsCount":1,
+        "hasMembersFromOtherTenants":false
+    }
 }
 ```
 
@@ -124,3 +230,7 @@ Content-length: 201
   ]
 }
 -->
+
+## Related content
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

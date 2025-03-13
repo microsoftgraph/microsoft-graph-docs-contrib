@@ -4,45 +4,54 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var externalItem = new ExternalItem
+// Dependencies
+using Microsoft.Graph.Beta.Models.ExternalConnectors;
+
+var requestBody = new ExternalItem
 {
-	Acl = new List<Acl>()
+	Acl = new List<Acl>
 	{
 		new Acl
 		{
 			Type = AclType.User,
 			Value = "e811976d-83df-4cbd-8b9b-5215b18aa874",
 			AccessType = AccessType.Grant,
-			IdentitySource = "azureActiveDirectory"
+			IdentitySource = IdentitySourceType.AzureActiveDirectory,
 		},
 		new Acl
 		{
 			Type = AclType.Group,
 			Value = "14m1b9c38qe647f6a",
 			AccessType = AccessType.Deny,
-			IdentitySource = "external"
-		}
+			IdentitySource = IdentitySourceType.External,
+		},
 	},
 	Properties = new Properties
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"title", "Error in the payment gateway"},
-			{"priority", "1"},
-			{"assignee", "john@contoso.com"}
-		}
+			{
+				"title" , "Error in the payment gateway"
+			},
+			{
+				"priority" , 1
+			},
+			{
+				"assignee" , "john@contoso.com"
+			},
+		},
 	},
 	Content = new ExternalItemContent
 	{
 		Value = "Error in payment gateway...",
-		Type = ExternalItemContentType.Text
-	}
+		Type = ExternalItemContentType.Text,
+	},
 };
 
-await graphClient.Connections["contosohr"].Items["TSP228082938"]
-	.Request()
-	.PutAsync(externalItem);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"].PutAsync(requestBody);
+
 
 ```

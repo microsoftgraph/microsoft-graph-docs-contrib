@@ -3,9 +3,9 @@ author: daspek
 description: "The presence of the EditAction resource on an itemActivity indicates that the activity edited an item."
 ms.date: 09/14/2017
 title: EditAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: onedrive
 ---
 # EditAction resource type
 
@@ -19,6 +19,13 @@ The presence of the **EditAction** resource on an [**itemActivity**][activity] i
 
 [activity]: itemactivity.md
 
+## Properties
+
+None. This facet is a null or not-null value and contains no properties.
+
+## Relationships
+None.
+
 ## JSON representation
 
 <!-- {
@@ -31,11 +38,6 @@ The presence of the **EditAction** resource on an [**itemActivity**][activity] i
 {
 }
 ```
-
-## Properties
-
-None. This facet is a null or not-null value and contains no properties.
-
 ## Remarks
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.

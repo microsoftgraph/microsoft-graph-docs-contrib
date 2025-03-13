@@ -1,10 +1,11 @@
 ---
 title: "importedWindowsAutopilotDeviceIdentityImportStatus enum type"
 description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # importedWindowsAutopilotDeviceIdentityImportStatus enum type
@@ -23,12 +24,3 @@ Not yet documented
 |partial|2|Partial status.|
 |complete|3|Complete status.|
 |error|4|Error status.|
-
-
-
-
-
-
-
-
-

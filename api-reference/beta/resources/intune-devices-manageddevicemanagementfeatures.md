@@ -1,10 +1,11 @@
 ---
 title: "managedDeviceManagementFeatures enum type"
 description: "Device management features."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # managedDeviceManagementFeatures enum type
@@ -22,9 +23,3 @@ Device management features.
 |:---|:---|:---|
 |none|0|Unknown device management features.|
 |microsoftManagedDesktop|1|Microsoft Managed Desktop|
-
-
-
-
-
-

@@ -1,11 +1,10 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/11/2017
 title: LookupColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The lookupColumn on a columnDefinition resource indicates that the column's values are looked up from another source in the site."
-ms.prod: ""
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -34,8 +33,8 @@ Here is a JSON representation of a **lookupColumn** resource.
 
 | Property name             | Type    | Description
 |:--------------------------|:--------|:---------------------------------------
-| **allowMultipleValues**   | boolean | Indicates whether multiple values can be selected from the source.
-| **allowUnlimitedLength**  | boolean | Indicates whether values in the column should be able to exceed the standard limit of 255 characters.
+| **allowMultipleValues**   | Boolean | Indicates whether multiple values can be selected from the source.
+| **allowUnlimitedLength**  | Boolean | Indicates whether values in the column should be able to exceed the standard limit of 255 characters.
 | **columnName**            | string  | The name of the lookup source column.
 | **listId**                | string  | The unique identifier of the lookup source list.
 | **primaryLookupColumnId** | string  | If specified, this column is a *secondary lookup*, pulling an additional field from the list item looked up by the *primary lookup*. Use the list item looked up by the *primary* as the source for the column named here.

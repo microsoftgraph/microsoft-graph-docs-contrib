@@ -4,15 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var comment = "comment-value";
+// Dependencies
+using Microsoft.Graph.Me.Events.Item.TentativelyAccept;
+using Microsoft.Graph.Models;
 
-var sendResponse = true;
+var requestBody = new TentativelyAcceptPostRequestBody
+{
+	Comment = "I may not be able to make this week. How about next week?",
+	SendResponse = true,
+	ProposedNewTime = new TimeSlot
+	{
+		Start = new DateTimeTimeZone
+		{
+			DateTime = "2019-12-02T18:00:00",
+			TimeZone = "Pacific Standard Time",
+		},
+		End = new DateTimeTimeZone
+		{
+			DateTime = "2019-12-02T19:00:00",
+			TimeZone = "Pacific Standard Time",
+		},
+	},
+};
 
-await graphClient.Me.Events["{id}"]
-	.TentativelyAccept(comment,sendResponse)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Me.Events["{event-id}"].TentativelyAccept.PostAsync(requestBody);
+
 
 ```

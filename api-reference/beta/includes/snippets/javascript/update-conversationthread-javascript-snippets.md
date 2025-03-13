@@ -11,11 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const conversationThread = {
-  @odata.type:"#Microsoft.OutlookServices.ConversationThread",
   isLocked: true
 };
 
-let res = await client.api('/groups/{id}/threads/{id}')
+await client.api('/groups/0fbf2921-5d17-4c2b-bae4-cc581de72c13/threads/AAQkAGU3OGZjZTE2LTFlOWItNGExYi1hMGMzLTMwZWU4OGUzYjU5MQMkABAALmW2hn6Ui0_7hOBeAIFdWhAALmW2hn6Ui0_7hOBeAIFdWg==')
 	.version('beta')
 	.update(conversationThread);
 

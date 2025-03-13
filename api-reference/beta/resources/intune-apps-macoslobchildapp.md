@@ -1,10 +1,11 @@
 ---
 title: "macOSLobChildApp resource type"
-description: "Contains properties the MacOS LOB App in a bundle package"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Contains properties of a macOS .app in the package"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # macOSLobChildApp resource type
@@ -15,14 +16,14 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties the MacOS LOB App in a bundle package
+Contains properties of a macOS .app in the package
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bundleId|String|The Identity Name.|
-|buildNumber|String|The build number of MacOS Line of Business (LoB) app.|
-|versionNumber|String|The version number of MacOS Line of Business (LoB) app.|
+|bundleId|String|The bundleId of the app.|
+|buildNumber|String|The build number of the app.|
+|versionNumber|String|The version number of the app.|
 
 ## Relationships
 None
@@ -42,9 +43,3 @@ Here is a JSON representation of the resource.
   "versionNumber": "String"
 }
 ```
-
-
-
-
-
-

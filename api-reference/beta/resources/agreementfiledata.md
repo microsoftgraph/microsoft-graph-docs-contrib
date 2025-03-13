@@ -1,10 +1,11 @@
 ---
 title: "agreementFileData resource type"
-description: "Represents the blob of an Azure Active Directory (Azure AD) terms of use agreement file."
-localization_priority: Normal
+description: "Represents the blob of a Microsoft Entra terms of use agreement file."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "raprakasMSFT"
+ms.subservice: "entra-id-governance"
+author: "AlexFilipin"
+ms.date: 07/24/2024
 ---
 
 # agreementFileData resource type
@@ -13,17 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the blob of an Azure Active Directory (Azure AD) terms of use agreement file.
+Represents the blob of a Microsoft Entra terms of use agreement file.
 
 ## Properties
-| Method       | Return Type | Description |
+| Property       | Type | Description |
 |:-------------|:------------|:------------|
-|data|Binary|Data representing the terms of use PDF document. Read-only.|
+|data|Binary|Data that represents the terms of use PDF document. Read-only. <br/><br/>**Note:** You can use the .NET [Convert.ToBase64String](/dotnet/api/system.convert.tobase64string) method to convert your file to binary data for uploading using the [Create agreements](../api/termsofusecontainer-post-agreements.md) API. A sample syntax using this method in PowerShell is `[convert]::ToBase64String((Get-Content -path "your_file_path" -Encoding byte))`. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -51,5 +55,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

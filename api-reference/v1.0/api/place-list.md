@@ -1,10 +1,11 @@
 ---
 title: "List places"
 description: "Retrieve a list of place objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
+ms.date: 07/22/2024
 ---
 
 # List places
@@ -13,6 +14,8 @@ Namespace: microsoft.graph
 
 
 Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
+
+>**Note:** Rooms that are marked "Hidden from GAL" can't be retrieved through this endpoint.
 
 A **place** object can be one of the following types:
 
@@ -23,17 +26,16 @@ Both **room** and **roomList** are derived from the **place** object.
 
 By default, this operation returns 100 places per page.
 
-Compared with the [findRooms](/graph/api/user-findrooms?view=graph-rest-beta) and [findRoomLists](/graph/api/user-findroomlists?view=graph-rest-beta) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
+Compared with the [findRooms](/graph/api/user-findrooms) and [findRoomLists](/graph/api/user-findroomlists) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Place.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application                            | Place.Read.All |
+<!-- { "blockType": "permissions", "name": "place_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/place-list-permissions.md)]
 
 ## HTTP request
 
@@ -75,11 +77,11 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -104,30 +106,46 @@ The following example shows how to get all the [room](../resources/room.md) obje
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/microsoft.graph.room
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-rooms-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-all-rooms-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-all-rooms-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-all-rooms-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-all-rooms-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-all-rooms-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-all-rooms-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-rooms-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-all-rooms-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -162,11 +180,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "100",
-      "capacity": "50",
+      "capacity": 50,
       "building": "1",
       "floorNumber": 1,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "bean bags"
@@ -193,11 +211,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",
@@ -227,30 +245,46 @@ The following example shows how to get all the [roomList](../resources/roomlist.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/microsoft.graph.roomlist
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-roomlists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-all-roomlists-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-all-roomlists-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-all-roomlists-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-all-roomlists-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-all-roomlists-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-all-roomlists-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-roomlists-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-all-roomlists-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -309,36 +343,53 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_rooms_in_roomlist"
+  "name": "get_rooms_in_roomlist",
+  "sampleKeys": ["Building2Rooms@contoso.com"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
+GET https://graph.microsoft.com/v1.0/places/Building2Rooms@contoso.com/microsoft.graph.roomlist/rooms
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rooms-in-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-rooms-in-roomlist-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-rooms-in-roomlist-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-rooms-in-roomlist-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-rooms-in-roomlist-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-rooms-in-roomlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-rooms-in-roomlist-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-rooms-in-roomlist-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-rooms-in-roomlist-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -353,42 +404,71 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/rooms",
-  "value": [
-    {
-      "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
-      "emailAddress": "cf200@contoso.com",
-      "displayName": "Conf Room 200",
-      "address": {
-        "street": "4567 Main Street",
-        "city": "Buffalo",
-        "state": "NY",
-        "postalCode": "98052",
-        "countryOrRegion": "USA"
-      },
-      "geoCoordinates": {
-        "latitude": 47.640568390488625,
-        "longitude": -122.1293731033802
-      },
-      "phone": "000-000-0000",
-      "nickname": "Conf Room",
-      "label": "200",
-      "capacity": "40",
-      "building": "2",
-      "floorNumber": 2,
-      "isManaged": true,
-      "isWheelchairAccessible": false,
-      "bookingType": "standard",
-      "tags": [
-        "benches",
-        "nice view"
-      ],
-      "audioDeviceName": null,
-      "videoDeviceName": null,
-      "displayDevice": "surface hub"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places('Building2Rooms%40contoso.com')/microsoft.graph.roomList/rooms",
+    "value": [
+        {
+            "id": "f4119db7-9a33-4bfe-a387-4444b9e7fd54",
+            "displayName": "Conf Room Rainier",
+            "address": null,
+            "geoCoordinates": null,
+            "phone": "",
+            "nickname": "Conf Room Rainier",
+            "emailAddress": "Rainier@contoso.com",
+            "building": null,
+            "floorNumber": null,
+            "floorLabel": null,
+            "label": null,
+            "capacity": null,
+            "bookingType": "standard",
+            "audioDeviceName": null,
+            "videoDeviceName": null,
+            "displayDeviceName": null,
+            "isWheelChairAccessible": false,
+            "tags": []
+        },
+        {
+            "id": "42385a28-1a16-4043-8d84-07615656c4e3",
+            "displayName": "Conf Room Hood",
+            "address": null,
+            "geoCoordinates": null,
+            "phone": "",
+            "nickname": "Conf Room Hood",
+            "emailAddress": "Hood@contoso.com",
+            "building": null,
+            "floorNumber": null,
+            "floorLabel": null,
+            "label": null,
+            "capacity": null,
+            "bookingType": "standard",
+            "audioDeviceName": null,
+            "videoDeviceName": null,
+            "displayDeviceName": null,
+            "isWheelChairAccessible": false,
+            "tags": []
+        },
+        {
+            "id": "850ee91e-a154-4d87-928e-da04c788fd90",
+            "displayName": "Conf Room Baker",
+            "address": null,
+            "geoCoordinates": null,
+            "phone": "",
+            "nickname": "Conf Room Baker",
+            "emailAddress": "Baker@contoso.com",
+            "building": null,
+            "floorNumber": null,
+            "floorLabel": null,
+            "label": null,
+            "capacity": null,
+            "bookingType": "standard",
+            "audioDeviceName": null,
+            "videoDeviceName": null,
+            "displayDeviceName": null,
+            "isWheelChairAccessible": false,
+            "tags": []
+        }
+    ]
 }
+
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
@@ -400,6 +480,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->

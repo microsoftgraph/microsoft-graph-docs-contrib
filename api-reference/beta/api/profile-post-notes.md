@@ -2,9 +2,10 @@
 title: "Create notes"
 description: "Create a new notes object."
 author: "kevinbellinger"
-localization_priority: Normal
-ms.prod: "people"
+ms.localizationpriority: medium
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Create personAnnotation
@@ -12,15 +13,14 @@ Namespace: microsoft.graph
 
 Create a new [personAnnotation](../resources/personannotation.md) object in a user's [profile](../resources/profile.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All                            |
+<!-- { "blockType": "permissions", "name": "profile_post_notes" } -->
+[!INCLUDE [permissions-table](../includes/permissions/profile-post-notes-permissions.md)]
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ POST /users/{id | userPrincipalName}/profile/notes
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -67,7 +67,6 @@ If successful, this method returns a `201 Created` response code and a [personAn
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/notes
 Content-Type: application/json
-Content-length: 413
 
 {
   "detail": {
@@ -77,20 +76,40 @@ Content-length: 413
   "displayName": "About Me"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-personannotation-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-personannotation-from--cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-personannotation-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-personannotation-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-personannotation-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-personannotation-from--objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-personannotation-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-personannotation-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-personannotation-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

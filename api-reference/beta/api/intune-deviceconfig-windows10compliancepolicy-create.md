@@ -1,10 +1,11 @@
 ---
 title: "Create windows10CompliancePolicy"
 description: "Create a new windows10CompliancePolicy object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Create windows10CompliancePolicy
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Create a new [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -73,6 +76,10 @@ The following table shows the properties that are required when you create the w
 |bitLockerEnabled|Boolean|Require devices to be reported healthy by Windows Device Health Attestation - bit locker is enabled|
 |secureBootEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation - secure boot is enabled.|
 |codeIntegrityEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
+|memoryIntegrityEnabled|Boolean|When TRUE, indicates that Memory Integrity as known as Hypervisor-protected Code Integrity (HVCI) or Hypervisor Enforced Code Integrity protection is required to be reported as healthy by Microsoft Azure Attestion. When FALSE, indicates that Memory Integrity Protection is not required to be reported as healthy. Default value is FALSE.|
+|kernelDmaProtectionEnabled|Boolean|When TRUE, indicates that Kernel Direct Memory Access (DMA) protection is required to be reported as healthy by Microsoft Azure Attestion. When FALSE, indicates that Kernel DMA Protection is not required to be reported as healthy. Default value is FALSE.|
+|virtualizationBasedSecurityEnabled|Boolean|When TRUE, indicates that Virtualization-based Security is required to be reported as healthy by Microsoft Azure Attestion. When FALSE, indicates that Virtualization-based Security is not required to be reported as healthy. Default value is FALSE.|
+|firmwareProtectionEnabled|Boolean|When TRUE, indicates that Firmware protection is required to be reported as healthy by Microsoft Azure Attestion. When FALSE, indicates that Firmware protection is not required to be reported as healthy. Devices that support either Dynamic Root of Trust for Measurement (DRTM) or Firmware Attack Surface Reduction (FASR) will report compliant for this setting. Default value is FALSE.|
 |storageRequireEncryption|Boolean|Require encryption on windows devices.|
 |activeFirewallRequired|Boolean|Require active firewall on Windows devices.|
 |defenderEnabled|Boolean|Require Windows Defender Antimalware on Windows devices.|
@@ -86,7 +93,8 @@ The following table shows the properties that are required when you create the w
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Device Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |configurationManagerComplianceRequired|Boolean|Require to consider SCCM Compliance state into consideration for Intune Compliance State.|
 |tpmRequired|Boolean|Require Trusted Platform Module(TPM) to be present.|
-|deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Not yet documented|
+|deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)||
+|wslDistributions|[wslDistributionConfiguration](../resources/intune-deviceconfig-wsldistributionconfiguration.md) collection||
 
 
 
@@ -100,7 +108,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1911
+Content-length: 2337
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -128,6 +136,10 @@ Content-length: 1911
   "bitLockerEnabled": true,
   "secureBootEnabled": true,
   "codeIntegrityEnabled": true,
+  "memoryIntegrityEnabled": true,
+  "kernelDmaProtectionEnabled": true,
+  "virtualizationBasedSecurityEnabled": true,
+  "firmwareProtectionEnabled": true,
   "storageRequireEncryption": true,
   "activeFirewallRequired": true,
   "defenderEnabled": true,
@@ -152,7 +164,15 @@ Content-length: 1911
     "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
     "deviceComplianceScriptId": "Device Compliance Script Id value",
     "rulesContent": "cnVsZXNDb250ZW50"
-  }
+  },
+  "wslDistributions": [
+    {
+      "@odata.type": "microsoft.graph.wslDistributionConfiguration",
+      "distribution": "Distribution value",
+      "minimumOSVersion": "Minimum OSVersion value",
+      "maximumOSVersion": "Maximum OSVersion value"
+    }
+  ]
 }
 ```
 
@@ -161,7 +181,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2083
+Content-Length: 2509
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -192,6 +212,10 @@ Content-Length: 2083
   "bitLockerEnabled": true,
   "secureBootEnabled": true,
   "codeIntegrityEnabled": true,
+  "memoryIntegrityEnabled": true,
+  "kernelDmaProtectionEnabled": true,
+  "virtualizationBasedSecurityEnabled": true,
+  "firmwareProtectionEnabled": true,
   "storageRequireEncryption": true,
   "activeFirewallRequired": true,
   "defenderEnabled": true,
@@ -216,12 +240,14 @@ Content-Length: 2083
     "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
     "deviceComplianceScriptId": "Device Compliance Script Id value",
     "rulesContent": "cnVsZXNDb250ZW50"
-  }
+  },
+  "wslDistributions": [
+    {
+      "@odata.type": "microsoft.graph.wslDistributionConfiguration",
+      "distribution": "Distribution value",
+      "minimumOSVersion": "Minimum OSVersion value",
+      "maximumOSVersion": "Maximum OSVersion value"
+    }
+  ]
 }
 ```
-
-
-
-
-
-

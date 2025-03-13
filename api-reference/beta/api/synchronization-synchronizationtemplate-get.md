@@ -1,10 +1,11 @@
 ---
 title: "Get synchronizationTemplate"
 description: "Retrieve a synchronization template by its identifier."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
+ms.date: 06/22/2024
 ---
 
 # Get synchronizationTemplate
@@ -15,31 +16,32 @@ Namespace: microsoft.graph
 
 Retrieve a synchronization template by its identifier.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported.| 
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "synchronization_synchronizationtemplate_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationtemplate-get-permissions.md)]
+
+[!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
 ### HTTP Request
 
 ```http
-GET applications/{id}/synchronization/templates/{templateId}
-GET servicePrincipals/{id}/synchronization/templates/{templateId}
+GET /applications/{id}/synchronization/templates/{templateId}
+GET /servicePrincipals/{id}/synchronization/templates/{templateId}
 ```
 
 ## Request headers
 
 | Name           | Type    | Description|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ### Response
 
@@ -48,25 +50,27 @@ If successful, this method returns a `200 OK` response code and a [synchronizati
 ### Example
 
 ##### Request
-The following is an example of a request.
+The following example shows a request.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/templates/Slack
 ```
 
 ##### Response
-The following is an example of a response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-    "id": "Slack",
-    "factoryTag": "CustomSCIM",
-    "schema": {
-        "directories": [],
-        "synchronizationRules": []
-        }
+  "id": "Slack",
+  "factoryTag": "CustomSCIM",
+  "schema": {
+    "directories": [],
+    "synchronizationRules": []
+  }
 }
 ```
 

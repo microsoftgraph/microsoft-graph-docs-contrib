@@ -1,10 +1,11 @@
 ---
 title: "automaticRepliesSetting resource type"
 description: "Configuration settings to automatically notify the sender of an incoming email with a message from the "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "svpsiva"
+ms.subservice: mail
+author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # automaticRepliesSetting resource type
@@ -21,16 +22,19 @@ respond to emails.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|externalAudience|String| The set of audience external to the signed-in user's organization who will receive the **ExternalReplyMessage**, if **Status** is `AlwaysEnabled` or `Scheduled`. Possible values are: `none`, `contactsOnly`, `all`.|
+|externalAudience|externalAudienceScope | The set of audience external to the signed-in user's organization who will receive the **ExternalReplyMessage**, if **Status** is `AlwaysEnabled` or `Scheduled`. Possible values are: `none`, `contactsOnly`, `all`.|
 |externalReplyMessage|string|The automatic reply to send to the specified external audience, if **Status** is `AlwaysEnabled` or `Scheduled`.|
 |internalReplyMessage|string|The automatic reply to send to the audience internal to the signed-in user's organization, if **Status** is `AlwaysEnabled` or `Scheduled`. |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time that automatic replies are set to end, if **Status** is set to `Scheduled`. |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time that automatic replies are set to begin, if **Status** is set to `Scheduled`.|
-|status|String|Configurations status for automatic replies. Possible values are: `disabled`, `alwaysEnabled`, `scheduled`.|
+|status|automaticRepliesStatus|Configurations status for automatic replies. Possible values are: `disabled`, `alwaysEnabled`, `scheduled`.|
+
+## Relationships
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

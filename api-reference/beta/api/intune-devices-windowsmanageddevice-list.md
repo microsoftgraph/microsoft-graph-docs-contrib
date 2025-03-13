@@ -1,10 +1,11 @@
 ---
 title: "List windowsManagedDevices"
 description: "List properties and relationships of the windowsManagedDevice objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List windowsManagedDevices
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -41,7 +44,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -63,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8844
+Content-Length: 10601
 
 {
   "value": [
@@ -108,7 +111,22 @@ Content-Length: 8844
         "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
         "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
         "osBuildNumber": "Os Build Number value",
-        "operatingSystemProductType": 10
+        "operatingSystemProductType": 10,
+        "ipAddressV4": "Ip Address V4 value",
+        "subnetAddress": "Subnet Address value",
+        "esimIdentifier": "Esim Identifier value",
+        "systemManagementBIOSVersion": "System Management BIOSVersion value",
+        "tpmManufacturer": "Tpm Manufacturer value",
+        "tpmVersion": "Tpm Version value",
+        "wiredIPv4Addresses": [
+          "Wired IPv4Addresses value"
+        ],
+        "batteryLevelPercentage": 7.333333333333333,
+        "residentUsersCount": 2,
+        "productName": "Product Name value",
+        "deviceLicensingStatus": "licenseRefreshPending",
+        "deviceLicensingLastErrorCode": 12,
+        "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",
@@ -205,7 +223,13 @@ Content-Length: 8844
         "bootRevisionListInfo": "Boot Revision List Info value",
         "operatingSystemRevListInfo": "Operating System Rev List Info value",
         "healthStatusMismatchInfo": "Health Status Mismatch Info value",
-        "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
+        "healthAttestationSupportedStatus": "Health Attestation Supported Status value",
+        "memoryIntegrityProtection": "enabled",
+        "memoryAccessProtection": "enabled",
+        "virtualizationBasedSecurity": "enabled",
+        "firmwareProtection": "systemGuardSecureLaunch",
+        "systemManagementMode": "level1",
+        "securedCorePC": "enabled"
       },
       "subscriberCarrier": "Subscriber Carrier value",
       "meid": "Meid value",
@@ -242,7 +266,8 @@ Content-Length: 8844
       "configurationManagerClientInformation": {
         "@odata.type": "microsoft.graph.configurationManagerClientInformation",
         "clientIdentifier": "Client Identifier value",
-        "isBlocked": true
+        "isBlocked": true,
+        "clientVersion": "Client Version value"
       },
       "ethernetMacAddress": "Ethernet Mac Address value",
       "physicalMemoryInBytes": 5,
@@ -250,15 +275,26 @@ Content-Length: 8844
       "specificationVersion": "Specification Version value",
       "joinType": "azureADJoined",
       "skuFamily": "Sku Family value",
+      "securityPatchLevel": "Security Patch Level value",
       "skuNumber": 9,
-      "managementFeatures": "microsoftManagedDesktop"
+      "managementFeatures": "microsoftManagedDesktop",
+      "chromeOSDeviceInfo": [
+        {
+          "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
+          "name": "Name value",
+          "value": "Value value",
+          "valueType": "Value Type value",
+          "updatable": true
+        }
+      ],
+      "enrollmentProfileName": "Enrollment Profile Name value",
+      "bootstrapTokenEscrowed": true,
+      "deviceFirmwareConfigurationInterfaceManaged": true,
+      "deviceIdentityAttestationDetail": {
+        "@odata.type": "microsoft.graph.deviceIdentityAttestationDetail",
+        "deviceIdentityAttestationStatus": "trusted"
+      }
     }
   ]
 }
 ```
-
-
-
-
-
-

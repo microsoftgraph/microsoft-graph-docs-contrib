@@ -1,10 +1,11 @@
 ---
 title: "Create timeOffReason"
 description: "Create a new timeOffReason."
-author: "nkramer"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "shanemalone"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/19/2024
 ---
 
 # Create timeOffReason
@@ -15,9 +16,13 @@ Namespace: microsoft.graph
 
 Create a new [timeOffReason](../resources/timeoffreason.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+This API supports admin permissions. Users with admin roles can access teams that they aren't members of.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -25,9 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.ReadWrite.All* |
 
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
-
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> [!NOTE]
+> The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
 
 ## HTTP request
 
@@ -41,8 +45,9 @@ POST /teams/{teamId}/schedule/timeOffReasons
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Response
 
@@ -52,7 +57,7 @@ If successful, this method returns a `201 Created` response code and a [timeOffR
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,30 +70,51 @@ Content-type: application/json
 
 {
   "displayName": "Vacation",
+  "code": "VacationCode",
   "iconType": "plane",
   "isActive": true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-post-timeoffreasons-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/schedule-post-timeoffreasons-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-post-timeoffreasons-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-post-timeoffreasons-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-post-timeoffreasons-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/schedule-post-timeoffreasons-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/schedule-post-timeoffreasons-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-post-timeoffreasons-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schedule-post-timeoffreasons-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,13 +124,13 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
   "createdDateTime": "2019-03-12T22:10:38.242Z",
   "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
   "displayName": "Vacation",
+  "code": "VacationCode",
   "iconType": "plane",
   "isActive": true,
   "lastModifiedBy": {

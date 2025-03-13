@@ -1,24 +1,23 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Package
-localization_priority: Normal
-description: " or a collection of items that should be treated as a collection instead of individual items."
-ms.prod: ""
+author: spgraph-docs-team
+title: package
+ms.localizationpriority: medium
+description: Indicates that a driveItem is the top-level item in a package or a collection of items that should be treated as a collection instead of individual items.
+ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
-# Package resource type
+# package resource type
 
 Namespace: microsoft.graph
 
-The **Package** resource indicates that a DriveItem is the top level item in a "package" or a collection of items that should be treated as a collection instead of individual items.
+The **package** resource indicates that a **driveItem** is the top-level item in a "package" or a collection of items that should be treated as a collection instead of individual items.
 
-An example of a package is a OneNote notebook. 
+An example of a package is a OneNote notebook.
 While the notebook is made up of files and folders that represent the contents of the notebook, the top level item that represents the notebook has a **package** facet to indicate to clients that this is a collection of data that should be treated special.
 
-DriveItems with the **package** facet do not include a **folder** or **file** facet but are conceptually similar to an item with a **folder** facet.
+**driveItems** with the **package** facet do not include a **folder** or **file** facet but are conceptually similar to an item with a **folder** facet.
 
 ## JSON representation
 
@@ -35,9 +34,9 @@ DriveItems with the **package** facet do not include a **folder** or **file** fa
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | type          | string | A string indicating the type of package. While `oneNote` is the only currently defined value, you should expect other package types to be returned and handle them accordingly. |
 
-## Remarks 
+## Remarks
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a DriveItem, see [driveItem](driveitem.md).
 
 
 <!-- {

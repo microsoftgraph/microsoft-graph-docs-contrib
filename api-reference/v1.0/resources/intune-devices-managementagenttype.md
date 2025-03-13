@@ -1,10 +1,11 @@
 ---
 title: "managementAgentType enum type"
 description: "Management agent type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # managementAgentType enum type
@@ -29,12 +30,3 @@ Management agent type.
 |unknown|16|Unknown management agent type.|
 |jamf|32|The device attributes are fetched from Jamf.|
 |googleCloudDevicePolicyController|64|The device is managed by Google's CloudDPC.|
-
-
-
-
-
-
-
-
-

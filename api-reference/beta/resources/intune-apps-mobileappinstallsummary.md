@@ -1,10 +1,11 @@
 ---
 title: "mobileAppInstallSummary resource type"
-description: "Contains properties for the installation summary of a mobile app."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Contains properties for the installation summary of a mobile app. This will be deprecated in May, 2023"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # mobileAppInstallSummary resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties for the installation summary of a mobile app.
+Contains properties for the installation summary of a mobile app. This will be deprecated in May, 2023
 
 ## Methods
 |Method|Return Type|Description|
@@ -65,9 +66,3 @@ Here is a JSON representation of the resource.
   "pendingInstallUserCount": 1024
 }
 ```
-
-
-
-
-
-

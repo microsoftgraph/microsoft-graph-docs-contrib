@@ -1,10 +1,11 @@
 ---
 title: "Create deviceManagementAutopilotEvent"
 description: "Create a new deviceManagementAutopilotEvent object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/12/2024
 ---
 
 # Create deviceManagementAutopilotEvent
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Create a new [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ POST /deviceManagement/autopilotEvents
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -50,6 +53,7 @@ The following table shows the properties that are required when you create the d
 |:---|:---|:---|
 |id|String|UUID for the object|
 |deviceId|String|Device id associated with the object|
+|userId|String|UserId id associated with the object|
 |eventDateTime|DateTimeOffset|Time when the event occurred .|
 |deviceRegisteredDateTime|DateTimeOffset|Device registration date.|
 |enrollmentStartDateTime|DateTimeOffset|Device enrollment start date.|
@@ -60,17 +64,17 @@ The following table shows the properties that are required when you create the d
 |windowsAutopilotDeploymentProfileDisplayName|String|Autopilot profile name.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Enrollment state like Enrolled, Failed. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|Enrollment Status Page profile name|
-|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment state like Success, Failure, InProgress, SuccessWithTimeout. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
+|windows10EnrollmentCompletionPageConfigurationId|String|Enrollment Status Page profile ID|
+|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment state like Success, Failure, InProgress, SuccessWithTimeout. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`, `successOnRetry`.|
+|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment status for the enrollment status page’s device setup phase. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`, `successOnRetry`.|
+|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment status for the enrollment status page’s account setup phase. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`, `successOnRetry`.|
 |osVersion|String|Device operating system version.|
 |deploymentDuration|Duration|Autopilot deployment duration including enrollment.|
 |deploymentTotalDuration|Duration|Total deployment duration from enrollment to Desktop screen.|
-|devicePreparationDuration|Duration|Time spent in device enrollment.|
 |deviceSetupDuration|Duration|Time spent in device ESP.|
 |accountSetupDuration|Duration|Time spent in user ESP.|
 |deploymentStartDateTime|DateTimeOffset|Deployment start time.|
 |deploymentEndDateTime|DateTimeOffset|Deployment end time.|
-|targetedAppCount|Int32|Count of applications targeted.|
-|targetedPolicyCount|Int32|Count of policies targeted.|
 |enrollmentFailureDetails|String|Enrollment failure details.|
 
 
@@ -85,11 +89,12 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/autopilotEvents
 Content-type: application/json
-Content-length: 1357
+Content-length: 1468
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
   "deviceId": "Device Id value",
+  "userId": "User Id value",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
   "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -100,17 +105,17 @@ Content-length: 1357
   "windowsAutopilotDeploymentProfileDisplayName": "Windows Autopilot Deployment Profile Display Name value",
   "enrollmentState": "enrolled",
   "windows10EnrollmentCompletionPageConfigurationDisplayName": "Windows10Enrollment Completion Page Configuration Display Name value",
+  "windows10EnrollmentCompletionPageConfigurationId": "Windows10Enrollment Completion Page Configuration Id value",
   "deploymentState": "success",
+  "deviceSetupStatus": "success",
+  "accountSetupStatus": "success",
   "osVersion": "Os Version value",
   "deploymentDuration": "PT3M21.5549443S",
   "deploymentTotalDuration": "PT1M43.5284261S",
-  "devicePreparationDuration": "-PT1M32.1347897S",
   "deviceSetupDuration": "-PT2M57.2190107S",
   "accountSetupDuration": "-PT2M32.0507894S",
   "deploymentStartDateTime": "2016-12-31T23:59:37.257201-08:00",
   "deploymentEndDateTime": "2017-01-01T00:00:46.5128291-08:00",
-  "targetedAppCount": 0,
-  "targetedPolicyCount": 3,
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
@@ -120,12 +125,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1406
+Content-Length: 1517
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
   "id": "3e455cab-5cab-3e45-ab5c-453eab5c453e",
   "deviceId": "Device Id value",
+  "userId": "User Id value",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
   "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -136,23 +142,17 @@ Content-Length: 1406
   "windowsAutopilotDeploymentProfileDisplayName": "Windows Autopilot Deployment Profile Display Name value",
   "enrollmentState": "enrolled",
   "windows10EnrollmentCompletionPageConfigurationDisplayName": "Windows10Enrollment Completion Page Configuration Display Name value",
+  "windows10EnrollmentCompletionPageConfigurationId": "Windows10Enrollment Completion Page Configuration Id value",
   "deploymentState": "success",
+  "deviceSetupStatus": "success",
+  "accountSetupStatus": "success",
   "osVersion": "Os Version value",
   "deploymentDuration": "PT3M21.5549443S",
   "deploymentTotalDuration": "PT1M43.5284261S",
-  "devicePreparationDuration": "-PT1M32.1347897S",
   "deviceSetupDuration": "-PT2M57.2190107S",
   "accountSetupDuration": "-PT2M32.0507894S",
   "deploymentStartDateTime": "2016-12-31T23:59:37.257201-08:00",
   "deploymentEndDateTime": "2017-01-01T00:00:46.5128291-08:00",
-  "targetedAppCount": 0,
-  "targetedPolicyCount": 3,
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
-
-
-
-
-

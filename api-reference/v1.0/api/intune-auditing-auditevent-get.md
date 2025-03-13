@@ -1,10 +1,11 @@
 ---
 title: "Get auditEvent"
 description: "Read properties and relationships of the auditEvent object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get auditEvent
@@ -15,14 +16,16 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [auditEvent](../resources/intune-auditing-auditevent.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -39,7 +42,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -52,16 +55,55 @@ If successful, this method returns a `200 OK` response code and [auditEvent](../
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_auditing_auditevent_get_get_auditevent" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-auditing-auditevent-get-get-auditevent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-auditing-auditevent-get-get-auditevent-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-auditing-auditevent-get-get-auditevent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-auditing-auditevent-get-get-auditevent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-auditing-auditevent-get-get-auditevent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-auditing-auditevent-get-get-auditevent-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-auditing-auditevent-get-get-auditevent-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-auditing-auditevent-get-get-auditevent-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.auditEvent" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1538
+Content-Length: 1648
 
 {
   "value": {
@@ -72,6 +114,7 @@ Content-Length: 1538
     "actor": {
       "@odata.type": "microsoft.graph.auditActor",
       "type": "Type value",
+      "auditActorType": "Audit Actor Type value",
       "userPermissions": [
         "User Permissions value"
       ],
@@ -101,6 +144,7 @@ Content-Length: 1538
           }
         ],
         "type": "Type value",
+        "auditResourceType": "Audit Resource Type value",
         "resourceId": "Resource Id value"
       }
     ],
@@ -108,12 +152,3 @@ Content-Length: 1538
   }
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,11 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
 title: ItemActionSet resource type
 description: The itemActionSet object provides information about the actions that took place as part of an activity on an item.
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 # itemActionSet resource type
 
@@ -23,6 +23,7 @@ The following actions are currently available. Because new actions might be adde
 
 | Property name | Type              | Description
 |:--------------|:------------------|:-----------------------------------------
+| access        | [accessAction][]  | An item was accessed.
 | comment       | [commentAction][] | A comment was added to the item.
 | create        | [createAction][]  | An item was created.
 | delete        | [deleteAction][]  | An item was deleted.
@@ -34,6 +35,7 @@ The following actions are currently available. Because new actions might be adde
 | share         | [shareAction][]   | An item was shared.
 | version       | [versionAction][] | An item was versioned.
 
+[accessAction]: accessaction.md
 [commentAction]: commentaction.md
 [createAction]: createaction.md
 [deleteAction]: deleteaction.md
@@ -57,6 +59,7 @@ The following actions are currently available. Because new actions might be adde
 
 ```json
 {
+  "access": {"@odata.type": "microsoft.graph.accessAction"},
   "comment": {"@odata.type": "microsoft.graph.commentAction"},
   "create": {"@odata.type": "microsoft.graph.createAction"},
   "delete": {"@odata.type": "microsoft.graph.deleteAction"},

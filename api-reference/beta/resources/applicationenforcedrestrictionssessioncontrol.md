@@ -1,10 +1,11 @@
 ---
 title: "applicationEnforcedRestrictionsSessionControl resource type"
 description: "Session control to enforce application restrictions."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # applicationEnforcedRestrictionsSessionControl resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to enforce application restrictions. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
+Session control to enforce application restrictions. Inherit from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## Properties
 
@@ -27,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

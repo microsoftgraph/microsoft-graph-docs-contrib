@@ -1,10 +1,11 @@
 ---
 title: "termsAndConditionsAssignment resource type"
 description: "A termsAndConditionsAssignment entity represents the assignment of a given Terms and Conditions (T&C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # termsAndConditionsAssignment resource type
@@ -48,15 +49,11 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "deviceAndAppManagementAssignmentFilterType": "String",
+    "targetType": "String",
+    "entraObjectId": "String"
   }
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "chassisType enum type"
 description: "Chassis type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # chassisType enum type
@@ -29,9 +30,3 @@ Chassis type.
 |tablet|101|Mobile tablet.|
 |mobileOther|102|Other mobile.|
 |mobileUnknown|103|Unknown mobile.|
-
-
-
-
-
-

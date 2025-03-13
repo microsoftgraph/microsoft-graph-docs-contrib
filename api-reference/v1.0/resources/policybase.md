@@ -1,17 +1,18 @@
 ---
 title: "policyBase resource type"
 description: "Represents an abstract base type for policy types to inherit from."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # policyBase resource type
 
 Namespace: microsoft.graph
 
-Represents an abstract base type for policy types to inherit from.
+Represents an abstract base type for policy types to inherit from. Inherits from [directoryObject](directoryobject.md).
 
 ## Methods
 
@@ -21,9 +22,9 @@ None
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| Unique identifier for this policy. Read-only.|
-|description|String| Description for this policy.|
-|displayName|String| Display name for this policy. |
+|id|String| Unique identifier for this policy. Read-only. Inherited from [directoryObject](directoryobject.md).|
+|description|String| Description for this policy. Required.|
+|displayName|String| Display name for this policy. Required. |
 
 ## Relationships
 
@@ -31,7 +32,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -39,7 +40,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.policyBase",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

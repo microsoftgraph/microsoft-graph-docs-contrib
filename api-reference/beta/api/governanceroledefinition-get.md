@@ -1,10 +1,12 @@
 ---
 title: "Get governanceRoleDefinition"
 description: "Retrieve the properties and relationships of a governanceRoleDefinition."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.subservice: "entra-id-governance"
+author: "rkarim-ms"
+ROBOTS: NOINDEX
+ms.date: 08/02/2024
 ---
 
 # Get governanceRoleDefinition
@@ -13,18 +15,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
+
 Retrieve the properties and relationships of a [governanceRoleDefinition](../resources/governanceroledefinition.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.Read.AzureResources |
+The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleDefinition](../resources/governanceroledefinition.md) belongs to.
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-|:-|:-|:-|
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | PrivilegedAccess.Read.AzureAD |
+| Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | PrivilegedAccess.Read.AzureResources |
+| [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | PrivilegedAccess.Read.AzureADGroup |
+
+The requestor must also have at least one role assignment on the resource which the [governanceRoleDefinition](../resources/governanceroledefinition.md) belongs to.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,11 +45,11 @@ This method does **not** support the [OData Query Parameters](/graph/query-param
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [governanceRoleDefinition](../resources/governanceroledefinition.md) object in the response body.
 ## Example
@@ -64,7 +71,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 174
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleDefinitions/$entity",
@@ -88,5 +94,3 @@ Content-length: 174
   "suppressions": []
 }
 -->
-
-

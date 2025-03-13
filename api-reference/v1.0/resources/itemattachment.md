@@ -1,10 +1,11 @@
 ---
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event, message, or post.  "
-localization_priority: Priority
-ms.prod: "outlook"
-author: "svpsiva"
+ms.localizationpriority: high
+ms.subservice: "outlook"
+author: "SuryaLashmiS"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # itemAttachment resource type
@@ -12,7 +13,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 A contact, event, or message that's attached to a user [event](../resources/event.md),
-[message](../resources/message.md), or [post](../resources/post.md).  
+[message](../resources/message.md), or [post](../resources/post.md).
 
 Derived from [attachment](attachment.md).
 
@@ -26,7 +27,7 @@ Derived from [attachment](attachment.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentType|String|The content type of the attachment.|
+|contentType|String|The content type of the attachment. Returned as `null` by default, when not set explicitly. Optional.|
 |id|String| The attachment ID.|
 |isInline|Boolean|Set to true if the attachment is inline, such as an embedded image within the body of the item.|
 |lastModifiedDateTime|DateTimeOffset|The last time and date that the attachment was modified.|
@@ -40,7 +41,7 @@ Derived from [attachment](attachment.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

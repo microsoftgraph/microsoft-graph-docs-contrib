@@ -1,10 +1,11 @@
 ---
 title: "Update deviceConfigurationAssignment"
 description: "Update the properties of a deviceConfigurationAssignment object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update deviceConfigurationAssignment
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -47,7 +50,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -61,6 +64,7 @@ The following table shows the properties that are required when you create the [
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target for the device configuration.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The assignment source for the device configuration, direct or parcel/policySet. This property is read-only. Possible values are: `direct`, `policySets`.|
 |sourceId|String|The identifier of the source of the assignment. This property is read-only.|
+|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|The admin intent to apply or remove the profile. Possible values are: `apply`, `remove`.|
 
 
 
@@ -74,17 +78,20 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 385
+Content-length: 485
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   },
   "source": "policySets",
-  "sourceId": "Source Id value"
+  "sourceId": "Source Id value",
+  "intent": "remove"
 }
 ```
 
@@ -93,23 +100,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 434
+Content-Length: 534
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
   "id": "d59b6342-6342-d59b-4263-9bd542639bd5",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   },
   "source": "policySets",
-  "sourceId": "Source Id value"
+  "sourceId": "Source Id value",
+  "intent": "remove"
 }
 ```
-
-
-
-
-
-

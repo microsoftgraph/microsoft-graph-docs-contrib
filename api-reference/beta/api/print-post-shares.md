@@ -2,9 +2,10 @@
 title: Create printerShare
 description: Creates a new printer share for the specified printer.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.subservice: universal-print
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create printerShare
@@ -15,16 +16,13 @@ Namespace: microsoft.graph
 
 Create a new **printerShare** for the specified [printer](../resources/printer.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrinterShare.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+<!-- { "blockType": "permissions", "name": "print_post_shares" } -->
+[!INCLUDE [permissions-table](../includes/permissions/print-post-shares-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,22 +32,26 @@ POST /print/shares
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [printerShare](../resources/printershare.md) object.
+In the request body, supply a JSON representation of the [printerShare](../resources/printershare.md) object.
 
-The printer share's **id** and **createdDateTime** properties are set automatically upon resource creation, but the share name and associated printer must be included in the request.
+The following table shows the properties that can be provided when you create the [printerShare](../resources/printershare.md).
 
-The printer reference is set by using `@odata.bind` syntax, as shown in the example.
+|Property|Type|Description|Required?|
+|:---|:---|:---|:---|
+|printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example.|Yes|
+|displayName|String|The name of the printer share that print clients should display. Maximum length allowed is 50 characters.|Yes|
+|allowAllUsers|Boolean|	If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the allowedUsers and allowedGroups navigation properties.|No|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [printerShare](../resources/printershare.md) object in the response body.
 
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -59,30 +61,50 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/print/shares
 Content-type: application/json
-Content-length: 114
 
 {
   "name": "name-value",
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-printershare-from-print-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-printershare-from-print-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-printershare-from-print-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printershare-from-print-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-printershare-from-print-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-printershare-from-print-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-printershare-from-print-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-printershare-from-print-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-printershare-from-print-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,12 +113,11 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 233
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
     "id": "7361c7c1-ff07-4565-9897-bef6895a7d04",
-    "name": "ShareName",
+    "displayName": "ShareName",
     "createdDateTime": "2020-02-04T00:00:00.0000000Z"
 }
 ```

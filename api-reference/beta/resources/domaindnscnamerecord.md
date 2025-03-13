@@ -1,10 +1,11 @@
 ---
 title: "domainDnsCnameRecord resource type"
 description: "Represents a CNAME record added to the DNS zone file of a particular domain in the tenant."
-author: "adimitui"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "tafra00"
+ms.localizationpriority: medium
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 04/25/2024
 ---
 
 # domainDnsCnameRecord resource type
@@ -17,7 +18,7 @@ Represents a CNAME record added to the DNS zone file of a particular domain in t
 
 
 ## Methods
-Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.
+Direct queries to this resource aren't supported. See the [domain](domain.md) article for information on how to query for domain service records.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -27,7 +28,7 @@ Direct queries to this resource are not supported. Please see the [domain](domai
 |isOptional|Boolean| If false, the CNAME record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. Not nullable |
 |label|String| Value used when configuring the *alias/host/name* of the CNAME record at the DNS host. |
 |recordType|String| Type of DNS record. The value is always *CName*. Key|
-|supportedService|String| Microsoft Online Service or feature that has a dependency on this CNAME record.</br></br>Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
+|supportedService|String| Microsoft Online Service or feature that has a dependency on this CNAME record. Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |ttl|Int32| Value to use when configuring the time-to-live (ttl) property of the CNAME record at the DNS host. Not nullable |
 
 ## Relationships
@@ -35,7 +36,7 @@ None
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

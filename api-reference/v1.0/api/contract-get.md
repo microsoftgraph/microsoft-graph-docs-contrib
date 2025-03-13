@@ -1,10 +1,11 @@
 ---
 title: "Get Contract"
 description: "Retrieve the properties and relationships of contract object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # Get Contract
@@ -13,16 +14,19 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of [contract](../resources/contract.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "contract_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/contract-get-permissions.md)]
+
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *Directory Readers* is the only least privileged role supported for this operation.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,11 +42,11 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,32 +59,48 @@ If successful, this method returns a `200 OK` response code and [Contract](../re
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_contract"
+  "name": "get_contract_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contracts/{id}
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-contract-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-contract-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-contract-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-contract-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-contract-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-contract-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-contract-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-contract-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-contract-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-contract-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-contract-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-contract-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,7 +109,6 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 186
 
 {
   "contractType": "contractType-value",

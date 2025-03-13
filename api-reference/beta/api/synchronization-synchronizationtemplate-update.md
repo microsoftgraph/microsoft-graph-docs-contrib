@@ -1,10 +1,11 @@
 ---
 title: "Update synchronizationTemplate"
 description: "Update (override) the synchronization template associated with a given application."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
+ms.date: 06/22/2024
 ---
 
 # Update synchronizationTemplate
@@ -15,26 +16,27 @@ Namespace: microsoft.graph
 
 Update (override) the synchronization template associated with a given application.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported.| 
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "synchronization_synchronizationtemplate_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationtemplate-update-permissions.md)]
+
+[!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH application/{id}/synchronization/templates/{templateId}
+PATCH /applications/{id}/synchronization/templates/{templateId}
 ```
 
 ## Request headers
 
 | Name           | Type    | Description|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -42,12 +44,12 @@ In the request body, supply the [synchronizationTemplate](../resources/synchroni
 
 ### Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ### Examples
 
 ##### Request
-The following is an example of a request. 
+The following example shows a request. 
 
 >**Note:** The request object shown here is shortened for readability. Include all the properties in an actual call.
 
@@ -58,7 +60,6 @@ The following is an example of a request.
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/applications/{id}/synchronization/templates/{templateId}
-Authorization: Bearer <token>
 Content-type: application/json
 
 {
@@ -67,27 +68,17 @@ Content-type: application/json
     "factoryTag": "CustomSCIM"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-synchronizationtemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-synchronizationtemplate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-
 ##### Response
-The following is an example of a response.
+The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.synchronizationTemplate"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

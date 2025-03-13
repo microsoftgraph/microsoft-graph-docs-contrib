@@ -1,10 +1,11 @@
 ---
 title: "windowsKioskActiveDirectoryGroup resource type"
 description: "The class used to identify an Azure Directory group for the kiosk configuration"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsKioskActiveDirectoryGroup resource type
@@ -41,9 +42,3 @@ Here is a JSON representation of the resource.
   "groupName": "String"
 }
 ```
-
-
-
-
-
-

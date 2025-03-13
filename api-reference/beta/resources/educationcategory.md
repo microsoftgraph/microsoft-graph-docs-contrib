@@ -1,10 +1,12 @@
 ---
 title: "educationCategory resource type"
 description: "A category that can be applied to assignments."
-author: "mmast-msft"
-localization_priority: Normal
-ms.prod: "education"
+author: "cristobal-buenrostro"
+ms.localizationpriority: medium
+ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Category
+ms.date: 07/22/2024
 ---
 
 # educationCategory resource type
@@ -21,8 +23,9 @@ A category that can be applied to assignments.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Create a new **educationCategory**.|
-|[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Get an existing **educationCategory**.|
+|[Get category](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Get an existing **educationCategory**.|
 |[Delete category](../api/educationcategory-delete.md) | None | Remove an **educationCategory**.|
+|[Get delta](../api/educationcategory-delta.md)|[educationCategory](../resources/educationcategory.md) collection|Get a list of newly created or updated **educationCategory** without having to perform a full read of the collection.|
 
 
 ## Properties
@@ -31,9 +34,12 @@ A category that can be applied to assignments.
 |id|String|Unique identifier for the category.|
 |displayName|String|Unique identifier for the category.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -45,8 +51,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (timestamp)",
-  "displayName": "String (timestamp)",
+  "id": "String (identifier)",
+  "displayName": "String",
 }
 
 ```
@@ -63,5 +69,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

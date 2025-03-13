@@ -1,10 +1,11 @@
 ---
 title: "displayNameLocalization resource type"
 description: "Provides the ability for an administrator to customize the string used in a shared Microsoft 365 experience."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # displayNameLocalization resource type
@@ -22,7 +23,7 @@ Provides the ability for an administrator to customize the string used in a shar
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

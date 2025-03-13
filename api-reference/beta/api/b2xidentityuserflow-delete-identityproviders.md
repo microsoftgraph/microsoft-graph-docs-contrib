@@ -1,92 +1,81 @@
 ---
-title: "Delete identityProvider from b2xIdentityUserFlow"
-description: "Delete an identityProvider from a b2xIdentityUserFlow."
-localization_priority: Normal
+title: "Delete identityProvider from b2xIdentityUserFlow (deprecated)"
+description: "Delete an identityProvider from a b2xIdentityUserFlow. (deprecated)"
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+author: "namkedia"
+ms.subservice: "entra-sign-in"
+ms.date: 04/05/2024
 ---
 
-# Delete identityProvider from b2xIdentityUserFlow
+# Delete identityProvider from b2xIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-Delete an identity provider from a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object. For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
+Delete an identity provider from a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object. For self-service sign-up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application| IdentityUserFlow.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "b2xidentityuserflow_delete_identityproviders" } -->
+[!INCLUDE [permissions-table](../includes/permissions/b2xidentityuserflow-delete-identityproviders-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /b2xUserFlows/{id}/identityProviders/{id}/$ref
+DELETE /identity/b2xUserFlows/{id}/identityProviders/{id}/$ref
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_b2xUserFlows_identityProviders"
+  "name": "delete_b2xUserFlows_identityProviders_2",
+  "sampleKeys": ["B2X_1_PartnerSignUp", "Facebook-OAUTH"]
 }
 -->
 
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignUp/identityProviders/Facebook-OAUTH/$ref
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2xuserflows-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2xuserflows-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-b2xuserflows-identityproviders-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2xuserflows-identityproviders-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -96,5 +85,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

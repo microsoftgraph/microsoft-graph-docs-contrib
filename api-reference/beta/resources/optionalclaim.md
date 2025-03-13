@@ -1,10 +1,11 @@
 ---
 title: "optionalClaim resource type"
 description: "Contains an optional claim associated with an application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # optionalClaim resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Contains an optional claim associated with an [application](application.md) <!-- or a service principal -->. The **idToken**, **accessToken**, and **saml2Token** properties of the [optionalClaims](optionalclaims.md) resource is a collection of **optionalClaim**. If supported by a specific claim, you can also modify the behavior of the optionalClaim using the `additionalProperties` property. 
 
-See [provide optional claims to your Azure AD app](/azure/active-directory/develop/active-directory-optional-claims) for more information.
+For more information, see [provide optional claims to your Microsoft Entra app](/azure/active-directory/develop/active-directory-optional-claims).
 
 ## Properties
 
@@ -28,7 +29,7 @@ See [provide optional claims to your Azure AD app](/azure/active-directory/devel
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

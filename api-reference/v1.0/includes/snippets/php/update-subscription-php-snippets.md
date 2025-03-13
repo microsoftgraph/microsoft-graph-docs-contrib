@@ -1,0 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Subscription;
+
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestBody = new Subscription();
+$requestBody->setExpirationDateTime(new \DateTime('2016-11-22T18:23:45.9356913Z'));
+
+$result = $graphServiceClient->subscriptions()->bySubscriptionId('subscription-id')->patch($requestBody)->wait();
+
+```

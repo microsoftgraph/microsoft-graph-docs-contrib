@@ -1,10 +1,11 @@
 ---
 title: "installState enum type"
 description: "Possible values for install state."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # installState enum type
@@ -26,9 +27,3 @@ Possible values for install state.
 |notInstalled|3|Not Installed.|
 |uninstallFailed|4|Uninstall Failed.|
 |unknown|5|Unknown.|
-
-
-
-
-
-

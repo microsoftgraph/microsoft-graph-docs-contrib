@@ -1,10 +1,11 @@
 ---
 title: "deviceCompliancePolicySettingStateSummary resource type"
 description: "Device Compilance Policy Setting State summary across the account."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 10/15/2024
 ---
 
 # deviceCompliancePolicySettingStateSummary resource type
@@ -32,7 +33,7 @@ Device Compilance Policy Setting State summary across the account.
 |id|String|Key of the entity.|
 |setting|String|The setting class name and property name.|
 |settingName|String|Name of the setting.|
-|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Setting platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Setting platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `androidAOSP`, `linux`, `all`.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
 |compliantDeviceCount|Int32|Number of compliant devices|
@@ -44,7 +45,7 @@ Device Compilance Policy Setting State summary across the account.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceComplianceSettingStates|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) collection|Not yet documented|
+|deviceComplianceSettingStates|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) collection||
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -70,9 +71,3 @@ Here is a JSON representation of the resource.
   "conflictDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

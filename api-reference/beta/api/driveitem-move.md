@@ -1,33 +1,32 @@
 ---
-author: JeremyKelley
-description: "To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move."
-ms.date: 09/10/2017
-title: Move a file or folder
-localization_priority: Normal
-ms.prod: "sharepoint"
+author: spgraph-docs-team
+description: "Move a driveItem to a new parent folder."
+title: "driveItem: move"
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 07/01/2024
 ---
-# Move a DriveItem to a new folder
 
+# driveItem: move
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+Move a [driveItem](../resources/driveitem.md) to a new parent.
 
-This is a special case of the [Update](driveitem-update.md) method.
+To move a **driveItem** to a new parent item, your app requests an update to the **parentReference** of the **driveItem** to move. The move is a special type of [Update](driveitem-update.md) operation.
 Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 
-Items cannot be moved between [Drives](../resources/drive.md) using this request.
+When a **driveItem** is moved within the same site or container, all existing sharing links continue to work. If the **driveItem** is moved to a different site or container, existing sharing links no longer work.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_move" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-move-permissions.md)]
 
 ## HTTP request
 
@@ -35,41 +34,44 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 PATCH /drives/{drive-id}/items/{item-id}
-PATCH /groups/{group-id}/drive/{item-id}
+PATCH /groups/{group-id}/drive/items/{item-id}
 PATCH /me/drive/items/{item-id}
 PATCH /sites/{site-id}/drive/items/{item-id}
 PATCH /users/{user-id}/drive/items/{item-id}
 ```
 
-## Optional request headers
+## Request headers
 
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
+|Authorization  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| if-match      | String | If this request header is included and the eTag (or cTag) provided doesn't match the current eTag on the folder, a `412 Precondition Failed` response is returned. Optional.|
 
 ## Request body
 
 In the request body, supply the new value for the **parentReference** property.
-Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
-For best performance you shouldn't include existing values that haven't changed.
+Existing properties that aren't included in the request body maintain their previous values or the properties are recalculated based on changes to other property values.
+For optimal performance, include only the values that change and omit the unchanged ones.
 
-**Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.
-Your app needs to provide the actual ID of the root folder for the parent reference.
+> [!NOTE]
+> When items are moved to the root of a drive, your application must use the actual ID of the root folder as the parent reference instead of the `"id: root"` syntax.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
+If successful, this method returns a `200 OK` response code and an updated [driveItem](../resources/driveitem.md) resource in the response body.
 
-## Example
+For information about how errors are returned, see [Error responses][error-response].
 
-This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.
+## Examples
 
+### Request 
+The following example moves an item specified by `{item-id}` into a folder in the user's drive with the ID `new-parent-folder-id`.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
 
 ```http
-PATCH /me/drive/items/{item-id}
+PATCH https://graph.microsoft.com/beta/me/drive/items/{item-id}
 Content-type: application/json
 
 {
@@ -79,20 +81,40 @@ Content-type: application/json
   "name": "new-item-name.txt"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/move-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/move-item-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/move-item-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/move-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/move-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/move-item-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/move-item-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/move-item-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/move-item-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -115,11 +137,6 @@ Content-type: application/json
   }
 }
 ```
-
-## Error responses
-
-See [Error Responses][error-response] for more info about
-how errors are returned.
 
 [error-response]: /graph/errors
 

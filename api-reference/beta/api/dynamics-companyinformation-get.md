@@ -4,9 +4,10 @@ description: Gets a company information object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
-ms.prod: "dynamics-365-business-central"
+ms.localizationpriority: medium
+ms.subservice: "d365-business-central"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get companyInformation
@@ -17,17 +18,16 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a company information object for Dynamics 365 Business Central.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type |Permissions (from least to most privileged)|
-|:---------------|:------------------------------------------|
-|Delegated (work or school account)|Financials.ReadWrite.All |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Financials.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "dynamics_companyinformation_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/dynamics-companyinformation-get-permissions.md)]
 
 ## HTTP request
-```
+```http
 GET /financials/companies/{id}/companyInformation/{id}
 ```
 ## Optional query parameters
@@ -36,10 +36,10 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |------|-----|
-|Authorization  |Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a **companyInformation** object in the response body.
@@ -48,16 +48,16 @@ If successful, this method returns a `200 OK` response code and a **companyInfor
 
 **Request**
 
-Here is an example of the request.
-```json
+The following example shows a request.
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/companyInformation/{id}
 ```
 
 **Response**
 
-Here is an example of the response. 
+The following example shows the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {

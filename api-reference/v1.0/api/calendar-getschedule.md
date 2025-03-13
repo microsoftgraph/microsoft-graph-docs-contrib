@@ -1,10 +1,11 @@
 ---
 title: "calendar: getSchedule"
 description: "Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period."
-localization_priority: Priority
-author: "angelgolfer-ms"
-ms.prod: "outlook"
+ms.localizationpriority: high
+author: "tariq-sharif"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # calendar: getSchedule
@@ -13,26 +14,25 @@ Namespace: microsoft.graph
 
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application | Calendars.Read, Calendars.ReadWrite |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "calendar_getschedule" } -->
+[!INCLUDE [permissions-table](../includes/permissions/calendar-getschedule-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/calendar/getSchedule 
+POST /me/calendar/getSchedule
 POST /users/{id|userPrincipalName}/calendar/getSchedule
 ```
 
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | string | Nature of the data in the body of an entity, which is application/json. Required.  |
 | Prefer: outlook.timezone | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
@@ -49,10 +49,12 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.
-## Example
-##### Request
-The following example gets the availability information for two users for the specified date, time, and time zone.
 
+> **Note**: When the user's calendar has a time slot that contains more than 1000 entries, a `5006` response code with the message "The result set contains too many calendar entries. The allowed size is 1000; the actual size is ..." will be returned. For details, see [KB 2962513](/exchange/troubleshoot/calendars/cannot-view-another-user-calendar-free-busy-information).
+
+## Examples
+### Request
+The following example gets the availability information for two users for the specified date, time, and time zone.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -60,12 +62,12 @@ The following example gets the availability information for two users for the sp
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendar/getSchedule 
+POST https://graph.microsoft.com/v1.0/me/calendar/getSchedule
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
-{        
-    "schedules": ["adelev@contoso.onmicrosoft.com", "meganb@contoso.onmicrosoft.com"],
+{
+    "schedules": ["adelev@contoso.com", "meganb@contoso.com"],
     "startTime": {
         "dateTime": "2019-03-15T09:00:00",
         "timeZone": "Pacific Standard Time"
@@ -77,27 +79,39 @@ Content-Type: application/json
     "availabilityViewInterval": 60
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-getschedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-getschedule-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/calendar-getschedule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/calendar-getschedule-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/calendar-getschedule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/calendar-getschedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-getschedule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/calendar-getschedule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/calendar-getschedule-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,7 +126,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value": [
         {
-            "scheduleId": "adelev@contoso.onmicrosoft.com",
+            "scheduleId": "adelev@contoso.com",
             "availabilityView": "000220000",
             "scheduleItems": [
                 {
@@ -146,7 +160,7 @@ Content-type: application/json
             }
         },
         {
-            "scheduleId": "meganb@contoso.onmicrosoft.com",
+            "scheduleId": "meganb@contoso.com",
             "availabilityView": "200220010",
             "scheduleItems": [
                 {

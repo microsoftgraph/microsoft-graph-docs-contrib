@@ -1,10 +1,11 @@
 ---
 title: "mailAssessmentRequest resource type"
 description: "Used to create and retrieve a mail threat assessment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "security"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # mailAssessmentRequest resource type
@@ -15,14 +16,14 @@ Namespace: microsoft.graph
 
 Used to create and retrieve a mail threat assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
 
-When you create a mail threat assessment request, the mail should be received by the user specified in `recipientEmail`. Delegated [Mail permissions](/graph/permissions-reference#mail-permissions) (Mail.Read or Mail.Read.Shared) are requried to access the mail received by the user or shared by someone else.
+When you create a mail threat assessment request, the mail should be received by the user specified in `recipientEmail`. Delegated [Mail permissions](/graph/permissions-reference#mail-permissions) (Mail.Read or Mail.Read.Shared) are required to access the mail received by the user or shared by someone else.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [mailAssessmentRequest](mailAssessmentRequest.md) | Create a new mail assessment request by posting a **mailAssessmentRequest** object. |
-| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [mailAssessmentRequest](mailassessmentrequest.md) | Read the properties and relationships of a **mailAssessmentRequest** object. |
+| [Create](../api/informationprotection-post-threatassessmentrequests.md) | [mailAssessmentRequest](mailAssessmentRequest.md) | Create a new mail assessment request by posting a **mailAssessmentRequest** object. |
+| [Get](../api/threatassessmentrequest-get.md) | [mailAssessmentRequest](mailassessmentrequest.md) | Read the properties and relationships of a **mailAssessmentRequest** object. |
 
 
 ## Properties
@@ -35,7 +36,7 @@ When you create a mail threat assessment request, the mail should be received by
 |category|[threatCategory](enums.md#threatcategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|The threat assessment request creator.|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|The expected assessment from submitter. Possible values are: `block`, `unblock`.|
 |id|String|The threat assessment request ID is a globally unique identifier (GUID).|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|The source of threat assessment request. Possible values are: `user`, `administrator`.|
@@ -45,11 +46,11 @@ When you create a mail threat assessment request, the mail should be received by
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|results|[threatAssessmentResult](threatassessmentresult.md) collection|A collection of threat assessment results. Read-only. By default, a `GET /threatAssessmentRequests/{id}` does not return this property unless you apply `$expand` on it.|
+|results|[threatAssessmentResult](threatassessmentresult.md) collection|A collection of threat assessment results. Read-only. By default, a `GET /threatAssessmentRequests/{id}` doesn't return this property unless you apply `$expand` on it.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -57,7 +58,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.mailAssessmentRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

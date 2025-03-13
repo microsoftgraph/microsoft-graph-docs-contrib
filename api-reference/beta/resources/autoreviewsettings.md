@@ -1,17 +1,20 @@
 ---
-title: "autoReviewSettings resource type"
+title: "autoReviewSettings resource type (deprecated)"
 description: "Specifies the behavior for when an access review completes."
-localization_priority: Normal
-author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "shubhamguptacal"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
-# autoReviewSettings resource type
+# autoReviewSettings resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 The **autoReviewSettings** resource type is used in the [accessReviewSettings](accessreviewsettings.md) resource and specifies the behavior for when an access review completes.    
 
@@ -20,6 +23,9 @@ The **autoReviewSettings** resource type is used in the [accessReviewSettings](a
 | Property | Type | Description |
 | :------- | :--- | :---------- |
 | notReviewedResult | String | Possible values: `Approve`, `Deny`, or `Recommendation`.  If `Recommendation`, then **accessRecommendationsEnabled** in the **accessReviewSettings** resource should also be set to `true`. If you want to have the system provide a decision even if the reviewer does not make a choice, set the **autoReviewEnabled** property in the **accessReviewSettings** resource to `true` and include an **autoReviewSettings** object with the **notReviewedResult** property. Then, when a review completes, based on the **notReviewedResult** property, the decision is recorded as either `Approve` or `Deny`.|
+
+## Relationships
+None.
 
 ## JSON representation
 

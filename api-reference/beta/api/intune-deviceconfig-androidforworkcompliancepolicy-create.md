@@ -1,10 +1,11 @@
 ---
 title: "Create androidForWorkCompliancePolicy"
 description: "Create a new androidForWorkCompliancePolicy object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create androidForWorkCompliancePolicy
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Create a new [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -58,10 +61,18 @@ The following table shows the properties that are required when you create the a
 |passwordRequired|Boolean|Require a password to unlock device.|
 |passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Type of characters in password. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required device password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android API 12+. Possible values are: `none`, `low`, `medium`, `high`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign-in failures allowed before factory reset. Valid values 1 to 16|
+|workProfilePasswordExpirationInDays|Int32|Number of days before the work profile password expires. Valid values 1 to 365|
+|workProfilePasswordMinimumLength|Int32|Minimum length of work profile password. Valid values 4 to 16|
+|workProfileInactiveBeforeScreenLockInMinutes|Int32|Minutes of inactivity before the screen times out.|
+|workProfilePreviousPasswordBlockCount|Int32|Number of previous work profile passwords to block. Valid values 0 to 24|
+|workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|workProfileRequiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required work profile password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android 12+. Possible values are: `none`, `low`, `medium`, `high`.|
+|workProfileRequirePassword|Boolean|Password is required or not for work profile|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
@@ -72,11 +83,12 @@ The following table shows the properties that are required when you create the a
 |osMaximumVersion|String|Maximum Android version.|
 |minAndroidSecurityPatchLevel|String|Minimum Android security patch level.|
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
-|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the SafetyNet basic integrity check.|
-|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the SafetyNet certified device check.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the Play Integrity basic integrity check.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the Play Integrity device integrity check.|
 |securityRequireGooglePlayServices|Boolean|Require Google Play Services to be installed and enabled on the device.|
 |securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
+|securityRequiredAndroidSafetyNetEvaluationType|[androidSafetyNetEvaluationType](../resources/intune-deviceconfig-androidsafetynetevaluationtype.md)|Require a specific SafetyNet evaluation type for compliance. Possible values are: `basic`, `hardwareBacked`.|
 
 
 
@@ -90,7 +102,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1283
+Content-length: 1735
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkCompliancePolicy",
@@ -103,10 +115,18 @@ Content-length: 1283
   "passwordRequired": true,
   "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
+  "requiredPasswordComplexity": "low",
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "workProfilePasswordExpirationInDays": 3,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfileInactiveBeforeScreenLockInMinutes": 12,
+  "workProfilePreviousPasswordBlockCount": 5,
+  "workProfilePasswordRequiredType": "lowSecurityBiometric",
+  "workProfileRequiredPasswordComplexity": "low",
+  "workProfileRequirePassword": true,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -121,7 +141,8 @@ Content-length: 1283
   "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
-  "securityRequireCompanyPortalAppIntegrity": true
+  "securityRequireCompanyPortalAppIntegrity": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
 
@@ -130,7 +151,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1455
+Content-Length: 1907
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkCompliancePolicy",
@@ -146,10 +167,18 @@ Content-Length: 1455
   "passwordRequired": true,
   "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
+  "requiredPasswordComplexity": "low",
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "workProfilePasswordExpirationInDays": 3,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfileInactiveBeforeScreenLockInMinutes": 12,
+  "workProfilePreviousPasswordBlockCount": 5,
+  "workProfilePasswordRequiredType": "lowSecurityBiometric",
+  "workProfileRequiredPasswordComplexity": "low",
+  "workProfileRequirePassword": true,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -164,12 +193,7 @@ Content-Length: 1455
   "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
-  "securityRequireCompanyPortalAppIntegrity": true
+  "securityRequireCompanyPortalAppIntegrity": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
-
-
-
-
-
-

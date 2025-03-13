@@ -1,10 +1,11 @@
 ---
 title: "cloudAppSecurityState resource type"
 description: "Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp)."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: ""
+ms.subservice: cloud-pc
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # cloudAppSecurityState resource type
@@ -23,7 +24,7 @@ Contains stateful information about the cloud application (destinationServiceNam
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

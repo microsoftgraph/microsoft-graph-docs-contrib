@@ -1,10 +1,11 @@
 ---
 title: "Update androidManagedStoreAppConfiguration"
 description: "Update the properties of a androidManagedStoreAppConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update androidManagedStoreAppConfiguration
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -59,8 +62,9 @@ The following table shows the properties that are required when you create the [
 |packageId|String|Android Enterprise app configuration package id.|
 |payloadJson|String|Android Enterprise app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
-|appSupportsOemConfig|Boolean|Whether or not this AppConfig is an OEMConfig policy.|
+|appSupportsOemConfig|Boolean|Whether or not this AppConfig is an OEMConfig policy. This property is read-only.|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise profile applicability (AndroidWorkProfile, DeviceOwner, or default (applies to both)). Possible values are: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
+|connectedAppsEnabled|Boolean|Setting to specify whether to allow ConnectedApps experience for this app.|
 
 
 
@@ -74,7 +78,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 Content-type: application/json
-Content-length: 641
+Content-length: 674
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -97,7 +101,8 @@ Content-length: 641
     }
   ],
   "appSupportsOemConfig": true,
-  "profileApplicability": "androidWorkProfile"
+  "profileApplicability": "androidWorkProfile",
+  "connectedAppsEnabled": true
 }
 ```
 
@@ -106,7 +111,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 813
+Content-Length: 846
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -132,12 +137,7 @@ Content-Length: 813
     }
   ],
   "appSupportsOemConfig": true,
-  "profileApplicability": "androidWorkProfile"
+  "profileApplicability": "androidWorkProfile",
+  "connectedAppsEnabled": true
 }
 ```
-
-
-
-
-
-

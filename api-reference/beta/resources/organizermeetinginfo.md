@@ -2,9 +2,10 @@
 title: "organizerMeetingInfo resource type"
 description: "Contains details about the meeting organizer. "
 author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # organizerMeetingInfo resource type
@@ -22,11 +23,14 @@ and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./to
 
 | Property                     | Type                          | Description                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| organizer                    | [identitySet](identityset.md) | The organizer Azure Active Directory identity.  |
+| organizer                    | [identitySet](identityset.md) | The organizer Microsoft Entra identity.  |
+
+## Relationships
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -53,5 +57,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

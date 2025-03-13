@@ -2,9 +2,10 @@
 title: "mediaStream resource type"
 description: "Contains information about the media channel."
 author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # mediaStream resource type
@@ -21,13 +22,16 @@ Contains information about the media channel.
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
 | direction   | String  | The direction. The possible values are `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
 | label       | String  | The media stream label.                                                                                       |
-| mediaType   | String  | The media type. The possible value are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Boolean | Indicates whether the media is muted by the server.                                                                          |
+| mediaType   | String  | The media type. The possible values are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
+| serverMuted | Boolean | Indicates whether the server has muted the media.                                                                          |
 | sourceId    | String  | The source ID.                                                                                                |
+
+## Relationships
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

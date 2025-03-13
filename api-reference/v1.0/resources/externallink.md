@@ -1,21 +1,32 @@
 ---
 title: "externalLink resource type"
-description: "A url that opens a OneNote page or notebook."
-localization_priority: Normal
+description: "Represents a URL that opens a OneNote page or notebook."
+ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: ""
+ms.subservice: onenote
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # externalLink resource type
 
 Namespace: microsoft.graph
 
-A url that opens a OneNote page or notebook.
+Represents a URL that opens a OneNote page or notebook.
+
+## Properties
+
+| Property	     | Type	   | Description          |
+|:---------------|:--------|:---------------------|
+| href           | String  | The URL of the link. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -29,12 +40,7 @@ Here is a JSON representation of the resource
 {
   "href": "string"
 }
-
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|href|String|The url of the link.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

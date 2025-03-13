@@ -1,11 +1,11 @@
 ---
 title: "androidManagedAppRegistration resource type"
-description: "Represents the synchronization details of an android app, with management capabilities, for a specific user.
- The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Represents the synchronization details of an android app, with management capabilities, for a specific user. The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # androidManagedAppRegistration resource type
@@ -82,22 +82,3 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune-mam-androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/appIdentifier:
-      Type mismatch between example and table. Parameter name: appIdentifier; example type: (microsoft.graph.androidMobileAppIdentifier); table type: (microsoft.graph.mobileAppIdentifier)",
-      "Warning: /api-reference/v1.0/resources/intune-mam-androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/flaggedReasons:
-
-      Inconsistent types between parameter (String) and table (Object)"
-  ],
-}
--->
-
-
-
-
-
-
-

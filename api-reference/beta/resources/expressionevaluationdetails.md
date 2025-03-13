@@ -1,10 +1,12 @@
 ---
 title: "expressionEvaluationDetails resource type"
 description: "Represents the expression details, result, and property details."
-localization_priority: Normal
-author: "yyuank"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # expressionEvaluationDetails resource type
@@ -17,16 +19,16 @@ Represents the expression details, result, and property details.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-| expression | String | Represents expression which has been evaluated. |
-| expressionEvaluationDetails | expressionEvaluationDetails collection | Represents the details of the evaluation of the expression. |
-| expressionResult | Boolean | Represents the value of the result of the current expression. |
-| propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | Defines the name of the property and the value of that property. |
+| Property                    | Type                                        | Description                                                      |
+| :-------------------------- | :------------------------------------------ | :--------------------------------------------------------------- |
+| expression                  | String                                      | Represents expression which has been evaluated.                  |
+| expressionEvaluationDetails | expressionEvaluationDetails collection      | Represents the details of the evaluation of the expression.      |
+| expressionResult            | Boolean                                     | Represents the value of the result of the current expression.    |
+| propertyToEvaluate          | [propertyToEvaluate](propertytoevaluate.md) | Defines the name of the property and the value of that property. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -40,9 +42,11 @@ The following is a JSON representation of the resource.
 ```json
 {
   "expression": "String",
-  "expressionEvaluationDetails": [{"@odata.type": "microsoft.graph.expressionEvaluationDetails"}],
+  "expressionEvaluationDetails": [
+    { "@odata.type": "microsoft.graph.expressionEvaluationDetails" }
+  ],
   "expressionResult": true,
-  "propertyToEvaluate": {"@odata.type": "microsoft.graph.propertyToEvaluate"}
+  "propertyToEvaluate": { "@odata.type": "microsoft.graph.propertyToEvaluate" }
 }
 ```
 
@@ -55,5 +59,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

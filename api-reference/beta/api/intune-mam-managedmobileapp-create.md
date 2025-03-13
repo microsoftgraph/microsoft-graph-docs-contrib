@@ -1,10 +1,11 @@
 ---
 title: "Create managedMobileApp"
 description: "Create a new managedMobileApp object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create managedMobileApp
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Create a new [managedMobileApp](../resources/intune-mam-managedmobileapp.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,6 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 POST /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
 POST /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps
+POST /deviceAppManagement/windowsManagedAppProtections/{windowsManagedAppProtectionId}/apps
 POST /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps
 POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps
 ```
@@ -41,7 +45,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -67,13 +71,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
 Content-type: application/json
-Content-length: 226
+Content-length: 227
 
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-    "packageId": "Package Id value"
+    "@odata.type": "microsoft.graph.windowsAppIdentifier",
+    "windowsAppId": "Windows App Id value"
   },
   "version": "Version value"
 }
@@ -84,21 +88,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 275
+Content-Length: 276
 
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-    "packageId": "Package Id value"
+    "@odata.type": "microsoft.graph.windowsAppIdentifier",
+    "windowsAppId": "Windows App Id value"
   },
   "id": "0a129715-9715-0a12-1597-120a1597120a",
   "version": "Version value"
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "roleAssignmentScopeType enum type"
 description: "Specifies the type of scope for a Role Assignment."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # roleAssignmentScopeType enum type
@@ -24,9 +25,3 @@ Specifies the type of scope for a Role Assignment.
 |allDevices|1|Allow assignments to all Intune devices.|
 |allLicensedUsers|2|Allow assignments to all Intune licensed users.|
 |allDevicesAndLicensedUsers|3|Allow assignments to all Intune devices and licensed users.|
-
-
-
-
-
-

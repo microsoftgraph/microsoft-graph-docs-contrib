@@ -1,11 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
 title: createAction resource type
 description: The createAction object provides information about the creation of an item.
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # createAction resource type
 

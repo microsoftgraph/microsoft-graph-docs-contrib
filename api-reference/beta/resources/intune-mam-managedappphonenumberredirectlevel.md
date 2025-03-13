@@ -1,10 +1,11 @@
 ---
 title: "managedAppPhoneNumberRedirectLevel enum type"
 description: "The classes of apps that are allowed to click-to-open a phone number, for making phone calls or sending text messages."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # managedAppPhoneNumberRedirectLevel enum type
@@ -24,9 +25,3 @@ The classes of apps that are allowed to click-to-open a phone number, for making
 |managedApps|1|Sharing is allowed to all managed apps.|
 |customApp|2|Sharing is allowed to a custom app.|
 |blocked|3|Sharing between apps is blocked.|
-
-
-
-
-
-

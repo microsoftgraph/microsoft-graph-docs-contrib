@@ -2,9 +2,10 @@
 title: "Update educationSchool properties"
 description: "Update the properties of a school object."
 author: "mmast-msft"
-localization_priority: Normal
-ms.prod: "education"
+ms.localizationpriority: medium
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # Update educationschool properties
@@ -15,15 +16,14 @@ Namespace: microsoft.graph
 
 Update the properties of a school object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not supported.                              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | EduRoster.ReadWrite.All                     |
+<!-- { "blockType": "permissions", "name": "educationschool_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationschool-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,26 +35,26 @@ PATCH /education/schools/{id}
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json          |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property            | Type                                               | Description                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | String                                             | Display name of the school         |
-| description         | String                                             | Description of the school          |
-| principalEmail      | String                                             | Email address of the principal     |
-| principalName       | String                                             | Name of the principal              |
-| externalPrincipalId | String                                             | Id of principal in syncing system. |
+| displayName         | String                                             | Display name of the school.        |
+| description         | String                                             | Description of the school.         |
+| principalEmail      | String                                             | Email address of the principal.    |
+| principalName       | String                                             | Name of the principal.             |
+| externalPrincipalId | String                                             | ID of principal in syncing system. |
 | highestGrade        | String                                             | Highest grade taught.              |
 | lowestGrade         | String                                             | Lowest grade taught.               |
 | schoolNumber        | String                                             | School Number.                     |
-| externalId          | String                                             | Id of school in syncing system.    |
+| externalId          | String                                             | ID of school in syncing system.    |
 | phone               | String                                             | Phone number of school.            |
-| address             | [physicalAddress](../resources/physicaladdress.md) | Address of the School.             |
+| address             | [physicalAddress](../resources/physicaladdress.md) | Address of the school.             |
 | createdBy           | [identitySet](../resources/identityset.md)         | Entity who created the school.     |
 
 ## Response
@@ -62,43 +62,66 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ## Example
 
-##### Request
+### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
-  "name": "update_educationschool"
+  "name": "update_educationschool",
+  "sampleKeys": ["10002"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
-Content-length: 292
 
 {
   "displayName": "Fabrikam Arts High School",
   "description": "Magnate school for the arts. Los Angeles School District"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-educationschool-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationschool-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-educationschool-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationschool-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-educationschool-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
+### Response
 
-The following is an example of the response.
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -108,7 +131,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "id": "10002",

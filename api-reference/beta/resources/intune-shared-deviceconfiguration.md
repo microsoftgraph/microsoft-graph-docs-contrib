@@ -1,10 +1,11 @@
 ---
 title: "deviceConfiguration resource type"
 description: "Device Configuration."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # deviceConfiguration resource type
@@ -23,12 +24,12 @@ Device Configuration.
 |[List deviceConfigurations](../api/intune-shared-deviceconfiguration-list.md)|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) collection|List properties and relationships of the [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) objects.|
 |[Get deviceConfiguration](../api/intune-shared-deviceconfiguration-get.md)|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|Read properties and relationships of the [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) object.|
 |**Device configuration**|
-|[assign action](../api/intune-shared-deviceconfiguration-assign.md)|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) collection|Not yet documented|
-|[windowsPrivacyAccessControls action](../api/intune-shared-deviceconfiguration-windowsprivacyaccesscontrols.md)|None|Not yet documented|
-|[assignedAccessMultiModeProfiles action](../api/intune-shared-deviceconfiguration-assignedaccessmultimodeprofiles.md)|None|Not yet documented|
-|[getTargetedUsersAndDevices action](../api/intune-shared-deviceconfiguration-gettargetedusersanddevices.md)|[deviceConfigurationTargetedUserAndDevice](../resources/intune-deviceconfig-deviceconfigurationtargeteduseranddevice.md) collection|Not yet documented|
+|[assign action](../api/intune-shared-deviceconfiguration-assign.md)|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) collection||
+|[windowsPrivacyAccessControls action](../api/intune-shared-deviceconfiguration-windowsprivacyaccesscontrols.md)|None||
+|[assignedAccessMultiModeProfiles action](../api/intune-shared-deviceconfiguration-assignedaccessmultimodeprofiles.md)|None||
+|[getTargetedUsersAndDevices action](../api/intune-shared-deviceconfiguration-gettargetedusersanddevices.md)|[deviceConfigurationTargetedUserAndDevice](../resources/intune-deviceconfig-deviceconfigurationtargeteduseranddevice.md) collection||
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-deviceconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-deviceconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|
@@ -101,9 +102,3 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
-
-
-
-

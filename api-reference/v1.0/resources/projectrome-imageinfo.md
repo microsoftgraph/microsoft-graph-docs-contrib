@@ -1,10 +1,11 @@
 ---
 title: "imageInfo resource type"
 description: "A complex type for representing the **attribution** property in the visualInfo part of the activity object."
-localization_priority: Normal
-ms.prod: "project-rome"
+ms.localizationpriority: medium
+ms.subservice: "project-rome"
 author: "ailae"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # imageInfo resource type
@@ -17,13 +18,13 @@ A complex type for representing the **attribution** property in the [visualInfo]
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|iconUrl | String | Optional; URI that points to an icon which represents the application used to generate the activity|
-|alternateText | String | Optional; alt-text accessible content for the image|
 |addImageQuery | Boolean | Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image|
+|alternateText | String | Optional; alt-text accessible content for the image|
+|iconUrl | String | Optional; URI that points to an icon which represents the application used to generate the activity|
 
 ## JSON Representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

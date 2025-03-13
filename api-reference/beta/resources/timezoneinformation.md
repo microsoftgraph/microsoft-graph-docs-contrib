@@ -1,10 +1,11 @@
 ---
 title: "timeZoneInformation resource type"
 description: "Represents a time zone. The supported format is Windows, and Internet Assigned Numbers Authority (IANA) time zone (also known as Olson time zone)"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "svpsiva"
+ms.subservice: mail
+author: "SuryaLashmiS"
+ms.date: 03/21/2024
 ---
 
 # timeZoneInformation resource type
@@ -22,9 +23,12 @@ format as well when the current known problem is fixed.
 |alias|string|An identifier for the time zone.|
 |displayName|string|A display string that represents the time zone.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -1,10 +1,11 @@
 ---
 title: "Create certificateBasedAuthConfiguration"
 description: "Use this API to create a new certificateBasedAuthConfiguration."
-localization_priority: Normal
-author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "vimrang"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/06/2024
 ---
 
 # Create certificateBasedAuthConfiguration
@@ -16,17 +17,18 @@ Namespace: microsoft.graph
 Create a new [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.
 
 > [!NOTE]
-> Only a single instance of a **certificateBasedAuthConfiguration** can be created (the collection can only have one member). It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.
+> Only a single instance of a **certificateBasedAuthConfiguration** can be created (the collection can only have one member). It always has a fixed ID with a value of `29728ade-6ae4-4ee9-9103-412912537da5`.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Organization.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application    | Organization.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "certificatebasedauthconfiguration_post_certificatebasedauthconfiguration" } -->
+[!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration-permissions.md)]
+
+[!INCLUDE [rbac-cert-based-auth-config-apis](../includes/rbac-for-apis/rbac-cert-based-auth-config-apis.md)]
 
 ## HTTP request
 
@@ -40,7 +42,7 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body
@@ -59,7 +61,7 @@ If successful, this method returns `201 Created` response code and a new [certif
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,26 +82,46 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -133,5 +155,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

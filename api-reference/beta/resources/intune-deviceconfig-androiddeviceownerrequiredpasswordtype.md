@@ -1,10 +1,11 @@
 ---
 title: "androidDeviceOwnerRequiredPasswordType enum type"
 description: "Android Device Owner policy required password type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # androidDeviceOwnerRequiredPasswordType enum type
@@ -29,9 +30,3 @@ Android Device Owner policy required password type.
 |alphanumericWithSymbols|6|At least alphanumeric with symbols.|
 |lowSecurityBiometric|7|Low security biometrics based password required.|
 |customPassword|8|Custom password set by the admin.|
-
-
-
-
-
-

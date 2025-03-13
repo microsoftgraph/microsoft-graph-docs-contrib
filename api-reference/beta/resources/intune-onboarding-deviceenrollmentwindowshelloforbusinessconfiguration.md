@@ -1,10 +1,11 @@
 ---
 title: "deviceEnrollmentWindowsHelloForBusinessConfiguration resource type"
 description: "Windows Hello for Business settings lets users access their devices using a gesture, such as biometric authentication, or a PIN. Configure settings for enrolled Windows 10, Windows 10 Mobile and later."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceEnrollmentWindowsHelloForBusinessConfiguration resource type
@@ -40,6 +41,7 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-shared-devicee
 |lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |roleScopeTagIds|String collection|Optional role scope tags for the enrollment restrictions. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|deviceEnrollmentConfigurationType|[deviceEnrollmentConfigurationType](../resources/intune-onboarding-deviceenrollmentconfigurationtype.md)|Support for Enrollment Configuration Type Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md). Possible values are: `unknown`, `limit`, `platformRestrictions`, `windowsHelloForBusiness`, `defaultLimit`, `defaultPlatformRestrictions`, `defaultWindowsHelloForBusiness`, `defaultWindows10EnrollmentCompletionPageConfiguration`, `windows10EnrollmentCompletionPageConfiguration`, `deviceComanagementAuthorityConfiguration`, `singlePlatformRestriction`, `unknownFutureValue`, `enrollmentNotificationsConfiguration`.|
 |pinMinimumLength|Int32|Controls the minimum number of characters required for the Windows Hello for Business PIN.  This value must be between 4 and 127, inclusive, and less than or equal to the value set for the maximum PIN.|
 |pinMaximumLength|Int32|Controls the maximum number of characters allowed for the Windows Hello for Business PIN. This value must be between 4 and 127, inclusive. This value must be greater than or equal to the value set for the minimum PIN.|
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Controls the ability to use uppercase letters in the Windows Hello for Business PIN.  Allowed permits the use of uppercase letter(s), whereas Required ensures they are present. If set to Not Allowed, uppercase letters will not be permitted. Possible values are: `allowed`, `required`, `disallowed`.|
@@ -53,6 +55,7 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-shared-devicee
 |pinExpirationInDays|Int32|Controls the period of time (in days) that a PIN can be used before the system requires the user to change it. This must be set between 0 and 730, inclusive. If set to 0, the user's PIN will never expire|
 |enhancedBiometricsState|[enablement](../resources/intune-shared-enablement.md)|Controls the ability to use the anti-spoofing features for facial recognition on devices which support it. If set to disabled, anti-spoofing features are not allowed. If set to Not Configured, the user can choose whether they want to use anti-spoofing. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |securityKeyForSignIn|[enablement](../resources/intune-shared-enablement.md)|Security key for Sign In provides the capacity for remotely turning ON/OFF Windows Hello Sercurity Keyl Not configured will honor configurations done on the clinet. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|enhancedSignInSecurity|Int32|Setting to configure Enhanced sign-in security. Default is Not Configured|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -80,6 +83,7 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
+  "deviceEnrollmentConfigurationType": "String",
   "pinMinimumLength": 1024,
   "pinMaximumLength": 1024,
   "pinUppercaseCharactersUsage": "String",
@@ -92,12 +96,7 @@ Here is a JSON representation of the resource.
   "pinPreviousBlockCount": 1024,
   "pinExpirationInDays": 1024,
   "enhancedBiometricsState": "String",
-  "securityKeyForSignIn": "String"
+  "securityKeyForSignIn": "String",
+  "enhancedSignInSecurity": 1024
 }
 ```
-
-
-
-
-
-

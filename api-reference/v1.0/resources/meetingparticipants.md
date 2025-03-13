@@ -1,28 +1,29 @@
 ---
 title: "meetingParticipants resource type"
-description: "Participants in a meeting."
+description: "Represents participants in a meeting."
 author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # meetingParticipants resource type
 
 Namespace: microsoft.graph
 
-Participants in a meeting.
+Represents participants in a meeting.
 
 ## Properties
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| attendees | [meetingParticipantInfo](meetingparticipantinfo.md) collection |  |
-| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| attendees | [meetingParticipantInfo](meetingparticipantinfo.md) collection | Information about the meeting attendees. |
+| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) | Information about the meeting organizer.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -1,28 +1,31 @@
 ---
 title: "directoryRole: delta"
 description: "Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection. See Using Delta Query for details."
-localization_priority: Normal
-author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "DougKirschner"
+ms.reviewer: msodsrbac
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/25/2024
 ---
 
 # directoryRole: delta
 
 Namespace: microsoft.graph
 
-Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection. For more information, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryrole_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryrole-delta-permissions.md)]
+
+[!INCLUDE [rbac-directory-role-apis-read](../includes/rbac-for-apis/rbac-directory-role-apis-read.md)]
 
 ## HTTP request
 
@@ -38,15 +41,15 @@ GET /directoryRoles/delta
 Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
 it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
-into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
+into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. 
 You only need to specify any desired query parameters once upfront. 
-In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
+In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already 
 includes the encoded, desired parameters.
 
-| Query parameter	   | Type	|Description|
+| Query parameter       | Type    |Description|
 |:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection. |
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection. |
 
 ### OData query parameters
 
@@ -62,24 +65,24 @@ This method supports OData query parameters to help customize the response.
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ### Response
 
-If successful, this method returns `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
+If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
 
-- If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
+- If a `@odata.nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
 
-- If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Save `deltaLink` URL and apply it in the next **delta** call to learn about changes to the resource in the future.
+- If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Save `@odata.deltaLink` URL and apply it in the next **delta** call to learn about changes to the resource in the future.
 
 ### Example
 
-##### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -91,28 +94,44 @@ If successful, this method returns `200 OK` response code and [directoryRole](..
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryrole-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/directoryrole-delta-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/directoryrole-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/directoryrole-delta-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryrole-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryrole-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryrole-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/directoryrole-delta-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryrole-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/directoryrole-delta-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+#### Response
 
-##### Response
-
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -124,20 +143,29 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryRoles",
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/directoryRoles/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles",
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/directoryRoles/delta?$skiptoken=pkXMyA5aFCIMmH1Kk1XEAnf2X-fodqXKXF03gYPQknSHRxogVsxvSq_26nhos-O2-shortened",
   "value": [
-      {
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "roleTemplateId": "roleTemplateId-value",
-      "id": "id-value"
+    {
+      "description": "Device Administrators",
+      "displayName": "Azure AD Joined Device Local Administrator",
+      "roleTemplateId": "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+      "id": "f8e85ed8-f66f-4058-b170-3efae8b9c6e5",
+      "members@delta": [
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "bb165b45-151c-4cf6-9911-cd7188912848",
+          "@removed": {
+            "reason": "deleted"
+          }
+        }
+      ]
     }
   ]
 }
 ```
 
-### See also
+### Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for more details
 - [Get incremental changes for users](/graph/delta-query-users) for an example requests.

@@ -1,10 +1,11 @@
 ---
 title: "emailAddress resource type"
 description: "The name and email address of a contact or message recipient."
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: "outlook"
+ms.localizationpriority: medium
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # emailAddress resource type
@@ -21,7 +22,7 @@ The name and email address of a contact or message recipient.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

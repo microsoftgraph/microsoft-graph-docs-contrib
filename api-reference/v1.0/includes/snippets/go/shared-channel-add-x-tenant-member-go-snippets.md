@@ -1,0 +1,34 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewConversationMember()
+roles := []string {
+
+}
+requestBody.SetRoles(roles)
+tenantId := "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
+requestBody.SetTenantId(&tenantId) 
+additionalData := map[string]interface{}{
+	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users/bc3598dd-cce4-4742-ae15-173429951408", 
+}
+requestBody.SetAdditionalData(additionalData)
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+members, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Members().Post(context.Background(), requestBody, nil)
+
+
+```

@@ -1,10 +1,11 @@
 ---
 title: "Update roleScopeTagAutoAssignment"
 description: "Update the properties of a roleScopeTagAutoAssignment object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update roleScopeTagAutoAssignment
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Update the properties of a [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +51,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The auto-assignment target for the specific Role Scope Tag.|
 
 
@@ -63,14 +66,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}/assignments/{roleScopeTagAutoAssignmentId}
 Content-type: application/json
-Content-length: 321
+Content-length: 398
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   }
 }
 ```
@@ -80,21 +85,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 370
+Content-Length: 447
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
   "id": "256e6375-6375-256e-7563-6e2575636e25",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   }
 }
 ```
-
-
-
-
-
-

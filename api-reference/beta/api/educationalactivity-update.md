@@ -1,10 +1,11 @@
 ---
 title: "Update educationalactivity"
 description: "Update the properties of an educationalActivity object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 10/08/2024
 ---
 
 # Update educationalactivity
@@ -15,15 +16,41 @@ Namespace: microsoft.graph
 
 Update the properties of an [educationalActivity](../resources/educationalactivity.md) object within a user's [profile](../resources/profile.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
-| Application                            | User.ReadWrite.All                          |
+Permissions for the following HTTP syntax:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /me/profile/educationalActivities/{id}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "educationalactivity_update", 
+  "requestUrls": ["PATCH /me/profile/educationalActivities/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationalactivity-update-permissions.md)]
+
+Permissions for the following HTTP syntax:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "educationalactivity_update_2", 
+  "requestUrls": ["PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationalactivity-update-2-permissions.md)]
 
 ## HTTP request
 
@@ -38,19 +65,19 @@ PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 | Name           |Description                  |
 |:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |completionMonthYear|Date|The month and year the user graduated or completed the activity. |
 |endMonthYear|Date|The month and year the user completed the educational activity referenced.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference details if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |institution|[institutionData](../resources/institutiondata.md)|Contains details of the institution studied at. |
 |program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contains extended information about the program or course.|
 |startMonthYear|Date|The month and year the user commenced the activity referenced.|
@@ -63,7 +90,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -95,21 +122,41 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-educationalactivity-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationalactivity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationalactivity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-educationalactivity-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-educationalactivity-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationalactivity-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-educationalactivity-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

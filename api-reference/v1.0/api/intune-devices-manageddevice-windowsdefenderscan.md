@@ -1,10 +1,11 @@
 ---
 title: "windowsDefenderScan action"
 description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # windowsDefenderScan action
@@ -15,14 +16,16 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## HTTP Request
 <!-- {
@@ -30,15 +33,15 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/windowsDefenderScan
 POST /deviceManagement/managedDevices/{managedDeviceId}/windowsDefenderScan
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/windowsDefenderScan
+POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/managedDevices/{managedDeviceId}/windowsDefenderScan
 ```
 
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -59,9 +62,11 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 Here is an example of the request.
-``` http
-POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/windowsDefenderScan
 
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_devices_manageddevice_windowsdefenderscan_windowsdefenderscan_action" }-->
+``` http
+POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}/windowsDefenderScan
 Content-type: application/json
 Content-length: 25
 
@@ -70,17 +75,44 @@ Content-length: 25
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-devices-manageddevice-windowsdefenderscan-windowsdefenderscan-action-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-devices-manageddevice-windowsdefenderscan-windowsdefenderscan-action-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-devices-manageddevice-windowsdefenderscan-windowsdefenderscan-action-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-devices-manageddevice-windowsdefenderscan-windowsdefenderscan-action-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-devices-manageddevice-windowsdefenderscan-windowsdefenderscan-action-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-devices-manageddevice-windowsdefenderscan-windowsdefenderscan-action-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-devices-manageddevice-windowsdefenderscan-windowsdefenderscan-action-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-devices-manageddevice-windowsdefenderscan-windowsdefenderscan-action-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" }-->
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "remoteLockActionResult resource type"
 description: "Lock action result with a pin to unlock"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # remoteLockActionResult resource type
@@ -47,12 +48,3 @@ Here is a JSON representation of the resource.
   "unlockPin": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

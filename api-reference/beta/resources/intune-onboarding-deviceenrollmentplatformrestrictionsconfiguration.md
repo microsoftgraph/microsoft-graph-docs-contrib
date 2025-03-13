@@ -1,10 +1,11 @@
 ---
 title: "deviceEnrollmentPlatformRestrictionsConfiguration resource type"
 description: "Device Enrollment Configuration that restricts the types of devices a user can enroll"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceEnrollmentPlatformRestrictionsConfiguration resource type
@@ -40,6 +41,7 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-shared-devicee
 |lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |roleScopeTagIds|String collection|Optional role scope tags for the enrollment restrictions. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|deviceEnrollmentConfigurationType|[deviceEnrollmentConfigurationType](../resources/intune-onboarding-deviceenrollmentconfigurationtype.md)|Support for Enrollment Configuration Type Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md). Possible values are: `unknown`, `limit`, `platformRestrictions`, `windowsHelloForBusiness`, `defaultLimit`, `defaultPlatformRestrictions`, `defaultWindowsHelloForBusiness`, `defaultWindows10EnrollmentCompletionPageConfiguration`, `windows10EnrollmentCompletionPageConfiguration`, `deviceComanagementAuthorityConfiguration`, `singlePlatformRestriction`, `unknownFutureValue`, `enrollmentNotificationsConfiguration`.|
 |iosRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ios restrictions based on platform, platform operating system version, and device ownership|
 |windowsRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows restrictions based on platform, platform operating system version, and device ownership|
 |windowsHomeSkuRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows Home Sku restrictions based on platform, platform operating system version, and device ownership|
@@ -75,6 +77,7 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
+  "deviceEnrollmentConfigurationType": "String",
   "iosRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
@@ -82,6 +85,9 @@ Here is a JSON representation of the resource.
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -93,6 +99,9 @@ Here is a JSON representation of the resource.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "windowsHomeSkuRestriction": {
@@ -102,6 +111,9 @@ Here is a JSON representation of the resource.
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -113,6 +125,9 @@ Here is a JSON representation of the resource.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "androidRestriction": {
@@ -122,6 +137,9 @@ Here is a JSON representation of the resource.
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -133,6 +151,9 @@ Here is a JSON representation of the resource.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "macRestriction": {
@@ -142,6 +163,9 @@ Here is a JSON representation of the resource.
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -153,13 +177,10 @@ Here is a JSON representation of the resource.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   }
 }
 ```
-
-
-
-
-
-

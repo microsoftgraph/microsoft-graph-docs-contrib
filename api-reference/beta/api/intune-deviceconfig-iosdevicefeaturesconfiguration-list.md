@@ -1,10 +1,11 @@
 ---
 title: "List iosDeviceFeaturesConfigurations"
 description: "List properties and relationships of the iosDeviceFeaturesConfiguration objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List iosDeviceFeaturesConfigurations
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -39,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -61,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7737
+Content-Length: 8140
 
 {
   "value": [
@@ -140,7 +143,8 @@ Content-Length: 7737
                 {
                   "@odata.type": "microsoft.graph.iosHomeScreenApp",
                   "displayName": "Display Name value",
-                  "bundleID": "Bundle ID value"
+                  "bundleID": "Bundle ID value",
+                  "isWebClip": true
                 }
               ]
             }
@@ -163,7 +167,8 @@ Content-Length: 7737
                     {
                       "@odata.type": "microsoft.graph.iosHomeScreenApp",
                       "displayName": "Display Name value",
-                      "bundleID": "Bundle ID value"
+                      "bundleID": "Bundle ID value",
+                      "isWebClip": true
                     }
                   ]
                 }
@@ -172,6 +177,8 @@ Content-Length: 7737
           ]
         }
       ],
+      "homeScreenGridWidth": 3,
+      "homeScreenGridHeight": 4,
       "notificationSettings": [
         {
           "@odata.type": "microsoft.graph.iosNotificationSettings",
@@ -183,7 +190,8 @@ Content-Length: 7737
           "showOnLockScreen": true,
           "alertType": "banner",
           "badgesEnabled": true,
-          "soundsEnabled": true
+          "soundsEnabled": true,
+          "previewVisibility": "alwaysShow"
         }
       ],
       "singleSignOnSettings": {
@@ -238,7 +246,9 @@ Content-Length: 7737
         "activeDirectorySiteCode": "Active Directory Site Code value",
         "passwordEnableLocalSync": true,
         "blockActiveDirectorySiteAutoDiscovery": true,
-        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+        "signInHelpText": "Sign In Help Text value",
+        "managedAppsInBundleIdACLIncluded": true
       },
       "iosSingleSignOnExtension": {
         "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -268,15 +278,11 @@ Content-Length: 7737
         "activeDirectorySiteCode": "Active Directory Site Code value",
         "passwordEnableLocalSync": true,
         "blockActiveDirectorySiteAutoDiscovery": true,
-        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+        "signInHelpText": "Sign In Help Text value",
+        "managedAppsInBundleIdACLIncluded": true
       }
     }
   ]
 }
 ```
-
-
-
-
-
-

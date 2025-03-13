@@ -1,10 +1,11 @@
 ---
 title: "Update androidDeviceOwnerCompliancePolicy"
 description: "Update the properties of a androidDeviceOwnerCompliancePolicy object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update androidDeviceOwnerCompliancePolicy
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidDeviceOwnerCompliancePolicy](../resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -58,8 +61,8 @@ The following table shows the properties that are required when you create the [
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the SafetyNet basic integrity check.|
-|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the SafetyNet certified device check.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the Play Integrity basic integrity check.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the Play Integrity device integrity check.|
 |osMinimumVersion|String|Minimum Android version.|
 |osMaximumVersion|String|Maximum Android version.|
 |minAndroidSecurityPatchLevel|String|Minimum Android security patch level.|
@@ -76,6 +79,9 @@ The following table shows the properties that are required when you create the [
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordPreviousPasswordCountToBlock|Int32|Number of previous passwords to block. Valid values 1 to 24|
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
+|securityRequireIntuneAppIntegrity|Boolean|If setting is set to true, checks that the Intune app installed on fully managed, dedicated, or corporate-owned work profile Android Enterprise enrolled devices, is the one provided by Microsoft from the Managed Google Playstore. If the check fails, the device will be reported as non-compliant.|
+|requireNoPendingSystemUpdates|Boolean|Require device to have no pending Android system updates.|
+|securityRequiredAndroidSafetyNetEvaluationType|[androidSafetyNetEvaluationType](../resources/intune-deviceconfig-androidsafetynetevaluationtype.md)|Require a specific Play Integrity evaluation type for compliance. Possible values are: `basic`, `hardwareBacked`.|
 
 
 
@@ -89,7 +95,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1223
+Content-length: 1382
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -119,7 +125,10 @@ Content-length: 1223
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordCountToBlock": 4,
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "securityRequireIntuneAppIntegrity": true,
+  "requireNoPendingSystemUpdates": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
 
@@ -128,7 +137,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1395
+Content-Length: 1554
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -161,12 +170,9 @@ Content-Length: 1395
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordCountToBlock": 4,
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "securityRequireIntuneAppIntegrity": true,
+  "requireNoPendingSystemUpdates": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
-
-
-
-
-
-

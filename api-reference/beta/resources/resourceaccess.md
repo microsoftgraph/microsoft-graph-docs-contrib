@@ -1,10 +1,11 @@
 ---
 title: "resourceAccess resource type"
 description: "Specifies an OAuth 2.0 permission scope or an app role that an application requires."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
 author: "psignoret"
+ms.date: 07/22/2024
 ---
 
 # resourceAccess resource type
@@ -13,17 +14,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies an OAuth 2.0 permission scope or an app role that an application requires. The **resourceAccess** property of the [requiredResourceAccess](requiredresourceaccess.md) type is a collection of **ResourceAccess**.
+Object used to specify an OAuth 2.0 permission scope or an app role that an application requires, through the **resourceAccess** property of the [requiredResourceAccess](requiredresourceaccess.md) resource type.
 
 ## Properties
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|Guid|The unique identifier for one of the [oauth2PermissionScopes](permissionscope.md) or [appRole](approle.md) instances that the resource application exposes.|
-|type|String|Specifies whether the **id** property references an [oauth2PermissionScopes](permissionscope.md) or an [appRole](approle.md). Possible values are `Scope` or `Role`.|
+|id|Guid|The unique identifier of an [app role](approle.md) or [delegated permission](permissionScope.md) exposed by the resource application. For delegated permissions, this should match the **id** property of one of the [delegated permissions](permissionscope.md) in the **oauth2PermissionScopes** collection of the resource application's [service principal](serviceprincipal.md). For app roles (application permissions), this should match the **id** property of an [app role](approle.md) in the **appRoles** collection of the resource application's [service principal](serviceprincipal.md).|
+|type|String|Specifies whether the **id** property references a [delegated permission](permissionscope.md) or an [app role](approle.md) (application permission). The possible values are: `Scope` (for delegated permissions) or `Role` (for app roles).|
+
+## Relationships
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -35,8 +40,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "guid",
-  "type": "string"
+  "id": "Guid",
+  "type": "String"
 }
 
 ```

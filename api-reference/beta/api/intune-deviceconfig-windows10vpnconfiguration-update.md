@@ -1,10 +1,11 @@
 ---
 title: "Update windows10VpnConfiguration"
 description: "Update the properties of a windows10VpnConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update windows10VpnConfiguration
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Update the properties of a [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -40,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,12 +68,13 @@ The following table shows the properties that are required when you create the [
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 encoded byte array) Inherited from [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Profile target type. Possible values are: `user`, `device`, `autoPilotDevice`.|
-|connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`.|
+|connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`, `ciscoAnyConnect`, `unknownFutureValue`, `microsoftTunnel`.|
 |enableSplitTunneling|Boolean|Enable split tunneling.|
 |enableAlwaysOn|Boolean|Enable Always On mode.|
 |enableDeviceTunnel|Boolean|Enable device tunnel.|
 |enableDnsRegistration|Boolean|Enable IP address registration with internal DNS.|
 |dnsSuffixes|String collection|Specify DNS suffixes to add to the DNS search list to properly route short names.|
+|microsoftTunnelSiteId|String|ID of the Microsoft Tunnel site associated with the VPN profile.|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`, `derivedCredential`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |enableConditionalAccess|Boolean|Enable conditional access.|
@@ -100,7 +104,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4463
+Content-length: 4566
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -151,6 +155,7 @@ Content-length: 4463
   "dnsSuffixes": [
     "Dns Suffixes value"
   ],
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
   "authenticationMethod": "usernameAndPassword",
   "rememberUserCredentials": true,
   "enableConditionalAccess": true,
@@ -214,7 +219,8 @@ Content-length: 4463
       "appId": "App Id value",
       "appType": "desktop",
       "routingPolicyType": "splitTunnel",
-      "claims": "Claims value"
+      "claims": "Claims value",
+      "vpnTrafficDirection": "inbound"
     }
   ],
   "routes": [
@@ -256,7 +262,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4635
+Content-Length: 4738
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -310,6 +316,7 @@ Content-Length: 4635
   "dnsSuffixes": [
     "Dns Suffixes value"
   ],
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
   "authenticationMethod": "usernameAndPassword",
   "rememberUserCredentials": true,
   "enableConditionalAccess": true,
@@ -373,7 +380,8 @@ Content-Length: 4635
       "appId": "App Id value",
       "appType": "desktop",
       "routingPolicyType": "splitTunnel",
-      "claims": "Claims value"
+      "claims": "Claims value",
+      "vpnTrafficDirection": "inbound"
     }
   ],
   "routes": [
@@ -409,9 +417,3 @@ Content-Length: 4635
   }
 }
 ```
-
-
-
-
-
-

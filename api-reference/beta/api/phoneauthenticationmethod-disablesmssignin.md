@@ -1,10 +1,12 @@
 ---
 title: "phoneAuthenticationMethod: disableSmsSignIn"
 description: "Disable SMS sign-in for a mobile phone"
-localization_priority: Normal
-author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "luc-msft"
+ms.reviewer: intelligentaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.date: 11/21/2024
 ---
 
 # phoneAuthenticationMethod: disableSmsSignIn
@@ -21,17 +23,23 @@ Disable SMS sign-in for an existing `mobile` phone number.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application                            | Not supported. | Not supported. |
+### Permissions acting on self
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|UserAuthenticationMethod.ReadWrite|UserAuthenticationMethod.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+### Permissions acting on other users
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|UserAuthenticationMethod.ReadWrite.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|UserAuthenticationMethod.ReadWrite.All|Not available.|
 
-* Global admin
-* Privileged authentication admin
-* Authentication admin
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
@@ -41,20 +49,21 @@ For delegated scenarios where an admin is acting on another user, the admin need
 POST /me/authentication/phoneMethods/{id}/disableSmsSignIn
 POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/disableSmsSignIn
 ```
+The value of `id` for the `mobile` phoneType is `3179e48a-750b-4051-897c-87b9720928f7`.
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -62,7 +71,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -73,28 +82,18 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7/disableSmsSignIn
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/phoneauthenticationmethod-disablesmssignin-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/phoneauthenticationmethod-disablesmssignin-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/phoneauthenticationmethod-disablesmssignin-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

@@ -1,10 +1,11 @@
 ---
 title: "userExperienceAnalyticsAppHealthAppPerformanceByOSVersion resource type"
-description: "The user experience analytics applicaiton performance entity contains app performance details by OS version."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "The user experience analytics application performance entity contains app performance details by OS version."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # userExperienceAnalyticsAppHealthAppPerformanceByOSVersion resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The user experience analytics applicaiton performance entity contains app performance details by OS version.
+The user experience analytics application performance entity contains app performance details by OS version.
 
 ## Methods
 |Method|Return Type|Description|
@@ -29,16 +30,16 @@ The user experience analytics applicaiton performance entity contains app perfor
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics app version performance object.|
-|osVersion|String|The os version of the application.|
-|osBuildNumber|String|The os build number of the application.|
-|activeDeviceCount|Int32|The number of devices where the app has been active. Valid values -2147483648 to 2147483647|
-|appName|String|The name of the application.|
-|appDisplayName|String|The friendly name of the application.|
-|appPublisher|String|The publisher of the application.|
-|appUsageDuration|Int32|The total usage time of the application in minutes. Valid values -2147483648 to 2147483647|
-|appCrashCount|Int32|The number of crashes for the app. Valid values -2147483648 to 2147483647|
-|meanTimeToFailureInMinutes|Int32|The mean time to failure for the app in minutes. Valid values -2147483648 to 2147483647|
+|id|String|The unique identifier of the user experience analytics application performance by OS version object. Supports: $select, $OrderBy. Read-only.|
+|osVersion|String|The OS version of the application. Supports: $select, $OrderBy. Read-only.|
+|osBuildNumber|String|The OS build number of the application. Supports: $select, $OrderBy. Read-only.|
+|activeDeviceCount|Int32|The number of devices where the application has been active. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
+|appName|String|The name of the application. Possible values are: outlook.exe, excel.exe. Supports: $select, $OrderBy. Read-only.|
+|appDisplayName|String|The friendly name of the application. Possible values are: Outlook, Excel. Supports: $select, $OrderBy. Read-only.|
+|appPublisher|String|The publisher of the application. Supports: $select, $OrderBy. Read-only.|
+|appUsageDuration|Int32|The total usage time of the application in minutes. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
+|appCrashCount|Int32|The number of crashes for the application. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
+|meanTimeToFailureInMinutes|Int32|The mean time to failure for the application in minutes. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
 
 ## Relationships
 None
@@ -66,9 +67,3 @@ Here is a JSON representation of the resource.
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
-
-
-
-
-

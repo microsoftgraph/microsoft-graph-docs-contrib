@@ -1,10 +1,11 @@
 ---
 title: "win32LobAppProductCodeRule resource type"
 description: "A complex type to store the product code and version rule data for a Win32 LOB app. This rule is not supported as a requirement rule."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # win32LobAppProductCodeRule resource type
@@ -45,8 +46,3 @@ Here is a JSON representation of the resource.
   "productVersion": "String"
 }
 ```
-
-
-
-
-

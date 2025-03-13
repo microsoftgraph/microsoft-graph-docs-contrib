@@ -1,10 +1,11 @@
 ---
 title: "deviceComplianceSettingState resource type"
 description: "Device compliance setting State for a given device."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceComplianceSettingState resource type
@@ -30,7 +31,7 @@ Device compliance setting State for a given device.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `blackberry`, `palm`, `unknown`.|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |setting|String|The setting class name and property name.|
 |settingName|String|The Setting Name that is being reported|
 |deviceId|String|The Device Id that is being reported|
@@ -72,9 +73,3 @@ Here is a JSON representation of the resource.
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

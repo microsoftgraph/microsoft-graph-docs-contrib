@@ -1,10 +1,11 @@
 ---
 title: "createCopy action"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Deviceintent Devicemanagementintent Createcopy Api ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # createCopy action
@@ -15,12 +16,14 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
 
-## Prerequisites
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/createCopy
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +51,8 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Not yet documented|
+|displayName|String||
+|description|String||
 
 
 
@@ -63,10 +67,11 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/createCopy
 
 Content-type: application/json
-Content-length: 43
+Content-length: 82
 
 {
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "description": "Description value"
 }
 ```
 
@@ -75,7 +80,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 418
+Content-Length: 465
 
 {
   "value": {
@@ -84,6 +89,7 @@ Content-Length: 418
     "displayName": "Display Name value",
     "description": "Description value",
     "isAssigned": true,
+    "isMigratingToConfigurationPolicy": true,
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "templateId": "Template Id value",
     "roleScopeTagIds": [
@@ -92,9 +98,3 @@ Content-Length: 418
   }
 }
 ```
-
-
-
-
-
-

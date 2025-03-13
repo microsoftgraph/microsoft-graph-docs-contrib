@@ -1,10 +1,11 @@
 ---
 title: "policySetItem resource type"
 description: "A class containing the properties used for PolicySet Item."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # policySetItem resource type
@@ -26,7 +27,7 @@ A class containing the properties used for PolicySet Item.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the MobileAppPolicySetItem.|
+|id|String|Key of the PolicySetItem.|
 |createdDateTime|DateTimeOffset|Creation time of the PolicySetItem.|
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the PolicySetItem.|
 |payloadId|String|PayloadId of the PolicySetItem.|
@@ -63,9 +64,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

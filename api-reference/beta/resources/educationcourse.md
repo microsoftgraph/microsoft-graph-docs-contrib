@@ -2,9 +2,10 @@
 title: "educationCourse resource type"
 description: "Represents the course information for a class."
 author: "mlafleur"
-localization_priority: Normal
-ms.prod: "education"
+ms.localizationpriority: medium
+ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # educationCourse resource type
@@ -25,9 +26,12 @@ Represents the course information for a class. It is used within [educationClass
 | externalId   | String | ID of the course from the syncing system. |
 | subject      | String | Subject of the course.                    |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

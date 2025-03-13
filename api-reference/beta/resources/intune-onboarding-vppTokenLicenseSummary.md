@@ -1,10 +1,11 @@
 ---
 title: "vppTokenLicenseSummary resource type"
 description: "License summary of a given app in a token."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # vppTokenLicenseSummary resource type
@@ -46,9 +47,3 @@ Here is a JSON representation of the resource.
   "usedLicenseCount": 1024
 }
 ```
-
-
-
-
-
-

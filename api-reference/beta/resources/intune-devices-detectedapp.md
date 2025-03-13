@@ -1,10 +1,11 @@
 ---
 title: "detectedApp resource type"
 description: "A managed or unmanaged app that is installed on a managed device. Unmanaged apps will only appear for devices marked as corporate owned."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # detectedApp resource type
@@ -34,6 +35,8 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 |version|String|Version of the discovered application. Read-only|
 |sizeInByte|Int64|Discovered application size in bytes. Read-only|
 |deviceCount|Int32|The number of devices that have installed this application|
+|publisher|String|Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.|
+|platform|[detectedAppPlatformType](../resources/intune-devices-detectedappplatformtype.md)|Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0). Possible values are: `unknown`, `windows`, `windowsMobile`, `windowsHolographic`, `ios`, `macOS`, `chromeOS`, `androidOSP`, `androidDeviceAdministrator`, `androidWorkProfile`, `androidDedicatedAndFullyManaged`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -55,12 +58,8 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "version": "String",
   "sizeInByte": 1024,
-  "deviceCount": 1024
+  "deviceCount": 1024,
+  "publisher": "String",
+  "platform": "String"
 }
 ```
-
-
-
-
-
-

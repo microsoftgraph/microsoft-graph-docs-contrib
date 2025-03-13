@@ -1,10 +1,11 @@
 ---
 title: "deliveryOptimizationGroupIdCustom resource type"
 description: "Custom group id type"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deliveryOptimizationGroupIdCustom resource type
@@ -41,9 +42,3 @@ Here is a JSON representation of the resource.
   "groupIdCustom": "String"
 }
 ```
-
-
-
-
-
-

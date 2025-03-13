@@ -1,10 +1,11 @@
 ---
 title: "userCredentialUsageDetails resource type"
 description: "Represents the self-service password reset usage for a given tenant."
-localization_priority: Normal
-author: "khotz"
-ms.prod: "reports"
+ms.localizationpriority: medium
+author: "egreenberg14"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # userCredentialUsageDetails resource type
@@ -13,22 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
+Represents the self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List userCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md) | userCredentialUsageDetails | Read properties and relationships of a userCredentialUsageDetails object. |
+| [List](../api/reportroot-list-usercredentialusagedetails.md) | [userCredentialUsageDetails](usercredentialusagedetails.md) | Read properties and relationships of a userCredentialUsageDetails object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | string | Represents the authentication method that the user used. Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and `alternateMobileCall` (supported only in registration). |
-| eventDateTime | DateTimeOffset | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
+| authMethod | usageAuthMethod | Represents the authentication method that the user used. Possible values are:`email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, `alternateMobileCall` (supported only in registration), `fido`, `appPassword`,`unknownFutureValue` |
+| eventDateTime | DateTimeOffset | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | failureReason | String | Provides the failure reason for the corresponding reset or registration workflow. |
-| feature | string | Possible values are: `registration` and `reset`. |
+| feature | featureType | Possible values are: `registration`, `reset`, `unknownFutureValue`. |
 | id | String | Read-only. The unique identifier for the activity. Read-only.|
 | isSuccess | Boolean | Indicates success or failure of the workflow. |
 | userDisplayName | String | User name of the user performing the reset or registration workflow. |
@@ -40,7 +41,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -48,7 +49,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.userCredentialUsageDetails",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

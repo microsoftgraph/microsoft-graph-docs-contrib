@@ -1,10 +1,11 @@
 ---
 title: "bookingPerson resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
-localization_priority: Normal
+description: "This is a base type for a person in a Microsoft Bookings business, which can be a bookingCustomer or bookingStaffMember."
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # bookingPerson resource type
@@ -13,12 +14,14 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-This is a base type for a person in a Microsoft Bookings business, which can be a [bookingCustomer](bookingcustomer.md) or [bookingStaffMember](bookingstaffmember.md).
+This resource type is a base type for a person in a Microsoft Bookings business, which can be a [bookingCustomer](bookingcustomer.md) or [bookingStaffMember](bookingstaffmember.md).
+
+Inherits from [bookingNamedEntity](bookingnamedentity.md)
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|String|A name for the derived entity, which interfaces with customers.|
+|displayName|String|A name for the derived entity, which interfaces with customers. Inherited from **bookingNamedEntity**.|
 |emailAddress|String|The email address of the person.|
 |id|String| The ID for the derived entity. Read-only.|
 
@@ -28,7 +31,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

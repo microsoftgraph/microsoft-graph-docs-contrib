@@ -1,10 +1,11 @@
 ---
 title: "deviceComplianceActionType enum type"
 description: "Scheduled Action Type Enum"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceComplianceActionType enum type
@@ -28,9 +29,3 @@ Scheduled Action Type Enum
 |removeResourceAccessProfiles|5|Remove Resource Access Profiles from the device|
 |pushNotification|9|Send push notification to device|
 |remoteLock|10|Remotely lock the device|
-
-
-
-
-
-

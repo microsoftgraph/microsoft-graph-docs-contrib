@@ -1,10 +1,11 @@
 ---
 title: "Replace shift"
 description: "Replace an existing shift."
-author: "nkramer"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "aaku"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Replace shift
@@ -17,15 +18,14 @@ Replace an existing [shift](../resources/shift.md).
 
 If the specified [shift](../resources/shift.md) doesn't exist, this method returns `404 Not found`.
 
+The duration of a shift can't be less than 1 minute or longer than 24 hours.
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "shift_put" } -->
+[!INCLUDE [permissions-table](../includes/permissions/shift-put-permissions.md)]
 
 ## HTTP request
 
@@ -39,8 +39,9 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
@@ -48,13 +49,13 @@ In the request body, supply a JSON representation of a [shift](../resources/shif
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and empty content. If the request specifies the `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,26 +116,18 @@ Prefer: return=representation
   }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-put-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shift-put-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-put-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,7 +137,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "string",
@@ -214,5 +206,3 @@ Content-length: 401
   ]
 }
 -->
-
-

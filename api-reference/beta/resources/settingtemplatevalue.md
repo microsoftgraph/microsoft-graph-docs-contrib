@@ -1,10 +1,12 @@
 ---
 title: "settingTemplateValue resource type"
 description: "Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "dkershaw10"
+ms.subservice: "entra-directory-management"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.date: 03/21/2024
 ---
 
 # settingTemplateValue resource type
@@ -17,16 +19,19 @@ Represents an individual template setting definition, including the default valu
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |defaultValue|string|Default value for the setting. Read-only.|
 |description|string|Description of the setting. Read-only.|
 |name|string|Name of the setting. Read-only.|
 |type|string|Type of the setting. Read-only.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

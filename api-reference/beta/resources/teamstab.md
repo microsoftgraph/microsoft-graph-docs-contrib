@@ -1,10 +1,11 @@
 ---
 title: "teamsTab resource type"
-description: "A teamsTab is a tab that's pinned (attached) to a channel within a team. "
-localization_priority: Normal
-author: "nkramer"
-ms.prod: "microsoft-teams"
+description: "Represents a tab pinned (attached) to a channel or a chat."
+ms.localizationpriority: medium
+author: "AkJo"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 04/20/2024
 ---
 
 # teamsTab resource type
@@ -13,17 +14,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
+Represents a tab pinned (attached) to a [channel](channel.md) or a [chat](chat.md).
+
+For more information about tabs, see [Build tabs for Teams](/microsoftteams/platform/tabs/what-are-tabs).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
-|[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
-|[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Delete tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
-|[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
+|[List tabs in channel](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a channel.|
+|[Get tab in channel](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a channel.|
+|[Add tab to channel](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a channel.|
+|[Update tab in channel](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Updates the properties of a tab in a channel.|
+|[Remove tab from channel](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
+|[List tabs in chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a chat.|
+|[Get tab in chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a chat.|
+|[Add tab to chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a chat.|
+|[Update tab in chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Update the properties of a tab in a chat.|
+|[Remove tab from chat](../api/chat-delete-tabs.md) | None | Remove (unpin) a tab from a chat.|
+
 
 
 ## Properties
@@ -32,8 +41,8 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |:---------------|:--------|:----------|
 |  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read only.     |
 |  displayName            |   string                  |  Name of the tab.     |
-|  name            |   string                  |  (Deprecated) Name of the tab.     |
-|  teamsAppId           |   string             |  App definition identifier of the tab. This value cannot be changed after tab creation.     |
+|  name (deprecated)      |   string                  |  Name of the tab.     |
+|  teamsAppId (deprecated)|   string             |  App definition identifier of the tab. This value can't be changed after tab creation. Because this property is deprecated, we recommend expanding **teamsApp** to retrieve the application that is linked to the tab. |
 |  sortOrderIndex  |   string                  |  Index of the order used for sorting tabs.     |
 |  webUrl          |   string                  |  Deep link URL of the tab instance. Read only.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
@@ -46,7 +55,7 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 <!-- {
@@ -80,7 +89,7 @@ The following is a JSON representation of the resource.
 }
 -->
 
-## See also
+## Related content
 
 [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 

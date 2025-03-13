@@ -1,10 +1,11 @@
 ---
 title: "Update macOSCompliancePolicy"
 description: "Update the properties of a macOSCompliancePolicy object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update macOSCompliancePolicy
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Update the properties of a [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -70,6 +73,7 @@ The following table shows the properties that are required when you create the [
 |systemIntegrityProtectionEnabled|Boolean|Require that devices have enabled system integrity protection.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|System and Privacy setting that determines which download locations apps can be run from on a macOS device. Possible values are: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
 |firewallEnabled|Boolean|Whether the firewall should be enabled or not.|
@@ -88,7 +92,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1083
+Content-length: 1146
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -113,6 +117,7 @@ Content-length: 1083
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "advancedThreatProtectionRequiredSecurityLevel": "secured",
   "storageRequireEncryption": true,
   "gatekeeperAllowedAppSource": "macAppStore",
   "firewallEnabled": true,
@@ -126,7 +131,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1255
+Content-Length: 1318
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -154,6 +159,7 @@ Content-Length: 1255
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "advancedThreatProtectionRequiredSecurityLevel": "secured",
   "storageRequireEncryption": true,
   "gatekeeperAllowedAppSource": "macAppStore",
   "firewallEnabled": true,
@@ -161,9 +167,3 @@ Content-Length: 1255
   "firewallEnableStealthMode": true
 }
 ```
-
-
-
-
-
-

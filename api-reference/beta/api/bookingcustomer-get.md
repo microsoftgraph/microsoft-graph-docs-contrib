@@ -1,10 +1,11 @@
 ---
 title: "Get bookingCustomer"
 description: "Get the properties and relationships of a bookingCustomer object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 08/02/2024
 ---
 
 # Get bookingCustomer
@@ -14,60 +15,84 @@ Namespace: microsoft.graph
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of a [bookingCustomer](../resources/bookingcustomer.md) object.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "bookingcustomer_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingcustomer-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/customers/{id}
+GET /solutions/bookingbusinesses/{id}/customers/{id}
 ```
+
+> **Note:** This method currently requires the ID to be Base64 encoded. GUID IDs do not work.
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
 ## Example
-##### Request
-The following is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_bookingcustomer"
+  "name": "get_bookingcustomer",
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "8bb19078-0f45-4efb-b2c5-da78b860f73a"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingcustomer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-bookingcustomer-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingcustomer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bookingcustomer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bookingcustomer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bookingcustomer-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-bookingcustomer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-bookingcustomer-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,10 +103,40 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/customers/$entity",
     "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
     "displayName": "Adele Vance",
-    "emailAddress": "adelev@proseware.com"
+    "emailAddress": "adelev@proseware.com",
+    "addresses": [
+        {
+            "postOfficeBox":"",
+            "street":"4567 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "type":"home"
+        },
+        {
+            "postOfficeBox":"",
+            "street":"4570 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98054",
+            "type":"business"
+        }
+    ],
+    "phones": [
+        {
+            "number": "206-555-0100",
+            "type": "home"
+        },
+        {
+            "number": "206-555-0200",
+            "type": "business"
+        }
+     ]
 }
 ```
 

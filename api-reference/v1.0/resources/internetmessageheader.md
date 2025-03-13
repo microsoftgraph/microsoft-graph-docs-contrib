@@ -1,10 +1,11 @@
 ---
 title: "internetMessageHeader resource type"
 description: "A key-value pair that represents an Internet message header, as defined by RFC5322, that provides "
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "SuryaLashmiS"
+ms.subservice: outlook
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # internetMessageHeader resource type
@@ -27,7 +28,7 @@ For examples of an Internet message header, see
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

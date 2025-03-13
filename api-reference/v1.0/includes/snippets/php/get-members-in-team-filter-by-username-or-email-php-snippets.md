@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Teams\Item\Members\MembersRequestBuilderGetRequestConfiguration;
+
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new MembersRequestBuilderGetRequestConfiguration();
+$queryParameters = MembersRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@contoso.com')";
+$requestConfiguration->queryParameters = $queryParameters;
+
+
+$result = $graphServiceClient->teams()->byTeamId('team-id')->members()->get($requestConfiguration)->wait();
+
+```

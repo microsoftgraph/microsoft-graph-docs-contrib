@@ -1,10 +1,11 @@
 ---
 title: "Working with Excel in Microsoft Graph"
 description: "You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangery"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: conceptualPageType
+ms.date: 03/06/2024
 ---
 
 # Working with Excel in Microsoft Graph
@@ -13,19 +14,19 @@ doc_type: conceptualPageType
 
 You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:
 
-`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
-`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
+`https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/`  
+`https://graph.microsoft.com/beta/me/drive/root:/{item-path}:/workbook/`  
 
-You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform  create, read, update, and delete (CRUD) operations on the workbook. For example, 
-`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
+You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook. For example, 
+`https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/`  
 returns a collection of worksheet objects that are part of the workbook.    
 
 
-**Note:** The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks are not supported. 
+**Note:** The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks aren't supported. 
 
 ## Authorization and scopes
 
-You can use the [Azure AD v.20 endpoint](../index.md) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Microsoft Entra v.20 endpoint](/graph/auth-register-app-v2) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
 One of the following [permission scopes](/graph/permissions-reference) is required to use the Excel resource:
 
@@ -38,7 +39,7 @@ One of the following [permission scopes](/graph/permissions-reference) is requir
 Excel APIs can be called in one of two modes: 
 
 1. Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation. 
-2. Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.   
+2. Nonpersistent session - Changes made by the API aren't saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.   
 
 To represent the session in the API, use the `workbook-session-id: {session-id}` header. 
 
@@ -52,14 +53,14 @@ Pass a JSON object by setting the `persistchanges` value to `true` or `false`.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/createSession
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/createSession
 content-type: Application/Json 
 authorization: Bearer {access-token}
 
 { "persistChanges": true }
 ```
 
-When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.  
+When the value of `persistChanges` is set to `false`, a nonpersistent session id is returned.  
 
 
 #### Response
@@ -70,7 +71,7 @@ HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.sessionInfo",
   "id": "{session-id}",
   "persistChanges": true
 }
@@ -83,7 +84,7 @@ The session ID returned from the previous call is passed as a header on subseque
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets
+GET https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -101,7 +102,7 @@ Request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets
+GET https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets
 accept: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -115,7 +116,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets",
   "value": [
     {
       "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)",
@@ -138,7 +139,7 @@ content-type: application/json;odata.metadata
  
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets
+POST /{version}/me/drive/root:/workbook/worksheets
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -153,7 +154,7 @@ HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/root/$entity",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D%27)",
   "id": "{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}",
   "name": "Sheet32243",
@@ -166,7 +167,7 @@ content-type: application/json;odata.metadata
  
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
+GET https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -179,7 +180,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D%27)",
   "id": "{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}",
   "name": "Sheet32243",
@@ -188,13 +189,13 @@ content-type: application/json;odata.metadata
 }
 ```
 
-** Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
+** Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which need to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
 
 #### Delete a worksheet
 
 Request
 ```
-DELETE /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D')
+DELETE https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D')
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -212,7 +213,7 @@ HTTP code: 204 No Content
 Request 
 
 ```
-PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
+PATCH https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
 content-type: Application/Json 
 accept: application/Json 
 authorization: Bearer {access-token} 
@@ -229,7 +230,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B00000000-0001-0000-0100-000000000000%7D%27)",
   "id": "{00000000-0001-0000-0100-000000000000}",
   "name": "SheetA",
@@ -245,7 +246,7 @@ content-type: application/json;odata.metadata
 Request
 <!-- { "blockType": "ignored" } -->
 ```http 
-GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
+GET https://graph.microsoft.com/beta/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
 accept: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
@@ -258,7 +259,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts",
   "value": [
     {
       "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)/charts(%27%7B00000000-0008-0000-0100-000003000000%7D%27)",
@@ -280,7 +281,7 @@ content-type: application/json;odata.metadata
 Request 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
+GET https://graph.microsoft.com/beta/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
 ```
@@ -292,7 +293,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#Edm.String",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.String",
   "value": "{base-64-string}"
 }
 ```
@@ -303,7 +304,7 @@ Request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts/Add
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts/Add
 content-type: Application/Json 
 accept: application/Json 
 authorization: Bearer {access-token} 
@@ -318,7 +319,7 @@ HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#chart",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#chart",
   "@odata.type": "#microsoft.graph.workbookChart",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)/charts(%27%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D%27)",
   "height": 216.0,
@@ -334,7 +335,7 @@ content-type: application/json;odata.metadata
 
 <!-- { "blockType": "ignored" } -->
 ```http 
-PATCH /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')
+PATCH https://graph.microsoft.com/beta/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -350,7 +351,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts/$entity",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)/charts(%27%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D%27)",
   "height": 216.0,
   "id": "{2D421098-FA19-41F7-8528-EE7B00E4BB42}",
@@ -366,7 +367,7 @@ content-type: application/json;odata.metadata
 Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
 accept: application/Json 
 authorization: Bearer {access-token} 
@@ -388,7 +389,7 @@ HTTP code: 204 No Content
 Request 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
+GET https://graph.microsoft.com/beta/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
 accept: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -406,7 +407,7 @@ content-type: application/json;odata.metadata
 Request 
 <!-- { "blockType": "ignored" } -->
 ```http 
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -421,7 +422,7 @@ HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables/$entity",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%272%27)",
   "id": "2",
   "name": "NewTableName",
@@ -436,7 +437,7 @@ content-type: application/json;odata.metadata
 Request 
 <!-- { "blockType": "ignored" } -->
 ```http 
-PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
+PATCH https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -451,7 +452,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables/$entity",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%272%27)",
   "id": "2",
   "name": "NewTableName",
@@ -466,7 +467,7 @@ Request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
+GET https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -479,7 +480,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/rows",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/rows",
   "value": [
     {
       "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/rows/itemAt(0)",
@@ -556,7 +557,7 @@ content-type: application/json;odata.metadata
 Request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
+GET https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -569,7 +570,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/columns",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/columns",
   "value": [
     {
       "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/columns(%271%27)",
@@ -668,7 +669,7 @@ content-type: application/json;odata.metadata
 Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -683,7 +684,7 @@ HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/rows/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/rows/$entity",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/rows(null)",
   "index": 6,
   "values": [
@@ -701,7 +702,7 @@ content-type: application/json;odata.metadata
 Request 
 <!-- { "blockType": "ignored" } -->
 ```http 
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
 content-type: Application/Json 
 accept: application/Json 
 
@@ -717,7 +718,7 @@ HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('2')/columns/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('2')/columns/$entity",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%272%27)/columns(%274%27)",
   "id": "4",
   "index": 2,
@@ -741,7 +742,7 @@ content-type: application/json;odata.metadata
 Request 
 <!-- { "blockType": "ignored" } -->
 ```http  
-DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
+DELETE https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -756,7 +757,7 @@ HTTP code: 204 No Content
 Request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
+DELETE https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -771,7 +772,7 @@ HTTP code: 204 No Content
 Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -787,7 +788,7 @@ content-type: application/json;odata.metadata
 Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 
@@ -811,7 +812,7 @@ HTTP code: 204 No Content
 Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 
@@ -837,7 +838,7 @@ HTTP code: 204 No Content
 Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -855,7 +856,7 @@ HTTP code: 204 No Content
 Request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/worksheets('test')/range(address='A1:B2')
+GET https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/worksheets('test')/range(address='A1:B2')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -868,7 +869,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#range",
   "@odata.type": "#microsoft.graph.workbookRange",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/worksheets(%27%7B00000000-0001-0000-0300-000000000000%7D%27)/range(address=%27A1:B2%27)",
   "address": "test!A1:B2",
@@ -958,7 +959,7 @@ content-type: application/json;odata.metadata
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/worksheets('test')/range(address='test!A1:B2')
+PATCH https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/worksheets('test')/range(address='test!A1:B2')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 
@@ -971,7 +972,7 @@ HTTP code: 200 OK
 content-type: application/json;odata.metadata
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#range",
   "@odata.type": "#microsoft.graph.workbookRange",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/worksheets(%27%7B00000000-0001-0000-0300-000000000000%7D%27)/range(address=%27test!A1:B2%27)",
   "address": "test!A1:B2",
@@ -1061,7 +1062,7 @@ content-type: application/json;odata.metadata
 Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 
@@ -1086,7 +1087,7 @@ Request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/names
+GET https://graph.microsoft.com/beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/names
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -1099,7 +1100,7 @@ HTTP code: 200 OK
 content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/names",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/names",
   "value": [
     {
       "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/names(%27data%27)",
@@ -1130,7 +1131,7 @@ content-type: application/json
 
 #### null input in 2-D array
 
-`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.
+`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update takes place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.
 
 For example, to only update specific parts of the Range, such as a cell's Number Format, and to retain the existing number-format on other parts of the Range, set the Number Format where needed and send `null` for the other cells.
 
@@ -1145,7 +1146,7 @@ In the following set request, only some parts of the Range Number Format are set
 
 #### null input for a property
 
-`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.
+`null` isn't a valid single input for the entire property. For example, the following isn't valid because the entire values can't be set to null or ignored.
 
 ```json
 {
@@ -1154,7 +1155,7 @@ In the following set request, only some parts of the Range Number Format are set
 
 ```
 
-The following is not valid either as null is not a valid color value.
+The following isn't valid either as null isn't a valid color value.
 
 ```json
 {
@@ -1164,9 +1165,9 @@ The following is not valid either as null is not a valid color value.
 
 #### Null-Response
 
-Representation of formatting properties that consists of non-uniform values results in the return of a null value in the response.
+Representation of formatting properties that consists of nonuniform values results in the return of a null value in the response.
 
-For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.
+For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation is undefined.
 
 ```json
 {
@@ -1177,7 +1178,7 @@ For example, a Range can consist of one or more cells. In cases where the indivi
 
 A null value is also returned in the response in the following cases:
 - If an error occurs when trying to get a certain property of an object and this property can be set as a null, the property might return a null value in the response.
-- For a range object, when getting a range for entire row or entire column, some properties might return null as the response. If the range size exceeds the upper limitation (5M cells), some properties will return null as the value.
+- For a range object, when getting a range for entire row or entire column, some properties might return null as the response. If the range size exceeds the upper limitation (5M cells), some properties return null as the value.
 
 ### Blank input and output
 
@@ -1222,18 +1223,18 @@ When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`),
 
 Setting cell level properties (such as values, numberFormat, etc.) on unbounded Range is **not allowed** because the input request might be too large to handle.
 
-For example, the following is not a valid update request because the requested range is unbounded.
+For example, the following isn't a valid update request because the requested range is unbounded.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets('Sheet1')/range(address="A:B")
+PATCH /me/drive/root/workbook/worksheets('Sheet1')/range(address="A:B")
 
 {
   "values" : "Due Date"
 }
 ```
 
-When an update operation is attempted on such a Range, the API will return an error.
+When an update operation is attempted on such a Range, the API returns an error.
 
 
 ### Large Range
@@ -1247,15 +1248,15 @@ To avoid this, we recommend that you read or write for large Range in multiple s
 
 To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.
 
-The API will look for a *single cell value* and, if the target range dimension doesn't match the input range dimension, it will apply the update to the entire range in the CTRL+Enter model with the value or formula provided in the request.
+The API looks for a *single cell value* and, if the target range dimension doesn't match the input range dimension, it applies the update to the entire range in the CTRL+Enter model with the value or formula provided in the request.
 
 #### Examples
 
-The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.
+The following request updates the selected range with the text of "Sample text". In the request, the range has 200 cells, whereas the provided input only has one cell value.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
+PATCH /me/drive/root/workbook/worksheets('Sheet1')/range(address="A1:B100")
 
 {
   "values" : "Sample text"
@@ -1303,7 +1304,7 @@ content-type: application/json
 
 Errors are returned with an HTTP error code and an error object. An error `code` and `message` explain the reason for the error.
  
-The following is an example.
+Here's an example.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1322,5 +1323,3 @@ Content-Type: application/json
 }
 ```
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

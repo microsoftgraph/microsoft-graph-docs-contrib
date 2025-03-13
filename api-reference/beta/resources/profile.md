@@ -1,21 +1,24 @@
 ---
 title: "profile resource type"
-description: "Represents properties that are descriptive of a user and that are surfaced in shared, people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph."
-localization_priority: Normal
+description: "Represents properties that are descriptive of a user and that are surfaced in shared people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph."
+ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: people
 doc_type: "resourcePageType"
+ms.date: 12/02/2024
 ---
- 
+
 # profile resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents properties that are descriptive of a user in a tenant, for example, anniversaries and education activities. These properties are surfaced in shared, people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph. 
+Represents properties that are descriptive of a user in a tenant; for example, anniversaries and education activities. These properties are surfaced in shared people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph.
 
-Programmatically, these properties are expressed as [relationships](#relationships) of the **profile** resource. To get one of these navigation properties or create an instance of these properties for the user, use the corresponding GET or POST method on that property, where applicable. See the [methods](#methods) listed below.
+Programmatically, these properties are expressed as [relationships](#relationships) of the **profile** resource. To get one of these navigation properties or create an instance of these properties for the user, use the corresponding GET or POST method on that property, where applicable. For more details, see the [Methods](#methods) section.
+
+In addition to the navigation properties in the [Relationships](#relationships) section, other properties exclusive to first-party applications, such as user pronouns, aren't exposed on Microsoft Graph.
 
 ## Methods
 
@@ -46,15 +49,15 @@ Programmatically, these properties are expressed as [relationships](#relationshi
 | [Create personAnnotation](../api/profile-post-notes.md)                    | [personAnnotation](personannotation.md)                        | Create a new **personAnnotation** object by posting to the notes collection.                 |
 | [List notes](../api/profile-list-notes.md)                                 | [personAnnotation](personannotation.md) collection             | Get a **personAnnotation** object collection.                                                |
 | [Create itemPatent](../api/profile-post-patents.md)                        | [itemPatent](itempatent.md)                                    | Create a new **itemPatent** object by posting to the patents collection.                     |
-| [List patents](../api/profile-list-patents.md)                             | [itemPatent](itempatent.md) collection                         | Get a **itemPatent** object collection.                                                      |
+| [List patents](../api/profile-list-patents.md)                             | [itemPatent](itempatent.md) collection                         | Get an **itemPatent** object collection.                                                      |
 | [Create itemPhone](../api/profile-post-phones.md)                          | [itemPhone](itemphone.md)                                      | Create a new itemPhone by posting to the phones collection.                                  |
-| [List phones](../api/profile-list-phones.md)                               | [itemPhone](itemphone.md) collection                           | Get a **itemPhone** object collection.                                                       |
+| [List phones](../api/profile-list-phones.md)                               | [itemPhone](itemphone.md) collection                           | Get an **itemPhone** object collection.                                                       |
 | [Create workPosition](../api/profile-post-positions.md)                    | [workPosition](workposition.md)                                | Create a new workPosition by posting to the positions collection.                            |
 | [List positions](../api/profile-list-positions.md)                         | [workPosition](workposition.md) collection                     | Get a **workPosition** object collection.                                                    |
 | [Create projectParticipation](../api/profile-post-projects.md)             | [projectParticipation](projectparticipation.md)                | Create a new **projectParticipation** by posting to the projects collection.                 |
 | [List projects](../api/profile-list-projects.md)                           | [projectParticipation](projectparticipation.md) collection     | Get a **projectParticipation** object collection.                                            |
 | [Create itemPublication](../api/profile-post-publications.md)              | [itemPublication](itempublication.md)                          | Create a new **itemPublication** object by posting to the publications collection.           |
-| [List publications](../api/profile-list-publications.md)                   | [itemPublication](itempublication.md) collection               | Get a **itemPublication** object collection.                                                 |
+| [List publications](../api/profile-list-publications.md)                   | [itemPublication](itempublication.md) collection               | Get an **itemPublication** object collection.                                                 |
 | [Create personResponsibility](../api/profile-post-responsibilities.md)     | [personResponsibility](personresponsibility.md)                | Create a new **personResponsibility** object by posting to the responsibilities collection.  |
 | [List responsibilities](../api/profile-list-responsibilities.md)           | [personResponsibility](personresponsibility.md) collection     | Get a **personResponsibility** object collection.                                            |
 | [Create skillProficiency](../api/profile-post-skills.md)                   | [skillProficiency](skillproficiency.md)                        | Create a new **skillProficiency** by posting to the skills collection.                       |
@@ -97,7 +100,7 @@ Programmatically, these properties are expressed as [relationships](#relationshi
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -105,7 +108,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.profile",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

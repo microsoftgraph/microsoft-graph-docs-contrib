@@ -1,10 +1,11 @@
 ---
 title: "miracastChannel enum type"
 description: "Possible values for Miracast channel."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # miracastChannel enum type
@@ -39,12 +40,3 @@ Possible values for Miracast channel.
 |oneHundredFiftySeven|157|OneHundredFifty-Seven.|
 |oneHundredSixtyOne|161|OneHundredSixty-One.|
 |oneHundredSixtyFive|165|OneHundredSixty-Five.|
-
-
-
-
-
-
-
-
-

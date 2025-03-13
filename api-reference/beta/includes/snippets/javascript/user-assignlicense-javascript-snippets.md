@@ -11,20 +11,22 @@ const options = {
 const client = Client.init(options);
 
 const user = {
-  addLicenses: [
-    {
-      disabledPlans: [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      skuId: "skuId-value-1"
-    },
-    {
-      disabledPlans: [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
-      skuId: "skuId-value-2"
-    }
-  ],
-  removeLicenses: []
+    addLicenses: [
+        {
+            disabledPlans: [
+                '8a256a2b-b617-496d-b51b-e76466e88db0'
+            ],
+            skuId: '84a661c4-e949-4bd2-a560-ed7766fcaf2b'
+        },
+        {
+            disabledPlans: [],
+            skuId: 'f30db892-07e9-47e9-837c-80727f46fd3d'
+        }
+    ],
+    removeLicenses: []
 };
 
-let res = await client.api('/me/assignLicense')
+await client.api('/me/assignLicense')
 	.version('beta')
 	.post(user);
 

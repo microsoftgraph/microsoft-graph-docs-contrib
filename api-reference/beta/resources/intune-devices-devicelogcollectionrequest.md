@@ -1,10 +1,11 @@
 ---
 title: "deviceLogCollectionRequest resource type"
 description: "Windows Log Collection request entity."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceLogCollectionRequest resource type
@@ -21,7 +22,7 @@ Windows Log Collection request entity.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier|
-|templateType|[deviceLogCollectionTemplateType](../resources/intune-devices-devicelogcollectiontemplatetype.md)|The template type that is sent with the collection request. Possible values are: `predefined`.|
+|templateType|[deviceLogCollectionTemplateType](../resources/intune-devices-devicelogcollectiontemplatetype.md)|Indicates The template type that is sent with the collection request. defaule is Predefined. Possible values are: `predefined`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -40,9 +41,3 @@ Here is a JSON representation of the resource.
   "templateType": "String"
 }
 ```
-
-
-
-
-
-

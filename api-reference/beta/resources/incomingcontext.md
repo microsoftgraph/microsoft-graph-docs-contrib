@@ -2,9 +2,10 @@
 title: "incomingContext resource type"
 description: "The context associated with an incoming call."
 author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # incomingContext resource type
@@ -24,9 +25,12 @@ The context associated with an incoming call.
 | sourceParticipantId   | String                        | The id of the participant that triggered the incoming call. Read-only.  |
 | transferor            | [identitySet](identityset.md) | The identity that transferred the call.                                 |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

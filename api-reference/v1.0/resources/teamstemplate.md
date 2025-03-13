@@ -1,10 +1,11 @@
 ---
 title: "teamsTemplate resource type"
 description: "Describes teamsTemplate entity."
-author: "nkramer"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "MSFTRickyCastaneda"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamsTemplate resource type
@@ -23,6 +24,7 @@ A team template is a blueprint for creating a [team](../resources/team.md) in Mi
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamsTemplate",
   "baseType": "microsoft.graph.entity"
 }-->
@@ -33,7 +35,7 @@ A team template is a blueprint for creating a [team](../resources/team.md) in Mi
 }
 ```
 
-## See also
+## Related content
 
 - [team](team.md)
 

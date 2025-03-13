@@ -1,10 +1,11 @@
 ---
 title: "deviceAndAppManagementRoleAssignment resource type"
 description: "The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceAndAppManagementRoleAssignment resource type
@@ -63,12 +64,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

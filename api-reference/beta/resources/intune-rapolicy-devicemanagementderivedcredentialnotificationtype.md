@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementDerivedCredentialNotificationType enum type"
 description: "Supported values for the notification type to use."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementDerivedCredentialNotificationType enum type
@@ -23,9 +24,3 @@ Supported values for the notification type to use.
 |none|0|None|
 |companyPortal|1|Company Portal|
 |email|2|Email|
-
-
-
-
-
-

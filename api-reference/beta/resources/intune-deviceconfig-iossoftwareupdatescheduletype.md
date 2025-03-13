@@ -1,10 +1,11 @@
 ---
 title: "iosSoftwareUpdateScheduleType enum type"
 description: "Update schedule type for iOS software updates."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # iosSoftwareUpdateScheduleType enum type
@@ -24,9 +25,3 @@ Update schedule type for iOS software updates.
 |alwaysUpdate|1|Always update.|
 |updateDuringTimeWindows|2|Update during time windows.|
 |updateOutsideOfTimeWindows|3|Update outside of time windows.|
-
-
-
-
-
-

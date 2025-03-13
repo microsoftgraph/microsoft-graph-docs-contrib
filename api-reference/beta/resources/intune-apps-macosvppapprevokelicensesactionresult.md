@@ -1,10 +1,11 @@
 ---
 title: "macOsVppAppRevokeLicensesActionResult resource type"
 description: "Defines results for actions on MacOS Vpp Apps, contains inherited properties for ActionResult."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # macOsVppAppRevokeLicensesActionResult resource type
@@ -54,9 +55,3 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

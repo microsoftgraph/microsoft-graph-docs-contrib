@@ -1,10 +1,11 @@
 ---
 title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceOperatingSystemSummary resource type
@@ -32,7 +33,10 @@ Device operating system summary.
 |androidWorkProfileCount|Int32|Number of work profile Android devices.|
 |androidCorporateWorkProfileCount|Int32|The count of Corporate work profile Android devices. Also known as Corporate Owned Personally Enabled (COPE). Valid values -1 to 2147483647|
 |configMgrDeviceCount|Int32|Number of ConfigMgr managed devices.|
-|aospUserlessCount|Int32|Number of AOSP dedicated Android devices. Valid values 0 to 2147483647|
+|aospUserlessCount|Int32|Number of AOSP userless Android devices. Valid values 0 to 2147483647|
+|aospUserAssociatedCount|Int32|Number of AOSP user-associated Android devices. Valid values 0 to 2147483647|
+|linuxCount|Int32|Number of Linux OS devices. Valid values 0 to 2147483647|
+|chromeOSCount|Int32|Number of Chrome OS devices. Valid values 0 to 2147483647|
 
 ## Relationships
 None
@@ -59,12 +63,9 @@ Here is a JSON representation of the resource.
   "androidWorkProfileCount": 1024,
   "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024,
-  "aospUserlessCount": 1024
+  "aospUserlessCount": 1024,
+  "aospUserAssociatedCount": 1024,
+  "linuxCount": 1024,
+  "chromeOSCount": 1024
 }
 ```
-
-
-
-
-
-

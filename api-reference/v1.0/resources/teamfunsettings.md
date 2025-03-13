@@ -1,10 +1,11 @@
 ---
 title: "teamFunSettings resource type"
 description: "Settings to configure use of Giphy, memes, and stickers in the team."
-localization_priority: Normal
-author: "nkramer"
-ms.prod: "microsoft-teams"
+ms.localizationpriority: medium
+author: "MSFTRickyCastaneda"
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamFunSettings resource type
@@ -18,14 +19,14 @@ Settings to configure use of Giphy, memes, and stickers in the [team](team.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowGiphy|Boolean|If set to true, enables Giphy use.|
-|giphyContentRating|String (enum)|Giphy content rating. Possible values are: `moderate`, `strict`.|
-|allowStickersAndMemes|Boolean|If set to true, enables users to include stickers and memes.|
 |allowCustomMemes|Boolean|If set to true, enables users to include custom memes.|
+|allowGiphy|Boolean|If set to true, enables Giphy use.|
+|allowStickersAndMemes|Boolean|If set to true, enables users to include stickers and memes.|
+|giphyContentRating|String (enum)|Giphy content rating. Possible values are: `moderate`, `strict`.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

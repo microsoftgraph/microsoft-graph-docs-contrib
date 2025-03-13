@@ -4,9 +4,10 @@ description: Complex data types in JSON for Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
-ms.prod: "dynamics-365-business-central"
+ms.localizationpriority: medium
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # complex types JSON

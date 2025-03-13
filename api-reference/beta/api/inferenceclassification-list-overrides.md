@@ -1,10 +1,11 @@
 ---
 title: "List overrides"
 description: "Get the Focused Inbox overrides that a user has set up to always classify messages from certain senders in specific ways."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "svpsiva"
-ms.prod: ""
+author: "SuryaLashmiS"
+ms.subservice: mail
+ms.date: 06/22/2024
 ---
 
 # List overrides
@@ -16,14 +17,14 @@ Namespace: microsoft.graph
 Get the [Focused Inbox](../resources/manage-focused-inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.
 
 Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read    |
-|Delegated (personal Microsoft account) | Mail.Read    |
-|Application | Mail.Read |
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "inferenceclassification_list_overrides" } -->
+[!INCLUDE [permissions-table](../includes/permissions/inferenceclassification-list-overrides-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,17 +36,17 @@ GET /users/{id}/inferenceClassification/overrides
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -55,22 +56,43 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-overrides-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-overrides-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-overrides-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-overrides-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-overrides-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-overrides-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-overrides-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-overrides-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-overrides-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,7 +109,7 @@ Content-type: application/json
       "classifyAs": "focused",
       "senderEmailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
       },
       "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
     },
@@ -95,7 +117,7 @@ Content-type: application/json
       "classifyAs": "other",
       "senderEmailAddress": {
         "name": "Randi Welch",
-        "address": "randiw@adatum.onmicrosoft.com"
+        "address": "randiw@contoso.com"
       },
       "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
     }

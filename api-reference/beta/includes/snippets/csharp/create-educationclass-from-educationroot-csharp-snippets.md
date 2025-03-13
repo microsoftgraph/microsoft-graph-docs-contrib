@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationClass = new EducationClass
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new EducationClass
 {
 	Description = "Health Level 1",
 	ClassCode = "Health 501",
@@ -14,11 +17,11 @@ var educationClass = new EducationClass
 	ExternalId = "11019",
 	ExternalName = "Health Level 1",
 	ExternalSource = EducationExternalSource.Sis,
-	MailNickname = "fineartschool.net"
+	MailNickname = "fineartschool.net",
 };
 
-await graphClient.Education.Classes
-	.Request()
-	.AddAsync(educationClass);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Education.Classes.PostAsync(requestBody);
+
 
 ```

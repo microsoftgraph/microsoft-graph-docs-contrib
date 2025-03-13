@@ -1,10 +1,11 @@
 ---
 title: "deviceComplianceScriptDeviceState resource type"
 description: "Contains properties for device run state of the device compliance script."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceComplianceScriptDeviceState resource type
@@ -62,9 +63,3 @@ Here is a JSON representation of the resource.
   "scriptError": "String"
 }
 ```
-
-
-
-
-
-

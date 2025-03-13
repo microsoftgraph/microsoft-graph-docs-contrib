@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementTroubleshootingErrorResource resource type"
 description: "Object representing a link to troubleshooting information, the link could be to the Azure Portal or a Microsoft doc."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementTroubleshootingErrorResource resource type
@@ -20,7 +21,7 @@ Object representing a link to troubleshooting information, the link could be to 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|text|String|Not yet documented|
+|text|String||
 |link|String|The link to the web resource. Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}|
 
 ## Relationships
@@ -40,9 +41,3 @@ Here is a JSON representation of the resource.
   "link": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "Get androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get androidDeviceOwnerGeneralDeviceConfiguration
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -43,7 +46,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6589
+Content-Length: 11470
 
 {
   "value": {
@@ -101,6 +104,15 @@ Content-Length: 6589
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "azureAdSharedDeviceDataClearApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "accountsBlockModification": true,
     "appsAllowInstallFromUnknownSources": true,
     "appsAutoUpdatePolicy": "userChoice",
@@ -111,6 +123,9 @@ Content-Length: 6589
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
     "certificateCredentialConfigurationDisabled": true,
+    "crossProfilePoliciesAllowCopyPaste": true,
+    "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+    "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
     "microsoftLauncherConfigurationEnabled": true,
     "microsoftLauncherCustomWallpaperEnabled": true,
     "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -123,6 +138,29 @@ Content-Length: 6589
     "enrollmentProfile": "dedicatedDevice",
     "dataRoamingBlocked": true,
     "dateTimeConfigurationBlocked": true,
+    "detailedHelpText": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+      "localizedMessages": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "defaultMessage": "Default Message value"
+    },
+    "deviceOwnerLockScreenMessage": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+      "localizedMessages": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "defaultMessage": "Default Message value"
+    },
+    "securityCommonCriteriaModeEnabled": true,
     "factoryResetDeviceAdministratorEmails": [
       "Factory Reset Device Administrator Emails value"
     ],
@@ -132,6 +170,11 @@ Content-Length: 6589
       "proxyAutoConfigURL": "Proxy Auto Config URL value"
     },
     "googleAccountsBlocked": true,
+    "kioskCustomizationDeviceSettingsBlocked": true,
+    "kioskCustomizationPowerButtonActionsBlocked": true,
+    "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+    "kioskCustomizationSystemErrorWarnings": true,
+    "kioskCustomizationSystemNavigation": "navigationEnabled",
     "kioskModeScreenSaverConfigurationEnabled": true,
     "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
     "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -164,6 +207,46 @@ Content-Length: 6589
     "kioskModeWifiAllowedSsids": [
       "Kiosk Mode Wifi Allowed Ssids value"
     ],
+    "kioskModeAppOrderEnabled": true,
+    "kioskModeAppsInFolderOrderedByName": true,
+    "kioskModeGridHeight": 3,
+    "kioskModeGridWidth": 2,
+    "kioskModeLockHomeScreen": true,
+    "kioskModeManagedFolders": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+        "folderName": "Folder Name value",
+        "folderIdentifier": "Folder Identifier value",
+        "items": [
+          {
+            "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+            "label": "Label value",
+            "link": "Link value"
+          }
+        ]
+      }
+    ],
+    "kioskModeAppPositions": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+        "position": 8,
+        "item": {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "Label value",
+          "link": "Link value"
+        }
+      }
+    ],
+    "kioskModeManagedHomeScreenAutoSignout": true,
+    "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 7,
+    "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 8,
+    "kioskModeManagedHomeScreenPinComplexity": "simple",
+    "kioskModeManagedHomeScreenPinRequired": true,
+    "kioskModeManagedHomeScreenPinRequiredToResume": true,
+    "kioskModeManagedHomeScreenSignInBackground": "Kiosk Mode Managed Home Screen Sign In Background value",
+    "kioskModeManagedHomeScreenSignInBrandingLogo": "Kiosk Mode Managed Home Screen Sign In Branding Logo value",
+    "kioskModeManagedHomeScreenSignInEnabled": true,
+    "kioskModeUseManagedHomeScreenApp": "singleAppMode",
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
@@ -182,12 +265,23 @@ Content-Length: 6589
     "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
     "passwordPreviousPasswordCountToBlock": 4,
     "passwordRequiredType": "required",
+    "passwordRequireUnlock": "daily",
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "playStoreMode": "allowList",
-    "safeBootBlocked": true,
     "screenCaptureBlocked": true,
-    "securityAllowDebuggingFeatures": true,
+    "securityDeveloperSettingsEnabled": true,
     "securityRequireVerifyApps": true,
+    "shortHelpText": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+      "localizedMessages": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "defaultMessage": "Default Message value"
+    },
     "statusBarBlocked": true,
     "stayOnModes": [
       "ac"
@@ -195,6 +289,15 @@ Content-Length: 6589
     "storageAllowUsb": true,
     "storageBlockExternalMedia": true,
     "storageBlockUsbFileTransfer": true,
+    "systemUpdateFreezePeriods": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+        "startMonth": 10,
+        "startDay": 8,
+        "endMonth": 8,
+        "endDay": 6
+      }
+    ],
     "systemUpdateWindowStartMinutesAfterMidnight": 11,
     "systemUpdateWindowEndMinutesAfterMidnight": 9,
     "systemUpdateInstallType": "postpone",
@@ -209,6 +312,16 @@ Content-Length: 6589
     "personalProfileAppsAllowInstallFromUnknownSources": true,
     "personalProfileCameraBlocked": true,
     "personalProfileScreenCaptureBlocked": true,
+    "personalProfilePlayStoreMode": "blockedApps",
+    "personalProfilePersonalApplications": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "workProfilePasswordExpirationDays": 1,
     "workProfilePasswordMinimumLength": 0,
     "workProfilePasswordMinimumNumericCharacters": 11,
@@ -219,13 +332,27 @@ Content-Length: 6589
     "workProfilePasswordMinimumSymbolCharacters": 10,
     "workProfilePasswordPreviousPasswordCountToBlock": 15,
     "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-    "workProfilePasswordRequiredType": "required"
+    "workProfilePasswordRequiredType": "required",
+    "workProfilePasswordRequireUnlock": "daily",
+    "locateDeviceUserlessDisabled": true,
+    "locateDeviceLostModeEnabled": true,
+    "androidDeviceOwnerDelegatedScopeAppSettings": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerDelegatedScopeAppSetting",
+        "appDetail": {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        },
+        "appScopes": [
+          "certificateInstall"
+        ]
+      }
+    ],
+    "shareDeviceLocationDisabled": true,
+    "deviceLocationMode": "disabled"
   }
 }
 ```
-
-
-
-
-
-

@@ -1,16 +1,16 @@
 ---
-title: "Grant an appRoleAssignment to a service principal"
-description: "Grant an app role assignment to a service principal."
-localization_priority: Priority
+title: "Grant an appRoleAssignment for a service principal"
+description: "Grant an app role assignment for a service principal."
+ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "sureshja"
+ms.subservice: "entra-applications"
+author: "psignoret"
+ms.date: 08/14/2024
 ---
 
 # Grant an appRoleAssignment for a service principal
 
 Namespace: microsoft.graph
-
 
 Assign an app role for a resource service principal, to a user, group, or client service principal.
 
@@ -22,28 +22,32 @@ To grant an app role assignment, you need three identifiers:
 - `resourceId`: The `id` of the resource **servicePrincipal** which has defined the app role.
 - `appRoleId`: The `id` of the **appRole** (defined on the resource service principal) to assign to a user, group, or service principal.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All, |
+<!-- { "blockType": "permissions", "name": "serviceprincipal_post_approleassignedto" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-post-approleassignedto-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
+
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/appRoleAssignedTo
+POST /servicePrincipals(appId='{appId}')/appRoleAssignedTo
 ```
 
 ## Request headers
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -58,7 +62,7 @@ If successful, this method returns a `201 Created` response code and an [appRole
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -68,42 +72,57 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo
+POST https://graph.microsoft.com/v1.0/servicePrincipals/9028d19c-26a9-4809-8e3f-20ff73e2d75e/appRoleAssignedTo
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "appRoleId": "appRoleId-value"
+  "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
+  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-create-approleassignedto-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-create-approleassignedto-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-create-approleassignedto-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-create-approleassignedto-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-create-approleassignedto-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignedto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-create-approleassignedto-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-create-approleassignedto-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-create-approleassignedto-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-create-approleassignedto-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 In this example, `{id}` and `{resourceId-value}` would both be the `id` of the resource service principal, and `{principalId}` would be the `id` of the assigned user, group, or client service principal.
 
 ### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -112,18 +131,20 @@ Here is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 253
 
 {
-  "id": "id-value",
-  "creationTimestamp": "2016-10-19T10:37:00Z",
-  "principalType": "principalType-value",
-  "principalId": "principalId-value",
-  "principalDisplayName": "principalDisplayName-value",
-  "resourceId": "resourceId-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('9028d19c-26a9-4809-8e3f-20ff73e2d75e')/appRoleAssignedTo/$entity",
+  "id": "-WmtM5na7Uus0D8kI1yylpU9Mdo0Pb9OoBJvd3T5eKc",
+  "deletedDateTime": null,
+  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
+  "createdDateTime": "2021-02-15T16:14:59.8643039Z",
+  "principalDisplayName": "Parents of Contoso",
+  "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
+  "principalType": "Group",
+  "resourceDisplayName": "Fabrikam App",
+  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```
 

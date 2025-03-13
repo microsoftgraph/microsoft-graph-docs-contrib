@@ -1,10 +1,11 @@
 ---
 title: "Get educationalActivity"
 description: "Retrieve the properties and relationships of an educationalActivity object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 10/08/2024
 ---
 
 # Get educationalActivity
@@ -15,15 +16,41 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [educationalActivity](../resources/educationalactivity.md) object from a users profile.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+Permissions for the following HTTP syntax:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/profile/educationalActivities/{id}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "educationalactivity_get", 
+  "requestUrls": ["GET /me/profile/educationalActivities/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationalactivity-get-permissions.md)]
+
+Permissions for the following HTTP syntax:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "educationalactivity_get_2", 
+  "requestUrls": ["GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationalactivity-get-2-permissions.md)]
 
 ## HTTP request
 
@@ -42,11 +69,11 @@ This method supports the `$select` query parameter. Specify a list of properties
 
 |Name            |Description                  |
 |:---------------|:----------------------------|
-|Authorization   |Bearer {token}. Required.    |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +83,7 @@ If successful, this method returns a `200 OK` response code and the requested [e
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -68,25 +95,46 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-educationalactivity-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationalactivity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationalactivity-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-educationalactivity-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationalactivity-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-educationalactivity-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

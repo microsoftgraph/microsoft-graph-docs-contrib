@@ -2,9 +2,10 @@
 title: "Create educationSchool"
 description: "Create a school."
 author: "mmast-msft"
-localization_priority: Normal
-ms.prod: "education"
+ms.localizationpriority: medium
+ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create educationSchool
@@ -15,15 +16,14 @@ Namespace: microsoft.graph
 
 Create a school.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not supported.                              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | EduRoster.ReadWrite.All                     |
+<!-- { "blockType": "permissions", "name": "educationroot_post_schools" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationroot-post-schools-permissions.md)]
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ POST /education/schools
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json          |
 
 ## Request body
@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and an [educati
 
 ##### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -62,12 +62,10 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/education/schools
 Content-type: application/json
-Content-length: 292
 
 {
   "displayName": "Fabrikam High School",
   "description": "Magnate school for the arts. Los Angeles School District",
-  "status": "String",
   "externalSource": "String",
   "principalEmail": "AmyR@fabrikam.com",
   "principalName": "Amy Roebuck",
@@ -91,21 +89,41 @@ Content-length: 292
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationschool-from-educationroot-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-educationschool-from-educationroot-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationschool-from-educationroot-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationschool-from-educationroot-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationschool-from-educationroot-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationschool-from-educationroot-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-educationschool-from-educationroot-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationschool-from-educationroot-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-educationschool-from-educationroot-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
 
-The following is an example of the response.
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -115,13 +133,11 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 292
 
 {
   "id": "10002",
   "displayName": "Fabrikam High School",
   "description": "Magnate school for the arts. Los Angeles School District",
-  "status": "String",
   "externalSource": "String",
   "principalEmail": "AmyR@fabrikam.com",
   "principalName": "Amy Roebuck",

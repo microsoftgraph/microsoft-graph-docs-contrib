@@ -2,9 +2,10 @@
 title: "Get presence"
 description: "Get a user's presence information."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
+ms.date: 04/05/2024
 ---
 
 # Get presence
@@ -15,32 +16,34 @@ Namespace: microsoft.graph
 
 Get a user's [presence](../resources/presence.md) information.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
-One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Presence.Read, Presence.Read.All      |
-| Delegated (personal Microsoft account) | Not Supported.                        |
-| Application                            | Not Supported.                        |
+<!-- { "blockType": "permissions", "name": "presence_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/presence-get-permissions.md)]
 
-## HTTP Requests
+> [!NOTE]
+> You can't use application permissions to access APIs under the `/me` path.
+
+## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/presence
 GET /users/{id}/presence
 GET /communications/presences
+GET /me/presence
 ```
 
 ## Request Headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [presence](../resources/presence.md) object in the response body.
@@ -63,20 +66,40 @@ The following example shows how to get your own presence information. This opera
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/presence
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-your-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-your-presence-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-your-presence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-your-presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-your-presence-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-your-presence-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-your-presence-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-your-presence-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-your-presence-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -91,10 +114,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1574
 
-{  
-	"id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-	"availability": "Available",
-	"activity": "Available"
+{
+  "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+  "availability": "Available",
+  "activity": "Available",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
@@ -112,20 +139,40 @@ The following example shows how to get the presence information for another user
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/66825e03-7ef5-42da-9069-724602c31f6b/presence
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-user-presence-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-presence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presence-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presence-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-user-presence-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-presence-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-user-presence-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -142,9 +189,13 @@ Content-Type: application/json
 Content-Length: 1574
 
 {
-	"id": "66825e03-7ef5-42da-9069-724602c31f6b",
-	"availability": "DoNotDisturb",
-	"activity": "Presenting"
+  "id": "66825e03-7ef5-42da-9069-724602c31f6b",
+  "availability": "DoNotDisturb",
+  "activity": "Presenting",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
@@ -164,20 +215,40 @@ The following example shows how to get the presence information for another user
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presences-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-user-presences-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-presences-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presences-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presences-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presences-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-user-presences-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-presences-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-user-presences-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -192,13 +263,13 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 HTTP/1.1 200 OK
 
 {
-    "value": [
-        {
-            "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
-            "availability": "Away",
-            "activity": "BeRightBack"
-        }
-    ]
+  "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+  "availability": "Away",
+  "activity": "BeRightBack",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
@@ -217,4 +288,5 @@ HTTP/1.1 200 OK
 }
 -->
 
-
+## Related content
+- [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)

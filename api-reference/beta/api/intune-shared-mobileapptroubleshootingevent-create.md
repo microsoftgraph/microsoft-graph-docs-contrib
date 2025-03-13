@@ -1,10 +1,11 @@
 ---
 title: "Create mobileAppTroubleshootingEvent"
 description: "Describes the Create mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
-localization_priority: Normal
-author: "dougeby"
-ms.prod: "intune"
+ms.localizationpriority: medium
+author: "jaiprakashmb"
+ms.prod: "Intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create mobileAppTroubleshootingEvent
@@ -17,7 +18,7 @@ Namespace: microsoft.graph
 
 Create a new [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.
 
-## Prerequisites
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -29,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 |&nbsp; &nbsp; **Device management**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Troubleshooting**|DeviceManagementManagedDevices.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {
@@ -43,7 +46,7 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -94,16 +97,3 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "androidWorkProfileTrustedRootCertificate resource type"
 description: "Android Work Profile Trusted Root Certificate configuration profile"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # androidWorkProfileTrustedRootCertificate resource type
@@ -103,9 +104,3 @@ Here is a JSON representation of the resource.
   "certFileName": "String"
 }
 ```
-
-
-
-
-
-

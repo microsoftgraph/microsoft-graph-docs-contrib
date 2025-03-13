@@ -1,10 +1,11 @@
 ---
 title: "deviceManagementApplicabilityRuleType enum type"
 description: "Supported Applicability rule types for Device Configuration"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementApplicabilityRuleType enum type
@@ -22,9 +23,3 @@ Supported Applicability rule types for Device Configuration
 |:---|:---|:---|
 |include|0|Include|
 |exclude|1|Exclude|
-
-
-
-
-
-

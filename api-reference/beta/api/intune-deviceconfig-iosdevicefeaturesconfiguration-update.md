@@ -1,10 +1,11 @@
 ---
 title: "Update iosDeviceFeaturesConfiguration"
 description: "Update the properties of a iosDeviceFeaturesConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update iosDeviceFeaturesConfiguration
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Update the properties of a [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -40,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -67,6 +70,8 @@ The following table shows the properties that are required when you create the [
 |lockScreenFootnote|String|A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.|
 |homeScreenDockIcons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection|A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.|
 |homeScreenPages|[iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) collection|A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.|
+|homeScreenGridWidth|Int32|Gets or sets the number of columns to render when configuring iOS home screen layout settings. If this value is configured, homeScreenGridHeight must be configured as well.|
+|homeScreenGridHeight|Int32|Gets or sets the number of rows to render when configuring iOS home screen layout settings. If this value is configured, homeScreenGridWidth must be configured as well.|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
 |wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. Possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
@@ -86,7 +91,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6716
+Content-length: 7083
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -160,7 +165,8 @@ Content-length: 6716
             {
               "@odata.type": "microsoft.graph.iosHomeScreenApp",
               "displayName": "Display Name value",
-              "bundleID": "Bundle ID value"
+              "bundleID": "Bundle ID value",
+              "isWebClip": true
             }
           ]
         }
@@ -183,7 +189,8 @@ Content-length: 6716
                 {
                   "@odata.type": "microsoft.graph.iosHomeScreenApp",
                   "displayName": "Display Name value",
-                  "bundleID": "Bundle ID value"
+                  "bundleID": "Bundle ID value",
+                  "isWebClip": true
                 }
               ]
             }
@@ -192,6 +199,8 @@ Content-length: 6716
       ]
     }
   ],
+  "homeScreenGridWidth": 3,
+  "homeScreenGridHeight": 4,
   "notificationSettings": [
     {
       "@odata.type": "microsoft.graph.iosNotificationSettings",
@@ -203,7 +212,8 @@ Content-length: 6716
       "showOnLockScreen": true,
       "alertType": "banner",
       "badgesEnabled": true,
-      "soundsEnabled": true
+      "soundsEnabled": true,
+      "previewVisibility": "alwaysShow"
     }
   ],
   "singleSignOnSettings": {
@@ -258,7 +268,9 @@ Content-length: 6716
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -288,7 +300,9 @@ Content-length: 6716
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   }
 }
 ```
@@ -298,7 +312,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6888
+Content-Length: 7255
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -375,7 +389,8 @@ Content-Length: 6888
             {
               "@odata.type": "microsoft.graph.iosHomeScreenApp",
               "displayName": "Display Name value",
-              "bundleID": "Bundle ID value"
+              "bundleID": "Bundle ID value",
+              "isWebClip": true
             }
           ]
         }
@@ -398,7 +413,8 @@ Content-Length: 6888
                 {
                   "@odata.type": "microsoft.graph.iosHomeScreenApp",
                   "displayName": "Display Name value",
-                  "bundleID": "Bundle ID value"
+                  "bundleID": "Bundle ID value",
+                  "isWebClip": true
                 }
               ]
             }
@@ -407,6 +423,8 @@ Content-Length: 6888
       ]
     }
   ],
+  "homeScreenGridWidth": 3,
+  "homeScreenGridHeight": 4,
   "notificationSettings": [
     {
       "@odata.type": "microsoft.graph.iosNotificationSettings",
@@ -418,7 +436,8 @@ Content-Length: 6888
       "showOnLockScreen": true,
       "alertType": "banner",
       "badgesEnabled": true,
-      "soundsEnabled": true
+      "soundsEnabled": true,
+      "previewVisibility": "alwaysShow"
     }
   ],
   "singleSignOnSettings": {
@@ -473,7 +492,9 @@ Content-Length: 6888
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -503,13 +524,9 @@ Content-Length: 6888
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   }
 }
 ```
-
-
-
-
-
-

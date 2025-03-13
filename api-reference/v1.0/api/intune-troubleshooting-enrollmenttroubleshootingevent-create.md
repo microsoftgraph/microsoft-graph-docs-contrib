@@ -1,10 +1,11 @@
 ---
 title: "Create enrollmentTroubleshootingEvent"
 description: "Create a new enrollmentTroubleshootingEvent object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 03/14/2024
 ---
 
 # Create enrollmentTroubleshootingEvent
@@ -15,14 +16,16 @@ Namespace: microsoft.graph
 
 Create a new [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +39,7 @@ POST /deviceManagement/troubleshootingEvents
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -54,7 +57,7 @@ The following table shows the properties that are required when you create the e
 |osVersion|String|OS Version.|
 |userId|String|Identifier for the user that tried to enroll the device.|
 |deviceId|String|Azure AD device identifier.|
-|enrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Type of the enrollment. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
+|enrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Type of the enrollment. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`.|
 |failureCategory|[deviceEnrollmentFailureReason](../resources/intune-troubleshooting-deviceenrollmentfailurereason.md)|Highlevel failure category. Possible values are: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`, `userAbandonment`.|
 |failureReason|String|Detailed failure reason.|
 
@@ -67,8 +70,10 @@ If successful, this method returns a `201 Created` response code and a [enrollme
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_enrollmenttroubleshootingevent_create_create_enrollmenttroubleshootingevent" }-->
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
+POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 Content-type: application/json
 Content-length: 509
 
@@ -89,6 +94,8 @@ Content-length: 509
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph." }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -109,11 +116,6 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
-
-
-
-
-
 
 
 

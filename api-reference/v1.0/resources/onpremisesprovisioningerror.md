@@ -1,17 +1,18 @@
 ---
 title: "onPremisesProvisioningError resource type"
-description: "Represents directory synchronization errors for the user group and contact resources when synchronizing on-premises directories to Azure Active Directory."
-localization_priority: Normal
-author: "japere"
-ms.prod: "microsoft-identity-platform"
+description: "Represents directory synchronization errors for the user group and contact resources when synchronizing on-premises directories to Microsoft Entra ID."
+ms.localizationpriority: medium
+author: "dhruvinrshah"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # onPremisesProvisioningError resource type
 
 Namespace: microsoft.graph
 
-Represents directory synchronization errors for the [user](user.md), [group](group.md) and [orgContact](orgcontact.md) resources when synchronizing on-premises directories to Azure Active Directory.
+Represents directory synchronization errors for the [user](user.md), [group](group.md) and [orgContact](orgcontact.md) resources when synchronizing on-premises directories to Microsoft Entra ID.
 
 ## Properties
 
@@ -23,7 +24,7 @@ Represents directory synchronization errors for the [user](user.md), [group](gro
 |value|String| Value of the property causing the error. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -53,4 +54,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

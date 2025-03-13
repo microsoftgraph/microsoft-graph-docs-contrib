@@ -1,10 +1,11 @@
 ---
 title: "getRelatedAppStates function"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Shared Mobileapp Getrelatedappstates Api ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # getRelatedAppStates function
@@ -15,9 +16,11 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
 
-## Prerequisites
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -42,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -51,8 +54,8 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userPrincipalName|String|Not yet documented|
-|deviceId|String|Not yet documented|
+|userPrincipalName|String||
+|deviceId|String||
 
 
 
@@ -92,12 +95,3 @@ Content-Length: 481
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

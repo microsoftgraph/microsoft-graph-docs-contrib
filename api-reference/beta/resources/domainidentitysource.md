@@ -1,10 +1,11 @@
 ---
 title: "domainIdentitySource resource type"
-description: "The domainIdentitySource type identifies a non-tenant domain as an identity source for a connected organization."
-localization_priority: Normal
+description: "The domainIdentitySource type identifies a nontenant domain as an identity source for a connected organization."
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 10/31/2024
 ---
 
 # domainIdentitySource resource type
@@ -14,6 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.domainIdentitySource` indicates that this type identifies a domain as an identity source for a connected organization.
+
 
 ## Properties
 
@@ -28,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the type.
+Here's a JSON representation of the type.
 
 <!-- {
   "blockType": "resource",
@@ -55,5 +57,3 @@ The following is a JSON representation of the type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

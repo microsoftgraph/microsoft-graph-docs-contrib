@@ -1,11 +1,10 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/11/2017
 title: TextColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The textColumn on a columnDefinition resource indicates that the column's values are text."
-ms.prod: ""
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -34,8 +33,8 @@ Here is a JSON representation of a **textColumn** resource.
 
 | Property name                   | Type    | Description
 |:--------------------------------|:--------|:---------------------------------
-| **allowMultipleLines**          | boolean | Whether to allow multiple lines of text.
-| **appendChangesToExistingText** | boolean | Whether updates to this column should replace existing text, or append to it.
+| **allowMultipleLines**          | Boolean | Whether to allow multiple lines of text.
+| **appendChangesToExistingText** | Boolean | Whether updates to this column should replace existing text, or append to it.
 | **linesForEditing**             | int32   | The size of the text box.
 | **maxLength**                   | int32   | The maximum number of characters for the value.
 | **textType**                    | string  | The type of text being stored. Must be one of `plain` or `richText`

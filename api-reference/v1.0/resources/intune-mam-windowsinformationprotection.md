@@ -1,10 +1,11 @@
 ---
 title: "windowsInformationProtection resource type"
 description: "Policy for Windows information protection to configure detailed management settings"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windowsInformationProtection resource type
@@ -106,7 +107,7 @@ Here is a JSON representation of the resource.
   "iconsVisible": true,
   "protectedApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -116,7 +117,7 @@ Here is a JSON representation of the resource.
   ],
   "exemptApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -152,9 +153,7 @@ Here is a JSON representation of the resource.
       "displayName": "String",
       "ranges": [
         {
-          "@odata.type": "microsoft.graph.iPv6Range",
-          "lowerAddress": "String",
-          "upperAddress": "String"
+          "@odata.type": "microsoft.graph.ipRange"
         }
       ]
     }
@@ -201,12 +200,3 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
-
-
-
-
-
-
-
-
-

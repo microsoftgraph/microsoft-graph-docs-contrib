@@ -1,10 +1,11 @@
 ---
 title: "Create appLogCollectionRequest"
 description: "Create a new appLogCollectionRequest object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create appLogCollectionRequest
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Create a new [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -49,10 +52,10 @@ The following table shows the properties that are required when you create the a
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique Identifier. This is userId_DeviceId_AppId id.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Log upload status. Possible values are: `pending`, `completed`, `failed`.|
-|errorMessage|String|Error message if any during the upload process|
-|customLogFolders|String collection|List of log folders. |
-|completedDateTime|DateTimeOffset|Time at which the upload log request reached a terminal state|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Indicates the status for the app log collection request if it is pending, completed or failed, Default is pending. Possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
+|errorMessage|String|Indicates error message if any during the upload process.|
+|customLogFolders|String collection|List of log folders.|
+|completedDateTime|DateTimeOffset|Time at which the upload log request reached a completed state if not completed yet NULL will be returned.|
 
 
 
@@ -97,9 +100,3 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
-
-
-
-
-

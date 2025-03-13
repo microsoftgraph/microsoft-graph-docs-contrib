@@ -1,10 +1,11 @@
 ---
-title: "Search"
-description: "Retrieve the search resource used to execute queries"
-localization_priority: Normal
-author: "nmoreau"
-ms.prod: "search"
+title: "search resource type"
+description: "The top-level object that represents the search endpoint in Microsoft Graph."
+ms.localizationpriority: medium
+author: "njerigrevious"
+ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # search resource type
@@ -13,29 +14,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The search resource is the top level object representing the search endpoint. It serves as an anchor to the [query](../api/search-query.md) action.
+The top-level object that represents the search endpoint. It serves as an anchor to the [query](../api/search-query.md) action.
 
-This resource is not expected to be called as such. Any request on the resource will incur a Bad Request.
+This resource isn't called. Any request that calls the resource results in an HTTP `400 Bad Request` response.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## JSON representation
-
-None
-
-## Properties
-
-None
-
-## Relationships
-
-None
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [query](../api/search-query.md) | [searchResponse](searchresponse.md) Collection| Executes the query specified in the [searchRequest](../resources/searchrequest.md) |
+| [Query data](../api/search-query.md) | [searchResponse](searchresponse.md) collection| Run a specified search query. |
+
+## Properties
+
+None.
+
+## Relationships
+
+None.
+
+## JSON representation
+
+None.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

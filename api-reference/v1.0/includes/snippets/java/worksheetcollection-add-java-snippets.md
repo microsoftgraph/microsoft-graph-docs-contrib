@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String name = "name-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().drive().items("{id}").workbook().worksheets()
-	.add(name)
-	.buildRequest()
-	.post();
+com.microsoft.graph.drives.item.items.item.workbook.worksheets.add.AddPostRequestBody addPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.worksheets.add.AddPostRequestBody();
+addPostRequestBody.setName("name-value");
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().add().post(addPostRequestBody);
+
 
 ```

@@ -1,19 +1,20 @@
 ---
 title: "companyPortalAction enum type"
 description: "Action on a device that can be executed in the Company Portal"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # companyPortalAction enum type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Action on a device that can be executed in the Company Portal
 
@@ -23,9 +24,3 @@ Action on a device that can be executed in the Company Portal
 |unknown|0|Unknown device action|
 |remove|1|Remove device from Company Portal|
 |reset|2|Reset device enrolled in Company Portal|
-
-
-
-
-
-

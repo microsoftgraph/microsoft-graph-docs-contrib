@@ -1,14 +1,14 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "This resource provides information on the status of a asynchronous job progress."
 ms.date: 09/10/2017
-title: AsyncJobStatus
-localization_priority: Normal
+title: asyncJobStatus resource type
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: onedrive
 ---
 
-# AsyncJobStatus resource
+# asyncJobStatus resource type
 
 Namespace: microsoft.graph
 
@@ -16,9 +16,19 @@ Namespace: microsoft.graph
 
 This resource provides information on the status of a asynchronous job progress.
 
-The following API calls return **AsyncJobStatus** resources:
+The following API calls return **asyncJobStatus** resources:
 
 * [Copy Item](../api/driveitem-copy.md)
+
+## Properties
+
+| Property name          | Type   | Description                                                                                |
+|:-----------------------|:-------|:-------------------------------------------------------------------------------------------|
+| percentageComplete| Double | A value between 0 and 100 that indicates the completion percentage.                          |
+| status             | String | A string value that maps to an enumeration of possible values about the status of the job. |
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -30,13 +40,6 @@ The following API calls return **AsyncJobStatus** resources:
   "status": "notStarted | inProgress | completed | updating | failed | deletePending | deleteFailed | waiting"
 }
 ```
-
-## Properties
-
-| Property name          | Type   | Description                                                                                |
-|:-----------------------|:-------|:-------------------------------------------------------------------------------------------|
-| **percentageComplete** | Double | A value between 0 and 100 that indicates the percentage complete.                          |
-| **status**             | String | A string value that maps to an enumeration of possible values about the status of the job. |
 
 <!--
 {

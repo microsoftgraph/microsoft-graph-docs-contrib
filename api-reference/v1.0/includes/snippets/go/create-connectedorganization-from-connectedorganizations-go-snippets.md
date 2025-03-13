@@ -1,0 +1,42 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewConnectedOrganization()
+displayName := "Connected organization name"
+requestBody.SetDisplayName(&displayName) 
+description := "Connected organization description"
+requestBody.SetDescription(&description) 
+
+
+identitySource := graphmodels.NewDomainIdentitySource()
+domainName := "example.com"
+identitySource.SetDomainName(&domainName) 
+displayName := "example.com"
+identitySource.SetDisplayName(&displayName) 
+
+identitySources := []graphmodels.IdentitySourceable {
+	identitySource,
+}
+requestBody.SetIdentitySources(identitySources)
+state := graphmodels.PROPOSED_CONNECTEDORGANIZATIONSTATE 
+requestBody.SetState(&state) 
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+connectedOrganizations, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(context.Background(), requestBody, nil)
+
+
+```

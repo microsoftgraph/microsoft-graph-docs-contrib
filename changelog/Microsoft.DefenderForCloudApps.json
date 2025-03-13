@@ -1,0 +1,214 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dataDiscovery",
+          "ChangeType": "Addition",
+          "Description": "Added the **dataDiscovery** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **appCategory** enumeration type.",
+          "Target": "appCategory"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appInfoCsaStarLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **appInfoCsaStarLevel** enumeration type.",
+          "Target": "appInfoCsaStarLevel"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appInfoDataAtRestEncryptionMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **appInfoDataAtRestEncryptionMethod** enumeration type.",
+          "Target": "appInfoDataAtRestEncryptionMethod"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appInfoDataRetentionPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **appInfoDataRetentionPolicy** enumeration type.",
+          "Target": "appInfoDataRetentionPolicy"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appInfoEncryptionProtocol",
+          "ChangeType": "Addition",
+          "Description": "Added the **appInfoEncryptionProtocol** enumeration type.",
+          "Target": "appInfoEncryptionProtocol"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appInfoFedRampLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **appInfoFedRampLevel** enumeration type.",
+          "Target": "appInfoFedRampLevel"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appInfoHolding",
+          "ChangeType": "Addition",
+          "Description": "Added the **appInfoHolding** enumeration type.",
+          "Target": "appInfoHolding"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appInfoPciDssVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **appInfoPciDssVersion** enumeration type.",
+          "Target": "appInfoPciDssVersion"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appInfoUploadedDataTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **appInfoUploadedDataTypes** enumeration type.",
+          "Target": "appInfoUploadedDataTypes"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudAppInfoState",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudAppInfoState** enumeration type.",
+          "Target": "cloudAppInfoState"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "entityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **entityType** enumeration type.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "logDataProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the **logDataProvider** enumeration type.",
+          "Target": "logDataProvider"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "receiverProtocol",
+          "ChangeType": "Addition",
+          "Description": "Added the **receiverProtocol** enumeration type.",
+          "Target": "receiverProtocol"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "trafficType",
+          "ChangeType": "Addition",
+          "Description": "Added the **trafficType** enumeration type.",
+          "Target": "trafficType"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudAppDiscoveryReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudAppDiscoveryReport](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudAppDiscoveryReport?view=graph-rest-beta) resource.",
+          "Target": "cloudAppDiscoveryReport"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dataDiscoveryReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataDiscoveryReport](https://learn.microsoft.com/en-us/graph/api/resources/security-dataDiscoveryReport?view=graph-rest-beta) resource.",
+          "Target": "dataDiscoveryReport"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dataDiscoveryRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataDiscoveryRoot](https://learn.microsoft.com/en-us/graph/api/resources/security-dataDiscoveryRoot?view=graph-rest-beta) resource.",
+          "Target": "dataDiscoveryRoot"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "discoveredCloudAppDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [discoveredCloudAppDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-discoveredCloudAppDetail?view=graph-rest-beta) resource.",
+          "Target": "discoveredCloudAppDetail"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "discoveredCloudAppDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the [discoveredCloudAppDevice](https://learn.microsoft.com/en-us/graph/api/resources/security-discoveredCloudAppDevice?view=graph-rest-beta) resource.",
+          "Target": "discoveredCloudAppDevice"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "discoveredCloudAppInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [discoveredCloudAppInfo](https://learn.microsoft.com/en-us/graph/api/resources/security-discoveredCloudAppInfo?view=graph-rest-beta) resource.",
+          "Target": "discoveredCloudAppInfo"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "discoveredCloudAppIPAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the [discoveredCloudAppIPAddress](https://learn.microsoft.com/en-us/graph/api/resources/security-discoveredCloudAppIPAddress?view=graph-rest-beta) resource.",
+          "Target": "discoveredCloudAppIPAddress"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "discoveredCloudAppUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [discoveredCloudAppUser](https://learn.microsoft.com/en-us/graph/api/resources/security-discoveredCloudAppUser?view=graph-rest-beta) resource.",
+          "Target": "discoveredCloudAppUser"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "endpointDiscoveredCloudAppDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [endpointDiscoveredCloudAppDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-endpointDiscoveredCloudAppDetail?view=graph-rest-beta) resource.",
+          "Target": "endpointDiscoveredCloudAppDetail"
+        },
+        {
+          "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+          "ApiChange": "Method",
+          "ChangedApiName": "aggregatedAppsDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [aggregatedAppsDetails](https://learn.microsoft.com/en-us/graph/api/security-cloudAppDiscoveryReport-aggregatedAppsDetails?view=graph-rest-beta) method to the [cloudAppDiscoveryReport](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudAppDiscoveryReport?view=graph-rest-beta) resource.",
+          "Target": "cloudAppDiscoveryReport"
+        }
+      ],
+      "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-17T12:30:24.4589014Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    }
+  ]
+}

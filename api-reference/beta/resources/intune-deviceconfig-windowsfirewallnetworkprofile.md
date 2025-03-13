@@ -1,10 +1,11 @@
 ---
 title: "windowsFirewallNetworkProfile resource type"
 description: "Windows Firewall Profile Policies."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsFirewallNetworkProfile resource type
@@ -82,9 +83,3 @@ Here is a JSON representation of the resource.
   "policyRulesFromGroupPolicyNotMerged": true
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "searchResponse resource type"
-description: "Description of the searchResponse"
-localization_priority: Normal
-author: "nmoreau"
-ms.prod: "search"
+description: "Represents results from a search query, and the terms used for the query. "
+ms.localizationpriority: medium
+author: "njerigrevious"
+ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # searchResponse resource type
@@ -21,10 +22,12 @@ Represents results from a search query, and the terms used for the query.
 |:-------------|:------------|:------------|
 |hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|A collection of search results.|
 |searchTerms|String collection|Contains the search terms sent in the initial search query.|
+|resultTemplates|[resultTemplate](resultTemplate.md) collection|A dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result templates.
+|queryAlterationResponse|[alterationResponse](alterationResponse.md)|Provides details of query alteration response for spelling correction.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -37,8 +40,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "queryAlterationResponse": {"@odata.type": "microsoft.graph.alterationResponse"},
   "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
-  "searchTerms": ["String"]
+  "searchTerms": ["String"],
+  "resultTemplates": [{"@odata.type":"microsoft.graph.resultTemplateDictionary"}]
 }
 ```
 

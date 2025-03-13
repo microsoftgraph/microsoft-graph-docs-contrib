@@ -1,10 +1,11 @@
 ---
 title: "managedAppNotificationRestriction enum type"
 description: "Restrict managed app notification"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # managedAppNotificationRestriction enum type
@@ -23,9 +24,3 @@ Restrict managed app notification
 |allow|0|Share all notifications.|
 |blockOrganizationalData|1|Do not share Orgnizational data in notifications.|
 |block|2|Do not share notifications.|
-
-
-
-
-
-

@@ -2,9 +2,10 @@
 title: "Create outlookTask"
 description: "Create an Outlook task in the specified task folder."
 author: "mashriv"
-localization_priority: Normal
-ms.prod: "outlook"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 04/05/2024
 ---
 
 # Create outlookTask (deprecated)
@@ -21,14 +22,13 @@ Create an Outlook task in the specified task folder.
 The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time 
 to be always midnight in the specified time zone.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.ReadWrite    |
-|Delegated (personal Microsoft account) | Tasks.ReadWrite    |
-|Application | Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "outlooktaskfolder_post_tasks" } -->
+[!INCLUDE [permissions-table](../includes/permissions/outlooktaskfolder-post-tasks-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.|
 
 ## Request body
@@ -53,15 +53,17 @@ If successful, this method returns `201 Created` response code and [outlookTask]
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_outlooktask_from_outlooktaskfolder"
+  "name": "create_outlooktask_from_outlooktaskfolder",
+  "sampleKeys": ["AAMkADIyAAAhrbPXAAA="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
+POST https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPXAAA=/tasks
 Content-type: application/json
-Content-length: 376
 
 {
   "subject": "Shop for dinner",
@@ -75,12 +77,47 @@ Content-length: 376
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-outlooktask-from-outlooktaskfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-outlooktask-from-outlooktaskfolder-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-outlooktask-from-outlooktaskfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-outlooktask-from-outlooktaskfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktask-from-outlooktaskfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-outlooktask-from-outlooktaskfolder-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-outlooktask-from-outlooktaskfolder-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-outlooktask-from-outlooktaskfolder-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
 ##### Response
 The POST method ignores the time portion in the request body and assumes the time to be always midnight in the specified time zone (PST). 
 Then, by default, the POST method converts and shows all the date-related properties in UTC in the response.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,7 +126,6 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 376
 
 {
   "createdDateTime": "2016-04-22T05:44:01.2012012Z",
@@ -132,7 +168,14 @@ Content-length: 376
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/me:
+      /me/outlook/taskFolders/{var}/tasks
+      Uri path requires navigating into unknown object hierarchy: missing property 'taskFolders' on 'outlookUser'. Possible issues:
+  	 1) Doc bug where 'taskFolders' isn't defined on the resource.
+  	 2) Doc bug where 'taskFolders' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'outlookUser' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
 }
 -->
 

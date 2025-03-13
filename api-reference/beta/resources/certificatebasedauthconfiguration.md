@@ -1,10 +1,12 @@
 ---
 title: "certificateBasedAuthConfiguration resource type"
 description: "Represents a collection of certificate authorities."
-localization_priority: Normal
-author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "vimrang"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.keywords: [ CBA ]
+ms.date: 11/07/2024
 ---
 
 # certificateBasedAuthConfiguration resource type
@@ -13,25 +15,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Certificate-based authentication enables you to be authenticated by Azure Active Directory with a client certificate on a Windows, Android, or iOS device when connecting your Exchange Online account to:
+Certificate-based authentication enables you to be authenticated by Microsoft Entra ID with a client certificate on a Windows, Android, or iOS device when connecting your Exchange Online account to:
 
 - Microsoft mobile applications such as Outlook and Word
 - Exchange ActiveSync (EAS) clients
 
 Configuring this feature eliminates the need to enter a username and password combination into certain mail and Microsoft Office applications on your mobile device.
 
-Certificate-based authentication configuration is provided through a collection of certificate authorities. The certificate authorities are used to establish a trusted certificate chain which enables clients to be authenticated by Azure Active Directory with a client certificate.
+Certificate-based authentication configuration is provided through a collection of certificate authorities. The certificate authorities are used to establish a trusted certificate chain which enables clients to be authenticated by Microsoft Entra ID with a client certificate.
 
-Learn more about [certificate-based authentication in Azure Active Directory](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
+Learn more about [certificate-based authentication in Microsoft Entra ID](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
+
+>[!NOTE]
+>Administrators are highly recommended to configure the new scalable platform for [PKI (Public Key Infrastructure) based store](certificatebasedauthpki.md). This new PKI based CA store has higher limits for the number of CAs that supports up to 250CAs as well as the size of up to 8KB for each CA file and also supports new functionality such as issuer hints.  
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-list.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | List the properties of the **certificateBasedAuthConfiguration** collection. |
-| [Get certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-get.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Read the properties of a **certificateBasedAuthConfiguration** object. |
-| [Create certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Create a new **certificateBasedAuthConfiguration** object. |
-| [Delete certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | None | Delete a **certificateBasedAuthConfiguration** object. |
+| [List](../api/certificatebasedauthconfiguration-list.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | List the properties of the **certificateBasedAuthConfiguration** collection. |
+| [Get](../api/certificatebasedauthconfiguration-get.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Read the properties of a **certificateBasedAuthConfiguration** object. |
+| [Create](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Create a new **certificateBasedAuthConfiguration** object. |
+| [Delete](../api/certificatebasedauthconfiguration-delete.md) | None | Delete a **certificateBasedAuthConfiguration** object. |
 
 >[!NOTE]
 >Updating cerficateBasedAuthConfiguration is not supported. To change a cerficateBasedAuthConfiguration, first delete and then create a new cerficateBasedAuthConfiguration.
@@ -49,7 +54,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -57,7 +62,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.certificateBasedAuthConfiguration",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

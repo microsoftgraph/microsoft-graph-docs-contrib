@@ -2,9 +2,10 @@
 title: "Create responsibilities"
 description: "Create a new responsibilities object."
 author: "kevinbellinger"
-localization_priority: Normal
-ms.prod: "people"
+ms.localizationpriority: medium
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # Create personResponsibility
@@ -14,13 +15,10 @@ Create a new [personResponsibility](../resources/personresponsibility.md) object
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All                            |
+<!-- { "blockType": "permissions", "name": "profile_post_responsibilities" } -->
+[!INCLUDE [permissions-table](../includes/permissions/profile-post-responsibilities-permissions.md)]
 
 ## HTTP request
 
@@ -29,14 +27,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /me/profile/responsibilities
-POST /users/{id | userPrincipalName}/profile/responsibilities
+POST /me/responsibilities
+POST /users/{id | userPrincipalName}/responsibilities
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -60,6 +58,7 @@ If successful, this method returns a `201 Created` response code and a [personRe
 
 ## Examples
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -67,9 +66,8 @@ If successful, this method returns a `201 Created` response code and a [personRe
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/profile/responsibilities
+POST https://graph.microsoft.com/beta/me/responsibilities
 Content-Type: application/json
-Content-length: 413
 
 {
   "description": "Member of the Microsoft API Council",
@@ -79,16 +77,9 @@ Content-length: 413
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-personresponsibility-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

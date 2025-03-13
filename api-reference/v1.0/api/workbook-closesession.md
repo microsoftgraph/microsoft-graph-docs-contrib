@@ -2,9 +2,10 @@
 title: "Close Session"
 description: "Use this API to close an existing workbook session. "
 author: "lumine2008"
-localization_priority: Normal
-ms.prod: "excel"
+ms.localizationpriority: medium
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Close Session
@@ -13,77 +14,89 @@ Namespace: microsoft.graph
 
 Use this API to close an existing workbook session.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "workbook_closesession" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workbook-closesession-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/closeSession
-workbook-session-id: {session-id}
+POST /me/drive/items/{id}/workbook/closeSession
+POST /me/drive/root:/{item-path}:/workbook/closeSession
 ```
+
 ## Request headers
+
 | Name                | Description                      |
 |:--------------------|:---------------------------------|
-| Authorization       | Bearer {token}. Required.        |
-| workbook-session-id | Workbook session Id to be closed |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| workbook-session-id | Workbook session ID to be closed. Required. |
 
 ## Request body
-This API does not require any request body.
+This API doesn't require any request body.
 
 ## Response
 
 If successful, this method returns `204 No Content` response code.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "close_excel_session"
+  "name": "close_workbook_session"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
 Content-type: application/json
 workbook-session-id: {session-id}
-Content-length: 0
 
 {
 
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/close-excel-session-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/close-workbook-session-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/close-excel-session-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/close-workbook-session-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/close-excel-session-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/close-workbook-session-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/close-excel-session-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/close-workbook-session-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/close-workbook-session-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/close-workbook-session-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/close-workbook-session-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 Note that workbook-session-id header is required.
 
 
-##### Response
-Here is an example of the response.
+### Response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -96,8 +109,6 @@ HTTP/1.1 204 No Content
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: close_excel_session//api-reference/v1.0/api/workbook-closesession.md:
-      Request includes a non-standard header: workbook-session-id"
   ]
 }-->
 

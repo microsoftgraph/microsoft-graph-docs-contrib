@@ -1,10 +1,11 @@
 ---
 title: "embeddedSIMDeviceStateValue enum type"
 description: "Describes the various states for an embedded SIM activation code."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # embeddedSIMDeviceStateValue enum type
@@ -28,9 +29,3 @@ Describes the various states for an embedded SIM activation code.
 |error|5|Designates that there is error with this profile.|
 |deleted|6|Designates that the profile is deleted from the device.|
 |removedByUser|7|Designates that the profile is removed from the device by the user|
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "windowsDomainJoinConfiguration resource type"
 description: "Windows Domain Join device configuration."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # windowsDomainJoinConfiguration resource type
@@ -80,9 +81,3 @@ Here is a JSON representation of the resource.  Note: The response object shown 
   "activeDirectoryDomainName": "String"
 }
 ```
-
-
-
-
-
-

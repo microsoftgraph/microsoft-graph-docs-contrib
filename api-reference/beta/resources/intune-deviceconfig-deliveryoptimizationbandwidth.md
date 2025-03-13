@@ -1,10 +1,11 @@
 ---
 title: "deliveryOptimizationBandwidth resource type"
 description: "Bandwidth restriction types"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deliveryOptimizationBandwidth resource type
@@ -36,9 +37,3 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deliveryOptimizationBandwidth"
 }
 ```
-
-
-
-
-
-

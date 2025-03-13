@@ -1,10 +1,11 @@
 ---
 title: "Create windows10EnrollmentCompletionPageConfiguration"
 description: "Create a new windows10EnrollmentCompletionPageConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create windows10EnrollmentCompletionPageConfiguration
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Create a new [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -56,16 +59,19 @@ The following table shows the properties that are required when you create the w
 |lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |roleScopeTagIds|String collection|Optional role scope tags for the enrollment restrictions. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|Show or hide installation progress to user|
-|blockDeviceSetupRetryByUser|Boolean|Allow the user to retry the setup on installation failure|
-|allowDeviceResetOnInstallFailure|Boolean|Allow or block device reset on installation failure|
-|allowLogCollectionOnInstallFailure|Boolean|Allow or block log collection on installation failure|
-|customErrorMessage|String|Set custom error message to show upon installation failure|
-|installProgressTimeoutInMinutes|Int32|Set installation progress timeout in minutes|
-|allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
-|selectedMobileAppIds|String collection|Selected applications to track the installation status|
-|trackInstallProgressForAutopilotOnly|Boolean|Only show installation progress for Autopilot enrollment scenarios|
-|disableUserStatusTrackingAfterFirstUser|Boolean|Only show installation progress for first user post enrollment|
+|deviceEnrollmentConfigurationType|[deviceEnrollmentConfigurationType](../resources/intune-onboarding-deviceenrollmentconfigurationtype.md)|Support for Enrollment Configuration Type Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md). Possible values are: `unknown`, `limit`, `platformRestrictions`, `windowsHelloForBusiness`, `defaultLimit`, `defaultPlatformRestrictions`, `defaultWindowsHelloForBusiness`, `defaultWindows10EnrollmentCompletionPageConfiguration`, `windows10EnrollmentCompletionPageConfiguration`, `deviceComanagementAuthorityConfiguration`, `singlePlatformRestriction`, `unknownFutureValue`, `enrollmentNotificationsConfiguration`.|
+|showInstallationProgress|Boolean|When TRUE, shows installation progress to user. When false, hides installation progress. The default is false.|
+|blockDeviceSetupRetryByUser|Boolean|When TRUE, blocks user from retrying the setup on installation failure. When false, user is allowed to retry. The default is false.|
+|allowDeviceResetOnInstallFailure|Boolean|When TRUE, allows device reset on installation failure. When false, reset is blocked. The default is false.|
+|allowLogCollectionOnInstallFailure|Boolean|When TRUE, allows log collection on installation failure. When false, log collection is not allowed. The default is false.|
+|customErrorMessage|String|The custom error message to show upon installation failure. Max length is 10000. example: "Setup could not be completed. Please try again or contact your support person for help."|
+|installProgressTimeoutInMinutes|Int32|The installation progress timeout in minutes. Default is 60 minutes.|
+|allowDeviceUseOnInstallFailure|Boolean|When TRUE, allows the user to continue using the device on installation failure. When false, blocks the user on installation failure. The default is false.|
+|selectedMobileAppIds|String collection|Selected applications to track the installation status. It is in the form of an array of GUIDs.|
+|allowNonBlockingAppInstallation|Boolean|When TRUE, ESP (Enrollment Status Page) installs all required apps targeted during technician phase and ignores any failures for non-blocking apps. When FALSE, ESP fails on any error during app install. The default is false.|
+|installQualityUpdates|Boolean|Allows quality updates installation during OOBE|
+|trackInstallProgressForAutopilotOnly|Boolean|When TRUE, installation progress is tracked for only Autopilot enrollment scenarios. When false, other scenarios are tracked as well. The default is false.|
+|disableUserStatusTrackingAfterFirstUser|Boolean|When TRUE, disables showing installation progress for first user post enrollment. When false, enables showing progress. The default is false.|
 
 
 
@@ -79,7 +85,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 746
+Content-length: 873
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -90,6 +96,7 @@ Content-length: 746
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "deviceEnrollmentConfigurationType": "limit",
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,
@@ -100,6 +107,8 @@ Content-length: 746
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
   ],
+  "allowNonBlockingAppInstallation": true,
+  "installQualityUpdates": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }
@@ -110,7 +119,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 918
+Content-Length: 1045
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -124,6 +133,7 @@ Content-Length: 918
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "deviceEnrollmentConfigurationType": "limit",
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,
@@ -134,13 +144,9 @@ Content-Length: 918
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
   ],
+  "allowNonBlockingAppInstallation": true,
+  "installQualityUpdates": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
-
-
-
-
-

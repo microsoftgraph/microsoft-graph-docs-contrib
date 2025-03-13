@@ -1,10 +1,12 @@
 ---
 title: "conditionalAccessSessionControl resource type"
 description: "Session control base type."
-localization_priority: Normal
-author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # conditionalAccessSessionControl resource type
@@ -27,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

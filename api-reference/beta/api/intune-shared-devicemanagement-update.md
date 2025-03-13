@@ -1,10 +1,11 @@
 ---
 title: "Update deviceManagement"
 description: "Update the properties of a deviceManagement object."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update deviceManagement
@@ -17,7 +18,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
-## Prerequisites
+        ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -69,6 +70,8 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -82,7 +85,7 @@ PATCH /deviceManagement
 
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -186,15 +189,3 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

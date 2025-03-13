@@ -1,10 +1,11 @@
 ---
 title: "Create macOSVpnConfiguration"
 description: "Create a new macOSVpnConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create macOSVpnConfiguration
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Create a new [macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -39,7 +42,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -61,7 +64,7 @@ The following table shows the properties that are required when you create the m
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |connectionName|String|Connection name displayed to the user. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|connectionType|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|Connection type. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`, `ciscoAnyConnectV2`, `paloAltoGlobalProtect`, `zscalerPrivateAccess`, `f5Access2018`, `citrixSso`, `paloAltoGlobalProtectV2`, `ikEv2`, `alwaysOn`, `microsoftTunnel`, `netMotionMobility`.|
+|connectionType|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|Connection type. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`, `ciscoAnyConnectV2`, `paloAltoGlobalProtect`, `zscalerPrivateAccess`, `f5Access2018`, `citrixSso`, `paloAltoGlobalProtectV2`, `ikEv2`, `alwaysOn`, `microsoftTunnel`, `netMotionMobility`, `microsoftProtect`.|
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |role|String|Role when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |realm|String|Realm when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
@@ -75,10 +78,14 @@ The following table shows the properties that are required when you create the m
 |safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |onDemandRules|[vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md) collection|On-Demand Rules. This collection can contain a maximum of 500 elements. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |providerType|[vpnProviderType](../resources/intune-deviceconfig-vpnprovidertype.md)|Provider type for per-app VPN. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Possible values are: `notConfigured`, `appProxy`, `packetTunnel`.|
+|associatedDomains|String collection|Associated Domains Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |excludedDomains|String collection|Domains that are accessed through the public internet instead of through VPN, even when per-app VPN is activated Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |disableOnDemandUserOverride|Boolean|Toggle to prevent user from disabling automatic VPN in the Settings app Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disconnectOnIdle|Boolean|Whether to disconnect after on-demand connection idles Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disconnectOnIdleTimerInSeconds|Int32|The length of time in seconds to wait before disconnecting an on-demand connection. Valid values 0 to 65535 Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy Server. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |optInToDeviceIdSharing|Boolean|Opt-In to sharing the device's Id to third-party vpn clients for use during network access control validation. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the deployment channel type used to deploy the configuration profile. Possible values are deviceChannel, userChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 
 
 
@@ -92,7 +99,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2761
+Content-length: 3061
 
 {
   "@odata.type": "#microsoft.graph.macOSVpnConfiguration",
@@ -171,21 +178,31 @@ Content-length: 2761
       "domains": [
         "Domains value"
       ],
-      "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+      "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+      "interfaceTypeMatch": "ethernet",
+      "dnsServerAddressMatch": [
+        "Dns Server Address Match value"
+      ]
     }
   ],
   "providerType": "appProxy",
+  "associatedDomains": [
+    "Associated Domains value"
+  ],
   "excludedDomains": [
     "Excluded Domains value"
   ],
   "disableOnDemandUserOverride": true,
+  "disconnectOnIdle": true,
+  "disconnectOnIdleTimerInSeconds": 14,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
     "address": "Address value",
     "port": 4
   },
-  "optInToDeviceIdSharing": true
+  "optInToDeviceIdSharing": true,
+  "deploymentChannel": "userChannel"
 }
 ```
 
@@ -194,7 +211,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2933
+Content-Length: 3233
 
 {
   "@odata.type": "#microsoft.graph.macOSVpnConfiguration",
@@ -276,26 +293,30 @@ Content-Length: 2933
       "domains": [
         "Domains value"
       ],
-      "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+      "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+      "interfaceTypeMatch": "ethernet",
+      "dnsServerAddressMatch": [
+        "Dns Server Address Match value"
+      ]
     }
   ],
   "providerType": "appProxy",
+  "associatedDomains": [
+    "Associated Domains value"
+  ],
   "excludedDomains": [
     "Excluded Domains value"
   ],
   "disableOnDemandUserOverride": true,
+  "disconnectOnIdle": true,
+  "disconnectOnIdleTimerInSeconds": 14,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
     "address": "Address value",
     "port": 4
   },
-  "optInToDeviceIdSharing": true
+  "optInToDeviceIdSharing": true,
+  "deploymentChannel": "userChannel"
 }
 ```
-
-
-
-
-
-

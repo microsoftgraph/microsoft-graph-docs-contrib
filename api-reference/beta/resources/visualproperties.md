@@ -1,10 +1,11 @@
 ---
 title: "visualProperties resource type"
 description: "Represents the visual content, namely title and body, of a visual notification targeted to a user.  "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "merzink"
-ms.prod: "notifications"
+ms.subservice: "notifications"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # visualProperties resource type
@@ -25,7 +26,7 @@ Represents the visual content, namely title and body, of a visual notification t
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

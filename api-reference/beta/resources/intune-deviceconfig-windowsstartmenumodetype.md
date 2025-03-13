@@ -1,10 +1,11 @@
 ---
 title: "windowsStartMenuModeType enum type"
 description: "Type of display modes for the start menu."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # windowsStartMenuModeType enum type
@@ -23,9 +24,3 @@ Type of display modes for the start menu.
 |userDefined|0|User defined. Default value.|
 |fullScreen|1|Full screen.|
 |nonFullScreen|2|Non-full screen.|
-
-
-
-
-
-

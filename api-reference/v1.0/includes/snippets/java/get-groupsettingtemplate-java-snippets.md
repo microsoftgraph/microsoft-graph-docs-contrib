@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-GroupSettingTemplate groupSettingTemplate = graphClient.groupSettingTemplates("{id}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+GroupSettingTemplate result = graphClient.groupSettingTemplates().byGroupSettingTemplateId("{groupSettingTemplate-id}").get();
+
 
 ```

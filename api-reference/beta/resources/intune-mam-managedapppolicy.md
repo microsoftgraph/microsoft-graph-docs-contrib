@@ -1,10 +1,11 @@
 ---
 title: "managedAppPolicy resource type"
 description: "The ManagedAppPolicy resource represents a base type for platform specific policies."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # managedAppPolicy resource type
@@ -22,7 +23,7 @@ The ManagedAppPolicy resource represents a base type for platform specific polic
 |:---|:---|:---|
 |[List managedAppPolicies](../api/intune-mam-managedapppolicy-list.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) objects.|
 |[Get managedAppPolicy](../api/intune-mam-managedapppolicy-get.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Read properties and relationships of the [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) object.|
-|[targetApps action](../api/intune-mam-managedapppolicy-targetapps.md)|None|Not yet documented|
+|[targetApps action](../api/intune-mam-managedapppolicy-targetapps.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -60,9 +61,3 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-
-
-
-
-

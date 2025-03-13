@@ -1,10 +1,11 @@
 ---
 title: "androidDeviceOwnerVpnConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Android Fully Managed device to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # androidDeviceOwnerVpnConfiguration resource type
@@ -48,13 +49,16 @@ Inherits from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfigurati
 |role|String|Role when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |realm|String|Realm when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.|
+|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`, `netMotionMobility`, `microsoftProtect`.|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy server.|
 |targetedPackageIds|String collection|Targeted App package IDs.|
 |targetedMobileApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Targeted mobile apps. This collection can contain a maximum of 500 elements.|
 |alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
 |alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 |microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
+|proxyExclusionList|String collection|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
+|customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
+|customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -144,12 +148,23 @@ Here is a JSON representation of the resource.
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "String"
+  "microsoftTunnelSiteId": "String",
+  "proxyExclusionList": [
+    "String"
+  ],
+  "customData": [
+    {
+      "@odata.type": "microsoft.graph.keyValue",
+      "key": "String",
+      "value": "String"
+    }
+  ],
+  "customKeyValueData": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "String",
+      "value": "String"
+    }
+  ]
 }
 ```
-
-
-
-
-
-

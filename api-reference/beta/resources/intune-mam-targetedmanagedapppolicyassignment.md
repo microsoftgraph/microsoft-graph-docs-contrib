@@ -1,10 +1,11 @@
 ---
 title: "targetedManagedAppPolicyAssignment resource type"
 description: "The type for deployment of groups or apps."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 10/15/2024
 ---
 
 # targetedManagedAppPolicyAssignment resource type
@@ -49,17 +50,13 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "deviceAndAppManagementAssignmentFilterType": "String",
+    "targetType": "String",
+    "entraObjectId": "String"
   },
   "source": "String",
   "sourceId": "String"
 }
 ```
-
-
-
-
-
-

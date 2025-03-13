@@ -2,9 +2,10 @@
 title: "onenoteOperationError resource type"
 description: "An error from a failed OneNote operation."
 author: "jewan-microsoft"
-localization_priority: Normal
-ms.prod: "onenote"
+ms.localizationpriority: medium
+ms.subservice: "onenote"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # onenoteOperationError resource type
@@ -14,10 +15,19 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An error from a failed OneNote operation.
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|code|string|The error code.|
+|message|string|The error message.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -34,11 +44,6 @@ Here is a JSON representation of the resource.
 }
 
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|code|string|The error code.|
-|message|string|The error message.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

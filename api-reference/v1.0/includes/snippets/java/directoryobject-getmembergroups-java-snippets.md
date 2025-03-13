@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-boolean securityEnabledOnly = true;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.directoryObjects("{object-id}")
-	.getMemberGroups(securityEnabledOnly)
-	.buildRequest()
-	.post();
+com.microsoft.graph.directoryobjects.item.getmembergroups.GetMemberGroupsPostRequestBody getMemberGroupsPostRequestBody = new com.microsoft.graph.directoryobjects.item.getmembergroups.GetMemberGroupsPostRequestBody();
+getMemberGroupsPostRequestBody.setSecurityEnabledOnly(false);
+var result = graphClient.directoryObjects().byDirectoryObjectId("{directoryObject-id}").getMemberGroups().post(getMemberGroupsPostRequestBody);
+
 
 ```

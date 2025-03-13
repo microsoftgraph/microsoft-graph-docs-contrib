@@ -1,10 +1,11 @@
 ---
 title: "List macOSLobApps"
 description: "List properties and relationships of the macOSLobApp objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List macOSLobApps
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [macOSLobApp](../resources/intune-apps-macoslobapp.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ GET /deviceAppManagement/mobileApps
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2114
+Content-Length: 2191
 
 {
   "value": [
@@ -106,7 +109,11 @@ Content-Length: 2114
         "v10_12": true,
         "v10_13": true,
         "v10_14": true,
-        "v10_15": true
+        "v10_15": true,
+        "v11_0": true,
+        "v12_0": true,
+        "v13_0": true,
+        "v14_0": true
       },
       "buildNumber": "Build Number value",
       "versionNumber": "Version Number value",
@@ -118,19 +125,13 @@ Content-Length: 2114
           "versionNumber": "Version Number value"
         }
       ],
-      "identityVersion": "Identity Version value",
       "md5HashChunkSize": 0,
       "md5Hash": [
         "Md5Hash value"
       ],
-      "ignoreVersionDetection": true
+      "ignoreVersionDetection": true,
+      "installAsManaged": true
     }
   ]
 }
 ```
-
-
-
-
-
-

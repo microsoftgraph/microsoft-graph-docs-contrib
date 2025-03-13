@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String id = "id-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String groupId = "groupId-value";
+com.microsoft.graph.users.item.onenote.sections.item.copytosectiongroup.CopyToSectionGroupPostRequestBody copyToSectionGroupPostRequestBody = new com.microsoft.graph.users.item.onenote.sections.item.copytosectiongroup.CopyToSectionGroupPostRequestBody();
+copyToSectionGroupPostRequestBody.setId("id-value");
+copyToSectionGroupPostRequestBody.setGroupId("groupId-value");
+copyToSectionGroupPostRequestBody.setRenameAs("renameAs-value");
+var result = graphClient.me().onenote().sections().byOnenoteSectionId("{onenoteSection-id}").copyToSectionGroup().post(copyToSectionGroupPostRequestBody);
 
-String renameAs = "renameAs-value";
-
-graphClient.me().onenote().sections("{id}")
-	.copyToSectionGroup(id,groupId,renameAs,null,null)
-	.buildRequest()
-	.post();
 
 ```

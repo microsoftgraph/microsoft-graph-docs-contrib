@@ -1,10 +1,11 @@
 ---
 title: "mailTipsError resource type"
 description: "An error that occurs during an action."
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: "outlook"
+ms.localizationpriority: medium
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # mailTipsError resource type
@@ -16,12 +17,12 @@ An error that occurs during an action.
 ## Properties
 | Property	   | Type	|Description|
 |:-----|:-----|:-----|
-| message | String | The error message. |
 | code | String | The error code. |
+| message | String | The error message. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

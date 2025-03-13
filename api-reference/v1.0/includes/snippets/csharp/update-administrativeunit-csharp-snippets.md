@@ -4,17 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var administrativeUnit = new AdministrativeUnit
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new AdministrativeUnit
 {
-	DisplayName = "displayName-value",
-	Description = "description-value",
-	Visibility = "visibility-value"
+	DisplayName = "Executive Division",
+	MembershipType = "Dynamic",
+	MembershipRule = "(user.country -eq \"United States\")",
+	MembershipRuleProcessingState = "On",
 };
 
-await graphClient.Directory.AdministrativeUnits["{id}"]
-	.Request()
-	.UpdateAsync(administrativeUnit);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].PatchAsync(requestBody);
+
 
 ```

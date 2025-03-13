@@ -1,13 +1,22 @@
 ---
 title: "Page through a collection using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph API requests using the Microsoft Graph SDKs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
+ms.date: 11/07/2024
 ---
+
+<!-- markdownlint-disable MD051 -->
 
 # Page through a collection using the Microsoft Graph SDKs
 
 For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page. The **PageIterator** class simplifies consuming of paged collections. **PageIterator** handles enumerating the current page and requesting subsequent pages automatically.
+
+Alternatively, you can use the `@odata.nextLink` property to [manually request subsequent pages](#manually-requesting-subsequent-pages).
+
+## Request headers
+
+If you send any additional request headers in your initial request, those headers are not included by default in subsequent page requests. If those headers need to be sent on subsequent requests, you must set them explicitly.
 
 ## Iterate over all the messages
 
@@ -18,69 +27,25 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 ### [C#](#tab/csharp)
 
-```csharp
-var messages = await graphClient.Me.Messages
-    .Request()
-    .Select(e => new {
-        e.Sender,
-        e.Subject
-    })
-    .Top(10)
-    .GetAsync();
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="PagingSnippet":::
 
-var pageIterator = PageIterator<Message>
-    .CreatePageIterator(graphClient, messages, (m) => {
-        Console.WriteLine(m.Subject);
-        return true;
-    });
+### [Go](#tab/go)
 
-await pageIterator.IterateAsync();
-```
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
 
-### [TypeScript](#tab/typeScript)
-
-```typescript
-// Makes request to fetch mails list.
-let response: PageCollection = await client
-  .api("/me/messages?$top=10&$select=sender,subject")
-  .get();
-
-// A callback function to be called for every item in the collection.
-// This call back should return boolean indicating whether not to
-// continue the iteration process.
-let callback: PageIteratorCallback = (data) => {
-  console.log(data.subject);
-  return true;
-};
-
-// Creating a new page iterator instance with client a graph client
-// instance, page collection response from request and callback
-let pageIterator = new PageIterator(client, response, callback);
-
-// This iterates the collection until the nextLink is drained out.
-await pageIterator.iterate();
-```
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="PagingSnippet":::
 
 ### [Java](#tab/java)
 
-```java
-IMessageCollectionPage messagesPage = graphClient.me().messages()
-    .buildRequest()
-    .select("Sender,Subject")
-    .top(10)
-    .get();
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="PagingSnippet":::
 
+### [PHP](#tab/PHP)
 
-while(messagesPage != null) {
-  final List<Message> messages = messagesPage.GetCurrentPage();
-  final IMessageCollectionRequestBuilder nextPage = messagesPage.GetNextPage();
-  if(nextPage == null) {
-    break;
-  } else {
-    messagePage = nextPage.buildRequest().get();
-  }
-}
-```
+:::code language="php" source="./snippets/php/snippets/Paging.php" id="PagingSnippet":::
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="PagingSnippet":::
 
 ---
 
@@ -91,78 +56,55 @@ Some scenarios require stopping the iteration process in order to perform other 
 <!-- markdownlint-disable MD024 -->
 ### [C#](#tab/csharp)
 
-```csharp
-int count = 0;
-int pauseAfter = 25;
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="ResumePagingSnippet":::
 
-var messages = await graphClient.Me.Messages
-    .Request()
-    .Select(e => new {
-        e.Sender,
-        e.Subject
-    })
-    .Top(10)
-    .GetAsync();
+### [Go](#tab/go)
 
-var pageIterator = PageIterator<Message>
-    .CreatePageIterator(graphClient, messages, (m) => {
-        Console.WriteLine(m.Subject);
-        count++;
-        // If we've iterated over the limit,
-        // stop the iteration by returning false
-        return count < pauseAfter;
-    });
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
 
-await pageIterator.IterateAsync();
-
-while (pageIterator.State != PagingState.Complete)
-{
-    Console.WriteLine("Iteration paused for 5 seconds...");
-    Thread.Sleep(5000);
-    // Reset count
-    count = 0;
-    await pageIterator.ResumeAsync();
-}
-```
-
-### [TypeScript](#tab/typeScript)
-
-```typescript
-let count: number = 0;
-let pauseAfter: number = 25;
-
-let response: PageCollection = await client
-  .api('/me/messages?$top=10&$select=sender,subject')
-  .get();
-
-let callback: PageIteratorCallback = (data) => {
-  result = `${result}${data.subject}\n`;
-  console.log(data.subject);
-  count++;
-
-  // If we've iterated over the limit,
-  // stop the iteration by returning false
-  return count < pauseAfter;
-};
-
-let pageIterator = new PageIterator(client, response, callback);
-await pageIterator.iterate();
-
-while (!pageIterator.isComplete()) {
-  console.log('Iteration paused for 5 seconds...');
-  await new Promise(resolve => setTimeout(resolve, 5000));
-
-  // Reset count
-  count = 0;
-  await pageIterator.resume();
-}
-```
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ResumePagingSnippet":::
 
 ### [Java](#tab/java)
 
-```java
-// not supported in java SDK
-```
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="ResumePagingSnippet":::
+
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/Paging.php" id="ResumePagingSnippet":::
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="ResumePagingSnippet":::
+
+---
+<!-- markdownlint-enable MD024 -->
+
+## Manually requesting subsequent pages
+
+As an alternative to using the **PageIterator** class, you can manually check the response for an `@odata.nextLink` property and request the next page.
+
+<!-- markdownlint-disable MD024 -->
+### [C#](#tab/csharp)
+
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="ManualPagingSnippet":::
+
+### [Go](#tab/go)
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ManualPagingSnippet":::
+
+### [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="ManualPagingSnippet":::
+
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/Paging.php" id="ManualPagingSnippet":::
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="ManualPagingSnippet":::
 
 ---
 <!-- markdownlint-enable MD024 -->

@@ -1,10 +1,11 @@
 ---
 title: "searchQuery resource type"
-description: "searchQuery"
-localization_priority: Normal
-author: "nmoreau"
-ms.prod: "search"
+description: "Represents a search query that contains search terms and optional filters."
+ms.localizationpriority: medium
+author: "njerigrevious"
+ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 11/08/2024
 ---
 
 # searchQuery resource type
@@ -22,12 +23,16 @@ Represents a search query that contains search terms and optional filters.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |queryString|String|The search query containing the search terms. Required.|
+|queryTemplate|String|Provides a way to decorate the query string. Supports both KQL and query variables. Optional.|
 |query_string (deprecated)|[searchQueryString](searchquerystring.md)|This is now replaced by the **queryString** property. The search query containing the search terms.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -41,6 +46,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "queryString": "String",
+  "queryTemplate": "String",
   "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
 }
 ```

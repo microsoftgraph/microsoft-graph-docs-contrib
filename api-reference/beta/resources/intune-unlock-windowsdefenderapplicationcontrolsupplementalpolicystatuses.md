@@ -1,10 +1,11 @@
 ---
 title: "windowsDefenderApplicationControlSupplementalPolicyStatuses enum type"
 description: "Enum values for the various WindowsDefenderApplicationControl supplemental policy deployment statuses."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # windowsDefenderApplicationControlSupplementalPolicyStatuses enum type
@@ -25,9 +26,3 @@ Enum values for the various WindowsDefenderApplicationControl supplemental polic
 |tokenError|2|The WindowsDefenderApplicationControl supplemental policy is structurally okay but there is an error with authorizing the token.|
 |notAuthorizedByToken|3|The token does not authorize this WindowsDefenderApplicationControl supplemental policy.|
 |policyNotFound|4|The WindowsDefenderApplicationControl supplemental policy is not found.|
-
-
-
-
-
-

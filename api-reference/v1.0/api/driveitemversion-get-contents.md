@@ -1,27 +1,30 @@
 ---
-title: "Download contents of a DriveItemVersion resource"
-description: "Retrieve the contents of a specific version of a DriveItem."
-localization_priority: Normal
-ms.prod: "sharepoint"
-author: "JeremyKelley"
+title: "Download contents of a driveItemVersion resource"
+description: "Retrieve the contents of a specific version of a driveItem."
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
+author: "spgraph-docs-team"
 doc_type: apiPageType
+ms.date: 03/06/2024
 ---
 
-# Download contents of a DriveItemVersion resource
+# Download contents of a driveItemVersion resource
 
 Namespace: microsoft.graph
 
-Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).
+Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).
+
+>**Note:** Getting the content of the current version is not supported. To do that, use the [Download the contents of a driveItem](driveitem-get-content.md) method.
+
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitemversion_get_contents" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitemversion-get-contents-permissions.md)]
 
 
 ## HTTP request
@@ -30,26 +33,31 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/content
-GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/content
+GET /groups/{group-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 ```
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
-Returns a `302 Found` response redirecting to a pre-authenticated download URL for the bytes of the file.
+Returns a `302 Found` response redirecting to a preauthenticated download URL for the bytes of the file.
 
-To download the contents of the file your application will need to follow the `Location` header in the response.
-Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.
+To download the contents of the file your application needs to follow the `Location` header in the response.
+Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.
 
-Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header to download.
 
 ## Example
 
 This example retrieves a version of a file in the current user's drive.
 
-### HTTP request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -58,28 +66,44 @@ This example retrieves a version of a file in the current user's drive.
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-version-contents-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-version-contents-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-version-contents-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-version-contents-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-version-contents-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-version-contents-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-version-contents-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-version-contents-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-version-contents-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-version-contents-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-This returns a redirect to where the contents of the version can be downloaded.
+The call returns a redirect to where the contents of the version can be downloaded.
 
 <!-- { "blockType": "response", "isEmpty": true  } -->
 
@@ -91,9 +115,9 @@ Location: https://onedrive.com/34FF49D6...
 
 ## Remarks
 
-OneDrive does not preserve the complete metadata for previous versions of a file.
+OneDrive doesn't preserve the complete metadata for previous versions of a file.
 
-When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
+When your app retrieves the list of available versions for a file, a [driveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
 
 <!-- {
   "type": "#page.annotation",

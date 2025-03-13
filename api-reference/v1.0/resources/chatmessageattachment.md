@@ -1,37 +1,42 @@
 ---
 title: "chatMessageAttachment resource type"
 description: "Represents an attachment to a chat message entity."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-teams"
-author: "nkramer"
+ms.subservice: "teams"
+author: "RamjotSingh"
+ms.date: 10/22/2024
 ---
 
 # chatMessageAttachment resource type
 
 Namespace: microsoft.graph
 
-Represents an attachment to a [chatMessage](./chatmessage.md) entity.
+Represents an attachment to a chat message entity.
+
+An entity of type **chatMessageAttachment** is returned as part of the [Get channel messages](../api/channel-list-messages.md) API, as a part of [chatMessage](chatmessage.md) entity.
 
 ## Properties
-| Property  | Type | Description|
+| Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|string| Read-only. Unique id of the attachment.|
-|contentType| string | The media type of the content attachment. It can have the following values: <br><ul><li>reference: Attachment is a link to another file. Populate the contentURL with the link to the object.<br></li><li>file: Raw file attachment. Populate the contenturl field with the base64 encoding of the file in data: format.<br></li><li>image/: Image type with the type of the image specified ex: image/png, image/jpeg, image/gif. Populate the contentUrl field with the base64 encoding of the file in data: format.<br></li><li>video/: Video type with the format specified. Ex: video/mp4. Populate the contentUrl field with the base64 encoding of the file in data: format.<br></li><li>audio/: Audio type with the format specified. Ex: audio/wmw. Populate the contentUrl field with the base64 encoding of the file in data: format.<br></li><li>application/card type: Rich card attachment type with the card type specifying the exact card format to use. Set content with the json format of the card. Supported values for card type include:<br><ul><li>application/vnd.microsoft.card.adaptive: A rich card that can contain any combination of text, speech, images,,buttons, and input fields. Set the content property to,an AdaptiveCard object.</li><li>application/vnd.microsoft.card.animation: A rich card that plays animation. Set the content property,to an AnimationCardobject.</li><li>application/vnd.microsoft.card.audio: A rich card that plays audio files. Set the content property,to an AudioCard object.</li><li>application/vnd.microsoft.card.video: A rich card that plays videos. Set the content property,to a VideoCard object.</li><li>application/vnd.microsoft.card.hero: A Hero card. Set the content property to a HeroCard object.</li><li>application/vnd.microsoft.card.thumbnail: A Thumbnail card. Set the content property to a ThumbnailCard object.</li><li>application/vnd.microsoft.com.card.receipt: A Receipt card. Set the content property to a ReceiptCard object.</li><li>application/vnd.microsoft.com.card.signin: A user Sign In card. Set the content property to a SignInCard object.</ul></ul>|
-|contentUrl|string|URL for the content of the attachment. Supported protocols: http, https, file and data.|
-|content|string|The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.|
-|name|string|Name of the attachment.|
-|thumbnailUrl| string |URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.|
+|content|string|The content of the attachment. If the attachment is a [rich card](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference), set the property to the rich card object. This property and contentUrl are mutually exclusive.|
+|contentType| string | The media type of the content attachment. The possible values are: <br><ul><li>`reference`: The attachment is a link to another file. Populate the <b>contentURL</b> with the link to the object.</li><li>`forwardedMessageReference`: The attachment is a reference to a forwarded message. Populate the <b>content</b> with the original message context.</li><li>Any <b>contentType</b> that is supported by the Bot Framework's [Attachment object](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object).</li><li>`application/vnd.microsoft.card.codesnippet`: A code snippet. </li><li>`application/vnd.microsoft.card.announcement`: An announcement header. </li>|
+|contentUrl|string|The URL for the content of the attachment. |
+|id|string| Read-only. The unique ID of the attachment.|
+|name|string|The name of the attachment.|
+|teamsAppId|string|The ID of the Teams app that is associated with the attachment. The property is used to attribute a Teams message card to the specified app.|
+|thumbnailUrl|string|The URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of **content** or **contentUrl**. For example, if you set **contentType** to application/word and set **contentUrl** to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user selects the image, the channel would open the document.|
 
 ## JSON representation
- The following is a JSON representation of the resource
+ The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
     "thumbnailUrl",
     "content",
-    "contentUrl"
+    "contentUrl",
+	"teamsAppId"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.chatMessageAttachment"
@@ -39,11 +44,12 @@ Represents an attachment to a [chatMessage](./chatmessage.md) entity.
 
 ```json
 {
-  "id": "string (identifier)",
+  "content": "string",
   "contentType": "string",
   "contentUrl": "string",
-  "content": "string",
+  "id": "string (identifier)",
   "name": "string",
+  "teamsAppId": "string",
   "thumbnailUrl": "string"
 }
 

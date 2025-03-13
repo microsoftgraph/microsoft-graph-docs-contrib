@@ -1,10 +1,11 @@
 ---
 title: "eventMessageRequest resource type"
 description: "A message that represents a meeting request."
-author: "harini84"
-localization_priority: Normal
-ms.prod: "outlook"
+author: "iamgirishck"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 06/24/2024
 ---
 
 # eventMessageRequest resource type
@@ -19,7 +20,7 @@ To respond to the meeting request, first, use the **event** navigation property 
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -118,14 +119,14 @@ Here is a JSON representation of the resource
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern of the requested meeting.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
 |responseRequested|Boolean|Set to true if the sender would like the invitee to send a response to the requested meeting.|
-|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [for a shared calendar, or as a delegate](/graph/outlook-share-delegate-calendar.md). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
+|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [for a shared calendar, or as a delegate](/graph/outlook-share-or-delegate-calendar). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|The start time of the requested meeting.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |type|String|The type of requested meeting: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
-|webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
+|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL cannot be accessed from within an iFrame.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -141,18 +142,18 @@ Here is a JSON representation of the resource
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
-|[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object.|
-|[Delete](../api/eventmessage-delete.md) | None |Delete eventMessage object.|
-|[copy](../api/message-copy.md)|[message](message.md)|Copy a message to a folder.|
-|[createForward](../api/message-createforward.md)|[message](message.md)|Create a draft of the Forward message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[createReply](../api/message-createreply.md)|[message](message.md)|Create a draft of the Reply message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|Create a draft of the Reply All message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[forward](../api/message-forward.md)|None|Forward a message. The message is then saved in the Sent Items folder.|
-|[move](../api/message-move.md)|[message](message.md)|Move a message to a folder. This creates a new copy of the message in the destination folder.|
-|[reply](../api/message-reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
-|[replyAll](../api/message-replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
-|[send](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|[Get event message](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
+|[Update event message](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object.|
+|[Delete event message](../api/eventmessage-delete.md) | None |Delete eventMessage object.|
+|[Copy message](../api/message-copy.md)|[message](message.md)|Copy a message to a folder.|
+|[Create draft to forward message](../api/message-createforward.md)|[message](message.md)|Create a draft of the Forward message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[Create draft to reply](../api/message-createreply.md)|[message](message.md)|Create a draft of the Reply message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[Create draft to reply-all](../api/message-createreplyall.md)|[message](message.md)|Create a draft of the Reply All message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[Forward message](../api/message-forward.md)|None|Forward a message. The message is then saved in the Sent Items folder.|
+|[Move message](../api/message-move.md)|[message](message.md)|Move a message to a folder. This creates a new copy of the message in the destination folder.|
+|[Reply to a message](../api/message-reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
+|[Reply-all to a message](../api/message-replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
+|[Send draft message](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 |**Attachments**| | |
 |[List attachments](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on an eventMessage.|
 |[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Add a new attachment to an eventMessage by posting to the attachments collection.|
@@ -160,10 +161,10 @@ Here is a JSON representation of the resource
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by name.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Create one or more single-value extended properties in a new or existing eventMessage.   |
-|[Get eventMessage with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Get eventMessages that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [eventMessage](eventmessage.md) | Create one or more multi-value extended properties in a new or existing eventMessage.  |
-|[Get eventMessage with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Get an eventMessage that contains a multi-value extended property by using `$expand`. |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Create one or more single-value extended properties in a new or existing eventMessage.   |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Get eventMessages that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [eventMessage](eventmessage.md) | Create one or more multi-value extended properties in a new or existing eventMessage.  |
+|[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Get an eventMessage that contains a multi-value extended property by using `$expand`. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

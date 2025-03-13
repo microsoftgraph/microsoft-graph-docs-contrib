@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String clientContext = "clientContext-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.communications().calls("{id}")
-	.cancelMediaProcessing(clientContext)
-	.buildRequest()
-	.post();
+com.microsoft.graph.communications.calls.item.cancelmediaprocessing.CancelMediaProcessingPostRequestBody cancelMediaProcessingPostRequestBody = new com.microsoft.graph.communications.calls.item.cancelmediaprocessing.CancelMediaProcessingPostRequestBody();
+cancelMediaProcessingPostRequestBody.setClientContext("clientContext-value");
+var result = graphClient.communications().calls().byCallId("{call-id}").cancelMediaProcessing().post(cancelMediaProcessingPostRequestBody);
+
 
 ```

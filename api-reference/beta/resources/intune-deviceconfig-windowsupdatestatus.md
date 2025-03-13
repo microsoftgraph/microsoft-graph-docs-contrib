@@ -1,10 +1,11 @@
 ---
 title: "windowsUpdateStatus enum type"
 description: "Windows update for business configuration device states"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # windowsUpdateStatus enum type
@@ -24,9 +25,3 @@ Windows update for business configuration device states
 |pendingInstallation|1|There are updates that’s pending installation which includes updates that are not approved. There are no Pending reboot updates, no failed updates.|
 |pendingReboot|2|There are updates that requires reboot. There are not failed updates.|
 |failed|3|There are updates failed to install on the device.|
-
-
-
-
-
-

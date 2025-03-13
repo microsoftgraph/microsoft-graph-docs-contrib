@@ -1,10 +1,11 @@
 ---
 title: "wiredNetworkInterface enum type"
 description: "Apple network interface type."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # wiredNetworkInterface enum type
@@ -27,9 +28,3 @@ Apple network interface type.
 |firstEthernet|4|First Ethernet.|
 |secondEthernet|5|Second Ethernet.|
 |thirdEthernet|6|Third Ethernet.|
-
-
-
-
-
-

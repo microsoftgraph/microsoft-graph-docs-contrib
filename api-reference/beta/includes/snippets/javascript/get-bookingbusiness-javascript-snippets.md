@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/bookingBusinesses/Fabrikam@M365B489948.onmicrosoft.com')
+let bookingBusiness = await client.api('/solutions/bookingbusinesses/fabrikam@contoso.com')
 	.version('beta')
 	.get();
 

@@ -1,10 +1,11 @@
 ---
 title: "localSecurityOptionsStandardUserElevationPromptBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsStandardUserElevationPromptBehavior"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # localSecurityOptionsStandardUserElevationPromptBehaviorType enum type
@@ -24,9 +25,3 @@ Possible values for LocalSecurityOptionsStandardUserElevationPromptBehavior
 |automaticallyDenyElevationRequests|1|Automatically deny elevation requests|
 |promptForCredentialsOnTheSecureDesktop|2|Prompt for credentials on the secure desktop|
 |promptForCredentials|3|Prompt for credentials|
-
-
-
-
-
-

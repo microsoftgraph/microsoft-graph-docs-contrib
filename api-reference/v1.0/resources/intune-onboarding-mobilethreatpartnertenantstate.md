@@ -1,10 +1,11 @@
 ---
 title: "mobileThreatPartnerTenantState enum type"
 description: "Partner state of this tenant."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # mobileThreatPartnerTenantState enum type
@@ -22,12 +23,3 @@ Partner state of this tenant.
 |available|1|Partner is available.|
 |enabled|2|Partner is enabled.|
 |unresponsive|3|Partner is unresponsive.|
-
-
-
-
-
-
-
-
-

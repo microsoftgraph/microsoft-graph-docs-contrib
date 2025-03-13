@@ -1,13 +1,14 @@
 ---
-title: "Configuring the invitation message"
+title: "invitedUserMessageInfo resource type"
 description: "The invitedUserMessageInfo object allows you to configure the invitation message."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "elisolMS"
+ms.subservice: "entra-sign-in"
+author: "ppolkadots"
+ms.date: 03/21/2024
 ---
 
-# Configuring the invitation message
+# invitedUserMessageInfo resource type
 
 Namespace: microsoft.graph
 
@@ -15,16 +16,21 @@ Namespace: microsoft.graph
 
 The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.
 
+For more information about configuring the invitation message, see [B2B invitation email layout and language settings](/entra/external-id/invitation-email-elements).
+
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ccRecipients|[recipient](recipient.md) collection|Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.|
-|customizedMessageBody|String|Customized message body you want to send if you don't want the default message.|
+|ccRecipients|[recipient](recipient.md) collection|Additional recipients the invitation message should be sent to. Currently only one additional recipient is supported.|
+|customizedMessageBody|String|Customized message body you want to send if you don't want the default message. Only plain text is allowed.|
 |messageLanguage|String|The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.|
 
+## Relationships
+None.
+
 ## JSON representation
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->
 ```json

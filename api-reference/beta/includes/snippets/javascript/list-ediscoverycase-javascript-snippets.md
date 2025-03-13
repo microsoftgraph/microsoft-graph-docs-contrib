@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/compliance/ediscovery/cases')
+let ediscoveryCases = await client.api('/security/cases/ediscoveryCases')
 	.version('beta')
 	.get();
 

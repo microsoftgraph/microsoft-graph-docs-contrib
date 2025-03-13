@@ -1,10 +1,12 @@
 ---
 title: "onPremisesExtensionAttributes resource type"
 description: "The **onPremisesExtensionAttributes** property of the user entity contains fifteen custom extension attribute properties."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
-author: "krbain"
+ms.subservice: entra-users
+author: "yyuank"
+ms.reviewer: "iamut"
+ms.date: 10/02/2024
 ---
 
 # onPremisesExtensionAttributes resource type
@@ -13,10 +15,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **onPremisesExtensionAttributes** property of the [user](user.md) entity contains fifteen custom extension attribute properties. For an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises Active Directory which is synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is false), these properties may be set during creation or update.
+The return type of the **onPremisesExtensionAttributes** property of the [user](user.md) object and **extensionAttributes** property of the [device](device.md) object. Returns fifteen custom extension attribute properties. Each attribute can store up to 1024 characters.
+
+On the [user](user.md) entity and for an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises Active Directory that is synchronized to Microsoft Entra ID, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is `false` or `null`), these properties can be set during [creation](../api/user-post-users.md) or [update](../api/user-update.md). If a cloud-only user was previously synced from on-premises Active Directory, these properties can't be managed via the Microsoft Graph API. Instead, they can be managed through the Exchange Admin Center or the Exchange Online V2 module in PowerShell.
+
+The **extensionAttributes** property of the [device](device.md) entity is managed only in Microsoft Entra ID during device [creation](../api/device-post-devices.md) or [update](../api/device-update.md).
 
 > **Note:** These extension attributes are also known as Exchange custom attributes 1-15.
-
 
 ## Properties
 | Property	   | Type	|Description|
@@ -37,7 +42,11 @@ The **onPremisesExtensionAttributes** property of the [user](user.md) entity con
 |extensionAttribute14|String| Fourteenth customizable extension attribute. |
 |extensionAttribute15|String| Fifteenth customizable extension attribute. |
 
+## Relationships
+None.
+
 ## JSON representation
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -69,7 +78,6 @@ The **onPremisesExtensionAttributes** property of the [user](user.md) entity con
 
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -82,5 +90,3 @@ The **onPremisesExtensionAttributes** property of the [user](user.md) entity con
   "suppressions": []
 }
 -->
-
-

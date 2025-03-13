@@ -2,9 +2,10 @@
 title: "educationOrganization resource type"
 description: "Abstract entity used to model the commonality between different organization types within the education sector.  "
 author: "mmast-msft"
-localization_priority: Normal
-ms.prod: "education"
+ms.localizationpriority: medium
+ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # educationOrganization resource type
@@ -29,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

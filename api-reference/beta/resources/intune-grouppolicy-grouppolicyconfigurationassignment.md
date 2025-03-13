@@ -1,10 +1,11 @@
 ---
 title: "groupPolicyConfigurationAssignment resource type"
 description: "The group policy configuration assignment entity assigns one or more AAD groups to a specific group policy configuration."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # groupPolicyConfigurationAssignment resource type
@@ -50,15 +51,11 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "deviceAndAppManagementAssignmentFilterType": "String",
+    "targetType": "String",
+    "entraObjectId": "String"
   }
 }
 ```
-
-
-
-
-
-

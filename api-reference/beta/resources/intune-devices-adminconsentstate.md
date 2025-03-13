@@ -1,10 +1,11 @@
 ---
 title: "adminConsentState enum type"
 description: "Admin consent state."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # adminConsentState enum type
@@ -23,9 +24,3 @@ Admin consent state.
 |notConfigured|0|Admin did not configure the item|
 |granted|1|Admin granted item|
 |notGranted|2|Admin deos not grant item|
-
-
-
-
-
-

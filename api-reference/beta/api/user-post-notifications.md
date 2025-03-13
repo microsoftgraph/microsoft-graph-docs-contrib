@@ -1,30 +1,29 @@
 ---
-title: "Create and send a notification"
+title: "Create and send a notification (deprecated)"
 description: "Create and send a notification targeting a user through Microsoft Graph."
-localization_priority: Normal
-ms.prod: "notifications"
+ms.localizationpriority: medium
+ms.subservice: "notifications"
 doc_type: apiPageType
 author: "merzink"
+ms.date: 04/04/2024
 ---
 
-# Create and send a notification
+# Create and send a notification (deprecated)
 
 Namespace: microsoft.graph
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and will stop returning data by the end of January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.
 
 Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
-Your application service does not require any additional permissions to post notifications to your targeted user.  
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-> [!IMPORTANT]
-> If you choose to post notifications on behalf of a user via delegated permissions instead, one of the following permissions is required to call this API. We don't recommend this option for creating notifications. If you'd like to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Notifications.ReadWrite.CreatedByApp    |
-|Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
-|Application | Not supported.|
+<!-- { "blockType": "permissions", "name": "user_post_notifications" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-post-notifications-permissions.md)]
 
 
 
@@ -46,28 +45,28 @@ POST /me/notifications/
 In the request body, supply a JSON representation of a [notification](../resources/projectrome-notification.md) object.
 
 ## Response
-If successful, this method returns a `201 Created` response code that indicates that the notification was successfully created and stored. The notification will be subsequently fanned-out to all specified endpoints with a valid subscription. 
+If successful, this method returns a `201 Created` response code that indicates that the notification was successfully created and stored. The notification is later fanned-out to all specified endpoints with a valid subscription. 
 
 The following table lists the possible error and response codes that can be returned.
 
-|Error code             | Descrition             		         |
+|Error code             | Description                              |
 |:-----------------------------------|:----------------------------------------------------------|
-|HttpStatusCode.BadRequest           | Body is an array (multiple notifications is not supported).|
+|HttpStatusCode.BadRequest           | Body is an array (multiple notifications isn't supported).|
 |HttpStatusCode.BadRequest           | Body doesn't match the contract for the API.               |
 |HttpStatusCode.Forbidden            | Caller is on the blocked list.                          |
-|HttpStatusCode.MethodNotAllowed     | The HTTP method used is not supported.                     |
-|HttpStatusCode.BadRequest           | Unsupported headers are present in the request. Two headers are not supported:<br/><br/>If-Modified-Since<br/>If-Range |                    
+|HttpStatusCode.MethodNotAllowed     | The HTTP method used isn't supported.                     |
+|HttpStatusCode.BadRequest           | Unsupported headers are present in the request. Two headers aren't supported:<br/><br/>If-Modified-Since<br/>If-Range |                    
 |HttpStatusCode.UnsupportedMediaType | The header Content-Encoding is present and has compression algorithm values other than `Deflate` or `Gzip`.  |
 |HttpStatusCode.BadRequest           | Invalid payload.                                           |
-|HttpStatusCode.Forbidden            | Caller is not authorized to act on behalf of the user or send notification to the user.                         |
-|HttpStatusCode.Unauthorized         |	Request body contains invalid activity data types.        |
-|HttpStatusCode.OK                   | 	Activity successfully created.                            |
-|HttpStatusCode.NotAcceptable        |	Request has been throttled or the server is busy.    |
+|HttpStatusCode.Forbidden            | Caller isn't authorized to act on behalf of the user or send notification to the user.                         |
+|HttpStatusCode.Unauthorized         |    Request body contains invalid activity data types.        |
+|HttpStatusCode.OK                   |     Activity successfully created.                            |
+|HttpStatusCode.NotAcceptable        |    Request has been throttled or the server is busy.    |
 
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/notifications/
@@ -85,11 +84,11 @@ Content-type: application/json
     },
     "targetPolicy": {
         "platformTypes": [
-	"windows",
-	"ios",
-	"android"
+    "windows",
+    "ios",
+    "android"
         ]
-	},
+    },
     "priority": "High",
     "groupName": "TestGroup",
     "displayTimeToLive": "60"
@@ -97,7 +96,7 @@ Content-type: application/json
 ```
 
 ### Response
-The following is an example of the corresponding response.
+Here's an example of the corresponding response.
 
 ```http
 HTTP/1.1 201

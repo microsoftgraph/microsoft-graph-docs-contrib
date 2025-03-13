@@ -1,10 +1,11 @@
 ---
 title: "typedEmailAddress resource type"
 description: "Represents the name, email addresses, and their corresponding email address type of a contact."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: mail
 author: "kevinbellinger"
+ms.date: 04/03/2024
 ---
 
 # typedEmailAddress resource type
@@ -23,9 +24,12 @@ Represents the name, email addresses, and their corresponding email address type
 |type |String |The type of email address. Possible values are: `unknown`, `work`, `personal`, `main`, `other`. The default value is `unknown`, which means **address** has not been set as a specific type. |
 |otherLabel |String  |To specify a custom type of email address, set **type** to `other`, and assign **otherLabel** to a custom string. For example, you may use a specific email address for your volunteer activities. Set **type** to `other`, and set **otherLabel** to a custom string such as `Volunteer work`. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

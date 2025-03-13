@@ -1,10 +1,11 @@
 ---
 title: "meetingTimeSuggestion resource type"
 description: "A meeting suggestion that includes information like meeting time, attendance likelihood, individual "
-localization_priority: Normal
-author: "angelgolfer-ms"
-ms.prod: "outlook"
+ms.localizationpriority: medium
+author: "vrod9429"
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # meetingTimeSuggestion resource type
@@ -16,9 +17,12 @@ Namespace: microsoft.graph
 A meeting suggestion that includes information like meeting time, attendance likelihood, individual 
 availability, and available meeting locations.
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

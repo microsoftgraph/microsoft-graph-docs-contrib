@@ -1,10 +1,11 @@
 ---
 title: "windows10SecureAssessmentConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the secureAssessment resource."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windows10SecureAssessmentConfiguration resource type
@@ -115,9 +116,3 @@ Here is a JSON representation of the resource.
   "assessmentAppUserModelId": "String"
 }
 ```
-
-
-
-
-
-

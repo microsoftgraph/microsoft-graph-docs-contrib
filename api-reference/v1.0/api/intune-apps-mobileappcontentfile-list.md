@@ -1,10 +1,11 @@
 ---
 title: "List mobileAppContentFiles"
 description: "List properties and relationships of the mobileAppContentFile objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List mobileAppContentFiles
@@ -15,14 +16,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -58,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 527
+Content-Length: 616
 
 {
   "value": [
@@ -73,17 +76,9 @@ Content-Length: 527
       "sizeEncrypted": 13,
       "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
       "manifest": "bWFuaWZlc3Q=",
-      "uploadState": "transientError"
+      "uploadState": "transientError",
+      "isDependency": true
     }
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

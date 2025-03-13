@@ -1,10 +1,11 @@
 ---
 title: "windowsInformationProtectionDesktopApp resource type"
 description: "Desktop App for Windows information protection"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # windowsInformationProtectionDesktopApp resource type
@@ -55,9 +56,3 @@ Here is a JSON representation of the resource.
   "binaryVersionHigh": "String"
 }
 ```
-
-
-
-
-
-

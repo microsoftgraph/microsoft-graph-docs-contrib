@@ -1,10 +1,11 @@
 ---
 title: "swapShiftsChangeRequest resource type"
 description: "Represents type of shift request to swap a shift with another user in the team."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # swapShiftsChangeRequest resource type
@@ -37,15 +38,14 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.swapShiftsChangeRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
 }-->
 
 ```json

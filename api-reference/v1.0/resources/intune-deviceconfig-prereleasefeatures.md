@@ -1,10 +1,11 @@
 ---
 title: "prereleaseFeatures enum type"
 description: "Possible values for pre-release features."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # prereleaseFeatures enum type
@@ -22,12 +23,3 @@ Possible values for pre-release features.
 |settingsOnly|1|Settings only pre-release features.|
 |settingsAndExperimentations|2|Settings and experimentations pre-release features.|
 |notAllowed|3|Pre-release features not allowed.|
-
-
-
-
-
-
-
-
-

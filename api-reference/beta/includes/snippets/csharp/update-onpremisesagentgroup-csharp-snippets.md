@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var onPremisesAgentGroup = new OnPremisesAgentGroup
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new OnPremisesAgentGroup
 {
-	DisplayName = "Group New Name"
+	DisplayName = "Group New Name",
 };
 
-await graphClient.OnPremisesPublishingProfiles["provisioning"].AgentGroups["8832388F-3814-4952-B288-FFB62081FE25"]
-	.Request()
-	.UpdateAsync(onPremisesAgentGroup);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].AgentGroups["{onPremisesAgentGroup-id}"].PatchAsync(requestBody);
+
 
 ```

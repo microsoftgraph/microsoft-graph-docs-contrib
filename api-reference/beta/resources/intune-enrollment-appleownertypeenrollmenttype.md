@@ -1,10 +1,11 @@
 ---
 title: "appleOwnerTypeEnrollmentType resource type"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Enrollment Appleownertypeenrollmenttype Resources ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # appleOwnerTypeEnrollmentType resource type
@@ -15,13 +16,13 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|The owner type. Possible values are: `unknown`, `company`, `personal`.|
-|enrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|The enrollment type. Possible values are: `unknown`, `device`, `user`.|
+|enrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|The enrollment type. Possible values are: `unknown`, `device`, `user`, `accountDrivenUserEnrollment`, `webDeviceEnrollment`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -40,9 +41,3 @@ Here is a JSON representation of the resource.
   "enrollmentType": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,153 +1,442 @@
 ---
 title: "Use the Microsoft Graph Toolkit with React"
 description: "Get started using the Microsoft Graph Toolkit in a React application."
-localization_priority: Normal
-author: elisenyang
+ms.localizationpriority: medium
+author: sebastienlevert
+zone_pivot_groups: mgt-version
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Graph Toolkit with React
 
-Microsoft Graph Toolkit components work great with web frameworks like React in addition to vanilla JavaScript and HTML. You can use the components directly in React, but proper interop between web components and React components requires a bit of extra work. We recommend using `mgt-react`, a library that wraps and exports all the Microsoft Graph Toolkit components as React components. 
+Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead. Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt-components` npm package.
 
-This topic covers how to use Microsoft Graph Toolkit with React. For a step-by-step walkthrough that describes how to create a new React application and use Microsoft Graph Toolkit, see [Using Microsoft Graph Toolkit with React](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-13-using-microsoft-graph-toolkit-with-react/).
+::: zone pivot="mgt-react"
+If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.
+::: zone-end
 
-## Web Components and React
+::: zone pivot="mgt-react-chat"
+If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data. To use the [`mgt-chat`](../components/chat.md) and [`mgt-new-chat`](../components/new-chat.md) components, install the separate `@microsoft/mgt-chat` package.
+::: zone-end
 
-React passes all data to Custom Elements in the form of HTML attributes. For primitive data, this is fine, but it does not work when passing rich data, like objects or arrays. In those cases, you'll need to use a ref to pass in the object.
+This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
 
-```jsx
-//import all the components
-import '@microsoft/mgt';
+> [!TIP]
+> You can also follow this tutorial as an interactive code tour. For details, see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).
 
-class App extends Component {
-  render() {
-    return <mgt-person show-name ref={el => (el.personDetails = { displayName: 'Megan Bowen' })} />;
-  }
-}
+::: zone pivot="mgt-react"
+> [!TIP]
+> You can also download a starter template to kickstart your journey. This template will ensure the right set of dependencies, etc. To continue, download the [GitHub starter project for `mgt-react`](https://aka.ms/mgt/starters/react). Follow the README instructions and then continue with [Load data from Microsoft 365](#load-data-from-microsoft-365)
+::: zone-end
+
+::: zone pivot="mgt-react-chat"
+> [!TIP]
+> You can also download a starter template to kickstart your journey. This template will ensure the right set of dependencies, etc. To continue, download the [GitHub starter project for `mgt-react` and `mgt-chat`](https://aka.ms/mgt/starters/react-chat). Follow the README instructions and then continue with [Load data from Microsoft 365](#load-data-from-microsoft-365)
+::: zone-end
+
+## Prerequisites
+
+To follow the steps in this article, you need a Microsoft 365 development environment and a few tools. For details, see [getting started](./overview.md).
+
+## Create a React app
+
+Create a new React app by running the following command. This command creates a new React app using TypeScript, which helps writing more robust code and avoiding runtime errors. If asked to install the `create-react-app` package, select `y` to confirm.
+
+```bash
+npx create-react-app my-m365-app --template typescript --use-npm
 ```
-Because React implements its own synthetic event system, it cannot listen for DOM events coming from custom elements without the use of a workaround. You will need to use a ref to reference the Toolkit components and manually attach event listeners with addEventListener, as shown in the following example.
 
-```jsx
-// you can just import a single component
-import '@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js';
+Change the working directory to the newly created app.
 
-class App extends Component {
-  render() {
-    return <mgt-login ref="loginComponent" />;
-  }
+```bash
+cd my-m365-app
+```
 
-  componentDidMount() {
-    this.refs.loginComponent.addEventListener('loginCompleted', e => {
-      // handle event
+::: zone pivot="mgt-react"
+Next, install the `mgt-react`, `mgt-element` and `mgt-msal2-provider` npm packages, which contain the Microsoft Graph Toolkit React components, the core Toolkit capabilities and the MSAL2 authentication provider.
+
+```bash
+npm i @microsoft/mgt-react @microsoft/mgt-element @microsoft/mgt-msal2-provider
+```
+
+::: zone-end
+
+::: zone pivot="mgt-react-chat"
+Next, install the `mgt-react`, `mgt-chat` `mgt-element` and `mgt-msal2-provider` npm packages, which contain the Microsoft Graph Toolkit React components, the core Toolkit capabilities and the MSAL2 authentication provider.
+
+```bash
+npm i @microsoft/mgt-react@next.mgt-chat @microsoft/mgt-chat@next.mgt-chat @microsoft/mgt-element@next.mgt-chat @microsoft/mgt-msal2-provider@next.mgt-chat
+```
+
+::: zone-end
+
+Confirm that you can run the app.
+
+```bash
+npm start
+```
+
+You should be able to open your app in the browser via `http://localhost:3000`.
+
+[!INCLUDE [Entra app registration](../includes/aad-app-registration-spa.md)]
+
+## Connect React app to Microsoft 365
+
+Now that your application is registered with Microsoft Entra ID, you can connect the React app to Microsoft 365. First, allow users to sign in to the app using their Microsoft account.
+
+<a name='copy-the-azure-ad-application-registration-id'></a>
+
+### Copy the Microsoft Entra application registration ID
+
+1. In the Microsoft Entra admin center, go to your application registration.
+1. Verify that you are on the **Overview** page.
+1. From the **Essentials** section, copy the value of the **Application (client) ID** property
+
+### Configure the Microsoft Graph Toolkit authentication provider
+
+Next, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, we use MSAL2, which is a good default for building standalone applications. If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, use [other providers](../providers/providers.md).
+
+1. In the code editor, open the **src/index.tsx** file, and to the list of imports, add:
+
+    ```TypeScript
+    import { Providers } from "@microsoft/mgt-element";
+    import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
+    ```
+
+1. After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.
+
+    ```TypeScript
+    Providers.globalProvider = new Msal2Provider({
+      clientId: 'REPLACE_WITH_CLIENTID'
     });
-  }
-}
+    ```
+
+Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Microsoft Entra admin center app registration overview.
+
+With these changes, the **src/index.tsx** file looks like the following.
+
+```TypeScript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
+
+Providers.globalProvider = new Msal2Provider({
+  clientId: "REPLACE_WITH_CLIENTID",
+});
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
 ```
 
-## React and Typescript
+### Add the sign-in button
 
-A known issue can occur when you use custom elements with React and Typescript. Typescript will throw an error when trying to use a component in tsx. The workaround is to define the custom element in your code, as shown.
+Add the **Login** Microsoft Graph Toolkit React component to allow users to sign in with their Microsoft account to your app.
 
-```ts
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'mgt-login': any;
+1. In the code editor, open the **src/App.tsx** file, and to the list of imports add:
+
+    ```TypeScript
+    import { Login } from '@microsoft/mgt-react';
+    ```
+
+1. In the `App` function, replace the contents of the `return` clause with the basic structure including the Microsoft Graph Toolkit `<Login />` component:
+
+    ```TypeScript
+    <div className="app">
+      <header>
+        <Login />
+      </header>
+    </div>
+    ```
+
+With these changes, the **src/App.tsx** file looks like the following.
+
+```TypeScript
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { Login } from '@microsoft/mgt-react';
+
+function App() {
+  return (
+    <div className="app">
+     <header>
+       <Login />
+     </header>
+   </div>
+  );
+}
+
+export default App;
+```
+
+### Test signing in to your application
+
+You should now be able to sign in to your application with your Microsoft account.
+
+1. Go back to the browser where your React app is running. You should now see a **Sign In** button.
+1. When you select the **Sign In** button, you're prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure portal with).
+1. The first time you're using this Microsoft Entra application, you need to consent its use in your organization.
+1. After signing in, you'll be redirected to your React app. Notice that the **Sign In** button changed to show your user's name
+   ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png)
+
+## Load data from Microsoft 365
+
+Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but also loading its data. In this example, the signed in person's calendar is displayed.
+
+### Specify permissions needed for your application
+
+Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data. These scopes differ depending on what kind of information you want to show. In this case, you need access to people's calendar and basic access to information about people that is also displayed in the calendar. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).
+
+1. In the code editor, open the **src/index.tsx** file, and update the provider initialization code.
+
+    ```TypeScript
+    Providers.globalProvider = new Msal2Provider({
+      clientId: 'REPLACE_WITH_CLIENTID',
+      scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
+    });
+    ```
+
+### Show user's calendar data after signing in
+
+Next, extend the application to show data from the user's calendar. You can access this information only after the user is signed in. You need to track the user's sign-in state and show the calendar data after the user is logged in with their Microsoft account.
+
+#### Track user's sign-in state
+
+You need to track the user's signed-in state in order to use the `useIsSignedIn` hook provided by `mgt-react`.
+
+1. Import the `useIsSignedIn` hook from `mgt-react`, by adding it to the `mgt-react` imports.
+
+    ```TypeScript
+    import { Login, useIsSignedIn } from '@microsoft/mgt-react';
+    ```
+
+1. Use the hook `useIsSignedIn` to enable tracking the user's sign-in state in your application by adding it in the **App** function:
+
+    ```TypeScript
+      const [ isSignedIn ] = useIsSignedIn();
+    ```
+
+This code defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.
+
+#### Load user's calendar if user is signed in
+
+Now that you track the user's sign-in state in your application, you can show their calendar after they signed in.
+
+1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the `<Agenda />` component.
+
+    ```TypeScript
+    import { useIsSignedIn, Agenda, Login } from '@microsoft/mgt-react';
+    ```
+
+1. Extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit `<Agenda />` component that only renders if the user is signed in.
+
+    ```TypeScript
+    <div className="row">
+      <div className="column">
+        {isSignedIn &&
+          <Agenda />}
+      </div>
+    </div>
+    ```
+
+1. In the code editor, open the **src/App.css** file, and change the entire content of the file with the following code.
+
+    ```css
+    .row {
+      display: flex;
+      flex-flow: wrap;
     }
-  }
+    
+    .column {
+      flex: 0 0 50%;
+    }
+    ```
+
+With these changes, the **src/App.tsx** file should look like the following.
+
+```TypeScript
+import { useIsSignedIn, Agenda, Login } from '@microsoft/mgt-react';
+import React, { useState, useEffect } from 'react';
+import './App.css';
+
+function App() {
+  const [isSignedIn] = useIsSignedIn();
+
+  return (
+    <div className="app">
+      <header>
+        <Login />
+      </header>
+      <div className="row">
+        <div className="column">
+          {isSignedIn &&
+            <Agenda />}
+        </div>
+      </div>
+    </div>
+  );
 }
-```
-You can then use it in your tsx as `<mgt-login></mgt-login>`.
 
-## Using mgt-react
-
-We recommend using `mgt-react` to simplify usage of Microsoft Graph Toolkit components and avoid having to implement workarounds. The library wraps all components and exports them as React components. 
-
-### Install the library
-Add the library to your project using:
-
-```bash
-npm install @microsoft/mgt-react
-```
-or
-```bash
-yarn add @microsoft/mgt-react
-```
-### Using components
-
-All the Microsoft Graph Toolkit components are available in the library. The names of the React components are in PascalCase and do not include the `Mgt` prefix. For example, the `mgt-person` component is available as `Person`, and the `mgt-people-picker` component is available as `PeoplePicker`.
-
-To use the components, first import the Toolkit in your application; `mgt-react` does not import the components automatically.
-
-```jsx
-import '@microsoft/mgt'
-```
-Now, you can import and use any of the components as regular React components. For example, to use the [Person component](../components/person.md), import it at the top of your file:
-
-```jsx
-import { Person } from 'mgt-react';
-```
-and now, you can use `Person` anywhere in your JSX.
-
-#### Use properties instead of attributes
-
-For example, you can set the `personDetails` property to an object:
-
-```jsx
-const App = (props) => {
-  const personDetails = {
-    displayName: 'Bill Gates',
-  };
-
-  return <Person personDetails={personDetails}></Person>;
-};
+export default App;
 ```
 
-#### Register event handlers
+::: zone pivot="mgt-react-chat"
 
-```jsx
-import { PeoplePicker } from 'mgt-react';
+### Show a user's chat conversation
 
-const App = (props) => {
-  handleSelectionChanged = (e) => {
-    this.setState({ people: e.target.selectedPeople });
-  };
+Next, extend the application to show a conversation from the user's 1:1 and group conversations. You can access this information only after the user is signed in.
 
-  return <PeoplePicker selectionChanged={this.handleSelectionChanged} />;
-};
-```
-All properties and events map exactly as they are defined on the web component.
+### Update the required permissions for your application
 
-#### Templates
+By adding the chat components to your application, you need to update the list of requested scopes to include the permissions required to access chat data. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).
 
-All Microsoft Graph Toolkit components support [custom templates](../templates.md), which allow you to modify the content of a component. `mgt-react` allows you to use React to write templates for Microsoft Graph Toolkit components.
+1. In the code editor, open the **src/index.tsx** file, and update the provider initialization code.
 
-First, define a React component that uses the `MgtTemplateProps` object as its type of props, then use it as a child of the wrapped component.
+    ```TypeScript
+    import { allChatScopes } from '@microsoft/mgt-chat';
+    
+    Providers.globalProvider = new Msal2Provider({
+      clientId: 'REPLACE_WITH_CLIENTID',
+      scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all', ...allChatScopes]
+    });
+    ```
 
-For example, to create a template to be used for rendering events in the `mgt-agenda` component, first define a component to be used for rendering an event:
-```jsx
-import { MgtTemplateProps } from 'mgt-react';
+#### Load a user's chat conversation if the user is signed in
 
-const MyEvent = (props: MgtTemplateProps) => {
-  const { event } = props.dataContext;
-  return <div>{event.subject}</div>;
-};
-```
-Then use it as a child of the wrapped `Agenda` component and set the template prop to `event`:
-```jsx
-import { Agenda } from 'mgt-react';
+1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Chat** component and types.
 
-const App = (props) => {
-  return <Agenda>
-    <MyEvent template="event">
-  </Agenda>
+    ```TypeScript
+    import { Chat, NewChat } from '@microsoft/mgt-chat';
+    import { Chat as GraphChat } from '@microsoft/microsoft-graph-types';
+    import React, { useState, useEffect, useCallback } from 'react';
+    ```
+
+1. Next, inside the **App** function, add the necessary code to handle the user's interactions with the chat components.
+
+    ```TypeScript
+    const [chatId, setChatId] = useState<string>();
+    
+    const [showNewChat, setShowNewChat] = useState<boolean>(false);
+    const onChatCreated = useCallback((chat: GraphChat) => {
+      setChatId(chat.id);
+      setShowNewChat(false);
+    }, []);
+    ```
+
+1. Then, extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit `<Chat />` and `<NewChat />` components.
+
+    ```TypeScript
+    <div className="column">
+      {isSignedIn && (
+        <>
+          <button onClick={() => setShowNewChat(true)}>New Chat</button>
+          {showNewChat && (
+            <NewChat
+              onChatCreated={onChatCreated}
+              onCancelClicked={() => setShowNewChat(false)}
+              mode="auto"
+            />
+          )}
+          
+          {chatId && <Chat chatId={chatId} />}
+        </>
+      )}
+    </div>
+    ```
+
+With these changes, the **src/App.tsx** file should look like the following.
+
+```TypeScript
+import { useIsSignedIn, Agenda, Login } from '@microsoft/mgt-react';
+import { Chat, NewChat } from '@microsoft/mgt-chat';
+import { Chat as GraphChat } from '@microsoft/microsoft-graph-types';
+import React, { useState, useEffect, useCallback } from 'react';
+import './App.css';
+
+function App() {
+  const [isSignedIn] = useIsSignedIn();
+  const [chatId, setChatId] = useState<string>();
+
+  const [showNewChat, setShowNewChat] = useState<boolean>(false);
+  const onChatCreated = useCallback((chat: GraphChat) => {
+    setChatId(chat.id);
+    setShowNewChat(false);
+  }, []);
+
+  return (
+    <div className="App">
+      <header>
+        <Login />
+      </header>
+      <div className="row">
+        <div className="column">
+          {isSignedIn &&
+            <Agenda />}
+        </div>
+        <div className="column">
+          {isSignedIn && (
+            <>
+              <button onClick={() => setShowNewChat(true)}>New Chat</button>
+              {showNewChat && (
+                <NewChat
+                  onChatCreated={onChatCreated}
+                  onCancelClicked={() => setShowNewChat(false)}
+                  mode="auto"
+                />
+              )}
+              
+              {chatId && <Chat chatId={chatId} />}
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
 }
+
+export default App;
 ```
 
-The `template` prop allows you to specify which template to overwrite. In this case, the `MyEvent` component will be repeated for every event, and the `event` object will be passed as part of the `dataContext` prop.
+::: zone-end
+
+### Test showing a user's calendar and chats after they signed in
+
+With these changes, after signing in to your application with your Microsoft account, you should see your calendar.
+
+::: zone pivot="mgt-react"
+
+1. To see the changes, refresh your browser at `http://localhost:3000`.
+1. Choose the **Sign In** button and sign in using your Microsoft account.
+1. After consenting to the use of the application, you should see information about the current user and their calendar.
+![Finished app](../images/mgt-finished-app.png)
+::: zone-end
+::: zone pivot="mgt-react-chat"
+
+1. To see the changes, refresh your browser at `http://localhost:3000`.
+1. Choose the **Sign In** button and sign in using your Microsoft account.
+1. After consenting to the use of the application, you should see information about the current user. You also see their calendar and the ability to create a new chat and start interacting with this user.
+![Finished app](../images/mgt-finished-app-v4.png)
+::: zone-end
 
 ## Next steps
-- Check out this step-by-step tutorial on [building a React app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-13-using-microsoft-graph-toolkit-with-react/).
+
+- See [what's in the Microsoft Graph Toolkit](../overview.md).
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
-- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt/issues).

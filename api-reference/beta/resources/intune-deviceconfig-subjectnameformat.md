@@ -1,10 +1,11 @@
 ---
 title: "subjectNameFormat enum type"
 description: "Subject Name Format Options."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # subjectNameFormat enum type
@@ -29,9 +30,3 @@ Subject Name Format Options.
 |commonNameAsAadDeviceId|7|Common Name As Serial Number.|
 |commonNameAsIntuneDeviceId|8|Common Name As Serial Number.|
 |commonNameAsDurableDeviceId|9|Common Name As Serial Number.|
-
-
-
-
-
-

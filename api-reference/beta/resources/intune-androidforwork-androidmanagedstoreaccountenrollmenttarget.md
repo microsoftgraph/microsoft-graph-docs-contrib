@@ -1,10 +1,11 @@
 ---
 title: "androidManagedStoreAccountEnrollmentTarget enum type"
 description: "Android for Work device management targeting type for the account"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # androidManagedStoreAccountEnrollmentTarget enum type
@@ -20,13 +21,7 @@ Android for Work device management targeting type for the account
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|Not yet documented|
-|all|1|Not yet documented|
-|targeted|2|Not yet documented|
-|targetedAsEnrollmentRestrictions|3|Not yet documented|
-
-
-
-
-
-
+|none|0||
+|all|1||
+|targeted|2||
+|targetedAsEnrollmentRestrictions|3||

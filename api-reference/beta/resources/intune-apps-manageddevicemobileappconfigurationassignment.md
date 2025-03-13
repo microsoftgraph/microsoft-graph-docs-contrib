@@ -1,10 +1,11 @@
 ---
 title: "managedDeviceMobileAppConfigurationAssignment resource type"
 description: "Contains the properties used to assign an MDM app configuration to a group."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # managedDeviceMobileAppConfigurationAssignment resource type
@@ -54,9 +55,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
-localization_priority: Normal
-author: "SumitParikh"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "frank-masuelli"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 10/31/2024
 ---
 
 # List subscribedSkus
@@ -13,102 +14,150 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of commercial subscriptions that an organization has acquired.
+Get the list of commercial subscriptions that an organization has acquired. For the mapping of license names as displayed on the Microsoft Entra admin center or the Microsoft 365 admin center against their Microsoft Graph **skuId** and **skuPartNumber** properties, see [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Organization.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "subscribedsku_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/subscribedsku-list-permissions.md)]
+
+[!INCLUDE [rbac-company-subscriptions-subscribedskus-apis](../includes/rbac-for-apis/rbac-company-subscriptions-subscribedskus-apis.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /subscribedSkus
 ```
+
 ## Optional query parameters
 
-This method does not support the [OData query parameters](/graph//query-parameters) to help customize the response (`$filter` is not supported).
+This method supports only the `$select` [OData query parameter](/graph//query-parameters) to help customize the response. It does not support `$filter`.
+
+> [!NOTE]
+> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search` parameter.
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+| Name          | Description               |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [subscribedSku](../resources/subscribedsku.md) objects in the response body.
+
 ## Example
-##### Request
-Here is an example of the request.
+
+### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_subscribedskus"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscribedSkus
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscribedskus-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-subscribedskus-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-subscribedskus-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscribedskus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscribedskus-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-subscribedskus-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-subscribedskus-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-subscribedskus-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-subscribedskus-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.subscribedSku",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
   "value": [
     {
-      "capabilityStatus": "capabilityStatus-value",
-      "consumedUnits": 99,
+      "accountName": "Sample account name",
+      "accountId": "ee045480-0260-4c1e-b946-55842502229c",
+      "appliesTo": "User",
+      "capabilityStatus": "Enabled",
+      "consumedUnits": 20,
+      "id": "48a80680-7326-48cd-9935-b556b81d3a4e_b05e124f-c7cc-45a0-a6aa-8cf78c946968",
       "prepaidUnits": {
-        "enabled": 99,
-        "suspended": 99,
-        "warning": 99
+        "enabled": 20,
+        "lockedOut": 0,
+        "suspended": 0,
+        "warning": 0
       },
       "servicePlans": [
         {
-          "servicePlanId": "servicePlanId-value",
-          "servicePlanName": "servicePlanName-value",
-          "provisioningStatus": "provisioningStatus-value",
-          "appliesTo": "appliesTo-value"
+          "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+          "servicePlanName": "EXCHANGE_S_FOUNDATION",
+          "provisioningStatus": "Success",
+          "appliesTo": "Company"
         }
       ],
-      "skuId": "skuId-value",
-      "skuPartNumber": "skuPartNumber-value"
+      "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968",
+      "skuPartNumber": "EMSPREMIUM",
+      "subscriptionIds": ["99cd2aed-d62f-4b1b-b92a-e0ddd2887742"]
     }
   ]
 }
 ```
+
+## Related content
+
+- [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -123,5 +172,3 @@ Content-length: 547
   ]
 }
 -->
-
-

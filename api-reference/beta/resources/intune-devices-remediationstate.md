@@ -1,10 +1,11 @@
 ---
 title: "remediationState enum type"
 description: "Indicates the type of execution status of the device management script."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # remediationState enum type
@@ -25,9 +26,4 @@ Indicates the type of execution status of the device management script.
 |success|2|Remediation script executed successfully and remediated the device state|
 |remediationFailed|3|Remediation script executed successfully but failed to remediated the device state|
 |scriptError|4|Remediation script execution encountered and error or timed out|
-
-
-
-
-
-
+|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|

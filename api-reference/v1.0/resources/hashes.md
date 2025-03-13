@@ -1,25 +1,24 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-localization_priority: Normal
-title: "Hashes resource type"
+author: spgraph-docs-team
+ms.localizationpriority: medium
+title: "hashes resource type"
 description: "The Hashes resource groups available hashes into a single structure for an item."
-ms.prod: ""
+ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
-# Hashes resource type
+# hashes resource type
 
 Namespace: microsoft.graph
 
-The **Hashes** resource groups available hashes into a single structure for an item.
+The **hashes** resource groups available hashes into a single structure for an item.
 
-**Note:** Not all services provide a value for all hash properties listed.
+>**Note:** Not all services provide a value for all hash properties listed.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -40,13 +39,12 @@ Here is a JSON representation of the resource.
 
 | Property         | Type   | Description                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
-| **sha256Hash**   | String | SHA256 hash for the contents of the file (if available). Read-only. |
 | **crc32Hash**    | String | The CRC32 value of the file in little endian (if available). Read-only.            |
 | **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
+| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
+| **sha256Hash**   | String | SHA256 hash for the contents of the file (if available). Read-only. |
 
-**Note:** In some cases hash values may not be available. 
-If this is the case, the hash values on an item will be updated after the item is downloaded.
+>**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.
 
 ## Remarks
 
@@ -54,7 +52,7 @@ In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Has
 
 In OneDrive Personal, **quickXorHash** is not available.
 
-To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).
+To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](/onedrive/developer/code-snippets/quickxorhash).
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 

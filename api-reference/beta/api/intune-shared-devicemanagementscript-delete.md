@@ -1,10 +1,11 @@
 ---
 title: "Delete deviceManagementScript"
 description: "Deletes a deviceManagementScript."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Delete deviceManagementScript
@@ -17,18 +18,20 @@ Namespace: microsoft.graph
 
 Deletes a [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md).
 
-## Prerequisites
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)||
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp; &nbsp; **Policy Set** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Device management** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Policy Set** | DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application||
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp; &nbsp; **Policy Set** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Device management** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Policy Set** | DeviceManagementConfiguration.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {
@@ -42,7 +45,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -64,12 +67,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-
-
-
-

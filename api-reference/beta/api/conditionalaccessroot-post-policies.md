@@ -1,10 +1,12 @@
 ---
 title: "Create conditionalAccessPolicy"
 description: "Create a new conditionalAccessPolicy."
-localization_priority: Normal
-author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Create conditionalAccessPolicy
@@ -15,18 +17,19 @@ Namespace: microsoft.graph
 
 Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)                    |
-|:--------------------------------------|:---------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+[!INCLUDE [permissions-table](../includes/permissions/conditionalaccessroot-post-policies-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]
 
 > [!NOTE]
-> This API has a [known issue](/graph/known-issues#permissions) related to permissions.
+> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13671) and may require consent to multiple permissions.
 
 ## HTTP request
 
@@ -40,7 +43,7 @@ POST /identity/conditionalAccess/policies
 
 | Name          | Description      |
 |:--------------|:-----------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -58,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a new [cond
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
 #### Request
-The following example shows a common request to require multi-factor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.
+The following example shows a common request to require multifactor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.
 
 >**Note:** You must set up your trusted locations before using this operation.
 
@@ -66,7 +69,7 @@ The following example shows a common request to require multi-factor authenticat
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot_1"
 }-->
 
 ```http
@@ -106,24 +109,44 @@ Content-type: application/json
     }
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-conditionalaccesspolicy-from-conditionalaccessroot-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conditionalaccesspolicy-from-conditionalaccessroot-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-conditionalaccesspolicy-from-conditionalaccessroot-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-conditionalaccesspolicy-from-conditionalaccessroot-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conditionalaccesspolicy-from-conditionalaccessroot-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-conditionalaccesspolicy-from-conditionalaccessroot-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-conditionalaccesspolicy-from-conditionalaccessroot-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-conditionalaccesspolicy-from-conditionalaccessroot-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-conditionalaccesspolicy-from-conditionalaccessroot-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -188,15 +211,17 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Block access to Exchange Online from non-trusted regions
+### Example 2: Block access to Exchange Online from nontrusted regions
 
 #### Request
 The following example shows a request to block access to Exchange Online from non-trusted/unknown regions.
 This example assumes that the named location with id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponds to a list of non-trusted/unknown regions.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot_2"
 }-->
 
 ```http
@@ -233,9 +258,43 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conditionalaccesspolicy-from-conditionalaccessroot-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-conditionalaccesspolicy-from-conditionalaccessroot-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conditionalaccesspolicy-from-conditionalaccessroot-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-conditionalaccesspolicy-from-conditionalaccessroot-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-conditionalaccesspolicy-from-conditionalaccessroot-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-conditionalaccesspolicy-from-conditionalaccessroot-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -248,7 +307,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaconditionalAccessBetaDocs/$metadata#conditionalAccess/policies/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/policies/$entity",
     "id": "c98e6c3d-f6ca-42ea-a927-773b6f12a0c2",
     "displayName": "Block access to EXO non-trusted regions.",
     "createdDateTime": "2019-10-14T19:53:11.3705634Z",
@@ -300,10 +359,12 @@ Content-type: application/json
 ### Example 3: Use all conditions/controls
 
 #### Request
-The following is an example of the request to use all the conditions/controls.
+The following example shows a request to use all the conditions/controls.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot_3"
 }-->
 
 ```http
@@ -415,9 +476,43 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conditionalaccesspolicy-from-conditionalaccessroot-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-conditionalaccesspolicy-from-conditionalaccessroot-3-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conditionalaccesspolicy-from-conditionalaccessroot-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-conditionalaccesspolicy-from-conditionalaccessroot-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-conditionalaccesspolicy-from-conditionalaccessroot-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-conditionalaccesspolicy-from-conditionalaccessroot-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -538,16 +633,18 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Require MFA to Exchange Online from non-complaint devices
+### Example 4: Require MFA to Exchange Online from non-compliant devices
 
 >**Note:** We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use **devices** condition.
 
 #### Request
-The following example shows a request to require MFA to Exchange Online from non-complaint devices.
+The following example shows a request to require MFA to Exchange Online from non-compliant devices.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot_4"
 }-->
 
 ```http
@@ -567,10 +664,10 @@ Content-type: application/json
             "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }
@@ -584,9 +681,43 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conditionalaccesspolicy-from-conditionalaccessroot-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-conditionalaccesspolicy-from-conditionalaccessroot-4-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conditionalaccesspolicy-from-conditionalaccessroot-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-conditionalaccesspolicy-from-conditionalaccessroot-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-conditionalaccesspolicy-from-conditionalaccessroot-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-conditionalaccesspolicy-from-conditionalaccessroot-4-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -635,10 +766,10 @@ Content-type: application/json
             "excludeRoles": []
         },
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }

@@ -1,11 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
 title: mentionAction resource type
 description: The MentionAction object provides information about who was mentioned during an activity.
-localization_priority: Normal
-ms.prod: "insights"
+ms.localizationpriority: medium
+ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # mentionAction resource type
 

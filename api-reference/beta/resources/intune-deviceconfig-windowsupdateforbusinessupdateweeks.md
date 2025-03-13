@@ -1,10 +1,11 @@
 ---
 title: "windowsUpdateForBusinessUpdateWeeks enum type"
 description: "Scheduled the update installation on the weeks of the month"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # windowsUpdateForBusinessUpdateWeeks enum type
@@ -26,9 +27,4 @@ Scheduled the update installation on the weeks of the month
 |thirdWeek|4|Scheduled the update installation on the third week of the month|
 |fourthWeek|8|Scheduled the update installation on the fourth week of the month|
 |everyWeek|15|Scheduled the update installation on every week of the month|
-
-
-
-
-
-
+|unknownFutureValue|22|Evolvable enum member|

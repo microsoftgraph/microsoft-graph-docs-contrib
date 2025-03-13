@@ -1,10 +1,11 @@
 ---
 title: "assign action"
-description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+description: "Intune Wip Intunebrandingprofile Assign Api ."
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # assign action
@@ -15,12 +16,14 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
 
-## Prerequisites
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assign
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) collection|Not yet documented|
+|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) collection||
 
 
 
@@ -63,7 +66,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assign
 
 Content-type: application/json
-Content-length: 442
+Content-length: 527
 
 {
   "assignments": [
@@ -71,9 +74,11 @@ Content-length: 442
       "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
       "id": "ee38a117-a117-ee38-17a1-38ee17a138ee",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]
@@ -85,9 +90,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-

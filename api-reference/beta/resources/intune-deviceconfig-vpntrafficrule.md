@@ -1,10 +1,11 @@
 ---
 title: "vpnTrafficRule resource type"
 description: "VPN Traffic Rule definition."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # vpnTrafficRule resource type
@@ -30,6 +31,7 @@ VPN Traffic Rule definition.
 |appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|App type, if this traffic rule is triggered by an app. Possible values are: `none`, `desktop`, `universal`.|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|When app triggered, indicates whether to enable split tunneling along this route. Possible values are: `none`, `splitTunnel`, `forceTunnel`.|
 |claims|String|Claims associated with this traffic rule.|
+|vpnTrafficDirection|[vpnTrafficDirection](../resources/intune-deviceconfig-vpntrafficdirection.md)|Specify whether the rule applies to inbound traffic or outbound traffic. Possible values are: `outbound`, `inbound`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -77,12 +79,7 @@ Here is a JSON representation of the resource.
   "appId": "String",
   "appType": "String",
   "routingPolicyType": "String",
-  "claims": "String"
+  "claims": "String",
+  "vpnTrafficDirection": "String"
 }
 ```
-
-
-
-
-
-

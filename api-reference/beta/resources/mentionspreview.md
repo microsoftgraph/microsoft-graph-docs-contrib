@@ -1,10 +1,11 @@
 ---
 title: "mentionsPreview resource type"
 description: "Represents information about mention objects in a resource instance."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "simonhult"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # mentionsPreview resource type
@@ -20,9 +21,12 @@ Represents information about [mention](../resources/mention.md) objects in a res
 |:---------------|:--------|:----------|
 | isMentioned | Boolean | True if the signed-in user is mentioned in the parent resource instance. Read-only. Supports filter. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

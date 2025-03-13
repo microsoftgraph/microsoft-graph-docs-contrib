@@ -1,10 +1,11 @@
 ---
 title: "reportRoot: getTeamsUserActivityUserDetail"
 description: "Get details about Microsoft Teams user activity by user."
-localization_priority: Priority
-ms.prod: "reports"
-author: "pranoychaudhuri"
+ms.localizationpriority: high
+ms.subservice: "reports"
+author: "sarahwxy"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # reportRoot: getTeamsUserActivityUserDetail
@@ -13,21 +14,20 @@ Namespace: microsoft.graph
 
 Get details about Microsoft Teams user activity by user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+<!-- { "blockType": "permissions", "name": "reportroot_getteamsuseractivityuserdetail" } -->
+[!INCLUDE [permissions-table](../includes/permissions/reportroot-getteamsuseractivityuserdetail-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+>**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
-<!-- { "blockType": "samples" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /reports/getTeamsUserActivityUserDetail(period='{period_value}')
@@ -49,7 +49,11 @@ In the request URL, provide one of the following parameters with a valid value.
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,6 +64,9 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns:
 
 - Report Refresh Date
+- Tenant Display Name
+- Shared Channel Tenant Display Names
+- User Id
 - User Principal Name
 - Last Activity Date
 - Is Deleted
@@ -69,18 +76,40 @@ The CSV file has the following headers for columns:
 - Private Chat Message Count
 - Call Count
 - Meeting Count
+- Post Messages
+- Reply Messages
+- Urgent Messages
+- Meetings Organized Count
+- Meetings Attended Count
+- Ad Hoc Meetings Organized Count
+- Ad Hoc Meetings Attended Count
+- Scheduled One-time Meetings Organized Count
+- Scheduled One-time Meetings Attended Count
+- Scheduled Recurring Meetings Organized Count
+- Scheduled Recurring Meetings Attended Count
+- Audio Duration
+- Video Duration
+- Screen Share Duration
+- Audio Duration In Seconds
+- Video Duration In Seconds
+- Screen Share Duration In Seconds
 - Has Other Action
+- Is Licensed
 - Report Period
+
+> [!NOTE] 
+> The values in the Meetings Organized Count might not be the sum of the Ad Hoc Meetings Organized Count, Scheduled One-time Meetings Organized Count, and Scheduled Recurring Meetings Organized Count that a user organized during the specified time period. This is because the Unclassified meetings value is not included in the output CSV file. For details, see [Microsoft Teams user activity report](/microsoftteams/teams-analytics-and-reports/user-activity-report).
 
 ## Example
 
-#### Request
+### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "reportroot_getteamsuseractivityuserdetail"
 }-->
 
@@ -88,15 +117,42 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(period='D7')
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getteamsuseractivityuserdetail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### Response
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/reportroot-getteamsuseractivityuserdetail-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-The following is an example of the response.
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getteamsuseractivityuserdetail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getteamsuseractivityuserdetail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getteamsuseractivityuserdetail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/reportroot-getteamsuseractivityuserdetail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/reportroot-getteamsuseractivityuserdetail-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "blockType": "ignored"
 } -->
 
 ```http
@@ -107,13 +163,16 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { 
+  "blockType": "response", 
+  "@odata.type": "String" 
+} -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
@@ -126,4 +185,3 @@ Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Da
   "suppressions": [
   ]
 }-->
-

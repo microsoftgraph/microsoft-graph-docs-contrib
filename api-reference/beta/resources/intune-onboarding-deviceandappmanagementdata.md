@@ -1,10 +1,11 @@
 ---
 title: "deviceAndAppManagementData resource type"
 description: "Exported Data"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceAndAppManagementData resource type
@@ -20,7 +21,7 @@ Exported Data
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|Stream|Not yet documented|
+|content|Stream||
 
 ## Relationships
 None
@@ -38,9 +39,3 @@ Here is a JSON representation of the resource.
   "content": "Stream"
 }
 ```
-
-
-
-
-
-

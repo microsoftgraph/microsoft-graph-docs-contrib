@@ -1,10 +1,11 @@
 ---
 title: "wipe action"
 description: "Wipe a device"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # wipe action
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Wipe a device
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PrivilegedOperations.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## HTTP Request
 <!-- {
@@ -44,7 +47,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -54,10 +57,12 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|keepEnrollmentData|Boolean|Not yet documented|
-|keepUserData|Boolean|Not yet documented|
-|macOsUnlockCode|String|Not yet documented|
-|useProtectedWipe|Boolean|Not yet documented|
+|keepEnrollmentData|Boolean||
+|keepUserData|Boolean||
+|macOsUnlockCode|String||
+|obliterationBehavior|[obliterationBehavior](../resources/intune-devices-obliterationbehavior.md)||
+|persistEsimDataPlan|Boolean||
+|useProtectedWipe|Boolean||
 
 
 
@@ -72,12 +77,14 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 138
+Content-length: 216
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
   "macOsUnlockCode": "Mac Os Unlock Code value",
+  "obliterationBehavior": "doNotObliterate",
+  "persistEsimDataPlan": true,
   "useProtectedWipe": true
 }
 ```
@@ -87,9 +94,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "Create pfxUserCertificate"
 description: "Create a new pfxUserCertificate object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create pfxUserCertificate
@@ -17,10 +18,12 @@ Namespace: microsoft.graph
 
 Create a new [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -38,7 +41,7 @@ POST /pfxUserCertificates
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,23 +51,23 @@ The following table shows the properties that are required when you create the p
 
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|Guid|Not yet documented|
-|userId|Guid|Not yet documented|
-|thumbprint|String|Not yet documented|
-|userUpn|String|Not yet documented|
-|encryptedPfxBlob|String|Not yet documented|
-|encryptedPfxPassword|String|Not yet documented|
-|certStartDate|DateTimeOffset|Not yet documented|
-|certExpirationDate|DateTimeOffset|Not yet documented|
-|providerName|String|Not yet documented|
-|encryptionKeyName|String|Not yet documented|
-|paddingScheme|Int32|Not yet documented|
-|status|Int32|Not yet documented|
-|intendedPurpose|Int32|Not yet documented|
-|createdTime|DateTimeOffset|Not yet documented|
-|isDeleted|Boolean|Not yet documented|
-|lastModifiedTime|DateTimeOffset|Not yet documented|
-|eTag|String|Not yet documented|
+|tenantId|Guid||
+|userId|Guid||
+|thumbprint|String||
+|userUpn|String||
+|encryptedPfxBlob|String||
+|encryptedPfxPassword|String||
+|certStartDate|DateTimeOffset||
+|certExpirationDate|DateTimeOffset||
+|providerName|String||
+|encryptionKeyName|String||
+|paddingScheme|Int32||
+|status|Int32||
+|intendedPurpose|Int32||
+|createdTime|DateTimeOffset||
+|isDeleted|Boolean||
+|lastModifiedTime|DateTimeOffset||
+|eTag|String||
 
 
 
@@ -130,9 +133,3 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
-
-
-
-
-
-

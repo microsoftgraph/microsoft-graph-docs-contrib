@@ -4,26 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.groups.item.threads.item.reply.ReplyPostRequestBody replyPostRequestBody = new com.microsoft.graph.groups.item.threads.item.reply.ReplyPostRequestBody();
 Post post = new Post();
 ItemBody body = new ItemBody();
-body.contentType = BodyType.TEXT;
-body.content = "I attached a reference to a file on OneDrive.";
-post.body = body;
-LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
-ReferenceAttachment attachments = new ReferenceAttachment();
-attachments.name = "Personal pictures";
-attachments.sourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics";
-attachments.providerType = "oneDriveConsumer";
-attachments.permission = "Edit";
-attachments.isFolder = "True";
-attachmentsList.add(attachments);
-post.attachments = attachmentsList;
+body.setContentType(BodyType.Text);
+body.setContent("I attached a reference to a file on OneDrive.");
+post.setBody(body);
+LinkedList<Attachment> attachments = new LinkedList<Attachment>();
+ReferenceAttachment attachment = new ReferenceAttachment();
+attachment.setOdataType("#microsoft.graph.referenceAttachment");
+attachment.setName("Personal pictures");
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("sourceUrl", "https://contoso.com/personal/mario_contoso_net/Documents/Pics");
+additionalData.put("providerType", "oneDriveConsumer");
+additionalData.put("permission", "Edit");
+additionalData.put("isFolder", "True");
+attachment.setAdditionalData(additionalData);
+attachments.add(attachment);
+post.setAttachments(attachments);
+replyPostRequestBody.setPost(post);
+graphClient.groups().byGroupId("{group-id}").threads().byConversationThreadId("{conversationThread-id}").reply().post(replyPostRequestBody);
 
-graphClient.groups("1848753d-185d-4c08-a4e4-6ee40521d115").threads("AAQkADJUdfolA==")
-	.reply(post)
-	.buildRequest()
-	.post();
 
 ```

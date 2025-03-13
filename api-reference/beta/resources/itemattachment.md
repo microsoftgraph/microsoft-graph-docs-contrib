@@ -1,10 +1,11 @@
 ---
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event,"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
-author: "svpsiva"
+ms.subservice: "outlook"
+author: "SuryaLashmiS"
+ms.date: 05/23/2024
 ---
 
 # itemAttachment resource type
@@ -15,8 +16,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-A contact, event, or message that's attached to a user [event](../resources/event.md),
-[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).  
+A contact, event, or message attached to a user [event](../resources/event.md),
+[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 
 Derived from [attachment](attachment.md).
 
@@ -30,7 +31,7 @@ Derived from [attachment](attachment.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentType|String|The content type of the attachment.|
+|contentType|String|The content type of the attachment. Returned as `null` by default, when not set explicitly. Optional.|
 |id|String| The attachment ID.|
 |isInline|Boolean|Set to true if the attachment is inline, such as an embedded image within the body of the item.|
 |lastModifiedDateTime|DateTimeOffset|The last time and date that the attachment was modified.|
@@ -40,11 +41,11 @@ Derived from [attachment](attachment.md).
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|The attached contact, message or event. Navigation property.|
+|item|[OutlookItem](outlookitem.md)|The attached contact, message, or event. Navigation property.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

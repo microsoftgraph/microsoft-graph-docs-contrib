@@ -1,0 +1,232 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../resources/complianceapioverview.md
+- name: eDiscovery (preview)
+  items:
+  - name: Overview
+    href: ../../resources/ediscovery-ediscoveryapioverview.md
+  - name: Case
+    items:
+    - name: Case
+      href: ../../resources/ediscovery-case.md
+    - name: List cases
+      href: ../../api/ediscovery-case-list.md
+    - name: Create case
+      href: ../../api/ediscovery-case-post.md
+    - name: Get case
+      href: ../../api/ediscovery-case-get.md
+    - name: Update case
+      href: ../../api/ediscovery-case-update.md
+    - name: Delete case
+      href: ../../api/ediscovery-case-delete.md
+    - name: Close case
+      href: ../../api/ediscovery-case-close.md
+    - name: Reopen case
+      href: ../../api/ediscovery-case-reopen.md
+    - name: Custodians
+      items:
+      - name: List custodians
+        href: ../../api/ediscovery-case-list-custodians.md
+      - name: Create custodian
+        href: ../../api/ediscovery-case-post-custodians.md
+    - name: Legal holds
+      items:
+      - name: List legalHolds
+        href: ../../api/ediscovery-case-list-legalholds.md
+      - name: Create legalHold
+        href: ../../api/ediscovery-case-post-legalholds.md
+    - name: Review sets
+      items:
+      - name: List reviewSets
+        href: ../../api/ediscovery-case-list-reviewsets.md
+      - name: Create reviewSet
+        href: ../../api/ediscovery-case-post-reviewsets.md
+    - name: Case settings
+      items:
+      - name: Get caseSettings
+        href: ../../api/ediscovery-casesettings-get.md
+      - name: Update caseSettings
+        href: ../../api/ediscovery-casesettings-update.md
+      - name: resetToDefault
+        href: ../../api/ediscovery-casesettings-resettodefault.md
+    - name: Source collections
+      items:
+      - name: List sourceCollections
+        href: ../../api/ediscovery-case-list-sourcecollections.md
+      - name: Create sourceCollection
+        href: ../../api/ediscovery-case-post-sourcecollections.md
+    - name: Tags
+      items:
+      - name: List tags
+        href: ../../api/ediscovery-case-list-tags.md
+      - name: Create tag
+        href: ../../api/ediscovery-case-post-tags.md
+  - name: Custodian
+    items:
+    - name: Custodian
+      href: ../../resources/ediscovery-custodian.md
+    - name: List
+      href: ../../api/ediscovery-case-list-custodians.md
+    - name: Create
+      href: ../../api/ediscovery-case-post-custodians.md
+    - name: Get
+      href: ../../api/ediscovery-custodian-get.md
+    - name: Update
+      href: ../../api/ediscovery-custodian-update.md
+    - name: Release
+      href: ../../api/ediscovery-custodian-release.md
+    - name: Activate
+      href: ../../api/ediscovery-custodian-activate.md
+    - name: List site sources
+      href: ../../api/ediscovery-custodian-list-sitesources.md
+    - name: Create site sources
+      href: ../../api/ediscovery-custodian-post-sitesources.md
+    - name: List unified group sources
+      href: ../../api/ediscovery-custodian-list-unifiedgroupsources.md
+    - name: Create unified group sources
+      href: ../../api/ediscovery-custodian-post-unifiedgroupsources.md
+    - name: List user sources
+      href: ../../api/ediscovery-custodian-list-usersources.md
+    - name: Create user sources
+      href: ../../api/ediscovery-custodian-post-usersources.md
+  - name: Legal hold
+    items:
+    - name: Legal hold
+      href: ../../resources/ediscovery-legalhold.md
+    - name: List
+      href: ../../api/ediscovery-case-list-legalholds.md
+    - name: Create
+      href: ../../api/ediscovery-case-post-legalholds.md
+    - name: Get
+      href: ../../api/ediscovery-legalhold-get.md
+    - name: Update
+      href: ../../api/ediscovery-legalhold-update.md
+    - name: Delete
+      href: ../../api/ediscovery-legalhold-delete.md
+    - name: List site sources
+      href: ../../api/ediscovery-legalhold-list-sitesources.md
+    - name: Create site source
+      href: ../../api/ediscovery-legalhold-post-sitesources.md
+    - name: List user sources
+      href: ../../api/ediscovery-legalhold-list-usersources.md
+    - name: Create user source
+      href: ../../api/ediscovery-legalhold-post-usersources.md
+  - name: Noncustodial data source
+    items:
+    - name: Noncustodial data source
+      href: ../../resources/ediscovery-noncustodialdatasource.md
+    - name: List
+      href: ../../api/ediscovery-noncustodialdatasource-list.md
+    - name: Get
+      href: ../../api/ediscovery-noncustodialdatasource-get.md
+    - name: Release
+      href: ../../api/ediscovery-noncustodialdatasource-release.md
+    - name: List datasource
+      href: ../../api/ediscovery-noncustodialdatasource-list-datasource.md
+    - name: Create
+      href: ../../api/ediscovery-noncustodialdatasource-post.md
+  - name: Review set
+    items:
+    - name: Review set
+      href: ../../resources/ediscovery-reviewset.md
+    - name: List reviewSets
+      href: ../../api/ediscovery-case-list-reviewsets.md
+    - name: Create reviewSet
+      href: ../../api/ediscovery-case-post-reviewsets.md
+    - name: Get reviewSet
+      href: ../../api/ediscovery-reviewset-get.md
+    - name: List queries
+      href: ../../api/ediscovery-reviewsetquery-list.md
+    - name: export
+      href: ../../api/ediscovery-reviewset-export.md
+    - name: addToReviewSet
+      href: ../../api/ediscovery-reviewset-addtoreviewset.md
+  - name: Review set query
+    items:
+    - name: Review set query
+      href: ../../resources/ediscovery-reviewsetquery.md
+    - name: List
+      href: ../../api/ediscovery-reviewsetquery-list.md
+    - name: Create
+      href: ../../api/ediscovery-reviewsetquery-post.md
+    - name: Get
+      href: ../../api/ediscovery-reviewsetquery-get.md
+    - name: Update
+      href: ../../api/ediscovery-reviewsetquery-update.md
+    - name: Delete
+      href: ../../api/ediscovery-reviewsetquery-delete.md
+    - name: Apply tags
+      href: ../../api/ediscovery-reviewsetquery-applytags.md
+  - name: Source collection
+    items:
+    - name: Source collection
+      href: ../../resources/ediscovery-sourcecollection.md
+    - name: Add additional sources
+      href: ../../api/ediscovery-sourcecollection-post-additionalsources.md
+    - name: Add custodian sources
+      href: ../../api/ediscovery-sourcecollection-post-custodiansources.md
+    - name: Add noncustodial source
+      href: ../../api/ediscovery-sourcecollection-post-noncustodialsources.md
+    - name: List
+      href: ../../api/ediscovery-case-list-sourcecollections.md
+    - name: Create
+      href: ../../api/ediscovery-case-post-sourcecollections.md
+    - name: Get
+      href: ../../api/ediscovery-sourcecollection-get.md
+    - name: Update
+      href: ../../api/ediscovery-sourcecollection-update.md
+    - name: Delete
+      href: ../../api/ediscovery-sourcecollection-delete.md
+    - name: Estimate statistics
+      href: ../../api/ediscovery-sourcecollection-estimatestatistics.md
+    - name: List additional sources
+      href: ../../api/ediscovery-sourcecollection-list-additionalsources.md
+    - name: List custodian sources
+      href: ../../api/ediscovery-sourcecollection-list-custodiansources.md
+    - name: List noncustodial sources
+      href: ../../api/ediscovery-sourcecollection-list-noncustodialsources.md
+    - name: Purge data
+      href: ../../api/ediscovery-sourcecollection-purgedata.md
+  - name: Tag
+    items:
+    - name: Tag
+      href: ../../resources/ediscovery-tag.md
+    - name: List
+      href: ../../api/ediscovery-case-list-tags.md
+    - name: Create
+      href: ../../api/ediscovery-case-post-tags.md
+    - name: Get
+      href: ../../api/ediscovery-tag-get.md
+    - name: Update
+      href: ../../api/ediscovery-tag-update.md
+    - name: Delete
+      href: ../../api/ediscovery-tag-delete.md
+    - name: List tags as hierarchy
+      href: ../../api/ediscovery-tag-ashierarchy.md
+    - name: List child tags
+      href: ../../api/ediscovery-tag-childtags.md
+- name: Subject rights request
+  items:
+  - name: Overview
+    href: ../../resources/subjectrightsrequest-subjectrightsrequestapioverview.md
+  - name: Subject rights request
+    href: ../../resources/subjectrightsrequest.md
+  - name: List
+    href: ../../api/subjectrightsrequest-list.md
+  - name: Create
+    href: ../../api/subjectrightsrequest-post.md
+  - name: Get
+    href: ../../api/subjectrightsrequest-get.md
+  - name: Update
+    href: ../../api/subjectrightsrequest-update.md
+  - name: Get final attachment
+    href: ../../api/subjectrightsrequest-getfinalattachment.md
+  - name: Get final report
+    href: ../../api/subjectrightsrequest-getfinalreport.md
+  - name: List notes
+    href: ../../api/subjectrightsrequest-list-notes.md
+  - name: Create note
+    href: ../../api/subjectrightsrequest-post-notes.md

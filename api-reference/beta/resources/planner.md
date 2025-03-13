@@ -1,10 +1,11 @@
 ---
 title: "planner resource type"
 description: "The **planner** resource is the entry point for the Planner object model. It returns a singleton **planner** resource.  It doesn't contain any usable properties."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # planner resource type
@@ -20,9 +21,10 @@ The **planner** resource is the entry point for the Planner object model. It ret
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md)| Create a new **plannerBucket** by posting to the buckets collection.|
-|[Create plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Create a new **plannerPlan** by posting to the plans collection.|
-|[Create plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| Create a new **plannerTask** by posting to the tasks collection.|
+|[Create bucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md)| Create a new **plannerBucket** by posting to the buckets collection.|
+|[Create plan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Create a new **plannerPlan** by posting to the plans collection.|
+|[Create roster](../api/planner-post-rosters.md)|[plannerRoster](plannerroster.md)|Create a new **plannerRoster** by posting to rosters collection.|
+|[Create task](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| Create a new **plannerTask** by posting to the tasks collection.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -34,10 +36,11 @@ The **planner** resource is the entry point for the Planner object model. It ret
 |:---------------|:--------|:----------|
 |buckets|[plannerBucket](plannerbucket.md) collection| Read-only. Nullable. Returns a collection of the specified buckets|
 |plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns a collection of the specified plans|
+|rosters|[plannerRoster](plannerroster.md) collection|Read-only. Nullable. Returns a collection of the specified rosters|
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns a collection of the specified tasks|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

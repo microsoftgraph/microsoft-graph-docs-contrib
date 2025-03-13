@@ -1,10 +1,12 @@
 ---
 title: "List governanceRoleDefinitions"
 description: "Get a collection of governanceRoleDefinitions on a resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.subservice: "entra-id-governance"
+author: "rkarim-ms"
+ROBOTS: NOINDEX
+ms.date: 08/13/2024
 ---
 
 # List governanceRoleDefinitions
@@ -12,18 +14,23 @@ author: "shauliu"
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
+
 Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.Read.AzureResources |
+The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-|:-|:-|:-|
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | PrivilegedAccess.Read.AzureAD |
+| Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | PrivilegedAccess.Read.AzureResources |
+| [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | PrivilegedAccess.Read.AzureADGroup |
+
+The requestor must also have at least one role assignment on the resource.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,10 +44,10 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleDefinition](../resources/governanceroledefinition.md) objects in the response body.
 ## Example
@@ -106,5 +113,3 @@ Content-Length: 21906
   "suppressions": []
 }
 -->
-
-

@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String displayName = "Myprefix_test_mysuffix";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String mailNickname = "Myprefix_test_mysuffix";
+com.microsoft.graph.groups.item.validateproperties.ValidatePropertiesPostRequestBody validatePropertiesPostRequestBody = new com.microsoft.graph.groups.item.validateproperties.ValidatePropertiesPostRequestBody();
+validatePropertiesPostRequestBody.setDisplayName("Myprefix_test_mysuffix");
+validatePropertiesPostRequestBody.setMailNickname("Myprefix_test_mysuffix");
+validatePropertiesPostRequestBody.setOnBehalfOfUserId(UUID.fromString("onBehalfOfUserId-value"));
+graphClient.groups().byGroupId("{group-id}").validateProperties().post(validatePropertiesPostRequestBody);
 
-String onBehalfOfUserId = "onBehalfOfUserId-value";
-
-graphClient.groups("{id}")
-	.validateProperties(displayName,mailNickname,onBehalfOfUserId)
-	.buildRequest()
-	.post();
 
 ```

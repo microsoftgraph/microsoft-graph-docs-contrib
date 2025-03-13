@@ -1,10 +1,11 @@
 ---
 title: "List ndesConnectors"
 description: "List properties and relationships of the ndesConnector objects."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List ndesConnectors
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) objects.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +41,7 @@ GET /deviceManagement/ndesConnectors
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 285
+Content-Length: 520
 
 {
   "value": [
@@ -69,14 +72,14 @@ Content-Length: 285
       "id": "e71fa706-a706-e71f-06a7-1fe706a71fe7",
       "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
       "state": "active",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "machineName": "Machine Name value",
+      "enrolledDateTime": "2016-12-31T23:59:43.797191-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "connectorVersion": "Connector Version value"
     }
   ]
 }
 ```
-
-
-
-
-
-

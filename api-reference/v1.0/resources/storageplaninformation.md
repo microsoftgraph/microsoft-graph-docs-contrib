@@ -2,9 +2,10 @@
 author: learafa
 description: "The storagePlanInformation resource provides information about the drive's storage quota plans."
 title: StoragePlanInformation
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "files"
+ms.subservice: "onedrive"
+ms.date: 03/06/2024
 ---
 # storagePlanInformation resource type
 

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var attachment = await graphClient.Me.Messages["AAMkADA1M-zAAA="].Attachments["AAMkADA1M-CJKtzmnlcqVgqI="]
-	.Request()
-	.Expand("itemattachment/item")
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Messages["{message-id}"].Attachments["{attachment-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "microsoft.graph.itemattachment/item" };
+});
+
 
 ```

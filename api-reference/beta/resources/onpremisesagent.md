@@ -1,10 +1,11 @@
 ---
 title: "onPremisesAgent resource type"
 description: "onPremisesAgent resource type."
-localization_priority: Normal
-author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # onPremisesAgent resource type
@@ -19,10 +20,10 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List onPremisesAgents](../api/onpremisesagent-list.md) | [onPremisesAgent](onpremisesagent.md) collection | Get an **onPremisesAgents** object collection. |
-| [Get onPremisesAgent](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | Read the properties and relationships of an **onPremisesAgent** object. |
-| [Assign onPremisesAgent to onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | None | Assign an **onPremisesAgent** to an **onPremisesAgentGroup**.|
-| [Remove onpremisesAgent from an onPremisesAgentGroup](../api/onpremisesagent-delete-agentgroups.md) | None | Remove an **onPremisesAgent** from an **onPremisesAgentGroup**. |
+| [List](../api/onpremisesagent-list.md) | [onPremisesAgent](onpremisesagent.md) collection | Get an **onPremisesAgents** object collection. |
+| [Get](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | Read the properties and relationships of an **onPremisesAgent** object. |
+| [Assign to agent group](../api/onpremisesagent-post-agentgroups.md) | None | Assign an **onPremisesAgent** to an **onPremisesAgentGroup**.|
+| [Remove from agent group](../api/onpremisesagent-delete-agentgroups.md) | None | Remove an **onPremisesAgent** from an **onPremisesAgentGroup**. |
 
 ## Properties
 
@@ -30,9 +31,9 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 |:-------------|:------------|:------------|
 |externalIp|String|The external IP address as detected by the service for the agent machine. Read-only|
 |id|String| The object id of the onPremisesAgent. Read-only.|
-|machineName|String|The name of the machine that the aggent is running on. Read-only|
-|status|string| Possible values are: `active`, `inactive`.|
-|publishingType|string| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|machineName|String|The name of the machine that the agent is running on. Read-only|
+|status|agentStatus| Possible values are: `active`, `inactive`.|
+|supportedPublishingTypes|String collection| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## Relationships
 
@@ -42,7 +43,7 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -50,7 +51,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgent",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -73,5 +73,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

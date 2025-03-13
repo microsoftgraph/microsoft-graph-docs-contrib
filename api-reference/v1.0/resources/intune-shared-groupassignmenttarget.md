@@ -1,10 +1,11 @@
 ---
 title: "groupAssignmentTarget resource type"
 description: "Represents an assignment to a group."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # groupAssignmentTarget resource type
@@ -39,12 +40,3 @@ Here is a JSON representation of the resource.
   "groupId": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "educationTerm resource type"
-description: "A term. This represents a designated portion of the academic year. It is used within educationClass."
+description: "A term. This represents a designated portion of the academic year. It's used within educationClass."
 author: "mmast-msft"
-localization_priority: Normal
-ms.prod: "education"
+ms.localizationpriority: medium
+ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # educationTerm resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A term. This represents a designated portion of the academic year. It is used within [educationClass](educationclass.md).
+A term. This represents a designated portion of the academic year. It's used within [educationClass](educationclass.md).
 
 ## Properties
 | Property	   | Type	|Description|
@@ -23,9 +24,12 @@ A term. This represents a designated portion of the academic year. It is used wi
 |startDate|Date|Start of the term.|
 |endDate|Date|End of the term.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

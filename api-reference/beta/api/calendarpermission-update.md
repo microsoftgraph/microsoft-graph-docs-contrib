@@ -1,17 +1,22 @@
 ---
 title: "Update calendarpermission"
 description: "Update the properties of calendarpermission object."
-localization_priority: Normal
-author: "sochowdh"
-ms.prod: "outlook"
+author: "iamgirishck"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
 doc_type: "apiPageType"
+ms.date: 04/05/2024
 ---
 
 # Update calendarPermission
 
 Namespace: microsoft.graph
 
-Update the permissions assigned to an existing sharee or delegate, through the corresponding [calendarPermission](../resources/calendarpermission.md) object for a calendar.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the permissions assigned to an existing share recipient or delegate, through the corresponding [calendarPermission](../resources/calendarpermission.md) object for a calendar.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -46,15 +51,16 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| The permission level to change to for the calendar sharee or delegate. |
+|role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| The permission level to change to for the calendar share recipient or delegate. |
 
 ## Response
 
@@ -64,7 +70,7 @@ If successful, this method returns a `200 OK` response code and an updated [cale
 
 ### Request
 
-The following example changes the permission level of the sharee, Adele, to `write`.
+The following example changes the permission level of the share recipient, Adele, to `write`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,26 +87,46 @@ Content-type: application/json
   "role": "write"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendarpermission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-calendarpermission-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-calendarpermission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendarpermission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-calendarpermission-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-calendarpermission-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-calendarpermission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-calendarpermission-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -114,7 +140,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",
@@ -126,7 +152,7 @@ Content-type: application/json
     ],
     "emailAddress": {
         "name": "Adele Vance",
-        "address": "AdeleV@contoso.OnMicrosoft.com"
+        "address": "AdeleV@contoso.com"
     }
 }
 ```

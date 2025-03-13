@@ -1,10 +1,11 @@
 ---
 title: "managedAppDataIngestionLocation enum type"
 description: "Locations which can be used to bring data into organization documents"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # managedAppDataIngestionLocation enum type
@@ -23,9 +24,4 @@ Locations which can be used to bring data into organization documents
 |oneDriveForBusiness|1|OneDrive for business|
 |sharePoint|2|SharePoint Online|
 |camera|3|The device's camera|
-
-
-
-
-
-
+|photoLibrary|4|The device's photo library|

@@ -2,9 +2,10 @@
 title: "incomingContext resource type"
 description: "Represents the context associated with an incoming call."
 author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # incomingContext resource type
@@ -17,14 +18,14 @@ Represents the context associated with an incoming call.
 
 | Property              | Type                          | Description                                                             |
 |:----------------------|:------------------------------|:------------------------------------------------------------------------|
-| sourceParticipantId   | String                        | The ID of the participant that triggered the incoming call. Read-only.  |
 | observedParticipantId | String                        | The ID of the participant that is under observation. Read-only.         |
 | onBehalfOf            | [identitySet](identityset.md) | The identity that the call is happening on behalf of.                   |
+| sourceParticipantId   | String                        | The ID of the participant that triggered the incoming call. Read-only.  |
 | transferor            | [identitySet](identityset.md) | The identity that transferred the call.                                 |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

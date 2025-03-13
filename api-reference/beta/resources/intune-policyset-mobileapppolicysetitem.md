@@ -1,10 +1,11 @@
 ---
 title: "mobileAppPolicySetItem resource type"
 description: "A class containing the properties used for mobile app PolicySetItem."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # mobileAppPolicySetItem resource type
@@ -32,7 +33,7 @@ Inherits from [policySetItem](../resources/intune-policyset-policysetitem.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the MobileAppPolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|id|String|Key of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |createdDateTime|DateTimeOffset|Creation time of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |payloadId|String|PayloadId of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
@@ -71,15 +72,19 @@ Here is a JSON representation of the resource.
   ],
   "intent": "String",
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "String",
-    "uninstallOnDeviceRemoval": true
+    "@odata.type": "microsoft.graph.winGetAppAssignmentSettings",
+    "notifications": "String",
+    "restartSettings": {
+      "@odata.type": "microsoft.graph.winGetAppRestartSettings",
+      "gracePeriodInMinutes": 1024,
+      "countdownDisplayBeforeRestartInMinutes": 1024,
+      "restartNotificationSnoozeDurationInMinutes": 1024
+    },
+    "installTimeSettings": {
+      "@odata.type": "microsoft.graph.winGetAppInstallTimeSettings",
+      "useLocalTime": true,
+      "deadlineDateTime": "String (timestamp)"
+    }
   }
 }
 ```
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "win32LobAppFileSystemDetection resource type"
 description: "Contains file or folder path to detect a Win32 App"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # win32LobAppFileSystemDetection resource type
@@ -51,9 +52,3 @@ Here is a JSON representation of the resource.
   "detectionValue": "String"
 }
 ```
-
-
-
-
-
-

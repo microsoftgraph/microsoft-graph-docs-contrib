@@ -1,10 +1,11 @@
 ---
 title: "advancedThreatProtectionOnboardingStateSummary resource type"
 description: "Windows defender advanced threat protection onboarding state summary across the account."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # advancedThreatProtectionOnboardingStateSummary resource type
@@ -39,7 +40,7 @@ Windows defender advanced threat protection onboarding state summary across the 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|advancedThreatProtectionOnboardingDeviceSettingStates|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) collection|Not yet documented|
+|advancedThreatProtectionOnboardingDeviceSettingStates|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) collection||
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -63,9 +64,3 @@ Here is a JSON representation of the resource.
   "notAssignedDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

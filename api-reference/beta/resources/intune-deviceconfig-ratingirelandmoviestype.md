@@ -1,10 +1,11 @@
 ---
 title: "ratingIrelandMoviesType enum type"
 description: "Movies rating labels in Ireland"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # ratingIrelandMoviesType enum type
@@ -28,9 +29,3 @@ Movies rating labels in Ireland
 |agesAbove15|5|The 15A classification is suitable for viewers of 15 or older|
 |agesAbove16|6|The 16 classification is suitable for viewers of 16 or older|
 |adults|7|The 18 classification, suitable only for adults|
-
-
-
-
-
-

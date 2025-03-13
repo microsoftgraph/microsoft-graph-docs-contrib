@@ -1,10 +1,11 @@
 ---
 title: "Get macOSGeneralDeviceConfiguration"
 description: "Read properties and relationships of the macOSGeneralDeviceConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get macOSGeneralDeviceConfiguration
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -43,7 +46,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5047
+Content-Length: 5533
 
 {
   "value": {
@@ -123,10 +126,9 @@ Content-Length: 5047
     "passwordPreviousPasswordBlockCount": 2,
     "passwordRequiredType": "alphanumeric",
     "passwordRequired": true,
+    "passwordMaximumAttemptCount": 11,
+    "passwordMinutesUntilFailedLoginReset": 4,
     "keychainBlockCloudSync": true,
-    "airPrintBlocked": true,
-    "airPrintForceTrustedTLS": true,
-    "airPrintBlockiBeaconDiscovery": true,
     "safariBlockAutofill": true,
     "cameraBlocked": true,
     "iTunesBlockMusicService": true,
@@ -149,7 +151,6 @@ Content-Length: 5047
     "passwordBlockProximityRequests": true,
     "passwordBlockAirDropSharing": true,
     "softwareUpdatesEnforcedDelayInDays": 2,
-    "softwareUpdatesForceDelayed": true,
     "updateDelayPolicy": "delayOSUpdateVisibility",
     "contentCachingBlocked": true,
     "iCloudBlockPhotoLibrary": true,
@@ -198,13 +199,19 @@ Content-Length: 5047
           }
         ]
       }
-    ]
+    ],
+    "addingGameCenterFriendsBlocked": true,
+    "gameCenterBlocked": true,
+    "multiplayerGamingBlocked": true,
+    "wallpaperModificationBlocked": true,
+    "eraseContentAndSettingsBlocked": true,
+    "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
+    "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
+    "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
+    "touchIdTimeoutInHours": 5,
+    "iCloudPrivateRelayBlocked": true,
+    "iCloudDesktopAndDocumentsBlocked": true,
+    "activationLockWhenSupervisedAllowed": true
   }
 }
 ```
-
-
-
-
-
-

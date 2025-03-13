@@ -1,10 +1,11 @@
 ---
 title: "androidManagedAppSafetyNetDeviceAttestationType enum type"
 description: "An admin enforced Android SafetyNet Device Attestation requirement on a managed app."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # androidManagedAppSafetyNetDeviceAttestationType enum type
@@ -23,9 +24,3 @@ An admin enforced Android SafetyNet Device Attestation requirement on a managed 
 |none|0|no requirement set|
 |basicIntegrity|1|require that Android device passes SafetyNet Basic Integrity validation|
 |basicIntegrityAndDeviceCertification|2|require that Android device passes SafetyNet Basic Integrity and Device Certification validations|
-
-
-
-
-
-

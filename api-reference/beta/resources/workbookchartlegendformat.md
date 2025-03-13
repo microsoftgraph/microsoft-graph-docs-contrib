@@ -2,9 +2,10 @@
 title: "workbookChartLegendFormat resource type"
 description: "Encapsulates the format properties of a chart legend."
 author: "lumine2008"
-localization_priority: Normal
-ms.prod: "excel"
+ms.localizationpriority: medium
+ms.subservice: "excel"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # workbookChartLegendFormat resource type
@@ -30,7 +31,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

@@ -4,24 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var todoTask = new TodoTask
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new TodoTask
 {
 	Title = "A new task",
-	LinkedResources = (ITodoTaskLinkedResourcesCollectionPage)new List<LinkedResource>()
+	Categories = new List<string>
+	{
+		"Important",
+	},
+	LinkedResources = new List<LinkedResource>
 	{
 		new LinkedResource
 		{
 			WebUrl = "http://microsoft.com",
 			ApplicationName = "Microsoft",
-			DisplayName = "Microsoft"
-		}
-	}
+			DisplayName = "Microsoft",
+		},
+	},
 };
 
-await graphClient.Me.Todo.Lists["AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM"].Tasks
-	.Request()
-	.AddAsync(todoTask);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks.PostAsync(requestBody);
+
 
 ```

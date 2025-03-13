@@ -1,10 +1,11 @@
 ---
 title: "Create deviceCategory"
 description: "Create a new deviceCategory object."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create deviceCategory
@@ -17,7 +18,7 @@ Namespace: microsoft.graph
 
 Create a new [deviceCategory](../resources/intune-shared-devicecategory.md) object.
 
-## Prerequisites
+        ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -28,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application||
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {
@@ -42,7 +45,7 @@ POST /deviceManagement/deviceCategories
 
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -96,15 +99,3 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

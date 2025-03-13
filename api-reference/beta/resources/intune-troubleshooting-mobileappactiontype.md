@@ -1,10 +1,11 @@
 ---
 title: "mobileAppActionType enum type"
 description: "Defines the Action Types for an Intune Application."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # mobileAppActionType enum type
@@ -25,9 +26,3 @@ Defines the Action Types for an Intune Application.
 |installed|3|Application installed.|
 |uninstalled|4|Application uninstalled.|
 |userRequestedInstall|5|User requested installation|
-
-
-
-
-
-

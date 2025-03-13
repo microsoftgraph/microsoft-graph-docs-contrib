@@ -2,9 +2,10 @@
 title: integerRange resource type
 description: Represents an inclusive range of integers described by two Int64 boundaries.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # integerRange resource type
@@ -21,9 +22,13 @@ Represents an inclusive range of integers described by two Int64 boundaries.
 |start|Int64|The inclusive lower bound of the integer range.|
 |end|Int64|The inclusive upper bound of the integer range.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

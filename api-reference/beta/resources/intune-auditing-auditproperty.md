@@ -1,10 +1,11 @@
 ---
 title: "auditProperty resource type"
 description: "A class containing the properties for Audit Property."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # auditProperty resource type
@@ -42,9 +43,3 @@ Here is a JSON representation of the resource.
   "newValue": "String"
 }
 ```
-
-
-
-
-
-

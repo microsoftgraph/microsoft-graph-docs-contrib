@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> addLicensesList = new LinkedList<String>();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<String> removeLicensesList = new LinkedList<String>();
-removeLicensesList.add("skuId-value-1");
-removeLicensesList.add("skuId-value-2");
+com.microsoft.graph.groups.item.assignlicense.AssignLicensePostRequestBody assignLicensePostRequestBody = new com.microsoft.graph.groups.item.assignlicense.AssignLicensePostRequestBody();
+LinkedList<AssignedLicense> addLicenses = new LinkedList<AssignedLicense>();
+assignLicensePostRequestBody.setAddLicenses(addLicenses);
+LinkedList<UUID> removeLicenses = new LinkedList<UUID>();
+removeLicenses.add(UUID.fromString("c7df2760-2c81-4ef7-b578-5b5392b571df"));
+removeLicenses.add(UUID.fromString("b05e124f-c7cc-45a0-a6aa-8cf78c946968"));
+assignLicensePostRequestBody.setRemoveLicenses(removeLicenses);
+var result = graphClient.groups().byGroupId("{group-id}").assignLicense().post(assignLicensePostRequestBody);
 
-graphClient.groups("1ad75eeb-7e5a-4367-a493-9214d90d54d0")
-	.assignLicense(addLicensesList,removeLicensesList)
-	.buildRequest()
-	.post();
 
 ```

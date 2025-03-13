@@ -1,10 +1,11 @@
 ---
 title: "ratingGermanyTelevisionType enum type"
 description: "TV content rating labels in Germany"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # ratingGermanyTelevisionType enum type
@@ -27,9 +28,3 @@ TV content rating labels in Germany
 |agesAbove12|4|Ab 12 Jahren, ages 12 and older|
 |agesAbove16|5|Ab 16 Jahren, ages 16 and older|
 |adults|6|Ab 18 Jahren, adults only|
-
-
-
-
-
-

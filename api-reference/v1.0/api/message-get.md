@@ -1,10 +1,11 @@
 ---
 title: "Get message"
 description: "Retrieve the properties and relationships of a message object."
-author: "svpsiva"
-localization_priority: Priority
-ms.prod: "outlook"
+author: "SuryaLashmiS"
+ms.localizationpriority: high
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Get message
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [message](../resources/message.md) object.
 
-You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).
+You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message). See also an [example](#example-4-get-mime-content) below.
 
 There are two scenarios where an app can get a message in another user's mail folder:
 
@@ -23,9 +24,11 @@ There are two scenarios where an app can get a message in another user's mail fo
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Mail.ReadBasic, Mail.Read    |
@@ -43,13 +46,13 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-To get the MIME content of the specified message: 
-<!-- { "blockType": "ignored" } --> 
-```http 
-GET /me/messages/{id}/$value 
-GET /users/{id | userPrincipalName}/messages/{id}/$value 
-GET /me/mailFolders/{id}/messages/{id}/$value 
-GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
+To get the MIME content of the specified message:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages/{id}/$value
+GET /users/{id | userPrincipalName}/messages/{id}/$value
+GET /me/mailFolders/{id}/messages/{id}/$value
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value
 ```
 
 ## Optional query parameters
@@ -59,11 +62,11 @@ Use the `$value` parameter to get the MIME content of a message.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,39 +76,56 @@ Specifying the `$value` parameter returns the message content in MIME format, an
 
 
 ## Examples
-### Example 1
+### Example 1: Get a specific message
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["AAMkADhMGAAA="],
+  "sampleKeys": ["AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA="],
   "name": "get_message"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA=
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-message-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-message-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-message-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-message-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-message-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-message-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -148,20 +168,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Adele Vance",
-            "address":"adelev@contoso.OnMicrosoft.com"
+            "address":"adelev@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Adele Vance",
-            "address":"adelev@contoso.OnMicrosoft.com"
+            "address":"adelev@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -180,9 +200,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Get Internet message headers
 #### Request
-The next example uses a `$select` query parameter to get the Internet message headers of a message. 
+The next example uses a `$select` query parameter to get the Internet message headers of a message.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -193,26 +213,43 @@ The next example uses a `$select` query parameter to get the Internet message he
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-headers-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-message-headers-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-message-headers-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-message-headers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-headers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-headers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-message-headers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-message-headers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-message-headers-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-Here is an example of the response. Note: The set of message headers in the response object is truncated for brevity. All of the headers will be returned from an actual call.
+The following example shows the response. Note: The set of message headers in the response object is truncated for brevity. All of the headers will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "name": "get_message_headers",
@@ -248,7 +285,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3
+### Example 3: Get message body in text format
 #### Request
 
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.
@@ -257,35 +294,51 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
+  "sampleKeys": ["AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA="],
   "name": "get_message_in_text"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-text-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-message-in-text-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-message-in-text-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-message-in-text-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-message-in-text-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-message-in-text-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
-Here is an example of the response. 
+The following example shows the response.
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
 <!-- {
   "blockType": "response",
@@ -315,7 +368,7 @@ Preference-Applied: outlook.body-content-type="text"
 }
 ```
 
-### Example 4
+### Example 4: Get MIME content
 #### Request
 The fourth example gets the MIME content of a message in the signed-in user's mailbox.
 
@@ -329,27 +382,43 @@ The fourth example gets the MIME content of a message in the signed-in user's ma
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-mime-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-mime-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-message-in-mime-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-mime-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-message-in-mime-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-in-mime-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-mime-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-message-in-mime-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-message-in-mime-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-message-in-mime-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
 #### Response
-The following is the response. The MIME content begins with the `MIME-Version` header. 
+The following is the response. The MIME content begins with the `MIME-Version` header.
 
 <!-- {
   "blockType": "response",
@@ -361,94 +430,94 @@ The following is the response. The MIME content begins with the `MIME-Version` h
 HTTP/1.1 200 OK
 Content-type: text/plain
 
-Received: from contoso.com (10.194.241.197) by 
-contoso.com (10.194.241.197) with Microsoft 
-SMTP Server (version=TLS1_2, 
-cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0 via Mailbox 
-Transport; Mon, 4 Sep 2017 03:00:08 -0700 
-Received: from contoso.com (10.194.241.197) by 
-contoso.com (10.194.241.197) with Microsoft 
-SMTP Server (version=TLS1_2, 
-cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0; Mon, 4 Sep 
-2017 03:00:07 -0700 
-Received: from contoso.com 
-(fe80::5bf:5059:4ca0:5017) by contoso.com 
-(fe80::5bf:5059:4ca0:5017%12) with mapi id 15.01.1374.000; Mon, 4 Sep 2017 
-03:00:01 -0700 
-From: Administrator <admin@contoso.com> 
-To: Administrator <admin@contoso.com> 
-Subject: This email has attachment. 
-Thread-Topic: This email has attachment. 
-Thread-Index: AQHTJWSHSywMzSz8o0OJud48nG50GQ== 
-Date: Mon, 4 Sep 2017 10:00:00 +0000 
-Message-ID: 
-                <4aade2547798441eab5188a7a2436bc1@contoso.com> 
-Accept-Language: en-US 
-Content-Language: en-US 
-X-MS-Exchange-Organization-AuthAs: Internal 
-X-MS-Exchange-Organization-AuthMechanism: 04 
-X-MS-Exchange-Organization-AuthSource: 
-                contoso.com 
-X-MS-Has-Attach: yes 
-X-MS-Exchange-Organization-Network-Message-Id: 
-                0ffdb402-ec03-42c8-5d32-08d4f37bb517 
-X-MS-Exchange-Organization-SCL: -1 
-X-MS-TNEF-Correlator: 
-X-MS-Exchange-Organization-RecordReviewCfmType: 0 
+Received: from contoso.com (10.194.241.197) by
+contoso.com (10.194.241.197) with Microsoft
+SMTP Server (version=TLS1_2,
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0 via Mailbox
+Transport; Mon, 4 Sep 2017 03:00:08 -0700
+Received: from contoso.com (10.194.241.197) by
+contoso.com (10.194.241.197) with Microsoft
+SMTP Server (version=TLS1_2,
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0; Mon, 4 Sep
+2017 03:00:07 -0700
+Received: from contoso.com
+(fe80::5bf:5059:4ca0:5017) by contoso.com
+(fe80::5bf:5059:4ca0:5017%12) with mapi id 15.01.1374.000; Mon, 4 Sep 2017
+03:00:01 -0700
+From: Administrator <admin@contoso.com>
+To: Administrator <admin@contoso.com>
+Subject: This email has attachment.
+Thread-Topic: This email has attachment.
+Thread-Index: AQHTJWSHSywMzSz8o0OJud48nG50GQ==
+Date: Mon, 4 Sep 2017 10:00:00 +0000
+Message-ID:
+                <4aade2547798441eab5188a7a2436bc1@contoso.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+                contoso.com
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-Network-Message-Id:
+                0ffdb402-ec03-42c8-5d32-08d4f37bb517
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
 
-MIME-Version: 1.0 
-Content-Type: multipart/mixed; 
-                boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 
- 
---_004_4aade2547798441eab5188a7a2436bc1contoso_ 
-Content-Type: multipart/alternative; 
-                boundary="_000_4aade2547798441eab5188a7a2436bc1contoso_" 
- 
---_000_4aade2547798441eab5188a7a2436bc1contoso_ 
-Content-Type: text/plain; charset="iso-8859-1" 
-Content-Transfer-Encoding: quoted-printable 
- 
-The attachment is an email. 
- 
---_000_4aade2547798441eab5188a7a2436bc1contoso_ 
-Content-Type: text/html; charset="iso-8859-1" 
-Content-Transfer-Encoding: quoted-printable 
- 
-<html> 
-<head> 
-<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-= 
-1"> 
-<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi= 
-n-bottom:0;} --></style> 
-</head> 
-<body dir=3D"ltr"> 
-<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font= 
--family:Calibri,Helvetica,sans-serif;" dir=3D"ltr"> 
-<p>The attachment is an email.</p> 
-</div> 
-</body> 
-</html> 
- 
---_000_4aade2547798441eab5188a7a2436bc1contoso_-- 
- 
---_004_4aade2547798441eab5188a7a2436bc1contoso_ 
-Content-Type: application/octet-stream; name="Attachment email.eml" 
-Content-Description: Attachment email.eml 
-Content-Disposition: attachment; filename="Attachment email.eml"; size=408; 
-                creation-date="Mon, 04 Sep 2017 09:59:43 GMT"; 
-                modification-date="Mon, 04 Sep 2017 09:59:43 GMT" 
-Content-Transfer-Encoding: base64 
- 
-RnJvbToJQWRtaW5pc3RyYXRvciA8YWRtaW5AdGVuYW50LUVYSEItMTQ3MS5jb20+DQpTZW50OglN 
-b25kYXksIFNlcHRlbWJlciA0LCAyMDE3IDM6MjYgUE0NClRvOglTcml2YXJkaGFuIEhlYmJhcg0K 
-U3ViamVjdDoJQXR0YWNobWVudCBlbWFpbA0KDQpJIHdpbGwgYXR0YWNoIHRoaXMgZW1haWwgdG8g 
-YW5vdGhlciBtYWlsLg0K 
- 
---_004_4aade2547798441eab5188a7a2436bc1contoso_-- 
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+                boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_"
+
+--_004_4aade2547798441eab5188a7a2436bc1contoso_
+Content-Type: multipart/alternative;
+                boundary="_000_4aade2547798441eab5188a7a2436bc1contoso_"
+
+--_000_4aade2547798441eab5188a7a2436bc1contoso_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+The attachment is an email.
+
+--_000_4aade2547798441eab5188a7a2436bc1contoso_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi=
+n-bottom:0;} --></style>
+</head>
+<body dir=3D"ltr">
+<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font=
+-family:Calibri,Helvetica,sans-serif;" dir=3D"ltr">
+<p>The attachment is an email.</p>
+</div>
+</body>
+</html>
+
+--_000_4aade2547798441eab5188a7a2436bc1contoso_--
+
+--_004_4aade2547798441eab5188a7a2436bc1contoso_
+Content-Type: application/octet-stream; name="Attachment email.eml"
+Content-Description: Attachment email.eml
+Content-Disposition: attachment; filename="Attachment email.eml"; size=408;
+                creation-date="Mon, 04 Sep 2017 09:59:43 GMT";
+                modification-date="Mon, 04 Sep 2017 09:59:43 GMT"
+Content-Transfer-Encoding: base64
+
+RnJvbToJQWRtaW5pc3RyYXRvciA8YWRtaW5AdGVuYW50LUVYSEItMTQ3MS5jb20+DQpTZW50OglN
+b25kYXksIFNlcHRlbWJlciA0LCAyMDE3IDM6MjYgUE0NClRvOglTcml2YXJkaGFuIEhlYmJhcg0K
+U3ViamVjdDoJQXR0YWNobWVudCBlbWFpbA0KDQpJIHdpbGwgYXR0YWNoIHRoaXMgZW1haWwgdG8g
+YW5vdGhlciBtYWlsLg0K
+
+--_004_4aade2547798441eab5188a7a2436bc1contoso_--
 ```
 
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)

@@ -1,10 +1,11 @@
 ---
 title: "mobileAppAssignment resource type"
 description: "A class containing the properties used for Group Assignment of a Mobile App."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # mobileAppAssignment resource type
@@ -29,12 +30,12 @@ A class containing the properties used for Group Assignment of a Mobile App.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|The settings for target assignment defined by the admin.|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The resource type which is the source for the assignment. Possible values are: `direct`, `policySets`.|
-|sourceId|String|The identifier of the source of the assignment.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The resource type which is the source for the assignment. This property is read-only. Possible values are: `direct`, `policySets`.|
+|sourceId|String|The identifier of the source of the assignment. This property is read-only.|
 
 ## Relationships
 None
@@ -58,17 +59,21 @@ Here is a JSON representation of the resource.
     "deviceAndAppManagementAssignmentFilterType": "String"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "String",
-    "uninstallOnDeviceRemoval": true
+    "@odata.type": "microsoft.graph.winGetAppAssignmentSettings",
+    "notifications": "String",
+    "restartSettings": {
+      "@odata.type": "microsoft.graph.winGetAppRestartSettings",
+      "gracePeriodInMinutes": 1024,
+      "countdownDisplayBeforeRestartInMinutes": 1024,
+      "restartNotificationSnoozeDurationInMinutes": 1024
+    },
+    "installTimeSettings": {
+      "@odata.type": "microsoft.graph.winGetAppInstallTimeSettings",
+      "useLocalTime": true,
+      "deadlineDateTime": "String (timestamp)"
+    }
   },
   "source": "String",
   "sourceId": "String"
 }
 ```
-
-
-
-
-
-

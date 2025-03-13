@@ -1,10 +1,11 @@
 ---
 title: "Get depMacOSEnrollmentProfile"
 description: "Read properties and relationships of the depMacOSEnrollmentProfile object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get depMacOSEnrollmentProfile
@@ -17,14 +18,16 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object.
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -41,7 +44,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -63,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1396
+Content-Length: 2301
 
 {
   "value": {
@@ -78,7 +81,6 @@ Content-Length: 1396
     "isDefault": true,
     "supervisedModeEnabled": true,
     "supportDepartment": "Support Department value",
-    "passCodeDisabled": true,
     "isMandatory": true,
     "locationDisabled": true,
     "supportPhoneNumber": "Support Phone Number value",
@@ -88,7 +90,6 @@ Content-Length: 1396
     "termsAndConditionsDisabled": true,
     "touchIdDisabled": true,
     "applePayDisabled": true,
-    "zoomDisabled": true,
     "siriDisabled": true,
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
@@ -96,17 +97,34 @@ Content-Length: 1396
     "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value",
     "configurationWebUrl": true,
+    "enabledSkipKeys": [
+      "Enabled Skip Keys value"
+    ],
+    "enrollmentTimeAzureAdGroupIds": [
+      "7f64eb6c-eb6c-7f64-6ceb-647f6ceb647f"
+    ],
+    "waitForDeviceConfiguredConfirmation": true,
     "registrationDisabled": true,
     "fileVaultDisabled": true,
     "iCloudDiagnosticsDisabled": true,
+    "passCodeDisabled": true,
+    "zoomDisabled": true,
     "iCloudStorageDisabled": true,
-    "chooseYourLockScreenDisabled": true
+    "chooseYourLockScreenDisabled": true,
+    "accessibilityScreenDisabled": true,
+    "autoUnlockWithWatchDisabled": true,
+    "skipPrimarySetupAccountCreation": true,
+    "setPrimarySetupAccountAsRegularUser": true,
+    "dontAutoPopulatePrimaryAccountInfo": true,
+    "primaryAccountFullName": "Primary Account Full Name value",
+    "primaryAccountUserName": "Primary Account User Name value",
+    "enableRestrictEditing": true,
+    "adminAccountUserName": "Admin Account User Name value",
+    "adminAccountFullName": "Admin Account Full Name value",
+    "adminAccountPassword": "Admin Account Password value",
+    "hideAdminAccount": true,
+    "requestRequiresNetworkTether": true,
+    "autoAdvanceSetupEnabled": true
   }
 }
 ```
-
-
-
-
-
-

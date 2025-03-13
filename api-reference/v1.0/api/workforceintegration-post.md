@@ -1,10 +1,11 @@
 ---
 title: "Create workforceIntegration"
 description: "Create a new workforceIntegration object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 09/18/2024
 ---
 
 # Create workforceIntegration
@@ -12,19 +13,17 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Create a new [workforceIntegration](../resources/workforceintegration.md) object.
-You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "workforceintegration_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workforceintegration-post-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -38,12 +37,25 @@ POST /teamwork/workforceIntegrations
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
-In the request body, supply a JSON representation of a [workforceIntegration](../resources/workforceintegration.md) object.
+In the request body, supply a JSON representation of the [workforceIntegration](../resources/workforceintegration.md) object.
+
+The following table lists the properties that you can use when you create a **workforceIntegration** object.
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|apiVersion|Int32|API version for the callback URL. Start with 1.|
+|displayName|String|Name of the workforce integration.|
+|eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| Support to view eligibility-filtered results. Possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
+|encryption|[workforceIntegrationEncryption](../resources/workforceintegrationencryption.md)|The workforce integration encryption resource.|
+|isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
+|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts call the provided URL when client changes occur to the entities specified in this property. By default, no entities are supported for change notifications. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openShift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason` , `timeOff` , `timeOffRequest`.|
+|url|String| Workforce integration URL used for callbacks from the Shifts service.|
 
 ## Response
 
@@ -53,8 +65,7 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ### Request
 
-The following is an example of the request.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -64,79 +75,8 @@ The following is an example of the request.
 
 ```http
 POST https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations
-Content-type: application/json
+Content-Type: application/json
 
-{
-  "displayName": "displayName-value",
-  "apiVersion": 99,
-  "encryption": {
-    "protocol": "protocol-value",
-    "secret": "secret-value"
-  },
-  "isActive": true,
-  "url": "url-value",
-  "supportedEntities": "supportedEntities-value"
-}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-workforceintegration-from-teamwork-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-workforceintegration-from-teamwork-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-workforceintegration-from-teamwork-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-workforceintegration-from-teamwork-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
----
-
-
-### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.workforceIntegration"
-} -->
-
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-  "displayName": "displayName-value",
-  "apiVersion": 99,
-  "encryption": {
-    "protocol": "protocol-value",
-    "secret": "secret-value"
-  },
-  "isActive": true,
-  "url": "url-value",
-  "supportedEntities": "supportedEntities-value"
-}
-```
-
-## Examples for Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility
-
-### Use case: Create a new WorkforceIntegration with SwapRequest enabled for eligibility filtering
-
-### Request
-
-The following is an example of the request. 
-```
-POST https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/
 {
   "displayName": "ABCWorkforceIntegration",
   "apiVersion": 1,
@@ -146,15 +86,104 @@ POST https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/
     "secret": "My Secret"
   },
   "url": "https://ABCWorkforceIntegration.com/Contoso/",
-  "supports": "Shift,SwapRequest",
+  "supportedEntities": "Shift,SwapRequest",
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-workforceintegration-from-teamwork-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-workforceintegration-from-teamwork-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-workforceintegration-from-teamwork-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-workforceintegration-from-teamwork-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-workforceintegration-from-teamwork-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-workforceintegration-from-teamwork-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-workforceintegration-from-teamwork-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-workforceintegration-from-teamwork-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workforceIntegration"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": null
+  },
+  "url": "https://abcWorkforceIntegration.com/Contoso/",
+  "supportedEntities": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
+}
+```
+
+## Examples for use cases of WorkforceIntegration entity for Eligibility Filtering by workforce management system (WFM) rules
+
+### Use case: Create a new WorkforceIntegration with SwapRequest enabled for eligibility filtering
+
+### Request
+
+The following example shows a request.
+```
+POST https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/
 Authorization: Bearer {token}
 Content-type: application/json
+
+{
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": "My Secret"
+  },
+  "url": "https://ABCWorkforceIntegration.com/Contoso/",
+  "supportedEntities": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
+}
 ```
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 ```
 HTTP/1.1 200 OK
 {
@@ -167,19 +196,19 @@ HTTP/1.1 200 OK
     "secret": null
   },
   "url": "https://abcWorkforceIntegration.com/Contoso/",
-  "supports": "Shift,SwapRequest",
+  "supportedEntities": "Shift,SwapRequest",
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 
 ```
-To see how to update an existing workforceintegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).
+To see how to update an existing workforceIntegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).
 
 ## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
-The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
+The interaction between Shifts app and workforce integration endpoints  follow the existing pattern.
 
 ### Request
 
-The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+This example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -195,20 +224,15 @@ Accept-Language: en-us
 ```
 ### Response
 
-The following is an example of the response from the workforce integration service.
+The following example shows the response from the workforce integration service.
 ```
 HTTP/1.1 200 OK
 {
   "responses": [
-  {
-    "body": {
-      "SHFT_6548f642-cbc1-4228-8621-054327576457",
-      "SHFT_6548f642-cbc1-4228-8621-054327571234"
-  }
     "id": "{shiftId}",
     "status: 200,
     "body": {
-       "data": [{ShiftId}, {ShiftId}...]
+       "data": [{shiftId}, {shiftId}...]
        "error": null
     }
   ]

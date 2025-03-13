@@ -1,10 +1,11 @@
 ---
 title: "groupPolicyConfiguration resource type"
 description: "The group policy configuration entity contains the configured values for one or more group policy definitions."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # groupPolicyConfiguration resource type
@@ -25,8 +26,8 @@ The group policy configuration entity contains the configured values for one or 
 |[Create groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-create.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Create a new [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) object.|
 |[Delete groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|None|Deletes a [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md).|
 |[Update groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-update.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Update the properties of a [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) object.|
-|[assign action](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) collection|Not yet documented|
-|[updateDefinitionValues action](../api/intune-grouppolicy-grouppolicyconfiguration-updatedefinitionvalues.md)|None|Not yet documented|
+|[assign action](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) collection||
+|[updateDefinitionValues action](../api/intune-grouppolicy-grouppolicyconfiguration-updatedefinitionvalues.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -35,6 +36,7 @@ The group policy configuration entity contains the configured values for one or 
 |displayName|String|User provided name for the resource object.|
 |description|String|User provided description for the resource object.|
 |roleScopeTagIds|String collection|The list of scope tags for the configuration.|
+|policyConfigurationIngestionType|[groupPolicyConfigurationIngestionType](../resources/intune-grouppolicy-grouppolicyconfigurationingestiontype.md)|Type of definitions configured for this policy. Possible values are: `unknown`, `custom`, `builtIn`, `mixed`, `unknownFutureValue`.|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 
@@ -61,13 +63,8 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
+  "policyConfigurationIngestionType": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

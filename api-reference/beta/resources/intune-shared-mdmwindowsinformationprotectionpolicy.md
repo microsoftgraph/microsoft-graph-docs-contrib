@@ -1,10 +1,11 @@
 ---
 title: "mdmWindowsInformationProtectionPolicy resource type"
 description: "Policy for Windows information protection with MDM"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # mdmWindowsInformationProtectionPolicy resource type
@@ -29,7 +30,7 @@ Inherits from [windowsInformationProtection](../resources/intune-mam-windowsinfo
 |[Delete mdmWindowsInformationProtectionPolicy](../api/intune-shared-mdmwindowsinformationprotectionpolicy-delete.md)|None|Deletes a [mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md).|
 |[Update mdmWindowsInformationProtectionPolicy](../api/intune-shared-mdmwindowsinformationprotectionpolicy-update.md)|[mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md)|Update the properties of a [mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md) object.|
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|
@@ -212,9 +213,3 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
-
-
-
-
-
-

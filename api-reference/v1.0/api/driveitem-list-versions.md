@@ -1,30 +1,30 @@
 ---
-title: "Listing versions of a DriveItem"
+title: "List versions of a driveItem"
 description: "OneDrive and SharePoint can be configured to retain the history for files."
-localization_priority: Normal
-ms.prod: "sharepoint"
-author: "JeremyKelley"
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
+author: "spgraph-docs-team"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
-# Listing versions of a DriveItem
+# List versions of a driveItem
 
 Namespace: microsoft.graph
 
 OneDrive and SharePoint can be configured to retain the history for files.
 Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.
 
-Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.
+Previous versions of a document may be retained for a finite period of time depending on admin settings that may be unique per user or location.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_list_versions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-list-versions-permissions.md)]
 
 
 ## HTTP request
@@ -33,11 +33,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions
-GET /groups/{group-id}/drive/{item-id}/versions
+GET /groups/{group-id}/drive/items/{item-id}/versions
 GET /me/drive/items/{item-id}/versions
 GET /sites/{site-id}/drive/items/{item-id}/versions
 GET /users/{user-id}/drive/items/{item-id}/versions
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -48,7 +54,7 @@ If successful, this method returns a `200 OK` response code and collection of [D
 
 This example retrieves the versions of a file in the current user's drive.
 
-### HTTP request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -57,24 +63,40 @@ This example retrieves the versions of a file in the current user's drive.
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/versions
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-previous-versions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-previous-versions-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-previous-versions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-previous-versions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-previous-versions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-previous-versions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-previous-versions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-previous-versions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -128,7 +150,9 @@ Content-Type: application/json
 
 ## Remarks
 
-OneDrive does not preserve the complete metadata for previous versions of a file.
+Versions are returned in descending order (newest to oldest). The OData `$orderby` query string parameter isn't supported.
+
+OneDrive doesn't preserve the complete metadata for previous versions of a file.
 
 When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
 

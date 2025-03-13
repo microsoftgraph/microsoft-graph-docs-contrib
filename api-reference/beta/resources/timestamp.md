@@ -1,10 +1,11 @@
 ---
 title: "timeStamp resource type"
 description: "Date and time information for a point in time."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "JeremyKelley"
+ms.subservice: sharepoint
+author: "spgraph-docs-team"
+ms.date: 03/21/2024
 ---
 
 # timeStamp resource type
@@ -15,9 +16,19 @@ Namespace: microsoft.graph
 
 Date and time information for a point in time.
 
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|date|Date|The date portion of the timestamp.|
+|time|TimeOfDay|The time portion of the timestamp.|
+|timeZone|String|The timezone portion of the timestamp, which is one of the 24 longitudinal areas in the world.|
+
+## Relationships
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -33,14 +44,7 @@ Here is a JSON representation of the resource
   "time": "String (timestamp)",
   "timeZone": "string"
 }
-
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|date|Date|The date portion of the timestamp.|
-|time|TimeOfDay|The time portion of the timestamp.|
-|timeZone|String|The timezone portion of the timestamp, which is one of the 24 longitudinal areas in the world.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,32 +1,31 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: BooleanColumn
-localization_priority: Normal
-description: "The booleanColumn on a columnDefinition resource indicates that the column holds a boolean value."
-ms.prod: ""
+author: "spgraph-docs-team"
+title: "booleanColumn resource type"
+ms.localizationpriority: medium
+description: "Indicates that the column in a columnDefinition holds a Boolean value."
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
-# BooleanColumn resource type
+# booleanColumn resource type
 
 Namespace: microsoft.graph
 
-The **booleanColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a boolean value.
+Indicates that the column in a [columnDefinition](columndefinition.md) holds a Boolean value.
+
+## Properties
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of a **booleanColumn** resource.
+The following JSON representation shows the resource type.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.booleanColumn" } -->
 
 ```json
 {
 }
 ```
-
-## Properties
-
-The **booleanColumn** resource contains no properties.
 
 <!-- {
   "type": "#page.annotation",
@@ -35,4 +34,3 @@ The **booleanColumn** resource contains no properties.
   "section": "documentation",
   "tocPath": "Resources/BooleanColumn"
 } -->
-

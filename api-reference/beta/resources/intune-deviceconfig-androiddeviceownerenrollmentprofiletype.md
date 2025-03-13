@@ -1,10 +1,11 @@
 ---
 title: "androidDeviceOwnerEnrollmentProfileType enum type"
 description: "Android Device Owner Enrollment Profile types."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # androidDeviceOwnerEnrollmentProfileType enum type
@@ -23,9 +24,3 @@ Android Device Owner Enrollment Profile types.
 |notConfigured|0|Not configured; this value is ignored.|
 |dedicatedDevice|1|Dedicated device.|
 |fullyManaged|2|Fully managed.|
-
-
-
-
-
-

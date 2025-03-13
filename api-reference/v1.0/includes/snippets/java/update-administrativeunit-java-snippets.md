@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AdministrativeUnit administrativeUnit = new AdministrativeUnit();
-administrativeUnit.displayName = "displayName-value";
-administrativeUnit.description = "description-value";
-administrativeUnit.visibility = "visibility-value";
+administrativeUnit.setDisplayName("Executive Division");
+administrativeUnit.setMembershipType("Dynamic");
+administrativeUnit.setMembershipRule("(user.country -eq \"United States\")");
+administrativeUnit.setMembershipRuleProcessingState("On");
+AdministrativeUnit result = graphClient.directory().administrativeUnits().byAdministrativeUnitId("{administrativeUnit-id}").patch(administrativeUnit);
 
-graphClient.directory().administrativeUnits("{id}")
-	.buildRequest()
-	.patch(administrativeUnit);
 
 ```

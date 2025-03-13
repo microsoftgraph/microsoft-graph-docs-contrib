@@ -1,10 +1,11 @@
 ---
 title: "List people"
 description: "Retrieve a collection of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships."
-author: "dkershaw10"
-localization_priority: Priority
-ms.prod: "insights"
+author: "anthona"
+ms.localizationpriority: high
+ms.subservice: "insights"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List people
@@ -13,17 +14,16 @@ Namespace: microsoft.graph
 
 Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.
 
-You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](/graph/people-example).
+You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | People.Read, People.Read.All    |
-|Delegated (personal Microsoft account) | People.Read    |
-|Application | People.Read.All |
+<!-- { "blockType": "permissions", "name": "user_list_people" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-people-permissions.md)]
 
 ## HTTP request
 
@@ -36,27 +36,27 @@ GET /users/{id | userPrincipalName}/people
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, as shown in the examples in the article [Get relevant information about people](/graph/people-example).
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$filter|string|Limits the response to only those people whose record contains the specified criteria.|
 |$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.|
-|$search|string|Search for people by name or alias. Supports Fuzzy matching. Parameter only works for searching the signed-in user's relevant people, not for searching people relevant to other users. Also supports the `topic` keyword to find people based on topics extracted from e-mail conversations with that person. See the *Perform a fuzzy search* section at [Get relevant information about people](/graph/people-example#perform-a-fuzzy-search) for information and examples. |
+|$search|string|Search for people by name or alias. Supports Fuzzy matching. Parameter only works for searching the signed-in user's relevant people, not for searching people relevant to other users. Also supports the `topic` keyword to find people based on topics extracted from e-mail conversations with that person. For information and examples, see the *Perform a fuzzy search* section at [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview#perform-a-fuzzy-search). |
 |$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.|
 |$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
-|$top|int|Number of results to be returned.|
+|$top|int|The maximum number of results to be returned on a results page. For more information, see [top parameter](/graph/query-parameters?tabs=http#top-parameter).|
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept | application/json |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,9 +64,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-#### Request
+### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -78,28 +78,44 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/people
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-person-collection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-person-collection-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-person-collection-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-person-collection-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-person-collection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-person-collection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-person-collection-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-person-collection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-person-collection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+### Response
 
-#### Response
-
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -112,7 +128,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1370
 
 {
     "value": [
@@ -185,7 +200,8 @@ Content-length: 1370
 }
 ```
 
-For more examples, see the article [Get relevant information about people](/graph/people-example).
+## Related content
+- For details about the People API and more examples, see [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

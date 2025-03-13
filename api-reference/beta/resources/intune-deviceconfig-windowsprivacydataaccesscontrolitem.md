@@ -1,10 +1,11 @@
 ---
 title: "windowsPrivacyDataAccessControlItem resource type"
 description: "Specify access control level per privacy data category"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windowsPrivacyDataAccessControlItem resource type
@@ -56,9 +57,3 @@ Here is a JSON representation of the resource.
   "appDisplayName": "String"
 }
 ```
-
-
-
-
-
-

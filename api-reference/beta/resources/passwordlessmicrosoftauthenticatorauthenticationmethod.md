@@ -1,13 +1,16 @@
 ---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type"
 description: "A representation of a Microsoft Authenticator Passwordless Phone Sign-in method registered to a user."
-author: "mmcla"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
+toc.title: Microsoft Authenticator Passwordless Phone sign-in (deprecated)
+ms.date: 07/22/2024
 ---
 
-# passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type
+# passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type (deprecated)
 
 Namespace: microsoft.graph
 
@@ -15,16 +18,18 @@ Namespace: microsoft.graph
 
 A representation of a Microsoft Authenticator Passwordless Phone Sign-in method registered to a user.
 
-> [!NOTE]
-> Substantial schema changes are planned for APIs that manage the Microsoft Authenticator app while the APIs are in Mirosoft Graph beta. Because the calling patterns will change, we recommend that you do not take a production dependency on these APIs.
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+
+> [!CAUTION]
+> The Microsoft Authenticator Passwordless Phone Sign-in method API is deprecated and will stop returning results on December 31, 2020. Please use the new [Microsoft Authenticator Authentication Method](../resources/microsoftAuthenticatorAuthenticationMethod.md).
 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md)|[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) collection|Retrieve a list of a user's passwordlessMicrosoftAuthenticatorAuthenticationMethod objects and their properties.|
-|[Get](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md)|[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)|Read the properties and relationships of a user's passwordlessMicrosoftAuthenticatorAuthenticationMethod object.|
-|[Delete](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md)|None|Deletes a user's passwordlessMicrosoftAuthenticatorAuthenticationMethod object.|
+|[List](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md) (deprecated)|[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) collection|Retrieve a list of a user's passwordlessMicrosoftAuthenticatorAuthenticationMethod objects and their properties.|
+|[Get](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md) (deprecated)|[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)|Read the properties and relationships of a user's passwordlessMicrosoftAuthenticatorAuthenticationMethod object.|
+|[Delete](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md) (deprecated)|None|Deletes a user's passwordlessMicrosoftAuthenticatorAuthenticationMethod object.|
 
 
 ## Properties
@@ -35,8 +40,7 @@ A representation of a Microsoft Authenticator Passwordless Phone Sign-in method 
 |creationDateTime|DateTimeOffset|The timestamp when this method was registered to the user.|
 
 
-## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

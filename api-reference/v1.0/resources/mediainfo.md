@@ -2,9 +2,10 @@
 title: "mediaInfo resource type"
 description: "The media information used in actions for prompts."
 author: "ananmishr"
-localization_priority: Normal
-ms.prod: "cloud-communications"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # mediaInfo resource type
@@ -16,13 +17,13 @@ The media information used in actions for prompts.
 ## Properties
 | Property	     | Type	   | Description                      |
 |:---------------|:--------|:---------------------------------|
-| resourceId     | String  | Optional. Used to uniquely identity the resource. If passed in, the prompt uri will be cached against this resourceId as a key. |
-| uri            | String  | Path to the prompt that will be played. Currently supports only Wave file (.wav) format, single-channel, 16-bit samples with a 16,000 (16KHz) sampling rate. |
+| resourceId     | String  | Optional. Used to uniquely identity the resource. If passed in, the prompt uri is against this resourceId as a key. |
+| uri            | String  | Path to the prompt that will be played. Currently supports only Wave file (.wav) format, single-channel, 16-bit samples with a 16,000 (16 KHz) sampling rate. |
 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

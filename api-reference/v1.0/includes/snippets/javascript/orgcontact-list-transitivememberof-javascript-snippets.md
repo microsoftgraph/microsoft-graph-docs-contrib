@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/transitiveMemberOf')
+let transitiveMemberOf = await client.api('/contacts/e63333f5-3d11-4026-8fe3-c0f7b044dd3a/transitiveMemberOf')
 	.get();
 
 ```

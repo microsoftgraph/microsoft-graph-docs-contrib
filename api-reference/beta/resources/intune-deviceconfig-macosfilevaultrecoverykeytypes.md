@@ -1,10 +1,11 @@
 ---
 title: "macOSFileVaultRecoveryKeyTypes enum type"
 description: "Recovery key types for macOS FileVault"
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # macOSFileVaultRecoveryKeyTypes enum type
@@ -23,9 +24,3 @@ Recovery key types for macOS FileVault
 |notConfigured|0|Device default value, no intent.|
 |institutionalRecoveryKey|1|An institutional recovery key is like a “master” recovery key that can be used to unlock any device whose password has been lost.|
 |personalRecoveryKey|2|A personal recovery key is a unique code that can be used to unlock the user’s device, even if the password to the device is lost.|
-
-
-
-
-
-

@@ -1,10 +1,11 @@
 ---
 title: "vpnTrafficRuleRoutingPolicyType enum type"
 description: "Specifies the routing policy for a VPN traffic rule."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # vpnTrafficRuleRoutingPolicyType enum type
@@ -23,9 +24,3 @@ Specifies the routing policy for a VPN traffic rule.
 |none|0|No routing policy specified.|
 |splitTunnel|1|Network traffic for the specified app will be routed through the VPN.|
 |forceTunnel|2|All network traffic will be routed through the VPN.|
-
-
-
-
-
-

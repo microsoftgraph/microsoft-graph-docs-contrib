@@ -1,19 +1,20 @@
 ---
 title: "exclusionGroupAssignmentTarget resource type"
 description: "Represents a group that should be excluded from an assignment."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # exclusionGroupAssignmentTarget resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Represents a group that should be excluded from an assignment.
 
@@ -24,7 +25,7 @@ Inherits from [groupAssignmentTarget](../resources/intune-shared-groupassignment
 |Property|Type|Description|
 |:---|:---|:---|
 |deviceAndAppManagementAssignmentFilterId|String|The Id of the filter for the target assignment. Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
-|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|The type of filter of the target assignment i.e. Exclude or Include. Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Possible values are: `none`, `include`.|
+|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|The type of filter of the target assignment i.e. Exclude or Include. Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Possible values are: `none`, `include`, `exclude`.|
 |groupId|String|The group Id that is the target of the assignment. Inherited from [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 
 ## Relationships
@@ -45,9 +46,3 @@ Here is a JSON representation of the resource.
   "groupId": "String"
 }
 ```
-
-
-
-
-
-

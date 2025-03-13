@@ -1,10 +1,11 @@
 ---
 title: "provisioningServicePrincipal resource type"
 description: "Represents the service principal used for provisioning."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
+ms.date: 03/21/2024
 ---
 
 # provisioningServicePrincipal resource type
@@ -13,18 +14,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the service principal used for provisioning. 
+Represents the service principal used for provisioning. Inherits from [identity](../resources/identity.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|Uniquely identifies the **servicePrincipal** used for provisioning.|
+|id|String|Uniquely identifies the **servicePrincipal** used for provisioning. Inherited from [identity](../resources/identity.md).|
 |name|String| Customer-defined name for the **servicePrincipal**.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

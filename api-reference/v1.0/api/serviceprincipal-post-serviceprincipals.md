@@ -2,9 +2,10 @@
 title: "Create serviceprincipal"
 description: "Create a new serviceprincipal object."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-applications"
+ms.date: 05/20/2024
 ---
 
 # Create servicePrincipal
@@ -14,40 +15,46 @@ Namespace: microsoft.graph
 Create a new [servicePrincipal](../resources/serviceprincipal.md) object.
 
 > [!IMPORTANT]
-> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords for a servicePrincipal.
+> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords or secrets for a servicePrincipal.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "serviceprincipal_post_serviceprincipals" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-post-serviceprincipals-permissions.md)]
+
+For multi-tenant apps, the calling user must also be in at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+
++ Application Administrator
++ Cloud Application Administrator
+
+For single-tenant apps where the calling user is a non-admin user but is the owner of the backing application, the user must have the *Application Developer* role.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /serviceprincipals
+POST /servicePrincipals
 ```
 
 ## Request headers
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [serviceprincipal](../resources/serviceprincipal.md) object. The request body must contain  **appId**.
+In the request body, supply a JSON representation of a [servicePrincipal](../resources/serviceprincipal.md) object. The request body must contain **appId**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [serviceprincipal](../resources/serviceprincipal.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
 
 ## Examples
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -56,36 +63,52 @@ Here is an example of the request.
   "name": "create_serviceprincipal_from_serviceprincipals"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals
+POST https://graph.microsoft.com/v1.0/servicePrincipals
 Content-type: application/json
 
 {
-  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-from-serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-from-serviceprincipals-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-serviceprincipal-from-serviceprincipals-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-from-serviceprincipals-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-serviceprincipal-from-serviceprincipals-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-serviceprincipal-from-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-from-serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-serviceprincipal-from-serviceprincipals-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-serviceprincipal-from-serviceprincipals-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-serviceprincipal-from-serviceprincipals-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
 ### Response
-Here is an example of the response. 
+The following example shows the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,4 +150,3 @@ Content-type: application/json
     "passwordCredentials": []
 }
 ```
-

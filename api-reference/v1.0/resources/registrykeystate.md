@@ -1,10 +1,11 @@
 ---
 title: "registryKeyState resource type"
 description: "Contains information about registry key changes related to the alert, and the process that changed the registry keys."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: ""
+ms.subservice: security
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # registryKeyState resource type
@@ -30,7 +31,7 @@ Contains information about registry key changes related to the alert, and the pr
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

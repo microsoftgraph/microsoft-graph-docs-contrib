@@ -1,10 +1,11 @@
 ---
 title: "accessPackageSubject resource type"
-description: "In Azure AD entitlement management, a subject of an access package assignment."
-localization_priority: Normal
+description: "In Microsoft Entra entitlement management, a subject of an access package assignment."
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
+ms.date: 07/10/2024
 ---
 
 # accessPackageSubject resource type
@@ -13,26 +14,41 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.  It may represent a requestor from a connected organization who isn't yet in the tenant.
+
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Get](../api/accesspackagesubject-get.md)|[accessPackageSubject](../resources/accesspackagesubject.md) | Get the properties of an **accesspackagesubject** object. |
+| [Update](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|altSecId|String|Not Supported.|
+|cleanupScheduledDateTime|DateTimeOffset|The date and time the subject is marked to be blocked from sign in or deleted. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.|
+|connectedOrganizationId|String|The identifier of the connected organization of the subject.|
 |displayName|String|The display name of the subject.|
 |email|String|The email address of the subject.|
-|id|String| Read-only.|
-|objectId|String|The object ID of the subject.|
+|id|String| Read-only. Key.|
+|objectId|String|The object identifier of the subject. `null` if the subject isn't yet a user in the tenant. Alternate key.|
+|onPremisesSecurityIdentifier|String|A string representation of the principal's security identifier, if known, or `null` if the subject doesn't have a security identifier.|
 |principalName|String|The principal name, if known, of the subject.|
+|subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`, `unknownFutureValue`.|
 |type|String|The resource type of the subject.|
 
 ## Relationships
 
-None.
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|connectedOrganization|[connectedOrganization](connectedorganization.md)| The connected organization of the subject. Read-only. Nullable.|
+
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -40,18 +56,23 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageSubject",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
-  "displayName": "Administrator",
-  "email": "admin@contoso.com",
-  "id": "ab4291f6-66b7-42bf-b597-a05b29414f5c",
-  "objectId": "cc754ed5-f598-45c0-aaf0-fc2f2eb1838f",
-  "principalName": "admin@domain.contoso.com",
-  "type": "User"
+  "@odata.type": "#microsoft.graph.accessPackageSubject",
+  "id": "String (identifier)",
+  "objectId": "String",
+  "altSecId": "String",
+  "cleanupScheduledDateTime": "String (timestamp)",
+  "displayName": "String",
+  "principalName": "String",
+  "email": "String",
+  "onPremisesSecurityIdentifier": "String",
+  "type": "String",
+  "connectedOrganizationId": "String",
+  "subjectLifecycle": "String"
 }
 ```
 
@@ -64,5 +85,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,10 +1,11 @@
 ---
 title: "teamsCatalogApp resource type"
 description: "see teamsApp."
-author: "nkramer"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "MSFTRickyCastaneda"
+ms.localizationpriority: medium
+ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamsCatalogApp resource type

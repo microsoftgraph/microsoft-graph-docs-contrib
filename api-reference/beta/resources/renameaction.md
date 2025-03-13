@@ -1,11 +1,11 @@
 ---
 author: daspek
-description: "The presence of the RenameAction resource on an itemActivity indicates that the activity renamed an item."
+description: The presence of the RenameAction resource on an itemActivity indicates that the activity renamed an item.
 ms.date: 09/14/2017
 title: RenameAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.subservice: onedrive
 ---
 
 # RenameAction resource type
@@ -17,6 +17,16 @@ Namespace: microsoft.graph
 The presence of the **RenameAction** resource on an [**itemActivity**][activity] indicates that the activity renamed an item.
 
 [activity]: itemactivity.md
+
+## Properties
+
+| Property | Type   | Description                    |
+| :------- | :----- | :----------------------------- |
+| oldName  | string | The previous name of the item. |
+| newName  | string | The new name of the item.      |
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -33,13 +43,6 @@ The presence of the **RenameAction** resource on an [**itemActivity**][activity]
 }
 ```
 
-## Properties
-
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| oldName       | string | The previous name of the item.
-| newName       | string | The new name of the item.
-
 ## Remarks
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
@@ -54,5 +57,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-
