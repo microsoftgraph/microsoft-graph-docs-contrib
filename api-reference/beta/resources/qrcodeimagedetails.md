@@ -1,10 +1,10 @@
 ---
 title: "qrCodeImageDetails resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents raw image content of QR code"
+author: "Aanjusingh and ducnguye"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents raw image content of QR code. 
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|binaryValue|Binary|**TODO: Add Description**|
-|errorCorrectionLevel|errorCorrectionLevel|**TODO: Add Description**.The possible values are: `l`, `m`, `q`, `h`, `unknownFutureValue`.|
-|rawContent|Binary|**TODO: Add Description**|
-|version|Int32|**TODO: Add Description**|
+|binaryValue|Binary|binaryValue of QR code.|
+|errorCorrectionLevel|errorCorrectionLevel|The possible values are: `l`, `m`, `q`, `h`, `unknownFutureValue`.|
+|rawContent|Binary|rawContent of QR code.|
+|version|Int32|version to create QR code image.|
 
 ## Relationships
 None.
