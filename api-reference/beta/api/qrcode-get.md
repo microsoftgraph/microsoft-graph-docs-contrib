@@ -1,7 +1,7 @@
 ---
 title: "Get qrCode"
 description: "Read the properties and relationships of a qrCode object."
-author: "AanjuSingh, minatoruan"
+author: "AanjuSingh"
 ms.date: 03/04/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
