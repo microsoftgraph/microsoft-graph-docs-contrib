@@ -32,8 +32,8 @@ Inherits from [entity](../resources/entity.md)
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time when the QR code was created.|
 |expireDateTime|DateTimeOffset|Temporary QR code lifetime is between 1-12 hours. Standard QR code lifetime is in days and max. is 395 days (13 months) and default value is 365 days (12 months).|
-|id|String|GUID of QR code. Inherits from [entity](../resources/entity.md)|
-|image|[qrCodeImageDetails](../resources/qrcodeimagedetails.md)|The QR code image returned at the time of creating auth method or only QR code as an complex type.|
+|ID|String|GUID of QR code. Inherits from [entity](../resources/entity.md)|
+|image|[qrCodeImageDetails](../resources/qrcodeimagedetails.md)|The QR code image returned at the time of creating auth method or only QR code as a complex type.|
 |lastUsedDateTime|DateTimeOffset|The date and time when the QR code was used last time successfully.|
 |startDateTime|DateTimeOffset|The date and time when the QR code becomes available to use.|
 

@@ -1,7 +1,7 @@
 ---
 title: "qrCodeImageDetails resource type"
 description: "Represents raw image content of QR code"
-author: "Aanjusingh and ducnguye"
+author: "Aanjusingh"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

@@ -1,6 +1,6 @@
 ---
 title: "qrCodePinAuthenticationMethodConfiguration resource type"
-description: "qrCodePinAuthenticationMethod resource that represents the config policy that will apply to enabled users/groups for QR code auth method"
+description: "qrCodePinAuthenticationMethod resource that represents the config policy that applies to enabled users/groups for QR code auth method"
 author: "AanjuSingh"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the QR code authentication method policy that defines configuration settings and users or groups who are enabled to use QR code authentication method. 
+Represents the QR code authentication method policy that defines configuration settings and target users or groups who are enabled to use QR code authentication method. 
 
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
@@ -31,10 +31,10 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |Property|Type|Description|
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-|id|String|The identifier for the authentication method policy. The value is always `QRCodePin` Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Inherits from [entity](../resources/entity.md)|
+|ID|String|The identifier for the authentication method policy. The value is always `QRCodePin` Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Inherits from [entity](../resources/entity.md)|
 |pinLength|Int32|An at-least-8-digit memorized secret. Min length default is 8 as per NIST(National Institute of Standards and Technology) standards and can't be longer than 20 digits|
 |standardQRCodeLifetimeInDays|Int32|Standard QR code lifetime is in days and max. is 395 days (13 months) and default value is 365 days (12 months)|
-|state|authenticationMethodState|Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).The possible values are: `enabled`, `disabled`.|
+|state|authenticationMethodState|Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
