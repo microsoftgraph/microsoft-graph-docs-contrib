@@ -48,16 +48,12 @@ PATCH /policies/authenticationmethodspolicy/authenticationmethodconfigurations/q
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |state|authenticationMethodState|**TODO: Add Description** Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`. Optional.|
 |excludeTargets|[microsoft.authMethodPolicy.excludeTarget](../resources/excludetarget.md) collection|**TODO: Add Description** Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Optional.|
 |standardQRCodeLifetimeInDays|Int32|**TODO: Add Description** Optional.|
 |pinLength|Int32|**TODO: Add Description** Optional.|
-
-
 
 ## Response
 

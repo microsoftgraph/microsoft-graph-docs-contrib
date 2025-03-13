@@ -22,7 +22,7 @@ Represents raw image content of QR code.
 |:---|:---|:---|
 |binaryValue|Binary|binaryValue of QR code.|
 |errorCorrectionLevel|errorCorrectionLevel|The possible values are: `l`, `m`, `q`, `h`, `unknownFutureValue`.|
-|rawContent|Binary|rawContent of QR code.|
+|rawContent|Binary|Base64-encoded rawContent of QR code.|
 |version|Int32|version to create QR code image.|
 
 ## Relationships
