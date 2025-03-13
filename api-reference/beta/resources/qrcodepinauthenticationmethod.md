@@ -1,7 +1,7 @@
 ---
 title: "qrCodePinAuthenticationMethod resource type"
 description: "Represents a QR code authentication method registered to a user."
-author: "Aanjusingh and ducnguye"
+author: Aanjusingh, minatoruan
 ms.date: 02/25/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
