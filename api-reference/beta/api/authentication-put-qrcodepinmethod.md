@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object for the user. A user can have only one active QR code authentication method. A new QR code authentication can be added once existing one is expired or deleted, i.e. becomes unusable for sign-in. This auth method can have standard and temporary QR codes. An active QR code authentication method can have only one active standard and one temporary QR code. To create a new QR code authentication method, standard QR code, or temporary QR code, delete existing respective objects and add new.
+Create a new [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object for the user. A user can have only one active QR code authentication method. A new QR code authentication can be added once existing one is expired or deleted, that is, becomes unusable for sign-in. This auth method can have standard and temporary QR codes. An active QR code authentication method can have only one active standard and one temporary QR code. To create a new QR code authentication method, standard QR code, or temporary QR code, delete existing respective objects and add new.
 
 
 ## Permissions
