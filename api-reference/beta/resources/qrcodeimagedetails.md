@@ -18,6 +18,7 @@ Represents raw image content of QR code.
 
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |binaryValue|Binary|binaryValue of QR code.|

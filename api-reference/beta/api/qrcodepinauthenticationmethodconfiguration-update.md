@@ -48,6 +48,7 @@ PATCH /policies/authenticationmethodspolicy/authenticationmethodconfigurations/q
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+
 |Property|Type|Description|
 |:---|:---|:---|
 |state|authenticationMethodState| QR code state in Entra Authentication Method Policy. Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`.|
