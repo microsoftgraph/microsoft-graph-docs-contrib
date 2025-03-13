@@ -1,7 +1,7 @@
 ---
 title: "Update qrCodePinAuthenticationMethodConfiguration"
 description: "Update the properties of a qrCodePinAuthenticationMethodConfiguration object."
-author: "AanjuSingh, minatoruan"
+author: "AanjuSingh"
 ms.date: 03/04/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
