@@ -1,6 +1,6 @@
 ---
 title: "qrCodePinAuthenticationMethod resource type"
-description: "**TODO: Add Description**"
+description: "Represents a QR code authentication method registered to a user."
 author: "Aanjusingh and ducnguye"
 ms.date: 02/25/2025
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a QR code authentication method registered to a user. QR code authentication method consists of QR code and user PIN. To sign-in, user will simply scan the QR code and their PIN. You can apply available QR code authentication method policy configurations to all the enabled users, such as lifetime of standard QR code and PIN length. 
 
 Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 
