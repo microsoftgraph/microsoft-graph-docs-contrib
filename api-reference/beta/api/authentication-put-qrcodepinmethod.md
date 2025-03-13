@@ -122,7 +122,7 @@ Content-Type: application/json
       "errorCorrectionLevel": "l",
       "rawContent": "SGVsbG9Xb3JsZCEyTXlSYXdDb250ZW50"
     }
-  }
+  },
   "temporaryQRCode": null,
   "pin": {
     "@odata.type": "#microsoft.graph.qrPin",
