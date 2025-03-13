@@ -1,10 +1,10 @@
 ---
 title: "Get qrCode"
 description: "Read the properties and relationships of a qrCode object."
-author: Aanjusingh, minatoruan
+author: "Aanjusingh", "minatoruan"
 ms.date: 03/04/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
