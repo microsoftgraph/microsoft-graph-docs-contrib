@@ -1,7 +1,7 @@
 ---
 title: "qrCodePinAuthenticationMethodConfiguration resource type"
 description: "qrCodePinAuthenticationMethod resource that represents the config policy that will apply to enabled users/groups for QR code auth method"
-author: "AanjuSingh and ducnguye"
+author: "AanjuSingh, minatoruan"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
