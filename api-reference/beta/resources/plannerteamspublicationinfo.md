@@ -45,6 +45,6 @@ The following JSON representation shows the resource type.
   "publishingTeamName": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "publishedToPlanId": "String",
-  "publicationName": "String
+  "publicationName": "String"
 }
 ```
