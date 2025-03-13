@@ -1,10 +1,10 @@
 ---
 title: "qrCode resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents standard or temporary QR code of the user"
+author: "AnjuSingh"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents either standard or temporary QR code of the user.
 
 Inherits from [entity](../resources/entity.md)
 
@@ -30,12 +30,12 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|expireDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherits from [entity](../resources/entity.md)|
-|image|[qrCodeImageDetails](../resources/qrcodeimagedetails.md)|**TODO: Add Description**|
-|lastUsedDateTime|DateTimeOffset|**TODO: Add Description**|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|The date and time when the QR code was created.|
+|expireDateTime|DateTimeOffset|Temporary QR code lifetime is between 1-12 hours. Standard QR code lifetime is in days and max. is 395 days (13 months) and default value is 365 days (12 months).|
+|id|String|GUID of QR code. Inherits from [entity](../resources/entity.md)|
+|image|[qrCodeImageDetails](../resources/qrcodeimagedetails.md)|The QR code image returned at the time of creating auth method or only QR code as an complex type.|
+|lastUsedDateTime|DateTimeOffset|The date and time when the QR code was used last time successfully.|
+|startDateTime|DateTimeOffset|The date and time when the QR code becomes available to use.|
 
 ## Relationships
 None.
