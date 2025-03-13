@@ -28,8 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/user-get-permissions.md)]
 
 >[!NOTE]
-> - Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions aren't supported when using the `/me` endpoint.
-> - The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports, and manager of the signed-in user only.
+> The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports, and manager of the signed-in user only.
 
 ### Permissions for specific scenarios
 - To read the **employeeLeaveDateTime** property:
