@@ -417,6 +417,120 @@
       "CreatedDateTime": "2024-12-09T00:00:00.6252867Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "errorCorrectionLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorCorrectionLevel** enumeration type.",
+          "Target": "errorCorrectionLevel"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deprecation",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Target": "errorCorrectionLevel"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodeImageDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCodeImageDetails](https://learn.microsoft.com/en-us/graph/api/resources/qrCodeImageDetails?view=graph-rest-beta) resource.",
+          "Target": "qrCodeImageDetails"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodeImageDetails",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [qrCodeImageDetails](https://learn.microsoft.com/en-us/graph/api/resources/qrCodeImageDetails?view=graph-rest-beta) resource.",
+          "Target": "qrCodeImageDetails"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "qrCodePinMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **qrCodePinMethod** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authentication",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCode",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCode](https://learn.microsoft.com/en-us/graph/api/resources/qrCode?view=graph-rest-beta) resource.",
+          "Target": "qrCode"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCode",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [qrCode](https://learn.microsoft.com/en-us/graph/api/resources/qrCode?view=graph-rest-beta) resource.",
+          "Target": "qrCode"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodePinAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCodePinAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/qrCodePinAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Target": "qrCodePinAuthenticationMethod"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodePinAuthenticationMethod",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [qrCodePinAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/qrCodePinAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Target": "qrCodePinAuthenticationMethod"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrPin",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrPin](https://learn.microsoft.com/en-us/graph/api/resources/qrPin?view=graph-rest-beta) resource.",
+          "Target": "qrPin"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrPin",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [qrPin](https://learn.microsoft.com/en-us/graph/api/resources/qrPin?view=graph-rest-beta) resource.",
+          "Target": "qrPin"
+        },
+        {
+          "Id": "25af4412-9671-4230-898f-905be64c8da2",
+          "ApiChange": "Method",
+          "ChangedApiName": "updatePin",
+          "ChangeType": "Addition",
+          "Description": "Added the [updatePin](https://learn.microsoft.com/en-us/graph/api/qrPin-updatePin?view=graph-rest-beta) method to the [qrPin](https://learn.microsoft.com/en-us/graph/api/resources/qrPin?view=graph-rest-beta) resource.",
+          "Target": "qrPin"
+        }
+      ],
+      "Id": "25af4412-9671-4230-898f-905be64c8da2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-03-11T21:15:06.8373784Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
