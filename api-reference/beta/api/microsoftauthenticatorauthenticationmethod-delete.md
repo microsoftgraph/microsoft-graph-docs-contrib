@@ -42,6 +42,8 @@ Delete your own Microsoft Authenticator authentication method.
 DELETE /me/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Delete your own or another user's Microsoft Authenticator authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
