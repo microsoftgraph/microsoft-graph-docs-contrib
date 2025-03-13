@@ -1,7 +1,7 @@
 ---
 title: "Get qrCodePinAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a qrCodePinAuthenticationMethodConfiguration object."
-author: "AanjuSingh, minatoruan"
+author: "AanjuSingh"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
