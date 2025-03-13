@@ -1,7 +1,7 @@
 ---
 title: "Delete qrCodePinAuthenticationMethodConfiguration"
 description: "Delete a qrCodePinAuthenticationMethodConfiguration object."
-author: "AanjuSingh, minatoruan"
+author: "AanjuSingh"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
