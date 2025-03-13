@@ -30,8 +30,6 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |[Update a Standard QR code](../api/qrcode-update.md)|[qrCode](../resources/qrcode.md)|Update a user's standard qrCode object.|
 |[Delete a Standard or Temporary QR code](../api/qrcode-delete.md)|None|Delete a user's standardQRCode or temporary qrCode object.|
 |[Reset Pin](../api/qrcodepinauthenticationmethod-patch-pin.md)|[qrPin](../resources/qrpin.md)|Resets a user's Pin by creating a new qrPIN object.|
-<!--|[Update Pin](../api/qrpin-updatepin.md)|[pin](../resources/qrpin.md)|Changing a user's Pin.|-->
-
 
 
 ## Properties
