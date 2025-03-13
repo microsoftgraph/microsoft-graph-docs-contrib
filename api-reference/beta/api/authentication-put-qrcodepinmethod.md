@@ -70,7 +70,8 @@ If successful, this method returns a `201 Created` response code and a [qrCodePi
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_qrcodepinauthenticationmethod_from_"
+  "name": "create_qrcodepinauthenticationmethod_from_",
+  "@odata.type": "microsoft.graph.qrCodePinAuthenticationMethod"
 }
 -->
 ``` http

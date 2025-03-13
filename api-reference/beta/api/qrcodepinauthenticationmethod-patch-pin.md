@@ -94,7 +94,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.qrPin",
   "code": "09599786",
-  "forceChangePinNextSignIn": "true",
+  "forceChangePinNextSignIn": true,
   "createdDateTime": "2025-03-04T22:45:37.2605385Z",
   "updatedDateTime": "2025-03-04T22:45:37.2605385Z"
 }
