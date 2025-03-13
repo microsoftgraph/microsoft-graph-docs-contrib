@@ -69,7 +69,8 @@ If successful, this method returns a `201 Created` response code and a [qrCode](
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_qrcode_from_"
+  "name": "create_qrcode_from_",
+  "@odata.type": "microsoft.graph.qrCode"
 }
 -->
 ``` http
@@ -106,7 +107,6 @@ Content-Type: application/json
   "createdDateTime": "2025-03-04T21:27:46.9771036Z",
   "lastUsedDateTime": "0001-01-01T00:00:00Z",
   "image": {
-    "@odata.type": "microsoft.graph.qrCodeImageDetails"
     "binaryValue": "PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiIHdpZHRoPSIxOTUiIGhlaWdodD0iMTk1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw...",
     "version": 1,
     "errorCorrectionLevel": "l",
