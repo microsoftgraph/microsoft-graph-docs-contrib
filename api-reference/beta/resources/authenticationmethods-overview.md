@@ -30,6 +30,7 @@ The authentication method APIs are used to manage a user's authentication method
 * You can add an email address to a user. The user can then use that email as part of the Self-Service Password Reset (SSPR) process.
 * You can update that email, or delete it from the user.
 * You can assign and activate a hardware OATH token for a user.
+* You can retrieve details of a user's QR code authentication, and delete standard QR code if they lost it.
 
 The ability for a user to use an authentication method is governed by the [authentication method policy](authenticationmethodspolicies-overview.md) for the tenant. For example, only users in the R&D department might be enabled to use the FIDO2 method while all users might be enabled to use Microsoft Authenticator.
 
