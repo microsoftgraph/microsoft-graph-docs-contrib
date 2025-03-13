@@ -25,6 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceManagementManagedDevices.ReadWrite.All|
 
+## Allowed Callers
+The Intune administrator console is the only supported caller for this action. 
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
