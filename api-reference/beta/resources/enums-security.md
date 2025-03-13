@@ -883,6 +883,37 @@ Namespace: microsoft.graph.security
 | reasonLostInTransit |
 | bulk |
 
+### antispamTeamsDirection values
+
+| Member |
+| :------|
+|  unknown   |
+|  inbound   |
+|  outbound  |
+|  intraorg  |
+|  unknownFutureValue  |
+
+### teamsDeliveryLocation values
+
+| Member |
+| :------|
+|  unknown   |
+|  teams     |
+|  quarantine     |
+|  failed    |
+|  unknownFutureValue  |
+
+### teamsMessageDeliveryAction values
+
+| Member |
+| :------|
+|  unknown   |
+|  deliveredAsSpam     |
+|  delivered |
+|  blocked   |
+|  replaced  |
+|  unknownFutureValue  |
+
 ### cloudAttachmentVersion values
 
 |Member|
@@ -901,6 +932,14 @@ Namespace: microsoft.graph.security
 |recent10   |
 |recent100  |
 |all        |
+|unknownFutureValue|
+
+### recipientType values
+
+|Member|
+|:---|
+|user|
+|roleGroup|
 |unknownFutureValue|
 
 <!--

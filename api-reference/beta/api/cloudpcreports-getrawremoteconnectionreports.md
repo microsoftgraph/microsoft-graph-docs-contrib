@@ -78,7 +78,7 @@ Content-length: 199
 
 {
     "filter": "ActivityId eq 'cb6ad4c4-8a17-4245-a644-e4436b1ee204'",
-    "select":["RoundTripTimeInMs", "AvailableBandwidthInMBps", "SignInDateTime"],
+    "select":["RoundTripTimeInMs", "AvailableBandwidthInMbps", "SignInDateTime"],
     "skip": 0,
     "top": 50
 }
@@ -108,15 +108,9 @@ Content-length: 199
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetrawremoteconnectionreports-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetrawremoteconnectionreports-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgetrawremoteconnectionreports-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -143,7 +137,7 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         }
         {
-            "Column": "AvailableBandwidthInMBps",
+            "Column": "AvailableBandwidthInMbps",
             "PropertyType": "Double"
         },
         {

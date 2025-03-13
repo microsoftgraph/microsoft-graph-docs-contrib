@@ -132,6 +132,8 @@ items:
   items:
   - name: List item
     href: ../../resources/listitem.md
+  - name: List
+    href: ../../api/listitem-list.md
   - name: Get
     href: ../../api/listitem-get.md
   - name: Get column values
@@ -148,7 +150,7 @@ items:
     href: ../../api/listitem-update.md
   - name: Update column values
     href: ../../api/listitem-update.md
-  - name: List
+  - name: List document set version
     href: ../../api/listitem-list-documentsetversions.md
   - name: Create
     href: ../../api/listitem-post-documentsetversions.md

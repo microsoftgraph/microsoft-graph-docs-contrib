@@ -91,10 +91,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/b
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcretrievesnapshots-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcretrievesnapshots-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudpcretrievesnapshots-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

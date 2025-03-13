@@ -201,6 +201,7 @@ Content-Type: application/json
 ### Example 2: Retrieve child tags of a specific eDiscovery review tag
 #### Request
 The following example shows a request that retrieves child tags.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "ediscoveryreviewtagthis.childtags"
@@ -210,6 +211,40 @@ The following example shows a request that retrieves child tags.
 ``` http
 GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b6f72954-c7d0-414c-ad50-00167216cb03/tags/318f79767abf4b8fab4d8e37b3174c5a/childTags
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoveryreviewtagthischildtags-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/ediscoveryreviewtagthischildtags-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/ediscoveryreviewtagthischildtags-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoveryreviewtagthischildtags-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoveryreviewtagthischildtags-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/ediscoveryreviewtagthischildtags-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoveryreviewtagthischildtags-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/ediscoveryreviewtagthischildtags-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.

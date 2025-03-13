@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getActiveUserMetric
 [!INCLUDE [sample-code](../includes/snippets/php/serviceactivitythisgetactiveusermetricsforwordweb-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceactivitythisgetactiveusermetricsforwordweb-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/serviceactivitythisgetactiveusermetricsforwordweb-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

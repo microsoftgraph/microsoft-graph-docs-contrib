@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getMessageVolumeMet
 [!INCLUDE [sample-code](../includes/snippets/php/serviceactivitythisgetmessagevolumemetricsforemaildelivery-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceactivitythisgetmessagevolumemetricsforemaildelivery-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/serviceactivitythisgetmessagevolumemetricsforemaildelivery-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

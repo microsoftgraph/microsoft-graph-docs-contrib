@@ -1853,6 +1853,14 @@ Namespace: microsoft.graph
 | enabled |
 | unknownFutureValue |
 
+### x509CertificateCRLValidationConfigurationState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
+| unknownFutureValue |
+
 ### anniversaryType values
 
 | Member |
@@ -4992,6 +5000,7 @@ Possible values for user account types (group membership), per Windows definitio
 | inaccessibleCloudPcReports     |
 | inaccessibleCloudPcTrendReport |
 | unknownFutureValue             |
+| regionalInaccessibleCloudPcTrendReport |
 
 ### nonAdminSetting values
 
@@ -5087,6 +5096,15 @@ Possible values for user account types (group membership), per Windows definitio
 |bulk|
 |unknownFutureValue|
 
+### cloudPcPolicyApplyActionStatus values
+
+|Member|
+|:---|
+|processing|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
 ### mailboxType values 
 
 |Member|
@@ -5115,4 +5133,13 @@ Possible values for user account types (group membership), per Windows definitio
 |m|
 |q|
 |h|
+|unknownFutureValue|
+
+### protectionSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|dynamicRule|
 |unknownFutureValue|
