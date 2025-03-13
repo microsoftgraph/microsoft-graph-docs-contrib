@@ -51,6 +51,8 @@ Enable SMS sign-in for your own mobile phone authentication method.
 POST /me/authentication/phoneMethods/{mobilePhoneMethodId}/enableSmsSignIn
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Enable SMS sign-in for your own or another user's mobile phone authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http

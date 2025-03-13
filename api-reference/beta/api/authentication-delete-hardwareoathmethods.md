@@ -43,6 +43,8 @@ Unassign yourself a hardware OATH authentication method.
 DELETE /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Unassign another user their hardware OATH authentication method.
 <!-- {
   "blockType": "ignored"
@@ -103,6 +105,10 @@ DELETE https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{h
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-hardwareoathauthenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-hardwareoathauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -22,12 +22,8 @@ Archive an active SharePoint [site](../resources/site.md).
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored" } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|Sites.FullControl.All|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Sites.FullControl.All|Not available.|
+<!-- { "blockType": "permissions", "name": "site_archive" } -->
+[!INCLUDE [permissions-table](../includes/permissions/site-archive-permissions.md)]
 
 > [!IMPORTANT]
 > In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *SharePoint Administrator* is the least privileged role for this operation.
@@ -91,6 +87,10 @@ POST https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,da60e844-ba1d
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/archive-site-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/archive-site-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

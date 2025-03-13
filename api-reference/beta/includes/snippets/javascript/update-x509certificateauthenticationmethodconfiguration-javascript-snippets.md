@@ -39,6 +39,10 @@ const authenticationMethodConfiguration = {
     issuerHintsConfiguration: {
         state: 'disabled'
     },
+    crlValidationConfiguration: {
+        state: 'disabled',
+        exemptedCertificateAuthoritiesSubjectKeyIdentifiers: []
+    },
     includeTargets: [
         {
             targetType: 'group',

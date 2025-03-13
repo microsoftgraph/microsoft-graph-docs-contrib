@@ -42,6 +42,8 @@ Deactivate a hardware OATH authentication method assigned to you.
 POST /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/deactivate
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Deactivate a hardware OATH authentication method assigned to another user.
 <!-- {
   "blockType": "ignored"
@@ -102,6 +104,10 @@ POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{har
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/hardwareoathauthenticationmethodthisdeactivate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/hardwareoathauthenticationmethodthisdeactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

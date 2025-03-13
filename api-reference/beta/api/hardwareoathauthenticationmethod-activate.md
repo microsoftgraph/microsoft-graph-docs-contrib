@@ -43,6 +43,8 @@ Activate a hardware OATH authentication method assigned to you.
 POST /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/activate
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Activate a hardware OATH authentication method assigned to another user.
 <!-- {
   "blockType": "ignored"
@@ -119,6 +121,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/hardwareoathauthenticationmethodthisactivate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/hardwareoathauthenticationmethodthisactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

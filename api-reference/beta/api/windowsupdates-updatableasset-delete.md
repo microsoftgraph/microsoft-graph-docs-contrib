@@ -3,7 +3,7 @@ title: "Delete updatableAsset"
 description: "Delete an updatableAsset object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 doc_type: apiPageType
 ms.date: 09/16/2024
 ---
