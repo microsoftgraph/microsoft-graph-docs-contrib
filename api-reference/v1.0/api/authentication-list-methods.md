@@ -46,6 +46,8 @@ List your own authentication methods.
 GET /me/authentication/methods
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 List your own or another user's authentication methods.
 <!-- { "blockType": "ignored" } -->
 ``` http
