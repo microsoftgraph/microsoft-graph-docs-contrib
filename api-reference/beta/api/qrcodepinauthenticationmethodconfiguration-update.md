@@ -81,7 +81,7 @@ Content-Type: application/json
   "state": "String",
   "excludeTargets": [
     {
-      "@odata.type": "microsoft.graph.excludeTarget"
+      "@odata.type": "#microsoft.graph.excludeTarget"
     }
   ],
   "standardQRCodeLifetimeInDays": "Integer",
