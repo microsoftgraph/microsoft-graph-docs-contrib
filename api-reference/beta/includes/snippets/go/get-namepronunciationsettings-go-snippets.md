@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-snapshots, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().ByCloudPcSnapshotId("cloudPcSnapshot-id").Get(context.Background(), nil)
+namePronunciation, err := graphClient.Admin().People().NamePronunciation().Get(context.Background(), nil)
 
 
 ```

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 
-result = await graph_client.device_management.virtual_endpoint.snapshots.by_cloud_pc_snapshot_id('cloudPcSnapshot-id').get()
+result = await graph_client.admin.people.name_pronunciation.get()
 
 
 ```

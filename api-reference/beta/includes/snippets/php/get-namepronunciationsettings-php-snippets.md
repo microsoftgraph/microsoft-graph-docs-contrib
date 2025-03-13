@@ -11,6 +11,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->snapshots()->byCloudPcSnapshotId('cloudPcSnapshot-id')->get()->wait();
+$result = $graphServiceClient->admin()->people()->namePronunciation()->get()->wait();
 
 ```

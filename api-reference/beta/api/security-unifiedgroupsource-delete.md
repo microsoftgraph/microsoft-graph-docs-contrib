@@ -98,7 +98,6 @@ DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/4c551bc5-
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-CloudPcSnapshot result = graphClient.deviceManagement().virtualEndpoint().snapshots().byCloudPcSnapshotId("{cloudPcSnapshot-id}").get();
+graphClient.users().byUserId("{user-id}").contacts().byContactId("{contact-id}").permanentDelete().post();
 
 
 ```
