@@ -1,10 +1,10 @@
 ---
 title: "Delete qrCodePinAuthenticationMethod"
 description: "Delete a qrCodePinAuthenticationMethod object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "AanjuSingh and ducnguye"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
