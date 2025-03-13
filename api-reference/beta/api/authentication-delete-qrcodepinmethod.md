@@ -1,7 +1,7 @@
 ---
 title: "Delete qrCodePinAuthenticationMethod"
 description: "Delete a qrCodePinAuthenticationMethod object."
-author: "AanjuSingh and ducnguye"
+author: Aanjusingh, minatoruan
 ms.date: 02/24/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
