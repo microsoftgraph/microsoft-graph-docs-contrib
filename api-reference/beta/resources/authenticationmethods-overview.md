@@ -53,7 +53,7 @@ We don't recommend using the authentication methods APIs for scenarios where you
 |[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials. | Set a new Temporary Access Pass on a user.|
 |[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business is a passwordless sign-in method on Windows devices.|See devices where a user has enabled Windows Hello for Business sign-in. Delete a Windows Hello for Business credential.|
 |[Authentication states](authentication.md)|Manage a user's sign-in preferences and per-user MFA|See or set the MFA state for a user. See or set the system-preferred multifactor authentication (MFA) setting.|
-|[qrCodePinAuthenticationMethod](qrcodepinauthenticationmethod.md) |**TODO: Add Description**|**TODO: Add Description**|
+|[qrCodePinAuthenticationMethod](qrcodepinauthenticationmethod.md) |QR code is an authentication method designed for frontline workers for simple authentication experience. User just need to scan unique QR code provided to them and enter their PIN to sign in into apps. ||
 |[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (deprecated)|Microsoft Authenticator Passwordless Phone sign-in can be used by a user to sign in to Microsoft Entra ID|Delete a Passwordless Phone sign-in authentication method.|
 
 The following authentication methods aren't yet supported in Microsoft Graph `beta`.
