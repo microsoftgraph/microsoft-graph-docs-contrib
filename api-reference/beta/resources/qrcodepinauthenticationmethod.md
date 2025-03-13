@@ -4,7 +4,7 @@ description: "Represents a QR code authentication method registered to a user."
 author: "Aanjusingh and ducnguye"
 ms.date: 02/25/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
