@@ -515,14 +515,6 @@
           "ChangeType": "Deprecation",
           "Description": "Deprecated the [qrPin](https://learn.microsoft.com/en-us/graph/api/resources/qrPin?view=graph-rest-beta) resource.",
           "Target": "qrPin"
-        },
-        {
-          "Id": "25af4412-9671-4230-898f-905be64c8da2",
-          "ApiChange": "Method",
-          "ChangedApiName": "updatePin",
-          "ChangeType": "Addition",
-          "Description": "Added the [updatePin](https://learn.microsoft.com/en-us/graph/api/qrPin-updatePin?view=graph-rest-beta) method to the [qrPin](https://learn.microsoft.com/en-us/graph/api/resources/qrPin?view=graph-rest-beta) resource.",
-          "Target": "qrPin"
         }
       ],
       "Id": "25af4412-9671-4230-898f-905be64c8da2",
