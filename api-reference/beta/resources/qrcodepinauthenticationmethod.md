@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a QR code authentication method registered to a user. QR code authentication method consists of QR code and user PIN. To sign-in, user will simply scan the QR code and their PIN. You can apply available QR code authentication method policy configurations to all the enabled users, such as lifetime of standard QR code and PIN length. 
+Represents a QR code authentication method registered to a user. QR code authentication method consists of QR code and user PIN. To sign-in, user will simply scan the QR code and their PIN. You can apply available QR code authentication method policy configurations here (../resources/qrcodepinauthenticationmethodconfiguration.md) to all the enabled users, such as lifetime of standard QR code and PIN length. 
 
 Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 
