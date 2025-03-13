@@ -78,7 +78,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethodConfiguration",
-  "state": "String",
+  "state": "enabled",
   "standardQRCodeLifetimeInDays": 365,
   "pinLength": 8
 }
