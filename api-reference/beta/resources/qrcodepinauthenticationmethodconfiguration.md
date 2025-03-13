@@ -32,8 +32,8 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |id|String|The identifier for the authentication method policy. The value is always `QRCodePin` Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Inherits from [entity](../resources/entity.md)|
-|pinLength|Int32|A at-least-8-digit memorized secret. Min length default is 8 as per NIST standards and can't be longer than 20 digits|
-|standardQRCodeLifetimeInDays|Int32|Standard QR code lifetime is in days and max. is 395 days ( 13 months) and default value is 365 days ( 12 months)|
+|pinLength|Int32|An at-least-8-digit memorized secret. Min length default is 8 as per NIST(National Institute of Standards and Technology) standards and can't be longer than 20 digits|
+|standardQRCodeLifetimeInDays|Int32|Standard QR code lifetime is in days and max. is 395 days (13 months) and default value is 365 days (12 months)|
 |state|authenticationMethodState|Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).The possible values are: `enabled`, `disabled`.|
 
 ## Relationships

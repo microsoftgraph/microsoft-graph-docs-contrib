@@ -1,7 +1,7 @@
 ---
 title: "Update qrCode"
 description: "Update the properties of a qrCode object."
-author: "AanjuSingh and ducnguye"
+author: Aanjusingh, minatoruan
 ms.date: 03/03/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

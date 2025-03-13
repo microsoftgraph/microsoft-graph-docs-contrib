@@ -1,7 +1,7 @@
 ---
 title: "Create qrCode"
 description: "Create a new qrCode object."
-author: "AanjuSingh and ducnguye"
+author: Aanjusingh, minatoruan
 ms.date: 03/04/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
