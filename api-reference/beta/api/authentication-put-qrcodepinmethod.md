@@ -1,7 +1,7 @@
 ---
 title: "Create qrCodePinAuthenticationMethod"
 description: "Create a new qrCodePinAuthenticationMethod object."
-author: Aanjusingh, minatoruan
+author: "AanjuSingh"
 ms.date: 02/27/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

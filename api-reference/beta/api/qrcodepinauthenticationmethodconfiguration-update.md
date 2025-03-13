@@ -1,10 +1,10 @@
 ---
 title: "Update qrCodePinAuthenticationMethodConfiguration"
 description: "Update the properties of a qrCodePinAuthenticationMethodConfiguration object."
-author: "Aanjusingh and ducnguye"
+author: "AanjuSingh"
 ms.date: 03/04/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -50,10 +50,10 @@ PATCH /policies/authenticationmethodspolicy/authenticationmethodconfigurations/q
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|authenticationMethodState|**TODO: Add Description** Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`. Optional.|
-|excludeTargets|[microsoft.authMethodPolicy.excludeTarget](../resources/excludetarget.md) collection|**TODO: Add Description** Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Optional.|
-|standardQRCodeLifetimeInDays|Int32|**TODO: Add Description** Optional.|
-|pinLength|Int32|**TODO: Add Description** Optional.|
+|state|authenticationMethodState| QR code state in Entra Authentication Method Policy. Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`.|
+|excludeTargets|[microsoft.authMethodPolicy.excludeTarget](../resources/excludetarget.md) collection|Excluded user or groups in QR code Entra Authentication Method Policy. Inherited from [microsoft.authMethodPolicy.authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+|standardQRCodeLifetimeInDays|Int32|Configured lifetime of standard QR code for all the QR code enabled users. Default is 365 days and maximum allowed lifetime is 395 days.|
+|pinLength|Int32|Default and minimum length is 8 digit. Max. allowed is upto 20 digits.|
 
 ## Response
 
