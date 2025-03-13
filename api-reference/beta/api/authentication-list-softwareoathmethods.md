@@ -48,6 +48,8 @@ Get details of your own software OATH token authentication methods.
 GET /me/authentication/softwareOathMethods
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get details of your own or another user's software OATH token authentication methods.
 <!-- { "blockType": "ignored" } -->
 ``` http
