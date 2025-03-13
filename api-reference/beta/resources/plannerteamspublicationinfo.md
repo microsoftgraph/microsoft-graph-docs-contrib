@@ -48,4 +48,3 @@ The following JSON representation shows the resource type.
   "publicationName": "String
 }
 ```
-
