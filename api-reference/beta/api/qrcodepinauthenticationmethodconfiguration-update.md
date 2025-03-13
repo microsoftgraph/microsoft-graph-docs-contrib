@@ -67,7 +67,9 @@ If successful, this method returns a `200 OK` response code and an updated [qrCo
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_qrcodepinauthenticationmethodconfiguration"
+  "name": "update_qrcodepinauthenticationmethodconfiguration",
+  "@odata.type": "microsoft.graph.qrCodePinAuthenticationMethodConfiguration",
+  "baseType": "microsoft.graph.authenticationMethodConfiguration",
 }
 -->
 ``` http

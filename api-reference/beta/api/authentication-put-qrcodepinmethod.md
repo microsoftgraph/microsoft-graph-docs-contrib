@@ -109,20 +109,23 @@ Content-Type: application/json
   "isUsable": false,
   "methodUsabilityReason": null,
   "standardQRCode": {
+    "@odata.type": "microsoft.graph.qrCode"
     "id": "1a253da5-3f9a-457d-bd9c-de1aab9a2e59",
     "expireDateTime": "2025-12-19T12:00:00Z",
     "startDateTime": "2025-01-01T12:00:00Z",
     "createdDateTime": "2025-03-05T00:03:11.1460378Z",
     "lastUsedDateTime": "0001-01-01T00:00:00Z",
     "image": {
-      "binaryValue": "PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiBzaGFwZS1yZW5kZXJpbmc9ImNyaX...",
+      "@odata.type": "microsoft.graph.qrCodeImageDetails"
+      "binaryValue": "SGVsbG9Xb3JsZCE=",
       "version": 1,
       "errorCorrectionLevel": "l",
-      "rawContent": "bXMtcXJwaW46djF8YWRtaW5AeHBmcTgub25taWNyb3NvZnQuY29tfDFhMjUzZGE1LTNmOWEtNDU3ZC1iZDljLWRlMWFhYjlhMmU1OXwzNzYz..."
+      "rawContent": "SGVsbG9Xb3JsZCEyTXlSYXdDb250ZW50"
     }
   }
   "temporaryQRCode": null,
   "pin": {
+    "@odata.type": "microsoft.graph.qrPin"
     "id": "a98a1084-f503-4dfd-a293-c0e93cba124a",
     "code": "09599786",
     "forceChangePinNextSignIn": true,
