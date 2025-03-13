@@ -1,7 +1,7 @@
 ---
 title: "qrPin resource type"
 description: "Represents PIN of the user"
-author: "Aanjusingh and ducnguye"
+author: "AanjuSingh"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -19,7 +19,7 @@ Represents PIN of the user. Admin creates temporary PIN of the user and user is 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|code|String|PIN of the user. Temporary when issued by admin and permanenet after user changes at first login attempt.|
+|code|String|PIN of the user. It is between 8-20 digits as configured in auth method policy. Temporary when issued by admin and permanent after user changes at first login attempt. PIN can be reset|
 |createdDateTime|DateTimeOffset|The date and time when the PIN was created.|
 |forceChangePinNextSignIn|Boolean|Default true when temporary Pin is created. |
 |updatedDateTime|DateTimeOffset|The date and time when the Pin was updated.|
