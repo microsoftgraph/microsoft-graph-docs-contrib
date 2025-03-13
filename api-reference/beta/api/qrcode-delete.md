@@ -1,7 +1,7 @@
 ---
 title: "Delete qrCode"
 description: "Delete a qrCode object."
-author: "AanjuSingh and ducnguye"
+author: Aanjusingh, minatoruan
 ms.date: 02/25/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
