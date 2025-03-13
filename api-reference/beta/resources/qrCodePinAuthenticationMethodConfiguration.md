@@ -1,10 +1,10 @@
 ---
 title: "qrCodePinAuthenticationMethodConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "qrCodePinAuthenticationMethod resource that represents the config policy that will apply to users enabled to use QR code auth method"
+author: "Aanjusingh and ducnguye"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the Microsoft Entra native QRCodePin in the tenant, including whether the authentication method is enabled or disabled and the users and groups who can register and use it.
+Represents the QR code authentication method policy that defines configuration settings and users or groups who are enabled to use QR code authentication method. 
 
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
