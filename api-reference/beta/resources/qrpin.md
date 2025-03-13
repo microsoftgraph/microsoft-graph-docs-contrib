@@ -1,10 +1,10 @@
 ---
 title: "qrPin resource type"
-description: "**TODO: Add Description**"
+description: "Represents PIN of the user"
 author: "Aanjusingh and ducnguye"
 ms.date: 02/24/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents PIN of the user. Admin creates temporary PIN of the user and user is required to change the PIN during sign-in. User needs to request admin to reset their PIN. Admin can reset the PIN by creating a new temporary PIN.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|code|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|forceChangePinNextSignIn|Boolean|**TODO: Add Description**|
-|updatedDateTime|DateTimeOffset|**TODO: Add Description**|
+|code|String|PIN of the user. Temporary when issued by admin and permanenet after user changes at first login attempt.|
+|createdDateTime|DateTimeOffset|The date and time when the PIN was created.|
+|forceChangePinNextSignIn|Boolean|Default true when temporary Pin is created. |
+|updatedDateTime|DateTimeOffset|The date and time when the Pin was updated.|
 
 ## Relationships
 None.
