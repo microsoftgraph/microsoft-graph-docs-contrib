@@ -187,8 +187,11 @@ items:
           - name: Rubrics
             href: education-rubric-overview.md
       - name: Files
-        href: onedrive-concept-overview.md
-        displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
+        items:
+          - name: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
+            href: onedrive-concept-overview.md
+          - name: Using AppFolder in OneDrive and SharePoint
+            href: appfolder.md
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
         displayName: Dynamics, Dynamics 365 Business Central
@@ -366,6 +369,8 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
+          - name: Using AppFolder in OneDrive and SharePoint
+            href: appfolder.md
       - name: To-do tasks (preview)
         href: todo-concept-overview.md
         displayName: Microsoft To Do
