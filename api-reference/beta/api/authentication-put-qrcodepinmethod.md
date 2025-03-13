@@ -52,12 +52,10 @@ In the request body, supply a JSON representation of the [qrCodePinAuthenticatio
 
 You can specify the following properties when creating a **qrCodePinAuthenticationMethod**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |standardQRCode|[qrCode](../resources/qrcode.md)|Standard QR code is primary QR code of the user with lifetime upto 395 days (13 months). There can be only one active standard QR code for the user. It is created during adding QR code authentication method. A new standard QR code can be created if existing one is expired or deleted. Admin needs to specify startDateTime, time when this QR code will be activated, and, expireDateTime, time when this QR code will be expired, in the create request.|
 |pin|[qrPin](../resources/qrpin.md)|It is the pin of the user. Admin creates the temporary pin, which is forced to be changed by the user during sign-in. Admin can specify custom or auto-generate pin value. Custom pin support is only available during auth method creation.|
-
 
 ## Response
 

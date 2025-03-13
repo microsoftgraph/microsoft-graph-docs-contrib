@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 
 Retrieve a user's single [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-public.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

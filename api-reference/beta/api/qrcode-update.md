@@ -48,8 +48,6 @@ PATCH /users/{id}/authentication/qrcodepinmethod/standardQRCode
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |expireDateTime|DateTimeOffset|It is a mandatory attribute. QR code will be expired and becomes unusable based on set expireDateTime. Max. lifetime of standard QR code is upto 395 days and temporary QR code is upto 12 hours. It can be modified for standard QR code later upto max. lifetime but can't be modified for temporary QR code. |

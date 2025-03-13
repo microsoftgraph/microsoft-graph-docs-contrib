@@ -23,10 +23,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- {
   "blockType": "permissions",
-  "name": "qrcodepinauthenticationmethod-patch-standardqrcode-permissions"
+  "name": "qrcodepinauthenticationmethod-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-post-standardqrcode-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-update-permissions.md)]
 
 ## HTTP request
 
