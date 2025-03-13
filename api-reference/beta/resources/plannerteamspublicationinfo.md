@@ -22,6 +22,7 @@ Contains detailed information about the publication process that created a [plan
 |lastModifiedDateTime|DateTimeOffset|The date and time when this task was last modified by the publication process. Read-only. |
 |publicationId|String| The identifier of the publication. Read-only.|
 |publishedToPlanId|String|The identifier of the **plannerPlan** this task was originally placed in. Read-only. |
+|publicationName|String| The name of the published task list. Read-only.|
 |publishingTeamId|String| The identifier of the [team](team.md) that initiated the publication process. Read-only.|
 |publishingTeamName|String|The display name of the team that initiated the publication process. This display name is for reference only, and might not represent the most up-to-date name of the team. Read-only. |
 
@@ -43,7 +44,8 @@ The following JSON representation shows the resource type.
   "publishingTeamId": "String",
   "publishingTeamName": "String",
   "lastModifiedDateTime": "String (timestamp)",
-  "publishedToPlanId": "String"
+  "publishedToPlanId": "String",
+  "publicationName": "String
 }
 ```
 
