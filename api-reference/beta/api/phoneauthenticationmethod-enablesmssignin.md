@@ -51,6 +51,8 @@ One of the following permissions is required to call this API. To learn more, in
 POST /me/authentication/phoneMethods/{id}/enableSmsSignIn
 POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/enableSmsSignIn
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 The value of `id` for the `mobile` phoneType is `3179e48a-750b-4051-897c-87b9720928f7`.
 
 ## Request headers
