@@ -38,6 +38,8 @@ POST /me/revokeSignInSessions
 POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
