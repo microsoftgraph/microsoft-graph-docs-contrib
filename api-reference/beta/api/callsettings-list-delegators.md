@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Get a list of all delegators for a user.
 
 ## Permissions
 
@@ -29,18 +29,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+To list all delegators with delegated (`/me`) and app (`/users/{userId}/`) permission:
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /me/communications/callSettings/delegators
-GET /users/{user_id}/communications/callSettings/delegators
+GET /users/{userId}/communications/callSettings/delegators
 ```
 
 ## Optional query parameters
 
-This method supports the OData query parameters like `filter` or `count` to help  customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `filter` and `count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -93,11 +95,11 @@ Content-Type: application/json
       "isActive": true,
       "allowedActions": {
         "@odata.type": "microsoft.graph.delegateAllowedActions",
-        "makeCalls": true, 
-        "receiveCalls": true, 
-        "manageCallAndDelegateSettings": true, 
-        "pickUpHeldCalls": true, 
-        "joinActiveCalls": false 
+        "makeCalls": true,
+        "receiveCalls": true,
+        "manageCallAndDelegateSettings": true,
+        "pickUpHeldCalls": true,
+        "joinActiveCalls": false
       }
     },
     {
@@ -107,11 +109,11 @@ Content-Type: application/json
       "isActive": true,
       "allowedActions": {
         "@odata.type": "microsoft.graph.delegateAllowedActions",
-        "makeCalls": false, 
-        "receiveCalls": true, 
-        "manageCallAndDelegateSettings": true, 
-        "pickUpHeldCalls": true, 
-        "joinActiveCalls": false 
+        "makeCalls": false,
+        "receiveCalls": true,
+        "manageCallAndDelegateSettings": true,
+        "pickUpHeldCalls": true,
+        "joinActiveCalls": false
       }
     }
   ]
