@@ -41,6 +41,7 @@ Depending on the resource you're deleting the extension from and the permission 
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [user](../resources/user.md) | User.ReadWrite | Not supported | User.ReadWrite.All |
+| [driveItem](../resources/driveitem.md) | Files.ReadWrite | Files.ReadWrite | Not supported |
 
 ## HTTP request
 
@@ -63,6 +64,7 @@ DELETE /users/me/todo/lists/{listId}/extensions/{extensionId}
 DELETE /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 DELETE /users/me/tasks/lists/{listId}/extensions/{extensionId}
 DELETE /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /drive/items/{itemId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 

@@ -49,6 +49,7 @@ Depending on the resource that contains the extension and the permission type (d
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [user](../resources/user.md) | User.Read | Not supported | User.Read.All |
+| [driveItem](../resources/driveitem.md) | Files.Read | Files.Read | Not supported |
 
 ## HTTP request
 
@@ -75,6 +76,7 @@ GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{todoTaskId}/ext
 GET /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions/{extensionId}
 GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{baseTaskId}/extensions/{extensionId}
 GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions/{extensionId}
+GET /drive/items/{itemId}/extensions/{extensionId}
 ```
 
 ### Get a known resource instance expanded with a matching extension 
@@ -94,6 +96,7 @@ GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}?$expand
 GET /users/{userId|userPrincipalName}/todo/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{userId|userPrincipalName}/tasks/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /drive/items/{itemID}?$expand=extensions($filter=id eq 'extensionId')
 ```
 
 
@@ -538,8 +541,6 @@ The fifth example looks at all messages in the signed-in user's mailbox to find 
 expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name 
 `Com.Contoso.Referral`.
 
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -674,7 +675,42 @@ HTTP/1.1 200 OK
 }
 
 ```
+---
 
+### Request 6
+The sixth example gets and expands the specified driveItem by including the extension returned from a filter. The filter returns the extension that has its id matching a fully qualified name.
+
+<!-- {
+"blockType": "ignored",
+}-->
+```http
+GET /drive/items/{itemID}?$expand=extensions($filter=id eq 'myCustomExtension')
+```
+
+### Response 6
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.openTypeExtension"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "name": "New Folder",
+    "folder": {},
+    "@microsoft.graph.conflictBehavior": "rename",
+    "extensions": [
+        {
+            "id": "myCustomExtension",
+            "extensionName": "myCustomExtension",
+            "myCustomString": "Contoso data",
+            "myCustomBool": false
+        }
+    ]
+}
+```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -690,5 +726,3 @@ HTTP/1.1 200 OK
   ]
 }
 -->
-
-

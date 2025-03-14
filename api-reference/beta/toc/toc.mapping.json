@@ -945,8 +945,7 @@
         "fileStorageContainer",
         "recycleBin",
         "recycleBinItem",
-        "sharedDriveItem",
-        "extension"
+        "sharedDriveItem"
       ]
     },
     {

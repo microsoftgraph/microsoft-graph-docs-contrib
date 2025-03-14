@@ -14,50 +14,49 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents open extension, an [extensibility option](/graph/extensibility-overview) that provides an easy way to directly add untyped properties to a resource in Microsoft Graph.
-
-Any open extension added to a resource shows up in the extensions navigation property. Each extension has an extensionName property which is the only pre-defined, writable property for all extensions, along with your custom data.
-
 An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).
 
-Inherits from [entity](../resources/entity.md)
-
-### Considerations
-Apply the following limits when you create extension resources:
-
-- Maximum of 100 custom extensions per item/file, totaled from all apps.
-- Maximum of 5 custom extensions per App Id.
-- Maximum of 50 KB size per extension. 
-- Maximum of 50MB for all extensions on all items.
-
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Create](../api/driveitem-post-extensions.md)|[extension](../resources/extension.md)| Create an open extension using an extensionName.|
-|[Get](../api/extension-get.md)|[extension](../resources/extension.md)| Get an open extension identified by id.|
-|[Update](../api/extension-update.md)|[extension](../resources/extension.md)|Update an open extension identified by id.|
-|[Delete](../api/driveitem-delete-extensions.md)|None| Delete an open extension identified by id.|
+
+See the methods of the derived type [openTypeExtension](opentypeextension.md) for supported methods.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-| id            | string | A fully qualified identifier that concatenates the extension type with the extensionName. Read-only.
+| Property       | Type    |Description|
+|:---------------|:--------|:----------|
+|id|String| The identifier for the extension. Read-only.|
 
 ## Relationships
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.extension",
-  "openType": false
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.extension"
+}-->
+
+```json
+{
+  "id": "string (identifier)"
+}
+
+```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "extension resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
 }
 -->
-``` json
-{
-    "extensionName": "string",
-    "id": "string"
-}
-```
+
+

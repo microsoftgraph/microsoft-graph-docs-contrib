@@ -43,6 +43,7 @@ Depending on the resource you're creating the extension in and the permission ty
 | [user](../resources/user.md) | User.ReadWrite | Not supported | User.ReadWrite.All |
 | [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [baseTaskList](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [driveItem](../resources/driveitem.md) | Files.ReadWrite | Files.ReadWrite | Not supported |
 <!--
 | [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
@@ -63,6 +64,7 @@ POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks
 POST /users/{userId|userPrincipalName}/todo/lists
 POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks
 POST /users/{userId|userPrincipalName}/tasks/lists
+POST /drive/items/{itemId}/children
 ```
 
 >**Note:** This syntax shows some common ways to create the supported resource instances. All other POST syntaxes
@@ -90,6 +92,8 @@ POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extens
 POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
 POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions
 POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions
+POST /drive/items/{itemId}/extensions
+
 ```
 
 >**Note:** This syntax shows some common ways to identify a resource instance, in order to create an
@@ -694,6 +698,107 @@ Content-type: application/json
 }
 
 ```
+****
+
+### Request 6
+
+The sixth example creates an extension on a driveItem
+
+<!-- {
+"blockType": "ignored",
+}-->
+```http
+POST /drive/items/{itemId}/extensions
+{
+    "extensionName": "myCustomExtension",
+    "myCustomString": "Contoso data",
+    "myCustomBool": false
+}
+```
+
+---
+
+### Response 6
+
+Here is the response for the sixth example. The response body includes properties of the new driveItem,
+and the following for the new extension:
+
+- The **id** property with the fully qualified name.
+- The default property **extensionName** specified in the request.
+- The custom data specified in the request stored as 2 custom properties.
+
+Note: The response object shown here might be shortened for readability.
+
+<!-- {
+"blockType": "ignored",
+}-->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+{
+    "id": "myCustomExtension",
+    "extensionName": "myCustomExtension",
+    "myCustomString": "Contoso data",
+    "myCustomBool": false
+}
+```
+
+****
+
+### Request 7
+The seventh example creates a driveItem and an open extension on the driveItem.
+
+<!-- {
+"blockType": "ignored",
+}-->
+```http
+POST /drive/items/{itemId}/children
+{
+    "name": "New Item",
+    "@microsoft.graph.conflictBehavior": "rename",
+    "extensions": [
+        {
+            "extensionName": "myCustomExtension",
+            "myCustomString": "Contoso data",
+            "myCustomBool": false
+        }
+    ]
+}
+```
+
+---
+
+### Response 7
+
+Here is the response for the seventh example. The response body includes properties of the new driveItem,
+and the following for the new extension:
+
+- The **id** property with the fully qualified name.
+- The default property **extensionName** specified in the request.
+- The custom data specified in the request stored as 2 custom properties.
+
+Note: The response object shown here might be shortened for readability.
+
+<!-- {
+"blockType": "ignored",
+}-->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+{
+    "id": "ACEA49D1-1444-45A9-A1CB-68B1B28AE491",
+    "createdDateTime": "2022-08-30T22:55:29Z",
+    "name": "New Folder",
+    "extensions": [
+        {
+            "id": "myCustomExtension",
+            "extensionName": "myCustomExtension",
+            "myCustomString": "Contoso data",
+            "myCustomBool": false
+        }
+    ]
+}
+```
 
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -709,5 +814,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

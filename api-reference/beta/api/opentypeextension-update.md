@@ -45,6 +45,7 @@ Depending on the resource that the extension was created in and the permission t
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [user](../resources/user.md) | User.ReadWrite | Not supported | User.ReadWrite.All |
+| [driveItem](../resources/driveitem.md) | Files.ReadWrite | Files.ReadWrite | Not supported |
 
 ## HTTP request
 
@@ -67,6 +68,7 @@ PATCH /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 PATCH /users/me/todo/lists/{listId}/extensions/{extensionId}
 PATCH /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 PATCH /users/me/tasks/lists/{listId}/extensions/{extensionId}
+PATCH drive/items/{itemId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it. 
@@ -296,6 +298,45 @@ Content-Type: application/json
         "Add spouse or guest",
         "Add family"
     ]
+}
+```
+
+****
+
+#### Request 3
+
+The third example updates an open extension on a driveItem.
+
+<!-- {
+"blockType": "ignored",
+}-->
+```http
+PATCH /drive/items/{itemId}/extensions/{extensionId}
+{
+    "extensionName": "newExtensionName",
+    "myCustomString": "Contoso data",
+    "myCustomBool": false
+}
+```
+
+---
+
+#### Response 3
+
+Here is the response of the third example which shows the updated `extensionName` in the extension.
+
+<!-- {
+"blockType": "ignored",
+}-->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "id": "extensionId",
+    "extensionName": "newExtensionName",
+    "myCustomString": "Contoso data",
+    "myCustomBool": false
 }
 ```
 

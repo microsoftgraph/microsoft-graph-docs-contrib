@@ -37,10 +37,19 @@ The following resource support open extensions:
 + [todoTaskList](todotasklist.md)
 + [baseTaskList](basetasklist.md) (deprecated)
 + [baseTask](basetask.md) (deprecated)
++ [driveItem](driveitem.md)
 
 > **Note:** \* Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 
 For more information about Microsoft Graph extensibility including limits for open extensions, see [Add custom properties to resources using extensions](/graph/extensibility-overview) and [Add custom data to users using open extensions](/graph/extensibility-open-users).
+
+### DriveItem-specific considerations
+
+Apply the following limits when you create extension resources on driveItems:
+- Maximum of 100 custom extensions per item/file, totaled from all apps.
+- Maximum of 5 custom extensions per App Id.
+- Maximum of 50 KB size per extension. 
+- Maximum of 50MB for all extensions on all items.
 
 ### Outlook-specific considerations
 
@@ -60,7 +69,7 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md)[contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md)[contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), [todoTaskList](todotasklist.md) or [driveItem](driveitem.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
 |[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
