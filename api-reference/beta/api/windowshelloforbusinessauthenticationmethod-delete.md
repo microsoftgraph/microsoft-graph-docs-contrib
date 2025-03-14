@@ -42,6 +42,8 @@ Delete your own Windows Hello For Business authentication method.
 DELETE /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Delete your own or another user's Windows Hello For Business authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http

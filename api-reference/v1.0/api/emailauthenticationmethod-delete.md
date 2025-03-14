@@ -46,6 +46,8 @@ Delete the email method from your own account. For a signed-in user to update th
 DELETE /me/authentication/emailMethods/{emailMethods-id}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Delete the email authentication method from another user's account.
 <!-- {  "blockType": "ignored" } -->
 ``` http
