@@ -80,8 +80,9 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | [itemRetentionLabel](../resources/itemretentionlabel.md) | Lock or unlock a retention label on a **driveItem** that classifies content as records. |
 |[Create upload session](../api/driveitem-createuploadsession.md)              |[uploadSession](../resources/uploadsession.md)|Create an upload session to allow your app to upload files up to the maximum file size.|
 | [Download file (deprecated)](../api/driveitem-get-content.md)                          | download URL | Download content of a **driveItem**.|
-|[Create extension](../api/driveitem-post-extensions.md)|[extension](../resources/extension.md)|Create a new extension object.|
-
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing driveItem.|
+|[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 
 ## Properties
 
@@ -146,7 +147,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | thumbnails         | [thumbnailSet][] collection | Collection of [thumbnailSet][] objects associated with the item. For more information, see [getting thumbnails][]. Read-only. Nullable.
 | versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
 | workbook           | [workbook][]                | For files that are Excel spreadsheets, access to the workbook API to work with the spreadsheet's contents. Nullable.
-|extensions|[extension](../resources/extension.md) collection|**TODO: Add Description**|
+| extensions         | [extension](extension.md) collection | The collection of open extensions defined for the driveItem. Nullable.|
 
 ## Instance Attributes
 
@@ -178,7 +179,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content","contentStream", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds", "source", "media"],
+       "sharepointIds", "source", "media", "extensions"],
        "keyProperty": "id", "openType": true } -->
 
 ```json
