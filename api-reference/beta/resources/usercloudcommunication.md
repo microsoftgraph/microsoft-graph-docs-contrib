@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about the interaction from communications and the user.
+Represents information about the interaction from communications and a user.
 
 ## Methods
 |Method|Return type|Description|

@@ -2973,6 +2973,7 @@
               "name": "Call delegation",
               "overview": "../../resources/callsettings-api-overview.md",
               "resources": [
+                "callSettings",
                 "delegationSettings"
               ],
               "complexTypes": [
