@@ -1,14 +1,14 @@
 ---
-title: "Update deviceManagement"
-description: "Update the properties of a deviceManagement object."
+title: "retrieveAutopilotDeploymentAppDetail action"
+description: "Intune Reporting Devicemanagementreports Retrieveautopilotdeploymentappdetail Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 10/22/2024
+ms.date: 08/01/2024
 ---
 
-# Update deviceManagement
+# retrieveAutopilotDeploymentAppDetail action
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /deviceManagement
+POST /deviceManagement/reports/retrieveAutopilotDeploymentAppDetail
 ```
 
 ## Request headers
@@ -45,30 +45,53 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.
+In the request body, supply JSON representation of the parameters.
 
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md).
+The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|name|String||
+|select|String collection||
+|groupBy|String collection||
+|orderBy|String collection||
+|search|String||
+|skip|Int32||
+|top|Int32||
+|sessionId|String||
+|filter|String||
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object in the response body.
+If successful, this action returns a `200 OK` response code and a Stream in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement
+POST https://graph.microsoft.com/beta/deviceManagement/reports/retrieveAutopilotDeploymentAppDetail
+
 Content-type: application/json
-Content-length: 58
+Content-length: 278
 
 {
-  "@odata.type": "#microsoft.graph.deviceManagement"
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "search": "Search value",
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
 }
 ```
 
@@ -80,7 +103,6 @@ Content-Type: application/json
 Content-Length: 107
 
 {
-  "@odata.type": "#microsoft.graph.deviceManagement",
-  "id": "0b283420-3420-0b28-2034-280b2034280b"
+  "value": "cmV0cmlldmVBdXRvcGlsb3REZXBsb3ltZW50QXBwRGV0YWlsIEludHVuZSBEb2MgU2FtcGxlIC05MDU4MjAyNjg="
 }
 ```
