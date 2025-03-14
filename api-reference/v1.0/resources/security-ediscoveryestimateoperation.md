@@ -69,19 +69,16 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryEstimateOperation",
-   "completedDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "action": "String",
+  "completedDateTime": "String (timestamp)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "indexedItemCount": "Int64",
   "indexedItemsSize": "Int64",
   "mailboxCount": "Int32",
   "percentProgress": "Int32",
-  "resultInfo": {
-    "@odata.type": "microsoft.graph.resultInfo"
-  },
+  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
   "siteCount": "Int32",
   "statisticsOptions": "String",
   "status": "String",
