@@ -80,9 +80,8 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | [itemRetentionLabel](../resources/itemretentionlabel.md) | Lock or unlock a retention label on a **driveItem** that classifies content as records. |
 |[Create upload session](../api/driveitem-createuploadsession.md)              |[uploadSession](../resources/uploadsession.md)|Create an upload session to allow your app to upload files up to the maximum file size.|
 | [Download file (deprecated)](../api/driveitem-get-content.md)                          | download URL | Download content of a **driveItem**.|
-|**Open extensions**| | |
-|[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing driveItem.|
-|[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
+| [Create open extension](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Create an open extension and add custom properties to a new or existing driveItem.|
+| [Get open extension](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) collection | Get an open extension identified by the extension name.|
 
 ## Properties
 
