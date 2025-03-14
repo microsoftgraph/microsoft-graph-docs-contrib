@@ -27,7 +27,7 @@ GET {drive resource}/special/approot
 
 The first time you request the folder it is created if it does not exist. All special folders are created within the target drive with the path `Apps/{EntraId application name}` - meaning if your application is called "My Amazing App" the resulting path within the drive is `Apps/My Amazing App`.
 
-What you get back is a drive item representing the folder, with both the folder and specialFolder facets present as shown below (some information omitted). This means that you can perform all the expected operations to your application's folder like any other folder such as uploading files, listing children, and sharing contained files.
+What you get back is a drive item representing the folder, with both the folder and specialFolder facets present. This means that you can perform all the expected operations to your application's folder. These include uploading files, listing children, and sharing contained files.
 
 ```JSON
 {
@@ -49,7 +49,7 @@ What you get back is a drive item representing the folder, with both the folder 
 
 Using appfolder has several benefits depending on the scenario, the main one being the ability to easily address the folder with a constant path. For example, to access a user's app folder you can always use `https://{graph}/me/special/approot`. No need to track ids or paths for individual users.
 
-But AppFolder doesn't just work for OneDrive, you can use it with any drive resource including SharePoint libraries. In this case you need a full path to the drive, using the drive id.
+But AppFolder doesn't just work for OneDrive, you can use it with any drive resource including SharePoint libraries. In this case, you need a full path to the drive, using the drive id.
 
 ```HTTP
 GET drives/{drive id}/special/approot
@@ -89,13 +89,13 @@ With application permissions the application can access all appfolders associate
 
 ## Other Considerations
 
-With the use of AppFolder there are some other considerations when deciding on the right solution.
+With the use of AppFolder, there are some other considerations when deciding on the right solution.
 
 Firstly, AppFolder counts against quota - either a user's OneDrive quota or a SharePoint site's usage quota. Placing large files into the app folder may cause issues for your users. App folder is a great place to store configuration, some temp storage, or drafts.
 
 Also, consider your expected user experience. If the user needs to access these files frequently, or interact with them outside your application, `Files.ReadWrite` or `Files.ReadWrite.All` may be better choices allowing you to present a save-as experience and letting them decide where to keep things.
 
-And finally, keep in mind that a user can delete, edit, or replace any file within their own OneDrive. While its unlikely, your application should account for this and not blindly trust these files or expect them to always exist. In addition, applications with access to the full OneDrive can access AppFolder files, so keep in mind what types of information you are storing.
+And finally, keep in mind that a user can delete, edit, or replace any file within their own OneDrive. While its unlikely, your application should account for this possibility and not blindly trust these files or expect them to always exist. In addition, applications with access to the full OneDrive can access AppFolder files, so keep in mind what types of information you are storing.
 
 ## Scenarios
 
@@ -103,7 +103,7 @@ There are many scenarios that can immediately benefit from using AppFolder's cap
 
 ### User Configuration
 
-Users access your application from Teams, SharePoint, mobile, and desktop and have the option to store preferences and settings. Using AppFolder you can easily store configuration files and access them from any device. Easily making your user's settings portable and always accessible with a known path. And you can store multiple settings files if you support different device capabilities.
+Users access your application from Teams, SharePoint, mobile, and desktop and need to store preferences and settings. Using AppFolder you can easily store configuration files and access them from any device. Easily making your user's settings portable and always accessible with a known path. And you can store multiple settings files if you support different device capabilities.
 
 ### E-Signature
 
