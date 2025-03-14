@@ -37,7 +37,7 @@ Use the **firstChannelName** property on a [team](/graph/api/resources/team) to 
 
 ### Tasks and plans
 
-Use the **publicationName** property on [plannerTeamsPublicationInfo](/graph/api/resources/plannerteamspublicationinfo?view=graph-rest-beta&preserve-view=true) to get the name of the published task list.
+Use the **publicationName** property on [plannerTeamsPublicationInfo](/graph/api/resources/plannerteamspublicationinfo?view=graph-rest-beta&preserve-view=true) to get the name of a published task list.
 
 ### Teamwork and communications | Calls and online meetings
 
