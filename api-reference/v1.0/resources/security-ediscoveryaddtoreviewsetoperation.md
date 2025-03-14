@@ -78,20 +78,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryAddToReviewSetOperation",
+  "action": "String",
   "additionalDataOptions": "String",
   "cloudAttachmentVersion": "String",
   "completedDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "documentVersion": "String",
   "id": "String (identifier)",
   "itemsToInclude": "String",
   "percentProgress": "Int32",
-  "resultInfo": {
-    "@odata.type": "microsoft.graph.resultInfo"
-  },
+  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
   "status": "String"
 }
 ```
