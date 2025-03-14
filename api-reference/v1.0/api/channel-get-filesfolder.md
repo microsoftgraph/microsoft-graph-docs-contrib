@@ -1,10 +1,11 @@
 ---
 title: "Get filesFolder"
 description: "Retrieve the filesFolder of a channel."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 08/19/2024
 ---
 
 # Get filesFolder

@@ -20,6 +20,7 @@ answerPostRequestBody.setAcceptedModalities(acceptedModalities);
 IncomingCallOptions callOptions = new IncomingCallOptions();
 callOptions.setOdataType("#microsoft.graph.incomingCallOptions");
 callOptions.setIsContentSharingNotificationEnabled(true);
+callOptions.setIsDeltaRosterEnabled(true);
 answerPostRequestBody.setCallOptions(callOptions);
 answerPostRequestBody.setParticipantCapacity(200);
 graphClient.communications().calls().byCallId("{call-id}").answer().post(answerPostRequestBody);

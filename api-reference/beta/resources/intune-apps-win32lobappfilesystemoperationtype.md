@@ -2,9 +2,10 @@
 title: "win32LobAppFileSystemOperationType enum type"
 description: "A list of possible operations for rules used to make determinations about an application based on files or folders. Unless noted, can be used with either detection or requirement rules."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # win32LobAppFileSystemOperationType enum type

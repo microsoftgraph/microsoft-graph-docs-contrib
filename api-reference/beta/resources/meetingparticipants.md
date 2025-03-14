@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # meetingParticipants resource type
@@ -29,9 +30,12 @@ Participants in a meeting.
 > **attendees** collection. Use the **role** property of [meetingParticipantInfo](meetingparticipantinfo.md)
 > to identify the meeting role of the attendee.
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

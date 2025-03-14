@@ -18,8 +18,10 @@ import (
 requestBody := graphmodels.NewTeam()
 displayName := "My Sample Team"
 requestBody.SetDisplayName(&displayName) 
-description := "My Sample Team’s Description"
+description := "My sample team’s description"
 requestBody.SetDescription(&description) 
+firstChannelName := "My first channel of the sample team"
+requestBody.SetFirstChannelName(&firstChannelName) 
 
 
 conversationMember := graphmodels.NewAadUserConversationMember()
@@ -28,7 +30,7 @@ roles := []string {
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')", 
+	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 
@@ -37,7 +39,7 @@ members := []graphmodels.ConversationMemberable {
 }
 requestBody.SetMembers(members)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
+	"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
 }
 requestBody.SetAdditionalData(additionalData)
 

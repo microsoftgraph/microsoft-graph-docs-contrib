@@ -2,9 +2,10 @@
 title: "Get windowsPhone81CustomConfiguration"
 description: "Read properties and relationships of the windowsPhone81CustomConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get windowsPhone81CustomConfiguration

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 07/26/2024
 ---
 
 # agreementFileData resource type
@@ -18,9 +19,13 @@ Represents a Microsoft Entra terms of use agreement file.
 |:-------------|:------------|:------------|
 |data|Binary|Data that represents the terms of use PDF document. Read-only.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

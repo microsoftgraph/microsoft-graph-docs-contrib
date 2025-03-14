@@ -5,6 +5,7 @@ author: "subray"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # Add app to chat
@@ -55,7 +56,7 @@ The following table lists other parameters that can be used with the request bod
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource-specific permissions that are being consented to.|
 
 > **Note:**
-> The permissions consented to during the installation must match the resource-specific permissions defined in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).If only delegated resource-specific permissions are specified in the **teamsAppDefinition**, permissions can be omitted in the request body.
+> The permissions consented to during the installation must match the resource-specific permissions defined in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 6](../api/appcatalogs-list-teamsapps.md#example-6-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).If only delegated resource-specific permissions are specified in the **teamsAppDefinition**, permissions can be omitted in the request body.
 
 ## Response
 
@@ -134,7 +135,7 @@ HTTP/1.1 201 Created
 
 ### Example 2: Install app in a chat and consent to the resource-specific permissions required by the app
 
-To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
+To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 6](../api/appcatalogs-list-teamsapps.md#example-6-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
 
 #### Request
 

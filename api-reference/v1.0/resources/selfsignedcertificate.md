@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "luleonpla"
+ms.date: 07/22/2024
 ---
 
 # selfSignedCertificate resource type
@@ -30,7 +31,7 @@ This resource type is the return type of the [addSelfSignedSigningCertificate](.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

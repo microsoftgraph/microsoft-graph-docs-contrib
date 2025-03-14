@@ -2,9 +2,10 @@
 title: "deviceManagementResourceAccessProfileBase resource type"
 description: "Base Profile Type for Resource Access"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementResourceAccessProfileBase resource type

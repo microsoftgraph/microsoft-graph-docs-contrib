@@ -4,20 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.update_policy import UpdatePolicy
-from msgraph.generated.models.deployment_audience import DeploymentAudience
-from msgraph.generated.models.compliance_change import ComplianceChange
-from msgraph.generated.models.content_approval import ContentApproval
-from msgraph.generated.models.compliance_change_rule import ComplianceChangeRule
-from msgraph.generated.models.content_approval_rule import ContentApprovalRule
-from msgraph.generated.models.driver_update_filter import DriverUpdateFilter
-from msgraph.generated.models.deployment_settings import DeploymentSettings
-from msgraph.generated.models.schedule_settings import ScheduleSettings
-from msgraph.generated.models.rate_driven_rollout_settings import RateDrivenRolloutSettings
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.windows_updates.update_policy import UpdatePolicy
+from msgraph_beta.generated.models.windows_updates.deployment_audience import DeploymentAudience
+from msgraph_beta.generated.models.windows_updates.compliance_change import ComplianceChange
+from msgraph_beta.generated.models.windows_updates.content_approval import ContentApproval
+from msgraph_beta.generated.models.windows_updates.compliance_change_rule import ComplianceChangeRule
+from msgraph_beta.generated.models.windows_updates.content_approval_rule import ContentApprovalRule
+from msgraph_beta.generated.models.windows_updates.driver_update_filter import DriverUpdateFilter
+from msgraph_beta.generated.models.windows_updates.deployment_settings import DeploymentSettings
+from msgraph_beta.generated.models.windows_updates.schedule_settings import ScheduleSettings
+from msgraph_beta.generated.models.windows_updates.rate_driven_rollout_settings import RateDrivenRolloutSettings
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = UpdatePolicy(
 	odata_type = "#microsoft.graph.windowsUpdates.updatePolicy",
 	audience = DeploymentAudience(

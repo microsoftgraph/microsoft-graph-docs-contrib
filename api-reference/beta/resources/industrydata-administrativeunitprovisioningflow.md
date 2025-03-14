@@ -5,6 +5,7 @@ author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # administrativeUnitProvisioningFlow resource type
@@ -25,9 +26,9 @@ Inherits from [microsoft.graph.industryData.provisioningFlow](industrydata-provi
 
 | Method                                                                                                            | Return type                                                                                                                                   | Description                                                                                                                                                                           |
 | :---------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Get administrativeUnitProvisioningFlow](../api/industrydata-administrativeunitprovisioningflow-get.md)           | [microsoft.graph.industryData.administrativeUnitProvisioningFlow](industrydata-administrativeunitprovisioningflow.md)            | Read the properties and relationships of an administrativeunitprovisioningflow object. |
-| [Update administrativeUnitProvisioningFlow](../api/industrydata-administrativeunitprovisioningflow-update.md)     | [microsoft.graph.industryData.administrativeUnitProvisioningFlow](industrydata-administrativeunitprovisioningflow.md)            | Update the properties of an administrativeunitprovisioningflow object.                 |
-| [Delete administrativeUnitProvisioningFlow](../api/industrydata-administrativeunitprovisioningflow-delete.md)    | None                                                                                                                                          | Delete an administrativeunitprovisioningflow object. |
+| [Get](../api/industrydata-administrativeunitprovisioningflow-get.md)           | [microsoft.graph.industryData.administrativeUnitProvisioningFlow](industrydata-administrativeunitprovisioningflow.md)            | Read the properties and relationships of an administrativeunitprovisioningflow object. |
+| [Update](../api/industrydata-administrativeunitprovisioningflow-update.md)     | [microsoft.graph.industryData.administrativeUnitProvisioningFlow](industrydata-administrativeunitprovisioningflow.md)            | Update the properties of an administrativeunitprovisioningflow object.                 |
+| [Delete](../api/industrydata-administrativeunitprovisioningflow-delete.md)    | None                                                                                                                                          | Delete an administrativeunitprovisioningflow object. |
 
 ## Properties
 

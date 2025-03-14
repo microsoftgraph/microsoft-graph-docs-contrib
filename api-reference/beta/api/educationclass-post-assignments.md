@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mmast-msft"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 05/21/2024
 ---
 
 # Create educationAssignment
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new assignment.
 
-Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publication.
+Only teachers in a class can create an assignment. Assignments start in draft status, which means that students can't see the assignment until it's published.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -177,7 +178,7 @@ Content-type: application/json
 
 ## Related content
 
-* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
+* [Status, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-status-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -3,8 +3,9 @@ title: "meetingActivityStatistics resource type"
 description: "Represents information about meeting activities for users."
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # meetingActivityStatistics resource type
@@ -44,7 +45,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

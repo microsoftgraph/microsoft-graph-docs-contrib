@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # printJobStatus resource type
@@ -47,6 +48,10 @@ Represents the current status of a print job.
 |completedWithErrors|4|Job has been completed with errors.|
 |releaseWait|5|Job is pending to be released.|
 |interpreting|6|Job is in 'processing' state, but more specifically, document payload is being interpreted.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

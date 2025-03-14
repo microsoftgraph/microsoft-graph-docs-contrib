@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CreateUploadSessionPostRequestBody;
+use Microsoft\Graph\Generated\Print\Printers\Item\Jobs\Item\Documents\Item\CreateUploadSession\CreateUploadSessionPostRequestBody;
 use Microsoft\Graph\Generated\Models\PrintDocumentUploadProperties;
 
 

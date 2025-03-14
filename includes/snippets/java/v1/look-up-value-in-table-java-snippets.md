@@ -10,12 +10,10 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.drives.item.items.item.workbook.functions.vlookup.VlookupPostRequestBody vlookupPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.functions.vlookup.VlookupPostRequestBody();
 vlookupPostRequestBody.setLookupValue("pear");
-Json tableArray = new Json();
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("Address", "Sheet1!B2:C7");
-tableArray.setAdditionalData(additionalData);
+UntypedNode tableArray = new UntypedNode();
+tableArray.setAddress("Sheet1!B2:C7");
 vlookupPostRequestBody.setTableArray(tableArray);
-vlookupPostRequestBody.setColIndexNum(2);
+vlookupPostRequestBody.setColIndexNum(2d);
 vlookupPostRequestBody.setRangeLookup(false);
 var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().functions().vlookup().post(vlookupPostRequestBody, requestConfiguration -> {
 	requestConfiguration.headers.add("workbook-session-id", "{session-id}");

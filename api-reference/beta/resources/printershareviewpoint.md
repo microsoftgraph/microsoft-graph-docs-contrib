@@ -5,6 +5,7 @@ author: "mayankbansal018"
 ms.localizationpriority: medium
 ms.subservice: "universal-print"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printerShareViewpoint resource type
@@ -24,7 +25,7 @@ Represents additional data for a printer share as viewed by the signed-in user.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printerShareViewpoint"

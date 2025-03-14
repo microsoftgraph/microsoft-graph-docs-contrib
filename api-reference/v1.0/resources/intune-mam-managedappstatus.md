@@ -2,9 +2,10 @@
 title: "managedAppStatus resource type"
 description: "Represents app protection and configuration status for the organization."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # managedAppStatus resource type

@@ -5,6 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/16/2024
 ---
 
 # Create authenticationEventListener
@@ -21,6 +22,7 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md)
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
+- [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md)
 
 > [!NOTE]
 >
@@ -33,6 +35,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "identitycontainer_post_authenticationeventlisteners" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identitycontainer-post-authenticationeventlisteners-permissions.md)]
+
+[!INCLUDE [rbac-custom-auth-ext-apis-write](../includes/rbac-for-apis/rbac-custom-auth-ext-apis-write.md)]
 
 ## HTTP request
 
@@ -66,7 +70,9 @@ You can specify the following properties when creating an **authenticationEventL
 |handler|[onInteractiveAuthFlowStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onInteractiveAuthFlowStartListener** listener type.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
 |handler|[onUserCreateStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onUserCreateStartListener** listener type.|
+|handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md) | The handler to invoke when conditions are met. Can be set for the **onPhoneMethodLoadStartListener** listener type. |
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
+
 
 ## Response
 
@@ -387,6 +393,215 @@ Content-Type: application/json
     "handler": {
         "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler",
         "configuration": null
+    }
+}
+```
+
+### Example 3: Activate telecom for select regions
+
+#### Request
+The following example shows a request that activates telecom in region codes 222 and 998.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onPhoneMethodLoadStartExternalUsersAuthHandler_activate"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+Content-Type: application/json
+
+{  
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener",  
+    "conditions": {  
+        "applications": {  
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ]  
+        }  
+    },  
+    "priority": 500,  
+    "handler": {  
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler", 
+        "smsOptions": { 
+            "includeAdditionalRegions": [222, 998], 
+            "excludeRegions": [] 
+        }
+    }
+} 
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-activate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-activate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-activate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-activate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-activate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-activate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-activate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{ 
+    "@odata.context": "https://microsoft.graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity", 
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener", 
+    "id": "2be3336b-e3b4-44f3-9128-b6fd9ad39bb8", 
+    "conditions": {  
+        "applications": { 
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ] 
+        }   
+    },   
+    "handler": {   
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler ",  
+        "smsOptions": { 
+            "includeAdditionalRegions": [222, 998], 
+            "excludeRegions": [] 
+        }, 
+    }
+} 
+```
+
+
+### Example 4: Deactivate telecom in select regions
+
+#### Request
+The following example shows a request that deactivates telecom in region codes 1001, 99, and 777.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onPhoneMethodLoadStartExternalUsersAuthHandler_deactivate"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+Content-Type: application/json
+  
+{  
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener",  
+    "conditions": {  
+        "applications": {  
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ]  
+        }  
+    },  
+    "priority": 500,  
+    "handler": {  
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler",
+        "smsOptions": { 
+            "includeAdditionalRegions": [], 
+            "excludeRegions": [1001, 99, 777] 
+        }
+    } 
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-deactivate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-deactivate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-deactivate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-deactivate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-deactivate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-deactivate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-deactivate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{ 
+    "@odata.context": "https://microsoft.graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity", 
+    "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener", 
+    "id": "2be3336b-e3b4-44f3-9128-b6fd9ad39bb8", 
+    "conditions": {  
+        "applications": { 
+            "includeApplications": [  
+                "3dfff01b-0afb-4a07-967f-d1ccbd81102a"  
+            ] 
+        }   
+    },   
+    "handler": {  
+        "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler",
+        "smsOptions": { 
+            "includeAdditionalRegions": [], 
+            "excludeRegions": [1001, 99, 777] 
+        }
     }
 }
 ```

@@ -8,16 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new Device
 {
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"extensionAttributes" , new 
+			"extensionAttributes" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				ExtensionAttribute1 = "BYOD-Device",
-			}
+				{
+					"extensionAttribute1", new UntypedString("BYOD-Device")
+				},
+			})
 		},
 	},
 };

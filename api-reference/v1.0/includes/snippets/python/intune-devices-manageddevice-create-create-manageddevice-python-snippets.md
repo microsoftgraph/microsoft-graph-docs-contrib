@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.managed_device import ManagedDevice
+from msgraph.generated.models.managed_device_owner_type import ManagedDeviceOwnerType
 from msgraph.generated.models.device_action_result import DeviceActionResult
+from msgraph.generated.models.action_state import ActionState
+from msgraph.generated.models.compliance_state import ComplianceState
+from msgraph.generated.models.management_agent_type import ManagementAgentType
+from msgraph.generated.models.device_enrollment_type import DeviceEnrollmentType
+from msgraph.generated.models.device_registration_state import DeviceRegistrationState
+from msgraph.generated.models.device_management_exchange_access_state import DeviceManagementExchangeAccessState
+from msgraph.generated.models.device_management_exchange_access_state_reason import DeviceManagementExchangeAccessStateReason
 from msgraph.generated.models.configuration_manager_client_enabled_features import ConfigurationManagerClientEnabledFeatures
 from msgraph.generated.models.device_health_attestation_state import DeviceHealthAttestationState
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+from msgraph.generated.models.managed_device_partner_reported_health_state import ManagedDevicePartnerReportedHealthState
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ManagedDevice(
 	odata_type = "#microsoft.graph.managedDevice",
 	user_id = "User Id value",

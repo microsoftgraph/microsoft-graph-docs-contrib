@@ -5,6 +5,7 @@ author: "gregkmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Update externalAuthenticationMethodConfiguration
@@ -21,11 +22,7 @@ Update the properties of an [externalAuthenticationMethodConfiguration](../resou
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "externalauthenticationmethodconfiguration-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "externalauthenticationmethodconfiguration_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/externalauthenticationmethodconfiguration-update-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
@@ -54,9 +51,10 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|authenticationMethodState|The state of the method in the policy. The possible values are: `enabled`, `disabled`. |
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups representing the users that should be excluded from the policy. |
 |appId|String|**appId** for the app registration in Microsoft Entra ID representing the integration with the external provider.|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups representing the users that should be excluded from the policy. |
+|includeTargets|[authenticationMethodTarget](../resources/authenticationMethodTarget.md) collection|Groups representing the users that are included in the policy and that can use the external authentication method. |
+|state|authenticationMethodState|The state of the method in the policy. The possible values are: `enabled`, `disabled`. |
 |openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|Object representing the required settings for the OIDC request to the external provider.|
 
 

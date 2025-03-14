@@ -2,9 +2,10 @@
 title: "androidForWorkEnrollmentTarget enum type"
 description: "Android for Work device management targeting type for the account"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # androidForWorkEnrollmentTarget enum type

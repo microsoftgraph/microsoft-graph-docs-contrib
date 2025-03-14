@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # membersAddedEventMessageDetail resource type
@@ -28,7 +29,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |visibleHistoryStartDateTime|DateTimeOffset|The timestamp that denotes how far back a conversation's history is shared with the conversation members.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.membersAddedEventMessageDetail",

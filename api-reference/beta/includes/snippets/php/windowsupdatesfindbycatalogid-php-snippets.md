@@ -5,18 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Admin\Windows\Updates\Products\Microsoft\Graph\WindowsUpdates\FindByKbNumber(kbNumber={kbNumber})\FindByKbNumberWithKbNumberRequestBuilderGetRequestConfiguration;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Admin\Windows\Updates\Products\Microsoft\Graph\WindowsUpdates\FindByCatalogId(catalogID='{catalogID}')\FindByCatalogIdWithCatalogIDRequestBuilderGetRequestConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new MicrosoftFindByKbNumberWithKbNumberRequestBuilderGetRequestConfiguration();
-$queryParameters = MicrosoftFindByKbNumberWithKbNumberRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["revisions(\$expand=catalogEntry,knowledgeBaseArticle)","knownIssues"];
+$requestConfiguration = new MicrosoftFindByCatalogIdWithCatalogIDRequestBuilderGetRequestConfiguration();
+$queryParameters = MicrosoftFindByCatalogIdWithCatalogIDRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->expand = ["revisions(\$expand=catalogEntry,knowledgeBaseArticle)","knownIssues(\$expand=originatingKnowledgeBaseArticle,resolvingKnowledgeBaseArticle)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->admin()->windows()->updates()->products()->microsoftGraphWindowsUpdatesFindByKbNumberWithKbNumber(1)->get($requestConfiguration)->wait();
+$result = $graphServiceClient->admin()->windows()->updates()->products()->microsoftGraphWindowsUpdatesFindByCatalogIdWithCatalogID('{catalogID}', )->get($requestConfiguration)->wait();
 
 ```

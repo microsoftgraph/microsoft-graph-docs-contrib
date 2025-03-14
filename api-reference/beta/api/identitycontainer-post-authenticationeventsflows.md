@@ -5,6 +5,7 @@ author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/09/2024
 ---
 
 # Create authenticationEventsFlow
@@ -53,7 +54,7 @@ You can specify the following properties when creating an **authenticationEvents
 |priority|Int32|Optional. The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. |
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke when an authentication flow is ready to be initiated. |
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked.|
-|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Optional. The configuration for what to invoke when attributes are ready to be collected from the user.|
+|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Optional. The configuration for what to invoke when attributes are ready to be collected from the user. To configure this property, you must specify both **attributes** and **onAttributeCollectionPage** > **views** objects.|
 |onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|Optional. The configuration for what to invoke during user creation.|
 
 ## Response
@@ -62,9 +63,7 @@ If successful, this method returns a `201 Created` response code and a JSON repr
 
 ## Examples
 
-<a name='example-1-create-a-basic-external-identities-sign-up-and-sign-in-user-flow-on-an-azure-ad-customer-tenant'></a>
-
-### Example 1: Create a basic External Identities sign-up and sign-in user flow on a Microsoft Entra customer tenant
+### Example 1: Create a basic External Identities sign-up and sign-in user flow in an external tenant
 
 #### Request
 The following example shows a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
@@ -256,9 +255,7 @@ Content-Type: application/json
 }
 ```
 
-<a name='example-2-create-a-basic-external-identities-sign-up-and-sign-in-user-flow-with-an-attached-application-on-an-azure-ad-customer-tenant'></a>
-
-### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application on a Microsoft Entra customer tenant
+### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application in an external tenant
 
 #### Request
 The following example shows a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.

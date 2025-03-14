@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ruoyingl"
 ms.subservice: excel
 doc_type: apiPageType
+ms.date: 05/10/2024
 ---
 
 # Add Named Item FormulaLocal

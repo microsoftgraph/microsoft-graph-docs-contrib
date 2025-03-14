@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
 description: "Apply best practices when you use the Microsoft Graph connectors SDK."
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph connectors SDK best practices
@@ -125,7 +126,7 @@ The following are examples of how to set these types:
         DateTimeValue = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.UtcNow)
     };
 
-    // Setting boolean value in generic type
+    // Setting Boolean value in generic type
     GenericType boolType = new GenericType
     {
         BoolValue = true

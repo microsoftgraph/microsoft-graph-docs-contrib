@@ -2,9 +2,10 @@
 title: "deviceManagementCertificationAuthority enum type"
 description: "Device Management Certification Authority Types."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementCertificationAuthority enum type

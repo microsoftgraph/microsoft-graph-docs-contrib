@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "iamgirishck"
 ms.subservice: "outlook"
+ms.date: 07/23/2024
 ---
 
 # Location resource type
@@ -42,8 +43,13 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
 | uniqueId | String | For internal use only.|
 | uniqueIdType | String | For internal use only. |
 
+## Relationships
+
+None.
 
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

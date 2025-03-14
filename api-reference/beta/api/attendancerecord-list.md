@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 05/18/2024
 ---
 
 # List attendanceRecords
@@ -37,7 +38,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecord
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
-To get attendance records of a webinar session's attendance report:
+To get attendance records of a webinar session's attendance report with delegated and app permission:
 <!-- {"blockType": "ignored"}-->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
@@ -365,7 +366,11 @@ Content-Type: application/json
           "leaveDateTime": "2021-10-05T04:43:49.7702391Z",
           "durationInSeconds": 322
         }
-      ]
+      ],
+      "externalRegistrationInformation": {
+        "referrer": "Facebook",
+        "registrationId": "myExternalRegistrationId"
+      },
     },
     {
       "emailAddress": "lisa.adkins@contoso.com",
@@ -383,7 +388,11 @@ Content-Type: application/json
           "leaveDateTime": "2021-10-04T23:18:57.5639338Z",
           "durationInSeconds": 314
         }
-      ]
+      ],
+      "externalRegistrationInformation": {
+        "referrer": "Facebook",
+        "registrationId": "anotherExternalRegistrationId"
+      },
     }
   ]
 }

@@ -5,11 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ChatMessage;
-use Microsoft\Graph\Generated\Models\ItemBody;
-use Microsoft\Graph\Generated\Models\ChatMessageAttachment;
-use Microsoft\Graph\Generated\Models\ChatMessageHostedContent;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageAttachment;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageHostedContent;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -24,7 +25,7 @@ $attachmentsChatMessageAttachment1 = new ChatMessageAttachment();
 $attachmentsChatMessageAttachment1->setId('d7ddbf876ae340c3a03bada395ec7da7');
 $attachmentsChatMessageAttachment1->setContentType('application/vnd.microsoft.teams.messaging-announcementBanner');
 $attachmentsChatMessageAttachment1->setContentUrl(null);
-$attachmentsChatMessageAttachment1->setContent('{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}');
+$attachmentsChatMessageAttachment1->setContent('{\"title\":\"\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/2/$value\",\"imageContentType\":\"image/jpg\"},\"croppedImage\":{\"source\":\"../hostedContents/1/$value\"}}}}');
 $attachmentsChatMessageAttachment1->setName(null);
 $attachmentsChatMessageAttachment1->setThumbnailUrl(null);
 $attachmentsArray []= $attachmentsChatMessageAttachment1;

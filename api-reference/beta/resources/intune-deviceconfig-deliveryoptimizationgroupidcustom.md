@@ -2,9 +2,10 @@
 title: "deliveryOptimizationGroupIdCustom resource type"
 description: "Custom group id type"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deliveryOptimizationGroupIdCustom resource type

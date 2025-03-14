@@ -7,6 +7,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # generalLedgerEntry resource type
@@ -21,7 +22,7 @@ Represents a general ledger entry in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description|
 |:-------------|:-------------|:----------|
-|[Get generalLedgerEntry](../api/dynamics-generalledgerentries-get.md)|generalLedgerEntry|Get a general ledger entry object.|
+|[Get general ledger entries](../api/dynamics-generalledgerentries-get.md)|generalLedgerEntry|Get a general ledger entry object.|
 
 ## Properties
 | Property	         | Type	                 |Description                                  |
@@ -43,7 +44,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json

@@ -5,6 +5,7 @@ author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamworkLoginStatus resource type
@@ -23,8 +24,11 @@ Represents Microsoft Teams, Skype for Business, and Exchange sign-in status for 
 |teamsConnection|[teamworkConnection](../resources/teamworkconnection.md)|Information about the Teams connection.|
 
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkLoginStatus"

@@ -6,15 +6,16 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 07/24/2024
 ---
 
 # Delete a user
 
 Namespace: microsoft.graph
 
-Delete user.  
+Delete a [user](../resources/user.md) object.  
 
-When deleted, user resources are moved to a temporary container and can be restored within 30 days.  After that time, they are permanently deleted.  To learn more, see [deletedItems](../resources/directory.md).
+When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them. The user is also restored to any groups they were a member of. After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed. To manage the deleted user object, see [deletedItems](../resources/directory.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

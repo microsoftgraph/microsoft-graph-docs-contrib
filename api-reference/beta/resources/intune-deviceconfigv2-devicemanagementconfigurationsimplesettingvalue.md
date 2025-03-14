@@ -2,9 +2,10 @@
 title: "deviceManagementConfigurationSimpleSettingValue resource type"
 description: "Simple setting value"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementConfigurationSimpleSettingValue resource type

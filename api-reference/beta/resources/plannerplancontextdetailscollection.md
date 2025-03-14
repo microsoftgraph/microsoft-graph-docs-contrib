@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # plannerPlanContextDetailsCollection resource type
@@ -21,8 +22,13 @@ The **plannerPlanContextDetailsCollection** resource represents the collection o
 Properties of an open type can be defined by the client. In this case, the client should use a distinctive identifier that represents the external context as the property name. 
 The property values must be [plannerPlanContextDetails](plannerplancontextdetails.md) objects. Based on OData, property names in open types cannot contain the following characters: `.`, `:`, `@`, `%`. These characters need to be encoded with URL encoding format. To remove an item in the favorites list, the value needs to be removed from the [plannerPlanContextCollection](plannerplancontextcollection.md) collection instead, which will automatically remove the entry in this object.
 
+## Relationships
+
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

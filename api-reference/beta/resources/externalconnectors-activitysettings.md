@@ -5,6 +5,7 @@ author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # activitySettings resource type
@@ -24,7 +25,7 @@ Collects configurable settings related to activities involving connector content
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalConnectors.activitySettings"

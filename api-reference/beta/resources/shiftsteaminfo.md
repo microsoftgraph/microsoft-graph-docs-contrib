@@ -5,6 +5,7 @@ author: shanemalone
 ms.localizationpriority: high
 ms.subservice: teams
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # shiftsTeamInfo resource type
@@ -20,7 +21,11 @@ Represents the details of a team with a [schedule](schedule.md).
 | Property             | Type                          | Description            |
 | -------------------- | ----------------------------- | ---------------------- |
 | displayName          | `string`                      | The display name for the `team`. Required.      |
-| teamId    | `string`                      | ID of the `team`.  
+| teamId    | `string`                      | ID of the `team`.  |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

@@ -5,6 +5,7 @@ author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 08/28/2024
 ---
 
 # Get educationSubmission
@@ -39,7 +40,9 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submi
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+You can use `$orderby` with the following properties of the [educationSubmission](../resources/educationsubmission.md) resource: **excusedDateTime**, **reassignedDateTime**, **returnedDateTime**, **status**, **submittedDateTime**, and **unsubmittedDateTime**.
 
 ## Request headers
 | Header       | Value |

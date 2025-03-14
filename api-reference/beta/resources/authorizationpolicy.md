@@ -7,6 +7,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # authorizationPolicy resource type
@@ -21,8 +22,8 @@ Represents a policy that can control Microsoft Entra authorization settings. It'
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get authorizationPolicy](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | Read the authorizationPolicy object. |
-| [Update authorizationPolicy](../api/authorizationpolicy-update.md) | None | Update the authorizationPolicy object. |
+| [Get](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | Read the authorizationPolicy object. |
+| [Update](../api/authorizationpolicy-update.md) | None | Update the authorizationPolicy object. |
 
 ## Properties  
 | Property | Type | Description |

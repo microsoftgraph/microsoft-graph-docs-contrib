@@ -3,8 +3,9 @@ title: "estimateStatisticsOperation resource type"
 description: "Represents the operation that handles estimating the count and size of a source collection."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # estimateStatisticsOperation resource type
@@ -48,7 +49,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -2,9 +2,10 @@
 title: "win32LobAppAutoUpdateSettings resource type"
 description: "Contains properties used to perform the auto-update of an application."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # win32LobAppAutoUpdateSettings resource type
@@ -20,7 +21,7 @@ Contains properties used to perform the auto-update of an application.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|autoUpdateSupersededApps|[win32LobAppAutoUpdateSupersededApps](../resources/intune-shared-win32lobappautoupdatesupersededapps.md)|The auto-update superseded apps setting for the app assignment. Possible values are notConfigured and enabled. Default value is notConfigured. Possible values are: `notConfigured`, `enabled`, `unknownFutureValue`.|
+|autoUpdateSupersededApps|[win32LobAppAutoUpdateSupersededApps](../resources/intune-policyset-win32lobappautoupdatesupersededapps.md)|The auto-update superseded apps setting for the app assignment. Possible values are notConfigured and enabled. Default value is notConfigured. Possible values are: `notConfigured`, `enabled`, `unknownFutureValue`.|
 
 ## Relationships
 None

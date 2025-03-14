@@ -7,6 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\VppToken;
+use Microsoft\Graph\Generated\Models\VppTokenAccountType;
+use Microsoft\Graph\Generated\Models\VppTokenState;
+use Microsoft\Graph\Generated\Models\VppTokenSyncStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

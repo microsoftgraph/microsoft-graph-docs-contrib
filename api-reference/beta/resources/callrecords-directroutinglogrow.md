@@ -5,6 +5,7 @@ author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # directRoutingLogRow resource type
@@ -19,7 +20,7 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md) collection| List **directRoutingLogRow** objects for a call record. |
+| [List direct routing calls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md) collection| List **directRoutingLogRow** objects for a call record. |
 
 ## Properties
 

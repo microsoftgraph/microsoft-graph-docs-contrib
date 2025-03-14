@@ -5,6 +5,7 @@ author: "malabikaroy"
 ms.localizationpriority: medium
 ms.subservice: "viva-learning"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # learningContent resource type
@@ -19,10 +20,10 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List learningContents](../api/learningprovider-list-learningcontents.md)|[learningContent](../resources/learningcontent.md) collection|Get a list of the [learningContent](../resources/learningcontent.md) resources and their properties.|
-|[Get learningContent](../api/learningcontent-get.md)|[learningContent](../resources/learningcontent.md)|Get the specified [learningContent](../resources/learningcontent.md) resource which represents the metadata of the specified provider's ingested content.|
-|[Update learningContent](../api/learningcontent-update.md)|[learningContent](../resources/learningcontent.md)|Update the properties of a [learningContent](../resources/learningcontent.md) object.|
-|[Delete learningContent](../api/learningprovider-delete-learningcontents.md)|None|Delete a [learningContent](../resources/learningcontent.md) object.|
+|[List](../api/learningprovider-list-learningcontents.md)|[learningContent](../resources/learningcontent.md) collection|Get a list of the [learningContent](../resources/learningcontent.md) resources and their properties.|
+|[Get](../api/learningcontent-get.md)|[learningContent](../resources/learningcontent.md)|Get the specified [learningContent](../resources/learningcontent.md) resource which represents the metadata of the specified provider's ingested content.|
+|[Update](../api/learningcontent-update.md)|[learningContent](../resources/learningcontent.md)|Update the properties of a [learningContent](../resources/learningcontent.md) object.|
+|[Delete](../api/learningprovider-delete-learningcontents.md)|None|Delete a [learningContent](../resources/learningcontent.md) object.|
 
 ## Properties
 
@@ -63,7 +64,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

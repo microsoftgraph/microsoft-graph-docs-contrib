@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/18/2024
 ---
 
 # virtualEventWebinar: getByUserRole
@@ -126,7 +127,10 @@ Content-Type: application/json
       "id": "88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33",
       "status": "published",
       "displayName": "The Impact of Tech on Our Lives",
-      "description": "Discusses how technology has changed the way we communicate, work, and interact with each other.",
+      "description": {
+        "contentType": "text",
+        "content": "Discusses how technology has changed the way we communicate, work, and interact with each other."
+      },
       "startDateTime": {
         "dateTime": "2023-03-30T10:00:00",
         "timeZone": "PacificSt"
@@ -151,6 +155,15 @@ Content-Type: application/json
           "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
           "displayName": "Kenneth Brown",
           "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+        }
+      ],
+      "settings": {
+        "isAttendeeEmailNotificationEnabled": false
+      },
+      "externalEventInformation": [
+        {
+          "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
+          "externalEventId": "myExternalEventId"
         }
       ]
     }

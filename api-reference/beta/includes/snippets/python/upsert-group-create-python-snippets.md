@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.groups(unique_name='{unique_name}').groups_with_unique_name_request_builder import GroupsWithUniqueNameRequestBuilder
-from msgraph.generated.models.group import Group
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.groups(unique_name='{unique_name}').groups_with_unique_name_request_builder import GroupsWithUniqueNameRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.models.group import Group
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Group(
 	description = "Self help community for golf",
 	display_name = "Golf Assist",
@@ -21,7 +21,7 @@ request_body = Group(
 	security_enabled = False,
 )
 
-request_configuration = GroupsWithUniqueNameRequestBuilder.GroupsWithUniqueNameRequestBuilderPatchRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "create-if-missing")
 
 

@@ -2,9 +2,10 @@
 title: "List userExperienceAnalyticsBatteryHealthModelPerformances"
 description: "List properties and relationships of the userExperienceAnalyticsBatteryHealthModelPerformance objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List userExperienceAnalyticsBatteryHealthModelPerformances
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 668
+Content-Length: 788
 
 {
   "value": [
@@ -72,6 +73,8 @@ Content-Length: 668
       "activeDevices": 13,
       "model": "Model value",
       "manufacturer": "Manufacturer value",
+      "deviceModelName": "Device Model Name value",
+      "deviceManufacturerName": "Device Manufacturer Name value",
       "averageMaxCapacityPercentage": 12,
       "averageEstimatedRuntimeInMinutes": 0,
       "averageBatteryAgeInDays": 7,

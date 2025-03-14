@@ -2,9 +2,10 @@
 title: "deviceManagementSubscriptionState enum type"
 description: "Tenant mobile device management subscription state."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementSubscriptionState enum type

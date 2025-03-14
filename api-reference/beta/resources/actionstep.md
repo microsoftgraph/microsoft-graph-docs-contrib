@@ -5,6 +5,7 @@ author: "ddeeps2610"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # actionStep resource type
@@ -26,7 +27,7 @@ Represents a single action to take toward completing a [recommendation](../resou
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.actionStep"

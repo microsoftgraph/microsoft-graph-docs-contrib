@@ -2,9 +2,10 @@
 title: "deviceManagementConfigurationSimpleSettingInstance resource type"
 description: "Simple setting instance"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementConfigurationSimpleSettingInstance resource type
@@ -25,7 +26,7 @@ Inherits from [deviceManagementConfigurationSettingInstance](../resources/intune
 |:---|:---|:---|
 |settingDefinitionId|String|Setting Definition Id Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
-|simpleSettingValue|[deviceManagementConfigurationSimpleSettingValue](../resources/intune-shared-devicemanagementconfigurationsimplesettingvalue.md)|Simple setting instance value|
+|simpleSettingValue|[deviceManagementConfigurationSimpleSettingValue](../resources/intune-mam-devicemanagementconfigurationsimplesettingvalue.md)|Simple setting instance value|
 
 ## Relationships
 None

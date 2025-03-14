@@ -2,9 +2,10 @@
 title: "macOSSystemExtension resource type"
 description: "Represents a specific macOS system extension."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # macOSSystemExtension resource type

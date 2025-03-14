@@ -5,6 +5,7 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # printDocument resource type
@@ -26,12 +27,14 @@ Represents a document being printed.
 |displayName|String|The document's name. Read-only.|
 |id|String|The document's identifier. Read-only.|
 |size|Int64|The document's size in bytes. Read-only.|
+|uploadedDateTime|DateTimeOffset|The time the document was uploaded. Read-only|
+|downloadedDateTime|DateTimeOffset|The time the document was downloaded. Read-only|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

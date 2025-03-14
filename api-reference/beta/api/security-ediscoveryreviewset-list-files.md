@@ -3,8 +3,9 @@ title: "List ediscoveryFiles"
 description: "Get a list of the ediscoveryFile objects and their properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # List ediscoveryFiles

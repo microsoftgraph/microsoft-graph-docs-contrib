@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\BookingAppointment;
-use Microsoft\Graph\Generated\Models\Location;
-use Microsoft\Graph\Generated\Models\PhysicalAddress;
-use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
-use Microsoft\Graph\Generated\Models\BookingReminder;
-use Microsoft\Graph\Generated\Models\BookingCustomerInformationBase;
-use Microsoft\Graph\Generated\Models\BookingCustomerInformation;
-use Microsoft\Graph\Generated\Models\OutlookGeoCoordinates;
-use Microsoft\Graph\Generated\Models\BookingQuestionAnswer;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\BookingAppointment;
+use Microsoft\Graph\Beta\Generated\Models\Location;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\Generated\Models\BookingInvoiceStatus;
+use Microsoft\Graph\Beta\Generated\Models\BookingPriceType;
+use Microsoft\Graph\Beta\Generated\Models\BookingReminder;
+use Microsoft\Graph\Beta\Generated\Models\BookingReminderRecipients;
+use Microsoft\Graph\Beta\Generated\Models\BookingCustomerInformationBase;
+use Microsoft\Graph\Beta\Generated\Models\BookingCustomerInformation;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddressType;
+use Microsoft\Graph\Beta\Generated\Models\OutlookGeoCoordinates;
+use Microsoft\Graph\Beta\Generated\Models\BookingQuestionAnswer;
+use Microsoft\Graph\Beta\Generated\Models\AnswerInputType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

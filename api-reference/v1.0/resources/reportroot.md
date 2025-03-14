@@ -4,6 +4,7 @@ description: Represents a container for Microsoft Entra and Microsoft 365 report
 author: sarahwxy
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 10/09/2024
 ---
 
 # reportRoot resource type
@@ -261,7 +262,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

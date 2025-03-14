@@ -3,8 +3,9 @@ title: "List sensorDevices"
 description: "Get a list of all workplace sensor devices created for a tenant."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # List sensorDevices
@@ -49,7 +50,7 @@ This method supports the `$filter`, `$top`, `$select`, and `$skipToken` [OData q
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

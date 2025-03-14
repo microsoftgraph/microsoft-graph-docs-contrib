@@ -17,7 +17,7 @@ import (
 
 requestBody := graphmodels.NewUser()
 additionalData := map[string]interface{}{
-extkmpdyld2_graphLearnCourses := graphmodels.New()
+extkmpdyld2_graphLearnCourses := graph.New()
 courseType := "Instructor-led"
 extkmpdyld2_graphLearnCourses.SetCourseType(&courseType) 
 	courseId := null

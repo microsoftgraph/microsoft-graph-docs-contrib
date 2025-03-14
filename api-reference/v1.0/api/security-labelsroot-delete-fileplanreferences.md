@@ -3,8 +3,9 @@ title: "Delete filePlanReferenceTemplate"
 description: "Delete a filePlanReferenceTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 06/22/2024
 ---
 
 # Delete filePlanReferenceTemplate
@@ -32,7 +33,7 @@ DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/filePlanR
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

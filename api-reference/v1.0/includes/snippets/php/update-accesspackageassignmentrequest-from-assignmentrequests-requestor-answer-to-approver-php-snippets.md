@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\AccessPackageAssignmentRequest;
+use Microsoft\Graph\Generated\Models\AccessPackageRequestType;
 use Microsoft\Graph\Generated\Models\AccessPackageAnswer;
 use Microsoft\Graph\Generated\Models\AccessPackageAnswerString;
 use Microsoft\Graph\Generated\Models\AccessPackageMultipleChoiceQuestion;
@@ -18,7 +19,6 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentRequest();
 $requestBody->setOdataType('#microsoft.graph.accessPackageAssignmentRequest');
-$requestBody->setId('7a6ab703-0780-4b37-8445-81f679b2d75c');
 $requestBody->setRequestType(new AccessPackageRequestType('adminUpdate'));
 $answersAccessPackageAnswer1 = new AccessPackageAnswerString();
 $answersAccessPackageAnswer1->setOdataType('#microsoft.graph.accessPackageAnswerString');

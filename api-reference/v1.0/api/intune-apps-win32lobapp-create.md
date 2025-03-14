@@ -2,9 +2,10 @@
 title: "Create win32LobApp"
 description: "Create a new win32LobApp object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create win32LobApp

@@ -5,6 +5,7 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 10/04/2024
 ---
 
 # printOperationStatus resource type
@@ -29,8 +30,14 @@ Represents the current status of a long-running Universal Print operation.
 |failed|3|The operation failed.|
 |unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
 
+## Relationships
+
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printOperationStatus"

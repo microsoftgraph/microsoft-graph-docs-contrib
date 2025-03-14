@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AcquireAccessTokenPostRequestBody;
+use Microsoft\Graph\Generated\Applications\Item\Synchronization\AcquireAccessToken\AcquireAccessTokenPostRequestBody;
 use Microsoft\Graph\Generated\Models\SynchronizationSecretKeyStringValuePair;
 
 

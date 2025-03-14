@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\CalendarPermission;
 use Microsoft\Graph\Generated\Models\EmailAddress;
+use Microsoft\Graph\Generated\Models\CalendarRoleType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

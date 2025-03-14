@@ -5,6 +5,7 @@ author: "simonhult"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 04/22/2024
 ---
 
 # sharingDetail resource type
@@ -25,6 +26,9 @@ Contains the properties of [sharedInsight](insights-shared.md) items.
 | sharedBy      	      | [insightIdentity](insights-insightidentity.md)	    | The user who shared the document.  |
 | sharingReference		  | [resourceReference](insights-resourcereference.md)	    | Reference properties of the document, such as the URL and type of the document. Read-only |
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

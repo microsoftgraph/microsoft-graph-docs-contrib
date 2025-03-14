@@ -5,6 +5,7 @@ author: "payiAzure"
 ms.localizationpriority: medium
 ms.subservice: "service-communications"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # serviceAnnouncementBase resource type

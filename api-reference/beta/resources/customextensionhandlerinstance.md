@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # customExtensionHandlerInstance resource type (deprecated)
@@ -14,9 +15,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used to record the status of  [custom workflow extension](customaccesspackageworkflowextension.md) instance being run on an [access package assignment request](accesspackageassignmentrequest.md).
-
-## Methods
-None
 
 ## Properties
 |Property|Type|Description|
@@ -30,7 +28,7 @@ None
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customExtensionHandlerInstance"

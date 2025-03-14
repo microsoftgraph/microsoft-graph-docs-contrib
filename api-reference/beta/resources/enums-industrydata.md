@@ -5,6 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 author: "mlafleur"
+ms.date: 05/15/2024
 ---
 
 # Industry data enum values
@@ -84,6 +85,13 @@ Enum values for the industry data API in Microsoft Graph.
 | academicSessionExternalId |
 | classCode                 |
 | unknownFutureValue        |
+
+### apiFormat values 
+
+|Member              |
+|:-------------------|
+| oneRoster          |
+| unknownFutureValue |
 
 <!--
 {

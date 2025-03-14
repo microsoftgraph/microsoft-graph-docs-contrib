@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: high
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # plannerPlanContainer resource type
@@ -24,14 +25,14 @@ Microsoft Planner currently supports the container types listed in the following
 |Property|Type|Description|
 |:---|:---|:---|
 |containerId|String|The identifier of the resource that contains the plan. Optional.|
-|type|plannerContainerType| The type of the resource that contains the plan. For supported types, see the previous table. Possible values are: `group`, `unknownFutureValue`, `roster`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`. Optional.|
+|type|plannerContainerType| The type of the resource that contains the plan. For supported types, see the previous table. Possible values are: `group`, `unknownFutureValue`, `roster`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`. Optional.|
 |url|String|The full canonical URL of the container. Optional.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerPlanContainer"

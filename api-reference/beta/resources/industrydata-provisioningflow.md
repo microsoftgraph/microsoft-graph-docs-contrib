@@ -5,6 +5,7 @@ author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # provisioningFlow resource type
@@ -20,9 +21,9 @@ This is an abstract type.
 
 |Method|Return type|Description|
 |:-----|:----------|:----------|
-|[List provisioningFlow objects](../api/industrydata-outboundprovisioningflowset-list-provisioningflows.md)|[microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md) collection|Get a list of the provisioning flow objects and their properties.|
-|[Create provisioningFlow](../api/industrydata-outboundprovisioningflowset-post-provisioningflows.md)|[microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md)|Create a new provisioning flow object.|
-|[Reset provisioningFlow](../api/industrydata-provisioningflow-reset.md)|None|Resets a provisioning flow object.|
+|[List](../api/industrydata-outboundprovisioningflowset-list-provisioningflows.md)|[microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md) collection|Get a list of the provisioning flow objects and their properties.|
+|[Create](../api/industrydata-outboundprovisioningflowset-post-provisioningflows.md)|[microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md)|Create a new provisioning flow object.|
+|[Reset](../api/industrydata-provisioningflow-reset.md)|None|Resets a provisioning flow object.|
 
 ## Properties
 

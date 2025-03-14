@@ -2,9 +2,10 @@
 title: "win32LobAppPublishingConstraints resource type"
 description: "Contains properties for Win32 LOB app publishing constraints."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # win32LobAppPublishingConstraints resource type

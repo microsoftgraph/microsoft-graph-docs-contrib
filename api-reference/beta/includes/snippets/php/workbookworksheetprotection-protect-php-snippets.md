@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ProtectPostRequestBody;
-use Microsoft\Graph\Generated\Models\WorkbookWorksheetProtectionOptions;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\Worksheets\Item\Protection\Protect\ProtectPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\WorkbookWorksheetProtectionOptions;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

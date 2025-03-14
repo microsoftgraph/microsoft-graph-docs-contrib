@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mmast-msft"
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationResource resource type
@@ -30,6 +31,10 @@ This resource stores the common properties across all resource types.
 |displayName|String|Display name of resource.|
 |lastModifiedBy|[identitySet](identityset.md)|Who was the last user to modify the resource?|
 |lastModifiedDateTime|DateTimeOffset|Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

@@ -13,14 +13,14 @@ import (
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
-	  graphgroups(uniquename='{uniquename}') "github.com/microsoftgraph/msgraph-beta-sdk-go/groups(uniquename='{uniquename}')"
+	  graphgroupswithuniquename "github.com/microsoftgraph/msgraph-beta-sdk-go/groupswithuniquename"
 	  //other-imports
 )
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "create-if-missing")
 
-configuration := &graphgroups(uniquename='{uniquename}').Groups(uniqueName='{uniqueName}')RequestBuilderPatchRequestConfiguration{
+configuration := &graphgroupswithuniquename.GroupsWithUniqueNameRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewGroup()

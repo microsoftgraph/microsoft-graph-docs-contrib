@@ -5,6 +5,7 @@ author: "madansr7"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # certificateAuthorityAsEntity resource type
@@ -21,11 +22,11 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List certificateAuthorityAsEntities](../api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md)|[certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) collection|Get a list of the [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) objects and their properties.|
-|[Create certificateAuthorityAsEntity](../api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md)|[certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md)|Create a new [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) object.|
-|[Get certificateAuthorityAsEntity](../api/certificateauthorityasentity-get.md)|[certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md)|Read the properties and relationships of a [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) object.|
-|[Update certificateAuthorityAsEntity](../api/certificateauthorityasentity-update.md)|[certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md)|Update the properties of a [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) object.|
-|[Delete certificateAuthorityAsEntity](../api/certificateauthorityasentity-delete.md)|None|Delete a [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) object.|
+|[List](../api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md)|[certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) collection|Get a list of the [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) objects and their properties.|
+|[Create](../api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md)|[certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md)|Create a new [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) object.|
+|[Get](../api/certificateauthorityasentity-get.md)|[certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md)|Read the properties and relationships of a [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) object.|
+|[Update](../api/certificateauthorityasentity-update.md)|[certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md)|Update the properties of a [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) object.|
+|[Delete](../api/certificateauthorityasentity-delete.md)|None|Delete a [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) object.|
 
 ## Properties
 
@@ -43,7 +44,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -6,6 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
+ms.date: 07/26/2024
 ---
 
 # Update unifiedRoleDefinition
@@ -45,6 +46,8 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "unifiedroledefinition_update_3" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-update-3-permissions.md)]
 
+[!INCLUDE [rbac-role-definition-apis-write](../includes/rbac-for-apis/rbac-role-definition-apis-write.md)]
+
 ## HTTP request
 
 To update a role definition for a device management provider:
@@ -73,7 +76,7 @@ PATCH /roleManagement/cloudPc/roleDefinitions/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|

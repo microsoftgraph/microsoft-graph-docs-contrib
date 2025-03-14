@@ -5,6 +5,7 @@ author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # hostReputation resource type
@@ -21,7 +22,7 @@ Reputation data is important to understanding the trustworthiness of an attack s
 
 | Method                                                       | Return type                                                                        | Description                                                                                                                                                                                                       |
 | :----------------------------------------------------------- | :--------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Get hostReputation](../api/security-host-get-reputation.md) | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) | Read the properties and relationships of a [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) object, for a given [microsoft.graph.security.host](../resources/security-host.md). |
+| [Get host reputation](../api/security-host-get-reputation.md) | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) | Read the properties and relationships of a [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) object, for a given [microsoft.graph.security.host](../resources/security-host.md). |
 
 ## Properties
 
@@ -38,7 +39,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

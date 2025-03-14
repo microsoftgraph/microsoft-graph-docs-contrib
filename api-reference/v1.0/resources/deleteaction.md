@@ -5,6 +5,7 @@ description: The deleteAction object provides information about the deletion of 
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 # deleteAction resource type
 

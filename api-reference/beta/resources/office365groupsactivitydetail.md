@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
+ms.date: 07/26/2024
 ---
 
 # office365GroupsActivityDetail resource type
@@ -38,6 +39,10 @@ Namespace: microsoft.graph
 | sharePointTotalFileCount          | Int64   | The total number of files in SharePoint Group site. |
 | sharePointSiteStorageUsedInBytes  | Int64   | The storage used by SharePoint Group site. |
 | reportPeriod                      | String  | The number of days the report covers.    |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

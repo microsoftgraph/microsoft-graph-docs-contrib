@@ -25,13 +25,13 @@ select := []string {
 	"ManagedDeviceName",
 	"AvgRoundTripTimeInMsP50",
 	"LastConnectionRoundTripTimeInMs",
-	"AvgAvailableBandwidthInMBpsP50",
+	"AvgAvailableBandwidthInMbpsP50",
 	"LastConnectionAvailableBandWidthInMSps",
 	"AvgRemoteSignInTimeInSecP50",
 	"UDPConnectionPercentage",
 	"LastConnectionGateway",
 	"LastConnectionProtocol",
-	"EventDateTime",
+	"LastActiveTime",
 }
 requestBody.SetSelect(select)
 skip := int32(0)

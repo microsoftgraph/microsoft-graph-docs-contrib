@@ -5,11 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\TimeCard;
-use Microsoft\Graph\Generated\Models\TimeCardEvent;
-use Microsoft\Graph\Generated\Models\ItemBody;
-use Microsoft\Graph\Generated\Models\TimeCardBreak;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\TimeCard;
+use Microsoft\Graph\Beta\Generated\Models\TimeCardEvent;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\TimeCardBreak;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -17,7 +18,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new TimeCard();
 $clockInEvent = new TimeCardEvent();
 $clockInEvent->setDateTime(new \DateTime('2019-03-18T00:00:00.000Z'));
-$clockInEvent->setAtApprovedLocation(true);
+$clockInEvent->setIsAtApprovedLocation(true);
 $clockInEventNotes = new ItemBody();
 $clockInEventNotes->setContent('Started late due to traffic in CA 237');
 $clockInEventNotes->setContentType(new BodyType('text'));
@@ -35,7 +36,7 @@ $breaksTimeCardBreak1Notes->setContentType(new BodyType('text'));
 $breaksTimeCardBreak1->setNotes($breaksTimeCardBreak1Notes);
 $breaksTimeCardBreak1Start = new TimeCardEvent();
 $breaksTimeCardBreak1Start->setDateTime(new \DateTime('2019-03-18T02:00:00.000Z'));
-$breaksTimeCardBreak1Start->setAtApprovedLocation(true);
+$breaksTimeCardBreak1Start->setIsAtApprovedLocation(true);
 $breaksTimeCardBreak1StartNotes = new ItemBody();
 $breaksTimeCardBreak1StartNotes->setContent('Reduced break to make up for lost time');
 $breaksTimeCardBreak1StartNotes->setContentType(new BodyType('text'));

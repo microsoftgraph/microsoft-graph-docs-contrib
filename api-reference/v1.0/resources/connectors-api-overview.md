@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "snlraju-msft"
 ms.subservice: "search"
 doc_type: conceptualPageType
+ms.date: 06/04/2024
 ---
 
 # Use the Microsoft Graph connectors API
@@ -24,7 +25,7 @@ Building a custom Microsoft Graph connector involves four steps:
 
 The following is a sequence diagram that illustrates the four steps to build a Microsoft Graph connector.
 
-![A diagram that shows the four steps to build a Microsoft Graph connector](graph-connectors-sequence-diagram.png)
+![A diagram that shows the four steps to build a Microsoft Graph connector](../images/graph-connectors-sequence-diagram.png)
 
 ## Common use cases
 

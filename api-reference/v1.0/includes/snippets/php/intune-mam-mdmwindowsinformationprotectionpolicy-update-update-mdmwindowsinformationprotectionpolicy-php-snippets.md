@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\MdmWindowsInformationProtectionPolicy;
+use Microsoft\Graph\Generated\Models\WindowsInformationProtectionEnforcementLevel;
 use Microsoft\Graph\Generated\Models\WindowsInformationProtectionResourceCollection;
 use Microsoft\Graph\Generated\Models\WindowsInformationProtectionDataRecoveryCertificate;
 use Microsoft\Graph\Generated\Models\WindowsInformationProtectionApp;

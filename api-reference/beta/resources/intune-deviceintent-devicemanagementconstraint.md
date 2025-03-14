@@ -2,9 +2,10 @@
 title: "deviceManagementConstraint resource type"
 description: "Base entity for a constraint"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementConstraint resource type

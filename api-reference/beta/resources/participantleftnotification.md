@@ -5,6 +5,7 @@ author: "yizhenww"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # participantLeftNotification resource type
@@ -23,9 +24,12 @@ Under the [Policy-based recording](/microsoftteams/teams-recording-policy) scena
 | call           | [call](call.md) | The call object that contains details about the participant joining event. |
 | participantId  | String          | ID of the participant under the policy who has left the meeting.        |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

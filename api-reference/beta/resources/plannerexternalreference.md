@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 07/25/2024
 ---
 
 # plannerExternalReference resource type
@@ -26,8 +27,14 @@ The **plannerExternalReference** resource represents the metadata of a reference
 |previewPriority|String|Used to set the relative priority order in which the reference will be shown as a preview on the task.|
 |type|String|Used to describe the type of the reference. Types include: `PowerPoint`, `Word`, `Excel`, `Other`.|
 
+## Relationships
+
+None.
+
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",

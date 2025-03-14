@@ -2,9 +2,10 @@
 title: "auditEvent resource type"
 description: "A class containing the properties for Audit Event."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # auditEvent resource type

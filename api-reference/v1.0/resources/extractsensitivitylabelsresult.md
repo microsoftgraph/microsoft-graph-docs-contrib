@@ -5,6 +5,7 @@ author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # extractSensitivityLabelsResult resource type
@@ -19,7 +20,7 @@ Represents the response format for the [extractSensitivityLabels](../api/driveit
 |labels|[sensitivityLabelAssignment](./sensitivitylabelassignment.md) collection|List of sensitivity labels assigned to a file.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.extractSensitivityLabelsResult"

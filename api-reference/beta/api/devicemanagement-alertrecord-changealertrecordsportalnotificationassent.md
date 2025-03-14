@@ -5,6 +5,7 @@ author: "abbyzhccc"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 05/27/2024
 ---
 
 # alertRecord: changeAlertRecordsPortalNotificationAsSent
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Set the **isPortalNotificationSent** property of all [portal notification](../resources/devicemanagement-portalnotification.md) resources associated with the specified [alertRecord](../resources/devicemanagement-alertrecord.md) to `true`, marking them as sent. A maximum of 100 [alertRecord](../resources/devicemanagement-alertrecord.md) IDs can be received at one time, and a maximum of 100 **portal notification** resources can be changed in the **isPortalNotificationSent** property status.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -98,10 +99,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/alertrecordthischangealertrecordsportalnotificationassent-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/alertrecordthischangealertrecordsportalnotificationassent-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -18,10 +18,10 @@ import (
 
 requestFormat := "text/csv"
 
-requestParameters := &graphreports.ReportsGetTeamsTeamCounts(period='{period}')RequestBuilderGetQueryParameters{
+requestParameters := &graphreports.ReportsGetTeamsTeamCountsWithPeriodRequestBuilderGetQueryParameters{
 	Format: &requestFormat,
 }
-configuration := &graphreports.ReportsGetTeamsTeamCounts(period='{period}')RequestBuilderGetRequestConfiguration{
+configuration := &graphreports.ReportsGetTeamsTeamCountsWithPeriodRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

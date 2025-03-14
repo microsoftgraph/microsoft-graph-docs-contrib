@@ -18,11 +18,11 @@ import (
 
 requestFilter := "members/any(o: o/displayname eq 'Peter Parker')"
 
-requestParameters := &graphusers.UserItemChatsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemChatsRequestBuilderGetQueryParameters{
 	Expand: [] string {"members"},
 	Filter: &requestFilter,
 }
-configuration := &graphusers.UserItemChatsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemChatsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

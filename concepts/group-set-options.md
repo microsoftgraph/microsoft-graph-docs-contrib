@@ -28,6 +28,7 @@ On the [group](/graph/api/resources/group) resource in Microsoft Graph, you can 
 | `SubscribeMembersToCalendarEventsDisabled`   | Members aren't subscribed to the group's calendar events in Outlook.                                                                            |
 | `SubscribeNewGroupMembers`                   | Group members are subscribed to receive group conversations.                                                                                    |
 | `WelcomeEmailDisabled`                       | Welcome emails aren't sent to new members.                                                                                                      |
+| `SkipExchangeInstantOn`                      | For internal use only. DO NOT USE.                                                                                                              |
 
 ## Resource provisioning options
 

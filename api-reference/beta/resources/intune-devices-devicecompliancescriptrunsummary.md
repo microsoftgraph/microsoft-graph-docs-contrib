@@ -2,9 +2,10 @@
 title: "deviceComplianceScriptRunSummary resource type"
 description: "Contains properties for the run summary of a device management script."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceComplianceScriptRunSummary resource type

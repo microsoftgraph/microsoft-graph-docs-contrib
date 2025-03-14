@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Drives\Item\Items\Item\Workbook\Tables\Item\Rows\RowsRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Generated\Models\WorkbookTableRow;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\Tables\Item\Rows\RowsRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\WorkbookTableRow;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

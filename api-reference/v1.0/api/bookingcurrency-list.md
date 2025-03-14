@@ -3,8 +3,9 @@ title: "List bookingCurrencies"
 description: "Get a list of bookingCurrency objects available to a Microsoft Bookings business."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.date: 08/13/2024
 ---
 
 # List bookingCurrencies
@@ -32,7 +33,7 @@ This method supports the $count and $expand [OData query parameters](/graph/quer
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

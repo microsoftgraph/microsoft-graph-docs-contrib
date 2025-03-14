@@ -4,7 +4,7 @@ description: "Use the identity and network access APIs in Microsoft Graph to man
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.topic: concept-article
-ms.reviewer: dkershaw
+ms.reviewer: dkershaw, krbash
 ms.localizationpriority: high
 ms.subservice: entra-id
 ms.custom: scenarios:getting-started
@@ -14,7 +14,9 @@ ms.date: 04/30/2024
 
 # Microsoft Entra identity and network access API overview
 
-The Microsoft Entra family of identity and network access solutions help you to protect any identity and secure access to any resource. You can use the [Microsoft Graph APIs for Microsoft Entra services](/graph/api/resources/identity-network-access-overview) to automate identity and access management tasks and integrate with any application.
+The Microsoft Entra family of identity and network access solutions help you to protect any identity and secure access to any resource. You can use the Microsoft Graph APIs for Microsoft Entra services to automate identity and access management tasks and integrate with any application.
+
+To skip directly to the API reference, see [Microsoft Graph APIs for Microsoft Entra features](/graph/api/resources/identity-network-access-overview).
 
 ## Why use the Microsoft Entra APIs?
 

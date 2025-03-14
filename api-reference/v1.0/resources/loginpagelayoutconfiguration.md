@@ -1,10 +1,11 @@
 ---
 title: "loginPageLayoutConfiguration resource type"
 description: "Contains details of the layout of the sign-in page for a tenant."
-author: "quievey"
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # loginPageLayoutConfiguration resource type

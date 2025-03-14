@@ -2,9 +2,10 @@
 title: "deviceCleanupRulePlatformType enum type"
 description: "Define the platform type for which the admin wants to create the device clean up rule"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # deviceCleanupRulePlatformType enum type

@@ -3,8 +3,9 @@ title: "siteSource resource type"
 description: "The container for a site associated with a custodian."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # siteSource resource type
@@ -41,7 +42,7 @@ The container for a site associated with a [custodian](ediscovery-custodian.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

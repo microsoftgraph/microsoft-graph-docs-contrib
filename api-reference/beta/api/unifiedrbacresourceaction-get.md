@@ -6,6 +6,7 @@ ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # Get unifiedRbacResourceAction
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "unifiedrbacresourceaction_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedrbacresourceaction-get-permissions.md)]
+
+[!INCLUDE [rbac-role-assignment-apis-read](../includes/rbac-for-apis/rbac-role-assignment-apis-read.md)]
 
 ## HTTP request
 

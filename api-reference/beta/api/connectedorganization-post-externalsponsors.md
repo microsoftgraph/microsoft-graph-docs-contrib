@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 11/14/2024
 ---
 
 # Add connected organization external sponsor
@@ -22,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "connectedorganization_post_externalsponsors" } -->
 [!INCLUDE [permissions-table](../includes/permissions/connectedorganization-post-externalsponsors-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-identity-governance-write](../includes/rbac-for-apis/rbac-entitlement-identity-governance-admin-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

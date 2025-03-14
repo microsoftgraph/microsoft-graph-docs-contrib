@@ -4,7 +4,8 @@ description: "The Windows setting API enables users and authorized third parties
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "MS-Arko"
-ms.prod: "cross-device-experiences"
+ms.subservice: "cloud-pc"
+ms.date: 06/11/2024
 ---
 
 # Use the Windows settings API in Microsoft Graph

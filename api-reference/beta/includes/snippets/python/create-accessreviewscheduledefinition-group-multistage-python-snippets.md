@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.access_review_schedule_definition import AccessReviewScheduleDefinition
-from msgraph.generated.models.access_review_query_scope import AccessReviewQueryScope
-from msgraph.generated.models.access_review_stage_settings import AccessReviewStageSettings
-from msgraph.generated.models.access_review_reviewer_scope import AccessReviewReviewerScope
-from msgraph.generated.models.access_review_schedule_settings import AccessReviewScheduleSettings
-from msgraph.generated.models.patterned_recurrence import PatternedRecurrence
-from msgraph.generated.models.recurrence_pattern import RecurrencePattern
-from msgraph.generated.models.recurrence_range import RecurrenceRange
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.access_review_schedule_definition import AccessReviewScheduleDefinition
+from msgraph_beta.generated.models.access_review_query_scope import AccessReviewQueryScope
+from msgraph_beta.generated.models.access_review_stage_settings import AccessReviewStageSettings
+from msgraph_beta.generated.models.access_review_reviewer_scope import AccessReviewReviewerScope
+from msgraph_beta.generated.models.access_review_schedule_settings import AccessReviewScheduleSettings
+from msgraph_beta.generated.models.patterned_recurrence import PatternedRecurrence
+from msgraph_beta.generated.models.recurrence_pattern import RecurrencePattern
+from msgraph_beta.generated.models.recurrence_pattern_type import RecurrencePatternType
+from msgraph_beta.generated.models.recurrence_range import RecurrenceRange
+from msgraph_beta.generated.models.recurrence_range_type import RecurrenceRangeType
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessReviewScheduleDefinition(
 	display_name = "Group Multi-stage Access Review",
 	description_for_admins = "New scheduled access review",

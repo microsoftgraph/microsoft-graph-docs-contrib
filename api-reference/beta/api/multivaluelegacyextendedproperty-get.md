@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: non-product-specific
 author: "SuryaLashmiS"
+ms.date: 04/05/2024
 ---
 
 # Get multiValueLegacyExtendedProperty

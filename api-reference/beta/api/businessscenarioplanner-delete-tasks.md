@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "business-scenarios"
 doc_type: apiPageType
+ms.date: 08/04/2024
 ---
 
 # Delete businessScenarioTask
@@ -39,6 +40,7 @@ DELETE /solutions/businessScenarios/{businessScenarioId}/planner/tasks/{business
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| If-Match  | Last known ETag value for the **businessScenarioTask** to be updated. Required.|
 
 ## Request body
 
@@ -63,6 +65,7 @@ The following example shows a request.
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks/pmc1rS1Io0C3rXQhyXIsNmUAOeIi
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 
 # [C#](#tab/csharp)

@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # unifiedRoleAssignmentSchedule: filterByCurrentUser
@@ -36,7 +37,6 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pr
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

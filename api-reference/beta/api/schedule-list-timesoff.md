@@ -5,6 +5,7 @@ author: "aaku"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/19/2024
 ---
 
 # List timesOff
@@ -24,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "schedule_list_timesoff" } -->
 [!INCLUDE [permissions-table](../includes/permissions/schedule-list-timesoff-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 

@@ -2,9 +2,10 @@
 title: "deviceComplianceSettingState resource type"
 description: "Device compliance setting State for a given device."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceComplianceSettingState resource type

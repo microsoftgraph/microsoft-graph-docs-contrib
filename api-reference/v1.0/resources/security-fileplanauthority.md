@@ -3,8 +3,9 @@ title: "filePlanAuthority resource type"
 description: "Represents the file plan descriptor of type authority applied to a particular retention label."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # filePlanAuthority resource type

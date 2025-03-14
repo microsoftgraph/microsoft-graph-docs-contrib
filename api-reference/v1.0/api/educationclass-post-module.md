@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "v-rmanda"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Create educationModule
@@ -36,7 +37,7 @@ POST /education/classes/{id}/modules
 
 | Header        | Value                       |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

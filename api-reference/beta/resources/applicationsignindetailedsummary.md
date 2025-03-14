@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 07/22/2024
+toc.title: Application sign-in detailed summary (preview)
 ---
 
 # applicationSignInDetailedSummary resource type
@@ -21,8 +23,8 @@ Inherits from [entity](../resources/entity.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List applicationSignInDetailedSummary](../api/reportroot-list-applicationsignindetailedsummary.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) collection | Retrieve **applicationSignInDetailedSummary** objects. |
-| [Get applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Read the properties and relationships of an **applicationSignInDetailedSummary** object. |
+| [List](../api/reportroot-list-applicationsignindetailedsummary.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) collection | Retrieve **applicationSignInDetailedSummary** objects. |
+| [Get](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Read the properties and relationships of an **applicationSignInDetailedSummary** object. |
 
 ## Properties
 | Property     | Type        | Description |
@@ -40,7 +42,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

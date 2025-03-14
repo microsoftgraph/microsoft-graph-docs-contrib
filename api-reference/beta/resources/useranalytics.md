@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madehmer"
 ms.subservice: "insights"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # userAnalytics resource type
@@ -35,7 +36,7 @@ The user's settings and activity statistics.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

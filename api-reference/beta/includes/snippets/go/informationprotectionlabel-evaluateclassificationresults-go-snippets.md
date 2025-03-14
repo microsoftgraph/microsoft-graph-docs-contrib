@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphinformationprotection.InformationProtectionPolicyLabelsEvaluateClassificationResultsRequestBuilderPostRequestConfiguration{
+configuration := &graphinformationprotection.PolicyLabelsEvaluateClassificationResultsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphinformationprotection.NewEvaluateClassificationResultsPostRequestBody()
@@ -32,8 +32,8 @@ contentInfo.SetIdentifier(&identifier)
 state := graphmodels.REST_CONTENTSTATE 
 contentInfo.SetState(&state) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.contentFormat", 
-	"odataType" : "#microsoft.graph.contentState", 
+	"format@odata.type" : "#microsoft.graph.contentFormat", 
+	"state@odata.type" : "#microsoft.graph.contentState", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)

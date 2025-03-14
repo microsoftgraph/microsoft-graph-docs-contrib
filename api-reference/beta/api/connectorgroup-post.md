@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 08/01/2024
 ---
 
 # Create connectorGroup
@@ -41,7 +42,7 @@ The following table lists the properties available for a **connectorGroup**. The
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Indicates the type of hybrid agent. This property is preset by the system.|
 |id|string| Unique identifier for this connectorGroup. Read-only. |
-|isDefault|boolean| Indicates whether the connectorGroup is the default. Only a single connector group can be the default connectorGroup and this is preset by the system. |
+|isDefault|Boolean| Indicates whether the connectorGroup is the default. Only a single connector group can be the default connectorGroup and this is preset by the system. |
 |name|string| The name associated with the connectorGroup. |
 |region|string| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 

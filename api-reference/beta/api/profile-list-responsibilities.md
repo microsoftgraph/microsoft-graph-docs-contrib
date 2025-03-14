@@ -3,8 +3,9 @@ title: "List responsibilities"
 description: "Get the personResponsibilities from the responsibilities navigation property."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List responsibilities

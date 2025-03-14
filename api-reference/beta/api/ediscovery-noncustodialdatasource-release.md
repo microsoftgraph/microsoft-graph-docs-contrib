@@ -3,8 +3,9 @@ title: "noncustodialDataSource: release"
 description: "Releases the non-custodial data source from the case."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # noncustodialDataSource: release

@@ -2,9 +2,10 @@
 title: "tenantAttachRBAC resource type"
 description: "Singleton entity that acts as a container for tenant attach enablement functionality."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # tenantAttachRBAC resource type

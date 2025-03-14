@@ -3,8 +3,9 @@ title: "List ediscoveryNoncustodialDataSources"
 description: "Get a list of ediscoveryNoncustodialDataSource objects."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # List ediscoveryNoncustodialDataSources

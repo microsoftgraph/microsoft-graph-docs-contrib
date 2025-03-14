@@ -2,9 +2,10 @@
 title: "deviceManagementDomainJoinConnector resource type"
 description: "A Domain Join Connector is a connector that is responsible to allocate (and delete) machine account blobs"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceManagementDomainJoinConnector resource type

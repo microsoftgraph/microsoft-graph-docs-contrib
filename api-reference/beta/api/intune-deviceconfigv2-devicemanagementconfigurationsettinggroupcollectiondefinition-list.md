@@ -2,9 +2,10 @@
 title: "List deviceManagementConfigurationSettingGroupCollectionDefinitions"
 description: "List properties and relationships of the deviceManagementConfigurationSettingGroupCollectionDefinition objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/12/2024
 ---
 
 # List deviceManagementConfigurationSettingGroupCollectionDefinitions
@@ -35,6 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/reusableSettings
+GET /deviceManagement/inventorySettings
 GET /deviceManagement/complianceSettings
 GET /deviceManagement/configurationSettings
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions

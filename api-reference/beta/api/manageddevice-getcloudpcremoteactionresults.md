@@ -1,17 +1,21 @@
 ---
-title: "managedDevice: getCloudPcRemoteActionResults"
+title: "managedDevice: getCloudPcRemoteActionResults (deprecated)"
 description: "Check the Cloud PC-specified remote action status for a Cloud PC device."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 06/25/2024
 ---
 
-# managedDevice: getCloudPcRemoteActionResults
+# managedDevice: getCloudPcRemoteActionResults (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [retrieveCloudPcRemoteActionResults](../api/cloudpc-retrievecloudpcremoteactionresults.md) API.
 
 Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device. Cloud PC supports reprovision and resize remote actions.
 
@@ -87,10 +91,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/manageddevice-getcloudpcremoteactionresults-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/manageddevice-getcloudpcremoteactionresults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

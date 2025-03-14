@@ -3,8 +3,9 @@ title: "List lastIndexOperation"
 description: "Get the ediscoveryIndexOperation resources from the lastIndexOperation navigation property."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # List lastIndexOperation

@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ActivatePostRequestBody;
-use Microsoft\Graph\Generated\Models\User;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\IdentityGovernance\LifecycleWorkflows\Workflows\Item\MicrosoftGraphIdentityGovernanceActivate\ActivatePostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\User;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

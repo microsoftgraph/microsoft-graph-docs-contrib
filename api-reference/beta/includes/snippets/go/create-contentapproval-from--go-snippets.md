@@ -25,10 +25,10 @@ requestBody.SetContent(content)
 deploymentSettings := graphmodelswindowsupdates.NewDeploymentSettings()
 requestBody.SetDeploymentSettings(deploymentSettings)
 additionalData := map[string]interface{}{
-schedule := graphmodels.New()
+schedule := graph.New()
 startDateTime := "String (timestamp)"
 schedule.SetStartDateTime(&startDateTime) 
-gradualRollout := graphmodels.New()
+gradualRollout := graph.New()
 endDateTime := "String (timestamp)"
 gradualRollout.SetEndDateTime(&endDateTime) 
 	schedule.SetGradualRollout(gradualRollout)

@@ -17,7 +17,7 @@ import (
 
 requestBody := graphidentitygovernance.NewGetApplicablePolicyRequirementsPostRequestBody()
 additionalData := map[string]interface{}{
-subject := graphmodels.New()
+subject := graph.New()
 objectId := "5acd375c-8acb-45de-a958-fa0dd89259ad"
 subject.SetObjectId(&objectId) 
 	requestBody.SetSubject(subject)

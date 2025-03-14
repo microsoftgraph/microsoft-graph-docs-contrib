@@ -3,8 +3,9 @@ title: "List ediscoveryCases"
 description: "Get a list of the eDiscovery cases"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # List ediscoveryCases

@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # inactiveAwsRoleFinding resource type
@@ -22,9 +23,9 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List inactiveAwsRoleFinding objects](../api/inactiveawsrolefinding-list.md)|[inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) collection|Get a list of the [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) objects and their properties.|
-|[Get inactiveAwsRoleFinding](../api/inactiveawsrolefinding-get.md)|[inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md)|Read the properties and relationships of an [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) object.|
-|[aggregatedSummary](../api/inactiveawsrolefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
+|[List](../api/inactiveawsrolefinding-list.md)|[inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) collection|Get a list of the [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) objects and their properties.|
+|[Get](../api/inactiveawsrolefinding-get.md)|[inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md)|Read the properties and relationships of an [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) object.|
+|[Aggregated summary](../api/inactiveawsrolefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 
 
 ## Properties

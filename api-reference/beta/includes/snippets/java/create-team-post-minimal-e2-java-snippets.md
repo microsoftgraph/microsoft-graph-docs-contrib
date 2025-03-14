@@ -10,7 +10,8 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Team team = new Team();
 team.setDisplayName("My Sample Team");
-team.setDescription("My Sample Team’s Description");
+team.setDescription("My sample team’s description");
+team.setFirstChannelName("My first channel of the sample team");
 LinkedList<ConversationMember> members = new LinkedList<ConversationMember>();
 AadUserConversationMember conversationMember = new AadUserConversationMember();
 conversationMember.setOdataType("#microsoft.graph.aadUserConversationMember");

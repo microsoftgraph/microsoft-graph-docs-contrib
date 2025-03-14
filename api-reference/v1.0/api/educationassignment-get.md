@@ -5,6 +5,7 @@ author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 08/29/2024
 ---
 
 # Get educationAssignment
@@ -33,7 +34,9 @@ GET /education/classes/{id}/assignments/{id}
 ```
 
 ## Optional query parameters
-This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$orderby`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+You can use `$orderby` with the following properties of the [educationAssignment](../resources/educationassignment.md) resource: **assignDateTime**, **assignedDateTime**, **closeDateTime**, **createdDateTime**, **displayName**, **dueDateTime**, **lastModifiedDateTime**, **moduleUrl**, and **status**.
 
 You can use `$expand` with the following navigation properties of the [educationAssignment](../resources/educationassignment.md) resource: **categories**, **resources**, **rubric**, **submissions**, and **gradingCategory**. You can also use `*` to specify all the navigation properties.
 

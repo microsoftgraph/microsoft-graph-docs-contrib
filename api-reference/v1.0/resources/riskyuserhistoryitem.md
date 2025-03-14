@@ -5,6 +5,7 @@ author: "tracyshi"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # riskyUserHistoryItem resource type
@@ -23,7 +24,6 @@ Inherits from [riskyUser](../resources/riskyuser.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List history](../api/riskyuser-list-history.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|Get the riskyUserHistoryItems from the history navigation property.|
-|[Get history](../api/riskyuser-get-riskyuserhistoryitem.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)|Read the properties and relationships of a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -47,7 +47,7 @@ Inherits from [riskyUser](../resources/riskyuser.md).
 |history|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection| The activity related to user risk level change. Inherited from [riskyUser](../resources/riskyuser.md).|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

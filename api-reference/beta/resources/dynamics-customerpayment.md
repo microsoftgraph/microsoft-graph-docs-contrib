@@ -7,6 +7,7 @@ author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # customerPayment resource type
@@ -21,10 +22,10 @@ Represents a customer payment in Dynamics 365 Business Central. A customer payme
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get customerPayment](../api/dynamics-customerpayment-get.md)|[customerPayment](dynamics-customerpayment.md)|Get a customer payment.|
-|[Post customerPayment](../api/dynamics-create-customerpayment.md)|[customerPayment](dynamics-customerpayment.md)|Create a customer payment.|
-|[Patch customerPayment](../api/dynamics-customerpayment-update.md)|[customerPayment](dynamics-customerpayment.md)|Update a customer payment.|
-|[Delete customerPayment](../api/dynamics-customerpayment-delete.md)|None|Delete a customer payment.|
+|[Get customer payment](../api/dynamics-customerpayment-get.md)|[customerPayment](dynamics-customerpayment.md)|Get a customer payment.|
+|[Create customer payment](../api/dynamics-create-customerpayment.md)|[customerPayment](dynamics-customerpayment.md)|Create a customer payment.|
+|[Update customer payment](../api/dynamics-customerpayment-update.md)|[customerPayment](dynamics-customerpayment.md)|Update a customer payment.|
+|[Delete customer payment](../api/dynamics-customerpayment-delete.md)|None|Delete a customer payment.|
 
 ## Properties
 | Property	   | Type	 |Description|

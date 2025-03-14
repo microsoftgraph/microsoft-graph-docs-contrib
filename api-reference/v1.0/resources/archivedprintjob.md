@@ -5,6 +5,7 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # archivedPrintJob resource type
@@ -22,10 +23,14 @@ A record of a "final state" (completed, aborted, or canceled) print job that is 
 |processingState|printJobProcessingState|The print job's final processing state. Read-only.|
 |createdDateTime|DateTimeOffset|The dateTimeOffset when the job was created. Read-only.|
 |acquiredDateTime|DateTimeOffset|The dateTimeOffset when the job was acquired by the printer, if any. Read-only.|
-|completionDateTime|DateTimeOffset|The dateTimeOffset when the job was completed, canceled or aborted. Read-only.|
+|completionDateTime|DateTimeOffset|The dateTimeOffset when the job was completed, canceled, or aborted. Read-only.|
 |acquiredByPrinter|Boolean|True if the job was acquired by a printer; false otherwise. Read-only.|
 |copiesPrinted|Int32|The number of copies that were printed. Read-only.|
 |createdBy|[userIdentity](useridentity.md)|The user who created the print job. Read-only.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

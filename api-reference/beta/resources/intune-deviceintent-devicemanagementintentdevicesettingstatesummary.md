@@ -2,9 +2,10 @@
 title: "deviceManagementIntentDeviceSettingStateSummary resource type"
 description: "Entity that represents device setting state summary for an intent"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementIntentDeviceSettingStateSummary resource type

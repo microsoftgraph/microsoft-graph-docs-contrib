@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # mediaConfig resource type
@@ -21,9 +22,12 @@ An abstract base class that contains the media configuration used to connect to 
 |:---------------|:--------|:----------|
 | removeFromDefaultAudioGroup | Boolean |Remove media from the default audio group.|
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

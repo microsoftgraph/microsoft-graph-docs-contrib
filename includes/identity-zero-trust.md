@@ -1,10 +1,11 @@
 ---
-ms.service: entra-id
+ms.subservice: entra-id
 ms.topic: include
 ---
+
 ## Zero Trust
 
-This feature helps organizations to align their [identities](/security/zero-trust/deploy/identity) with the three guiding principles of a Zero Trust architecture: 
+This feature helps organizations to align their tenants with the three guiding principles of a Zero Trust architecture: 
 
 - Verify explicitly
 - Use least privilege

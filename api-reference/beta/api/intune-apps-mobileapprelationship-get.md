@@ -2,9 +2,10 @@
 title: "Get mobileAppRelationship"
 description: "Read properties and relationships of the mobileAppRelationship object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # Get mobileAppRelationship
@@ -34,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceAppManagement/mobileAppRelationships/{mobileAppRelationshipId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRelationshipId}
 ```
 
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and [mobileAppRelati
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRelationshipId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppRelationships/{mobileAppRelationshipId}
 ```
 
 ### Response
@@ -65,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 366
+Content-Length: 666
 
 {
   "value": {
@@ -75,6 +77,11 @@ Content-Length: 366
     "targetDisplayName": "Target Display Name value",
     "targetDisplayVersion": "Target Display Version value",
     "targetPublisher": "Target Publisher value",
+    "targetPublisherDisplayName": "Target Publisher Display Name value",
+    "sourceId": "Source Id value",
+    "sourceDisplayName": "Source Display Name value",
+    "sourceDisplayVersion": "Source Display Version value",
+    "sourcePublisherDisplayName": "Source Publisher Display Name value",
     "targetType": "parent"
   }
 }

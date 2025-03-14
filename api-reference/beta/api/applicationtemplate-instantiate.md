@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "luleonpla"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.date: 10/25/2024
 ---
 
 # applicationTemplate: instantiate
@@ -15,7 +16,11 @@ Namespace: microsoft.graph
 
 Add an instance of an application from the [Microsoft Entra application gallery](../resources/applicationtemplate.md) into your directory.
 
-The application template with ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` can be used to add a [non-gallery app](/azure/active-directory/manage-apps/add-non-gallery-app) that you can configure different single-sign on (SSO) modes like SAML SSO and password-based SSO.
+For [non-gallery apps](/entra/identity/enterprise-apps/add-application-portal), use an application template with one of the following IDs to configure different single sign-on (SSO) modes like SAML SSO and password-based SSO.
+
+- Global service: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`
+- US government: `4602d0b4-76bb-404b-bca9-2652e1a39c6d`
+- China operated by 21Vianet: `5a532e38-1581-4918-9658-008dc27c1d68`
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -31,16 +36,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /applicationTemplates/{id}/instantiate
+POST /applicationTemplates/{applicationTemplate-id}/instantiate
 ```
-
-To instantiate non-gallery apps, use the `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` for the `{applicationTemplate-id}`.
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -49,6 +52,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |displayName|String|Custom name of the application|
+|serviceManagementReference|String|The service tree ID for this service. Optional.|
 
 ## Response
 
@@ -60,7 +64,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following example shows a request. The request URL specifies `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` as the application template ID. This means the request is instantiating a non-gallery app.
+The following example shows a request. The request URL specifies `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` as the application template ID, which means that the request is instantiating a non-gallery app.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -179,6 +183,10 @@ Content-type: application/json
     }
 }
 ```
+
+## Related content
+
+[Quickstart: Add an enterprise application from the Microsoft Entra gallery](/entra/identity/enterprise-apps/add-application-portal)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

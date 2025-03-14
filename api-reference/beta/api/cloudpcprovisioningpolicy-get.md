@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 08/19/2024
 ---
 
 # Get cloudPcProvisioningPolicy
@@ -137,6 +138,18 @@ Content-Type: application/json
         "type": "hybridAzureADJoin"
       }
     ],
+    "microsoftManagedDesktop": {
+        "managedType": "starterManaged",
+        "profile": null
+    },
+    "autopatch": {
+        "autopatchGroupId": "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
+    },
+    "autopilotConfiguration": {
+        "devicePreparationProfileId": "59e5d3d2-ec68-4bfe-9693-27975b318990",
+        "applicationTimeoutInMinutes": 60,
+        "onFailureDeviceAccessDenied": false
+    },
     "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
@@ -231,6 +244,18 @@ Content-Type: application/json
         "type": "hybridAzureADJoin"
       }
     ],
+    "microsoftManagedDesktop": {
+        "managedType": "starterManaged",
+        "profile": null
+    },
+    "autopatch": {
+        "autopatchGroupId": "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
+    },
+    "autopilotConfiguration": {
+        "devicePreparationProfileId": "59e5d3d2-ec68-4bfe-9693-27975b318990",
+        "applicationTimeoutInMinutes": 60,
+        "onFailureDeviceAccessDenied": false
+    },
     "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",

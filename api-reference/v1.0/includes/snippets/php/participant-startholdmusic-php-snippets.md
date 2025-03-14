@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\StartHoldMusicPostRequestBody;
+use Microsoft\Graph\Generated\Communications\Calls\Item\Participants\Item\StartHoldMusic\StartHoldMusicPostRequestBody;
 use Microsoft\Graph\Generated\Models\MediaPrompt;
 use Microsoft\Graph\Generated\Models\MediaInfo;
 

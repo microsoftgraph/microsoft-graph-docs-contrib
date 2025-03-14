@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 09/18/2024
 ---
 
 # Get timeOffReason
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timeoffreason_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timeoffreason-get-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -34,7 +35,7 @@ GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to customize the response.
+This method doesn't support OData query parameters to customize the response.
 
 ## Request headers
 
@@ -130,7 +131,8 @@ Content-type: application/json
       "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
       "displayName": "John Doe"
     }
-  }
+  },
+  "code": "VacationCode"
 }
 ```
 

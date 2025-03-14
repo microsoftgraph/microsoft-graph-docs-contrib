@@ -2,9 +2,10 @@
 title: "Update windowsManagedDevice"
 description: "Update the properties of a windowsManagedDevice object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update windowsManagedDevice

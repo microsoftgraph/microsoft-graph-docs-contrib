@@ -5,6 +5,7 @@ author: "ningjingbogithub"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 08/16/2024
 ---
 
 # cloudPC: getFrontlineCloudPcAccessState
@@ -101,10 +102,6 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d332
 [!INCLUDE [sample-code](../includes/snippets/php/user-cloudpcgetfrontlinecloudpcaccessstate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/user-cloudpcgetfrontlinecloudpcaccessstate-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/user-cloudpcgetfrontlinecloudpcaccessstate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -127,7 +124,7 @@ Content-Type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#Edm.String",
-    "value": "noLicensesAvailable"
+    "value": "active"
 }
 ```
 
@@ -171,10 +168,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/b
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetfrontlinecloudpcaccessstate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetfrontlinecloudpcaccessstate-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudpcgetfrontlinecloudpcaccessstate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -197,6 +190,6 @@ Content-Type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#Edm.String",
-    "value": "noLicensesAvailable"
+    "value": "active"
 }
 ```

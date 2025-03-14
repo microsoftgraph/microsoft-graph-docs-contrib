@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.subservice: "onenote"
 doc_type: resourcePageType
+ms.date: 06/19/2024
 ---
 
 # sectionGroup resource type

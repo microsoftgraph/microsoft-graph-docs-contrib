@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CreatePostRequestBody;
-use Microsoft\Graph\Generated\Models\PrintCertificateSigningRequest;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Print\Printers\Create\CreatePostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\PrintCertificateSigningRequest;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

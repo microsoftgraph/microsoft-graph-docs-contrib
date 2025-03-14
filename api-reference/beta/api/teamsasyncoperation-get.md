@@ -5,6 +5,7 @@ author: "jecha"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 04/18/2024
 ---
 
 # Get teamsAsyncOperation

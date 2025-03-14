@@ -5,6 +5,7 @@ author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # securityGroupProvisioningFlow resource type
@@ -25,9 +26,9 @@ Inherits from [microsoft.graph.industryData.provisioningFlow](industrydata-provi
 
 | Method                                                                                                  | Return type                                                                                                                         | Description                                                                                                                                                                 |
 | :------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Get securityGroupProvisioningFlow](../api/industrydata-securitygroupprovisioningflow-get.md)           | [microsoft.graph.industryData.securityGroupProvisioningFlow](industrydata-securitygroupprovisioningflow.md)            | Read the properties and relationships of a securitygroupprovisioningflow object. |
-| [Update securityGroupProvisioningFlow](../api/industrydata-securitygroupprovisioningflow-update.md)     | [microsoft.graph.industryData.securityGroupProvisioningFlow](industrydata-securitygroupprovisioningflow.md)            | Update the properties of a securitygroupprovisioningflow object.                 |
-| [Delete securityGroupProvisioningFlow](../api/industrydata-securitygroupprovisioningflow-delete.md)     | None                                                                                                                                | Delete a securitygroupprovisioningflow object.                                   |
+| [Get](../api/industrydata-securitygroupprovisioningflow-get.md)           | [microsoft.graph.industryData.securityGroupProvisioningFlow](industrydata-securitygroupprovisioningflow.md)            | Read the properties and relationships of a securitygroupprovisioningflow object. |
+| [Update](../api/industrydata-securitygroupprovisioningflow-update.md)     | [microsoft.graph.industryData.securityGroupProvisioningFlow](industrydata-securitygroupprovisioningflow.md)            | Update the properties of a securitygroupprovisioningflow object.                 |
+| [Delete](../api/industrydata-securitygroupprovisioningflow-delete.md)     | None                                                                                                                                | Delete a securitygroupprovisioningflow object.                                   |
 
 ## Properties
 

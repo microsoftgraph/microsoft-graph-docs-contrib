@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # encryptedGcpStorageBucketFinding resource type
@@ -21,8 +22,8 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List encryptedGcpStorageBucketFinding objects](../api/encryptedgcpstoragebucketfinding-list.md)|[encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) collection|Get a list of the [encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) objects and their properties.|
-|[Get encryptedGcpStorageBucketFinding](../api/encryptedgcpstoragebucketfinding-get.md)|[encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md)|Read the properties and relationships of an [encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) object.|
+|[List](../api/encryptedgcpstoragebucketfinding-list.md)|[encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) collection|Get a list of the [encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) objects and their properties.|
+|[Get](../api/encryptedgcpstoragebucketfinding-get.md)|[encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md)|Read the properties and relationships of an [encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) object.|
 
 ## Properties
 |Property|Type|Description|

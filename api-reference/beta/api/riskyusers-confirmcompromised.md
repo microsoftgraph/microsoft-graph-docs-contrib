@@ -1,11 +1,13 @@
 ---
-title: riskyUser: confirmCompromised
-description: Confirm a riskyUser object as compromised.
+title: "riskyUser: confirmCompromised"
+description: "Confirm one or more riskyUser objects as compromised."
 author: tracyshi
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
+
 # riskyUser: confirmCompromised
 
 Namespace: microsoft.graph
@@ -24,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskyusers_confirmcompromised" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskyusers-confirmcompromised-permissions.md)]
 
-[!INCLUDE [rbac-identity-protection-apis-write](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
+[!INCLUDE [rbac-identity-protection-apis-write](../includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

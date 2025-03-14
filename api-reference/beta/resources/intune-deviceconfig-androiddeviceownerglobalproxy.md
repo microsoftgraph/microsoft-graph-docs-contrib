@@ -2,9 +2,10 @@
 title: "androidDeviceOwnerGlobalProxy resource type"
 description: "Android Device Owner Global Proxy."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # androidDeviceOwnerGlobalProxy resource type

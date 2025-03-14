@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "outlook"
 author: "SuryaLashmiS"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # itemAttachment resource type

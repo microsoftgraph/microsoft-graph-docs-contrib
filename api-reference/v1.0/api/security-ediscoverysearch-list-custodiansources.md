@@ -3,8 +3,9 @@ title: "List custodianSources"
 description: "Get the list of custodial data sources associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # List custodianSources

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 06/25/2024
 ---
 
 # Update agreement
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "agreement_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agreement-update-permissions.md)]
 
+[!INCLUDE [rbac-tou-apis](../includes/rbac-for-apis/rbac-tou-apis.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -32,7 +35,7 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. Only the following properties are supported for update.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. Only the following properties are supported for update.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|

@@ -6,6 +6,7 @@ author: "swetha-rai"
 ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # authenticationContextClassReference resource type
@@ -18,10 +19,10 @@ Represents a Microsoft Entra authentication context class reference. Authenticat
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List authenticationContextClassReference](../api/conditionalaccessroot-list-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) collection | Get all of the authenticationContextClassReference objects in the organization. |
-| [Create or update authenticationContextClassReference](../api/authenticationcontextclassreference-update.md)) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create or update an authenticationContextClassReference object. |
-| [Get authenticationContextClassReference](../api/authenticationcontextclassreference-get.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Read properties and relationships of a authenticationContextClassReference object. |
-| [Delete authenticationContextClassReference](../api/authenticationcontextclassreference-delete.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Delete an authenticationContextClassReference object. |
+| [List](../api/conditionalaccessroot-list-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) collection | Get all of the authenticationContextClassReference objects in the organization. |
+| [Create or update](../api/authenticationcontextclassreference-update.md)) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create or update an authenticationContextClassReference object. |
+| [Get](../api/authenticationcontextclassreference-get.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Read properties and relationships of a authenticationContextClassReference object. |
+| [Delete](../api/authenticationcontextclassreference-delete.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Delete an authenticationContextClassReference object. |
 
 
 ## Properties

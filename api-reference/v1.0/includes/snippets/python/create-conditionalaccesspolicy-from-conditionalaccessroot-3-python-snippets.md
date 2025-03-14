@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.conditional_access_policy import ConditionalAccessPolicy
+from msgraph.generated.models.conditional_access_policy_state import ConditionalAccessPolicyState
 from msgraph.generated.models.conditional_access_condition_set import ConditionalAccessConditionSet
 from msgraph.generated.models.risk_level import RiskLevel
 from msgraph.generated.models.conditional_access_client_app import ConditionalAccessClientApp
@@ -18,10 +20,10 @@ from msgraph.generated.models.conditional_access_grant_controls import Condition
 from msgraph.generated.models.conditional_access_grant_control import ConditionalAccessGrantControl
 from msgraph.generated.models.conditional_access_session_controls import ConditionalAccessSessionControls
 from msgraph.generated.models.cloud_app_security_session_control import CloudAppSecuritySessionControl
+from msgraph.generated.models.cloud_app_security_session_control_type import CloudAppSecuritySessionControlType
 from msgraph.generated.models.sign_in_frequency_session_control import SignInFrequencySessionControl
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+from msgraph.generated.models.signin_frequency_type import SigninFrequencyType
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ConditionalAccessPolicy(
 	display_name = "Demo app for documentation",
 	state = ConditionalAccessPolicyState.Disabled,

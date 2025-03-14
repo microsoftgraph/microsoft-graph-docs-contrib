@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: outlook
 author: "SuryaLashmiS"
+ms.date: 04/12/2024
 ---
 
 # genericError resource type

@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\DelegatedPermissionClassification;
+use Microsoft\Graph\Generated\Models\PermissionClassificationType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

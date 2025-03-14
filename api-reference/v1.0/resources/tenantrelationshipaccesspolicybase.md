@@ -5,6 +5,7 @@ author: "jkdouglas"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/31/2024
 ---
 
 # tenantRelationshipAccessPolicyBase resource type
@@ -29,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -57,8 +58,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: Property 'definition' found in resource definition for 'microsoft.graph.tenantRelationshipAccessPolicyBase', but not described in markdown table."
-  ]
+  "suppressions": []
 }
 -->

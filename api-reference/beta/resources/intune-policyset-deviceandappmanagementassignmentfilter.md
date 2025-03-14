@@ -2,9 +2,10 @@
 title: "deviceAndAppManagementAssignmentFilter resource type"
 description: "A class containing the properties used for Assignment Filter."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # deviceAndAppManagementAssignmentFilter resource type

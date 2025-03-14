@@ -3,8 +3,9 @@ title: "plannerFormsRequirement resource type"
 description: "Represents the criteria of form requirements that must be met to complete a Planner task."
 author: "cpanga22"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # plannerFormsRequirement resource type

@@ -3,8 +3,9 @@ title: "itemPatent resource type"
 description: "itemPatent resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # itemPatent resource type
@@ -18,11 +19,11 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List patents](../api/profile-list-patents.md)|[itemPatent](../resources/itempatent.md) collection|Get the itemPatent resources from the patents navigation property.|
-|[Create itemPatent](../api/profile-post-patents.md)|[itemPatent](../resources/itempatent.md)|Create a new itemPatent object.|
-|[Get itemPatent](../api/itempatent-get.md)|[itemPatent](../resources/itempatent.md)|Read the properties and relationships of an [itemPatent](../resources/itempatent.md) object.|
-|[Update itemPatent](../api/itempatent-update.md)|[itemPatent](../resources/itempatent.md)|Update the properties of an [itemPatent](../resources/itempatent.md) object.|
-|[Delete itemPatent](../api/itempatent-delete.md)|None|Deletes an [itemPatent](../resources/itempatent.md) object.|
+|[List](../api/profile-list-patents.md)|[itemPatent](../resources/itempatent.md) collection|Get the itemPatent resources from the patents navigation property.|
+|[Create](../api/profile-post-patents.md)|[itemPatent](../resources/itempatent.md)|Create a new itemPatent object.|
+|[Get](../api/itempatent-get.md)|[itemPatent](../resources/itempatent.md)|Read the properties and relationships of an [itemPatent](../resources/itempatent.md) object.|
+|[Update](../api/itempatent-update.md)|[itemPatent](../resources/itempatent.md)|Update the properties of an [itemPatent](../resources/itempatent.md) object.|
+|[Delete](../api/itempatent-delete.md)|None|Deletes an [itemPatent](../resources/itempatent.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -48,7 +49,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

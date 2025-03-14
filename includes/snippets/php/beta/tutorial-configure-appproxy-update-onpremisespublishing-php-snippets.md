@@ -5,9 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Application;
-use Microsoft\Graph\Generated\Models\OnPremisesPublishing;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Application;
+use Microsoft\Graph\Beta\Generated\Models\OnPremisesPublishing;
+use Microsoft\Graph\Beta\Generated\Models\ExternalAuthenticationType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

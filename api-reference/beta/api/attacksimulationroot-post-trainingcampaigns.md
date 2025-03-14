@@ -3,8 +3,9 @@ title: "Create trainingCampaign"
 description: "Create a new trainingCampaign object."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Create trainingCampaign

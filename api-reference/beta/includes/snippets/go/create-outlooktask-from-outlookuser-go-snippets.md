@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphusers.ItemOutlookTasksRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.OutlookTasksRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewOutlookTask()

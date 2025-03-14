@@ -3,8 +3,9 @@ title: "Get profileCardProperty"
 description: "Retrieve the properties of a profileCardProperty entity."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 09/19/2024
 ---
 
 # Get profileCardProperty
@@ -24,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "profilecardproperty_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/profilecardproperty-get-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or People Administrator role.
 
 ## HTTP request
 

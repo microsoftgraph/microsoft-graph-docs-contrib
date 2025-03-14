@@ -3,8 +3,9 @@ title: 'Get verticalSection'
 description: 'Read the properties and relationships of a verticalSection object.'
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 06/10/2024
 ---
 
 # Get verticalSection

@@ -4,16 +4,11 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-The first section in this step is for users who have completed the new and updated consent flow to set up their pipeline. It describes how to register and approve a Microsoft Entra application with Microsoft Graph Data Connect (Data Connect). As a prerequisite, Data Connect should be enabled in your tenant. We recommend creating a Microsoft Entra application and a storage destination resource.
-
-The second section covers application requests and is meant for users engaging with our former consent process involving Privileged Access Management (PAM). The first tab provides instructions to approve or deny a request within the admin center, while the second tab offers the same guidance through a PowerShell script. 
-
->[!NOTE]
-> If you are following the PAM steps, we suggest revisiting this step after setting up your Azure Synapse or Factory pipeline in the next step.
+In this step, you learn how to register and approve a Microsoft Entra application with Microsoft Graph Data Connect (Data Connect).
 
 ## Register your application with Microsoft Graph Data Connect
 
-As a prerequisite, please enable Data Connect in your tenant. It's helpful to have a Microsoft Entra app and storage destination resource created; you can also set these up by using the wizard. The app registration process in Data Connect involves using a wizard with three tabs: Registration info, Datasets, and Review + create.
+As a prerequisite, you should enable Data Connect in your tenant.  We recommend that you create a Microsoft Entra application and a storage destination resource; you can also set these up by using the wizard. The app registration process in Data Connect involves using a wizard with three tabs: Registration info, Datasets, and Review + create.
 
 ### Provide details in the Registration info tab
 
@@ -32,7 +27,7 @@ As a prerequisite, please enable Data Connect in your tenant. It's helpful to ha
         - **Storage Account Uri:** Select the option with **.blob.core.windows.net**
     2. **Application ID:** Select an existing Microsoft Entra tenant or create a new one.
     3. **Description:** Type **My first app**.
-    4. **Publish Type:** Choose **Single-Tenant**.
+    4. **Publish Type:** **Single-Tenant** should be automatically chosen based on your Microsot Entra app.
 
     ![A screenshot that shows the project details on the wizard.](../concepts/images/data-connect-register-app-2.png)
 
@@ -80,105 +75,3 @@ Specify the datasets that the app registration needs to query. To learn more abo
 7.  **Approve** the application summary table reloads with your app listed with the status **Approved**.
 
     ![A screenshot that shows the approved application in the landing page of the Microsoft Graph Data Connect applications portal.](../concepts/images/data-connect-app-register-10.png)
-
-
-
-# Privileged Access Management (PAM) guidance
-
-If you are following the PAM steps, return to this section after setting up your Azure Synapse or Factory pipeline in the next step.
-
-A Microsoft 365 administrator can approve or deny consent requests through the Microsoft 365 admin center or programmatically using PowerShell.
-
-When a developer triggers a pipeline, it initiates a privileged access management (PAM) request. This request is associated with the user account that owns the service principal used by the pipeline. However, self-approvals are not permitted even if the account belongs to the designated approver group.
-
-Attempting self-approval will result in an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." During development, make sure you have a separate account in addition to the admin, who can approve the requests. Both the submitter and approver must have active Exchange Online accounts.
-
-# [PAM: Microsoft 365 admin center](#tab/PAMMicrosoft365)
-
-1. Open a browser and go to your [Microsoft 365 admin center](https://admin.microsoft.com).
-
-1. To approve or deny consent requests, go to [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
-
-1. Select a pending **Data Access Request**.
-
-1. In **Data Access Request**, click **Approve**.
-
-    ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
-
-1. After a moment, you will be able to view the status page for the activity update, which will indicate that it is currently in the process of extracting data.
-
-   <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
-
-1. The data extraction process can take some time, depending on the size of your Microsoft 365 tenant.
-
-## Verify extracted data from Microsoft 365 to Azure Blob Storage
-
-1. Open a browser and go to the [Azure portal](https://portal.azure.com/#home).
-
-1. Sign in using an account with **Global Administrator** rights to your Microsoft Entra and Microsoft 365 tenants.
-
-1. From the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
-
-1. Choose **Storage browser** in the sidebar navigation menu, then choose **Blob containers**. Select the specific container you created in this tutorial, which you configured as the destination for the extracted data in the Azure Data Factory pipeline. You should now be able to view the data stored within this container.
-
-# [PAM: PowerShell](#tab/PAMPowerShell)
-
-1. Open Windows PowerShell.
-1. Ensure that your PowerShell session has enabled remotely signed scripts.
-
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    ```
-
-1. Connect to Exchange Online.
-
-    1. To obtain a sign-in credential, run the following PowerShell command. Make sure to sign in using a user other than the one who created and started the Azure Data Factory pipeline. The user should have the **global administrator** role applied and be a group member with the right to approve data requests in Microsoft 365. It should also have multi-factor authentication enabled.
-
-        ```powershell
-        $UserCredential = Get-Credential
-        ```
-
-    1. Create a new Exchange Online PowerShell session and load (import) it.
-
-        ```powershell
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-        Import-PSSession $Session -DisableNameChecking
-        ```
-
-        > [!IMPORTANT]
-        > After you finish the session, disconnect using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows three concurrent remote PowerShell sessions to protect against denial-of-service (DoS) attacks. If you simply close the PowerShell window, it will leave the connection open.
-
-1. To get a list of all pending data requests from Microsoft Graph Data Connect, run the following PowerShell command:
-
-    ```powershell
-    Get-ElevatedAccessRequest | where {$_.RequestStatus -eq 'Pending'} | select RequestorUPN, Service, Identity, RequestedAccess | fl
-    ```
-
-    - Examine the list of data access requests returned. In the following image, you can see two pending requests.
-
-        ![A screenshot showing a list of pending requests formatted as a list in a PowerShell console.](../concepts/images/data-connect-ps-pending-requests.png)
-
-1. Approve data access returned in the previous step by copying the identity GUID of the request and executing the following PowerShell command.
-
-    > [!NOTE]
-    > Replace the GUID in the following code snippet with the GUID from the results of the previous step.
-
-    ```powershell
-    Approve-ElevatedAccessRequest -RequestId fa041379-0000-0000-0000-7cd5691484bd -Comment 'approval request granted'
-    ```
-
-1. After a moment, you will be able to view the status page for the activity update, which will indicate that it is currently in the process of extracting data.
-
-   <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
-
-1. The data extraction process can take some time, depending on the size of your Microsoft 365 tenant.
-
-## Verify extracted data from Microsoft 365 to Azure Blob Storage
-
-1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
-
-1. Sign in using an account with **global administrator** rights to your Microsoft Entra and Microsoft 365 tenants.
-
-1. In the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
-
-1. Go to the sidebar navigation menu and click **Storage browser**, then select **Blob containers**. From there, choose the specific container that you created in this tutorial, which you configured as the destination for the extracted data in the Azure Data Factory pipeline. You should be able to see the data stored within this container.

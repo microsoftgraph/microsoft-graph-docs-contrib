@@ -3,8 +3,9 @@ title: "Create projectParticipation"
 description: "Use this API to create a new projectParticipation."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 07/15/2024
 ---
 
 # Create projectParticipation
@@ -195,6 +196,7 @@ Content-type: application/json
       "displayName": "Adventureworks Inc.",
       "pronunciation": null,
       "department": "Consulting",
+      "companyCode": "C-100",
       "officeLocation": null,
       "address": null,
       "webUrl": "https://adventureworks.com"

@@ -2,9 +2,10 @@
 title: "deviceManagementConfigurationStringSettingValueDefinition resource type"
 description: "String constraints"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 
 # deviceManagementConfigurationStringSettingValueDefinition resource type

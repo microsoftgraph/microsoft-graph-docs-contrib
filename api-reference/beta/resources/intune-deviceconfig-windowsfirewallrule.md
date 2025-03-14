@@ -2,9 +2,10 @@
 title: "windowsFirewallRule resource type"
 description: "A rule controlling traffic through the Windows Firewall."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windowsFirewallRule resource type

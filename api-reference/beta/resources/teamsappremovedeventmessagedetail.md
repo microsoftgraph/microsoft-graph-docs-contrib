@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamsAppRemovedEventMessageDetail resource type
@@ -26,8 +27,11 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |teamsAppDisplayName|String|Display name of the **teamsApp**.|
 |teamsAppId|String|Unique identifier of the **teamsApp**.|
 
+## Relationships
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppRemovedEventMessageDetail",

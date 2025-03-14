@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AddKeyPostRequestBody;
-use Microsoft\Graph\Generated\Models\KeyCredential;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Applications\Item\AddKey\AddKeyPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\KeyCredential;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

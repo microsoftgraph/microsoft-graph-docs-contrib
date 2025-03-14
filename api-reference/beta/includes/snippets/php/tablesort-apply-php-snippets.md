@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ApplyPostRequestBody;
-use Microsoft\Graph\Generated\Models\WorkbookSortField;
-use Microsoft\Graph\Generated\Models\WorkbookIcon;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\Tables\Item\Sort\Apply\ApplyPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\WorkbookSortField;
+use Microsoft\Graph\Beta\Generated\Models\WorkbookIcon;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

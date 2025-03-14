@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+ms.date: 07/25/2024
 ---
 
 # alterationResponse resource type
@@ -23,9 +24,13 @@ Provides information related to spelling corrections in the alteration response.
 |queryAlteration|[searchAlteration](searchalteration.md)| Defines the details of alteration information for the spelling correction.|
 |queryAlterationType|searchAlterationType| Defines the type of the spelling correction. Possible values are `suggestion`, `modification`.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

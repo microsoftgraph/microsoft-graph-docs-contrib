@@ -61,12 +61,20 @@
     "override": "BitLocker"
   },
   {
+    "term": "Certificate based",
+    "override": "Certificate-based"
+  },
+  {
     "term": "cloud pc",
     "override": "Cloud PC"
   },
   {
     "term": "cors",
     "override": "CORS"
+  },
+  {
+    "term": "Cross tenant",
+    "override": "Cross-tenant"
   },
   {
     "term": "cvss",
@@ -242,6 +250,11 @@
     "caseSensitive": true
   },
   {
+    "term": "One note",
+    "override": "OneNote",
+    "caseSensitive": true
+  },
+  {
     "term": "onenote",
     "override": "OneNote"
   },
@@ -290,6 +303,10 @@
   {
     "term": "scep",
     "override": "SCEP"
+  },
+  {
+    "term": "sharepoint",
+    "override": "SharePoint"
   },
   {
     "term": "sim",

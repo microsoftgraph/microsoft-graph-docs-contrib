@@ -3,8 +3,9 @@ title: "Get workPosition"
 description: "Retrieve the properties and relationships of a workPosition object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
+ms.date: 07/15/2024
 ---
 
 # Get workPosition
@@ -147,6 +148,7 @@ Content-type: application/json
       "displayName": "Adventureworks Ltd.",
       "pronunciation": null,
       "department": "Consulting",
+      "companyCode": "A-101",
       "officeLocation": "AW23/344",
       "address": {
         "type": "business",

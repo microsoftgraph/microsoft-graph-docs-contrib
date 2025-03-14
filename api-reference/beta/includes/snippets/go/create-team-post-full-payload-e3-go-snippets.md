@@ -22,6 +22,8 @@ displayName := "Sample Engineering Team"
 requestBody.SetDisplayName(&displayName) 
 description := "This is a sample engineering team, used to showcase the range of properties supported by this API"
 requestBody.SetDescription(&description) 
+firstChannelName := "My first channel of the sample team"
+requestBody.SetFirstChannelName(&firstChannelName) 
 
 
 channel := graphmodels.NewChannel()
@@ -48,7 +50,7 @@ contentUrl := "https://learn.microsoft.com/microsoftteams/microsoft-teams"
 configuration.SetContentUrl(&contentUrl) 
 teamsTab.SetConfiguration(configuration)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')", 
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')", 
 }
 teamsTab.SetAdditionalData(additionalData)
 teamsTab1 := graphmodels.NewTeamsTab()
@@ -61,7 +63,7 @@ websiteUrl := "https://www.youtube.com/watch?v=X8krAMdGvCQ"
 configuration.SetWebsiteUrl(&websiteUrl) 
 teamsTab1.SetConfiguration(configuration)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')", 
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')", 
 }
 teamsTab1.SetAdditionalData(additionalData)
 
@@ -138,12 +140,12 @@ requestBody.SetDiscoverySettings(discoverySettings)
 
 teamsAppInstallation := graphmodels.NewTeamsAppInstallation()
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')", 
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')", 
 }
 teamsAppInstallation.SetAdditionalData(additionalData)
 teamsAppInstallation1 := graphmodels.NewTeamsAppInstallation()
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')", 
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')", 
 }
 teamsAppInstallation1.SetAdditionalData(additionalData)
 
@@ -153,7 +155,7 @@ installedApps := []graphmodels.TeamsAppInstallationable {
 }
 requestBody.SetInstalledApps(installedApps)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')", 
+	"template@odata.bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')", 
 }
 requestBody.SetAdditionalData(additionalData)
 

@@ -3,8 +3,9 @@ title: "freeBusyError resource type"
 description: "Represents error information from attempting to get the availability of a user, distribution list, or resource."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: ""
+ms.subservice: ""
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # freeBusyError resource type
@@ -22,7 +23,7 @@ Represents error information from attempting to get the availability of a user, 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

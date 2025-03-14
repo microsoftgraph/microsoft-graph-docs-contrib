@@ -3,8 +3,9 @@ title: "workplace resource type"
 description: "Represents a workplace in a tenant."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # workplace resource type
@@ -19,8 +20,8 @@ Represents a workplace in a tenant.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sensorDevices](../api/workplace-list-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|Get a list of all workplace sensor devices created for a tenant.|
-|[Create workplaceSensorDevice](../api/workplace-post-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Create a new sensor device.|
+|[List](../api/workplace-list-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|Get a list of all workplace sensor devices created for a tenant.|
+|[Create](../api/workplace-post-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Create a new sensor device.|
 
 ## Properties
 

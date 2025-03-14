@@ -3,8 +3,9 @@ title: "ediscoveryReviewSet: addToReviewSet"
 description: "Start the process of adding a collection from Microsoft 365 services to a review set."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # ediscoveryReviewSet: addToReviewSet

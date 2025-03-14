@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphinformationprotection.InformationProtectionThreatAssessmentRequestItemRequestBuilderGetQueryParameters{
+requestParameters := &graphinformationprotection.ThreatAssessmentRequestsItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"results"},
 }
-configuration := &graphinformationprotection.InformationProtectionThreatAssessmentRequestItemRequestBuilderGetRequestConfiguration{
+configuration := &graphinformationprotection.ThreatAssessmentRequestsItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

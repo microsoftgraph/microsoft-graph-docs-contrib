@@ -2,9 +2,10 @@
 title: "deleteDevices action"
 description: "Intune Enrollment Windowsautopilotdeviceidentity Deletedevices Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # deleteDevices action

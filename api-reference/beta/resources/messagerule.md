@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # messageRule resource type
@@ -26,9 +27,9 @@ and available rule conditions and exceptions are represented by the [messageRule
 |:---------------|:--------|:----------|
 |[List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection |Get all the **messageRule** objects defined for the user's Inbox.|
 |[Get rule](../api/messagerule-get.md) | [messageRule](messagerule.md) |Read the properties and relationships of a **messageRule** object.|
-|[Create](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Create a **messageRule** object by specifying a set of conditions and actions.|
-|[Update](../api/messagerule-update.md) | [messageRule](messagerule.md) |Change writable properties on a **messageRule** object and save the changes. |
-|[Delete](../api/messagerule-delete.md) | None |Delete the specified **messageRule** object. |
+|[Create rule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Create a **messageRule** object by specifying a set of conditions and actions.|
+|[Update rule](../api/messagerule-update.md) | [messageRule](messagerule.md) |Change writable properties on a **messageRule** object and save the changes. |
+|[Delete rule](../api/messagerule-delete.md) | None |Delete the specified **messageRule** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -43,6 +44,9 @@ and available rule conditions and exceptions are represented by the [messageRule
 | isReadOnly | Boolean | Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API. |
 | sequence | Int32 | Indicates the order in which the rule is executed, among other rules. |
 
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

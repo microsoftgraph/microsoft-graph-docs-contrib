@@ -5,6 +5,7 @@ author: "koravvams"
 ms.localizationpriority: medium
 ms.subservice: partner-customer-administration
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # delegatedAdminServiceManagementDetail resource type
@@ -16,7 +17,7 @@ Contains the management details of a service in the customer tenant that's manag
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminServiceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md) collection|Get a list of the **delegatedAdminServiceManagementDetail** objects and their properties.|
+|[List](../api/delegatedadmincustomer-list-servicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md) collection|Get a list of the **delegatedAdminServiceManagementDetail** objects and their properties.|
 
 
 ## Properties

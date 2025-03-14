@@ -5,6 +5,7 @@ title: "printDocumentUploadProperties resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
 ms.subservice: universal-print
+ms.date: 07/26/2024
 ---
 
 # printDocumentUploadProperties resource type
@@ -24,7 +25,7 @@ Describes the document that is being uploaded
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printDocumentUploadProperties"

@@ -2,9 +2,10 @@
 title: "iosCertificateProfileBase resource type"
 description: "iOS certificate profile base."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # iosCertificateProfileBase resource type

@@ -2,9 +2,10 @@
 title: "advancedBitLockerState enum type"
 description: "Advanced BitLocker State"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/13/2024
 ---
 
 # advancedBitLockerState enum type

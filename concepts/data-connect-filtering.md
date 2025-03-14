@@ -4,6 +4,7 @@ description: "Learn how to use Microsoft Graph Data Connect to select users that
 author: "rimisra2"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
+ms.date: 11/07/2024
 ---
 
 # User selection and filtering capabilities in Microsoft Graph Data Connect
@@ -41,5 +42,4 @@ The following datasets require a filter to be provided on one of the correspondi
 
 ## Related content
 
-- [Integrate with PAM](data-connect-pam.md)
-- [Data Connect frequently asked questions](data-connect-faq.md)
+[Data Connect frequently asked questions](data-connect-faq.md)

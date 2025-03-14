@@ -3,8 +3,9 @@ title: "List reviewSets"
 description: "Get the ediscoveryReviewSet resources from an eDiscovery case object"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # List reviewSets

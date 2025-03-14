@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "The calculated column on a columnDefinition resource indicates that the column's data is calculated based on other columns in the site."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 # calculatedColumn resource type
 
@@ -26,7 +27,7 @@ SharePoint formulas use a syntax similar to Excel formulas. For more information
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.calculatedColumn" } -->
 
 ```json

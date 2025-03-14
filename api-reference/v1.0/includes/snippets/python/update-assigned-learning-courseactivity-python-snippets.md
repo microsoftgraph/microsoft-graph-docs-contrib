@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.learning_assignment import LearningAssignment
+from msgraph.generated.models.assignment_type import AssignmentType
 from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 from msgraph.generated.models.item_body import ItemBody
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+from msgraph.generated.models.body_type import BodyType
+from msgraph.generated.models.course_status import CourseStatus
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = LearningAssignment(
 	odata_type = "#microsoft.graph.learningAssignment",
 	assigned_date_time = "2021-05-11T22:57:17+00:00",
@@ -23,7 +25,7 @@ request_body = LearningAssignment(
 		date_time = "2022-09-22T16:05:00.0000000",
 		time_zone = "UTC",
 	),
-	externalcourse_activity_id = "12a2228a-e020-11ec-9d64-0242ac120002",
+	external_course_activity_id = "12a2228a-e020-11ec-9d64-0242ac120002",
 	learning_content_id = "57baf9dc-e020-11ec-9d64-0242ac120002",
 	learner_user_id = "7ba2228a-e020-11ec-9d64-0242ac120002",
 	notes = ItemBody(

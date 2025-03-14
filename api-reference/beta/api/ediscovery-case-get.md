@@ -3,8 +3,9 @@ title: "Get case"
 description: "Retrieve the properties and relationships of a case object."
 ms.localizationpriority: medium
 author: "mahage-msft"
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # Get case

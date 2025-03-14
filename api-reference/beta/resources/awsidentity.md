@@ -6,6 +6,8 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+toc.title: All AWS identities
+ms.date: 07/25/2024
 ---
 
 # awsIdentity resource type
@@ -30,8 +32,8 @@ The following resources inherit from this resource type:
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List all (AWS identities)](../api/awsassociatedidentities-list-all.md)|[awsIdentity](../resources/awsidentity.md)|Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.|
-|[Get awsIdentity](../api/awsidentity-get.md)|[awsIdentity](../resources/awsidentity.md)|Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.|
+|[List](../api/awsassociatedidentities-list-all.md)|[awsIdentity](../resources/awsidentity.md)|Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.|
+|[Get](../api/awsidentity-get.md)|[awsIdentity](../resources/awsidentity.md)|Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.|
 
 ## Properties
 |Property|Type|Description|

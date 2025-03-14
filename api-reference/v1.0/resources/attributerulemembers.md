@@ -5,6 +5,7 @@ author: "fsheik"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # attributeRuleMembers resource type
@@ -28,7 +29,7 @@ Inherits from [subjectSet](subjectset.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.attributeRuleMembers"

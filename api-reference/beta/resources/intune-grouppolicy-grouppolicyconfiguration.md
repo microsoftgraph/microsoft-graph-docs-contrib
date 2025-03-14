@@ -2,9 +2,10 @@
 title: "groupPolicyConfiguration resource type"
 description: "The group policy configuration entity contains the configured values for one or more group policy definitions."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # groupPolicyConfiguration resource type

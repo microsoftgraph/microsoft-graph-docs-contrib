@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn about the common models used in the Microsoft Graph connectors SDK."
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph connectors SDK common models
@@ -165,6 +166,9 @@ Represents the schema of the properties that represent a data entity in the data
 |IsRetrievable |4 |If a property is retrievable, it can return its value in search results. Any property you want to add to the display template or return from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable will increase search latency. Be selective and choose relevant properties. |
 |IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties, which one should be the property to be treated as content for that specific connection. For details, see [Content property](/graph/connecting-external-content-manage-items#content). |
 |IsRefinable |16 |If a property is refinable, an admin can configure it as a custom filter on the Microsoft Search results page. A refinable property can't be searchable. |
+
+> [!NOTE]
+> If a connection has the **Title** and **Url** semantic labels, and any schema property in the connection is marked as **IsContent**, the content of the item is vectorized in the semantic index.
 
 ## SearchPropertyLabel
 

@@ -2,9 +2,10 @@
 title: "Get macOSWiredNetworkConfiguration"
 description: "Read properties and relationships of the macOSWiredNetworkConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get macOSWiredNetworkConfiguration
@@ -67,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1774
+Content-Length: 1815
 
 {
   "value": {
@@ -112,7 +113,8 @@ Content-Length: 1774
     ],
     "authenticationMethod": "usernameAndPassword",
     "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
-    "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
+    "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value",
+    "deploymentChannel": "userChannel"
   }
 }
 ```

@@ -19,7 +19,7 @@ requestBody := graphmodels.NewChatMessage()
 body := graphmodels.NewItemBody()
 contentType := graphmodels.HTML_BODYTYPE 
 body.SetContentType(&contentType) 
-content := "<div><div>\n<div><span><img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>"
+content := "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">"
 body.SetContent(&content) 
 requestBody.SetBody(body)
 
@@ -30,7 +30,7 @@ chatMessageHostedContent.SetContentBytes(&contentBytes)
 contentType := "image/png"
 chatMessageHostedContent.SetContentType(&contentType) 
 additionalData := map[string]interface{}{
-	"microsoftGraphTemporaryId" : "1", 
+	"@microsoft.graph.temporaryId" : "1", 
 }
 chatMessageHostedContent.SetAdditionalData(additionalData)
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.subservice: "entra-sign-in"
+ms.date: 04/09/2024
 ---
 
 # Delete an identityProvider from a b2cIdentityUserFlow (deprecated)

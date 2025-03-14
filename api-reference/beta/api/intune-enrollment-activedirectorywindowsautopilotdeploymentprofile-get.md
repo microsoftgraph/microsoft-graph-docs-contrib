@@ -2,9 +2,10 @@
 title: "Get activeDirectoryWindowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the activeDirectoryWindowsAutopilotDeploymentProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Get activeDirectoryWindowsAutopilotDeploymentProfile
@@ -67,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1975
+Content-Length: 1972
 
 {
   "value": {
@@ -110,7 +111,7 @@ Content-Length: 1975
     "extractHardwareHash": true,
     "hardwareHashExtractionEnabled": true,
     "deviceNameTemplate": "Device Name Template value",
-    "deviceType": "surfaceHub2",
+    "deviceType": "holoLens",
     "enableWhiteGlove": true,
     "preprovisioningAllowed": true,
     "roleScopeTagIds": [

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mcm223"
 ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
+ms.date: 05/23/2024
 ---
 
 # session resource type
@@ -15,11 +16,13 @@ Namespace: microsoft.graph.callRecords
 
 Represents a user-user communication or a user-meeting communication in the case of a conference call.
 
+One session can be returned multiple times if the communication involves more than one service identity. For more information, see [call record API FAQ](/graph/callrecords-api-faq).
+
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List sessions](../api/callrecords-callrecord-list-sessions.md) | [microsoft.graph.callRecords.session](callrecords-session.md) collection | Retrieve the list of sessions associated with a [callRecord](callrecords-callrecord.md) object.|
+| [List](../api/callrecords-callrecord-list-sessions.md) | [microsoft.graph.callRecords.session](callrecords-session.md) collection | Retrieve the list of sessions associated with a [callRecord](callrecords-callrecord.md) object.|
 
 ## Properties
 

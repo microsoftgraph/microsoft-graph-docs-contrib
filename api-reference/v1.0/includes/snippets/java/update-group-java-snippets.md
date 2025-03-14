@@ -9,13 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Group group = new Group();
-group.setDescription("Library Assist");
-group.setDisplayName("Library Assist");
-LinkedList<String> groupTypes = new LinkedList<String>();
-groupTypes.add("Unified");
-group.setGroupTypes(groupTypes);
-group.setMailEnabled(true);
-group.setMailNickname("library-help");
+group.setDescription("Library Assist - ADC");
+group.setDisplayName("Library Assist - ADC");
+group.setMailNickname("library-help-adc");
 Group result = graphClient.groups().byGroupId("{group-id}").patch(group);
 
 

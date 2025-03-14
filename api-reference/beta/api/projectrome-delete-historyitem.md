@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: apiPageType
 author: "ailae"
+ms.date: 06/22/2024
 ---
 
 # Delete an activityHistoryItem
@@ -37,7 +38,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Required.|
+|Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

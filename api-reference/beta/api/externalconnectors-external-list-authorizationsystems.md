@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # List authorizationSystems
@@ -169,7 +170,7 @@ Content-Type: application/json
       "authorizationSystemId": "carbide-bonsai-205017",
       "authorizationSystemName": "ck-staging",
       "authorizationSystemType": "GCP",
-      "dataCollectionInfo@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#external/authorizationSystems('Y2FyYmlkZS1ib25zYWktMjA1MDE3')/microsoft.graph.gcpAuthorizationSystem/dataCollectionInfo/$entity",
+      "dataCollectionInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems('Y2FyYmlkZS1ib25zYWktMjA1MDE3')/microsoft.graph.gcpAuthorizationSystem/dataCollectionInfo/$entity",
       "dataCollectionInfo": {
         "entitlements": {
           "@odata.type": "microsoft.graph.entitlementsDataCollection",

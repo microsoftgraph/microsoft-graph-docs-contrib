@@ -2,9 +2,10 @@
 title: "numberRange resource type"
 description: "Number Range definition."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # numberRange resource type

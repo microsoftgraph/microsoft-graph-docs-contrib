@@ -2,9 +2,10 @@
 title: "disableLostMode action"
 description: "Disable lost mode"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # disableLostMode action

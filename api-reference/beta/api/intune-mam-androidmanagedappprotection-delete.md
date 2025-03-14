@@ -2,9 +2,10 @@
 title: "Delete androidManagedAppProtection"
 description: "Deletes a androidManagedAppProtection."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Delete androidManagedAppProtection
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Deletes a [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).
+Deletes a [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

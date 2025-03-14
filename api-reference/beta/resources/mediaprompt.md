@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # mediaPrompt resource type
@@ -21,9 +22,12 @@ Contains information about the audio file to be played and other additional sett
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
 | mediaInfo   | [mediaInfo](mediainfo.md) | The media information.                                                          |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

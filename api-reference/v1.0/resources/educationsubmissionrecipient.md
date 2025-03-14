@@ -5,6 +5,7 @@ author: "sharad-sharma-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 08/08/2024
 ---
 
 # educationSubmissionRecipient resource type
@@ -18,6 +19,14 @@ Possible values include individuals or groups. This is used within the **submiss
 
 ## Properties
 None.
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

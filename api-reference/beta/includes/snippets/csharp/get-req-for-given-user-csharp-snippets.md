@@ -8,16 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.IdentityGovernance.EntitlementManagement.AccessPackages.Item.GetApplicablePolicyRequirements;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new GetApplicablePolicyRequirementsPostRequestBody
 {
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"subject" , new 
+			"subject" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				ObjectId = "5acd375c-8acb-45de-a958-fa0dd89259ad",
-			}
+				{
+					"objectId", new UntypedString("5acd375c-8acb-45de-a958-fa0dd89259ad")
+				},
+			})
 		},
 	},
 };

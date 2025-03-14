@@ -2,10 +2,12 @@
 title: "Working with users in Microsoft Graph"
 description: "Build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
 ms.localizationpriority: high
-author: "yyuank"
-ms.reviewer: "iamut"
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: yyuank, iamut
 ms.subservice: entra-users
 doc_type: conceptualPageType
+ms.topic: overview
 ms.date: 03/01/2024
 ---
 
@@ -22,6 +24,8 @@ You can access users through Microsoft Graph in two ways:
 
 ## Common API operations
 
+In Microsoft Graph, users are represented by the [user](../resources/user.md) resource type. The following table lists common operations that you can perform on users.
+
 | Path | Description |
 |--|--|
 | [`/me`](../api/user-get.md) | Get the signed-in user's details. |
@@ -34,6 +38,7 @@ You can access users through Microsoft Graph in two ways:
 | [`/users/{id}/drive`](../api/drive-get.md) | Gets the user's OneDrive file store. |
 | [`/users/{id}/memberOf`](../api/user-list-memberof.md) | Lists the groups that the user is a member of. |
 | [`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md) | Lists the Microsoft Teams that the user is a member of. |
+| [`POST /invitations`](../api/invitation-post.md) | Invite a guest as part of business-to-business (B2B) collaboration in Microsoft Entra External ID |
 
 ## Authorization and privileges
 
@@ -49,9 +54,9 @@ There are two types of users in Microsoft Entra ID - members and guests. Initial
 
 The set of default permissions depends on whether the user is a member or a guest user. For more information about what member users and guest users can do, see [What are the default user permissions in Microsoft Entra ID?](/entra/fundamentals/users-default-permissions?context=graph/context).
 
-#### Default user permissions in customer tenants
+#### Default user permissions in external tenants
 
-There are also default permissions for customers in Microsoft Entra ID for customers. The following table indicates the API operations that enable customers to manage their own profile.
+There are also default permissions for customers in Microsoft Entra ID in external tenants. The following table indicates the API operations that enable customers to manage their own profile.
 
 The user ID or userPrincipalName is always the signed-in user's.
 
@@ -63,6 +68,55 @@ The user ID or userPrincipalName is always the signed-in user's.
 <!--
 | Reset password | `POST /users/{id or userPrincipalName}/authentication/methods/{id}/resetPassword`  where the authentication method ID is always `28c10230-6103-485e-b985-444c60001490`. | UserAuthenticationMethod.ReadWrite |
 -->
+
+## Users basic profile
+
+[!INCLUDE [beta-disclaimer](../../../includes/permissions-notes/user.readbasic.all.md)]
+
+In addition, the following scenario-specific permissions also allow apps to read the basic user profile which contains mostly identifier-related properties: *User-Mail.ReadWrite.All*, *User-PasswordProfile.ReadWrite.All*, *User-Phone.ReadWrite.All*, *User-LifeCycleInfo.Read.All*, *User-LifeCycleInfo.ReadWrite.All*.
+
+## Sensitive actions
+
+The following actions against the user object are considered sensitive and might be locked down to only specific administrators. All users can read the sensitive properties.
+
+| Sensitive action                | Sensitive property name |
+|---------------------------------|-------------------------|
+| Disable or enable users         | accountEnabled          |
+| Update business phone           | businessPhones          |
+| Update mobile phone             | mobilePhone             |
+| Update on-premises immutable ID | onPremisesImmutableId   |
+| Update other emails             | otherMails              |
+| Update password profile         | passwordProfile         |
+| Update user principal name      | userPrincipalName       |
+| Delete or restore users         | Not applicable          |
+
+### Who can perform sensitive actions
+
+Some administrators can perform the preceding sensitive actions for some users. 
+
+In the following table, the columns list the roles that can perform sensitive actions. The rows list the roles for which the sensitive action can be performed upon.
+
+The following table is for roles assigned at the scope of a tenant. For roles assigned at the scope of an administrative unit, [further restrictions apply](/entra/identity/role-based-access-control/admin-units-assign-roles#roles-that-can-be-assigned-with-administrative-unit-scope).
+
+| Role that sensitive action can be performed upon | Auth Admin | User Admin | Privileged Auth Admin | Global Admin |
+| ------ | ------ | ------ | ------ | ------ |
+| Auth Admin | :white_check_mark: | &nbsp; | :white_check_mark: | :white_check_mark: |
+| Directory Readers | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Global Admin | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
+| Groups Admin | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Guest Inviter | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Helpdesk Admin | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Message Center Reader | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Password Admin | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Privileged Auth Admin | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
+| Privileged Role Admin | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
+| Reports Reader | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| User<br/>(no admin role) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| User<br/>(no admin role, but member or owner of a role-assignable group) | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
+| User with a role scoped to a restricted management administrative unit | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
+| User Admin | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Usage Summary Reports Reader | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| All custom roles |  |  | :white_check_mark: | :white_check_mark: |
 
 ### Who can reset passwords
 
@@ -95,45 +149,6 @@ The ability to reset a password includes the ability to update the following sen
 > - mobilePhone
 > - otherMails
 
-### Who can perform sensitive actions
-
-Some administrators can perform the following sensitive actions for some users. All users can read the sensitive properties.
-
-| Sensitive action                | Sensitive property name |
-|---------------------------------|-------------------------|
-| Disable or enable users         | accountEnabled          |
-| Update business phone           | businessPhones          |
-| Update mobile phone             | mobilePhone             |
-| Update on-premises immutable ID | onPremisesImmutableId   |
-| Update other emails             | otherMails              |
-| Update password profile         | passwordProfile         |
-| Update user principal name      | userPrincipalName       |
-| Delete or restore users         | Not applicable          |
-
-In the following table, the columns list the roles that can perform sensitive actions. The rows list the roles for which the sensitive action can be performed upon.
-
-The following table is for roles assigned at the scope of a tenant. For roles assigned at the scope of an administrative unit, [further restrictions apply](/entra/identity/role-based-access-control/admin-units-assign-roles#roles-that-can-be-assigned-with-administrative-unit-scope).
-
-| Role that sensitive action can be performed upon | Auth Admin | User Admin | Privileged Auth Admin | Global Admin |
-| ------ | ------ | ------ | ------ | ------ |
-| Auth Admin | :white_check_mark: | &nbsp; | :white_check_mark: | :white_check_mark: |
-| Directory Readers | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Global Admin | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
-| Groups Admin | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Guest Inviter | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Helpdesk Admin | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Message Center Reader | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Password Admin | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Privileged Auth Admin | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
-| Privileged Role Admin | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
-| Reports Reader | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| User<br/>(no admin role) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| User<br/>(no admin role, but member or owner of a role-assignable group) | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
-| User with a role scoped to a restricted management administrative unit | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
-| User Admin | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Usage Summary Reports Reader | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| All custom roles |  |  | :white_check_mark: | :white_check_mark: |
-
 ## User and group search limitations for guest users in organizations
 
 User and group search capabilities allow the app to search for any user or group in an organization's directory by performing queries against the `/users` or `/groups` resource set (for example, `https://graph.microsoft.com/v1.0/users`). Both administrators and users who are members have this capability; however, guest users don't.
@@ -150,7 +165,9 @@ Some properties of the user object aren't returned by default and must be specif
 
 While the user resource data is mostly stored in Microsoft Entra ID, some of its properties, like **skills**, are stored in SharePoint Online. In most instances, you can't specify these properties in the same Create or Update request body as other user properties.
 
-Properties stored outside the main data store also aren't supported as part of change tracking. Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
+Properties stored outside the main data store also aren't supported as part of [change tracking](/graph/delta-query-overview). Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
+
+The following properties on the user object are stored outside the main data store: **signInActivity**, **cloudLicensing**, **mailboxSettings**, **deviceEnrollmentLimit**, **print**, **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**.
 
 ## Related content
 

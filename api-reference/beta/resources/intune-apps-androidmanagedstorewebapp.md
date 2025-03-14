@@ -2,9 +2,10 @@
 title: "androidManagedStoreWebApp resource type"
 description: "Contains properties and inherited properties for web apps configured to be distributed via the managed Android app store."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # androidManagedStoreWebApp resource type

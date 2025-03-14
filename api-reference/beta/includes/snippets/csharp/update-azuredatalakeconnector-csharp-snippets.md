@@ -12,7 +12,7 @@ using Microsoft.Graph.Beta.Models.IndustryData;
 var requestBody = new AzureDataLakeConnector
 {
 	OdataType = "microsoft.graph.industryData.azureDataLakeConnector",
-	DisplayName = "API Monitor 60201009",
+	DisplayName = "CSV files from SIS",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -10,7 +10,7 @@ metadata:
   author: aycabas
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:HTML, CSS
-  ms.prod: toolkit
+  ms.subservice: toolkit
 items:
   - title: Build productivity apps by using Microsoft Graph Toolkit
     durationInMinutes: 5

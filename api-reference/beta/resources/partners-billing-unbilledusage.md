@@ -5,6 +5,7 @@ author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # unbilledUsage resource type
@@ -21,7 +22,7 @@ Represents details for unbilled Azure usage data.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[export](../api/partners-billing-unbilledusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export unbilled Azure usage data for a specific billing period and currency.|
+|[Export](../api/partners-billing-unbilledusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export unbilled Azure usage data for a specific billing period and currency.|
 
 ## Properties
 

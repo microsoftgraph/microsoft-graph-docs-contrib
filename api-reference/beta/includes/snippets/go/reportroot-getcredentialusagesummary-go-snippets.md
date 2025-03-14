@@ -18,10 +18,10 @@ import (
 
 requestFilter := "feature eq 'registration'"
 
-requestParameters := &graphreports.ReportsGetCredentialUsageSummary(period='{period}')RequestBuilderGetQueryParameters{
+requestParameters := &graphreports.ReportsGetCredentialUsageSummaryWithPeriodRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphreports.ReportsGetCredentialUsageSummary(period='{period}')RequestBuilderGetRequestConfiguration{
+configuration := &graphreports.ReportsGetCredentialUsageSummaryWithPeriodRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

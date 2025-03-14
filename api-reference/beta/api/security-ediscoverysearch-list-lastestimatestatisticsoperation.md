@@ -3,8 +3,9 @@ title: "List lastEstimateStatisticsOperation"
 description: "Get the last ediscoveryEstimateOperation object and its properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/11/2024
 ---
 
 # List lastEstimateStatisticsOperation

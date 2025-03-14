@@ -5,6 +5,7 @@ author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
 ms.subservice: entra-monitoring-health
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # relyingPartyDetailedSummary resource type
@@ -19,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List relyingPartyDetailedSummary](../api/reportroot-getrelyingpartydetailedsummary.md)|  [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) collection|Get a summary of AD FS relying parties information.|
+|[Get relying party detailed summary](../api/reportroot-getrelyingpartydetailedsummary.md)|  [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) collection|Get a summary of AD FS relying parties information.|
 
 ## Properties
 

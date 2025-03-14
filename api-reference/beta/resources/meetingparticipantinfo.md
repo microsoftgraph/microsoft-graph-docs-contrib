@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # meetingParticipantInfo resource type
@@ -25,7 +26,7 @@ Contains information about a participant in a meeting.
 
 ### onlineMeetingRole values
 
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the `coorganizer` value in this evolvable enum.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to get the `coorganizer` value in this evolvable enum.
 
 | Value              | Description                                                            |
 | ------------------ | ---------------------------------------------------------------------- |
@@ -39,9 +40,12 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 >
 > To set the **presenter** role of a meeting attendee when creating or updating an [onlineMeeting](onlinemeeting.md), the value of **allowedPresenters** must also be set to `roleIsPresenter`.
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

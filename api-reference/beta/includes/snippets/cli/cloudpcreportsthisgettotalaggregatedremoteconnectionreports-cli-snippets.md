@@ -14,7 +14,9 @@ mgc-beta device-management virtual-endpoint reports get-total-aggregated-remote-
         "ManagedDeviceName",\
         "UserPrincipalName",\
         "TotalUsageInHour",\
-        "DaysSinceLastSignIn"\
+        "LastActiveTime",\
+        "PcType",\
+        "CreatedDate"\
     ]\
 }\
 '

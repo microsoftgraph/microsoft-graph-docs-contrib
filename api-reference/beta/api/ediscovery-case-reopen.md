@@ -3,8 +3,9 @@ title: "case: reopen"
 description: "Reopen an eDiscovery case that was closed."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # case: reopen

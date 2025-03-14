@@ -5,6 +5,7 @@ author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # tasks resource type
@@ -16,8 +17,8 @@ Represents the To Do tasks services available to a user.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List lists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get the baseTaskList resources from the lists navigation property.|
-|[Create taskList](../api/tasks-post-lists.md)|[taskList](../resources/basetasklist.md)|Create a new baseTaskList object.|
+|[List base task lists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get the baseTaskList resources from the lists navigation property.|
+|[Create base task list](../api/tasks-post-lists.md)|[taskList](../resources/basetasklist.md)|Create a new baseTaskList object.|
 
 ## Properties
 None.

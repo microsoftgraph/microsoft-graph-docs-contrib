@@ -2,9 +2,10 @@
 title: "actionState enum type"
 description: "State of the action on the device"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 08/01/2024
 ---
 
 # actionState enum type

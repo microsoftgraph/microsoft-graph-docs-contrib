@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: preetikr
 ms.subservice: security
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 #  secureScoreControlStateUpdate resource type
 
@@ -23,7 +24,7 @@ Contains the history of the control states updated by the user (control states i
 |updatedDateTime|DateTimeOffset|Time at which the control state was updated. |
 
 ## JSON representation
- The following is a JSON representation of the resource.
+ The following JSON representation shows the resource type.
  <!-- {
   "blockType": "resource",
   "optionalProperties": [

@@ -7,6 +7,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: conceptualPageType
+ms.date: 06/04/2024
 ---
 # Working with the Dynamics 365 Business Central API in Microsoft Graph
 
@@ -23,7 +24,7 @@ The Dynamics 365 Business Central API allows you to read and modify business dat
 ## Environment
 To enable the Dynamics 365 Business Central API, you must ensure that the **Environment Name** in the Business Central Admin Center is **Production**. 
 
-:::image type="content" source="dynamics-tenant-admin-environment.png" alt-text="Business Central Admin Center setup":::
+:::image type="content" source="../images/dynamics-tenant-admin-environment.png" alt-text="Business Central Admin Center setup":::
 
 
 ## Next steps

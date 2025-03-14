@@ -5,6 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.date: 04/02/2024
 ---
 
 # Identity governance enum values

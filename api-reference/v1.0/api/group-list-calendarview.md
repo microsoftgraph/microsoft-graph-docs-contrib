@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "iamgirishck"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # List group calendarView
@@ -51,7 +52,7 @@ This method also supports some of the [OData Query Parameters](/graph/query-para
 
 | Name                              | Type   | Description                                                                                                                                                                                                                                                                        |
 | :-------------------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization                     | string | Bearer {token}. Required.                                                                                                                                                                                                                                                          |
+| Authorization                     | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone          | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional.                                                                                                                                      |
 | Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header isn't specified, the **body** property is returned in HTML format. Optional. |
 

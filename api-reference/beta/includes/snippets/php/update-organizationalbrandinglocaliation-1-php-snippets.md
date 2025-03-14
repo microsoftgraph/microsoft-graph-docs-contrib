@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Organization\Item\Branding\BrandingRequestBuilderPatchRequestConfiguration;
-use Microsoft\Graph\Generated\Models\OrganizationalBranding;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Organization\Item\Branding\BrandingRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\OrganizationalBranding;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -17,19 +17,19 @@ import (
 
 requestBody := graphmodels.NewAccessPackageResourceRoleScope()
 additionalData := map[string]interface{}{
-role := graphmodels.New()
+role := graph.New()
 originId := "Eligible"
 role.SetOriginId(&originId) 
 displayName := "Eligible Member"
 role.SetDisplayName(&displayName) 
 originSystem := "DirectoryRole"
 role.SetOriginSystem(&originSystem) 
-resource := graphmodels.New()
+resource := graph.New()
 id := "ea036095-57a6-4c90-a640-013edf151eb1"
 resource.SetId(&id) 
 	role.SetResource(resource)
 	requestBody.SetRole(role)
-scope := graphmodels.New()
+scope := graph.New()
 description := "Root Scope"
 scope.SetDescription(&description) 
 displayName := "Root"

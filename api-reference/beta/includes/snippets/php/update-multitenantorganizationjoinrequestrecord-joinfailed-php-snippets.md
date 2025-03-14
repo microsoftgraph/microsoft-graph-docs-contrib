@@ -5,8 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\MultiTenantOrganizationJoinRequestRecord;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\MultiTenantOrganizationJoinRequestRecord;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

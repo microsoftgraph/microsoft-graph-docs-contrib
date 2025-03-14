@@ -19,7 +19,7 @@ requestBody := graphmodels.NewConversationThread()
 additionalData := map[string]interface{}{
 	"originalStartTimeZone" : "originalStartTimeZone-value", 
 	"originalEndTimeZone" : "originalEndTimeZone-value", 
-responseStatus := graphmodels.New()
+responseStatus := graph.New()
 response := ""
 responseStatus.SetResponse(&response) 
 time := "datetime-value"

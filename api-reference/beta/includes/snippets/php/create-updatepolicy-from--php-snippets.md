@@ -5,17 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\UpdatePolicy;
-use Microsoft\Graph\Generated\Models\DeploymentAudience;
-use Microsoft\Graph\Generated\Models\ComplianceChange;
-use Microsoft\Graph\Generated\Models\ContentApproval;
-use Microsoft\Graph\Generated\Models\ComplianceChangeRule;
-use Microsoft\Graph\Generated\Models\ContentApprovalRule;
-use Microsoft\Graph\Generated\Models\DriverUpdateFilter;
-use Microsoft\Graph\Generated\Models\DeploymentSettings;
-use Microsoft\Graph\Generated\Models\ScheduleSettings;
-use Microsoft\Graph\Generated\Models\RateDrivenRolloutSettings;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\UpdatePolicy;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\DeploymentAudience;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\ComplianceChange;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\ContentApproval;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\ComplianceChangeRule;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\ContentApprovalRule;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\DriverUpdateFilter;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\DeploymentSettings;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\ScheduleSettings;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\RateDrivenRolloutSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -24,7 +24,7 @@ roles := []string {
 }
 requestBody.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/users/jacob@contoso.com", 
+	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users/jacob@contoso.com", 
 }
 requestBody.SetAdditionalData(additionalData)
 

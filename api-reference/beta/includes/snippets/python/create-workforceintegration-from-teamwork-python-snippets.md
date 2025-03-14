@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.workforce_integration import WorkforceIntegration
-from msgraph.generated.models.workforce_integration_encryption import WorkforceIntegrationEncryption
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.workforce_integration import WorkforceIntegration
+from msgraph_beta.generated.models.workforce_integration_encryption import WorkforceIntegrationEncryption
+from msgraph_beta.generated.models.workforce_integration_encryption_protocol import WorkforceIntegrationEncryptionProtocol
+from msgraph_beta.generated.models.workforce_integration_supported_entities import WorkforceIntegrationSupportedEntities
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WorkforceIntegration(
 	display_name = "displayName-value",
 	api_version = 99,

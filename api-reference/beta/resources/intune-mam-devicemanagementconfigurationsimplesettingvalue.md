@@ -2,9 +2,10 @@
 title: "deviceManagementConfigurationSimpleSettingValue resource type"
 description: "Simple setting value"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/12/2024
 ---
 
 # deviceManagementConfigurationSimpleSettingValue resource type
@@ -18,7 +19,7 @@ Namespace: microsoft.graph
 Simple setting value
 
 
-Inherits from [deviceManagementConfigurationSettingValue](../resources/intune-shared-devicemanagementconfigurationsettingvalue.md)
+Inherits from [deviceManagementConfigurationSettingValue](../resources/intune-mam-devicemanagementconfigurationsettingvalue.md)
 
 ## Properties
 |Property|Type|Description|

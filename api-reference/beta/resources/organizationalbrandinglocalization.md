@@ -1,10 +1,11 @@
 ---
 title: "organizationalBrandingLocalization resource type"
 description: "Contains details of the organization's branding localizations."
-author: "quievey"
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # organizationalBrandingLocalization resource type
@@ -20,11 +21,11 @@ Inherits from [organizationalBrandingProperties](organizationalbrandingpropertie
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List organizationalBrandingLocalizations](../api/organizationalbranding-list-localizations.md)|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) collection|Get a list of the [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) objects and their properties.|
-|[Create organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md)|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md)|Create a new [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.|
-|[Get organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md)|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md)|Read the properties and relationships of an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.|
-|[Update organizationalBrandingLocalization](../api/organizationalbrandinglocalization-update.md)| None |Update the properties of an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.|
-|[Delete organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md)|None|Deletes an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.|
+|[List](../api/organizationalbranding-list-localizations.md)|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) collection|Get a list of the [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) objects and their properties.|
+|[Create](../api/organizationalbranding-post-localizations.md)|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md)|Create a new [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.|
+|[Get](../api/organizationalbrandinglocalization-get.md)|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md)|Read the properties and relationships of an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.|
+|[Update](../api/organizationalbrandinglocalization-update.md)| None |Update the properties of an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.|
+|[Delete](../api/organizationalbrandinglocalization-delete.md)|None|Deletes an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.|
 
 ## Properties
 
@@ -68,7 +69,7 @@ Inherits from [organizationalBrandingProperties](organizationalbrandingpropertie
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

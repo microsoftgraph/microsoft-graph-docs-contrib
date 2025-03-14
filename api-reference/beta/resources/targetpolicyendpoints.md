@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "notifications"
 doc_type: "resourcePageType"
 author: "merzink"
+ms.date: 07/22/2024
 ---
 
 
@@ -25,7 +26,7 @@ Represents the platforms that can be targeted to receive notifications sent to t
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

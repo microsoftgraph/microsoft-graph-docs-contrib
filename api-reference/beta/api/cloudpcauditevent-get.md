@@ -5,6 +5,7 @@ author: "ecmadao"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 06/03/2024
 ---
 
 # Get cloudPcAuditEvent
@@ -157,7 +158,6 @@ Content-Type: application/json
           "newValue": "new-adDomainUsername"
         }
       ],
-      "type": "CloudPcOnPremisesConnection",
       "resourceType": "CloudPcOnPremisesConnection",
       "resourceId": "a7508af8-d334-41ba-83a7-26cc88959724"
     }

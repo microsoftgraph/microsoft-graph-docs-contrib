@@ -18,10 +18,10 @@ import (
 
 requestTop := int32(2)
 
-requestParameters := &grapheducation.EducationClasseItemAssignmentsDelta()RequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.ClassesItemAssignmentsDeltaRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &grapheducation.EducationClasseItemAssignmentsDelta()RequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.ClassesItemAssignmentsDeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

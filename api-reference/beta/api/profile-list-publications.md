@@ -3,8 +3,9 @@ title: "List publications"
 description: "Get the itemPublications from the publications navigation property."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
+ms.date: 06/11/2024
 ---
 
 # List publications

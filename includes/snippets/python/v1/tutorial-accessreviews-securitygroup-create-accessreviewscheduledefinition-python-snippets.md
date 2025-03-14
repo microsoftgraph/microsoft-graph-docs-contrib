@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_review_schedule_definition import AccessReviewScheduleDefinition
 from msgraph.generated.models.access_review_scope import AccessReviewScope
 from msgraph.generated.models.access_review_schedule_settings import AccessReviewScheduleSettings
 from msgraph.generated.models.patterned_recurrence import PatternedRecurrence
 from msgraph.generated.models.recurrence_range import RecurrenceRange
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+from msgraph.generated.models.recurrence_range_type import RecurrenceRangeType
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessReviewScheduleDefinition(
 	display_name = "One-time self-review for members of Building security",
 	description_for_admins = "One-time self-review for members of Building security",

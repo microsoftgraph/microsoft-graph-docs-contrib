@@ -5,6 +5,7 @@ author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # classGroupProvisioningFlow resource type
@@ -25,9 +26,9 @@ Inherits from [microsoft.graph.industryData.provisioningFlow](industrydata-provi
 
 | Method                                                                                            | Return type                                                                                                                   | Description                                                                                                                                                           |
 | :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Get classGroupProvisioningFlow](../api/industrydata-classgroupprovisioningflow-get.md)           | [microsoft.graph.industryData.classGroupProvisioningFlow](industrydata-classgroupprovisioningflow.md)            | Read the properties and relationships of a classgroupprovisioningflow object. |
-| [Update classGroupProvisioningFlow](../api/industrydata-classgroupprovisioningflow-update.md)     | [microsoft.graph.industryData.classGroupProvisioningFlow](industrydata-classgroupprovisioningflow.md)            | Update the properties of a classgroupprovisioningflow object.                 |
-| [Delete classGroupProvisioningFlow](../api/industrydata-classgroupprovisioningflow-delete.md)     | None.                                                                                                                          | Delete a classgroupprovisioningflow object.                                   |
+| [Get](../api/industrydata-classgroupprovisioningflow-get.md)           | [microsoft.graph.industryData.classGroupProvisioningFlow](industrydata-classgroupprovisioningflow.md)            | Read the properties and relationships of a classgroupprovisioningflow object. |
+| [Update](../api/industrydata-classgroupprovisioningflow-update.md)     | [microsoft.graph.industryData.classGroupProvisioningFlow](industrydata-classgroupprovisioningflow.md)            | Update the properties of a classgroupprovisioningflow object.                 |
+| [Delete](../api/industrydata-classgroupprovisioningflow-delete.md)     | None.                                                                                                                          | Delete a classgroupprovisioningflow object.                                   |
 
 ## Properties
 

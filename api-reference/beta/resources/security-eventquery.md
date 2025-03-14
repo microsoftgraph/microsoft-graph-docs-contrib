@@ -3,8 +3,9 @@ title: "eventQuery resource type"
 description: "Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: resourcePageType
+ms.date: 06/11/2024
 ---
 
 # eventQuery resource type

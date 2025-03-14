@@ -5,6 +5,7 @@ author: "angelo-moulic"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # hostPort resource type
@@ -23,8 +24,8 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                               | Return type                                                                       | Description                                                     |
 |:-----------------------------------------------------|:----------------------------------------------------------------------------------|:----------------------------------------------------------------|
-| [List hostPorts](../api/security-host-list-ports.md) | [microsoft.graph.security.hostPort](../resources/security-hostport.md) collection | Get a list of **hostPort** objects assoicated with a **host**.      |
-| [Get hostPort](../api/security-hostport-get.md)      | [microsoft.graph.security.hostPort](../resources/security-hostport.md)            | Read the properties and relationships of a **hostPort** object. |
+| [List](../api/security-host-list-ports.md) | [microsoft.graph.security.hostPort](../resources/security-hostport.md) collection | Get a list of **hostPort** objects assoicated with a **host**.      |
+| [Get](../api/security-hostport-get.md)      | [microsoft.graph.security.hostPort](../resources/security-hostport.md)            | Read the properties and relationships of a **hostPort** object. |
 
 ## Properties
 
@@ -50,7 +51,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

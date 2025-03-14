@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\UpdateRecordingStatusPostRequestBody;
+use Microsoft\Graph\Generated\Communications\Calls\Item\UpdateRecordingStatus\UpdateRecordingStatusPostRequestBody;
+use Microsoft\Graph\Generated\Models\RecordingStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

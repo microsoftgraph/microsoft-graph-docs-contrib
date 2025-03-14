@@ -20,7 +20,7 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphusers.UserItemSecurityInformationProtectionSensitivityLabelsMicrosoft.graph.security.evaluateClassificationResultsRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.ItemSecurityInformationProtectionSensitivityLabelsMicrosoft.graph.security.evaluateClassificationResultsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphusers.NewEvaluateClassificationResultsPostRequestBody()
@@ -36,9 +36,9 @@ metadata := []graphmodelssecurity.KeyValuePairable {
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.security.contentFormat", 
+	"format@odata.type" : "#microsoft.graph.security.contentFormat", 
 	"format" : "default", 
-	"odataType" : "#microsoft.graph.security.contentState", 
+	"state@odata.type" : "#microsoft.graph.security.contentState", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)

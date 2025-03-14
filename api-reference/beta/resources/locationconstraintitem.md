@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 03/21/2024
 ---
 
 # locationConstraintItem resource type
@@ -16,6 +17,9 @@ Namespace: microsoft.graph
 The conditions stated by a client for the location of a meeting.
 
 Derived from [location](location.md).
+
+## Relationships
+None.
 
 ## JSON representation
 

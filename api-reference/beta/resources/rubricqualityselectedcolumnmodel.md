@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "resourcePageType"
+ms.date: 07/23/2024
 ---
 
 # rubricQualitySelectedColumnModel resource type
@@ -22,9 +23,13 @@ Indicates the [rubricLevel](rubriclevel.md) selected by the teacher when grading
 |columnId|String|ID of the selected level for this quality.|
 |qualityId|String|ID of the associated quality.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

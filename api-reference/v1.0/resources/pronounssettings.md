@@ -3,8 +3,9 @@ title: "pronounsSettings resource type"
 description: "Represents the settings that manage the support of pronouns in an organization."
 author: "aymen-ms"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: resourcePageType
+ms.date: 06/10/2024
 ---
 
 # pronounsSettings resource type
@@ -21,8 +22,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List pronounsSettings](../api/peopleadminsettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md)|Get the properties of the [pronounsSettings](../resources/pronounssettings.md) resource for an organization.|
-|[Update pronounsSettings](../api/pronounssettings-update.md)|[pronounsSettings](../resources/pronounssettings.md)|Update the properties of a [pronounsSettings](../resources/pronounssettings.md) object in an organization.|
+|[List](../api/peopleadminsettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md)|Get the properties of the [pronounsSettings](../resources/pronounssettings.md) resource for an organization.|
+|[Update](../api/pronounssettings-update.md)|[pronounsSettings](../resources/pronounssettings.md)|Update the properties of a [pronounsSettings](../resources/pronounssettings.md) object in an organization.|
 
 ## Properties
 

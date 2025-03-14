@@ -7,6 +7,7 @@ author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # shipmentMethod resource type
@@ -21,10 +22,10 @@ Represents a method of shipment in Dynamics 365 Business Central, such as UPS, F
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get shipmentMethod](../api/dynamics-shipmentmethods-get.md)|shipmentMethod|Get a shipment method.|
-|[Create shipmentMethod](../api/dynamics-create-shipmentmethods.md)|shipmentMethod|Create a shipment method.|
-|[Update shipmentMethod](../api/dynamics-shipmentmethods-update.md)|shipmentMethod|Update a shipment method.|
-|[Delete shipmentMethod](../api/dynamics-shipmentmethods-delete.md)|None|Delete a shipment method.|
+|[Get shipment methods](../api/dynamics-shipmentmethods-get.md)|shipmentMethod|Get a shipment method.|
+|[Create shipment methods](../api/dynamics-create-shipmentmethods.md)|shipmentMethod|Create a shipment method.|
+|[Update shipment methods](../api/dynamics-shipmentmethods-update.md)|shipmentMethod|Update a shipment method.|
+|[Delete shipment methods](../api/dynamics-shipmentmethods-delete.md)|None|Delete a shipment method.|
 
 ## Properties
 | Property	   | Type	|Description|

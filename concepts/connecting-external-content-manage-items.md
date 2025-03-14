@@ -5,10 +5,11 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
+ms.date: 11/07/2024
 ---
 <!---<author of this doc: rsamai>--->
 
-# Create, update, and delete items added by your application via Microsoft Graph connectors
+# Create, update, and delete items in a Microsoft Graph connection
 
 Microsoft Graph connectors offer an intuitive way to bring external data into Microsoft Graph. Items your application adds to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalconnectors-externalitem) resource in Microsoft Graph.
 
@@ -110,7 +111,7 @@ Content-Type: application/json
 ]
 ```
 
-You can also add an activity to an item in the same request that creates the item. Add the activity as another entity, like `acl` and `content`. If you add an activity this way, include the `@odata.type` for the activity, or the request fails. Activities with timestamps older than seven days don't surface in the Microsoft 365 app. End users can only see activities in the Microsoft 365 app for items they can access and have an activity on (for example, shared with them, created, edited, and so on).
+You can also add an activity to an item in the same request that creates the item. Add the activity as another entity, like `acl` and `content`. If you add an activity this way, include the `@odata.type` for the activity, or the request fails. Activities with timestamps older than seven days don't surface in the Microsoft 365 app. End users can only see activities in the Microsoft 365 app for items they can access and have an activity on (for example, shared with them, created, and edited).
 
 ## Update an item
 

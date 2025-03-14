@@ -3,8 +3,9 @@ title: "ediscoveryNoncustodialDataSource: release"
 description: "Release the non-custodial data source from the case."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
+ms.date: 06/10/2024
 ---
 
 # ediscoveryNoncustodialDataSource: release

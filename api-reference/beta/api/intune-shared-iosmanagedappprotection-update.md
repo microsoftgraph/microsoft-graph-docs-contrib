@@ -2,9 +2,10 @@
 title: "Update iosManagedAppProtection"
 description: "Update the properties of a iosManagedAppProtection object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.subservice: "intune"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Update iosManagedAppProtection
@@ -17,9 +18,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
-## Permissions
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -31,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 | &nbsp; &nbsp; **Mobile app management (MAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **Policy Set** | DeviceManagementApps.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {

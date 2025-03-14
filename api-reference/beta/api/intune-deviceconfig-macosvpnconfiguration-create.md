@@ -2,9 +2,10 @@
 title: "Create macOSVpnConfiguration"
 description: "Create a new macOSVpnConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create macOSVpnConfiguration
@@ -84,6 +85,7 @@ The following table shows the properties that are required when you create the m
 |disconnectOnIdleTimerInSeconds|Int32|The length of time in seconds to wait before disconnecting an on-demand connection. Valid values 0 to 65535 Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy Server. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |optInToDeviceIdSharing|Boolean|Opt-In to sharing the device's Id to third-party vpn clients for use during network access control validation. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the deployment channel type used to deploy the configuration profile. Possible values are deviceChannel, userChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 
 
 
@@ -97,7 +99,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3022
+Content-length: 3061
 
 {
   "@odata.type": "#microsoft.graph.macOSVpnConfiguration",
@@ -199,7 +201,8 @@ Content-length: 3022
     "address": "Address value",
     "port": 4
   },
-  "optInToDeviceIdSharing": true
+  "optInToDeviceIdSharing": true,
+  "deploymentChannel": "userChannel"
 }
 ```
 
@@ -208,7 +211,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3194
+Content-Length: 3233
 
 {
   "@odata.type": "#microsoft.graph.macOSVpnConfiguration",
@@ -313,6 +316,7 @@ Content-Length: 3194
     "address": "Address value",
     "port": 4
   },
-  "optInToDeviceIdSharing": true
+  "optInToDeviceIdSharing": true,
+  "deploymentChannel": "userChannel"
 }
 ```

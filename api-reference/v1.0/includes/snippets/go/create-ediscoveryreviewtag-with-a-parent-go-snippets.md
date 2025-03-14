@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 childSelectability := graphmodels.MANY_CHILDSELECTABILITY 
 requestBody.SetChildSelectability(&childSelectability) 
 additionalData := map[string]interface{}{
-	"odataBind" : "", 
+	"parent@odata.bind" : "", 
 }
 requestBody.SetAdditionalData(additionalData)
 

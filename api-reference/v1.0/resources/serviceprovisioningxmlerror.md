@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "PaulEkirapa"
+ms.date: 07/22/2024
 ---
 
 # serviceProvisioningXmlError resource type
@@ -26,7 +27,7 @@ Inherits from [serviceProvisioningError](../resources/serviceprovisioningerror.m
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

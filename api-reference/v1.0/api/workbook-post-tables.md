@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
+ms.date: 08/01/2024
 ---
 
 # Create table
@@ -40,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter           | Type      |Description|
 |:---------------|:----------|:----------|
 | Address  | string| Range address. If you're calling this API off of `worksheets/{id or name}/tables/add` path, there's no need to for sheet name prefix in the address. However, if you're calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
-| hasHeaders  | boolean|Boolean value that indicates whether the range has column labels. If the source doesn't contain headers (when this property set to false), Excel will automatically generate header shifting the data down by one row.|
+| hasHeaders  | Boolean|Boolean value that indicates whether the range has column labels. If the source doesn't contain headers (when this property set to false), Excel will automatically generate header shifting the data down by one row.|
 
 ## Response
 

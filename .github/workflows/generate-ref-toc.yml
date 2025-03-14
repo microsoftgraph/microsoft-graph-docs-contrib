@@ -1,0 +1,92 @@
+name: Generate reference TOC
+
+on:
+  workflow_call:
+    inputs:
+      target:
+        description: The target branch to generate the TOC for
+        default: main
+        required: false
+        type: string
+      pull_request:
+        description: Indicates if the TOC should be submitted via a PR
+        default: true
+        required: false
+        type: boolean
+    outputs:
+      result:
+        description: Indicates if TOC generation resulted in changes
+        value: ${{ jobs.generate-ref-toc.outputs.result }}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate-ref-toc:
+    name: Generate reference TOC
+    runs-on: ubuntu-latest
+    outputs:
+      result: ${{ steps.commit-if-needed.outputs.result }}
+    steps:
+    - name: Checkout docs repo
+      uses: actions/checkout@v4.1.3
+      with:
+        ref: ${{ inputs.target }}
+        path: docs
+    - name: Checkout tool repo
+      uses: actions/checkout@v4.1.3
+      with:
+        repository: microsoftgraph/msgraph-toc-gen
+        path: tool
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.x
+    - name: Build TOC generation tool
+      working-directory: ./tool
+      run: dotnet build --configuration Release
+    - name: Run cloud support tool
+      env:
+        TOOL: ./tool/src/bin/Release/net8.0/GenerateTOC
+      run: |
+        $TOOL --api-docs ./docs/api-reference/v1.0/api --resource-docs ./docs/api-reference/v1.0/resources --mapping ./docs/api-reference/v1.0/toc/toc.mapping.json --terms-override ./docs/api-reference/toc.terms.overrides.json --toc ./docs/api-reference/v1.0/toc.yml --static-toc ./docs/api-reference/v1.0/toc/static-toc.yml
+        $TOOL --api-docs ./docs/api-reference/beta/api --resource-docs ./docs/api-reference/beta/resources --mapping ./docs/api-reference/beta/toc/toc.mapping.json --terms-override ./docs/api-reference/toc.terms.overrides.json --toc ./docs/api-reference/beta/toc.yml --static-toc ./docs/api-reference/beta/toc/static-toc.yml
+    - name: Get token
+      id: get_token
+      if: ${{ inputs.pull_request }}
+      uses: microsoftgraph/get-app-token@v1.0.4
+      continue-on-error: true
+      with:
+        application-id: ${{ secrets.APPLICATION_ID }}
+        application-private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
+    - name: Commit updates and open pull request
+      id: commit-if-needed
+      working-directory: ./docs
+      shell: pwsh
+      env:
+        GH_TOKEN: ${{ steps.get_token.outputs.app-token }}
+        PULL_REQUEST: ${{ inputs.pull_request }}
+      run: |
+        $status = git status --porcelain
+        if ($status -eq $null) {
+          echo "result=TOC generation resulted in no changes" >> $env:GITHUB_OUTPUT
+          Write-Host "No changes to commit." -ForegroundColor Green
+        } else {
+          git config user.email "GraphTooling@service.microsoft.com"
+          git config user.name "Microsoft Graph DevX Tooling"
+          if ($Env:PULL_REQUEST -eq $true) {
+            $timestamp = Get-Date -Format FileDateTimeUniversal
+            git checkout -b ref-toc-generation/$timestamp
+            git add .
+            git commit -m "Update reference TOC"
+            git push --set-upstream origin ref-toc-generation/$timestamp
+            gh pr create --base main --title "Update reference TOC" --body "Ran TOC generation tool" --label "ready to merge"
+            echo "result=TOC generation changes submitted via PR" >> $env:GITHUB_OUTPUT
+          } else {
+            git add .
+            git commit -m "Update reference TOC"
+            git push
+            echo "result=TOC generation changes committed successfully" >> $env:GITHUB_OUTPUT
+          }
+        }

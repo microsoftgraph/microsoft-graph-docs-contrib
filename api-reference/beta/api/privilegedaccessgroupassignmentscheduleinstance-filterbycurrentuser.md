@@ -5,6 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 06/26/2024
 ---
 
 # privilegedAccessGroupAssignmentScheduleInstance: filterByCurrentUser
@@ -36,7 +37,6 @@ GET /identityGovernance/privilegedAccess/group/assignmentScheduleInstances/filte
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

@@ -2,9 +2,10 @@
 title: "windowsStoreApp resource type"
 description: "Contains properties and inherited properties for Windows Store apps."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # windowsStoreApp resource type

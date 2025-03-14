@@ -5,6 +5,7 @@ author: "tommoser"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # informationProtection resource type
@@ -31,7 +32,7 @@ None.
 | sensitivityLabels   | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) collection |Read the Microsoft Purview Information Protection labels for the user or organization.          |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

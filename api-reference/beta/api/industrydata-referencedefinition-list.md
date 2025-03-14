@@ -5,6 +5,7 @@ author: "mlafleur"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
+ms.date: 05/15/2024
 ---
 
 # List referenceDefinitions
@@ -126,6 +127,7 @@ Content-Type: application/json
     {
       "code": "home",
       "createdDateTime": "0001-01-01T00:00:00Z",
+      "displayName": "Home/personal",
       "id": "RefEmailAddressType-home",
       "isDisabled": false,
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
@@ -136,6 +138,7 @@ Content-Type: application/json
     {
       "code": "01",
       "createdDateTime": "0001-01-01T00:00:00Z",
+      "displayName": "First grade",
       "id": "RefGradeLevel-01",
       "isDisabled": false,
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
@@ -146,6 +149,7 @@ Content-Type: application/json
     {
       "code": "02",
       "createdDateTime": "0001-01-01T00:00:00Z",
+      "displayName": "Second grade",
       "id": "RefGradeLevel-02",
       "isDisabled": false,
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
@@ -156,6 +160,7 @@ Content-Type: application/json
     {
       "code": "undergraduate",
       "createdDateTime": "0001-01-01T00:00:00Z",
+      "displayName": "Undergraduate",
       "id": "RefGradeLevel-undergraduate",
       "isDisabled": false,
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
@@ -166,6 +171,7 @@ Content-Type: application/json
     {
       "code": "username",
       "createdDateTime": "0001-01-01T00:00:00Z",
+      "displayName": "Username",
       "id": "RefIdentifierType-username",
       "isDisabled": false,
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
@@ -176,6 +182,7 @@ Content-Type: application/json
     {
       "code": "academicTrust",
       "createdDateTime": "0001-01-01T00:00:00Z",
+      "displayName": "Academic Trust",
       "id": "RefOrgType-academicTrust",
       "isDisabled": false,
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",

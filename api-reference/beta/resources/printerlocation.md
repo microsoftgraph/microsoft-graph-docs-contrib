@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # printerLocation resource type
@@ -36,9 +37,13 @@ Represents the physical and hierarchical location of a printer.
 |subdivision|String collection|The subdivision that the printer is located in. The elements should be in hierarchical order.|
 |stateOrProvince|String|The state or province that the printer is located in.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

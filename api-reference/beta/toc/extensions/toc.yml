@@ -1,17 +1,20 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
-  href: ../../graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http
+  href: /graph/extensibility-overview?context=graph%2Fapi%2Fbeta&preserve-view=true
 - name: Directory extension
   items:
   - name: Directory extension
     href: ../../resources/extensionproperty.md
-  - name: Create extensionProperties
+  - name: Create
     href: ../../api/application-post-extensionproperty.md
-  - name: List extensionProperties
+  - name: List
     href: ../../api/application-list-extensionproperty.md
-  - name: Get extensionProperty
+  - name: Get
     href: ../../api/extensionproperty-get.md
-  - name: Delete extensionProperty
+  - name: Delete
     href: ../../api/extensionproperty-delete.md
 - name: Open type extension
   items:

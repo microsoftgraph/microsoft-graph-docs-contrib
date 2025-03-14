@@ -6,6 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 11/30/2024
 ---
 
 # List groups
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the groups available in an organization, excluding dynamic distribution groups. To retrieve dynamic distribution groups, [use the Exchange admin center](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
+List all the [groups](../resources/group.md) available in an organization, excluding dynamic distribution groups. To retrieve dynamic distribution groups, [use the Exchange admin center](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
 
 This operation returns by default only a subset of the more commonly used properties for each group. These _default_ properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query.
 
@@ -39,7 +40,7 @@ GET /groups
 
 This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. The default and maximum page sizes are 100 and 999 group objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
-To list only Microsoft 365 groups (aka unified groups), apply a filter on **groupTypes**:
+To list only Microsoft 365 groups (unified groups), apply a filter on **groupTypes**:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -58,6 +59,17 @@ Extension properties also support query parameters as follows:
 | Directory extensions | Returned by default.          |
 
 For more information on OData query options, see [OData query parameters](/graph/query-parameters). For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+
+### Filter by group types
+
+| Group type                     | API request |
+|--------------------------------|-------------|
+| Microsoft 365 (unified) groups | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DgroupTypes%2Fany(c%3Ac%2Beq%2B'Unified')&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) `/groups?$filter=groupTypes/any(c:c+eq+'Unified')`            |
+| Security groups                | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DmailEnabled%2Beq%2Bfalse%26securityEnabled%2Beq%2Btrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)  `/groups?$filter=mailEnabled eq false&securityEnabled eq true`           |
+| Mail-enabled security groups   | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%2BgroupTypes%2Fany(c%3Ac%2Beq%2B'Unified')%2Band%2BmailEnabled%2Beq%2Btrue%2Band%2BsecurityEnabled%2Beq%2Btrue%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)  `/groups?$filter=NOT groupTypes/any(c:c eq 'Unified') and mailEnabled eq true and securityEnabled eq true&$count=true` <sup> ** </sup>          |
+| Distribution groups            | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%2BgroupTypes%2Fany(c%3Ac%2Beq%2B'Unified')%2Band%2BmailEnabled%2Beq%2Btrue%2Band%2BsecurityEnabled%2Beq%2Bfalse%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `/groups?$filter=NOT groupTypes/any(c:c eq 'Unified') and mailEnabled eq true and securityEnabled eq false&$count=true` <sup> ** </sup>           |
+
+** : This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 
 ## Request headers
 
@@ -228,14 +240,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a filtered list of groups including the count of returned objects
+### Example 2: Get a filtered list of groups 
+
+This request that filters against the **hasMembersWithLicenseErrors** property doesn't support retrieving the count of returned objects.
 
 #### Request
-
-The following example shows a request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
-
-> **Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -244,8 +253,7 @@ The following example shows a request. This request requires the **ConsistencyLe
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups?$count=true&$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
-ConsistencyLevel: eventual
+GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
 
 # [C#](#tab/csharp)
@@ -299,7 +307,6 @@ Content-type: application/json
 
 {
    "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(id,displayName)",
-   "@odata.count":2,
    "value":[
       {
          "id":"11111111-2222-3333-4444-555555555555",

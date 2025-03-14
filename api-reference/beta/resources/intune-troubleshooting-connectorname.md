@@ -2,9 +2,10 @@
 title: "connectorName enum type"
 description: "Connectors name for connector status"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
+ms.date: 09/12/2024
 ---
 
 # connectorName enum type

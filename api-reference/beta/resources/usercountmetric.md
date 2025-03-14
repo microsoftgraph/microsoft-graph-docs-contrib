@@ -5,6 +5,7 @@ author: "srutto"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # userCountMetric resource type
@@ -20,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily userCount](../api/dailyuserinsightmetricsroot-list-usercount.md)| [userCountMetric](../resources/usercountmetric.md) collection|Get a list of daily [user count](../resources/usercountmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List daily](../api/dailyuserinsightmetricsroot-list-usercount.md)| [userCountMetric](../resources/usercountmetric.md) collection|Get a list of daily [user count](../resources/usercountmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|

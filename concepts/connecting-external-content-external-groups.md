@@ -5,6 +5,7 @@ author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
 ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 # Use external groups to manage permissions to Microsoft Graph connectors data sources
@@ -13,39 +14,39 @@ ms.localizationpriority: medium
 
 For data sources that rely on Microsoft Entra users and groups, you set permissions on external items by associating an access control list (ACL) with a Microsoft Entra user and group ID when [creating](/graph/api/externalconnectors-externalconnection-put-items) or updating the external items.
 
-However, for data sources that use non-Azure AD groups or group-like constructs such as Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, or Confluence local groups, we recommend that you use *external groups*.
+However, for data sources that use non-Microsoft Entra ID groups or group-like constructs such as Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, or Confluence local groups, we recommend that you use *external groups*.
 
 ## Common external group scenarios
 
-The following are common non-Azure AD application-specific group examples.
+The following are common non-Microsoft Entra ID application-specific group examples.
 
-Microsoft Dynamics 365 allows customers to structure their CRMs with business units and teams. The membership information for these business units and teams is not stored in Microsoft Entra ID.
+Microsoft Dynamics 365 allows customers to structure their CRMs with business units and teams. The membership information for these business units and teams isn't stored in Microsoft Entra ID.
 
 The following image shows the structure of the business units and teams.
 
 <!---Using html to adjust the size of the image --->
 <br><p align="center"><img src="images/connectors-images/bu-teams-D365.png" alt="Diagram of a structure in Dynamics 365. A business unit has a team and a manager under it. This manager has other users." width="400px;"/></p>
 
-Salesforce uses profiles, roles, and permission sets for authorization. These are specific to Salesforce, and the membership information is not available in Microsoft Entra ID.
+Salesforce uses profiles, roles, and permission sets for authorization. These are specific to Salesforce, and the membership information isn't available in Microsoft Entra ID.
 
 The following image shows the structure of the membership information in Salesforce.
 
 <!---Using html to adjust the size of the image --->
 <br><p align="center"><img src="images/connectors-images/roles-salesforce.png" alt="Diagram of a structure of roles in Salesforce. The role of vice president of sales is at the top level of the hierarchy and has three subordinates, namely, the head of sales operations, the head of sales, and the head of account management. The head of sales operations has a sales operations manager as a subordinate. The head of sales has a sales development manager as a subordinate." width="500px;"/></p>
 
-## Using external groups in your connection
+## Use external groups in your connection
 
 To use external groups in your connection, follow these steps:
 
-1. For each non-Azure AD group, use the groups API to create an external group in Microsoft Graph.
+1. For each non-Microsoft Entra ID group, use the groups API to create an external group in Microsoft Graph.
 2. Use the external group when defining the ACL for your external items as necessary.
 3. Keep the membership of the external groups up to date and in sync.
 
 ### Create an external group
 
-External groups belong to a connection. To create external groups in your connections, follow these steps:
+External groups belong to a connection. Follow these steps to create external groups in your connections: 
 
-1. Use the [groups API](/graph/api/resources/group) in Microsoft Graph, as shown in the following example.
+1. Use the [groups API](/graph/api/resources/group) in Microsoft Graph. The following example shows how to create an external group.
 
     > [!NOTE]
     > The [displayName](/graph/api/resources/externalconnectors-externalgroup#properties) and **description** are optional fields.
@@ -70,7 +71,7 @@ External groups belong to a connection. To create external groups in your connec
     * A Microsoft Entra group.
     * Another external group, including nested external groups.
 
-3. After you create the group, you can add members to the group, as shown in the following examples.
+3. After you create the group, you can add members to it. The following examples show how to add members to an external group.
     
     ```http
     POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
@@ -151,7 +152,7 @@ Keep the membership of your external group up to date in Microsoft Graph. When m
 
 ### Manage external groups and membership
 
-You can use the groups API to manage your external groups and group membership. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup) and [externalGroupMember](/graph/api/resources/externalconnectors-externalgroupmember).
+You can use the groups API to manage your external groups and group membership. For more information, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup) and [externalGroupMember](/graph/api/resources/externalconnectors-externalgroupmember).
 
 
 > [!NOTE]

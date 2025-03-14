@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationAssignmentGradeType resource type
@@ -19,10 +20,15 @@ This superclass can’t be used directly in the assignment property. It exists t
 
 Base class for [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md).
 
-
 ## Properties
-
 None.
+
+## Relationships
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

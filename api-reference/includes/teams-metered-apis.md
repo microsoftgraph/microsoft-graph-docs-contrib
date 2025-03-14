@@ -1,7 +1,7 @@
 ---
 author: "lauragra"
 ms.localizationpriority: high
-ms.prod: "teamwork-and-communications"
+ms.subservice: "teamwork-and-communications"
 ms.topic: include
 ---
 

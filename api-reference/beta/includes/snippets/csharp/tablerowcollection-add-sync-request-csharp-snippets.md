@@ -8,24 +8,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new WorkbookTableRow
 {
-	Values = new List<List<Number>>
+	Values = new UntypedArray(new List<UntypedNode>
 	{
-		new List<Number>
+		new UntypedArray(new List<UntypedNode>
 		{
-			1,
-			2,
-			3,
-		},
-		new List<Number>
+			new UntypedDouble(1),
+			new UntypedDouble(2),
+			new UntypedDouble(3),
+		}),
+		new UntypedArray(new List<UntypedNode>
 		{
-			4,
-			5,
-			6,
-		},
-	},
+			new UntypedDouble(4),
+			new UntypedDouble(5),
+			new UntypedDouble(6),
+		}),
+	}),
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

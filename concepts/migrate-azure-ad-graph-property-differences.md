@@ -3,7 +3,7 @@ title: "Property differences between Azure AD Graph and Microsoft Graph"
 description: "Describes property differences between resources (entities) in Azure AD Graph and Microsoft Graph."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: dkershaw
+ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: entra-applications
@@ -13,7 +13,7 @@ ms.date: 03/12/2024
 
 # Property differences between Azure AD Graph and Microsoft Graph
 
-This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+> This article is part of *Step 1: review API differences* in the [Azure AD Graph app migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) series.
 
 In general, the best way to compare the Azure Active Directory (Azure AD) Graph API to Microsoft Graph is to compare the underlying metadata for each service, especially the resource descriptions, which are available through the following endpoints:
 

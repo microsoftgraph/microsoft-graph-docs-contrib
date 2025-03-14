@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/23/2024
 ---
 
 # educationAssignmentClassRecipient resource type
@@ -22,6 +23,9 @@ This resource is a subclass of [educationAssignmentRecipient](educationassignmen
 
 None.
 
+## Relationships
+
+None.
 
 <!-- {
   "blockType": "resource",

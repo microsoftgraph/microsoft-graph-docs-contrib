@@ -7,6 +7,7 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # company resource type
@@ -21,7 +22,7 @@ Represents a company resource type in Dynamics 365 Business Central.
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get company](../api/dynamics-companies-get.md)|company|Get a company.|
+|[Get companies](../api/dynamics-companies-get.md)|company|Get a company.|
 
 ## Properties
 | Property	      | Type |Description                             |

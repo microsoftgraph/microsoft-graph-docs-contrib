@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # commsNotifications resource type
@@ -21,9 +22,12 @@ List of notifications used by the Communications servers for sending multiple no
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
 | value          | [commsNotification](commsnotification.md) collection | The notification of a change in the resource. |
 
+## Relationships
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

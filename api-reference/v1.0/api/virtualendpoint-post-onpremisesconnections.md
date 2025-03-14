@@ -5,6 +5,7 @@ author: "Emma0727"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # Create cloudPcOnPremisesConnection
@@ -39,7 +40,7 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 | Name          | Description                |
 | :------------ | :------------------------  |
-| Authorization | Bearer {token}. Required.  |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.|
 
 ## Request body

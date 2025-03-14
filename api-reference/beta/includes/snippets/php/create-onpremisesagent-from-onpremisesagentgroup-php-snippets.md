@@ -5,8 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\OnPremisesAgentGroup;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\OnPremisesAgentGroup;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
