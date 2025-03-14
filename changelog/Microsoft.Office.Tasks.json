@@ -9,7 +9,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **publicationName** property to the [plannerTeamsPublicationInfo](https://learn.microsoft.com/en-us/graph/api/resources/plannerteamspublicationinfo?view=graph-rest-beta) resource.",
           "Target": "plannerTeamsPublicationInfo"
-        },
+        }
       ],
       "Id": "0341bdcb-189b-4298-aaca-6b519455fc34",
       "Cloud": "Prod",
