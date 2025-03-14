@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationjob-post-bulkupload-permissions.md)]
 
 > [!NOTE]
-> This API is primarily meant for use within an application or service responsible for processing authoritative identity data and uploading it to Microsoft Entra ID. Tenant admins can either [configure a service principal or managed identity](/azure/active-directory/app-provisioning/inbound-provisioning-api-grant-access) to grant permission to perform the upload. There is no separate user-assignable Microsoft Entra built-in directory role for this API. Outside of applications that have acquired `SynchronizationData-User.Upload` permission with admin consent, only admin users with *Global Administrator* role can invoke the API.
+> This API is primarily meant for use within an application or service responsible for processing authoritative identity data and uploading it to Microsoft Entra ID. Tenant admins can either [configure a service principal or managed identity](/azure/active-directory/app-provisioning/inbound-provisioning-api-grant-access) to grant permission to perform the upload. There is no separate user-assignable Microsoft Entra built-in directory role for this API. Outside of applications that have acquired `SynchronizationData-User.Upload` permission with admin consent, admin users with the [User Administrator](/entra-docs-pr/docs/identity/role-based-access-control/permissions-reference.md#user-administrator) role can invoke the API.
 
 ## HTTP request
 
