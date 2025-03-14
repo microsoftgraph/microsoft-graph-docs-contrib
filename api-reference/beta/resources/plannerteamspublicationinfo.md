@@ -12,7 +12,9 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Contains detailed information about the publication process that created a [plannerTask](plannertask.md). A publication process creates copies of tasks based on a template. These tasks are created in multiple plans, and have restricted permissions for the users; for example, they can't be deleted and users might be blocked from editing certain fields. Publication is used to distribute tasks across an organization and track their progress centrally. This type derives from [plannerTaskCreation](plannerTaskCreation.md).
+Contains detailed information about the publication process that created a [plannerTask](plannertask.md). A publication process creates copies of tasks based on a template. These tasks are created in multiple plans, and have restricted permissions for the users; for example, they can't be deleted and users might be blocked from editing certain fields. Publication is used to distribute tasks across an organization and track their progress centrally.
+
+Inherited from [plannerTaskCreation](plannertaskcreation.md).
 
 ## Properties
 |Property|Type|Description|
