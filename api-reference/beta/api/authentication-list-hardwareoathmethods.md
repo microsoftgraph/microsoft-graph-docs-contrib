@@ -42,6 +42,8 @@ Get details of your own hardware OATH methods.
 GET /me/authentication/hardwareOathMethods
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get details of another user's hardware OATH methods.
 <!-- {
   "blockType": "ignored"
@@ -106,6 +108,10 @@ GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-hardwareoathauthenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-hardwareoathauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

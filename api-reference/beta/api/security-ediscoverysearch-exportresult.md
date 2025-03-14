@@ -375,7 +375,7 @@ Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06
 
 ### Example 5: Export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message
 
-The following example shows how to export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message.
+The following example shows how to export results with partially indexed items in search hit locations and cloud attachments. It specifies how many document and cloud attachment versions to include and .eml files for each message. 
 
 #### Request
 
@@ -396,7 +396,9 @@ Content-Type: application/json
   "exportCriteria": "partiallyIndexed",
   "exportLocation": "responsiveLocations",
   "additionalOptions": "cloudAttachments",
-  "exportFormat": "eml"
+  "exportFormat": "eml",
+  "cloudAttachmentVersion": "all",
+  "documentVersion": "recent100"
 }
 ```
 
