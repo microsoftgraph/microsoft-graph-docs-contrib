@@ -2952,11 +2952,11 @@
               "name": "Call delegation",
               "overview": "../../resources/calldelegation-api-overview.md",
               "resources": [
-                "microsoft.graph.callSettings",
-                "microsoft.graph.delegationSettings"
+                "callSettings",
+                "delegationSettings"
               ],
               "complexTypes": [
-                "microsoft.graph.delegateAllowedActions"
+                "delegateAllowedActions"
               ]
             },
             {
