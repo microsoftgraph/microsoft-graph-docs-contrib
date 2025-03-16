@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To list all delegators with delegated (`/me`) and app (`/users/{userId}/`) permission:
+To list all delegators for to the signed-in user (`/me`) or a specific user (`/users/{userId}/`):
 
 <!-- {
   "blockType": "ignored"
@@ -60,7 +60,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all delegators
+
+The following example shows how to get all delegators for the signed-in user (`me`).
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -72,14 +76,15 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.delegationSettings"
+  "@odata.type": "Collection(microsoft.graph.delegationSettings)"
 }
 -->
 ``` http
@@ -120,28 +125,32 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Get all delegators who are able to make calls
 
-### Request
+The following example shows how to get all delegators who area able to make calls.
 
-The example below demonstrates a request for delegators able to make calls.
+#### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_delegationsettings_delegators1"
+  "name": "list_delegationsettings_delegators_filter_makecalls"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators?filter=allowedActions/makeCalls eq true 
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.delegationSettings"
+  "@odata.type": "Collection(microsoft.graph.delegationSettings)"
 }
 -->
 ``` http
@@ -157,14 +166,13 @@ Content-Type: application/json
       "isActive": true,
       "allowedActions": {
         "@odata.type": "microsoft.graph.delegateAllowedActions",
-        "makeCalls": true, 
-        "receiveCalls": true, 
-        "manageCallAndDelegateSettings": true, 
-        "pickUpHeldCalls": true, 
-        "joinActiveCalls": false 
+        "makeCalls": true,
+        "receiveCalls": true,
+        "manageCallAndDelegateSettings": true,
+        "pickUpHeldCalls": true,
+        "joinActiveCalls": false
       }
     }
   ]
 }
 ```
-
