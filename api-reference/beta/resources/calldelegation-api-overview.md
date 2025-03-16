@@ -1,6 +1,6 @@
 ---
 title: "Working with the call delegation APIs in Microsoft Graph (preview)"
-description: "Contains information about a call delegation flow."
+description: "Learn how to use the call delegation APIs to streamline communication workflows into custom applications."
 author: "garchiro7"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
@@ -11,6 +11,22 @@ ms.date: 02/01/2025
 # Working with the call delegation APIs in Microsoft Graph (preview)
 
 Learn how to use the call delegation APIs to streamline communication workflows into custom applications. These APIs enable querying and managing delegates and delegators to enhance collaborative call scenarios, such as shared line appearances and proxy calling.
+
+## Prerequisites
+
+To access these APIs, the following configurations are required:
+
+- **Permissions**: Assign delegated scopes to your application for access. Use the following URL to sign in with an admin account and assign permissions:
+
+   ```
+   https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={Client-App-ID}&response_type=code&scope=https://graph.microsoft.com/CallDelegation.Read
+   ```
+
+- **Policies**: Assign the `AllowDelegation` policy in Microsoft Teams using [PowerShell](/powershell/module/teams/set-csteamscallingpolicy?view=teams-ps#-allowdelegation):
+
+   ```
+   Set-CsTeamsCallingPolicy -AllowDelegation $true
+   ```
 
 ## Introduction to Teams delegation
 
@@ -23,35 +39,21 @@ Microsoft Graph enable developers to programmatically manage delegators and dele
 - Streamlining communication workflows within teams.
 
 ### Who is a delegator?
+
 A delegator is a user who grants another user (delegate) the ability to perform certain actions on their behalf. These actions can include making and receiving calls, managing call settings, or joining active calls. Delegators are typically users who need assistance in handling their communication responsibilities.
 
 ### Who is a delegate?
+
 A delegate is a user who is assigned responsibilities by a delegator. Delegates can take specific actions like answering calls, initiating calls, and managing call settings on behalf of the delegator. This role is commonly used by assistants or team members to facilitate seamless communication workflows.
-
-## Prerequisites
-
-To access these APIs, the following configurations are required:
-
-1. **Permissions**: Assign delegated scopes to your application for access. Use the following URL to log in with an admin account and assign permissions:
-
-   ```
-   https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={Client-App-ID}&response_type=code&scope=https://graph.microsoft.com/CallDelegation.Read
-   ```
-
-2. **Policies**: Assign the `AllowDelegation` policy in Microsoft Teams using [PowerShell]( https://learn.microsoft.com/powershell/module/teams/set-csteamscallingpolicy?view=teams-ps#-allowdelegation):
-
-   ```
-   Set-CsTeamsCallingPolicy -AllowDelegation $true
-   ```
 
 ## Common use cases
 
-| Operation                                          |  Return Type                                                 |  Description                              |
+| Operation                                          |  Return type                                                 |  Description                              |
 |--------------------------                          |--------------------------------------------------------------|-------------------------------------------|
-| [List all delegates](../api/callsettings-list-delegates.md)  |  [delegate](../resources/delegationsettings.md) collection   | Retrieve all delegates for a user.         |
-| [Get delegate by ID](../api/delegationsettings-get.md)   |  [delegate](../resources/delegationsettings.md)              | Get details about a specific delegate.      |
-| [List all delegators](../api/callsettings-list-delegators.md)|  [delegator](../resources/delegationsettings.md) collection  | Retrieve all delegators for a user.        |
-| [Get delegator by ID](../api/delegationsettings-get.md) |  [delegator](../resources/delegationsettings.md)             | Get details about a specific delegator.     |
+| [List all delegates](../api/callsettings-list-delegates.md)  |  [delegationSettings](../resources/delegationsettings.md) collection   | Get a list of all delegates for a user.  |
+| [Get delegate by ID](../api/delegationsettings-get.md)   |  [delegationSettings](../resources/delegationsettings.md)              | Get details about a specific delegate.       |
+| [List all delegators](../api/callsettings-list-delegators.md)|  [delegationSettings](../resources/delegationsettings.md) collection  | Get a list of all delegators for a user. |
+| [Get delegator by ID](../api/delegationsettings-get.md) |  [delegationSettings](../resources/delegationsettings.md)             | Get details about a specific delegator.       |
 
 ## Next steps
 
