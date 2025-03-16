@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a delegationSettings object.
+Read the properties and relationships of a [delegationSettings](../resources/delegationsettings.md) object.
 
 ## Permissions
 
@@ -37,32 +37,28 @@ To get details about a specific delegator:
 -->
 ``` http
 GET /me/communications/callSettings/delegators/{delegatorId}
-GET /users/{user_id}/communications/callSettings/delegators/{delegatorId}
+GET /users/{userId}/communications/callSettings/delegators/{delegatorId}
 ```
 
 To get details about a specific delegate:
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /me/communications/callSettings/delegates/{delegateId}
-GET /users/{user_id}/communications/callSettings/delegates/{delegateId}
+GET /users/{userId}/communications/callSettings/delegates/{delegateId}
 ```
 
 ## Optional query parameters
 
-This method supports the OData query parameters like `filter` or `count` to help  customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `filter` and `count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). The following table lists examples.
 
-Get my delegators who have allowed MakeCalls permission to me 
-
-GET me/communications/callSettings/delegates?filter=allowedActions/makeCalls eq true 
-
-Get the number of delegators I have 
-
-GET me/communications/callSettings/delegates?$count=true 
-
-
+|Scenario|Parameter|Example|
+|:---|:---|:---|
+|Get the delegators who have granted the signed-in user the MakeCalls permission.|`$filter`|`GET /me/communications/callSettings/delegates?filter=allowedActions/makeCalls eq true`|
+|Get the number of delegators for the signed-in user.|`$count`|`GET /me/communications/callSettings/delegates?$count=true `|
 
 ## Request headers
 
@@ -107,20 +103,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.delegationSettings",
-    "id": "62de48e1-a72c-40db-9193-a3bd8cf167c9",
-    "createdDateTime": "2025-01-01T00:00:00Z",
-    "isActive": true,
-    "allowedActions": {
-      "@odata.type": "microsoft.graph.delegateAllowedActions",
-      "makeCalls": true, 
-      "receiveCalls": true, 
-      "manageCallAndDelegateSettings": true, 
-      "pickUpHeldCalls": true, 
-      "joinActiveCalls": false 
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.delegationSettings",
+      "id": "62de48e1-a72c-40db-9193-a3bd8cf167c9",
+      "createdDateTime": "2025-01-01T00:00:00Z",
+      "isActive": true,
+      "allowedActions": {
+        "@odata.type": "microsoft.graph.delegateAllowedActions",
+        "makeCalls": true,
+        "receiveCalls": true,
+        "manageCallAndDelegateSettings": true,
+        "pickUpHeldCalls": true,
+        "joinActiveCalls": false
+      }
     }
-  }
+  ]
 }
 ```
-

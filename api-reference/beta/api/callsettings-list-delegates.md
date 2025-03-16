@@ -37,7 +37,7 @@ To list all delegates for to the signed-in user (`/me`) or a specific user (`/us
 -->
 ``` http
 GET /me/communications/callSettings/delegates
-GET /users/{user_id}/communications/callSettings/delegates
+GET /users/{userId}/communications/callSettings/delegates
 ```
 
 ## Optional query parameters
