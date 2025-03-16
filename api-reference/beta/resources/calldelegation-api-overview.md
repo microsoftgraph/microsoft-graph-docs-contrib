@@ -24,7 +24,7 @@ To access these APIs, the following configurations are required:
    https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={Client-App-ID}&response_type=code&scope=https://graph.microsoft.com/CallDelegation.Read
    ```
 
-- **Policies**: Assign the `AllowDelegation` policy in Microsoft Teams using [PowerShell](/powershell/module/teams/set-csteamscallingpolicy?view=teams-ps#-allowdelegation):
+- **Policies**: Assign the `AllowDelegation` policy in Microsoft Teams using [PowerShell](/powershell/module/teams/set-csteamscallingpolicy?view=teams-ps#-allowdelegation&preserve-view=true):
 
    ```
    Set-CsTeamsCallingPolicy -AllowDelegation $true
