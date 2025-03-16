@@ -1,6 +1,6 @@
 ---
 title: "delegationSettings resource type"
-description: "Represents the settings for a delagator or delegate."
+description: "Represents the settings for a delegator or delegate."
 author: "garchiro7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the settings for a [delagator or delegate](../resources/calldelegation-api-overview.md).
+Represents the settings for a [delegator or delegate](../resources/calldelegation-api-overview.md).
 
 Inherits from [entity](../resources/entity.md).
 
