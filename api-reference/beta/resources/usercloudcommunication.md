@@ -17,10 +17,7 @@ Namespace: microsoft.graph
 Represents information about the interaction from communications and a user.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List delegates](../api/callsettings-list-delegates.md)|[delegationSettings](../resources/delegationsettings.md) collection|Retrieve all delegates for a user.    |
-|[List delegators](../api/callsettings-list-delegators.md)|[delegationSettings](../resources/delegationsettings.md) collection|Retrieve all delegators for a user. |
+None.
 
 ## Properties
 None.
@@ -28,7 +25,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|callSettings|[callSettings](../resources/callsettings.md)|The call Settings assigned to the user.|
+|callSettings|[callSettings](../resources/callsettings.md)|The call settings assigned to the user.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

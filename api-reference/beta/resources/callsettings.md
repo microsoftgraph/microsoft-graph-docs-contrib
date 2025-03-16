@@ -19,8 +19,8 @@ Contains information about a call settings resource.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegates](../api/callsettings-list-delegates.md)|[delegationSettings](../resources/delegationsettings.md) collection|Retrieve all delegates for a user.    |
-|[List delegators](../api/callsettings-list-delegators.md)|[delegationSettings](../resources/delegationsettings.md) collection|Retrieve all delegators for a user. |
+|[List delegates](../api/callsettings-list-delegates.md)|[delegationSettings](../resources/delegationsettings.md) collection|Get a list of all delegates for a user.|
+|[List delegators](../api/callsettings-list-delegators.md)|[delegationSettings](../resources/delegationsettings.md) collection|Get a list of all delegators for a user.|
 
 ## Properties
 None.

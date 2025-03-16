@@ -1,6 +1,6 @@
 ---
 title: "delegationSettings resource type"
-description: "Represents the settings for a delegate and delegator."
+description: "Represents the settings for a delagator or delegate."
 author: "garchiro7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -24,8 +24,6 @@ This resource is an open type.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/delegationsettings-get.md)|[delegationSettings](../resources/delegationsettings.md)|Read the properties and relationships of a [delegationSettings](../resources/delegationsettings.md) object.|
-|[List delegates](../api/callsettings-list-delegates.md)|[delegationSettings](../resources/delegationsettings.md) collection|Retrieve all delegates for a user.    |
-|[List delegators](../api/callsettings-list-delegators.md)|[delegationSettings](../resources/delegationsettings.md) collection|Retrieve all delegators for a user. |
 
 ## Properties
 |Property|Type|Description|

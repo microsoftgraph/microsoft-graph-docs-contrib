@@ -2949,6 +2949,17 @@
               ]
             },
             {
+              "name": "Call delegation",
+              "overview": "../../resources/callsettings-api-overview.md",
+              "resources": [
+                "callSettings",
+                "delegationSettings"
+              ],
+              "complexTypes": [
+                "delegateAllowedActions"
+              ]
+            },
+            {
               "name": "Call events",
               "resources": [
                 "microsoft.graph.callEvent",
@@ -2967,17 +2978,6 @@
                 "microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport",
                 "microsoft.graph.callRecords.session",
                 "microsoft.graph.callRecords.smsLogRow"
-              ]
-            },
-            {
-              "name": "Call delegation",
-              "overview": "../../resources/callsettings-api-overview.md",
-              "resources": [
-                "callSettings",
-                "delegationSettings"
-              ],
-              "complexTypes": [
-                "delegateAllowedActions"
               ]
             },
             {
