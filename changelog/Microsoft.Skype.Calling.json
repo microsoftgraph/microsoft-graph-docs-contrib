@@ -63,7 +63,6 @@
     {
       "ChangeList": [
       {
-
           "Id": "cfcf975b-3ebc-4a17-afc0-7b7b7783af98",
           "ApiChange": "Property",
           "ChangedApiName": "isEndToEndEncryptionEnabled",

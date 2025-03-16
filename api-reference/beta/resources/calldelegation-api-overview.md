@@ -10,6 +10,8 @@ ms.date: 02/01/2025
 
 # Working with the call delegation APIs in Microsoft Graph (preview)
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Learn how to use the call delegation APIs to streamline communication workflows into custom applications. These APIs enable querying and managing delegates and delegators to enhance collaborative call scenarios, such as shared line appearances and proxy calling.
 
 ## Prerequisites
