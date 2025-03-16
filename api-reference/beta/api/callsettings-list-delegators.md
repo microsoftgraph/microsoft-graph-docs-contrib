@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To list all delegators for to the signed-in user (`/me`) or a specific user (`/users/{userId}/`):
+To list all delegators for the signed-in user (`/me`) or a specific user (`/users/{userId}/`):
 
 <!-- {
   "blockType": "ignored"
