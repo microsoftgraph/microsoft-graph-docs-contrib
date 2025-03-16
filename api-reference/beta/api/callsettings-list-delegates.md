@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the delegationSettings objects and their properties.
+Get a list of all delegates for a user.
 
 ## Permissions
 
@@ -29,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+To list all delegates for to the signed-in user (`/me`) or a specific user (`/users/{userId}/`):
+
 <!-- {
   "blockType": "ignored"
 }
@@ -40,7 +42,7 @@ GET /users/{user_id}/communications/callSettings/delegates
 
 ## Optional query parameters
 
-This method supports the OData query parameters like `filter` or `count` to help  customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `filter` and `count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -58,26 +60,32 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all delegates
+
+The following example shows how to get all delegates for the signed-in user (`me`).
+
+#### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "list_delegates"
+  "name": "list_delegationsettings_delegates"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/communications/callSettings/delegates
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.delegationSettings"
+  "@odata.type": "Collection(microsoft.graph.delegationSettings)"
 }
 -->
 ``` http
@@ -93,11 +101,11 @@ Content-Type: application/json
       "isActive": true,
       "allowedActions": {
         "@odata.type": "microsoft.graph.delegateAllowedActions",
-        "makeCalls": true, 
-        "receiveCalls": true, 
-        "manageCallAndDelegateSettings": true, 
-        "pickUpHeldCalls": true, 
-        "joinActiveCalls": false 
+        "makeCalls": true,
+        "receiveCalls": true,
+        "manageCallAndDelegateSettings": true,
+        "pickUpHeldCalls": true,
+        "joinActiveCalls": false
       }
     },
     {
@@ -107,39 +115,42 @@ Content-Type: application/json
       "isActive": true,
       "allowedActions": {
         "@odata.type": "microsoft.graph.delegateAllowedActions",
-        "makeCalls": false, 
-        "receiveCalls": true, 
-        "manageCallAndDelegateSettings": true, 
-        "pickUpHeldCalls": true, 
-        "joinActiveCalls": false 
+        "makeCalls": false,
+        "receiveCalls": true,
+        "manageCallAndDelegateSettings": true,
+        "pickUpHeldCalls": true,
+        "joinActiveCalls": false
       }
     }
   ]
 }
 ```
 
+### Example 2: Get all delegates who are able to receive calls
 
-### Request
+The following example shows how to get all delegates who are able to receive calls.
 
-The example below demonstrates a request for delegators able to receive calls.
+#### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_delegates1"
+  "name": "list_delegationsettings_delegates_receivecalls"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/communications/callSettings/delegators?filter=allowedActions/receiveCalls eq true 
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.delegationSettings"
+  "@odata.type": "Collection(microsoft.graph.delegationSettings)"
 }
 -->
 ``` http
@@ -155,11 +166,11 @@ Content-Type: application/json
       "isActive": true,
       "allowedActions": {
         "@odata.type": "microsoft.graph.delegateAllowedActions",
-        "makeCalls": true, 
-        "receiveCalls": true, 
-        "manageCallAndDelegateSettings": true, 
-        "pickUpHeldCalls": true, 
-        "joinActiveCalls": false 
+        "makeCalls": true,
+        "receiveCalls": true,
+        "manageCallAndDelegateSettings": true,
+        "pickUpHeldCalls": true,
+        "joinActiveCalls": false
       }
     }
   ]
