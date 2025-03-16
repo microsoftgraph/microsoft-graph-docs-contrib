@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "linuxEnrollmentAssignments",
           "ChangeType": "Addition",
-          "Description": "Added the **linuxEnrollmentAssignments** property to the [complianceManagementPartner](https://learn.microsoft.com/en-us/graph/api/resources/intune-complianceManagementPartner?view=graph-rest-beta) resource.",
+          "Description": "Added the **linuxEnrollmentAssignments** property to the complianceManagementPartner resource.",
           "Target": "complianceManagementPartner"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "linuxOnboarded",
           "ChangeType": "Addition",
-          "Description": "Added the **linuxOnboarded** property to the [complianceManagementPartner](https://learn.microsoft.com/en-us/graph/api/resources/intune-complianceManagementPartner?view=graph-rest-beta) resource.",
+          "Description": "Added the **linuxOnboarded** property to the complianceManagementPartner resource.",
           "Target": "complianceManagementPartner"
         }
       ],
