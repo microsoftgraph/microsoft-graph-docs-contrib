@@ -2950,7 +2950,7 @@
             },
             {
               "name": "Call delegation",
-              "overview": "../../resources/callsettings-api-overview.md",
+              "overview": "../../resources/calldelegation-api-overview.md",
               "resources": [
                 "callSettings",
                 "delegationSettings"
