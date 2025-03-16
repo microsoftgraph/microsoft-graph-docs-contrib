@@ -23,7 +23,7 @@ Microsoft Graph enable developers to programmatically manage delegators and dele
 - Streamlining communication workflows within teams.
 
 ### Who is a delegator?
-A delegator is a user who grants another user (delegate) the ability to perform certain actions on their behalf, such as making and receiving calls, manage call settings, or join active calls. Delegators are typically users who need assistance in handling their communication responsibilities.
+A delegator is a user who grants another user (delegate) the ability to perform certain actions on their behalf. These actions can include making and receiving calls, managing call settings, or joining active calls. Delegators are typically users who need assistance in handling their communication responsibilities.
 
 ### Who is a delegate?
 A delegate is a user who is assigned responsibilities by a delegator. Delegates can take specific actions like answering calls, initiating calls, and managing call settings on behalf of the delegator. This role is commonly used by assistants or team members to facilitate seamless communication workflows.
