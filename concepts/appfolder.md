@@ -93,30 +93,30 @@ With application permissions the application can access all appfolders associate
 
 ## Other considerations
 
-With the use of AppFolder, there are some other considerations when deciding on the right solution.
+With the use of the app folder, you have some other considerations to keep in mind when you decide on the right solution.
 
-Firstly, AppFolder counts against quota - either a user's OneDrive quota or a SharePoint site's usage quota. Placing large files into the app folder may cause issues for your users. App folder is a great place to store configuration, some temp storage, or drafts.
+Firstly, the app folder counts against quota—either a user's OneDrive quota or the usage quota of a SharePoint site. Placing large files in the app folder may cause issues for your users. The app folder is ideal for storing configuration files, temporary storage, or drafts.
 
-Also, consider your expected user experience. If the user needs to access these files frequently, or interact with them outside your application, `Files.ReadWrite` or `Files.ReadWrite.All` may be better choices allowing you to present a save-as experience and letting them decide where to keep things.
+Next, consider your expected user experience. If users need to access these files frequently or interact with them outside your application, `Files.ReadWrite` or `Files.ReadWrite.All` may be better options, allowing you to present a save-as experience and giving users the ability to choose where to store their files.
 
-And finally, keep in mind that a user can delete, edit, or replace any file within their own OneDrive. While its unlikely, your application should account for this possibility and not blindly trust these files or expect them to always exist. In addition, applications with access to the full OneDrive can access AppFolder files, so keep in mind what types of information you are storing.
+Finally, remember that a user can delete, edit, or replace any file within their own OneDrive. Although it's unlikely, your application should account for this possibility and not blindly trust these files or expect them to always exist. Applications with access to the full OneDrive can also access the app folder files; be mindful of the types of information you're storing.
 
 ## Scenarios
 
-There are many scenarios that can immediately benefit from using AppFolder's capabilites and least-privilege access to read/write files. We included some ideas to get you started - how will you use AppFolders? 
+Many scenarios can immediately benefit from using the capabilities of the app folder and least-privilege access to read/write files. We've included some ideas to get you started - how will you use AppFolders?
 
 ### User configuration
 
-Users access your application from Teams, SharePoint, mobile, and desktop and need to store preferences and settings. Using AppFolder you can easily store configuration files and access them from any device. Easily making your user's settings portable and always accessible with a known path. And you can store multiple settings files if you support different device capabilities.
+Users access your application from Teams, SharePoint, mobile, and desktop and need to store preferences and settings. Using the app folder you can easily store configuration files and access them from any device. Easily making your user's settings portable and always accessible with a known path. You can also store multiple settings files if you support different device capabilities.
 
 ### E-signature
 
-Electronic signing of documents can take time making it hard to persist a user access token to write the signed document back to their OneDrive. With App-Only AppFolder, you can always write back the signed document using minimal permissions to ensure the user's files remain safe.
+Electronic signing of documents can take time, making it difficult to persist a user access token to write the signed document back to their OneDrive. With the app-only app folder, you can always write the signed document back using minimal permissions to ensure the user's files remain safe.
 
 ### Private drafts
 
-Perhaps your application sends messages or is used to take notes or write documents. But users need a way to store drafts before sending them to their eventual destination. You can use AppFolder to story fragments and drafts easily on a per-user basis, providing cross-device access to ensure consistency and user delight.
+Perhaps your application sends messages or is used for taking notes or writing documents; however, users need a way to store drafts before sending them to their eventual destination. You can use the app folder to store fragments and drafts easily on a per-user basis, providing cross-device access to ensure consistency and user satisfaction.
 
 ## Summary
 
-AppFolder is a flexible and robust way to store files while maintaining minimal permissions. Providing a consistent path and cross-device accessibility AppFolder is a great option for storing your application's files in a secure and efficient way. Supporting both application-only and delegated authentication patterns you have flexibility in your design, backed by the full capabilities of Microsoft Graph and M365.
+The app folder is a flexible and robust way to store files, without compromising on minimal permissions. Providing a consistent path and cross-device accessibility, the app folder is a great option for storing the files of your application in a secure and efficient way. Supporting both application-only and delegated authentication patterns, it provides flexibility in your design, backed by the full capabilities of Microsoft Graph and Microsoft 365.
