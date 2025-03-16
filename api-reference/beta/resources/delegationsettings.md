@@ -24,6 +24,8 @@ This resource is an open type.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/delegationsettings-get.md)|[delegationSettings](../resources/delegationsettings.md)|Read the properties and relationships of a [delegationSettings](../resources/delegationsettings.md) object.|
+|[List delegates](../api/callsettings-list-delegates.md)|[delegationSettings](../resources/delegationsettings.md) collection|Get a list of all delegates for a user.|
+|[List delegators](../api/callsettings-list-delegators.md)|[delegationSettings](../resources/delegationsettings.md) collection|Get a list of all delegators for a user.|
 
 ## Properties
 |Property|Type|Description|
