@@ -37,6 +37,8 @@ GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get the management chain:
 <!-- { "blockType": "ignored" } -->
 ```http
