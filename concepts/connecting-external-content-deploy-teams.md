@@ -11,7 +11,7 @@ ms.date: 11/07/2024
 # Enable the simplified admin experience for your Microsoft Graph connector
 
 > [!NOTE]
-> The management of Microsoft Graph connectors in the Teams admin center is being deprecated starting April 14, 2025. After this date, you can't turn the Graph connection on or off for Teams apps from the Teams admin center. You can use the **Search and Intelligence** option in the [Microsoft 365 admin center](/microsoftsearch/manage-connector) to manage Microsoft Graph connector. Alternatively, you can reach out directly to the owner or developer of the app for assistance.
+> The management of Microsoft Graph connectors in the Teams admin center is being deprecated starting April 14, 2025. After this date, you can't turn the Graph connection on or off for Teams apps from the Teams admin center. You can go to **Search & Intelligence** section in the [Microsoft 365 admin center](/microsoftsearch/manage-connector) to manage Microsoft Graph connector. Alternatively, you can reach out directly to the owner or developer of the app for assistance.
 
 This article describes how to enable the simplified admin experience for your Microsoft Graph connector in the Teams admin center. When you enable this experience, Teams admins can enable or disable your custom Microsoft Graph connector seamlessly in the Teams admin center.
 
