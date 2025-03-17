@@ -38,7 +38,7 @@ GET /chats/{chat-id}/operations/{operation-id}
 ```
 
 > [!NOTE]
-> The status of individual operations returned by this API may be outdated. We recommend that you perform a `GET` request for a specific operation to obtain the latest status.
+> The status of individual operations returned by this API might be outdated. To get the latest status of the operations, we recommend that you perform a `GET` request for the operations.
 
 ## Optional query parameters
 
