@@ -41,6 +41,7 @@ DELETE users/{user-id}@{tenant-id}/settings/windows
 ```
 > [!Note]
 > + {tenant-id} in the HTTP request URL must match the tenant id of the calling user.
+> + Please check [How to find your Microsoft Entra tenant ID](https://learn.microsoft.com/en-us/entra/fundamentals/how-to-find-tenant) to find your tenant id.
 
 ## Request headers
 

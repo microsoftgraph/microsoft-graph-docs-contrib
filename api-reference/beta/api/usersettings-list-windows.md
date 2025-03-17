@@ -1,5 +1,5 @@
 ---
-title: "List Windows settings"
+title: "List windowsSetting objects"
 description: "Get a list of windowsSetting objects and their properties."
 author: "MS-Arko"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/19/2024
 ---
 
-# List Windows settings
+# List windowsSetting objects
 
 Namespace: microsoft.graph
 
@@ -41,6 +41,7 @@ GET users/{user-id}@{tenant-id}/settings/windows
 ````
 > [!Note]
 > + {tenant-id} in the HTTP request URL must match the tenant id of the calling user.
+> + Please check [How to find your Microsoft Entra tenant ID](https://learn.microsoft.com/en-us/entra/fundamentals/how-to-find-tenant) to find your tenant id.
 
 For the signed-in user:
 <!-- { "blockType": "ignored" } -->
