@@ -699,7 +699,7 @@ Content-type: application/json
 ```
 ****
 
-### Example 6: Create an extension on a driveItem
+### Example 6: Create an extension on an existing driveItem
 
 The following example shows how to create an extension on a **driveItem**.
 
@@ -749,7 +749,7 @@ Content-type: application/json
 }
 ```
 
-### Example 7: Create a driveItem with an open extension
+### Example 7: Create a new driveItem with an open extension
 
 The following example shows how to create a **driveItem** and an open extension for the **driveItem**.
 
@@ -768,11 +768,11 @@ Content-type: application/json
   "name": "New Item",
   "@microsoft.graph.conflictBehavior": "rename",
   "extensions": [
-      {
-          "extensionName": "myCustomExtension",
-          "myCustomString": "Contoso data",
-          "myCustomBool": false
-      }
+    {
+      "extensionName": "myCustomExtension",
+      "myCustomString": "Contoso data",
+      "myCustomBool": false
+    }
   ]
 }
 ```
