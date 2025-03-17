@@ -30,20 +30,20 @@ Depending on the resource you're creating the extension in and the permission ty
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported. | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
-| [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
-| [group post](../resources/post.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
+| [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
+| [group event](../resources/event.md) | Group.ReadWrite.All | Not supported. | Not supported. |
+| [group post](../resources/post.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
+| [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [user](../resources/user.md) | User.ReadWrite | Not supported | User.ReadWrite.All |
-| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [baseTaskList](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [driveItem](../resources/driveitem.md) | Files.ReadWrite | Files.ReadWrite | Not supported |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [user](../resources/user.md) | User.ReadWrite | Not supported. | User.ReadWrite.All |
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [baseTaskList](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
+| [driveItem](../resources/driveitem.md) | Files.ReadWrite | Files.ReadWrite | Not supported. |
 <!--
 | [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
@@ -93,7 +93,6 @@ POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
 POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions
 POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions
 POST /drive/items/{itemId}/extensions
-
 ```
 
 >**Note:** This syntax shows some common ways to identify a resource instance, in order to create an
@@ -700,103 +699,115 @@ Content-type: application/json
 ```
 ****
 
-### Request 6
+### Example 6: Create an extension on a driveItem
 
-The sixth example creates an extension on a driveItem
+The following example shows how to create an extension on a **driveItem**.
 
+#### Request
+The following example shows a request.
 <!-- {
-"blockType": "ignored",
+  "blockType": "request",
+  "name": "post_opentypeextension_6",
+  "sampleKeys": [""]
 }-->
 ```http
-POST /drive/items/{itemId}/extensions
+POST https://graph.microsoft.com/beta/drive/items/{itemId}/extensions
+Content-type: application/json
+
 {
-    "extensionName": "myCustomExtension",
-    "myCustomString": "Contoso data",
-    "myCustomBool": false
+  "extensionName": "myCustomExtension",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
 }
 ```
 
----
+#### Response
 
-### Response 6
-
-Here is the response for the sixth example. The response body includes properties of the new driveItem,
+The following example shows the response, including the properties of the new **driveItem**
 and the following for the new extension:
 
 - The **id** property with the fully qualified name.
 - The default property **extensionName** specified in the request.
-- The custom data specified in the request stored as 2 custom properties.
+- The custom data specified in the request stored as two custom properties.
 
-Note: The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-"blockType": "ignored",
-}-->
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.driveItem"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
-    "id": "myCustomExtension",
-    "extensionName": "myCustomExtension",
-    "myCustomString": "Contoso data",
-    "myCustomBool": false
+  "id": "myCustomExtension",
+  "extensionName": "myCustomExtension",
+  "myCustomString": "Contoso data",
+  "myCustomBool": false
 }
 ```
 
-****
+### Example 7: Create a driveItem with an open extension
 
-### Request 7
-The seventh example creates a driveItem and an open extension on the driveItem.
+The following example shows how to create a **driveItem** and an open extension for the **driveItem**.
 
+#### Request
+The following example shows a request.
 <!-- {
-"blockType": "ignored",
+  "blockType": "request",
+  "name": "post_opentypeextension_7",
+  "sampleKeys": [""]
 }-->
 ```http
-POST /drive/items/{itemId}/children
+POST https://graph.microsoft.com/beta/drive/items/{itemId}/children
+Content-type: application/json
+
 {
-    "name": "New Item",
-    "@microsoft.graph.conflictBehavior": "rename",
-    "extensions": [
-        {
-            "extensionName": "myCustomExtension",
-            "myCustomString": "Contoso data",
-            "myCustomBool": false
-        }
-    ]
+  "name": "New Item",
+  "@microsoft.graph.conflictBehavior": "rename",
+  "extensions": [
+      {
+          "extensionName": "myCustomExtension",
+          "myCustomString": "Contoso data",
+          "myCustomBool": false
+      }
+  ]
 }
 ```
 
----
+#### Response
 
-### Response 7
-
-Here is the response for the seventh example. The response body includes properties of the new driveItem,
-and the following for the new extension:
+The following example shows the response, including properties of the new **driveItem** and the following for the new extension:
 
 - The **id** property with the fully qualified name.
 - The default property **extensionName** specified in the request.
-- The custom data specified in the request stored as 2 custom properties.
+- The custom data specified in the request stored as two custom properties.
 
-Note: The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-"blockType": "ignored",
-}-->
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.driveItem"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
-    "id": "ACEA49D1-1444-45A9-A1CB-68B1B28AE491",
-    "createdDateTime": "2022-08-30T22:55:29Z",
-    "name": "New Folder",
-    "extensions": [
-        {
-            "id": "myCustomExtension",
-            "extensionName": "myCustomExtension",
-            "myCustomString": "Contoso data",
-            "myCustomBool": false
-        }
-    ]
+  "id": "ACEA49D1-1444-45A9-A1CB-68B1B28AE491",
+  "createdDateTime": "2022-08-30T22:55:29Z",
+  "name": "New Folder",
+  "extensions": [
+    {
+      "id": "myCustomExtension",
+      "extensionName": "myCustomExtension",
+      "myCustomString": "Contoso data",
+      "myCustomBool": false
+    }
+  ]
 }
 ```
 

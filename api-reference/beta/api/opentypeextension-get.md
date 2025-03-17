@@ -675,7 +675,6 @@ HTTP/1.1 200 OK
 }
 
 ```
----
 
 ### Example 6: Get a driveItem and expand its extensions using a filter
 
@@ -696,7 +695,7 @@ GET https://graph.microsoft.com/beta/drive/items/{itemID}?$expand=extensions($fi
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 
