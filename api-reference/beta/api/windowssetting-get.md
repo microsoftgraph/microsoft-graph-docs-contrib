@@ -41,7 +41,7 @@ GET users/{user-id}@{tenant-id}/settings/windows/{windowsSettingId}
 ````
 > [!Note]
 > + {tenant-id} in the HTTP request URL must match the tenant id of the calling user.
-> + Please check [How to find your Microsoft Entra tenant ID](https://learn.microsoft.com/en-us/entra/fundamentals/how-to-find-tenant) to find your tenant id.
+> + Please check [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant) to find your tenant id.
 
 For the signed-in user:
 <!-- { "blockType": "ignored" } -->
