@@ -45,6 +45,8 @@ Retrieve details of your own temporary access pass authentication method.
 GET /me/authentication/temporaryAccessPassMethods/{temporaryAccessPassAuthenticationMethodId}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Retrieve details of your own or another user's temporary access pass authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http

@@ -102,6 +102,8 @@ Memberships for the signed-in user.
 POST /me/checkMemberObjects
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Memberships for other users.
 <!-- { "blockType": "ignored" } -->
 ```http

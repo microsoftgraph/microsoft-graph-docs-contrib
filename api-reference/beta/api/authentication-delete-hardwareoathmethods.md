@@ -43,6 +43,8 @@ Unassign yourself a hardware OATH authentication method.
 DELETE /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Unassign another user their hardware OATH authentication method.
 <!-- {
   "blockType": "ignored"

@@ -45,6 +45,8 @@ Remove a Microsoft Authenticator Passwordless Phone Sign-in authentication metho
 DELETE /me/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Remove a Microsoft Authenticator Passwordless Phone Sign-in authentication method from another user's account.
 <!-- { "blockType": "ignored" } -->
 ```http

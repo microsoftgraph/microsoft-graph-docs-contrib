@@ -109,6 +109,10 @@ Group memberships for the signed-in user.
 POST /me/checkMemberGroups
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Group memberships for other users.
 <!-- { "blockType": "ignored" } -->
 ```http
