@@ -41,6 +41,8 @@ Get details of your own FIDO2 authentication method.
 GET /me/authentication/fido2Methods/{id}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get details of your own or another user's FIDO2 authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http

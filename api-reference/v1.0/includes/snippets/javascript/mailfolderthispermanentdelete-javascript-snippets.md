@@ -10,8 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let cloudPcSnapshot = await client.api('/deviceManagement/virtualEndpoint/snapshots/A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8')
-	.version('beta')
-	.get();
+await client.api('/users/b4c80c57-5c59-4a3d-912a-a83985988b82/mailFolders/AAsadaksdjlknsca=/permanentDelete')
+	.post();
 
 ```
