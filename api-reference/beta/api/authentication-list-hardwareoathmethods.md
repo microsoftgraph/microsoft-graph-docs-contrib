@@ -42,6 +42,8 @@ Get details of your own hardware OATH methods.
 GET /me/authentication/hardwareOathMethods
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get details of another user's hardware OATH methods.
 <!-- {
   "blockType": "ignored"

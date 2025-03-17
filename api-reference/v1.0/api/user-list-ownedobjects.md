@@ -31,6 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/ownedObjects
 GET /users/{id | userPrincipalName}/ownedObjects
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers

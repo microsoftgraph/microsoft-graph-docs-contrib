@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 03/03/2025
+ms.date: 03/17/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -2553,6 +2553,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | - | No |
 
 [!INCLUDE [email](../includes/permissions-notes/email.md)]
+
+---
+
+### EngagementConversation.Migration.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e1d2136d-eaaf-427a-a7db-f97dbe847c27 | - |
+| DisplayText | Read and write all Viva Engage conversations | - |
+| Description | Allows the app to create Viva Engage conversations without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### EngagementRole.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 9f1da0fc-345c-4dfb-bab5-5215a073a417 |
+| DisplayText | - | Read a user's Viva Engage roles  |
+| Description | - | Allows the app to list a user's Viva Engage roles, on behalf of the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
+### EngagementRole.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 30614864-4114-45ef-bdd9-0dd7894a1cc4 | 3cad91a5-8413-4c4a-acfe-dfeb83d1366d |
+| DisplayText | Read all Viva Engage roles and role memberships | Read all Viva Engage roles and role memberships |
+| Description | Allows the app to list all Viva Engage roles and role memberships without a signed-in user. | Allows the app to list all Viva Engage roles and role memberships on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### EngagementRole.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 3ede5358-7366-4da8-a2f7-472bf9c7cc34 | 4905982d-6459-4ccd-949c-949fefc0a8f2 |
+| DisplayText | Modify Viva Engage role membership | Modify Viva Engage role membership |
+| Description | Allows the app to assign Viva Engage role to a user, and remove a Viva Engage role from a user without a signed-in user. | Allows the app to assign Viva Engage role to a user, and remove a Viva Engage role from a user behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 

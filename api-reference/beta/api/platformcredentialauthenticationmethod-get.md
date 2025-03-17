@@ -42,6 +42,8 @@ To read details of your own Platform Credential authentication method:
 GET /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 To read details of your own or another user's Platform Credential authentication method:
 <!-- { "blockType": "ignored" } -->
 ``` http
