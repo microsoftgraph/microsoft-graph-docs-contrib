@@ -29,6 +29,32 @@
     {
       "ChangeList": [
         {
+          "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcProvisioningPolicyAutopatch",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcProvisioningPolicyAutopatch](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAutopatch?view=graph-rest-1.0) resource type.",
+          "Target": "cloudPcProvisioningPolicyAutopatch"
+        },
+        {
+          "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
+          "ApiChange": "Property",
+          "ChangedApiName": "autopatch",
+          "ChangeType": "Addition",
+          "Description": "Added the **autopatch** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-1.0) resource.",
+          "Target": "cloudPcProvisioningPolicy"
+        }
+      ],
+      "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-03-17T10:25:21.3434973Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "82f27d11-a97b-4b47-85c1-3fce7e35bfe0",
           "ApiChange": "Member",
           "ChangedApiName": "europe",
@@ -52,7 +78,7 @@
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
-    { 
+    {
       "ChangeList": [
         {
           "Id": "3ea8c1de-06ee-4159-9066-d6d087d2081c",
