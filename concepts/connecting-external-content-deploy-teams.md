@@ -10,6 +10,9 @@ ms.date: 11/07/2024
 
 # Enable the simplified admin experience for your Microsoft Graph connector
 
+> [!NOTE]
+> Management of Microsoft Graph connectors is being retired from the Teams admin center starting April 14, 2025. After this date, you can no longer turn the Graph connection on or off for Teams apps from the Teams admin center. You can use the **Search and Intelligence** option in the [Microsoft 365 admin center](/microsoftsearch/manage-connector) to manage Microsoft Graph connector. Alternatively, you can reach out directly to the owner or developer of the app for assistance.
+
 This article describes how to enable the simplified admin experience for your Microsoft Graph connector in the Teams admin center. When you enable this experience, Teams admins can enable or disable your custom Microsoft Graph connector seamlessly in the Teams admin center.
 
 ![Simplified admin experience in the Teams admin center](images/connectors-images/oneclickadmin-TAC-connectors.png)
@@ -216,10 +219,6 @@ To validate the experience:
 
 1. Sign in to the [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin or Global admin of the tenant.
 1. Select the **Manage apps** blade in the left rail.
-
-    > [!NOTE]
-    > The **Manage apps** in the Teams admin center will be deprecated soon. You can use the [Microsoft 365 admin center](/microsoftsearch/manage-connector) to manage the Microsoft Graph connector.
-
 1. Go to your Teams application.
 1. On the detail page of the Teams app, you notice a new **Graph Connector** tab that allows an admin to enable or disable the Microsoft Graph connector.
 1. Select the toggle button to send the enable or disable notifications to the notification endpoint of the app, as specified by the **graphConnector.notificationUrl** property in the app manifest.
