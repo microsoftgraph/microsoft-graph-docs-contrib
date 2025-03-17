@@ -158,6 +158,8 @@ The ability to reset a password includes updating the following sensitive proper
 > - mobilePhone
 > - otherMails
 
+## Common properties
+
 The following represent the default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter. Learn [how to use the $select query parameter](/graph/query-parameters#select-parameter) and see [properties that support the $select query parameter](../resources/user.md#properties).
 
 For details and a list of all properties, see the [user](user.md) object.
