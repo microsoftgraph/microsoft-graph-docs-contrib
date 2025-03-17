@@ -1,6 +1,6 @@
 ---
 title: Working with users in Microsoft Graph
-description: Access and manage user data using Microsoft Graph to build personalized app experiences. Learn about common API operations, authorization, and handling sensitive actions.
+description: Access and manage user data using Microsoft Graph to build personalized app experiences.
 ms.localizationpriority: high
 author: FaithOmbongi
 ms.author: ombongifaith
@@ -10,7 +10,7 @@ doc_type: conceptualPageType
 ms.topic: overview
 ms.date: 03/17/2025
 
-#customer intent: As a developer, I want to access and manage user data using Microsoft Graph so that I can build personalized app experiences.s
+#customer intent: As a developer, I want to access and manage user data using Microsoft Graph so that I can build personalized app experiences.
 ---
 
 # Working with users in Microsoft Graph
