@@ -67,7 +67,7 @@ In the request body, provide a JSON object with the following parameters.
 >[!NOTE]
 >The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
 >
->In a single request, the `childrenOnly` option copies 150 children items, and for the grandchildren items the SharePoint limit applies. For more information, see [SharePoint limitation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
+>In a single request, the `childrenOnly` option copies 30,000 children items, and for the grandchildren items the SharePoint limit applies. For more information, see [SharePoint limitation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
 
 > If you use the `@microsoft.graph.conflictBehavior` query parameter with the `childrenOnly` parameter, then every child in the operation will be subject to the `@microsoft.graph.conflictBehavior` specified.
 
@@ -588,11 +588,11 @@ Content-Length: 283
 ```
 To resolve this error, set the `childrenOnly` parameter to true.
 
-### Example 8: Failure to copy more than 150 direct child items
+### Example 8: Failure to copy more than 30,000 direct child items
 
 The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified by the `driveId` and `id` values.
-The `childrenOnly` parameter is set to true. The source folder item identified by `{item-id}` contains more than 150 direct children.
-The request fails because the limit is 150 direct children.
+The `childrenOnly` parameter is set to true. The source folder item identified by `{item-id}` contains more than 30,000 direct children.
+The request fails because the limit is 30,000 direct children.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-7" } -->
@@ -624,7 +624,7 @@ Content-Length: 341
   "error":
   {
     "code": "invalidRequest",
-    "message": "Direct child count limit exceeded. Cannot copy children only when there are more than 150 direct children.",
+    "message": "Direct child count limit exceeded. Cannot copy children only when there are more than 30,000 direct children.",
     "innerError":
     {
       "code": "directChildrenLimitExceeded",
@@ -635,7 +635,7 @@ Content-Length: 341
   }
 }
 ```
-To resolve this error, reorganize the source folder structure only to have 150 children.
+To resolve this error, reorganize the source folder structure only to have 30,000 children.
 
 ### Example 9: Failure to copy the child items of a file item
 
