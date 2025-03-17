@@ -1,6 +1,6 @@
 ---
 title: Working with users in Microsoft Graph
-description: Learn how to access and manage user data using Microsoft Graph and build compelling app experiences based on users their relationships. 
+description: Access and manage user data using Microsoft Graph to build personalized app experiences. Learn about common API operations, authorization, and handling sensitive actions.
 ms.localizationpriority: high
 author: FaithOmbongi
 ms.author: ombongifaith
@@ -8,16 +8,16 @@ ms.reviewer: yyuank, iamut
 ms.subservice: entra-users
 doc_type: conceptualPageType
 ms.topic: overview
-ms.date: 03/07/2025
+ms.date: 03/17/2025
 
-#customer intent: As a developer, I want to access user data through Microsoft Graph so that I can build personalized app experiences.
+#customer intent: As a developer, I want to access and manage user data using Microsoft Graph so that I can build personalized app experiences.
 ---
 
 # Working with users in Microsoft Graph
 
-Microsoft Graph allows you to build compelling app experiences based on users and their relationships with other objects, such as other users and groups, group memberships, and the resources they access like their mails, calendars, files, and administrative roles.
+Microsoft Graph lets you build compelling app experiences based on users and their relationships with other objects, such as other users and groups, group memberships, and the resources they access like their emails, calendars, files, and administrative roles.
 
-This article explains how to access and manage user data using Microsoft Graph, including common API operations, authorization and privileges, and handling sensitive actions.
+This article explains how to access and manage user data using Microsoft Graph, including common API operations, authorization, privileges, and handling sensitive actions.
 
 ## Accessing users
 
@@ -46,7 +46,7 @@ In Microsoft Graph, users are represented by the [user](../resources/user.md) re
 
 ## Authorization and privileges
 
-Microsoft Graph supports delegated and application permissions to manage user operations. Understanding these permissions is crucial for secure and efficient application development. For more information, see [Delegated vs Application permissions](/graph/permissions-overview#permission-types) and the corresponding API reference documentation for the permissions required for each operation.
+Microsoft Graph supports delegated and application permissions to manage user operations. Understanding these permissions is crucial for secure and efficient application development. For more information, see [Delegated vs. Application permissions](/graph/permissions-overview#permission-types) and the corresponding API reference documentation for the permissions required for each operation.
 
 Some user operations can be performed by the signed-in user against their own details. For such operations, the user can grant the app Microsoft Graph permissions to access their own details. The [User.ReadBasic.All](/graph/permissions-reference#userreadbasicall), [User.Read](/graph/permissions-reference#userread), and [User.ReadWrite](/graph/permissions-reference#userreadwrite) permissions are such permissions.
 
@@ -54,13 +54,13 @@ Other operations, including managing details for other users, require administra
 
 ### Default user permissions in Microsoft Entra ID
 
-There are two types of users in Microsoft Entra ID: members and guests. Member users are created natively in the tenant. Guest users join the tenant by redeeming their invitation and access the tenant as business-to-business (B2B) collaboration guests.
+There are two types of users in Microsoft Entra ID: members and guests. Members are created natively in the tenant. Guests join the tenant by redeeming their invitation and access the tenant as business-to-business (B2B) collaboration guests.
 
 Users in Microsoft Entra ID have default permissions that allow them to perform certain operations. This set of default permissions depends on whether the user is a member or a guest user, and the tenant administrator can change the settings for these default permissions. For more information about what member users and guest users can do, see [What are the default user permissions in Microsoft Entra ID?](/entra/fundamentals/users-default-permissions?context=graph/context).
 
 #### Default user permissions in external tenants
 
-There are also default permissions for customers in Microsoft Entra ID in external tenants. The following table indicates the API operations that enable customers to manage their own profile.
+There are also default permissions for customers in Microsoft Entra ID in external tenants. The following table shows the API operations that let customers manage their own profile.
 
 The user ID or userPrincipalName is always the signed-in user's.
 
@@ -153,12 +153,14 @@ The following table is for roles assigned at the scope of a tenant. For roles as
 | Usage Summary Reports Reader | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | All custom roles |  |  |  |  | :white_check_mark: | :white_check_mark: |
 
-The ability to reset a password includes the ability to update the following sensitive properties required for [self-service password reset](/entra/identity/authentication/concept-sspr-howitworks):
+The ability to reset a password includes updating the following sensitive properties required for [self-service password reset](/entra/identity/authentication/concept-sspr-howitworks):
 > - businessPhones
 > - mobilePhone
 > - otherMails
 
-The following represent the default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter. Learn [how to use the $select query parameter](/graph/query-parameters#select-parameter) and see [properties that support the $select query parameter](../resources/user.md#properties).turned by defaulte default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter. Learn [how to use the $select query parameter](/graph/query-parameters#select-parameter) and see [properties that support the $select query parameter](../resources/user.md#properties).ent the default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter. Learn [how to use the $select query parameter](/graph/query-parameters#select-parameter) and see [properties that support the $select query parameter](../resources/user.md#properties).
+The following represent the default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter. Learn [how to use the $select query parameter](/graph/query-parameters#select-parameter) and see [properties that support the $select query parameter](../resources/user.md#properties).
+
+For details and a list of all properties, see the [user](user.md) object.
 
 |Property |Description |
 |:----------|:-------------|
@@ -198,7 +200,7 @@ The following properties on the user object are stored outside the main data sto
 
 ## Conclusion
 
-Microsoft Graph provides powerful capabilities to manage and interact with user data. By understanding the different permissions, common API operations, and handling sensitive actions, you can build secure and efficient applications. For more information, see the related content and documentation links provided.
+Microsoft Graph provides powerful capabilities to manage and interact with user data. By understanding the different permissions, common API operations, and handling sensitive actions, you can build secure and efficient applications. For more information, see the related content and documentation links.
 
 ## Related content
 
