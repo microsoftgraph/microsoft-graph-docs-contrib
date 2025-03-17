@@ -69,7 +69,7 @@ Content-Length: 882
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceEnrollmentNotificationConfiguration",
-      "id": "bdd0743a-743a-bdd0-3a74-d0bd3a74d0bd",
+      "id": "bdd0743a-743a-bdd0-3a74-d0bd3a74d0bd_EnrollmentNotificationsConfiguration",
       "displayName": "Display Name value",
       "description": "Description value",
       "priority": 8,
@@ -79,7 +79,7 @@ Content-Length: 882
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
-      "deviceEnrollmentConfigurationType": "limit",
+      "deviceEnrollmentConfigurationType": "enrollmentNotificationsConfiguration",
       "platformType": "ios",
       "templateType": "push",
       "notificationMessageTemplateId": "eba3ed57-ed57-eba3-57ed-a3eb57eda3eb",
